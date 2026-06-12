@@ -142,7 +142,7 @@ The proof-of-concept milestone: reimplement v1model as ~100 lines of Python glue
 - Control-plane story: how the descriptor's table interface relates to P4Runtime proper (reuse vs. profile vs. subset).
 - Native C ABI binding (after WASM lessons).
 - Hardware targets and cross-vendor portability (explicitly out of scope for now).
-- Compiler implementation strategy: how much of p4c is reusable as a library vs. a fork vs. a new midend consumer.
+- Compiler implementation strategy — three candidate paths, undecided: (a) p4c midend → C → clang → WASM (the original sketch); (b) fork Oxide's x4c (Rust-native P4 subset compiler, MPL-2.0, architecture-light) keeping its frontend and p4rs table engine but rewriting codegen to emit per-block wasm32 artifacts + descriptors; (c) a from-scratch P4-subset compiler in Rust. Note: a non-P4 Rust eDSL was considered and rejected — losing P4 as the source language forfeits the existing program corpus, the BMv2 comparison story, and the standardization path. The spec stays compiler-agnostic regardless: any toolchain emitting conforming artifacts is a valid producer.
 
 ## Suggested roadmap
 

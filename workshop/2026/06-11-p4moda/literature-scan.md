@@ -103,6 +103,16 @@ Two useful citations fall out of it:
 
 Sources: https://inria.hal.science/hal-01632431v2 , https://inria.hal.science/hal-01632431/file/p4bricks-inria-tech.pdf
 
+### Oxide x4c / softnpu — the closest living embodiment of "architecture as software" (added 2026-06-12)
+Verified directly from the repos (active as of June 2026; MPL-2.0):
+
+- **x4c** (github.com/oxidecomputer/p4) is a pure-Rust P4-16 subset compiler ("does not currently handle the entire P4 language... expected to evolve organically based on the concrete needs of users") that compiles P4 to Rust source. It is **architecture-light**: zero references to v1model/PSA; it defines its own minimal architecture in plain P4 (`SoftNPU(parse(), ingress(), egress()) main;` with its own metadata structs and a Checksum extern) — an existing-practice precedent for P4moda's meta-architecture idea.
+- **softnpu** is plain async Rust that owns I/O and management, and delegates packet processing to the generated code — genuinely "architecture as ordinary Rust software." Composition is via `dlopen` of a dylib exporting `_main_pipeline_create`, or static crate inclusion.
+- **Why it does not occupy P4moda's space:** the unit of compilation and loading is the *whole pipeline*, not per-block artifacts — parser/ingress/egress are composed *inside* the generated `main_pipeline` struct; the boundary interface is a single Rust trait (`Pipeline::process_packet(port, pkt) -> Vec<(packet_out, port)>`) with stringly-typed raw-byte table access; externs are hand-written Rust in the companion `p4rs` crate; **no WASM** (zero mentions; generated code depends on std/usdt/dylib), no descriptor, no schema-defined or language-neutral interface, no composition-time checking. Stated non-goals: production compilation, P4Runtime support.
+- **Citation value:** strongest existing evidence that (a) a Rust-native P4 subset compiler is tractable for a small team, and (b) the architectures-as-software model works in practice (Oxide ships sidecar-lite on it). P4moda's delta: per-block artifacts, the normative envelope/descriptor spec, sandboxed WASM execution, language-neutral hosts, and checkable composition.
+
+Sources: https://github.com/oxidecomputer/p4 , https://github.com/oxidecomputer/softnpu , https://github.com/oxidecomputer/p4/blob/master/lang/p4rs/src/lib.rs , https://github.com/oxidecomputer/p4/blob/master/p4/examples/softnpu.p4
+
 ## Remaining hedges
 
 1. **Search-based negatives are not proofs.** The RQ5 negative (no IDL-schema per-packet interfaces) rests on seven searches; phrase the paper claim as "to our knowledge."
