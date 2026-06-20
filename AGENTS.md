@@ -29,7 +29,7 @@ Content is immutable; only machinery is maintained.
 ## Structure
 
 - `inbox.md` — Capture queue. Raw items you'll mine, not read. The only soil in the public repo.
-- `library/` — Notes on external sources. Light sources → monthly catalog; heavy sources → one file each. Notes in `index/` (tracked); raw files in `store/` (gitignored).
+- `library/` — Notes on external sources.
 - `comments/` — Reactions to external things. Anchored to a target; dated; not rewritten.
 - `notes/` — Standalone pieces (blog posts). Your own ideas; dated; not rewritten.
 - `projects/` — Bounded projects (`{yyyy}/{mm}-{dd}-{name}/`). The date is the start, never renamed. Larger projects graduate to their own repo.

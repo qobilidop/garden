@@ -26,7 +26,7 @@ The garden is a stream: notes are dated and never rewritten — when a view chan
 ## Structure
 
 - `inbox.md` — Capture queue: raw items to mine later.
-- `library/` — Notes on external sources. Light sources → monthly catalog; heavy sources → a file each.
+- `library/` — Notes on external sources.
 - `comments/` — Reactions to external things.
 - `notes/` — Standalone pieces (blog posts).
 - `projects/` — Bounded projects (`yyyy/mm-dd-name`).
