@@ -1,6 +1,6 @@
 # Checking Two Symbolic Encodings of `f` for Equivalence
 
-*2026-06-25. Follow-up to [diff-testing-vs-fuzzing.md](diff-testing-vs-fuzzing.md).*
+*2026-06-25. Follow-up to [xls-symex-diff-testing-vs-fuzzing.md](xls-symex-diff-testing-vs-fuzzing.md).*
 
 **Setup:** a hand-written symbolic executor encodes `f(a_sym, b_concrete)` (partial evaluation — `a` symbolic, `b` a concrete value). XLS encodes `f(a_sym, b_sym)` (fully symbolic). **Question:** can we formally check the two `f`s are equivalent?
 

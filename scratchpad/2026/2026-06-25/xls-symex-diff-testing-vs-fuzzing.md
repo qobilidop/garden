@@ -1,6 +1,6 @@
 # Diff Testing with XLS as Source of Truth — Symbolic/Concolic vs Fuzzing
 
-*2026-06-25. Follow-up to [symex-evaluation.md](symex-evaluation.md), narrowing the use case to differential testing.*
+*2026-06-25. Follow-up to [xls-symex-evaluation.md](xls-symex-evaluation.md), narrowing the use case to differential testing.*
 
 **Goal under evaluation:** use the XLS model as source of truth, and diff-test it against a hand-written simulator efficiently. How much value does a symbolic/concolic test generator add over fuzzing for *this* goal?
 

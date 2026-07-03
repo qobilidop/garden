@@ -116,11 +116,9 @@ beds:
   - `yyyy/yyyy-mm-dd.md` — the day's captures (appended text).
   - `yyyy/yyyy-mm-dd/` — optional, only when needed: standalone artifacts born
     that day.
-  - `yyyy/yyyy-mm-dd-slug/` — a named thread (multi-file, multi-day; absorbs
-    the old `projects/`). Start date, never renamed; larger threads graduate
-    to their own repos.
-  - Full-date basenames: the filename escapes its directory (tabs, search,
-    links) and must self-identify.
+  - Self-standing names: a filename escapes its directory (tabs, search,
+    links) and must self-identify — full dates on day files, descriptive
+    artifact names, no `README.md` inside day dirs.
   - Records, not state: no checkboxes, no TODOs. Edit freely while a thread is
     warm; once cold, supersede rather than rewrite. Triage views can be
     computed later if ever wanted.
@@ -138,9 +136,10 @@ Retired: `inbox.md` (capture → scratchpad; its links migrated into today's
 day file), `journal/` (function subsumed by scratchpad; the name named a
 practice, scratchpad names the function), planned `comments/` (folded into
 notebook), `projects/` and `notes/draft/` (both were soil with extra rules —
-folded into scratchpad as slugged threads and day artifacts). Deliberate
-trade-off: top-level `projects/` advertised substantive work to visitors;
-that discoverability moves to computed website views later.
+folded into scratchpad as day artifacts with self-standing filenames; real
+projects start as their own repo instead). Deliberate trade-off: top-level
+`projects/` advertised substantive work to visitors; that discoverability
+moves to computed website views later.
 
 ## Capture workflow (amendment)
 
@@ -154,7 +153,9 @@ of `inbox.md`.
    → `scratchpad/2026/2026-06-20/` (its birth date).
 2. `journal/` removed.
 3. `inbox.md` links → `scratchpad/2026/2026-07-03.md`; `inbox.md` removed.
-4. `projects/*` → `scratchpad/yyyy/yyyy-mm-dd-slug/` threads.
+4. `projects/*` → `scratchpad/yyyy/yyyy-mm-dd/` day dirs, files renamed
+   self-standing; the premature survey project consolidated into a single
+   parked draft (`2026-06-20/executable-formal-hw-spec-survey-draft.md`).
 5. `scratchpad/README.md` added with conventions.
 6. Capture-workflow-design target amended.
 
