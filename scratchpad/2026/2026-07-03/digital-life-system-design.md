@@ -122,9 +122,13 @@ beds:
   - Records, not state: no checkboxes, no TODOs. Edit freely while a thread is
     warm; once cold, supersede rather than rewrite. Triage views can be
     computed later if ever wanted.
-- `notebook/` — my polished standalone pieces (renames `notes/`). Absorbs the
-  planned `comments/` (anchored reactions are ordinary entries); drafts live
-  in scratchpad until they graduate.
+- `blog/` — my polished standalone pieces, written as blog posts (renames
+  `notes/`; briefly `notebook/`, renamed for self-evidence and to leave the
+  word "note" to a possible future `evergreen/` bed — evergreen notes would be
+  the one sanctioned *maintained* content bed, created lazily on first real
+  promotion, never speculatively). Absorbs the planned `comments/` (anchored
+  reactions are ordinary entries); drafts live in scratchpad until they
+  graduate.
 - `library/` — others' sources, digested. Unchanged.
 - `toolbox/` — maintained tools/skills. Unchanged.
 - `website/` — maintained published view. Unchanged.
@@ -135,7 +139,7 @@ beds:
 Retired: `inbox.md` (capture → scratchpad; its links migrated into today's
 day file), `journal/` (function subsumed by scratchpad; the name named a
 practice, scratchpad names the function), planned `comments/` (folded into
-notebook), `projects/` and `notes/draft/` (both were soil with extra rules —
+blog), `projects/` and `notes/draft/` (both were soil with extra rules —
 folded into scratchpad as day artifacts with self-standing filenames; real
 projects start as their own repo instead). Deliberate trade-off: top-level
 `projects/` advertised substantive work to visitors; that discoverability
@@ -149,8 +153,9 @@ of `inbox.md`.
 
 ## Migration (done 2026-07-03)
 
-1. `notes/` → `notebook/`; README updated. `notes/draft/designing-the-garden.md`
-   → `scratchpad/2026/2026-06-20/` (its birth date).
+1. `notes/` → `notebook/` → `blog/`; README updated.
+   `notes/draft/designing-the-garden.md` → `scratchpad/2026/2026-06-20/` (its
+   birth date).
 2. `journal/` removed.
 3. `inbox.md` links → `scratchpad/2026/2026-07-03.md`; `inbox.md` removed.
 4. `projects/*` → `scratchpad/yyyy/yyyy-mm-dd/` day dirs, files renamed

@@ -11,5 +11,4 @@ Lowest-friction entry point: anything rough that fits in git.
   outside its directory (full dates; descriptive filenames, no `README.md`).
 - Records, not state: no TODOs or checkboxes here. Edit freely while warm;
   once cold, supersede with a newer dated entry rather than rewrite.
-- Polished pieces graduate to `notebook/`; real projects start as their own
-  repo.
+- Polished pieces graduate to `blog/`; real projects start as their own repo.

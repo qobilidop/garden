@@ -1,4 +1,4 @@
-# Notebook
+# Blog
 
 Polished standalone pieces — my own ideas, written as blog posts. Dated, not
 rewritten; a newer piece supersedes an older one.
