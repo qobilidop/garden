@@ -108,30 +108,39 @@ To set up after the structure settles.
 
 ## Garden repo structure
 
-- `scratchpad/` — soil. Lowest-friction entry point for anything that fits git.
+Three content beds split by composedness and authorship, plus two machinery
+beds:
+
+- `scratchpad/` — soil. Lowest-friction entry point for anything rough that
+  fits git.
   - `yyyy/yyyy-mm-dd.md` — the day's captures (appended text).
   - `yyyy/yyyy-mm-dd/` — optional, only when needed: standalone artifacts born
     that day.
+  - `yyyy/yyyy-mm-dd-slug/` — a named thread (multi-file, multi-day; absorbs
+    the old `projects/`). Start date, never renamed; larger threads graduate
+    to their own repos.
   - Full-date basenames: the filename escapes its directory (tabs, search,
     links) and must self-identify.
-  - Pure record: no checkboxes, no state, never rewritten. Triage views can be
+  - Records, not state: no checkboxes, no TODOs. Edit freely while a thread is
+    warm; once cold, supersede rather than rewrite. Triage views can be
     computed later if ever wanted.
-- `notebook/` — polished standalone pieces (renames `notes/`). Absorbs the
-  planned `comments/`: anchored reactions are ordinary entries.
+- `notebook/` — my polished standalone pieces (renames `notes/`). Absorbs the
+  planned `comments/` (anchored reactions are ordinary entries); drafts live
+  in scratchpad until they graduate.
 - `library/` — others' sources, digested. Unchanged.
-- `projects/` — incubator for bounded doc-projects; larger ones graduate to
-  their own repos. Kept: repo-per-experiment pays real costs (cross-link
-  breakage, session straddling, discovery sprawl) for a wall only I enforce.
 - `toolbox/` — maintained tools/skills. Unchanged.
 - `website/` — maintained published view. Unchanged.
 - `TODO.md` — maintained mutable state, created lazily on first real TODO.
   Actionable items are promoted here explicitly; state never rides on stream
   content.
 
-Retired: `inbox.md` (capture → scratchpad; its current links migrate into
-today's day file), `journal/` (function subsumed by scratchpad; the name named
-a practice, scratchpad names the function), planned `comments/` (folded into
-notebook).
+Retired: `inbox.md` (capture → scratchpad; its links migrated into today's
+day file), `journal/` (function subsumed by scratchpad; the name named a
+practice, scratchpad names the function), planned `comments/` (folded into
+notebook), `projects/` and `notes/draft/` (both were soil with extra rules —
+folded into scratchpad as slugged threads and day artifacts). Deliberate
+trade-off: top-level `projects/` advertised substantive work to visitors;
+that discoverability moves to computed website views later.
 
 ## Capture workflow (amendment)
 
@@ -139,14 +148,15 @@ The capture workflow (see capture-workflow-design.md) targets
 `scratchpad/yyyy/yyyy-mm-dd.md` — timestamped appends, no sections — instead
 of `inbox.md`.
 
-## Migration steps (on approval)
+## Migration (done 2026-07-03)
 
-1. Rename `notes/` → `notebook/`; update its README.
-2. Remove `journal/`.
-3. Migrate `inbox.md` links into `scratchpad/2026/2026-07-03.md`; remove
-   `inbox.md`.
-4. Update `AGENTS.md` / `README.md` to describe the new structure.
-5. Amend capture-workflow-design target (done in this commit).
+1. `notes/` → `notebook/`; README updated. `notes/draft/designing-the-garden.md`
+   → `scratchpad/2026/2026-06-20/` (its birth date).
+2. `journal/` removed.
+3. `inbox.md` links → `scratchpad/2026/2026-07-03.md`; `inbox.md` removed.
+4. `projects/*` → `scratchpad/yyyy/yyyy-mm-dd-slug/` threads.
+5. `scratchpad/README.md` added with conventions.
+6. Capture-workflow-design target amended.
 
 ## Open questions
 

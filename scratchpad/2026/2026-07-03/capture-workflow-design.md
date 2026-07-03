@@ -68,7 +68,8 @@ stable interface. Build the repo-side workflow once.
 
 ## Accepted trade-offs
 
-- No PAT-free capture path (fallback: edit `inbox.md` via GitHub web/app).
+- No PAT-free capture path (fallback: edit the scratchpad day file via GitHub
+  web/app).
 - Capture is asynchronous: Shortcut gets immediate 204; commit lands seconds later.
 
 ## Testing
