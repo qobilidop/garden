@@ -11,7 +11,10 @@ set, minimal credential blast radius.
 ## Decision summary
 
 - Ingestion channel: `repository_dispatch` events into the garden repo.
-- Repo side: an issue-free GitHub Actions workflow appends captures to `inbox.md`.
+- Repo side: an issue-free GitHub Actions workflow appends captures to the
+  scratchpad day file `scratchpad/yyyy/yyyy-mm-dd.md` (amended 2026-07-03;
+  originally `inbox.md` — superseded by digital-life-system-design.md, which
+  retires `inbox.md`).
 - Primary frontend: iOS Shortcut (typed/dictated text; share-sheet link + comment).
 - IM bots (Telegram/Signal), CLI, other frontends: optional later clients of the
   same dispatch interface. Not needed for v1.
@@ -39,9 +42,10 @@ stable interface. Build the repo-side workflow once.
 - Payloads:
   - `capture-thought`: `{ text }`
   - `capture-link`: `{ url, title, comment }`
-- Behavior: append to `inbox.md`, commit with `GITHUB_TOKEN` (no new secrets).
-  - Thought → timestamped bullet under `## Thoughts`.
-  - Link → `- [title](url) — comment` under `## Sources to consume`.
+- Behavior: append to `scratchpad/yyyy/yyyy-mm-dd.md` (created if absent),
+  commit with `GITHUB_TOKEN` (no new secrets). No sections, no state:
+  - Thought → timestamped bullet.
+  - Link → timestamped `- [title](url) — comment` bullet.
 - Commit message: `Capture: <first few words>`.
 - `concurrency` group serializes runs (no races on rapid captures).
 
@@ -74,6 +78,7 @@ stable interface. Build the repo-side workflow once.
 
 ## Open questions
 
-- Larger repo design discussion (pending) may relocate the target file/repo.
-- Entry format details (`## Thoughts` section vs. journal-style) can change
-  freely; only the workflow's append logic is affected.
+- ~~Larger repo design discussion (pending) may relocate the target file/repo.~~
+  Resolved: target is the scratchpad day file (digital-life-system-design.md).
+- Entry format details can change freely; only the workflow's append logic is
+  affected.
