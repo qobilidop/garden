@@ -20,8 +20,9 @@ rerouting.
 | repo's own `deploy.yml` disabled manually | re-enabled, plus `workflow_dispatch` for manual redeploys |
 | `WEBSITE_DEPLOY_KEY` secret + write deploy key across repos | neither; nothing outside the repo can write to it |
 
-Residue: the `gh-pages` branch still exists at `ae950f6`. Stale build output, no
-longer read by anything.
+The `gh-pages` branch was deleted the same day; the repo is down to `main`. Its
+tip was `ae950f6`, build output only — regenerable from source, nothing read it
+once Pages moved to the Actions artifact.
 
 ## Why early rather than at the year-end ritual
 
