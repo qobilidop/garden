@@ -88,3 +88,11 @@ sebastiani2025entailment	2025	model-enumeration	deep-read	critical	CADE	https://
 fried2024entailing	2024	model-enumeration	candidate	high	SAT	https://doi.org/10.4230/LIPIcs.SAT.2024.13	Entailment-based generalization for compact circuit AllSAT covers	-
 lagniez2025preprocessing	2025	knowledge-compilation	candidate	medium	JELIA	https://doi.org/10.1007/978-3-032-04590-4_9	Preprocessing d-DNNF representations while preserving enumeration and query behavior	-
 civini2026theorylemma	2026	model-enumeration	candidate	medium	IJCAR	https://doi.org/10.1007/978-3-032-32589-1_18	SMT theory-lemma enumeration with a different output object from observation fibers	-
+gebser2009projected	2009	model-enumeration	deep-read	critical	CPAIOR	https://doi.org/10.1007/978-3-642-01929-6_7	Sound complete nonredundant projected Boolean solution enumeration in polynomial space	-
+moehle2020flavors	2020	model-enumeration	deep-read	critical	SAT	https://doi.org/10.1007/978-3-030-51825-7_5	Four levels of partial-assignment entailment including exact projected universal-existential coverage	-
+tibebu2018structural	2018	model-enumeration	candidate	high	DDECS	https://doi.org/10.1109/DDECS.2018.00028	Circuit-structural generalization from total models to compact partial assignments	-
+voronov2011partialconfig	2011	model-enumeration	candidate	high	Configuration Workshop	https://ceur-ws.org/Vol-755/paper04.pdf	Exact projected enumeration of valid partial product configurations using SAT BDD and d-DNNF	-
+bernasconi2013compact	2013	model-enumeration	candidate	medium	Theory of Computing Systems	https://doi.org/10.1007/s00224-013-9447-2	Compact disjoint-sum-of-products representation and minimization complexity	-
+grumberg2004allsat	2004	model-enumeration	candidate	high	FMCAD	https://doi.org/10.1007/978-3-540-30494-4_20	Memory-efficient all-solutions SAT with reachability applications	-
+zhang2020shortblocking	2020	model-enumeration	candidate	high	ASE	https://doi.org/10.1145/3324884.3416569	AllSAT acceleration through short blocking clauses	-
+sebastiani2020satisfied	2020	model-enumeration	excluded	medium	arXiv	https://doi.org/10.48550/arXiv.2003.04225	Semantic precursor superseded for manuscript claims by the expanded CADE 2025 treatment	E7-duplicate-version
