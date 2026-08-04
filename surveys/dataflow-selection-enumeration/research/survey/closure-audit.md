@@ -1520,3 +1520,58 @@ fibers, or typed residuals.
 
 Round 41 therefore cannot count toward closure. Round 42's precondition failed;
 it is retired unexecuted and cannot count toward the required no-add sequence.
+
+## Replacement round `closure-replacement-43`: Crossref
+
+Frozen on 2026-08-04 after complete reconciliation and two agreeing
+independent audits of round 41, and before any round-43 or round-44 query was
+executed. Source: Crossref REST API. Each exact phrase is searched with
+`query.bibliographic`, sorted by relevance, with the first 100 records exported
+unless fewer are returned. A round qualifies as no-add only if complete
+screening adds neither a new conceptual cluster nor a plausible closer
+competitor. A publication within an already represented lineage does not
+reopen the map unless it changes the compared semantic object, guarantee, or
+program-model boundary, or is materially closer to the target construction.
+
+| ID | Exact query |
+|---|---|
+| C43-01 | `compositional fixed point Kahn indeterminate dataflow` |
+| C43-02 | `relational nondeterministic dataflow profunctor bisimulation` |
+| C43-03 | `Petri net compositional dataflow input output semantics` |
+| C43-04 | `symbolic WCET input dependent branches parametric` |
+| C43-05 | `symbolic observation graph observed unobserved actions LTL` |
+| C43-06 | `constructive synchronous dataflow semantics interpreter` |
+| C43-07 | `dataflow process networks firing deadlock semantics` |
+| C43-08 | `fair merge expressive power dataflow networks` |
+| C43-09 | `exact requested internal observer input partition` |
+| C43-10 | `caller inputs selection event inverse fibers` |
+| C43-11 | `sparse requested site guard symbolic residual` |
+| C43-12 | `dataflow internal observation exact enumeration` |
+
+## Replacement round `closure-replacement-44`: arXiv
+
+Execute only if round 43 adds neither a conceptual cluster nor a plausible
+close competitor. Source: arXiv API. Frozen on 2026-08-04 before any round-43
+or round-44 execution. Each phrase is submitted as the conjunction of all
+alphanumeric terms across arXiv's `all` field, sorted by relevance, with at
+most the first 100 records and abstracts exported.
+
+| ID | Exact query |
+|---|---|
+| C44-01 | `compositional fixed point Kahn indeterminate dataflow` |
+| C44-02 | `relational nondeterministic dataflow profunctor bisimulation` |
+| C44-03 | `Petri net compositional dataflow input output semantics` |
+| C44-04 | `symbolic WCET input dependent branches parametric` |
+| C44-05 | `symbolic observation graph observed unobserved actions LTL` |
+| C44-06 | `constructive synchronous dataflow semantics interpreter` |
+| C44-07 | `dataflow process networks firing deadlock semantics` |
+| C44-08 | `fair merge expressive power dataflow networks` |
+| C44-09 | `exact requested internal observer input partition` |
+| C44-10 | `caller inputs selection event inverse fibers` |
+| C44-11 | `sparse requested site guard symbolic residual` |
+| C44-12 | `dataflow internal observation exact enumeration` |
+
+If round 43 reopens the map, round 44 is retired unexecuted. If both qualify,
+they establish the required two-round no-add sequence only for the recorded
+sources, exact queries, captured rankings, date, and frozen trigger. Complete
+primary and independent audits remain mandatory before closure.
