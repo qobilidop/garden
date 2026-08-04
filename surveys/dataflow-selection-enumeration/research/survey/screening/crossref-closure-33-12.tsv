@@ -1,0 +1,101 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1145/3725843.3756126	2025	10.1145/3725843.3756126	Misam: Machine Learning Assisted Dataflow Selection in Accelerators for Sparse Matrix Multiplication	Proceedings of the 58th IEEE/ACM International Symposium on Microarchitecture	proceedings-article
+2	10.2139/ssrn.7139685	2026	10.2139/ssrn.7139685	An Integer-Contract-Aware FPGA Dataflow for 2:4-Sparse W4A4 CNN Deployment		posted-content
+3	10.1007/s11063-025-11818-x	2025	10.1007/s11063-025-11818-x	Greedy Feature Selection Based on Residual Downhill with Sparse Regularization	Neural Processing Letters	journal-article
+4	10.1145/202529.202535	1995	10.1145/202529.202535	Optimizing sparse representations for dataflow analysis	Papers from the 1995 ACM SIGPLAN workshop on Intermediate representations	proceedings-article
+5	10.1145/202530.202535	1995	10.1145/202530.202535	Optimizing sparse representations for dataflow analysis	ACM SIGPLAN Notices	journal-article
+6	10.1109/access.2025.3550414	2025	10.1109/access.2025.3550414	SpecBoost: Accelerating Tiled Sparse Matrix Multiplication via Dataflow Speculation	IEEE Access	journal-article
+7	10.1109/fpt.2014.7082787	2014	10.1109/fpt.2014.7082787	Fanout decomposition dataflow optimizations for FPGA-based Sparse LU factorization	2014 International Conference on Field-Programmable Technology (FPT)	proceedings-article
+8	10.1109/access.2023.3319727	2023	10.1109/access.2023.3319727	Optimization of Microarchitecture and Dataflow for Sparse Tensor CNN Acceleration	IEEE Access	journal-article
+9	10.1109/asp-dac58780.2024.10473865	2024	10.1109/asp-dac58780.2024.10473865	Sparse-Sparse Matrix Multiplication Accelerator on FPGA featuring Distribute-Merge Product Dataflow	2024 29th Asia and South Pacific Design Automation Conference (ASP-DAC)	proceedings-article
+10	10.23919/date58400.2024.10546866	2024	10.23919/date58400.2024.10546866	DiMO-Sparse: Differentiable Modeling and Optimization of Sparse CNN Dataflow and Hardware Architecture	2024 Design, Automation &amp;amp; Test in Europe Conference &amp;amp; Exhibition (DATE)	proceedings-article
+11	10.3390/mi16010101	2025	10.3390/mi16010101	A Low-Power General Matrix Multiplication Accelerator with Sparse Weight-and-Output Stationary Dataflow	Micromachines	journal-article
+12	10.1145/3613424.3623775	2023	10.1145/3613424.3623775	RM-STC: Row-Merge Dataflow Inspired GPU Sparse Tensor Core for Energy-Efficient Sparse Acceleration	56th Annual IEEE/ACM International Symposium on Microarchitecture	proceedings-article
+13	10.1109/fpl.2014.6927401	2014	10.1109/fpl.2014.6927401	Heterogeneous dataflow architectures for FPGA-based sparse LU factorization	2014 24th International Conference on Field Programmable Logic and Applications (FPL)	proceedings-article
+14	10.1007/978-3-031-33136-7	2023	10.1007/978-3-031-33136-7	Efficient Execution of Irregular Dataflow Graphs		book
+15	10.1109/asicon58565.2023.10396574	2023	10.1109/asicon58565.2023.10396574	An Optimized Dataflow Based Accelerator for Sparse Convolutional Neural Networks	2023 IEEE 15th International Conference on ASIC (ASICON)	proceedings-article
+16	10.1007/978-3-319-10936-7_13	2014	10.1007/978-3-319-10936-7_13	Sparse Dataflow Analysis with Pointers and Reachability	Lecture Notes in Computer Science	book-chapter
+17	10.13164/re.2025.0482	2025	10.13164/re.2025.0482	A Streaming Dataflow Accelerator for Sparse SVM Kernel Computation in Hyperspectral Image Classification	Radioengineering	journal-article
+18	10.17760/d20410372	None	10.17760/d20410372	GPUBLQMR		dissertation
+19	10.1109/fccm68464.2026.00071	2026	10.1109/fccm68464.2026.00071	Sparse Compressed Quantized Dataflow Architecture (QUDA) for Neuromorphic Computing	2026 IEEE 34th Annual International Symposium on Field-Programmable Custom Computing Machines (FCCM)	proceedings-article
+20	10.1109/micro61859.2024.00090	2024	10.1109/micro61859.2024.00090	Sparsepipe: Sparse Inter-operator Dataflow Architecture with Cross-Iteration Reuse	2024 57th IEEE/ACM International Symposium on Microarchitecture (MICRO)	proceedings-article
+21	10.23919/date64628.2025.10993044	2025	10.23919/date64628.2025.10993044	SparDR:Accelerating Unstructured Sparse DNN Inference via Dataflow Optimization	2025 Design, Automation &amp;amp; Test in Europe Conference (DATE)	proceedings-article
+22	10.1111/ejed.70494	2026	10.1111/ejed.70494	Enhancing Student Dropout Prediction in Educational Data Mining Using Sparse Feedback Based Deep Residual Network With Xception and Optimised Feature Selection	European Journal of Education	journal-article
+23	10.70675/2782599az5516z4615z9d5bz385c331dbc69	None	10.70675/2782599az5516z4615z9d5bz385c331dbc69	Model selection for sparse high-dimensional learning		dissertation
+24	10.1109/micro61859.2024.00084	2024	10.1109/micro61859.2024.00084	LoAS: Fully Temporal-Parallel Dataflow for Dual-Sparse Spiking Neural Networks	2024 57th IEEE/ACM International Symposium on Microarchitecture (MICRO)	proceedings-article
+25	10.7717/peerj.5431/fig-5	None	10.7717/peerj.5431/fig-5	Figure 5: Threshold selection for the sparse vegetation mask mapping.		component
+26	10.1109/fpl.2014.6927453	2014	10.1109/fpl.2014.6927453	Dataflow acceleration of Krylov subspace sparse banded problems	2014 24th International Conference on Field Programmable Logic and Applications (FPL)	proceedings-article
+27	10.1109/isca66397.2026.00130	2026	10.1109/isca66397.2026.00130	SegFold: Accelerating Sparse Gemm with a Fine-Grained Dynamic Dataflow	2026 ACM/IEEE 53rd Annual International Symposium on Computer Architecture (ISCA)	proceedings-article
+28	10.2139/ssrn.4750908	2024	10.2139/ssrn.4750908	Residual Adaptive Sparse Hybrid Attention Transformer for Image Super Resolution		posted-content
+29	10.1007/978-3-031-33136-7_6	2023	10.1007/978-3-031-33136-7_6	Conclusions and Future Work	Efficient Execution of Irregular Dataflow Graphs	book-chapter
+30	10.22215/etd/2017-12163	None	10.22215/etd/2017-12163	Classification and Feature Selection in Sparse High-Dimensional Models		dissertation
+31	10.1109/icfpt47387.2019.00044	2019	10.1109/icfpt47387.2019.00044	A Dataflow Pipelining Architecture for Tile Segmentation with a Sparse MobileNet on an FPGA	2019 International Conference on Field-Programmable Technology (ICFPT)	proceedings-article
+32	10.1007/978-3-642-54807-9_2	2014	10.1007/978-3-642-54807-9_2	Parameterized Construction of Program Representations for Sparse Dataflow Analyses	Lecture Notes in Computer Science	book-chapter
+33	10.1109/pica.1989.38968	None	10.1109/pica.1989.38968	A new approach for the forward and backward substitutions of parallel solution of sparse linear equations based on dataflow architecture	Conference Papers Power Industry Computer Application Conference	proceedings-article
+34	10.55776/p28233	2015	10.55776/p28233			grant
+35	10.1145/3582016.3582069	2023	10.1145/3582016.3582069	Flexagon: A Multi-dataflow Sparse-Sparse Matrix Multiplication Accelerator for Efficient DNN Processing	Proceedings of the 28th ACM International Conference on Architectural Support for Programming Languages and Operating Systems, Volume 3	proceedings-article
+36	10.2139/ssrn.6064476	2026	10.2139/ssrn.6064476	Residual reflection for data augmentation in regression models with sparse covariates		posted-content
+37	10.1093/oso/9780198570509.003.0010	2008	10.1093/oso/9780198570509.003.0010	Observation selection effects and global catastrophic risks	Global Catastrophic Risks	book-chapter
+38	10.70675/a99b748fz6e02z46a1z9809ze1f7b3ddc6e1	None	10.70675/a99b748fz6e02z46a1z9809ze1f7b3ddc6e1	Hyperparameter selection for high dimensional sparse learning : application to neuroimaging		dissertation
+39	10.7717/peerjcs.237/fig-1	None	10.7717/peerjcs.237/fig-1	Figure 1: A Sparse-Modeling Based Approach for Class-Specific Feature Selection.		component
+40	10.70675/f9a5c7a1zedd2z4c6aza032z9c1687f5063c	None	10.70675/f9a5c7a1zedd2z4c6aza032z9c1687f5063c	Feature selection, sparse coding and normalization for material image Classification		dissertation
+41	10.1016/j.neucom.2026.134525	2026	10.1016/j.neucom.2026.134525	Residual Embedding for Sparse Subspace Clustering	Neurocomputing	journal-article
+42	10.1109/ewdts.2018.8524760	2018	10.1109/ewdts.2018.8524760	Study of Execution Efficiency of Implementation Versions of Sparse Matrices Multiplication Algorithm on Parallel Dataflow Computing System “Buran”	2018 IEEE East-West Design &amp; Test Symposium (EWDTS)	proceedings-article
+43	10.1109/tpami.2025.3580669/mm1	None	10.1109/tpami.2025.3580669/mm1	Unsupervised Discriminative Feature Selection With -Norm Constrained Sparse Projection_supp1-3580669.pdf		component
+44	10.1002/cem.3289/v2/review1	2020	10.1002/cem.3289/v2/review1	"Review for ""Model selection techniques for sparse weight‐based principal component analysis"""		peer-review
+45	10.1109/tvlsi.2025.3558895	2025	10.1109/tvlsi.2025.3558895	DMSA: An Efficient Architecture for Sparse–Sparse Matrix Multiplication Based on Distribute-Merge Product Dataflow	IEEE Transactions on Very Large Scale Integration (VLSI) Systems	journal-article
+46	10.1002/cem.3289/v2/review2	2020	10.1002/cem.3289/v2/review2	"Review for ""Model selection techniques for sparse weight‐based principal component analysis"""		peer-review
+47	10.21203/rs.3.rs-6872673/v1	2025	10.21203/rs.3.rs-6872673/v1	Uncertainty Estimation Strategy for Grouped Target Tracking under Sparse Observation		posted-content
+48	10.1109/micro50266.2020.00064	2020	10.1109/micro50266.2020.00064	Procrustes: a Dataflow and Accelerator for Sparse Deep Neural Network Training	2020 53rd Annual IEEE/ACM International Symposium on Microarchitecture (MICRO)	proceedings-article
+49	10.1002/cem.3289/v3/review1	2020	10.1002/cem.3289/v3/review1	"Review for ""Model selection techniques for sparse weight‐based principal component analysis"""		peer-review
+50	10.1109/ispa63168.2024.00176	2024	10.1109/ispa63168.2024.00176	Funnel: An Efficient Sparse Attention Accelerator with Multi-Dataflow Fusion	2024 IEEE International Symposium on Parallel and Distributed Processing with Applications (ISPA)	proceedings-article
+51	10.1002/cem.3289/v1/review2	2020	10.1002/cem.3289/v1/review2	"Review for ""Model selection techniques for sparse weight‐based principal component analysis"""		peer-review
+52	10.1002/cem.3289/v1/review1	2020	10.1002/cem.3289/v1/review1	"Review for ""Model selection techniques for sparse weight‐based principal component analysis"""		peer-review
+53	10.1049/iet-cds.2019.0225	2020	10.1049/iet-cds.2019.0225	Dataflow and microarchitecture co‐optimisation for sparse CNN on distributed processing element accelerator	IET Circuits, Devices &amp; Systems	journal-article
+54	10.52202/068431-1011	2022	10.52202/068431-1011	Sparse Interaction Additive Networks Via Feature Interaction Detection and Sparse Selection	Advances in Neural Information Processing Systems 35	proceedings-article
+55	10.1145/3695053.3731078	2025	10.1145/3695053.3731078	Telos: A Dataflow Accelerator for Sparse Triangular Solver of Partial Differential Equations	Proceedings of the 52nd Annual International Symposium on Computer Architecture	proceedings-article
+56	10.1145/3747847	2025	10.1145/3747847	SpMARD: A Sparse-Sparse Matrix Multiplication Accelerator with Reconfigurable Dataflow for DNN Workloads	ACM Transactions on Architecture and Code Optimization	journal-article
+57	10.3030/838342	2019	10.3030/838342			grant
+58	10.1109/asp-dac66049.2026.11420607	2026	10.1109/asp-dac66049.2026.11420607	SnipSnap: A Joint Compression Format and Dataflow Co-Optimization Framework for Efficient Sparse LLM Accelerator Design	2026 31st Asia and South Pacific Design Automation Conference (ASP-DAC)	proceedings-article
+59	10.1109/iccad45719.2019.8942089	2019	10.1109/iccad45719.2019.8942089	ReDESK: A Reconfigurable Dataflow Engine for Sparse Kernels on Heterogeneous Platforms	2019 IEEE/ACM International Conference on Computer-Aided Design (ICCAD)	proceedings-article
+60	10.21203/rs.3.rs-10156326/v1	2026	10.21203/rs.3.rs-10156326/v1	Physics-guided mechanistic residual learning for sparse-condition force prediction in S45C end milling		posted-content
+61	10.32614/cran.package.multiglarmavarsel	2022	10.32614/cran.package.multiglarmavarsel	MultiGlarmaVarSel: Variable Selection in Sparse Multivariate GLARMA Models	CRAN: Contributed Packages	dataset
+62	10.1109/tcsi.2024.3425895	2024	10.1109/tcsi.2024.3425895	Energy and Bandwidth Efficient Sparse Programmable Dataflow Accelerator	IEEE Transactions on Circuits and Systems I: Regular Papers	journal-article
+63	10.1109/tpami.2025.3600072/mm1	None	10.1109/tpami.2025.3600072/mm1	Tomographic Sparse View Selection Using the View Covariance Loss_supp1-3600072.pdf		component
+64	10.21437/interspeech.2010-621	2010	10.21437/interspeech.2010-621	Observation uncertainty measures for sparse imputation	Interspeech 2010	proceedings-article
+65	10.1002/essoar.10503393.1	2020	10.1002/essoar.10503393.1	Global models from sparse data: A robust estimate of Earth’s residual topography spectrum		posted-content
+66	10.1145/3731302.3731319	2026	10.1145/3731302.3731319	Advanced: Optimal Dataflow Programs and Dataflow SPLs	Science of Software Product Lines	book-chapter
+67	10.1002/nla.2080	2017	10.1002/nla.2080	A residual based sparse approximate inverse preconditioning procedure for large sparse linear systems	Numerical Linear Algebra with Applications	journal-article
+68	10.1109/hpca53966.2022.00069	2022	10.1109/hpca53966.2022.00069	CANDLES: Channel-Aware Novel Dataflow-Microarchitecture Co-Design for Low Energy Sparse Neural Network Acceleration	2022 IEEE International Symposium on High-Performance Computer Architecture (HPCA)	proceedings-article
+69	10.1036/1097-8542.181000	None	10.1036/1097-8542.181000	Dataflow systems	AccessScience	dataset
+70	10.1002/essoar.10503393.2	2020	10.1002/essoar.10503393.2	Global models from sparse data: A robust estimate of Earth’s residual topography spectrum		posted-content
+71	10.2139/ssrn.6908573	2026	10.2139/ssrn.6908573	Residual Selection and Retention in Digital Lending		posted-content
+72	10.32469/10355/15111	None	10.32469/10355/15111	Statistical model-based methods for observation selection in wireless sensor networks and for feature selection in classification		dissertation
+73	10.1021/acs.jcim.1c01403.s001	None	10.1021/acs.jcim.1c01403.s001	Enhancing Characteristic Gene Selection and Tumor Classification by the Robust Laplacian Supervised Discriminative Sparse PCA		component
+74	10.1016/b978-0-323-89783-9.00004-7	2022	10.1016/b978-0-323-89783-9.00004-7	Examples of RCD selection	Residual Current Devices	book-chapter
+75	10.1109/ecie65947.2025.11086988	2025	10.1109/ecie65947.2025.11086988	IOFusion: A Sparse Accelerator based on Hybrid Inner-Outer Product Dataflow for DNN Training	2025 5th International Conference on Electronics, Circuits and Information Engineering (ECIE)	proceedings-article
+76	10.1007/978-3-031-33136-7_1	2023	10.1007/978-3-031-33136-7_1	Irregular Workloads at Risk of Losing the Hardware Lottery	Efficient Execution of Irregular Dataflow Graphs	book-chapter
+77	10.1109/icig.2013.123	2013	10.1109/icig.2013.123	Multi-focus Image Fusion Based on Sparse Representation with Adaptive Sparse Domain Selection	2013 Seventh International Conference on Image and Graphics	proceedings-article
+78	10.1109/tnnls.2025.3584369/mm1	None	10.1109/tnnls.2025.3584369/mm1	Long Short-Term Financial Time Series Forecasting Based on Residual Multiscale TCN Sparse Expert Network and Informer_supp1-3584369.pdf		component
+79	10.5183/jjscs.1502001_216	2015	10.5183/jjscs.1502001_216	SPARSE REGULARIZATION FOR BI-LEVEL VARIABLE SELECTION	Journal of the Japanese Society of Computational Statistics	journal-article
+80	10.1109/icpp.1993.66	1993	10.1109/icpp.1993.66	Dataflow Graph Optimization for Dataflow Architectures a Dataflow Otimizing Compiler	1993 International Conference on Parallel Processing - ICPP'93 Vol2	proceedings-article
+81	10.1145/3531437.3539715	2022	10.1145/3531437.3539715	Sparse Periodic Systolic Dataflow for Lowering Latency and Power Dissipation of Convolutional Neural Network Accelerators	Proceedings of the ACM/IEEE International Symposium on Low Power Electronics and Design	proceedings-article
+82	10.1145/3696443.3708918	2025	10.1145/3696443.3708918	Stardust: Compiling Sparse Tensor Algebra to a Reconfigurable Dataflow Architecture	Proceedings of the 23rd ACM/IEEE International Symposium on Code Generation and Optimization	proceedings-article
+83	10.1101/2023.04.03.535336	2023	10.1101/2023.04.03.535336	Comparison of classification accuracy and feature selection between sparse and non-sparse modeling of metabolomics data		posted-content
+84	10.1186/1297-9686-46-3	2014	10.1186/1297-9686-46-3	Identity-by-descent genomic selection using selective and sparse genotyping	Genetics Selection Evolution	journal-article
+85	10.2139/ssrn.3209847	2018	10.2139/ssrn.3209847	Sparse Parametric Portfolio Selection	SSRN Electronic Journal	journal-article
+86	10.21236/ada513259	2010	10.21236/ada513259	Image Modeling and Enhancement via Structured Sparse Model Selection		report
+87	10.32614/cran.package.sgpr	2024	10.32614/cran.package.sgpr	SGPR: Sparse Group Penalized Regression for Bi-Level Variable Selection	CRAN: Contributed Packages	dataset
+88	10.7287/peerj-cs.237v0.1/reviews/1	2019	10.7287/peerj-cs.237v0.1/reviews/1	"Peer Review #1 of ""A Sparse-Modeling Based Approach for Class Specific Feature Selection (v0.1)"""		peer-review
+89	10.2172/1426119	2018	10.2172/1426119	Exploring Deep Learning and Sparse Matrix Format Selection		report
+90	10.1002/cem.3289/v2/decision1	2020	10.1002/cem.3289/v2/decision1	"Decision letter for ""Model selection techniques for sparse weight‐based principal component analysis"""		peer-review
+91	10.1002/cem.3289/v3/decision1	2020	10.1002/cem.3289/v3/decision1	"Decision letter for ""Model selection techniques for sparse weight‐based principal component analysis"""		peer-review
+92	10.1111/j.1539-6924.2010.01460.x	2010	10.1111/j.1539-6924.2010.01460.x	Anthropic Shadow: Observation Selection Effects and Human Extinction Risks	Risk Analysis	journal-article
+93	10.1007/978-981-15-1967-3_11	2021	10.1007/978-981-15-1967-3_11	Feature Selection and Sparse Learning	Machine Learning	book-chapter
+94	10.1002/cem.3289/v1/decision1	2020	10.1002/cem.3289/v1/decision1	"Decision letter for ""Model selection techniques for sparse weight‐based principal component analysis"""		peer-review
+95	10.1002/cem.3289/v4/decision1	2020	10.1002/cem.3289/v4/decision1	"Decision letter for ""Model selection techniques for sparse weight‐based principal component analysis"""		peer-review
+96	10.1016/j.patcog.2015.05.018	2015	10.1016/j.patcog.2015.05.018	Decremental Sparse Modeling Representative Selection for prototype selection	Pattern Recognition	journal-article
+97	10.1007/978-3-031-33136-7_3	2023	10.1007/978-3-031-33136-7_3	GraphOpt: Constrained-Optimization- Based Parallelization of Irregular Workloads for Multicore Processors	Efficient Execution of Irregular Dataflow Graphs	book-chapter
+98	10.1109/tetci.2023.3314548/mm1	None	10.1109/tetci.2023.3314548/mm1	Sparse Mutual Granularity-Based Feature Selection and its Application of Schizophrenia Patients_supp1-3314548.docx		component
+99	10.7287/peerj-cs.237v0.2/reviews/1	2019	10.7287/peerj-cs.237v0.2/reviews/1	"Peer Review #1 of ""A Sparse-Modeling Based Approach for Class Specific Feature Selection (v0.2)"""		peer-review
+100	10.32614/cran.package.rso	2026	10.32614/cran.package.rso	RSO: Ridge Selection Operator for Sparse Linear Regression	CRAN: Contributed Packages	dataset

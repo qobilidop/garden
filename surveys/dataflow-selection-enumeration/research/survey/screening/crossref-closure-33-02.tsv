@@ -1,0 +1,101 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1017/cbo9780511997587.003	2011	10.1017/cbo9780511997587.003	The interface	The Modular Architecture of Grammar	book-chapter
+2	10.1017/cbo9780511997587.005	2011	10.1017/cbo9780511997587.005	The linear order component	The Modular Architecture of Grammar	book-chapter
+3	10.1145/1273463.1273471	2007	10.1145/1273463.1273471	Interface grammars for modular software model checking	Proceedings of the 2007 international symposium on Software testing and analysis	proceedings-article
+4	10.1109/tse.2008.72	2008	10.1109/tse.2008.72	Interface Grammars for Modular Software Model Checking	IEEE Transactions on Software Engineering	journal-article
+5	10.1109/ase.2002.1115041	2002	10.1109/ase.2002.1115041	Distributed modular model checking	Proceedings 17th IEEE International Conference on Automated Software Engineering,	proceedings-article
+6	10.1016/j.entcs.2009.09.062	2009	10.1016/j.entcs.2009.09.062	Modular Checking with Model Checking	Electronic Notes in Theoretical Computer Science	journal-article
+7	10.1017/cbo9781139107327.004	2014	10.1017/cbo9781139107327.004	Checking grammar and grammar checkers	Fixing English	book-chapter
+8	10.1007/3-540-44829-2_14	2003	10.1007/3-540-44829-2_14	Thread-Modular Model Checking	Lecture Notes in Computer Science	book-chapter
+9	10.3726/978-3-0352-6490-6/19	None	10.3726/978-3-0352-6490-6/19	Grammar and language reflection at school: Checking out the whats and the hows of grammar instruction	Grammar at School	book-chapter
+10	10.31219/osf.io/7xp6s	2024	10.31219/osf.io/7xp6s	Enhancing Semantic Validity in Large Language Model Tasks Through Automated Grammar Checking		posted-content
+11	10.1093/oso/9780192844842.001.0001	2021	10.1093/oso/9780192844842.001.0001	Modular Design of Grammar		edited-book
+12	10.1093/oso/9780192844842.003.0001	2021	10.1093/oso/9780192844842.003.0001	Introduction	Modular Design of Grammar	book-chapter
+13	10.1109/lics.1995.523248	None	10.1109/lics.1995.523248	On the complexity of modular model checking	Proceedings of Tenth Annual IEEE Symposium on Logic in Computer Science	proceedings-article
+14	10.32920/ryerson.14668383	2021	10.32920/ryerson.14668383	Kineto-elastic analysis of modular robot systems with component model updating		posted-content
+15	10.32920/ryerson.14668383.v1	2021	10.32920/ryerson.14668383.v1	Kineto-elastic analysis of modular robot systems with component model updating		posted-content
+16	10.1093/oso/9780192844842.003.0015	2021	10.1093/oso/9780192844842.003.0015	The ‘of’ word	Modular Design of Grammar	book-chapter
+17	10.2139/ssrn.5451114	2025	10.2139/ssrn.5451114	Bridging Psychology and Computation: Modular Formalization of Psychological Theories with Automata and Model Checking		posted-content
+18	10.1093/oso/9780192844842.003.0020	2021	10.1093/oso/9780192844842.003.0020	Meaning in LFG	Modular Design of Grammar	book-chapter
+19	10.1093/oso/9780192844842.003.0018	2021	10.1093/oso/9780192844842.003.0018	Collectivist semantics	Modular Design of Grammar	book-chapter
+20	10.1109/apsec.2009.24	2009	10.1109/apsec.2009.24	Modular Checking of C Programs Using SAT-Based Bounded Model Checker	2009 16th Asia-Pacific Software Engineering Conference	proceedings-article
+21	10.1109/apsec.2003.1254361	None	10.1109/apsec.2003.1254361	Towards a sound modular model checking of collaboration-based software designs	Tenth Asia-Pacific Software Engineering Conference, 2003.	proceedings-article
+22	10.1093/oso/9780192844842.003.0014	2021	10.1093/oso/9780192844842.003.0014	Decategorialization and Chinese nouns	Modular Design of Grammar	book-chapter
+23	10.1007/3-540-49213-5_14	1998	10.1007/3-540-49213-5_14	Modular Model Checking	Lecture Notes in Computer Science	book-chapter
+24	10.5220/0004492605120519	2013	10.5220/0004492605120519	Model Checking of Distributed Component-based Control Systems	Proceedings of the 8th International Joint Conference on Software Technologies	proceedings-article
+25	10.1109/icsecompanion.2007.82	2007	10.1109/icsecompanion.2007.82	Using Software Model Checking for Software Component Certification	29th International Conference on Software Engineering (ICSE'07 Companion)	proceedings-article
+26	10.1093/oso/9780192844842.003.0003	2021	10.1093/oso/9780192844842.003.0003	The unrealized and the unheard	Modular Design of Grammar	book-chapter
+27	10.1145/1932682.1869461	2010	10.1145/1932682.1869461	Efficient modular glass box software model checking	ACM SIGPLAN Notices	journal-article
+28	10.1109/ict-ispc.2018.8523954	2018	10.1109/ict-ispc.2018.8523954	A novel algorithm for a grammar model checking using statistical Markov model	2018 Seventh ICT International Student Project Conference (ICT-ISPC)	proceedings-article
+29	10.1201/9781003760641-13	2025	10.1201/9781003760641-13	Grammar Checking for CALL: Strategies for Improving Foreign Language Grammar Checkers	CALL: Media, Design &amp; Applications	book-chapter
+30	10.1007/978-3-540-87891-9_10	2008	10.1007/978-3-540-87891-9_10	Model Checking of Control-User Component-Based Parametrised Systems	Lecture Notes in Computer Science	book-chapter
+31	10.1017/s1351324916000061	2016	10.1017/s1351324916000061	Checking in on grammar checking	Natural Language Engineering	journal-article
+32	10.1093/oso/9780192844842.003.0013	2021	10.1093/oso/9780192844842.003.0013	Coordinate structures without syntactic categories	Modular Design of Grammar	book-chapter
+33	10.1093/oso/9780192844842.003.0011	2021	10.1093/oso/9780192844842.003.0011	Subjects in Austronesian	Modular Design of Grammar	book-chapter
+34	10.1093/oso/9780192844842.003.0017	2021	10.1093/oso/9780192844842.003.0017	‘Wh’-question intonation in Standard Colloquial Bengali	Modular Design of Grammar	book-chapter
+35	10.1093/oso/9780192844842.003.0005	2021	10.1093/oso/9780192844842.003.0005	On the construct state in Arabic	Modular Design of Grammar	book-chapter
+36	10.1163/9789004484528_020	1994	10.1163/9789004484528_020	Checking Grammar Checkers	Functional Communication Quality	book-chapter
+37	10.1007/3-540-54430-5_93	1991	10.1007/3-540-54430-5_93	Model checking and modular verification	Lecture Notes in Computer Science	book-chapter
+38	10.1109/icpm57379.2022.9980588	2022	10.1109/icpm57379.2022.9980588	Grammar-Based Process Model Representation for Probabilistic Conformance Checking	2022 4th International Conference on Process Mining (ICPM)	proceedings-article
+39	10.1093/oso/9780192844842.003.0012	2021	10.1093/oso/9780192844842.003.0012	Pivot and puzzling relativization in Indonesian	Modular Design of Grammar	book-chapter
+40	10.1017/cbo9780511997587.011	2011	10.1017/cbo9780511997587.011	Bibliography	The Modular Architecture of Grammar	book-chapter
+41	10.1093/oso/9780192844842.003.0006	2021	10.1093/oso/9780192844842.003.0006	Agreement in Urdu adjectival adverbials	Modular Design of Grammar	book-chapter
+42	10.1007/978-3-540-93900-9_3	2008	10.1007/978-3-540-93900-9_3	Thread-Modular Shape Analysis	Lecture Notes in Computer Science	book-chapter
+43	10.1145/2591062.2591149	2014	10.1145/2591062.2591149	Modeling and model checking by modular approach	Companion Proceedings of the 36th International Conference on Software Engineering	proceedings-article
+44	10.1017/cbo9780511997587.010	2011	10.1017/cbo9780511997587.010	Notes	The Modular Architecture of Grammar	other
+45	10.1017/9781009091602.017	2023	10.1017/9781009091602.017	Checking the meaning of grammar items	The CELTA Course	book-chapter
+46	10.1093/oso/9780195118391.001.0001	2000	10.1093/oso/9780195118391.001.0001	Checking Theory and Grammatical Functions in Universal Grammar		book
+47	10.1017/cbo9780511997587.001	2011	10.1017/cbo9780511997587.001	Introduction	The Modular Architecture of Grammar	book-chapter
+48	10.1017/9781009091619.016	2023	10.1017/9781009091619.016	Checking the meaning of grammar items	The CELTA Course	book-chapter
+49	10.37514/jbw-j.2000.19.2.07	2000	10.37514/jbw-j.2000.19.2.07	Checking the Grammar Checker: Integrating Grammar Instruction with Writing	Journal of Basic Writing	journal-article
+50	10.1109/codit62066.2024.10708172	2024	10.1109/codit62066.2024.10708172	Local Model Checking on a Modular System	2024 10th International Conference on Control, Decision and Information Technologies (CoDIT)	proceedings-article
+51	10.1145/2304736.2304752	2012	10.1145/2304736.2304752	Reliability analysis in component-based development via probabilistic model checking	Proceedings of the 15th ACM SIGSOFT symposium on Component Based Software Engineering	proceedings-article
+52	10.1145/3488933.3489034	2021	10.1145/3488933.3489034	Hybrid Chinese Grammar Error Checking Model Based on Transformer	2021 4th International Conference on Artificial Intelligence and Pattern Recognition	proceedings-article
+53	10.1109/mmsd.1996.557744	None	10.1109/mmsd.1996.557744	A flexible type checking model for stream interface binding	Proceedings International Workshop on Multimedia Software Development	proceedings-article
+54	10.1076/call.11.2.215.5691	1998	10.1076/call.11.2.215.5691	Checking Grammar — Teaching Grammar	Computer Assisted Language Learning	journal-article
+55	10.1007/978-3-540-78163-9_18	2008	10.1007/978-3-540-78163-9_18	Sufficient Preconditions for Modular Assertion Checking	Lecture Notes in Computer Science	book-chapter
+56	10.1109/ccece.2001.933644	None	10.1109/ccece.2001.933644	Component interaction testing using model-checking	Canadian Conference on Electrical and Computer Engineering 2001. Conference Proceedings (Cat. No.01TH8555)	proceedings-article
+57	10.1109/ram.2017.7889773	2017	10.1109/ram.2017.7889773	Integrated modular avionics system safety analysis based on model checking	2017 Annual Reliability and Maintainability Symposium (RAMS)	proceedings-article
+58	10.3390/app112110503	2021	10.3390/app112110503	A Component-Based Model for Novel Modular Connections with Inbuild Component	Applied Sciences	journal-article
+59	10.1017/cbo9780511997587.008	2011	10.1017/cbo9780511997587.008	Conflict resolution	The Modular Architecture of Grammar	book-chapter
+60	10.5194/egusphere-egu2020-6990	2020	10.5194/egusphere-egu2020-6990	Modular AWI-CM: An Earth System Model (ESM) prototype using the esm-interface library for a modular ESM coupling approach		posted-content
+61	10.1145/1869459.1869461	2010	10.1145/1869459.1869461	Efficient modular glass box software model checking	Proceedings of the ACM international conference on Object oriented programming systems languages and applications	proceedings-article
+62	10.1093/oso/9780192844842.003.0002	2021	10.1093/oso/9780192844842.003.0002	A speculation about what linguistic structures might be	Modular Design of Grammar	book-chapter
+63	10.1093/oso/9780192844842.003.0016	2021	10.1093/oso/9780192844842.003.0016	Paradigm structure influences syntactic behaviour	Modular Design of Grammar	book-chapter
+64	10.1017/cbo9780511997587.004	2011	10.1017/cbo9780511997587.004	Role structure	The Modular Architecture of Grammar	book-chapter
+65	10.1145/1900008.1900087	2010	10.1145/1900008.1900087	Modular development and verification of domain requirements via model checking	Proceedings of the 48th Annual Southeast Regional Conference	proceedings-article
+66	10.1093/oso/9780192844842.003.0008	2021	10.1093/oso/9780192844842.003.0008	Four Swedish verbs and a functional distinction	Modular Design of Grammar	book-chapter
+67	10.1093/oso/9780192844842.003.0007	2021	10.1093/oso/9780192844842.003.0007	An LFG approach to Icelandic reciprocal constructions	Modular Design of Grammar	book-chapter
+68	10.1109/icise.2010.5691829	2010	10.1109/icise.2010.5691829	Satisfiability-based checking for user interface model	The 2nd International Conference on Information Science and Engineering	proceedings-article
+69	10.1017/cbo9780511997587.009	2011	10.1017/cbo9780511997587.009	Some final observations	The Modular Architecture of Grammar	book-chapter
+70	10.1515/9781683923138-007	2013	10.1515/9781683923138-007	Chapter 5. Three Stub Tuner Model Results	RF Module	book-chapter
+71	10.1093/oso/9780195118391.003.0001	2000	10.1093/oso/9780195118391.003.0001	Introduction	Checking Theory and Grammatical Functions in Universal Grammar	book-chapter
+72	10.1017/cbo9780511997587.006	2011	10.1017/cbo9780511997587.006	Morphology and morphophonology	The Modular Architecture of Grammar	book-chapter
+73	10.1515/9781683923138-008	2013	10.1515/9781683923138-008	Chapter 6. Three Stub Tuner Model VSWR Calculations	RF Module	book-chapter
+74	10.1093/oso/9780195118391.002.0004	2000	10.1093/oso/9780195118391.002.0004	Abbreviations	Checking Theory and Grammatical Functions in Universal Grammar	other
+75	10.1007/978-1-4471-0485-8_12	2000	10.1007/978-1-4471-0485-8_12	Checking and Changing Spelling and Grammar	Word Processing	book-chapter
+76	10.1093/oso/9780195118391.002.0002	2000	10.1093/oso/9780195118391.002.0002	Dedication	Checking Theory and Grammatical Functions in Universal Grammar	other
+77	10.1515/9781683923138-009	2013	10.1515/9781683923138-009	Chapter 7. Conclusions from the Three Stub Tuner Model	RF Module	book-chapter
+78	10.1093/oso/9780192844842.003.0019	2021	10.1093/oso/9780192844842.003.0019	Asymmetric anaphoric dependencies determine available readings for VP-ellipsis	Modular Design of Grammar	book-chapter
+79	10.1093/oso/9780192844842.003.0009	2021	10.1093/oso/9780192844842.003.0009	Deagentivizing Norwegian verbs with reflexive and body part objects	Modular Design of Grammar	book-chapter
+80	10.1515/9781683923138-005	2013	10.1515/9781683923138-005	Chapter 3. Designing the Three Stub Tuner Model	RF Module	book-chapter
+81	10.1109/icis.2009.212	2009	10.1109/icis.2009.212	Model Checking Service Component Composition by SPIN	2009 Eighth IEEE/ACIS International Conference on Computer and Information Science	proceedings-article
+82	10.1098/rsif.2008.0546	2009	10.1098/rsif.2008.0546	Intelligently deciphering unintelligible designs: algorithmic algebraic model checking in systems biology	Journal of The Royal Society Interface	journal-article
+83	10.1093/oso/9780195118391.002.0003	2000	10.1093/oso/9780195118391.002.0003	Preface	Checking Theory and Grammatical Functions in Universal Grammar	other
+84	10.1007/3-540-44919-1_15	2003	10.1007/3-540-44919-1_15	Model Checking Safety Properties in Modular High-Level Nets	Lecture Notes in Computer Science	book-chapter
+85	10.1515/9781683923138-013	2013	10.1515/9781683923138-013	Chapter 11. Conclusions: Three Stub Tuner Model Plus Variations	RF Module	book-chapter
+86	10.1109/acsd.2014.14	2014	10.1109/acsd.2014.14	Modular &amp;#x00B5;-Calculus Model-Checking with Formula-Dependent Hierarchical Abstractions	2014 14th International Conference on Application of Concurrency to System Design	proceedings-article
+87	10.1109/tc.2009.187	2010	10.1109/tc.2009.187	Modular Model Checking of Large Asynchronous Designs with Efficient Abstraction Refinement	IEEE Transactions on Computers	journal-article
+88	10.1093/oso/9780195118391.003.0005	2000	10.1093/oso/9780195118391.003.0005	Locative Inversion	Checking Theory and Grammatical Functions in Universal Grammar	book-chapter
+89	10.1007/978-3-540-69738-1_21	None	10.1007/978-3-540-69738-1_21	Cibai: An Abstract Interpretation-Based Static Analyzer for Modular Analysis and Verification of Java Classes	Lecture Notes in Computer Science	book-chapter
+90	10.1145/949952.940097	2003	10.1145/949952.940097	Adapting side effects analysis for modular program model checking	ACM SIGSOFT Software Engineering Notes	journal-article
+91	10.5220/0002681700870096	2004	10.5220/0002681700870096	Verifying user interface behaviour with model checking	Proceedings of the 2nd International Workshop on Verification and Validation of Enterprise Information Systems	proceedings-article
+92	10.1515/9783110959994.205	1997	10.1515/9783110959994.205	References	Verbal Agreement and the Grammar behind its 'Breakdown'	book-chapter
+93	10.1515/9783110959994.1	1997	10.1515/9783110959994.1	Introduction	Verbal Agreement and the Grammar behind its 'Breakdown'	book-chapter
+94	10.1007/978-1-4615-3190-6_2	1993	10.1007/978-1-4615-3190-6_2	Model Checking	Symbolic Model Checking	book-chapter
+95	10.1002/cepa.1266	2021	10.1002/cepa.1266	A simplified analytical model for a T‐stub component with preloaded bolts	ce/papers	journal-article
+96	10.1515/9783110920833.41	None	10.1515/9783110920833.41	Constituent ordering in the expression component of Functional Grammar	Morphosyntactic Expression in Functional Grammar	book-chapter
+97	10.1007/3-540-45139-0_10	2001	10.1007/3-540-45139-0_10	Behavioural analysis of the enterprise javaBeans™ component architecture	Lecture Notes in Computer Science	book-chapter
+98	10.1007/978-3-642-27269-1_7	2012	10.1007/978-3-642-27269-1_7	Model Checking Adaptive Multilevel Service Compositions	Lecture Notes in Computer Science	book-chapter
+99	10.1016/j.scico.2008.09.020	2009	10.1016/j.scico.2008.09.020	Symbolic model checking for channel-based component connectors	Science of Computer Programming	journal-article
+100	10.1109/compsac.2007.153	2007	10.1109/compsac.2007.153	Model Checking of Component Connectors	31st Annual International Computer Software and Applications Conference - Vol. 1- (COMPSAC 2007)	proceedings-article

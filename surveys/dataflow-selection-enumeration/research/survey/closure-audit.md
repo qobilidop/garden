@@ -1144,3 +1144,36 @@ If round 33 reopens the map, round 34 is retired unexecuted. If both qualify,
 they establish the required two-round no-add sequence only for the recorded
 sources, exact queries, captured rankings, date, and frozen trigger. Independent
 audit remains mandatory before closure.
+
+## Outcome of round 33 and retirement of round 34
+
+Round 33 is not a no-add round. The primary screen and two independent audits
+each parsed and title-screened all 1,200 occurrences. Every snapshot has 100
+unique source identifiers and ranks 1--100; the round contains 1,192 unique
+identifiers. Six blank-title records are grants or supplemental datasets, not
+technical publications. Independent normalization implementations counted
+1,084 and 1,085 unique nonblank titles; the one-title difference is retained
+as an audit detail rather than normalized away after review.
+
+Relaxed visibility is the decisive close addition: the checked temporal
+property changes which concurrent actions may safely be treated as invisible.
+The round also adds sound may-happen-before schedule pruning, static
+happens-before task abstractions, modular grouped-state checking, symbolic path
+simulation as a dataflow-analysis service, and several weaker dataflow, path,
+heap, and weak-memory comparators. None returns a complete requested-root
+caller-input image, its inverse fibers, and typed residuals.
+
+Because relaxed visibility is a close observer-relative comparator, its exact
+journal bibliography and complete OpenCitations DOI neighborhood were chased
+separately. All 19 backward and 17 forward records were screened. The forward
+set exposes safety-property-driven and question-guided stubborn sets,
+transparent and optimal stubborn-set variants, and automata-driven POR. These
+make the property-observer precedent explicit but continue to quotient
+concurrent executions rather than caller inputs. Historical dependency,
+representative-interleaving, and on-the-fly stubborn-set works were reconciled
+from the backward set. No chase record supplies the target construction.
+
+The prospective comparison is to the catalog frozen before round execution,
+so the adjudicated outcome is reopen even though both independent audits found
+no direct target work. Round 34's precondition therefore failed; it is retired
+unexecuted and cannot count toward closure.

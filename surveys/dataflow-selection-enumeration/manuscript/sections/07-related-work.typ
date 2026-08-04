@@ -84,6 +84,10 @@ branches irrelevant to selected program values @denaro2012allvalues
 criteria differ from this graph observer. The contribution here is therefore
 not disjoint guarded residuals; it is the explicit correspondence between one
 declared site observer, its exact local fiber, and its projected encoding.
+General symbolic path simulation has also been embedded as a feasibility
+service inside path-sensitive interprocedural dataflow analysis
+@hampapuram2005pathsimulation. That integration answers client path queries;
+it does not emit the complete requested-event image and inverse input fibers.
 
 Delayed-choice execution is an especially instructive neighbor. A bounded
 nondeterministic value remains in a shared suspension until a non-copy use
@@ -141,6 +145,21 @@ approximately commuting actions and nearby initial states @fan2018approxpor.
 Lazy happens-before sharpens the same boundary by ignoring mutex-only edges to
 obtain a more precise schedule-state equivalence than ordinary happens-before
 @thomson2015lazy.
+Other observer-sensitive POR precedents relax which actions count as visible
+under a checked property, or soundly approximate may-happen-before from static
+field accesses and the current dynamic state to omit unnecessary scheduling
+choices @peled2001relaxedvisibility @parizek2014approxhb. Explicit task-level
+happens-before constraints can instead be analyzed into a static abstraction
+that classifies task pairs as sequential, exclusive, or parallel
+@angerer2010schedule. These are property or schedule observers, not caller-
+input partitions.
+The same distinction persists in stubborn-set refinements: safety properties
+or state-property questions drive the reduction @hansen2016safety
+@kristensen2006question, transparent and optimal variants sharpen which
+representatives can be omitted @siegel2012transparent @valmari2010optimal,
+and property automata can direct both POR and search @jensen2022automata.
+Those methods preserve a model-checking question over schedules; they do not
+derive an inverse partition of all caller inputs for a selected graph event.
 
 More directly, optimal DPOR with observers makes dependencies conditional on
 future reads or receives, covers every maximal observational-equivalence class,
@@ -285,6 +304,10 @@ Earlier abstract subsumption already backtracks when a symbolic heap state is
 contained in a previously explored abstract state, obtaining finite but
 under-approximate exploration for recursive heaps and arrays
 @anand2006subsumption.
+Modular glass-box checking instead safely checks large sets of similar states
+together and substitutes component abstractions during bounded exhaustive
+input and schedule exploration @roberson2010glassbox. Its grouped object is a
+model-checker state set, not a requested-event caller-input fiber.
 Postconditioned symbolic execution gives an exact path-level counterpart:
 weakest-precondition summaries prune a new suffix already covered by prior
 bounded behavior @yi2018postconditioned.

@@ -1,0 +1,103 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1145/1932682.1869493	2010	10.1145/1932682.1869493	Symbolic heap abstraction with demand-driven axiomatization of memory invariants	ACM SIGPLAN Notices	journal-article
+2	10.1145/1869459.1869493	2010	10.1145/1869459.1869493	Symbolic heap abstraction with demand-driven axiomatization of memory invariants	Proceedings of the ACM international conference on Object oriented programming systems languages and applications	proceedings-article
+3	10.1145/2926697.2926708	2016	10.1145/2926697.2926708	Rethinking a heap hierarchy as a cache hierarchy: a higher-order theory of memory demand (HOTM)	Proceedings of the 2016 ACM SIGPLAN International Symposium on Memory Management	proceedings-article
+4	10.1016/j.top.2006.06.001	2006	10.1016/j.top.2006.06.001	Bordism invariants of the mapping class group	Topology	journal-article
+5	10.1016/j.jsc.2008.02.012	2009	10.1016/j.jsc.2008.02.012	Separating invariants	Journal of Symbolic Computation	journal-article
+6	10.1201/b18545-17	2015	10.1201/b18545-17	Heap Memory	Intermediate C Programming	book-chapter
+7	10.1007/978-0-387-21798-7_12	2003	10.1007/978-0-387-21798-7_12	Object models as heap invariants	Monographs in Computer Science	book-chapter
+8	10.1017/s1755020316000034	2016	10.1017/s1755020316000034	OBLIGATION AS WEAKEST PERMISSION: A STRONGLY COMPLETE AXIOMATIZATION	The Review of Symbolic Logic	journal-article
+9	10.1016/j.jsc.2010.08.014	2011	10.1016/j.jsc.2010.08.014	Sparse polynomial division using a heap	Journal of Symbolic Computation	journal-article
+10	10.3792/chmm/1263317252	1914	10.3792/chmm/1263317252	Part II: Theory of invariants in non-symbolic notation	Cornell University Library Historical Math Monographs	book-chapter
+11	10.2307/2964176	1957	10.2307/2964176	The axiomatization of arithmetic	Journal of Symbolic Logic	journal-article
+12	10.2307/2274480	1990	10.2307/2274480	The axiomatization of randomness	Journal of Symbolic Logic	journal-article
+13	10.2307/2273585	1982	10.2307/2273585	Axiomatization of polynomial substitution algebras	Journal of Symbolic Logic	journal-article
+14	10.2139/ssrn.6475498	2026	10.2139/ssrn.6475498	Topological Invariants for Sequential Intelligence: A Neural–Topological–Symbolic Framework		posted-content
+15	10.29007/zrct	None	10.29007/zrct	Quantified Heap Invariants for Object-Oriented Programs	EPiC Series in Computing	proceedings-article
+16	10.2307/2963685	1962	10.2307/2963685	Hao Wang. The axiomatization of arithmetic. The journal of symbolic logic, vol. 22 (1957), pp. 145–158.	Journal of Symbolic Logic	journal-article
+17	10.1017/s1755020313000099	2013	10.1017/s1755020313000099	NONASSOCIATIVE SUBSTRUCTURAL LOGICS AND THEIR SEMILINEAR EXTENSIONS: AXIOMATIZATION AND COMPLETENESS PROPERTIES	The Review of Symbolic Logic	journal-article
+18	10.1145/3241624.2926708	2018	10.1145/3241624.2926708	Rethinking a heap hierarchy as a cache hierarchy: a higher-order theory of memory demand (HOTM)	ACM SIGPLAN Notices	journal-article
+19	10.1016/j.jsc.2024.102330	2024	10.1016/j.jsc.2024.102330	Computations of Gromov–Witten invariants of toric varieties	Journal of Symbolic Computation	journal-article
+20	10.2307/2695091	2001	10.2307/2695091	An axiomatization of full Computation Tree Logic	Journal of Symbolic Logic	journal-article
+21	10.2178/bsl/1052669290	2003	10.2178/bsl/1052669290	Foundations and Applications: Axiomatization and Education	Bulletin of Symbolic Logic	journal-article
+22	10.4304/jmm.9.6.843-850	2014	10.4304/jmm.9.6.843-850	Dynamic Obfuscation Algorithm based on Demand-Driven Symbolic Execution	Journal of Multimedia	journal-article
+23	10.1201/b18545-18	2015	10.1201/b18545-18	Programming Problems Using Heap Memory	Intermediate C Programming	book-chapter
+24	10.1145/224538.224648	1995	10.1145/224538.224648	Gated SSA-based demand-driven symbolic analysis for parallelizing compilers	Proceedings of the 9th international conference on Supercomputing  - ICS '95	proceedings-article
+25	10.1017/jsl.2024.58	2026	10.1017/jsl.2024.58	AXIOMATIZATION AND FORCING IN SET THEORY WITH URELEMENTS	The Journal of Symbolic Logic	journal-article
+26	10.4324/9781315076935-11	2013	10.4324/9781315076935-11	Sterility, aridity, drought: some invariants of symbolic thought	The Meaning of Illness	book-chapter
+27	10.1016/j.jsc.2023.102258	2024	10.1016/j.jsc.2023.102258	Invariants of SDP exactness in quadratic programming	Journal of Symbolic Computation	journal-article
+28	10.2307/2273332	1983	10.2307/2273332	The optimality of induction as an axiomatization of arithmetic	Journal of Symbolic Logic	journal-article
+29	10.1016/j.jsc.2014.09.006	2015	10.1016/j.jsc.2014.09.006	Explicit computations of invariants of plane quartic curves	Journal of Symbolic Computation	journal-article
+30	10.1017/jsl.2018.82	2019	10.1017/jsl.2018.82	"AXIOMATIZATION OF PROVABLE
+                    <i>n</i>
+                    -PROVABILITY"	The Journal of Symbolic Logic	journal-article
+31	10.1109/synasc.2008.43	2008	10.1109/synasc.2008.43	Axiomatization of Credulous Reasoning in Default Logics using Sequent Calculus	2008 10th International Symposium on Symbolic and Numeric Algorithms for Scientific Computing	proceedings-article
+32	10.1006/jsco.1999.0333	2000	10.1006/jsco.1999.0333	Invariants, Patterns and Weights for Ordering Terms	Journal of Symbolic Computation	journal-article
+33	10.1016/j.jsc.2010.03.002	2010	10.1016/j.jsc.2010.03.002	The invariants of the binary decimic	Journal of Symbolic Computation	journal-article
+34	10.1109/apsec.2012.35	2012	10.1109/apsec.2012.35	Modular Heap Abstraction-Based Memory Leak Detection for Heap-Manipulating Programs	2012 19th Asia-Pacific Software Engineering Conference	proceedings-article
+35	10.1145/3424954.3424956	2020	10.1145/3424954.3424956	Shadow-Heap	Proceedings of the European Interdisciplinary Cybersecurity Conference	proceedings-article
+36	10.2307/2270777	1967	10.2307/2270777	A note on finite axiomatization of partial propositional calculi	Journal of Symbolic Logic	journal-article
+37	10.1006/jsco.1998.1004	2001	10.1006/jsco.1998.1004	Classical Invariants and 2-descent on Elliptic Curves	Journal of Symbolic Computation	journal-article
+38	10.1007/978-3-540-78800-3_28	None	10.1007/978-3-540-78800-3_28	Demand-Driven Compositional Symbolic Execution	Lecture Notes in Computer Science	book-chapter
+39	10.2307/2271339	1963	10.2307/2271339	Axiomatization of the infinite-valued predicate calculus	Journal of Symbolic Logic	journal-article
+40	10.1016/j.jsc.2022.05.001	2023	10.1016/j.jsc.2022.05.001	Solving degree, last fall degree, and related invariants	Journal of Symbolic Computation	journal-article
+41	10.1016/j.jsc.2020.07.006	2022	10.1016/j.jsc.2020.07.006	Saturations of subalgebras, SAGBI bases, and U-invariants	Journal of Symbolic Computation	journal-article
+42	10.1016/j.jsc.2010.03.003	2010	10.1016/j.jsc.2010.03.003	The invariants of the binary nonic	Journal of Symbolic Computation	journal-article
+43	10.1016/j.jsc.2005.04.004	2006	10.1016/j.jsc.2005.04.004	Phylogenetic invariants for stationary base composition	Journal of Symbolic Computation	journal-article
+44	10.1016/j.jsc.2008.11.008	2010	10.1016/j.jsc.2008.11.008	Mechanical inference of invariants for FOR-loops	Journal of Symbolic Computation	journal-article
+45	10.2307/2274702	1991	10.2307/2274702	An axiomatization of the logic with the rough quantifier	Journal of Symbolic Logic	journal-article
+46	10.1016/j.jsc.2007.01.002	2007	10.1016/j.jsc.2007.01.002	Generating all polynomial invariants in simple loops	Journal of Symbolic Computation	journal-article
+47	10.1016/j.jsc.2021.06.002	2022	10.1016/j.jsc.2021.06.002	The number of tetrahedra sharing the same metric invariants via symbolic and numerical computations	Journal of Symbolic Computation	journal-article
+48	10.1016/j.jsc.2011.12.052	2012	10.1016/j.jsc.2011.12.052	Discovering invariants via simple component analysis	Journal of Symbolic Computation	journal-article
+49	10.2178/jsl/1344862169	2012	10.2178/jsl/1344862169	A sound and complete axiomatization for Dynamic Topological Logic	The Journal of Symbolic Logic	journal-article
+50	10.1016/j.jsc.2011.11.006	2012	10.1016/j.jsc.2011.11.006	Invariants for the computation of intransitive and transitive Galois groups	Journal of Symbolic Computation	journal-article
+51	10.3792/chmm/1263317253	1914	10.3792/chmm/1263317253	Part III: Symbolic notation	Cornell University Library Historical Math Monographs	book-chapter
+52	10.1006/jsco.2002.0558	2002	10.1006/jsco.2002.0558	Computing Modular Invariants of p-groups	Journal of Symbolic Computation	journal-article
+53	10.1109/icdcs.2018.00121	2018	10.1109/icdcs.2018.00121	Efficient Shared Memory Orchestration towards Demand Driven Memory Slicing	2018 IEEE 38th International Conference on Distributed Computing Systems (ICDCS)	proceedings-article
+54	10.1016/j.jsc.2016.02.005	2017	10.1016/j.jsc.2016.02.005	Improved methods for the construction of relative invariants for permutation groups	Journal of Symbolic Computation	journal-article
+55	10.1016/j.jsc.2022.08.017	2023	10.1016/j.jsc.2022.08.017	Machine learning invariants of arithmetic curves	Journal of Symbolic Computation	journal-article
+56	10.1016/j.jsc.2025.102551	2026	10.1016/j.jsc.2025.102551	Algebraic and algorithmic methods for computing polynomial loop invariants	Journal of Symbolic Computation	journal-article
+57	10.1016/s0747-7171(06)80010-6	1993	10.1016/s0747-7171(06)80010-6	On the mechanical derivation of loop invariants	Journal of Symbolic Computation	journal-article
+58	10.1016/j.jsc.2008.08.003	2009	10.1016/j.jsc.2008.08.003	Differential invariants of a Lie group action: Syzygies on a generating set	Journal of Symbolic Computation	journal-article
+59	10.1201/9781003257981-7	2023	10.1201/9781003257981-7	Heap Memory	Intermediate C Programming	book-chapter
+60	10.1016/j.jsc.2025.102533	2026	10.1016/j.jsc.2025.102533	Invariants recovering the reduction type of a hyperelliptic curve	Journal of Symbolic Computation	journal-article
+61	10.2307/2272117	1977	10.2307/2272117	An axiomatization for a class of two-cardinal models	Journal of Symbolic Logic	journal-article
+62	10.1016/j.jsc.2023.02.006	2023	10.1016/j.jsc.2023.02.006	Computing pullback function of second order differential operators by using their semi-invariants	Journal of Symbolic Computation	journal-article
+63	10.2178/bsl/1231081370	2008	10.2178/bsl/1231081370	A Natural Axiomatization of Computability and Proof of Church's Thesis	Bulletin of Symbolic Logic	journal-article
+64	10.1108/eb049864	1962	10.1108/eb049864	SATISFYING A DEMAND OR CREATING A MARKET	Aslib Proceedings	journal-article
+65	10.1017/s1755020316000265	2016	10.1017/s1755020316000265	THERE IS NO FINITE-VARIABLE EQUATIONAL AXIOMATIZATION OF REPRESENTABLE RELATION ALGEBRAS OVER WEAKLY REPRESENTABLE RELATION ALGEBRAS	The Review of Symbolic Logic	journal-article
+66	10.1006/jsco.1998.0210	1998	10.1006/jsco.1998.0210	A Constructive Description of SAGBI Bases for Polynomial Invariants of Permutation Groups	Journal of Symbolic Computation	journal-article
+67	10.1016/b978-0-08-100946-8.00002-8	2017	10.1016/b978-0-08-100946-8.00002-8	Demand-Driven Acquisitions	Evaluating Demand-Driven Acquisitions	book-chapter
+68	10.1007/978-1-4020-8703-5_16	None	10.1007/978-1-4020-8703-5_16	Symbolic Space: Memory, Narrative, Writing	Symbolic Landscapes	book-chapter
+69	10.65237/15-2026-2	2026	10.65237/15-2026-2	CHAPTER 2. NEURO-SYMBOLIC CONSTRAINED REASONING: GROUNDING LLM-DRIVEN STATIC ANALYSIS IN DIFFERENTIABLE PROGRAM INVARIANTS FOR SECURE SDLC	Cross-disciplinary studies in science, innovation and social development. Vol. 15. Monograph. Prague: Publishing house Education and Science s.r.o., 2026.	book-chapter
+70	10.2307/2270440	1964	10.2307/2270440	Louise Schmir Hay. Axiomatization of the infinite-valued predicate calculus. The journal of symbolic logic, vol. 28 no. 1 (for 1963, pub. 1964), pp. 77–86.	Journal of Symbolic Logic	journal-article
+71	10.1016/j.jsc.2007.07.003	2007	10.1016/j.jsc.2007.07.003	On complete system of invariants for the binary form of degree 7	Journal of Symbolic Computation	journal-article
+72	10.1145/3408984	2020	10.1145/3408984	Higher-order demand-driven symbolic evaluation	Proceedings of the ACM on Programming Languages	journal-article
+73	10.1049/pbce056e_ch6	1999	10.1049/pbce056e_ch6	Approximate algebraic computations of algebraic invariants	Symbolic Methods in Control System Analysis and Design	book-chapter
+74	10.21236/ada274122	1993	10.21236/ada274122	Memory Subsystem Performance of Programs with Intensive Heap Allocation		report
+75	10.4324/9781003226161-2	2022	10.4324/9781003226161-2	Demand-Driven versus Supply-Driven	Demand-Driven Business Strategy	book-chapter
+76	10.1145/1920261.1920310	2010	10.1145/1920261.1920310	Heap Taichi	Proceedings of the 26th Annual Computer Security Applications Conference	proceedings-article
+77	10.3789/niso-rp-20-2014	None	10.3789/niso-rp-20-2014	NISO RP-20-2014, Demand Driven Acquisition of Monographs		standard
+78	10.1515/9783110922752.217	2007	10.1515/9783110922752.217	Differential Invariants for Lie Pseudo-groups	Gröbner Bases in Symbolic Analysis	book-chapter
+79	10.1016/j.jsc.2006.03.005	2007	10.1016/j.jsc.2006.03.005	Rational invariants of a group action. Construction and rewriting	Journal of Symbolic Computation	journal-article
+80	10.1038/s40494-025-02188-7	2025	10.1038/s40494-025-02188-7	A user-demand-driven neuro-symbolic framework for sustainable Xuan paper intangible cultural heritage preservation	npj Heritage Science	journal-article
+81	10.1109/icse-companion55297.2022.9793817	2022	10.1109/icse-companion55297.2022.9793817	GARUDA: Heap aware symbolic execution	2022 IEEE/ACM 44th International Conference on Software Engineering: Companion Proceedings (ICSE-Companion)	proceedings-article
+82	10.31274/etd-180810-5548	None	10.31274/etd-180810-5548	A recompilation and instrumentation-free monitoring architecture for detecting heap memory errors and exploits		dissertation
+83	10.1016/s0747-7171(03)00091-9	2003	10.1016/s0747-7171(03)00091-9	Fast computation of discrete invariants associated to a differential rational mapping	Journal of Symbolic Computation	journal-article
+84	10.1007/s12204-009-0536-y	2009	10.1007/s12204-009-0536-y	Finite axiomatization for symbolic probabilistic π-calculus	Journal of Shanghai Jiaotong University (Science)	journal-article
+85	10.1145/3249535	2005	10.1145/3249535	Session details: Heap analysis	Proceedings of the 2005 workshop on Memory system performance	proceedings-article
+86	10.1016/s0747-7171(88)80026-9	1988	10.1016/s0747-7171(88)80026-9	Minimum number of fundamental invariants for the binary form of degree 7	Journal of Symbolic Computation	journal-article
+87	10.1016/j.procs.2018.11.087	2018	10.1016/j.procs.2018.11.087	Emergence of symbolic inference based on value-driven intuitive inference via associative memory	Procedia Computer Science	journal-article
+88	10.1016/j.jsc.2014.09.009	2015	10.1016/j.jsc.2014.09.009	Computation of topological invariants for real projective surfaces with isolated singularities	Journal of Symbolic Computation	journal-article
+89	10.1109/tse.2024.3395412/mm1	None	10.1109/tse.2024.3395412/mm1	Concretely Mapped Symbolic Memory Locations for Memory Error Detection_supp1-3395412.pdf		component
+90	10.1007/978-3-642-15769-1_6	2010	10.1007/978-3-642-15769-1_6	Statically Inferring Complex Heap, Array, and Numeric Invariants	Lecture Notes in Computer Science	book-chapter
+91	10.1016/j.jsc.2020.09.007	2021	10.1016/j.jsc.2020.09.007	Computing invariants for multipersistence via spectral systems and effective homology	Journal of Symbolic Computation	journal-article
+92	10.1007/978-3-642-32241-9_31	2012	10.1007/978-3-642-32241-9_31	External Memory Soft Heap, and Hard Heap, a Meldable Priority Queue	Lecture Notes in Computer Science	book-chapter
+93	10.1145/3510454.3528650	2022	10.1145/3510454.3528650	GARUDA	Proceedings of the ACM/IEEE 44th International Conference on Software Engineering: Companion Proceedings	proceedings-article
+94	10.1145/1993478.1993497	2011	10.1145/1993478.1993497	Integrated symbol table, engine and heap memory management in multi-engine prolog	Proceedings of the international symposium on Memory management	proceedings-article
+95	10.1007/978-1-4419-8987-1_10	2004	10.1007/978-1-4419-8987-1_10	Profile-Tuned Heap Access	High Performance Memory Systems	book-chapter
+96	10.1017/jsl.2025.10134	2025	10.1017/jsl.2025.10134	CARDINAL INVARIANTS RELATED TO DENSITY	The Journal of Symbolic Logic	journal-article
+97	10.1016/j.jsc.2016.11.001	2017	10.1016/j.jsc.2016.11.001	Algebraic invariants of projective monomial curves associated to generalized arithmetic sequences	Journal of Symbolic Computation	journal-article
+98	10.1201/9781003257981-8	2023	10.1201/9781003257981-8	Programming Problems Using Heap Memory	Intermediate C Programming	book-chapter
+99	10.1142/s0218216523500402	2023	10.1142/s0218216523500402	Fundamental heap for framed links and ribbon cocycle invariants	Journal of Knot Theory and Its Ramifications	journal-article
+100	10.1002/symb.293	2017	10.1002/symb.293	The Role of Cultural Memory and Personal Memory in Ambivalent Racism	Symbolic Interaction	journal-article
