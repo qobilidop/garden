@@ -687,6 +687,56 @@ round-23 no-add outcome. That precondition failed, so round 24 is retired
 unexecuted. Neither round contributes to the required final two-round no-add
 sequence. Two new rounds must be reconciled and frozen before execution.
 
+## Replacement round `closure-replacement-25`: Crossref
+
+Source: Crossref REST API. Frozen on 2026-08-04 after every round-23 plausible
+record and the four new outcome clusters were reconciled, and before any query
+below was executed. Each query exports the first 100 relevance-ranked records
+for title screening, followed by abstract and primary review whenever
+plausibility remains.
+
+| ID | Exact query |
+|---|---|
+| C25-01 | `exact Boolean neural rule extraction truth table minimization` |
+| C25-02 | `assertion guided symbolic execution predicate summary subsumption` |
+| C25-03 | `compatible branch coverage symbolic execution dependency pruning` |
+| C25-04 | `canonical higher order concolic input complete search` |
+| C25-05 | `basis marking implicit transition symbolic reachability` |
+| C25-06 | `time anonymous token symbolic reachability reduction` |
+| C25-07 | `colored Petri net symbolic unfolding factorization concurrent interleavings` |
+| C25-08 | `symbolic partial order reduction BDD local property` |
+| C25-09 | `fully symbolic bisimulation decision diagram quotient saturation` |
+| C25-10 | `coverage preserving test seed reduction symbolic execution` |
+| C25-11 | `partial observation estimation reachability graph observer` |
+| C25-12 | `requested event exact input fiber symbolic residual` |
+
+## Replacement round `closure-replacement-26`: arXiv
+
+Execute only if round 25 adds neither a conceptual cluster nor a plausible
+close competitor. Source: arXiv API. Frozen on 2026-08-04 before any
+round-25 or round-26 query was executed. Each plain-text query is submitted as
+the conjunction of all its alphanumeric terms across arXiv's `all` field, with
+relevance-descending sorting, and exports at most the first 100 records with
+abstracts.
+
+| ID | Exact query |
+|---|---|
+| C26-01 | `Boolean neural rule extraction exact` |
+| C26-02 | `assertion guided symbolic execution` |
+| C26-03 | `branch coverage symbolic pruning` |
+| C26-04 | `higher order concolic canonical inputs` |
+| C26-05 | `basis marking reachability` |
+| C26-06 | `time anonymous Petri reachability` |
+| C26-07 | `symbolic unfolding colored Petri` |
+| C26-08 | `symbolic partial order reduction` |
+| C26-09 | `symbolic bisimulation quotient` |
+| C26-10 | `coverage preserving test reduction` |
+| C26-11 | `partial observation reachability observer` |
+| C26-12 | `requested event input fiber` |
+
+If either round adds a cluster or plausible close competitor, this sequence is
+abandoned and two later prospective rounds are required after reconciliation.
+
 ## Independent audit
 
 After both replacement rounds qualify, a reviewer who did not choose the
