@@ -166,6 +166,19 @@ linear in \(N_r\) only after retaining the LP/dimension coefficient, and it
 does not cover lower-dimensional-only regions, coefficient-bit complexity, or
 our variable-domain graph observer.
 
+Later parametric-program traversals strengthen the degeneracy story without
+improving that explicit bound. Jones, Kerrigan, and Maciejowski's
+lexicographic perturbation produces one unique basis per region and a
+continuous affine optimizer but states only the exponential worst case.
+Patrinos and Sarimveis call their convex-pQP graph traversal output-sensitive
+and prove that its graphical-derivative oracle discovers every
+full-dimensional neighbor across a facet without nondegeneracy. They give no
+closed polynomial total-time formula, DelayP/IncP classification, workspace
+bound, or coefficient-bit theorem; one facet call can itself enumerate
+multiple regions of a lower-dimensional parametric LP. Bemporad's later
+strict-convex mpQP algorithm considers at most \(2^q\) optimal combinations
+and gives practical NNLS analyses rather than a new enumeration-class bound.
+
 Dense ReLU networks refine the arrangement layerwise. Existing algorithms
 enumerate feasible activation patterns by MILP, propagate exact stars that
 retain input predicates and affine images, emit explicit region/map pairs,

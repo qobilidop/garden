@@ -195,6 +195,23 @@ enumeration is available as novelty. Our observer uses the opposite quotient
 from behavior minimization: it retains two observed selection outcomes even
 when their residual maps are extensionally equal.
 
+Degeneracy-safe parametric programming and requested-action projection add an
+eleventh boundary. Borrelli et al. enumerate active-set critical regions;
+Jones et al. use symbolic lexicographic perturbation to select a unique
+continuous optimizer; and Patrinos and Sarimveis traverse every
+full-dimensional convex-pQP region while discovering all neighbors across a
+facet without nondegeneracy or facet-to-facet assumptions. Bemporad later
+handles rank-deficient active sets with projection and NNLS-based polyhedral
+operations. Thus complete adjacency traversal, multiple-neighbor discovery,
+symbolic tie-breaking, and rank-deficiency handling are all inherited.
+Separately, König and Mönnigmann prove that different active-set regions can
+share the requested first MPC action while later horizon actions differ;
+Mitze et al. extend this idea to nonlinear MPC with sound inner approximations
+and exact fallback. Requested-output relativity is therefore not a separator.
+The remaining object is intensional: a sparse map of actually observed
+selection-site outcomes, with an input- and request-dependent domain, that
+deliberately retains equal-valued events.
+
 ## Route decision
 
 - The manuscript is a survey with a unifying formal synthesis.
@@ -208,5 +225,7 @@ when their residual maps are extensionally equal.
   Lazy SmallCheck. Exact affine guarded composition is independently inherited
   from compositional hybrid mode enumeration; behavior-minimal guard reduction
   and output-sensitive pLP region/residual enumeration are likewise prior.
+  Degeneracy-safe pQP adjacency and projection of optimization histories to a
+  requested first action are prior as well.
 - A future CAV tool paper remains possible only after direct baseline
   experiments show a validation or scalability frontier.

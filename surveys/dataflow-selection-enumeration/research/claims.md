@@ -243,3 +243,20 @@ proof obligations, and evidence.
   the least computation's selection projection and the exact inverse image of
   each observation. “Demand-sensitive evaluation” is not itself a
   contribution.
+
+## S09 — Requested-output projection does not define the selection observer
+
+- **Status:** survey synthesis; broad novelty defeated
+- **Statement:** Projecting a rich internal decision history to a requested
+  output can merge cases whose unrequested continuation differs. That quotient
+  is extensional and distinct from recording the sparse internal selections
+  reached while computing the request.
+- **Prior frontier:** König and Mönnigmann prove that explicit-MPC regions with
+  different later-horizon actions can share the same requested first action.
+  Mitze et al. extend common-first-action reuse to nonlinear MPC. Kvasnica and
+  coauthors give exact clipping- and separator-based factorizations that erase
+  region descriptions while preserving the pointwise controller output.
+- **Consequence:** “Requested-root-relative” alone is not a contribution. The
+  survey's object must be an intensional, input-dependent sparse map of
+  contextual selection-site outcomes that retains observed equal-valued
+  events; it is not the kernel of the requested output function.

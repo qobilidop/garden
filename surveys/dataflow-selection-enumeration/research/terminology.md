@@ -32,6 +32,12 @@ presented as inherited terms of art.
   formula.
 - **Selection observation vs. output value:** observed equal-valued alternatives
   have the same ordinary value but different structural observations.
+- **Requested-root observation vs. requested-output projection:** both are
+  relative to a requested result, but they preserve opposite information.
+  Output projection merges internal histories that yield the same requested
+  value, as in same-first-action MPC regions. Selection observation records the
+  contextual outcomes of exactly the selection sites reached while computing
+  that result, including equal-valued outcomes.
 - **Result observation vs. lazy evaluation:** the base graph has eager,
   deterministic value semantics. A separate judgment selects structural events
   exposed by an instrumented observer.
