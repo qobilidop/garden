@@ -1,5 +1,21 @@
 # Hardware, circuits, and dataflow-model traces
 
+## Pseudo-exhaustive local support coverage
+
+McCluskey's pseudo-exhaustive testing lineage applies every assignment to each
+combinational output cone without necessarily applying the entire global truth
+table separately for each output. Mumtaz et al. state the contract as a test
+set whose projection covers every assignment of every cone, remove support
+sets contained in larger supports, and synthesize shared LFSR pattern sets by
+linear-independence checks and set cover. This directly precedes exhaustive
+coverage relative to local graph supports.
+
+The locality is nevertheless static: a mux output cone contains its selector
+and both data arms. The technique emits complete concrete test vectors and
+does not enumerate dynamic selected-edge observations, their inverse images,
+or symbolic residuals. The local-exhaustive-testing synthesis gives the exact
+comparison.
+
 ## Functional-space partitions
 
 Feng et al. represent a signal by mutually exclusive control/data cells. Their
@@ -58,7 +74,9 @@ semantic ingredients are close:
 - Kanade supplies conditional-trace equivalence;
 - Kölbl supplies guarded RTL values and occurrence-aware replay;
 - Sylvia supplies modular hardware paths and witnesses; and
-- Palmer supplies formal context-sensitive demand.
+- Palmer supplies formal context-sensitive demand; and
+- pseudo-exhaustive testing supplies support-local exhaustive circuit tests
+  and local-support complexity bounds.
 
 The survey therefore rules out claims of inventing choice-induced dataflow
 partitioning, symbolic trace equivalence, contextual demand, or modular hardware

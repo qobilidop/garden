@@ -201,13 +201,50 @@ For every feasible \(\tau\),
 A(x)\land T_G(x,R)=\tau.
 \]
 
-*Proof sketch.* The reverse implication is immediate. For the forward
-direction, traverse the enabled closure induced by \(\tau\) from \(R\). Every
-observed site has the recorded outcome under \(x\), so it enables exactly the
-same case edges. Induction over graph depth yields exactly the same enabled
-closure and no additional site. Selector-in-selector dependencies are already
-in the closure; multi-case selections are determined by \(C_q(\tau(q))\).
+*Proof.* The reverse implication is immediate. For the forward direction,
+choose a witness \(m\in F_\tau\), which exists because \(\tau\) is feasible.
+Construct the enabled closures for \(m\) and \(x\) by the same finite sequence
+of reachability approximants, beginning with \(R\). Suppose the approximants
+agree through one step. Ordinary nodes add the same operands. A selection site
+\(q\) in the common approximant belongs to \(D_G(m,R)\), hence
+\(q\in\operatorname{dom}(\tau)\); the conjunct
+\(p_{q,\tau(q)}(x)\) gives
+\(\omega_x(q)=\tau(q)=\omega_m(q)\). The two evaluations therefore add the
+same selector and the same case roots \(C_q(\tau(q))\). Induction makes every
+approximant, and hence the two least closures, equal. Their observed-site
+domains agree, and every site in that domain has the outcome recorded by
+\(\tau\), so \(T_G(x,R)=\tau\).
 
 The result relies on the outcome determining the selected case set. No literal
 for an unobserved site is needed: omission follows structurally from the
 outcomes of observed sites.
+
+### Conflict-frontier theorem
+
+If \(\tau\ne\sigma\) are feasible observations, then some site is observed in
+both and has different outcomes:
+
+\[
+\exists q\in\operatorname{dom}(\tau)\cap\operatorname{dom}(\sigma).
+\quad \tau(q)\ne\sigma(q).
+\]
+
+*Proof.* Take witnesses \(x\in F_\tau\) and \(y\in F_\sigma\). Suppose, for
+contradiction, that the two maps agree wherever both are defined. Build
+\(D_G(x,R)\) and \(D_G(y,R)\) by reachability approximants. They begin with the
+same roots. If two approximants agree, ordinary nodes add the same operands.
+Every selection site in the common approximant is observed in both executions,
+so the assumption gives it the same outcome; it therefore adds the same
+selector and case roots. All approximants, and thus the two enabled closures,
+are equal. The observation domains are equal, and the maps agree throughout
+that domain, contradicting \(\tau\ne\sigma\).
+
+Consequently the positive cylinders \(\Gamma_\tau\) and
+\(\Gamma_\sigma\) are disjoint: they contain incompatible predicates for the
+shared site. This strengthens the elementary inverse-image partition with a
+structural separator.
+
+Exactness does not imply literal minimality. A predicate recorded for an
+observed site may be logically redundant under \(A\) and the other recorded
+predicates. The theorem says that no *unobserved-site* literal is required; it
+does not say that removing any observed-site literal enlarges the fiber.

@@ -18,6 +18,10 @@ states or values.
   strategy-directed complete merging for guarded symbolic values.
 - Trace partitioning retains selected branch or value histories as abstract
   tokens, with explicit create and merge operations.
+- Delayed-choice execution keeps bounded nondeterministic values in shared
+  suspensions until non-copy use, proves preservation of reachable visible
+  states, and can remove an exponential number of wholly unused concrete
+  choices.
 
 Therefore, “symbolic evaluation yields disjoint exhaustive guards and residual
 values” is established. Neither purity nor a graph presentation changes that
@@ -48,6 +52,13 @@ enabled closure of an output observation. The remaining survey distinction is
 therefore the represented quotient and enumeration contract, not ordinary
 function-summary composition.
 
+Delayed choice also fixes the lower boundary of that quotient. A suspended
+value is forced to one concrete value at any non-copy use, even if many concrete
+values induce the same selector outcome. It therefore removes unused input
+dimensions but does not compute the coarser semantic fibers induced by
+selection outcomes or retain symbolic residual computation within such a
+fiber.
+
 ## Terminological consequences
 
 - Avoid *path* for an unordered site-outcome map.
@@ -57,8 +68,8 @@ function-summary composition.
   residual value* for our per-observation result to avoid claiming the object
   is new.
 - Qualify every use of *demand*: target-directed exploration, needed reduction,
-  partial-value demand, event-enabling input, and enabled-edge observation are
-  different notions.
+  partial-value demand, event-enabling input, concrete-value forcing, and
+  enabled-edge observation are different notions.
 
 ## Remaining comparison obligation
 

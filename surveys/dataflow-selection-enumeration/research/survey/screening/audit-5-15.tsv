@@ -1,0 +1,101 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1016/0165-6074(90)90167-8	1990	10.1016/0165-6074(90)90167-8	A demand-driven macro-dataflow schema for distributed graph reduction on multiple G-machines	Microprocessing and Microprogramming	journal-article
+2	10.1109/icpp.1993.66	1993	10.1109/icpp.1993.66	Dataflow Graph Optimization for Dataflow Architectures a Dataflow Otimizing Compiler	1993 International Conference on Parallel Processing - ICPP'93 Vol2	proceedings-article
+3	10.2172/764038	1998	10.2172/764038	Visualizing Macro-Dataflow Graph Final Report CRADA No. TSB-0725-93		report
+4	10.21236/ada428029	2004	10.21236/ada428029	DIF - A Language for Dataflow Graph Specification and Exchange		report
+5	10.1002/scj.4690270402	1996	10.1002/scj.4690270402	A compiling technique for dataflow machines — new algorithm for optimum translation from control flow graph into dataflow graph	Systems and Computers in Japan	journal-article
+6	10.3724/sp.j.1087.2011.00935	2011	10.3724/sp.j.1087.2011.00935	Operation partitioning for heterogeneous VLIW DSP based on dataflow graph	Journal of Computer Applications	journal-article
+7	10.2139/ssrn.6875241	2026	10.2139/ssrn.6875241	Graph as App: A GPU Dataflow Substrate for Domain-Agnostic Living Networks		posted-content
+8	10.1109/spl.2007.371755	2007	10.1109/spl.2007.371755	Execution of Algorithms Using a Dynamic Dataflow Model for Reconfigurable Hardware - Commands in Dataflow Graph	2007 3rd Southern Conference on Programmable Logic	proceedings-article
+9	10.2172/1426077	2018	10.2172/1426077	Visualizing Macro-Dataflow Graph Final Report CRADA No. TSB-0725-93		report
+10	10.1016/0026-2714(87)90819-5	1987	10.1016/0026-2714(87)90819-5	Reliability analysis of computer systems using dataflow graph models	Microelectronics Reliability	journal-article
+11	10.1145/2523616.2525962	2013	10.1145/2523616.2525962	Pregelix	Proceedings of the 4th annual Symposium on Cloud Computing	proceedings-article
+12	10.1145/142920.134087	1992	10.1145/142920.134087	CONDOR: constraint-based dataflow	ACM SIGGRAPH Computer Graphics	journal-article
+13	10.1007/978-3-319-66128-5_2	2017	10.1007/978-3-319-66128-5_2	Discrepancy Reduction Between the Topology of Dataflow Graph and the Topology of FPGA Structure	Computer Communications and Networks	book-chapter
+14	10.1007/springerreference_19444	None	10.1007/springerreference_19444	mux	SpringerReference	reference-entry
+15	10.1007/springerreference_19445	None	10.1007/springerreference_19445	MUX	SpringerReference	reference-entry
+16	10.1109/sips50750.2020.9195261	2020	10.1109/sips50750.2020.9195261	Graph Coordination for Compact Representation of Regular Dataflow Structures	2020 IEEE Workshop on Signal Processing Systems (SiPS)	proceedings-article
+17	10.4016/23679.01	2010	10.4016/23679.01	mux mp4	SciVee	dataset
+18	10.1145/204362.204364	1995	10.1145/204362.204364	apE—the original dataflow visualization environment	ACM SIGGRAPH Computer Graphics	journal-article
+19	10.1109/icassp.1997.599865	None	10.1109/icassp.1997.599865	Code generation by using integer-controlled dataflow graph	1997 IEEE International Conference on Acoustics, Speech, and Signal Processing	proceedings-article
+20	10.1109/iscas.2006.1692708	None	10.1109/iscas.2006.1692708	System-level verification on high-level synthesis of dataflow graph	2006 IEEE International Symposium on Circuits and Systems	proceedings-article
+21	10.1109/fpl.2012.6339265	2012	10.1109/fpl.2012.6339265	Dataflow graph partitioning for high level synthesis	22nd International Conference on Field Programmable Logic and Applications (FPL)	proceedings-article
+22	10.1016/0167-8191(92)90098-r	1992	10.1016/0167-8191(92)90098-r	Area optimization of dataflow-graph mappings	Parallel Computing	journal-article
+23	10.1109/ipdpsw59300.2023.00147	2023	10.1109/ipdpsw59300.2023.00147	Optimizing the Critical Path of Distributed Dataflow Graph Algorithms	2023 IEEE International Parallel and Distributed Processing Symposium Workshops (IPDPSW)	proceedings-article
+24	10.1109/cmpeur.1991.257371	None	10.1109/cmpeur.1991.257371	On reducing the dataflow-graph hosting area	[1991] Proceedings, Advanced Computer Technology, Reliable Systems and Applications	proceedings-article
+25	10.7717/peerj-cs.2391/fig-1	None	10.7717/peerj-cs.2391/fig-1	Figure 1: Demand graph for bike-sharing stations.		component
+26	10.1109/ipps.1991.153848	None	10.1109/ipps.1991.153848	A simulation of demand-driven dataflow: translation from Lucid into MDC language	[1991] Proceedings. The Fifth International Parallel Processing Symposium	proceedings-article
+27	10.1109/acqed.2015.7274006	2015	10.1109/acqed.2015.7274006	SynDFG: Synthetic dataflow graph generator for high-level synthesis	2015 6th Asia Symposium on Quality Electronic Design (ASQED)	proceedings-article
+28	10.1145/222124.222146	1995	10.1145/222124.222146	Demand interprocedural dataflow analysis	Proceedings of the 3rd ACM SIGSOFT symposium on Foundations of software engineering	proceedings-article
+29	10.1109/isss.1998.730615	None	10.1109/isss.1998.730615	Memory efficient software synthesis from dataflow graph	Proceedings. 11th International Symposium on System Synthesis (Cat. No.98EX210)	proceedings-article
+30	10.1145/222132.222146	1995	10.1145/222132.222146	Demand interprocedural dataflow analysis	ACM SIGSOFT Software Engineering Notes	journal-article
+31	10.1145/224538.224570	1995	10.1145/224538.224570	Enhancing array dataflow dependence analysis with on-demand global value propagation	Proceedings of the 9th international conference on Supercomputing  - ICS '95	proceedings-article
+32	10.1109/rndm48015.2019.8949149	2019	10.1109/rndm48015.2019.8949149	Resilient Dataflow Graph Embedding for Programmable Software Switches	2019 11th International Workshop on Resilient Networks Design and Modeling (RNDM)	proceedings-article
+33	10.1007/978-3-030-13803-5_1	2019	10.1007/978-3-030-13803-5_1	Method of Big-Graph Partitioning Using a Skeleton Graph	Computer Communications and Networks	book-chapter
+34	10.1093/oed/6792989566	2023	10.1093/oed/6792989566	mux, v.²	Oxford English Dictionary	book-chapter
+35	10.1201/9780429493768	2018	10.1201/9780429493768	Graph Theory (on Demand Printing Of 02787)		book
+36	10.1109/icdcs.2017.150	2017	10.1109/icdcs.2017.150	Towards Dataflow-Based Graph Accelerator	2017 IEEE 37th International Conference on Distributed Computing Systems (ICDCS)	proceedings-article
+37	10.2139/ssrn.6207469	2026	10.2139/ssrn.6207469	Design and analysis of All-Optical Digital MUX 2X1 and MUX 4x1 based on Photonic Crystals		posted-content
+38	10.1007/s11432-017-9226-8	2017	10.1007/s11432-017-9226-8	Towards dataflow based graph processing	Science China Information Sciences	journal-article
+39	10.1109/sips.2010.5624821	2010	10.1109/sips.2010.5624821	Scalable representation of dataflow graph structures using topological patterns	2010 IEEE Workshop On Signal Processing Systems	proceedings-article
+40	10.1109/iseda59274.2023.10218672	2023	10.1109/iseda59274.2023.10218672	A Synthesis Method for Verilog Case Statement Using Mux-and-Inverter Graph	2023 International Symposium of Electronics Design Automation (ISEDA)	proceedings-article
+41	10.1109/isss.2000.874032	None	10.1109/isss.2000.874032	Efficient hardware controller synthesis for synchronous dataflow graph in system level design	Proceedings 13th International Symposium on System Synthesis	proceedings-article
+42	10.1145/3302424.3303953	2019	10.1145/3302424.3303953	Supporting Very Large Models using Automatic Dataflow Graph Partitioning	Proceedings of the Fourteenth EuroSys Conference 2019	proceedings-article
+43	10.1093/oed/6819707535	2023	10.1093/oed/6819707535	mux, n.²	Oxford English Dictionary	book-chapter
+44	10.1109/samos.2016.7818351	2016	10.1109/samos.2016.7818351	Automated dataflow graph merging	2016 International Conference on Embedded Computer Systems: Architectures, Modeling and Simulation (SAMOS)	proceedings-article
+45	10.22456/2175-2745.25210	2013	10.22456/2175-2745.25210	A Graph Grammar to Transform a Dataflow Graph into a Multithread Graph and its Application in Task Scheduling	Revista de Informática Teórica e Aplicada	journal-article
+46	10.1093/oed/2551464255	2023	10.1093/oed/2551464255	mux, v.¹	Oxford English Dictionary	book-chapter
+47	10.1109/sips.2018.8598305	2018	10.1109/sips.2018.8598305	Generalized Graph Connections for Dataflow Modeling of DSP Applications	2018 IEEE International Workshop on Signal Processing Systems (SiPS)	proceedings-article
+48	10.23919/date54114.2022.9774603	2022	10.23919/date54114.2022.9774603	MuxLink: Circumventing Learning-Resilient MUX-Locking Using Graph Neural Network-based Link Prediction	2022 Design, Automation &amp; Test in Europe Conference &amp; Exhibition (DATE)	proceedings-article
+49	10.1145/2597073.2597080	2014	10.1145/2597073.2597080	MUX: algorithm selection for software model checkers	Proceedings of the 11th Working Conference on Mining Software Repositories	proceedings-article
+50	10.1109/acssc.1996.599166	None	10.1109/acssc.1996.599166	Synthesis of parallel hardware implementations from synchronous dataflow graph specifications	Conference Record of The Thirtieth Asilomar Conference on Signals, Systems and Computers	proceedings-article
+51	10.1145/1180495.1180547	2006	10.1145/1180495.1180547	Extending the scene graph with a dataflow visualization system	Proceedings of the ACM symposium on Virtual reality software and technology	proceedings-article
+52	10.1109/cgc.2012.23	2012	10.1109/cgc.2012.23	Performance Model for Parallel Matrix Multiplication with Dryad: Dataflow Graph Runtime	2012 Second International Conference on Cloud and Green Computing	proceedings-article
+53	10.1145/2463209.2488736	2013	10.1145/2463209.2488736	Liveness evaluation of a cyclo-static DataFlow graph	Proceedings of the 50th Annual Design Automation Conference	proceedings-article
+54	10.1145/2847263.2847337	2016	10.1145/2847263.2847337	GraphOps	Proceedings of the 2016 ACM/SIGDA International Symposium on Field-Programmable Gate Arrays	proceedings-article
+55	10.1109/tr.1986.4335538	1986	10.1109/tr.1986.4335538	Reliability Analysis of Computer Systems Using Dataflow Graph Models	IEEE Transactions on Reliability	journal-article
+56	10.1007/bf03259389	1994	10.1007/bf03259389	Stability, Sequentiality and Demand Driven Evaluation in Dataflow	Formal Aspects of Computing	journal-article
+57	10.1007/3-540-16042-6_23	1985	10.1007/3-540-16042-6_23	Demand-driven evaluation on dataflow machine	Lecture Notes in Computer Science	book-chapter
+58	10.21203/rs.3.rs-9847417/v1	2026	10.21203/rs.3.rs-9847417/v1	Design and analysis of All-Optical Digital MUX 2X1 and MUX 4x1 based on Photonic Crystals		posted-content
+59	10.1093/oed/8974085613	2023	10.1093/oed/8974085613	mux, n.¹	Oxford English Dictionary	book-chapter
+60	10.1109/dsd.2016.52	2016	10.1109/dsd.2016.52	Evaluation of Synchronous Dataflow Graph Mappings onto Distributed Memory Architectures	2016 Euromicro Conference on Digital System Design (DSD)	proceedings-article
+61	10.20535/2312-1807.2014.19.4.31752	2014	10.20535/2312-1807.2014.19.4.31752	The optimization method of a macro dataflow graph for reconfigurable computing systems	Electronics and Communications	journal-article
+62	10.1007/3-540-51285-3_33	1989	10.1007/3-540-51285-3_33	Dataflow analysis of term graph rewriting systems	Lecture Notes in Computer Science	book-chapter
+63	10.1007/bfb0027039	1986	10.1007/bfb0027039	Dataflow and education: Data-driven and demand-driven distributed computation	Lecture Notes in Computer Science	book-chapter
+64	10.2139/ssrn.3833292	2021	10.2139/ssrn.3833292	Reversible MEDD gate as a MUX, Encoder, De-MUX and Decoder	SSRN Electronic Journal	journal-article
+65	10.1109/icassp.2005.1416242	None	10.1109/icassp.2005.1416242	Dynamic Configuration of Dataflow Graph Topology for DSP System Design	Proceedings. (ICASSP '05). IEEE International Conference on Acoustics, Speech, and Signal Processing, 2005.	proceedings-article
+66	10.23919/wons51326.2021.9415558	2021	10.23919/wons51326.2021.9415558	Use of a Weighted Conflict Graph in the Channel Selection Operation for Wi-Fi Networks	2021 16th Annual Conference on Wireless On-demand Network Systems and Services Conference (WONS)	proceedings-article
+67	10.1109/asp-dac66049.2026.11420389	2026	10.1109/asp-dac66049.2026.11420389	FESTAL: Dataflow Accelerator Synthesis Framework with Graph-Based Fusion for FPGA	2026 31st Asia and South Pacific Design Automation Conference (ASP-DAC)	proceedings-article
+68	10.17487/rfc1227	1991	10.17487/rfc1227	SNMP MUX protocol and MIB		report
+69	10.2139/ssrn.5122445	2025	10.2139/ssrn.5122445	Directed Acyclic Graph Representation of the Demand -Supply Model		posted-content
+70	10.1787/888933617776	None	10.1787/888933617776	Graph 1.49 ICT-related foreign value added content of domestic final demand, 2011		component
+71	10.3030/838342	2019	10.3030/838342			grant
+72	10.1787/888933617548	None	10.1787/888933617548	Graph 1.37 Origin of demand sustaining jobs in OECD information industries, 1995-2014		component
+73	10.1109/dfm.2014.9	2014	10.1109/dfm.2014.9	DFGR an Intermediate Graph Representation for Macro-Dataflow Programs	2014 Fourth Workshop on Data-Flow Execution Models for Extreme Scale Computing	proceedings-article
+74	10.1109/icde.2016.7498275	2016	10.1109/icde.2016.7498275	Efficient fault-tolerance for iterative graph processing on distributed dataflow systems	2016 IEEE 32nd International Conference on Data Engineering (ICDE)	proceedings-article
+75	10.2139/ssrn.4646397	2023	10.2139/ssrn.4646397	Graph Neural Network-Based Tourism Demand Forecasting		posted-content
+76	10.1021/acs.jcim.1c01578.s001	None	10.1021/acs.jcim.1c01578.s001	Graph-Based Feature Selection Approach for Molecular Activity Prediction		component
+77	10.1063/1.4942691	2016	10.1063/1.4942691	Realization of 2:1 MUX using Mach Zhender Interferometer structure and its application in selection of output signal of MOEMS pressure and temperature sensor	AIP Conference Proceedings	proceedings-article
+78	10.1021/acs.jcim.1c01578.s002	None	10.1021/acs.jcim.1c01578.s002	Graph-Based Feature Selection Approach for Molecular Activity Prediction		component
+79	10.1109/samos.2012.6404169	2012	10.1109/samos.2012.6404169	K-Periodic schedules for evaluating the maximum throughput of a Synchronous Dataflow graph	2012 International Conference on Embedded Computer Systems (SAMOS)	proceedings-article
+80	10.14778/3681954.3681961	2024	10.14778/3681954.3681961	D3-GNN: Dynamic Distributed Dataflow for Streaming Graph Neural Networks	Proceedings of the VLDB Endowment	journal-article
+81	10.17504/protocols.io.q26g71n79gwz/v1	2024	10.17504/protocols.io.q26g71n79gwz/v1	spatial-Mux-seq v1		posted-content
+82	10.1515/9783110740783-005	2022	10.1515/9783110740783-005	5 Graph Theory and Graph Theoretical Problems	Geometry and Discrete Mathematics	book-chapter
+83	10.1145/199448.199462	1995	10.1145/199448.199462	Precise interprocedural dataflow analysis via graph reachability	Proceedings of the 22nd ACM SIGPLAN-SIGACT symposium on Principles of programming languages  - POPL '95	proceedings-article
+84	10.1145/3731302.3731319	2026	10.1145/3731302.3731319	Advanced: Optimal Dataflow Programs and Dataflow SPLs	Science of Software Product Lines	book-chapter
+85	10.1021/acsnano.2c04825.s002	None	10.1021/acsnano.2c04825.s002	On-Demand Dynamic Chirality Selection in Flower Corolla-like Micropillar Arrays		component
+86	10.1109/idt.2014.7038605	2014	10.1109/idt.2014.7038605	Translating of MATLAB/SIMULINLK model to synchronous dataflow graph for parallelism analysis and programming embedded multicore systems	2014 9th International Design and Test Symposium (IDT)	proceedings-article
+87	10.1787/888933617567	None	10.1787/888933617567	Graph 1.38 Business sector jobs sustained by foreign final demand, by skill intensity, 2014		component
+88	10.1109/icecs.2013.6815490	2013	10.1109/icecs.2013.6815490	Multi-core SoC architecture exploration with radar digital system based on dataflow graph method	2013 IEEE 20th International Conference on Electronics, Circuits, and Systems (ICECS)	proceedings-article
+89	10.1787/888933617529	None	10.1787/888933617529	Graph 1.36 Origin of demand sustaining business sector jobs in the OECD, 1995-2014		component
+90	10.1109/aspdac.2011.5722178	2011	10.1109/aspdac.2011.5722178	Minimizing buffer requirements for throughput constrained parallel execution of synchronous dataflow graph	16th Asia and South Pacific Design Automation Conference (ASP-DAC 2011)	proceedings-article
+91	10.3403/30250376	None	10.3403/30250376	Information technology. Metamodel framework for interoperability (MFI)		standard
+92	10.1186/s13678-016-0007-y	2016	10.1186/s13678-016-0007-y	Challenges in mobile multi-device ecosystems	mUX: The Journal of Mobile User Experience	journal-article
+93	10.1036/1097-8542.181000	None	10.1036/1097-8542.181000	Dataflow systems	AccessScience	dataset
+94	10.1109/tmscs.2018.2790921	2018	10.1109/tmscs.2018.2790921	Execution Trace Graph of Dataflow Process Networks	IEEE Transactions on Multi-Scale Computing Systems	journal-article
+95	10.1021/acsnano.2c04825.s004	None	10.1021/acsnano.2c04825.s004	On-Demand Dynamic Chirality Selection in Flower Corolla-like Micropillar Arrays		component
+96	10.1109/iscas.2005.1465925	None	10.1109/iscas.2005.1465925	Modeling and Formal Verification of Dataflow Graph in System-Level Design Using Petri net	2005 IEEE International Symposium on Circuits and Systems	proceedings-article
+97	10.3403/30250376u	None	10.3403/30250376u	Information technology. Metamodel framework for interoperability (MFI)		standard
+98	10.1145/1618452.1618499	2009	10.1145/1618452.1618499	Debugging GPU stream programs through automatic dataflow recording and visualization	ACM Transactions on Graphics	journal-article
+99	10.1021/acsnano.2c04825.s003	None	10.1021/acsnano.2c04825.s003	On-Demand Dynamic Chirality Selection in Flower Corolla-like Micropillar Arrays		component
+100	10.1109/sips.2012.10	2012	10.1109/sips.2012.10	Multidimensional Dataflow Graph Modeling and Mapping for Efficient GPU Implementation	2012 IEEE Workshop on Signal Processing Systems	proceedings-article

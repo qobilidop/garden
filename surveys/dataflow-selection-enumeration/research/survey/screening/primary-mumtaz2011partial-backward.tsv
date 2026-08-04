@@ -1,0 +1,32 @@
+rank	source_id	year	doi	title	venue	type
+1	citation-1	1984	10.1109/TC.1984.1676477	Verification Testing—A Pseudoexhaustive Test Technique	IEEE Transactions on Computers	article
+2	citation-2	1986	10.1109/TC.1986.1676772	Condensed Linear Feedback Shift Register (LFSR) Testing—A Pseudoexhaustive Test Technique	IEEE Transactions on Computers	article
+3	citation-3	1988		Linear Feedback Shift Register Design Using Cyclic Codes	IEEE Transactions on Computers	article
+4	citation-4	1983		Exhaustive Generation of Bit Patterns with Applications to VLSI Self-Testing	IEEE Transactions on Computers	article
+5	citation-5	1981		The Weighted Syndrome Sums Approach to VLSI Testing	IEEE Transactions on Computers	article
+6	citation-6	1985		An Operationally Efficient Scheme for Exhaustive Test-Pattern Generation Using Linear Codes	International Test Conference	proceedings-article
+7	citation-7	1987		Circuit Segmentation for Pseudo-Exhaustive Testing via Simulated Annealing	International Test Conference	proceedings-article
+8	citation-8	1985		On the Use of Linear Sums in Exhaustive Testing	International Symposium on Fault-Tolerant Computing	proceedings-article
+9	citation-9	1990	10.1109/TEST.1990.114082	Generating Pseudo-Exhaustive Vectors for External Testing	International Test Conference	proceedings-article
+10	citation-10	1990	10.1109/EDAC.1990.136612	Tools and Devices Supporting the Pseudo-Exhaustive Test	European Design Automation Conference	proceedings-article
+11	citation-11	1983	10.1109/TC.1983.1676175	Exhaustive Test Pattern Generation with Constant Weight Vectors	IEEE Transactions on Computers	article
+12	citation-12	1986		Test Set Generation for Pseudo-Exhaustive BIST	International Conference on Computer-Aided Design	proceedings-article
+13	citation-13	1988		Generating Pattern Sequences for the Pseudo-Exhaustive Test of MOS-Circuits	International Symposium on Fault-Tolerant Computing	proceedings-article
+14	citation-14	1989	10.1109/TEST.1989.82273	The Pseudo-Exhaustive Test of Sequential Circuits	International Test Conference	proceedings-article
+15	citation-15	2007		An Analysis of Small Delay Defects in Resistive Interconnects	International On-Line Testing Symposium	proceedings-article
+16	citation-16	2010		Multi-Spot Defects: A New Fault Model for Circuit Reliability	International Conference on Dependable Systems and Networks Workshops	proceedings-article
+17	citation-17	2010		Variation-Aware Fault Modeling	Asian Test Symposium	proceedings-article
+18	citation-18	2010		Massive Statistical Process Variations: A Grand Challenge for Testing Nanoelectronic Circuits	International Conference on Dependable Systems and Networks Workshops	proceedings-article
+19	citation-19	2001		An Evaluation of Pseudo Random Testing for Detecting Real Defects	VLSI Test Symposium	proceedings-article
+20	citation-20	1995		An Experimental Chip to Evaluate Test Techniques: Experiment Results	International Test Conference	proceedings-article
+21	citation-21	2000		Stuck-Fault Tests vs. Actual Defects	International Test Conference	proceedings-article
+22	citation-22	1995		On the Decline of Testing Efficiency as Fault Coverage Approaches 100%	VLSI Test Symposium	proceedings-article
+23	citation-23	2002		Stuck-at Tuple-Detection: A Fault Model Based on Stuck-at Faults for Improved Defect Coverage	VLSI Test Symposium	proceedings-article
+24	citation-24	1992		Generation of Vector Patterns through Reseeding of Multiple-Polynomial Linear Feedback Shift Registers	International Test Conference	proceedings-article
+25	citation-25	1988		Vector Sets for Exhaustive Testing of Logic Circuits	IEEE Transactions on Information Theory	article
+26	citation-26	2002		Automated Synthesis of Phase Shifters for Built-In Self-Test Applications	IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems	article
+27	citation-27	2009		Restrict Encoding for Mixed-Mode BIST	VLSI Test Symposium	proceedings-article
+28	citation-28	2003		Test Data Compression Using Dictionaries with Selective Entries and Fixed-Length Indices	ACM Transactions on Design Automation of Electronic Systems	article
+29	citation-29	1996		Constructive Multi Phase Test Point Insertion for Scan-Based BIST	International Test Conference	proceedings-article
+30	citation-30	1991		Automatic Test Point Insertion for Pseudo-Random Testing	International Symposium on Circuits and Systems	proceedings-article
+31	citation-31	1993	10.1145/157485.164880	An Efficient Partitioning Strategy for Pseudo-Exhaustive Testing	Design Automation Conference	proceedings-article

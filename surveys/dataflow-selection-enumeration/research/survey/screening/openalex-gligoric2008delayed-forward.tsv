@@ -1,0 +1,4 @@
+rank	openalex_id	year	doi	title	venue	type
+1	W2118155805	2010	https://doi.org/10.1145/1806799.1806835	Test generation through programming in UDITA		conference-paper
+2	W1763184445	2015	https://doi.org/10.5075/epfl-thesis-6378	Search Techniques for Code Generation	Infoscience (Ecole Polytechnique Fédérale de Lausanne)	dissertation
+3	W1945208244	2010		Model Checking Tools for Software System Implementations	Infoscience (Ecole Polytechnique Fédérale de Lausanne)	report

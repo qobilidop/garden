@@ -24,13 +24,21 @@ defines a fingerprint as a finite subset of `ChoiceID` times `{1,2}`, decorates
 graph nodes with it, propagates it through pull-tabs, and rejects contradictory
 decisions for one identifier. Later memoized pull-tabbing makes fingerprints
 task-local and adds branch-specific result memoization.
+The Fair Scheme combines needed graph reduction, a fair queue of live
+expressions, and the same finite fingerprint shape; its value-set theorem is
+per-state existential preservation, not duplicate-free projected enumeration.
+Independently, delayed-choice execution uses shared suspensions to omit finite
+nondeterministic values that never reach a non-copy use and proves exact
+visible-state preservation together with an `N^K` path reduction when `K`
+`N`-way forces disappear.
 This lineage is not a literal subsumption theorem, because its choices are
 nondeterministic search decisions rather than deterministic functions of
-program inputs. A guarded-choice encoding closes that gap, but then selection
-observations are projections of feasible fingerprints rather than a new kind
-of search object.
+program inputs. A guarded-choice meta-encoding appears to close that gap, but
+it supplies no inherited theorem until a semantics-preserving elaboration is
+proved. Subject to that proof, selection observations are projections of
+feasible fingerprints rather than a new kind of search object.
 
-The strongest presently defensible formal result is a correspondence theorem:
+The strongest presently defensible formal target is a correspondence theorem:
 enabled-edge reachability, guarded pull-tab fingerprints, selective ghost
 logging, concolic local guards, and the activation-variable encoding compute
 the same graph-relative observer. The graph-specific proof must handle
@@ -72,7 +80,12 @@ origin of the partial-map object. This makes the encoding below routine at the
 data-structure and search level. The remaining gap is semantic: deterministic
 guarded input regions versus nondeterministic resolutions.
 
-### Exact guarded-choice encoding
+### Candidate guarded-choice meta-encoding
+
+The following translation is a proof obligation, not a theorem inherited from
+the functional-logic sources. Its elaboration must preserve strict ordinary
+operators, selective case edges, requested roots, DAG sharing, contextual
+occurrence identity, deterministic guards, and residual symbolic values.
 
 Translate ordinary graph nodes to deterministic shared thunks. Translate a
 selection site \(q\) to the generalized nondeterministic expression
@@ -127,8 +140,8 @@ coordinates decode to (T_G(x,R)).
   reusing a selected shared subcomputation without globally corrupting other
   tasks.
 - Pull-tabbing correctness can justify preservation of the represented set for
-  the nondeterministic encoded program, subject to that theory's rewrite-system
-  assumptions.
+  the nondeterministic encoded program only after the elaboration theorem and
+  subject to that theory's rewrite-system assumptions.
 
 ### What does not transfer
 
@@ -152,6 +165,125 @@ but accurate claim is:
 
 Proving this statement requires a graph-specific induction. It is not a
 novel enumeration algorithm.
+
+The Fair Scheme does not strengthen that claim to nonredundant enumeration.
+Its fingerprints belong to dynamic computations, and its dispatcher emits
+values rather than fingerprints. For example, `False ?_i False` has two
+consistent fingerprint branches that emit the same value. Its needed-step
+optimality says every selected reduction step is needed; it is not a shortest
+derivation, output-sensitive, or polynomial-delay theorem. The extended paper
+also labels eventual production of all values as a conjectural strong
+completeness property.
+
+## Reduction to delayed-choice execution
+
+Gligoric et al. replace an eager bounded choice by a shared `Susp(a,b)` cell
+and force it only at a non-copy use. Their theorem equates the sets of reachable
+control/visible-state projections in eager and delayed computation trees. A
+delayed leaf with concrete cells and remaining suspensions implicitly denotes a
+cylinder over unforced choices, so it would be wrong to claim that the work has
+no fiber-like representation.
+
+The cylinders are generally finer than selection-observation fibers. For
+`x` in `0..99` used only by `x < 50`, delayed choice forces and explores 100
+concrete values, whereas the selection observer has two outcome fibers. For
+the residual result `x + 1` with no selection site, delayed choice again forces
+all values, whereas the selection observer has one empty observation and keeps
+`x + 1` symbolic. The remaining distinction is therefore outcome-based
+quotienting with symbolic residuals, not merely omission of unused dimensions.
+
+Delayed choice supplies neither a stable static site map, an exact or maximal
+fiber theorem, nor duplicate-free enumeration. It nevertheless eliminates
+novelty claims for first-use postponement, copy-propagated shared decisions,
+omission of never-used choices, visible-state preservation, and exponential
+savings from removing independent unused choices.
+
+## Reduction to demand-driven bounded testing
+
+Lindblad's property-directed generator starts from an unknown algebraic input,
+partially reduces a Boolean predicate, and refines one blocking metavariable by
+each constructor. When the predicate becomes true it emits a partial
+constructor term whose remaining metavariables explicitly denote every total
+ground refinement. Lazy SmallCheck implements the same core pattern on
+depth-bounded Haskell inputs with tagged holes. Its result is `Known True`,
+`Known False`, or `Unknown pos`; an unknown result causes exactly the demanded
+hole at `pos` to be refined. Korat supplies the heap/object analogue by
+backtracking only on fields read by an executable Boolean predicate.
+
+These are already the semantic representation and operational skeleton of
+demand-guided observation search. Lindblad's proposed soundness/completeness
+conditions are not proved, while Korat's deterministic-predicate guarantee
+enumerates concrete satisfying inputs rather than partial cylinders.
+
+To adapt it, replace the Boolean property with an evaluator that attempts to
+return the complete selection observation. A demanded input hole raises its
+position; a returned observation certifies that every total completion of the
+partial term has that observation. Collecting successful terms by observation
+therefore yields a sound cylinder cover of the corresponding fiber on a
+depth-bounded algebraic domain.
+
+What does not transfer is the exact-record contract. The published refuter
+stops at the first `Known False`; it does not enumerate every known answer.
+More importantly, its partial-term leaves may fragment one observation fiber
+according to constructor prefixes and operational demand order. It has no
+merge/maximality theorem, exact symbolic formula for the union of all fragments,
+stable graph-site map, or symbolic residual. The adaptation also needs a new
+termination argument when the graph input is represented by SMT variables over
+an infinite theory rather than a constructor-depth-bounded finite domain.
+
+Thus this lineage defeats novelty for “refine only what the observer demands,”
+“represent solutions by partial terms,” and “prune all completions when the
+observer is known.” It does not
+subsume one-record-per-observation enumeration unless supplemented by the
+same semantic grouping and guard construction under audit here.
+
+## Reduction to exact input-equivalence-class partitioning
+
+Krafczyk and Peleska define an input equivalence class by equality of the set of
+observable finite state/output classes reached from every source state class.
+Their algorithms enumerate every satisfiable local truth pattern of transition
+conditions, disjointify overlapping nondeterministic patterns, enumerate every
+satisfiable product across source classes, and minimize the resulting finite
+transducer to merge behaviorally identical input symbols. The output is an
+exact, coarsest behavior-preserving partition of a possibly infinite input
+domain.
+
+Instrument the pure graph as a one-step I/O transition system with visible
+finite output
+
+\[
+\overline T_G(x,R)
+  \in\prod_{q\in Q}(\{\bot_q\}\cup\Omega_q).
+\]
+
+Then two inputs are IECP-equivalent exactly when their totalized selection
+observations agree. This is an extensional subsumption of the desired
+partition. It is not immediately an efficient implementation reduction:
+providing one transition class or output code per feasible observation may
+presuppose enumeration. Using individual activity/outcome predicates instead
+produces a Boolean-atom refinement that must be projected and merged.
+
+The later SFSM property-testing construction makes this alternative explicit.
+For a fixed finite formula alphabet \(\Sigma\), it keeps every satisfiable atom
+
+\[
+\bigwedge_{\varphi\in P}\varphi\land
+\bigwedge_{\varphi\in\Sigma\setminus P}\neg\varphi,
+\qquad P\subseteq\Sigma.
+\]
+
+Choosing site-activity and outcome formulas makes each atom determine
+\(\overline T_G\). The construction is disjoint and exhaustive by definition;
+its worst-case class count is \(2^{|\Sigma|}\). Projecting away redundant truth
+coordinates gives the desired fibers, exactly as projected AllSMT does.
+
+These results eliminate novelty for exact finite-observer partitioning and
+satisfiable truth-pattern enumeration. The graph-local theorem can still show
+that observed positive outcome predicates alone characterize a full fiber,
+without explicitly conjoining every negative inactive-site coordinate. A
+structure-directed enumerator can still avoid materializing all atoms. Those
+are representation and compilation results relative to an established
+quotient, not a new enumeration object.
 
 ## Reduction to projected AllSMT
 
@@ -422,6 +554,7 @@ its own proof.
 | Erasure to ordinary value semantics | elementary | Structural induction, assuming totality and selected combiners. |
 | Fiber partition | elementary | Inverse images of a total function. |
 | Exact-local-guard theorem | requires a new proof | Not inherited from AllSMT or MPT. The enabled-closure induction is graph-specific but short. |
+| Conflict-frontier theorem | requires a new proof | Distinct observations must disagree at a commonly observed site; this follows by a short lockstep reachability argument and is stronger than arbitrary function fibers. |
 | Ghost/selective-log equals enabled-edge observation | requires a new proof | Generic selective interpretation is inherited; equality for shared contextual graph nodes is the new instantiation lemma. |
 | Reachability vector equals totalized observation | requires a new proof | A direct induction over the acyclic value/reachability circuit. |
 | Guarded functional-logic fingerprint projects to the observation | requires a new proof | The demand-populated partial map and complete result search are inherited from Braßel and Huch 2007; later fingerprint and pull-tab results do not cover deterministic guards, projection, or stable contextual naming. |
@@ -433,9 +566,10 @@ its own proof.
 | Parallel sharing and finite-iteration laws | elementary | Set union and finite induction once occurrence names are fixed. |
 | Guarded-summary relational composition | inherited | Ordinary relational composition; it may materialize a cross-product. |
 | Coarsest equivalence preserving the declared observer | elementary / tautological | It is the kernel of a function. |
-| Full abstraction for ordinary value contexts | false | Equal-valued active alternatives are distinguished by the observation. |
+| Full abstraction for ordinary value contexts | false | Equal-valued observed alternatives are distinguished by the observation. |
 | Full abstraction for a context that can read ghost events | elementary / by construction | The observer primitive makes the result tautological. |
 | Exponential saving over total syntactic assignments | inherited phenomenon | Partial models, output-directed execution, and decision diagrams already exhibit it. |
+| Exact all-sites-observed affine-region enumeration | inherited | Hyperplane-cell enumeration already proves complete duplicate-free OutputP streaming; neural work enumerates feasible activation guards and affine residuals. |
 | (O(\sum_\tau S_\tau)) construction under DAG sharing | elementary bookkeeping | It excludes solver time and serialized expansion. |
 | NP/#P/coNP hardness statements | inherited reductions | Standard circuit/SAT encodings; useful boundaries, not a distinctive algorithmic result. |
 
@@ -460,6 +594,12 @@ induction plus relational composition. It should be positioned as a unifying
 survey theorem or a foundation for an implementation, not as a fundamentally
 new symbolic-execution algorithm.
 
+The all-sites-observed real-CPA instance is fully occupied by exact
+activation-region work. Any paper example using only a dense chain of ReLUs or
+affine sign tests demonstrates an established special case, not the sparse-site
+separator. Motivating and separating examples must include a nested selection
+whose unselected case contains another site.
+
 An original research claim would need an additional separation that survives
 these reductions. Plausible targets are a non-flattening summary
 representation with a proved asymptotic reuse advantage over the shared global
@@ -474,11 +614,16 @@ currently established.
   outcomes; Braßel and Huch 2007 already define the exact partial-function
   shape, Alqaddoumi et al. 2010 propagate equivalent finite fingerprints, and
   later MPT reuses them.
+- Do not claim novelty for postponing or omitting never-used finite choices, or
+  for the resulting exponential path reduction; delayed-choice execution proves
+  these for guarded-command falsification.
 - Do not claim novelty for exact disjoint guarded residuals; symbolic merging
   and value summaries already provide them after instrumentation.
 - Do not claim that full-fiber blocking improves the (K+1) model-producing
   invocation count over naive complete projected AllSMT.
-- Do not identify structural inactivity with omitted literals in a short cube.
+- Do not identify structural non-observation with omitted literals in a short cube.
+- Do not call an exact positive fiber guard literal-minimal; observed-site
+  predicates can be redundant under the caller constraint and one another.
 - Do not call the observation canonical under value-preserving graph rewrites.
 - Do not claim generic compositionality of conditional static computations;
   selective functors already supply it.

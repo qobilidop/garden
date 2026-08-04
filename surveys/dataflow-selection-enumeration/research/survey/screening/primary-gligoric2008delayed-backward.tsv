@@ -1,0 +1,44 @@
+rank	source_id	year	doi	title	venue	type
+1	citation-1	2006		Constraint Logic Programming Using ECLiPSe	Cambridge University Press	book
+2	citation-2	2000		State Generation and Automated Class Testing	Software Testing Verification and Reliability	article
+3	citation-3	2005		Boogie: A Modular Reusable Verifier for Object-Oriented Programs	FMCO 2005	proceedings-article
+4	citation-4	2004		Verification of Object-Oriented Programs with Invariants	Journal of Object Technology	article
+5	citation-5	2007		CVC3	CAV 2007	proceedings-article
+6	citation-6	2008		Proofs from Tests	ISSTA 2008	proceedings-article
+7	citation-7	2002	10.1145/566172.566191	Korat: Automated Testing Based on Java Predicates	ISSTA 2002	proceedings-article
+8	citation-8	2008		The MathSAT 4 SMT Solver	CAV 2008	proceedings-article
+9	citation-9	2006	10.1145/1180405.1180445	EXE: Automatically Generating Inputs of Death	CCS 2006	proceedings-article
+10	citation-10	2003		A Runtime Assertion Checker for the Java Modeling Language	Iowa State University	thesis
+11	citation-11	2001		Introduction to Algorithms Second Edition	MIT Press and McGraw-Hill	book
+12	citation-12	2007		Automated Testing of Refactoring Engines	ESEC/FSE 2007	proceedings-article
+13	citation-13	2008		Z3: An Efficient SMT Solver	TACAS 2008	proceedings-article
+14	citation-14	2006	10.1109/ASE.2006.26	Bogor/Kiasan: A k-Bounded Symbolic Execution for Checking Strong Heap Properties of Open Systems	ASE 2006	proceedings-article
+15	citation-15	2006		Modular Verification of Code with SAT	ISSTA 2006	proceedings-article
+16	citation-16	2007		Assertion-Based Repair of Complex Data Structures	ASE 2007	proceedings-article
+17	citation-17	2002		Extended Static Checking for Java	PLDI 2002	proceedings-article
+18	citation-18	2005	10.1145/1065010.1065036	DART: Directed Automated Random Testing	PLDI 2005	proceedings-article
+19	citation-19	2008		Verification of Mondex Electronic Purses with KIV: From Transactions to a Security Protocol	Formal Aspects of Computing	article
+20	citation-20	2002		Symmetry Reduction Criteria for Software Model Checking	SPIN 2002	proceedings-article
+21	citation-21	1987		The Implementation of Functional Programming Languages	Prentice-Hall	book
+22	citation-22	2000		Implementing Functional Languages: A Tutorial	book	book
+23	citation-23	2004		TestEra: Specification-Based Testing of Java Programs Using SAT	Automated Software Engineering	article
+24	citation-24	2003	10.1007/3-540-36577-X_40	Generalized Symbolic Execution for Model Checking and Testing	TACAS 2003	proceedings-article
+25	citation-25	1976	10.1145/360248.360252	Symbolic Execution and Program Testing	Communications of the ACM	article
+26	citation-26	2007		Modular Data Structure Verification	Massachusetts Institute of Technology	thesis
+27	citation-27	1998		A Non-Deterministic Call-by-Need Lambda Calculus	ICFP 1998	proceedings-article
+28	citation-28	2007		Hybrid Concolic Testing	ICSE 2007	proceedings-article
+29	citation-29	2005		Automatic Testing of Software with Structurally Complex Inputs	Massachusetts Institute of Technology	thesis
+30	citation-30	2003		An Evaluation of Exhaustive Testing for Data Structures	MIT CSAIL	technical-report
+31	citation-31	2001	10.1109/ASE.2001.989796	TestEra: A Novel Framework for Automated Testing of Java Programs	ASE 2001	proceedings-article
+32	citation-32	2007		Korat: A Tool for Generating Structurally Complex Test Inputs	ICSE 2007	proceedings-article
+33	citation-33	2007		Parallel Test Generation and Execution with Korat	ESEC/FSE 2007	proceedings-article
+34	citation-34	2008		Combining Unit-Level Symbolic Execution and System-Level Concrete Execution for Testing NASA Software	ISSTA 2008	proceedings-article
+35	citation-35	2008		Combining Unit-Level Symbolic Execution and System-Level Concrete Execution for Testing NASA Software	ISSTA 2008	proceedings-article
+36	citation-36	2007		Predicate Abstraction with Under-Approximation Refinement	Logical Methods in Computer Science	article
+37	citation-37	2008		The Scala Programming Language	software documentation	manual
+38	citation-38	2007		Verifying the Mondex Case Study	SEFM 2007	proceedings-article
+39	citation-39	2005	10.1145/1081706.1081750	CUTE: A Concolic Unit Testing Engine for C	ESEC/FSE 2005	proceedings-article
+40	citation-40	2005		Model Based Testing in Practice at Microsoft	Electronic Notes in Theoretical Computer Science	article
+41	citation-41	2003		Model Checking Programs	Automated Software Engineering	article
+42	citation-42	2005		Symstra: A Framework for Generating Object-Oriented Unit Tests Using Symbolic Execution	TACAS 2005	proceedings-article
+43	citation-43	2008		Full Functional Verification of Linked Data Structures	PLDI 2008	proceedings-article

@@ -1,0 +1,51 @@
+rank	openalex_id	year	doi	title	venue	type
+1	W2141082967	2007	https://doi.org/10.1007/s10479-007-0178-0	Models and solution techniques for frequency assignment problems	Annals of Operations Research	article
+2	W88635354	1999	https://doi.org/10.26481/dis.19991104ak	Frequency assignment : models and algorithms		dissertation
+3	W1997862012	1999	https://doi.org/10.1145/300830.300839	The ARBAC97 model for role-based administration of roles	ACM Transactions on Information and System Security	article
+4	W2168909179	2001	https://doi.org/10.1038/35057062	Initial sequencing and analysis of the human genome	Nature	article
+5	W2011124182	2002	https://doi.org/10.1016/s0004-3702(02)00187-x	Extending and implementing the stable model semantics	Artificial Intelligence	article
+6	W2168405789	1992	https://doi.org/10.1287/trsc.26.1.4	Simplicial Decomposition with Disaggregated Representation for the Traffic Assignment Problem	Transportation Science	article
+7	W2096091969	2007	https://doi.org/10.1111/j.1467-985x.2007.00471.x	Model-Based Clustering for Social Networks	Journal of the Royal Statistical Society Series A (Statistics in Society)	article
+8	W2109716789	2001	https://doi.org/10.1016/s0166-218x(00)00221-3	On the fixed parameter complexity of graph enumeration problems definable in monadic second-order logic	Discrete Applied Mathematics	article
+9	W2141165178	2003	https://doi.org/10.1093/nar/gkg770	Improving the Arabidopsis genome annotation using maximal transcript alignment assemblies	Nucleic Acids Research	article
+10	W2026311529	1986	https://doi.org/10.1145/6462.6464	Model-based recognition in robot vision	ACM Computing Surveys	article
+11	W2142096960	2005	https://doi.org/10.1109/tcbb.2005.48	Assignment of Orthologous Genes via Genome Rearrangement	IEEE Transactions on Computational Biology and Bioinformatics	article
+12	W994990881	2015	https://doi.org/10.1016/j.cl.2015.06.001	Model-driven engineering: A survey supported by the unified conceptual model	Computer Languages	article
+13	W2109409153	2007	https://doi.org/10.1016/j.artint.2007.04.010	The Carneades model of argument and burden of proof	Artificial Intelligence	article
+14	W2058735307	2003	https://doi.org/10.1016/s0004-3702(02)00376-4	Equivalence notions and model minimization in Markov decision processes	Artificial Intelligence	article
+15	W2167030131	1998	https://doi.org/10.1145/276393.276396	Isomorph-free model enumeration	ACM Transactions on Programming Languages and Systems	article
+16	W1973063495	2009	https://doi.org/10.1016/s1755-5345(13)70005-8	Route choice modeling: past, present and future research directions	Journal of Choice Modelling	article
+17	W1850900101	1996		Modeling and verification of randomized distributed real-time systems	DSpace@MIT (Massachusetts Institute of Technology)	dissertation
+18	W2166422915	2009	https://doi.org/10.1145/1592761.1592781	Model checking	Communications of the ACM	article
+19	W2158873310	1998		Maximum entropy models for natural language ambiguity resolution	Scholarly Commons (University of Pennsylvania)	article
+20	W2151056896	1996	https://doi.org/10.1145/239098.239127	Model checking large software specifications		conference-paper
+21	W2295100577	2018	https://doi.org/10.1145/3192366.3192387	Automated clustering and program repair for introductory programming assignments		conference-paper
+22	W3162945564	2021	https://doi.org/10.1109/access.2021.3075288	Overview and Partial Discharge Analysis of Power Transformers: A Literature Review	IEEE Access	article
+23	W2092064278	1999	https://doi.org/10.1145/300830.300832	The role graph model and conflict of interest	ACM Transactions on Information and System Security	article
+24	W1479807131	2006	https://doi.org/10.7551/mitpress/9780262033589.001.0001	Semi-Supervised Learning	The MIT Press eBooks	book
+25	W1969245183	2007	https://doi.org/10.1162/coli.2007.33.4.493	Wide-Coverage Efficient Statistical Parsing with CCG and Log-Linear Models	Computational Linguistics	article
+26	W2065746736	2014	https://doi.org/10.1063/1.4899263	Survey of the high resolution infrared spectrum of methane (12CH4 and 13CH4): Partial vibrational assignment extended towards 12 000 cm−1	The Journal of Chemical Physics	article
+27	W1992680417	1982	https://doi.org/10.1017/s0020818300018993	International regimes, transactions, and change: embedded liberalism in the postwar economic order	International Organization	article
+28	W2134120469	2012	https://doi.org/10.1534/genetics.111.138149	Computationally Efficient Sibship and Parentage Assignment from Multilocus Marker Data	Genetics	article
+29	W2021558860	2013	https://doi.org/10.1016/j.cor.2013.12.002	A heuristic and a branch-and-bound algorithm for the Assembly Line Worker Assignment and Balancing Problem	Computers & Operations Research	article
+30	W2804221886	2018	https://doi.org/10.18653/v1/n18-1131	A Neural Layered Model for Nested Named Entity Recognition		conference-paper
+31	W4409921792	2025	https://doi.org/10.1016/j.artint.2025.104346	Disjoint projected enumeration for SAT and SMT without blocking clauses	Artificial Intelligence	article
+32	W1676297273	2011		Enumeration of valid partial configurations	Chalmers Research (Chalmers University of Technology)	other
+33	W2071743233	1996	https://doi.org/10.1016/0004-3702(95)00090-9	Qualitative probabilities for default reasoning, belief revision, and causal modeling	Artificial Intelligence	article
+34	W2984182507	2019	https://doi.org/10.1016/j.apm.2019.11.020	A truck and drones model for last-mile delivery: A mathematical model and heuristic approach	Applied Mathematical Modelling	article
+35	W2151023149	2008	https://doi.org/10.1111/j.1574-6976.2008.00146.x	Genome-scale models of bacterial metabolism: reconstruction and applications	FEMS Microbiology Reviews	article
+36	W3018232019	2001	https://doi.org/10.1007/s10288-003-0022-6	Models and Solution Techniques for Frequency Assignment Problems	Research Publications (Maastricht University)	article
+37	W1934094702	2015	https://doi.org/10.1038/nm.3967	The consensus molecular subtypes of colorectal cancer	Nature Medicine	article
+38	W178659373	2001	https://doi.org/10.14279/depositonce-398	Stochastic resource-constrained project scheduling	DepositOnce	dissertation
+39	W3121385028	2009	https://doi.org/10.1257/jel.47.1.5	Recent Developments in the Econometrics of Program Evaluation	Journal of Economic Literature	article
+40	W1519266993	2004	https://doi.org/10.1186/1471-2105-5-113	MUSCLE: a multiple sequence alignment method with reduced time and space complexity	BMC Bioinformatics	article
+41	W2021285519	1998	https://doi.org/10.1002/(sici)1097-0037(199812)32:4<283::aid-net5>3.0.co;2-i	Project scheduling with multiple modes: A comparison of exact algorithms	Networks	article
+42	W2144819523	2010	https://doi.org/10.1007/s00766-010-0110-z	A goal-based framework for contextual requirements modeling and analysis	Requirements Engineering	article
+43	W1560265695	2012	https://doi.org/10.3765/sp.5.6	Information structure in discourse: Towards an integrated formal theory of pragmatics	Semantics and Pragmatics	article
+44	W2756746067	2009		Agent-based traffic assignment: going from trips to behavioral travelers	Infoscience (Ecole Polytechnique Fédérale de Lausanne)	conference-paper
+45	W2731276465	2017	https://doi.org/10.3389/fphy.2017.00063	From the Trees to the Forest: A Review of Radiative Neutrino Mass Models	Frontiers in Physics	article
+46	W2104473263	2009		Bridging the Gap between Enumerative and Symbolic Model Checkers	University of Twente Research Information	report
+47	W1864649459	2015	https://doi.org/10.1007/978-3-662-46681-0_61	LTSmin: High-Performance Language-Independent Model Checking	Lecture notes in computer science	conference-paper
+48	W1748515470	2008	https://doi.org/10.3990/1.9789064642739	Testing reactive systems with data : enumerative methods and constraint solving		dissertation
+49	W2149200410	2013	https://doi.org/10.1371/journal.pone.0080347	First Partial Skeleton of a 1.34-Million-Year-Old Paranthropus boisei from Bed II, Olduvai Gorge, Tanzania	PLoS ONE	article
+50	W2071516917	2015	https://doi.org/10.1007/s13676-015-0080-x	Airline crew scheduling: models, algorithms, and data sets	EURO Journal on Transportation and Logistics	article

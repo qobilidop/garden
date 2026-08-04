@@ -31,7 +31,10 @@ proof obligations, and evidence.
   supplies guarded residual symbolic values. Braßel and Huch's branching
   information, the Braßel--Fischer translation, and Braßel's dissertation
   already supply stable choice IDs and demand-extended partial decision maps
-  for lazy functional-logic search.
+  for lazy functional-logic search. Lazy SmallCheck already refines the one
+  partial-input hole demanded by a Boolean observer. Krafczyk and Peleska
+  enumerate exact and then coarsest input-equivalence partitions, while Huang
+  et al. enumerate all satisfiable atoms of a finite observer alphabet.
 - **Reduction:** Introduce one finite-domain variable per contextual selection
   occurrence with values `unobserved` or an outcome. Constrain it by a
   backward-reachability encoding and ordinary graph equations, then project onto
@@ -134,3 +137,49 @@ proof obligations, and evidence.
 - **Consequence:** Model-and-full-fiber-block and naive projected AllSMT both
   require \(K\) satisfying models plus a final unsatisfiable query. Solver time
   and representation size remain separate.
+
+## S04 — Dense activation regions are the all-sites-observed special case
+
+- **Status:** survey synthesis; broad novelty defeated
+- **Statement:** Translating each ReLU regime to a binary selection and
+  requesting a dense network's output makes every activation site observed.
+  On full-dimensional interiors, feasible activation patterns and their
+  polyhedral regions are exactly the resulting observation image and fibers.
+- **Prior frontier:** Rada and Černý prove complete duplicate-free OutputP
+  hyperplane-cell enumeration; Serra et al. enumerate feasible ReLU patterns;
+  RPM emits guards and affine residuals; Masden and Berzins recover richer cell
+  complexes; Drammis et al. analyze parallel layerwise enumeration.
+- **Consequence:** Novelty can rest only on the input-dependent *domain* of a
+  sparse enabled-closure observation and its graph/contextual composition, not
+  exact regime enumeration or guard-plus-residual output.
+
+## S05 — Selection observations are an observer-equivalence partition
+
+- **Status:** survey synthesis; broad novelty defeated
+- **Statement:** Totalizing each site with an `unobserved` sentinel makes the
+  selection observation a finite-valued function. Its nonempty fibers are the
+  exact kernel equivalence classes of that observer.
+- **Prior frontier:** IOSTS input-equivalence-class partitioning enumerates and
+  minimizes exact behavior-preserving classes over infinite input domains;
+  SFSM property testing enumerates satisfiable Boolean atoms of a finite
+  guard/output/property alphabet; projected AllSMT enumerates a chosen finite
+  observer vector.
+- **Consequence:** The remaining graph-specific result is the compact local
+  form of each fiber and its residual, plus any demonstrable construction
+  advantage. The quotient and generic exact enumeration are established.
+
+## S06 — Demand-guided refinement is established independently
+
+- **Status:** survey synthesis; broad novelty defeated
+- **Statement:** Lindblad represents satisfying sets by partial constructor
+  terms and refines a property-blocking metavariable; Lazy SmallCheck refines
+  exactly the tagged hole forced by a pure Boolean property and skips all total
+  refinements when the answer is known. Korat supplies access-guided exhaustive
+  generation for finitized object inputs.
+- **Prior frontier:** BLI, BLISS, LISSA, and PLI provide the imperative heap
+  continuation, culminating in exact preservation of bounded jointly feasible
+  heap/path symbolic states.
+- **Consequence:** A contribution cannot be “demand sensitivity” alone. It
+  would need one canonical record per graph observation, exact union guards,
+  residual symbolic values, and an analysis beyond the prior partial-state
+  search results.

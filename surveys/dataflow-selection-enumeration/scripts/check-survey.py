@@ -42,6 +42,7 @@ SCREENING_HEADER = [
     "venue",
     "type",
 ]
+OPENALEX_ABSTRACT_SCREENING_HEADER = [*SCREENING_HEADER, "abstract"]
 GENERIC_SCREENING_HEADER = [
     "rank",
     "source_id",
@@ -51,6 +52,7 @@ GENERIC_SCREENING_HEADER = [
     "venue",
     "type",
 ]
+GENERIC_ABSTRACT_SCREENING_HEADER = [*GENERIC_SCREENING_HEADER, "abstract"]
 BACKWARD_DEFECT_MARKERS = (
     "unresolved",
     "index omits",
@@ -179,13 +181,20 @@ def main() -> int:
     screening_paths = sorted((SURVEY / "screening").glob("*.tsv"))
     for path in screening_paths:
         header, snapshot_rows = rows(path)
-        if header not in (SCREENING_HEADER, GENERIC_SCREENING_HEADER):
+        if header not in (
+            SCREENING_HEADER,
+            OPENALEX_ABSTRACT_SCREENING_HEADER,
+            GENERIC_SCREENING_HEADER,
+            GENERIC_ABSTRACT_SCREENING_HEADER,
+        ):
             fail(f"unexpected screening header in {path.relative_to(ROOT)}: {header}")
         for rank, row in enumerate(snapshot_rows, start=1):
             if row["rank"] != str(rank):
                 fail(f"nonsequential rank in {path.relative_to(ROOT)}")
             identifier_field = (
-                "openalex_id" if header == SCREENING_HEADER else "source_id"
+                "openalex_id"
+                if header in (SCREENING_HEADER, OPENALEX_ABSTRACT_SCREENING_HEADER)
+                else "source_id"
             )
             if not row[identifier_field]:
                 fail(f"missing identifier in {path.relative_to(ROOT)} row {rank + 1}")

@@ -116,6 +116,12 @@ oracle abstraction. It is not an OutputP, IncP, polynomial-delay, ordinary
 decision-oracle, or wall-clock theorem. A decision oracle returns only a bit;
 obtaining a witness requires self-reduction or a function/model oracle.
 
+The semantic fact that every input has one unique observation and the
+algorithmic fact that the enumerator emits no observation twice are distinct.
+The former follows from determinacy; the latter follows here from exact
+full-fiber blocking. Neither fact implies that the conjunction \(g_j\) is
+literal-minimal.
+
 ## Reachability-variable projected-AllSMT baseline
 
 For every node \(v\), construct a symbolic value term \(e_v(x)\). Construct a

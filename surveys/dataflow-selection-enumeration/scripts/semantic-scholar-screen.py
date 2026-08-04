@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""Export a Semantic Scholar citation neighborhood for title screening."""
+"""Export Semantic Scholar search or citation records for screening."""
 
 import argparse
 import csv
+from datetime import datetime, timezone
 import json
 from pathlib import Path
 import sys
@@ -14,7 +15,7 @@ from urllib.error import HTTPError
 
 API_ROOT = "https://api.semanticscholar.org/graph/v1"
 USER_AGENT = "xlsynth-symex-paper/0 (mailto:qobilidop@gmail.com)"
-FIELDS = ("rank", "source_id", "year", "doi", "title", "venue", "type")
+BASE_FIELDS = ("rank", "source_id", "year", "doi", "title", "venue", "type")
 PAPER_FIELDS = "paperId,title,year,externalIds,venue,publicationTypes"
 
 
@@ -72,11 +73,13 @@ def neighborhood(
     return total, records
 
 
-def record(paper: dict, rank: int) -> dict[str, object]:
+def record(
+    paper: dict, rank: int, include_abstract: bool = False
+) -> dict[str, object]:
     external = paper.get("externalIds") or {}
     doi = external.get("DOI") or ""
     kinds = paper.get("publicationTypes") or []
-    return {
+    result = {
         "rank": rank,
         # Semantic Scholar occasionally returns citation stubs with neither a
         # paper ID nor a DOI.  Preserve those records visibly and assign only
@@ -89,47 +92,93 @@ def record(paper: dict, rank: int) -> dict[str, object]:
         "venue": paper.get("venue") or "",
         "type": kinds[0] if kinds else "",
     }
+    if include_abstract:
+        result["abstract"] = paper.get("abstract") or ""
+    return result
 
 
 def parser() -> argparse.ArgumentParser:
-    result = argparse.ArgumentParser()
-    result.add_argument("doi")
-    result.add_argument("direction", choices=("backward", "forward"))
-    result.add_argument("--limit", type=int)
-    result.add_argument("--output", type=Path, required=True)
-    return result
+    root = argparse.ArgumentParser()
+    commands = root.add_subparsers(dest="command", required=True)
+
+    search = commands.add_parser("search")
+    search.add_argument("query")
+    search.add_argument("--limit", type=int, default=100)
+    search.add_argument("--output", type=Path, required=True)
+    search.add_argument("--metadata-output", type=Path)
+
+    snowball = commands.add_parser("snowball")
+    snowball.add_argument("doi")
+    snowball.add_argument("direction", choices=("backward", "forward"))
+    snowball.add_argument("--limit", type=int)
+    snowball.add_argument("--output", type=Path, required=True)
+    snowball.add_argument("--metadata-output", type=Path)
+    return root
 
 
 def main() -> int:
     args = parser().parse_args()
-    seed = resolve_doi(args.doi)
-    total_field = "referenceCount" if args.direction == "backward" else "citationCount"
-    total, papers = neighborhood(
-        seed["paperId"], args.direction, args.limit, int(seed.get(total_field) or 0)
-    )
+    captured_at = datetime.now(timezone.utc).isoformat()
+    include_abstract = args.command == "search"
+    if args.command == "search":
+        if not 1 <= args.limit <= 100:
+            raise SystemExit("Semantic Scholar search limit must be in 1..100")
+        parameters = {
+            "query": args.query,
+            "limit": str(args.limit),
+            "offset": "0",
+            "fields": f"{PAPER_FIELDS},abstract",
+        }
+        page = request_json("paper/search", parameters)
+        total = int(page.get("total") or 0)
+        papers = page.get("data") or []
+        metadata = {
+            "source": "Semantic Scholar Graph API",
+            "kind": "search",
+            "captured_at": captured_at,
+            "path": "paper/search",
+            "parameters": parameters,
+            "hits": total,
+            "exported": len(papers),
+        }
+    else:
+        seed = resolve_doi(args.doi)
+        total_field = (
+            "referenceCount" if args.direction == "backward" else "citationCount"
+        )
+        total, papers = neighborhood(
+            seed["paperId"],
+            args.direction,
+            args.limit,
+            int(seed.get(total_field) or 0),
+        )
+        metadata = {
+            "source": "Semantic Scholar Graph API",
+            "kind": "snowball",
+            "captured_at": captured_at,
+            "doi": args.doi,
+            "seed_paper_id": seed["paperId"],
+            "seed_title": seed["title"],
+            "direction": args.direction,
+            "hits": total,
+            "exported": len(papers),
+        }
     args.output.parent.mkdir(parents=True, exist_ok=True)
+    fields = BASE_FIELDS + (("abstract",) if include_abstract else ())
     with args.output.open("w", newline="", encoding="utf-8") as output:
         writer = csv.DictWriter(
-            output, fieldnames=FIELDS, dialect="excel-tab", lineterminator="\n"
+            output, fieldnames=fields, dialect="excel-tab", lineterminator="\n"
         )
         writer.writeheader()
         for rank, paper in enumerate(papers, start=1):
-            writer.writerow(record(paper, rank))
-    print(
-        json.dumps(
-            {
-                "source": "Semantic Scholar Graph API",
-                "doi": args.doi,
-                "seed_paper_id": seed["paperId"],
-                "seed_title": seed["title"],
-                "direction": args.direction,
-                "hits": total,
-                "exported": len(papers),
-            },
-            ensure_ascii=False,
-            sort_keys=True,
+            writer.writerow(record(paper, rank, include_abstract))
+    if args.metadata_output is not None:
+        args.metadata_output.parent.mkdir(parents=True, exist_ok=True)
+        args.metadata_output.write_text(
+            json.dumps(metadata, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
+            encoding="utf-8",
         )
-    )
+    print(json.dumps(metadata, ensure_ascii=False, sort_keys=True))
     return 0
 
 

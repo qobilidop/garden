@@ -79,6 +79,33 @@ Many selector bit vectors have the same first enabled priority case. Blocking
 one concrete selector value repeatedly rediscovers the same observation.
 Enumeration must block the semantic outcome predicate.
 
+## Concrete forcing can overpartition selection observations
+
+Let `x` range over `0..99` and use it only in `select(x < 50, a, b)`.
+A delayed-choice machine that forces a concrete value at the predicate can
+explore 100 values. The selection observer has two fibers, guarded by `x < 50`
+and `x >= 50`. First-use postponement and semantic-outcome quotienting are
+therefore different reductions.
+
+If the graph instead returns `x + 1` and has no selection site, concrete
+forcing enumerates every `x`. Selection-observation enumeration has one empty
+observation and the residual `x + 1`. A representative concrete output is not
+a substitute for the residual function.
+
+## Static output cones overpartition dynamic selection demand
+
+~~~text
+return select(b, f(x), g(y))
+~~~
+
+The structural support cone of the output contains b, x, and y, because both
+cases are predecessors of the mux. A pseudo-exhaustive test of this single
+cone therefore covers every joint assignment to all three groups. The enabled
+closure follows only f(x) when one outcome is selected and only g(y) for the
+other. Its two observation families leave the unselected case inputs
+unconstrained. Static support-local exhaustiveness and input-relative
+selection observation are different quotients.
+
 ## Partial primitives break eager erasure
 
 \`\`\`text

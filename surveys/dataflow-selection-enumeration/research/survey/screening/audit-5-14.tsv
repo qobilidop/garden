@@ -1,0 +1,101 @@
+rank	source_id	year	doi	title	venue	type
+1	10.29172/c8a21c51-a881-4efa-bcbe-3d0377b1a631	None	10.29172/c8a21c51-a881-4efa-bcbe-3d0377b1a631	Series expansions &amp; exact enumeration	Physics Subject Headings (PhySH)	dataset
+2	10.2139/ssrn.6687661	2026	10.2139/ssrn.6687661	Exact Observable-Dependent Effective Lindbladian for Room-Temperature Singlet-Triplet Molecular Spin Qubits: Unraveling Ultimate Coherence Limits via Lie-Algebraic Observable-Dependent Renormalization		posted-content
+3	10.1017/cbo9780511605826.027	2000	10.1017/cbo9780511605826.027	Exact enumeration	Diffusion and Reactions in Fractals and Disordered Systems	other
+4	10.2139/ssrn.6506702	2026	10.2139/ssrn.6506702	Lie-Observable-Dependent Renormalization of Temporal Phase Synchronization: Exact Fixed-Point Lindbladians in the Thermodynamic Limit		posted-content
+5	10.21203/rs.3.rs-10366611/v1	2026	10.21203/rs.3.rs-10366611/v1	Exact Localized Information Capacity of a Local Observable in a Hilbert-Space-Shattered System		posted-content
+6	10.1007/11847250_13	2006	10.1007/11847250_13	edge dominating set: Efficient Enumeration-Based Exact Algorithms	Lecture Notes in Computer Science	book-chapter
+7	10.1007/s00355-025-01584-z	2025	10.1007/s00355-025-01584-z	Observable interpersonal utility comparisons	Social Choice and Welfare	journal-article
+8	10.2139/ssrn.5361306	2025	10.2139/ssrn.5361306	&lt;p&gt;Exact Enumeration of Composite Numbers Using Least Prime Factors&lt;/p&gt;		posted-content
+9	10.2139/ssrn.6545738	2026	10.2139/ssrn.6545738	Exact Non-Perturbative Description of Quantum Proton Transfer in Open Biomolecular Systems via Lie-Algebraic Observable-Dependent Renormalization		posted-content
+10	10.5860/choice.49-2117	2011	10.5860/choice.49-2117	Introduction to enumeration	Choice Reviews Online	journal-article
+11	10.1215/00127094-2024-0037	2025	10.1215/00127094-2024-0037	Exact enumeration of fullerenes	Duke Mathematical Journal	journal-article
+12	10.1016/j.vlsi.2011.11.011	2012	10.1016/j.vlsi.2011.11.011	Exact custom instruction enumeration for extensible processors	Integration	journal-article
+13	10.5070/c63261985	2023	10.5070/c63261985	Exact enumeration of satisfiable 2-SAT formulae	Combinatorial Theory	journal-article
+14	10.1103/physreva.99.062105	2019	10.1103/physreva.99.062105	Exact nonequilibrium quantum observable statistics: A large-deviation approach	Physical Review A	journal-article
+15	10.1016/0026-2714(94)90500-2	1994	10.1016/0026-2714(94)90500-2	Exact enumeration of minimal paths of partitioned networks	Microelectronics Reliability	journal-article
+16	10.2139/ssrn.6205944	2026	10.2139/ssrn.6205944	Exact Pruned Route Enumeration with Set Partitioning for Multi-Pickup and Delivery Problem with Time Windows		posted-content
+17	10.5860/choice.37-5717	2000	10.5860/choice.37-5717	Combinatorial algorithms: generation, enumeration, and search	Choice Reviews Online	journal-article
+18	10.1016/j.dam.2005.06.009	2006	10.1016/j.dam.2005.06.009	Exact enumeration of acyclic deterministic automata	Discrete Applied Mathematics	journal-article
+19	10.1016/j.phpro.2012.05.006	2012	10.1016/j.phpro.2012.05.006	Exact Enumeration of Self-Avoiding Walks on Percolation Clusters	Physics Procedia	journal-article
+20	10.1109/dsd51259.2020.00016	2020	10.1109/dsd51259.2020.00016	Revisiting Explicit Enumeration for Exact Synthesis	2020 23rd Euromicro Conference on Digital System Design (DSD)	proceedings-article
+21	10.1103/physrevb.35.2071	1987	10.1103/physrevb.35.2071	Spiral-lattice-site animals: An exact enumeration study	Physical Review B	journal-article
+22	10.1088/1742-6596/410/1/012071	2013	10.1088/1742-6596/410/1/012071	Exact Enumeration of Protein Conformations from Fragment Assembly	Journal of Physics: Conference Series	journal-article
+23	10.21203/rs.3.rs-9430237/v1	2026	10.21203/rs.3.rs-9430237/v1	A Compositional Exact-Search Calculus over a Single Binary Primitive: Bounded Enumeration, Macro Closure, and Stability Audits for EML Trees		posted-content
+24	10.5860/choice.45-0923	2007	10.5860/choice.45-0923	Computing the continuous discretely: integer-point enumeration in polyhedra	Choice Reviews Online	journal-article
+25	10.1016/j.cognition.2021.104815	2021	10.1016/j.cognition.2021.104815	Learning exact enumeration and approximate estimation in deep neural network models	Cognition	journal-article
+26	10.2139/ssrn.6687663	2026	10.2139/ssrn.6687663	Lie-Algebraic Observable-Dependent Renormalization of Photoinduced Radical-Pair Dynamics: Exact Effective Modeling of Chirality-Induced Entanglement and Magnetic-Field Effects in Quantum Biology		posted-content
+27	10.1021/ma60041a028	1974	10.1021/ma60041a028	Polymer Adsorption on a Surface by an Exact Enumeration Study	Macromolecules	journal-article
+28	10.1103/physrevd.77.024035	2008	10.1103/physrevd.77.024035	Observable properties of orbits in exact bumpy spacetimes	Physical Review D	journal-article
+29	10.1016/j.geb.2017.09.008	2017	10.1016/j.geb.2017.09.008	Introspective unawareness and observable choice	Games and Economic Behavior	journal-article
+30	10.1103/physreve.52.835	1995	10.1103/physreve.52.835	Randomly charged polymers: An exact enumeration study	Physical Review E	journal-article
+31	10.23919/ecc65951.2025.11187295	2025	10.23919/ecc65951.2025.11187295	Hybrid Power Transmission Line Model: Exact Observability via Sensors at Discontinuous Joints with Uniformly Observable Approximations	2025 European Control Conference (ECC)	proceedings-article
+32	10.5860/choice.45-0325	2007	10.5860/choice.45-0325	A walk through combinatorics: an introduction to enumeration and graph theory	Choice Reviews Online	journal-article
+33	10.1088/2632-072x/ac8c78/v1/review1	2022	10.1088/2632-072x/ac8c78/v1/review1	"Review for ""Exact time-dependent dynamics of discrete binary choice models"""		peer-review
+34	10.1162/jocn_a_00349	2013	10.1162/jocn_a_00349	Multiple Object Individuation and Exact Enumeration	Journal of Cognitive Neuroscience	journal-article
+35	10.1088/2632-072x/ac8c78/v1/review2	2022	10.1088/2632-072x/ac8c78/v1/review2	"Review for ""Exact time-dependent dynamics of discrete binary choice models"""		peer-review
+36	10.2139/ssrn.6344078	2026	10.2139/ssrn.6344078	Lie-Decoupled Observable-Dependent Holographic RG Flows in Topological Open Quantum Systems: Exact Krylov Reduction, VQE Simulation, and Universal TEE Probes via Cyclic Multi-Informationy		posted-content
+37	10.2307/2347356	1988	10.2307/2347356	Algorithm AS 236: Recursive Enumeration of r × c Tables for Exact Likelihood Evaluation	Applied Statistics	journal-article
+38	10.1103/physrevlett.51.1499	1983	10.1103/physrevlett.51.1499	Exact Solution of a Directed-Site Animals-Enumeration Problem in three Dimensions.	Physical Review Letters	journal-article
+39	10.1103/physrevlett.51.853	1983	10.1103/physrevlett.51.853	Exact Solution of a Directed-Site Animals-Enumeration Problem in Three Dimensions	Physical Review Letters	journal-article
+40	10.1103/physrevd.70.085015	2004	10.1103/physrevd.70.085015	Exact identification of the radion and its coupling to the observable sector	Physical Review D	journal-article
+41	10.1609/aaai.v32i1.11637	2018	10.1609/aaai.v32i1.11637	Approximate and Exact Enumeration of Rule Models	Proceedings of the AAAI Conference on Artificial Intelligence	journal-article
+42	10.1016/j.cpc.2004.09.011	2005	10.1016/j.cpc.2004.09.011	Exact enumeration of three-dimensional lattice proteins	Computer Physics Communications	journal-article
+43	10.1016/j.disc.2009.07.009	2009	10.1016/j.disc.2009.07.009	Exact and asymptotic enumeration of perfect matchings in self-similar graphs	Discrete Mathematics	journal-article
+44	10.2139/ssrn.6366118	2026	10.2139/ssrn.6366118	Lie-Algebraic Observable-Dependent Renormalization of the Quantum Lugiato-Lefever Equation: Exact Effective Models for Quantum Frequency Combs and Exciton-Polariton Condensation in the Thermodynamic Limit		posted-content
+45	10.1137/1.9781611974775.3	2017	10.1137/1.9781611974775.3	An Exact Enumeration of Distance-Hereditary Graphs	2017 Proceedings of the Fourteenth Workshop on Analytic Algorithmics and Combinatorics (ANALCO)	proceedings-article
+46	10.1007/978-3-540-28639-4_1	2004	10.1007/978-3-540-28639-4_1	Parameterized Enumeration, Transversals, and Imperfect Phylogeny Reconstruction	Lecture Notes in Computer Science	book-chapter
+47	10.1103/physreva.41.2942	1990	10.1103/physreva.41.2942	Exact enumeration approach to the directed polymer problem	Physical Review A	journal-article
+48	10.1016/j.cpc.2005.10.004	2006	10.1016/j.cpc.2005.10.004	Exact enumeration of the ground states of a triangular Ising antiferromagnet	Computer Physics Communications	journal-article
+49	10.46298/dmtcs.327	2004	10.46298/dmtcs.327	On an open problem of Green and Losonczy: exact enumeration of freely braided permutations	Discrete Mathematics &amp; Theoretical Computer Science	journal-article
+50	10.1063/1.4938021	2015	10.1063/1.4938021	Study on collapse and folding transitions of a lattice protein using exact enumeration	AIP Advances	journal-article
+51	10.1103/physrevb.72.212408	2005	10.1103/physrevb.72.212408	Exact enumeration of ground states in the Sherrington-Kirkpatrick spin glass	Physical Review B	journal-article
+52	10.3390/math14081298	2026	10.3390/math14081298	Split-and-Reduce: A New Exact Algorithm with Tight Multi-Order Intersection Bounds for the Quasi-Clique Enumeration Problem	Mathematics	journal-article
+53	10.21236/ada269067	1993	10.21236/ada269067	Bayesian Model Choice: Asymptotics and Exact Calculations		report
+54	10.1016/j.cpc.2015.09.017	2016	10.1016/j.cpc.2015.09.017	Exact enumeration of conformations for two and three dimensional lattice proteins	Computer Physics Communications	journal-article
+55	10.5817/cz.muni.eurocomb23-035	2023	10.5817/cz.muni.eurocomb23-035	Exact enumeration of graphs and bipartite graphs with degree constraints	Proceedings of the 12th European Conference on Combinatorics, Graph Theory and Applications	proceedings-article
+56	10.1109/icassp49357.2023.10095698	2023	10.1109/icassp49357.2023.10095698	Fast and Exact Enumeration of Deep Networks Partitions Regions	ICASSP 2023 - 2023 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)	proceedings-article
+57	10.1109/cdc57313.2025.11312811	2025	10.1109/cdc57313.2025.11312811	Manifold of purely exact observable states with application to a Timoshenko beam model	2025 IEEE 64th Conference on Decision and Control (CDC)	proceedings-article
+58	10.1103/physrevb.108.014423	2023	10.1103/physrevb.108.014423	Fermionic path integral for exact enumeration of polygons on the simple cubic lattice	Physical Review B	journal-article
+59	10.1007/bf02289633	1962	10.1007/bf02289633	An Observable Property Equivalent to a Choice Model for Discrimination Experiments	Psychometrika	journal-article
+60	10.1016/j.mbs.2013.01.010	2013	10.1016/j.mbs.2013.01.010	Exact enumeration of cherries and pitchforks in ranked trees under the coalescent model	Mathematical Biosciences	journal-article
+61	10.1007/978-1-4615-8588-6_3	1972	10.1007/978-1-4615-8588-6_3	Choice of Enumeration in Parallel Sequencing Problems	Automatic Programming and Numerical Methods of Analysis	book-chapter
+62	10.1088/2632-072x/ac8c78/v1/decision1	2022	10.1088/2632-072x/ac8c78/v1/decision1	"Decision letter for ""Exact time-dependent dynamics of discrete binary choice models"""		peer-review
+63	10.1109/vetecf.2004.1400235	None	10.1109/vetecf.2004.1400235	A fast exact ML sphere decoder with efficient two-layer enumeration	IEEE 60th Vehicular Technology Conference, 2004. VTC2004-Fall. 2004	proceedings-article
+64	10.1117/12.142828	1993	10.1117/12.142828	Linear axial GRIN lenses: exact ray-trace and paraxial formulas	Lens and Optical Systems Design	proceedings-article
+65	10.1080/02331939208843771	1992	10.1080/02331939208843771	Low autocorrelation binary sequences: exact enumeration and optimization by evolutionary strategies	Optimization	journal-article
+66	10.1103/physreva.39.6545	1989	10.1103/physreva.39.6545	Exact-enumeration approach to multifractal structure for diffusion-limited aggregation	Physical Review A	journal-article
+67	10.5860/choice.45-0890	2007	10.5860/choice.45-0890	Trace fossil analysis	Choice Reviews Online	journal-article
+68	10.1017/s1365100509080274	2009	10.1017/s1365100509080274	THE EXACT DISCRETE MODEL OF A THIRD-ORDER SYSTEM OF LINEAR STOCHASTIC DIFFERENTIAL EQUATIONS WITH OBSERVABLE STOCHASTIC TRENDS	Macroeconomic Dynamics	journal-article
+69	10.1016/j.cor.2006.10.018	2008	10.1016/j.cor.2006.10.018	An enumeration scheme to generate constrained exact checkerboard patterns	Computers &amp; Operations Research	journal-article
+70	10.1103/physrevd.77.123536	2008	10.1103/physrevd.77.123536	Towards observable signatures of other bubble universes. II. Exact solutions for thin-wall bubble collisions	Physical Review D	journal-article
+71	10.5860/choice.46-0741	2008	10.5860/choice.46-0741	Thomas Kinsella: designing for the exact needs	Choice Reviews Online	journal-article
+72	10.1007/s00407-008-0025-y	2008	10.1007/s00407-008-0025-y	The “Unknown Heritage”: trace of a forgotten locus of mathematical sophistication	Archive for History of Exact Sciences	journal-article
+73	10.1016/j.cor.2025.107246	2025	10.1016/j.cor.2025.107246	Transportation infrastructure maintenance planning: An exact column enumeration approach	Computers &amp; Operations Research	journal-article
+74	10.2969/aspm/02110127	None	10.2969/aspm/02110127	Some Exact Trace Formulæ	Advanced Studies in Pure Mathematics	proceedings-article
+75	10.1093/comnet/cnaa011	2020	10.1093/comnet/cnaa011	About clique number estimates and exact enumeration in scale-free networks	Journal of Complex Networks	journal-article
+76	10.1016/s0166-218x(03)00375-5	2004	10.1016/s0166-218x(03)00375-5	Exact enumeration of rooted 3-connected triangular maps on the projective plane	Discrete Applied Mathematics	journal-article
+77	10.5860/choice.49-5114	2012	10.5860/choice.49-5114	Euclidean shortest paths: exact or approximate algorithms	Choice Reviews Online	journal-article
+78	10.5860/choice.35-3806	1998	10.5860/choice.35-3806	Exact imagination, late work: on Adorno's aesthetics	Choice Reviews Online	journal-article
+79	10.5860/choice.28-3100	1991	10.5860/choice.28-3100	Trace elements in coal	Choice Reviews Online	journal-article
+80	10.5860/choice.30-3836	1993	10.5860/choice.30-3836	Biogeochemistry of trace metals	Choice Reviews Online	journal-article
+81	10.1088/1742-5468/2011/06/p06019	2011	10.1088/1742-5468/2011/06/p06019	Exact enumeration of self-avoiding walks	Journal of Statistical Mechanics: Theory and Experiment	journal-article
+82	10.1147/rd.166.0573	1972	10.1147/rd.166.0573	Exact Implicit Enumeration Method for Solving the Set Partitioning Problem	IBM Journal of Research and Development	journal-article
+83	10.1088/0305-4470/20/12/049	1987	10.1088/0305-4470/20/12/049	Some more exact enumeration results for 1D cellular automata	Journal of Physics A: Mathematical and General	journal-article
+84	10.5860/choice.31-0922	1993	10.5860/choice.31-0922	Biomonitoring of trace aquatic contaminants	Choice Reviews Online	journal-article
+85	10.1103/physreva.46.6252	1992	10.1103/physreva.46.6252	Exact enumeration and scaling for fragmentation of percolation clusters	Physical Review A	journal-article
+86	10.5860/choice.33-3372	1996	10.5860/choice.33-3372	Handbook of exact solutions for ordinary differential equations	Choice Reviews Online	journal-article
+87	10.5860/choice.39-2804	2002	10.5860/choice.39-2804	Mute witnesses: trace evidence analysis	Choice Reviews Online	journal-article
+88	10.5860/choice.45-6807	2008	10.5860/choice.45-6807	Trace fossils concepts, problems, prospects	Choice Reviews Online	journal-article
+89	10.1103/physrevb.42.4559	1990	10.1103/physrevb.42.4559	Exact-enumeration approach to tunneling in disordered systems	Physical Review B	journal-article
+90	10.5860/choice.193771	2015	10.5860/choice.193771	Beautiful, simple, exact, crazy: mathematics in the real world	Choice Reviews Online	journal-article
+91	10.5860/choice.32-2751	1995	10.5860/choice.32-2751	The palaeobiology of trace fossils	Choice Reviews Online	journal-article
+92	10.5860/choice.33-3326	1996	10.5860/choice.33-3326	Trace elements in natural waters	Choice Reviews Online	journal-article
+93	10.1007/s00453-007-9152-0	2008	10.1007/s00453-007-9152-0	On the Minimum Feedback Vertex Set Problem: Exact and Enumeration Algorithms	Algorithmica	journal-article
+94	10.1007/s11294-025-09928-2	2025	10.1007/s11294-025-09928-2	Inspection Technology: Observable vs. Unobservable Choice	International Advances in Economic Research	journal-article
+95	10.5860/choice.35-0947	1997	10.5860/choice.35-0947	Sports nutrition: vitamins and trace elements	Choice Reviews Online	journal-article
+96	10.5860/choice.46-0886	2008	10.5860/choice.46-0886	Trace quantitative analysis by mass spectrometry	Choice Reviews Online	journal-article
+97	10.5860/choice.31-4924	1994	10.5860/choice.31-4924	Modern methods for trace element determination	Choice Reviews Online	journal-article
+98	10.5860/choice.45-2048	2007	10.5860/choice.45-2048	Trace elements from soil to human	Choice Reviews Online	journal-article
+99	10.1103/physreve.47.262	1993	10.1103/physreve.47.262	Exact enumeration of self-avoiding walks on lattices with random site energies	Physical Review E	journal-article
+100	10.1016/0370-2693(89)90562-5	1989	10.1016/0370-2693(89)90562-5	An exact classical symmetry of effective field theories from superstrings and an anomalous source of observable supersymmetry breaking	Physics Letters B	journal-article

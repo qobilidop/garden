@@ -1,0 +1,23 @@
+rank	source_id	year	doi	title	venue	type
+1	citation-1	2020	-	On Transversality of Bent Hyperplane Arrangements and the Topological Expressiveness of ReLU Neural Networks	arXiv	preprint
+2	citation-2	2018	-	Bounding and Counting Linear Regions of Deep Neural Networks	ICML	proceedings-article
+3	citation-3	2019	-	Deep ReLU Networks Have Surprisingly Few Activation Patterns	NeurIPS	proceedings-article
+4	citation-4	2014	-	On the Number of Linear Regions of Deep Neural Networks	NeurIPS	proceedings-article
+5	citation-5	2018	-	On Characterizing the Capacity of Neural Networks Using Algebraic Topology	arXiv	preprint
+6	citation-6	2014	10.1109/TNNLS.2013.2293637	On the Complexity of Neural Network Classifiers: A Comparison Between Shallow and Deep Architectures	IEEE Transactions on Neural Networks and Learning Systems	journal-article
+7	citation-7	2020	-	Hyperplane Neural Codes and the Polar Complex	Topological Data Analysis	book-chapter
+8	citation-8	2017	-	Topics in Hyperplane Arrangements	American Mathematical Society	book
+9	citation-9	2022	-	Local and Global Topological Complexity Measures of ReLU Neural Network Functions	arXiv	preprint
+10	citation-10	2019	-	Complexity of Linear Regions in Deep Networks	ICML	proceedings-article
+11	citation-11	2020	-	Empirical Studies on the Properties of Linear Regions in Deep Neural Networks	ICLR	proceedings-article
+12	citation-12	2019	-	The Geometry of Deep Networks: Power Diagram Subdivision	NeurIPS	proceedings-article
+13	citation-13	2018	-	Tropical Geometry of Deep Neural Networks	ICML	proceedings-article
+14	citation-14	2020	-	On the Decision Boundaries of Deep Neural Networks: A Tropical Geometry Perspective	arXiv	preprint
+15	citation-15	2019	-	Analysis of Combinatorial Neural Codes: An Algebraic Approach	Springer	book-chapter
+16	citation-16	2017	-	Piecewise Linear Morse Theory	dissertation	dissertation
+17	citation-17	2019	-	PyTorch: An Imperative Style High-Performance Deep Learning Library	NeurIPS	proceedings-article
+18	citation-18	2018	-	SageMath the Sage Mathematics Software System Version 9.0	Sage Developers	software
+19	citation-19	2020	-	Finding the Homology of Decision Boundaries with Active Learning	NeurIPS	proceedings-article
+20	citation-20	2018	-	Empirical Study of the Topology and Geometry of Deep Networks	CVPR	proceedings-article
+21	citation-21	2010	-	Rectified Linear Units Improve Restricted Boltzmann Machines	ICML	proceedings-article
+22	citation-22	2014	-	Elementary Applied Topology	Createspace	book

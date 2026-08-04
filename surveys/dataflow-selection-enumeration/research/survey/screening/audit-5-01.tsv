@@ -1,0 +1,101 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1007/bf02241704	1992	10.1007/bf02241704	Credible execution of bounded-time parallel systems with delayed diagnosis	Computing	journal-article
+2	10.1145/3485543	2021	10.1145/3485543	Programming and execution models for parallel bounded exhaustive testing	Proceedings of the ACM on Programming Languages	journal-article
+3	10.31224/7083	2026	10.31224/7083	Bounded Event-Time Execution Architecture		posted-content
+4	10.7551/mitpress/4702.003.0004	1998	10.7551/mitpress/4702.003.0004	Bounded Rationality in Choice	Modeling Bounded Rationality	book-chapter
+5	10.32388/sdinrj	2020	10.32388/sdinrj	Delayed Program or Algorithm Execution	Definitions	reference-entry
+6	10.5860/choice.29-4252a	1992	10.5860/choice.29-4252a	NRSV exhaustive concordance	Choice Reviews Online	journal-article
+7	10.1109/dfm.2013.11	2013	10.1109/dfm.2013.11	Polyhedral Constraints for Bounded-Memory Execution of Synchronized Filtering Dataflow	2013 Data-Flow Execution Models for Extreme Scale Computing	proceedings-article
+8	10.1016/j.lingua.2012.12.005	2013	10.1016/j.lingua.2012.12.005	Exhaustive and non-exhaustive variation with free choice and referential vagueness: Evidence from Greek, Catalan, and Spanish	Lingua	journal-article
+9	10.7287/peerj.preprints.126/supp-4	None	10.7287/peerj.preprints.126/supp-4		Supplemental Information 4: Central loop execution delayed by the influence of side loops	dataset
+10	10.7287/peerj.preprints.126v3/supp-4	None	10.7287/peerj.preprints.126v3/supp-4		Supplemental Information 4: Central loop execution delayed by the influence of side loops	dataset
+11	10.7287/peerj.preprints.126v2/supp-4	None	10.7287/peerj.preprints.126v2/supp-4		Supplemental Information 4: Central loop execution delayed by the influence of side loops.	dataset
+12	10.32614/cran.package.delarr	2026	10.32614/cran.package.delarr	delarr: Lazy Delayed Arrays with Fused Execution	CRAN: Contributed Packages	dataset
+13	10.1109/test.1992.527813	1992	10.1109/test.1992.527813	Self-test scheduling with bounded test execution time	Proceedings International Test Conference 1992	proceedings-article
+14	10.1016/0140-6736(93)92205-8	1993	10.1016/0140-6736(93)92205-8	Execution delayed	The Lancet	journal-article
+15	10.5860/choice.35-1715	1997	10.5860/choice.35-1715	Bounded lives, bounded places: free black society in Colonial New Orleans, 1769-1803	Choice Reviews Online	journal-article
+16	10.1109/ropec55836.2022.10018607	2022	10.1109/ropec55836.2022.10018607	Watermarking Scheme With Bounded-Exhaustive Self-Recovery Approach	2022 IEEE International Autumn Meeting on Power, Electronics and Computing (ROPEC)	proceedings-article
+17	10.1109/asianhost56390.2022.10022071	2022	10.1109/asianhost56390.2022.10022071	EISec: Exhaustive Information Flow Security of Hardware Intellectual Property Utilizing Symbolic Execution	2022 Asian Hardware Oriented Security and Trust Symposium (AsianHOST)	proceedings-article
+18	10.1007/s11050-008-9034-2	2008	10.1007/s11050-008-9034-2	Upper-bounded no more: the exhaustive interpretation of non-strict comparison	Natural Language Semantics	journal-article
+19	10.1108/978-1-78441-072-820151013	2015	10.1108/978-1-78441-072-820151013	Models of Bounded Rationality under Certainty	Bounded Rational Choice Behaviour: Applications in Transport	book-chapter
+20	10.1515/9781400836864.123	2010	10.1515/9781400836864.123	6. School Choice as a Bounded Ideal	Tough Choices	book-chapter
+21	10.18574/nyu/9780814722794.003.0018	2020	10.18574/nyu/9780814722794.003.0018	14. Freedom Delayed	An Expendable Man	book-chapter
+22	10.5860/choice.42-5575	2005	10.5860/choice.42-5575	Bounded choice: true believers and charismatic cults	Choice Reviews Online	journal-article
+23	10.1109/icst46399.2020.00016	2020	10.1109/icst46399.2020.00016	MiMIs: Simple, Efficient, and Fast Bounded-Exhaustive Test Case Generators	2020 IEEE 13th International Conference on Software Testing, Validation and Verification (ICST)	proceedings-article
+24	10.1108/978-1-78441-072-820151016	2015	10.1108/978-1-78441-072-820151016	Bounded Rationality in Dynamic Traffic Assignment	Bounded Rational Choice Behaviour: Applications in Transport	book-chapter
+25	10.5220/0001868501150121	2008	10.5220/0001868501150121	ELUSIVE BUGS, BOUNDED EXHAUSTIVE TESTING AND INCOMPLETE ORACLES	Proceedings of the Third International Conference on Software and Data Technologies Special Session on Applications in Banking and Finance	proceedings-article
+26	10.1108/978-1-78441-072-820151017	2015	10.1108/978-1-78441-072-820151017	Index	Bounded Rational Choice Behaviour: Applications in Transport	book-chapter
+27	10.7551/mitpress/1654.003.0010	2002	10.7551/mitpress/1654.003.0010	Preferential Choice and Adaptive Strategy Use	Bounded Rationality	book-chapter
+28	10.2139/ssrn.6616738	2026	10.2139/ssrn.6616738	The Halting Problem Resolved: Axiomatic Bounded Execution as the Condition of Decidability, with an On-Chain Normative Implementation		posted-content
+29	10.1108/978-1-78441-072-820151021	2015	10.1108/978-1-78441-072-820151021	Prelims	Bounded Rational Choice Behaviour: Applications in Transport	other
+30	10.5860/choice.27-5016	1990	10.5860/choice.27-5016	The execution of justice	Choice Reviews Online	journal-article
+31	10.5860/choice.32-0688	1994	10.5860/choice.32-0688	Pictures at an execution	Choice Reviews Online	journal-article
+32	10.1145/3183440.3195002	2018	10.1145/3183440.3195002	Efficient iterative deepening for bounded exhaustive generation of complex structures	Proceedings of the 40th International Conference on Software Engineering: Companion Proceeedings	proceedings-article
+33	10.1109/iccd.2000.878338	None	10.1109/iccd.2000.878338	Cheap out-of-order execution using delayed issue	Proceedings 2000 International Conference on Computer Design	proceedings-article
+34	10.1145/1007512.1007531	2004	10.1145/1007512.1007531	Software assurance by bounded exhaustive testing	Proceedings of the 2004 ACM SIGSOFT international symposium on Software testing and analysis	proceedings-article
+35	10.1145/581690.581694	2002	10.1145/581690.581694	Eager Haskell	Proceedings of the 2002 ACM SIGPLAN workshop on Haskell	proceedings-article
+36	10.11126/stanford/9780804773294.003.0009	2011	10.11126/stanford/9780804773294.003.0009	Interdependence Between the Choice and Execution of Policies	Reputation-Based Governance	book-chapter
+37	10.2139/ssrn.6120326	2026	10.2139/ssrn.6120326	Bounded Rationality, Societal Progress, Inclusive Institutions: Sustainability and Satisficing Choice		posted-content
+38	10.1515/9780804777438-010	2020	10.1515/9780804777438-010	9. Interdependence Between the Choice and Execution of Policies	Reputation-Based Governance	book-chapter
+39	10.5860/choice.27-6328	1990	10.5860/choice.27-6328	Ecological experiments: purpose, design, and execution	Choice Reviews Online	journal-article
+40	10.1145/3299869.3300087	2019	10.1145/3299869.3300087	Exact Cardinality Query Optimization with Bounded Execution Cost	Proceedings of the 2019 International Conference on Management of Data	proceedings-article
+41	10.1109/tse.2005.52	2005	10.1109/tse.2005.52	Software assurance by bounded exhaustive testing	IEEE Transactions on Software Engineering	journal-article
+42	10.5860/choice.43-6002	2006	10.5860/choice.43-6002	The antitrust enterprise: principle and execution	Choice Reviews Online	journal-article
+43	10.5772/intechopen.1012416	2026	10.5772/intechopen.1012416	Timing of Nerve Repair: Acute versus Delayed	Upper Extremity Surgery - Evidence to Execution [Working Title]	book-chapter
+44	10.70675/fb9d6837zd6caz48ebzbfb7z84dabc139799	None	10.70675/fb9d6837zd6caz48ebzbfb7z84dabc139799	Optimal control and applications in finance : optimal execution, option hedging and portfolio choice		dissertation
+45	10.1145/3133918	2017	10.1145/3133918	Bounded exhaustive test-input generation on GPUs	Proceedings of the ACM on Programming Languages	journal-article
+46	10.3390/sym12122021	2020	10.3390/sym12122021	A Bounded Exhaustive Search Technique for Optimal Phasor Measurement Unit Placement in Power Grids	Symmetry	journal-article
+47	10.1155/2022/9244890	2022	10.1155/2022/9244890	Exhaustive Search and Power‐Based Gradient Descent Algorithms for Time‐Delayed FIR Models	Complexity	journal-article
+48	10.5860/choice.48-1769	2010	10.5860/choice.48-1769	The practice of execution in Canada	Choice Reviews Online	journal-article
+49	10.1080/15326349.2019.1621760	2019	10.1080/15326349.2019.1621760	Finite horizon optimal execution with bounded rate of transaction	Stochastic Models	journal-article
+50	10.1108/978-1-78441-072-820151018	2015	10.1108/978-1-78441-072-820151018	About the Authors	Bounded Rational Choice Behaviour: Applications in Transport	book-chapter
+51	10.70675/60f98143z20c9z4a62z8ecdz65c032cc4932	None	10.70675/60f98143z20c9z4a62z8ecdz65c032cc4932	Empirical contributions to the choice of complementary health insurance under bounded rationality		dissertation
+52	10.55776/i5958	2023	10.55776/i5958			grant
+53	10.26170/po19-06-12	2019	10.26170/po19-06-12	CURRENT PROBLEMS OF MODERN CHOICE EXECUTION: CHOICE THEATRALIZATION	Pedagogical Education in Russia	journal-article
+54	10.1108/9781784410711	2015	10.1108/9781784410711	Bounded Rational Choice Behaviour: Applications in Transport		edited-book
+55	10.5860/choice.34-4807a	1997	10.5860/choice.34-4807a	Edgar Rice Burroughs: the exhaustive scholar's and collector's descriptive bibliography of American periodical, hardcover, paperback, and reprint editions	Choice Reviews Online	journal-article
+56	10.5860/choice.40-4091	2003	10.5860/choice.40-4091	Execution: the discipline of getting things done	Choice Reviews Online	journal-article
+57	10.1145/1013886.1007531	2004	10.1145/1013886.1007531	Software assurance by bounded exhaustive testing	ACM SIGSOFT Software Engineering Notes	journal-article
+58	10.33915/etd.3748	None	10.33915/etd.3748	Effects of Delay and Signals on Choice between Delayed Food Alone and Immediate Food with Delayed Shock		dissertation
+59	10.2139/ssrn.6826459	2026	10.2139/ssrn.6826459	Sequential Evaluation Under Bounded Scoring: Position Effects and Delayed Ceiling Use in Expert Judgment		posted-content
+60	10.33915/etd.5515	None	10.33915/etd.5515	Choice Between Reinforcers With and Without Delayed Shock		dissertation
+61	10.5860/choice.34-1939	1996	10.5860/choice.34-1939	Hollywood war films, 1937-1945: an exhaustive filmography of American feature-length motion pictures relating to World War II	Choice Reviews Online	journal-article
+62	10.21136/cpm.1971.117720	1971	10.21136/cpm.1971.117720	On solutions of nonautonomous linear delayed differential equations, which are defined and exponentially bounded for $t \longrightarrow -\infty$	Časopis pro pěstování matematiky	journal-article
+63	10.5860/choice.51-0217	2013	10.5860/choice.51-0217	Bounded thinking: intellectual virtues for limited agents	Choice Reviews Online	journal-article
+64	10.2307/j.ctvqsdq7z.12	2011	10.2307/j.ctvqsdq7z.12	Interdependence Between the Choice and Execution of Policies	Reputation-Based Governance	book-chapter
+65	10.1109/icse43902.2021.00105	2021	10.1109/icse43902.2021.00105	Bounded Exhaustive Search of Alloy Specification Repairs	2021 IEEE/ACM 43rd International Conference on Software Engineering (ICSE)	proceedings-article
+66	10.5860/choice.37-4307	2000	10.5860/choice.37-4307	The poetics of novels: fiction and its execution	Choice Reviews Online	journal-article
+67	10.5860/choice.51-1586	2013	10.5860/choice.51-1586	Making strategy work: leading effective execution and change	Choice Reviews Online	journal-article
+68	10.1163/9789004742598_002	2025	10.1163/9789004742598_002	Introduction	Exile and Execution in Medieval and Early Modern Society	book-chapter
+69	10.1016/j.automatica.2015.06.007	2015	10.1016/j.automatica.2015.06.007	Nonlinear predictors for systems with bounded trajectories and delayed measurements	Automatica	journal-article
+70	10.5860/choice.38-1174	2000	10.5860/choice.38-1174	The collaborator: the trial &amp; execution of Robert Brasillach	Choice Reviews Online	journal-article
+71	10.1016/j.jocm.2017.11.002	2018	10.1016/j.jocm.2017.11.002	The Stochastic Satisficing model: A bounded rationality discrete choice model	Journal of Choice Modelling	journal-article
+72	10.4018/jitr.2018040105	2018	10.4018/jitr.2018040105	An Exhaustive Requirement Analysis Approach to Estimate Risk Using Requirement Defect and Execution Flow Dependency for Software Development	Journal of Information Technology Research	journal-article
+73	10.1017/cbo9780511606052.021	2001	10.1017/cbo9780511606052.021	Delayed choice paradox	Consistent Quantum Theory	book-chapter
+74	10.20944/preprints202011.0655.v1	2020	10.20944/preprints202011.0655.v1	Causal Intuition and Delayed-Choice Experiments		posted-content
+75	10.5860/choice.48-0380	2010	10.5860/choice.48-0380	Hyperformance: using competitive intelligence for better strategy and execution	Choice Reviews Online	journal-article
+76	10.5860/choice.39-6347	2002	10.5860/choice.39-6347	The trial and execution of Socrates: sources and controversies	Choice Reviews Online	journal-article
+77	10.33774/coe-2022-qq3b3-v2	2022	10.33774/coe-2022-qq3b3-v2	Delayed Choice and Quantum Causal Coherence		posted-content
+78	10.33774/coe-2022-qq3b3	2022	10.33774/coe-2022-qq3b3	Delayed Choice and Quantum Causal Coherence		posted-content
+79	10.1002/stvr.1547	2014	10.1002/stvr.1547	RepOK‐based reduction of bounded exhaustive testing	Software Testing, Verification and Reliability	journal-article
+80	10.1109/csf57540.2023.00014	2023	10.1109/csf57540.2023.00014	OblivIO: Securing Reactive Programs by Oblivious Execution with Bounded Traffic Overheads	2023 IEEE 36th Computer Security Foundations Symposium (CSF)	proceedings-article
+81	10.5860/choice.48-4573	2011	10.5860/choice.48-4573	The other side of innovation: solving the execution challenge	Choice Reviews Online	journal-article
+82	10.1515/9783110246339.61	2010	10.1515/9783110246339.61	Rational Choice Theory and Bounded Rationality	Religion, Economy, and Cooperation	book-chapter
+83	10.1016/j.scico.2024.103153	2024	10.1016/j.scico.2024.103153	BEAPI: A tool for bounded exhaustive input generation from APIs	Science of Computer Programming	journal-article
+84	10.1108/978-1-78441-072-820151014	2015	10.1108/978-1-78441-072-820151014	Relative Utility Modelling	Bounded Rational Choice Behaviour: Applications in Transport	book-chapter
+85	10.7551/mitpress/14401.003.0006	2022	10.7551/mitpress/14401.003.0006	Behavioral Models of Heuristics-Based Choice	Bounded Rationality	book-chapter
+86	10.5860/choice.49-2776	2012	10.5860/choice.49-2776	Strategic planning: a practical guide to strategy formulation and execution	Choice Reviews Online	journal-article
+87	10.5860/choice.40-6615	2003	10.5860/choice.40-6615	An act of state: the execution of Martin Luther King	Choice Reviews Online	journal-article
+88	10.1037/e506542008-001	2008	10.1037/e506542008-001	Psychophysiological correlates during the execution of a forced-choice task	PsycEXTRA Dataset	dataset
+89	10.1007/978-3-642-00593-0_12	2009	10.1007/978-3-642-00593-0_12	Reducing the Costs of Bounded-Exhaustive Testing	Lecture Notes in Computer Science	book-chapter
+90	10.5860/choice.32-5808	1995	10.5860/choice.32-5808	The hanging tree: execution and the English people, 1770-1868	Choice Reviews Online	journal-article
+91	10.5860/choice.46-4712	2009	10.5860/choice.46-4712	Eligible for execution: the story of the Daryl Atkins case	Choice Reviews Online	journal-article
+92	10.2139/ssrn.2241581	2013	10.2139/ssrn.2241581	Bounded Rationality and Consumer Choice: An Evaluation of Consumer Choice of Mobile Bundles in China	SSRN Electronic Journal	journal-article
+93	10.1108/978-1-78441-072-820151010	2015	10.1108/978-1-78441-072-820151010	Towards a Novel Classifier for the Representation of Bounded Rationality in Models of Travel Demand	Bounded Rational Choice Behaviour: Applications in Transport	book-chapter
+94	10.2139/ssrn.385122	2003	10.2139/ssrn.385122	Bounded Rationality and Socially Optimal Limits on Choice in a Self-Selection Model		posted-content
+95	10.1145/3573388	2023	10.1145/3573388	Robust Cause-Effect Chains with Bounded Execution Time and System-Level Logical Execution Time	ACM Transactions on Embedded Computing Systems	journal-article
+96	10.1037/e520602012-660	2011	10.1037/e520602012-660	Individual Differences in the Delayed-Execution of Prospective Memories	PsycEXTRA Dataset	dataset
+97	10.5860/choice.43-4953	2006	10.5860/choice.43-4953	Mercy on trial: what it means to stop an execution	Choice Reviews Online	journal-article
+98	10.1037/e452852008-173	None	10.1037/e452852008-173	Psychopathy and Choice of Immediate versus Delayed Punishment	PsycEXTRA Dataset	dataset
+99	10.1108/978-1-78441-072-820151011	2015	10.1108/978-1-78441-072-820151011	Incorporating Bounded Rationality in a Model of Endogenous Dynamics of Activity-Travel Behaviour	Bounded Rational Choice Behaviour: Applications in Transport	book-chapter
+100	10.2139/ssrn.4760821	2024	10.2139/ssrn.4760821	Exploring Transport Service Choice Decisions: A Comprehensive Triple-Bounded Discrete Choice Elicitation Method		posted-content

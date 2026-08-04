@@ -63,8 +63,12 @@ def record(work: dict, rank: int, include_abstract: bool) -> dict[str, object]:
     return result
 
 
-def resolve_doi(doi: str) -> dict:
-    encoded = urllib.parse.quote(f"https://doi.org/{doi}", safe="")
+def resolve_seed(seed: str) -> dict:
+    """Resolve a DOI or an OpenAlex work identifier."""
+    short_id = seed.rsplit("/", 1)[-1]
+    if short_id.startswith("W") and short_id[1:].isdigit():
+        return request_json(f"works/{short_id}")
+    encoded = urllib.parse.quote(f"https://doi.org/{seed}", safe="")
     return request_json(f"works/{encoded}")
 
 
@@ -112,7 +116,7 @@ def collect(args: argparse.Namespace) -> tuple[dict[str, object], list[dict]]:
         }
         return metadata, works
 
-    seed = resolve_doi(args.doi)
+    seed = resolve_seed(args.seed)
     seed_id = seed["id"].rsplit("/", 1)[-1]
     if args.direction == "backward":
         reference_ids = seed.get("referenced_works") or []
@@ -125,7 +129,7 @@ def collect(args: argparse.Namespace) -> tuple[dict[str, object], list[dict]]:
         unresolved = []
     metadata = {
         "kind": "snowball",
-        "doi": args.doi,
+        "seed": args.seed,
         "seed_openalex_id": seed_id,
         "seed_title": seed.get("title"),
         "direction": args.direction,
@@ -147,7 +151,7 @@ def parser() -> argparse.ArgumentParser:
     search.add_argument("--include-abstract", action="store_true")
 
     snowball = commands.add_parser("snowball")
-    snowball.add_argument("doi")
+    snowball.add_argument("seed", help="DOI or OpenAlex work identifier")
     snowball.add_argument("direction", choices=("backward", "forward"))
     snowball.add_argument("--limit", type=int)
     snowball.add_argument("--output", type=Path, required=True)

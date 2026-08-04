@@ -11,6 +11,8 @@ Use explicit parameters rather than the ambiguous phrase “graph size”:
 - \(K\): number of feasible selection observations under the caller constraint;
 - \(L\): maximum number of observed selection sites in one observation;
 - \(S_\tau\): weighted size of the demanded slice for observation \(\tau\);
+- \(E_G\): weighted size of any elaborated binary-choice or solver encoding,
+  including auxiliary choices and the projection map back to source sites;
 - \(B\): number of candidates built by a particular syntactic branching
   algorithm before feasibility filtering;
 - \(Z\): total serialized or DAG output size, stated explicitly; and
@@ -20,6 +22,12 @@ Use explicit parameters rather than the ambiguous phrase “graph size”:
 \(S_G\) must count widths and case lists. One width-\(w\) one-hot selector can
 have one graph node but an \(\Omega(w)\) outcome predicate and \(2^w\) possible
 masks.
+
+Any comparison with a binary-choice formalism must use \(E_G\), not silently
+substitute \(S_G\). Lowering one \(m\)-way source selector can introduce
+multiple auxiliary binary choices; a naive one-hot or subset construction may
+be linear in \(m\) or exponential in a succinct selector width. Projection must
+then merge the auxiliary decisions back into one source-site outcome.
 
 ## Enumeration-complexity vocabulary
 
@@ -64,6 +72,98 @@ remove this unavoidable product.
 A single width-\(w\) selection site whose outcome is an arbitrary mask can have
 \(K=2^w\) while \(L=1\); complexity must include outcome-domain size, not only
 trace length.
+
+Delayed-choice execution provides a different bound: removing \(k\) distinct
+\(N\)-way concrete forces reduces its eager path count by \(N^k\). That result
+does not bound \(K\). A used choice is forced to a concrete value even when many
+values induce one selection outcome, while symbolic residual computation may
+leave all such values in a single observation fiber.
+
+Pseudo-exhaustive testing provides another incomparable parameterization. For
+a Boolean circuit whose output support hyperedges are \(k_o\subseteq I\), a
+test set \(T\) satisfies
+
+\[
+\pi_{k_o}(T)=\{0,1\}^{k_o}
+\]
+
+for every output. If \(w=\max_o|k_o|\), successively testing cones costs
+\(\sum_o2^{|k_o|}\), while shared global patterns can reduce that cost; the
+standard elementary bounds are \(2^w\le |T|\le |O|2^w\). Specialized work
+derives tighter generic and circuit-specific bounds. These are bounds on a
+concrete covering set for static supports, not on \(K\) semantic observations
+or their guard/residual output size. A mux cone contains both cases even when
+our enabled closure contains only one, so neither parameterization can be
+substituted for the other.
+
+## Hyperplane and activation-region special case
+
+When every selection site is a real affine sign test and every site is always
+observed, an observation is a total sign vector and its fibers are the
+full-dimensional cells of a hyperplane arrangement. Rada and Černý's
+incremental enumerator already gives
+
+\[
+  O(KQ\,lp(Q,D))
+\]
+
+time and polynomial working space, where \(D\) is input dimension and
+\(lp(Q,D)\) is the cost of a rational LP with the relevant coefficient bit
+size. This is an OutputP result for that restricted representation.
+
+Dense ReLU networks refine the arrangement layerwise. Existing algorithms
+enumerate feasible activation patterns by MILP, walk adjacent polyhedral
+cells while emitting affine residuals, extract the entire face complex, or
+parallelize bounded layerwise enumeration. Their bounds depend on the number
+of dense activation cells, network width/depth, LP or MIP cost, bounded-domain
+assumptions, and often genericity. Those results do not transfer unchanged to
+finite bitvector graphs, but they do establish the standard output-sensitive
+baseline for real all-sites-observed instances.
+
+The graph problem's additional parameter is not merely \(Q\): each record has
+an input-dependent domain of at most \(L\) observed sites, while unselected
+case subgraphs are absent. A comparison must therefore distinguish dense
+activation-cell output size from sparse observation/fiber/residual output
+size. No improvement over the hyperplane bound is claimed when all sites are
+observed.
+
+## Fixed-alphabet and state-product partition baselines
+
+Let \(P\) be a finite family of predicates. Exact Boolean-atom enumeration
+forms or implicitly searches up to
+
+\[
+2^{|P|}
+\]
+
+positive/negative combinations, retaining only satisfiable atoms. This is the
+baseline used by the SFSM property-testing construction of Huang, Krafczyk,
+and Peleska. Setting \(P\) to site-activity and outcome predicates makes each
+atom determine an observation, but atoms can refine observations when they
+retain truth coordinates the observation projects away. Aggregating atoms by
+observation can make the guard a disjunction whose serialized size is
+exponential even when \(K\) is small.
+
+The IOSTS IECP construction has a more structured but still exponential
+baseline. For state class \(i\), let \(r_i\) be its number of transition
+conditions and \(m_i\) the number of satisfiable disjoint local classes.
+Algorithm 1 searches at most \(2^{r_i}\) condition subsets. Algorithm 2
+searches at most
+
+\[
+\prod_i m_i
+\]
+
+cross-state products. Failed SMT prefixes prune entire subset/product
+subtrees, and transducer minimization can merge emitted classes, but neither
+changes the worst case. A one-state graph instrumentation avoids the
+cross-state product only by making the finite observation code available as
+the one-step behavior.
+
+These baselines sharpen the comparison required of any structure-directed
+algorithm. Reporting \(K+1\) model queries is insufficient: the paper must
+also show whether it avoids the fixed-alphabet atom space, avoids post hoc
+unions, or produces asymptotically smaller guards on a stated graph family.
 
 ## Full-fiber blocking
 

@@ -31,11 +31,22 @@ resolutions. Our selection outcomes are deterministic functions of the input.
 They are retained as instrumented structural observations even when ordinary
 values do not reveal them.
 
+The Fair Scheme makes the operational overlap closer. It places live graph
+expressions in a fair queue, performs only needed steps, and associates each
+queued expression with a finite choice-identifier fingerprint. Its formal
+theorem preserves the set of source values reachable by consistent
+computations from every simulated state. The extended paper explicitly leaves
+eventual production of every value as a strong-completeness conjecture, and the
+later dissertation does not add a separate numbered liveness theorem. It also
+emits values rather than fingerprints: distinct fingerprints may produce the
+same value, so neither duplicate-free projected enumeration nor exact input
+fibers follow.
+
 This difference suggests two semantic layers:
 
 1. eager deterministic value semantics for the pure graph; and
 2. a result-observation judgment producing a graph-relative map of outcomes for
-   sites active in that observation.
+   sites observed in that evaluation.
 
 The second layer must erase to the first. It cannot be called fully abstract
 for ordinary value contexts, because equal-valued selections are deliberately
@@ -50,6 +61,12 @@ distinguished.
 - Reusing a callee at two call sites needs distinct contextual occurrence names
   unless the intended observation explicitly merges them.
 - Memoization and any legal evaluation order must preserve the observation.
+- A proof relating Fair-Scheme fingerprints to graph occurrences must translate
+  dynamic computation-local choice identifiers to static context-qualified
+  occurrence names.
+- Needed reduction to constructor head normal form does not silently establish
+  strict pure-dataflow semantics; the encoding must preserve ordinary strict
+  operands, selective case edges, and requested roots.
 
 These are theorem obligations. They cannot be discharged by silently unfolding
 the graph into a tree.
@@ -62,3 +79,8 @@ rewriting, quantify contextual occurrence identity explicitly, and show the
 enabled-closure union law. Exporting every internal activity/outcome variable
 then reduces the problem to established selective interpretation and projected
 enumeration; it is a useful correspondence, not a new graph calculus.
+
+Multi-way selectors add a further accounting obligation. A binary pull-tab
+encoding may use several auxiliary choices for one source site and can increase
+the encoding size substantially; projection back to one source outcome and all
+complexity bounds must charge for that lowering explicitly.
