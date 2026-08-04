@@ -88,6 +88,9 @@ during reading are added in later rounds rather than silently changing this
 protocol. Non-replayable searches made before this rule was adopted remain in
 `exploratory-search-log.tsv` and are not used to claim saturation.
 
+The exact final no-add batches, their execution order, screening depth, and
+reopening rule are frozen in `closure-audit.md` before execution.
+
 ## Inclusion criteria
 
 Include a work when it makes a technical contribution to at least one research

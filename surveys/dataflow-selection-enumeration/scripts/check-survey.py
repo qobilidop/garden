@@ -42,6 +42,15 @@ SCREENING_HEADER = [
     "venue",
     "type",
 ]
+GENERIC_SCREENING_HEADER = [
+    "rank",
+    "source_id",
+    "year",
+    "doi",
+    "title",
+    "venue",
+    "type",
+]
 
 
 def rows(path: Path) -> tuple[list[str], list[dict[str, str]]]:
@@ -90,12 +99,15 @@ def main() -> int:
 
     for path in sorted((SURVEY / "screening").glob("*.tsv")):
         header, snapshot_rows = rows(path)
-        if header != SCREENING_HEADER:
+        if header not in (SCREENING_HEADER, GENERIC_SCREENING_HEADER):
             fail(f"unexpected screening header in {path.relative_to(ROOT)}: {header}")
         for rank, row in enumerate(snapshot_rows, start=1):
             if row["rank"] != str(rank):
                 fail(f"nonsequential rank in {path.relative_to(ROOT)}")
-            if not row["openalex_id"]:
+            identifier_field = (
+                "openalex_id" if header == SCREENING_HEADER else "source_id"
+            )
+            if not row[identifier_field]:
                 fail(f"missing identifier in {path.relative_to(ROOT)} row {rank + 1}")
 
     return 0

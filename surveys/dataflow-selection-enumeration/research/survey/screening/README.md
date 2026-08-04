@@ -19,10 +19,18 @@ bibliographic metadata. For example, its ECOOP 2024 record currently associates
 the compositional-symbolic-execution title with the wrong article DOI; the
 catalog and bibliography use the official Dagstuhl record.
 
-The files are generated through:
+OpenAlex citation-neighborhood and concept-query files are generated through:
 
 ```console
 ./dev.sh python3 scripts/openalex-screen.py ... --output research/survey/screening/NAME.tsv
+```
+
+The independent Crossref closure batch uses a second exporter with a
+source-neutral identifier column:
+
+```console
+./dev.sh python3 scripts/crossref-screen.py QUERY \
+  --limit 50 --output research/survey/screening/NAME.tsv
 ```
 
 No closure claim follows merely from the presence of snapshots. The protocol's
