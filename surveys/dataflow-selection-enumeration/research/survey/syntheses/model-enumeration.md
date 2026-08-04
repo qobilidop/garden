@@ -32,6 +32,26 @@ alternatives compute the same output.
 This distinction survives the reduction because `inactive` can simply be
 encoded as a sentinel. It therefore does not establish algorithmic novelty.
 
+## Output objects must be aligned
+
+The solver literature enumerates several non-equivalent objects:
+
+- a complete projected assignment fixes every relevant variable;
+- a short partial model is a cube all of whose extensions satisfy the formula;
+- a prime implicant is subset-minimal but need not be disjoint;
+- a disjoint partial cover may use several cubes for one semantic region; and
+- a BDD or d-DNNF is one shared compiled representation rather than a stream of
+  flat records.
+
+Complete assignments to inactive-or-outcome variables are in bijection with
+totalized selection observations. A short cube can omit one observation
+coordinate and represent several observations; it is not one fiber record.
+Möhle et al. prove termination, coverage, and contradiction of their shrunken
+cubes, but not OutputP, IncP, or polynomial delay. Lagniez and Lonca give
+linear post-compilation delay from d-DNNF, with compilation charged separately.
+Toda and Soh show that blocking, nonblocking, partial, and BDD AllSAT solvers
+also expose materially different output representations.
+
 ## Complexity baseline
 
 If there are `K` feasible observations, model-and-full-fiber-block enumeration
@@ -44,6 +64,13 @@ projected AllSMT that emits every complete totalized observation tuple; short
 partial cubes change the output object. Total solver work, serialized guards
 and residuals, compilation, and summary reuse—not merely invocation count—must
 distinguish an algorithm.
+
+Creignou et al.'s standard vocabulary is stricter: OutputP bounds total time in
+the input and serialized output; IncP bounds production of prefixes; DelayP
+bounds preprocessing, every delay, and final exhaustion in the input size. de
+Colnet and Marquis prove OutputP and IncP only when a decision-DNNF is already
+the input. No standard enumeration-class claim currently follows for records
+containing exact guards, residuals, and witnesses.
 
 ## Claims ruled out
 

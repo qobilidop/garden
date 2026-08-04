@@ -42,8 +42,8 @@ lagniez2024decisiondnnf	2024	model-enumeration	deep-read	critical	KR	https://doi
 antoy2000needed	2000	term-graphs	deep-read	critical	JACM	https://doi.org/10.1145/347476.347484	Optimal needed narrowing with soundness completeness and demand-guided evaluation	-
 boyer1975select	1975	symbolic-execution	screened	medium	Reliable Software	https://doi.org/10.1145/800027.808445	Early symbolic execution system and terminology	-
 darwiche2002knowledge	2002	knowledge-compilation	screened	high	JAIR	https://doi.org/10.1613/jair.989	Knowledge-compilation map and query-transformation tradeoffs	-
-moehle2025short	2025	model-enumeration	candidate	critical	Discrete Applied Mathematics	https://doi.org/10.1016/j.dam.2024.10.021	Complexity and algorithms for short projected models	-
-creignou2019enumeration	2019	enumeration-complexity	screened	high	Discrete Applied Mathematics	https://doi.org/10.1016/j.dam.2019.02.025	Output-sensitive complexity classes for hard enumeration problems	-
+moehle2025short	2025	model-enumeration	deep-read	critical	Discrete Applied Mathematics	https://doi.org/10.1016/j.dam.2024.10.021	Correct disjoint short projected model enumeration without a standard output-complexity theorem	-
+creignou2019enumeration	2019	enumeration-complexity	deep-read	high	Discrete Applied Mathematics	https://doi.org/10.1016/j.dam.2019.02.025	OutputP IncP DelayP and oracle-relative complexity for hard enumeration	-
 vanglabbeek2009configuration	2009	event-structures	screened	medium	Theoretical Computer Science	https://doi.org/10.1016/j.tcs.2009.06.014	Formal comparison of configuration structures event structures and Petri nets	-
 raymond1998lurette	1998	dataflow-testing	candidate	high	RTSS	https://doi.org/10.1109/REAL.1998.739746	Automatic testing of reactive synchronous systems with Lustre-based observers	-
 echahed2008termgraph	2008	term-graphs	candidate	high	ICGT	https://doi.org/10.1007/978-3-540-87405-8_7	Neededness and rewriting for inductively sequential term-graph systems	-
@@ -55,8 +55,8 @@ lahiri2007predicate	2007	model-enumeration	candidate	high	LMCS	https://doi.org/1
 salloum2023hardware	2023	hardware	excluded	medium	ACM Computing Surveys	https://doi.org/10.1145/3638046	Secondary discovery source for hardware directed test generation	E3-secondary
 lenet1998gradient	1998	machine-learning-graph	excluded	low	Proceedings of the IEEE	https://doi.org/10.1109/5.726791	False positive for symbolic evaluation of term graphs	E2-ml-graph-runtime
 ferrante1987pdg	1987	dataflow-analysis	excluded	low	TOPLAS	https://doi.org/10.1145/24039.24041	Program-dependence graph construction without the survey's symbolic observation object	E6-out-of-scope-model
-decolnet2022prime	2022	enumeration-complexity	candidate	critical	IJCAI	https://doi.org/10.24963/ijcai.2022/358	Complexity of enumerating prime implicants from decision-DNNF circuits	-
-toda2016allsat	2016	model-enumeration	candidate	high	ACM JEA	https://doi.org/10.1145/2975585	Practical algorithms and data structures for all-solutions SAT	-
+decolnet2022prime	2022	enumeration-complexity	deep-read	critical	IJCAI	https://doi.org/10.24963/ijcai.2022/358	OutputP and IncP algorithms for prime implicants when decision-DNNF is the input	-
+toda2016allsat	2016	model-enumeration	deep-read	high	ACM JEA	https://doi.org/10.1145/2975585	Blocking nonblocking partial-assignment and BDD AllSAT implementations	-
 torlak2014rosette	2014	merged-evaluation	candidate	high	PLDI	https://doi.org/10.1145/2666356.2594340	Reusable symbolic virtual machine underlying solver-aided host-language evaluation	-
 santos2020gillian	2020	compositional-symbolic-execution	candidate	high	PLDI	https://doi.org/10.1145/3385412.3386014	Parametric multi-language platform for compositional symbolic execution	-
 reisner2010configurable	2010	conditional-values	candidate	high	ICSE	https://doi.org/10.1145/1806799.1806864	Behavioral equivalence across configurations derived by symbolic evaluation	-
