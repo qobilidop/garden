@@ -7,6 +7,9 @@ import re
 import sys
 
 
+csv.field_size_limit(sys.maxsize)
+
+
 ROOT = Path(__file__).resolve().parent.parent
 SURVEY = ROOT / "research" / "survey"
 CATALOG_HEADER = [

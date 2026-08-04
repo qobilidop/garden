@@ -399,6 +399,22 @@ normal reconciliation and refreeze rule applies. Two no-add outcomes establish
 closure only for these captured rankings and the frozen trigger, not world
 literature completeness.
 
+## Outcome of round 16
+
+Round 16 is a no-add round under the frozen trigger. OpenAIRE's full-text search
+semantics returned zero records for eight exact queries and five total records
+for the other four. All five descriptions concern unrelated speculative
+symbolic syntheses or repository artifacts. This low capture is itself a
+limitation; it is not interpreted as evidence of absence.
+
+The incomplete Semantic Scholar attempt contributes a separately logged
+100-record policy-query supplement. Its title and abstract screen recovered
+only the already-cataloged Shin--Yang work; the remaining records concern
+ordinary reward shaping, reinforcement-learning optimization, policy training,
+or unrelated regional studies. No record changes the taxonomy or meets the
+choice-omission/quotient trigger beyond Shin--Yang. With those records
+reconciled, the precondition for executing round 17 is satisfied.
+
 ## Independent audit
 
 After both replacement rounds qualify, a reviewer who did not choose the
