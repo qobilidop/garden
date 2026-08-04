@@ -83,3 +83,8 @@ jain2001composition	2001	decision-diagrams	candidate	medium	IEEE Transactions on
 bollig1997partitioned	1997	decision-diagrams	candidate	medium	MFCS	https://doi.org/10.1007/BFb0029959	Complexity theory for partitioned deterministic and nondeterministic BDDs	-
 barendregt1987termgraph	1987	term-graphs	candidate	high	PARLE	https://doi.org/10.1007/3-540-17945-3_8	Foundational term-graph rewriting semantics for sharing	-
 loogen1993demand	1993	term-graphs	candidate	high	PLILP	https://doi.org/10.1007/3-540-57186-8_79	Demand-driven lazy narrowing preceding later needed term-graph semantics	-
+masina2025cnf	2025	model-enumeration	deep-read	critical	JAIR	https://doi.org/10.1613/jair.1.16870	CNF conversion can fragment short projected SAT and SMT enumeration outputs	-
+sebastiani2025entailment	2025	model-enumeration	deep-read	critical	CADE	https://doi.org/10.1007/978-3-031-99984-0_37	Semantic separation of verification and entailment for projected partial assignments	-
+fried2024entailing	2024	model-enumeration	candidate	high	SAT	https://doi.org/10.4230/LIPIcs.SAT.2024.13	Entailment-based generalization for compact circuit AllSAT covers	-
+lagniez2025preprocessing	2025	knowledge-compilation	candidate	medium	JELIA	https://doi.org/10.1007/978-3-032-04590-4_9	Preprocessing d-DNNF representations while preserving enumeration and query behavior	-
+civini2026theorylemma	2026	model-enumeration	candidate	medium	IJCAR	https://doi.org/10.1007/978-3-032-32589-1_18	SMT theory-lemma enumeration with a different output object from observation fibers	-
