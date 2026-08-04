@@ -1,0 +1,10 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1080/03081079.2022.2086542	2022	10.1080/03081079.2022.2086542	Colored Petri Nets-Based Control And Experimental Validation On Three-Tank System Level Control	International Journal Of General Systems	journal article
+2	10.1109/access.2020.2967342	2020	10.1109/access.2020.2967342	Genetic-Based Approach For Minimum Initial Marking Estimation In Labeled Petri Nets	IEEE Access	journal article
+3	10.1109/tsmc.2024.3357742	2024	10.1109/tsmc.2024.3357742	Minimum Initial Marking Estimation In Labeled Petri Nets With Unobservable Transitions Based On Minimal Explanations	IEEE Transactions On Systems, Man, And Cybernetics: Systems	journal article
+4	10.1080/00207179.2022.2121764	2022	10.1080/00207179.2022.2121764	Least-cost Transition Sequence Estimation In Labelled Time Petri Net Systems With Unobservable Transitions	International Journal Of Control	journal article
+5	10.1016/j.ins.2023.119922	2024	10.1016/j.ins.2023.119922	State Estimation In Labeled Time Petri Net Systems Using Observed Modified State Class Graph	Information Sciences	journal article
+6	10.1109/access.2019.2952056	2019	10.1109/access.2019.2952056	Estimation Of Least-Cost Transition Firing Sequences In Labeled Petri Nets By Using Basis Reachability Graph	Eğitim Ve Yeni Yaklaşımlar Dergisi	journal article
+7	10.1016/j.ins.2025.122618	2026	10.1016/j.ins.2025.122618	Minimum Initial State Estimation Of Labeled Time Petri Nets In The Presence Of Unobservable Transitions	Information Sciences	journal article
+8	10.1109/tac.2024.3510521	2025	10.1109/tac.2024.3510521	Minimum Initial Marking Estimation In Labeled Petri Nets Using Minimum Token Number Prediction	IEEE Transactions On Automatic Control	journal article
+9	10.1109/itsc48978.2021.9564609	2021	10.1109/itsc48978.2021.9564609	Traffic Network Modeling And Volume Control Using Labeled Petri Nets	2021 IEEE International Intelligent Transportation Systems Conference (ITSC)	proceedings article

@@ -1,0 +1,25 @@
+rank	source_id	year	doi	title	venue	type
+1	citation-1	2008		Introduction to Discrete Event Systems	Springer	book
+2	citation-2	2002		Observability of place/transition nets	IEEE Transactions on Automatic Control	journal article
+3	citation-3	2004		Observer-based state-feedback control of timed Petri nets with deadlock recovery	IEEE Transactions on Automatic Control	journal article
+4	citation-4	2005		Modelling opacity using Petri nets	Electronic Notes in Theoretical Computer Science	journal article
+5	citation-5	2007		Marking estimation of Petri nets with silent transitions	IEEE Transactions on Automatic Control	journal article
+6	citation-6	2013		Diagnosis using labeled Petri nets with silent or undistinguishable fault events	IEEE Transactions on Systems, Man, and Cybernetics: Systems	journal article
+7	citation-7	1998		Fault detection based on Petri net models with faulty behaviors	IEEE Conference on Systems, Man, and Cybernetics	conference paper
+8	citation-8	1999		An original Petri net state estimation by a reduced Luenberger observer	American Control Conference	conference paper
+9	citation-9	2005		Diagnosing PN-based models with partial observable transitions	International Journal of Computer Integrated Manufacturing	journal article
+10	citation-10	2009		Fault diagnosis in discrete event systems modeled by partially observed Petri nets	Discrete Event Dynamic Systems	journal article
+11	citation-11	2012		Diagnosis with Petri nets according to partial events and states observation	IFAC Fault Detection, Supervision and Safety of Technical Processes	conference paper
+12	citation-12	2014		On-line fault diagnosis with partially observed Petri nets	IEEE Transactions on Automatic Control	journal article
+13	citation-13	2013		General observation structures for Petri nets	IEEE Conference on Emerging Technologies and Factory Automation	conference paper
+14	citation-14	2014	10.3182/20140514-3-FR-4046.00060	Observation equivalence of Petri net generators	12th International Workshop on Discrete Event Systems	conference paper
+15	citation-15	2010		Fault detection for discrete event systems using Petri nets with unobservable transitions	Automatica	journal article
+16	citation-16	2015		Verification of current-state opacity using Petri nets	American Control Conference	conference paper
+17	citation-17	1989		Petri nets: Properties, analysis and applications	Proceedings of the IEEE	journal article
+18	citation-18	2013		Fault detection by labeled Petri nets in centralized and distributed approaches	IEEE Transactions on Automation Science and Engineering	journal article
+19	citation-19	2008		Fault diagnosis with dynamic observers	9th International Workshop on Discrete Event Systems	conference paper
+20	citation-20	2009		Supervisory control of discrete event systems modeled by Mealy automata with nondeterministic output functions	American Control Conference	conference paper
+21	citation-21	2011		On codiagnosability and coobservability with dynamic observations	IEEE Transactions on Automatic Control	journal article
+22	citation-22	2012		Robust diagnosis of discrete event systems against intermittent loss of observations	Automatica	journal article
+23	citation-23	2006		Graph Theory	Springer	book
+24	citation-24	2011		Graph Coloring Problems	John Wiley & Sons	book

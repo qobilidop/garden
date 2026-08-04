@@ -1,0 +1,52 @@
+rank	source_id	year	doi	title	venue	type
+1	2f31131724abb42b01a97aee27d9a8b3aaae747f	2026		Solving First-Order Fixed-Point Logics via a Least-to-Greatest Transformation Based on Game Semantics		
+2	97c6d8adf0984e34d8d6b55f2fdda8162d438590	2025	10.48550/arXiv.2508.12572	Reachability is Decidable for ATM-Typable Finitary PCF with Effect Handlers	Asian Symposium on Programming Languages and Systems	JournalArticle
+3	5d1c352e921a4ff5f4a98cf7bd0f2838ed5bb99e	2025	10.1145/3729333	Thrust: A Prophecy-Based Refinement Type System for Rust	Proc. ACM Program. Lang.	JournalArticle
+4	0a74dec52ac1e79dfb5ff06bc0a30a329bbaac6d	2024	10.1145/3674662	Automated Verification of Higher-Order Probabilistic Programs via a Dependent Refinement Type System	Proc. ACM Program. Lang.	JournalArticle
+5	720ad4853907126c7fdcd16cea442cec1cace833	2023	10.1145/3607831	Higher-Order Property-Directed Reachability	Proc. ACM Program. Lang.	JournalArticle
+6	a7ace22b044a94c8ea5c4b9c478a53ea796df246	2023	10.1145/3633280	Answer Refinement Modification: Refinement Type System for Algebraic Effects and Handlers	Proc. ACM Program. Lang.	JournalArticle
+7	32558b964c962812ac79ba6f0c09fb473fcbf7ee	2023	10.1145/3571199	HFL(Z) Validity Checking for Automated Program Verification	Proc. ACM Program. Lang.	JournalArticle
+8	68843900a0823bf49f21b5e325289adee16f0e55	2022	10.48550/arXiv.2203.07601	Automatic HFL(Z) Validity Checking for Program Verification	arXiv.org	JournalArticle
+9	b1e0a890833a0b0593722d106eb438d7f876271e	2021	10.4204/EPTCS.344.1	An Overview of the HFL Model Checking Project	HCVS@ETAPS	JournalArticle
+10	9dc90de7af90a59004a9ca3d2d9fd1aa03487344	2021	10.4230/LIPIcs.ECOOP.2021.18	Refinements of Futures Past: Higher-Order Specification with Implicit Refinement Types (Extended Version)	European Conference on Object-Oriented Programming	JournalArticle
+11	ed9e931d5562347af4ab40876c8ce512547170b8	2021	10.1049/CDT2.12024	Modelling and verification of parameterized architectures: A functional approach	IET Computers & Digital Techniques	JournalArticle
+12	417c623034a9b4673e40166cf4d94cc167dbe58a	2020	10.1145/3434300	Data flow refinement type inference	Proc. ACM Program. Lang.	JournalArticle
+13	48b57824c2148085c3487560aceff8d22be51ded	2019	10.15514/ispras-2019-31(5)-3	Automatic verification of heap-manipulating programs	Proceedings of the Institute for System Programming of RAS	JournalArticle
+14	df75a59246ac7ace201cd91f2a34474792fb5d99	2019	10.1109/LICS.2019.8785784	HoCHC: A Refutationally Complete and Semantically Invariant System of Higher-order Logic Modulo Theories	Logic in Computer Science	JournalArticle
+15	42fe5da0e92d7ac2bb3186921b1073b2c770ecda	2018		Defunctionalization of Higher-Order Constrained Horn Clauses	arXiv.org	JournalArticle
+16	028269314f0382ff6dabff661740596b8112c09a	2018	10.1145/3236950.3236969	Lazy Abstraction for Higher-Order Program Verification	ACM-SIGPLAN International Conference on Principles and Practice of Declarative Programming	Book
+17	9d70cacc8f86c2eee2e1b6496e31fd6f4c969d15	2018	10.1007/978-3-030-03592-1_15	Practical Methods for Reasoning About Java 8's Functional Programming Features	Verified Software: Theories, Tools, Experiments	JournalArticle
+18	f8ef2e029ff609cd4ff563be19f0fe619bfcd285	2018	10.1145/3209108.3209204	A Fixpoint Logic and Dependent Effects for Temporal Property Verification	Logic in Computer Science	JournalArticle
+19	c96be6dda4cfabe576504dbfa29883ce17f2bd1a	2018	10.1007/s10817-020-09571-y	ICE-Based Refinement Type Discovery for Higher-Order Functional Programs	Journal of automated reasoning	JournalArticle
+20	8fd0201a1042ea03e152da9431b01543c7af0ac0	2017	10.1145/3158099	Higher-order constrained horn clauses for verification	Proc. ACM Program. Lang.	JournalArticle
+21	2c24c55b397fbfe6ba9c043cbd32dd6df1d25dc0	2017	10.1145/3158100	Relatively complete refinement type system for verification of higher-order non-deterministic programs	Proc. ACM Program. Lang.	JournalArticle
+22	ff126734bef8d3631912b732dda01d1d84fdd9e5	2017	10.1007/978-3-319-89884-1_25	Higher-Order Program Verification via HFL Model Checking	European Symposium on Programming	JournalArticle
+23	e10d5d181f5c48e2d8184123171214193e880401	2017	10.1007/978-3-319-89366-2_31	Verifying Higher-Order Functions with Tree Automata	Foundations of Software Science and Computation Structure	JournalArticle
+24	bbf3fb53f1662b4bc446bf571140d00f99837106	2017	10.1145/3110270	Local refinement typing	Proc. ACM Program. Lang.	JournalArticle
+25	3a011c49755e922939730d10d232471dad4eca7d	2017		Higher-Order Constrained Horn Clauses and Refinement Types	arXiv.org	JournalArticle
+26	7393a8a614233a96e2536ff154cfb8065c950ec0	2017	10.1007/978-3-662-54434-1_31	Modular Verification of Higher-Order Functional Programs	European Symposium on Programming	JournalArticle
+27	c445f39a4590dfb21ea024cb88624904a9938c79	2017	10.1145/3009837.3009854	On the relationship between higher-order recursion schemes and higher-order fixpoint logic	ACM-SIGACT Symposium on Principles of Programming Languages	JournalArticle
+28	92a3c87c6bd6deb9cce948410a6ed4f1bfbdb65a	2016	10.1145/2951913.2951919	Automatically disproving fair termination of higher-order functional programs	ACM SIGPLAN International Conference on Functional Programming	JournalArticle
+29	f16eee4f0159101099be716faf82dd4a7f9eddcd	2016	10.1145/2837614.2837667	Temporal verification of higher-order functional programs	ACM-SIGACT Symposium on Principles of Programming Languages	Book
+30	b363cea2e7e0a86762c7ca759bccd40f38c0a6d5	2015	10.1145/2784731.2784766	Learning refinement types	ACM SIGPLAN International Conference on Functional Programming	JournalArticle
+31	0042767da200251d106212f7e8f1e8eeddf971bc	2015	10.1007/978-3-319-21668-3_17	Predicate Abstraction and CEGAR for Disproving Termination of Higher-Order Functional Programs	International Conference on Computer Aided Verification	JournalArticle
+32	13ded9c00933c12d4f81c4a754b8b44d19940956	2015	10.1145/2784731.2784745	Bounded refinement types	ACM SIGPLAN International Conference on Functional Programming	JournalArticle
+33	aa3fc4bb6658fac4fcc64da2c193824e599811b7	2015	10.1007/978-3-662-48288-9_12	Refinement Type Inference via Horn Constraint Optimization	Sensors Applications Symposium	JournalArticle
+34	58bd21ee870719c60c98f17940201885b67d4d52	2015	10.1007/978-3-662-46681-0_10	Inferring Simple Solutions to Recursion-Free Horn Clauses via Sampling	International Conference on Tools and Algorithms for Construction and Analysis of Systems	JournalArticle
+35	68b240b0a6723d043ab4e1c92b8c9474ed8b98b5	2015	10.1007/978-3-662-46669-8_25	Relaxed Stratification: A New Approach to Practical Complete Predicate Refinement	European Symposium on Programming	JournalArticle
+36	2d4695e488442dd1a9ac2915137c368294ebe971	2015	10.1145/2678015.2682546	Verifying Relational Properties of Functional Programs by First-Order Refinement	Science of Computer Programming	JournalArticle
+37	a65bb4026371e527bd897ef9abed5d24024138c3	2015		Closing the Gap - Formally Verifying Dynamically Typed Programs like Statically Typed Ones Using Hoare Logic - Extended Version -	arXiv.org	JournalArticle
+38	1757258f36496dcd3f39aab5900f24cde8aa9128	2014	10.1007/s10703-014-0219-7	On recursion-free Horn clauses and Craig interpolation	Formal methods in system design	JournalArticle
+39	b41cfa5771cd4140a8c2788bb3c975c3ef682666	2014	10.1007/978-3-319-15075-8_7	Towards Completeness in Bounded Model Checking Through Automatic Recursion Depth Detection	Brazilian Symposium on Formal Methods	JournalArticle
+40	6aeef60217a5e3378f2b4a4ded3819789d10b5b3	2014	10.1145/2603088.2603138	Local temporal reasoning	CSL-LICS	JournalArticle
+41	fd784733f814a1f4c49fa4e416b7762d15600b42	2014	10.1007/978-3-642-54833-8_21	Automatic Termination Verification for Higher-Order Functional Programs	European Symposium on Programming	JournalArticle
+42	31baa5c21ae23c6ac328e55877f721b43f804cac	2014		From Safety To Termination And Back: SMT-Based Verification For Lazy Languages	arXiv.org	JournalArticle
+43	b639250d3e56ebe7f5c69cab1f1bb323e70bbc68	2013		Higher-order Program Verification as Satisfiability Modulo Theories with Algebraic Data-types	arXiv.org	JournalArticle
+44	a79272ef3219b85de2c45f379ba9e02f3375038d	2013	10.1007/978-3-642-39799-8_24	Disjunctive Interpolants for Horn-Clause Verification (Extended Technical Report)	International Conference on Computer Aided Verification	JournalArticle
+45	54461bb55ae3b356e02ef7adbf78f7eabcf2804e	2018		P L ] 1 6 M ay 2 01 5 Refinement Type Inference via Horn Constraint Optimization		
+46	1948f008f2a47313f66c6597caf8ff1408c50e1f	2018		Resolution for Higher-Order Constrained Horn Clauses submitted		
+47	03a73b79d4a5b28f61391cbbd1237cb655569236	2016		Automating Verification of Functional Programs with Quantified Invariants		
+48	e6526d7482152666eab151edac7dea003bd5da85	2016		Learning Program Specifications from Sample Runs		
+49	d817cec7a07e0754d51f3f6c4865d27c57799c17	2015	10.2197/ipsjjip.23.827	Refinement Type Checking via Assertion Checking	Journal of Information Processing	JournalArticle
+50	6dd1880ce3e9fc8275070cffbc65a0b010179370	2014		Higher-order model checking with traversals		
+51	27c4e516b52f831f2918727e2cb3b801688f84ee		10.15514/ispras	Proceedings of the Institute for System Programming of the RAS		

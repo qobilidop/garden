@@ -1,0 +1,7 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1109/sc.2018.00066	2018	10.1109/sc.2018.00066	Detecting MPI Usage Anomalies Via Partial Program Symbolic Execution	SC18: International Conference for High Performance Computing, Networking, Storage and Analysis	proceedings article
+2	10.1007/978-3-030-30942-8_27	2019	10.1007/978-3-030-30942-8_27	Concolic Testing Heap-Manipulating Programs	Lecture Notes in Computer Science	book chapter
+3	10.1007/978-3-030-31784-3_12	2019	10.1007/978-3-030-31784-3_12	Enhancing Symbolic Execution of Heap-Based Programs With Separation Logic for Test Input Generation	Automated Technology for Verification and Analysis	book chapter
+4	10.1145/3183440.3194964	2018	10.1145/3183440.3194964	Testing Heap-Based Programs With Java StarFinder	ICSE Companion	proceedings article
+5	10.4230/lipics.ecoop.2023.19	2023	10.4230/lipics.ecoop.2023.19	Exact Separation Logic (Extended Version)	ECOOP 2023	journal article
+6	unresolved-record-6	2023				

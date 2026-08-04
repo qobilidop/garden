@@ -1,0 +1,101 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1007/978-3-658-12680-3_4	2016	10.1007/978-3-658-12680-3_4	Dynamic Partial Order Reduction in Stateful Model Checking	Complete Symbolic Simulation of SystemC Models	book-chapter
+2	10.1007/978-3-658-12680-3_3	2016	10.1007/978-3-658-12680-3_3	Static Partial Order Reduction in Stateful Model Checking	Complete Symbolic Simulation of SystemC Models	book-chapter
+3	10.1007/978-3-642-02658-4_31	2009	10.1007/978-3-642-02658-4_31	Monotonic Partial Order Reduction: An Optimal Symbolic Partial Order Reduction Technique	Lecture Notes in Computer Science	book-chapter
+4	10.1007/0-387-23905-7_12	None	10.1007/0-387-23905-7_12	Hierarchical Symbolic Analysis and Hierarchical Model Order Reduction	Symbolic Analysis and Reduction of VLSI Circuits	book-chapter
+5	10.1007/0-387-23905-7_3	None	10.1007/0-387-23905-7_3	Model-Order Reduction	Symbolic Analysis and Reduction of VLSI Circuits	book-chapter
+6	10.1109/rtas54340.2022.00018	2022	10.1109/rtas54340.2022.00018	Partial-Order Reduction for Schedule-Abstraction-based Response-Time Analyses of Non-Preemptive Tasks	2022 IEEE 28th Real-Time and Embedded Technology and Applications Symposium (RTAS)	proceedings-article
+7	10.1017/s1755020319000418	2019	10.1017/s1755020319000418	FIRST-ORDER POSSIBILITY MODELS AND FINITARY COMPLETENESS PROOFS	The Review of Symbolic Logic	journal-article
+8	10.1023/a:1025824903683	2003	10.1023/a:1025824903683	Path Dependent Analysis of Logic Programs	Higher-Order and Symbolic Computation	journal-article
+9	10.1023/a:1019964114625	2002	10.1023/a:1019964114625	A Formalised Proof of the Soundness and Completeness of a Simply Typed Lambda-Calculus with Explicit Substitutions	Higher-Order and Symbolic Computation	journal-article
+10	10.1023/a:1010043619517	1999	10.1023/a:1010043619517	Partial Evaluation of Computation Process, Revisited	Higher-Order and Symbolic Computation	journal-article
+11	10.1017/s1755020324000121	2025	10.1017/s1755020324000121	STRONG COMPLETENESS OF A FIRST-ORDER TEMPORAL LOGIC FOR REAL TIME	The Review of Symbolic Logic	journal-article
+12	10.1023/a:1010004307057	1999	10.1023/a:1010004307057	Partial Evaluation of the Euclidean Algorithm, Revisited	Higher-Order and Symbolic Computation	journal-article
+13	10.1017/s1755020318000229	2018	10.1017/s1755020318000229	COMPLETENESS OF SECOND-ORDER PROPOSITIONAL S4 AND H IN TOPOLOGICAL SEMANTICS	The Review of Symbolic Logic	journal-article
+14	10.1023/a:1026551132647	2000	10.1023/a:1026551132647	Glossary for Partial Evaluation and Related Topics	Higher-Order and Symbolic Computation	journal-article
+15	10.70675/f5fc5032zc27dz4fffza3cbzd9a01566f10d	None	10.70675/f5fc5032zc27dz4fffza3cbzd9a01566f10d	Partial order reduction for timed systems		dissertation
+16	10.2307/2270290	1971	10.2307/2270290	A Weak Completeness Theorem for Infinite Valued First-Order Logic.	The Journal of Symbolic Logic	journal-article
+17	10.1023/b:lisp.0000029447.02190.42	2004	10.1023/b:lisp.0000029447.02190.42	Cost-Augmented Partial Evaluation of Functional Logic Programs	Higher-Order and Symbolic Computation	journal-article
+18	10.2307/2586575	2000	10.2307/2586575	A completeness theorem for higher order logics	Journal of Symbolic Logic	journal-article
+19	10.1007/978-1-4615-3190-6_9	1993	10.1007/978-1-4615-3190-6_9	A Partial Order Approach	Symbolic Model Checking	book-chapter
+20	10.2307/2586766	1999	10.2307/2586766	Intuitionistic completeness for first order classical logic	Journal of Symbolic Logic	journal-article
+21	10.1023/a:1023063919574	2003	10.1023/a:1023063919574	Universal Regular Path Queries	Higher-Order and Symbolic Computation	journal-article
+22	10.2307/2267044	1949	10.2307/2267044	The completeness of the first-order functional calculus	Journal of Symbolic Logic	journal-article
+23	10.2178/jsl/1058448436	2003	10.2178/jsl/1058448436	The completeness of Heyting first-order logic	Journal of Symbolic Logic	journal-article
+24	10.1007/978-3-642-20398-5_43	2011	10.1007/978-3-642-20398-5_43	Milestones: A Model Checker Combining Symbolic Model Checking and Partial Order Reduction	Lecture Notes in Computer Science	book-chapter
+25	10.2307/2586693	2000	10.2307/2586693	Topological completeness for higher-order logic	Journal of Symbolic Logic	journal-article
+26	10.1007/978-3-642-20398-5_29	2011	10.1007/978-3-642-20398-5_29	Combining Partial-Order Reduction and Symbolic Model Checking to Verify LTL Properties	Lecture Notes in Computer Science	book-chapter
+27	10.1023/a:1010095604496	1999	10.1023/a:1010095604496	Partial Evaluation of Computation Process--An Approach to a Compiler-Compiler	Higher-Order and Symbolic Computation	journal-article
+28	10.1023/a:1010072901408	1999	10.1023/a:1010072901408	An Early Use of Continuations and Partial Evaluation for Compiling Rules Written in First-Order Predicate Calculus	Higher-Order and Symbolic Computation	journal-article
+29	10.1023/a:1012992731199	2001	10.1023/a:1012992731199	The Second Futamura Projection for Type-Directed Partial Evaluation	Higher-Order and Symbolic Computation	journal-article
+30	10.1023/a:1012984529382	2001	10.1023/a:1012984529382	A Hybrid Approach to Online and Offline Partial Evaluation	Higher-Order and Symbolic Computation	journal-article
+31	10.1007/11560548_25	2005	10.1007/11560548_25	Symbolic Partial Order Reduction for Rule Based Transition Systems	Lecture Notes in Computer Science	book-chapter
+32	10.36227/techrxiv.177004074.49683474/v1	2026	10.36227/techrxiv.177004074.49683474/v1	Asymptotic Symbolic Completeness Beyond Finite Provability		posted-content
+33	10.2307/2268460	1950	10.2307/2268460	Leon Henkin. The completeness of the first-order functional calculus. The journal of symbolic logic, Bd. 14 (1949), 159–166.	Journal of Symbolic Logic	journal-article
+34	10.2307/2274763	1989	10.2307/2274763	Creativeness and completeness in recursion categories of partial recursive operators	Journal of Symbolic Logic	journal-article
+35	10.2307/2267911	1951	10.2307/2267911	Axiom Schemes for m-Valued Functional Calculi of First Order. Part II. Deductive Completeness.	The Journal of Symbolic Logic	journal-article
+36	10.1023/a:1008767206905	2001	10.1023/a:1008767206905	Partial-Order Reduction in Symbolic State-Space Exploration	Formal Methods in System Design	journal-article
+37	10.1006/jsco.2001.0509	2002	10.1006/jsco.2001.0509	Size Reduction and Partial Decoupling of Systems of Equations	Journal of Symbolic Computation	journal-article
+38	10.7763/ijmo.2014.v4.380	2014	10.7763/ijmo.2014.v4.380	Partial Order Reduction for Verification of WS-BPEL	International Journal of Modeling and Optimization	journal-article
+39	10.1007/3-540-63166-6_34	1997	10.1007/3-540-63166-6_34	Partial-order reduction in symbolic state space exploration	Lecture Notes in Computer Science	book-chapter
+40	10.26226/morressier.604907f51a80aac83ca25d7e	2021	10.26226/morressier.604907f51a80aac83ca25d7e	Partial Order Reduction for Deep Bug Finding in Synchronous Hardware		posted-content
+41	10.2307/2266274	1952	10.2307/2266274	Alan Rose. Strong completeness of fragments of the propositional calculus. The journal of symbolic logic, vol. 16 (1951), p. 204. - Alan Rose. The degree of completeness of a partial system of the 2-valued Propositional Calculus. Mathematische Zeitschrift, vol. 54 (1951), pp. 181–183.	Journal of Symbolic Logic	journal-article
+42	10.1007/s10990-012-9083-6	2011	10.1007/s10990-012-9083-6	Path resolution for nested recursive modules	Higher-Order and Symbolic Computation	journal-article
+43	10.1016/j.jsc.2011.12.041	2012	10.1016/j.jsc.2011.12.041	Serre’s reduction of linear partial differential systems with holonomic adjoints	Journal of Symbolic Computation	journal-article
+44	10.70675/138dc2a5zc12az40e9zab61zddbb416de5a2	None	10.70675/138dc2a5zc12az40e9zab61zddbb416de5a2	Stateful partial-order reduction methods for concurrent systems with blocking instructions		dissertation
+45	10.2307/2271335	1963	10.2307/2271335	A weak completeness theorem for infinite valued first-order logic	Journal of Symbolic Logic	journal-article
+46	10.1109/apsec.2014.49	2014	10.1109/apsec.2014.49	A Symbolic Partial Order Method for Verifying SystemC	2014 21st Asia-Pacific Software Engineering Conference	proceedings-article
+47	10.2178/jsl/1264433914	2010	10.2178/jsl/1264433914	A proof of completeness for continuous first-order logic	The Journal of Symbolic Logic	journal-article
+48	10.1017/jsl.2014.19	2015	10.1017/jsl.2014.19	A HENKIN-STYLE PROOF OF COMPLETENESS FOR FIRST-ORDER ALGEBRAIZABLE LOGICS	The Journal of Symbolic Logic	journal-article
+49	10.26226/morressier.604907f51a80aac83ca25d72	2021	10.26226/morressier.604907f51a80aac83ca25d72	The Inconsistent Labelling Problem of Stutter-Preserving Partial-Order Reduction		posted-content
+50	10.1007/978-3-319-10575-8_6	2018	10.1007/978-3-319-10575-8_6	Partial-Order Reduction	Handbook of Model Checking	book-chapter
+51	10.21203/rs.3.rs-3257081/v1	2023	10.21203/rs.3.rs-3257081/v1	Dynamic Partial Order Reduction Based on Interference Solution		posted-content
+52	10.1017/s1755020314000148	2014	10.1017/s1755020314000148	ON THE WAY TO A WIDER MODEL THEORY: COMPLETENESS THEOREMS FOR FIRST-ORDER LOGICS OF FORMAL INCONSISTENCY	The Review of Symbolic Logic	journal-article
+53	10.1007/978-3-031-66391-8_5	2024	10.1007/978-3-031-66391-8_5	Symbolic Model Order Reduction Using Perturbation Analysis	Tapered Beams in MEMS	book-chapter
+54	10.1007/s10009-019-00507-5	2019	10.1007/s10009-019-00507-5	Combining sequentialization-based verification of multi-threaded C programs with symbolic Partial Order Reduction	International Journal on Software Tools for Technology Transfer	journal-article
+55	10.14492/hokmj/1381517805	1988	10.14492/hokmj/1381517805	Completeness of the reduction of scalar, meromorphic differential equations of second order	Hokkaido Mathematical Journal	journal-article
+56	10.1007/978-3-319-15201-1_20	2015	10.1007/978-3-319-15201-1_20	Path-Sensitive Race Detection with Partial Order Reduced Symbolic Execution	Lecture Notes in Computer Science	book-chapter
+57	10.1006/jsco.1994.1002	1994	10.1006/jsco.1994.1002	Completeness of Combinations of Conditional Constructor Systems	Journal of Symbolic Computation	journal-article
+58	10.1016/s0079-8169(08)61521-4	1975	10.1016/s0079-8169(08)61521-4	18 Reduction of Higher Order Systems to First-Order Systems	Pure and Applied Mathematics	book-chapter
+59	10.31489/2026m2/182-192	2026	10.31489/2026m2/182-192	Fractal completeness and compactness in first-order model theory	Bulletin of the Karaganda University-Mathematics	journal-article
+60	10.1145/3603288.3603296	2024	10.1145/3603288.3603296	Approximate Partial Order Reduction	Formal Methods for Safe Autonomy	book-chapter
+61	10.1006/jsco.1993.1024	1993	10.1006/jsco.1993.1024	Completeness of Combinations of Constructor Systems	Journal of Symbolic Computation	journal-article
+62	10.1145/143242.143265	1992	10.1145/143242.143265	Reduction and completion algorithms for partial differential equations	Papers from the international symposium on Symbolic and algebraic computation  - ISSAC '92	proceedings-article
+63	10.26226/morressier.604907f51a80aac83ca25d81	2021	10.26226/morressier.604907f51a80aac83ca25d81	Partial-Order Reduction for Parity Games with an Application on Parameterised Boolean Equation Systems		posted-content
+64	10.5040/9781666996302.ch-1	2019	10.5040/9781666996302.ch-1	Schematic and Symbolic Hypotyposis	Hypotyposis in Kant's Metaphysics of Judgment	other
+65	10.1017/s1755020319000212	2020	10.1017/s1755020319000212	INCOMPLETENESS VIA PARADOX AND COMPLETENESS	The Review of Symbolic Logic	journal-article
+66	10.1016/s0304-3975(02)00731-4	2003	10.1016/s0304-3975(02)00731-4	Simple proof of the completeness theorem for second-order classical and intuitionistic logic by reduction to first-order mono-sorted logic	Theoretical Computer Science	journal-article
+67	10.1109/bmas.2008.4751251	2008	10.1109/bmas.2008.4751251	Scalable Symbolic Model Order Reduction	2008 IEEE International Behavioral Modeling and Simulation Workshop	proceedings-article
+68	10.3726/978-3-0351-0787-6/18	None	10.3726/978-3-0351-0787-6/18	Chapter 5: Completeness of the Artwork: Order, Beauty, Autonomy	Aestheticism	book-chapter
+69	10.2307/2270291	1971	10.2307/2270291	L. P. Belluce and C. C. Chang. A weak completeness theorem for infinite valued first-order logic. The journal of symbolic logic, vol. 28 no. 1 (for 1963, pub. 1964), pp. 43–50.	Journal of Symbolic Logic	journal-article
+70	10.2139/ssrn.5386055	2025	10.2139/ssrn.5386055	On the Completeness of Measurability in Feynman Path Integral		posted-content
+71	10.1090/dimacs/029/13	1997	10.1090/dimacs/029/13	Partial order reduction: Linear and branching temporal logics and process algebras	DIMACS Series in Discrete Mathematics and Theoretical Computer Science	book-chapter
+72	10.1007/s10990-014-9103-9	2013	10.1007/s10990-014-9103-9	On graph rewriting, reduction, and evaluation in the presence of cycles	Higher-Order and Symbolic Computation	journal-article
+73	10.1109/bmas.2003.1249854	None	10.1109/bmas.2003.1249854	Symbolic model order reduction	Proceedings of the 2003 IEEE International Workshop on Behavioral Modeling and Simulation	proceedings-article
+74	10.2307/2586681	1998	10.2307/2586681	Errata: A Solution to the Completeness Problem for Weakly Aggregative Modal Logic	The Journal of Symbolic Logic	journal-article
+75	10.1016/j.jsc.2011.12.016	2013	10.1016/j.jsc.2011.12.016	On simultaneous row and column reduction of higher-order linear differential systems	Journal of Symbolic Computation	journal-article
+76	10.1007/3-540-18420-1_58	1987	10.1007/3-540-18420-1_58	Controlling reduction partial order in functional parallel programs	Lecture Notes in Computer Science	book-chapter
+77	10.1007/s10990-006-0479-z	2006	10.1007/s10990-006-0479-z	Expressing combinatory reduction systems derivations in the rewriting calculus	Higher-Order and Symbolic Computation	journal-article
+78	10.1007/978-3-642-60218-4_7	1999	10.1007/978-3-642-60218-4_7	Symbolic Derivation of Different Class of High-order Compact Schemes for Partial Differential Equations	Computer Algebra in Scientific Computing CASC’99	book-chapter
+79	10.1109/mwscas.1999.867770	None	10.1109/mwscas.1999.867770	A symbolic method for network function approximation with order reduction	42nd Midwest Symposium on Circuits and Systems (Cat. No.99CH36356)	proceedings-article
+80	10.23919/ecc.1999.7099732	1999	10.23919/ecc.1999.7099732	Order reduction with partial ARMA-modeling	1999 European Control Conference (ECC)	proceedings-article
+81	10.1017/s0022481200100611	1951	10.1017/s0022481200100611	J. B. Rosser and A. R. Turquette. Axiom schemes for m-valued functional calculi of first order. Part II. Deductive completeness. The journal of symbolic logic, vol. 16 (1951), pp. 22–34. See <i>Errata</i>, ibid., p. iv.	Journal of Symbolic Logic	journal-article
+82	10.2307/2272296	1975	10.2307/2272296	Completeness in Finite Algebras with a Single Operation.	The Journal of Symbolic Logic	journal-article
+83	10.1007/bfb0020842	None	10.1007/bfb0020842	Completeness	Lecture Notes in Computer Science	book-chapter
+84	10.1016/j.padiff.2022.100465	2023	10.1016/j.padiff.2022.100465	A generalized dispersive water waves system: Conservation laws; symmetry reduction; travelling wave solutions; symbolic computation	Partial Differential Equations in Applied Mathematics	journal-article
+85	10.1017/s1755020322000132	2024	10.1017/s1755020322000132	TABULARITY AND POST-COMPLETENESS IN TENSE LOGIC	The Review of Symbolic Logic	journal-article
+86	10.1007/bf02437661	2002	10.1007/bf02437661	A symbolic computation method to decide the completeness of the solutions to the system of linear partial differential equations	Applied Mathematics and Mechanics	journal-article
+87	10.2307/2963713	1962	10.2307/2963713	Simon Kochen. Completeness of algebraic systems in higher order calculi. Summaries of talks presented at the Summer Institute for Symbolic Logic, Cornell University, 1957, 2nd edn., Communications Research Division, Institute for Defense Analyses, Princeton, N.J., 1960, pp. 370–376.	Journal of Symbolic Logic	journal-article
+88	10.1017/s1755020319000236	2019	10.1017/s1755020319000236	VARIETIES OF POSITIVE MODAL ALGEBRAS AND STRUCTURAL COMPLETENESS	The Review of Symbolic Logic	journal-article
+89	10.1007/bf01419577	1972	10.1007/bf01419577	Relationship between order completeness and topological completeness	Mathematische Annalen	journal-article
+90	10.1007/3-7643-7429-2_12	None	10.1007/3-7643-7429-2_12	Algorithmic Reduction and Rational General Solutions of First Order Algebraic Differential Equations	Trends in Mathematics	book-chapter
+91	10.1023/a:1010006229549	2000	10.1023/a:1010006229549	Higher-Order UnCurrying	Higher-Order and Symbolic Computation	journal-article
+92	10.2307/2271549	1971	10.2307/2271549	Equational Completeness and Families of Sets Closed Under Subtraction.	The Journal of Symbolic Logic	journal-article
+93	10.2307/2267915	1951	10.2307/2267915	On the Semantic Non-Completeness of Certain Lewis Calculi.	The Journal of Symbolic Logic	journal-article
+94	10.1016/s0747-7171(08)80130-7	1991	10.1016/s0747-7171(08)80130-7	Using forcing to prove completeness of resolution and paramodulation	Journal of Symbolic Computation	journal-article
+95	10.1007/s10990-005-7008-3	2005	10.1007/s10990-005-7008-3	Derivation of Efficient Logic Programs by Specialization and Reduction of Nondeterminism	Higher-Order and Symbolic Computation	journal-article
+96	10.1016/j.padiff.2023.100553	2023	10.1016/j.padiff.2023.100553	Corrigendum to “A generalized dispersive water waves system: Conservation laws; symmetry reduction; travelling wave solutions; symbolic computation” [Partial Differ. Equ. Appl. Math. 7 (2023) 100465]	Partial Differential Equations in Applied Mathematics	journal-article
+97	10.1016/s0747-7171(19)80003-2	1992	10.1016/s0747-7171(19)80003-2	A General Refutational Completeness Result for an Inference Procedure Based on Associative-Commutative Unification	Journal of Symbolic Computation	journal-article
+98	10.1080/03605309108820799	1991	10.1080/03605309108820799	Reduction of order for pseudodifferential operators on lipschitz domains	Communications in Partial Differential Equations	journal-article
+99	10.1017/s1755020318000199	2019	10.1017/s1755020318000199	COMPLETENESS FOR <i>COUNTER-DOXA</i> CONDITIONALS – USING RANKING SEMANTICS	The Review of Symbolic Logic	journal-article
+100	10.3390/applmech6010013	2025	10.3390/applmech6010013	A Reduction-Based Approach to Improving the Estimation Consistency of Partial Path Contributions in Operational Transfer-Path Analysis	Applied Mechanics	journal-article

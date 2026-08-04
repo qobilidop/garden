@@ -83,6 +83,19 @@ values that induce the same selector outcome and can enumerate values where
 our residual remains symbolic. Structural observation, concrete forcing, and
 logical relevance are consequently three different omission rules.
 
+Heap symbolic execution supplies a stronger conditional-value predecessor.
+Symbolic initialization places null, fresh-object, alias, and uninitialized
+possibilities in guarded value sets inside one heap instead of forking the
+generalized-symbolic-execution (GSE) tree; a bisimulation proves exactly the
+same feasible control-flow sequences
+@hillery2016heap. POSE later represents alias alternatives with `ite`-valued
+fields and empirically targets one symbolic trace per program path
+@braione2026pose. Its authors explicitly leave formal soundness and
+completeness relative to GSE open, so the construction and experiments must not
+be upgraded to an equivalence theorem. Both works establish up-front merging
+of conditional input structure, but partition by program control rather than
+the requested selection observer.
+
 State-space and exploration quotients provide two further boundaries. The
 well-formed colored-net symbolic-reachability lineage begins at least with the
 1991 construction and its expanded journal treatment: it groups markings by
@@ -110,6 +123,24 @@ the reduced symbolic semantics relative to concrete multithreaded executions
 fibers; approximate POR makes that boundary explicit by parameterizing
 approximately commuting actions and nearby initial states @fan2018approxpor.
 
+More directly, optimal DPOR with observers makes dependencies conditional on
+future reads or receives, covers every maximal observational-equivalence class,
+and emits no equivalent maximal schedules twice @aronis2018observers. Its
+context-sensitive journal successor combines that observer relation with
+state-relative commutation and reports exponential reductions over either
+ingredient alone @albert2023dpor. Thus exact observer-relative omission and
+duplicate-free enumeration are established even beyond ordinary independence;
+the quotient coordinate is still a concurrent schedule, not a caller input.
+Reads-from and reads-value-from quotients sharpen the observation dimension:
+they retain a representative according to which value a read sees, with the
+latter sometimes exponentially coarser while preserving local-safety coverage
+@abdulla2019readsfrom @agarwal2021rvf. Canonical symbolic configurations can
+also group distributed states and interleavings together @pick2023psym.
+Dynamic cone-of-influence reduction is closer to a requested-observer
+criterion because relevance changes with the checked property, state, and
+interleaving @telbisz2025coi; it preserves one property judgment rather than
+enumerating every observer value and inverse input fiber.
+
 Colored-net symbolic unfoldings provide another true-concurrency
 representation: they avoid materializing every independent-action interleaving
 and commute with component product @chatain2010factorization. Color quotienting
@@ -131,9 +162,29 @@ the later exact formulations @giua1997estimators. Fixed-structure linear
 constraints can characterize exactly the current markings consistent with an
 observed label word @giua2003marking @corona2003observers, while a related
 algorithm returns every minimum-total-token _initial_ marking consistent with
-that word @li2013minimum. Class-graph or hierarchical-basis constructions add
-timing or unobservable transitions @ghazel2009observer @ma2021hierarchical
-@aguirre2008observability. Sparse symbolic loop execution instead
+that word @li2013minimum. Contact-free silent transitions admit an exact
+fixed-structure linear characterization @giua2005state, and representative-
+marking graphs recover a complete consistency set from a smaller basis plus
+linear systems @ma2017representative. A reduced online observer goes further
+representationally: it enumerates only minimal explanations and basis markings,
+whose unobservable reach is exactly the complete current-marking estimate
+@jiroveanu2008monitoring. Contact-free silent transitions, minimal
+explanations, token-number prediction, and time-label constraints extend the
+minimum-initial-state line under different assumptions @ruan2019unobservable
+@yue2024minimal @yue2025prediction @li2026minimumstate. Observed state-class
+graphs and hierarchical bases address timed or silent current-state estimation
+@li2024timedstate @ghazel2009observer @ma2021hierarchical
+@aguirre2008observability; a later linear formulation returns the complete
+timed marking set without the full state-class graph @ma2020timedmarking, and a
+region observer treats timed automata with no event observation
+@gao2020noevent. A probabilistic variant weights the consistent marking set
+@cabasino2015probabilistic. A different observation model starts
+from measured places even when no transition firing is directly observed
+@arichi2026estimation. Finally, observation-equivalent Petri-net generators can
+replace marking outputs by adaptive labels while preserving exactly the
+consistent firing-sequence and marking sets @tong2016observation. These results
+make inverse-observation sets, compact exact representations, and observer
+compilation established concepts. Sparse symbolic loop execution instead
 observes sibling states' branch-edge patterns up to a loop-impact barrier and
 postpones repeated patterns @busse2024ssle. The former is a state quotient and
 the latter a coverage-oriented search heuristic. Neither is an exact partition
@@ -192,6 +243,9 @@ Earlier abstract subsumption already backtracks when a symbolic heap state is
 contained in a previously explored abstract state, obtaining finite but
 under-approximate exploration for recursive heaps and arrays
 @anand2006subsumption.
+Neighborhood graph abstraction uses the dual over-approximate setting: an
+abstract shape is discarded when another denotes a superset of its concrete
+graphs and covers its abstract behavior @zambon2012subsumption.
 The publisher abstract for dependency-derived compatible branch sets states
 sound omission of paths that add no branch coverage under a bounded exploration
 objective @yi2024compatible. An index abstract also reports multipoint DSE path
@@ -302,6 +356,13 @@ input fiber, but blocks a broad claim that canonical symbolic input search is
 new. An earlier verifier likewise gives sound proofs and counterexample-
 complete search for a terminating pure higher-order fragment by controlling
 dynamic dispatch and progressively unfolding functions @voirol2015counterexample.
+Earlier still, quantified refinement types establish sound relative
+completeness for higher-order functional safety, with a later system extending
+the result to universal and existential nondeterministic branching properties
+@unno2013relative @unno2018relative. The theoretical systems rely on relative
+first-order reasoning, while their automated inference procedures retain
+documented incompleteness. They prove or refute a property rather than enumerate
+the complete finite image of this paper's observer.
 
 Classical demand-driven dataflow is the direct fixed-input semantic precedent.
 Pingali and Arvind propagate requested output positions backward through a

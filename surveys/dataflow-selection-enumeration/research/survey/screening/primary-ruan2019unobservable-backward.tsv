@@ -1,0 +1,18 @@
+rank	source_id	year	doi	title	venue	type
+1	citation-1	2008		Introduction to Discrete Event Systems	Springer	book
+2	citation-2	1989		Petri nets: Properties, analysis and applications	Proceedings of the IEEE	journal article
+3	citation-3	2016		Hybrid Petri nets for modeling and analysis of microgrid systems	IEEE/CAA Journal of Automatica Sinica	journal article
+4	citation-4	2016		Emergency traffic-light control system design for intersections subject to accidents	IEEE Transactions on Intelligent Transportation Systems	journal article
+5	citation-5	2017		An improved approach to test diagnosability of bounded Petri nets	IEEE/CAA Journal of Automatica Sinica	journal article
+6	citation-6	2018		Polynomial approach to optimal one-wafer cyclic scheduling of treelike hybrid multi-cluster tools via Petri nets	IEEE/CAA Journal of Automatica Sinica	journal article
+7	10.1109/TSMC.2017.2732442	2017	10.1109/TSMC.2017.2732442	Supervisor synthesis for FMS based on critical activity places	IEEE Transactions on Systems, Man, and Cybernetics: Systems	journal article
+8	citation-8	2012		Deadlock prevention for a class of Petri nets with uncontrollable and unobservable transitions	IEEE Transactions on Systems, Man, and Cybernetics, Part A	journal article
+9	citation-9	2015		Marking estimation of P-time Petri nets with unobservable transitions	IEEE Transactions on Systems, Man, and Cybernetics: Systems	journal article
+10	citation-10	2013		State and firing sequence estimation of Petri net application to manufacturing systems	IEEE International Conference on Control, Decision and Information Technologies	conference paper
+11	citation-11	2004		Marking estimation of Petri nets with silent transitions	43rd IEEE Conference on Decision and Control	conference paper
+12	citation-12	2007		Marking estimation of Petri nets with silent transitions	IEEE Transactions on Automatic Control	journal article
+13	citation-13	2015		Probabilistic marking estimation in labeled Petri nets	IEEE Transactions on Automatic Control	journal article
+14	citation-14	1999		Petri net techniques for process planning cost estimation	Advances in Engineering Software	journal article
+15	citation-15	1997		A heuristic algorithm for the minimum initial marking problem of Petri nets	IEEE International Conference on Systems, Man, and Cybernetics	conference paper
+16	citation-16	2013		Minimum initial marking estimation in labeled Petri nets	IEEE Transactions on Automatic Control	journal article
+17	citation-17	2011		Least-cost transition firing sequence estimation in labeled Petri nets with unobservable transitions	IEEE Transactions on Automation Science and Engineering	journal article

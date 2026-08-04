@@ -1,0 +1,105 @@
+rank	source_id	year	doi	title	venue	type
+1	10.5220/0008362904240433	2019	10.5220/0008362904240433	Exact and Approximate Rule Extraction from Neural Networks with Boolean Features	Proceedings of the 11th International Joint Conference on Computational Intelligence	proceedings-article
+2	10.1049/cp:19991161	1999	10.1049/cp:19991161	Rule extraction from binary neural networks	9th International Conference on Artificial Neural Networks: ICANN '99	proceedings-article
+3	10.7287/peerj-cs.724v0.1/reviews/1	2021	10.7287/peerj-cs.724v0.1/reviews/1	"Peer Review #1 of ""Determining the number of hidden layer and hidden neuron of neural network for wind speed prediction (v0.1)"""		peer-review
+4	10.7287/peerj-cs.724v0.1/reviews/3	2021	10.7287/peerj-cs.724v0.1/reviews/3	"Peer Review #3 of ""Determining the number of hidden layer and hidden neuron of neural network for wind speed prediction (v0.1)"""		peer-review
+5	10.1109/tnn.2003.820669	2004	10.1109/tnn.2003.820669	A Boolean Hebb Rule for Binary Associative Memory Design	IEEE Transactions on Neural Networks	journal-article
+6	10.1109/ijcnn.1999.833457	None	10.1109/ijcnn.1999.833457	Rule extraction from Boolean artificial neural networks	IJCNN'99. International Joint Conference on Neural Networks. Proceedings (Cat. No.99CH36339)	proceedings-article
+7	10.22541/au.173990736.62275159/v1	2025	10.22541/au.173990736.62275159/v1	A Boolean Algebra Based Rule Extraction Algorithm That Extracts If-then Classification Rules from Threelayer Neural Networks with General Inputs		posted-content
+8	10.7287/peerj-cs.724v0.1/reviews/2	2021	10.7287/peerj-cs.724v0.1/reviews/2	"Peer Review #2 of ""Determining the number of hidden layer and hidden neuron of neural network for wind speed prediction (v0.1)"""		peer-review
+9	10.36227/techrxiv.22122200	2023	10.36227/techrxiv.22122200	A Boolean Algebra Based Rule Extraction Algorithm That Extracts If-then Classification Rules from Three-layer Neural Networks with General Inputs		posted-content
+10	10.1109/ijcnn.2013.6706823	2013	10.1109/ijcnn.2013.6706823	A new approach to three ensemble neural network rule extraction using recursive-rule extraction algorithm	The 2013 International Joint Conference on Neural Networks (IJCNN)	proceedings-article
+11	10.1109/ijcnn.2006.1716332	None	10.1109/ijcnn.2006.1716332	Greedy rule generation from discrete data and its use in neural network rule extraction	The 2006 IEEE International Joint Conference on Neural Network Proceedings	proceedings-article
+12	10.1109/ijcnn.2009.5178685	2009	10.1109/ijcnn.2009.5178685	Improving rule extraction from neural networks by modifying hidden layer representations	2009 International Joint Conference on Neural Networks	proceedings-article
+13	10.7551/mitpress/1836.003.0011	1994	10.7551/mitpress/1836.003.0011	The Boolean Neuron	Circuit Complexity and Neural Networks	book-chapter
+14	10.1080/10170660409509384	2004	10.1080/10170660409509384	A BOOLEAN ALGEBRA BASED RULE EXTRACTION ALGORITHM FOR NEURAL NETWORKS WITH BINARY OR BIPOLAR INPUTS	Journal of the Chinese Institute of Industrial Engineers	journal-article
+15	10.1109/ijcnn.2006.246902	2006	10.1109/ijcnn.2006.246902	Greedy rule generation from discrete data and its use in neural network rule extraction	The 2006 IEEE International Joint Conference on Neural Network Proceedings	proceedings-article
+16	10.1016/s0893-6080(96)00110-4	1997	10.1016/s0893-6080(96)00110-4	Non-linear Feature Extraction by Redundancy Reduction in an Unsupervised Stochastic Neural Network	Neural Networks	journal-article
+17	10.36227/techrxiv.22122200.v2	2023	10.36227/techrxiv.22122200.v2	A Boolean Algebra Based Rule Extraction Algorithm That Extracts If-then Classification Rules from Three-layer Neural Networks with General Inputs		posted-content
+18	10.58837/chula.the.2003.964	None	10.58837/chula.the.2003.964	Rule extraction from a trained neural network using principle interval projection with certainty factor		dissertation
+19	10.36227/techrxiv.22122200.v1	2023	10.36227/techrxiv.22122200.v1	A Boolean Algebra Based Rule Extraction Algorithm That Extracts If-then Classification Rules from Three-layer Neural Networks with General Inputs		posted-content
+20	10.14311/nnw.2020.30.008	2020	10.14311/nnw.2020.30.008	Review and analysis of hidden neuron number effect of shallow backpropagation neural networks	Neural Network World	journal-article
+21	10.1016/j.neunet.2008.01.003	2008	10.1016/j.neunet.2008.01.003	Greedy rule generation from discrete data and its use in neural network rule extraction	Neural Networks	journal-article
+22	10.1088/2632-2153/ad2972/v2/review1	2024	10.1088/2632-2153/ad2972/v2/review1	"Review for ""Comparison of neural network architectures for feature extraction from binary black hole merger waveforms"""		peer-review
+23	10.1088/2632-2153/ad2972/v1/review2	2023	10.1088/2632-2153/ad2972/v1/review2	"Review for ""Comparison of neural network architectures for feature extraction from binary black hole merger waveforms"""		peer-review
+24	10.1088/2632-2153/ad2972/v2/review2	2024	10.1088/2632-2153/ad2972/v2/review2	"Review for ""Comparison of neural network architectures for feature extraction from binary black hole merger waveforms"""		peer-review
+25	10.33915/etd.7416	None	10.33915/etd.7416	Rule Extraction and Insertion to Improve the Performance of a Dynamic Cell Structure Neural Network		dissertation
+26	10.1088/0954-898x_6_4_004	1995	10.1088/0954-898x_6_4_004	Hidden information maximization for feature detection and rule discovery	Network: Computation in Neural Systems	journal-article
+27	10.1109/tnn.2010.2094205	2011	10.1109/tnn.2010.2094205	Guiding Hidden Layer Representations for Improved Rule Extraction From Neural Networks	IEEE Transactions on Neural Networks	journal-article
+28	10.7717/peerj-cs.724	2021	10.7717/peerj-cs.724	Determining the number of hidden layer and hidden neuron of neural network for wind speed prediction	PeerJ Computer Science	journal-article
+29	10.1162/neco_a_00849	2016	10.1162/neco_a_00849	A Single Hidden Layer Feedforward Network with Only One Neuron in the Hidden Layer Can Approximate Any Univariate Function	Neural Computation	journal-article
+30	10.1109/icnn.1995.487510	None	10.1109/icnn.1995.487510	Fuzzy rule extraction from a trained multilayer neural network	Proceedings of ICNN'95 - International Conference on Neural Networks	proceedings-article
+31	10.15807/jorsj.49.66	2006	10.15807/jorsj.49.66	EXPLANATORY RULE EXTRACTION BASED ON THE TRAINED NEURAL NETWORK AND THE GENETIC PROGRAMMING	Journal of the Operations Research Society of Japan	journal-article
+32	10.1007/978-3-7908-1902-1_55	2003	10.1007/978-3-7908-1902-1_55	Rule Extraction from Trained Neural Network with Evolutionary Algorithms	Neural Networks and Soft Computing	book-chapter
+33	10.1109/ijcnn.2003.1224024	None	10.1109/ijcnn.2003.1224024	Analyzing dividend events with neural network rule extraction	Proceedings of the International Joint Conference on Neural Networks, 2003.	proceedings-article
+34	10.1088/2632-2153/ad2972/v1/review1	2023	10.1088/2632-2153/ad2972/v1/review1	"Review for ""Comparison of neural network architectures for feature extraction from binary black hole merger waveforms"""		peer-review
+35	10.3390/app9122411	2019	10.3390/app9122411	A Simple Convolutional Neural Network with Rule Extraction	Applied Sciences	journal-article
+36	10.1109/ijcnn.1991.155377	None	10.1109/ijcnn.1991.155377	Fuzzy rule extraction from a multilayered neural network	IJCNN-91-Seattle International Joint Conference on Neural Networks	proceedings-article
+37	10.1109/ijcnn.2012.6252446	2012	10.1109/ijcnn.2012.6252446	Ensemble neural network rule extraction using Re-RX algorithm	The 2012 International Joint Conference on Neural Networks (IJCNN)	proceedings-article
+38	10.1201/9781003572886-4	2024	10.1201/9781003572886-4	Rule Extraction From Trained Artificial Neural Networks	Neural Network Analysis, Architectures and Applications	book-chapter
+39	10.1088/2632-2153/ad2972/v2/decision1	2024	10.1088/2632-2153/ad2972/v2/decision1	"Decision letter for ""Comparison of neural network architectures for feature extraction from binary black hole merger waveforms"""		peer-review
+40	10.1088/2632-2153/ad2972/v1/decision1	2024	10.1088/2632-2153/ad2972/v1/decision1	"Decision letter for ""Comparison of neural network architectures for feature extraction from binary black hole merger waveforms"""		peer-review
+41	10.1007/978-1-4471-0877-1_29	1999	10.1007/978-1-4471-0877-1_29	A General Assembly as implementation of a Hebbian rule in a Boolean Neural Network	Perspectives in Neural Computing	book-chapter
+42	10.1109/ijcnn.1990.137552	1990	10.1109/ijcnn.1990.137552	Rule extraction and validity domain on a multilayer neural network	1990 IJCNN International Joint Conference on Neural Networks	proceedings-article
+43	10.1109/ijcnn.2016.7727264	2016	10.1109/ijcnn.2016.7727264	A rule extraction study on a neural network trained by deep learning	2016 International Joint Conference on Neural Networks (IJCNN)	proceedings-article
+44	10.1007/978-94-009-0643-3_123	1990	10.1007/978-94-009-0643-3_123	A Goal Seeking Neuron for Boolean Neural Networks	International Neural Network Conference	book-chapter
+45	10.7717/peerj-cs.2140/table-5	None	10.7717/peerj-cs.2140/table-5	"Algorithm 1: The hidden and extraction process. (
+                      <i>w</i>
+                      , the parameters of the hidden network.
+                      <i>θ</i>
+                      , the parameters of the extraction network.)"		component
+46	10.1109/ijcnn48605.2020.9206697	2020	10.1109/ijcnn48605.2020.9206697	Adaptive Neuron-wise Discriminant Criterion and Adaptive Center Loss at Hidden Layer for Deep Convolutional Neural Network	2020 International Joint Conference on Neural Networks (IJCNN)	proceedings-article
+47	10.1109/icit.2004.1490725	None	10.1109/icit.2004.1490725	Fuzzy rule extraction from a feed forward neural network by training a representative fuzzy neural network using gradient descent	2004 IEEE International Conference on Industrial Technology, 2004. IEEE ICIT '04.	proceedings-article
+48	10.1007/978-1-4471-3087-1_13	1995	10.1007/978-1-4471-3087-1_13	The BB Neural Network Rule Extraction Method	Neural Networks: Artificial Intelligence and Industrial Applications	book-chapter
+49	10.1016/j.petlm.2019.11.005	2020	10.1016/j.petlm.2019.11.005	Towards explicit representation of an artificial neural network model: Comparison of two artificial neural network rule extraction approaches	Petroleum	journal-article
+50	10.1007/10719871_17	2000	10.1007/10719871_17	Symbolic Rule Extraction from the DIMLP Neural Network	Lecture Notes in Computer Science	book-chapter
+51	10.1109/ijcnn.1999.830825	None	10.1109/ijcnn.1999.830825	Rule extraction from a trained artificial neural network	IJCNN'99. International Joint Conference on Neural Networks. Proceedings (Cat. No.99CH36339)	proceedings-article
+52	10.1109/ijcnn.1993.713923	None	10.1109/ijcnn.1993.713923	Algorithm for pruning hidden units in multilayered neural network for binary pattern classification problem	Proceedings of 1993 International Conference on Neural Networks (IJCNN-93-Nagoya, Japan)	proceedings-article
+53	10.1109/date.2003.1253752	None	10.1109/date.2003.1253752	Extraction of piecewise-linear analog circuit models from trained neural networks using hidden neuron clustering	2003 Design, Automation and Test in Europe Conference and Exhibition	proceedings-article
+54	10.1016/j.neucom.2017.03.036	2017	10.1016/j.neucom.2017.03.036	Extended fuzzy hyperline-segment neural network with classification rule extraction	Neurocomputing	journal-article
+55	10.1109/neurel.2006.341159	2006	10.1109/neurel.2006.341159	Data Mining, Neural Networks and Rule Extraction; IEEE CI Distinguish Lecture	2006 8th Seminar on Neural Network Applications in Electrical Engineering	proceedings-article
+56	10.1109/72.88163	1991	10.1109/72.88163	Exact associative neural memory dynamics utilizing Boolean matrices	IEEE Transactions on Neural Networks	journal-article
+57	10.1016/0893-6080(91)90059-e	1991	10.1016/0893-6080(91)90059-e	Optimal approximation of square integrable functions by a flexible one-hidden-layer neural network of excitatory and inhibitory neuron pairs	Neural Networks	journal-article
+58	10.1109/edtm65772.2026.11497945	2026	10.1109/edtm65772.2026.11497945	In-Memory Boolean Logic Computation in Binary Neural Network Inspired Memristor Crossbar Array	2026 10th IEEE Electron Devices Technology &amp;amp; Manufacturing Conference (EDTM)	proceedings-article
+59	10.1109/tnn.2007.908641	2008	10.1109/tnn.2007.908641	Recursive Neural Network Rule Extraction for Data With Mixed Attributes	IEEE Transactions on Neural Networks	journal-article
+60	10.1007/s00521-017-2889-8	2018	10.1007/s00521-017-2889-8	Neural network rule extraction for gaining insight into the characteristics of poverty	Neural Computing and Applications	journal-article
+61	10.1016/j.neucom.2016.05.040	2016	10.1016/j.neucom.2016.05.040	Neural network training and rule extraction with augmented discretized input	Neurocomputing	journal-article
+62	10.1109/ijcnn.1993.714164	None	10.1109/ijcnn.1993.714164	Non-Hopfield neuron network for visual texture boundary extraction	Proceedings of 1993 International Conference on Neural Networks (IJCNN-93-Nagoya, Japan)	proceedings-article
+63	10.1115/imece2001/dsc-24506	2001	10.1115/imece2001/dsc-24506	Diagnosis and Diagnostic Rule Extraction Using Fuzzy Neural Network	Dynamic Systems and Control	proceedings-article
+64	10.14569/ijacsa.2017.080631	2017	10.14569/ijacsa.2017.080631	Network Packet Classification using Neural Network based on Training Function and Hidden Layer Neuron Number Variation	International Journal of Advanced Computer Science and Applications	journal-article
+65	10.1007/978-3-319-28495-8_2	2016	10.1007/978-3-319-28495-8_2	Order in the Black Box: Consistency and Robustness of Hidden Neuron Activation of Feed Forward Neural Networks and Its Use in Efficient Optimization of Network Structure	Studies in Computational Intelligence	book-chapter
+66	10.1109/ijcnn.2011.6033410	2011	10.1109/ijcnn.2011.6033410	Towards a generalization of decompositional approach of rule extraction from multilayer artificial neural network	The 2011 International Joint Conference on Neural Networks	proceedings-article
+67	10.1109/icassp.2001.941158	None	10.1109/icassp.2001.941158	A new feedforward neural network hidden layer neuron pruning algorithm	2001 IEEE International Conference on Acoustics, Speech, and Signal Processing. Proceedings (Cat. No.01CH37221)	proceedings-article
+68	10.1007/11427391_110	2005	10.1007/11427391_110	Automatic Fuzzy Rule Extraction Based on Fuzzy Neural Network	Lecture Notes in Computer Science	book-chapter
+69	10.4018/978-1-7998-0414-7.ch091	2020	10.4018/978-1-7998-0414-7.ch091	Towards Developing the Piece-Wise Linear Neural Network Algorithm for Rule Extraction	Deep Learning and Neural Networks	book-chapter
+70	10.5120/5833-8119	2012	10.5120/5833-8119	Destructive Algorithm for Rule Extraction based on a Trained Neural Network	International Journal of Computer Applications	journal-article
+71	10.32657/10356/2544	None	10.32657/10356/2544	Rule extraction frameworks using rough sets and neural networks		dissertation
+72	10.1142/s0129065794000025	1994	10.1142/s0129065794000025	RULE EXTRACTION WITH FUZZY NEURAL NETWORK	International Journal of Neural Systems	journal-article
+73	10.1007/978-3-540-79881-1_7	None	10.1007/978-3-540-79881-1_7	Visualisation of Hidden Neuron Behaviour in a Neural Network Rainfall-Runoff Model	Water Science and Technology Library	book-chapter
+74	10.1109/ictai.2010.83	2010	10.1109/ictai.2010.83	Neural Network Rule Extraction and the LED Display Recognition Problem	2010 22nd IEEE International Conference on Tools with Artificial Intelligence	proceedings-article
+75	10.1007/s001800100072	2001	10.1007/s001800100072	Linguistic Rule Extraction From a Simplified RBF Neural Network	Computational Statistics	journal-article
+76	10.1017/cbo9780511624216.025	1999	10.1017/cbo9780511624216.025	The Boolean Perceptron	Neural Network Learning	book-chapter
+77	10.5539/cis.v6n2p38	2013	10.5539/cis.v6n2p38	Setting the Hidden Layer Neuron Number in Feedforward Neural Network for an Image Recognition Problem under Gaussian Noise of Distortion	Computer and Information Science	journal-article
+78	10.4995/thesis/10251/233643	None	10.4995/thesis/10251/233643	Fault Tolerance Based on Bit-Level Redundancy for Neural Network Models		dissertation
+79	10.1007/11427391_109	2005	10.1007/11427391_109	A Simple Rule Extraction Method Using a Compact RBF Neural Network	Lecture Notes in Computer Science	book-chapter
+80	10.5220/0010657800003064	2021	10.5220/0010657800003064	Specialized Neural Network Pruning for Boolean Abstractions	Proceedings of the 13th International Joint Conference on Knowledge Discovery, Knowledge Engineering and Knowledge Management	proceedings-article
+81	10.1080/net.12.3.241.253	2001	10.1080/net.12.3.241.253	Redundancy reduction revisited	Network: Computation in Neural Systems	journal-article
+82	10.1017/cbo9780511754494.005	2002	10.1017/cbo9780511754494.005	Binary CNN characterization via Boolean functions	Cellular Neural Networks and Visual Computing	book-chapter
+83	10.1016/j.neuron.2020.08.016	2020	10.1016/j.neuron.2020.08.016	The Sound of Silence: Hidden Responses of Neural Circuits to Alzheimer-Linked Mutations	Neuron	journal-article
+84	10.1109/72.925568	2001	10.1109/72.925568	Mapping Boolean functions with neural networks having binary weights and zero thresholds	IEEE Transactions on Neural Networks	journal-article
+85	10.4028/www.scientific.net/amr.403-408.920	2011	10.4028/www.scientific.net/amr.403-408.920	Rule Extraction from Privacy Preserving Neural Network: Application to Banking	Advanced Materials Research	journal-article
+86	10.1016/j.cogsys.2022.07.004	2022	10.1016/j.cogsys.2022.07.004	Rule extraction using ensemble of neural network ensembles	Cognitive Systems Research	journal-article
+87	10.1109/ijcnn.1998.682232	None	10.1109/ijcnn.1998.682232	Rule extraction through fuzzy modeling using fuzzy neural network	1998 IEEE International Joint Conference on Neural Networks Proceedings. IEEE World Congress on Computational Intelligence (Cat. No.98CH36227)	proceedings-article
+88	10.1109/ipec51340.2021.9421230	2021	10.1109/ipec51340.2021.9421230	A Convolutional Neural Network Algorithm Based on Rough Set Rule Extraction	2021 IEEE Asia-Pacific Conference on Image Processing, Electronics and Computers (IPEC)	proceedings-article
+89	10.1007/978-3-642-33269-2_65	2012	10.1007/978-3-642-33269-2_65	A New Neural Data Analysis Approach Using Ensemble Neural Network Rule Extraction	Lecture Notes in Computer Science	book-chapter
+90	10.1162/neco_a_01139	2018	10.1162/neco_a_01139	Use of a Deep Belief Network for Small High-Level Abstraction Data Sets Using Artificial Intelligence with Rule Extraction	Neural Computation	journal-article
+91	10.1109/isbi.2014.6867860	2014	10.1109/isbi.2014.6867860	Neuron recognition with hidden Neural Network Random Fields	2014 IEEE 11th International Symposium on Biomedical Imaging (ISBI)	proceedings-article
+92	10.1109/icarcv.2010.5707389	2010	10.1109/icarcv.2010.5707389	Binary Neural Network Classifier and it's bound for the number of hidden layer neurons	2010 11th International Conference on Control Automation Robotics &amp; Vision	proceedings-article
+93	10.3389/frai.2021.642263	2021	10.3389/frai.2021.642263	Rule Extraction From Binary Neural Networks With Convolutional Rules for Model Validation	Frontiers in Artificial Intelligence	journal-article
+94	10.1007/springerreference_8923	None	10.1007/springerreference_8923	binary Boolean operation	SpringerReference	reference-entry
+95	10.26713/cma.v13i1.1680	2022	10.26713/cma.v13i1.1680	Effect of Hidden Neuron Size on Different Training Algorithm in Neural Network	Communications in Mathematics and Applications	journal-article
+96	10.1109/ijcnn.2019.8852043	2019	10.1109/ijcnn.2019.8852043	A Memory-Based STDP Rule for Stable Attractor Dynamics in Boolean Recurrent Neural Networks	2019 International Joint Conference on Neural Networks (IJCNN)	proceedings-article
+97	10.1007/978-3-642-40255-5_5	2013	10.1007/978-3-642-40255-5_5	Binary Object Extraction by Bidirectional Self-Organizing Neural Network Architecture	Soft Computing for Image and Multimedia Data Processing	book-chapter
+98	10.1109/ijcnn.1999.830856	None	10.1109/ijcnn.1999.830856	Application of self-organizing network and MLP for fuzzy rule extraction	IJCNN'99. International Joint Conference on Neural Networks. Proceedings (Cat. No.99CH36339)	proceedings-article
+99	10.1007/s10489-007-0053-3	2008	10.1007/s10489-007-0053-3	Knowledge discovery in corporate events by neural network rule extraction	Applied Intelligence	journal-article
+100	10.1109/nafips.2004.1336301	2004	10.1109/nafips.2004.1336301	Rule extraction from a trained neural network for image keywords extraction	IEEE Annual Meeting of the Fuzzy Information, 2004. Processing NAFIPS '04.	proceedings-article

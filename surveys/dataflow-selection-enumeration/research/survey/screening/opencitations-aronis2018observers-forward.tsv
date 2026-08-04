@@ -1,0 +1,32 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1145/3669940.3707214	2025	10.1145/3669940.3707214	Selectively Uniform Concurrency Testing	Proceedings Of The 30Th ACM International Conference On Architectural Support For Programming Languages And Operating Systems, Volume 1	proceedings article
+2	10.1145/3360599	2019	10.1145/3360599	Effective Lock Handling In Stateless Model Checking	Proceedings Of The ACM On Programming Languages	journal article
+3	omid:br/06022975501	2022		A Lightweight Approach To Computing Message Races With An Application To Causal-Consistent Reversible Debugging		preprint
+4	10.1145/3236024.3236028	2018	10.1145/3236024.3236028	Adversarial Symbolic Execution For Detecting Concurrency-Related Cache Timing Leaks	Proceedings Of The 2018 26Th ACM Joint Meeting On European Software Engineering Conference And Symposium On The Foundations Of Software Engineering	proceedings article
+5	10.1007/978-3-031-45332-8_9	2023	10.1007/978-3-031-45332-8_9	Tailoring Stateless Model Checking For Event-Driven Multi-threaded Programs	Lecture Notes In Computer Science	book
+6	10.1007/978-3-031-57249-4_4	2024	10.1007/978-3-031-57249-4_4	Enhancing GenMC’s Usability And Performance	Lecture Notes In Computer Science	book chapter
+7	10.1145/3591243	2023	10.1145/3591243	Dynamic Partial Order Reduction For Checking Correctness Against Transaction Isolation Levels	Proceedings Of The ACM On Programming Languages	journal article
+8	10.1007/978-3-319-96142-2_24	2018	10.1007/978-3-319-96142-2_24	Constrained Dynamic Partial Order Reduction	Computer Aided Verification	book chapter
+9	10.1007/978-3-030-81685-8_16	2021	10.1007/978-3-030-81685-8_16	Stateless Model Checking Under A Reads-Value-From Equivalence	Computer Aided Verification	book chapter
+10	10.1145/3239332.3242764	2018	10.1145/3239332.3242764	Modelling Distributed Erlang Within A Single Node	Proceedings Of The 17Th ACM SIGPLAN International Workshop On Erlang	proceedings article
+11	10.1016/j.jss.2023.111730	2023	10.1016/j.jss.2023.111730	Optimal Dynamic Partial Order Reduction With Context-Sensitive Independence And Observers	Journal Of Systems And Software	journal article
+12	10.1145/3360576	2019	10.1145/3360576	Optimal Stateless Model Checking For Reads-From Equivalence Under Sequential Consistency	Proceedings Of The ACM On Programming Languages	journal article
+13	10.1145/3656449	2024	10.1145/3656449	SPORE: Combining Symmetry And Partial Order Reduction	Proceedings Of The ACM On Programming Languages	journal article
+14	10.1007/978-3-031-65630-9_2	2024	10.1007/978-3-031-65630-9_2	Parsimonious Optimal Dynamic Partial Order Reduction	Lecture Notes In Computer Science	book chapter
+15	10.1007/978-3-030-91014-3_16	2021	10.1007/978-3-030-91014-3_16	BAM: Efficient Model Checking For Barriers	Networked Systems	book chapter
+16	10.1145/3498711	2022	10.1145/3498711	Truly Stateless, Optimal Dynamic Partial Order Reduction	Proceedings Of The ACM On Programming Languages	journal article
+17	10.1145/3373376.3378480	2020	10.1145/3373376.3378480	Hmc	Proceedings Of The Twenty-Fifth International Conference On Architectural Support For Programming Languages And Operating Systems	proceedings article
+18	10.1145/3591247	2023	10.1145/3591247	Psym: Efficient Symbolic Exploration Of Distributed Systems	Proceedings Of The ACM On Programming Languages	journal article
+19	10.1007/978-3-031-37706-8_12	2023	10.1007/978-3-031-37706-8_12	Unblocking Dynamic Partial Order Reduction	Computer Aided Verification	book chapter
+20	10.1007/978-3-031-08679-3_12	2022	10.1007/978-3-031-08679-3_12	Computing Race Variants In Message-Passing Concurrent Programming With Selective Receives	Formal Techniques For Distributed Objects, Components, And Systems	book chapter
+21	10.1145/3485541	2021	10.1145/3485541	The Reads-From Equivalence For The TSO And PSO Memory Models	Proceedings Of The ACM On Programming Languages	journal article
+22	10.1007/s11241-023-09398-x	2023	10.1007/s11241-023-09398-x	Partial-order Reduction In Reachability-Based Response-Time Analyses Of Limited-Preemptive DAG Tasks	Real-Time Systems	journal article
+23	10.1145/3373376.3378484	2020	10.1145/3373376.3378484	Effective Concurrency Testing For Distributed Systems	Proceedings Of The Twenty-Fifth International Conference On Architectural Support For Programming Languages And Operating Systems	proceedings article
+24	10.1007/978-3-030-81685-8_20	2021	10.1007/978-3-030-81685-8_20	GenMC: A Model Checker For Weak Memory Models	Computer Aided Verification	book chapter
+25	10.1145/3620665.3640389	2024	10.1145/3620665.3640389	Greybox Fuzzing For Concurrency Testing	Proceedings Of The 29Th ACM International Conference On Architectural Support For Programming Languages And Operating Systems, Volume 2	proceedings article
+26	10.1007/s10009-019-00514-6	2019	10.1007/s10009-019-00514-6	Stateless Model Checking Of The Linux Kernel’S Read–Copy Update (RCU)	International Journal On Software Tools For Technology Transfer	journal article
+27	10.1007/978-3-032-06847-7_9	2025	10.1007/978-3-032-06847-7_9	On-the-Fly Cone-of-Influence Reduction For Model Checking Concurrent Software	Lecture Notes In Computer Science	book chapter
+28	10.1007/s10703-025-00479-0	2025	10.1007/s10703-025-00479-0	Awaiting For Godot: Stateless Model Checking That Avoids Executions Where Nothing Happens	Formal Methods In System Design	journal article
+29	10.1109/tse.2022.3144480	2023	10.1109/tse.2022.3144480	Achieving High MAP-Coverage Through Pattern Constraint Reduction	IEEE Transactions On Pattern Analysis And Machine Intelligence	journal article
+30	10.1007/978-3-030-21759-4_13	2019	10.1007/978-3-030-21759-4_13	Unfolding-Based Dynamic Partial Order Reduction Of Asynchronous Distributed Programs	Formal Techniques For Distributed Objects, Components, And Systems	book chapter
+31	10.1007/978-3-030-59152-6_21	2020	10.1007/978-3-030-59152-6_21	Parallel Graph-Based Stateless Model Checking	Automated Technology For Verification And Analysis	book chapter

@@ -1,0 +1,101 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1007/978-3-642-02658-4_31	2009	10.1007/978-3-642-02658-4_31	Monotonic Partial Order Reduction: An Optimal Symbolic Partial Order Reduction Technique	Lecture Notes in Computer Science	book-chapter
+2	10.1007/978-3-658-12680-3_4	2016	10.1007/978-3-658-12680-3_4	Dynamic Partial Order Reduction in Stateful Model Checking	Complete Symbolic Simulation of SystemC Models	book-chapter
+3	10.1007/978-3-658-12680-3_3	2016	10.1007/978-3-658-12680-3_3	Static Partial Order Reduction in Stateful Model Checking	Complete Symbolic Simulation of SystemC Models	book-chapter
+4	10.1007/0-387-23905-7_12	None	10.1007/0-387-23905-7_12	Hierarchical Symbolic Analysis and Hierarchical Model Order Reduction	Symbolic Analysis and Reduction of VLSI Circuits	book-chapter
+5	10.1007/0-387-23905-7_3	None	10.1007/0-387-23905-7_3	Model-Order Reduction	Symbolic Analysis and Reduction of VLSI Circuits	book-chapter
+6	10.1023/a:1010043619517	1999	10.1023/a:1010043619517	Partial Evaluation of Computation Process, Revisited	Higher-Order and Symbolic Computation	journal-article
+7	10.1023/a:1010004307057	1999	10.1023/a:1010004307057	Partial Evaluation of the Euclidean Algorithm, Revisited	Higher-Order and Symbolic Computation	journal-article
+8	10.1023/a:1026551132647	2000	10.1023/a:1026551132647	Glossary for Partial Evaluation and Related Topics	Higher-Order and Symbolic Computation	journal-article
+9	10.70675/f5fc5032zc27dz4fffza3cbzd9a01566f10d	None	10.70675/f5fc5032zc27dz4fffza3cbzd9a01566f10d	Partial order reduction for timed systems		dissertation
+10	10.1023/b:lisp.0000029447.02190.42	2004	10.1023/b:lisp.0000029447.02190.42	Cost-Augmented Partial Evaluation of Functional Logic Programs	Higher-Order and Symbolic Computation	journal-article
+11	10.1145/2578855.2535845	2014	10.1145/2578855.2535845	Optimal dynamic partial order reduction	ACM SIGPLAN Notices	journal-article
+12	10.1007/978-1-4615-3190-6_9	1993	10.1007/978-1-4615-3190-6_9	A Partial Order Approach	Symbolic Model Checking	book-chapter
+13	10.1007/978-3-642-20398-5_43	2011	10.1007/978-3-642-20398-5_43	Milestones: A Model Checker Combining Symbolic Model Checking and Partial Order Reduction	Lecture Notes in Computer Science	book-chapter
+14	10.1007/978-3-642-20398-5_29	2011	10.1007/978-3-642-20398-5_29	Combining Partial-Order Reduction and Symbolic Model Checking to Verify LTL Properties	Lecture Notes in Computer Science	book-chapter
+15	10.1023/a:1010095604496	1999	10.1023/a:1010095604496	Partial Evaluation of Computation Process--An Approach to a Compiler-Compiler	Higher-Order and Symbolic Computation	journal-article
+16	10.1023/a:1010072901408	1999	10.1023/a:1010072901408	An Early Use of Continuations and Partial Evaluation for Compiling Rules Written in First-Order Predicate Calculus	Higher-Order and Symbolic Computation	journal-article
+17	10.1023/a:1012992731199	2001	10.1023/a:1012992731199	The Second Futamura Projection for Type-Directed Partial Evaluation	Higher-Order and Symbolic Computation	journal-article
+18	10.1023/a:1012984529382	2001	10.1023/a:1012984529382	A Hybrid Approach to Online and Offline Partial Evaluation	Higher-Order and Symbolic Computation	journal-article
+19	10.1145/2535838.2535845	2014	10.1145/2535838.2535845	Optimal dynamic partial order reduction	Proceedings of the 41st ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages	proceedings-article
+20	10.1007/11560548_25	2005	10.1007/11560548_25	Symbolic Partial Order Reduction for Rule Based Transition Systems	Lecture Notes in Computer Science	book-chapter
+21	10.1023/a:1010056315933	1999	10.1023/a:1010056315933	Optimal Representations of Polymorphic Types with Subtyping	Higher-Order and Symbolic Computation	journal-article
+22	10.1016/j.scico.2019.03.006	2019	10.1016/j.scico.2019.03.006	Symbolic state space reduction with guarded terms for rewriting modulo SMT	Science of Computer Programming	journal-article
+23	10.1023/a:1008767206905	2001	10.1023/a:1008767206905	Partial-Order Reduction in Symbolic State-Space Exploration	Formal Methods in System Design	journal-article
+24	10.1006/jsco.2001.0509	2002	10.1006/jsco.2001.0509	Size Reduction and Partial Decoupling of Systems of Equations	Journal of Symbolic Computation	journal-article
+25	10.7763/ijmo.2014.v4.380	2014	10.7763/ijmo.2014.v4.380	Partial Order Reduction for Verification of WS-BPEL	International Journal of Modeling and Optimization	journal-article
+26	10.1007/s10703-020-00350-4	2021	10.1007/s10703-020-00350-4	Quasi-optimal partial order reduction	Formal Methods in System Design	journal-article
+27	10.1007/3-540-63166-6_34	1997	10.1007/3-540-63166-6_34	Partial-order reduction in symbolic state space exploration	Lecture Notes in Computer Science	book-chapter
+28	10.26226/morressier.604907f51a80aac83ca25d7e	2021	10.26226/morressier.604907f51a80aac83ca25d7e	Partial Order Reduction for Deep Bug Finding in Synchronous Hardware		posted-content
+29	10.14293/p2199-8442.1.sop-math.pdkgeb.v1	2016	10.14293/p2199-8442.1.sop-math.pdkgeb.v1	Towards optimal snapshot location for POD model order reduction in optimal control		posted-content
+30	10.1145/3498711	2022	10.1145/3498711	Truly stateless, optimal dynamic partial order reduction	Proceedings of the ACM on Programming Languages	journal-article
+31	10.1007/s11083-023-09643-9	2024	10.1007/s11083-023-09643-9	Interleaving by Parts: Join Decompositions of Interleavings and Join-Assemblage of Geodesics	Order	journal-article
+32	10.1016/j.jsc.2011.12.041	2012	10.1016/j.jsc.2011.12.041	Serre’s reduction of linear partial differential systems with holonomic adjoints	Journal of Symbolic Computation	journal-article
+33	10.70675/138dc2a5zc12az40e9zab61zddbb416de5a2	None	10.70675/138dc2a5zc12az40e9zab61zddbb416de5a2	Stateful partial-order reduction methods for concurrent systems with blocking instructions		dissertation
+34	10.1145/3073408	2017	10.1145/3073408	Source Sets	Journal of the ACM	journal-article
+35	10.2139/ssrn.516782	2004	10.2139/ssrn.516782	Higher Order Asymptotic Optimal Policies for Partial Equilibrium Economies		posted-content
+36	10.1109/apsec.2014.49	2014	10.1109/apsec.2014.49	A Symbolic Partial Order Method for Verifying SystemC	2014 21st Asia-Pacific Software Engineering Conference	proceedings-article
+37	10.26226/morressier.604907f51a80aac83ca25d72	2021	10.26226/morressier.604907f51a80aac83ca25d72	The Inconsistent Labelling Problem of Stutter-Preserving Partial-Order Reduction		posted-content
+38	10.1007/978-3-319-10575-8_6	2018	10.1007/978-3-319-10575-8_6	Partial-Order Reduction	Handbook of Model Checking	book-chapter
+39	10.21203/rs.3.rs-3257081/v1	2023	10.21203/rs.3.rs-3257081/v1	Dynamic Partial Order Reduction Based on Interference Solution		posted-content
+40	10.1007/978-3-031-66391-8_5	2024	10.1007/978-3-031-66391-8_5	Symbolic Model Order Reduction Using Perturbation Analysis	Tapered Beams in MEMS	book-chapter
+41	10.1007/s10009-019-00507-5	2019	10.1007/s10009-019-00507-5	Combining sequentialization-based verification of multi-threaded C programs with symbolic Partial Order Reduction	International Journal on Software Tools for Technology Transfer	journal-article
+42	10.1145/3293882.3330565	2019	10.1145/3293882.3330565	Optimal context-sensitive dynamic partial order reduction with observers	Proceedings of the 28th ACM SIGSOFT International Symposium on Software Testing and Analysis	proceedings-article
+43	10.1007/978-3-031-29563-8_3	2023	10.1007/978-3-031-29563-8_3	Model Order Reduction for Optimal Control Problems	Lecture Notes in Mathematics	book-chapter
+44	10.1016/j.jss.2023.111730	2023	10.1016/j.jss.2023.111730	Optimal dynamic partial order reduction with context-sensitive independence and observers	Journal of Systems and Software	journal-article
+45	10.1088/2631-8695/ae7e48/v2/review1	2026	10.1088/2631-8695/ae7e48/v2/review1	"Review for ""Optimal FOPID controller design for LFC of power system via model order reduction"""		peer-review
+46	10.1515/9783110695984-001	2022	10.1515/9783110695984-001	1 Reduced basis model order reduction in optimal control of a nonsmooth semilinear elliptic PDE	Optimization and Control for Partial Differential Equations	book-chapter
+47	10.1016/s0079-8169(08)61521-4	1975	10.1016/s0079-8169(08)61521-4	18 Reduction of Higher Order Systems to First-Order Systems	Pure and Applied Mathematics	book-chapter
+48	10.1088/2631-8695/ae7e48/v1/review1	2026	10.1088/2631-8695/ae7e48/v1/review1	"Review for ""Optimal FOPID controller design for LFC of power system via model order reduction"""		peer-review
+49	10.1145/3603288.3603296	2024	10.1145/3603288.3603296	Approximate Partial Order Reduction	Formal Methods for Safe Autonomy	book-chapter
+50	10.1145/143242.143265	1992	10.1145/143242.143265	Reduction and completion algorithms for partial differential equations	Papers from the international symposium on Symbolic and algebraic computation  - ISSAC '92	proceedings-article
+51	10.26226/morressier.604907f51a80aac83ca25d81	2021	10.26226/morressier.604907f51a80aac83ca25d81	Partial-Order Reduction for Parity Games with an Application on Parameterised Boolean Equation Systems		posted-content
+52	10.1109/bmas.2008.4751251	2008	10.1109/bmas.2008.4751251	Scalable Symbolic Model Order Reduction	2008 IEEE International Behavioral Modeling and Simulation Workshop	proceedings-article
+53	10.1090/dimacs/029/13	1997	10.1090/dimacs/029/13	Partial order reduction: Linear and branching temporal logics and process algebras	DIMACS Series in Discrete Mathematics and Theoretical Computer Science	book-chapter
+54	10.1088/2631-8695/ae7e48/v2/review2	2026	10.1088/2631-8695/ae7e48/v2/review2	"Review for ""Optimal FOPID controller design for LFC of power system via model order reduction"""		peer-review
+55	10.1088/2631-8695/ae7e48/v1/review2	2026	10.1088/2631-8695/ae7e48/v1/review2	"Review for ""Optimal FOPID controller design for LFC of power system via model order reduction"""		peer-review
+56	10.1007/s10990-014-9103-9	2013	10.1007/s10990-014-9103-9	On graph rewriting, reduction, and evaluation in the presence of cycles	Higher-Order and Symbolic Computation	journal-article
+57	10.70675/48050083za9b4z4b60z9fc2z468c8501c4b5	None	10.70675/48050083za9b4z4b60z9fc2z468c8501c4b5	Towards an Optimal Multi-query Framework based on Model-order Reduction for Non-linear Dynamics		dissertation
+58	10.1109/bmas.2003.1249854	None	10.1109/bmas.2003.1249854	Symbolic model order reduction	Proceedings of the 2003 IEEE International Workshop on Behavioral Modeling and Simulation	proceedings-article
+59	10.1007/pl00009173	1997	10.1007/pl00009173	Optimal Graph Constraint Reduction for Symbolic Layout Compaction	Algorithmica	journal-article
+60	10.1016/j.jsc.2011.12.016	2013	10.1016/j.jsc.2011.12.016	On simultaneous row and column reduction of higher-order linear differential systems	Journal of Symbolic Computation	journal-article
+61	10.2514/6.1997-3500	1997	10.2514/6.1997-3500	Projection methods for optimal pilot model order reduction - Optimal versus suboptimal	22nd Atmospheric Flight Mechanics Conference	proceedings-article
+62	10.1007/3-540-18420-1_58	1987	10.1007/3-540-18420-1_58	Controlling reduction partial order in functional parallel programs	Lecture Notes in Computer Science	book-chapter
+63	10.1007/s10990-006-0479-z	2006	10.1007/s10990-006-0479-z	Expressing combinatory reduction systems derivations in the rewriting calculus	Higher-Order and Symbolic Computation	journal-article
+64	10.1007/978-3-642-60218-4_7	1999	10.1007/978-3-642-60218-4_7	Symbolic Derivation of Different Class of High-order Compact Schemes for Partial Differential Equations	Computer Algebra in Scientific Computing CASC’99	book-chapter
+65	10.1088/2631-8695/ae7e48/v3/decision1	2026	10.1088/2631-8695/ae7e48/v3/decision1	"Decision letter for ""Optimal FOPID controller design for LFC of power system via model order reduction"""		peer-review
+66	10.1088/2631-8695/ae7e48/v1/decision1	2026	10.1088/2631-8695/ae7e48/v1/decision1	"Decision letter for ""Optimal FOPID controller design for LFC of power system via model order reduction"""		peer-review
+67	10.1088/2631-8695/ae7e48/v2/decision1	2026	10.1088/2631-8695/ae7e48/v2/decision1	"Decision letter for ""Optimal FOPID controller design for LFC of power system via model order reduction"""		peer-review
+68	10.1109/mwscas.1999.867770	None	10.1109/mwscas.1999.867770	A symbolic method for network function approximation with order reduction	42nd Midwest Symposium on Circuits and Systems (Cat. No.99CH36356)	proceedings-article
+69	10.2514/6.1987-2388	1987	10.2514/6.1987-2388	Reduced-order compensation - LQG reduction versus optimal projection	Guidance, Navigation and Control Conference	proceedings-article
+70	10.1109/tro.2024.3522182/mm1	None	10.1109/tro.2024.3522182/mm1	Soft Synergies: Model Order Reduction of Hybrid Soft-Rigid Robots via Optimal Strain Parameterization_supp1-3522182.mp4		component
+71	10.23919/ecc.1999.7099732	1999	10.23919/ecc.1999.7099732	Order reduction with partial ARMA-modeling	1999 European Control Conference (ECC)	proceedings-article
+72	10.1016/j.padiff.2022.100465	2023	10.1016/j.padiff.2022.100465	A generalized dispersive water waves system: Conservation laws; symmetry reduction; travelling wave solutions; symbolic computation	Partial Differential Equations in Applied Mathematics	journal-article
+73	10.1007/s10990-008-9030-8	2008	10.1007/s10990-008-9030-8	Efficient and flexible access control via Jones-optimal logic program specialisation	Higher-Order and Symbolic Computation	journal-article
+74	10.1007/978-3-319-19195-9_2	2015	10.1007/978-3-319-19195-9_2	On Partial Order Semantics for SAT/SMT-Based Symbolic Encodings of Weak Memory Concurrency	Lecture Notes in Computer Science	book-chapter
+75	10.1007/3-7643-7429-2_12	None	10.1007/3-7643-7429-2_12	Algorithmic Reduction and Rational General Solutions of First Order Algebraic Differential Equations	Trends in Mathematics	book-chapter
+76	10.1023/a:1010006229549	2000	10.1023/a:1010006229549	Higher-Order UnCurrying	Higher-Order and Symbolic Computation	journal-article
+77	10.1002/num.20397	2009	10.1002/num.20397	An optimal‐order estimate for MMOC‐MFEM approximations to porous medium flow	Numerical Methods for Partial Differential Equations	journal-article
+78	10.1007/s10990-005-7008-3	2005	10.1007/s10990-005-7008-3	Derivation of Efficient Logic Programs by Specialization and Reduction of Nondeterminism	Higher-Order and Symbolic Computation	journal-article
+79	10.1016/j.padiff.2023.100553	2023	10.1016/j.padiff.2023.100553	Corrigendum to “A generalized dispersive water waves system: Conservation laws; symmetry reduction; travelling wave solutions; symbolic computation” [Partial Differ. Equ. Appl. Math. 7 (2023) 100465]	Partial Differential Equations in Applied Mathematics	journal-article
+80	10.1201/9780203910177-15	2002	10.1201/9780203910177-15	Second Order Hamilton-Jacobi Equations in Hilbert Spaces and Stochastic Optimal Control	Stochastic partial differential equations and applications	book-chapter
+81	10.1080/03605309108820799	1991	10.1080/03605309108820799	Reduction of order for pseudodifferential operators on lipschitz domains	Communications in Partial Differential Equations	journal-article
+82	10.1007/978-3-540-73370-6_8	None	10.1007/978-3-540-73370-6_8	Cartesian Partial-Order Reduction	Lecture Notes in Computer Science	book-chapter
+83	10.1007/978-3-030-64354-6_13	2020	10.1007/978-3-030-64354-6_13	SymPaths: Symbolic Execution Meets Partial Order Reduction	Lecture Notes in Computer Science	book-chapter
+84	10.1609/aaai.v35i13.17396	2021	10.1609/aaai.v35i13.17396	Symbolic Search for Optimal Total-Order HTN Planning	Proceedings of the AAAI Conference on Artificial Intelligence	journal-article
+85	10.1023/a:1010027404223	1998	10.1023/a:1010027404223	Definitional Interpreters for Higher-Order Programming Languages	Higher-Order and Symbolic Computation	journal-article
+86	10.2139/ssrn.4969005	2024	10.2139/ssrn.4969005	A Hybrid Method for Solving Fractional Order Partial Integro-Differential Equations Via Transform Optimal Auxiliary Function Method		posted-content
+87	10.1007/978-1-4020-8758-5_4	2008	10.1007/978-1-4020-8758-5_4	Higher Order Time Stepping for Second Order Hyperbolic Problems and Optimal CFL Conditions	Computational Methods in Applied Sciences	book-chapter
+88	10.1109/ase.2001.989810	None	10.1109/ase.2001.989810	Enhancing partial-order reduction via process clustering	Proceedings 16th Annual International Conference on Automated Software Engineering (ASE 2001)	proceedings-article
+89	10.3182/20080706-5-kr-1001.01306	2008	10.3182/20080706-5-kr-1001.01306	Partial-order reduction of observers for linear systems	IFAC Proceedings Volumes	journal-article
+90	10.2514/6.1979-1742	1979	10.2514/6.1979-1742	Orthogonal subspace reduction of optimal regulator order&lt;149&gt;for spacecraft structural vibration	Guidance and Control Conference	proceedings-article
+91	10.1109/trustcom.2015.608	2015	10.1109/trustcom.2015.608	Parallel SMT Solving and Concurrent Symbolic Execution	2015 IEEE Trustcom/BigDataSE/ISPA	proceedings-article
+92	10.1023/a:1025815202775	2003	10.1023/a:1025815202775	Editorial	Higher-Order and Symbolic Computation	journal-article
+93	10.1023/a:1010023032358	1999	10.1023/a:1010023032358	Editorial	Higher-Order and Symbolic Computation	journal-article
+94	10.1007/978-94-007-0089-5_15	2011	10.1007/978-94-007-0089-5_15	Coupling of Numerical and Symbolic Techniques for Model Order Reduction in Circuit Design	Lecture Notes in Electrical Engineering	book-chapter
+95	10.1525/si.2004.27.4.573	2004	10.1525/si.2004.27.4.573	Order! Order!—Functionalism, Interactionism, and Ethnomethodology—Modernity and Agency	Symbolic Interaction	journal-article
+96	10.1002/num.1042	2002	10.1002/num.1042	An optimal‐order error estimate for MMOC and MMOCAA schemes for multidimensional advection‐reaction equations	Numerical Methods for Partial Differential Equations	journal-article
+97	10.1023/a:1010093700911	1999	10.1023/a:1010093700911	Continuation-Based Multiprocessing	Higher-Order and Symbolic Computation	journal-article
+98	10.1145/3452143.3465526	2021	10.1145/3452143.3465526	Computing Grothendieck Point Residues via Solving Holonomic Systems of First Order Partial Differential Equations	Proceedings of the 2021 International Symposium on Symbolic and Algebraic Computation	proceedings-article
+99	10.1023/a:1010025114115	1999	10.1023/a:1010025114115	Editorial	Higher-Order and Symbolic Computation	journal-article
+100	10.1023/a:1010032817863	1998	10.1023/a:1010032817863	Editorial	Higher-Order and Symbolic Computation	journal-article

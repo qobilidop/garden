@@ -1,0 +1,101 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1145/1988842.1988846	2011	10.1145/1988842.1988846	Database state generation via dynamic symbolic execution for coverage criteria	Proceedings of the Fourth International Workshop on Testing Database Systems	proceedings-article
+2	10.1145/3368089.3409755	2020	10.1145/3368089.3409755	Making symbolic execution promising by learning aggressive state-pruning strategy	Proceedings of the 28th ACM Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering	proceedings-article
+3	10.18122/td/1597/boisestate	None	10.18122/td/1597/boisestate	Suitability of Finite State Automata to Model String Constraints in Probablistic Symbolic Execution		dissertation
+4	10.1109/cscwd68734.2026.11582111	2026	10.1109/cscwd68734.2026.11582111	Dataflow-Based Path Pruning in Symbolic Execution for Hardware Verification	2026 29th International Conference on Computer Supported Cooperative Work in Design (CSCWD)	proceedings-article
+5	10.1145/3678188	2025	10.1145/3678188	SmartExecutor: Coverage-Driven Symbolic Execution Guided via State Prioritization and Function Selection	Distributed Ledger Technologies: Research and Practice	journal-article
+6	10.4028/www.scientific.net/amr.718-720.2314	2013	10.4028/www.scientific.net/amr.718-720.2314	Fast Loop Boundary Coverage Testing in Symbolic Execution	Advanced Materials Research	journal-article
+7	10.1007/springerreference_26145	None	10.1007/springerreference_26145	symbolic execution	SpringerReference	reference-entry
+8	10.1109/desec.2018.8625128	2018	10.1109/desec.2018.8625128	Dynamic Path Pruning in Symbolic Execution	2018 IEEE Conference on Dependable and Secure Computing (DSC)	proceedings-article
+9	10.5120/ijca2024923951	2024	10.5120/ijca2024923951	Symbolic Execution-Based Code Coverage Framework for Augmented Software Testing	International Journal of Computer Applications	journal-article
+10	10.1109/synasc.2005.26	2005	10.1109/synasc.2005.26	Colored Petri nets state-space reduction via symbolic execution	Seventh International Symposium on Symbolic and Numeric Algorithms for Scientific Computing (SYNASC'05)	proceedings-article
+11	10.1109/icst.2014.30	2014	10.1109/icst.2014.30	Efficient Leveraging of Symbolic Execution to Advanced Coverage Criteria	2014 IEEE Seventh International Conference on Software Testing, Verification and Validation	proceedings-article
+12	10.1109/qrs.2016.26	2016	10.1109/qrs.2016.26	A Method for Pruning Infeasible Paths via Graph Transformations and Symbolic Execution	2016 IEEE International Conference on Software Quality, Reliability and Security (QRS)	proceedings-article
+13	10.1145/3339363.3339379	2019	10.1145/3339363.3339379	SYMAC	Proceedings of the 2nd International Conference on Computer Science and Software Engineering	proceedings-article
+14	10.1145/3797074	2026	10.1145/3797074	SmarTrim: Symbolic Execution for Smart Contracts Powered by Redundant Transaction-Sequence Pruning	Proceedings of the ACM on Software Engineering	journal-article
+15	10.1109/informatics47936.2019.9119287	2019	10.1109/informatics47936.2019.9119287	Symbolic Execution with Finite State Automata	2019 IEEE 15th International Scientific Conference on Informatics	proceedings-article
+16	10.1145/3183440.3195102	2018	10.1145/3183440.3195102	MC/DC coverage-oriented compiler optimization for symbolic execution	Proceedings of the 40th International Conference on Software Engineering: Companion Proceeedings	proceedings-article
+17	10.1109/aspdac.2016.7428006	2016	10.1109/aspdac.2016.7428006	Generating high coverage tests for SystemC designs using symbolic execution	2016 21st Asia and South Pacific Design Automation Conference (ASP-DAC)	proceedings-article
+18	10.1109/icst.2017.29	2017	10.1109/icst.2017.29	Non-Semantics-Preserving Transformations for Higher-Coverage Test Generation Using Symbolic Execution	2017 IEEE International Conference on Software Testing, Verification and Validation (ICST)	proceedings-article
+19	10.1109/qrs-c.2019.00049	2019	10.1109/qrs-c.2019.00049	Branch Sequence Coverage Criterion for Testing-Based Formal Verification with Symbolic Execution	2019 IEEE 19th International Conference on Software Quality, Reliability and Security Companion (QRS-C)	proceedings-article
+20	10.70675/f84b3bcdzf391z4853zbe20zc055a6176e09	None	10.70675/f84b3bcdzf391z4853zbe20zc055a6176e09	Increasing the performance of symbolic execution by compiling symbolic handling into binaries		dissertation
+21	10.1109/icces.2015.7393027	2015	10.1109/icces.2015.7393027	Constrained-based symbolic execution on virtual models for functional coverage verification	2015 Tenth International Conference on Computer Engineering &amp; Systems (ICCES)	proceedings-article
+22	10.1007/978-1-4612-1538-7_9	1999	10.1007/978-1-4612-1538-7_9	Forward Pruning for Approximation and Flexible Computation, Part II: Multiagent Game Playing	State-Space Search	book-chapter
+23	10.7717/peerjcs.137/table-3	None	10.7717/peerjcs.137/table-3	Table 3: Execution time comparison between the pruning variants and NNSYSID MATLAB toolbox.		component
+24	10.1007/978-1-4612-1538-7_8	1999	10.1007/978-1-4612-1538-7_8	Forward Pruning for Approximation and Flexible Computation, Part I: Single-Agent Combinatorial Optimization	State-Space Search	book-chapter
+25	10.1109/icices.2013.6508273	2013	10.1109/icices.2013.6508273	GASE -an input domain reduction and branch coverage system based on Genetic Algorithm and Symbolic Execution	2013 International Conference on Information Communication and Embedded Systems (ICICES)	proceedings-article
+26	10.14722/ndss.2019.23530	2019	10.14722/ndss.2019.23530	Neuro-Symbolic Execution: Augmenting Symbolic Execution with Neural Constraints	Proceedings 2019 Network and Distributed System Security Symposium	proceedings-article
+27	10.2172/2430751	2023	10.2172/2430751	Symbolic Execution for Vulnerability Analysis: Improving Analyses with Symbolic Procedures [Poster]		report
+28	10.1145/3656443	2024	10.1145/3656443	Compatible Branch Coverage Driven Symbolic Execution for Efficient Bug Finding	Proceedings of the ACM on Programming Languages	journal-article
+29	10.1016/j.jsc.2016.07.023	2017	10.1016/j.jsc.2016.07.023	Replacing conjectures by positive knowledge: Inferring proven precise worst-case execution time bounds using symbolic execution	Journal of Symbolic Computation	journal-article
+30	10.1145/3167132.3167289	2018	10.1145/3167132.3167289	Improving function coverage with munch	Proceedings of the 33rd Annual ACM Symposium on Applied Computing	proceedings-article
+31	10.5220/0012061000003538	2023	10.5220/0012061000003538	RPA Testing Using Symbolic Execution	Proceedings of the 18th International Conference on Software Technologies	proceedings-article
+32	10.1109/9780470546512.ch6	2009	10.1109/9780470546512.ch6	Symbolic Formula Approximation	Symbolic Analysis Techniques	book-chapter
+33	10.1109/sere.2014.23	2014	10.1109/sere.2014.23	Automated Coverage-Driven Test Data Generation Using Dynamic Symbolic Execution	2014 Eighth International Conference on Software Security and Reliability	proceedings-article
+34	10.1145/3760529	2025	10.1145/3760529	FuSS: Coverage-Directed Hardware Fuzzing with Selective Symbolic Execution	ACM Transactions on Embedded Computing Systems	journal-article
+35	10.1145/2245276.2231981	2012	10.1145/2245276.2231981	Symbolic execution of UML-RT State Machines	Proceedings of the 27th Annual ACM Symposium on Applied Computing	proceedings-article
+36	10.1049/iet-sen.2017.0200	2018	10.1049/iet-sen.2017.0200	Discover deeper bugs with dynamic symbolic execution and coverage‐based fuzz testing	IET Software	journal-article
+37	10.1007/s11432-016-5589-6	2016	10.1007/s11432-016-5589-6	Automated coverage-driven testing: combining symbolic execution and model checking	Science China Information Sciences	journal-article
+38	10.21236/ada196451	1988	10.21236/ada196451	Optical Symbolic Processor for Expert System Execution		report
+39	10.21236/ada224284	1989	10.21236/ada224284	Optical Symbolic Processor for Expert System Execution		report
+40	10.21236/ada187882	1987	10.21236/ada187882	Optical Symbolic Processor for Expert System Execution		report
+41	10.1109/ivmem53963.2021.00014	2021	10.1109/ivmem53963.2021.00014	Towards Symbolic Pointers Reasoning in Dynamic Symbolic Execution	2021 Ivannikov Memorial Workshop (IVMEM)	proceedings-article
+42	10.5373/jardcs/v12sp3/20201233	2020	10.5373/jardcs/v12sp3/20201233	Useless Code Identification with Symbolic Execution	Journal of Advanced Research in Dynamical and Control Systems	journal-article
+43	10.1109/iccd.1994.331895	None	10.1109/iccd.1994.331895	Efficient state space pruning in symbolic backward traversal	Proceedings 1994 IEEE International Conference on Computer Design: VLSI in Computers and Processors	proceedings-article
+44	10.1109/brains59668.2023.10316942	2023	10.1109/brains59668.2023.10316942	SmartExecutor: Coverage-Driven Symbolic Execution Guided by a Function Dependency Graph	2023 5th Conference on Blockchain Research &amp; Applications for Innovative Networks and Services (BRAINS)	proceedings-article
+45	10.1515/comp-2020-0120	2021	10.1515/comp-2020-0120	A DSL for Resource Checking Using Finite State Automaton-Driven Symbolic Execution	Open Computer Science	journal-article
+46	10.1007/978-3-031-02551-8_2	2020	10.1007/978-3-031-02551-8_2	Symbolic Execution: The Basics	Synthesis Lectures on Software Engineering	book-chapter
+47	10.1109/ast58925.2023.00012	2023	10.1109/ast58925.2023.00012	Structural Test Input Generation for 3-Address Code Coverage Using Path-Merged Symbolic Execution	2023 IEEE/ACM International Conference on Automation of Software Test (AST)	proceedings-article
+48	10.1007/3-540-44585-4_41	2001	10.1007/3-540-44585-4_41	Rewriting for Symbolic Execution of State Machine Models	Lecture Notes in Computer Science	book-chapter
+49	10.31274/td-20251215-13	None	10.31274/td-20251215-13	Neuro-symbolic program generation and execution for hybrid reasoning		dissertation
+50	10.1109/models.2015.7338231	2015	10.1109/models.2015.7338231	Incremental symbolic execution of evolving state machines	2015 ACM/IEEE 18th International Conference on Model Driven Engineering Languages and Systems (MODELS)	proceedings-article
+51	10.14711/thesis-b1477728	None	10.14711/thesis-b1477728	Context and precondition-guided search strategies in dynamic symbolic execution		dissertation
+52	10.15368/theses.2012.212	None	10.15368/theses.2012.212	Automated Student Code Assessment with Symbolic Execution and Java PathFinder		dissertation
+53	10.1109/indin.2018.8472013	2018	10.1109/indin.2018.8472013	Deriving a State Model of a Control Program by Symbolic Execution	2018 IEEE 16th International Conference on Industrial Informatics (INDIN)	proceedings-article
+54	10.1109/ipsn.2008.62	2008	10.1109/ipsn.2008.62	Deriving State Machines from TinyOS Programs Using Symbolic Execution	2008 International Conference on Information Processing in Sensor Networks (ipsn 2008)	proceedings-article
+55	10.5220/0001992701440150	2009	10.5220/0001992701440150	SYMBOLIC EXECUTION FOR DYNAMIC, EVOLUTIONARY TEST DATA GENERATION	Proceedings of the 11th International Conference on Enterprise Information	proceedings-article
+56	10.1145/2345156.2254088	2012	10.1145/2345156.2254088	Efficient state merging in symbolic execution	ACM SIGPLAN Notices	journal-article
+57	10.1109/tse.2025.3555622	2025	10.1109/tse.2025.3555622	NumScout: Unveiling Numerical Defects in Smart Contracts Using LLM-Pruning Symbolic Execution	IEEE Transactions on Software Engineering	journal-article
+58	10.1145/3183440.3183494	2018	10.1145/3183440.3183494	SAFL	Proceedings of the 40th International Conference on Software Engineering: Companion Proceeedings	proceedings-article
+59	10.1145/3316482.3326341	2019	10.1145/3316482.3326341	ApproxSymate: path sensitive program approximation using symbolic execution	Proceedings of the 20th ACM SIGPLAN/SIGBED International Conference on Languages, Compilers, and Tools for Embedded Systems	proceedings-article
+60	10.1007/978-3-642-45422-6_1	2013	10.1007/978-3-642-45422-6_1	Dynamic Symbolic Execution Guided by Data Dependency Analysis for High Structural Coverage	Communications in Computer and Information Science	book-chapter
+61	10.1109/apsec53868.2021.00072	2021	10.1109/apsec53868.2021.00072	Extracting a Micro State Transition Table Using the KLEE Symbolic Execution Engine	2021 28th Asia-Pacific Software Engineering Conference (APSEC)	proceedings-article
+62	10.1016/j.jsc.2016.07.012	2017	10.1016/j.jsc.2016.07.012	A generic framework for symbolic execution: A coinductive approach	Journal of Symbolic Computation	journal-article
+63	10.1145/2254064.2254088	2012	10.1145/2254064.2254088	Efficient state merging in symbolic execution	Proceedings of the 33rd ACM SIGPLAN Conference on Programming Language Design and Implementation	proceedings-article
+64	10.21236/ada187494	1987	10.21236/ada187494	Optical Symbolic Processor for Expert System Execution		report
+65	10.17918/00001738	None	10.17918/00001738	ObfuscatorDynamic-LLVM		dissertation
+66	10.1016/j.robot.2013.09.015	2014	10.1016/j.robot.2013.09.015	Manipulation planning using learned symbolic state abstractions	Robotics and Autonomous Systems	journal-article
+67	10.1016/j.ifacol.2017.08.1610	2017	10.1016/j.ifacol.2017.08.1610	Integration of Symbolic Execution into a Formal Abstract State Machines based Language	IFAC-PapersOnLine	journal-article
+68	10.1007/s10614-013-9418-3	2015	10.1007/s10614-013-9418-3	Tractable Latent State Filtering for Non-Linear DSGE Models Using a Second-Order Approximation and Pruning	Computational Economics	journal-article
+69	10.3724/sp.j.1016.2010.00589	2010	10.3724/sp.j.1016.2010.00589	Symbolic Test Generation and Execution of Route Protocol	Chinese Journal of Computers	journal-article
+70	10.1109/sefm.2010.20	2010	10.1109/sefm.2010.20	A Method for Testing Software Systems Based on State Design Pattern Using Symbolic Execution	2010 8th IEEE International Conference on Software Engineering and Formal Methods	proceedings-article
+71	10.26226/morressier.604907f41a80aac83ca25d1b	2021	10.26226/morressier.604907f41a80aac83ca25d1b	Coupled Relational Symbolic Execution for Differential Privacy		posted-content
+72	10.1007/978-3-642-28891-3_6	2012	10.1007/978-3-642-28891-3_6	Symbolic Execution of Communicating and Hierarchically Composed UML-RT State Machines	Lecture Notes in Computer Science	book-chapter
+73	10.1145/3808306	2026	10.1145/3808306	Soteria: Efficient Symbolic Execution as a Functional Library: Perhaps You Should Write Your Own Symbolic Execution Engine!	Proceedings of the ACM on Programming Languages	journal-article
+74	10.5373/jardcs/v11/20192594	2019	10.5373/jardcs/v11/20192594	Bias Approximation and Correction Using Selective Pruning for Brain MR Image	Journal of Advanced Research in Dynamical and Control Systems	journal-article
+75	10.1007/978-3-642-04694-0_6	2009	10.1007/978-3-642-04694-0_6	State Joining and Splitting for the Symbolic Execution of Binaries	Lecture Notes in Computer Science	book-chapter
+76	10.14711/thesis-b1450539	None	10.14711/thesis-b1450539	Scalable symbolic analysis of large real world programs using API abstraction and execution histories		dissertation
+77	10.21236/ada538843	2009	10.21236/ada538843	Loop-Extended Symbolic Execution on Binary Programs		report
+78	10.1007/1-4020-0613-6_18741	2000	10.1007/1-4020-0613-6_18741	symbolic execution	Computer Science and Communications Dictionary	book-chapter
+79	10.1109/issre.2018.00019	2018	10.1109/issre.2018.00019	Worst-Case Execution Time Testing via Evolutionary Symbolic Execution	2018 IEEE 29th International Symposium on Software Reliability Engineering (ISSRE)	proceedings-article
+80	10.1007/bf01806061	1991	10.1007/bf01806061	Compiling lisp programs for parallel execution	Lisp and Symbolic Computation	journal-article
+81	10.1631/fitee.1900213	2020	10.1631/fitee.1900213	Modified condition/decision coverage (MC/DC) oriented compiler optimization for symbolic execution	Frontiers of Information Technology &amp; Electronic Engineering	journal-article
+82	10.1007/s10009-018-0490-9	2019	10.1007/s10009-018-0490-9	The Symbolic Execution Debugger (SED): a platform for interactive symbolic execution, debugging, verification and more	International Journal on Software Tools for Technology Transfer	journal-article
+83	10.1145/1858996.1859035	2010	10.1145/1858996.1859035	Symbolic PathFinder	Proceedings of the IEEE/ACM international conference on Automated software engineering	proceedings-article
+84	10.4043/7217-ms	1993	10.4043/7217-ms	Snorre Project Execution: Lessons Learned	Offshore Technology Conference	proceedings-article
+85	10.5220/0012586200003687	2024	10.5220/0012586200003687	An Integrated Visualization Approach Combining Dynamic Data-Flow Analysis with Symbolic Execution	Proceedings of the 19th International Conference on Evaluation of Novel Approaches to Software Engineering	proceedings-article
+86	10.1007/978-3-031-63790-2_15	2024	10.1007/978-3-031-63790-2_15	Using Symbolic Execution to Transform Turbo Abstract State Machines into Basic Abstract State Machines	Lecture Notes in Computer Science	book-chapter
+87	10.1109/glsv.1995.516029	None	10.1109/glsv.1995.516029	Symbolic execution of data paths	Proceedings. Fifth Great Lakes Symposium on VLSI	proceedings-article
+88	10.1145/2001420.2001425	2011	10.1145/2001420.2001425	Symbolic execution with mixed concrete-symbolic solving	Proceedings of the 2011 International Symposium on Software Testing and Analysis	proceedings-article
+89	10.1109/synasc.2010.78	2010	10.1109/synasc.2010.78	Path Directed Symbolic Execution in the K Framework	2010 12th International Symposium on Symbolic and Numeric Algorithms for Scientific Computing	proceedings-article
+90	10.1109/wcre.2013.6671323	2013	10.1109/wcre.2013.6671323	Specification extraction by symbolic execution	2013 20th Working Conference on Reverse Engineering (WCRE)	proceedings-article
+91	10.1007/978-3-642-04167-9_13	2009	10.1007/978-3-642-04167-9_13	Abstract Interpretation of Symbolic Execution with Explicit State Updates	Lecture Notes in Computer Science	book-chapter
+92	10.1145/zenodo.3895271	2020	10.1145/zenodo.3895271	Replication package for: Running Symbolic Execution Forever	Artifact Digital Object Group	dataset
+93	10.21203/rs.3.rs-9969464/v1	2026	10.21203/rs.3.rs-9969464/v1	XEGMAP: Adaptive Symbolic Execution for Race Condition Detection in Binary Programs		posted-content
+94	10.1021/acs.analchem.0c00899.s001	None	10.1021/acs.analchem.0c00899.s001	Symbolic Aggregate Approximation Improves Gap Filling in High-Resolution Mass Spectrometry Data Processing		component
+95	10.32388/m70z49	2025	10.32388/m70z49	"Review of: ""LLM-ABBA: Understanding Time Series via Symbolic Approximation"""		peer-review
+96	10.1080/03071375.1987.9756353	1987	10.1080/03071375.1987.9756353	PRUNING OF STREET TREES: CAUSE, OBJECTIVE AND EXECUTION	Arboricultural Journal	journal-article
+97	10.20944/preprints201808.0157.v1	2018	10.20944/preprints201808.0157.v1	Basal Ganglia Paths Support Acute vs. Learned Execution, Not Movement vs. Stopping		posted-content
+98	10.4043/otc-20287-ms	2009	10.4043/otc-20287-ms	Agbami Nigerian Content Execution – Successes, Challenges and Lessons Learned	Proceedings of Offshore Technology Conference	proceedings-article
+99	10.14232/phd.4138	None	10.14232/phd.4138	Symbolic Execution for Runtime Error Detection and Investigation of Refactoring Activities Based on a New Dataset		dissertation
+100	10.1109/synasc49474.2019.00009	2019	10.1109/synasc49474.2019.00009	On the Nature of Symbolic Execution	2019 21st International Symposium on Symbolic and Numeric Algorithms for Scientific Computing (SYNASC)	proceedings-article

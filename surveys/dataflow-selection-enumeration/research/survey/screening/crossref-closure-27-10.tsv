@@ -1,0 +1,101 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1023/a:1016091902809	2002	10.1023/a:1016091902809	Bisimulation Minimization and Symbolic Model Checking	Formal Methods in System Design	journal-article
+2	10.1007/978-3-319-10575-8_8	2018	10.1007/978-3-319-10575-8_8	BDD-Based Symbolic Model Checking	Handbook of Model Checking	book-chapter
+3	10.1007/978-3-030-11245-5_25	2019	10.1007/978-3-030-11245-5_25	A Parallel Relation-Based Algorithm for Symbolic Bisimulation Minimization	Lecture Notes in Computer Science	book-chapter
+4	10.1109/ddecs.2006.1649562	None	10.1109/ddecs.2006.1649562	Minimization of Large State Spaces using Symbolic Branching Bisimulation	2006 IEEE Design and Diagnostics of Electronic Circuits and systems	proceedings-article
+5	10.1007/bfb0023458	1997	10.1007/bfb0023458	Efficient scaling-invariant checking of timed bisimulation	Lecture Notes in Computer Science	book-chapter
+6	10.1007/0-387-25454-4_5	None	10.1007/0-387-25454-4_5	Path Minimization	Advanced BDD Optimization	book-chapter
+7	10.4204/eptcs.54.2	2011	10.4204/eptcs.54.2	Improving BDD Based Symbolic Model Checking with Isomorphism Exploiting Transition Relations	Electronic Proceedings in Theoretical Computer Science	journal-article
+8	10.1007/978-3-642-00602-9_40	2009	10.1007/978-3-642-00602-9_40	Symbolic Branching Bisimulation-Checking of Dense-Time Systems in an Environment	Lecture Notes in Computer Science	book-chapter
+9	10.1609/socs.v4i1.18285	2021	10.1609/socs.v4i1.18285	Constrained Symbolic Search: On Mutexes, BDD Minimization and More	Proceedings of the International Symposium on Combinatorial Search	journal-article
+10	10.1007/0-387-25454-4_4	None	10.1007/0-387-25454-4_4	Heuristic Node Minimization	Advanced BDD Optimization	book-chapter
+11	10.1007/0-387-25454-4_3	None	10.1007/0-387-25454-4_3	Exact Node Minimization	Advanced BDD Optimization	book-chapter
+12	10.1109/edtc.1995.470376	None	10.1109/edtc.1995.470376	Checking signal transition graph implementability by symbolic BDD traversal	Proceedings the European Design and Test Conference. ED&amp;TC 1995	proceedings-article
+13	10.1007/978-1-4615-3190-6_3	1993	10.1007/978-1-4615-3190-6_3	Symbolic Model Checking	Symbolic Model Checking	book-chapter
+14	10.1007/3-540-45988-x_5	2002	10.1007/3-540-45988-x_5	Integrating BDD-Based and SAT-Based Symbolic Model Checking	Lecture Notes in Computer Science	book-chapter
+15	10.1007/bf02916743	1999	10.1007/bf02916743	Symbolic transition graph and its early bisimulation checking algorithms for the π-calculus	Science in China Series E: Technological Sciences	journal-article
+16	10.1007/978-3-642-34281-3_28	2012	10.1007/978-3-642-34281-3_28	Symbolic Model-Checking of Stateful Timed CSP Using BDD and Digitization	Lecture Notes in Computer Science	book-chapter
+17	10.1145/1228784.1228880	2007	10.1145/1228784.1228880	Optimization techniques for BDD-based bisimulation computation	Proceedings of the 17th ACM Great Lakes symposium on VLSI	proceedings-article
+18	10.1016/j.entcs.2004.06.061	2005	10.1016/j.entcs.2004.06.061	Exploiting Target Enlargement and Dynamic Abstraction within Mixed BDD and SAT Invariant Checking	Electronic Notes in Theoretical Computer Science	journal-article
+19	10.1007/978-3-540-24732-6_13	2004	10.1007/978-3-540-24732-6_13	Verification of Java Programs Using Symbolic Execution and Invariant Generation	Lecture Notes in Computer Science	book-chapter
+20	10.1007/978-1-4615-3190-6_2	1993	10.1007/978-1-4615-3190-6_2	Model Checking	Symbolic Model Checking	book-chapter
+21	10.1109/pic.2014.6972373	2014	10.1109/pic.2014.6972373	Implementations for checking bisimulation of LTS	2014 IEEE International Conference on Progress in Informatics and Computing	proceedings-article
+22	10.1109/csf.2010.28	2010	10.1109/csf.2010.28	Automating Open Bisimulation Checking for the Spi Calculus	2010 23rd IEEE Computer Security Foundations Symposium	proceedings-article
+23	10.1007/978-3-642-27940-9_27	2012	10.1007/978-3-642-27940-9_27	Loop Invariant Symbolic Execution for Parallel Programs	Lecture Notes in Computer Science	book-chapter
+24	10.1007/978-1-4615-3190-6_6	1993	10.1007/978-1-4615-3190-6_6	Mu-Calculus Model Checking	Symbolic Model Checking	book-chapter
+25	10.1007/978-1-4615-3190-6_7	1993	10.1007/978-1-4615-3190-6_7	Induction and Model Checking	Symbolic Model Checking	book-chapter
+26	10.1016/s0167-9260(01)00021-9	2001	10.1016/s0167-9260(01)00021-9	History-based dynamic BDD minimization	Integration	journal-article
+27	10.1007/978-1-4615-1425-1_6	2001	10.1007/978-1-4615-1425-1_6	BDD Minimization	Spectral Techniques in VLSI CAD	book-chapter
+28	10.1109/dac.1999.781225	None	10.1109/dac.1999.781225	Using lower bounds during dynamic BDD minimization	Proceedings 1999 Design Automation Conference (Cat. No. 99CH36361)	proceedings-article
+29	10.1109/iscas.2009.5118427	2009	10.1109/iscas.2009.5118427	Approximate BDD Minimization by Weighted A.	2009 IEEE International Symposium on Circuits and Systems	proceedings-article
+30	10.1109/dac.1998.724515	None	10.1109/dac.1998.724515	Incremental CTL model checking using BDD subsetting	Proceedings 1998 Design and Automation Conference. 35th DAC. (Cat. No.98CH36175)	proceedings-article
+31	10.1007/springerreference_57935	None	10.1007/springerreference_57935	Symbolic Model Checking, 1990; Burch, Clarke, McMillan, Dill	SpringerReference	reference-entry
+32	10.1109/icasic.2005.1611465	2005	10.1109/icasic.2005.1611465	BDD minimization based on genetic tabu hybrid strategy	2005 6th International Conference on ASIC	proceedings-article
+33	10.7494/csci.2025.26.2.6411	2025	10.7494/csci.2025.26.2.6411	Using Splitter Ordering Heuristics to Improve Bisimulation in Probabilistic Model Checking	Computer Science	journal-article
+34	10.1007/0-387-34600-7_2	None	10.1007/0-387-34600-7_2	Symbolic Model Checking	Series on Integrated Circuits and Systems	book-chapter
+35	10.1007/978-3-642-33654-6_18	2012	10.1007/978-3-642-33654-6_18	Efficient Symbolic Implementation of Graph Automata with Applications to Invariant Checking	Lecture Notes in Computer Science	book-chapter
+36	10.1145/3691620.3695014	2024	10.1145/3691620.3695014	LLM Meets Bounded Model Checking: Neuro-symbolic Loop Invariant Inference	Proceedings of the 39th IEEE/ACM International Conference on Automated Software Engineering	proceedings-article
+37	10.1007/978-1-4615-3190-6	1993	10.1007/978-1-4615-3190-6	Symbolic Model Checking		book
+38	10.1109/dac.1997.597145	None	10.1109/dac.1997.597145	Safe BDD Minimization Using Don't Cares	Proceedings of the 34th Design Automation Conference	proceedings-article
+39	10.1109/tse.2006.74	2006	10.1109/tse.2006.74	Backward Bisimulation in Markov Chain Model Checking	IEEE Transactions on Software Engineering	journal-article
+40	10.3724/sp.j.1001.2009.03449	2009	10.3724/sp.j.1001.2009.03449	Symbolic Model Checking of ETL	Journal of Software	journal-article
+41	10.1093/jigpal/7.1.103	1999	10.1093/jigpal/7.1.103	Bisimulation, modal logic and model checking games	Logic Journal of IGPL	journal-article
+42	10.1007/978-3-319-25942-0_3	2015	10.1007/978-3-319-25942-0_3	A Comparative Study of BDD Packages for Probabilistic Symbolic Model Checking	Lecture Notes in Computer Science	book-chapter
+43	10.1007/978-3-540-24603-9_2	2004	10.1007/978-3-540-24603-9_2	2. Semantics Based on Bisimulation	Lecture Notes in Computer Science	book-chapter
+44	10.1109/qest.2004.1348036	2004	10.1109/qest.2004.1348036	Backward stochastic bisimulation in CSL model checking	First International Conference on the Quantitative Evaluation of Systems, 2004. QEST 2004. Proceedings.	proceedings-article
+45	10.4204/eptcs.86.2	2012	10.4204/eptcs.86.2	Scalable Minimization Algorithm for Partial Bisimulation	Electronic Proceedings in Theoretical Computer Science	journal-article
+46	10.1007/978-3-540-24730-2_37	2004	10.1007/978-3-540-24730-2_37	Guided Invariant Model Checking Based on Abstraction and Symbolic Pattern Databases	Lecture Notes in Computer Science	book-chapter
+47	10.1109/date.2003.1253698	None	10.1109/date.2003.1253698	Combination of lower bounds in exact BDD minimization	2003 Design, Automation and Test in Europe Conference and Exhibition	proceedings-article
+48	10.1145/309847.309858	1999	10.1145/309847.309858	Using lower bounds during dynamic BDD minimization	Proceedings of the 36th annual ACM/IEEE Design Automation Conference	proceedings-article
+49	10.1007/978-3-540-69738-1_6	None	10.1007/978-3-540-69738-1_6	Interpolants and Symbolic Model Checking	Lecture Notes in Computer Science	book-chapter
+50	10.1016/j.sysarc.2023.103010	2023	10.1016/j.sysarc.2023.103010	On-the-fly bisimulation equivalence checking for fresh-register automata	Journal of Systems Architecture	journal-article
+51	10.1007/3-540-63045-7_30	1997	10.1007/3-540-63045-7_30	Capturing bisimulation-invariant Ptime	Lecture Notes in Computer Science	book-chapter
+52	10.1007/3-540-48153-2_29	1999	10.1007/3-540-48153-2_29	Bisimulation and Model Checking	Lecture Notes in Computer Science	book-chapter
+53	10.1007/3-540-48778-6_15	1999	10.1007/3-540-48778-6_15	Bisimulation Algorithms for Stochastic Process Algebras and Their BDD-Based Implementation	Lecture Notes in Computer Science	book-chapter
+54	10.1017/jsl.2020.77	2021	10.1017/jsl.2020.77	INQUISITIVE BISIMULATION	The Journal of Symbolic Logic	journal-article
+55	10.1016/s0304-3975(98)00314-4	1999	10.1016/s0304-3975(98)00314-4	Bisimulation-invariant PTIME and higher-dimensional μ-calculus	Theoretical Computer Science	journal-article
+56	10.1016/j.jsc.2012.04.001	2013	10.1016/j.jsc.2012.04.001	Invariant functions and invariant relations: An alternative to invariant assertions	Journal of Symbolic Computation	journal-article
+57	10.1007/978-3-319-10575-8_31	2018	10.1007/978-3-319-10575-8_31	Symbolic Model Checking in Non-Boolean Domains	Handbook of Model Checking	book-chapter
+58	10.70675/b3e0ac8bze690z47f6zabdbza6025479e9f0	None	10.70675/b3e0ac8bze690z47f6zabdbza6025479e9f0	Improving the model checking of stutter-invariant LTL properties		dissertation
+59	10.1016/j.tcs.2009.03.022	2009	10.1016/j.tcs.2009.03.022	Backward and forward bisimulation minimization of tree automata	Theoretical Computer Science	journal-article
+60	10.1007/978-1-4615-3190-6_1	1993	10.1007/978-1-4615-3190-6_1	Introduction	Symbolic Model Checking	book-chapter
+61	10.1016/j.tcs.2020.03.001	2020	10.1016/j.tcs.2020.03.001	Bisimulation invariant monadic-second order logic in the finite	Theoretical Computer Science	journal-article
+62	10.1109/ismvl.2017.11	2017	10.1109/ismvl.2017.11	Error Bounded Exact BDD Minimization in Approximate Computing	2017 IEEE 47th International Symposium on Multiple-Valued Logic (ISMVL)	proceedings-article
+63	10.1017/s1755020309990426	2010	10.1017/s1755020309990426	A BISIMULATION CHARACTERIZATION THEOREM FOR HYBRID LOGIC WITH THE CURRENT-STATE BINDER	The Review of Symbolic Logic	journal-article
+64	10.1109/fmcad.2006.4	2006	10.1109/fmcad.2006.4	Advanced Unbounded Model Checking Based on AIGs, BDD Sweeping, And Quantifier Scheduling	2006 Formal Methods in Computer Aided Design	proceedings-article
+65	10.1109/iscas.1996.542094	1996	10.1109/iscas.1996.542094	BDD minimization by truth table permutations	1996 IEEE International Symposium on Circuits and Systems (ISCAS)	proceedings-article
+66	10.1007/978-1-4615-3190-6_10	1993	10.1007/978-1-4615-3190-6_10	Conclusion	Symbolic Model Checking	book-chapter
+67	10.23919/date48585.2020.9116296	2020	10.23919/date48585.2020.9116296	A fast BDD Minimization Framework for Approximate Computing	2020 Design, Automation &amp; Test in Europe Conference &amp; Exhibition (DATE)	proceedings-article
+68	10.1007/978-3-642-24288-5_19	2011	10.1007/978-3-642-24288-5_19	A Fully Symbolic Bisimulation Algorithm	Lecture Notes in Computer Science	book-chapter
+69	10.1109/cdc.2007.4434911	2007	10.1109/cdc.2007.4434911	Symbolic models for nonlinear control systems using approximate bisimulation	2007 46th IEEE Conference on Decision and Control	proceedings-article
+70	10.1109/lics.2015.40	2015	10.1109/lics.2015.40	PDL Is the Bisimulation-Invariant Fragment of Weak Chain Logic	2015 30th Annual ACM/IEEE Symposium on Logic in Computer Science	proceedings-article
+71	10.21236/ada401014	1999	10.21236/ada401014	Approximate Symbolic Model Checking Using Overlapping Projections		report
+72	10.21236/ada360973	1999	10.21236/ada360973	Symbolic Model Checking without BDDs		report
+73	10.21236/ada265408	1993	10.21236/ada265408	The Priority Inversion Problem and Real-Time Symbolic Model Checking		report
+74	10.1007/bfb0014325	1996	10.1007/bfb0014325	Symbolic bisimulation for timed processes	Lecture Notes in Computer Science	book-chapter
+75	10.3233/fi-2011-513	2011	10.3233/fi-2011-513	BDD-based Bounded Model Checking for Temporal Properties of 1-Safe Petri Nets	Fundamenta Informaticae	journal-article
+76	10.1109/synasc.2016.014	2016	10.1109/synasc.2016.014	Symbolic Computation Techniques in Satisfiability Checking	2016 18th International Symposium on Symbolic and Numeric Algorithms for Scientific Computing (SYNASC)	proceedings-article
+77	10.1109/iccad.1993.580106	None	10.1109/iccad.1993.580106	Tri-state bus conflict checking method for ATPG using BDD	Proceedings of 1993 International Conference on Computer Aided Design (ICCAD)	proceedings-article
+78	10.31274/etd-180810-2060	None	10.31274/etd-180810-2060	Comparison of encoding schemes for symbolic model checking of bounded petri nets		dissertation
+79	10.1017/cbo9780511623660.007	1999	10.1017/cbo9780511623660.007	Symbolic Methods	Classical Invariant Theory	book-chapter
+80	10.1007/978-1-4615-3190-6_8	1993	10.1007/978-1-4615-3190-6_8	Equivalence Computations	Symbolic Model Checking	book-chapter
+81	10.1016/j.tcs.2012.07.034	2012	10.1016/j.tcs.2012.07.034	A complete symbolic bisimulation for full applied pi calculus	Theoretical Computer Science	journal-article
+82	10.1109/iscas51556.2021.9401583	2021	10.1109/iscas51556.2021.9401583	An Adaptive Metric for Node Substitution-Based BDD Minimization	2021 IEEE International Symposium on Circuits and Systems (ISCAS)	proceedings-article
+83	10.1109/aspdac.2016.7428057	2016	10.1109/aspdac.2016.7428057	BDD minimization for approximate computing	2016 21st Asia and South Pacific Design Automation Conference (ASP-DAC)	proceedings-article
+84	10.1145/277044.277171	1998	10.1145/277044.277171	Incremental CTL model checking using BDD subsetting	Proceedings of the 35th annual conference on Design automation conference  - DAC '98	proceedings-article
+85	10.1007/978-0-387-73661-7_19	None	10.1007/978-0-387-73661-7_19	Exact BDD Minimization for Path-Related Objective Functions	IFIP International Federation for Information Proc	book-chapter
+86	10.1109/test.2000.894219	None	10.1109/test.2000.894219	Static property checking using ATPG vs. BDD techniques	Proceedings International Test Conference 2000 (IEEE Cat. No.00CH37159)	proceedings-article
+87	10.1016/j.jsc.2019.07.017	2020	10.1016/j.jsc.2019.07.017	Symbolic computation and satisfiability checking	Journal of Symbolic Computation	journal-article
+88	10.1145/3372884.3373161	2020	10.1145/3372884.3373161	Symbolic bisimulation for open and parameterized systems	Proceedings of the 2020 ACM SIGPLAN Workshop on Partial Evaluation and Program Manipulation	proceedings-article
+89	10.1007/3-540-47813-2_13	2002	10.1007/3-540-47813-2_13	Verifying BDD Algorithms through Monadic Interpretation	Lecture Notes in Computer Science	book-chapter
+90	10.1007/978-1-4615-3190-6_4	1993	10.1007/978-1-4615-3190-6_4	The SMV System	Symbolic Model Checking	book-chapter
+91	10.4204/eptcs.14.3	2009	10.4204/eptcs.14.3	Distributed Branching Bisimulation Minimization by Inductive Signatures	Electronic Proceedings in Theoretical Computer Science	journal-article
+92	10.1007/978-3-642-27848-8_416-2	2014	10.1007/978-3-642-27848-8_416-2	Symbolic Model Checking	Encyclopedia of Algorithms	book-chapter
+93	10.1007/978-3-319-10575-8_25	2018	10.1007/978-3-319-10575-8_25	Symbolic Trajectory Evaluation	Handbook of Model Checking	book-chapter
+94	10.1007/978-3-211-77417-5_2	None	10.1007/978-3-211-77417-5_2	Invariant theory of finite groups	Texts and Monographs in Symbolic Computation	book-chapter
+95	10.1109/dac.1998.724524	None	10.1109/dac.1998.724524	Don't care-based BDD minimization for embedded software	Proceedings 1998 Design and Automation Conference. 35th DAC. (Cat. No.98CH36175)	proceedings-article
+96	10.1017/cbo9780511615436.003	2003	10.1017/cbo9780511615436.003	The symbolic method	Lectures on Invariant Theory	book-chapter
+97	10.1007/11812128_17	2006	10.1007/11812128_17	Bisimulation Minimization of Tree Automata	Lecture Notes in Computer Science	book-chapter
+98	10.1109/acc.2000.876986	2000	10.1109/acc.2000.876986	Supervisory control problem using symbolic bisimulation techniques	Proceedings of the 2000 American Control Conference. ACC (IEEE Cat. No.00CH36334)	proceedings-article
+99	10.1007/978-1-4939-2864-4_416	2016	10.1007/978-1-4939-2864-4_416	Symbolic Model Checking	Encyclopedia of Algorithms	book-chapter
+100	10.1016/j.ifacol.2018.08.001	2018	10.1016/j.ifacol.2018.08.001	Optimal Symbolic Controllers Determinization for BDD storage	IFAC-PapersOnLine	journal-article

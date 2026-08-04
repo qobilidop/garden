@@ -1,0 +1,23 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1007/978-3-662-46681-0_28	2015	10.1007/978-3-662-46681-0_28	Stateless Model Checking for TSO and PSO	Tools and Algorithms for the Construction and Analysis of Systems	book-chapter
+2	10.1145/3073408	2017	10.1145/3073408	Source Sets: A Foundation for Optimal Dynamic Partial Order Reduction	Journal of the ACM	journal-article
+3	10.1007/978-3-319-63387-9_26	2017	10.1007/978-3-319-63387-9_26	Context-Sensitive Dynamic Partial Order Reduction	Computer Aided Verification	book-chapter
+4	10.1145/1810891.1810910	2010	10.1145/1810891.1810910	Erlang	Communications of the ACM	journal-article
+5	10.1007/978-3-319-66845-1_15	2017	10.1007/978-3-319-66845-1_15	Testing and Verifying Chain Repair Methods for Corfu Using Stateless Model Checking	Integrated Formal Methods	book-chapter
+6	10.6084/m9.figshare.5918701.v1	2018	10.6084/m9.figshare.5918701.v1	Binary Artifact for TACAS-2018 Paper “Optimal DPOR with Observers”	Figshare	dataset
+7	10.1145/3158119	2018	10.1145/3158119	Data-Centric Dynamic Partial Order Reduction	Proceedings of the ACM on Programming Languages	journal-article
+8	10.1109/icst.2013.50	2013	10.1109/icst.2013.50	Systematic Testing for Detecting Concurrency Errors in Erlang Programs	IEEE International Conference on Software Testing, Verification and Validation	proceedings-article
+9	10.1007/s100090050035	1999	10.1007/s100090050035	State Space Reduction Using Partial Order Techniques	International Journal on Software Tools for Technology Transfer	journal-article
+10	10.1145/1040305.1040315	2005	10.1145/1040305.1040315	Dynamic Partial-Order Reduction for Model Checking Software	ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages	proceedings-article
+11	10.1007/3-540-60761-7	1996	10.1007/3-540-60761-7	Partial-Order Methods for the Verification of Concurrent Systems: An Approach to the State-Explosion Problem	Lecture Notes in Computer Science	book
+12	10.1145/263699.263717	1997	10.1145/263699.263717	Model Checking for Programming Languages Using VeriSoft	ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages	proceedings-article
+13	10.1007/3-540-56922-7_36	1993	10.1007/3-540-56922-7_36	Refining Dependencies Improves Partial-Order Verification Methods (Extended Abstract)	Computer Aided Verification	book-chapter
+14	10.6084/m9.figshare.5896615	2018	10.6084/m9.figshare.5896615	TACAS 2018 Artifact Evaluation VM	Figshare	dataset
+15	10.1145/359545.359563	1978	10.1145/359545.359563	Time, Clocks, and the Ordering of Events in a Distributed System	Communications of the ACM	journal-article
+16	10.1145/7351.7352	1987	10.1145/7351.7352	A Fast Mutual Exclusion Algorithm	ACM Transactions on Computer Systems	journal-article
+17	10.1007/978-3-662-49674-9_44	2016	10.1007/978-3-662-49674-9_44	Partial Order Reduction for Event-Driven Multi-threaded Programs	Tools and Algorithms for the Construction and Analysis of Systems	book-chapter
+18	citation-18	1989		Virtual Time and Global States of Distributed Systems	Workshop on Parallel and Distributed Algorithms	proceedings-article
+19	10.1007/3-540-17906-2_30	1987	10.1007/3-540-17906-2_30	Trace Theory	Petri Nets: Central Models and Their Properties	book-chapter
+20	10.1007/3-540-56922-7_34	1993	10.1007/3-540-56922-7_34	All from One, One for All: On Model Checking Using Representatives	Computer Aided Verification	book-chapter
+21	10.1007/978-3-642-30793-5_14	2012	10.1007/978-3-642-30793-5_14	TransDPOR: A Novel Dynamic Partial-Order Reduction Technique for Testing Actor Programs	Formal Methods for Open Object-Based Distributed Systems and Formal Techniques for Networked and Distributed Systems	book-chapter
+22	10.1007/3-540-53863-1_36	1991	10.1007/3-540-53863-1_36	Stubborn Sets for Reduced State Space Generation	Advances in Petri Nets	book-chapter

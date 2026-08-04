@@ -1,0 +1,31 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1145/289423.289451	1998	10.1145/289423.289451	Cayenne—a language with dependent types	Proceedings of the third ACM SIGPLAN international conference on Functional programming	proceedings-article
+2	e_1_3_2_2_2_1	2007		CAV		reference
+3	e_1_3_2_2_3_1	2000		CAV		reference
+4	e_1_3_2_2_4_1	2003		CAV		reference
+5	10.1007/BF00264295	1983	10.1007/BF00264295	A sound and relatively complete Hoare-logic for a language with higher type procedures	Acta Informatica	journal-article
+6	e_1_3_2_2_6_1	1983		Logic of Programs		reference
+7	10.1016/0890-5401(89)90040-0	1989	10.1016/0890-5401(89)90040-0	Reasoning about procedures as parameters in the language L4	Information and Computation	journal-article
+8	10.5555/648065.747607		10.5555/648065.747607			reference
+9	10.1145/1375581.1375616	2008	10.1145/1375581.1375616	Program analysis as constraint solving	Proceedings of the 29th ACM SIGPLAN Conference on Programming Language Design and Implementation	proceedings-article
+10	10.1145/363235.363259	1969	10.1145/363235.363259	An axiomatic basis for computer programming	Communications of the ACM	journal-article
+11	10.1007/11787006_31	2006	10.1007/11787006_31	Descriptive and Relative Completeness of Logics for Higher-Order Functions	Lecture Notes in Computer Science	book-chapter
+12	10.1145/1592434.1592438	2009	10.1145/1592434.1592438	Software model checking	ACM Computing Surveys	journal-article
+13	e_1_3_2_2_13_1	2011		CAV		reference
+14	10.1007/11691372_33	2006	10.1007/11691372_33	A Practical and Complete Approach to Predicate Refinement	Lecture Notes in Computer Science	book-chapter
+15	e_1_3_2_2_15_1	1985		FPCA		reference
+16	10.1145/1480881.1480933	2009	10.1145/1480881.1480933	Types and higher-order recursion schemes for verification of higher-order programs	Proceedings of the 36th annual ACM SIGPLAN-SIGACT symposium on Principles of programming languages	proceedings-article
+17	10.1109/LICS.2009.29	2009	10.1109/LICS.2009.29	A Type System Equivalent to the Modal Mu-Calculus Model Checking of Higher-Order Recursion Schemes	2009 24th Annual IEEE Symposium on Logic In Computer Science	proceedings-article
+18	10.1145/1993498.1993525	2011	10.1145/1993498.1993525	Predicate abstraction and CEGAR for higher-order model checking	Proceedings of the 32nd ACM SIGPLAN Conference on Programming Language Design and Implementation	proceedings-article
+19	10.1109/LICS.2011.22	2011	10.1109/LICS.2011.22	Linear Dependent Types and Relative Completeness	2011 IEEE 26th Annual Symposium on Logic in Computer Science	proceedings-article
+20	10.1145/2038642.2038659	2011	10.1145/2038642.2038659	Computing semi-algebraic invariants for polynomial dynamical systems	Proceedings of the ninth ACM international conference on Embedded software	proceedings-article
+21	10.1016/0304-3975(84)90066-5	1984	10.1016/0304-3975(84)90066-5	Correctness of programs with Pascal-like procedures without global variables	Theoretical Computer Science	journal-article
+22	e_1_3_2_2_22_1	2011		CSL		reference
+23	10.1145/1375581.1375602	2008	10.1145/1375581.1375602	Liquid types	Proceedings of the 29th ACM SIGPLAN Conference on Programming Language Design and Implementation	proceedings-article
+24	10.1007/978-3-540-27864-1_7	2004	10.1007/978-3-540-27864-1_7	Constraint-Based Linear-Relations Analysis	Lecture Notes in Computer Science	book-chapter
+25	10.1145/1706299.1706337	2010	10.1145/1706299.1706337	From program verification to program synthesis	Proceedings of the 37th annual ACM SIGPLAN-SIGACT symposium on Principles of programming languages	proceedings-article
+26	10.1145/1706299.1706315	2010	10.1145/1706299.1706315	Dependent types from counterexamples	Proceedings of the 37th annual ACM SIGPLAN-SIGACT symposium on Principles of programming languages	proceedings-article
+27	10.1145/1599410.1599445	2009	10.1145/1599410.1599445	Dependent type inference with interpolants	Proceedings of the 11th ACM SIGPLAN conference on Principles and practice of declarative programming	proceedings-article
+28	10.1145/2429069.2429081	2013	10.1145/2429069.2429081	Automating relatively complete verification of higher-order functional programs	Proceedings of the 40th annual ACM SIGPLAN-SIGACT symposium on Principles of programming languages	proceedings-article
+29	10.1006/inco.1994.1093	1994	10.1006/inco.1994.1093	A Syntactic Approach to Type Soundness	Information and Computation	journal-article
+30	10.1145/292540.292560	1999	10.1145/292540.292560	Dependent types in practical programming	Proceedings of the 26th ACM SIGPLAN-SIGACT symposium on Principles of programming languages	proceedings-article

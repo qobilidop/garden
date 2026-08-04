@@ -836,6 +836,54 @@ If round 27 reopens the map, round 28 is retired unexecuted. If both qualify,
 they establish the two-round no-add sequence only for these recorded sources,
 queries, capture date, rankings, and trigger.
 
+## Outcome of round 27 and retirement of round 28
+
+Round 27 is not a no-add round. The primary screener and two independent
+reviewers each resolved all 1,200 captured records. Every snapshot contains
+exactly 100 unique source identifiers and ranks 1--100 exactly once. The two
+reviewers independently found the same decisive families and agreed that the
+map must reopen:
+
+- exact guarded heap summaries, proved bisimilar to generalized symbolic
+  execution, and path-optimal symbolic execution with ite-valued heap fields;
+- minimal-explanation basis observers whose unobservable reach equals the
+  complete marking estimate, observation-equivalent Petri-net generator
+  compilation, and exact minimum-initial-marking estimators under silent and
+  timed behavior;
+- observer-conditioned DPOR, where future observer operations determine the
+  dependency relation and one representative is retained per observational
+  class; and
+- supporting graph-subsumption, relatively complete higher-order
+  verification, probabilistic-estimation, and symbolic-bisimulation lineage.
+
+The evidence boundary is material. Hillery et al.'s equivalence follows from a
+primary full-text bisimulation result. Braione et al.'s path-optimality claim is
+primary-full-text and empirical/formal at the algorithm level, but a
+soundness-and-completeness proof against generalized symbolic execution is
+explicitly left for future work. Ruan et al.'s minimum-initial-marking result
+is exact only under its stated contact-free silent-transition assumptions;
+heuristic successors are not promoted to exact results. Several 2024--2026
+Petri-net extensions remain abstract- or metadata-level comparators and are
+not used for stronger mechanism claims.
+
+All eight critical additions were then backward- and forward-chased before a
+later prospective batch was selected. Their exact primary bibliographies
+contained 242 records and their bounded forward indexes contained 228 records,
+all title-screened. The chases reopened the map again with guarded and modular
+heap-summary antecedents, representative and timed marking estimators,
+reads-from and reads-value-from schedule quotients, canonical symbolic
+distributed configurations, and dynamic cone-of-influence reduction. These
+strengthen established conditional-value, inverse-observation, schedule-
+quotient, and property-relevance clusters; none supplies the paper's exact
+caller-input observer-fiber result. All have nevertheless been cataloged and
+the strongest comparators incorporated before the next queries were chosen.
+
+Round 28's execution precondition required
+round 27 to add neither a conceptual cluster nor a plausible close competitor.
+That precondition failed, so round 28 is retired unexecuted and cannot count
+toward closure. Two later rounds must be frozen only after the citation
+neighborhood reconciliation is complete.
+
 ## Independent audit
 
 After both replacement rounds qualify, a reviewer who did not choose the
