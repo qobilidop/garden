@@ -1,0 +1,101 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1109/tac.2016.2574120	2017	10.1109/tac.2016.2574120	Basis Marking Representation of Petri Net Reachability Spaces and Its Application to the Reachability Problem	IEEE Transactions on Automatic Control	journal-article
+2	10.1109/tac.2020.2983088	2021	10.1109/tac.2020.2983088	Marking Estimation in Petri Nets Using Hierarchical Basis Reachability Graphs	IEEE Transactions on Automatic Control	journal-article
+3	10.3724/sp.j.1001.2008.03111	2009	10.3724/sp.j.1001.2008.03111	Symbolic Reachability Analysis of Hybrid Systems	Journal of Software	journal-article
+4	10.70675/f273f52az0906z443cza443z172023a62cf5	None	10.70675/f273f52az0906z443cza443z172023a62cf5	Automatic Symbolic Goal Abstraction via Reachability Analysis in Hierarchical Reinforcement Learning		dissertation
+5	10.1007/978-1-4020-6254-4_10	2007	10.1007/978-1-4020-6254-4_10	Approximate Symbolic Reachability of Networks of Transition Systems	Next Generation Design and Verification Methodologies for Distributed Embedded Control Systems	book-chapter
+6	10.1109/snr39519.2016	2016	10.1109/snr39519.2016	2016 International Workshop on Symbolic and Numerical Methods for Reachability Analysis (SNR)		proceedings
+7	10.1007/978-3-642-15349-5_2	2010	10.1007/978-3-642-15349-5_2	Symbolic and Compositional Reachability for Timed Automata	Lecture Notes in Computer Science	book-chapter
+8	10.1109/snr.2016.7479375	2016	10.1109/snr.2016.7479375	Copyright	2016 International Workshop on Symbolic and Numerical Methods for Reachability Analysis (SNR)	proceedings-article
+9	10.1006/jsco.2001.0472	2001	10.1006/jsco.2001.0472	Symbolic Reachability Computation for Families of Linear Vector Fields	Journal of Symbolic Computation	journal-article
+10	10.29007/249v	None	10.29007/249v	Symbolic-Numeric Reachability Analysis of Hybrid Systems	EPiC Series in Computing	proceedings-article
+11	10.1109/snr.2016.7479374	2016	10.1109/snr.2016.7479374	Front cover	2016 International Workshop on Symbolic and Numerical Methods for Reachability Analysis (SNR)	proceedings-article
+12	10.1016/0967-0661(93)91703-y	1993	10.1016/0967-0661(93)91703-y	072 External reachability for implicit descriptions	Control Engineering Practice	journal-article
+13	10.1016/b978-0-08-042057-8.50081-1	1992	10.1016/b978-0-08-042057-8.50081-1	EXTERNAL REACHABILITY FOR IMPLICIT DESCRIPTIONS	System Structure and Control 1992	book-chapter
+14	10.1002/9781119619727.ch12	2020	10.1002/9781119619727.ch12	Symbolic Heuristic Search	Supervisory Control and Scheduling of Resource Allocation Systems	other
+15	10.1016/j.jsc.2011.12.051	2012	10.1016/j.jsc.2011.12.051	Applying abstract acceleration to (co-)reachability analysis of reactive programs	Journal of Symbolic Computation	journal-article
+16	10.1109/access.2019.2952056	2019	10.1109/access.2019.2952056	Estimation of Least-Cost Transition Firing Sequences in Labeled Petri Nets by Using Basis Reachability Graph	IEEE Access	journal-article
+17	10.1007/s10009-007-0057-7	2008	10.1007/s10009-007-0057-7	Efficient guided symbolic reachability using reachability expressions	International Journal on Software Tools for Technology Transfer	journal-article
+18	10.31274/td-20240329-411	None	10.31274/td-20240329-411	Implicit relations and their derivatives for symbolic state space generation		dissertation
+19	10.1007/11691372_8	2006	10.1007/11691372_8	Efficient Guided Symbolic Reachability Using Reachability Expressions	Lecture Notes in Computer Science	book-chapter
+20	10.1002/symb.699	2024	10.1002/symb.699	Damaged Goods: Victimhood‐Survivorship and the Social Marking of Identity	Symbolic Interaction	journal-article
+21	10.1109/tcst.2018.2877621	2020	10.1109/tcst.2018.2877621	Supervisory Control of Labeled Transition Systems Subject to Multiple Reachability Requirements via Symbolic Model Checking	IEEE Transactions on Control Systems Technology	journal-article
+22	10.1006/jsco.1997.0179	1998	10.1006/jsco.1997.0179	Symbolic Asymptotics: Functions of Two Variables, Implicit Functions	Journal of Symbolic Computation	journal-article
+23	10.7717/peerj.6089/fig-4	None	10.7717/peerj.6089/fig-4	Figure 4: Morphological criteria marking the transition to P9.		component
+24	10.15607/rss.2023.xix.062	2023	10.15607/rss.2023.xix.062	Reachability-based Trajectory Design with Neural Implicit Safety Constraints	Robotics: Science and Systems XIX	proceedings-article
+25	10.1016/j.peva.2003.07.005	2004	10.1016/j.peva.2003.07.005	Implicit GSPN reachability set generation using decision diagrams	Performance Evaluation	journal-article
+26	10.1016/s1474-6670(17)49780-1	1992	10.1016/s1474-6670(17)49780-1	External Reachability for Implicit Descriptions	IFAC Proceedings Volumes	journal-article
+27	10.24200/sci.2018.20104	2018	10.24200/sci.2018.20104	Marking problem: a new approach to reachability assurance in digraphs	Scientia Iranica	journal-article
+28	10.1016/s1474-6670(17)40040-1	1998	10.1016/s1474-6670(17)40040-1	Symbolic Reachability Analysis of Hybrid Systems	IFAC Proceedings Volumes	journal-article
+29	10.1109/wodes.2008.4605965	2008	10.1109/wodes.2008.4605965	Synthesis of controllers using symbolic reachability graphs	2008 9th International Workshop on Discrete Event Systems	proceedings-article
+30	10.1016/j.automatica.2021.109543	2021	10.1016/j.automatica.2021.109543	Least-violating symbolic controller synthesis for safety, reachability and attractivity specifications	Automatica	journal-article
+31	10.1109/snr.2016.7479380	2016	10.1109/snr.2016.7479380	Computing ODE-barriers in hyper-rectangles	2016 International Workshop on Symbolic and Numerical Methods for Reachability Analysis (SNR)	proceedings-article
+32	10.7717/peerj.6089/fig-5	None	10.7717/peerj.6089/fig-5	Figure 5: Morphological criteria marking the transition to P10–P16.		component
+33	10.2172/15003240	2002	10.2172/15003240	Comparison of Implicit and Symbolic Implicit Monte Carlo Line Transport with Frequency Weight Vector Extension		report
+34	10.1002/9781394236817.ch4	2023	10.1002/9781394236817.ch4	Technology and Symbolic Spectacle of Marking by Use	Frugal Innovation and Innovative Creation	other
+35	10.2172/15004652	2002	10.2172/15004652	Comparison of Implicit and Symbolic Implicit Monte Carlo Line Transport With Frequency Weight Vector Extension		report
+36	10.1007/s10990-007-9000-6	2007	10.1007/s10990-007-9000-6	Symbolic reachability analysis using narrowing and its application to verification of cryptographic protocols	Higher-Order and Symbolic Computation	journal-article
+37	10.1109/synasc57785.2022.00016	2022	10.1109/synasc57785.2022.00016	Detecting Implicit Indeterminates in Symbolic Computation	2022 24th International Symposium on Symbolic and Numeric Algorithms for Scientific Computing (SYNASC)	proceedings-article
+38	10.1109/synasc.2018.00066	2018	10.1109/synasc.2018.00066	Proving Reachability Properties by Coinduction (Extended Abstract)	2018 20th International Symposium on Symbolic and Numeric Algorithms for Scientific Computing (SYNASC)	proceedings-article
+39	10.54103/2037-3597/22017	2023	10.54103/2037-3597/22017	IMPLICIT REGISTER MARKING IN GERMAN VIA METAPHOR AND METONYMY	Italiano LinguaDue	journal-article
+40	10.1109/date.2003.1253707	None	10.1109/date.2003.1253707	Set manipulation with Boolean functional vectors for symbolic reachability analysis	2003 Design, Automation and Test in Europe Conference and Exhibition	proceedings-article
+41	10.1007/s11704-014-3002-9	2014	10.1007/s11704-014-3002-9	Property analysis of logic Petri nets by marking reachability graphs	Frontiers of Computer Science	journal-article
+42	10.1007/978-3-642-24288-5_19	2011	10.1007/978-3-642-24288-5_19	A Fully Symbolic Bisimulation Algorithm	Lecture Notes in Computer Science	book-chapter
+43	10.3403/30240424	None	10.3403/30240424	Plastics. Polyamide (PA) moulding and extrusion materials		standard
+44	10.1109/sbcci.1998.715422	None	10.1109/sbcci.1998.715422	A co-synthesis approach based on symbolic reachability analysis	Proceedings. XI Brazilian Symposium on Integrated Circuit Design (Cat. No.98EX216)	proceedings-article
+45	10.1016/j.jsc.2008.06.001	2009	10.1016/j.jsc.2008.06.001	The implicit equation of a canal surface	Journal of Symbolic Computation	journal-article
+46	10.1016/s0747-7171(10)80008-2	1992	10.1016/s0747-7171(10)80008-2	Implicit representation of rational parametric surfaces	Journal of Symbolic Computation	journal-article
+47	10.5772/5328	2008	10.5772/5328	Using Transition Invariants for Reachability Analysis of Petri Nets	Petri Net, Theory and Applications	book-chapter
+48	10.1093/oso/9780195172706.003.0006	2006	10.1093/oso/9780195172706.003.0006	Implicit Information in Eukaryotic Pathogens as the Basis of Antigenic Variation	The Implicit Genome	book-chapter
+49	10.2168/lmcs-4(4:14)2008	2008	10.2168/lmcs-4(4:14)2008	Symbolic Backwards-Reachability Analysis for Higher-Order Pushdown Systems	Logical Methods in Computer Science	journal-article
+50	10.1109/icinfa.2009.5205124	2009	10.1109/icinfa.2009.5205124	Symbolic reachability computation of a class of second-order systems	2009 International Conference on Information and Automation	proceedings-article
+51	10.1006/jsco.2002.0549	2002	10.1006/jsco.2002.0549	Incorporating Decision Procedures in Implicit Induction	Journal of Symbolic Computation	journal-article
+52	10.1145/1277548.1277599	2007	10.1145/1277548.1277599	Symbolic-numeric computation of implicit riquier bases for PDE	Proceedings of the 2007 international symposium on Symbolic and algebraic computation	proceedings-article
+53	10.1007/978-3-642-84524-6_12	1991	10.1007/978-3-642-84524-6_12	Parametrized Reachability Trees for Predicate / Transition Nets	High-level Petri Nets	book-chapter
+54	10.1109/lcsys.2025.3582951	2025	10.1109/lcsys.2025.3582951	On Relaxing the <i>N</i>-Reachability Implicit Requirement in NMPC Design	IEEE Control Systems Letters	journal-article
+55	10.1109/snr.2016.7479378	2016	10.1109/snr.2016.7479378	Software certification of airborne cyber-physical systems under DO-178C	2016 International Workshop on Symbolic and Numerical Methods for Reachability Analysis (SNR)	proceedings-article
+56	10.1007/978-3-7643-7984-1_14	None	10.1007/978-3-7643-7984-1_14	Pythagore’s Dilemma, Symbolic-Numeric Computation, and the Border Basis Method	Trends in Mathematics	book-chapter
+57	10.1007/978-3-642-02652-2_17	2009	10.1007/978-3-642-02652-2_17	Subsumer-First: Steering Symbolic Reachability Analysis	Lecture Notes in Computer Science	book-chapter
+58	10.1007/978-3-642-84524-6_13	1991	10.1007/978-3-642-84524-6_13	On Well-Formed Coloured Nets and Their Symbolic Reachability Graph	High-level Petri Nets	book-chapter
+59	10.1016/j.tcs.2006.07.008	2006	10.1016/j.tcs.2006.07.008	Complete symbolic reachability analysis using back-and-forth narrowing	Theoretical Computer Science	journal-article
+60	10.1525/si.1985.8.2.207	1985	10.1525/si.1985.8.2.207	The Emotional Basis of Charisma*	Symbolic Interaction	journal-article
+61	10.1109/iccad.2006.320120	2006	10.1109/iccad.2006.320120	Decomposing Image Computation for Symbolic Reachability Analysis Using Control Flow Information	2006 IEEE/ACM International Conference on Computer Aided Design	proceedings-article
+62	10.1109/hldvt.2010.5496663	2010	10.1109/hldvt.2010.5496663	An improvement in decomposed reachability analysis for symbolic model checking	2010 IEEE International High Level Design Validation and Test Workshop (HLDVT)	proceedings-article
+63	10.1201/b15909-21	2009	10.1201/b15909-21	D: Implicit Differentiation	Symbolic Dynamics and Geometry	book-chapter
+64	10.1016/j.ifacol.2022.10.341	2022	10.1016/j.ifacol.2022.10.341	PNBA: A Software for Marking Estimation and Reconfiguration in Petri Nets Using Basis Marking Analysis	IFAC-PapersOnLine	journal-article
+65	10.1109/icra.2011.5980008	2011	10.1109/icra.2011.5980008	Symbolic reachability computation using the disjunctive partitioning technique in Supervisory Control Theory	2011 IEEE International Conference on Robotics and Automation	proceedings-article
+66	10.1016/j.entcs.2008.12.036	2008	10.1016/j.entcs.2008.12.036	A New Algorithm for Partitioned Symbolic Reachability Analysis	Electronic Notes in Theoretical Computer Science	journal-article
+67	10.1207/s15327868ms0502_5	1990	10.1207/s15327868ms0502_5	Metaphor--Its Intellectual Basis	Metaphor and Symbolic Activity	journal-article
+68	10.1007/3-540-44685-0_12	2001	10.1007/3-540-44685-0_12	Symbolic Computation of Maximal Probabilisti Reachability	Lecture Notes in Computer Science	book-chapter
+69	10.1016/j.ifacol.2021.04.060	2020	10.1016/j.ifacol.2021.04.060	Symbolic Reachability Analysis of High Dimensional Max-Plus Linear Systems	IFAC-PapersOnLine	journal-article
+70	10.1016/j.jsc.2008.04.020	2009	10.1016/j.jsc.2008.04.020	Implicit Riquier Bases for PDAE and their semi-discretizations	Journal of Symbolic Computation	journal-article
+71	10.1006/jsco.1997.0192	1998	10.1006/jsco.1997.0192	Groebner Basis Under Composition I	Journal of Symbolic Computation	journal-article
+72	10.2139/ssrn.214917	2000	10.2139/ssrn.214917	Partial Basis Indexation: An Implicit Response to Tax Deferral		posted-content
+73	10.1016/j.procs.2012.04.150	2012	10.1016/j.procs.2012.04.150	Reachability Analysis of Concurrent Boolean Programs with Symbolic Counter Abstraction	Procedia Computer Science	journal-article
+74	10.1007/978-3-319-08867-9_27	2014	10.1007/978-3-319-08867-9_27	Reachability Analysis of Hybrid Systems Using Symbolic Orthogonal Projections	Lecture Notes in Computer Science	book-chapter
+75	10.1016/j.automatica.2007.08.004	2008	10.1016/j.automatica.2007.08.004	Symbolic reachability analysis of genetic regulatory networks using discrete abstractions	Automatica	journal-article
+76	10.1109/glocom.1995.502697	None	10.1109/glocom.1995.502697	Reachability analysis for communication service specifications described in global state transition rules	Proceedings of GLOBECOM '95	proceedings-article
+77	10.1109/snr.2016.7479382	2016	10.1109/snr.2016.7479382	CSiSAT: A satisfiability solver for SMT formulas with continuous probability distributions	2016 International Workshop on Symbolic and Numerical Methods for Reachability Analysis (SNR)	proceedings-article
+78	10.1145/1993886.1993910	2011	10.1145/1993886.1993910	Deciding reachability of the infimum of a multivariate polynomial	Proceedings of the 36th international symposium on Symbolic and algebraic computation	proceedings-article
+79	10.1037/11516-003	None	10.1037/11516-003	Forms of implicit denial.	Denial of illness: Symbolic and physiological aspects.	book-chapter
+80	10.1145/307418.307430	1999	10.1145/307418.307430	Symbolic reachability analysis of large finite state machines using don't cares	Proceedings of the conference on Design, automation and test in Europe	proceedings-article
+81	10.1109/icis.2009.146	2009	10.1109/icis.2009.146	Symbolic Reachability Computation of a Class of Nonlinear Systems	2009 Eighth IEEE/ACIS International Conference on Computer and Information Science	proceedings-article
+82	10.3182/20130204-3-fr-2033.00109	2013	10.3182/20130204-3-fr-2033.00109	Some complements about reachability and pole placement for implicit systems	IFAC Proceedings Volumes	journal-article
+83	10.1525/si.2000.23.2.161	2000	10.1525/si.2000.23.2.161	Evil as Indexical: The Implicit Objective Status of Guns and Illegal Drugs	Symbolic Interaction	journal-article
+84	10.1007/978-3-662-10176-6_8	2004	10.1007/978-3-662-10176-6_8	Implicit Functions	Algorithms and Computation in Mathematics	book-chapter
+85	10.1109/access.2023.3236963	2023	10.1109/access.2023.3236963	Robust Diagnosability Analysis Using Basis Reachability Graph	IEEE Access	journal-article
+86	10.1016/s0304-3975(99)00033-x	1999	10.1016/s0304-3975(99)00033-x	Symbolic reachability analysis of FIFO-channel systems with nonregular sets of configurations	Theoretical Computer Science	journal-article
+87	10.1109/synasc.2011.16	2011	10.1109/synasc.2011.16	Reachability Analysis of Time Basic Petri Nets: A Time Coverage Approach	2011 13th International Symposium on Symbolic and Numeric Algorithms for Scientific Computing	proceedings-article
+88	10.1109/apsec.1997.640172	None	10.1109/apsec.1997.640172	Finite symbolic reachability graphs for high-level Petri nets	Proceedings of Joint 4th International Computer Science Conference and 4th Asia Pacific Software Engineering Conference	proceedings-article
+89	10.1007/978-3-642-59789-3_65	2000	10.1007/978-3-642-59789-3_65	Marking and Generalization by Symbolic Objects in the Symbolic Official Data Analysis Software	Studies in Classification, Data Analysis, and Knowledge Organization	book-chapter
+90	10.2307/2274958	1990	10.2307/2274958	Reachability is harder for directed than for undirected finite graphs	Journal of Symbolic Logic	journal-article
+91	10.12987/9780300127171-004	2017	10.12987/9780300127171-004	3. Basis Phenomena	Cassirer's Metaphysics of Symbolic Forms	book-chapter
+92	10.1109/snr.2016.7479376	2016	10.1109/snr.2016.7479376	Accurate rigorous simulation should be possible for good designs	2016 International Workshop on Symbolic and Numerical Methods for Reachability Analysis (SNR)	proceedings-article
+93	10.1016/j.jsc.2011.09.010	2012	10.1016/j.jsc.2011.09.010	On the isotopic meshing of an algebraic implicit surface	Journal of Symbolic Computation	journal-article
+94	10.1016/0747-7171(92)90018-y	1992	10.1016/0747-7171(92)90018-y	On lucky ideals for Gröbner basis computations	Journal of Symbolic Computation	journal-article
+95	10.1016/j.jsc.2010.10.013	2011	10.1016/j.jsc.2010.10.013	Gröbner basis of the alternating galoisian ideal	Journal of Symbolic Computation	journal-article
+96	10.1016/s0304-3975(96)00010-2	1997	10.1016/s0304-3975(96)00010-2	A symbolic reachability graph for coloured petri nets	Theoretical Computer Science	journal-article
+97	10.1109/date.1999.761091	None	10.1109/date.1999.761091	Symbolic reachability analysis of large finite state machines using don't cares	Design, Automation and Test in Europe Conference and Exhibition, 1999. Proceedings (Cat. No. PR00078)	proceedings-article
+98	10.1016/j.scico.2024.103097	2024	10.1016/j.scico.2024.103097	Narrowing and heuristic search for symbolic reachability analysis of concurrent object-oriented systems	Science of Computer Programming	journal-article
+99	10.1145/996566.996790	2004	10.1145/996566.996790	Quantum logic synthesis by symbolic reachability analysis	Proceedings of the 41st annual Design Automation Conference	proceedings-article
+100	10.1109/ivs.2017.7995910	2017	10.1109/ivs.2017.7995910	Symbolic road marking recognition using convolutional neural networks	2017 IEEE Intelligent Vehicles Symposium (IV)	proceedings-article

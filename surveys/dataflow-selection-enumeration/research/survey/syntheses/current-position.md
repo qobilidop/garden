@@ -47,6 +47,9 @@ already supplies:
 - exact BNN-to-OBDD/SDD/d-DNNF compilation that removes hidden activations,
   partitions requested binary input regions by class, and supports sparse exact
   prime-implicant or SHAP explanations;
+- exact Boolean-algebra composition of binary or bipolar neural networks into
+  simplified rules, including output-preserving hidden-neuron removal, and
+  complete minimal-prime-implicant enumeration;
 - exact symmetry-quotient reachability graphs for well-formed colored Petri
   nets, with constraint-based extensions toward asymmetric models;
 - observation-pattern loop-state postponement that prioritizes novel sibling
@@ -59,17 +62,28 @@ already supplies:
   unbounded-loop families, coupled in practice to an approximate LLM oracle;
 - exact symbolic partial-order reduction that retains representative
   independent-event interleavings for local-property verification;
+- SAT/SMT, BDD, concolic, and schedule-bearing symbolic POR methods with
+  soundness, property preservation, optimality, or relative-completeness
+  guarantees, plus explicit approximate variants;
 - symbolic unfoldings that avoid redundant concurrent interleavings and
   commute with component product;
 - exact basis-marking and bisimulation state reductions, a mildly lossy
   time-anonymous abstraction, and estimation graphs for partial observers;
+- exact fixed-structure current-marking sets and minimum-token initial-marking
+  sets for observed Petri-net label words, timed-state observers, hierarchical
+  basis estimators, and bisimilar color-quotient unfoldings;
 - qualifying-event search that caps repeated RTL branches and relaxes the cap
   after new coverage;
 - assertion-summary and compatible-branch pruning with preservation claims
   relative to error reachability or bounded branch coverage;
+- abstract symbolic-state subsumption that finitely under-approximates
+  recursive heap exploration, and learned state/function pruning with explicit
+  approximation;
 - coverage-preserving seed-suite reduction before symbolic exploration;
 - canonical higher-order concolic inputs with soundness and qualified
   bug-finding completeness;
+- earlier sound and counterexample-complete higher-order verification through
+  controlled dynamic dispatch and progressive function unfolding;
 - Lindblad's and Lazy SmallCheck's refinement of exactly the partial-input
   unknown demanded by a Boolean property, with partial constructor terms that
   denote bounded completion sets and pruning once the answer is known;

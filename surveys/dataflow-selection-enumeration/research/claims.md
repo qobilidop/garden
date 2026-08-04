@@ -300,3 +300,48 @@ proof obligations, and evidence.
   closure, contextual site identity, preservation of equal-valued observed
   events, typed residuals, and exact positive inverse fibers over a shared
   pure dataflow graph.
+
+## S11 — Exact choice-record reduction is established for concurrent schedules
+
+- **Status:** survey synthesis; broad novelty defeated
+- **Statement:** Symbolic partial-order methods already retain representative
+  schedule-bearing symbolic paths while omitting interleavings that are
+  equivalent for a declared reachability or temporal-property observer.
+- **Prior frontier:** Holzmann, Godefroid, and Pirottin preserve full state
+  coverage; later SAT/SMT and BDD methods give property-preservation or
+  optimality results; SymPaths proves correctness and completeness of a
+  schedule-recorded symbolic semantics relative to concrete executions.
+- **Consequence:** A partial map of observed choices paired with a symbolic
+  residual is not unique to dataflow selection. The surviving distinction is
+  the requested-root input-fiber observer over contextual sites, not schedule
+  equivalence.
+
+## S12 — Partial event records already induce exact hidden-state sets
+
+- **Status:** survey synthesis; broad novelty defeated
+- **Statement:** Petri-net observers can characterize exactly the current
+  markings consistent with an observed transition-label word, compute the set
+  of minimum-token initial markings consistent with that word, and incorporate
+  time or unobservable-transition reductions.
+- **Prior frontier:** Giua, Júlvez, and Seatzu give a fixed-structure linear
+  representation of the compatible current-marking set; Corona et al. make the
+  nondeterministic-label case explicit; Li and Hadjicostis compute a complete
+  optimization-restricted initial-marking set; Ghazel, Toguyéni, and Yim use a
+  timed class-graph observer; hierarchical basis graphs extend marking
+  estimation under unobservable transitions at the primary-abstract level.
+- **Consequence:** Exact inverse consistency under a partial event observer is
+  established. This manuscript's narrower object partitions initial caller
+  inputs of a pure function and attaches a typed residual value.
+
+## S13 — Exact quotienting carries no automatic performance advantage
+
+- **Status:** survey synthesis; implementation claim rejected
+- **Statement:** A smaller exact semantic quotient can cost more to construct
+  than a direct analysis of the unreduced symbolic representation.
+- **Prior frontier:** Fisler and Vardi show theoretically and empirically that
+  bisimulation minimization often fails to improve symbolic invariant checking;
+  later work improves symbolic refinement and quotient construction without
+  removing the workload dependence.
+- **Consequence:** The formal observer-fiber construction cannot imply a
+  practical speedup. Any implementation claim requires measurements against
+  projected encodings, decision diagrams, and specialized quotients.

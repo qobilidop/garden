@@ -1,0 +1,101 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1109/eurosim.2013.72	2013	10.1109/eurosim.2013.72	Extended Reachability Graph of Petri Net for Cost Estimation	2013 8th EUROSIM Congress on Modelling and Simulation	proceedings-article
+2	10.1002/9781119619727.ch8	2020	10.1002/9781119619727.ch8	Informed Heuristic Search in Reachability Graph	Supervisory Control and Scheduling of Resource Allocation Systems	other
+3	10.1109/access.2020.3045980	2020	10.1109/access.2020.3045980	Partial Reachability Graph Analysis of Petri Nets for Flexible Manufacturing Systems	IEEE Access	journal-article
+4	10.1007/978-3-662-44522-8_1	2014	10.1007/978-3-662-44522-8_1	Partial-Observation Stochastic Reachability and Parity Games	Lecture Notes in Computer Science	book-chapter
+5	10.1109/etfa.2008.4638383	2008	10.1109/etfa.2008.4638383	Observability analysis of interpreted Petri nets under partial state observations using estimations reachability graph	2008 IEEE International Conference on Emerging Technologies and Factory Automation	proceedings-article
+6	10.7717/peerjcs.2013/table-5	None	10.7717/peerjcs.2013/table-5	Table 5: Results on the graph class of temporal reachability networks.		component
+7	10.1360/n112016-00146	2017	10.1360/n112016-00146	Identifying superword level parallelism with directed graph reachability}{Identifying superword level parallelism with directed graph reachability	SCIENTIA SINICA Informationis	journal-article
+8	10.1007/978-3-319-45994-3_5	2016	10.1007/978-3-319-45994-3_5	Reachability Predicates for Graph Assertions	Lecture Notes in Computer Science	book-chapter
+9	10.7551/mitpress/4283.003.0008	1997	10.7551/mitpress/4283.003.0008	Program Analysis via Graph Reachability	Logic Programming	book-chapter
+10	10.1109/tcds.2025.3605388/mm1	None	10.1109/tcds.2025.3605388/mm1	Graph Reinforcement Learning-based Reachability Map for Generalized Mobile Manipulation_supp1-3605388.mp4		component
+11	10.1007/978-3-642-15349-5_13	2010	10.1007/978-3-642-15349-5_13	Efficient Graph Reachability Query Answering Using Tree Decomposition	Lecture Notes in Computer Science	book-chapter
+12	10.4135/9781036234096.n4	2019	10.4135/9781036234096.n4	Becoming an Observer	Child Observation	book-chapter
+13	10.2139/ssrn.7037626	2026	10.2139/ssrn.7037626	Dynamic Graph Topology Estimation for sensor networks via Outdated-Data-Aware Observation Grouping		posted-content
+14	10.1109/yac57282.2022.10023781	2022	10.1109/yac57282.2022.10023781	Graph-QMIX: Addressing the Partial Observation Issues via Graph Neural Network in Multi-Agent Reinforcement Learning	2022 37th Youth Academic Annual Conference of Chinese Association of Automation (YAC)	proceedings-article
+15	10.1109/access.2019.2952056	2019	10.1109/access.2019.2952056	Estimation of Least-Cost Transition Firing Sequences in Labeled Petri Nets by Using Basis Reachability Graph	IEEE Access	journal-article
+16	10.4324/9780429475863-13	2018	10.4324/9780429475863-13	The mother–observer relationship: an examination of the participant role of the observer in mother–infant observation	Infant Observation	book-chapter
+17	10.1016/j.mechatronics.2021.102658	2021	10.1016/j.mechatronics.2021.102658	Vehicle dynamic state observation and rolling resistance estimation via unknown input adaptive high gain observer	Mechatronics	journal-article
+18	10.1002/asjc.3694	2026	10.1002/asjc.3694	Interval estimation for discrete‐time linear systems based on unknown input observer and reachability analysis	Asian Journal of Control	journal-article
+19	10.1002/9781119619727.fmatter	2020	10.1002/9781119619727.fmatter	Front Matter	Supervisory Control and Scheduling of Resource Allocation Systems	other
+20	10.1016/j.ic.2016.10.010	2017	10.1016/j.ic.2016.10.010	Nash equilibria in symmetric graph games with partial observation	Information and Computation	journal-article
+21	10.1002/9781119619727.index	2020	10.1002/9781119619727.index	Index	Supervisory Control and Scheduling of Resource Allocation Systems	other
+22	10.1002/9781119619727.ch1	2020	10.1002/9781119619727.ch1	Introduction	Supervisory Control and Scheduling of Resource Allocation Systems	other
+23	10.1109/acc.2003.1238961	None	10.1109/acc.2003.1238961	Marking estimation of Petri nets based on partial observation	Proceedings of the 2003 American Control Conference, 2003.	proceedings-article
+24	10.1007/978-3-319-11439-2_13	2014	10.1007/978-3-319-11439-2_13	Mean-Payoff Games with Partial-Observation	Lecture Notes in Computer Science	book-chapter
+25	10.7151/dmgt.1918	2017	10.7151/dmgt.1918	Eternal domination: criticality and reachability	Discussiones Mathematicae Graph Theory	journal-article
+26	10.1007/978-1-4419-6045-0_6	2010	10.1007/978-1-4419-6045-0_6	Graph Reachability Queries: A Survey	Advances in Database Systems	book-chapter
+27	10.3724/sp.j.1001.2010.03618	2010	10.3724/sp.j.1001.2010.03618	Verifying Service Composition Based on Modular Reachability Graph and Generating BPEL Codes	Journal of Software	journal-article
+28	10.5040/9798216409366.ch-005	2010	10.5040/9798216409366.ch-005	Doing Participant Observation	Participant Observation	other
+29	10.1109/iecon43393.2020.9255333	2020	10.1109/iecon43393.2020.9255333	Distributed Cooperative Partial-State Observer for Position Estimation of Vehicle Platoon	IECON 2020 The 46th Annual Conference of the IEEE Industrial Electronics Society	proceedings-article
+30	10.1109/ickg55886.2022.00008	2022	10.1109/ickg55886.2022.00008	Graph Reachability Pruning: Adaptive Data Reduction for Inexact Subgraph Matching	2022 IEEE International Conference on Knowledge Graph (ICKG)	proceedings-article
+31	10.1109/cistem.2014.7076935	2014	10.1109/cistem.2014.7076935	Actuator faults estimation using adaptive Luenberger Bond Graph observer	2014 International Conference on Electrical Sciences and Technologies in Maghreb (CISTEM)	proceedings-article
+32	10.1002/9781119619727.ch2	2020	10.1002/9781119619727.ch2	Preliminaries	Supervisory Control and Scheduling of Resource Allocation Systems	other
+33	10.1002/9781119619727.refs	2020	10.1002/9781119619727.refs	References	Supervisory Control and Scheduling of Resource Allocation Systems	other
+34	10.1007/s10626-009-0060-0	2009	10.1007/s10626-009-0060-0	State Observer for DES Under Partial Observation with Time Petri Nets	Discrete Event Dynamic Systems	journal-article
+35	10.1007/978-3-642-04420-5_20	2009	10.1007/978-3-642-04420-5_20	Limit Set Reachability in Asynchronous Graph Dynamical Systems	Lecture Notes in Computer Science	book-chapter
+36	10.1002/9781119619727	2020	10.1002/9781119619727	Supervisory Control and Scheduling of Resource Allocation Systems		monograph
+37	10.1103/physreva.28.3664	1983	10.1103/physreva.28.3664	Bayesian estimation of nonlinear Markovian variables by partial observation	Physical Review A	journal-article
+38	10.1002/9781119619727.ch13	2020	10.1002/9781119619727.ch13	Open Problems	Supervisory Control and Scheduling of Resource Allocation Systems	other
+39	10.1007/978-3-319-45994-3_4	2016	10.1007/978-3-319-45994-3_4	Plain, Bounded, Reversible, Persistent, and k-marked Petri Nets Have Marked Graph Reachability Graphs	Lecture Notes in Computer Science	book-chapter
+40	10.3390/computation8040103	2020	10.3390/computation8040103	Graph Reachability on Parallel Many-Core Architectures	Computation	journal-article
+41	10.1080/13698039808400841	1998	10.1080/13698039808400841	The male observer in infant observation; an evaluation	Infant Observation	journal-article
+42	10.1007/978-3-031-38924-5_2	2023	10.1007/978-3-031-38924-5_2	The Observation Problem	Springer Theses	book-chapter
+43	10.1002/9781119619727.ch9	2020	10.1002/9781119619727.ch9	Controllable Heuristic Search	Supervisory Control and Scheduling of Resource Allocation Systems	other
+44	10.1002/9781119619727.ch5	2020	10.1002/9781119619727.ch5	Redundant Constraint Elimination	Supervisory Control and Scheduling of Resource Allocation Systems	other
+45	10.2139/ssrn.4830511	2024	10.2139/ssrn.4830511	Exact Reachability of Discrete-Time Stochastic System with Multiplicative Noise and Partial Information		posted-content
+46	10.1002/9781119619727.ch12	2020	10.1002/9781119619727.ch12	Symbolic Heuristic Search	Supervisory Control and Scheduling of Resource Allocation Systems	other
+47	10.1007/3-540-60029-9_43	1995	10.1007/3-540-60029-9_43	Symbolic reachability graph and partial symmetries	Lecture Notes in Computer Science	book-chapter
+48	10.23919/ecc.2007.7068264	2007	10.23919/ecc.2007.7068264	Estimation of unknown inputs, with application to fault detection, via partial hierarchical observation	2007 European Control Conference (ECC)	proceedings-article
+49	10.1002/9781119619727.ch10	2020	10.1002/9781119619727.ch10	Hybrid Heuristic Search	Supervisory Control and Scheduling of Resource Allocation Systems	other
+50	10.1037/14750-008	None	10.1037/14750-008	Observation and the participant observer.	Social discovery.	book-chapter
+51	10.4324/9780203393253_the_observer_observed	None	10.4324/9780203393253_the_observer_observed	The observer observed	A GUIDE TO CLASSROOM OBSERVATION	book-chapter
+52	10.4324/9780203393253_being_an_observer	None	10.4324/9780203393253_being_an_observer	Being an observer	A GUIDE TO CLASSROOM OBSERVATION	book-chapter
+53	10.4324/9780203393253-3	2003	10.4324/9780203393253-3	Being an observer	A Guide to Classroom Observation	book-chapter
+54	10.23919/ccc64809.2025.11178420	2025	10.23919/ccc64809.2025.11178420	Set Reachability of Probabilistic Boolean Networks Under Output Observation	2025 44th Chinese Control Conference (CCC)	proceedings-article
+55	10.4324/9780203393253-9	2003	10.4324/9780203393253-9	The observer observed	A Guide to Classroom Observation	book-chapter
+56	10.1007/978-3-642-24288-5_1	2011	10.1007/978-3-642-24288-5_1	Graph Games with Reachability Objectives	Lecture Notes in Computer Science	book-chapter
+57	10.1145/3428246	2020	10.1145/3428246	FlowCFL: generalized type-based reachability analysis: graph reduction and equivalence of CFL-based and type-based reachability	Proceedings of the ACM on Programming Languages	journal-article
+58	10.1002/9781119619727.ch6	2020	10.1002/9781119619727.ch6	Fast Iterative Supervisor Design	Supervisory Control and Scheduling of Resource Allocation Systems	other
+59	10.1109/icassp55912.2026.11461599	2026	10.1109/icassp55912.2026.11461599	Learning Graph from Smooth Signals under Partial Observation: A Robustness Analysis	ICASSP 2026 - 2026 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)	proceedings-article
+60	10.1109/isita.2008.4895422	2008	10.1109/isita.2008.4895422	On estimation in networked control systems with random delays and partial observation losses	2008 International Symposium on Information Theory and Its Applications	proceedings-article
+61	10.1145/3225058.3225136	2018	10.1145/3225058.3225136	C-Graph	Proceedings of the 47th International Conference on Parallel Processing	proceedings-article
+62	10.1016/j.ins.2023.119814	2024	10.1016/j.ins.2023.119814	Nonlinear directed acyclic graph estimation based on the kernel partial correlation coefficient	Information Sciences	journal-article
+63	10.4324/9780203454107-10	2002	10.4324/9780203454107-10	Seven Types of Creativity: Observation And Data Analysis*	The Compleat Observer?	book-chapter
+64	10.3390/app16147100	2026	10.3390/app16147100	Battery State-of-Charge Estimation Using Factor Graph Optimization with Linear and Nonlinear Voltage Observation Models	Applied Sciences	journal-article
+65	10.18260/1-2--58055	None	10.18260/1-2--58055	Hardening Serverless Applications via Graph Reachability: Detection and Remediation of Over-Permissioned Policies	ASEE-Gulf Southwest (GSW) Regional Conference Proceedings	proceedings-article
+66	10.1109/oceans-genova.2015.7271471	2015	10.1109/oceans-genova.2015.7271471	Trajectory generation for vessels using a reachability graph	OCEANS 2015 - Genova	proceedings-article
+67	10.1063/5.0032539	2021	10.1063/5.0032539	State and parameter estimation from exact partial state observation in stochastic reaction networks	The Journal of Chemical Physics	journal-article
+68	10.1142/9789811265990_0023	2023	10.1142/9789811265990_0023	The Human Observer	The Laws of Observation	book-chapter
+69	10.1103/physreva.35.3894	1987	10.1103/physreva.35.3894	New approach to Bayesian estimation through partial observation of nonlinearly interacting stochastic variables	Physical Review A	journal-article
+70	10.1109/iros58592.2024.10802390	2024	10.1109/iros58592.2024.10802390	Human Orientation Estimation Under Partial Observation	2024 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)	proceedings-article
+71	10.1109/iwssip66997.2025.11151877	2025	10.1109/iwssip66997.2025.11151877	Blind Parameters Estimation for FHSS Signals under Partial-band Observation	2025 32nd International Conference on Systems, Signals and Image Processing (IWSSIP)	proceedings-article
+72	10.1109/icra48891.2023.10161525	2023	10.1109/icra48891.2023.10161525	External Force Estimation of Legged Robots via a Factor Graph Framework with a Disturbance Observer	2023 IEEE International Conference on Robotics and Automation (ICRA)	proceedings-article
+73	10.1002/9781119619727.ch4	2020	10.1002/9781119619727.ch4	Supervisor Design with Fewer Places	Supervisory Control and Scheduling of Resource Allocation Systems	other
+74	10.1002/9781119619727.ch3	2020	10.1002/9781119619727.ch3	Behaviorally Maximal and Structurally Minimal Supervisor	Supervisory Control and Scheduling of Resource Allocation Systems	other
+75	10.1145/2422436.2422468	2013	10.1145/2422436.2422468	Reachability in graph timelines	Proceedings of the 4th conference on Innovations in Theoretical Computer Science	proceedings-article
+76	10.4324/9780203393253-4	2003	10.4324/9780203393253-4	Becoming an observer: some guidelines	A Guide to Classroom Observation	book-chapter
+77	10.1109/icde.2008.4497498	2008	10.1109/icde.2008.4497498	An Efficient Algorithm for Answering Graph Reachability Queries	2008 IEEE 24th International Conference on Data Engineering	proceedings-article
+78	10.1002/9781119619727.scard	2020	10.1002/9781119619727.scard	IEEE PRESS SERIES ON SYSTEMS SCIENCE AND ENGINEERING	Supervisory Control and Scheduling of Resource Allocation Systems	other
+79	10.4324/9780203393253_becoming_an_observer	None	10.4324/9780203393253_becoming_an_observer	Becoming an observer	A GUIDE TO CLASSROOM OBSERVATION	book-chapter
+80	10.65528/9780807776001-012	2010	10.65528/9780807776001-012	Unit IX The Teacher As Observer	Classroom Observer	book-chapter
+81	10.1109/icassp.2010.5495335	2010	10.1109/icassp.2010.5495335	A minimax approach to Bayesian estimation with partial knowledge of the observation model	2010 IEEE International Conference on Acoustics, Speech and Signal Processing	proceedings-article
+82	10.1109/scc.2014.130	2014	10.1109/scc.2014.130	QoS-aware Service Composition over Graphplan through Graph Reachability	2014 IEEE International Conference on Services Computing	proceedings-article
+83	10.1016/j.disc.2006.01.020	2006	10.1016/j.disc.2006.01.020	Competition-reachability of a graph	Discrete Mathematics	journal-article
+84	10.1109/vtest.1999.766655	None	10.1109/vtest.1999.766655	Partial scan using multi-hop state reachability analysis	Proceedings 17th IEEE VLSI Test Symposium (Cat. No.PR00146)	proceedings-article
+85	10.1016/j.jag.2024.103834	2024	10.1016/j.jag.2024.103834	A graph-based deep learning framework for field scale wheat yield estimation	International Journal of Applied Earth Observation and Geoinformation	journal-article
+86	10.1016/s0950-5849(98)00093-7	1998	10.1016/s0950-5849(98)00093-7	Program analysis via graph reachability	Information and Software Technology	journal-article
+87	10.1109/lics.2009.23	2009	10.1109/lics.2009.23	Graph Reachability and Pebble Automata over Infinite Alphabets	2009 24th Annual IEEE Symposium on Logic In Computer Science	proceedings-article
+88	10.1093/imrn/rnae280	2025	10.1093/imrn/rnae280	The Reachability Homology of a Directed Graph	International Mathematics Research Notices	journal-article
+89	10.1533/9781782421627.101	2014	10.1533/9781782421627.101	Controllability and reachability	Control and Estimation of Piecewise Affine Systems	book-chapter
+90	10.1016/j.automatica.2017.07.030	2017	10.1016/j.automatica.2017.07.030	Partial state reachability of multiple linear systems in series	Automatica	journal-article
+91	10.1080/13698030701219229	2007	10.1080/13698030701219229	Participant observation of a very disturbed mother and her child: The observer as container	Infant Observation	journal-article
+92	10.1002/9781119619727.ch11	2020	10.1002/9781119619727.ch11	A* Search with More Informed Heuristics Functions	Supervisory Control and Scheduling of Resource Allocation Systems	other
+93	10.5381/jot.2023.22.2.a3	2023	10.5381/jot.2023.22.2.a3	The OSATE Slicer: Graph-Based Reachability for Architectural Models.	The Journal of Object Technology	journal-article
+94	10.1109/icci.1993.315380	None	10.1109/icci.1993.315380	Differential hashing functions: application to reachability graph generation	Proceedings of ICCI'93: 5th International Conference on Computing and Information	proceedings-article
+95	10.1007/978-3-540-78243-8_15	None	10.1007/978-3-540-78243-8_15	An Interactive Attack Graph Cascade and Reachability Display	Mathematics and Visualization	book-chapter
+96	10.1109/iaeac.2018.8577265	2018	10.1109/iaeac.2018.8577265	State Estimation of Innovation Graph for PMU Power Grid Observation System	2018 IEEE 3rd Advanced Information Technology, Electronic and Automation Control Conference (IAEAC)	proceedings-article
+97	10.1002/0470014156.ch5	2003	10.1002/0470014156.ch5	Automatic Observation of Simulations	Validation of Communications Systems with SDL	other
+98	10.1134/s0032946006040053	2006	10.1134/s0032946006040053	On-line estimation of smooth signals with partial observation	Problems of Information Transmission	journal-article
+99	10.22331/q-2021-08-30-532	2021	10.22331/q-2021-08-30-532	Reachability Deficits in Quantum Approximate Optimization of Graph Problems	Quantum	journal-article
+100	10.4324/9780429485374-6	2018	10.4324/9780429485374-6	The Young Child Observation seminar: new steps in developing the observer role	Young Child Observation	book-chapter

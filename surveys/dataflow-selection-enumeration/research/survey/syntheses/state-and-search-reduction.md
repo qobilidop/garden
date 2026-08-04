@@ -22,19 +22,33 @@ symbolic exploration retains representative orders of independent concurrent
 events under partial-order conditions that preserve local-property
 verification. This is observer-preserving omission of execution choices, but
 the omitted choices are schedules rather than input-selected dataflow sites.
-Chatain and Fabre's symbolic unfoldings likewise avoid enumerating every
-concurrent-action interleaving and additionally commute with component
-product.
+The lineage is broader than this seed: coverage-preserving reductions retain
+the full reachable-state set; Boolean/SAT and BDD techniques preserve rule-
+system, local-property, or LTL observers; MPOR claims soundness and no redundant
+interleavings under quasi-monotonicity; and SymPaths proves reduced symbolic
+execution correct and complete relative to concrete multithreaded executions.
+Concolic DPOR instantiates the same schedule omission during test generation.
+Approximate POR instead makes epsilon/delta loss explicit. Chatain and Fabre's
+symbolic unfoldings likewise avoid enumerating every concurrent-action
+interleaving and additionally commute with component product. Bilgram et al.
+further quotient behaviorally equivalent colors and remove impossible place
+colors while preserving a bisimilar unfolded net.
 
 Other constructions omit different state dimensions. Basis markings abstract
 an acyclic implicit-transition subnet while completely characterizing the
 reachable marking set according to the primary abstract. Fully symbolic
-saturation-based partition refinement computes the largest bisimulation for a
-discrete-event transition system. Time-anonymous values merge timestamps
+saturation- or signature-based partition refinement computes maximum
+bisimulation for transition systems; the BDD lineage begins at least with
+Bouali and de Simone and extends through rank-based, toolbox, and parallel
+implementations. Fisler and Vardi's negative result matters: constructing the
+quotient can cost more than checking an invariant directly. Time-anonymous values merge timestamps
 assessed as unable to affect future timed behavior, but their source discloses
-minor information loss. Under partial state observation, estimation
-reachability graphs instead retain the hidden markings still consistent with
-the visible record.
+minor information loss. Under partial state observation, exact marking
+estimators retain the hidden markings still consistent with the visible label
+word. A related recursive algorithm instead returns the complete subset of
+consistent initial markings with minimum total token count. Timed class-graph
+and hierarchical-basis observers add timing or unobservable transitions; the
+latter claim is primary-abstract limited.
 
 This is an exact quotient of reachable states, not an input partition. It has
 no requested root, contextual internal-event map, or typed input residual.
@@ -58,6 +72,12 @@ Abstraction-guided concurrent testing ranks thread and data choices through a
 backward slice from an assertion, refining when guidance stalls. Multipoint
 DSE also reports target-equivalent path elimination, but its primary full text
 was unavailable and no general semantic quotient is imported.
+
+Homi and NumScout move from prioritization to learned omission: one retains a
+small state subset predicted to improve coverage or bug discovery, and the
+other prunes functions predicted irrelevant to a requested defect family. Both
+are deliberately approximate, so they strengthen the negative taxonomy but
+not the exact-quotient lineage.
 
 These are deliberately search policies. They may delay or prune candidates
 without making the observed patterns semantic equivalence classes, requiring
@@ -83,7 +103,10 @@ falsification completeness relative to its naive semantics.
 
 Assertion-guided multithreaded execution records summaries explaining why
 prior executions cannot reach an error and soundly prunes executions they
-subsume. The publisher abstract for compatible-branch coverage states that
+subsume. Abstract symbolic subsumption predates it: revisiting a symbolic heap
+state contained in a previous abstract state causes backtracking, obtaining
+finite under-approximate exploration for recursive structures. The publisher
+abstract for compatible-branch coverage states that
 dependency analysis omits paths unable to add branch coverage under its bounded
 exploration contract. These are close negative results: the omission is
 relative to a declared observer, but the objective is one property's

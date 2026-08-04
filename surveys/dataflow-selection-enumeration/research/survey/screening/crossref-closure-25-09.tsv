@@ -1,0 +1,102 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1007/978-3-642-24288-5_19	2011	10.1007/978-3-642-24288-5_19	A Fully Symbolic Bisimulation Algorithm	Lecture Notes in Computer Science	book-chapter
+2	10.3390/logics3030011	2025	10.3390/logics3030011	Bisimulation Quotient in Inquisitive Modal Logic	Logics	journal-article
+3	10.1109/cdc.2007.4434911	2007	10.1109/cdc.2007.4434911	Symbolic models for nonlinear control systems using approximate bisimulation	2007 46th IEEE Conference on Decision and Control	proceedings-article
+4	10.1142/s012905411340011x	2013	10.1142/s012905411340011x	AN EFFICIENT FULLY SYMBOLIC BISIMULATION ALGORITHM FOR NON-DETERMINISTIC SYSTEMS	International Journal of Foundations of Computer Science	journal-article
+5	10.1109/cmpsac.2000.884774	None	10.1109/cmpsac.2000.884774	Region Encoding Diagram for fully symbolic verification of real-time systems	Proceedings 24th Annual International Computer Software and Applications Conference. COMPSAC2000	proceedings-article
+6	10.1109/dac.1990.114842	None	10.1109/dac.1990.114842	Coded time-symbolic simulation using shared binary decision diagram	27th ACM/IEEE Design Automation Conference	proceedings-article
+7	10.1007/978-1-4939-1103-5_3	2014	10.1007/978-1-4939-1103-5_3	Binary Decision Diagram for Symbolic Analysis	Advanced Symbolic Analysis for VLSI Systems	book-chapter
+8	10.1109/icmel.2006.1650989	None	10.1109/icmel.2006.1650989	Reordering in Topology Decision Diagram Method for Symbolic Circuit Analysis	2006 25th International Conference on Microelectronics	proceedings-article
+9	10.1006/jsco.1997.0167	1998	10.1006/jsco.1997.0167	A Polycyclic Quotient Algorithm	Journal of Symbolic Computation	journal-article
+10	10.1016/s0747-7171(87)80060-3	1987	10.1016/s0747-7171(87)80060-3	Towards a soluble quotient algorithm	Journal of Symbolic Computation	journal-article
+11	10.1007/978-1-4939-1103-5_7	2014	10.1007/978-1-4939-1103-5_7	Graph-Pair Decision Diagram	Advanced Symbolic Analysis for VLSI Systems	book-chapter
+12	10.1006/jsco.1994.1064	1994	10.1006/jsco.1994.1064	A Finite Soluble Quotient Algorithm	Journal of Symbolic Computation	journal-article
+13	10.1016/j.jsc.2004.11.010	2005	10.1016/j.jsc.2004.11.010	Bezoutian and quotient ring structure	Journal of Symbolic Computation	journal-article
+14	10.1017/jsl.2020.77	2021	10.1017/jsl.2020.77	INQUISITIVE BISIMULATION	The Journal of Symbolic Logic	journal-article
+15	10.1145/123186.123240	1990	10.1145/123186.123240	Coded time-symbolic simulation using shared binary decision diagram	Conference proceedings on 27th ACM/IEEE design automation conference  - DAC '90	proceedings-article
+16	10.7717/peerj.18961/fig-4	None	10.7717/peerj.18961/fig-4	Figure 4: Upset diagram of proteins in different ammonium sulfate saturation segments.		component
+17	10.1017/s1755020309990426	2010	10.1017/s1755020309990426	A BISIMULATION CHARACTERIZATION THEOREM FOR HYBRID LOGIC WITH THE CURRENT-STATE BINDER	The Review of Symbolic Logic	journal-article
+18	10.1016/j.jsc.2026.102553	2026	10.1016/j.jsc.2026.102553	Sum-and-quotient characteristic decomposition of polynomial ideals	Journal of Symbolic Computation	journal-article
+19	10.1109/ddecs.2006.1649562	None	10.1109/ddecs.2006.1649562	Minimization of Large State Spaces using Symbolic Branching Bisimulation	2006 IEEE Design and Diagnostics of Electronic Circuits and systems	proceedings-article
+20	10.1007/bfb0014325	1996	10.1007/bfb0014325	Symbolic bisimulation for timed processes	Lecture Notes in Computer Science	book-chapter
+21	10.1016/s0747-7171(08)80084-3	1990	10.1016/s0747-7171(08)80084-3	Implementing the Baumslag-Cannonito-Miller polycyclic quotient algorithm	Journal of Symbolic Computation	journal-article
+22	10.1016/j.tcs.2012.07.034	2012	10.1016/j.tcs.2012.07.034	A complete symbolic bisimulation for full applied pi calculus	Theoretical Computer Science	journal-article
+23	10.1145/3372884.3373161	2020	10.1145/3372884.3373161	Symbolic bisimulation for open and parameterized systems	Proceedings of the 2020 ACM SIGPLAN Workshop on Partial Evaluation and Program Manipulation	proceedings-article
+24	10.1201/9781420037586-7	2018	10.1201/9781420037586-7	FUNDAMENTALS OF DECISION DIAGRAM TECHNIQUES	Decision Diagram Techniques for Micro- and Nanoelectronic Design Handbook	book-chapter
+25	10.1109/acc.2000.876986	2000	10.1109/acc.2000.876986	Supervisory control problem using symbolic bisimulation techniques	Proceedings of the 2000 American Control Conference. ACC (IEEE Cat. No.00CH36334)	proceedings-article
+26	10.1007/0-306-47003-9_12	None	10.1007/0-306-47003-9_12	A Symbolic Semantics and Bisimulation for Full Lotos	IFIP International Federation for Information Processing	book-chapter
+27	10.1201/9781420037586-8	2018	10.1201/9781420037586-8	DECISION DIAGRAM TECHNIQUES FOR SWITCHING FUNCTIONS	Decision Diagram Techniques for Micro- and Nanoelectronic Design Handbook	book-chapter
+28	10.1201/9781420037586.ch20	2005	10.1201/9781420037586.ch20	Probabilistic Decision Diagram Techniques	Decision Diagram Techniques for Micro- and Nanoelectronic Design Handbook	book-chapter
+29	10.1007/3-540-63166-6_14	1997	10.1007/3-540-63166-6_14	Weak bisimulation for fully probabilistic processes	Lecture Notes in Computer Science	book-chapter
+30	10.1201/9781420037586-9	2018	10.1201/9781420037586-9	DECISION DIAGRAM TECHNIQUES FOR MULTIVALUED FUNCTIONS	Decision Diagram Techniques for Micro- and Nanoelectronic Design Handbook	book-chapter
+31	10.1007/bfb0000491	1997	10.1007/bfb0000491	Symbolic bisimulation for Full LOTOS	Lecture Notes in Computer Science	book-chapter
+32	10.1016/s0747-7171(08)80080-6	1990	10.1016/s0747-7171(08)80080-6	A nilpotent quotient algorithm for graded Lie rings	Journal of Symbolic Computation	journal-article
+33	10.1201/9781420037586-10	2018	10.1201/9781420037586-10	SELECTED TOPICS OF DECISION DIAGRAM TECHNIQUES	Decision Diagram Techniques for Micro- and Nanoelectronic Design Handbook	book-chapter
+34	10.1007/978-3-540-28644-8_11	2004	10.1007/978-3-540-28644-8_11	Symbolic Bisimulation in the Spi Calculus	Lecture Notes in Computer Science	book-chapter
+35	10.2307/2275049	1991	10.2307/2275049	Larger Cardinals in Cichon's Diagram	The Journal of Symbolic Logic	journal-article
+36	10.1145/2579818	2014	10.1145/2579818	Symbolic Bisimulation for Quantum Processes	ACM Transactions on Computational Logic	journal-article
+37	10.1023/a:1016091902809	2002	10.1023/a:1016091902809	Bisimulation Minimization and Symbolic Model Checking	Formal Methods in System Design	journal-article
+38	10.1017/cbo9780511777110.003	2011	10.1017/cbo9780511777110.003	Towards bisimulation	Introduction to Bisimulation and Coinduction	book-chapter
+39	10.1016/s1571-0661(04)80547-4	2002	10.1016/s1571-0661(04)80547-4	Rank-Based Symbolic Bisimulation	Electronic Notes in Theoretical Computer Science	journal-article
+40	10.1007/s10470-011-9773-8	2013	10.1007/s10470-011-9773-8	A survey on binary decision diagram approaches to symbolic analysis of analog integrated circuits	Analog Integrated Circuits and Signal Processing	journal-article
+41	10.3233/jcs-2010-0363	2010	10.3233/jcs-2010-0363	Symbolic bisimulation for the applied pi calculus*	Journal of Computer Security	journal-article
+42	10.1155/2013/421926	2013	10.1155/2013/421926	Approximate Bisimulation and Optimization of Software Programs Based on Symbolic-Numeric Computation	Mathematical Problems in Engineering	journal-article
+43	10.1007/s00233-017-9850-0	2017	10.1007/s00233-017-9850-0	A boundary quotient diagram for right LCM semigroups	Semigroup Forum	journal-article
+44	10.1007/978-3-642-40184-8_13	2013	10.1007/978-3-642-40184-8_13	Symbolic Bisimulation for a Higher-Order Distributed Language with Passivation	Lecture Notes in Computer Science	book-chapter
+45	10.1109/cdc57313.2025.11312288	2025	10.1109/cdc57313.2025.11312288	Bisimulation-based reduction of neural network controllers	2025 IEEE 64th Conference on Decision and Control (CDC)	proceedings-article
+46	10.1007/978-3-642-00602-9_40	2009	10.1007/978-3-642-00602-9_40	Symbolic Branching Bisimulation-Checking of Dense-Time Systems in an Environment	Lecture Notes in Computer Science	book-chapter
+47	10.1016/j.jsc.2019.07.018	2020	10.1016/j.jsc.2019.07.018	Fully incremental cylindrical algebraic decomposition	Journal of Symbolic Computation	journal-article
+48	10.1109/lics56636.2023.10175778	2023	10.1109/lics56636.2023.10175778	Fully Abstract Normal Form Bisimulation for Call-by-Value PCF	2023 38th Annual ACM/IEEE Symposium on Logic in Computer Science (LICS)	proceedings-article
+49	10.1145/3765737	2025	10.1145/3765737	Fully Abstract Normal Form Bisimulation for Call-by-Value PCF	Journal of the ACM	journal-article
+50	10.7717/peerjcs.1605/fig-6	None	10.7717/peerjcs.1605/fig-6	Figure 6: Decision model diagram for DMN4DQ.		component
+51	10.1109/cdc.2011.6160617	2011	10.1109/cdc.2011.6160617	On infinite-horizon probabilistic properties and stochastic bisimulation functions	IEEE Conference on Decision and Control and European Control Conference	proceedings-article
+52	10.1017/cbo9780511792588.005	2011	10.1017/cbo9780511792588.005	Bisimulation and logic	Advanced Topics in Bisimulation and Coinduction	book-chapter
+53	10.1017/cbo9780511792588.008	2011	10.1017/cbo9780511792588.008	Probabilistic bisimulation	Advanced Topics in Bisimulation and Coinduction	book-chapter
+54	10.1002/rnc.3204	2015	10.1002/rnc.3204	Symbolic models for time-varying time-delay systems via alternating approximate bisimulation	International Journal of Robust and Nonlinear Control	journal-article
+55	10.1109/tcad.2012.2217963	2013	10.1109/tcad.2012.2217963	Graph-Pair Decision Diagram Construction for Topological Symbolic Circuit Analysis	IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems	journal-article
+56	10.1155/2016/6908120	2016	10.1155/2016/6908120	Decision Diagram Based Symbolic Algorithm for Evaluating the Reliability of a Multistate Flow Network	Mathematical Problems in Engineering	journal-article
+57	10.1109/cdc.2006.377016	2006	10.1109/cdc.2006.377016	Global Stabilization of a Fully Actuated Mechanical System on a Riemannian Manifold including Control Saturation Effects	Proceedings of the 45th IEEE Conference on Decision and Control	proceedings-article
+58	10.1109/cdc.2005.1582257	None	10.1109/cdc.2005.1582257	Bisimulation as congruence in the behavioral setting	Proceedings of the 44th IEEE Conference on Decision and Control	proceedings-article
+59	10.1017/s1079898600009094	2013	10.1017/s1079898600009094	"Davide Sangiorgi. Introduction to bisimulation and coinduction. Cambridge University Press, 2012, 247 pp. - 
+            Advanced topics in bisimulation and coinduction, edited by Davide Sangiorgi and Jan Rutten, Cambridge Tracts in Theoretical Computer Science, vol. 52. Cambridge University Press, 2012, 326 pp."	The Bulletin of Symbolic Logic	journal-article
+60	10.1007/11599463_108	2005	10.1007/11599463_108	Towards a Symbolic Bisimulation for the Spi Calculus	Lecture Notes in Computer Science	book-chapter
+61	10.1007/11901914_35	2006	10.1007/11901914_35	Sigref – A Symbolic Bisimulation Tool Box	Lecture Notes in Computer Science	book-chapter
+62	10.1007/s10009-017-0468-z	2018	10.1007/s10009-017-0468-z	Multi-core symbolic bisimulation minimisation	International Journal on Software Tools for Technology Transfer	journal-article
+63	10.1201/9780429076893-6	2019	10.1201/9780429076893-6	Symbolic Semantics for Weak Open Bisimulation in π-calculus 1	International E-Conference on Computer Science 2005	book-chapter
+64	10.1007/978-3-642-11266-9_46	2010	10.1007/978-3-642-11266-9_46	A Complete Symbolic Bisimulation for Full Applied Pi Calculus	Lecture Notes in Computer Science	book-chapter
+65	10.7717/peerjcs.1547/fig-44	None	10.7717/peerjcs.1547/fig-44	Figure 44: Diagram depicting a step trace in the BIKE symbolic model leading to the leakage of critical information.		component
+66	10.1145/3373207.3404017	2020	10.1145/3373207.3404017	Modular techniques for effective localization and double ideal quotient	Proceedings of the 45th International Symposium on Symbolic and Algebraic Computation	proceedings-article
+67	10.1007/3-540-45635-x_19	2001	10.1007/3-540-45635-x_19	Local and Symbolic Bisimulation Using Tabled Constraint Logic Programming	Lecture Notes in Computer Science	book-chapter
+68	10.1109/worldcis.2013.6751020	2013	10.1109/worldcis.2013.6751020	Practical fully homomorphic encryption over polynomial quotient rings	World Congress on Internet Security (WorldCIS-2013)	proceedings-article
+69	10.1109/cdc.2005.1583139	None	10.1109/cdc.2005.1583139	Algorithmic bisimulation for Communicating Piecewise Deterministic Markov Processes	Proceedings of the 44th IEEE Conference on Decision and Control	proceedings-article
+70	10.1145/2442829.2442868	2012	10.1145/2442829.2442868	Border basis representation of a general quotient algebra	Proceedings of the 37th International Symposium on Symbolic and Algebraic Computation	proceedings-article
+71	10.1063/1.168553	1995	10.1063/1.168553	Symbolic Feynman-Diagram Calculation	Computers in Physics	journal-article
+72	10.1016/j.jsc.2011.12.028	2012	10.1016/j.jsc.2011.12.028	Transforming linear functional systems into fully integrable systems	Journal of Symbolic Computation	journal-article
+73	10.1017/cbo9780511792588.002	2011	10.1017/cbo9780511792588.002	Origins of bisimulation and coinduction	Advanced Topics in Bisimulation and Coinduction	book-chapter
+74	10.1145/1277500.1277518	2007	10.1145/1277500.1277518	From quotient-difference to generalized eigenvalues and sparse polynomial interpolation	Proceedings of the 2007 international workshop on Symbolic-numeric computation	proceedings-article
+75	10.1017/bsl.2025.9	2025	10.1017/bsl.2025.9	A MODULAR BISIMULATION CHARACTERISATION FOR FRAGMENTS OF HYBRID LOGIC	The Bulletin of Symbolic Logic	journal-article
+76	10.1109/cdc.2018.8619607	2018	10.1109/cdc.2018.8619607	Bisimulation in Behavioral Dynamical Systems and Generalized Synchronization Trees	2018 IEEE Conference on Decision and Control (CDC)	proceedings-article
+77	10.1109/cdc.2015.7403293	2015	10.1109/cdc.2015.7403293	Passivity degradation in discrete control implementations: An approximate bisimulation approach	2015 54th IEEE Conference on Decision and Control (CDC)	proceedings-article
+78	10.4135/9781412971980.n329	2009	10.4135/9781412971980.n329	Tornado Diagram	Encyclopedia of Medical Decision Making	reference-entry
+79	10.1007/0-387-23905-7_9	None	10.1007/0-387-23905-7_9	Exact Symbolic Analysis Using Determinant Decision Diagrams	Symbolic Analysis and Reduction of VLSI Circuits	book-chapter
+80	10.7717/peerj.10387/fig-7	None	10.7717/peerj.10387/fig-7	Figure 7: Decision diagram for selecting a multiple comparisons test.		component
+81	10.1017/s1755020316000277	2017	10.1017/s1755020316000277	‘CHASING’ THE DIAGRAM—THE USE OF VISUALIZATIONS IN ALGEBRAIC REASONING	The Review of Symbolic Logic	journal-article
+82	10.1145/1005285.1005321	2004	10.1145/1005285.1005321	Maximal quotient rational reconstruction	Proceedings of the 2004 international symposium on Symbolic and algebraic computation	proceedings-article
+83	10.1109/fasta61401.2024.10595300	2024	10.1109/fasta61401.2024.10595300	Input saturation control of manipulator based on fully actuated system approach	2024 3rd Conference on Fully Actuated System Theory and Applications (FASTA)	proceedings-article
+84	10.1145/800205.806317	1976	10.1145/800205.806317	Calculating presentations for certain kinds of quotient groups	Proceedings of the third ACM symposium on Symbolic and algebraic computation  - SYMSAC '76	proceedings-article
+85	10.1007/3-540-56496-9_9	1993	10.1007/3-540-56496-9_9	Symbolic bisimulation minimisation	Lecture Notes in Computer Science	book-chapter
+86	10.1109/cdc.1998.761977	None	10.1109/cdc.1998.761977	A geometric approach to bisimulation and verification of hybrid systems	Proceedings of the 37th IEEE Conference on Decision and Control (Cat. No.98CH36171)	proceedings-article
+87	10.1109/fasta61401.2024.10595142	2024	10.1109/fasta61401.2024.10595142	Adaptive Fixed-Time Control for High-Order Fully Actuated System with Input Saturation	2024 3rd Conference on Fully Actuated System Theory and Applications (FASTA)	proceedings-article
+88	10.7717/peerjcs.1547/fig-43	None	10.7717/peerjcs.1547/fig-43	Figure 43: Diagram depicting a possible step trace that led to the MITM attack of a KEM regarding our symbolic model.		component
+89	10.1017/jsl.2025.30	2025	10.1017/jsl.2025.30	COMPUTABLE TYPE OF CERTAIN QUOTIENT SPACES	The Journal of Symbolic Logic	journal-article
+90	10.1109/fasta65681.2025.11138211	2025	10.1109/fasta65681.2025.11138211	Prescribed Performance-Based Anti-Windup Design for Nonlinear Fully Actuated Systems with Actuator Saturation	2025 4th Conference on Fully Actuated System Theory and Applications (FASTA)	proceedings-article
+91	10.1109/fasta65681.2025.11138764	2025	10.1109/fasta65681.2025.11138764	Dynamic Anti-Windup Design for Nonlinear High-Order Fully Actuated Systems with Actuator Saturation	2025 4th Conference on Fully Actuated System Theory and Applications (FASTA)	proceedings-article
+92	10.1109/cfasta57821.2023.10243370	2023	10.1109/cfasta57821.2023.10243370	A Fully-actuated System Approach for Spacecraft Attitude Control with Input Saturation	2023 2nd Conference on Fully Actuated System Theory and Applications (CFASTA)	proceedings-article
+93	10.1017/cbo9780511792588.007	2011	10.1017/cbo9780511792588.007	Enhancements of the bisimulation proof method	Advanced Topics in Bisimulation and Coinduction	book-chapter
+94	10.1007/0-387-23905-7_10	None	10.1007/0-387-23905-7_10	S-Expanded Determinant Decision Diagrams for Symbolic Analysis	Symbolic Analysis and Reduction of VLSI Circuits	book-chapter
+95	10.5840/cpsem201814	2018	10.5840/cpsem201814	A Curious Case of Semiotic Déjà Vu	Semiotics	book-chapter
+96	10.21236/ada460035	2003	10.21236/ada460035	A Boolean Approach to Unbounded, Fully Symbolic Model Checking of Timed Automata		report
+97	10.1007/978-3-642-12104-3_22	2010	10.1007/978-3-642-12104-3_22	Correctness Issues of Symbolic Bisimulation Computation for Markov Chains	Lecture Notes in Computer Science	book-chapter
+98	10.2307/2586594	1998	10.2307/2586594	Generic saturation	Journal of Symbolic Logic	journal-article
+99	10.1017/jsl.2018.87	2019	10.1017/jsl.2018.87	AMALGAMABLE DIAGRAM SHAPES	The Journal of Symbolic Logic	journal-article
+100	10.1109/fasta61401.2024.10595372	2024	10.1109/fasta61401.2024.10595372	Integrated Guidance and Control Design Subject to Actuator Saturation Based on Fully Actuated System Approach	2024 3rd Conference on Fully Actuated System Theory and Applications (FASTA)	proceedings-article

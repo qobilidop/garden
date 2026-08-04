@@ -83,28 +83,56 @@ values that induce the same selector outcome and can enumerate values where
 our residual remains symbolic. Structural observation, concrete forcing, and
 logical relevance are consequently three different omission rules.
 
-State-space and exploration quotients provide two further boundaries. Symbolic
-reachability graphs for well-formed colored Petri nets group markings by
+State-space and exploration quotients provide two further boundaries. The
+well-formed colored-net symbolic-reachability lineage begins at least with the
+1991 construction and its expanded journal treatment: it groups markings by
 encoded color symmetries while preserving the represented reachability
 analysis; constraint-based variants extend the quotient toward asymmetric
 models, and partial-symmetry constructions interpolate between them
-@chiola1997srg @haddad1995partial @capra2005colored. A recent symbolic-execution
+@chiola1991wellformed @chiola1997srg @haddad1995partial @capra2005colored. A recent symbolic-execution
 framework instead explores canonical orbit representatives of symmetric
 embedded-system states and states quotient-soundness and constraint-reuse
 results, while limiting empirical validation to a toy prototype
-@iavich2026symmetry. Partial-order reduction combined with BDD-based symbolic
-exploration similarly retains representative interleavings of independent
-concurrent events while preserving local-property verification
-@alur2001partialorder. Colored-net symbolic unfoldings provide another
-true-concurrency representation, avoid materializing every independent-action
-interleaving, and commute with component product @chatain2010factorization.
-Other state reductions replace an acyclic implicit-transition subnet by a
-subset of basis markings or compute the largest bisimulation through fully
-symbolic partition refinement @ma2017basis @mumme2013bisimulation.
+@iavich2026symmetry.
+
+Partial-order reduction supplies a much older and broader exact omission
+lineage. Coverage-preserving reductions remove redundant concurrent sequences
+while retaining full reachable-state coverage @holzmann1992coverage. Later
+symbolic methods use BDDs or SAT/SMT independence conditions and can preserve
+local properties, LTL without next, or a representative set with no redundant
+interleavings under the method's declared optimality criterion
+@alur2001partialorder @bhattacharya2005symbolicpor @kahlon2009mpor
+@vandermeulen2011por. Concolic DPOR applies the same schedule quotient during
+test generation @saarikivi2012dpor. SymPaths is closer still: it records
+scheduling events in symbolic paths and proves correctness and completeness of
+the reduced symbolic semantics relative to concrete multithreaded executions
+@deboer2020sympaths. These are exact schedule quotients, not caller-input
+fibers; approximate POR makes that boundary explicit by parameterizing
+approximately commuting actions and nearby initial states @fan2018approxpor.
+
+Colored-net symbolic unfoldings provide another true-concurrency
+representation: they avoid materializing every independent-action interleaving
+and commute with component product @chatain2010factorization. Color quotienting
+and impossible-place-color removal can additionally produce a bisimilar
+unfolded net @bilgram2023unfolding. Other state reductions replace an acyclic
+implicit-transition subnet by basis markings or compute maximum bisimulation
+through fully symbolic partition refinement @ma2017basis
+@mumme2013bisimulation @dovier2002rank @wimmer2006sigref. The BDD lineage
+predates those works @bouali1992symbolicbisim; later parallel signature
+refinement improves quotient construction and representation
+@vandijk2018multicore. Importantly, whole-system bisimulation minimization can
+cost more than direct symbolic invariant checking @fisler2002bisimulation, so
+exact quotienting alone implies no practical advantage.
 Time-anonymous-token analysis instead merges timestamps assessed as irrelevant
 to future timed behavior, with minor information loss explicitly disclosed
-@bellettini2011time. Estimation reachability graphs address the dual
-question of which Petri-net states remain possible under partial observations
+@bellettini2011time. Partial-observation estimators address the dual question
+of which Petri-net states remain possible. Event-based state estimators predate
+the later exact formulations @giua1997estimators. Fixed-structure linear
+constraints can characterize exactly the current markings consistent with an
+observed label word @giua2003marking @corona2003observers, while a related
+algorithm returns every minimum-total-token _initial_ marking consistent with
+that word @li2013minimum. Class-graph or hierarchical-basis constructions add
+timing or unobservable transitions @ghazel2009observer @ma2021hierarchical
 @aguirre2008observability. Sparse symbolic loop execution instead
 observes sibling states' branch-edge patterns up to a loop-impact barrier and
 postpones repeated patterns @busse2024ssle. The former is a state quotient and
@@ -127,6 +155,13 @@ thread and data choices through a backward slice from the selected assertion
 @xie2009fitness @rungta2009abstraction. Both reinforce the same boundary:
 targeted observations can organize sparse exploration without defining a
 complete observer quotient.
+
+Learned pruning makes the guarantee boundary sharper. Homi retains only states
+predicted to improve coverage or expose bugs, and NumScout removes functions
+predicted irrelevant to a requested numerical-defect class
+@cha2020homi @chen2025numscout. Both are intentionally approximate. They
+establish requested-observation control over state retention, not an exact
+equivalence relation or exhaustive enumeration contract.
 
 Coverage can also reduce the concrete seeds supplied to symbolic execution.
 Coverage-based cause reduction retains a subset with the same statement
@@ -153,6 +188,10 @@ exact inverse input fiber.
 Assertion- and coverage-directed methods sharpen that conclusion. Summaries of
 prior assertion-safe executions can soundly prune later multithreaded
 executions while preserving reachable error locations @guo2015assertion.
+Earlier abstract subsumption already backtracks when a symbolic heap state is
+contained in a previously explored abstract state, obtaining finite but
+under-approximate exploration for recursive heaps and arrays
+@anand2006subsumption.
 The publisher abstract for dependency-derived compatible branch sets states
 sound omission of paths that add no branch coverage under a bounded exploration
 objective @yi2024compatible. An index abstract also reports multipoint DSE path
@@ -219,10 +258,16 @@ function on a finite Boolean domain, whereas the present observer deliberately
 retains reached internal site identities and attaches typed symbolic residuals.
 Exact logic synthesis of binarized neural inference supplies a related circuit
 representation without enumerating the output partition @chi2018bnnsynthesis.
-Direct truth-table evaluation and Boolean minimization likewise extract an
-exact rule set for a small Boolean-feature neural classifier, while the same
-method becomes sampling-based approximation at larger feature counts
-@mereani2019rule.
+Earlier Boolean-algebra extraction composes per-neuron Boolean functions and
+can remove redundant hidden nodes without changing a binary or bipolar
+network's function @yang2004booleanrules. Direct truth-table evaluation and
+Boolean minimization likewise extract an exact rule set for a small
+Boolean-feature neural classifier, while the same method becomes
+sampling-based approximation at larger feature counts @mereani2019rule.
+Exact consistency-cube minimization separately establishes complete minimal
+prime-implicant enumeration @dusa2019consistency. These results compile an
+extensional Boolean function; they do not preserve a sparse map of reached
+hidden selections.
 
 == Needed search, partial inputs, and dataflow demand
 
@@ -254,7 +299,9 @@ and proves sound evaluation and bug-finding completeness modulo concretization
 and SMT incompleteness @you2021higherorder. It searches a canonical input
 language for one counterexample rather than producing every exact first-order
 input fiber, but blocks a broad claim that canonical symbolic input search is
-new.
+new. An earlier verifier likewise gives sound proofs and counterexample-
+complete search for a terminating pure higher-order fragment by controlling
+dynamic dispatch and progressively unfolding functions @voirol2015counterexample.
 
 Classical demand-driven dataflow is the direct fixed-input semantic precedent.
 Pingali and Arvind propagate requested output positions backward through a

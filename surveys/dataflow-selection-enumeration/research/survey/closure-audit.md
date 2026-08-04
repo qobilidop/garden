@@ -737,6 +737,55 @@ abstracts.
 If either round adds a cluster or plausible close competitor, this sequence is
 abandoned and two later prospective rounds are required after reconciliation.
 
+## Outcome of round 25 and retirement of round 26
+
+Round 25 is not a no-add round. The primary screener and two independent
+reviewers each resolved all 1,200 captured records. Every snapshot contains
+ranks 1--100 exactly once, with 100 unique source identifiers. The independent
+audits found additions that the initial pass had missed, so the reconciliation
+uses the union of all three dispositions.
+
+The strongest additions are substantive rather than lexical neighbors:
+
+- exact Boolean-algebra composition of a binary or bipolar neural network into
+  simplified rules, including hidden-neuron removal without a function change;
+- abstract symbolic-state subsumption, approximate learned state/function
+  pruning, and an earlier counterexample-complete higher-order verifier;
+- exact color quotienting in Petri-net unfolding and hierarchical basis
+  estimation under partial observation;
+- SAT/SMT, BDD, concolic, local, and schedule-bearing symbolic partial-order
+  reductions with preservation, optimality, or relative-completeness results;
+- the foundational BDD, rank, signature, and parallel symbolic-bisimulation
+  lineage, including evidence that quotient construction can cost more than
+  direct invariant checking; and
+- exact marking sets and timed state observers induced by partial event
+  records, plus the early coverage-preserving POR lineage.
+
+Evidence tiers remain explicit. Bouali--de Simone and several implementation
+neighbors remain primary-full-text candidates; Ma--Zhu--Li and Herdt et al. are
+used only at publisher-abstract level; approximate POR and learned pruning are
+not presented as exact; and general-input neural preprints are separated from
+the exact binary-domain result. Duplicate posted records and conference/tool
+companions were adjudicated once.
+
+These works fit existing clusters but are plausible close competitors under
+the second frozen trigger, so round 25 reopens the map. Round 26's execution
+precondition required round 25 to add neither a cluster nor a close competitor.
+That precondition failed; round 26 is therefore retired unexecuted and cannot
+count toward closure. Two later prospective rounds must be frozen only after
+this reconciliation is complete.
+
+The required critical-source chases were then completed before selecting any
+later round. SymPaths' exact 35-item bibliography and the one-record COCI
+forward set added only established symbolic-execution, POR, and merging
+lineage. Giua--Júlvez--Seatzu's exact 12-item bibliography and 16-record
+Semantic Scholar forward set did reopen the map once more: an earlier
+event-observation Petri-net estimator was missing, and Li--Hadjicostis later
+compute the complete set of minimum-total-token initial markings consistent
+with an observed label word. That result is an optimization-restricted initial-
+state inverse fiber and materially sharpens the partial-observation boundary.
+It has been reconciled before the next prospective queries are frozen.
+
 ## Independent audit
 
 After both replacement rounds qualify, a reviewer who did not choose the
