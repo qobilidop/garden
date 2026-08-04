@@ -8,9 +8,12 @@ set by resolving every choice. Its invariance lemmas and correctness theorem
 show that pull-tab and ordinary rewrite steps preserve all and only the
 consistent results, independently of a particular evaluation strategy.
 
-Needed-narrowing work further establishes demand-guided complete evaluation in
-functional-logic programs. Related term-graph results warn that neededness on
-trees does not automatically lift to shared graphs.
+Antoy, Echahed, and Hanus establish sound, complete, pairwise-disjoint needed
+narrowing for inductively sequential constructor systems, with an optimal
+shared-family cost result. Echahed's later term-graph treatment shows that
+tree-level definitional conditions do not automatically lift through sharing,
+cycles, and redirection: the unrestricted graph strategy may diverge or select
+a non-needed node.
 
 Selective applicative functors separately give an algebraic interface for
 statically visible computations whose effects are selected dynamically. Their
@@ -31,8 +34,8 @@ values do not reveal them.
 This difference suggests two semantic layers:
 
 1. eager deterministic value semantics for the pure graph; and
-2. a result-observation judgment producing a graph-relative set or map of
-   active site outcomes.
+2. a result-observation judgment producing a graph-relative map of outcomes for
+   sites active in that observation.
 
 The second layer must erase to the first. It cannot be called fully abstract
 for ordinary value contexts, because equal-valued selections are deliberately
@@ -51,12 +54,11 @@ distinguished.
 These are theorem obligations. They cannot be discharged by silently unfolding
 the graph into a tree.
 
-## Candidate original question
+## Survey consequence
 
-Does there exist a finite *graph-sharing-aware* interface summary for a
-subgraph that exposes exactly
-the structural observations required by its callers and composes under sharing
-and substitution? A positive exactness and minimality theorem could be stronger
-than both the direct flattened AllSMT encoding and a symbolic interpretation of
-a free selective computation. A summary that merely exports every internal
-activity and outcome variable is not.
+Graph sharing is not itself the missing theory. The formal synthesis must
+distinguish immutable deterministic DAG selections from nondeterministic
+rewriting, quantify contextual occurrence identity explicitly, and show the
+enabled-closure union law. Exporting every internal activity/outcome variable
+then reduces the problem to established selective interpretation and projected
+enumeration; it is a useful correspondence, not a new graph calculus.

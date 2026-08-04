@@ -45,10 +45,10 @@ darwiche2002knowledge	2002	knowledge-compilation	screened	high	JAIR	https://doi.
 moehle2025short	2025	model-enumeration	deep-read	critical	Discrete Applied Mathematics	https://doi.org/10.1016/j.dam.2024.10.021	Correct disjoint short projected model enumeration without a standard output-complexity theorem	-
 creignou2019enumeration	2019	enumeration-complexity	deep-read	high	Discrete Applied Mathematics	https://doi.org/10.1016/j.dam.2019.02.025	OutputP IncP DelayP and oracle-relative complexity for hard enumeration	-
 vanglabbeek2009configuration	2009	event-structures	screened	medium	Theoretical Computer Science	https://doi.org/10.1016/j.tcs.2009.06.014	Formal comparison of configuration structures event structures and Petri nets	-
-raymond1998lurette	1998	dataflow-testing	candidate	high	RTSS	https://doi.org/10.1109/REAL.1998.739746	Automatic testing of reactive synchronous systems with Lustre-based observers	-
-echahed2008termgraph	2008	term-graphs	candidate	high	ICGT	https://doi.org/10.1007/978-3-540-87405-8_7	Neededness and rewriting for inductively sequential term-graph systems	-
-xia2024demand	2024	demand-semantics	candidate	high	ICFP	https://doi.org/10.1145/3674626	Bidirectional demand semantics that explains demanded portions of lazy computations	-
-saundersevans2007dataflow	2007	event-structures	candidate	medium	ENTCS	https://doi.org/10.1016/j.entcs.2006.10.055	Event-structure spans as a compositional semantics for nondeterministic dataflow	-
+raymond1998lurette	1998	dataflow-testing	deep-read	high	RTSS	https://doi.org/10.1109/REAL.1998.739746	Automatic testing of reactive synchronous systems with Lustre-based observers	-
+echahed2008termgraph	2008	term-graphs	deep-read	high	ICGT	https://doi.org/10.1007/978-3-540-87405-8_7	Neededness and rewriting for inductively sequential term-graph systems	-
+xia2024demand	2024	demand-semantics	deep-read	high	ICFP	https://doi.org/10.1145/3674626	Bidirectional demand semantics that computes minimal sufficient partial inputs and cost	-
+saundersevans2007dataflow	2007	event-structures	deep-read	medium	ENTCS	https://doi.org/10.1016/j.entcs.2006.10.055	Event-structure spans with finite input demands and compositional nondeterministic dataflow histories	-
 darwiche2011sdd	2011	decision-diagrams	candidate	high	IJCAI	https://doi.org/10.5591/978-1-57735-516-8/IJCAI11-143	Sentential decision diagrams and structured decomposable representations	-
 lahiri2006predicate	2006	model-enumeration	candidate	high	CAV	https://doi.org/10.1007/11817963_39	AllSMT-style predicate abstraction over selected atoms	-
 lahiri2007predicate	2007	model-enumeration	candidate	high	LMCS	https://doi.org/10.2168/LMCS-3(2:1)2007	Predicate abstraction through symbolic decision procedures and important predicates	-

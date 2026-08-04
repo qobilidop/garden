@@ -43,6 +43,12 @@ context-sensitive demand evaluation is not new, while also clarifying the
 advantage of our restricted domain: a finite total pure graph has no skipped
 effects or divergence and admits a finite exact observation partition.
 
+Lurette uses a different relevance notion: a Lustre observer constrains every
+prefix of a randomized synchronous test trajectory. It is a foundational
+dataflow test generator, but it neither enumerates an input partition nor
+retains internal selector outcomes. The word “relevance” therefore does not by
+itself imply structural observation.
+
 ## Positioning consequence
 
 No paper in this cluster packages the exact sparse contextual site map, but the
