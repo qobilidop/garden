@@ -85,6 +85,13 @@ account, and stability and sequentiality results
 establish whole-network semantic and structural boundaries; none of their
 accessible records states an exact image-and-inverse-fiber contract for a
 requested sparse internal observer.
+The intensional/extensional distinction is itself explicit in dataflow
+semantics. A categorical account records stepwise token production, whereas a
+synchronous Kahn account records the functions computed by nodes; the two are
+proved equivalent under Wadge's cycle-sum deadlock-freedom condition
+@gay2003intensional. This intensional history remains a whole-program token
+interaction semantics, not the inverse image of one requested internal-site
+observer over caller inputs.
 Within that lineage, fixed-point input/output semantics has been made
 compositional for Petri-net parallel composition, feedback, and output merging
 while remaining consistent with step sequences @gold1995petridataflow.
@@ -130,6 +137,12 @@ Synchronous dataflow language design also has explicit transparency and
 compositionality lines @cheung2021transparent @benveniste2000compositional.
 Their semantic and compilation boundaries organize whole program networks;
 they do not derive an input-indexed sparse map at one requested result.
+Recent mechanization gives an operational Coq semantics for asynchronous
+FIFO-connected dataflow circuits, sufficient conditions for schedule-independent
+observable channel histories, and equivalent graph and structured-calculus
+representations @law2025dataflowcircuits. This strengthens the formal
+program-model boundary, but its observable is whole-circuit channel history,
+not a requested sparse selection map and its exact input fibers.
 
 Delayed-choice execution is an especially instructive neighbor. A bounded
 nondeterministic value remains in a shared suspension until a non-copy use
@@ -201,6 +214,11 @@ transitions, while observed transitions remain explicit edges
 @ouni2017sog. The construction compacts a concurrent-system state graph for
 model checking. It does not enumerate the preimages of observations over
 caller inputs or associate a residual program value with each preimage.
+RT-MOBS uses a different observer object: it compositionally builds Time Petri
+Net monitors and target formulas from real-time property patterns
+@ge2021rtmobs. Such an observer is a model fragment composed with the system
+for property checking, rather than an enumerated selection value whose inverse
+caller-input set carries a residual program value.
 The same distinction persists in stubborn-set refinements: safety properties
 or state-property questions drive the reduction @hansen2016safety
 @kristensen2006question, transparent and optimal variants sharpen which

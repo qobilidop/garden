@@ -1575,3 +1575,45 @@ If round 43 reopens the map, round 44 is retired unexecuted. If both qualify,
 they establish the required two-round no-add sequence only for the recorded
 sources, exact queries, captured rankings, date, and frozen trigger. Complete
 primary and independent audits remain mandatory before closure.
+
+## Outcome of round 43 and retirement of round 44
+
+Round 43 reopens the map under the frozen conservative trigger. All three
+auditors parsed and title-screened the 1,200 occurrences. Each snapshot has 100
+logical TSV records, ranks 1--100, and 100 unique nonblank source identifiers;
+the batch contains 1,133 unique identifiers. Forty blank-title occurrences
+represent 39 identifiers: two grant identifiers, three versions of a
+variant-caller supplemental dataset, and 34 unrelated issue or volume records
+from the wound-care publication named *WCET Journal*. The primary normalization
+counted 1,034 unique nonblank titles; the independent normalizations counted
+1,036 and 1,031 under their documented rules.
+
+Two reviewers returned reopen and one returned no-add. The disagreement turns
+on the predeclared lineage exception, not on the direct-target screen. The
+no-add reviewer classified all works as variants within represented semantics.
+The other two identified changed program-model or guarantee boundaries that
+the frozen rule says are independently sufficient: a Coq-mechanized operational
+semantics for asynchronous FIFO-connected dataflow circuits with determinacy
+conditions and graph/calculus equivalence; an explicit equivalence between
+extensional Kahn functions and intensional stepwise token-production semantics;
+and a compositional Time Petri Net observer semantics derived from real-time
+property patterns. Conservative adjudication therefore records reopen.
+
+Supporting additions include causal non-interleaving semantics, operational
+fibrational semantics that abstracts deterministic internal computations,
+relational specification and feedback refinement, composable actor-causality
+interfaces for deadlock analysis, and older fair-merge and parametric-WCET
+variants. Conference, report, dissertation, and duplicate DOI records are
+reconciled to the retained fuller or published versions when relevant.
+
+None of the additions supplies the target construction. The mechanized
+circuit semantics observes whole channel histories; the intensional semantics
+records whole token-production interactions; RT-MOBS composes a property
+monitor with a system; and the other semantics denote causal, relational,
+timing, or deadlock objects. The four direct-query blocks contain established
+neighbors and disciplinary homonyms. All three auditors agree that no title or
+primary abstract claims complete requested-site observations, exact
+caller-input inverse fibers, and typed residuals together.
+
+Round 43 cannot count toward closure. Round 44's precondition failed; it is
+retired unexecuted and cannot count toward the required no-add sequence.

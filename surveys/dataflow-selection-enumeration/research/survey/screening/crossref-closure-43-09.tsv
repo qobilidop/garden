@@ -1,0 +1,101 @@
+rank	source_id	year	doi	title	venue	type
+1	10.2139/ssrn.3271387	2018	10.2139/ssrn.3271387	Exact Impulsive Observer with Predetermined Finite-Time Convergence of Fractional-Order Systems with Unknown Input	SSRN Electronic Journal	journal-article
+2	10.2307/30134435	1988	10.2307/30134435	Input on Leucocytozoonosis Requested	AAV Today	journal-article
+3	10.1016/j.oceaneng.2022.112650	2022	10.1016/j.oceaneng.2022.112650	Disturbance observer based finite-time exact bottom-following control for a BUV with input saturation	Ocean Engineering	journal-article
+4	10.1109/acc.2012.6315058	2012	10.1109/acc.2012.6315058	Unknown input high-gain observer for internal combustion engine test benches	2012 American Control Conference (ACC)	proceedings-article
+5	10.1029/97eo00190	1997	10.1029/97eo00190	Community input requested	Eos, Transactions American Geophysical Union	journal-article
+6	10.23943/princeton/9780691202549.003.0006	2020	10.23943/princeton/9780691202549.003.0006	Exact Predictor Feedback for Multi-Input Systems	Delay-Adaptive Linear Control	book-chapter
+7	10.1016/0097-8485(87)85001-5	1987	10.1016/0097-8485(87)85001-5	An algorithm for evaluation of the exact partition function of free internal rotation, and other quantal systems having quadratically dependent energy levels	Computers &amp; Chemistry	journal-article
+8	10.3724/sp.j.1004.2008.00880	2009	10.3724/sp.j.1004.2008.00880	Observer Design for a Class of Multi-input Multi-output Nonlinear Systems Based on Input-output Linearization Approach	Acta Automatica Sinica	journal-article
+9	10.2139/ssrn.6505802	2026	10.2139/ssrn.6505802	Reservoir observer with extended input space		posted-content
+10	10.1021/acs.iecr.6b04540.s001	None	10.1021/acs.iecr.6b04540.s001	Design of an Unknown Input Observer for Leak Detection under Process Disturbances		component
+11	10.2139/ssrn.3549335	2020	10.2139/ssrn.3549335	Antiduality in Exact Partition Games	SSRN Electronic Journal	journal-article
+12	10.1109/cvci63518.2024.10830203	2024	10.1109/cvci63518.2024.10830203	Quantitative Diagnosis of Internal Short Circuit Fault for Lithium-Ion Battery Based on Unknown Input Observer	2024 8th CAA International Conference on Vehicular Control and Intelligence (CVCI)	proceedings-article
+13	10.2139/ssrn.6992804	2026	10.2139/ssrn.6992804	Partition and Block: Defeating Input Reconstruction Attacks for Split Inference Models		posted-content
+14	10.1515/9783111667317.275	1967	10.1515/9783111667317.275	CHAPTER XXII. The partition between subject and observer	From Anxiety to Method in the Behavioral Sciences	book-chapter
+15	10.1007/978-1-4899-1843-7_20	1997	10.1007/978-1-4899-1843-7_20	Openness to Emotion as Predictor of Perceived, Requested, and Observer Reports of Social Support	Sourcebook of Social Support and Personality	book-chapter
+16	10.1016/j.automatica.2022.110744	2023	10.1016/j.automatica.2022.110744	Asymptotic convergence unknown input observer design via interval observer	Automatica	journal-article
+17	10.21236/ada458136	2001	10.21236/ada458136	Use of the Fisher Exact Test for the Design of Observer Tests		report
+18	10.2139/ssrn.7198891	2026	10.2139/ssrn.7198891	Unknown Input Observer for MIMO Systems with Delay		posted-content
+19	10.1021/ed077p296	2000	10.1021/ed077p296	Input Requested for a History of the Division of Chemical Education	Journal of Chemical Education	journal-article
+20	10.31234/osf.io/ctu9z	2019	10.31234/osf.io/ctu9z	Rounded Input Variables, Exact Test Statistics (RIVETS)		posted-content
+21	10.7326/0003-4819-89-3-431_3	1978	10.7326/0003-4819-89-3-431_3	Progeria: Blood Samples Requested	Annals of Internal Medicine	journal-article
+22	10.1007/978-0-8176-4564-9_7	None	10.1007/978-0-8176-4564-9_7	Exact input-decoupling filters	Systems &amp; Control: Foundations &amp; Applications	book-chapter
+23	10.3724/sp.j.1004.2013.01225	2014	10.3724/sp.j.1004.2013.01225	An Optimal Unknown Input Observer Based Fault Diagnosis Method	Acta Automatica Sinica	journal-article
+24	10.1515/9781400887255-008	2017	10.1515/9781400887255-008	Lecture 7. Breiman Theorem. Pinsker Partition. K-Systems. Exact Endomorphisms. Gibbs Measures	Topics in Ergodic Theory (PMS-44)	book-chapter
+25	10.1021/acs.jctc.0c00493.s001	None	10.1021/acs.jctc.0c00493.s001	Internal Conversion and Intersystem Crossing with the Exact Factorization		component
+26	10.3390/act13040133	2024	10.3390/act13040133	Two-Stage Predefined-Time Exact Sliding Mode Control Based on Predefined-Time Exact Disturbance Observer	Actuators	journal-article
+27	10.5220/0012143600003595	2023	10.5220/0012143600003595	The Partition Problem, and How The Distribution of Input Bits Affects the Solving Process	Proceedings of the 15th International Joint Conference on Computational Intelligence	proceedings-article
+28	10.15676/ijeei.2014.6.2.8	2014	10.15676/ijeei.2014.6.2.8	Sensorless Exact Input-Output Linearization Control of the Induction Machine, Based on Parallel Stator Resistance and Speed MRAS Observer, with a Flux Sliding Mode Observer	International Journal on Electrical Engineering and Informatics	journal-article
+29	10.1109/sii59315.2025.10871027	2025	10.1109/sii59315.2025.10871027	Unknown Input Observer for Takagi-Sugeno Fuzzy Bilinear System with Input and Output Disturbances	2025 IEEE/SICE International Symposium on System Integration (SII)	proceedings-article
+30	10.7326/0003-4819-68-4-960_1	1968	10.7326/0003-4819-68-4-960_1	SURVIVAL AFTER PROLONGED COMA: INFORMATION REQUESTED	Annals of Internal Medicine	journal-article
+31	10.1021/jp710341h.s002	None	10.1021/jp710341h.s002	How Accurate Are Approximate Methods for Evaluating Partition Functions for Hindered Internal Rotations?		component
+32	10.1515/9780691203317-010	2020	10.1515/9780691203317-010	Chapter Six. Exact Predictor Feedback for Multi-Input Systems	Delay-Adaptive Linear Control	book-chapter
+33	10.7717/peerj-cs.1122/fig-1	None	10.7717/peerj-cs.1122/fig-1	Figure 1: The internal hole error and external island error in partition diagram.		component
+34	10.1109/chicc.2014.6895465	2014	10.1109/chicc.2014.6895465	The design of unknown input observer based on unknown input and measurement noise compensation	Proceedings of the 33rd Chinese Control Conference	proceedings-article
+35	10.1016/j.mathsocsci.2020.04.006	2020	10.1016/j.mathsocsci.2020.04.006	Antiduality in exact partition games	Mathematical Social Sciences	journal-article
+36	10.21203/rs.3.rs-3806469/v1	2023	10.21203/rs.3.rs-3806469/v1	Cyber-Physical Secure Observer Synthesis under Model Mismatch and Unknown Input		posted-content
+37	10.1109/acc.2013.6579847	2013	10.1109/acc.2013.6579847	Stress estimation using unknown input observer	2013 American Control Conference	proceedings-article
+38	10.1016/j.automatica.2016.04.047	2016	10.1016/j.automatica.2016.04.047	Exact predictor feedbacks for multi-input LTI systems with distinct input delays	Automatica	journal-article
+39	10.22541/au.167947570.08241309/v1	2023	10.22541/au.167947570.08241309/v1	Exact delay range for the stabilization of linear systems with input delays		posted-content
+40	10.2307/3001771	1955	10.2307/3001771	Erratum: Short-Cut Formulas for the Exact Partition of χ 2 in Contingency Tables	Biometrics	journal-article
+41	10.1016/j.automatica.2025.112548	2026	10.1016/j.automatica.2025.112548	Observer-based asymptotic active fault diagnosis: Separate and joint design of observer gain and input	Automatica	journal-article
+42	10.3390/s26041307	2026	10.3390/s26041307	Reduced-Order Distributed Unknown Input Observer for State Estimation and Unknown Input Reconstruction	Sensors	journal-article
+43	10.1515/integ.2010.025	2010	10.1515/integ.2010.025	A Note on the Exact Expected Length of the kth Part of a Random Partition	Integers	journal-article
+44	10.2307/j.ctvrf8c6w.12	2020	10.2307/j.ctvrf8c6w.12	Exact Predictor Feedback for Multi-Input Systems	Delay-Adaptive Linear Control	book-chapter
+45	10.5194/cp-2017-28-rc1	2017	10.5194/cp-2017-28-rc1	Requested Review		peer-review
+46	10.5194/gmd-2019-24-rc2	2019	10.5194/gmd-2019-24-rc2	Requested review		peer-review
+47	10.2172/1814679	2021	10.2172/1814679	Documents Requested for CA ELAP Accreditation (Document Master List, Personnel, Training Records, Internal Audits, Management Review, NCR example, MDL Studies)		report
+48	10.1016/j.isatra.2024.05.028	2024	10.1016/j.isatra.2024.05.028	Joint unknown input observer for descriptor system based on interval observer	ISA Transactions	journal-article
+49	10.5604/20805268.1059464	2013	10.5604/20805268.1059464	Current Development of the European Arrest Warrant: Strengthening the Procedural Rights of Requested Persons	Internal Security	journal-article
+50	10.1007/978-1-4471-0937-2_12	1997	10.1007/978-1-4471-0937-2_12	Modeling Software Dependability Growth under Input Partition Testing	Safe Comp 96	book-chapter
+51	10.1016/j.automatica.2023.111174	2023	10.1016/j.automatica.2023.111174	A distributed reduced-order unknown input observer	Automatica	journal-article
+52	10.1016/b978-0-12-817034-2.00023-x	2019	10.1016/b978-0-12-817034-2.00023-x	Actuator and Sensor Fault Detection Based on LPV Unknown Input Observer Applied to Lateral Vehicle Dynamics	New Trends in Observer-based Control	book-chapter
+53	10.23919/ecc.2003.7085214	2003	10.23919/ecc.2003.7085214	Asymptotically exact input-output linearization using Carleman linearization	2003 European Control Conference (ECC)	proceedings-article
+54	10.1109/ijcnn.1992.287075	None	10.1109/ijcnn.1992.287075	Function approximation using a partition of the input space	[Proceedings 1992] IJCNN International Joint Conference on Neural Networks	proceedings-article
+55	10.5194/gmd-2016-95-rc2	2016	10.5194/gmd-2016-95-rc2	Requested review		peer-review
+56	10.1109/tac.2024.3419816	2024	10.1109/tac.2024.3419816	Distributed Interval Observer and Distributed Unknown Input Observer Designs	IEEE Transactions on Automatic Control	journal-article
+57	10.23919/ecc.1999.7099345	1999	10.23919/ecc.1999.7099345	Extended conditions for unknown input observer	1999 European Control Conference (ECC)	proceedings-article
+58	10.5194/gmd-2016-95-rc5	2016	10.5194/gmd-2016-95-rc5	Requested review		peer-review
+59	10.1063/1.37180	1988	10.1063/1.37180	The atomic internal partition function	AIP Conference Proceedings	proceedings-article
+60	10.1016/j.bpj.2013.11.2467	2014	10.1016/j.bpj.2013.11.2467	Exact Partition Function Zeros of the Wako-Saitô-Muñoz-Eaton Protein Model	Biophysical Journal	journal-article
+61	10.1007/978-3-642-84725-7_7	1992	10.1007/978-3-642-84725-7_7	Measurement of Diversity Degree by Quantification of Dissimilarity in the Input Partition	Software Fault Tolerance	book-chapter
+62	10.1109/icip.2010.5650185	2010	10.1109/icip.2010.5650185	Estimation of the Ising field parameter thanks to the exact partition function	2010 IEEE International Conference on Image Processing	proceedings-article
+63	10.2307/3001617	1954	10.2307/3001617	Short-Cut Formulas for the Exact Partition of χ 2 in Contingency Tables	Biometrics	journal-article
+64	10.1117/12.2008131	2013	10.1117/12.2008131	Exact confidence intervals for channelized Hotelling observer performance	SPIE Proceedings	proceedings-article
+65	10.23919/ecc51009.2020.9143687	2020	10.23919/ecc51009.2020.9143687	Active Model Discrimination Using Partition-Based Output Feedback Input Design	2020 European Control Conference (ECC)	proceedings-article
+66	10.23919/acc.1992.4792480	1992	10.23919/acc.1992.4792480	Partition of GPC into a State Observer and a State Feedback Controller	1992 American Control Conference	proceedings-article
+67	10.23919/ascc56756.2022.9828167	2022	10.23919/ascc56756.2022.9828167	An Improved Unknown Input Observer Design for Fuzzy Bilinear Systems	2022 13th Asian Control Conference (ASCC)	proceedings-article
+68	10.2139/ssrn.4293724	2022	10.2139/ssrn.4293724	Adaptive Fuzzy Control of Underwater Vehicle Manipulator System with Dead-Zone Input Nonlinearities Via Fuzzy Performance Observer and Disturbance Observer		posted-content
+69	10.1016/b978-0-12-817038-0.00004-4	2019	10.1016/b978-0-12-817038-0.00004-4	On Unknown Input Observer Design for Linear Systems With Delays in States and Inputs	New Trends in Observer-Based Control	book-chapter
+70	10.1016/j.ifacol.2018.09.258	2018	10.1016/j.ifacol.2018.09.258	Passivity-based Input Observer	IFAC-PapersOnLine	journal-article
+71	10.1016/j.automatica.2025.112810	2026	10.1016/j.automatica.2025.112810	Exact prescribed-time stabilization and observer design for a class of MIMO nonlinear systems	Automatica	journal-article
+72	10.7717/peerj.4835/fig-2	None	10.7717/peerj.4835/fig-2	Figure 2: Overestimation of visible area depending on input DSM scale and observer point height—an example of one sampling location		component
+73	10.1051/cocv/2024001	2024	10.1051/cocv/2024001	Exact internal controllability and exact internal synchronization for a kind of first order hyperbolic system	ESAIM: Control, Optimisation and Calculus of Variations	journal-article
+74	10.1260/0263-0923.29.1.55	2010	10.1260/0263-0923.29.1.55	Generalised Disturbance Observer for Systems with Harmonic Disturbances and Input Saturation Using the Internal Model Principle	Journal of Low Frequency Noise, Vibration and Active Control	journal-article
+75	10.5194/se-2019-41-ec2	2019	10.5194/se-2019-41-ec2	requested changes		peer-review
+76	10.1119/1.1976530	1970	10.1119/1.1976530	Exact Partition Function for the Two-Dimensional Ising Model	American Journal of Physics	journal-article
+77	10.1119/1.1991197	1937	10.1119/1.1991197	The Partition Between Physical Object and Observer	American Journal of Physics	journal-article
+78	10.1109/epepemc.2008.4635605	2008	10.1109/epepemc.2008.4635605	Observer of induction motor speed based on exact disturbance model	2008 13th International Power Electronics and Motion Control Conference	proceedings-article
+79	10.1109/cicn.2016.128	2016	10.1109/cicn.2016.128	An Unknown Input Full Order Observer Design Using g-Inverse and Comparison with O'Reilly Observer	2016 8th International Conference on Computational Intelligence and Communication Networks (CICN)	proceedings-article
+80	10.2139/ssrn.4518221	2023	10.2139/ssrn.4518221	Observer-Based Adaptive Control for Trajectory Tracking of Auvs with Input Saturation		posted-content
+81	10.2307/j.ctt5hjn3x.3	None	10.2307/j.ctt5hjn3x.3	AS REQUESTED	Imperial	book-chapter
+82	10.15372/aut20190402	2019	10.15372/aut20190402	ANALYTICAL SYNTHESIS OF THE STATE OBSERVER OF A BILINEAR DYNAMIC SYSTEM WITH A VECTOR INPUT	Автометрия	journal-article
+83	10.1109/acc.2006.1657536	2006	10.1109/acc.2006.1657536	Fault detection and isolation based on novel unknown input observer design	2006 American Control Conference	proceedings-article
+84	10.1016/b978-1-4831-9973-3.50007-0	1968	10.1016/b978-1-4831-9973-3.50007-0	PERFECT GASES AND THE INTERNAL PARTITION FUNCTION	Equilibrium Statistical Mechanics	book-chapter
+85	10.21203/rs.3.rs-8852268/v1	2026	10.21203/rs.3.rs-8852268/v1	Adaptive Sliding Mode Observer-Based Input Offset Voltage Estimation for PMSM		posted-content
+86	10.1109/med.2006.235989	2006	10.1109/med.2006.235989	A Finite Time Unknown Input Observer For Linear Systems	2006 14th Mediterranean Conference on Control and Automation	proceedings-article
+87	10.1109/codit66093.2025.11321698	2025	10.1109/codit66093.2025.11321698	A comparative study between flatness-based control with an exact observer and functional observer-based feedback control	2025 11th International Conference on Control, Decision and Information Technologies (CoDIT)	proceedings-article
+88	10.22541/au.164156989.91161869/v1	2022	10.22541/au.164156989.91161869/v1	Composite Observer-Based Adaptive Dynamic Surface Control for Fractional-Order Nonlinear Systems with Input Saturation		posted-content
+89	10.1016/0375-9601(83)90217-7	1983	10.1016/0375-9601(83)90217-7	An exact partition function for the classical Dzialoshinsky-Moriya chain	Physics Letters A	journal-article
+90	10.5220/0012928000003886	2024	10.5220/0012928000003886	Analyzing Exact Output Regions of Reinforcement Learning Policy Neural Networks for High-Dimensional Input-Output Spaces	Proceedings of the 1st International Conference on Explainable AI for Neural and Symbolic Methods	proceedings-article
+91	10.5772/intechopen.69239	2017	10.5772/intechopen.69239	Nonlinear Unknown‐Input Observer‐Based Systems for Secure Communication	Advances in Underwater Acoustics	book-chapter
+92	10.1201/9781482274530-14	2000	10.1201/9781482274530-14	On the Exact Performance Analysis of Multicast Switches with Input Buffering	System Performance Evaluation	book-chapter
+93	10.1109/med.2006.235990	2006	10.1109/med.2006.235990	An Unknown Input Observer for Singular Time-Delay Systems	2006 14th Mediterranean Conference on Control and Automation	proceedings-article
+94	10.1103/physrevlett.110.248101	2013	10.1103/physrevlett.110.248101	Exact Partition Function Zeros of The Wako-Saitô-Muñoz-Eaton Protein Model	Physical Review Letters	journal-article
+95	10.1016/0012-365x(93)90358-z	1993	10.1016/0012-365x(93)90358-z	Fast exact and approximate algorithms for k-partition and scheduling independent tasks	Discrete Mathematics	journal-article
+96	10.1017/cbo9780511760495.004	2010	10.1017/cbo9780511760495.004	The partition of Africa: geopolitical and internal perspectives	Understanding the British Empire	book-chapter
+97	10.23919/ecc.2001.7076088	2001	10.23919/ecc.2001.7076088	An extended unknown input observer for nonlinear discrete-time systems	2001 European Control Conference (ECC)	proceedings-article
+98	10.23919/acc.1983.4788243	1983	10.23919/acc.1983.4788243	Exact Multi-Input Pole Placement by Linear-Quadratic Synthesis	1983 American Control Conference	proceedings-article
+99	10.1515/9783112214350-004	2025	10.1515/9783112214350-004	4 Passage from internal exact controllability of beam equation to pointwise exact controllability	Evolutionary Dynamic Equations	book-chapter
+100	10.1142/s0217732312502008	2012	10.1142/s0217732312502008	EXACT ABJM PARTITION FUNCTION FROM TBA	Modern Physics Letters A	journal-article

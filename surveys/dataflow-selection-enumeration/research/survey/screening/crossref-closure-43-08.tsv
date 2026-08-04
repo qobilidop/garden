@@ -1,0 +1,101 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1007/978-1-4471-3860-0_11	1990	10.1007/978-1-4471-3860-0_11	Defining Fair Merge as a Colimit: Towards a Fixed-Point Theory for Indeterminate Dataflow	Workshops in Computing	book-chapter
+2	10.1016/0890-5401(92)90043-f	1992	10.1016/0890-5401(92)90043-f	The expressive power of indeterminate dataflow primitives	Information and Computation	journal-article
+3	10.1109/iccw.2008.65	2008	10.1109/iccw.2008.65	A Distributed Merge and Split Algorithm for Fair Cooperation in Wireless Networks	ICC Workshops - 2008 IEEE International Conference on Communications Workshops	proceedings-article
+4	10.1609/icaps.v25i1.13732	2015	10.1609/icaps.v25i1.13732	On the Expressive Power of Non-Linear Merge-and-Shrink Representations	Proceedings of the International Conference on Automated Planning and Scheduling	journal-article
+5	10.1007/3-540-12896-4_352	1984	10.1007/3-540-12896-4_352	Compactness in semantics for merge and fair merge	Lecture Notes in Computer Science	book-chapter
+6	10.1016/j.neunet.2022.12.016	2023	10.1016/j.neunet.2022.12.016	Tucker network: Expressive power and comparison	Neural Networks	journal-article
+7	10.1007/978-981-16-6054-2_5	2022	10.1007/978-981-16-6054-2_5	The Expressive Power of Graph Neural Networks	Graph Neural Networks: Foundations, Frontiers, and Applications	book-chapter
+8	10.1016/b978-1-4832-0771-1.50011-4	1991	10.1016/b978-1-4832-0771-1.50011-4	TOWARD THE EXPRESSIVE POWER OF NATURAL LANGUAGE	Principles of Semantic Networks	book-chapter
+9	10.1016/j.neunet.2024.106297	2024	10.1016/j.neunet.2024.106297	Expressive power of ReLU and step networks under floating-point operations	Neural Networks	journal-article
+10	10.1016/0004-3702(76)90003-5	1976	10.1016/0004-3702(76)90003-5	Extending the expressive power of semantic networks	Artificial Intelligence	journal-article
+11	10.1016/j.neunet.2025.108112	2026	10.1016/j.neunet.2025.108112	On the theoretical expressive power of graph transformers for solving graph problems	Neural Networks	journal-article
+12	10.1016/bs.adcom.2014.10.001	2015	10.1016/bs.adcom.2014.10.001	Sorting Networks on Maxeler Dataflow Supercomputing Systems	Advances in Computers	book-chapter
+13	10.2139/ssrn.6174562	2026	10.2139/ssrn.6174562	No Purpose, No Character Intermediate Copying and Expressive Competition in Fair Use Factor One		posted-content
+14	10.1016/0893-6080(88)90471-6	1988	10.1016/0893-6080(88)90471-6	Analysis of dataflow diagrams by neural network	Neural Networks	journal-article
+15	10.52202/075280-3135	2023	10.52202/075280-3135	The expressive power of pooling in Graph Neural Networks	Advances in Neural Information Processing Systems 36	proceedings-article
+16	10.1037/e510972006-003	2002	10.1037/e510972006-003	Two VA Health Care Networks Merge	PsycEXTRA Dataset	dataset
+17	10.1007/springerreference_64155	None	10.1007/springerreference_64155	Expressive Power of Query Languages	SpringerReference	reference-entry
+18	10.1109/icaiic68212.2026.11454209	2026	10.1109/icaiic68212.2026.11454209	Revisiting the Expressive Power of Simple ReLU Neural Networks	2026 International Conference on Artificial Intelligence in Information and Communication (ICAIIC)	proceedings-article
+19	10.1049/ep.1986.0350	1986	10.1049/ep.1986.0350	Dataflow at MIT	Electronics and Power	journal-article
+20	10.1007/978-3-319-66125-4_1	2017	10.1007/978-3-319-66125-4_1	Implementing Neural Networks by Using the DataFlow Paradigm	Computer Communications and Networks	book-chapter
+21	10.1016/j.adhoc.2010.02.007	2010	10.1016/j.adhoc.2010.02.007	Time–space backoff for fair node throughput in wireless networks using power control	Ad Hoc Networks	journal-article
+22	10.5040/9798216405320.ch-007	2016	10.5040/9798216405320.ch-007	Sport is Expressive, Sport is Controlled	Fair and Foul	other
+23	10.1109/asp-dac58780.2024.10473865	2024	10.1109/asp-dac58780.2024.10473865	Sparse-Sparse Matrix Multiplication Accelerator on FPGA featuring Distribute-Merge Product Dataflow	2024 29th Asia and South Pacific Design Automation Conference (ASP-DAC)	proceedings-article
+24	10.1109/tpwrd.2007.905567	2007	10.1109/tpwrd.2007.905567	Fair Resource Allocation With Improved Diversity Performance for Indoor Power-Line Networks	IEEE Transactions on Power Delivery	journal-article
+25	10.1049/ep.1977.0203	1977	10.1049/ep.1977.0203	Two Pye companies merge	Electronics and Power	journal-article
+26	10.1049/ep.1968.0416	1968	10.1049/ep.1968.0416	Divide or merge?	Electronics and Power	journal-article
+27	10.2139/ssrn.7159538	2026	10.2139/ssrn.7159538	Ethereum After the Merge – A Change in Power		posted-content
+28	10.1109/wincom.2017.8238176	2017	10.1109/wincom.2017.8238176	Fair battery power consumption algorithms for relay nodes in rural wireless networks	2017 International Conference on Wireless Networks and Mobile Communications (WINCOM)	proceedings-article
+29	10.1049/ep.1968.0388	1968	10.1049/ep.1968.0388	Divide or merge?	Electronics and Power	journal-article
+30	10.7551/mitpress/2516.003.0019	2000	10.7551/mitpress/2516.003.0019	Expressive Power	Dynamic Logic	book-chapter
+31	10.1109/wowmom.2019.8793007	2019	10.1109/wowmom.2019.8793007	Expressive Data-Centric Multicast on RPL in Low-Power Networks	"2019 IEEE 20th International Symposium on ""A World of Wireless, Mobile and Multimedia Networks"" (WoWMoM)"	proceedings-article
+32	10.1049/ep.1969.0066	1969	10.1049/ep.1969.0066	Divide or merge	Electronics and Power	journal-article
+33	10.1016/j.adhoc.2018.07.025	2018	10.1016/j.adhoc.2018.07.025	Joint uplink/downlink fair power allocation for wireless backhaul of vehicular small cells	Ad Hoc Networks	journal-article
+34	10.1145/3613424.3623775	2023	10.1145/3613424.3623775	RM-STC: Row-Merge Dataflow Inspired GPU Sparse Tensor Core for Energy-Efficient Sparse Acceleration	56th Annual IEEE/ACM International Symposium on Microarchitecture	proceedings-article
+35	10.2139/ssrn.6875241	2026	10.2139/ssrn.6875241	Graph as App: A GPU Dataflow Substrate for Domain-Agnostic Living Networks		posted-content
+36	10.5040/9781666998610.ch-5	2018	10.5040/9781666998610.ch-5	Expressive Rights and International Sporting Events	International Sporting Events and Human Rights	other
+37	10.1109/ijcnn.1989.118548	1989	10.1109/ijcnn.1989.118548	Self organizing networks with a split and merge algorithm	International Joint Conference on Neural Networks	proceedings-article
+38	10.2307/j.ctv224tw36.27	2019	10.2307/j.ctv224tw36.27	Meeting Up at the Movies in Tanzania	Africa Every Day	book-chapter
+39	10.1109/wowmom.2016.7523571	2016	10.1109/wowmom.2016.7523571	Fair distributed Congestion Control with transmit power for vehicular networks	2016 IEEE 17th International Symposium on A World of Wireless, Mobile and Multimedia Networks (WoWMoM)	proceedings-article
+40	10.1016/0890-5401(91)90054-6	1991	10.1016/0890-5401(91)90054-6	A model of concurrency with fair merge and full recursion	Information and Computation	journal-article
+41	10.70675/a0be9cd5z52adz4d3dzbd4bz98d878f10255	None	10.70675/a0be9cd5z52adz4d3dzbd4bz98d878f10255	Towards Expressive Graph Neural Networks : Theory, Algorithms, and Applications		dissertation
+42	10.1007/978-3-030-13803-5_9	2019	10.1007/978-3-030-13803-5_9	Bitcoin Mining Using Maxeler DataFlow Computers	Computer Communications and Networks	book-chapter
+43	10.1371/journal.pone.0252421	2021	10.1371/journal.pone.0252421	Heterogeneous networks: Fair power allocation in LTE-A uplink scenarios	PLOS ONE	journal-article
+44	10.7551/mitpress/5334.003.0007	2007	10.7551/mitpress/5334.003.0007	Advertising	Persuasive Games	book-chapter
+45	10.1109/glocom.2002.1188393	None	10.1109/glocom.2002.1188393	Fair power and transmission rate control in wireless networks	Global Telecommunications Conference, 2002. GLOBECOM '02. IEEE	proceedings-article
+46	10.1016/j.tcs.2012.01.042	2012	10.1016/j.tcs.2012.01.042	The expressive power of analog recurrent neural networks on infinite input streams	Theoretical Computer Science	journal-article
+47	10.1007/978-3-319-66125-4_3	2017	10.1007/978-3-319-66125-4_3	Binary Search in the DataFlow Paradigm	Computer Communications and Networks	book-chapter
+48	10.7764/tesisuc/ing/51008	None	10.7764/tesisuc/ing/51008	Expressive power of linear algebra query languages		dissertation
+49	10.7551/mitpress/5334.003.0003	2007	10.7551/mitpress/5334.003.0003	Politics	Persuasive Games	book-chapter
+50	10.3998/mpub.14525819	2025	10.3998/mpub.14525819	Expressive Networks		monograph
+51	10.1109/icccn.2006.286292	2006	10.1109/icccn.2006.286292	On Fair and Efficient Power Control in CDMA Wireless Data Networks	Proceedings of 15th International Conference on Computer Communications and Networks	proceedings-article
+52	10.7551/mitpress/5334.003.0011	2007	10.7551/mitpress/5334.003.0011	Learning	Persuasive Games	book-chapter
+53	10.21236/ad0737270	1971	10.21236/ad0737270	A Generalization of the Divide-Sort-Merge Strategy for Sorting Networks		report
+54	10.1109/icbsii58188.2023.10181059	2023	10.1109/icbsii58188.2023.10181059	Design Of Low Power &amp; High-Speed Multiway Merge Sorting Networks For Median Filter	2023 International Conference on Bio Signals, Images, and Instrumentation (ICBSII)	proceedings-article
+55	10.1364/prj.513845	2024	10.1364/prj.513845	Diffractive neural networks with improved expressive power for gray-scale image classification	Photonics Research	journal-article
+56	10.15385/jmo.2010.1.1.2	2010	10.15385/jmo.2010.1.1.2	Music: Its Expressive Power and Moral Significance	Musical Offerings	journal-article
+57	10.4172/2167-6801.1000e113	2012	10.4172/2167-6801.1000e113	The Expressive Apes and the Emotional Apes: Current Fair Trends in Primatology	Journal of Primatology	journal-article
+58	10.1109/milcom.2004.1494896	None	10.1109/milcom.2004.1494896	A fair distributed congestion-aware power control algorithm for IEEE802.11 based networks	IEEE MILCOM 2004. Military Communications Conference, 2004.	proceedings-article
+59	10.3837/tiis.2018.05.001	2018	10.3837/tiis.2018.05.001	A QEE-Oriented Fair Power Allocation for Two-tier Heterogeneous Networks	KSII Transactions on Internet and Information Systems	journal-article
+60	10.1109/tnnls.2024.3350786	2025	10.1109/tnnls.2024.3350786	Achieving Sharp Upper Bounds on the Expressive Power of Neural Networks via Tropical Polynomials	IEEE Transactions on Neural Networks and Learning Systems	journal-article
+61	10.2139/ssrn.6169529	2026	10.2139/ssrn.6169529	Bartz v. Anthropic and the Misframing of Fair Use Factor One Revealed Purpose, Transformative Character, and Expressive Competition in AI Training		posted-content
+62	10.3724/sp.j.1004.2011.00290	2011	10.3724/sp.j.1004.2011.00290	Research on CP-nets and Its Expressive Power	Acta Automatica Sinica	journal-article
+63	10.3233/fi-1995-22128	1995	10.3233/fi-1995-22128	AN ALGEBRA OF DATAFLOW NETWORKS	Fundamenta Informaticae	journal-article
+64	10.1109/milcom.2003.1290139	None	10.1109/milcom.2003.1290139	A cluster-merge algorithm for solving the minimum power broadcast problem in large scale wireless networks	IEEE Military Communications Conference, 2003. MILCOM 2003.	proceedings-article
+65	10.1007/978-3-319-66125-4_2	2017	10.1007/978-3-319-66125-4_2	Solving the Poisson Equation by Using DataFlow Technology	Computer Communications and Networks	book-chapter
+66	10.2139/ssrn.6156407	2026	10.2139/ssrn.6156407	Bartz v. Anthropic and the Purpose Reduction Problem in Fair Use Factor One Training for What? Intermediate Mechanics and Operative Expressive Deployment		posted-content
+67	10.32604/cmc.2022.022020	2022	10.32604/cmc.2022.022020	Sum Rate Maximization-based Fair Power Allocation in Downlink NOMA Networks	Computers, Materials &amp; Continua	journal-article
+68	10.1109/sahcn.2006.288504	2006	10.1109/sahcn.2006.288504	Distributed Fair Transmit Power Adjustment for Vehicular Ad Hoc Networks	2006 3rd Annual IEEE Communications Society on Sensor and Ad Hoc Communications and Networks	proceedings-article
+69	10.1016/j.neunet.2024.106213	2024	10.1016/j.neunet.2024.106213	Weisfeiler–Lehman goes dynamic: An analysis of the expressive power of Graph Neural Networks for attributed and dynamic graphs	Neural Networks	journal-article
+70	10.1007/978-3-319-16229-4_1	2015	10.1007/978-3-319-16229-4_1	The DataFlow Paradigm	Computer Communications and Networks	book-chapter
+71	10.70675/79450ec3z4ba3z4908za267z58ffed3915eb	None	10.70675/79450ec3z4ba3z4908za267z58ffed3915eb	Joint design of deep neural networks and FPGA dataflow architectures for semantic segmentation in autonomous vehicles		dissertation
+72	10.1109/icca.2016.7505294	2016	10.1109/icca.2016.7505294	A fair downlink power control algorithm for femtocell networks	2016 12th IEEE International Conference on Control and Automation (ICCA)	proceedings-article
+73	10.1007/s42484-025-00332-x	2025	10.1007/s42484-025-00332-x	Unleashing the expressive power of pulse-based quantum neural networks	Quantum Machine Intelligence	journal-article
+74	10.1007/s11276-014-0866-z	2015	10.1007/s11276-014-0866-z	Power controlled fair access protocol for wireless networked control systems	Wireless Networks	journal-article
+75	10.1097/01.bmsas.0000531093.55856.dd	2018	10.1097/01.bmsas.0000531093.55856.dd	Merge Healthcare Power Strips	Biomedical Safety &amp; Standards	journal-article
+76	10.21203/rs.3.rs-6902359/v1	2025	10.21203/rs.3.rs-6902359/v1	Optimizing Entangling Power and Preserving Circuit Symmetry in Hybrid Quantum Generative Adversarial Networks for Expressive Variational Generation		posted-content
+77	10.2139/ssrn.6964198	2026	10.2139/ssrn.6964198	"Measuring the Power Consumption after ""the Merge"""		posted-content
+78	10.4018/978-1-7998-8350-0.ch006	2022	10.4018/978-1-7998-8350-0.ch006	Implementation Details of Neural Networks Using Dataflow	Advances in Systems Analysis, Software Engineering, and High Performance Computing	book-chapter
+79	10.1007/bfb0013470	None	10.1007/bfb0013470	Dataflow networks are fibrations	Lecture Notes in Computer Science	book-chapter
+80	10.1007/978-3-030-13803-5_8	2019	10.1007/978-3-030-13803-5_8	An Overview of Selected DataFlow Applications in Physics Simulations	Computer Communications and Networks	book-chapter
+81	10.7551/mitpress/5334.003.0001	2007	10.7551/mitpress/5334.003.0001	Preface	Persuasive Games	other
+82	10.7551/mitpress/5334.003.0016	2007	10.7551/mitpress/5334.003.0016	Notes	Persuasive Games	book-chapter
+83	10.1007/978-3-030-13803-5_2	2019	10.1007/978-3-030-13803-5_2	On Cloud-Supported Web-Based Integrated Development Environment for Programming DataFlow Architectures	Computer Communications and Networks	book-chapter
+84	10.1109/telfor.2016.7818792	2016	10.1109/telfor.2016.7818792	Dataflow integration in mixedcritical networks	2016 24th Telecommunications Forum (TELFOR)	proceedings-article
+85	10.1109/sahcn.2013.6644991	2013	10.1109/sahcn.2013.6644991	Distributed fair-efficient power allocation in two-hop relay networks	2013 IEEE International Conference on Sensing, Communications and Networking (SECON)	proceedings-article
+86	10.1016/j.egyr.2026.109337	2026	10.1016/j.egyr.2026.109337	Adaptive machine learning framework for fair and resilient load shedding in smart power distribution networks	Energy Reports	journal-article
+87	10.31525/ct1-nct04006496	2019	10.31525/ct1-nct04006496	AML Expressive Writing	Case Medical Research	journal-article
+88	10.1007/978-3-030-13803-5_7	2019	10.1007/978-3-030-13803-5_7	Biomedical Images Processing Using Maxeler DataFlow Engines	Computer Communications and Networks	book-chapter
+89	10.1109/sfcs.1989.63474	1989	10.1109/sfcs.1989.63474	Full abstraction for nondeterministic dataflow networks	30th Annual Symposium on Foundations of Computer Science	proceedings-article
+90	10.1007/978-3-319-66128-5_4	2017	10.1007/978-3-319-66128-5_4	Transforming Applications from the Control Flow to the Dataflow Paradigm	Computer Communications and Networks	book-chapter
+91	10.7551/mitpress/5334.003.0010	2007	10.7551/mitpress/5334.003.0010	Advergames	Persuasive Games	book-chapter
+92	10.7551/mitpress/5334.003.0018	2007	10.7551/mitpress/5334.003.0018	Index	Persuasive Games	book-chapter
+93	10.7551/mitpress/5334.003.0017	2007	10.7551/mitpress/5334.003.0017	Bibliography	Persuasive Games	book-chapter
+94	10.1007/978-3-030-13803-5_6	2019	10.1007/978-3-030-13803-5_6	Face Recognition Using Maxeler DataFlow	Computer Communications and Networks	book-chapter
+95	10.7551/mitpress/5334.003.0014	2007	10.7551/mitpress/5334.003.0014	Exercise	Persuasive Games	book-chapter
+96	10.7551/mitpress/5334.001.0001	2007	10.7551/mitpress/5334.001.0001	Persuasive Games		monograph
+97	10.1109/glocom.2004.1379029	2004	10.1109/glocom.2004.1379029	Distributed fair scheduling and power control in wireless ad hoc networks	IEEE Global Telecommunications Conference, 2004. GLOBECOM '04.	proceedings-article
+98	10.1177/089124396010003003	1996	10.1177/089124396010003003	SHATTERING THE INSTRUMENTAL-EXPRESSIVE MYTH	Gender &amp; Society	journal-article
+99	10.1007/978-3-319-66128-5_2	2017	10.1007/978-3-319-66128-5_2	Discrepancy Reduction Between the Topology of Dataflow Graph and the Topology of FPGA Structure	Computer Communications and Networks	book-chapter
+100	10.54254/2755-2721/2025.po34267	2026	10.54254/2755-2721/2025.po34267	Expressive Power Bounds of Graph Neural Networks Based on Spectral Graph Theory with Applications to Combinatorial Optimization	Applied and Computational Engineering	journal-article
