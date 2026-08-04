@@ -32,6 +32,14 @@ directly. Run repository checks inside the development container:
 ./dev.sh ./scripts/check.sh
 ```
 
+The first invocation builds the image from `ubuntu:24.04`; later invocations
+reuse that local image. Pass `--build` after changing the Dockerfile or when an
+explicit rebuild is wanted:
+
+```console
+./dev.sh --build ./scripts/check.sh
+```
+
 Once `manuscript/main.typ` exists, the same command compiles it to
 `build/manuscript.pdf` and verifies that the PDF contains extractable text.
 
