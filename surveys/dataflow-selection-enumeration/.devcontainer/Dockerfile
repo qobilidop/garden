@@ -12,6 +12,7 @@ RUN apt-get update \
         fonts-dejavu-core \
         fonts-linuxlibertine \
         git \
+        openssh-client \
         poppler-utils \
         python3 \
         ripgrep \

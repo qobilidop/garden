@@ -30,7 +30,9 @@ def request_json(path: str, parameters: dict[str, str] | None = None) -> dict:
         url = f"{url}?{query}"
     request = urllib.request.Request(
         url,
-        headers={"User-Agent": "xlsynth-symex-paper/0 (mailto:qobilidop@gmail.com)"},
+        headers={
+            "User-Agent": "dataflow-selection-enumeration/0 (mailto:qobilidop@gmail.com)"
+        },
     )
     with urllib.request.urlopen(request, timeout=60) as response:
         return json.load(response)

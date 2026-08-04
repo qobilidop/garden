@@ -12,7 +12,9 @@ def fetch(doi: str) -> dict:
     encoded = urllib.parse.quote(doi, safe="")
     request = urllib.request.Request(
         f"https://api.crossref.org/works/{encoded}",
-        headers={"User-Agent": "xlsynth-symex-paper/0 (mailto:qobilidop@gmail.com)"},
+        headers={
+            "User-Agent": "dataflow-selection-enumeration/0 (mailto:qobilidop@gmail.com)"
+        },
     )
     with urllib.request.urlopen(request, timeout=30) as response:
         return json.load(response)["message"]

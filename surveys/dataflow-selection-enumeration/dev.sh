@@ -4,7 +4,7 @@ set -euo pipefail
 
 repo_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 readonly repo_dir
-readonly image="${XLSYNTH_SYMEX_PAPER_DEV_IMAGE:-xlsynth-symex-paper-dev:local}"
+readonly image="${DATAFLOW_SELECTION_ENUMERATION_DEV_IMAGE:-dataflow-selection-enumeration-dev:local}"
 
 force_build=false
 if [[ "${1:-}" == "--build" ]]; then
@@ -19,11 +19,10 @@ fi
 
 if [[ "${force_build}" == true ]] || ! docker image inspect "${image}" >/dev/null 2>&1; then
   docker build \
-    --quiet \
     --platform linux/amd64 \
     --tag "${image}" \
     --file "${repo_dir}/.devcontainer/Dockerfile" \
-    "${repo_dir}" >/dev/null
+    "${repo_dir}"
 fi
 
 terminal_args=(--interactive)
@@ -31,16 +30,30 @@ if [[ -t 0 && -t 1 ]]; then
   terminal_args+=(--tty)
 fi
 
+ssh_args=()
+if [[ -n "${SSH_AUTH_SOCK:-}" && -S "${SSH_AUTH_SOCK}" ]]; then
+  ssh_args+=(
+    --volume "${SSH_AUTH_SOCK}:/run/host-ssh-agent"
+    --env SSH_AUTH_SOCK=/run/host-ssh-agent
+  )
+fi
+if [[ -f "${HOME}/.ssh/known_hosts" ]]; then
+  ssh_args+=(
+    --volume "${HOME}/.ssh/known_hosts:/etc/ssh/ssh_known_hosts:ro"
+  )
+fi
+
 mkdir -p "${repo_dir}/.cache/tmp"
 
 exec docker run --rm "${terminal_args[@]}" \
   --platform linux/amd64 \
-  --volume "${repo_dir}:/workspace/xlsynth-symex-paper" \
+  --volume "${repo_dir}:/workspace/dataflow-selection-enumeration" \
   --volume "${repo_dir}/.cache/tmp:/tmp" \
-  --workdir /workspace/xlsynth-symex-paper \
+  --workdir /workspace/dataflow-selection-enumeration \
   --env HOME=/tmp \
   --env GIT_CONFIG_COUNT=1 \
   --env GIT_CONFIG_KEY_0=safe.directory \
-  --env GIT_CONFIG_VALUE_0=/workspace/xlsynth-symex-paper \
+  --env GIT_CONFIG_VALUE_0=/workspace/dataflow-selection-enumeration \
   --user "$(id -u):$(id -g)" \
+  "${ssh_args[@]}" \
   "${image}" "$@"
