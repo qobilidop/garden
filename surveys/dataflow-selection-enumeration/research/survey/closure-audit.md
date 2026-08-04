@@ -340,13 +340,16 @@ and complexity corrections were reconciled before the following replacement
 rounds were frozen. Neither round had been executed or previewed at freeze
 time.
 
-## Replacement round `closure-replacement-16`: OpenAlex
+## Replacement round `closure-replacement-16`: Semantic Scholar
 
-Source: OpenAlex works search API. Frozen 2026-08-04 after reconciliation and
-before execution. Each query exports the first 100 relevance-ranked records,
-including indexed abstracts. Every title is screened under the unchanged
-two-part close-competitor trigger; plausible records receive abstract and
-primary-source review.
+OpenAlex was the frozen source, but all twelve requests returned HTTP 429
+before exposing a result set or title. Those failed requests do not count as a
+round. Semantic Scholar Graph paper search was availability-probed with an
+unrelated zero-result string, then selected and refrozen on 2026-08-04 before
+any query below was executed. Each query exports the first 100 relevance-ranked
+records, including indexed abstracts. Every title is screened under the
+unchanged two-part close-competitor trigger; plausible records receive abstract
+and primary-source review.
 
 | ID | Exact query |
 |---|---|
