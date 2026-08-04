@@ -85,7 +85,7 @@ barendregt1987termgraph	1987	term-graphs	candidate	high	PARLE	https://doi.org/10
 loogen1993demand	1993	term-graphs	candidate	high	PLILP	https://doi.org/10.1007/3-540-57186-8_79	Demand-driven lazy narrowing preceding later needed term-graph semantics	-
 masina2025cnf	2025	model-enumeration	deep-read	critical	JAIR	https://doi.org/10.1613/jair.1.16870	CNF conversion can fragment short projected SAT and SMT enumeration outputs	-
 sebastiani2025entailment	2025	model-enumeration	deep-read	critical	CADE	https://doi.org/10.1007/978-3-031-99984-0_37	Semantic separation of verification and entailment for projected partial assignments	-
-fried2024entailing	2024	model-enumeration	candidate	high	SAT	https://doi.org/10.4230/LIPIcs.SAT.2024.13	Entailment-based generalization for compact circuit AllSAT covers	-
+fried2024entailing	2024	model-enumeration	deep-read	critical	SAT	https://doi.org/10.4230/LIPIcs.SAT.2024.13	Entailment-based generalization of exact circuit AllSAT covers beyond ternary satisfaction	-
 lagniez2025preprocessing	2025	knowledge-compilation	candidate	medium	JELIA	https://doi.org/10.1007/978-3-032-04590-4_9	Preprocessing d-DNNF representations while preserving enumeration and query behavior	-
 civini2026theorylemma	2026	model-enumeration	candidate	medium	IJCAR	https://doi.org/10.1007/978-3-032-32589-1_18	SMT theory-lemma enumeration with a different output object from observation fibers	-
 gebser2009projected	2009	model-enumeration	deep-read	critical	CPAIOR	https://doi.org/10.1007/978-3-642-01929-6_7	Sound complete nonredundant projected Boolean solution enumeration in polynomial space	-
