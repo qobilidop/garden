@@ -88,6 +88,10 @@ General symbolic path simulation has also been embedded as a feasibility
 service inside path-sensitive interprocedural dataflow analysis
 @hampapuram2005pathsimulation. That integration answers client path queries;
 it does not emit the complete requested-event image and inverse input fibers.
+Symbolic simulation has separately been extended to synchronous dataflow
+programs with timers @baudart2019timers. That language model is close to this
+paper's dataflow setting, but its output remains symbolic executions rather
+than a sparse requested-site observation partition.
 
 Delayed-choice execution is an especially instructive neighbor. A bounded
 nondeterministic value remains in a shared suspension until a non-copy use
@@ -156,8 +160,12 @@ input partitions.
 The same distinction persists in stubborn-set refinements: safety properties
 or state-property questions drive the reduction @hansen2016safety
 @kristensen2006question, transparent and optimal variants sharpen which
-representatives can be omitted @siegel2012transparent @valmari2010optimal,
+representatives can be omitted @siegel2012transparent @valmari2011optimal,
 and property automata can direct both POR and search @jensen2022automata.
+Earlier and parallel variants specialize stubborn sets to standard, linear-
+time, simple linear-time, or combined state/event temporal properties
+@schmidt1999standard @varpaaniemi2005linear @lehmann2012simplelinear
+@benes2011stateevent.
 Those methods preserve a model-checking question over schedules; they do not
 derive an inverse partition of all caller inputs for a selected graph event.
 

@@ -1,0 +1,101 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1007/978-3-030-94583-1_8	2022	10.1007/978-3-030-94583-1_8	Automata-Driven Partial Order Reduction and Guided Search for LTL Model Checking	Lecture Notes in Computer Science	book-chapter
+2	10.1016/j.scico.2010.02.008	2011	10.1016/j.scico.2010.02.008	Partial order reduction for state/event LTL with application to component-interaction automata	Science of Computer Programming	journal-article
+3	10.1007/s10817-017-9418-4	2018	10.1007/s10817-017-9418-4	Formal Verification of an Executable LTL Model Checker with Partial Order Reduction	Journal of Automated Reasoning	journal-article
+4	10.1007/978-3-319-40648-0_23	2016	10.1007/978-3-319-40648-0_23	Formal Verification of an Executable LTL Model Checker with Partial Order Reduction	Lecture Notes in Computer Science	book-chapter
+5	10.1007/978-3-319-13338-6_20	2014	10.1007/978-3-319-13338-6_20	Partial-Order Reduction for Multi-core LTL Model Checking	Lecture Notes in Computer Science	book-chapter
+6	10.1007/978-3-642-20398-5_29	2011	10.1007/978-3-642-20398-5_29	Combining Partial-Order Reduction and Symbolic Model Checking to Verify LTL Properties	Lecture Notes in Computer Science	book-chapter
+7	10.1093/logcom/exw004	2016	10.1093/logcom/exw004	Partial order reduction for checking LTL formulae with the next-time operator	Journal of Logic and Computation	journal-article
+8	10.1145/3603288.3603296	2024	10.1145/3603288.3603296	Approximate Partial Order Reduction	Formal Methods for Safe Autonomy	book-chapter
+9	10.1007/978-3-642-00255-7_21	2009	10.1007/978-3-642-00255-7_21	Partial Order Reduction for State/Event LTL	Lecture Notes in Computer Science	book-chapter
+10	10.1007/3-540-48320-9_30	1999	10.1007/3-540-48320-9_30	Partial Order Reduction for Model Checking of Timed Automata	Lecture Notes in Computer Science	book-chapter
+11	10.7717/peerj-cs.823/fig-5	None	10.7717/peerj-cs.823/fig-5	Figure 5: The Büchi automata built by the LTL model checking procedure in Algorithm 1.		component
+12	10.1109/sere-c.2012.45	2012	10.1109/sere-c.2012.45	A New Approach of Partial Order Reduction Technique for Parallel Timed Automata Model Checking	2012 IEEE Sixth International Conference on Software Security and Reliability Companion	proceedings-article
+13	10.70675/f5fc5032zc27dz4fffza3cbzd9a01566f10d	None	10.70675/f5fc5032zc27dz4fffza3cbzd9a01566f10d	Partial order reduction for timed systems		dissertation
+14	10.1016/j.tcs.2009.03.002	2009	10.1016/j.tcs.2009.03.002	Efficient model checking for LTL with partial order snapshots	Theoretical Computer Science	journal-article
+15	10.1016/j.jlamp.2024.101021	2025	10.1016/j.jlamp.2024.101021	First order Büchi automata and their application to verification of LTL specifications	Journal of Logical and Algebraic Methods in Programming	journal-article
+16	10.1145/2642937.2642998	2014	10.1145/2642937.2642998	Assertion guided abstraction	Proceedings of the 29th ACM/IEEE International Conference on Automated Software Engineering	proceedings-article
+17	10.1007/bfb0032058	None	10.1007/bfb0032058	Proving partial order liveness properties	Lecture Notes in Computer Science	book-chapter
+18	10.1007/11605157_20	2006	10.1007/11605157_20	Deeper Connections Between LTL and Alternating Automata	Lecture Notes in Computer Science	book-chapter
+19	10.7763/ijmo.2014.v4.380	2014	10.7763/ijmo.2014.v4.380	Partial Order Reduction for Verification of WS-BPEL	International Journal of Modeling and Optimization	journal-article
+20	10.32614/cran.package.guidedpls	2023	10.32614/cran.package.guidedpls	guidedPLS: Supervised Dimensional Reduction by Guided Partial Least Squares	CRAN: Contributed Packages	dataset
+21	10.1007/978-3-642-03359-9_29	2009	10.1007/978-3-642-03359-9_29	Construction of Büchi Automata for LTL Model Checking Verified in Isabelle/HOL	Lecture Notes in Computer Science	book-chapter
+22	10.2139/ssrn.3383958	2019	10.2139/ssrn.3383958	Converting a Subset of LTL Formula to Buchi Automata	SSRN Electronic Journal	journal-article
+23	10.26226/morressier.604907f51a80aac83ca25d7e	2021	10.26226/morressier.604907f51a80aac83ca25d7e	Partial Order Reduction for Deep Bug Finding in Synchronous Hardware		posted-content
+24	10.70675/138dc2a5zc12az40e9zab61zddbb416de5a2	None	10.70675/138dc2a5zc12az40e9zab61zddbb416de5a2	Stateful partial-order reduction methods for concurrent systems with blocking instructions		dissertation
+25	10.1007/978-3-319-08867-9_26	2014	10.1007/978-3-319-08867-9_26	Diamonds Are a Girl’s Best Friend: Partial Order Reduction for Timed Automata with Abstractions	Lecture Notes in Computer Science	book-chapter
+26	10.1007/978-3-032-27879-1_9	2026	10.1007/978-3-032-27879-1_9	Preserving LTL Properties in Sweep-Line State Space Exploration with Partial-Order Reduction	Lecture Notes in Computer Science	book-chapter
+27	10.26226/morressier.604907f51a80aac83ca25d72	2021	10.26226/morressier.604907f51a80aac83ca25d72	The Inconsistent Labelling Problem of Stutter-Preserving Partial-Order Reduction		posted-content
+28	10.1007/978-3-319-10575-8_6	2018	10.1007/978-3-319-10575-8_6	Partial-Order Reduction	Handbook of Model Checking	book-chapter
+29	10.21203/rs.3.rs-3257081/v1	2023	10.21203/rs.3.rs-3257081/v1	Dynamic Partial Order Reduction Based on Interference Solution		posted-content
+30	10.1007/978-3-030-14812-6_43	2019	10.1007/978-3-030-14812-6_43	First-Order vs. Second-Order Encodings for $$\textsc {ltl}_f$$-to-Automata Translation	Lecture Notes in Computer Science	book-chapter
+31	10.1145/1273647.1273657	2007	10.1145/1273647.1273657	Semantics driven dynamic partial-order reduction of MPI-based parallel programs	Proceedings of the 2007 ACM workshop on Parallel and distributed systems: testing and debugging	proceedings-article
+32	10.1109/lics.2006.31	None	10.1109/lics.2006.31	LTL with the Freeze Quantifier and Register Automata	21st Annual IEEE Symposium on Logic in Computer Science (LICS'06)	proceedings-article
+33	10.1090/dimacs/029/02	1997	10.1090/dimacs/029/02	Elements of an automata theory over partial orders	DIMACS Series in Discrete Mathematics and Theoretical Computer Science	book-chapter
+34	10.1109/acc.2009.5160025	2009	10.1109/acc.2009.5160025	A separation principle for a class of hybrid automata on a partial order	2009 American Control Conference	proceedings-article
+35	10.1016/s1007-0214(09)70010-0	2009	10.1016/s1007-0214(09)70010-0	Efficient translation of LTL to Büchi automata	Tsinghua Science and Technology	journal-article
+36	10.1109/cdc.2007.4434349	2007	10.1109/cdc.2007.4434349	A partial order approach for low complexity control of block triangular hybrid automata	2007 46th IEEE Conference on Decision and Control	proceedings-article
+37	10.1007/978-3-540-78163-9_24	None	10.1007/978-3-540-78163-9_24	From LTL to Symbolically Represented Deterministic Automata	Lecture Notes in Computer Science	book-chapter
+38	10.1016/j.ic.2006.09.006	2007	10.1016/j.ic.2006.09.006	An automata-theoretic approach to constraint LTL	Information and Computation	journal-article
+39	10.1007/3-540-44585-4_6	2001	10.1007/3-540-44585-4_6	Fast LTL to Büchi Automata Translation	Lecture Notes in Computer Science	book-chapter
+40	10.70675/85a082b0zfe90z497dzb57ez936bf8d4a94c	None	10.70675/85a082b0zfe90z497dzb57ez936bf8d4a94c	Advanced model order reduction and data-driven technologies enabling physics-augmented digital twins		dissertation
+41	10.1016/s0079-8169(08)61521-4	1975	10.1016/s0079-8169(08)61521-4	18 Reduction of Higher Order Systems to First-Order Systems	Pure and Applied Mathematics	book-chapter
+42	10.1007/10722167_21	2000	10.1007/10722167_21	Efficient Büchi Automata from LTL Formulae	Lecture Notes in Computer Science	book-chapter
+43	10.1007/s10703-021-00379-z	2021	10.1007/s10703-021-00379-z	From LTL to unambiguous Büchi automata via disambiguation of alternating automata	Formal Methods in System Design	journal-article
+44	10.1007/978-3-319-11737-9_24	2014	10.1007/978-3-319-11737-9_24	Fast Translation from LTL to Büchi Automata via Non-transition-based Automata	Lecture Notes in Computer Science	book-chapter
+45	10.1007/978-3-642-28332-1_38	2012	10.1007/978-3-642-28332-1_38	Canonizable Partial Order Generators	Lecture Notes in Computer Science	book-chapter
+46	10.1007/978-3-642-02658-4_31	2009	10.1007/978-3-642-02658-4_31	Monotonic Partial Order Reduction: An Optimal Symbolic Partial Order Reduction Technique	Lecture Notes in Computer Science	book-chapter
+47	10.1007/978-3-030-59152-6_10	2020	10.1007/978-3-030-59152-6_10	Urgent Partial Order Reduction for Extended Timed Automata	Lecture Notes in Computer Science	book-chapter
+48	10.1109/access.2017.2773123	2017	10.1109/access.2017.2773123	A Better Translation From LTL to Transition-Based Generalized Büchi Automata	IEEE Access	journal-article
+49	10.2139/ssrn.5201070	2025	10.2139/ssrn.5201070	Feature-Guided Sampling Strategy for Adaptive Model Order Reduction of Convection-Dominated Problems		posted-content
+50	10.1109/itng.2008.228	2008	10.1109/itng.2008.228	Improving Pattern-Based LTL Formulas for Automata Model Checking	Fifth International Conference on Information Technology: New Generations (itng 2008)	proceedings-article
+51	10.26226/morressier.604907f51a80aac83ca25d81	2021	10.26226/morressier.604907f51a80aac83ca25d81	Partial-Order Reduction for Parity Games with an Application on Parameterised Boolean Equation Systems		posted-content
+52	10.1109/tpwrs.2024.3518593/mm1	None	10.1109/tpwrs.2024.3518593/mm1	Model Order Reduction of Large-Scale Wind Farms: A Data-Driven Approach_supp1-3518593.pdf		component
+53	10.1007/3-540-45022-x_18	2000	10.1007/3-540-45022-x_18	LTL Is Expressively Complete for Mazurkiewicz Traces	Lecture Notes in Computer Science	book-chapter
+54	10.1109/icra.2012.6225075	2012	10.1109/icra.2012.6225075	LTL robot motion control based on automata learning of environmental dynamics	2012 IEEE International Conference on Robotics and Automation	proceedings-article
+55	10.1007/bfb0055039	1998	10.1007/bfb0055039	Deciding global partial-order properties	Lecture Notes in Computer Science	book-chapter
+56	10.1090/dimacs/029/13	1997	10.1090/dimacs/029/13	Partial order reduction: Linear and branching temporal logics and process algebras	DIMACS Series in Discrete Mathematics and Theoretical Computer Science	book-chapter
+57	10.1007/978-3-540-78499-9_34	None	10.1007/978-3-540-78499-9_34	Model Checking Freeze LTL over One-Counter Automata	Lecture Notes in Computer Science	book-chapter
+58	10.1109/apsec51365.2020.00008	2020	10.1109/apsec51365.2020.00008	SAT-Based Automata Construction for LTL over Finite Traces	2020 27th Asia-Pacific Software Engineering Conference (APSEC)	proceedings-article
+59	10.4204/eptcs.256.13	2017	10.4204/eptcs.256.13	LTL to Deterministic Emerson-Lei Automata	Electronic Proceedings in Theoretical Computer Science	journal-article
+60	10.36227/techrxiv.177223068.82141773/v1	2026	10.36227/techrxiv.177223068.82141773/v1	Reinforcement Learning-Driven Personalized Guided Breathing for Blood Pressure Reduction		posted-content
+61	10.1007/3-540-61604-7_79	1996	10.1007/3-540-61604-7_79	Towards automata for branching time and partial order	Lecture Notes in Computer Science	book-chapter
+62	10.1007/978-3-540-27836-8_91	2004	10.1007/978-3-540-27836-8_91	A Syntactic Characterization of Distributive LTL Queries	Lecture Notes in Computer Science	book-chapter
+63	10.1007/978-3-642-02930-1_20	2009	10.1007/978-3-642-02930-1_20	LTL Path Checking Is Efficiently Parallelizable	Lecture Notes in Computer Science	book-chapter
+64	10.1145/1507244.1507246	2009	10.1145/1507244.1507246	LTL with the freeze quantifier and register automata	ACM Transactions on Computational Logic	journal-article
+65	10.1109/icci-cc.2012.6311168	2012	10.1109/icci-cc.2012.6311168	Direct translation of LTL formulas to B&amp;#x00FC;chi automata	2012 IEEE 11th International Conference on Cognitive Informatics and Cognitive Computing	proceedings-article
+66	10.1007/3-540-45022-x_40	2000	10.1007/3-540-45022-x_40	A New Unfolding Approach to LTL Model Checking	Lecture Notes in Computer Science	book-chapter
+67	10.1007/3-540-18420-1_58	1987	10.1007/3-540-18420-1_58	Controlling reduction partial order in functional parallel programs	Lecture Notes in Computer Science	book-chapter
+68	10.1007/978-3-319-08867-9_13	2014	10.1007/978-3-319-08867-9_13	From LTL to Deterministic Automata: A Safraless Compositional Approach	Lecture Notes in Computer Science	book-chapter
+69	10.1007/978-3-642-31424-7_7	2012	10.1007/978-3-642-31424-7_7	Deterministic Automata for the (F,G)-Fragment of LTL	Lecture Notes in Computer Science	book-chapter
+70	10.1109/lics.2006.11	2006	10.1109/lics.2006.11	An Automata-Theoretic Approach for Model Checking Threads for LTL Propert	21st Annual IEEE Symposium on Logic in Computer Science (LICS'06)	proceedings-article
+71	10.1007/11591191_50	2005	10.1007/11591191_50	Concepts of Automata Construction from LTL	Lecture Notes in Computer Science	book-chapter
+72	10.1109/sew.2007.63	2007	10.1109/sew.2007.63	LTL Guided Planning: Revisiting Automatic Tool Composition in ETI	31st IEEE Software Engineering Workshop (SEW 2007)	proceedings-article
+73	10.23919/ecc.1999.7099732	1999	10.23919/ecc.1999.7099732	Order reduction with partial ARMA-modeling	1999 European Control Conference (ECC)	proceedings-article
+74	10.1007/978-3-319-15579-1_44	2015	10.1007/978-3-319-15579-1_44	Single-Pass Testing Automata for LTL Model Checking	Lecture Notes in Computer Science	book-chapter
+75	10.1109/depcos-relcomex.2009.31	2009	10.1109/depcos-relcomex.2009.31	Minimal B&amp;#x0FC;chi Automata for Certain Classes of LTL Formulas	2009 Fourth International Conference on Dependability of Computer Systems	proceedings-article
+76	10.1007/s11704-015-4302-2	2015	10.1007/s11704-015-4302-2	Efficient approach of translating LTL formulae into Büchi automata	Frontiers of Computer Science	journal-article
+77	10.21275/sr24203183637	2018	10.21275/sr24203183637	Revolutionizing LTL Carrier Operations: A Comprehensive Analysis of an Algorithm-Driven Pickup and Delivery Dispatching Solution	International Journal of Science and Research (IJSR)	journal-article
+78	10.1016/j.tcs.2020.07.015	2020	10.1016/j.tcs.2020.07.015	LTL to self-loop alternating automata with generic acceptance and back	Theoretical Computer Science	journal-article
+79	10.1007/978-3-642-14165-2_56	2010	10.1007/978-3-642-14165-2_56	Holographic Reduction: A Domain Changed Application and Its Partial Converse Theorems	Lecture Notes in Computer Science	book-chapter
+80	10.1109/acsd.2015.15	2015	10.1109/acsd.2015.15	Combining Explicit and Symbolic LTL Model Checking Using Generalized Testing Automata	2015 15th International Conference on Application of Concurrency to System Design	proceedings-article
+81	10.1007/978-3-642-54013-4_7	2014	10.1007/978-3-642-54013-4_7	Probabilistic Automata for Safety LTL Specifications	Lecture Notes in Computer Science	book-chapter
+82	10.1016/j.tcs.2005.07.023	2005	10.1016/j.tcs.2005.07.023	A partial order semantics approach to the clock explosion problem of timed automata	Theoretical Computer Science	journal-article
+83	10.23638/lmcs-14(4:20)2018	2018	10.23638/lmcs-14(4:20)2018	Model Checking Flat Freeze LTL on One-Counter Automata	Logical Methods in Computer Science	journal-article
+84	10.70675/85e1d965zbf4az4390zbaf6z1baf18eeffc2	None	10.70675/85e1d965zbf4az4390zbaf6z1baf18eeffc2	Efficient simulation tools for real-time monitoring and control using model order reduction and data-driven techniques		dissertation
+85	10.1007/978-3-658-12680-3_4	2016	10.1007/978-3-658-12680-3_4	Dynamic Partial Order Reduction in Stateful Model Checking	Complete Symbolic Simulation of SystemC Models	book-chapter
+86	10.1007/978-3-658-12680-3_3	2016	10.1007/978-3-658-12680-3_3	Static Partial Order Reduction in Stateful Model Checking	Complete Symbolic Simulation of SystemC Models	book-chapter
+87	10.5121/ijsea.2019.10204	2019	10.5121/ijsea.2019.10204	Converting A Subset of LTL Formula to Buchi Automata	International Journal of Software Engineering &amp; Applications	journal-article
+88	10.1007/11691617_4	2006	10.1007/11691617_4	Larger Automata and Less Work for LTL Model Checking	Lecture Notes in Computer Science	book-chapter
+89	10.1007/978-3-540-73066-8_12	2007	10.1007/978-3-540-73066-8_12	Testing Input/Output Partial Order Automata	Lecture Notes in Computer Science	book-chapter
+90	10.4171/automata-2/13	2021	10.4171/automata-2/13	Higher-order recursion schemes and their automata models	Handbook of Automata Theory	book-chapter
+91	10.1007/3-540-56939-1_104	1993	10.1007/3-540-56939-1_104	Decidability of a partial order based temporal logic	Lecture Notes in Computer Science	book-chapter
+92	10.2139/ssrn.5876554	2025	10.2139/ssrn.5876554	Partial multi-label learning with guided feature tree and high-order label graph		posted-content
+93	10.1080/03605309108820799	1991	10.1080/03605309108820799	Reduction of order for pseudodifferential operators on lipschitz domains	Communications in Partial Differential Equations	journal-article
+94	10.36227/techrxiv.171778149.97244154/v1	2024	10.36227/techrxiv.171778149.97244154/v1	Non-intrusive data-driven model order reduction for circuits based on Hammerstein architectures		posted-content
+95	10.1016/s1571-0661(04)80409-2	2002	10.1016/s1571-0661(04)80409-2	Simple and Efficient Translation from LTL Formulas to Büchi Automata	Electronic Notes in Theoretical Computer Science	journal-article
+96	10.1007/bfb0055081	1998	10.1007/bfb0055081	A total AC-compatible reduction ordering on higher-order terms	Lecture Notes in Computer Science	book-chapter
+97	10.1007/978-3-540-73370-6_8	None	10.1007/978-3-540-73370-6_8	Cartesian Partial-Order Reduction	Lecture Notes in Computer Science	book-chapter
+98	10.1007/978-3-540-78841-6_16	2008	10.1007/978-3-540-78841-6_16	Data-Driven Model Order Reduction Using Orthonormal Vector Fitting	Mathematics in Industry	book-chapter
+99	10.1049/cje.2015.10.002	2015	10.1049/cje.2015.10.002	LTL Formulae to Buchi Automata Translation Using on‐the‐Fly De‐generalization	Chinese Journal of Electronics	journal-article
+100	10.1007/978-3-642-23178-0_9	2011	10.1007/978-3-642-23178-0_9	Symbolic Algorithm for Generation Büchi Automata from LTL Formulas	Lecture Notes in Computer Science	book-chapter

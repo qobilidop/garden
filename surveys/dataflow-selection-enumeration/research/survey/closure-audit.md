@@ -1229,3 +1229,38 @@ If round 35 reopens the map, round 36 is retired unexecuted. If both qualify,
 they establish the required two-round no-add sequence only for the recorded
 sources, exact queries, captured rankings, date, and frozen trigger. Independent
 audit remains mandatory before closure.
+
+## Outcome of round 35 and retirement of round 36
+
+Round 35 is conservatively adjudicated as a reopen, not a no-add round. The
+primary screen and two independent audits each parsed and title-screened all
+1,200 occurrences. Every snapshot has 100 unique source identifiers and ranks
+1--100; the round contains 1,108 unique identifiers. Ten blank-title
+occurrences are grants, including one grant repeated across two queries. The
+primary normalization counted 1,006 unique nonblank titles; the two independent
+implementations each counted 1,009.
+
+The independent reviewers disagreed about the prospective trigger. One
+reviewer classified the uncataloged records as variants wholly inside the
+already mapped property-POR and infeasible-path clusters and therefore
+reported no-add. The adversarial reviewer classified property-specific
+stubborn sets, state/event LTL reduction, and synchronous-dataflow symbolic
+simulation with timers as distinct close boundaries and required reopen. The
+primary adjudication accepts the latter, more conservative classification:
+these works do not supply the target object, but omitting their explicit
+property and dataflow program models would weaken the closest-work boundary.
+
+The reconciliation retains expanded journal or chapter versions where the
+round exposed publication lineages. It adds standard, linear-time, simple
+linear-time, and state/event temporal-property variants to the stubborn-set
+and POR account; a direct synchronous-dataflow symbolic-simulation neighbor;
+and supporting path-feasibility, modular-state, schedule-abstraction, and
+sparse-dataflow works. Conference predecessors and container aliases are
+excluded once. No title in the round presents a requested-root internal-event
+observer with complete caller-input fibers and typed residuals; the direct
+query returns only control-observer, caller-identifier, sensor, and other
+homonym noise.
+
+Because at least the conservative close-work criterion is met, round 35
+reopens the map. Round 36's precondition failed; it is retired unexecuted and
+cannot count toward closure.

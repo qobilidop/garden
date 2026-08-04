@@ -1,6 +1,6 @@
 # valmari2010optimal — Optimal stubborn sets
 
-- **Status:** screened; optimality-focused POR comparator
+- **Status:** excluded; conference predecessor of the 2011 journal article
 - **Primary source:** https://doi.org/10.1007/978-3-642-13675-7_5
 - **Version read:** publisher title, abstract-level record, and metadata
 - **Bibliography key:** `valmari2010optimal`
@@ -13,6 +13,5 @@
 
 ## Relationship and evidence limit
 
-Its optimality question concerns representative concurrent executions. It
-does not enumerate a requested event's exact caller-input inverse image or a
-residual output over each inverse cell.
+This version is retained only for lineage; manuscript claims use the expanded
+2011 journal article.
