@@ -104,3 +104,28 @@ scheurer2016lattice	2016	merged-evaluation	deep-read	high	ICFEM	https://doi.org/
 trabish2018chopped	2018	demand-driven	deep-read	high	ICSE	https://doi.org/10.1145/3180155.3180251	Lazy execution of skipped code when its effects become observable to a target slice	-
 wang2017dependence	2017	output-symbolic-execution	deep-read	critical	IEEE Transactions on Software Engineering	https://doi.org/10.1109/TSE.2016.2584063	Dependence-guided approximation of symbolic-value path equivalence with fault-detection preservation	-
 fried2023allsatcircuits	2023	model-enumeration	deep-read	high	SAT	https://doi.org/10.4230/LIPIcs.SAT.2023.9	Native-circuit ternary generalization for disjoint and overlapping exact AllSAT covers	-
+li2014zequivalent	2014	path-equivalence	candidate	high	ACM TOSEM	https://doi.org/10.1145/2652484	Caller-indistinguishable symbolic states with identical future paths and solver answers	-
+toda2017dependencies	2017	model-enumeration	candidate	high	Journal of Information Processing	https://doi.org/10.2197/ipsjjip.25.459	Encoding-aware functional dependencies and OBDD compilation for AllSAT	-
+moehle2023abstract	2023	knowledge-compilation	candidate	high	FroCoS	https://doi.org/10.1007/978-3-031-43369-6_11	Sound terminating d-DNNF compilation combining disjoint enumeration and decomposition	-
+chandra2018bonsai	2018	merged-evaluation	candidate	high	POPL	https://doi.org/10.1145/3158150	Constraint-based symbolic tree representation designed for efficient merging	-
+bornholt2018explodes	2018	merged-evaluation	candidate	high	OOPSLA	https://doi.org/10.1145/3276519	Symbolic-heap and evaluation-graph account of all-path evaluation blowup	-
+hansen2009joining	2009	merged-evaluation	candidate	high	Runtime Verification	https://doi.org/10.1007/978-3-642-04694-0_6	State joining and splitting with an explicit merge-versus-solver-cost tradeoff	-
+gebser2007conflict	2007	model-enumeration	candidate	high	LPNMR	https://doi.org/10.1007/978-3-540-72200-7_13	Conflict-driven complete answer-set enumeration in polynomial space	-
+slaby2013compact	2013	symbolic-execution	candidate	high	ATVA	https://doi.org/10.1007/978-3-319-02444-8_15	Template-based exact folding of regular cyclic symbolic paths	-
+palopoli1999selective	1999	enumeration-complexity	candidate	high	Artificial Intelligence	https://doi.org/10.1016/S0004-3702(99)00035-1	Optimization-based selective enumeration of prime implicants	-
+khurshid2004solutions	2004	model-enumeration	candidate	high	SAT	https://doi.org/10.1007/978-3-540-24605-3_21	Historical case for partial rather than total solution enumeration	-
+deharbe2013prime	2013	model-enumeration	candidate	high	FMCAD	https://doi.org/10.1109/FMCAD.2013.6679390	Linear-time CDCL-data-structure algorithm for shrinking one model to a prime implicant	-
+jin2005conflict	2005	model-enumeration	candidate	high	TACAS	https://doi.org/10.1007/978-3-540-31980-1_19	Circuit-native conflict analysis for exhaustive satisfying-assignment enumeration	-
+jin2005prime	2005	model-enumeration	candidate	high	DAC	https://doi.org/10.1145/1065579.1065775	Prime blocking clauses for compact exhaustive Boolean-circuit coverage	-
+yu2014minimal	2014	model-enumeration	candidate	high	VLSID	https://doi.org/10.1109/VLSID.2014.22	Non-disjoint AllSAT using minimal blocking clauses	-
+moehle2018dualizing	2018	model-counting	candidate	medium	ICTAI	https://doi.org/10.1109/ICTAI.2018.00111	Dualized projected-model counting with an enumeration mode	-
+luo2021prime	2021	model-enumeration	candidate	high	ICCAD	https://doi.org/10.1109/ICCAD51958.2021.9643520	Two-phase prime compilation of non-clausal Boolean formulas	-
+kaivola2025causalfanin	2025	hardware	candidate	high	Formal Methods in System Design	https://doi.org/10.1007/s10703-025-00478-1	Cycle-sensitive minimal causal fanin for symbolic circuit simulation	-
+kaivola2022causalfanin	2022	hardware	excluded	medium	FMCAD	https://doi.org/10.34727/2022/isbn.978-3-85448-053-2_16	Conference precursor superseded by the expanded 2025 journal treatment	E7-duplicate-version
+mokhov2010cpog	2010	configuration-semantics	candidate	high	IEEE Transactions on Computers	https://doi.org/10.1109/TC.2010.58	Conditional partial-order graph representation of families of choices and event orders	-
+alur2008simulation	2008	model-based	candidate	high	EMSOFT	https://doi.org/10.1145/1450058.1450071	Input regions preserving the discrete components of Simulink simulation traces	-
+bruns2023riscv	2023	hardware	candidate	medium	DATE	https://doi.org/10.23919/DATE56975.2023.10137202	Conventional KLEE path exploration applied to RTL and instruction-set co-simulation	-
+moehle2021short	2021	model-enumeration	excluded	medium	arXiv	https://arxiv.org/abs/2110.12924	Preprint superseded for manuscript claims by the expanded 2025 journal treatment	E7-duplicate-version
+masina2023cnf	2023	model-enumeration	excluded	medium	SAT	https://doi.org/10.4230/LIPIcs.SAT.2023.15	Conference precursor superseded by the expanded 2025 JAIR treatment	E7-duplicate-version
+masina2023cnfpreprint	2023	model-enumeration	excluded	medium	arXiv	https://arxiv.org/abs/2303.14971	Preprint superseded by the expanded 2025 JAIR treatment	E7-duplicate-version
+loow2024extended	2024	compositional-symbolic-execution	excluded	medium	arXiv	https://arxiv.org/abs/2407.10838	Extended manuscript corresponding to the ECOOP 2024 publication	E7-duplicate-version
