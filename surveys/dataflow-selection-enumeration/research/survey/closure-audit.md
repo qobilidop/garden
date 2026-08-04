@@ -1092,3 +1092,55 @@ catalog frozen before execution, so the adjudicated round outcome is reopen.
 Round 32's precondition therefore failed; it is retired unexecuted and cannot
 count toward closure. No reviewer found the direct requested-root event-fiber
 construction.
+
+## Replacement round `closure-replacement-33`: Crossref
+
+Frozen on 2026-08-04 after complete reconciliation and independent audit of
+round 31, and before any round-33 or round-34 query was executed. Source:
+Crossref REST API. Each exact phrase is searched with `query.bibliographic`,
+sorted by relevance, with the first 100 records exported unless fewer are
+returned. A round qualifies as no-add only if complete screening adds neither a
+conceptual cluster nor a plausible close competitor.
+
+| ID | Exact query |
+|---|---|
+| C33-01 | `lazy happens before schedule state equivalence mutex` |
+| C33-02 | `interface grammar modular model checking component stub` |
+| C33-03 | `dataflow based path pruning symbolic hardware verification` |
+| C33-04 | `dynamic partial order relaxed memory store buffer` |
+| C33-05 | `demand driven axiomatization symbolic heap memory invariants` |
+| C33-06 | `bottom up heap path data access summary` |
+| C33-07 | `global value graph symbolic evaluation dataflow` |
+| C33-08 | `fair stateless model checking schedule equivalence` |
+| C33-09 | `higher order store symbolic execution proof` |
+| C33-10 | `path generalization input decomposition symbolic execution` |
+| C33-11 | `requested root event observer caller input fiber` |
+| C33-12 | `sparse selection observation residual dataflow` |
+
+## Replacement round `closure-replacement-34`: arXiv
+
+Execute only if round 33 adds neither a conceptual cluster nor a plausible
+close competitor. Source: arXiv API. Frozen on 2026-08-04 before any round-33
+or round-34 execution. Each phrase is submitted as the conjunction of all
+alphanumeric terms across arXiv's `all` field, sorted by relevance, with at
+most the first 100 records and abstracts exported.
+
+| ID | Exact query |
+|---|---|
+| C34-01 | `lazy happens before schedule state equivalence` |
+| C34-02 | `interface grammar modular model checking` |
+| C34-03 | `dataflow path pruning symbolic hardware verification` |
+| C34-04 | `dynamic partial order relaxed memory` |
+| C34-05 | `demand driven symbolic heap invariant` |
+| C34-06 | `symbolic heap data access summary` |
+| C34-07 | `global value graph symbolic evaluation` |
+| C34-08 | `fair stateless model checking` |
+| C34-09 | `higher order store symbolic execution` |
+| C34-10 | `path generalization symbolic execution input` |
+| C34-11 | `requested event observer caller input fiber` |
+| C34-12 | `sparse selection observation dataflow residual` |
+
+If round 33 reopens the map, round 34 is retired unexecuted. If both qualify,
+they establish the required two-round no-add sequence only for the recorded
+sources, exact queries, captured rankings, date, and frozen trigger. Independent
+audit remains mandatory before closure.
