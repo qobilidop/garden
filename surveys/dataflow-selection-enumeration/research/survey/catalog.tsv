@@ -1,0 +1,11 @@
+citekey	year	cluster	status	priority	venue	primary_url	relevance	exclusion_reason
+king1976symbolic	1976	symbolic-execution	candidate	high	CACM	https://doi.org/10.1145/360248.360252	Foundational symbolic execution and path-condition semantics	-
+voogd2023denotational	2023	semantics	candidate	critical	ICTAC	https://ebjohnsen.org/publication/23-ictac/	Piecewise denotational semantics over input partitions	-
+mauborgne2005trace	2005	abstract-interpretation	candidate	high	ESOP	https://www.di.ens.fr/~mauborgn/publi/esop05.html	Established trace-partitioning terminology and semantics	-
+avgerinos2014veritesting	2014	multipath	candidate	high	ICSE	https://doi.org/10.1145/2568225.2568293	Static symbolic execution and path merging	-
+sen2015multise	2015	multipath	candidate	critical	ESEC/FSE	https://digicoll.lib.berkeley.edu/record/137554	Guarded value summaries and exact multipath states	-
+spallitta2024disjoint	2024	model-enumeration	candidate	critical	AAAI	https://doi.org/10.1609/aaai.v38i8.28652	Disjoint partial-model enumeration	-
+seger1995trajectory	1995	hardware	candidate	high	FMSD	https://www.cs.cmu.edu/~bryant/pubs.html	Symbolic evaluation of partially ordered hardware trajectories	-
+marre2005gatel	2005	dataflow-testing	candidate	high	ENTCS	https://doi.org/10.1016/j.entcs.2004.12.010	Constraint-based test selection for Lustre	-
+li2013sedge	2013	dataflow-testing	candidate	high	ASE	https://doi.org/10.1109/ASE.2013.6693083	Symbolic example generation for dataflow programs	-
+ryan2023sylvia	2023	hardware	candidate	critical	FMCAD	https://arxiv.org/abs/2304.05445	Piecewise composition for RTL symbolic execution	-
