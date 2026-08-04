@@ -36,6 +36,16 @@ without an LP and recursively visits that successor. It separately LP-tests
 the opposite successor and visits it only when a witness exists. When all
 hyperplanes have been processed, it streams the sign vector.
 
+The literal pseudocode uses non-strict halfspaces when choosing the first side.
+The surrounding text and Theorem 3.2 require a safe perturbation when the
+witness lies on the newly inserted hyperplane. Dussault, Gilbert, and
+Plaquevent-Jourdain later point out that simply assigning one side when the
+relevant dot product is zero is incomplete at the pseudocode level: both strict
+successors may exist. Their corrected central-arrangement implementation makes
+the two perturbations explicit. The theorem here should therefore be cited
+together with its perturbation premise, not as correctness of an unqualified
+literal implementation.
+
 This is the precise, corrected form of the later ternary-prefix algorithm:
 retain the witness-implied actual sign and test only the opposite side. The
 paper also gives an equivalent flattened variant for comparison with
@@ -98,3 +108,5 @@ Do not claim:
 - Section 3.1 and Algorithm 1, pp. 3--4: incremental recurrence.
 - Theorem 3.1, p. 5: completeness and no duplicates.
 - Theorem 3.2 and Corollary 3.3, pp. 5--6: time, space, and OutputP result.
+- Dussault et al. 2025, Section 5.2.1(B): zero-witness pseudocode caveat and
+  explicit two-sided perturbation.

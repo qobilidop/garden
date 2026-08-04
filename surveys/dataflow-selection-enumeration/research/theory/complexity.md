@@ -137,6 +137,10 @@ output-polynomial results for the restricted open-cell representation. The
 Avis--Fukuda and Sleumer analyses count arithmetic/LP operations rather than
 proving a coefficient-bit bound, and none of the results transfers
 automatically to boundary-inclusive fibers or an arbitrary caller theory.
+Dussault et al. later specialize the central-arrangement case, make the
+zero-witness perturbation explicit, and introduce circuit-guided variants with
+large empirical speedups. They do not state a new end-to-end OutputP, IncP, or
+DelayP bound for those variants; circuit enumeration itself can be exponential.
 
 Dense ReLU networks refine the arrangement layerwise. Existing algorithms
 enumerate feasible activation patterns by MILP, propagate exact stars that

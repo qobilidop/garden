@@ -8,8 +8,10 @@ well beyond a monolithic SMT encoding:
 - Avis and Fukuda's reverse search enumerates every full-dimensional affine
   arrangement cell exactly once with output-polynomial time and polynomial
   space; Sleumer improves its fixed-dimensional arithmetic bound to
-  (O(m|C|)); Rada and Černý later give a direct incremental sign-prefix
-  formulation with its own completeness and OutputP analysis.
+  \(O(m|C|)\); Rada and Černý later give a direct incremental sign-prefix
+  formulation with its own completeness and OutputP analysis; Dussault et al.
+  specialize the central case, make the zero-witness perturbation explicit,
+  and add circuit-guided variants.
 - Serra et al. enumerate or count exactly the feasible dense ReLU activation
   patterns with a boundary-aware mixed-integer formulation.
 - Xiang computes exact reachable polyhedral unions; Tran's star sets retain
@@ -130,8 +132,10 @@ incremental formulation gives
 
 where \(Q\) is the number of hyperplanes, \(K\) the number of cells, and
 \(D\) the input dimension, up to representation costs and the open-cell
-assumptions stated in the primary results. A generic \(K+1\) model-query accounting per
-emitted observation is therefore not independently novel. Complexity claims
+assumptions stated in the primary results. Dussault et al.'s newer algorithms
+provide substantial empirical improvements for central arrangements, but no
+replacement end-to-end asymptotic bound. A generic \(K+1\) model-query
+accounting per emitted observation is therefore not independently novel. Complexity claims
 must instead expose:
 
 - graph evaluation and enabled-closure size;

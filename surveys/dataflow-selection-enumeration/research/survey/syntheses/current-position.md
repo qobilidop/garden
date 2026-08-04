@@ -90,7 +90,9 @@ excluded and regime outcomes interpreted as strict signs, a dense activation
 cell is exactly one observation fiber of the restricted domain.
 Avis--Fukuda reverse search and Sleumer's fixed-dimensional improvement precede
 Rada and Černý's feasibility-pruned OutputP recurrence; Serra et al. exactly
-enumerate feasible ReLU patterns;
+enumerate feasible ReLU patterns; and Dussault et al. give newer circuit-guided
+central-arrangement enumeration while exposing the literal incremental
+pseudocode's zero-witness caveat.
 Tran's star sets and Robinson's explicit piecewise-affine conversion already
 retain exact guards with affine images; RPM adds adjacency-oriented traversal;
 and later work extracts richer face complexes, handles broader CPWL
