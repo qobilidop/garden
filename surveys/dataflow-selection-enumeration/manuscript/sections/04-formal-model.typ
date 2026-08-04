@@ -264,3 +264,64 @@ outcome predicates at a shared observed site. This structural separator is
 stronger than the generic fact that distinct function fibers are disjoint and
 is the key reason full-fiber blocking does not need explicit unobserved-site
 literals.
+
+== Graph substitution and sharing
+
+The observation is compositional in a deliberately limited sense. Let $H$ be
+a selective term graph whose input nodes are connected to caller nodes and
+whose output roots are connected to one occurrence $c$ in an acyclic caller.
+Flattening substitutes one shared copy of $H$ for that occurrence. Internal
+nodes and sites receive the prefix $c$; two caller edges to the same component
+output do not duplicate the component, while a second occurrence receives a
+different prefix.
+
+For a concrete caller input $x$, let $x_H$ be the boundary valuation induced
+at the inputs of $H$. Let $U_x subset.eq O_H$ contain exactly the component
+outputs crossed when enabled reachability from the caller's requested roots
+first enters occurrence $c$. Write $G = C[c <- H]$ for the flattened graph,
+and let $T_C^x$ be the restriction of $T_G(x,R)$ to caller sites. Prefixing a
+partial map by $c$ prefixes every site in its domain.
+
+#proposition("flattening and contextual sharing")[
+  For every concrete $x$,
+  $
+    D_G(x,R) inter c dot V_H
+      = c dot D_H(x_H,U_x)
+  $
+  and
+  $
+    T_G(x,R) = T_C^x union c dot T_H(x_H,U_x).
+  $
+  The union is compatible and contains every shared internal site at most
+  once. Repeating the construction for distinct occurrences yields disjoint
+  contextual site domains.
+]
+
+#proof[
+  Enabled reachability can enter the component only through an output root in
+  $U_x$. After crossing that boundary, every internal successor step follows
+  exactly the enabled edges of $H$ under $x_H$. Conversely, every node reached
+  from such a root in $H$ is reached by the same edge sequence in the flattened
+  graph. The reachability sets therefore agree after prefixing. Restricting the
+  observation to selection sites gives the partial-map equation. A component
+  is substituted as one DAG, so multiple caller uses union their root demands
+  and preserve internal sharing; contextual prefixes separate distinct
+  occurrences.
+]
+
+A _demand-parametric exact summary_ for $H$ provides, for every requested
+boundary-root set $U subset.eq O_H$, its feasible observations with exact
+guards and residuals. The proposition gives the semantic composition rule:
+instantiate boundary inputs with the caller residuals, prefix internal sites
+by $c$, use the caller-induced $U$, conjoin the instantiated guards, and
+substitute component residuals at the output boundary. Unsatisfiable products
+are discarded. The result denotes exactly the flattened fibers because every
+flat observation has the unique restrictions above, and the exact-local-guard
+theorem makes the conjunction equal to their intersection.
+
+This is an equality with flattening, not a compactness theorem. A summary may
+contain one family for each of $2^{abs(O_H)}$ root-demand sets, and compatible
+record products may still be exponential. Guard substitution and exact
+piecewise residual composition are established techniques; the graph-specific
+content here is only requested-root demand, contextual identity, and preserved
+DAG sharing.

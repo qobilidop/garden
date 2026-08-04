@@ -170,15 +170,42 @@ $
 $
 
 with output-relative constant auxiliary space; each basis reconstructs a
-polyhedral guard and affine optimizer @jones2006parametric. Later work improves
-degeneracy handling rather than this closed bound. Lexicographic perturbation
-selects a unique continuous affine optimizer and nonoverlapping basis regions
-@jones2007lexicographic. Patrinos and Sarimveis discover every
-full-dimensional convex-pQP neighbor across a facet without nondegeneracy or a
-facet-to-facet assumption, but state no polynomial total, delay, space, or bit
-bound @patrinos2010graphical. Bemporad's rank-deficiency treatment likewise
-gives practical per-combination analyses, not a new enumeration-class theorem
-@bemporad2015multiparametric.
+polyhedral guard and affine optimizer @jones2006parametric. The later
+sufficient-matrix pLCP treatment covers pLP and convex pQP and gives a stronger
+explicit comparator. For pLCP dimension $n$, parameter dimension $d$, and
+$N_g$ reported bases in general position, Columbano, Fukuda, and Jones bound
+the LP-oracle work by
+
+$
+  O(N_g [n op("LP")(n,d+1)
+    + (n^2-n)/2 op("LP")(2n,d+1)]).
+$
+
+Under lexicographic perturbation, for $N_p$ perturbed bases the corresponding
+bound is
+
+$
+  O(N_p [(n^2+n) op("LP")(n,d+1)
+    + (n^3-n)/2 op("LP")(2n,d+1)]).
+$
+
+The perturbed basis count can exceed the number of unperturbed critical
+domains; the analysis retains an output-sized visited set and supplies neither
+a coefficient-bit nor a DelayP theorem @columbano2009sufficient.
+
+Separate work resolves other degeneracy and representation questions.
+Lexicographic perturbation selects a unique continuous affine optimizer and
+nonoverlapping basis regions @jones2007lexicographic. A minimum-norm secondary
+selection yields, under stated assumptions, a unique continuous pQP solution
+with an algorithm-independent polyhedral representation
+@spjotvold2007unique. Patrinos and Sarimveis discover every full-dimensional
+convex-pQP neighbor across a facet without nondegeneracy or a facet-to-facet
+assumption, but state no polynomial total, delay, space, or bit bound
+@patrinos2010graphical. Bemporad's rank-deficiency treatment likewise gives
+practical per-combination analyses rather than a new enumeration-class theorem
+@bemporad2015multiparametric. Finally, pLP solution and halfspace polyhedral
+projection are polynomially interreducible, so renaming one side as projection
+does not establish a different complexity frontier @jones2008projection.
 
 Dense ReLU networks are another all-sites-observed specialization. Exact
 methods enumerate feasible activation patterns by MIP, propagate exact input

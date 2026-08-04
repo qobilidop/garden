@@ -22,7 +22,7 @@
   #v(0.75em)
   #text(size: 11.5pt)[Codex GPT-5.6 Sol]
   #v(0.35em)
-  #text(size: 9.5pt, style: "italic")[Survey and formal synthesis --- working preprint]
+  #text(size: 9.5pt, style: "italic")[Survey and formal synthesis]
 ]
 
 #v(0.8em)
@@ -66,17 +66,8 @@
 #include "sections/04-formal-model.typ"
 #include "sections/05-algorithms.typ"
 #include "sections/06-complexity.typ"
-
-= Related-work synthesis <sec-related>
-
-_To be completed after mapping closure._
-
-= Discussion and limitations <sec-discussion>
-
-_To be completed after mapping closure._
-
-= Conclusion <sec-conclusion>
-
-_To be completed after review and revision._
+#include "sections/07-related-work.typ"
+#include "sections/08-discussion.typ"
+#include "sections/09-conclusion.typ"
 
 #bibliography("../references.bib", style: "ieee")

@@ -36,6 +36,15 @@ SEARCH_HEADER = [
     "excluded_keys",
     "notes",
 ]
+EVIDENCE_HEADER = [
+    "claim_id",
+    "manuscript_location",
+    "claim",
+    "citekeys",
+    "source_note_anchors",
+    "evidence_scope",
+    "caveat",
+]
 SCREENING_HEADER = [
     "rank",
     "openalex_id",
@@ -105,6 +114,42 @@ def main() -> int:
             fail(f"deep-read work {citekey} has no source note")
         if citekey not in bibliography_keys:
             fail(f"deep-read work {citekey} has no bibliography entry")
+
+    header, evidence_rows = rows(SURVEY / "evidence-matrix.tsv")
+    if header != EVIDENCE_HEADER:
+        fail(f"unexpected evidence-matrix header: {header}")
+    claim_ids: set[str] = set()
+    covered_citations: set[str] = set()
+    for number, row in enumerate(evidence_rows, start=2):
+        claim_id = row["claim_id"]
+        if not claim_id or claim_id in claim_ids:
+            fail(f"duplicate or empty evidence claim_id on row {number}: {claim_id}")
+        claim_ids.add(claim_id)
+        row_keys = keys(row["citekeys"])
+        if not row_keys:
+            fail(f"evidence row {number} has no citekeys")
+        for citekey in row_keys:
+            if citekey not in bibliography_keys:
+                fail(f"evidence row {number} cites unknown bibliography key {citekey}")
+            source_note = SURVEY / "sources" / f"{citekey}.md"
+            if not source_note.is_file():
+                fail(f"evidence row {number} cites {citekey} without a source note")
+            expected_anchor = f"sources/{citekey}.md#"
+            if expected_anchor not in row["source_note_anchors"]:
+                fail(f"evidence row {number} has no source-note anchor for {citekey}")
+            covered_citations.add(citekey)
+
+    manuscript_text = "\n".join(
+        path.read_text(encoding="utf-8")
+        for path in sorted((ROOT / "manuscript").rglob("*.typ"))
+    )
+    manuscript_citations = (
+        set(re.findall(r"@([A-Za-z0-9_-]+)", manuscript_text))
+        & bibliography_keys
+    )
+    missing_evidence = sorted(manuscript_citations - covered_citations)
+    if missing_evidence:
+        fail(f"manuscript citation has no evidence row: {missing_evidence[0]}")
 
     header, log_rows = rows(SURVEY / "search-log.tsv")
     if header != SEARCH_HEADER:
