@@ -1264,3 +1264,55 @@ homonym noise.
 Because at least the conservative close-work criterion is met, round 35
 reopens the map. Round 36's precondition failed; it is retired unexecuted and
 cannot count toward closure.
+
+## Replacement round `closure-replacement-37`: Crossref
+
+Frozen on 2026-08-04 after complete conservative reconciliation and
+independent audit of round 35, and before any round-37 or round-38 query was
+executed. Source: Crossref REST API. Each exact phrase is searched with
+`query.bibliographic`, sorted by relevance, with the first 100 records exported
+unless fewer are returned. A round qualifies as no-add only if complete
+screening adds neither a conceptual cluster nor a plausible close competitor.
+
+| ID | Exact query |
+|---|---|
+| C37-01 | `stubborn sets standard linear time state event property` |
+| C37-02 | `synchronous dataflow symbolic simulation timers selection` |
+| C37-03 | `compositional weak stubborn sets fair testing` |
+| C37-04 | `LTL partial order snapshots next operator` |
+| C37-05 | `symbolic dataflow path feasibility iterative refinement` |
+| C37-06 | `infeasible path pruning graph transformation symbolic` |
+| C37-07 | `schedule abstraction partial order response time` |
+| C37-08 | `modular state abstraction similar executions` |
+| C37-09 | `internal selection event inverse input image` |
+| C37-10 | `requested site sparse observation exact guard` |
+| C37-11 | `caller input equivalence residual dataflow` |
+| C37-12 | `selection observation fiber symbolic enumeration` |
+
+## Replacement round `closure-replacement-38`: arXiv
+
+Execute only if round 37 adds neither a conceptual cluster nor a plausible
+close competitor. Source: arXiv API. Frozen on 2026-08-04 before any round-37
+or round-38 execution. Each phrase is submitted as the conjunction of all
+alphanumeric terms across arXiv's `all` field, sorted by relevance, with at
+most the first 100 records and abstracts exported.
+
+| ID | Exact query |
+|---|---|
+| C38-01 | `stubborn sets linear time state event property` |
+| C38-02 | `synchronous dataflow symbolic simulation timers` |
+| C38-03 | `weak stubborn sets fair testing` |
+| C38-04 | `LTL partial order snapshots next operator` |
+| C38-05 | `symbolic dataflow path feasibility refinement` |
+| C38-06 | `infeasible path pruning graph transformation symbolic` |
+| C38-07 | `schedule abstraction partial order response time` |
+| C38-08 | `modular state abstraction similar executions` |
+| C38-09 | `internal selection event inverse input image` |
+| C38-10 | `requested site sparse observation exact guard` |
+| C38-11 | `caller input equivalence residual dataflow` |
+| C38-12 | `selection observation fiber symbolic enumeration` |
+
+If round 37 reopens the map, round 38 is retired unexecuted. If both qualify,
+they establish the required two-round no-add sequence only for the recorded
+sources, exact queries, captured rankings, date, and frozen trigger. Independent
+audit remains mandatory before closure.
