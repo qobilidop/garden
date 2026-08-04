@@ -115,7 +115,7 @@ arises only if that tuple is further compressed into a cube.
 
 It subsumes any proposed novelty claim that logical entailment is a new or
 better semantics for short enumeration cubes. It does not define which graph
-sites are output-demanded, distinguish active equal-valued alternatives,
+sites are observed from requested roots, distinguish observed equal-valued alternatives,
 construct residual program values, prove exact graph composition, or enumerate
 one record per graph-intensional observation fiber.
 

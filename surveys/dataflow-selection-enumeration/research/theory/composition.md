@@ -11,7 +11,7 @@ For a component \(G:X\to Y\), define its semantic interface
 
 \[
 \Sigma_G(x,R)=
-(\operatorname{val}_G(x),\delta_G(x,R),T_G(x,R)),
+(\operatorname{val}_G(x)|_R,\delta_G(x,R),T_G(x,R)),
 \]
 
 where \(R\subseteq Y\) is the demanded output set and
@@ -20,31 +20,46 @@ where \(R\subseteq Y\) is the demanded output set and
 \delta_G(x,R)=I_G\cap D_G(x,R)
 \]
 
-is the demanded input-port set. Returning all output values is harmless under
-total eager value semantics; \(\delta\) and \(T\) describe the separate
-structural observation.
+is the demanded input-port set. The residual interface for demand \(R\)
+therefore has the typed output tuple \(\prod_{o\in R}\mathcal D_o\); \(\delta\)
+and \(T\) describe the separate structural observation.
 
 ## Sequential composition
 
-Let \(G:X\to Y\) and \(H:Y\to Z\), with disjoint site namespaces. For input
-\(x\) and demanded outputs \(R\subseteq Z\), let
+Let \(G:X\to Y\) and \(H:Y\to Z\), with disjoint site namespaces, and fix a
+type-preserving bijection
 
 \[
-y=\operatorname{val}_G(x),
+  \rho:I_H\xrightarrow{\cong}O_G.
+\]
+
+The flattened composite has node set
+\(V_G\uplus(V_H\setminus I_H)\). Every operand edge in \(H\) that targeted an
+input node \(i\) instead targets \(\rho(i)\); all other ordered edges and
+semantic labels are unchanged. This is the graph substitution meant by
+\(H\circ_\rho G\).
+
+For input \(x\) and demanded outputs \(R\subseteq O_H\), define the boundary
+valuation \(y_i=\operatorname{val}_G(x)(\rho(i))\), and let
+
+\[
+y=(y_i)_{i\in I_H},
 \qquad
-(z,S,\tau_H)=\Sigma_H(y,R),
+(z,S_H,\tau_H)=\Sigma_H(y,R),
 \]
 
 and
 
 \[
-(-,D,\tau_G)=\Sigma_G(x,S).
+S_G=\rho(S_H),
+\qquad
+(-,D,\tau_G)=\Sigma_G(x,S_G).
 \]
 
 Then
 
 \[
-\Sigma_{H\circ G}(x,R)
+\Sigma_{H\circ_\rho G}(x,R)
 =(z,D,\iota_G(\tau_G)\sqcup\iota_H(\tau_H)),
 \]
 
@@ -56,11 +71,20 @@ namespaces.
 The equation above equals the whole-graph enabled-edge semantics of the
 substituted composite.
 
-*Proof sketch.* Reachability inside \(H\) determines exactly which of its input
-ports are reached. Substitution replaces each such port by the corresponding
-root of \(G\), so the composite reaches exactly \(D_G(x,S)\) inside \(G\). No
-other \(G\) node is reached. Site namespaces are disjoint, and each side's
-outcomes are fixed by the same eager values used in the flattened graph.
+*Proof.* A topological induction gives the **value-substitution lemma**: every
+retained \(H\) node has in the flattened graph the value it has under boundary
+valuation \(y\), while every \(G\) node keeps its value under \(x\).
+
+Now construct enabled closures by reachability approximants. Before crossing a
+substituted boundary, the restriction to retained \(H\) nodes is exactly
+\(D_H(y,R)\setminus I_H\), because the value-substitution lemma makes every
+selection outcome and hence every enabled \(H\) edge identical. Its boundary
+crossings are exactly \(S_H=I_H\cap D_H(y,R)\), redirected to
+\(S_G=\rho(S_H)\). Starting from precisely those roots, the restriction of
+flattened reachability to \(G\) is \(D_G(x,S_G)\); no other edge enters \(G\).
+Thus the demanded external inputs are \(D\), and the observed sites are
+exactly the disjoint contextual union of the two component observations. The
+value-substitution lemma supplies \(z\).
 
 ## Parallel composition and sharing
 
@@ -95,9 +119,87 @@ occurrences with the same source location.
 
 ## Symbolic guarded summaries
 
-If inputs and output-demand masks have a decidable symbolic representation,
-the fibers of \(\Sigma_G\) form a finite guarded relation. Composing guarded
-summaries amounts to:
+The full concrete map \(\Sigma_G\) need not have finite range when value
+domains are infinite. Instead partition only by the finite structural
+projection
+
+\[
+  \Pi_G(x,R)=(\delta_G(x,R),T_G(x,R)),
+\]
+
+and retain \(\operatorname{val}_G|_R\) as a symbolic residual inside each case.
+If inputs, output-demand masks, and primitive operations have an exact
+decidable symbolic representation, the fibers of \(\Pi_G\) form a finite
+guarded relation. Represent a component case by
+\((g,\delta,\tau,r)\), where \(g\) is its exact input guard,
+\((\delta,\tau)\) its structural projection, and \(r\) an exact symbolic
+residual for the demanded output tuple. Because the demanded slice contains
+exactly the input ports in \(\delta\), both the case guard and residual can be
+typed over \(\prod_{i\in\delta}\mathcal D_i\).
+
+This statement uses full-domain component summaries. An independent component
+precondition that mentions otherwise undemanded inputs must be carried as an
+additional interface predicate and its support charged explicitly; it cannot
+silently be dropped by the demand projection.
+
+For an \(H\) case \((h,S_H,\tau_H,r_H)\), let
+
+\[
+ h:\prod_{i\in S_H}\mathcal D_i\to\mathbb B,
+ \qquad
+ r_H:\prod_{i\in S_H}\mathcal D_i
+       \to\prod_{o\in R}\mathcal D_o.
+\]
+
+Pair it with a \(G\) case \((g,D,\tau_G,r_G)\) summarized at demand
+\(S_G=\rho(S_H)\), where
+
+\[
+  r_G:\mathcal X_G\to\prod_{o\in S_G}\mathcal D_o.
+\]
+
+Reindex this boundary tuple as
+
+\[
+  \widehat r_G(x)_i=r_G(x)_{\rho(i)}
+  \qquad(i\in S_H),
+\]
+
+and form
+
+\[
+\begin{split}
+c(x) &\equiv g(x)\land h(\widehat r_G(x)),\\
+r(x) &= r_H(\widehat r_G(x)),\\
+\tau &= \iota_G(\tau_G)\sqcup\iota_H(\tau_H).
+\end{split}
+\]
+
+Discard pairs whose \(c\) is infeasible.
+
+### Guarded-summary composition theorem
+
+The feasible records above are an exact observation partition for the
+flattened composite: every caller input satisfies exactly one record, every
+record's residual and structural data agree with the concrete composite, and
+distinct records have distinct composite structural projections.
+
+*Proof sketch.* The concrete boundary value selects the unique exact \(H\)
+case. Its \(S_H\) fixes the demand at which the concrete input selects the
+unique exact \(G\) case. Residual substitution and the concrete
+exact-composition theorem give soundness and coverage. If two paired records
+had the same composite structural projection, disjoint site namespaces would
+make both \(\tau_H\) and \(\tau_G\) equal. The exact-local-guard lockstep then
+makes \(S_H\), followed by \(D\), equal as well, so the component fiber cases
+and hence the pair are identical.
+
+This one-record conclusion assumes that each component summary already has
+one exact record per \(\Pi\)-fiber and that the composite retains both
+components' observations. Fragmented component guards or deliberate erasure
+of internal events can require a later quotient, but that is a different
+summary contract.
+
+Operationally, guarded composition amounts to:
 
 1. substitute \(G\)'s residual output into \(H\)'s guards;
 2. use each \(H\) case's boundary-demand set \(S\) to select the matching
@@ -106,16 +208,26 @@ summaries amounts to:
 4. discard infeasible conjunctions; and
 5. union namespaced observations and compose residual values.
 
-Relational composition gives exact agreement with the semantic theorem. It may
-still form a large cross-product before feasibility pruning; no output-sensitive
-advantage is established.
+It may still form a large cross-product before feasibility pruning; no
+output-sensitive advantage is established.
 
 ## Algebraic interpretation
 
 Ordinary operators combine independent computations. A selection first
 computes a selector and conditionally observes case computations. Logging the
-site outcome before conditional composition interprets the graph in a reader of
-concrete inputs combined with an idempotent writer of site-outcome events.
+site outcome before conditional composition interprets the graph in a reader
+of concrete inputs combined with the idempotent writer monoid
+
+\[
+  \left(\mathcal P_{\mathrm{fin}}
+  \left(\coprod_{q\in Q}\{q\}\times\Omega_q\right),
+  \cup,\varnothing\right).
+\]
+
+Determinism gives a functional-consistency invariant: for a fixed input the
+event set contains at most one outcome for each site. Decoding such a set gives
+the partial map \(T_G\). Compatible partial-map union is useful notation for
+already-consistent observations, but is not itself a total writer monoid.
 
 This is naturally a selective computation. Selective applicative functors
 already provide laws, a free construction, and generic interpretation for

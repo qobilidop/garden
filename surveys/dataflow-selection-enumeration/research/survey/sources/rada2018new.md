@@ -8,9 +8,12 @@
 
 ## Why it matters
 
-Rada and Černý provide the proof-bearing incremental cell-enumeration
-algorithm that Balestriero and LeCun later specialize to neural activation
-hyperplanes. It establishes exact, duplicate-free, output-polynomial
+Rada and Černý provide a proof-bearing incremental cell-enumeration algorithm
+that Balestriero and LeCun later specialize to neural activation hyperplanes.
+Avis and Fukuda's reverse search and Sleumer's fixed-dimensional improvement
+already establish earlier output-sensitive arrangement-cell enumeration; Rada
+and Černý supply the especially direct incremental sign-prefix formulation.
+IncEnu preserves exact, duplicate-free, output-polynomial
 enumeration of full-dimensional hyperplane cells. Those properties cannot be
 claimed as new for our more general solver recurrence.
 
@@ -62,9 +65,13 @@ enumeration guarantee.
 
 ## Relationship to our algorithm
 
-For one real affine layer, the reduction is direct: each local outcome
-predicate is a hyperplane sign, all sites are observed, and observation fibers
-are arrangement cells. More generally, the recurrence supplies a standard
+For one real affine layer restricted to strict signs away from all hyperplane
+boundaries, the reduction is direct: each local outcome predicate is a
+hyperplane sign, all sites are observed, and observation fibers are
+full-dimensional arrangement cells. Boundary-inclusive or correlated
+non-strict tests can instead yield half-open or lower-dimensional fibers, so
+the arrangement theorem does not transfer to those cases without additional
+assumptions. More generally, the recurrence supplies a standard
 enumeration skeleton whenever accumulated exact guards can be incrementally
 extended and feasibility-tested.
 
@@ -91,4 +98,3 @@ Do not claim:
 - Section 3.1 and Algorithm 1, pp. 3--4: incremental recurrence.
 - Theorem 3.1, p. 5: completeness and no duplicates.
 - Theorem 3.2 and Corollary 3.3, pp. 5--6: time, space, and OutputP result.
-

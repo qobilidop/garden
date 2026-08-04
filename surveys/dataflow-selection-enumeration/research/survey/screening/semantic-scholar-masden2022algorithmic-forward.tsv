@@ -1,0 +1,23 @@
+rank	source_id	year	doi	title	venue	type
+1	71dcee19d848315b502958c67c547771d453e217	2026		Characterizing the Discrete Geometry of ReLU Networks		
+2	d4ad49e86c3cca28a96507cc9451c9959ac0990a	2026		On the fibers and semi-algebraicity of ReLU neuromanifolds		
+3	f26315fd2ad5413ff71f179610ad5bbfbacb83ce	2026	10.48550/arXiv.2605.18319	The Symmetries of Three-Layer ReLU Networks	arXiv.org	JournalArticle
+4	82b97be918eb070ae982416855b6291db0cc6731	2026	10.48550/arXiv.2605.03601	Most ReLU Networks Admit Identifiable Parameters	arXiv.org	JournalArticle
+5	2b29cf87a784530aa4ae97a6553c9197d448ec42	2026	10.48550/arXiv.2604.14037	A Complete Symmetry Classification of Shallow ReLU Networks	arXiv.org	JournalArticle
+6	6587b2e06b3dfba9613b4e7d1f0db7f81eaf1a85	2025	10.48550/arXiv.2510.12700	Topological Signatures of ReLU Neural Network Activation Patterns	arXiv.org	JournalArticle
+7	5b13b857084df69cc8fa0fb25dc0c2c0623b01f7	2025	10.48550/arXiv.2509.21286	Maxout Polytopes	arXiv.org	JournalArticle
+8	cba0739c70879808e760f2bcebaba85147ed3e83	2025	10.1137/25m1765547	Data-Driven Identification of Attractors Using Machine Learning	SIAM Journal on Applied Dynamical Systems	JournalArticle
+9	3cbc6d07471cc98c13f155b820b6295cb4a604a4	2025	10.48550/arXiv.2505.16716	The Computational Complexity of Counting Linear Regions in ReLU Neural Networks	Neural Information Processing Systems	JournalArticle
+10	1005e071d7a9c22cd01a2ad3fe28804ddc55d8f7	2025	10.48550/arXiv.2503.01702	Relating Piecewise Linear Kolmogorov Arnold Networks to ReLU Networks	International Conference on Artificial Intelligence and Statistics	JournalArticle
+11	7ead6b564d7c0b333d1370026acf143043fdea21	2025		A Quotient Homology Theory of Representation in Neural Networks	Trans. Mach. Learn. Res.	JournalArticle
+12	6e635b020b60209d7a301efaa114395e84b504a5	2025	10.1007/s10851-025-01253-x	Convexity in ReLU Neural Networks: Beyond ICNNs?	Journal of Mathematical Imaging and Vision	JournalArticle
+13	bd8a8ed7bf23bce77de7d1c6f4115c349bbb5962	2024	10.1007/s41468-026-00234-2	Combinatorial regularity for relatively perfect discrete morse gradient vector fields of ReLU neural networks	Journal of Applied and Computational Topology	JournalArticle
+14	59436d3307277c3dd746c0173c0e64a3516453b5	2024	10.48550/arXiv.2410.17191	On Functional Dimension and Persistent Pseudodimension	arXiv.org	JournalArticle
+15	ceae40c347aa83b2fca85752e3356c459c21f769	2024	10.48550/arXiv.2404.19710	A rank decomposition for the topological classification of neural representations	arXiv.org	JournalArticle
+16	d4705141c495b272e19761d5379631fcdcc729a0	2024	10.48550/arXiv.2402.02407	Defining Neural Network Architecture through Polytope Structures of Dataset	International Conference on Machine Learning	JournalArticle,Conference
+17	9e7f1280622ee70bbcaa1bd590a3fd7d0c384e2a	2023	10.3389/fdata.2023.1274831	Integrating geometries of ReLU feedforward neural networks	Frontiers Big Data	JournalArticle
+18	6b8736af96de06dd5a0992c8af0c244e8b8d5e3b	2023	10.48550/arXiv.2306.17418	ReLU Neural Networks, Polyhedral Decompositions, and Persistent Homolog	TAG-ML	JournalArticle
+19	b8d8a26582904260628b78a6324a7a56048c2a66	2023	10.48550/arXiv.2306.06179	Hidden symmetries of ReLU networks	International Conference on Machine Learning	JournalArticle,Conference
+20	5dc0a134425d0f7e05919b934ab1975b1ba5be49	2023	10.48550/arXiv.2305.00241	When Deep Learning Meets Polyhedral Theory: A Survey	INFORMS journal on computing	JournalArticle,Review
+21	43809c2f472b425f1194719d15edbfc89591b9a1	2022	10.1016/j.aim.2025.110636	Functional dimension of feedforward ReLU neural networks	Advances in Mathematics	JournalArticle
+22	cce763f7d335cebf25a797324c408e02381d0677	2023	10.1016/j.procs.2023.08.200	On the Activation Space of ReLU equipped Deep Neural Networks	INNS DLIA@IJCNN	JournalArticle

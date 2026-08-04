@@ -4,6 +4,8 @@
 - **Primary source:** https://doi.org/10.1109/ICRA48506.2021.9561956
 - **Version read:** arXiv v2, 1 April 2021
 - **Open copy:** https://arxiv.org/abs/2011.11609
+- **Expanded version:** arXiv:2210.08339; published in IEEE TNNLS (2025),
+  https://doi.org/10.1109/TNNLS.2025.3571720
 - **Bibliography key:** `vincent2021reachable`
 
 ## Why it matters

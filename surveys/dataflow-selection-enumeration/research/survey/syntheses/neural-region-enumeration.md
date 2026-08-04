@@ -5,9 +5,11 @@
 Exact enumeration of feasible geometric regime assignments is established
 well beyond a monolithic SMT encoding:
 
-- Rada and Černý incrementally enumerate every full-dimensional cell of an
-  affine hyperplane arrangement, prove completeness and nonduplication, and
-  give an OutputP time/space analysis.
+- Avis and Fukuda's reverse search enumerates every full-dimensional affine
+  arrangement cell exactly once with output-polynomial time and polynomial
+  space; Sleumer improves its fixed-dimensional arithmetic bound to
+  (O(m|C|)); Rada and Černý later give a direct incremental sign-prefix
+  formulation with its own completeness and OutputP analysis.
 - Serra et al. enumerate or count exactly the feasible dense ReLU activation
   patterns with a boundary-aware mixed-integer formulation.
 - Xiang computes exact reachable polyhedral unions; Tran's star sets retain
@@ -111,14 +113,24 @@ general region-enumeration skeleton or merely a sparse dynamic path.
 
 ## Complexity consequence
 
-For affine sign sites, any theory-level recurrence should reduce to the
-standard incremental arrangement bound
+For strict affine sign sites on the full real domain, any theory-level
+recurrence should reduce to the established arrangement bounds. Avis--Fukuda
+give
 
 \[
-  O(RK\,lp(K,D))
+  O(KQD\,l(Q,D)),
 \]
 
-up to representation costs. A generic \(K+1\) model-query accounting per
+Sleumer gives \(O(KQ)\) arithmetic time for fixed \(D\), and Rada--Černý's
+incremental formulation gives
+
+\[
+  O(KQ\,lp(Q,D))
+\]
+
+where \(Q\) is the number of hyperplanes, \(K\) the number of cells, and
+\(D\) the input dimension, up to representation costs and the open-cell
+assumptions stated in the primary results. A generic \(K+1\) model-query accounting per
 emitted observation is therefore not independently novel. Complexity claims
 must instead expose:
 

@@ -11,7 +11,7 @@
 - **Q04:** Must all primitive operators be total? If not, which observations from
   inactive alternatives remain semantically relevant?
 - **Q05:** Which observer language and validation task justify retaining
-  active equal-valued selections?
+  observed equal-valued selections?
 - **Q06:** Which solver guarantees are necessary for exactness and termination?
 - **Q07 (provisional):** Describe the semantic construction as symbolic
   evaluation of a selective term graph and the solver baseline as projected

@@ -4,13 +4,20 @@
 
 Use explicit parameters rather than the ambiguous phrase “graph size”:
 
-- \(S_G\): weighted DAG size, counting nodes, operand and case edges, bit
-  widths, constants, aggregate leaves, and outcome-predicate lowering cost;
+- \(S_G\): weighted source-DAG size, counting nodes, operand and case edges,
+  bit widths, constants, and aggregate leaves;
+- \(S_C\): total shared circuit size for selector classifiers, outcome
+  encodings, and the direct case-membership predicates
+  \(\eta_{q,j}(d)\equiv[j\in C_q(\kappa_q(d))]\);
+- \(S_{\mathrm{enc}}=S_G+S_C\): weighted size charged to the exact global
+  value/reachability encoding;
+- \(S_A\): DAG or serialized size of the caller constraint, as stated;
 - \(Q\): number of structural selection sites;
 - \(b_q=|\Omega_q|\): outcome count at site \(q\);
 - \(K\): number of feasible selection observations under the caller constraint;
 - \(L\): maximum number of observed selection sites in one observation;
-- \(S_\tau\): weighted size of the demanded slice for observation \(\tau\);
+- \(S_\tau\): weighted size of the demanded slice for observation \(\tau\),
+  including the classifier and direct membership circuits used in that slice;
 - \(E_G\): weighted size of any elaborated binary-choice or solver encoding,
   including auxiliary choices and the projection map back to source sites;
 - \(B\): number of candidates built by a particular syntactic branching
@@ -99,17 +106,37 @@ substituted for the other.
 ## Hyperplane and activation-region special case
 
 When every selection site is a real affine sign test and every site is always
-observed, an observation is a total sign vector and its fibers are the
-full-dimensional cells of a hyperplane arrangement. Rada and Černý's
-incremental enumerator already gives
+observed, an observation is a total sign vector, but a general selection fiber
+need not be a full-dimensional arrangement cell. A non-strict classifier
+assigns boundary points to one side, producing half-open regions; an arbitrary
+caller constraint can also cut or lower the dimension of a fiber. For example,
+the outcomes \(x\ge0\) and \(-x\ge0\) are simultaneously true exactly at
+\(x=0\).
+
+For the full domain \(A=\mathsf{true}\), \(Q\) distinct affine hyperplanes,
+and strict positive/negative outcomes that exclude every boundary, each
+nonempty sign fiber is open and therefore is one full-dimensional arrangement
+cell. No simplicity or general-position assumption is needed. In this
+restricted setting, Avis and Fukuda's reverse search gives
+
+\[
+  O(KQD\,l(Q,D))
+\]
+
+time and \(O(QD)\) working space. For fixed \(D\), Sleumer improves the
+arithmetic bound to \(O(KQ)\) time with \(O(Q^2)\) space. Rada and Černý's later
+incremental sign-prefix algorithm gives
 
 \[
   O(KQ\,lp(Q,D))
 \]
 
-time and polynomial working space, where \(D\) is input dimension and
-\(lp(Q,D)\) is the cost of a rational LP with the relevant coefficient bit
-size. This is an OutputP result for that restricted representation.
+time and \(O(lp(Q,D))\) working space, where \(D\) is input dimension and
+\(l,lp\) denote the respective LP-cost abstractions. These are
+output-polynomial results for the restricted open-cell representation. The
+Avis--Fukuda and Sleumer analyses count arithmetic/LP operations rather than
+proving a coefficient-bit bound, and none of the results transfers
+automatically to boundary-inclusive fibers or an arbitrary caller theory.
 
 Dense ReLU networks refine the arrangement layerwise. Existing algorithms
 enumerate feasible activation patterns by MILP, propagate exact stars that
@@ -127,7 +154,7 @@ The output count also depends on the chosen quotient. Dense activation
 patterns can split two adjacent cells that realize the same affine function.
 Wang's maximal-region construction merges connected equal-map cells; our
 selection observer instead preserves observed equal-valued outcomes. Thus an
-activation-cell count, a maximal-affine-region count, and (K) are not
+activation-cell count, a maximal-affine-region count, and \(K\) are not
 interchangeable without a nondegeneracy or observer-equivalence assumption.
 
 The graph problem's additional parameter is not merely \(Q\): each record has
@@ -183,8 +210,14 @@ input, its branch conjunction is a disjoint leaf guard, and the leaf can store
 an observation/result identifier. A full tree over \(n\) Boolean inputs has at
 most \(2^{n+1}-1\) nodes, while shorter leaves omit suffix tests.
 
-For the totalized observation function \(\overline T_G\), an MTBDD or ADD can
-merge equal residual functions and remove tests with equal successors. Let
+For a finite Boolean encoding of the whole input domain, an MTBDD or ADD can
+compile the totalized observation function, using a fresh outside-domain
+terminal when \(\neg A\), and remove tests with equal
+observation successors. Classical ADD claims do not apply unchanged to
+infinite input domains. Nor does an observation ADD automatically produce one
+symbolic residual per fiber: compiling concrete output values can split one
+fiber into many terminals, while residual expressions require separate
+partial evaluation or a richer labeled structure. Let
 \(D_Z\) be the number of nodes in the compiled diagram, \(P_Z\) the number of
 root-to-terminal paths, and \(C_Z\) the total size of cubes emitted from those
 paths. None is bounded polynomially by \(K\) in general:
@@ -215,10 +248,18 @@ queries. Candidate-local concolic construction with memoization costs
 
 \[
 O\!\left(\sum_\tau S_\tau\right)
-\subseteq O(KS_G)
+\subseteq O(KS_{\mathrm{enc}})
 \]
 
-and creates guard-plus-residual DAGs of the same asymptotic size.
+and creates outcome-guard-plus-residual DAGs of the same asymptotic size. If
+every emitted complete guard copies the caller constraint, flat output size is
+
+\[
+  O\!\left(KS_A+\sum_\tau S_\tau\right).
+\]
+
+If all records share one immutable reference to \(A\), it is instead
+\(O(S_A+\sum_\tau S_\tau)\).
 
 Before query \(j\), the solver sees
 
@@ -233,14 +274,19 @@ An honest solver-time statement is therefore
 T_{\mathrm{SMT}}\!\left(A\land\bigwedge_{i<j}\neg g_i\right).
 \]
 
-The cumulative blocker DAG can be \(O(KS_G)\). Incrementality may reuse learned
-facts but gives no general polynomial-delay or monotone-runtime bound.
+The cumulative blocker DAG can be \(O(KS_{\mathrm{enc}})\), plus one shared
+copy of \(A\). Incrementality may reuse learned facts but gives no general
+polynomial-delay or monotone-runtime bound.
 
 ## Prefix model-discovery baseline
 
-If an alternative algorithm discovers only feasible outcome children at each
-feasible observation prefix, let \(I\) be the number of feasible internal
-prefixes. An internal prefix \(p\) with \(d(p)\) feasible children needs
+Assume \(K\ge1\) and that an alternative algorithm organizes discovery as a
+finite rooted tree: the root is the empty observation prefix, each edge adds
+the next observed site/outcome chosen by a deterministic expansion policy,
+and each leaf is one complete observation. If the algorithm discovers only
+feasible outcome children, let \(I\) be the number of feasible internal
+prefixes, including the root. An internal prefix \(p\) with \(d(p)\) feasible
+children needs
 \(d(p)\) successful discovery queries plus one exhaustion query. Since
 
 \[
@@ -253,7 +299,9 @@ the total is
 2I+K-1\le 2KL+K-1.
 \]
 
-The inequality charges each internal prefix to one descendant leaf. It fails
+The equality is the edge count of this rooted tree. The inequality charges
+each internal prefix to one descendant leaf at each of at most \(L\) depths.
+It fails
 if the algorithm tests infeasible raw outcomes, blocks concrete selector values
 instead of whole semantic outcomes, duplicates shared sites, or permits a
 feasible prefix with no total result.
@@ -264,21 +312,26 @@ model-producing-invocation count.
 
 ## Formula representation
 
-For one observation,
+For one observation, the outcome-only guard generated from observed sites
+satisfies
 
 \[
 |g_\tau|_{\mathrm{DAG}}+|\mathcal R_\tau|_{\mathrm{DAG}}=O(S_\tau).
 \]
 
+The complete guard is \(A\land g_\tau\). Its size is
+\(O(S_A+S_\tau)\) when serialized independently, or \(O(S_\tau)\) additional
+space when it shares a global reference to \(A\).
+
 This is false for naive tree serialization. In the shared chain
 
-\`\`\`text
+```text
 e0 = x
 e1 = f(e0,e0)
 e2 = f(e1,e1)
 ...
 en = f(e[n-1],e[n-1])
-\`\`\`
+```
 
 the graph has linear size but recursive textual expansion has exponential
 size. Paper claims must specify formula DAG, let-bound SMT,
@@ -306,8 +359,12 @@ coverage operationally through the final unsatisfiable query.
 ## Representation comparisons
 
 The activation-variable projected-AllSMT baseline constructs one shared graph
-encoding of \(O(S_G)\) weighted DAG size. Full-fiber generation can avoid
-unobserved slices per result but may emit \(O(KS_G)\) separate structures.
+encoding of \(O(S_{\mathrm{enc}})\) weighted DAG size when \(\kappa_q\), the
+outcome encoding, and every direct \(\eta_{q,j}\) circuit are supplied
+effectively. An extensional disjunction over all outcomes is charged to
+\(S_C\) or \(E_G\) and can be exponential in a succinct selector width.
+Full-fiber generation can avoid unobserved slices per result but may emit
+\(O(KS_{\mathrm{enc}})\) separate structures.
 Neither dominates asymptotically in the general model.
 
 Performance claims must separately report construction work, model queries,

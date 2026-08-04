@@ -47,7 +47,7 @@ repeated terminal weights and submatrices (Figure 1, pp. 172–173).
 
 ## Relationship to our hypothesis
 
-If terminals contain only output values, reduction erases active equal-valued
+If terminals contain only output values, reduction erases observed equal-valued
 selections. If the carrier contains the complete sparse observation, the ADD
 represents the observation function and each terminal preimage is exactly a
 fiber. A skipped ADD input variable then means that the complete observation

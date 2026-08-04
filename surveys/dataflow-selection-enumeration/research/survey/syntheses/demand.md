@@ -31,7 +31,7 @@ intensional observer whose inverse images partition all caller inputs.
 The classical stream-dataflow lineage is more than a terminological neighbor.
 Pingali and Arvind transform each data edge with a reverse demand edge and
 prove correctness, liveness, and parsimony compositionally. Avron and Sasson
-define the (D)-driven evaluation as the least legal valuation satisfying a
+define the \(D\)-driven evaluation as the least legal valuation satisfying a
 fixed output-position demand and prove that such least computations exist
 uniformly exactly for stable primitive interpretations. Their
 `parallel-or` counterexample also shows why a least computation is not
@@ -43,17 +43,17 @@ For a finite acyclic graph encoded as one-cell streams, let
   \kappa_{G,R}(x)
 \]
 
-denote the least legal valuation for concrete input (x) and requested roots
-(R), when the specialization assumptions hold. The selection observation can
+denote the least legal valuation for concrete input \(x\) and requested roots
+\(R\), when the specialization assumptions hold. The selection observation can
 then be presented as a projection
 
 \[
   T_G(x,R)=\pi_{\mathrm{sel}}(\kappa_{G,R}(x)).
 \]
 
-The established work fixes (x) and computes (kappa_{G,R}(x)). Our survey
+The established work fixes \(x\) and computes \(\kappa_{G,R}(x)\). Our survey
 object changes the quantification: it studies the finite range of this
-projection as (x) varies symbolically and the exact inverse image of each
+projection as \(x\) varies symbolically and the exact inverse image of each
 range value. The equality between enabled closure and the support of the least
 legal valuation must be proved as a specialization theorem; it is not stated
 by the prior papers.

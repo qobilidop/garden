@@ -36,14 +36,19 @@ proof obligations, and evidence.
   enumerate exact and then coarsest input-equivalence partitions, while Huang
   et al. enumerate all satisfiable atoms of a finite observer alphabet. A
   decision tree already represents each input by its encountered test/outcome
-  path with a disjoint leaf guard and result, and ADD compilation represents
-  the complete finite observation function with shared residual subfunctions.
+  path with a disjoint leaf guard and result, and, for finitely encoded inputs,
+  ADD compilation represents the complete observation function. A symbolic
+  residual per observation still requires partial evaluation or a richer
+  residual-labeled decision structure.
 - **Reduction:** Introduce one finite-domain variable per contextual selection
   occurrence with values `unobserved` or an outcome. Constrain it by a
   backward-reachability encoding and ordinary graph equations, then project onto
-  those variables.
+  those variables. The construction is linear in the supplied exact value,
+  classifier, outcome, and direct case-membership encoding, which need not be
+  polynomial in a more succinct source representation.
 - **Assessment:** An original algorithm must demonstrate a compositional or
-  structural property not inherited from this polynomial instrumentation.
+  structural property not inherited from this explicitly charged
+  instrumentation.
 
 ## H03 — Selection observation avoids irrelevant Cartesian products
 
@@ -73,7 +78,9 @@ proof obligations, and evidence.
   alternatives.
 - **Resolution:** Translate strict nodes applicatively and selections through a
   free selective computation. Interpret it in a reader of input combined with
-  an idempotent writer of site/outcome events. Mokhov et al. already supply the
+  the idempotent writer monoid of finite site/outcome event sets; prove
+  functional consistency before decoding the set to a partial map. Mokhov et
+  al. already supply the
   free syntax and universal interpreter. The coarsest-partition statement is a
   kernel factorization relative to an explicit observer.
 
@@ -124,9 +131,9 @@ proof obligations, and evidence.
 
 - **Status:** survey synthesis; formal derivation recorded
 - **Statement:** For finite total selective term graphs, the same graph-relative
-  observation is obtained by enabled-edge reachability, an exact selective
-  reader/writer interpretation, and a total unobserved-or-outcome activation
-  encoding.
+  observation is obtained by enabled-edge reachability, a selective
+  reader/finite-event-set-writer interpretation followed by conflict-free map
+  decoding, and a total unobserved-or-outcome activation encoding.
 - **Presentation rule:** Attribute the component constructions to their
   established literatures; present only the cross-literature equivalence as our
   organizing derivation.
@@ -148,8 +155,10 @@ proof obligations, and evidence.
   requesting a dense network's output makes every activation site observed.
   On full-dimensional interiors, feasible activation patterns and their
   polyhedral regions are exactly the resulting observation image and fibers.
-- **Prior frontier:** Rada and Černý prove complete duplicate-free OutputP
-  hyperplane-cell enumeration; Serra et al. enumerate feasible ReLU patterns;
+- **Prior frontier:** Avis and Fukuda prove output-polynomial reverse-search
+  enumeration of every arrangement cell, Sleumer improves the fixed-dimension
+  arithmetic bound, and Rada and Černý give a later complete duplicate-free
+  incremental formulation; Serra et al. enumerate feasible ReLU patterns;
   Tran's stars and Robinson's explicit PWA conversion emit exact guards with
   affine images before RPM's adjacency walk; Masden and Berzins recover richer
   cell complexes; Wang merges activation cells into maximal equal-affine
@@ -196,13 +205,14 @@ proof obligations, and evidence.
 - **Statement:** A deterministic root-to-leaf path is an input-relative partial
   map from encountered tests to outcomes, its branch conjunction is a disjoint
   leaf guard, and its leaf carries a result. Totalizing graph-site
-  non-observation turns the proposed observer into an ordinary finite function
-  compilable as an MTBDD or ADD.
+  non-observation turns the proposed observer into an ordinary finite-range
+  function. For finitely encoded inputs it is compilable as an MTBDD or ADD.
 - **Prior frontier:** Bryant proves canonicity of reduced ordered Boolean
   function graphs for a fixed order; Bahar et al. extend the terminal carrier
   to finite algebraic values. Both retain exponential worst cases.
-- **Consequence:** Sparse encountered-test maps, disjoint guards, residual
-  labels, and shared compilation are established. A contribution requires a
+- **Consequence:** Sparse encountered-test maps, disjoint guards, and shared
+  observer compilation are established. Symbolic residual generation is a
+  separate obligation. A contribution requires a
   graph-specific construction, composition, or representation theorem beyond
   generic decision structures.
 
@@ -216,7 +226,9 @@ proof obligations, and evidence.
   transformation; Avron and Sasson characterize uniform existence of least
   legal demanded valuations by stability; Part 2 and Vin et al. develop global
   and operational demand propagation.
-- **Consequence:** The only surviving quantification is over symbolic inputs:
-  enumerate the range of the least computation's selection projection and the
-  exact inverse image of each observation. “Demand-sensitive evaluation” is
-  not itself a contribution.
+- **Consequence:** Conditional on a translation proving that the source
+  language's semantic least demand matches our declared strict edge policy,
+  the remaining quantification is over symbolic inputs: enumerate the range of
+  the least computation's selection projection and the exact inverse image of
+  each observation. “Demand-sensitive evaluation” is not itself a
+  contribution.

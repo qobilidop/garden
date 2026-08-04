@@ -85,9 +85,12 @@ is new nor that PET already enumerates the same semantic object.
 
 Exact neural-region enumeration adds a fourth boundary. When every activation
 unit is represented as a selection and the network output is requested, every
-site is observed and a dense activation cell is exactly one observation fiber.
-Classical arrangement algorithms precede Rada and Černý's feasibility-pruned
-OutputP recurrence; Serra et al. exactly enumerate feasible ReLU patterns;
+site is observed. On full-dimensional interiors, with zero-boundary points
+excluded and regime outcomes interpreted as strict signs, a dense activation
+cell is exactly one observation fiber of the restricted domain.
+Avis--Fukuda reverse search and Sleumer's fixed-dimensional improvement precede
+Rada and Černý's feasibility-pruned OutputP recurrence; Serra et al. exactly
+enumerate feasible ReLU patterns;
 Tran's star sets and Robinson's explicit piecewise-affine conversion already
 retain exact guards with affine images; RPM adds adjacency-oriented traversal;
 and later work extracts richer face complexes, handles broader CPWL
@@ -129,13 +132,17 @@ equivalence partition itself is established.
 Decision structures add a seventh generic boundary. A deterministic
 root-to-leaf path is already a sparse map from the tests encountered for one
 input to their outcomes; the path conjunction is a guard and the leaf is a
-result or residual. Compiling the totalized selection observation into an ADD
-makes terminals correspond to observations and terminal preimages to fibers.
+result or residual. For finitely encoded inputs, compiling the totalized
+selection observation with a fresh outside-\(A\) terminal into an ADD makes
+the remaining terminals correspond to observations and their preimages to the
+\(A\)-relative fibers.
 Reduction may skip an input variable because the compiled observation is
 extensionally independent of it, which is different from graph-structural
 non-observation but becomes an ordinary function property after the
-unobserved sentinel is instrumented. Thus sparse path shape, disjoint leaf
-regions, and residual labels are not separators. Only a demonstrably better
+unobserved sentinel is instrumented. A concrete pair-valued ADD can refine one
+observation fiber by result value; obtaining one symbolic residual per fiber
+still requires partial evaluation or a richer labeled structure. Thus sparse
+path shape and disjoint leaf regions are not separators. Only a demonstrably better
 graph-specific construction, local guard form, or composition result could
 survive this baseline.
 
@@ -143,12 +150,12 @@ Classical demand-driven dataflow adds an eighth boundary. Pingali and Arvind
 already propagate output demands backwards through a stream graph and prove
 their correctness and parsimony properties compositionally. Avron and Sasson
 define the least legal output-complete valuation and characterize its uniform
-existence by stability. Our enabled closure is at most a finite acyclic
-specialization of that fixed-input object. The remaining change is to range
-over symbolic inputs, project each least computation to selected site/outcome
-events, and enumerate the exact inverse-image fibers. That change in
-quantification must be explicit; “demand-sensitive evaluation” alone is
-established.
+existence by stability. Conditional on a translation proving the
+specialization bridge, our enabled closure is a finite acyclic instance of
+that fixed-input object. The remaining change is then to range over symbolic
+inputs, project each least computation to selected site/outcome events, and
+enumerate the exact inverse-image fibers. That change in quantification must
+be explicit; “demand-sensitive evaluation” alone is established.
 
 ## Route decision
 

@@ -19,14 +19,14 @@ separate from the structural observation below.
 
 For a fixed input \(x\), define enabled operand edges:
 
-- every operand edge of an ordinary node is enabled;
-- the selector edge of every selection site is enabled;
-- case edge \((q,c_{q,j})\) is enabled exactly when
+- every operand edge \((v,j,u)\) of an ordinary node is enabled;
+- the selector edge \((q,0,s_q)\) of every selection site is enabled;
+- case edge \((q,j,c_{q,j})\) is enabled exactly when
   \[
   j\in C_q(\omega_x(q)).
   \]
 
-Given an observed output-root set \(R\), let
+Given an observed output-root set \(R\subseteq O\), let
 
 \[
 D_G(x,R)
@@ -45,10 +45,12 @@ formal meanings.
 
 ## Selection observation
 
-The selection observation is the finite partial map
+The selection observation is the finite dependent partial map
 
 \[
-T_G(x,R):Q\rightharpoonup\bigcup_q\Omega_q
+T_G(x,R)\in
+\left\{t\mid \operatorname{dom}(t)\subseteq Q
+\ \land\ \forall q\in\operatorname{dom}(t).\ t(q)\in\Omega_q\right\}
 \]
 
 with
@@ -85,19 +87,26 @@ instrumentation deliberately distinguishes observed equal-valued alternatives.
 
 ## Basic properties
 
-### Least demanded partial valuation
+### Least partial valuation under the declared dependency policy
 
-The enabled closure admits a finite graph-theoretic presentation of the
-classical least demanded computation. For each node (v), extend its value
+The enabled closure admits a finite graph-theoretic least-partial-valuation
+presentation for the strict edge-dependency policy declared in the model. For
+each node \(v\), extend its value
 domain to the flat domain
 
 \[
   \widehat{\mathcal D}_v=\mathcal D_v\cup\{\bot_v\},
 \]
 
-where \(\bot_v\sqsubseteq d\) for every ordinary value (d), and distinct
-ordinary values are incomparable. For fixed input (x), a partial valuation
-\(\nu\) is **(x)-consistent** when
+where each \(\bot_v\) is a fresh, node-typed element,
+\(\bot_v\sqsubseteq d\) for every ordinary value \(d\), and distinct ordinary
+values are incomparable. Define
+
+\[
+  \operatorname{supp}(\nu)=\{v\in V\mid \nu(v)\ne\bot_v\}.
+\]
+
+For fixed input \(x\), a partial valuation \(\nu\) is **\(x\)-consistent** when
 
 \[
   \nu(v)\in\{\bot_v,\operatorname{val}_x(v)\}
@@ -107,11 +116,11 @@ for every node. It is **dependency-closed** when every defined node has the
 dependencies required by its concrete result also defined:
 
 - a defined ordinary node has every operand defined;
-- a defined selection site (q) has its selector and every case root in
-  (C_q(\omega_x(q))) defined; and
+- a defined selection site \(q\) has its selector and every case root in
+  \(C_q(\omega_x(q))\) defined; and
 - an input node has no predecessor obligation.
 
-It is **(R)-complete** when every requested root is defined. Order partial
+It is **\(R\)-complete** when every requested root is defined. Order partial
 valuations pointwise by the flat-domain order.
 
 Define
@@ -124,36 +133,45 @@ Define
   \end{cases}
 \]
 
-**Least-demanded-valuation theorem.** The valuation \(\nu^*_{x,R}\) is the
-unique least (x)-consistent, dependency-closed, (R)-complete valuation, and
+**Strict-dependency least-valuation theorem.** The valuation \(\nu^*_{x,R}\)
+is the unique least \(x\)-consistent, dependency-closed, \(R\)-complete
+valuation, and
 
 \[
   \operatorname{supp}(\nu^*_{x,R})=D_G(x,R).
 \]
 
-*Proof.* The enabled closure contains (R) and is closed under exactly the
+*Proof.* The enabled closure contains \(R\) and is closed under exactly the
 dependency obligations above, so \(\nu^*_{x,R}\) is admissible. Conversely, the
-support of any admissible valuation contains (R) and is closed under every
+support of any admissible valuation contains \(R\) and is closed under every
 enabled dependency. Minimality of graph reachability gives
-\(D_G(x,R)\subseteq\operatorname{supp}(\nu)\). (x)-consistency fixes the
+\(D_G(x,R)\subseteq\operatorname{supp}(\nu)\). \(x\)-consistency fixes the
 ordinary value at every defined node, hence
 \(\nu^*_{x,R}\sqsubseteq\nu\). Antisymmetry gives uniqueness.
 
-Projecting defined selection sites from the least valuation recovers the
-selection observation:
+For an admissible valuation, define \(\pi_{\mathrm{sel}}(\nu)\) on every
+defined selection site \(q\) whose selector is defined by
+
+\[
+  \pi_{\mathrm{sel}}(\nu)(q)=\kappa_q(\nu(s_q)).
+\]
+
+Projecting the least valuation recovers the selection observation:
 
 \[
   T_G(x,R)=\pi_{\mathrm{sel}}(\nu^*_{x,R}).
 \]
 
-This theorem is a finite acyclic specialization of established fixed-input
-demand-driven dataflow semantics, not a new least-computation principle.
-Pingali and Arvind provide reverse-demand graph transformations, while Avron
-and Sasson characterize least legal demanded valuations under stability. The
-specialization above fixes a strict dependency interpretation for ordinary
-nodes and an outcome-indexed least dependency set for selections. The object
-studied by the enumeration theory is instead the image and inverse-image
-fibers of \(\pi_{\mathrm{sel}}(\nu^*_{x,R})\) as (x) varies.
+The theorem itself is a reachability result for the declared syntactic
+dependency policy. Pingali and Arvind provide reverse-demand graph
+transformations, while Avron and Sasson characterize least legal demanded
+valuations under stability. Equality with either classical semantic notion is
+conditional on a translation proving that each source operator's least demand
+is exactly the operand policy used here. In particular, this model treats an
+ordinary node as observing every operand even when its mathematical function
+is extensionally independent of one operand. The object studied by the
+enumeration theory is the image and inverse-image fibers of
+\(\pi_{\mathrm{sel}}(\nu^*_{x,R})\) as \(x\) varies.
 
 ### Determinacy and finiteness
 
@@ -210,10 +228,16 @@ nodes can violate it.
 
 ### Equivariance, not canonicity
 
-A type- and edge-preserving graph isomorphism transports observations by its
-site renaming. Ordinary value-preserving rewrites need not preserve selection
-observations. The semantics is graph-relative, not canonical modulo extensional
-or theory equivalence.
+A **semantic graph isomorphism** preserves and transports input and output
+roots, node types, ordered operand positions, ordinary primitive
+interpretations, selection classifiers, outcome names, case-demand functions,
+and result combiners. Under the corresponding transport of input valuations
+and requested roots, it transports observations by its site renaming. A merely
+type- and edge-preserving bijection is insufficient: changing a classifier can
+change every outcome while leaving that structure intact. Ordinary
+value-preserving rewrites likewise need not preserve selection observations.
+The semantics is graph-relative, not canonical modulo extensional or theory
+equivalence.
 
 ## Observation fibers
 
@@ -245,12 +269,20 @@ claim.
 
 ## Local characterization of a fiber
 
-For each site and outcome define
+For each site and outcome define the local outcome predicate
+
+\[
+\chi_{q,\omega}(d)
+\;\Longleftrightarrow\;
+\kappa_q(d)=\omega,
+\]
+
+and its eager input-level instance
 
 \[
 p_{q,\omega}(x)
 \;\Longleftrightarrow\;
-\kappa_q(\operatorname{val}_x(s_q))=\omega.
+\chi_{q,\omega}(\operatorname{val}_x(s_q)).
 \]
 
 For a feasible observation \(\tau\), define

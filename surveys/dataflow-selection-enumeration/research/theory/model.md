@@ -33,9 +33,28 @@ A selective term graph is
 G=(V,E,I,O,\lambda,Q),
 \]
 
-where \(V\) is a finite node set, \(E\) is an acyclic operand relation, \(I\)
-and \(O\) are typed input and output ports, \(\lambda\) labels nodes, and \(Q\)
-is the set of selection sites.
+where \(V\) is a finite node set; \(I,O,Q\subseteq V\) are respectively
+input nodes, output-root nodes, and selection-site nodes; \(I\cap Q=\varnothing\);
+and
+
+\[
+  N=V\setminus(I\cup Q)
+\]
+
+is the set of ordinary nodes. Thus \(I,N,Q\) are disjoint and exhaustive,
+while an output root in \(O\) may belong to any one of those categories.
+Finally, \(\lambda\)
+assigns every node its result type and semantic label. The operand relation
+
+\[
+  E\subseteq V\times\mathbb N\times V
+\]
+
+contains \((v,j,u)\) when operand position \(j\) of consumer \(v\) is supplied
+by node \(u\). Operand positions are unique within a consumer, all edges are
+type-correct, and the consumer-to-operand relation is acyclic. Input and output
+ports are therefore identified with graph nodes rather than left as a separate
+uninterpreted interface.
 
 An input node denotes one component of an input valuation
 
@@ -43,7 +62,14 @@ An input node denotes one component of an input valuation
 x\in\mathcal X_G=\prod_{i\in I}\mathcal D_i.
 \]
 
-An ordinary node \(v\) with ordered operands \(u_1,\ldots,u_k\) denotes a total
+The component output value is the typed tuple
+
+\[
+  \operatorname{val}_G(x)=
+  (\operatorname{val}_x(o))_{o\in O}.
+\]
+
+An ordinary node \(v\in N\) with ordered operands \(u_1,\ldots,u_k\) denotes a total
 function
 
 \[
@@ -59,8 +85,9 @@ particular runtime evaluation order.
 
 A selection site \(q\) contains:
 
-- a selector operand \(s_q\);
-- case-root operands \(c_{q,1},\ldots,c_{q,m_q}\);
+- a selector operand \(s_q\), represented by edge \((q,0,s_q)\);
+- case-root operands \(c_{q,1},\ldots,c_{q,m_q}\), represented by edges
+  \((q,j,c_{q,j})\) for \(1\le j\le m_q\);
 - a finite outcome set \(\Omega_q\);
 - a total classifier
   \[
@@ -70,8 +97,13 @@ A selection site \(q\) contains:
   \[
   C_q:\Omega_q\to\mathcal P(\{1,\ldots,m_q\});
   \]
-- for each outcome \(\omega\), a total result combiner over exactly the
-  demanded case values.
+- for each outcome \(\omega\), a total, typed result combiner
+  \[
+    h_{q,\omega}:
+    \prod_{j\in C_q(\omega)}\mathcal D_{c_{q,j}}
+    \longrightarrow\mathcal D_q,
+  \]
+  whose arguments occur in increasing case-position order.
 
 This separates *selector outcomes* from raw selector values. Examples:
 

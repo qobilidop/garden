@@ -36,27 +36,42 @@ terminal value.
 
 ## Exact reduction
 
-Let
+For a fixed caller constraint, totalize over the entire encoded input domain:
 
 \[
-  \overline T_G(-,R):\mathcal X_A\to
-  \prod_{q\in Q}(\Omega_q\cup\{\bot_q\})
+  \widetilde T_{G,A,R}(x)=
+  \begin{cases}
+    \mathsf{outside}_A & \neg A(x),\\
+    \overline T_G(x,R) & A(x),
+  \end{cases}
 \]
 
-be the totalized observation function. For finite encoded inputs, compile
-\(\overline T_G\) as an MTBDD or ADD. Each reachable terminal value is one
-feasible observation and its terminal preimage is exactly the observation
-fiber. If the desired artifact also contains an ordinary result, compile the
-pair
+where \(\mathsf{outside}_A\) is a fresh terminal. For finite encoded inputs,
+compile \(\widetilde T_{G,A,R}\) as an MTBDD or ADD. Each non-outside reachable
+terminal is one feasible observation and its terminal preimage is exactly the
+observation fiber. Defining the function on all encoded assignments is needed
+for the usual fixed-order canonicity claim; leaving inadmissible assignments
+as unspecified don't-cares would not determine one reduced diagram.
+
+If the desired artifact also contains a concrete ordinary result, one
+can compile the similarly totalized function
 
 \[
-  x\mapsto(\overline T_G(x,R),\operatorname{val}_x|_R),
+  x\mapsto
+  \begin{cases}
+    \mathsf{outside}_A & \neg A(x),\\
+    (\overline T_G(x,R),\operatorname{val}_x|_R) & A(x),
+  \end{cases}
 \]
 
-or use a carrier of observation/residual identifiers. Root-to-terminal cubes
-then represent guards, possibly in a shared or fragmented form.
+but this may refine one observation fiber into several concrete-value
+terminals. One symbolic residual expression per observation requires a
+separate partial-evaluation construction or a richer carrier of residual
+identifiers with a stated equality theory. Root-to-terminal cubes represent
+guards, possibly in a shared or fragmented form.
 
-This is a generic solution in the finite-domain setting. It may construct a
+The observation-only compilation is a generic solution in the finite-domain
+setting. It may construct a
 representation finer than the flat list of fibers, and extracting one formula
 per terminal can require a disjunction of many cubes. Conversely, diagram
 sharing can be exponentially more compact than serializing every guard.

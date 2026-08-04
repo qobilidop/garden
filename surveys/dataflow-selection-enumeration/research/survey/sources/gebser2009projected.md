@@ -114,7 +114,7 @@ preimage.
 
 It subsumes any novelty claim for duplicate-free projected enumeration itself,
 including polynomial-space enumeration without permanent per-output blocks.
-It does not define structural activity, distinguish active equal-valued arms,
+It does not define structural observation, distinguish observed equal-valued arms,
 derive exact observation guards from program semantics, retain residual
 program values, or establish composition across program graphs.
 

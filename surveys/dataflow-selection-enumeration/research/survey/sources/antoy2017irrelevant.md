@@ -161,7 +161,7 @@ selection identity for an explicitly intensional observation.
   nondeterminism** when comparing it with our semantics.
 - Use **semantically irrelevant nondeterminism** for their extensional equality
   of complete results. Do not use it for an unobserved selection site.
-- Use **active equal-valued selections** for our intentionally distinct
+- Use **observed equal-valued selections** for our intentionally distinct
   graph-site outcomes. Their transformation collapses precisely this kind of
   distinction when it has no effect on complete values.
 - Use **relevant NDD operation** only for their static call-dependency analysis;

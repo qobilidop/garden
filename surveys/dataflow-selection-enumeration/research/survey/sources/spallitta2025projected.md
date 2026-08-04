@@ -79,7 +79,7 @@ unobserved values. This yields the same set of total observation tuples as the
 fibers of a deterministic selection-observation function.
 
 Shrinking those tuples further is not automatically valid for our semantics:
-an active equal-valued selection is still observed, even when dropping its
+an observed equal-valued selection is still recorded, even when dropping its
 literal would preserve the output formula. Logical don't-care and structural
 inactivity are different omission criteria.
 
@@ -105,4 +105,4 @@ this reduction, not merely reimplement projected AllSMT.
 - The paper reports partial covers, whereas our observation map first induces
   exact total tuples over the finite `inactive-or-outcome` domains.
 - Any claim that our omission is semantically different must be accompanied by
-  an observer that can distinguish active equal-valued selections.
+  an observer that can distinguish observed equal-valued selections.

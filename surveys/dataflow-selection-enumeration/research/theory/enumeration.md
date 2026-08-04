@@ -10,7 +10,8 @@ result.
 
 ## Concolic fiber generation
 
-Given a model input \(m\), generate its observation and guard without first
+Given a model input \(m\in\mathcal X_A\), obtained from a solver query whose
+formula implies \(A\), generate its observation and guard without first
 guessing an abstract observation. Maintain
 
 \[
@@ -30,7 +31,7 @@ Evaluation of a demanded node returns \((c_v,e_v)\):
    - first evaluates its selector, including any selections in that cone;
    - computes \(\omega=\kappa_q(c_s)\);
    - records \(T(q)=\omega\) once;
-   - conjoins the symbolic predicate \(p_{q,\omega}(e_s)\);
+   - conjoins the local symbolic predicate \(\chi_{q,\omega}(e_s)\);
    - evaluates exactly the case roots in \(C_q(\omega)\); and
    - constructs the selected symbolic result combiner.
 
@@ -69,12 +70,26 @@ x\models A\land g_m
 =\operatorname{val}_x|_R.
 \]
 
-*Proof sketch.* Induct over the demanded evaluation. The lockstep invariant is
-that \(e_v(m)=c_v\), \(m\) satisfies the accumulated guard, and the residual
-agrees with the eager node value for every input satisfying the guard. At a
-selection, the new outcome predicate holds for \(m\). Inputs satisfying all
-recorded predicates induce the same enabled closure by the exact-local-guard
-theorem. The selected combiner then preserves residual correctness.
+*Proof sketch.* Induct over the demanded evaluation with a prefix guard
+\(g^{\mathrm{pre}}\). The strengthened invariant is that \(e_v(m)=c_v\) and,
+for every \(x\models A\land g^{\mathrm{pre}}\), the residual already built for
+\(v\) equals \(\operatorname{val}_x(v)\). At a selection, the selector
+residual \(e_s\) may contain inner selections specialized to \(m\), but the
+induction hypothesis gives
+
+\[
+  x\models A\land g^{\mathrm{pre}}
+  \Longrightarrow
+  \llbracket e_s\rrbracket_x=\operatorname{val}_x(s_q).
+\]
+
+Consequently, under the prefix guard,
+\(\chi_{q,\omega}(e_s)\) is equivalent to the global predicate
+\(p_{q,\omega}(x)\). Adding it preserves the invariant for the selected
+combiner. The final generated guard is therefore equivalent to the positive
+conjunction in the exact-local-guard theorem, which proves fiber exactness and
+residual correctness. The predicate also holds for \(m\), so the invariant is
+not vacuous.
 
 The generator's model \(m\) is already a witness for its complete guard.
 
@@ -124,19 +139,31 @@ literal-minimal.
 
 ## Reachability-variable projected-AllSMT baseline
 
-For every node \(v\), construct a symbolic value term \(e_v(x)\). Construct a
-reachability formula \(a_v(x,R)\) by propagating observation backward from
-\(R\). Such indicators are also called *activation variables* in related
-encodings:
+For every node \(v\), construct its eager symbolic value term \(e_v(x)\). For
+each case position define a direct membership predicate
 
-- \(a_v\) holds for roots in \(R\);
-- if \(a_v\) holds for an ordinary node, it holds for every operand;
-- if \(a_q\) holds for a selection site, it holds for the selector;
-- it holds for case \(j\) under
-  \[
-  j\in C_q(\kappa_q(e_{s_q}(x)));
-  \]
-- multiple consumers contribute by disjunction.
+\[
+  \eta_{q,j}(d)\Longleftrightarrow
+  j\in C_q(\kappa_q(d)).
+\]
+
+Define every reachability indicator by the exact backward equation
+
+\[
+\begin{split}
+a_v \leftrightarrow{}& [v\in R]\\
+&\lor\!\!\bigvee_{u\in N:\,(u,j,v)\in E} a_u\\
+&\lor\!\!\bigvee_{q:\,v=s_q} a_q\\
+&\lor\!\!\bigvee_{q,j:\,v=c_{q,j}}
+  \left(a_q\land\eta_{q,j}(e_{s_q})\right).
+\end{split}
+\]
+
+Thus multiple consumers contribute by disjunction, while the biconditional
+forbids disconnected or otherwise unreachable nodes from being assigned
+spurious activity. Acyclicity makes the equations a unique definitional
+circuit. The direct \(\eta\) circuit should be used for succinct outcome
+languages; extensionally disjoining every outcome can be exponentially larger.
 
 For every selection site introduce a finite-domain observation variable
 
@@ -160,9 +187,9 @@ For each feasible \(\tau\), let \(\overline\tau\) be its totalization. Then,
 under the graph definitions,
 
 \[
-Z=\overline\tau
+A(x)\land Z=\overline\tau
 \quad\Longleftrightarrow\quad
-g_\tau(x).
+A(x)\land g_\tau(x).
 \]
 
 Consequently full-fiber blocking and naive projected AllSMT over complete
@@ -176,10 +203,12 @@ represent several complete observations.
 
 Full-fiber generation avoids symbolically constructing unobserved cones for one
 observation, directly returns input guards and residuals, and can keep each
-observation sparse. The reachability/outcome encoding constructs one global graph of
-weighted size linear in the source graph, shares it across all observations,
-and can use mature disjoint-enumeration algorithms that avoid ordinary
-blocking-clause accumulation.
+observation sparse. The reachability/outcome encoding constructs one global
+graph of size linear in the weighted source DAG plus the supplied classifier,
+outcome, and direct case-membership circuits. It shares that encoding across
+all observations and can use mature disjoint-enumeration algorithms that avoid
+ordinary blocking-clause accumulation. No succinctness claim is made when
+those circuits are given only as extensional outcome tables.
 
 These are representation and implementation tradeoffs. No general asymptotic
 advantage follows from the current theory.

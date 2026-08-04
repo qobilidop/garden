@@ -14,6 +14,7 @@ presented as inherited terms of art.
 | Formula denoting a region | path condition, activation condition, guard | observation guard | selected (local) | It is not necessarily a CFG path condition. |
 | Symbolic result valid in a region | symbolic store, value summary, residual | guarded residual value | selected | MultiSE already uses *value summary* for disjoint guarded expressions. |
 | Exhaustive disjoint output | partition, cover, disjoint enumeration | exact observation partition | selected (local) | “Complete” must name caller domain, graph, observation policy, and solver assumptions. |
+| Overall computational task | symbolic evaluation, path enumeration, configuration enumeration, projected model enumeration | exact enumeration of selection observations | selected (local description) | “Symbolic evaluation” alone does not imply enumeration and may mean one monolithic SMT encoding. “Exact enumeration” names the externally visible task. |
 | Relevance policy | demand, activity, liveness, cone of influence | enabled closure; result observation | selected (local) | “Demand” remains useful when discussing prior work, but the formal object is enabled-edge reachability. |
 | Stable representation | canonical, normalized, deterministic | graph-relative unique | selected | *Canonical* is reserved for a stated equivalence and representation conditions. |
 

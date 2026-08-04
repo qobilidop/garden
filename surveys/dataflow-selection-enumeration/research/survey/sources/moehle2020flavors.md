@@ -109,7 +109,7 @@ is not part of the record's semantic identity.
 It subsumes the claim that `forall X exists Y` projected entailment is a new
 semantic basis for partial projected model cubes, and it supplies an important
 blocking-free enumeration baseline. It does not define demanded graph sites,
-structural inactivity, active equal-arm choices, exact guards for fixed
+structural non-observation, observed equal-arm choices, exact guards for fixed
 observations, residual program values, or modular composition.
 
 ## Evidence locations

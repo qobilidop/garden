@@ -98,7 +98,7 @@ quality and observation semantics must be evaluated separately.
 It subsumes broad claims of first using graph structure for short exhaustive
 circuit enumeration, first contrasting native graph enumeration with CNF, or
 first supporting both disjoint and non-disjoint circuit covers. It does not
-define enabled selector sites, retain active equal-valued alternatives, emit
+define enabled selector sites, retain observed equal-valued alternatives, emit
 residual data values, or partition inputs by a graph-intensional observation.
 The later partial-model and entailment literature provides stronger general
 semantics, so this is high-value deep-read support rather than a new critical

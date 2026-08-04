@@ -1,0 +1,19 @@
+rank	source_id	year	doi	title	venue	type
+1	3f579d32bd64c93a9b291b6b26ed1d80cea2a776	2025	10.1007/s12532-024-00266-8	On the B-differential of the componentwise minimum of two affine vector functions	Mathematical Programming Computation	JournalArticle
+2	068677c3bb614cd56b926acfef0d5b8be09d774c	2024	10.1007/s42973-024-00165-6	Bandit algorithms for policy learning: methods, implementation, and welfare-performance	Japanese Economic Review	JournalArticle
+3	225678a84d504e98de8c811da0b3c22a1386e098	2024	10.34727/2024/isbn.978-3-85448-065-5_15	Formally Verifying Deep Reinforcement Learning Controllers with Lyapunov Barrier Certificates	Formal Methods in Computer-Aided Design	JournalArticle
+4	b6ef788f1b46bfe91f7f2a5c8c358f61206a4634	2024	10.1007/s10107-024-02079-y	A normal fan projection algorithm for low-rank optimization	Mathematical programming	JournalArticle
+5	9732dc41720775936699467cf66104733221b47c	2024	10.1016/j.ress.2024.110082	An extended moment-based trajectory accuracy reliability analysis method of robot manipulators with random and interval uncertainties	Reliability Engineering & System Safety	JournalArticle
+6	1b4773a491e819f267458948f74a2d2d64c9ee5d	2024	10.48550/arXiv.2403.00860	Parallel Algorithms for Exact Enumeration of Deep Neural Network Activation Regions	arXiv.org	JournalArticle
+7	6049aab10a1a94e0c0195b99f87b92ba9b590133	2024	10.1109/TAC.2023.3270219	Stability Analysis and Controller Synthesis Using Single-Hidden-Layer ReLU Neural Networks	IEEE Transactions on Automatic Control	JournalArticle
+8	cd4fa1ce0550cb600e992afbba2adf447ddf1cc9	2023	10.1109/TIT.2025.3545564	The Convex Landscape of Neural Networks: Characterizing Global Optima and Stationary Points via Lasso Models	IEEE Transactions on Information Theory	JournalArticle
+9	dd16d887a00f80d6455e9d1d5e721ea052b4b6c0	2022	10.1016/j.seps.2022.101497	DEA efficiency in agriculture: Measurement unit issues	Socio-Economic Planning Sciences	
+10	de876fa8ad19637db2efe0cc4c20e946124d51a3	2022	10.48550/arXiv.2211.08404	Non-Linear Coordination Graphs	Neural Information Processing Systems	JournalArticle
+11	ed93c274aacc06bd36c7a78fe976d879bee22c7e	2022	10.52202/079017-2313	Accelerating ERM for data-driven algorithm design using output-sensitive techniques	Neural Information Processing Systems	JournalArticle
+12	cf111e3c53532be7d58c92e7744861739e41e170	2021	10.1109/CDC45484.2021.9682987	Distributed Computation of a Robust Estimator Based on Cauchy Noises	IEEE Conference on Decision and Control	JournalArticle,Conference
+13	e5dd1cd74325e42d59328677756f940f194dbae1	2021	10.1016/j.jeconom.2022.04.011	Partial identification in nonseparable binary response models with endogenous regressors	Journal of Econometrics	
+14	3dd86295132ab132f9448123c0b89a65ef32d43e	2019	10.1080/02331934.2020.1812604	A class of optimization problems motivated by rank estimators in robust regression	Optimization	
+15	b011d0b8605bbbf60e68bb250b8ef58c74f6a20f	2019	10.1920/WP.CEM.2020.2220	Finite Sample Inference for the Maximum Score Estimand	The Review of Economic Studies	JournalArticle
+16	5c44b99ca1cb55ba1b4bc270a8416f56092ceec8	2018	10.1080/01621459.2020.1802284	Nonparametric Maximum Likelihood Methods for Binary Response Models With Random Coefficients	Journal of the American Statistical Association	
+17	c0762b60696be3f973361f77010f9d09c4655ed6	2018	10.1063/1.5044127	Data envelopment analysis: Ranking units using data depth measures		
+18	687321ddd5278a8e62989d5b66bd8f5333d5b631			ISF and BDIFFMIN - Matlab functions for the hyperplane arrangement and the computation of the B-differential of the componentwise minimum of two affine vector functions		

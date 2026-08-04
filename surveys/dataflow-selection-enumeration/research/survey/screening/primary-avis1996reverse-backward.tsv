@@ -1,0 +1,24 @@
+rank	source_id	year	doi	title	venue	type
+1	citation-1	-	-	Data Structures and Algorithms	-	book
+2	citation-2	-	-	A C Implementation of the Reverse Search Vertex Enumeration Algorithm	-	article
+3	citation-3	-	-	Notes on Bland's Pivoting Rule	-	article
+4	citation-4	-	-	A Basis Enumeration Algorithm for Linear Systems with Geometric Applications	-	article
+5	citation-5	-	-	A Pivoting Algorithm for Convex Hulls and Vertex Enumeration of Arrangements and Polyhedra	-	article
+6	citation-6	-	-	Partition of Space	-	article
+7	citation-7	-	-	Algorithms in Combinatorial Geometry	-	book
+8	citation-8	-	-	A Note on Delaunay Diagonal Flips	-	article
+9	citation-9	-	-	Submodular Functions and Optimization	-	book
+10	citation-10	-	-	Mathematica Package: Vertex Enumeration for Convex Polyhedra and Hyperplane Arrangements	-	software
+11	citation-11	-	-	Combinatorial Face Enumeration in Arrangements and Oriented Matroids	-	article
+12	citation-12	-	-	Bounding the Number of k-Faces in Arrangements of Hyperplanes	-	article
+13	citation-13	-	-	Primitives for the Manipulation of General Subdivisions and the Computation of Voronoi Diagrams	-	article
+14	citation-14	-	-	A Structured Program to Generate All Topological Sorting Arrangements	-	article
+15	citation-15	-	-	Algorithms for Finding All the Spanning Trees in Undirected Graphs	-	article
+16	citation-16	-	-	Combinatorial Optimization	-	book
+17	citation-17	-	-	Generating Linear Extensions Fast	-	article
+18	citation-18	-	-	Bounds on Backtrack Algorithms for Listing Cycles, Paths, and Spanning Trees	-	article
+19	citation-19	-	-	Theory of Linear and Integer Programming	-	book
+20	citation-20	-	-	Efficiently Scanning All Spanning Trees of an Undirected Graph	-	article
+21	citation-21	-	-	Static and Dynamic Weighted Delaunay Triangulations in the Euclidean Plane and in the Flat Torus	-	article
+22	citation-22	-	-	Matroid Theory	-	book
+23	citation-23	-	-	On the Priority Approach to Hidden Surface Algorithms	-	article

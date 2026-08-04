@@ -75,25 +75,41 @@ guard; reachable leaf guards are pairwise disjoint and exhaustive; and the
 leaf can store a result or residual. Tests in untaken subtrees are absent from
 the record. Thus the sparse input-relative output shape itself is classical.
 
-For the exact graph observer, compile the finite function
+When the whole input domain has a finite Boolean encoding, first assign a
+fresh \(\mathsf{outside}_A\) terminal to inputs that violate \(A\), and compile
+the finite-range observer function
 
 \[
-  x\mapsto\overline T_G(x,R)
+  x\mapsto
+  \begin{cases}
+    \mathsf{outside}_A & \neg A(x),\\
+    \overline T_G(x,R) & A(x).
+  \end{cases}
 \]
 
-as an MTBDD or ADD. Every terminal value is a feasible totalized observation,
-and its preimage is exactly the corresponding fiber. Compiling
-\((\overline T_G(x,R),\operatorname{val}_x|_R)\) also attaches ordinary
-results. Bryant's reduction shares equal residual Boolean functions; ADDs
-permit a finite non-Boolean terminal carrier. Neither framework needs a new
-semantic theorem once the observer is encoded as an ordinary function.
+as an MTBDD or ADD. Every reachable non-outside observation terminal denotes a feasible
+totalized observation, and its preimage is exactly the corresponding fiber.
+This classical reduction does not apply unchanged to an infinite input domain;
+theory-predicate decision structures may represent such functions, but they do
+not inherit Bryant/Bahar canonicity without additional assumptions.
+
+Compiling the concrete pair
+\((\overline T_G(x,R),\operatorname{val}_x|_R)\) does **not** by itself attach
+one symbolic residual to each observation fiber. For example, a selection-free
+identity graph has one observation fiber but a concrete result for every
+input. A pair-valued ADD refines that fiber into concrete result terminals.
+Residual expressions require separate partial evaluation or a richer
+residual-labeled decision structure with a stated equality/reduction theory.
+Bryant's reduction shares equal Boolean residual functions, and ADDs permit a
+finite non-Boolean terminal carrier; neither fact supplies symbolic residual
+generation for free.
 
 This reduction does not erase the conceptual distinction between skipped
 diagram variables and unobserved graph sites. The former are absent because
 the compiled terminal function is extensionally independent of them in a
 residual context; the latter are assigned an explicit unobserved sentinel by
 the graph observer. But after totalization that distinction is data inside an
-ordinary finite function, not a representability barrier.
+ordinary finite-range observer function, not a representability barrier.
 
 What remains untransferred is a graph-structural construction that avoids
 generic input-variable compilation, the conjunction-only local fiber theorem,
@@ -109,8 +125,9 @@ Pingali and Arvind already transform stream dataflow graphs with reverse
 demand edges and prove correctness, liveness, and parsimony under composition.
 Avron and Sasson define the least legal output-complete valuation for fixed
 inputs and output-position demands and characterize its uniform existence by
-stability. Consequently the fixed-input enabled computation is not a new
-semantic target.
+stability. Thus fixed-input least-demand computation is established, but
+identifying our syntactic enabled closure with that semantic object requires a
+translation proof.
 
 For the finite acyclic one-cell-stream specialization, define
 \(\kappa_{G,R}(x)\) as that least legal valuation. The intended bridge is
@@ -121,8 +138,9 @@ For the finite acyclic one-cell-stream specialization, define
 
 The support of \(\kappa_{G,R}(x)\) should coincide with the enabled closure,
 but this is a specialization proof obligation rather than a cited theorem.
-The only surviving change is the outer quantification: range over symbolic
-inputs, enumerate the image of the projection, and construct its exact
+Conditional on that bridge, the remaining change is the outer quantification:
+range over symbolic inputs, enumerate the image of the projection, and
+construct its exact
 inverse-image fibers. No inherited dataflow theorem supplies that enumeration,
 but it prevents any claim to novelty for demand, backwards propagation,
 critical inputs, or the least demanded computation.
@@ -180,7 +198,7 @@ For symbolic inputs, each task must also carry its accumulated
 `assume` constraints. Free-variable generators or narrowing choices used to
 construct inputs introduce additional fingerprint coordinates. Project those
 input-generation coordinates away. The remaining feasible guarded-choice
-coordinates decode to (T_G(x,R)).
+coordinates decode to \(T_G(x,R)\).
 
 ### What transfers
 
@@ -352,8 +370,15 @@ quotient, not a new enumeration object.
 ### Exact global encoding
 
 Build a shared, let-bound formula rather than recursively expanding the DAG.
-For every node, encode its total value \(e_v\). Define observation reachability by the unique
-backward equations
+For every node, encode its total value \(e_v\), and define the direct
+case-membership predicate
+
+\[
+  \eta_{q,j}(d)\Longleftrightarrow
+  j\in C_q(\kappa_q(d)).
+\]
+
+Define observation reachability by the unique backward equations
 
 \[
 a_v \leftrightarrow
@@ -361,13 +386,14 @@ a_v \leftrightarrow
   \lor \bigvee_{u\text{ ordinary},\ v\in\operatorname{ops}(u)} a_u
   \lor \bigvee_{q:\,v=s_q}a_q
   \lor \bigvee_{q,j:\,v=c_{q,j}}
-       \left(a_q\land
-       \bigvee_{\omega:\,j\in C_q(\omega)}p_{q,\omega}\right).
+       \left(a_q\land\eta_{q,j}(e_{s_q})\right).
 \]
 
 Acyclicity makes these equations a definitional circuit; multiple consumers
-contribute by disjunction. Introduce one finite-domain projected variable per
-site:
+contribute by disjunction. Using \(\eta\) directly avoids extensionally
+listing exponentially many mask outcomes when case membership has a succinct
+circuit. Its representation cost must be charged explicitly. Introduce one
+finite-domain projected variable per site:
 
 \[
 z_q=
@@ -379,7 +405,7 @@ z_q=
 
 Let \(\Phi_G(A,R)\) be \(A\) conjoined with the value, reachability, outcome, and
 observation equations. For each input, all internal values, activities, and
-(Z=(z_q)_q) are unique, and
+\(Z=(z_q)_q\) are unique, and
 
 \[
 Z(x)=\overline T_G(x,R).
@@ -489,20 +515,30 @@ the observer encoding, not a new exploration principle.
 
 ### Exact local instrumentation
 
-Use a reader of concrete inputs and an idempotent writer whose log is a finite
-site-outcome map. Evaluation from (R) is defined as follows:
+Use a reader of concrete inputs and the total idempotent writer monoid of
+finite event sets
+
+\[
+  \mathcal W=\mathcal P_{\mathrm{fin}}
+  \left(\coprod_{q\in Q}\{q\}\times\Omega_q\right)
+\]
+
+under ordinary set union. Evaluation from \(R\) is defined as follows:
 
 - an input returns its value and the empty log;
 - an ordinary node evaluates all operands, applies the primitive, and unions
-  their compatible logs;
-- a selection evaluates its selector, computes (\omega), emits
-  (q\mapsto\omega), evaluates exactly the cases in (C_q(\omega)), and
+  their event sets;
+- a selection evaluates its selector, computes \(\omega\), emits
+  \((q,\omega)\), evaluates exactly the cases in \(C_q(\omega)\), and
   applies the corresponding combiner; and
 - a memo table keyed by graph-node identity reuses both value and log.
 
-Map union is idempotent for a shared occurrence and compatible because one
-input gives each site one outcome. The resulting log is (T_G(x,R)). Erasing
-it returns the ordinary selected value. This is a standard selective
+For every fixed input, determinism proves the **functional-consistency
+invariant** that the event set contains at most one pair with first component
+\(q\). Decode a conflict-free event set to a partial map; the result is
+\(T_G(x,R)\). This avoids calling compatible partial-map union a writer monoid:
+that operation is partial on arbitrary maps. Erasing the log returns the
+ordinary selected value. This is a standard selective
 computation interpreted in a reader/writer target; the free selective
 construction and its generic interpretation already provide the broad
 compositional story.
@@ -631,7 +667,7 @@ its own proof.
 | Full abstraction for ordinary value contexts | false | Equal-valued observed alternatives are distinguished by the observation. |
 | Full abstraction for a context that can read ghost events | elementary / by construction | The observer primitive makes the result tautological. |
 | Exponential saving over total syntactic assignments | inherited phenomenon | Partial models, output-directed execution, and decision diagrams already exhibit it. |
-| Exact all-sites-observed affine-region enumeration | inherited | Hyperplane-cell enumeration already proves complete duplicate-free OutputP streaming; neural work enumerates feasible activation guards and affine residuals. |
+| Exact all-sites-observed strict affine open-cell enumeration | inherited | On the full real domain with boundary points excluded, hyperplane-cell enumeration already proves complete duplicate-free OutputP streaming; neural work enumerates feasible full-dimensional activation guards and affine residuals. Non-strict or boundary-inclusive fibers need separate treatment. |
 | (O(\sum_\tau S_\tau)) construction under DAG sharing | elementary bookkeeping | It excludes solver time and serialized expansion. |
 | NP/#P/coNP hardness statements | inherited reductions | Standard circuit/SAT encodings; useful boundaries, not a distinctive algorithmic result. |
 

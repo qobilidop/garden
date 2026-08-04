@@ -1,0 +1,17 @@
+rank	source_id	year	doi	title	venue	type
+1	f181fd2b4d46367c05c23b3b88e446beaa947faf	2026		Expressivity Saturation: Reduced Affine Region Usage Under Increasing Task Complexity		
+2	71dcee19d848315b502958c67c547771d453e217	2026		Characterizing the Discrete Geometry of ReLU Networks		
+3	49341b291707219131de2ca700b7111aaaed1f5d	2026	10.48550/arXiv.2605.06218	AffineLens: Capturing the Continuous Piecewise Affine Functions of Neural Networks	arXiv.org	JournalArticle
+4	777a2c60073e11aaba466d8359b563227b68868f	2026	10.48550/arXiv.2605.06300	Region Seeding via Pre-Activation Regularization: A Geometric View of Piecewise Affine Neural Networks	arXiv.org	JournalArticle
+5	57862a9163e1c43a32e49859c7d4e22a2632953a	2026	10.48550/arXiv.2605.04946	Training-Time Batch Normalization Reshapes Local Partition Geometry in Piecewise-Affine Networks	arXiv.org	JournalArticle
+6	a3f34c8de665f270c1712a1785dcf2b770a8a94d	2026	10.1007/s10994-025-06957-0	Mechanistic Interpretability of ReLU Neural Networks Through Piecewise-Affine Mapping	Machine-mediated learning	JournalArticle
+7	882a41581dc7d33365116dbd57baa3b61f9dff28	2025		TetraSDF: Analytic Isosurface Extraction with Multi-resolution Tetrahedral Grid		
+8	6587b2e06b3dfba9613b4e7d1f0db7f81eaf1a85	2025	10.48550/arXiv.2510.12700	Topological Signatures of ReLU Neural Network Activation Patterns	arXiv.org	JournalArticle
+9	0d3b20ee0e2a85050b5a43692d1fec557e529bb7	2025	10.1145/3763328	Marching Neurons: Accurate Surface Extraction for Neural Implicit Shapes	ACM Transactions on Graphics	JournalArticle
+10	1005e071d7a9c22cd01a2ad3fe28804ddc55d8f7	2025	10.48550/arXiv.2503.01702	Relating Piecewise Linear Kolmogorov Arnold Networks to ReLU Networks	International Conference on Artificial Intelligence and Statistics	JournalArticle
+11	fb81a49219ff68d3d1d240ba14e344e26678f2cb	2025	10.48550/arXiv.2502.11672	Exact Upper and Lower Bounds for the Output Distribution of Neural Networks with Random Inputs	International Conference on Machine Learning	JournalArticle,Conference
+12	6e635b020b60209d7a301efaa114395e84b504a5	2025	10.1007/s10851-025-01253-x	Convexity in ReLU Neural Networks: Beyond ICNNs?	Journal of Mathematical Imaging and Vision	JournalArticle
+13	35be28eec7028bddea47a57f355233b2e51f718c	2024	10.1109/IJCNN60899.2024.10650882	SkelEx and BoundEx - Geometrical Framework for Interpretable ReLU Neural Networks	IEEE International Joint Conference on Neural Network	JournalArticle,Conference
+14	e9549441876ea21c25b934ed032024b87baddcdf	2024	10.48550/arXiv.2402.10403	Polyhedral Complex Derivation from Piecewise Trilinear Networks	Neural Information Processing Systems	JournalArticle
+15	d4705141c495b272e19761d5379631fcdcc729a0	2024	10.48550/arXiv.2402.02407	Defining Neural Network Architecture through Polytope Structures of Dataset	International Conference on Machine Learning	JournalArticle,Conference
+16	d75c06fcdc54b39b5ada64a9b070d66181029bf9	2026	10.2139/ssrn.6347978	Representing Higher-Order Networks: A Survey of Graph-Based Frameworks	Social Science Research Network	JournalArticle,Review
