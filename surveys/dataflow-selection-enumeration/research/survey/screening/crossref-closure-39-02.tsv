@@ -1,0 +1,101 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1109/fdl.2017.8303894	2017	10.1109/fdl.2017.8303894	Symbolic simulation of dataflow synchronous programs with timers	2017 Forum on Specification and Design Languages (FDL)	proceedings-article
+2	10.1016/s1571-0661(05)80436-0	2002	10.1016/s1571-0661(05)80436-0	Symbolic simulation of synchronous programs	Electronic Notes in Theoretical Computer Science	journal-article
+3	10.1007/978-3-030-02215-0_3	2019	10.1007/978-3-030-02215-0_3	Symbolic Simulation of Dataflow Synchronous Programs with Timers	Lecture Notes in Electrical Engineering	book-chapter
+4	10.1007/978-3-642-76465-3_9	1991	10.1007/978-3-642-76465-3_9	Symbolic Simulation of Sensory Robot Programs	Expert Systems and Robotics	book-chapter
+5	10.1109/date.2003.1253608	None	10.1109/date.2003.1253608	Exact high level WCET analysis of synchronous programs by symbolic state space exploration	2003 Design, Automation and Test in Europe Conference and Exhibition	proceedings-article
+6	10.1109/date.2003.1186386	None	10.1109/date.2003.1186386	Exact high level WCET analysis of synchronous programs by symbolic state space exploration	2003 Design, Automation and Test in Europe Conference and Exhibition	proceedings-article
+7	10.1109/dac.1999.781347	None	10.1109/dac.1999.781347	Cycle-based symbolic simulation of gate-level synchronous circuits	Proceedings 1999 Design Automation Conference (Cat. No. 99CH36361)	proceedings-article
+8	10.1002/9781118737491.ch8	2016	10.1002/9781118737491.ch8	Synchronous Machine Dynamics	Power System Transient Analysis	other
+9	10.1145/1755952.1755960	2010	10.1145/1755952.1755960	From synchronous programs to symbolic representations of hybrid systems	Proceedings of the 13th ACM international conference on Hybrid systems: computation and control	proceedings-article
+10	10.1007/0-387-29906-8_3	None	10.1007/0-387-29906-8_3	Symbolic Simulation	Scalable Hardware Verification with Symbolic Simulation	book-chapter
+11	10.1145/309847.309966	1999	10.1145/309847.309966	Cycle-based symbolic simulation of gate-level synchronous circuits	Proceedings of the 36th annual ACM/IEEE Design Automation Conference	proceedings-article
+12	10.1109/mosicom59118.2023.10458759	2023	10.1109/mosicom59118.2023.10458759	Multirate VBR Model of Synchronous Machines for EMTP-Type Simulation Programs	2023 International Conference on Modeling, Simulation &amp;amp; Intelligent Computing (MoSICom)	proceedings-article
+13	10.1007/0-387-97226-9_21	1990	10.1007/0-387-97226-9_21	Verification of synchronous circuits by symbolic logic simulation	Lecture Notes in Computer Science	book-chapter
+14	10.1016/s1474-6670(17)58446-3	1996	10.1016/s1474-6670(17)58446-3	Symbolic Simulation Based Techniques for Debugging Discrete Control Programs	IFAC Proceedings Volumes	journal-article
+15	10.1109/isqed.2006.61	None	10.1109/isqed.2006.61	Equivalence Checking of C Programs by Locally Performing Symbolic Simulation on Dependence Graphs	7th International Symposium on Quality Electronic Design (ISQED'06)	proceedings-article
+16	10.1109/ispass.2000.842281	None	10.1109/ispass.2000.842281	Checking order-insensitivity using ternary simulation in synchronous programs	2000 IEEE International Symposium on Performance Analysis of Systems and Software. ISPASS (Cat. No.00EX422)	proceedings-article
+17	10.1006/jsco.1994.1041	1994	10.1006/jsco.1994.1041	Transformation of Logic Programs to FP Programs Based on Dataflows	Journal of Symbolic Computation	journal-article
+18	10.1007/978-1-4757-2231-4_8	1993	10.1007/978-1-4757-2231-4_8	Circuit generation from synchronous programs	Synchronous Programming of Reactive Systems	book-chapter
+19	10.1109/9780470544600.ch22	2009	10.1109/9780470544600.ch22	Evolving Programs using Symbolic Expressions	Evolutionary Computation	book-chapter
+20	10.5220/0006913003470354	2018	10.5220/0006913003470354	A Symbolic Model Checker for Database Programs	Proceedings of the 13th International Conference on Software Technologies	proceedings-article
+21	10.5220/0006913003810388	2018	10.5220/0006913003810388	A Symbolic Model Checker for Database Programs	Proceedings of the 13th International Conference on Software Technologies	proceedings-article
+22	10.1007/978-3-319-73909-0_3	2018	10.1007/978-3-319-73909-0_3	Symbolic Parallelization	Symbolic Parallelization of Nested Loop Programs	book-chapter
+23	10.1007/0-387-29906-8_5	None	10.1007/0-387-29906-8_5	Approximate Simulation	Scalable Hardware Verification with Symbolic Simulation	book-chapter
+24	10.1142/9789814533584_0037	1994	10.1142/9789814533584_0037	A Semi-Automatic Approach for Parallelizing Symbolic Processing Programs	Parallel Symbolic Computation PASCO '94	proceedings-article
+25	10.1007/3-540-36614-8_2	2003	10.1007/3-540-36614-8_2	Symbolic Analysis of Programs	Lecture Notes in Computer Science	book-chapter
+26	10.1145/3310373	None	10.1145/3310373	"Replication Package for Article: ""Pretend Synchrony: Synchronous Verification of Asynchronous Distributed Programs"""		component
+27	10.1007/978-3-319-73909-0_4	2018	10.1007/978-3-319-73909-0_4	Symbolic Multi-Level Parallelization	Symbolic Parallelization of Nested Loop Programs	book-chapter
+28	10.1201/b12211-11	2017	10.1201/b12211-11	Computer Simulation of Synchronous Machines	Analysis of Synchronous Machines	book-chapter
+29	10.1016/s0747-7171(89)80040-9	1989	10.1016/s0747-7171(89)80040-9	Deductive synthesis of sorting programs	Journal of Symbolic Computation	journal-article
+30	10.1006/jsco.1996.0034	1996	10.1006/jsco.1996.0034	A Semi-Automatic Multiple-Strategy Approach To Mapping Tree-Structured Symbolic Processing Programs	Journal of Symbolic Computation	journal-article
+31	10.1007/978-3-658-12680-3_6	2016	10.1007/978-3-658-12680-3_6	Heuristic Symbolic Subsumption	Complete Symbolic Simulation of SystemC Models	book-chapter
+32	10.1006/jsco.1993.1039	1993	10.1006/jsco.1993.1039	An Axiomatic Approach to Robust Geometric Programs	Journal of Symbolic Computation	journal-article
+33	10.1201/b12211-12	2012	10.1201/b12211-12	Computer Simulation of Synchronous Machines	Analysis of Synchronous Machines, Second Edition	book-chapter
+34	10.1016/s0747-7171(86)80029-3	1986	10.1016/s0747-7171(86)80029-3	FINGER: A Symbolic System for Automatic Generation of Numerical Programs in Finite Element Analysis	Journal of Symbolic Computation	journal-article
+35	10.1016/j.jsc.2017.05.005	2018	10.1016/j.jsc.2017.05.005	Sparse resultants and straight-line programs	Journal of Symbolic Computation	journal-article
+36	10.1006/jsco.1994.1020	1994	10.1006/jsco.1994.1020	Complexity, Algorithms, Programs, Systems: The Shifting Focus	Journal of Symbolic Computation	journal-article
+37	10.1016/j.jsc.2017.07.009	2018	10.1016/j.jsc.2017.07.009	Solving rank-constrained semidefinite programs in exact arithmetic	Journal of Symbolic Computation	journal-article
+38	10.1007/0-387-29906-8	2006	10.1007/0-387-29906-8	Scalable Hardware Verification with Symbolic Simulation		book
+39	10.21236/ada460390	2007	10.21236/ada460390	Exploiting Symbolic Techniques in Automated Synthesis of Distributed Programs		report
+40	10.1016/j.jsc.2010.06.006	2010	10.1016/j.jsc.2010.06.006	Termination of linear programs with nonlinear constraints	Journal of Symbolic Computation	journal-article
+41	10.1007/bf01806061	1991	10.1007/bf01806061	Compiling lisp programs for parallel execution	Lisp and Symbolic Computation	journal-article
+42	10.1007/0-387-29906-8_7	None	10.1007/0-387-29906-8_7	Conclusion	Scalable Hardware Verification with Symbolic Simulation	book-chapter
+43	10.1016/s0747-7171(08)80139-3	1991	10.1016/s0747-7171(08)80139-3	Extraction of redundancy-free programs from constructive natural deduction proofs	Journal of Symbolic Computation	journal-article
+44	10.31274/td-20260804-208	None	10.31274/td-20260804-208	Symbolic execution for probabilistic programs: path probabilities testing and verification in prism model checker		dissertation
+45	10.21236/ada538843	2009	10.21236/ada538843	Loop-Extended Symbolic Execution on Binary Programs		report
+46	10.1023/a:1025824903683	2003	10.1023/a:1025824903683	Path Dependent Analysis of Logic Programs	Higher-Order and Symbolic Computation	journal-article
+47	10.1007/0-387-29906-8_1	None	10.1007/0-387-29906-8_1	Introduction	Scalable Hardware Verification with Symbolic Simulation	book-chapter
+48	10.1007/bf01811116	1992	10.1007/bf01811116	Parallel logic programs on the Mayfly	LISP and Symbolic Computation	journal-article
+49	10.1016/0010-468x(81)90099-4	1981	10.1016/0010-468x(81)90099-4	Symbolic programs for structural identification of linear pharmacokinetic systems	Computer Programs in Biomedicine	journal-article
+50	10.14711/thesis-b1450539	None	10.14711/thesis-b1450539	Scalable symbolic analysis of large real world programs using API abstraction and execution histories		dissertation
+51	10.1016/s0747-7171(08)80151-4	1991	10.1016/s0747-7171(08)80151-4	A methodology for detecting shared variable dependencies in logic programs	Journal of Symbolic Computation	journal-article
+52	10.1016/j.jsc.2006.03.006	2007	10.1016/j.jsc.2006.03.006	Computing multihomogeneous resultants using straight-line programs	Journal of Symbolic Computation	journal-article
+53	10.1016/j.jsc.2010.10.003	2011	10.1016/j.jsc.2010.10.003	Some algebraic methods for solving multiobjective polynomial integer programs	Journal of Symbolic Computation	journal-article
+54	10.1109/mc.1980.1653453	1980	10.1109/mc.1980.1653453	Instrumenting Programs for Symbolic-Trace Generation	Computer	journal-article
+55	10.1016/b978-0-444-89208-9.50020-x	1991	10.1016/b978-0-444-89208-9.50020-x	A Method for Symbolic Verification of Synchronous Circuits	Computer Hardware Description Languages and their Applications	book-chapter
+56	10.1016/s0747-7171(06)80002-7	1993	10.1016/s0747-7171(06)80002-7	Deductive and inductive synthesis of equational programs	Journal of Symbolic Computation	journal-article
+57	10.31857/s013234740001213-9	2018	10.31857/s013234740001213-9	Directed dynamic symbolic execution of programs to confirm errors in programs	Программирование	journal-article
+58	10.1007/0-387-29906-8_6	None	10.1007/0-387-29906-8_6	Exact Parametrizations	Scalable Hardware Verification with Symbolic Simulation	book-chapter
+59	10.1063/1.1405298	2001	10.1063/1.1405298	functionalObjects.h: Using symbolic syntax in C++ programs	AIP Conference Proceedings	proceedings-article
+60	10.1016/s0747-7171(06)80007-6	1993	10.1016/s0747-7171(06)80007-6	Synthesis of ML programs in the system Coq	Journal of Symbolic Computation	journal-article
+61	10.1007/bf01806257	1990	10.1007/bf01806257	Endpaper: Performance of two common Lisp programs on several systems	Lisp and Symbolic Computation	journal-article
+62	10.1007/bf01806101	1990	10.1007/bf01806101	Combinator evaluation of functional programs with logical variables	Lisp and Symbolic Computation	journal-article
+63	10.1016/j.jsc.2005.08.001	2005	10.1016/j.jsc.2005.08.001	Out of order quantifier elimination for Standard Quantified Linear Programs	Journal of Symbolic Computation	journal-article
+64	10.21236/ada487024	2008	10.21236/ada487024	Parallelizing Deadlock Resolution in Symbolic Synthesis of Distributed Programs		report
+65	10.1007/bf01019462	1993	10.1007/bf01019462	Reasoning about programs in continuation-passing style	LISP and Symbolic Computation	journal-article
+66	10.1007/978-3-319-73909-0	2018	10.1007/978-3-319-73909-0	Symbolic Parallelization of Nested Loop Programs		book
+67	10.1016/j.jsc.2017.07.002	2018	10.1016/j.jsc.2017.07.002	Solving generic nonarchimedean semidefinite programs using stochastic game algorithms	Journal of Symbolic Computation	journal-article
+68	10.1016/j.jsc.2011.12.051	2012	10.1016/j.jsc.2011.12.051	Applying abstract acceleration to (co-)reachability analysis of reactive programs	Journal of Symbolic Computation	journal-article
+69	10.1007/978-3-031-99705-1_8	2026	10.1007/978-3-031-99705-1_8	Computer Programs	Texts &amp; Monographs in Symbolic Computation	book-chapter
+70	10.1007/978-3-030-80507-4_8	2021	10.1007/978-3-030-80507-4_8	Computer Programs	Texts &amp; Monographs in Symbolic Computation	book-chapter
+71	10.21236/ad0672960	1968	10.21236/ad0672960	SYNCHRONOUS SATELLITE STATIONKEEPING SIMULATION		report
+72	10.1007/bf01808954	1989	10.1007/bf01808954	The interprocedural analysis and automatic parallelization of Scheme programs	Lisp and Symbolic Computation	journal-article
+73	10.70729/ijser15314	2015	10.70729/ijser15314	Simulation of Excitation Synchronous Wind Power Generator	International Journal of Scientific Engineering and Research	journal-article
+74	10.1007/bf01806107	1991	10.1007/bf01806107	Organizing programs without classes	Lisp and Symbolic Computation	journal-article
+75	10.1016/j.jsc.2015.11.005	2016	10.1016/j.jsc.2015.11.005	Faster sparse multivariate polynomial interpolation of straight-line programs	Journal of Symbolic Computation	journal-article
+76	10.1016/j.jsc.2010.08.004	2011	10.1016/j.jsc.2010.08.004	Trace-based verification of imperative programs with I/O	Journal of Symbolic Computation	journal-article
+77	10.1007/978-3-658-12680-3	2016	10.1007/978-3-658-12680-3	Complete Symbolic Simulation of SystemC Models		book
+78	10.21236/ada487170	2008	10.21236/ada487170	Using Model Checking Techniques for Symbolic Synthesis of Distributed Programs		report
+79	10.1023/b:lisp.0000029447.02190.42	2004	10.1023/b:lisp.0000029447.02190.42	Cost-Augmented Partial Evaluation of Functional Logic Programs	Higher-Order and Symbolic Computation	journal-article
+80	10.70675/ad9919e7z0a0az41daz8dcfz278b311433c0	None	10.70675/ad9919e7z0a0az41daz8dcfz278b311433c0	Formal Validation of Intra-Procedural Transformations by Defensive Symbolic Simulation		dissertation
+81	10.1007/bf01806124	1990	10.1007/bf01806124	Relative specification and transformational re-use of functional programs	Lisp and Symbolic Computation	journal-article
+82	10.1023/b:lisp.0000029450.36668.cb	2004	10.1023/b:lisp.0000029450.36668.cb	Using Circular Programs to Deforest in Accumulating Parameters	Higher-Order and Symbolic Computation	journal-article
+83	10.1007/0-387-29906-8_4	None	10.1007/0-387-29906-8_4	Compacting Intermediate States	Scalable Hardware Verification with Symbolic Simulation	book-chapter
+84	10.1109/ipps.1996.508098	None	10.1109/ipps.1996.508098	Toward symbolic performance prediction of parallel programs	Proceedings of International Conference on Parallel Processing	proceedings-article
+85	10.1007/bf01019947	1994	10.1007/bf01019947	Continuation-based control in the implementation of parallel logic programs	LISP and Symbolic Computation	journal-article
+86	10.21203/rs.3.rs-9969464/v1	2026	10.21203/rs.3.rs-9969464/v1	XEGMAP: Adaptive Symbolic Execution for Race Condition Detection in Binary Programs		posted-content
+87	10.1016/b978-0-12-815657-5.00075-9	2019	10.1016/b978-0-12-815657-5.00075-9	Accrediting Simulation Programs	Clinical Simulation	book-chapter
+88	10.1109/tec.2018.2829808	2018	10.1109/tec.2018.2829808	Efficient Modeling of Six-Phase PM Synchronous Machine-Rectifier Systems in State-Variable-Based Simulation Programs	IEEE Transactions on Energy Conversion	journal-article
+89	10.1006/jsco.1997.0122	1997	10.1006/jsco.1997.0122	Simulation and Optimization by Quantifier Elimination	Journal of Symbolic Computation	journal-article
+90	10.1006/jsco.1996.0031	1996	10.1006/jsco.1996.0031	Parallelizing Imperative Functional Programs: the Vectorization Monad	Journal of Symbolic Computation	journal-article
+91	10.1016/s0747-7171(89)80046-x	1989	10.1016/s0747-7171(89)80046-x	On the transformation of logic programs with instantiation based computation rules	Journal of Symbolic Computation	journal-article
+92	10.1007/978-1-4615-3962-9_3	1991	10.1007/978-1-4615-3962-9_3	Symbolic Simulation of Analog Integrated Circuits	Symbolic Analysis for Automated Design of Analog Integrated Circuits	book-chapter
+93	10.14357/08696527210315	2021	10.14357/08696527210315	SYMBOLIC MODELING OF TASKS AND CONSTRUCTING PROGRAMS	Systems and Means of Informatics	journal-article
+94	10.1016/j.jsc.2019.10.005	2020	10.1016/j.jsc.2019.10.005	Faster interpolation algorithms for sparse multivariate polynomials given by straight-line programs	Journal of Symbolic Computation	journal-article
+95	10.4324/9780203380208-11	2013	10.4324/9780203380208-11	Television Programs and Symbolic Interaction	Reaching a Critical Mass	book-chapter
+96	10.1016/j.jsc.2020.11.001	2021	10.1016/j.jsc.2020.11.001	Exact algorithms for semidefinite programs with degenerate feasible set	Journal of Symbolic Computation	journal-article
+97	10.1007/978-1-4615-3962-9_4	1991	10.1007/978-1-4615-3962-9_4	Algorithmic Aspects of Linear Symbolic Simulation	Symbolic Analysis for Automated Design of Analog Integrated Circuits	book-chapter
+98	10.1145/800205.806327	1976	10.1145/800205.806327	Symbolic evaluation of programs	Proceedings of the third ACM symposium on Symbolic and algebraic computation  - SYMSAC '76	proceedings-article
+99	10.1109/wsc.1993.718310	None	10.1109/wsc.1993.718310	Exploiting Lookahead in Synchronous Parallel Simulation	Proceedings of 1993 Winter Simulation Conference - (WSC '93)	proceedings-article
+100	10.1142/9789812814029_others04	2009	10.1142/9789812814029_others04	Part IV: Verification of Synchronous Programs	Real Time Programming: Languages, Specification and Verification	book-chapter

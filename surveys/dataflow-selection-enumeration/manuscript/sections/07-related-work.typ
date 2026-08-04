@@ -76,6 +76,15 @@ equivalence, including partially interpreted networks
 @rabinovich1996schematological @rabinovich1997partial. These are graph-native
 symbolic sharing and network-equivalence precedents, not input partitions
 indexed by requested internal observations.
+The surrounding network-semantics lineage is broader still: it includes
+compositional relational semantics for indeterminate networks, full abstraction
+for nondeterministic networks, a network calculus and algebra, a fibrational
+account, and stability and sequentiality results
+@stark1989relational @russell1989fullabstraction @stark1992calculus
+@stark1995algebra @stark1991fibrations @panangaden1990stability. These titles
+establish whole-network semantic and structural boundaries; none of their
+accessible records states an exact image-and-inverse-fiber contract for a
+requested sparse internal observer.
 
 Selection observations choose a particular intensional quotient of these
 executions. They discard ordinary control history, retain the outcome of every
@@ -96,6 +105,10 @@ programs @garriou2002synchronous and extended to synchronous dataflow programs
 with timers @baudart2019timers. That language model is close to this paper's
 dataflow setting, but its output remains symbolic executions rather than a
 sparse requested-site observation partition.
+Exact high-level WCET analysis has likewise used symbolic state-space
+exploration of synchronous programs @logothetis2003wcet. Its exactness belongs
+to the timing-analysis objective, not to enumeration of all caller-input fibers
+under a selected internal-event observer.
 Synchronous dataflow language design also has explicit transparency and
 compositionality lines @cheung2021transparent @benveniste2000compositional.
 Their semantic and compilation boundaries organize whole program networks;

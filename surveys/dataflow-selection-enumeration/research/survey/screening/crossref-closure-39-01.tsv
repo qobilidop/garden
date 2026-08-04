@@ -1,0 +1,101 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1006/inco.1997.2658	1997	10.1006/inco.1997.2658	On Schematological Equivalence of Partially Interpreted Dataflow Networks	Information and Computation	journal-article
+2	10.1006/inco.1996.0012	1996	10.1006/inco.1996.0012	On Schematological Equivalence of Dataflow Networks	Information and Computation	journal-article
+3	10.1023/a:1004368325267	1998	10.1023/a:1004368325267	Partially Interpreted Relations and Partially Interpreted Quantifiers	Journal of Philosophical Logic	journal-article
+4	10.1145/3394810.3394820	2020	10.1145/3394810.3394820	Scheduling of Synchronous Dataflow Graphs with Partially Periodic Real-Time Constraints	Proceedings of the 28th International Conference on Real-Time Networks and Systems	proceedings-article
+5	10.1007/bf00175368	1987	10.1007/bf00175368	Scientific theory as partially interpreted calculus	Erkenntnis	journal-article
+6	10.1016/bs.adcom.2014.10.001	2015	10.1016/bs.adcom.2014.10.001	Sorting Networks on Maxeler Dataflow Supercomputing Systems	Advances in Computers	book-chapter
+7	10.1007/bf00166442	1988	10.1007/bf00166442	Scientific theory as partially interpreted calculus II	Erkenntnis	journal-article
+8	10.1016/0893-6080(88)90471-6	1988	10.1016/0893-6080(88)90471-6	Analysis of dataflow diagrams by neural network	Neural Networks	journal-article
+9	10.1007/978-94-017-0249-2_8	2003	10.1007/978-94-017-0249-2_8	Partially Interpreted Henkin Quantifiers	Philosophy and Logic in Search of the Polish Tradition	book-chapter
+10	10.1007/978-3-319-66125-4_1	2017	10.1007/978-3-319-66125-4_1	Implementing Neural Networks by Using the DataFlow Paradigm	Computer Communications and Networks	book-chapter
+11	10.4135/9781036236021.n12	2024	10.4135/9781036236021.n12	Equivalence	Analyzing Social Networks	book-chapter
+12	10.2139/ssrn.2566241	2014	10.2139/ssrn.2566241	A Nonparametric Partially Identified Estimator for Equivalence Scales	SSRN Electronic Journal	journal-article
+13	10.1016/0167-6423(88)90013-5	1988	10.1016/0167-6423(88)90013-5	Partially interpreted schemas for CSP programming	Science of Computer Programming	journal-article
+14	10.2139/ssrn.2542257	2014	10.2139/ssrn.2542257	A Nonparametric Partially Identified Estimator for Equivalence Scales	SSRN Electronic Journal	journal-article
+15	10.1075/jaic.4.3.03bra	2015	10.1075/jaic.4.3.03bra	Argumentative equivalence as the reproduction of strategic maneuvering in interpreted texts	Journal of Argumentation in Context	journal-article
+16	10.2139/ssrn.6875241	2026	10.2139/ssrn.6875241	Graph as App: A GPU Dataflow Substrate for Domain-Agnostic Living Networks		posted-content
+17	10.3997/2214-4609.201901513	2019	10.3997/2214-4609.201901513	Automatic Classification of Geologic Units in Seismic Images Using Partially Interpreted Examples	81st EAGE Conference and Exhibition 2019	proceedings-article
+18	10.1007/978-3-030-13803-5_9	2019	10.1007/978-3-030-13803-5_9	Bitcoin Mining Using Maxeler DataFlow Computers	Computer Communications and Networks	book-chapter
+19	10.1007/s10670-020-00346-w	2023	10.1007/s10670-020-00346-w	On Equivalence Relations Between Interpreted Languages, with an Application to Modal and First-Order Language	Erkenntnis	journal-article
+20	10.1007/978-3-319-66125-4_3	2017	10.1007/978-3-319-66125-4_3	Binary Search in the DataFlow Paradigm	Computer Communications and Networks	book-chapter
+21	10.2139/ssrn.4349055	2023	10.2139/ssrn.4349055	Partially-Defined Equivalence Relations: Relationship with Orthopartitions and Connection to Rough Sets		posted-content
+22	10.1145/73103.73113	1989	10.1145/73103.73113	PARIS: a system for reusing partially interpreted schemas	Software reusability: vol. 1,  concepts and models	other
+23	10.2139/ssrn.4481660	2023	10.2139/ssrn.4481660	Partially-Defined Equivalence Relations: Relationship with Orthopartitions and Connection to Rough Sets		posted-content
+24	10.1109/icsmc.2004.1399926	None	10.1109/icsmc.2004.1399926	Regulation control in interpreted petri nets using trace equivalence	2004 IEEE International Conference on Systems, Man and Cybernetics (IEEE Cat. No.04CH37583)	proceedings-article
+25	10.3233/fi-1995-22128	1995	10.3233/fi-1995-22128	AN ALGEBRA OF DATAFLOW NETWORKS	Fundamenta Informaticae	journal-article
+26	10.1007/978-3-319-66125-4_2	2017	10.1007/978-3-319-66125-4_2	Solving the Poisson Equation by Using DataFlow Technology	Computer Communications and Networks	book-chapter
+27	10.70675/79450ec3z4ba3z4908za267z58ffed3915eb	None	10.70675/79450ec3z4ba3z4908za267z58ffed3915eb	Joint design of deep neural networks and FPGA dataflow architectures for semantic segmentation in autonomous vehicles		dissertation
+28	10.2478/s11533-011-0053-8	2011	10.2478/s11533-011-0053-8	Conditions for strong Morita equivalence of partially ordered semigroups	Open Mathematics	journal-article
+29	10.1007/978-3-319-16229-4_1	2015	10.1007/978-3-319-16229-4_1	The DataFlow Paradigm	Computer Communications and Networks	book-chapter
+30	10.4135/9781849209373.n4	1999	10.4135/9781849209373.n4	Equivalence and Cohesion	Introducing Social Networks	book-chapter
+31	10.4018/978-1-7998-8350-0.ch006	2022	10.4018/978-1-7998-8350-0.ch006	Implementation Details of Neural Networks Using Dataflow	Advances in Systems Analysis, Software Engineering, and High Performance Computing	book-chapter
+32	10.4135/9781412994170.n342	2011	10.4135/9781412994170.n342	Structural Equivalence	Encyclopedia of Social Networks	reference-entry
+33	10.1007/bfb0013470	None	10.1007/bfb0013470	Dataflow networks are fibrations	Lecture Notes in Computer Science	book-chapter
+34	10.1007/978-3-030-13803-5_8	2019	10.1007/978-3-030-13803-5_8	An Overview of Selected DataFlow Applications in Physics Simulations	Computer Communications and Networks	book-chapter
+35	10.1016/j.ifacol.2018.06.338	2018	10.1016/j.ifacol.2018.06.338	A Signal-Interpreted Approach to the Supervisory Control Theory – Extension to Partially Controllable Signals	IFAC-PapersOnLine	journal-article
+36	10.7146/brics.v2i55.19956	1995	10.7146/brics.v2i55.19956	Behavioural Equivalence for Infinite Systems—Partially Decidable!	BRICS Report Series	journal-article
+37	10.1109/telfor.2016.7818792	2016	10.1109/telfor.2016.7818792	Dataflow integration in mixedcritical networks	2016 24th Telecommunications Forum (TELFOR)	proceedings-article
+38	10.1007/978-3-030-13803-5_2	2019	10.1007/978-3-030-13803-5_2	On Cloud-Supported Web-Based Integrated Development Environment for Programming DataFlow Architectures	Computer Communications and Networks	book-chapter
+39	10.1007/978-3-030-13803-5_7	2019	10.1007/978-3-030-13803-5_7	Biomedical Images Processing Using Maxeler DataFlow Engines	Computer Communications and Networks	book-chapter
+40	10.1109/sfcs.1989.63474	1989	10.1109/sfcs.1989.63474	Full abstraction for nondeterministic dataflow networks	30th Annual Symposium on Foundations of Computer Science	proceedings-article
+41	10.1007/978-3-319-66128-5_4	2017	10.1007/978-3-319-66128-5_4	Transforming Applications from the Control Flow to the Dataflow Paradigm	Computer Communications and Networks	book-chapter
+42	10.1007/978-3-030-13803-5_6	2019	10.1007/978-3-030-13803-5_6	Face Recognition Using Maxeler DataFlow	Computer Communications and Networks	book-chapter
+43	10.1007/978-3-319-66128-5_2	2017	10.1007/978-3-319-66128-5_2	Discrepancy Reduction Between the Topology of Dataflow Graph and the Topology of FPGA Structure	Computer Communications and Networks	book-chapter
+44	10.1109/ecie69549.2026.11565719	2026	10.1109/ecie69549.2026.11565719	A Multi-Level Dataflow Parallel Acceleration Framework for EPS-Based Equivalence Checking	2026 6th International Conference on Electronics, Circuits and Information Engineering (ECIE)	proceedings-article
+45	10.1007/978-3-030-13803-5_4	2019	10.1007/978-3-030-13803-5_4	Matrix-Based Algorithms for DataFlow Computer Architecture: An Overview and Comparison	Computer Communications and Networks	book-chapter
+46	10.1007/978-3-030-13803-5_5	2019	10.1007/978-3-030-13803-5_5	Application of Maxeler DataFlow Supercomputing to Spherical Code Design	Computer Communications and Networks	book-chapter
+47	10.1109/informatics47936.2019.9119311	2019	10.1109/informatics47936.2019.9119311	Building Neural Networks as Dataflow Graphs	2019 IEEE 15th International Scientific Conference on Informatics	proceedings-article
+48	10.1016/0029-5582(60)90436-3	1960	10.1016/0029-5582(60)90436-3	An equivalence theorem for partially gauge-invariant vector meson interactions	Nuclear Physics	journal-article
+49	10.1109/5.381846	1995	10.1109/5.381846	Dataflow process networks	Proceedings of the IEEE	journal-article
+50	10.1016/j.ifacol.2018.06.327	2018	10.1016/j.ifacol.2018.06.327	An Abstraction Method of Interpreted Petri Nets Preserving the Equivalence of the Controllable Observable Language	IFAC-PapersOnLine	journal-article
+51	10.1109/lics.1992.185527	None	10.1109/lics.1992.185527	A calculus of dataflow networks	[1992] Proceedings of the Seventh Annual IEEE Symposium on Logic in Computer Science	proceedings-article
+52	10.1109/ispan.1999.778964	None	10.1109/ispan.1999.778964	Parallel efficiency: the dataflow advantage	Proceedings Fourth International Symposium on Parallel Architectures, Algorithms, and Networks (I-SPAN'99)	proceedings-article
+53	10.1007/1-84628-213-6_6	None	10.1007/1-84628-213-6_6	Optimal Energy Equivalence Routing in Wireless Sensor Networks	Scalable Infrastructure for Distributed Sensor Networks	book-chapter
+54	10.1016/j.jalgebra.2013.03.008	2013	10.1016/j.jalgebra.2013.03.008	Universal equivalence of partially commutative metabelian Lie algebras	Journal of Algebra	journal-article
+55	10.3390/electronics14153085	2025	10.3390/electronics14153085	DCP: Learning Accelerator Dataflow for Neural Networks via Propagation	Electronics	journal-article
+56	10.1007/s10469-017-9435-8	2017	10.1007/s10469-017-9435-8	Universal Equivalence of Partially Commutative Lie Algebras	Algebra and Logic	journal-article
+57	10.1007/s10469-010-9088-3	2010	10.1007/s10469-010-9088-3	Universal equivalence of partially commutative metabelian groups	Algebra and Logic	journal-article
+58	10.1016/j.comnet.2005.10.016	2006	10.1016/j.comnet.2005.10.016	A dataflow approach to efficient change detection of HTML/XML documents in WebVigiL	Computer Networks	journal-article
+59	10.1007/978-3-319-66125-4_5	2017	10.1007/978-3-319-66125-4_5	DataFlow Systems: From Their Origins to Future Applications in Data Analytics, Deep Learning, and the Internet of Things	Computer Communications and Networks	book-chapter
+60	10.1080/03772063.2021.2004461	2023	10.1080/03772063.2021.2004461	Solving Partially Observable Environments with Universal Search Using Dataflow Graph-Based Programming Model	IETE Journal of Research	journal-article
+61	10.1007/s10485-013-9305-z	2014	10.1007/s10485-013-9305-z	On Morita Equivalence of Partially Ordered Monoids	Applied Categorical Structures	journal-article
+62	10.1016/0378-8733(90)90023-3	1990	10.1016/0378-8733(90)90023-3	Detecting role equivalence	Social Networks	journal-article
+63	10.1007/bfb0018344	None	10.1007/bfb0018344	Compositional relational semantics for indeterminate dataflow networks	Lecture Notes in Computer Science	book-chapter
+64	10.1142/9789812839442_0018	2010	10.1142/9789812839442_0018	DATAFLOW COMPUTATIONS ON ENTERPRISE GRIDS	Selected Topics in Communication Networks and Distributed Systems	book-chapter
+65	10.3030/838342	2019	10.3030/838342			grant
+66	10.1016/b978-0-12-442450-0.50012-2	1977	10.1016/b978-0-12-442450-0.50012-2	STRUCTURAL EQUIVALENCE OF INDIVIDUALS IN SOCIAL NETWORKS	Social Networks	book-chapter
+67	10.1109/mnnfs.1996.493796	None	10.1109/mnnfs.1996.493796	A SIMD/dataflow architecture for a neurocomputer for spike-processing neural networks (NESPINN)	Proceedings of Fifth International Conference on Microelectronics for Neural Networks	proceedings-article
+68	10.1109/icnn.1995.488133	None	10.1109/icnn.1995.488133	A dataflow processing element for neural network simulation	Proceedings of ICNN'95 - International Conference on Neural Networks	proceedings-article
+69	10.1007/s12095-026-00879-x	2026	10.1007/s12095-026-00879-x	Post-quantum (partially) blind signatures from matrix code equivalence	Cryptography and Communications	journal-article
+70	10.1016/0164-1212(91)90004-p	1991	10.1016/0164-1212(91)90004-p	Specification of concurrent processes using a dataflow model of computation and partially ordered events	Journal of Systems and Software	journal-article
+71	10.1016/s0378-8733(02)00011-4	2002	10.1016/s0378-8733(02)00011-4	Finding and testing regular equivalence	Social Networks	journal-article
+72	10.1145/3731302.3731319	2026	10.1145/3731302.3731319	Advanced: Optimal Dataflow Programs and Dataflow SPLs	Science of Software Product Lines	book-chapter
+73	10.3233/fi-2010-372	2010	10.3233/fi-2010-372	Equivalence of Processes in Partially Commutative Object-Oriented Environments	Fundamenta Informaticae	journal-article
+74	10.1364/ol.553237	2025	10.1364/ol.553237	Triad of equivalence theorems of partially coherent beams on scattering	Optics Letters	journal-article
+75	10.1016/0378-8733(87)90008-6	1987	10.1016/0378-8733(87)90008-6	Measuring regular equivalence in symmetric structures	Social Networks	journal-article
+76	10.2139/ssrn.5255518	2025	10.2139/ssrn.5255518	Team Networks with Partially Observed Links		posted-content
+77	10.1109/icnn.1993.298705	None	10.1109/icnn.1993.298705	On the equivalence of two Hopfield-type networks	IEEE International Conference on Neural Networks	proceedings-article
+78	10.1088/0951-7715/18/3/004	2005	10.1088/0951-7715/18/3/004	Linear equivalence and ODE-equivalence for coupled cell networks	Nonlinearity	journal-article
+79	10.2139/ssrn.5498434	2025	10.2139/ssrn.5498434	The Local-global Equivalence on General Networks		posted-content
+80	10.1036/1097-8542.181000	None	10.1036/1097-8542.181000	Dataflow systems	AccessScience	dataset
+81	10.1057/9780230287556_4	2007	10.1057/9780230287556_4	Conceptual Equivalence and Translation	Metaphor Networks	book-chapter
+82	10.1007/bfb0032041	None	10.1007/bfb0032041	Stability and sequentiality in dataflow networks	Lecture Notes in Computer Science	book-chapter
+83	10.1007/s10469-017-9455-4	2017	10.1007/s10469-017-9455-4	Elementary Equivalence of Partially Commutative Lie Rings and Algebras	Algebra and Logic	journal-article
+84	10.1201/9781420049176-5	1999	10.1201/9781420049176-5	Equivalence in Knowledge Representation	Recurrent Neural Networks	book-chapter
+85	10.1016/j.suscom.2026.101422	2026	10.1016/j.suscom.2026.101422	GPU-accelerated combinational equivalence checking via dataflow-driven parallelism and LRU-aware memory optimization	Sustainable Computing: Informatics and Systems	journal-article
+86	10.1007/s10287-003-0008-z	2004	10.1007/s10287-003-0008-z	Flow equivalence and stochastic equivalence in G-networks	Computational Management Science	journal-article
+87	10.1002/sec.1746	2016	10.1002/sec.1746	Measuring the risk value of sensitive dataflow path in Android applications	Security and Communication Networks	journal-article
+88	10.3390/pr14132147	2026	10.3390/pr14132147	Well-Log-Interpreted Reservoir Parameters Assisted Evaluation of Hydrophobically Modified Partially Hydrolyzed Polyacrylamide Flooding for Enhanced Oil Recovery in Heterogeneous Reservoirs	Processes	journal-article
+89	10.1007/978-1-4615-3752-6_3	1991	10.1007/978-1-4615-3752-6_3	A Dataflow Architecture for AI	VLSI for Artificial Intelligence and Neural Networks	book-chapter
+90	10.1007/978-3-030-13803-5	2019	10.1007/978-3-030-13803-5	Exploring the DataFlow Supercomputing Paradigm	Computer Communications and Networks	book
+91	10.1109/icpp.1993.66	1993	10.1109/icpp.1993.66	Dataflow Graph Optimization for Dataflow Architectures a Dataflow Otimizing Compiler	1993 International Conference on Parallel Processing - ICPP'93 Vol2	proceedings-article
+92	10.1016/s0378-8733(02)00036-9	2003	10.1016/s0378-8733(02)00036-9	Regular equivalence and dynamic logic	Social Networks	journal-article
+93	10.1080/00927872.2013.848058	2015	10.1080/00927872.2013.848058	On Universal Equivalence of Partially Commutative Metabelian Lie Algebras	Communications in Algebra	journal-article
+94	10.17760/d20620608	None	10.17760/d20620608	Causal query estimation in partially observed biomolecular networks		dissertation
+95	10.1109/neurel.2016.7800110	2016	10.1109/neurel.2016.7800110	Implementation of perception algorithm using DataFlow paradigm	2016 13th Symposium on Neural Networks and Applications (NEUREL)	proceedings-article
+96	10.1007/978-1-4899-1331-9_15	1994	10.1007/978-1-4899-1331-9_15	A Dataflow Approach for Neural Networks	VLSI for Neural Networks and Artificial Intelligence	book-chapter
+97	10.1016/j.ins.2023.119941	2024	10.1016/j.ins.2023.119941	Partially-defined equivalence relations: Relationship with orthopartitions and connection to rough sets	Information Sciences	journal-article
+98	10.1134/s0037446617020124	2017	10.1134/s0037446617020124	Universal equivalence of some countably generated partially commutative structures	Siberian Mathematical Journal	journal-article
+99	10.1109/rndm48015.2019.8949149	2019	10.1109/rndm48015.2019.8949149	Resilient Dataflow Graph Embedding for Programmable Software Switches	2019 11th International Workshop on Resilient Networks Design and Modeling (RNDM)	proceedings-article
+100	10.2139/ssrn.6178289	2026	10.2139/ssrn.6178289	Determining the Equivalence of Small Zero-one Reaction Networks		posted-content

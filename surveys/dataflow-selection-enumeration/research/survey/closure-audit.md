@@ -1399,3 +1399,35 @@ If round 39 reopens the map, round 40 is retired unexecuted. If both qualify,
 they establish the required two-round no-add sequence only for the recorded
 sources, exact queries, captured rankings, date, and frozen trigger. Independent
 audit remains mandatory before closure.
+
+## Outcome of round 39 and retirement of round 40
+
+Round 39 reopens the map. The primary screen and both independent audits parsed
+and title-screened all 1,200 occurrences and independently reached that verdict.
+Every snapshot has 100 unique source identifiers and ranks 1--100; the round
+contains 1,179 unique identifiers. Five blank-title occurrences are four grant
+records, one repeated across two queries. The primary and first independent
+normalizations counted 1,088 unique nonblank titles; the second independent
+normalization counted 1,091.
+
+The decisive addition is a coherent foundational dataflow-network semantics
+lineage surrounding the already cataloged schematological-equivalence papers.
+It includes algebraic, categorical, full-abstraction, calculus, compositional
+relational, partially ordered event, stability, and sequentiality treatments.
+The round also exposes exact symbolic-state-space WCET analysis of synchronous
+programs, mixed-style and scenario-aware compositionality, mechanized and
+verified synchronous-dataflow semantics, and several close WCRT, POR, and
+abstraction-refinement variants. Published articles are retained where the
+retrieval returned theses, preliminary reports, or container aliases.
+
+These works sharpen the network, state-space, timing, and compilation
+boundaries but do not supply the target construction. The three direct-query
+blocks contain selection, imaging, fiber, clinical, biological, and statistical
+homonyms. The sole ambiguous observation-sequence dissertation was chased and
+found to observe behavior as a concurrency resource bound changes rather than
+partition caller inputs by a selected internal event. Neither independent
+auditor found a title claiming complete requested-site observations, exact
+caller-input inverse fibers, or typed residuals.
+
+Round 39 therefore cannot count toward closure. Round 40's precondition failed;
+it is retired unexecuted and cannot count toward the required no-add sequence.

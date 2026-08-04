@@ -1,0 +1,101 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1109/date.2011.5763043	2011	10.1109/date.2011.5763043	Pruning infeasible paths for tight WCRT analysis of synchronous programs	2011 Design, Automation &amp; Test in Europe	proceedings-article
+2	10.4156/jdcta.vol5.issue5.18	2011	10.4156/jdcta.vol5.issue5.18	Research on Infeasible Branch-Based Infeasible Path in Program	International Journal of Digital Content Technology and its Applications	journal-article
+3	10.70675/ad02174dzc59bz412az9e9dz59e075e8f728	None	10.70675/ad02174dzc59bz412az9e9dz59e075e8f728	Infeasible Path Detection : a Formal Model and an Algorithm		dissertation
+4	10.1145/2024724.2024837	2011	10.1145/2024724.2024837	Efficient WCRT analysis of synchronous programs using reachability	Proceedings of the 48th Design Automation Conference	proceedings-article
+5	10.1109/date.2009.5090639	2009	10.1109/date.2009.5090639	WCRT algebra and interfaces for esterel-style synchronous processing	2009 Design, Automation &amp; Test in Europe Conference &amp; Exhibition	proceedings-article
+6	10.2139/ssrn.4760606	2024	10.2139/ssrn.4760606	Automatic Detection of Infeasible Paths in Large-Scale Program Based on Program Summaries		posted-content
+7	10.1145/3302516.3307349	2019	10.1145/3302516.3307349	Path sensitive MFP solutions in presence of intersecting infeasible control flow path segments	Proceedings of the 28th International Conference on Compiler Construction	proceedings-article
+8	10.1145/1629395.1629424	2009	10.1145/1629395.1629424	Tight WCRT analysis of synchronous C programs	Proceedings of the 2009 international conference on Compilers, architecture, and synthesis for embedded systems	proceedings-article
+9	10.1109/icst.2010.13	2010	10.1109/icst.2010.13	Explanation-Based Generalization of Infeasible Path	2010 Third International Conference on Software Testing, Verification and Validation	proceedings-article
+10	10.1109/qrs.2016.26	2016	10.1109/qrs.2016.26	A Method for Pruning Infeasible Paths via Graph Transformations and Symbolic Execution	2016 IEEE International Conference on Software Quality, Reliability and Security (QRS)	proceedings-article
+11	10.1145/3126520	2017	10.1145/3126520	Timing Analysis of Synchronous Programs using WCRT Algebra	ACM Transactions on Embedded Computing Systems	journal-article
+12	10.5220/0003986400430052	2012	10.5220/0003986400430052	A Survey of Infeasible Path Detection	Proceedings of the 7th International Conference on Evaluation of Novel Approaches to Software Engineering	proceedings-article
+13	10.1007/978-3-540-69166-2_16	None	10.1007/978-3-540-69166-2_16	SLR: Path-Sensitive Analysis through Infeasible-Path Detection and Syntactic Language Refinement	Lecture Notes in Computer Science	book-chapter
+14	10.1109/icycs.2008.492	2008	10.1109/icycs.2008.492	Research on Translucent Mechanism-Based Infeasible Path	2008 The 9th International Conference for Young Computer Scientists	proceedings-article
+15	10.1137/s105262349427409x	1997	10.1137/s105262349427409x	An Infeasible Path-Following Method for Monotone Complementarity Problems	SIAM Journal on Optimization	journal-article
+16	10.1002/aic.690280615	1982	10.1002/aic.690280615	Infeasible path optimization with sequential modular simulators	AIChE Journal	journal-article
+17	10.1016/j.infsof.2014.07.012	2015	10.1016/j.infsof.2014.07.012	Infeasible path generalization in dynamic symbolic execution	Information and Software Technology	journal-article
+18	10.1016/0098-1354(85)80003-x	1985	10.1016/0098-1354(85)80003-x	Improved infeasible path optimization for sequential modular simulators—I: The interface	Computers &amp; Chemical Engineering	journal-article
+19	10.1016/b978-0-444-63965-3.50107-0	2017	10.1016/b978-0-444-63965-3.50107-0	Infeasible Path Global Flowsheet Optimization Using McCormick Relaxations	Computer Aided Chemical Engineering	book-chapter
+20	10.1166/jctn.2015.4151	2015	10.1166/jctn.2015.4151	Research Progress on Infeasible Path Detecting Problem	Journal of Computational and Theoretical Nanoscience	journal-article
+21	10.1016/0950-5849(95)98039-i	1995	10.1016/0950-5849(95)98039-i	A path generation method for testing LCSAJs that restrains infeasible paths	Information and Software Technology	journal-article
+22	10.1080/10556789308805537	1993	10.1080/10556789308805537	A path-following infeasible-interior-point algorithm for linear complementarity problems	Optimization Methods and Software	journal-article
+23	10.1109/access.2019.2894593	2019	10.1109/access.2019.2894593	Detecting Interprocedural Infeasible Paths Based on Unsatisfiable Path Constraint Patterns	IEEE Access	journal-article
+24	10.1007/springerreference_5655	None	10.1007/springerreference_5655	Infeasible solution	SpringerReference	reference-entry
+25	10.1109/rtas.2014.6926000	2014	10.1109/rtas.2014.6926000	Trickle: Automated infeasible path detection using all minimal unsatisfiable subsets	2014 IEEE 19th Real-Time and Embedded Technology and Applications Symposium (RTAS)	proceedings-article
+26	10.1016/s0895-7177(03)90003-3	2003	10.1016/s0895-7177(03)90003-3	An infeasible-start path-following method for monotone LCPs	Mathematical and Computer Modelling	journal-article
+27	10.1142/9789812798862_0027	1995	10.1142/9789812798862_0027	SIMPLIFIED ANALYSIS OF AN O(nL)-ITERATION INFEASIBLE PREDICTOR-CORRECTOR PATH-FOLLOWING METHOD FOR MONOTONE LINEAR COMPLEMENTARITY PROBLEMS	Recent Trends in Optimization Theory and Applications	book-chapter
+28	10.2514/3.13053	1996	10.2514/3.13053	Infeasible path optimal design methods with applications to aerodynamic shape optimization	AIAA Journal	journal-article
+29	10.1016/0098-1354(85)80004-1	1985	10.1016/0098-1354(85)80004-1	Improved infeasible path optimization for sequential modular simulators—II: the optimization algorithm	Computers &amp; Chemical Engineering	journal-article
+30	10.4324/9780429341267-10	2019	10.4324/9780429341267-10	Pruning of classical formulations	Evidence-based Ayurveda	book-chapter
+31	10.1016/j.scico.2024.103183	2025	10.1016/j.scico.2024.103183	Automatic detection of infeasible paths in large-scale program based on program summaries	Science of Computer Programming	journal-article
+32	10.1038/nj7199-1281a	2008	10.1038/nj7199-1281a	Pruning the prickly path to industry	Nature	journal-article
+33	10.1007/s101070050009	2000	10.1007/s101070050009	The global linear convergence of an infeasible non-interior path-following algorithm for complementarity problems with uniform P -functions	Mathematical Programming	journal-article
+34	10.1016/j.orl.2009.11.006	2010	10.1016/j.orl.2009.11.006	Convergence of the homotopy path for a full-Newton step infeasible interior-point method	Operations Research Letters	journal-article
+35	10.1109/scam.2017.13	2017	10.1109/scam.2017.13	Working Around Loops for Infeasible Path Detection in Binary Programs	2017 IEEE 17th International Working Conference on Source Code Analysis and Manipulation (SCAM)	proceedings-article
+36	10.7551/mitpress/1109.003.0017	1996	10.7551/mitpress/1109.003.0017	Adaptive Fitness Functions for Dynamic Growing/Pruning of Program Trees	Advances in Genetic Programming	book-chapter
+37	10.1057/palgrave.jors.0470106	1996	10.1057/palgrave.jors.0470106	Computer Codes for the Analysis of Infeasible Linear Program	Journal of the Operational Research Society	journal-article
+38	10.21437/interspeech.2012-300	2012	10.21437/interspeech.2012-300	Search space pruning based on anticipated path recombination in LVCSR	Interspeech 2012	proceedings-article
+39	10.1016/j.infsof.2007.06.006	2008	10.1016/j.infsof.2007.06.006	Heuristics-based infeasible path detection for dynamic test data generation	Information and Software Technology	journal-article
+40	10.1109/izs.2006.1649100	None	10.1109/izs.2006.1649100	Path Pruning for Unequal Error Protection Turbo Codes	2006 International Zurich Seminar on Communications	proceedings-article
+41	10.1016/s0252-9602(08)60058-2	2008	10.1016/s0252-9602(08)60058-2	An infeasible-interior-point predictor-corrector algorithm for the second-order cone program	Acta Mathematica Scientia	journal-article
+42	10.1017/cbo9780511546990.008	2007	10.1017/cbo9780511546990.008	Program recomposition	Path-Oriented Program Analysis	book-chapter
+43	10.1155/2020/4258291	2020	10.1155/2020/4258291	Infeasible Path Detection Based on Code Pattern and Backward Symbolic Execution	Mathematical Problems in Engineering	journal-article
+44	10.1080/10556789408805552	1994	10.1080/10556789408805552	The complexity of an infeasible interior-point path-following method for the solution of linear programs	Optimization Methods and Software	journal-article
+45	10.1017/cbo9780511546990.005	2007	10.1017/cbo9780511546990.005	Program set	Path-Oriented Program Analysis	book-chapter
+46	10.1109/ase.2000.873665	2000	10.1109/ase.2000.873665	Identification of potentially infeasible program paths by monitoring the search for test data	Proceedings ASE 2000. Fifteenth IEEE International Conference on Automated Software Engineering	proceedings-article
+47	10.3390/e21050499	2019	10.3390/e21050499	An Analysis of China’s Onshore and Offshore Exchange Rates—Adjusted Thermal Optimal Path Approach Based on Pruning and Path Segmentation	Entropy	journal-article
+48	10.1007/s10107980020a	1999	10.1007/s10107980020a	Global and polynomial-time convergence of an infeasible-interior-point algorithm using inexact computation	Mathematical Programming	journal-article
+49	10.1515/9783110481068-002	2016	10.1515/9783110481068-002	1. Pattern recognition, infeasible systems of linear inequalities, and graphs	Graphs for Pattern Recognition	book-chapter
+50	10.1093/oed/4936581961	2023	10.1093/oed/4936581961	infeasible, adj.	Oxford English Dictionary	book-chapter
+51	10.1109/dac.1982.1585562	1982	10.1109/dac.1982.1585562	Synchronous Path Analysis in MOS Circuit Simulator	19th Design Automation Conference	proceedings-article
+52	10.1016/j.amc.2006.07.135	2007	10.1016/j.amc.2006.07.135	A numerical study of an infeasible primal-dual path-following algorithm for linear programming	Applied Mathematics and Computation	journal-article
+53	10.1007/bf01582900	1991	10.1007/bf01582900	A potential-function reduction algorithm for solving a linear program directly from an infeasible “warm start”	Mathematical Programming	journal-article
+54	10.1007/s11590-016-0997-5	2017	10.1007/s11590-016-0997-5	An arc-search infeasible-interior-point method for symmetric optimization in a wide neighborhood of the central path	Optimization Letters	journal-article
+55	10.1007/s10107980009a	1999	10.1007/s10107980009a	Infeasible-start primal-dual methods and infeasibility detectors for nonlinear programming problems	Mathematical Programming	journal-article
+56	10.1287/moor.22.2.378	1997	10.1287/moor.22.2.378	On the Convergence of the Iteration Sequence of Infeasible Path Following Algorithms for Linear Complementarity Problems	Mathematics of Operations Research	journal-article
+57	10.1016/j.patrec.2007.11.005	2008	10.1016/j.patrec.2007.11.005	Robust shape-preserving contour tracing with synchronous redundancy pruning	Pattern Recognition Letters	journal-article
+58	10.3837/tiis.2010.10.014	2010	10.3837/tiis.2010.10.014	A Border Line-Based Pruning Scheme for Shortest Path Computations	KSII Transactions on Internet and Information Systems	journal-article
+59	10.1137/04060771x	2006	10.1137/04060771x	An Iterative Solver-Based Infeasible  Primal-Dual Path-Following Algorithm for Convex Quadratic Programming	SIAM Journal on Optimization	journal-article
+60	10.1287/ijoc.9.2.164	1997	10.1287/ijoc.9.2.164	Finding a Useful Subset of Constraints for Analysis in an Infeasible Linear Program	INFORMS Journal on Computing	journal-article
+61	10.1080/15332690802223060	2008	10.1080/15332690802223060	Rekindling Desire: A Step-By-Step Program to Help Low-Sex and No-Sex Marriages	Journal of Couple &amp; Relationship Therapy	journal-article
+62	10.1109/powercon.2018.8601721	2018	10.1109/powercon.2018.8601721	Parameter Identification of Synchronous Generator Based on Rough Set Pruning and Particle Swarm Difference Algorithm	2018 International Conference on Power System Technology (POWERCON)	proceedings-article
+63	10.1007/s10107-019-01454-4	2021	10.1007/s10107-019-01454-4	On the behavior of Lagrange multipliers in convex and nonconvex infeasible interior point methods	Mathematical Programming	journal-article
+64	10.1109/icst.2009.15	2009	10.1109/icst.2009.15	Pruning the Search Space in Path-Based Test Generation	2009 International Conference on Software Testing Verification and Validation	proceedings-article
+65	10.1007/s12190-017-1128-x	2018	10.1007/s12190-017-1128-x	An infeasible interior point method for the monotone SDLCP based on a transformation of the central path	Journal of Applied Mathematics and Computing	journal-article
+66	10.1093/bioinformatics/btr237	2011	10.1093/bioinformatics/btr237	Automatic 3D neuron tracing using all-path pruning	Bioinformatics	journal-article
+67	10.1080/01630563.2016.1138127	2016	10.1080/01630563.2016.1138127	A New Second-Order Infeasible Primal-Dual Path-Following Algorithm for Symmetric Optimization	Numerical Functional Analysis and Optimization	journal-article
+68	10.1023/a:1026492106091	1999	10.1023/a:1026492106091	On the Rate of Local Convergence of High-Order-Infeasible-Path-Following Algorithms for P*-Linear Complementarity Problems	Computational Optimization and Applications	journal-article
+69	10.3390/e27080808	2025	10.3390/e27080808	Low-Complexity Automorphism Ensemble Decoding of Reed-Muller Codes Using Path Pruning	Entropy	journal-article
+70	10.1145/1083246.1083257	2005	10.1145/1083246.1083257	Efficient static analysis with path pruning using coverage data	Proceedings of the third international workshop on Dynamic analysis  - WODA '05	proceedings-article
+71	10.22215/etd/1995-03130	None	10.22215/etd/1995-03130	Analyzing infeasible mixed-integer and integer linear programs.		dissertation
+72	10.1109/isit.2003.1228293	2003	10.1109/isit.2003.1228293	Combined puncturing and path pruning for unequal error protection	IEEE International Symposium on Information Theory, 2003. Proceedings.	proceedings-article
+73	10.1109/swc57546.2023.10448880	2023	10.1109/swc57546.2023.10448880	Cache Classification Analysis Supported by Implicit Path Pruning Techniques	2023 IEEE Smart World Congress (SWC)	proceedings-article
+74	10.4156/ijact.vol4.issue1.56	2012	10.4156/ijact.vol4.issue1.56	Infeasible Basis Paths Detection of Program with Exception-Handling Constructs	International Journal of Advancements in Computing Technology	journal-article
+75	10.1016/j.ejtl.2024.100131	2024	10.1016/j.ejtl.2024.100131	Using infeasible path cuts to solve Electric Vehicle Routing Problems with realistic charging functions exactly within a branch-and-cut framework	EURO Journal on Transportation and Logistics	journal-article
+76	10.1016/j.cesx.2020.100063	2020	10.1016/j.cesx.2020.100063	A novel approach for infeasible path optimization of distillation-based flowsheets	Chemical Engineering Science: X	journal-article
+77	10.1023/b:coap.0000013059.84424.af	2004	10.1023/b:coap.0000013059.84424.af	Convergence Analysis of an Infeasible Interior Point Algorithm Based on a Regularized Central Path for Linear Complementarity Problems	Computational Optimization and Applications	journal-article
+78	10.23919/chicc.2017.8027786	2017	10.23919/chicc.2017.8027786	Accurate and fast path computation in urban environments using region pruning strategies	2017 36th Chinese Control Conference (CCC)	proceedings-article
+79	10.1109/ijcnn.2017.7965959	2017	10.1109/ijcnn.2017.7965959	Pruning optimum-path forest ensembles using quaternion-based optimization	2017 International Joint Conference on Neural Networks (IJCNN)	proceedings-article
+80	10.1109/itec48692.2020.9161715	2020	10.1109/itec48692.2020.9161715	Prediction of Failure Path Current for Synchronous Reluctance and Interior Permanent Magnet Synchronous Machines Accounting for Saturation	2020 IEEE Transportation Electrification Conference &amp; Expo (ITEC)	proceedings-article
+81	10.26034/lu.akwi.2024.4673	2025	10.26034/lu.akwi.2024.4673	Structured Filter Pruning applied to Mask R-CNN: A path to efficient image segmentation	Anwendungen und Konzepte der Wirtschaftsinformatik	journal-article
+82	10.1145/3238147.3240731	2018	10.1145/3238147.3240731	Loop path reduction by state pruning	Proceedings of the 33rd ACM/IEEE International Conference on Automated Software Engineering	proceedings-article
+83	10.1017/cbo9780511546990.013	2007	10.1017/cbo9780511546990.013	References	Path-Oriented Program Analysis	book-chapter
+84	10.1017/9781108178327.017	2022	10.1017/9781108178327.017	Mission Infeasible	Computational Thinking for Life Scientists	book-chapter
+85	10.31224/osf.io/gkhtq	2018	10.31224/osf.io/gkhtq	Path Calculation of 7-axes Synchronous Quasi-Tangential Laser Manufacturing		posted-content
+86	10.2172/4465540	1973	10.2172/4465540	CPM: a program for critical path management		report
+87	10.1017/cbo9780511546990.009	2007	10.1017/cbo9780511546990.009	Discussion	Path-Oriented Program Analysis	book-chapter
+88	10.1017/cbo9780511546990.002	2007	10.1017/cbo9780511546990.002	Introduction	Path-Oriented Program Analysis	book-chapter
+89	10.1017/cbo9780511546990.001	2007	10.1017/cbo9780511546990.001	Preface	Path-Oriented Program Analysis	book-chapter
+90	10.1017/cbo9780511546990.011	2007	10.1017/cbo9780511546990.011	Examples	Path-Oriented Program Analysis	other
+91	10.1109/apasic.2004.1349471	2004	10.1109/apasic.2004.1349471	False aggressors pruning using path sensitization and logic implications	Proceedings of 2004 IEEE Asia-Pacific Conference on Advanced System Integrated Circuits	proceedings-article
+92	10.1007/s10107-022-01891-8	2023	10.1007/s10107-022-01891-8	A limiting analysis on regularization of singular SDP and its implication to infeasible interior-point algorithms	Mathematical Programming	journal-article
+93	10.1016/j.knosys.2013.07.006	2013	10.1016/j.knosys.2013.07.006	An efficient ensemble pruning algorithm using One-Path and Two-Trips searching approach	Knowledge-Based Systems	journal-article
+94	10.1007/s10107-018-1265-5	2019	10.1007/s10107-018-1265-5	A new use of Douglas–Rachford splitting for identifying infeasible, unbounded, and pathological conic programs	Mathematical Programming	journal-article
+95	10.1016/j.cam.2024.116379	2025	10.1016/j.cam.2024.116379	An efficient second-order predictor–corrector infeasible primal–dual IPM algorithm with large iteration path updates for solving well-known SDO problems	Journal of Computational and Applied Mathematics	journal-article
+96	10.1080/00207160.2017.1283020	2017	10.1080/00207160.2017.1283020	An arc-search infeasible interior-point algorithm for horizontal linear complementarity problem in the <b>N∞−</b> neighbourhood of the central path	International Journal of Computer Mathematics	journal-article
+97	10.1111/jcal.12578/v1/review2	2021	10.1111/jcal.12578/v1/review2	"Review for ""Students and instructors perspective on blended synchronous learning in a Canadian graduate program"""		peer-review
+98	10.1111/jcal.12578/v1/review1	2021	10.1111/jcal.12578/v1/review1	"Review for ""Students and instructors perspective on blended synchronous learning in a Canadian graduate program"""		peer-review
+99	10.36227/techrxiv.14880351.v3	2021	10.36227/techrxiv.14880351.v3	E3MoP: Efficient Motion Planning Based on Heuristic-Guided Motion Primitives Pruning and Path Optimization With Sparse-Banded Structure		posted-content
+100	10.1007/978-1-4471-3494-7_14	1992	10.1007/978-1-4471-3494-7_14	Pruning Operators for Partial Evaluation	Workshops in Computing	book-chapter
