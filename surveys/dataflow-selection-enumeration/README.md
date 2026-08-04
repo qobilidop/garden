@@ -43,6 +43,20 @@ explicit rebuild is wanted:
 Once `manuscript/main.typ` exists, the same command compiles it to
 `build/manuscript.pdf` and verifies that the PDF contains extractable text.
 
+### Downloading the PDF from GitHub
+
+The **Build paper** workflow builds and verifies the manuscript on every push
+to `main`, on pull requests, and when started manually from the Actions tab.
+To download its result:
+
+1. Open the repository's **Actions** tab.
+2. Select **Build paper** and open a successful workflow run.
+3. In that run's **Artifacts** section, download **manuscript-pdf**.
+
+The downloaded archive contains `manuscript.pdf`. Artifacts are retained for
+90 days. A manual build can be started with **Run workflow** on the workflow's
+Actions page.
+
 The local `.scratch/` directory is ignored and may hold downloaded papers,
 search exports, or temporary notes. Durable findings must be distilled into the
 committed research record.

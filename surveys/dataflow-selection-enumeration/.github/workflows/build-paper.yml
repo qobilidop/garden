@@ -1,0 +1,37 @@
+name: Build paper
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: build-paper-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build manuscript PDF
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Build and verify manuscript
+        run: ./dev.sh ./scripts/check.sh
+
+      - name: Upload manuscript PDF
+        uses: actions/upload-artifact@v7
+        with:
+          name: manuscript-pdf
+          path: build/manuscript.pdf
+          if-no-files-found: error
+          retention-days: 90
+          compression-level: 0
