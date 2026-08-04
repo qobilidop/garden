@@ -1,0 +1,103 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1016/j.automatica.2017.10.022	2018	10.1016/j.automatica.2017.10.022	Stubborn state observers for linear time-invariant systems	Automatica	journal-article
+2	10.1007/s10703-005-4594-y	2005	10.1007/s10703-005-4594-y	On Stubborn Sets in the Verification of Linear Time Temporal Properties	Formal Methods in System Design	journal-article
+3	10.1007/3-540-69108-1_8	1998	10.1007/3-540-69108-1_8	On Stubborn Sets in the Verification of Linear Time Temporal Properties	Lecture Notes in Computer Science	book-chapter
+4	10.1007/978-3-642-31131-4_13	2012	10.1007/978-3-642-31131-4_13	Stubborn Sets for Simple Linear Time Properties	Lecture Notes in Computer Science	book-chapter
+5	10.1007/978-3-319-45994-3_7	2016	10.1007/978-3-319-45994-3_7	Safety Property-Driven Stubborn Sets	Lecture Notes in Computer Science	book-chapter
+6	10.1007/3-540-48745-x_4	1999	10.1007/3-540-48745-x_4	Stubborn Sets for Standard Properties	Lecture Notes in Computer Science	book-chapter
+7	10.1109/ecc.2015.7330981	2015	10.1109/ecc.2015.7330981	Results on stubborn Luenberger observers for linear time-invariant plants	2015 European Control Conference (ECC)	proceedings-article
+8	10.1201/9781420032284-8	2016	10.1201/9781420032284-8	Time to event analysis of standard ecotoxicity data	Risk Assessment with Time to Event Models	book-chapter
+9	10.1007/3-540-53863-1_36	1991	10.1007/3-540-53863-1_36	Stubborn sets for reduced state space generation	Lecture Notes in Computer Science	book-chapter
+10	10.1145/2680541	2015	10.1145/2680541	Stubborn Sets for Time Petri Nets	ACM Transactions on Embedded Computing Systems	journal-article
+11	10.1515/9789633862155-017	2019	10.1515/9789633862155-017	Russia’s Network State and Reiderstvo Practices: The Roots to Weak Property Rights Protection after the post-Communist Transition	Stubborn Structures	book-chapter
+12	10.1016/0005-1098(94)90016-7	1994	10.1016/0005-1098(94)90016-7	A contraction property for state feedback design of linear discrete-time systems	Automatica	journal-article
+13	10.4064/fm-50-1-13-20	1961	10.4064/fm-50-1-13-20	Metric property of linear sets	Fundamenta Mathematicae	journal-article
+14	10.1023/a:1008629725384	1997	10.1023/a:1008629725384	Stubborn Sets for Real-Time Petri Nets	Formal Methods in System Design	journal-article
+15	10.1016/j.fss.2026.109896	2026	10.1016/j.fss.2026.109896	Fuzzy coded event-triggered consensus control for multi-agent systems under time-varying full-state constraints	Fuzzy Sets and Systems	journal-article
+16	10.1109/access.2026.3677089	2026	10.1109/access.2026.3677089	Robust Event-Triggered MPC for Linear Continuous-Time Systems Under State Quantization	IEEE Access	journal-article
+17	10.1101/104034	2017	10.1101/104034	Clustering huge protein sequence sets in linear time		posted-content
+18	10.1016/j.cej.2025.170388	2025	10.1016/j.cej.2025.170388	Preparing standard packed state of particles for measuring bulk property through linear settling from complete fluidization	Chemical Engineering Journal	journal-article
+19	10.1016/s0165-0114(00)00136-6	2002	10.1016/s0165-0114(00)00136-6	On linearly topological structure and property of fuzzy normed linear space	Fuzzy Sets and Systems	journal-article
+20	10.54337/aau429765826	None	10.54337/aau429765826	Time For Stubborn Game Reductions		dissertation
+21	10.3233/fi-2011-613	2011	10.3233/fi-2011-613	Can Stubborn Sets Be Optimal?	Fundamenta Informaticae	journal-article
+22	10.4064/fm-16-1-108-131	1930	10.4064/fm-16-1-108-131	On a property of linear fractional sets of points	Fundamenta Mathematicae	journal-article
+23	10.1016/j.fss.2025.109311	2025	10.1016/j.fss.2025.109311	Event-triggered computation-reducing fuzzy intelligence control incorporating fixed-time predefined behaviors in discrete-time	Fuzzy Sets and Systems	journal-article
+24	10.1016/j.fss.2025.109456	2025	10.1016/j.fss.2025.109456	Predefined time switching event-triggered control for nonaffine nonlinear systems with periodic actuator faults and full-state error constraints	Fuzzy Sets and Systems	journal-article
+25	10.7717/peerj.7928/fig-3	None	10.7717/peerj.7928/fig-3	Figure 3: Standard curve and linear regression of real time RT-PCR.		component
+26	10.1201/9781420032284.ch2	2001	10.1201/9781420032284.ch2	Time to event analysis of standard ecotoxicity data	Environmental and Ecological Risk Assessment	book-chapter
+27	10.22541/essoar.15003409/v1	2026	10.22541/essoar.15003409/v1	Magnitude-Independent Recovery as a Universal Property of Linear Restoring Systems: Per-Event AR(1) Evidence Across Timescales		posted-content
+28	10.1109/cdc57313.2025.11312475	2025	10.1109/cdc57313.2025.11312475	Exponentially Stable Stubborn Observers for Discrete-Time Linear Systems	2025 IEEE 64th Conference on Decision and Control (CDC)	proceedings-article
+29	10.1109/wescon.1997.632375	None	10.1109/wescon.1997.632375	World's smallest solid state storage device sets new industry standard	WESCON/97 Conference Proceedings	proceedings-article
+30	10.1016/j.fss.2022.10.020	2023	10.1016/j.fss.2022.10.020	Finite-time impulsive control for stochastic T-S fuzzy systems: A waiting-time-based event-triggered method	Fuzzy Sets and Systems	journal-article
+31	10.1002/9780470759318.ch10	2004	10.1002/9780470759318.ch10	"Definite
+            <i>Time</i>
+            ‐Adverbials and Event Measures"	Indefinites and the Type of Sets	other
+32	10.1080/02331934.2016.1227980	2016	10.1080/02331934.2016.1227980	Normal property, Jameson property, CHIP and linear regularity for an infinite system of convex sets in Banach spaces	Optimization	journal-article
+33	10.1016/j.fss.2025.109400	2025	10.1016/j.fss.2025.109400	Finite-time bounded asynchronous sliding-mode control for T-S fuzzy time-delay systems via event-triggered scheme	Fuzzy Sets and Systems	journal-article
+34	10.3233/fi-2000-43123418	2000	10.3233/fi-2000-43123418	Stable Models for Stubborn Sets	Fundamenta Informaticae	journal-article
+35	10.1007/978-3-319-67089-8_12	2017	10.1007/978-3-319-67089-8_12	Stubborn Sets with Frozen Actions	Lecture Notes in Computer Science	book-chapter
+36	10.3934/proc.2013.2013.393	2013	10.3934/proc.2013.2013.393	The characterization of maximal invariant sets of non-linear discrete-time control dynamical systems	Conference Publications	book-chapter
+37	10.1016/j.laa.2016.01.003	2016	10.1016/j.laa.2016.01.003	Accessible proof of standard monomial basis for coordinatization of Schubert sets of flags	Linear Algebra and its Applications	journal-article
+38	10.1016/j.jfranklin.2016.03.002	2016	10.1016/j.jfranklin.2016.03.002	Periodic event-triggered state-feedback control for discrete-time linear systems	Journal of the Franklin Institute	journal-article
+39	10.20944/preprints202306.0840.v1	2023	10.20944/preprints202306.0840.v1	One New Property of a Class of Linear Time-Optimal Control Problems		posted-content
+40	10.1016/b978-0-44-322343-3.00007-2	2026	10.1016/b978-0-44-322343-3.00007-2	Linear deterministic hybrid dynamic modeling of time-to-event processes (LDHDM)	Dynamic Modelling of Time-to-Event Processes	book-chapter
+41	10.1016/j.fss.2022.07.005	2023	10.1016/j.fss.2022.07.005	Event-triggered adaptive fuzzy control for stochastic nonlinear time-delay systems	Fuzzy Sets and Systems	journal-article
+42	10.21275/v5i5.nov163458	2015	10.21275/v5i5.nov163458	Semiparametric Multi State Model for Time-To-Event Data	International Journal of Science and Research (IJSR)	journal-article
+43	10.7717/peerj.19015/table-2	None	10.7717/peerj.19015/table-2	Table 2: Amplification times for the four suggested LAMP primer sets with their time to positive (Tp) and standard deviation values.		component
+44	10.1016/j.fss.2017.03.012	2017	10.1016/j.fss.2017.03.012	Quantitative model checking of linear-time properties based on generalized possibility measures	Fuzzy Sets and Systems	journal-article
+45	10.1016/j.fss.2025.109732	2026	10.1016/j.fss.2025.109732	Fixed-time adaptive fuzzy event-triggered fault-tolerant containment control for nonlinear multi-agent systems	Fuzzy Sets and Systems	journal-article
+46	10.1142/9789812814715_0001	2009	10.1142/9789812814715_0001	Linear Systems and Linear Matrix Inequalities	Analysis and Control of Nonlinear Systems with Stationary Sets	book-chapter
+47	10.1109/acsd.2011.25	2011	10.1109/acsd.2011.25	Compositional Analysis for Weak Stubborn Sets	2011 Eleventh International Conference on Application of Concurrency to System Design	proceedings-article
+48	10.1007/s00521-021-06707-y	2022	10.1007/s00521-021-06707-y	Stubborn state estimation for complex-valued neural networks with mixed time delays: the discrete time case	Neural Computing and Applications	journal-article
+49	10.13001/1081-3810.1557	2012	10.13001/1081-3810.1557	Opinion dynamics with stubborn vertices	The Electronic Journal of Linear Algebra	journal-article
+50	10.1109/cdc.1985.268626	1985	10.1109/cdc.1985.268626	Convergence of an algorithm to find maximal state constraint sets for discrete-time linear dynamical systems with bounded controls and states	1985 24th IEEE Conference on Decision and Control	proceedings-article
+51	10.1016/j.jfranklin.2022.08.056	2022	10.1016/j.jfranklin.2022.08.056	Event-triggered interval-based state estimator for continuous-time linear systems	Journal of the Franklin Institute	journal-article
+52	10.1109/lcsys.2019.2922187	2020	10.1109/lcsys.2019.2922187	Consistent Event-Triggered Control for Discrete-Time Linear Systems With Partial State Information	IEEE Control Systems Letters	journal-article
+53	10.5539/ijsp.v5n6p32	2016	10.5539/ijsp.v5n6p32	Linear Hybrid Deterministic Dynamic Modeling for Time-to-Event Processes: State and Parameter Estimations	International Journal of Statistics and Probability	journal-article
+54	10.36227/techrxiv.14371511	2021	10.36227/techrxiv.14371511	Event-triggered control for a linear continuous-time system under resource constraint environment		posted-content
+55	10.36227/techrxiv.14371511.v1	2021	10.36227/techrxiv.14371511.v1	Event-triggered control for a linear continuous-time system under resource constraint environment		posted-content
+56	10.5220/0012183600003543	2023	10.5220/0012183600003543	Dynamic Periodic Event-Triggered Control for Linear Systems Based on Partial State Information	Proceedings of the 20th International Conference on Informatics in Control, Automation and Robotics	proceedings-article
+57	10.1108/ir.2006.04933aab.001	2006	10.1108/ir.2006.04933aab.001	CSR simulation sets new robot cycle time accuracy standard	Industrial Robot: An International Journal	journal-article
+58	10.1007/978-3-319-26606-0_3	2016	10.1007/978-3-319-26606-0_3	Linear Gaussian Systems and Event-Based State Estimation	Studies in Systems, Decision and Control	book-chapter
+59	10.1016/j.ic.2010.11.027	2011	10.1016/j.ic.2010.11.027	Observations on complete sets between linear time and polynomial time	Information and Computation	journal-article
+60	10.24963/ijcai.2021/573	2021	10.24963/ijcai.2021/573	On Weak Stubborn Sets in Classical Planning	Proceedings of the Thirtieth International Joint Conference on Artificial Intelligence	proceedings-article
+61	10.1109/mwscas.2005.1594035	2005	10.1109/mwscas.2005.1594035	A novel inequality property of the second-order modes of linear continuous-time state-space systems	48th Midwest Symposium on Circuits and Systems, 2005.	proceedings-article
+62	10.1016/j.fss.2023.108642	2023	10.1016/j.fss.2023.108642	Event-triggered-based fuzzy adaptive tracking control for nonstrict-feedback asymmetric state constrained systems	Fuzzy Sets and Systems	journal-article
+63	10.1007/978-3-319-28599-3_3	2016	10.1007/978-3-319-28599-3_3	Stationarity and Linear Time Series Models	Multivariate Time Series With Linear State Space Structure	book-chapter
+64	10.29086/10413/23108	None	10.29086/10413/23108	Discrete time-to-event construction for multiple recurrent state transitions.		dissertation
+65	10.1002/rnc.3388	2016	10.1002/rnc.3388	Event-triggered control for discrete-time linear systems subject to bounded disturbance	International Journal of Robust and Nonlinear Control	journal-article
+66	10.1016/j.fss.2026.109950	2026	10.1016/j.fss.2026.109950	Finite-time bounded observation for fractional-order nonlinear PDE systems: A spatial event-triggered approach	Fuzzy Sets and Systems	journal-article
+67	10.1201/b16463-8	2008	10.1201/b16463-8	Standard State Machine Implementations	Practical UML Statecharts in C/C++	book-chapter
+68	10.1080/00207721.2025.2589465	2025	10.1080/00207721.2025.2589465	Event-triggered constrained static output feedback control for discrete-time positive linear systems with state delay	International Journal of Systems Science	journal-article
+69	10.1016/j.automatica.2018.11.035	2019	10.1016/j.automatica.2018.11.035	Event-triggered and self-triggered control for linear systems based on reachable sets	Automatica	journal-article
+70	10.1016/s0165-0114(98)00358-3	1999	10.1016/s0165-0114(98)00358-3	Synthesis of adaptive linear-time-invariant controllers by fuzzy logic controllers	Fuzzy Sets and Systems	journal-article
+71	10.5220/0008855603670372	2019	10.5220/0008855603670372	Event-triggered Observers-based Output Feedback H∞ Control for Linear Time-invariant Systems with Quantization	Proceedings of 5th International Conference on Vehicle, Mechanical and Electrical Engineering	proceedings-article
+72	10.1016/j.fss.2007.11.009	2008	10.1016/j.fss.2007.11.009	Simulation of discrete linear time-invariant fuzzy dynamic systems	Fuzzy Sets and Systems	journal-article
+73	10.1038/s41467-018-04964-5	2018	10.1038/s41467-018-04964-5	Clustering huge protein sequence sets in linear time	Nature Communications	journal-article
+74	10.1016/j.fss.2021.08.005	2022	10.1016/j.fss.2021.08.005	Event-based adaptive fuzzy fixed-time control for nonlinear interconnected systems with non-affine nonlinear faults	Fuzzy Sets and Systems	journal-article
+75	10.1007/978-3-030-07644-3_8	2019	10.1007/978-3-030-07644-3_8	Finite-Time Stability of Standard Systems Sets	Qualitative Analysis of Set-Valued Differential Equations	book-chapter
+76	10.1007/978-3-319-28599-3_5	2016	10.1007/978-3-319-28599-3_5	Time Invariant State Space Models	Multivariate Time Series With Linear State Space Structure	book-chapter
+77	10.1049/ic:20050431	2005	10.1049/ic:20050431	An overview of the Environment Agency's new time-series data exchange standard	2005 IEE Water Event	proceedings-article
+78	10.3934/proc.2011.2011.265	2011	10.3934/proc.2011.2011.265	Finite extinction time property for a delayed linear problem on a manifold without boundary	Conference Publications 2011	book-chapter
+79	10.20944/preprints202505.2413.v1	2025	10.20944/preprints202505.2413.v1	The Structural Closure Property of Linear Time-Invariant Invertible Systems		posted-content
+80	10.1016/j.fss.2005.05.021	2005	10.1016/j.fss.2005.05.021	Fuzzy rule-based combination of linear and switching state-feedback controllers	Fuzzy Sets and Systems	journal-article
+81	10.1016/j.automatica.2020.109358	2021	10.1016/j.automatica.2020.109358	A generalization of linear positive systems with applications to nonlinear systems: Invariant sets and the Poincaré–Bendixson property	Automatica	journal-article
+82	10.1109/lcsys.2020.3034660	2021	10.1109/lcsys.2020.3034660	An Efficient Event-Based State Estimator for Linear Discrete-Time System With Multiplicative Measurement Noise	IEEE Control Systems Letters	journal-article
+83	10.2139/ssrn.2679620	2013	10.2139/ssrn.2679620	Nevada's New Anti-SLAPP Law: The Silver State Sets the Gold Standard	SSRN Electronic Journal	journal-article
+84	10.21203/rs.3.rs-2581995/v1	2023	10.21203/rs.3.rs-2581995/v1	Eulertigs: minimum plain text representation of k-mer sets without repetitions in linear time		posted-content
+85	10.1201/9781003229698-2	2022	10.1201/9781003229698-2	Robust Event-triggered Control for Continuous-time Linear Systems	Event-Triggered Transmission Protocol in Robust Control Systems	book-chapter
+86	10.1287/lytx.2021.03.07	2021	10.1287/lytx.2021.03.07	State of pandemic one spring later: stubborn virus, beacon of hope	May/June 2021	dataset
+87	10.1609/socs.v9i1.18467	2021	10.1609/socs.v9i1.18467	Stubborn Sets Pruning for Privacy Preserving Planning	Proceedings of the International Symposium on Combinatorial Search	journal-article
+88	10.1201/9781003229698-3	2022	10.1201/9781003229698-3	Robust Event-triggered Control of Discrete-time Linear Systems	Event-Triggered Transmission Protocol in Robust Control Systems	book-chapter
+89	10.1007/3-540-56922-7_33	1993	10.1007/3-540-56922-7_33	On-the-fly verification with stubborn sets	Lecture Notes in Computer Science	book-chapter
+90	10.1016/j.laa.2020.07.008	2020	10.1016/j.laa.2020.07.008	The weak Lefschetz property of Gorenstein algebras of codimension three associated to the Apéry sets	Linear Algebra and its Applications	journal-article
+91	10.1109/cac53003.2021.9728586	2021	10.1109/cac53003.2021.9728586	Stabilization of discrete time stochastic linear systems with time delay via event-triggered control	2021 China Automation Congress (CAC)	proceedings-article
+92	10.1007/978-1-4614-3834-2_3	2012	10.1007/978-1-4614-3834-2_3	Reachable Sets of Linear Time-Invariant Systems: From Convex Sets to the Bang-Bang Theorem	Interdisciplinary Applied Mathematics	book-chapter
+93	10.1201/9781003685807-4	2026	10.1201/9781003685807-4	Hybrid Adjusting Variables-Dependent Event-Based Finite-Time State Estimation for Two-Time-Scale Markov Jump Complex Networks	Dynamic Event-Triggered Fault Diagnosis, State Estimation, and Predictive Control for Networked Systems	book-chapter
+94	10.1109/tac.1987.1104567	1987	10.1109/tac.1987.1104567	An algorithm to find maximal state constraint sets for discrete-time linear dynamical systems with bounded controls and states	IEEE Transactions on Automatic Control	journal-article
+95	10.21136/cmj.1992.128364	1992	10.21136/cmj.1992.128364	Two theorems on measurable sets and sets having the Baire property	Czechoslovak Mathematical Journal	journal-article
+96	10.1021/acs.jpcc.9b10335.s001	None	10.1021/acs.jpcc.9b10335.s001	Excited-State Absorption by Linear Response Time-Dependent Density Functional Theory		component
+97	10.70675/9fbc831ez6443z42fbza7f8z0636fbad1731	None	10.70675/9fbc831ez6443z42fbza7f8z0636fbad1731	Fixed-time algebraic distributed state estimation for linear systems		dissertation
+98	10.1007/978-3-030-18228-1_2	2019	10.1007/978-3-030-18228-1_2	Stabilizing Sets for Linear Time-Invariant Continuous-Time Plants	Analytical Design of PID Controllers	book-chapter
+99	10.1016/j.fss.2025.109406	2025	10.1016/j.fss.2025.109406	Finite-time event-triggered prescribed control for stochastic systems with dead-zone	Fuzzy Sets and Systems	journal-article
+100	10.1007/978-3-030-18228-1_4	2019	10.1007/978-3-030-18228-1_4	Stabilizing Sets for Linear Time-Invariant Discrete-Time Plants	Analytical Design of PID Controllers	book-chapter

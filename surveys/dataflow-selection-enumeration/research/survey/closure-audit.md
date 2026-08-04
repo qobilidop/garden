@@ -1316,3 +1316,34 @@ If round 37 reopens the map, round 38 is retired unexecuted. If both qualify,
 they establish the required two-round no-add sequence only for the recorded
 sources, exact queries, captured rankings, date, and frozen trigger. Independent
 audit remains mandatory before closure.
+
+## Outcome of round 37 and retirement of round 38
+
+Round 37 is not a no-add round. The primary screen and both independent audits
+parsed and title-screened all 1,200 occurrences and independently required
+reopen. Every snapshot has 100 unique source identifiers and ranks 1--100; the
+round contains 1,166 unique identifiers. Six blank-title occurrences are one
+grant, one EU grant, and four versions of a supplemental dataset. The primary
+normalization counted 1,091 unique nonblank titles; both independent
+implementations counted 1,093.
+
+The decisive additions are directly adjacent to the paper's program model and
+semantic boundary. An early paper applies symbolic simulation to synchronous
+programs, while separate work studies schematological equivalence of dataflow
+networks and partially interpreted dataflow networks. Transparent and
+compositional synchronous-dataflow language work further sharpens the network-
+semantics boundary. These papers still do not enumerate the image or inverse
+caller-input fibers of a requested internal selection observer, but they are
+too close to omit from the systematic map.
+
+The complete screen also reconciles timed and frozen-action stubborn sets,
+property-preserving sweep-line POR, infeasible-path pruning for synchronous
+programs, schedule-abstraction POR, event-order and SystemC abstraction,
+multiple-execution abstraction, and ordinary symbolic flow/path enumeration.
+Conference predecessors and container aliases are excluded once. The three
+direct observer/fiber queries return only imaging, sensing, logic, statistics,
+biology, and other homonyms; neither independent auditor found the target
+construction.
+
+Round 37 therefore reopens the map. Round 38's precondition failed; it is
+retired unexecuted and cannot count toward closure.

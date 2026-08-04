@@ -71,8 +71,11 @@ conditional-value precedent, but its observer is compilation presence rather
 than runtime selection behavior.
 Much earlier, the global value graph compactly represented symbolic expression
 values together with their flow across arbitrary control-flow graphs
-@reif1977globalvalue. It is a graph-native symbolic sharing precedent, not an
-input partition indexed by requested internal observations.
+@reif1977globalvalue. Dataflow-network semantics also studies schematological
+equivalence, including partially interpreted networks
+@rabinovich1996schematological @rabinovich1997partial. These are graph-native
+symbolic sharing and network-equivalence precedents, not input partitions
+indexed by requested internal observations.
 
 Selection observations choose a particular intensional quotient of these
 executions. They discard ordinary control history, retain the outcome of every
@@ -88,10 +91,15 @@ General symbolic path simulation has also been embedded as a feasibility
 service inside path-sensitive interprocedural dataflow analysis
 @hampapuram2005pathsimulation. That integration answers client path queries;
 it does not emit the complete requested-event image and inverse input fibers.
-Symbolic simulation has separately been extended to synchronous dataflow
-programs with timers @baudart2019timers. That language model is close to this
-paper's dataflow setting, but its output remains symbolic executions rather
-than a sparse requested-site observation partition.
+Symbolic simulation has separately been applied directly to synchronous
+programs @garriou2002synchronous and extended to synchronous dataflow programs
+with timers @baudart2019timers. That language model is close to this paper's
+dataflow setting, but its output remains symbolic executions rather than a
+sparse requested-site observation partition.
+Synchronous dataflow language design also has explicit transparency and
+compositionality lines @cheung2021transparent @benveniste2000compositional.
+Their semantic and compilation boundaries organize whole program networks;
+they do not derive an input-indexed sparse map at one requested result.
 
 Delayed-choice execution is an especially instructive neighbor. A bounded
 nondeterministic value remains in a shared suspension until a non-copy use

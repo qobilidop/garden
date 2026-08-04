@@ -1,0 +1,102 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1007/11823230_27	2006	10.1007/11823230_27	Path-Sensitive Dataflow Analysis with Iterative Refinement	Lecture Notes in Computer Science	book-chapter
+2	10.1145/1108768.1108808	2006	10.1145/1108768.1108808	Symbolic path simulation in path-sensitive dataflow analysis	ACM SIGSOFT Software Engineering Notes	journal-article
+3	10.1145/1108792.1108808	2005	10.1145/1108792.1108808	Symbolic path simulation in path-sensitive dataflow analysis	Proceedings of the 6th ACM SIGPLAN-SIGSOFT workshop on Program analysis for software tools and engineering	proceedings-article
+4	10.1109/cscwd68734.2026.11582111	2026	10.1109/cscwd68734.2026.11582111	Dataflow-Based Path Pruning in Symbolic Execution for Hardware Verification	2026 29th International Conference on Computer Supported Cooperative Work in Design (CSCWD)	proceedings-article
+5	10.51408/csit2025_44	2025	10.51408/csit2025_44	Program Path Feasibility Through Symbolic Execution	Proceedings of “Computer Science and Information Technologies” International Conference	proceedings-article
+6	10.21203/rs.3.rs-10066367/v1	2026	10.21203/rs.3.rs-10066367/v1	Enhancing Symbolic Execution of Programs for Interprocedural Control Flow Path Feasibility Analysis		posted-content
+7	10.1145/2442829.2442858	2012	10.1145/2442829.2442858	Improving the accuracy of linear programming solvers with iterative refinement	Proceedings of the 37th International Symposium on Symbolic and Algebraic Computation	proceedings-article
+8	10.1109/iros51168.2021.9636071	2021	10.1109/iros51168.2021.9636071	Iterative Refinement for Real-Time Multi-Robot Path Planning	2021 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)	proceedings-article
+9	10.23919/icact68090.2026.11431363	2026	10.23919/icact68090.2026.11431363	Symbolic Execution for Control Flow Path Feasibility	2026 28th International Conference on Advanced Communications Technology (ICACT)	proceedings-article
+10	10.1006/jsco.1994.1029	1994	10.1006/jsco.1994.1029	Symbolic Local Refinement of Tetrahedral Grids	Journal of Symbolic Computation	journal-article
+11	10.18653/v1/2024.eacl-long.1	2024	10.18653/v1/2024.eacl-long.1	Enhancing Ethical Explanations of Large Language Models through Iterative Symbolic Refinement	Proceedings of the 18th Conference of the European Chapter of the Association for Computational Linguistics (Volume 1: Long Papers)	proceedings-article
+12	10.1109/sips.2014.6986105	2014	10.1109/sips.2014.6986105	Efficient fixed-point refinement of DSP dataflow systems	2014 IEEE Workshop on Signal Processing Systems (SiPS)	proceedings-article
+13	10.1109/isctis58954.2023.10213139	2023	10.1109/isctis58954.2023.10213139	Iterative Refinement via Adaptive Subproblem Generation Algorithm (ASGA) for Anytime Multi-Agent Path Finding	2023 3rd International Symposium on Computer Technology and Information Science (ISCTIS)	proceedings-article
+14	10.1021/acs.jctc.7b00464.s002	None	10.1021/acs.jctc.7b00464.s002	Iterative Molecular DynamicsRosetta Membrane Protein Structure Refinement Guided by Cryo-EM Densities		component
+15	10.1021/acs.jctc.7b00464.s001	None	10.1021/acs.jctc.7b00464.s001	Iterative Molecular DynamicsRosetta Membrane Protein Structure Refinement Guided by Cryo-EM Densities		component
+16	10.31673/2412-9070.2026.318109	2026	10.31673/2412-9070.2026.318109	ITERATIVE REFINEMENT FUNNEL: AN ARCHITECTURAL PATTERN FOR INTERACTIVE DIAGNOSTIC SYSTEMS WITH ASYMMETRIC RESPONSE PROCESSING	Connectivity	journal-article
+17	10.1109/tpami.2023.3307567/mm1	None	10.1109/tpami.2023.3307567/mm1	DeepSFM: Robust Deep Iterative Refinement for Structure From Motion_supp1-3307567.pdf		component
+18	10.1145/96877.96892	1990	10.1145/96877.96892	Dataflow for logic program as substitution manipulator	Proceedings of the international symposium on Symbolic and algebraic computation	proceedings-article
+19	10.1007/978-3-319-77525-8_100184	2019	10.1007/978-3-319-77525-8_100184	Iterative Refinement	Encyclopedia of Big Data Technologies	book-chapter
+20	10.1109/isvlsi.2012.74	2012	10.1109/isvlsi.2012.74	A Dataflow Framework for DSP Algorithm Refinement	2012 IEEE Computer Society Annual Symposium on VLSI	proceedings-article
+21	10.22541/au.176099667.73857014/v1	2025	10.22541/au.176099667.73857014/v1	SyntheticPast: Generating Historically Accurate 360°Panoramic Visualizations through Iterative AI Refinement		posted-content
+22	10.2139/ssrn.5273496	2025	10.2139/ssrn.5273496	Short-Text Clustering Enhancement Based on Semantic-Aware Iterative Refinement		posted-content
+23	10.70675/649bb60az910bz4aaez8a3bza8a9e588b4d9	None	10.70675/649bb60az910bz4aaez8a3bza8a9e588b4d9	Mixed precision iterative refinement for the solution of large sparse linear systems		dissertation
+24	10.1016/s0747-7171(85)80036-5	1985	10.1016/s0747-7171(85)80036-5	Symbolic Iterative Algorithm for Generalised Inversion of Rational Polynomial Matrices	Journal of Symbolic Computation	journal-article
+25	10.1145/3061639.3062260	2017	10.1145/3061639.3062260	Hierarchical Dataflow Modeling of Iterative Applications	Proceedings of the 54th Annual Design Automation Conference 2017	proceedings-article
+26	10.1109/fdl.2017.8303894	2017	10.1109/fdl.2017.8303894	Symbolic simulation of dataflow synchronous programs with timers	2017 Forum on Specification and Design Languages (FDL)	proceedings-article
+27	10.2139/ssrn.6179178	2026	10.2139/ssrn.6179178	Adaptive Patent Claim Generation via Quality-Guided Iterative Refinement		posted-content
+28	10.1137/1.9780898718027.ch12	2002	10.1137/1.9780898718027.ch12	12. Iterative Refinement	Accuracy and Stability of Numerical Algorithms	book-chapter
+29	10.1093/oso/9780198535645.003.0016	1990	10.1093/oso/9780198535645.003.0016	Iterative refinement and reliable computing	Reliable Numerical Commputation	book-chapter
+30	10.1137/25m1736633	2026	10.1137/25m1736633	Iterative Flow Matching: Path Correction and Gradual Refinement for Enhanced Generative Modeling	SIAM Journal on Scientific Computing	journal-article
+31	10.1007/bf00282621	1987	10.1007/bf00282621	An efficient general iterative algorithm for dataflow analysis	Acta Informatica	journal-article
+32	10.1109/dac56929.2023.10247686	2023	10.1109/dac56929.2023.10247686	An Iterative Method for Mapping-Aware Frequency Regulation in Dataflow Circuits	2023 60th ACM/IEEE Design Automation Conference (DAC)	proceedings-article
+33	10.1021/acs.jcim.9b00932.s002	None	10.1021/acs.jcim.9b00932.s002	Using NMR Chemical Shifts and Cryo-EM Density Restraints in Iterative Rosetta-MD Protein Structure Refinement		component
+34	10.1021/acs.jcim.9b00932.s001	None	10.1021/acs.jcim.9b00932.s001	Using NMR Chemical Shifts and Cryo-EM Density Restraints in Iterative Rosetta-MD Protein Structure Refinement		component
+35	10.5220/0014295900004052	2026	10.5220/0014295900004052	Meta Prompting for Clinical AI: Iterative Refinement of GPT-5 in Psychomotor Assessment	Proceedings of the 18th International Conference on Agents and Artificial Intelligence	proceedings-article
+36	10.21203/rs.3.rs-10187492/v1	2026	10.21203/rs.3.rs-10187492/v1	Verifier Exploitation in NLI-Guided Iterative Refinement: A Controlled Empirical Analysis		posted-content
+37	10.5220/0012191300003584	2023	10.5220/0012191300003584	User-Centered Design and Iterative Refinement: Promoting Student Learning with an Interactive Dashboard	Proceedings of the 19th International Conference on Web Information Systems and Technologies	proceedings-article
+38	10.2139/ssrn.6043594	2026	10.2139/ssrn.6043594	"AI-Driven Iterative Refinement: Countering the ""Artistic Slop"" Narrative in Creative Works"		posted-content
+39	10.1145/2593069.2593223	2014	10.1145/2593069.2593223	Symbolic Analysis of Dataflow Applications Mapped onto Shared Heterogeneous Resources	Proceedings of the 51st Annual Design Automation Conference	proceedings-article
+40	10.2139/ssrn.7203093	2026	10.2139/ssrn.7203093	Decoupling Safety Assessment from Code Generation: Iterative Refinement with External Signals		posted-content
+41	10.21203/rs.3.rs-1931986/v1	2022	10.21203/rs.3.rs-1931986/v1	Acceleration of Iterative Refinement for Singular Value Decomposition		posted-content
+42	10.2139/ssrn.7218461	2026	10.2139/ssrn.7218461	Calibrated error regions from the refinement trajectory of iterative optical flow		posted-content
+43	10.5220/0015083100004094	2026	10.5220/0015083100004094	Urban Area Design Refinement via an Iterative Multi-Agent Crowd Simulation Loop	Proceedings of the 16th International Conference on Simulation and Modeling Methodologies, Technologies and Applications	proceedings-article
+44	10.31274/rtd-20200803-398	None	10.31274/rtd-20200803-398	An efficient analytical placement algorithm using cell shifting, iterative local refinement and a hybrid net model		dissertation
+45	10.1021/acs.jpcc.3c06648.s001	None	10.1021/acs.jpcc.3c06648.s001	Machine Learning Interatomic Potentials for Reactive Hydrogen Dynamics at Metal Surfaces Based on Iterative Refinement of Reaction Probabilities		component
+46	10.21236/ada413105	2003	10.21236/ada413105	Finite Element Methods and Iterative Refinement Techniques for Partial Differential Equations Involving Interfaces		report
+47	10.21203/rs.3.rs-9274833/v1	2026	10.21203/rs.3.rs-9274833/v1	An adaptive iterative refinement model usingmulti-scale soft-braid for ECG arrhythmia recognition		posted-content
+48	10.1016/j.jsc.1999.05.001	2004	10.1016/j.jsc.1999.05.001	Symbolic computation for mobile robot path planning	Journal of Symbolic Computation	journal-article
+49	10.1007/978-3-662-03567-2_4	1998	10.1007/978-3-662-03567-2_4	A Meta Scheme for Iterative Refinement of Meshes	Mathematical Visualization	book-chapter
+50	10.1201/b10651-27	2007	10.1201/b10651-27	The Split Feasibility Problem	Applied Iterative Methods	book-chapter
+51	10.14257/ijfgcn.2014.7.3.19	2014	10.14257/ijfgcn.2014.7.3.19	A Method of Path Feasibility Judgment Based on Symbolic Execution and Range Analysis	International Journal of Future Generation Communication and Networking	journal-article
+52	10.1109/ipdpsw59300.2023.00147	2023	10.1109/ipdpsw59300.2023.00147	Optimizing the Critical Path of Distributed Dataflow Graph Algorithms	2023 IEEE International Parallel and Distributed Processing Symposium Workshops (IPDPSW)	proceedings-article
+53	10.1109/71.80141	1990	10.1109/71.80141	Iterative instructions in the Manchester Dataflow Computer	IEEE Transactions on Parallel and Distributed Systems	journal-article
+54	10.1109/iseda65950.2025.11100996	2025	10.1109/iseda65950.2025.11100996	IncreDFlip: Incremental Dataflow-Driven Macro Flipping for Efficient Macro Placement Refinement	2025 International Symposium of Electronics Design Automation (ISEDA)	proceedings-article
+55	10.20944/preprints202410.0470.v1	2024	10.20944/preprints202410.0470.v1	Context-Aware and Task-Specific Prompting with Iterative Refinement for Historical Texts		posted-content
+56	10.2139/ssrn.4656636	2023	10.2139/ssrn.4656636	Diversified Image Inpainting with Transformers and Denoising Iterative Refinement		posted-content
+57	10.1109/lra.2024.3430710/mm1	None	10.1109/lra.2024.3430710/mm1	Feasibility Checking and Constraint Refinement for Shared Control in Assistive Robotics_supp1-3430710.mp4		component
+58	10.1109/synasc.2008.7	2008	10.1109/synasc.2008.7	Towards a Reverse Engineering Dataflow Analysis Framework for Java and C++	2008 10th International Symposium on Symbolic and Numeric Algorithms for Scientific Computing	proceedings-article
+59	10.2139/ssrn.5177684	2025	10.2139/ssrn.5177684	Hirshfeld Atom Refinement on 3d Electron Diffraction Data: The Path to a Free Refinement of Hydrogen Atoms		posted-content
+60	10.2139/ssrn.7095579	2026	10.2139/ssrn.7095579	Toward a Theory of Semantic Fixed Points: Evidence from Iterative Language Model Self-Refinement		posted-content
+61	10.1007/0-387-34600-7_2	None	10.1007/0-387-34600-7_2	Symbolic Model Checking	Series on Integrated Circuits and Systems	book-chapter
+62	10.2172/1173289	2011	10.2172/1173289	GPU-Accelerated Asynchronous Error Correction for Mixed Precision Iterative Refinement		report
+63	10.5220/0013178100003912	2025	10.5220/0013178100003912	Self-Supervised Iterative Refinement for Anomaly Detection in Industrial Quality Control	Proceedings of the 20th International Joint Conference on Computer Vision, Imaging and Computer Graphics Theory and Applications	proceedings-article
+64	10.1016/j.jsc.2015.11.014	2016	10.1016/j.jsc.2015.11.014	The prompter method: A treatment for hard-to-solve iterative functional equations	Journal of Symbolic Computation	journal-article
+65	10.1109/memcod.2014.6961838	2014	10.1109/memcod.2014.6961838	An abstraction-refinement framework for priority-driven scheduling of static dataflow graphs	2014 Twelfth ACM/IEEE Conference on Formal Methods and Models for Codesign (MEMOCODE)	proceedings-article
+66	10.1016/j.jsc.2011.12.038	2012	10.1016/j.jsc.2011.12.038	Discussion on polynomials having polynomial iterative roots	Journal of Symbolic Computation	journal-article
+67	10.1016/j.jsc.2015.06.009	2016	10.1016/j.jsc.2015.06.009	Nearly optimal refinement of real roots of a univariate polynomial	Journal of Symbolic Computation	journal-article
+68	10.1016/j.jsc.2022.08.006	2023	10.1016/j.jsc.2022.08.006	A certified iterative method for isolated singular roots	Journal of Symbolic Computation	journal-article
+69	10.1201/b16485-11	2014	10.1201/b16485-11	Convex Feasibility and Related Problems	Iterative Optimization in Inverse Problems	book-chapter
+70	10.1109/rtas.2016.7461360	2016	10.1109/rtas.2016.7461360	Symbolic Buffer Sizing for Throughput-Optimal Scheduling of Dataflow Graphs	2016 IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS)	proceedings-article
+71	10.2298/fil2326995d	2023	10.2298/fil2326995d	Root-multiplicity and root iterative refinement	Filomat	journal-article
+72	10.1145/2968478.2968489	2016	10.1145/2968478.2968489	A refinement theory for timed-dataflow analysis with support for reordering	Proceedings of the 13th International Conference on Embedded Software	proceedings-article
+73	10.1109/52.311059	1994	10.1109/52.311059	Using iterative refinement to find reusable software	IEEE Software	journal-article
+74	10.21203/rs.3.rs-10319853/v1	2026	10.21203/rs.3.rs-10319853/v1	Toward a Theory of Semantic Fixed Points: Evidence from Iterative Language Model Self-Refinement		posted-content
+75	10.1016/j.jsc.2005.08.002	2006	10.1016/j.jsc.2005.08.002	Gröbner finite path algebras	Journal of Symbolic Computation	journal-article
+76	10.1007/978-94-017-1116-6_15	1991	10.1007/978-94-017-1116-6_15	Iterative Refinement after the Plane Rotations	Computational Methods for General Sparse Matrices	book-chapter
+77	10.47749/t/unicamp.2021.1254071	None	10.47749/t/unicamp.2021.1254071	Iterative optimum-path forest		dissertation
+78	10.1145/2684746.2689110	2015	10.1145/2684746.2689110	FPGA Acceleration of Irregular Iterative Computations using Criticality-Aware Dataflow Optimizations (Abstract Only)	Proceedings of the 2015 ACM/SIGDA International Symposium on Field-Programmable Gate Arrays	proceedings-article
+79	10.1109/glsv.1999.757435	1999	10.1109/glsv.1999.757435	Symbolic multi-level verification of refinement	Proceedings Ninth Great Lakes Symposium on VLSI	proceedings-article
+80	10.1006/jsco.1994.1028	1994	10.1006/jsco.1994.1028	Regular Path Expressions in Feature Logic	Journal of Symbolic Computation	journal-article
+81	10.1109/icde.2016.7498275	2016	10.1109/icde.2016.7498275	Efficient fault-tolerance for iterative graph processing on distributed dataflow systems	2016 IEEE 32nd International Conference on Data Engineering (ICDE)	proceedings-article
+82	10.3724/sp.j.1146.2011.00355	2011	10.3724/sp.j.1146.2011.00355	An Iterative Side Information Refinement Method Based on MHMCP Denoising in Distributed Video Coding	Journal of Electronics &amp; Information Technology	journal-article
+83	10.21236/ada457878	2004	10.21236/ada457878	Experiments with SAT-Based Symbolic Simulation Using Reparameterization in the Abstraction Refinement Framework		report
+84	10.1145/41458.41460	1987	10.1145/41458.41460	A tagged token dataflow machine for computing small, iterative algorithms	ACM SIGARCH Computer Architecture News	journal-article
+85	10.1109/icsess47205.2019.9040767	2019	10.1109/icsess47205.2019.9040767	Detecting Interprocedural Infeasible Paths via Symbolic Propagation and Dataflow Analysis	2019 IEEE 10th International Conference on Software Engineering and Service Science (ICSESS)	proceedings-article
+86	10.1142/9789813238671_0004	2018	10.1142/9789813238671_0004	Iterative methods for computing generalized inverses	Numerical and Symbolic Computations of Generalized Inverses	book-chapter
+87	10.21203/rs.3.rs-10249995/v1	2026	10.21203/rs.3.rs-10249995/v1	Iterative Feedback--Refinement for Faithful Structured Clinical-Note Representation		posted-content
+88	10.23919/ecc.2001.7075875	2001	10.23919/ecc.2001.7075875	Anti-windup compensation method in iterative controller refinement scheme	2001 European Control Conference (ECC)	proceedings-article
+89	10.1109/ase.2013.6693083	2013	10.1109/ase.2013.6693083	SEDGE: Symbolic example data generation for dataflow programs	2013 28th IEEE/ACM International Conference on Automated Software Engineering (ASE)	proceedings-article
+90	10.1007/bf01932150	1977	10.1007/bf01932150	Iterative refinement implies numerical stability	BIT	journal-article
+91	10.21437/interspeech.2025-514	2025	10.21437/interspeech.2025-514	Iterative Refinement, Not Training Objective, Makes HuBERT Behave Differently from wav2vec 2.0	Interspeech 2025	proceedings-article
+92	10.1109/tpami.2024.3388092/mm1	None	10.1109/tpami.2024.3388092/mm1	IG: Integrated Gradient on Iterative Gradient Path for Feature Attribution_supp1-3388092.pdf		component
+93	10.14529/jsfi210301	2021	10.14529/jsfi210301	Evaluating Performance of Mixed Precision Linear Solvers with Iterative Refinement	Supercomputing Frontiers and Innovations	journal-article
+94	10.1049/cp:20050072	2005	10.1049/cp:20050072	Iterative transform parameter refinement for image registration	IEE International Conference on Visual Information Engineering (VIE 2005)	proceedings-article
+95	10.1109/wartia.2014.6976412	2014	10.1109/wartia.2014.6976412	Path sensitive analysis based on dataflow information and program slicing	2014 IEEE Workshop on Advanced Research and Technology in Industry Applications (WARTIA)	proceedings-article
+96	10.1017/cbo9780511546990.010	2007	10.1017/cbo9780511546990.010	Automatic generation of symbolic traces	Path-Oriented Program Analysis	book-chapter
+97	10.21203/rs.3.rs-8157609/v1	2026	10.21203/rs.3.rs-8157609/v1	"Solving BMI Feasibility Problems Using ILMI and
+Globally Valid Separating Hyperplane Refinement"		posted-content
+98	10.1145/224170.224318	1995	10.1145/224170.224318	Symbolic array dataflow analysis for array privatization and program parallelization	Proceedings of the 1995 ACM/IEEE conference on Supercomputing (CDROM)  - Supercomputing '95	proceedings-article
+99	10.1109/synasc.2014.28	2014	10.1109/synasc.2014.28	Guiding Random Test Generation for Intra-class Dataflow Coverage	2014 16th International Symposium on Symbolic and Numeric Algorithms for Scientific Computing	proceedings-article
+100	10.1109/cdc.2014.7039364	2014	10.1109/cdc.2014.7039364	Feedback refinement relations for symbolic controller synthesis	53rd IEEE Conference on Decision and Control	proceedings-article
