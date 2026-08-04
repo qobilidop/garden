@@ -28,6 +28,9 @@ already supplies:
   output cone while reusing complete global test vectors across cones;
 - complete duplicate-free OutputP enumeration of full-dimensional affine
   hyperplane cells; and
+- exact topological mode enumeration for composed affine hybrid components,
+  including residual substitution into downstream guards, infeasibility
+  pruning, and equivalent PWA guard-plus-map output; and
 - exact dense ReLU activation-pattern enumeration, including methods that emit
   an exact polyhedral guard and affine residual, reconstruct the full cell
   complex, or parallelize layerwise enumeration;
@@ -159,6 +162,20 @@ inputs, project each least computation to selected site/outcome events, and
 enumerate the exact inverse-image fibers. That change in quantification must
 be explicit; “demand-sensitive evaluation” alone is established.
 
+Compositional hybrid mode enumeration adds a ninth boundary. Geyer, Torrisi,
+and Morari already topologically refine the polyhedral cases of loop-free
+component compositions, substitute each upstream affine residual into
+downstream event guards, discard infeasible intersections, and emit an exact
+PWA guard with state/output affine maps. Their feedback-arc treatment also
+extends beyond acyclic graphs in its specialized real-polyhedral model. Thus
+guarded residual substitution, compositional infeasibility pruning, and exact
+guard-plus-affine output cannot be contributions here. Their representation is
+dense within every processed component and may distinguish event markings that
+select the same mode or dynamics. The remaining distinction is the
+requested-root-relative sparse observer over arbitrary typed shared DAGs,
+including contextual static site identity and explicit preservation of
+observed equal-valued outcomes.
+
 ## Route decision
 
 - The manuscript is a survey with a unifying formal synthesis.
@@ -169,6 +186,7 @@ be explicit; “demand-sensitive evaluation” alone is established.
   reductions—projected AllSMT, fixed-alphabet Boolean atoms, and IOSTS input
   equivalence classes—plus ordinary decision-tree/ADD compilation and direct
   demand predecessors in stream dataflow, Korat, Lindblad's generator, and
-  Lazy SmallCheck.
+  Lazy SmallCheck. Exact affine guarded composition is independently inherited
+  from compositional hybrid mode enumeration.
 - A future CAV tool paper remains possible only after direct baseline
   experiments show a validation or scalability frontier.

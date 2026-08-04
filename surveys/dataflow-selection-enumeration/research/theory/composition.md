@@ -177,6 +177,16 @@ r(x) &= r_H(\widehat r_G(x)),\\
 
 Discard pairs whose \(c\) is infeasible.
 
+The guard/residual algebra in these two equations is established in the
+piecewise-affine special case. Geyer, Torrisi, and Morari's compositional mode
+enumerator topologically refines component polyhedra, substitutes upstream
+affine output maps into downstream event guards, composes the affine maps, and
+prunes empty intersections. The theorem below is therefore not a claim of a
+new guarded-composition operator. Its graph-specific content is that a
+requested output mask induces exactly the boundary demand used to choose the
+upstream summary, and that contextual sparse observations agree with the
+flattened shared graph.
+
 ### Guarded-summary composition theorem
 
 The feasible records above are an exact observation partition for the

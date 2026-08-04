@@ -660,9 +660,9 @@ its own proof.
 | Exactly-once coverage and (K+1) oracle calls | elementary / inherited | Elementary full-fiber blocking and the naive projected-AllSMT baseline. Not an enumeration-class result. |
 | Projected enumeration completeness | inherited | Standard AllSMT or projected model enumeration once the activation encoding is proved faithful. |
 | Disjoint guarded residual representation | inherited after instrumentation | Value-summary and symbolic-merging frameworks already provide it; grouping by the declared ghost observer must be enforced. |
-| Exact sequential composition | requires a new proof | The graph-substitution and contextual-identity instance needs proof, while selective and relational composition are inherited. |
+| Exact sequential composition | requires a new graph-specific proof | The graph-substitution, requested-boundary-demand, and contextual-identity instance needs proof. Selective and relational composition are inherited, and Geyer et al. 2010 already instantiate residual substitution, guard conjunction, and infeasibility pruning for affine component systems. |
 | Parallel sharing and finite-iteration laws | elementary | Set union and finite induction once occurrence names are fixed. |
-| Guarded-summary relational composition | inherited | Ordinary relational composition; it may materialize a cross-product. |
+| Guarded-summary relational composition | inherited | Ordinary relational composition; Geyer et al. 2010 give the direct PWA component case. It may materialize a cross-product. |
 | Coarsest equivalence preserving the declared observer | elementary / tautological | It is the kernel of a function. |
 | Full abstraction for ordinary value contexts | false | Equal-valued observed alternatives are distinguished by the observation. |
 | Full abstraction for a context that can read ghost events | elementary / by construction | The observer primitive makes the result tautological. |
@@ -688,7 +688,8 @@ The graph-specific correspondence, especially the absence of explicit
 unobserved-site literals and the treatment of sharing/context, genuinely needs a
 proof. It is the strongest formal statement not obtained by citing one prior
 theorem verbatim. Nevertheless, its present proof burden is structural
-induction plus relational composition. It should be positioned as a unifying
+induction plus relational composition; the affine residual-substitution core is
+already explicit in Geyer et al. 2010. It should be positioned as a unifying
 survey theorem or a foundation for an implementation, not as a fundamentally
 new symbolic-execution algorithm.
 

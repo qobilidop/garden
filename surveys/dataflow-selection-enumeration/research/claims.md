@@ -99,8 +99,12 @@ proof obligations, and evidence.
   encoding.
 - **Resolution:** Output-demand-parametric summaries do compose exactly by
   propagating the caller's boundary-demand mask and unioning namespaced event
-  maps. This is selective/relational composition. It has no general compactness
-  or output-delay advantage over flat activation instrumentation.
+  maps. This is selective/relational composition. Geyer et al. 2010 already
+  instantiate the guard conjunction and residual-substitution core for
+  topologically composed affine hybrid components, including infeasibility
+  pruning. The graph-specific theorem is equality with flattening under
+  requested-root demand and contextual site identity; it has no general
+  compactness or output-delay advantage over flat activation instrumentation.
 
 ## H06 — Full-observation blocking takes one satisfiable query per result
 
@@ -159,6 +163,7 @@ proof obligations, and evidence.
   enumeration of every arrangement cell, Sleumer improves the fixed-dimension
   arithmetic bound, and Rada and Černý give a later complete duplicate-free
   incremental formulation; Serra et al. enumerate feasible ReLU patterns;
+  Geyer et al. compose affine event cells into exact PWA guard/residual pairs;
   Tran's stars and Robinson's explicit PWA conversion emit exact guards with
   affine images before RPM's adjacency walk; Masden and Berzins recover richer
   cell complexes; Wang merges activation cells into maximal equal-affine
