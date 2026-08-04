@@ -1,0 +1,4 @@
+rank	source_id	year	doi	title	venue	type
+1	2a14bfb9115f5c5fb36acbcfa3862cdfac6e449a	2021	-	Constrained Deep Learning Based Nonlinear Model Predictive Control	arXiv	preprint
+2	8c2da00f7365c252430415423a1b7352bc40968e	2020	-	Simulation studies on regional predictive control	arXiv	preprint
+3	3f5a733177fbf9a93315790d002f0d431346eaab	2020	10.1109/PC52310.2021.9447473	State space sets with common optimal feedback laws for nonlinear MPC	International Conference on Process Control	conference paper

@@ -1,7 +1,7 @@
 # konig2020common — requested-first-action grouping in explicit MPC
 
-- **Status:** deep-read; closest output-projection baseline; forward citation
-  chase pending before critical freeze
+- **Status:** deep-read; closest output-projection baseline; primary and
+  forward citation chases complete
 - **Primary source:** https://arxiv.org/abs/2009.08764
 - **Version read:** arXiv v1, 18 September 2020
 - **Bibliography key:** `konig2020common`
@@ -48,3 +48,19 @@ first action. Our observer instead records the sparse selection sites reached
 from a requested root and retains their outcome identities even when residual
 values agree. The coordinate domain also varies by enabled graph reachability,
 not merely by projection of a dense optimization history.
+
+## Forward-citation audit
+
+Semantic Scholar exposes exactly three citing records and no continuation;
+Google Scholar independently reports three. All three citation edges were
+checked in primary sources. `mitze2021common` generalizes a sufficient
+same-first-action criterion to nonlinear MPC but implements only sound inner
+coverage. `konig2020simulation` caps and empirically evaluates the seed's own
+incomplete polytope enumeration. A withdrawn DNN approximation paper cites the
+seed only as background and does not meet the frozen trigger.
+
+No citing work proves that the active-subset classes are the maximal kernel of
+the first-action function, enumerates every such class without duplication, or
+gives an output-sensitive or asymptotic enumeration bound. The forward audit
+therefore closes the seed without changing its role as the exact projection
+baseline.

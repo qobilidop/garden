@@ -307,6 +307,15 @@ frontier. The only algorithmic successor, symmetry-aware White Whale
 enumeration, adds no stronger generic theorem. This audit therefore closes a
 bit-complexity qualification without reopening the semantic map.
 
+The pending output-projection chase is also complete. The accessible complete
+Semantic Scholar neighborhood for König--Mönnigmann contains three works,
+matching Google Scholar's independent count; every edge was primary-verified.
+Mitze et al. broaden the sufficient same-first-action criterion to nonlinear
+MPC, and a companion simulation paper caps and empirically evaluates the
+seed's incomplete enumeration. Neither provides a maximal quotient, complete
+or nonredundant enumeration, or a stronger complexity theorem. The companion
+is cataloged, but it adds no new cluster and does not reopen the map.
+
 ## Independent audit
 
 After both replacement rounds qualify, a reviewer who did not choose the
