@@ -1818,3 +1818,58 @@ residuals.
 
 Round 47 cannot count toward closure. Round 48's precondition failed; it is
 retired unexecuted and cannot count toward the required no-add sequence.
+
+## Replacement round `closure-replacement-49`: Crossref
+
+Frozen on 2026-08-04 after reconciliation and independent adjudication of
+round 47, and before any round-49 or round-50 query was executed. Source:
+Crossref REST API. Each exact phrase is searched with `query.bibliographic`,
+sorted by relevance, with the first 100 records exported unless fewer are
+returned. A round qualifies as no-add only if complete screening adds neither
+a conceptual cluster nor a plausible close competitor. A publication within
+an already represented lineage does not reopen the map unless it changes the
+compared semantic object, guarantee, or program-model boundary, or is
+materially closer to the target construction.
+
+| ID | Exact query |
+|---|---|
+| C49-01 | `execution trace graph complete dataflow all admissible trajectories` |
+| C49-02 | `dataflow process network execution trace graph complete dependencies` |
+| C49-03 | `tokens signals conformance dataflow hardware throughput latency` |
+| C49-04 | `bounded dataflow networks latency insensitive circuit refinement` |
+| C49-05 | `maximal minimal dynamic Petri net slicing token contribution` |
+| C49-06 | `timed aggregate graph observation policy Petri net` |
+| C49-07 | `Kahn processes actors translation firing semantics` |
+| C49-08 | `fully abstract trace model dataflow asynchronous networks` |
+| C49-09 | `minimal event observation policy supervisor equivalence` |
+| C49-10 | `requested selection observation caller input inverse fiber` |
+| C49-11 | `sparse internal event map symbolic residual` |
+| C49-12 | `complete observation image requested dataflow site inputs` |
+
+## Replacement round `closure-replacement-50`: arXiv
+
+Execute only if round 49 adds neither a conceptual cluster nor a plausible
+close competitor. Source: arXiv API. Frozen on 2026-08-04 before any round-49
+or round-50 execution. Each phrase is submitted as the conjunction of all
+alphanumeric terms across arXiv's `all` field, sorted by relevance, with at
+most the first 100 records and abstracts exported.
+
+| ID | Exact query |
+|---|---|
+| C50-01 | `execution trace graph complete dataflow all admissible trajectories` |
+| C50-02 | `dataflow process network execution trace graph complete dependencies` |
+| C50-03 | `tokens signals conformance dataflow hardware throughput latency` |
+| C50-04 | `bounded dataflow networks latency insensitive circuit refinement` |
+| C50-05 | `maximal minimal dynamic Petri net slicing token contribution` |
+| C50-06 | `timed aggregate graph observation policy Petri net` |
+| C50-07 | `Kahn processes actors translation firing semantics` |
+| C50-08 | `fully abstract trace model dataflow asynchronous networks` |
+| C50-09 | `minimal event observation policy supervisor equivalence` |
+| C50-10 | `requested selection observation caller input inverse fiber` |
+| C50-11 | `sparse internal event map symbolic residual` |
+| C50-12 | `complete observation image requested dataflow site inputs` |
+
+If round 49 reopens the map, round 50 is retired unexecuted. If both qualify,
+they establish the required two-round no-add sequence only for the recorded
+sources, exact queries, captured rankings, date, and frozen trigger. Complete
+primary and independent audits remain mandatory before closure.
