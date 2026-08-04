@@ -494,6 +494,60 @@ catalog dispositions were reconciled before the replacement batches below were
 chosen. The map remains open until two new prospective no-add rounds and a new
 independent audit succeed.
 
+## Replacement round `closure-replacement-21`: Semantic Scholar
+
+This round was frozen on 2026-08-04 after the neural-tree, exact-output-region,
+Affinitree, and BNN-diagram additions were fully reconciled and before any of
+the queries below was submitted. Source: Semantic Scholar Graph API. Each query
+exports at most the first 100 relevance-ranked records, including indexed
+abstracts. Every title and available abstract is screened under the unchanged
+two-part close-competitor trigger; plausible records receive primary-source
+review.
+
+| ID | Exact query |
+|---|---|
+| C21-01 | `equivalent compact neural network decision tree exact transformation` |
+| C21-02 | `exact output regions policy neural network decision tree` |
+| C21-03 | `ReLU controller decision tree infeasible activation pruning` |
+| C21-04 | `piecewise linear neural network affine decision tree symbolic execution` |
+| C21-05 | `neural controller piecewise affine compositional exact regions` |
+| C21-06 | `exact binarized neural network BDD output class` |
+| C21-07 | `neural network decision diagram exact equivalence` |
+| C21-08 | `hidden activation existential elimination neural BDD` |
+| C21-09 | `requested output relative neural network region enumeration` |
+| C21-10 | `demand guided symbolic execution neural decision structure` |
+| C21-11 | `contextual internal event observer dataflow graph exact fiber` |
+| C21-12 | `projected model enumeration guarded residual function` |
+
+## Replacement round `closure-replacement-22`: Crossref
+
+Execute only if round 21 adds neither a conceptual cluster nor a plausible
+close competitor. This round was also frozen on 2026-08-04 without previewing
+any query. Source: Crossref REST API. Each query exports the first 100
+relevance-ranked records. The wording differs deliberately while targeting the
+same exact-neural-observer and general graph-observer boundaries.
+
+| ID | Exact query |
+|---|---|
+| C22-01 | `feasibility pruned exact neural policy tree` |
+| C22-02 | `output action partition ReLU argmax equivalent tree` |
+| C22-03 | `compressed decision tree exact reinforcement learning policy` |
+| C22-04 | `affine decision structure deep neural network exact` |
+| C22-05 | `switched system representation neural controller composition` |
+| C22-06 | `binary neural network reduced decision diagram exact class` |
+| C22-07 | `OBDD SDD compilation neural classifier explanation` |
+| C22-08 | `eliminate intermediate activations BDD neural network` |
+| C22-09 | `output quotient activation regions neural network` |
+| C22-10 | `sparse observed decisions symbolic execution exact preimage` |
+| C22-11 | `requested root selection observation term graph residual` |
+| C22-12 | `totalized observer projected AllSMT symbolic residual` |
+
+If either round adds a cluster or plausible close competitor, both-round
+closure is abandoned, the addition is reconciled, and two later prospective
+rounds are required. Two no-add outcomes establish closure only for these
+captured rankings, sources, date, and trigger; they do not establish world
+literature completeness.
+
 ## Independent audit
 
 After both replacement rounds qualify, a reviewer who did not choose the
