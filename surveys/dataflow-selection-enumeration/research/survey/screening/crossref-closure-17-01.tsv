@@ -1,0 +1,103 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1007/bfb0120787	1978	10.1007/bfb0120787	On the parametric nonlinear complementarity problem	Mathematical Programming Studies	book-chapter
+2	10.3233/978-1-58603-724-6-i	2007	10.3233/978-1-58603-724-6-i	Synergy in Polycentric Urban Regions	Sustainable Urban Areas	book-chapter
+3	10.1007/bf01609013	1978	10.1007/bf01609013	A parametric linear complementarity problem involving derivatives	Mathematical Programming	journal-article
+4	10.1080/02331939408843953	1994	10.1080/02331939408843953	A procedure for the one-parametric linear complementarity problem	Optimization	journal-article
+5	10.1007/bf01584990	1972	10.1007/bf01584990	Monotone solutions of the parametric linear complementarity problem	Mathematical Programming	journal-article
+6	10.1021/acs.analchem.1c03740.s001	None	10.1021/acs.analchem.1c03740.s001	Extending Native Top-Down Electron Capture Dissociation to MDa Immunoglobulin Complexes Provides Useful Sequence Tags Covering Their Critical Variable Complementarity-Determining Regions		component
+7	10.1016/0377-2217(93)e0295-9	1995	10.1016/0377-2217(93)e0295-9	The linear complementarity problem with a parametric input	European Journal of Operational Research	journal-article
+8	10.1007/bf02133868	1976	10.1007/bf02133868	Historical deformation analysis of elastoplastic structures as a parametric linear complementarity problem	Meccanica	journal-article
+9	10.1007/978-3-030-61821-6_3	2021	10.1007/978-3-030-61821-6_3	Algebraic Properties of Invariancy Regions	SpringerBriefs in Optimization	book-chapter
+10	10.1080/02331930701779955	2008	10.1080/02331930701779955	Critical sets in one-parametric mathematical programs with complementarity constraints	Optimization	journal-article
+11	10.1137/0316004	1978	10.1137/0316004	A Maximization Problem Related to Parametric Linear Complementarity	SIAM Journal on Control and Optimization	journal-article
+12	10.4064/am-24-2-113-125	1997	10.4064/am-24-2-113-125	The implicit generalized order complementarity problem and Leontief's input-output model	Applicationes Mathematicae	journal-article
+13	10.1007/springerreference_72411	None	10.1007/springerreference_72411	Linear Complementarity Problem	SpringerReference	reference-entry
+14	10.1007/978-3-642-46955-8_64	1994	10.1007/978-3-642-46955-8_64	K-Fold Complementarity Problem and the Order Complementarity Problem	Operations Research ’93	book-chapter
+15	10.1023/a:1022699624785	1997	10.1023/a:1022699624785	On the Parametric Linear Complementarity Problem	Journal of Optimization Theory and Applications	journal-article
+16	10.1007/0-306-48332-7_211	2001	10.1007/0-306-48332-7_211	Branch and price: Integer programming with column generation; Convex-simplex algorithm; Decomposition techniques for MILP: Lagrangian relaxation; Equivalence between nonlinear complementarity problem and fixed point problem; Generalized nonlinear complementarity problem; Integer programming; Integer programming: Algebraic methods; Integer programming: Branch and bound methods; Integer programming: Branch and cut algorithms; Integer programming: Cutting plane algorithms; Integer programming duality; Integer programming: Lagrangian relaxation; LCP: Pardalos–Rosen mixed integer formulation; Lemke method; Linear complementarity problem; Linear programming; Mixed integer classification problems; Multi-objective integer linear programming; Multi-objective mixed integer programming; Multiparametric mixed integer linear programming; Order complementarity; Parametric linear programming: Cost simplex algorithm; Parametric mixed integer nonlinear optimization; Principal pivoting methods for linear complementarity problems; Sequential simplex method; Set covering, packing and partitioning problems; Simplicial pivoting algorithms for integer programming; Stochastic integer programming: Continuity, stability, rates of convergence; Stochastic integer programs; Time-dependent traveling salesman problem; Topological methods in complementarity theory INTEGER LINEAR COMPLEMENTARY PROBLEM	Encyclopedia of Optimization	book-chapter
+17	10.1007/s10479-010-0770-6	2010	10.1007/s10479-010-0770-6	A method for solving the general parametric linear complementarity problem	Annals of Operations Research	journal-article
+18	10.1007/springerreference_72288	None	10.1007/springerreference_72288	Generalized Nonlinear Complementarity Problem	SpringerReference	reference-entry
+19	10.1007/bf00935272	1982	10.1007/bf00935272	On the parametric linear complementarity problem: A generalized solution procedure	Journal of Optimization Theory and Applications	journal-article
+20	10.1007/springerreference_72242	None	10.1007/springerreference_72242	Equivalence Between Nonlinear Complementarity Problem and Fixed Point Problem	SpringerReference	reference-entry
+21	10.12775/tmna.1996.038	1996	10.12775/tmna.1996.038	The Fold complementarity problem and the order complementarity problem	Topological Methods in Nonlinear Analysis	journal-article
+22	10.1109/iwstm.1997.629413	None	10.1109/iwstm.1997.629413	A systematic approach to identify critical yield sensitive parametric parameters	1997 2nd International Workshop on Statistical Metrology	proceedings-article
+23	10.1016/s0377-2217(99)00401-4	2001	10.1016/s0377-2217(99)00401-4	A new resolution method for the parametric linear complementarity problem	European Journal of Operational Research	journal-article
+24	10.1016/b978-0-12-813389-7.00001-5	2017	10.1016/b978-0-12-813389-7.00001-5	The Complementarity Problem	Complementarity and Variational Inequalities in Electronics	book-chapter
+25	10.7717/peerj.8408/supp-19	None	10.7717/peerj.8408/supp-19	Table S2: Root Mean Square Deviation between any two templates in different Framework Regions and Complementarity Determining Regions		component
+26	10.1007/s10589-008-9182-9	2010	10.1007/s10589-008-9182-9	A one-parametric class of merit functions for the second-order cone complementarity problem	Computational Optimization and Applications	journal-article
+27	10.1201/9781003072119-18	2020	10.1201/9781003072119-18	Parametric Linear Complementarity Problems	mathematical programming with data perturbations	book-chapter
+28	10.1155/2013/571927	2013	10.1155/2013/571927	A Two-Parametric Class of Merit Functions for the Second-Order Cone Complementarity Problem	Journal of Applied Mathematics	journal-article
+29	10.5422/fordham/9780823274666.003.0009	2016	10.5422/fordham/9780823274666.003.0009	Women’s Virtue, Church Leadership, and the Problem of Gender Complementarity	Comparing Faithfully	book-chapter
+30	10.1016/j.jmaa.2009.01.064	2009	10.1016/j.jmaa.2009.01.064	A one-parametric class of merit functions for the symmetric cone complementarity problem	Journal of Mathematical Analysis and Applications	journal-article
+31	10.7554/elife.28477.016	None	10.7554/elife.28477.016	Table 5. Bias in base substitution during somatic hypermutation of TcR alpha V genes within all sequence regions (ALL), framework regions (FR), or complementarity determining regions (CDR).		component
+32	10.7717/peerj.11267/supp-2	None	10.7717/peerj.11267/supp-2	Supplemental Information 2: Non-parametric test’s output files.		component
+33	10.1016/0022-460x(80)90482-4	1980	10.1016/0022-460x(80)90482-4	Parametric time domain analysis of the multiple input/scalar output problem: The source identification problem	Journal of Sound and Vibration	journal-article
+34	10.1142/9789811233296_0007	2021	10.1142/9789811233296_0007	Complementarity in Input–Output Analysis and Stochastics	Efficiency and Input-Output Analyses	book-chapter
+35	10.1007/bfb0084659	1992	10.1007/bfb0084659	The order complementarity problem	Lecture Notes in Mathematics	book-chapter
+36	10.1007/bfb0084660	1992	10.1007/bfb0084660	The implicit complementarity problem	Lecture Notes in Mathematics	book-chapter
+37	10.1090/crmp/048/04	2009	10.1090/crmp/048/04	An output-sensitive algorithm for multi-parametric LCPs with sufficient matrices	CRM Proceedings and Lecture Notes	book-chapter
+38	10.7554/elife.28477.015	None	10.7554/elife.28477.015	Table 4. Target nucleotide mutation frequency in DGYW/WRCH or WA/TW mutation hotspots within framework regions (FR) and complementarity determining regions (CDR).		component
+39	10.1007/springerreference_72277	None	10.1007/springerreference_72277	Generalizations of Interior Point Methods for the Linear Complementarity Problem	SpringerReference	reference-entry
+40	10.1137/1.9780898719000.bm	2009	10.1137/1.9780898719000.bm	Back Matter	The Linear Complementarity Problem	other
+41	10.1109/aisomt64170.2024.10992074	2024	10.1109/aisomt64170.2024.10992074	Output Gain Characteristics of a Phase-Sensitive Fiber Optic Parametric Amplifier Based on HNLF	2024 IEEE Academic International Symposium on Optoelectronics and Microelectronics Technology (AISOMT)	proceedings-article
+42	10.1137/1.9780898719000.ch1	2009	10.1137/1.9780898719000.ch1	1. Introduction	The Linear Complementarity Problem	book-chapter
+43	10.2172/7043013	1990	10.2172/7043013	A monotone complementarity problem in Hilbert space		report
+44	10.2172/6930669	1990	10.2172/6930669	A generalized complementarity problem in Hilbert space		report
+45	10.1137/1.9780898719000.ch2	2009	10.1137/1.9780898719000.ch2	2. Background	The Linear Complementarity Problem	book-chapter
+46	10.1137/1.9780898719000.fm	2009	10.1137/1.9780898719000.fm	Front Matter	The Linear Complementarity Problem	other
+47	10.1109/9.920789	2001	10.1109/9.920789	A parametric solution to the pole assignment problem using dynamic output-feedback	IEEE Transactions on Automatic Control	journal-article
+48	10.1016/j.ymssp.2022.109506	2022	10.1016/j.ymssp.2022.109506	A parametric frequency domain approach to analysis and design of critical design parameters of nonlinear energy harvesting systems: Parametric output spectrum and power generation functions	Mechanical Systems and Signal Processing	journal-article
+49	10.1137/1.9780898719000.ch4	2009	10.1137/1.9780898719000.ch4	4. Pivoting Methods	The Linear Complementarity Problem	book-chapter
+50	10.7717/peerj.8408/supp-8	None	10.7717/peerj.8408/supp-8	"Figure S7: Amino acid sequence length distribution in different Framework Regions and Complementarity Determining Regions from the total dataset of V
+                      <sub>H</sub>
+                      H sequences"		component
+51	10.1057/9780230375284_10	1999	10.1057/9780230375284_10	Capital–Skill Complementarity, Income Distribution, and Output Accounting (1975)	Tackling Inequality	book-chapter
+52	10.7287/peerj.456v0.1/reviews/3	2014	10.7287/peerj.456v0.1/reviews/3	"Peer Review #3 of ""A complete, multi-level conformational clustering of antibody complementarity-determining regions (v0.1)"""		peer-review
+53	10.1137/1.9780898719000.ch5	2009	10.1137/1.9780898719000.ch5	5. Iterative Methods	The Linear Complementarity Problem	book-chapter
+54	10.2172/505385	1995	10.2172/505385	An NE/SQP method for the bounded nonlinear complementarity problem		report
+55	10.22541/au.160569370.05346615/v1	2020	10.22541/au.160569370.05346615/v1	Positive charge in the complementarity-determining regions of synthetic nanobody-Fc fusion prevents aggregation		posted-content
+56	10.1007/0-306-48332-7_122	2001	10.1007/0-306-48332-7_122	EQUIVALENCE BETWEEN NONLINEAR COMPLEMENTARITY PROBLEM AND FIXED POINT PROBLEM	Encyclopedia of Optimization	book-chapter
+57	10.1016/s0167-6911(97)00136-9	1998	10.1016/s0167-6911(97)00136-9	The Linear Dynamic Complementarity Problem is a special case of the Extended Linear Complementarity Problem	Systems &amp; Control Letters	journal-article
+58	10.1007/978-0-387-74759-0_164	2008	10.1007/978-0-387-74759-0_164	Equivalence Between Nonlinear Complementarity Problem and Fixed Point Problem	Encyclopedia of Optimization	book-chapter
+59	10.5220/0005754800580067	2016	10.5220/0005754800580067	A Complementarity Problem Formulation for Chance-constraine Games	Proceedings of 5th the International Conference on Operations Research and Enterprise Systems	proceedings-article
+60	10.1017/cbo9780511761782.008	2010	10.1017/cbo9780511761782.008	Linear Complementarity Problem	Economic Foundations of Symmetric Programming	book-chapter
+61	10.7717/peerj.11760/supp-4	None	10.7717/peerj.11760/supp-4	Supplemental Information 4: Activated brain regions from parametric modulation analysis.		component
+62	10.5784/30-1-140-72	None	10.5784/30-1-140-72	n interior-point method for Cartesian $P_{*}(\kappa)$-linear complementarity problem over symmetric cones		component
+63	10.1007/bfb0120779	1978	10.1007/bfb0120779	Some pivot schemes for the linear complementarity problem	Mathematical Programming Studies	book-chapter
+64	10.1109/chicc.2006.4347526	2006	10.1109/chicc.2006.4347526	Adaptive Output-Feedback Control for Parametric Output-Feedback Nonlinear Systems with Additive Output Derivative	2007 Chinese Control Conference	proceedings-article
+65	10.1137/1.9780898719000.ch3	2009	10.1137/1.9780898719000.ch3	3. Existence and Multiplicity	The Linear Complementarity Problem	book-chapter
+66	10.1021/jasms.1c00151.s001	None	10.1021/jasms.1c00151.s001	High-Resolution IMSMS to Assign Additional Disulfide Bridge Pairing in Complementarity-Determining Regions of an IgG4 Monoclonal Antibody		component
+67	10.7554/elife.28477.011	None	10.7554/elife.28477.011	Table 3. Number and frequency of DNA mutations that occur in tandem within framework regions (FR) and complementarity determining regions (CDR) in nurse shark alpha V (αV) groups.		component
+68	10.1097/00003246-198303000-00046	1983	10.1097/00003246-198303000-00046	A RESISTIVITY SENSITIVE CATHETER FOR MEASURING CARDIAC OUTPUT	Critical Care Medicine	journal-article
+69	10.47880/inf2704-01	2024	10.47880/inf2704-01	The Smallest Computational Complexity for the Linear Complementarity Problem with P-Matrix	Information	journal-article
+70	10.1787/888933324973	None	10.1787/888933324973	Figure 4.2. Output per worker in predominantly rural regions		component
+71	10.7287/peerj.456v0.1/reviews/1	2014	10.7287/peerj.456v0.1/reviews/1	"Peer Review #1 of ""A complete, multi-level conformational clustering of antibody complementarity-determining regions (v0.1)"""		peer-review
+72	10.4324/9781315014210-17	2013	10.4324/9781315014210-17	Types of output mix of research organizations and their complementarity	Social Science and Government	book-chapter
+73	10.1137/1.9780898719000.ch6	2009	10.1137/1.9780898719000.ch6	6. Geometry and Degree Theory	The Linear Complementarity Problem	book-chapter
+74	10.1007/bfb0120781	1978	10.1007/bfb0120781	Robust implementation of Lemke's method for the linear complementarity problem	Mathematical Programming Studies	book-chapter
+75	10.24891/re.19.8.1568	2021	10.24891/re.19.8.1568	The problem of measuring the quantity of output in the input–output model by W. Leontief in modeling the trends in economic reproduction of nations and regions	Regional Economics: Theory and Practice	journal-article
+76	10.1137/1.9780898719000.ch7	2009	10.1137/1.9780898719000.ch7	7. Sensitivity and Stability Analysis	The Linear Complementarity Problem	book-chapter
+77	10.7287/peerj.456v0.1/reviews/2	2014	10.7287/peerj.456v0.1/reviews/2	"Peer Review #2 of ""A complete, multi-level conformational clustering of antibody complementarity-determining regions (v0.1)"""		peer-review
+78	10.1007/bfb0120786	1978	10.1007/bfb0120786	A linear complementarity problem with an n by 2n “P”-matrix	Mathematical Programming Studies	book-chapter
+79	10.1007/bf01593768	1977	10.1007/bf01593768	Isotone solutions of parametric linear complementarity problems	Mathematical Programming	journal-article
+80	10.1007/bf01593769	1977	10.1007/bf01593769	On monotonicity in parametric linear complementarity problems	Mathematical Programming	journal-article
+81	10.1007/978-0-387-74759-0_333	2008	10.1007/978-0-387-74759-0_333	Linear Complementarity Problem	Encyclopedia of Optimization	book-chapter
+82	10.70675/c36a65eaz3591z452dza6fcz6cc57743d15f	None	10.70675/c36a65eaz3591z452dza6fcz6cc57743d15f	Variance-sensitive confidence intervals for parametric and offline bandits		dissertation
+83	10.7554/elife.31259.018	None	10.7554/elife.31259.018	Figure 5. Summary of critical pore regions in Fluc Ec2. View of single pore with side chains scored as functionally sensitive to mutagenesis (magenta) or tolerant of mutagenesis (green).		component
+84	10.1051/ro/2023094	2023	10.1051/ro/2023094	An efficient multi parametric kernel function for large and small-update methods interior point algorithm for <i>P</i><sub>*</sub>(<i>κ</i>)-horizontal linear complementarity problem	RAIRO - Operations Research	journal-article
+85	10.1007/0-306-48332-7_160	2001	10.1007/0-306-48332-7_160	Generalized Nonlinear Complementarity Problem	Encyclopedia of Optimization	book-chapter
+86	10.1007/978-0-387-74759-0_210	2008	10.1007/978-0-387-74759-0_210	Generalized Nonlinear Complementarity Problem	Encyclopedia of Optimization	book-chapter
+87	10.70675/6cfdfdabzdcc8z4393z93ceza47fc3a0185b	None	10.70675/6cfdfdabzdcc8z4393z93ceza47fc3a0185b	Output-sensitive algorithms for enumeration problems in graphs		dissertation
+88	10.1007/978-1-4757-3279-5_17	2001	10.1007/978-1-4757-3279-5_17	The Proximal Point Algorithm for the P 0 Complementarity Problem	Applied Optimization	book-chapter
+89	10.1007/0-306-48332-7_258	2001	10.1007/0-306-48332-7_258	Linear Complementarity Problem	Encyclopedia of Optimization	book-chapter
+90	10.1080/02331939908844452	1999	10.1080/02331939908844452	Generallized Linear Complementarity Problem and Multiobjective Programming Problem	Optimization	journal-article
+91	10.1007/pl00012591	2002	10.1007/pl00012591	Critical regions: A model-based estimation of world water resources sensitive to global changes	Aquatic Sciences	journal-article
+92	10.23919/acc60939.2024.10644545	2024	10.23919/acc60939.2024.10644545	Strongly Stabilizing LQR Output Feedback Designs via Parametric and Non-parametric Procedures	2024 American Control Conference (ACC)	proceedings-article
+93	10.1016/s0166-218x(98)00054-7	1998	10.1016/s0166-218x(98)00054-7	A parametric critical path problem and an application for cyclic scheduling	Discrete Applied Mathematics	journal-article
+94	10.2172/5453251	1989	10.2172/5453251	A basic theorem of complementarity for the generalized variational-like inequality problem		report
+95	10.1017/cbo9781316134115.050	2011	10.1017/cbo9781316134115.050	A problem, not a solution: complementarity in the Central African Republic and Democratic Republic of the Congo	The International Criminal Court and Complementarity	book-chapter
+96	10.22541/au.165535743.30987929/v1	2022	10.22541/au.165535743.30987929/v1	A linear complementarity approach for mixed beam-solid contact problem		posted-content
+97	10.5220/0012928000003886	2024	10.5220/0012928000003886	Analyzing Exact Output Regions of Reinforcement Learning Policy Neural Networks for High-Dimensional Input-Output Spaces	Proceedings of the 1st International Conference on Explainable AI for Neural and Symbolic Methods	proceedings-article
+98	10.3390/atoms7010027	2019	10.3390/atoms7010027	Entanglement, Complementarity, and Vacuum Fields in Spontaneous Parametric Down-Conversion	Atoms	journal-article
+99	10.1137/1.9780898719000	2009	10.1137/1.9780898719000	The Linear Complementarity Problem		monograph
+100	10.32388/q0z85k	2020	10.32388/q0z85k	Output Problem	Definitions	reference-entry

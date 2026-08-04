@@ -1,0 +1,101 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1016/0165-6074(90)90167-8	1990	10.1016/0165-6074(90)90167-8	A demand-driven macro-dataflow schema for distributed graph reduction on multiple G-machines	Microprocessing and Microprogramming	journal-article
+2	10.1109/icpp.1993.66	1993	10.1109/icpp.1993.66	Dataflow Graph Optimization for Dataflow Architectures a Dataflow Otimizing Compiler	1993 International Conference on Parallel Processing - ICPP'93 Vol2	proceedings-article
+3	10.2172/764038	1998	10.2172/764038	Visualizing Macro-Dataflow Graph Final Report CRADA No. TSB-0725-93		report
+4	10.21236/ada428029	2004	10.21236/ada428029	DIF - A Language for Dataflow Graph Specification and Exchange		report
+5	10.1002/scj.4690270402	1996	10.1002/scj.4690270402	A compiling technique for dataflow machines — new algorithm for optimum translation from control flow graph into dataflow graph	Systems and Computers in Japan	journal-article
+6	10.3724/sp.j.1087.2011.00935	2011	10.3724/sp.j.1087.2011.00935	Operation partitioning for heterogeneous VLIW DSP based on dataflow graph	Journal of Computer Applications	journal-article
+7	10.2139/ssrn.6875241	2026	10.2139/ssrn.6875241	Graph as App: A GPU Dataflow Substrate for Domain-Agnostic Living Networks		posted-content
+8	10.1109/spl.2007.371755	2007	10.1109/spl.2007.371755	Execution of Algorithms Using a Dynamic Dataflow Model for Reconfigurable Hardware - Commands in Dataflow Graph	2007 3rd Southern Conference on Programmable Logic	proceedings-article
+9	10.2172/1426077	2018	10.2172/1426077	Visualizing Macro-Dataflow Graph Final Report CRADA No. TSB-0725-93		report
+10	10.1109/aero.2015.7119053	2015	10.1109/aero.2015.7119053	Graph-based terrain relative navigation with optimal landmark database selection	2015 IEEE Aerospace Conference	proceedings-article
+11	10.1109/cvpr.2011.5995567	2011	10.1109/cvpr.2011.5995567	Exhaustive family of energies minimizable exactly by a graph cut	CVPR 2011	proceedings-article
+12	10.32614/cran.package.exhaustivesearch	2021	10.32614/cran.package.exhaustivesearch	ExhaustiveSearch: A Fast and Scalable Exhaustive Feature Selection Framework	CRAN: Contributed Packages	dataset
+13	10.11606/t.45.2022.tde-09082022-154351	None	10.11606/t.45.2022.tde-09082022-154351	A data-driven systematic, consistent and non-exhaustive approach to Model Selection		dissertation
+14	10.1145/2523616.2525962	2013	10.1145/2523616.2525962	Pregelix	Proceedings of the 4th annual Symposium on Cloud Computing	proceedings-article
+15	10.1016/0026-2714(87)90819-5	1987	10.1016/0026-2714(87)90819-5	Reliability analysis of computer systems using dataflow graph models	Microelectronics Reliability	journal-article
+16	10.2478/msr-2025-0023	2025	10.2478/msr-2025-0023	Adaptive Measurement Selection for Scalable Distributed Graph Optimization in Multi-UAV Relative Positioning	Measurement Science Review	journal-article
+17	10.1145/142920.134087	1992	10.1145/142920.134087	CONDOR: constraint-based dataflow	ACM SIGGRAPH Computer Graphics	journal-article
+18	10.7287/peerj.13200v0.1/reviews/2	2022	10.7287/peerj.13200v0.1/reviews/2	"Peer Review #2 of ""ExhauFS: exhaustive search-based feature selection for classification and survival regression (v0.1)"""		peer-review
+19	10.7287/peerj.13200v0.2/reviews/3	2022	10.7287/peerj.13200v0.2/reviews/3	"Peer Review #3 of ""ExhauFS: exhaustive search-based feature selection for classification and survival regression (v0.2)"""		peer-review
+20	10.1007/978-3-319-66128-5_2	2017	10.1007/978-3-319-66128-5_2	Discrepancy Reduction Between the Topology of Dataflow Graph and the Topology of FPGA Structure	Computer Communications and Networks	book-chapter
+21	10.32614/cran.package.exhaustiverasch	2024	10.32614/cran.package.exhaustiverasch	exhaustiveRasch: Item Selection and Exhaustive Search for Rasch Models	CRAN: Contributed Packages	dataset
+22	10.7287/peerj.13200v0.2/reviews/1	2022	10.7287/peerj.13200v0.2/reviews/1	"Peer Review #1 of ""ExhauFS: exhaustive search-based feature selection for classification and survival regression (v0.2)"""		peer-review
+23	10.2139/ssrn.1147578	2008	10.2139/ssrn.1147578	Relative Demand Shocks		posted-content
+24	10.7287/peerj.13200v0.1/reviews/3	2022	10.7287/peerj.13200v0.1/reviews/3	"Peer Review #3 of ""ExhauFS: exhaustive search-based feature selection for classification and survival regression (v0.1)"""		peer-review
+25	10.7287/peerj.13200v0.1/reviews/1	2022	10.7287/peerj.13200v0.1/reviews/1	"Peer Review #1 of ""ExhauFS: exhaustive search-based feature selection for classification and survival regression (v0.1)"""		peer-review
+26	10.2307/2553697	1981	10.2307/2553697	On Mutually Exclusive and Collectively Exhaustive Properties of Demand Functions	Economica	journal-article
+27	10.1109/sips50750.2020.9195261	2020	10.1109/sips50750.2020.9195261	Graph Coordination for Compact Representation of Regular Dataflow Structures	2020 IEEE Workshop on Signal Processing Systems (SiPS)	proceedings-article
+28	10.1002/jgt.22151	2018	10.1002/jgt.22151	Exhaustive generation of <i>k</i>‐critical ‐free graphs	Journal of Graph Theory	journal-article
+29	10.1145/204362.204364	1995	10.1145/204362.204364	apE—the original dataflow visualization environment	ACM SIGGRAPH Computer Graphics	journal-article
+30	10.1109/icassp.1997.599865	None	10.1109/icassp.1997.599865	Code generation by using integer-controlled dataflow graph	1997 IEEE International Conference on Acoustics, Speech, and Signal Processing	proceedings-article
+31	10.3386/w34395	2025	10.3386/w34395	Log-Linear Relative Asset Demand		report
+32	10.1109/iscas.2006.1692708	None	10.1109/iscas.2006.1692708	System-level verification on high-level synthesis of dataflow graph	2006 IEEE International Symposium on Circuits and Systems	proceedings-article
+33	10.1109/fpl.2012.6339265	2012	10.1109/fpl.2012.6339265	Dataflow graph partitioning for high level synthesis	22nd International Conference on Field Programmable Logic and Applications (FPL)	proceedings-article
+34	10.1016/0167-8191(92)90098-r	1992	10.1016/0167-8191(92)90098-r	Area optimization of dataflow-graph mappings	Parallel Computing	journal-article
+35	10.1109/ipdpsw59300.2023.00147	2023	10.1109/ipdpsw59300.2023.00147	Optimizing the Critical Path of Distributed Dataflow Graph Algorithms	2023 IEEE International Parallel and Distributed Processing Symposium Workshops (IPDPSW)	proceedings-article
+36	10.1109/cmpeur.1991.257371	None	10.1109/cmpeur.1991.257371	On reducing the dataflow-graph hosting area	[1991] Proceedings, Advanced Computer Technology, Reliable Systems and Applications	proceedings-article
+37	10.7717/peerj-cs.2391/fig-1	None	10.7717/peerj-cs.2391/fig-1	Figure 1: Demand graph for bike-sharing stations.		component
+38	10.1109/ipps.1991.153848	None	10.1109/ipps.1991.153848	A simulation of demand-driven dataflow: translation from Lucid into MDC language	[1991] Proceedings. The Fifth International Parallel Processing Symposium	proceedings-article
+39	10.1109/acqed.2015.7274006	2015	10.1109/acqed.2015.7274006	SynDFG: Synthetic dataflow graph generator for high-level synthesis	2015 6th Asia Symposium on Quality Electronic Design (ASQED)	proceedings-article
+40	10.1145/222124.222146	1995	10.1145/222124.222146	Demand interprocedural dataflow analysis	Proceedings of the 3rd ACM SIGSOFT symposium on Foundations of software engineering	proceedings-article
+41	10.1109/isss.1998.730615	None	10.1109/isss.1998.730615	Memory efficient software synthesis from dataflow graph	Proceedings. 11th International Symposium on System Synthesis (Cat. No.98EX210)	proceedings-article
+42	10.1145/222132.222146	1995	10.1145/222132.222146	Demand interprocedural dataflow analysis	ACM SIGSOFT Software Engineering Notes	journal-article
+43	10.1145/224538.224570	1995	10.1145/224538.224570	Enhancing array dataflow dependence analysis with on-demand global value propagation	Proceedings of the 9th international conference on Supercomputing  - ICS '95	proceedings-article
+44	10.1109/rndm48015.2019.8949149	2019	10.1109/rndm48015.2019.8949149	Resilient Dataflow Graph Embedding for Programmable Software Switches	2019 11th International Workshop on Resilient Networks Design and Modeling (RNDM)	proceedings-article
+45	10.5220/0003008402920295	2010	10.5220/0003008402920295	PERFORMANCE OPTIMIZATION OF EXHAUSTIVE RULES IN GRAPH REWRITING SYSTEMS	Proceedings of the 5th International Conference on Software and Data Technologies	proceedings-article
+46	10.1007/978-3-030-13803-5_1	2019	10.1007/978-3-030-13803-5_1	Method of Big-Graph Partitioning Using a Skeleton Graph	Computer Communications and Networks	book-chapter
+47	10.1007/978-3-642-32741-4_13	2013	10.1007/978-3-642-32741-4_13	A Relative Feature Selection Algorithm for Graph Classification	Advances in Intelligent Systems and Computing	book-chapter
+48	10.7717/peerj.4743/fig-2	None	10.7717/peerj.4743/fig-2	Figure 2: Graph of relative sting length vs. toxicity.		component
+49	10.3998/mpub.12986542.cmp.j6731704t	None	10.3998/mpub.12986542.cmp.j6731704t	Graph of the relative frequencies of sidescrapers, by level		component
+50	10.1201/9780429493768	2018	10.1201/9780429493768	Graph Theory (on Demand Printing Of 02787)		book
+51	10.1109/icdcs.2017.150	2017	10.1109/icdcs.2017.150	Towards Dataflow-Based Graph Accelerator	2017 IEEE 37th International Conference on Distributed Computing Systems (ICDCS)	proceedings-article
+52	10.1007/s11432-017-9226-8	2017	10.1007/s11432-017-9226-8	Towards dataflow based graph processing	Science China Information Sciences	journal-article
+53	10.1109/sips.2010.5624821	2010	10.1109/sips.2010.5624821	Scalable representation of dataflow graph structures using topological patterns	2010 IEEE Workshop On Signal Processing Systems	proceedings-article
+54	10.1109/isss.2000.874032	None	10.1109/isss.2000.874032	Efficient hardware controller synthesis for synchronous dataflow graph in system level design	Proceedings 13th International Symposium on System Synthesis	proceedings-article
+55	10.1145/3302424.3303953	2019	10.1145/3302424.3303953	Supporting Very Large Models using Automatic Dataflow Graph Partitioning	Proceedings of the Fourteenth EuroSys Conference 2019	proceedings-article
+56	10.7717/peerj.15432/fig-4	None	10.7717/peerj.15432/fig-4	Figure 4: PCA graph of putative PGP metagenomes’ relative abundance.		component
+57	10.3998/mpub.12986542.cmp.7w62fc551	None	10.3998/mpub.12986542.cmp.7w62fc551	Graph of the relative frequencies of backed bladelets by level		component
+58	10.1109/samos.2016.7818351	2016	10.1109/samos.2016.7818351	Automated dataflow graph merging	2016 International Conference on Embedded Computer Systems: Architectures, Modeling and Simulation (SAMOS)	proceedings-article
+59	10.1109/grc.2010.147	2010	10.1109/grc.2010.147	An Attribute Reduction Algorithm by Switching Exhaustive and Heuristic Computation of Relative Reducts	2010 IEEE International Conference on Granular Computing	proceedings-article
+60	10.1109/tase.2016.2552221	2017	10.1109/tase.2016.2552221	Relative Entropy-Based Density Selection in Particle Filtering for Load Demand Forecast	IEEE Transactions on Automation Science and Engineering	journal-article
+61	10.22456/2175-2745.25210	2013	10.22456/2175-2745.25210	A Graph Grammar to Transform a Dataflow Graph into a Multithread Graph and its Application in Task Scheduling	Revista de Informática Teórica e Aplicada	journal-article
+62	10.1109/cgc.2012.23	2012	10.1109/cgc.2012.23	Performance Model for Parallel Matrix Multiplication with Dryad: Dataflow Graph Runtime	2012 Second International Conference on Cloud and Green Computing	proceedings-article
+63	10.1109/sips.2018.8598305	2018	10.1109/sips.2018.8598305	Generalized Graph Connections for Dataflow Modeling of DSP Applications	2018 IEEE International Workshop on Signal Processing Systems (SiPS)	proceedings-article
+64	10.1109/isbi.2016.7493468	2016	10.1109/isbi.2016.7493468	Exhaustive graph cut-based vasculature reconstruction	2016 IEEE 13th International Symposium on Biomedical Imaging (ISBI)	proceedings-article
+65	10.1109/acssc.1996.599166	None	10.1109/acssc.1996.599166	Synthesis of parallel hardware implementations from synchronous dataflow graph specifications	Conference Record of The Thirtieth Asilomar Conference on Signals, Systems and Computers	proceedings-article
+66	10.1145/1180495.1180547	2006	10.1145/1180495.1180547	Extending the scene graph with a dataflow visualization system	Proceedings of the ACM symposium on Virtual reality software and technology	proceedings-article
+67	10.1145/2463209.2488736	2013	10.1145/2463209.2488736	Liveness evaluation of a cyclo-static DataFlow graph	Proceedings of the 50th Annual Design Automation Conference	proceedings-article
+68	10.1145/2847263.2847337	2016	10.1145/2847263.2847337	GraphOps	Proceedings of the 2016 ACM/SIGDA International Symposium on Field-Programmable Gate Arrays	proceedings-article
+69	10.1109/tr.1986.4335538	1986	10.1109/tr.1986.4335538	Reliability Analysis of Computer Systems Using Dataflow Graph Models	IEEE Transactions on Reliability	journal-article
+70	10.1007/bf03259389	1994	10.1007/bf03259389	Stability, Sequentiality and Demand Driven Evaluation in Dataflow	Formal Aspects of Computing	journal-article
+71	10.1007/3-540-16042-6_23	1985	10.1007/3-540-16042-6_23	Demand-driven evaluation on dataflow machine	Lecture Notes in Computer Science	book-chapter
+72	10.3998/mpub.12986542.cmp.12579w62k	None	10.3998/mpub.12986542.cmp.12579w62k	Graph of the relative frequencies of thumbnail flake scrapers, by level		component
+73	10.3390/su15031795	2023	10.3390/su15031795	Intelligent Demand Side Management for Exhaustive Techno-Economic Analysis of Microgrid System	Sustainability	journal-article
+74	10.1037/e626952011-001	2000	10.1037/e626952011-001	Computing Fractal Dimensions using the Relative Aggregate Dispersion (RD) Method: An Application to the Inter-item Production Times in Exhaustive Semantic Memory Recall	PsycEXTRA Dataset	dataset
+75	10.1109/dsd.2016.52	2016	10.1109/dsd.2016.52	Evaluation of Synchronous Dataflow Graph Mappings onto Distributed Memory Architectures	2016 Euromicro Conference on Digital System Design (DSD)	proceedings-article
+76	10.20535/2312-1807.2014.19.4.31752	2014	10.20535/2312-1807.2014.19.4.31752	The optimization method of a macro dataflow graph for reconfigurable computing systems	Electronics and Communications	journal-article
+77	10.1007/3-540-51285-3_33	1989	10.1007/3-540-51285-3_33	Dataflow analysis of term graph rewriting systems	Lecture Notes in Computer Science	book-chapter
+78	10.1007/bfb0027039	1986	10.1007/bfb0027039	Dataflow and education: Data-driven and demand-driven distributed computation	Lecture Notes in Computer Science	book-chapter
+79	10.3998/mpub.12986542.cmp.q811kp25f	None	10.3998/mpub.12986542.cmp.q811kp25f	Graph of the average relative frequencies of condensed categories of lithic tools		component
+80	10.2139/ssrn.613441	2004	10.2139/ssrn.613441	Relative Demand Shocks	SSRN Electronic Journal	journal-article
+81	10.1787/888934035987	None	10.1787/888934035987	Figure 4.5. Forecasts of labour force demand relative to supply in 2025, Latvia		component
+82	10.21033/wp-2024-11	2024	10.21033/wp-2024-11	Downward Price Rigidities and Inflationary Relative Demand Shocks		report
+83	10.1109/icassp.2005.1416242	None	10.1109/icassp.2005.1416242	Dynamic Configuration of Dataflow Graph Topology for DSP System Design	Proceedings. (ICASSP '05). IEEE International Conference on Acoustics, Speech, and Signal Processing, 2005.	proceedings-article
+84	10.3998/mpub.12986542.cmp.zg64tq39s	None	10.3998/mpub.12986542.cmp.zg64tq39s	Graph of the relative frequencies by level of burins, perçoirs, and borers		component
+85	10.23919/wons51326.2021.9415558	2021	10.23919/wons51326.2021.9415558	Use of a Weighted Conflict Graph in the Channel Selection Operation for Wi-Fi Networks	2021 16th Annual Conference on Wireless On-demand Network Systems and Services Conference (WONS)	proceedings-article
+86	10.1109/asp-dac66049.2026.11420389	2026	10.1109/asp-dac66049.2026.11420389	FESTAL: Dataflow Accelerator Synthesis Framework with Graph-Based Fusion for FPGA	2026 31st Asia and South Pacific Design Automation Conference (ASP-DAC)	proceedings-article
+87	10.1109/lcomm.2016.2587860	2016	10.1109/lcomm.2016.2587860	Exhaustive Enumeration of Elementary Trapping Sets of an Arbitrary Tanner Graph	IEEE Communications Letters	journal-article
+88	10.2139/ssrn.5122445	2025	10.2139/ssrn.5122445	Directed Acyclic Graph Representation of the Demand -Supply Model		posted-content
+89	10.1787/888933617776	None	10.1787/888933617776	Graph 1.49 ICT-related foreign value added content of domestic final demand, 2011		component
+90	10.1016/j.ins.2020.03.024	2020	10.1016/j.ins.2020.03.024	All-relevant feature selection using multidimensional filters with exhaustive search	Information Sciences	journal-article
+91	10.3030/838342	2019	10.3030/838342			grant
+92	10.1787/888933617548	None	10.1787/888933617548	Graph 1.37 Origin of demand sustaining jobs in OECD information industries, 1995-2014		component
+93	10.3998/mpub.12986542.cmp.hd76s347c	None	10.3998/mpub.12986542.cmp.hd76s347c	Graph of the relative frequencies of retouched pieces and utilized pieces by level		component
+94	10.1109/dfm.2014.9	2014	10.1109/dfm.2014.9	DFGR an Intermediate Graph Representation for Macro-Dataflow Programs	2014 Fourth Workshop on Data-Flow Execution Models for Extreme Scale Computing	proceedings-article
+95	10.1016/j.asoc.2017.04.055	2018	10.1016/j.asoc.2017.04.055	Mutually-exclusive-and-collectively-exhaustive feature selection scheme	Applied Soft Computing	journal-article
+96	10.1109/icde.2016.7498275	2016	10.1109/icde.2016.7498275	Efficient fault-tolerance for iterative graph processing on distributed dataflow systems	2016 IEEE 32nd International Conference on Data Engineering (ICDE)	proceedings-article
+97	10.2139/ssrn.4646397	2023	10.2139/ssrn.4646397	Graph Neural Network-Based Tourism Demand Forecasting		posted-content
+98	10.1021/acs.jcim.1c01578.s001	None	10.1021/acs.jcim.1c01578.s001	Graph-Based Feature Selection Approach for Molecular Activity Prediction		component
+99	10.1021/acs.jcim.1c01578.s002	None	10.1021/acs.jcim.1c01578.s002	Graph-Based Feature Selection Approach for Molecular Activity Prediction		component
+100	10.1109/samos.2012.6404169	2012	10.1109/samos.2012.6404169	K-Periodic schedules for evaluating the maximum throughput of a Synchronous Dataflow graph	2012 International Conference on Embedded Computer Systems (SAMOS)	proceedings-article

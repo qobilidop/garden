@@ -415,6 +415,36 @@ or unrelated regional studies. No record changes the taxonomy or meets the
 choice-omission/quotient trigger beyond Shin--Yang. With those records
 reconciled, the precondition for executing round 17 is satisfied.
 
+## Outcome of round 17
+
+Round 17 is also a no-add round under the frozen trigger. Crossref returned
+large result counts for every query; the first 100 relevance-ranked records of
+each query were frozen, for 1,200 screened query occurrences in total. The
+round rediscovered the audited parametric-region, demand-driven dataflow,
+symbolic-execution, and projected-enumeration clusters, including Columbano et
+al., Spjøtvold et al., Tøndel et al., Avron--Sasson, MultiSE, All-values
+symbolic execution, and disjoint projected enumeration.
+
+Four superficially new records received additional adjudication. Löhne and
+Weißing relate polyhedral projection to multiple-objective and vector linear
+programming; Hempel et al. establish parametric-LP representability of
+continuous piecewise-affine functions. Both strengthen the existing
+polyhedral/parametric-program boundary but add neither a new enumeration
+mechanism nor a requested-observation quotient. Yan analyzes optimal
+partitions for two multiparametric semidefinite programs but does not give an
+exhaustive region enumerator. Madhusudanan's exact-search calculus instead
+enumerates elementary-function expression trees under a binary arithmetic
+primitive and is outside the program model. The first three are cataloged as
+screened neighbors and the last as an explicit out-of-scope exclusion.
+
+Thus neither round 16 nor round 17 adds a conceptual cluster or plausible
+close competitor after catalog reconciliation. This establishes mapping
+closure only for the frozen trigger, captured rankings, and 2026-08-04 access
+date. OpenAIRE's low capture, Crossref's opaque relevance ranking, duplicate
+query occurrences, and title-screening judgment remain material limitations.
+The independent audit below is still required before the mapping is called
+closed without qualification.
+
 ## Independent audit
 
 After both replacement rounds qualify, a reviewer who did not choose the

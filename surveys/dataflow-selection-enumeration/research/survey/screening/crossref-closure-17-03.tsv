@@ -1,0 +1,101 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1007/s10957-007-9215-z	2007	10.1007/s10957-007-9215-z	Continuous Selection and Unique Polyhedral Representation of Solutions to Convex Parametric Quadratic Programs	Journal of Optimization Theory and Applications	journal-article
+2	10.1007/s00209-004-0713-5	2005	10.1007/s00209-004-0713-5	A unique representation of polyhedral types. Centering via M�bius transformations	Mathematische Zeitschrift	journal-article
+3	10.1007/springerreference_6082	None	10.1007/springerreference_6082	Representation theorem for polyhedral set	SpringerReference	reference-entry
+4	10.1515/9783112472668-012	1988	10.1515/9783112472668-012	5.3. Polyhedral Subsets	Parametric Integer Optimization	book-chapter
+5	10.70675/b123ad21z9cecz461dz8abeza6e96545d40b	None	10.70675/b123ad21z9cecz461dz8abeza6e96545d40b	New algorithmics for polyhedral calculus via parametric linear programming		dissertation
+6	10.1090/s0002-9939-97-03507-7	1997	10.1090/s0002-9939-97-03507-7	Smooth representation of a parametric polyhedral convex set with application to sensitivity in optimization	Proceedings of the American Mathematical Society	journal-article
+7	10.1155/2017/9317924	2017	10.1155/2017/9317924	On Fuzzy Portfolio Selection Problems: A Parametric Representation Approach	Complexity	journal-article
+8	10.3390/axioms12111035	2023	10.3390/axioms12111035	On Unique Determination of Polyhedral Sets	Axioms	journal-article
+9	10.18122/td.2081.boisestate	None	10.18122/td.2081.boisestate	Portable Sparse Polyhedral Framework Code Generation Using Multi Level Intermediate Representation		dissertation
+10	10.1109/dac.1982.1585545	1982	10.1109/dac.1982.1585545	Modeling Polyhedral Solids Bounded by Multi-Curved Parametric Surfaces	19th Design Automation Conference	proceedings-article
+11	10.3850/978-981-07-7393-9_076	2013	10.3850/978-981-07-7393-9_076	Incorporating Auto-Vectorization into Polyhedral Loop-Nest Optimizer	Proceedings of the Student Research Symposium (SRS'13)	proceedings-article
+12	10.5220/0011524300003332	2022	10.5220/0011524300003332	New Evolutionary Selection Operators for Snake Optimizer	Proceedings of the 14th International Joint Conference on Computational Intelligence	proceedings-article
+13	10.1090/crmp/048/03	2009	10.1090/crmp/048/03	Polyhedral representation conversion up to symmetries	CRM Proceedings and Lecture Notes	book-chapter
+14	10.1007/978-3-030-00148-3_12	2018	10.1007/978-3-030-00148-3_12	Disjunctive Cuts from the V -Polyhedral Representation	Disjunctive Programming	book-chapter
+15	10.1007/978-1-4419-1153-7_200706	2013	10.1007/978-1-4419-1153-7_200706	Representation Theorem for Polyhedral Set	Encyclopedia of Operations Research and Management Science	book-chapter
+16	10.69829/oper-024-0102-ta02	2024	10.69829/oper-024-0102-ta02	A polyhedral conic functions based embedded feature selection method	Optimization Eruditorum	journal-article
+17	10.1201/9781420003208.axd	2006	10.1201/9781420003208.axd	Polyhedral Cones	Pure and Applied Mathematics	book-chapter
+18	10.1109/fpt.2012.6412120	2012	10.1109/fpt.2012.6412120	Parametric reconfigurable designs with Machine Learning Optimizer	2012 International Conference on Field-Programmable Technology	proceedings-article
+19	10.1111/joes.12435	2021	10.1111/joes.12435	Parametric representation of the top of income distributions: Options, historical evidence, and model selection	Journal of Economic Surveys	journal-article
+20	10.1145/1379022.1375595	2008	10.1145/1379022.1375595	A practical automatic polyhedral parallelizer and locality optimizer	ACM SIGPLAN Notices	journal-article
+21	10.3724/sp.j.1087.2013.03102	2013	10.3724/sp.j.1087.2013.03102	Producer pre-selection mechanism based on self-adaptive group search optimizer	Journal of Computer Applications	journal-article
+22	10.1080/00344899608522984	1996	10.1080/00344899608522984	Tasmania's unique electoral system	Representation	journal-article
+23	10.21203/rs.3.rs-8708698/v1	2026	10.21203/rs.3.rs-8708698/v1	The Second-Order Optimization Problem—A Formal Analysis of Optimizer Selection		posted-content
+24	10.1007/978-1-4612-5296-2_18	1984	10.1007/978-1-4612-5296-2_18	The Integral Representation for Polyhedral Domains of ℂn	Several Complex Variables	book-chapter
+25	10.1016/j.aim.2013.07.007	2013	10.1016/j.aim.2013.07.007	Polyhedral Finsler spaces with locally unique geodesics	Advances in Mathematics	journal-article
+26	10.3390/engproc2023059112	2023	10.3390/engproc2023059112	A Hybrid MCDM-Grey Wolf Optimizer Approach for Multi-Objective Parametric Optimization of μ-EDM Process	RAiSE-2023	proceedings-article
+27	10.1201/b11418-6	2011	10.1201/b11418-6	Polyhedral Techniques for Parametric Memory Requirement Estimation	Energy-Aware Memory Management for Embedded Multimedia Systems	book-chapter
+28	10.21236/ada271983	1993	10.21236/ada271983	A Parametric Representation of a Thunderstorm Cell		report
+29	10.1080/00344897208656362	1972	10.1080/00344897208656362	Uruguay's unique electoral system	Representation	journal-article
+30	10.1615/978-1-56700-203-4.356	2004	10.1615/978-1-56700-203-4.356	A Parametric Representation of Surfaces	Thermal Radiation Fundamentals	book-chapter
+31	10.1016/j.disc.2013.02.020	2013	10.1016/j.disc.2013.02.020	Polyhedral representation of discrete Morse functions	Discrete Mathematics	journal-article
+32	10.20944/preprints202602.0662.v1	2026	10.20944/preprints202602.0662.v1	AGRO: An Adaptive Gold Rush Optimizer with Dynamic Strategy Selection		posted-content
+33	10.1522/1480723	1993	10.1522/1480723	En tout cas		monograph
+34	10.1016/j.actaastro.2016.10.026	2017	10.1016/j.actaastro.2016.10.026	Invariant manifold connections via polyhedral representation	Acta Astronautica	journal-article
+35	10.1145/1375581.1375595	2008	10.1145/1375581.1375595	A practical automatic polyhedral parallelizer and locality optimizer	Proceedings of the 29th ACM SIGPLAN Conference on Programming Language Design and Implementation	proceedings-article
+36	10.5244/c.1.33	1987	10.5244/c.1.33	COMPACT - A 3D Shape Representation Scheme for Polyhedral Scenes	Procedings of the Alvey Vision Conference 1987	proceedings-article
+37	10.1109/asap.1996.542833	None	10.1109/asap.1996.542833	Parametric analysis of polyhedral iteration spaces	Proceedings of International Conference on Application Specific Systems, Architectures and Processors: ASAP '96	proceedings-article
+38	10.1088/2631-8695/ae59ef/v2/review1	2026	10.1088/2631-8695/ae59ef/v2/review1	"Review for ""Performance and Robustness Analysis of Maiden Atom Search Optimizer Driven Tri-parametric PID-like Fractional Controller for Speed Control of DC Motor"""		peer-review
+39	10.2139/ssrn.4427564	2023	10.2139/ssrn.4427564	Novel: Tanh Grey Wolf Optimizer for Feature Selection for Stock Price Prediction		posted-content
+40	10.1145/800263.809251	1982	10.1145/800263.809251	Modeling polyhedral solids bounded by multi-curved parametric surfaces	Proceedings of the nineteenth design automation conference on   - DAC '82	proceedings-article
+41	10.1135/cccc19961773	1996	10.1135/cccc19961773	Polyhedral Azaborane Chemistry: NMR Parameters for the Unique Eight-Boron Polyhedral Species [(C2H5NH2)B8H11NHC2H5]	Collection of Czechoslovak Chemical Communications	journal-article
+42	10.1016/0010-4485(83)90080-5	1983	10.1016/0010-4485(83)90080-5	Modelling polyhedral solids bounded by multi-curved parametric surfaces	Computer-Aided Design	journal-article
+43	10.3390/sym9100204	2017	10.3390/sym9100204	Logical and Geometrical Distance in Polyhedral Aristotelian Diagrams in Knowledge Representation	Symmetry	journal-article
+44	10.1088/2631-8695/ae59ef/v1/review1	2026	10.1088/2631-8695/ae59ef/v1/review1	"Review for ""Performance and Robustness Analysis of Maiden Atom Search Optimizer Driven Tri-parametric PID-like Fractional Controller for Speed Control of DC Motor"""		peer-review
+45	10.5220/0009805101250133	2020	10.5220/0009805101250133	An Excited Binary Grey Wolf Optimizer for Feature Selection in Highly Dimensional Datasets	Proceedings of the 17th International Conference on Informatics in Control, Automation and Robotics	proceedings-article
+46	10.1088/2631-8695/ae59ef/v1/review2	2026	10.1088/2631-8695/ae59ef/v1/review2	"Review for ""Performance and Robustness Analysis of Maiden Atom Search Optimizer Driven Tri-parametric PID-like Fractional Controller for Speed Control of DC Motor"""		peer-review
+47	10.32920/ryerson.14654568.v1	2021	10.32920/ryerson.14654568.v1	Parametric representation of turbine blades and vanes internal cooling geometry		posted-content
+48	10.32920/ryerson.14654568	2021	10.32920/ryerson.14654568	Parametric representation of turbine blades and vanes internal cooling geometry		posted-content
+49	10.1109/acc.2005.1470060	None	10.1109/acc.2005.1470060	Unique polyhedral representations of continuous selections for convex multiparametric quadratic programs	Proceedings of the 2005, American Control Conference, 2005.	proceedings-article
+50	10.2139/ssrn.4801245	2024	10.2139/ssrn.4801245	A Community Detection Basedbinary Competitive Grey Wolf Optimizer Algorithm for Feature Selection		posted-content
+51	10.7717/peerj.12068/fig-3	None	10.7717/peerj.12068/fig-3	Figure 3: A schematic representation of the parametric finite element model generation pipeline.		component
+52	10.1007/978-3-642-33125-1_6	2012	10.1007/978-3-642-33125-1_6	Polyhedral Analysis Using Parametric Objectives	Lecture Notes in Computer Science	book-chapter
+53	10.1351/pac-con-12-02-11	2012	10.1351/pac-con-12-02-11	Polyhedral borane derivatives: Unique and versatile structural motifs	Pure and Applied Chemistry	journal-article
+54	10.1007/978-94-015-9076-1_3	1998	10.1007/978-94-015-9076-1_3	Parametric Representation of Functions	Parametric Lie Group Actions on Global Generalised Solutions of Nonlinear PDEs	book-chapter
+55	10.1007/1-4020-0611-x_881	2001	10.1007/1-4020-0611-x_881	Representation theorem for polyhedral set	Encyclopedia of Operations Research and Management Science	book-chapter
+56	10.3390/a19030192	2026	10.3390/a19030192	AGRO: An Adaptive Gold Rush Optimizer with Dynamic Strategy Selection	Algorithms	journal-article
+57	10.52202/068431-2215	2022	10.52202/068431-2215	Efficient Non-Parametric Optimizer Search for Diverse Tasks	Advances in Neural Information Processing Systems 35	proceedings-article
+58	10.3982/ecta7801	2010	10.3982/ecta7801	A Unique Costly Contemplation Representation	Econometrica	journal-article
+59	10.32920/25209326.v1	2024	10.32920/25209326.v1	“I’m Unique!” Children’s Perceptions of Diversity and Representation in the Media		posted-content
+60	10.1007/bf02937299	1989	10.1007/bf02937299	Unique embeddings of simple projective plane polyhedral maps	Israel Journal of Mathematics	journal-article
+61	10.1109/icsmartgrid61824.2024.10578139	2024	10.1109/icsmartgrid61824.2024.10578139	Wind Turbine Power Curve Fitting Using Mountain Gazelle Optimizer and Parametric Functions	2024 12th International Conference on Smart Grid (icSmartGrid)	proceedings-article
+62	10.32920/25209326	2024	10.32920/25209326	“I’m Unique!” Children’s Perceptions of Diversity and Representation in the Media		posted-content
+63	10.1016/0263-7855(91)80054-4	1991	10.1016/0263-7855(91)80054-4	Polyhedral representation of the tomato bushy stunt virus	Journal of Molecular Graphics	journal-article
+64	10.5220/0013367600003890	2025	10.5220/0013367600003890	Improved Binary Elk Herd Optimizer with Fitness Balance Distance for Feature Selection Using Gene Expression Data	Proceedings of the 17th International Conference on Agents and Artificial Intelligence	proceedings-article
+65	10.1007/s11590-011-0299-x	2012	10.1007/s11590-011-0299-x	Lipschitzian stability of parametric variational inequalities over perturbed polyhedral convex sets	Optimization Letters	journal-article
+66	10.21275/v4i12.nov151809	2015	10.21275/v4i12.nov151809	Dynamic Multi-Swarm-Particle Swarm Optimizer (DMS-PSO) for Time and Energy Efficient Cluster Head Selection in WSN	International Journal of Science and Research (IJSR)	journal-article
+67	10.1007/s10492-010-0021-9	2010	10.1007/s10492-010-0021-9	On the separation of parametric convex polyhedral sets with application in MOLP	Applications of Mathematics	journal-article
+68	10.5220/0013772100004644	2024	10.5220/0013772100004644	Information Modeling of a Unique Building of Parametric Architecture Using Twisted Surfaces	Proceedings of the 6th International Conference on Construction Mechanics, Hydraulics and Water Resources Engineering Autumn Season	proceedings-article
+69	10.1088/2631-8695/ae59ef/v2/decision1	2026	10.1088/2631-8695/ae59ef/v2/decision1	"Decision letter for ""Performance and Robustness Analysis of Maiden Atom Search Optimizer Driven Tri-parametric PID-like Fractional Controller for Speed Control of DC Motor"""		peer-review
+70	10.1920/wp.cem.2014.1014	2014	10.1920/wp.cem.2014.1014	A simple parametric model selection test		report
+71	10.21203/rs.3.rs-3239469/v1	2023	10.21203/rs.3.rs-3239469/v1	Taylor Political Optimizer based Cluster Head selection in IoT assisted WSN networks		posted-content
+72	10.1088/2631-8695/ae59ef/v1/decision1	2026	10.1088/2631-8695/ae59ef/v1/decision1	"Decision letter for ""Performance and Robustness Analysis of Maiden Atom Search Optimizer Driven Tri-parametric PID-like Fractional Controller for Speed Control of DC Motor"""		peer-review
+73	10.1021/acs.analchem.5c00118.s001	None	10.1021/acs.analchem.5c00118.s001	Theoretical Basis for the Highly Efficient Aptamer Selection Using Unique Molecular Identifiers		component
+74	10.7717/peerj-cs.3328/table-5	None	10.7717/peerj-cs.3328/table-5	Algorithm 1: Representation and feature selection and optimization.		component
+75	10.1920/wp.cem.2016.3016	2016	10.1920/wp.cem.2016.3016	A simple parametric model selection test		report
+76	10.1007/bf00973270	1966	10.1007/bf00973270	An integral representation of the absolute mean integral curvature of a polyhedral surface and consequences of this representation	Siberian Mathematical Journal	journal-article
+77	10.1017/s0263574707003918	2008	10.1017/s0263574707003918	A symbolic approach to polyhedral scene analysis by parametric calotte propagation	Robotica	journal-article
+78	10.1016/0010-4485(88)90241-2	1988	10.1016/0010-4485(88)90241-2	Boolean operations based on the planar polyhedral representation	Computer-Aided Design	journal-article
+79	10.1021/acs.analchem.4c02984.s001	None	10.1021/acs.analchem.4c02984.s001	Streamlining RNA Aptamer Selection via Unique Molecular Identifiers and High-Throughput Sequencing		component
+80	10.1021/acs.analchem.5c00118.s002	None	10.1021/acs.analchem.5c00118.s002	Theoretical Basis for the Highly Efficient Aptamer Selection Using Unique Molecular Identifiers		component
+81	10.1016/0097-8493(88)90008-8	1988	10.1016/0097-8493(88)90008-8	Boolean operations based on the planar polyhedral representation	Computers &amp; Graphics	journal-article
+82	10.2139/ssrn.4730323	2024	10.2139/ssrn.4730323	Synthesis of Potassium-Incorporated Caged-Ladder-Like Polyhedral Oligomeric Silsesquioxane Hybrid Macromolecules for Unique Thermal Intumescent Properties and Thermal Decomposition Studies		posted-content
+83	10.1088/0266-5611/30/6/065010	2014	10.1088/0266-5611/30/6/065010	Unique determination of balls and polyhedral scatterers with a single point source wave	Inverse Problems	journal-article
+84	10.1016/0304-3800(79)90071-1	1979	10.1016/0304-3800(79)90071-1	Lake ecosystems: A polyhedral dynamics representation	Ecological Modelling	journal-article
+85	10.5220/0011626900003393	2023	10.5220/0011626900003393	Deep Learning Model Selection With Parametric Complexity Control	Proceedings of the 15th International Conference on Agents and Artificial Intelligence	proceedings-article
+86	10.1016/0010-4485(89)90070-5	1989	10.1016/0010-4485(89)90070-5	Convex polyhedral chains: a representation for geometric data	Computer-Aided Design	journal-article
+87	10.3390/biomimetics9110662	2024	10.3390/biomimetics9110662	Multi-Strategy Enhanced Parrot Optimizer: Global Optimization and Feature Selection	Biomimetics	journal-article
+88	10.1093/acprof:osobl/9780199552047.003.0002	2009	10.1093/acprof:osobl/9780199552047.003.0002	Natural Selection and its Representation	Darwinian Populations and Natural Selection	book-chapter
+89	10.21203/rs.3.rs-5304943/v1	2024	10.21203/rs.3.rs-5304943/v1	A New Optimization-Based Framework for Enhanced Feature Selection with the Narwal Optimizer		posted-content
+90	10.1080/00344899708522995	1997	10.1080/00344899708522995	The plant report and the supplementary vote: Not so unique after all	Representation	journal-article
+91	10.1080/00344898508459366	1985	10.1080/00344898508459366	A selection from the booklist	Representation	journal-article
+92	10.21203/rs.3.rs-4033466/v1	2024	10.21203/rs.3.rs-4033466/v1	Binary modified Cat and Mouse based Optimizer for medical feature selection: A COVID-19 case study		posted-content
+93	10.1134/s106456240605005x	2006	10.1134/s106456240605005x	Unique determination of convex polyhedral domains by relative conformal moduli of boundary condensers	Doklady Mathematics	journal-article
+94	10.1088/0266-5611/23/1/016	2007	10.1088/0266-5611/23/1/016	On unique determination of partially coated polyhedral scatterers with far field measurements	Inverse Problems	journal-article
+95	10.1007/s10287-025-00547-0	2026	10.1007/s10287-025-00547-0	Lipschitz stability for a class of parametric optimization problems with polyhedral feasible set mapping	Computational Management Science	journal-article
+96	10.18297/etd/2455	None	10.18297/etd/2455	Semi-parametric methods for personalized treatment selection and multi-state models.		dissertation
+97	10.7717/peerj-cs.261/fig-3	None	10.7717/peerj-cs.261/fig-3	Figure 3: An instance of a feature selection representation.		component
+98	10.7717/peerj-cs.1442/fig-2	None	10.7717/peerj-cs.1442/fig-2	Figure 2: Representation of the ASD apps selection process.		component
+99	10.1101/2021.01.11.426189	2021	10.1101/2021.01.11.426189	A Simple Parametric Representation of the Hodgkin-Huxley Model		posted-content
+100	10.21203/rs.3.rs-3897818/v1	2024	10.21203/rs.3.rs-3897818/v1	Coherent Mesh Representation for Parallel I/O of Unstructured Polyhedral Meshes		posted-content
