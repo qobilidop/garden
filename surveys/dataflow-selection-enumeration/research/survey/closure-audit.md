@@ -555,6 +555,19 @@ rounds are required. Two no-add outcomes establish closure only for these
 captured rankings, sources, date, and trigger; they do not establish world
 literature completeness.
 
+## Outcome of round 21
+
+Round 21 is a no-add round under the frozen trigger. The conjunctive arXiv
+queries captured two records in total. C21-01 rediscovered Chang et al.'s
+already critical exact neural-controller tree. C21-07 found an exact BDD
+compression of the certified ACAS-Xu lookup-table decision function. The latter
+is retained as a finite-observer decision-diagram comparator, but it neither
+observes neural internals nor introduces a new omission, quotient, or residual
+mechanism beyond the audited BDD lineage. The ten other queries returned
+complete zero-result responses. This narrow capture is an explicit source and
+query-semantics limitation, not evidence of absence. Because no new cluster or
+plausible close competitor was added, the precondition for round 22 holds.
+
 ## Independent audit
 
 After both replacement rounds qualify, a reviewer who did not choose the
