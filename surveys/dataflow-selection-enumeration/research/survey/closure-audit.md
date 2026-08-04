@@ -340,16 +340,21 @@ and complexity corrections were reconciled before the following replacement
 rounds were frozen. Neither round had been executed or previewed at freeze
 time.
 
-## Replacement round `closure-replacement-16`: Semantic Scholar
+## Replacement round `closure-replacement-16`: OpenAIRE
 
-OpenAlex was the frozen source, but all twelve requests returned HTTP 429
-before exposing a result set or title. Those failed requests do not count as a
-round. Semantic Scholar Graph paper search was availability-probed with an
-unrelated zero-result string, then selected and refrozen on 2026-08-04 before
-any query below was executed. Each query exports the first 100 relevance-ranked
-records, including indexed abstracts. Every title is screened under the
-unchanged two-part close-competitor trigger; plausible records receive abstract
-and primary-source review.
+OpenAlex was the original frozen source, but every request returned HTTP 429
+before exposing a result set or title. Semantic Scholar was then availability-
+probed with an unrelated zero-result string; the first frozen query returned
+zero records, queries 2--5 returned HTTP 429, and query 6 then exposed 100
+records before the unstable batch was stopped. Those 100 policy-query records
+are retained and screened as a supplementary snapshot, but the incomplete
+Semantic Scholar batch does not count as a round. OpenAIRE Graph API v3 was
+availability- and schema-probed only with unrelated strings, then selected and
+refrozen on 2026-08-04 before any frozen query was executed against it. Each
+query exports at most the first 100 relevance-ranked publication records,
+including indexed descriptions. Every title is screened under the unchanged
+two-part close-competitor trigger; plausible records receive abstract and
+primary-source review.
 
 | ID | Exact query |
 |---|---|
