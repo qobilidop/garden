@@ -786,6 +786,56 @@ with an observed label word. That result is an optimization-restricted initial-
 state inverse fiber and materially sharpens the partial-observation boundary.
 It has been reconciled before the next prospective queries are frozen.
 
+## Replacement round `closure-replacement-27`: Crossref
+
+Source: Crossref REST API. Frozen on 2026-08-04 after the round-25 additions
+and both critical citation neighborhoods were reconciled, and before any query
+below was executed. Each query exports the first 100 relevance-ranked records
+for title screening, followed by abstract and primary review whenever
+plausibility remains.
+
+| ID | Exact query |
+|---|---|
+| C27-01 | `binary neural network Boolean rule extraction hidden neuron redundancy exact` |
+| C27-02 | `abstract subsumption symbolic execution heap state inclusion` |
+| C27-03 | `learned state pruning symbolic execution coverage approximation` |
+| C27-04 | `counterexample complete higher order function verification SMT` |
+| C27-05 | `event observation state estimator Petri net consistent marking` |
+| C27-06 | `minimum initial marking observed label word Petri net` |
+| C27-07 | `color quotient unfolding colored Petri net bisimulation` |
+| C27-08 | `symbolic path schedule partial order reduction completeness` |
+| C27-09 | `optimal symbolic partial order reduction SMT interleavings` |
+| C27-10 | `BDD symbolic bisimulation minimization invariant checking` |
+| C27-11 | `signature rank maximum symbolic bisimulation quotient` |
+| C27-12 | `requested internal event observer exact input preimage residual` |
+
+## Replacement round `closure-replacement-28`: arXiv
+
+Execute only if round 27 adds neither a conceptual cluster nor a plausible
+close competitor. Source: arXiv API. Frozen on 2026-08-04 before any round-27
+or round-28 query was executed. Each phrase is submitted as the conjunction of
+its alphanumeric terms across arXiv's `all` field, with relevance-descending
+sorting, and exports at most the first 100 records with abstracts.
+
+| ID | Exact query |
+|---|---|
+| C28-01 | `Boolean neural rule extraction` |
+| C28-02 | `abstract subsumption symbolic execution` |
+| C28-03 | `learned symbolic state pruning` |
+| C28-04 | `higher order counterexample complete verification` |
+| C28-05 | `Petri net marking estimation observation` |
+| C28-06 | `minimum initial marking label` |
+| C28-07 | `colored Petri net color quotient unfolding` |
+| C28-08 | `symbolic paths partial order reduction` |
+| C28-09 | `optimal symbolic partial order reduction` |
+| C28-10 | `symbolic bisimulation minimization` |
+| C28-11 | `partial observation exact state estimator` |
+| C28-12 | `requested event input preimage residual` |
+
+If round 27 reopens the map, round 28 is retired unexecuted. If both qualify,
+they establish the two-round no-add sequence only for these recorded sources,
+queries, capture date, rankings, and trigger.
+
 ## Independent audit
 
 After both replacement rounds qualify, a reviewer who did not choose the
