@@ -97,7 +97,10 @@ cell is exactly one observation fiber of the restricted domain.
 Avis--Fukuda reverse search and Sleumer's fixed-dimensional improvement precede
 Ferrez et al.'s ray-shooting central-arrangement traversal, which already has
 the later \(O(KQ\,LP(Q,D))\) LP-relative form; Rada and Černý subsequently give
-a different feasibility-pruned incremental recurrence. Serra et al. exactly
+a different feasibility-pruned incremental recurrence. Deza and Pournin later
+make a rational bit model explicit through dual zonotope traversal, but retain
+output-sized state and do not improve the Ferrez bound; their White Whale
+successor adds symmetry-orbit filtering only for structured instances. Serra et al. exactly
 enumerate feasible ReLU patterns; and Dussault et al. give newer circuit-guided
 central-arrangement enumeration while exposing the literal incremental
 pseudocode's zero-witness caveat.

@@ -296,6 +296,17 @@ and catalog/claim integration. Any new candidate exposed by those screens must
 also be adjudicated. Only then may two replacement no-add rounds be frozen;
 neither round has yet been selected or executed.
 
+Deza and Pournin's later zonotope-oracle presentation was separately audited
+because its title could imply a stronger enumeration oracle. The final journal
+version instead treats generator-to-vertex enumeration as known. All 18
+published references and five unique forward works across OpenCitations,
+Semantic Scholar, Crossref, and the publisher panel were screened. Its
+unspecified \(O(Kp(Q,D,L))\) rational-bit bound and output-sized retention do
+not improve Ferrez's \(O(KQ\,LP(Q,D))\) time and \(O(QD)\) working-space
+frontier. The only algorithmic successor, symmetry-aware White Whale
+enumeration, adds no stronger generic theorem. This audit therefore closes a
+bit-complexity qualification without reopening the semantic map.
+
 ## Independent audit
 
 After both replacement rounds qualify, a reviewer who did not choose the

@@ -141,9 +141,27 @@ sign-prefix algorithm independently gives
 time and \(O(lp(Q,D))\) working space, where \(D\) is input dimension and
 \(l,lp\) denote the respective LP-cost abstractions. These are
 output-polynomial results for the restricted open-cell representation. The
-The Avis--Fukuda, Sleumer, and Ferrez analyses count arithmetic/LP operations
+Avis--Fukuda, Sleumer, and Ferrez analyses count arithmetic/LP operations
 rather than proving a coefficient-bit bound, and none of the results transfers
 automatically to boundary-inclusive fibers or an arbitrary caller theory.
+
+Deza and Pournin give a complementary rational-bit-model analysis by
+traversing the dual zonotope. For total generator encoding length \(L\), their
+proof gives
+
+\[
+  O\!\left(KQ\,[q(Q,D,L)+\log K]\right)
+    = O\!\left(Kp(Q,D,L)\right),
+\]
+
+where \(q\) and \(p\) are unspecified polynomials induced by exact rational
+feasibility. This establishes OutputP in the bit model but neither improves
+the Ferrez LP-relative oracle count nor proves polynomial delay or compact
+working space: the traversal retains the visited vertices and one generator
+subset per vertex. The symmetry-aware White Whale successor can greatly reduce
+structured instances by orbit representatives and sound filters, but gives no
+better generic worst-case theorem.
+
 Dussault et al. later specialize the central-arrangement case, make the
 zero-witness perturbation explicit, and introduce circuit-guided variants with
 large empirical speedups. They do not state a new end-to-end OutputP, IncP, or

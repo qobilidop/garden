@@ -8,10 +8,13 @@ well beyond a monolithic SMT encoding:
 - Avis and Fukuda's reverse search enumerates every full-dimensional affine
   arrangement cell exactly once with output-polynomial time and polynomial
   space; Sleumer improves its fixed-dimensional arithmetic bound to
-  \(O(m|C|)\); Rada and Černý later give a direct incremental sign-prefix
-  formulation with its own completeness and OutputP analysis; Dussault et al.
-  specialize the central case, make the zero-witness perturbation explicit,
-  and add circuit-guided variants.
+  \(O(m|C|)\); Ferrez, Fukuda, and Liebling give the pre-Rada central-
+  arrangement ray-shooting bound \(O(KQ\,LP(Q,D))\) with \(O(QD)\) working
+  space; and Rada and Černý later give a direct incremental sign-prefix
+  formulation. Deza and Pournin add a rational-bit-model zonotope traversal
+  with output-sized retention but do not improve Ferrez's LP-relative bound;
+  Dussault et al. specialize the central case, make the zero-witness
+  perturbation explicit, and add circuit-guided variants.
 - Serra et al. enumerate or count exactly the feasible dense ReLU activation
   patterns with a boundary-aware mixed-integer formulation.
 - Xiang computes exact reachable polyhedral unions; Tran's star sets retain
@@ -123,8 +126,9 @@ give
   O(KQD\,l(Q,D)),
 \]
 
-Sleumer gives \(O(KQ)\) arithmetic time for fixed \(D\), and Rada--Černý's
-incremental formulation gives
+Sleumer gives \(O(KQ)\) arithmetic time for fixed \(D\). Ferrez--Fukuda--
+Liebling give \(O(KQ\,LP(Q,D))\) time and \(O(QD)\) working space for central
+arrangements, and Rada--Černý's later incremental formulation gives
 
 \[
   O(KQ\,lp(Q,D))
@@ -134,8 +138,11 @@ where \(Q\) is the number of hyperplanes, \(K\) the number of cells, and
 \(D\) the input dimension, up to representation costs and the open-cell
 assumptions stated in the primary results. Dussault et al.'s newer algorithms
 provide substantial empirical improvements for central arrangements, but no
-replacement end-to-end asymptotic bound. A generic \(K+1\) model-query
-accounting per emitted observation is therefore not independently novel. Complexity claims
+replacement end-to-end asymptotic bound. Deza--Pournin's
+\(O(Kp(Q,D,L))\) rational-bit-model result retains output-sized state and leaves
+the polynomial unspecified; its symmetry-aware successor likewise gives no
+better generic theorem. A generic \(K+1\) model-query accounting per emitted
+observation is therefore not independently novel. Complexity claims
 must instead expose:
 
 - graph evaluation and enabled-closure size;
