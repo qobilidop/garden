@@ -1,0 +1,101 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1145/1176887.1176895	2006	10.1145/1176887.1176895	A causality interface for deadlock analysis in dataflow	Proceedings of the 6th ACM &amp; IEEE International conference on Embedded software  - EMSOFT '06	proceedings-article
+2	10.1007/bfb0022475	None	10.1007/bfb0022475	An extensional treatment of dataflow deadlock	Lecture Notes in Computer Science	book-chapter
+3	10.1016/0304-3975(81)90108-0	1981	10.1016/0304-3975(81)90108-0	An extensional treatment of dataflow deadlock	Theoretical Computer Science	journal-article
+4	10.1002/essoar.10505648.2	2021	10.1002/essoar.10505648.2	Causality and Time-Lagged Dependencies at the Watershed Scale		posted-content
+5	10.1002/essoar.10505648.1	2020	10.1002/essoar.10505648.1	Causality and Time-Lagged Dependencies at the Watershed Scale		posted-content
+6	10.1109/dsd.2019.00023	2019	10.1109/dsd.2019.00023	Odyn: Deadlock Prevention and Hybrid Scheduling Algorithm for Real-Time Dataflow Applications	2019 22nd Euromicro Conference on Digital System Design (DSD)	proceedings-article
+7	10.1109/12.954503	2001	10.1109/12.954503	Deadlock-free oblivious wormhole routing with cyclic dependencies	IEEE Transactions on Computers	journal-article
+8	10.1145/3180155.3180171	2018	10.1145/3180155.3180171	Dataflow tunneling	Proceedings of the 40th International Conference on Software Engineering	proceedings-article
+9	10.14232/actacyb.299805	2024	10.14232/actacyb.299805	Uncovering Hidden Dependencies: Constructing Intelligible Path Witnesses using Dataflow Analyses	Acta Cybernetica	journal-article
+10	10.1007/3-540-44618-4_30	2000	10.1007/3-540-44618-4_30	LP Deadlock Checking Using Partial Order Dependencies	Lecture Notes in Computer Science	book-chapter
+11	10.1145/258492.258507	1997	10.1145/258492.258507	Deadlock-free oblivious wormhole routing with cyclic dependencies	Proceedings of the ninth annual ACM symposium on Parallel algorithms and architectures  - SPAA '97	proceedings-article
+12	10.1007/978-94-017-0121-1_4	2003	10.1007/978-94-017-0121-1_4	A Duality in the Concept of Causality	Dependencies, Connections, and Other Relations	book-chapter
+13	10.1007/s11265-015-1083-4	2016	10.1007/s11265-015-1083-4	Dataflow Programs Analysis and Optimization Using Model Predictive Control Techniques	Journal of Signal Processing Systems	journal-article
+14	10.1109/cicsyn.2013.26	2013	10.1109/cicsyn.2013.26	Representing Guard Dependencies in Dataflow Execution Traces	2013 Fifth International Conference on Computational Intelligence, Communication Systems and Networks	proceedings-article
+15	10.15678/znuek.2015.0940.0408	2015	10.15678/znuek.2015.0940.0408	The Application of a Rolling Causality Test for Analysing Dependencies between the Prices of Corn, Crude Oil and Ethanol	Zeszyty Naukowe Uniwersytetu Ekonomicznego w Krakowie	journal-article
+16	10.1109/iccvdm66874.2025.11290078	2025	10.1109/iccvdm66874.2025.11290078	Feature-Stationary Dataflow Enabled Diffusion Transformer Accelerator	2025 6th International Conference on Computer Vision and Data Mining (ICCVDM)	proceedings-article
+17	10.1007/978-3-540-85762-4_5	None	10.1007/978-3-540-85762-4_5	Non-interleaving Semantics with Causality for Nondeterministic Dataflow	Lecture Notes in Computer Science	book-chapter
+18	10.16951/trendbusecon.1475528	2025	10.16951/trendbusecon.1475528	International Stock Market Dependencies: The Causality Approach	Trends in Business and Economics	journal-article
+19	10.1007/978-1-4615-2429-8_2	1994	10.1007/978-1-4615-2429-8_2	Definitions and Dependencies	User Interface Design	book-chapter
+20	10.4324/9781315053202-10	2014	10.4324/9781315053202-10	TOWARD LF INTERFACE	On Economizing the Theory of A-Bar Dependencies	book-chapter
+21	10.1016/0020-0190(96)00111-1	1996	10.1016/0020-0190(96)00111-1	Modelling causality via action dependencies in branching time semantics	Information Processing Letters	journal-article
+22	10.1007/3-540-69108-1_15	1998	10.1007/3-540-69108-1_15	Deadlock Detection in the Face of Transaction and Data Dependencies	Lecture Notes in Computer Science	book-chapter
+23	10.63282/3117-5481/aijcst-v2i5p102	2020	10.63282/3117-5481/aijcst-v2i5p102	Dataflow Optimization in Edge-Cloud Continuum: AI-Enabled Computational Models for Efficient Data Processing	American International Journal of Computer Science and Technology	journal-article
+24	10.1017/s026988899800201x	1998	10.1017/s026988899800201x	Rationale in planning: causality, dependencies, and decisions	The Knowledge Engineering Review	journal-article
+25	10.1007/s00354-023-00233-2	2023	10.1007/s00354-023-00233-2	Financial Causality Extraction Based on Universal Dependencies and Clue Expressions	New Generation Computing	journal-article
+26	10.1109/lca.2025.3618627	2025	10.1109/lca.2025.3618627	Efficient Deadlock Avoidance by Considering Stalling, Message Dependencies, and Topology	IEEE Computer Architecture Letters	journal-article
+27	10.4204/eptcs.259.4	2017	10.4204/eptcs.259.4	Causality and Temporal Dependencies in the Design of Fault Management Systems	Electronic Proceedings in Theoretical Computer Science	journal-article
+28	10.1109/dasip.2014.7115623	2014	10.1109/dasip.2014.7115623	Execution trace graph analysis of dataflow programs: Bounded buffer scheduling and deadlock recovery using model predictive control	Proceedings of the 2014 Conference on Design and Architectures for Signal and Image Processing	proceedings-article
+29	10.1109/indcon.2012.6420729	2012	10.1109/indcon.2012.6420729	Design and synthesis of Wishbone bus Dataflow interface architecture for SoC integration	2012 Annual IEEE India Conference (INDICON)	proceedings-article
+30	10.1021/jacs.2c09446.s001	None	10.1021/jacs.2c09446.s001	Superionic Conducting Halide Frameworks Enabled by Interface-Bonded Halides		component
+31	10.1109/hsc.1998.666236	None	10.1109/hsc.1998.666236	Domain-specific interface generation from dataflow specifications	Proceedings of the Sixth International Workshop on Hardware/Software Codesign. (CODES/CASHE'98)	proceedings-article
+32	10.1021/acs.nanolett.9b03650.s001	None	10.1021/acs.nanolett.9b03650.s001	Slippery and Wear-Resistant Surfaces Enabled by Interface Engineered Graphene		component
+33	10.1021/acsnano.2c08961.s005	None	10.1021/acsnano.2c08961.s005	MXene-Enabled Self-Adaptive Hydrogel Interface for Active Electroencephalogram Interactions		component
+34	10.1021/acsnano.2c08961.s001	None	10.1021/acsnano.2c08961.s001	MXene-Enabled Self-Adaptive Hydrogel Interface for Active Electroencephalogram Interactions		component
+35	10.1021/acsaem.8b02008.s001	None	10.1021/acsaem.8b02008.s001	Interface-Enabled Ion Conduction in Li10GeP2S12Poly(ethylene Oxide) Hybrid Electrolytes		component
+36	10.1021/acsnano.2c08961.s002	None	10.1021/acsnano.2c08961.s002	MXene-Enabled Self-Adaptive Hydrogel Interface for Active Electroencephalogram Interactions		component
+37	10.1021/acsnano.2c08961.s004	None	10.1021/acsnano.2c08961.s004	MXene-Enabled Self-Adaptive Hydrogel Interface for Active Electroencephalogram Interactions		component
+38	10.5040/9781474293471.ch-006	1994	10.5040/9781474293471.ch-006	Theological notions of creation and divine causality	Science and Theology : Questions at the Interface	book-chapter
+39	10.1021/acsnano.2c08961.s003	None	10.1021/acsnano.2c08961.s003	MXene-Enabled Self-Adaptive Hydrogel Interface for Active Electroencephalogram Interactions		component
+40	10.1145/278241.278295	1998	10.1145/278241.278295	Domain-specific interface generation from dataflow specifications	Proceedings of the sixth international workshop on Hardware/software codesign  - CODES/CASHE '98	proceedings-article
+41	10.1021/acsami.5c11072.s003	None	10.1021/acsami.5c11072.s003	Interface-Tunable Fluoropolymer Coatings Enabled by Surface-Engineered Recycled Tire Rubber		component
+42	10.1021/acsami.5c11072.s010	None	10.1021/acsami.5c11072.s010	Interface-Tunable Fluoropolymer Coatings Enabled by Surface-Engineered Recycled Tire Rubber		component
+43	10.1021/acssensors.2c02743.s001	None	10.1021/acssensors.2c02743.s001	Highly Sensitive Artificial Skin Perception Enabled by a Bio-inspired Interface		component
+44	10.1145/3746252.3760905	2025	10.1145/3746252.3760905	Solar Forecasting with Causality: A Graph-Transformer Approach to Spatiotemporal Dependencies	Proceedings of the 34th ACM International Conference on Information and Knowledge Management	proceedings-article
+45	10.1021/acsami.5c11072.s006	None	10.1021/acsami.5c11072.s006	Interface-Tunable Fluoropolymer Coatings Enabled by Surface-Engineered Recycled Tire Rubber		component
+46	10.1021/acsami.0c22006.s001	None	10.1021/acsami.0c22006.s001	Pressure-Driven and Creep-Enabled Interface Evolution in Sodium Metal Batteries		component
+47	10.1021/acsami.0c19443.s001	None	10.1021/acsami.0c19443.s001	Multistate Memory Enabled by Interface Engineering Based on Multilayer Tungsten Diselenide		component
+48	10.1021/acsami.5c11072.s012	None	10.1021/acsami.5c11072.s012	Interface-Tunable Fluoropolymer Coatings Enabled by Surface-Engineered Recycled Tire Rubber		component
+49	10.1021/acsami.5c11072.s008	None	10.1021/acsami.5c11072.s008	Interface-Tunable Fluoropolymer Coatings Enabled by Surface-Engineered Recycled Tire Rubber		component
+50	10.1021/acsami.5c11072.s011	None	10.1021/acsami.5c11072.s011	Interface-Tunable Fluoropolymer Coatings Enabled by Surface-Engineered Recycled Tire Rubber		component
+51	10.1021/acsami.5c11072.s004	None	10.1021/acsami.5c11072.s004	Interface-Tunable Fluoropolymer Coatings Enabled by Surface-Engineered Recycled Tire Rubber		component
+52	10.1021/acsami.5c11072.s001	None	10.1021/acsami.5c11072.s001	Interface-Tunable Fluoropolymer Coatings Enabled by Surface-Engineered Recycled Tire Rubber		component
+53	10.1021/acsami.5c11072.s007	None	10.1021/acsami.5c11072.s007	Interface-Tunable Fluoropolymer Coatings Enabled by Surface-Engineered Recycled Tire Rubber		component
+54	10.1021/acsami.5c11072.s009	None	10.1021/acsami.5c11072.s009	Interface-Tunable Fluoropolymer Coatings Enabled by Surface-Engineered Recycled Tire Rubber		component
+55	10.1021/acsami.5c11072.s002	None	10.1021/acsami.5c11072.s002	Interface-Tunable Fluoropolymer Coatings Enabled by Surface-Engineered Recycled Tire Rubber		component
+56	10.3030/838342	2019	10.3030/838342			grant
+57	10.1142/9789812817303_0011	1998	10.1142/9789812817303_0011	Can There Be Two Chains of Causality?	Endophysics	book-chapter
+58	10.1021/acsami.5c11072.s005	None	10.1021/acsami.5c11072.s005	Interface-Tunable Fluoropolymer Coatings Enabled by Surface-Engineered Recycled Tire Rubber		component
+59	10.1021/jacs.7b06036.s009	None	10.1021/jacs.7b06036.s009	Vapor-Enabled Propulsion for Plasmonic Photothermal Motor at the Liquid/Air Interface		component
+60	10.1039/d5im00380f/v1/review2	2026	10.1039/d5im00380f/v1/review2	"Review for ""Advanced photocatalysis enabled by water-state-driven interface design"""		peer-review
+61	10.1021/jacs.7b06036.s002	None	10.1021/jacs.7b06036.s002	Vapor-Enabled Propulsion for Plasmonic Photothermal Motor at the Liquid/Air Interface		component
+62	10.7765/9781526152374.00008	2021	10.7765/9781526152374.00008	Deadlock	Breaking the deadlock	book-chapter
+63	10.1021/jacs.7b06036.s008	None	10.1021/jacs.7b06036.s008	Vapor-Enabled Propulsion for Plasmonic Photothermal Motor at the Liquid/Air Interface		component
+64	10.1016/s0360-8352(98)00101-6	1998	10.1016/s0360-8352(98)00101-6	A deadlock detection interface to a commercial simulation language	Computers &amp; Industrial Engineering	journal-article
+65	10.1039/d5im00380f/v2/review3	2026	10.1039/d5im00380f/v2/review3	"Review for ""Advanced photocatalysis enabled by water-state-driven interface design"""		peer-review
+66	10.1021/jacs.7b06036.s005	None	10.1021/jacs.7b06036.s005	Vapor-Enabled Propulsion for Plasmonic Photothermal Motor at the Liquid/Air Interface		component
+67	10.1021/jacs.7b06036.s004	None	10.1021/jacs.7b06036.s004	Vapor-Enabled Propulsion for Plasmonic Photothermal Motor at the Liquid/Air Interface		component
+68	10.1021/acs.jpcc.9b10275.s001	None	10.1021/acs.jpcc.9b10275.s001	Surfactin-Laden AqueousLiquid Crystal Interface Enabled Identification of Secondary Structure of Proteins		component
+69	10.1039/d5im00380f/v1/review3	2026	10.1039/d5im00380f/v1/review3	"Review for ""Advanced photocatalysis enabled by water-state-driven interface design"""		peer-review
+70	10.1063/1.1388679	2001	10.1063/1.1388679	Limiting velocity at the interface between causality and virtuality	AIP Conference Proceedings	proceedings-article
+71	10.1021/jacs.7b06036.s003	None	10.1021/jacs.7b06036.s003	Vapor-Enabled Propulsion for Plasmonic Photothermal Motor at the Liquid/Air Interface		component
+72	10.1039/d5im00380f/v2/review2	2026	10.1039/d5im00380f/v2/review2	"Review for ""Advanced photocatalysis enabled by water-state-driven interface design"""		peer-review
+73	10.1021/jacs.7b06036.s006	None	10.1021/jacs.7b06036.s006	Vapor-Enabled Propulsion for Plasmonic Photothermal Motor at the Liquid/Air Interface		component
+74	10.1039/d5im00380f/v2/review1	2026	10.1039/d5im00380f/v2/review1	"Review for ""Advanced photocatalysis enabled by water-state-driven interface design"""		peer-review
+75	10.1039/d5im00380f/v1/review1	2025	10.1039/d5im00380f/v1/review1	"Review for ""Advanced photocatalysis enabled by water-state-driven interface design"""		peer-review
+76	10.1145/3731302.3731319	2026	10.1145/3731302.3731319	Advanced: Optimal Dataflow Programs and Dataflow SPLs	Science of Software Product Lines	book-chapter
+77	10.1021/jacs.7b06036.s001	None	10.1021/jacs.7b06036.s001	Vapor-Enabled Propulsion for Plasmonic Photothermal Motor at the Liquid/Air Interface		component
+78	10.1021/acsaelm.5c01889.s001	None	10.1021/acsaelm.5c01889.s001	In Situ Polymerization-Enabled Facile Electrode Interface in Solid-State LithiumMetal Batteries		component
+79	10.1098/rsif.2021.0766	2022	10.1098/rsif.2021.0766	Embedding entropy: a nonlinear measure of dynamical causality	Journal of The Royal Society Interface	journal-article
+80	10.1002/cpe.5176	2021	10.1002/cpe.5176	On communication efficient dataflow computing in software defined networking enabled cloud	Concurrency and Computation: Practice and Experience	journal-article
+81	10.1021/jacs.7b06036.s007	None	10.1021/jacs.7b06036.s007	Vapor-Enabled Propulsion for Plasmonic Photothermal Motor at the Liquid/Air Interface		component
+82	10.1021/acsami.0c11461.s001	None	10.1021/acsami.0c11461.s001	Metamaterial-Free Flexible Graphene-Enabled Terahertz Sensors for Pesticide Detection at Bio-Interface		component
+83	10.1036/1097-8542.181000	None	10.1036/1097-8542.181000	Dataflow systems	AccessScience	dataset
+84	10.5040/9781784512484.ch-003	2016	10.5040/9781784512484.ch-003	Breaking Deadlock: the Power of Mediation	International Mediation: Breaking Business Deadlock	other
+85	10.1145/2906363.2906379	2016	10.1145/2906363.2906379	In-Place Update in a Dataflow Synchronous Language	Proceedings of the 19th International Workshop on Software and Compilers for Embedded Systems	proceedings-article
+86	10.1088/1009-0630/8/3/24	2006	10.1088/1009-0630/8/3/24	Sub Farm Interface of the ATLAS Dataflow System	Plasma Science and Technology	journal-article
+87	10.1101/2022.05.19.492702	2022	10.1101/2022.05.19.492702	JEDII: Juxtaposition Enabled DNA-binding Interface Identifier		posted-content
+88	10.1109/9780470546543.ch50	2009	10.1109/9780470546543.ch50	Deadlock Avoidance in StoreandForward NetworksI: StoreandForward Deadlock	The Best of the Best	book-chapter
+89	10.1021/acs.nanolett.4c03256.s001	None	10.1021/acs.nanolett.4c03256.s001	Dendrite-Free Lithium Batteries Enabled by an Artificial High-Dielectric Biopolymer Interface Layer		component
+90	10.1021/acsami.5c02173.s001	None	10.1021/acsami.5c02173.s001	High-Stability Cesium Lead Iodide Perovskite Solar Cells Enabled by Buried Interface Regulation		component
+91	10.1109/icpp.1993.66	1993	10.1109/icpp.1993.66	Dataflow Graph Optimization for Dataflow Architectures a Dataflow Otimizing Compiler	1993 International Conference on Parallel Processing - ICPP'93 Vol2	proceedings-article
+92	10.1109/mm.2016.36	2016	10.1109/mm.2016.36	Accelerating the Accelerator Memory Interface with Access-Execute and Dataflow	IEEE Micro	journal-article
+93	10.1039/d5tc00895f/v1/review2	2025	10.1039/d5tc00895f/v1/review2	"Review for ""Enhanced synaptic characteristics of electrolyte-gated oxide transistor enabled by optimizing interface states at the oxide semiconductor/electrolyte interface"""		peer-review
+94	10.1021/acsenergylett.9b02211.s001	None	10.1021/acsenergylett.9b02211.s001	Reversible Electrochemical Interface of Mg Metal and Conventional Electrolyte Enabled by Intermediate Adsorption		component
+95	10.1515/9783110218497-002	2019	10.1515/9783110218497-002	1. Types of meaning and the semantics-pragmatics interface	Non-Lexical Pragmatics	book-chapter
+96	10.1021/acsenergylett.3c00589.s001	None	10.1021/acsenergylett.3c00589.s001	Efficient and Bright Blue Perovskite LEDs Enabled by a Carbazole-Phosphonic Acid Interface		component
+97	10.1021/acs.nanolett.2c05077.s001	None	10.1021/acs.nanolett.2c05077.s001	Reversible, Dendrite-Free, High-Capacity Aluminum Metal Anode Enabled by Aluminophilic Interface Layer		component
+98	10.1039/d5tc00895f/v2/review1	2025	10.1039/d5tc00895f/v2/review1	"Review for ""Enhanced synaptic characteristics of electrolyte-gated oxide transistor enabled by optimizing interface states at the oxide semiconductor/electrolyte interface"""		peer-review
+99	10.1039/d5tc00895f/v1/review1	2025	10.1039/d5tc00895f/v1/review1	"Review for ""Enhanced synaptic characteristics of electrolyte-gated oxide transistor enabled by optimizing interface states at the oxide semiconductor/electrolyte interface"""		peer-review
+100	10.1021/jacs.3c10214.s001	None	10.1021/jacs.3c10214.s001	Interface-Mediation-Enabled High-Performance Near-Infrared AgAuSe Quantum Dot Light-Emitting Diodes		component

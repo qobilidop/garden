@@ -143,6 +143,25 @@ observable channel histories, and equivalent graph and structured-calculus
 representations @law2025dataflowcircuits. This strengthens the formal
 program-model boundary, but its observable is whole-circuit channel history,
 not a requested sparse selection map and its exact input fibers.
+The corresponding dissertation extends the mechanization across two levels:
+dataflow-circuit specification and hardware implementation, as a step toward a
+Rocq-verified dynamically scheduled HLS compiler @law2026hardware. That
+refinement boundary relates whole circuit models rather than enumerating an
+internal selection observer over symbolic caller inputs.
+Dynamic-dataflow execution-trace graphs are a closer guard-level predecessor.
+Their nodes are concrete action firings and their dependency edges include
+tokens, ports, state, and explicit guard-enable or guard-disable relations;
+serial executions support a finite design-space reconstruction
+@brunet2013guardtraces @brunet2015dynamicdataflow. The construction is
+post-mortem and concrete-run based, not an exhaustive symbolic input partition,
+and its trace nodes carry no general residual value per observation fiber.
+Formal optimization of HLS dataflow circuits gives a complementary omission
+boundary. Model checking can prove that generic handshake behaviors are absent
+before simplifying the circuit without restricting behavior, while
+HLS-informed inductive invariants make the required property proofs scalable
+@xu2023dynamism @xu2023invariants. These methods decide selected circuit
+properties and remove unnecessary protocol generality; they do not enumerate
+all input-indexed internal observations.
 
 Delayed-choice execution is an especially instructive neighbor. A bounded
 nondeterministic value remains in a shared suspension until a non-copy use
@@ -361,6 +380,12 @@ relative to its naive semantics @yuan2025derivative. Thus requested-event and
 specification-relative omission can carry conditional or relative preservation
 theorems. These methods seek property witnesses, not every observation and its
 exact inverse input fiber.
+An analogous structural reduction for Time Petri Nets builds a firing
+dependency graph from the initial marking and a target MTL formula, removes
+never-fired or property-irrelevant transitions, and preserves the execution
+paths needed for property checking equivalent to the unsliced net
+@chariyathitipong2022tpnslicing. It returns one property-relative sliced model,
+not every observation and its inverse caller-input set.
 At a component boundary, dynamic interface reduction discovers externally
 visible behavior online and avoids global exploration of internal behavior
 that cannot propagate through the interface @guo2011interface. This is a

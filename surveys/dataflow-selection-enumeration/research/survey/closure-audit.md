@@ -1672,3 +1672,48 @@ If round 45 reopens the map, round 46 is retired unexecuted. If both qualify,
 they establish the required two-round no-add sequence only for the recorded
 sources, exact queries, captured rankings, date, and frozen trigger. Complete
 primary and independent audits remain mandatory before closure.
+
+## Outcome of round 45 and retirement of round 46
+
+Round 45 reopens the map under the frozen conservative trigger. All three
+auditors parsed and title-screened the 1,200 occurrences. Each snapshot has 100
+logical TSV records, ranks 1--100, and 100 unique nonblank source identifiers;
+the batch contains 1,171 unique identifiers. Eight blank-title occurrences
+represent five grant identifiers and contain no technical publication. The
+primary normalization counted 1,048 unique nonblank titles; the two independent
+normalizations each counted 1,046 under their documented rules. Three quoted
+multiline titles were parsed as single logical records.
+
+All three auditors returned reopen. The decisive additions change one or more
+of the semantic-object, guarantee, or program-model boundaries named by the
+frozen rule:
+
+- Law's 2026 dissertation extends the mechanized dynamically scheduled
+  dataflow-circuit development from a dataflow specification level toward a
+  lower hardware implementation and refinement guarantee.
+- Brunet's 2013 paper and 2015 dissertation represent concrete action firings
+  in execution-trace DAGs with explicit token, port, state, guard-enable, and
+  guard-disable dependencies, then use them for post-mortem design-space
+  reconstruction.
+- Chariyathitipong and Vatanawood slice a Time Petri Net relative to an initial
+  marking and MTL property while preserving the paths needed for equivalent
+  property checking.
+- Xu and collaborators prove selected generic handshake behaviors absent from
+  HLS-generated dataflow circuits, simplify the circuit accordingly, and use
+  HLS-guided inductive invariants to make those proofs scale.
+
+Trace-theoretic asynchronous-circuit determinacy and translation from general
+slack-elastic programs to dataflow circuits are retained as supporting
+program-model boundaries. Conference, dissertation, and companion records are
+kept distinct only where their compared object or guarantee differs.
+
+None of these additions supplies the target construction. The mechanized work
+relates whole circuit levels and channel behavior; the guard-trace work starts
+from concrete serial executions; the Petri-net slice preserves one temporal
+property; and the circuit-verification work proves selected behaviors absent.
+All three auditors agree that no record combines a complete requested-site
+observation image, exact caller-input inverse fibers, and typed general
+residuals.
+
+Round 45 cannot count toward closure. Round 46's precondition failed; it is
+retired unexecuted and cannot count toward the required no-add sequence.

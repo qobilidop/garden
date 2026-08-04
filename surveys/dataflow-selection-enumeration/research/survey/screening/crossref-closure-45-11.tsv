@@ -1,0 +1,101 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1201/9781003336945-2	2022	10.1201/9781003336945-2	Dataflow Computing	Acceleration of Biomedical Image Processing with Dataflow on FPGAs	book-chapter
+2	10.1117/12.2008131	2013	10.1117/12.2008131	Exact confidence intervals for channelized Hotelling observer performance	SPIE Proceedings	proceedings-article
+3	10.1007/978-3-030-13803-5_8	2019	10.1007/978-3-030-13803-5_8	An Overview of Selected DataFlow Applications in Physics Simulations	Computer Communications and Networks	book-chapter
+4	10.1201/9781003336945-3	2022	10.1201/9781003336945-3	Acceleration of Imperative Code with Dataflow Computing	Acceleration of Biomedical Image Processing with Dataflow on FPGAs	book-chapter
+5	10.1201/9781003336945	2022	10.1201/9781003336945	Acceleration of Biomedical Image Processing with Dataflow on FPGAs		monograph
+6	10.1007/978-3-030-13803-5_9	2019	10.1007/978-3-030-13803-5_9	Bitcoin Mining Using Maxeler DataFlow Computers	Computer Communications and Networks	book-chapter
+7	10.1201/9781003336945-4	2022	10.1201/9781003336945-4	Biomedical Image Processing and Reconstruction	Acceleration of Biomedical Image Processing with Dataflow on FPGAs	book-chapter
+8	10.1016/bs.adcom.2014.11.003	2015	10.1016/bs.adcom.2014.11.003	An Overview of Selected Heterogeneous and Reconfigurable Architectures	Advances in Computers	book-chapter
+9	10.21236/ada458136	2001	10.21236/ada458136	Use of the Fisher Exact Test for the Design of Observer Tests		report
+10	10.1007/978-3-030-13803-5_2	2019	10.1007/978-3-030-13803-5_2	On Cloud-Supported Web-Based Integrated Development Environment for Programming DataFlow Architectures	Computer Communications and Networks	book-chapter
+11	10.1007/978-3-030-13803-5_6	2019	10.1007/978-3-030-13803-5_6	Face Recognition Using Maxeler DataFlow	Computer Communications and Networks	book-chapter
+12	10.1007/978-3-030-13803-5_7	2019	10.1007/978-3-030-13803-5_7	Biomedical Images Processing Using Maxeler DataFlow Engines	Computer Communications and Networks	book-chapter
+13	10.1007/978-3-030-13803-5_4	2019	10.1007/978-3-030-13803-5_4	Matrix-Based Algorithms for DataFlow Computer Architecture: An Overview and Comparison	Computer Communications and Networks	book-chapter
+14	10.1201/9781003336945-1	2022	10.1201/9781003336945-1	Introduction	Acceleration of Biomedical Image Processing with Dataflow on FPGAs	book-chapter
+15	10.1201/9781003336945-5	2022	10.1201/9781003336945-5	Conclusion	Acceleration of Biomedical Image Processing with Dataflow on FPGAs	book-chapter
+16	10.1007/978-3-030-13803-5_5	2019	10.1007/978-3-030-13803-5_5	Application of Maxeler DataFlow Supercomputing to Spherical Code Design	Computer Communications and Networks	book-chapter
+17	10.1109/nssmic.2004.1466701	None	10.1109/nssmic.2004.1466701	Exact image reconstruction for selected ROI in helical cone-beam CT	IEEE Symposium Conference Record Nuclear Science 2004.	proceedings-article
+18	10.1109/ipps.1991.153848	None	10.1109/ipps.1991.153848	A simulation of demand-driven dataflow: translation from Lucid into MDC language	[1991] Proceedings. The Fifth International Parallel Processing Symposium	proceedings-article
+19	10.1201/b11716-30	2017	10.1201/b11716-30	Dataflow-Based Design and Implementation of Image Processing Applications	Multimedia Image and Video Processing	book-chapter
+20	10.1109/tmi.2014.2360496	2015	10.1109/tmi.2014.2360496	Exact Confidence Intervals for Channelized Hotelling Observer Performance in Image Quality Studies	IEEE Transactions on Medical Imaging	journal-article
+21	10.1145/222124.222146	1995	10.1145/222124.222146	Demand interprocedural dataflow analysis	Proceedings of the 3rd ACM SIGSOFT symposium on Foundations of software engineering	proceedings-article
+22	10.1145/222132.222146	1995	10.1145/222132.222146	Demand interprocedural dataflow analysis	ACM SIGSOFT Software Engineering Notes	journal-article
+23	10.1145/224538.224570	1995	10.1145/224538.224570	Enhancing array dataflow dependence analysis with on-demand global value propagation	Proceedings of the 9th international conference on Supercomputing  - ICS '95	proceedings-article
+24	10.3390/act13040133	2024	10.3390/act13040133	Two-Stage Predefined-Time Exact Sliding Mode Control Based on Predefined-Time Exact Disturbance Observer	Actuators	journal-article
+25	10.1142/9789812839442_0018	2010	10.1142/9789812839442_0018	DATAFLOW COMPUTATIONS ON ENTERPRISE GRIDS	Selected Topics in Communication Networks and Distributed Systems	book-chapter
+26	10.7717/peerj-cs.2329/fig-5	None	10.7717/peerj-cs.2329/fig-5	Figure 5: Selected attractions’ tourism demand distribution.		component
+27	10.1007/bf03259389	1994	10.1007/bf03259389	Stability, Sequentiality and Demand Driven Evaluation in Dataflow	Formal Aspects of Computing	journal-article
+28	10.1007/978-3-030-13803-5	2019	10.1007/978-3-030-13803-5	Exploring the DataFlow Supercomputing Paradigm	Computer Communications and Networks	book
+29	10.1007/3-540-16042-6_23	1985	10.1007/3-540-16042-6_23	Demand-driven evaluation on dataflow machine	Lecture Notes in Computer Science	book-chapter
+30	10.1007/s11265-021-01649-z	2021	10.1007/s11265-021-01649-z	Evaluation of the Exact Throughput of a Synchronous DataFlow Graph	Journal of Signal Processing Systems	journal-article
+31	10.7717/peerj.12280/table-3	None	10.7717/peerj.12280/table-3	Table 3: Effects of observer and image magnification on aging accuracy.		component
+32	10.1007/bfb0027039	1986	10.1007/bfb0027039	Dataflow and education: Data-driven and demand-driven distributed computation	Lecture Notes in Computer Science	book-chapter
+33	10.26686/wgtn.16985461	None	10.26686/wgtn.16985461	Applications of, and Extensions to, Selected Exact Solutions in General Relativity		dissertation
+34	10.1093/wbro/lkp016	2010	10.1093/wbro/lkp016	Estimation of Water Demand in Developing Countries: An Overview	The World Bank Research Observer	journal-article
+35	10.5220/0001339800130021	2007	10.5220/0001339800130021	ITKBOARD: A VISUAL DATAFLOW LANGUAGE FOR BIOMEDICAL IMAGE PROCESSING	Proceedings of the Second International Conference on Software and Data Technologies	proceedings-article
+36	10.1007/s11554-014-0462-6	2016	10.1007/s11554-014-0462-6	High-level dataflow programming for real-time image processing on smart cameras	Journal of Real-Time Image Processing	journal-article
+37	10.1016/j.automatica.2025.112810	2026	10.1016/j.automatica.2025.112810	Exact prescribed-time stabilization and observer design for a class of MIMO nonlinear systems	Automatica	journal-article
+38	10.3030/838342	2019	10.3030/838342			grant
+39	10.1016/0165-6074(90)90167-8	1990	10.1016/0165-6074(90)90167-8	A demand-driven macro-dataflow schema for distributed graph reduction on multiple G-machines	Microprocessing and Microprogramming	journal-article
+40	10.3828/liverpool/9781789620290.003.0004	2020	10.3828/liverpool/9781789620290.003.0004	Society and the Observer	Image of a Man	book-chapter
+41	10.2352/cic.1994.2.1.art00028	1994	10.2352/cic.1994.2.1.art00028	A Dataflow Environment for Real-Time Image Processing Applications	Color and Imaging Conference	journal-article
+42	10.1109/epepemc.2008.4635605	2008	10.1109/epepemc.2008.4635605	Observer of induction motor speed based on exact disturbance model	2008 13th International Power Electronics and Motion Control Conference	proceedings-article
+43	10.1109/dasip.2010.5706280	2010	10.1109/dasip.2010.5706280	Classification and transformation of dynamic dataflow programs	2010 Conference on Design and Architectures for Signal and Image Processing (DASIP)	proceedings-article
+44	10.1142/9789814360128_0005	1991	10.1142/9789814360128_0005	Dataflow Computing Mechanism For Logic Program and Extraction of Functional from It	Software Science and Engineering	book-chapter
+45	10.1109/9780470545249.ch7	2009	10.1109/9780470545249.ch7	Exact image theory	Methods for Electromagnetic Field Analysis	book-chapter
+46	10.1109/codit66093.2025.11321698	2025	10.1109/codit66093.2025.11321698	A comparative study between flatness-based control with an exact observer and functional observer-based feedback control	2025 11th International Conference on Control, Decision and Information Technologies (CoDIT)	proceedings-article
+47	10.14434/do.v13i2.31063	2020	10.14434/do.v13i2.31063	Selected Publications 2019 - 2020	Developmental Observer	journal-article
+48	10.2352/j.imagingsci.technol.2003.47.6.art00007	2003	10.2352/j.imagingsci.technol.2003.47.6.art00007	Perceived Image Contrast and Observer Preference II. Empirical Modeling of Perceived Image Contrast and Observer Preference Data	Journal of Imaging Science and Technology	journal-article
+49	10.2307/1911801	1961	10.2307/1911801	An Exact Method of Consumer Demand Analysis	Econometrica	journal-article
+50	10.1117/12.770676	2008	10.1117/12.770676	SPECT image system optimization using ideal observer for detection and localization	SPIE Proceedings	proceedings-article
+51	10.2307/1909971	1966	10.2307/1909971	An Exact Method of Consumer Demand Analysis	Econometrica	journal-article
+52	10.1145/3731302.3731319	2026	10.1145/3731302.3731319	Advanced: Optimal Dataflow Programs and Dataflow SPLs	Science of Software Product Lines	book-chapter
+53	10.1016/j.image.2013.08.013	2013	10.1016/j.image.2013.08.013	Automated design of networks of transport-triggered architecture processors using dynamic dataflow programs	Signal Processing: Image Communication	journal-article
+54	10.2139/ssrn.3915864	2021	10.2139/ssrn.3915864	Quantifying the Structure of Residential Water Demand in the United States: A Generalized Exact Affine Stone Index Demand Framework	SSRN Electronic Journal	journal-article
+55	10.1109/icamechs.2014.6911647	2014	10.1109/icamechs.2014.6911647	A nonlinear exact disturbance observer inspired by sliding mode techniques	Proceedings of the 2014 International Conference on Advanced Mechatronic Systems	proceedings-article
+56	10.1109/acc.1999.782748	1999	10.1109/acc.1999.782748	Exact, almost and delayed fault detection-an observer based approach	Proceedings of the 1999 American Control Conference (Cat. No. 99CH36251)	proceedings-article
+57	10.1036/1097-8542.181000	None	10.1036/1097-8542.181000	Dataflow systems	AccessScience	dataset
+58	10.1109/icpr.1990.119397	None	10.1109/icpr.1990.119397	The synchronous dataflow machine: a computer architecture for real time image processing	[1990] Proceedings. 10th International Conference on Pattern Recognition	proceedings-article
+59	10.14434/do.v17i3.39759	2024	10.14434/do.v17i3.39759	Selected Publications - 2023-2024	Developmental Observer	journal-article
+60	10.1109/dasip.2017.8122118	2017	10.1109/dasip.2017.8122118	Detecting data-parallel synchronous dataflow graphs	2017 Conference on Design and Architectures for Signal and Image Processing (DASIP)	proceedings-article
+61	10.2307/j.ctv1h0p0n2.16	2020	10.2307/j.ctv1h0p0n2.16	Commentaire de « From the Local Observer in QM to the Fixed-Point Observer in GR »	Passages à la limite et seuils critiques. Morceaux Choisis/ Selected Papers	book-chapter
+62	10.1109/icpp.1993.66	1993	10.1109/icpp.1993.66	Dataflow Graph Optimization for Dataflow Architectures a Dataflow Otimizing Compiler	1993 International Conference on Parallel Processing - ICPP'93 Vol2	proceedings-article
+63	10.1109/acc.2005.1470635	None	10.1109/acc.2005.1470635	Newton observer design in the absence of an exact discrete-time model	Proceedings of the 2005, American Control Conference, 2005.	proceedings-article
+64	10.1109/dasip.2018.8596931	2018	10.1109/dasip.2018.8596931	Design Flow for Portable Dataflow Programming of Heterogeneous Platforms	2018 Conference on Design and Architectures for Signal and Image Processing (DASIP)	proceedings-article
+65	10.1007/978-3-540-88655-6_5	2008	10.1007/978-3-540-88655-6_5	A Visual Dataflow Language for Image Segmentation and Registration	Communications in Computer and Information Science	book-chapter
+66	10.1109/iecon.1993.339310	None	10.1109/iecon.1993.339310	Exact observer for flexible joint robots	Proceedings of IECON '93 - 19th Annual Conference of IEEE Industrial Electronics	proceedings-article
+67	10.1117/12.2613068	2022	10.1117/12.2613068	Performance of list mode Hotelling observer and comparison to a neural network observer	Medical Imaging 2022: Image Perception, Observer Performance, and Technology Assessment	proceedings-article
+68	10.1117/12.2592824	2021	10.1117/12.2592824	Welcome and introduction to the SPIE Image Perception, Observer Performance, and Technology Assessment Conference 11599	Medical Imaging 2021: Image Perception, Observer Performance, and Technology Assessment	proceedings-article
+69	10.1109/imtc.2008.4547405	2008	10.1109/imtc.2008.4547405	Spectral Observer with Reduced Information Demand	2008 IEEE Instrumentation and Measurement Technology Conference	proceedings-article
+70	10.1525/9780520966284-012	2019	10.1525/9780520966284-012	Selected Bibliography	We Demand	book-chapter
+71	10.13164/re.2025.0482	2025	10.13164/re.2025.0482	A Streaming Dataflow Accelerator for Sparse SVM Kernel Computation in Hyperspectral Image Classification	Radioengineering	journal-article
+72	10.1109/his.2007.54	2007	10.1109/his.2007.54	Dataflow orchestration of image processing algorithms using high-level petri nets	7th International Conference on Hybrid Intelligent Systems (HIS 2007)	proceedings-article
+73	10.1117/12.2548998	2020	10.1117/12.2548998	Deep learning channelized Hotelling observer for multi-vendor DBT system image quality evaluation	Medical Imaging 2020: Image Perception, Observer Performance, and Technology Assessment	proceedings-article
+74	10.1515/9782763748283-014	2020	10.1515/9782763748283-014	<i>Commentaire de</i> « From the Local Observer in QM to the Fixed-Point Observer in GR »	Passages à la limite et seuils critiques. Morceaux Choisis/ Selected Papers	book-chapter
+75	10.2307/25140154	1982	10.2307/25140154	The Passionate Observer: Selected Writings	Labour / Le Travail	journal-article
+76	10.1007/978-3-030-50039-9_4	2020	10.1007/978-3-030-50039-9_4	Observer Space-Time Formalism	SpringerBriefs in Physics	book-chapter
+77	10.1016/s0375-9601(03)00171-3	2003	10.1016/s0375-9601(03)00171-3	Observer-based exact synchronization of ideal and mismatched chaotic systems	Physics Letters A	journal-article
+78	10.1109/reconfig.2016.7857161	2016	10.1109/reconfig.2016.7857161	Dataflow optimization for programmable embedded image preprocessing accelerators	2016 International Conference on ReConFigurable Computing and FPGAs (ReConFig)	proceedings-article
+79	10.31390/gradschool_disstheses.4648	None	10.31390/gradschool_disstheses.4648	An Analysis of Rice Import Demand in Selected Asian Economies.		dissertation
+80	10.1108/01443589210021398	1992	10.1108/01443589210021398	Exact Aggregation and the Demand for Public Goods	Journal of Economic Studies	journal-article
+81	10.1117/12.2581363	2021	10.1117/12.2581363	Observer models utilizing compressed textures	Medical Imaging 2021: Image Perception, Observer Performance, and Technology Assessment	proceedings-article
+82	10.1117/12.911809	2012	10.1117/12.911809	Performance characteristics of a visual-search human-model observer with sparse PET image data	SPIE Proceedings	proceedings-article
+83	10.1016/0035-5054(93)90020-4	1993	10.1016/0035-5054(93)90020-4	Exact aggregation of consumer demand systems	Ricerche Economiche	journal-article
+84	10.1109/icip.2002.1038150	None	10.1109/icip.2002.1038150	Observer-dependent sharpening	Proceedings. International Conference on Image Processing	proceedings-article
+85	10.1109/icsip65915.2025.11171466	2025	10.1109/icsip65915.2025.11171466	Multi-Observer Scanpaths for Omnidirectional Image Quality Assessment	2025 10th International Conference on Signal and Image Processing (ICSIP)	proceedings-article
+86	10.1109/meco.2017.7977122	2017	10.1109/meco.2017.7977122	A DataFlow course: Dataflow supercomputing	2017 6th Mediterranean Conference on Embedded Computing (MECO)	proceedings-article
+87	10.1109/fpl.2014.6927378	2014	10.1109/fpl.2014.6927378	Biomedical image processing and reconstruction with dataflow computing on FPGAs	2014 24th International Conference on Field Programmable Logic and Applications (FPL)	proceedings-article
+88	10.1117/12.3087019	2026	10.1117/12.3087019	A nonlinear channelized model observer using Box‑Cox transformation	Medical Imaging 2026: Image Perception, Observer Performance, and Technology Assessment	proceedings-article
+89	10.21236/ada208725	1989	10.21236/ada208725	An Efficient Exact Algorithm for the 'Least Squares Image Registration Problem		report
+90	10.1117/12.654172	2006	10.1117/12.654172	Optimal observer framework and categorization observer framework for three-class ROC analysis	SPIE Proceedings	proceedings-article
+91	10.2172/1968831	2023	10.2172/1968831	Exact Maps to Second Order for Selected Elements in MAD-X Variables		report
+92	10.1117/12.2581248	2021	10.1117/12.2581248	A hybrid channelized Hotelling observer for estimating the ideal linear observer for total-variation-based image reconstruction	Medical Imaging 2021: Image Perception, Observer Performance, and Technology Assessment	proceedings-article
+93	10.1148/radiol.211832	2022	10.1148/radiol.211832	Human Observer Net: A Platform Tool for Human Observer Studies of Image Data	Radiology	journal-article
+94	10.1109/dasip.2014.7115605	2014	10.1109/dasip.2014.7115605	Automatic generation of dataflow-based reconfigurable co-processing units	Proceedings of the 2014 Conference on Design and Architectures for Signal and Image Processing	proceedings-article
+95	10.1007/s11554-023-01378-5	2024	10.1007/s11554-023-01378-5	A real-time and high-performance MobileNet accelerator based on adaptive dataflow scheduling for image classification	Journal of Real-Time Image Processing	journal-article
+96	10.2172/6125034	1989	10.2172/6125034	An efficient exact algorithm for the ''least squares'' image registration problems		report
+97	10.2139/ssrn.4698351	2024	10.2139/ssrn.4698351	Exact Algorithm for Simultaneous Pickup and Delivery Problem with Split Demand and Time Windows		posted-content
+98	10.1109/ichis.2007.4344076	2007	10.1109/ichis.2007.4344076	Dataflow orchestration of image processing algorithms using high-level petri nets	7th International Conference on Hybrid Intelligent Systems (HIS 2007)	proceedings-article
+99	10.1016/0045-8732(86)90141-5	1986	10.1016/0045-8732(86)90141-5	Mars Observer investigations selected	COSPAR Information Bulletin	journal-article
+100	10.1109/ukrcon.2019.8879934	2019	10.1109/ukrcon.2019.8879934	Dataflow and System Organization for Image Sensor Data Processing	2019 IEEE 2nd Ukraine Conference on Electrical and Computer Engineering (UKRCON)	proceedings-article

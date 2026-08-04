@@ -1,0 +1,101 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1006/inco.1996.0012	1996	10.1006/inco.1996.0012	On Schematological Equivalence of Dataflow Networks	Information and Computation	journal-article
+2	10.1006/inco.1997.2658	1997	10.1006/inco.1997.2658	On Schematological Equivalence of Partially Interpreted Dataflow Networks	Information and Computation	journal-article
+3	10.70675/ebf4440bze270z4ca7z82ccz50ad84472bed	None	10.70675/ebf4440bze270z4ca7z82ccz50ad84472bed	RDF : A Reconfigurable Dataflow Models of Computation		dissertation
+4	10.21236/ada228612	1990	10.21236/ada228612	Dataflow Computation for the J-Machine		report
+5	10.14711/thesis-991013114658403412	None	10.14711/thesis-991013114658403412	Observable and economical dataflow computation in datacenters		dissertation
+6	10.17587/it.27.625-633	2021	10.17587/it.27.625-633	Dynamic Control of Computation Consistency in the Parallel Dataflow Computing System	Informacionnye Tehnologii	journal-article
+7	10.1002/cpe.6176	2021	10.1002/cpe.6176	Gamma — General Abstract Model for Multiset mAnipulation and dynamic dataflow model: An equivalence study	Concurrency and Computation: Practice and Experience	journal-article
+8	10.70675/0f11a903z4f18z4da8za6b9z6ea3daa9045e	None	10.70675/0f11a903z4f18z4da8za6b9z6ea3daa9045e	Extension and Analysis of Dataflow Models of Computation for Embedded Runtimes		dissertation
+9	10.1515/jci-2013-0020	2014	10.1515/jci-2013-0020	Confounding Equivalence in Causal Inference	Journal of Causal Inference	journal-article
+10	10.1016/0890-5401(92)90043-f	1992	10.1016/0890-5401(92)90043-f	The expressive power of indeterminate dataflow primitives	Information and Computation	journal-article
+11	10.1145/3501714.3501732	2022	10.1145/3501714.3501732	Equivalence and Synthesis of Causal Models	Probabilistic and Causal Inference	book-chapter
+12	10.70675/b007b806z5a7dz4d5czbe99zd46a1ecb845d	None	10.70675/b007b806z5a7dz4d5czbe99zd46a1ecb845d	Causal explanations and continuous computation		dissertation
+13	10.1007/3-540-54458-5_55	1991	10.1007/3-540-54458-5_55	The consistency of a noninterleaving and an interleaving model for full TCSP	Lecture Notes in Computer Science	book-chapter
+14	10.2172/2203460	2023	10.2172/2203460	Navier: Dataflow Architecture for Computation Chemistry		report
+15	10.1145/3578356.3592593	2023	10.1145/3578356.3592593	Causal fault localisation in dataflow systems	Proceedings of the 3rd Workshop on Machine Learning and Systems	proceedings-article
+16	10.1002/cpe.1708	2011	10.1002/cpe.1708	Dataflow detection and applications to workflow scheduling	Concurrency and Computation: Practice and Experience	journal-article
+17	10.1006/inco.2000.9999	2000	10.1006/inco.2000.9999	Compositionality in Dataflow Synchronous Languages: Specification and Distributed Code Generation	Information and Computation	journal-article
+18	10.1007/bfb0022475	None	10.1007/bfb0022475	An extensional treatment of dataflow deadlock	Lecture Notes in Computer Science	book-chapter
+19	10.1007/978-1-4471-4210-2_3	2013	10.1007/978-1-4471-4210-2_3	Dataflow Model of Computation	Lecture Notes in Electrical Engineering	book-chapter
+20	10.3390/computation11070133	2023	10.3390/computation11070133	Quantifying Causal Path-Specific Importance in Structural Causal Model	Computation	journal-article
+21	10.7551/mitpress/2006.003.0016	1999	10.7551/mitpress/2006.003.0016	Estimating Causal Effects	Computation, Causation, and Discovery	book-chapter
+22	10.1093/acprof:oso/9780195176803.003.0016	2007	10.1093/acprof:oso/9780195176803.003.0016	Why Represent Causal Relations?	Causal Learning	book-chapter
+23	10.1145/96877.96892	1990	10.1145/96877.96892	Dataflow for logic program as substitution manipulator	Proceedings of the international symposium on Symbolic and algebraic computation	proceedings-article
+24	10.1016/j.ic.2025.105370	2025	10.1016/j.ic.2025.105370	On the equivalence of Occam algorithms	Information and Computation	journal-article
+25	10.1007/978-3-540-71209-1_10	None	10.1007/978-3-540-71209-1_10	Causal Dataflow Analysis for Concurrent Programs	Lecture Notes in Computer Science	book-chapter
+26	10.2307/2007510	1981	10.2307/2007510	On Algorithmic Equivalence in Linear Fractional Programming	Mathematics of Computation	journal-article
+27	10.1006/inco.2001.3074	2002	10.1006/inco.2001.3074	Decidability of Split Equivalence	Information and Computation	journal-article
+28	10.1016/j.ic.2017.09.014	2017	10.1016/j.ic.2017.09.014	Probabilistic bisimilarity as testing equivalence	Information and Computation	journal-article
+29	10.1006/inco.1996.0048	1996	10.1006/inco.1996.0048	The Limit of Splitn-Language Equivalence	Information and Computation	journal-article
+30	10.1002/cpe.8248	2024	10.1002/cpe.8248	M‐DFCPP: A runtime library for multi‐machine dataflow computing	Concurrency and Computation: Practice and Experience	journal-article
+31	10.1016/j.ic.2003.12.002	2004	10.1016/j.ic.2003.12.002	Bounds for the D0L language equivalence problem	Information and Computation	journal-article
+32	10.1007/978-1-4615-3188-3_12	1993	10.1007/978-1-4615-3188-3_12	Zero Equivalence Testing	Effective Polynomial Computation	book-chapter
+33	10.1093/acprof:oso/9780195176803.003.0008	2007	10.1093/acprof:oso/9780195176803.003.0008	On the Importance of Causal Taxonomy	Causal Learning	book-chapter
+34	10.1006/inco.1995.1114	1995	10.1006/inco.1995.1114	Testing Equivalence for Mobile Processes	Information and Computation	journal-article
+35	10.1016/j.ic.2009.11.006	2010	10.1016/j.ic.2009.11.006	On quantifier-rank equivalence between linear orders	Information and Computation	journal-article
+36	10.1002/cpe.5176	2021	10.1002/cpe.5176	On communication efficient dataflow computing in software defined networking enabled cloud	Concurrency and Computation: Practice and Experience	journal-article
+37	10.4178/epih.e2020024	2020	10.4178/epih.e2020024	Equivalence model: A new graphical model for causal inference	Epidemiology and Health	journal-article
+38	10.1093/acprof:oso/9780195176803.003.0003	2007	10.1093/acprof:oso/9780195176803.003.0003	Infants’ Causal Learning	Causal Learning	book-chapter
+39	10.1201/9781420048025.ch4	2009	10.1201/9781420048025.ch4	DSP-Oriented Dataflow Models Of Computation	Signal Processing and Communications	book-chapter
+40	10.1007/978-981-15-6401-7_45-1	2022	10.1007/978-981-15-6401-7_45-1	Dataflow Models of Computation for Programming Heterogeneous Multicores	Handbook of Computer Architecture	book-chapter
+41	10.1002/cpe.4490	2018	10.1002/cpe.4490	Evaluation of dataflow programming models for electronic structure theory	Concurrency and Computation: Practice and Experience	journal-article
+42	10.1109/wcre.2003.1287262	None	10.1109/wcre.2003.1287262	An empirical study of computation equivalence as determined by decomposition slice equivalence	10th Working Conference on Reverse Engineering, 2003. WCRE 2003. Proceedings.	proceedings-article
+43	10.3390/computation8040085	2020	10.3390/computation8040085	Causal Modeling of Twitter Activity during COVID-19	Computation	journal-article
+44	10.1016/j.ic.2012.10.019	2013	10.1016/j.ic.2012.10.019	Causal graph dynamics	Information and Computation	journal-article
+45	10.1515/jci-2025-0058	2026	10.1515/jci-2025-0058	Untangling sample and population level estimands in Bayesian causal computation	Journal of Causal Inference	journal-article
+46	10.1007/978-981-15-6401-7_45-2	2023	10.1007/978-981-15-6401-7_45-2	Dataflow Models of Computation for Programming Heterogeneous Multicores	Handbook of Computer Architecture	book-chapter
+47	10.1109/isca.1989.714568	None	10.1109/isca.1989.714568	Analysis Of Computation-Communication Issues In Dynamic Dataflow Architectures	The 16th Annual International Symposium on Computer Architecture	proceedings-article
+48	10.1007/978-981-97-9314-3_45	2025	10.1007/978-981-97-9314-3_45	Dataflow Models of Computation for Programming Heterogeneous Multicores	Handbook of Computer Architecture	book-chapter
+49	10.1109/cain58948.2023.00010	2023	10.1109/cain58948.2023.00010	Dataflow graphs as complete causal graphs	2023 IEEE/ACM 2nd International Conference on AI Engineering – Software Engineering for AI (CAIN)	proceedings-article
+50	10.1037/e501882009-210	2000	10.1037/e501882009-210	Causal Learning: Association or Computation?	PsycEXTRA Dataset	dataset
+51	10.1145/165180.165203	1993	10.1145/165180.165203	Efficient implementation of sequential loops in dataflow computation	Proceedings of the conference on Functional programming languages and computer architecture	proceedings-article
+52	10.1007/978-94-010-0526-5_11	2001	10.1007/978-94-010-0526-5_11	Equivalence Relations and Groups	Logic, Meaning and Computation	book-chapter
+53	10.1109/pacrim.1995.519406	None	10.1109/pacrim.1995.519406	Hierarchical macro-dataflow computation scheme	IEEE Pacific Rim Conference on Communications, Computers, and Signal Processing. Proceedings	proceedings-article
+54	10.1162/089976698300017269	1998	10.1162/089976698300017269	An Equivalence Between Sparse Approximation and Support Vector Machines	Neural Computation	journal-article
+55	10.1016/j.ic.2011.01.006	2011	10.1016/j.ic.2011.01.006	Complexity classes of equivalence problems revisited	Information and Computation	journal-article
+56	10.1162/neco_a_01160	2019	10.1162/neco_a_01160	Equivalence of Equilibrium Propagation and Recurrent Backpropagation	Neural Computation	journal-article
+57	10.1016/j.ic.2013.02.002	2013	10.1016/j.ic.2013.02.002	Testing probabilistic equivalence through Reinforcement Learning	Information and Computation	journal-article
+58	10.1093/acprof:oso/9780195176803.003.0021	2007	10.1093/acprof:oso/9780195176803.003.0021	Two Proposals for Causal Grammars	Causal Learning	book-chapter
+59	10.20944/preprints202607.1938.v1	2026	10.20944/preprints202607.1938.v1	Causal Depth as an Invariant of Irreducible Computation: Reassessing Logical Depth, Causal Order, and Physical Time		posted-content
+60	10.1109/ecie69549.2026.11565719	2026	10.1109/ecie69549.2026.11565719	A Multi-Level Dataflow Parallel Acceleration Framework for EPS-Based Equivalence Checking	2026 6th International Conference on Electronics, Circuits and Information Engineering (ECIE)	proceedings-article
+61	10.1093/acprof:oso/9780195176803.003.0004	2007	10.1093/acprof:oso/9780195176803.003.0004	Detecting Causal Structure	Causal Learning	book-chapter
+62	10.1016/j.amc.2006.07.016	2007	10.1016/j.amc.2006.07.016	Reliability equivalence factors in Gamma distribution	Applied Mathematics and Computation	journal-article
+63	10.1016/j.ic.2015.11.009	2016	10.1016/j.ic.2015.11.009	Proving language inclusion and equivalence by coinduction	Information and Computation	journal-article
+64	10.1016/j.amc.2004.08.008	2005	10.1016/j.amc.2004.08.008	Equivalence of C0 and C1 methods for ODE’s	Applied Mathematics and Computation	journal-article
+65	10.1093/acprof:oso/9780195176803.002.0004	2007	10.1093/acprof:oso/9780195176803.002.0004	Preface	Causal Learning	book-section
+66	10.1007/978-94-009-4033-8_10	1988	10.1007/978-94-009-4033-8_10	Qualia, Functional Equivalence, and Computation	Perspectives on Mind	book-chapter
+67	10.1016/j.amc.2015.06.065	2015	10.1016/j.amc.2015.06.065	On the first integral and equivalence of nonlinear differential equations	Applied Mathematics and Computation	journal-article
+68	10.1093/acprof:oso/9780195176803.002.0006	2007	10.1093/acprof:oso/9780195176803.002.0006	Contributors	Causal Learning	other
+69	10.1006/jsco.1993.1004	1993	10.1006/jsco.1993.1004	The Equivalence Problem for Finite Rings	Journal of Symbolic Computation	journal-article
+70	10.1006/inco.1997.2661	1997	10.1006/inco.1997.2661	Complexity of Equivalence Problems for Concurrent Systems of Finite Agents	Information and Computation	journal-article
+71	10.1093/acprof:oso/9780195176803.003.0010	2007	10.1093/acprof:oso/9780195176803.003.0010	Interactions Between Causal and Statistical Learning	Causal Learning	book-chapter
+72	10.1016/j.ic.2022.104998	2023	10.1016/j.ic.2022.104998	Causal computational complexity of distributed processes	Information and Computation	journal-article
+73	10.1016/j.jsc.2008.09.004	2009	10.1016/j.jsc.2008.09.004	On the equivalence of binary quartics	Journal of Symbolic Computation	journal-article
+74	10.1016/0166-5316(86)90036-2	1986	10.1016/0166-5316(86)90036-2	Study of a simulated stream machine for dataflow computation	Performance Evaluation	journal-article
+75	10.1016/j.swevo.2018.06.001	2019	10.1016/j.swevo.2018.06.001	Genetic programming with semantic equivalence classes	Swarm and Evolutionary Computation	journal-article
+76	10.1162/neco.1996.8.1.178	1996	10.1162/neco.1996.8.1.178	Equivalence of Linear Boltzmann Chains and Hidden Markov Models	Neural Computation	journal-article
+77	10.13164/re.2025.0482	2025	10.13164/re.2025.0482	A Streaming Dataflow Accelerator for Sparse SVM Kernel Computation in Hyperspectral Image Classification	Radioengineering	journal-article
+78	10.1016/s0747-7171(08)80053-3	1990	10.1016/s0747-7171(08)80053-3	The complexity of equivalence for commutative rings	Journal of Symbolic Computation	journal-article
+79	10.1016/s0096-3003(01)00181-3	2002	10.1016/s0096-3003(01)00181-3	Reliability equivalence with a basic series/parallel system	Applied Mathematics and Computation	journal-article
+80	10.1093/acprof:oso/9780195176803.003.0019	2007	10.1093/acprof:oso/9780195176803.003.0019	Statistical Jokes and Social Effects	Causal Learning	book-chapter
+81	10.1093/acprof:oso/9780195176803.003.0006	2007	10.1093/acprof:oso/9780195176803.003.0006	Learning From Doing	Causal Learning	book-chapter
+82	10.1016/s1097-8690(11)70466-8	2011	10.1016/s1097-8690(11)70466-8	Trials Point to Equivalence of Asthma Therapies	Internal Medicine News	journal-article
+83	10.2478/popets-2020-0002	2020	10.2478/popets-2020-0002	Computation on Encrypted Data using Dataflow Authentication	Proceedings on Privacy Enhancing Technologies	journal-article
+84	10.1016/s0096-3003(96)00194-4	1997	10.1016/s0096-3003(96)00194-4	Residual scaling techniques in multigrid, I: Equivalence proof	Applied Mathematics and Computation	journal-article
+85	10.1109/tase.2018.00013	2018	10.1109/tase.2018.00013	Efficient Algorithm for the Iteration Period Computation of Unfolded Synchronous Dataflow Graphs	2018 International Symposium on Theoretical Aspects of Software Engineering (TASE)	proceedings-article
+86	10.1093/acprof:oso/9780195176803.003.0007	2007	10.1093/acprof:oso/9780195176803.003.0007	Causal Reasoning Through Intervention	Causal Learning	book-chapter
+87	10.1093/acprof:oso/9780195176803.003.0009	2007	10.1093/acprof:oso/9780195176803.003.0009	Teaching the Normative Theory of Causal Reasoning	Causal Learning	book-chapter
+88	10.1016/j.ic.2014.04.003	2014	10.1016/j.ic.2014.04.003	Language equivalence of probabilistic pushdown automata	Information and Computation	journal-article
+89	10.1016/j.jsc.2025.102480	2026	10.1016/j.jsc.2025.102480	Subalgebra and Khovanskii bases equivalence	Journal of Symbolic Computation	journal-article
+90	10.1007/978-3-540-46368-9_3	None	10.1007/978-3-540-46368-9_3	Equivalence of Forms	Algorithms and Computation in Mathematics	book-chapter
+91	10.1016/j.ic.2022.104913	2023	10.1016/j.ic.2022.104913	Learnability and positive equivalence relations	Information and Computation	journal-article
+92	10.1093/acprof:oso/9780195176803.002.0003	2007	10.1093/acprof:oso/9780195176803.002.0003	Copyright Page	Causal Learning	other
+93	10.1109/mipro.2014.6859588	2014	10.1109/mipro.2014.6859588	Frequency table computation on dataflow architecture	2014 37th International Convention on Information and Communication Technology, Electronics and Microelectronics (MIPRO)	proceedings-article
+94	10.1109/icicta.2009.600	2009	10.1109/icicta.2009.600	Design of the Distributed Framework and Dataflow Process for Urban Road Traffic Information Systems	2009 Second International Conference on Intelligent Computation Technology and Automation	proceedings-article
+95	10.1006/inco.2001.3080	2002	10.1006/inco.2001.3080	Trace and Testing Equivalence on Asynchronous Processes	Information and Computation	journal-article
+96	10.1006/inco.1995.1098	1995	10.1006/inco.1995.1098	Equivalence of NC  and AC − 1 Closures of NP and Other Classes	Information and Computation	journal-article
+97	10.7551/mitpress/2006.003.0007	1999	10.7551/mitpress/2006.003.0007	A Bayesian Approach to Causal Discovery	Computation, Causation, and Discovery	book-chapter
+98	10.1016/j.ic.2011.08.002	2011	10.1016/j.ic.2011.08.002	Characterizing contextual equivalence in calculi with passivation	Information and Computation	journal-article
+99	10.1002/cpe.7909	2023	10.1002/cpe.7909	A comprehensive modeling approach for the task mapping problem in heterogeneous systems with dataflow processing units	Concurrency and Computation: Practice and Experience	journal-article
+100	10.1002/que2.30	2020	10.1002/que2.30	Correlation measure equivalence in dynamic causal structures of quantum gravity	Quantum Engineering	journal-article

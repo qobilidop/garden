@@ -1,0 +1,101 @@
+rank	source_id	year	doi	title	venue	type
+1	10.4324/9781003317210-18	2023	10.4324/9781003317210-18	Kolkata Partition Museum	The Long History of Partition in Bengal	book-chapter
+2	10.4324/9781003317210-15	2023	10.4324/9781003317210-15	Revisiting Bengal Partition	The Long History of Partition in Bengal	book-chapter
+3	10.1109/secon.1993.465763	None	10.1109/secon.1993.465763	An advanced dataflow processor architecture based on a multiple input node concept	Proceedings of Southeastcon '93	proceedings-article
+4	10.1145/2072274.2072278	2011	10.1145/2072274.2072278	Model checking dataflow for malicious input	Proceedings of the Workshop on Embedded Systems Security	proceedings-article
+5	10.2139/ssrn.6992804	2026	10.2139/ssrn.6992804	Partition and Block: Defeating Input Reconstruction Attacks for Split Inference Models		posted-content
+6	10.58213/we33q780	2020	10.58213/we33q780	PARTITION: AN INEVITABLE EVENT?	Vidhyayana	journal-article
+7	10.1016/j.procs.2016.05.415	2016	10.1016/j.procs.2016.05.415	A Partition Scheduler Model for Dynamic Dataflow Programs	Procedia Computer Science	journal-article
+8	10.1017/cbo9780511620935.002	1986	10.1017/cbo9780511620935.002	Introduction	Story, Performance, and Event	book-chapter
+9	10.1007/springerreference_16814	None	10.1007/springerreference_16814	internal event	SpringerReference	reference-entry
+10	10.1109/2.86834	1991	10.1109/2.86834	A novel algorithm for discrete-event simulation: asynchronous distributed discrete-event simulation algorithm for cyclic circuits using a dataflow network	Computer	journal-article
+11	10.1145/2335484.2335506	2012	10.1145/2335484.2335506	Partition and compose	Proceedings of the 6th ACM International Conference on Distributed Event-Based Systems	proceedings-article
+12	10.1109/igcc.2016.7892619	2016	10.1109/igcc.2016.7892619	Memory partition for SIMD in streaming dataflow architectures	2016 Seventh International Green and Sustainable Computing Conference (IGSC)	proceedings-article
+13	10.4324/9781003317210-1	2023	10.4324/9781003317210-1	Introduction	The Long History of Partition in Bengal	book-chapter
+14	10.31390/gradschool_dissertations.247	None	10.31390/gradschool_dissertations.247	Person or place? A contextual event-history analysis of homicide victimization risk		dissertation
+15	10.5220/0012143600003595	2023	10.5220/0012143600003595	The Partition Problem, and How The Distribution of Input Bits Affects the Solving Process	Proceedings of the 15th International Joint Conference on Computational Intelligence	proceedings-article
+16	10.1021/jp710341h.s002	None	10.1021/jp710341h.s002	How Accurate Are Approximate Methods for Evaluating Partition Functions for Hindered Internal Rotations?		component
+17	10.7717/peerj-cs.1122/fig-1	None	10.7717/peerj-cs.1122/fig-1	Figure 1: The internal hole error and external island error in partition diagram.		component
+18	10.1145/3629104.3666030	2024	10.1145/3629104.3666030	AquaLang: A Dataflow Programming Language	Proceedings of the 18th ACM International Conference on Distributed and Event-based Systems	proceedings-article
+19	10.5753/sbcup.2017.3303	2017	10.5753/sbcup.2017.3303	Uma Abordagem Dataflow para Processamento Contextual na Internet das Coisas	Anais do IX Simpósio Brasileiro de Computação Ubíqua e Pervasiva (SBCUP 2017)	proceedings-article
+20	10.4324/9781003317210-11	2023	10.4324/9781003317210-11	Partition's Women	The Long History of Partition in Bengal	book-chapter
+21	10.1145/3629104.3666029	2024	10.1145/3629104.3666029	Safe Shared State in Dataflow Systems	Proceedings of the 18th ACM International Conference on Distributed and Event-based Systems	proceedings-article
+22	10.4324/9781003317210	2023	10.4324/9781003317210	The Long History of Partition in Bengal		book
+23	10.1017/cbo9780511620935	1986	10.1017/cbo9780511620935	Story, Performance, and Event		monograph
+24	10.1017/cbo9780511620935.007	1986	10.1017/cbo9780511620935.007	Conclusion	Story, Performance, and Event	book-chapter
+25	10.1007/978-3-0348-9120-2_2	1993	10.1007/978-3-0348-9120-2_2	Input/Output Discrete Event Processes and System Modeling	Discrete Event Systems: Modeling and Control	book-chapter
+26	10.1017/cbo9780511620935.008	1986	10.1017/cbo9780511620935.008	References	Story, Performance, and Event	book-chapter
+27	10.1007/978-1-4471-0937-2_12	1997	10.1007/978-1-4471-0937-2_12	Modeling Software Dependability Growth under Input Partition Testing	Safe Comp 96	book-chapter
+28	10.4324/9781003317210-9	2023	10.4324/9781003317210-9	Spaces of Anamnesis	The Long History of Partition in Bengal	book-chapter
+29	10.1109/ijcnn.1992.287075	None	10.1109/ijcnn.1992.287075	Function approximation using a partition of the input space	[Proceedings 1992] IJCNN International Joint Conference on Neural Networks	proceedings-article
+30	10.1109/hpca56546.2023.10070992	2023	10.1109/hpca56546.2023.10070992	INCA: Input-stationary Dataflow at Outside-the-box Thinking about Deep Learning Accelerators	2023 IEEE International Symposium on High-Performance Computer Architecture (HPCA)	proceedings-article
+31	10.1109/sips.2000.886765	None	10.1109/sips.2000.886765	Systematic consolidation of input and output buffers in synchronous dataflow specifications	2000 IEEE Workshop on SiGNAL PROCESSING SYSTEMS. SiPS 2000. Design and Implementation (Cat. No.00TH8528)	proceedings-article
+32	10.3790/schm.103.1.43	1983	10.3790/schm.103.1.43	Input-Output-Analysen mit unvollständigen Input-Output-Tabellen	Journal of Contextual Economics – Schmollers Jahrbuch	journal-article
+33	10.1177/17506980251374628	2025	10.1177/17506980251374628	Book review: The Long History of Partition in Bengal: Event, Memory, Representations RoyRituparnaSenguptaJayantaBandyopadhyaySekhar (eds). The Long History of Partition in Bengal: Event, Memory, Representations. London: Routledge, 2024, 300 pp., $190. ISBN 978-1032309132.	Memory Studies	journal-article
+34	10.4324/9781003317210-16	2023	10.4324/9781003317210-16	Memory as Cinematic Praxis	The Long History of Partition in Bengal	book-chapter
+35	10.4324/9781003317210-4	2023	10.4324/9781003317210-4	Divided Landscapes, Fragmented Identities	The Long History of Partition in Bengal	book-chapter
+36	10.1063/1.37180	1988	10.1063/1.37180	The atomic internal partition function	AIP Conference Proceedings	proceedings-article
+37	10.1109/coase.2015.7294187	2015	10.1109/coase.2015.7294187	Discrete event dataflow as a formal approach to specification of industrial vision systems	2015 IEEE International Conference on Automation Science and Engineering (CASE)	proceedings-article
+38	10.4324/9781003317210-3	2023	10.4324/9781003317210-3	Of Conflict and Cooperation	The Long History of Partition in Bengal	book-chapter
+39	10.1007/978-3-642-84725-7_7	1992	10.1007/978-3-642-84725-7_7	Measurement of Diversity Degree by Quantification of Dissimilarity in the Input Partition	Software Fault Tolerance	book-chapter
+40	10.1017/cbo9780511620935.003	1986	10.1017/cbo9780511620935.003	“Any man who keeps more'n one hound'll lie to you”	Story, Performance, and Event	book-chapter
+41	10.3727/152599516x14682560744712	2016	10.3727/152599516x14682560744712	Ecological Systems Theory Approach to Corporate Social Responsibility: Contextual Perspectives From Meeting Planners	Event Management	journal-article
+42	10.23919/ecc51009.2020.9143687	2020	10.23919/ecc51009.2020.9143687	Active Model Discrimination Using Partition-Based Output Feedback Input Design	2020 European Control Conference (ECC)	proceedings-article
+43	10.33140/iimj.04.02.03	2026	10.33140/iimj.04.02.03	Reconceptualising Dementia Education: From Information Transfer to Behavioural and Contextual Change	International Internal Medicine Journal	journal-article
+44	10.1016/j.entcs.2006.10.055	2007	10.1016/j.entcs.2006.10.055	Event Structure Spans for Nondeterministic Dataflow	Electronic Notes in Theoretical Computer Science	journal-article
+45	10.4324/9781003317210-8	2023	10.4324/9781003317210-8	Life Stories and Material Objects	The Long History of Partition in Bengal	book-chapter
+46	10.1007/bf01516010	1994	10.1007/bf01516010	Input/output discrete event processes and communication delays	Discrete Event Dynamic Systems: Theory and Applications	journal-article
+47	10.4324/9781003317210-10	2023	10.4324/9781003317210-10	The “Lost” Land of Barisal	The Long History of Partition in Bengal	book-chapter
+48	10.1007/978-1-4757-3552-9_10	2001	10.1007/978-1-4757-3552-9_10	Preparing the Input	Discrete-Event Simulation	book-chapter
+49	10.3030/838342	2019	10.3030/838342			grant
+50	10.1016/0141-9331(94)90085-x	1994	10.1016/0141-9331(94)90085-x	Distributed event-driven simulation of a novel dynamic dataflow multiprocessor system—PATTSY	Microprocessors and Microsystems	journal-article
+51	10.1109/wsc.1995.478699	None	10.1109/wsc.1995.478699	Input modeling for discrete-event simulation	Winter Simulation Conference Proceedings, 1995.	proceedings-article
+52	10.1515/9783110877335-005	1989	10.1515/9783110877335-005	Nominal Reference, Temporal Constitution and Quantification in Event Semantics	Semantics and Contextual Expression	book-chapter
+53	10.1017/cbo9780511620935.001	1986	10.1017/cbo9780511620935.001	Note on the texts	Story, Performance, and Event	book-chapter
+54	10.5220/0005100404560462	2014	10.5220/0005100404560462	Event Log Knowledge as a Complementary Simulation Model Construction Input	Proceedings of the 4th International Conference on Simulation and Modeling Methodologies, Technologies and Applications	proceedings-article
+55	10.1016/b978-1-4831-9973-3.50007-0	1968	10.1016/b978-1-4831-9973-3.50007-0	PERFECT GASES AND THE INTERNAL PARTITION FUNCTION	Equilibrium Statistical Mechanics	book-chapter
+56	10.4324/9781003317210-12	2023	10.4324/9781003317210-12	The Creation of a Women's Sphere	The Long History of Partition in Bengal	book-chapter
+57	10.1017/cbo9780511760495.004	2010	10.1017/cbo9780511760495.004	The partition of Africa: geopolitical and internal perspectives	Understanding the British Empire	book-chapter
+58	10.4324/9781003317210-13	2023	10.4324/9781003317210-13	Moving Memories	The Long History of Partition in Bengal	book-chapter
+59	10.1016/s1474-6670(17)33707-2	2003	10.1016/s1474-6670(17)33707-2	Reinterpretation of the IEC 61131 Ladder Diagram To Event Driven Program Based on the Dataflow Model	IFAC Proceedings Volumes	journal-article
+60	10.23919/date56975.2023.10137254	2023	10.23919/date56975.2023.10137254	READ: Reliability-Enhanced Accelerator Dataflow Optimization using Critical Input Pattern Reduction	2023 Design, Automation &amp; Test in Europe Conference &amp; Exhibition (DATE)	proceedings-article
+61	10.4324/9781003317210-7	2023	10.4324/9781003317210-7	Frozen Time, Partitioned Mind	The Long History of Partition in Bengal	book-chapter
+62	10.32657/10356/168245	None	10.32657/10356/168245	Input features for deep learning-based polyphonic sound event localization and detection		dissertation
+63	10.2139/ssrn.572190	2004	10.2139/ssrn.572190	Assigning Subjective Probabilities to Event Trees: Partition Dependence and Bias Toward the Ignorance Prior		posted-content
+64	10.1007/s10626-014-0191-9	2015	10.1007/s10626-014-0191-9	An accelerated stopping rule for the Nested Partition Hybrid Algorithm for discrete stochastic optimization	Discrete Event Dynamic Systems	journal-article
+65	10.1145/3731302.3731319	2026	10.1145/3731302.3731319	Advanced: Optimal Dataflow Programs and Dataflow SPLs	Science of Software Product Lines	book-chapter
+66	10.1049/sej.1990.0008	1990	10.1049/sej.1990.0008	Software diversity metrics quantifying dissimilarity in the input partition	Software Engineering Journal	journal-article
+67	10.1002/spe.4380210207	1991	10.1002/spe.4380210207	A dataflow approach to event‐based debugging	Software: Practice and Experience	journal-article
+68	10.2139/ssrn.5153740	2025	10.2139/ssrn.5153740	A Two-Stage Event Partition-Based Bayesian Networks Group Prediction Method for Converter Gas Generation		posted-content
+69	10.1036/1097-8542.181000	None	10.1036/1097-8542.181000	Dataflow systems	AccessScience	dataset
+70	10.1145/3725843.3756027	2025	10.1145/3725843.3756027	LLMulator: Generalizable Cost Modeling for Dataflow Accelerators with Input-Adaptive Control Flow	Proceedings of the 58th IEEE/ACM International Symposium on Microarchitecture	proceedings-article
+71	10.1109/tg.2025.3596055/mm1	None	10.1109/tg.2025.3596055/mm1	Seamless Tutorial: Contextual State Transition Generation based on Player Internal Knowledge_supp1-3596055.pdf		component
+72	10.2307/852291	1987	10.2307/852291	Musical sound and Contextual Input: A Performance Model for Musical Analysis	Ethnomusicology	journal-article
+73	10.1109/iccad57390.2023.10323816	2023	10.1109/iccad57390.2023.10323816	READ: Reliability-Enhanced Accelerator Dataflow Optimization Using Critical Input Pattern Reduction	2023 IEEE/ACM International Conference on Computer Aided Design (ICCAD)	proceedings-article
+74	10.4324/9781003317210-17	2023	10.4324/9781003317210-17	The (im)Possibility of Representing Genocidal Violence	The Long History of Partition in Bengal	book-chapter
+75	10.2139/ssrn.5209537	2025	10.2139/ssrn.5209537	A Two-Stage Event Partition-Based Bayesian Networks Group Prediction Method for Converter Gas Generation		posted-content
+76	10.2139/ssrn.5206008	2025	10.2139/ssrn.5206008	Di-Mamba: A Dual-Input Mechanism for Improved Contextual Understanding in Nlp Tasks		posted-content
+77	10.4324/9781003317210-5	2023	10.4324/9781003317210-5	Refugeehood in the Eyes of the Refugees	The Long History of Partition in Bengal	book-chapter
+78	10.1109/icpp.1993.66	1993	10.1109/icpp.1993.66	Dataflow Graph Optimization for Dataflow Architectures a Dataflow Otimizing Compiler	1993 International Conference on Parallel Processing - ICPP'93 Vol2	proceedings-article
+79	10.1021/acs.jcim.0c01478.s001	None	10.1021/acs.jcim.0c01478.s001	Alkane/Water Partition Coefficient Calculation Based on the Modified AM1 Method and Internal Hydrogen Bonding Sampling Using COSMO-RS		component
+80	10.1002/9781118732793.ch3	2013	10.1002/9781118732793.ch3	Input Modeling for Simulation	Modeling and Simulation of Discrete‐Event Systems	other
+81	10.1109/fuzz.2001.1009028	None	10.1109/fuzz.2001.1009028	Data-driven design of fuzzy system with relational input partition	10th IEEE International Conference on Fuzzy Systems. (Cat. No.01CH37297)	proceedings-article
+82	10.1109/wsc.1994.717389	None	10.1109/wsc.1994.717389	An ordinal optimization approach to a token partition problem for stochastic timed event graphs	Proceedings of Winter Simulation Conference	proceedings-article
+83	10.36227/techrxiv.17312426.v1	2021	10.36227/techrxiv.17312426.v1	dynamic input-based event-triggered control for a network resource constraint environment		posted-content
+84	10.1016/j.automatica.2021.110097	2022	10.1016/j.automatica.2021.110097	Necessary and sufficient vertex partition conditions for input–output decoupling of Boolean control networks	Automatica	journal-article
+85	10.1109/asp-dac66049.2026.11420315	2026	10.1109/asp-dac66049.2026.11420315	NEURAL: An Elastic Neuromorphic Architecture with Hybrid Data-Event Execution and On-the-fly Attention Dataflow	2026 31st Asia and South Pacific Design Automation Conference (ASP-DAC)	proceedings-article
+86	10.1021/acs.jcim.0c01478.s002	None	10.1021/acs.jcim.0c01478.s002	Alkane/Water Partition Coefficient Calculation Based on the Modified AM1 Method and Internal Hydrogen Bonding Sampling Using COSMO-RS		component
+87	10.5220/0011718600003467	2023	10.5220/0011718600003467	Automated Input Data Management for Discrete Event Simulation Models of Emergency Departments	Proceedings of the 25th International Conference on Enterprise Information Systems	proceedings-article
+88	10.1145/3486605.3486789	2021	10.1145/3486605.3486789	Dyninka: a FaaS framework for distributed dataflow applications	Proceedings of the 8th ACM SIGPLAN International Workshop on Reactive and Event-Based Languages and Systems	proceedings-article
+89	10.1145/2207676.2208519	2012	10.1145/2207676.2208519	A-coord input	Proceedings of the SIGCHI Conference on Human Factors in Computing Systems	proceedings-article
+90	10.1109/isese.2005.1541853	None	10.1109/isese.2005.1541853	Contextual reusability metrics for event-based architectures	2005 International Symposium on Empirical Software Engineering, 2005.	proceedings-article
+91	10.3390/fi15030113	2023	10.3390/fi15030113	CvAMoS—Event Abstraction Using Contextual Information	Future Internet	journal-article
+92	10.21236/ada460570	2002	10.21236/ada460570	Language Independent NER using a Unified Model of Internal and Contextual Evidence		report
+93	10.1109/icices.2014.7033765	2014	10.1109/icices.2014.7033765	Contextual image search with keyword and image input	International Conference on Information Communication and Embedded Systems (ICICES2014)	proceedings-article
+94	10.1145/3281278.3281279	2018	10.1145/3281278.3281279	RHEA: a reactive, heterogeneous, extensible, and abstract framework for dataflow programming	Proceedings of the 5th ACM SIGPLAN International Workshop on Reactive and Event-Based Languages and Systems	proceedings-article
+95	10.1109/tc.2024.3449103	2024	10.1109/tc.2024.3449103	BiRD: Bi-Directional Input Reuse Dataflow for Enhancing Depthwise Convolution Performance on Systolic Arrays	IEEE Transactions on Computers	journal-article
+96	10.1145/3361525.3361548	2019	10.1145/3361525.3361548	eSPICE	Proceedings of the 20th International Middleware Conference	proceedings-article
+97	10.1109/cdc40024.2019.9029828	2019	10.1109/cdc40024.2019.9029828	On the optimal input allocation of discrete-event systems with dynamic input sequence	2019 IEEE 58th Conference on Decision and Control (CDC)	proceedings-article
+98	10.1007/978-1-4302-3820-1_5	2012	10.1007/978-1-4302-3820-1_5	Event Handling and User Input	Pro Android Web Game Apps	book-chapter
+99	10.36227/techrxiv.17312426	2021	10.36227/techrxiv.17312426	Static/dynamic input-based event-triggered control for a network resource constraint environment		posted-content
+100	10.1007/978-3-642-28658-2_91	2012	10.1007/978-3-642-28658-2_91	Slice Partition and Optimization Compilation Algorithm for Dataflow Multi-core Processor	Advances in Intelligent and Soft Computing	book-chapter
