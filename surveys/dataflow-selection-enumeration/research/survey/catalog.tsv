@@ -103,3 +103,4 @@ majumdar2009information	2009	input-partitioning	deep-read	high	CAV	https://doi.o
 scheurer2016lattice	2016	merged-evaluation	deep-read	high	ICFEM	https://doi.org/10.1007/978-3-319-47846-3_5	General lattice abstraction for sound symbolic branch merging	-
 trabish2018chopped	2018	demand-driven	deep-read	high	ICSE	https://doi.org/10.1145/3180155.3180251	Lazy execution of skipped code when its effects become observable to a target slice	-
 wang2017dependence	2017	output-symbolic-execution	deep-read	critical	IEEE Transactions on Software Engineering	https://doi.org/10.1109/TSE.2016.2584063	Dependence-guided approximation of symbolic-value path equivalence with fault-detection preservation	-
+fried2023allsatcircuits	2023	model-enumeration	deep-read	high	SAT	https://doi.org/10.4230/LIPIcs.SAT.2023.9	Native-circuit ternary generalization for disjoint and overlapping exact AllSAT covers	-
