@@ -1431,3 +1431,55 @@ caller-input inverse fibers, or typed residuals.
 
 Round 39 therefore cannot count toward closure. Round 40's precondition failed;
 it is retired unexecuted and cannot count toward the required no-add sequence.
+
+## Replacement round `closure-replacement-41`: Crossref
+
+Frozen on 2026-08-04 after complete reconciliation and two agreeing
+independent audits of round 39, and before any round-41 or round-42 query was
+executed. Source: Crossref REST API. Each exact phrase is searched with
+`query.bibliographic`, sorted by relevance, with the first 100 records exported
+unless fewer are returned. A round qualifies as no-add only if complete
+screening adds neither a conceptual cluster nor a plausible close competitor.
+
+| ID | Exact query |
+|---|---|
+| C41-01 | `algebra calculus full abstraction dataflow networks` |
+| C41-02 | `compositional relational indeterminate dataflow semantics` |
+| C41-03 | `dataflow networks fibrations stability sequentiality` |
+| C41-04 | `synchronous program symbolic state space WCET` |
+| C41-05 | `synchronous dataflow compositional pattern matching` |
+| C41-06 | `dependence graph local symbolic simulation equivalence` |
+| C41-07 | `verified synchronous dataflow semantics state machines reset` |
+| C41-08 | `dataflow partially ordered events observer` |
+| C41-09 | `exact internal selection observer caller inputs` |
+| C41-10 | `sparse selection observation inverse image guards` |
+| C41-11 | `requested site residual input fiber` |
+| C41-12 | `dataflow selection map exact enumeration` |
+
+## Replacement round `closure-replacement-42`: arXiv
+
+Execute only if round 41 adds neither a conceptual cluster nor a plausible
+close competitor. Source: arXiv API. Frozen on 2026-08-04 before any round-41
+or round-42 execution. Each phrase is submitted as the conjunction of all
+alphanumeric terms across arXiv's `all` field, sorted by relevance, with at
+most the first 100 records and abstracts exported.
+
+| ID | Exact query |
+|---|---|
+| C42-01 | `algebra calculus full abstraction dataflow networks` |
+| C42-02 | `compositional relational indeterminate dataflow semantics` |
+| C42-03 | `dataflow networks fibrations stability sequentiality` |
+| C42-04 | `synchronous program symbolic state space WCET` |
+| C42-05 | `synchronous dataflow compositional pattern matching` |
+| C42-06 | `dependence graph local symbolic simulation equivalence` |
+| C42-07 | `verified synchronous dataflow semantics state machines reset` |
+| C42-08 | `dataflow partially ordered events observer` |
+| C42-09 | `exact internal selection observer caller inputs` |
+| C42-10 | `sparse selection observation inverse image guards` |
+| C42-11 | `requested site residual input fiber` |
+| C42-12 | `dataflow selection map exact enumeration` |
+
+If round 41 reopens the map, round 42 is retired unexecuted. If both qualify,
+they establish the required two-round no-add sequence only for the recorded
+sources, exact queries, captured rankings, date, and frozen trigger. Independent
+audit remains mandatory before closure.
