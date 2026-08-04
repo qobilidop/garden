@@ -139,7 +139,8 @@ where \(Q\) is the number of hyperplanes, \(K\) the number of cells, and
 assumptions stated in the primary results. Dussault et al.'s newer algorithms
 provide substantial empirical improvements for central arrangements, but no
 replacement end-to-end asymptotic bound. Deza--Pournin's
-\(O(Kp(Q,D,L))\) rational-bit-model result retains output-sized state and leaves
+\(O(Kp(Q,D,B_Z))\) rational-bit-model result, where \(B_Z\) is total generator
+encoding length, retains output-sized state and leaves
 the polynomial unspecified; its symmetry-aware successor likewise gives no
 better generic theorem. A generic \(K+1\) model-query accounting per emitted
 observation is therefore not independently novel. Complexity claims

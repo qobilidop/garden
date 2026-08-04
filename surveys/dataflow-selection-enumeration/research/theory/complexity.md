@@ -146,12 +146,13 @@ rather than proving a coefficient-bit bound, and none of the results transfers
 automatically to boundary-inclusive fibers or an arbitrary caller theory.
 
 Deza and Pournin give a complementary rational-bit-model analysis by
-traversing the dual zonotope. For total generator encoding length \(L\), their
-proof gives
+traversing the dual zonotope. Write \(B_Z\) for total generator encoding length
+(to avoid overloading the observation-depth parameter \(L\)). Their proof
+gives
 
 \[
-  O\!\left(KQ\,[q(Q,D,L)+\log K]\right)
-    = O\!\left(Kp(Q,D,L)\right),
+  O\!\left(KQ\,[q(Q,D,B_Z)+\log K]\right)
+    = O\!\left(Kp(Q,D,B_Z)\right),
 \]
 
 where \(q\) and \(p\) are unspecified polynomials induced by exact rational
