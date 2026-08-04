@@ -568,6 +568,91 @@ complete zero-result responses. This narrow capture is an explicit source and
 query-semantics limitation, not evidence of absence. Because no new cluster or
 plausible close competitor was added, the precondition for round 22 holds.
 
+## Outcome of round 22, invalidated
+
+Round 22 is not a no-add round. All 1,200 captured titles were screened, and
+four findings meet the frozen close-competitor trigger:
+
+- C22-07 rank 15 exposed Bertossi and Leon's exact BNN-to-SDD route. Internal
+  threshold definitions are substituted, the output is compiled to an SDD and
+  smooth deterministic decomposable circuit, and repeated exact SHAP queries
+  become tractable on the compiled representation. This strengthens the
+  already reopened neural decision-diagram cluster and is a new close
+  comparator even though it does not create another cluster.
+- C22-10 rank 1 exposed sparse symbolic loop execution. It observes sibling
+  states' branch-edge patterns up to a loop-impact barrier and postpones
+  repeats. The method is a coverage heuristic, not an exact quotient, but it
+  adds the observation-pattern exploration cluster under the deliberately broad
+  trigger.
+- C22-10 rank 25 exposed Seo's dissertation. Context-guided search prioritizes
+  new dominator-filtered branch contexts, while precondition-guided search
+  learns and merges target-nonreachability conditions from prior failing paths.
+  This adds target-relative learned search reduction; the PGS evidence is
+  explicitly limited to the primary repository abstract.
+- C22-10 rank 60 exposed Capra's constraint-based colored-Petri-net state-space
+  reduction and its foundational Chiola et al. lineage. The latter directly
+  constructs a symmetry-reduced reachability graph whose analysis is stated to
+  be equivalent to ordinary reachability analysis for well-formed nets. This
+  adds the exact symmetry-reduced-state-space cluster; both uses are limited to
+  primary-abstract claims.
+
+The Li dissertation at C22-10 rank 43 is a duplicate lineage of the already
+cataloged Z-equivalence paper and does not add a result. The other plausible
+titles were abstract- or primary-screened and reconciled in `catalog.tsv`.
+Because round 22 reopens the map, neither rounds 21 nor 22 contributes to the
+required final two-round no-add sequence. The additions must be reconciled and
+two later prospective rounds frozen before execution.
+
+## Replacement round `closure-replacement-23`: Crossref
+
+Source: Crossref REST API. Frozen on 2026-08-04 after the exact-neural SHAP,
+loop-pattern, target-guided search, and symmetry-reduced reachability additions
+were reconciled, and before any query below was executed. Each query exports
+the first 100 relevance-ranked records for title screening, followed by
+abstract and primary review when plausibility remains.
+
+| ID | Exact query |
+|---|---|
+| C23-01 | `binarized neural network knowledge compilation deterministic decomposable circuit` |
+| C23-02 | `exact SHAP binary neural SDD` |
+| C23-03 | `hidden activation elimination neural classifier decision diagram` |
+| C23-04 | `symbolic loop observation pattern state postponement` |
+| C23-05 | `context guided precondition symbolic execution target branch` |
+| C23-06 | `dominator irrelevant branch context concolic search` |
+| C23-07 | `colored Petri net symmetry quotient symbolic reachability` |
+| C23-08 | `constraint based state space reduction symbolic execution` |
+| C23-09 | `partial symmetry reachability graph symbolic state` |
+| C23-10 | `requested event observer exact input fiber` |
+| C23-11 | `demand relative symbolic execution residual graph` |
+| C23-12 | `observation guided symbolic exploration quotient` |
+
+## Replacement round `closure-replacement-24`: arXiv
+
+Execute only if round 23 adds neither a conceptual cluster nor a plausible
+close competitor. Source: arXiv API. Frozen on 2026-08-04 before any frozen
+round-23 or round-24 query was executed. Each plain-text query is submitted as
+the conjunction of all its alphanumeric terms across arXiv's `all` field, with
+relevance-descending sorting, and exports at most the first 100 records with
+abstracts.
+
+| ID | Exact query |
+|---|---|
+| C24-01 | `neural knowledge compilation` |
+| C24-02 | `neural SDD SHAP` |
+| C24-03 | `neural hidden activation BDD` |
+| C24-04 | `symbolic loop pattern` |
+| C24-05 | `precondition guided symbolic execution` |
+| C24-06 | `context guided concolic search` |
+| C24-07 | `colored Petri symbolic reachability` |
+| C24-08 | `symmetry quotient state space` |
+| C24-09 | `constraint symbolic reachability graph` |
+| C24-10 | `requested observer input fiber` |
+| C24-11 | `symbolic observation residual` |
+| C24-12 | `demand guided event enumeration` |
+
+If either round adds a cluster or plausible close competitor, this sequence is
+abandoned and two later prospective rounds are required after reconciliation.
+
 ## Independent audit
 
 After both replacement rounds qualify, a reviewer who did not choose the

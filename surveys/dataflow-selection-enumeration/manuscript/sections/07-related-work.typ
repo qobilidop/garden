@@ -26,6 +26,13 @@ reduction or boundary in each case.
       [Demand-guided search], [Forced inputs or choices],
         [Unforced structure], [Complete or fair values],
         [Usually no exact fiber residual],
+      [State/loop reduction], [Quotient markings or sibling states],
+        [Symmetric states; repeated edge patterns],
+        [Exact quotient or heuristic postponement],
+        [State space or search order, not input fiber],
+      [Directed path search], [Branch under path context],
+        [Repeated or target-failing contexts], [Coverage or target heuristic],
+        [No exhaustive observer partition],
       [Trees and diagrams], [Reached tests or compiled function],
         [Skipped tests; shared subfunctions], [Exact finite observer],
         [Flat guards can lose sharing],
@@ -76,6 +83,26 @@ values that induce the same selector outcome and can enumerate values where
 our residual remains symbolic. Structural observation, concrete forcing, and
 logical relevance are consequently three different omission rules.
 
+State-space and exploration quotients provide two further boundaries. Symbolic
+reachability graphs for well-formed colored Petri nets group markings by
+encoded color symmetries while preserving the represented reachability
+analysis; constraint-based variants extend the quotient toward asymmetric
+models @chiola1997srg @capra2005colored. Sparse symbolic loop execution instead
+observes sibling states' branch-edge patterns up to a loop-impact barrier and
+postpones repeated patterns @busse2024ssle. The former is a state quotient and
+the latter a coverage-oriented search heuristic. Neither is an exact partition
+of caller inputs by requested internal events, but both preclude a broad claim
+that observation-guided omission or symbolic quotienting is new.
+
+Context-guided concolic search similarly prefers candidate branches reached
+under new dominator-filtered path contexts and widens the context depth only
+incrementally @seo2014context. A dissertation extension learns and merges
+preconditions from prior executions that fail to reach one requested target,
+then prunes the target-relative search @seo2015context. These mechanisms make
+requested-goal and observation-relative pruning established ideas. They change
+search order or exclude target-failing paths; they do not enumerate the exact
+image and inverse fibers of a total finite observer.
+
 == Projection, Boolean atoms, and decision structures
 
 AllSMT enumerates assignments to selected predicates and theory terms
@@ -110,9 +137,12 @@ shape, exact disjointness, and compilation are established; the remaining
 specificity is requested-root graph reachability, contextual site identity,
 and a symbolic residual per observation fiber.
 
-Neural-specific compilation makes this boundary concrete. Exact OBDDs or SDDs
-have been learned or constructed for binarized networks
-@shih2019bnn @shi2020tractable @tang2023abdd. BDD4BNN composes block diagrams
+Neural-specific compilation makes this boundary concrete. Exact OBDDs, SDDs,
+and deterministic decomposable circuits have been learned or constructed for
+binarized networks @shih2019bnn @shi2020tractable @tang2023abdd
+@bertossi2023shap. The last route substitutes internal threshold definitions,
+compiles the output through an SDD, and enables repeated exact SHAP queries;
+its SDD step can be exponential in primal-graph treewidth. BDD4BNN composes block diagrams
 while existentially eliminating hidden activation vectors and produces one
 exact reduced BDD per requested output class over a declared binary input
 region @bdd4bnn2023. Its diagrams support exact counting, robustness, and

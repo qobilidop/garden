@@ -40,8 +40,9 @@ proof obligations, and evidence.
   ADD compilation represents the complete observation function. Neural-specific
   instances are also direct prior work: Chang et al., Logemann--Veith, and
   Affinitree omit infeasible or forced activation tests while retaining exact
-  output semantics, and BDD4BNN compiles hidden BNN activations away into exact
-  requested-region class diagrams. A symbolic
+  output semantics; BDD4BNN compiles hidden BNN activations away into exact
+  requested-region class diagrams; and Bertossi--Leon compile a BNN output
+  through SDD into a deterministic decomposable circuit for exact SHAP queries. A symbolic
   residual per observation still requires partial evaluation or a richer
   residual-labeled decision structure.
 - **Reduction:** Introduce one finite-domain variable per contextual selection
@@ -130,8 +131,9 @@ proof obligations, and evidence.
 - **Status:** survey synthesis
 - **Statement:** Structural non-observation, existential projection, logical
   don't-care, equal-value coalescing, abstract merging, and heuristic
-  functional-space partitioning omit different information and preserve
-  different observers.
+  functional-space partitioning, state-space symmetry quotienting, and
+  observation-pattern search postponement omit different information and
+  preserve different observers.
 - **Evidence required:** an extraction matrix covering definitions, observer,
   representation, guarantee, and complexity for every deep-read work.
 
@@ -188,8 +190,8 @@ proof obligations, and evidence.
   regions; and Drammis et al. analyze parallel layerwise enumeration.
 - **Consequence:** A variable sparse domain is also anticipated by ordinary
   decision-tree paths, and exact neural trees/TADS can prune infeasible or
-  forced activation tests while preserving the output. Exact BNN-to-BDD/SDD
-  compilation can existentially eliminate hidden activations entirely. Novelty
+  forced activation tests while preserving the output. Exact BNN-to-BDD/SDD or
+  d-DNNF compilation can eliminate hidden activations entirely. Novelty
   can rest only on the requested-root-relative typed shared-graph observer and
   a nontrivial event-preserving construction/composition result, not exact
   regime enumeration, guard-plus-residual output, dynamic sparsity, or an

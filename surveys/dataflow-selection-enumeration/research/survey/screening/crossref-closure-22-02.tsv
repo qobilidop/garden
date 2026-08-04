@@ -1,0 +1,102 @@
+rank	source_id	year	doi	title	venue	type
+1	10.7717/peerj.2958/supp-2	None	10.7717/peerj.2958/supp-2	Supplemental Information 2: Phylogenetic tree using the 18S rRNA partition.		component
+2	10.7717/peerj.8274/supp-4	None	10.7717/peerj.8274/supp-4	Supplemental Information 4: Partition for IQ-TREE identified by PartitionFinder.		component
+3	10.70675/94e97d10z4f8cz4bf3zb33cz370a71174f48	None	10.70675/94e97d10z4f8cz4bf3zb33cz370a71174f48	Communication complexity : large output functions, partition bounds, and quantum nonlocality		dissertation
+4	10.31234/osf.io/3razc	2019	10.31234/osf.io/3razc	Using anticlustering to partition data sets into equivalent parts		posted-content
+5	10.7717/peerj.2958/supp-4	None	10.7717/peerj.2958/supp-4	Supplemental Information 4: Phylogenetic tree using the COI (M1–M6 partition).		component
+6	10.7717/peerj.2958/supp-3	None	10.7717/peerj.2958/supp-3	Supplemental Information 3: Phylogenetic tree using the 28S rRNA (D3–D5 partition).		component
+7	10.5220/0013163400003905	2025	10.5220/0013163400003905	Partition Tree Ensembles for Improving Multi-Class Classification	Proceedings of the 14th International Conference on Pattern Recognition Applications and Methods	proceedings-article
+8	10.7717/peerj.6131/supp-4	None	10.7717/peerj.6131/supp-4	Supplemental Information 4: Partition file of 13 CDS and 2 rRNAs by IQ-TREE		component
+9	10.2172/1396090	2017	10.2172/1396090	Choosing the best partition of the output from a large-scale simulation		report
+10	10.7717/peerj.5175/supp-2	None	10.7717/peerj.5175/supp-2	Appendix S2: Example of phylogenetic tree inference from SECAPR output		component
+11	10.1007/bf01236814	1985	10.1007/bf01236814	Elementarily non-equivalent infinite partition lattices	Algebra Universalis	journal-article
+12	10.52710/cfs.938	2026	10.52710/cfs.938	Refined ReLU and Smooth Refined ReLU: A Bounded-Negative Activation Family Bridging ReLU Simplicity and GELU Smoothness	Computer Fraud and Security	journal-article
+13	10.7717/peerj.7387/supp-3	None	10.7717/peerj.7387/supp-3	Supplemental Information 3: Original output files of the tree synthesis.		component
+14	10.7717/peerj-cs.919/fig-5	None	10.7717/peerj-cs.919/fig-5	Figure 5: Output of 3-levels tree of wavelet decomposition.		component
+15	10.1109/jrproc.1929.221864	1929	10.1109/jrproc.1929.221864	Equivalent Circuits of an Electron Triode and the Equivalent Input and Output Admittances	Proceedings of the IRE	journal-article
+16	10.5772/6339	2008	10.5772/6339	A Partition-Based Suffix Tree Construction and Its Applications	Greedy Algorithms	book-chapter
+17	10.7717/peerj.12765/table-1	None	10.7717/peerj.12765/table-1	Table 1: Best partition scheme and best-fit models selected by ModelFinder for the IQ-TREE analysis.		component
+18	10.14257/astl.2017.146.14	2017	10.14257/astl.2017.146.14	Data Compression Hardware of the ReLu Output in Convolution Neural Network	Advanced Science and Technology Letters	proceedings-article
+19	10.21203/rs.3.rs-6878548/v1	2026	10.21203/rs.3.rs-6878548/v1	Efficient and Privacy-Preserving Argmax Approximation Using Homomorphic Encryption for Neural Networks		posted-content
+20	10.2139/ssrn.5503183	2025	10.2139/ssrn.5503183	Do equivalent settings produce equivalent research output? Gender Disparities in Research Among Urology Residents		posted-content
+21	10.33039/ami.2022.12.007	2023	10.33039/ami.2022.12.007	Tree generating context-free grammars and regular tree grammars are equivalent	Annales Mathematicae et Informaticae	journal-article
+22	10.1215/00127094-2022-0086	2023	10.1215/00127094-2022-0086	Partition and analytic rank are equivalent over large fields	Duke Mathematical Journal	journal-article
+23	10.1002/9781394287062.ch11	2025	10.1002/9781394287062.ch11	Greedy Particle Swarm Optimization Approach Using Leaky ReLU Function for Minimum Spanning Tree Problem	AI‐Based Advanced Optimization Techniques for Edge Computing	other
+24	10.1109/dcc.2013.40	2013	10.1109/dcc.2013.40	Partition Tree Weighting	2013 Data Compression Conference	proceedings-article
+25	10.1587/transinf.2025edp7222	2026	10.1587/transinf.2025edp7222	Designing ReLU Generative Networks to Enumerate Trees with a Given Tree Edit Distance	IEICE Transactions on Information and Systems	journal-article
+26	10.1109/eusipco.2015.7362535	2015	10.1109/eusipco.2015.7362535	Crossing-tree partition functions	2015 23rd European Signal Processing Conference (EUSIPCO)	proceedings-article
+27	10.7717/peerj.3633/supp-1	None	10.7717/peerj.3633/supp-1	Supplemental Information 1: RAxML output tree in Newick format with bootstrap values		component
+28	10.1109/tfuzz.2026.3664431/mm1	None	10.1109/tfuzz.2026.3664431/mm1	Types I &amp; II Partition-based Fuzzy Classifiers for Enhanced Interpretability, Smaller Output Variance and Denoising Capability_supp1-3664431.docx		component
+29	10.1037/e562352011-157	1936	10.1037/e562352011-157	Output of Muscular Action Potentials and Output of Mental Work	PsycEXTRA Dataset	dataset
+30	10.1109/ijcnn.2019.8852023	2019	10.1109/ijcnn.2019.8852023	The Cramming, Softening and Integrating Learning Algorithm with Parametric ReLU Activation Function for Binary Input/Output Problems	2019 International Joint Conference on Neural Networks (IJCNN)	proceedings-article
+31	10.22541/au.176463768.86696409/v1	2025	10.22541/au.176463768.86696409/v1	Advancing RFID Missing Tag Identification: Theoretical Bounds, Existing Algorithm Quantification, and a Collision-Partition Tree-Based Approach		posted-content
+32	10.22190/fumi1904671r	2019	10.22190/fumi1904671r	PARTITION-EQUIVALENT n-POINTS CONFIGURATIONS WITH TWO DISTANCES	Facta Universitatis, Series: Mathematics and Informatics	journal-article
+33	10.1109/iconat57137.2023.10080570	2023	10.1109/iconat57137.2023.10080570	Language Identification System: Employing ReLu for India’s Regional Languages (ReLu)	2023 International Conference for Advancement in Technology (ICONAT)	proceedings-article
+34	10.1007/978-3-642-59325-3_5	2003	10.1007/978-3-642-59325-3_5	Tree Partition of Unity Method	Lecture Notes in Computational Science and Engineering	book-chapter
+35	10.7287/peerj.preprints.230/supp-3	None	10.7287/peerj.preprints.230/supp-3		Supplemental Information 3: Table 3: Nucleotide PBS values for each internal node on nucleotide simultaneous analysis tree for each data partition.	dataset
+36	10.1007/978-3-662-41501-6_19	1979	10.1007/978-3-662-41501-6_19	OPEC Pricing and Output Decisions A Partition Function Approach to OPEC Stability	Applied Game Theory	book-chapter
+37	10.7287/peerj.preprints.230v1/supp-3	None	10.7287/peerj.preprints.230v1/supp-3		Supplemental Information 3: Table 3: Nucleotide PBS values for each internal node on nucleotide simultaneous analysis tree for each data partition.	dataset
+38	10.1037/met0000301	2021	10.1037/met0000301	Using anticlustering to partition data sets into equivalent parts.	Psychological Methods	journal-article
+39	10.23919/ecc51009.2020.9143687	2020	10.23919/ecc51009.2020.9143687	Active Model Discrimination Using Partition-Based Output Feedback Input Design	2020 European Control Conference (ECC)	proceedings-article
+40	10.2139/ssrn.5664410	2025	10.2139/ssrn.5664410	Advancing RFID Missing Tag Identification: Theoretical Bounds, Existing Algorithm Quantification, and a Collision-Partition Tree-Based Approach		posted-content
+41	10.7717/peerj-cs.687/fig-5	None	10.7717/peerj-cs.687/fig-5	Figure 5: ReLU activation function graph.		component
+42	10.1163/9789401200271	2011	10.1163/9789401200271	Michon lu et relu		monograph
+43	10.23919/acc.1988.4790112	1988	10.23919/acc.1988.4790112	Discrete Equivalent of Multivariable Plants with Input and Output Delays	1988 American Control Conference	proceedings-article
+44	10.1007/s11227-023-05737-8	2024	10.1007/s11227-023-05737-8	Research of ReLU output device in ternary optical computer based on parallel fully connected layer	The Journal of Supercomputing	journal-article
+45	10.1515/eqc.2011.015	2011	10.1515/eqc.2011.015	Exact Distribution of Argmax (Argmin)	Economic Quality Control	journal-article
+46	10.1093/treephys/5.3.269	1989	10.1093/treephys/5.3.269	Solar equivalent leaf area: an efficient biometrical parameter of individual leaves, trees and stands	Tree Physiology	journal-article
+47	10.1109/cac.2017.8243844	2017	10.1109/cac.2017.8243844	Rough set based attributes partition in decision tree	2017 Chinese Automation Congress (CAC)	proceedings-article
+48	10.7717/peerj-cs.1314/fig-4	None	10.7717/peerj-cs.1314/fig-4	Figure 4: Leaky ReLU and SiLU activation functions.		component
+49	10.7287/peerj.preprints.230v1/supp-4	None	10.7287/peerj.preprints.230v1/supp-4		Supplemental Information 4: Table 4: Protein PBS values given for each internal node on protein simultaneous analysis tree for each data partition.	dataset
+50	10.7717/peerj-cs.1830/fig-5	None	10.7717/peerj-cs.1830/fig-5	Figure 5: ReLU and SiLU activation functions.		component
+51	10.1093/treephys/6.3.247	1990	10.1093/treephys/6.3.247	Localization of the porous partition responsible for pressurized gas transport in Alnus glutinosa (L.) Gaertn.	Tree Physiology	journal-article
+52	10.1109/iita.2007.55	2007	10.1109/iita.2007.55	A New Partition Criterion for Fuzzy Decision Tree Algorithm	Workshop on Intelligent Information Technology Application (IITA 2007)	proceedings-article
+53	10.7287/peerj.preprints.230/supp-4	None	10.7287/peerj.preprints.230/supp-4		Supplemental Information 4: Table 4: Protein PBS values given for each internal node on protein simultaneous analysis tree for each data partition.	dataset
+54	10.1007/s10470-025-02481-2	2025	10.1007/s10470-025-02481-2	An analog ReLu-based decision tree circuit architecture for biomedical applications	Analog Integrated Circuits and Signal Processing	journal-article
+55	10.1016/j.ejc.2008.11.010	2009	10.1016/j.ejc.2008.11.010	On tree-partition-width	European Journal of Combinatorics	journal-article
+56	10.17760/d20238236	None	10.17760/d20238236	"An environmental input-output analysis of Boston's climate action
+                    plan"		dissertation
+57	10.1515/9781438428635-009	2010	10.1515/9781438428635-009	Equivalent Action	Toward a Credible Pacifism	book-chapter
+58	10.5206/mt.v3i3.16464	2023	10.5206/mt.v3i3.16464	Five Equivalent Representations of a Phylogenetic Tree	Maple Transactions	journal-article
+59	10.1134/s0012266107070063	2007	10.1134/s0012266107070063	Output-equivalent discrete observation systems	Differential Equations	journal-article
+60	10.1016/j.spl.2009.01.008	2009	10.1016/j.spl.2009.01.008	Argmax-stable marked empirical processes	Statistics &amp; Probability Letters	journal-article
+61	10.1109/raai67517.2025.11423317	2025	10.1109/raai67517.2025.11423317	Discrete Functional Geometry of ReLU Networks via ReLU Transition Graphs	2025 5th International Conference on Robotics, Automation, and Artificial Intelligence (RAAI)	proceedings-article
+62	10.31224/6756	2026	10.31224/6756	Model of An Intensive Transpiration Module of Conveyor-Type, Equivalent in Power and Size to an Average Tree		posted-content
+63	10.1142/s0218126623501797	2023	10.1142/s0218126623501797	Tree Social Relations Optimization-Based ReLU-BiLSTM Framework for Improving Video Quality in Video Compression	Journal of Circuits, Systems and Computers	journal-article
+64	10.23919/ecc51009.2020.9143619	2020	10.23919/ecc51009.2020.9143619	Lead-Lag-Shaped Interactive Force Estimation by Equivalent Output Injection of Sliding-Mode	2020 European Control Conference (ECC)	proceedings-article
+65	10.1016/j.automatica.2021.110097	2022	10.1016/j.automatica.2021.110097	Necessary and sufficient vertex partition conditions for input–output decoupling of Boolean control networks	Automatica	journal-article
+66	10.52202/075280-1313	2023	10.52202/075280-1313	Implicit Bias of Gradient Descent for Two-layer ReLU and Leaky ReLU Networks on Nearly-orthogonal Data	Advances in Neural Information Processing Systems 36	proceedings-article
+67	10.7717/peerjcs.556/fig-6	None	10.7717/peerjcs.556/fig-6	Figure 6: Robot’s action (RA), output variable with singleton-type fuzzy sets defined.		component
+68	10.4064/fm-68-2-203-205	1970	10.4064/fm-68-2-203-205	Tree-likeness of hereditarily equivalent continua	Fundamenta Mathematicae	journal-article
+69	10.1101/2021.09.27.461919	2021	10.1101/2021.09.27.461919	Revealing Free Energy Landscape from MD Data via Conditional Angle Partition Tree		posted-content
+70	10.1109/cvpr.2013.273	2013	10.1109/cvpr.2013.273	Hierarchical Video Representation with Trajectory Binary Partition Tree	2013 IEEE Conference on Computer Vision and Pattern Recognition	proceedings-article
+71	10.1108/978-1-64113-239-820251009	2018	10.1108/978-1-64113-239-820251009	Functionally Equivalent Binary Tree	Using Classification and Regression Trees	book-chapter
+72	10.7717/peerj-cs.1125/table-7	None	10.7717/peerj-cs.1125/table-7	Table 7: ReLU in attention and CNN encoder decoder.		component
+73	10.1109/geoinformatics.2009.5293260	2009	10.1109/geoinformatics.2009.5293260	A new R-tree node splitting algorithm using MBR partition policy	2009 17th International Conference on Geoinformatics	proceedings-article
+74	10.5040/9798400675904.0011	2008	10.5040/9798400675904.0011	Mahatma Gandhi: Khilafat, Partition, and Beyond	Kites over the Mango Tree	other
+75	10.2307/jj.18255534.11	2010	10.2307/jj.18255534.11	Equivalent Action	Toward a Credible Pacifism	book-chapter
+76	10.4028/www.scientific.net/amm.380-384.1469	2013	10.4028/www.scientific.net/amm.380-384.1469	Partition Real Data in Decision Tree Using Statistical Criterion	Applied Mechanics and Materials	journal-article
+77	10.1118/1.597613	1995	10.1118/1.597613	How water equivalent are water‐equivalent solid materials for output calibration of photon and electron beams?	Medical Physics	journal-article
+78	10.3403/00121286	None	10.3403/00121286	Methods of measurement of the electrical properties of electronic tubes and valves (excluding microwave devices)		standard
+79	10.7717/peerj-cs.1125/fig-3	None	10.7717/peerj-cs.1125/fig-3	Figure 3: Visualization of ReLU performance concerning learning rates.		component
+80	10.56902/etdcrp.2025.43	None	10.56902/etdcrp.2025.43	Machine Learning: Neural Networking with ReLU and Optimization		dissertation
+81	10.70675/458af537zc202z4730zba00z48ef15916db3	None	10.70675/458af537zc202z4730zba00z48ef15916db3	On identifiability of deep ReLU neural networks		dissertation
+82	10.23919/ecc.2009.7075144	2009	10.23919/ecc.2009.7075144	Energy-balancing passivity-based control is equivalent to dissipation and output invariance	2009 European Control Conference (ECC)	proceedings-article
+83	10.1109/access.2020.2975026	2020	10.1109/access.2020.2975026	Simplified Predictive Torque Control for Surface-Mounted PMSM Based on Equivalent Transformation and Partition Method	IEEE Access	journal-article
+84	10.3403/00121286u	None	10.3403/00121286u	Methods of measurement of the electrical properties of electronic tubes and valves (excluding microwave devices)		standard
+85	10.1109/nss.2010.60	2010	10.1109/nss.2010.60	The PU-Tree: A Partition-Based Uncertain High-Dimensional Indexing Algorithm	2010 Fourth International Conference on Network and System Security	proceedings-article
+86	10.7717/peerj-cs.2802/fig-4	None	10.7717/peerj-cs.2802/fig-4	Figure 4: Simple neural network with activation function “relu”.		component
+87	10.1109/tip.2007.891802	2007	10.1109/tip.2007.891802	Binary Partition Tree Analysis Based on Region Evolution and Its Application to Tree Simplification	IEEE Transactions on Image Processing	journal-article
+88	10.7135/upo9781843313137.027	2009	10.7135/upo9781843313137.027	“The Fruitful Tree Bends”: Abbas Kiarostami	Action!	book-chapter
+89	10.1109/igarss.2010.5649780	2010	10.1109/igarss.2010.5649780	New hyperspectral data representation using binary partition tree	2010 IEEE International Geoscience and Remote Sensing Symposium	proceedings-article
+90	10.1016/j.dam.2007.02.001	2007	10.1016/j.dam.2007.02.001	A subexponential algorithm for the coloured tree partition problem	Discrete Applied Mathematics	journal-article
+91	10.1109/isit.2006.261909	2006	10.1109/isit.2006.261909	Sub-tree Based Upper and Lower Bounds on the Partition Function	2006 IEEE International Symposium on Information Theory	proceedings-article
+92	10.1109/iv.2004.1320154	None	10.1109/iv.2004.1320154	Binary-partition-tree creation using a quasi-inclusion criterion	Proceedings. Eighth International Conference on Information Visualisation, 2004. IV 2004.	proceedings-article
+93	10.1109/dcc52660.2022.00079	2022	10.1109/dcc52660.2022.00079	A Fast Multi-tree Partition Algorithm Based on Spatial-temporal Correlation for VVC	2022 Data Compression Conference (DCC)	proceedings-article
+94	10.17504/protocols.io.bkqwkvxe	2020	10.17504/protocols.io.bkqwkvxe	R editing of HMMSEARCH output: heatmap with associated with gene tree and protein illustration v1		posted-content
+95	10.31219/osf.io/qh8f3_v1	2025	10.31219/osf.io/qh8f3_v1	The E8 Root System Partition Under Binary Icosahedral Group Action: The Origin of r∗ = 1/8		posted-content
+96	10.2307/1109436	1908	10.2307/1109436	Partition of Real Property by Action	Columbia Law Review	journal-article
+97	10.1007/s11432-020-3159-9	2022	10.1007/s11432-020-3159-9	Sufficient conditions and limitations of equivalent partition in multiagent controllability	Science China Information Sciences	journal-article
+98	10.1007/978-3-642-74382-5_2	1989	10.1007/978-3-642-74382-5_2	Data-Equivalent Models in Psychophysics: Examples and Reflections	Psychophysics in Action	book-chapter
+99	10.11606/d.55.2024.tde-07012025-171839	None	10.11606/d.55.2024.tde-07012025-171839	Categorização de produtos em e-commerce: avaliação do método Argmax para classificação de descrições curtas em português		dissertation
+100	10.1109/ivec.2014.6857632	2014	10.1109/ivec.2014.6857632	Equivalent circuit of multi-gap output cavity for sheet beam EIK	IEEE International Vacuum Electronics Conference	proceedings-article

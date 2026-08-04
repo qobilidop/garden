@@ -104,6 +104,14 @@ feasible-input propagation, relational products that existentially remove
 hidden activation vectors, and one exact BDD per output class. Tang et al. add
 margin-qualified exact aligned BDDs for threshold neurons.
 
+Bertossi and Leon provide another exact compilation path aimed at repeated
+SHAP queries. They substitute internal threshold-gate definitions into an
+auxiliary-variable-free output formula, compile its CNF to an SDD, interpret
+the SDD as deterministic decomposable NNF, and smooth the circuit. The compiled
+circuit is extensionally equivalent to the BNN, while the dominant SDD step can
+be exponential in primal-graph treewidth. This strengthens the compiled-output
+baseline without preserving internal activation provenance.
+
 These results are not merely applications of generic diagrams. They directly
 defeat claims of first exact neural output compilation, first requested-region
 class fibers, or first sparse diagram explanation. Their terminal observer is

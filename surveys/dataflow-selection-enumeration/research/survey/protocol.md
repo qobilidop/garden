@@ -71,10 +71,16 @@ count toward closure.
     policy-output region construction.
 18. Exact neural-to-OBDD/SDD compilation, requested-class diagrams, and
     prime-implicant explanations.
+19. Symmetry- and constraint-based quotient reachability for colored Petri
+    nets.
+20. Observation-pattern loop-state postponement and other heuristic sparse
+    exploration policies.
+21. Context- and precondition-guided symbolic search, including target-relative
+    pruning learned from previously unsuccessful paths.
 
 Cluster 9 was added when forward snowballing from needed narrowing exposed a
 previously missing closest lineage. Later audited replacement rounds and their
-snowballs added clusters 10--18. Each addition reopened the map before closure;
+snowballs added clusters 10--21. Each addition reopened the map before closure;
 `closure-audit.md` records the chronological query expansions and retirement
 of superseded no-add rounds. These additions are disclosed post hoc as survey
 outcomes, not misrepresented as part of the initial protocol.

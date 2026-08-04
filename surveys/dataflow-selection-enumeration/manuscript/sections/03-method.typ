@@ -17,7 +17,7 @@ are proved; how residuals, witnesses, and sharing are represented; what
 complexity results exist; and which assumptions are made about purity,
 totality, cycles, time, and solver completeness.
 
-The search vocabulary spans sixteen clusters: formal and multi-path symbolic
+The search vocabulary spans twenty-one clusters: formal and multi-path symbolic
 execution; hardware symbolic simulation; synchronous and dataflow testing;
 AllSAT, AllSMT, partial models, and cubes; trace partitioning; decision
 diagrams, residualization, slicing, and demand; functional-logic search and
@@ -25,7 +25,10 @@ choice fingerprints; demand-driven bounded testing and lazy initialization;
 pseudo-exhaustive circuit testing; finite-observer input partitions; decision
 trees and finite-range diagrams; exact hyperplane, neural, and CPWL region
 enumeration; classical stream-dataflow demand; and compositional hybrid-mode,
-piecewise-affine, and parametric-program partitions.
+piecewise-affine, and parametric-program partitions; exact neural trees and
+decision-diagram compilation; symmetry-reduced reachability;
+observation-pattern loop-state postponement; and context- or
+precondition-guided target search.
 
 The protocol began with a smaller vocabulary. Newly exposed clusters were
 added only through recorded reopenings; prior no-add rounds were then retired
