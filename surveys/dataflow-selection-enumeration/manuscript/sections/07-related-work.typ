@@ -63,6 +63,12 @@ expressions; in the exact setting those guards are disjoint and exhaustive
 frameworks further show that purity, library structure, and normalized guarded
 values do not by themselves define a new semantic object
 @porncharoenwase2022merging @lu2023grisette.
+Conditional-compilation analysis and its conditional-value rewrite semantics
+predate these systems: nested guarded macro values compute exact source-
+presence conditions without enumerating feasible preprocessor paths
+@hu2000conditional @latendresse2003conditional @latendresse2004rewrite. They supply an exact
+conditional-value precedent, but its observer is compilation presence rather
+than runtime selection behavior.
 
 Selection observations choose a particular intensional quotient of these
 executions. They discard ordinary control history, retain the outcome of every
@@ -84,6 +90,8 @@ our residual remains symbolic. Structural observation, concrete forcing, and
 logical relevance are consequently three different omission rules.
 
 Heap symbolic execution supplies a stronger conditional-value predecessor.
+Case-optimal bounded heap exploration already retained one non-isomorphic heap
+configuration per strong-property case @deng2007caseoptimal.
 Symbolic initialization places null, fresh-object, alias, and uninitialized
 possibilities in guarded value sets inside one heap instead of forking the
 generalized-symbolic-execution (GSE) tree; a bisimulation proves exactly the
@@ -95,6 +103,10 @@ completeness relative to GSE open, so the construction and experiments must not
 be upgraded to an equivalence theorem. Both works establish up-front merging
 of conditional input structure, but partition by program control rather than
 the requested selection observer.
+Conversely, path-minimal-object generation constructs only the object
+properties needed to replay one selected TypeScript path
+@menshutin2025pathminimal. That is sparse path-relative input synthesis, not an
+exhaustive partition over all observations.
 
 State-space and exploration quotients provide two further boundaries. The
 well-formed colored-net symbolic-reachability lineage begins at least with the
@@ -136,6 +148,15 @@ they retain a representative according to which value a read sees, with the
 latter sometimes exponentially coarser while preserving local-safety coverage
 @abdulla2019readsfrom @agarwal2021rvf. Canonical symbolic configurations can
 also group distributed states and interleavings together @pick2023psym.
+Maximal-causality reduction claims one execution per largest causal class and
+a provably minimal execution count @huang2015mcr. It has also been extended to
+TSO and PSO, while a later variant uses static dependency analysis to reduce
+the causal constraints without silently accepting the redundancy that the
+analysis can introduce @huang2016mcrtso @huang2017staticmcr.
+Value-happens-before instead
+groups same-valued observations, can be exponentially coarser than happens-
+before, and admits polynomial time per class for bounded threads
+@chatterjee2019valuecentric.
 Dynamic cone-of-influence reduction is closer to a requested-observer
 criterion because relevance changes with the checked property, state, and
 interleaving @telbisz2025coi; it preserves one property judgment rather than
@@ -174,9 +195,11 @@ minimum-initial-state line under different assumptions @ruan2019unobservable
 @yue2024minimal @yue2025prediction @li2026minimumstate. Observed state-class
 graphs and hierarchical bases address timed or silent current-state estimation
 @li2024timedstate @ghazel2009observer @ma2021hierarchical
-@aguirre2008observability; a later linear formulation returns the complete
-timed marking set without the full state-class graph @ma2020timedmarking, and a
-region observer treats timed automata with no event observation
+@aguirre2008observability. The original modified state-class-graph estimator
+for silent timed transitions is retained with a correction caveat rather than
+an unqualified completeness claim @basile2013timedmarking. A later linear
+formulation returns the complete timed marking set without the full state-class
+graph @ma2020timedmarking, and a region observer treats timed automata with no event observation
 @gao2020noevent. A probabilistic variant weights the consistent marking set
 @cabasino2015probabilistic. A different observation model starts
 from measured places even when no transition firing is directly observed
@@ -235,6 +258,11 @@ relative to its naive semantics @yuan2025derivative. Thus requested-event and
 specification-relative omission can carry conditional or relative preservation
 theorems. These methods seek property witnesses, not every observation and its
 exact inverse input fiber.
+At a component boundary, dynamic interface reduction discovers externally
+visible behavior online and avoids global exploration of internal behavior
+that cannot propagate through the interface @guo2011interface. This is a
+strong finite-observer analogue, but it preserves model-checking behavior
+rather than enumerating the observer's inverse input sets.
 
 Assertion- and coverage-directed methods sharpen that conclusion. Summaries of
 prior assertion-safe executions can soundly prune later multithreaded
@@ -243,6 +271,13 @@ Earlier abstract subsumption already backtracks when a symbolic heap state is
 contained in a previously explored abstract state, obtaining finite but
 under-approximate exploration for recursive heaps and arrays
 @anand2006subsumption.
+Postconditioned symbolic execution gives an exact path-level counterpart:
+weakest-precondition summaries prune a new suffix already covered by prior
+bounded behavior @yi2018postconditioned.
+Observation-specific redundant-state detection instead soundly prunes a state
+when no continuation can reach a new declared code location
+@bugrara2013redundant. Both preserve search objectives rather than enumerate
+the complete image and input fibers of a multivalued observer.
 Neighborhood graph abstraction uses the dual over-approximate setting: an
 abstract shape is discarded when another denotes a superset of its concrete
 graphs and covers its abstract behavior @zambon2012subsumption.
@@ -356,6 +391,17 @@ input fiber, but blocks a broad claim that canonical symbolic input search is
 new. An earlier verifier likewise gives sound proofs and counterexample-
 complete search for a terminating pure higher-order fragment by controlling
 dynamic dispatch and progressively unfolding functions @voirol2015counterexample.
+Nguyễn and Van Horn instead progressively decompose unknown functions,
+retain first-order path constraints, reconstruct concrete functional inputs,
+and prove relative counterexample completeness modulo base reasoning
+@nguyen2015counterexamples. Their expanded contract system adds recursive data,
+first-class contracts, flow-sensitive refinement, and verification
+@nguyen2017contracts.
+Contracts had already served as sound symbolic higher-order values
+@tobinhochstadt2012contracts. A later game-semantics formulation captures
+arbitrary external functional behavior soundly and completely, with finite
+exploration obtained by explicit recursion and callback-depth bounds
+@lin2020game.
 Earlier still, quantified refinement types establish sound relative
 completeness for higher-order functional safety, with a later system extending
 the result to universal and existential nondeterministic branching properties

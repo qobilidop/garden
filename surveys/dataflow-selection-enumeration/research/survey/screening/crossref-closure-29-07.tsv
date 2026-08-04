@@ -1,0 +1,101 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1016/j.ins.2026.123515	2026	10.1016/j.ins.2026.123515	Petri net-driven expanding tent-sine chaotic keystream generator with adaptive token flow for image encryption	Information Sciences	journal-article
+2	10.1109/pnpm.1991.238781	None	10.1109/pnpm.1991.238781	Performance Petri net analysis of communications protocol software by delay-equivalent aggregation	Proceedings of the Fourth International Workshop on Petri Nets and Performance Models PNPM91	proceedings-article
+3	10.1109/cdc.1997.652508	None	10.1109/cdc.1997.652508	On a free-choice equivalent of a Petri net	Proceedings of the 36th IEEE Conference on Decision and Control	proceedings-article
+4	10.1109/iceice.2011.5777954	2011	10.1109/iceice.2011.5777954	Equivalent textual description and lexical analysis of Petri Net	2011 International Conference on Electric Information and Control Engineering	proceedings-article
+5	10.1142/9789814733878_0045	2016	10.1142/9789814733878_0045	Fault Diagnosis System of Wind Turbine Generator Based on Petri Net	Applied Mechanics, Mechatronics and Intelligent Systems	proceedings-article
+6	10.1109/icnc.2010.5584594	2010	10.1109/icnc.2010.5584594	The equivalent transformation and algorithm from Coloured Petri Net to P/T net	2010 Sixth International Conference on Natural Computation	proceedings-article
+7	10.5391/ijfis.2013.13.3.200	2013	10.5391/ijfis.2013.13.3.200	A Subclass of Petri Net with Reachability Equivalent to State Equation Satisfiability: Live Single Branch Petri Net	International Journal of Fuzzy Logic and Intelligent Systems	journal-article
+8	10.1109/cdc.1997.652507	None	10.1109/cdc.1997.652507	Petri net state estimators based on event observation	Proceedings of the 36th IEEE Conference on Decision and Control	proceedings-article
+9	10.5772/5321	2008	10.5772/5321	Timed Hierarchical Object-Oriented Petri Net	Petri Net, Theory and Applications	book-chapter
+10	10.23940/ijpe.18.02.p10.290299	2018	10.23940/ijpe.18.02.p10.290299	Adaptive Short-Circuit Current Calculation Model based on Colored Petri Net	International Journal of Performability Engineering	journal-article
+11	10.7551/mitpress/8811.003.0010	2011	10.7551/mitpress/8811.003.0010	Analyzing Petri Net Models	Modeling Business Processes	book-chapter
+12	10.1007/springerreference_21281	None	10.1007/springerreference_21281	Petri net	SpringerReference	reference-entry
+13	10.1007/978-3-540-68746-7_27	2008	10.1007/978-3-540-68746-7_27	Animated Graphical User Interface Generator Framework for Input-Output Place-Transition Petri Net Models	Lecture Notes in Computer Science	book-chapter
+14	10.1109/mmmc.2005.26	None	10.1109/mmmc.2005.26	Color Time Petri Net for Interactive Adaptive Multimedia Objects	11th International Multimedia Modelling Conference	proceedings-article
+15	10.1109/icsess.2014.6933565	2014	10.1109/icsess.2014.6933565	PCTL* stochastic model checking label-extended probabilistic Petri net system model	2014 IEEE 5th International Conference on Software Engineering and Service Science	proceedings-article
+16	10.1007/978-3-030-12835-7_7	2020	10.1007/978-3-030-12835-7_7	Deadlock Detection in Petri Net Equivalent to IMDS	Studies in Computational Intelligence	book-chapter
+17	10.3182/20140514-3-fr-4046.00060	2014	10.3182/20140514-3-fr-4046.00060	Observation Equivalence of Petri Net Generators	IFAC Proceedings Volumes	journal-article
+18	10.5772/10294	2010	10.5772/10294	Petri Net as a Manufacturing System Scheduling Tool	Advances in Petri Net Theory and Applications	book-chapter
+19	10.1109/icis.2014.6912160	2014	10.1109/icis.2014.6912160	Game theory semantics for PCTL model checking label-extended probabilistic Petri net	2014 IEEE/ACIS 13th International Conference on Computer and Information Science (ICIS)	proceedings-article
+20	10.1007/978-3-540-40022-6_3	2003	10.1007/978-3-540-40022-6_3	Petri Net Transformations in the ≫Petri Net Baukasten≪	Lecture Notes in Computer Science	book-chapter
+21	10.1007/978-3-642-10781-8_41	2010	10.1007/978-3-642-10781-8_41	Optimization of Adaptive Petri-Net Grid Genetic Algorithm Workflows	ICT Innovations 2009	book-chapter
+22	10.1109/isic.1988.65508	None	10.1109/isic.1988.65508	Adaptive design of Petri net controllers for automatic error recovery	Proceedings IEEE International Symposium on Intelligent Control 1988	proceedings-article
+23	10.1002/9781119262114.part1	2016	10.1002/9781119262114.part1	Short Review of Petri Net Modeling	Systems Dependability Assessment	other
+24	10.1109/ecc.2016.7810455	2016	10.1109/ecc.2016.7810455	Adaptive certainty-equivalent approach for optimal generator dispatch under uncertainty	2016 European Control Conference (ECC)	proceedings-article
+25	10.1142/9789814324298_0003	2012	10.1142/9789814324298_0003	Petri Net Processes and Extension Operators	Property-Preserving Petri Net Process Algebra in Software Engineering	book-chapter
+26	10.5772/5323	2008	10.5772/5323	Error Recovery in Production Systems: A Petri Net Based Intelligent System Approach	Petri Net, Theory and Applications	book-chapter
+27	10.1109/eurcon.2007.4400489	2007	10.1109/eurcon.2007.4400489	Transformation Methods of the BDSPN Model into an Equivalent Classical Petri Net	"EUROCON 2007 - The International Conference on ""Computer as a Tool"""	proceedings-article
+28	10.5772/7499	2010	10.5772/7499	GPenSIM: A New Petri Net Simulator	Petri Nets Applications	book-chapter
+29	10.5772/10297	2010	10.5772/10297	Modeling Multimedia Synchronization Using a Time Petri Net Based Approach	Advances in Petri Net Theory and Applications	book-chapter
+30	10.5121/ijfcst.2012.2504	2012	10.5121/ijfcst.2012.2504	Modelling An Automatic Proof Generator For Functional Dependency Rules Using Colored Petri Net	International Journal in Foundations of Computer Science &amp; Technology	journal-article
+31	10.1109/icsmc.1994.399917	1994	10.1109/icsmc.1994.399917	An automatic Petri-net generator for modeling a flexible manufacturing system	Proceedings of IEEE International Conference on Systems, Man and Cybernetics	proceedings-article
+32	10.1109/cdc.2000.912800	None	10.1109/cdc.2000.912800	Petri net monitor design with control and observation costs	Proceedings of the 39th IEEE Conference on Decision and Control (Cat. No.00CH37187)	proceedings-article
+33	10.1142/9789812839763_0007	1999	10.1142/9789812839763_0007	PETRI NET SIMULATION AND TOOLS	Modeling, Simulation, and Control of Flexible Manufacturing Systems	book-chapter
+34	10.4249/scholarpedia.6477	2008	10.4249/scholarpedia.6477	Petri net	Scholarpedia	journal-article
+35	10.4018/978-1-4666-9594-8.les2	None	10.4018/978-1-4666-9594-8.les2	Equivalent Transformations of Time Petri Nets	Petri Nets for Modeling and Computing	book-chapter
+36	10.5772/5310	2008	10.5772/5310	Petri Net Transformations	Petri Net, Theory and Applications	book-chapter
+37	10.1007/978-3-540-76719-0_20	None	10.1007/978-3-540-76719-0_20	Enhancing Web-Based Adaptive Learning with Colored Timed Petri Net	Lecture Notes in Computer Science	book-chapter
+38	10.1109/iscas.1991.176135	1991	10.1109/iscas.1991.176135	A polynomial-time algorithm for finding a semi-generator of Petri net invariants	1991 IEEE International Symposium on Circuits and Systems (ISCAS)	proceedings-article
+39	10.1109/agro-geoinformatics.2017.8047037	2017	10.1109/agro-geoinformatics.2017.8047037	An adaptive petri net model of wheat phenological phases under environmental conditions	2017 6th International Conference on Agro-Geoinformatics	proceedings-article
+40	10.1109/icca62237.2024.10927893	2024	10.1109/icca62237.2024.10927893	Self-Adaptive ERP: Embedding NLP into Petri-Net creation and Model Matching	2024 International Conference on Computer and Applications (ICCA)	proceedings-article
+41	10.1109/access.2021.3053272	2021	10.1109/access.2021.3053272	Sensor Fault Diagnosis Based on Adaptive Arc Fuzzy DBN-Petri Net	IEEE Access	journal-article
+42	10.20944/preprints202607.0536.v1	2026	10.20944/preprints202607.0536.v1	LARA: Learned Adaptive Recombined Alignments, a Certifying Foundation Model for Petri Net Trace Alignment		posted-content
+43	10.3403/30175183	None	10.3403/30175183	Analysis techniques for dependability. Petri net techniques		standard
+44	10.1109/coase.2008.4626438	2008	10.1109/coase.2008.4626438	Unified Colored Timed Petri net models for the adaptive control of disassembly systems	2008 IEEE International Conference on Automation Science and Engineering	proceedings-article
+45	10.1109/icpca.2010.5704119	2010	10.1109/icpca.2010.5704119	A feedback Adaptive fuzzy Petri net model for context reasoning	5th International Conference on Pervasive Computing and Applications	proceedings-article
+46	10.1016/s1474-6670(17)64101-6	1986	10.1016/s1474-6670(17)64101-6	Validation of Petri Net Models by ‘Petri-Net-Machine’	IFAC Proceedings Volumes	journal-article
+47	10.3403/30175183u	None	10.3403/30175183u	Analysis techniques for dependability. Petri net techniques		standard
+48	10.4018/978-1-4666-9594-8.les13	None	10.4018/978-1-4666-9594-8.les13	Petri Net Computing	Petri Nets for Modeling and Computing	book-chapter
+49	10.5772/5312	2008	10.5772/5312	Petri Net Based Modelling of Communication in Systems on Chip	Petri Net, Theory and Applications	book-chapter
+50	10.1093/oed/1477097321	2023	10.1093/oed/1477097321	Petri net, n.	Oxford English Dictionary	book-chapter
+51	10.5772/7503	2010	10.5772/7503	Workflow Diagnosis Using Petri Net Charts	Petri Nets Applications	book-chapter
+52	10.7551/mitpress/8811.003.0008	2011	10.7551/mitpress/8811.003.0008	Colored Petri Nets	Modeling Business Processes	book-chapter
+53	10.7551/mitpress/8811.003.0009	2011	10.7551/mitpress/8811.003.0009	Hierarchical Petri Nets	Modeling Business Processes	book-chapter
+54	10.1109/poweri.2006.1632569	2006	10.1109/poweri.2006.1632569	Fault diagnosis of power system using neural Petri net and fuzzy neural Petri net	2006 IEEE Power India Conference	proceedings-article
+55	10.1007/3-540-50580-6_31	1988	10.1007/3-540-50580-6_31	Infinitary partial Petri net languages and their relationship to other Petri net semantics	Lecture Notes in Computer Science	book-chapter
+56	10.5772/5313	2008	10.5772/5313	An Inter-Working Petri Net Model between SIMPLE and IMPS for XDM Service	Petri Net, Theory and Applications	book-chapter
+57	10.1007/978-1-4615-1537-1_1	2001	10.1007/978-1-4615-1537-1_1	The Petri Net Model	Supervision of Petri Nets	book-chapter
+58	10.12988/jite.2016.6831	2016	10.12988/jite.2016.6831	Modeling of adaptive traffic lights using basic Petri net marking	Journal of Innovative Technology and Education	journal-article
+59	10.1201/9781439808856-8	2018	10.1201/9781439808856-8	Colored Petri Net	System Modeling and Control with Resource-Oriented Petri Nets	book-chapter
+60	10.7551/mitpress/8811.003.0006	2011	10.7551/mitpress/8811.003.0006	Application of Petri Nets	Modeling Business Processes	book-chapter
+61	10.1002/9781119262114.ch6	2016	10.1002/9781119262114.ch6	Petri Net Modeling of the Accidental Process	Systems Dependability Assessment	other
+62	10.5772/5318	2008	10.5772/5318	Model Checking of Time Petri Nets	Petri Net, Theory and Applications	book-chapter
+63	10.5013/ijssst.a.17.42.39	2016	10.5013/ijssst.a.17.42.39	Soccer Robot Action Decision of Adaptive Petri Net Based on Multi-Agent Fuzzy Weights	International Journal of Simulation: Systems, Science &amp; Technology	journal-article
+64	10.3923/itj.2013.3981.3985	2013	10.3923/itj.2013.3981.3985	Equivalent Queueing Petri Net Expression for New Routing Method under RWP Mobility in Dtns	Information Technology Journal	journal-article
+65	10.1002/9781119262114.part3	2016	10.1002/9781119262114.part3	Stochastic Petri Nets	Systems Dependability Assessment	other
+66	10.7551/mitpress/8811.003.0005	2011	10.7551/mitpress/8811.003.0005	Basic Concepts of Petri Nets	Modeling Business Processes	book-chapter
+67	10.1007/978-3-662-04457-5_4	2001	10.1007/978-3-662-04457-5_4	Petri Net Semantics	Monographs in Theoretical Computer Science An EATCS Series	book-chapter
+68	10.1201/9781439808856-6	2018	10.1201/9781439808856-6	Colored Petri Net ���������������������������������������������������������������������������������������������� 3	System Modeling and Control with Resource-Oriented Petri Nets	book-chapter
+69	10.1007/978-3-642-41115-1_2	2013	10.1007/978-3-642-41115-1_2	The Classic Petri Net	Time and Petri Nets	book-chapter
+70	10.5772/5325	2008	10.5772/5325	Diagnosis of Discrete Event Systems with Petri Nets	Petri Net, Theory and Applications	book-chapter
+71	10.14257/ijca.2015.8.1.21	2015	10.14257/ijca.2015.8.1.21	Adaptive Scheduling Model in Hybrid Flowshop Production Control using Petri Net	International Journal of Control and Automation	journal-article
+72	10.5772/56	2008	10.5772/56	Petri Net, Theory and Applications		edited-book
+73	10.1007/978-3-662-60651-3_2	2019	10.1007/978-3-662-60651-3_2	How Petri Net Theory Serves Petri Net Model Checking: A Survey	Lecture Notes in Computer Science	book-chapter
+74	10.3390/en12112216	2019	10.3390/en12112216	Energy Saving Operation of Manufacturing System Based on Dynamic Adaptive Fuzzy Reasoning Petri Net	Energies	journal-article
+75	10.1504/ijais.2010.032279	2010	10.1504/ijais.2010.032279	Multi-steps diagnosis of discrete event systems with Petri net models	International Journal of Adaptive and Innovative Systems	journal-article
+76	10.5772/5319	2008	10.5772/5319	A Linear Logic Based Approach to Timed Petri Nets	Petri Net, Theory and Applications	book-chapter
+77	10.1002/0471028959.sof240	2002	10.1002/0471028959.sof240	Petri Net	Encyclopedia of Software Engineering	other
+78	10.1016/j.comcom.2008.02.009	2008	10.1016/j.comcom.2008.02.009	A behavior and delay equivalent petri net model for performance evaluation of communication protocols	Computer Communications	journal-article
+79	10.1109/wcica.2006.1713176	2006	10.1109/wcica.2006.1713176	Fuzzy Knowledge Learning via Adaptive Fuzzy Petri Net with Triangular Function Model	2006 6th World Congress on Intelligent Control and Automation	proceedings-article
+80	10.1016/j.eswa.2012.05.013	2012	10.1016/j.eswa.2012.05.013	Petri net-based engine for adaptive learning	Expert Systems with Applications	journal-article
+81	10.5772/5320	2008	10.5772/5320	From Time Petri Nets to Timed Automata	Petri Net, Theory and Applications	book-chapter
+82	10.3182/20050703-6-cz-1902.00348	2005	10.3182/20050703-6-cz-1902.00348	ON THE EXISTENCE OF PETRI NET CONTROLLER FOR DISCRETE EVENT SYSTEMS UNDER PARTIAL OBSERVATION	IFAC Proceedings Volumes	journal-article
+83	10.1109/tac.2015.2496500	2016	10.1109/tac.2015.2496500	On the Equivalence of Observation Structures for Petri Net Generators	IEEE Transactions on Automatic Control	journal-article
+84	10.1201/9781439808856-9	2018	10.1201/9781439808856-9	Process-Oriented Petri Net Modeling	System Modeling and Control with Resource-Oriented Petri Nets	book-chapter
+85	10.5772/10292	2010	10.5772/10292	Production Process Object Modeling Based Petri Nets	Advances in Petri Net Theory and Applications	book-chapter
+86	10.1201/9781439808856-10	2018	10.1201/9781439808856-10	Resource-Oriented Petri Net Modeling	System Modeling and Control with Resource-Oriented Petri Nets	book-chapter
+87	10.5772/5328	2008	10.5772/5328	Using Transition Invariants for Reachability Analysis of Petri Nets	Petri Net, Theory and Applications	book-chapter
+88	10.1007/bfb0016213	None	10.1007/bfb0016213	Petri net tools	Lecture Notes in Computer Science	book-chapter
+89	10.3390/app16094180	2026	10.3390/app16094180	From Mathematics to Art: Petri Net Modelling of Tribonacci and k-Bonacci Petri Net Fractal Patterns	Applied Sciences	journal-article
+90	10.1016/j.jag.2010.05.003	2010	10.1016/j.jag.2010.05.003	Simulation and analysis of infrastructure interdependencies using a Petri net simulator in a geographical information system	International Journal of Applied Earth Observation and Geoinformation	journal-article
+91	10.11648/j.ajesa.20170504.11	2017	10.11648/j.ajesa.20170504.11	Fluidification of Stochastic Petri Net by Non Linear Timed Continuous Petri Net	American Journal of Embedded Systems and Applications	journal-article
+92	10.1007/3-540-45541-8_7	2001	10.1007/3-540-45541-8_7	Parameterized Net Classes: A Uniform Approach to Petri Net Classes	Lecture Notes in Computer Science	book-chapter
+93	10.1007/978-3-540-40022-6_6	2003	10.1007/978-3-540-40022-6_6	The Petri Net Kernel	Lecture Notes in Computer Science	book-chapter
+94	10.5772/10299	2010	10.5772/10299	Parallel Application Scheduling Model Based on Petri Net with Changeable Structure	Advances in Petri Net Theory and Applications	book-chapter
+95	10.1109/scc66964.2025.11424739	2025	10.1109/scc66964.2025.11424739	Energy-Aware Optimization Strategy for P-Time Labeled Petri Net Systems under Partial Observation	2025 IEEE 4th International Conference on Signal, Control and Communication (SCC)	proceedings-article
+96	10.1109/cas-ictd.2009.4960820	2009	10.1109/cas-ictd.2009.4960820	Fault Diagnosis Method of Power System Based on the Adaptive Fuzzy Petri Net	2009 IEEE Circuits and Systems International Conference on Testing and Diagnosis	proceedings-article
+97	10.1155/2022/6280816	2022	10.1155/2022/6280816	Adaptive Educational Hypermedia System Based on Variational Bayesian Petri Net	Mathematical Problems in Engineering	journal-article
+98	10.5120/11964-7824	2013	10.5120/11964-7824	Embedding an Arbitrary 1-safe Petri Net into a Boolean Petri Net	International Journal of Computer Applications	journal-article
+99	10.7287/peerj.preprints.26456/supp-2	None	10.7287/peerj.preprints.26456/supp-2		Supplemental Information 2: Petri net model of the exported BRN	dataset
+100	10.7287/peerj.preprints.26456v1/supp-2	None	10.7287/peerj.preprints.26456v1/supp-2		Supplemental Information 2: Petri net model of the exported BRN	dataset

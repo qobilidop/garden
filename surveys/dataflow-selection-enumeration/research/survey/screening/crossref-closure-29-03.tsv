@@ -1,0 +1,101 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1145/2345156.1993565	2012	10.1145/2345156.1993565	Precise and compact modular procedure summaries for heap manipulating programs	ACM SIGPLAN Notices	journal-article
+2	10.1145/1993316.1993565	2011	10.1145/1993316.1993565	Precise and compact modular procedure summaries for heap manipulating programs	ACM SIGPLAN Notices	journal-article
+3	10.1145/1993498.1993565	2011	10.1145/1993498.1993565	Precise and compact modular procedure summaries for heap manipulating programs	Proceedings of the 32nd ACM SIGPLAN Conference on Programming Language Design and Implementation	proceedings-article
+4	10.1109/apsec.2012.35	2012	10.1109/apsec.2012.35	Modular Heap Abstraction-Based Memory Leak Detection for Heap-Manipulating Programs	2012 19th Asia-Pacific Software Engineering Conference	proceedings-article
+5	10.1109/qsic.2012.37	2012	10.1109/qsic.2012.37	Modular Heap Abstraction-Based Code Clone Detection for Heap-Manipulating Programs	2012 12th International Conference on Quality Software	proceedings-article
+6	10.3403/30228026	None	10.3403/30228026	Glass in building. Determination of thermal transmittance (U value). Guarded hot plate method		standard
+7	10.1520/stp32912s	1985	10.1520/stp32912s	Summary	Guarded Hot Plate and Heat Flow Meter Methodology	book-chapter
+8	10.3403/01317955	None	10.3403/01317955	Glass in building. Determination of thermal transmittance (U value). Guarded hot plate method		standard
+9	10.3403/01317955u	None	10.3403/01317955u	Glass in building. Determination of thermal transmittance (U value). Guarded hot plate method		standard
+10	10.1093/oso/9780198799931.003.0004	2018	10.1093/oso/9780198799931.003.0004	Procedure under the Modular Approach	Oxford Scholarship Online	book
+11	10.1145/996566.996583	2004	10.1145/996566.996583	Modular scheduling of guarded atomic actions	Proceedings of the 41st annual Design Automation Conference	proceedings-article
+12	10.1520/stp32900s	1985	10.1520/stp32900s	Summary of Error Analysis for the National Bureau of Standards 1016-mm Guarded Hot Plate and Considerations Regarding Systematic Error for the Heat Flow Meter Apparatus	Guarded Hot Plate and Heat Flow Meter Methodology	book-chapter
+13	10.1007/978-94-011-0315-2_42	1994	10.1007/978-94-011-0315-2_42	Summary Comments	Instability and Variability of Hot-Star Winds	book-chapter
+14	10.1520/stp18487s	1987	10.1520/stp18487s	A Detailed Verification Procedure for a Guarded Hot Box	Thermal Insulation: Materials and Systems	book-chapter
+15	10.7717/peerj.20173/fig-1	None	10.7717/peerj.20173/fig-1	Figure 1: Summary of the experimental procedure.		component
+16	10.1093/he/9780198838593.003.0024	2019	10.1093/he/9780198838593.003.0024	24. Summary Judgment	A Practical Approach to Civil Procedure	book-chapter
+17	10.1093/he/9780198858386.003.0024	2020	10.1093/he/9780198858386.003.0024	24. Summary Judgment	A Practical Approach to Civil Procedure	book-chapter
+18	10.1016/0020-0190(81)90058-2	1981	10.1016/0020-0190(81)90058-2	Guarded procedure: a distributed programming concept	Information Processing Letters	journal-article
+19	10.1093/he/9780192844521.003.0024	2021	10.1093/he/9780192844521.003.0024	24. Summary Judgment	A Practical Approach to Civil Procedure	book-chapter
+20	10.1093/he/9780192859365.003.0024	2022	10.1093/he/9780192859365.003.0024	24. Summary Judgment	A Practical Approach to Civil Procedure	book-chapter
+21	10.1093/he/9780198873426.003.0024	2024	10.1093/he/9780198873426.003.0024	24. Summary Judgment	A Practical Approach to Civil Procedure	book-chapter
+22	10.4324/9781843145684-89	2012	10.4324/9781843145684-89	SUMMARY JUDGMENT	Civil Procedure	book-chapter
+23	10.4324/9781843142133-97	2001	10.4324/9781843142133-97	SUMMARY JUDGMENT	Civil Procedure	book-chapter
+24	10.1017/cbo9780511661969.005	1997	10.1017/cbo9780511661969.005	Cohomology with compact supports of Drinfeld modular varieties	Cohomology of Drinfeld Modular Varieties	book-chapter
+25	10.7717/peerj-cs.4013/table-2	None	10.7717/peerj-cs.4013/table-2	Table 2: Compact summary of simulated participant emotion regulation.		component
+26	10.1109/ipps.1992.223027	None	10.1109/ipps.1992.223027	Parallel heap operations on EREW PRAM: summary of results	Proceedings Sixth International Parallel Processing Symposium	proceedings-article
+27	10.1016/s1474-6670(17)36429-7	2003	10.1016/s1474-6670(17)36429-7	Modular Reachability Analysis for Time Petri Nets with Guarded Transitions	IFAC Proceedings Volumes	journal-article
+28	10.2172/798077	1999	10.2172/798077	Honeywell Modular Automation System Acceptance Test Procedure		report
+29	10.4043/29007-ms	2018	10.4043/29007-ms	Compact Modular Manifold Design for Reduced Cost and Added Value Subsea Production Systems	Offshore Technology Conference	proceedings-article
+30	10.22215/etd/2018-13206	None	10.22215/etd/2018-13206	Design and Construction of a Guarded Hot Plate Apparatus to Evaluate the Thermal Resistance of Vacuum Insulated Panels using a New Accelerated Ageing Procedure		dissertation
+31	10.1021/acsphotonics.1c00719.s001	None	10.1021/acsphotonics.1c00719.s001	Generalized Modular Spectrometers Combining a Compact Nanobeam Microcavity and Computational Reconstruction		component
+32	10.1007/978-3-663-08773-1_1	1997	10.1007/978-3-663-08773-1_1	Summary	Modular Machine Tools	book-chapter
+33	10.1109/tro.2024.3492453/mm1	None	10.1109/tro.2024.3492453/mm1	Compact Modular Robotic Wrist with Variable Stiffness Capability_supp1-3492453.mp4		component
+34	10.1021/acs.langmuir.3c00280.s001	None	10.1021/acs.langmuir.3c00280.s001	Modular and Substrate-Independent Grafting-To Procedure for Functional Polymer Coatings		component
+35	10.2172/7504	1998	10.2172/7504	Compact Subsurface Soil Investigation System. Innovative Technology Summary Report		report
+36	10.1017/cbo9781316530290.034	2013	10.1017/cbo9781316530290.034	SUMMARY PROCEDURE	Kenny's Outlines of Criminal Law	book-chapter
+37	10.4324/9781843146667-9	2004	10.4324/9781843146667-9	SUMMARY TRIAL	Criminal Procedure &amp; Sentencing	book-chapter
+38	10.4324/9781843146629-80	2006	10.4324/9781843146629-80	SUMMARY JUDGMENT	Commonwealth Caribbean Civil Procedure	book-chapter
+39	10.4324/9781843142133-99	2001	10.4324/9781843142133-99	GROUNDS FOR SUMMARY JUDGMENT	Civil Procedure	book-chapter
+40	10.7717/peerj.5949/table-1	None	10.7717/peerj.5949/table-1	Table 1: Summary of statistical model simplification procedure and results.		component
+41	10.4324/9781843146629-36	2006	10.4324/9781843146629-36	SUMMARY JUDGMENT	Commonwealth Caribbean Civil Procedure	book-chapter
+42	10.1007/bf01091180	1994	10.1007/bf01091180	Summary comments	Astrophysics and Space Science	journal-article
+43	10.1109/lics.1999.782624	None	10.1109/lics.1999.782624	A superposition decision procedure for the guarded fragment with equality	Proceedings. 14th Symposium on Logic in Computer Science (Cat. No. PR00158)	proceedings-article
+44	10.3928/1542-8877-19920901-03	1992	10.3928/1542-8877-19920901-03	"""Guarded Filtration Procedure""-Not ""Trabeculectomy"""	Ophthalmic Surgery, Lasers and Imaging Retina	journal-article
+45	10.7717/peerj-cs.2571/fig-1	None	10.7717/peerj-cs.2571/fig-1	Figure 1: Examples of the compact and modular surface used in this chapter.		component
+46	10.1109/tim.1971.5570651	1971	10.1109/tim.1971.5570651	A Compact High-Precision Guarded Volt Box	IEEE Transactions on Instrumentation and Measurement	journal-article
+47	10.3928/1542-8877-19930201-22	1993	10.3928/1542-8877-19930201-22	"""GUARDED FILTRATION PROCEDURE""-NOT ""TRABECULECTOMY"""	Ophthalmic Surgery, Lasers and Imaging Retina	journal-article
+48	10.37099/mtu.dc.etdr/994	None	10.37099/mtu.dc.etdr/994	The singular value expansion for compact and non-compact operators		dissertation
+49	10.4324/9781843141167-56	2012	10.4324/9781843141167-56	SUMMARY ASSESSMENT	Civil Procedure Rules in Action	book-chapter
+50	10.46298/lmcs-22(1:9)2026	2026	10.46298/lmcs-22(1:9)2026	Representing Guardedness in Call-by-Value and Guarded Parametrized Monads	Logical Methods in Computer Science	journal-article
+51	10.4324/9781843141167-34	2012	10.4324/9781843141167-34	SUMMARY JUDGMENT	Civil Procedure Rules in Action	book-chapter
+52	10.35799/dc.6.1.2017.14988	2017	10.35799/dc.6.1.2017.14988	Quantum Guarded-Command Language (qGCL) for Maximum Value	d'CARTESIAN	journal-article
+53	10.2172/10185170	1994	10.2172/10185170	TMACS test procedure TP010: Integration summary. Revision 6		report
+54	10.2172/10189114	1994	10.2172/10189114	TMACS Test Procedure TP010: Integration summary. Revision 5		report
+55	10.1145/3139337.3139346	2017	10.1145/3139337.3139346	Modular Synthesis of Heap Exploits	Proceedings of the 2017 Workshop on Programming Languages and Analysis for Security	proceedings-article
+56	10.1520/jte11000j	1987	10.1520/jte11000j	An Operational Procedure for Guarded Hot Box Testing	Journal of Testing and Evaluation	journal-article
+57	10.22215/etd/2018-13311	None	10.22215/etd/2018-13311	Design and Construction of a Compact, Modular Fusion Testbed and Proton Source		dissertation
+58	10.1145/3632854	2024	10.1145/3632854	Modular Denotational Semantics for Effects with Guarded Interaction Trees	Proceedings of the ACM on Programming Languages	journal-article
+59	10.4324/9780203845974-15	2010	10.4324/9780203845974-15	SUMMARY TRIAL	Commonwealth Caribbean Criminal Practice and Procedure	book-chapter
+60	10.4324/9780203845974-16	2010	10.4324/9780203845974-16	SUMMARY APPEALS	Commonwealth Caribbean Criminal Practice and Procedure	book-chapter
+61	10.4324/9781843144519-12	2013	10.4324/9781843144519-12	Summary of Procedure	Practice Notes on Personal Injury	book-chapter
+62	10.4324/9781843145684-91	2012	10.4324/9781843145684-91	SUMMARY JUDGMENT ON COURT’S OWN INITIATIVE	Civil Procedure	book-chapter
+63	10.2139/ssrn.951619	2006	10.2139/ssrn.951619	The Value of Groups	SSRN Electronic Journal	journal-article
+64	10.1561/2500000020	2015	10.1561/2500000020	A Framework For Efficient Modular Heap Analysis	Foundations and Trends® in Programming Languages	journal-article
+65	10.3030/101096368	2023	10.3030/101096368			grant
+66	10.4324/9781843143864-38	2000	10.4324/9781843143864-38	CHECKLIST SUMMARY OF UNIT 2	Criminal Litigation &amp; Procedure	book-chapter
+67	10.1007/3-540-44957-4_39	2000	10.1007/3-540-44957-4_39	An Application of Model Building in a Resolution Decision Procedure for Guarded Formulas	Lecture Notes in Computer Science	book-chapter
+68	10.4324/9781843143864-52	2000	10.4324/9781843143864-52	CHECKLIST SUMMARY OF UNIT 3	Criminal Litigation &amp; Procedure	book-chapter
+69	10.4324/9781843145684-93	2012	10.4324/9781843145684-93	APPEAL AGAINST AN ORDER FOR SUMMARY JUDGMENT	Civil Procedure	book-chapter
+70	10.4324/9781003370208-5	2024	10.4324/9781003370208-5	Summary trial	Criminal Procedure and Sentencing	book-chapter
+71	10.1201/b16235-29	2013	10.1201/b16235-29	Summary and Future Prospects	Compact Plasma and Focused Ion Beams	book-chapter
+72	10.1103/physreva.95.032135	2017	10.1103/physreva.95.032135	Generalized modular-value-based scheme and its generalized modular value	Physical Review A	journal-article
+73	10.2172/10158014	1994	10.2172/10158014	An annotated summary of the Information Model Design Procedure (IMDP)		report
+74	10.4324/9781351237260-5	2019	10.4324/9781351237260-5	Summary Trial	Criminal Procedure and Sentencing	book-chapter
+75	10.4324/9781843143864-23	2000	10.4324/9781843143864-23	CHECKLIST SUMMARY OF UNIT 1	Criminal Litigation &amp; Procedure	book-chapter
+76	10.3030/666423	2015	10.3030/666423			grant
+77	10.2307/j.ctt2204sbf.21	None	10.2307/j.ctt2204sbf.21	Samenvatting (Dutch summary)	Eight Human Skulls in a Dung Heap and More	book-chapter
+78	10.1007/978-3-540-25984-8_7	2004	10.1007/978-3-540-25984-8_7	A Resolution Decision Procedure for the Guarded Fragment with Transitive Guards	Lecture Notes in Computer Science	book-chapter
+79	10.1515/9783110599190-013	2018	10.1515/9783110599190-013	13. Locally compact groups with a modular subgroup lattice	Periodic Locally Compact Groups	book-chapter
+80	10.1007/978-3-642-33125-1_25	2012	10.1007/978-3-642-33125-1_25	Modular Heap Analysis for Higher-Order Programs	Lecture Notes in Computer Science	book-chapter
+81	10.1007/springerreference_15540	None	10.1007/springerreference_15540	guarded frequency	SpringerReference	reference-entry
+82	10.1093/he/9780198735717.003.2873	2015	10.1093/he/9780198735717.003.2873	24. Summary judgment	A Practical Approach to Civil Procedure	book-chapter
+83	10.46850/sofia.9783941627451	2015	10.46850/sofia.9783941627451	Compact Guidelines: Practical Procedure in Interdisciplinary Institutional Analysis		report
+84	10.2307/3172061	1991	10.2307/3172061	The Nigerian National Archives, Ibadan: An Introduction for Users and a Summary of Holdings	History in Africa	journal-article
+85	10.4324/9781843141914-11	2012	10.4324/9781843141914-11	Summary Judgment and Disposal	Practice Notes on County Court Procedure	book-chapter
+86	10.2307/1332121	1933	10.2307/1332121	Procedure. Summary Judgment. Extending Use of Motion for Summary Judgment to Defendant	Harvard Law Review	journal-article
+87	10.1109/tmech.2026.3694222/mm1	None	10.1109/tmech.2026.3694222/mm1	Spring-Based Tendon-Driven Continuum Robots for Compact Modular Designs in Endoluminal Applications_supp1-3694222.mp4		component
+88	10.2307/3171900	1994	10.2307/3171900	The Nigerian National Archives, Enugu: An Introduction for Users and Summary of Holdings	History in Africa	journal-article
+89	10.18574/nyu/9781479805938.003.0033	2022	10.18574/nyu/9781479805938.003.0033	Gender and Summary Judgment	A Guide to Civil Procedure	book-chapter
+90	10.1016/j.vlsi.2012.09.002	2013	10.1016/j.vlsi.2012.09.002	Fast, compact and symmetric modular exponentiation architecture by common-multiplicand Montgomery modular multiplications	Integration	journal-article
+91	10.1163/2468-5992_rose_com_0265	None	10.1163/2468-5992_rose_com_0265	The Chamber of Summary Procedure	Rosenne's Law and Practice of the International Court: 1920-2015	dataset
+92	10.1145/1273442.1250789	2007	10.1145/1273442.1250789	Practical memory leak detection using guarded value-flow analysis	ACM SIGPLAN Notices	journal-article
+93	10.1093/he/9780198714484.003.2873	2014	10.1093/he/9780198714484.003.2873	24. Summary judgment	A Practical Approach to Civil Procedure	book-chapter
+94	10.2307/3171986	1993	10.2307/3171986	The Nigerian National Archives, Kaduna: An Introduction for Users and a Summary of Holdings	History in Africa	journal-article
+95	10.2139/ssrn.3416886	2019	10.2139/ssrn.3416886	Federal Civil Procedure Summary (2019)	SSRN Electronic Journal	journal-article
+96	10.4324/9781843141167-35	2012	10.4324/9781843141167-35	THE NEW RULES ON SUMMARY JUDGMENT	Civil Procedure Rules in Action	book-chapter
+97	10.1109/vlsid.2018.71	2018	10.1109/vlsid.2018.71	Single-Error Hardened and Multiple-Error Tolerant Guarded Dual Modular Redundancy Technique	2018 31st International Conference on VLSI Design and 2018 17th International Conference on Embedded Systems (VLSID)	proceedings-article
+98	10.1017/cbo9780511666162.013	1995	10.1017/cbo9780511666162.013	Representations of unimodular, locally compact, totally discontinuous, separated, topological groups	Cohomology of Drinfeld Modular Varieties	other
+99	10.3726/978-3-653-06271-7/8	None	10.3726/978-3-653-06271-7/8	8. Summary and Conclusion	Value Creation of Corporate Restructuring	book-chapter
+100	10.32388/i0uja2	2020	10.32388/i0uja2	Trial Summary Parameter Value	Definitions	reference-entry

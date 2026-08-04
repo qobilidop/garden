@@ -1,0 +1,101 @@
+rank	source_id	year	doi	title	venue	type
+1	10.21203/rs.3.rs-3257081/v1	2023	10.21203/rs.3.rs-3257081/v1	Dynamic Partial Order Reduction Based on Interference Solution		posted-content
+2	10.1007/978-3-658-12680-3_4	2016	10.1007/978-3-658-12680-3_4	Dynamic Partial Order Reduction in Stateful Model Checking	Complete Symbolic Simulation of SystemC Models	book-chapter
+3	10.70675/f5fc5032zc27dz4fffza3cbzd9a01566f10d	None	10.70675/f5fc5032zc27dz4fffza3cbzd9a01566f10d	Partial order reduction for timed systems		dissertation
+4	10.1115/1.2801119	1995	10.1115/1.2801119	Well-Conditioned Observer Design for Observer-Based Monitoring Systems	Journal of Dynamic Systems, Measurement, and Control	journal-article
+5	10.1109/fmcad.2016.7886672	2016	10.1109/fmcad.2016.7886672	Hybrid partial order reduction with under-approximate dynamic points-to and determinacy information	2016 Formal Methods in Computer-Aided Design (FMCAD)	proceedings-article
+6	10.1145/3293882.3338987	2019	10.1145/3293882.3338987	Conditional dynamic partial order reduction and optimality results	Proceedings of the 28th ACM SIGSOFT International Symposium on Software Testing and Analysis	proceedings-article
+7	10.1145/1047659.1040315	2005	10.1145/1047659.1040315	Dynamic partial-order reduction for model checking software	ACM SIGPLAN Notices	journal-article
+8	10.1115/imece1996-0342	1996	10.1115/imece1996-0342	Discrete-Time Well-Conditioned State Observer Design and Evaluation	Dynamic Systems and Control	proceedings-article
+9	10.1145/2578855.2535845	2014	10.1145/2578855.2535845	Optimal dynamic partial order reduction	ACM SIGPLAN Notices	journal-article
+10	10.1145/2813885.2737956	2015	10.1145/2813885.2737956	Dynamic partial order reduction for relaxed memory models	ACM SIGPLAN Notices	journal-article
+11	10.1145/1040305.1040315	2005	10.1145/1040305.1040315	Dynamic partial-order reduction for model checking software	Proceedings of the 32nd ACM SIGPLAN-SIGACT symposium on Principles of programming languages	proceedings-article
+12	10.1515/9783111636146-010	2025	10.1515/9783111636146-010	10 Reduction of some partial dynamic equations	Partial Dynamic Equations	book-chapter
+13	10.1515/9783111636146-001	2025	10.1515/9783111636146-001	1 Classification of second-order partial dynamic equations	Partial Dynamic Equations	book-chapter
+14	10.7763/ijmo.2014.v4.380	2014	10.7763/ijmo.2014.v4.380	Partial Order Reduction for Verification of WS-BPEL	International Journal of Modeling and Optimization	journal-article
+15	10.1007/978-3-642-35632-2_4	2013	10.1007/978-3-642-35632-2_4	Scalable Dynamic Partial Order Reduction	Lecture Notes in Computer Science	book-chapter
+16	10.1145/2535838.2535845	2014	10.1145/2535838.2535845	Optimal dynamic partial order reduction	Proceedings of the 41st ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages	proceedings-article
+17	10.1007/978-3-540-85361-9_21	2008	10.1007/978-3-540-85361-9_21	Dynamic Partial Order Reduction Using Probe Sets	Lecture Notes in Computer Science	book-chapter
+18	10.1007/978-3-540-73370-6_6	None	10.1007/978-3-540-73370-6_6	Distributed Dynamic Partial Order Reduction Based Verification of Threaded Software	Lecture Notes in Computer Science	book-chapter
+19	10.1007/978-3-540-85114-1_20	None	10.1007/978-3-540-85114-1_20	Efficient Stateful Dynamic Partial Order Reduction	Lecture Notes in Computer Science	book-chapter
+20	10.26226/morressier.604907f51a80aac83ca25d7e	2021	10.26226/morressier.604907f51a80aac83ca25d7e	Partial Order Reduction for Deep Bug Finding in Synchronous Hardware		posted-content
+21	10.1145/3360550	2019	10.1145/3360550	Value-centric dynamic partial order reduction	Proceedings of the ACM on Programming Languages	journal-article
+22	10.1145/2642937.2642998	2014	10.1145/2642937.2642998	Assertion guided abstraction	Proceedings of the 29th ACM/IEEE International Conference on Automated Software Engineering	proceedings-article
+23	10.1145/2737924.2737956	2015	10.1145/2737924.2737956	Dynamic partial order reduction for relaxed memory models	Proceedings of the 36th ACM SIGPLAN Conference on Programming Language Design and Implementation	proceedings-article
+24	10.1007/11901433_9	2006	10.1007/11901433_9	Stateful Dynamic Partial-Order Reduction	Lecture Notes in Computer Science	book-chapter
+25	10.70675/138dc2a5zc12az40e9zab61zddbb416de5a2	None	10.70675/138dc2a5zc12az40e9zab61zddbb416de5a2	Stateful partial-order reduction methods for concurrent systems with blocking instructions		dissertation
+26	10.1145/3364452.3364457	2019	10.1145/3364452.3364457	A Sound Dynamic Partial Order Reduction Engine for Java Pathfinder	ACM SIGSOFT Software Engineering Notes	journal-article
+27	10.26226/morressier.604907f51a80aac83ca25d72	2021	10.26226/morressier.604907f51a80aac83ca25d72	The Inconsistent Labelling Problem of Stutter-Preserving Partial-Order Reduction		posted-content
+28	10.1007/978-3-319-10575-8_6	2018	10.1007/978-3-319-10575-8_6	Partial-Order Reduction	Handbook of Model Checking	book-chapter
+29	10.1145/3498711	2022	10.1145/3498711	Truly stateless, optimal dynamic partial order reduction	Proceedings of the ACM on Programming Languages	journal-article
+30	10.1016/s0304-3975(01)00234-1	2002	10.1016/s0304-3975(01)00234-1	Partial order semantics and read arcs	Theoretical Computer Science	journal-article
+31	10.48137/2074-2975_2023_6_22	2024	10.48137/2074-2975_2023_6_22	The future of the world order until 2035 22	Обозреватель–Observer	journal-article
+32	10.1145/3158119	2018	10.1145/3158119	Data-centric dynamic partial order reduction	Proceedings of the ACM on Programming Languages	journal-article
+33	10.1109/eurcon.2007.4400332	2007	10.1109/eurcon.2007.4400332	Model Reduction of Ill-Conditioned Systems: Second Order vs. First Order Reductions	"EUROCON 2007 - The International Conference on ""Computer as a Tool"""	proceedings-article
+34	10.1145/3073408	2017	10.1145/3073408	Source Sets	Journal of the ACM	journal-article
+35	10.1145/3551349.3561159	2022	10.1145/3551349.3561159	Prioritized Constraint-Aided Dynamic Partial-Order Reduction	Proceedings of the 37th IEEE/ACM International Conference on Automated Software Engineering	proceedings-article
+36	10.1145/1273647.1273657	2007	10.1145/1273647.1273657	Semantics driven dynamic partial-order reduction of MPI-based parallel programs	Proceedings of the 2007 ACM workshop on Parallel and distributed systems: testing and debugging	proceedings-article
+37	10.1515/9783111636146-002	2025	10.1515/9783111636146-002	2 Classification and canonical forms for linear second-order partial dynamic equations in two independent variables	Partial Dynamic Equations	book-chapter
+38	10.1007/978-1-4471-3827-3_1	2004	10.1007/978-1-4471-3827-3_1	Introduction to Dynamic Model Reduction Techniques	Model Order Reduction Techniques	book-chapter
+39	10.22541/au.164156989.91161869/v1	2022	10.22541/au.164156989.91161869/v1	Composite Observer-Based Adaptive Dynamic Surface Control for Fractional-Order Nonlinear Systems with Input Saturation		posted-content
+40	10.1145/3591243	2023	10.1145/3591243	Dynamic Partial Order Reduction for Checking Correctness against Transaction Isolation Levels	Proceedings of the ACM on Programming Languages	journal-article
+41	10.1115/1.1409553	2001	10.1115/1.1409553	Discrete-Time Well-Conditioned State Observer Design and Evaluation	Journal of Dynamic Systems, Measurement, and Control	journal-article
+42	10.1016/s0079-8169(08)61521-4	1975	10.1016/s0079-8169(08)61521-4	18 Reduction of Higher Order Systems to First-Order Systems	Pure and Applied Mathematics	book-chapter
+43	10.23919/ecc.2007.7068215	2007	10.23919/ecc.2007.7068215	Observer based LQ optimal boundary control of 2D heat flow by order reduction	2007 European Control Conference (ECC)	proceedings-article
+44	10.1021/acs.orglett.6b02910.s001	None	10.1021/acs.orglett.6b02910.s001	Synthesis of the GPR40 Partial Agonist MK-8666 through a Kinetically Controlled Dynamic Enzymatic Ketone Reduction		component
+45	10.1145/3603288.3603296	2024	10.1145/3603288.3603296	Approximate Partial Order Reduction	Formal Methods for Safe Autonomy	book-chapter
+46	10.1109/acc.2013.6579887	2013	10.1109/acc.2013.6579887	Control of dissipative partial differential equation systems using APOD based dynamic observer designs	2013 American Control Conference	proceedings-article
+47	10.1007/978-3-642-02658-4_31	2009	10.1007/978-3-642-02658-4_31	Monotonic Partial Order Reduction: An Optimal Symbolic Partial Order Reduction Technique	Lecture Notes in Computer Science	book-chapter
+48	10.1017/cbo9780511541117.007	2007	10.1017/cbo9780511541117.007	Terminal reduction of linear dynamic circuits	Advanced Model Order Reduction Techniques in VLSI Design	book-chapter
+49	10.1007/s10009-010-0144-z	2010	10.1007/s10009-010-0144-z	Distributed dynamic partial order reduction	International Journal on Software Tools for Technology Transfer	journal-article
+50	10.1007/978-3-642-12029-9_22	2010	10.1007/978-3-642-12029-9_22	Evaluating Ordering Heuristics for Dynamic Partial-Order Reduction Techniques	Lecture Notes in Computer Science	book-chapter
+51	10.23860/diss-3297	None	10.23860/diss-3297	CONDITIONED REINFORCEMENT: ORDER OUT OF CHAOS (SECONDARY CONDITIONED INCENTIVES, INTRA-CRANIAL STIMULATION)		dissertation
+52	10.26226/morressier.604907f51a80aac83ca25d81	2021	10.26226/morressier.604907f51a80aac83ca25d81	Partial-Order Reduction for Parity Games with an Application on Parameterised Boolean Equation Systems		posted-content
+53	10.1080/00207179.2014.906071	2014	10.1080/00207179.2014.906071	Reduced-order dynamic observer error linearisation: a natural extension of observer error linearisation	International Journal of Control	journal-article
+54	10.14293/p2199-8442.1.sop-eng.ptp8ds.v1	2016	10.14293/p2199-8442.1.sop-eng.ptp8ds.v1	Model order reduction of dynamic skeletal muscle models		posted-content
+55	10.1016/s0167-6911(84)80052-3	1984	10.1016/s0167-6911(84)80052-3	Reduction of observer order by differentiation, almost controllability subspace covers and minimal order PID-observers	Systems &amp; Control Letters	journal-article
+56	10.1090/dimacs/029/13	1997	10.1090/dimacs/029/13	Partial order reduction: Linear and branching temporal logics and process algebras	DIMACS Series in Discrete Mathematics and Theoretical Computer Science	book-chapter
+57	10.1007/978-1-4471-3827-3_5	2004	10.1007/978-1-4471-3827-3_5	Dynamic Condensation	Model Order Reduction Techniques	book-chapter
+58	10.1007/bfb0065029	1982	10.1007/bfb0065029	Sectorial second order differential operators	Lecture Notes in Mathematics	book-chapter
+59	10.1016/j.jss.2023.111730	2023	10.1016/j.jss.2023.111730	Optimal dynamic partial order reduction with context-sensitive independence and observers	Journal of Systems and Software	journal-article
+60	10.1145/3293882.3330565	2019	10.1145/3293882.3330565	Optimal context-sensitive dynamic partial order reduction with observers	Proceedings of the 28th ACM SIGSOFT International Symposium on Software Testing and Analysis	proceedings-article
+61	10.1109/sas.2009.4801801	2009	10.1109/sas.2009.4801801	Using dynamic partial reconfiguration approach to read sensor with different bus protocol	2009 IEEE Sensors Applications Symposium	proceedings-article
+62	10.1109/mcs.2016.2621483	2017	10.1109/mcs.2016.2621483	Are All Full-Order Dynamic Compensators Observer Based? [Lecture Notes]	IEEE Control Systems	journal-article
+63	10.1109/vss.2008.4570723	2008	10.1109/vss.2008.4570723	High order dynamic neuro observer: application for ozone generator	2008 International Workshop on Variable Structure Systems	proceedings-article
+64	10.23860/diss-harris-robert-1985	None	10.23860/diss-harris-robert-1985	Conditioned Reinforcement: Order Out of Chaos		dissertation
+65	10.1007/3-540-18420-1_58	1987	10.1007/3-540-18420-1_58	Controlling reduction partial order in functional parallel programs	Lecture Notes in Computer Science	book-chapter
+66	10.30819/4910	2019	10.30819/4910	Dynamic iteration and model order reduction for magneto-quasistatic systems		monograph
+67	10.23919/ecc.1999.7099732	1999	10.23919/ecc.1999.7099732	Order reduction with partial ARMA-modeling	1999 European Control Conference (ECC)	proceedings-article
+68	10.1115/1.1789533	2004	10.1115/1.1789533	Minimal Order Nonlinear Observer for Leak Detection	Journal of Dynamic Systems, Measurement, and Control	journal-article
+69	10.1109/icc69100.2025.11372270	2025	10.1109/icc69100.2025.11372270	Dynamic event-triggered implementation of robust control using higher-order sliding mode observer	2025 Eleventh Indian Control Conference (ICC)	proceedings-article
+70	10.1007/978-3-319-17524-9_35	2015	10.1007/978-3-319-17524-9_35	Reporting Races in Dynamic Partial Order Reduction	Lecture Notes in Computer Science	book-chapter
+71	10.1007/978-3-031-37706-8_12	2023	10.1007/978-3-031-37706-8_12	Unblocking Dynamic Partial Order Reduction	Lecture Notes in Computer Science	book-chapter
+72	10.2172/1475503	2018	10.2172/1475503	Model Order Reduction of Nonviscously Damped Structural Dynamic Models		report
+73	10.1007/bfb0029994	1997	10.1007/bfb0029994	Partial order semantics and read arcs	Lecture Notes in Computer Science	book-chapter
+74	10.1007/978-3-658-12680-3_3	2016	10.1007/978-3-658-12680-3_3	Static Partial Order Reduction in Stateful Model Checking	Complete Symbolic Simulation of SystemC Models	book-chapter
+75	10.20944/preprints202405.0526.v1	2024	10.20944/preprints202405.0526.v1	Dynamic Output Feedback of Second-Order Systems: An Observer-Based Controller with LMI Design		posted-content
+76	10.1299/jsmecmd.2011.24._f-58_	2011	10.1299/jsmecmd.2011.24._f-58_	F406 Monte Carlo Simulation of dynamic problem using Model Order Reduction Technique	The Proceedings of The Computational Mechanics Conference	journal-article
+77	10.3233/978-1-61499-870-9-569	2018	10.3233/978-1-61499-870-9-569	Model Order Reduction by Means of Active Subspaces and Dynamic Mode Decomposition for Parametric Hull Shape Design Hydrodynamics	Technology and Science for the Ships of the Future	book-chapter
+78	10.1109/cpe.2015.7231080	2015	10.1109/cpe.2015.7231080	Chattering reduction applied in PMSM sensorless control using Second Order Sliding Mode observer	2015 9th International Conference on Compatibility and Power Electronics (CPE)	proceedings-article
+79	10.1109/icsc58660.2023.10449817	2023	10.1109/icsc58660.2023.10449817	Reduced-Order Observer Design for Time-Delay Systems Using Partial Pole Placement	2023 IEEE 11th International Conference on Systems and Control (ICSC)	proceedings-article
+80	10.1080/03605309108820799	1991	10.1080/03605309108820799	Reduction of order for pseudodifferential operators on lipschitz domains	Communications in Partial Differential Equations	journal-article
+81	10.1007/978-1-4471-3827-3_6	2004	10.1007/978-1-4471-3827-3_6	Iterative Methods for Dynamic Condensation	Model Order Reduction Techniques	book-chapter
+82	10.1007/978-3-642-30793-5_14	2012	10.1007/978-3-642-30793-5_14	TransDPOR: A Novel Dynamic Partial-Order Reduction Technique for Testing Actor Programs	Lecture Notes in Computer Science	book-chapter
+83	10.1007/978-3-540-73370-6_8	None	10.1007/978-3-540-73370-6_8	Cartesian Partial-Order Reduction	Lecture Notes in Computer Science	book-chapter
+84	10.1109/vss.2008.4570724	2008	10.1109/vss.2008.4570724	Reduced-order observer for dynamic output feedback of variable-structure control systems	2008 International Workshop on Variable Structure Systems	proceedings-article
+85	10.1109/ase.2001.989810	None	10.1109/ase.2001.989810	Enhancing partial-order reduction via process clustering	Proceedings 16th Annual International Conference on Automated Software Engineering (ASE 2001)	proceedings-article
+86	10.3182/20100901-3-it-2016.00285	2010	10.3182/20100901-3-it-2016.00285	Reduced-order Dynamic Observer Error Linearization	IFAC Proceedings Volumes	journal-article
+87	10.1007/978-1-4471-3827-3_8	2004	10.1007/978-1-4471-3827-3_8	Dynamic Condensation of Nonclassically Damped Models	Model Order Reduction Techniques	book-chapter
+88	10.7717/peerj.4506/fig-5	None	10.7717/peerj.4506/fig-5	Figure 5: Partial secretome analysis of conditioned media from LS 174T cell lines.		component
+89	10.3182/20080706-5-kr-1001.01306	2008	10.3182/20080706-5-kr-1001.01306	Partial-order reduction of observers for linear systems	IFAC Proceedings Volumes	journal-article
+90	10.1007/978-981-97-1654-8_5	2024	10.1007/978-981-97-1654-8_5	Variable-Order Observer-Based Fault Tolerant Control for Aircraft with Partial Actuator and Sensor Failures	Fault Tolerant Control of Large Civil Aircraft	book-chapter
+91	10.5194/ems2026-376	2026	10.5194/ems2026-376	Projected  future changes in mean and extreme daily precipitation in France conditioned on large-scale thermodynamic and dynamic drivers		posted-content
+92	10.1037/e527342012-211	2007	10.1037/e527342012-211	Parallels Between Second-Order Conditioned Excitation and Conditioned Inhibition	PsycEXTRA Dataset	dataset
+93	10.1080/00207178108922556	1981	10.1080/00207178108922556	On the design of optimal dynamic controllers using the partial state observer	International Journal of Control	journal-article
+94	10.1115/1.4070255	2026	10.1115/1.4070255	Observer-Based Output Regulation for an Uncertain Parabolic Partial Differential Equation	Journal of Dynamic Systems, Measurement, and Control	journal-article
+95	10.1016/b978-0-08-092582-0.50010-3	1992	10.1016/b978-0-08-092582-0.50010-3	Systems Modeled by First Order Partial Differential Equations	Dynamic Modeling of Transport Process Systems	book-chapter
+96	10.1002/9781118387726.ch13	2012	10.1002/9781118387726.ch13	Fractional Order Disturbance Observer	Fractional Order Motion Controls	other
+97	10.1016/b978-0-08-092582-0.50011-5	1992	10.1016/b978-0-08-092582-0.50011-5	Systems Modeled by Second Order Partial Differential Equations	Dynamic Modeling of Transport Process Systems	book-chapter
+98	10.1109/cdc.2012.6426824	2012	10.1109/cdc.2012.6426824	Reduced-order dynamic observer error linearization for discrete-time systems	2012 IEEE 51st IEEE Conference on Decision and Control (CDC)	proceedings-article
+99	10.1115/imece2002-33544	2002	10.1115/imece2002-33544	A Reduced-Order Observer Based Piezoelectric Control of Flexible Cartesian (SCARA) Robot Manipulator	Dynamic Systems and Control	proceedings-article
+100	10.1016/j.ins.2014.06.006	2014	10.1016/j.ins.2014.06.006	Partial order reduction for checking soundness of time workflow nets	Information Sciences	journal-article

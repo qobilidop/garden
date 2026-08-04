@@ -934,6 +934,59 @@ If round 29 reopens the map, round 30 is retired unexecuted. If both qualify,
 they establish the required two-round no-add sequence only for the recorded
 sources, exact queries, captured rankings, date, and frozen trigger.
 
+## Outcome of round 29 and retirement of round 30
+
+Round 29 is not a no-add round. The primary screener and an independent
+adversarial reviewer each parsed and title-screened all 1,200 occurrences. All
+twelve snapshots contain exactly 100 unique source identifiers and ranks
+1--100. Across queries there are 1,078 unique identifiers and 985 unique
+nonblank normalized titles. Eight blank titles were resolved as research
+grants or supplemental datasets rather than technical publications.
+
+The strongest additions are close but remain distinguishable from the target:
+
+- exact preprocessing conditional values avoid directive-path enumeration;
+- path-minimal objects synthesize only the fields required for one selected
+  path, while postconditioned execution exactly prunes path suffixes already
+  covered by prior weakest-precondition summaries;
+- relatively complete higher-order symbolic execution decomposes unknown
+  functions and reconstructs concrete functional counterexamples;
+- maximum-causality, reads-from, release-acquire, and value-happens-before
+  quotients retain nonredundant concurrent executions under progressively
+  coarser observation relations; and
+- dynamic interface reduction omits internal component behavior that cannot
+  propagate to the discovered external interface.
+
+Bounded case-optimal heap exploration, symmetry-canonical Petri markings,
+correction-qualified timed marking estimation, candidate-event generation for
+digital-twin checking, and shared property-specific cone computation provide
+supporting boundaries. DOI container and journal aliases were adjudicated
+once. Abstract-only and application-level evidence is not promoted to an exact
+semantic theorem.
+
+These additions satisfy the deliberately broad close-competitor trigger, even
+though they fit established conditional-value, symbolic-input, state-
+subsumption, schedule-quotient, and finite-observer clusters. Round 30's
+precondition therefore failed; it is retired unexecuted and cannot count
+toward closure.
+
+Six bounded critical-neighborhood chases then screened 366 further records:
+218 primary-complete backward references and 148 exact-DOI forward citations.
+The backward bibliographies were checked against the complete primary full
+texts or, for the recent path-minimal-object paper, a contiguous 16-entry IEEE
+publisher deposit. The chases added the earlier exact conditional-compilation
+line, observation-specific DSE redundancy detection, higher-order contract and
+bounded game semantics, weak-memory and dependency-guided maximal-causality
+variants, and adjacent JavaScript heap-execution systems. OpenCitations
+returned no forward citation for the 2025 path-minimal-object paper; that
+recent-work zero is recorded but is not treated as saturation evidence.
+Publication aliases and one misleading self-DOI mapping for a cited CoRR
+preprint were corrected rather than counted as distinct works.
+
+Because these citation neighborhoods also reopened the map, the next two
+prospective rounds are frozen only after this reconciliation. Neither round
+29 nor retired round 30 contributes to the eventual two-round no-add sequence.
+
 ## Independent audit
 
 After both replacement rounds qualify, a reviewer who did not choose the

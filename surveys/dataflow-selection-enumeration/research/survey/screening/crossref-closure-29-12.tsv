@@ -1,0 +1,101 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1109/icpp.1993.66	1993	10.1109/icpp.1993.66	Dataflow Graph Optimization for Dataflow Architectures a Dataflow Otimizing Compiler	1993 International Conference on Parallel Processing - ICPP'93 Vol2	proceedings-article
+2	10.2307/30134435	1988	10.2307/30134435	Input on Leucocytozoonosis Requested	AAV Today	journal-article
+3	10.2172/764038	1998	10.2172/764038	Visualizing Macro-Dataflow Graph Final Report CRADA No. TSB-0725-93		report
+4	10.21236/ada428029	2004	10.21236/ada428029	DIF - A Language for Dataflow Graph Specification and Exchange		report
+5	10.1002/scj.4690270402	1996	10.1002/scj.4690270402	A compiling technique for dataflow machines — new algorithm for optimum translation from control flow graph into dataflow graph	Systems and Computers in Japan	journal-article
+6	10.5194/egusphere-egu24-7528	2025	10.5194/egusphere-egu24-7528	Increasing root-derived soil carbon input to agricultural soils by variety selection of winter wheat		posted-content
+7	10.3724/sp.j.1087.2011.00935	2011	10.3724/sp.j.1087.2011.00935	Operation partitioning for heterogeneous VLIW DSP based on dataflow graph	Journal of Computer Applications	journal-article
+8	10.2139/ssrn.4460028	2023	10.2139/ssrn.4460028	Mipa-Resgcn: A Multi-Input Part Attention Based Residual Graph Convolution Framework for Sign Language Recognition		posted-content
+9	10.2139/ssrn.6875241	2026	10.2139/ssrn.6875241	Graph as App: A GPU Dataflow Substrate for Domain-Agnostic Living Networks		posted-content
+10	10.1109/spl.2007.371755	2007	10.1109/spl.2007.371755	Execution of Algorithms Using a Dynamic Dataflow Model for Reconfigurable Hardware - Commands in Dataflow Graph	2007 3rd Southern Conference on Programmable Logic	proceedings-article
+11	10.2172/1426077	2018	10.2172/1426077	Visualizing Macro-Dataflow Graph Final Report CRADA No. TSB-0725-93		report
+12	10.1016/j.automatica.2013.07.021	2013	10.1016/j.automatica.2013.07.021	Input addition and leader selection for the controllability of graph-based systems	Automatica	journal-article
+13	10.1145/378267.378315	1988	10.1145/378267.378315	Update requested for arts education directory	ACM SIGGRAPH Computer Graphics	journal-article
+14	10.1109/secon.1993.465763	None	10.1109/secon.1993.465763	An advanced dataflow processor architecture based on a multiple input node concept	Proceedings of Southeastcon '93	proceedings-article
+15	10.7717/peerj-cs.2717/table-2	None	10.7717/peerj-cs.2717/table-2	Table 2: Comparison of nodes and edges between event graph (EG) and Periodic Event Graph (PEG) with residual nodes, classified as simple residual nodes (SR) or periodic residual nodes (PR), leading to various event graph variations.		component
+16	10.1029/97eo00190	1997	10.1029/97eo00190	Community input requested	Eos, Transactions American Geophysical Union	journal-article
+17	10.1145/2523616.2525962	2013	10.1145/2523616.2525962	Pregelix	Proceedings of the 4th annual Symposium on Cloud Computing	proceedings-article
+18	10.1016/0026-2714(87)90819-5	1987	10.1016/0026-2714(87)90819-5	Reliability analysis of computer systems using dataflow graph models	Microelectronics Reliability	journal-article
+19	10.1145/142920.134087	1992	10.1145/142920.134087	CONDOR: constraint-based dataflow	ACM SIGGRAPH Computer Graphics	journal-article
+20	10.1364/ofs.2018.wf53	2018	10.1364/ofs.2018.wf53	Mitigation of Output Fluctuations due to Residual State of Input Polarization in a Compact Current Sensor	26th International Conference on Optical Fiber Sensors	proceedings-article
+21	10.1145/2072274.2072278	2011	10.1145/2072274.2072278	Model checking dataflow for malicious input	Proceedings of the Workshop on Embedded Systems Security	proceedings-article
+22	10.1007/978-3-319-15401-5_9	2016	10.1007/978-3-319-15401-5_9	Selection of Luting Materials for Bonding Fiber Posts	Restoration of Root Canal-Treated Teeth	book-chapter
+23	10.7717/peerj-cs.940/table-2	None	10.7717/peerj-cs.940/table-2	Table 2: Selection of input differentials using input spread variable C.		component
+24	10.1007/978-3-319-66128-5_2	2017	10.1007/978-3-319-66128-5_2	Discrepancy Reduction Between the Topology of Dataflow Graph and the Topology of FPGA Structure	Computer Communications and Networks	book-chapter
+25	10.7717/peerjcs.1788/fig-2	None	10.7717/peerjcs.1788/fig-2	Figure 2: The graph key words input tokens.		component
+26	10.1109/sips50750.2020.9195261	2020	10.1109/sips50750.2020.9195261	Graph Coordination for Compact Representation of Regular Dataflow Structures	2020 IEEE Workshop on Signal Processing Systems (SiPS)	proceedings-article
+27	10.1145/204362.204364	1995	10.1145/204362.204364	apE—the original dataflow visualization environment	ACM SIGGRAPH Computer Graphics	journal-article
+28	10.1109/icassp.1997.599865	None	10.1109/icassp.1997.599865	Code generation by using integer-controlled dataflow graph	1997 IEEE International Conference on Acoustics, Speech, and Signal Processing	proceedings-article
+29	10.1109/iscas.2006.1692708	None	10.1109/iscas.2006.1692708	System-level verification on high-level synthesis of dataflow graph	2006 IEEE International Symposium on Circuits and Systems	proceedings-article
+30	10.1109/fpl.2012.6339265	2012	10.1109/fpl.2012.6339265	Dataflow graph partitioning for high level synthesis	22nd International Conference on Field Programmable Logic and Applications (FPL)	proceedings-article
+31	10.3390/en18205474	2025	10.3390/en18205474	Self-Supervised Condition Monitoring for Wind Turbine Gearboxes Based on Adaptive Feature Selection and Contrastive Residual Graph Neural Network	Energies	journal-article
+32	10.1049/iet-com.2012.0644	2013	10.1049/iet-com.2012.0644	Graph‐based low complexity detection algorithms in multiple‐input–multiple‐out systems: an edge selection approach	IET Communications	journal-article
+33	10.1016/0167-8191(92)90098-r	1992	10.1016/0167-8191(92)90098-r	Area optimization of dataflow-graph mappings	Parallel Computing	journal-article
+34	10.1364/cleo_si.2012.cf3i.2	2012	10.1364/cleo_si.2012.cf3i.2	Dynamic Detector Selection for Multiple-Input Multiple-Output (MIMO) Multimode Fiber Links	Conference on Lasers and Electro-Optics 2012	proceedings-article
+35	10.1021/ed077p296	2000	10.1021/ed077p296	Input Requested for a History of the Division of Chemical Education	Journal of Chemical Education	journal-article
+36	10.1109/ipdpsw59300.2023.00147	2023	10.1109/ipdpsw59300.2023.00147	Optimizing the Critical Path of Distributed Dataflow Graph Algorithms	2023 IEEE International Parallel and Distributed Processing Symposium Workshops (IPDPSW)	proceedings-article
+37	10.1109/cmpeur.1991.257371	None	10.1109/cmpeur.1991.257371	On reducing the dataflow-graph hosting area	[1991] Proceedings, Advanced Computer Technology, Reliable Systems and Applications	proceedings-article
+38	10.1109/acqed.2015.7274006	2015	10.1109/acqed.2015.7274006	SynDFG: Synthetic dataflow graph generator for high-level synthesis	2015 6th Asia Symposium on Quality Electronic Design (ASQED)	proceedings-article
+39	10.7717/peerj.4844/table-9	None	10.7717/peerj.4844/table-9	Table 9: Gal4 variant prediction performance with residual profile vector input attributes.		component
+40	10.20944/preprints202307.0848.v1	2023	10.20944/preprints202307.0848.v1	Graph-Root: Prediction of Root-Associated Proteins in Plants Based on Graph Convolutional Network and Network Embedding Method		posted-content
+41	10.1109/isss.1998.730615	None	10.1109/isss.1998.730615	Memory efficient software synthesis from dataflow graph	Proceedings. 11th International Symposium on System Synthesis (Cat. No.98EX210)	proceedings-article
+42	10.15690/vramn17390-145689	None	10.15690/vramn17390-145689	Fig. 7. Graph contours surrounding the root concept		component
+43	10.1016/j.compeleceng.2023.109009	2023	10.1016/j.compeleceng.2023.109009	MIPA-ResGCN: a multi-input part attention enhanced residual graph convolutional framework for sign language recognition	Computers and Electrical Engineering	journal-article
+44	10.1109/rndm48015.2019.8949149	2019	10.1109/rndm48015.2019.8949149	Resilient Dataflow Graph Embedding for Programmable Software Switches	2019 11th International Workshop on Resilient Networks Design and Modeling (RNDM)	proceedings-article
+45	10.1109/access.2026.3699629	2026	10.1109/access.2026.3699629	Physics–Causality Coupled Residual Graph Attention Networks (PCCResGAT) for Anomaly Detection and Root-Cause Localization in Distribution Grids	IEEE Access	journal-article
+46	10.1007/978-3-030-13803-5_1	2019	10.1007/978-3-030-13803-5_1	Method of Big-Graph Partitioning Using a Skeleton Graph	Computer Communications and Networks	book-chapter
+47	10.1364/ofc.2026.th1i.2	2026	10.1364/ofc.2026.th1i.2	Continuous-Oriented Edge Flow Graph Model for Root Alarm Identification in Optical Network	Optical Fiber Communication Conference (OFC) 2026	proceedings-article
+48	10.1109/icdcs.2017.150	2017	10.1109/icdcs.2017.150	Towards Dataflow-Based Graph Accelerator	2017 IEEE 37th International Conference on Distributed Computing Systems (ICDCS)	proceedings-article
+49	10.1007/s11432-017-9226-8	2017	10.1007/s11432-017-9226-8	Towards dataflow based graph processing	Science China Information Sciences	journal-article
+50	10.1109/sips.2010.5624821	2010	10.1109/sips.2010.5624821	Scalable representation of dataflow graph structures using topological patterns	2010 IEEE Workshop On Signal Processing Systems	proceedings-article
+51	10.1021/acs.jafc.0c06796.s001	None	10.1021/acs.jafc.0c06796.s001	Selection of DNA Aptamers for Root Exudate lSerine Using Multiple Selection Strategies		component
+52	10.1109/isss.2000.874032	None	10.1109/isss.2000.874032	Efficient hardware controller synthesis for synchronous dataflow graph in system level design	Proceedings 13th International Symposium on System Synthesis	proceedings-article
+53	10.1145/3302424.3303953	2019	10.1145/3302424.3303953	Supporting Very Large Models using Automatic Dataflow Graph Partitioning	Proceedings of the Fourteenth EuroSys Conference 2019	proceedings-article
+54	10.1109/samos.2016.7818351	2016	10.1109/samos.2016.7818351	Automated dataflow graph merging	2016 International Conference on Embedded Computer Systems: Architectures, Modeling and Simulation (SAMOS)	proceedings-article
+55	10.7554/elife.33962.004	None	10.7554/elife.33962.004	Figure 2—source data 1. Input data for bar graph Figure 2J.		component
+56	10.7554/elife.33934.016	None	10.7554/elife.33934.016	Figure 5—source data 1. Input data for bar graph Figure 5B.		component
+57	10.1007/s11104-023-06068-6	2023	10.1007/s11104-023-06068-6	Increasing root biomass derived carbon input to agricultural soils by genotype selection – a review	Plant and Soil	journal-article
+58	10.7554/elife.33962.019	None	10.7554/elife.33962.019	Figure 7—source data 1. Input data for bar graph Figure 7M.		component
+59	10.7554/elife.38181.008	None	10.7554/elife.38181.008	Figure 1—source data 1. Input data for bar graph Figure 1E.		component
+60	10.22456/2175-2745.25210	2013	10.22456/2175-2745.25210	A Graph Grammar to Transform a Dataflow Graph into a Multithread Graph and its Application in Task Scheduling	Revista de Informática Teórica e Aplicada	journal-article
+61	10.7554/elife.33934.007	None	10.7554/elife.33934.007	Figure 2—source data 1. Input data for bar graph Figure 2H.		component
+62	10.7554/elife.38181.019	None	10.7554/elife.38181.019	Figure 5—source data 1. Input data for bar graph Figure 5C.		component
+63	10.7554/elife.38181.014	None	10.7554/elife.38181.014	Figure 3—source data 1. Input data for bar graph Figure 3E.		component
+64	10.5194/gmd-2019-24-rc2	2019	10.5194/gmd-2019-24-rc2	Requested review		peer-review
+65	10.1109/cgc.2012.23	2012	10.1109/cgc.2012.23	Performance Model for Parallel Matrix Multiplication with Dryad: Dataflow Graph Runtime	2012 Second International Conference on Cloud and Green Computing	proceedings-article
+66	10.5194/cp-2017-28-rc1	2017	10.5194/cp-2017-28-rc1	Requested Review		peer-review
+67	10.1109/sips.2018.8598305	2018	10.1109/sips.2018.8598305	Generalized Graph Connections for Dataflow Modeling of DSP Applications	2018 IEEE International Workshop on Signal Processing Systems (SiPS)	proceedings-article
+68	10.1109/acssc.1996.599166	None	10.1109/acssc.1996.599166	Synthesis of parallel hardware implementations from synchronous dataflow graph specifications	Conference Record of The Thirtieth Asilomar Conference on Signals, Systems and Computers	proceedings-article
+69	10.1145/1180495.1180547	2006	10.1145/1180495.1180547	Extending the scene graph with a dataflow visualization system	Proceedings of the ACM symposium on Virtual reality software and technology	proceedings-article
+70	10.1145/2463209.2488736	2013	10.1145/2463209.2488736	Liveness evaluation of a cyclo-static DataFlow graph	Proceedings of the 50th Annual Design Automation Conference	proceedings-article
+71	10.1145/2847263.2847337	2016	10.1145/2847263.2847337	GraphOps	Proceedings of the 2016 ACM/SIGDA International Symposium on Field-Programmable Gate Arrays	proceedings-article
+72	10.1109/tr.1986.4335538	1986	10.1109/tr.1986.4335538	Reliability Analysis of Computer Systems Using Dataflow Graph Models	IEEE Transactions on Reliability	journal-article
+73	10.1109/cgo68049.2026.11395219	2026	10.1109/cgo68049.2026.11395219	GRANII: Selection and Ordering of Primitives in GRAph Neural Networks using Input Inspection	2026 IEEE/ACM International Symposium on Code Generation and Optimization (CGO)	proceedings-article
+74	10.7554/elife.33934.011	None	10.7554/elife.33934.011	Figure 3—source data 1. Input data for bar graph Figure 3K,L.		component
+75	10.1021/acs.jcim.5c00445.s001	None	10.1021/acs.jcim.5c00445.s001	Smart Reaction Templating: A Graph-Based Method for Automated Molecular Dynamics Input Generation		component
+76	10.3403/30192868u	None	10.3403/30192868u	Ergonomics of human-system interaction		standard
+77	10.7554/elife.33934.019	None	10.7554/elife.33934.019	Figure 6—source data 1. Input data for bar graph Figure 6E,J.		component
+78	10.1016/j.yofte.2025.104243	2025	10.1016/j.yofte.2025.104243	Requested bandwidth adaptive network state based adaptive routing and spectrum allocation algorithms in Elastic Optical Network	Optical Fiber Technology	journal-article
+79	10.3403/30192868	None	10.3403/30192868	Ergonomics of human-system interaction		standard
+80	10.1109/hpca56546.2023.10070992	2023	10.1109/hpca56546.2023.10070992	INCA: Input-stationary Dataflow at Outside-the-box Thinking about Deep Learning Accelerators	2023 IEEE International Symposium on High-Performance Computer Architecture (HPCA)	proceedings-article
+81	10.5194/gmd-2016-95-rc2	2016	10.5194/gmd-2016-95-rc2	Requested review		peer-review
+82	10.1109/sips.2000.886765	None	10.1109/sips.2000.886765	Systematic consolidation of input and output buffers in synchronous dataflow specifications	2000 IEEE Workshop on SiGNAL PROCESSING SYSTEMS. SiPS 2000. Design and Implementation (Cat. No.00TH8528)	proceedings-article
+83	10.1109/dsd.2016.52	2016	10.1109/dsd.2016.52	Evaluation of Synchronous Dataflow Graph Mappings onto Distributed Memory Architectures	2016 Euromicro Conference on Digital System Design (DSD)	proceedings-article
+84	10.1007/3-540-51285-3_33	1989	10.1007/3-540-51285-3_33	Dataflow analysis of term graph rewriting systems	Lecture Notes in Computer Science	book-chapter
+85	10.20535/2312-1807.2014.19.4.31752	2014	10.20535/2312-1807.2014.19.4.31752	The optimization method of a macro dataflow graph for reconfigurable computing systems	Electronics and Communications	journal-article
+86	10.5194/gmd-2016-95-rc5	2016	10.5194/gmd-2016-95-rc5	Requested review		peer-review
+87	10.2139/ssrn.6218101	2026	10.2139/ssrn.6218101	A Multi-Residual Graph Convolutional Network with Graph Coarsening for EEG Motor Imagery Decoding		posted-content
+88	10.1007/3-540-26875-8_4	None	10.1007/3-540-26875-8_4	Input Selection and Rule Selection	Advanced Information Processing	book-chapter
+89	10.7554/elife.38181.025	None	10.7554/elife.38181.025	Figure 6—source data 1. Input data for bar graph Figure 6B,D,H.		component
+90	10.1109/icassp.2005.1416242	None	10.1109/icassp.2005.1416242	Dynamic Configuration of Dataflow Graph Topology for DSP System Design	Proceedings. (ICASSP '05). IEEE International Conference on Acoustics, Speech, and Signal Processing, 2005.	proceedings-article
+91	10.32614/cran.package.sisal	2015	10.32614/cran.package.sisal	sisal: Sequential Input Selection Algorithm	CRAN: Contributed Packages	dataset
+92	10.1109/asp-dac66049.2026.11420389	2026	10.1109/asp-dac66049.2026.11420389	FESTAL: Dataflow Accelerator Synthesis Framework with Graph-Based Fusion for FPGA	2026 31st Asia and South Pacific Design Automation Conference (ASP-DAC)	proceedings-article
+93	10.4016/14621.01	2009	10.4016/14621.01	What is the square root of a graph?	SciVee	dataset
+94	10.4324/9781315691008-18	2016	10.4324/9781315691008-18	Optimal input selection	Principles of Agricultural Economics	book-chapter
+95	10.1109/tvcg.2024.3378309/mm1	None	10.1109/tvcg.2024.3378309/mm1	ResGEM: Multi-scale Graph Embedding Network for Residual Mesh Denoising_supp1-3378309.pdf		component
+96	10.4095/184036	1993	10.4095/184036	Magnetic anomaly map [residual total field], Root Lake, Manitoba		report
+97	10.3030/838342	2019	10.3030/838342			grant
+98	10.1021/acs.jcim.4c00643.s001	None	10.1021/acs.jcim.4c00643.s001	Multitask Learning on Graph Convolutional Residual Neural Networks for Screening of Multitarget Anticancer Compounds		component
+99	10.21203/rs.3.rs-7117771/v1	2025	10.21203/rs.3.rs-7117771/v1	RGLRE: Residual Graph Learning for circRNA-miRNA Interaction Prediction with Role-aware graph Embeddings		posted-content
+100	10.1021/acs.jpca.3c01558.s001	None	10.1021/acs.jpca.3c01558.s001	SLI-GNN: A Self-Learning-Input Graph Neural Network for Predicting Crystal and Molecular Properties		component

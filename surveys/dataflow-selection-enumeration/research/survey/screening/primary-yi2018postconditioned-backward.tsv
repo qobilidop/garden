@@ -1,0 +1,68 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1007/978-3-540-73368-3_52	None	10.1007/978-3-540-73368-3_52	A Decision Procedure for Bit-Vectors and Arrays	Lecture Notes in Computer Science	book-chapter
+2	10.1145/129393.129398	1992	10.1145/129393.129398	The CLP( ℛ ) language and system	ACM Transactions on Programming Languages and Systems	journal-article
+3	10.1007/978-3-642-22110-1_45	2011	10.1007/978-3-642-22110-1_45	Interpolation-Based Software Verification with Wolverine	Lecture Notes in Computer Science	book-chapter
+4	ref32	2012		Algorithms for software model checking: Predicate abstraction versus impact	Proc Formal Methods Comput -Aided Des	reference
+5	ref31	2011		Unbounded symbolic execution for program verification	Proceedings of the 2nd International Conference on Runtime Verification	reference
+6	10.1145/2491411.2491425	2013	10.1145/2491411.2491425	Boosting concolic testing via interpolation	Proceedings of the 2013 9th Joint Meeting on Foundations of Software Engineering	proceedings-article
+7	10.1007/978-3-642-31424-7_48	2012	10.1007/978-3-642-31424-7_48	Ufo: A Framework for Abstraction- and Interpolation-Based Software Verification	Lecture Notes in Computer Science	book-chapter
+8	10.1007/978-3-642-27940-9_4	2012	10.1007/978-3-642-27940-9_4	Whale: An Interpolation-Based Algorithm for Inter-procedural Verification	Lecture Notes in Computer Science	book-chapter
+9	10.1007/978-3-642-11319-2_12	2010	10.1007/978-3-642-11319-2_12	Interpolant Strength	Lecture Notes in Computer Science	book-chapter
+10	ref34	2012		Wolverine:  Battling bugs with interpolants-(competition contribution)	Proc Int Conf Tools and Algorithms Constr and Anal Syst	reference
+11	10.1145/2001420.2001423	2011	10.1145/2001420.2001423	Statically-directed dynamic automated test generation	Proceedings of the 2011 International Symposium on Software Testing and Analysis	proceedings-article
+12	10.1145/2451116.2451152	2013	10.1145/2451116.2451152	Verifying systems rules using rule-directed symbolic execution	Proceedings of the eighteenth international conference on Architectural support for programming languages and operating systems	proceedings-article
+13	10.1145/1755913.1755946	2010	10.1145/1755913.1755946	Execution synthesis	Proceedings of the 5th European conference on Computer systems	proceedings-article
+14	10.1109/ICSE.2015.80	2015	10.1109/ICSE.2015.80	Regular Property Guided Dynamic Symbolic Execution	2015 IEEE/ACM 37th IEEE International Conference on Software Engineering	proceedings-article
+15	10.1007/978-3-642-31424-7_61	2012	10.1007/978-3-642-31424-7_61	TRACER: A Symbolic Execution Tool for Verification	Lecture Notes in Computer Science	book-chapter
+16	10.1145/1993498.1993558	2011	10.1145/1993498.1993558	Directed incremental symbolic execution	Proceedings of the 32nd ACM SIGPLAN Conference on Programming Language Design and Implementation	proceedings-article
+17	10.1007/978-3-540-78800-3_33	None	10.1007/978-3-540-78800-3_33	Automatically Refining Abstract Interpretations	Lecture Notes in Computer Science	book-chapter
+18	10.1109/ICSE.2012.6227146	2012	10.1109/ICSE.2012.6227146	make test-zesti: A symbolic execution solution for improving regression testing	2012 34th International Conference on Software Engineering (ICSE)	proceedings-article
+19	10.1109/ICSE.2013.6606713	2013	10.1109/ICSE.2013.6606713	Memoise: A tool for memoized symbolic execution	2013 35th International Conference on Software Engineering (ICSE)	proceedings-article
+20	10.1007/978-3-319-11164-3_27	2014	10.1007/978-3-319-11164-3_27	Lazy Symbolic Execution for Enhanced Learning	Lecture Notes in Computer Science	book-chapter
+21	10.1145/2338965.2336771	2012	10.1145/2338965.2336771	Memoized symbolic execution	Proceedings of the 2012 International Symposium on Software Testing and Analysis	proceedings-article
+22	10.1145/1065010.1065036	2005	10.1145/1065010.1065036	DART	Proceedings of the 2005 ACM SIGPLAN conference on Programming language design and implementation	proceedings-article
+23	ref1	2008		KLEE:  Unassisted and automatic generation of high-coverage tests for complex systems programs	Proc USENIX Symp on Operating System Design and Implementation	reference
+24	10.1145/1390630.1390635	2008	10.1145/1390630.1390635	Combining unit-level symbolic execution and system-level concrete execution for testing nasa software	Proceedings of the 2008 international symposium on Software testing and analysis	proceedings-article
+25	10.1145/1831708.1831732	2010	10.1145/1831708.1831732	Parallel symbolic execution for structural test generation	Proceedings of the 19th international symposium on Software testing and analysis	proceedings-article
+26	10.1145/1713254.1713257	2010	10.1145/1713254.1713257	Cloud9	ACM SIGOPS Operating Systems Review	journal-article
+27	10.1109/ICST.2012.114	2012	10.1109/ICST.2012.114	A Scalable Distributed Concolic Testing Approach: An Empirical Evaluation	2012 IEEE Fifth International Conference on Software Testing, Verification and Validation	proceedings-article
+28	10.1145/2384616.2384654	2012	10.1145/2384616.2384654	Scaling symbolic execution using ranged analysis	Proceedings of the ACM international conference on Object oriented programming systems languages and applications	proceedings-article
+29	ref26	2009		The yogi project: Software property  checking via static analysis and testing	Proc Int Conf Tools and Algorithms Constr and Anal Syst	reference
+30	10.1007/11817963_14	2006	10.1007/11817963_14	Lazy Abstraction with Interpolants	Lecture Notes in Computer Science	book-chapter
+31	10.1145/2568225.2568293	2014	10.1145/2568225.2568293	Enhancing symbolic execution with veritesting	Proceedings of the 36th International Conference on Software Engineering	proceedings-article
+32	10.1145/1966445.1966475	2011	10.1145/1966445.1966475	Symbolic crosschecking of floating-point and SIMD code	Proceedings of the sixth conference on Computer systems	proceedings-article
+33	ref59	2011		Directed symbolic execution	Proc 18th Int Symp Static Anal	reference
+34	10.1145/2635868.2635872	2014	10.1145/2635868.2635872	How we get there: a context-guided search strategy in concolic testing	Proceedings of the 22nd ACM SIGSOFT International Symposium on Foundations of Software Engineering	proceedings-article
+35	10.1145/2509136.2509553	2013	10.1145/2509136.2509553	Steering symbolic execution to less traveled paths	Proceedings of the 2013 ACM SIGPLAN international conference on Object oriented programming systems languages &amp; applications	proceedings-article
+36	10.1109/TSE.2015.2490067	2016	10.1109/TSE.2015.2490067	Bidirectional Symbolic Analysis for Effective Branch Testing	IEEE Transactions on Software Engineering	journal-article
+37	10.1109/ASE.2013.6693084	2013	10.1109/ASE.2013.6693084	Characteristic studies of loop problems for structural test generation via symbolic execution	2013 28th IEEE/ACM International Conference on Automated Software Engineering (ASE)	proceedings-article
+38	10.1145/1985793.1985971	2011	10.1145/1985793.1985971	DyTa	Proceedings of the 33rd International Conference on Software Engineering	proceedings-article
+39	10.1109/ICSM.2010.5609565	2010	10.1109/ICSM.2010.5609565	Guided test generation for coverage criteria	2010 IEEE International Conference on Software Maintenance	proceedings-article
+40	ref52	2015		MultiSE: Multi-path symbolic execution using value  summaries	Proc Power Eng Meeting	reference
+41	10.1109/ICSE.2013.6606558	2013	10.1109/ICSE.2013.6606558	Billions and billions of constraints: Whitebox fuzz testing in production	2013 35th International Conference on Software Engineering (ICSE)	proceedings-article
+42	ref11	2015		Under-constrained symbolic execution: Correctness checking for real code	24th USENIX Security Symp	reference
+43	10.1007/978-3-540-78800-3_28	None	10.1007/978-3-540-78800-3_28	Demand-Driven Compositional Symbolic Execution	Lecture Notes in Computer Science	book-chapter
+44	10.1145/1950365.1950396	2011	10.1145/1950365.1950396	S2E	Proceedings of the sixteenth international conference on Architectural support for programming languages and operating systems	proceedings-article
+45	ref13	2015		Hercules: reproducing crashes in real-world application binaries	Proceedings of the International Conference on Software Engineering ICSE'94	reference
+46	10.1145/1190216.1190226	2007	10.1145/1190216.1190226	Compositional dynamic test generation	Proceedings of the 34th annual ACM SIGPLAN-SIGACT symposium on Principles of programming languages	proceedings-article
+47	10.1109/ICSE.2007.41	2007	10.1109/ICSE.2007.41	Hybrid Concolic Testing	29th International Conference on Software Engineering (ICSE'07)	proceedings-article
+48	10.1007/978-3-642-14295-6_10	2010	10.1007/978-3-642-14295-6_10	Lazy Annotation for Program Testing and Verification	Lecture Notes in Computer Science	book-chapter
+49	ref17	2008		Efficient memoization for dynamic programming with ad-hoc constraints	Proc 23rd Nat Conf Artif Intell	reference
+50	ref18	2009		An  interpolation method for CLP traversal	Proc Int Conf Principles Practice Constraint Program	reference
+51	10.1007/978-3-642-31424-7_43	2012	10.1007/978-3-642-31424-7_43	A Complete Method for Symmetry Reduction in Safety Verification	Lecture Notes in Computer Science	book-chapter
+52	10.1145/1095430.1081750	2005	10.1145/1095430.1081750	CUTE	ACM SIGSOFT Software Engineering Notes	journal-article
+53	ref3	2008		Automated whitebox fuzz testing	Proc Usenix Symp Netw Distrib Syst Security	reference
+54	10.1109/ASE.2008.69	2008	10.1109/ASE.2008.69	Heuristics for Scalable Dynamic Test Generation	2008 23rd IEEE/ACM International Conference on Automated Software Engineering	proceedings-article
+55	10.1007/11817963_38	2006	10.1007/11817963_38	CUTE and jCUTE: Concolic Unit Testing and Explicit Path Model-Checking Tools	Lecture Notes in Computer Science	book-chapter
+56	ref8	2011		AEG: Automatic exploit generation	Proc Usenix Symp Netw Distrib Syst Security	reference
+57	10.1007/s10009-009-0118-1	2009	10.1007/s10009-009-0118-1	A survey of new trends in symbolic execution for software testing and analysis	International Journal on Software Tools for Technology Transfer	journal-article
+58	ref49	2013		Redundant state detection for dynamic symbolic execution	Proc USENIX Annu Tech Conf	reference
+59	10.1145/1450058.1450087	2008	10.1145/1450058.1450087	Active property checking	Proceedings of the 8th ACM international conference on Embedded software	proceedings-article
+60	10.1145/2771783.2771802	2015	10.1145/2771783.2771802	Reusing constraint proofs in program analysis	Proceedings of the 2015 International Symposium on Software Testing and Analysis	proceedings-article
+61	10.1145/2771783.2771806	2015	10.1145/2771783.2771806	Enhancing reuse of constraint solutions to improve symbolic execution	Proceedings of the 2015 International Symposium on Software Testing and Analysis	proceedings-article
+62	10.1145/2254064.2254088	2012	10.1145/2254064.2254088	Efficient state merging in symbolic execution	Proceedings of the 33rd ACM SIGPLAN Conference on Programming Language Design and Implementation	proceedings-article
+63	10.1145/1180405.1180445	2006	10.1145/1180405.1180445	EXE	Proceedings of the 13th ACM conference on Computer and communications security	proceedings-article
+64	ref42	2013		Compositional symbolic execution through program specialization	Proc 1st Workshop Bytecode Semantics Verification Anal Transformation	reference
+65	10.1145/1706299.1706307	2010	10.1145/1706299.1706307	Compositional may-must program analysis	Proceedings of the 37th annual ACM SIGPLAN-SIGACT symposium on Principles of programming languages	proceedings-article
+66	10.1145/2393596.2393665	2012	10.1145/2393596.2393665	Green	Proceedings of the ACM SIGSOFT 20th International Symposium on the Foundations of Software Engineering	proceedings-article
+67	10.1109/ICSE.2015.79	2015	10.1109/ICSE.2015.79	Compositional Symbolic Execution with Memoized Replay	2015 IEEE/ACM 37th IEEE International Conference on Software Engineering	proceedings-article

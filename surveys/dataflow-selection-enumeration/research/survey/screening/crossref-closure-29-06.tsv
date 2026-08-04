@@ -1,0 +1,101 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1016/j.ifacol.2017.08.1240	2017	10.1016/j.ifacol.2017.08.1240	Marking Estimation in Labelled Petri nets by the Representative Marking Graph	IFAC-PapersOnLine	journal-article
+2	10.1109/icsmc.2002.1167945	None	10.1109/icsmc.2002.1167945	Improving the calculus of the marking graph of petri net with BDD like structure	IEEE International Conference on Systems, Man and Cybernetics	proceedings-article
+3	10.5772/7517	2010	10.5772/7517	Transfer-Resource Graph and Petri-net for System-on-Chip Verification	Petri Nets Applications	book-chapter
+4	10.3724/sp.j.1087.2009.00529	2009	10.3724/sp.j.1087.2009.00529	Consistent varying-weight fuzzy Petri net attack model based on both-branch fuzzy set	Journal of Computer Applications	journal-article
+5	10.2139/ssrn.5009694	2024	10.2139/ssrn.5009694	Petri Net Identification of Automated Discrete Event Systems by Variation Character of Observable Marking Vectors		posted-content
+6	10.1109/acc.2003.1238961	None	10.1109/acc.2003.1238961	Marking estimation of Petri nets based on partial observation	Proceedings of the 2003 American Control Conference, 2003.	proceedings-article
+7	10.12988/jite.2016.6831	2016	10.12988/jite.2016.6831	Modeling of adaptive traffic lights using basic Petri net marking	Journal of Innovative Technology and Education	journal-article
+8	10.1007/978-3-540-27755-2_14	2004	10.1007/978-3-540-27755-2_14	Graph Grammars and Petri Net Transformations	Lecture Notes in Computer Science	book-chapter
+9	10.1109/melcon.2012.6196467	2012	10.1109/melcon.2012.6196467	An hybrid bond graph approach using Petri Net	2012 16th IEEE Mediterranean Electrotechnical Conference	proceedings-article
+10	10.1109/cdc.1997.652507	None	10.1109/cdc.1997.652507	Petri net state estimators based on event observation	Proceedings of the 36th IEEE Conference on Decision and Control	proceedings-article
+11	10.1016/0026-2714(85)90089-7	1985	10.1016/0026-2714(85)90089-7	A Petri net approach to enumerating all circuits of a graph	Microelectronics Reliability	journal-article
+12	10.1109/eurosim.2013.72	2013	10.1109/eurosim.2013.72	Extended Reachability Graph of Petri Net for Cost Estimation	2013 8th EUROSIM Congress on Modelling and Simulation	proceedings-article
+13	10.14236/ewic/vecos2008.1	2008	10.14236/ewic/vecos2008.1	Aggregation of Transitions in Marking Graph Generation Based on Maximality Semantics for Petri Nets	Electronic Workshops in Computing	proceedings-article
+14	10.1109/iecon.1998.723957	None	10.1109/iecon.1998.723957	A result on the relationship between Petri net and directed graph-real time fault diagnosis based on Petri net model	IECON '98. Proceedings of the 24th Annual Conference of the IEEE Industrial Electronics Society (Cat. No.98CH36200)	proceedings-article
+15	10.1007/978-3-540-27793-4_15	2004	10.1007/978-3-540-27793-4_15	New Canonical Representative Marking Algorithms for Place/Transition-Nets	Lecture Notes in Computer Science	book-chapter
+16	10.5772/5321	2008	10.5772/5321	Timed Hierarchical Object-Oriented Petri Net	Petri Net, Theory and Applications	book-chapter
+17	10.7551/mitpress/8811.003.0010	2011	10.7551/mitpress/8811.003.0010	Analyzing Petri Net Models	Modeling Business Processes	book-chapter
+18	10.37394/23209.2020.17.13	2020	10.37394/23209.2020.17.13	Graph Drawing Approaches for Petri Net Models	WSEAS TRANSACTIONS ON INFORMATION SCIENCE AND APPLICATIONS	journal-article
+19	10.1016/0026-2714(91)90003-p	1991	10.1016/0026-2714(91)90003-p	Control synthesis based on a graph-theoretical Petri net analysis	Microelectronics Reliability	journal-article
+20	10.1016/0024-3795(94)00193-h	1995	10.1016/0024-3795(94)00193-h	On the problem of consistent marking of a graph	Linear Algebra and its Applications	journal-article
+21	10.1007/springerreference_21281	None	10.1007/springerreference_21281	Petri net	SpringerReference	reference-entry
+22	10.1016/0026-2714(84)90460-8	1984	10.1016/0026-2714(84)90460-8	A Petri net approach to enumerating all circuits of a graph	Microelectronics Reliability	journal-article
+23	10.1016/j.ins.2019.07.008	2019	10.1016/j.ins.2019.07.008	Optimal Petri net supervisor synthesis for forbidden state problems using marking mask	Information Sciences	journal-article
+24	10.1109/iccis.2004.1460741	None	10.1109/iccis.2004.1460741	Exploiting Petri net graph to model the FSM of modulo-P counter	IEEE Conference on Cybernetics and Intelligent Systems, 2004.	proceedings-article
+25	10.3182/20140514-3-fr-4046.00060	2014	10.3182/20140514-3-fr-4046.00060	Observation Equivalence of Petri Net Generators	IFAC Proceedings Volumes	journal-article
+26	10.1016/0026-2714(83)90782-5	1983	10.1016/0026-2714(83)90782-5	Enumeration of all simple paths in a directed graph using Petri Net: a systematic approach	Microelectronics Reliability	journal-article
+27	10.1007/3-540-26821-9_7	None	10.1007/3-540-26821-9_7	Hybrid Petri Nets with Speeds Depending on the C-Marking	Discrete, Continuous, and Hybrid Petri Nets	book-chapter
+28	10.5772/10294	2010	10.5772/10294	Petri Net as a Manufacturing System Scheduling Tool	Advances in Petri Net Theory and Applications	book-chapter
+29	10.1109/ikt.2016.7777791	2016	10.1109/ikt.2016.7777791	Modelling and analysis of the monotonic read consistent distributed system using coloured Petri net	2016 Eighth International Conference on Information and Knowledge Technology (IKT)	proceedings-article
+30	10.1007/978-3-031-48278-6_5	2024	10.1007/978-3-031-48278-6_5	Graph-Theoretical Structure of Petri Nets	Computer Science Foundations and Applied Logic	book-chapter
+31	10.1007/978-3-540-40022-6_3	2003	10.1007/978-3-540-40022-6_3	Petri Net Transformations in the ≫Petri Net Baukasten≪	Lecture Notes in Computer Science	book-chapter
+32	10.1002/9781119262114.part1	2016	10.1002/9781119262114.part1	Short Review of Petri Net Modeling	Systems Dependability Assessment	other
+33	10.1142/9789814324298_0003	2012	10.1142/9789814324298_0003	Petri Net Processes and Extension Operators	Property-Preserving Petri Net Process Algebra in Software Engineering	book-chapter
+34	10.5772/5323	2008	10.5772/5323	Error Recovery in Production Systems: A Petri Net Based Intelligent System Approach	Petri Net, Theory and Applications	book-chapter
+35	10.1109/icsmc.2002.1173226	None	10.1109/icsmc.2002.1173226	A comparative study of hybrid system monitoring based on bond graph and Petri net modelling	IEEE International Conference on Systems, Man and Cybernetics	proceedings-article
+36	10.37394/23209.2021.18.10	2021	10.37394/23209.2021.18.10	Graph Drawing Approaches for Petri Net Visualisation and Representation	WSEAS TRANSACTIONS ON INFORMATION SCIENCE AND APPLICATIONS	journal-article
+37	10.1109/icit.2013.6505674	2013	10.1109/icit.2013.6505674	Transforming time constraints of a GRAFCET graph into a suitable Petri net formalism	2013 IEEE International Conference on Industrial Technology (ICIT)	proceedings-article
+38	10.2139/ssrn.4717301	2024	10.2139/ssrn.4717301	Iga-Graph-Net: Isogeometric Analysis-Reuse Method Based on Graph Neural Networks for Topology-Consistent Models		posted-content
+39	10.1109/codit.2019.8820467	2019	10.1109/codit.2019.8820467	Towards a Minimum Initial Marking Estimation Procedure for P-Time Labelled Petri net Systems	2019 6th International Conference on Control, Decision and Information Technologies (CoDIT)	proceedings-article
+40	10.5772/7499	2010	10.5772/7499	GPenSIM: A New Petri Net Simulator	Petri Nets Applications	book-chapter
+41	10.5772/10297	2010	10.5772/10297	Modeling Multimedia Synchronization Using a Time Petri Net Based Approach	Advances in Petri Net Theory and Applications	book-chapter
+42	10.1109/iscas.1992.230420	None	10.1109/iscas.1992.230420	An equivalence net-condition between place-liveness and transition-liveness and its initial-marking-based necessary and sufficient liveness condition of Petri nets	[Proceedings] 1992 IEEE International Symposium on Circuits and Systems	proceedings-article
+43	10.1109/robot.1993.291907	None	10.1109/robot.1993.291907	On algebraic and graph structural properties of assembly Petri net	[1993] Proceedings IEEE International Conference on Robotics and Automation	proceedings-article
+44	10.1109/cdc.2000.912800	None	10.1109/cdc.2000.912800	Petri net monitor design with control and observation costs	Proceedings of the 39th IEEE Conference on Decision and Control (Cat. No.00CH37187)	proceedings-article
+45	10.1142/9789812839763_0007	1999	10.1142/9789812839763_0007	PETRI NET SIMULATION AND TOOLS	Modeling, Simulation, and Control of Flexible Manufacturing Systems	book-chapter
+46	10.1016/0026-2714(83)91381-1	1983	10.1016/0026-2714(83)91381-1	Enumeration of all simple paths in a directed graph using Petri net: A systematic approach	Microelectronics Reliability	journal-article
+47	10.4249/scholarpedia.6477	2008	10.4249/scholarpedia.6477	Petri net	Scholarpedia	journal-article
+48	10.5772/5310	2008	10.5772/5310	Petri Net Transformations	Petri Net, Theory and Applications	book-chapter
+49	10.1016/s1571-0661(04)80192-0	2002	10.1016/s1571-0661(04)80192-0	Concurrency for Graph Grammars in a Petri net shell	Electronic Notes in Theoretical Computer Science	journal-article
+50	10.3403/30175183	None	10.3403/30175183	Analysis techniques for dependability. Petri net techniques		standard
+51	10.4028/www.scientific.net/kem.450.59	2010	10.4028/www.scientific.net/kem.450.59	Research on Tool Flow Deadlock Based on Petri Net and Graph Theory	Key Engineering Materials	journal-article
+52	10.1016/s1474-6670(17)64101-6	1986	10.1016/s1474-6670(17)64101-6	Validation of Petri Net Models by ‘Petri-Net-Machine’	IFAC Proceedings Volumes	journal-article
+53	10.3403/30175183u	None	10.3403/30175183u	Analysis techniques for dependability. Petri net techniques		standard
+54	10.4018/978-1-4666-9594-8.les13	None	10.4018/978-1-4666-9594-8.les13	Petri Net Computing	Petri Nets for Modeling and Computing	book-chapter
+55	10.5772/5312	2008	10.5772/5312	Petri Net Based Modelling of Communication in Systems on Chip	Petri Net, Theory and Applications	book-chapter
+56	10.1093/oed/1477097321	2023	10.1093/oed/1477097321	Petri net, n.	Oxford English Dictionary	book-chapter
+57	10.5772/7503	2010	10.5772/7503	Workflow Diagnosis Using Petri Net Charts	Petri Nets Applications	book-chapter
+58	10.7551/mitpress/8811.003.0008	2011	10.7551/mitpress/8811.003.0008	Colored Petri Nets	Modeling Business Processes	book-chapter
+59	10.1109/tac.2016.2574120	2017	10.1109/tac.2016.2574120	Basis Marking Representation of Petri Net Reachability Spaces and Its Application to the Reachability Problem	IEEE Transactions on Automatic Control	journal-article
+60	10.7551/mitpress/8811.003.0009	2011	10.7551/mitpress/8811.003.0009	Hierarchical Petri Nets	Modeling Business Processes	book-chapter
+61	10.1109/poweri.2006.1632569	2006	10.1109/poweri.2006.1632569	Fault diagnosis of power system using neural Petri net and fuzzy neural Petri net	2006 IEEE Power India Conference	proceedings-article
+62	10.1007/3-540-50580-6_31	1988	10.1007/3-540-50580-6_31	Infinitary partial Petri net languages and their relationship to other Petri net semantics	Lecture Notes in Computer Science	book-chapter
+63	10.1007/0-387-21552-2_3	2002	10.1007/0-387-21552-2_3	The Marking Process	Stochastic Petri Nets	book-chapter
+64	10.1109/ecbs.2010.45	2010	10.1109/ecbs.2010.45	Activity and Petri Net Model-to-Model Mapping Using Triple Graph Grammars	2010 17th IEEE International Conference and Workshops on Engineering of Computer Based Systems	proceedings-article
+65	10.5772/5313	2008	10.5772/5313	An Inter-Working Petri Net Model between SIMPLE and IMPS for XDM Service	Petri Net, Theory and Applications	book-chapter
+66	10.1016/s1571-0661(04)00192-6	2004	10.1016/s1571-0661(04)00192-6	Concurrency for Graph Grammars in a Petri net shell	Electronic Notes in Theoretical Computer Science	journal-article
+67	10.1007/978-1-4615-1537-1_1	2001	10.1007/978-1-4615-1537-1_1	The Petri Net Model	Supervision of Petri Nets	book-chapter
+68	10.1049/el:19800212	1980	10.1049/el:19800212	Petri net approach to enumerate all simple paths in a graph	Electronics Letters	journal-article
+69	10.1201/9781439808856-8	2018	10.1201/9781439808856-8	Colored Petri Net	System Modeling and Control with Resource-Oriented Petri Nets	book-chapter
+70	10.7551/mitpress/8811.003.0006	2011	10.7551/mitpress/8811.003.0006	Application of Petri Nets	Modeling Business Processes	book-chapter
+71	10.1007/978-3-642-10669-9_7	2010	10.1007/978-3-642-10669-9_7	Hybrid Petri Nets with Speeds Depending on the C-Marking	Discrete, Continuous, and Hybrid Petri Nets	book-chapter
+72	10.1002/9781119262114.ch6	2016	10.1002/9781119262114.ch6	Petri Net Modeling of the Accidental Process	Systems Dependability Assessment	other
+73	10.1016/j.ins.2023.119922	2024	10.1016/j.ins.2023.119922	State estimation in labeled time Petri net systems using observed modified state class graph	Information Sciences	journal-article
+74	10.1109/tsmc.2014.2298379	2014	10.1109/tsmc.2014.2298379	Coverability Graph of Fuzzy Interpreted Petri Net	IEEE Transactions on Systems, Man, and Cybernetics: Systems	journal-article
+75	10.1109/pesc.1995.474913	None	10.1109/pesc.1995.474913	Power converter average model computation using the bond graph and Petri net techniques	Proceedings of PESC '95 - Power Electronics Specialist Conference	proceedings-article
+76	10.5772/5318	2008	10.5772/5318	Model Checking of Time Petri Nets	Petri Net, Theory and Applications	book-chapter
+77	10.1002/9781119262114.part3	2016	10.1002/9781119262114.part3	Stochastic Petri Nets	Systems Dependability Assessment	other
+78	10.1109/isiict.2011.6149602	2011	10.1109/isiict.2011.6149602	From UML statecharts diagrams to labeled Generalized Stochastic Petri Net models using graph transformation	International Symposium on Innovations in Information and Communications Technology	proceedings-article
+79	10.7551/mitpress/8811.003.0005	2011	10.7551/mitpress/8811.003.0005	Basic Concepts of Petri Nets	Modeling Business Processes	book-chapter
+80	10.1007/978-3-662-04457-5_4	2001	10.1007/978-3-662-04457-5_4	Petri Net Semantics	Monographs in Theoretical Computer Science An EATCS Series	book-chapter
+81	10.1016/j.jag.2022.102735	2022	10.1016/j.jag.2022.102735	A graph attention network for road marking classification from mobile LiDAR point clouds	International Journal of Applied Earth Observation and Geoinformation	journal-article
+82	10.1201/9781439808856-6	2018	10.1201/9781439808856-6	Colored Petri Net ���������������������������������������������������������������������������������������������� 3	System Modeling and Control with Resource-Oriented Petri Nets	book-chapter
+83	10.1007/978-3-642-41115-1_2	2013	10.1007/978-3-642-41115-1_2	The Classic Petri Net	Time and Petri Nets	book-chapter
+84	10.5772/5325	2008	10.5772/5325	Diagnosis of Discrete Event Systems with Petri Nets	Petri Net, Theory and Applications	book-chapter
+85	10.1016/j.apm.2006.10.023	2007	10.1016/j.apm.2006.10.023	FMS scheduling based on timed Petri Net model and reactive graph search	Applied Mathematical Modelling	journal-article
+86	10.1109/iscas.2005.1465925	None	10.1109/iscas.2005.1465925	Modeling and Formal Verification of Dataflow Graph in System-Level Design Using Petri net	2005 IEEE International Symposium on Circuits and Systems	proceedings-article
+87	10.5772/56	2008	10.5772/56	Petri Net, Theory and Applications		edited-book
+88	10.1007/978-3-662-60651-3_2	2019	10.1007/978-3-662-60651-3_2	How Petri Net Theory Serves Petri Net Model Checking: A Survey	Lecture Notes in Computer Science	book-chapter
+89	10.5772/5319	2008	10.5772/5319	A Linear Logic Based Approach to Timed Petri Nets	Petri Net, Theory and Applications	book-chapter
+90	10.1002/0471028959.sof240	2002	10.1002/0471028959.sof240	Petri Net	Encyclopedia of Software Engineering	other
+91	10.1787/888933588421	None	10.1787/888933588421	Figure 4.7 Net lending for households as nearly-consistent net borrowers, 1995-2014		component
+92	10.5772/5320	2008	10.5772/5320	From Time Petri Nets to Timed Automata	Petri Net, Theory and Applications	book-chapter
+93	10.3182/20050703-6-cz-1902.00348	2005	10.3182/20050703-6-cz-1902.00348	ON THE EXISTENCE OF PETRI NET CONTROLLER FOR DISCRETE EVENT SYSTEMS UNDER PARTIAL OBSERVATION	IFAC Proceedings Volumes	journal-article
+94	10.1201/9781439808856-10	2018	10.1201/9781439808856-10	Resource-Oriented Petri Net Modeling	System Modeling and Control with Resource-Oriented Petri Nets	book-chapter
+95	10.1201/9781439808856-9	2018	10.1201/9781439808856-9	Process-Oriented Petri Net Modeling	System Modeling and Control with Resource-Oriented Petri Nets	book-chapter
+96	10.5772/10292	2010	10.5772/10292	Production Process Object Modeling Based Petri Nets	Advances in Petri Net Theory and Applications	book-chapter
+97	10.1109/tac.2015.2496500	2016	10.1109/tac.2015.2496500	On the Equivalence of Observation Structures for Petri Net Generators	IEEE Transactions on Automatic Control	journal-article
+98	10.5772/5328	2008	10.5772/5328	Using Transition Invariants for Reachability Analysis of Petri Nets	Petri Net, Theory and Applications	book-chapter
+99	10.1007/bfb0016213	None	10.1007/bfb0016213	Petri net tools	Lecture Notes in Computer Science	book-chapter
+100	10.3390/app16094180	2026	10.3390/app16094180	From Mathematics to Art: Petri Net Modelling of Tribonacci and k-Bonacci Petri Net Fractal Patterns	Applied Sciences	journal-article

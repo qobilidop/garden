@@ -1,0 +1,101 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1515/forum-2024-0193	2026	10.1515/forum-2024-0193	Conditional mean values of long Dirichlet polynomials	Forum Mathematicum	journal-article
+2	10.1109/icse-companion55297.2022.9793817	2022	10.1109/icse-companion55297.2022.9793817	GARUDA: Heap aware symbolic execution	2022 IEEE/ACM 44th International Conference on Software Engineering: Companion Proceedings (ICSE-Companion)	proceedings-article
+3	10.1145/3510454.3528650	2022	10.1145/3510454.3528650	GARUDA	Proceedings of the ACM/IEEE 44th International Conference on Software Engineering: Companion Proceedings	proceedings-article
+4	10.1007/978-3-662-49122-5_10	2016	10.1007/978-3-662-49122-5_10	Exact Heap Summaries for Symbolic Execution	Lecture Notes in Computer Science	book-chapter
+5	10.1109/ase.2011.6100071	2011	10.1109/ase.2011.6100071	Heap cloning: Enabling dynamic symbolic execution of java programs	2011 26th IEEE/ACM International Conference on Automated Software Engineering (ASE 2011)	proceedings-article
+6	10.1109/saner67736.2026.00112	2026	10.1109/saner67736.2026.00112	Path-Optimal Symbolic Execution of Heap-Manipulating Programs	2026 IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER)	proceedings-article
+7	10.1109/icse-companion58688.2023.00059	2023	10.1109/icse-companion58688.2023.00059	Boosting Symbolic Execution for Heap-based Vulnerability Detection and Exploit Generation	2023 IEEE/ACM 45th International Conference on Software Engineering: Companion Proceedings (ICSE-Companion)	proceedings-article
+8	10.1145/2786805.2786842	2015	10.1145/2786805.2786842	Symbolic execution of programs with heap inputs	Proceedings of the 2015 10th Joint Meeting on Foundations of Software Engineering	proceedings-article
+9	10.1109/iwast.2012.6228982	2012	10.1109/iwast.2012.6228982	All-values symbolic execution	2012 7th International Workshop on Automation of Software Test (AST)	proceedings-article
+10	10.1109/icsm.2000.883045	2000	10.1109/icsm.2000.883045	C/C++ conditional compilation analysis using symbolic execution	Proceedings International Conference on Software Maintenance ICSM-94	proceedings-article
+11	10.7717/peerj.10536/table-1	None	10.7717/peerj.10536/table-1	Table 1: Model summary outputs for best fitting catch models with conditional and marginal pseudo-R2 values.		component
+12	10.54499/ui/bd/154568/2022	2023	10.54499/ui/bd/154568/2022			grant
+13	10.1109/ase.2006.26	2006	10.1109/ase.2006.26	Bogor/Kiasan: A k-bounded Symbolic Execution for Checking Strong Heap Properties of Open Systems	21st IEEE/ACM International Conference on Automated Software Engineering (ASE'06)	proceedings-article
+14	10.1088/1755-1315/252/4/042100	2019	10.1088/1755-1315/252/4/042100	Analysis to Heap Overflow Exploit in Linux with Symbolic Execution	IOP Conference Series: Earth and Environmental Science	journal-article
+15	10.7717/peerj.10536/table-2	None	10.7717/peerj.10536/table-2	Table 2: Model summary outputs for best fitting models for video observations with conditional and marginal pseudo-R2 values.		component
+16	10.1007/springerreference_26145	None	10.1007/springerreference_26145	symbolic execution	SpringerReference	reference-entry
+17	10.1109/csmr.2003.1192425	None	10.1109/csmr.2003.1192425	Fast symbolic evaluation of C/C++ preprocessing using conditional values	Seventh European Conference onSoftware Maintenance and Reengineering, 2003. Proceedings.	proceedings-article
+18	10.7717/peerj-cs.3304/fig-4	None	10.7717/peerj-cs.3304/fig-4	Figure 4: Comparison of execution time for GreedyBWDS (No Heap) and GreedyBWDS.		component
+19	10.1145/3092703.3092715	2017	10.1145/3092703.3092715	Combining symbolic execution and search-based testing for programs with complex heap inputs	Proceedings of the 26th ACM SIGSOFT International Symposium on Software Testing and Analysis	proceedings-article
+20	10.1145/3377812.3390895	2020	10.1145/3377812.3390895	Summary-guided incremental symbolic execution	Proceedings of the ACM/IEEE 42nd International Conference on Software Engineering: Companion Proceedings	proceedings-article
+21	10.29007/2kx9	None	10.29007/2kx9	Alternate Semantics of the Guarded Conditional	Kalpa Publications in Computing	proceedings-article
+22	10.1007/s10515-011-0089-9	2012	10.1007/s10515-011-0089-9	Efficient and formal generalized symbolic execution	Automated Software Engineering	journal-article
+23	10.1145/1064979.1064990	2005	10.1145/1064979.1064990	Exploiting frequent field values in java objects for reducing heap memory requirements	Proceedings of the 1st ACM/USENIX international conference on Virtual execution environments	proceedings-article
+24	10.1016/s0140-6736(02)46790-6	1875	10.1016/s0140-6736(02)46790-6	EXECUTION OF HEAP.	The Lancet	journal-article
+25	10.1109/issre55969.2022.00054	2022	10.1109/issre55969.2022.00054	Learning to Prune Infeasible Paths in Generalized Symbolic Execution	2022 IEEE 33rd International Symposium on Software Reliability Engineering (ISSRE)	proceedings-article
+26	10.70675/f84b3bcdzf391z4853zbe20zc055a6176e09	None	10.70675/f84b3bcdzf391z4853zbe20zc055a6176e09	Increasing the performance of symbolic execution by compiling symbolic handling into binaries		dissertation
+27	10.1007/978-1-4612-0825-9_5	1995	10.1007/978-1-4612-0825-9_5	Generalized p-Values	Springer Series in Statistics	book-chapter
+28	10.1002/eqe.2683	2016	10.1002/eqe.2683	Evaluation of the exact conditional spectrum and generalized conditional intensity measure methods for ground motion selection	Earthquake Engineering &amp; Structural Dynamics	journal-article
+29	10.1016/s0747-7171(03)00034-8	2003	10.1016/s0747-7171(03)00034-8	Hyperresolution for guarded formulae	Journal of Symbolic Computation	journal-article
+30	10.1016/s0747-7171(02)00092-5	2003	10.1016/s0747-7171(02)00092-5	Deciding the guarded fragments by resolution	Journal of Symbolic Computation	journal-article
+31	10.7717/peerj.15415/table-4	None	10.7717/peerj.15415/table-4	Table 4: Summary of quasi–Poisson generalized linear model (GLM), with soil microenvironmental variables effect on high IVI values of tree species.		component
+32	10.1007/0-387-27446-4_14	None	10.1007/0-387-27446-4_14	Conditional Execution	Guide to RISC Processors	book-chapter
+33	10.17159/obiter.v25i2.14864	2022	10.17159/obiter.v25i2.14864	PERFECTION CLAUSES, SUMMARY EXECUTION (PARATE EXECUTIE) CLAUSES, FORFEITURE CLAUSES (PACTA COMMISSORIA) AND CONDITIONAL SALES IN PLEDGE AGREEMENTS AND NOTARIAL BONDS  THE POSITION CLARIFIED	Obiter	journal-article
+34	10.1145/3015135.3015137	2016	10.1145/3015135.3015137	Finding the needle in the heap	Proceedings of the 6th Workshop on Software Security, Protection, and Reverse Engineering	proceedings-article
+35	10.14722/ndss.2019.23530	2019	10.14722/ndss.2019.23530	Neuro-Symbolic Execution: Augmenting Symbolic Execution with Neural Constraints	Proceedings 2019 Network and Distributed System Security Symposium	proceedings-article
+36	10.2172/2430751	2023	10.2172/2430751	Symbolic Execution for Vulnerability Analysis: Improving Analyses with Symbolic Procedures [Poster]		report
+37	10.1155/2019/8787460	2019	10.1155/2019/8787460	Exact Solutions to a Generalized Bogoyavlensky‐Konopelchenko Equation via Maple Symbolic Computations	Complexity	journal-article
+38	10.1016/j.jsc.2016.07.023	2017	10.1016/j.jsc.2016.07.023	Replacing conjectures by positive knowledge: Inferring proven precise worst-case execution time bounds using symbolic execution	Journal of Symbolic Computation	journal-article
+39	10.1109/isca.1994.288156	None	10.1109/isca.1994.288156	Guarded execution and branch prediction in dynamic ILP processors	Proceedings of 21 International Symposium on Computer Architecture	proceedings-article
+40	10.5220/0012061000003538	2023	10.5220/0012061000003538	RPA Testing Using Symbolic Execution	Proceedings of the 18th International Conference on Software Technologies	proceedings-article
+41	10.3233/fi-2014-1056	2014	10.3233/fi-2014-1056	Extended Generalized Hyperbolic-function Method and New Exact Solutions of the Generalized Hamiltonian and NNV Equations by the Symbolic Computation	Fundamenta Informaticae	journal-article
+42	10.1145/2642937.2643011	2014	10.1145/2642937.2643011	Exact and approximate probabilistic symbolic execution for nondeterministic programs	Proceedings of the 29th ACM/IEEE International Conference on Automated Software Engineering	proceedings-article
+43	10.1007/978-3-030-54997-8_33	2020	10.1007/978-3-030-54997-8_33	Handling Heap Data Structures in Backward Symbolic Execution	Lecture Notes in Computer Science	book-chapter
+44	10.1520/stp32912s	1985	10.1520/stp32912s	Summary	Guarded Hot Plate and Heat Flow Meter Methodology	book-chapter
+45	10.1088/0253-6102/31/4/581	1999	10.1088/0253-6102/31/4/581	New Generalized Conditional Symmetry Reductions and Exact Solutions of the Nonlinear Diffusion-Convection-Reaction Equations	Communications in Theoretical Physics	journal-article
+46	10.1016/j.jsc.2010.08.014	2011	10.1016/j.jsc.2010.08.014	Sparse polynomial division using a heap	Journal of Symbolic Computation	journal-article
+47	10.21236/ada196451	1988	10.21236/ada196451	Optical Symbolic Processor for Expert System Execution		report
+48	10.21236/ada224284	1989	10.21236/ada224284	Optical Symbolic Processor for Expert System Execution		report
+49	10.1142/9789813238671_0005	2018	10.1142/9789813238671_0005	Symbolic computation of generalized inverses	Numerical and Symbolic Computations of Generalized Inverses	book-chapter
+50	10.21236/ada187882	1987	10.21236/ada187882	Optical Symbolic Processor for Expert System Execution		report
+51	10.1145/1993886.1993899	2011	10.1145/1993886.1993899	Special values of generalized log-sine integrals	Proceedings of the 36th international symposium on Symbolic and algebraic computation	proceedings-article
+52	10.1109/ivmem53963.2021.00014	2021	10.1109/ivmem53963.2021.00014	Towards Symbolic Pointers Reasoning in Dynamic Symbolic Execution	2021 Ivannikov Memorial Workshop (IVMEM)	proceedings-article
+53	10.5373/jardcs/v12sp3/20201233	2020	10.5373/jardcs/v12sp3/20201233	Useless Code Identification with Symbolic Execution	Journal of Advanced Research in Dynamical and Control Systems	journal-article
+54	10.1007/bf01016141	1994	10.1007/bf01016141	Generalized conditional symmetries and exact solutions of non-integrable equations	Theoretical and Mathematical Physics	journal-article
+55	10.1007/978-3-031-02551-8_2	2020	10.1007/978-3-031-02551-8_2	Symbolic Execution: The Basics	Synthesis Lectures on Software Engineering	book-chapter
+56	10.1007/0-387-26171-0_15	None	10.1007/0-387-26171-0_15	Conditional Execution	Guide to Assembly Language Programming in Linux	book-chapter
+57	10.31274/td-20251215-13	None	10.31274/td-20251215-13	Neuro-symbolic program generation and execution for hybrid reasoning		dissertation
+58	10.1109/apsec51365.2020.00066	2020	10.1109/apsec51365.2020.00066	A Program Simplification Method for Generating Test Input Values Using Symbolic Execution	2020 27th Asia-Pacific Software Engineering Conference (APSEC)	proceedings-article
+59	10.3390/math9222916	2021	10.3390/math9222916	Exact Solutions and Conservation Laws of a Generalized (1  + 1) Dimensional System of Equations via Symbolic Computation	Mathematics	journal-article
+60	10.1007/s003620100052	2001	10.1007/s003620100052	On the characterization of generalized extreme value, power function, generalized Pareto and classical Pareto distributions by conditional expectation of record values	Statistical Papers	journal-article
+61	10.22541/au.174664104.48818914/v1	2025	10.22541/au.174664104.48818914/v1	Symbolic Conditional Entropy in Layered Dynamical Systems		posted-content
+62	10.7717/peerjcs.224/table-2	None	10.7717/peerjcs.224/table-2	Table 2: Exact values.		component
+63	10.14711/thesis-b1477728	None	10.14711/thesis-b1477728	Context and precondition-guided search strategies in dynamic symbolic execution		dissertation
+64	10.1520/stp32900s	1985	10.1520/stp32900s	Summary of Error Analysis for the National Bureau of Standards 1016-mm Guarded Hot Plate and Considerations Regarding Systematic Error for the Heat Flow Meter Apparatus	Guarded Hot Plate and Heat Flow Meter Methodology	book-chapter
+65	10.1093/imamat/62.3.283	1999	10.1093/imamat/62.3.283	Exact solutions to nonlinear diffusion equations obtained by a generalized conditional symmetry method	IMA Journal of Applied Mathematics	journal-article
+66	10.15368/theses.2012.212	None	10.15368/theses.2012.212	Automated Student Code Assessment with Symbolic Execution and Java PathFinder		dissertation
+67	10.1108/ws.2003.07952daa.001	2003	10.1108/ws.2003.07952daa.001	Increasing knowledge: increasing values	Work Study	journal-article
+68	10.5220/0001992701440150	2009	10.5220/0001992701440150	SYMBOLIC EXECUTION FOR DYNAMIC, EVOLUTIONARY TEST DATA GENERATION	Proceedings of the 11th International Conference on Enterprise Information	proceedings-article
+69	10.1007/0-387-23905-7_9	None	10.1007/0-387-23905-7_9	Exact Symbolic Analysis Using Determinant Decision Diagrams	Symbolic Analysis and Reduction of VLSI Circuits	book-chapter
+70	10.1006/jsco.2000.1069	2000	10.1006/jsco.2000.1069	The Symbolic Integration of Exact PDEs	Journal of Symbolic Computation	journal-article
+71	10.1007/bf00528561	1971	10.1007/bf00528561	Generalized quantum mechanical two-centre problems	Theoretica Chimica Acta	journal-article
+72	10.1145/258726.258851	1997	10.1145/258726.258851	Guarded expressions in practice	Proceedings of the 1997 international symposium on Symbolic and algebraic computation  - ISSAC '97	proceedings-article
+73	10.1007/3-540-36577-x_40	2003	10.1007/3-540-36577-x_40	Generalized Symbolic Execution for Model Checking and Testing	Lecture Notes in Computer Science	book-chapter
+74	10.1023/b:cjop.0000024955.75594.8c	2004	10.1023/b:cjop.0000024955.75594.8c	Exact Analytical Solutions of the Generalized Calogero-Bogoyavlenskii-Schiff Equation Using Symbolic Computation	Czechoslovak Journal of Physics	journal-article
+75	10.1109/iwia.1999.898839	None	10.1109/iwia.1999.898839	Selective guarded execution using profiling on a dynamically scheduled processor	Innovative Architecture for Future Generation High-Performance Processors and Systems (Cat. No.PR00650)	proceedings-article
+76	10.1007/978-94-011-0315-2_42	1994	10.1007/978-94-011-0315-2_42	Summary Comments	Instability and Variability of Hot-Star Winds	book-chapter
+77	10.1177/096327199900800113	1999	10.1177/096327199900800113	Faking Nature: The Ethics of Environmental Restoration	Environmental Values	journal-article
+78	10.14711/thesis-b566074	None	10.14711/thesis-b566074	Generalized method of moments estimation of generalized autoregressive conditional heteroskedastic models		dissertation
+79	10.1007/0-387-29906-8_6	None	10.1007/0-387-29906-8_6	Exact Parametrizations	Scalable Hardware Verification with Symbolic Simulation	book-chapter
+80	10.4135/9781036210052	2025	10.4135/9781036210052	Personal Values: Summary		database
+81	10.1016/j.jsc.2016.07.012	2017	10.1016/j.jsc.2016.07.012	A generic framework for symbolic execution: A coinductive approach	Journal of Symbolic Computation	journal-article
+82	10.21236/ada187494	1987	10.21236/ada187494	Optical Symbolic Processor for Expert System Execution		report
+83	10.17918/00001738	None	10.17918/00001738	ObfuscatorDynamic-LLVM		dissertation
+84	10.1201/9780203485897.ch11	2006	10.1201/9780203485897.ch11	Summary	Crisis Management Planning and Execution	book-chapter
+85	10.1016/j.jsc.2012.02.005	2013	10.1016/j.jsc.2012.02.005	Relations among conditional probabilities	Journal of Symbolic Computation	journal-article
+86	10.1145/1254810.1254814	2007	10.1145/1254810.1254814	Speculative optimization using hardware-monitored guarded regions for java virtual machines	Proceedings of the 3rd international conference on Virtual execution environments	proceedings-article
+87	10.1364/ao.26.000023	1987	10.1364/ao.26.000023	Generalized Lorenz-Mie theory: first exact values and comparisons with the localized approximation	Applied Optics	journal-article
+88	10.3724/sp.j.1016.2010.00589	2010	10.3724/sp.j.1016.2010.00589	Symbolic Test Generation and Execution of Route Protocol	Chinese Journal of Computers	journal-article
+89	10.1201/9781420036190-12	2005	10.1201/9781420036190-12	Elements of Conditional Analysis	Exact Analysis of Discrete Data	book-chapter
+90	10.1006/jsvi.1994.1060	1994	10.1006/jsvi.1994.1060	Beams and Arcs: Exact Values of Frequencies Via a Generalized Solution	Journal of Sound and Vibration	journal-article
+91	10.7764/tesisuc/ing/60993	None	10.7764/tesisuc/ing/60993	Exploring symbolic music generation techniques using conditional generative adversarial networks		dissertation
+92	10.17918/00007445	None	10.17918/00007445	Generalized conditional moments and international asset pricing		dissertation
+93	10.18122/td/1597/boisestate	None	10.18122/td/1597/boisestate	Suitability of Finite State Automata to Model String Constraints in Probablistic Symbolic Execution		dissertation
+94	10.26226/morressier.604907f41a80aac83ca25d1b	2021	10.26226/morressier.604907f41a80aac83ca25d1b	Coupled Relational Symbolic Execution for Differential Privacy		posted-content
+95	10.1007/978-1-4419-0224-5_8	2009	10.1007/978-1-4419-0224-5_8	Exact symbolic models for control	Verification and Control of Hybrid Systems	book-chapter
+96	10.1016/j.cnsns.2009.12.014	2010	10.1016/j.cnsns.2009.12.014	Exact solutions and generalized conditional symmetries to (1+1)-dimensional reaction-diffusion equations	Communications in Nonlinear Science and Numerical Simulation	journal-article
+97	10.1016/j.jsc.2023.102255	2024	10.1016/j.jsc.2023.102255	Nash conditional independence curve	Journal of Symbolic Computation	journal-article
+98	10.1007/978-1-4419-0224-5_7	2009	10.1007/978-1-4419-0224-5_7	Exact symbolic models for verification	Verification and Control of Hybrid Systems	book-chapter
+99	10.1016/j.chaos.2006.03.003	2007	10.1016/j.chaos.2006.03.003	Symbolic computation of exact solutions for the (2+1)-dimensional generalized stochastic KP equation	Chaos, Solitons &amp; Fractals	journal-article
+100	10.1145/3808306	2026	10.1145/3808306	Soteria: Efficient Symbolic Execution as a Functional Library: Perhaps You Should Write Your Own Symbolic Execution Engine!	Proceedings of the ACM on Programming Languages	journal-article
