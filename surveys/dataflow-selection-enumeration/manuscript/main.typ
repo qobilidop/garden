@@ -65,10 +65,7 @@
 #include "sections/03-method.typ"
 #include "sections/04-formal-model.typ"
 #include "sections/05-algorithms.typ"
-
-= Complexity and established special cases <sec-complexity>
-
-_To be completed after the formal-model review._
+#include "sections/06-complexity.typ"
 
 = Related-work synthesis <sec-related>
 
