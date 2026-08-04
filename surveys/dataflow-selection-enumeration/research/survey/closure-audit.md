@@ -1617,3 +1617,58 @@ caller-input inverse fibers, and typed residuals together.
 
 Round 43 cannot count toward closure. Round 44's precondition failed; it is
 retired unexecuted and cannot count toward the required no-add sequence.
+
+## Replacement round `closure-replacement-45`: Crossref
+
+Frozen on 2026-08-04 after reconciliation and independent adjudication of
+round 43, and before any round-45 or round-46 query was executed. Source:
+Crossref REST API. Each exact phrase is searched with `query.bibliographic`,
+sorted by relevance, with the first 100 records exported unless fewer are
+returned. A round qualifies as no-add only if complete screening adds neither
+a conceptual cluster nor a plausible close competitor. A publication within
+an already represented lineage does not reopen the map unless it changes the
+compared semantic object, guarantee, or program-model boundary, or is
+materially closer to the target construction.
+
+| ID | Exact query |
+|---|---|
+| C45-01 | `mechanized operational dataflow circuits determinacy channel histories` |
+| C45-02 | `intensional extensional dataflow token production observer` |
+| C45-03 | `compositional observer semantics Petri net property pattern` |
+| C45-04 | `causal noninterleaving dataflow internal computation equivalence` |
+| C45-05 | `dataflow causality interface deadlock enabled dependencies` |
+| C45-06 | `relational specification refinement timed dataflow networks` |
+| C45-07 | `exact selection observation caller input fiber residual` |
+| C45-08 | `requested site outcome partial map inverse image` |
+| C45-09 | `contextual dataflow internal event input partition` |
+| C45-10 | `symbolic residual observation guard enumeration` |
+| C45-11 | `demand selected dataflow observer exact image` |
+| C45-12 | `dataflow circuit selection observer caller inputs` |
+
+## Replacement round `closure-replacement-46`: arXiv
+
+Execute only if round 45 adds neither a conceptual cluster nor a plausible
+close competitor. Source: arXiv API. Frozen on 2026-08-04 before any round-45
+or round-46 execution. Each phrase is submitted as the conjunction of all
+alphanumeric terms across arXiv's `all` field, sorted by relevance, with at
+most the first 100 records and abstracts exported.
+
+| ID | Exact query |
+|---|---|
+| C46-01 | `mechanized operational dataflow circuits determinacy channel histories` |
+| C46-02 | `intensional extensional dataflow token production observer` |
+| C46-03 | `compositional observer semantics Petri net property pattern` |
+| C46-04 | `causal noninterleaving dataflow internal computation equivalence` |
+| C46-05 | `dataflow causality interface deadlock enabled dependencies` |
+| C46-06 | `relational specification refinement timed dataflow networks` |
+| C46-07 | `exact selection observation caller input fiber residual` |
+| C46-08 | `requested site outcome partial map inverse image` |
+| C46-09 | `contextual dataflow internal event input partition` |
+| C46-10 | `symbolic residual observation guard enumeration` |
+| C46-11 | `demand selected dataflow observer exact image` |
+| C46-12 | `dataflow circuit selection observer caller inputs` |
+
+If round 45 reopens the map, round 46 is retired unexecuted. If both qualify,
+they establish the required two-round no-add sequence only for the recorded
+sources, exact queries, captured rankings, date, and frozen trigger. Complete
+primary and independent audits remain mandatory before closure.
