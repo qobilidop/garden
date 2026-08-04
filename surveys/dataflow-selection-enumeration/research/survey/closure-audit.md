@@ -1717,3 +1717,58 @@ residuals.
 
 Round 45 cannot count toward closure. Round 46's precondition failed; it is
 retired unexecuted and cannot count toward the required no-add sequence.
+
+## Replacement round `closure-replacement-47`: Crossref
+
+Frozen on 2026-08-04 after reconciliation and independent adjudication of
+round 45, and before any round-47 or round-48 query was executed. Source:
+Crossref REST API. Each exact phrase is searched with `query.bibliographic`,
+sorted by relevance, with the first 100 records exported unless fewer are
+returned. A round qualifies as no-add only if complete screening adds neither
+a conceptual cluster nor a plausible close competitor. A publication within
+an already represented lineage does not reopen the map unless it changes the
+compared semantic object, guarantee, or program-model boundary, or is
+materially closer to the target construction.
+
+| ID | Exact query |
+|---|---|
+| C47-01 | `guard enable disable dynamic dataflow execution trace` |
+| C47-02 | `dataflow execution trace graph action firing guard dependency` |
+| C47-03 | `dataflow circuits excessive dynamism inductive invariants` |
+| C47-04 | `mechanized dataflow hardware refinement dynamic HLS` |
+| C47-05 | `property directed slicing timed Petri net dependency graph` |
+| C47-06 | `slack elastic program dataflow circuit semantics` |
+| C47-07 | `exact caller input partition internal guard observation` |
+| C47-08 | `selection site observation symbolic residual fiber` |
+| C47-09 | `requested root dataflow event inverse image` |
+| C47-10 | `dynamic dataflow guard trace input equivalence` |
+| C47-11 | `dataflow observer partial map caller inputs` |
+| C47-12 | `complete internal event observation enumeration residual` |
+
+## Replacement round `closure-replacement-48`: arXiv
+
+Execute only if round 47 adds neither a conceptual cluster nor a plausible
+close competitor. Source: arXiv API. Frozen on 2026-08-04 before any round-47
+or round-48 execution. Each phrase is submitted as the conjunction of all
+alphanumeric terms across arXiv's `all` field, sorted by relevance, with at
+most the first 100 records and abstracts exported.
+
+| ID | Exact query |
+|---|---|
+| C48-01 | `guard enable disable dynamic dataflow execution trace` |
+| C48-02 | `dataflow execution trace graph action firing guard dependency` |
+| C48-03 | `dataflow circuits excessive dynamism inductive invariants` |
+| C48-04 | `mechanized dataflow hardware refinement dynamic HLS` |
+| C48-05 | `property directed slicing timed Petri net dependency graph` |
+| C48-06 | `slack elastic program dataflow circuit semantics` |
+| C48-07 | `exact caller input partition internal guard observation` |
+| C48-08 | `selection site observation symbolic residual fiber` |
+| C48-09 | `requested root dataflow event inverse image` |
+| C48-10 | `dynamic dataflow guard trace input equivalence` |
+| C48-11 | `dataflow observer partial map caller inputs` |
+| C48-12 | `complete internal event observation enumeration residual` |
+
+If round 47 reopens the map, round 48 is retired unexecuted. If both qualify,
+they establish the required two-round no-add sequence only for the recorded
+sources, exact queries, captured rankings, date, and frozen trigger. Complete
+primary and independent audits remain mandatory before closure.
