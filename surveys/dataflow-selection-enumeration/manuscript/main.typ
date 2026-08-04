@@ -63,10 +63,7 @@
 #include "sections/01-introduction.typ"
 #include "sections/02-motivating-example.typ"
 #include "sections/03-method.typ"
-
-= Formal model <sec-formal-model>
-
-_To be completed after the final survey-saturation audit._
+#include "sections/04-formal-model.typ"
 
 = Algorithms and correctness <sec-algorithms>
 

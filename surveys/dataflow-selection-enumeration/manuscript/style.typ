@@ -23,6 +23,7 @@
 
 #let named-statement(kind, title, body) = block(
   width: 100%,
+  breakable: false,
   inset: (left: 0.8em, right: 0.8em, top: 0.55em, bottom: 0.55em),
   above: 0.85em,
   below: 0.85em,
