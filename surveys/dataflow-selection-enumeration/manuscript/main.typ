@@ -64,10 +64,7 @@
 #include "sections/02-motivating-example.typ"
 #include "sections/03-method.typ"
 #include "sections/04-formal-model.typ"
-
-= Algorithms and correctness <sec-algorithms>
-
-_To be completed after the formal-model review._
+#include "sections/05-algorithms.typ"
 
 = Complexity and established special cases <sec-complexity>
 
