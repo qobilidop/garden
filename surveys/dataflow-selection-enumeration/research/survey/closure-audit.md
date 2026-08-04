@@ -884,6 +884,56 @@ That precondition failed, so round 28 is retired unexecuted and cannot count
 toward closure. Two later rounds must be frozen only after the citation
 neighborhood reconciliation is complete.
 
+## Replacement round `closure-replacement-29`: Crossref
+
+Source: Crossref REST API. Frozen on 2026-08-04 after the round-27 additions
+and all eight critical backward and forward neighborhoods were reconciled, and
+before any query below was executed. Each query exports the first 100
+relevance-ranked records for complete title screening, followed by abstract
+and primary review when plausibility remains.
+
+| ID | Exact query |
+|---|---|
+| C29-01 | `guarded heap summary conditional values generalized symbolic execution exact` |
+| C29-02 | `path optimal heap alias ite symbolic execution` |
+| C29-03 | `compact modular heap procedure summary guarded value` |
+| C29-04 | `relatively complete higher order functional verification refinement type` |
+| C29-05 | `minimal explanation basis marking unobservable reach observation` |
+| C29-06 | `representative marking graph observation consistent Petri net` |
+| C29-07 | `observation equivalent Petri net generator adaptive label` |
+| C29-08 | `minimum initial timed marking unobservable transition observation` |
+| C29-09 | `reads value from schedule equivalence stateless model checking` |
+| C29-10 | `observer conditioned dynamic partial order reduction future read` |
+| C29-11 | `dynamic cone influence concurrent model checking property reduction` |
+| C29-12 | `requested root selection input fiber residual dataflow graph` |
+
+## Replacement round `closure-replacement-30`: arXiv
+
+Execute only if round 29 adds neither a conceptual cluster nor a plausible
+close competitor. Source: arXiv API. Frozen on 2026-08-04 before any round-29
+or round-30 query was executed. Each phrase is submitted as the conjunction of
+all alphanumeric terms across arXiv's `all` field, sorted by relevance, with at
+most the first 100 records and abstracts exported.
+
+| ID | Exact query |
+|---|---|
+| C30-01 | `exact guarded heap symbolic execution summary` |
+| C30-02 | `path optimal heap symbolic execution alias` |
+| C30-03 | `compact heap procedure summary symbolic` |
+| C30-04 | `higher order functional relatively complete refinement verification` |
+| C30-05 | `basis marking minimal explanation partial observation` |
+| C30-06 | `Petri observation equivalent generator` |
+| C30-07 | `minimum initial marking unobservable timed observation` |
+| C30-08 | `reads value from partial order reduction` |
+| C30-09 | `observer dynamic partial order reduction` |
+| C30-10 | `canonical symbolic distributed state interleaving` |
+| C30-11 | `dynamic cone influence model checking` |
+| C30-12 | `requested event input preimage residual` |
+
+If round 29 reopens the map, round 30 is retired unexecuted. If both qualify,
+they establish the required two-round no-add sequence only for the recorded
+sources, exact queries, captured rankings, date, and frozen trigger.
+
 ## Independent audit
 
 After both replacement rounds qualify, a reviewer who did not choose the
