@@ -11,11 +11,13 @@ already supplies:
 - projected enumeration of selected theory observations;
 - sparse disjoint partial models and deterministic decision diagrams; and
 - hardware-oriented functional-space partitioning guided by mux structure.
+- a compositional free abstraction for static computations with dynamically
+  selected effects.
 
 These ingredients combine through a straightforward activation/outcome
 instrumentation of a finite pure graph.
 
-## Narrow open thesis
+## Exact packaging gap
 
 No exact match found so far gives a compositional, graph-intensional semantics
 of deterministic selection observations that simultaneously:
@@ -26,17 +28,17 @@ of deterministic selection observations that simultaneously:
 - returns exact input guards and residual values; and
 - supports reusable subgraph summaries equal to whole-graph evaluation.
 
-The absence of an exact packaging match is not evidence of novelty. The
-original-paper route depends on a universal or compositional theorem and a
-non-flattening consequence that the projected-AllSMT reduction does not
-provide for free.
+The absence of an exact packaging match is not evidence of novelty. Plain
+compositionality is already supplied by selective functors, and exact
+enumeration is supplied by projected AllSMT after activation instrumentation.
+The packaging gap is useful as a running example for a survey taxonomy, not as
+an original-paper claim.
 
-## Route rule
+## Route decision
 
-- Continue toward an original theory paper only if the observer, congruence,
-  substitution, sharing, and summary theorems survive counterexamples.
-- Route to a survey or taxonomy paper if the strongest semantics remains an
-  arbitrary observation function and the strongest algorithm remains ordinary
-  projected enumeration.
-- A CAV tool-paper route additionally requires direct baseline experiments and
-  a demonstrated validation or scalability frontier.
+- The manuscript is a survey with a unifying formal synthesis.
+- The formal framework connects established objects and makes their observer
+  choices explicit; it must not present the fiber theorem or activation
+  reduction as a new symbolic-execution method.
+- A future CAV tool paper remains possible only after direct baseline
+  experiments show a validation or scalability frontier.

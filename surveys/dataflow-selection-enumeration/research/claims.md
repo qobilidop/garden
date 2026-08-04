@@ -50,7 +50,7 @@ proof obligations, and evidence.
 
 ## H04 — Selection observation is a compositional intensional semantics
 
-- **Status:** candidate contribution; unproved
+- **Status:** expressible by established machinery; rejected as original
 - **Provisional statement:** For a fixed finite typed pure term graph and an
   explicit selection-observing interface, the map containing exactly the
   result-observed selection-site outcomes is the least compositional refinement
@@ -62,10 +62,15 @@ proof obligations, and evidence.
   object. Merely declaring hidden events observable makes the theorem
   tautological. Ordinary XLS value contexts cannot distinguish equal-valued
   alternatives.
+- **Resolution:** Translate strict nodes applicatively and selections through a
+  free selective computation. Interpret it in a reader of input combined with
+  an idempotent writer of site/outcome events. Mokhov et al. already supply the
+  free syntax and universal interpreter. The coarsest-partition statement is a
+  kernel factorization relative to an explicit observer.
 
 ## H05 — Contextual summaries compose exactly under sharing and calls
 
-- **Status:** candidate contribution; unproved
+- **Status:** supporting synthesis; rejected as original
 - **Provisional statement:** A summary computed once for a subgraph can be
   instantiated at contextual call occurrences and composed with a caller to
   yield exactly the same observation guards and residual values as whole-graph
@@ -76,6 +81,10 @@ proof obligations, and evidence.
 - **Key risk:** Naive tree neededness does not lift to shared term graphs, and a
   summary that exposes all internal outcomes may simply be ordinary relational
   encoding.
+- **Resolution:** Output-demand-parametric summaries do compose exactly by
+  propagating the caller's boundary-demand mask and unioning namespaced event
+  maps. This is selective/relational composition. It has no general compactness
+  or output-delay advantage over flat activation instrumentation.
 
 ## H06 — Full-observation blocking takes one satisfiable query per result
 
@@ -90,3 +99,34 @@ proof obligations, and evidence.
   to projected AllSMT over explicit activation/outcome variables. Formula size,
   incremental solving cost, and comparison to compiled enumeration remain to
   be analyzed.
+
+## S01 — Taxonomy of omission mechanisms
+
+- **Status:** survey synthesis
+- **Statement:** Structural inactivity, existential projection, logical
+  don't-care, equal-value coalescing, abstract merging, and heuristic
+  functional-space partitioning omit different information and preserve
+  different observers.
+- **Evidence required:** an extraction matrix covering definitions, observer,
+  representation, guarantee, and complexity for every deep-read work.
+
+## S02 — Three equivalent presentations of selection observation
+
+- **Status:** survey synthesis; formal derivation recorded
+- **Statement:** For finite total selective term graphs, the same graph-relative
+  observation is obtained by enabled-edge reachability, an exact selective
+  reader/writer interpretation, and a total inactive-or-outcome activation
+  encoding.
+- **Presentation rule:** Attribute the component constructions to their
+  established literatures; present only the cross-literature equivalence as our
+  organizing derivation.
+
+## S03 — Fiber generation equals projected enumeration
+
+- **Status:** survey synthesis; formal derivation recorded
+- **Statement:** A concolically generated local guard is the exact input fiber
+  of one observation, and it is equivalent to fixing the projected activation
+  variables in the global encoding.
+- **Consequence:** Model-and-full-fiber-block and naive projected AllSMT both
+  require \(K\) satisfying models plus a final unsatisfiable query. Solver time
+  and representation size remain separate.

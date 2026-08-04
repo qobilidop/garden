@@ -1,6 +1,6 @@
 # 0001 — Conditional original-paper route with a survey fallback
 
-- **Status:** provisional
+- **Status:** superseded by 0002
 - **Date:** 2026-08-04
 
 ## Context
@@ -31,6 +31,9 @@ problem; otherwise the preferred outcome remains an original research paper.
   activation/outcome instrumentation.
 - Event and configuration structures weaken novelty claims about sparse sets
   of enabled structural events.
+- Selective applicative functors already give laws, a free construction, and
+  reusable interpretations for statically visible computations with
+  dynamically skipped effects.
 - A deterministic observation map induces a disjoint cover by its fibers; this
   theorem is mathematically useful but elementary.
 
@@ -52,8 +55,9 @@ stronger thesis:
 The theory gate requires all of the following:
 
 - an explicit observer language or observation algebra;
-- a non-tautological congruence, minimality, full-abstraction, or universal
-  characterization;
+- a non-tautological graph-sharing-aware congruence, minimality,
+  full-abstraction, or universal characterization not inherited from the free
+  selective construction;
 - exact composition under graph substitution and sharing;
 - contextual occurrence semantics for calls and finite iteration;
 - a summary construction or complexity result not obtained merely by adding

@@ -8,3 +8,4 @@ date	discovery_source	query_or_method	results_screened	works_added	notes
 2026-08-04	Forward snowballing	projected AllSMT disjoint partial enumeration important variables	15+	3	Found the 2025 projected SAT and SMT extension and theory-DD baseline
 2026-08-04	Concept search	configuration structures event structures demand dataflow	15+	4	Established that sparse enabled-event configurations are not a novel object by themselves
 2026-08-04	Concept search	decision DNNF disjoint partial models polynomial delay	10+	3	Added knowledge-compilation alternative to direct solver enumeration
+2026-08-04	Adversarial novelty search	compositional conditional computation free selective functor	10+	2	Selective functors occupy compositional static structure with dynamically skipped effects

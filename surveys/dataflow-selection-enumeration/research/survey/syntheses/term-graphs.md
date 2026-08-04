@@ -12,6 +12,11 @@ Needed-narrowing work further establishes demand-guided complete evaluation in
 functional-logic programs. Related term-graph results warn that neededness on
 trees does not automatically lift to shared graphs.
 
+Selective applicative functors separately give an algebraic interface for
+statically visible computations whose effects are selected dynamically. Their
+free construction and generic interpreter already provide ordinary
+compositionality for conditional static structure.
+
 Consequently, a paper about our calculus cannot claim that delayed choice,
 shared choice identity, exhaustive alternatives, or schedule independence are
 new in general.
@@ -48,8 +53,10 @@ the graph into a tree.
 
 ## Candidate original question
 
-Does there exist a finite interface summary for a subgraph that exposes exactly
+Does there exist a finite *graph-sharing-aware* interface summary for a
+subgraph that exposes exactly
 the structural observations required by its callers and composes under sharing
 and substitution? A positive exactness and minimality theorem could be stronger
-than the direct flattened AllSMT encoding. A summary that merely exports every
-internal activity and outcome variable is not.
+than both the direct flattened AllSMT encoding and a symbolic interpretation of
+a free selective computation. A summary that merely exports every internal
+activity and outcome variable is not.
