@@ -85,6 +85,13 @@ account, and stability and sequentiality results
 establish whole-network semantic and structural boundaries; none of their
 accessible records states an exact image-and-inverse-fiber contract for a
 requested sparse internal observer.
+Jonsson's later trace semantics makes this boundary sharper: it is fully
+abstract and compositional for nondeterministic FIFO dataflow, and extends to
+asynchronous networks with unordered or lossy channels
+@jonsson1994fullabstraction. Meaning-preserving translation has also related
+Kahn processes directly to firing-based actors @cedersjo2016processesactors.
+These results compare whole network traces or program models; they do not
+enumerate requested firing outcomes and their caller-input inverse images.
 The intensional/extensional distinction is itself explicit in dataflow
 semantics. A categorical account records stepwise token production, whereas a
 synchronous Kahn account records the functions computed by nodes; the two are
@@ -148,20 +155,33 @@ dataflow-circuit specification and hardware implementation, as a step toward a
 Rocq-verified dynamically scheduled HLS compiler @law2026hardware. That
 refinement boundary relates whole circuit models rather than enumerating an
 internal selection observer over symbolic caller inputs.
+Earlier cross-level results are substantial. A conformance relation maps
+explicit synchronous-hardware signals to token production and consumption in
+asynchronous queued dataflow while preserving worst-case throughput and
+latency @tripakis2016tokenssignals. Modular refinement from synchronous
+machines to bounded latency-insensitive dataflow networks gives a separate
+cycle-accurate compositional guarantee @vijayaraghavan2009bounded. Both relate
+whole hardware and dataflow behaviors, not the inverse input fibers of one
+requested internal observer.
 Dynamic-dataflow execution-trace graphs are a closer guard-level predecessor.
 Their nodes are concrete action firings and their dependency edges include
 tokens, ports, state, and explicit guard-enable or guard-disable relations;
 serial executions support a finite design-space reconstruction
-@brunet2013guardtraces @brunet2015dynamicdataflow. The construction is
-post-mortem and concrete-run based, not an exhaustive symbolic input partition,
-and its trace nodes carry no general residual value per observation fiber.
+@brunet2013guardtraces @brunet2015dynamicdataflow. The later journal formalism
+specifies the processing needed for one execution-trace graph to represent all
+admissible trajectories of a dynamic dataflow process network
+@casalebrunet2018etg. This completeness is over action-firing schedules and
+dependencies, not over caller-input fibers, and its trace nodes carry no
+general residual value per observation.
 Formal optimization of HLS dataflow circuits gives a complementary omission
 boundary. Model checking can prove that generic handshake behaviors are absent
 before simplifying the circuit without restricting behavior, while
 HLS-informed inductive invariants make the required property proofs scalable
-@xu2023dynamism @xu2023invariants. These methods decide selected circuit
-properties and remove unnecessary protocol generality; they do not enumerate
-all input-indexed internal observations.
+@xu2023dynamism @xu2023invariants. Latency and occupancy balancing can instead
+remove spurious stalls, make exchanges predictable, and expose further
+handshake simplification opportunities @xu2024spuriousdynamism. These methods
+prove or transform selected circuit behaviors; they do not enumerate all
+input-indexed internal observations.
 
 Delayed-choice execution is an especially instructive neighbor. A bounded
 nondeterministic value remains in a shared suspension until a non-copy use
@@ -386,6 +406,22 @@ never-fired or property-irrelevant transitions, and preserves the execution
 paths needed for property checking equivalent to the unsliced net
 @chariyathitipong2022tpnslicing. It returns one property-relative sliced model,
 not every observation and its inverse caller-input set.
+Structural-dependency slicing supplies a marking-sensitive predecessor
+@yu2015dynamicpnslicing. Stronger maximal/minimal algorithms retain either
+every node that may contribute tokens to requested places in any computation,
+or the nodes for one shortest contributing sequence, with the respective
+maximality and minimality proved @llorens2023pnslicing. Timed aggregate graphs
+give another exact boundary by finitely preserving timed traces and reachable
+states of bounded strong-semantics Time Petri Nets @klai2015tag. These methods
+return a subnet or state graph rather than a partition of caller inputs paired
+with residual functions.
+Discrete-event observation policies can themselves depend on states or
+transitions; exact constructions produce a deterministic generator for the
+visible event language @sears2018observationpolicies. A complementary
+optimization minimizes the observable event alphabet while preserving
+supervisor control equivalence @hu2026minimalobservation. Thus sparse and
+minimal event observation are established objects, but they range over event
+languages and supervisors rather than pure-program input fibers.
 At a component boundary, dynamic interface reduction discovers externally
 visible behavior online and avoids global exploration of internal behavior
 that cannot propagate through the interface @guo2011interface. This is a

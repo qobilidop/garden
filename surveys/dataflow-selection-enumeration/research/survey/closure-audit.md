@@ -1772,3 +1772,49 @@ If round 47 reopens the map, round 48 is retired unexecuted. If both qualify,
 they establish the required two-round no-add sequence only for the recorded
 sources, exact queries, captured rankings, date, and frozen trigger. Complete
 primary and independent audits remain mandatory before closure.
+
+## Outcome of round 47 and retirement of round 48
+
+Round 47 reopens the map under the frozen conservative trigger. All three
+auditors parsed and title-screened the 1,200 logical occurrences. Every
+snapshot has the required seven-column header, 100 records, ranks 1--100, and
+100 unique nonblank source identifiers. The batch contains 1,091 unique
+identifiers. Twenty blank-title occurrences represent 18 nontechnical grant,
+dataset, journal-issue, or container identifiers. One quoted title spans two
+physical lines and was parsed as one logical record. All three independent
+normalizations counted 1,005 unique nonblank titles under their documented
+punctuation and Unicode rules.
+
+All three auditors returned reopen and agreed on three decisive additions:
+
+- Casale Brunet and Mattavelli's 2018 journal execution-trace-graph formalism
+  explicitly claims a complete representation capable of covering all
+  admissible trajectories of a dynamic dataflow process network. This is a
+  stronger guarantee than the earlier serial trace and post-mortem framing.
+- The fuller *Tokens vs. Signals* journal article maps synchronous-hardware
+  signals to asynchronous token-production and token-consumption events and
+  defines conformance preserving worst-case throughput and latency.
+- Maximal and minimal dynamic Petri-net slicing respectively preserves every
+  computation that may contribute tokens to requested places and one shortest
+  contributing computation, with maximality and minimality proved.
+
+Conservative reconciliation also retains changed or supporting boundaries
+identified by at least one complete audit: structural-dependency Petri slicing;
+finite timed aggregate graphs; fully abstract compositional dataflow traces;
+meaning-preserving translation from Kahn processes to firing actors; modular
+bounded-dataflow and latency-insensitive circuit refinement; latency/occupancy
+balancing for spurious dataflow dynamism; observation-policy-relative
+discrete-event generators; and minimum observable event alphabets preserving
+supervisor control equivalence. Report, conference, and malformed-DOI aliases
+are reconciled to their fuller canonical publications.
+
+None of these works supplies the target construction. Execution-trace graphs
+range over action-firing trajectories; conformance and refinement compare
+whole dataflow and hardware behaviors; Petri slices return subnets or timed
+state graphs; and discrete-event observers return languages or supervisors.
+All three auditors found no work combining a complete sparse requested-site
+observation image, exact inverse caller-input fibers, and typed general
+residuals.
+
+Round 47 cannot count toward closure. Round 48's precondition failed; it is
+retired unexecuted and cannot count toward the required no-add sequence.

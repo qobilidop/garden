@@ -65,6 +65,38 @@ dataflow test generator, but it neither enumerates an input partition nor
 retains internal selector outcomes. The word “relevance” therefore does not by
 itself imply structural observation.
 
+## Dataflow traces, refinement, and observers
+
+The dataflow boundary is substantially stronger than a collection of
+implementation analogies. Brunet and Mattavelli's journal execution-trace graph
+formalism claims a complete representation of all admissible trajectories of a
+dynamic dataflow process network. Jonsson gives a compositional fully abstract
+trace model for nondeterministic FIFO dataflow and more general asynchronous
+channels. Cedersjö and Janneck give meaning-preserving translations from Kahn
+processes to firing-based actors. These results defeat any claim that complete
+dataflow trajectory objects, compositional trace semantics, or cross-style
+firing translations are new here. Their objects are whole action or channel
+histories, not caller-input fibers of one sparse graph observer.
+
+Cross-level guarantees are also established. Tripakis et al. map synchronous
+hardware signals to asynchronous token events and define conformance preserving
+throughput and latency. Vijayaraghavan and Arvind compose refinements from
+synchronous machines to bounded latency-insensitive dataflow networks. Law's
+mechanization extends operational dataflow-circuit semantics toward a hardware
+refinement. The proposed observer therefore cannot be justified by claiming a
+first formal bridge between dataflow and hardware; its scope is the narrower
+input-indexed requested-site map.
+
+Petri-net and discrete-event work supplies close requested-observation
+boundaries. Dynamic slices can be marking or MTL relative; maximal slicing can
+retain every transition that contributes tokens to selected places in any
+computation; timed aggregate graphs preserve timed traces and states; dynamic
+observation policies compile to deterministic observed-event generators; and
+minimal-observation synthesis reduces the observable alphabet while preserving
+supervisor control equivalence. These constructions establish requested-place,
+policy-relative, and minimal event observation without producing typed program
+residuals or caller-input inverse fibers.
+
 ## Positioning consequence
 
 No paper in this cluster packages the exact sparse contextual site map, but the
@@ -76,7 +108,11 @@ semantic ingredients are close:
 - Sylvia supplies modular hardware paths and witnesses; and
 - Palmer supplies formal context-sensitive demand; and
 - pseudo-exhaustive testing supplies support-local exhaustive circuit tests
-  and local-support complexity bounds.
+  and local-support complexity bounds;
+- execution-trace graphs supply complete dynamic-dataflow trajectory objects;
+- conformance and bounded-network refinement relate dataflow to hardware; and
+- Petri-net slicing and observation-policy synthesis supply exact
+  requested-event reductions.
 
 The survey therefore rules out claims of inventing choice-induced dataflow
 partitioning, symbolic trace equivalence, contextual demand, or modular hardware
