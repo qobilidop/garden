@@ -1177,3 +1177,55 @@ The prospective comparison is to the catalog frozen before round execution,
 so the adjudicated outcome is reopen even though both independent audits found
 no direct target work. Round 34's precondition therefore failed; it is retired
 unexecuted and cannot count toward closure.
+
+## Replacement round `closure-replacement-35`: Crossref
+
+Frozen on 2026-08-04 after complete reconciliation, citation chasing, and
+independent audit of round 33, and before any round-35 or round-36 query was
+executed. Source: Crossref REST API. Each exact phrase is searched with
+`query.bibliographic`, sorted by relevance, with the first 100 records exported
+unless fewer are returned. A round qualifies as no-add only if complete
+screening adds neither a conceptual cluster nor a plausible close competitor.
+
+| ID | Exact query |
+|---|---|
+| C35-01 | `safety property driven stubborn sets` |
+| C35-02 | `question guided stubborn set state properties` |
+| C35-03 | `transparent partial order reduction invisible actions` |
+| C35-04 | `optimal stubborn sets representative interleavings` |
+| C35-05 | `automata driven partial order reduction guided LTL` |
+| C35-06 | `relaxed visibility partial order observer property` |
+| C35-07 | `symbolic path simulation dataflow feasibility` |
+| C35-08 | `modular glass box similar states abstraction` |
+| C35-09 | `explicit happens before schedule abstraction` |
+| C35-10 | `infeasible path generalization symbolic input` |
+| C35-11 | `requested internal event observer caller input fiber` |
+| C35-12 | `sparse dataflow selection residual observation` |
+
+## Replacement round `closure-replacement-36`: arXiv
+
+Execute only if round 35 adds neither a conceptual cluster nor a plausible
+close competitor. Source: arXiv API. Frozen on 2026-08-04 before any round-35
+or round-36 execution. Each phrase is submitted as the conjunction of all
+alphanumeric terms across arXiv's `all` field, sorted by relevance, with at
+most the first 100 records and abstracts exported.
+
+| ID | Exact query |
+|---|---|
+| C36-01 | `safety property stubborn sets` |
+| C36-02 | `question guided stubborn set state property` |
+| C36-03 | `transparent partial order reduction` |
+| C36-04 | `optimal stubborn sets interleavings` |
+| C36-05 | `automata driven partial order reduction LTL` |
+| C36-06 | `relaxed visibility partial order property` |
+| C36-07 | `symbolic path simulation dataflow feasibility` |
+| C36-08 | `modular glass box similar states` |
+| C36-09 | `happens before schedule abstraction` |
+| C36-10 | `infeasible path generalization symbolic input` |
+| C36-11 | `requested event observer caller input fiber` |
+| C36-12 | `sparse dataflow selection residual observation` |
+
+If round 35 reopens the map, round 36 is retired unexecuted. If both qualify,
+they establish the required two-round no-add sequence only for the recorded
+sources, exact queries, captured rankings, date, and frozen trigger. Independent
+audit remains mandatory before closure.
