@@ -2,10 +2,13 @@
 
 ## Objective
 
-Determine whether exhaustive demand-sensitive symbolic evaluation of finite
-pure dataflow graphs is already known, identify the closest established
-formalisms and algorithms, and select terminology and theorem obligations that
-make the eventual contribution precise.
+Determine how prior work represents and exhaustively enumerates the distinct
+active-selection behaviors of finite pure dataflow graphs, identify the closest
+established formalisms and algorithms, and select terminology and theorem
+obligations that make the formal synthesis precise. An active selection is a
+selection site reached from the requested result by following strict operands
+and input-selected case edges. Constructing one monolithic symbolic expression
+or SMT encoding is a baseline, not the target enumeration problem.
 
 This is a systematic mapping study with backward and forward snowballing. It is
 not a systematic literature review: the objective is to map neighboring

@@ -1,10 +1,16 @@
-# Symbolic Evaluation of Pure Dataflow Graphs
+# Exhaustive Symbolic Enumeration of Active Selections in Pure Dataflow Graphs
 
-This repository contains a theory-backed survey of exhaustive, demand-sensitive
-symbolic evaluation of finite pure dataflow graphs. A novelty audit found that
-the original broad theory proposal decomposes into established semantic and
-enumeration machinery; the formal development is retained as a unifying lens
-rather than presented as a new foundational calculus.
+This repository contains a theory-backed survey and formal synthesis of
+exhaustive symbolic enumeration for finite pure dataflow graphs. The subject is
+not merely constructing one symbolic value or one SMT encoding: it is
+enumerating every distinct active-selection behavior with exact guards and
+residual values while omitting selections in inactive case cones. Starting at
+the requested result, an active-selection traversal follows every operand of a
+strict operator and only the selected cases of a selection operator. A
+novelty audit found that the original broad theory proposal decomposes into
+established semantic and enumeration machinery; the formal development is
+therefore retained as a unifying lens rather than presented as a new
+foundational calculus.
 
 The implementation that motivated the research lives in the separate
 [`xlsynth-symex`](https://github.com/qobilidop/xlsynth-symex) repository. XLS is
