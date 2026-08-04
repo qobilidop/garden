@@ -6,11 +6,16 @@ Across denotational symbolic execution, multipath execution, and trace
 partitioning, the recurring object is a family of guards paired with semantic
 states or values.
 
-- Voogd et al. define semantic pieces over disjoint input sets and prove both
-  concrete correspondence and a trace-to-piece correspondence.
+- Voogd et al. define symbolic denotations as substitutions paired with path
+  conditions, prove concrete correspondence, and give exact equations for
+  sequential composition, choice, and iteration.
 - MultiSE stores pairwise disjoint, exhaustive guarded expressions in value
   summaries and proves agreement with ordinary dynamic symbolic execution when
   approximations are absent.
+- Porncharoenwase et al. give a reusable symbolic evaluator with exact merging
+  and mechanized correspondence to concrete outcomes.
+- Grisette gives a compositional ordered-guard representation and
+  strategy-directed complete merging for guarded symbolic values.
 - Trace partitioning retains selected branch or value histories as abstract
   tokens, with explicit create and merge operations.
 
@@ -30,6 +35,19 @@ logical don't-care.
 That distinction is descriptive until an explicit observer and a
 compositional characterization make it mathematically consequential.
 
+## Composition is not the missing foundation
+
+Godefroid's SMART composes and reuses exact pre/post path summaries. Anand et
+al. lazily expand partial function summaries only when an unexplored path may
+be needed to reach a target. Vanoverberghe and Piessens supply a generic
+precision and progress discipline for compositional symbolic execution.
+
+These works eliminate “demand-driven summaries compose without losing path
+coverage” as a novelty claim. Their demand is target reachability, not the
+enabled closure of an output observation. The remaining survey distinction is
+therefore the represented quotient and enumeration contract, not ordinary
+function-summary composition.
+
 ## Terminological consequences
 
 - Avoid *path* for an unordered site-outcome map.
@@ -38,6 +56,9 @@ compositional characterization make it mathematically consequential.
 - Use *value summary* when comparing directly to MultiSE, but use *guarded
   residual value* for our per-observation result to avoid claiming the object
   is new.
+- Qualify every use of *demand*: target-directed exploration, needed reduction,
+  partial-value demand, event-enabling input, and enabled-edge observation are
+  different notions.
 
 ## Remaining comparison obligation
 

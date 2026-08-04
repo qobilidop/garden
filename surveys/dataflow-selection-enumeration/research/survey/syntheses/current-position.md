@@ -10,17 +10,20 @@ already supplies:
 - term-graph choice completeness with sharing;
 - projected enumeration of selected theory observations;
 - sparse disjoint partial models and deterministic decision diagrams; and
-- hardware-oriented functional-space partitioning guided by mux structure.
+- hardware-oriented functional-space partitioning guided by mux structure;
 - a compositional free abstraction for static computations with dynamically
-  selected effects.
+  selected effects;
+- exact and demand-driven reusable function summaries; and
+- normalized ordered-guard representations for merged symbolic values.
 
 These ingredients combine through a straightforward activation/outcome
 instrumentation of a finite pure graph.
 
 ## Exact packaging gap
 
-No exact match found so far gives a compositional, graph-intensional semantics
-of deterministic selection observations that simultaneously:
+Among the current deep-read set, no single work packages a compositional,
+graph-intensional semantics of deterministic selection observations that
+simultaneously:
 
 - retains structurally active equal-valued selections;
 - omits structurally inactive sites;

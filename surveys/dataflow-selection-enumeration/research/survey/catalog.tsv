@@ -30,13 +30,13 @@ antoy2011pull	2011	term-graphs	deep-read	critical	TPLP	https://doi.org/10.1017/S
 michelutti2024canonical	2024	decision-diagrams	deep-read	critical	ECAI	https://doi.org/10.3233/FAIA241007	Canonical theory decision diagrams built from AllSMT and Boolean DDs	-
 palmer2020demand	2020	demand-driven	deep-read	high	ICFP	https://doi.org/10.1145/3408984	Context-sensitive reverse symbolic evaluation for higher-order programs	-
 godefroid2007compositional	2007	compositional-symbolic-execution	deep-read	critical	POPL	https://doi.org/10.1145/1190215.1190226	Reusable precondition and postcondition summaries from separate component analyses	-
-anand2008demand	2008	compositional-symbolic-execution	candidate	critical	TACAS	https://doi.org/10.1007/978-3-540-78800-3_28	Demand-driven compositional symbolic execution with summaries generated for caller contexts	-
-vanoverberghe2011theoretical	2011	compositional-symbolic-execution	candidate	high	FASE	https://doi.org/10.1007/978-3-642-19811-3_18	Formal treatment of compositional symbolic execution precision and progress	-
+anand2008demand	2008	compositional-symbolic-execution	deep-read	critical	TACAS	https://doi.org/10.1007/978-3-540-78800-3_28	Demand-driven compositional symbolic execution with summaries generated for caller contexts	-
+vanoverberghe2011theoretical	2011	compositional-symbolic-execution	deep-read	high	FASE	https://doi.org/10.1007/978-3-642-19811-3_18	Formal treatment of compositional symbolic execution precision and progress	-
 qiu2015memoized	2015	compositional-symbolic-execution	candidate	high	ICSE	https://doi.org/10.1109/ICSE.2015.79	Memoized replay as a reusable compositional symbolic-execution technique	-
 porncharoenwase2022merging	2022	semantics	deep-read	critical	POPL	https://doi.org/10.1145/3498709	Mechanized reusable semantics for symbolic evaluation with merging	-
 voogd2025compositional	2025	semantics	deep-read	critical	Theoretical Computer Science	https://doi.org/10.1016/j.tcs.2025.115263	Compositional denotational traces substitutions and path conditions with concrete correspondence	-
 loow2024compositional	2024	compositional-symbolic-execution	deep-read	critical	ECOOP	https://doi.org/10.4230/LIPIcs.ECOOP.2024.25	Compositional engine for creating and consuming correctness and incorrectness specifications	-
-lu2023grisette	2023	merged-evaluation	candidate	critical	POPL	https://doi.org/10.1145/3571209	Symbolic compilation library centered on merged symbolic values and reusable solver-aided abstractions	-
+lu2023grisette	2023	merged-evaluation	deep-read	critical	POPL	https://doi.org/10.1145/3571209	Symbolic compilation library centered on merged symbolic values and reusable solver-aided abstractions	-
 bahar1997add	1997	decision-diagrams	deep-read	high	FMSD	https://doi.org/10.1023/A:1008699807402	Multi-terminal algebraic decision diagrams for compact finite-valued functions	-
 lagniez2024decisiondnnf	2024	model-enumeration	deep-read	critical	KR	https://doi.org/10.24963/kr.2024/48	Decision-DNNF compilation for enumerating disjoint partial models	-
 antoy2000needed	2000	term-graphs	deep-read	critical	JACM	https://doi.org/10.1145/347476.347484	Optimal needed narrowing with soundness completeness and demand-guided evaluation	-
