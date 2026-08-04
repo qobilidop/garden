@@ -161,8 +161,10 @@ proof obligations, and evidence.
   polyhedral regions are exactly the resulting observation image and fibers.
 - **Prior frontier:** Avis and Fukuda prove output-polynomial reverse-search
   enumeration of every arrangement cell, Sleumer improves the fixed-dimension
-  arithmetic bound, and Rada and Černý give a later complete duplicate-free
-  incremental formulation; Serra et al. enumerate feasible ReLU patterns;
+  arithmetic bound, Ferrez et al. give a pre-Rada ray-shooting central-arrangement
+  algorithm with \(O(KQ\,LP(Q,D))\) time and input-polynomial working space,
+  and Rada and Černý give a later complete duplicate-free incremental
+  formulation; Serra et al. enumerate feasible ReLU patterns;
   Geyer et al. compose affine event cells into exact PWA guard/residual pairs;
   Jones and Maciejowski give duplicate-free output-sensitive pLP critical-region
   enumeration with a reconstructible affine optimizer; Geyer et al. 2008

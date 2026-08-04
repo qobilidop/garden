@@ -1,0 +1,22 @@
+rank	source_id	year	doi	title	venue	type
+1	citation-1	2001	-	A Polynomial Case of Unconstrained Zero-One Quadratic Optimization	Mathematical Programming	journal-article
+2	citation-2	1996	10.1016/0166-218X(95)00026-N	Reverse Search for Enumeration	Discrete Applied Mathematics	journal-article
+3	citation-3	1986	-	A Solvable Case of Quadratic 0-1 Programming	Discrete Applied Mathematics	journal-article
+4	citation-4	1982	-	On the Computational Complexity of Ising Spin Glass Models	Journal of Physics A	journal-article
+5	citation-5	1987	-	A Guide to Simulation	Springer-Verlag	book
+6	citation-6	1943	-	Partition of Space	American Mathematical Monthly	journal-article
+7	citation-7	1995	-	Exact Ground States of Two-Dimensional ±J Ising Spin Glasses	Journal of Statistical Physics	journal-article
+8	citation-8	1987	-	Algorithms in Combinatorial Geometry	Springer-Verlag	book
+9	citation-9	1986	10.1137/0215019	Constructing Arrangements of Lines and Hyperplanes with Applications	SIAM Journal on Computing	journal-article
+10	citation-10	-	-	Solutions to Random Instances of the 01QP Obtained by the Parallel Zonotope Construction Code rs_tope.c	McGill University	data-software
+11	citation-11	2002	-	cddlib Reference Manual, cddlib Version 092b	ETH Lausanne and Zurich	software-manual
+12	citation-12	-	-	Implementations of LP-Based Reverse Search Algorithms for the Zonotope Construction and the Fixed-Rank Convex Quadratic Maximization in Binary Variables Using the ZRAM and the cddlib Libraries	McGill University	software-technical-report
+13	citation-13	1979	-	Computers and Intractability	W. H. Freeman	book
+14	citation-14	1995	-	Improved Approximation Algorithms for Maximum Cut and Satisfiability Problems Using Semidefinite Programming	Journal of the ACM	journal-article
+15	citation-15	1997	-	Maximizing the Product of Two Linear Functions in 0-1 Variables	RUTCOR, Rutgers University	research-report
+16	citation-16	1965	-	Some Network Flow Problems Solved with Pseudo-Boolean Programming	Operations Research	journal-article
+17	citation-17	1988	-	From Linear Separability to Unimodality: A Hierarchy of Pseudo-Boolean Functions	SIAM Journal on Discrete Mathematics	journal-article
+18	citation-18	-	-	ZRAM Homepage	University of New Brunswick	software-webpage
+19	citation-19	1974	-	Minimum Cuts and Related Problems	Networks	journal-article
+20	citation-20	1975	-	Facing Up to Arrangements: Face-Count Formulas for Partitions of Space by Hyperplanes	Memoirs of the American Mathematical Society	monograph
+21	citation-21	1994	-	Lectures on Polytopes	Springer-Verlag	book

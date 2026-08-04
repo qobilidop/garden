@@ -11,8 +11,11 @@
 Rada and Černý provide a proof-bearing incremental cell-enumeration algorithm
 that Balestriero and LeCun later specialize to neural activation hyperplanes.
 Avis and Fukuda's reverse search and Sleumer's fixed-dimensional improvement
-already establish earlier output-sensitive arrangement-cell enumeration; Rada
-and Černý supply the especially direct incremental sign-prefix formulation.
+already establish earlier output-sensitive arrangement-cell enumeration.
+Ferrez, Fukuda, and Liebling's 2005 central-arrangement algorithm also already
+has the \(O(m\,LP(m,d)\,|C_m|)\) LP-relative bound later associated with
+modified reverse search. Rada and Černý supply the especially direct
+incremental sign-prefix formulation rather than the first bound of that form.
 IncEnu preserves exact, duplicate-free, output-polynomial
 enumeration of full-dimensional hyperplane cells. Those properties cannot be
 claimed as new for our more general solver recurrence.

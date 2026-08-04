@@ -124,8 +124,15 @@ restricted setting, Avis and Fukuda's reverse search gives
 \]
 
 time and \(O(QD)\) working space. For fixed \(D\), Sleumer improves the
-arithmetic bound to \(O(KQ)\) time with \(O(Q^2)\) space. Rada and Černý's later
-incremental sign-prefix algorithm gives
+arithmetic bound to \(O(KQ)\) time with \(O(Q^2)\) space. For a central
+arrangement, Ferrez, Fukuda, and Liebling's ray-shooting reverse search gives
+
+\[
+  O(KQ\,LP(Q,D))
+\]
+
+time and \(O(QD)\) working space. Rada and Černý's later incremental
+sign-prefix algorithm independently gives
 
 \[
   O(KQ\,lp(Q,D))
@@ -134,8 +141,8 @@ incremental sign-prefix algorithm gives
 time and \(O(lp(Q,D))\) working space, where \(D\) is input dimension and
 \(l,lp\) denote the respective LP-cost abstractions. These are
 output-polynomial results for the restricted open-cell representation. The
-Avis--Fukuda and Sleumer analyses count arithmetic/LP operations rather than
-proving a coefficient-bit bound, and none of the results transfers
+The Avis--Fukuda, Sleumer, and Ferrez analyses count arithmetic/LP operations
+rather than proving a coefficient-bit bound, and none of the results transfers
 automatically to boundary-inclusive fibers or an arbitrary caller theory.
 Dussault et al. later specialize the central-arrangement case, make the
 zero-witness perturbation explicit, and introduce circuit-guided variants with
