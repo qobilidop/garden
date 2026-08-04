@@ -1006,3 +1006,55 @@ a recorded seed, plus every work excluded solely because its abstract appeared
 to describe ordinary path enumeration. Opaque and time-varying relevance
 ranking, shared upstream metadata, and title-screening judgment are explicit
 limitations of the closure claim.
+
+## Replacement round `closure-replacement-31`: Crossref
+
+Frozen on 2026-08-04 after complete reconciliation of round 29 and its six
+critical citation neighborhoods, and before any round-31 or round-32 query was
+executed. Source: Crossref REST API. Each exact phrase is searched with
+`query.bibliographic`, sorted by relevance, with the first 100 records exported
+unless the source returns fewer. A round qualifies as no-add only if complete
+screening adds neither a conceptual cluster nor a plausible close competitor.
+
+| ID | Exact query |
+|---|---|
+| C31-01 | `path minimal objects symbolic execution input object` |
+| C31-02 | `case optimal symbolic heap strong property` |
+| C31-03 | `postconditioned symbolic execution path redundancy` |
+| C31-04 | `conditional value preprocessing symbolic evaluation` |
+| C31-05 | `higher order symbolic counterexample functional input` |
+| C31-06 | `symbolic execution game semantics open higher order` |
+| C31-07 | `maximal causality reduction stateless model checking` |
+| C31-08 | `value happens before dynamic partial order reduction` |
+| C31-09 | `dynamic interface reduction model checking observer` |
+| C31-10 | `exact timed marking observation unobservable transitions` |
+| C31-11 | `requested selection observer input partition residual` |
+| C31-12 | `totalized input fiber dataflow selection event` |
+
+## Replacement round `closure-replacement-32`: arXiv
+
+Execute only if round 31 adds neither a conceptual cluster nor a plausible
+close competitor. Source: arXiv API. Frozen on 2026-08-04 before any round-31
+or round-32 execution. Each phrase is submitted as the conjunction of all
+alphanumeric terms across arXiv's `all` field, sorted by relevance, with at
+most the first 100 records and abstracts exported.
+
+| ID | Exact query |
+|---|---|
+| C32-01 | `path minimal symbolic execution object input` |
+| C32-02 | `case optimal symbolic heap exploration` |
+| C32-03 | `postcondition symbolic execution redundancy pruning` |
+| C32-04 | `conditional value symbolic preprocessing` |
+| C32-05 | `higher order symbolic functional counterexample` |
+| C32-06 | `symbolic game semantics open program` |
+| C32-07 | `maximal causality stateless model checking` |
+| C32-08 | `value centric dynamic partial order reduction` |
+| C32-09 | `dynamic interface reduction model checking` |
+| C32-10 | `timed marking observation unobservable transition` |
+| C32-11 | `requested observer input partition residual` |
+| C32-12 | `input fiber dataflow selection event` |
+
+If round 31 reopens the map, round 32 is retired unexecuted. If both qualify,
+they establish the required two-round no-add sequence only for these sources,
+exact queries, captured rankings, date, and frozen trigger. Independent audit
+remains mandatory before either outcome is promoted to closure.
