@@ -7,9 +7,6 @@ on:
   pull_request:
   workflow_dispatch:
 
-permissions:
-  contents: read
-
 concurrency:
   group: build-paper-${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
@@ -19,6 +16,8 @@ jobs:
     name: Build manuscript PDF
     runs-on: ubuntu-24.04
     timeout-minutes: 20
+    permissions:
+      contents: read
 
     steps:
       - name: Check out repository
@@ -35,3 +34,38 @@ jobs:
           if-no-files-found: error
           retention-days: 90
           compression-level: 0
+
+      - name: Configure GitHub Pages
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+        uses: actions/configure-pages@v5
+
+      - name: Assemble GitHub Pages site
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+        run: |
+          mkdir --parents build/pages
+          cp site/index.html build/pages/index.html
+          cp build/manuscript.pdf build/pages/manuscript.pdf
+
+      - name: Upload GitHub Pages artifact
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: build/pages
+
+  deploy:
+    name: Publish manuscript PDF
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    needs: build
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
