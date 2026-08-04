@@ -494,13 +494,20 @@ catalog dispositions were reconciled before the replacement batches below were
 chosen. The map remains open until two new prospective no-add rounds and a new
 independent audit succeed.
 
-## Replacement round `closure-replacement-21`: Semantic Scholar
+## Replacement round `closure-replacement-21`: arXiv
 
-This round was frozen on 2026-08-04 after the neural-tree, exact-output-region,
-Affinitree, and BNN-diagram additions were fully reconciled and before any of
-the queries below was submitted. Source: Semantic Scholar Graph API. Each query
-exports at most the first 100 relevance-ranked records, including indexed
-abstracts. Every title and available abstract is screened under the unchanged
+Semantic Scholar was the originally frozen source, but its first frozen query
+returned HTTP 429 after every retry and exposed no result set. OpenAlex was
+then availability-probed with an unrelated string and also returned HTTP 429.
+Neither attempt counts as a round. The arXiv API was availability- and
+schema-probed only with the unrelated phrase `quantum otter`, then selected and
+refrozen on 2026-08-04 before any frozen query below was submitted to it.
+
+The neural-tree, exact-output-region, Affinitree, and BNN-diagram additions were
+fully reconciled before this refreeze. Each plain-text query below is submitted
+as the conjunction of all its alphanumeric terms across arXiv's `all` field,
+with relevance-descending sorting, and exports at most the first 100 records
+including abstracts. Every title and abstract is screened under the unchanged
 two-part close-competitor trigger; plausible records receive primary-source
 review.
 
