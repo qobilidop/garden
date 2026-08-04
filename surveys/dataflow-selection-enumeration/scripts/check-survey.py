@@ -76,6 +76,17 @@ def main() -> int:
     if len(catalog) != len(catalog_rows):
         fail("catalog contains duplicate citekeys")
 
+    bibliography = (ROOT / "references.bib").read_text(encoding="utf-8")
+    bibliography_keys = set(re.findall(r"@[A-Za-z]+\{([^,]+),", bibliography))
+    for citekey, row in catalog.items():
+        if row["status"] != "deep-read":
+            continue
+        source_note = SURVEY / "sources" / f"{citekey}.md"
+        if not source_note.is_file():
+            fail(f"deep-read work {citekey} has no source note")
+        if citekey not in bibliography_keys:
+            fail(f"deep-read work {citekey} has no bibliography entry")
+
     header, log_rows = rows(SURVEY / "search-log.tsv")
     if header != SEARCH_HEADER:
         fail(f"unexpected search-log header: {header}")
@@ -83,6 +94,8 @@ def main() -> int:
         for field in ("hits", "screened"):
             if not row[field].isdigit():
                 fail(f"search-log row {number} has nonnumeric {field}")
+        if int(row["screened"]) > int(row["hits"]):
+            fail(f"search-log row {number} screens more records than it reports")
         for citekey in keys(row["included_keys"]):
             if citekey not in catalog:
                 fail(f"search-log row {number} includes unknown key {citekey}")
@@ -94,8 +107,22 @@ def main() -> int:
             if catalog[citekey]["status"] != "excluded":
                 fail(f"search-log row {number} exclusion {citekey} is not excluded")
         for relative in re.findall(r"screening/[^ ;]+\.tsv", row["notes"]):
-            if not (SURVEY / relative).is_file():
+            snapshot = SURVEY / relative
+            if not snapshot.is_file():
                 fail(f"search-log row {number} references missing {relative}")
+            _, snapshot_rows = rows(snapshot)
+            if len(snapshot_rows) != int(row["screened"]):
+                fail(
+                    f"search-log row {number} reports {row['screened']} screened "
+                    f"records but {relative} contains {len(snapshot_rows)}"
+                )
+
+    exploratory = (SURVEY / "exploratory-search-log.tsv").read_text(
+        encoding="utf-8"
+    ).splitlines()
+    for number, line in enumerate(exploratory[1:], start=2):
+        if "not-recorded" not in line:
+            fail(f"exploratory-search-log row {number} is not reconciled")
 
     for path in sorted((SURVEY / "screening").glob("*.tsv")):
         header, snapshot_rows = rows(path)
