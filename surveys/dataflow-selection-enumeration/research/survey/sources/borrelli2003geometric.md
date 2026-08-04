@@ -1,7 +1,7 @@
 # borrelli2003geometric — geometric multiparametric-LP enumeration
 
 - **Status:** deep-read; central active-set region baseline; own-seed citation
-  chase pending before critical freeze
+  chase complete
 - **Primary source:** https://doi.org/10.1023/B:JOTA.0000004869.66331.5C
 - **Open copy:** https://cse.lab.imtlucca.it/~bemporad/publications/papers/jota-mplp.pdf
 - **Version read:** published article
@@ -49,3 +49,13 @@ decisions.
 - Main recursive algorithm: direct parameter-space exploration and coverage.
 - Degeneracy discussion: primal/dual qualifications and artificial cuts.
 - Examples: affine optimizer and value recovery on emitted regions.
+
+## Citation-neighborhood audit
+
+The exact 22-entry printed bibliography was title-screened and reconciled with
+the publisher deposit in
+`screening/primary-borrelli2003geometric-backward.tsv`. All 179 DOI-linked
+OpenCitations records were title-screened in
+`screening/opencitations-borrelli2003geometric-forward.tsv`. The forward chase
+surfaced the pLCP, unique-selection, projection-interreduction, exact-solver,
+and policy-quotient successors recorded separately in the catalog.

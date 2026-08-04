@@ -170,7 +170,12 @@ proof obligations, and evidence.
   feasible ReLU patterns;
   Geyer et al. compose affine event cells into exact PWA guard/residual pairs;
   Jones and Maciejowski give duplicate-free output-sensitive pLP critical-region
-  enumeration with a reconstructible affine optimizer; Geyer et al. 2008
+  enumeration with a reconstructible affine optimizer; Jones and Morari, then
+  Columbano, Fukuda, and Jones, extend full-dimensional enumeration to pLCPs
+  including pLP and convex pQP and give explicit perturbation-safe per-output
+  LP-oracle bounds; Spjøtvold, Tøndel, and Johansen give a unique continuous
+  minimum-norm pQP selection and algorithm-independent polyhedral
+  representation; Geyer et al. 2008
   minimize behavior-equivalent PWA guards under explicit representation and
   solver qualifications;
   Tran's stars and Robinson's explicit PWA conversion emit exact guards with
@@ -209,7 +214,7 @@ proof obligations, and evidence.
   continuation, culminating in exact preservation of bounded jointly feasible
   heap/path symbolic states.
 - **Consequence:** A contribution cannot be “demand sensitivity” alone. It
-  would need one canonical record per graph observation, exact union guards,
+  would need one exact record per graph observation, exact union guards,
   residual symbolic values, and an analysis beyond the prior partial-state
   search results.
 
@@ -258,8 +263,30 @@ proof obligations, and evidence.
   different later-horizon actions can share the same requested first action.
   Mitze et al. extend common-first-action reuse to nonlinear MPC. Kvasnica and
   coauthors give exact clipping- and separator-based factorizations that erase
-  region descriptions while preserving the pointwise controller output.
+  region descriptions while preserving the pointwise controller output. Shin
+  and Yang independently identify polyhedral reward sets that induce the same
+  optimal MDP policy and study policy invariance and reward-space reduction.
 - **Consequence:** “Requested-root-relative” alone is not a contribution. The
   survey's object must be an intensional, input-dependent sparse map of
   contextual selection-site outcomes that retains observed equal-valued
   events; it is not the kernel of the requested output function.
+
+## S10 — Parametric-program canonicality and complexity are established
+
+- **Status:** survey synthesis; broad novelty defeated
+- **Statement:** Full-dimensional pLP/pQP/pLCP partitions already have exact
+  degeneracy-safe traversals, explicit output-sensitive LP-oracle bounds, and
+  unique optimizer selections under stated assumptions.
+- **Prior frontier:** Jones and Morari give the positive-semidefinite pLCP
+  precursor; Columbano, Fukuda, and Jones give explicit general-position and
+  lexicographically perturbed sufficient-matrix bounds; Spjøtvold, Tøndel, and
+  Johansen give a unique continuous minimum-norm selection; Patrinos and
+  Sarimveis discover every full-dimensional convex-pQP facet neighbor without
+  nondegeneracy; and Jones, Kerrigan, and Maciejowski polynomially interreduce
+  pLP solution and polyhedral projection.
+- **Consequence:** The survey must claim neither the first canonical partition
+  nor the first degeneracy-safe output-sensitive region enumeration. The
+  surviving formal package concerns a different object: requested-root enabled
+  closure, contextual site identity, preservation of equal-valued observed
+  events, typed residuals, and exact positive inverse fibers over a shared
+  pure dataflow graph.

@@ -34,6 +34,10 @@ already supplies:
 - exact behavior-preserving minimum-cardinality reduction of polyhedral
   piecewise systems, plus duplicate-free output-sensitive pLP critical-region
   enumeration with reconstructible affine optimizers; and
+- sufficient-matrix pLCP enumeration with explicit general-position and
+  perturbation-safe per-output LP-oracle bounds, unique continuous minimum-norm
+  pQP selections, and polynomial interreduction of pLP with polyhedral
+  projection;
 - exact dense ReLU activation-pattern enumeration, including methods that emit
   an exact polyhedral guard and affine residual, reconstruct the full cell
   complex, or parallelize layerwise enumeration;
@@ -200,20 +204,26 @@ when their residual maps are extensionally equal.
 
 Degeneracy-safe parametric programming and requested-action projection add an
 eleventh boundary. Borrelli et al. enumerate active-set critical regions;
-Jones et al. use symbolic lexicographic perturbation to select a unique
-continuous optimizer; and Patrinos and Sarimveis traverse every
-full-dimensional convex-pQP region while discovering all neighbors across a
-facet without nondegeneracy or facet-to-facet assumptions. Bemporad later
-handles rank-deficient active sets with projection and NNLS-based polyhedral
-operations. Thus complete adjacency traversal, multiple-neighbor discovery,
-symbolic tie-breaking, and rank-deficiency handling are all inherited.
+Jones and Morari give the pLCP precursor; and Columbano, Fukuda, and Jones give
+explicit per-output sufficient-matrix pLCP bounds covering pLP and convex pQP.
+Spjøtvold, Tøndel, and Johansen construct a unique continuous minimum-norm pQP
+selection and algorithm-independent polyhedral representation. Patrinos and
+Sarimveis traverse every full-dimensional convex-pQP region while discovering
+all neighbors across a facet without nondegeneracy or a facet-to-facet
+assumption, and Bemporad later handles rank-deficient active sets with
+projection and NNLS-based polyhedral operations. Jones, Kerrigan, and
+Maciejowski additionally show that pLP solution and polyhedral projection are
+polynomially interreducible. Thus canonical selection, complete adjacency,
+multiple-neighbor discovery, symbolic tie-breaking, rank-deficiency handling,
+and output-sensitive dense-region enumeration are all inherited.
+
 Separately, König and Mönnigmann prove that different active-set regions can
 share the requested first MPC action while later horizon actions differ;
-Mitze et al. extend this idea to nonlinear MPC with sound inner approximations
-and exact fallback. Requested-output relativity is therefore not a separator.
-The remaining object is intensional: a sparse map of actually observed
-selection-site outcomes, with an input- and request-dependent domain, that
-deliberately retains equal-valued events.
+Mitze et al. extend this idea to nonlinear MPC, and Shin and Yang identify
+polyhedral reward sets producing the same optimal MDP policy. Requested-output
+relativity is therefore not a separator. The remaining object is intensional:
+a sparse map of actually observed selection-site outcomes, with an input- and
+request-dependent domain, that deliberately retains equal-valued events.
 
 ## Route decision
 
@@ -228,7 +238,9 @@ deliberately retains equal-valued events.
   Lazy SmallCheck. Exact affine guarded composition is independently inherited
   from compositional hybrid mode enumeration; behavior-minimal guard reduction
   and output-sensitive pLP region/residual enumeration are likewise prior.
-  Degeneracy-safe pQP adjacency and projection of optimization histories to a
-  requested first action are prior as well.
+  Unique parametric selections, degeneracy-safe pQP adjacency, explicit
+  sufficient-matrix pLCP output bounds, pLP/projection interreduction, and
+  projection of optimization histories to a requested policy are prior as
+  well.
 - A future CAV tool paper remains possible only after direct baseline
   experiments show a validation or scalability frontier.

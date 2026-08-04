@@ -1,7 +1,7 @@
 # jones2007lexicographic — symbolic perturbation for degenerate mpLPs
 
 - **Status:** deep-read; central degeneracy and identity baseline; own-seed
-  citation chase pending before critical freeze
+  citation chase complete
 - **Primary source:** https://doi.org/10.1016/j.automatica.2007.03.008
 - **Version read:** published Automatica article
 - **Bibliography key:** `jones2007lexicographic`
@@ -47,3 +47,13 @@ term graph.
 - Main perturbation results: optimality, uniqueness, and continuity.
 - Enumeration section: adjacent-basis construction and completeness.
 - Final examples: region-count and numerical comparison.
+
+## Citation-neighborhood audit
+
+The exact 23-entry printed bibliography was title-screened and reconciled with
+the publisher deposit in
+`screening/primary-jones2007lexicographic-backward.tsv`. All 49 DOI-linked
+OpenCitations records were title-screened in
+`screening/opencitations-jones2007lexicographic-forward.tsv`. Retained
+successors include projection/pLP interreduction, unrestricted pQP adjacency,
+connected-graph enumeration, and mixed floating/rational exact pLP solving.

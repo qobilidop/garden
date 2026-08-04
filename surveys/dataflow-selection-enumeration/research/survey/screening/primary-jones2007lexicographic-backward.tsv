@@ -1,0 +1,24 @@
+rank	source_id	year	doi	title	venue	type
+1	citation-1	-	-	Baotić, M. (2002). An efficient algorithm for multi-parametric quadratic programming. Technical Report, ETH Zürich, Institut für Automatik, Physikstrasse 3, CH-8092, Switzerland.	-	reference
+2	citation-2	-	-	Bemporad, A. (2005). Hybrid toolbox, August. Version 1.0.10, 〈http://www.dii.unisi.it/hybrid/toolbox/〉.	-	reference
+3	doi:10.1109/tac.2002.805688	2002	10.1109/TAC.2002.805688	Model predictive control based on linear programming—the explicit solution	IEEE Transactions on Automatic Control	reference
+4	doi:10.1016/s0005-1098(01)00174-1	2002	10.1016/S0005-1098(01)00174-1	The explicit linear quadratic regulator for constrained systems	Automatica	reference
+5	citation-5	1997	-	Introduction to linear optimization	Introduction to linear optimization	reference
+6	citation-6	-	-	Borrelli, F. (2002). Discrete time constrained optimal control. Ph.D. thesis, Swiss Federal Institute of Technology (ETH), October.	-	reference
+7	citation-7	-	-	Borrelli, F. (2003). Constrained optimal control of linear and hybrid systems, Lecture notes in control and information sciences (Vol. 290). Berlin: Springer.	-	reference
+8	doi:10.1023/b:jota.0000004869.66331.5c	2003	10.1023/B:JOTA.0000004869.66331.5c	A geometric algorithm for multi-parametric linear programming	Journal of Optimization Theory and Applications	reference
+9	doi:10.2140/pjm.1955.5.183	1955	10.2140/pjm.1955.5.183	The generalized simplex method for minimizing a linear form under linear inequality restraints	Pacific Journal of Mathematics	reference
+10	citation-10	-	-	Fukuda, K. (2000). Frequently asked questions in polyhedral computation. October 〈http://www.ifor.math.ethz.ch/fukuda/polyfaq/polyfaq.html〉.	-	reference
+11	doi:10.1111/j.1475-3995.1997.tb00083.x	1997	10.1111/j.1475-3995.1997.tb00083.x	The existence of a short sequence of admissible pivots to an optimal basis in LP and LCP	International Transactions of Operational Research	reference
+12	doi:10.1287/mnsc.18.7.406	1972	10.1287/mnsc.18.7.406	Multiparametric linear programming	Management Science	reference
+13	citation-13	-	-	Grieder, P. (2004). Efficient computation of feedback controllers for constrained systems. Ph.D. thesis, Swiss Federal Institute of Technology (ETH), Zürich.	-	reference
+14	doi:10.1016/j.automatica.2003.11.014	2004	10.1016/j.automatica.2003.11.014	Computation of the constrained infinite time linear quadratic regulator	Automatica	reference
+15	citation-15	-	-	Kvasnica, M., Grieder, P., & Baotić, M. (2004). Multi-parametric toolbox (MPT) 〈http://control.ee.ethz.ch/∼mpt/〉.	-	reference
+16	citation-16	2001	-	Predictive control with constraints	Predictive control with constraints	reference
+17	citation-17	-	-	Murray, W., & Saunders, M. (1986). Systems optimization laboratory (SOL). 〈http://www.sbsi-sol-optimize.com〉.	-	reference
+18	citation-18	1983	-	Linear programming	Linear programming	reference
+19	doi:10.1007/bf00939219	1987	10.1007/BF00939219	Polyhedral functions and multiparametric linear programming	Journal of Optimization Theory and Applications	reference
+20	doi:10.1016/j.automatica.2006.06.026	2006	10.1016/j.automatica.2006.06.026	On the facet-to-facet property of solutions to strictly convex multiparametric quadratic programs	Automatica	reference
+21	doi:10.3182/20050703-6-cz-1902.00903	-	10.3182/20050703-6-CZ-1902.00903	Spjøtvold, J., Tøndel, & P., Johansen, T. A. (2005). A method for obtaining continuous solutions to multiparametric linear programs. In Proceedings of the 16th IFAC world congress, Prague.	-	reference
+22	doi:10.1016/s0005-1098(02)00250-9	2003	10.1016/S0005-1098(02)00250-9	An algorithm for multi-parametric quadratic programming and explicit MPC solutions	Automatica	reference
+23	citation-23	1995	-	Lectures on polytopes	Lectures on polytopes	reference

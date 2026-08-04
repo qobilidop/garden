@@ -185,18 +185,47 @@ linear in \(N_r\) only after retaining the LP/dimension coefficient, and it
 does not cover lower-dimensional-only regions, coefficient-bit complexity, or
 our variable-domain graph observer.
 
-Later parametric-program traversals strengthen the degeneracy story without
-improving that explicit bound. Jones, Kerrigan, and Maciejowski's
-lexicographic perturbation produces one unique basis per region and a
-continuous affine optimizer but states only the exponential worst case.
-Patrinos and Sarimveis call their convex-pQP graph traversal output-sensitive
-and prove that its graphical-derivative oracle discovers every
-full-dimensional neighbor across a facet without nondegeneracy. They give no
-closed polynomial total-time formula, DelayP/IncP classification, workspace
-bound, or coefficient-bit theorem; one facet call can itself enumerate
-multiple regions of a lower-dimensional parametric LP. Bemporad's later
-strict-convex mpQP algorithm considers at most \(2^q\) optimal combinations
-and gives practical NNLS analyses rather than a new enumeration-class bound.
+The direct pLCP line gives a second explicit bound. Jones and Morari enumerate
+full-dimensional positive-semidefinite pLCP regions under lexicographic
+perturbation. Columbano, Fukuda, and Jones extend the method to sufficient
+matrices, including pLP and convex pQP. For pLCP dimension \(n\), parameter
+dimension \(d\), and LP-oracle cost \(T_{LP}\), their Theorem 6.1 charges each
+general-position basis by
+
+\[
+  nT_{LP}(n,d+1)
+  + \frac{n^2-n}{2}T_{LP}(2n,d+1),
+\]
+
+while Theorem 6.2 charges each lexicographically perturbed basis by
+
+\[
+  (n^2+n)T_{LP}(n,d+1)
+  + \frac{n^3-n}{2}T_{LP}(2n,d+1).
+\]
+
+The total is the corresponding factor times the number of emitted bases. In
+the degenerate case that is the perturbed output count, which can exceed the
+unperturbed critical-domain count. The traversal retains a visited set of
+discovered bases; the analysis abstracts LP cost and proves neither compact
+space, coefficient-bit complexity, DelayP, nor separate coverage of
+lower-dimensional-only regions.
+
+Other traversals strengthen representation and degeneracy handling rather than
+these complexity classifications. Jones, Kerrigan, and Maciejowski's
+lexicographic mpLP treatment produces a unique continuous affine optimizer.
+Spjøtvold, Tøndel, and Johansen independently construct a unique continuous
+minimum-norm pQP selection and algorithm-independent polyhedral
+representation. Patrinos and Sarimveis prove that a graphical-derivative facet
+oracle discovers every full-dimensional convex-pQP neighbor without
+nondegeneracy or a facet-to-facet assumption, but give no closed total-time,
+delay, workspace, or bit bound. Bemporad's later strict-convex mpQP algorithm
+considers at most \(2^q\) optimal combinations and gives practical NNLS
+analyses rather than a new enumeration-class bound.
+
+Finally, polyhedral projection is not an independent escape from these
+baselines: Jones, Kerrigan, and Maciejowski give polynomial input and output
+conversions in both directions between projection and pLP solution.
 
 Dense ReLU networks refine the arrangement layerwise. Existing algorithms
 enumerate feasible activation patterns by MILP, propagate exact stars that

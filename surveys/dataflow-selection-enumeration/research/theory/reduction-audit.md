@@ -668,8 +668,9 @@ its own proof.
 | Full abstraction for a context that can read ghost events | elementary / by construction | The observer primitive makes the result tautological. |
 | Exponential saving over total syntactic assignments | inherited phenomenon | Partial models, output-directed execution, and decision diagrams already exhibit it. |
 | Exact all-sites-observed strict affine open-cell enumeration | inherited | On the full real domain with boundary points excluded, hyperplane-cell enumeration already proves complete duplicate-free OutputP streaming. Ferrez et al. already attain \(O(KQ\,LP(Q,D))\) for central arrangements before Rada--Černý's different incremental skeleton; neural work enumerates feasible full-dimensional activation guards and affine residuals. Non-strict or boundary-inclusive fibers need separate treatment. |
-| Output-sensitive full-dimensional parametric guard/residual enumeration | inherited | Jones and Maciejowski 2006 enumerate each pLP critical-region basis once in output-linear LP-relative time; its basis reconstructs the exact guard and affine optimizer. |
-| Degeneracy-safe critical-region adjacency | inherited | Borrelli et al. use active-set regions, Jones et al. give symbolic lexicographic tie-breaking, and Patrinos--Sarimveis enumerate all full-dimensional convex-pQP regions and every neighbor across a facet without nondegeneracy or facet-to-facet assumptions. Bemporad handles rank-deficient active constraints by projection. |
+| Output-sensitive full-dimensional parametric guard/residual enumeration | inherited | Jones and Maciejowski 2006 enumerate each pLP critical-region basis once in output-linear LP-relative time; Jones--Morari and Columbano--Fukuda--Jones extend the line to sufficient-matrix pLCPs including pLP and convex pQP, with explicit general-position and perturbed per-output LP-oracle formulas. |
+| Degeneracy-safe critical-region adjacency and unique selection | inherited | Borrelli et al. use active-set regions, Jones et al. give symbolic lexicographic tie-breaking, Spjøtvold--Tøndel--Johansen give a unique continuous minimum-norm polyhedral selection, and Patrinos--Sarimveis enumerate all full-dimensional convex-pQP regions and every neighbor across a facet without nondegeneracy or facet-to-facet assumptions. Bemporad handles rank-deficient active constraints by projection. |
+| Polyhedral projection versus pLP | inherited reduction | Jones--Kerrigan--Maciejowski provide polynomial input and output conversions in both directions, so the two geometric problem statements do not establish distinct complexity frontiers. |
 | Minimum-cardinality equal-residual polyhedral quotient | inherited with qualifications | Geyer et al. 2008 prove restricted minimum disjoint reduction and conditionally minimum-product overlapping covers. Their quotient merges equal behavior and is therefore intentionally coarser than selection observation. |
 | Exact PWA factorization and requested-output projection | inherited | Kvasnica and coauthors preserve controller outputs exactly while removing saturated region descriptions through clipping or separators. König--Mönnigmann group optimization regions by the requested first action even when later actions differ. Neither retains the sparse intensional selection events declared by our observer. |
 | (O(\sum_\tau S_\tau)) construction under DAG sharing | elementary bookkeeping | It excludes solver time and serialized expansion. |
@@ -706,10 +707,12 @@ whose unselected case contains another site.
 An original research claim would need an additional separation that survives
 these reductions. Plausible targets are a non-flattening summary
 representation with a proved asymptotic reuse advantage over the shared global
-activation encoding, a nontrivial canonical/minimal observer theorem under an
-independently motivated context language, or an extension to partial/cyclic
-graphs whose fixpoint and enumeration results are not immediate. None is
-currently established.
+activation encoding, a nontrivial observer theorem under an independently
+motivated context language, or an extension to partial/cyclic graphs whose
+fixpoint and enumeration results are not immediate. None is currently
+established. A generic canonical or algorithm-independent partition is not a
+plausible separator: Spjøtvold, Tøndel, and Johansen already provide one for
+their minimum-norm pQP selection.
 
 ## Claims the paper should not make
 
@@ -728,6 +731,9 @@ currently established.
 - Do not call an exact positive fiber guard literal-minimal; observed-site
   predicates can be redundant under the caller constraint and one another.
 - Do not call the observation canonical under value-preserving graph rewrites.
+- Do not claim priority for unique, canonical, or algorithm-independent
+  parametric partitions, or for degeneracy-safe output-sensitive pLP/pQP/pLCP
+  enumeration.
 - Do not claim generic compositionality of conditional static computations;
   selective functors already supply it.
 - Do not claim OutputP, incremental polynomial time, or polynomial delay from

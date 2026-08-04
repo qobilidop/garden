@@ -1,0 +1,46 @@
+rank	source_id	year	doi	title	venue	type
+1	doi:10.1002/oca.972	2010	10.1002/oca.972	Optimal Control Applications And Methods Literature Survey (No. 19-20)	Optimal Control Applications And Methods	journal article
+2	doi:10.1016/j.automatica.2011.04.003	2011	10.1016/j.automatica.2011.04.003	Convex Parametric Piecewise Quadratic Optimization: Theory And Algorithms	Automatica	journal article
+3	doi:10.1109/acc.2012.6315197	2012	10.1109/acc.2012.6315197	Vertex Based Calculation Of Explicit MPC Laws	2012 American Control Conference (ACC)	proceedings article
+4	doi:10.1109/cdc.2012.6426243	2012	10.1109/cdc.2012.6426243	Model Predictive Control For Linear Impulsive Systems	2012 IEEE 51St IEEE Conference On Decision And Control (CDC)	proceedings article
+5	doi:10.1109/cdc.2012.6426458	2012	10.1109/cdc.2012.6426458	An Accelerated Dual Gradient-Projection Algorithm For Linear Model Predictive Control	2012 IEEE 51St IEEE Conference On Decision And Control (CDC)	proceedings article
+6	doi:10.1007/978-1-4471-5102-9_10-1	2013	10.1007/978-1-4471-5102-9_10-1	Explicit Model Predictive Control	Encyclopedia Of Systems And Control	book chapter
+7	doi:10.1016/j.jprocont.2013.04.008	2013	10.1016/j.jprocont.2013.04.008	An Offset-Free Neural Controller Based On A Non-Extrapolating Scheme For Approximating The Inverse Process Dynamics	Journal Of Process Control	journal article
+8	doi:10.1016/j.fusengdes.2013.02.021	2013	10.1016/j.fusengdes.2013.02.021	Vertical Stabilization Of ITER Plasma Using Explicit Model Predictive Control	Fusion Engineering And Design	journal article
+9	doi:10.1007/s10589-013-9622-z	2013	10.1007/s10589-013-9622-z	Computing The Partial Conjugate Of Convex Piecewise Linear-Quadratic Bivariate Functions	Computational Optimization And Applications	journal article
+10	doi:10.3182/20140824-6-za-1003.00992	2014	10.3182/20140824-6-za-1003.00992	Fixed-Point Implementation Of A Proximal Newton Method For Embedded Model Predictive Control	IFAC Proceedings Volumes	journal article
+11	doi:10.1109/tac.2013.2275667	2014	10.1109/tac.2013.2275667	An Accelerated Dual Gradient-Projection Algorithm For Embedded Linear Model Predictive Control	IEEE Transactions On Automatic Control	journal article
+12	doi:10.1109/tac.2013.2285786	2014	10.1109/tac.2013.2285786	MPC For Sampled-Data Linear Systems: Guaranteeing Constraint Satisfaction In Continuous-Time	IEEE Transactions On Automatic Control	journal article
+13	doi:10.1007/s10898-014-0228-5	2014	10.1007/s10898-014-0228-5	An Algorithm For Global Solution To Bi-Parametric Linear Complementarity Constrained Linear Programs	Journal Of Global Optimization	journal article
+14	doi:10.1016/j.automatica.2014.08.031	2014	10.1016/j.automatica.2014.08.031	Stochastic Model Predictive Control For Constrained Discrete-Time Markovian Switching Systems	Automatica	journal article
+15	doi:10.1016/j.automatica.2014.10.128	2014	10.1016/j.automatica.2014.10.128	Model Predictive Control: Recent Developments And Future Promise	Automatica	journal article
+16	doi:10.1016/j.automatica.2015.04.014	2015	10.1016/j.automatica.2015.04.014	Online Constraint Removal: Accelerating MPC With A Lyapunov Function	Automatica	journal article
+17	doi:10.1109/tac.2014.2380672	2015	10.1109/tac.2014.2380672	Model Predictive Control For Linear Impulsive Systems	Representation	journal article
+18	doi:10.1109/tac.2015.2417851	2015	10.1109/tac.2015.2417851	A Multiparametric Quadratic Programming Algorithm With Polyhedral Computations Based On Nonnegative Least Squares	Representation	journal article
+19	doi:10.1109/acc.2016.7525169	2016	10.1109/acc.2016.7525169	Extrusion Based Additive Manufacturing Using Explicit Model Predictive Control	2016 American Control Conference (ACC)	proceedings article
+20	doi:10.1002/aic.15396	2016	10.1002/aic.15396	Explicit Model Predictive Control Of Hybrid Systems And Multiparametric Mixed Integer Polynomial Programming	The Journal Of Finance	journal article
+21	doi:10.1021/acs.iecr.6b01913	2016	10.1021/acs.iecr.6b01913	POP – Parametric Optimization Toolbox	Industrial & Engineering Chemistry Research	journal article
+22	doi:10.1016/j.ejor.2016.04.043	2016	10.1016/j.ejor.2016.04.043	A Two-Phase Algorithm For The Multiparametric Linear Complementarity Problem	European Journal Of Operational Research	journal article
+23	doi:10.1016/j.cherd.2016.09.034	2016	10.1016/j.cherd.2016.09.034	On Multi-Parametric Programming And Its Applications In Process Systems Engineering	Chemical Engineering Research And Design	journal article
+24	doi:10.1016/j.automatica.2016.10.005	2017	10.1016/j.automatica.2016.10.005	Explicit Model Predictive Control: A Connected-Graph Approach	Automatica	journal article
+25	doi:10.1002/aic.15755	2017	10.1002/aic.15755	Multi‐parametric Linear Programming Under Global Uncertainty	AIChE Journal	journal article
+26	doi:10.1002/9781118965580.ch2	2017	10.1002/9781118965580.ch2	Draft Computational Tools And Methods	Modelling Optimization And Control Of Biomedical Systems	book chapter
+27	doi:10.1016/j.isatra.2017.09.016	2018	10.1016/j.isatra.2017.09.016	Model Predictive Control For Systems With Fast Dynamics Using Inverse Neural Models	ISA Transactions	journal article
+28	doi:10.1007/978-3-319-77489-3_16	2018	10.1007/978-3-319-77489-3_16	Explicit (Offline) Optimization For MPC	Handbook Of Model Predictive Control	book chapter
+29	doi:10.1515/auto-2018-0083	2018	10.1515/auto-2018-0083	Eingebettete Optimierung In Der Regelungstechnik – Grundlagen Und Herausforderungen	Auto	journal article
+30	doi:10.1007/978-1-4471-5102-9_10-2	2019	10.1007/978-1-4471-5102-9_10-2	Explicit Model Predictive Control	Encyclopedia Of Systems And Control	book chapter
+31	doi:10.1007/978-3-030-38137-0_2	2020	10.1007/978-3-030-38137-0_2	Parametric Optimisation: 65 Years Of Developments And Status Quo	Uncertainty-aware Integration Of Control With Process Operations And Multi-parametric Programming Under Global Uncertainty	book chapter
+32	doi:10.1007/978-3-030-38137-0_4	2020	10.1007/978-3-030-38137-0_4	Towards Exact Multi-setpoint Explicit Controllers For Enterprise Wide Optimisation	Uncertainty-aware Integration Of Control With Process Operations And Multi-parametric Programming Under Global Uncertainty	book chapter
+33	doi:10.1007/s10898-020-00933-9	2020	10.1007/s10898-020-00933-9	The Exact Solution Of Multiparametric Quadratically Constrained Quadratic Programming Problems	Journal Of Global Optimization	journal article
+34	doi:10.1007/s10957-020-01727-5	2020	10.1007/s10957-020-01727-5	Convex Quadratic Equation	Journal Of Optimization Theory And Applications	journal article
+35	doi:10.1016/j.automatica.2020.109132	2020	10.1016/j.automatica.2020.109132	A Dynamic Programming Approach To Solving Constrained Linear–Quadratic Optimal Control Problems	Automatica	journal article
+36	doi:10.1002/9781119265245.ch4	2020	10.1002/9781119265245.ch4	Solution Strategies For mp‐LP And mp‐QP Problems	Multi‐Parametric Optimization And Control	-
+37	doi:10.1007/978-3-030-44184-5_10	2021	10.1007/978-3-030-44184-5_10	Explicit Model Predictive Control	Encyclopedia Of Systems And Control	book chapter
+38	doi:10.1137/19m1290851	2021	10.1137/19m1290851	Linear-Time Convexity Test For Low-Order Piecewise Polynomials	SIAM Journal On Optimization	journal article
+39	doi:10.3389/fceng.2020.620168	2021	10.3389/fceng.2020.620168	Multiparametric Programming In Process Systems Engineering: Recent Developments And Path Forward	Frontiers In Chemical Engineering	journal article
+40	doi:10.3390/pr9071156	2021	10.3390/pr9071156	Multi Set-Point Explicit Model Predictive Control For Nonlinear Process Systems	Processes	journal article
+41	doi:10.1007/s12532-022-00218-0	2022	10.1007/s12532-022-00218-0	QPALM: A Proximal Augmented Lagrangian Method For Nonconvex Quadratic Programs	Mathematical Programming Computation	journal article
+42	doi:10.1016/j.compchemeng.2022.107882	2022	10.1016/j.compchemeng.2022.107882	A New Solution Strategy For Multiparametric Quadratic Programming	Computers & Chemical Engineering	journal article
+43	doi:10.11650/tjm/220907	2023	10.11650/tjm/220907	Exact Optimization: Part I	Taiwanese Journal Of Mathematics	journal article
+44	doi:10.1016/b978-0-443-14081-5.00129-x	2024	10.1016/b978-0-443-14081-5.00129-x	Embedded Optimization In Control: An Introduction, Opportunities, And Challenges	Reference Module In Materials Science And Materials Engineering	book chapter
+45	doi:10.1109/tac.2024.3430416	2025	10.1109/tac.2024.3430416	Region-Free Explicit Model-Predictive Control For Linear Systems On Hilbert Spaces	IEEE Transactions On Automatic Control	journal article

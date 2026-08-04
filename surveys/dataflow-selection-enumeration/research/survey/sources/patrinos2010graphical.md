@@ -1,7 +1,7 @@
 # patrinos2010graphical — degeneracy-safe convex-pQP region traversal
 
-- **Status:** deep-read; closest optimization baseline; own-seed citation
-  chase pending before critical freeze
+- **Status:** deep-read; closest unrestricted optimization-traversal baseline;
+  own-seed citation chase complete
 - **Primary source:** https://doi.org/10.1016/j.automatica.2010.06.008
 - **Repository record:** https://dspace.lib.ntua.gr/xmlui/handle/123456789/20151
 - **Version read:** published article, cross-checked against the expanded
@@ -58,3 +58,14 @@ problem. It has no requested-root-relative enabled closure, input-dependent
 site domain, shared typed graph, or intentional preservation of equal-valued
 selection events. It nevertheless must be foregrounded whenever the survey
 discusses exact complete traversal under degeneracy.
+
+## Citation-neighborhood audit
+
+The publisher's exact sequential 49-entry bibliography was title-screened in
+`screening/primary-patrinos2010graphical-backward.tsv`. Access restrictions
+prevented visual comparison with the printed reference section, so the source
+of that exact count is stated explicitly. All 45 DOI-linked OpenCitations
+records were title-screened in
+`screening/opencitations-patrinos2010graphical-forward.tsv`. The chase retained
+the sufficient-matrix output-sensitive predecessor and later piecewise-QP,
+two-phase pLCP, connected-graph, QCQP, and region-free boundaries.
