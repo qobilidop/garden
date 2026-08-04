@@ -53,6 +53,23 @@ already supplies:
   edge patterns without claiming semantic equivalence;
 - dominator-filtered branch-context prioritization and target-relative
   precondition learning from previously unsuccessful symbolic paths;
+- regular-event-property guidance, property-oriented path slicing, and
+  symbolic-derivative pruning with soundness or relative-completeness results;
+- finite coverage-set path partitions and property slices that can summarize
+  unbounded-loop families, coupled in practice to an approximate LLM oracle;
+- exact symbolic partial-order reduction that retains representative
+  independent-event interleavings for local-property verification;
+- symbolic unfoldings that avoid redundant concurrent interleavings and
+  commute with component product;
+- exact basis-marking and bisimulation state reductions, a mildly lossy
+  time-anonymous abstraction, and estimation graphs for partial observers;
+- qualifying-event search that caps repeated RTL branches and relaxes the cap
+  after new coverage;
+- assertion-summary and compatible-branch pruning with preservation claims
+  relative to error reachability or bounded branch coverage;
+- coverage-preserving seed-suite reduction before symbolic exploration;
+- canonical higher-order concolic inputs with soundness and qualified
+  bug-finding completeness;
 - Lindblad's and Lazy SmallCheck's refinement of exactly the partial-input
   unknown demanded by a Boolean property, with partial constructor terms that
   denote bounded completion sets and pruning once the answer is known;

@@ -653,6 +653,40 @@ abstracts.
 If either round adds a cluster or plausible close competitor, this sequence is
 abandoned and two later prospective rounds are required after reconciliation.
 
+## Outcome of round 23 and retirement of round 24
+
+Round 23 is not a no-add round. The primary screener and an independent
+reviewer each resolved all 1,200 captured records; every query contains ranks
+1--100 exactly once. The audit found no remaining uncataloged plausible title
+after reconciliation. The findings that meet the deliberately broad frozen
+trigger include:
+
+- exact truth-table enumeration and Boolean rule minimization for a small
+  Boolean-feature neural classifier;
+- assertion-relative and compatible-branch pruning, together with
+  coverage-preserving seed-suite reduction before symbolic exploration;
+- canonical higher-order concolic inputs with soundness and qualified
+  bug-finding completeness;
+- qualifying-event branch caps and several target-guided exploration
+  comparators;
+- basis-marking, partial-observation, time-anonymous, symbolic-unfolding, and
+  partial-order state/run reductions; and
+- fully symbolic computation of a bisimulation quotient.
+
+These findings add or sharpen the coverage-preserving seed reduction,
+canonical higher-order input, behavior-relative state reduction, and fully
+symbolic bisimulation clusters. They therefore invalidate this replacement
+sequence. The map records important evidence limits: several supporting titles
+remain full-text-follow-up candidates, the compatible-branch and basis-marking
+claims are abstract-limited, the time-anonymous construction discloses minor
+information loss, and the practical SRV implementation is explicitly unsound
+because its Postset approximation is context-insensitive.
+
+Round 24 was prospectively frozen but its execution precondition required a
+round-23 no-add outcome. That precondition failed, so round 24 is retired
+unexecuted. Neither round contributes to the required final two-round no-add
+sequence. Two new rounds must be reconciled and frozen before execution.
+
 ## Independent audit
 
 After both replacement rounds qualify, a reviewer who did not choose the

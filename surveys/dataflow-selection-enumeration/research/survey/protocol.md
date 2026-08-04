@@ -77,10 +77,21 @@ count toward closure.
     exploration policies.
 21. Context- and precondition-guided symbolic search, including target-relative
     pruning learned from previously unsuccessful paths.
+22. Regular-property and trace-specification-guided symbolic execution,
+    including event-equivalence slicing and symbolic-derivative pruning.
+23. Partial-order reduction combined with symbolic state-space exploration for
+    observer-preserving omission of independent concurrent interleavings.
+24. Coverage-preserving seed or input reduction before symbolic exploration.
+25. Canonical higher-order concolic input representations and their qualified
+    completeness guarantees.
+26. Behavior-relative symbolic state reduction, including basis markings,
+    irrelevant timed-state components, subsumption, and partial-observation
+    estimate graphs.
+27. Fully symbolic bisimulation and related behavioral state quotients.
 
 Cluster 9 was added when forward snowballing from needed narrowing exposed a
 previously missing closest lineage. Later audited replacement rounds and their
-snowballs added clusters 10--21. Each addition reopened the map before closure;
+snowballs added clusters 10--27. Each addition reopened the map before closure;
 `closure-audit.md` records the chronological query expansions and retirement
 of superseded no-add rounds. These additions are disclosed post hoc as survey
 outcomes, not misrepresented as part of the initial protocol.

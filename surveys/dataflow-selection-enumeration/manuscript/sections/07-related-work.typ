@@ -26,8 +26,8 @@ reduction or boundary in each case.
       [Demand-guided search], [Forced inputs or choices],
         [Unforced structure], [Complete or fair values],
         [Usually no exact fiber residual],
-      [State/loop reduction], [Quotient markings or sibling states],
-        [Symmetric states; repeated edge patterns],
+      [State/loop reduction], [Reduced markings, runs, or sibling states],
+        [Symmetric/bisimilar states; redundant interleavings or patterns],
         [Exact quotient or heuristic postponement],
         [State space or search order, not input fiber],
       [Directed path search], [Branch under path context],
@@ -87,7 +87,25 @@ State-space and exploration quotients provide two further boundaries. Symbolic
 reachability graphs for well-formed colored Petri nets group markings by
 encoded color symmetries while preserving the represented reachability
 analysis; constraint-based variants extend the quotient toward asymmetric
-models @chiola1997srg @capra2005colored. Sparse symbolic loop execution instead
+models, and partial-symmetry constructions interpolate between them
+@chiola1997srg @haddad1995partial @capra2005colored. A recent symbolic-execution
+framework instead explores canonical orbit representatives of symmetric
+embedded-system states and states quotient-soundness and constraint-reuse
+results, while limiting empirical validation to a toy prototype
+@iavich2026symmetry. Partial-order reduction combined with BDD-based symbolic
+exploration similarly retains representative interleavings of independent
+concurrent events while preserving local-property verification
+@alur2001partialorder. Colored-net symbolic unfoldings provide another
+true-concurrency representation, avoid materializing every independent-action
+interleaving, and commute with component product @chatain2010factorization.
+Other state reductions replace an acyclic implicit-transition subnet by a
+subset of basis markings or compute the largest bisimulation through fully
+symbolic partition refinement @ma2017basis @mumme2013bisimulation.
+Time-anonymous-token analysis instead merges timestamps assessed as irrelevant
+to future timed behavior, with minor information loss explicitly disclosed
+@bellettini2011time. Estimation reachability graphs address the dual
+question of which Petri-net states remain possible under partial observations
+@aguirre2008observability. Sparse symbolic loop execution instead
 observes sibling states' branch-edge patterns up to a loop-impact barrier and
 postpones repeated patterns @busse2024ssle. The former is a state quotient and
 the latter a coverage-oriented search heuristic. Neither is an exact partition
@@ -102,6 +120,52 @@ then prunes the target-relative search @seo2015context. These mechanisms make
 requested-goal and observation-relative pruning established ideas. They change
 search order or exclude target-failing paths; they do not enumerate the exact
 image and inverse fibers of a total finite observer.
+
+Earlier target guidance assigns state-dependent fitness to paths approaching a
+requested coverage goal, while abstraction-guided concurrent testing ranks
+thread and data choices through a backward slice from the selected assertion
+@xie2009fitness @rungta2009abstraction. Both reinforce the same boundary:
+targeted observations can organize sparse exploration without defining a
+complete observer quotient.
+
+Coverage can also reduce the concrete seeds supplied to symbolic execution.
+Coverage-based cause reduction retains a subset with the same statement
+coverage and then prioritizes that subset before exploration
+@zhang2014reduction. This is observation-preserving preprocessing, not a
+semantic quotient of symbolic executions.
+
+Property-guided work supplies a stronger boundary than coverage heuristics.
+Regular-property-guided DSE combines an event-FSM history with a static
+over-approximation of future events to prioritize branches likely to reach one
+accepted trace @zhang2015regular. SRV's ideal rules additionally slice branches
+that cannot contribute a counterexample or whose accepted continuations are
+equivalent to an already explored event sequence when Preset/Postset satisfy
+the stated soundness conditions. The evaluated implementation is explicitly
+unsound because its Postset is context-insensitive @yu2018symbolic.
+Derivative-guided symbolic execution represents LTLf trace
+specifications as symbolic finite automata, uses residual specifications to
+prune precondition traces, and proves soundness and falsification completeness
+relative to its naive semantics @yuan2025derivative. Thus requested-event and
+specification-relative omission can carry conditional or relative preservation
+theorems. These methods seek property witnesses, not every observation and its
+exact inverse input fiber.
+
+Assertion- and coverage-directed methods sharpen that conclusion. Summaries of
+prior assertion-safe executions can soundly prune later multithreaded
+executions while preserving reachable error locations @guo2015assertion.
+The publisher abstract for dependency-derived compatible branch sets states
+sound omission of paths that add no branch coverage under a bounded exploration
+objective @yi2024compatible. An index abstract also reports multipoint DSE path
+equivalence, but primary full text remains unavailable @lu2017multipoint. The
+stronger results establish property-relative semantic omission without
+establishing exhaustive observer fibers.
+
+Finite path-family decomposition also appears in LLM-powered symbolic
+execution: coverage-set partitions and property slices can summarize infinitely
+many loop paths with finitely many derived subprograms @li2025llm. The practical
+verification oracle there is explicitly approximate, so this establishes a
+structural partition and termination boundary rather than an exact semantic
+enumerator.
 
 == Projection, Boolean atoms, and decision structures
 
@@ -153,6 +217,12 @@ for binary networks but use bounded approximation for real-valued networks
 must retain every internal decision. They compile an extensional class
 function on a finite Boolean domain, whereas the present observer deliberately
 retains reached internal site identities and attaches typed symbolic residuals.
+Exact logic synthesis of binarized neural inference supplies a related circuit
+representation without enumerating the output partition @chi2018bnnsynthesis.
+Direct truth-table evaluation and Boolean minimization likewise extract an
+exact rule set for a small Boolean-feature neural classifier, while the same
+method becomes sampling-based approximation at larger feature counts
+@mereani2019rule.
 
 == Needed search, partial inputs, and dataflow demand
 
@@ -177,6 +247,14 @@ idea to partial heaps @geldenhuys2013bounded @rosner2015bliss
 product by following an observer. They may represent one semantic class with
 several partial inputs, however, and do not generally return one exact
 inverse-fiber guard with a symbolic residual.
+
+Higher-order concolic testing provides a different canonicalization result. It
+evolves canonical function inputs from constraints observed during execution
+and proves sound evaluation and bug-finding completeness modulo concretization
+and SMT incompleteness @you2021higherorder. It searches a canonical input
+language for one counterexample rather than producing every exact first-order
+input fiber, but blocks a broad claim that canonical symbolic input search is
+new.
 
 Classical demand-driven dataflow is the direct fixed-input semantic precedent.
 Pingali and Arvind propagate requested output positions backward through a

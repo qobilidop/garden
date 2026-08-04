@@ -132,8 +132,8 @@ proof obligations, and evidence.
 - **Statement:** Structural non-observation, existential projection, logical
   don't-care, equal-value coalescing, abstract merging, and heuristic
   functional-space partitioning, state-space symmetry quotienting, and
-  observation-pattern search postponement omit different information and
-  preserve different observers.
+  observation-pattern or specification-guided search pruning omit different
+  information and preserve different observers.
 - **Evidence required:** an extraction matrix covering definitions, observer,
   representation, guarantee, and complexity for every deep-read work.
 

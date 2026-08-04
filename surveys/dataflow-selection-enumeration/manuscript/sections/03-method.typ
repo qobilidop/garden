@@ -17,7 +17,7 @@ are proved; how residuals, witnesses, and sharing are represented; what
 complexity results exist; and which assumptions are made about purity,
 totality, cycles, time, and solver completeness.
 
-The search vocabulary spans twenty-one clusters: formal and multi-path symbolic
+The search vocabulary spans twenty-seven clusters: formal and multi-path symbolic
 execution; hardware symbolic simulation; synchronous and dataflow testing;
 AllSAT, AllSMT, partial models, and cubes; trace partitioning; decision
 diagrams, residualization, slicing, and demand; functional-logic search and
@@ -28,7 +28,11 @@ enumeration; classical stream-dataflow demand; and compositional hybrid-mode,
 piecewise-affine, and parametric-program partitions; exact neural trees and
 decision-diagram compilation; symmetry-reduced reachability;
 observation-pattern loop-state postponement; and context- or
-precondition-guided target search.
+precondition-guided target search; regular-property or trace-specification
+guided event pruning; and symbolic partial-order reduction of concurrent
+interleavings; coverage-preserving seed reduction; and fully symbolic
+canonical higher-order concolic inputs; behavior-relative symbolic state
+reduction; and fully symbolic bisimulation quotients.
 
 The protocol began with a smaller vocabulary. Newly exposed clusters were
 added only through recorded reopenings; prior no-add rounds were then retired

@@ -1,0 +1,102 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1037/e527342012-074	2007	10.1037/e527342012-074	The Effect of Task-Irrelevant Objects on Learning the Spatial Context in Visual Search	PsycEXTRA Dataset	dataset
+2	10.1145/2635868.2635872	2014	10.1145/2635868.2635872	How we get there: a context-guided search strategy in concolic testing	Proceedings of the 22nd ACM SIGSOFT International Symposium on Foundations of Software Engineering	proceedings-article
+3	10.1145/2637002.2637042	2014	10.1145/2637002.2637042	Curiosity driven search	Proceedings of the 5th Information Interaction in Context Symposium	proceedings-article
+4	10.5626/jok.2021.48.2.201	2021	10.5626/jok.2021.48.2.201	Bounded Search Strategies of Concolic Testing for Effective and Efficient Structural Coverage Achievement	Journal of KIISE	journal-article
+5	10.1109/apsec60848.2023.00050	2023	10.1109/apsec60848.2023.00050	Parameterized Search Heuristic Prediction for Concolic Execution	2023 30th Asia-Pacific Software Engineering Conference (APSEC)	proceedings-article
+6	10.1145/3180155.3180166	2018	10.1145/3180155.3180166	Automatically generating search heuristics for concolic testing	Proceedings of the 40th International Conference on Software Engineering	proceedings-article
+7	10.52400/hkbi5962	None	10.52400/hkbi5962	Is NASA making itself irrelevant to the search for life in the cosmos?	Primordial Scoop	dataset
+8	10.1109/iccd.2017.36	2017	10.1109/iccd.2017.36	QUEBS: Qualifying Event Based Search in Concolic Testing for Validation of RTL Models	2017 IEEE International Conference on Computer Design (ICCD)	proceedings-article
+9	10.1037/e520602012-820	2011	10.1037/e520602012-820	Hemispheric Effects of Irrelevant Singleton in Visual Search Task	PsycEXTRA Dataset	dataset
+10	10.1037/e722982011-036	1993	10.1037/e722982011-036	On the Search for and Misuse of Irrelevant Information	PsycEXTRA Dataset	dataset
+11	10.1109/qsic.2013.68	2013	10.1109/qsic.2013.68	A Search Strategy Guided by Uncovered Branches for Concolic Testing	2013 13th International Conference on Quality Software	proceedings-article
+12	10.3724/sp.j.1016.2011.00953	2011	10.3724/sp.j.1016.2011.00953	Target-Directed Concolic Testing	Chinese Journal of Computers	journal-article
+13	10.1037/e527352012-822	2006	10.1037/e527352012-822	Irrelevant auditory singletons capture attention during sequential visual search	PsycEXTRA Dataset	dataset
+14	10.3758/s13414-022-02470-x	2022	10.3758/s13414-022-02470-x	Contextual cueing in co-active visual search: Joint action allows acquisition of task-irrelevant context	Attention, Perception, &amp; Psychophysics	journal-article
+15	10.31234/osf.io/g4rk7	2024	10.31234/osf.io/g4rk7	Experience-driven suppression of irrelevant distractor locations is context dependent		posted-content
+16	10.1016/j.infsof.2018.11.006	2019	10.1016/j.infsof.2018.11.006	FSCT: A new fuzzy search strategy in concolic testing	Information and Software Technology	journal-article
+17	10.1079/cabicompendium.71642	2019	10.1079/cabicompendium.71642	Paruromys dominator	CABI Compendium	dataset
+18	10.2139/ssrn.6555439	2026	10.2139/ssrn.6555439	Algorithmic Noise in Retail Search: How Irrelevant Results Bias Demand Estimation and Inventory Decisions		posted-content
+19	10.1167/2.7.529	2010	10.1167/2.7.529	Visual search with irrelevant background: Speeding or slowing search using endogenous cues	Journal of Vision	journal-article
+20	10.36227/techrxiv.176184397.77169395/v1	2025	10.36227/techrxiv.176184397.77169395/v1	Security Knowledge Dilution in Large Language Models: How Irrelevant Context Degrades Critical Domain Expertise		posted-content
+21	10.1093/oed/4098781055	2023	10.1093/oed/4098781055	dominator, n.	Oxford English Dictionary	book-chapter
+22	10.1587/transinf.2018edl8052	2018	10.1587/transinf.2018edl8052	Search-Based Concolic Execution for SW Vulnerability Discovery	IEICE Transactions on Information and Systems	journal-article
+23	10.15760/etd.3815	None	10.15760/etd.3815	Concolic Testing for Scripting Languages		dissertation
+24	10.55277/researchhub.5n91t4fd	2026	10.55277/researchhub.5n91t4fd	Dominator MaXXX ME Gummies Reviews		report
+25	10.55277/researchhub.jwdqvgrz	2026	10.55277/researchhub.jwdqvgrz	Dominator MaXXX ME Gummies		report
+26	10.1109/formalise.2017.10	2017	10.1109/formalise.2017.10	Partition-Based Coverage Metrics and Type-Guided Search in Concolic Testing for JavaScript Applications	2017 IEEE/ACM 5th International FME Workshop on Formal Methods in Software Engineering (FormaliSE)	proceedings-article
+27	10.1145/3639478.3643105	2024	10.1145/3639478.3643105	Hunting DeFi Vulnerabilities via Context-Sensitive Concolic Verification	Proceedings of the 2024 IEEE/ACM 46th International Conference on Software Engineering: Companion Proceedings	proceedings-article
+28	10.33480/jitk.v7i2.2758	2022	10.33480/jitk.v7i2.2758	IMPLEMENTATION OF CONCOLIC UNIT TESTING IN TESTING BINARY SEARCH ALGORITHM USING JCUTE	JITK (Jurnal Ilmu Pengetahuan dan Teknologi Komputer)	journal-article
+29	10.1101/2020.05.18.101410	2020	10.1101/2020.05.18.101410	Eye movements in real-life search are guided by task-irrelevant working-memory content		posted-content
+30	10.1016/j.visres.2009.03.007	2009	10.1016/j.visres.2009.03.007	Task-irrelevant stimulus salience affects visual search	Vision Research	journal-article
+31	10.1007/s11219-011-9142-y	2011	10.1007/s11219-011-9142-y	Automatically performing weak mutation with the aid of symbolic execution, concolic testing and search-based testing	Software Quality Journal	journal-article
+32	10.1007/s00521-022-07008-8	2022	10.1007/s00521-022-07008-8	Dr.PathFinder: hybrid fuzzing with deep reinforcement concolic execution toward deeper path-first search	Neural Computing and Applications	journal-article
+33	10.1007/978-981-10-5427-3_18	2017	10.1007/978-981-10-5427-3_18	Measuring Branch Coverage for the SOA Based Application Using Concolic Testing	Communications in Computer and Information Science	book-chapter
+34	10.2139/ssrn.437221	2003	10.2139/ssrn.437221	Irrelevant Internalities, Irrelevant Externalities, and Irrelevant Anxieties		posted-content
+35	10.1007/978-3-030-58892-2_5	2021	10.1007/978-3-030-58892-2_5	Dominator and Total Dominator Colorings in Graphs	Developments in Mathematics	book-chapter
+36	10.1037/e537052012-372	2004	10.1037/e537052012-372	Irrelevant-Context Effects on Subjective States of Remembering	PsycEXTRA Dataset	dataset
+37	10.1167/jov.20.11.1702	2020	10.1167/jov.20.11.1702	Heads-up!  Irrelevant visual information impacts search processes	Journal of Vision	journal-article
+38	10.3758/s13414-022-02634-9	2023	10.3758/s13414-022-02634-9	The effects of search-irrelevant working memory content on visual search	Attention, Perception, &amp; Psychophysics	journal-article
+39	10.37622/gjpam/15.4.2019.499-504	2019	10.37622/gjpam/15.4.2019.499-504	Dominator and Total Dominator Coloring on Square Chessboard	Global Journal of Pure and Applied Mathematics	journal-article
+40	10.26637/mjm0802/0052	2020	10.26637/mjm0802/0052	Dominator and total dominator chromatic number of Mongolian tent and fire cracker graphs	Malaya Journal of Matematik	journal-article
+41	10.4095/327205	2020	10.4095/327205	Survey Project Search - a text-based search tool for in-progress survey projects		report
+42	10.1167/14.10.504	2014	10.1167/14.10.504	Irrelevant Spatial Value Learning Modulates Visual Search	Journal of Vision	journal-article
+43	10.5220/0009953905290536	2020	10.5220/0009953905290536	RiverConc: An Open-source Concolic Execution Engine for x86 Binaries	Proceedings of the 15th International Conference on Software Technologies	proceedings-article
+44	10.1109/tce.2026.3678618/mm1	None	10.1109/tce.2026.3678618/mm1	Debiased Driver State Recognition via Irrelevant Context and Social Bias Removal for Vision-Language Model in Reproducing Kernel Hilbert Spaces_supp1-3678618.pdf		component
+45	10.15760/etd.6994	2000	10.15760/etd.6994	Versatile Binary-level Concolic Testing		report
+46	10.1145/1363686.1363957	2008	10.1145/1363686.1363957	On filtering irrelevant results in peer-to-peer search	Proceedings of the 2008 ACM symposium on Applied computing	proceedings-article
+47	10.1037/e520592012-413	2010	10.1037/e520592012-413	Target selection in relevant and irrelevant visual search displays: Intertrial effects	PsycEXTRA Dataset	dataset
+48	10.33806/ijaes2000.6.1.8	2005	10.33806/ijaes2000.6.1.8	"Activation and Suppression of Context-Relevant and Context-Irrelevant
+Senses in the Processing of Nonliteral Language by L2 Learners"	International Journal of Arabic-English Studies	journal-article
+49	10.21236/ada294522	1995	10.21236/ada294522	Branch and Bound Methods for Search Problems.		report
+50	10.1038/s41598-019-38586-8	2019	10.1038/s41598-019-38586-8	Perceptual learning of task-irrelevant features depends on the sensory context	Scientific Reports	journal-article
+51	10.4095/327203	2020	10.4095/327203	Survey Plan Search - a text-based search tool for all current and historical records		report
+52	10.1145/3338906.3338964	2019	10.1145/3338906.3338964	Concolic testing with adaptively changing search heuristics	Proceedings of the 2019 27th ACM Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering	proceedings-article
+53	10.1177/001452467608800305	1976	10.1177/001452467608800305	Is the Search for the Historical Jesus Religiously Irrelevant?	The Expository Times	journal-article
+54	10.1167/12.9.10	2012	10.1167/12.9.10	Task-irrelevant Happy Faces Facilitate Visual Search Performance	Journal of Vision	journal-article
+55	10.1002/spe.2405	2017	10.1002/spe.2405	An improved distributed concolic testing approach	Software: Practice and Experience	journal-article
+56	10.1167/5.8.278	2010	10.1167/5.8.278	Spatial arrangement of irrelevant color in visual search	Journal of Vision	journal-article
+57	10.1016/j.visres.2008.11.007	2009	10.1016/j.visres.2008.11.007	Search time critically depends on irrelevant subset size in visual search	Vision Research	journal-article
+58	10.1007/s13369-016-2284-2	2017	10.1007/s13369-016-2284-2	An Automated Analysis of the Branch Coverage and Energy Consumption Using Concolic Testing	Arabian Journal for Science and Engineering	journal-article
+59	10.1037/h0030888	1971	10.1037/h0030888	Irrelevant item variety and visual search.	Journal of Experimental Psychology	journal-article
+60	10.1371/journal.pone.0124190	2015	10.1371/journal.pone.0124190	A Salient and Task-Irrelevant Collinear Structure Hurts Visual Search	PLOS ONE	journal-article
+61	10.2139/ssrn.4461952	2023	10.2139/ssrn.4461952	Testing Concolic Execution Through Consistency Checks		posted-content
+62	10.21275/v5i4.16041604	2016	10.21275/v5i4.16041604	2- Dominator Coloring for Various Graphs in Graph Theory	International Journal of Science and Research (IJSR)	journal-article
+63	10.1167/jov.22.14.4238	2022	10.1167/jov.22.14.4238	Irrelevant visual properties induce dramatic changes in search efficiency	Journal of Vision	journal-article
+64	10.7554/elife.38677.015	None	10.7554/elife.38677.015	Figure 4. Within-relevance and cross-relevance object category decoding in pFs.		component
+65	10.5040/9781350601529.4458	2023	10.5040/9781350601529.4458	dominator	The Arden Encyclopedia of Shakespeare’s Language	other
+66	10.1007/978-0-387-73003-5_720	2009	10.1007/978-0-387-73003-5_720	Branch-and-Bound Search	Encyclopedia of Biometrics	book-chapter
+67	10.5220/0005480706270634	2015	10.5220/0005480706270634	Aspects of Context in Daily Search Activities - Survey about Nowadays Search Habits	Proceedings of the 11th International Conference on Web Information Systems and Technologies	proceedings-article
+68	10.1167/16.12.1321	2016	10.1167/16.12.1321	Search excludes irrelevant regions in immersive environments	Journal of Vision	journal-article
+69	10.18849/ve.v1i4.79	2016	10.18849/ve.v1i4.79	Irrelevant, Irrelevant, Irrelevant! Time to change our approach to research?	Veterinary Evidence	journal-article
+70	10.3758/bf03213019	1971	10.3758/bf03213019	Response latencies in visual search involving redundant or irrelevant information	Perception &amp; Psychophysics	journal-article
+71	10.1027/1618-3169/a000212	2013	10.1027/1618-3169/a000212	Irrelevant Speech Disrupts Item-Context Binding	Experimental Psychology	journal-article
+72	10.1093/acprof:oso/9780198566427.003.0003	2005	10.1093/acprof:oso/9780198566427.003.0003	Aging and the ability to ignore irrelevant information in visual search and enumeration tasks	Measuring the Mind: Speed, control, and age	book-chapter
+73	10.1167/16.12.1440	2016	10.1167/16.12.1440	A task-irrelevant high memorability image can impair or enhance visual search performanc	Journal of Vision	journal-article
+74	10.3758/s13414-022-02623-y	2023	10.3758/s13414-022-02623-y	Novel tests of capture by irrelevant abrupt onsets: No evidence for a mediating role of search task difficulty during color search	Attention, Perception, &amp; Psychophysics	journal-article
+75	10.17265/2328-2185/2021.03.001	2021	10.17265/2328-2185/2021.03.001	Targeting Arab Markets: Is Cultural Context Irrelevant to Marketing in Libya?	Management Studies	journal-article
+76	10.1080/13506285.2013.779350	2013	10.1080/13506285.2013.779350	Task-irrelevant direct gaze facilitates visual search for deviant facial expression	Visual Cognition	journal-article
+77	10.1007/978-3-319-46595-1_5	2016	10.1007/978-3-319-46595-1_5	Targeting Morally Irrelevant Characteristics and the Need for Context: Further Attempts at Resolving the Dilemma	Resolving the Gamer’s Dilemma	book-chapter
+78	10.3389/fpsyg.2013.00383	2013	10.3389/fpsyg.2013.00383	Development of response inhibition in the context of relevant versus irrelevant emotions	Frontiers in Psychology	journal-article
+79	10.1017/cbo9780511997686.003	2011	10.1017/cbo9780511997686.003	A Context for Sponsored Search	Understanding Sponsored Search	book-chapter
+80	10.1167/jov.25.9.1764	2025	10.1167/jov.25.9.1764	Impact of Task-Irrelevant Heterogeneity on Visual Search Efficiency and Attentional Capture	Journal of Vision	journal-article
+81	10.1007/978-981-10-8944-2_14	2019	10.1007/978-981-10-8944-2_14	Augmenting Concolic Testing with Weighted Constraints-Based Search	Advances in Intelligent Systems and Computing	book-chapter
+82	10.3758/bf03343119	1965	10.3758/bf03343119	The effect of irrelevant context on tachistoscopic recognition	Psychonomic Science	journal-article
+83	10.26226/morressier.604907f41a80aac83ca25d24	2021	10.26226/morressier.604907f41a80aac83ca25d24	Sound and Complete Concolic Testing for Higher-Order Functions		posted-content
+84	10.1016/s1359-6128(09)70506-3	2009	10.1016/s1359-6128(09)70506-3	Indutrade acquires Dominator	Pump Industry Analyst	journal-article
+85	10.1167/10.7.1290	2010	10.1167/10.7.1290	Knowing what not to look for: Difficulty ignoring irrelevant features in visual search	Journal of Vision	journal-article
+86	10.32469/10355/59862	None	10.32469/10355/59862	Image search with LSH and shape context		dissertation
+87	10.1037/e520562012-111	2009	10.1037/e520562012-111	Suppression of salient-but-irrelevant objects in visual search overcomes distraction: An ERP study	PsycEXTRA Dataset	dataset
+88	10.1167/9.8.1172	2010	10.1167/9.8.1172	Order effects determine whether irrelevant stimuli are scrutinized in preview and conjunction search	Journal of Vision	journal-article
+89	10.17760/d20253512	None	10.17760/d20253512	Context aware conversational agent for flight search		dissertation
+90	10.1145/2348283.2348447	2012	10.1145/2348283.2348447	Putting context into search and search into context	Proceedings of the 35th international ACM SIGIR conference on Research and development in information retrieval	proceedings-article
+91	10.1167/17.10.537	2017	10.1167/17.10.537	Eye movement strategies during search of graphs with relevant and irrelevant information	Journal of Vision	journal-article
+92	10.3390/arts12050194	2023	10.3390/arts12050194	In Search of Context, In Search of Home	Arts	journal-article
+93	10.1167/17.10.83	2017	10.1167/17.10.83	Task-irrelevant optic flow guides overt attention during visual search	Journal of Vision	journal-article
+94	10.1038/s41598-021-85627-2	2021	10.1038/s41598-021-85627-2	Irrelevant background context decreases mnemonic discrimination and increases false memory	Scientific Reports	journal-article
+95	10.1016/j.scijus.2012.10.004	2013	10.1016/j.scijus.2012.10.004	The management of domain irrelevant context information in forensic handwriting examination casework	Science &amp; Justice	journal-article
+96	10.1167/17.10.923	2017	10.1167/17.10.923	Individual differences in susceptibility to irrelevant environmental influences predict visual search performance	Journal of Vision	journal-article
+97	10.1167/10.7.1318	2010	10.1167/10.7.1318	Gaze capture by task-irrelevant, eye of origin, singletons even without awareness during visual search	Journal of Vision	journal-article
+98	10.2139/ssrn.5034559	2024	10.2139/ssrn.5034559	Cracking Spoofs with Context: A Dual-Branch Cnn Approach		posted-content
+99	10.2466/pms.1979.49.1.315	1979	10.2466/pms.1979.49.1.315	Effects of Sequence and Variety of Irrelevant Items on Visual Search	Perceptual and Motor Skills	journal-article
+100	10.5220/0006776301210132	2018	10.5220/0006776301210132	A Systematic Review of Concolic Testing with Aplication of Test Criteria	Proceedings of the 20th International Conference on Enterprise Information Systems	proceedings-article
