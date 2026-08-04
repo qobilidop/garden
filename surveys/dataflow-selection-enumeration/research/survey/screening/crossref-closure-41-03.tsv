@@ -1,0 +1,101 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1007/bfb0032041	None	10.1007/bfb0032041	Stability and sequentiality in dataflow networks	Lecture Notes in Computer Science	book-chapter
+2	10.1007/bfb0013470	None	10.1007/bfb0013470	Dataflow networks are fibrations	Lecture Notes in Computer Science	book-chapter
+3	10.1007/bf03259389	1994	10.1007/bf03259389	Stability, Sequentiality and Demand Driven Evaluation in Dataflow	Formal Aspects of Computing	journal-article
+4	10.1109/lics.1991.151638	None	10.1109/lics.1991.151638	Sequentiality and strong stability	[1991] Proceedings Sixth Annual IEEE Symposium on Logic in Computer Science	proceedings-article
+5	10.1201/9781003286363-49	2025	10.1201/9781003286363-49	Stability of Fibrations	ZAG Handbook of Algebraic Geometry	book-chapter
+6	10.2422/2036-2145.201608_020	2019	10.2422/2036-2145.201608_020	Stability of coisotropic fibrations on holomorphic symplectic manifolds	ANNALI SCUOLA NORMALE SUPERIORE - CLASSE DI SCIENZE	journal-article
+7	10.2139/ssrn.2219326	2013	10.2139/ssrn.2219326	The Benefit of Sequentiality in Social Networks	SSRN Electronic Journal	journal-article
+8	10.1016/bs.adcom.2014.10.001	2015	10.1016/bs.adcom.2014.10.001	Sorting Networks on Maxeler Dataflow Supercomputing Systems	Advances in Computers	book-chapter
+9	10.1016/0893-6080(88)90471-6	1988	10.1016/0893-6080(88)90471-6	Analysis of dataflow diagrams by neural network	Neural Networks	journal-article
+10	10.1201/9781003286363-128	2025	10.1201/9781003286363-128	On K-stability of Calabi-Yau Fibrations	ZAG Handbook of Algebraic Geometry	book-chapter
+11	10.1109/lics.1994.316082	None	10.1109/lics.1994.316082	On strong stability and higher-order sequentiality	Proceedings Ninth Annual IEEE Symposium on Logic in Computer Science	proceedings-article
+12	10.1007/978-3-319-66125-4_1	2017	10.1007/978-3-319-66125-4_1	Implementing Neural Networks by Using the DataFlow Paradigm	Computer Communications and Networks	book-chapter
+13	10.70930/tac/ko79n3q0	2018	10.70930/tac/ko79n3q0	Stability for inner fibrations revisited	Theory and Applications of Categories	journal-article
+14	10.1515/9783112327562-006	1975	10.1515/9783112327562-006	NOTES	Models of Simultaneity and Sequentiality in Human Cognition	book-chapter
+15	10.2139/ssrn.6875241	2026	10.2139/ssrn.6875241	Graph as App: A GPU Dataflow Substrate for Domain-Agnostic Living Networks		posted-content
+16	10.1016/0040-9383(77)90034-9	1977	10.1016/0040-9383(77)90034-9	On stability of compact leaves and fibrations	Topology	journal-article
+17	10.1007/978-3-030-13803-5_9	2019	10.1007/978-3-030-13803-5_9	Bitcoin Mining Using Maxeler DataFlow Computers	Computer Communications and Networks	book-chapter
+18	10.1007/978-3-319-66125-4_3	2017	10.1007/978-3-319-66125-4_3	Binary Search in the DataFlow Paradigm	Computer Communications and Networks	book-chapter
+19	10.1061/40996(330)115	2009	10.1061/40996(330)115	Research on the Dataflow Stability in Logistics Partner Information Exchange Protocol	Logistics	proceedings-article
+20	10.5220/0005180800460054	2015	10.5220/0005180800460054	Inconsistency and Sequentiality in LTL	Proceedings of the International Conference on Agents and Artificial Intelligence	proceedings-article
+21	10.70675/28c6ed2ez142bz46b3zaed1zdd6eced3d708	None	10.70675/28c6ed2ez142bz46b3zaed1zdd6eced3d708	Simplifying transducers using sequentiality		dissertation
+22	10.1016/j.aim.2014.01.003	2014	10.1016/j.aim.2014.01.003	Stability and Fourier–Mukai transforms on elliptic fibrations	Advances in Mathematics	journal-article
+23	10.3233/fi-1995-22128	1995	10.3233/fi-1995-22128	AN ALGEBRA OF DATAFLOW NETWORKS	Fundamenta Informaticae	journal-article
+24	10.1007/978-3-319-66125-4_2	2017	10.1007/978-3-319-66125-4_2	Solving the Poisson Equation by Using DataFlow Technology	Computer Communications and Networks	book-chapter
+25	10.70675/79450ec3z4ba3z4908za267z58ffed3915eb	None	10.70675/79450ec3z4ba3z4908za267z58ffed3915eb	Joint design of deep neural networks and FPGA dataflow architectures for semantic segmentation in autonomous vehicles		dissertation
+26	10.1007/978-3-319-16229-4_1	2015	10.1007/978-3-319-16229-4_1	The DataFlow Paradigm	Computer Communications and Networks	book-chapter
+27	10.2996/kmj/1446210596	2015	10.2996/kmj/1446210596	On Milnor fibrations of mixed functions, af-condition and boundary stability	Kodai Mathematical Journal	journal-article
+28	10.1090/s1056-3911-08-00511-0	2008	10.1090/s1056-3911-08-00511-0	Stability conditions and Calabi–Yau fibrations	Journal of Algebraic Geometry	journal-article
+29	10.4018/978-1-7998-8350-0.ch006	2022	10.4018/978-1-7998-8350-0.ch006	Implementation Details of Neural Networks Using Dataflow	Advances in Systems Analysis, Software Engineering, and High Performance Computing	book-chapter
+30	10.1007/978-3-030-13803-5_8	2019	10.1007/978-3-030-13803-5_8	An Overview of Selected DataFlow Applications in Physics Simulations	Computer Communications and Networks	book-chapter
+31	10.1017/cbo9780511574788.005	1996	10.1017/cbo9780511574788.005	Symplectic Fibrations and Multiplicity Diagrams	Symplectic Fibrations and Multiplicity Diagrams	book-chapter
+32	10.1515/cog-2025-0015	2026	10.1515/cog-2025-0015	Recurrent multiword units as networks: sequentiality as basis for linguistic generalizations	Cognitive Linguistics	journal-article
+33	10.1109/telfor.2016.7818792	2016	10.1109/telfor.2016.7818792	Dataflow integration in mixedcritical networks	2016 24th Telecommunications Forum (TELFOR)	proceedings-article
+34	10.1515/9783110577563-002	2021	10.1515/9783110577563-002	2 Algebraic surfaces with fibrations	Affine Space Fibrations	book-chapter
+35	10.1007/978-3-030-13803-5_2	2019	10.1007/978-3-030-13803-5_2	On Cloud-Supported Web-Based Integrated Development Environment for Programming DataFlow Architectures	Computer Communications and Networks	book-chapter
+36	10.1007/978-3-030-13803-5_7	2019	10.1007/978-3-030-13803-5_7	Biomedical Images Processing Using Maxeler DataFlow Engines	Computer Communications and Networks	book-chapter
+37	10.1109/sfcs.1989.63474	1989	10.1109/sfcs.1989.63474	Full abstraction for nondeterministic dataflow networks	30th Annual Symposium on Foundations of Computer Science	proceedings-article
+38	10.1007/978-3-319-66128-5_4	2017	10.1007/978-3-319-66128-5_4	Transforming Applications from the Control Flow to the Dataflow Paradigm	Computer Communications and Networks	book-chapter
+39	10.1007/978-3-030-13803-5_6	2019	10.1007/978-3-030-13803-5_6	Face Recognition Using Maxeler DataFlow	Computer Communications and Networks	book-chapter
+40	10.1515/9783110577563-003	2021	10.1515/9783110577563-003	3 Fibrations in higher dimension	Affine Space Fibrations	book-chapter
+41	10.1007/978-3-319-66128-5_2	2017	10.1007/978-3-319-66128-5_2	Discrepancy Reduction Between the Topology of Dataflow Graph and the Topology of FPGA Structure	Computer Communications and Networks	book-chapter
+42	10.1515/9783110316469.765	2014	10.1515/9783110316469.765	Sequentiality	Handbook of Narratology	book-chapter
+43	10.1017/cbo9780511574788.002	1996	10.1017/cbo9780511574788.002	Symplectic Fibrations	Symplectic Fibrations and Multiplicity Diagrams	book-chapter
+44	10.1007/978-3-030-13803-5_4	2019	10.1007/978-3-030-13803-5_4	Matrix-Based Algorithms for DataFlow Computer Architecture: An Overview and Comparison	Computer Communications and Networks	book-chapter
+45	10.70675/13b57c37z61acz434dz8f55z12d53583c7e5	None	10.70675/13b57c37z61acz434dz8f55z12d53583c7e5	Extending contextuality frameworks : from noise to sequentiality		dissertation
+46	10.1007/978-3-030-13803-5_5	2019	10.1007/978-3-030-13803-5_5	Application of Maxeler DataFlow Supercomputing to Spherical Code Design	Computer Communications and Networks	book-chapter
+47	10.1515/9783112327562-toc	1975	10.1515/9783112327562-toc	CONTENTS	Models of Simultaneity and Sequentiality in Human Cognition	book-chapter
+48	10.1109/informatics47936.2019.9119311	2019	10.1109/informatics47936.2019.9119311	Building Neural Networks as Dataflow Graphs	2019 IEEE 15th International Scientific Conference on Informatics	proceedings-article
+49	10.1215/00127094-2022-0025	2022	10.1215/00127094-2022-0025	Stability of fibrations over one-dimensional bases	Duke Mathematical Journal	journal-article
+50	10.1137/1.9781611977332.ch22	2023	10.1137/1.9781611977332.ch22	Chapter 22: Graph Fibrations and Quiver Representations	Dynamics and Bifurcation in Networks: Theory and Applications of Coupled Differential Equations	book-chapter
+51	10.1017/9781009372671.003	2023	10.1017/9781009372671.003	Lagrangian fibrations	Lectures on Lagrangian Torus Fibrations	book-chapter
+52	10.1109/5.381846	1995	10.1109/5.381846	Dataflow process networks	Proceedings of the IEEE	journal-article
+53	10.5802/ahl.161	2023	10.5802/ahl.161	An effective weighted K-stability condition for polytopes and semisimple principal toric fibrations	Annales Henri Lebesgue	journal-article
+54	10.1515/9783112327562-004	1975	10.1515/9783112327562-004	IDEAL TAXONOMIC RULES	Models of Simultaneity and Sequentiality in Human Cognition	book-chapter
+55	10.14325/mississippi/9781617037702.003.0003	2013	10.14325/mississippi/9781617037702.003.0003	New Insights into Sequentiality	Comics and Narration	book-chapter
+56	10.1109/lics.1992.185527	None	10.1109/lics.1992.185527	A calculus of dataflow networks	[1992] Proceedings of the Seventh Annual IEEE Symposium on Logic in Computer Science	proceedings-article
+57	10.1109/ispan.1999.778964	None	10.1109/ispan.1999.778964	Parallel efficiency: the dataflow advantage	Proceedings Fourth International Symposium on Parallel Architectures, Algorithms, and Networks (I-SPAN'99)	proceedings-article
+58	10.1007/s12220-023-01521-5	2024	10.1007/s12220-023-01521-5	Weighted K-Stability for a Class of Non-compact Toric Fibrations	The Journal of Geometric Analysis	journal-article
+59	10.1093/oso/9780198794899.003.0007	2017	10.1093/oso/9780198794899.003.0007	Symplectic fibrations	Oxford Scholarship Online	book
+60	10.1006/inco.1996.0012	1996	10.1006/inco.1996.0012	On Schematological Equivalence of Dataflow Networks	Information and Computation	journal-article
+61	10.3390/electronics14153085	2025	10.3390/electronics14153085	DCP: Learning Accelerator Dataflow for Neural Networks via Propagation	Electronics	journal-article
+62	10.1007/s00013-023-01958-8	2024	10.1007/s00013-023-01958-8	On the slope stability of the cotangent bundles of Weierstrass fibrations	Archiv der Mathematik	journal-article
+63	10.1515/9783112327562-fm	1975	10.1515/9783112327562-fm	Frontmatter	Models of Simultaneity and Sequentiality in Human Cognition	book-chapter
+64	10.1515/9783112327562-008	1975	10.1515/9783112327562-008	Backmatter	Models of Simultaneity and Sequentiality in Human Cognition	book-chapter
+65	10.1075/pbns.103.09lan	2002	10.1075/pbns.103.09lan	Talk on TV	Pragmatics &amp; Beyond New Series	book-chapter
+66	10.1016/j.comnet.2005.10.016	2006	10.1016/j.comnet.2005.10.016	A dataflow approach to efficient change detection of HTML/XML documents in WebVigiL	Computer Networks	journal-article
+67	10.1007/978-3-319-66125-4_5	2017	10.1007/978-3-319-66125-4_5	DataFlow Systems: From Their Origins to Future Applications in Data Analytics, Deep Learning, and the Internet of Things	Computer Communications and Networks	book-chapter
+68	10.1515/9783112327562-003	1975	10.1515/9783112327562-003	IDEAL TREE RULES	Models of Simultaneity and Sequentiality in Human Cognition	book-chapter
+69	10.1016/j.jpaa.2023.107494	2024	10.1016/j.jpaa.2023.107494	Toric sheaves, stability and fibrations	Journal of Pure and Applied Algebra	journal-article
+70	10.1007/bfb0018344	None	10.1007/bfb0018344	Compositional relational semantics for indeterminate dataflow networks	Lecture Notes in Computer Science	book-chapter
+71	10.1142/9789812839442_0018	2010	10.1142/9789812839442_0018	DATAFLOW COMPUTATIONS ON ENTERPRISE GRIDS	Selected Topics in Communication Networks and Distributed Systems	book-chapter
+72	10.1016/b978-0-12-158860-1.50041-1	1979	10.1016/b978-0-12-158860-1.50041-1	CELL-LIKE MAPS, APPROXIMATE FIBRATIONS AND SHAPE FIBRATIONS	Geometric Topology	book-chapter
+73	10.3030/838342	2019	10.3030/838342			grant
+74	10.2140/gt.2021.25.2643	2021	10.2140/gt.2021.25.2643	Moduli theory, stability of fibrations and optimal symplectic connections	Geometry &amp; Topology	journal-article
+75	10.1109/mnnfs.1996.493796	None	10.1109/mnnfs.1996.493796	A SIMD/dataflow architecture for a neurocomputer for spike-processing neural networks (NESPINN)	Proceedings of Fifth International Conference on Microelectronics for Neural Networks	proceedings-article
+76	10.1109/icnn.1995.488133	None	10.1109/icnn.1995.488133	A dataflow processing element for neural network simulation	Proceedings of ICNN'95 - International Conference on Neural Networks	proceedings-article
+77	10.1142/s0218127424300143	2024	10.1142/s0218127424300143	Groupoids, Fibrations, and Balanced Colorings of Networks	International Journal of Bifurcation and Chaos	journal-article
+78	10.1515/9783112327562-001	1975	10.1515/9783112327562-001	INTRODUCTION	Models of Simultaneity and Sequentiality in Human Cognition	book-chapter
+79	10.1017/cbo9780511574788.003	1996	10.1017/cbo9780511574788.003	Examples of Symplectic Fibrations: The Coadjoint Orbit Hierarchy	Symplectic Fibrations and Multiplicity Diagrams	book-chapter
+80	10.1006/inco.1997.2658	1997	10.1006/inco.1997.2658	On Schematological Equivalence of Partially Interpreted Dataflow Networks	Information and Computation	journal-article
+81	10.1145/3731302.3731319	2026	10.1145/3731302.3731319	Advanced: Optimal Dataflow Programs and Dataflow SPLs	Science of Software Product Lines	book-chapter
+82	10.1036/1097-8542.181000	None	10.1036/1097-8542.181000	Dataflow systems	AccessScience	dataset
+83	10.1007/978-3-030-13803-5	2019	10.1007/978-3-030-13803-5	Exploring the DataFlow Supercomputing Paradigm	Computer Communications and Networks	book
+84	10.5802/wbln.5	2015	10.5802/wbln.5	Lefschetz Fibrations and real Lefschetz fibrations	Winter Braids Lecture Notes	journal-article
+85	10.1075/pbns.103.10ker	2002	10.1075/pbns.103.10ker	Culture, genres and the problem of sequentiality	Pragmatics &amp; Beyond New Series	book-chapter
+86	10.4310/cag.2016.v24.n5.a6	2016	10.4310/cag.2016.v24.n5.a6	Stability and Fourier–Mukai transforms on higher dimensional elliptic fibrations	Communications in Analysis and Geometry	journal-article
+87	10.1002/sec.1746	2016	10.1002/sec.1746	Measuring the risk value of sensitive dataflow path in Android applications	Security and Communication Networks	journal-article
+88	10.1090/s0002-9939-2011-11136-5	2011	10.1090/s0002-9939-2011-11136-5	Stability of complex foliations transverse to fibrations	Proceedings of the American Mathematical Society	journal-article
+89	10.1007/978-1-4615-3752-6_3	1991	10.1007/978-1-4615-3752-6_3	A Dataflow Architecture for AI	VLSI for Artificial Intelligence and Neural Networks	book-chapter
+90	10.4153/cjm-1977-091-2	1977	10.4153/cjm-1977-091-2	Approximating Approximate Fibrations by Fibrations	Canadian Journal of Mathematics	journal-article
+91	10.1109/icpp.1993.66	1993	10.1109/icpp.1993.66	Dataflow Graph Optimization for Dataflow Architectures a Dataflow Otimizing Compiler	1993 International Conference on Parallel Processing - ICPP'93 Vol2	proceedings-article
+92	10.47749/t/unicamp.2013.912386	None	10.47749/t/unicamp.2013.912386	Lefschetz fibrations		dissertation
+93	10.1515/9783112327562	1975	10.1515/9783112327562	Models of Simultaneity and Sequentiality in Human Cognition		book
+94	10.1515/9783112327562-005	1975	10.1515/9783112327562-005	SEQUENTIAL RULES	Models of Simultaneity and Sequentiality in Human Cognition	book-chapter
+95	10.1109/neurel.2016.7800110	2016	10.1109/neurel.2016.7800110	Implementation of perception algorithm using DataFlow paradigm	2016 13th Symposium on Neural Networks and Applications (NEUREL)	proceedings-article
+96	10.1515/9783112327562-007	1975	10.1515/9783112327562-007	REFERENCES	Models of Simultaneity and Sequentiality in Human Cognition	book-chapter
+97	10.1007/978-1-4899-1331-9_15	1994	10.1007/978-1-4899-1331-9_15	A Dataflow Approach for Neural Networks	VLSI for Neural Networks and Artificial Intelligence	book-chapter
+98	10.1017/s1474748024000598	2025	10.1017/s1474748024000598	ON K-STABILITY OF CALABI-YAU FIBRATIONS	Journal of the Institute of Mathematics of Jussieu	journal-article
+99	10.1109/rndm48015.2019.8949149	2019	10.1109/rndm48015.2019.8949149	Resilient Dataflow Graph Embedding for Programmable Software Switches	2019 11th International Workshop on Resilient Networks Design and Modeling (RNDM)	proceedings-article
+100	10.1353/ol.2014.0000	2014	10.1353/ol.2014.0000	Sequentiality-Futurity Links	Oceanic Linguistics	journal-article

@@ -1,0 +1,101 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1109/date.2003.1253608	None	10.1109/date.2003.1253608	Exact high level WCET analysis of synchronous programs by symbolic state space exploration	2003 Design, Automation and Test in Europe Conference and Exhibition	proceedings-article
+2	10.1109/date.2003.1186386	None	10.1109/date.2003.1186386	Exact high level WCET analysis of synchronous programs by symbolic state space exploration	2003 Design, Automation and Test in Europe Conference and Exhibition	proceedings-article
+3	10.70675/3aae1dacz8e78z4548zb112z283138654eb5	None	10.70675/3aae1dacz8e78z4548zb112z283138654eb5	Efficient tree-based symbolic WCET computation		dissertation
+4	10.1145/1629335.1629354	2009	10.1145/1629335.1629354	Symbolic state traversal for WCET analysis	Proceedings of the seventh ACM international conference on Embedded software	proceedings-article
+5	10.14236/ewic/vecos2008.12	2008	10.14236/ewic/vecos2008.12	Computing WCET using symbolic execution	Electronic Workshops in Computing	proceedings-article
+6	10.31274/td-20240329-411	None	10.31274/td-20240329-411	Implicit relations and their derivatives for symbolic state space generation		dissertation
+7	10.33235/wcet.42.4.41-47	2022	10.33235/wcet.42.4.41-47	The meaning of diabetes for individuals who develop diabetic foot ulcer: a qualitative study informed by social constructivism and symbolic interactionism frameworks	WCET Journal	journal-article
+8	10.1049/piee.1971.0228	1971	10.1049/piee.1971.0228	State-space eigenvalues program for stability of regulated synchronous machine	Proceedings of the Institution of Electrical Engineers	journal-article
+9	10.1360/jos170628	2006	10.1360/jos170628	Symbolic WCET Analysis of Programs Containing Input-Dependent Branches	Journal of Software	journal-article
+10	10.33235/wcet	None	10.33235/wcet	WCET Journal		journal
+11	10.33235/wcet.44	None	10.33235/wcet.44		WCET Journal	journal-volume
+12	10.33235/wcet.39.3.8	2019	10.33235/wcet.39.3.8	Around the WCET® world – International Collaboration	WCET Journal	journal-article
+13	10.33235/wcet.45	None	10.33235/wcet.45		WCET Journal	journal-volume
+14	10.33235/wcet.44.3	2024	10.33235/wcet.44.3		WCET Journal	journal-issue
+15	10.33235/wcet.43	None	10.33235/wcet.43		WCET Journal	journal-volume
+16	10.33235/wcet.40.2	2020	10.33235/wcet.40.2		WCET Journal	journal-issue
+17	10.1145/2038642.2038692	2011	10.1145/2038642.2038692	Symbolic simulation on complicated loops for WCET path analysis	Proceedings of the ninth ACM international conference on Embedded software	proceedings-article
+18	10.33235/wcet.45.1	2025	10.33235/wcet.45.1		WCET Journal	journal-issue
+19	10.33235/wcet.44.4	2024	10.33235/wcet.44.4		WCET Journal	journal-issue
+20	10.1109/synasc.2005.26	2005	10.1109/synasc.2005.26	Colored Petri nets state-space reduction via symbolic execution	Seventh International Symposium on Symbolic and Numeric Algorithms for Scientific Computing (SYNASC'05)	proceedings-article
+21	10.33235/wcet.40.4	2020	10.33235/wcet.40.4		WCET Journal	journal-issue
+22	10.33235/wcet.43.4.7	2023	10.33235/wcet.43.4.7	WCET®: Global connectedness – common issues and proposed solutions	WCET Journal	journal-article
+23	10.33235/wcet.40	None	10.33235/wcet.40		WCET Journal	journal-volume
+24	10.33235/wcet.39.1	2019	10.33235/wcet.39.1		WCET Journal	journal-issue
+25	10.33235/wcet.39	None	10.33235/wcet.39		WCET Journal	journal-volume
+26	10.33235/wcet.41	None	10.33235/wcet.41		WCET Journal	journal-volume
+27	10.33235/wcet.45.1.7	None	10.33235/wcet.45.1.7		WCET Journal	journal-volume
+28	10.33235/wcet.41.4	2021	10.33235/wcet.41.4		WCET Journal	journal-issue
+29	10.33235/wcet.40.3	2020	10.33235/wcet.40.3		WCET Journal	journal-issue
+30	10.33235/wcet.42.3.42-47	2022	10.33235/wcet.42.3.42-47	Selected abstracts from the 23rd Biennial WCET® Congress in Fort Worth, Texas	WCET Journal	journal-article
+31	10.33235/wcet.42.1.7-8	2022	10.33235/wcet.42.1.7-8	Recognition	WCET Journal	journal-article
+32	10.3998/mpub.14515580.cmp.5h73q055j	None	10.3998/mpub.14515580.cmp.5h73q055j	The Space Program Live at Metropolitan State University at Denver		component
+33	10.33235/wcet.42	None	10.33235/wcet.42		WCET Journal	journal-volume
+34	10.1093/oso/9780198593782.003.0004	1993	10.1093/oso/9780198593782.003.0004	Steady-State and Transient Operation Of Synchronous Machines and Synchronous Motor Drives	Electrical Machines and Drives	book-chapter
+35	10.33235/wcet.43.3	2023	10.33235/wcet.43.3		WCET Journal	journal-issue
+36	10.33235/wcet.45.2	2025	10.33235/wcet.45.2		WCET Journal	journal-issue
+37	10.33235/wcet.39.2	2019	10.33235/wcet.39.2		WCET Journal	journal-issue
+38	10.1145/3147413	2018	10.1145/3147413	Symbolic WCET Computation	ACM Transactions on Embedded Computing Systems	journal-article
+39	10.33235/wcet.43.1	2023	10.33235/wcet.43.1		WCET Journal	journal-issue
+40	10.33235/wcet.44.4.39-47	2024	10.33235/wcet.44.4.39-47	Selected abstracts from the 24th Biennial WCET® Congress in Glasgow, UK	WCET Journal	journal-article
+41	10.33235/wcet.39.3	2019	10.33235/wcet.39.3		WCET Journal	journal-issue
+42	10.33235/wcet.44.1	2024	10.33235/wcet.44.1		WCET Journal	journal-issue
+43	10.1016/j.jsc.2008.04.005	2009	10.1016/j.jsc.2008.04.005	State space analysis of Petri nets with relation-algebraic methods	Journal of Symbolic Computation	journal-article
+44	10.33235/wcet.45.1.34-40	2025	10.33235/wcet.45.1.34-40	Selected abstracts from the 24th Biennial WCET® Congress in Glasgow, UK	WCET Journal	journal-article
+45	10.1002/9781118460641.app4	2012	10.1002/9781118460641.app4	State‐Space Eigenvector Calculation	Direct Eigen Control for Induction Machines and Synchronous Motors	other
+46	10.33235/wcet.41.2	2021	10.33235/wcet.41.2		WCET Journal	journal-issue
+47	10.33235/wcet.40.1	2020	10.33235/wcet.40.1		WCET Journal	journal-issue
+48	10.33235/wcet.41.3	2021	10.33235/wcet.41.3		WCET Journal	journal-issue
+49	10.33235/wcet.42.3	2022	10.33235/wcet.42.3		WCET Journal	journal-issue
+50	10.33235/wcet.43.4	2023	10.33235/wcet.43.4		WCET Journal	journal-issue
+51	10.33235/wcet.41.2.10-21	2021	10.33235/wcet.41.2.10-21	Practice Implications from the WCET® International Ostomy Guideline 2020	WCET Journal	journal-article
+52	10.33235/wcet.44.3.8	2024	10.33235/wcet.44.3.8	Giving two minutes of time	WCET Journal	journal-article
+53	10.33235/wcet.42.2	2022	10.33235/wcet.42.2		WCET Journal	journal-issue
+54	10.33235/wcet.40.4.12-17	2020	10.33235/wcet.40.4.12-17	Results of the WCET® 2019 Membership Survey: Implications and planning	WCET Journal	journal-article
+55	10.1007/978-3-642-29709-0_20	2012	10.1007/978-3-642-29709-0_20	Symbolic Loop Bound Computation for WCET Analysis	Lecture Notes in Computer Science	book-chapter
+56	10.33235/wcet.39.4	2019	10.33235/wcet.39.4		WCET Journal	journal-issue
+57	10.33235/wcet.44.2.7	2024	10.33235/wcet.44.2.7	Gifted and giving	WCET Journal	journal-article
+58	10.33235/wcet.42.1	2022	10.33235/wcet.42.1		WCET Journal	journal-issue
+59	10.33235/wcet.42.4	2022	10.33235/wcet.42.4		WCET Journal	journal-issue
+60	10.33235/wcet.41.1.6	2021	10.33235/wcet.41.1.6	Recognising resilience	WCET Journal	journal-article
+61	10.33235/wcet.39.3.6-7	2019	10.33235/wcet.39.3.6-7	WCET® Journal: Embracing multi-lingual exposure to enhance global inclusiveness	WCET Journal	journal-article
+62	10.33235/wcet.44.3.7	2024	10.33235/wcet.44.3.7	Shared expertise informing practice	WCET Journal	journal-article
+63	10.33235/wcet.41.1	2021	10.33235/wcet.41.1		WCET Journal	journal-issue
+64	10.33235/wcet.44.2	2024	10.33235/wcet.44.2		WCET Journal	journal-issue
+65	10.1109/synasc.2012.18	2012	10.1109/synasc.2012.18	Symbolic State Space Exploration of RT Systems in the Cloud	2012 14th International Symposium on Symbolic and Numeric Algorithms for Scientific Computing	proceedings-article
+66	10.33235/wcet.39.2.42-43	2019	10.33235/wcet.39.2.42-43	Vale: Patricia Blackley	WCET Journal	journal-article
+67	10.33235/wcet.41.2.6	2021	10.33235/wcet.41.2.6	Synthesising evidence	WCET Journal	journal-article
+68	10.33235/wcet.43.2	2023	10.33235/wcet.43.2		WCET Journal	journal-issue
+69	10.1007/978-3-540-73368-3_31	None	10.1007/978-3-540-73368-3_31	Parallelising Symbolic State-Space Generators	Lecture Notes in Computer Science	book-chapter
+70	10.1016/j.peva.2024.102449	2025	10.1016/j.peva.2024.102449	Symbolic state-space exploration meets statistical model checking	Performance Evaluation	journal-article
+71	10.33235/wcet.42.1.sup.s3-4	2022	10.33235/wcet.42.1.sup.s3-4	Editorial	WCET Journal	journal-article
+72	10.33235/wcet.42.4.7	2022	10.33235/wcet.42.4.7	Reaffirmation	WCET Journal	journal-article
+73	10.33235/wcet.44.3.sup.s2	2024	10.33235/wcet.44.3.sup.s2	Evolution and evidence in convexity	WCET Journal	journal-article
+74	10.33235/wcet.41.4.7	2021	10.33235/wcet.41.4.7	Great expectations	WCET Journal	journal-article
+75	10.33235/wcet.40.1.6	2020	10.33235/wcet.40.1.6	Life’s challenges: together we can win	WCET Journal	journal-article
+76	10.21203/rs.3.rs-105136/v1	2020	10.21203/rs.3.rs-105136/v1	Efficient CSP Model Checking for Symbolic State-space Exploration&amp;nbsp;with Application in Bacterial Chemo-Taxis Modelings		posted-content
+77	10.32873/uno.dc.sd.15.02.1272	2024	10.32873/uno.dc.sd.15.02.1272	Strategic Space Cooperation: U.S. Space Command and the National Guard's State Partnership Program	Space and Defense	journal-article
+78	10.1061/40479(204)32	2000	10.1061/40479(204)32	The Space Education Program at Iowa State University	Space 2000	proceedings-article
+79	10.33235/wcet.40.4.9	2020	10.33235/wcet.40.4.9	Guest editorial	WCET Journal	journal-article
+80	10.1145/1629911.1630101	2009	10.1145/1629911.1630101	Optimal static WCET-aware scratchpad allocation of program code	Proceedings of the 46th Annual Design Automation Conference	proceedings-article
+81	10.33235/wcet.39.1.40	2019	10.33235/wcet.39.1.40	Neuropathic Limb Care	WCET Journal	journal-article
+82	10.33235/wcet.44.4.7	2024	10.33235/wcet.44.4.7	Sustaining the legacy	WCET Journal	journal-article
+83	10.33235/wcet.43.3.7	2023	10.33235/wcet.43.3.7	Ingenuity: out of necessity	WCET Journal	journal-article
+84	10.33235/wcet.42.3.30-33	2022	10.33235/wcet.42.3.30-33	Descriptive presentation of wound care data	WCET Journal	journal-article
+85	10.36019/9781978836785-005	1981	10.36019/9781978836785-005	2 Open Space and the Role of the State	Open Space Policy	book-chapter
+86	10.33235/wcet.43.4.20-26	2023	10.33235/wcet.43.4.20-26	WCET® 2023 membership survey results: reviewing the past and planning the future	WCET Journal	journal-article
+87	10.33235/wcet.44.3.26-30	2024	10.33235/wcet.44.3.26-30	WHAM evidence summary: potassium permanganate (Condy’s crystals)	WCET Journal	journal-article
+88	10.33235/wcet.42.1.sup.s5-7	2022	10.33235/wcet.42.1.sup.s5-7	The importance of pouching system barrier fit	WCET Journal	journal-article
+89	10.33235/wcet.44.1.44-48	2024	10.33235/wcet.44.1.44-48	WHAM evidence summary: fish skin for treating burns	WCET Journal	journal-article
+90	10.1007/978-1-4020-8703-5_16	None	10.1007/978-1-4020-8703-5_16	Symbolic Space: Memory, Narrative, Writing	Symbolic Landscapes	book-chapter
+91	10.33235/wcet.42.2.7	2022	10.33235/wcet.42.2.7	Bespoke approaches to wound management	WCET Journal	journal-article
+92	10.1109/icece.2014.7026885	2014	10.1109/icece.2014.7026885	State space least mean square for state estimation of synchronous motor	8th International Conference on Electrical and Computer Engineering	proceedings-article
+93	10.33235/wcet.42.1.34-39	2022	10.33235/wcet.42.1.34-39	WHAM evidence summary: Papaya-based products for treating wounds	WCET Journal	journal-article
+94	10.33235/wcet.41.3.9-11	2021	10.33235/wcet.41.3.9-11	Synthesising evidence – part 2	WCET Journal	journal-article
+95	10.33235/wcet.44.2.16-18	2024	10.33235/wcet.44.2.16-18	Professor Dr Gregory Schultz PhD	WCET Journal	journal-article
+96	10.33235/wcet.45.2.7	2025	10.33235/wcet.45.2.7	Maintaining skin health: helping to prevent skin tears	WCET Journal	journal-article
+97	10.33235/wcet.42.1.12-15	2022	10.33235/wcet.42.1.12-15	Study designs in wound care	WCET Journal	journal-article
+98	10.33235/wcet.44.2.14-15	2024	10.33235/wcet.44.2.14-15	Pam Morey RN BN STN DipProjMgt PGDipClinSpec(NP) MN(NP)	WCET Journal	journal-article
+99	10.1007/978-3-540-30232-2_18	2004	10.1007/978-3-540-30232-2_18	A Symbolic Symbolic State Space Representation	Lecture Notes in Computer Science	book-chapter
+100	10.4324/9781003176763-13	2021	10.4324/9781003176763-13	Symbolic state imagery, informal state practice	Labour, Mobility and Informal Practices in Russia, Central Asia and Eastern Europe	book-chapter

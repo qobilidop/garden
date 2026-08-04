@@ -1483,3 +1483,40 @@ If round 41 reopens the map, round 42 is retired unexecuted. If both qualify,
 they establish the required two-round no-add sequence only for the recorded
 sources, exact queries, captured rankings, date, and frozen trigger. Independent
 audit remains mandatory before closure.
+
+## Outcome of round 41 and retirement of round 42
+
+Round 41 reopens the map. The primary screen and both independent audits parsed
+and title-screened all 1,200 occurrences and independently reached that
+verdict. The twelve snapshots each contain ranks 1--100 and collectively hold
+1,160 unique identifiers. There are 39 blank-title occurrences representing 38
+identifiers: four grant occurrences, one dataset, and 34 unrelated issue or
+volume records from the wound-care publication named *WCET Journal*. The
+primary and first independent normalizations counted 1,017 unique nonblank
+titles; the second counted 1,018.
+
+The decisive additions are three boundaries. First, the foundational
+dataflow-semantics lineage extends through compositional Petri-net fixed-point
+semantics, indeterminate fair-merge expressiveness, profunctor relational
+semantics with congruent bisimulation, and an extensional deadlock-freedom
+test. Second, a symbolic observation graph explicitly divides transitions into
+observed and unobserved classes, grouping states connected by unobserved
+transitions and retaining observed transitions as explicit edges. Third,
+parametric WCET analysis derives procedure-argument-dependent formulas whose
+conditions reflect branch and loop control flow. Constructive synchronous
+state-machine semantics and symbolic-equivalence variants add supporting
+program-model boundaries. Published or fuller articles replace report,
+dissertation, artifact, alias, and short-version records where applicable.
+
+These works substantially sharpen the semantic, observer, and input-sensitive
+summary comparisons but do not supply the target construction. The symbolic
+observation graph quotients concurrent-system states for model checking, not
+caller inputs. Parametric WCET produces a timing formula, not every sparse
+internal selection observation paired with an inverse input fiber and general
+program residual. The four direct-query blocks returned only disciplinary
+homonyms and established neighbors. Neither independent auditor found a title
+claiming complete requested-site observations, exact caller-input inverse
+fibers, or typed residuals.
+
+Round 41 therefore cannot count toward closure. Round 42's precondition failed;
+it is retired unexecuted and cannot count toward the required no-add sequence.

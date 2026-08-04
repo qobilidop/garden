@@ -85,6 +85,16 @@ account, and stability and sequentiality results
 establish whole-network semantic and structural boundaries; none of their
 accessible records states an exact image-and-inverse-fiber contract for a
 requested sparse internal observer.
+Within that lineage, fixed-point input/output semantics has been made
+compositional for Petri-net parallel composition, feedback, and output merging
+while remaining consistent with step sequences @gold1995petridataflow.
+Indeterminate dataflow has a separate expressiveness hierarchy for fair-merge
+primitives under network composition @panangaden1992expressive and a later
+profunctor-based relational model with a congruent bisimulation
+@hildebrandt2004relational. Extensional Kahn semantics has also supported a
+dependency-graph test proving deadlock freedom @wadge1981deadlock. These
+results preserve network behavior, primitive expressiveness, bisimulation, or
+deadlock freedom—not the inverse fibers of one requested internal observer.
 
 Selection observations choose a particular intensional quotient of these
 executions. They discard ordinary control history, retain the outcome of every
@@ -109,6 +119,13 @@ Exact high-level WCET analysis has likewise used symbolic state-space
 exploration of synchronous programs @logothetis2003wcet. Its exactness belongs
 to the timing-analysis objective, not to enumeration of all caller-input fibers
 under a selected internal-event observer.
+More recently, parametric WCET analysis has inferred input conditions from
+binary code and produced a formula for procedure WCET as a function of
+arguments, including argument-dependent branches and loops
+@grebant2024parametric. This is a close input-sensitive conditional summary,
+but its observable is execution time: it does not enumerate the image and
+inverse fibers of a sparse internal selection map or attach the program's
+general residual value to each fiber.
 Synchronous dataflow language design also has explicit transparency and
 compositionality lines @cheung2021transparent @benveniste2000compositional.
 Their semantic and compilation boundaries organize whole program networks;
@@ -178,6 +195,12 @@ happens-before constraints can instead be analyzed into a static abstraction
 that classifies task pairs as sequential, exclusive, or parallel
 @angerer2010schedule. These are property or schedule observers, not caller-
 input partitions.
+A symbolic observation graph makes this observed/unobserved distinction
+structural: its symbolic nodes aggregate states linked by unobserved
+transitions, while observed transitions remain explicit edges
+@ouni2017sog. The construction compacts a concurrent-system state graph for
+model checking. It does not enumerate the preimages of observations over
+caller inputs or associate a residual program value with each preimage.
 The same distinction persists in stubborn-set refinements: safety properties
 or state-property questions drive the reduction @hansen2016safety
 @kristensen2006question, transparent and optimal variants sharpen which
