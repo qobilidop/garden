@@ -92,7 +92,7 @@ solver effort rather than only the number of emitted records.
 
 Demand-parametric component summaries have the same caveat. Equality with
 flattening does not imply reuse: a component with many outputs can require
-$2^{abs(O_H)}$ demand masks, and contextual caller constraints can split its
+$2^(abs(O_H))$ demand masks, and contextual caller constraints can split its
 input fibers differently at each occurrence. Summary construction becomes an
 empirical proposition only after a representation and workload distribution
 are fixed.

@@ -1,0 +1,35 @@
+rank	source_id	year	doi	title	venue	type
+1	ca534df531980f0f0a285297fc2b4486de1d7875	2026	10.23919/DATE69613.2026.11539745	Late Breaking Results: Conversion of Neural Networks into Logic Flows for Edge Computing	Design, Automation and Test in Europe	JournalArticle
+2	4a5594b9f598426b892d3126b9e20e48c076e718	2026	10.1007/s11222-026-10826-8	Poisson Hyperplane processes with rectified linear units	Statistics and computing	JournalArticle
+3	59bfbca3997b86f323491701ee93ba3ba25bae0b	2025	10.1177/03010066251379266	An eye to AI, part I: Understanding without consciousness	Perception	Editorial
+4	076288d8b319fdeadb4f725080bd744133f57af6	2025	10.48550/arXiv.2509.21677	Prophecy: Inferring Formal Properties from Neuron Activations	arXiv.org	JournalArticle
+5	283f68b37314cd52dc6395028a44fd895958eb51	2025	10.1007/s10994-025-06840-y	Exploration and generalization in deep learning with SwitchPath activations	Machine-mediated learning	JournalArticle
+6	2b44657728c6dc8f1ffd928009d2f5f5de1bec96	2025	10.48550/arXiv.2506.04360	Even Faster Hyperbolic Random Forests: A Beltrami-Klein Wrapper Approach	arXiv.org	JournalArticle
+7	970a9da99f8fdcfbda1614a560da595fafdebe36	2025	10.1007/s43681-025-00733-5	Navigating the informativeness-compression trade-off in XAI	AI and Ethics	JournalArticle
+8	404da6817250986163b8a0c256204c9f65260b0b	2025	10.1002/jsde.12849	Predicting the firefighting efficacy of surfactants prior to synthesis via ensemble artificial neural network modeling of a foam performance database	Journal of Surfactants and Detergents (JSD)	JournalArticle
+9	16f22cc5318b2f3864680a834b9d2049514015ab	2025	10.1109/TSC.2024.3517328	An Adaptive and Interpretable Congestion Control Service Based on Multi-Objective Reinforcement Learning	IEEE Transactions on Services Computing	JournalArticle
+10	570734efb4ae9d37b1218db47deedae0c0090a75	2025	10.1109/CCNC54725.2025.10976095	Linear Decision Trees: A Comparative Study with Insights on ReLU Neural Networks	Consumer Communications and Networking Conference	JournalArticle
+11	17d84e9c1bbed3842ce3b0eb7c6e251b7075350c	2024	10.48550/arXiv.2412.10513	Extracting PAC Decision Trees from Black Box Binary Classifiers: The Gender Bias Study Case on BERT-based Language Models	AAAI Conference on Artificial Intelligence	JournalArticle
+12	ddac06b2f4aa29837d9fb8f5e4485048ddd2822f	2024	10.1007/s00521-024-10811-0	Analyzing feature importance with neural-network-derived trees	Neural computing & applications (Print)	JournalArticle
+13	5e9c0c79ad21124594ba4f81c1c25b7ec5d89142	2024	10.1109/BioCAS61083.2024.10798396	Neural Decision Tree for Bio-TinyML	Biomedical Circuits and Systems Conference	JournalArticle
+14	84510cf6a0faae6c215540069b488527b6cda39f	2024	10.1109/ISGTEUROPE62998.2024.10863007	Play With Me: Towards Explaining the Benefits of Autocurriculum Training of Learning Agents	IEEE PES Innovative Smart Grid Technologies Conference Europe	JournalArticle
+15	249515ddada14d1f9fef2dbe24a37e5f6a53594b	2024	10.36948/ijfmr.2024.v06i03.20511	Machine Learning Approaches for Insurance Pricing: A Case Study of Public Liability Coverage in Morocco	International Journal For Multidisciplinary Research	JournalArticle
+16	2c9d8a0babd69ee215f386dc1fb071e8f492f96f	2024	10.1007/s10506-024-09395-w	Exploring explainable AI in the tax domain	Artificial Intelligence and Law	JournalArticle
+17	31f14e1e05740e8cc2eb2e8e9b5564b5a90bdc93	2024	10.48550/arXiv.2403.18415	The Topos of Transformer Networks	arXiv.org	JournalArticle
+18	61248872cc61531bfecc1b7775dde829d33bcbc7	2024	10.1017/can.2024.1	On the Opacity of Deep Neural Networks	Canadian Journal of Philosophy	JournalArticle
+19	c8c8f21aa474406077b9e3bd32f1b975ae40fe45	2024	10.48550/arXiv.2401.05821	Interpretable Concept Bottlenecks to Align Reinforcement Learning Agents	Neural Information Processing Systems	JournalArticle
+20	a32a999377d3eb14ac7652877f002f5c548d3134	2023	10.48550/arXiv.2310.05442	Establishing Trustworthiness: Rethinking Tasks and Model Evaluation	Conference on Empirical Methods in Natural Language Processing	JournalArticle
+21	49eb2111fa7159b361f09cbafbee5ff090410a1b	2023	10.22489/CinC.2023.023	Random Forest and Attention-Based Networks in Quantifying Neurological Recovery	2023 Computing in Cardiology (CinC)	JournalArticle
+22	6b0a29bc99e59ed2b526826601d0990fe39fcc9b	2023		High-Level Parallelism and Nested Features for Dynamic Inference Cost and Top-Down Attention		
+23	3c45ea7c71185e479bef9ba5f2a9c7f85686bbc5	2023	10.3389/fonc.2023.1089998	Machine learning decision tree models for multiclass classification of common malignant brain tumors using perfusion and spectroscopy MRI data	Frontiers in Oncology	JournalArticle
+24	caadf03c166c8ba0fd32963dc35b5a6b50f5d08d	2023	10.1109/INDIN51400.2023.10218164	Imitation Learning from Operator Experiences for a Real time CNC Machine Controller	International Conference on Industrial Informatics	JournalArticle
+25	49f9caa21653cef75925a3b63a522adc48750aec	2023	10.48550/arXiv.2305.09424	Unwrapping All ReLU Networks	arXiv.org	JournalArticle
+26	3828eb8f8d99892a386dda5d9086f836721381eb	2023	10.48550/arXiv.2305.06064	DNN Verification, Reachability, and the Exponential Function Problem	International Conference on Concurrency Theory	JournalArticle
+27	f195a8008ef74f5608be6e4e56ff013903a4cf04	2023	10.48550/arXiv.2303.14937	LEURN: Learning Explainable Univariate Rules with Neural Networks	arXiv.org	JournalArticle
+28	c980d97d78ba913312d1177e78b43aa0946bf992	2023	10.48550/arXiv.2303.11580	Efficient Multi-stage Inference on Tabular Data	arXiv.org	JournalArticle
+29	c279ce37bf56bd4d0b8b144fa3c6e6382dafcbc9	2023	10.48550/arXiv.2302.01740	A Systematic Evaluation of Backdoor Trigger Characteristics in Image Classification	arXiv.org	JournalArticle
+30	adee36dc2c30d4d5ce8f2c7dfbdaf6e8a4616a8c	2023	10.1177/10943420231166608	Myths and legends in high-performance computing	The international journal of high performance computing applications	JournalArticle
+31	6e2ac151f445826dacfc7e64bf4041532872e3d5	2024		GraphChef: Decision-Tree Recipes to Explain Graph Neural Networks	International Conference on Learning Representations	JournalArticle
+32	57a9eb4f3d9f614d5507f1f79b20a91a08edfffc	2023		GraphChef: Learning the Recipe of Your Dataset		
+33	f8355ef2c3465a118a549ca4d8b526c15587ce6d	2023		Real-Time Explainable Plausibility Verification for DNN-based Automotive Perception	xAI	JournalArticle
+34	2b1e50548b0c14cd31e19118bf76820f0c1921ca	2023	10.1109/ACCESS.2023.3341690	A Review of Artificial Neural Networks Applications in Maritime Industry	IEEE Access	JournalArticle

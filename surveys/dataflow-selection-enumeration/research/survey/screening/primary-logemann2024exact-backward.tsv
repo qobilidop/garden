@@ -1,0 +1,34 @@
+rank	source_id	year	doi	title	venue	type
+1	citation-1	2020	10.1016/j.inffus.2019.12.012	Explainable Artificial Intelligence (XAI): Concepts, Taxonomies, Opportunities and Challenges toward Responsible AI	Information Fusion	journal-article
+2	citation-2	2017	10.1109/MSP.2017.2743240	Deep Reinforcement Learning: A Brief Survey	IEEE Signal Processing Magazine	journal-article
+3	citation-3	2022	10.48550/arXiv.2210.05189	Neural Networks are Decision Trees	arXiv	preprint
+4	citation-4	2018	-	Verifiable Reinforcement Learning via Policy Extraction	NeurIPS	proceedings-article
+5	citation-5	2004	10.1016/S0925-7721(03)00047-8	Inner and Outer Approximations of Polytopes Using Boxes	Computational Geometry	journal-article
+6	citation-6	2019	-	Distilling Deep Reinforcement Learning Policies in Soft Decision Trees	IJCAI Workshop	proceedings-article
+7	citation-7	2019	10.1145/3287560	Techniques for Interpretable Machine Learning	Communications of the ACM	journal-article
+8	citation-8	2023	-	Pandapower 2.0 CIGRE Benchmark Power Grid Implementation	software	software
+9	citation-9	2017	10.48550/arXiv.1711.09784	Distilling a Neural Network Into a Soft Decision Tree	arXiv	preprint
+10	citation-10	2018	-	Addressing Function Approximation Error in Actor-Critic Methods	ICML	proceedings-article
+11	citation-11	2015	-	Polyhedral Computation	ETH Zurich	lecture-notes
+12	citation-12	2018	-	Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor	ICML	proceedings-article
+13	citation-13	2012	10.1109/ICPR.2012.450	Soft Decision Trees	ICPR	proceedings-article
+14	citation-14	2020	10.1111/cgf.13956	DRLViz: Understanding Decisions and Memory in Deep Reinforcement Learning	Computer Graphics Forum	journal-article
+15	citation-15	2018	10.1145/3208903.3208912	Adversarial Attacks to Distributed Voltage Control in Power Distribution Networks with DERs	e-Energy	proceedings-article
+16	citation-16	2023	-	Explainability of Power Grid Attack Strategies Learned by Deep Reinforcement Learning Agents	University of Oldenburg	thesis
+17	citation-17	2024	-	Power Grid Experiment	GitLab	software
+18	citation-18	2023	-	NN2EQCDT: Equivalent Transformation of Feed-Forward Neural Networks as DRL Policies into Compressed Decision Trees	COGNITIVE	proceedings-article
+19	citation-19	2013	10.48550/arXiv.1312.5602	Playing Atari with Deep Reinforcement Learning	arXiv	preprint
+20	citation-20	2020	10.1007/978-3-030-57321-8_5	Explainable Reinforcement Learning: A Survey	CD-MAKE	book-chapter
+21	citation-21	2022	10.48550/arXiv.2211.06665	A Survey on Explainable Reinforcement Learning: Concepts, Algorithms, Challenges	arXiv	preprint
+22	citation-22	2020	10.1038/s41586-020-03051-4	Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model	Nature	journal-article
+23	citation-23	2017	10.48550/arXiv.1707.06347	Proximal Policy Optimization Algorithms	arXiv	preprint
+24	citation-24	2018	10.1126/science.aar6404	A General Reinforcement Learning Algorithm that Masters Chess, Shogi, and Go through Self-Play	Science	journal-article
+25	citation-25	2014	-	Benchmark Systems for Network Integration of Renewable and Distributed Energy Resources	Elektra	report
+26	citation-26	2024	-	Polytope Implementation	TuLiP Control	software
+27	citation-27	2011	10.1109/JPROC.2011.2116750	Options for Control of Reactive Power by Distributed Photovoltaic Generators	Proceedings of the IEEE	journal-article
+28	citation-28	2016	10.1609/aaai.v30i1.10295	Deep Reinforcement Learning with Double Q-Learning	AAAI	proceedings-article
+29	citation-29	2014	-	Linear Programming	Springer	book
+30	citation-30	2023	-	An Architecture for Reliable Learning Agents in Power Grids	ENERGY	proceedings-article
+31	citation-31	2023	-	Towards Explainable Attacker-Defender Autocurricula in Critical Infrastructures	CYBER	proceedings-article
+32	citation-32	2024	10.1109/ISGTEUROPE62998.2024.10863007	Play With Me: Towards Explaining the Benefits of Autocurriculum Training of Learning Agents	ISGT Europe	proceedings-article
+33	citation-33	2023	10.3389/fenrg.2023.1138446	Learning New Attack Vectors from Misuse Cases with Deep Reinforcement Learning	Frontiers in Energy Research	journal-article

@@ -62,8 +62,10 @@ The extraction taxonomy has six dimensions:
 
 == Saturation rule
 
-The bounded map closes only after every exploratory work is reconciled, every
-critical source is deep-read and snowballed in both directions, two consecutive
+The bounded map closes only after every candidate surfaced by the recorded
+exploratory and audited searches is reconciled by a catalog disposition or an
+explicit `not-recorded` log note, every critical source is deep-read and
+snowballed in both directions, two consecutive
 predeclared replacement rounds add neither a conceptual cluster nor a plausible
 close competitor, and an independent reviewer audits borderline exclusions.
 A result that introduces a new omission mechanism or enumerates observations
@@ -74,7 +76,12 @@ world literature contains no additional relevant work.
 The repository accompanying this paper contains the protocol, catalog,
 query-level search log, frozen screening snapshots, source notes, evidence
 matrix, claim ledger, and closure audit. Downloaded papers and transient search
-responses are deliberately excluded.
+responses are deliberately excluded. The archived `v1.0` artifact and rendered
+manuscript are available at
+#link("https://github.com/qobilidop/dataflow-selection-enumeration/tree/v1.0")[the repository]
+and
+#link("https://qobilidop.github.io/dataflow-selection-enumeration/")[reader],
+respectively; the search record was last reconciled on 4 August 2026.
 
 == Validity threats
 

@@ -15,13 +15,16 @@ well-defined finite-output task.
     G = (V, E, I, O, Q, lambda),
   $
   where $V$ is a finite node set; $I$, $O$, and $Q$ are respectively input
-  nodes, output roots, and selection-site nodes; and
-  $N = V without (I union Q)$ is the set of ordinary nodes. An output root may
-  belong to any category. The typed operand relation
+  nodes, output roots, and selection-site nodes; $I inter Q = emptyset$; and
+  $N = V without (I union Q)$ is the set of ordinary nodes. Thus $I$, $N$,
+  and $Q$ partition $V$; an output root may belong to any category. Input nodes
+  have no operand positions. The typed operand relation
   $E subset.eq V times NN times V$ contains $(v,j,u)$ when operand position
   $j$ of consumer $v$ is supplied by $u$. Operand positions are unique per
   consumer, edges are type-correct, and the consumer-to-operand relation is
-  acyclic. The label map $lambda$ supplies result types and node semantics.
+  acyclic. For every selection $q$, its operand edges are exactly
+  $(q,0,s_q)$ and $(q,j,c_(q,j))$ for $1 <= j <= m_q$. The label map $lambda$
+  supplies result types and node semantics.
 ]
 
 An input valuation belongs to the typed product
@@ -101,7 +104,7 @@ unconditionally would expose sites that a caller does not request.
 The word _observed_ is local terminology for this membership judgment. It does
 not claim that the source evaluator is lazy. Classical neededness and demand
 semantics use related backward relevance but impose different semantic
-conditions; Section @sec-related compares them.
+conditions; @sec-related compares them.
 
 #definition("selection observation")[
   The selection observation is the dependent finite partial map $T_G(x,R)$
@@ -155,8 +158,10 @@ Extend each value domain with a fresh bottom $bot_v$ and order it flatly below
 all ordinary values. An $x$-consistent partial valuation assigns each node
 either $bot_v$ or its eager value. It is dependency-closed when a defined
 ordinary node has all operands defined and a defined selection has its
-selector and exactly the case roots required by its concrete outcome defined.
-It is $R$-complete when every requested root is defined.
+selector and every case root required by its concrete outcome defined. This is
+an obligation, not a prohibition: another requested root or shared consumer
+may independently require an unselected case root. The valuation is
+$R$-complete when every requested root is defined.
 
 #proposition("strict-dependency least valuation")[
   The valuation
@@ -267,61 +272,127 @@ literals.
 
 == Graph substitution and sharing
 
-The observation is compositional in a deliberately limited sense. Let $H$ be
-a selective term graph whose input nodes are connected to caller nodes and
-whose output roots are connected to one occurrence $c$ in an acyclic caller.
-Flattening substitutes one shared copy of $H$ for that occurrence. Internal
-nodes and sites receive the prefix $c$; two caller edges to the same component
-output do not duplicate the component, while a second occurrence receives a
-different prefix.
+Consider sequential components $G_1 : X -> Y$ and $H : Y -> Z$ with disjoint
+site namespaces and a type-preserving bijection
+$rho : I_H -> O_(G_1)$. Flattening removes the input nodes of $H$, retains one
+context-prefixed copy $c dot (V_H without I_H)$, and redirects every edge that
+targeted $i in I_H$ to $rho(i)$. Call the resulting graph $F$. Two uses of one
+retained node in either component remain shared; a second component occurrence
+receives a different contextual prefix.
 
-For a concrete caller input $x$, let $x_H$ be the boundary valuation induced
-at the inputs of $H$. Let $U_x subset.eq O_H$ contain exactly the component
-outputs crossed when enabled reachability from the caller's requested roots
-first enters occurrence $c$. Write $G = C[c <- H]$ for the flattened graph,
-and let $T_C^x$ be the restriction of $T_G(x,R)$ to caller sites. Prefixing a
-partial map by $c$ prefixes every site in its domain.
+Embed every downstream node into the flattened graph by
+
+$
+  iota_H(v) = cases(
+    rho(v) & "if " v in I_H,
+    c dot v & "if " v in.not I_H,
+  ),
+  quad O_F = iota_H(O_H).
+$
+
+For input $x$ and requested roots $R subset.eq O_H$, define the boundary
+valuation $y_i = op("val")_x(rho(i))$. The downstream enabled closure determines
+the demanded boundary inputs and hence the upstream root demand:
+
+$
+  delta_H = I_H inter D_H(y,R),
+  quad R_1 = rho(delta_H).
+$
 
 #proposition("flattening and contextual sharing")[
-  For every concrete $x$,
+  The flattened enabled closure decomposes as
   $
-    D_G(x,R) inter c dot V_H
-      = c dot D_H(x_H,U_x)
+    D_F(x,iota_H(R)) inter c dot (V_H without I_H)
+      = c dot (D_H(y,R) without I_H)
   $
   and
   $
-    T_G(x,R) = T_C^x union c dot T_H(x_H,U_x).
+    D_F(x,iota_H(R)) inter V_(G_1) = D_(G_1)(x,R_1).
   $
-  The union is compatible and contains every shared internal site at most
-  once. Repeating the construction for distinct occurrences yields disjoint
-  contextual site domains.
+  Consequently,
+  $
+    T_F(x,iota_H(R))
+      = T_(G_1)(x,R_1) union c dot T_H(y,R).
+  $
+  The union is compatible and records each shared internal site once.
 ]
 
 #proof[
-  Enabled reachability can enter the component only through an output root in
-  $U_x$. After crossing that boundary, every internal successor step follows
-  exactly the enabled edges of $H$ under $x_H$. Conversely, every node reached
-  from such a root in $H$ is reached by the same edge sequence in the flattened
-  graph. The reachability sets therefore agree after prefixing. Restricting the
-  observation to selection sites gives the partial-map equation. A component
-  is substituted as one DAG, so multiple caller uses union their root demands
-  and preserve internal sharing; contextual prefixes separate distinct
-  occurrences.
+  A topological induction first gives value substitution: every retained $H$
+  node in $F$ has the value it has under boundary valuation $y$, while every
+  $G_1$ node keeps its value under $x$. Enabled reachability among retained
+  $H$ nodes therefore follows exactly $D_H(y,R) without I_H$. Its boundary
+  crossings are exactly $delta_H$ and are redirected to $R_1$. Starting from
+  those roots, the upstream restriction is exactly $D_(G_1)(x,R_1)$; no other
+  retained $H$ edge enters $G_1$. Restricting both sets to selection sites
+  yields the observation equation. Root-demand union preserves sharing, and
+  contextual prefixes make distinct occurrences disjoint.
 ]
 
-A _demand-parametric exact summary_ for $H$ provides, for every requested
-boundary-root set $U subset.eq O_H$, its feasible observations with exact
-guards and residuals. The proposition gives the semantic composition rule:
-instantiate boundary inputs with the caller residuals, prefix internal sites
-by $c$, use the caller-induced $U$, conjoin the instantiated guards, and
-substitute component residuals at the output boundary. Unsatisfiable products
-are discarded. The result denotes exactly the flattened fibers because every
-flat observation has the unique restrictions above, and the exact-local-guard
-theorem makes the conjunction equal to their intersection.
+A _demand-parametric exact summary_ contains, for every requested root set,
+one record $(g,delta,tau,r)$ per feasible structural fiber: an exact guard, the
+set of demanded input ports, a selection observation, and a residual for the
+requested outputs. Here $delta=I inter D$ is part of the structural projection,
+not merely an implementation annotation. For a downstream record
+$(h,delta_H,tau_H,r_H)$ of $H$ at demand $R$, and an upstream record
+$(g,delta_1,tau_1,r_1)$ of $G_1$ at demand $rho(delta_H)$, the summary contract
+types the exact guards and residuals as
 
-This is an equality with flattening, not a compactness theorem. A summary may
-contain one family for each of $2^{abs(O_H)}$ root-demand sets, and compatible
+$
+  h : product_(i in delta_H) cal(D)_i -> BB,
+  quad r_H : product_(i in delta_H) cal(D)_i
+    -> product_(o in R) cal(D)_o,
+$
+
+$
+  g : product_(j in delta_1) cal(D)_j -> BB,
+  quad r_1 : product_(j in delta_1) cal(D)_j
+    -> product_(o in rho(delta_H)) cal(D)_o.
+$
+
+Thus every expression below consumes precisely the demanded boundary tuple.
+Reindex the upstream residual at the downstream inputs by
+
+$
+  hat(r)_1(x)_i = r_1(x)_(rho(i)), quad i in delta_H.
+$
+
+Their composed record is
+
+$
+  (g(x) and h(hat(r)_1(x)),
+   delta_1,
+   tau_1 union c dot tau_H,
+   r_H(hat(r)_1(x))).
+$
+
+Infeasible guard conjunctions are discarded.
+
+This contract uses full-domain component summaries. An independent component
+precondition that mentions an otherwise undemanded input remains an explicit
+interface predicate, and its support must be charged; demand projection cannot
+silently discard it.
+
+#theorem("exact guarded-summary composition")[
+  The feasible composed records form exactly the observation partition of
+  $F$: every caller input satisfies one record; its demanded inputs,
+  contextual observation, and residual agree with flattened evaluation; and
+  no two records have the same composite structural projection.
+]
+
+#proof[
+  The concrete boundary value selects one exact downstream record. Its
+  $delta_H$ selects the upstream demand and hence one exact upstream record.
+  Guard and residual substitution, together with the flattening proposition,
+  proves soundness and coverage. If two composed records had the same
+  observation, disjoint contextual namespaces would make both component
+  observations equal. The exact-local-guard lockstep then fixes their demanded
+  boundary sets, so exact component fibers make the two records identical.
+]
+
+This is equality with flattening, not a compactness theorem. A summary may
+contain one family for each of $2^(abs(O_H))$ root-demand sets, and compatible
 record products may still be exponential. Guard substitution and exact
 piecewise residual composition are established techniques; the graph-specific
-content here is only requested-root demand, contextual identity, and preserved
-DAG sharing.
+content is requested-root demand, demanded-input propagation, contextual
+identity, and preserved DAG sharing.

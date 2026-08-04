@@ -67,10 +67,14 @@ count toward closure.
     least output-complete computation.
 16. Compositional hybrid-mode enumeration, PWA region minimization, and
     parametric-program critical-region enumeration.
+17. Exact neural-to-tree symbolic execution, feasibility pruning, and
+    policy-output region construction.
+18. Exact neural-to-OBDD/SDD compilation, requested-class diagrams, and
+    prime-implicant explanations.
 
 Cluster 9 was added when forward snowballing from needed narrowing exposed a
 previously missing closest lineage. Later audited replacement rounds and their
-snowballs added clusters 10--16. Each addition reopened the map before closure;
+snowballs added clusters 10--18. Each addition reopened the map before closure;
 `closure-audit.md` records the chronological query expansions and retirement
 of superseded no-add rounds. These additions are disclosed post hoc as survey
 outcomes, not misrepresented as part of the initial protocol.

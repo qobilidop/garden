@@ -93,6 +93,23 @@ Any graph-specific algorithmic contribution must therefore compare at least:
 - size of flat exact guards and residuals; and
 - reuse under graph composition.
 
+## Neural-specific exact compilation
+
+This generic reduction has concrete neural predecessors. Shih, Darwiche, and
+Choi learn an OBDD exactly equivalent to a BNN on a chosen CNF region. Shi et
+al. compile Boolean neuron functions and the resulting network circuit into
+OBDDs/SDDs, with a pseudo-polynomial integer-weight neuron bound. BDD4BNN gives
+the strongest requested-region construction: exact cardinality translations,
+feasible-input propagation, relational products that existentially remove
+hidden activation vectors, and one exact BDD per output class. Tang et al. add
+margin-qualified exact aligned BDDs for threshold neurons.
+
+These results are not merely applications of generic diagrams. They directly
+defeat claims of first exact neural output compilation, first requested-region
+class fibers, or first sparse diagram explanation. Their terminal observer is
+the final class function, however, so they intentionally erase internal event
+identity and equal-valued provenance.
+
 ## Surviving research question
 
 The graph semantics still offers a useful specialization: site identities are

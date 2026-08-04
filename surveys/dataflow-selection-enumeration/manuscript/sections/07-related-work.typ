@@ -1,10 +1,49 @@
-= Related-work synthesis <sec-related>
+= Related work and synthesis <sec-related>
 
 The closest literature is not one lineage with changing terminology. It is a
 set of constructions that preserve different observers while producing
 superficially similar partial assignments, guards, or residuals. This section
 organizes those constructions by the information they retain and states the
 reduction or boundary in each case.
+
+#block(breakable: false)[
+  #text(size: 8.1pt)[
+    #table(
+      columns: (0.85fr, 1.25fr, 1.15fr, 1.4fr, 1.45fr),
+      align: left,
+      inset: 3.5pt,
+      stroke: (x: none, y: 0.4pt + rgb("c8ced6")),
+      table.header(
+        [*Lineage*], [*Primary object*], [*Information omitted*],
+        [*Established result*], [*Boundary here*],
+      ),
+      [Symbolic execution], [Path or guarded residual],
+        [Merged or irrelevant paths], [Exact guarded behavior],
+        [Different event observer],
+      [Projected enumeration], [Selected-coordinate models],
+        [Unprojected variables], [Complete projected image],
+        [Sparse map requires totalization],
+      [Demand-guided search], [Forced inputs or choices],
+        [Unforced structure], [Complete or fair values],
+        [Usually no exact fiber residual],
+      [Trees and diagrams], [Reached tests or compiled function],
+        [Skipped tests; shared subfunctions], [Exact finite observer],
+        [Flat guards can lose sharing],
+      [Neural trees/TADS], [Feasible PWL policy regions],
+        [Infeasible or entailed tests], [Exact guard/map or action tree],
+        [Fixed neural/PWL architecture],
+      [BNN diagrams], [Requested class function],
+        [Hidden activations], [Exact BDD/SDD compilation],
+        [Finite binary extensional output],
+      [Geometric/PWA], [Cells or affine modes],
+        [Equal-map cells after quotient], [Exact region traversal/composition],
+        [Affine, dimensional assumptions],
+      [This synthesis], [Requested-root event fiber],
+        [Unreached case cones], [Equivalent local/global presentations],
+        [Finite typed pure DAG],
+    )
+  ]
+]
 
 == Symbolic execution and guarded residuals
 
@@ -71,6 +110,20 @@ shape, exact disjointness, and compilation are established; the remaining
 specificity is requested-root graph reachability, contextual site identity,
 and a symbolic residual per observation fiber.
 
+Neural-specific compilation makes this boundary concrete. Exact OBDDs or SDDs
+have been learned or constructed for binarized networks
+@shih2019bnn @shi2020tractable @tang2023abdd. BDD4BNN composes block diagrams
+while existentially eliminating hidden activation vectors and produces one
+exact reduced BDD per requested output class over a declared binary input
+region @bdd4bnn2023. Its diagrams support exact counting, robustness, and
+prime-implicant explanations, although compilation and whole-network diagram
+operations can be exponential. Newer Boolean transformations retain exactness
+for binary networks but use bounded approximation for real-valued networks
+@tang2026boolean. These results rule out a claim that exact neural observers
+must retain every internal decision. They compile an extensional class
+function on a finite Boolean domain, whereas the present observer deliberately
+retains reached internal site identities and attaches typed symbolic residuals.
+
 == Needed search, partial inputs, and dataflow demand
 
 Functional-logic implementations attach stable identifiers to shared choices
@@ -89,10 +142,11 @@ backtracks only over object fields read by an executable predicate
 @boyapati2002korat. Lazy SmallCheck refines the tagged constructor hole forced
 by a pure Boolean property and skips all bounded refinements once the result is
 known @runciman2008smallcheck. Solver-backed lazy initialization extends the
-idea to partial heaps. These methods already avoid a Cartesian product by
-following an observer. They may represent one semantic class with several
-partial inputs, however, and do not generally return one exact inverse-fiber
-guard with a symbolic residual.
+idea to partial heaps @geldenhuys2013bounded @rosner2015bliss
+@copia2022lissa @copia2023precise. These methods already avoid a Cartesian
+product by following an observer. They may represent one semantic class with
+several partial inputs, however, and do not generally return one exact
+inverse-fiber guard with a symbolic residual.
 
 Classical demand-driven dataflow is the direct fixed-input semantic precedent.
 Pingali and Arvind propagate requested output positions backward through a
@@ -100,7 +154,7 @@ stream graph and prove correctness and parsimony compositionally
 @pingali1985efficient @pingali1986efficient. Avron and Sasson characterize when
 a least legal output-complete valuation exists uniformly through stability
 @avron1994stability. The strict finite acyclic dependency policy in
-Section @sec-formal-model has a simpler reachability least valuation. The
+@sec-formal-model has a simpler reachability least valuation. The
 change is one of quantification: prior dataflow work computes a least demanded
 computation for fixed inputs, whereas this synthesis varies inputs, projects
 each least computation to selection events, and enumerates the inverse fibers.
@@ -130,12 +184,31 @@ or boundary coordinates and their dense activation vectors are not the same
 as structural non-observation, but the all-sites-observed specialization is a
 direct reduction.
 
+That dense-cell baseline does not exhaust exact neural observers. Layer-wise
+conversions already represented ReLU classifiers as multivariate decision
+trees @nguyen2020ecdt @aytekin2022trees. Affinitree composes piecewise-linear
+neural operators into a tree with affine tests and terminals, removes
+LP-infeasible paths, and can merge semantics-preserving subtrees
+@affinitree2024. Chang et al. go further for ReLU controllers: their exact
+state-dependent tree omits infeasible activation tests and performs output
+comparisons only while actions remain competitive; their pointwise-equivalence
+theorem makes the leaves an exact policy representation @chang2026compact.
+Logemann and Veith similarly compress policy trees and analyze polyhedral exact
+output regions, but the published exactness argument and boundary convention
+are less formal @logemann2023nn2eqcdt @logemann2024exact. Consequently,
+feasibility-pruned and output-relative neural decision trees are established.
+Their object is the extensional action or affine-map partition of a fixed
+neural/PWL architecture, not an observation of arbitrary contextual selection
+events in a typed shared graph.
+
 Compositional hybrid-mode construction topologically substitutes upstream
 affine maps into downstream guards, prunes infeasible products, and emits an
 exact piecewise-affine guard/map representation @geyer2010mode. Exact
 piecewise-affine minimization, clipping, and separation can then coalesce
 regions that implement the same behavior @geyer2008optimal
-@kvasnica2012clipping @kvasnica2013separation. Our observer intentionally takes
+@kvasnica2012clipping @kvasnica2013separation. A recent compositional neural
+controller construction independently applies this PWA substitution pattern
+layer by layer @soto2025pwa. Our observer intentionally takes
 the opposite side of that quotient: equal-valued alternatives remain distinct
 when their selection outcomes were observed. Guard substitution and residual
 composition are nevertheless inherited techniques.

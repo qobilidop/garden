@@ -37,7 +37,11 @@ proof obligations, and evidence.
   et al. enumerate all satisfiable atoms of a finite observer alphabet. A
   decision tree already represents each input by its encountered test/outcome
   path with a disjoint leaf guard and result, and, for finitely encoded inputs,
-  ADD compilation represents the complete observation function. A symbolic
+  ADD compilation represents the complete observation function. Neural-specific
+  instances are also direct prior work: Chang et al., Logemann--Veith, and
+  Affinitree omit infeasible or forced activation tests while retaining exact
+  output semantics, and BDD4BNN compiles hidden BNN activations away into exact
+  requested-region class diagrams. A symbolic
   residual per observation still requires partial evaluation or a richer
   residual-labeled decision structure.
 - **Reduction:** Introduce one finite-domain variable per contextual selection
@@ -152,7 +156,7 @@ proof obligations, and evidence.
   require \(K\) satisfying models plus a final unsatisfiable query. Solver time
   and representation size remain separate.
 
-## S04 — Dense activation regions are the all-sites-observed special case
+## S04 — Dense activation regions are an all-sites-observed special case
 
 - **Status:** survey synthesis; broad novelty defeated
 - **Statement:** Translating each ReLU regime to a binary selection and
@@ -183,9 +187,13 @@ proof obligations, and evidence.
   cell complexes; Wang merges activation cells into maximal equal-affine
   regions; and Drammis et al. analyze parallel layerwise enumeration.
 - **Consequence:** A variable sparse domain is also anticipated by ordinary
-  decision-tree paths. Novelty can rest only on the requested-root-relative
-  typed shared-graph observer and a nontrivial construction/composition result,
-  not exact regime enumeration, guard-plus-residual output, or dynamic sparsity.
+  decision-tree paths, and exact neural trees/TADS can prune infeasible or
+  forced activation tests while preserving the output. Exact BNN-to-BDD/SDD
+  compilation can existentially eliminate hidden activations entirely. Novelty
+  can rest only on the requested-root-relative typed shared-graph observer and
+  a nontrivial event-preserving construction/composition result, not exact
+  regime enumeration, guard-plus-residual output, dynamic sparsity, or an
+  extensional requested-class quotient.
 
 ## S05 — Selection observations are an observer-equivalence partition
 

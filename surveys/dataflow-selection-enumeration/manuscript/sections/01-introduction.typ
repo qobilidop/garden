@@ -58,9 +58,10 @@ The contribution is consequently a survey and formal synthesis:
   coalescing, abstract merging, and heuristic partitioning.
 - A graph-relative observer gives precise meaning to an input-dependent sparse
   map without calling it a path or claiming that the source language is lazy.
-- The _exact-local-guard theorem_ shows that predicates for observed outcomes
-  alone define one complete fiber: explicit negative literals for unobserved
-  sites follow from graph reachability rather than logical minimization.
+- The _exact-local-guard theorem_ shows that the conjunction of predicates for
+  observed outcomes alone defines one complete fiber. Explicit literals for
+  structurally unobserved sites are unnecessary because enabled reachability
+  fixes their absence.
 - A local concolic generator and a global reachability-variable projected
   encoding are proved to enumerate the same partition. Full-fiber blocking
   uses one successful model query per observation, but this is explicitly not

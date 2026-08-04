@@ -48,6 +48,24 @@ enumeration, first parallel exact enumeration, first enumeration of a guard
 with an affine residual, or first exact treatment of convolution, pooling,
 skip-connected, maxout, or other heterogeneous CPWL structure.
 
+## Exact sparse neural trees and decision diagrams
+
+The dense-cell reduction is only one neural observer. Chang et al. construct a
+pointwise-equivalent decision tree for ReLU--argmax controllers while omitting a
+ReLU test whose one side is LP-infeasible and adding output comparisons only
+while competing winners remain. Logemann--Veith use related path-feasibility and
+forced-rule pruning, then represent leaves as exact polyhedral policy-output
+regions. Affinitree symbolically executes PWL networks into exact affine-test/
+affine-terminal structures and prunes LP-infeasible subtrees.
+
+Binary-neural knowledge compilation chooses an even coarser observer. Shih et
+al. learn an exact regional OBDD; Shi et al. compile exact neuron and network
+functions to OBDDs/SDDs; and BDD4BNN constructs exact per-class BDDs for a
+requested input region while existentially eliminating intermediate activation
+vectors. Reduced diagrams and prime implicants can skip irrelevant input tests.
+These works establish exact neural-specific dynamic omission and extensional
+requested-output quotients. They do not preserve internal event provenance.
+
 ## Three incompatible meanings of a zero coordinate
 
 The lineage is especially useful for terminology because ternary maps encode
@@ -103,7 +121,7 @@ of observed equal-valued alternatives; exact inverse fibers; and typed
 residuals. A site under an unselected outer case is absent rather than assigned
 a wildcard, but that fact is generically representable after totalization.
 
-The closest neural algorithms instead:
+The dense geometric algorithms instead:
 
 - assign or geometrically classify every activation unit;
 - operate on continuous real CPA layers;

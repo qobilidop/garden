@@ -415,35 +415,84 @@ or unrelated regional studies. No record changes the taxonomy or meets the
 choice-omission/quotient trigger beyond Shin--Yang. With those records
 reconciled, the precondition for executing round 17 is satisfied.
 
-## Outcome of round 17
+## Provisional outcome of round 17, later invalidated
 
-Round 17 is also a no-add round under the frozen trigger. Crossref returned
-large result counts for every query; the first 100 relevance-ranked records of
-each query were frozen, for 1,200 screened query occurrences in total. The
-round rediscovered the audited parametric-region, demand-driven dataflow,
-symbolic-execution, and projected-enumeration clusters, including Columbano et
-al., Spjøtvold et al., Tøndel et al., Avron--Sasson, MultiSE, All-values
-symbolic execution, and disjoint projected enumeration.
+The initial screen incorrectly classified round 17 as no-add. The independent
+audit checked all 1,305 captured round-16/17 occurrences after its deterministic
+sample exposed Logemann and Veith's *Analyzing Exact Output Regions of
+Reinforcement Learning Policy Neural Networks* at C17-01 rank 97. That paper
+meets trigger 2 directly: it inherits a feasibility-pruned exact neural-policy
+decision tree and turns each leaf path into a polyhedral output region with an
+affine residual. The dated audit row in `search-log.tsv` therefore reopens the
+map and the earlier no-add conclusion has no closure weight.
 
-Four superficially new records received additional adjudication. Löhne and
+The other round-17 adjudications remain valid as screening evidence. Löhne and
 Weißing relate polyhedral projection to multiple-objective and vector linear
 programming; Hempel et al. establish parametric-LP representability of
-continuous piecewise-affine functions. Both strengthen the existing
-polyhedral/parametric-program boundary but add neither a new enumeration
-mechanism nor a requested-observation quotient. Yan analyzes optimal
-partitions for two multiparametric semidefinite programs but does not give an
-exhaustive region enumerator. Madhusudanan's exact-search calculus instead
-enumerates elementary-function expression trees under a binary arithmetic
-primitive and is outside the program model. The first three are cataloged as
-screened neighbors and the last as an explicit out-of-scope exclusion.
+continuous piecewise-affine functions; Yan studies two multiparametric-SDP
+partitions; and Madhusudanan enumerates elementary-function expression trees.
+None repairs the missed neural-policy lineage.
 
-Thus neither round 16 nor round 17 adds a conceptual cluster or plausible
-close competitor after catalog reconciliation. This establishes mapping
-closure only for the frozen trigger, captured rankings, and 2026-08-04 access
-date. OpenAIRE's low capture, Crossref's opaque relevance ranking, duplicate
-query occurrences, and title-screening judgment remain material limitations.
-The independent audit below is still required before the mapping is called
-closed without qualification.
+## Reopening after exact neural trees and output regions
+
+Primary reading and citation chasing around the missed work exposed a direct
+lineage that changes the closest-comparator boundary:
+
+- Logemann and Veith's 2023 NN2EQCDT construction removes infeasible paths and
+  forced ReLU rules before producing policy leaves; their 2024 work gives the
+  leaves exact polyhedral input regions with affine outputs.
+- Chang et al. give the strongest theorem: LP tests omit a ReLU split when one
+  side is infeasible, output comparisons are introduced only while competing
+  actions remain, and Theorem 1 proves pointwise equivalence to the original
+  ReLU--argmax controller under a deterministic tie rule.
+- Aytekin and Nguyen et al. provide earlier dense or contradiction-pruned
+  neural-to-tree constructions. Villani--McBurney give an exact regression-tree
+  existence theorem but no feasibility-pruned enumerator.
+- Affinitree independently symbolically executes PWL neural networks into exact
+  typed affine decision structures, prunes LP-infeasible paths, and applies
+  semantics-preserving structural reductions.
+
+These works falsify the statement that exact neural methods necessarily retain
+a dense activation vector. The defensible distinction is narrower: they target
+fixed neural/PWL architectures and extensional outputs, whereas the present
+synthesis specifies a requested-root partial map of preserved internal event
+identities for arbitrary typed pure DAGs.
+
+The reconciliation deep-read and separately chased the printed or publisher-
+deposited bibliographies and indexed forward neighborhoods of the four critical
+representatives: Chang 2026, Logemann--Veith 2024, Affinitree 2024, and the
+BDD4BNN journal treatment described next.
+
+## Reopening after exact neural decision-diagram compilation
+
+Forward lineage inspection then exposed exact neural-to-OBDD/SDD compilation,
+another trigger-2 family absent from the earlier map:
+
+- Shih--Darwiche--Choi learn an OBDD exactly equivalent to a BNN on a chosen
+  CNF input region using membership and SAT-backed equivalence queries.
+- Shi et al. compile binary-neural decision functions into OBDDs and SDDs and
+  give a pseudo-polynomial integer-weight neuron bound.
+- Zhang et al.'s expanded BDD4BNN constructs exact per-class BDDs for a
+  requested binary input region, existentially removes hidden activation
+  vectors, propagates feasible block inputs, and supports exact counts,
+  prime-implicant explanations, and essential features.
+- Tang et al. later construct exact margin-qualified aligned BDDs for threshold
+  neurons. Their 2026 extension is exact for binary residual/attention
+  structures, while its real-valued sigmoid conversion is bounded-error
+  approximate.
+
+The primary BDD4BNN PDF has 121 references, exactly matching the publisher's
+Crossref array; all were screened. Forward indexes disagree: Crossref and
+OpenAlex report seven records, OpenCitations eight, and Semantic Scholar ten.
+The largest stable snapshot is retained and screened, but no claim of complete
+forward coverage is made. The neural-specific diagrams are exact extensional
+requested-class quotients and can skip irrelevant input tests; they do not
+preserve internal observation-event provenance.
+
+All critical additions, source notes, backward and forward snapshots, and
+catalog dispositions were reconciled before the replacement batches below were
+chosen. The map remains open until two new prospective no-add rounds and a new
+independent audit succeed.
 
 ## Independent audit
 

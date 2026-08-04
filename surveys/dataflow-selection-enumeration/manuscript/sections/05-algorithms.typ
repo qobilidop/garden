@@ -75,10 +75,11 @@ guard is $A and g_m$.
   specialized to $m$, but the induction hypothesis makes it equal to the eager
   selector value throughout the prefix guard. The new predicate
   $chi_(q,omega)(e_(s_q))$ is therefore equivalent there to the global outcome
-  predicate $p_(q,omega)(x)$ and selects the same case roots. The final guard is
-  exactly the positive conjunction $Gamma_(T_m)$ from the exact-local-guard
-  theorem, while the residual invariant gives value correctness. Every chosen
-  outcome predicate holds at $m$, so the guard is nonempty.
+  predicate $p_(q,omega)(x)$ and selects the same case roots. The complete
+  guard $A and g_m$ is therefore semantically equivalent to
+  $Gamma_(T_m)$ from the exact-local-guard theorem, while the residual invariant
+  gives value correctness. Every chosen outcome predicate holds at $m$, so the
+  guard is nonempty.
 ]
 
 == Full-fiber blocking
@@ -163,7 +164,7 @@ observations.
   For every feasible $tau$,
   $
     A(x) and Z = overline(tau)
-      <=> A(x) and g_tau(x).
+      <=> Gamma_tau(x).
   $
 ]
 

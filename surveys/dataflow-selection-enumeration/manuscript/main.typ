@@ -40,8 +40,8 @@
   duplication, the distinct decision observations induced by a requested
   result. For a pure shared dataflow graph, an input may expose one selection
   site while leaving sites in unselected case cones structurally unobserved.
-  Each observable case should carry an exact input guard, a residual symbolic
-  value, and a witness. This paper maps the many established forms of that
+  Each emitted observation record should carry an exact input guard, a residual
+  symbolic value, and a witness. This paper maps the many established forms of that
   problem across symbolic execution, projected model enumeration,
   functional-logic search, demand-driven testing and dataflow, decision
   diagrams, hyperplane and neural-region enumeration, and piecewise-affine
@@ -51,11 +51,12 @@
   substantial parts of it. We then give a common formal model that keeps the
   remaining distinctions explicit. A _selection observation_ is the partial
   map of contextual site outcomes reached from requested roots through strict
-  operands and selected case edges. We prove that positive predicates for
-  only those observed sites define its exact inverse-image fiber, relate local
+  operands and selected case edges. We prove that the conjunction of predicates
+  for the observed sites alone defines its exact inverse-image fiber, relate local
   concolic generation to a global reachability-and-projection encoding, prove
-  exact composition under graph substitution and sharing, and separate a
-  linear oracle-call count from genuine output-polynomial complexity. The
+  exact composition under graph substitution and sharing, and separate one
+  model-producing query per fiber plus a final exhaustion query from genuine
+  output-polynomial complexity. The
   result is a reproducible survey and a conservative formal synthesis, not a
   claim of priority for symbolic enumeration itself.
 ]

@@ -8,13 +8,16 @@ results.
 == Parameters and enumeration classes
 
 Let $S_G$ be weighted source-DAG size, including nodes, edges, case lists,
-constants, widths, and aggregate leaves. Let $S_C$ be the total shared circuit
-size for classifiers, outcome encodings, and direct case-membership predicates,
-and put $S_("enc")=S_G+S_C$. Let $S_A$ be caller-constraint size; $Q=abs(Q)$
-the number of sites; $b_q=abs(Omega_q)$; $K$ the number of feasible
-observations; $L$ the maximum observed-site count in one record; $S_tau$ the
-weighted demanded-slice size for record $tau$; and $Z$ the total serialized or
-DAG output size, whichever representation is declared. Finally,
+constants, widths, and aggregate leaves. Let $S_("enc")$ be the actual shared
+global value-and-reachability encoding size, including source wiring, one
+activity/reachability equation per relevant node and edge, ordinary
+primitives, classifiers, outcome encodings, direct case-membership predicates,
+selected combiners, and selection multiplexing. This may be larger than $S_G$. Let $S_A$ be
+caller-constraint size; $n_Q=abs(Q)$ the number of sites;
+$b_q=abs(Omega_q)$; $K$ the number of feasible observations; $L$ the maximum
+observed-site count in one record; $S_tau$ the corresponding demanded
+subencoding size for record $tau$; and $S_("out")$ the total serialized or DAG
+output size, whichever representation is declared. Finally,
 $T_("SMT")(phi)$ denotes the cost of deciding $phi$ and producing a model.
 
 The source-node count alone is insufficient. A width-$w$ one-hot selector is
@@ -28,7 +31,8 @@ every inter-output delay, and final exhaustion by an input polynomial. A
 compiled decision diagram or d-DNNF is not free preprocessing unless it is
 declared to be the input. No such classification is proved for the general
 algorithm here: exact-record membership, SMT solving, coefficient growth,
-residual equivalence, and flat guard serialization need not be polynomial.
+residual equivalence, and flat guard serialization need not be polynomial
+@creignou2019enumeration.
 
 == Output count and unavoidable products
 
@@ -116,34 +120,47 @@ coNP-hard by propositional validity.
 
 == Hyperplane cells: a strict all-sites-observed case
 
-Suppose every site is a strict real affine sign test, every site is observed,
-$A$ is the full real domain, and boundary points are excluded. Each feasible
-observation is then one full-dimensional cell of an arrangement of $Q$
-hyperplanes in dimension $D$. Avis and Fukuda's reverse search enumerates all
-$K$ cells in
+Suppose every site is structurally observed. After canonicalization, let the
+geometric core contain $n_Q$ nonconstant affine forms
+$ell_q : RR^D -> RR$ of the original input that define distinct hyperplanes.
+Constant and scalar-duplicate site coordinates are outside this core; where
+present, their deterministic outcomes are reconstructed in the observation
+record. Let
+$A(x) <=> product_(q in Q) ell_q(x) != 0$, and totalize each classifier
+arbitrarily on zero outside that caller domain. Each feasible core observation
+is one full-dimensional open cell of the resulting $n_Q$-hyperplane
+arrangement. The cost symbols below are
+source-specific: $L_("AF")(m,d)$ is the arithmetic cost of the LP used by
+Avis--Fukuda, while $L_F$ and $L_R$ denote the LP costs charged respectively by
+Ferrez et al. and Rada--Černý. Avis and Fukuda enumerate all $K$ cells in
 
 $
-  O(K Q D l(Q,D))
+  O(K n_Q D L_("AF")(n_Q,D))
 $
 
-time with $O(Q D)$ working space @avis1996reverse. Sleumer gives $O(K Q)$
-arithmetic time for fixed $D$ and $O(Q^2)$ space @sleumer1998output. For central
+arithmetic time with $O(n_Q D)$ working space @avis1996reverse. Sleumer gives
+$O(K n_Q)$ arithmetic time for fixed $D$ and $O(n_Q^2)$ space
+@sleumer1998output. For central
 arrangements, Ferrez, Fukuda, and Liebling give the pre-Rada bound
 
 $
-  O(K Q op("LP")(Q,D))
+  O(K n_Q L_F(n_Q,D))
 $
 
-with $O(Q D)$ working space @ferrez2005fixedrank. Rada and Černý later give a
+with $O(n_Q D)$ working space @ferrez2005fixedrank. Rada and Černý later give a
 different incremental sign-prefix formulation with
-$O(K Q op("lp")(Q,D))$ time @rada2018new.
+$O(K n_Q L_R(n_Q,D))$ time @rada2018new.
 
-These are already complete duplicate-free OutputP results under their stated
-arithmetic or LP-cost abstractions. Deza and Pournin add a rational-bit-model
-zonotope traversal. If $B_Z$ is total generator encoding length, its proof gives
+All four algorithms are complete, duplicate-free, and output-polynomial under
+their stated arithmetic or LP-cost models. Rada--Černý additionally classify
+their bounded-encoding algorithm in OutputP; the other displayed operation
+bounds are not silently promoted to coefficient-bit theorems. Deza and Pournin
+add a rational-bit-model zonotope traversal. If $B_Z$ is total generator
+encoding length, its proof gives
 
 $
-  O(K Q [q(Q,D,B_Z) + log K]) = O(K p(Q,D,B_Z)),
+  O(K n_Q [q(n_Q,D,B_Z) + log K])
+    = O(K p(n_Q,D,B_Z)),
 $
 
 for unspecified polynomials $q$ and $p$, while retaining all visited vertices
@@ -159,34 +176,36 @@ fiber. Such a fiber need not be an open full-dimensional arrangement cell.
 None of the geometric bounds transfers automatically to general typed
 bitvector primitives or an arbitrary solver theory.
 
-== Parametric and neural partitions
+== Parametric partitions
 
 Jones and Maciejowski enumerate every full-dimensional critical-region basis
-of a multiparametric LP by reverse search. With $e=n-m$ and $N_r$ regions, their
-LP-relative bound is
+of a multiparametric LP by reverse search. For their constraint matrix
+$A in RR^(m times n)$, parameter dimension $d$, $e=n-m$, and $N_r$ regions,
+let $L_P(a,b)$ denote the paper's exact LP-oracle cost at the displayed
+dimensions. Their LP-relative bound is
 
 $
-  O(N_r [e^2 op("LP")(d,e) + e op("LP")(m,n)]),
+  O(N_r [e^2 L_P(d,e) + e L_P(m,n)]),
 $
 
 with output-relative constant auxiliary space; each basis reconstructs a
 polyhedral guard and affine optimizer @jones2006parametric. The later
 sufficient-matrix pLCP treatment covers pLP and convex pQP and gives a stronger
-explicit comparator. For pLCP dimension $n$, parameter dimension $d$, and
-$N_g$ reported bases in general position, Columbano, Fukuda, and Jones bound
-the LP-oracle work by
+explicit comparator. For the separate pLCP dimension $n$, parameter dimension
+$d$, and $N_g$ reported bases in general position, let $L_C(a,b)$ denote that
+paper's LP-oracle cost. Columbano, Fukuda, and Jones bound the work by
 
 $
-  O(N_g [n op("LP")(n,d+1)
-    + (n^2-n)/2 op("LP")(2n,d+1)]).
+  O(N_g [n L_C(n,d+1)
+    + (n^2-n)/2 L_C(2n,d+1)]).
 $
 
 Under lexicographic perturbation, for $N_p$ perturbed bases the corresponding
 bound is
 
 $
-  O(N_p [(n^2+n) op("LP")(n,d+1)
-    + (n^3-n)/2 op("LP")(2n,d+1)]).
+  O(N_p [(n^2+n) L_C(n,d+1)
+    + (n^3-n)/2 L_C(2n,d+1)]).
 $
 
 The perturbed basis count can exceed the number of unperturbed critical
@@ -196,8 +215,9 @@ a coefficient-bit nor a DelayP theorem @columbano2009sufficient.
 Separate work resolves other degeneracy and representation questions.
 Lexicographic perturbation selects a unique continuous affine optimizer and
 nonoverlapping basis regions @jones2007lexicographic. A minimum-norm secondary
-selection yields, under stated assumptions, a unique continuous pQP solution
-with an algorithm-independent polyhedral representation
+optimization yields, under stated assumptions, a unique continuous selection
+from the original pQP solution set with an algorithm-independent polyhedral
+representation
 @spjotvold2007unique. Patrinos and Sarimveis discover every full-dimensional
 convex-pQP neighbor across a facet without nondegeneracy or a facet-to-facet
 assumption, but state no polynomial total, delay, space, or bit bound
@@ -206,34 +226,6 @@ practical per-combination analyses rather than a new enumeration-class theorem
 @bemporad2015multiparametric. Finally, pLP solution and halfspace polyhedral
 projection are polynomially interreducible, so renaming one side as projection
 does not establish a different complexity frontier @jones2008projection.
-
-Dense ReLU networks are another all-sites-observed specialization. Exact
-methods enumerate feasible activation patterns by MIP, propagate exact input
-stars and affine images, walk adjacent activation polyhedra, or construct the
-full face complex @serra2018bounding @vincent2021reachable. They establish the
-guard-plus-affine-residual baseline and exponential worst cases. They do not
-provide a faster bound for the sparse nested-selection observer, but that fact
-cannot be inverted into a speedup claim: when every site is observed, our task
-is exactly their finer activation-cell partition.
-
-== Fixed observers and compiled decision structures
-
-A finite predicate alphabet can always be partitioned into satisfiable Boolean
-atoms. Exact input-equivalence-class methods enumerate and then minimize
-behavior-preserving classes @krafczyk2017effective, while exhaustive
-property-oriented testing enumerates satisfiable atoms of a fixed observer
-alphabet @huang2024exhaustive. A one-state instrumentation with totalized
-selection coordinates reduces our semantic partition to that established
-construction.
-
-For finite Boolean inputs, an MTBDD or ADD can compile the totalized observation
-function; reduced ordered diagrams are canonical only for a fixed variable
-order and may be exponential @bryant1986bdd @bahar1997add. One observation
-terminal can have many incoming paths, and flattening its preimage to one guard
-can destroy diagram sharing. Conversely, a compiled diagram can be much smaller
-than a list of flat guards. Any comparison must state whether compilation time,
-diagram nodes, terminal paths, residual labels, or flattened formulas are the
-output.
 
 The resulting complexity claim is intentionally negative but precise: the
 general theory proves finite exact enumeration and an exact $K+1$ oracle-call

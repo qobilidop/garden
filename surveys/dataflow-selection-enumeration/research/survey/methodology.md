@@ -37,8 +37,11 @@ state this limitation rather than imply a conventional two-reviewer study.
 leaves referenced identifiers unresolved, conflates versions, and sometimes
 assigns an incorrect DOI. Crossref searches broad bibliographic metadata and
 can return very noisy rankings. Frozen snapshots expose these failures, but do
-not repair missing records. Primary publisher or author sources control the
-technical and bibliographic claims.
+not repair missing records. The neural-decision-diagram forward audit also
+produced different counts in Crossref, OpenAlex, OpenCitations, and Semantic
+Scholar. The largest stable snapshot was screened, but index disagreement
+precludes a complete-forward-neighborhood claim. Primary publisher or author
+sources control the technical and bibliographic claims.
 
 **Vocabulary drift.** The map crosses symbolic execution, term graphs,
 hardware simulation, demand semantics, event structures, decision diagrams,

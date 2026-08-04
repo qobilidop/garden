@@ -41,6 +41,12 @@ already supplies:
 - exact dense ReLU activation-pattern enumeration, including methods that emit
   an exact polyhedral guard and affine residual, reconstruct the full cell
   complex, or parallelize layerwise enumeration;
+- exact feasibility-pruned neural decision trees and typed affine decision
+  structures that omit impossible or forced activation tests while preserving
+  policy or PWL-network semantics;
+- exact BNN-to-OBDD/SDD compilation that removes hidden activations, partitions
+  requested binary input regions by class, and supports sparse exact
+  prime-implicant explanations;
 - Lindblad's and Lazy SmallCheck's refinement of exactly the partial-input
   unknown demanded by a Boolean property, with partial constructor terms that
   denote bounded completion sets and pruning once the answer is known;
@@ -120,6 +126,16 @@ observer over arbitrary typed shared dataflow with context-qualified site
 identity, exact inverse fibers, and residuals. A sign omitted because it is
 logically entailed, or set to zero because a cell lies on a boundary, is still
 not an unobserved selection site.
+
+That contrast is not limited to generic trees. Chang et al., Logemann--Veith,
+and Affinitree remove infeasible or forced activation tests from exact neural
+decision structures. Shih et al., Shi et al., and BDD4BNN compile the final
+binary class function and existentially remove hidden activations altogether.
+Their omission is respectively feasibility/entailment pruning or extensional
+output compilation; neither preserves a requested partial map of internal
+event identities. The separator must therefore be the event-preserving
+observer over arbitrary typed shared IR, not the bare fact that a neural tree
+or diagram is sparse.
 
 Demand-driven bounded testing adds a fifth boundary. Lindblad already emits
 partial constructor terms whose uninstantiated metavariables denote every total
