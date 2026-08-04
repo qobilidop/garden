@@ -1347,3 +1347,55 @@ construction.
 
 Round 37 therefore reopens the map. Round 38's precondition failed; it is
 retired unexecuted and cannot count toward closure.
+
+## Replacement round `closure-replacement-39`: Crossref
+
+Frozen on 2026-08-04 after complete reconciliation and two agreeing
+independent audits of round 37, and before any round-39 or round-40 query was
+executed. Source: Crossref REST API. Each exact phrase is searched with
+`query.bibliographic`, sorted by relevance, with the first 100 records exported
+unless fewer are returned. A round qualifies as no-add only if complete
+screening adds neither a conceptual cluster nor a plausible close competitor.
+
+| ID | Exact query |
+|---|---|
+| C39-01 | `schematological equivalence dataflow networks partially interpreted` |
+| C39-02 | `symbolic simulation synchronous programs` |
+| C39-03 | `transparent synchronous dataflow compositionality` |
+| C39-04 | `synchronous program infeasible path WCRT pruning` |
+| C39-05 | `timed dataflow refinement reordering symbolic` |
+| C39-06 | `stubborn time real time Petri nets frozen actions` |
+| C39-07 | `sweep line LTL partial order preservation` |
+| C39-08 | `modular multiple execution abstraction refinement` |
+| C39-09 | `caller input selection observation inverse fiber` |
+| C39-10 | `requested internal site sparse guard residual` |
+| C39-11 | `exact observation image program inputs` |
+| C39-12 | `dataflow observer fiber enumeration` |
+
+## Replacement round `closure-replacement-40`: arXiv
+
+Execute only if round 39 adds neither a conceptual cluster nor a plausible
+close competitor. Source: arXiv API. Frozen on 2026-08-04 before any round-39
+or round-40 execution. Each phrase is submitted as the conjunction of all
+alphanumeric terms across arXiv's `all` field, sorted by relevance, with at
+most the first 100 records and abstracts exported.
+
+| ID | Exact query |
+|---|---|
+| C40-01 | `schematological equivalence dataflow partially interpreted` |
+| C40-02 | `symbolic simulation synchronous programs` |
+| C40-03 | `transparent synchronous dataflow compositionality` |
+| C40-04 | `synchronous program infeasible path pruning` |
+| C40-05 | `timed dataflow refinement reordering symbolic` |
+| C40-06 | `stubborn real time Petri nets frozen actions` |
+| C40-07 | `sweep line LTL partial order preservation` |
+| C40-08 | `modular multiple execution abstraction refinement` |
+| C40-09 | `caller input selection observation inverse fiber` |
+| C40-10 | `requested internal site sparse guard residual` |
+| C40-11 | `exact observation image program inputs` |
+| C40-12 | `dataflow observer fiber enumeration` |
+
+If round 39 reopens the map, round 40 is retired unexecuted. If both qualify,
+they establish the required two-round no-add sequence only for the recorded
+sources, exact queries, captured rankings, date, and frozen trigger. Independent
+audit remains mandatory before closure.
