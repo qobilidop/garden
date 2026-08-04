@@ -147,6 +147,15 @@ For every closest work, perform backward citation chasing and forward citation
 chasing as separate log rows. `search-log.tsv` records one seed, one direction,
 and one stable result set per row; aggregate descriptions are invalid.
 
+An index-provided backward neighborhood satisfies this requirement only when
+it exports the seed's complete primary bibliography. If identifiers are
+unresolved, the index reports zero references despite a real bibliography, or
+the exported count is otherwise smaller, retain the defective snapshot and
+add a separately logged complete bibliography snapshot from the primary paper.
+The complete primary list—not the resolvable index subset—is screened for
+closure. A wrong-DOI or surrogate-version record is likewise discovery
+evidence only unless its bibliography is checked against the actual seed.
+
 The initial mapping closes only after:
 
 1. every work named by an exploratory row is either cataloged or explicitly

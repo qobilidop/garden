@@ -33,6 +33,14 @@ source-neutral identifier column:
   --limit 50 --output research/survey/screening/NAME.tsv
 ```
 
+Files named `primary-CITEKEY-backward.tsv` transcribe the complete reference
+list of the exact primary version named in that work's source note. They use
+the same source-neutral header. A DOI is the preferred `source_id`; a stable
+per-seed `citation-N` identifier preserves entries without one. These files
+are mandatory when an index returns unresolved reference identifiers, a
+truncated bibliography, a wrong version, or an implausible zero-reference
+result.
+
 No closure claim follows merely from the presence of snapshots. The protocol's
 deep-reading, separate seed chasing, consecutive no-add rounds, and independent
 audit requirements still apply.

@@ -16,6 +16,9 @@ to audit its selection process.
   explicitly marked `not-recorded`.
 - Every audited database query and citation direction has an exact seed or
   query, hit count, screened count, and frozen title-level result set.
+- Index citation neighborhoods are checked against the primary bibliography;
+  unresolved or truncated backward results are supplemented by a complete
+  primary-reference snapshot and cannot independently establish closure.
 - The bounded closest-work set is read from primary papers rather than index
   abstracts. Technical claims carry page, section, definition, theorem, or
   algorithm anchors in source notes.
