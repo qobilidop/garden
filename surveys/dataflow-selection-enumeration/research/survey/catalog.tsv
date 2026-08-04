@@ -1,11 +1,29 @@
 citekey	year	cluster	status	priority	venue	primary_url	relevance	exclusion_reason
 king1976symbolic	1976	symbolic-execution	candidate	high	CACM	https://doi.org/10.1145/360248.360252	Foundational symbolic execution and path-condition semantics	-
-voogd2023denotational	2023	semantics	candidate	critical	ICTAC	https://ebjohnsen.org/publication/23-ictac/	Piecewise denotational semantics over input partitions	-
-mauborgne2005trace	2005	abstract-interpretation	candidate	high	ESOP	https://www.di.ens.fr/~mauborgn/publi/esop05.html	Established trace-partitioning terminology and semantics	-
+voogd2023denotational	2023	semantics	deep-read	critical	ICTAC	https://doi.org/10.1007/978-3-031-47963-2_22	Piecewise denotational semantics over input partitions	-
+mauborgne2005trace	2005	abstract-interpretation	deep-read	high	ESOP	https://doi.org/10.1007/978-3-540-31987-0_2	Established trace-partitioning terminology and semantics	-
 avgerinos2014veritesting	2014	multipath	candidate	high	ICSE	https://doi.org/10.1145/2568225.2568293	Static symbolic execution and path merging	-
-sen2015multise	2015	multipath	candidate	critical	ESEC/FSE	https://digicoll.lib.berkeley.edu/record/137554	Guarded value summaries and exact multipath states	-
-spallitta2024disjoint	2024	model-enumeration	candidate	critical	AAAI	https://doi.org/10.1609/aaai.v38i8.28652	Disjoint partial-model enumeration	-
+sen2015multise	2015	multipath	deep-read	critical	ESEC/FSE	https://doi.org/10.1145/2786805.2786830	Guarded value summaries and exact multipath states	-
+spallitta2024disjoint	2024	model-enumeration	deep-read	critical	AAAI	https://doi.org/10.1609/aaai.v38i8.28652	Disjoint partial-model enumeration	-
 seger1995trajectory	1995	hardware	candidate	high	FMSD	https://www.cs.cmu.edu/~bryant/pubs.html	Symbolic evaluation of partially ordered hardware trajectories	-
 marre2005gatel	2005	dataflow-testing	candidate	high	ENTCS	https://doi.org/10.1016/j.entcs.2004.12.010	Constraint-based test selection for Lustre	-
 li2013sedge	2013	dataflow-testing	candidate	high	ASE	https://doi.org/10.1109/ASE.2013.6693083	Symbolic example generation for dataflow programs	-
 ryan2023sylvia	2023	hardware	candidate	critical	FMCAD	https://arxiv.org/abs/2304.05445	Piecewise composition for RTL symbolic execution	-
+lucanu2017generic	2017	semantics	candidate	high	JSC	https://doi.org/10.1016/j.jsc.2016.07.012	Language-independent coinductive symbolic-execution framework	-
+kuznetsov2012merging	2012	multipath	candidate	high	PLDI	https://doi.org/10.1145/2254064.2254088	State-merging tradeoffs and query-cost estimation	-
+austin2013faceted	2013	conditional-values	candidate	high	PLAS	https://doi.org/10.1145/2465106.2465121	Guarded faceted values and projection theorem	-
+wong2018variational	2018	conditional-values	candidate	high	OOPSLA	https://doi.org/10.1145/3276487	Conditional values and disjoint configuration contexts	-
+meinicke2018traces	2018	conditional-values	candidate	high	TOSEM	https://arxiv.org/abs/1807.03837	Variational traces suppress identical events across configurations	-
+phan2015allsmtr	2015	model-enumeration	deep-read	critical	ARES	https://doi.org/10.1109/ARES.2015.14	AllSMT over important Boolean and theory variables with witnesses	-
+spallitta2025projected	2025	model-enumeration	deep-read	critical	Artificial Intelligence	https://doi.org/10.1016/j.artint.2025.104346	Disjoint projected SAT and SMT enumeration	-
+bryant1986bdd	1986	decision-diagrams	candidate	high	IEEE TC	https://doi.org/10.1109/TC.1986.1676819	Canonical reduced Boolean functions and shared subgraphs	-
+erwig2011choice	2011	conditional-values	candidate	high	TOSEM	https://doi.org/10.1145/2063239.2063245	Choice calculus semantics and decision-based variant selection	-
+consel1993partial	1993	residualization	candidate	medium	POPL	https://doi.org/10.1145/158511.158707	Established partial-evaluation and residual-program terminology	-
+mokhov2019selective	2019	selective-computation	candidate	high	ICFP	https://doi.org/10.1145/3341694	Statically visible effects with dynamically selected branches	-
+bryant1990simulation	1990	hardware	candidate	high	DAC	https://doi.org/10.1145/123186.128296	Foundational symbolic simulation of circuits	-
+kolbl2001rtl	2001	hardware	candidate	critical	DAC	https://doi.org/10.1145/378239.378278	Symbolic RTL contexts with ITE merging	-
+kanade2009simulink	2009	model-based	candidate	high	CAV	https://doi.org/10.1007/978-3-642-02658-4_33	Symbolic traces for Simulink and Stateflow models	-
+feng2004dynamic	2004	hardware	deep-read	critical	DATE	https://doi.org/10.1109/DATE.2004.1268825	Mux-guided functional-space partitioning in symbolic simulation	-
+narayan1996partitioned	1996	decision-diagrams	deep-read	critical	ICCAD	https://doi.org/10.1109/ICCAD.1996.569909	Canonical partitioned ROBDDs and exponential compactness	-
+antoy2011pull	2011	term-graphs	deep-read	critical	TPLP	https://doi.org/10.1017/S1471068411000263	Shared choice identifiers and strategy-independent exhaustive term-graph evaluation	-
+michelutti2024canonical	2024	decision-diagrams	deep-read	critical	ECAI	https://doi.org/10.3233/FAIA241007	Canonical theory decision diagrams built from AllSMT and Boolean DDs	-
