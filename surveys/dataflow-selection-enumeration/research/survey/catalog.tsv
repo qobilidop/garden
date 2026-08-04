@@ -96,3 +96,9 @@ bernasconi2013compact	2013	model-enumeration	candidate	medium	Theory of Computin
 grumberg2004allsat	2004	model-enumeration	candidate	high	FMCAD	https://doi.org/10.1007/978-3-540-30494-4_20	Memory-efficient all-solutions SAT with reachability applications	-
 zhang2020shortblocking	2020	model-enumeration	candidate	high	ASE	https://doi.org/10.1145/3324884.3416569	AllSAT acceleration through short blocking clauses	-
 sebastiani2020satisfied	2020	model-enumeration	excluded	medium	arXiv	https://doi.org/10.48550/arXiv.2003.04225	Semantic precursor superseded for manuscript claims by the expanded CADE 2025 treatment	E7-duplicate-version
+denaro2012allvalues	2012	output-symbolic-execution	deep-read	critical	AST	https://doi.org/10.1109/IWAST.2012.6228982	Enumerates guarded symbolic values at program statements instead of full execution paths	-
+santelices2010dependencies	2010	output-symbolic-execution	deep-read	critical	ISSTA	https://doi.org/10.1145/1831708.1831733	Output-dependent path families avoid combinations irrelevant to queried symbolic values	-
+qi2013output	2013	output-symbolic-execution	deep-read	critical	TOSEM	https://doi.org/10.1145/2522920.2522925	Complete exploration of symbolic-output classes using reordered relevant-slice conditions	-
+majumdar2009information	2009	input-partitioning	deep-read	high	CAV	https://doi.org/10.1007/978-3-642-02658-4_41	Input information partitions derived from dynamic dependencies to reduce test suites	-
+scheurer2016lattice	2016	merged-evaluation	deep-read	high	ICFEM	https://doi.org/10.1007/978-3-319-47846-3_5	General lattice abstraction for sound symbolic branch merging	-
+trabish2018chopped	2018	demand-driven	deep-read	high	ICSE	https://doi.org/10.1145/3180155.3180251	Lazy execution of skipped code when its effects become observable to a target slice	-
