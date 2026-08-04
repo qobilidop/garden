@@ -316,6 +316,81 @@ seed's incomplete enumeration. Neither provides a maximal quotient, complete
 or nonredundant enumeration, or a stronger complexity theorem. The companion
 is cataloged, but it adds no new cluster and does not reopen the map.
 
+## Reopening after the parametric-program seed chase
+
+Exact primary-bibliography and OpenCitations screening for Borrelli--Bemporad--
+Morari 2003, Jones--Kerrigan--Maciejowski 2007, and Patrinos--Sarimveis 2010
+reopened the map once more. The bounded evidence comprises 94 backward
+references and 273 forward citation records, resolving to 253 distinct forward
+works after malformed-identifier and version duplicates are merged.
+
+The chase exposed four material boundaries. Columbano--Fukuda--Jones give
+explicit per-output LP-oracle bounds for sufficient-matrix pLCP enumeration,
+including pLP and convex pQP. Spjøtvold--Tøndel--Johansen already give a unique
+continuous minimum-norm pQP selection and algorithm-independent polyhedral
+representation. Jones--Kerrigan--Maciejowski polynomially interreduce
+polyhedral projection and pLP solution. Shin--Yang independently identify
+polyhedral reward sets that yield the same optimal MDP policy. These findings
+defeat generic claims of first canonical partition, first degeneracy-safe
+output-sensitive pLP/pQP enumeration, a separate projection frontier, or first
+requested-output quotient.
+
+The six snapshots, their catalog dispositions, primary source notes, claims,
+and complexity corrections were reconciled before the following replacement
+rounds were frozen. Neither round had been executed or previewed at freeze
+time.
+
+## Replacement round `closure-replacement-16`: OpenAlex
+
+Source: OpenAlex works search API. Frozen 2026-08-04 after reconciliation and
+before execution. Each query exports the first 100 relevance-ranked records,
+including indexed abstracts. Every title is screened under the unchanged
+two-part close-competitor trigger; plausible records receive abstract and
+primary-source review.
+
+| ID | Exact query |
+|---|---|
+| C16-01 | `output-sensitive multiparametric LCP sufficient matrix enumeration` |
+| C16-02 | `degenerate multiparametric quadratic programming region enumeration complexity` |
+| C16-03 | `canonical minimum norm parametric quadratic programming partition` |
+| C16-04 | `polyhedral projection parametric linear programming output sensitive` |
+| C16-05 | `requested output policy quotient parameter region` |
+| C16-06 | `same policy reward parameter polyhedral regions` |
+| C16-07 | `observer relative symbolic execution exact input fibers` |
+| C16-08 | `demand driven dataflow selection trace enumeration` |
+| C16-09 | `contextual choice identity term graph residual` |
+| C16-10 | `equal output distinct branch provenance symbolic execution` |
+| C16-11 | `projected model enumeration residual symbolic function` |
+| C16-12 | `compositional guarded residual graph enumeration` |
+
+## Replacement round `closure-replacement-17`: Crossref
+
+Execute only if round 16 is a no-add round. Source: Crossref REST API. Frozen
+2026-08-04 before either replacement round was executed. Each query exports
+the first 100 relevance-ranked records. Wording differs deliberately while
+targeting the same theorem, observer, and representation boundaries.
+
+| ID | Exact query |
+|---|---|
+| C17-01 | `parametric complementarity problem output sensitive critical regions` |
+| C17-02 | `degeneracy safe explicit parametric quadratic programming enumeration` |
+| C17-03 | `unique polyhedral representation parametric optimizer selection` |
+| C17-04 | `projection polyhedron parametric linear program equivalence complexity` |
+| C17-05 | `reward functions same optimal policy multiparametric` |
+| C17-06 | `requested action equivalence region enumeration` |
+| C17-07 | `symbolic execution observation equivalence exact preimage` |
+| C17-08 | `demand relative selection dataflow graph exhaustive` |
+| C17-09 | `shared term graph choice identity symbolic residual` |
+| C17-10 | `branch provenance equal value symbolic execution` |
+| C17-11 | `projected enumeration guarded symbolic values` |
+| C17-12 | `compositional conditional graph exact residual enumeration` |
+
+Round 17 counts only if round 16 adds neither a cluster nor a plausible close
+competitor. If either round adds one, both-round closure is abandoned and the
+normal reconciliation and refreeze rule applies. Two no-add outcomes establish
+closure only for these captured rankings and the frozen trigger, not world
+literature completeness.
+
 ## Independent audit
 
 After both replacement rounds qualify, a reviewer who did not choose the
