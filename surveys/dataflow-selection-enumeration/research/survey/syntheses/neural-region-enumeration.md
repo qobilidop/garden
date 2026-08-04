@@ -10,9 +10,18 @@ well beyond a monolithic SMT encoding:
   give an OutputP time/space analysis.
 - Serra et al. enumerate or count exactly the feasible dense ReLU activation
   patterns with a boundary-aware mixed-integer formulation.
-- Vincent and Schwager enumerate every feasible pattern together with its
-  exact H-polyhedral guard and residual affine output map by adjacency
-  marching.
+- Xiang computes exact reachable polyhedral unions; Tran's star sets retain
+  exact input predicates and affine images and reconstruct complete unsafe
+  input sets; Robinson explicitly emits region/affine-map pairs; and Bak gives
+  complete geometric ReLU-path enumeration.
+- Yang retains original-input subpolytopes and affine maps; Vincent and
+  Schwager then enumerate every feasible pattern with its exact H-polyhedral
+  guard and residual affine map by adjacency marching.
+- SyReNN, DISCO, Xu's local-polytope traversal, and SplineCam broaden exact
+  partition construction, architectural scope, or proof support before or
+  contemporaneously with the 2023 algorithms.
+- Wang distinguishes dense activation cells from maximal extensional affine
+  regions and merges connected cells with equal affine maps.
 - Masden extracts the richer full ReLU cell complex and face poset, including
   lower-dimensional cells.
 - Berzins gives a GPU-oriented exact bounded-complex algorithm based on edge
@@ -22,11 +31,15 @@ well beyond a monolithic SMT encoding:
   literature.
 - Drammis et al. give the subsequent bounded-domain correctness argument and
   parameterized parallel work analysis.
+- Joyce handles skip-connected linear regions, while AffineLens gives the
+  strongest later high-dimensional architectural breadth in this audit,
+  subject to full-dimensional and degeneracy assumptions.
 
 Consequently the paper must not claim first exact feasible-choice enumeration,
 first recursive feasibility pruning, first output-sensitive region
-enumeration, first parallel exact enumeration, or first enumeration of a guard
-with an affine residual.
+enumeration, first parallel exact enumeration, first enumeration of a guard
+with an affine residual, or first exact treatment of convolution, pooling,
+skip-connected, maxout, or other heterogeneous CPWL structure.
 
 ## Three incompatible meanings of a zero coordinate
 
@@ -54,13 +67,34 @@ activation cell, and its residual is the cell-local affine map.
 Thus exact activation-region enumeration is not merely analogous; it is the
 all-sites-observed real-CPA special case of the observer proposed here.
 
-## Surviving separator
+## Activation cells are not extensional affine regions
+
+Most exact neural algorithms enumerate feasible activation patterns or the
+polyhedral cells induced by them. Adjacent cells with different activation
+patterns may nevertheless realize the same affine function in degenerate
+networks. Wang explicitly separates `shape` from affine `value` and merges
+connected same-value cells into maximal linear regions.
+
+Our selection observer deliberately retains observed equal-valued outcomes.
+It therefore corresponds to the finer activation-cell partition in the dense
+ReLU reduction, not automatically to maximal extensional affine regions. Any
+use of *linear region* must state which equivalence is intended.
+
+## Surviving graph-semantic separator
 
 The general pure-graph problem permits nested selectors whose unselected case
-subgraphs are outside the requested result's enabled closure. It therefore
-emits a partial map whose *domain itself varies with the input*. Equal-valued
-selected outcomes remain distinct, while a site under an unselected outer
-case is absent rather than assigned a wildcard.
+subgraphs are outside the requested result's enabled closure. It emits a
+partial map whose domain varies with the input. But dynamic sparsity alone is
+not a separator: an ordinary decision-tree execution already evaluates only
+the tests on its selected root-to-leaf path, whose conjunction is a guard and
+whose leaf is a result; BDDs add shared residual subgraphs.
+
+The remaining distinction is the whole graph-semantic package: arbitrary typed
+shared dataflow rather than a tree or dense CPA layer chain; requested-root
+relative enabled closure; context-qualified selector identities; preservation
+of observed equal-valued alternatives; exact inverse fibers; and typed
+residuals. A site under an unselected outer case is absent rather than assigned
+a wildcard, but that fact is generically representable after totalization.
 
 The closest neural algorithms instead:
 
@@ -70,9 +104,10 @@ The closest neural algorithms instead:
 - have no requested-root-relative site observer.
 
 The defensible contribution, if the remaining audit survives, is therefore a
-formal correspondence among enabled-edge reachability, sparse graph-relative
+formal correspondence among enabled-edge reachability, graph-relative
 observations, exact fibers, residuals, and compositional shared-graph
-evaluation—not a new general region-enumeration skeleton.
+evaluation, plus a nontrivial construction or representation result—not a new
+general region-enumeration skeleton or merely a sparse dynamic path.
 
 ## Complexity consequence
 
@@ -101,4 +136,3 @@ Use *activation pattern*, *activation region*, *hyperplane cell*, and
 selection observations. Reserve *selection observation* for the locally
 defined partial map over graph sites and say explicitly that activation
 patterns instantiate it only in the all-sites-observed special case.
-

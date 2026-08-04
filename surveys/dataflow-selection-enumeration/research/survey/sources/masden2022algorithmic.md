@@ -1,8 +1,9 @@
 # masden2022algorithmic — Algorithmic Determination of the Combinatorial Structure of ReLU Regions
 
 - **Status:** deep-read; critical richer-region predecessor
-- **Primary source:** https://arxiv.org/abs/2207.07696
-- **Version read:** arXiv v1, July 2022
+- **Primary source:** https://doi.org/10.1137/24M1646996
+- **Version read:** 2025 publication metadata, abstract, and 42-entry bibliography;
+  arXiv v1 for the full theorem and algorithm text
 - **Bibliography key:** `masden2022algorithmic`
 
 ## Why it matters
@@ -41,17 +42,22 @@ genericity, supertransversality, and at least \(n_0\) first-layer neurons for
 the strongest duality statement. Numerical correctness also assumes solve
 error is small relative to cell size.
 
-Section 4.3 describes polynomial behavior in hidden-neuron count but qualifies
-it using polynomially many regions "at least at initialization." This is not a
-worst-case polynomial bound for arbitrary trained networks; dependence on
-input dimension is combinatorial.
+The publication describes expected polynomial behavior in the number of
+intermediate neurons for random initialization, while dependence on input
+dimension is exponential. This is not a worst-case polynomial bound for an
+arbitrary trained network.
 
 ## Relationship to selection observations
 
 The paper defeats novelty claims for ternary structural regime labels, exact
-cell-complex extraction, and face-poset reconstruction. It does not define a
-sparse map whose domain changes with result-relative enabled reachability.
-Every neural node contributes a sign coordinate, including boundary zeros.
+cell-complex extraction, and face-poset reconstruction. Every neural node
+contributes a sign coordinate, including boundary zeros. It does not define
+requested-root-relative structural absence over an arbitrary typed graph.
+
+A varying sparse domain is not by itself a separator because decision-tree
+paths already have that shape. The remaining distinction must include the
+graph-derived observer, contextual site identity, exact fibers, typed
+residuals, and shared composition.
 
 Our observation is intentionally coarser than Masden's cell complex along
 geometric boundaries but can be finer than extensional output functions by
@@ -68,4 +74,3 @@ without a fixed equivalence relation.
 - Theorem 20 and Lemma 21, pp. 4--5: cubical dual and face reconstruction.
 - Lemmas 22--23 and Section 4.1, pp. 6 and appendix: layerwise enumeration.
 - Section 4.3, p. 7: numerical and complexity qualifications.
-

@@ -214,6 +214,54 @@ as an audit trail but cannot count toward closure. After every newly critical
 seed and its citation neighborhood is reconciled, two new replacement rounds
 must be predeclared before either is executed.
 
+## Reconciliation after the neural and dataflow deep snowballs
+
+The first neural reconciliation was not sufficient. A second pass screened the
+current printed bibliographies and two independent forward indexes for the
+seven exact-region seeds. Counting the 2025 Masden publication rather than its
+22-reference arXiv version, the bounded evidence set comprises 204 printed
+references, 427 Semantic Scholar forward records, and 73 OpenAlex forward
+records, plus 280 relevance-ranked results from six targeted OpenAlex queries.
+These are screened-record counts, not unique-world-work counts: normalized
+titles reduce the forward sets to 394 and 69 respectively, and index coverage
+is visibly incomplete.
+
+This pass exposed an older exact guard/residual lineage: Xiang's exact output
+polyhedra, Tran's exact stars with retained input predicates and affine images,
+Robinson's explicit region/map conversion, Bak's complete neural-path stars,
+and Yang's retained input subpolytopes. It also added SyReNN, DISCO, Xu's
+theorem-backed local-polytope traversal, Wang's activation-cell versus maximal
+affine-region distinction, SplineCam's heterogeneous two-dimensional CPWL
+partitioning, and AffineLens's later broad bounded-domain traversal. These
+works do not add demand-relative graph-site absence, but they invalidate any
+priority claim for exact guard-plus-residual enumeration or heterogeneous CPWL
+partition construction.
+
+The adversarial special-case pass also identified a simpler reduction:
+ordinary decision-tree execution already produces an input-relative sparse
+map of reached tests to outcomes, with a path guard and terminal result; BDDs
+and ADDs add shared compilation. Dynamic sparsity is therefore not itself a
+surviving separator. The map reopened conceptually even though noisy database
+rankings did not surface the classical special case.
+
+For stream dataflow, exact primary-bibliography screening covered 29 Avron--
+Sasson references, 16 Pingali--Arvind Part 1 references, and four Part 2
+references. OpenAlex reported two forward records for Avron--Sasson and 38 for
+Part 1; only Part 2 and Vin--Berman--Mattson materially strengthened the direct
+lineage. The index backward neighborhoods were not faithful transcriptions, so
+the primary bibliographies govern closure. This reconciliation establishes
+that least fixed-input demanded computation and reverse demand propagation are
+prior work; the changed quantification over symbolic inputs remains the only
+separation.
+
+The resulting bounded statement is deliberately narrow: within these audited
+sets, no source combines exact inverse fibers of a requested-root-relative
+selection observer with contextual identities and typed residuals over an
+arbitrary shared pure dataflow graph. This is not evidence of global absence,
+and generic decision structures, projected AllSMT, and finite observer
+partitions already represent the object. Two newly predeclared no-add rounds
+are still required after every source and snapshot above is reconciled.
+
 ## Independent audit
 
 After both replacement rounds qualify, a reviewer who did not choose the

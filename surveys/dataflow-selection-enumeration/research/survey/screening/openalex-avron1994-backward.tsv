@@ -1,0 +1,20 @@
+rank	openalex_id	year	doi	title	venue	type
+1	W5357916	1976	https://doi.org/10.1051/ita/197610r100471	Bottom-up computation of recursive programs	Revue française d automatique informatique recherche opérationnelle Informatique théorique	article
+2	W202430707	1977		Denotational Models for Parallel Programs with Indeterminate Operators.		article
+3	W567348377	1986		Demand-driven evaluation on dataflow machines	Massachusetts Institute of Technology eBooks	book
+4	W1492575033	1990		Case studies in systematic software development	Prentice-Hall, Inc eBooks	book
+5	W1514119099	1993	https://doi.org/10.1007/978-1-4612-0317-9	Categorical Combinators, Sequential Algorithms, and Functional Programming	Birkhäuser Boston eBooks	book
+6	W1520050772	1982		The equivalence of an operational and a denotational semantics for pure dataflow	Warwick Research Archive Portal (University of Warwick)	dissertation
+7	W1521505629	1986	https://doi.org/10.1016/0378-4754(86)90097-2	The foundations of program verification.	Mathematics and Computers in Simulation	book-review
+8	W1540927034	1974		Proof-techniques for recursive programs.		article
+9	W1572417472	1977		Some relationships between asynchronous interpreters of a dataflow language	eScholarship (California Digital Library)	article
+10	W1578621270	1987	https://doi.org/10.1007/3-540-17654-3_19	A formal semantics for a DataFlow Machine — Using VDM	Lecture notes in computer science	conference-paper
+11	W1592287058	1983	https://doi.org/10.1016/0096-0551(83)90036-x	Denotational semantics: The scott-strachey approach to programming language theory	Computer Languages	article
+12	W1597755753	1974		The Semantics of a Simple Language for Parallel Programming.	IFIP Congress	article
+13	W2009935272	1984	https://doi.org/10.1016/0167-6423(84)90016-9	A systematic approach to language constructs for concurrent programs	Science of Computer Programming	article
+14	W2063068243	1979	https://doi.org/10.1002/spe.4380090105	A new implementation technique for applicative languages	Software Practice and Experience	article
+15	W2092844221	1978	https://doi.org/10.1145/512760.512783	A straightforward denotational semantics for non-determinate data flow programs		conference-paper
+16	W2148950569	1975	https://doi.org/10.1007/3-540-07389-2_226	On representation of sequential and parallel functions	Lecture notes in computer science	conference-paper
+17	W2151402235	1977		A Theory of Programming Language Semantics		article
+18	W2918106430	1986	https://doi.org/10.1145/5001.5003	Efficient demand-driven evaluation. Part 2	ACM Transactions on Programming Languages and Systems	article
+19	W4296415990	1987	https://doi.org/10.1007/978-3-322-96753-4	The Foundations of Program Verification	Plenum series in computer science	book

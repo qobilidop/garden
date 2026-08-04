@@ -1,0 +1,90 @@
+# Decision trees and decision diagrams as the generic baseline
+
+## The tree shape is already established
+
+For a deterministic decision tree, one input follows one root-to-leaf path.
+That path is exactly a finite input-relative map from the encountered test
+occurrences to their outcomes. Its conjunction of branch predicates is a
+guard, guards of distinct reachable leaves are disjoint, and the leaf stores a
+result or residual computation. Tests below an untaken branch are absent from
+the path.
+
+This is the same abstract *shape* as a sparse selection observation with a
+guard and residual. Calling the record sparse, input-relative, exhaustive, or
+guarded therefore cannot establish novelty. The graph setting changes what
+the test identities mean and how the observer is derived, not generic
+representability by a decision tree.
+
+## Sharing and reduction
+
+Bryant's ordered reduced function graphs merge isomorphic residual functions
+and remove a test whose two successors denote the same function. Bahar et
+al.'s ADDs generalize terminals to finite algebraic carriers. For a fixed
+variable order and exact terminal equality, reduction gives a canonical shared
+representation of the compiled function.
+
+This exposes two different notions of omission:
+
+- a decision-diagram variable is skipped when the *compiled terminal
+  function* is independent of that variable in the current residual context;
+- a graph selection site is unobserved when it is outside the input-indexed
+  enabled closure of the requested roots.
+
+The first is extensional reduction. The second is an intensional observation
+policy. They coincide only after the latter has been made part of the compiled
+terminal value.
+
+## Exact reduction
+
+Let
+
+\[
+  \overline T_G(-,R):\mathcal X_A\to
+  \prod_{q\in Q}(\Omega_q\cup\{\bot_q\})
+\]
+
+be the totalized observation function. For finite encoded inputs, compile
+\(\overline T_G\) as an MTBDD or ADD. Each reachable terminal value is one
+feasible observation and its terminal preimage is exactly the observation
+fiber. If the desired artifact also contains an ordinary result, compile the
+pair
+
+\[
+  x\mapsto(\overline T_G(x,R),\operatorname{val}_x|_R),
+\]
+
+or use a carrier of observation/residual identifiers. Root-to-terminal cubes
+then represent guards, possibly in a shared or fragmented form.
+
+This is a generic solution in the finite-domain setting. It may construct a
+representation finer than the flat list of fibers, and extracting one formula
+per terminal can require a disjunction of many cubes. Conversely, diagram
+sharing can be exponentially more compact than serializing every guard.
+
+## Complexity consequence
+
+Reduced decision diagrams remain exponential in the worst case and are highly
+sensitive to variable order; even integer-multiplier outputs have exponential
+ordered BDD size for every order. A small number of observation fibers does not
+alone imply a small diagram when the fiber characteristic functions are hard,
+and a small diagram does not imply small flat guard serialization.
+
+Any graph-specific algorithmic contribution must therefore compare at least:
+
+- source-graph and encoded-input size;
+- compiled diagram size and variable order;
+- number of observation terminals;
+- number and total size of root-to-terminal cubes;
+- size of flat exact guards and residuals; and
+- reuse under graph composition.
+
+## Surviving research question
+
+The graph semantics still offers a useful specialization: site identities are
+context-qualified graph occurrences, unselected case subgraphs are
+structurally absent even when equal-valued, and guards have the local
+conjunction form induced by observed outcomes. The open question is whether a
+structure-directed construction or compositional summary theorem yields a
+provable representation or reuse advantage over generic decision-tree/ADD and
+projected-AllSMT compilation. Without such a result, the decision-structure
+view belongs in the survey synthesis rather than the contribution list.

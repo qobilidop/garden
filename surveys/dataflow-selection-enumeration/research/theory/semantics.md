@@ -85,6 +85,76 @@ instrumentation deliberately distinguishes observed equal-valued alternatives.
 
 ## Basic properties
 
+### Least demanded partial valuation
+
+The enabled closure admits a finite graph-theoretic presentation of the
+classical least demanded computation. For each node (v), extend its value
+domain to the flat domain
+
+\[
+  \widehat{\mathcal D}_v=\mathcal D_v\cup\{\bot_v\},
+\]
+
+where \(\bot_v\sqsubseteq d\) for every ordinary value (d), and distinct
+ordinary values are incomparable. For fixed input (x), a partial valuation
+\(\nu\) is **(x)-consistent** when
+
+\[
+  \nu(v)\in\{\bot_v,\operatorname{val}_x(v)\}
+\]
+
+for every node. It is **dependency-closed** when every defined node has the
+dependencies required by its concrete result also defined:
+
+- a defined ordinary node has every operand defined;
+- a defined selection site (q) has its selector and every case root in
+  (C_q(\omega_x(q))) defined; and
+- an input node has no predecessor obligation.
+
+It is **(R)-complete** when every requested root is defined. Order partial
+valuations pointwise by the flat-domain order.
+
+Define
+
+\[
+  \nu^*_{x,R}(v)=
+  \begin{cases}
+    \operatorname{val}_x(v) & v\in D_G(x,R),\\
+    \bot_v & v\notin D_G(x,R).
+  \end{cases}
+\]
+
+**Least-demanded-valuation theorem.** The valuation \(\nu^*_{x,R}\) is the
+unique least (x)-consistent, dependency-closed, (R)-complete valuation, and
+
+\[
+  \operatorname{supp}(\nu^*_{x,R})=D_G(x,R).
+\]
+
+*Proof.* The enabled closure contains (R) and is closed under exactly the
+dependency obligations above, so \(\nu^*_{x,R}\) is admissible. Conversely, the
+support of any admissible valuation contains (R) and is closed under every
+enabled dependency. Minimality of graph reachability gives
+\(D_G(x,R)\subseteq\operatorname{supp}(\nu)\). (x)-consistency fixes the
+ordinary value at every defined node, hence
+\(\nu^*_{x,R}\sqsubseteq\nu\). Antisymmetry gives uniqueness.
+
+Projecting defined selection sites from the least valuation recovers the
+selection observation:
+
+\[
+  T_G(x,R)=\pi_{\mathrm{sel}}(\nu^*_{x,R}).
+\]
+
+This theorem is a finite acyclic specialization of established fixed-input
+demand-driven dataflow semantics, not a new least-computation principle.
+Pingali and Arvind provide reverse-demand graph transformations, while Avron
+and Sasson characterize least legal demanded valuations under stability. The
+specialization above fixes a strict dependency interpretation for ordinary
+nodes and an outcome-indexed least dependency set for selections. The object
+studied by the enumeration theory is instead the image and inverse-image
+fibers of \(\pi_{\mathrm{sel}}(\nu^*_{x,R})\) as (x) varies.
+
 ### Determinacy and finiteness
 
 For every \(x\) and \(R\), \(D_G(x,R)\) and \(T_G(x,R)\) are unique. The number

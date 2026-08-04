@@ -65,6 +65,68 @@ proof** when the cited framework does not cover an essential feature of this
 graph semantics. Requiring a new proof does not by itself make the result
 deep or publishably novel.
 
+## Reduction to decision trees and ADDs
+
+A deterministic decision tree provides an even more elementary reduction than
+projected enumeration. Label each internal node by an input predicate and each
+branch by its outcome. For one input, the root-to-leaf path is a partial map
+from encountered test occurrences to outcomes. Its predicate conjunction is a
+guard; reachable leaf guards are pairwise disjoint and exhaustive; and the
+leaf can store a result or residual. Tests in untaken subtrees are absent from
+the record. Thus the sparse input-relative output shape itself is classical.
+
+For the exact graph observer, compile the finite function
+
+\[
+  x\mapsto\overline T_G(x,R)
+\]
+
+as an MTBDD or ADD. Every terminal value is a feasible totalized observation,
+and its preimage is exactly the corresponding fiber. Compiling
+\((\overline T_G(x,R),\operatorname{val}_x|_R)\) also attaches ordinary
+results. Bryant's reduction shares equal residual Boolean functions; ADDs
+permit a finite non-Boolean terminal carrier. Neither framework needs a new
+semantic theorem once the observer is encoded as an ordinary function.
+
+This reduction does not erase the conceptual distinction between skipped
+diagram variables and unobserved graph sites. The former are absent because
+the compiled terminal function is extensionally independent of them in a
+residual context; the latter are assigned an explicit unobserved sentinel by
+the graph observer. But after totalization that distinction is data inside an
+ordinary finite function, not a representability barrier.
+
+What remains untransferred is a graph-structural construction that avoids
+generic input-variable compilation, the conjunction-only local fiber theorem,
+contextual graph identities, and reusable graph composition. Those require
+proofs, but no novelty follows unless they yield a nontrivial semantic,
+representation, or complexity separation. Decision diagrams can be
+exponential and order-sensitive; flat fiber guards can also be exponentially
+larger than a shared diagram.
+
+## Relationship to least demanded dataflow evaluation
+
+Pingali and Arvind already transform stream dataflow graphs with reverse
+demand edges and prove correctness, liveness, and parsimony under composition.
+Avron and Sasson define the least legal output-complete valuation for fixed
+inputs and output-position demands and characterize its uniform existence by
+stability. Consequently the fixed-input enabled computation is not a new
+semantic target.
+
+For the finite acyclic one-cell-stream specialization, define
+\(\kappa_{G,R}(x)\) as that least legal valuation. The intended bridge is
+
+\[
+  T_G(x,R)=\pi_{\mathrm{sel}}(\kappa_{G,R}(x)).
+\]
+
+The support of \(\kappa_{G,R}(x)\) should coincide with the enabled closure,
+but this is a specialization proof obligation rather than a cited theorem.
+The only surviving change is the outer quantification: range over symbolic
+inputs, enumerate the image of the projection, and construct its exact
+inverse-image fibers. No inherited dataflow theorem supplies that enumeration,
+but it prevents any claim to novelty for demand, backwards propagation,
+critical inputs, or the least demanded computation.
+
 ## Reduction to memoized pull-tabbing
 
 The representation predates memoized pull-tabbing and pull-tabbing itself:

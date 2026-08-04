@@ -38,7 +38,13 @@ already supplies:
   every feasible partial state; and
 - exact input-equivalence-class enumeration over infinite domains, including
   satisfiable Boolean-atom construction and minimization to coarsest finite
-  observer partitions.
+  observer partitions;
+- ordinary decision trees whose input-relative root-to-leaf paths already pair
+  encountered tests with a disjoint guard and leaf result, plus reduced
+  BDD/ADD sharing and canonicalization for fixed orders; and
+- least demanded computations for fixed stream-dataflow inputs and output
+  demands, including compositional reverse-demand transformations and a
+  stability characterization.
 
 These ingredients combine through a straightforward observation/outcome
 instrumentation of a finite pure graph.
@@ -79,15 +85,21 @@ is new nor that PET already enumerates the same semantic object.
 
 Exact neural-region enumeration adds a fourth boundary. When every activation
 unit is represented as a selection and the network output is requested, every
-site is observed and a dense activation region is exactly one observation
-fiber. Rada and Černý already prove the incremental feasibility-pruned
-hyperplane recurrence OutputP; Serra et al. exactly enumerate feasible ReLU
-patterns; RPM additionally emits the polyhedral guard and affine residual; and
-later work extracts richer face complexes and parallelizes layerwise
-enumeration. The surviving distinction is a sparse observation whose domain
-varies because outer selections structurally exclude case subgraphs. A sign
-omitted because it is logically entailed, or set to zero because a cell lies on
-a boundary, is not an unobserved selection site.
+site is observed and a dense activation cell is exactly one observation fiber.
+Classical arrangement algorithms precede Rada and Černý's feasibility-pruned
+OutputP recurrence; Serra et al. exactly enumerate feasible ReLU patterns;
+Tran's star sets and Robinson's explicit piecewise-affine conversion already
+retain exact guards with affine images; RPM adds adjacency-oriented traversal;
+and later work extracts richer face complexes, handles broader CPWL
+architectures, or parallelizes layerwise enumeration. Wang further shows why
+activation cells must be distinguished from maximal connected affine regions.
+
+The surviving distinction cannot be merely a sparse map whose domain varies:
+decision-tree paths already have that shape. It is the requested-root-relative
+observer over arbitrary typed shared dataflow with context-qualified site
+identity, exact inverse fibers, and residuals. A sign omitted because it is
+logically entailed, or set to zero because a cell lies on a boundary, is still
+not an unobserved selection site.
 
 Demand-driven bounded testing adds a fifth boundary. Lindblad already emits
 partial constructor terms whose uninstantiated metavariables denote every total
@@ -114,6 +126,30 @@ these exact classes. The only surviving opportunity is a specialized
 graph-intensional construction and compact local guard/residual theorem; the
 equivalence partition itself is established.
 
+Decision structures add a seventh generic boundary. A deterministic
+root-to-leaf path is already a sparse map from the tests encountered for one
+input to their outcomes; the path conjunction is a guard and the leaf is a
+result or residual. Compiling the totalized selection observation into an ADD
+makes terminals correspond to observations and terminal preimages to fibers.
+Reduction may skip an input variable because the compiled observation is
+extensionally independent of it, which is different from graph-structural
+non-observation but becomes an ordinary function property after the
+unobserved sentinel is instrumented. Thus sparse path shape, disjoint leaf
+regions, and residual labels are not separators. Only a demonstrably better
+graph-specific construction, local guard form, or composition result could
+survive this baseline.
+
+Classical demand-driven dataflow adds an eighth boundary. Pingali and Arvind
+already propagate output demands backwards through a stream graph and prove
+their correctness and parsimony properties compositionally. Avron and Sasson
+define the least legal output-complete valuation and characterize its uniform
+existence by stability. Our enabled closure is at most a finite acyclic
+specialization of that fixed-input object. The remaining change is to range
+over symbolic inputs, project each least computation to selected site/outcome
+events, and enumerate the exact inverse-image fibers. That change in
+quantification must be explicit; “demand-sensitive evaluation” alone is
+established.
+
 ## Route decision
 
 - The manuscript is a survey with a unifying formal synthesis.
@@ -122,7 +158,8 @@ equivalence partition itself is established.
   reduction as a new symbolic-execution method.
 - The survey's central negative result now has three independent generic
   reductions—projected AllSMT, fixed-alphabet Boolean atoms, and IOSTS input
-  equivalence classes—plus direct demand-refinement predecessors in Korat,
-  Lindblad's generator, and Lazy SmallCheck.
+  equivalence classes—plus ordinary decision-tree/ADD compilation and direct
+  demand predecessors in stream dataflow, Korat, Lindblad's generator, and
+  Lazy SmallCheck.
 - A future CAV tool paper remains possible only after direct baseline
   experiments show a validation or scalability frontier.

@@ -34,7 +34,10 @@ proof obligations, and evidence.
   for lazy functional-logic search. Lazy SmallCheck already refines the one
   partial-input hole demanded by a Boolean observer. Krafczyk and Peleska
   enumerate exact and then coarsest input-equivalence partitions, while Huang
-  et al. enumerate all satisfiable atoms of a finite observer alphabet.
+  et al. enumerate all satisfiable atoms of a finite observer alphabet. A
+  decision tree already represents each input by its encountered test/outcome
+  path with a disjoint leaf guard and result, and ADD compilation represents
+  the complete finite observation function with shared residual subfunctions.
 - **Reduction:** Introduce one finite-domain variable per contextual selection
   occurrence with values `unobserved` or an outcome. Constrain it by a
   backward-reachability encoding and ordinary graph equations, then project onto
@@ -147,11 +150,14 @@ proof obligations, and evidence.
   polyhedral regions are exactly the resulting observation image and fibers.
 - **Prior frontier:** Rada and Černý prove complete duplicate-free OutputP
   hyperplane-cell enumeration; Serra et al. enumerate feasible ReLU patterns;
-  RPM emits guards and affine residuals; Masden and Berzins recover richer cell
-  complexes; Drammis et al. analyze parallel layerwise enumeration.
-- **Consequence:** Novelty can rest only on the input-dependent *domain* of a
-  sparse enabled-closure observation and its graph/contextual composition, not
-  exact regime enumeration or guard-plus-residual output.
+  Tran's stars and Robinson's explicit PWA conversion emit exact guards with
+  affine images before RPM's adjacency walk; Masden and Berzins recover richer
+  cell complexes; Wang merges activation cells into maximal equal-affine
+  regions; and Drammis et al. analyze parallel layerwise enumeration.
+- **Consequence:** A variable sparse domain is also anticipated by ordinary
+  decision-tree paths. Novelty can rest only on the requested-root-relative
+  typed shared-graph observer and a nontrivial construction/composition result,
+  not exact regime enumeration, guard-plus-residual output, or dynamic sparsity.
 
 ## S05 — Selection observations are an observer-equivalence partition
 
@@ -183,3 +189,34 @@ proof obligations, and evidence.
   would need one canonical record per graph observation, exact union guards,
   residual symbolic values, and an analysis beyond the prior partial-state
   search results.
+
+## S07 — Decision paths and compiled observation functions subsume the output shape
+
+- **Status:** survey synthesis; broad novelty defeated
+- **Statement:** A deterministic root-to-leaf path is an input-relative partial
+  map from encountered tests to outcomes, its branch conjunction is a disjoint
+  leaf guard, and its leaf carries a result. Totalizing graph-site
+  non-observation turns the proposed observer into an ordinary finite function
+  compilable as an MTBDD or ADD.
+- **Prior frontier:** Bryant proves canonicity of reduced ordered Boolean
+  function graphs for a fixed order; Bahar et al. extend the terminal carrier
+  to finite algebraic values. Both retain exponential worst cases.
+- **Consequence:** Sparse encountered-test maps, disjoint guards, residual
+  labels, and shared compilation are established. A contribution requires a
+  graph-specific construction, composition, or representation theorem beyond
+  generic decision structures.
+
+## S08 — Fixed-input least demanded computation is established
+
+- **Status:** survey synthesis; terminology and semantic novelty defeated
+- **Statement:** For fixed stream inputs and output-position demands, classical
+  dataflow semantics defines or implements a least sufficient computation
+  under sequentiality/stability assumptions.
+- **Prior frontier:** Pingali and Arvind give a compositional reverse-demand
+  transformation; Avron and Sasson characterize uniform existence of least
+  legal demanded valuations by stability; Part 2 and Vin et al. develop global
+  and operational demand propagation.
+- **Consequence:** The only surviving quantification is over symbolic inputs:
+  enumerate the range of the least computation's selection projection and the
+  exact inverse image of each observation. “Demand-sensitive evaluation” is
+  not itself a contribution.

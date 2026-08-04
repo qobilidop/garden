@@ -8,8 +8,8 @@
 ## Why it matters
 
 An algebraic decision diagram is a canonical shared representation of a finite
-function. It can represent active-selection fibers exactly, but only when the
-terminal carrier is the complete selection observation rather than the
+function. It can represent selection-observation fibers exactly, but only when
+the terminal carrier is the complete selection observation rather than the
 ordinary program output.
 
 ## Program and semantic model

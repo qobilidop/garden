@@ -112,13 +112,23 @@ time and polynomial working space, where \(D\) is input dimension and
 size. This is an OutputP result for that restricted representation.
 
 Dense ReLU networks refine the arrangement layerwise. Existing algorithms
-enumerate feasible activation patterns by MILP, walk adjacent polyhedral
-cells while emitting affine residuals, extract the entire face complex, or
-parallelize bounded layerwise enumeration. Their bounds depend on the number
-of dense activation cells, network width/depth, LP or MIP cost, bounded-domain
-assumptions, and often genericity. Those results do not transfer unchanged to
-finite bitvector graphs, but they do establish the standard output-sensitive
-baseline for real all-sites-observed instances.
+enumerate feasible activation patterns by MILP, propagate exact stars that
+retain input predicates and affine images, emit explicit region/map pairs,
+walk adjacent polyhedral cells, extract the entire face complex, or parallelize
+bounded layerwise enumeration. Their bounds depend on the number of dense
+activation cells, network width/depth, LP or MIP cost, bounded-domain
+assumptions, and often genericity. Tran's exact star procedure exposes the
+worst-case (2^N) LP-feasibility split directly; Xu et al. likewise state
+exponential time and space for exact local-polytope traversal. Those results do
+not transfer unchanged to finite bitvector graphs, but they establish the
+standard exact baseline for real all-sites-observed instances.
+
+The output count also depends on the chosen quotient. Dense activation
+patterns can split two adjacent cells that realize the same affine function.
+Wang's maximal-region construction merges connected equal-map cells; our
+selection observer instead preserves observed equal-valued outcomes. Thus an
+activation-cell count, a maximal-affine-region count, and (K) are not
+interchangeable without a nondegeneracy or observer-equivalence assumption.
 
 The graph problem's additional parameter is not merely \(Q\): each record has
 an input-dependent domain of at most \(L\) observed sites, while unselected
@@ -164,6 +174,34 @@ These baselines sharpen the comparison required of any structure-directed
 algorithm. Reporting \(K+1\) model queries is insufficient: the paper must
 also show whether it avoids the fixed-alphabet atom space, avoids post hoc
 unions, or produces asymptotically smaller guards on a stated graph family.
+
+## Decision-tree and decision-diagram baseline
+
+A deterministic decision tree already partitions its input domain by
+root-to-leaf paths. Each path records only the tests encountered for that
+input, its branch conjunction is a disjoint leaf guard, and the leaf can store
+an observation/result identifier. A full tree over \(n\) Boolean inputs has at
+most \(2^{n+1}-1\) nodes, while shorter leaves omit suffix tests.
+
+For the totalized observation function \(\overline T_G\), an MTBDD or ADD can
+merge equal residual functions and remove tests with equal successors. Let
+\(D_Z\) be the number of nodes in the compiled diagram, \(P_Z\) the number of
+root-to-terminal paths, and \(C_Z\) the total size of cubes emitted from those
+paths. None is bounded polynomially by \(K\) in general:
+
+- \(D_Z\) can be exponential in the encoded input width and is variable-order
+  sensitive, even when its terminals use a finite carrier;
+- one observation terminal may have many incoming paths, so \(P_Z\) can exceed
+  \(K\); and
+- flattening a terminal preimage into one exact guard may require a disjunction
+  whose size is \(\Theta(C_Z)\), while retaining the diagram shares it.
+
+Conversely, a compiled diagram may be much smaller than a flat list of
+serialized guards. Comparisons must declare whether compilation time and
+\(D_Z\) are charged, whether the output is the shared diagram or \(K\) flat
+records, and whether residual values are represented extensionally or as
+symbolic DAGs. The number of fibers alone is not an adequate representation
+bound.
 
 ## Full-fiber blocking
 

@@ -1,0 +1,39 @@
+rank	openalex_id	year	doi	title	venue	type
+1	W2104922219	1993	https://doi.org/10.1109/icassp.1993.319147	Scheduling dynamic dataflow graphs with bounded memory using the token flow model	IEEE International Conference on Acoustics Speech and Signal Processing	conference-paper
+2	W2098903349	2011	https://doi.org/10.1145/1993316.1993501	The tao of parallelism in algorithms	ACM SIGPLAN Notices	article
+3	W2121817468	1996		Bounded scheduling of process networks		article
+4	W4232836277	2011	https://doi.org/10.1145/1993498.1993501	The tao of parallelism in algorithms		conference-paper
+5	W2168964723	1991	https://doi.org/10.1109/71.89067	Consistency in dataflow graphs	IEEE Transactions on Parallel and Distributed Systems	article
+6	W1968942384	1991	https://doi.org/10.1145/114005.102806	Automatic transformation of series expressions into loops	ACM Transactions on Programming Languages and Systems	article
+7	W2011737674	2010	https://doi.org/10.1145/1878921.1878924	Erbium		conference-paper
+8	W2913417348	2019	https://doi.org/10.1145/3274280	Compositional Dataflow Circuits	ACM Transactions on Embedded Computing Systems	article
+9	W2021059028	1996	https://doi.org/10.1145/232627.232645	First-class synchronization barriers		conference-paper
+10	W2061915850	1995	https://doi.org/10.1145/202529.202536	Sparse functional stores for imperative programs		conference-paper
+11	W2161091685	2002	https://doi.org/10.1109/asap.1991.238909	Consistency in dataflow graphs		conference-paper
+12	W1558796054	1996	https://doi.org/10.1007/bfb0014210	Piecewise execution of nested data-parallel programs	Lecture notes in computer science	conference-paper
+13	W2918106430	1986	https://doi.org/10.1145/5001.5003	Efficient demand-driven evaluation. Part 2	ACM Transactions on Programming Languages and Systems	article
+14	W1495942054	2011		THE TOKEN FLOW MODEL		article
+15	W2064344813	2014	https://doi.org/10.1109/icassp.2014.6854554	A methodology for optimizing buffer sizes of dynamic dataflow fpgas implementations		conference-paper
+16	W1495397611	1993		An effective speculative evaluation technique for parallel supercombinator graph reduction		article
+17	W2104135003	2005	https://doi.org/10.1109/cnsr.2005.9	A General Architecture for Demand Migration in a Demand-Driven Execution Engine in a Heterogeneous and Distributed Environment		conference-paper
+18	W2112124182	1988	https://doi.org/10.1145/55364.55419	Lazy evaluation and the logic variable		conference-paper
+19	W2095171549	2010	https://doi.org/10.1145/1787275.1787312	ERBIUM		conference-paper
+20	W1964392304	2012	https://doi.org/10.1109/hpcc.2012.205	Efficient Handling of Arrays in Dataflow Process Networks		conference-paper
+21	W1986026587	2014	https://doi.org/10.1109/pdp.2014.98	Reducing the Communication of Message-Passing Systems Synthesized from Synchronous Programs		conference-paper
+22	W2109412320	1995		Realtime Signal Processing Data∞ow, Visual, and Functional Programming		dissertation
+23	W2133575940	2003	https://doi.org/10.1109/lics.1989.39171	Nets and data flow interpreters		conference-paper
+24	W164669441	2005	https://doi.org/10.1007/bfb0032040	Communication among relations	Lecture notes in computer science	conference-paper
+25	W1630607878	1994		Compiling lenient languages for parallel asynchronous execution		article
+26	W1550899421	1988		Log(F): an optimal combination of logic programming, rewriting, and lazy evaluation		article
+27	W2069811608	1988	https://doi.org/10.1109/12.2246	Demand-driven interpretation of FP programs on a data-flow multiprocessor	IEEE Transactions on Computers	article
+28	W2051064088	1991	https://doi.org/10.1016/0304-3975(91)90305-l	Connectedness and synchronization	Theoretical Computer Science	article
+29	W174143518	2006		FOOD: An Intermediate Model for Automated Refactoring	New Trends in Software Methodologies, Tools and Techniques	article
+30	W1818967881	1988	https://doi.org/10.1007/3-540-18991-2_13	Tools for performance evaluation of parallel machines	Lecture notes in computer science	conference-paper
+31	W1971926433	1991	https://doi.org/10.1007/bf01379317	An attribute grammar approach to compiler optimization of intra-module interprocess communication	International Journal of Parallel Programming	article
+32	W2014611452	1990	https://doi.org/10.1016/0743-7315(90)90036-o	Efficient data-driven evaluation: Theory and implementation	Journal of Parallel and Distributed Computing	article
+33	W1502538032	2004	https://doi.org/10.1007/978-3-540-24844-6_129	FOOD: An Agent-Oriented Dataflow Model	Lecture notes in computer science	conference-paper
+34	W2049010228	1990	https://doi.org/10.1145/97444.97684	Architectural support for the efficient data-driven evaluation scheme		conference-paper
+35	W3161898275	1995	https://doi.org/10.1145/202530.202536	Sparse functional stores for imperative programs	ACM SIGPLAN Notices	article
+36	W132072164	1993	https://doi.org/10.2172/10131344	Varying execution discipline to increase performance		report
+37	W1493507372	1988	https://doi.org/10.1002/scj.4690190801	Optimization algorithm for parallel demand—driven computation of functional programs	Systems and Computers in Japan	article
+38	W4255264418	1996	https://doi.org/10.1145/232629.232645	First-class synchronization barriers	ACM SIGPLAN Notices	article

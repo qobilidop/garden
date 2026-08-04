@@ -5,6 +5,7 @@ different notions occur in the closest work.
 
 | Tradition | Demand or relevance is | Returned or retained object | Not equivalent to |
 |---|---|---|---|
+| Pingali--Arvind and Avron--Sasson | requested output-token positions and the least legal computation sufficient to define them for fixed stream inputs | reverse demand streams or the least output-complete legal valuation | enumeration of projected selection observations as inputs vary |
 | Anand et al. | usefulness of unexplored function paths for reaching one target location | partial summaries, calling contexts, and a target witness | backward value dependence or all-observation enumeration |
 | Antoy et al., Echahed, and the Fair Scheme | a redex that every constructor-normalizing continuation must eventually reduce | narrowing derivation, result value, and a computation-local choice fingerprint | one input's selected graph slice or static site map |
 | Gligoric et al. | a suspended finite value reaching a non-copy use that requires a concrete visible value | concrete execution state with shared forced values and remaining suspensions | semantic relevance of a selector outcome or backward demand from requested roots |
@@ -24,6 +25,45 @@ This definition resembles backward demand analysis but differs in purpose. It
 does not determine a lazy runtime schedule, find a least partial input, search
 for one target, or preserve a general causal history. It specifies an
 intensional observer whose inverse images partition all caller inputs.
+
+## Fixed-input foundation and changed quantification
+
+The classical stream-dataflow lineage is more than a terminological neighbor.
+Pingali and Arvind transform each data edge with a reverse demand edge and
+prove correctness, liveness, and parsimony compositionally. Avron and Sasson
+define the (D)-driven evaluation as the least legal valuation satisfying a
+fixed output-position demand and prove that such least computations exist
+uniformly exactly for stable primitive interpretations. Their
+`parallel-or` counterexample also shows why a least computation is not
+automatic in a more general language.
+
+For a finite acyclic graph encoded as one-cell streams, let
+
+\[
+  \kappa_{G,R}(x)
+\]
+
+denote the least legal valuation for concrete input (x) and requested roots
+(R), when the specialization assumptions hold. The selection observation can
+then be presented as a projection
+
+\[
+  T_G(x,R)=\pi_{\mathrm{sel}}(\kappa_{G,R}(x)).
+\]
+
+The established work fixes (x) and computes (kappa_{G,R}(x)). Our survey
+object changes the quantification: it studies the finite range of this
+projection as (x) varies symbolically and the exact inverse image of each
+range value. The equality between enabled closure and the support of the least
+legal valuation must be proved as a specialization theorem; it is not stated
+by the prior papers.
+
+Pingali and Arvind Part 2 and Vin, Berman, and Mattson strengthen the
+operational side with global graph transformations and backwards critical-node
+propagation. They still operate one fixed execution at a time and give no
+observation-fiber enumeration. Conversely, this surviving separation does not
+make reverse demand propagation, least demanded computation, critical inputs,
+or demand-driven evaluation novel.
 
 ## Consequence for positioning
 

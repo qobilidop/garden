@@ -10,8 +10,10 @@
 
 Reachable Polyhedral Marching (RPM) enumerates every feasible ReLU activation
 pattern together with its exact input polyhedron and affine output map. It is
-the strongest pre-Balestriero analogue of an `(observation, guard, residual)`
-enumerator.
+the strongest adjacency-oriented pre-Balestriero analogue of an
+`(observation, guard, residual)` enumerator, but it is not the earliest exact
+guard-plus-affine method: Tran's stars, Robinson's explicit piecewise-affine
+conversion, and other reachability constructions precede it.
 
 ## Mathematical object
 
@@ -66,8 +68,10 @@ case lies outside the requested result. RPM also assumes continuous real ReLU
 chains rather than arbitrary finite shared graphs, typed bitvectors and
 aggregates, contextual sites, and heterogeneous selection operators.
 
-The nontrivial separator is therefore sparse, requested-root-relative site
-domain—not guard-plus-residual enumeration itself.
+Dynamic sparsity alone is also established by decision-tree paths. The
+remaining separator is the requested-root-relative typed shared-graph observer
+with contextual site identity and exact inverse fibers—not
+guard-plus-residual enumeration or a varying path domain by itself.
 
 ## Evidence locations
 
@@ -76,4 +80,3 @@ domain—not guard-plus-residual enumeration itself.
 - Algorithm 1, p. 4: neighboring activation pattern.
 - Algorithm 2 and completeness argument, pp. 4--5: exhaustive adjacency walk.
 - Sections V--VI: forward/backward reachability applications and evaluation.
-
