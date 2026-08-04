@@ -46,7 +46,7 @@ specification is produced per constructed path (Section 9, 25:24).
 
 ## Relationship to our hypothesis
 
-Active selections could be exported as ghost postcondition resources, but
+Observed selections could be exported as ghost postcondition resources, but
 ordinary specifications intentionally hide internal paths. A boundary-demand
 mask controls which ghost observations cross a pure function boundary; this is
 not heap framing. The work establishes reusable symbolic specifications, not
@@ -57,4 +57,3 @@ enumeration of sparse structural observations.
 - Sections 4.1 and 5.1, 25:11–25:14: states and specification interface.
 - Theorems 1, 3, and 6, 25:11–25:20: exactness and interface results.
 - Theorem 8 and Section 9, 25:23–25:24: synthesis and evaluation.
-

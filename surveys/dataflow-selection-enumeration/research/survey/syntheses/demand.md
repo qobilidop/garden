@@ -24,10 +24,11 @@ intensional observer whose inverse images partition all caller inputs.
 
 ## Consequence for positioning
 
-The survey should describe prior work with each source's own terminology and
-use “active in an observation” only as a locally defined adjective. The
-cross-literature result is not that demand is new, but that superficially
-similar omission mechanisms preserve different observers:
+The survey should describe prior work with each source's own terminology. For
+the synthesis, say that a site is **observed for** \((x,R)\) exactly when it is
+in \(D_G(x,R)\); do not use “active selection” as if it were inherited
+terminology. The cross-literature result is not that demand is new, but that
+superficially similar omission mechanisms preserve different observers:
 
 - unvisited because structurally outside the enabled closure;
 - unneeded for every normalizing continuation;

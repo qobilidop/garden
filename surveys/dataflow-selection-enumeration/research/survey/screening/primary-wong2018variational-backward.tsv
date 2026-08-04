@@ -1,0 +1,61 @@
+rank	source_id	year	doi	title	venue	type
+1	citation-1	2012		Multiple Facets for Dynamic Information Flow	Proceedings of the ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages (POPL)	proceedings-article
+2	citation-2	2013		Faceted Execution of Policy-Agnostic Programs	Proceedings of the ACM SIGPLAN Workshop on Programming Languages and Analysis for Security (PLAS)	proceedings-article
+3	citation-3	2018		A Survey of Symbolic Execution Techniques	ACM Computing Surveys (CSUR)	article
+4	citation-4	2012		Secure Multi-Execution through Static Program Transformation	Formal Techniques for Distributed Systems	proceedings-article
+5	citation-5	2014		Phosphor: Illuminating Dynamic Data Flow in Commodity JVMs	Proceedings of the ACM International Conference on Object Oriented Programming Systems Languages and Applications (OOPSLA)	proceedings-article
+6	citation-6	2018		CROCHET: Checkpoint and Rollback via Lightweight Heap Traversal on Stock JVMs	Proceedings of the European Conference on Object-Oriented Programming (ECOOP)	proceedings-article
+7	citation-7	2013		SPLLIFT: Statically Analyzing Software Product Lines in Minutes Instead of Years	Proceedings of the ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI)	proceedings-article
+8	citation-8	2011		Proactive Detection of Collaboration Conflicts	Proceedings of the European Software Engineering Conference and the ACM SIGSOFT Symposium on the Foundations of Software Engineering (ESEC/FSE)	proceedings-article
+9	citation-9	2003		Feature Interaction: A Critical Review and Considered Forecast	Computer Networks	article
+10	citation-10	2008		Delta Execution for Efficient State-Space Exploration of Object-Oriented Programs	IEEE Transactions on Software Engineering (TSE)	article
+11	citation-11	2012		FlowFox: A Web Browser with Flexible and Precise Information Flow Control	Proceedings of the ACM Conference on Computer and Communications Security (CCS)	proceedings-article
+12	citation-12	2010		Noninterference Through Secure Multi-Execution	Proceedings of the IEEE Symposium on Security and Privacy (SP)	proceedings-article
+13	citation-13	2017		Efficient Family-Based Model Checking via Variability Abstractions	International Journal on Software Tools for Technology Transfer (STTT)	article
+14	citation-14	2011		Software Product Line Testing - A Systematic Mapping Study	Information and Software Technology	article
+15	citation-15	2013		Variation Programming with the Choice Calculus	Generative and Transformational Techniques in Software Engineering IV (GTTSE)	proceedings-article
+16	citation-16	2007		Statistically Rigorous Java Performance Evaluation	Proceedings of the ACM SIGPLAN Conference on Object-Oriented Programming Systems and Applications (OOPSLA)	proceedings-article
+17	citation-17	2000		Model Checking JAVA Programs using JAVA PathFinder	International Journal on Software Tools for Technology Transfer (STTT)	article
+18	citation-18	2013		Safe Software Updates via Multi-Version Execution	Proceedings of the International Conference on Software Engineering (ICSE)	proceedings-article
+19	citation-19	2011		An Analysis and Survey of the Development of Mutation Testing	IEEE Transactions on Software Engineering (TSE)	article
+20	citation-20	2017		Differential Testing for Variational Analyses: Experience from Developing KConfigReader	Technical Report	report
+21	citation-21	2012		Toward Variability-Aware Testing	Proceedings of the International Workshop on Feature-Oriented Software Development (FOSD)	proceedings-article
+22	citation-22	2012		Shared Execution for Efficiently Testing Product Lines	Proceedings of the IEEE International Symposium on Software Reliability Engineering (ISSRE)	proceedings-article
+23	citation-23	2015		Dual Execution for On the Fly Fine Grained Execution Comparison	Proceedings of the International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS)	proceedings-article
+24	citation-24	2012		Rozzle: De-Cloaking Internet Malware	Proceedings of the IEEE Symposium on Security and Privacy (SP)	proceedings-article
+25	citation-25	2016		LDX: Causality Inference by Lightweight Dual Execution	Proceedings of the International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS)	proceedings-article
+26	citation-26	2017		How to Efficiently Process 2100 List Variations	Proceedings Companion of the ACM SIGPLAN International Conference on Systems, Programming, Languages, and Applications: Software for Humanity (SPLASH)	proceedings-article
+27	citation-27	2012		GenProg: A Generic Method for Automatic Software Repair	IEEE Transactions on Software Engineering (TSE)	article
+28	citation-28	2013		Scalable Analysis of Variable Software	Proceedings of the Joint Meeting on Foundations of Software Engineering (ESEC/FSE)	proceedings-article
+29	citation-29	2014		Tracking Load-Time Configuration Options	Proceedings of the ACM/IEEE International Conference on Automated Software Engineering (ASE)	proceedings-article
+30	citation-30	2015		The Java® Virtual Machine Specification (1 ed.)	AddisonWesley Professional	book
+31	citation-31	2012		Tachyon: Tandem Execution for Efficient Live Patch Testing	Proceedings of the USENIX Security Symposium	proceedings-article
+32	citation-32	2016		A Comparison of 10 Sampling Algorithms for Configurable Systems	Proceedings of the International Conference on Software Engineering (ICSE)	proceedings-article
+33	citation-33	2015		The Love/Hate Relationship with the C Preprocessor: An Interview Study	Proceedings of the European Conference on Object-Oriented Programming (ECOOP), Vol	proceedings-article
+34	citation-34	2018		Understanding Differences among Executions with Variational Traces	Technical Report	report
+35	citation-35	2016		On Essential Configuration Complexity: Measuring Interactions in Highly-Configurable Systems	Proceedings of the IEEE/ACM International Conference on Automated Software Engineering (ASE)	proceedings-article
+36	citation-36	2017		A Choice of Variational Stacks: Exploring Variational Data Structures	Proceedings of the International Workshop on Variability Modelling of Software-Intensive Systems (VAMOS)	proceedings-article
+37	citation-37	1970		A General Method Applicable to the Search for Similarities in the Amino Acid Sequence of Two Proteins	Journal of Molecular Biology	article
+38	citation-38	2014		Exploring Variability-Aware Execution for Testing Plugin-Based Web Applications	Proceedings of the International Conference on Software Engineering (ICSE)	proceedings-article
+39	citation-39	2008		Feature Interaction: the Security Threat from within Software Systems	Progress in Informatics (2008), 75–89	article
+40	citation-40	2011		A Survey of Combinatorial Testing	ACM Computing Surveys (CUSR)	article
+41	citation-41	2005		Software Product Line Engineering: Foundations, Principles and Techniques	Springer	book
+42	citation-42	2010		Using Symbolic Evaluation to Understand Behavior in Configurable Software Systems	Proceedings of the International Conference on Software Engineering (ICSE)	proceedings-article
+43	citation-43	2018		Faceted Secure Multi Execution	Proceedings of the ACM Conference on Computer and Communications Security (CCS)	proceedings-article
+44	citation-44	2016		Faceted Dynamic Information Flow via Control and Data Monads	Proceedings of the International Conference on Principles of Security and Trust - Volume 9635	proceedings-article
+45	citation-45	2012		Multi-Perspectives on Feature Models	Proceedings of the International Conference on Model Driven Engineering Languages and Systems (MODELS)	proceedings-article
+46	citation-46	2015		MultiSE: Multi-Path Symbolic Execution Using Value Summaries	Proceedings of the Joint Meeting on Foundations of Software Engineering (ESEC/FSE)	proceedings-article
+47	citation-47	2018		VarXplorer: Lightweight Process for Dynamic Analysis of Feature Interactions	Proceedings of the International Workshop on Variability Modelling of Software-Intensive Systems (VAMOS)	proceedings-article
+48	citation-48	2007		AutoBash: Improving Configuration Management with Operating System Causality Analysis	Proceedings of the ACM SIGOPS Symposium on Operating Systems Principles (SOSP)	proceedings-article
+49	citation-49	2011		Coalescing Executions for Fast Uncertainty Analysis	Proceedings of the International Conference on Software Engineering (ICSE)	proceedings-article
+50	citation-50	2013		Comparative Causality: Explaining the Differences between Executions	Proceedings of the International Conference on Software Engineering (ICSE)	proceedings-article
+51	citation-51	2014		A Classification and Survey of Analysis Strategies for Software Product Lines	ACM Computing Surveys (CSUR)	article
+52	citation-52	2009		Efficient Online Validation with Delta Execution	Proceedings of the International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS)	proceedings-article
+53	citation-53	2011		Introducing Binary Decision Diagrams in the Explicit-State Verification of Java Code	Proceedings of the Java Pathfinder Workshop.	proceedings-article
+54	citation-54	2014		Variational Data Structures: Exploring Tradeoffs in Computing with Variability	Proceedings of the ACM International Symposium on New Ideas, New Paradigms, and Reflections on Programming & Software (Onward!)	proceedings-article
+55	citation-55	2017		Faster Mutation Analysis via Equivalence Modulo States	Proceedings of the ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA)	proceedings-article
+56	citation-56	1994		On the Complexity of Multiple Sequence Alignment	Journal of Computational Biology	article
+57	citation-57	2018		Beyond Testing Configurable Systems: Applying Variational Execution to Automatic Program Repair and Higher Order Mutation Testing	Proceedings of the ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering - New Ideas and Emerging Results Track (ESEC/FSE-NIER)	proceedings-article
+58	citation-58	2016		Precise, Dynamic Information Flow for Database-backed Applications	Proceedings of the ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI)	proceedings-article
+59	citation-59	2002		Isolating Cause-Effect Chains From Computer Programs	Proceedings of the ACM SIGSOFT Symposium on Foundations of Software Engineering (FSE)	proceedings-article
+60	citation-60	2007		Towards Locating Execution Omission Errors	Proceedings of the ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI)	proceedings-article

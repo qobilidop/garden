@@ -3,8 +3,8 @@
 ## Strongest reduction
 
 Let each contextual selection occurrence `q` have an observation variable
-`z_q` whose finite domain is `inactive` plus its outcomes. A polynomial graph
-encoding defines site activity, selected outcomes, internal values, and the
+`z_q` whose finite domain is `unobserved` plus its outcomes. A polynomial graph
+encoding defines site reachability, selected outcomes, internal values, and the
 ordinary output as functions or relations over inputs. Projecting the formula
 onto the `z_q` variables gives exactly the feasible total selection
 observations.
@@ -25,11 +25,11 @@ Existing machinery then supplies the operational pieces:
 Projection eliminates variables designated irrelevant to the query. Implicant
 shrinking additionally omits literals that are logical don't-cares for a
 formula. Our proposed sparse map uses a different criterion: `z_q` takes the
-explicit value `inactive` precisely when the structural observer does not
-expose site `q`. If `q` is active, its outcome remains observed even when both
+explicit value `unobserved` precisely when the structural observer does not
+expose site `q`. If `q` is observed, its outcome remains recorded even when both
 alternatives compute the same output.
 
-This distinction survives the reduction because `inactive` can simply be
+This distinction survives the reduction because `unobserved` can simply be
 encoded as a sentinel. It therefore does not establish algorithmic novelty.
 
 ## Output objects must be aligned
@@ -43,7 +43,7 @@ The solver literature enumerates several non-equivalent objects:
 - a BDD or d-DNNF is one shared compiled representation rather than a stream of
   flat records.
 
-Complete assignments to inactive-or-outcome variables are in bijection with
+Complete assignments to unobserved-or-outcome variables are in bijection with
 totalized selection observations. A short cube can omit one observation
 coordinate and represent several observations; it is not one fiber record.
 Möhle et al. prove termination, coverage, and contradiction of their shrunken

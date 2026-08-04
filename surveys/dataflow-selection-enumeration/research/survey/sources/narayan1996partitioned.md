@@ -71,7 +71,7 @@ output-sensitive construction or minimality property.
 ### Could it subsume our proposed contribution?
 
 It subsumes partitioned-function representation and generic compactness claims.
-It does not define a sparse map of active site outcomes or its fibers.
+It does not define a sparse map of observed site outcomes or its fibers.
 
 ## Evidence locations
 

@@ -64,7 +64,7 @@ dynamically retaining and forgetting distinctions.
 
 ### What is our interpretation or inference?
 
-Our absence of inactive choices resembles a principled lifetime for a token,
+Our omission of unobserved choices resembles a principled lifetime for a token,
 but ours is intended to be an exact output-induced observation rather than a
 heuristic precision control.
 

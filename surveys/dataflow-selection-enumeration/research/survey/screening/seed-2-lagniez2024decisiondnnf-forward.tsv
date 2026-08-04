@@ -1,0 +1,5 @@
+rank	openalex_id	year	doi	title	venue	type
+1	W4409921792	2025	https://doi.org/10.1016/j.artint.2025.104346	Disjoint projected enumeration for SAT and SMT without blocking clauses	Artificial Intelligence	article
+2	W4412897516	2025	https://doi.org/10.1007/978-3-031-99984-0_37	Entailment vs. Verification for Partial-Assignment Satisfiability and Enumeration	Lecture notes in computer science	conference-paper
+3	W4413879923	2025	https://doi.org/10.1007/978-3-032-04590-4_9	Enhancing Query Efficiency for D-DNNF Representations Through Preprocessing	Lecture notes in computer science	conference-paper
+4	W7154606736	2026	https://doi.org/10.1007/978-3-032-22774-4_7	DivKC: A Divide-and-Conquer Approach to Knowledge Compilation	Lecture notes in computer science	conference-paper

@@ -1,0 +1,397 @@
+rank	source_id	year	doi	title	venue	type
+1	6b2731e388896435cef6354d313f1c273809ffce	2026	10.48550/arXiv.2601.13224	Functional Logic Program Transformations	arXiv.org	JournalArticle
+2	d3c31aa54ee7ac3f7f99b5b97d5948b61a8498a2	2026	10.1145/3776699	Domain-Theoretic Semantics for Functional Logic Programming	Proc. ACM Program. Lang.	JournalArticle
+3	d75417601d057bf43a856365cfd5658d8b692cb5	2025	10.1145/3764115	Bennet: Randomized Specification Testing for Heap-Manipulating Programs	Proc. ACM Program. Lang.	JournalArticle
+4	3a904b325b68971ad7a7117af95cd7708c3cb3d6	2025	10.1145/3756907.3756915	Determinism Types for Functional Logic Programming	ACM-SIGPLAN International Conference on Principles and Practice of Declarative Programming	Book
+5	6541c7c53eb6cb7a6e0d1533c7a545aab933f8c4	2025	10.1145/3808278	Code-Specify-Test-Debug-Prove: Flexibly Integrating Separation Logic Specification into Conventional Workflows	Proceedings of the ACM on Programming Languages	JournalArticle
+6	66112b536741c937e18dab3351cbd51c45bf88d6	2025	10.4204/EPTCS.421.7	An Execution Model for RICE	Workshop on Logical and Semantic Frameworks with Applications	JournalArticle
+7	51a3811c17788e3bd2a1e398ea36175ecf0ba126	2025	10.48550/arXiv.2505.14895	Nominal Equational Narrowing: Rewriting for Unification in Languages with Binders	arXiv.org	JournalArticle
+8	dd440ab49acaebc372771325129e4a06c5f1dc2a	2024	10.48550/arXiv.2402.12960	Inferring Non-Failure Conditions for Declarative Programs	Fuji International Symposium on Functional and Logic Programming	JournalArticle
+9	6ec5b1fbaf25e7252965dcf36e435818ba4c99f8	2022	10.1145/3551357.3551370	A Monadic Implementation of Functional Logic Programs	ACM-SIGPLAN International Conference on Principles and Practice of Declarative Programming	Book
+10	49f1ec8d74b163bdde52fbcf211cb86ba0419c1f	2022	10.1017/S1471068422000187	From Logic to Functional Logic Programs	Theory and Practice of Logic Programming	JournalArticle
+11	683b4f6493648a0557a4ede1879759f830cd7123	2022		A Rule-based Operational Semantics of Graph Query Languages	arXiv.org	JournalArticle
+12	07b2f4e355410650cd1a8f892a919e5a1f2bb205	2021	10.1145/3519939.3523731	CycleQ: an efficient basis for cyclic equational reasoning	ACM-SIGPLAN Symposium on Programming Language Design and Implementation	JournalArticle
+13	fe0a69a57676920ac2e72df2a72b5e99b3f49dda	2021	10.1145/3479394.3479411	From Non-determinism to Goroutines: A Fair Implementation of Curry in Go	ACM-SIGPLAN International Conference on Principles and Practice of Declarative Programming	JournalArticle
+14	f20f557b2bd85a87198d262b299b2c527a4a33f0	2020	10.1017/9781108770750.014	Luck: A Probabilistic Language for Testing	Foundations of Probabilistic Programming	
+15	da407a1fa736b89bea5f54731f4a6b2fa8c22963	2020	10.1007/978-3-030-75333-7_4	Memoized Pull-Tabbing for Functional Logic Programming	Workshop on Functional and Constraint Logic Programming	JournalArticle
+16	2829cf4b51d2014b9cf1944458313a12cf97426b	2020	10.1017/S0956796823000126	Sparcl: a language for partially-invertible computation	Journal of functional programming	JournalArticle
+17	ca289bee42f9e94521a22e032ffcf154c7de2443	2019	10.1007/978-3-030-46714-2_18	ICurry	DECLARE	JournalArticle
+18	f5351f9f2ed81f6b690311d8b29683305ea4c0ff	2019	10.1007/978-3-030-46714-2_15	Adding Data to Curry	DECLARE	JournalArticle
+19	456795745a14c045ebe01944b18a8851d0d65f42	2019	10.1007/978-3-030-05998-9_6	Improving Residuation in Declarative Programs	International Symposium on Practical Aspects of Declarative Languages	JournalArticle
+20	cc6d89d95feb2fd92de29b4f14bd1b87098bdb4b	2019	10.70675/7b798d68zb67bz4e27z80b5z99c6d1b72127	Integrating rewriting, tableau and superposition into SMT. (Intégrer la réecriture, la méthode des tableaux et la superposition dans les solveurs SMT)		
+21	60ced889a0144efabe5564440f5b5637311bb810	2018	10.1145/3236950.3236957	Verifying Fail-Free Declarative Programs	ACM-SIGPLAN International Conference on Principles and Practice of Declarative Programming	Book
+22	5f4888c5debf216008f0eb3e0a198eadf2f4ad43	2018	10.1007/978-3-030-16202-3_6	Synthesizing Set Functions	Workshop on Functional and Constraint Logic Programming	JournalArticle
+23	7552c0ee00da62ada25479287bc5c72c8a7f10c1	2018	10.1007/s00354-018-0033-7	FliPpr: A System for Deriving Parsers from Pretty-Printers	New generation computing	JournalArticle
+24	010882523a6731cc8f24463093148d7e79b93192	2018	10.1007/978-3-319-99840-4_2	Multi-paradigm Programming in Maude	Workshop on Rewriting Logic and Its Applications	JournalArticle
+25	a695936649e76d0fe7d3aceb802c59f18b09f00c	2018	10.1007/978-3-319-90686-7_10	Equivalence Checking of Non-deterministic Operations	Fuji International Symposium on Functional and Logic Programming	JournalArticle
+26	47130da8d1dc2c78a16013d9af0ef0f159a76cbd	2017	10.1145/3158133	Generating good generators for inductive relations	Proc. ACM Program. Lang.	JournalArticle
+27	eb52e0b0bae74867e7f3c405fbab4b6e25d74220	2017	10.1007/978-3-030-00801-7_11	Concolic Testing of Functional Logic Programs	DECLARE	JournalArticle
+28	b6fd6ae1af0d9e91f7a509696d722842f13699ae	2017	10.3233/FI-2020-1925	Combining Static and Dynamic Contract Checking for Curry	International Workshop/Symposium on Logic-based Program Synthesis and Transformation	JournalArticle
+29	e3b8f73d834d3968c85f146554302ecbc56711ce	2017	10.1007/978-3-319-63046-5_8	Satisfiability Modulo Bounded Checking	CADE	JournalArticle
+30	9a13c73b27bb830ff0b29445aac51d78995d8f76	2017		Normalization and Partial Evaluation of Functional Logic Programs		
+31	e97e4b6cc826a55457bf52ffaa0434e8a0007b07	2017	10.1007/s10817-017-9417-5	Sentence-Normalized Conditional Narrowing Modulo in Rewriting Logic and Maude	Journal of automated reasoning	JournalArticle
+32	a5f46b912bc6014a2b8e3f06ecf9757316e7459e	2017	10.1007/s00165-016-0399-6	Transforming Boolean equalities into constraints	Formal Aspects of Computing	JournalArticle
+33	83133332ab6eb1df584203b3d6f237aef0f5b08c	2017	10.1007/978-3-319-51676-9_1	Eliminating Irrelevant Non-determinism in Functional Logic Programs	International Symposium on Practical Aspects of Declarative Languages	JournalArticle
+34	2c02bcb0cdda04be0533fdf7fb16a8832ab4f077	2017	10.1007/978-3-319-51676-9_7	Failing Faster: Overlapping Patterns for Property-Based Testing	International Symposium on Practical Aspects of Declarative Languages	JournalArticle
+35	a73b21a82499189ad50caa0cdcdd8f80a30eb8f5	2016	10.1145/2983990.2984027	Semantics-based program verifiers for all languages	Conference on Object-Oriented Programming Systems, Languages, and Applications	Book
+36	e042439ce593595087063137da6690cb8f15e716	2016	10.1145/2967973.2968605	Analysis of access control policy updates through narrowing	ACM-SIGPLAN International Conference on Principles and Practice of Declarative Programming	Book
+37	6c8b5b578bd6ae37f7012b4abbed74ec891f94aa	2016	10.1007/978-3-319-63139-4_13	CurryCheck: Checking Properties of Curry Programs	International Workshop/Symposium on Logic-based Program Synthesis and Transformation	JournalArticle
+38	be8c8fdf73f7b95c37433fb562b58f15dd842cab	2016	10.1145/3009837.3009868	Beginner's luck: a language for property-based generators	ACM-SIGACT Symposium on Principles of Programming Languages	JournalArticle
+39	1b4ccb9d7c6df9b125be1e1c470d0219ac633f44	2016	10.29007/3ks9	A rewrite-based computational model for functional logic programming	International Symposium on Symbolic Computation in Software Science	JournalArticle
+40	52ad12fd5a8519421d743e8136722c7b51bccf2b	2016	10.1017/S1471068416000168	Default rules for Curry*	Theory and Practice of Logic Programming	JournalArticle
+41	2f78f8e471f334f051163f0c005abf698c7d40f5	2015	10.1007/978-3-319-23165-5_11	Two Decades of Maude	Logic, Rewriting, and Concurrency	JournalArticle
+42	5c02e30840b72ba4c5e9d922c8f08b9ca93ae84a	2015	10.1007/978-3-319-27436-2_5	From Boolean Equalities to Constraints	International Workshop/Symposium on Logic-based Program Synthesis and Transformation	JournalArticle
+43	03617f2142bff7bf033986933050a2e6c02e5cdc	2015	10.1007/978-3-319-39110-6_2	Towards a Theory of Reach	Symposium on Trends in Functional Programming	JournalArticle
+44	e20c6fa32d9e358b76015a0e3b87b20dc1ef211f	2014	10.1007/978-3-319-12904-4_4	Conditional Narrowing Modulo in Rewriting Logic and Maude	Workshop on Rewriting Logic and Its Applications	JournalArticle
+45	084b75320cf05d61c3dff468a7bee495f20c9271	2014	10.1145/2543728.2543744	A modular and generic analysis server system for functional logic programs	ACM SIGPLAN Workshop on Partial Evaluation and Program Manipulation	JournalArticle
+46	f166ebd081ec5c15ccadc08d898c8bdac4900845	2013	10.1017/S0956796813000245	Contextual equivalence for inductive definitions with binders in higher order typed functional programming	Journal of functional programming	JournalArticle
+47	57f29079bfe9490c8505860ea288452bdae47d1b	2013	10.1145/2500365.2500574	Testing noninterference, quickly	Journal of functional programming	Book
+48	570a6bfa7711c948a4459fc8d093845847f66347	2013	10.1145/2505879.2505881	Are needed redexes really needed?	ACM-SIGPLAN International Conference on Principles and Practice of Declarative Programming	JournalArticle
+49	8d3b7e3d120c39feb70d9a890457945c9a2f4784	2013	10.1145/2505879.2505896	A semantics for weakly encapsulated search in functional logic programs	ACM-SIGPLAN International Conference on Principles and Practice of Declarative Programming	JournalArticle
+50	cb4b3e91be2bdb1185747cf9c05037782fe80af3	2013	10.4995/THESIS/10251/19251	Termination of Narrowing: Automated Proofs and Modularity Properties		
+51	e29da2fd055d5ba3febdf3f3850525f17c7baf66	2013	10.1145/2426890.2426896	Typing as functional-logic evaluation	ACM SIGPLAN Workshop on Partial Evaluation and Program Manipulation	JournalArticle
+52	69267fdb63c2dbc295c0d02d7fdd14b82e94b1ea	2012	10.20868/upm.thesis.12705	Relational and Allegorical Semantics for Constraint Logic Programming		
+53	dc996ed9c17b643d2ce8444350ebf50e672743eb	2012		Implementing Functional Logic Programs by Translation into Purely Functional Programs		
+54	2590fa6912e1c97183954f5dfb2980cb90e54a67	2012		An abstract interpretation framework for semantics and diagnosis of Lazy functional-logic languages		
+55	21c3307d6cf498c37d3503a71d11d5aaf351eb55	2012	10.1007/978-3-642-28717-6_14	Smart Testing of Functional Programs in Isabelle	Logic Programming and Automated Reasoning	JournalArticle
+56	d22f44e414fb9a93a8eb0a2cc569beb82924683c	2012		Functional Logic Programming with Generalized Circular Coinduction	arXiv.org	JournalArticle
+57	67141d7d7fa2ac8d3445bbdd85a36b25a89bfb57	2012	10.1145/2103746.2103752	Polynomial-time inverse computation for accumulative functions with multiple data traversals	ACM SIGPLAN Workshop on Partial Evaluation and Program Manipulation	JournalArticle
+58	763df4bd4418be04eaf10eedce11e8b2f4bc9dd8	2012	10.1007/978-3-642-27694-1_4	Contracts and Specifications for Functional Logic Programming	International Symposium on Practical Aspects of Declarative Languages	JournalArticle
+59	a0f29b0972ef50b507354269991f62077e40e5b8	2012	10.1145/2103746.2103763	Well-typed narrowing with extra variables in functional-logic programming	ACM SIGPLAN Workshop on Partial Evaluation and Program Manipulation	JournalArticle
+60	bf1e38a84ccdff2b5ac702f6fa0d4621c06ac39b	2011		An Implementation of Bubbling	arXiv.org	JournalArticle
+61	92cfa7c90820e6bf320119fd1b3c2913b6dcc3c1	2011		Termination of Narrowing with Dependency Pairs		
+62	5b957a486218ed3af0b9c7326fde870584699afd	2011		Programación declarativa cualificada con restricciones		
+63	25c6eec7a50494158f52e47eb8cdeb96f0e526ec	2011		Programación con indeterminismo: un enfoque basado en reescritura		
+64	c57ce5a3396846c5618172238bfa9b03edf6c4bc	2011	10.1007/978-3-642-22531-4_2	New Functional Logic Design Patterns	Workshop on Functional and Constraint Logic Programming	JournalArticle
+65	a6a5972ffac9bc746b9bdea622a7fdaee1da40af	2011	10.1145/2001420.2001465	High coverage testing of Haskell programs	International Symposium on Software Testing and Analysis	JournalArticle
+66	27cb06bc80e48dfa3bca69cc19c32040916e1a10	2011	10.2168/LMCS-7(3:6)2011	Constraint solving in non-permutative nominal abstract syntax	Log. Methods Comput. Sci.	JournalArticle
+67	5d5cd3710044964e4082b637796d5738cb71787f	2011	10.1016/j.jvlc.2010.11.005	Constructing a bidirectional transformation between BPMN and BPEL with a functional logic programming language	Journal of Visual Languages and Computing	JournalArticle
+68	79c709b31a0265df1616a20db41b0989e2bd9a5f	2011		A Generic Scheme for Qualified Constraint Functional Logic Programming	arXiv.org	JournalArticle
+69	8820ee9e80cb291944629462f85899c322292b4c	2010	10.1016/J.TCS.2010.07.009	An integrated framework for the diagnosis and correction of rule-based programs	Theoretical Computer Science	JournalArticle
+70	914f899c1142c34c7e15c5fe29462dfc42c11f96	2010	10.1145/1863543.1863573	Bidirectionalizing graph transformations	ACM SIGPLAN International Conference on Functional Programming	JournalArticle
+71	67887ba587d2a5e2a9045d0e7f00e2f847664d5a	2010		On functional logic programming and its application to testing		
+72	87d66e6fe477ea97cdc4b24335c8cc62c778029a	2010		Un Depurador Abstracto, Inductivo y Paramétrico para Programas Multiparadigma		
+73	bb05566f08fabc297fa6fb9186bddf6b4a2cc140	2010	10.1007/978-3-642-20551-4_14	Abstract Diagnosis of First Order Functional Logic Programs	International Workshop/Symposium on Logic-based Program Synthesis and Transformation	JournalArticle
+74	9dd8a0d9da5417c3ceba04cce5e05ceea6d2785f	2010	10.1016/j.jsc.2010.01.006	Programming with narrowing: A tutorial	Journal of symbolic computation	JournalArticle
+75	f819b8779e511e48f822ce65302ee316b6c536eb	2010	10.1007/s00200-010-0122-4	Termination of narrowing via termination of rewriting	Applicable Algebra in Engineering, Communication and Computing	JournalArticle
+76	72a39fc91de366143faae7deaeadf2ff8e0adaea	2010	10.1145/1721654.1721675	Functional logic programming	CACM	JournalArticle
+77	f9c0d23cdacbdd80fd1290757e724cda970a6a18	2010	10.1016/j.jlap.2012.01.002	Folding variant narrowing and optimal variant termination	J. Log. Algebraic Methods Program.	JournalArticle
+78	e2c65099880756d2aebc793ade266341c4ad8ee7	2010	10.1017/S1471068412000385	An ER-based framework for declarative web programming*	Theory and Practice of Logic Programming	JournalArticle
+79	e1c821216ee19d6da80863f37dfaf41e67c188c6	2010	10.1007/978-3-642-20775-4_5	Lazy and Enforceable Assertions for Functional Logic Programs	Workshop on Functional and Constraint Logic Programming	JournalArticle
+80	b0219848083e13fc76d8fe891de6cb33c21ad5fc	2009	10.1007/978-3-642-02846-5_36	Qualified Computations in Functional Logic Programming	International Conference on Logic Programming	JournalArticle
+81	66692e632f28c29dd45c36aa85a4715c4b48eae3	2009	10.1016/J.FSS.2008.11.028	A hybrid programming scheme combining fuzzy-logic and functional-logic resources	Fuzzy Sets Syst.	JournalArticle
+82	5a2ada95e43dc1b4a65bfc18bea02c7bdaef8c31	2009	10.1007/978-3-642-00675-3_14	Narrowing for First Order Functional Logic Programs with Call-Time Choice Semantics	INAP/WLP	JournalArticle
+83	dbf1ee1b7bb82d9e9ef6ad36719b588084e39844	2009	10.1017/S1471068409003780	On the cooperation of the constraint domains ℋ, ℛ, and ℱ in CFLP	Theory and Practice of Logic Programming	JournalArticle
+84	e1c26375d005efe6e77773d124ded559de18b8aa	2009		Kruskal's theorem		
+85	86e40615c3d0a3686576d4c2f4f9f1c54964eba6	2009	10.1007/978-3-540-92995-6_2	Declarative Programming of User Interfaces	International Symposium on Practical Aspects of Declarative Languages	JournalArticle
+86	7fc0967b793e5b9c3a3ff68aa9dbc4b7d74edcf6	2008	10.1145/1411286.1411292	Smallcheck and lazy smallcheck: automatic exhaustive testing for small values	ACM SIGPLAN Symposium/Workshop on Haskell	JournalArticle
+87	0b5d8be47d849abafbe4052442f6dbb40754b400	2008		Smallcheck and lazy smallcheck		
+88	a8aa779a81ac7447e9b3d37b3733f13142d859a0	2008	10.1007/978-3-540-87405-8_7	Inductively Sequential Term-Graph Rewrite Systems	International Conference on Graph Transformation	JournalArticle
+89	24cc5da0456bb2d72351ff4fb0eafaefffeee0fc	2008	10.1007/978-3-540-70590-1_18	Functional-Logic Graph Parser Combinators	International Conference on Rewriting Techniques and Applications	JournalArticle
+90	23d3d7f355982dd6b5a54aae437054c874f8ea89	2008	10.1145/1389449.1389459	Call pattern analysis for functional logic programs	ACM-SIGPLAN International Conference on Principles and Practice of Declarative Programming	Book
+91	0e2cff65eca8786957846e58850ca9364176b65d	2008	10.4995/THESIS/10251/1948	Rule-Based Software Verification and Correction		
+92	a1247c6cbcf7e376a494c402e257eb70e22d4e1a	2008	10.1007/978-3-540-78969-7_10	Termination of Narrowing in Left-Linear Constructor Systems	Fuji International Symposium on Functional and Logic Programming	JournalArticle
+93	15dcf86fdac03b4fa986dc8a6fded7a8ac2de277	2008	10.70675/33551aa7z7e96z4b24zbaa1zbe39a011a93d	Rewriting and modularity for security policies		
+94	7432d91617455b16dac04b45e301cce49ac408f9	2008		Réécriture et Modularité pour les Politiques de Sécurité. (Term Rewriting and Modularity for Security Policies)		
+95	0bf1db8581aa2d17394dc73b5e3d848241dce397	2008	10.1007/978-3-540-77442-6_21	High-Level Database Programming in Curry	International Symposium on Practical Aspects of Declarative Languages	JournalArticle
+96	9b44c5ccc322eda41cf03f347f0a8a29dcad11d7	2007	10.1007/978-3-540-76637-7_9	On a Tighter Integration of Functional and Logic Programming	Asian Symposium on Programming Languages and Systems	JournalArticle
+97	f3c2a8373afe2939deb49f6f41cef08014a764da	2007		Compiling ER Specifications into Declarative Programs	arXiv.org	JournalArticle
+98	40ce086d4d8b03b5537c2f51c0c2f4a1c0cadd76	2007	10.1007/978-3-540-74610-2_5	Multi-paradigm Declarative Languages	International Conference on Logic Programming	JournalArticle
+99	952720964c172b14f349861f20246d4af800887d	2007	10.1145/1273920.1273942	Putting declarative programming into the web: translating curry to javascript	ACM-SIGPLAN International Conference on Principles and Practice of Declarative Programming	JournalArticle
+100	1688311185c44f88eeea5de1fdc99ad4ec83bbac	2007	10.1145/1273920.1273930	Systematic generation of glass-box test cases for functional logic programs	ACM-SIGPLAN International Conference on Principles and Practice of Declarative Programming	JournalArticle
+101	e04eadee68abe3f8f65db34b27376183146bd641	2007	10.1145/1273920.1273947	A simple rewrite notion for call-time choice semantics	ACM-SIGPLAN International Conference on Principles and Practice of Declarative Programming	JournalArticle
+102	aebf012f979df6c00b43cdc9552d036993ac121b	2007	10.1016/J.ENTCS.2007.05.036	Formal Properties of Needed Narrowing with Similarity Relations	PROLE	JournalArticle
+103	f2fbddc7756e6d9007336ca5f67885b524d069f4	2007	10.1016/j.entcs.2006.05.049	Extra Variables Can Be Eliminated from Functional Logic Programs	PROLE	JournalArticle
+104	ca665bd037211a65d9b7ecd08b5a1f12386710de	2007	10.1016/j.entcs.2007.05.042	Equivalence of Two Formal Semantics for Functional Logic Programs	PROLE	JournalArticle
+105	edb302f5e9c073eed9bf274dc59e35535751b486	2007	10.1007/s10990-007-9002-4	A new generic scheme for functional logic programming with constraints	High. Order Symb. Comput.	JournalArticle
+106	0236a7983756b5cfd0e23bcc19ef2bea4b99cfa0	2007	10.1016/j.entcs.2007.01.002	Reporting Failures in Functional Logic Programs	Workshop on Functional and Constraint Logic Programming	JournalArticle
+107	0c89cc61b74b97e82c67ed9f06e9c7e84c8e8cbc	2007	10.1016/j.entcs.2007.01.009	Implementing Dynamic-Cut in TOY	Workshop on Functional and Constraint Logic Programming	JournalArticle
+108	fdf1a3e69adc9a11ac44a1b531fa4093f2a882e7	2007	10.1016/j.entcs.2007.01.004	Narrowing and Rewriting Logic: from Foundations to Applications	Workshop on Functional and Constraint Logic Programming	JournalArticle
+109	5ca4dedd87bb00ad27d745e4e9edc198972cc79b	2007	10.1016/j.entcs.2007.01.024	Lazy Database Access with Persistent Predicates	Workshop on Functional and Constraint Logic Programming	JournalArticle
+110	44a6d8fb9f851e3bc4227482da249cd98cdd33ed	2007	10.1016/j.entcs.2007.01.003	Expander2: Program Verification Between Interaction and Automation	Workshop on Functional and Constraint Logic Programming	JournalArticle
+111	c89a488c2fb2ce8042c7c583fa961e719860de6c	2007	10.1007/s10990-007-9000-6	Symbolic reachability analysis using narrowing and its application to verification of cryptographic protocols	High. Order Symb. Comput.	JournalArticle
+112	51009da950d7ac89ec7adc31bc0d7cf71e395063	2007	10.1016/j.entcs.2006.10.026	Lazy Context Cloning for Non-Deterministic Graph Rewriting	TERMGRAPH@ETAPS	JournalArticle
+113	0a958bc51811aa8f62bfb9af61a152b5631e3de4	2007	10.1016/j.entcs.2006.10.027	Modeling Pointer Redirection as Cyclic Term-graph Rewriting	TERMGRAPH@ETAPS	JournalArticle
+114	ea269543d023cdf0b9c130e17ca788f8000cbfbc	2007	10.1016/j.ipl.2006.09.010	Ensuring the quasi-termination of needed narrowing computations	Information Processing Letters	JournalArticle
+115	268b8277001ad0e868dfb604e649bd62669d1eaf	2006	10.1007/11841883_8	Narrowing Data-Structures with Pointers	International Conference on Graph Transformation	JournalArticle
+116	12dc8efdd78bf99c2fa5937bb9e1c09fde332f15	2006	10.1007/978-3-540-74130-5_15	Automatic Partial Inversion of Inductively Sequential Functions	International Symposium on Implementation and Application of Functional Languages	JournalArticle
+117	a0a4a31752d6dac50d091a40b42d1362870f25eb	2006	10.1007/11799573_9	Overlapping Rules and Logic Variables in Functional Logic Programs	International Conference on Logic Programming	JournalArticle
+118	c0d156db442e359b0058824e5acee901c3db2e5d	2006	10.1007/978-3-540-71410-1_6	Improving Offline Narrowing-Driven Partial Evaluation Using Size-Change Graphs	International Workshop/Symposium on Logic-based Program Synthesis and Transformation	JournalArticle
+119	f8c60014c2b870aabc1de2664e9636fa8b7c1406	2006	10.1145/1140335.1140350	Rewriting term-graphs with priority	ACM-SIGPLAN International Conference on Principles and Practice of Declarative Programming	JournalArticle
+120	8a429baf82c17a936801de4e37b8bd6b5c9e077e	2006	10.1145/1140335.1140341	Type-oriented construction of web user interfaces	ACM-SIGPLAN International Conference on Principles and Practice of Declarative Programming	JournalArticle
+121	25300907aa9e6ff8b15729b969929bea4a8f9e53	2006	10.1017/S1471068406002924	Constraint functional logic programming over finite domains	Theory and Practice of Logic Programming	JournalArticle
+122	36205a2a0f3a467dcc5b8eb92d3df2f4f2b2dd58	2005	10.1007/11562931_21	Nondeterminism Analysis of Functional Logic Programs	International Conference on Logic Programming	JournalArticle
+123	6c147ae64d50fb0166016102da8ffe4465890379	2005	10.1145/1085099.1085105	Designing an efficient computation strategy in CFLP(FD) using definitional trees	Workshop on Curry and Functional Logic Programming	JournalArticle
+124	66cb516477f0194f60dd58600e9860f5ccde31ac	2005	10.1145/1085099.1085110	A functional logic database library	Workshop on Curry and Functional Logic Programming	JournalArticle
+125	dd95aec1219fad3c95e5d208aaad9fb979bce7a8	2005	10.1145/1085099.1085104	Adding constraints to curry via flat guards		
+126	17a11ed909b9b6a043df71beff2dcc6faa2e3694	2005	10.1145/1086365.1086394	Fast narrowing-driven partial evaluation for inductively sequential programs	ACM SIGPLAN International Conference on Functional Programming	JournalArticle
+127	c3d131a2bba97b6fa30e84c6baa2316bfc29684f	2005	10.1007/11559306_10	Declarative Constraint Programming with Definitional Trees	International Symposium on Frontiers of Combining Systems	JournalArticle
+128	3da139c722e53c546bdfb5d996e0714a79c94580	2005	10.1007/11676935_11	Programming with Fuzzy Logic and Mathematical Functions	International Workshop on Fuzzy Logic and Applications	JournalArticle
+129	8901973331825951f14fc98aab70d5204a1703c6	2005	10.1007/11680093_2	Declarative Programming with Function Patterns	International Workshop/Symposium on Logic-based Program Synthesis and Transformation	JournalArticle
+130	a40b7e78d8fddf4c807bffb1f5225cd994436fa6	2005	10.1016/j.tcs.2006.07.008	Complete symbolic reachability analysis using back-and-forth narrowing	Theoretical Computer Science	JournalArticle
+131	0bf483a998bdc421aa380e676b898d537d404ecd	2005	10.1007/978-3-540-30557-6_4	Specializing Narrowing for Timetable Generation: A Case Study	International Symposium on Practical Aspects of Declarative Languages	JournalArticle
+132	599fd7c25618ffeb09b93277f03c680bf78289fe	2004	10.1007/978-3-540-30498-2_42	Improved Tupling for Optimizing Multi-paradigm Declarative Programs	Ibero-American Conference on AI	JournalArticle
+133	a0670301238934282ec29f15796cb781f86ea93d	2004	10.1017/S095679680400509X	Concurrent distinct choices	Journal of functional programming	JournalArticle
+134	cd32d10a1e47dbfd1bb94edfae5b5a57d3cb9ce9	2004	10.1007/11431664_7	A Virtual Machine for Functional Logic Computations	International Symposium on Implementation and Application of Functional Languages	JournalArticle
+135	890d70775d87a4b913f6734ba4343aebdd3a72c1	2004	10.1007/978-3-540-32033-3_21	Natural Narrowing for General Term Rewriting Systems	International Conference on Rewriting Techniques and Applications	JournalArticle
+136	ccba60e990e72c68901067368671c791b0ec64d5	2004	10.1145/1013963.1013979	New completeness results for lazy conditional narrowing	ACM-SIGPLAN International Conference on Principles and Practice of Declarative Programming	JournalArticle
+137	d40c87dfeb567d0cedda056b46687f3619daf74a	2004	10.1007/978-3-540-24754-8_12	Implementing Natural Rewriting and Narrowing Efficiently	Fuji International Symposium on Functional and Logic Programming	JournalArticle
+138	1da0da9eb95d9b4627b51960d9ff3c1bca8f1bc0	2004	10.1007/978-3-540-24754-8_6	Analysing Definitional Trees: Looking for Determinism	Fuji International Symposium on Functional and Logic Programming	JournalArticle
+139	1ad83134006f670b95e38cebdabd40aa8494c12f	2004	10.1007/978-3-540-24725-8_9	A Memoizing Semantics for Functional Logic Languages	European Symposium on Programming	JournalArticle
+140	06e1dc853b1c81b50bab099359ff06191bcf390d	2004	10.1023/B:LISP.0000029447.02190.42	Cost-Augmented Partial Evaluation of Functional Logic Programs	High. Order Symb. Comput.	JournalArticle
+141	d4f58002ff8d96011a3079f79c1a14c0221ae57a	2004	10.3233/EAI-2004-299	Strategies and analysis techniques in functional program optimization	AI Communications	JournalArticle
+142	c14501608d7cec7871f294a507f3285068eb972b	2004	10.1016/J.TCS.2003.10.033	Rules + strategies for transforming lazy functional logic programs	Theoretical Computer Science	JournalArticle
+143	b297158c0e865194d6f28672e9fca2a9917e2d3d	2003	10.1016/S1571-0661(04)80692-3	Towards translating embedded Curry to C	Workshop on Functional and Constraint Logic Programming	JournalArticle
+144	e09a4526dfc73d71ba319288f60b1e8b4f0db725	2003	10.1016/S1571-0661(04)80698-4	A narrowing-based instantiation rule for rewriting-based fold/unfold transformations	Workshop on Functional and Constraint Logic Programming	JournalArticle
+145	d1b29139aaafc816cdf547fb3071949befbc0587	2003	10.1145/888251.888263	Refining weakly outermost-needed rewriting and narrowing	ACM-SIGPLAN International Conference on Principles and Practice of Declarative Programming	JournalArticle
+146	156ab59e85cfc67d7bed821b46cd22f2a1210aeb	2003	10.1145/888251.888255	Conditional narrowing without conditions	ACM-SIGPLAN International Conference on Principles and Practice of Declarative Programming	JournalArticle
+147	1978c23bf8976aa58cb66885c83e253dcae3f9f9	2003	10.1145/888251.888275	A demand-driven narrowing calculus with overlapping definitional trees	ACM-SIGPLAN International Conference on Principles and Practice of Declarative Programming	JournalArticle
+148	668e2cb1d1670691ef9b3b2c6dbef8f3b2b10d8f	2003	10.3233/EAI-2003-273	Partial evaluation of lazy functional logic programs	AI Communications	JournalArticle
+149	74ba2368fbb2ab8d6ad30ce60c0ced8cc05a2d4b	2003	10.1093/LOGCOM/13.2.287	Uniform Lazy Narrowing	Journal of Logic and Computation	JournalArticle
+150	8638dc47890a1f9ca997ba1949c92d4398a8c27e	2003		Partial evaluation of lazy functional logic programs: Thesis		
+151	3d74893eb1c5de0361ed95241ef9151c9550c19c	2003	10.1016/S0020-0190(02)00336-8	A residualizing semantics for the partial evaluation of functional logic programs	Information Processing Letters	JournalArticle
+152	0e45297f4acf9f33ece6f776dbbac75439ac4e71	2002	10.1016/S1571-0661(04)80600-5	An Operational Semantics for Declarative Multi-Paradigm Languages	WRS	JournalArticle
+153	faadf3add67faf07d979ac8af3783914f4156eeb	2002	10.1007/3-540-36131-6_14	Automatic Optimization of Multi-paradigm Declarative Programs	Ibero-American Conference on AI	JournalArticle
+154	f14cab99a3af5e4088e5ffc14e45e55468851fd3	2002	10.1016/S1571-0661(04)80793-X	Programming Autonomous Robots in Curry	Workshop on Functional and Constraint Logic Programming	JournalArticle
+155	93b240ee10e676039ef25bde508cf95751e27b36	2002	10.1016/S1571-0661(04)80784-9	Demandness in Rewriting and Narrowing	Workshop on Functional and Constraint Logic Programming	JournalArticle
+156	78bb9738803ee200acd1a8236d58d580226fd28b	2002	10.1006/inco.2002.3176	Context-Sensitive Rewriting Strategies	Information and Computation	JournalArticle
+157	cd0133d1db45a105ffca891fb0987076e41da26b	2002	10.1007/3-540-45013-0_17	Forward Slicing of Multi-paradigm Declarative Programs Based on Partial Evaluation	International Workshop/Symposium on Logic-based Program Synthesis and Transformation	JournalArticle
+158	dd33e3fc3a089d9bdf1c15371642ad7ce63f1763	2002	10.1007/3-540-45788-7_15	Dynamic-Cut with Definitional Trees	Fuji International Symposium on Functional and Logic Programming	JournalArticle
+159	4549b7e2afac5e9a362028b429e52933d589c523	2002	10.1007/3-540-45788-7_7	On the Correctness of the Factoring Transformation	Fuji International Symposium on Functional and Logic Programming	JournalArticle
+160	288badc85b3e89a7addfc5c4347f28932670e344	2002	10.1007/3-540-45788-7_4	Functional Logic Design Patterns	Fuji International Symposium on Functional and Logic Programming	JournalArticle
+161	26029ec6ae5ef5c23eabeea3d87ee1ef7c5bd995	2002	10.1016/s1571-0661(04)80345-1	A Debugging Scheme for Functional Logic Programs1 1This work has been partially supported by CICYT under grant TIC2001-2705-C03-01, by Acción Integrada Hispano-Italiana HI2000-0161, Acción Integrada Hispano-Alemana HA2001-0059 and by Generalitat Valenciana under grant GV01-424.		
+162	c95a44962d79097e0a7c2fcbc199f342ceb241b2	2002	10.1016/S1571-0661(04)80200-7	Solving Equations by Graph Transformation	GETGRATS Closing Workshop	JournalArticle
+163	29bd17d5b4b2ac0a32c6bb4510bb634dedfa3e41	2002	10.1007/978-1-4757-3661-8	Advanced Topics in Term Rewriting	Springer: New York	Review
+164	9b0622167e514a93a4a24a04ea0e3d093761d7be	2002		Etude de la programmation logico-fonctionnelle concurrente		
+165	9269a05c6071d6bbbe5d3cf464e412691a98bb8e	2001	10.1016/j.jsc.2004.12.007	Evaluation strategies for functional logic programming	Journal of symbolic computation	JournalArticle
+166	dac3590c5c944d1e3af20f8ef10e6bcbd97eaeaa	2001	10.1016/S1571-0661(04)00266-X	Declarative Debugging of Functional Logic Programs	WRS	JournalArticle
+167	bd1c84176d06fb480129de2e8de7db2dfec61e87	2001		Partial evaluation of multidparadigm declarative languages: Thesis		
+168	26850b3658253b0cf491c2bc49f17da4f2e6437f	2001	10.1016/S1571-0661(04)00273-7	Reduction Strategies for Declarative Programming	WRS	JournalArticle
+169	378a91a485cd80525a0e8e8fb355bec69ad40953	2001	10.1007/3-540-45607-4_9	Symbolic Profiling for Multi-paradigm Declarative Languages	International Workshop/Symposium on Logic-based Program Synthesis and Transformation	JournalArticle
+170	1bb26fe4a0378a4944de41453b1ac6758b5fa10a	2001		An Integrated Development Environment for Declarative Multi-Paradigm Programming	Workshop on Logic Programming Environments	JournalArticle
+171	c4334982c9c32203b757d0b0119738f497e94a40	2001	10.1145/773184.773206	An implementation of narrowing strategies	ACM-SIGPLAN International Conference on Principles and Practice of Declarative Programming	JournalArticle
+172	2efd09ba06ea29815140e37dcd87b338ae39417a	2001	10.1145/773184.773205	Constructor-based conditional narrowing	ACM-SIGPLAN International Conference on Principles and Practice of Declarative Programming	JournalArticle
+173	460632dbbc62923d2d093ef7f6d06439cd7b6223	2001	10.1016/S0304-3975(00)00209-7	Implementing conditional term rewriting by graph rewriting	Theoretical Computer Science	JournalArticle
+174	1fec18f4e8dff1300a06b6386a3aadec676c764b	2001	10.1007/3-540-45406-3_5	Functional and Constraint Logic Programming	China National Conference on Chinese Computational Linguistics	JournalArticle
+175	5277b82c107eec8b84610badd8075f35a743b318	2001	10.1007/3-540-45241-9_6	High-Level Server Side Web Scripting in Curry	International Symposium on Practical Aspects of Declarative Languages	JournalArticle
+176	132a60b59106eb8222ceb6b15e9df098fbb59967	2001	10.1007/3-540-44716-4_11	Theoretical Foundations for the Declarative Debugging of Lazy Functional Logic Programs	Fuji International Symposium on Functional and Logic Programming	JournalArticle
+177	03d53214fde712cfd5cf4951998973ced704b429	2001	10.1007/3-540-44716-4_21	A Practical Partial Evaluator for a Multi-Paradigm Declarative Language	Fuji International Symposium on Functional and Logic Programming	JournalArticle
+178	87ad87f336dbbc434f712e6e4fc6b5caf096ec01	2001	10.1007/3-540-44716-4_10	A Framework for Goal-Directed Bottom-Up Evaluation of Functional Logic Programs	Fuji International Symposium on Functional and Logic Programming	JournalArticle
+179	e0b0ff6e5fc957ac8749b993f2dea099b445e7f2	2001	10.1007/3-540-44716-4_14	An Abstract Machine Based System for a Lazy Narrowing Calculus	Fuji International Symposium on Functional and Logic Programming	JournalArticle
+180	6502033d247605d1b58a3e5d97d37054e001866e	2001	10.1007/3-540-44716-4_13	A Complete Selection Function for Lazy Conditional Narrowing	Fuji International Symposium on Functional and Logic Programming	JournalArticle
+181	93c3354b4693f1d5d6805a6448c7896eac5f22f3	2001	10.1017/S1471068400001162	A general framework for lazy functional logic programming with algebraic polymorphic types	Theory and Practice of Logic Programming	JournalArticle
+182	d5846cefaee7d880f0d6eac522c682134b7a7d9e	2000	10.1007/3-540-44411-4_17	An Automatic Composition Algorithm for Functional Logic Programs	Conference on Current Trends in Theory and Practice of Informatics	JournalArticle
+183	f6d8ca4bcae91206c707a565d05e463bdf477350	2000	10.1007/3-540-44464-5_17	Improving Functional Logic Programs by Difference-Lists	Asian Computing Science Conference	JournalArticle
+184	69d3c892b333d1ef5efb1b276d956b33a1d89971	2000	10.1007/3-540-44404-1_24	Using an Abstract Representation to Specialize Functional Logic Programs	Logic Programming and Automated Reasoning	JournalArticle
+185	1772af5bfc0c54c7c7231e08214baa417755001c	2000	10.1007/3-540-45361-X_6	ObjectCurry: An Object-Oriented Extension of the Declarative Multi-Paradigm Language Curry	International Symposium on Implementation and Application of Functional Languages	JournalArticle
+186	9c9eac74f115842d88c11e89dcc1ca2e44f28437	2000	10.1145/351268.351292	Type-based nondeterminism checking in functional logic programs	ACM-SIGPLAN International Conference on Principles and Practice of Declarative Programming	JournalArticle
+187	facf0381cc00f455c49a8a23d54ad9d4226f0334	2000	10.1007/3-540-45142-0_7	Measuring the Effectiveness of Partial Evaluation in Functional Logic Languages	International Workshop/Symposium on Logic-based Program Synthesis and Transformation	JournalArticle
+188	2e70f00a63a898e8711a2cb12b14a18871bdcad3	2000	10.1093/logcom/10.3.323	Stable results and relative normalization	Journal of Logic and Computation	JournalArticle
+189	3c67d19942c92f5a0f2415caa5d5d0639ac3d335	2000	10.1007/10720084_12	Compiling Multi-Paradigm Declarative Programs into Prolog	International Symposium on Frontiers of Combining Systems	JournalArticle
+190	c4ed1fbbc48396002e5cb3fa0db3f31fd4dbfbb6	1999	10.1007/3-540-46584-7_5	Using Static Analysis to Compile Non-sequential Functional Logic Programs	International Conference on Logic Programming	JournalArticle
+191	ec43c251b2267dc1c1e8eefce63f954c0f1844ce	1999	10.1007/3-540-47849-3_20	UPV-CURRY: An Incremental CURRY Interpreter	Conference on Current Trends in Theory and Practice of Informatics	JournalArticle
+192	64fa824afb2e825df8e16caaeab34efb3a820bfa	1999	10.1007/10705424_10	A Transformation System for Lazy Functional Logic Programs	Fuji International Symposium on Functional and Logic Programming	JournalArticle
+193	e5acbd1a2a0f0bdec256dc6d3df8b5b7d6e75851	1999	10.1007/10705424_23	A Semantics for Program Analysis in Narrowing-Based Functional Logic Languages	Fuji International Symposium on Functional and Logic Programming	JournalArticle
+194	ca5f457f8948174a2c94c75e911e742062806422	1999	10.1007/10704567_11	Distributed Programming in a Multi-Paradigm Declarative Language	ACM-SIGPLAN International Conference on Principles and Practice of Declarative Programming	JournalArticle
+195	ff55a8795bdb0b493db360887dad641da807494d	1999	10.1007/10704567_9	Functional Plus Logic Programming with Built-In and Symbolic Constraints	ACM-SIGPLAN International Conference on Principles and Practice of Declarative Programming	JournalArticle
+196	ab1e658fecbc56e8f93b2e6c0139338ec63f8e6b	1999	10.1007/3-540-48242-3_23	A Partial Evaluation Framework for Curry Programs	Logic Programming and Automated Reasoning	JournalArticle
+197	3c60d69e5144d8b002435ea1aad7cf4ac5a8cffe	1999	10.1145/317636.317910	Specialization of inductively sequential functional logic programs	ACM SIGPLAN International Conference on Functional Programming	JournalArticle
+198	9fc47ff17475645f5fe32f3de4946be5cfd0b37b	1999	10.1007/3-540-46562-6_26	Extensions: A Technique for Structuring Functional-Logic Programs	Ershov Memorial Conference	JournalArticle
+199	8c41555703684b29b475873d90e942d7bb43d7d3	1999	10.1007/3-540-48685-2_19	TOY: A Multiparadigm Declarative System	International Conference on Rewriting Techniques and Applications	JournalArticle
+200	6d1d2455ea353b25a4273e51827ff6b4aec27a2c	1999	10.1016/S0743-1066(98)10029-8	An Approach to Declarative Programming Based on a Rewriting Logic	The Journal of Logic Programming	JournalArticle
+201	d31e5c088b8cb85c904ee7c9b637ad9b23e91ebf	1999	10.1017/S0956796899003330	Higher-order narrowing with definitional trees	Journal of functional programming	JournalArticle
+202	42085f17f30a598cb006cf0725e969f3af9e7911	1998	10.1007/BFb0056619	A General Framework for R-Unification Problems	PLILP/ALP	JournalArticle
+203	1bcedbf28f3271e1423bed13aa9952cad50f9590	1998	10.1007/BFb0056631	Embedding Multiset Constraints into a Lazy Functional Logic Language	PLILP/ALP	JournalArticle
+204	ca0f8a13c26594fe0745618c8b137f354d0b90df	1998	10.1007/BFb0056627	Controlling Search in Declarative Programs	PLILP/ALP	JournalArticle
+205	8c913dfe07e5c00c82051d472f710f5db9f9abfd	1998		Admissible Graph Rewriting and Narrowing	IJCSLP	JournalArticle
+206	566a3aba3e37a4fe9faa98945d2600a6eda50473	1998	10.1016/S0020-0190(98)00016-7	Strongly Sequential and Inductively Sequential Term Rewriting Systems	Information Processing Letters	JournalArticle
+207	68f9f4f45db8e38bf70b7d0bbe79bf9bc2fc8c0a	1998	10.1145/291891.291896	Partial evaluation of functional logic programs	TOPL	JournalArticle
+208	69265d378013107de2f5d42c4ed9ce9f66b6f555	1998	10.1006/JSCO.1997.0197	A Deterministic Lazy Narrowing Calculus	Journal of symbolic computation	JournalArticle
+209	cc008c3cda1a11e93d74c3f6ac0d80324ac7c1f8	1998	10.1007/3-540-48483-3_11	Complete Strategies for Term Graph Narrowing	Workshop on Recent Trends in Algebraic Development Techniques	JournalArticle
+210	44beda28f8abb3bac84d9dc4aca8406728440858	1998	10.1007/BFb0052365	Solving Disequations Modulo Some Class of Rewrite Systems	International Conference on Rewriting Techniques and Applications	JournalArticle
+211	d4c6ce56bdfeecce099db4bfa017938530d92c93	1997	10.1007/BFb0027008	Conditional Term Graph Rewriting	ALP/HOA	JournalArticle
+212	94b29111955c79bcf43682635ebe71631290c18c	1997	10.1007/BFb0033854	Teaching Functional and Logic Programming with a Single Computational Model	Symposium on Programming Language Implementation and Logic Programming	JournalArticle
+213	2e017321429ee23af87a80900e25adb6ef16e7a4	1996	10.1145/234528.234734	Integration of functional and logic programming	CSUR	JournalArticle
+214	bcca47391a69fccb03e3047fcf08763c3f7b7351	1996	10.1007/3-540-61064-2_37	Relative Normalization in Deterministic Residual Structures	Colloquium on Trees in Algebra and Programming	JournalArticle
+215	e5d767d9af0f1fb4c4cb15a5a5534947a3519396	1996	10.1007/3-540-60983-0_19	A Definitional Approach to Functional Logic Programming	Extensions of Logic Programming	JournalArticle
+216	9ae1121541faebd8938fa99e780faa8b11849454	1996	10.1007/3-540-60983-0_8	Handling Equality in Logic Programming via Basic Folding	Extensions of Logic Programming	JournalArticle
+217	ff1a53dc691bdda9361c2e4ad48992a6bfa41681	1995		Calculi and Efficiency Measures for Narrowing Techniques		
+218	3dcf31ad40bc28077b58d4a97144d2c2d5314de8	1995	10.1007/BFb0026814	A Verified Implementation of Narrowing	Symposium on Programming Language Implementation and Logic Programming	JournalArticle
+219	4103c0bcedc8f7d875fe696258e50b420200f558	1995	10.1007/BFb0026815	A New Strategy for Semantic Matching	Symposium on Programming Language Implementation and Logic Programming	JournalArticle
+220	2c549d48c0c74112eeb08afcb18a96de7ede0138	1994	10.1007/BFb0014425	On the Operational Semantics of the Algebraic and Logic Programming Language LPG	COMPASS/ADT	JournalArticle
+221	1b8f76d2c1c74a22502da7b8bfb55bb6e56929b7	2024	10.1007/978-3-031-71294-4_2	Improving Logic Programs by Adding Functions	International Workshop/Symposium on Logic-based Program Synthesis and Transformation	JournalArticle
+222	91612a6b5fc05d64821941fb7ef9d993f7bfeb59	2022		Lazy Narrowing with Simpli(cid:12) ation (cid:3)		
+223	a2209fee37062bd440d7d0c2f756e74681d74c73	2022		Combining Lazy Narrowing and Simpli(cid:12) ation ?		
+224	ee1201a0edf0505d4fa16028e9ffed813df44c73	2022		Parallel Evaluation Strategies for Fun tional Logi Languages		
+225	db6b521668282d840bd50952b793780843ed3625	2022		Lazy Uni ation with Simpli ation		
+226	e9b87219b404b15df90ac1c3e97db960136ffbb0	2022		EÆ ient Translation of Lazy Fun tional Logi Programs into Prolog		
+227	bd64f235f438fe4f7be12747dd469407b9d8d306	2022		Curry : A Truly Fun tional Logi Language		
+228	cf7970834f77deee7e13638850e2f501d4b94078	2022		On Extra Variables in ( Equational ) Logi Programming		
+229	c6731455fd8528e823677b7dfde5e84118231095	2022		Higher-Order Narrowing with De(cid:12)nitional Trees		
+230	65c67dab4361d3ab8d81f532f65b60c35b89626c	2022		denotational semanti s for needed narrowing		
+231	7f97d1f00cb0fe3e47a91568a6e9be4975e8e2de	2021	10.1007/978-3-030-67438-0_7	Lightweight Declarative Server-Side Web Programming	International Symposium on Practical Aspects of Declarative Languages	JournalArticle
+232	7ade8d7e5de47a3aed65b44f7644cf2c90c7bcae	2020	10.1007/978-3-030-46714-2	Declarative Programming and Knowledge Management: Conference on Declarative Programming, DECLARE 2019, Unifying INAP, WLP, and WFLP, Cottbus, Germany, September 9–12, 2019, Revised Selected Papers	DECLARE	Book
+233	685359292b52fe8e267533ffdd7d687703ab53f1	2019		P L ] 2 8 A ug 2 01 9 Adding Data to Curry		
+234	964b37ba2eb2495cfec8ed392f160e8da91e075a	2018		Random Testing for Language Design		
+235	e71ab024a90d0330fa15d22ef81245c8f47dda3e	2018		Technical Communications of the 33rd International Conference on Logic Programming, ICLP 2017, Melbourne, Australia, August 28 - September 1, 2017	International Conference on Logic Programming	Conference
+236	4658ed859d0036bb94d54a1fba6101700cdb2c64	2017		CPM : A Declarative Package Manager with Semantic Versioning – System Description –		
+237	6d07c65641da7030587c3d024055728ba5b509ce	2017	10.4230/OASIcs.ICLP.2017.6	Semantic Versioning Checking in a Declarative Package Manager	International Conference on Logic Programming	JournalArticle
+238	955cc1b8b61d0a0597d573e67a7559016041f4e4	2016		Transforming Boolean Equalities into Constraints 1		
+239	e23f31cd5acdfddb2cbd0712ce507f127e11a979	2016		Formalising Luck Improved Probabilistic Semantics for Property-Based Generators		
+240	fa62bf7b4387f74fd995db6f5cf9df170ff7b944	2015	10.1007/978-3-319-19686-2	Practical Aspects of Declarative Languages	Lecture Notes in Computer Science	Review
+241	1bacba94368ddb9b2197816ad73513b21cba2852	2015		Dependable Property-Based Testing		
+242	dc044b168266a54e6592131ac94ab1b59bc81431	2015		Making Our Own Luck A Language for Random Generators ( Extended Abstract )		
+243	c131ab3384b88c71fe1671c9eb5edd02b0b0c469	2015		Utilisation de la sur-réduction pour le calcul du différentiel entre deux politiques de sécurité		
+244	6c9b2d5a5de9de40eab087f6f2bb2644e97c92d4	2014	10.1007/978-3-642-54624-2_16	Functional Logic Programming in Maude	Specification, Algebra, and Software	JournalArticle
+245	7528c7d0b2182e974b53ba9244d49b718259327f	2014		Declarative Multi-paradigm Programming	WLP/WFLP	JournalArticle
+246	c05a3d04d95975e8aa5726d20b1506353f2696aa	2013	10.1007/978-3-642-37651-1	Programming Logics	Lecture Notes in Computer Science	
+247	4b3df21d0524d7b11347be52cf3277f6c6ce2197	2013	10.1007/978-3-642-37651-1_6	Functional Logic Programming: From Theory to Curry	Programming Logics	JournalArticle
+248	777de020e377896a61e0623cd1b8288dff6beeb3	2012	10.15760/ETD.914	The Basic Scheme for the Evaluation of Functional Logic Programs		
+249	d1d56b1c5f63a8df851f987bc99a8de9a0ba4144	2012	10.4230/LIPIcs.ICLP.2012.130	Improving Lazy Non-Deterministic Computations by Demand Analysis	International Conference on Logic Programming	JournalArticle
+250	63af166349892b7dd0de7d3af70aa576e9adf9e2	2012		Trends in Specialization of Interpreters using Offline Narrowing-Driven Partial Evaluation.		
+251	b3f85c7750e5cdcf7f07e13aaa973b079e78b1d3	2012		Counterexample generation for higher-order logic using functional and logic programming		
+252	26baf3874ce2b004e0909de13df4bd4e86880976	2012		Search strategies for functional logic programming	Software Engineering	JournalArticle
+253	71af41efc7fc590bf1a2358a587bc6c5ff4e4f53	2012		Security models in rewriting logic for cryptographic protocols and browsers		
+254	7135dd378574726981d630d32facf944dfabef36	2011		Un Esquema de Programaci on L ogico Funcional Concurrente con Restricciones		
+255	154968e7efaec1b65678d74f342991d15e87ad3d	2011	10.4230/LIPIcs.ICLP.2011.198	Declarative Processing of Semistructured Web Data	International Conference on Logic Programming	JournalArticle
+256	f4d2f935691f601e87adf06f66cde0c7c3bfa632	2011		A Compact Goal-Independent Bottom-Up Fixpoint Modeling of the Behavior of First Order Curry		
+257	19a026c516a71a840d7509add5fbf1f276291c62	2011		A Semantic Framework for Higher-Order Functional Logic Programming with Lambda Abstractions		
+258	3fbe5cfdcdb6fc01a111326f5b99f27043762798	2011	10.25560/7095	Finding the lazy programmer's bugs		
+259	894c78a356504869c25b3882321d713c585312a4	2010		A Transformation Tool for Functional Logic Program Development ?		
+260	52f443d1d754eda7f9b2d832e54e50caa28a1395	2010		Using an Abstra t Representation to Spe ializeFun tional Logi Programs ?		
+261	06beaa9b4dab4cdf86b8a0a817294f5794454ef1	2010		Lazy and Faithful Assertions for Functional Logic Programs		
+262	649f0c556b23af1d3deedaf571bdca30c383d18f	2010	10.1007/978-3-642-14309-0_13	Transformation and Debugging of Functional Logic Programs	25 Years GULP	Review
+263	6b873b56bbcdec2aa4e1ea19485d2b8d13237b21	2010	10.4230/LIPIcs.ICLP.2010.222	Towards a Parallel Virtual Machine for Functional Logic Programming	International Conference on Logic Programming	JournalArticle
+264	194083ec9eaf90d91ff6f776ff799fd4d0c9b551	2009	10.1007/BF03037257	The narrowing-driven approach to functional logic program specialization	New generation computing	JournalArticle
+265	a1bcb034cc7ecc353d672c4529e699482351d1a2	2009		Constructing a Bidirectional Transformation between BPMN and BPEL with Functional-logic Graph Parser Combinators		
+266	818cd6b40761c4c5967a0bbff652588df9fd4cfe	2008		New Trends in the Intergration of Paradigms		
+267	6afb4ad782dfa45440bfb61f8e17fda9879800ee	2008		Representing Functional Logic Computations ?		
+268	b1d595a2ee5843439882607e5a50fd17880ef9d6	2008		Natural rewriting and narrowing for general term rewriting systems		
+269	00e17cc3ad3448c89baa4621fdef6f1104398e7c	2008		Hardware-Assisted and Target-Directed Evaluation of Functional Programs		Review
+270	d92e7c751e45c6d3c75496950136b50780815285	2008		Slicing Condicional de		
+271	cf8c46baf718d89ecbeb389f8915fab68ceb6da7	2008		A Multi-thread Implementation of Functional Logic Programming		
+272	c3845a0a1467e26f5868a4e15c69f7433ce79cf9	2007		Specialization of Functional Logic Programswith Dynamic Scheduling ?		
+273	d1516af3addfe5bb60eeceb2afac6cd2738db703	2007		Multi-paradigm Logic Programming a Simple Operational Model for Concurrent Functional Logic Programming		
+274	50098423f4f13e6410cbd06d2376b629431ec1bd	2007		Narrowing for NonDeterminism with Call-Time Choice Semantics ?		
+275	12495716b60110b7d9fea088fc662a9de63eb002	2007		Similarity-based Unification Embedded into Narrowing ?		
+276	6fa2a8e10c3fc9241f6b18f8130f60ca3e4e7ab3	2007		Expander2 as a Prover and Rewriter		
+277	ca0bc72b154b2f6e3487c9901388c9a8832ca0d5	2007		Dynamic Detection of Deterministic Computations in Non-Deterministic Functional-Logic Programs		
+278	c4aeb8101e2226e4e7b035225e0e50e4caaa27f0	2007		Parallel Graph Narrowing		
+279	aa553571352e919feb161b08de10a404a1d7c3b7	2007		Complete Strategies for Admissible-Graph Collapsing Narrowing		
+280	777569fbada760c06e56c9a0d2c9c76730f1fa36	2007		0 Proof in Flat Speciications 10.1 Introduction		
+281	b3584aed7c95a591511f78cba39e52c2f25a96b5	2007		Formalizing Deterministic Semantics of DeclarativeProgramming LanguagesHeinz		
+282	696b25384339c53e7c55e92983a85b16be26d230	2007		Specialization of Functional Logic Programs		
+283	013e4eea71029aed5bfbd29a774ebdda44cf572b	2007		An Open System to Support Web-based Learning ?		
+284	42eecb25eba6f979c41f54b25b9310d6ae7dc079	2007		El indeterminismo en programacion logico-funcional: un enfoque basado en reescritura 1		
+285	12f9380ecebc588f76bca831ade133f9eb313561	2007	10.1016/j.entcs.2007.09.018	Higher-Order Proof Construction Based on First-Order Narrowing	LFMTP@CADE	JournalArticle
+286	e39412995b1f738c9d51564527d4ce7b06e3bf18	2006		Reporting Failures in Functional Logic		
+287	eaefa60f6d83687a9b46c55105ffaaa18b368b53	2006		Adding Constraint Handling Rules to Curry	Workshop Logische Programmierung	JournalArticle
+288	b13304e560cec6149af1ca3d1f3098b6afb0836a	2006		Elimination of Extra Variables in Functional Logic Programs		
+289	80e087df349309044db31e97d67ce0adc0aa7895	2006		Relating two semantic descriptions of functional logic programs		
+290	7ff130d97a6399a97dfb8aea1243f1eabdb1a223	2006		2 Detecting Deterministic Functions in Functional-Logic Programs		
+291	cd7fe76a9161dbedcecd69ffda556db0de7485a8	2006		DOCTEUR DE L'I NSTITUT NATIONAL		
+292	133ef3928d10c52c27530cae32da7f925ef7865f	2006		Extending logic programming with coinduction		
+293	7d65bbfd19ae5a6ccbae8b5248b0d95cfcce905a	2005		Functional Logic Programming with Databases		
+294	e5e6fddbd55f1c279b71e48533879b4735a6c138	2005	10.1145/1085099.1085104	Adding constraints to curry via flat guards	Workshop on Curry and Functional Logic Programming	JournalArticle
+295	60df3a1716c4d5bf6163b4c9484c83665488ff66	2005		O(cid:31)ine narrowing-driven partial evaluation		
+296	9285ebb1bba326af19c932c65c66b774fbd1c57a	2005		A Note on Syntactic Annotations for Narrowing ∗ María Alpuente		
+297	80f5e42efc4230b5652c1c9264ff231a10bbedc0	2005		Demand-driven Search in Functional Logic Programs		
+298	31bc01f8b4ef392a68ddecb042af0df20096e67f	2005		Towards a Workbench for Interactive Formal Reasoning		Review
+299	d21e71f1a44e5a6bac2c7476c5b5db636502511b	2004	10.1007/b102591	Advances in Artificial Intelligence – IBERAMIA 2004	Lecture Notes in Computer Science	
+300	76d11bdf3e963765f447a23c920e8cd972dff247	2004	10.1007/11506676_7	Natural Rewriting for General Term Rewriting Systems	International Workshop/Symposium on Logic-based Program Synthesis and Transformation	JournalArticle
+301	7f6c08bd828ad6a2dd6e5a2f6bfbc246ee66596a	2004		Dynamic Predicates in Functional Logic Programs	Journal of Functional and Logic Programming	JournalArticle
+302	3e8646cb4a61b12d2d2f22f6e3d3514978360797	2004		Tecnicas de diagnostico y depuracion declarativa para lenguajes logico-funcionales		
+303	66328c8ff322e198e848984a3cb4dc95975b4d17	2004	10.29375/25392115.1073	Un Depurador Abstracto, Inductivo y Paramétrico para Programas Multiparadigma	Rev. Colomb. de Computación	JournalArticle
+304	5f5a1a0eadcb9709c7a787cc3655a9ac3bfad706	2004	10.15760/ETD.2658	TEABAG: A DEBUGGER FOR CURRY		
+305	8c0e2a05c30480d610b770619bbc93faf9882ec3	2004		Natural Narrowing as a General Unied Mechanism for Programming and Proving		
+306	c61da9493f0dd5208d4e1d3aa7fadaea722b8921	2004		Functional Logic Programs with Dynamic Predicates ? – Extended		
+307	7ea5544758cab9bcaf540be078b81f0946fc902c	2004		Encapsulating Non-Determinism in Functional Logic Computations	Journal of Functional and Logic Programming	JournalArticle
+308	44d76acd77814171e3d8429d9e98f2058449b5bf	2004		Una aproximaci on al fallo en programaci on declarativa multiparadigma		
+309	ee47651f3e22408dbe8e72ed46d1f06cedfc0795	2004		Declarative Debugging of Functional Logic Programs 1		
+310	bd6d7f836e64e0f48120bbe8aecd292ec0ea8fb1	2004		Una aproximación al fallo en programación declarativa multiparadigma		
+311	5f633486f8241e853d3522a64fa9adb8275014d2	2004		13th International Workshop on Functional and (Constraint) Logic Programming		
+312	080a0458b0da239d8072827214acffa2cbc1a37d	2003		Strategies and analysis techniques for functional program optimization		
+313	3ffe087b8378ec3a3efca6423ade668a04281aa8	2003		Strategies and Analysis Techniques in Functional Program Optimization ∗		
+314	ee0481bd3fc1c3b5ab59a9c67b0b7eec0ba1a580	2003		Improving Deterministic Computations in Lazy Functional Logic Languages	Journal of Functional and Logic Programming	JournalArticle
+315	8c97a3a9f343f3f35501453844db7bcc953911f5	2003		Architecture of a Virtual Machine for Functional Logic Computations		
+316	a5a269542fecb8fc6dc67c52bc860a980c2b57e1	2003		Constraints, Predicates, Functions and a Turtle		
+317	bf72035bbb1c94e41cd4ef0b17c5c9e1929684a2	2003		Curry: an integrated functional logic language (version 0		
+318	87ba535c128f2f7da1af155bd4b044dfbd052b95	2003		An Open System to Support Web-based Learning		
+319	a93c0baf7750de670e2d88195ca5df757c8670b0	2003		Refined Definitional Trees and Prolog Implementations of Narrowing		
+320	61356c507f88072be5e148c71377f05329db3de7	2003		Curry: An Integrated Functional Logic Language		
+321	d5cc6ed179e1d856575ea1ce08b70728c1082415	2003		Multiple Evaluation Strategies for the Multiparadigm Programming Language Brooks		
+322	50107fb2b1a401f1008446d0415a7be2f1f37ad4	2002		Lazy Narrowing and Needed Narrowing : A Comparison		
+323	dbcda9fec7249167068939f063ed2f501ddc5a4f	2002		Under Consideration for Publication in Theory and Practice of Logic Programming Specialization of Functional Logic Programs Based on Needed Narrowing *		
+324	29733936d631fdb92f6ccaae62552cfd012edc39	2002		A Deterministic Operational Semantics for Functional Logic Programs	APPIA-GULP-PRODE	JournalArticle
+325	9eb434c7c03e13db5f96f98244437310320e2a58	2002		Compositional Graphs ?		
+326	f07c72969afd90b532f749e2329105319e74ca05	2002		A Practical Partial Evaluation Scheme for Multi-Paradigm Declarative Languages	Journal of Functional and Logic Programming	JournalArticle
+327	beaf597fe1552d35691e90bf0d5d64b0b618cd89	2002		Programming Autonomous Robots in Curry 1		
+328	f980da02a5f0654ef471a0b37191a52c727c3b44	2002		Automatic Tupling for Functional-logic Programs Automatic Tupling for Functional-logic Programs ?		
+329	c85b2e474078f0db0269d3d8d37751ac2721d800	2002		Complete Selection Functions for a Lazy Conditional Narrowing Calculus	Journal of Functional and Logic Programming	JournalArticle
+330	49cf43ad11180002baa4e81719ddea76e50eebf0	2002		Programming with Narrowing		
+331	eed6a51f85008f9f0816f7f2773997657ef301be	2002		2 Functional Logic Programming and Curry		
+332	3eb6b459500fe82b0ec567781c65df559c9fc19f	2002		5 Functional and Constraint Logic Programming		
+333	1d427e5c9b21bcdb2d00e078acf3ae83663fb2cf	2001		Partial evaluation of multi-paradigm declarative languaces: foundations, control, algorithms and efficiency		
+334	9823760012b4ea8e80831f546d5b37a36819267f	2001		Measuring the E ectiveness of PartialEvaluation ? ? ?		
+335	9b56456a3e1479cc2b4c3d872ac744613e0da6e4	2001		Model Based Testing with Constraint Logic Programming: First Results and Challenges		
+336	40b64d0994266289d896dae3a3a914db38dd0c3e	2001	10.1007/3-540-45361-X	Implementation of Functional Languages	Lecture Notes in Computer Science	
+337	c948d7bd0855497a2300b1a9638d2f4e38330d3a	2001	10.1007/3-540-45406-3	Constraints in Computational Logics	Lecture Notes in Computer Science	
+338	unresolved-record-338	2001		cs . P L ] 1 4 N ov 2 00 1 An Integrated Development Environment for Declarative Multi-Paradigm Programming ∗		
+339	016affc7e5cc55882184016a8291c96bf67fb51d	2001		De larative Debugging of Fun tional Logi Programs ?		
+340	f8045d81000a96946f17c3d2a67141fda41a675e	2001		Partial Evaluation of Multi-Paradigm		
+341	4ef90d29dde801cfd77d2f522aff784dcc21dc16	2001		Rened Denitional Trees and Prolog Implementations of Narrowing		
+342	9d085a15af8ff04eb4350e9d7dc718b604f92da3	2001		An Evaluation Semantics for Narrowing-Based Functional Logic Languages	Journal of Functional and Logic Programming	JournalArticle
+343	ac58f249feaf8b7e7f69d13f741a0d5620133575	2000	10.15760/ETD.6791	Needed Narrowing as the Computational Strategy of Evaluable Functions in an Extension of Goedel		
+344	6943e909d999de6bc5122d5c3cb6db442171de68	2000		A Formal Approach to Reasoning about the Effectiveness of Partial Evaluation	Workshop on Functional and Constraint Logic Programming	JournalArticle
+345	0eef3949c9b45aa83a190237c2ea8c8295a23919	2000		Using PE to Automate Program Composition	Workshop on Functional and Constraint Logic Programming	JournalArticle
+346	69e65de7a44c28728bbd4f30f73905d4b48ea57a	2000		Measuring the Effectiveness of Partial Evaluation	International Workshop/Symposium on Logic-based Program Synthesis and Transformation	JournalArticle
+347	09c4b659d8291fc1ca0f8fbad65752c5efc38e05	2000		Realistic Program Specialization in a Multi-Paradigm Language	Workshop on Functional and Constraint Logic Programming	JournalArticle
+348	80e6687be5c21cc088e0e646c831e8f26becb70b	2000		A Practical Method for Program Specialization in aMulti-Paradigm Language ?		
+349	ecf1b92cc4c623ce6b8fa6e8ee091d57fcf80a19	2000	10.1007/3-540-46584-7_4	A Functional Logic Programming Approach to Graphical User Interfaces	International Symposium on Practical Aspects of Declarative Languages	JournalArticle
+350	0f6c777cacf3b2973fa9096e5ebea6d9dd5cc784	2000	10.15760/ETD.6977	Compiling Evaluable Functions in the Godel Programming Language		
+351	2000296541f8ddc487b703403cce9f1ac5ab1a4a	2000		List-Processing Optimizations in Curry ?		
+352	6bea9987d19a1339ddda09645fe61bc6c10de284	2000	10.15760/etd.7071	Evaluable Functions in the Godel Programming Language: Parsing and Representing Rewrite Rules		
+353	42cd555ef7c4b1bf80fa7a52e5a7f7ca7425e03c	2000		Using Static Analysis to Compile Non-sequential Functional Logic Programs ?		
+354	0771bf1f22501322a301bbacb31b07a04857f66a	2000		A Formal Approa h to Reasoning about theE e tiveness of Partial		
+355	d2b894e80442d0f2d5df135a3f0313a4ed3715e9	2000		Measuring the E e tiveness of PartialEvaluation ? ? ?		
+356	524fa18f1d977cd87ed7223c3a016c9bee92c3f0	1999		Semantic Matching for Left-Linear Convergent Rewrite Systems	Journal of Functional and Logic Programming	JournalArticle
+357	9814fbc4966f1dbadb159acf5fa0083f2407f149	1999		Disequalities May Help to Narrow	APPIA-GULP-PRODE	JournalArticle
+358	4926dfb39a5772ed14d0810b2e0e7f0260b1f211	1999		Transformation-based Strategies for Lazy FunctionalLogic Programs ?		
+359	962f12b2d26b2d14166ba9965f7b31853e467f4c	1999		A Framework for the Analysis of Syntactic Replacement Restrictions		
+360	1892b09fffa555ec38dde466794f105f5d8349c2	1999		An Abstract Machine for Curry and Its Concurrent Implementation in Java	Journal of Functional and Logic Programming	JournalArticle
+361	a84274122af80145b294e5990fd40dc44ac811cf	1999		UPV-Curry : An Incremental Curry Interpreter withPolymorphic Types and Monadic I / O		
+362	909b1949a6616c23447d66dd750c6a4c9e41adb2	1999	10.14279/DEPOSITONCE-102	A set based calculus and its implementation		
+363	19e8f2e6d0c51c4ca8531070f1290ea7f11fe4a9	1999		Specialization of Functional Logic Programs Based on Needed Narrowing ? Preliminary Version		
+364	ce4f23c76be176ca195a8f26cb0a214ebc65d3f0	1998		Recovering Sequentiality in Functional-Logic Programs	APPIA-GULP-PRODE	JournalArticle
+365	d40bc6cde9af9ecade64440bd378ae1f063c2a8a	1998		Experiments with the Call-by-Value Partial Evaluator		
+366	ac72b29c068e4adb6f1b407e8cce32a20d9f9a46	1998	10.1016/S1571-0661(05)82550-2	Adventures in sequent calculus modulo equations	Workshop on Rewriting Logic and Its Applications	JournalArticle
+367	ea835b580fbba7a0c6f2019bf65f3efe5f7ecf3e	1998		Demand-driven Search in Functional Logic Programs (Extended Abstract)		
+368	ab1178111795458fd560f4d34b31064f4bf2667c	1997		Narrowing the Narrowing Spa e ?		
+369	17b8e759d6fd18f6587c5d3c0cc37195722f62fa	1997		Declarative Programming with Real Constraints		
+370	a37586d5e51f10d47ac0f6ab1f284ce9d13a0aa8	1997		A Concurrent Implementation of Curry in Java		
+371	2189cbe62e546cdddf85137e035dacda7d988b68	1996		A Parallel Narrowing Strategy		
+372	24ec5b11df81ce93b4aa9eef7ad0d8642420c3cd	1996		Higher-Order Narrowing with De nitional		
+373	24e85d28a1020b9201532998159f1c76c839ae13	1996		Call-By Name Partial Evaluation of Functional Logic Programs	APPIA-GULP-PRODE	JournalArticle
+374	d4d14ee6187f8ca5eb1bd357ce6cbd4a63293e07	1996		Higher-order Narrowing with Deenitional Trees Higher-order Narrowing with Deenitional Trees		
+375	61fd4fb7a478a26cd1b7e2356194b1d106f2163c	1996		Sequential Implementation of Parallel Narrowing		
+376	647ea058a81adf55745470d4cc972e2507566f40	1996		A Rewriting LogicforDeclarative Programming		
+377	d1b4e96aeb14b2e6c577887a819d8f3c438a122d	1995		Curry : A Truly Functional Logic LanguageMichael		Review
+378	b5b5d206f834ce5092ddab114c80e95c5f786587	1995		Gg Odel with User-deened Evaluable Functions		
+379	1ed96aac294f4ef6efd0d9f13462eba3b894bced	1995		G?del with User-defined Evaluable Functions		
+380	ed0e7fa55f4de1feaef838f9471ac77d5aeace3e	1995		Dagstuhl Seminar 9538 New Trends in the Intergration of Paradigms		
+381	064ea3fb741301a8b469c2bcd66b31c99d6d4db0	1995		Dagstuhl Seminar 9538 New Trends in the Intergration of Paradigms		
+382	ff628aa687cc8191c3f607f91af3e7a6ad4f6792	1994		Integrating Disequations in the Algebraic and Logic Programming Language LPG	ICLP Workshop: Integration of Declarative Paradigms	JournalArticle
+383	1be2347c04ac6c2598fdd8d56b56ac3e8ecffe4e	1994		The JUMP-machine: A Generic Basis for the Integration of Declarative Paradigms	ICLP Workshop: Integration of Declarative Paradigms	JournalArticle
+384	d0acab2676d86abaca4ad6349f22b6e8baf6f508	1994		Relative Normalization in Orthogonal Expression Reduction Systems		
+385	unresolved-record-385	2007		Ò Çôööøøóòòð Ëëññòøø Blockin× Óö		
+386	2a1b06dd4e12b8807322fda7682de5c59e10b3da			Lazy Narrowing and Needed Narrowing : A ComparisonMar		
+387	6d9bc3915380162987343bd0b9d5dd8300864100			Indy User's Manual (v1.8)		
+388	c0e8961168c5d3b9af6293f3d182448c2a8bb0a2			A Functional-logic Alternative to Monads		
+389	f37e743a8cdaf9c7a46bfea889484b024a297234			An Approach to Declarative Programming Based on a Rewriting Logic		
+390	24e27874202c5ce85e2e5ab54e4998f6751f7aa3			Under Consideration for Publication in Theory and Practice of Logic Programming Adding Plural Arguments to Curry Programs		Review
+391	1dbd579bf3bbc51b6c62949b566a36b21b598832			A Safe Transformation System for Optimizing Functional Programs a Safe Transformation System for Optimizing Functional Programs ?		
+392	d6447c5a5f6457129d2e1caa9e098fc7f3b97339			Under Consideration for Publication in J. Functional Programming F U N C T I O N a L P E a R L Concurrent Distinct Choices *		
+393	f4308f8b9b365ea9b5900303fc9f74e5b254f341			Strongly Sequential and Inductively Sequential Term Rewriting Systems		
+394	955d5abea95b573e5a0a7f3949ab2e17c066c0dd			E -uniﬁcationbymeansoftreetuple synchronizedgrammars		
+395	da11d2718a1d14bc80fcc6fbb3c8c28fb868221f			Can Logic Programming Be Liberated from Predicates and Backtracking?		
+396	43ad7e93673ee8b75781d171e66569b727785b4f			From Boolean Equalities to Constraints From Boolean Equalities to Constraints		

@@ -1,0 +1,56 @@
+rank	openalex_id	year	doi	title	venue	type
+1	W847838221	2015	https://doi.org/10.1007/978-3-319-19797-5_15	Fusion for Free	Lecture notes in computer science	conference-paper
+2	W1480909796	2008	https://doi.org/10.1007/978-3-540-78800-3_24	Z3: An Efficient SMT Solver	Lecture notes in computer science	conference-paper
+3	W1510733790	2013	https://doi.org/10.1007/978-3-642-39799-8_45	Smten: Automatic Translation of High-Level Symbolic Computations into SMT Queries	Lecture notes in computer science	conference-paper
+4	W1528278469	1986	https://doi.org/10.21236/ada606736	Multiple-Valued Logic Minimization for PLA Synthesis		report
+5	W1579437898	2009	https://doi.org/10.1007/978-3-642-00768-2_16	Boolector: An Efficient SMT Solver for Bit-Vectors and Arrays	Lecture notes in computer science	conference-paper
+6	W1585877844	2009	https://doi.org/10.1007/978-3-642-04694-0_6	State Joining and Splitting for the Symbolic Execution of Binaries	Lecture notes in computer science	conference-paper
+7	W1946187443	2010	https://doi.org/10.1007/978-3-642-12002-2_26	A Polymorphic Intermediate Verification Language: Design and Logical Encoding	Lecture notes in computer science	conference-paper
+8	W1959256509	2005	https://doi.org/10.1007/978-3-540-30569-9_3	The Spec# Programming System: An Overview	Lecture notes in computer science	conference-paper
+9	W1966982815	2005	https://doi.org/10.1145/1040305.1040334	Scalable error detection using boolean satisfiability		conference-paper
+10	W1970005004	2014	https://doi.org/10.1145/2568225.2568293	Enhancing symbolic execution with veritesting		conference-paper
+11	W1979693894	2012	https://doi.org/10.1145/2254064.2254088	Efficient state merging in symbolic execution		conference-paper
+12	W1980939032	1994	https://doi.org/10.1006/inco.1994.1093	A Syntactic Approach to Type Soundness	Information and Computation	article
+13	W1987647365	2013	https://doi.org/10.1145/2491411.2491447	Jalangi: a selective record-replay and dynamic analysis framework for JavaScript		conference-paper
+14	W2009775190	2002	https://doi.org/10.1145/581690.581691	Template meta-programming for Haskell		conference-paper
+15	W2011367000	2008	https://doi.org/10.1145/1455518.1455522	EXE	ACM Transactions on Information and System Security	article
+16	W2014473133	2012	https://doi.org/10.1145/2393596.2393667	Rubicon		conference-paper
+17	W2040060046	2000	https://doi.org/10.1007/s100090050043	Model checking JAVA programs using JAVA PathFinder	International Journal on Software Tools for Technology Transfer	article
+18	W2049707975	2008	https://doi.org/10.1109/fmcad.2008.ecp.23	Symbolic Program Analysis Using Term Rewriting and Generalization		conference-paper
+19	W2057156093	2014	https://doi.org/10.1145/2594291.2594340	A lightweight symbolic virtual machine for solver-aided host languages		conference-paper
+20	W2084115964	2013	https://doi.org/10.1145/2503778.2503791	Extensible effects		conference-paper
+21	W2100883156	2013	https://doi.org/10.1145/2500365.2500602	The constrained-monad problem		conference-paper
+22	W2101512909	1976	https://doi.org/10.1145/360248.360252	Symbolic execution and program testing	Communications of the ACM	article
+23	W2112447468	2006	https://doi.org/10.1145/1146238.1146251	Modular verification of code with SAT		conference-paper
+24	W2129538349	2004	https://doi.org/10.1007/978-3-540-24730-2_15	A Tool for Checking ANSI-C Programs	Lecture notes in computer science	conference-paper
+25	W2130427425	2010	https://doi.org/10.1007/978-3-642-17511-4_20	Dafny: An Automatic Program Verifier for Functional Correctness	Lecture notes in computer science	conference-paper
+26	W2134734244	2010	https://doi.org/10.1145/1806799.1806833	Oracle-guided component-based program synthesis		conference-paper
+27	W2136601052	2015	https://doi.org/10.1145/2786805.2786830	MultiSE: multi-path symbolic execution using value summaries		conference-paper
+28	W2137351629	2011	https://doi.org/10.1145/1995376.1995394	Satisfiability modulo theories	Communications of the ACM	article
+29	W2149236697	2006	https://doi.org/10.1145/1168857.1168907	Combinatorial sketching for finite programs		conference-paper
+30	W2151156765	1990	https://doi.org/10.1016/0890-5401(90)90018-d	Type inference for polymorphic references	Information and Computation	article
+31	W2155621670	2007	https://doi.org/10.1145/1287624.1287653	Finding bugs efficiently with a SAT solver		conference-paper
+32	W2163671349	2013	https://doi.org/10.1145/2509578.2509586	Growing solver-aided languages with rosette		conference-paper
+33	W2166708428	2014	https://doi.org/10.1145/2660193.2660208	Smten with satisfiability-based search		conference-paper
+34	W2289066165	2016	https://doi.org/10.1007/978-3-319-30936-1_14	The Essence of Dependent Object Types	Lecture notes in computer science	conference-paper
+35	W2293168108	1990	https://doi.org/10.1145/91556.91622	Abstracting control		conference-abstract
+36	W2332661323	2016	https://doi.org/10.1145/2872362.2872406	Specifying and Checking File System Crash-Consistency Models		conference-paper
+37	W2373227884	2016	https://doi.org/10.1145/2884781.2884807	Angelix		conference-paper
+38	W2568721247	1972	https://doi.org/10.1016/1385-7258(72)90034-0	Lambda calculus notation with nameless dummies, a tool for automatic formula manipulation, with application to the Church-Rosser theorem	Indagationes Mathematicae (Proceedings)	article
+39	W2610511123	1975	https://doi.org/10.1145/800027.808444	A new approach to program testing		conference-paper
+40	W2611698539	1975	https://doi.org/10.1145/800027.808445	SELECT---a formal system for testing and debugging programs by symbolic execution		conference-paper
+41	W2738478951	2017	https://doi.org/10.1145/3110256	Abstracting definitional interpreters (functional pearl)	Proceedings of the ACM on Programming Languages	conference-abstract
+42	W2752311799	2017	https://doi.org/10.1145/3110271	Compiling to categories	Proceedings of the ACM on Programming Languages	article
+43	W2898543817	2018	https://doi.org/10.1145/3276519	Finding code that explodes under symbolic evaluation	Proceedings of the ACM on Programming Languages	article
+44	W2935677582	2019	https://doi.org/10.1145/3297858.3304027	Puddle		conference-paper
+45	W2953958793	2019	https://doi.org/10.1145/3314221.3314618	Lazy counterfactual symbolic execution		conference-paper
+46	W2966625487	2019	https://doi.org/10.1145/3331545.3342590	G2Q: Haskell constraint solving		conference-paper
+47	W2974073952	2019	https://doi.org/10.1145/3341301.3359641	Scaling symbolic evaluation for automated verification of systems code with Serval		conference-paper
+48	W2980312990	2019	https://doi.org/10.1145/3358502.3361269	From definitional interpreter to symbolic executor		conference-paper
+49	W3105410168	2020	https://doi.org/10.1145/3368089.3409734	Java Ranger: statically summarizing regions for efficient symbolic execution of Java		conference-paper
+50	W3109485936	2020	https://doi.org/10.1145/3428232	Compiling symbolic execution with staging and algebraic effects	Proceedings of the ACM on Programming Languages	article
+51	W4205913186	2022	https://doi.org/10.1145/3498709	A formal foundation for symbolic evaluation with merging	Proceedings of the ACM on Programming Languages	article
+52	W4237492309	2005	https://doi.org/10.1145/1065010.1065036	DART		conference-paper
+53	W4243882797	2012	https://doi.org/10.1145/2103656.2103675	Constraints as control		conference-paper
+54	W4246166885	2004	https://doi.org/10.1109/cgo.2004.1281665	LLVM: A compilation framework for lifelong program analysis &amp; transformation		conference-paper
+55	W4246385123	2007	https://doi.org/10.1145/1190216.1190226	Compositional dynamic test generation		conference-paper

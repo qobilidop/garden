@@ -1,0 +1,63 @@
+rank	openalex_id	year	doi	title	venue	type
+1	W1979345446	2013	https://doi.org/10.1016/j.jss.2013.02.061	An orchestrated survey of methodologies for automated software test case generation	Journal of Systems and Software	article
+2	W2161963160	2012	https://doi.org/10.1145/2393596.2393666	Automated concolic testing of smartphone apps		conference-paper
+3	W2085577046	2013	https://doi.org/10.1145/2508859.2516676	AppIntent		conference-paper
+4	W2152565783	2011	https://doi.org/10.1145/1993316.1993558	Directed incremental symbolic execution	ACM SIGPLAN Notices	article
+5	W2078988604	2013	https://doi.org/10.1007/s10515-013-0122-2	Symbolic PathFinder: integrating symbolic execution with model checking for Java bytecode analysis	Automated Software Engineering	article
+6	W4236799059	2011	https://doi.org/10.1145/1993498.1993558	Directed incremental symbolic execution		conference-paper
+7	W2155539595	2011	https://doi.org/10.1145/2001420.2001425	Symbolic execution with mixed concrete-symbolic solving		conference-paper
+8	W2139459831	2013		An Orchestrated Survey on Automated Software Test Case Generation I		article
+9	W2471111208	2016	https://doi.org/10.1109/tse.2016.2584063	Dependence Guided Symbolic Execution	IEEE Transactions on Software Engineering	article
+10	W2001601301	2011	https://doi.org/10.1145/2025113.2025152	Path exploration based on symbolic output		conference-paper
+11	W2161053231	2011	https://doi.org/10.1109/icst.2011.46	Applying aggressive propagation-based strategies for testing changes		conference-paper
+12	W2123327468	2011	https://doi.org/10.1145/1993316.1993551	<i>kb</i> -anonymity	ACM SIGPLAN Notices	article
+13	W1968023441	2015	https://doi.org/10.5555/2818754.2818831	DASE: document-assisted symbolic execution for improving automated software testing		article
+14	W2137243652	2013	https://doi.org/10.1145/2487568.2487574	DUA-forensics		conference-paper
+15	W7061239	2013	https://doi.org/10.1007/978-3-319-02444-8_15	Compact Symbolic Execution	Lecture notes in computer science	conference-paper
+16	W4399851298	2024	https://doi.org/10.1145/3656443	Compatible Branch Coverage Driven Symbolic Execution for Efficient Bug Finding	Proceedings of the ACM on Programming Languages	article
+17	W2006860739	2014	https://doi.org/10.1145/2629536	Directed Incremental Symbolic Execution	ACM Transactions on Software Engineering and Methodology	article
+18	W4242156770	2015	https://doi.org/10.1109/icse.2015.78	DASE: Document-Assisted Symbolic Execution for Improving Automated Software Testing		conference-paper
+19	W2071067812	2013	https://doi.org/10.1145/2522920.2522925	Path exploration based on symbolic output	ACM Transactions on Software Engineering and Methodology	article
+20	W2049318069	2012	https://doi.org/10.1016/j.jss.2012.05.071	Grouping target paths for evolutionary generation of test data in parallel	Journal of Systems and Software	article
+21	W2061290744	2013	https://doi.org/10.1145/2522920.2522922	A methodology for testing CPU emulators	ACM Transactions on Software Engineering and Methodology	article
+22	W2222734577	2012	https://doi.org/10.1007/978-3-642-27940-9_27	Loop Invariant Symbolic Execution for Parallel Programs	Lecture notes in computer science	conference-paper
+23	W3205083328	2021	https://doi.org/10.1007/978-3-030-88806-0_3	Backward Symbolic Execution with Loop Folding	Lecture notes in computer science	conference-paper
+24	W3161290919	2021	https://doi.org/10.1109/icse43902.2021.00086	MuDelta: Delta-Oriented Mutation Testing at Commit Time		conference-paper
+25	W1900305658	2013	https://doi.org/10.1002/stvr.1501	Demand‐driven propagation‐based strategies for testing changes	Software Testing Verification and Reliability	article
+26	W4282573128	2022	https://doi.org/10.1109/icst53961.2022.00035	Automating Differential Testing with Overapproximate Symbolic Execution		conference-paper
+27	W2011174835	2014	https://doi.org/10.1016/j.infsof.2014.07.012	Infeasible path generalization in dynamic symbolic execution	Information and Software Technology	article
+28	W4251147200	2011	https://doi.org/10.1145/1993498.1993551	<i>kb</i> -anonymity		conference-paper
+29	W3080102897	2020	https://doi.org/10.1109/icsme46990.2020.00045	Commit-Aware Mutation Testing		conference-paper
+30	W2971365996	2019	https://doi.org/10.1109/tse.2019.2939526	ProXray: Protocol Model Learning and Guided Firmware Analysis	IEEE Transactions on Software Engineering	article
+31	W2526541690	2016	https://doi.org/10.1016/j.jss.2016.09.048	Method-level program dependence abstraction and its application to impact analysis	Journal of Systems and Software	article
+32	W1973494035	2014	https://doi.org/10.1145/2652484	Scaling Up Symbolic Analysis by Removing Z-Equivalent States	ACM Transactions on Software Engineering and Methodology	article
+33	W4281924103	2022	https://doi.org/10.1007/s10664-022-10138-1	On the use of commit-relevant mutants	Empirical Software Engineering	article
+34	W2562172891	2016	https://doi.org/10.1109/scam.2016.26	LLSPLAT: Improving Concolic Testing by Bounded Model Checking		conference-paper
+35	W1963516329	2014	https://doi.org/10.1145/2591062.2594450	Exploiting undefined behaviors for efficient symbolic execution		conference-paper
+36	W2171548924	2014	https://doi.org/10.1007/978-3-319-07857-1_114	Data Fusion for Difficulty Adjustment in an Adaptive Virtual Reality Game System for Autism Intervention	Communications in computer and information science	conference-paper
+37	W1917209295	2015	https://doi.org/10.1016/j.infsof.2015.05.007	Goal-oriented dynamic test generation	Information and Software Technology	article
+38	W2105397046	2013	https://doi.org/10.1007/s11219-013-9213-3	Identifying the effects of modifications as data dependencies	Software Quality Journal	article
+39	W2400789574	2014	https://doi.org/10.1016/b978-0-12-800162-2.00005-1	Change-Effects Analysis for Evolving Software	Advances in computers	book-chapter
+40	W2899102497	2018	https://doi.org/10.18293/seke2018-171	Parallel Property Checking with Symbolic Execution	Proceedings/Proceedings of the ... International Conference on Software Engineering and Knowledge Engineering	conference-paper
+41	W2790715424	2018	https://doi.org/10.1007/s10515-018-0232-y	Black-box tree test case generation through diversity	Automated Software Engineering	article
+42	W4390187555	2023	https://doi.org/10.1109/qrs60937.2023.00039	BDGSE: A Symbolic Execution Technique for High MC/DC		conference-paper
+43	W2248738827	2013	https://doi.org/10.1016/b978-0-12-408094-2.00002-3	Regression Testing of Evolving Programs	Advances in computers	book-chapter
+44	W2011596516	2012	https://doi.org/10.1109/icsai.2012.6223228	Trigger condition based test generation for finding security bugs		conference-paper
+45	W2397864009	2014		Reducing test cases with causality partitions	Software Engineering and Knowledge Engineering	article
+46	W2496384030	2013		UNIVERSITÀ DEGLI STUDI DI MILANO FACOLTÀ DI SCIENZE MATEMATICHE, FISICHE E NATURALI		article
+47	W2113791307	2012	https://doi.org/10.1145/2338965.2336772	Abstracting path conditions		conference-abstract
+48	W2187370761	2012		Techniques to facilitate symbolic execution of real-world programs		dissertation
+49	W1670129481	2013	https://doi.org/10.48550/arxiv.1302.4798	An Empirical Study of Path Feasibility Queries	arXiv (Cornell University)	preprint
+50	W2509459197	2012		Change-effects analysis for effective testing and validation of evolving software		dissertation
+51	W2804918785	2015	https://doi.org/10.7939/r3pr7n043	Diversity-Based Automated Test Case Generation	University of Alberta Library	dissertation
+52	W2186645324	2013		SEMANTIC ANALYSES TO DETECT AND LOCALIZE SOFTWARE REGRESSION ERRORS	National University of Singapore	dissertation
+53	W2530331075	2014		DASE: Document-Assisted Symbolic Execution for Improving Automated Test Generation	UWSpace (University of Waterloo)	dissertation
+54	W2403990000	2011	https://doi.org/10.48550/arxiv.1112.4703	Abstracting Path Conditions for Effective Symbolic Execution	arXiv (Cornell University)	preprint
+55	W2951281226	2012	https://doi.org/10.48550/arxiv.1201.4715	Compact Symbolic Execution	arXiv (Cornell University)	preprint
+56	W1500010939	2012	https://doi.org/10.48550/arxiv.1201.6033	Compact Symbolic Execution (technical report)	arXiv (Cornell University)	preprint
+57	W2101264565	2012	https://doi.org/10.5555/2663608.2663636	All-values symbolic execution	Automation of Software Test	article
+58	W2169308414	2014	https://doi.org/10.1145/2590748.2590751	Operational abstractions of model transforms		conference-paper
+59	W24006358	2017	https://doi.org/10.1002/asia.201300704	Multi-Point Stride Coverage: A New Genre Of Test Coverage Criteria	Chemistry - An Asian Journal	book
+60	W2947488672	2019		Improving Software Dependability through Documentation Analysis	UWSpace (University of Waterloo)	dissertation
+61	W3141167149	2012	https://doi.org/10.1109/iwast.2012.6228982	All-values symbolic execution		conference-paper
+62	W4226018013	2022	https://doi.org/10.1145/3530786	Mutation Testing in Evolving Systems: Studying the Relevance of Mutants to Code Evolution	ACM Transactions on Software Engineering and Methodology	article

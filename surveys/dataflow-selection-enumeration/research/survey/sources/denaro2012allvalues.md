@@ -88,7 +88,7 @@ examples showing large savings over path enumeration.
 
 ### What is our interpretation or inference?
 
-AVaSE's equal-expression coalescing loses an active selection's identity when
+AVaSE's equal-expression coalescing loses an observed selection's identity when
 two alternatives have the same value. A ghost value recording contextual
 selection outcomes could prevent that coalescing and encode our observation,
 but the paper does not present that construction.
@@ -117,4 +117,3 @@ instrumentation reduction.
   that choice affect uniqueness?
 - Would recording selection provenance destroy the empirical linear behavior
   on `simple_n`?
-

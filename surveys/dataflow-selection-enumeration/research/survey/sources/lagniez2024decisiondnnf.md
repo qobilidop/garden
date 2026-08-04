@@ -9,7 +9,7 @@
 
 The paper gives disjoint, covering partial-model enumeration with polynomial
 post-compilation delay. It is a crucial comparator because its omitted
-variables are semantic don't-cares, not structurally inactive sites.
+variables are semantic don't-cares, not structurally unobserved sites.
 
 ## Semantic and compiled objects
 

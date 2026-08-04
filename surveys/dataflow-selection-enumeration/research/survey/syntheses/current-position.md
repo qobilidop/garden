@@ -11,6 +11,10 @@ already supplies:
 - projected enumeration of selected theory observations;
 - sparse disjoint partial models and deterministic decision diagrams; and
 - hardware-oriented functional-space partitioning guided by mux structure;
+- demand-driven omission of unused nondeterministic search space;
+- sparse fingerprints mapping stable choice identities to outcomes;
+- value-set-adequate lazy choice-tree translations whose concrete searches
+  demand-extend finite choice-ID maps;
 - a compositional free abstraction for static computations with dynamically
   selected effects;
 - exact and demand-driven reusable function summaries; and
@@ -25,8 +29,8 @@ Among the current deep-read set, no single work packages a compositional,
 graph-intensional semantics of deterministic selection observations that
 simultaneously:
 
-- retains structurally active equal-valued selections;
-- omits structurally inactive sites;
+- retains equal-valued outcomes of observed selection sites;
+- omits unobserved selection sites;
 - respects DAG sharing and contextual occurrences;
 - returns exact input guards and residual values; and
 - supports reusable subgraph summaries equal to whole-graph evaluation.

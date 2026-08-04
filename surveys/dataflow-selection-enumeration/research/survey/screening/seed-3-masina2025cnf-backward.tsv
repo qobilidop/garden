@@ -1,0 +1,60 @@
+rank	openalex_id	year	doi	title	venue	type
+1	W50000015	2009	https://doi.org/10.1007/978-3-642-02959-2_33	Volume Computation for Boolean Combination of Linear Arithmetic Constraints	Lecture notes in computer science	conference-paper
+2	W221832247	2013	https://doi.org/10.1007/978-3-642-36742-7_7	The MathSAT5 SMT Solver	Lecture notes in computer science	conference-paper
+3	W1507988282	2004	https://doi.org/10.1007/978-3-540-24605-3_21	A Case for Efficient Solution Enumeration	Lecture notes in computer science	conference-paper
+4	W1523041988	2004	https://doi.org/10.1007/978-3-540-24730-2_3	Minimal Assignments for Bounded Model Checking	Lecture notes in computer science	conference-paper
+5	W1536017779	2013	https://doi.org/10.1007/978-3-642-39071-5_17	Minimizing Models for Tseitin-Encoded SAT Instances	Lecture notes in computer science	conference-paper
+6	W1542414055	2005	https://doi.org/10.1007/978-3-540-31980-1_19	Efficient Conflict Analysis for Finding All Satisfying Assignments of a Boolean Circuit	Lecture notes in computer science	conference-paper
+7	W1584297074	2007	https://doi.org/10.1007/978-3-540-72200-7_13	Conflict-Driven Answer Set Enumeration	Lecture notes in computer science	conference-paper
+8	W1592338211	2005	https://doi.org/10.1007/11527695_13	Using DPLL for Efficient OBDD Construction	Lecture notes in computer science	conference-paper
+9	W1601517679	2003	https://doi.org/10.1007/978-3-540-45069-6_15	A Symbolic Approach to Predicate Abstraction	Lecture notes in computer science	conference-paper
+10	W1766332311	1978	https://doi.org/10.1007/978-1-4684-3384-5_11	Negation as Failure		book-chapter
+11	W1820309519	2004	https://doi.org/10.1007/978-3-540-30494-4_20	Memory Efficient All-Solutions SAT Solver and Its Application for Reachability Analysis	Lecture notes in computer science	conference-paper
+12	W1945774704	2015	https://doi.org/10.1109/ares.2015.14	All-Solution Satisfiability Modulo Theories: Applications, Algorithms and Benchmarks		conference-paper
+13	W1968105169	2015	https://doi.org/10.1145/2695664.2695941	BDD construction for all solutions SAT and efficient caching mechanism		conference-paper
+14	W1985663731	1998	https://doi.org/10.1145/288548.288586	Finding all simple disjunctive decompositions using irredundant sum-of-products forms		conference-paper
+15	W1996010294	1992	https://doi.org/10.1016/0747-7171(92)90009-s	An optimality result for clause form translation	Journal of Symbolic Computation	article
+16	W1999997889	1986	https://doi.org/10.1016/s0747-7171(86)80028-1	A Structure-preserving Clause Form Translation	Journal of Symbolic Computation	article
+17	W2004414305	2004	https://doi.org/10.1016/j.artint.2004.04.004	ASSAT: computing answer sets of a logic program by SAT solvers	Artificial Intelligence	article
+18	W2012022843	1999	https://doi.org/10.1016/s0004-3702(99)00035-1	Algorithms for selective enumeration of prime implicants	Artificial Intelligence	article
+19	W2021874124	2013	https://doi.org/10.1007/s00224-013-9447-2	Compact DSOP and Partial DSOP Forms	Theory of Computing Systems	article
+20	W2075318537	2014	https://doi.org/10.1007/s00224-014-9553-9	Estimating the Volume of Solution Space for Satisfiability Modulo Linear Real Arithmetic	Theory of Computing Systems	article
+21	W2110210775	1987	https://doi.org/10.1145/37888.37890	COSMOS: a compiled simulator for MOS circuits		conference-paper
+22	W2112173236	1999	https://doi.org/10.1109/54.785838	Unveiling the ISCAS-85 benchmarks: a case study in reverse engineering	IEEE Design & Test of Computers	article
+23	W2126626789	2006	https://doi.org/10.1007/11817963_39	SMT Techniques for Fast Predicate Abstraction	Lecture notes in computer science	conference-paper
+24	W2133527541	1983	https://doi.org/10.1007/978-3-642-81955-1_28	On the Complexity of Derivation in Propositional Calculus		book-chapter
+25	W2140039780	2011	https://doi.org/10.1145/1985793.1985957	Program analysis		conference-paper
+26	W2153390672	2014	https://doi.org/10.1109/vlsid.2014.22	All-SAT Using Minimal Blocking Clauses		conference-paper
+27	W2155151982	2005	https://doi.org/10.1007/11527695_15	Clause Form Conversions for Boolean Circuits	Lecture notes in computer science	conference-paper
+28	W2232112468	2015	https://doi.org/10.1007/978-3-319-24318-4_10	$$\#\exists $$SAT: Projected Model Counting	Lecture notes in computer science	conference-paper
+29	W2547099952	2016	https://doi.org/10.1007/978-3-319-47175-4_3	A Comparative Study of SAT-Based Itemsets Mining		conference-paper
+30	W2554294741	2016	https://doi.org/10.1016/j.tcs.2016.10.019	Computing and estimating the volume of the solution space of SMT(LA) constraints	Theoretical Computer Science	article
+31	W2607296636	2017	https://doi.org/10.1007/s00236-017-0297-2	Approximate counting in SMT and value estimation for probabilistic programs	Acta Informatica	article
+32	W2734361000	2017	https://doi.org/10.2197/ipsjjip.25.459	Exploiting Functional Dependencies of Variables in All Solutions SAT Solvers	Journal of Information Processing	article
+33	W2741018875	2017	https://doi.org/10.24963/ijcai.2017/100	Efficient Weighted Model Integration via SMT-Based Predicate Abstraction		conference-paper
+34	W2741061345	2017	https://doi.org/10.24963/ijcai.2017/93	An Improved Decision-DNNF Compiler		conference-paper
+35	W2798318959	2009	https://doi.org/10.3233/sat190085	Successful SAT Encoding Techniques	Journal on Satisfiability Boolean Modeling and Computation	article
+36	W2830979276	2018	https://doi.org/10.1109/ddecs.2018.00028	Augmenting All Solution SAT Solving for Circuits with Structural Information		conference-paper
+37	W2901139830	2018	https://doi.org/10.4230/lipics.sat.2023.9	AllSAT for Combinational Circuits	arXiv (Cornell University)	preprint
+38	W2904298505	2018	https://doi.org/10.1109/ictai.2018.00111	Dualizing Projected Model Counting		conference-paper
+39	W2937129136	2019	https://doi.org/10.1016/j.artint.2019.04.003	Advanced SMT techniques for weighted model integration	Artificial Intelligence	article
+40	W3040050880	2020	https://doi.org/10.1007/978-3-030-51825-7_5	Four Flavors of Entailment	Lecture notes in computer science	conference-paper
+41	W3124009642	2020	https://doi.org/10.1145/3324884.3416569	Accelerating all-SAT computation with short blocking clauses		conference-paper
+42	W3127358641	2021	https://doi.org/10.3233/faia201017	Chapter 33. Satisfiability Modulo Theories	Frontiers in artificial intelligence and applications	book-chapter
+43	W3127635358	2021	https://doi.org/10.3233/faia200985	Chapter 2. CNF Encodings	Frontiers in artificial intelligence and applications	book-chapter
+44	W3128495202	2021	https://doi.org/10.3233/faia201009	Chapter 25. Model Counting	Frontiers in artificial intelligence and applications	book-chapter
+45	W3209351390	2024	https://doi.org/10.1016/j.dam.2024.10.021	On enumerating short projected models	Discrete Applied Mathematics	article
+46	W4200406741	2021	https://doi.org/10.1109/iccad51958.2021.9643520	An Efficient Two-phase Method for Prime Compilation of Non-clausal Boolean Formulae		conference-paper
+47	W4206807714	2021	https://doi.org/10.3233/faia336	Handbook of Satisfiability	Frontiers in artificial intelligence and applications	book
+48	W4231708524	2008	https://doi.org/10.3233/sat190039	PicoSAT Essentials	Journal on Satisfiability Boolean Modeling and Computation	article
+49	W4239562669	2004	https://doi.org/10.1109/date.2004.1268860	A novel SAT all-solutions solver for efficient preimage computation		conference-paper
+50	W4285602010	2022	https://doi.org/10.24963/ijcai.2022/259	AllSATCC: Boosting AllSAT Solving with Efficient Component Analysis		conference-paper
+51	W4286897120	2021	https://doi.org/10.4230/lipics.sat.2024.13	Entailing Generalization Boosts Enumeration	arXiv (Cornell University)	preprint
+52	W4287863081	2025	https://doi.org/10.4230/lipics.sat.2025.22	Enumerating All Boolean Matches		conference-paper
+53	W4301248396	1997	https://doi.org/10.1023/b	BRST Cohomology of the Chapline-Manton Model	Dépôt institutionnel de l'Université libre de Bruxelles (Université Libre de Bruxelles)	article
+54	W4313563518	2022	https://doi.org/10.1145/3551349.3556938	Tseitin or not Tseitin? The Impact of CNF Transformations on Feature-Model Analyses		conference-paper
+55	W4361230311	2023	https://doi.org/10.4230/lipics.sat.2023.15	On CNF Conversion for Disjoint SAT Enumeration	arXiv (Cornell University)	preprint
+56	W4391068108	2024	https://doi.org/10.1016/j.artint.2024.104067	Enhancing SMT-based Weighted Model Integration by structure awareness	Artificial Intelligence	article
+57	W4393153254	2024	https://doi.org/10.1609/aaai.v38i8.28652	Disjoint Partial Enumeration without Blocking Clauses	Proceedings of the AAAI Conference on Artificial Intelligence	conference-paper
+58	W6893018856	2024	https://doi.org/10.5281/zenodo.14035594	On CNF Conversion for SAT and SMT Enumeration: Benchmarks, Results and Plots	Zenodo (CERN European Organization for Nuclear Research)	dataset
+59	W6911458179	2024	https://doi.org/10.5281/zenodo.14033421	On CNF Conversion for SAT and SMT Enumeration: Source Code	Zenodo (CERN European Organization for Nuclear Research)	software

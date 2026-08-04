@@ -1,0 +1,51 @@
+rank	source_id	year	doi	title	venue	type
+1	citation-1	2018		Hack@DAC 2018 SoC	GitHub	dataset
+2	citation-2	2022		SymbiYosys	GitHub	software
+3	citation-3	2022		Voss II	GitHub	software
+4	citation-4	2017		Register Transfer Level Information Flow Tracking for Provably Secure Hardware Design	DATE 2017	proceedings-article
+5	10.1145/3341301.3359661	2019	10.1145/3341301.3359661	Notary: A Device for Secure Transaction Approval	SOSP 2019	proceedings-article
+6	citation-6	2022		Verifying Hardware Security Modules with Information-Preserving Refinement	OSDI 2022	proceedings-article
+7	citation-7	2011		Security Checkers: Detecting Processor Malicious Inclusions at Runtime	HOST 2011	proceedings-article
+8	citation-8	2023		Processor Verification Using Symbolic Execution: A RISC-V Case-Study	DATE 2023	proceedings-article
+9	10.1145/123186.128296	1991	10.1145/123186.128296	Symbolic Simulation—Techniques and Applications	DAC 1990	proceedings-article
+10	citation-10	1991		Formal Hardware Verification by Symbolic Ternary Trajectory Evaluation	DAC 1991	proceedings-article
+11	citation-11	2008		KLEE: Unassisted and Automatic Generation of High-Coverage Tests for Complex Systems Programs	OSDI 2008	proceedings-article
+12	citation-12	2017		Symbolic Trajectory Evaluation for Word-Level Verification: Theory and Implementation	Formal Methods in System Design	article
+13	citation-13	2006		An Introduction to Symbolic Trajectory Evaluation	Formal Methods for Hardware Verification	book-chapter
+14	citation-14	2001		Bounded Model Checking Using Satisfiability Solving	Formal Methods in System Design	article
+15	citation-15	1997		Model Checking	FSTTCS 1997	book-chapter
+16	citation-16	2010		Hyperproperties	Journal of Computer Security	article
+17	citation-17	2004		Assertion-Based Verification	Springer	book-chapter
+18	citation-18	2013		FIE on Firmware: Finding Vulnerabilities in Embedded Systems Using Symbolic Execution	USENIX Security 2013	proceedings-article
+19	citation-19	2019		HardFails: Insights into Software-Exploitable Hardware Bugs	USENIX Security 2019	proceedings-article
+20	citation-20	2018		Symbolic Quick Error Detection Using Symbolic Initial State for Pre-Silicon Verification	DATE 2018	proceedings-article
+21	10.1109/TC.2022.3152666	2023	10.1109/TC.2022.3152666	An Exhaustive Approach to Detecting Transient Execution Side Channels in RTL Designs of Processors	IEEE Transactions on Computers	article
+22	citation-22	2021		SoC Security Properties and Rules	IACR Cryptology ePrint Archive	preprint
+23	citation-23	2019		SoC Security Verification Using Property Checking	ITC 2019	proceedings-article
+24	citation-24	2015		Algorithms for Model Checking HyperLTL and HyperCTL	CAV 2015	proceedings-article
+25	citation-25	2022		EISec: Exhaustive Information Flow Security of Hardware Intellectual Property Utilizing Symbolic Execution	AsianHOST 2022	proceedings-article
+26	citation-26	2019		Model Checking of Verilog RTL Using IC3 with Syntax-Guided Abstraction	NASA Formal Methods 2019	proceedings-article
+27	citation-27	2021		VIP-VP: Early Validation of SoCs Information Flow Policies Using SystemC-Based Virtual Prototypes	FDL 2021	proceedings-article
+28	citation-28	2015		SPECS: A Lightweight Runtime Mechanism for Protecting Software from Security-Critical Processor Bugs	ASPLOS 2015	proceedings-article
+29	citation-29	2018		Property Specific Information Flow Analysis for Hardware Security Verification	ICCAD 2018	proceedings-article
+30	citation-30	2021		DifuzzRTL: Differential Fuzz Testing to Find CPU Bugs	IEEE Symposium on Security and Privacy 2021	proceedings-article
+31	citation-31	2022		Timed Causal Fanin Analysis for Symbolic Circuit Simulation	FMCAD 2022	proceedings-article
+32	citation-32	2017		Testing Intermediate Representations for Binary Analysis	ASE 2017	proceedings-article
+33	citation-33	1976		Symbolic Execution and Program Testing	Communications of the ACM	article
+34	citation-34	2001		Symbolic RTL Simulation	DAC 2001	proceedings-article
+35	citation-35	2010		Tackling the Path Explosion Problem in Symbolic Execution-Driven Test Generation for Programs	Asian Test Symposium 2010	proceedings-article
+36	citation-36	2018		RFUZZ: Coverage-Directed Fuzz Testing of RTL on FPGAs	ICCAD 2018	proceedings-article
+37	citation-37	2005		Hardware Design Verification: Simulation and Formal Method-Based Approaches	Prentice Hall	book
+38	citation-38	2019		Unlocking the Power of Formal Hardware Verification with CoSA and Symbolic QED	ICCAD 2019	proceedings-article
+39	citation-39	2018		CoSA: Integrated Verification for Agile Hardware Design	FMCAD 2018	proceedings-article
+40	citation-40	2022		RTL-ConTest: Concolic Testing on RTL for Detecting Security Vulnerabilities	IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems	article
+41	citation-41	2021		rtlv: Push-Button Verification of Software on Hardware	CARRV 2021	proceedings-article
+42	citation-42	2015		Hardware Verification Using Software Analyzers	IEEE Computer Society Annual Symposium on VLSI 2015	proceedings-article
+43	10.1007/BF01383966	1995	10.1007/BF01383966	Formal Verification by Symbolic Evaluation of Partially-Ordered Trajectories	Formal Methods in System Design	article
+44	citation-44	2018		Symbolic Execution Based Test-Patterns Generation Algorithm for Hardware Trojan Detection	Computers & Security	article
+45	10.1145/2594291.2594340	2014	10.1145/2594291.2594340	A Lightweight Symbolic Virtual Machine for Solver-Aided Host Languages	PLDI 2014	proceedings-article
+46	citation-46	2022		Fuzzing Hardware Like Software	USENIX Security 2022	proceedings-article
+47	citation-47	2021		Directed Test Generation for Activation of Security Assertions in RTL Models	ACM Transactions on Design Automation of Electronic Systems	article
+48	citation-48	2018		End-to-End Automated Exploit Generation for Validating the Security of Processor Designs	MICRO 2018	proceedings-article
+49	citation-49	2017		Identifying Security Critical Properties for the Dynamic Verification of a Processor	ASPLOS 2017	proceedings-article
+50	citation-50	2020		Transys: Leveraging Common Security Properties Across Hardware Designs	IEEE Symposium on Security and Privacy 2020	proceedings-article

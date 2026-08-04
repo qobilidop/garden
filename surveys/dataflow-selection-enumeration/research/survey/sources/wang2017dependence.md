@@ -126,7 +126,7 @@ an explicit independent-product reduction.
 The ideal value criterion is broader than our result observation because it
 treats every statement as a potential fault site, but it is coarser about
 provenance because equal symbolic values are interchangeable. A selection
-observation instead retains an active site's outcome even when both arms have
+observation instead retains an observed site's outcome even when both arms have
 equal residual values, and omits sites structurally inactive for the requested
 result.
 
@@ -168,4 +168,3 @@ claim.
   equality, rather than only asserting conservative approximation?
 - Does selection-outcome provenance yield a strict refinement of DGSE value
   coverage on pure selection DAGs?
-

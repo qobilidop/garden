@@ -1,0 +1,53 @@
+rank	source_id	year	doi	title	venue	type
+1	citation-1	2015		The EPFL Combinational Benchmark Suite	IWLS 2015	proceedings-article
+2	citation-2	2023		Proceedings of SAT Competition 2023: Solver, Benchmark and Proof Checker Descriptions	SAT Competition 2023	book
+3	citation-3	2023		MaxSAT Evaluation 2023: Solver and Benchmark Descriptions	MaxSAT Evaluation 2023	book
+4	citation-4	2020		CaDiCaL, Kissat, Paracooba, Plingeling and Treengeling Entering the SAT Competition 2020	SAT Competition 2020	proceedings-article
+5	citation-5	2011		AIGER 1.9 and Beyond	Institute for Formal Models and Verification Technical Report 11/2	report
+6	10.1007/978-3-642-18275-4_7	2011	10.1007/978-3-642-18275-4_7	SAT-Based Model Checking without Unrolling	VMCAI 2011	proceedings-article
+7	10.1109/TAI.1996.560739	1996	10.1109/TAI.1996.560739	Computation of Prime Implicates and Prime Implicants by a Variant of the Davis and Putnam Procedure	ICTAI 1996	proceedings-article
+8	citation-8	2011		Incremental Formal Verification of Hardware	FMCAD 2011	proceedings-article
+9	10.1109/ATS.2009.31	2009	10.1109/ATS.2009.31	Dynamic Compaction in SAT-Based ATPG	ATS 2009	proceedings-article
+10	citation-10	2013		Computing Prime Implicants	FMCAD 2013	proceedings-article
+11	citation-11	2016		A Comparative Study of SAT-Based Itemsets Mining	AI 2016	proceedings-article
+12	citation-12	2011		Efficient Implementation of Property Directed Reachability	FMCAD 2011	proceedings-article
+13	10.1007/978-3-540-24605-3_37	2003	10.1007/978-3-540-24605-3_37	An Extensible SAT-Solver	SAT 2003	proceedings-article
+14	10.4230/LIPIcs.SAT.2023.9	2023	10.4230/LIPIcs.SAT.2023.9	AllSAT for Combinational Circuits	SAT 2023	proceedings-article
+15	10.1609/AAAI.V24I1.7548	2010	10.1609/AAAI.V24I1.7548	Exploiting QBF Duality on a Circuit Representation	AAAI 2010	proceedings-article
+16	citation-16	1969		A Three-Value Computer Design Verification System	IBM Systems Journal	article
+17	10.1007/978-3-540-31980-1_19	2005	10.1007/978-3-540-31980-1_19	Efficient Conflict Analysis for Finding All Satisfying Assignments of a Boolean Circuit	TACAS 2005	proceedings-article
+18	citation-18	2005		Prime Clauses for Fast Enumeration of Satisfying Assignments to Boolean Circuits	DAC 2005	proceedings-article
+19	10.1016/S0747-7171(08)80029-6	1990	10.1016/S0747-7171(08)80029-6	An Incremental Method for Generating Prime Implicants/Implicates	Journal of Symbolic Computation	article
+20	10.1007/978-3-540-24605-3_21	2003	10.1007/978-3-540-24605-3_21	A Case for Efficient Solution Enumeration	SAT 2003	proceedings-article
+21	10.1109/ICCAD.2017.8203765	2017	10.1109/ICCAD.2017.8203765	Safety Model Checking with Complementary Approximations	ICCAD 2017	proceedings-article
+22	citation-22	2013		Network Verification in the Light of Program Verification	Microsoft Research Report	report
+23	10.1109/ICCAD51958.2021.9643520	2021	10.1109/ICCAD51958.2021.9643520	An Efficient Two-Phase Method for Prime Compilation of Non-Clausal Boolean Formulae	ICCAD 2021	proceedings-article
+24	citation-24	2004		On Computing Minimum Unsatisfiable Cores	SAT 2004	proceedings-article
+25	10.1007/978-3-030-80223-3_27	2021	10.1007/978-3-030-80223-3_27	The MergeSat Solver	SAT 2021	proceedings-article
+26	10.4230/LIPIcs.SAT.2023.15	2023	10.4230/LIPIcs.SAT.2023.15	On CNF Conversion for Disjoint SAT Enumeration	SAT 2023	proceedings-article
+27	10.1002/j.1538-7305.1956.tb03835.x	1956	10.1002/j.1538-7305.1956.tb03835.x	Minimization of Boolean Functions	Bell System Technical Journal	article
+28	citation-28	2002		Applying SAT Methods in Unbounded Symbolic Model Checking	CAV 2002	proceedings-article
+29	10.1109/ICTAI.2018.00111	2018	10.1109/ICTAI.2018.00111	Dualizing Projected Model Counting	ICTAI 2018	proceedings-article
+30	10.1007/978-3-030-51825-7_5	2020	10.1007/978-3-030-51825-7_5	Four Flavors of Entailment	SAT 2020	proceedings-article
+31	https://arxiv.org/abs/2110.12924	2021		On Enumerating Short Projected Models	CoRR	preprint
+32	citation-32	2010		Boosting Minimal Unsatisfiable Core Extraction	FMCAD 2010	proceedings-article
+33	citation-33	2019		Anytime Weighted MaxSAT with Improved Polarity Selection and Bit-Vector Optimization	FMCAD 2019	proceedings-article
+34	citation-34	2020		Polarity and Variable Selection Heuristics for SAT-Based Anytime MaxSAT	Journal on Satisfiability, Boolean Modeling and Computation	article
+35	10.4230/LIPIcs.SAT.2022.8	2022	10.4230/LIPIcs.SAT.2022.8	Introducing Intel SAT Solver	SAT 2022	proceedings-article
+36	citation-36	2012		Efficient SAT Solving under Assumptions	SAT 2012	proceedings-article
+37	citation-37	1921		Introduction to a General Theory of Elementary Propositions	American Journal of Mathematics	article
+38	citation-38	2015		Prime Compilation of Non-Clausal Formulae	IJCAI 2015	proceedings-article
+39	10.1080/00029890.1952.11988183	1952	10.1080/00029890.1952.11988183	The Problem of Simplifying Truth Functions	American Mathematical Monthly	article
+40	10.1007/978-3-540-24730-2_3	2004	10.1007/978-3-540-24730-2_3	Minimal Assignments for Bounded Model Checking	TACAS 2004	proceedings-article
+41	10.1109/PGEC.1967.264743	1967	10.1109/PGEC.1967.264743	Programmed Algorithms to Compute Tests to Detect and Distinguish between Failures in Logic Circuits	IEEE Transactions on Electronic Computers	article
+42	https://arxiv.org/abs/2003.04225	2020		Are You Satisfied by This Partial Assignment?	CoRR	preprint
+43	10.1109/TCAD.2022.3198260	2023	10.1109/TCAD.2022.3198260	Everything You Always Wanted to Know about Generalization of Proof Obligations in PDR	IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems	article
+44	10.1109/T-C.1970.222917	1970	10.1109/T-C.1970.222917	A New Algorithm for Generating Prime Implicants	IEEE Transactions on Computers	article
+45	10.1007/978-3-642-02777-2_24	2009	10.1007/978-3-642-02777-2_24	Extending SAT Solvers to Cryptographic Problems	SAT 2009	proceedings-article
+46	citation-46	1982		Timing Verification and the Timing Analysis Program	DAC 1982	proceedings-article
+47	10.1109/ICCAD.1999.810638	1999	10.1109/ICCAD.1999.810638	SAT Based ATPG Using Fast Justification and Propagation in the Implication Graph	ICCAD 1999	proceedings-article
+48	10.1109/DDECS.2018.00028	2018	10.1109/DDECS.2018.00028	Augmenting All Solution SAT Solving for Circuits with Structural Information	DDECS 2018	proceedings-article
+49	citation-49	2016		Implementing Efficient All Solutions SAT Solvers	Journal of Experimental Algorithmics	article
+50	citation-50	1983		On the Complexity of Derivation in Propositional Calculus	Automation of Reasoning	book-chapter
+51	10.1007/978-3-319-08867-9_17	2014	10.1007/978-3-319-08867-9_17	Interpolating Property Directed Reachability	CAV 2014	proceedings-article
+52	citation-52	2014		All-SAT Using Minimal Blocking Clauses	VLSI Design 2014	proceedings-article

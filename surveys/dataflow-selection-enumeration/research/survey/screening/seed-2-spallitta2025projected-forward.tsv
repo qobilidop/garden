@@ -1,0 +1,7 @@
+rank	openalex_id	year	doi	title	venue	type
+1	W4409921792	2025	https://doi.org/10.1016/j.artint.2025.104346	Disjoint projected enumeration for SAT and SMT without blocking clauses	Artificial Intelligence	article
+2	W4412897516	2025	https://doi.org/10.1007/978-3-031-99984-0_37	Entailment vs. Verification for Partial-Assignment Satisfiability and Enumeration	Lecture notes in computer science	conference-paper
+3	W4414258948	2025	https://doi.org/10.1007/978-3-032-04167-8_7	Exploiting Partial-Assignment Enumeration in Optimization Modulo Theories	Lecture notes in computer science	conference-paper
+4	W7125949200	2025	https://doi.org/10.1109/ase63991.2025.00219	How Big is the Automaton? Certified Lower Bounds on the Size of Presburger DFAs		conference-paper
+5	W7154469886	2026	https://doi.org/10.1007/978-3-032-22752-2_32	VeriLHyS: a Framework for LTL Specification and Verification of Hybrid Systems	Lecture notes in computer science	conference-paper
+6	W7170175833	2026	https://doi.org/10.1007/978-3-032-32589-1_18	Beyond Eager Encodings: A Theory-Agnostic Approach to Theory-Lemma Enumeration in SMT	Lecture notes in computer science	conference-paper

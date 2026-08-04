@@ -1,0 +1,64 @@
+rank	openalex_id	year	doi	title	venue	type
+1	W2804240010	2018	https://doi.org/10.1007/978-3-319-10575-8_7	Binary Decision Diagrams		book-chapter
+2	W2170621144	2006	https://doi.org/10.1109/tc.2006.153	Taylor Expansion Diagrams: A Canonical Representation for Verification of Data Flow Designs	IEEE Transactions on Computers	article
+3	W2140039879	2003	https://doi.org/10.1016/s0166-218x(03)00297-x	BDDs—design, analysis, complexity, and applications	Discrete Applied Mathematics	article
+4	W1839466040	2000	https://doi.org/10.1007/10722167_6	Achieving Scalability in Parallel Reachability Analysis of Very Large Circuits	Lecture notes in computer science	conference-paper
+5	W2154682956	2000	https://doi.org/10.1109/43.845077	Linear sifting of decision diagrams and its application in synthesis	IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems	article
+6	W2013638043	1999	https://doi.org/10.1051/ita:1999108	On the Complexity of the Hidden Weighted Bit Function for Various BDD Models	RAIRO - Theoretical Informatics and Applications	article
+7	W2163814338	2009	https://doi.org/10.1109/tc.2009.178	Test Set Generation with a Large Number of Unspecified Bits Using Static and Dynamic Techniques	IEEE Transactions on Computers	article
+8	W1525387472	2000	https://doi.org/10.1007/10722167_24	Formal Verification of VLIW Microprocessors with Speculative Execution	Lecture notes in computer science	conference-paper
+9	W2078620789	2006	https://doi.org/10.1007/s10703-006-0011-4	A work-efficient distributed algorithm for reachability analysis	Formal Methods in System Design	article
+10	W2123815308	2007	https://doi.org/10.1109/iscas.2007.378019	A Structured ASIC Design Approach Using Pass Transistor Logic		conference-paper
+11	W1964173463	2007	https://doi.org/10.1109/tcad.2006.884863	High-Quality Transition Fault ATPG for Small Delay Defects	IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems	article
+12	W4407128850	2025	https://doi.org/10.1109/tcad.2025.3538492	Reducing Transistor Count in CMOS Logic Design Through Clustering and Library-Independent Multiple-Output Logic Synthesis	IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems	article
+13	W3149523047	1997	https://doi.org/10.1109/iccad.1997.643565	Reachability analysis using partitioned-ROBDDs		conference-paper
+14	W1569305728	2004	https://doi.org/10.1007/978-3-540-30494-4_28	A Partitioning Methodology for BDD-Based Verification	Lecture notes in computer science	conference-paper
+15	W2146379431	2009	https://doi.org/10.1109/tcad.2009.2024708	Optimization of Data-Flow Computations Using Canonical TED Representation	IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems	article
+16	W2081955678	2005	https://doi.org/10.1049/ip-sen:20050001	Distributed CTL model checking	IEE Proceedings - Software	article
+17	W4239562669	2004	https://doi.org/10.1109/date.2004.1268860	A novel SAT all-solutions solver for efficient preimage computation		conference-paper
+18	W2161157457	1999	https://doi.org/10.1109/43.806801	An efficient filter-based approach for combinational verification	IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems	article
+19	W1483535050	2003	https://doi.org/10.1007/978-3-540-39724-3_35	Improved Symbolic Verification Using Partitioning Techniques	Lecture notes in computer science	conference-paper
+20	W1965690669	2003	https://doi.org/10.1007/s10009-002-0093-2	Scalable distributed on-the-fly symbolic model checking	International Journal on Software Tools for Technology Transfer	article
+21	W2086845443	2005	https://doi.org/10.1007/s10703-005-1493-1	Distributed Symbolic Model Checking for μ-Calculus	Formal Methods in System Design	article
+22	W2169523980	2001	https://doi.org/10.1109/12.966501	A note on complexity of OBDD composition and efficiency of partitioned-OBDDs over OBDDs	IEEE Transactions on Computers	article
+23	W1600140696	2003	https://doi.org/10.1007/978-3-540-45069-6_5	A Work-Efficient Distributed Algorithm for Reachability Analysis	Lecture notes in computer science	conference-paper
+24	W1483370895	2000	https://doi.org/10.1007/10722167_30	Prioritized Traversal: Efficient Reachability Analysis for Verification and Falsification	Lecture notes in computer science	conference-paper
+25	W2146663969	1999	https://doi.org/10.1109/43.759068	Improving the efficiency of BDD-based operators by means of partitioning	IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems	article
+26	W1886211826	1996	https://doi.org/10.1007/bfb0031825	Decomposition techniques for efficient ROBDD construction	Lecture notes in computer science	conference-paper
+27	W2153576409	1997	https://doi.org/10.1109/iccd.1997.628907	A survey of techniques for formal verification of combinational circuits		conference-paper
+28	W4245068431	2003	https://doi.org/10.1109/date.2003.1253708	Efficient preimage computation using a novel success-driven ATPG		conference-paper
+29	W2102117848	2003	https://doi.org/10.1109/tcad.2003.811449	A high-performance architecture and BDD-based synthesis methodology for packet classification	IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems	article
+30	W2166606799	2007	https://doi.org/10.1007/s10703-007-0036-3	GSTE is partitioned model checking	Formal Methods in System Design	article
+31	W1825937559	1997	https://doi.org/10.1007/bfb0029959	Complexity theoretical results on partitioned (nondeterministic) binary decision diagrams	Lecture notes in computer science	conference-paper
+32	W2160100638	2006	https://doi.org/10.1109/tcad.2006.870410	On partitioning and symbolic model checking	IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems	article
+33	W1559358658	2005	https://doi.org/10.1007/11562948_4	Verifying Very Large Industrial Circuits Using 100 Processes and Beyond	Lecture notes in computer science	conference-paper
+34	W2097013258	2010	https://doi.org/10.1109/icdm.2010.84	A Binary Decision Diagram-Based One-Class Classifier		conference-paper
+35	W2113490522	2005	https://doi.org/10.1007/11526841_33	On Partitioning and Symbolic Model Checking	Lecture notes in computer science	conference-paper
+36	W1972833848	2001	https://doi.org/10.1016/s1383-7621(00)00064-3	Reachability analysis of large circuits using disjunctive partitioning and partial iterative squaring	Journal of Systems Architecture	article
+37	W2406171849	2015	https://doi.org/10.1109/fmcad.2015.7542249	Universal boolean functional vectors		conference-paper
+38	W2102969505	2006	https://doi.org/10.1109/test.2006.297685	Exact At-speed Delay Fault Grading in Sequential Circuits	Proceedings/Proceedings - International Test Conference	conference-paper
+39	W4367665000	2023	https://doi.org/10.1007/978-3-031-32157-3_2	ParaGnosis: A Tool for Parallel Knowledge Compilation	Lecture notes in computer science	conference-paper
+40	W2149378379	2002	https://doi.org/10.1109/icvd.1997.568079	Formal verification of combinational circuits		conference-paper
+41	W1558840074	2004	https://doi.org/10.1109/hldvt.2003.1252487	Mathematical framework for representing discrete functions as word-level polynomials		conference-paper
+42	W1576616300	2001	https://doi.org/10.1023/a:1011229414976	A Comparison of Free BDDs and Transformed BDDs	Formal Methods in System Design	article
+43	W2119505473	1999	https://doi.org/10.1109/icvd.1999.745190	Recent advances in BDD based representations for Boolean functions: a survey		conference-paper
+44	W3143672905	2003	https://doi.org/10.1109/date.1999.761108	An efficient filter-based approach for combinational verification		conference-paper
+45	W2029426531	2006	https://doi.org/10.1016/j.entcs.2005.10.018	Distributed Symbolic Bounded Property Checking	Electronic Notes in Theoretical Computer Science	article
+46	W4255287878	2002	https://doi.org/10.1109/date.2000.840044	A BDD-based satisfiability infrastructure using the unate recursive paradigm	Proceedings Design, Automation and Test in Europe Conference and Exhibition 2000 (Cat. No. PR00537)	conference-paper
+47	W1508514102	2000	https://doi.org/10.1023/a:1008748802907	Verification of Similar FSMs by Mixing Incremental Re-encoding, Reachability Analysis, and Combinational Checks	Formal Methods in System Design	article
+48	W1996072878	2006	https://doi.org/10.1016/j.entcs.2005.10.017	Under-approximation Heuristics for Grid-based Bounded Model Checking	Electronic Notes in Theoretical Computer Science	article
+49	W4250604046	2005	https://doi.org/10.1109/aspdac.2004.1337669	Improved symbolic simulation by functional-space decomposition	ASP-DAC 2004: Asia and South Pacific Design Automation Conference 2004 (IEEE Cat. No.04EX753)	conference-paper
+50	W2159025070	2011	https://doi.org/10.1109/vlsid.2011.57	A Novel Learning Framework for State Space Exploration Based on Search State Extensibility Relation		conference-paper
+51	W4242465259	2003	https://doi.org/10.1109/date.2003.1253597	Fast computation of data correlation using BDDs		conference-paper
+52	W778194052	2000	https://doi.org/10.1007/978-1-4757-6048-4_49	Communication Complexity and BDD Lower Bound Techniques		book-chapter
+53	W103077850	2009	https://doi.org/10.1007/978-1-4419-0950-3_3	Computing Leakage Current Distributions		book-chapter
+54	W113060590	2006	https://doi.org/10.1007/1-4020-8068-9_11	Verification of Large Scale Nano Systems with Unreliable Nano Devices	Kluwer Academic Publishers eBooks	book-chapter
+55	W1554981187	2004	https://doi.org/10.1109/date.2004.1268825	Improved symoblic simulation by dynamic funtional space partitioning [symoblic read symbolic] [funtional read functional]		conference-paper
+56	W1983996764	2012	https://doi.org/10.4204/eptcs.99.8	Lex-Partitioning: A New Option for BDD Search	Electronic Proceedings in Theoretical Computer Science	article
+57	W2053816897	2001	https://doi.org/10.1109/92.953500	Delay fault testing of IP-based designs via symbolic path modeling	IEEE Transactions on Very Large Scale Integration (VLSI) Systems	article
+58	W2085297107	2004	https://doi.org/10.1109/hldvt.2004.1431234	On using a 2-domain partitioned OBDD data structure in verification		conference-paper
+59	W2168267508	2006	https://doi.org/10.1109/dft.2006.34	Implicit Critical PDF Test Generation with Maximal Test Efficiency	Proceedings	conference-paper
+60	W2594836514	2015	https://doi.org/10.1109/iccicct.2015.7475273	Novelty in architecture of ROBDD for the minimization of interconnect delay		conference-paper
+61	W3146790474	2002	https://doi.org/10.1109/aspdac.2000.835072	Automatic partitioning for efficient combinational verification		conference-paper
+62	W3147292023	2006	https://doi.org/10.1109/dac.2006.229400	Fast falsification based on symbolic bounded property checking	Proceedings - ACM IEEE Design Automation Conference	conference-paper
+63	W4390506797	2024	https://doi.org/10.3990/1.9789036559744	Probabilistic inference using partitioned bayesian networks : introducing a compositional framework		dissertation

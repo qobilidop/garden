@@ -1,0 +1,39 @@
+rank	openalex_id	year	doi	title	venue	type
+1	W221370897	2011	https://doi.org/10.1007/978-3-642-22110-1_17	Existential Quantification as Incremental SAT	Lecture notes in computer science	conference-paper
+2	W221832247	2013	https://doi.org/10.1007/978-3-642-36742-7_7	The MathSAT5 SMT Solver	Lecture notes in computer science	conference-paper
+3	W1506660274	2000	https://doi.org/10.1007/3-540-40922-x_22	SAT-Based Image Computation with Application in Reachability Analysis	Lecture notes in computer science	conference-paper
+4	W1528660673	2015	https://doi.org/10.1007/978-3-662-46681-0_26	Approximate Counting in SMT and Value Estimation for Probabilistic Programs	Lecture notes in computer science	conference-paper
+5	W1542414055	2005	https://doi.org/10.1007/978-3-540-31980-1_19	Efficient Conflict Analysis for Finding All Satisfying Assignments of a Boolean Circuit	Lecture notes in computer science	conference-paper
+6	W1592338211	2005	https://doi.org/10.1007/11527695_13	Using DPLL for Efficient OBDD Construction	Lecture notes in computer science	conference-paper
+7	W1820309519	2004	https://doi.org/10.1007/978-3-540-30494-4_20	Memory Efficient All-Solutions SAT Solver and Its Application for Reachability Analysis	Lecture notes in computer science	conference-paper
+8	W1898297283	2000	https://doi.org/10.1613/jair.711	Backbone Fragility and the Local Search Cost Peak	Journal of Artificial Intelligence Research	article
+9	W1945774704	2015	https://doi.org/10.1109/ares.2015.14	All-Solution Satisfiability Modulo Theories: Applications, Algorithms and Benchmarks		conference-paper
+10	W1999997889	1986	https://doi.org/10.1016/s0747-7171(86)80028-1	A Structure-preserving Clause Form Translation	Journal of Symbolic Computation	article
+11	W2044560939	1999	https://doi.org/10.1109/12.769433	GRASP: a search algorithm for propositional satisfiability	IEEE Transactions on Computers	article
+12	W2057361103	1962	https://doi.org/10.1145/368273.368557	A machine program for theorem-proving	Communications of the ACM	article
+13	W2107470986	2001	https://doi.org/10.1007/3-540-44798-9_4	Pruning Techniques for the SAT-Based Bounded Model Checking Problem	Lecture notes in computer science	conference-paper
+14	W2118622620	2016	https://doi.org/10.1145/2975585	Implementing Efficient All Solutions SAT Solvers	ACM Journal of Experimental Algorithmics	article
+15	W2126626789	2006	https://doi.org/10.1007/11817963_39	SMT Techniques for Fast Predicate Abstraction	Lecture notes in computer science	conference-paper
+16	W2133527541	1983	https://doi.org/10.1007/978-3-642-81955-1_28	On the Complexity of Derivation in Propositional Calculus		book-chapter
+17	W2140209083	2005	https://doi.org/10.1109/ictai.2005.69	Good learning and implicit model enumeration		conference-paper
+18	W2142785340	2001	https://doi.org/10.1145/378239.379017	Chaff		conference-paper
+19	W2147436337	2007	https://doi.org/10.3233/jcs-2007-15302	A static analysis for quantifying information flow in a simple imperative language	Journal of Computer Security	article
+20	W2151398141	2002	https://doi.org/10.1007/3-540-45657-0_19	Applying SAT Methods in Unbounded Symbolic Model Checking	Lecture notes in computer science	conference-paper
+21	W2153096231	1996	https://doi.org/10.1007/3-540-61551-2_65	Using CSP look-back techniques to solve exceptionally hard SAT instances	Lecture notes in computer science	conference-paper
+22	W2153390672	2014	https://doi.org/10.1109/vlsid.2014.22	All-SAT Using Minimal Blocking Clauses		conference-paper
+23	W2547099952	2016	https://doi.org/10.1007/978-3-319-47175-4_3	A Comparative Study of SAT-Based Itemsets Mining		conference-paper
+24	W2904298505	2018	https://doi.org/10.1109/ictai.2018.00111	Dualizing Projected Model Counting		conference-paper
+25	W2966083108	2019	https://doi.org/10.24963/ijcai.2019/163	GANAK: A Scalable Probabilistic Exact Model Counter		conference-paper
+26	W2996781639	2019	https://doi.org/10.29007/vgg4	Combining Conflict-Driven Clause Learning and Chronological Backtracking for Propositional Model Counting	EPiC series in computing	conference-paper
+27	W3040050880	2020	https://doi.org/10.1007/978-3-030-51825-7_5	Four Flavors of Entailment	Lecture notes in computer science	conference-paper
+28	W3124009642	2020	https://doi.org/10.1145/3324884.3416569	Accelerating all-SAT computation with short blocking clauses		conference-paper
+29	W3209351390	2024	https://doi.org/10.1016/j.dam.2024.10.021	On enumerating short projected models	Discrete Applied Mathematics	article
+30	W4243217271	2019	https://doi.org/10.1007/978-3-030-24258-9_18	Backing Backtracking	Lecture notes in computer science	conference-paper
+31	W4246783757	2018	https://doi.org/10.1007/978-3-319-94144-8_7	Chronological Backtracking	Lecture notes in computer science	conference-paper
+32	W4285602010	2022	https://doi.org/10.24963/ijcai.2022/259	AllSATCC: Boosting AllSAT Solving with Efficient Component Analysis		conference-paper
+33	W4386746824	2023	https://doi.org/10.1007/978-3-031-43369-6_11	An Abstract CNF-to-d-DNNF Compiler Based on Chronological CDCL	Lecture notes in computer science	conference-paper
+34	W4391068108	2024	https://doi.org/10.1016/j.artint.2024.104067	Enhancing SMT-based Weighted Model Integration by structure awareness	Artificial Intelligence	article
+35	W4393153254	2024	https://doi.org/10.1609/aaai.v38i8.28652	Disjoint Partial Enumeration without Blocking Clauses	Proceedings of the AAAI Conference on Artificial Intelligence	conference-paper
+36	W4400842337	2024	https://doi.org/10.24963/kr.2024/48	Leveraging Decision-DNNF Compilation for Enumerating Disjoint Partial Models		conference-paper
+37	W4403486908	2024	https://doi.org/10.3233/faia241007	Canonical Decision Diagrams Modulo Theories	Frontiers in artificial intelligence and applications	book-chapter
+38	W4409921792	2025	https://doi.org/10.1016/j.artint.2025.104346	Disjoint projected enumeration for SAT and SMT without blocking clauses	Artificial Intelligence	article

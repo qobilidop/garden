@@ -4,13 +4,13 @@ No item in this file is a paper contribution merely because it is listed. Each
 claim must survive the closest-work audit and acquire explicit assumptions,
 proof obligations, and evidence.
 
-## H01 — Inputs induce unique active-choice configurations
+## H01 — Inputs induce unique selection observations
 
 - **Status:** known / not a contribution
 - **Provisional statement:** For a fixed finite rooted graph of deterministic,
   total, pure operators with finite choice operators, each concrete input
-  induces a unique partial mapping whose domain is exactly the choice nodes
-  demanded by the output and whose values are the selected alternatives.
+  induces a unique partial mapping whose domain is exactly the selection sites
+  observed for the requested roots and whose values are the selected outcomes.
 - **Potentially known as:** path, partial path, trace, choice assignment,
   configuration, projected model, cube, or guarded case.
 - **Closest existing result:** The exact statement is the fiber partition of a
@@ -25,22 +25,25 @@ proof obligations, and evidence.
 - **Status:** computationally reduced to prior work
 - **Provisional statement:** A demand-driven symbolic evaluator can enumerate
   every feasible input-induced configuration with an exact guard and a residual
-  symbolic output while omitting choices confined to inactive alternatives.
+  symbolic output while omitting sites confined to unobserved alternatives.
 - **Closest existing result:** Phan's AllSMT enumerates important predicates;
   Spallitta et al. enumerate disjoint projected partial SAT/SMT models; MultiSE
-  supplies guarded residual symbolic values.
+  supplies guarded residual symbolic values. Braßel and Huch's branching
+  information, the Braßel--Fischer translation, and Braßel's dissertation
+  already supply stable choice IDs and demand-extended partial decision maps
+  for lazy functional-logic search.
 - **Reduction:** Introduce one finite-domain variable per contextual selection
-  occurrence with values `inactive` or an outcome. Constrain it by a
-  backward-activity encoding and ordinary graph equations, then project onto
+  occurrence with values `unobserved` or an outcome. Constrain it by a
+  backward-reachability encoding and ordinary graph equations, then project onto
   those variables.
 - **Assessment:** An original algorithm must demonstrate a compositional or
   structural property not inherited from this polynomial instrumentation.
 
-## H03 — Demand sensitivity avoids irrelevant Cartesian products
+## H03 — Selection observation avoids irrelevant Cartesian products
 
 - **Status:** supporting result; novelty rejected
 - **Provisional statement:** Relative to total assignments over all syntactic
-  choice nodes, exact active-choice enumeration can be exponentially smaller;
+  selection sites, exact observation enumeration can be exponentially smaller;
   when all choices are demanded, exponential output remains unavoidable.
 - **Closest existing result:** Partial-model enumeration, decision diagrams,
   guarded value summaries, and mux-guided functional-space partitioning all
@@ -53,7 +56,7 @@ proof obligations, and evidence.
 - **Status:** expressible by established machinery; rejected as original
 - **Provisional statement:** For a fixed finite typed pure term graph and an
   explicit selection-observing interface, the map containing exactly the
-  result-observed selection-site outcomes is the least compositional refinement
+  observed selection-site outcomes is the least compositional refinement
   of ordinary value semantics that preserves those structural events.
 - **Required results:** define the observer language; prove adequacy or full
   abstraction relative to it; state the refinement order; prove the universal
@@ -104,7 +107,7 @@ proof obligations, and evidence.
 ## S01 — Taxonomy of omission mechanisms
 
 - **Status:** survey synthesis
-- **Statement:** Structural inactivity, existential projection, logical
+- **Statement:** Structural non-observation, existential projection, logical
   don't-care, equal-value coalescing, abstract merging, and heuristic
   functional-space partitioning omit different information and preserve
   different observers.
@@ -116,7 +119,7 @@ proof obligations, and evidence.
 - **Status:** survey synthesis; formal derivation recorded
 - **Statement:** For finite total selective term graphs, the same graph-relative
   observation is obtained by enabled-edge reachability, an exact selective
-  reader/writer interpretation, and a total inactive-or-outcome activation
+  reader/writer interpretation, and a total unobserved-or-outcome activation
   encoding.
 - **Presentation rule:** Attribute the component constructions to their
   established literatures; present only the cross-literature equivalence as our

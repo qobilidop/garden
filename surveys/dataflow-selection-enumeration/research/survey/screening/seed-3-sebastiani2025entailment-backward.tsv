@@ -1,0 +1,34 @@
+rank	openalex_id	year	doi	title	venue	type
+1	W82633235	1992	https://doi.org/10.1007/bf00156916	Are tableaux an improvement on truth-tables?	Journal of Logic Language and Information	article
+2	W169672073	2007	https://doi.org/10.3233/sat190034	Lazy Satisfiability Modulo Theories	Journal on Satisfiability Boolean Modeling and Computation	article
+3	W221832247	2013	https://doi.org/10.1007/978-3-642-36742-7_7	The MathSAT5 SMT Solver	Lecture notes in computer science	conference-paper
+4	W1497571013	1997	https://doi.org/10.1007/3-540-63166-6_10	Construction of abstract state graphs with PVS	Lecture notes in computer science	conference-paper
+5	W1528660673	2015	https://doi.org/10.1007/978-3-662-46681-0_26	Approximate Counting in SMT and Value Estimation for Probabilistic Programs	Lecture notes in computer science	conference-paper
+6	W1544757461	2009	https://doi.org/10.1007/978-3-642-01929-6_7	Solution Enumeration for Projected Boolean Search Problems	Lecture notes in computer science	conference-paper
+7	W1575648042	2007	https://doi.org/10.1007/978-3-540-74621-8_2	From KSAT to Delayed Theory Combination: Exploiting DPLL Outside the SAT Domain	Lecture notes in computer science	conference-paper
+8	W1945774704	2015	https://doi.org/10.1109/ares.2015.14	All-Solution Satisfiability Modulo Theories: Applications, Algorithms and Benchmarks		conference-paper
+9	W1986660301	2001	https://doi.org/10.1145/502090.502091	Decomposable negation normal form	Journal of the ACM	article
+10	W1999997889	1986	https://doi.org/10.1016/s0747-7171(86)80028-1	A Structure-preserving Clause Form Translation	Journal of Symbolic Computation	article
+11	W2021025450	2000	https://doi.org/10.1006/inco.1999.2850	Building Decision Procedures for Modal Logics from Propositional Decision Procedures: The Case Study of Modal K(m)	Information and Computation	article
+12	W2047580205	1993	https://doi.org/10.1007/bf01530803	Embedding complex decision procedures inside an interactive theorem prover	Annals of Mathematics and Artificial Intelligence	article
+13	W2057361103	1962	https://doi.org/10.1145/368273.368557	A machine program for theorem-proving	Communications of the ACM	article
+14	W2061438988	1992	https://doi.org/10.1016/0890-5401(92)90017-a	Symbolic model checking: 1020 States and beyond	Information and Computation	article
+15	W2080267935	1986	https://doi.org/10.1109/tc.1986.1676819	Graph-Based Algorithms for Boolean Function Manipulation	IEEE Transactions on Computers	article
+16	W2090777457	2015	https://doi.org/10.1145/2699915	Optimization Modulo Theories with Linear Rational Costs	ACM Transactions on Computational Logic	article
+17	W2105197197	2002	https://doi.org/10.1613/jair.989	A Knowledge Compilation Map	Journal of Artificial Intelligence Research	article
+18	W2126626789	2006	https://doi.org/10.1007/11817963_39	SMT Techniques for Fast Predicate Abstraction	Lecture notes in computer science	conference-paper
+19	W2232112468	2015	https://doi.org/10.1007/978-3-319-24318-4_10	$$\#\exists $$SAT: Projected Model Counting	Lecture notes in computer science	conference-paper
+20	W2580392616	2016	https://doi.org/10.1109/synasc.2016.038	A Duality-Aware Calculus for Quantified Boolean Formulas		conference-paper
+21	W2904298505	2018	https://doi.org/10.1109/ictai.2018.00111	Dualizing Projected Model Counting		conference-paper
+22	W2937129136	2019	https://doi.org/10.1016/j.artint.2019.04.003	Advanced SMT techniques for weighted model integration	Artificial Intelligence	article
+23	W3040050880	2020	https://doi.org/10.1007/978-3-030-51825-7_5	Four Flavors of Entailment	Lecture notes in computer science	conference-paper
+24	W3127358641	2021	https://doi.org/10.3233/faia201017	Chapter 33. Satisfiability Modulo Theories	Frontiers in artificial intelligence and applications	book-chapter
+25	W3128203357	2021	https://doi.org/10.3233/faia200997	Chapter 14. Minimal Unsatisfiability and Autarkies	Frontiers in artificial intelligence and applications	book-chapter
+26	W3209351390	2024	https://doi.org/10.1016/j.dam.2024.10.021	On enumerating short projected models	Discrete Applied Mathematics	article
+27	W4233253115	1968	https://doi.org/10.1007/978-3-642-86718-7	First-Order Logic		book
+28	W4235626864	2007	https://doi.org/10.1109/famcad.2007.35	Computing Predicate Abstractions by Integrating BDDs and SMT Solvers		conference-paper
+29	W4245630182	1970	https://doi.org/10.1007/978-1-4899-5327-8_25	On the Complexity of Derivation in Propositional Calculus		book-chapter
+30	W4391068108	2024	https://doi.org/10.1016/j.artint.2024.104067	Enhancing SMT-based Weighted Model Integration by structure awareness	Artificial Intelligence	article
+31	W4400842337	2024	https://doi.org/10.24963/kr.2024/48	Leveraging Decision-DNNF Compilation for Enumerating Disjoint Partial Models		conference-paper
+32	W4403486908	2024	https://doi.org/10.3233/faia241007	Canonical Decision Diagrams Modulo Theories	Frontiers in artificial intelligence and applications	book-chapter
+33	W4409921792	2025	https://doi.org/10.1016/j.artint.2025.104346	Disjoint projected enumeration for SAT and SMT without blocking clauses	Artificial Intelligence	article

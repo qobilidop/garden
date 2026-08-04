@@ -38,7 +38,7 @@ problem; otherwise the preferred outcome remains an original research paper.
   theorem is mathematically useful but elementary.
 
 No single work found so far packages the exact graph-relative API that retains
-active equal-valued selections while omitting structurally inactive sites and
+observed equal-valued selections while omitting structurally unobserved sites and
 returns guards, residuals, and witnesses. That packaging difference alone is
 not a sufficient research contribution.
 

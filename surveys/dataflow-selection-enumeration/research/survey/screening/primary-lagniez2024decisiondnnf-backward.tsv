@@ -1,0 +1,32 @@
+rank	source_id	year	doi	title	venue	type
+1	citation-1	2013		Just-in-Time Compilation of Knowledge Bases	IJCAI 2013	proceedings-article
+2	10.1007/978-3-319-57454-7_64	2017	10.1007/978-3-319-57454-7_64	Enumerating Non-Redundant Association Rules Using Satisfiability	PAKDD 2017	proceedings-article
+3	10.1109/TC.1986.1676819	1986	10.1109/TC.1986.1676819	Graph-Based Algorithms for Boolean Function Manipulation	IEEE Transactions on Computers	article
+4	citation-4	2002		A Knowledge Compilation Map	Journal of Artificial Intelligence Research	article
+5	10.1613/jair.257	1998	10.1613/jair.257	Model-Based Diagnosis Using Structured System Descriptions	Journal of Artificial Intelligence Research	article
+6	10.1145/502090.502091	2001	10.1145/502090.502091	Decomposable Negation Normal Form	Journal of the ACM	article
+7	citation-7	2002		A Compiler for Deterministic, Decomposable Negation Normal Form	AAAI 2002	proceedings-article
+8	citation-8	2006		On the Use of Partially Ordered Decision Graphs in Knowledge Compilation and Quantified Boolean Formulae	AAAI 2006	proceedings-article
+9	10.1007/978-3-540-30494-4_20	2004	10.1007/978-3-540-30494-4_20	Memory Efficient All-Solutions SAT Solver and Its Application for Reachability Analysis	FMCAD 2004	proceedings-article
+10	10.1007/s10618-006-0051-1	2007	10.1007/s10618-006-0051-1	Frequent Pattern Mining: Current Status and Future Directions	Data Mining and Knowledge Discovery	article
+11	citation-11	2022		A Declarative Framework for Maximal k-Plex Enumeration Problems	AAMAS 2022	proceedings-article
+12	10.1007/978-3-540-31980-1_19	2005	10.1007/978-3-540-31980-1_19	Efficient Conflict Analysis for Finding All Satisfying Assignments of a Boolean Circuit	TACAS 2005	proceedings-article
+13	10.1007/978-3-540-24605-3_21	2003	10.1007/978-3-540-24605-3_21	A Case for Efficient Solution Enumeration	SAT 2003	proceedings-article
+14	citation-14	2013		Knowledge Compilation for Model Counting: Affine Decision Trees	IJCAI 2013	proceedings-article
+15	citation-15	2014		Preprocessing for Propositional Model Counting	AAAI 2014	proceedings-article
+16	10.24963/ijcai.2017/93	2017	10.24963/ijcai.2017/93	An Improved Decision-DNNF Compiler	IJCAI 2017	proceedings-article
+17	10.1007/s10817-016-9365-4	2017	10.1007/s10817-016-9365-4	On Preprocessing Techniques and Their Impact on Propositional Model Counting	Journal of Automated Reasoning	article
+18	10.1007/978-3-031-43619-2_47	2023	10.1007/978-3-031-43619-2_47	Boosting Definability Bipartition Computation Using SAT Witnesses	JELIA 2023	proceedings-article
+19	10.1109/ICTAI.2015.135	2015	10.1109/ICTAI.2015.135	CoQuiAAS: A Constraint-Based Quick Abstract Argumentation Solver	ICTAI 2015	proceedings-article
+20	citation-20	2016		Improving Model Counting by Leveraging Definability	IJCAI 2016	proceedings-article
+21	10.1016/j.artint.2019.103229	2020	10.1016/j.artint.2019.103229	Definability for Model Counting	Artificial Intelligence	article
+22	10.1109/DATE.2004.1268860	2004	10.1109/DATE.2004.1268860	A Novel SAT All-Solutions Solver for Efficient Preimage Computation	DATE 2004	proceedings-article
+23	10.1007/3-540-45657-0_19	2002	10.1007/3-540-45657-0_19	Applying SAT Methods in Unbounded Symbolic Model Checking	CAV 2002	proceedings-article
+24	10.1007/978-3-642-30353-1_36	2012	10.1007/978-3-642-30353-1_36	Dsharp: Fast d-DNNF Compilation with sharpSAT	Canadian AI 2012	proceedings-article
+25	10.1145/503272.503279	1996	10.1145/503272.503279	Knowledge Compilation and Theory Approximation	Journal of the ACM	article
+26	citation-26	2022		SMT-Based Weighted Model Integration with Structure Awareness	UAI 2022	proceedings-article
+27	10.1609/aaai.v38i8.28652	2024	10.1609/aaai.v38i8.28652	Disjoint Partial Enumeration without Blocking Clauses	AAAI 2024	proceedings-article
+28	10.1145/2975585	2016	10.1145/2975585	Implementing Efficient All Solutions SAT Solvers	ACM Journal of Experimental Algorithmics	article
+29	10.1007/978-3-031-15034-0_13	2022	10.1007/978-3-031-15034-0_13	Minimal Trap Spaces of Logical Models Are Maximal Siphons of Their Petri Net Encoding	CMSB 2022	proceedings-article
+30	citation-30	1999		Introduction to Circuit Complexity: A Uniform Approach	Springer	book
+31	10.1109/VLSID.2014.22	2014	10.1109/VLSID.2014.22	All-SAT Using Minimal Blocking Clauses	VLSID 2014	proceedings-article

@@ -51,6 +51,15 @@ GENERIC_SCREENING_HEADER = [
     "venue",
     "type",
 ]
+BACKWARD_DEFECT_MARKERS = (
+    "unresolved",
+    "index omits",
+    "exposes no references",
+    "wrong-version",
+    "primary list is longer",
+    "incomplete bibliography",
+    "truncated bibliography",
+)
 
 
 def rows(path: Path) -> tuple[list[str], list[dict[str, str]]]:
@@ -61,6 +70,11 @@ def rows(path: Path) -> tuple[list[str], list[dict[str, str]]]:
 
 def keys(field: str) -> list[str]:
     return [] if field == "-" else field.split(",")
+
+
+def seed_key(notes: str) -> str | None:
+    match = re.search(r"(?:^|; )seed-key:([A-Za-z0-9_.-]+)(?:;|$)", notes)
+    return match.group(1) if match else None
 
 
 def fail(message: str) -> None:
@@ -90,6 +104,7 @@ def main() -> int:
     header, log_rows = rows(SURVEY / "search-log.tsv")
     if header != SEARCH_HEADER:
         fail(f"unexpected search-log header: {header}")
+    referenced_snapshots: set[str] = set()
     for number, row in enumerate(log_rows, start=2):
         for field in ("hits", "screened"):
             if not row[field].isdigit():
@@ -107,6 +122,7 @@ def main() -> int:
             if catalog[citekey]["status"] != "excluded":
                 fail(f"search-log row {number} exclusion {citekey} is not excluded")
         for relative in re.findall(r"screening/[^ ;]+\.tsv", row["notes"]):
+            referenced_snapshots.add(relative)
             snapshot = SURVEY / relative
             if not snapshot.is_file():
                 fail(f"search-log row {number} references missing {relative}")
@@ -117,6 +133,42 @@ def main() -> int:
                     f"records but {relative} contains {len(snapshot_rows)}"
                 )
 
+    rows_by_seed: dict[str, list[dict[str, str]]] = {}
+    for row in log_rows:
+        key = seed_key(row["notes"])
+        if key is not None:
+            rows_by_seed.setdefault(key, []).append(row)
+
+    for citekey, row in catalog.items():
+        if row["priority"] != "critical":
+            continue
+        if row["status"] != "deep-read":
+            fail(f"critical work {citekey} is not deep-read")
+        usable = [
+            item
+            for item in rows_by_seed.get(citekey, [])
+            if "discovery-only" not in item["notes"]
+        ]
+        directions = {item["direction"] for item in usable}
+        for direction in ("backward", "forward"):
+            if direction not in directions:
+                fail(f"critical work {citekey} has no usable {direction} chase")
+
+    for row in log_rows:
+        if row["direction"] != "backward":
+            continue
+        notes = row["notes"].lower()
+        if not any(marker in notes for marker in BACKWARD_DEFECT_MARKERS):
+            continue
+        key = seed_key(row["notes"])
+        if key is None:
+            fail("defective backward row has no seed-key")
+        if not any(
+            "primary-complete" in item["notes"]
+            for item in rows_by_seed.get(key, [])
+        ):
+            fail(f"defective backward chase for {key} has no primary bibliography")
+
     exploratory = (SURVEY / "exploratory-search-log.tsv").read_text(
         encoding="utf-8"
     ).splitlines()
@@ -124,7 +176,8 @@ def main() -> int:
         if "not-recorded" not in line:
             fail(f"exploratory-search-log row {number} is not reconciled")
 
-    for path in sorted((SURVEY / "screening").glob("*.tsv")):
+    screening_paths = sorted((SURVEY / "screening").glob("*.tsv"))
+    for path in screening_paths:
         header, snapshot_rows = rows(path)
         if header not in (SCREENING_HEADER, GENERIC_SCREENING_HEADER):
             fail(f"unexpected screening header in {path.relative_to(ROOT)}: {header}")
@@ -136,6 +189,14 @@ def main() -> int:
             )
             if not row[identifier_field]:
                 fail(f"missing identifier in {path.relative_to(ROOT)} row {rank + 1}")
+
+    unreferenced = sorted(
+        str(path.relative_to(SURVEY))
+        for path in screening_paths
+        if str(path.relative_to(SURVEY)) not in referenced_snapshots
+    )
+    if unreferenced:
+        fail(f"unreferenced screening snapshot: {unreferenced[0]}")
 
     return 0
 

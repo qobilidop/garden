@@ -1,0 +1,8 @@
+rank	source_id	year	doi	title	venue	type
+1	9c17e5f1a9f3c99385d6fe402d021c475a32dbe7	2026	10.1145/3797074	SmarTrim: Symbolic Execution for Smart Contracts Powered by Redundant Transaction-Sequence Pruning	Proceedings of the ACM on Software Engineering	JournalArticle
+2	bbdd4de9c4d3ba272afeca77d6c83dcf23927e5a	2020	10.1016/j.csi.2020.103444	A Systematic Review of Search Strategies in Dynamic Symbolic Execution	Comput. Stand. Interfaces	JournalArticle
+3	04c0e607bcb03c5fb2c47f4aebabf280aa2f1685	2019	10.1016/J.INFSOF.2018.11.006	FSCT: A new fuzzy search strategy in concolic testing	Information and Software Technology	JournalArticle
+4	c0f0b2eac4390e49cfe8b601a81535e2e08f5faa	2018	10.1109/TSE.2016.2560811	Nopol: Automatic Repair of Conditional Statement Bugs in Java Programs	IEEE Transactions on Software Engineering	JournalArticle
+5	556b4f9bdfd9bc4e25b06188e5d19bc1b98db8e7	2014	10.1145/2642937.2642973	Symbolic state validation through runtime data	International Conference on Automated Software Engineering	JournalArticle
+6	16aafe567d2318e7de02ce84085814ac58ef3725	2019	10.1016/BS.ADCOM.2018.10.002	Chapter Five - Advances in Symbolic Execution	Advances in Computing	JournalArticle
+7	92dc5f7e15b144957d16722422afa04164ddc17a	2015	10.14711/thesis-b1487578	Automated analysis of energy efficiency and execution performance for mobile applications		

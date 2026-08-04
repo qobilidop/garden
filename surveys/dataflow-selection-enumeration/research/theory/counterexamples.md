@@ -52,7 +52,7 @@ The selector of \`outer\` contains \`inner\`. The observation closure must
 include and constrain \`inner\` before the outer outcome. Splitting only
 top-level case operands misses a demanded site.
 
-## Inactive vs. logical don't-care
+## Structural non-observation vs. logical don't-care
 
 \`\`\`text
 inner = select(r, 5, 5)
@@ -60,18 +60,18 @@ outer = select(p, inner, 5)
 return outer
 \`\`\`
 
-When \`outer\` chooses its second case, \`inner\` is structurally inactive.
-When it chooses the first case, \`inner\` is active even though both of its
-alternatives and the final outputs are equal. Implicant minimization of the
-ordinary output may drop both decisions; structural observation must retain the
-active ones.
+When \`outer\` chooses its second case, \`inner\` is unobserved. When it chooses
+the first case, \`inner\` is observed even though both of its alternatives and
+the final outputs are equal. Implicant minimization of the ordinary output may
+drop both decisions; selection observation retains the outcomes of the
+observed sites.
 
 ## One-hot outcomes are not binary paths
 
 A width-\(w\) one-hot selection may demand several case roots simultaneously.
 Treating it as one winning branch is wrong. Treating every raw mask as a
 separate outcome gives \(2^w\) possible outcomes at one site; any bound based
-only on number of active sites is wrong.
+only on the number of observed sites is wrong.
 
 ## Priority raw values can share one outcome
 

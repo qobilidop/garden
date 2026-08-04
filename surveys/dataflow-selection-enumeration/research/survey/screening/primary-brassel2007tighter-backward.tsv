@@ -1,0 +1,16 @@
+rank	source_id	year	doi	title	venue	type
+1	citation-1	2005	10.1016/j.jsc.2004.01.001	Operational Semantics for Declarative Multi-Paradigm Languages	Journal of Symbolic Computation	article
+2	citation-2	2006		On the Correctness of Bubbling	RTA 2006	proceedings-article
+3	citation-3	2000	10.1145/347476.347484	A Needed Narrowing Strategy	Journal of the ACM	article
+4	citation-4	2006	10.1007/11799573_9	Overlapping Rules and Logic Variables in Functional Logic Programs	ICLP 2006	proceedings-article
+5	citation-5	2004		Encapsulating Non-Determinism in Functional Logic Computations	Journal of Functional and Logic Programming	article
+6	citation-6	2005		Translating Curry to Haskell	WCFLP 2005	proceedings-article
+7	citation-7	2007		On the Tighter Integration of Functional and Logic Programming	Christian-Albrechts-Universitat zu Kiel	technical-report
+8	citation-8	2006		Elimination of Extra Variables from Functional Logic Programs	PROLE 2006	proceedings-article
+9	citation-9	1999		An Approach to Declarative Programming Based on a Rewriting Logic	Journal of Logic Programming	article
+10	citation-10	2006		PAKCS: The Portland Aachen Kiel Curry System	software	software
+11	citation-11	2006		Curry: An Integrated Functional Logic Language (Version 0.8.2)	Curry language specification	report
+12	citation-12	2001		Prolog's Control Constructs in a Functional Setting: Axioms and Implementation	International Journal of Foundations of Computer Science	article
+13	citation-13	1993		A Natural Semantics for Lazy Evaluation	POPL 1993	proceedings-article
+14	citation-14	1999		Implementing Encapsulated Search for a Lazy Functional Logic Language	FLOPS 1999	proceedings-article
+15	citation-15	1999		An Efficient Abstract Machine for Curry	Informatik 1999	proceedings-article

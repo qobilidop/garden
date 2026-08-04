@@ -9,7 +9,7 @@ Use explicit parameters rather than the ambiguous phrase “graph size”:
 - \(Q\): number of structural selection sites;
 - \(b_q=|\Omega_q|\): outcome count at site \(q\);
 - \(K\): number of feasible selection observations under the caller constraint;
-- \(L\): maximum number of active sites in one observation;
+- \(L\): maximum number of observed selection sites in one observation;
 - \(S_\tau\): weighted size of the demanded slice for observation \(\tau\);
 - \(B\): number of candidates built by a particular syntactic branching
   algorithm before feasibility filtering;
@@ -49,8 +49,8 @@ The general structural bound is
 K\le\prod_{q\in Q}(1+b_q).
 \]
 
-The inactive values are not independent, so this bound can be loose. If every
-site is always active,
+The unobserved-sentinel values are not independent, so this bound can be loose.
+If every site is always observed,
 
 \[
 K\le\prod_q b_q.
@@ -148,14 +148,14 @@ definitional/Tseitin encoding, or actual serialized bytes.
 
 ## Decision and counting hardness
 
-Even for Boolean circuits, feasibility of a requested active-site outcome is
+Even for Boolean circuits, feasibility of a requested observed-site outcome is
 NP-hard: let one selector compute an arbitrary Boolean circuit \(F(x)\) and ask
 whether its \(\mathsf{true}\) outcome is feasible. It is in NP when a finite
 concrete input is a polynomial-size witness and graph evaluation is polynomial.
 
 Counting feasible observations is #P-hard when caller constraints are part of
 the input: under a Boolean constraint \(F(x)\), expose each input bit as an
-always-active binary selection outcome, making observations injective on
+always-observed binary selection outcome, making observations injective on
 satisfying inputs. The number of observations is then \(\#\mathrm{SAT}(F)\).
 
 Do not call the general image-counting problem #P-complete without an upper
@@ -169,7 +169,7 @@ coverage operationally through the final unsatisfiable query.
 
 The activation-variable projected-AllSMT baseline constructs one shared graph
 encoding of \(O(S_G)\) weighted DAG size. Full-fiber generation can avoid
-inactive slices per result but may emit \(O(KS_G)\) separate structures.
+unobserved slices per result but may emit \(O(KS_G)\) separate structures.
 Neither dominates asymptotically in the general model.
 
 Performance claims must separately report construction work, model queries,

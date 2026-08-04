@@ -1,0 +1,50 @@
+rank	source_id	year	doi	title	venue	type
+1	citation-1	2018		Quivela	GitHub	software
+2	https://doi.org/10.1007/978-3-642-22110-1_14	2011	https://doi.org/10.1007/978-3-642-22110-1_14	CVC4	CAV	conference-paper
+3	https://doi.org/10.5555/646483.691738	1999	https://doi.org/10.5555/646483.691738	Symbolic Model Checking Without BDDs	TACAS	conference-paper
+4	https://doi.org/10.24963/ijcai.2017/667	2017	https://doi.org/10.24963/ijcai.2017/667	A Verified SAT Solver Framework with Learn, Forget, Restart, and Incrementality	IJCAI	conference-paper
+5	https://doi.org/10.1145/1706299.1706339	2010	https://doi.org/10.1145/1706299.1706339	Programming with Angelic Nondeterminism	POPL	conference-paper
+6	https://doi.org/10.1145/2872362.2872406	2016	https://doi.org/10.1145/2872362.2872406	Specifying and checking file system crash-consistency models	ASPLOS	conference-paper
+7	https://doi.org/10.1145/3140587.3062353	2017	https://doi.org/10.1145/3140587.3062353	Synthesizing Memory Models from Framework Sketches and Litmus Tests	PLDI	conference-paper
+8	https://doi.org/10.1145/3276519	2018	https://doi.org/10.1145/3276519	Finding Code That Explodes Under Symbolic Evaluation	Proceedings of the ACM on Programming Languages	article
+9	https://doi.org/10.1145/2892664.2892667	2016	https://doi.org/10.1145/2892664.2892667	Wallingford: Toward a Constraint Reactive Programming Language	CROW	conference-paper
+10	https://doi.org/10.1145/3102071.3102084	2017	https://doi.org/10.1145/3102071.3102084	Synthesizing Interpretable Strategies for Solving Puzzle Games	FDG	conference-paper
+11	https://doi.org/10.1145/3158150	2018	https://doi.org/10.1145/3158150	Bonsai: Synthesis-Based Reasoning for Type Systems	Proceedings of the ACM on Programming Languages	article
+12	https://doi.org/10.1145/1706299.1706312	2010	https://doi.org/10.1145/1706299.1706312	A Verified Compiler for an Impure Functional Language	POPL	conference-paper
+13	citation-13	2017		Cosette: An Automated Prover for SQL	CIDR	conference-paper
+14	https://doi.org/10.1007/978-3-540-24730-2_15	2004	https://doi.org/10.1007/978-3-540-24730-2_15	A Tool for Checking ANSI-C Programs	TACAS	conference-paper
+15	https://doi.org/10.1145/775832.775928	2003	https://doi.org/10.1145/775832.775928	Behavioral Consistency of C and Verilog Programs	CMU-CS-03-126	report
+16	https://doi.org/10.1109/TSE.1976.233817	1976	https://doi.org/10.1109/TSE.1976.233817	A System to Generate Test Data and Symbolically Execute Programs	IEEE Transactions on Software Engineering	article
+17	https://doi.org/10.1145/512950.512973	1977	https://doi.org/10.1145/512950.512973	Abstract Interpretation: A Unified Lattice Model for Static Analysis of Programs by Construction or Approximation of Fixpoints	POPL	conference-paper
+18	https://doi.org/10.1145/567752.567778	1979	https://doi.org/10.1145/567752.567778	Systematic Design of Program Analysis Frameworks	POPL	conference-paper
+19	https://doi.org/10.1007/978-3-319-63046-5_14	2017	https://doi.org/10.1007/978-3-319-63046-5_14	Efficient Certified RAT Verification	CADE	conference-paper
+20	https://doi.org/10.1007/978-3-540-78800-3_24	2008	https://doi.org/10.1007/978-3-540-78800-3_24	Z3: An Efficient SMT Solver	TACAS	conference-paper
+21	https://doi.org/10.1007/978-3-319-21401-6_26	2015	https://doi.org/10.1007/978-3-319-21401-6_26	The Lean Theorem Prover	CADE	conference-paper
+22	https://doi.org/10.1145/3127323	2018	https://doi.org/10.1145/3127323	A Programmable Programming Language	Communications of the ACM	article
+23	https://doi.org/10.1145/173262.155113	1993	https://doi.org/10.1145/173262.155113	The Essence of Compiling with Continuations	PLDI	conference-paper
+24	citation-24	2010		Reference: Racket	PLT-TR-2010-1	report
+25	citation-25	2017		A thorough introduction to eBPF	LWN	article
+26	https://doi.org/10.1145/3385412.3386014	2020	https://doi.org/10.1145/3385412.3386014	Gillian, Part I: A Multi-Language Platform for Symbolic Execution	PLDI	conference-paper
+27	citation-27	2016		Verasco: A Formally Verified C Static Analyzer	Université Paris Diderot	dissertation
+28	https://doi.org/10.1145/2676726.2676966	2015	https://doi.org/10.1145/2676726.2676966	A Formally-Verified C Static Analyzer	POPL	conference-paper
+29	https://doi.org/10.1007/978-3-319-73721-8_13	2018	https://doi.org/10.1007/978-3-319-73721-8_13	Refinement Types for Ruby	VMCAI	conference-paper
+30	https://doi.org/10.1145/360248.360252	1976	https://doi.org/10.1145/360248.360252	Symbolic Execution and Program Testing	Communications of the ACM	article
+31	https://doi.org/10.1016/j.jsc.2016.07.012	2017	https://doi.org/10.1016/j.jsc.2016.07.012	A generic framework for symbolic execution: A coinductive approach	Journal of Symbolic Computation	article
+32	citation-32	1998		Differential Testing for Software	Digital Technical Journal	article
+33	https://doi.org/10.1145/3341301.3359641	2019	https://doi.org/10.1145/3341301.3359641	Scaling symbolic evaluation for automated verification of systems code with Serval	SOSP	conference-paper
+34	citation-34	2020		Specification and verification in the field: Applying formal methods to BPF just-in-time compilers in the Linux kernel	OSDI	conference-paper
+35	https://doi.org/10.1017/S0956796817000107	2017	https://doi.org/10.1017/S0956796817000107	Fair enumeration combinators	Journal of Functional Programming	article
+36	https://doi.org/10.1017/S0956796816000216	2017	https://doi.org/10.1017/S0956796816000216	Higher order symbolic execution for contract verification and refutation	Journal of Functional Programming	article
+37	https://doi.org/10.3233/SAT190101	2014	https://doi.org/10.3233/SAT190101	Boolector 2.0	Journal on Satisfiability, Boolean Modeling and Computation	article
+38	https://doi.org/10.1007/978-3-319-41540-6_2	2016	https://doi.org/10.1007/978-3-319-41540-6_2	Investigating Safety of a Radiotherapy Machine Using System Models with Pluggable Checkers	CAV	conference-paper
+39	https://doi.org/10.1145/2872362.2872387	2016	https://doi.org/10.1145/2872362.2872387	Scaling Up Superoptimization	ASPLOS	conference-paper
+40	https://doi.org/10.1145/2786805.2786830	2015	https://doi.org/10.1145/2786805.2786830	MultiSE: Multi-path symbolic execution using value summaries	ESEC/FSE	conference-paper
+41	https://doi.org/10.1145/1168857.1168907	2006	https://doi.org/10.1145/1168857.1168907	Combinatorial Sketching for Finite Programs	ASPLOS	conference-paper
+42	citation-42	2010		A verified framework for symbolic execution in the ACL2 theorem prover	University of Texas at Austin	dissertation
+43	https://doi.org/10.1145/2509578.2509586	2013	https://doi.org/10.1145/2509578.2509586	Growing Solver-Aided Languages with Rosette	Onward!	conference-paper
+44	https://doi.org/10.1145/2666356.2594340	2014	https://doi.org/10.1145/2666356.2594340	A Lightweight Symbolic Virtual Machine for Solver-Aided Host Languages	PLDI	conference-paper
+45	https://doi.org/10.1145/2714064.2660208	2014	https://doi.org/10.1145/2714064.2660208	Smten with Satisfiability-Based Search	OOPSLA	conference-paper
+46	https://doi.org/10.1145/3110269	2017	https://doi.org/10.1145/3110269	SpaceSearch: A Library for Building and Verifying Solver-Aided Tools	ICFP	conference-paper
+47	https://doi.org/10.1145/2983990.2984012	2016	https://doi.org/10.1145/2983990.2984012	Scalable Verification of Border Gateway Protocol Configurations with an SMT Solver	OOPSLA	conference-paper
+48	https://doi.org/10.1145/3297858.3304027	2019	https://doi.org/10.1145/3297858.3304027	Puddle: A Dynamic, Error-Correcting, Full-Stack Microfluidics Platform	ASPLOS	conference-paper
+49	https://doi.org/10.1145/3385412.3385985	2020	https://doi.org/10.1145/3385412.3385985	Validating SMT Solvers via Semantic Fusion	PLDI	conference-paper

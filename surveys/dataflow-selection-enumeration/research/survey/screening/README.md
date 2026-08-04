@@ -41,6 +41,11 @@ are mandatory when an index returns unresolved reference identifiers, a
 truncated bibliography, a wrong version, or an implausible zero-reference
 result.
 
+Semantic Scholar can likewise return citation stubs with neither a paper ID
+nor a DOI. The exporter retains them under the snapshot-local identifier
+`unresolved-record-N`; this exposes missing index metadata without deleting a
+screened result or inventing authoritative bibliographic identity.
+
 No closure claim follows merely from the presence of snapshots. The protocol's
 deep-reading, separate seed chasing, consecutive no-add rounds, and independent
 audit requirements still apply.

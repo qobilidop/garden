@@ -7,8 +7,8 @@ closest communities use each term.
 |---|---|---|---|---|
 | Program representation | dataflow graph, expression DAG, term graph, circuit | finite typed pure term graph; *selective term graph* when selections are explicit | provisional | “Dataflow” is heavily overloaded; term graph makes sharing central. |
 | Finite value-selecting operator | selection, choice, conditional, mux, ITE | selection operator; selection site | provisional | “Choice” suggests nondeterminism in functional-logic work. |
-| Selection sites reached from the requested result for one input | demanded choice, active event, relevant decision | active *in an observation* | provisional | “Active selection” is not an established cross-community term; use `active` only as a locally defined adjective. |
-| Outcomes of active selections for one input | path, trace, partial assignment, configuration, event set | selection observation; sparse selection-outcome map | provisional | The object is unordered and graph-intensional, so “path” and “trace” mislead. “Configuration” is established in event structures. |
+| Selection sites reached from the requested result for one input | demanded choice, enabled event, relevant decision, fingerprint domain | observed *for* \((x,R)\) | selected | “Active selection” is not established and can mean the selected arm rather than the consulted site. “Observed” is explicitly local membership in the enabled closure. |
+| Outcomes of observed selections for one input | fingerprint, path, trace, partial assignment, configuration, event set | selection observation; sparse selection-outcome map | provisional | The object is unordered and graph-intensional, so “path” and “trace” mislead. “Configuration” is established in event structures; “fingerprint” is established for nondeterministic functional-logic choices. |
 | Inputs sharing one observation | path region, equivalence class, cell, case, fiber | observation fiber; observation region | provisional | *Fiber* is mathematically exact; *region* is friendlier prose. |
 | Formula denoting a region | path condition, activation condition, guard | observation guard | provisional | It is not necessarily a CFG path condition. |
 | Symbolic result valid in a region | symbolic store, value summary, residual | guarded residual value | provisional | MultiSE already uses *value summary* for disjoint guarded expressions. |
@@ -18,16 +18,17 @@ closest communities use each term.
 
 ## Required distinctions
 
-- **Activity vs. operational demand:** a selection is *active in an
-  observation* when it is
-  reachable from the requested result through strict operands and the cases
-  selected by the concrete input. This is an observation judgment over an
-  eagerly defined pure graph, not a claim that execution is lazy.
+- **Observation vs. operational demand:** a selection site is *observed for*
+  \((x,R)\) exactly when it belongs to the enabled closure reached from the
+  requested roots through strict operands and the cases selected by the
+  concrete input. This is an observation judgment over an eagerly defined pure
+  graph, not a claim that execution is lazy.
 
-- **Structural inactivity vs. logical don't-care:** a site is inactive because
-  the observation policy does not reach its cone for that input. An unassigned
-  literal in a partial implicant may vary without falsifying a formula.
-- **Selection observation vs. output value:** active equal-valued alternatives
+- **Structural non-observation vs. logical don't-care:** a site is unobserved
+  because the observation policy does not reach its cone for that input. An
+  unassigned literal in a partial implicant may vary without falsifying a
+  formula.
+- **Selection observation vs. output value:** observed equal-valued alternatives
   have the same ordinary value but different structural observations.
 - **Result observation vs. lazy evaluation:** the base graph has eager,
   deterministic value semantics. A separate judgment selects structural events

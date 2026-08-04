@@ -1,0 +1,10 @@
+rank	openalex_id	year	doi	title	venue	type
+1	W4406221679	2025	https://doi.org/10.1145/3704865	TensorRight: Automated Verification of Tensor Graph Rewrites	Proceedings of the ACM on Programming Languages	article
+2	W4399851061	2024	https://doi.org/10.1145/3656415	Superfusion: Eliminating Intermediate Data Structures via Inductive Synthesis	Proceedings of the ACM on Programming Languages	article
+3	W4391840543	2024	https://doi.org/10.1145/3648440	Decomposition-based Synthesis for Applying Divide-and-Conquer-like Algorithmic Paradigms	ACM Transactions on Programming Languages and Systems	article
+4	W4415004911	2025	https://doi.org/10.1145/3763073	Synthesizing DSLs for Few-Shot Learning	Proceedings of the ACM on Programming Languages	article
+5	W4411260318	2025	https://doi.org/10.1145/3729303	Polygon: Symbolic Reasoning for SQL using Conflict-Driven Under-Approximation Search	Proceedings of the ACM on Programming Languages	article
+6	W4414988627	2025	https://doi.org/10.1145/3763162	HieraSynth: A Parallel Framework for Complete Super-Optimization with Hierarchical Space Decomposition	Proceedings of the ACM on Programming Languages	article
+7	W7163894640	2026	https://doi.org/10.1145/3808340	Pantomime: Constructive Leakage Proofs via Simulation	Proceedings of the ACM on Programming Languages	article
+8	W7164587552	2026	https://doi.org/10.1145/3815001.3815004	Refined Remora: Constraining Array Shapes		conference-paper
+9	W7167920887	2026	https://doi.org/10.1145/3793656.3793689	TensorEgg: Formally Verifying Rewrite Rules and Applying Them to Tensor Programs		conference-paper

@@ -1,0 +1,42 @@
+rank	openalex_id	year	doi	title	venue	type
+1	W169672073	2007	https://doi.org/10.3233/sat190034	Lazy Satisfiability Modulo Theories	Journal on Satisfiability Boolean Modeling and Computation	article
+2	W1480909796	2008	https://doi.org/10.1007/978-3-540-78800-3_24	Z3: An Efficient SMT Solver	Lecture notes in computer science	conference-paper
+3	W1548817078	2008	https://doi.org/10.1007/978-3-540-70545-1_20	FShell: Systematic Test Case Generation for Dynamic Analysis and Measurement	Lecture notes in computer science	conference-paper
+4	W1787074469	1999	https://doi.org/10.1007/3-540-49059-0_14	Symbolic Model Checking without BDDs	Lecture notes in computer science	conference-paper
+5	W1878475345	2013	https://doi.org/10.1007/978-3-642-40196-1_16	SAT-Based Analysis and Quantification of Information Flow in Programs	Lecture notes in computer science	conference-paper
+6	W1882297107	1982		Cryptography and data security		article
+7	W1996010294	1992	https://doi.org/10.1016/0747-7171(92)90009-s	An optimality result for clause form translation	Journal of Symbolic Computation	article
+8	W1999997889	1986	https://doi.org/10.1016/s0747-7171(86)80028-1	A Structure-preserving Clause Form Translation	Journal of Symbolic Computation	article
+9	W2022846948	2006	https://doi.org/10.1145/1217856.1217859	Solving SAT and SAT Modulo Theories	Journal of the ACM	article
+10	W2027029004	2008	https://doi.org/10.1145/1375696.1375713	Lagrange multipliers and maximum information leakage in different observational models		conference-paper
+11	W2047694629	2010	https://doi.org/10.1145/1858996.1859035	Symbolic PathFinder		conference-paper
+12	W2057361103	1962	https://doi.org/10.1145/368273.368557	A machine program for theorem-proving	Communications of the ACM	article
+13	W2064019550	2007	https://doi.org/10.1109/fmcad.2007.18	Computing Predicate Abstractions by Integrating BDDs and SMT Solvers	Formal Methods in Computer-Aided Design	article
+14	W2076090418	1989	https://doi.org/10.1145/75277.75280	An efficient method of computing static single assignment form		conference-paper
+15	W2078114603	2007	https://doi.org/10.1145/1190215.1190251	Assessing security threats of looping constructs	ACM SIGPLAN Notices	article
+16	W2091968063	2008	https://doi.org/10.1007/978-3-540-70545-1_28	The MathSAT 4 SMT Solver	Lecture notes in computer science	conference-paper
+17	W2097151854	2009	https://doi.org/10.1007/978-3-642-00596-1_21	On the Foundations of Quantitative Information Flow	Lecture notes in computer science	conference-paper
+18	W2101171610	2010	https://doi.org/10.1145/1920261.1920300	Quantifying information leaks in software		conference-paper
+19	W2101512909	1976	https://doi.org/10.1145/360248.360252	Symbolic execution and program testing	Communications of the ACM	article
+20	W2111552846	2009	https://doi.org/10.1145/1554339.1554349	Measuring channel capacity to distinguish undue influence		conference-paper
+21	W2116678681	2002	https://doi.org/10.1109/32.988495	Verisim: formal analysis of network simulations	IEEE Transactions on Software Engineering	article
+22	W2116877149	2011	https://doi.org/10.1145/2166956.2166957	Calculating bounds on information leakage using two-bit patterns		conference-paper
+23	W2126626789	2006	https://doi.org/10.1007/11817963_39	SMT Techniques for Fast Predicate Abstraction	Lecture notes in computer science	conference-paper
+24	W2129538349	2004	https://doi.org/10.1007/978-3-540-24730-2_15	A Tool for Checking ANSI-C Programs	Lecture notes in computer science	conference-paper
+25	W2132218308	2014	https://doi.org/10.1145/2632362.2632367	Quantifying information leaks using reliability analysis		conference-paper
+26	W2137351629	2011	https://doi.org/10.1145/1995376.1995394	Satisfiability modulo theories	Communications of the ACM	article
+27	W2143744897	2014	https://doi.org/10.1145/2590296.2590328	Abstract model counting		conference-abstract
+28	W2147436337	2007	https://doi.org/10.3233/jcs-2007-15302	A static analysis for quantifying information flow in a simple imperative language	Journal of Computer Security	article
+29	W2149614712	1980	https://doi.org/10.1109/tse.1980.234477	A User-Oriented Software Reliability Model	IEEE Transactions on Software Engineering	article
+30	W2156585713	2012	https://doi.org/10.1145/2382756.2382791	Symbolic quantitative information flow	ACM SIGSOFT Software Engineering Notes	article
+31	W2158277132	2009	https://doi.org/10.1109/fmcad.2009.5351149	Structure-aware computation of predicate abstraction		conference-paper
+32	W2158870716	2003	https://doi.org/10.1145/604131.604140	From symptom to cause		conference-paper
+33	W2159595840	2010		The SMT-LIB Standard Version 2.0		article
+34	W2171999426	2003	https://doi.org/10.1145/775832.775928	Behavioral consistency of C and verilog programs using bounded model checking		conference-paper
+35	W2253447482	2015	https://doi.org/10.48550/arxiv.1504.02796	Model Counting Modulo Theories	arXiv (Cornell University)	preprint
+36	W2287565210	2014	https://doi.org/10.4230/oasics.iccsw.2014.58	Symbolic Execution as DPLL Modulo Theories	DROPS (Schloss Dagstuhl – Leibniz Center for Informatics)	article
+37	W4231640108	1999	https://doi.org/10.21236/ada360973	Symbolic Model Checking without BDDs		report
+38	W4235626864	2007	https://doi.org/10.1109/famcad.2007.35	Computing Predicate Abstractions by Integrating BDDs and SMT Solvers		conference-paper
+39	W4238789074	2007	https://doi.org/10.1145/1190216.1190251	Assessing security threats of looping constructs		conference-paper
+40	W4243326882	2003	https://doi.org/10.21236/ada461052	Behavioral Consistency of C and Verilog Programs Using Bounded Model Checking		report
+41	W4243718993	2013	https://doi.org/10.1109/icse.2013.6606608	Reliability analysis in Symbolic PathFinder		conference-paper

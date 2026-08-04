@@ -1,0 +1,65 @@
+rank	openalex_id	year	doi	title	venue	type
+1	W52244296	2012	https://doi.org/10.1007/978-3-642-31424-7_61	TRACER: A Symbolic Execution Tool for Verification	Lecture notes in computer science	conference-paper
+2	W121457469	2013	https://doi.org/10.1007/978-3-642-37651-1_17	Interprocedural Shape Analysis for Effectively Cutpoint-Free Programs	Lecture notes in computer science	conference-paper
+3	W148396834	2011		Two approaches to interprocedural data flow analysis		book
+4	W157156687	2008		Automated Whitebox Fuzz Testing.		article
+5	W196342399	2009		jFuzz: A Concolic Whitebox Fuzzer for Java		article
+6	W208073541	2011	https://doi.org/10.1007/978-3-642-22110-1_49	KLOVER: A Symbolic Execution and Automatic Test Generation Tool for C++ Programs	Lecture notes in computer science	conference-paper
+7	W1497028280	2008	https://doi.org/10.1007/978-3-540-78800-3_27	RWset: Attacking Path Explosion in Constraint-Based Test Generation	Lecture notes in computer science	conference-paper
+8	W1548806133	2006	https://doi.org/10.1007/11817963_38	CUTE and jCUTE: Concolic Unit Testing and Explicit Path Model-Checking Tools	Lecture notes in computer science	conference-paper
+9	W1550549614	2009	https://doi.org/10.1007/978-3-642-02658-4_41	Reducing Test Inputs Using Information Partitions	Lecture notes in computer science	conference-paper
+10	W1586497944	2010	https://doi.org/10.1007/978-3-642-14295-6_10	Lazy Annotation for Program Testing and Verification	Lecture notes in computer science	conference-paper
+11	W1710734607	2008	https://doi.org/10.5555/1855741.1855756	KLEE: unassisted and automatic generation of high-coverage tests for complex systems programs		article
+12	W1777881387	2007	https://doi.org/10.1007/978-3-540-71209-1_12	JPF–SE: A Symbolic Execution Extension to Java PathFinder	Lecture notes in computer science	conference-paper
+13	W1966982815	2005	https://doi.org/10.1145/1040305.1040334	Scalable error detection using boolean satisfiability		conference-paper
+14	W1970005004	2014	https://doi.org/10.1145/2568225.2568293	Enhancing symbolic execution with veritesting		conference-paper
+15	W1975191777	2013	https://doi.org/10.1145/2491411.2491425	Boosting concolic testing via interpolation		conference-paper
+16	W1979693894	2012	https://doi.org/10.1145/2254064.2254088	Efficient state merging in symbolic execution		conference-paper
+17	W1987647365	2013	https://doi.org/10.1145/2491411.2491447	Jalangi: a selective record-replay and dynamic analysis framework for JavaScript		conference-paper
+18	W1991546210	2007	https://doi.org/10.1145/1250734.1250789	Practical memory leak detection using guarded value-flow analysis		conference-paper
+19	W1992012690	2011	https://doi.org/10.1145/2049697.2049700	Compositional Shape Analysis by Means of Bi-Abduction	Journal of the ACM	article
+20	W1992105245	2008	https://doi.org/10.1145/1390630.1390635	Combining unit-level symbolic execution and system-level concrete execution for testing nasa software		conference-paper
+21	W2009489720	2005	https://doi.org/10.1145/1081706.1081750	CUTE		conference-paper
+22	W2012997183	2006	https://doi.org/10.1145/1146238.1146243	Test input generation for java containers using state matching		conference-paper
+23	W2026496705	2011	https://doi.org/10.1145/2039346.2039349	Bottom-up shape analysis using LISF	ACM Transactions on Programming Languages and Systems	article
+24	W2036208810	2000	https://doi.org/10.1145/349299.349311	Modular interprocedural pointer analysis using access paths		conference-paper
+25	W2041176136	2011	https://doi.org/10.1109/ase.2011.6100071	Heap cloning: Enabling dynamic symbolic execution of java programs		conference-paper
+26	W2044213223	2013		Memoise: a tool for memoized symbolic execution		article
+27	W2049707975	2008	https://doi.org/10.1109/fmcad.2008.ecp.23	Symbolic Program Analysis Using Term Rewriting and Generalization		conference-paper
+28	W2050853996	2008	https://doi.org/10.1145/1390630.1390662	Finding bugs in dynamic web applications		conference-paper
+29	W2053154567	2008	https://doi.org/10.1145/1449764.1449782	jStar		conference-paper
+30	W2057156093	2014	https://doi.org/10.1145/2594291.2594340	A lightweight symbolic virtual machine for solver-aided host languages		conference-paper
+31	W2061686717	1976	https://doi.org/10.1145/800191.805647	A program testing system		conference-paper
+32	W2073264387	2008	https://doi.org/10.1145/1328438.1328467	Generating precise and concise procedure summaries		conference-paper
+33	W2077850509	1999	https://doi.org/10.1145/320384.320400	Compositional pointer and escape analysis for Java programs		conference-paper
+34	W2080267935	1986	https://doi.org/10.1109/tc.1986.1676819	Graph-Based Algorithms for Boolean Function Manipulation	IEEE Transactions on Computers	article
+35	W2080573945	1995	https://doi.org/10.1145/199448.199462	Precise interprocedural dataflow analysis via graph reachability		conference-paper
+36	W2094568767	2010	https://doi.org/10.1109/sp.2010.38	A Symbolic Execution Framework for JavaScript		conference-paper
+37	W2095450067	2012	https://doi.org/10.1109/sp.2012.48	Rozzle: De-cloaking Internet Malware		conference-paper
+38	W2096449544	2005	https://doi.org/10.1145/1064978.1065036	DART	ACM SIGPLAN Notices	article
+39	W2099941001	2014	https://doi.org/10.1007/978-3-319-12154-3_4	The KeY Platform for Verification and Analysis of Java Programs	Lecture notes in computer science	conference-paper
+40	W2101512909	1976	https://doi.org/10.1145/360248.360252	Symbolic execution and program testing	Communications of the ACM	article
+41	W2101811836	2011	https://doi.org/10.1145/1925844.1926406	Calling context abstraction with shapes	ACM SIGPLAN Notices	article
+42	W2106545804	2006	https://doi.org/10.1145/1176887.1176925	Software partitioning for effective automated unit testing		conference-abstract
+43	W2110311336	2008	https://doi.org/10.1007/978-3-540-79124-9_10	Pex–White Box Test Generation for .NET	Lecture notes in computer science	conference-paper
+44	W2115950902	2011	https://doi.org/10.1007/978-3-642-23702-7_12	Statically Validating Must Summaries for Incremental Compositional Dynamic Test Generation	Lecture notes in computer science	conference-paper
+45	W2119251836	2008	https://doi.org/10.1007/978-3-540-89862-7_1	BitBlaze: A New Approach to Computer Security via Binary Analysis	Lecture notes in computer science	conference-paper
+46	W2133612077	2007	https://doi.org/10.1145/1190215.1190226	Compositional dynamic test generation	ACM SIGPLAN Notices	article
+47	W2134875273	2010	https://doi.org/10.1145/1706299.1706307	Compositional may-must program analysis		conference-paper
+48	W2136880809	2009	https://doi.org/10.1145/1595696.1595704	Darwin		conference-paper
+49	W2137351629	2011	https://doi.org/10.1145/1995376.1995394	Satisfiability modulo theories	Communications of the ACM	article
+50	W2138369269	2003	https://doi.org/10.1145/780822.781150	A practical flow-sensitive and context-sensitive C and C++ memory leak detector	ACM SIGPLAN Notices	article
+51	W2150990339	2012	https://doi.org/10.1145/2110356.2110358	The S2E Platform	ACM Transactions on Computer Systems	article
+52	W2151655370	2011	https://doi.org/10.1145/1993316.1993566	On inter-procedural analysis of programs with lists and data	ACM SIGPLAN Notices	article
+53	W2156045808	2007	https://doi.org/10.1007/978-3-540-71316-6_18	Computing Procedure Summaries for Interprocedural Analysis	Lecture notes in computer science	conference-paper
+54	W2163499368	2008	https://doi.org/10.1109/ase.2008.69	Heuristics for Scalable Dynamic Test Generation		conference-paper
+55	W2164151624	2011	https://doi.org/10.1145/1993316.1993565	Precise and compact modular procedure summaries for heap manipulating programs	ACM SIGPLAN Notices	article
+56	W2168625647	2008	https://doi.org/10.1109/ase.2008.32	Test-Suite Augmentation for Evolving Software		conference-paper
+57	W2171469152	2008	https://doi.org/10.1007/978-3-540-78800-3_28	Demand-Driven Compositional Symbolic Execution	Lecture notes in computer science	conference-paper
+58	W2913820360	2008		Proceedings of the 2008 International Conference on Formal Methods in Computer-Aided Design		article
+59	W4237492309	2005	https://doi.org/10.1145/1065010.1065036	DART		conference-paper
+60	W4241183813	2011	https://doi.org/10.1145/1926385.1926406	Calling context abstraction with shapes		conference-paper
+61	W4241317396	2011	https://doi.org/10.1145/1993498.1993566	On inter-procedural analysis of programs with lists and data		conference-paper
+62	W4244800399	2003	https://doi.org/10.1145/781131.781150	A practical flow-sensitive and context-sensitive C and C++ memory leak detector		conference-paper
+63	W4245321046	2011	https://doi.org/10.1145/1993498.1993565	Precise and compact modular procedure summaries for heap manipulating programs		conference-paper
+64	W4246385123	2007	https://doi.org/10.1145/1190216.1190226	Compositional dynamic test generation		conference-paper

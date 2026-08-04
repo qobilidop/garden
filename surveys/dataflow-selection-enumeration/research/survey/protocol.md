@@ -53,6 +53,13 @@ count toward closure.
 7. Trace/state partitioning in abstract interpretation.
 8. Decision diagrams, conditional values, partial evaluation, residualization,
    program slicing, and demand or cone-of-influence analysis.
+9. Functional-logic demand-driven search, set functions, pull-tabbing, stable
+   choice identifiers, branching information, and fingerprints.
+
+Cluster 9 was added when forward snowballing from needed narrowing exposed a
+previously missing closest lineage. This reopened the map before either final
+no-add round was run; `closure-audit.md` records the corresponding prospective
+query expansion.
 
 ## Discovery sources
 

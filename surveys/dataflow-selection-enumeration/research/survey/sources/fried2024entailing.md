@@ -115,7 +115,7 @@ may overlap and may combine many different internal selection observations.
 The paper's `X` is also distinct from our inactive marker. `X` permits both
 Boolean completions of a caller input or gate abstraction. Inactivity says
 that a graph site does not belong to the enabled closure for that concrete
-observation. Logical generalization can erase distinctions among active sites;
+observation. Logical generalization can erase distinctions among observed sites;
 observation enumeration deliberately retains them.
 
 ### Could it subsume our proposed contribution?

@@ -116,15 +116,17 @@ oracle abstraction. It is not an OutputP, IncP, polynomial-delay, ordinary
 decision-oracle, or wall-clock theorem. A decision oracle returns only a bit;
 obtaining a witness requires self-reduction or a function/model oracle.
 
-## Activation-variable projected-AllSMT baseline
+## Reachability-variable projected-AllSMT baseline
 
-For every node \(v\), construct a symbolic value term \(e_v(x)\). Construct an
-activity formula \(a_v(x,R)\) by propagating observation backward from \(R\):
+For every node \(v\), construct a symbolic value term \(e_v(x)\). Construct a
+reachability formula \(a_v(x,R)\) by propagating observation backward from
+\(R\). Such indicators are also called *activation variables* in related
+encodings:
 
-- roots in \(R\) are active;
-- an active ordinary node activates every operand;
-- an active selection activates its selector;
-- it activates case \(j\) under
+- \(a_v\) holds for roots in \(R\);
+- if \(a_v\) holds for an ordinary node, it holds for every operand;
+- if \(a_q\) holds for a selection site, it holds for the selector;
+- it holds for case \(j\) under
   \[
   j\in C_q(\kappa_q(e_{s_q}(x)));
   \]
@@ -139,12 +141,12 @@ z_q=\operatorname{ite}
 
 Project the graph formula onto the vector \(Z=(z_q)\). Standard AllSMT,
 projected enumeration, or decision-diagram compilation then enumerates the
-feasible totalized observations. Internal values and activity variables are
+feasible totalized observations. Internal values and reachability variables are
 unimportant variables.
 
 ## Reduction theorem
 
-For every input \(x\), the activation encoding has a unique \(Z\) equal to
+For every input \(x\), the reachability/outcome encoding has a unique \(Z\) equal to
 \(\overline T_G(x,R)\). Thus projected enumeration over \(Z\) is in bijection
 with the feasible sparse observations.
 
@@ -166,9 +168,9 @@ represent several complete observations.
 
 ## Representation tradeoff
 
-Full-fiber generation avoids symbolically constructing inactive cones for one
+Full-fiber generation avoids symbolically constructing unobserved cones for one
 observation, directly returns input guards and residuals, and can keep each
-observation sparse. The activation encoding constructs one global graph of
+observation sparse. The reachability/outcome encoding constructs one global graph of
 weighted size linear in the source graph, shares it across all observations,
 and can use mature disjoint-enumeration algorithms that avoid ordinary
 blocking-clause accumulation.

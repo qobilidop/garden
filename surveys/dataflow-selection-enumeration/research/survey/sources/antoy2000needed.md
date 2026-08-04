@@ -55,7 +55,7 @@ can diverge or evaluate a subterm later made irrelevant by substitution.
 Definitional-tree branches resemble selector outcomes and unvisited arguments
 resemble inactive case cones. Distinct successful derivations retain disjoint
 input substitutions. The computed object is nevertheless a solution
-substitution modulo a rewrite theory, not a contextual map of active site
+substitution modulo a rewrite theory, not a contextual map of observed site
 outcomes. The finite total pure-graph setting also removes instantiation,
 rewrite recursion, and nontermination.
 

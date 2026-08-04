@@ -46,7 +46,7 @@ enumeration-complexity bound (47:19 and 47:22).
 
 ## Relationship to our hypothesis
 
-A ghost field carrying stable selection-site outcomes makes active selections
+A ghost field carrying stable selection-site outcomes makes observed selections
 part of the merged value, after which Theorem 5 transfers exactness. Without
 tags, equal-valued arms can disappear during merging. The framework neither
 defines sparse result-observed selections nor enumerates their exact fibers.
@@ -56,4 +56,3 @@ defines sparse result-observed selections nor enumerates their exact fibers.
 - Figures 2–4 and 6, Article 47:6–47:13: languages, factory, and evaluator.
 - Theorems 2–6, Article 47:15–47:18: metatheory.
 - Article 47:19–47:22: implementations and representation growth.
-

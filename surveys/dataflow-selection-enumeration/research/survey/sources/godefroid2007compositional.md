@@ -54,7 +54,7 @@ not a polynomial-runtime theorem.
 
 ## Relationship to our hypothesis
 
-Active selections can be encoded as ghost outputs in SMART summaries. SMART
+Observed selections can be encoded as ghost outputs in SMART summaries. SMART
 does not quotient multiple paths by a sparse output-observed selection map, nor
 does it enumerate distinct observation fibers or analyze complexity in their
 number. Demand-driven compositional symbolic execution is nevertheless known.
@@ -69,4 +69,3 @@ path summaries with observation-fiber summaries.
 
 - Sections 2 and 3.1–3.3, revised-version pp. 2–5: execution and summaries.
 - Theorems 1–3 and Section 3.5, revised-version p. 6: guarantees and complexity.
-

@@ -33,12 +33,12 @@ distinguish:
 Our proposed selection observation chooses a different, explicitly
 intensional observer: a partial map from contextually identified selection
 sites to their selected outcomes, restricted to the enabled closure of
-requested roots. It retains an active selection even when two arms yield the
-same extensional output. It omits a nested site when its containing case is not
-selected.
+requested roots. It retains an observed site's outcome even when two arms yield
+the same extensional output. It omits a nested site when its containing case is
+not selected.
 
 This distinction is real, but not automatically novel. Instrumenting every
-selection site with a ghost inactive-or-outcome value turns the structural
+selection site with a ghost unobserved-or-outcome value turns the structural
 observer into an ordinary symbolic output. Output-directed exploration or
 projected enumeration can then recover its image. The survey contribution is
 to expose this observer change and its information consequences, not to claim
@@ -51,7 +51,7 @@ that observer-induced quotienting itself is new.
    conditions are the coarsest or canonical output quotient. Different RSCs
    may still yield the same output.
 2. **Equal-value provenance.** AVaSE deliberately coalesces equal symbolic
-   expressions. A selection observation retains distinct active site outcomes
+   expressions. A selection observation retains distinct observed-site outcomes
    even when their residual values are equal.
 3. **Dependence approximation.** SPD and DGSE use dependence to avoid irrelevant
    combinations. Potential and interactive dependence can conservatively
@@ -81,9 +81,9 @@ Use established terms when the corresponding object is meant:
 - *value summary* and *state merging*.
 
 Do not rename these objects “selection observations.” Reserve that local term
-for the graph-intensional sparse site/outcome map. Describe a site as *active
-in an observation* only after defining enabled closure; “active selection” is
-not an established noun phrase in this cluster.
+for the graph-intensional sparse site/outcome map. Say that a site is
+*observed for* \((x,R)\) exactly when it belongs to the enabled closure;
+“active selection” is neither established nor unambiguous in this cluster.
 
 ## Best motivating contrast
 
@@ -92,7 +92,7 @@ of which contains an inner selector, and make the outer cases return the same
 ordinary value for at least one input region. The example simultaneously
 shows:
 
-- why the inactive inner site must be absent rather than logically
+- why the unobserved inner site must be absent rather than logically
   don't-care;
 - why equal ordinary outputs do not determine the selection observation;
 - why total assignments over every syntactic selector create a spurious

@@ -1,0 +1,80 @@
+rank	openalex_id	year	doi	title	venue	type
+1	W1482532598	2011	https://doi.org/10.3233/aic-2011-0491	Potassco: The Potsdam Answer Set Solving Collection	AI Communications	article
+2	W2049791401	2012	https://doi.org/10.1016/j.artint.2012.04.001	Conflict-driven answer set solving: From theory to practice	Artificial Intelligence	article
+3	W4211177236	2012	https://doi.org/10.2200/s00457ed1v01y201211aim019	Answer Set Solving in Practice	Synthesis lectures on artificial intelligence and machine learning	article
+4	W2071784417	2013	https://doi.org/10.1007/978-3-031-01561-8	Answer Set Solving in Practice	Synthesis lectures on artificial intelligence and machine learning	book
+5	W1776786831	2011	https://doi.org/10.1007/978-3-642-23786-7_35	Algorithm Selection and Scheduling	Lecture notes in computer science	conference-paper
+6	W1484403583	2011	https://doi.org/10.1007/978-3-642-20895-9_39	Advances in gringo Series 3	Lecture notes in computer science	conference-paper
+7	W1964680470	2011	https://doi.org/10.1017/s1471068410000554	Detecting inconsistencies in large biological networks with answer set programming	Theory and Practice of Logic Programming	article
+8	W2913663319	2014	https://doi.org/10.1007/978-3-319-11230-5	Instance-Specific Algorithm Configuration		book
+9	W1721757222	2009	https://doi.org/10.1007/978-3-642-04238-6_50	The Conflict-Driven Answer Set Solver clasp: Progress Report	Lecture notes in computer science	conference-paper
+10	W2118622620	2016	https://doi.org/10.1145/2975585	Implementing Efficient All Solutions SAT Solvers	ACM Journal of Experimental Algorithmics	article
+11	W1961824217	2015	https://doi.org/10.1017/s1471068415000113	A model building framework for answer set programming with external computations	Theory and Practice of Logic Programming	article
+12	W1677519333	2013	https://doi.org/10.1007/978-3-642-41524-1_7	Making Use of Advances in Answer-Set Programming for Abstract Argumentation Systems	Lecture notes in computer science	conference-paper
+13	W1487986911	2014	https://doi.org/10.1007/978-3-319-11230-5_9	Evolving Instance-Specific Algorithm Configuration		book-chapter
+14	W2804646084	2018	https://doi.org/10.1007/978-3-319-94144-8_11	Exploiting Treewidth for Projected Model Counting and Its Limits	Lecture notes in computer science	conference-paper
+15	W2904953947	2019	https://doi.org/10.1609/aaai.v33i01.33011536	A Recursive Algorithm for Projected Model Counting	Proceedings of the AAAI Conference on Artificial Intelligence	conference-paper
+16	W2091251097	2011	https://doi.org/10.1017/s1471068411000287	Automatic network reconstruction using ASP	Theory and Practice of Logic Programming	article
+17	W4293180254	2022	https://doi.org/10.1007/978-3-031-15707-3_4	Statistical Statements in Probabilistic Logic Programming	Lecture notes in computer science	conference-paper
+18	W1555419827	2009	https://doi.org/10.1007/978-3-642-02846-5_27	Metabolic Network Expansion with Answer Set Programming	Lecture notes in computer science	conference-paper
+19	W1628148094	2012	https://doi.org/10.1016/j.artint.2012.07.006	On minimal constraint networks	Artificial Intelligence	article
+20	W2555981498	2016	https://doi.org/10.3233/fi-2016-1398	Answer Set Programming Modulo Acyclicity*	Fundamenta Informaticae	article
+21	W2924142368	2019	https://doi.org/10.1007/978-3-030-20528-7_9	Treewidth and Counting Projected Answer Sets	Lecture notes in computer science	conference-paper
+22	W2999944813	2020	https://doi.org/10.1016/j.artint.2019.103229	Definability for model counting	Artificial Intelligence	article
+23	W1725632631	2011	https://doi.org/10.1007/978-3-642-20895-9_10	Pushing Efficient Evaluation of HEX Programs by Modular Decomposition	Lecture notes in computer science	conference-paper
+24	W2805414034	2018	https://doi.org/10.1007/s13218-018-0543-y	Answer Set Programming	K&uuml;nstliche Intell.	article
+25	W2549058653	2015		Specific curiosity as a cause and consequence of transformational creativity	ICCC	article
+26	W3080805160	2020	https://doi.org/10.24963/kr.2020/49	Treewidth-aware Reductions of Normal ASP to SAT - Is Normal ASP Harder than SAT after All?		conference-paper
+27	W2232112468	2015	https://doi.org/10.1007/978-3-319-24318-4_10	$$\#\exists $$SAT: Projected Model Counting	Lecture notes in computer science	conference-paper
+28	W114760959	2013	https://doi.org/10.1007/978-3-642-41010-9_4	Boolean Quantifier Elimination for Automotive Configuration – A Case Study	Lecture notes in computer science	conference-paper
+29	W2108690736	2010	https://doi.org/10.1007/978-3-642-15396-9_25	Exact Cover via Satisfiability: An Empirical Study	Lecture notes in computer science	conference-paper
+30	W2237679549	2015	https://doi.org/10.1007/978-3-319-23264-5_13	Answer Set Programming Modulo Acyclicity	Lecture notes in computer science	conference-paper
+31	W2904298505	2018	https://doi.org/10.1109/ictai.2018.00111	Dualizing Projected Model Counting		conference-paper
+32	W2183957662	2013	https://doi.org/10.1007/978-3-642-40885-4_8	Abduction in Logic Programming as Second-Order Quantifier Elimination	Lecture notes in computer science	conference-paper
+33	W4285605945	2022	https://doi.org/10.24963/ijcai.2022/363	Plausibility Reasoning via Projected Answer Set Counting - A Hybrid Approach		conference-paper
+34	W4323903875	2023	https://doi.org/10.1007/978-3-031-27181-6_29	MAP Inference in Probabilistic Answer Set Programs	Lecture notes in computer science	conference-paper
+35	W3008962280	2020	https://doi.org/10.1017/s1471068420000022	selp: <i>A Single-Shot Epistemic Logic Program Solver</i>	Theory and Practice of Logic Programming	article
+36	W4410533747	2025	https://doi.org/10.1007/s10994-025-06780-7	Learning answer set programs with aggregates via sampling and genetic programming	Machine Learning	article
+37	W4404194767	2024	https://doi.org/10.1017/s1471068424000437	Probabilistic Answer Set Programming with Discrete and Continuous Random Variables	Theory and Practice of Logic Programming	article
+38	W4404247671	2024	https://doi.org/10.1007/978-3-031-76235-2_17	Inconsistency Measurement in LTL$$_{\text {f}}$$ Based on Minimal Inconsistent Sets and Minimal Correction Sets	Lecture notes in computer science	conference-paper
+39	W2328438203	2016	https://doi.org/10.1016/j.artint.2016.03.004	On abstract modular inference systems and solvers	Artificial Intelligence	article
+40	W1973641462	2014	https://doi.org/10.1016/j.artint.2014.07.004	Disjunctive closures for knowledge compilation	Artificial Intelligence	article
+41	W2164890139	2010	https://doi.org/10.4230/lipics.iclp.2010.202	Circumscription and Projection as Primitives of Logic Programming	DROPS (Schloss Dagstuhl – Leibniz Center for Informatics)	article
+42	W4210313489	2014	https://doi.org/10.1007/978-3-319-11230-5_3	Instance-Specific Algorithm Configuration		book-chapter
+43	W1134418794	2015	https://doi.org/10.1007/s10601-015-9201-2	Projection, consistency, and George Boole	Constraints	article
+44	W3124009642	2020	https://doi.org/10.1145/3324884.3416569	Accelerating all-SAT computation with short blocking clauses		conference-paper
+45	W843876080	2014	https://doi.org/10.1007/978-3-319-11230-5_8	Dynamic Approach for Switching Heuristics		book-chapter
+46	W2560187794	2014		Separating Knowledge from Computation An FO( ) Knowledge Base System and its Model Expansion Inference		article
+47	W2770881701	2018	https://doi.org/10.1609/aaai.v32i1.12192	Exploring the Use of Shatter for AllSAT Through Ramsey-Type Problems	Proceedings of the AAAI Conference on Artificial Intelligence	conference-paper
+48	W4382239553	2023	https://doi.org/10.1609/aaai.v37i5.25788	Characterizing Structural Hardness of Logic Programs: What Makes Cycles and Reachability Hard for Treewidth?	Proceedings of the AAAI Conference on Artificial Intelligence	conference-paper
+49	W4392964199	2024	https://doi.org/10.1007/978-3-031-55630-2_1	Learning the Parameters of Probabilistic Answer Set Programs	Lecture notes in computer science	conference-paper
+50	W4390072467	2023	https://doi.org/10.1007/978-3-031-49299-0_1	A Constrained Optimization Approach to Set the Parameters of Probabilistic Answer Set Programs	Lecture notes in computer science	conference-paper
+51	W2805417910	2018	https://doi.org/10.1609/aaai.v32i1.11361	Constraint Satisfaction Techniques for Combinatorial Problems	Proceedings of the AAAI Conference on Artificial Intelligence	conference-paper
+52	W810065520	2014	https://doi.org/10.1007/978-3-319-11230-5_5	ISAC for Algorithm Selection		book-chapter
+53	W2513659083	2019	https://doi.org/10.1007/s10472-019-09624-y	Knowledge representation analysis of graph mining	Annals of Mathematics and Artificial Intelligence	article
+54	W1976916248	2011	https://doi.org/10.1145/2016567.2016595	New approaches to boolean quantifier elimination	ACM communications in computer algebra	article
+55	W4393156212	2024	https://doi.org/10.1609/aaai.v38i9.28923	On the Structural Hardness of Answer Set Programming: Can Structure Efficiently Confine the Power of Disjunctions?	Proceedings of the AAAI Conference on Artificial Intelligence	conference-paper
+56	W1676297273	2011		Enumeration of valid partial configurations	Chalmers Research (Chalmers University of Technology)	other
+57	W2951899817	2011	https://doi.org/10.48550/arxiv.1103.1604	On Minimal Constraint Networks	arXiv (Cornell University)	preprint
+58	W1660876533	2015	https://doi.org/10.48550/arxiv.1507.07648	Projected Model Counting	arXiv (Cornell University)	preprint
+59	W203824894	2009	https://doi.org/10.1007/978-3-642-04238-6_73	Making Your Hands Dirty Inspires Your Brain! Or How to Switch ASP into Production Mode	Lecture notes in computer science	conference-paper
+60	W2949295036	2010	https://doi.org/10.25932/publishup-41246	Detecting Inconsistencies in Large Biological Networks with Answer Set Programming	arXiv (Cornell University)	preprint
+61	W2951738153	2011	https://doi.org/10.48550/arxiv.1107.5671	Automatic Network Reconstruction using ASP	arXiv (Cornell University)	preprint
+62	W2997292022	2020	https://doi.org/10.48550/arxiv.2001.01089	selp: A Single-Shot Epistemic Logic Program Solver	arXiv (Cornell University)	preprint
+63	W1704852545	2012		Answer Set Programming	Formal Methods in Computer-Aided Design	article
+64	W2474383542	2014		Disjunctive Closures for Knowledge Compilation		article
+65	W2727361336	2017	https://doi.org/10.1007/978-3-319-61660-5_15	Answer Set Programs with Queries over Subprograms	Lecture notes in computer science	conference-paper
+66	W2949657457	2019	https://doi.org/10.48550/arxiv.1903.11316	Treewidth and Counting Projected Answer Sets	arXiv (Cornell University)	preprint
+67	W2952494176	2018	https://doi.org/10.48550/arxiv.1805.05445	Exploiting Treewidth for Projected Model Counting and its Limits	arXiv (Cornell University)	preprint
+68	W3190780338	2021	https://doi.org/10.1017/s1471068421000375	Solution Enumeration by Optimality in Answer Set Programming	Theory and Practice of Logic Programming	article
+69	W4211150892	2014	https://doi.org/10.1007/978-3-319-11230-5_1	Introduction		book-chapter
+70	W4211223409	2014	https://doi.org/10.1007/978-3-319-11230-5_11	Conclusion		book-chapter
+71	W4386211478	2023	https://doi.org/10.4204/eptcs.385.19	Proceedings 39th International Conference on Logic Programming	Electronic Proceedings in Theoretical Computer Science	article
+72	W4386211643	2023	https://doi.org/10.4204/eptcs.385.41	Proceedings 39th International Conference on Logic Programming	Electronic Proceedings in Theoretical Computer Science	article
+73	W4386213131	2023	https://doi.org/10.4204/eptcs.385.30	Proceedings 39th International Conference on Logic Programming	Electronic Proceedings in Theoretical Computer Science	article
+74	W4388164774	2023	https://doi.org/10.1007/978-3-031-47546-7_25	Inference in Probabilistic Answer Set Programming Under the Credal Semantics	Lecture notes in computer science	conference-paper
+75	W4406249505	2025	https://doi.org/10.1017/s1471068424000474	Solving Decision Theory Problems with Probabilistic Answer Set Programming	Theory and Practice of Logic Programming	article
+76	W4412897516	2025	https://doi.org/10.1007/978-3-031-99984-0_37	Entailment vs. Verification for Partial-Assignment Satisfiability and Enumeration	Lecture notes in computer science	conference-paper
+77	W573025653	2014	https://doi.org/10.1007/978-3-319-11230-5_4	Training Parameterized Solvers		book-chapter
+78	W767044970	2014	https://doi.org/10.1007/978-3-319-11230-5_7	Training Parallel Solvers		book-chapter
+79	W824839023	2014	https://doi.org/10.1007/978-3-319-11230-5_10	Improving Cluster-Based Algorithm Selection		book-chapter

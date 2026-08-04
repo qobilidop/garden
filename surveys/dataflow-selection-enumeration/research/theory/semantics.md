@@ -11,7 +11,7 @@ apply \(f_v\); and a selection site applies the combiner for
 \omega_x(q)=\kappa_q(\operatorname{val}_x(s_q)).
 \]
 
-Eager values for inactive case cones remain mathematically defined. Purity and
+Eager values for unselected case cones remain mathematically defined. Purity and
 totality make them irrelevant to the selected result. This value semantics is
 separate from the structural observation below.
 
@@ -36,10 +36,12 @@ be the least node set containing \(R\) and closed under enabled operand edges.
 Equivalently, it is graph reachability from \(R\) in the input-indexed enabled
 edge relation.
 
-This is the **enabled closure**. A selection in this closure is called *active
-in the observation*. Related literature may call the same backward relevance
-idea a demand judgment, but this definition does not imply that the source
-language is operationally lazy.
+This is the **enabled closure**. A selection site in this closure is
+**observed for** \((x,R)\). “Observed” is local terminology for membership in
+this precisely defined set; it is not a claim that the source language is
+operationally lazy. Related literature may describe analogous backward
+relevance using demand or neededness, but those terms have several distinct
+formal meanings.
 
 ## Selection observation
 
@@ -79,7 +81,7 @@ An instrumented denotation is
 \]
 
 Erasing the second component recovers ordinary eager value semantics. The
-instrumentation deliberately distinguishes active equal-valued alternatives.
+instrumentation deliberately distinguishes observed equal-valued alternatives.
 
 ## Basic properties
 
@@ -95,7 +97,7 @@ of possible observations is finite and bounded by
 although most such totalized tuples are structurally invalid.
 
 *Proof.* Eager values and outcomes are unique. The enabled graph is finite;
-reachability has one least closure. The product bound counts every inactive or
+reachability has one least closure. The product bound counts every unobserved or
 outcome value independently and therefore overapproximates the image.
 
 ### Root monotonicity and exact sharing
@@ -129,7 +131,7 @@ map.
 ### Schedule and memoization invariance
 
 Any evaluator that visits exactly the enabled closure, memoizes by graph-node
-identity, and records each active site once returns \(T_G(x,R)\), independent
+identity, and records each observed site once returns \(T_G(x,R)\), independent
 of legal traversal order.
 
 This is a corollary of the reachability definition, not a claim about arbitrary
@@ -201,11 +203,11 @@ A(x)\land T_G(x,R)=\tau.
 
 *Proof sketch.* The reverse implication is immediate. For the forward
 direction, traverse the enabled closure induced by \(\tau\) from \(R\). Every
-active site has the recorded outcome under \(x\), so it enables exactly the
-same case edges. Induction over graph depth yields exactly the same active
+observed site has the recorded outcome under \(x\), so it enables exactly the
+same case edges. Induction over graph depth yields exactly the same enabled
 closure and no additional site. Selector-in-selector dependencies are already
 in the closure; multi-case selections are determined by \(C_q(\tau(q))\).
 
-The result relies on the outcome determining the demanded case set. No literal
-for an inactive site is needed: inactivity follows structurally from the active
-outcomes.
+The result relies on the outcome determining the selected case set. No literal
+for an unobserved site is needed: omission follows structurally from the
+outcomes of observed sites.

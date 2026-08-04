@@ -1,0 +1,26 @@
+rank	openalex_id	year	doi	title	venue	type
+1	W1584887677	1978	https://doi.org/10.1007/3-540-08860-1_17	The complexity of equivalence and containment for free single variable program schemes	Lecture notes in computer science	conference-paper
+2	W1602476740	2003	https://doi.org/10.1109/iccad.1988.122451	Logic verification using binary decision diagrams in a logic synthesis environment		conference-paper
+3	W1975335740	1993	https://doi.org/10.1145/157485.164890	Zero-suppressed BDDs for set manipulation in combinatorial problems		conference-paper
+4	W1994143452	1978	https://doi.org/10.1109/tc.1978.1675141	Binary Decision Diagrams	IEEE Transactions on Computers	article
+5	W2014064621	1980	https://doi.org/10.1016/s0020-0190(80)90078-2	Equivalence of free boolean graphs can be decided probabilistically in polynomial time	Information Processing Letters	article
+6	W2061438988	1992	https://doi.org/10.1016/0890-5401(92)90017-a	Symbolic model checking: 1020 States and beyond	Information and Computation	article
+7	W2067002313	1979	https://doi.org/10.1145/800135.804401	Area-time complexity for VLSI		conference-paper
+8	W2069530808	1992	https://doi.org/10.1007/bf00464357	Probabilistic verification of Boolean functions	Formal Methods in System Design	article
+9	W2078740228	1994	https://doi.org/10.5555/191326.191598	Symmetry detection and dynamic variable ordering of decision diagrams		article
+10	W2080267935	1986	https://doi.org/10.1109/tc.1986.1676819	Graph-Based Algorithms for Boolean Function Manipulation	IEEE Transactions on Computers	article
+11	W2095826301	2003	https://doi.org/10.1109/edac.1992.205890	Multilevel logic synthesis based on functional decision diagrams		conference-paper
+12	W2097094127	1995	https://doi.org/10.1109/empdp.1995.389132	An improved data parallel algorithm for Boolean function manipulation using BDDs		conference-paper
+13	W2108016168	1991	https://doi.org/10.1109/12.73590	On the complexity of VLSI implementations and graph representations of Boolean functions with application to integer multiplication	IEEE Transactions on Computers	article
+14	W2116242425	1995	https://doi.org/10.1145/217474.217564	Advanced verification techniques based on learning		conference-paper
+15	W2138273756	1994	https://doi.org/10.1109/12.324545	Efficient Boolean manipulation with OBDD's can be extended to FBDD's	IEEE Transactions on Computers	article
+16	W2141986537	2002	https://doi.org/10.1109/iccd.1991.139893	Boolean satisfiability and equivalence checking using general binary decision diagrams		conference-paper
+17	W2144491553	1994	https://doi.org/10.1145/196244.196444	Efficient representation and manipulation of switching functions based on ordered Kronecker functional decision diagrams		conference-paper
+18	W2155562553	1995	https://doi.org/10.1145/217474.328705	Novel verification framework combining structural and OBDD methods in a synthesis environment		conference-paper
+19	W2164202841	2002	https://doi.org/10.1109/iccd.1990.130209	A parallel algorithm for constructing binary decision diagrams		conference-paper
+20	W2170624228	2002	https://doi.org/10.1109/icvd.1996.489494	A study of composition schemes for mixed apply/compose based construction of ROBDDs		conference-paper
+21	W4231842458	2002	https://doi.org/10.1109/iccad.1995.480018	Binary decision diagrams and beyond: enabling technologies for formal verification		conference-paper
+22	W4250447890	2002	https://doi.org/10.1109/iccad.1993.580029	Dynamic variable ordering for ordered binary decision diagrams		conference-paper
+23	W4255413535	2002	https://doi.org/10.1109/dac.1990.114826	Efficient implementation of a BDD package		conference-paper
+24	W4255982026	1997	https://doi.org/10.1080/09747338.1997.11415666	Personal Communication	IETE Journal of Education	article
+25	W6903348357	2018	https://doi.org/10.1184/r1/6610106.v1	Symbolic Model Checking with Partitioned Transition Relations	KiltHub Repository	article

@@ -1,0 +1,23 @@
+rank	openalex_id	year	doi	title	venue	type
+1	W2963147982	2018	https://doi.org/10.1145/3210309	STADS	ACM Transactions on Software Engineering and Methodology	article
+2	W2471111208	2016	https://doi.org/10.1109/tse.2016.2584063	Dependence Guided Symbolic Execution	IEEE Transactions on Software Engineering	article
+3	W2750660666	2018	https://doi.org/10.1109/tse.2018.2844343	An Integrated Approach for Effective Injection Vulnerability Analysis of Web Applications Through Security Slicing and Hybrid Constraint Solving	IEEE Transactions on Software Engineering	article
+4	W253624969	2015	https://doi.org/10.1016/b978-0-12-417295-1.00024-2	Using Goals in Model-Based Reasoning	Elsevier eBooks	book-chapter
+5	W4308462374	2022	https://doi.org/10.1145/3548606.3559367	SFuzz	Proceedings of the 2022 ACM SIGSAC Conference on Computer and Communications Security	conference-paper
+6	W4399851298	2024	https://doi.org/10.1145/3656443	Compatible Branch Coverage Driven Symbolic Execution for Efficient Bug Finding	Proceedings of the ACM on Programming Languages	article
+7	W2528040273	2018	https://doi.org/10.1145/3182657	A Survey of Symbolic Execution Techniques	ACM Computing Surveys	article
+8	W3027138722	2020	https://doi.org/10.1016/j.csi.2020.103444	A Systematic Review of Search Strategies in Dynamic Symbolic Execution	Computer Standards & Interfaces	review
+9	W4313563416	2022	https://doi.org/10.1145/3551349.3556933	Precise (Un)Affected Version Analysis for Web Vulnerabilities		conference-paper
+10	W4411337384	2025	https://doi.org/10.1109/sp61157.2025.00190	Empc: Effective Path Prioritization for Symbolic Execution with Path Cover		conference-paper
+11	W2971365996	2019	https://doi.org/10.1109/tse.2019.2939526	ProXray: Protocol Model Learning and Guided Firmware Analysis	IEEE Transactions on Software Engineering	article
+12	W4411123125	2025	https://doi.org/10.1007/s10515-025-00529-1	NexuSym: Marrying symbolic path finders with large language models	Automated Software Engineering	article
+13	W7166717214	2026	https://doi.org/10.1145/3797074	SmarTrim: Symbolic Execution for Smart Contracts Powered by Redundant Transaction-Sequence Pruning	Proceedings of the ACM on software engineering.	article
+14	W2903510814	2018	https://doi.org/10.1016/j.infsof.2018.11.006	FSCT: A new fuzzy search strategy in concolic testing	Information and Software Technology	article
+15	W3119421065	2021	https://doi.org/10.1007/s10664-020-09931-7	Locating faults with program slicing: an empirical analysis	Empirical Software Engineering	article
+16	W4390187555	2023	https://doi.org/10.1109/qrs60937.2023.00039	BDGSE: A Symbolic Execution Technique for High MC/DC		conference-paper
+17	W2500434438	2015	https://doi.org/10.1016/b978-0-12-417295-1.00020-5	Ensembles of Learning Machines	Elsevier eBooks	book-chapter
+18	W2732881262	2017	https://doi.org/10.1109/icis.2017.7960112	Path reduction of multiple test points in dynamic symbolic execution		conference-paper
+19	W2345523543	2016	https://doi.org/10.1016/bs.adcom.2016.04.002	Input-Sensitive Profiling	Advances in computers	book-chapter
+20	W2977323193	2019	https://doi.org/10.1109/qrs.2019.00042	Reorganizing and Optimizing Post-Inspection on Suspicious Bug Reports in Path-Sensitive Analysis		conference-paper
+21	W2186645324	2013		SEMANTIC ANALYSES TO DETECT AND LOCALIZE SOFTWARE REGRESSION ERRORS	National University of Singapore	dissertation
+22	W2791227865	2018	https://doi.org/10.48550/arxiv.1803.02130	STADS: Software Testing as Species Discovery	arXiv (Cornell University)	preprint

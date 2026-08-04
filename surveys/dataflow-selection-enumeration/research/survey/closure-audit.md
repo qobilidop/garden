@@ -18,6 +18,17 @@ before execution. Search indexes are discovery instruments; even two no-add
 rounds establish mapping closure under the protocol, not completeness of the
 world literature.
 
+## Reopening after the functional-logic fingerprint cluster
+
+The batches below were refrozen on 2026-08-04 **before either batch was
+executed**. Exact forward citation chasing for the JACM needed-narrowing seed
+had exposed a previously missing closest cluster: demand-driven search,
+set-function fingerprints, pull-tabbing, stable choice identifiers, and
+memoized pull-tabbing. The earlier eight-query drafts did not name this
+cluster directly. Four queries were therefore added to each still-unseen
+batch. No round-3 or round-4 result was inspected before this revision, so the
+no-add test remains prospective rather than outcome-dependent.
+
 ## Round `closure-audit-3`: OpenAlex
 
 Source: OpenAlex works search API. Frozen 2026-08-04.
@@ -37,6 +48,10 @@ before round execution; round 4 still supplies an independent index.
 | C3-06 | `demand driven symbolic evaluation graph` |
 | C3-07 | `trace partitioning symbolic execution` |
 | C3-08 | `conditional values configuration symbolic` |
+| C3-09 | `functional logic demand driven search nondeterministic choice fingerprint` |
+| C3-10 | `pull tabbing fingerprint choice identifier search` |
+| C3-11 | `lazy nondeterministic computation demanded choice enumeration` |
+| C3-12 | `set function fingerprint nondeterministic results` |
 
 ## Round `closure-audit-4`: Crossref
 
@@ -53,6 +68,10 @@ Execute only if round 3 is a no-add round. Source: Crossref REST API. Frozen
 | C4-06 | `multipath symbolic execution value summary` |
 | C4-07 | `mux guided symbolic simulation partition` |
 | C4-08 | `demand semantics conditional dataflow` |
+| C4-09 | `demand driven search functional logic fingerprint` |
+| C4-10 | `pull tab transformation choice identifier partial map` |
+| C4-11 | `lazy nondeterministic shared choice exhaustive results` |
+| C4-12 | `set function nondeterminism fingerprint computation` |
 
 ## Independent audit
 

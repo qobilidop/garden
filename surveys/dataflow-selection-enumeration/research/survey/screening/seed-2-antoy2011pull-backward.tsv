@@ -1,0 +1,12 @@
+rank	openalex_id	year	doi	title	venue	type
+1	W1486941949	2002	https://doi.org/10.1007/3-540-45788-7_4	Functional Logic Design Patterns	Lecture notes in computer science	conference-paper
+2	W2070953905	2005	https://doi.org/10.1016/j.jsc.2004.12.007	Evaluation strategies for functional logic programming	Journal of Symbolic Computation	article
+3	W2104980999	1992	https://doi.org/10.1016/0743-1066(92)90026-y	Nondeterministic algebraic specifications and nonconfluent term rewriting	The Journal of Logic Programming	article
+4	W2106602483	2007	https://doi.org/10.1007/978-3-540-76637-7_9	On a Tighter Integration of Functional and Logic Programming	Lecture notes in computer science	conference-paper
+5	W2124067082	2005	https://doi.org/10.1007/11431664_7	A Virtual Machine for Functional Logic Computations	Lecture notes in computer science	conference-paper
+6	W2127844749	2010	https://doi.org/10.1145/1721654.1721675	Functional logic programming	Communications of the ACM	article
+7	W2135378214	2010	https://doi.org/10.1016/j.jsc.2010.01.006	Programming with narrowing: A tutorial	Journal of Symbolic Computation	article
+8	W2168144301	1997	https://doi.org/10.1007/bfb0027000	Optimal non-deterministic functional logic computations	Lecture notes in computer science	conference-paper
+9	W2275446441	2011	https://doi.org/10.1007/978-3-642-24452-0_2	From Functional Logic Programs to Purely Functional Programs Preserving Laziness	Lecture notes in computer science	conference-paper
+10	W4210350596	2005	https://doi.org/10.1007/bfb0013825	Definitional trees	Lecture notes in computer science	conference-paper
+11	W4214478546	2008	https://doi.org/10.1007/978-3-540-78969-7_12	Rewriting and Call-Time Choice: The HO Case	Lecture notes in computer science	conference-paper

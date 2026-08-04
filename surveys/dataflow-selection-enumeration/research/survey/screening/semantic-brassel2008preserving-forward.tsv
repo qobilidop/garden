@@ -1,0 +1,10 @@
+rank	source_id	year	doi	title	venue	type
+1	60ced889a0144efabe5564440f5b5637311bb810	2018	10.1145/3236950.3236957	Verifying Fail-Free Declarative Programs	ACM-SIGPLAN International Conference on Principles and Practice of Declarative Programming	Book
+2	b6fd6ae1af0d9e91f7a509696d722842f13699ae	2017	10.3233/FI-2020-1925	Combining Static and Dynamic Contract Checking for Curry	International Workshop/Symposium on Logic-based Program Synthesis and Transformation	JournalArticle
+3	ee44cf736b71cb4859fba8f869c602dab95693da	2013	10.1007/978-3-319-14125-1_12	Compiling a Functional Logic Language: The Fair Scheme	International Workshop/Symposium on Logic-based Program Synthesis and Transformation	JournalArticle
+4	dc996ed9c17b643d2ce8444350ebf50e672743eb	2012		Implementing Functional Logic Programs by Translation into Purely Functional Programs		
+5	7f9e1f99f01557d9f77a5507f075cad3e76086e2	2012	10.1007/978-3-642-29822-6_5	Compiling a Functional Logic Language: The Basic Scheme	Fuji International Symposium on Functional and Logic Programming	JournalArticle
+6	8615805892333dab0cbb317bf4749f04d3c4f199	2011	10.1007/978-3-642-45284-0_9	Implementing Equational Constraints in a Functional Language	International Symposium on Practical Aspects of Declarative Languages	JournalArticle
+7	3747c4b08ab574c641e3713784f8d0a3ddef9529	2011	10.1007/978-3-642-22531-4_1	KiCS2: A New Compiler from Curry to Haskell	Workshop on Functional and Constraint Logic Programming	JournalArticle
+8	801c96bb86a4b1577c06b89625a926dd45a3e3cf	2011	10.1017/S1471068411000263	On the correctness of pull-tabbing	Theory and Practice of Logic Programming	JournalArticle
+9	d1d56b1c5f63a8df851f987bc99a8de9a0ba4144	2012	10.4230/LIPIcs.ICLP.2012.130	Improving Lazy Non-Deterministic Computations by Demand Analysis	International Conference on Logic Programming	JournalArticle

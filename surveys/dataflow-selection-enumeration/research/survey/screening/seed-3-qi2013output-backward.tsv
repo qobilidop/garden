@@ -1,0 +1,28 @@
+rank	openalex_id	year	doi	title	venue	type
+1	W116894366	2011	https://doi.org/10.1007/978-3-642-23702-7_11	Directed Symbolic Execution	Lecture notes in computer science	conference-paper
+2	W1497028280	2008	https://doi.org/10.1007/978-3-540-78800-3_27	RWset: Attacking Path Explosion in Constraint-Based Test Generation	Lecture notes in computer science	conference-paper
+3	W1586497944	2010	https://doi.org/10.1007/978-3-642-14295-6_10	Lazy Annotation for Program Testing and Verification	Lecture notes in computer science	conference-paper
+4	W1971137495	2005	https://doi.org/10.1007/s10664-005-3861-2	Supporting Controlled Experimentation with Testing Techniques: An Infrastructure and its Potential Impact	Empirical Software Engineering	article
+5	W1998393968	1993	https://doi.org/10.1145/152388.152391	A methodology for controlling the size of a test suite	ACM Transactions on Software Engineering and Methodology	article
+6	W2001601301	2011	https://doi.org/10.1145/2025113.2025152	Path exploration based on symbolic output		conference-paper
+7	W2008812751	2010	https://doi.org/10.1145/1831708.1831733	Exploiting program dependencies for scalable multiple-path symbolic execution		conference-paper
+8	W2009489720	2005	https://doi.org/10.1145/1081706.1081750	CUTE		conference-paper
+9	W2017828132	2010	https://doi.org/10.1145/1858996.1859083	Test generation to expose changes in evolving programs		conference-paper
+10	W2065948900	2008	https://doi.org/10.1145/1375581.1375607	Grammar-based whitebox fuzzing		conference-paper
+11	W2074888021	2008	https://doi.org/10.1145/1453101.1453131	Differential symbolic execution		conference-paper
+12	W2095710561	1995	https://doi.org/10.1145/225014.225018	Effect of test set minimization on fault detection effectiveness		conference-paper
+13	W2096449544	2005	https://doi.org/10.1145/1064978.1065036	DART	ACM SIGPLAN Notices	article
+14	W2100894869	2008	https://doi.org/10.1145/1375581.1375611	Efficient program execution indexing		conference-paper
+15	W2116570626	2008	https://doi.org/10.1145/1330017.1330021	Dynamic slicing on Java bytecode traces	ACM Transactions on Programming Languages and Systems	article
+16	W2119251836	2008	https://doi.org/10.1007/978-3-540-89862-7_1	BitBlaze: A New Approach to Computer Security via Binary Analysis	Lecture notes in computer science	conference-paper
+17	W2129487583	2007	https://doi.org/10.1007/978-3-540-73368-3_52	A Decision Procedure for Bit-Vectors and Arrays	Lecture notes in computer science	conference-paper
+18	W2133612077	2007	https://doi.org/10.1145/1190215.1190226	Compositional dynamic test generation	ACM SIGPLAN Notices	article
+19	W2136880809	2009	https://doi.org/10.1145/1595696.1595704	Darwin		conference-paper
+20	W2138538192	2003	https://doi.org/10.1145/940071.940115	ARCHER		conference-paper
+21	W2140077136	2002	https://doi.org/10.1109/icsm.1993.366927	Incremental regression testing		conference-paper
+22	W2146178292	2008	https://doi.org/10.1145/1368088.1368127	DySy		conference-paper
+23	W2165751179	2010	https://doi.org/10.1145/1882291.1882330	Directed test suite augmentation		conference-paper
+24	W2168625647	2008	https://doi.org/10.1109/ase.2008.32	Test-Suite Augmentation for Evolving Software		conference-paper
+25	W4236799059	2011	https://doi.org/10.1145/1993498.1993558	Directed incremental symbolic execution		conference-paper
+26	W4237492309	2005	https://doi.org/10.1145/1065010.1065036	DART		conference-paper
+27	W4246385123	2007	https://doi.org/10.1145/1190216.1190226	Compositional dynamic test generation		conference-paper
