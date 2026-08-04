@@ -2,7 +2,8 @@
 
 set -euo pipefail
 
-readonly repo_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+repo_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+readonly repo_dir
 readonly image="${XLSYNTH_SYMEX_PAPER_DEV_IMAGE:-xlsynth-symex-paper-dev:local}"
 
 if (( $# == 0 )); then

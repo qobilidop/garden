@@ -2,7 +2,8 @@
 
 set -euo pipefail
 
-readonly repo_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+repo_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+readonly repo_dir
 cd "${repo_dir}"
 
 git diff --check
@@ -59,8 +60,9 @@ if command -v shellcheck >/dev/null; then
   shellcheck dev.sh scripts/*.sh
 fi
 
-if [[ -f manuscript/main.tex ]]; then
+if [[ -f manuscript/main.typ ]]; then
   mkdir -p build
-  latexmk -pdf -halt-on-error -interaction=nonstopmode \
-    -output-directory=build manuscript/main.tex
+  typst compile --root . manuscript/main.typ build/manuscript.pdf
+  pdftotext build/manuscript.pdf build/manuscript.txt
+  test -s build/manuscript.txt
 fi

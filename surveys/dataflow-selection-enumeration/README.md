@@ -25,11 +25,15 @@ for the review protocol.
 
 ## Development
 
-Run repository checks inside the development container:
+The manuscript is written in Typst and uses the repository's BibTeX database
+directly. Run repository checks inside the development container:
 
 ```console
 ./dev.sh ./scripts/check.sh
 ```
+
+Once `manuscript/main.typ` exists, the same command compiles it to
+`build/manuscript.pdf` and verifies that the PDF contains extractable text.
 
 The local `.scratch/` directory is ignored and may hold downloaded papers,
 search exports, or temporary notes. Durable findings must be distilled into the
