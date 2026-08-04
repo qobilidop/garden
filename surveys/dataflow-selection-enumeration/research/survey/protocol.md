@@ -7,9 +7,12 @@ pure dataflow graphs is already known, identify the closest established
 formalisms and algorithms, and select terminology and theorem obligations that
 make the eventual contribution precise.
 
-This is a reproducible systematic mapping and snowballing exercise. It is not,
-without further methodological work, claimed to be a standalone systematic
-literature review.
+This is a systematic mapping study with backward and forward snowballing. It is
+not a systematic literature review: the objective is to map neighboring
+semantic objects and algorithms, not to estimate effects over a population of
+empirical studies. Reproducibility claims apply only to rows in the audited
+search log; the earlier exploratory record is retained separately and does not
+count toward closure.
 
 ## Research questions
 
@@ -54,6 +57,11 @@ conference proceedings, DBLP, author publication pages, and scholarly search
 engines. Search engines and indexes are discovery aids; substantive conclusions
 must be checked against the primary paper or its author-hosted version.
 
+For auditable searches, record the database or API by name, the exact query or
+seed identifier, direction, filters, hit count, screened identifiers, included
+keys, excluded keys, and execution date. A query that cannot expose a stable
+result set may discover candidates but cannot establish closure.
+
 ## Initial search expressions
 
 Queries combine terms from the following groups:
@@ -71,9 +79,10 @@ dataflow AND (symbolic execution OR symbolic test generation)
 (demand OR relevance OR cone-of-influence) AND symbolic evaluation
 ```
 
-Every executed query is recorded in `search-log.tsv`; useful synonyms discovered
+Every closure query is recorded in `search-log.tsv`; useful synonyms discovered
 during reading are added in later rounds rather than silently changing this
-protocol.
+protocol. Non-replayable searches made before this rule was adopted remain in
+`exploratory-search-log.tsv` and are not used to claim saturation.
 
 ## Inclusion criteria
 
@@ -96,19 +105,72 @@ Exclude, with a recorded reason:
 - works whose full technical content cannot be obtained after reasonable
   attempts, unless their terminology itself materially affects the survey.
 
+Use one of these stable exclusion codes in the catalog:
+
+- `E1-def-use-testing`: conventional CFG def-use coverage only;
+- `E2-ml-graph-runtime`: execution or staging of a machine-learning graph only;
+- `E3-secondary`: secondary source superseded by an available primary work;
+- `E4-application-only`: applies an off-the-shelf executor without changing the
+  relevant semantic object;
+- `E5-unobtainable`: insufficient technical content after recorded attempts;
+- `E6-out-of-scope-model`: technical contribution is real but cannot answer any
+  research question under the finite pure-graph scope;
+- `E7-duplicate-version`: superseded version retained only for lineage.
+
 ## Screening and deep reading
 
-Title/abstract screening assigns a cluster, priority, and status. Deep reading
-uses the source-note template and must inspect definitions, the central
+Title/abstract screening assigns taxonomy fields, priority, and status. Deep
+reading uses the source-note template and must inspect definitions, the central
 algorithm, theorem statements and assumptions, complexity discussion, examples,
-and related work—not only the abstract and introduction.
+and related work—not only the abstract and introduction. Claims used in the
+manuscript must also appear in `evidence-matrix.tsv` with a source-note anchor.
+
+The extraction taxonomy is deliberately multi-dimensional:
+
+1. program model;
+2. represented or enumerated object;
+3. omission or merging mechanism;
+4. representation and algorithm;
+5. guarantees;
+6. assumptions and semantic boundaries.
 
 ## Snowballing and saturation
 
 For every closest work, perform backward citation chasing and forward citation
-chasing. The initial mapping phase reaches saturation after two consecutive
-snowballing rounds add neither a new conceptual cluster nor a plausible close
-competitor. Later papers may reopen the survey.
+chasing as separate log rows. `search-log.tsv` records one seed, one direction,
+and one stable result set per row; aggregate descriptions are invalid.
+
+The initial mapping closes only after:
+
+1. every work named by an exploratory row is either cataloged or explicitly
+   marked `not-recorded` in that row;
+2. the bounded critical reading set is complete;
+3. every closest work has separately recorded backward and forward chasing;
+4. two consecutive *audited* rounds add neither a conceptual cluster nor a
+   plausible close competitor;
+5. an independent reviewer audits borderline exclusions and the closure log.
+
+The result is called **mapping closure**, not proof that no relevant work
+exists. Later papers or a newly exposed cluster reopen the mapping.
+
+## Search-log schema
+
+The tab-separated audited log has these fields:
+
+- `date`: ISO date of execution;
+- `round_id`: stable identifier grouping a predeclared batch;
+- `phase`: database search, backward snowballing, forward snowballing, or audit;
+- `source`: database/API and, when relevant, version or access mode;
+- `exact_query_or_seed`: verbatim query or persistent seed identifier;
+- `direction`: `query`, `backward`, `forward`, or `audit`;
+- `hits`: exact result count exposed by the source;
+- `screened`: exact count screened;
+- `included_keys`: comma-separated catalog keys, or `-`;
+- `excluded_keys`: comma-separated catalog keys with excluded status, or `-`;
+- `notes`: filters, inaccessible records, result-set artifact, or limitations.
+
+A row with an approximate hit count, unknown screened set, or aggregated seeds
+is exploratory and must not be moved into the audited log.
 
 ## Novelty test
 
@@ -127,5 +189,6 @@ A negative answer to novelty is a useful survey outcome and must be recorded in
 ## Survey snapshot
 
 - Protocol established: 2026-08-04
-- Working venue standards: CAV primary, PLDI stretch
+- Paper route: theory-backed survey after the novelty audit in decision 0002
+- Stretch venue standard: ACM Computing Surveys
 - Working language: English

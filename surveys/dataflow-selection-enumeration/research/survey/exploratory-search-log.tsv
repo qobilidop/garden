@@ -1,0 +1,11 @@
+date	discovery_source	query_or_method	results_screened	works_added	notes
+2026-08-04	Web scholarly search	formal symbolic execution semantics and input partition	10+	4	Non-replayable exploratory row; exact query, result set, and included keys were not recorded
+2026-08-04	Web scholarly search	multi-path symbolic execution value summaries variational execution	10+	6	Non-replayable exploratory row; exact query, result set, and included keys were not recorded
+2026-08-04	Web scholarly search	AllSAT AllSMT disjoint projected partial model enumeration	10+	3	Non-replayable exploratory row; exact query, result set, and included keys were not recorded
+2026-08-04	Web scholarly search	symbolic simulation mux RTL functional space partitioning	10+	6	Non-replayable exploratory row; exact query, result set, and included keys were not recorded
+2026-08-04	Backward snowballing	References of MultiSE trace partitioning and dynamic functional-space papers	20+	5	Invalid for closure because seeds and directions were aggregated
+2026-08-04	Backward and forward snowballing	term graph choice needed evaluation sharing pull tabbing	15+	4	Invalid for closure because query, seeds, and directions were aggregated
+2026-08-04	Forward snowballing	projected AllSMT disjoint partial enumeration important variables	15+	3	Invalid for closure because seed identifiers and screened records were not retained
+2026-08-04	Concept search	configuration structures event structures demand dataflow	15+	4	Claimed additions were not reconciled with the catalog; this row supports no closure claim
+2026-08-04	Concept search	decision DNNF disjoint partial models polynomial delay	10+	3	Claimed additions were not reconciled with the catalog; this row supports no closure claim
+2026-08-04	Adversarial novelty search	compositional conditional computation free selective functor	10+	2	Non-replayable exploratory row; selective functors was subsequently cataloged and deep-read

@@ -2,6 +2,8 @@
 /.codex/
 /.scratch/
 /build/
+__pycache__/
+*.pyc
 *.aux
 *.bbl
 *.bcf
