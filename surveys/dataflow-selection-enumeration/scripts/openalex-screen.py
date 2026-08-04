@@ -8,10 +8,11 @@ from pathlib import Path
 import sys
 import urllib.parse
 import urllib.request
+from urllib.error import HTTPError
 
 
 API_ROOT = "https://api.openalex.org"
-FIELDS = (
+BASE_FIELDS = (
     "rank",
     "openalex_id",
     "year",
@@ -19,7 +20,6 @@ FIELDS = (
     "title",
     "venue",
     "type",
-    "abstract",
 )
 
 
@@ -46,10 +46,10 @@ def abstract_text(work: dict) -> str:
     return " ".join(word for _, word in sorted(positioned))
 
 
-def record(work: dict, rank: int) -> dict[str, object]:
+def record(work: dict, rank: int, include_abstract: bool) -> dict[str, object]:
     location = work.get("primary_location") or {}
     source = location.get("source") or {}
-    return {
+    result = {
         "rank": rank,
         "openalex_id": (work.get("id") or "").rsplit("/", 1)[-1],
         "year": work.get("publication_year") or "",
@@ -57,8 +57,10 @@ def record(work: dict, rank: int) -> dict[str, object]:
         "title": work.get("title") or "",
         "venue": source.get("display_name") or "",
         "type": work.get("type") or "",
-        "abstract": abstract_text(work),
     }
+    if include_abstract:
+        result["abstract"] = abstract_text(work)
+    return result
 
 
 def resolve_doi(doi: str) -> dict:
@@ -66,11 +68,18 @@ def resolve_doi(doi: str) -> dict:
     return request_json(f"works/{encoded}")
 
 
-def fetch_ids(ids: list[str]) -> list[dict]:
+def fetch_ids(ids: list[str]) -> tuple[list[dict], list[str]]:
     works = []
+    unresolved = []
     for openalex_id in ids:
-        works.append(request_json(f"works/{openalex_id.rsplit('/', 1)[-1]}"))
-    return works
+        short_id = openalex_id.rsplit("/", 1)[-1]
+        try:
+            works.append(request_json(f"works/{short_id}"))
+        except HTTPError as error:
+            if error.code != 404:
+                raise
+            unresolved.append(short_id)
+    return works, unresolved
 
 
 def paginate(parameters: dict[str, str], limit: int | None) -> tuple[int, list[dict]]:
@@ -109,10 +118,11 @@ def collect(args: argparse.Namespace) -> tuple[dict[str, object], list[dict]]:
         reference_ids = seed.get("referenced_works") or []
         if args.limit is not None:
             reference_ids = reference_ids[: args.limit]
-        works = fetch_ids(reference_ids)
+        works, unresolved = fetch_ids(reference_ids)
         total = len(seed.get("referenced_works") or [])
     else:
         total, works = paginate({"filter": f"cites:{seed_id}"}, args.limit)
+        unresolved = []
     metadata = {
         "kind": "snowball",
         "doi": args.doi,
@@ -121,6 +131,7 @@ def collect(args: argparse.Namespace) -> tuple[dict[str, object], list[dict]]:
         "direction": args.direction,
         "hits": total,
         "exported": len(works),
+        "unresolved": unresolved,
     }
     return metadata, works
 
@@ -133,12 +144,14 @@ def parser() -> argparse.ArgumentParser:
     search.add_argument("query")
     search.add_argument("--limit", type=int)
     search.add_argument("--output", type=Path, required=True)
+    search.add_argument("--include-abstract", action="store_true")
 
     snowball = commands.add_parser("snowball")
     snowball.add_argument("doi")
     snowball.add_argument("direction", choices=("backward", "forward"))
     snowball.add_argument("--limit", type=int)
     snowball.add_argument("--output", type=Path, required=True)
+    snowball.add_argument("--include-abstract", action="store_true")
     return root
 
 
@@ -146,11 +159,17 @@ def main() -> int:
     args = parser().parse_args()
     metadata, works = collect(args)
     args.output.parent.mkdir(parents=True, exist_ok=True)
+    fields = BASE_FIELDS + (("abstract",) if args.include_abstract else ())
     with args.output.open("w", newline="", encoding="utf-8") as output:
-        writer = csv.DictWriter(output, fieldnames=FIELDS, dialect="excel-tab")
+        writer = csv.DictWriter(
+            output,
+            fieldnames=fields,
+            dialect="excel-tab",
+            lineterminator="\n",
+        )
         writer.writeheader()
         for rank, work in enumerate(works, start=1):
-            writer.writerow(record(work, rank))
+            writer.writerow(record(work, rank, args.include_abstract))
     print(json.dumps(metadata, ensure_ascii=False, sort_keys=True))
     return 0
 

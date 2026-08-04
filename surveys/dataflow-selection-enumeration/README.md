@@ -1,11 +1,11 @@
-# Exhaustive Symbolic Enumeration of Active Selections in Pure Dataflow Graphs
+# Exhaustive Symbolic Enumeration for Pure Dataflow Graphs
 
 This repository contains a theory-backed survey and formal synthesis of
 exhaustive symbolic enumeration for finite pure dataflow graphs. The subject is
 not merely constructing one symbolic value or one SMT encoding: it is
-enumerating every distinct active-selection behavior with exact guards and
+enumerating every distinct **selection observation** with exact guards and
 residual values while omitting selections in inactive case cones. Starting at
-the requested result, an active-selection traversal follows every operand of a
+the requested result, the observation traversal follows every operand of a
 strict operator and only the selected cases of a selection operator. A
 novelty audit found that the original broad theory proposal decomposes into
 established semantic and enumeration machinery; the formal development is

@@ -1,6 +1,6 @@
 # voogd2023denotational — Denotational Semantics for Symbolic Execution
 
-- **Status:** deep-read
+- **Status:** deep-read precursor; superseded for current claims by `voogd2025compositional`
 - **Primary source:** https://doi.org/10.1007/978-3-031-47963-2_22
 - **Version read:** author preprint from https://ebjohnsen.org/publication/23-ictac/
 - **Bibliography key:** `voogd2023denotational`

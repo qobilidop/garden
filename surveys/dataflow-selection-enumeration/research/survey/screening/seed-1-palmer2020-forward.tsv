@@ -1,0 +1,6 @@
+rank	openalex_id	year	doi	title	venue	type
+1	W4399992113	2024	https://doi.org/10.1145/3674626	Story of Your Lazy Function’s Life: A Bidirectional Demand Semantics for Mechanized Cost Analysis of Lazy Programs	Proceedings of the ACM on Programming Languages	article
+2	W3047503662	2020	https://doi.org/10.1145/3408984	Higher-order demand-driven symbolic evaluation	Proceedings of the ACM on Programming Languages	article
+3	W4403223310	2024	https://doi.org/10.1145/3689788	Semantic-Type-Guided Bug Finding	Proceedings of the ACM on Programming Languages	article
+4	W4387947490	2023	https://doi.org/10.48550/arxiv.2310.15915	A Pure Demand Operational Semantics with Applications to Program Analysis	arXiv (Cornell University)	preprint
+5	W4396214250	2024	https://doi.org/10.1145/3649852	A Pure Demand Operational Semantics with Applications to Program Analysis	Proceedings of the ACM on Programming Languages	article

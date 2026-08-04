@@ -1,0 +1,9 @@
+rank	openalex_id	year	doi	title	venue	type
+1	W1884521777	2002	https://doi.org/10.1109/real.1998.739746	Automatic testing of reactive systems		conference-paper
+2	W2010945517	2002	https://doi.org/10.1016/s0167-6423(02)00093-x	Mode-Automata: a new domain-specific construct for the development of safe critical systems	Science of Computer Programming	article
+3	W2066840041	2009	https://doi.org/10.1016/j.entcs.2009.03.030	Executable Contracts for Incremental Prototypes of Embedded Systems	Electronic Notes in Theoretical Computer Science	article
+4	W1192043084	2016	https://doi.org/10.1007/s10009-016-0444-z	Require, test, and trace IT	International Journal on Software Tools for Technology Transfer	article
+5	W4383898431	2023	https://doi.org/10.1109/icse-seip58684.2023.00049	Automated Test Case Generation for Safety-Critical Software in Scade		conference-paper
+6	W2953017628	2005	https://doi.org/10.31274/rtd-20201107-74	An approach to translate LUSTRE code to ACL2	Iowa State University Digital Repository (Iowa State University)	article
+7	W2924794136	2017		Consolidation de validation fonctionnelle de systèmes critiques à l'aide de model checking : application au contrôle commande de centrales nucléaires	HAL (Le Centre pour la Communication Scientifique Directe)	dissertation
+8	W7146688819	2021		A Study on Efficient Software Testing Processes by Covering Arrays and Combinatorial Join	Institutional Repositories DataBase (IRDB)	dissertation

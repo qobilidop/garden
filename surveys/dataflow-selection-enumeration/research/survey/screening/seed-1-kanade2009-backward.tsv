@@ -1,0 +1,34 @@
+rank	openalex_id	year	doi	title	venue	type
+1	W60370665	1976		Static determination of dynamic properties of programs		article
+2	W1480600454	2004	https://doi.org/10.1007/978-3-540-24622-0_23	Analysis of Recursive Game Graphs Using Data Flow Equations	Lecture notes in computer science	conference-paper
+3	W1483379332	1995	https://doi.org/10.1007/3-540-60472-3_14	HyTech: The Cornell Hybrid Technology Tool	Lecture notes in computer science	conference-paper
+4	W1497013959	2008	https://doi.org/10.1007/978-3-540-78800-3_14	Symbolic Model Checking of Hybrid Systems Using Template Polyhedra	Lecture notes in computer science	conference-paper
+5	W1502028089	1997	https://doi.org/10.1023/a:1008678014487	Verification of Real-Time Systems using Linear Relation Analysis	Formal Methods in System Design	article
+6	W1504317179	1999	https://doi.org/10.1007/3-540-48983-5_8	Orthogonal Polyhedra: Representation and Computation	Lecture notes in computer science	conference-paper
+7	W1507199453	2005	https://doi.org/10.1007/978-3-540-30579-8_2	Scalable Analysis of Linear Systems Using Mathematical Programming	Lecture notes in computer science	conference-paper
+8	W1508536183	2007	https://doi.org/10.1007/978-3-540-71493-4_27	Robust Test Generation and Coverage for Hybrid Systems	Lecture notes in computer science	conference-paper
+9	W1521939022	2004	https://doi.org/10.1007/978-3-540-24743-2_22	Benchmarks for Hybrid Systems Verification	Lecture notes in computer science	conference-paper
+10	W1522448884	1998	https://doi.org/10.1007/3-540-64358-3	Hybrid Systems: Computation and Control	Lecture notes in computer science	conference-paper
+11	W1522694098	2005	https://doi.org/10.1007/978-3-540-31954-2_17	PHAVer: Algorithmic Verification of Hybrid Systems Past HyTech	Lecture notes in computer science	conference-paper
+12	W1538215585	2007	https://doi.org/10.1007/978-3-540-71493-4_16	Systematic Simulation Using Sensitivity Analysis	Lecture notes in computer science	conference-paper
+13	W1546282418	2008	https://doi.org/10.1007/978-3-540-78929-1_16	Zonotope/Hyperplane Intersection for Hybrid Systems Reachability Analysis	Lecture notes in computer science	conference-paper
+14	W1556566737	2004	https://doi.org/10.1007/978-3-540-24730-2_35	A Temporal Logic of Nested Calls and Returns	Lecture notes in computer science	conference-paper
+15	W1569692898	2005	https://doi.org/10.1007/978-3-540-31954-2_19	Reachability of Uncertain Linear Systems Using Zonotopes	Lecture notes in computer science	conference-paper
+16	W1585526574	2002	https://doi.org/10.1007/3-540-45657-0_30	The d/dt Tool for Verification of Hybrid Systems	Lecture notes in computer science	conference-paper
+17	W1598652638	2008	https://doi.org/10.1007/978-3-540-70545-1_19	AutoMOTGen: Automatic Model Oriented Test Generator for Embedded Control Systems	Lecture notes in computer science	conference-paper
+18	W1676597814	2006	https://doi.org/10.1007/11730637_22	Verification Using Simulation	Lecture notes in computer science	conference-paper
+19	W1784879157	2008	https://doi.org/10.1007/978-3-540-70930-5_6	An Instrumentation-Based Approach to Controller Model Validation	Lecture notes in computer science	conference-paper
+20	W1968208713	2006	https://doi.org/10.1016/j.scico.2006.03.009	The octahedron abstract domain	Science of Computer Programming	article
+21	W2004463571	1995	https://doi.org/10.1016/0304-3975(94)00202-t	The algorithmic analysis of hybrid systems	Theoretical Computer Science	article
+22	W2009489720	2005	https://doi.org/10.1145/1081706.1081750	CUTE		conference-paper
+23	W2096449544	2005	https://doi.org/10.1145/1064978.1065036	DART	ACM SIGPLAN Notices	article
+24	W2115803389	2005	https://doi.org/10.1145/1113830.1113834	Translating discrete-time simulink to lustre	ACM Transactions on Embedded Computing Systems	article
+25	W2132661148	1978	https://doi.org/10.1145/512760.512770	Automatic discovery of linear restraints among variables of a program		conference-paper
+26	W2142481893	2002	https://doi.org/10.1109/wcre.2001.957836	The octagon abstract domain		conference-paper
+27	W2145201569	2003	https://doi.org/10.1007/3-540-36580-x_35	Efficient Representation and Computation of Reachable Sets for Hybrid Systems	Lecture notes in computer science	conference-paper
+28	W2162663474	2008	https://doi.org/10.1145/1450058.1450071	Symbolic analysis for improving simulation coverage of Simulink/Stateflow models		conference-paper
+29	W2168948159	2004	https://doi.org/10.1016/j.entcs.2004.02.055	Semantic Translation of Simulink/Stateflow Models to Hybrid Automata Using Graph Transformations	Electronic Notes in Theoretical Computer Science	article
+30	W2287992279	1995	https://doi.org/10.1007/3-540-60472-3	Hybrid Systems II	Lecture notes in computer science	conference-paper
+31	W2502664158	2008	https://doi.org/10.1007/978-3-540-70930-5	Model-Driven Development of Reliable Automotive Services	Lecture notes in computer science	conference-paper
+32	W2987077139	2001		The Octagon Abstract Domain		article
+33	W4237492309	2005	https://doi.org/10.1145/1065010.1065036	DART		conference-paper

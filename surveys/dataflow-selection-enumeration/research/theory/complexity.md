@@ -21,6 +21,26 @@ Use explicit parameters rather than the ambiguous phrase “graph size”:
 have one graph node but an \(\Omega(w)\) outcome predicate and \(2^w\) possible
 masks.
 
+## Enumeration-complexity vocabulary
+
+Standard enumeration classes charge more than the number of solver calls. Let
+\(n\) be the serialized input size and \(Z\) the total serialized output size:
+
+- **OutputP** requires total time polynomial in \(n+Z\).
+- **IncP** requires polynomial time to produce the first \(k\) outputs,
+  measured in \(n\) and the produced prefix.
+- **DelayP** requires polynomial time before the first output, between
+  successive outputs, and after the final output, measured in the input size.
+
+Preprocessing is charged before the first output. Thus exponential d-DNNF or
+decision-diagram compilation followed by small delay is not an end-to-end
+DelayP result unless the compiled representation is declared to be the input.
+
+The present output record contains an observation, exact guard, residual, and
+witness. We have not proved that exact-record membership is polynomial-time
+checkable, nor that the solver, guard serialization, or residual equivalence
+cost is polynomial. No OutputP, IncP, or DelayP classification is claimed.
+
 ## Observation-count bounds
 
 The general structural bound is
@@ -47,7 +67,7 @@ trace length.
 
 ## Full-fiber blocking
 
-With a unit-cost exact model oracle, the algorithm performs exactly
+With a unit-cost model-producing oracle, the algorithm performs exactly
 
 \[
 K+1
@@ -100,8 +120,9 @@ if the algorithm tests infeasible raw outcomes, blocks concrete selector values
 instead of whole semantic outcomes, duplicates shared sites, or permits a
 feasible prefix with no total result.
 
-Full-fiber blocking has the smaller oracle count, but projected AllSMT has the
-same \(K+1\) naive model bound.
+Full-fiber blocking has the smaller invocation count in this comparison, but
+naive projected AllSMT over complete observation tuples has the same \(K+1\)
+model-producing-invocation count.
 
 ## Formula representation
 

@@ -1,0 +1,412 @@
+rank	openalex_id	year	doi	title	venue	type
+1	W1710734607	2008	https://doi.org/10.5555/1855741.1855756	KLEE: unassisted and automatic generation of high-coverage tests for complex systems programs		article
+2	W157156687	2008		Automated Whitebox Fuzz Testing.		article
+3	W2110311336	2008	https://doi.org/10.1007/978-3-540-79124-9_10	Pex–White Box Test Generation for .NET	Lecture notes in computer science	conference-paper
+4	W2107147876	2013	https://doi.org/10.1145/2408776.2408795	Symbolic execution for software testing	Communications of the ACM	article
+5	W2138788987	2010	https://doi.org/10.1109/sp.2010.26	All You Ever Wanted to Know about Dynamic Taint Analysis and Forward Symbolic Execution (but Might Have Been Afraid to Ask)		conference-paper
+6	W1979345446	2013	https://doi.org/10.1016/j.jss.2013.02.061	An orchestrated survey of methodologies for automated software test case generation	Journal of Systems and Software	article
+7	W2137530017	2011	https://doi.org/10.1145/1950365.1950396	S2E		conference-paper
+8	W2065948900	2008	https://doi.org/10.1145/1375581.1375607	Grammar-based whitebox fuzzing		conference-paper
+9	W2161963160	2012	https://doi.org/10.1145/2393596.2393666	Automated concolic testing of smartphone apps		conference-paper
+10	W2085577046	2013	https://doi.org/10.1145/2508859.2516676	AppIntent		conference-paper
+11	W2097444001	2011	https://doi.org/10.1145/1985793.1985995	Symbolic execution for software testing in practice		conference-paper
+12	W2074888021	2008	https://doi.org/10.1145/1453101.1453131	Differential symbolic execution		conference-paper
+13	W2051990174	2014	https://doi.org/10.1145/2560217.2560219	Automatic exploit generation	Communications of the ACM	article
+14	W3016155638	2020	https://doi.org/10.1109/sp40000.2020.00024	VerX: Safety Verification of Smart Contracts		conference-paper
+15	W2114345296	2009	https://doi.org/10.1109/dsn.2009.5270315	Fitness-guided path exploration in dynamic symbolic execution		conference-paper
+16	W2095551048	2011	https://doi.org/10.1145/1966445.1966463	Parallel symbolic execution for automated real-world software testing		conference-paper
+17	W2082172430	2009	https://doi.org/10.1007/s10009-009-0118-1	A survey of new trends in symbolic execution for software testing and analysis	International Journal on Software Tools for Technology Transfer	article
+18	W1497028280	2008	https://doi.org/10.1007/978-3-540-78800-3_27	RWset: Attacking Path Explosion in Constraint-Based Test Generation	Lecture notes in computer science	conference-paper
+19	W2806746626	2018	https://doi.org/10.1109/tr.2018.2834476	Fuzzing: State of the Art	IEEE Transactions on Reliability	article
+20	W2171469152	2008	https://doi.org/10.1007/978-3-540-78800-3_28	Demand-Driven Compositional Symbolic Execution	Lecture notes in computer science	conference-paper
+21	W1970005004	2014	https://doi.org/10.1145/2568225.2568293	Enhancing symbolic execution with veritesting		conference-paper
+22	W2134875273	2010	https://doi.org/10.1145/1706299.1706307	Compositional may-must program analysis		conference-paper
+23	W116894366	2011	https://doi.org/10.1007/978-3-642-23702-7_11	Directed Symbolic Execution	Lecture notes in computer science	conference-paper
+24	W2150990339	2012	https://doi.org/10.1145/2110356.2110358	The S2E Platform	ACM Transactions on Computer Systems	article
+25	W2121507867	2013	https://doi.org/10.1145/2483760.2483777	Automated testing with targeted event sequence generation		conference-paper
+26	W1979693894	2012	https://doi.org/10.1145/2254064.2254088	Efficient state merging in symbolic execution		conference-paper
+27	W2117402063	2009	https://doi.org/10.1007/978-3-642-00768-2_27	Path Feasibility Analysis for String-Manipulating Programs	Lecture notes in computer science	conference-paper
+28	W2967682612	2019	https://doi.org/10.1145/3338906.3338937	Black box fairness testing of machine learning models		conference-paper
+29	W2152565783	2011	https://doi.org/10.1145/1993316.1993558	Directed incremental symbolic execution	ACM SIGPLAN Notices	article
+30	W2165015106	2009	https://doi.org/10.1145/1572272.1572299	Loop-extended symbolic execution on binary programs		conference-paper
+31	W2050853996	2008	https://doi.org/10.1145/1390630.1390662	Finding bugs in dynamic web applications		conference-paper
+32	W2136579066	2010	https://doi.org/10.1109/tse.2010.31	Finding Bugs in Web Applications Using Dynamic Test Generation and Explicit-State Model Checking	IEEE Transactions on Software Engineering	article
+33	W2145385214	2007	https://doi.org/10.1145/1294261.1294274	Bouncer		conference-paper
+34	W2169063148	2010	https://doi.org/10.1145/1831708.1831732	Parallel symbolic execution for structural test generation		conference-paper
+35	W2024442685	2008	https://doi.org/10.1145/1348250.1348254	DSD-Crasher	ACM Transactions on Software Engineering and Methodology	article
+36	W2114337691	2009	https://doi.org/10.1145/1542476.1542517	Snugglebug		conference-paper
+37	W2019368525	2013	https://doi.org/10.1145/2483760.2483769	Comparing non-adequate test suites using coverage criteria		conference-paper
+38	W2051634947	2008	https://doi.org/10.1109/ms.2008.109	Automating Software Testing Using Program Analysis	IEEE Software	article
+39	W2139498310	2008	https://doi.org/10.1145/1390630.1390634	Proofs from tests		conference-paper
+40	W3207402727	2019	https://doi.org/10.1145/3371078	Incorrectness logic	Proceedings of the ACM on Programming Languages	article
+41	W2169309022	2010	https://doi.org/10.1145/1774088.1774531	Embedded contract languages		conference-paper
+42	W2000414759	2013	https://doi.org/10.5555/2486788.2486805	Billions and billions of constraints: whitebox fuzz testing in production		article
+43	W2032153666	2011	https://doi.org/10.1145/2001420.2001424	Automatic partial loop summarization in dynamic test generation		conference-paper
+44	W2151674625	2010	https://doi.org/10.1109/tse.2010.93	Dynamic Analysis for Diagnosing Integration Faults	IEEE Transactions on Software Engineering	article
+45	W2066353350	2012	https://doi.org/10.1145/2338965.2336771	Memoized symbolic execution		conference-paper
+46	W2171471938	2007	https://doi.org/10.1109/icse.2007.63	Path-Sensitive Inference of Function Precedence Protocols		conference-paper
+47	W2136601052	2015	https://doi.org/10.1145/2786805.2786830	MultiSE: multi-path symbolic execution using value summaries		conference-paper
+48	W2155539595	2011	https://doi.org/10.1145/2001420.2001425	Symbolic execution with mixed concrete-symbolic solving		conference-paper
+49	W2159899121	2013	https://doi.org/10.1145/2509136.2509553	Steering symbolic execution to less traveled paths		conference-paper
+50	W2294434616	2016	https://doi.org/10.1145/2884781.2884843	Guiding dynamic symbolic execution toward unverified program executions		conference-paper
+51	W2147891468	2011	https://doi.org/10.1145/2043556.2043582	Practical software model checking via dynamic interface reduction		conference-paper
+52	W2795052548	2018	https://doi.org/10.1145/3180155.3180251	Chopped symbolic execution		conference-paper
+53	W2020689607	2011	https://doi.org/10.1145/2001420.2001422	eXpress		conference-paper
+54	W2810768857	2018	https://doi.org/10.1145/3209108.3209109	Continuous Reasoning		conference-paper
+55	W1992485833	2012	https://doi.org/10.1016/j.future.2012.02.006	State of the art: Dynamic symbolic execution for automated test generation	Future Generation Computer Systems	article
+56	W2107445402	2008	https://doi.org/10.1145/1450058.1450087	Active property checking		conference-paper
+57	W3043626952	2020	https://doi.org/10.1007/978-3-030-53291-8_14	Local Reasoning About the Presence of Bugs: Incorrectness Separation Logic	Lecture notes in computer science	conference-paper
+58	W2137636669	2009	https://doi.org/10.1109/taicpart.2009.15	Automated Test Data Generation for Coverage: Haven't We Solved This Problem Yet?		conference-paper
+59	W2151585646	2012	https://doi.org/10.5555/2337223.2337308	make test-zesti: a symbolic execution solution for improving regression testing		article
+60	W2059987590	2015	https://doi.org/10.1145/2786805.2786841	Assertion guided symbolic execution of multithreaded programs		conference-paper
+61	W2016094683	2011	https://doi.org/10.1109/esem.2011.20	A Case Study of Concolic Testing Tools and their Limitations		conference-paper
+62	W2139459831	2013		An Orchestrated Survey on Automated Software Test Case Generation I		article
+63	W2155216527	2014	https://doi.org/10.5555/2616448.2616459	Software dataplane verification	Networked Systems Design and Implementation	article
+64	W2095473904	2014	https://doi.org/10.1007/s10472-014-9408-8	Establishing flight software reliability: testing, model checking, constraint-solving, monitoring and learning	Annals of Mathematics and Artificial Intelligence	article
+65	W2103201337	2007	https://doi.org/10.1145/1321631.1321653	Directed test generation using symbolic grammars		conference-paper
+66	W2036894992	2007	https://doi.org/10.1145/1292414.1292416	Random testing for security		conference-paper
+67	W2097110854	2010	https://doi.org/10.1109/tse.2010.23	Semi-Proving: An Integrated Method for Program Proving, Testing, and Debugging	IEEE Transactions on Software Engineering	article
+68	W2002479196	2011	https://doi.org/10.1145/1966445.1966475	Symbolic crosschecking of floating-point and SIMD code		conference-paper
+69	W2097041275	2010	https://doi.org/10.1145/1831708.1831734	On test repair using symbolic execution		conference-paper
+70	W2114780348	2012	https://doi.org/10.1145/2150976.2151012	Path-exploration lifting		conference-paper
+71	W2150684130	2006	https://doi.org/10.1145/1146238.1146267	DSD-Crasher		conference-paper
+72	W2015265712	2014	https://doi.org/10.1109/tse.2014.2363469	STAR: Stack Trace Based Automatic Crash Reproduction via Symbolic Execution	IEEE Transactions on Software Engineering	article
+73	W2119236311	2009		Selective Symbolic Execution	Infoscience (Ecole Polytechnique Fédérale de Lausanne)	conference-paper
+74	W2018704560	2007	https://doi.org/10.1093/comjnl/bxm057	UML Activity Diagram-Based Automatic Test Case Generation For Java Programs	The Computer Journal	article
+75	W2158248180	2008	https://doi.org/10.1145/1390630.1390636	Testing for buffer overflows with length abstraction		conference-paper
+76	W2074273322	2010	https://doi.org/10.1016/j.jss.2010.07.026	An empirical investigation into branch coverage for C programs using CUTE and AUSTIN	Journal of Systems and Software	article
+77	W1971719033	2007	https://doi.org/10.1145/1273463.1273464	Under-constrained execution		conference-paper
+78	W1984481956	2015	https://doi.org/10.1145/2660767	Guidelines for Coverage-Based Comparisons of Non-Adequate Test Suites	ACM Transactions on Software Engineering and Methodology	article
+79	W1985335248	2008	https://doi.org/10.1145/1389095.1389435	Handling dynamic data structures in search based testing		conference-paper
+80	W2055489377	2010	https://doi.org/10.1109/tse.2010.49	Proofs from Tests	IEEE Transactions on Software Engineering	article
+81	W2057330156	2010	https://doi.org/10.1145/1866307.1866354	Input generation via decomposition and re-stitching		conference-paper
+82	W1585877844	2009	https://doi.org/10.1007/978-3-642-04694-0_6	State Joining and Splitting for the Symbolic Execution of Binaries	Lecture notes in computer science	conference-paper
+83	W2020703884	2015	https://doi.org/10.1145/2771783.2771806	Enhancing reuse of constraint solutions to improve symbolic execution		conference-paper
+84	W15179086	2012	https://doi.org/10.1007/978-3-642-34188-5_15	Interpolation-Based Function Summaries in Bounded Model Checking	Lecture notes in computer science	conference-paper
+85	W1938285999	2009	https://doi.org/10.1007/978-3-642-00768-2_24	From Tests to Proofs	Lecture notes in computer science	conference-paper
+86	W2142890871	2013	https://doi.org/10.1145/2491411.2501854	Scalable and incremental software bug detection		conference-paper
+87	W1975191777	2013	https://doi.org/10.1145/2491411.2491425	Boosting concolic testing via interpolation		conference-paper
+88	W2090601235	2013	https://doi.org/10.1109/sp.2013.40	Circuit Structures for Improving Efficiency of Security and Privacy Tools		conference-paper
+89	W2121650870	2012	https://doi.org/10.1145/2393596.2393636	CarFast		conference-paper
+90	W2122796635	2007	https://doi.org/10.1109/fose.2007.6	Formal Software Analysis Emerging Trends in Software Model Checking		conference-paper
+91	W2167310095	2008	https://doi.org/10.1109/icst.2008.8	Structural Testing of Executables		conference-paper
+92	W2141575847	2007		A genetic approach for random testing of database systems	Very Large Data Bases	article
+93	W1842210354	2012	https://doi.org/10.1007/978-3-642-28872-2_19	Integration Testing of Software Product Lines Using Compositional Symbolic Execution	Lecture notes in computer science	conference-paper
+94	W2119342939	2007	https://doi.org/10.1145/1287624.1287708	Directed test generation using symbolic grammars		conference-paper
+95	W2157264616	2009	https://doi.org/10.1109/iwast.2009.5069043	Automating structural testing of C programs: Experience with PathCrawler		conference-paper
+96	W3151121979	2012	https://doi.org/10.1109/icse.2012.6227152	Build code analysis with symbolic evaluation		conference-paper
+97	W1963739845	2014	https://doi.org/10.1145/2642937.2642951	Targeted test input generation using symbolic-concrete backward execution		conference-paper
+98	W2120951650	2012	https://doi.org/10.5555/2337223.2337300	Build code analysis with symbolic evaluation		article
+99	W2137175751	2010	https://doi.org/10.1145/1858996.1859084	How did you specify your test suite		conference-paper
+100	W2471111208	2016	https://doi.org/10.1109/tse.2016.2584063	Dependence Guided Symbolic Execution	IEEE Transactions on Software Engineering	article
+101	W1550549614	2009	https://doi.org/10.1007/978-3-642-02658-4_41	Reducing Test Inputs Using Information Partitions	Lecture notes in computer science	conference-paper
+102	W2095997776	2010	https://doi.org/10.1002/stvr.423	OSMOSE: automatic structural testing of executables	Software Testing Verification and Reliability	article
+103	W2050886219	2012	https://doi.org/10.1145/2384616.2384654	Scaling symbolic execution using ranged analysis		conference-paper
+104	W2394543764	2012		A General Approach for Efficiently Accelerating Software-based Dynamic Data Flow Tracking on Commodity Hardware.		article
+105	W2054075353	2015	https://doi.org/10.1145/2823400	Software dataplane verification	Communications of the ACM	article
+106	W2112448454	2014	https://doi.org/10.1145/2541940.2541977	Prototyping symbolic execution engines for interpreted languages		conference-paper
+107	W2139443212	2011	https://doi.org/10.1145/1993316.1993529	Higher-order test generation	ACM SIGPLAN Notices	article
+108	W2548465910	2016	https://doi.org/10.1145/2950290.2983940	JBSE: a symbolic executor for Java programs with complex heap inputs		conference-paper
+109	W2001601301	2011	https://doi.org/10.1145/2025113.2025152	Path exploration based on symbolic output		conference-paper
+110	W2580207986	2017	https://doi.org/10.1109/tse.2017.2659751	Eliminating Path Redundancy via Postconditioned Symbolic Execution	IEEE Transactions on Software Engineering	article
+111	W2115950902	2011	https://doi.org/10.1007/978-3-642-23702-7_12	Statically Validating Must Summaries for Incremental Compositional Dynamic Test Generation	Lecture notes in computer science	conference-paper
+112	W2010570907	2012	https://doi.org/10.1145/2254064.2254091	Parallelizing top-down interprocedural analyses		conference-paper
+113	W2888541832	2018	https://doi.org/10.1145/3238147.3238178	Client-specific equivalence checking		conference-paper
+114	W4290048282	2018	https://doi.org/10.1145/3167132.3167289	Improving function coverage with munch		conference-paper
+115	W2160445528	2015	https://doi.org/10.1007/978-3-662-49122-5_16	Abstraction-driven Concolic Testing	Lecture notes in computer science	conference-paper
+116	W2765857833	2017	https://doi.org/10.1145/3139337.3139346	Modular Synthesis of Heap Exploits		conference-paper
+117	W2194959641	2013	https://doi.org/10.1007/978-3-642-35873-9_14	Static Analysis of String Encoders and Decoders	Lecture notes in computer science	conference-paper
+118	W2472899067	2018	https://doi.org/10.1007/978-3-319-10575-8_19	Combining Model Checking and Testing		book-chapter
+119	W3000614974	2019	https://doi.org/10.1109/ase.2019.00034	Performance-Boosting Sparsification of the IFDS Algorithm with Applications to Taint Analysis		conference-paper
+120	W2509308811	2016	https://doi.org/10.1145/2970276.2970281	MACKE: compositional analysis of low-level vulnerabilities with symbolic execution		conference-paper
+121	W1797591744	2009	https://doi.org/10.1007/978-3-642-04342-0_9	Towards Generating High Coverage Vulnerability-Based Signatures with Protocol-Level Constraint-Guided Exploration	Lecture notes in computer science	conference-paper
+122	W2104865907	2011	https://doi.org/10.1145/2025113.2025143	Testing software in age of data privacy		conference-paper
+123	W2364496964	2015	https://doi.org/10.1109/tse.2015.2490067	Bidirectional Symbolic Analysis for Effective Branch Testing	IEEE Transactions on Software Engineering	article
+124	W2740510556	2017		CAB-Fuzz: Practical Concolic Testing Techniques for COTS Operating Systems.		article
+125	W2076716251	2012	https://doi.org/10.1109/issre.2012.8	Speculative Symbolic Execution		conference-paper
+126	W2977692062	2019	https://doi.org/10.1007/978-3-319-91908-9_24	Automated Software Test Generation: Some Challenges, Solutions, and Recent Advances	Lecture notes in computer science	conference-paper
+127	W3176250057	2021	https://doi.org/10.1145/3453483.3454076	Polynomial reachability witnesses via Stellensätze		conference-paper
+128	W2066600995	2013	https://doi.org/10.1145/2509136.2509508	Input-covering schedules for multithreaded programs		conference-paper
+129	W2003299277	2014	https://doi.org/10.1145/2660193.2660200	Symbolic execution of multithreaded programs from arbitrary program contexts		conference-paper
+130	W2899983867	2019	https://doi.org/10.1145/3290379	JaVerT 2.0: compositional symbolic execution for JavaScript	Proceedings of the ACM on Programming Languages	article
+131	W2401312886	2016	https://doi.org/10.1145/2927924	Enhancing symbolic execution with veritesting	Communications of the ACM	article
+132	W2115612093	2010	https://doi.org/10.1109/memcod.2010.5558629	Systematic testing for control applications		conference-paper
+133	W2097118641	2014	https://doi.org/10.1145/2676726.2677014	Data-Parallel String-Manipulating Programs		conference-paper
+134	W3208160860	2021	https://doi.org/10.1007/978-3-030-88701-8_20	On Algebra of Program Correctness and Incorrectness	Lecture notes in computer science	conference-paper
+135	W2030570299	2014	https://doi.org/10.1109/icst.2014.36	Sanitizing and Minimizing Databases for Software Application Test Outsourcing		conference-paper
+136	W2144186806	2008	https://doi.org/10.1109/ase.2008.49	Predicting Effectiveness of Automatic Testing Tools		conference-paper
+137	W2156050478	2009	https://doi.org/10.1109/tase.2009.33	Automated Test Case Generation Based on Coverage Analysis		conference-paper
+138	W3105410168	2020	https://doi.org/10.1145/3368089.3409734	Java Ranger: statically summarizing regions for efficient symbolic execution of Java		conference-paper
+139	W2153702331	2011	https://doi.org/10.1007/s10472-011-9224-3	Formal testing for separation assurance	Annals of Mathematics and Artificial Intelligence	article
+140	W2547390950	2016	https://doi.org/10.1145/2950290.2950335	Extracting instruction semantics via symbolic execution of code generators		conference-paper
+141	W944802673	2014	https://doi.org/10.1007/978-3-662-46081-8_21	Proving Memory Safety of the ANI Windows Image Parser Using Compositional Exhaustive Testing	Lecture notes in computer science	conference-paper
+142	W2946412372	2020	https://doi.org/10.1145/3377811.3380388	Targeted greybox fuzzing with static lookahead analysis		conference-paper
+143	W7061239	2013	https://doi.org/10.1007/978-3-319-02444-8_15	Compact Symbolic Execution	Lecture notes in computer science	conference-paper
+144	W1971141125	2013	https://doi.org/10.1016/j.jss.2013.08.033	A distributed framework for demand-driven software vulnerability detection	Journal of Systems and Software	article
+145	W2583141382	2017	https://doi.org/10.1145/3033019.3033029	Dynamic symbolic execution for polymorphism		conference-paper
+146	W2296467253	2014	https://doi.org/10.1145/2568225.2568273	Micro execution		conference-paper
+147	W1979114612	2013	https://doi.org/10.1109/tpds.2013.44	GMRace: Detecting Data Races in GPU Programs via a Low-Overhead Scheme	IEEE Transactions on Parallel and Distributed Systems	article
+148	W2006860739	2014	https://doi.org/10.1145/2629536	Directed Incremental Symbolic Execution	ACM Transactions on Software Engineering and Methodology	article
+149	W2127973326	2007	https://doi.org/10.1109/taic.part.2007.32	Kiasan/KUnit: Automatic Test Case Generation and Analysis Feedback for Open Object-oriented Systems		conference-paper
+150	W2795180899	2018	https://doi.org/10.1145/3180155.3180166	Automatically generating search heuristics for concolic testing		conference-paper
+151	W2144423682	2014	https://doi.org/10.1145/2568225.2568319	Property differencing for incremental checking		conference-paper
+152	W1561959476	2015	https://doi.org/10.1109/icst.2015.7102601	Postconditioned Symbolic Execution		conference-paper
+153	W1529563380	2013	https://doi.org/10.1007/978-3-642-37036-6_26	Information Reuse for Multi-goal Reachability Analyses	Lecture notes in computer science	conference-paper
+154	W1904455255	2012	https://doi.org/10.1007/978-3-642-32469-7_14	Checking Properties Described by State Machines: On Synergy of Instrumentation, Slicing, and Symbolic Execution	Lecture notes in computer science	conference-paper
+155	W2547827378	2016	https://doi.org/10.1145/2950290.2950360	Directed test generation to detect loop inefficiencies		conference-paper
+156	W2748925796	2017	https://doi.org/10.1007/978-3-319-66706-5_20	Modular Demand-Driven Analysis of Semantic Difference for Program Versions	Lecture notes in computer science	conference-paper
+157	W2015826910	2010	https://doi.org/10.1109/qsic.2010.22	Test Sequence Generation from Communicating UML State Charts: An Industrial Application of Symbolic Transition Systems		conference-paper
+158	W2042546688	2007	https://doi.org/10.1145/1512762.1512764	Whispec		conference-paper
+159	W2243965201	2015	https://doi.org/10.1109/issre.2015.7381814	Studying the influence of standard compiler optimizations on symbolic execution		conference-paper
+160	W2260681216	2015		Analyzing protocol implementations for interoperability		article
+161	W2071067812	2013	https://doi.org/10.1145/2522920.2522925	Path exploration based on symbolic output	ACM Transactions on Software Engineering and Methodology	article
+162	W2098675293	2013		Redundant state detection for dynamic symbolic execution	USENIX Annual Technical Conference	conference-paper
+163	W2005223977	2011	https://doi.org/10.1145/2025113.2025172	Automatic test suite evolution		conference-paper
+164	W2074371713	2014	https://doi.org/10.1145/2676549	Scaling Input Stimulus Generation through Hybrid Static and Dynamic Analysis of RTL	ACM Transactions on Design Automation of Electronic Systems	article
+165	W2097299181	2009	https://doi.org/10.1109/icse-companion.2009.5071009	Guided path exploration for regression test generation		conference-paper
+166	W2145143805	2009	https://doi.org/10.1109/icst.2009.15	Pruning the Search Space in Path-Based Test Generation		conference-paper
+167	W2156213336	2012	https://doi.org/10.1145/2245276.2231981	Symbolic execution of UML-RT State Machines		conference-paper
+168	W1699755414	2012	https://doi.org/10.4230/lipics.fsttcs.2012.24	Test Generation Using Symbolic Execution	DROPS (Schloss Dagstuhl – Leibniz Center for Informatics)	article
+169	W2008685183	2012	https://doi.org/10.1109/wcre.2012.51	Modeling Software Execution Environment		conference-paper
+170	W2211371252	2012		STING: finding name resolution vulnerabilities in programs		conference-paper
+171	W2969087412	2019	https://doi.org/10.1145/3338906.3338934	Target-driven compositional concolic testing with function summary refinement for effective bug detection		conference-paper
+172	W1968678619	2010	https://doi.org/10.1145/1806596.1806645	Mixing type checking and symbolic execution		conference-paper
+173	W2351526985	2016	https://doi.org/10.1145/2884781.2884859	Type-aware concolic testing of JavaScript programs		conference-paper
+174	W2531260568	2016	https://doi.org/10.1145/2983990.2984040	Directed synthesis of failing concurrent executions		conference-paper
+175	W2793201049	2018	https://doi.org/10.1007/s10009-018-0490-9	The Symbolic Execution Debugger (SED): a platform for interactive symbolic execution, debugging, verification and more	International Journal on Software Tools for Technology Transfer	article
+176	W1995876304	2014	https://doi.org/10.1145/2601381.2601394	Towards semantic model composition via experiments		conference-paper
+177	W2183818732	2011		Efficient Directionless Weakest Preconditions		article
+178	W2591624555	2017	https://doi.org/10.1109/infocom.2017.8057221	LeakSemantic: Identifying abnormal sensitive network transmissions in mobile applications		conference-paper
+179	W1736806863	2012	https://doi.org/10.1007/978-3-642-33675-1_38	Parallel NuSMV: A NuSMV Extension for the Verification of Complex Embedded Systems	Lecture notes in computer science	conference-paper
+180	W2529022039	2016	https://doi.org/10.1007/978-3-319-47166-2_14	Symbolic Execution with CEGAR	Lecture notes in computer science	conference-paper
+181	W2905598133	2018	https://doi.org/10.1016/bs.adcom.2018.10.002	Advances in Symbolic Execution	Advances in computers	book-chapter
+182	W2528040273	2018	https://doi.org/10.1145/3182657	A Survey of Symbolic Execution Techniques	ACM Computing Surveys	article
+183	W3156952258	2021	https://doi.org/10.1145/3442381.3450002	On the Feasibility of Automated Built-in Function Modeling for PHP Symbolic Execution		conference-paper
+184	W3205083328	2021	https://doi.org/10.1007/978-3-030-88806-0_3	Backward Symbolic Execution with Loop Folding	Lecture notes in computer science	conference-paper
+185	W2050511562	2011	https://doi.org/10.1109/apsec.2011.23	STVL: Improve the Precision of Static Defect Detection with Symbolic Three-Valued Logic		conference-paper
+186	W2598865842	2017	https://doi.org/10.1145/3052973.3053038	Using Program Analysis to Synthesize Sensor Spoofing Attacks		conference-paper
+187	W2980091191	2019	https://doi.org/10.1142/s0218194019500402	Improvements of Directed Automated Random Testing in Test Data Generation for C++ Projects	International Journal of Software Engineering and Knowledge Engineering	article
+188	W1502784368	2009		If it ain't broke, don't fix it: challenges and new directions for inferring the impact of software patches		article
+189	W2100519719	2011	https://doi.org/10.1109/qsic.2011.15	Context-Sensitive Interprocedural Defect Detection Based on a Unified Symbolic Procedure Summary Model		conference-paper
+190	W2008228118	2009	https://doi.org/10.1145/2134243.2134249	(Quickly) testing the tester via path coverage		conference-paper
+191	W2014152300	2011	https://doi.org/10.1016/j.jss.2011.07.028	SimFuzz: Test case similarity directed deep fuzzing	Journal of Systems and Software	article
+192	W2052190470	2012	https://doi.org/10.1145/2393596.2393635	Test input generation using dynamic programming		conference-paper
+193	W188660275	2011	https://doi.org/10.1007/978-3-642-21515-5_18	PSO Based Pseudo Dynamic Method for Automated Test Case Generation Using Interpreter	Lecture notes in computer science	conference-paper
+194	W2046878239	2014	https://doi.org/10.1145/2593501.2593503	An automated testing approach for inter-application security in Android		conference-paper
+195	W2166459789	2012	https://doi.org/10.1016/b978-0-12-396526-4.00004-7	Advances on Improving Automation in Developer Testing	Advances in computers	book-chapter
+196	W4214658196	2022	https://doi.org/10.3390/electronics11050727	Scalable Path Search for Automated Test Case Generation	Electronics	article
+197	W4206562387	2022	https://doi.org/10.1016/j.infsof.2022.106821	An automated test data generation method for void pointers and function pointers in C/C++ libraries and embedded projects	Information and Software Technology	article
+198	W2133210559	2014	https://doi.org/10.1145/2593069.2593209	Scalable Certification Framework for Behavioral Synthesis Front-End		conference-paper
+199	W3027138722	2020	https://doi.org/10.1016/j.csi.2020.103444	A Systematic Review of Search Strategies in Dynamic Symbolic Execution	Computer Standards & Interfaces	review
+200	W1900305658	2013	https://doi.org/10.1002/stvr.1501	Demand‐driven propagation‐based strategies for testing changes	Software Testing Verification and Reliability	article
+201	W1937808449	2015	https://doi.org/10.1109/icst.2015.7102590	Generating Succinct Test Cases Using Don't Care Analysis		conference-paper
+202	W3113381077	2020	https://doi.org/10.1007/978-3-030-63406-3_7	Parallel Chopped Symbolic Execution	Lecture notes in computer science	conference-paper
+203	W4307572474	2021	https://doi.org/10.1007/s10703-022-00401-y	Compositional runtime enforcement revisited	Formal Methods in System Design	article
+204	W2967858513	2019	https://doi.org/10.1145/3338906.3338908	Concolic testing for models of state-based systems		conference-paper
+205	W2120015217	2014	https://doi.org/10.1109/tse.2013.2297120	Symbolic Crosschecking of Data-Parallel Floating-Point Code	IEEE Transactions on Software Engineering	article
+206	W2152830042	2008	https://doi.org/10.1145/1363686.1363848	PHALANX		conference-paper
+207	W2486375282	2016	https://doi.org/10.1007/978-3-662-49674-9_25	Integrated Environment for Diagnosing Verification Errors	Lecture notes in computer science	conference-paper
+208	W2125944523	2008	https://doi.org/10.1109/icst.2008.35	Generation of All-Paths Unit Test with Function Calls		conference-paper
+209	W1896301006	2009	https://doi.org/10.1007/978-3-642-10373-5_2	Compositional Verification of Input-Output Conformance via CSP Refinement Checking	Lecture notes in computer science	conference-paper
+210	W2186517913	2013		Compositional Symbolic Execution through Program Specialization		article
+211	W3121465398	2020	https://doi.org/10.1145/3324884.3416646	Summary-based symbolic evaluation for smart contracts		conference-paper
+212	W2085682019	2012	https://doi.org/10.1007/s10009-012-0267-5	From tests to proofs	International Journal on Software Tools for Technology Transfer	article
+213	W2505158018	2016	https://doi.org/10.1007/978-3-319-40648-0_7	Compositional Runtime Enforcement	Lecture notes in computer science	conference-paper
+214	W2888050482	2018	https://doi.org/10.1145/3238147.3238227	Template-guided concolic testing via online learning		conference-paper
+215	W1978624451	2012	https://doi.org/10.1145/2338965.2336764	Compositional load test generation for software pipelines		conference-paper
+216	W2001698600	2012	https://doi.org/10.1145/2245276.2231988	Staged symbolic execution		conference-paper
+217	W2734438582	2017	https://doi.org/10.1145/3092703.3092706	Improving the cost-effectiveness of symbolic testing techniques for transport protocol implementations under packet dynamics		conference-paper
+218	W2075944923	2011	https://doi.org/10.1007/s11432-011-4368-7	Strategies for scalable symbolic execution-driven test generation for programs	Science China Information Sciences	article
+219	W2119330381	2010	https://doi.org/10.1109/dsn.2010.5544310	Detecting vulnerabilities in C programs using trace-based testing		conference-paper
+220	W2144577665	2011	https://doi.org/10.1007/978-3-642-20551-4_7	Compositional CLP-Based Test Data Generation for Imperative Languages	Lecture notes in computer science	conference-paper
+221	W2193749560	2015	https://doi.org/10.1007/978-3-319-23404-5_19	IC-Cut: A Compositional Search Strategy for Dynamic Test Generation	Lecture notes in computer science	conference-paper
+222	W110994247	2014	https://doi.org/10.1007/978-3-319-09099-3_7	Visualizing Unbounded Symbolic Execution	Lecture notes in computer science	conference-paper
+223	W2772193202	2017	https://doi.org/10.1109/tse.2017.2781231	Decomposition-Based Approach for Model-Based Test Generation	IEEE Transactions on Software Engineering	article
+224	W2937521294	2019	https://doi.org/10.1007/s11334-019-00331-9	A synergistic approach to improving symbolic execution using test ranges	Innovations in Systems and Software Engineering	article
+225	W77236829	2014	https://doi.org/10.1007/978-3-319-07317-0_7	Test Case Generation by Symbolic Execution: Basic Concepts, a CLP-Based Instance, and Actor-Based Concurrency	Lecture notes in computer science	conference-paper
+226	W1139689124	2015	https://doi.org/10.1007/978-3-662-46823-4_27	Symbolic String Transformations with Regular Lookahead and Rollback	Lecture notes in computer science	conference-paper
+227	W1508846218	2011	https://doi.org/10.1007/978-3-642-19583-9_5	An Introduction to Test Specification in FQL	Lecture notes in computer science	conference-paper
+228	W2087686900	2010	https://doi.org/10.1007/s11334-010-0124-1	Randomized constraint solvers: a comparative study	Innovations in Systems and Software Engineering	article
+229	W2905722102	2018	https://doi.org/10.1016/bs.adcom.2018.10.004	Symbolic Execution and Recent Applications to Worst-Case Execution, Load Testing, and Security Analysis	Advances in computers	book-chapter
+230	W1781612918	2011	https://doi.org/10.1007/978-3-642-19811-3_18	Theoretical Aspects of Compositional Symbolic Execution	Lecture notes in computer science	conference-paper
+231	W2221704545	2015	https://doi.org/10.1109/aswec.2015.32	Compositional Symbolic Execution Using Fine-Grained Summaries		conference-paper
+232	W2496789919	2016	https://doi.org/10.1109/icstw.2016.18	Experience Report: White Box Test Case Generation for Automotive Embedded Software		conference-paper
+233	W2504485444	2010	https://doi.org/10.4018/978-1-60566-758-4.ch011	Constraint-Based Techniques for Software Testing	Advances in computational intelligence and robotics book series	book-chapter
+234	W2011843373	2014	https://doi.org/10.1145/2541940.2541984	Finding trojan message vulnerabilities in distributed systems		conference-paper
+235	W2011916183	2010	https://doi.org/10.1145/1808266.1808271	Generation of executable test cases based on behavioral UML system models		conference-paper
+236	W2735862176	2017	https://doi.org/10.1145/3092282.3092293	Optimizing parallel Korat using invalid ranges		conference-paper
+237	W1973494035	2014	https://doi.org/10.1145/2652484	Scaling Up Symbolic Analysis by Removing Z-Equivalent States	ACM Transactions on Software Engineering and Methodology	article
+238	W2081894476	2012	https://doi.org/10.1145/2382756.2382792	S2PF	ACM SIGSOFT Software Engineering Notes	article
+239	W2734537631	2017	https://doi.org/10.1109/cig.2017.8080442	Automated game design learning		conference-paper
+240	W3094496039	2020	https://doi.org/10.1109/access.2020.3030798	CSEFuzz: Fuzz Testing Based on Symbolic Execution	IEEE Access	article
+241	W1570631586	2015	https://doi.org/10.1002/sec.1290	An empirical investigation into path divergences for concolic execution using CREST	Security and Communication Networks	article
+242	W2001655653	2013	https://doi.org/10.1007/s11704-013-2008-1	A novel requirement analysis approach for periodic control systems	Frontiers of Computer Science	article
+243	W2105229722	2013	https://doi.org/10.1145/2535771.2535777	Toward a verifiable software dataplane		conference-paper
+244	W259709741	2024	https://doi.org/10.1184/r1/6716573	Exploiting Trade-offs in Symbolic Execution for Identifying Security Bugs	KiltHub Repository	article
+245	W3179098620	2021	https://doi.org/10.1145/3460319.3464845	Grammar-agnostic symbolic execution by token symbolization		conference-paper
+246	W34188177	2014	https://doi.org/10.1007/978-3-319-09099-3_3	An Abstraction Technique for Testing Decomposable Systems by Model Checking	Lecture notes in computer science	conference-paper
+247	W2513970126	2016	https://doi.org/10.1016/j.scico.2016.07.003	Tri-modal under-approximation for test generation	Science of Computer Programming	article
+248	W2999519227	2019	https://doi.org/10.1109/ase.2019.00089	Fine-Grain Memory Object Representation in Symbolic Execution		conference-paper
+249	W4285104766	2022	https://doi.org/10.1007/978-3-031-09827-7_6	A Unit-Based Symbolic Execution Method for Detecting Heap Overflow Vulnerability in Executable Codes	Lecture notes in computer science	conference-paper
+250	W2081593634	2014	https://doi.org/10.1145/2642937.2642973	Symbolic state validation through runtime data		conference-paper
+251	W4398225335	2024	https://doi.org/10.1134/s0361768824010079	A Survey of Software Dynamic Analysis Methods	Programming and Computer Software	article
+252	W4400583101	2024	https://doi.org/10.1145/3643740	PBE-Based Selective Abstraction and Refinement for Efficient Property Falsification of Embedded Software	Proceedings of the ACM on software engineering.	article
+253	W4409310733	2025	https://doi.org/10.1145/3720470	LOUD: Synthesizing Strongest and Weakest Specifications	Proceedings of the ACM on Programming Languages	article
+254	W2112338270	2009	https://doi.org/10.1109/tase.2009.10	Test Data Generation for Derived Types in C Program		conference-paper
+255	W1507201375	2011	https://doi.org/10.1007/978-3-642-24372-1_34	Efficient Loop Navigation for Symbolic Execution	Lecture notes in computer science	conference-paper
+256	W1981471464	2009	https://doi.org/10.1007/s10703-009-0075-z	Full simulation coverage for SystemC transaction-level models of systems-on-a-chip	Formal Methods in System Design	article
+257	W1968929858	2014	https://doi.org/10.1109/tr.2014.2363153	Test Generation for Embedded Executables via Concolic Execution in a Real Environment	IEEE Transactions on Reliability	article
+258	W1975474596	2014	https://doi.org/10.1145/2544135	Generating Test Cases for Programs that Are Coded against Interfaces and Annotations	ACM Transactions on Software Engineering and Methodology	article
+259	W1978331087	2012	https://doi.org/10.1109/icst.2012.196	Combining Static Analysis and Constraint Solving for Automatic Test Case Generation		conference-paper
+260	W2109092649	2013	https://doi.org/10.1002/smr.1601	Design and implementation of a dynamic symbolic execution tool for windows executables	Journal of Software Evolution and Process	article
+261	W2135730677	2009	https://doi.org/10.1109/qsic.2009.53	Towards Scalable Compositional Test Generation		conference-paper
+262	W2146544336	2008	https://doi.org/10.1007/978-3-540-85114-1_4	Using Dynamic Symbolic Execution to Improve Deductive Verification	Lecture notes in computer science	conference-paper
+263	W2562172891	2016	https://doi.org/10.1109/scam.2016.26	LLSPLAT: Improving Concolic Testing by Bounded Model Checking		conference-paper
+264	W1994098459	2012	https://doi.org/10.1109/hicss.2012.233	Effectiveness of Random Testing of Embedded Systems		conference-paper
+265	W2132941720	2014	https://doi.org/10.1016/j.scico.2014.02.007	Test generation for sequential nets of Abstract State Machines with information passing	Science of Computer Programming	article
+266	W2152417349	2008	https://doi.org/10.1109/sefm.2008.13	Behaviour Directed Testing of Auto-code Generators		conference-paper
+267	W2202321577	2012	https://doi.org/10.1007/978-3-642-28891-3_6	Symbolic Execution of Communicating and Hierarchically Composed UML-RT State Machines	Lecture notes in computer science	conference-paper
+268	W2579989956	2017	https://doi.org/10.1109/icst.2017.29	Non-Semantics-Preserving Transformations for Higher-Coverage Test Generation Using Symbolic Execution		conference-paper
+269	W3114617537	2020	https://doi.org/10.1109/iccke50421.2020.9303643	Compositional Taint Analysis of Native Codes for Security Vetting of Android Applications		conference-paper
+270	W132621875	2012	https://doi.org/10.1007/978-3-642-35746-6_2	From Program to Logic: An Introduction	Lecture notes in computer science	conference-paper
+271	W1917209295	2015	https://doi.org/10.1016/j.infsof.2015.05.007	Goal-oriented dynamic test generation	Information and Software Technology	article
+272	W2034485713	2012	https://doi.org/10.1016/j.scico.2012.07.004	Dual analysis for proving safety and finding bugs	Science of Computer Programming	article
+273	W2110862183	2014	https://doi.org/10.1145/2670979.2670980	Automating Distributed Partial Aggregation		conference-paper
+274	W2775526484	2017	https://doi.org/10.1007/978-3-319-72389-1_24	Learn to Accelerate Identifying New Test Cases in Fuzzing	Lecture notes in computer science	conference-paper
+275	W2903510814	2018	https://doi.org/10.1016/j.infsof.2018.11.006	FSCT: A new fuzzy search strategy in concolic testing	Information and Software Technology	article
+276	W2021799513	2015	https://doi.org/10.1145/2752489.2752495	Automatic Consequence Analysis of Automotive Standards (AUTO-CAAS)		conference-paper
+277	W2044072951	2015	https://doi.org/10.1145/2786805.2786837	Improving model-based test generation by model decomposition		conference-paper
+278	W2144950612	2009	https://doi.org/10.1134/s0361768809040057	Integration of verification methods for program systems	Programming and Computer Software	article
+279	W2339080697	2009		Symbolic execution algorithms for test generation		article
+280	W2514268875	2016	https://doi.org/10.1145/2970276.2970318	Symbolic execution of stored procedures in database management systems		conference-paper
+281	W2777984949	2017	https://doi.org/10.1016/bs.adcom.2017.11.001	Advances in Software Model Checking	Advances in computers	book-chapter
+282	W110635735	2011		Generating Fast String Manipulating Code Through Transducer Exploration and SIMD Integration		article
+283	W2103277148	2011	https://doi.org/10.1016/j.entcs.2011.07.008	A Parallel Approach to Concolic Testing with Low-cost Synchronization	Electronic Notes in Theoretical Computer Science	article
+284	W2550115983	2015		Adaptable Static Analysis of Executables for proving the Absence of Vulnerabilities		article
+285	W2957505323	2019	https://doi.org/10.1007/s11219-019-09453-6	Extending symbolic execution for automated testing of stored procedures	Software Quality Journal	article
+286	W3153675824	2021		Oblique: Accelerating page loads using symbolic execution		article
+287	W3161854212	2021		ObliCheck: Efficient Verification of Oblivious Algorithms with Unobservable State	USENIX Security Symposium	conference-paper
+288	W2113733667	2011	https://doi.org/10.1145/1985793.1986035	Problem identification for structural test generation		conference-paper
+289	W2949182414	2019	https://doi.org/10.1109/icst.2019.00013	Extension-Aware Automated Testing Based on Imperative Predicates		conference-paper
+290	W4296900116	2022	https://doi.org/10.1007/978-3-031-17196-3_17	TestSelector: Automatic Test Suite Selection for Student Projects	Lecture notes in computer science	conference-paper
+291	W2765419294	2017	https://doi.org/10.14232/actacyb.23.2.2017.9	The Optimization of a Symbolic Execution Engine for Detecting Runtime Errors	Acta Cybernetica	article
+292	W4406222301	2025	https://doi.org/10.1145/3704850	On Extending Incorrectness Logic with Backwards Reasoning	Proceedings of the ACM on Programming Languages	article
+293	W2130550680	2010	https://doi.org/10.1007/978-3-642-14295-6_43	Abstract Analysis of Symbolic Executions	Lecture notes in computer science	conference-paper
+294	W649671021	2010		Automatic Unit Test Generation		article
+295	W1557422289	2009		Oasis: Concolic Execution Driven by Test Suites and Code Modifications		article
+296	W2072366534	2013	https://doi.org/10.1007/s11334-013-0196-9	Scaling symbolic execution using staged analysis	Innovations in Systems and Software Engineering	article
+297	W2114418805	2009		Dynamic test generation for large binary programs		article
+298	W2277464043	2015	https://doi.org/10.1109/issrew.2015.7392042	A scalable and accurate hybrid vulnerability analysis framework		conference-paper
+299	W2403719849	2009		A Comparative Study of Randomized Constraint Solvers for Random-Symbolic Testing		article
+300	W1572317885	2009		Effective software testing with a string-constraint solver		article
+301	W2029068537	2011	https://doi.org/10.4028/www.scientific.net/amr.211-212.500	Research on Fuzzing Test Data Engine for Web Vulnerability	Advanced materials research	article
+302	W2148905481	2009	https://doi.org/10.1109/kam.2009.34	A Novel Program Analysis Method Based on Execution Path Correlation		conference-paper
+303	W1578985913	2015	https://doi.org/10.1109/sies.2015.7185048	Building an interactive test development environment for cyclic executive systems		conference-paper
+304	W1784567382	2011	https://doi.org/10.1007/978-3-642-24559-6_24	Symbolic Execution of Alloy Models	Lecture notes in computer science	conference-paper
+305	W1985978231	2009	https://doi.org/10.1109/iwast.2009.5069044	Lazy symbolic evaluation and its path constraints solution		conference-paper
+306	W2022140066	2014	https://doi.org/10.4304/jmm.9.6.843-850	Dynamic Obfuscation Algorithm based on Demand-Driven Symbolic Execution	Journal of Multimedia	article
+307	W2158576154	2010	https://doi.org/10.1145/1868321.1868322	An approach for modeling dynamic analysis using ontologies		conference-paper
+308	W2185407019	2013	https://doi.org/10.1007/978-3-642-40787-1_20	A Late Treatment of C Precondition in Dynamic Symbolic Execution Testing Tools	Lecture notes in computer science	conference-paper
+309	W2406335907	2013	https://doi.org/10.3233/978-1-61499-207-3-313	Symbolic Execution and Software Testing	NATO science for peace and security series. D, Information and communication security	book-chapter
+310	W2710413185	2015		StaDy: Deep Integration of Static and Dynamic Analysis in Frama-C		article
+311	W27509964	2018	https://doi.org/10.1184/r1/6467870	Efficient Directionless Weakest Preconditions (CMU-CyLab-10-002)		article
+312	W2782011181	2017	https://doi.org/10.4018/ijossp.2017040104	Heuristic Guided Selective Path Exploration for Loop Structure in Coverage Testing	International Journal of Open Source Software and Processes	article
+313	W3136121010	2021	https://doi.org/10.1007/978-3-030-72019-3_23	Sound and Complete Concolic Testing for Higher-order Functions	Lecture notes in computer science	conference-paper
+314	W1779373593	2013		Scaling Concolic Execution of Binary Programs for Security Applications		article
+315	W2056183852	2013	https://doi.org/10.1109/qsic.2013.68	A Search Strategy Guided by Uncovered Branches for Concolic Testing		conference-paper
+316	W2073538005	2012	https://doi.org/10.5755/j01.eee.122.6.1814	Generating Unit Tests for Floating Point Embedded Software using Compositional Dynamic Symbolic Execution	Elektronika ir Elektrotechnika	article
+317	W2139590779	2009	https://doi.org/10.1109/kse.2009.47	A Parameterized Unit Test Framework Based on Symbolic Java PathFinder		conference-paper
+318	W2145123812	2013		Automated test case generation to validate non-functional software requirements	Lincoln (University of Nebraska)	article
+319	W2149856054	2009	https://doi.org/10.1109/icbnmt.2009.5347802	A novel symbolic execution framework for multi-procedure program analysis		conference-paper
+320	W2151352916	2011	https://doi.org/10.1109/itaic.2011.6030179	Effective code coverage in compositional systematic dynamic testing		conference-paper
+321	W2293384675	2015	https://doi.org/10.1145/2811681.2817758	Looking Closer at Compositional Symbolic Execution		conference-paper
+322	W2465983365	2015	https://doi.org/10.17485/ijst/2016/v9i19/91025	Testing Program for Security using Symbolic Execution and Exception Injection	Indian Journal of Science and Technology	article
+323	W2602455043	2016	https://doi.org/10.1109/apsec.2016.046	Compositional Symbolic Execution: Incremental Solving Revisited		conference-paper
+324	W2618112392	2016	https://doi.org/10.15514/ispras-2016-28(1)-3	Summary-based method of implementing arbitrary context-sensitive checks for source-based analysis via symbolic execution	Proceedings of the Institute for System Programming of RAS	article
+325	W2798366535	2018		Efficient and Correct Test Scheduling for Ensembles of Network Policies	Networked Systems Design and Implementation	article
+326	W2904079634	2018	https://doi.org/10.1007/978-981-13-1951-8_7	Grammar-Based White-Box Testing via Automated Constraint Path Generation	Advances in intelligent systems and computing	book-chapter
+327	W3110753053	2020	https://doi.org/10.1109/qrs51102.2020.00044	On Symbolic Execution of Decompiled Programs		conference-paper
+328	W2751484799	2017	https://doi.org/10.1007/978-3-319-68167-2_12	Compositional Safety Refutation Techniques	Lecture notes in computer science	conference-paper
+329	W2113791307	2012	https://doi.org/10.1145/2338965.2336772	Abstracting path conditions		conference-abstract
+330	W1965945673	2014		Compositional Symbolic Execution with Memoized Replay	Texas ScholarWorks (Texas Digital Library)	dissertation
+331	W145972366	2007		LATEST : Lazy Dynamic Test Input Generation	UC Berkeley	report
+332	W2892229407	2018	https://doi.org/10.48550/arxiv.1809.03260	Automated Test Generation to Detect Individual Discrimination in AI Models	arXiv (Cornell University)	preprint
+333	W2187370761	2012		Techniques to facilitate symbolic execution of real-world programs		dissertation
+334	W2189122526	2013	https://doi.org/10.18130/v3kz3c	Automatic Program Repair Using Genetic Programming		dissertation
+335	W3152901931	2022	https://doi.org/10.2139/ssrn.4106945	Sailfish: Vetting Smart Contract State-Inconsistency Bugs in Seconds	SSRN Electronic Journal	preprint
+336	W2129752927	2010		Grammar and model extraction for security applications using dynamic program binary analysis		dissertation
+337	W2247219265	2015	https://doi.org/10.3929/ethz-a-010487200	Narrowing the gap between verification and systematic testing	Repository for Publications and Research Data (ETH Zurich)	dissertation
+338	W2768829148	2017	https://doi.org/10.48550/arxiv.1711.09362	Improving Function Coverage with Munch: A Hybrid Fuzzing and Directed Symbolic Execution Approach	arXiv (Cornell University)	preprint
+339	W2921469068	2019	https://doi.org/10.48550/arxiv.1903.02981	Compositional Fuzzing Aided by Targeted Symbolic Execution	arXiv (Cornell University)	preprint
+340	W1590932886	2015	https://doi.org/10.5075/epfl-thesis-6735	Techniques for Identifying Elusive Corner-Case Bugs in Systems Software	Infoscience (Ecole Polytechnique Fédérale de Lausanne)	dissertation
+341	W1963267537	2011		MultiOtter: Multiprocess Symbolic Execution	University Libraries (University of Maryland)	report
+342	W1647283329	2012		Improving systematic constraint-driven analysis using incremental and parallel techniques	Texas ScholarWorks (Texas Digital Library)	other
+343	W2140849264	2007	https://doi.org/10.1109/sefm.2007.24	How to Test Program Generators? A Case Study using flex		conference-paper
+344	W2810533955	2018	https://doi.org/10.48550/arxiv.1807.00575	Neuro-Symbolic Execution: The Feasibility of an Inductive Approach to Symbolic Execution	arXiv (Cornell University)	preprint
+345	W2950968983	2017	https://doi.org/10.48550/arxiv.1702.01160	LeakSemantic: Identifying Abnormal Sensitive Network Transmissions in Mobile Applications	arXiv (Cornell University)	preprint
+346	W2952721695	2015	https://doi.org/10.48550/arxiv.1501.07174	Enhancing Reuse of Constraint Solutions to Improve Symbolic Execution	arXiv (Cornell University)	preprint
+347	W1496835330	2015	https://doi.org/10.5075/epfl-thesis-6719	Improving Scalability of Symbolic Execution for Software with Complex Environment Interfaces	Infoscience (Ecole Polytechnique Fédérale de Lausanne)	dissertation
+348	W1553821841	2008	https://doi.org/10.1007/978-3-540-69166-2_6	Protocol Inference Using Static Path Profiles	Lecture notes in computer science	conference-paper
+349	W2184393356	2014		Language Specific Analysis of State Machine Models of Reactive Systems	QSpace (Queen's University Library)	dissertation
+350	W2186645324	2013		SEMANTIC ANALYSES TO DETECT AND LOCALIZE SOFTWARE REGRESSION ERRORS	National University of Singapore	dissertation
+351	W2278873596	2008	https://doi.org/10.4271/2008-01-0124	"Verification of Model Processing Tools&lt;xref ref-type=""fn"" rid=""FN1""&gt;*&lt;/xref&gt;"	SAE International journal of passenger cars. Electronic and electrical systems	article
+352	W2399896222	2014		An empirical study of the influence of compiler optimizations on symbolic execution	Texas ScholarWorks (Texas Digital Library)	dissertation
+353	W2514597554	2009		SPA: Symbolic Program Approximation for Scalable Path-sensitive Analysis	SMARTech Repository (Georgia Institute of Technology)	report
+354	W2950293995	2011	https://doi.org/10.48550/arxiv.1107.1398	Efficient Loop Navigation for Symbolic Execution	arXiv (Cornell University)	preprint
+355	W2950403898	2011	https://doi.org/10.48550/arxiv.1112.5671	Abstracting Path Conditions	arXiv (Cornell University)	preprint
+356	W1203992524	2000	https://doi.org/10.15760/etd.2459	Scalable Equivalence Checking for Behavioral Synthesis		report
+357	W1277543147	2008		Predicting and Explaining Automatic Testing Tool Effectiveness	Illinois Digital Environment for Access to Learning and Scholarship (University of Illinois at Urbana-Champaign)	article
+358	W2168515694	2007		Contract-based verification and test case generation for open systems		dissertation
+359	W2275187606	2014		Avoiding State-Space Explosion in Multithreaded Programs with Input-Covering Schedules and Symbolic Execution	ResearchWorks at the University of Washington (University of Washington)	dissertation
+360	W2403990000	2011	https://doi.org/10.48550/arxiv.1112.4703	Abstracting Path Conditions for Effective Symbolic Execution	arXiv (Cornell University)	preprint
+361	W2519573658	2010		Precise and progressing compositional symbolic execution	Lirias	report
+362	W2584140948	2009		Generalized Abstract Symbolic Summaries	NASA STI Repository (National Aeronautics and Space Administration)	other
+363	W2949494388	2015	https://doi.org/10.48550/arxiv.1511.02615	Abstraction-driven Concolic Testing	arXiv (Cornell University)	preprint
+364	W2951281226	2012	https://doi.org/10.48550/arxiv.1201.4715	Compact Symbolic Execution	arXiv (Cornell University)	preprint
+365	W2963346671	2019	https://doi.org/10.48550/arxiv.1907.09700	Enhancing Dynamic Symbolic Execution by Automatically Learning Search Heuristics	arXiv (Cornell University)	preprint
+366	W3167048767	2021	https://doi.org/10.48550/arxiv.2106.02179	Distributed Symbolic Execution using Test-Depth Partitioning	arXiv (Cornell University)	preprint
+367	W791737226	2010		Mixing Type Checking and Symbolic Execution (Extended Version)	University Libraries (University of Maryland)	report
+368	W103911034	2009	https://doi.org/10.5220/0001992701440150	SYMBOLIC EXECUTION FOR DYNAMIC, EVOLUTIONARY TEST DATA GENERATION		conference-paper
+369	W110457516	2010		Towards Compositional CLP-based Test Data Generation for Imperative Languages.	Logic-based Program Synthesis and Transformation	article
+370	W1498664242	2015	https://doi.org/10.1109/icaci.2015.7184730	Enhancing fuzzing with a minimum set solver		conference-paper
+371	W1500010939	2012	https://doi.org/10.48550/arxiv.1201.6033	Compact Symbolic Execution (technical report)	arXiv (Cornell University)	preprint
+372	W1500528718	2007	https://doi.org/10.1007/978-3-540-75221-9_17	Engineering the Development of Embedded Systems	Lecture notes in computer science	conference-paper
+373	W1510860328	2015	https://doi.org/10.1109/icaci.2015.7184737	Enhancing symbolic execution method with a taint layer		conference-paper
+374	W157088208	2012	https://doi.org/10.1007/978-3-642-33308-8_22	Generating Test Data Using Symbolic Execution: Challenges with Floating Point Data Types	Communications in computer and information science	conference-paper
+375	W1579393468	2012		Use of constraint solving for testing software product lines		article
+376	W1595338806	2012	https://doi.org/10.48550/arxiv.1201.4719	On Synergy of Metal, Slicing, and Symbolic Execution	arXiv (Cornell University)	preprint
+377	W175076625	2009	https://doi.org/10.21236/ada504935	The Open Source Hardening Project		report
+378	W1807339296	2011	https://doi.org/10.5075/epfl-thesis-5087	An Integrated Framework for Improving the Quality and Reliability of Software Upgrades	Infoscience (Ecole Polytechnique Fédérale de Lausanne)	dissertation
+379	W1893195086	2013		Integrated Module Testing and Module Verification		other
+380	W1913104612	2014		Contract-driven data structure repair : a novel approach for error recovery		dissertation
+381	W1965767399	2014	https://doi.org/10.1109/icsai.2014.7009438	Improving guide-based vulnerability detection with hybrid symbolic execution		conference-paper
+382	W2043140846	2014	https://doi.org/10.1109/cis.2014.16	SymWalker: Symbolic Execution in Routines of Binary Code		conference-paper
+383	W2057810348	2013	https://doi.org/10.2991/icaiees-13.2013.57	Research on Complicate Array Object via Region-Based Memory Model	Advances in intelligent systems research/Advances in Intelligent Systems Research	conference-paper
+384	W2087492310	2012	https://doi.org/10.1109/mines.2012.199	SEA: Analyzing Memory Access of Executables		conference-paper
+385	W2087930812	2010	https://doi.org/10.1109/sefm.2010.9	"""Fly Me to the Moon"": Verification of Aerospace Systems"		conference-paper
+386	W2100514450	2008	https://doi.org/10.1109/icycs.2008.211	DBTG: Demand-Driven Backtracking Test Generation		conference-paper
+387	W2101264565	2012	https://doi.org/10.5555/2663608.2663636	All-values symbolic execution	Automation of Software Test	article
+388	W2151998262	2014	https://doi.org/10.14257/ijdta.2014.7.1.02	An Intelligent Method for Test Data Generation Based on Optimized Interval Arithmetic	International Journal of Database Theory and Application	article
+389	W2166916140	2008		Combining over- and under-approximating program analyses for automatic software testing		dissertation
+390	W2182839840	2010		Strategies for Scalable Symbolic Execution-based Test Generation	VTechWorks (Virginia Tech)	dissertation
+391	W2185752062	2009		Search{Based Testing		article
+392	W2204070920	2015	https://doi.org/10.5821/dissertation-2117-95760	Automatic program analysis using Max-SMT		dissertation
+393	W2208150498	2015	https://doi.org/10.21236/ada623732	Preventing Exploits Against Software of Uncertain Provenance (PEASOUP)		report
+394	W2288655720	2015		Building Evolvable Networks: Flexible and Predictable Packet Processing		article
+395	W2340665414	2016		Improving Scalability of Compositional Symbolic Execution through Parameterized Summary		article
+396	W2464760071	2016	https://doi.org/10.5075/epfl-thesis-7055	Improving systems software security through program analysis and instrumentation	Infoscience (Ecole Polytechnique Fédérale de Lausanne)	article
+397	W2465107960	2009		Improving the static resolution of dynamic java features		article
+398	W2903847437	2016	https://doi.org/10.37569/dalatuniversity.6.2.44(2016)	THỰC THI TƯỢNG TRƯNG TRONG SINH TỰ ĐỘNG DỮ LIỆU KIỂM THỬ PHẦN MỀM	Dalat University Journal of Science	article
+399	W2919980613	2018	https://doi.org/10.1145/3297156.3297276	An Improved Offline Symbolic Execution Approach	Proceedings of the 2018 2nd International Conference on Computer Science and Artificial Intelligence	conference-paper
+400	W2953407573	2019	https://doi.org/10.15514/ispras-2019-31(5)-3	Automatic verification of heap-manipulating programs	Proceedings of the Institute for System Programming of RAS	article
+401	W2959281581	2019	https://doi.org/10.1145/3339363.3339379	SYMAC		conference-paper
+402	W2965582549	2019	https://doi.org/10.1587/transinf.2018edp7298	SCSE: Boosting Symbolic Execution via State Concretization	IEICE Transactions on Information and Systems	article
+403	W2978402415	2011	https://doi.org/10.1201/b10928-10	Path-Aware Static Program Analyses for Specification Mining	Chapman & Hall/CRC data mining and knowledge discovery series	book-chapter
+404	W2996599508	2024	https://doi.org/10.58088/cb3f-fm84	Automated techniques for improving the quality of existing test suites	Library, Museums and Press - UDSpace (University of Delaware)	dissertation
+405	W3036778367	2020	https://doi.org/10.48550/arxiv.2006.11639	Dynamic Symbolic Execution of Higher-Order Functions	arXiv (Cornell University)	preprint
+406	W3101775483	2020	https://doi.org/10.7916/d8-2bry-am81	Structure and Feedback in Cloud Service API Fuzzing		article
+407	W3120677523	2021		On Solving String Constraints	Uppsala University Publications (Uppsala University)	dissertation
+408	W4390924077	2023	https://doi.org/10.15514/ispras-2023-35(4)-1	Survey of Software Dynamic Analysis Methods	Proceedings of the Institute for System Programming of RAS	article
+409	W4401436951	2024	https://doi.org/10.21203/rs.3.rs-4727765/v1	ART: An Efficient Framework for Automated Regression Testing for C/C++ Projects	Research Square	preprint
+410	W625062756	2018	https://doi.org/10.1184/r1/6468098	Towards Generating High Coverage Vulnerability-based Signatures with Protocol-level Constraint-guided Exploration (CMU-CyLab-08-009)	KiltHub Repository	article
+411	W7152489198	2026	https://doi.org/10.1007/978-3-032-22720-1_11	Specification-Driven Generation of Summaries for Symbolic Execution	Lecture notes in computer science	conference-paper

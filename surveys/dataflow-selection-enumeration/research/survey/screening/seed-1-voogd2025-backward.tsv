@@ -1,0 +1,25 @@
+rank	openalex_id	year	doi	title	venue	type
+1	W1002779697	2015	https://doi.org/10.1007/978-3-319-21690-4_16	OpenJDK’s Java.utils.Collection.sort() Is Broken: The Good, the Bad and the Worst Case	Lecture notes in computer science	conference-paper
+2	W1439634531	2016	https://doi.org/10.1016/j.jsc.2016.07.012	A generic framework for symbolic execution: A coinductive approach	Journal of Symbolic Computation	article
+3	W1590698795	2010	https://doi.org/10.1007/978-1-84882-912-1	Reflections on the Work of C.A.R. Hoare		book
+4	W1634497122	2011	https://doi.org/10.1007/978-3-642-19237-1_4	DART: Directed Automated Random Testing	Lecture notes in computer science	conference-paper
+5	W2084875723	1992	https://doi.org/10.1093/logcom/2.4.511	Abstract Interpretation Frameworks	Journal of Logic and Computation	conference-abstract
+6	W2084974153	1991	https://doi.org/10.1016/0167-6423(91)90008-l	Symbolic execution: a semantic approach	Science of Computer Programming	article
+7	W2103953153	1976		A Discipline of Programming		article
+8	W2107147876	2013	https://doi.org/10.1145/2408776.2408795	Symbolic execution for software testing	Communications of the ACM	article
+9	W2291588299	2013	https://doi.org/10.1007/978-3-642-39698-4	Theories of Programming and Formal Methods: essays dedicated to Jifeng He on the occasion of his 70th birthday		other
+10	W2517635806	2016	https://doi.org/10.1109/tase.2016.12	A New Roadmap on Linking Theories of Programming		conference-abstract
+11	W2626106541	2017		Dependable Software Systems Engineering		book
+12	W2793201049	2018	https://doi.org/10.1007/s10009-018-0490-9	The Symbolic Execution Debugger (SED): a platform for interactive symbolic execution, debugging, verification and more	International Journal on Software Tools for Technology Transfer	article
+13	W2987907651	1969	https://doi.org/10.1145/363235.363259	An axiomatic basis for computer programming	Communications of the ACM	article
+14	W3036587014	2020	https://doi.org/10.25534/tuprints-00008540	Abstract Execution: Automatically Proving Infinitely Many Programs	TUbilio (Technical University of Darmstadt)	conference-abstract
+15	W3132151609	2021	https://doi.org/10.1007/s00165-020-00527-y	Symbolic execution formally explained	Formal Aspects of Computing	article
+16	W4205913186	2022	https://doi.org/10.1145/3498709	A formal foundation for symbolic evaluation with merging	Proceedings of the ACM on Programming Languages	article
+17	W4213359168	1998	https://doi.org/10.1016/s0898-1221(98)90113-4	Term rewriting and all that	Computers & Mathematics with Applications	article
+18	W4389162688	2023	https://doi.org/10.1145/3611643	Proceedings of the 31st ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering		paratext
+19	W4391879488	2024	https://doi.org/10.1145/3648439	Locally Abstract, Globally Concrete Semantics of Concurrent Programming Languages	ACM Transactions on Programming Languages and Systems	article
+20	W4409121841	2019	https://doi.org/10.23638/lmcs-15(2:5)2019	All-Path Reachability Logic	DOAJ (DOAJ: Directory of Open Access Journals)	article
+21	W6884766938	2018	https://doi.org/10.1184/r1/6710966.v1	Symbolic Execution for Software Testing in Practice – Preliminary Assessment	KiltHub Repository	article
+22	W6891733204	2024	https://doi.org/10.4230/lipics.ecoop.2024.3	A Dynamic Logic for Symbolic Execution for the Smart Contract Programming Language Michelson	DROPS (Schloss Dagstuhl – Leibniz Center for Informatics)	article
+23	W7053504691	1997		A Tutorial on (Co)Algebras and (Co)Induction		article
+24	W7062622166	1998		Unifying theories of programming	Oxford University Research Archive (ORA) (University of Oxford)	other

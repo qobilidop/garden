@@ -1,6 +1,6 @@
 citekey	year	cluster	status	priority	venue	primary_url	relevance	exclusion_reason
 king1976symbolic	1976	symbolic-execution	candidate	high	CACM	https://doi.org/10.1145/360248.360252	Foundational symbolic execution and path-condition semantics	-
-voogd2023denotational	2023	semantics	deep-read	critical	ICTAC	https://doi.org/10.1007/978-3-031-47963-2_22	Piecewise denotational semantics over input partitions	-
+voogd2023denotational	2023	semantics	excluded	medium	ICTAC	https://doi.org/10.1007/978-3-031-47963-2_22	Conference precursor retained for lineage; current claims use the expanded 2025 journal treatment	E7-duplicate-version
 mauborgne2005trace	2005	abstract-interpretation	deep-read	high	ESOP	https://doi.org/10.1007/978-3-540-31987-0_2	Established trace-partitioning terminology and semantics	-
 avgerinos2014veritesting	2014	multipath	candidate	high	ICSE	https://doi.org/10.1145/2568225.2568293	Static symbolic execution and path merging	-
 sen2015multise	2015	multipath	deep-read	critical	ESEC/FSE	https://doi.org/10.1145/2786805.2786830	Guarded value summaries and exact multipath states	-
@@ -12,7 +12,7 @@ ryan2023sylvia	2023	hardware	deep-read	critical	FMCAD	https://doi.org/10.34727/2
 lucanu2017generic	2017	semantics	deep-read	high	JSC	https://doi.org/10.1016/j.jsc.2016.07.012	Language-independent coinductive symbolic-execution framework	-
 kuznetsov2012merging	2012	multipath	candidate	high	PLDI	https://doi.org/10.1145/2254064.2254088	State-merging tradeoffs and query-cost estimation	-
 austin2013faceted	2013	conditional-values	candidate	high	PLAS	https://doi.org/10.1145/2465106.2465121	Guarded faceted values and projection theorem	-
-wong2018variational	2018	conditional-values	candidate	high	OOPSLA	https://doi.org/10.1145/3276487	Conditional values and disjoint configuration contexts	-
+wong2018variational	2018	conditional-values	deep-read	high	OOPSLA	https://doi.org/10.1145/3276487	Conditional values and disjoint configuration contexts	-
 meinicke2018traces	2018	conditional-values	candidate	high	arXiv technical report	https://arxiv.org/abs/1807.03837	Variational traces concisely represent control-flow and data-flow differences across configurations	-
 phan2015allsmtr	2015	model-enumeration	deep-read	critical	ARES	https://doi.org/10.1109/ARES.2015.14	AllSMT over important Boolean and theory variables with witnesses	-
 spallitta2025projected	2025	model-enumeration	deep-read	critical	Artificial Intelligence	https://doi.org/10.1016/j.artint.2025.104346	Disjoint projected SAT and SMT enumeration	-
@@ -24,24 +24,25 @@ bryant1990simulation	1990	hardware	candidate	high	DAC	https://doi.org/10.1145/12
 kolbl2001rtl	2001	hardware	deep-read	critical	DAC	https://doi.org/10.1145/378239.378278	Symbolic RTL controls, event accumulation, and contextual error replay	-
 kanade2009simulink	2009	model-based	deep-read	critical	CAV	https://doi.org/10.1007/978-3-642-02658-4_33	Discrete-trace equivalence for conditional dataflow models	-
 feng2004dynamic	2004	hardware	deep-read	critical	DATE	https://doi.org/10.1109/DATE.2004.1268825	Mux-guided functional-space partitioning in symbolic simulation	-
+feng2005twodomain	2005	hardware	screened	high	TODAES	https://doi.org/10.1145/1109118.1109122	Journal extension of two-domain partitioned OBDD symbolic simulation	-
 narayan1996partitioned	1996	decision-diagrams	deep-read	critical	ICCAD	https://doi.org/10.1109/ICCAD.1996.569909	Canonical partitioned ROBDDs and exponential compactness	-
 antoy2011pull	2011	term-graphs	deep-read	critical	TPLP	https://doi.org/10.1017/S1471068411000263	Shared choice identifiers and strategy-independent exhaustive term-graph evaluation	-
 michelutti2024canonical	2024	decision-diagrams	deep-read	critical	ECAI	https://doi.org/10.3233/FAIA241007	Canonical theory decision diagrams built from AllSMT and Boolean DDs	-
 palmer2020demand	2020	demand-driven	deep-read	high	ICFP	https://doi.org/10.1145/3408984	Context-sensitive reverse symbolic evaluation for higher-order programs	-
 godefroid2007compositional	2007	compositional-symbolic-execution	deep-read	critical	POPL	https://doi.org/10.1145/1190215.1190226	Reusable precondition and postcondition summaries from separate component analyses	-
 anand2008demand	2008	compositional-symbolic-execution	candidate	critical	TACAS	https://doi.org/10.1007/978-3-540-78800-3_28	Demand-driven compositional symbolic execution with summaries generated for caller contexts	-
-braione2011theoretical	2011	compositional-symbolic-execution	candidate	high	TAP	https://doi.org/10.1007/978-3-642-19811-3_18	Formal treatment of compositional symbolic execution precision and progress	-
-qi2015memoized	2015	compositional-symbolic-execution	candidate	high	ICSE	https://doi.org/10.1109/ICSE.2015.79	Memoized replay as a reusable compositional symbolic-execution technique	-
+vanoverberghe2011theoretical	2011	compositional-symbolic-execution	candidate	high	FASE	https://doi.org/10.1007/978-3-642-19811-3_18	Formal treatment of compositional symbolic execution precision and progress	-
+qiu2015memoized	2015	compositional-symbolic-execution	candidate	high	ICSE	https://doi.org/10.1109/ICSE.2015.79	Memoized replay as a reusable compositional symbolic-execution technique	-
 porncharoenwase2022merging	2022	semantics	deep-read	critical	POPL	https://doi.org/10.1145/3498709	Mechanized reusable semantics for symbolic evaluation with merging	-
 voogd2025compositional	2025	semantics	deep-read	critical	Theoretical Computer Science	https://doi.org/10.1016/j.tcs.2025.115263	Compositional denotational traces substitutions and path conditions with concrete correspondence	-
 loow2024compositional	2024	compositional-symbolic-execution	deep-read	critical	ECOOP	https://doi.org/10.4230/LIPIcs.ECOOP.2024.25	Compositional engine for creating and consuming correctness and incorrectness specifications	-
 lu2023grisette	2023	merged-evaluation	candidate	critical	POPL	https://doi.org/10.1145/3571209	Symbolic compilation library centered on merged symbolic values and reusable solver-aided abstractions	-
-bahar1997add	1997	decision-diagrams	candidate	high	FMSD	https://doi.org/10.1023/A:1008699807402	Multi-terminal algebraic decision diagrams for compact finite-valued functions	-
-lagniez2024ddnnf	2024	model-enumeration	candidate	critical	KR	https://doi.org/10.24963/kr.2024/48	Decision-DNNF compilation for enumerating disjoint partial models	-
-antoy2000needed	2000	term-graphs	candidate	critical	JACM	https://doi.org/10.1145/347476.347484	Optimal needed narrowing with soundness completeness and demand-guided evaluation	-
+bahar1997add	1997	decision-diagrams	deep-read	high	FMSD	https://doi.org/10.1023/A:1008699807402	Multi-terminal algebraic decision diagrams for compact finite-valued functions	-
+lagniez2024decisiondnnf	2024	model-enumeration	deep-read	critical	KR	https://doi.org/10.24963/kr.2024/48	Decision-DNNF compilation for enumerating disjoint partial models	-
+antoy2000needed	2000	term-graphs	deep-read	critical	JACM	https://doi.org/10.1145/347476.347484	Optimal needed narrowing with soundness completeness and demand-guided evaluation	-
 boyer1975select	1975	symbolic-execution	screened	medium	Reliable Software	https://doi.org/10.1145/800027.808445	Early symbolic execution system and terminology	-
 darwiche2002knowledge	2002	knowledge-compilation	screened	high	JAIR	https://doi.org/10.1613/jair.989	Knowledge-compilation map and query-transformation tradeoffs	-
-mohle2025short	2025	model-enumeration	candidate	high	Discrete Applied Mathematics	https://doi.org/10.1016/j.dam.2024.10.021	Complexity and algorithms for short projected models	-
+moehle2025short	2025	model-enumeration	candidate	critical	Discrete Applied Mathematics	https://doi.org/10.1016/j.dam.2024.10.021	Complexity and algorithms for short projected models	-
 creignou2019enumeration	2019	enumeration-complexity	screened	high	Discrete Applied Mathematics	https://doi.org/10.1016/j.dam.2019.02.025	Output-sensitive complexity classes for hard enumeration problems	-
 vanglabbeek2009configuration	2009	event-structures	screened	medium	Theoretical Computer Science	https://doi.org/10.1016/j.tcs.2009.06.014	Formal comparison of configuration structures event structures and Petri nets	-
 raymond1998lurette	1998	dataflow-testing	candidate	high	RTSS	https://doi.org/10.1109/REAL.1998.739746	Automatic testing of reactive synchronous systems with Lustre-based observers	-
@@ -54,3 +55,21 @@ lahiri2007predicate	2007	model-enumeration	candidate	high	LMCS	https://doi.org/1
 salloum2023hardware	2023	hardware	excluded	medium	ACM Computing Surveys	https://doi.org/10.1145/3638046	Secondary discovery source for hardware directed test generation	E3-secondary
 lenet1998gradient	1998	machine-learning-graph	excluded	low	Proceedings of the IEEE	https://doi.org/10.1109/5.726791	False positive for symbolic evaluation of term graphs	E2-ml-graph-runtime
 ferrante1987pdg	1987	dataflow-analysis	excluded	low	TOPLAS	https://doi.org/10.1145/24039.24041	Program-dependence graph construction without the survey's symbolic observation object	E6-out-of-scope-model
+decolnet2022prime	2022	enumeration-complexity	candidate	critical	IJCAI	https://doi.org/10.24963/ijcai.2022/358	Complexity of enumerating prime implicants from decision-DNNF circuits	-
+toda2016allsat	2016	model-enumeration	candidate	high	ACM JEA	https://doi.org/10.1145/2975585	Practical algorithms and data structures for all-solutions SAT	-
+torlak2014rosette	2014	merged-evaluation	candidate	high	PLDI	https://doi.org/10.1145/2666356.2594340	Reusable symbolic virtual machine underlying solver-aided host-language evaluation	-
+santos2020gillian	2020	compositional-symbolic-execution	candidate	high	PLDI	https://doi.org/10.1145/3385412.3386014	Parametric multi-language platform for compositional symbolic execution	-
+reisner2010configurable	2010	conditional-values	candidate	high	ICSE	https://doi.org/10.1145/1806799.1806864	Behavioral equivalence across configurations derived by symbolic evaluation	-
+shi2012integration	2012	compositional-symbolic-execution	candidate	medium	FASE	https://doi.org/10.1007/978-3-642-28872-2_19	Compositional symbolic execution applied to software-product-line integration testing	-
+smith2024puredemand	2024	demand-semantics	candidate	medium	OOPSLA	https://doi.org/10.1145/3649852	Pure demand operational semantics and its distinct use of demand terminology	-
+bouissou2012simulink	2012	model-based	candidate	medium	LCTES	https://doi.org/10.1145/2248418.2248437	Operational semantics boundary for cyclic timed Simulink simulation	-
+majumdar2012clse	2012	model-based	candidate	medium	NFM	https://doi.org/10.1007/978-3-642-28891-3_33	Closed-loop symbolic execution outside the pure finite-graph scope	-
+abadal2021computinggnn	2021	machine-learning-graph	excluded	low	ACM Computing Surveys	https://doi.org/10.1145/3477141	Machine-learning computation-graph acceleration rather than symbolic program semantics	E2-ml-graph-runtime
+vatter2023distributedgnn	2023	machine-learning-graph	excluded	low	ACM Computing Surveys	https://doi.org/10.1145/3597428	Distributed graph-neural-network execution rather than symbolic program semantics	E2-ml-graph-runtime
+steenhoek2024dataflowdeep	2024	machine-learning-graph	excluded	low	ICSE	https://doi.org/10.1145/3597503.3623345	Neural architecture inspired by dataflow analysis without a symbolic evaluator	E2-ml-graph-runtime
+wilschut1993query	1993	dataflow-runtime	excluded	low	Distributed and Parallel Databases	https://doi.org/10.1007/BF01277522	Database query scheduling rather than symbolic observation enumeration	E6-out-of-scope-model
+geilen2010scenarios	2010	dataflow-runtime	excluded	low	TECS	https://doi.org/10.1145/1880050.1880052	Synchronous-dataflow throughput and scenario scheduling rather than symbolic observation enumeration	E6-out-of-scope-model
+degroote2012throughput	2012	dataflow-runtime	excluded	low	SEAA	https://doi.org/10.1109/SEAA.2012.20	Max-plus timing and throughput analysis only	E6-out-of-scope-model
+reps2005weighted	2005	dataflow-analysis	excluded	low	Science of Computer Programming	https://doi.org/10.1016/j.scico.2005.02.009	Interprocedural dataflow facts rather than input-observation enumeration	E6-out-of-scope-model
+strozecki2023enumeration	2023	enumeration-complexity	excluded	medium	arXiv	https://doi.org/10.48550/arXiv.2309.17042	Secondary discovery survey; manuscript claims use primary complexity results	E3-secondary
+feng2006characteristic	2006	hardware	excluded	low	ITC	https://doi.org/10.1109/TEST.2006.297666	Hardware ATPG application without a closer semantic object	E4-application-only

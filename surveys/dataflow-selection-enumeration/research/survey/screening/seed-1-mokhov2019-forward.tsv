@@ -1,0 +1,15 @@
+rank	openalex_id	year	doi	title	venue	type
+1	W3046990711	2020	https://doi.org/10.1145/3409002	Staged selective parser combinators	Proceedings of the ACM on Programming Languages	article
+2	W2958869096	2019	https://doi.org/10.1145/3341694	Selective applicative functors	Proceedings of the ACM on Programming Languages	article
+3	W3011565934	2020	https://doi.org/10.1017/s0956796820000088	Build systems à la carte: Theory and practice	Journal of Functional Programming	article
+4	W4285429132	2022	https://doi.org/10.1145/3547632	Program adverbs and Tlön embeddings	Proceedings of the ACM on Programming Languages	article
+5	W3046362536	2020	https://doi.org/10.1145/3406088.3409019	Type your matrices for great good: a Haskell library of typed matrices and applications (functional pearl)		conference-paper
+6	W4294840741	2022	https://doi.org/10.1145/3546189.3549916	Oregano: staging regular expressions with Moore Cayley fusion		conference-paper
+7	W4315630683	2023	https://doi.org/10.1145/3571262	Higher-Order MSL Horn Constraints	Proceedings of the ACM on Programming Languages	article
+8	W3045524630	2020	https://doi.org/10.1017/s0956796820000106	Generalized monoidal effects and handlers	Journal of Functional Programming	article
+9	W3046637612	2020	https://doi.org/10.1145/3406088.3409023	Composing effects into tasks and workflows		conference-paper
+10	W3016421997	2020	https://doi.org/10.1007/978-3-030-45237-7_9	Practical Machine-Checked Formalization of Change Impact Analysis	Lecture notes in computer science	conference-paper
+11	W3004716212	2020	https://doi.org/10.1007/978-3-030-57761-2_1	PaSe: An Extensible and Inspectable DSL for Micro-Animations	Lecture notes in computer science	conference-paper
+12	W4386316089	2023	https://doi.org/10.1145/3609026	Proceedings of the 16th ACM SIGPLAN International Haskell Symposium		paratext
+13	W4386316143	2023	https://doi.org/10.1145/3609026.3609733	falsify: Internal Shrinking Reimagined for Haskell		conference-paper
+14	W4414990065	2025	https://doi.org/10.1145/3759164.3759352	Freer Arrows and Why You Need Them in Haskell		conference-paper

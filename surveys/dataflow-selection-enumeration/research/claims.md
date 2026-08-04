@@ -94,11 +94,12 @@ proof obligations, and evidence.
   `Gamma_tau`, and block that formula. For `K` feasible observations, the
   procedure makes `K` satisfiable solver queries and one final unsatisfiable
   query.
-- **Assessment:** Exact fibers imply no duplicates and coverage. The query
-  count is output-sensitive, but the construction is extensionally equivalent
-  to projected AllSMT over explicit activation/outcome variables. Formula size,
-  incremental solving cost, and comparison to compiled enumeration remain to
-  be analyzed.
+- **Assessment:** Exact fibers imply no duplicates and coverage. Under a
+  unit-cost model-producing oracle, the invocation count is linear in `K`; this
+  is not an OutputP, IncP, polynomial-delay, or wall-clock bound. The
+  construction is extensionally equivalent to naive projected AllSMT over
+  complete activation/outcome tuples. Formula size, serialized output,
+  incremental solving cost, and compiled enumeration remain separate.
 
 ## S01 — Taxonomy of omission mechanisms
 

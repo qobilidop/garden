@@ -99,10 +99,11 @@ be folded into the emitted guard.
 
 ## Enumeration theorem
 
-If there are \(K\) feasible observations and the oracle eventually decides
-every query, full-fiber blocking performs exactly \(K\) satisfiable queries and
-one final unsatisfiable query. It emits every feasible observation once, with
-its exact guard, a correct residual, and a witness.
+If there are \(K\) feasible observations and the model-producing solver
+eventually decides every query, full-fiber blocking performs exactly \(K\)
+successful invocations and one final unsatisfiable invocation. It emits every
+feasible observation once, with its exact guard, a correct residual, and a
+witness.
 
 *Proof.* Each satisfiable model lies in one nonempty exact fiber. Blocking that
 fiber prevents its repetition and cannot remove another fiber. Before all
@@ -110,8 +111,10 @@ fibers have been blocked, an input in an unblocked fiber satisfies \(U_j\);
 after all \(K\) have been blocked, the fiber-partition theorem makes \(U_K\)
 unsatisfiable.
 
-This is an output-sensitive oracle-call theorem, not a polynomial-delay or
-wall-clock theorem.
+This is a \(K\)-linear model-producing-invocation theorem under a unit-cost
+oracle abstraction. It is not an OutputP, IncP, polynomial-delay, ordinary
+decision-oracle, or wall-clock theorem. A decision oracle returns only a bit;
+obtaining a witness requires self-reduction or a function/model oracle.
 
 ## Activation-variable projected-AllSMT baseline
 
@@ -154,10 +157,12 @@ Z=\overline\tau
 g_\tau(x).
 \]
 
-Consequently full-fiber blocking and projected AllSMT enumerate the same
-partition. Full-fiber blocking lazily constructs an input-only substitution of
-the projected-assignment blocker; it does not improve the general \(K+1\)
-model-query bound.
+Consequently full-fiber blocking and naive projected AllSMT over complete
+totalized observation tuples enumerate the same partition and share the same
+\(K+1\) model-producing-invocation count. Full-fiber blocking lazily constructs
+an input-only substitution of the projected-assignment blocker. An algorithm
+that emits short partial cubes has a different output object: one cube can
+represent several complete observations.
 
 ## Representation tradeoff
 

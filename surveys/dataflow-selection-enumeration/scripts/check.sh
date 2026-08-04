@@ -53,6 +53,7 @@ if [[ "${actual_exploratory_header}" != "${expected_exploratory_header}" ]]; the
 fi
 
 python3 -m py_compile scripts/*.py
+python3 scripts/check-survey.py
 
 if command -v shellcheck >/dev/null; then
   shellcheck dev.sh scripts/*.sh

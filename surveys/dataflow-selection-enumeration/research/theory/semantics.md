@@ -36,9 +36,10 @@ be the least node set containing \(R\) and closed under enabled operand edges.
 Equivalently, it is graph reachability from \(R\) in the input-indexed enabled
 edge relation.
 
-This is the **active-selection closure**. Related literature may call the same
-backward relevance idea a demand judgment, but here “active” avoids implying
-that the source language is operationally lazy.
+This is the **enabled closure**. A selection in this closure is called *active
+in the observation*. Related literature may call the same backward relevance
+idea a demand judgment, but this definition does not imply that the source
+language is operationally lazy.
 
 ## Selection observation
 

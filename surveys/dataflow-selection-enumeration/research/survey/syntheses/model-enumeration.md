@@ -34,12 +34,16 @@ encoded as a sentinel. It therefore does not establish algorithmic novelty.
 
 ## Complexity baseline
 
-If there are `K` feasible observations, model-and-block enumeration can make
-one satisfiable query per observation plus a final unsatisfiable query, provided
-each emitted fiber formula is exact. This `K+1` oracle-call count is
-output-sensitive but extensionally matches projected AllSMT. Total solver work,
-formula construction, residual generation, and summary reuse—not merely query
-count—must distinguish a new algorithm.
+If there are `K` feasible observations, model-and-full-fiber-block enumeration
+makes one successful model-producing solver invocation per observation plus a
+final unsatisfiable invocation, provided each emitted fiber formula is exact.
+This exact `K+1` count is linear in the number of records under a unit-cost
+model-producing-oracle abstraction. It is not an OutputP, IncP,
+polynomial-delay, or wall-clock result. It extensionally matches naive
+projected AllSMT that emits every complete totalized observation tuple; short
+partial cubes change the output object. Total solver work, serialized guards
+and residuals, compilation, and summary reuse—not merely invocation count—must
+distinguish an algorithm.
 
 ## Claims ruled out
 
