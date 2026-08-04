@@ -262,6 +262,40 @@ and generic decision structures, projected AllSMT, and finite observer
 partitions already represent the object. Two newly predeclared no-add rounds
 are still required after every source and snapshot above is reconciled.
 
+## Reopening after the hyperplane and PWA forward snowballs
+
+The map is open again. Forward citation chasing from Avis--Fukuda and Sleumer,
+followed by exact primary reading, exposed several predecessors that materially
+change the geometric and compositional frontier:
+
+- Dussault, Gilbert, and Plaquevent-Jourdain give the current circuit-guided
+  central-arrangement baseline and make the incremental zero-witness case
+  explicit.
+- Geyer, Torrisi, and Morari's 2003/2010 mode-enumeration lineage already
+  composes affine components by substituting residual maps into downstream
+  guards, pruning infeasible intersections, and emitting exact PWA records.
+- Their 2008 reduction work computes behavior-minimal polyhedral
+  representations under explicit representation and logic-minimizer
+  qualifications.
+- Jones and Maciejowski give duplicate-free output-sensitive enumeration of
+  full-dimensional parametric-LP critical regions with reconstructible affine
+  optimizers.
+- Ferrez, Fukuda, and Liebling strengthen the arrangement reverse-search
+  implementation and complexity lineage used by later work.
+
+These sources defeat novelty for guarded affine component composition,
+behavior-preserving polyhedral minimization, and output-sensitive
+guard-plus-affine region enumeration. They do not define the
+requested-root-relative sparse graph observer, but they are plausible closest
+competitors under the frozen trigger and therefore invalidate any previous
+no-add sequence.
+
+The reconciliation is not complete until each critical source has an exact
+primary-bibliography screen, an auditable forward screen, a deep source note,
+and catalog/claim integration. Any new candidate exposed by those screens must
+also be adjudicated. Only then may two replacement no-add rounds be frozen;
+neither round has yet been selected or executed.
+
 ## Independent audit
 
 After both replacement rounds qualify, a reviewer who did not choose the

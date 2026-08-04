@@ -668,6 +668,8 @@ its own proof.
 | Full abstraction for a context that can read ghost events | elementary / by construction | The observer primitive makes the result tautological. |
 | Exponential saving over total syntactic assignments | inherited phenomenon | Partial models, output-directed execution, and decision diagrams already exhibit it. |
 | Exact all-sites-observed strict affine open-cell enumeration | inherited | On the full real domain with boundary points excluded, hyperplane-cell enumeration already proves complete duplicate-free OutputP streaming; neural work enumerates feasible full-dimensional activation guards and affine residuals. Non-strict or boundary-inclusive fibers need separate treatment. |
+| Output-sensitive full-dimensional parametric guard/residual enumeration | inherited | Jones and Maciejowski 2006 enumerate each pLP critical-region basis once in output-linear LP-relative time; its basis reconstructs the exact guard and affine optimizer. |
+| Minimum-cardinality equal-residual polyhedral quotient | inherited with qualifications | Geyer et al. 2008 prove restricted minimum disjoint reduction and conditionally minimum-product overlapping covers. Their quotient merges equal behavior and is therefore intentionally coarser than selection observation. |
 | (O(\sum_\tau S_\tau)) construction under DAG sharing | elementary bookkeeping | It excludes solver time and serialized expansion. |
 | NP/#P/coNP hardness statements | inherited reductions | Standard circuit/SAT encodings; useful boundaries, not a distinctive algorithmic result. |
 

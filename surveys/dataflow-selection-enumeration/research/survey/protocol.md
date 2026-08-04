@@ -55,11 +55,25 @@ count toward closure.
    program slicing, and demand or cone-of-influence analysis.
 9. Functional-logic demand-driven search, set functions, pull-tabbing, stable
    choice identifiers, branching information, and fingerprints.
+10. Demand-driven bounded testing, property-directed input refinement, Korat,
+    Lazy SmallCheck, and lazy heap initialization.
+11. Pseudo-exhaustive circuit testing and support-relative local coverage.
+12. Finite-observer input partitions, symbolic finite-state testing, and
+    input-equivalence-class minimization.
+13. Decision trees, BDDs, ADDs, and compiled finite-range observer functions.
+14. Hyperplane-cell, neural activation-region, CPWL-complex, and exact
+    guard-plus-affine residual enumeration.
+15. Classical demand-driven stream dataflow, reverse demand propagation, and
+    least output-complete computation.
+16. Compositional hybrid-mode enumeration, PWA region minimization, and
+    parametric-program critical-region enumeration.
 
 Cluster 9 was added when forward snowballing from needed narrowing exposed a
-previously missing closest lineage. This reopened the map before either final
-no-add round was run; `closure-audit.md` records the corresponding prospective
-query expansion.
+previously missing closest lineage. Later audited replacement rounds and their
+snowballs added clusters 10--16. Each addition reopened the map before closure;
+`closure-audit.md` records the chronological query expansions and retirement
+of superseded no-add rounds. These additions are disclosed post hoc as survey
+outcomes, not misrepresented as part of the initial protocol.
 
 ## Discovery sources
 

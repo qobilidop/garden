@@ -164,6 +164,10 @@ proof obligations, and evidence.
   arithmetic bound, and Rada and Černý give a later complete duplicate-free
   incremental formulation; Serra et al. enumerate feasible ReLU patterns;
   Geyer et al. compose affine event cells into exact PWA guard/residual pairs;
+  Jones and Maciejowski give duplicate-free output-sensitive pLP critical-region
+  enumeration with a reconstructible affine optimizer; Geyer et al. 2008
+  minimize behavior-equivalent PWA guards under explicit representation and
+  solver qualifications;
   Tran's stars and Robinson's explicit PWA conversion emit exact guards with
   affine images before RPM's adjacency walk; Masden and Berzins recover richer
   cell complexes; Wang merges activation cells into maximal equal-affine

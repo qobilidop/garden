@@ -142,6 +142,23 @@ zero-witness perturbation explicit, and introduce circuit-guided variants with
 large empirical speedups. They do not state a new end-to-end OutputP, IncP, or
 DelayP bound for those variants; circuit enumeration itself can be exponential.
 
+A different geometric specialization arises from multi-parametric linear
+programming. Jones and Maciejowski reduce every full-dimensional critical
+region to one vertex of a projected polytope and enumerate those vertices by
+reverse search. With \(e=n-m\) and \(N_r\) critical regions, their bound is
+
+\[
+  O\!\left(
+    N_r\left(e^2 LP(d,e)+e\,LP(m,n)\right)
+  \right)
+\]
+
+time and output-relative \(O(1)\) auxiliary space. Each reported basis
+reconstructs an exact polyhedral guard and affine optimizer. The result is
+linear in \(N_r\) only after retaining the LP/dimension coefficient, and it
+does not cover lower-dimensional-only regions, coefficient-bit complexity, or
+our variable-domain graph observer.
+
 Dense ReLU networks refine the arrangement layerwise. Existing algorithms
 enumerate feasible activation patterns by MILP, propagate exact stars that
 retain input predicates and affine images, emit explicit region/map pairs,
@@ -156,9 +173,12 @@ standard exact baseline for real all-sites-observed instances.
 
 The output count also depends on the chosen quotient. Dense activation
 patterns can split two adjacent cells that realize the same affine function.
-Wang's maximal-region construction merges connected equal-map cells; our
-selection observer instead preserves observed equal-valued outcomes. Thus an
-activation-cell count, a maximal-affine-region count, and \(K\) are not
+Wang's maximal-region construction merges connected equal-map cells. Earlier,
+Geyer et al. compute minimum-cardinality equal-behavior PWA representations
+within a fixed arrangement, or minimum-product overlapping covers conditional
+on an exact Boolean minimizer. Our selection observer instead preserves
+observed equal-valued outcomes. Thus an activation-cell count, a
+behavior-minimal PWA count, a maximal-affine-region count, and \(K\) are not
 interchangeable without a nondegeneracy or observer-equivalence assumption.
 
 The graph problem's additional parameter is not merely \(Q\): each record has

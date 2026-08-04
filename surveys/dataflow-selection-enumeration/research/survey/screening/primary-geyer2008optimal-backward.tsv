@@ -1,0 +1,23 @@
+rank	source_id	year	doi	title	venue	type
+1	citation-1	1996	10.1016/0166-218X(95)00026-N	Reverse Search for Enumeration	Discrete Applied Mathematics	journal-article
+2	citation-2	2003	-	Infinite Time Optimal Control of Hybrid Systems with a Linear Performance Index	IEEE Conference on Decision and Control	proceedings-article
+3	citation-3	2001	-	Convexity Recognition of the Union of Polyhedra	Computational Geometry: Theory and Applications	journal-article
+4	citation-4	2003	-	Constrained Optimal Control of Linear and Hybrid Systems	Lecture Notes in Control and Information Sciences	book
+5	citation-5	2005	-	Dynamic Programming for Constrained Optimal Control of Discrete-Time Linear Hybrid Systems	Automatica	journal-article
+6	citation-6	1984	-	Logic Minimization Algorithms for VLSI Synthesis	Kluwer Academic Publishers	book
+7	citation-7	1999	-	The Parallel Search Bench ZRAM and Its Applications	Annals of Operations Research	journal-article
+8	citation-8	1943	-	Partition of Space	American Mathematical Monthly	journal-article
+9	citation-9	1984	-	Convex Partitions of Polyhedra: A Lower Bound and Worst-Case Optimal Algorithm	SIAM Journal on Computing	journal-article
+10	citation-10	1982	-	ESPRESSO-II	University of California, Berkeley	software-webpage
+11	citation-11	1987	-	Algorithms in Combinatorial Geometry	Springer	book
+12	citation-12	2002	-	Implementations of LP-Based Reverse Search Algorithms for the Zonotope Construction and the Fixed-Rank Convex Quadratic Maximization in Binary Variables Using the ZRAM and the cddlib Libraries	McGill University	technical-report
+13	citation-13	2001	-	Cuts, Zonotopes and Arrangements	EPF Lausanne	technical-report
+14	citation-14	2005	-	Low Complexity Model Predictive Control in Power Electronics and Power Systems	ETH Zurich	dissertation
+15	citation-15	2003	10.1007/3-540-36580-X_18	Efficient Mode Enumeration of Compositional Hybrid Systems	Hybrid Systems: Computation and Control	book-chapter
+16	citation-16	2001	-	Equivalence of Hybrid Dynamical Models	Automatica	journal-article
+17	citation-17	1953	-	A Map Method for Synthesis of Combinational Logic Circuits	AIEE Transactions on Communications and Electronics	journal-article
+18	citation-18	2004	-	Multi-Parametric Toolbox (MPT)	Hybrid Systems: Computation and Control	book-chapter
+19	citation-19	1981	-	Nonlinear Regulation: The Piecewise Linear Approach	IEEE Transactions on Automatic Control	journal-article
+20	citation-20	2003	-	Evaluation of Piecewise Affine Control via Binary Search Tree	Automatica	journal-article
+21	citation-21	2004	-	HYSDEL — A Tool for Generating Computational Hybrid Models for Analysis and Synthesis Problems	IEEE Transactions on Control Systems Technology	journal-article
+22	citation-22	1952	-	A Chart Method for Simplifying Boolean Functions	Proceedings of the Association for Computing Machinery	proceedings-article

@@ -31,6 +31,9 @@ already supplies:
 - exact topological mode enumeration for composed affine hybrid components,
   including residual substitution into downstream guards, infeasibility
   pruning, and equivalent PWA guard-plus-map output; and
+- exact behavior-preserving minimum-cardinality reduction of polyhedral
+  piecewise systems, plus duplicate-free output-sensitive pLP critical-region
+  enumeration with reconstructible affine optimizers; and
 - exact dense ReLU activation-pattern enumeration, including methods that emit
   an exact polyhedral guard and affine residual, reconstruct the full cell
   complex, or parallelize layerwise enumeration;
@@ -176,6 +179,20 @@ requested-root-relative sparse observer over arbitrary typed shared DAGs,
 including contextual static site identity and explicit preservation of
 observed equal-valued outcomes.
 
+Behavior-minimal PWA reduction and parametric-LP reverse search add a tenth
+boundary. Geyer, Torrisi, and Morari compute exact minimum-cardinality
+disjoint partitions within a supplied arrangement and minimum-product
+overlapping covers when the Boolean minimizer is exact. This predates neural
+maximal-affine-region merging and shows that equal-residual geometric cells can
+already be globally coalesced. Jones and Maciejowski independently enumerate
+every full-dimensional parametric-LP critical region once, in time linear in
+the output count times explicit LP/dimension factors, with an affine optimizer
+recoverable from each emitted basis. Therefore neither behavior-preserving
+polyhedral minimization nor duplicate-free output-sensitive guard-plus-affine
+enumeration is available as novelty. Our observer uses the opposite quotient
+from behavior minimization: it retains two observed selection outcomes even
+when their residual maps are extensionally equal.
+
 ## Route decision
 
 - The manuscript is a survey with a unifying formal synthesis.
@@ -187,6 +204,7 @@ observed equal-valued outcomes.
   equivalence classes—plus ordinary decision-tree/ADD compilation and direct
   demand predecessors in stream dataflow, Korat, Lindblad's generator, and
   Lazy SmallCheck. Exact affine guarded composition is independently inherited
-  from compositional hybrid mode enumeration.
+  from compositional hybrid mode enumeration; behavior-minimal guard reduction
+  and output-sensitive pLP region/residual enumeration are likewise prior.
 - A future CAV tool paper remains possible only after direct baseline
   experiments show a validation or scalability frontier.
