@@ -1,0 +1,101 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1145/2813885.2737975	2015	10.1145/2813885.2737975	Stateless model checking concurrent programs with maximal causality reduction	ACM SIGPLAN Notices	journal-article
+2	10.1145/2737924.2737975	2015	10.1145/2737924.2737975	Stateless model checking concurrent programs with maximal causality reduction	Proceedings of the 36th ACM SIGPLAN Conference on Programming Language Design and Implementation	proceedings-article
+3	10.1145/3092282.3092287	2017	10.1145/3092282.3092287	Stateless model checking of the Linux kernel's hierarchical read-copy-update (tree RCU)	Proceedings of the 24th ACM SIGSOFT International SPIN Symposium on Model Checking of Software	proceedings-article
+4	10.1007/978-3-642-39176-7_16	2013	10.1007/978-3-642-39176-7_16	On the Synergy of Probabilistic Causality Computation and Causality Checking	Lecture Notes in Computer Science	book-chapter
+5	10.1145/1379022.1375625	2008	10.1145/1379022.1375625	Fair stateless model checking	ACM SIGPLAN Notices	journal-article
+6	10.1145/1375581.1375625	2008	10.1145/1375581.1375625	Fair stateless model checking	Proceedings of the 29th ACM SIGPLAN Conference on Programming Language Design and Implementation	proceedings-article
+7	10.1145/2632362.2632371	2014	10.1145/2632362.2632371	SpinCause: a tool for causality checking	Proceedings of the 2014 International SPIN Symposium on Model Checking of Software	proceedings-article
+8	10.1145/2889160.2891042	2016	10.1145/2889160.2891042	Maximally stateless model checking for concurrent bugs under relaxed memory models	Proceedings of the 38th International Conference on Software Engineering Companion	proceedings-article
+9	10.1109/edaps.2010.5683023	2010	10.1109/edaps.2010.5683023	Bandwidth and density reduction of tabulated data using causality checking	2010 IEEE Electrical Design of Advanced Package &amp; Systems Symposium	proceedings-article
+10	10.1145/3022671.2984036	2016	10.1145/3022671.2984036	Stateless model checking with data-race preemption points	ACM SIGPLAN Notices	journal-article
+11	10.5353/th_b4129069	None	10.5353/th_b4129069	Passivity checking and enforcement in VLSI model reduction exercise		dissertation
+12	10.1145/2858965.2814297	2015	10.1145/2858965.2814297	SATCheck: SAT-directed stateless model checking for SC and TSO	ACM SIGPLAN Notices	journal-article
+13	10.1007/978-3-642-35873-9_16	2013	10.1007/978-3-642-35873-9_16	Causality Checking for Complex System Models	Lecture Notes in Computer Science	book-chapter
+14	10.1007/3-540-46017-9_5	2002	10.1007/3-540-46017-9_5	Symmetry Reduction Criteria for Software Model Checking	Lecture Notes in Computer Science	book-chapter
+15	10.1007/978-3-319-23404-5_14	2015	10.1007/978-3-319-23404-5_14	Symbolic Causality Checking Using Bounded Model Checking	Lecture Notes in Computer Science	book-chapter
+16	10.1145/3022671.2984025	2016	10.1145/3022671.2984025	Maximal causality reduction for TSO and PSO	ACM SIGPLAN Notices	journal-article
+17	10.1145/3276928	2018	10.1145/3276928	Replication Package for the paper	Artifact Digital Object Group	dataset
+18	10.1109/iccad.2010.5653863	2010	10.1109/iccad.2010.5653863	Efficient state space exploration: Interleaving stateless and state-based model checking	2010 IEEE/ACM International Conference on Computer-Aided Design (ICCAD)	proceedings-article
+19	10.21817/ijcsenet/2020/v9i3/200903013	2020	10.21817/ijcsenet/2020/v9i3/200903013	Stateless Model Checking for the C/C++11 Memory Model	International Journal of Computer Science Engineering	journal-article
+20	10.1145/2983990.2984036	2016	10.1145/2983990.2984036	Stateless model checking with data-race preemption points	Proceedings of the 2016 ACM SIGPLAN International Conference on Object-Oriented Programming, Systems, Languages, and Applications	proceedings-article
+21	10.1145/3360599	2019	10.1145/3360599	Effective lock handling in stateless model checking	Proceedings of the ACM on Programming Languages	journal-article
+22	10.1109/lics.1995.523247	None	10.1109/lics.1995.523247	Model-checking of causality properties	Proceedings of Tenth Annual IEEE Symposium on Logic in Computer Science	proceedings-article
+23	10.21203/rs.3.rs-1789092/v1	2022	10.21203/rs.3.rs-1789092/v1	Stateless and Rule-Based Verification For Compliance Checking Applications		posted-content
+24	10.1109/acsd.2008.4574599	2008	10.1109/acsd.2008.4574599	Performing causality analysis by bounded model checking	2008 8th International Conference on Application of Concurrency to System Design	proceedings-article
+25	10.1109/apsec.2013.55	2013	10.1109/apsec.2013.55	Harnessing SMT-Based Bounded Model Checking through Stateless Explicit-State Exploration	2013 20th Asia-Pacific Software Engineering Conference (APSEC)	proceedings-article
+26	10.1145/2858965.2814282	2015	10.1145/2858965.2814282	Stateless model checking of event-driven applications	ACM SIGPLAN Notices	journal-article
+27	10.1007/3-540-46017-9_10	2002	10.1007/3-540-46017-9_10	Partial Order Reduction in Directed Model Checking	Lecture Notes in Computer Science	book-chapter
+28	10.1007/978-3-319-10575-8_6	2018	10.1007/978-3-319-10575-8_6	Partial-Order Reduction	Handbook of Model Checking	book-chapter
+29	10.4204/eptcs.259.3	2017	10.4204/eptcs.259.3	Causality-based Model Checking	Electronic Proceedings in Theoretical Computer Science	journal-article
+30	10.1145/2814270.2814297	2015	10.1145/2814270.2814297	SATCheck: SAT-directed stateless model checking for SC and TSO	Proceedings of the 2015 ACM SIGPLAN International Conference on Object-Oriented Programming, Systems, Languages, and Applications	proceedings-article
+31	10.1007/s00236-016-0275-0	2017	10.1007/s00236-016-0275-0	Stateless model checking for TSO and PSO	Acta Informatica	journal-article
+32	10.1145/3158105	2018	10.1145/3158105	Effective stateless model checking for C/C++ concurrency	Proceedings of the ACM on Programming Languages	journal-article
+33	10.1145/2983990.2984025	2016	10.1145/2983990.2984025	Maximal causality reduction for TSO and PSO	Proceedings of the 2016 ACM SIGPLAN International Conference on Object-Oriented Programming, Systems, Languages, and Applications	proceedings-article
+34	10.1007/s10703-025-00479-0	2025	10.1007/s10703-025-00479-0	Awaiting for Godot: stateless model checking that avoids executions where nothing happens	Formal Methods in System Design	journal-article
+35	10.2498/cit.1002115	2013	10.2498/cit.1002115	Generating Diagnoses for Probabilistic Model Checking Using Causality	Journal of Computing and Information Technology	journal-article
+36	10.1007/978-3-319-66845-1_15	2017	10.1007/978-3-319-66845-1_15	Testing and Verifying Chain Repair Methods for Corfu Using Stateless Model Checking	Lecture Notes in Computer Science	book-chapter
+37	10.1145/2814270.2814282	2015	10.1145/2814270.2814282	Stateless model checking of event-driven applications	Proceedings of the 2015 ACM SIGPLAN International Conference on Object-Oriented Programming, Systems, Languages, and Applications	proceedings-article
+38	10.1109/ram.2017.7889783	2017	10.1109/ram.2017.7889783	Improving accident causality analysis based on STAMP through integrating model checking	2017 Annual Reliability and Maintainability Symposium (RAMS)	proceedings-article
+39	10.1007/978-3-642-00431-5_7	2009	10.1007/978-3-642-00431-5_7	Towards Partial Order Reduction for Model Checking Temporal Epistemic Logic	Lecture Notes in Computer Science	book-chapter
+40	10.1109/fmcad.2006.31	2006	10.1109/fmcad.2006.31	Symmetry Reduction for STE Model Checking	2006 Formal Methods in Computer Aided Design	proceedings-article
+41	10.1093/comjnl/bxu127	2015	10.1093/comjnl/bxu127	Facilitating Multicore Bounded Model Checking with Stateless Explicit-State Exploration	The Computer Journal	journal-article
+42	10.2139/ssrn.4092940	2022	10.2139/ssrn.4092940	Stateless and Rule-Based Verification for Compliance Checking Applications	SSRN Electronic Journal	journal-article
+43	10.1145/3276505	2018	10.1145/3276505	Optimal stateless model checking under the release-acquire semantics	Proceedings of the ACM on Programming Languages	journal-article
+44	10.3233/fi-2018-1709	2018	10.3233/fi-2018-1709	Interleaving Based Model Checking of Concurrency and Causality	Fundamenta Informaticae	journal-article
+45	10.1007/978-3-319-57861-3_11	2017	10.1007/978-3-319-57861-3_11	Model Checking Concurrency and Causality	Lecture Notes in Computer Science	book-chapter
+46	10.1007/s10009-019-00514-6	2019	10.1007/s10009-019-00514-6	Stateless model checking of the Linux kernel’s read–copy update (RCU)	International Journal on Software Tools for Technology Transfer	journal-article
+47	10.1093/biomet/asn074	2009	10.1093/biomet/asn074	Model checking in regression via dimension reduction	Biometrika	journal-article
+48	10.1109/dessert.2018.8409176	2018	10.1109/dessert.2018.8409176	Causality-based model checking in business process management tasks	2018 IEEE 9th International Conference on Dependable Systems, Services and Technologies (DESSERT)	proceedings-article
+49	10.1007/978-3-030-59152-6_21	2020	10.1007/978-3-030-59152-6_21	Parallel Graph-Based Stateless Model Checking	Lecture Notes in Computer Science	book-chapter
+50	10.1007/978-3-658-12680-3_4	2016	10.1007/978-3-658-12680-3_4	Dynamic Partial Order Reduction in Stateful Model Checking	Complete Symbolic Simulation of SystemC Models	book-chapter
+51	10.1007/978-3-658-12680-3_3	2016	10.1007/978-3-658-12680-3_3	Static Partial Order Reduction in Stateful Model Checking	Complete Symbolic Simulation of SystemC Models	book-chapter
+52	10.1007/3-540-44829-2_6	2003	10.1007/3-540-44829-2_6	A Light-Weight Algorithm for Model Checking with Symmetry Reduction and Weak Fairness	Lecture Notes in Computer Science	book-chapter
+53	10.1145/3360576	2019	10.1145/3360576	Optimal stateless model checking for reads-from equivalence under sequential consistency	Proceedings of the ACM on Programming Languages	journal-article
+54	10.1007/978-3-540-73370-6_8	None	10.1007/978-3-540-73370-6_8	Cartesian Partial-Order Reduction	Lecture Notes in Computer Science	book-chapter
+55	10.1109/aiccsa.2006.205130	2006	10.1109/aiccsa.2006.205130	FastLMFI: An Efficient Approach for Local Maximal Patterns Propagation and Maximal Patterns Superset Checking	IEEE International Conference on Computer Systems and Applications, 2006.	proceedings-article
+56	10.4028/www.scientific.net/amr.989-994.2474	2014	10.4028/www.scientific.net/amr.989-994.2474	Probabilistic Model Checking by Model Equivalent Reduction and Abstraction	Advanced Materials Research	journal-article
+57	10.1007/978-1-4615-3190-6_2	1993	10.1007/978-1-4615-3190-6_2	Model Checking	Symbolic Model Checking	book-chapter
+58	10.20944/preprints202310.0337.v1	2023	10.20944/preprints202310.0337.v1	An Efficient Reduction of Timer Interrupts for Model Checking of Embedded Assembly Programs		posted-content
+59	10.1007/978-1-4615-3190-6_3	1993	10.1007/978-1-4615-3190-6_3	Symbolic Model Checking	Symbolic Model Checking	book-chapter
+60	10.1007/978-1-4615-3190-6_7	1993	10.1007/978-1-4615-3190-6_7	Induction and Model Checking	Symbolic Model Checking	book-chapter
+61	10.1007/978-1-4615-3190-6_6	1993	10.1007/978-1-4615-3190-6_6	Mu-Calculus Model Checking	Symbolic Model Checking	book-chapter
+62	10.1017/9781108613323.004	2021	10.1017/9781108613323.004	Basics of Model Checking	Model Checking Quantum Systems	book-chapter
+63	10.1017/9781108613323.006	2021	10.1017/9781108613323.006	Model Checking Quantum Automata	Model Checking Quantum Systems	book-chapter
+64	10.3233/978-1-60750-065-0-29	2009	10.3233/978-1-60750-065-0-29	Combining Partial Order Reduction with Bounded Model Checking	Concurrent Systems Engineering Series	book-chapter
+65	10.1093/oso/9780198242734.003.0009	1992	10.1093/oso/9780198242734.003.0009	Reduction, Causality, and Normativity	Reduction, Explanation, and Realism	book-chapter
+66	10.1109/rme.2006.1690003	None	10.1109/rme.2006.1690003	On checking causality of bandlimited sampled frequency responses	2006 Ph.D. Research in Microelectronics and Electronics	proceedings-article
+67	10.2478/v10065-011-0002-y	2011	10.2478/v10065-011-0002-y	Effective reduction of cryptographic protocols specification for model-checking with Spin	Annales UMCS, Informatica	journal-article
+68	10.1109/ase.2003.1240328	None	10.1109/ase.2003.1240328	Model checking software requirement specifications using domain reduction abstraction	18th IEEE International Conference on Automated Software Engineering, 2003. Proceedings.	proceedings-article
+69	10.1007/978-3-031-66149-5_3	2025	10.1007/978-3-031-66149-5_3	Synchronisation in Language-Level Symmetry Reduction for Probabilistic Model Checking	Lecture Notes in Computer Science	book-chapter
+70	10.1007/978-3-031-73751-0_8	2025	10.1007/978-3-031-73751-0_8	Trading Space for Simplicity in Stateless Model Checking	Lecture Notes in Computer Science	book-chapter
+71	10.1007/978-3-319-10575-8_20	2018	10.1007/978-3-319-10575-8_20	Combining Model Checking and Deduction	Handbook of Model Checking	book-chapter
+72	10.1007/978-3-319-10575-8_5	2018	10.1007/978-3-319-10575-8_5	Explicit-State Model Checking	Handbook of Model Checking	book-chapter
+73	10.1017/9781108613323.007	2021	10.1017/9781108613323.007	Model Checking Quantum Markov Chains	Model Checking Quantum Systems	book-chapter
+74	10.1007/978-3-319-10575-8_4	2018	10.1007/978-3-319-10575-8_4	Automata Theory and Model Checking	Handbook of Model Checking	book-chapter
+75	10.1007/978-3-319-41540-6_8	2016	10.1007/978-3-319-41540-6_8	Stateless Model Checking for POWER	Lecture Notes in Computer Science	book-chapter
+76	10.1007/s00236-012-0161-3	2012	10.1007/s00236-012-0161-3	Abstract reduction in directed model checking CCS processes	Acta Informatica	journal-article
+77	10.1007/978-3-319-10575-8_14	2018	10.1007/978-3-319-10575-8_14	Interpolation and Model Checking	Handbook of Model Checking	book-chapter
+78	10.4204/eptcs.268.0.2	2018	10.4204/eptcs.268.0.2	Progress on Algorithms for Stateless Model Checking	Electronic Proceedings in Theoretical Computer Science	journal-article
+79	10.1007/978-3-319-10575-8_10	2018	10.1007/978-3-319-10575-8_10	SAT-Based Model Checking	Handbook of Model Checking	book-chapter
+80	10.1002/9781119523024.ch6	2020	10.1002/9781119523024.ch6	Assumption Checking for Directional Causality Analyses	Direction Dependence in Statistical Modeling	other
+81	10.3923/itj.2009.990.997	2009	10.3923/itj.2009.990.997	Conditioning for State Space Reduction in Program Model Checking	Information Technology Journal	journal-article
+82	10.1007/978-3-319-10575-8_19	2018	10.1007/978-3-319-10575-8_19	Combining Model Checking and Testing	Handbook of Model Checking	book-chapter
+83	10.1007/0-387-34600-7_2	None	10.1007/0-387-34600-7_2	Symbolic Model Checking	Series on Integrated Circuits and Systems	book-chapter
+84	10.12783/dtcse/cece2017/14387	2017	10.12783/dtcse/cece2017/14387	System Reduction Based on Symmetry in Game Model Checking	DEStech Transactions on Computer Science and Engineering	journal-article
+85	10.1145/1047659.1040315	2005	10.1145/1047659.1040315	Dynamic partial-order reduction for model checking software	ACM SIGPLAN Notices	journal-article
+86	10.1007/978-3-032-06847-7_9	2026	10.1007/978-3-032-06847-7_9	On-the-Fly Cone-of-Influence Reduction for Model Checking Concurrent Software	Lecture Notes in Computer Science	book-chapter
+87	10.3390/electronics13020463	2024	10.3390/electronics13020463	An Efficient Reduction of Timer Interrupts for Model Checking of Embedded Assembly Programs	Electronics	journal-article
+88	10.1002/9781118720103.ch2	2013	10.1002/9781118720103.ch2	MODEL CHECKING	Verification of Communication Protocols in Web Services	other
+89	10.1007/978-3-319-10575-8_8	2018	10.1007/978-3-319-10575-8_8	BDD-Based Symbolic Model Checking	Handbook of Model Checking	book-chapter
+90	10.1007/978-3-030-81685-8_16	2021	10.1007/978-3-030-81685-8_16	Stateless Model Checking Under a Reads-Value-From Equivalence	Lecture Notes in Computer Science	book-chapter
+91	10.14236/ewic/vecos2007.9	2007	10.14236/ewic/vecos2007.9	High Level Reduction Technique for Multiway Decision Graphs Based Model Checking	Electronic Workshops in Computing	proceedings-article
+92	10.1017/9781108613323.008	2021	10.1017/9781108613323.008	Model Checking Super-Operator-Valued Markov Chains	Model Checking Quantum Systems	book-chapter
+93	10.1016/s1474-6670(17)44541-1	1997	10.1016/s1474-6670(17)44541-1	Reduction of the Model for Maximal Expiration	IFAC Proceedings Volumes	journal-article
+94	10.1007/978-3-319-10575-8_22	2018	10.1007/978-3-319-10575-8_22	Model Checking Security Protocols	Handbook of Model Checking	book-chapter
+95	10.1007/978-3-319-10575-8_23	2018	10.1007/978-3-319-10575-8_23	Transfer of Model Checking to Industrial Practice	Handbook of Model Checking	book-chapter
+96	10.1007/978-3-319-10575-8_26	2018	10.1007/978-3-319-10575-8_26	The mu-calculus and Model Checking	Handbook of Model Checking	book-chapter
+97	10.29007/7r6j	None	10.29007/7r6j	Scaling Model Checking for Neural Network Analysis via State-Space Reduction and Input Segmentation	Kalpa Publications in Computing	proceedings-article
+98	10.1007/978-3-319-10575-8_17	2018	10.1007/978-3-319-10575-8_17	Model Checking Procedural Programs	Handbook of Model Checking	book-chapter
+99	10.1109/indin51400.2023.10218247	2023	10.1109/indin51400.2023.10218247	GRAFCET Reduction Techniques for Model Checking	2023 IEEE 21st International Conference on Industrial Informatics (INDIN)	proceedings-article
+100	10.1007/3-540-48320-9_30	1999	10.1007/3-540-48320-9_30	Partial Order Reduction for Model Checking of Timed Automata	Lecture Notes in Computer Science	book-chapter

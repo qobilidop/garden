@@ -1058,3 +1058,37 @@ If round 31 reopens the map, round 32 is retired unexecuted. If both qualify,
 they establish the required two-round no-add sequence only for these sources,
 exact queries, captured rankings, date, and frozen trigger. Independent audit
 remains mandatory before either outcome is promoted to closure.
+
+## Outcome of round 31 and retirement of round 32
+
+Round 31 is not a no-add round. The primary screen and two independent audits
+each parsed and title-screened all 1,200 occurrences. Every snapshot has 100
+unique source identifiers and ranks 1--100; the round contains 1,006 unique
+identifiers. One blank-title record is an EU grant, not a technical
+publication. Independent title-normalization implementations counted 899 and
+901 unique nonblank titles; that harmless difference is recorded rather than
+forcing a shared normalization after the reviews.
+
+The round added three especially close boundaries. Lazy happens-before omits
+mutex-only ordering when defining schedule-state equivalence. Interface
+grammars compile analyst-declared nested call behavior into component stubs for
+exhaustive modular checking. A recent hardware-verification paper advertises
+dataflow-based symbolic path pruning and is retained at a title-only candidate
+tier because primary technical evidence was not yet accessible. None emits a
+complete requested-root caller-input partition.
+
+The full screen also reconciled sound DPOR under combined scheduling and store-
+buffer nondeterminism, fair stateless checking, demand-axiomatized and bottom-
+up symbolic heap summaries, symbolic proofs for higher-order store, and the
+1977 global value graph. These strengthen existing schedule, heap, higher-
+order, and merged-value clusters. Publication aliases and conference
+predecessors were excluded once.
+
+One reviewer reported “no add” relative to the catalog visible at review time,
+after the primary screen had already inserted the round's three closest works.
+That reviewer nevertheless independently identified the same records and
+found nothing beyond the updated catalog. The prospective comparison is to the
+catalog frozen before execution, so the adjudicated round outcome is reopen.
+Round 32's precondition therefore failed; it is retired unexecuted and cannot
+count toward closure. No reviewer found the direct requested-root event-fiber
+construction.

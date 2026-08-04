@@ -69,6 +69,10 @@ presence conditions without enumerating feasible preprocessor paths
 @hu2000conditional @latendresse2003conditional @latendresse2004rewrite. They supply an exact
 conditional-value precedent, but its observer is compilation presence rather
 than runtime selection behavior.
+Much earlier, the global value graph compactly represented symbolic expression
+values together with their flow across arbitrary control-flow graphs
+@reif1977globalvalue. It is a graph-native symbolic sharing precedent, not an
+input partition indexed by requested internal observations.
 
 Selection observations choose a particular intensional quotient of these
 executions. They discard ordinary control history, retain the outcome of every
@@ -134,6 +138,9 @@ the reduced symbolic semantics relative to concrete multithreaded executions
 @deboer2020sympaths. These are exact schedule quotients, not caller-input
 fibers; approximate POR makes that boundary explicit by parameterizing
 approximately commuting actions and nearby initial states @fan2018approxpor.
+Lazy happens-before sharpens the same boundary by ignoring mutex-only edges to
+obtain a more precise schedule-state equivalence than ordinary happens-before
+@thomson2015lazy.
 
 More directly, optimal DPOR with observers makes dependencies conditional on
 future reads or receives, covers every maximal observational-equivalence class,
@@ -153,6 +160,9 @@ a provably minimal execution count @huang2015mcr. It has also been extended to
 TSO and PSO, while a later variant uses static dependency analysis to reduce
 the causal constraints without silently accepting the redundancy that the
 analysis can introduce @huang2016mcrtso @huang2017staticmcr.
+An independent weak-memory line models thread scheduling and store-buffer
+nondeterminism together to give sound DPOR under TSO and PSO; its optional
+buffer bound is explicitly incomplete @zhang2015relaxeddpor.
 Value-happens-before instead
 groups same-valued observations, can be exponentially coarser than happens-
 before, and admits polynomial time per class for bounded threads
@@ -161,6 +171,10 @@ Dynamic cone-of-influence reduction is closer to a requested-observer
 criterion because relevance changes with the checked property, state, and
 interleaving @telbisz2025coi; it preserves one property judgment rather than
 enumerating every observer value and inverse input fiber.
+At a component boundary, interface grammars compile allowed nested call
+sequences and semantic constraints into environment stubs for modular model
+checking @hughes2008interface. This is an analyst-supplied interface observer,
+not a derived partition of caller inputs.
 
 Colored-net symbolic unfoldings provide another true-concurrency
 representation: they avoid materializing every independent-action interleaving

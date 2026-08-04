@@ -1,0 +1,101 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1145/2858788.2688533	2015	10.1145/2858788.2688533	The lazy happens-before relation: better partial-order reduction for systematic concurrency testing	ACM SIGPLAN Notices	journal-article
+2	10.1145/2688500.2688533	2015	10.1145/2688500.2688533	The lazy happens-before relation: better partial-order reduction for systematic concurrency testing	Proceedings of the 20th ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming	proceedings-article
+3	10.21203/rs.3.rs-3257081/v1	2023	10.21203/rs.3.rs-3257081/v1	Dynamic Partial Order Reduction Based on Interference Solution		posted-content
+4	10.1145/3360550	2019	10.1145/3360550	Value-centric dynamic partial order reduction	Proceedings of the ACM on Programming Languages	journal-article
+5	10.1007/978-3-658-12680-3_4	2016	10.1007/978-3-658-12680-3_4	Dynamic Partial Order Reduction in Stateful Model Checking	Complete Symbolic Simulation of SystemC Models	book-chapter
+6	10.70675/f5fc5032zc27dz4fffza3cbzd9a01566f10d	None	10.70675/f5fc5032zc27dz4fffza3cbzd9a01566f10d	Partial order reduction for timed systems		dissertation
+7	10.1109/fmcad.2016.7886672	2016	10.1109/fmcad.2016.7886672	Hybrid partial order reduction with under-approximate dynamic points-to and determinacy information	2016 Formal Methods in Computer-Aided Design (FMCAD)	proceedings-article
+8	10.1145/3293882.3338987	2019	10.1145/3293882.3338987	Conditional dynamic partial order reduction and optimality results	Proceedings of the 28th ACM SIGSOFT International Symposium on Software Testing and Analysis	proceedings-article
+9	10.1145/1047659.1040315	2005	10.1145/1047659.1040315	Dynamic partial-order reduction for model checking software	ACM SIGPLAN Notices	journal-article
+10	10.1145/2578855.2535845	2014	10.1145/2578855.2535845	Optimal dynamic partial order reduction	ACM SIGPLAN Notices	journal-article
+11	10.1145/2813885.2737956	2015	10.1145/2813885.2737956	Dynamic partial order reduction for relaxed memory models	ACM SIGPLAN Notices	journal-article
+12	10.1145/1040305.1040315	2005	10.1145/1040305.1040315	Dynamic partial-order reduction for model checking software	Proceedings of the 32nd ACM SIGPLAN-SIGACT symposium on Principles of programming languages	proceedings-article
+13	10.1515/9783111636146-010	2025	10.1515/9783111636146-010	10 Reduction of some partial dynamic equations	Partial Dynamic Equations	book-chapter
+14	10.1515/9783111636146-001	2025	10.1515/9783111636146-001	1 Classification of second-order partial dynamic equations	Partial Dynamic Equations	book-chapter
+15	10.7763/ijmo.2014.v4.380	2014	10.7763/ijmo.2014.v4.380	Partial Order Reduction for Verification of WS-BPEL	International Journal of Modeling and Optimization	journal-article
+16	10.1007/978-3-642-35632-2_4	2013	10.1007/978-3-642-35632-2_4	Scalable Dynamic Partial Order Reduction	Lecture Notes in Computer Science	book-chapter
+17	10.1145/2535838.2535845	2014	10.1145/2535838.2535845	Optimal dynamic partial order reduction	Proceedings of the 41st ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages	proceedings-article
+18	10.1007/978-3-540-73370-6_6	None	10.1007/978-3-540-73370-6_6	Distributed Dynamic Partial Order Reduction Based Verification of Threaded Software	Lecture Notes in Computer Science	book-chapter
+19	10.1007/978-3-540-85361-9_21	2008	10.1007/978-3-540-85361-9_21	Dynamic Partial Order Reduction Using Probe Sets	Lecture Notes in Computer Science	book-chapter
+20	10.1007/978-3-540-85114-1_20	None	10.1007/978-3-540-85114-1_20	Efficient Stateful Dynamic Partial Order Reduction	Lecture Notes in Computer Science	book-chapter
+21	10.26226/morressier.604907f51a80aac83ca25d7e	2021	10.26226/morressier.604907f51a80aac83ca25d7e	Partial Order Reduction for Deep Bug Finding in Synchronous Hardware		posted-content
+22	10.1007/11901433_9	2006	10.1007/11901433_9	Stateful Dynamic Partial-Order Reduction	Lecture Notes in Computer Science	book-chapter
+23	10.1145/2642937.2642998	2014	10.1145/2642937.2642998	Assertion guided abstraction	Proceedings of the 29th ACM/IEEE International Conference on Automated Software Engineering	proceedings-article
+24	10.1145/2737924.2737956	2015	10.1145/2737924.2737956	Dynamic partial order reduction for relaxed memory models	Proceedings of the 36th ACM SIGPLAN Conference on Programming Language Design and Implementation	proceedings-article
+25	10.1016/j.compfluid.2025.106579	2025	10.1016/j.compfluid.2025.106579	Incremental singular value decomposition based model order reduction of scale resolving fluid dynamic simulations	Computers &amp; Fluids	journal-article
+26	10.70675/138dc2a5zc12az40e9zab61zddbb416de5a2	None	10.70675/138dc2a5zc12az40e9zab61zddbb416de5a2	Stateful partial-order reduction methods for concurrent systems with blocking instructions		dissertation
+27	10.1145/3364452.3364457	2019	10.1145/3364452.3364457	A Sound Dynamic Partial Order Reduction Engine for Java Pathfinder	ACM SIGSOFT Software Engineering Notes	journal-article
+28	10.1145/3276515	2018	10.1145/3276515	What happens-after the first race? enhancing the predictive power of happens-before based dynamic race detection	Proceedings of the ACM on Programming Languages	journal-article
+29	10.26226/morressier.604907f51a80aac83ca25d72	2021	10.26226/morressier.604907f51a80aac83ca25d72	The Inconsistent Labelling Problem of Stutter-Preserving Partial-Order Reduction		posted-content
+30	10.1007/978-3-319-10575-8_6	2018	10.1007/978-3-319-10575-8_6	Partial-Order Reduction	Handbook of Model Checking	book-chapter
+31	10.1145/3498711	2022	10.1145/3498711	Truly stateless, optimal dynamic partial order reduction	Proceedings of the ACM on Programming Languages	journal-article
+32	10.1145/3073408	2017	10.1145/3073408	Source Sets	Journal of the ACM	journal-article
+33	10.1145/3158119	2018	10.1145/3158119	Data-centric dynamic partial order reduction	Proceedings of the ACM on Programming Languages	journal-article
+34	10.1145/3551349.3561159	2022	10.1145/3551349.3561159	Prioritized Constraint-Aided Dynamic Partial-Order Reduction	Proceedings of the 37th IEEE/ACM International Conference on Automated Software Engineering	proceedings-article
+35	10.1145/2632362.2632365	2014	10.1145/2632362.2632365	Approximating happens-before order: interplay between static analysis and state space traversal	Proceedings of the 2014 International SPIN Symposium on Model Checking of Software	proceedings-article
+36	10.1145/1273647.1273657	2007	10.1145/1273647.1273657	Semantics driven dynamic partial-order reduction of MPI-based parallel programs	Proceedings of the 2007 ACM workshop on Parallel and distributed systems: testing and debugging	proceedings-article
+37	10.1515/9783111636146-002	2025	10.1515/9783111636146-002	2 Classification and canonical forms for linear second-order partial dynamic equations in two independent variables	Partial Dynamic Equations	book-chapter
+38	10.1007/978-1-4471-3827-3_1	2004	10.1007/978-1-4471-3827-3_1	Introduction to Dynamic Model Reduction Techniques	Model Order Reduction Techniques	book-chapter
+39	10.21236/ad0616301	1965	10.21236/ad0616301	Some Iterative Methods Using Partial Order for Solution of Nonlinear Boundary Value Problems		report
+40	10.1145/3591243	2023	10.1145/3591243	Dynamic Partial Order Reduction for Checking Correctness against Transaction Isolation Levels	Proceedings of the ACM on Programming Languages	journal-article
+41	10.1016/s0079-8169(08)61521-4	1975	10.1016/s0079-8169(08)61521-4	18 Reduction of Higher Order Systems to First-Order Systems	Pure and Applied Mathematics	book-chapter
+42	10.1021/acs.orglett.6b02910.s001	None	10.1021/acs.orglett.6b02910.s001	Synthesis of the GPR40 Partial Agonist MK-8666 through a Kinetically Controlled Dynamic Enzymatic Ketone Reduction		component
+43	10.1145/3603288.3603296	2024	10.1145/3603288.3603296	Approximate Partial Order Reduction	Formal Methods for Safe Autonomy	book-chapter
+44	10.2307/j.ctv7tq4qc.18	None	10.2307/j.ctv7tq4qc.18	What Happens When Wittgenstein Asks “What Happens When . . . ?”	Saying What We Mean	book-chapter
+45	10.1007/978-3-642-02658-4_31	2009	10.1007/978-3-642-02658-4_31	Monotonic Partial Order Reduction: An Optimal Symbolic Partial Order Reduction Technique	Lecture Notes in Computer Science	book-chapter
+46	10.1017/cbo9780511541117.007	2007	10.1017/cbo9780511541117.007	Terminal reduction of linear dynamic circuits	Advanced Model Order Reduction Techniques in VLSI Design	book-chapter
+47	10.1007/978-3-642-12029-9_22	2010	10.1007/978-3-642-12029-9_22	Evaluating Ordering Heuristics for Dynamic Partial-Order Reduction Techniques	Lecture Notes in Computer Science	book-chapter
+48	10.1007/s10009-010-0144-z	2010	10.1007/s10009-010-0144-z	Distributed dynamic partial order reduction	International Journal on Software Tools for Technology Transfer	journal-article
+49	10.31274/etd-180810-2683	None	10.31274/etd-180810-2683	Sparse Recovery with Partial Support and Signal Value Knowledge and Applications in Dynamic MRI		dissertation
+50	10.1126/science.aah7353	2021	10.1126/science.aah7353	Can ‘predictive policing' prevent crime before it happens?	AAAS Articles DO Group	dataset
+51	10.26226/morressier.604907f51a80aac83ca25d81	2021	10.26226/morressier.604907f51a80aac83ca25d81	Partial-Order Reduction for Parity Games with an Application on Parameterised Boolean Equation Systems		posted-content
+52	10.1016/j.jval.2018.09.2452	2018	10.1016/j.jval.2018.09.2452	PRS58 - PATIENTS WITH IDIOPATHIC PULMONARY FIBROSIS (IPF): WHAT HAPPENS BEFORE THE DIAGNOSIS? A REAL-WORLD, RETROSPECTIVE, PRIMARY CARE DATABASE ANALYSIS	Value in Health	journal-article
+53	10.64628/ab.vu7ft4qjk	2013	10.64628/ab.vu7ft4qjk	Spotting the collapse of a species before it happens		posted-content
+54	10.1109/icst.2019.00035	2019	10.1109/icst.2019.00035	Precise Static Happens-Before Analysis for Detecting UAF Order Violations in Android	2019 12th IEEE Conference on Software Testing, Validation and Verification (ICST)	proceedings-article
+55	10.14293/p2199-8442.1.sop-eng.ptp8ds.v1	2016	10.14293/p2199-8442.1.sop-eng.ptp8ds.v1	Model order reduction of dynamic skeletal muscle models		posted-content
+56	10.1090/dimacs/029/13	1997	10.1090/dimacs/029/13	Partial order reduction: Linear and branching temporal logics and process algebras	DIMACS Series in Discrete Mathematics and Theoretical Computer Science	book-chapter
+57	10.1007/978-1-4471-3827-3_5	2004	10.1007/978-1-4471-3827-3_5	Dynamic Condensation	Model Order Reduction Techniques	book-chapter
+58	10.1016/j.jss.2023.111730	2023	10.1016/j.jss.2023.111730	Optimal dynamic partial order reduction with context-sensitive independence and observers	Journal of Systems and Software	journal-article
+59	10.1145/3293882.3330565	2019	10.1145/3293882.3330565	Optimal context-sensitive dynamic partial order reduction with observers	Proceedings of the 28th ACM SIGSOFT International Symposium on Software Testing and Analysis	proceedings-article
+60	10.7717/peerj-cs.2672/table-10	None	10.7717/peerj-cs.2672/table-10	Table 10: Results of MSE and standard deviation value reduction before and after the algorithm is optimized using genetic algorithm.		component
+61	10.1007/3-540-18420-1_58	1987	10.1007/3-540-18420-1_58	Controlling reduction partial order in functional parallel programs	Lecture Notes in Computer Science	book-chapter
+62	10.1021/acs.jcim.5b00331.s001	None	10.1021/acs.jcim.5b00331.s001	H274Ys Effect on Oseltamivir Resistance: What Happens Before the Drug Enters the Binding Site		component
+63	10.1201/b12927-7	2013	10.1201/b12927-7	� Boundary Value Problems for Second-Order ODE and Sturm-Liouville Theory	Ordinary and Partial Differential Equations	book-chapter
+64	10.30819/4910	2019	10.30819/4910	Dynamic iteration and model order reduction for magneto-quasistatic systems		monograph
+65	10.1201/b10907-2	None	10.1201/b10907-2	Introduction	FORM SYMMETRIES AND REDUCTION OF ORDER IN DIFFERENCE EQUATIONS	book-chapter
+66	10.2139/ssrn.2708815	2015	10.2139/ssrn.2708815	Global Agrifood Value Chains and Local Poverty Reduction: What Happens to Those Who Don't Plug In?	SSRN Electronic Journal	journal-article
+67	10.1186/1687-2770-2013-203	2013	10.1186/1687-2770-2013-203	Solvability of impulsive partial neutral second-order functional integro-differential equations with infinite delay	Boundary Value Problems	journal-article
+68	10.23919/ecc.1999.7099732	1999	10.23919/ecc.1999.7099732	Order reduction with partial ARMA-modeling	1999 European Control Conference (ECC)	proceedings-article
+69	10.2139/ssrn.6327478	2026	10.2139/ssrn.6327478	The Epistemic Tension Metric: Quantifying Model Breakdown Before It Happens		posted-content
+70	10.4324/9781315566863-23	2016	10.4324/9781315566863-23	What happens before service design?	An Introduction to Industrial Service Design	book-chapter
+71	10.1186/1687-2770-2013-152	2013	10.1186/1687-2770-2013-152	Optimal partial regularity of second-order parabolic systems under natural growth condition	Boundary Value Problems	journal-article
+72	10.1007/978-3-319-17524-9_35	2015	10.1007/978-3-319-17524-9_35	Reporting Races in Dynamic Partial Order Reduction	Lecture Notes in Computer Science	book-chapter
+73	10.1145/1869542.1869544	2010	10.1145/1869542.1869544	now happens-before later	Proceedings of the ACM international conference companion on Object oriented programming systems languages and applications companion	proceedings-article
+74	10.1007/978-3-031-37706-8_12	2023	10.1007/978-3-031-37706-8_12	Unblocking Dynamic Partial Order Reduction	Lecture Notes in Computer Science	book-chapter
+75	10.2172/1475503	2018	10.2172/1475503	Model Order Reduction of Nonviscously Damped Structural Dynamic Models		report
+76	10.1186/1687-2770-2012-128	2012	10.1186/1687-2770-2012-128	Partial neutral functional integro-differential equations of fractional order with delay	Boundary Value Problems	journal-article
+77	10.1108/apjml-01-2026-0222	2026	10.1108/apjml-01-2026-0222	What happens before placing an order? Decoding consumers' visual attention during apparel information search in live-streaming	Asia Pacific Journal of Marketing and Logistics	journal-article
+78	10.1007/978-3-658-12680-3_3	2016	10.1007/978-3-658-12680-3_3	Static Partial Order Reduction in Stateful Model Checking	Complete Symbolic Simulation of SystemC Models	book-chapter
+79	10.1299/jsmecmd.2011.24._f-58_	2011	10.1299/jsmecmd.2011.24._f-58_	F406 Monte Carlo Simulation of dynamic problem using Model Order Reduction Technique	The Proceedings of The Computational Mechanics Conference	journal-article
+80	10.3133/fs20043060	2004	10.3133/fs20043060	Mapping a flood before it happens	Fact Sheet	report-component
+81	10.1037/e564312006-002	1995	10.1037/e564312006-002	Controlling Crime Before It Happens: Risk-Focused Prevention	PsycEXTRA Dataset	dataset
+82	10.1524/anly.2010.0938	2010	10.1524/anly.2010.0938	Mixed boundary value problems for higher-order complex partial differential equations	Analysis	journal-article
+83	10.1080/03605309108820799	1991	10.1080/03605309108820799	Reduction of order for pseudodifferential operators on lipschitz domains	Communications in Partial Differential Equations	journal-article
+84	10.1007/978-1-4471-3827-3_6	2004	10.1007/978-1-4471-3827-3_6	Iterative Methods for Dynamic Condensation	Model Order Reduction Techniques	book-chapter
+85	10.1007/978-3-642-30793-5_14	2012	10.1007/978-3-642-30793-5_14	TransDPOR: A Novel Dynamic Partial-Order Reduction Technique for Testing Actor Programs	Lecture Notes in Computer Science	book-chapter
+86	10.1007/978-3-540-73370-6_8	None	10.1007/978-3-540-73370-6_8	Cartesian Partial-Order Reduction	Lecture Notes in Computer Science	book-chapter
+87	10.1002/num.1016	2001	10.1002/num.1016	Numerical methods for fourth‐order nonlinear elliptic boundary value problems	Numerical Methods for Partial Differential Equations	journal-article
+88	10.1080/03605308708820502	1987	10.1080/03605308708820502	Mixed initial‐boundary value problems for second order hyperbolic equations	Communications in Partial Differential Equations	journal-article
+89	10.1201/9781003175827-5	2021	10.1201/9781003175827-5	Higher Order Boundary Value Problems for Dynamic Equations	Boundary Value Problems on Time Scales Volume II	book-chapter
+90	10.5040/9798400670077.ch-005	2012	10.5040/9798400670077.ch-005	Teaching, and what Happens Before and After	Information Basics for College Students	other
+91	10.1201/9781003175827-1	2021	10.1201/9781003175827-1	Third Order Boundary Value Problems for Dynamic Equations	Boundary Value Problems on Time Scales Volume II	book-chapter
+92	10.32674/3c7ks911	2024	10.32674/3c7ks911	Don’t Quit Before the Miracle Happens	Bridging Cultures, Empowering Futures: Global Citizenship and International Education	book-chapter
+93	10.1016/j.jpsychores.2026.112747	2026	10.1016/j.jpsychores.2026.112747	"Interpersonal abilities and depression reduction: ""What matters most is what happens during the inpatient treatment, not before"""	Journal of Psychosomatic Research	journal-article
+94	10.1186/s13661-025-02021-x	2025	10.1186/s13661-025-02021-x	Two modified shifted Chebyshev–Galerkin operational matrix methods for even-order partial boundary value problems	Boundary Value Problems	journal-article
+95	10.1037/e666632011-060	1965	10.1037/e666632011-060	Resistance to extinction when continuous reinforcement before partial reinforcement leads to a reduction in resistance to extinction will be reported	PsycEXTRA Dataset	dataset
+96	10.1201/9781003175827-2	2021	10.1201/9781003175827-2	Boundary Value Problems for Third Order Impulsive Dynamic Equations	Boundary Value Problems on Time Scales Volume II	book-chapter
+97	10.1201/9781003175827-6	2021	10.1201/9781003175827-6	Higher Order Boundary Value Problems for Impulsive Dynamic Equations	Boundary Value Problems on Time Scales Volume II	book-chapter
+98	10.1109/ase.2001.989810	None	10.1109/ase.2001.989810	Enhancing partial-order reduction via process clustering	Proceedings 16th Annual International Conference on Automated Software Engineering (ASE 2001)	proceedings-article
+99	10.5539/ies.v19n2p48	2026	10.5539/ies.v19n2p48	What Happens Before Learning Happens? Psychological Readiness as the Missing Foundation of Informal Intercultural Learning	International Education Studies	journal-article
+100	10.1007/978-1-4471-3827-3_8	2004	10.1007/978-1-4471-3827-3_8	Dynamic Condensation of Nonclassically Damped Models	Model Order Reduction Techniques	book-chapter
