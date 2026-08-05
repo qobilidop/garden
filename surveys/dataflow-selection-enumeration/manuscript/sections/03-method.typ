@@ -17,22 +17,15 @@ are proved; how residuals, witnesses, and sharing are represented; what
 complexity results exist; and which assumptions are made about purity,
 totality, cycles, time, and solver completeness.
 
-The search vocabulary spans twenty-seven clusters: formal and multi-path symbolic
-execution; hardware symbolic simulation; synchronous and dataflow testing;
-AllSAT, AllSMT, partial models, and cubes; trace partitioning; decision
-diagrams, residualization, slicing, and demand; functional-logic search and
-choice fingerprints; demand-driven bounded testing and lazy initialization;
-pseudo-exhaustive circuit testing; finite-observer input partitions; decision
-trees and finite-range diagrams; exact hyperplane, neural, and CPWL region
-enumeration; classical stream-dataflow demand; and compositional hybrid-mode,
-piecewise-affine, and parametric-program partitions; exact neural trees and
-decision-diagram compilation; symmetry-reduced reachability;
-observation-pattern loop-state postponement; and context- or
-precondition-guided target search; regular-property or trace-specification
-guided event pruning; and symbolic partial-order reduction of concurrent
-interleavings; coverage-preserving seed reduction; and fully symbolic
-canonical higher-order concolic inputs; behavior-relative symbolic state
-reduction; and fully symbolic bisimulation quotients.
+The search vocabulary spans twenty-seven clusters. They cover symbolic
+execution and hardware simulation; synchronous and dataflow testing; projected
+model and cube enumeration; trace partitioning, decision structures,
+residualization, slicing, and demand; functional-logic and bounded-testing
+search; finite-observer partitions; hyperplane, neural, CPWL, hybrid, and
+parametric regions; stream-dataflow demand; observer-, property-, and
+context-guided state or schedule reduction; higher-order concolic inputs; and
+behavioral state quotients. The protocol lists the complete vocabulary and its
+chronological extensions.
 
 The protocol began with a smaller vocabulary. Newly exposed clusters were
 added only through recorded reopenings; prior no-add rounds were then retired
@@ -67,6 +60,13 @@ The extraction taxonomy has six dimensions:
 - the proved or claimed guarantees; and
 - the semantic and computational assumptions.
 
+At the archived snapshot, the catalog contains 897 entries and marks 200 as
+deep-read. The audited log contains 318 database queries and 245 separately
+recorded backward or forward citation chases. Excluding repeated independent
+adjudication passes, these rows contain 35,720 screened record occurrences;
+this is not a unique-paper or population count. Eighty-four evidence rows link
+manuscript claims to anchored primary-source notes.
+
 == Saturation rule
 
 The bounded map closes only after every candidate surfaced by the recorded
@@ -74,7 +74,8 @@ exploratory and audited searches is reconciled by a catalog disposition or an
 explicit `not-recorded` log note, every critical source is deep-read and
 snowballed in both directions, two consecutive
 predeclared replacement rounds add neither a conceptual cluster nor a plausible
-close competitor, and an independent reviewer audits borderline exclusions.
+close competitor, and independent passes audit the final record sets and
+borderline exclusions.
 A result that introduces a new omission mechanism or enumerates observations
 while avoiding decisions irrelevant to a request reopens the map. Closure is
 therefore relative to the recorded databases and date; it is not a proof that
@@ -92,13 +93,14 @@ respectively; the search record was last reconciled on 4 August 2026.
 
 == Validity threats
 
-The initial extraction has one primary screener. Independent adversarial
-audits sample exclusions and challenge closest-work claims, but this is weaker
-than duplicate screening with inter-rater agreement. Database coverage and
-metadata are visibly incomplete; exact counts describe the captured result
-sets, not a population of all papers. Vocabulary drift is acute because the
+The initial extraction has one primary agent. Three separate agent passes
+duplicate-screened every logical record in the final closure rounds, but all
+worked from the same project framing; they are not independent human review
+teams, and no inter-rater agreement statistic was computed. Database coverage
+and metadata are visibly incomplete; exact counts describe captured record
+occurrences, not a population of papers. Vocabulary drift is acute because the
 same phenomenon is called a path, fingerprint, configuration, cube, activation
 pattern, mode, or critical region in different communities. Finally, the
-formal framework is an interpretive bridge: this paper must distinguish a
-theorem stated in prior work from a theorem obtained only after changing the
-observer or adding graph instrumentation.
+formal framework is an interpretive bridge: this paper distinguishes a theorem
+stated in prior work from a theorem obtained only after changing the observer
+or adding graph instrumentation.

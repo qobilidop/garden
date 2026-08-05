@@ -18,10 +18,13 @@ an eventual case study, not the definition of the research problem.
 
 ## Current phase
 
-The project is completing the systematic map and formal synthesis before
-drafting the manuscript. See [`research/README.md`](research/README.md) for the
-evidence workflow and [`research/survey/protocol.md`](research/survey/protocol.md)
-for the review protocol.
+The systematic map is closed under its recorded protocol, and the formal
+synthesis is available as a complete manuscript. Closure is relative to the
+captured sources, queries, rankings, and 4 August 2026 access date; it is not a
+claim of worldwide literature completeness. See
+[`research/README.md`](research/README.md) for the evidence workflow and
+[`research/survey/protocol.md`](research/survey/protocol.md) for the review
+protocol.
 
 ## Development
 
@@ -40,7 +43,7 @@ explicit rebuild is wanted:
 ./dev.sh --build ./scripts/check.sh
 ```
 
-Once `manuscript/main.typ` exists, the same command compiles it to
+The same command compiles `manuscript/main.typ` to
 `build/manuscript.pdf` and verifies that the PDF contains extractable text.
 
 ### Downloading the PDF from GitHub

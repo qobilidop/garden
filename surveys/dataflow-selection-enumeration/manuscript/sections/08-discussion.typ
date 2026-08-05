@@ -109,13 +109,16 @@ new clusters invalidate earlier saturation attempts rather than being folded
 quietly into a post hoc query set.
 
 The final two frozen rounds added no conceptual cluster or plausible close
-competitor after reconciliation. That result establishes mapping closure only
-under the recorded trigger, captured rankings, and access date. It does not
-prove that no closer work exists. The final OpenAIRE round had particularly low
-capture, while Crossref returned very large hit sets from which only the first
-100 relevance-ranked records per query were screened. Citation-network
-coverage and a single primary screener remain threats even after an independent
-audit of sampled exclusions.
+competitor after reconciliation. In the first, three separate passes screened
+all 800 Crossref records from eight 100-result rankings. The second conjuncted
+every query term over arXiv's `all` field and returned zero hits for all eight
+queries; three audits verified the files, translation, and live response.
+These results establish mapping closure only under the recorded trigger,
+sources, queries, rankings, depth, and access date. The arXiv result in
+particular demonstrates narrow source/query saturation, not high recall. It
+does not prove that no closer work exists. Citation-network coverage, shared
+framing among the agent screeners, and the lack of independent human duplicate
+screening remain threats.
 
 The repository retains the protocol, catalog, search log, source notes,
 screening snapshots, claim ledger, and manuscript checks. These artifacts make
