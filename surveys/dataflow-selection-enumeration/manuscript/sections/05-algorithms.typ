@@ -173,10 +173,9 @@ projection may instead retain $z_q$ as a theory term.
   the unique solution
   $a_v <=> v in D_G(x,R)$, and $Z=overline(T)_G(x,R)$. Hence projected
   models of $Phi_(G,A,R)$ over $Z$ are in bijection with feasible sparse
-  observations.
-  For every feasible $tau$,
+  observations. For every typed input $x$ and feasible $tau$,
   $
-    A(x) and Z = overline(tau)
+    (exists a : Phi_(G,A,R)(x,a,overline(tau)))
       <=> Gamma_tau(x).
   $
 ]
@@ -187,8 +186,10 @@ projection may instead retain $z_q$ as a theory term.
   selection enables its selector and exactly the cases selected by the direct
   $eta$ predicates. The biconditionals therefore compute precisely the least
   enabled closure, including disjunctive sharing from multiple consumers.
-  Substitution in the definition of $z_q$ gives the totalized partial map. The
-  final equivalence is the exact-local-guard theorem.
+  Substitution in the definition of $z_q$ gives the totalized partial map.
+  Therefore the existential formula holds exactly when $A(x)$ holds and the
+  induced totalized observation equals $overline(tau)$; the exact-local-guard
+  theorem gives the final equivalence.
 ]
 
 Consequently, naive projected enumeration of complete observation tuples and
