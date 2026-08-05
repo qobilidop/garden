@@ -1,0 +1,101 @@
+rank	source_id	year	doi	title	venue	type
+1	10.5772/5322	2008	10.5772/5322	Scheduling Analysis of FMS Using the Unfolding Time Petri Nets	Petri Net, Theory and Applications	book-chapter
+2	10.1016/j.ins.2026.123515	2026	10.1016/j.ins.2026.123515	Petri net-driven expanding tent-sine chaotic keystream generator with adaptive token flow for image encryption	Information Sciences	journal-article
+3	10.1007/3-540-63139-9_39	1997	10.1007/3-540-63139-9_39	A compositional partial order semantics for Petri net components	Lecture Notes in Computer Science	book-chapter
+4	10.1049/ipr2.70255	2025	10.1049/ipr2.70255	Adaptive Petri Net Token Flow Approach for Enhanced Grayscale Image Segmentation	IET Image Processing	journal-article
+5	10.1007/978-3-642-04368-0_6	2009	10.1007/978-3-642-04368-0_6	Critical Paths in the Partial Order Unfolding of a Stochastic Petri Net	Lecture Notes in Computer Science	book-chapter
+6	10.1142/s179300572850041x	2026	10.1142/s179300572850041x	A Petri Net Token-Flow PRNG for Grayscale Image Encryption	New Mathematics and Natural Computation	journal-article
+7	10.1007/978-3-540-68746-7_6	2008	10.1007/978-3-540-68746-7_6	Faster Unfolding of General Petri Nets Based on Token Flows	Lecture Notes in Computer Science	book-chapter
+8	10.1007/978-3-642-75329-9_5	1992	10.1007/978-3-642-75329-9_5	Individual-Token Nets	Springer Compass International	book-chapter
+9	10.1109/dac.1996.545546	None	10.1109/dac.1996.545546	Verification of asynchronous circuits using time Petri net unfolding	33rd Design Automation Conference Proceedings, 1996	proceedings-article
+10	10.1007/978-3-642-23226-8_85	2011	10.1007/978-3-642-23226-8_85	Petri Net Based on Behavior of Token and Its Applications	Communications in Computer and Information Science	book-chapter
+11	10.1007/3-540-50580-6_31	1988	10.1007/3-540-50580-6_31	Infinitary partial Petri net languages and their relationship to other Petri net semantics	Lecture Notes in Computer Science	book-chapter
+12	10.1007/978-3-642-02424-5_2	2009	10.1007/978-3-642-02424-5_2	Unifying Petri Net Semantics with Token Flows	Lecture Notes in Computer Science	book-chapter
+13	10.1007/978-1-4615-4493-7_43	2000	10.1007/978-1-4615-4493-7_43	Synthesis of Admissible Behavior of Petri Nets for Partial Order Specifications	Discrete Event Systems	book-chapter
+14	10.5516/net.04.2012.019	2012	10.5516/net.04.2012.019	STATE TOKEN PETRI NET MODELING METHOD FOR FORMAL VERIFICATION OF COMPUTERIZED PROCEDURE INCLUDING OPERATOR'S INTERRUPTIONS OF PROCEDURE EXECUTION FLOW	Nuclear Engineering and Technology	journal-article
+15	10.3233/fi-2009-134	2009	10.3233/fi-2009-134	Unfolding Semantics of Petri Nets Based on Token Flows	Fundamenta Informaticae	journal-article
+16	10.1109/cdc.2003.1271732	None	10.1109/cdc.2003.1271732	Partial order diagnosability of discrete event systems using petri net unfoldings	42nd IEEE International Conference on Decision and Control (IEEE Cat. No.03CH37475)	proceedings-article
+17	10.1145/2590748.2590765	2014	10.1145/2590748.2590765	Token transportation in Petri net models of workflow patterns	Proceedings of the 7th India Software Engineering Conference	proceedings-article
+18	10.31274/rtd-180813-6259	None	10.31274/rtd-180813-6259	Petri net models of program execution in data flow environments		dissertation
+19	10.1007/978-3-031-23612-9_12	2023	10.1007/978-3-031-23612-9_12	Adjunct Partial Array Token Petri Net Structure	Lecture Notes in Computer Science	book-chapter
+20	10.5353/th_b3120740	None	10.5353/th_b3120740	Formal data flow diagrams (FDFD) : a petri-net based requirements specification language		dissertation
+21	10.1080/00223131.2011.649082	2012	10.1080/00223131.2011.649082	Modeling of computerized procedure execution with State Token Petri Net for formal verification of procedure flow	Journal of Nuclear Science and Technology	journal-article
+22	10.4028/www.scientific.net/amm.20-23.220	2010	10.4028/www.scientific.net/amm.20-23.220	Web Service Automatic Composition Based on Extended Token of Petri Net	Applied Mechanics and Materials	journal-article
+23	10.1007/978-3-030-77102-7_8	2021	10.1007/978-3-030-77102-7_8	Partial Array Token Petri Net and P System	Lecture Notes in Computer Science	book-chapter
+24	10.4108/icst.bict.2014.257936	2015	10.4108/icst.bict.2014.257936	Token Evolution in an Ill-posed Constraint Petri-net	Proceedings of the 8th International Conference on Bio-inspired Information and Communications Technologies (formerly BIONETICS)	proceedings-article
+25	10.1109/tla.2017.7912599	2017	10.1109/tla.2017.7912599	Unfolding for Time Petri Net	IEEE Latin America Transactions	journal-article
+26	10.1109/icsmc.1997.637370	None	10.1109/icsmc.1997.637370	A concurrency characteristic in Petri net unfolding	1997 IEEE International Conference on Systems, Man, and Cybernetics. Computational Cybernetics and Simulation	proceedings-article
+27	10.7146/brics.v5i17.19423	1998	10.7146/brics.v5i17.19423	A Comparison of Petri Net Semantics under the Collective Token Philosophy	BRICS Report Series	journal-article
+28	10.1109/icmtma.2009.245	2009	10.1109/icmtma.2009.245	Agent-Oriented Boolean Token and Colored Transition Petri Net for Workflow Management	2009 International Conference on Measuring Technology and Mechatronics Automation	proceedings-article
+29	10.1109/compsac.2005.148	None	10.1109/compsac.2005.148	Supervisory Control of Time Petri Nets Using Net Unfolding	29th Annual International Computer Software and Applications Conference (COMPSAC'05)	proceedings-article
+30	10.1007/978-3-031-61433-0_9	2024	10.1007/978-3-031-61433-0_9	Token Trail Semantics II - Petri Nets And Their Net Language	Lecture Notes in Computer Science	book-chapter
+31	10.1145/240518.240530	1996	10.1145/240518.240530	Verification of asynchronous circuits using time Petri net unfolding	Proceedings of the 33rd annual conference on Design automation conference  - DAC '96	proceedings-article
+32	10.1007/3-540-55767-9_7	1992	10.1007/3-540-55767-9_7	Partial order semantics for nets with capacities	Lecture Notes in Computer Science	book-chapter
+33	10.3182/20130904-3-uk-4041.00039	2013	10.3182/20130904-3-uk-4041.00039	Supervision Patterns: Formal Diagnosability Checking by Petri Net Unfolding	IFAC Proceedings Volumes	journal-article
+34	10.1109/access.2024.3384489	2024	10.1109/access.2024.3384489	Petri Net Unfolding-Based Detection and Replay of Program Deadlocks	IEEE Access	journal-article
+35	10.1109/coase.2016.7743519	2016	10.1109/coase.2016.7743519	Reconstruction of unknown Petri net structures from asynchronous observations of token change sequences	2016 IEEE International Conference on Automation Science and Engineering (CASE)	proceedings-article
+36	10.11591/telkomnika.v11i9.3310	2013	10.11591/telkomnika.v11i9.3310	Product Spatial Sequence Modeling based on Spatial State Transition Petri net of Behavior Flow	TELKOMNIKA Indonesian Journal of Electrical Engineering	journal-article
+37	10.1145/3290420.3290430	2018	10.1145/3290420.3290430	An introduction and review of petri net unfolding technology	Proceedings of the 4th International Conference on Communication and Information Processing	proceedings-article
+38	10.5772/5321	2008	10.5772/5321	Timed Hierarchical Object-Oriented Petri Net	Petri Net, Theory and Applications	book-chapter
+39	10.1109/tcst.2025.3647931	2026	10.1109/tcst.2025.3647931	Petri-Net-Based Partial Order Reduction for Model Checking Temporal Epistemic Logic on Multiagent Systems	IEEE Transactions on Control Systems Technology	journal-article
+40	10.1007/3-540-55767-9_2	1992	10.1007/3-540-55767-9_2	Petri nets and their semantics	Lecture Notes in Computer Science	book-chapter
+41	10.7551/mitpress/8811.003.0010	2011	10.7551/mitpress/8811.003.0010	Analyzing Petri Net Models	Modeling Business Processes	book-chapter
+42	10.4135/9781412986069.n7	1988	10.4135/9781412986069.n7	Rank Order Methods: Complete and Partial Techniques	Systematic Data Collection	book-chapter
+43	10.46298/arima.3177	2017	10.46298/arima.3177	Unfolding through processes to compute the complete prefix of Petri nets	Revue Africaine de Recherche en Informatique et Mathématiques Appliquées	journal-article
+44	10.1201/9781003770497-28	2026	10.1201/9781003770497-28	A Partial Petri Net Framework for Addressing Uncertainty in Healthcare Processes	Applied Mathematics, Automation and Computing	book-chapter
+45	10.1007/springerreference_21281	None	10.1007/springerreference_21281	Petri net	SpringerReference	reference-entry
+46	10.14445/22315373/ijmtt-v68i4p502	2022	10.14445/22315373/ijmtt-v68i4p502	Few Closure Properties of Context-Free Multi-Strings Token Petri Net	International Journal of Mathematics Trends and Technology	journal-article
+47	10.1007/978-3-031-33620-1_16	2023	10.1007/978-3-031-33620-1_16	Token Trail Semantics – Modeling Behavior of Petri Nets with Labeled Petri Nets	Lecture Notes in Computer Science	book-chapter
+48	10.1109/icnsc.2017.8000077	2017	10.1109/icnsc.2017.8000077	DICER: Data Inconsistency CheckER based on the unfolding technique of Petri net	2017 IEEE 14th International Conference on Networking, Sensing and Control (ICNSC)	proceedings-article
+49	10.1609/icaps.v19i1.13343	2009	10.1609/icaps.v19i1.13343	Optimality Properties of Planning Via Petri Net Unfolding: A Formal Analysis	Proceedings of the International Conference on Automated Planning and Scheduling	journal-article
+50	10.1609/icaps.v29i1.3473	2019	10.1609/icaps.v29i1.3473	On the Relation between Star-Topology Decoupling and Petri Net Unfolding	Proceedings of the International Conference on Automated Planning and Scheduling	journal-article
+51	10.37547/tajiir/volume08issue05-08	2026	10.37547/tajiir/volume08issue05-08	Formal Modeling and Analysis of Data Flow in API-Integrated Systems Using the Petri Net Model	The American Journal of Interdisciplinary Innovations and Research	journal-article
+52	10.1007/978-3-540-79230-7_6	None	10.1007/978-3-540-79230-7_6	A Feature-Complete Petri Net Semantics for WS-BPEL 2.0	Lecture Notes in Computer Science	book-chapter
+53	10.1007/978-3-030-76983-3_20	2021	10.1007/978-3-030-76983-3_20	Firing Partial Orders in a Petri Net	Lecture Notes in Computer Science	book-chapter
+54	10.2514/6.1991-3716	1991	10.2514/6.1991-3716	Verifying concurrent system behavior with Petri net invariants	8th Computing in Aerospace Conference	proceedings-article
+55	10.1109/csfw.1990.128185	None	10.1109/csfw.1990.128185	Petri net based modelling of information flow security requirements	[1990] Proceedings. The Computer Security Foundations Workshop III	proceedings-article
+56	10.1023/a:1006002507294	1997	10.1023/a:1006002507294	Free Distributive Completions of Partial Complete Lattices	Order	journal-article
+57	10.5772/10294	2010	10.5772/10294	Petri Net as a Manufacturing System Scheduling Tool	Advances in Petri Net Theory and Applications	book-chapter
+58	10.3182/20060926-3-pl-4904.00054	2006	10.3182/20060926-3-pl-4904.00054	PETRI NET DECOMPOSITION APPROACH FOR PARTIAL RECONFIGURATION OF LOGIC CONTROLLERS	IFAC Proceedings Volumes	journal-article
+59	10.1007/978-3-540-40022-6_3	2003	10.1007/978-3-540-40022-6_3	Petri Net Transformations in the ≫Petri Net Baukasten≪	Lecture Notes in Computer Science	book-chapter
+60	10.4304/jsw.5.11.1292-1299	2010	10.4304/jsw.5.11.1292-1299	Control Flow Complexity Metrics for Petri Net-based Web Service Composition	Journal of Software	journal-article
+61	10.1109/iscas.1989.100354	None	10.1109/iscas.1989.100354	Synthesis of a Petri net based control flow model	IEEE International Symposium on Circuits and Systems	proceedings-article
+62	10.1002/9781119262114.part1	2016	10.1002/9781119262114.part1	Short Review of Petri Net Modeling	Systems Dependability Assessment	other
+63	10.2507/ijsimm15(3)co14	2016	10.2507/ijsimm15(3)co14	Simulation Study of Flexible Manufacturing Cell Based on Token-Oriented Petri Net Model	International Journal of Simulation Modelling	journal-article
+64	10.1007/3-540-46002-0_26	2002	10.1007/3-540-46002-0_26	Parallelisation of the Petri Net Unfolding Algorithm	Lecture Notes in Computer Science	book-chapter
+65	10.1007/3-540-49366-2_18	1998	10.1007/3-540-49366-2_18	A Comparison of Petri Net Semantics under the Collective Token Philosophy	Lecture Notes in Computer Science	book-chapter
+66	10.1142/9789814324298_0003	2012	10.1142/9789814324298_0003	Petri Net Processes and Extension Operators	Property-Preserving Petri Net Process Algebra in Software Engineering	book-chapter
+67	10.5772/5323	2008	10.5772/5323	Error Recovery in Production Systems: A Petri Net Based Intelligent System Approach	Petri Net, Theory and Applications	book-chapter
+68	10.20961/its.v3i2.650	2016	10.20961/its.v3i2.650	CLUSTERING BUSINESS PROCESS MODEL PETRI NET DENGAN COMPLETE LINKAGE	Jurnal Teknologi &amp; Informasi ITSmart	journal-article
+69	10.1016/b978-044482830-9/50031-x	2001	10.1016/b978-044482830-9/50031-x	Partial-Order Process Algebra (and its Relation to Petri Nets)	Handbook of Process Algebra	book-chapter
+70	10.1109/kam.2008.168	2008	10.1109/kam.2008.168	Modeling Knowledge Flow Using Petri Net	2008 International Symposium on Knowledge Acquisition and Modeling	proceedings-article
+71	10.2139/ssrn.4961610	2024	10.2139/ssrn.4961610	How Does Payment for Order Flow Influence Markets? Evidence from Robinhood Crypto Token Introductions		posted-content
+72	10.1007/978-3-540-73094-1_9	None	10.1007/978-3-540-73094-1_9	Independence of Net Transformations and Token Firing in Reconfigurable Place/Transition Systems	Lecture Notes in Computer Science	book-chapter
+73	10.5772/7499	2010	10.5772/7499	GPenSIM: A New Petri Net Simulator	Petri Nets Applications	book-chapter
+74	10.4108/infoscale.2007.888	2007	10.4108/infoscale.2007.888	A Complete and Efficient Strategy Based on Petri Net in Automated Trust Negotiation	Proceedings of the 2nd International ICST Conference on Scalable Information Systems	proceedings-article
+75	10.5772/10297	2010	10.5772/10297	Modeling Multimedia Synchronization Using a Time Petri Net Based Approach	Advances in Petri Net Theory and Applications	book-chapter
+76	10.1541/ieejias.109.463	1989	10.1541/ieejias.109.463	A high speed control method for automated machine systems based on token transition of petri net theory.	IEEJ Transactions on Industry Applications	journal-article
+77	10.1007/3-540-55767-9	1992	10.1007/3-540-55767-9	Modular Construction and Partial Order Semantics of Petri Nets	Lecture Notes in Computer Science	book
+78	10.3233/fi-2009-148	2009	10.3233/fi-2009-148	"Modular Construction of Finite and Complete Prefixes of Petri net			 Unfoldings"	Fundamenta Informaticae	journal-article
+79	10.1142/9789812839763_0007	1999	10.1142/9789812839763_0007	PETRI NET SIMULATION AND TOOLS	Modeling, Simulation, and Control of Flexible Manufacturing Systems	book-chapter
+80	10.1109/acsd.2008.4574598	2008	10.1109/acsd.2008.4574598	Modular construction of finite and complete prefixes of Petri net unfoldings	2008 8th International Conference on Application of Concurrency to System Design	proceedings-article
+81	10.4249/scholarpedia.6477	2008	10.4249/scholarpedia.6477	Petri net	Scholarpedia	journal-article
+82	10.5772/5310	2008	10.5772/5310	Petri Net Transformations	Petri Net, Theory and Applications	book-chapter
+83	10.1016/0304-3975(91)90084-f	1991	10.1016/0304-3975(91)90084-f	Executions: a new partial-order semantics of Petri nets	Theoretical Computer Science	journal-article
+84	10.1007/bf02289716	1961	10.1007/bf02289716	Multidimensional Unfolding: Determining Configuration from Complete Rank Order Preference Data	Psychometrika	journal-article
+85	10.1109/ds-rt.2015.34	2015	10.1109/ds-rt.2015.34	Timing Analysis of Cyclic Time Petri Net Using Relaxed Unfolding and Global Time Technique	2015 IEEE/ACM 19th International Symposium on Distributed Simulation and Real Time Applications (DS-RT)	proceedings-article
+86	10.3403/30175183	None	10.3403/30175183	Analysis techniques for dependability. Petri net techniques		standard
+87	10.1201/9781420040562.axa.7	2002	10.1201/9781420040562.axa.7	Program Flow	Building Web Applications with C# and .NET	book-chapter
+88	10.1007/3-540-55767-9_1	1992	10.1007/3-540-55767-9_1	Introduction	Lecture Notes in Computer Science	book-chapter
+89	10.1016/s1474-6670(17)64101-6	1986	10.1016/s1474-6670(17)64101-6	Validation of Petri Net Models by ‘Petri-Net-Machine’	IFAC Proceedings Volumes	journal-article
+90	10.3403/30175183u	None	10.3403/30175183u	Analysis techniques for dependability. Petri net techniques		standard
+91	10.4018/978-1-4666-9594-8.les13	None	10.4018/978-1-4666-9594-8.les13	Petri Net Computing	Petri Nets for Modeling and Computing	book-chapter
+92	10.5772/5312	2008	10.5772/5312	Petri Net Based Modelling of Communication in Systems on Chip	Petri Net, Theory and Applications	book-chapter
+93	10.1093/oed/1477097321	2023	10.1093/oed/1477097321	Petri net, n.	Oxford English Dictionary	book-chapter
+94	10.1007/978-3-319-07734-5_10	2014	10.1007/978-3-319-07734-5_10	Flow Unfolding of Multi-clock Nets	Lecture Notes in Computer Science	book-chapter
+95	10.1007/3-540-69108-1_1	1998	10.1007/3-540-69108-1_1	Petri Nets as Token Objects	Lecture Notes in Computer Science	book-chapter
+96	10.5772/7503	2010	10.5772/7503	Workflow Diagnosis Using Petri Net Charts	Petri Nets Applications	book-chapter
+97	10.7551/mitpress/8811.003.0008	2011	10.7551/mitpress/8811.003.0008	Colored Petri Nets	Modeling Business Processes	book-chapter
+98	10.1016/s0303-2647(03)00142-4	2003	10.1016/s0303-2647(03)00142-4	Petri net modeling of high-order genetic systems using grammatical evolution	Biosystems	journal-article
+99	10.7551/mitpress/8811.003.0009	2011	10.7551/mitpress/8811.003.0009	Hierarchical Petri Nets	Modeling Business Processes	book-chapter
+100	10.1109/poweri.2006.1632569	2006	10.1109/poweri.2006.1632569	Fault diagnosis of power system using neural Petri net and fuzzy neural Petri net	2006 IEEE Power India Conference	proceedings-article

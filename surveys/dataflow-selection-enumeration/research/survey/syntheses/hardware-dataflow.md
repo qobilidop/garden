@@ -110,8 +110,15 @@ token-flow unfoldings combine that representation with prime event structures:
 one avoids isomorphic processes and a reduced variant further decreases
 representations whose underlying runs are isomorphic, while both retain
 complete partial-order behavior and admit canonical complete finite prefixes
-for bounded nets. Token-trail net languages jointly expose conflict and
-concurrency and cover finite unfoldings and step languages. Dynamic slices can be marking or MTL
+for bounded nets. A modular construction instead derives a complete prefix
+directly by exchanging interface-relative summaries among components, without
+first constructing the global net. Direct contextual-net prefixes preserve
+read-only resource access and account for events with multiple histories over
+arbitrary semi-weighted bounded contextual nets. Symbolic complete prefixes
+also cover safe Time Petri Net processes, while high-level symbolic prefixes
+cover a safe class and an extension with infinitely many reachable markings.
+Token-trail net languages jointly expose conflict and concurrency and cover
+finite unfoldings and step languages. Dynamic slices can be marking or MTL
 relative; safety slices preserve verification and falsification of the stated
 stutter-invariant properties; maximal slicing can retain every transition that
 contributes tokens to selected places in any computation; and timed aggregate
@@ -121,9 +128,10 @@ token-change observations while minimizing transitions and connections.
 Dynamic observation policies compile to
 deterministic observed-event generators, and minimal-observation synthesis
 reduces the observable alphabet while preserving supervisor control
-equivalence. These constructions establish partial-order semantic objects,
-requested-place reduction, and inverse observation without producing typed
-program residuals or caller-input inverse fibers.
+equivalence. These constructions establish compositional, contextual, timed,
+and high-level partial-order semantic objects, requested-place reduction, and
+inverse observation without producing typed program residuals or caller-input
+inverse fibers.
 
 Delpeuch supplies a separate language-level boundary: a complete categorical
 axiomatization and three-dimensional diagram language for value-dependent
@@ -148,8 +156,9 @@ semantic ingredients are close:
   models;
 - conformance, latency-insensitive validation, and bounded-network refinement
   relate dataflow to hardware;
-- token-flow semantics, redundancy-reduced complete unfoldings, and token-trail
-  semantics supply complete Petri-net behavior representations; and
+- token-flow semantics; redundancy-reduced, modular, contextual-read, timed,
+  and high-level symbolic complete prefixes; and token-trail semantics supply
+  complete Petri-net behavior representations; and
 - Petri-net slicing, reconstruction, and observation-policy synthesis supply
   property-preserving requested-event and observation-driven inverse results.
 

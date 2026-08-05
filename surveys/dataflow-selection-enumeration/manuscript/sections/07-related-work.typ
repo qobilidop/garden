@@ -340,12 +340,23 @@ rewriting terms, step sequences, and firing sequences
 prime event structures: one avoids isomorphic processes and a reduced variant
 further decreases representations whose underlying runs are isomorphic, while
 both retain complete partial-order behavior; bounded nets admit canonical
-complete finite prefixes @bergenthum2009unfolding. Token-trail semantics instead
-gives a labelled-net language that represents conflict and concurrency,
+complete finite prefixes @bergenthum2009unfolding. A modular construction
+derives a complete prefix directly from interface-relative component summaries,
+without first constructing the global net @madalinski2009modularprefix.
+Contextual prefixes treat read-only access and multiple event histories
+directly for arbitrary semi-weighted bounded contextual nets
+@baldan2008contextualprefix. Symbolic complete prefixes for safe Time Petri Nets
+represent every temporally complete extended process by prefix substitution
+under symbolic token-age constraints @chatain2006timeprefix. High-level
+symbolic prefixes generalize the safe-net construction and extend its cut-off
+criterion to a class with infinitely many reachable markings
+@wuerdemann2024symbolicprefix. Token-trail semantics instead gives a labelled-net
+language that represents conflict and concurrency,
 contains all finite unfoldings, and relates the source net's step language to
 those of the member nets @kovar2024tokentrail. These are rich whole-net behavior
-languages and unfoldings, not input-indexed observations of one requested
-pure-dataflow result or typed residual functions over its caller-input fibers.
+languages, reachability summaries, prefixes, and unfoldings, not input-indexed
+observations of one requested pure-dataflow result or typed residual functions
+over its caller-input fibers.
 
 Colored-net symbolic unfoldings provide another true-concurrency
 representation: they avoid materializing every independent-action interleaving

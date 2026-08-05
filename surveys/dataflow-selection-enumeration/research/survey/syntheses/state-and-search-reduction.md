@@ -30,9 +30,16 @@ execution correct and complete relative to concrete multithreaded executions.
 Concolic DPOR instantiates the same schedule omission during test generation.
 Approximate POR instead makes epsilon/delta loss explicit. Chatain and Fabre's
 symbolic unfoldings likewise avoid enumerating every concurrent-action
-interleaving and additionally commute with component product. Bilgram et al.
-further quotient behaviorally equivalent colors and remove impossible place
-colors while preserving a bisimilar unfolded net.
+interleaving and additionally commute with component product. A separate
+modular-prefix construction exchanges interface-relative component summaries
+to avoid constructing the global Petri net. Complete-prefix algorithms also
+operate directly on contextual nets with read arcs and multiple event
+histories, on safe timed nets with symbolic token ages, and on high-level
+symbolic nets, including an extended class with infinitely many reachable
+markings. These are reductions or finite representations of whole-net runs and
+reachability, not caller-input observation fibers with typed residuals.
+Bilgram et al. further quotient behaviorally equivalent colors and remove
+impossible place colors while preserving a bisimilar unfolded net.
 
 Other constructions omit different state dimensions. Basis markings abstract
 an acyclic implicit-transition subnet while completely characterizing the

@@ -1,0 +1,101 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1007/3-540-48068-4_11	2002	10.1007/3-540-48068-4_11	Computing a Finite Prefix of a Time Petri Net	Lecture Notes in Computer Science	book-chapter
+2	10.1007/978-3-540-89287-8_12	2008	10.1007/978-3-540-89287-8_12	McMillan’s Complete Prefix for Contextual Nets	Lecture Notes in Computer Science	book-chapter
+3	10.1007/3-540-69108-1_1	1998	10.1007/3-540-69108-1_1	Petri Nets as Token Objects	Lecture Notes in Computer Science	book-chapter
+4	10.46298/lmcs-19(4:37)2023	2023	10.46298/lmcs-19(4:37)2023	Decidability of Two Truly Concurrent Equivalences for Finite Bounded Petri Nets	Logical Methods in Computer Science	journal-article
+5	10.1007/11767589_8	2006	10.1007/11767589_8	Complete Finite Prefixes of Symbolic Unfoldings of Safe Time Petri Nets	Lecture Notes in Computer Science	book-chapter
+6	10.1007/978-3-031-33620-1_16	2023	10.1007/978-3-031-33620-1_16	Token Trail Semantics – Modeling Behavior of Petri Nets with Labeled Petri Nets	Lecture Notes in Computer Science	book-chapter
+7	10.46298/arima.3177	2017	10.46298/arima.3177	Unfolding through processes to compute the complete prefix of Petri nets	Revue Africaine de Recherche en Informatique et Mathématiques Appliquées	journal-article
+8	10.1109/pnpm.1989.68555	None	10.1109/pnpm.1989.68555	On bounds for token probabilities in a class of generalized stochastic Petri nets	Proceedings of the Third International Workshop on Petri Nets and Performance Models, PNPM89	proceedings-article
+9	10.31274/etd-180810-2060	None	10.31274/etd-180810-2060	Comparison of encoding schemes for symbolic model checking of bounded petri nets		dissertation
+10	10.46298/.8467	2021	10.46298/.8467	The Complexity of Synthesis of $b$-Bounded Petri Nets	Fundamenta Informaticae	journal-article
+11	10.1007/978-3-540-78127-1_27	None	10.1007/978-3-540-78127-1_27	Token-Free Petri Nets	Lecture Notes in Computer Science	book-chapter
+12	10.1007/978-3-031-61433-0_9	2024	10.1007/978-3-031-61433-0_9	Token Trail Semantics II - Petri Nets And Their Net Language	Lecture Notes in Computer Science	book-chapter
+13	10.1007/978-3-540-68746-7_6	2008	10.1007/978-3-540-68746-7_6	Faster Unfolding of General Petri Nets Based on Token Flows	Lecture Notes in Computer Science	book-chapter
+14	10.1007/978-3-540-68746-7_7	2008	10.1007/978-3-540-68746-7_7	Decomposition Theorems for Bounded Persistent Petri Nets	Lecture Notes in Computer Science	book-chapter
+15	10.1007/978-3-658-11765-8_3	2016	10.1007/978-3-658-11765-8_3	Translating MA Processes into Safe Petri Nets — Complete Construction	A Polynomial Translation of Mobile Ambients into Safe Petri Nets	book-chapter
+16	10.1007/3-540-56689-9_38	1993	10.1007/3-540-56689-9_38	Bounded self-stabilizing Petri nets	Lecture Notes in Computer Science	book-chapter
+17	10.1007/3-540-51525-9_12	1989	10.1007/3-540-51525-9_12	Representation by finite and safe Petri nets	Lecture Notes in Computer Science	book-chapter
+18	10.7494/csci.2020.21.4.3728	2020	10.7494/csci.2020.21.4.3728	CAUSAL REVERSIBILITY IN INDIVIDUAL TOKEN INTERPRETATION OF PETRI NETS	Computer Science	journal-article
+19	10.1007/978-3-030-21571-2_9	2019	10.1007/978-3-030-21571-2_9	Hardness Results for the Synthesis of b-bounded Petri Nets	Lecture Notes in Computer Science	book-chapter
+20	10.1007/978-3-031-33620-1_7	2023	10.1007/978-3-031-33620-1_7	Taking Complete Finite Prefixes to High Level, Symbolically	Lecture Notes in Computer Science	book-chapter
+21	10.1007/3-540-51525-9_13	1989	10.1007/3-540-51525-9_13	A remark on the representation by finite Petri nets	Lecture Notes in Computer Science	book-chapter
+22	10.1007/3-540-48068-4_23	2002	10.1007/3-540-48068-4_23	Token-Controlled Place Refinement in Hierarchical Petri Nets with Application to Active Document Workflow	Lecture Notes in Computer Science	book-chapter
+23	10.1007/978-3-642-75329-9_5	1992	10.1007/978-3-642-75329-9_5	Individual-Token Nets	Springer Compass International	book-chapter
+24	10.1007/978-3-030-21571-2_10	2019	10.1007/978-3-030-21571-2_10	Fixed Parameter Tractability and Polynomial Time Results for the Synthesis of b-bounded Petri Nets	Lecture Notes in Computer Science	book-chapter
+25	10.1007/978-3-030-21571-2_22	2019	10.1007/978-3-030-21571-2_22	Parameter Synthesis for Bounded Cost Reachability in Time Petri Nets	Lecture Notes in Computer Science	book-chapter
+26	10.1007/3-540-58152-9_20	1994	10.1007/3-540-58152-9_20	Liveness in bounded Petri nets which are covered by T-invariants	Lecture Notes in Computer Science	book-chapter
+27	10.1007/bfb0016220	None	10.1007/bfb0016220	A logical formalism for the study of the finite behaviour of Petri nets	Lecture Notes in Computer Science	book-chapter
+28	10.1007/bfb0019972	None	10.1007/bfb0019972	Top-down synthesis of live and bounded free choice nets	Lecture Notes in Computer Science	book-chapter
+29	10.1201/b13055-20	2016	10.1201/b13055-20	Petri Nets	Handbook of Finite State Based Models and Applications	book-chapter
+30	10.4204/eptcs.368.8	2022	10.4204/eptcs.368.8	Token Multiplicity in Reversing Petri Nets Under the Individual Token Interpretation	Electronic Proceedings in Theoretical Computer Science	journal-article
+31	10.12988/ams.2015.4121020	2015	10.12988/ams.2015.4121020	Bounded conflict free Petri nets of a field	Applied Mathematical Sciences	journal-article
+32	10.1007/978-3-642-02424-5_2	2009	10.1007/978-3-642-02424-5_2	Unifying Petri Net Semantics with Token Flows	Lecture Notes in Computer Science	book-chapter
+33	10.1007/978-3-662-63079-2_5	2021	10.1007/978-3-662-63079-2_5	The Complexity of Synthesizing $$\textsf {nop}$$-Equipped Boolean Petri Nets from g-Bounded Inputs	Lecture Notes in Computer Science	book-chapter
+34	10.1007/978-3-540-27793-4_10	2004	10.1007/978-3-540-27793-4_10	Finite Unfoldings of Unbounded Petri Nets	Lecture Notes in Computer Science	book-chapter
+35	10.1109/access.2024.3390774	2024	10.1109/access.2024.3390774	Verification of Archive System Opacity With Bounded Labeled Petri Nets	IEEE Access	journal-article
+36	10.3233/fun-2008-851-416	2008	10.3233/fun-2008-851-416	Token History Petri Nets	Fundamenta Informaticae	journal-article
+37	10.1007/978-3-540-68746-7_10	2008	10.1007/978-3-540-68746-7_10	A Symbolic Algorithm for the Synthesis of Bounded Petri Nets	Lecture Notes in Computer Science	book-chapter
+38	10.1007/3-540-55676-1_4	1992	10.1007/3-540-55676-1_4	A polynomial-time graph algorithm to decide liveness of some basic classes of bounded Petri nets	Lecture Notes in Computer Science	book-chapter
+39	10.1109/robot.2005.1570685	None	10.1109/robot.2005.1570685	A Supply Chain Model Using Complex-Valued Token Petri Nets	Proceedings of the 2005 IEEE International Conference on Robotics and Automation	proceedings-article
+40	10.1007/3-540-48068-4_20	2002	10.1007/3-540-48068-4_20	Regular Event Structures and Finite Petri Nets: The Conflict-Free Case	Lecture Notes in Computer Science	book-chapter
+41	10.1016/j.automatica.2023.111410	2024	10.1016/j.automatica.2023.111410	Symbolic state estimation in bounded timed labeled Petri nets	Automatica	journal-article
+42	10.1007/978-3-662-68191-6_3	2024	10.1007/978-3-662-68191-6_3	Computing a Parametric Reveals Relation For Bounded Equal-Conflict Petri Nets	Lecture Notes in Computer Science	book-chapter
+43	10.5772/7493	2010	10.5772/7493	Intuitive Transformation of UML2 Activities into Fundamental Modeling Concept Petri Nets and Colored Petri Nets	Petri Nets Applications	book-chapter
+44	10.1017/cbo9780511526558.003	1995	10.1017/cbo9780511526558.003	Analysis techniques for Petri nets	Free Choice Petri Nets	book-chapter
+45	10.1109/bicta.2010.5645264	2010	10.1109/bicta.2010.5645264	Parsing for languages of String Token Petri Nets	2010 IEEE Fifth International Conference on Bio-Inspired Computing: Theories and Applications (BIC-TA)	proceedings-article
+46	10.2168/lmcs-3(1:1)2007	2007	10.2168/lmcs-3(1:1)2007	Dense-Timed Petri Nets: Checking Zenoness, Token liveness and Boundedness	Logical Methods in Computer Science	journal-article
+47	10.1007/978-981-97-7336-7_14	2025	10.1007/978-981-97-7336-7_14	Information Flow Structure	Principle of Petri Nets	book-chapter
+48	10.1002/9781119262114.ch3	2016	10.1002/9781119262114.ch3	Comparison Petri Nets – Finite State Automaton	Systems Dependability Assessment	other
+49	10.1007/3-540-26821-9_3	None	10.1007/3-540-26821-9_3	Non-Autonomous Petri Nets	Discrete, Continuous, and Hybrid Petri Nets	book-chapter
+50	10.29007/4s4n	None	10.29007/4s4n	Diagnosis of supervision patterns on bounded labeled Petri nets by Model Checking	Kalpa Publications in Computing	proceedings-article
+51	10.5772/7519	2010	10.5772/7519	Systolic Petri Nets	Petri Nets Applications	book-chapter
+52	10.1002/9781394388660.ch1	2025	10.1002/9781394388660.ch1	From Petri Nets to Stochastic Petri Nets	Enhancing Stochastic Petri Nets with Reconfigurability	other
+53	10.1109/mwscas.1989.101817	None	10.1109/mwscas.1989.101817	On bounds for token probabilities in a class of generalized stochastic Petri nets	Proceedings of the 32nd Midwest Symposium on Circuits and Systems	proceedings-article
+54	10.1007/3-540-26821-9_6	None	10.1007/3-540-26821-9_6	Timed Hybrid Petri Nets	Discrete, Continuous, and Hybrid Petri Nets	book-chapter
+55	10.1007/11767589_18	2006	10.1007/11767589_18	Designing Reversibility-Enforcing Supervisors of Polynomial Complexity for Bounded Petri Nets Through the Theory of Regions	Lecture Notes in Computer Science	book-chapter
+56	10.1007/978-3-642-41115-1_5	2013	10.1007/978-3-642-41115-1_5	Petri Nets with Time Windows	Time and Petri Nets	book-chapter
+57	10.1007/3-540-26821-9_5	None	10.1007/3-540-26821-9_5	Timed Continuous Petri Nets	Discrete, Continuous, and Hybrid Petri Nets	book-chapter
+58	10.1007/3-540-26821-9_1	None	10.1007/3-540-26821-9_1	Bases of Petri Nets	Discrete, Continuous, and Hybrid Petri Nets	book-chapter
+59	10.1201/9781003210160-31	2021	10.1201/9781003210160-31	On Bounds for Token Probabilities in a Class of Generalized Stochastic Petri Nets	Numerical Solution of Markov Chains	book-chapter
+60	10.1007/3-540-26821-9_2	None	10.1007/3-540-26821-9_2	Properties of Petri Nets	Discrete, Continuous, and Hybrid Petri Nets	book-chapter
+61	10.26637/mjm0802/0019	2020	10.26637/mjm0802/0019	Regular string-token Petri nets	Malaya Journal of Matematik	journal-article
+62	10.1007/3-540-51525-9_14	1989	10.1007/3-540-51525-9_14	Representation by finite and strict predicate/transition nets	Lecture Notes in Computer Science	book-chapter
+63	10.23919/acc.2018.8431241	2018	10.23919/acc.2018.8431241	Non-interference assessment in bounded Petri nets via Integer Linear Programming	2018 Annual American Control Conference (ACC)	proceedings-article
+64	10.1007/978-3-540-73094-1_13	None	10.1007/978-3-540-73094-1_13	Complete Process Semantics for Inhibitor Nets	Lecture Notes in Computer Science	book-chapter
+65	10.1109/cdc.2018.8618931	2018	10.1109/cdc.2018.8618931	Non-Interference Enforcement in Bounded Petri Nets	2018 IEEE Conference on Decision and Control (CDC)	proceedings-article
+66	10.1007/978-3-319-91268-4_12	2018	10.1007/978-3-319-91268-4_12	Pattern Matching in Link Streams: A Token-Based Approach	Lecture Notes in Computer Science	book-chapter
+67	10.1007/978-3-540-27755-2_23	2004	10.1007/978-3-540-27755-2_23	Object Petri Nets	Lecture Notes in Computer Science	book-chapter
+68	10.1007/3-540-48068-4_6	2002	10.1007/3-540-48068-4_6	Is the Die Cast for the Token Game?	Lecture Notes in Computer Science	book-chapter
+69	10.5120/5776-8033	2012	10.5120/5776-8033	An Application of Array Token Petri Nets to Clustering Analysis for Syntactic Patterns	International Journal of Computer Applications	journal-article
+70	10.1016/j.automatica.2022.110689	2023	10.1016/j.automatica.2022.110689	K-diagnosability analysis of bounded and unbounded Petri nets using linear optimization	Automatica	journal-article
+71	10.23919/ecc54610.2021.9655111	2021	10.23919/ecc54610.2021.9655111	Observer Design for Bounded Output Synchronized Petri Nets	2021 European Control Conference (ECC)	proceedings-article
+72	10.22436/jmcs.030.02.01	2022	10.22436/jmcs.030.02.01	Regular string token fuzzy Petri nets	Journal of Mathematics and Computer Science	journal-article
+73	10.1016/j.ifacol.2018.08.268	2018	10.1016/j.ifacol.2018.08.268	Faulty patterns diagnosis for k-bounded non-Markovian timed stochastic Petri nets	IFAC-PapersOnLine	journal-article
+74	10.1007/978-1-4684-5218-1_19	1986	10.1007/978-1-4684-5218-1_19	Systolic Nets Modelling with Data Flow Petri Nets	Parallel Processing Techniques for Simulation	book-chapter
+75	10.1007/978-3-662-06289-0_3	1992	10.1007/978-3-662-06289-0_3	Hierarchical Coloured Petri Nets	Coloured Petri Nets	book-chapter
+76	10.1007/978-1-4615-1537-1_5	2001	10.1007/978-1-4615-1537-1_5	Acyclic Petri Nets	Supervision of Petri Nets	book-chapter
+77	10.4018/978-1-4666-9594-8.les12	None	10.4018/978-1-4666-9594-8.les12	Universal Petri Nets	Petri Nets for Modeling and Computing	book-chapter
+78	10.1109/tase.2005.853393	2005	10.1109/tase.2005.853393	Complex-Valued Token Petri Nets	IEEE Transactions on Automation Science and Engineering	journal-article
+79	10.1007/978-3-030-21571-2_15	2019	10.1007/978-3-030-21571-2_15	Finding Complex Process-Structures by Exploiting the Token-Game	Lecture Notes in Computer Science	book-chapter
+80	10.12988/ams.2013.310588	2013	10.12988/ams.2013.310588	A comparative study on adjunct array token Petri nets with some classes of array grammars	Applied Mathematical Sciences	journal-article
+81	10.1109/etfa.2011.6059034	2011	10.1109/etfa.2011.6059034	Translating robot programming language flow control into Petri nets	ETFA2011	proceedings-article
+82	10.1109/pnpm.2001.953370	None	10.1109/pnpm.2001.953370	SPBC: a Markovian extension of finite Petri box calculus	Proceedings 9th International Workshop on Petri Nets and Performance Models	proceedings-article
+83	10.1007/3-540-26821-9_4	None	10.1007/3-540-26821-9_4	Autonomous Continuous and Hybrid Petri Nets	Discrete, Continuous, and Hybrid Petri Nets	book-chapter
+84	10.4304/jnw.7.1.81-87	2012	10.4304/jnw.7.1.81-87	Bounded Length Least-Cost Path Estimation in Wireless Sensor Networks Using Petri Nets	Journal of Networks	journal-article
+85	10.1109/pnpm.1999.796566	None	10.1109/pnpm.1999.796566	Non equivalence between time Petri nets and time stream Petri nets	Proceedings 8th International Workshop on Petri Nets and Performance Models (Cat. No.PR00331)	proceedings-article
+86	10.1007/978-3-642-41115-1_3	2013	10.1007/978-3-642-41115-1_3	Time Petri Nets	Time and Petri Nets	book-chapter
+87	10.1007/978-3-642-41115-1_4	2013	10.1007/978-3-642-41115-1_4	Timed Petri Nets	Time and Petri Nets	book-chapter
+88	10.1017/9781009613316.006	2025	10.1017/9781009613316.006	Other Equivalences for Petri Nets	Syntax and Semantics of Petri Nets	book-chapter
+89	10.1007/bf01178259	1995	10.1007/bf01178259	Bounded self-stabilizing Petri nets	Acta Informatica	journal-article
+90	10.1007/s002360050012	1995	10.1007/s002360050012	Bounded self-stabilizing Petri nets	Acta Informatica	journal-article
+91	10.1007/978-3-540-75596-8_37	None	10.1007/978-3-540-75596-8_37	Model Checking Bounded Prioritized Time Petri Nets	Lecture Notes in Computer Science	book-chapter
+92	10.1109/acc.2007.4282277	2007	10.1109/acc.2007.4282277	Fault-Tolerant Supervisory Control of Discrete Event Systems Modeled by Bounded Petri Nets	2007 American Control Conference	proceedings-article
+93	10.1007/0-387-21552-2_9	2002	10.1007/0-387-21552-2_9	Colored Stochastic Petri Nets	Stochastic Petri Nets	book-chapter
+94	10.1109/12.926158	2001	10.1109/12.926158	Symbolic analysis of bounded Petri nets	IEEE Transactions on Computers	journal-article
+95	10.1007/978-3-319-07734-5_10	2014	10.1007/978-3-319-07734-5_10	Flow Unfolding of Multi-clock Nets	Lecture Notes in Computer Science	book-chapter
+96	10.1007/978-3-662-06289-0_5	1992	10.1007/978-3-662-06289-0_5	Formal Analysis of Coloured Petri Nets	Coloured Petri Nets	book-chapter
+97	10.1007/978-3-032-27879-1_10	2026	10.1007/978-3-032-27879-1_10	Conformance Checking for Partially Ordered Event Logs Using Token-Based Replay	Lecture Notes in Computer Science	book-chapter
+98	10.1007/978-3-642-84524-6_4	1991	10.1007/978-3-642-84524-6_4	Petri Nets and Algebraic Specifications	High-level Petri Nets	book-chapter
+99	10.1006/inco.1994.1080	1994	10.1006/inco.1994.1080	Reduction and Synthesis of Live and Bounded Free Choice Petri Nets	Information and Computation	journal-article
+100	10.1007/978-3-662-06289-0_1	1992	10.1007/978-3-662-06289-0_1	Informal Introduction to Coloured Petri Nets	Coloured Petri Nets	book-chapter
