@@ -257,7 +257,7 @@ A negative answer to novelty is a useful survey outcome and must be recorded in
 - Protocol established: 2026-08-04
 - Paper route: self-published versioned research artifact after the novelty
   audit in decision 0002
-- Authorship route: AI-authored repository release; any later conventional
-  submission requires an accountable human author and venue-required AI
-  disclosure
+- Authorship route: Bili Dong is the sole author of record; substantial use of
+  OpenAI Codex is disclosed, and human review must be completed before any
+  conventional submission
 - Working language: English

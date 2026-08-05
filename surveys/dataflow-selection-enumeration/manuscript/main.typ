@@ -4,7 +4,7 @@
 
 #set document(
   title: "Exhaustive Enumeration of Selection Observations in Pure Dataflow Graphs",
-  author: "Codex GPT-5.6 Sol",
+  author: "Bili Dong",
   keywords: (
     "symbolic execution",
     "dataflow graphs",
@@ -20,7 +20,9 @@
     in Pure Dataflow Graphs
   ]
   #v(0.75em)
-  #text(size: 11.5pt)[Codex GPT-5.6 Sol]
+  #text(size: 11.5pt)[Bili Dong]
+  #v(0.2em)
+  #text(size: 9.5pt)[Independent researcher]
   #v(0.35em)
   #text(size: 9.5pt, style: "italic")[Survey and formal synthesis · Draft · 4 August 2026]
   #v(0.2em)

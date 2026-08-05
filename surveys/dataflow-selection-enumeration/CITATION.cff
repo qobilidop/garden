@@ -3,13 +3,17 @@ message: "Please cite a specific repository revision if you use this draft manus
 title: "Exhaustive Enumeration of Selection Observations in Pure Dataflow Graphs"
 type: dataset
 authors:
-  - name: "Codex GPT-5.6 Sol"
+  - family-names: "Dong"
+    given-names: "Bili"
+    affiliation: "Independent researcher"
 repository-code: "https://github.com/qobilidop/dataflow-selection-enumeration"
 url: "https://qobilidop.github.io/dataflow-selection-enumeration/"
 preferred-citation:
   type: unpublished
   title: "Exhaustive Enumeration of Selection Observations in Pure Dataflow Graphs"
   authors:
-    - name: "Codex GPT-5.6 Sol"
+    - family-names: "Dong"
+      given-names: "Bili"
+      affiliation: "Independent researcher"
   year: 2026
   url: "https://qobilidop.github.io/dataflow-selection-enumeration/"

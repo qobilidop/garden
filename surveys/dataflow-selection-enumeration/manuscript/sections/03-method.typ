@@ -109,7 +109,14 @@ formal framework is an interpretive bridge: this paper distinguishes a theorem
 stated in prior work from a theorem obtained only after changing the observer
 or adding graph instrumentation.
 
-This version is a self-published research artifact authored by the AI system
-named on the title page. Any later submission to a conventional venue would
-require an accountable human author and the venue's required disclosure of AI
-assistance; this draft does not claim otherwise.
+== AI assistance and author responsibility
+
+OpenAI Codex (GPT-5.6 Sol) provided substantial assistance throughout this
+project, including literature-search planning, organization of the evidence
+record, cross-paper synthesis, development of the formal presentation,
+drafting and editing of manuscript text, and repository tooling. Bili Dong
+directed the project, is the sole author of record, and accepts responsibility
+for the manuscript. This draft remains under continuing human review. AI
+output is not treated as evidence: literature claims are intended to rest on
+the cited primary sources and accompanying evidence record, and mathematical
+claims must be checked against the stated definitions and proofs.

@@ -65,7 +65,13 @@ assert citation["cff-version"] == "1.2.0"
 assert citation["title"] == (
     "Exhaustive Enumeration of Selection Observations in Pure Dataflow Graphs"
 )
-assert citation["authors"] == [{"name": "Codex GPT-5.6 Sol"}]
+assert citation["authors"] == [
+    {
+        "affiliation": "Independent researcher",
+        "family-names": "Dong",
+        "given-names": "Bili",
+    }
+]
 assert "version" not in citation
 assert "date-released" not in citation
 assert citation["url"] == (
@@ -107,7 +113,7 @@ if [[ -f manuscript/main.typ ]]; then
   fi
 
   pdf_author="$(sed -n 's/^Author:[[:space:]]*//p' build/pdfinfo.txt)"
-  if [[ "${pdf_author}" != "Codex GPT-5.6 Sol" ]]; then
+  if [[ "${pdf_author}" != "Bili Dong" ]]; then
     printf 'Unexpected PDF author metadata: %s\n' "${pdf_author}" >&2
     exit 1
   fi

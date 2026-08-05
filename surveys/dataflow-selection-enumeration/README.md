@@ -22,6 +22,16 @@ claim of worldwide literature completeness. See
 [`research/survey/protocol.md`](research/survey/protocol.md) for the review
 protocol.
 
+## Authorship and AI assistance
+
+Bili Dong is the sole author of record and is responsible for the manuscript.
+OpenAI Codex (GPT-5.6 Sol) provided substantial assistance with literature-search
+planning, evidence organization, cross-paper synthesis, formal presentation,
+manuscript drafting and editing, and repository tooling. The manuscript remains
+a draft under continuing human review. AI output is not treated as evidence;
+literature claims are intended to rest on the cited primary sources and the
+accompanying evidence record.
+
 ## Development
 
 The manuscript is written in Typst and uses the repository's BibTeX database
@@ -65,8 +75,8 @@ Actions page.
 [`CITATION.cff`](CITATION.cff) contains machine-readable metadata for citing a
 specific repository revision. [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) records
 the pinned build inputs and PDF accessibility limitation, and [`LICENSE`](LICENSE)
-states the current rights status without attributing legal authority to the AI
-author. No versioned release is currently designated.
+states the current rights status while the manuscript remains under review. No
+versioned release is currently designated.
 
 The local `.scratch/` directory is ignored and may hold downloaded papers,
 search exports, or temporary notes. Durable findings must be distilled into the
