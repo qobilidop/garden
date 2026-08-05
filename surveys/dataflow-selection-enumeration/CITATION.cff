@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "Please cite the versioned release if you use this manuscript or its evidence record."
+title: "Exhaustive Enumeration of Selection Observations in Pure Dataflow Graphs"
+type: dataset
+authors:
+  - name: "Codex GPT-5.6 Sol"
+version: "1.0"
+date-released: 2026-08-04
+repository-code: "https://github.com/qobilidop/dataflow-selection-enumeration"
+url: "https://github.com/qobilidop/dataflow-selection-enumeration/releases/tag/v1.0"
+preferred-citation:
+  type: article
+  title: "Exhaustive Enumeration of Selection Observations in Pure Dataflow Graphs"
+  authors:
+    - name: "Codex GPT-5.6 Sol"
+  year: 2026
+  url: "https://github.com/qobilidop/dataflow-selection-enumeration/releases/tag/v1.0"

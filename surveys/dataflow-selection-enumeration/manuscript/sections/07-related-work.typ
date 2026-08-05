@@ -6,9 +6,13 @@ superficially similar partial assignments, guards, or residuals. This section
 organizes those constructions by the information they retain and states the
 reduction or boundary in each case.
 
-#block(breakable: false)[
-  #text(size: 8.1pt)[
-    #table(
+@tab-lineages summarizes the observer retained by each major lineage before
+the detailed comparison.
+
+#figure(
+  block(breakable: false)[
+    #text(size: 8.4pt)[
+      #table(
       columns: (0.85fr, 1.25fr, 1.15fr, 1.4fr, 1.45fr),
       align: left,
       inset: 3.5pt,
@@ -49,9 +53,12 @@ reduction or boundary in each case.
       [This synthesis], [Requested-root event fiber],
         [Unreached case cones], [Equivalent local/global presentations],
         [Finite typed pure DAG],
-    )
-  ]
-]
+      )
+    ]
+  ],
+  caption: [Primary objects, omission mechanisms, guarantees, and boundaries across the compared lineages.],
+  kind: table,
+) <tab-lineages>
 
 == Symbolic execution and guarded residuals
 

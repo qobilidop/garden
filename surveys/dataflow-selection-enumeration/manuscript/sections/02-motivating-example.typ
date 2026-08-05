@@ -20,10 +20,11 @@ $
 
 It simplifies extensionally to $op("ite")(p, x+1, y)$. Neither expression states
 the structural partition we intend to enumerate. Write $q_o$ and $q_i$ for the
-outer and inner sites. There are exactly three observations:
+outer and inner sites. @tab-motivating lists the three observations.
 
-#block(breakable: false)[
-  #table(
+#figure(
+  block(breakable: false)[
+    #table(
     columns: (1.8fr, 1.1fr, 0.8fr),
     align: (left, left, left),
     inset: 5pt,
@@ -34,8 +35,11 @@ outer and inner sites. There are exactly three observations:
     [$q_o -> "right"$], [$not p$], [$y$],
     [$q_o -> "left", q_i -> "right"$], [$p and not r$], [$x+1$],
     [$q_o -> "left", q_i -> "left"$], [$p and r$], [$x+1$],
-  )
-]
+    )
+  ],
+  caption: [Exact observations for the nested-selection example.],
+  kind: table,
+) <tab-motivating>
 
 The example separates four notions.
 

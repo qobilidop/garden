@@ -65,6 +65,12 @@ The downloaded archive contains `manuscript.pdf`. Artifacts are retained for
 90 days. A manual build can be started with **Run workflow** on the workflow's
 Actions page.
 
+For an immutable citation target, use the `v1.0` GitHub release and its attached
+PDF checksum. [`CITATION.cff`](CITATION.cff) contains machine-readable citation
+metadata, [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) records the pinned build
+inputs and PDF accessibility limitation, and [`LICENSE`](LICENSE) states the
+current rights status without attributing legal authority to the AI author.
+
 The local `.scratch/` directory is ignored and may hold downloaded papers,
 search exports, or temporary notes. Durable findings must be distilled into the
 committed research record.

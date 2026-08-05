@@ -55,6 +55,21 @@ fi
 
 python3 -m py_compile scripts/*.py
 python3 scripts/check-survey.py
+python3 - <<'PY'
+from pathlib import Path
+
+import yaml
+
+citation = yaml.safe_load(Path("CITATION.cff").read_text(encoding="utf-8"))
+assert citation["cff-version"] == "1.2.0"
+assert citation["title"] == (
+    "Exhaustive Enumeration of Selection Observations in Pure Dataflow Graphs"
+)
+assert citation["authors"] == [{"name": "Codex GPT-5.6 Sol"}]
+assert citation["version"] == "1.0"
+assert citation["url"].endswith("/releases/tag/v1.0")
+assert Path("LICENSE").stat().st_size > 0
+PY
 
 if command -v shellcheck >/dev/null; then
   shellcheck dev.sh scripts/*.sh
@@ -62,7 +77,28 @@ fi
 
 if [[ -f manuscript/main.typ ]]; then
   mkdir -p build
-  typst compile --root . manuscript/main.typ build/manuscript.pdf
+  typst compile \
+    --root . \
+    --creation-timestamp 1785801600 \
+    --pdf-standard a-2b \
+    --no-pdf-tags \
+    manuscript/main.typ \
+    build/manuscript.pdf
   pdftotext build/manuscript.pdf build/manuscript.txt
   test -s build/manuscript.txt
+
+  pdf_author="$(pdfinfo build/manuscript.pdf | sed -n 's/^Author:[[:space:]]*//p')"
+  if [[ "${pdf_author}" != "Codex GPT-5.6 Sol" ]]; then
+    printf 'Unexpected PDF author metadata: %s\n' "${pdf_author}" >&2
+    exit 1
+  fi
+
+  pdfinfo -struct-text build/manuscript.pdf \
+    >/dev/null \
+    2>build/pdf-structure.stderr
+  if [[ -s build/pdf-structure.stderr ]]; then
+    printf 'PDF structure diagnostics were emitted:\n' >&2
+    cat build/pdf-structure.stderr >&2
+    exit 1
+  fi
 fi
