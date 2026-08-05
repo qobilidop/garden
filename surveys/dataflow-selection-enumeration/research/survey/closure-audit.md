@@ -1873,3 +1873,134 @@ If round 49 reopens the map, round 50 is retired unexecuted. If both qualify,
 they establish the required two-round no-add sequence only for the recorded
 sources, exact queries, captured rankings, date, and frozen trigger. Complete
 primary and independent audits remain mandatory before closure.
+
+## Outcome of round 49 and retirement of round 50
+
+Round 49 reopens the map under the frozen conservative trigger. All three
+auditors parsed and title-screened the 1,200 logical occurrences. Every
+snapshot has the required seven-column header, 100 records, ranks 1--100, and
+100 unique nonblank source identifiers. The batch contains 1,106 unique
+identifiers; its 84 repeated-identifier groups contain 178 occurrences, or 94
+excess occurrences. Three blank-title records are nontechnical grants. Three
+quoted titles are multiline logical records: one contains two embedded
+newlines and two contain one each.
+
+All three independent normalizations counted 1,042 unique nonblank titles
+among 1,197 nonblank occurrences. The aggressive normalization applies Unicode
+NFKD, case folding, combining-mark deletion, maximal nonalphanumeric-run
+replacement by one space, and whitespace trimming and collapsing. It finds
+120 repeated-title groups containing 275 occurrences, or 155 excess
+occurrences.
+
+All three auditors returned reopen. Reconciliation retains 15 canonical works
+whose semantic objects, guarantees, program-model boundaries, or proximity
+satisfy the frozen trigger:
+
+- Abramsky generalizes the Kahn principle to abstract asynchronous and
+  nondeterministic networks; Arras et al. add a hierarchical parametric
+  composite dataflow/KPN execution model; Oh combines KPN and decidable
+  dataflow behavior at actor ports; and Tretter et al. translate compatible
+  dataflow actors into Kahn processes, the inverse direction of the retained
+  Kahn-to-firing-actor translation.
+- Colaco et al. carry a Kahn semantics into a multicore Scade implementation,
+  while Jonsson and Kok compare two fully abstract dataflow models by an
+  explicit isomorphism.
+- Cao et al. prove token-sequence preservation for latency-insensitive
+  dataflow buffers; Kapoor supplies a process-algebraic model with liveness,
+  deadlock-freedom, and latency-equivalence checks; Singh and Theobald extend
+  latency-insensitive design to conditional channel use, arbitrary network
+  topologies, and multiple clocks; and Suhaib et al. validate protocol families
+  dynamically and formally against latency equivalence. The 2005 Suhaib
+  conference record is reconciled to the fuller 2006 journal article.
+- Juhas et al. unify Petri-net semantics through token flows; Kovar and
+  Bergenthum give token-trail semantics for nets and their net language; Rakow
+  slices Petri nets while preserving scoped stutter-invariant safety
+  properties; and Ruan et al. reconstruct unknown net structure from
+  asynchronous token-change observations.
+- Delpeuch gives a complete categorical language for value-routed faceted
+  dataflow programs and workflow equivalence.
+
+Complete execution-trace graphs, Tokens-vs.-Signals conformance, bounded
+latency-insensitive refinement, maximal/minimal and structural Petri-net
+slicing, timed aggregate graphs, Kahn-to-actor translation, fully abstract
+traces, and minimal-event observation recur as already cataloged candidates.
+Earlier dynamic-slicing algorithms, latency-insensitive implementation
+variants, the Sears--Rudie observation survey, asynchronous trace reductions,
+and dataflow causal graphs remain supporting variants and add no separate
+changed boundary under this reconciliation.
+
+The audit also repairs one pre-existing catalog duplication: the DOI
+`10.1109/CSCWD68734.2026.11582111` had both `liang2026dataflow` and
+`liang2026dataflowpruning`. The latter is the retained canonical key and the
+former is removed. This is a one-time metadata repair, not a round-49
+literature addition.
+
+None of the additions supplies the target construction. They compare whole
+network traces, translate execution models, validate channel or protocol
+behavior, slice or reconstruct Petri nets, or axiomatize a different dataflow
+language. All three auditors found no work combining a complete sparse
+requested-site observation image, exact caller-input inverse fibers, and typed
+general residuals. Round 49 therefore cannot count toward closure, and round
+50 is retired unexecuted.
+
+## Replacement round `closure-replacement-51`: Crossref
+
+Frozen on 2026-08-04 after reconciliation of round 49, and before any round-51
+or round-52 query is executed. Source: Crossref REST API. The first twelve
+queries follow the changed boundaries added in round 49; the last three are
+direct-target queries. Each exact phrase is searched with
+`query.bibliographic`, sorted by relevance, with the first 100 records exported
+unless fewer are returned. A round qualifies as no-add only if complete
+screening adds neither a conceptual cluster nor a plausible close competitor.
+A publication within an already represented lineage does not reopen the map
+unless it changes the compared semantic object, guarantee, or program-model
+boundary, or is materially closer to the target construction.
+
+| ID | Exact query |
+|---|---|
+| C51-01 | `generalized Kahn principle abstract asynchronous nondeterministic event structures` |
+| C51-02 | `composite parametric dataflow Kahn process network port actor model` |
+| C51-03 | `latency insensitive dataflow buffer token sequence preservation backpressure` |
+| C51-04 | `process algebraic latency insensitive liveness deadlock latency equivalence` |
+| C51-05 | `generalized latency insensitive multi clock arbitrary topology protocol validation` |
+| C51-06 | `dataflow actors as Kahn processes Scade multicore semantics implementation` |
+| C51-07 | `fully abstract dataflow model isomorphism Kahn trace semantics` |
+| C51-08 | `Petri net token flow token trail net language semantics` |
+| C51-09 | `safety preserving Petri net slicing stutter invariant property` |
+| C51-10 | `reconstruct Petri net structure asynchronous token change observations` |
+| C51-11 | `complete categorical faceted dataflow workflow equivalence` |
+| C51-12 | `dataflow execution model translation observation preservation guarantee` |
+| C51-13 | `complete sparse requested site observation image caller input inverse fibers` |
+| C51-14 | `exact internal event observation partition typed residual function` |
+| C51-15 | `requested selection site outcomes input fibers symbolic residuals` |
+
+## Replacement round `closure-replacement-52`: arXiv
+
+Execute only if round 51 adds neither a conceptual cluster nor a plausible
+close competitor. Source: arXiv API. Frozen on 2026-08-04 before any round-51
+or round-52 execution. Each phrase is submitted as the conjunction of all
+alphanumeric terms across arXiv's `all` field, sorted by relevance, with at
+most the first 100 records and abstracts exported.
+
+| ID | Exact query |
+|---|---|
+| C52-01 | `generalized Kahn principle abstract asynchronous nondeterministic event structures` |
+| C52-02 | `composite parametric dataflow Kahn process network port actor model` |
+| C52-03 | `latency insensitive dataflow buffer token sequence preservation backpressure` |
+| C52-04 | `process algebraic latency insensitive liveness deadlock latency equivalence` |
+| C52-05 | `generalized latency insensitive multi clock arbitrary topology protocol validation` |
+| C52-06 | `dataflow actors as Kahn processes Scade multicore semantics implementation` |
+| C52-07 | `fully abstract dataflow model isomorphism Kahn trace semantics` |
+| C52-08 | `Petri net token flow token trail net language semantics` |
+| C52-09 | `safety preserving Petri net slicing stutter invariant property` |
+| C52-10 | `reconstruct Petri net structure asynchronous token change observations` |
+| C52-11 | `complete categorical faceted dataflow workflow equivalence` |
+| C52-12 | `dataflow execution model translation observation preservation guarantee` |
+| C52-13 | `complete sparse requested site observation image caller input inverse fibers` |
+| C52-14 | `exact internal event observation partition typed residual function` |
+| C52-15 | `requested selection site outcomes input fibers symbolic residuals` |
+
+If round 51 reopens the map, round 52 is retired unexecuted. If both qualify,
+they establish the required two-round no-add sequence only for the recorded
+sources, exact queries, captured rankings, date, and frozen trigger. Complete
+primary and independent audits remain mandatory before closure.

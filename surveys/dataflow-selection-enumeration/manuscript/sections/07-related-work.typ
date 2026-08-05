@@ -88,10 +88,25 @@ requested sparse internal observer.
 Jonsson's later trace semantics makes this boundary sharper: it is fully
 abstract and compositional for nondeterministic FIFO dataflow, and extends to
 asynchronous networks with unordered or lossy channels
-@jonsson1994fullabstraction. Meaning-preserving translation has also related
-Kahn processes directly to firing-based actors @cedersjo2016processesactors.
-These results compare whole network traces or program models; they do not
-enumerate requested firing outcomes and their caller-input inverse images.
+@jonsson1994fullabstraction. Jonsson and Kok had already related two fully
+abstract nondeterministic-dataflow models by proving them isomorphic
+@jonssonkok1989comparison. Abramsky's generalized Kahn principle gives a still
+broader fixed-point boundary for a class of nondeterministic abstract
+asynchronous networks, including models over event structures
+@abramsky1990generalizedkahn. These results compare whole network behaviors;
+they do not enumerate requested firing outcomes and their caller-input inverse
+images.
+
+Meaning-preserving translation has related Kahn processes to firing-based
+actors @cedersjo2016processesactors, while a constructive sufficient
+compatibility analysis supports the reverse actor-to-Kahn translation
+@tretter2015actorsaskahn. Other hybrids assign Kahn or decidable-dataflow
+behavior per actor port @oh2013portactor, compose dataflow and Kahn networks in
+a hierarchical parameterized execution model @arras2016dkpn, or carry SCADE's
+Kahn semantics into a synchronous Kahn multicore implementation
+@colaco2018scadekahn. These are substantial program-model and implementation
+boundaries, but none returns a partition of caller inputs by one requested
+internal observation with a typed residual.
 The intensional/extensional distinction is itself explicit in dataflow
 semantics. A categorical account records stepwise token production, whereas a
 synchronous Kahn account records the functions computed by nodes; the two are
@@ -109,6 +124,11 @@ profunctor-based relational model with a congruent bisimulation
 dependency-graph test proving deadlock freedom @wadge1981deadlock. These
 results preserve network behavior, primitive expressiveness, bisimulation, or
 deadlock freedom—not the inverse fibers of one requested internal observer.
+At a different abstraction level, faceted ETL workflows have a complete
+categorical axiomatization and a three-dimensional diagram language more
+expressive than a single DAG @delpeuch2020faceted. Its completeness concerns
+workflow equations, not exhaustive image and inverse-fiber enumeration for a
+declared internal observer.
 
 Selection observations choose a particular intensional quotient of these
 executions. They discard ordinary control history, retain the outcome of every
@@ -163,6 +183,15 @@ machines to bounded latency-insensitive dataflow networks gives a separate
 cycle-accurate compositional guarantee @vijayaraghavan2009bounded. Both relate
 whole hardware and dataflow behaviors, not the inverse input fibers of one
 requested internal observer.
+The latency-insensitive lineage also generalizes wrappers to independently used
+channels, arbitrary interconnect topologies, and multiple clocks
+@singh2004generalizedlatency; validates protocol families against synchronous
+designs by latency equivalence @suhaib2006validating; and gives a
+process-algebraic system model @kapoor2009latencyinsensitive. At the block
+level, proved input and output buffers preserve token sequences under the
+paper's fairness assumptions while backpressure breaks long combinational paths
+@cao2015latencyblocks. These works strengthen the whole-channel implementation
+and validation boundary, not the requested-site observer-fiber result.
 Dynamic-dataflow execution-trace graphs are a closer guard-level predecessor.
 Their nodes are concrete action firings and their dependency edges include
 tokens, ports, state, and explicit guard-enable or guard-disable relations;
@@ -304,6 +333,15 @@ sequences and semantic constraints into environment stubs for modular model
 checking @hughes2008interface. This is an analyst-supplied interface observer,
 not a derived partition of caller inputs.
 
+Petri-net semantics provides complete partial-order objects independent of
+slicing. Token-flow DAGs modulo isomorphism unify processes, partial languages,
+rewriting terms, step sequences, and firing sequences
+@juhas2009tokenflows. Token-trail semantics instead gives a labelled-net
+language that represents conflict and concurrency, contains all finite
+unfoldings, and relates the source net's step language to those of the member
+nets @kovar2024tokentrail. These are rich whole-net behavior languages, not
+input-indexed observations of one requested pure-dataflow result.
+
 Colored-net symbolic unfoldings provide another true-concurrency
 representation: they avoid materializing every independent-action interleaving
 and commute with component product @chatain2010factorization. Color quotienting
@@ -345,7 +383,11 @@ graph @ma2020timedmarking, and a region observer treats timed automata with no e
 @gao2020noevent. A probabilistic variant weights the consistent marking set
 @cabasino2015probabilistic. A different observation model starts
 from measured places even when no transition firing is directly observed
-@arichi2026estimation. Finally, observation-equivalent Petri-net generators can
+@arichi2026estimation. The inverse problem has also been posed directly:
+finite asynchronous token-change observations support reconstruction of
+compatible Petri-net structures, with optimization of transition and incidence
+counts under the paper's assumptions @ruan2016pnreconstruction. Finally,
+observation-equivalent Petri-net generators can
 replace marking outputs by adaptive labels while preserving exactly the
 consistent firing-sequence and marking sets @tong2016observation. These results
 make inverse-observation sets, compact exact representations, and observer
@@ -407,7 +449,10 @@ paths needed for property checking equivalent to the unsliced net
 @chariyathitipong2022tpnslicing. It returns one property-relative sliced model,
 not every observation and its inverse caller-input set.
 Structural-dependency slicing supplies a marking-sensitive predecessor
-@yu2015dynamicpnslicing. Stronger maximal/minimal algorithms retain either
+@yu2015dynamicpnslicing. Safety slicing preserves verification and falsification
+of the stated stutter-invariant linear-time safety properties while guaranteeing
+that the slice's state space is no larger @rakow2012safetyslicing. Stronger
+maximal/minimal algorithms retain either
 every node that may contribute tokens to requested places in any computation,
 or the nodes for one shortest contributing sequence, with the respective
 maximality and minimality proved @llorens2023pnslicing. Timed aggregate graphs

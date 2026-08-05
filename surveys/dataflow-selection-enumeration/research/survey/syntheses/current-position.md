@@ -97,7 +97,16 @@ already supplies:
   BDD/ADD sharing and canonicalization for fixed orders; and
 - least demanded computations for fixed stream-dataflow inputs and output
   demands, including compositional reverse-demand transformations and a
-  stability characterization.
+  stability characterization;
+- generalized Kahn fixed-point principles, comparison of fully abstract
+  dataflow models, and translations or composite models spanning Kahn,
+  firing-based, port-based, and synchronous actor implementations;
+- latency-insensitive dataflow wrappers, protocols, process models, and proved
+  buffers across single- and multi-clock hardware boundaries;
+- token-flow and token-trail semantic languages, property-preserving Petri-net
+  slices, and observation-driven Petri-net structure reconstruction; and
+- a complete categorical language for value-dependent faceted dataflow
+  workflows.
 
 These ingredients combine through a straightforward observation/outcome
 instrumentation of a finite pure graph.
