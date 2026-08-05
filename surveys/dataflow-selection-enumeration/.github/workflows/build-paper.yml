@@ -36,7 +36,6 @@ jobs:
         with:
           imageName: ghcr.io/qobilidop/dataflow-selection-enumeration/dev
           imageTag: latest,${{ github.sha }}
-          cacheFrom: ghcr.io/qobilidop/dataflow-selection-enumeration/dev
           push: filter
           refFilterForPush: refs/heads/main
           eventFilterForPush: push

@@ -6,5 +6,5 @@
     "cacheFrom": "ghcr.io/qobilidop/dataflow-selection-enumeration/dev"
   },
   "remoteUser": "ubuntu",
-  "workspaceFolder": "/workspace/dataflow-selection-enumeration"
+  "workspaceFolder": "/workspaces/dataflow-selection-enumeration"
 }

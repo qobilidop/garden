@@ -56,13 +56,13 @@ mkdir -p "${container_tmp}"
 
 exec docker run --rm "${terminal_args[@]}" \
   --platform linux/amd64 \
-  --volume "${repo_dir}:/workspace/dataflow-selection-enumeration" \
+  --volume "${repo_dir}:/workspaces/dataflow-selection-enumeration" \
   --volume "${container_tmp}:/tmp" \
-  --workdir /workspace/dataflow-selection-enumeration \
+  --workdir /workspaces/dataflow-selection-enumeration \
   --env HOME=/tmp \
   --env GIT_CONFIG_COUNT=1 \
   --env GIT_CONFIG_KEY_0=safe.directory \
-  --env GIT_CONFIG_VALUE_0=/workspace/dataflow-selection-enumeration \
+  --env GIT_CONFIG_VALUE_0=/workspaces/dataflow-selection-enumeration \
   --user "$(id -u):$(id -g)" \
   "${ssh_args[@]}" \
   "${image}" "$@"
