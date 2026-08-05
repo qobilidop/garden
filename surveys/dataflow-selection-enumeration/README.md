@@ -48,10 +48,11 @@ The same command compiles `manuscript/main.typ` to
 
 ### Downloading the PDF from GitHub
 
-The latest manuscript can be read directly at
-<https://qobilidop.github.io/dataflow-selection-enumeration/>. The **Build
-paper** workflow republishes that PDF to GitHub Pages after every successful
-push to `main`.
+The [paper website](https://qobilidop.github.io/dataflow-selection-enumeration/)
+links to the latest manuscript and the public research record. The PDF is also
+available [directly](https://qobilidop.github.io/dataflow-selection-enumeration/manuscript.pdf).
+The **Build paper** workflow republishes the website and PDF to GitHub Pages
+after every successful push to `main`.
 
 The **Build paper** workflow builds and verifies the manuscript on every push
 to `main`, on pull requests, and when started manually from the Actions tab.

@@ -53,7 +53,7 @@ jobs:
           path: build/pages
 
   deploy:
-    name: Publish manuscript PDF
+    name: Publish paper website
     if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
     needs: build
     runs-on: ubuntu-24.04
