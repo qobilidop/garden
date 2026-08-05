@@ -135,14 +135,22 @@
       }
 
       main {
+        display: grid;
+        flex: 1;
+        align-content: center;
+        grid-template-columns: minmax(0, 1fr);
+        justify-items: center;
         width: 100%;
-        max-width: 58rem;
+        max-width: 64rem;
         min-width: 0;
-        padding: clamp(5rem, 12vh, 8rem) 0;
+        margin: 0 auto;
+        padding: clamp(3rem, 6vh, 5rem) 0;
+        text-align: center;
       }
 
       h1 {
-        max-width: 15ch;
+        width: 100%;
+        max-width: 18ch;
         margin: 0;
         font-family: var(--serif);
         font-size: clamp(3.5rem, 7.4vw, 6.25rem);
@@ -153,8 +161,9 @@
       }
 
       .summary {
+        width: 100%;
         max-width: 46rem;
-        margin: clamp(2.2rem, 5vw, 3.25rem) 0 0;
+        margin: clamp(2.2rem, 5vw, 3.25rem) auto 0;
         color: var(--text);
         font-family: var(--serif);
         font-size: clamp(1.15rem, 2vw, 1.45rem);
@@ -164,6 +173,8 @@
       .actions {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
+        max-width: 100%;
         gap: 0.75rem;
         margin-top: 2.4rem;
       }
@@ -209,8 +220,9 @@
       }
 
       .record {
+        width: 100%;
         max-width: 46rem;
-        margin: 2.2rem 0 0;
+        margin: 2.2rem auto 0;
         padding-top: 1.4rem;
         border-top: 1px solid var(--line);
         color: var(--muted);
@@ -225,13 +237,14 @@
 
       footer {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         gap: 1.5rem;
         margin-top: auto;
         padding: 1.5rem 0 2rem;
         border-top: 1px solid var(--line);
         color: var(--muted);
         font-size: 0.75rem;
+        text-align: center;
       }
 
       footer p {
@@ -249,12 +262,14 @@
 
         header {
           display: grid;
+          justify-items: center;
           gap: 0.35rem;
           padding: 1.35rem 0;
+          text-align: center;
         }
 
         main {
-          padding: 4.5rem 0 5rem;
+          padding: 3.5rem 0 4rem;
         }
 
         h1 {
@@ -274,6 +289,7 @@
 
         footer {
           display: grid;
+          justify-items: center;
           gap: 0.35rem;
         }
       }
@@ -321,16 +337,9 @@
             href="https://github.com/qobilidop/dataflow-selection-enumeration/tree/main/research"
           >research record</a>.
         </p>
-
-        <p class="record">
-          This draft was developed with substantial assistance from OpenAI
-          Codex (GPT-5.6 Sol). Bili Dong is the sole author of record and is
-          responsible for its contents.
-        </p>
       </main>
 
       <footer>
-        <p>Bili Dong · Independent researcher</p>
         <p>
           <a
             href="https://github.com/qobilidop/dataflow-selection-enumeration/blob/main/CITATION.cff"
