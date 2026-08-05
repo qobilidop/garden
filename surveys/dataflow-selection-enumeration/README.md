@@ -45,9 +45,10 @@ directly. Run repository checks inside the development container:
 ./dev.sh ./scripts/check.sh
 ```
 
-The first invocation builds the image from `ubuntu:24.04`; later invocations
-reuse that local image. Pass `--build` after changing the Dockerfile or when an
-explicit rebuild is wanted:
+The first invocation builds the image from `ubuntu:24.04`, using the latest
+successful `main` development image from GitHub Container Registry as a cache
+when it is accessible; later invocations reuse the local image. Pass `--build`
+after changing the Dockerfile or when an explicit rebuild is wanted:
 
 ```console
 ./dev.sh --build ./scripts/check.sh
@@ -55,6 +56,9 @@ explicit rebuild is wanted:
 
 The same command compiles `manuscript/main.typ` to
 `build/manuscript.pdf` and verifies that the PDF contains extractable text.
+GitHub Actions interprets the same `.devcontainer/devcontainer.json` through
+the Dev Containers CLI and publishes successful `main` images as
+`ghcr.io/qobilidop/dataflow-selection-enumeration/dev`.
 
 To stage the next due literature searches without committing unfinished
 results:

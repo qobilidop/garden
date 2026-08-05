@@ -5,6 +5,7 @@ set -euo pipefail
 repo_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 readonly repo_dir
 readonly image="${DATAFLOW_SELECTION_ENUMERATION_DEV_IMAGE:-dataflow-selection-enumeration-dev:local}"
+readonly cache_image="${DATAFLOW_SELECTION_ENUMERATION_DEV_CACHE_IMAGE-ghcr.io/qobilidop/dataflow-selection-enumeration/dev:latest}"
 readonly container_tmp="${repo_dir}/.scratch/container-tmp"
 
 force_build=false
@@ -19,8 +20,15 @@ if (( $# == 0 )); then
 fi
 
 if [[ "${force_build}" == true ]] || ! docker image inspect "${image}" >/dev/null 2>&1; then
+  build_args=(--platform linux/amd64)
+  if [[ -n "${cache_image}" ]] && docker pull "${cache_image}" >/dev/null 2>&1; then
+    build_args+=(--cache-from "${cache_image}")
+  elif [[ -n "${cache_image}" ]]; then
+    printf 'Published development-image cache unavailable; building locally.\n' >&2
+  fi
+
   docker build \
-    --platform linux/amd64 \
+    "${build_args[@]}" \
     --tag "${image}" \
     --file "${repo_dir}/.devcontainer/Dockerfile" \
     "${repo_dir}"

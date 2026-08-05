@@ -2,7 +2,9 @@
   "name": "dataflow-selection-enumeration",
   "build": {
     "dockerfile": "Dockerfile",
-    "context": ".."
+    "context": "..",
+    "cacheFrom": "ghcr.io/qobilidop/dataflow-selection-enumeration/dev"
   },
+  "remoteUser": "ubuntu",
   "workspaceFolder": "/workspace/dataflow-selection-enumeration"
 }

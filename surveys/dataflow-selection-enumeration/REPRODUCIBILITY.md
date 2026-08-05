@@ -12,6 +12,12 @@ intentionally fixed to the following inputs:
 - PDF creation timestamp `1785801600` (2026-08-04 00:00:00 UTC); and
 - exact GitHub Actions commit SHAs recorded in the workflow.
 
+GitHub Actions builds and runs `.devcontainer/devcontainer.json` through the
+Dev Containers CLI. Successful `main` builds publish
+`ghcr.io/qobilidop/dataflow-selection-enumeration/dev`; CI and local builds may
+reuse its BuildKit layers as a performance cache. Cache availability does not
+affect the pinned toolchain inputs or the resulting environment.
+
 The gate emits PDF/A-2b and checks extractable text, exact author metadata, and
 absence of Poppler structural diagnostics. Typst 0.15.1's default tagged output
 for this table-heavy manuscript triggers Poppler diagnostics for `Suspects` and
