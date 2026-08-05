@@ -90,12 +90,10 @@ world literature contains no additional relevant work.
 The repository accompanying this paper contains the protocol, catalog,
 query-level search log, frozen screening snapshots, source notes, evidence
 matrix, claim ledger, and closure audit. Downloaded papers and transient search
-responses are deliberately excluded. The archived `v1.0` release and rendered
-manuscript are available at
-#link("https://github.com/qobilidop/dataflow-selection-enumeration/releases/tag/v1.0")[the release]
-and
-#link("https://qobilidop.github.io/dataflow-selection-enumeration/")[reader],
-respectively; the search record was last reconciled on 4 August 2026.
+responses are deliberately excluded. The current rendered manuscript is
+available at
+#link("https://qobilidop.github.io/dataflow-selection-enumeration/")[the paper website];
+the search record was last reconciled on 4 August 2026.
 
 == Validity threats
 
@@ -114,4 +112,4 @@ or adding graph instrumentation.
 This version is a self-published research artifact authored by the AI system
 named on the title page. Any later submission to a conventional venue would
 require an accountable human author and the venue's required disclosure of AI
-assistance; this release does not claim otherwise.
+assistance; this draft does not claim otherwise.

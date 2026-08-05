@@ -1,6 +1,6 @@
-# Reproducibility and release toolchain
+# Reproducibility toolchain
 
-Version 1.0 is built through `./dev.sh ./scripts/check.sh`. The release build is
+The current draft is built through `./dev.sh ./scripts/check.sh`. The build is
 intentionally fixed to the following inputs:
 
 - Ubuntu 24.04 image digest
@@ -15,12 +15,13 @@ intentionally fixed to the following inputs:
 The gate emits PDF/A-2b and checks extractable text, exact author metadata, and
 absence of Poppler structural diagnostics. Typst 0.15.1's default tagged output
 for this table-heavy manuscript triggers Poppler diagnostics for `Suspects` and
-`BorderColor` structure attributes. The release therefore disables PDF tags
+`BorderColor` structure attributes. The build therefore disables PDF tags
 instead of publishing a malformed tag tree. This is a documented accessibility
 limitation, not a PDF/UA claim. A future Typst upgrade should re-enable tagging
 only after the same structural gate passes and mathematical alternatives have
 been supplied.
 
-The Git tag identifies source, while the GitHub release carries the built PDF
-and its SHA-256 checksum. GitHub Pages serves the current `main` build for
-convenient reading; the release asset is the immutable citation target.
+Git commits identify exact source revisions. GitHub Pages serves the current
+`main` build for convenient reading, and successful GitHub Actions runs retain
+downloadable PDF artifacts for 90 days. No versioned release or immutable
+citation target is currently designated.

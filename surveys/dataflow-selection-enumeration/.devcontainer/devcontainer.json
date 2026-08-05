@@ -1,8 +1,8 @@
 {
-  "name": "xlsynth-symex-paper",
+  "name": "dataflow-selection-enumeration",
   "build": {
     "dockerfile": "Dockerfile",
     "context": ".."
   },
-  "workspaceFolder": "/workspace/xlsynth-symex-paper"
+  "workspaceFolder": "/workspace/dataflow-selection-enumeration"
 }

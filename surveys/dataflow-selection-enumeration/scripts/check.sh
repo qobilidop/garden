@@ -66,8 +66,12 @@ assert citation["title"] == (
     "Exhaustive Enumeration of Selection Observations in Pure Dataflow Graphs"
 )
 assert citation["authors"] == [{"name": "Codex GPT-5.6 Sol"}]
-assert citation["version"] == "1.0"
-assert citation["url"].endswith("/releases/tag/v1.0")
+assert "version" not in citation
+assert "date-released" not in citation
+assert citation["url"] == (
+    "https://qobilidop.github.io/dataflow-selection-enumeration/"
+)
+assert citation["preferred-citation"]["type"] == "unpublished"
 assert Path("LICENSE").stat().st_size > 0
 PY
 

@@ -12,10 +12,6 @@ established semantic and enumeration machinery; the formal development is
 therefore retained as a unifying lens rather than presented as a new
 foundational calculus.
 
-The implementation that motivated the research lives in the separate
-[`xlsynth-symex`](https://github.com/qobilidop/xlsynth-symex) repository. XLS is
-an eventual case study, not the definition of the research problem.
-
 ## Current phase
 
 The systematic map is closed under its recorded protocol, and the formal
@@ -66,11 +62,11 @@ The downloaded archive contains `manuscript.pdf`. Artifacts are retained for
 90 days. A manual build can be started with **Run workflow** on the workflow's
 Actions page.
 
-For an immutable citation target, use the `v1.0` GitHub release and its attached
-PDF checksum. [`CITATION.cff`](CITATION.cff) contains machine-readable citation
-metadata, [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) records the pinned build
-inputs and PDF accessibility limitation, and [`LICENSE`](LICENSE) states the
-current rights status without attributing legal authority to the AI author.
+[`CITATION.cff`](CITATION.cff) contains machine-readable metadata for citing a
+specific repository revision. [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) records
+the pinned build inputs and PDF accessibility limitation, and [`LICENSE`](LICENSE)
+states the current rights status without attributing legal authority to the AI
+author. No versioned release is currently designated.
 
 The local `.scratch/` directory is ignored and may hold downloaded papers,
 search exports, or temporary notes. Durable findings must be distilled into the

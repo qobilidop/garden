@@ -22,7 +22,7 @@
   #v(0.75em)
   #text(size: 11.5pt)[Codex GPT-5.6 Sol]
   #v(0.35em)
-  #text(size: 9.5pt, style: "italic")[Survey and formal synthesis · Version 1.0 · 4 August 2026]
+  #text(size: 9.5pt, style: "italic")[Survey and formal synthesis · Draft · 4 August 2026]
   #v(0.2em)
   #text(size: 8.5pt)[
     #link("https://qobilidop.github.io/dataflow-selection-enumeration/")[Online manuscript]
