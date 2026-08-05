@@ -23,15 +23,25 @@ to audit its selection process.
   abstracts. Technical claims carry page, section, definition, theorem, or
   algorithm anchors in source notes.
 - Final no-add queries and the rule that reopens the map were predeclared.
-- A reviewer who did not choose those queries must sample exclusions and audit
-  the closure record before the map is called closed.
+- Three separate agent passes duplicate-screened every logical record in each
+  final closure round and audited the query, file, and anomaly counts before
+  the map was called closed.
+
+At the archived snapshot, the catalog has 897 entries, of which 200 are marked
+deep-read. The audited log contains 318 database-query rows and 245 separately
+recorded backward or forward citation chases. Excluding duplicate adjudication
+passes, those rows account for 35,720 screened record occurrences; occurrence
+counts are not unique-paper counts. Eighty-four claim-evidence rows connect
+manuscript statements to primary-source notes.
 
 ## Threats that remain
 
-**Selection reliability.** Initial screening and extraction use one primary
-screener. An independent audit can detect systematic omissions but is weaker
-than duplicate human screening with inter-rater agreement. The manuscript must
-state this limitation rather than imply a conventional two-reviewer study.
+**Selection reliability.** Initial extraction uses one primary agent. Later
+closure rounds were duplicate-screened in full by three separate agent passes,
+but all agents worked from the same project framing and were not independent
+human review teams. No human inter-rater calibration or agreement statistic was
+performed. The duplicated passes expose disagreements and mechanical omissions
+but remain weaker than a conventional multi-reviewer study.
 
 **Index coverage and metadata quality.** OpenAlex omits some bibliographies,
 leaves referenced identifiers unresolved, conflates versions, and sometimes

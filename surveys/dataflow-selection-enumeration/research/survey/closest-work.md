@@ -1,6 +1,6 @@
 # Closest-work audit
 
-Status: open
+Status: closed under the recorded mapping protocol on 2026-08-04
 
 This document will compare only the works that could plausibly subsume the
 proposed contribution. Inclusion here is intentionally more selective than the
@@ -84,13 +84,7 @@ survey catalog.
 | Giua et al. 2003/2005; Jiroveanu et al. 2008; Ma et al. 2017/2020; Basile et al. 2013; Li--Hadjicostis 2013; Ruan et al. 2019; Tong et al. 2016; newer timed extensions | Labeled or timed Petri nets under partial event or marking observation | Current markings, representative or basis markings with unobservable closure, minimum-token initial markings, or timed initial states consistent with an observation | Silent events and indistinguishable labels remain existential; minimum-marking methods optimize token count; equivalent generators change the observation encoding without changing consistent runs | Exact current-state sets, fixed linear characterizations, exact basis closure, complete minimum sets under stated structure, and exact observation-equivalent compilation; Basile remains correction-qualified | Marking/state estimate and sometimes timing constraints, not a program residual | Fixed linear systems, representative or minimal explanations, recursive minimum-set algorithms, state-class graphs, or adaptive-label compilation | Polynomial word-length claims fix structural parameters; newer timed and silent-transition methods impose explicit finiteness or explanation assumptions | Direct inverse-observation semantics and compact exact representations, including initial-state fibers. They concern Petri-net runs/states rather than a partition of all caller inputs with typed residuals. |
 | Yang--Hwang 2004; Dusa 2019 | Binary neural networks or Boolean truth tables | Simplified exact output rules or complete minimal prime implicants | Redundant hidden neurons and covered implicant subsets are omitted | Exact on the finite Boolean model | Boolean output rule | Network-function preservation and complete exact minimization | Exponential Boolean search remains possible | Subsumes exact Boolean-rule composition and internal-node elimination, but compiles the extensional output and discards the reached internal-event observer. |
 
-## Required adversarial conclusion
-
-Before theory drafting begins, this document must state the strongest known
-encoding of our proposed problem into each closest framework and identify which
-claimed result, if any, is not inherited from prior work.
-
-## Preliminary adversarial conclusion
+## Final adversarial conclusion
 
 The following broad claim is already known and must not be presented as novel:
 

@@ -5,10 +5,11 @@ It prevents query selection from being changed after seeing whether a batch
 adds a competitor. Citation chasing of the bounded critical set precedes these
 batches and does not count as either no-add round.
 
-Each query exports and title-screens the first 50 relevance-ranked results. A
-record whose title and venue leave technical relevance plausible receives
-abstract screening and, if still plausible, a primary-source reading. All
-included candidates and explicit exclusions are reconciled with
+The initial batches export and title-screen the first 50 relevance-ranked
+results; later frozen round blocks explicitly raise that depth to 100. A record
+whose title and venue leave technical relevance plausible receives abstract
+screening and, if still plausible, a primary-source reading. All included
+candidates and explicit exclusions are reconciled with
 `catalog.tsv`. A round counts as **no-add** only if it adds neither a conceptual
 cluster nor a plausible close competitor after that reconciliation.
 
@@ -2412,3 +2413,29 @@ represented testing boundaries and lexical homonyms.
 Round 59 therefore adds neither a conceptual cluster nor a plausible close
 competitor. Its predeclared condition is satisfied, so round 60 is authorized
 without changing its source, queries, ranking, depth, or trigger.
+
+## Outcome of round 60 and mapping closure
+
+Round 60 qualifies as the second consecutive no-add round. Each of the eight
+frozen phrases was translated mechanically into the conjunction of every
+alphanumeric term over arXiv's `all` field, with relevance-descending order and
+a 100-record limit. The original API responses reported zero hits and zero
+exports for every query. The eight retained snapshots consequently contain the
+exact eight-column header and no data records.
+
+Three independent audits verified the complete file set, byte-identical
+headers, zero logical records, and the query-construction code. Each auditor
+also replayed all eight queries read-only and again obtained zero hits and zero
+exports. There was therefore no candidate to add, exclude, or chase. The
+search-log rows preserve the original hit metadata because a header-only TSV
+alone proves zero exported records, not the API's `totalResults` value.
+
+Rounds 59 and 60 are consecutive, predeclared, independently audited no-add
+rounds. The map is therefore **closed under the recorded protocol as of 4
+August 2026**: the exact Crossref and arXiv queries, their ranking and depth,
+the conservative reopening trigger, the reconciled critical sources, and the
+separate citation chases. The zero-hit arXiv conjunctions are deliberately
+reported as narrow source/query saturation. They do not establish global
+literature completeness, statistical independence of retrieval systems, or a
+priority claim. Later work, a different index, or a newly exposed conceptual
+cluster reopens the map.
