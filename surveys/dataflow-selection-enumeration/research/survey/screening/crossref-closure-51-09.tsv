@@ -1,0 +1,101 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1142/9789814324298_0005	2012	10.1142/9789814324298_0005	Property-Preserving Refinements	Property-Preserving Petri Net Process Algebra in Software Engineering	book-chapter
+2	10.1142/9789814324298_0006	2012	10.1142/9789814324298_0006	Property-Preserving Reductions	Property-Preserving Petri Net Process Algebra in Software Engineering	book-chapter
+3	10.1142/9789814324298_0003	2012	10.1142/9789814324298_0003	Petri Net Processes and Extension Operators	Property-Preserving Petri Net Process Algebra in Software Engineering	book-chapter
+4	10.1142/9789814324298_0001	2012	10.1142/9789814324298_0001	Introduction	Property-Preserving Petri Net Process Algebra in Software Engineering	book-chapter
+5	10.1142/9789814324298_fmatter	2012	10.1142/9789814324298_fmatter	FRONT MATTER	Property-Preserving Petri Net Process Algebra in Software Engineering	other
+6	10.1142/9789814324298_bmatter	2012	10.1142/9789814324298_bmatter	BACK MATTER	Property-Preserving Petri Net Process Algebra in Software Engineering	other
+7	10.1109/access.2022.3170094	2022	10.1109/access.2022.3170094	Dynamic Slicing of Time Petri Net Based on MTL Property	IEEE Access	journal-article
+8	10.1142/9789814324298_0004	2012	10.1142/9789814324298_0004	Composition Operators of PPPA	Property-Preserving Petri Net Process Algebra in Software Engineering	book-chapter
+9	10.1109/icoia.2013.6650266	2013	10.1109/icoia.2013.6650266	Modelling of distributed programming systems with using of property-preserving Petri net process algebras and P/T Petri net processes	2013 Second International Conference on Informatics &amp; Applications (ICIA)	proceedings-article
+10	10.1142/9789814324298_0002	2012	10.1142/9789814324298_0002	Fundamentals on PPPA and Related Work	Property-Preserving Petri Net Process Algebra in Software Engineering	book-chapter
+11	10.1142/9789814324298	2012	10.1142/9789814324298	Property-Preserving Petri Net Process Algebra in Software Engineering		monograph
+12	10.1142/9789814324298_0007	2012	10.1142/9789814324298_0007	Place-Merging Operators for Resource Sharing	Property-Preserving Petri Net Process Algebra in Software Engineering	book-chapter
+13	10.1142/9789814324298_0011	2012	10.1142/9789814324298_0011	Application of PPPA to Security Policy Design	Property-Preserving Petri Net Process Algebra in Software Engineering	book-chapter
+14	10.1142/7919	2012	10.1142/7919	Property-Preserving Petri Net Process Algebra in Software Engineering		monograph
+15	10.1142/9789814324298_0009	2012	10.1142/9789814324298_0009	Application of PPPA to Multi-Agent System Design	Property-Preserving Petri Net Process Algebra in Software Engineering	book-chapter
+16	10.1142/9789814324298_0010	2012	10.1142/9789814324298_0010	Application of PPPA to Job-Shop Scheduling Systems	Property-Preserving Petri Net Process Algebra in Software Engineering	book-chapter
+17	10.1142/9789814324298_0008	2012	10.1142/9789814324298_0008	Application of PPPA to Component-Based Design of Manufacturing Systems	Property-Preserving Petri Net Process Algebra in Software Engineering	book-chapter
+18	10.1016/0045-7906(88)90012-2	1988	10.1016/0045-7906(88)90012-2	Invariant-preserving Petri net reduction and conditions for invariant-existence	Computers &amp; Electrical Engineering	journal-article
+19	10.1109/icrms.2011.5979349	2011	10.1109/icrms.2011.5979349	A software safety analysis method based on S-invariant of Petri Net	The Proceedings of 2011 9th International Conference on Reliability, Maintainability and Safety	proceedings-article
+20	10.1093/comjnl/bxh125	2005	10.1093/comjnl/bxh125	Handling Synchronization Problem in Petri Net-Based System Design by Property-Preserving Transition-Reduction	The Computer Journal	journal-article
+21	10.1007/978-3-642-31131-4_15	2012	10.1007/978-3-642-31131-4_15	Safety Slicing Petri Nets	Lecture Notes in Computer Science	book-chapter
+22	10.46298/.7346	2023	10.46298/.7346	Maximal and minimal dynamic Petri net slicing	Fundamenta Informaticae	journal-article
+23	10.1145/3815723.3815735	2026	10.1145/3815723.3815735	A Timed Petri Net Model and Renderer for Typesetting Pre-Mensural Polyphony	Proceedings of the 13th International Conference on Digital Libraries for Musicology	proceedings-article
+24	10.3724/sp.j.1087.2012.03071	2013	10.3724/sp.j.1087.2012.03071	Property preserving operation for simplifying Petri nets with inhibitor arcs	Journal of Computer Applications	journal-article
+25	10.4304/jcp.7.1.292-300	2012	10.4304/jcp.7.1.292-300	Structural Property Analysis of Petri Net	Journal of Computers	journal-article
+26	10.1007/978-3-319-57861-3_8	2017	10.1007/978-3-319-57861-3_8	An Integrated Environment for Petri Net Slicing	Lecture Notes in Computer Science	book-chapter
+27	10.1007/978-3-662-65303-6_1	2022	10.1007/978-3-662-65303-6_1	Property-Preserving Transformations of Elementary Net Systems Based on Morphisms	Lecture Notes in Computer Science	book-chapter
+28	10.3233/fi-222148	2023	10.3233/fi-222148	Maximal and Minimal Dynamic Petri Net Slicing	Fundamenta Informaticae	journal-article
+29	10.1007/3-540-48745-x_23	1999	10.1007/3-540-48745-x_23	Five Classes of Invariant-Preserving Transformations on Colored Petri Nets	Lecture Notes in Computer Science	book-chapter
+30	10.2139/ssrn.7227238	2026	10.2139/ssrn.7227238	Petri-Net Safety Assessment of a BESS for Electrified Shipping		posted-content
+31	10.1002/0471739421.ch17	2005	10.1002/0471739421.ch17	Petri Net Analysis (PNA)	Hazard Analysis Techniques for System Safety	other
+32	10.1109/med.2009.5164692	2009	10.1109/med.2009.5164692	P - Invariant based Petri net traffic controller	2009 17th Mediterranean Conference on Control and Automation	proceedings-article
+33	10.1377/forefront.20221205.854706	2022	10.1377/forefront.20221205.854706	30 Years Of 340B: Preserving The Health Care Safety Net	Forefront Group	dataset
+34	10.21203/rs.2.15608/v1	2019	10.21203/rs.2.15608/v1	Petri net Modeling and Property Analysis of C3 plant Photosynthesis and Photorespiration		posted-content
+35	10.1109/infcom.1997.631155	None	10.1109/infcom.1997.631155	Analyzing non-determinism in telecommunication services using P-invariant of Petri-net model	Proceedings of INFOCOM '97	proceedings-article
+36	10.1007/3-540-56863-8_55	1993	10.1007/3-540-56863-8_55	Exploiting T-invariant analysis in diagnostic reasoning on a Petri net model	Lecture Notes in Computer Science	book-chapter
+37	10.1109/csie.2009.424	2009	10.1109/csie.2009.424	Property Preservation of Petri Refinement Net	2009 WRI World Congress on Computer Science and Information Engineering	proceedings-article
+38	10.2139/ssrn.4045915	2022	10.2139/ssrn.4045915	Lifted Invariant Analysis of Petri Net Product Lines	SSRN Electronic Journal	journal-article
+39	10.5772/5321	2008	10.5772/5321	Timed Hierarchical Object-Oriented Petri Net	Petri Net, Theory and Applications	book-chapter
+40	10.2139/ssrn.5227859	2025	10.2139/ssrn.5227859	Preserving the Subsidized Housing Safety Net : A Multi-Dimensional Risk Assessment Strategy		posted-content
+41	10.1109/isise.2008.56	2008	10.1109/isise.2008.56	Structural Property Preservation of a Kind of Petri Net Refinement	2008 International Symposium on Information Science and Engineering	proceedings-article
+42	10.1109/tits.2023.3294283/mm1	None	10.1109/tits.2023.3294283/mm1	Design of Safety Petri Net Controllers for Deadlock Prevention at a Class of Road Intersections_supp1-3294283.pdf		component
+43	10.1007/978-3-642-31588-6_61	2012	10.1007/978-3-642-31588-6_61	Behavior Analysis of Software Systems Based on Petri Net Slicing	Lecture Notes in Computer Science	book-chapter
+44	10.70675/b3e0ac8bze690z47f6zabdbza6025479e9f0	None	10.70675/b3e0ac8bze690z47f6zabdbza6025479e9f0	Improving the model checking of stutter-invariant LTL properties		dissertation
+45	10.7551/mitpress/8811.003.0010	2011	10.7551/mitpress/8811.003.0010	Analyzing Petri Net Models	Modeling Business Processes	book-chapter
+46	10.1109/access.2019.2899190	2019	10.1109/access.2019.2899190	Time-Varying Automated Manufacturing Systems and Their Invariant-Based Control: A Petri Net Approach	IEEE Access	journal-article
+47	10.1109/icycs.2008.128	2008	10.1109/icycs.2008.128	Property Preservation by Petri-Net-Based Refinements in System Design	2008 The 9th International Conference for Young Computer Scientists	proceedings-article
+48	10.4304/jsw.7.3.499-507	2012	10.4304/jsw.7.3.499-507	Compositional Verification of Liveness Property in Inhibitor-arc Connections of Petri Net Systems	Journal of Software	journal-article
+49	10.1007/springerreference_21281	None	10.1007/springerreference_21281	Petri net	SpringerReference	reference-entry
+50	10.1109/icca.2009.5410303	2009	10.1109/icca.2009.5410303	Validation of Petri net apoptosis models using P-invariant analysis	2009 IEEE International Conference on Control and Automation	proceedings-article
+51	10.1109/iitsi.2010.35	2010	10.1109/iitsi.2010.35	Property Preservation of Time Petri Net Reduction	2010 Third International Symposium on Intelligent Information Technology and Security Informatics	proceedings-article
+52	10.3390/engproc2025108037	2025	10.3390/engproc2025108037	Deadlock Prevention Policy for Flexible Manufacturing Systems: Petri Net-Based Approach Utilizing Iterative Synthesis and Places Invariant	IEEE ICEIB 2025	proceedings-article
+53	10.5772/10294	2010	10.5772/10294	Petri Net as a Manufacturing System Scheduling Tool	Advances in Petri Net Theory and Applications	book-chapter
+54	10.1007/978-3-540-39910-0_29	2003	10.1007/978-3-540-39910-0_29	Petri Net Analysis Using Invariant Generation	Lecture Notes in Computer Science	book-chapter
+55	10.1007/978-3-540-40022-6_3	2003	10.1007/978-3-540-40022-6_3	Petri Net Transformations in the ≫Petri Net Baukasten≪	Lecture Notes in Computer Science	book-chapter
+56	10.1007/978-981-16-5203-5_6	2021	10.1007/978-981-16-5203-5_6	Toward Developing a New Modular Petri Net	Asset Analytics	book-chapter
+57	10.1002/9781119262114.part1	2016	10.1002/9781119262114.part1	Short Review of Petri Net Modeling	Systems Dependability Assessment	other
+58	10.1109/access.2026.3663096	2026	10.1109/access.2026.3663096	Simplification of Robotic System Model Analysis by Petri Net Meta-Model Property Transfer	IEEE Access	journal-article
+59	10.26226/morressier.604907f51a80aac83ca25d72	2021	10.26226/morressier.604907f51a80aac83ca25d72	The Inconsistent Labelling Problem of Stutter-Preserving Partial-Order Reduction		posted-content
+60	10.1109/rams.2012.6175427	2012	10.1109/rams.2012.6175427	The safety analysis of flight landing based on Time Petri Net	2012 Proceedings Annual Reliability and Maintainability Symposium	proceedings-article
+61	10.5772/5323	2008	10.5772/5323	Error Recovery in Production Systems: A Petri Net Based Intelligent System Approach	Petri Net, Theory and Applications	book-chapter
+62	10.1201/b17399-173	2014	10.1201/b17399-173	A Colored Petri Net model for railway track maintenance with two-level inspection	Safety and Reliability: Methodology and Applications	book-chapter
+63	10.1109/indin.2011.6034993	2011	10.1109/indin.2011.6034993	Dataflow model property verification using Petri net translation techniques	2011 9th IEEE International Conference on Industrial Informatics	proceedings-article
+64	10.1007/s10586-016-0597-2	2016	10.1007/s10586-016-0597-2	Property preservation of refinement for Petri net based representation for embedded systems	Cluster Computing	journal-article
+65	10.1007/978-3-319-39639-2_52	2016	10.1007/978-3-319-39639-2_52	Invariant-Based Performance Analysis of Timed Petri Net Models	Advances in Intelligent Systems and Computing	book-chapter
+66	10.5772/7499	2010	10.5772/7499	GPenSIM: A New Petri Net Simulator	Petri Nets Applications	book-chapter
+67	10.5772/10297	2010	10.5772/10297	Modeling Multimedia Synchronization Using a Time Petri Net Based Approach	Advances in Petri Net Theory and Applications	book-chapter
+68	10.1109/ieem.2017.8290086	2017	10.1109/ieem.2017.8290086	Petri-net based safety analysis of process systems	2017 IEEE International Conference on Industrial Engineering and Engineering Management (IEEM)	proceedings-article
+69	10.1016/j.ress.2019.04.004	2019	10.1016/j.ress.2019.04.004	A coloured Petri net framework for modelling aircraft fleet maintenance	Reliability Engineering &amp; System Safety	journal-article
+70	10.1016/j.ssci.2018.04.019	2018	10.1016/j.ssci.2018.04.019	Modeling and analysis of vapour cloud explosions knock-on events by using a Petri-net approach	Safety Science	journal-article
+71	10.1109/icsai.2012.6223553	2012	10.1109/icsai.2012.6223553	Research on the interactive property testing based on Petri net	2012 International Conference on Systems and Informatics (ICSAI2012)	proceedings-article
+72	10.1142/9789812839763_0007	1999	10.1142/9789812839763_0007	PETRI NET SIMULATION AND TOOLS	Modeling, Simulation, and Control of Flexible Manufacturing Systems	book-chapter
+73	10.4028/www.scientific.net/amr.255-260.1989	2011	10.4028/www.scientific.net/amr.255-260.1989	Structural Property Analysis of a Kind of Petri Net Synthesis	Advanced Materials Research	journal-article
+74	10.1016/j.ssci.2016.05.006	2016	10.1016/j.ssci.2016.05.006	An integrated hazard identification method based on the hierarchical Colored Petri Net	Safety Science	journal-article
+75	10.3390/electronics12081955	2023	10.3390/electronics12081955	Property Preservation of Object-Oriented Petri Reduction Net Based Representation for Embedded Systems	Electronics	journal-article
+76	10.2174/1874444301305010214	2013	10.2174/1874444301305010214	Property Analysis of Refinement of Petri Net Based Representation for Embedded Systems	The Open Automation and Control Systems Journal	journal-article
+77	10.1007/978-3-030-51831-8_5	2020	10.1007/978-3-030-51831-8_5	A New Property of Choice-Free Petri Net Systems	Lecture Notes in Computer Science	book-chapter
+78	10.4249/scholarpedia.6477	2008	10.4249/scholarpedia.6477	Petri net	Scholarpedia	journal-article
+79	10.1016/b978-008044485-7/50193-7	2007	10.1016/b978-008044485-7/50193-7	Sensoring and Diagnosis of DES With Petri Net Models	Fault Detection, Supervision and Safety of Technical Processes 2006	book-chapter
+80	10.1007/978-3-319-23506-6_9	2015	10.1007/978-3-319-23506-6_9	Structure Preserving Bisimilarity, Supporting an Operational Petri Net Semantics of CCSP	Lecture Notes in Computer Science	book-chapter
+81	10.1201/b11433-111	2011	10.1201/b11433-111	A Petri net model of aircraft maintenance scheduling	Advances in Safety, Reliability and Risk Management	book-chapter
+82	10.1109/isise.2008.279	2008	10.1109/isise.2008.279	Using a Uniform Petri Net for Safety Workflow Management Systems	2008 International Symposium on Information Science and Engineering	proceedings-article
+83	10.5772/5310	2008	10.5772/5310	Petri Net Transformations	Petri Net, Theory and Applications	book-chapter
+84	10.1002/9781119262114.ch8	2016	10.1002/9781119262114.ch8	Design and Safety Assessment Cycle	Systems Dependability Assessment	other
+85	10.1109/acsd.2007.41	2007	10.1109/acsd.2007.41	A more efficient time Petri net state space abstraction preserving linear properties	Seventh International Conference on Application of Concurrency to System Design (ACSD 2007)	proceedings-article
+86	10.5954/icarob.2024.os4-5	2024	10.5954/icarob.2024.os4-5	Functional Safety Assessment of the Safety Protection System Based on Petri Net	Proceedings of International Conference on Artificial Life and Robotics	journal-article
+87	10.1016/0951-8320(93)90029-x	1993	10.1016/0951-8320(93)90029-x	Petri Net modelling and reliability evaluation of distributed processing systems	Reliability Engineering &amp; System Safety	journal-article
+88	10.2991/bst-16.2016.30	2016	10.2991/bst-16.2016.30	The Clinical Medication Safety Based on Petri Net Monitoring	Proceedings of the 2016 International Conference on Biological Sciences and Technology	proceedings-article
+89	10.1016/s0925-7535(02)00035-8	2003	10.1016/s0925-7535(02)00035-8	A Petri Net-based approach for ergonomic task analysis and modeling with emphasis on adaptation to system changes	Safety Science	journal-article
+90	10.1016/j.ress.2017.05.043	2017	10.1016/j.ress.2017.05.043	A hierarchical coloured Petri net model of fleet maintenance with cannibalisation	Reliability Engineering &amp; System Safety	journal-article
+91	10.3403/30175183	None	10.3403/30175183	Analysis techniques for dependability. Petri net techniques		standard
+92	10.1109/services.2012.40	2012	10.1109/services.2012.40	Study of Interaction Property Testing of Distributed System Based on Petri Net	2012 IEEE Eighth World Congress on Services	proceedings-article
+93	10.1109/cmpass.1989.76033	None	10.1109/cmpass.1989.76033	Using Petri net theory to analyze software safety case studies	Proceedings of the Fourth Annual Conference on Computer Assurance, 'Systems Integrity, Software Safety and Process Security	proceedings-article
+94	10.1016/s1474-6670(17)64101-6	1986	10.1016/s1474-6670(17)64101-6	Validation of Petri Net Models by ‘Petri-Net-Machine’	IFAC Proceedings Volumes	journal-article
+95	10.3403/30175183u	None	10.3403/30175183u	Analysis techniques for dependability. Petri net techniques		standard
+96	10.4018/978-1-4666-9594-8.les13	None	10.4018/978-1-4666-9594-8.les13	Petri Net Computing	Petri Nets for Modeling and Computing	book-chapter
+97	10.5772/5312	2008	10.5772/5312	Petri Net Based Modelling of Communication in Systems on Chip	Petri Net, Theory and Applications	book-chapter
+98	10.1093/oed/1477097321	2023	10.1093/oed/1477097321	Petri net, n.	Oxford English Dictionary	book-chapter
+99	10.1007/s00165-007-0050-7	2008	10.1007/s00165-007-0050-7	Interval timed coloured Petri net: efficient construction of its state class space preserving linear properties	Formal Aspects of Computing	journal-article
+100	10.5772/7503	2010	10.5772/7503	Workflow Diagnosis Using Petri Net Charts	Petri Nets Applications	book-chapter

@@ -2004,3 +2004,98 @@ If round 51 reopens the map, round 52 is retired unexecuted. If both qualify,
 they establish the required two-round no-add sequence only for the recorded
 sources, exact queries, captured rankings, date, and frozen trigger. Complete
 primary and independent audits remain mandatory before closure.
+
+## Outcome of round 51 and retirement of round 52
+
+Round 51 reopens the map under the frozen conservative trigger. All three
+auditors parsed and title-screened the 1,500 logical occurrences. Every
+snapshot has the required seven-column header, 100 records, ranks 1--100, and
+100 unique nonblank source identifiers. The batch contains 1,338 unique
+identifiers. Seven blank-title occurrences are nontechnical grants or versions
+of one irrelevant supplemental dataset. Seven quoted titles are multiline
+logical records and were parsed as single records.
+
+All three aggressive normalizations counted 1,264 unique nonblank titles among
+the 1,493 nonblank occurrences. The normalization applies Unicode NFKD, case
+folding, combining-mark deletion, maximal nonalphanumeric-run replacement by
+one space, and whitespace trimming and collapsing.
+
+Conservative reconciliation retains one canonical work:
+
+- Bergenthum, Mauser, Lorenz, and Juhas's 2009 *Unfolding Semantics of Petri
+  Nets Based on Token Flows* introduces token-flow and reduced-token-flow
+  unfoldings. Both preserve complete partial-order behavior; the first avoids
+  isomorphic process representations and the second also reduces processes
+  with isomorphic underlying runs. This changes the represented Petri-net
+  semantic object and completeness/redundancy guarantee.
+
+The remaining candidates add no separate catalog boundary. Skelin's parametric
+SADF throughput analysis was screened in the earlier C3 lineage; Rafique's KPN
+framework, Sirdey's LP verification, and Dardaillon's parametric compiler are
+model, analysis, or implementation variants of represented KPN and parametric
+dataflow boundaries. Sluice, Superconnectors, KAIROS, hardware/software
+interfaces, multi-clock wrappers, backpressure, functional validation, and
+LID-1ss circuits stay inside represented latency-insensitive program and
+guarantee boundaries. Gold's compositional Petri/dataflow semantics is already
+cataloged, while collective-token comparison, Token Trail I, PPPA book
+fragments, invariant-preserving reductions, and transition-preserving
+reductions are predecessors or previously screened variants inside represented
+Petri-net lineages. Li and Hadjicostis's firing-sequence reconstruction remains
+forward observation/state estimation in the represented Giua lineage, and the
+dataflow-to-Petri-net property mapping is a cross-model analysis variant.
+
+None of the records supplies the target construction. The retained unfolding
+represents complete Petri-net partial-order behavior, not a complete sparse
+image for a requested internal program site. All three auditors found no work
+combining that image with exact inverse caller-input fibers and typed general
+residuals. Round 51 therefore cannot count toward closure, and round 52 is
+retired unexecuted.
+
+## Replacement round `closure-replacement-53`: Crossref
+
+Frozen on 2026-08-04 after reconciliation and independent adjudication of
+round 51, and before any round-53 or round-54 query was executed. Source:
+Crossref REST API. The first five queries follow the changed token-flow
+unfolding object and its completeness and redundancy guarantees; the final
+three are direct-target queries. Each exact phrase is searched with
+`query.bibliographic`, sorted by relevance, with the first 100 records exported
+unless fewer are returned. A round qualifies as no-add only if complete
+screening adds neither a conceptual cluster nor a plausible close competitor.
+A publication within an already represented lineage does not reopen the map
+unless it changes the compared semantic object, guarantee, or program-model
+boundary, or is materially closer to the target construction.
+
+| ID | Exact query |
+|---|---|
+| C53-01 | `token flow unfolding Petri net complete partial order behavior` |
+| C53-02 | `reduced token flow unfolding avoid isomorphic processes` |
+| C53-03 | `complete finite prefix bounded Petri nets token flow` |
+| C53-04 | `prime event structure token flow unfolding canonical prefix` |
+| C53-05 | `compact Petri net unfolding semantics redundant events` |
+| C53-06 | `complete sparse requested site observation image caller input inverse fibers` |
+| C53-07 | `exact internal event observation partition typed residual function` |
+| C53-08 | `requested selection site outcomes input fibers symbolic residuals` |
+
+## Replacement round `closure-replacement-54`: arXiv
+
+Execute only if round 53 adds neither a conceptual cluster nor a plausible
+close competitor. Source: arXiv API. Frozen on 2026-08-04 before any round-53
+or round-54 execution. Each phrase is submitted as the conjunction of all
+alphanumeric terms across arXiv's `all` field, sorted by relevance, with at
+most the first 100 records and abstracts exported.
+
+| ID | Exact query |
+|---|---|
+| C54-01 | `token flow unfolding Petri net complete partial order behavior` |
+| C54-02 | `reduced token flow unfolding avoid isomorphic processes` |
+| C54-03 | `complete finite prefix bounded Petri nets token flow` |
+| C54-04 | `prime event structure token flow unfolding canonical prefix` |
+| C54-05 | `compact Petri net unfolding semantics redundant events` |
+| C54-06 | `complete sparse requested site observation image caller input inverse fibers` |
+| C54-07 | `exact internal event observation partition typed residual function` |
+| C54-08 | `requested selection site outcomes input fibers symbolic residuals` |
+
+If round 53 reopens the map, round 54 is retired unexecuted. If both qualify,
+they establish the required two-round no-add sequence only for the recorded
+sources, exact queries, captured rankings, date, and frozen trigger. Complete
+primary and independent audits remain mandatory before closure.

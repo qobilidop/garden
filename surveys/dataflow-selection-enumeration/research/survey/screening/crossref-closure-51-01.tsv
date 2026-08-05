@@ -1,0 +1,101 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1007/bfb0040252	None	10.1007/bfb0040252	A generalized Kahn Principle for abstract asynchronous networks	Lecture Notes in Computer Science	book-chapter
+2	10.21236/ada063374	1979	10.21236/ada063374	Currents on Generalized Yagi Structures		report
+3	10.3233/fi-1991-14103	1991	10.3233/fi-1991-14103	Modelling Nondeterministic Concurrent Processes with Event Structures	Fundamenta Informaticae	journal-article
+4	10.1016/j.automatica.2019.06.022	2019	10.1016/j.automatica.2019.06.022	Bisimilarity enforcing supervisory control of nondeterministic discrete event systems with nondeterministic specifications	Automatica	journal-article
+5	10.1007/bf02575513	1971	10.1007/bf02575513	A conditional functional tree-handling generalized Markov algorithm which interprets a nondeterministic abstract machine	Calcolo	journal-article
+6	10.1109/cdc.1990.203437	1990	10.1109/cdc.1990.203437	A generalized temporal logic approach for control problems of a class of nondeterministic discrete event systems	29th IEEE Conference on Decision and Control	proceedings-article
+7	10.1109/cdc.2018.8618909	2018	10.1109/cdc.2018.8618909	Maximally Permissive Supervisory Control of Nondeterministic Discrete Event Systems with Nondeterministic Specifications	2018 IEEE Conference on Decision and Control (CDC)	proceedings-article
+8	10.1142/9789813109032_0011	2017	10.1142/9789813109032_0011	Generalized Event Structures and Probabilities	Information and Complexity	book-chapter
+9	10.1109/21.199469	1992	10.1109/21.199469	Verifying a class of nondeterministic discrete event systems in a generalized temporal logic	IEEE Transactions on Systems, Man, and Cybernetics	journal-article
+10	10.1016/j.neucom.2022.07.021	2022	10.1016/j.neucom.2022.07.021	Event-triggered asynchronous synchronization control for switched generalized neural networks with time-varying delay	Neurocomputing	journal-article
+11	10.1109/anzcc59813.2024.10432906	2024	10.1109/anzcc59813.2024.10432906	Generalized Asynchronous Event-Triggered Measurement and Control for Non-Linear Systems	2024 Australian &amp; New Zealand Control Conference (ANZCC)	proceedings-article
+12	10.1016/0045-7949(92)90239-v	1992	10.1016/0045-7949(92)90239-v	The generalized Müller-Breslau principle for higher-order elements	Computers &amp; Structures	journal-article
+13	10.1007/bfb0016260	None	10.1007/bfb0016260	Safe implementation equivalence for asynchronous nondeterministic processes	Lecture Notes in Computer Science	book-chapter
+14	10.1109/tap.1979.1142187	1979	10.1109/tap.1979.1142187	Currents on generalized Yagi structures	IEEE Transactions on Antennas and Propagation	journal-article
+15	10.1007/s10626-014-0201-y	2015	10.1007/s10626-014-0201-y	Employing behavioral preorders to define controllability for nondeterministic discrete-event systems	Discrete Event Dynamic Systems	journal-article
+16	10.1006/inco.1993.1031	1993	10.1006/inco.1993.1031	Semantics of Nondeterministic Asynchronous Broadcast Networks	Information and Computation	journal-article
+17	10.1109/tac.2020.3015453	2021	10.1109/tac.2020.3015453	Synthesis of Maximally Permissive Supervisors for Nondeterministic Discrete Event Systems With Nondeterministic Specifications	IEEE Transactions on Automatic Control	journal-article
+18	10.17587/it.25.67-74	2019	10.17587/it.25.67-74	A Generalized Method for Synthesizing Multicomponent Interoperable Structures Based on Ontology and a Nondeterministic Finite State Machine	INFORMACIONNYE TEHNOLOGII	journal-article
+19	10.1002/chin.198750399	1987	10.1002/chin.198750399	ChemInform Abstract: Irregular Spin State Structures in Heteropolymetallic Systems	ChemInform	journal-article
+20	10.1002/047134608x.w8404	2020	10.1002/047134608x.w8404	Supervisory Control of Nondeterministic Discrete‐Event Systems	Wiley Encyclopedia of Electrical and Electronics Engineering	other
+21	10.2514/5.9781600866494.0107.0122	1998	10.2514/5.9781600866494.0107.0122	Nondeterministic Structures: Basic Concepts	Some Engineering Applications in Random Vibrations and Random Structures	book-chapter
+22	10.1109/simsym.1997.586506	None	10.1109/simsym.1997.586506	Two nondeterministic event building methods derived from the Barrel Shifter	Proceedings of 1997 SCS Simulation Multiconference	proceedings-article
+23	10.31390/gradschool_dissertations.5250	None	10.31390/gradschool_dissertations.5250	Predictive Modeling of Asynchronous Event Sequence Data		dissertation
+24	10.21236/ada628275	2012	10.21236/ada628275	Asynchronous ASCII Event Count Status Code		report
+25	10.2139/ssrn.5290470	2025	10.2139/ssrn.5290470	Grammatical Aspect Reveals Mappings of Abstract Syntactic Structures and Event Structures		posted-content
+26	10.3390/axioms10010011	2021	10.3390/axioms10010011	New Generalized Ekeland’s Variational Principle, Critical Point Theorems and Common Fuzzy Fixed Point Theorems Induced by Lin-Du’s Abstract Maximal Element Principle	Axioms	journal-article
+27	10.1109/acc.2012.6315066	2012	10.1109/acc.2012.6315066	Bisimilarity enforcing supervisory control of nondeterministic discrete event systems	2012 American Control Conference (ACC)	proceedings-article
+28	10.1016/0020-7683(86)90004-1	1986	10.1016/0020-7683(86)90004-1	A generalized variational principle for thin elastic shells with finite rotations	International Journal of Solids and Structures	journal-article
+29	10.1109/tro.2024.3454410/mm1	None	10.1109/tro.2024.3454410/mm1	Asynchronous Blob Tracker for Event Cameras_supp1-3454410.mp4		component
+30	10.1109/cdc.1996.577492	None	10.1109/cdc.1996.577492	Discrete event control of nondeterministic systems	Proceedings of 35th IEEE Conference on Decision and Control	proceedings-article
+31	10.23919/acc60939.2024.10644258	2024	10.23919/acc60939.2024.10644258	Deterministic Decentralized Supervisors for Bisimilarity Control of Nondeterministic Discrete Event Systems	2024 American Control Conference (ACC)	proceedings-article
+32	10.21275/sr24720035729	2024	10.21275/sr24720035729	Building Event-Driven APIs with Asynchronous Messaging	International Journal of Science and Research (IJSR)	journal-article
+33	10.23919/acc.1990.4790690	1990	10.23919/acc.1990.4790690	Output Feedback Control for a Class of Nondeterministic Discrete Event Systems	1990 American Control Conference	proceedings-article
+34	10.1023/a:1008251930588	1997	10.1023/a:1008251930588	A Nondeterministic Extension over Finitely Recursive Process Model	Discrete Event Dynamic Systems	journal-article
+35	10.1109/cdc.1993.325370	None	10.1109/cdc.1993.325370	Supervisory control of nondeterministic discrete event dynamical systems	Proceedings of 32nd IEEE Conference on Decision and Control	proceedings-article
+36	10.1109/acc.1994.751915	None	10.1109/acc.1994.751915	Non-blocking supervisory control of nondeterministic discrete event systems	Proceedings of 1994 American Control Conference - ACC '94	proceedings-article
+37	10.2307/jj.608090.4	2019	10.2307/jj.608090.4	THE GENERALIZED PRINCIPLE OF ECONOMIC RATIONALITY	Generalized Microeconomics	book-chapter
+38	10.1007/s10626-023-00375-x	2023	10.1007/s10626-023-00375-x	Mixed Nondeterministic-Probabilistic Automata	Discrete Event Dynamic Systems	journal-article
+39	10.1006/inco.1997.2653	1997	10.1006/inco.1997.2653	Efficient Execution of Nondeterministic Parallel Programs on Asynchronous Systems	Information and Computation	journal-article
+40	10.1109/coase.2009.5234123	2009	10.1109/coase.2009.5234123	Discrete event control under nondeterministic partial observation	2009 IEEE International Conference on Automation Science and Engineering	proceedings-article
+41	10.1016/0045-7949(94)00411-u	1995	10.1016/0045-7949(94)00411-u	Bending analysis of plates and spherical shells by multivariable spline element method based on generalized variational principle	Computers &amp; Structures	journal-article
+42	10.1109/tac.2008.2010980	2009	10.1109/tac.2008.2010980	State Feedback Control of Asynchronous Machines with Nondeterministic Models	IEEE Transactions on Automatic Control	journal-article
+43	10.23919/ecc.2019.8796204	2019	10.23919/ecc.2019.8796204	Supervisory Control Of Discrete Event Systems Under Nondeterministic Observations	2019 18th European Control Conference (ECC)	proceedings-article
+44	10.1109/chicc.2014.6895589	2014	10.1109/chicc.2014.6895589	Bisimilarity control of decentralized nondeterministic discrete-event systems	Proceedings of the 33rd Chinese Control Conference	proceedings-article
+45	10.70675/173e0885z6f30z4c87za17dzcf22e10d7cde	None	10.70675/173e0885z6f30z4c87za17dzcf22e10d7cde	Asynchronous event-based 3d vision		dissertation
+46	10.1016/j.ifacol.2018.06.270	2018	10.1016/j.ifacol.2018.06.270	Synthesis of Bisimilarity Enforcing Supervisors for Nondeterministic Discrete Event Systems	IFAC-PapersOnLine	journal-article
+47	10.1109/icnp.1995.524813	None	10.1109/icnp.1995.524813	Generalized fair reachability analysis for cyclic protocols with nondeterministic and internal transitions	Proceedings of International Conference on Network Protocols	proceedings-article
+48	10.1002/chin.198705003	1987	10.1002/chin.198705003	ChemInform Abstract: The Crystal Structures of HfGeO4 and ThGeO4 Germanates	ChemInform	journal-article
+49	10.1109/cdc.1989.70675	None	10.1109/cdc.1989.70675	Strict concurrency and nondeterministic control of discrete-event systems	Proceedings of the 28th IEEE Conference on Decision and Control	proceedings-article
+50	10.1016/b978-075068765-2.50010-7	2008	10.1016/b978-075068765-2.50010-7	Nondeterministic Behavior of Structures	Structural Dynamics and Probabilistic Analyses for Engineers	book-chapter
+51	10.1109/cdc42340.2020.9303946	2020	10.1109/cdc42340.2020.9303946	Maximally Permissive Nonblocking Similarity Control of Nondeterministic Discrete Event Systems	2020 59th IEEE Conference on Decision and Control (CDC)	proceedings-article
+52	10.3386/w23509	2017	10.3386/w23509	Generalized Compensation Principle		report
+53	10.1007/978-94-009-2643-1_28	1989	10.1007/978-94-009-2643-1_28	On the Construction of Potential Vectors and Generalized Potential Vectors Depending on Time by a Contraction Principle	Deformations of Mathematical Structures	book-chapter
+54	10.1109/cdc.2013.6761098	2013	10.1109/cdc.2013.6761098	Towards optimal supervisory controller synthesis of stochastic nondeterministic discrete-event systems	52nd IEEE Conference on Decision and Control	proceedings-article
+55	10.31390/gradschool_dissertations.5565	None	10.31390/gradschool_dissertations.5565	Characterizing and Optimizing Asynchronous Event-Driven Architecture for Modern Cloud Systems		dissertation
+56	10.1109/acc.2009.5159823	2009	10.1109/acc.2009.5159823	Supervisory control of discrete event systems modeled by Mealy automata with nondeterministic output functions	2009 American Control Conference	proceedings-article
+57	10.1007/978-4-431-68042-0_32	1986	10.1007/978-4-431-68042-0_32	Quasi-Generalized Virtual Work Principle and 3-Kind Variable of Generalized Variational Principle in Elastic Theory	Computational Mechanics ’86	book-chapter
+58	10.1007/s10626-005-5239-4	2005	10.1007/s10626-005-5239-4	State Estimation of ?-free Labeled Petri Nets with Contact-Free Nondeterministic Transitions*	Discrete Event Dynamic Systems	journal-article
+59	10.5771/9781498519625-117	2018	10.5771/9781498519625-117	Part Two. THE PRINCIPLE OF ALTERNATE POSSIBILITIES	Kant, Ought Implies Can, the Principle of Alternate Possibilities, and Happiness	book-chapter
+60	10.23919/sice.2017.8105522	2017	10.23919/sice.2017.8105522	Nonblocking supervisors for similarity control of nondeterministic discrete event systems under event and state observations	2017 56th Annual Conference of the Society of Instrument and Control Engineers of Japan (SICE)	proceedings-article
+61	10.46632/bmes/3/4/4	2025	10.46632/bmes/3/4/4	Generalized Gravity And Fermat Principle Applications In Electrical Engineering Optimization Using The Wpm Method	Building Materials and Engineering Structures	journal-article
+62	10.1016/j.physletb.2017.02.043	2017	10.1016/j.physletb.2017.02.043	Constraining the generalized uncertainty principle with the gravitational wave event GW150914	Physics Letters B	journal-article
+63	10.1109/wodes.2008.4605942	2008	10.1109/wodes.2008.4605942	Asynchronous implementation of synchronous discrete event control	2008 9th International Workshop on Discrete Event Systems	proceedings-article
+64	10.1109/tro.2025.3598145/mm1	None	10.1109/tro.2025.3598145/mm1	AsynEIO: Asynchronous Monocular Event-Inertial Odometry Using Gaussian Process Regression_supp1-3598145.mp4		component
+65	10.2172/826642	2004	10.2172/826642	Generalized Uncertainty Principle and Dark Matter		report
+66	10.1145/237502.237566	1996	10.1145/237502.237566	Efficient execution of nondeterministic parallel programs on asynchronous systems	Proceedings of the eighth annual ACM symposium on Parallel algorithms and architectures  - SPAA '96	proceedings-article
+67	10.1587/transinf.e97.d.1140	2014	10.1587/transinf.e97.d.1140	Bisimilarity Control of Nondeterministic Discrete Event Systems under Event and State Observations	IEICE Transactions on Information and Systems	journal-article
+68	10.1109/lra.2025.3632120/mm1	None	10.1109/lra.2025.3632120/mm1	Continuous Gaussian Process Pre-Optimization for Asynchronous Event-Inertial Odometry_supp1-3632120.mp4		component
+69	10.1016/0045-7949(91)90184-n	1991	10.1016/0045-7949(91)90184-n	Reliability analysis of nondeterministic steel beam-columns	Computers &amp; Structures	journal-article
+70	10.70675/a61d64f9z66c8z4b67zb497z8c698bd0fbbe	None	10.70675/a61d64f9z66c8z4b67zb497z8c698bd0fbbe	Asynchronous Circuits for the Processing of Data From Event-Based Image Sensors		dissertation
+71	10.1016/j.automatica.2023.110940	2023	10.1016/j.automatica.2023.110940	Polynomial-time verification for bisimilarity control of partially observed nondeterministic discrete event systems with deterministic specifications	Automatica	journal-article
+72	10.1007/978-981-19-3559-6_3	2023	10.1007/978-981-19-3559-6_3	The Generalized Principle of Pattern Multiplication	Generalized Principle of Pattern Multiplication and Its Applications	book-chapter
+73	10.1109/tpami.2023.3311534/mm2	None	10.1109/tpami.2023.3311534/mm2	An Asynchronous Linear Filter Architecture for Hybrid Event-Frame Cameras_supp1-3311534.mp4		component
+74	10.5771/9781498519625	2018	10.5771/9781498519625	Kant, Ought Implies Can, the Principle of Alternate Possibilities, and Happiness		monograph
+75	10.1109/tpami.2023.3311534/mm1	None	10.1109/tpami.2023.3311534/mm1	An Asynchronous Linear Filter Architecture for Hybrid Event-Frame Cameras_supp2-3311534.pdf		component
+76	10.1109/acc.2010.5530533	2010	10.1109/acc.2010.5530533	Decentralized diagnosis of discrete event systems modeled by Mealy automata with nondeterministic output functions	Proceedings of the 2010 American Control Conference	proceedings-article
+77	10.1016/j.jfluidstructs.2014.06.007	2014	10.1016/j.jfluidstructs.2014.06.007	On the use of generalized Hamilton׳s principle for the derivation of the equation of motion of a pipe conveying fluid	Journal of Fluids and Structures	journal-article
+78	10.1109/async65240.2025.00023	2025	10.1109/async65240.2025.00023	Hierarchical Event Readout with Asynchronous Pipelined Opportunistic Merges	2025 29th IEEE International Symposium on Asynchronous Circuits and Systems (ASYNC)	proceedings-article
+79	10.1109/etfa.2015.7301576	2015	10.1109/etfa.2015.7301576	Supervisor synthesis for similarity control of nondeterministic discrete event systems	2015 IEEE 20th Conference on Emerging Technologies &amp; Factory Automation (ETFA)	proceedings-article
+80	10.1007/978-1-4842-3742-7_13	2019	10.1007/978-1-4842-3742-7_13	Correction to: Expert Twisted: Event-Driven and Asynchronous Programming with Python	Expert Twisted	book-chapter
+81	10.2514/6.1999-1611	1999	10.2514/6.1999-1611	A method for treating discretization error in nondeterministic analysis	40th Structures, Structural Dynamics, and Materials Conference and Exhibit	proceedings-article
+82	10.23919/acc.2004.1384017	2004	10.23919/acc.2004.1384017	Control of nondeterministic discrete event systems for bisimulation equivalence	Proceedings of the 2004 American Control Conference	proceedings-article
+83	10.1145/953863.953865	1978	10.1145/953863.953865	On nondeterministic control structures	ACM SIGPLAN Notices	journal-article
+84	10.1109/async65240.2025.00024	2025	10.1109/async65240.2025.00024	Asynchronous, event-driven readout for large-scale imaging devices	2025 29th IEEE International Symposium on Asynchronous Circuits and Systems (ASYNC)	proceedings-article
+85	10.1587/transfun.e101.a.328	2018	10.1587/transfun.e101.a.328	Nonblocking Similarity Control of Nondeterministic Discrete Event Systems under Event and State Observations	IEICE Transactions on Fundamentals of Electronics, Communications and Computer Sciences	journal-article
+86	10.21033/wp-2022-18	2022	10.21033/wp-2022-18	Generalized Compensation Principle		report
+87	10.1109/9.654883	1998	10.1109/9.654883	Discrete-event control of nondeterministic systems	IEEE Transactions on Automatic Control	journal-article
+88	10.1016/j.automatica.2021.109978	2022	10.1016/j.automatica.2021.109978	Synthesis of maximally permissive supervisors for similarity control of partially observed nondeterministic discrete event systems	Automatica	journal-article
+89	10.1109/icca51439.2020.9264581	2020	10.1109/icca51439.2020.9264581	Event-Triggered Control of Discrete-time Nondeterministic Linear Systems	2020 IEEE 16th International Conference on Control &amp; Automation (ICCA)	proceedings-article
+90	10.26226/morressier.604907f41a80aac83ca25cc6	2021	10.26226/morressier.604907f41a80aac83ca25cc6	Nondeterministic and co-Nondeterministic Implies Deterministic, for Data Languages		posted-content
+91	10.23919/acc.2018.8431748	2018	10.23919/acc.2018.8431748	$\mathbf{N}-(k_{1}, k_{2})$-detectability of Discrete Event Systems Under Nondeterministic Observations	2018 Annual American Control Conference (ACC)	proceedings-article
+92	10.1007/bfb0033532	None	10.1007/bfb0033532	Supervisory control for nondeterministic systems	Lecture Notes in Control and Information Sciences	book-chapter
+93	10.5220/0005132701690174	2014	10.5220/0005132701690174	Fuzzy Function and the Generalized Extension Principle	Proceedings of the International Conference on Fuzzy Computation Theory and Applications	proceedings-article
+94	10.1109/wodes.2008.4605981	2008	10.1109/wodes.2008.4605981	Supervisor synthesis based on abstractions of nondeterministic automata	2008 9th International Workshop on Discrete Event Systems	proceedings-article
+95	10.1002/spe.2216	2015	10.1002/spe.2216	Event-driven asynchronous method calls with the D-Bus message system	Software: Practice and Experience	journal-article
+96	10.5040/9781666999174	2018	10.5040/9781666999174	Kant, Ought Implies Can, the Principle of Alternate Possibilities, and Happiness		book
+97	10.1007/bfb0033530	None	10.1007/bfb0033530	Nondeterministic supervision under partial observations	Lecture Notes in Control and Information Sciences	book-chapter
+98	10.1088/1361-6382/acf021/v1/review2	2023	10.1088/1361-6382/acf021/v1/review2	"Review for ""30 years in: Quo vadis generalized uncertainty principle?"""		peer-review
+99	10.1109/isic.1990.128575	1990	10.1109/isic.1990.128575	Asymptotic behavior of a class of nondeterministic discrete event systems	Proceedings. 5th IEEE International Symposium on Intelligent Control 1990	proceedings-article
+100	10.1109/ebccsp.2015.7300658	2015	10.1109/ebccsp.2015.7300658	Advances on asynchronous event-triggered control	2015 International Conference on Event-based Control, Communication, and Signal Processing (EBCCSP)	proceedings-article

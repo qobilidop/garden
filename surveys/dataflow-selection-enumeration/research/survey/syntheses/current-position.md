@@ -103,8 +103,9 @@ already supplies:
   firing-based, port-based, and synchronous actor implementations;
 - latency-insensitive dataflow wrappers, protocols, process models, and proved
   buffers across single- and multi-clock hardware boundaries;
-- token-flow and token-trail semantic languages, property-preserving Petri-net
-  slices, and observation-driven Petri-net structure reconstruction; and
+- token-flow and token-trail semantic languages, redundancy-reduced unfoldings
+  with complete partial-order behavior, property-preserving Petri-net slices,
+  and observation-driven Petri-net structure reconstruction; and
 - a complete categorical language for value-dependent faceted dataflow
   workflows.
 

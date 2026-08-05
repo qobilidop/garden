@@ -1,0 +1,105 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1109/tc.2008.214	2009	10.1109/tc.2008.214	A Process Algebraic View of Latency-Insensitive Systems	IEEE Transactions on Computers	journal-article
+2	10.1109/async.2004.1299282	None	10.1109/async.2004.1299282	Synchronous latency insensitive design	10th International Symposium on Asynchronous Circuits and Systems, 2004. Proceedings.	proceedings-article
+3	10.7717/peerj-cs.426/fig-6	None	10.7717/peerj-cs.426/fig-6	Figure 6: Process to identify data latency.		component
+4	10.1109/date.2005.287	None	10.1109/date.2005.287	Synchronization Processor Synthesis for Latency Insensitive Systems	Design, Automation and Test in Europe	proceedings-article
+5	10.1109/date.2004.1269102	None	10.1109/date.2004.1269102	Issues in implementing latency insensitive protocols	Proceedings Design, Automation and Test in Europe Conference and Exhibition	proceedings-article
+6	10.1007/s00446-024-00466-4	2024	10.1007/s00446-024-00466-4	Liveness and latency of Byzantine state-machine replication	Distributed Computing	journal-article
+7	10.1109/icrc64395.2024.10937010	2024	10.1109/icrc64395.2024.10937010	Superconnectors: A Latency Insensitive Approach to SFQ Design	2024 IEEE International Conference on Rebooting Computing (ICRC)	proceedings-article
+8	10.7717/peerj-cs.801/fig-5	None	10.7717/peerj-cs.801/fig-5	Figure 5: Performance analysis based on the latency of process executions.		component
+9	10.1109/fpl.2018.00068	2018	10.1109/fpl.2018.00068	Latency Insensitive Design Styles for FPGAs	2018 28th International Conference on Field Programmable Logic and Applications (FPL)	proceedings-article
+10	10.1145/996566.996725	2004	10.1145/996566.996725	A new approach to latency insensitive design	Proceedings of the 41st annual Design Automation Conference	proceedings-article
+11	10.1016/j.vlsi.2014.01.003	2015	10.1016/j.vlsi.2014.01.003	A synchronous latency-insensitive RISC for better than worst-case design	Integration	journal-article
+12	10.1109/iccd.2010.5647580	2010	10.1109/iccd.2010.5647580	Optimization of back pressure and throughput for latency insensitive systems	2010 IEEE International Conference on Computer Design	proceedings-article
+13	10.7873/date2014.116	2014	10.7873/date2014.116	Recovery-based resilient latency-insensitive systems	Design, Automation &amp; Test in Europe Conference &amp; Exhibition (DATE), 2014	proceedings-article
+14	10.1109/acsd.2007.54	2007	10.1109/acsd.2007.54	Modelling Latency-Insensitive Systems in CSP	Seventh International Conference on Application of Concurrency to System Design (ACSD 2007)	proceedings-article
+15	10.7873/date.2014.116	2014	10.7873/date.2014.116	Recovery-based resilient latency-insensitive systems	Design, Automation &amp; Test in Europe Conference &amp; Exhibition (DATE), 2014	proceedings-article
+16	10.1109/mdt.2007.152	2007	10.1109/mdt.2007.152	Adaptive Latency-Insensitive Protocols	IEEE Design &amp; Test of Computers	journal-article
+17	10.1109/hldvt.2005.1568826	None	10.1109/hldvt.2005.1568826	Validating families of latency insensitive protocols	Tenth IEEE International High-Level Design Validation and Test Workshop, 2005.	proceedings-article
+18	10.1109/memcod.2009.5185393	2009	10.1109/memcod.2009.5185393	Bounded Dataflow Networks and Latency-Insensitive circuits	2009 7th IEEE/ACM International Conference on Formal Methods and Models for Co-Design	proceedings-article
+19	10.1109/icecs.2011.6122333	2011	10.1109/icecs.2011.6122333	Efficient periodic clock calculus in latency-insensitive design	2011 18th IEEE International Conference on Electronics, Circuits, and Systems	proceedings-article
+20	10.1109/date.2004.1269025	None	10.1109/date.2004.1269025	Generalized latency-insensitive systems for single-clock and multi-clock architectures	Proceedings Design, Automation and Test in Europe Conference and Exhibition	proceedings-article
+21	10.1109/date.2010.5457101	2010	10.1109/date.2010.5457101	Control network generator for latency insensitive designs	2010 Design, Automation &amp; Test in Europe Conference &amp; Exhibition (DATE 2010)	proceedings-article
+22	10.1109/dac.2001.935470	None	10.1109/dac.2001.935470	Robust interfaces for mixed-timing systems with application to latency-insensitive protocols	Proceedings of the 38th Design Automation Conference (IEEE Cat. No.01CH37232)	proceedings-article
+23	10.1109/candar57322.2022.00023	2022	10.1109/candar57322.2022.00023	Dynamic Routing Reconfiguration for Low-Latency and Deadlock-Free Interconnection Networks	2022 Tenth International Symposium on Computing and Networking (CANDAR)	proceedings-article
+24	10.1109/candarw57323.2022.00011	2022	10.1109/candarw57323.2022.00011	Load-Balancing Routing Algorithms for Reducing Packet Latency and Avoiding Deadlock in Datacenter Interconnection Networks	2022 Tenth International Symposium on Computing and Networking Workshops (CANDARW)	proceedings-article
+25	10.1109/hldvt.2009.5340183	2009	10.1109/hldvt.2009.5340183	Analysis of scheduled Latency insensitive systems with periodic clock calculus	2009 IEEE International High Level Design Validation and Test Workshop	proceedings-article
+26	10.3390/electronics9111838	2020	10.3390/electronics9111838	A Latency-Insensitive Design Approach to Programmable FPGA-Based Real-Time Simulators	Electronics	journal-article
+27	10.1007/978-0-387-34127-9_3	None	10.1007/978-0-387-34127-9_3	Cytomegalovirus Latency	Latency Strategies of Herpesviruses	book-chapter
+28	10.1109/memcod.2008.4547689	2008	10.1109/memcod.2008.4547689	Latency-Insensitive Hardware/Software Interfaces	2008 6th ACM/IEEE International Conference on Formal Methods and Models for Co-Design	proceedings-article
+29	10.1021/jacs.3c10826.s001	None	10.1021/jacs.3c10826.s001	Latency for All: Enabling Latency of HoveydaGrubbs Second-Generation Catalysts by Adding Phosphite Ligands		component
+30	10.1109/jproc.2015.2480849	2015	10.1109/jproc.2015.2480849	From Latency-Insensitive Design to Communication-Based System-Level Design	Proceedings of the IEEE	journal-article
+31	10.1201/9781315214665-15	2018	10.1201/9781315214665-15	Siphon-Based Characterization of Liveness and Liveness-Enforcing Supervision for Sequential Resource Allocation Systems by S. Reveliotis	Deadlock Resolution in Computer-Integrated Systems	book-chapter
+32	10.1145/337292.337441	2000	10.1145/337292.337441	Performance analysis and optimization of latency insensitive systems	Proceedings of the 37th conference on Design automation  - DAC '00	proceedings-article
+33	10.1007/978-0-387-34127-9_6	None	10.1007/978-0-387-34127-9_6	Latency Strategies of Equine Herpesviruses	Latency Strategies of Herpesviruses	book-chapter
+34	10.1007/springerreference_17399	None	10.1007/springerreference_17399	latency	SpringerReference	reference-entry
+35	10.1109/dac.2007.375198	2007	10.1109/dac.2007.375198	Topology-Based Optimization of Maximal Sustainable Throughput in a Latency-Insensitive System	2007 44th ACM/IEEE Design Automation Conference	proceedings-article
+36	10.1515/9783111067384-003	2023	10.1515/9783111067384-003	2 Memory – Latency – Eventfulness	Memory and Latency in Contemporary Anglophone Literature	book-chapter
+37	10.1049/ell2.12861	2023	10.1049/ell2.12861	Conversion‐less algebraic interleaver architecture for low‐latency IDMA systems	Electronics Letters	journal-article
+38	10.23919/fmcad.2019.8894295	2019	10.23919/fmcad.2019.8894295	KAIROS: Incremental Verification in High-Level Synthesis through Latency-Insensitive Design	2019 Formal Methods in Computer Aided Design (FMCAD)	proceedings-article
+39	10.1109/iccad.2005.1560209	None	10.1109/iccad.2005.1560209	An architecture and a wrapper synthesis approach for multi-clock latency-insensitive systems	ICCAD-2005. IEEE/ACM International Conference on Computer-Aided Design, 2005.	proceedings-article
+40	10.1515/9780804786164-003	2020	10.1515/9780804786164-003	Chapter 2. Forms of Latency	After 1945	book-chapter
+41	10.1109/nocs.2008.4492741	2008	10.1109/nocs.2008.4492741	Network Simplicity for Latency Insensitive Cores	Second ACM/IEEE International Symposium on Networks-on-Chip (nocs 2008)	proceedings-article
+42	10.1515/9780804786164-007	2020	10.1515/9780804786164-007	Chapter 6. Effects of Latency	After 1945	book-chapter
+43	10.1109/isocc47750.2019.9027661	2019	10.1109/isocc47750.2019.9027661	Latency-Insensitive Controller for Convolutional Neural Network Accelerators	2019 International SoC Design Conference (ISOCC)	proceedings-article
+44	10.2139/ssrn.6254021	2026	10.2139/ssrn.6254021	Latency-Aware Edge–Cloud Perception Architecture for Latency-Sensitive Medical Metaverse Applications		posted-content
+45	10.1109/iccd.2003.1240952	None	10.1109/iccd.2003.1240952	Xpipes: a latency insensitive parameterized network-on-chip architecture for multiprocessor SoCs	Proceedings 21st International Conference on Computer Design	proceedings-article
+46	10.1007/springerreference_23824	None	10.1007/springerreference_23824	ring latency	SpringerReference	reference-entry
+47	10.1007/978-1-4615-0292-0_12	2003	10.1007/978-1-4615-0292-0_12	A Methodology for Correct-by-Construction Latency Insensitive Design	The Best of ICCAD	book-chapter
+48	10.1145/378239.378256	2001	10.1145/378239.378256	Robust interfaces for mixed-timing systems with application to latency-insensitive protocols	Proceedings of the 38th conference on Design automation  - DAC '01	proceedings-article
+49	10.1109/mocast.2018.8376625	2018	10.1109/mocast.2018.8376625	Low-power dual-edge-triggered synchronous latency-insensitive systems	2018 7th International Conference on Modern Circuits and Systems Technologies (MOCAST)	proceedings-article
+50	10.7717/peerj-cs.2539/fig-4	None	10.7717/peerj-cs.2539/fig-4	Figure 4: Latency.		component
+51	10.1007/978-0-387-34127-9_1	None	10.1007/978-0-387-34127-9_1	Latency Strategies of Alphaherpesviruses: Herpes Simplex Virus and Varicella-Zoster Virus Latency in Neurons	Latency Strategies of Herpesviruses	book-chapter
+52	10.4018/978-1-4666-3922-5.ch003	None	10.4018/978-1-4666-3922-5.ch003	Liveness, Deadlock-Freeness, and Siphons	Embedded Computing Systems	book-chapter
+53	10.1109/memcod.2015.7340485	2015	10.1109/memcod.2015.7340485	Implementing latency-insensitive dataflow blocks	2015 ACM/IEEE International Conference on Formal Methods and Models for Codesign (MEMOCODE)	proceedings-article
+54	10.1109/nanonet.2006.346214	2006	10.1109/nanonet.2006.346214	A Distributed Multi-Point Network Interface for Low-Latency, Deadlock-Free On-Chip Interconnects	2006 1st International Conference on Nano-Networks and Workshops	proceedings-article
+55	10.1109/tc.2006.188	2006	10.1109/tc.2006.188	Validating Families of Latency Insensitive Protocols	IEEE Transactions on Computers	journal-article
+56	10.14264/fef3f70	None	10.14264/fef3f70	An empirical investigation of the 'latency function' and recruitment models of latency in detection tasks		dissertation
+57	10.7717/peerj.5172/supp-15	None	10.7717/peerj.5172/supp-15	Figure S15: Forest plot of comparison: 5 Sleep onset latency: exercise versus control, outcome: 5.1 Sleep onset latency		component
+58	10.1007/s10836-010-5145-z	2010	10.1007/s10836-010-5145-z	Analysis of Scheduled Latency Insensitive Systems with Periodic Clock Calculus	Journal of Electronic Testing	journal-article
+59	10.1049/ip-e.1989.0025	1989	10.1049/ip-e.1989.0025	Adaptive, low latency, deadlock-free packet routing for networks of processors	IEE Proceedings E Computers and Digital Techniques	journal-article
+60	10.3390/v15081677	2023	10.3390/v15081677	New Concepts in Therapeutic Manipulation of HIV-1 Transcription and Latency: Latency Reversal versus Latency Prevention	Viruses	journal-article
+61	10.1109/hpec.2014.7040969	2014	10.1109/hpec.2014.7040969	FPGA-based latency-insensitive OFDM pipeline for wireless research	2014 IEEE High Performance Extreme Computing Conference (HPEC)	proceedings-article
+62	10.1109/iccad.2007.4397240	2007	10.1109/iccad.2007.4397240	Using functional independence conditions to optimize the performance of latency-insensitive systems	2007 IEEE/ACM International Conference on Computer-Aided Design	proceedings-article
+63	10.4324/9780429477973-2	2018	10.4324/9780429477973-2	Latency	On Latency	book-chapter
+64	10.1016/j.entcs.2005.05.033	2006	10.1016/j.entcs.2005.05.033	Multi-Clock Latency-Insensitive Architecture and Wrapper Synthesis	Electronic Notes in Theoretical Computer Science	journal-article
+65	10.1109/dsd.2005.47	None	10.1109/dsd.2005.47	High-Level Synthesis in Latency Insensitive System Methodology	8th Euromicro Conference on Digital System Design (DSD'05)	proceedings-article
+66	10.17816/humeco89348-68679	None	10.17816/humeco89348-68679	Fig. 1. An example of the ERP P300 in the central region of the brain: a — subject A. from the group with minimal risk to IA (N2 latency=184 ms, P300 latency=284 ms, amplitude — 11 mkV); b — subject B. from the group with moderate risk of developing IA (N2 latency=205 ms, LV P300 latency=297 ms, amplitude — 10 mkV); c — the subject M. from the group with Internet addiction (N2 latency=210 ms, P300 latency=315 ms, amplitude — 12 mkV).		component
+67	10.1016/j.entcs.2005.05.036	2006	10.1016/j.entcs.2005.05.036	The Role of Back-Pressure in Implementing Latency-Insensitive Systems	Electronic Notes in Theoretical Computer Science	journal-article
+68	10.1515/9780804786164-002	2020	10.1515/9780804786164-002	Chapter 1. Emergence of Latency ?	After 1945	book-chapter
+69	10.1109/reconfig.2016.7857147	2016	10.1109/reconfig.2016.7857147	A scalable latency-insensitive architecture for FPGA-accelerated semi-global matching in stereo vision applications	2016 International Conference on ReConFigurable Computing and FPGAs (ReConFig)	proceedings-article
+70	10.1109/access.2017.2731777	2017	10.1109/access.2017.2731777	Latency of Cellular-Based V2X: Perspectives on TTI-Proportional Latency and TTI-Independent Latency	IEEE Access	journal-article
+71	10.1515/9783111067384-002	2023	10.1515/9783111067384-002	1 Introduction: Latency as a Mode of Memory	Memory and Latency in Contemporary Anglophone Literature	book-chapter
+72	10.1145/2554688.2554786	2014	10.1145/2554688.2554786	Quantifying the cost and benefit of latency insensitive communication on FPGAs	Proceedings of the 2014 ACM/SIGDA international symposium on Field-programmable gate arrays	proceedings-article
+73	10.7717/peerjcs.326/fig-9	None	10.7717/peerjcs.326/fig-9	Figure 9: Latency comparison.		component
+74	10.7717/peerjcs.2484/fig-7	None	10.7717/peerjcs.2484/fig-7	Figure 7: Latency variations.		component
+75	10.1515/9780804786164-008	2020	10.1515/9780804786164-008	Chapter 7. Unconcealment of Latency?	After 1945	book-chapter
+76	10.7717/peerjcs.1986/fig-6	None	10.7717/peerjcs.1986/fig-6	Figure 6: Latency comparison.		component
+77	10.1145/1086228.1086279	2005	10.1145/1086228.1086279	From multi-clocked synchronous processes to latency-insensitive modules	Proceedings of the 5th ACM international conference on Embedded software	proceedings-article
+78	10.1109/iccad.2004.1382586	None	10.1109/iccad.2004.1382586	A power aware system level interconnect design methodology for latency-insensitive systems	IEEE/ACM International Conference on Computer Aided Design, 2004. ICCAD-2004.	proceedings-article
+79	10.1109/memcod.2010.5558635	2010	10.1109/memcod.2010.5558635	Minimizing back pressure for latency insensitive system synthesis	Eighth ACM/IEEE International Conference on Formal Methods and Models for Codesign (MEMOCODE 2010)	proceedings-article
+80	10.1155/2007/39161	2007	10.1155/2007/39161	Formal Methods for Scheduling of Latency-Insensitive Designs	EURASIP Journal on Embedded Systems	journal-article
+81	10.1109/aspdac.2011.5722257	2011	10.1109/aspdac.2011.5722257	Throughput optimization for latency-insensitive system with minimal queue insertion	16th Asia and South Pacific Design Automation Conference (ASP-DAC 2011)	proceedings-article
+82	10.1109/iccad.2003.159694	2003	10.1109/iccad.2003.159694	Performance optimization of latency insensitive systems through buffer queue sizing of communication channels	ICCAD-2003. International Conference on Computer Aided Design (IEEE Cat. No.03CH37486)	proceedings-article
+83	10.1109/csd.2001.981774	None	10.1109/csd.2001.981774	Optimization of asynchronous delay-insensitive pipeline latency using stage reorganization and optimal stage parameter estimation	Proceedings Second International Conference on Application of Concurrency to System Design	proceedings-article
+84	10.1166/jolpe.2017.1508	2017	10.1166/jolpe.2017.1508	Split Latency Allocator: Process Variation-Aware Register Access Latency Boost in a Near-Threshold Graphics Processing Unit	Journal of Low Power Electronics	journal-article
+85	10.1109/socc.2005.1554462	None	10.1109/socc.2005.1554462	Synchronous latency-insensitive design for multiple clock domain	2005 Joint 30th International Conference on Infrared and Millimeter Waves and 13th International Conference on Terahertz Electronics	proceedings-article
+86	10.1007/978-1-84882-244-3_6	None	10.1007/978-1-84882-244-3_6	Optimal Liveness-Enforcing Supervisors	Advances in Industrial Control	book-chapter
+87	10.1007/springerreference_117195	None	10.1007/springerreference_117195	Multiple Sleep Latency Test	SpringerReference	reference-entry
+88	10.4103/aian.aian_276_18	2019	10.4103/aian.aian_276_18	Terminal Latency Index, Residual Latency, and Median-Ulnar F-Wave Latency Difference in Carpal Tunnel Syndrome	Annals of Indian Academy of Neurology	journal-article
+89	10.1109/patmos.2018.8464170	2018	10.1109/patmos.2018.8464170	Automated Timing Characterization of High-Performance Macroblocks for Latency Insensitive FPGA Designs	2018 28th International Symposium on Power and Timing Modeling, Optimization and Simulation (PATMOS)	proceedings-article
+90	10.3390/v11121104	2019	10.3390/v11121104	HIV-1 Latency and Latency Reversal: Does Subtype Matter?	Viruses	journal-article
+91	10.1145/1278480.1278586	2007	10.1145/1278480.1278586	Topology-based optimization of maximal sustainable throughput in a latency-insensitive system	Proceedings of the 44th annual conference on Design automation - DAC '07	proceedings-article
+92	10.1007/11576235_108	2005	10.1007/11576235_108	Scheduling Latency Insensitive Computer Vision Tasks	Lecture Notes in Computer Science	book-chapter
+93	10.7717/peerj-cs.1626/table-7	None	10.7717/peerj-cs.1626/table-7	Table 7: Evaluation of latency.		component
+94	10.7717/peerj.19459/fig-1	None	10.7717/peerj.19459/fig-1	"Figure 1: Bland–Altman (difference
+                      <i>vs</i>
+                      average) of diary-reported sleep latency
+                      <i>vs</i>
+                      questionnaire-reported sleep latency."		component
+95	10.7717/peerj-cs.2956/fig-11	None	10.7717/peerj-cs.2956/fig-11	Figure 11: Instantaneous latency comparison.		component
+96	10.7717/peerj-cs.1626/fig-7	None	10.7717/peerj-cs.1626/fig-7	Figure 7: Evaluation of latency.		component
+97	10.7717/peerj-cs.2464/table-6	None	10.7717/peerj-cs.2464/table-6	Table 6: Propagation latency (ms).		component
+98	10.7717/peerj-cs.2539/table-2	None	10.7717/peerj-cs.2539/table-2	Table 2: Analysis of latency.		component
+99	10.7717/peerj-cs.2896/table-5	None	10.7717/peerj-cs.2896/table-5	Table 5: Data transmission latency.		component
+100	10.1525/luminos.244.g	2025	10.1525/luminos.244.g	Latency as the Temporality of Atmospheres	Atmospheric Knowledge: Environmentality, Latency, and Sonic Multimodality	book-chapter

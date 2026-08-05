@@ -106,8 +106,12 @@ map.
 
 Petri-net and discrete-event work supplies close requested-observation
 boundaries. Token-flow DAGs unify several established Petri-net semantics, while
-token-trail net languages jointly expose conflict and concurrency and cover
-finite unfoldings and step languages. Dynamic slices can be marking or MTL
+token-flow unfoldings combine that representation with prime event structures:
+one avoids isomorphic processes and a reduced variant further decreases
+representations whose underlying runs are isomorphic, while both retain
+complete partial-order behavior and admit canonical complete finite prefixes
+for bounded nets. Token-trail net languages jointly expose conflict and
+concurrency and cover finite unfoldings and step languages. Dynamic slices can be marking or MTL
 relative; safety slices preserve verification and falsification of the stated
 stutter-invariant properties; maximal slicing can retain every transition that
 contributes tokens to selected places in any computation; and timed aggregate
@@ -144,8 +148,8 @@ semantic ingredients are close:
   models;
 - conformance, latency-insensitive validation, and bounded-network refinement
   relate dataflow to hardware;
-- token-flow and token-trail semantics supply complete Petri-net behavior
-  representations; and
+- token-flow semantics, redundancy-reduced complete unfoldings, and token-trail
+  semantics supply complete Petri-net behavior representations; and
 - Petri-net slicing, reconstruction, and observation-policy synthesis supply
   property-preserving requested-event and observation-driven inverse results.
 

@@ -336,11 +336,16 @@ not a derived partition of caller inputs.
 Petri-net semantics provides complete partial-order objects independent of
 slicing. Token-flow DAGs modulo isomorphism unify processes, partial languages,
 rewriting terms, step sequences, and firing sequences
-@juhas2009tokenflows. Token-trail semantics instead gives a labelled-net
-language that represents conflict and concurrency, contains all finite
-unfoldings, and relates the source net's step language to those of the member
-nets @kovar2024tokentrail. These are rich whole-net behavior languages, not
-input-indexed observations of one requested pure-dataflow result.
+@juhas2009tokenflows. Token-flow unfoldings combine that representation with
+prime event structures: one avoids isomorphic processes and a reduced variant
+further decreases representations whose underlying runs are isomorphic, while
+both retain complete partial-order behavior; bounded nets admit canonical
+complete finite prefixes @bergenthum2009unfolding. Token-trail semantics instead
+gives a labelled-net language that represents conflict and concurrency,
+contains all finite unfoldings, and relates the source net's step language to
+those of the member nets @kovar2024tokentrail. These are rich whole-net behavior
+languages and unfoldings, not input-indexed observations of one requested
+pure-dataflow result or typed residual functions over its caller-input fibers.
 
 Colored-net symbolic unfoldings provide another true-concurrency
 representation: they avoid materializing every independent-action interleaving

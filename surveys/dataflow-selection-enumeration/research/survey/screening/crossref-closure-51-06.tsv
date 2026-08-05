@@ -1,0 +1,101 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1109/fdl.2018.8524052	2018	10.1109/fdl.2018.8524052	Scade 6: From a Kahn Semantics to a Kahn Implementation for Multicore	2018 Forum on Specification &amp; Design Languages (FDL)	proceedings-article
+2	10.1109/samos.2016.7818327	2016	10.1109/samos.2016.7818327	Processes and actors: Translating Kahn processes to dataflow with firing	2016 International Conference on Embedded Computer Systems: Architectures, Modeling and Simulation (SAMOS)	proceedings-article
+3	10.1109/emsoft.2015.7318265	2015	10.1109/emsoft.2015.7318265	Executing dataflow actors as kahn processes	2015 International Conference on Embedded Software (EMSOFT)	proceedings-article
+4	10.1017/cbo9780511770524.005	2009	10.1017/cbo9780511770524.005	The semantics of dataflow with firing	From Semantics to Computer Science	book-chapter
+5	10.70675/33859af0z9c09z423dzb345z62ae1ec51d10	None	10.70675/33859af0z9c09z423dzb345z62ae1ec51d10	Mechanized semantics for circuits : from dataflow to hardware		dissertation
+6	10.17771/pucrio.acad.30650	None	10.17771/pucrio.acad.30650	DATAFLOW SEMANTICS FOR END-USER PROGRAMMABLE APPLICATIONS		dissertation
+7	10.37661/1816-0301-2023-20-2-65-84	2023	10.37661/1816-0301-2023-20-2-65-84	Generation of shortest path search dataflow networks of actors for parallel multi-core implementation	Informatics	journal-article
+8	10.1007/s11265-014-0956-2	2016	10.1007/s11265-014-0956-2	Scheduling of Parallelized Synchronous Dataflow Actors for Multicore Signal Processing	Journal of Signal Processing Systems	journal-article
+9	10.70675/ad6bd080z2a9az4f97za38bz9e26df403cc0	None	10.70675/ad6bd080z2a9az4f97za38bz9e26df403cc0	Runtime multicore scheduling techniques for dispatching parameterized signal and vision dataflow applications on heterogeneous MPSoCs		dissertation
+10	10.70675/0d242e5czfe16z49f6za04ezf51f4dabb08e	None	10.70675/0d242e5czfe16z49f6za04ezf51f4dabb08e	Mechanized semantics and verified compilation for a dataflow synchronous language with reset		dissertation
+11	10.5772/28816	2012	10.5772/28816	Interaction Processes Between Key Actors – Understanding Implementation Processes of Legislation for Water Pollution Control, the Israeli Case	Water Pollution	book-chapter
+12	10.1201/b10376-34	2010	10.1201/b10376-34	Dataflow Frameworks for Emerging Heterogeneous Architec- tures and Their Application to Biomedicine	Scientific Computing with Multicore and Accelerators	book-chapter
+13	10.4324/9780429402333-16	2021	10.4324/9780429402333-16	Policy implementation	Environmental Policy in the EU	book-chapter
+14	10.1017/cbo9780511770524.018	2009	10.1017/cbo9780511770524.018	A constructive denotational semantics for Kahn networks in Coq	From Semantics to Computer Science	book-chapter
+15	10.21203/rs.3.rs-3140464/v1	2023	10.21203/rs.3.rs-3140464/v1	DataFlow based- Automatic parallelization of MATLAB/Simulink models for Fitting Modern Multicore Architectures		posted-content
+16	10.1002/9781118561898.ch6	2013	10.1002/9781118561898.ch6	SCADE: Implementation and Applications	Formal Methods	other
+17	10.1017/cbo9780511811432.018	2002	10.1017/cbo9780511811432.018	Dataflow Analysis	Modern Compiler Implementation in Java	book-chapter
+18	10.1017/cbo9780511811449.018	1997	10.1017/cbo9780511811449.018	Dataflow Analysis	Modern Compiler Implementation in ML	book-chapter
+19	10.1145/2103736.2103744	2012	10.1145/2103736.2103744	Sessional dataflow	Proceedings of the 7th workshop on Declarative aspects and applications of multicore programming	proceedings-article
+20	10.1109/sips.2011.6088974	2011	10.1109/sips.2011.6088974	Efficient multicore scheduling of dataflow process networks	2011 IEEE Workshop on Signal Processing Systems (SiPS)	proceedings-article
+21	10.1109/dfm.2013.14	2013	10.1109/dfm.2013.14	Reo: A Dataflow Inspired Language for Multicore	2013 Data-Flow Execution Models for Extreme Scale Computing	proceedings-article
+22	10.1109/iwmse.2009.5071380	2009	10.1109/iwmse.2009.5071380	Stage: Python with Actors	2009 ICSE Workshop on Multicore Software Engineering	proceedings-article
+23	10.1109/icpp.2009.66	2009	10.1109/icpp.2009.66	Optimizing Communication Scheduling Using Dataflow Semantics	2009 International Conference on Parallel Processing	proceedings-article
+24	10.4018/978-1-7998-8350-0.ch003	2022	10.4018/978-1-7998-8350-0.ch003	Classification Algorithms and Dataflow Implementation	Advances in Systems Analysis, Software Engineering, and High Performance Computing	book-chapter
+25	10.1109/icce-taiwan55306.2022.9869117	2022	10.1109/icce-taiwan55306.2022.9869117	Design of Multicore Dataflow DSPs with Different Loop Iteration Mechanisms	2022 IEEE International Conference on Consumer Electronics - Taiwan	proceedings-article
+26	10.1109/icce-tw.2016.7521024	2016	10.1109/icce-tw.2016.7521024	Expansion of operations in a multicore dataflow DSP	2016 IEEE International Conference on Consumer Electronics-Taiwan (ICCE-TW)	proceedings-article
+27	10.1007/bfb0022475	None	10.1007/bfb0022475	An extensional treatment of dataflow deadlock	Lecture Notes in Computer Science	book-chapter
+28	10.1017/cbo9781139174930.018	1997	10.1017/cbo9781139174930.018	Dataflow Analysis	Modern Compiler Implementation in C	book-chapter
+29	10.1109/globalsip.2015.7418326	2015	10.1109/globalsip.2015.7418326	Multicore execution of dynamic dataflow programs on the distributed application layer	2015 IEEE Global Conference on Signal and Information Processing (GlobalSIP)	proceedings-article
+30	10.1016/bs.adcom.2016.09.004	2017	10.1016/bs.adcom.2016.09.004	A Streaming Dataflow Implementation of Parallel Cocke–Younger–Kasami Parser	Advances in Computers	book-chapter
+31	10.4018/978-1-7998-8350-0.ch006	2022	10.4018/978-1-7998-8350-0.ch006	Implementation Details of Neural Networks Using Dataflow	Advances in Systems Analysis, Software Engineering, and High Performance Computing	book-chapter
+32	10.4018/978-1-7998-8350-0.ch007	2022	10.4018/978-1-7998-8350-0.ch007	Implementation Details of Decision Tree Algorithms Using Dataflow	Advances in Systems Analysis, Software Engineering, and High Performance Computing	book-chapter
+33	10.1002/9781119125587.ch14	2018	10.1002/9781119125587.ch14	Multicore Navigator	Multicore DSP	other
+34	10.1007/bf01186644	1995	10.1007/bf01186644	A compositional dataflow semantics for Petri nets	Acta Informatica	journal-article
+35	10.4018/978-1-7998-8350-0.ch009	2022	10.4018/978-1-7998-8350-0.ch009	Implementation Details of Density-Based Algorithms Using Dataflow	Advances in Systems Analysis, Software Engineering, and High Performance Computing	book-chapter
+36	10.4018/978-1-7998-8350-0.ch008	2022	10.4018/978-1-7998-8350-0.ch008	Implementation Details of Rule-Based Algorithms Using Dataflow	Advances in Systems Analysis, Software Engineering, and High Performance Computing	book-chapter
+37	10.1109/icce-china.2018.8448523	2018	10.1109/icce-china.2018.8448523	Comparative Evaluation of Multicore Dataflow DSPs with Different Arithmetic Units	2018 IEEE International Conference on Consumer Electronics-Taiwan (ICCE-TW)	proceedings-article
+38	10.14264/uql.2015.242	None	10.14264/uql.2015.242	Design and implementation of a dynamic dataflow array processor system (PATTSY)		dissertation
+39	10.1017/cbo9780511770524.008	2009	10.1017/cbo9780511770524.008	Program semantics and infinite regular terms	From Semantics to Computer Science	book-chapter
+40	10.1145/2155620.2155628	2011	10.1145/2155620.2155628	Dataflow execution of sequential imperative programs on multicore architectures	Proceedings of the 44th Annual IEEE/ACM International Symposium on Microarchitecture	proceedings-article
+41	10.1109/dfm.2013.9	2013	10.1109/dfm.2013.9	An Approach for Direct Dataflow Execution on Contemporary Multicore Systems	2013 Data-Flow Execution Models for Extreme Scale Computing	proceedings-article
+42	10.1007/s002360050029	1995	10.1007/s002360050029	A compositional dataflow semantics for Petri nets	Acta Informatica	journal-article
+43	10.1017/cbo9780511770524.011	2009	10.1017/cbo9780511770524.011	Semantics of program representation graphs	From Semantics to Computer Science	book-chapter
+44	10.1002/9781119125587.ch10	2018	10.1002/9781119125587.ch10	Single and multicore debugging	Multicore DSP	other
+45	10.1007/bfb0018344	None	10.1007/bfb0018344	Compositional relational semantics for indeterminate dataflow networks	Lecture Notes in Computer Science	book-chapter
+46	10.1145/3183767.3183781	2018	10.1145/3183767.3183781	Reducing Code Size in Scheduling Synchronous Dataflow Graphs on Multicore Systems	Proceedings of the 9th Workshop and 7th Workshop on Parallel Programming and RunTime Management Techniques for Manycore Architectures and Design Tools and Architectures for Multicore Embedded Computing Platforms	proceedings-article
+47	10.1109/trustcom.2013.248	2013	10.1109/trustcom.2013.248	Multicore Parallel Implementation of Agent Emotional Processes	2013 12th IEEE International Conference on Trust, Security and Privacy in Computing and Communications	proceedings-article
+48	10.4324/9781315638140-3	2016	10.4324/9781315638140-3	The actors and processes of economic policy-making	Chinese Economic Diplomacy	book-chapter
+49	10.1145/2228360.2228480	2012	10.1145/2228360.2228480	Executing synchronous dataflow graphs on a SPM-based multicore architecture	Proceedings of the 49th Annual Design Automation Conference	proceedings-article
+50	10.1007/bfb0022459	1979	10.1007/bfb0022459	Semantics of Concurrent Computation	Lecture Notes in Computer Science	book
+51	10.1145/2541329.2541332	2013	10.1145/2541329.2541332	Semantics-preserving sharing actors	Proceedings of the 2013 workshop on Programming based on actors, agents, and decentralized control	proceedings-article
+52	10.1515/ling.1974.12.141.27	1974	10.1515/ling.1974.12.141.27	ALGEBRAIC SEMANTICS FOR NARRATIVE	Linguistics	journal-article
+53	10.1007/bfb0039592	None	10.1007/bfb0039592	Natural semantics	Lecture Notes in Computer Science	book-chapter
+54	10.7146/brics.v4i36.18962	1997	10.7146/brics.v4i36.18962	Relational Semantics of Non-Deterministic Dataflow	BRICS Report Series	journal-article
+55	10.1109/sips.2017.8110023	2017	10.1109/sips.2017.8110023	Task-based execution of synchronous dataflow graphs for scalable multicore computing	2017 IEEE International Workshop on Signal Processing Systems (SiPS)	proceedings-article
+56	10.1109/sips.2013.6674533	2013	10.1109/sips.2013.6674533	High-performance programs by source-level merging of RVC-CAL dataflow actors	SiPS 2013 Proceedings	proceedings-article
+57	10.1007/s10586-024-04265-1	2024	10.1007/s10586-024-04265-1	Dataflow-based automatic parallelization of MATLAB/Simulink models for fitting modern multicore architectures	Cluster Computing	journal-article
+58	10.1017/cbo9780511770524.006	2009	10.1017/cbo9780511770524.006	Kahn networks at the dawn of functional programming	From Semantics to Computer Science	book-chapter
+59	10.1109/acssc.2014.7094699	2014	10.1109/acssc.2014.7094699	Finding fast action selectors for dataflow actors	2014 48th Asilomar Conference on Signals, Systems and Computers	proceedings-article
+60	10.1109/icce.2016.7430616	2016	10.1109/icce.2016.7430616	Design of multicore HEVC decoders using actor-based dataflow models and OpenMP	2016 IEEE International Conference on Consumer Electronics (ICCE)	proceedings-article
+61	10.1017/cbo9780511770524.023	2009	10.1017/cbo9780511770524.023	Reflections on INRIA and the role of Gilles Kahn	From Semantics to Computer Science	book-chapter
+62	10.1016/0304-3975(94)90054-x	1994	10.1016/0304-3975(94)90054-x	A denotational semantics and dataflow construction for logic programs	Theoretical Computer Science	journal-article
+63	10.1017/cbo9780511770524.016	2009	10.1017/cbo9780511770524.016	Theorem-proving support in programming language semantics	From Semantics to Computer Science	book-chapter
+64	10.1109/dsd.2015.62	2015	10.1109/dsd.2015.62	Dataflow Support in x86_64 Multicore Architectures through Small Hardware Extensions	2015 Euromicro Conference on Digital System Design	proceedings-article
+65	10.1109/sips.2017.8110002	2017	10.1109/sips.2017.8110002	Low-power heterogeneous computing via adaptive execution of dataflow actors	2017 IEEE International Workshop on Signal Processing Systems (SiPS)	proceedings-article
+66	10.1017/cbo9780511770524.001	2009	10.1017/cbo9780511770524.001	Preface	From Semantics to Computer Science	book-chapter
+67	10.1109/icce.2015.7066449	2015	10.1109/icce.2015.7066449	A multicore DSP HEVC decoder using an actor-based dataflow model	2015 IEEE International Conference on Consumer Electronics (ICCE)	proceedings-article
+68	10.5040/9781474202916.ch-014	None	10.5040/9781474202916.ch-014	Non-State Actors in International Relations: Actors, Processes, and an Agenda for Multifaceted Dialogue	Non-State Actors in International Law	book-chapter
+69	10.1109/sips55645.2022.9919213	2022	10.1109/sips55645.2022.9919213	Co-optimizing Dataflow Graphs and Actors with MLIR	2022 IEEE Workshop on Signal Processing Systems (SiPS)	proceedings-article
+70	10.1163/9789004215894_004	2011	10.1163/9789004215894_004	Chapter 3 Actors and structures in implementation	The Internal Implementation of Peace Agreements after Violent Intrastate Conflict	book-chapter
+71	10.1109/tc.2019.2937867	2020	10.1109/tc.2019.2937867	TTADF: Power Efficient Dataflow-Based Multicore Co-Design Flow	IEEE Transactions on Computers	journal-article
+72	10.1093/hepl/9780198708902.003.0008	2016	10.1093/hepl/9780198708902.003.0008	8. Implementation and behaviour	Foreign Policy	book-chapter
+73	10.1145/3229631.3229643	2018	10.1145/3229631.3229643	Communication-aware scheduling algorithms for synchronous dataflow graphs on multicore systems	Proceedings of the 18th International Conference on Embedded Computer Systems: Architectures, Modeling, and Simulation	proceedings-article
+74	10.1109/idt.2014.7038605	2014	10.1109/idt.2014.7038605	Translating of MATLAB/SIMULINLK model to synchronous dataflow graph for parallelism analysis and programming embedded multicore systems	2014 9th International Design and Test Symposium (IDT)	proceedings-article
+75	10.4324/9781849771221-10	2012	10.4324/9781849771221-10	Introduction: European Union Environmental Policy – Actors, Institutions and Policy Processes	Environmental Policy in the EU	book-chapter
+76	10.1109/mcsoc51149.2021.00018	2021	10.1109/mcsoc51149.2021.00018	Performance Estimation of High-Level Dataflow Program on Heterogeneous Platforms	2021 IEEE 14th International Symposium on Embedded Multicore/Many-core Systems-on-Chip (MCSoC)	proceedings-article
+77	10.1002/9781119125587.ch18	2018	10.1002/9781119125587.ch18	FFT implementation	Multicore DSP	other
+78	10.1109/acssc.2012.6489270	2012	10.1109/acssc.2012.6489270	Toward efficient execution of dataflow actors	2012 Conference Record of the Forty Sixth Asilomar Conference on Signals, Systems and Computers (ASILOMAR)	proceedings-article
+79	10.1007/s11265-017-1260-8	2017	10.1007/s11265-017-1260-8	Design Flow for GPU and Multicore Execution of Dynamic Dataflow Programs	Journal of Signal Processing Systems	journal-article
+80	10.1109/mcsoc57363.2022.00010	2022	10.1109/mcsoc57363.2022.00010	A survey of main dataflow MoCCs for CPS design and verification	2022 IEEE 15th International Symposium on Embedded Multicore/Many-core Systems-on-Chip (MCSoC)	proceedings-article
+81	10.1002/9781119125587.ch17	2018	10.1002/9781119125587.ch17	Adaptive filter implementation	Multicore DSP	other
+82	10.70675/af5f3417zd342z46dez8a19z8e1eab06d02c	None	10.70675/af5f3417zd342z46dez8a19z8e1eab06d02c	Compilation certifiée de SCADE/LUSTRE		dissertation
+83	10.1109/acssc.2014.7094469	2014	10.1109/acssc.2014.7094469	Partial expansion of dataflow graphs for resource-aware scheduling of multicore signal processing systems	2014 48th Asilomar Conference on Signals, Systems and Computers	proceedings-article
+84	10.1007/bfb0055650	1998	10.1007/bfb0055650	Fibrational semantics of dataflow networks	Lecture Notes in Computer Science	book-chapter
+85	10.1002/9781119125587.ch20	2018	10.1002/9781119125587.ch20	Stereo vision implementation	Multicore DSP	other
+86	10.1109/mcsoc51149.2021.00017	2021	10.1109/mcsoc51149.2021.00017	SIMD Parallel Execution on GPU from High-Level Dataflow Synthesis	2021 IEEE 14th International Symposium on Embedded Multicore/Many-core Systems-on-Chip (MCSoC)	proceedings-article
+87	10.1002/9781119125587.ch16	2018	10.1002/9781119125587.ch16	IIR filter implementation	Multicore DSP	other
+88	10.1109/acssc.2011.6190107	2011	10.1109/acssc.2011.6190107	A machine model for dataflow actors and its applications	2011 Conference Record of the Forty Fifth Asilomar Conference on Signals, Systems and Computers (ASILOMAR)	proceedings-article
+89	10.1109/mcsoc.2016.23	2016	10.1109/mcsoc.2016.23	High-Precision Performance Estimation of Dynamic Dataflow Programs	2016 IEEE 10th International Symposium on Embedded Multicore/Many-core Systems-on-Chip (MCSOC)	proceedings-article
+90	10.1002/9781119125587.ch15	2018	10.1002/9781119125587.ch15	FIR filter implementation	Multicore DSP	other
+91	10.1109/sips.2006.352547	2006	10.1109/sips.2006.352547	Configuration and Representation of Large-Scale Dataflow Graphs using the Dataflow Interchange Format	2006 IEEE Workshop on Signal Processing Systems Design and Implementation	proceedings-article
+92	10.1145/3440034	2021	10.1145/3440034	Code-size-aware Scheduling of Synchronous Dataflow Graphs on Multicore Systems	ACM Transactions on Embedded Computing Systems	journal-article
+93	10.1007/3-540-55808-x_26	1992	10.1007/3-540-55808-x_26	Dataflow semantics for Petri nets	Lecture Notes in Computer Science	book-chapter
+94	10.1145/1370082.1370084	2008	10.1145/1370082.1370084	Transactional memory	Proceedings of the 1st international workshop on Multicore software engineering	proceedings-article
+95	10.1109/mcsoc.2016.25	2016	10.1109/mcsoc.2016.25	Design Space Exploration Problem Formulation for Dataflow Programs on Heterogeneous Architectures	2016 IEEE 10th International Symposium on Embedded Multicore/Many-core Systems-on-Chip (MCSOC)	proceedings-article
+96	10.1109/iintec.2018.8695280	2018	10.1109/iintec.2018.8695280	A Model-based Synthesis Framework for the Execution of Dynamic Dataflow Actors	2018 International Conference on Internet of Things, Embedded Systems and Communications (IINTEC)	proceedings-article
+97	10.1109/gcis.2013.6	2013	10.1109/gcis.2013.6	ActorGame: Game Semantics for Actors	2013 Fourth Global Congress on Intelligent Systems	proceedings-article
+98	10.1007/s00165-003-0018-1	2003	10.1007/s00165-003-0018-1	Intensional and Extensional Semantics of Dataflow Programs	Formal Aspects of Computing	journal-article
+99	10.23919/eusipco58844.2023.10290113	2023	10.23919/eusipco58844.2023.10290113	Automated Clustering and Pipelining of Dataflow Actors for Controlled Scheduling Complexity	2023 31st European Signal Processing Conference (EUSIPCO)	proceedings-article
+100	10.1109/ederc.2014.6924381	2014	10.1109/ederc.2014.6924381	Spider: A Synchronous Parameterized and Interfaced Dataflow-based RTOS for multicore DSPS	2014 6th European Embedded Design in Education and Research Conference (EDERC)	proceedings-article
