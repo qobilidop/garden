@@ -41,7 +41,13 @@ constraints symbolically, but proves finite-prefix completeness only for the
 ordinary safe Time-Petri-net subclass. For 1-safe free-choice nets, a different
 full prefix folds maximal-step paths at repeated markings and supports exact
 reveals, excludes, and maximal-run transition-set footprints, with exponential
-worst-case footprint computation. These are reductions or finite
+worst-case footprint computation. Its semantic predecessor also observes
+negative information and repeated occurrence counts; a later bounded
+equal-conflict algorithm uses multiplicity-sensitive thresholds and a smaller
+query-relative reduced-marking structure. A general unfolding framework makes
+the preserved configuration equivalence user-parametric, while goal-driven
+unfolding omits transitions outside every minimal configuration to one
+requested marking and preserves all such configurations. These are reductions or finite
 representations of whole-net runs and reachability, not caller-input
 observation fibers with typed residuals.
 Bilgram et al. further quotient behaviorally equivalent colors and remove

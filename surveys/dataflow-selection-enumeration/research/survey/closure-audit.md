@@ -2286,3 +2286,102 @@ If round 57 reopens the map, round 58 is retired unexecuted. If both qualify,
 they establish the required two-round no-add sequence only for the recorded
 sources, exact queries, captured rankings, date, and frozen trigger. Complete
 primary and independent audits remain mandatory before closure.
+
+## Outcome of round 57, forward reconciliation, and retirement of round 58
+
+Round 57 reopens the map under the frozen conservative trigger. All three
+auditors parsed and title-screened the 800 logical occurrences. Each snapshot
+has the required seven-column header, 100 records, exact ranks, and 100 unique
+nonblank identifiers. The batch contains 782 unique identifiers and 721 unique
+nonblank titles under the frozen normalization. Six blank-title occurrences
+are a nontechnical grant and five versions of an irrelevant supplement. Eight
+quoted titles are multiline logical records.
+
+The independent audits agreed on the decisive bounded equal-conflict result
+and disagreed conservatively over three supporting branches. Reconciliation
+retains two canonical works directly from the batch:
+
+- Bernardinello et al. define reveals, excludes, extended reveals, and
+  occurrence-count-sensitive repeated reveals over maximal Petri-net runs.
+  The 2015 workshop paper is reconciled to the canonical 2016 chapter. It
+  changes the observer semantics but supplies no decision algorithm.
+- Adobbati et al. extend the information-flow model from 1-safe free-choice
+  nets to bounded equal-conflict weighted systems, replace set footprints with
+  multiplicity-sensitive parametric reveals, prove correctness and
+  termination, and in the final treatment use a smaller query-relative
+  reduced-marking structure. The 2022 workshop paper is its preliminary
+  version.
+
+Directed unfolding and BNDC noninterference checking are recorded as close
+supporting boundaries, not independent additions: the former primarily orders
+exploration or prunes sound dead ends, and the latter decides one Boolean
+security property atop a complete prefix. A complete 41-record OpenAlex
+forward neighborhood from directed unfolding was then frozen and screened.
+That follow-up retains two additional canonical works:
+
+- Bonet et al. parameterize complete unfolding prefixes by a user-declared
+  configuration equivalence and cutting context, weaken adequate orders to
+  proof-only well-founded relations, and separate event selection from cutoff
+  correctness.
+- Chatain and Paulevé compute a finite goal-driven prefix for a finite safe net
+  that omits transitions outside every minimal configuration to one requested
+  marking while preserving all such configurations.
+
+Unbounded-deadlock unfoldings, lazy reachability-query schemes, planning and
+alignment applications, parametric state reachability, stopwatch state spaces,
+flow unfoldings, free-choice observability, maximal-step state generation,
+and compositional symbolic-execution variants remain within represented or
+supporting model, property, and search boundaries after target-focused
+adjudication. The direct-target queries contain no work that partitions caller
+inputs by a sparse requested internal-site observer and attaches exact guards
+and typed residuals. Round 57 therefore cannot count toward closure, and round
+58 is retired unexecuted.
+
+## Replacement round `closure-replacement-59`: Crossref
+
+Frozen on 2026-08-04 after reconciliation and independent adjudication of
+round 57 and its forward neighborhood, and before any round-59 or round-60
+query was executed. Source: Crossref REST API. The first five queries follow
+the changed observer and preservation objects, and the final three are direct-
+target queries. Each exact phrase is searched with `query.bibliographic`,
+sorted by relevance, with the first 100 records exported unless fewer are
+returned. A round qualifies as no-add only if complete screening adds neither
+a conceptual cluster nor a plausible close competitor. A publication within
+an already represented lineage does not reopen the map unless it changes the
+compared semantic object, guarantee, or program-model boundary, or is
+materially closer to the target construction.
+
+| ID | Exact query |
+|---|---|
+| C59-01 | `parametric reveals bounded equal conflict Petri net multiplicity threshold full prefix` |
+| C59-02 | `repeated reveals excludes occurrence counts noninterference Petri net` |
+| C59-03 | `goal driven unfolding minimal configurations requested marking Petri net` |
+| C59-04 | `user specified preserved information unfolding prefix cutoff well founded relation` |
+| C59-05 | `query directed Petri net unfolding observer preservation configuration equivalence` |
+| C59-06 | `complete sparse requested site observation image caller input inverse fibers` |
+| C59-07 | `exact internal event observation partition typed residual function` |
+| C59-08 | `requested selection site outcomes input fibers symbolic residuals` |
+
+## Replacement round `closure-replacement-60`: arXiv
+
+Execute only if round 59 adds neither a conceptual cluster nor a plausible
+close competitor. Source: arXiv API. Frozen on 2026-08-04 before any round-59
+or round-60 execution. Each phrase is submitted as the conjunction of all
+alphanumeric terms across arXiv's `all` field, sorted by relevance, with at
+most the first 100 records and abstracts exported.
+
+| ID | Exact query |
+|---|---|
+| C60-01 | `parametric reveals bounded equal conflict Petri net multiplicity threshold full prefix` |
+| C60-02 | `repeated reveals excludes occurrence counts noninterference Petri net` |
+| C60-03 | `goal driven unfolding minimal configurations requested marking Petri net` |
+| C60-04 | `user specified preserved information unfolding prefix cutoff well founded relation` |
+| C60-05 | `query directed Petri net unfolding observer preservation configuration equivalence` |
+| C60-06 | `complete sparse requested site observation image caller input inverse fibers` |
+| C60-07 | `exact internal event observation partition typed residual function` |
+| C60-08 | `requested selection site outcomes input fibers symbolic residuals` |
+
+If round 59 reopens the map, round 60 is retired unexecuted. If both qualify,
+they establish the required two-round no-add sequence only for the recorded
+sources, exact queries, captured rankings, date, and frozen trigger. Complete
+primary and independent audits remain mandatory before closure.

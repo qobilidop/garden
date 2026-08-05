@@ -68,6 +68,9 @@ already supplies:
 - symbolic unfoldings that avoid redundant concurrent interleavings and
   commute with component product, plus symbolic time, stopwatch, and parameter
   constraints whose finite-prefix guarantees remain subclass-specific;
+- user-parametric complete-prefix preservation and goal-driven prefixes that
+  retain every minimal configuration to one requested marking while omitting
+  transitions outside them;
 - exact basis-marking and bisimulation state reductions, a mildly lossy
   time-anonymous abstraction, and estimation graphs for partial observers;
 - exact fixed-structure current-marking sets and minimum-token initial-marking
@@ -108,8 +111,9 @@ already supplies:
   contextual-read, timed, and high-level symbolic complete prefixes, including
   an infinite-marking class; parametric and stopwatch symbolic unfoldings with
   explicit finite-prefix limits; maximal-run transition-footprint prefixes;
-  property-preserving Petri-net slices; and observation-driven Petri-net
-  structure reconstruction; and
+  negative, repeated, and multiplicity-sensitive parametric reveals; property-
+  preserving Petri-net slices; and observation-driven Petri-net structure
+  reconstruction; and
 - a complete categorical language for value-dependent faceted dataflow
   workflows.
 

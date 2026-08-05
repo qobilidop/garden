@@ -122,8 +122,13 @@ improves locality for ordinary safe Time Petri Nets, but its finite-complete-
 prefix theorem is restricted to that nonparametric subclass. For 1-safe
 free-choice nets, a full prefix of the maximal-step computation tree supports
 reveals and excludes and computes the transition-label footprints of all
-maximal runs. Token-trail net languages jointly expose conflict and concurrency
-and cover
+maximal runs. Repeated-reveals semantics retains occurrence counts, and the
+bounded equal-conflict extension supplies correct terminating parametric-
+reveals algorithms over a smaller query-relative structure. Generalized
+unfolding can parameterize the preserved configuration equivalence, while a
+goal-driven prefix preserves every minimal configuration to a requested
+marking and omits transitions outside them. Token-trail net languages jointly
+expose conflict and concurrency and cover
 finite unfoldings and step languages. Dynamic slices can be marking or MTL
 relative; safety slices preserve verification and falsification of the stated
 stutter-invariant properties; maximal slicing can retain every transition that
@@ -166,9 +171,10 @@ semantic ingredients are close:
   and high-level symbolic complete prefixes; parametric and stopwatch symbolic
   unfoldings with explicit finiteness limits; and token-trail semantics supply
   complete Petri-net behavior representations; and
-- maximal-run footprint analysis, Petri-net slicing, reconstruction, and
-  observation-policy synthesis supply property-preserving requested-event and
-  observation-driven inverse results.
+- user-parametric and goal-driven prefixes, multiplicity-sensitive reveals,
+  maximal-run footprints, Petri-net slicing, reconstruction, and observation-
+  policy synthesis supply property-preserving requested-event and inverse
+  results.
 
 The survey therefore rules out claims of inventing choice-induced dataflow
 partitioning, symbolic trace equivalence, contextual demand, or modular hardware

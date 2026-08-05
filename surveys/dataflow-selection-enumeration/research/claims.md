@@ -345,3 +345,21 @@ proof obligations, and evidence.
 - **Consequence:** The formal observer-fiber construction cannot imply a
   practical speedup. Any implementation claim requires measurements against
   projected encodings, decision diagrams, and specialized quotients.
+
+## S14 — Request-relative complete prefixes and count-sensitive observers are established
+
+- **Status:** survey synthesis; broad novelty defeated
+- **Statement:** Petri-net unfolding can parameterize the semantic information
+  preserved by a prefix, retain every minimal configuration reaching one
+  requested marking while omitting transitions outside all such
+  configurations, and decide multiplicity-sensitive reveals relations over
+  bounded equal-conflict maximal runs.
+- **Prior frontier:** Bonet et al. separate user-declared configuration
+  equivalence, cutting contexts, and event selection; Chatain and Paulevé prove
+  completeness of finite goal-driven prefixes; Bernardinello et al. define
+  repeated reveals and excludes; Adobbati et al. supply the bounded
+  equal-conflict parametric algorithm and query-relative reduction.
+- **Consequence:** Neither request-relative omission nor a finite sparse
+  internal-event observer can support a novelty claim by itself. The remaining
+  distinction is the exact caller-input inverse-fiber and typed-residual
+  packaging for contextual selection sites in a pure shared graph.

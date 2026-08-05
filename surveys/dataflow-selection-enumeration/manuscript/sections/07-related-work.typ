@@ -361,10 +361,24 @@ those of the member nets @kovar2024tokentrail. For 1-safe free-choice nets, a
 full prefix of the maximal-step computation tree supports reveals and excludes
 analysis and computes the sets of transition labels occurring in all maximal
 runs, with an exponential worst-case footprint bound
-@adobbati2022informationflowprefix. These are rich whole-net behavior
-languages, reachability summaries, prefixes, unfoldings, and unordered
-transition-set footprints, not input-indexed observations of one requested
-pure-dataflow result or typed residual functions over its caller-input fibers.
+@adobbati2022informationflowprefix. The underlying information-flow semantics
+also includes negative excludes, set-valued extended reveals, and
+occurrence-count-sensitive repeated reveals @bernardinello2016revealsexcludes.
+A later bounded equal-conflict construction computes multiplicity-sensitive
+parametric reveals correctly on a finite full prefix, extending the model from
+1-safe free-choice nets to bounded weighted nets
+@adobbati2024parametricreveals.
+
+Two other prefix results make the request-relative boundary explicit. A
+general unfolding framework lets the user declare which information a prefix
+must preserve and how cutoffs are recognized while separating extension order
+from cutoff correctness @bonet2014recent. Goal-driven unfolding specializes a
+finite safe net to one requested marking, omits transitions outside every
+minimal goal-reaching configuration, and preserves all such configurations
+@chatain2017goaldriven. These are rich whole-net behavior languages,
+reachability summaries, prefixes, unfoldings, and transition observations—not
+input-indexed observations of one requested pure-dataflow result or typed
+residual functions over its caller-input fibers.
 
 Colored-net symbolic unfoldings provide another true-concurrency
 representation: they avoid materializing every independent-action interleaving

@@ -1,0 +1,101 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1007/s10703-013-0188-2	2013	10.1007/s10703-013-0188-2	Symbolic unfolding of parametric stopwatch Petri nets	Formal Methods in System Design	journal-article
+2	10.1007/978-3-642-15643-4_22	2010	10.1007/978-3-642-15643-4_22	Symbolic Unfolding of Parametric Stopwatch Petri Nets	Lecture Notes in Computer Science	book-chapter
+3	10.1007/978-3-540-68746-7_21	2008	10.1007/978-3-540-68746-7_21	Symbolic State Space of Stopwatch Petri Nets with Discrete-Time Semantics (Theory Paper)	Lecture Notes in Computer Science	book-chapter
+4	10.5772/5322	2008	10.5772/5322	Scheduling Analysis of FMS Using the Unfolding Time Petri Nets	Petri Net, Theory and Applications	book-chapter
+5	10.3182/20070613-3-fr-4909.00038	2007	10.3182/20070613-3-fr-4909.00038	POST AND PRE-INITIALIZED STOPWATCH PETRI NETS	IFAC Proceedings Volumes	journal-article
+6	10.1007/978-3-031-33620-1_20	2023	10.1007/978-3-031-33620-1_20	Symbolic Analysis and Parameter Synthesis for Time Petri Nets Using Maude and SMT Solving	Lecture Notes in Computer Science	book-chapter
+7	10.1155/2013/970487	2013	10.1155/2013/970487	Controller Synthesis of Time Petri Nets Using Stopwatch	Journal of Engineering	journal-article
+8	10.1007/3-540-69108-1_7	1998	10.1007/3-540-69108-1_7	Finding Stubborn Sets of Coloured Petri Nets without Unfolding	Lecture Notes in Computer Science	book-chapter
+9	10.31274/etd-180810-2060	None	10.31274/etd-180810-2060	Comparison of encoding schemes for symbolic model checking of bounded petri nets		dissertation
+10	10.1109/wodes.2006.1678404	None	10.1109/wodes.2006.1678404	Decidability, Expressivity and State-Space Computation of Stopwatch Petri Nets with Discrete-Time Semantics	2006 8th International Workshop on Discrete Event Systems	proceedings-article
+11	10.1007/978-3-642-84524-6_10	1991	10.1007/978-3-642-84524-6_10	Generalized Inverses and the Calculation of Symbolic Invariants for Coloured Petri Nets	High-level Petri Nets	book-chapter
+12	10.5121/ijcsea.2012.2504	2012	10.5121/ijcsea.2012.2504	Reliability Assessment of Embedded Systems Using Stopwatch Petri Nets	International Journal of Computer Science, Engineering and Applications	journal-article
+13	10.46298/.12781	2024	10.46298/.12781	A rewriting-logic-with-SMT-based formal analysis and parameter synthesis framework for parametric time Petri nets	Fundamenta Informaticae	journal-article
+14	10.1007/978-3-030-51831-8_23	2020	10.1007/978-3-030-51831-8_23	MCC: A Tool for Unfolding Colored Petri Nets in PNML Format	Lecture Notes in Computer Science	book-chapter
+15	10.1007/978-3-642-13675-7_11	2010	10.1007/978-3-642-13675-7_11	Factorization Properties of Symbolic Unfoldings of Colored Petri Nets	Lecture Notes in Computer Science	book-chapter
+16	10.1007/978-3-540-68746-7_6	2008	10.1007/978-3-540-68746-7_6	Faster Unfolding of General Petri Nets Based on Token Flows	Lecture Notes in Computer Science	book-chapter
+17	10.1007/978-3-540-89287-8_11	2008	10.1007/978-3-540-89287-8_11	Directed Unfolding of Petri Nets	Lecture Notes in Computer Science	book-chapter
+18	10.1007/978-3-319-07734-5_10	2014	10.1007/978-3-319-07734-5_10	Flow Unfolding of Multi-clock Nets	Lecture Notes in Computer Science	book-chapter
+19	10.1007/978-3-662-53401-4_15	2016	10.1007/978-3-662-53401-4_15	A Symbolic Model Checker for Petri Nets: pnmc	Lecture Notes in Computer Science	book-chapter
+20	10.1007/978-3-030-51831-8_16	2020	10.1007/978-3-030-51831-8_16	Efficient Unfolding of Coloured Petri Nets Using Interval Decision Diagrams	Lecture Notes in Computer Science	book-chapter
+21	10.1007/978-3-642-21834-7_20	2011	10.1007/978-3-642-21834-7_20	Crocodile: A Symbolic/Symbolic Tool for the Analysis of Symmetric Nets with Bag	Lecture Notes in Computer Science	book-chapter
+22	10.46298/.8464	2021	10.46298/.8464	Cost Problems for Parametric Time Petri Nets	Fundamenta Informaticae	journal-article
+23	10.1007/3-540-48745-x_3	1999	10.1007/3-540-48745-x_3	Structural Methods to Improve the Symbolic Analysis of Petri Nets	Lecture Notes in Computer Science	book-chapter
+24	10.1016/j.nahs.2008.09.016	2008	10.1016/j.nahs.2008.09.016	Post and pre-initialized stopwatch Petri nets: Formal semantics and state space computation	Nonlinear Analysis: Hybrid Systems	journal-article
+25	10.1007/978-3-642-02424-5_20	2009	10.1007/978-3-642-02424-5_20	DSSZ-MC – A Tool for Symbolic Analysis of Extended Petri Nets	Lecture Notes in Computer Science	book-chapter
+26	10.1007/978-3-319-07734-5_11	2014	10.1007/978-3-319-07734-5_11	Non-interference by Unfolding	Lecture Notes in Computer Science	book-chapter
+27	10.1201/b14588-4	2013	10.1201/b14588-4	Symbolic Computation and Analysis of Petri Nets	Optimal Supervisory Control of Automated Manufacturing Systems	book-chapter
+28	10.1007/978-3-030-21571-2_10	2019	10.1007/978-3-030-21571-2_10	Fixed Parameter Tractability and Polynomial Time Results for the Synthesis of b-bounded Petri Nets	Lecture Notes in Computer Science	book-chapter
+29	10.1109/synasc.2005.26	2005	10.1109/synasc.2005.26	Colored Petri nets state-space reduction via symbolic execution	Seventh International Symposium on Symbolic and Numeric Algorithms for Scientific Computing (SYNASC'05)	proceedings-article
+30	10.1007/978-3-642-84524-6_13	1991	10.1007/978-3-642-84524-6_13	On Well-Formed Coloured Nets and Their Symbolic Reachability Graph	High-level Petri Nets	book-chapter
+31	10.1109/csa.2013.199	2013	10.1109/csa.2013.199	Relaxed Unfolding for Time Petri Nets	2013 International Conference on Computer Sciences and Applications	proceedings-article
+32	10.1007/11767589_8	2006	10.1007/11767589_8	Complete Finite Prefixes of Symbolic Unfoldings of Safe Time Petri Nets	Lecture Notes in Computer Science	book-chapter
+33	10.1007/978-3-030-21571-2_22	2019	10.1007/978-3-030-21571-2_22	Parameter Synthesis for Bounded Cost Reachability in Time Petri Nets	Lecture Notes in Computer Science	book-chapter
+34	10.3390/sym13030392	2021	10.3390/sym13030392	An Incremental and Backward-Conflict Guided Method for Unfolding Petri Nets	Symmetry	journal-article
+35	10.1109/wsc.2012.6465203	2012	10.1109/wsc.2012.6465203	An efficient method for unfolding colored Petri nets	Proceedings Title: Proceedings of the 2012 Winter Simulation Conference (WSC)	proceedings-article
+36	10.1007/978-3-031-61433-0_12	2024	10.1007/978-3-031-61433-0_12	Symbolic Domains and Reachability for Nets with Trajectories	Lecture Notes in Computer Science	book-chapter
+37	10.3182/20050703-6-cz-1902.00297	2005	10.3182/20050703-6-cz-1902.00297	NONBLOCKING CONTROL OF PETRI NETS USING UNFOLDING	IFAC Proceedings Volumes	journal-article
+38	10.5772/10296	2010	10.5772/10296	Parameter Perturbation Analysis through Stochastic Petri Nets: Application to an Inventory System	Advances in Petri Net Theory and Applications	book-chapter
+39	10.5772/7493	2010	10.5772/7493	Intuitive Transformation of UML2 Activities into Fundamental Modeling Concept Petri Nets and Colored Petri Nets	Petri Nets Applications	book-chapter
+40	10.1007/978-3-540-68746-7_10	2008	10.1007/978-3-540-68746-7_10	A Symbolic Algorithm for the Synthesis of Bounded Petri Nets	Lecture Notes in Computer Science	book-chapter
+41	10.1017/cbo9780511526558.003	1995	10.1017/cbo9780511526558.003	Analysis techniques for Petri nets	Free Choice Petri Nets	book-chapter
+42	10.1007/978-3-540-73094-1_14	None	10.1007/978-3-540-73094-1_14	Behaviour-Preserving Transition Insertions in Unfolding Prefixes	Lecture Notes in Computer Science	book-chapter
+43	10.1109/date.1998.655948	None	10.1109/date.1998.655948	Efficient encoding schemes for symbolic analysis of Petri nets	Proceedings Design, Automation and Test in Europe	proceedings-article
+44	10.1007/3-540-45740-2_9	2001	10.1007/3-540-45740-2_9	Unfolding of Products of Symmetrical Petri Nets	Lecture Notes in Computer Science	book-chapter
+45	10.1016/j.jsc.2008.04.005	2009	10.1016/j.jsc.2008.04.005	State space analysis of Petri nets with relation-algebraic methods	Journal of Symbolic Computation	journal-article
+46	10.23919/ecc.1999.7099843	1999	10.23919/ecc.1999.7099843	Validation of liveness for 1-safe hybrid Petri nets using network unfolding	1999 European Control Conference (ECC)	proceedings-article
+47	10.1007/3-540-26821-9_3	None	10.1007/3-540-26821-9_3	Non-Autonomous Petri Nets	Discrete, Continuous, and Hybrid Petri Nets	book-chapter
+48	10.1109/synasc.2008.82	2008	10.1109/synasc.2008.82	Coverability Problems for Jumping Petri Nets	2008 10th International Symposium on Symbolic and Numeric Algorithms for Scientific Computing	proceedings-article
+49	10.1007/978-3-642-18222-8_4	2010	10.1007/978-3-642-18222-8_4	SAT-Based (Parametric) Reachability for a Class of Distributed Time Petri Nets	Lecture Notes in Computer Science	book-chapter
+50	10.5772/7519	2010	10.5772/7519	Systolic Petri Nets	Petri Nets Applications	book-chapter
+51	10.1109/iscas.2004.1329050	None	10.1109/iscas.2004.1329050	Unfolding of Petri nets with semilinear reachability set	2004 IEEE International Symposium on Circuits and Systems (IEEE Cat. No.04CH37512)	proceedings-article
+52	10.7763/ijcte.2014.v6.882	2014	10.7763/ijcte.2014.v6.882	SaNTEA: Stopwatch Petri Net Based Tool for Embedded Systems Analysis	International Journal of Computer Theory and Engineering	journal-article
+53	10.1002/9781394388660.ch1	2025	10.1002/9781394388660.ch1	From Petri Nets to Stochastic Petri Nets	Enhancing Stochastic Petri Nets with Reconfigurability	other
+54	10.1109/simsym.1992.227562	None	10.1109/simsym.1992.227562	A symbolic simulation mechanism for well-formed coloured Petri nets	Proceedings. 25th Annual Simulation Symposium	proceedings-article
+55	10.1007/3-540-26821-9_6	None	10.1007/3-540-26821-9_6	Timed Hybrid Petri Nets	Discrete, Continuous, and Hybrid Petri Nets	book-chapter
+56	10.1016/j.automatica.2023.111410	2024	10.1016/j.automatica.2023.111410	Symbolic state estimation in bounded timed labeled Petri nets	Automatica	journal-article
+57	10.1109/synasc.2015.19	2015	10.1109/synasc.2015.19	An Algebraic Petri Nets Emulator	2015 17th International Symposium on Symbolic and Numeric Algorithms for Scientific Computing (SYNASC)	proceedings-article
+58	10.1007/978-3-642-41115-1_5	2013	10.1007/978-3-642-41115-1_5	Petri Nets with Time Windows	Time and Petri Nets	book-chapter
+59	10.1109/cac57257.2022.10055441	2022	10.1109/cac57257.2022.10055441	Safety Analysis of Train-Ground Communication Failure Based on Unfolding of Petri Nets	2022 China Automation Congress (CAC)	proceedings-article
+60	10.1007/3-540-26821-9_5	None	10.1007/3-540-26821-9_5	Timed Continuous Petri Nets	Discrete, Continuous, and Hybrid Petri Nets	book-chapter
+61	10.1007/3-540-26821-9_1	None	10.1007/3-540-26821-9_1	Bases of Petri Nets	Discrete, Continuous, and Hybrid Petri Nets	book-chapter
+62	10.1007/3-540-26821-9_2	None	10.1007/3-540-26821-9_2	Properties of Petri Nets	Discrete, Continuous, and Hybrid Petri Nets	book-chapter
+63	10.1007/978-3-662-68191-6_3	2024	10.1007/978-3-662-68191-6_3	Computing a Parametric Reveals Relation For Bounded Equal-Conflict Petri Nets	Lecture Notes in Computer Science	book-chapter
+64	10.1007/978-3-540-27755-2_23	2004	10.1007/978-3-540-27755-2_23	Object Petri Nets	Lecture Notes in Computer Science	book-chapter
+65	10.1007/978-3-540-73094-1_15	None	10.1007/978-3-540-73094-1_15	Combining Decomposition and Unfolding for STG Synthesis	Lecture Notes in Computer Science	book-chapter
+66	10.1007/978-3-662-06289-0_3	1992	10.1007/978-3-662-06289-0_3	Hierarchical Coloured Petri Nets	Coloured Petri Nets	book-chapter
+67	10.1007/978-1-4615-1537-1_5	2001	10.1007/978-1-4615-1537-1_5	Acyclic Petri Nets	Supervision of Petri Nets	book-chapter
+68	10.1007/3-540-44685-0_25	2001	10.1007/3-540-44685-0_25	Towards an Efficient Algorithm for Unfolding Petri Nets	Lecture Notes in Computer Science	book-chapter
+69	10.1016/s1474-6670(17)30723-1	2004	10.1016/s1474-6670(17)30723-1	Control of safe ordinary petri nets with marking specifications using unfolding	IFAC Proceedings Volumes	journal-article
+70	10.1109/compsac.2005.148	None	10.1109/compsac.2005.148	Supervisory Control of Time Petri Nets Using Net Unfolding	29th Annual International Computer Software and Applications Conference (COMPSAC'05)	proceedings-article
+71	10.4018/978-1-4666-9594-8.les12	None	10.4018/978-1-4666-9594-8.les12	Universal Petri Nets	Petri Nets for Modeling and Computing	book-chapter
+72	10.1016/j.ins.2019.05.021	2019	10.1016/j.ins.2019.05.021	Deadlock detection-oriented unfolding of unbounded Petri nets	Information Sciences	journal-article
+73	10.1007/3-540-26821-9_4	None	10.1007/3-540-26821-9_4	Autonomous Continuous and Hybrid Petri Nets	Discrete, Continuous, and Hybrid Petri Nets	book-chapter
+74	10.1016/0005-1098(94)90007-8	1994	10.1016/0005-1098(94)90007-8	Analysis of a hybrid system using symbolic dynamics and Petri Nets	Automatica	journal-article
+75	10.1109/pnpm.1999.796566	None	10.1109/pnpm.1999.796566	Non equivalence between time Petri nets and time stream Petri nets	Proceedings 8th International Workshop on Petri Nets and Performance Models (Cat. No.PR00331)	proceedings-article
+76	10.3233/fi-242195	2024	10.3233/fi-242195	A Rewriting-logic-with-SMT-based Formal Analysis and Parameter Synthesis Framework for Parametric Time Petri Nets	Fundamenta Informaticae	journal-article
+77	10.1007/978-3-642-41115-1_3	2013	10.1007/978-3-642-41115-1_3	Time Petri Nets	Time and Petri Nets	book-chapter
+78	10.1007/978-3-642-41115-1_4	2013	10.1007/978-3-642-41115-1_4	Timed Petri Nets	Time and Petri Nets	book-chapter
+79	10.1017/9781009613316.006	2025	10.1017/9781009613316.006	Other Equivalences for Petri Nets	Syntax and Semantics of Petri Nets	book-chapter
+80	10.1016/j.ifacol.2018.06.287	2018	10.1016/j.ifacol.2018.06.287	Distributed computation of vector clocks in Petri nets unfolding for test selection	IFAC-PapersOnLine	journal-article
+81	10.1007/978-3-031-61433-0_13	2024	10.1007/978-3-031-61433-0_13	Symbolic Model Checking Using Intervals of Vectors	Lecture Notes in Computer Science	book-chapter
+82	10.1007/0-387-21552-2_9	2002	10.1007/0-387-21552-2_9	Colored Stochastic Petri Nets	Stochastic Petri Nets	book-chapter
+83	10.1023/b:lisp.0000029445.29210.ca	2004	10.1023/b:lisp.0000029445.29210.ca	Implementing Coloured Petri Nets Using a Functional Programming Language	Higher-Order and Symbolic Computation	journal-article
+84	10.1007/978-3-662-06289-0_5	1992	10.1007/978-3-662-06289-0_5	Formal Analysis of Coloured Petri Nets	Coloured Petri Nets	book-chapter
+85	10.1007/978-3-642-84524-6_4	1991	10.1007/978-3-642-84524-6_4	Petri Nets and Algebraic Specifications	High-level Petri Nets	book-chapter
+86	10.46298/.9351	2023	10.46298/.9351	Methods for Efficient Unfolding of Colored Petri Nets	Fundamenta Informaticae	journal-article
+87	10.1007/s10626-005-4057-z	2005	10.1007/s10626-005-4057-z	Control of Safe Ordinary Petri Nets Using Unfolding	Discrete Event Dynamic Systems	journal-article
+88	10.1007/978-3-662-06289-0_1	1992	10.1007/978-3-662-06289-0_1	Informal Introduction to Coloured Petri Nets	Coloured Petri Nets	book-chapter
+89	10.1016/0304-3975(95)00121-2	1996	10.1016/0304-3975(95)00121-2	Process versus unfolding semantics for Place/Transition Petri nets	Theoretical Computer Science	journal-article
+90	10.1007/978-1-4615-5537-7_5	1998	10.1007/978-1-4615-5537-7_5	Stochastic Timed Petri Nets and Stochastic Petri Nets	The Kluwer International Series on Discrete Event Dynamic Systems	book-chapter
+91	10.5772/7516	2010	10.5772/7516	A new Control Synthesis Approach of P-Time Petri Nets	Petri Nets Applications	book-chapter
+92	10.1007/978-3-322-86501-4_8	2002	10.1007/978-3-322-86501-4_8	Stochastic Petri Nets	Stochastic Petri Nets	book-chapter
+93	10.5772/50354	2012	10.5772/50354	Boolean Petri Nets	Petri Nets - Manufacturing and Computer Science	book-chapter
+94	10.1007/978-3-322-86501-4_10	2002	10.1007/978-3-322-86501-4_10	Queueing Petri Nets	Stochastic Petri Nets	book-chapter
+95	10.1007/978-3-663-11521-2_7	1996	10.1007/978-3-663-11521-2_7	Stochastic Petri Nets	Stochastic Petri Nets	book-chapter
+96	10.1007/978-3-662-06289-0_7	1992	10.1007/978-3-662-06289-0_7	Industrial Applications of Coloured Petri Nets	Coloured Petri Nets	book-chapter
+97	10.1007/0-387-21552-2_2	2002	10.1007/0-387-21552-2_2	Modelling with Stochastic Petri Nets	Stochastic Petri Nets	book-chapter
+98	10.1109/synasc.2008.65	2008	10.1109/synasc.2008.65	A (Timed) State-Transition Semantics for Reflective Petri Nets	2008 10th International Symposium on Symbolic and Numeric Algorithms for Scientific Computing	proceedings-article
+99	10.1007/978-3-663-11521-2_5	1996	10.1007/978-3-663-11521-2_5	Coloured Petri nets	Stochastic Petri Nets	book-chapter
+100	10.1007/978-3-322-86501-4_6	2002	10.1007/978-3-322-86501-4_6	Coloured Petri Nets	Stochastic Petri Nets	book-chapter
