@@ -15,6 +15,10 @@
   for history; distill scratch notes instead of committing research diaries.
 - Do not commit downloaded papers, search-engine exports, build products, or
   contributor-local agent state.
-- Run development and verification commands through `./dev.sh`.
+- Stage recurring searches with `scripts/survey/update.py`; do not advance
+  `research/survey/updates/state.tsv` until screening, synthesis, evidence, and
+  manuscript impacts are reconciled.
+- Run development and verification commands through `./dev.sh`. Run Git
+  commands directly on the host so the configured user identity is preserved.
 - A Codex-authored commit must include:
   `Co-Authored-By: Codex GPT-5.6 Sol <codex@openai.com>`.

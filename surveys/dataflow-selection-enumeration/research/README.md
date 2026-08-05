@@ -1,43 +1,51 @@
 # Research record
 
-This directory is an evidence system, not a chronological notebook.
+This directory contains the maintained evidence and reasoning behind the survey.
+It is synthetic and current rather than a chronological notebook.
 
 ## Evidence flow
 
-1. Register every candidate work in `survey/catalog.tsv`.
-2. Record reproducible closure searches in `survey/search-log.tsv`; keep the
-   pre-protocol discovery history in `survey/exploratory-search-log.tsv`.
-3. Create a structured source note for every work selected for deep reading.
-4. Update the relevant thematic synthesis after each reading batch.
-5. Reflect consequences in `terminology.md`, `claims.md`, examples, and, when a
-   durable choice is made, a decision record.
-6. Promote a claim into the manuscript only after its assumptions, evidence,
-   closest existing result, and remaining obligations are explicit.
+1. Stage new search results and downloaded papers in `.scratch/`.
+2. Give every discovered work a disposition in `survey/catalog.tsv`.
+3. Preserve only fully screened result sets and append their audited execution
+   rows to `survey/logs/searches.tsv`.
+4. Create a primary-source note for every deep-read work.
+5. Reconcile the relevant thematic files in `survey/syntheses/`.
+6. Update `terminology.md`, `claims.md`, and the formal synthesis when the
+   cross-paper interpretation changes.
+7. Add or revise `survey/evidence-matrix.tsv` before changing a technical
+   manuscript claim.
+8. Record durable research choices in `decisions/`.
 
-Mapping closure additionally requires reconciliation of all exploratory
-additions, separate backward and forward chasing for every bounded closest-work
-seed (`priority=critical`), two audited no-add rounds, and an independent
-exclusion audit. The broader comparison table also includes boundary works that
-are not snowballing seeds. The exact standard is in `survey/protocol.md`.
+The operational entry point is [`survey/README.md`](survey/README.md). The
+stable selection and maintenance rules are in
+[`survey/protocol.md`](survey/protocol.md).
 
-Raw downloads and disposable notes belong in the ignored `.scratch/`
-directory. A reading task is not complete until its useful content is distilled
-into the committed record.
+## Durable areas
+
+- `survey/sources/`: evidence records for individual primary works;
+- `survey/syntheses/`: current comparisons and cross-paper conclusions;
+- `survey/formal-synthesis/`: definitions and derivations that organize the
+  surveyed results;
+- `claims.md`: current contribution and qualification ledger;
+- `terminology.md`: adopted terms and required distinctions; and
+- `decisions/`: durable choices and their consequences.
 
 ## Status vocabulary
 
-- Literature `candidate`: retained discovery-level or bibliographic record;
-  it is not by itself a pending task and is permitted at closure when it is not
-  a critical seed or the basis of a technical manuscript claim.
-- Literature `screened`: title, abstract, or available source metadata has been
-  adjudicated far enough to support the recorded scoped boundary.
-- Literature `deep-read`: the full technical primary source has been read and
-  anchored in a structured source note.
-- Literature `excluded`: a stable exclusion code records why the work is out of
-  scope, superseded, application-only, unobtainable, or duplicative.
-- Literature priority is distinct from status: `critical` defines the bounded
-  closest-work reading and snowballing seed set; `high` records discovery
-  relevance, not an unresolved queue.
+- Literature `candidate`: retained discovery-level record, not automatically a
+  pending task.
+- Literature `screened`: adjudicated from title, abstract, or stable metadata.
+- Literature `deep-read`: primary technical source read and anchored in a
+  structured source note.
+- Literature `excluded`: stable exclusion code records why it is out of scope,
+  superseded, application-only, unobtainable, or duplicative.
+- Priority `critical`: bounded closest-work set; each member must be deep-read
+  and chased backward and forward.
 - Claims: `hypothesis`, `supported`, `needs-qualification`, `known-result`, or
   `rejected`.
-- Decisions and terminology: `open`, `provisional`, `adopted`, or `superseded`.
+- Decisions and terminology: `open`, `provisional`, `adopted`, or
+  `superseded`.
+
+Raw downloads, API responses, temporary renderings, and incomplete screening
+batches are contributor-local state and must remain under `.scratch/`.

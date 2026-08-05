@@ -120,10 +120,12 @@ does not prove that no closer work exists. Citation-network coverage, shared
 framing among the agent screeners, and the lack of independent human duplicate
 screening remain threats.
 
-The repository retains the protocol, catalog, search log, source notes,
-screening snapshots, claim ledger, and manuscript checks. These artifacts make
-the boundary inspectable and make later reopening possible; they do not turn a
-bounded map into proof of worldwide completeness.
+The repository retains the protocol, registered recurring queries, catalog,
+audited search log, source notes, screening snapshots, syntheses, claim ledger,
+and manuscript checks. Due searches are staged outside the evidence record and
+count as complete only after screening and manuscript reconciliation. These
+artifacts make the boundary inspectable and later reopening repeatable; they do
+not turn a bounded map into proof of worldwide completeness.
 
 == Implementation and evaluation agenda
 

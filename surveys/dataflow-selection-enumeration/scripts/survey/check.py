@@ -2,6 +2,7 @@
 """Validate the survey catalog, audited log, and screening snapshots."""
 
 import csv
+from datetime import date
 from pathlib import Path
 import re
 import sys
@@ -10,7 +11,7 @@ import sys
 csv.field_size_limit(sys.maxsize)
 
 
-ROOT = Path(__file__).resolve().parent.parent
+ROOT = Path(__file__).resolve().parents[2]
 SURVEY = ROOT / "research" / "survey"
 CATALOG_HEADER = [
     "citekey",
@@ -34,6 +35,14 @@ SEARCH_HEADER = [
     "screened",
     "included_keys",
     "excluded_keys",
+    "notes",
+]
+EXPLORATORY_HEADER = [
+    "date",
+    "discovery_source",
+    "query_or_method",
+    "results_screened",
+    "works_added",
     "notes",
 ]
 EVIDENCE_HEADER = [
@@ -65,6 +74,24 @@ GENERIC_SCREENING_HEADER = [
     "type",
 ]
 GENERIC_ABSTRACT_SCREENING_HEADER = [*GENERIC_SCREENING_HEADER, "abstract"]
+UPDATE_QUERY_HEADER = [
+    "query_id",
+    "source",
+    "theme",
+    "query",
+    "limit",
+    "cadence_days",
+    "active",
+    "notes",
+]
+UPDATE_STATE_HEADER = ["query_id", "last_completed", "outcome", "notes"]
+UPDATE_TASK_HEADER = [
+    "task_id",
+    "cadence_days",
+    "last_completed",
+    "outcome",
+    "notes",
+]
 BACKWARD_DEFECT_MARKERS = (
     "unresolved",
     "index omits",
@@ -73,6 +100,21 @@ BACKWARD_DEFECT_MARKERS = (
     "primary list is longer",
     "incomplete bibliography",
     "truncated bibliography",
+)
+CURRENT_SOURCE_TEMPLATE = "- **Template version:** 2"
+CURRENT_SOURCE_REQUIRED = (
+    "- **Status:**",
+    "- **Primary source:**",
+    "- **Version read:**",
+    "- **Last reviewed:**",
+    "- **Bibliography key:**",
+    "### What is directly established by the work?",
+    "### What is our interpretation or inference?",
+    "## Evidence locations",
+    "## Update impact",
+    "- **Syntheses affected:**",
+    "- **Claims affected:**",
+    "- **Manuscript action:**",
 )
 
 
@@ -97,6 +139,21 @@ def fail(message: str) -> None:
 
 
 def main() -> int:
+    markdown_paths = [ROOT / "README.md", ROOT / "REPRODUCIBILITY.md"]
+    markdown_paths.extend(sorted((ROOT / "research").rglob("*.md")))
+    for markdown in markdown_paths:
+        text = markdown.read_text(encoding="utf-8")
+        for target in re.findall(r"\]\(([^)]+)\)", text):
+            if target.startswith(("#", "http://", "https://", "mailto:")):
+                continue
+            local = target.split("#", 1)[0]
+            if local.startswith("<") and local.endswith(">"):
+                local = local[1:-1]
+            if local and not (markdown.parent / local).exists():
+                fail(
+                    f"broken local link in {markdown.relative_to(ROOT)}: {target}"
+                )
+
     header, catalog_rows = rows(SURVEY / "catalog.tsv")
     if header != CATALOG_HEADER:
         fail(f"unexpected catalog header: {header}")
@@ -106,6 +163,31 @@ def main() -> int:
 
     bibliography = (ROOT / "references.bib").read_text(encoding="utf-8")
     bibliography_keys = set(re.findall(r"@[A-Za-z]+\{([^,]+),", bibliography))
+    for source_note in sorted((SURVEY / "sources").glob("*.md")):
+        if source_note.name == "_template.md":
+            continue
+        source_text = source_note.read_text(encoding="utf-8")
+        for relative in re.findall(r"`(screening/[^`]+\.tsv)`", source_text):
+            if not (SURVEY / relative).is_file():
+                fail(f"source note {source_note.name} references missing {relative}")
+        if CURRENT_SOURCE_TEMPLATE not in source_text:
+            continue
+        for required in CURRENT_SOURCE_REQUIRED:
+            if required not in source_text:
+                fail(
+                    f"current-template source note {source_note.name} "
+                    f"is missing {required}"
+                )
+        reviewed = re.search(r"^- \*\*Last reviewed:\*\* (\S+)", source_text, re.MULTILINE)
+        if reviewed is None:
+            fail(f"current-template source note {source_note.name} has no review date")
+        try:
+            date.fromisoformat(reviewed.group(1))
+        except ValueError:
+            fail(
+                f"current-template source note {source_note.name} has invalid "
+                f"review date {reviewed.group(1)}"
+            )
     for citekey, row in catalog.items():
         source_note = SURVEY / "sources" / f"{citekey}.md"
         if source_note.is_file() and row["status"] != "excluded":
@@ -167,7 +249,7 @@ def main() -> int:
         if manuscript_citations.isdisjoint(row_keys):
             fail(f"evidence row {number} has no citekey used by the manuscript")
 
-    header, log_rows = rows(SURVEY / "search-log.tsv")
+    header, log_rows = rows(SURVEY / "logs" / "searches.tsv")
     if header != SEARCH_HEADER:
         fail(f"unexpected search-log header: {header}")
     referenced_snapshots: set[str] = set()
@@ -244,14 +326,14 @@ def main() -> int:
         ):
             fail(f"defective backward chase for {key} has no primary bibliography")
 
-    exploratory = (SURVEY / "exploratory-search-log.tsv").read_text(
-        encoding="utf-8"
-    ).splitlines()
-    for number, line in enumerate(exploratory[1:], start=2):
-        if "not-recorded" not in line:
+    header, exploratory_rows = rows(SURVEY / "logs" / "exploratory.tsv")
+    if header != EXPLORATORY_HEADER:
+        fail(f"unexpected exploratory-log header: {header}")
+    for number, row in enumerate(exploratory_rows, start=2):
+        if "not-recorded" not in row["notes"]:
             fail(f"exploratory-search-log row {number} is not reconciled")
 
-    screening_paths = sorted((SURVEY / "screening").glob("*.tsv"))
+    screening_paths = sorted((SURVEY / "screening").rglob("*.tsv"))
     for path in screening_paths:
         header, snapshot_rows = rows(path)
         if header not in (
@@ -279,6 +361,75 @@ def main() -> int:
     )
     if unreferenced:
         fail(f"unreferenced screening snapshot: {unreferenced[0]}")
+
+    header, query_rows = rows(SURVEY / "updates" / "queries.tsv")
+    if header != UPDATE_QUERY_HEADER:
+        fail(f"unexpected update-query header: {header}")
+    query_ids: set[str] = set()
+    for number, row in enumerate(query_rows, start=2):
+        identifier = row["query_id"]
+        if not identifier or identifier in query_ids:
+            fail(f"duplicate or empty update query ID on row {number}")
+        query_ids.add(identifier)
+        if row["source"] not in ("arxiv", "crossref"):
+            fail(f"unsupported update source on row {number}: {row['source']}")
+        if not row["query"].strip():
+            fail(f"empty update query on row {number}")
+        for field in ("limit", "cadence_days"):
+            if not row[field].isdigit() or int(row[field]) <= 0:
+                fail(f"invalid update {field} on row {number}: {row[field]}")
+        if row["source"] == "arxiv":
+            if int(row["limit"]) > 100:
+                fail(f"arXiv update limit exceeds 100 on row {number}")
+            if "all:" not in row["query"]:
+                fail(f"arXiv update query is not source-native on row {number}")
+        if row["active"] not in ("true", "false"):
+            fail(f"invalid update active flag on row {number}: {row['active']}")
+
+    header, state_rows = rows(SURVEY / "updates" / "state.tsv")
+    if header != UPDATE_STATE_HEADER:
+        fail(f"unexpected update-state header: {header}")
+    state_ids: set[str] = set()
+    for number, row in enumerate(state_rows, start=2):
+        identifier = row["query_id"]
+        if not identifier or identifier in state_ids:
+            fail(f"duplicate or empty update state ID on row {number}")
+        state_ids.add(identifier)
+        try:
+            date.fromisoformat(row["last_completed"])
+        except ValueError:
+            fail(
+                f"invalid update completion date on row {number}: "
+                f"{row['last_completed']}"
+            )
+        if not row["outcome"].strip():
+            fail(f"empty update outcome on row {number}")
+    if state_ids != query_ids:
+        missing = sorted(query_ids - state_ids)
+        extra = sorted(state_ids - query_ids)
+        detail = missing[0] if missing else extra[0]
+        fail(f"update query/state ID mismatch: {detail}")
+
+    header, task_rows = rows(SURVEY / "updates" / "tasks.tsv")
+    if header != UPDATE_TASK_HEADER:
+        fail(f"unexpected update-task header: {header}")
+    task_ids: set[str] = set()
+    for number, row in enumerate(task_rows, start=2):
+        identifier = row["task_id"]
+        if not identifier or identifier in task_ids:
+            fail(f"duplicate or empty update task ID on row {number}")
+        task_ids.add(identifier)
+        if not row["cadence_days"].isdigit() or int(row["cadence_days"]) <= 0:
+            fail(f"invalid update task cadence on row {number}")
+        try:
+            date.fromisoformat(row["last_completed"])
+        except ValueError:
+            fail(
+                f"invalid update task completion date on row {number}: "
+                f"{row['last_completed']}"
+            )
+        if not row["outcome"].strip():
+            fail(f"empty update task outcome on row {number}")
 
     return 0
 

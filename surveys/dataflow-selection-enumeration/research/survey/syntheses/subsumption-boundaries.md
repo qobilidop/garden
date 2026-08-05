@@ -1,13 +1,12 @@
 # Closest-work audit
 
-Status: closed under the recorded mapping protocol on 2026-08-04
+Status: current through the 2026-08-04 baseline
 
-This document compares works that plausibly subsume the proposed contribution
+This document compares works that plausibly subsume the running formal object
 or establish a particularly important boundary. Inclusion here is intentionally
-more selective than the survey catalog but broader than the bounded
-snowballing seed set. Mapping closure uses exactly catalog entries marked
-`priority=critical` as closest-work seeds; a comparison-only row here does not
-create an additional chasing obligation.
+more selective than the survey catalog. Catalog entries marked
+`priority=critical` form the maintained snowballing set; a comparison-only row
+here does not create an additional chasing obligation.
 
 ## Comparison dimensions
 

@@ -25,3 +25,23 @@ Git commits identify exact source revisions. GitHub Pages serves the current
 `main` build for convenient reading, and successful GitHub Actions runs retain
 downloadable PDF artifacts for 90 days. No versioned release or immutable
 citation target is currently designated.
+
+## Literature-update reproducibility
+
+The paper build and the literature search are intentionally separate. Recurring
+queries and cadence live in `research/survey/updates/queries.tsv`; their last
+fully reconciled executions live in `research/survey/updates/state.tsv`.
+Periodic citation maintenance is tracked in `research/survey/updates/tasks.tsv`.
+
+```console
+./dev.sh python3 scripts/survey/update.py status
+./dev.sh python3 scripts/survey/update.py fetch --due
+```
+
+Fetches are staged under `.scratch/` because API output is not evidence until
+every result is screened. Registered runs use an inclusive interval from the
+last reconciled date through the batch date, with source-appropriate relevance
+or recency ordering. A promoted update commits the frozen result set, one
+matching audited-log row, catalog dispositions, and all affected source notes,
+syntheses, evidence rows, and manuscript changes. The initial mapping baseline
+is summarized in `research/survey/baseline.md`.

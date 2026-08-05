@@ -1,30 +1,24 @@
-# Survey protocol
+# Living survey protocol
 
-## Objective
+## Objective and study type
 
-Determine how prior work represents and exhaustively enumerates the distinct
-selection observations of finite pure dataflow graphs, identify the closest
-established formalisms and algorithms, and select terminology and theorem
-obligations that make the formal synthesis precise. The synthesis defines a
-selection observation as the partial map of site outcomes reached from the
-requested result by following strict operands and input-selected case edges.
-Constructing one monolithic symbolic expression or SMT encoding is a baseline,
-not the target enumeration problem.
+Maintain a systematic map of how prior work represents and exhaustively
+enumerates selection observations of finite pure dataflow graphs. The survey
+compares neighboring semantic objects and algorithms; it does not estimate
+empirical effect sizes and is therefore a systematic mapping study rather than
+a statistical systematic literature review.
 
-This is a systematic mapping study with backward and forward snowballing. It is
-not a systematic literature review: the objective is to map neighboring
-semantic objects and algorithms, not to estimate effects over a population of
-empirical studies. Reproducibility claims apply only to rows in the audited
-search log; the earlier exploratory record is retained separately and does not
-count toward closure.
+The running formal object is a partial map of selection-site outcomes reached
+from requested roots through strict operands and input-selected case edges. A
+monolithic symbolic value or SMT encoding is a baseline, not the target output.
 
 ## Research questions
 
-- **RQ1:** What mathematical program models are used for symbolic evaluation
+- **RQ1:** Which mathematical program models support symbolic evaluation
   without conventional control-flow paths?
-- **RQ2:** What objects are enumerated: paths, traces, cases, configurations,
+- **RQ2:** Which objects are enumerated: paths, traces, cases, configurations,
   models, implicants, cubes, guarded values, or input regions?
-- **RQ3:** Which approaches enumerate partial rather than total decisions, and
+- **RQ3:** Which approaches retain partial rather than total decisions, and
   how do they treat inactive or irrelevant choices?
 - **RQ4:** Which soundness, completeness, uniqueness, coverage, disjointness,
   or minimality properties are defined and proved?
@@ -34,230 +28,141 @@ count toward closure.
   complexity or output-sensitivity results are known?
 - **RQ7:** Which assumptions are made about purity, totality, effects, cycles,
   time, and solver completeness?
-- **RQ8:** Which motivating examples best expose the distinction between merged
-  symbolic values, global decision assignments, and demanded choices?
+- **RQ8:** Which examples expose the distinction between merged values, global
+  decision assignments, and dynamically observed choices?
 
-## Search clusters
+## Coverage themes
 
-1. Foundational and formal semantics of symbolic execution.
-2. Multi-path symbolic execution, state merging, guarded values, variational
-   execution, and veritesting.
-3. Symbolic simulation, symbolic trajectory evaluation, circuits, mux networks,
-   and RTL symbolic execution.
-4. Synchronous and dataflow-language verification and test generation,
-   including Lustre, SCADE, SIGNAL, GATeL, and Lurette.
-5. Dataflow-program example and test generation, including relational and
-   MapReduce systems.
-6. AllSAT, AllSMT, projected enumeration, disjoint partial models, implicants,
-   and cube enumeration.
-7. Trace/state partitioning in abstract interpretation.
-8. Decision diagrams, conditional values, partial evaluation, residualization,
-   program slicing, and demand or cone-of-influence analysis.
-9. Functional-logic demand-driven search, set functions, pull-tabbing, stable
-   choice identifiers, branching information, and fingerprints.
-10. Demand-driven bounded testing, property-directed input refinement, Korat,
-    Lazy SmallCheck, and lazy heap initialization.
-11. Pseudo-exhaustive circuit testing and support-relative local coverage.
-12. Finite-observer input partitions, symbolic finite-state testing, and
-    input-equivalence-class minimization.
-13. Decision trees, BDDs, ADDs, and compiled finite-range observer functions.
-14. Hyperplane-cell, neural activation-region, CPWL-complex, and exact
-    guard-plus-affine residual enumeration.
-15. Classical demand-driven stream dataflow, reverse demand propagation, and
-    least output-complete computation.
-16. Compositional hybrid-mode enumeration, PWA region minimization, and
-    parametric-program critical-region enumeration.
-17. Exact neural-to-tree symbolic execution, feasibility pruning, and
-    policy-output region construction.
-18. Exact neural-to-OBDD/SDD compilation, requested-class diagrams, and
-    prime-implicant explanations.
-19. Symmetry- and constraint-based quotient reachability for colored Petri
-    nets.
-20. Observation-pattern loop-state postponement and other heuristic sparse
-    exploration policies.
-21. Context- and precondition-guided symbolic search, including target-relative
-    pruning learned from previously unsuccessful paths.
-22. Regular-property and trace-specification-guided symbolic execution,
-    including event-equivalence slicing and symbolic-derivative pruning.
-23. Partial-order reduction combined with symbolic state-space exploration for
-    observer-preserving omission of independent concurrent interleavings.
-24. Coverage-preserving seed or input reduction before symbolic exploration.
-25. Canonical higher-order concolic input representations and their qualified
-    completeness guarantees.
-26. Behavior-relative symbolic state reduction, including basis markings,
-    irrelevant timed-state components, subsumption, and partial-observation
-    estimate graphs.
-27. Fully symbolic bisimulation and related behavioral state quotients.
+The map deliberately crosses research communities. Its stable themes are:
 
-Cluster 9 was added when forward snowballing from needed narrowing exposed a
-previously missing closest lineage. Later audited replacement rounds and their
-snowballs added clusters 10--27. Each addition reopened the map before closure;
-`closure-audit.md` records the chronological query expansions and retirement
-of superseded no-add rounds. These additions are disclosed post hoc as survey
-outcomes, not misrepresented as part of the initial protocol.
+1. symbolic execution, guarded values, path merging, and trace partitioning;
+2. circuits, synchronous languages, dataflow demand, and symbolic simulation;
+3. AllSAT/AllSMT, projected or partial models, decision diagrams, and finite
+   observer partitions;
+4. functional-logic choice fingerprints, needed evaluation, demand-driven
+   testing, and lazy partial-input refinement;
+5. hyperplane cells, neural activation/output regions, CPWL models, hybrid
+   modes, and parametric critical regions;
+6. partial-order reduction, unfoldings, Petri-net observations, and symbolic
+   state quotients;
+7. property-, target-, context-, and observer-guided exploration or reduction;
+   and
+8. compositional semantics, summaries, residualization, graph sharing, and
+   contextual identity.
 
-## Discovery sources
+Exact recurring searches are versioned in `updates/queries.tsv`. New vocabulary
+discovered during reading is added there in a separate commit rather than
+silently changing an executed search.
 
-Search ACM Digital Library, IEEE Xplore, SpringerLink, USENIX proceedings,
-conference proceedings, DBLP, author publication pages, and scholarly search
-engines. Search engines and indexes are discovery aids; substantive conclusions
-must be checked against the primary paper or its author-hosted version.
+## Records and authority
 
-For auditable searches, record the database or API by name, the exact query or
-seed identifier, direction, filters, hit count, screened identifiers, included
-keys, excluded keys, and execution date. A query that cannot expose a stable
-result set may discover candidates but cannot establish closure.
+| Record | Purpose | Update rule |
+|---|---|---|
+| `catalog.tsv` | One current disposition per discovered work | Update during screening |
+| `logs/searches.tsv` | Audited query and snowball execution log | Append after adjudication |
+| `logs/exploratory.tsv` | Non-replayable early discovery record | Baseline evidence only |
+| `screening/` | Frozen result sets | Commit only after every row is screened |
+| `sources/` | Primary-work extraction and pinpoint evidence | Required for deep reads |
+| `syntheses/` | Current cross-paper understanding | Revise after each reading batch |
+| `evidence-matrix.tsv` | Manuscript claim-to-source traceability | Revise with manuscript claims |
+| `updates/state.tsv` | Completion state of recurring searches | Advance only after reconciliation |
+| `updates/tasks.tsv` | Periodic non-query maintenance | Advance only after the task is complete |
 
-## Initial search expressions
+Search indexes are discovery aids. Primary papers, official proceedings,
+publisher records, or stable author-hosted versions control technical and
+bibliographic claims.
 
-Queries combine terms from the following groups:
-
-```text
-"symbolic execution" AND (denotational semantics OR input partition)
-"symbolic evaluation" AND (dataflow graph OR term graph OR expression DAG)
-(multipath OR "multi-path") AND "symbolic execution"
-(guarded value OR value summary) AND symbolic
-(AllSAT OR AllSMT) AND (partial OR projected OR disjoint) AND enumeration
-"trace partitioning" AND abstract interpretation
-(symbolic simulation OR symbolic execution) AND (circuit OR mux OR RTL)
-(Lustre OR SCADE OR SIGNAL) AND (symbolic OR test generation OR coverage)
-dataflow AND (symbolic execution OR symbolic test generation)
-(demand OR relevance OR cone-of-influence) AND symbolic evaluation
-```
-
-Every closure query is recorded in `search-log.tsv`; useful synonyms discovered
-during reading are added in later rounds rather than silently changing this
-protocol. Non-replayable searches made before this rule was adopted remain in
-`exploratory-search-log.tsv` and are not used to claim saturation.
-
-The exact final no-add batches, their execution order, screening depth, and
-reopening rule are frozen in `closure-audit.md` before execution.
-
-## Inclusion criteria
+## Inclusion and exclusion
 
 Include a work when it makes a technical contribution to at least one research
 question and provides enough detail to compare semantics, guarantees, or
-algorithmic behavior. Foundational technical reports and theses may be included
-when they are the primary or most complete source of an influential result.
+algorithmic behavior. Foundational reports and theses may be primary sources
+when they contain the most complete result.
 
-## Exclusion criteria
-
-Exclude, with a recorded reason:
-
-- works using *data-flow testing* solely to mean def-use coverage in an
-  otherwise conventional CFG;
-- works using *symbolic graph execution* solely to mean staged execution of a
-  machine-learning graph;
-- secondary summaries when the primary work is available;
-- applications that use an off-the-shelf symbolic executor without changing or
-  formalizing the relevant semantic object;
-- works whose full technical content cannot be obtained after reasonable
-  attempts, unless their terminology itself materially affects the survey.
-
-Use one of these stable exclusion codes in the catalog:
+Use these stable exclusion codes:
 
 - `E1-def-use-testing`: conventional CFG def-use coverage only;
-- `E2-ml-graph-runtime`: execution or staging of a machine-learning graph only;
+- `E2-ml-graph-runtime`: ML graph execution or staging only;
 - `E3-secondary`: secondary source superseded by an available primary work;
-- `E4-application-only`: applies an off-the-shelf executor without changing the
-  relevant semantic object;
+- `E4-application-only`: unchanged application of an existing executor;
 - `E5-unobtainable`: insufficient technical content after recorded attempts;
-- `E6-out-of-scope-model`: technical contribution is real but cannot answer any
-  research question under the finite pure-graph scope;
-- `E7-duplicate-version`: superseded version retained only for lineage.
+- `E6-out-of-scope-model`: cannot answer a research question under scope; and
+- `E7-duplicate-version`: superseded version retained for lineage.
 
-## Screening and deep reading
+## Screening, reading, and extraction
 
-Screening assigns taxonomy fields, priority, and status from the title plus the
-abstract or other metadata exposed by the source. Deep reading uses the
-source-note template and must inspect definitions, the central
-algorithm, theorem statements and assumptions, complexity discussion, examples,
-and related work—not only the abstract and introduction. Claims used in the
-manuscript must also appear in `evidence-matrix.tsv` with a source-note anchor.
+Screening assigns a catalog status, priority, cluster, and concise rationale
+from title, abstract, and stable metadata. Candidate status is a retained
+discovery disposition, not automatically a reading queue.
 
-The extraction taxonomy is deliberately multi-dimensional:
+A deep read must inspect the primary work's definitions, central algorithms,
+theorem statements and assumptions, complexity discussion, examples, and
+related work. Complete the source-note template with stable URLs and pinpoint
+locations. Any technical manuscript claim must also have an anchored row in
+`evidence-matrix.tsv`.
 
-1. program model;
-2. represented or enumerated object;
-3. omission or merging mechanism;
-4. representation and algorithm;
-5. guarantees;
-6. assumptions and semantic boundaries.
+Priority controls maintenance obligations. Every `critical` work must be
+deep-read and must have separate usable backward and forward citation chases.
+New critical works receive both chases immediately; existing critical works
+receive a forward refresh at the cadence recorded in `updates/README.md`.
 
-## Snowballing and saturation
+## Incremental maintenance
 
-The bounded closest-work snowballing seed set is exactly the catalog entries
-marked `priority=critical`. For every such seed, perform backward citation
-chasing and forward citation chasing as separate log rows. `search-log.tsv`
-records one seed, one direction, and one stable result set per row; aggregate
-descriptions are invalid. `closest-work.md` is a broader comparison table: it
-also retains comparison-only boundaries and does not make each row a closure
-seed.
+Run the registered Crossref and arXiv searches every 90 days. Run a complete
+forward-citation refresh of the critical set at least annually. Also begin an
+update immediately when alerts, peer feedback, or reading expose a plausible
+close competitor or a new coverage theme.
 
-An index-provided backward neighborhood satisfies this requirement only when
-it exports the seed's complete primary bibliography. If identifiers are
-unresolved, the index reports zero references despite a real bibliography, or
-the exported count is otherwise smaller, retain the defective snapshot and
-add a separately logged complete bibliography snapshot from the primary paper.
-The complete primary list—not the resolvable index subset—is screened for
-closure. A wrong-DOI or surrogate-version record is likewise discovery
-evidence only unless its bibliography is checked against the actual seed.
+Scheduled database runs search an inclusive interval from the last fully
+reconciled date through the new batch date. Crossref ranks that bounded set by
+relevance; arXiv returns recent submissions first. The overlapping boundary
+protects against delayed deposits; catalog deduplication absorbs repeats.
+Unbounded searches remain useful for deliberate scope expansion but do not
+constitute an incremental update.
 
-The initial mapping closes only after:
+Each update batch follows this order:
 
-1. every work named by an exploratory row is either cataloged or explicitly
-   marked `not-recorded` in that row;
-2. the bounded critical reading set is complete;
-3. every `priority=critical` seed has separately recorded backward and forward
-   chasing;
-4. two consecutive *audited* rounds add neither a conceptual cluster nor a
-   plausible close competitor;
-5. an independent reviewer audits borderline exclusions and the closure log.
+1. inspect `update.py status` and fetch due searches into `.scratch/`;
+2. deduplicate against the catalog and screen every returned record;
+3. promote only fully adjudicated snapshots and append matching log rows;
+4. deep-read and snowball any new critical work;
+5. update thematic syntheses, terminology, claims, and formal synthesis;
+6. update evidence rows and manuscript text affected by the findings;
+7. advance update state only when all impacts are reconciled; and
+8. run the full repository check before committing.
 
-The result is called **mapping closure**, not proof that no relevant work
-exists. Later papers or a newly exposed cluster reopen the mapping.
+An update is incomplete if it only adds bibliography entries or source notes.
+The cross-paper synthesis and every affected manuscript claim must also be
+reconciled.
 
-## Search-log schema
+## Snapshot closure and reopening
 
-The tab-separated audited log has these fields:
+The repository is living; “current” means that no registered maintenance task
+is overdue and no promoted finding remains unreconciled. A publication snapshot
+may claim bounded mapping closure only when:
 
-- `date`: ISO date of execution;
-- `round_id`: stable identifier grouping a predeclared batch;
-- `phase`: database search, backward snowballing, forward snowballing, or audit;
-- `source`: database/API and, when relevant, version or access mode;
-- `exact_query_or_seed`: verbatim query or persistent seed identifier;
-- `direction`: `query`, `backward`, `forward`, or `audit`;
-- `hits`: exact result count exposed by the source;
-- `screened`: exact count screened;
-- `included_keys`: comma-separated catalog keys, or `-`;
-- `excluded_keys`: comma-separated catalog keys with excluded status, or `-`;
-- `notes`: filters, inaccessible records, exactly one `screening/*.tsv`
-  result-set artifact for every non-audit row, or limitations. An audit row
-  normally has no result set but may link one reconciled snapshot.
+1. every discovered work has a catalog disposition;
+2. every critical work is deep-read and chased in both directions;
+3. all registered searches due for that snapshot have been adjudicated;
+4. two prospective, independently checked no-add batches find neither a new
+   theme nor a plausible close competitor; and
+5. the manuscript, evidence matrix, and syntheses agree on the coverage date.
 
-A row with an approximate hit count, unknown screened set, or aggregated seeds
-is exploratory and must not be moved into the audited log.
+A later paper, changed result, or new theme reopens the current map. Closure is
+always relative to the named sources, exact queries, result depths, and date.
 
-## Novelty test
+## Audited search-log schema
 
-For each closest work, restate our hypothesis in that work's notation and ask:
+`logs/searches.tsv` contains: execution date, round ID, phase, source, exact
+query or seed, direction, hit count, screened count, included keys, excluded
+keys, and notes. Every non-audit row references exactly one committed snapshot.
+Approximate counts, unknown result sets, and aggregate seed descriptions belong
+in scratch notes rather than the audited log.
 
-1. Is the desired partition already one of its semantic objects?
-2. Is demand-sensitive omission merely an existing projection, slice, cube, or
-   state-merging operation?
-3. Do its theorems imply ours directly under a simple encoding?
-4. Would our algorithm be a standard enumeration scheme applied to a new IR?
-5. If so, what nontrivial theorem, representation, or complexity result remains?
+## Novelty discipline
 
-A negative answer to novelty is a useful survey outcome and must be recorded in
-`research/claims.md` rather than softened.
-
-## Survey snapshot
-
-- Protocol established: 2026-08-04
-- Paper route: self-published versioned research artifact after the novelty
-  audit in decision 0002
-- Authorship route: Bili Dong is the sole author of record; substantial use of
-  OpenAI Codex is disclosed, and human review must be completed before any
-  conventional submission
-- Working language: English
+For any proposed contribution, restate it in the notation of the closest work
+and test whether its semantic object, theorem, or enumeration method transfers
+under straightforward instrumentation. Absence of a matching paper is only a
+novelty hypothesis until the closest-work audit is complete. Negative results
+belong in `research/claims.md` and the subsumption-boundary synthesis.

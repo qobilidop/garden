@@ -5,6 +5,7 @@ set -euo pipefail
 repo_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 readonly repo_dir
 readonly image="${DATAFLOW_SELECTION_ENUMERATION_DEV_IMAGE:-dataflow-selection-enumeration-dev:local}"
+readonly container_tmp="${repo_dir}/.scratch/container-tmp"
 
 force_build=false
 if [[ "${1:-}" == "--build" ]]; then
@@ -43,12 +44,12 @@ if [[ -f "${HOME}/.ssh/known_hosts" ]]; then
   )
 fi
 
-mkdir -p "${repo_dir}/.cache/tmp"
+mkdir -p "${container_tmp}"
 
 exec docker run --rm "${terminal_args[@]}" \
   --platform linux/amd64 \
   --volume "${repo_dir}:/workspace/dataflow-selection-enumeration" \
-  --volume "${repo_dir}/.cache/tmp:/tmp" \
+  --volume "${container_tmp}:/tmp" \
   --workdir /workspace/dataflow-selection-enumeration \
   --env HOME=/tmp \
   --env GIT_CONFIG_COUNT=1 \

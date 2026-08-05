@@ -25,14 +25,14 @@ search; finite-observer partitions; hyperplane, neural, continuous
 piecewise-linear (CPWL), hybrid, and
 parametric regions; stream-dataflow demand; observer-, property-, and
 context-guided state or schedule reduction; higher-order concolic inputs; and
-behavioral state quotients. The protocol lists the complete vocabulary and its
-chronological extensions.
+behavioral state quotients. The protocol groups the stable coverage themes;
+the accompanying update registry versions the recurring exact searches.
 
 The protocol began with a smaller vocabulary. Newly exposed clusters were
 added only through recorded reopenings; prior no-add rounds were then retired
 rather than counted as closure. This matters because demand-driven
 functional-logic search, Lazy SmallCheck, ordinary decision trees, and exact
-region enumeration each materially narrowed the original thesis.
+region enumeration each materially narrowed the initial organizing thesis.
 
 == Selection and extraction
 
@@ -87,13 +87,21 @@ while avoiding decisions irrelevant to a request reopens the map. Closure is
 therefore relative to the recorded databases and date; it is not a proof that
 world literature contains no additional relevant work.
 
-The repository accompanying this paper contains the protocol, catalog,
-query-level search log, frozen screening snapshots, source notes, evidence
-matrix, claim ledger, and closure audit. Downloaded papers and transient search
-responses are deliberately excluded. The current rendered manuscript is
+The repository treats this closed map as an initial baseline rather than a
+terminal artifact. Registered Crossref and arXiv searches recur every 90 days,
+the critical-source forward neighborhoods are refreshed at least annually, and
+a new theme or plausible close competitor triggers an immediate update. A
+future manuscript version advances its coverage date only after the resulting
+catalog dispositions, source notes, syntheses, evidence rows, and prose have
+been reconciled.
+
+The repository accompanying this paper contains the protocol, baseline,
+query registry, catalog, audited search log, frozen screening snapshots, source
+notes, thematic syntheses, evidence matrix, and claim ledger. Downloaded papers
+and transient search responses are deliberately excluded. The current rendered manuscript is
 available at
-#link("https://qobilidop.github.io/dataflow-selection-enumeration/")[the paper website];
-the search record was last reconciled on 4 August 2026.
+#link("https://qobilidop.github.io/dataflow-selection-enumeration/")[the paper website].
+The search record was last reconciled on 4 August 2026.
 
 == Validity threats
 

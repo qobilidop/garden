@@ -52,8 +52,9 @@ term graph.
 
 The exact 23-entry printed bibliography was title-screened and reconciled with
 the publisher deposit in
-`screening/primary-jones2007lexicographic-backward.tsv`. All 49 DOI-linked
-OpenCitations records were title-screened in
-`screening/opencitations-jones2007lexicographic-forward.tsv`. Retained
+`screening/baseline-2026-08-04/primary-jones2007lexicographic-backward.tsv`.
+All 49 DOI-linked OpenCitations records were title-screened in
+`screening/baseline-2026-08-04/opencitations-jones2007lexicographic-forward.tsv`.
+Retained
 successors include projection/pLP interreduction, unrestricted pQP adjacency,
 connected-graph enumeration, and mixed floating/rational exact pLP solving.

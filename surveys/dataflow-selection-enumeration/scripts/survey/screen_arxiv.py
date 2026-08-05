@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Freeze relevance-ranked arXiv title-and-abstract search results."""
+"""Freeze arXiv title-and-abstract search results."""
 
 import argparse
 import csv
-from datetime import datetime, timezone
+from datetime import date, datetime, timezone
 import json
 from pathlib import Path
 import re
@@ -43,13 +43,42 @@ def conjunctive_query(query: str) -> str:
     return " AND ".join(f'all:"{term}"' for term in terms)
 
 
-def collect(query: str, limit: int) -> tuple[dict[str, object], list[dict[str, str]]]:
-    source_query = conjunctive_query(query)
+def iso_date(value: str) -> str:
+    try:
+        return date.fromisoformat(value).isoformat()
+    except ValueError as error:
+        raise argparse.ArgumentTypeError(f"invalid ISO date: {value}") from error
+
+
+def collect(
+    query: str,
+    limit: int,
+    from_date: str | None = None,
+    to_date: str | None = None,
+    raw_query: bool = False,
+) -> tuple[dict[str, object], list[dict[str, str]]]:
+    if (from_date is None) != (to_date is None):
+        raise SystemExit("provide both --from-date and --to-date")
+    if from_date and from_date > to_date:
+        raise SystemExit("--from-date must not be later than --to-date")
+
+    source_query = query if raw_query else conjunctive_query(query)
+    if not source_query.strip():
+        raise SystemExit("query must not be empty")
+    sort_by = "relevance"
+    if from_date:
+        start = from_date.replace("-", "")
+        end = to_date.replace("-", "")
+        source_query = (
+            f"({source_query}) AND "
+            f"submittedDate:[{start}0000 TO {end}2359]"
+        )
+        sort_by = "submittedDate"
     parameters = {
         "search_query": source_query,
         "start": "0",
         "max_results": str(limit),
-        "sortBy": "relevance",
+        "sortBy": sort_by,
         "sortOrder": "descending",
     }
     url = f"{API_ROOT}?{urllib.parse.urlencode(parameters)}"
@@ -79,8 +108,11 @@ def collect(query: str, limit: int) -> tuple[dict[str, object], list[dict[str, s
         "source_query": source_query,
         "hits": int(total_text),
         "exported": len(records),
-        "sort": "relevance descending",
+        "sort": f"{sort_by} descending",
     }
+    if from_date:
+        metadata["from_submitted_date"] = from_date
+        metadata["until_submitted_date"] = to_date
     return metadata, records
 
 
@@ -88,15 +120,24 @@ def parser() -> argparse.ArgumentParser:
     result = argparse.ArgumentParser()
     result.add_argument("query")
     result.add_argument("--limit", type=int, default=100)
+    result.add_argument("--from-date", type=iso_date)
+    result.add_argument("--to-date", type=iso_date)
+    result.add_argument(
+        "--raw-query",
+        action="store_true",
+        help="interpret QUERY as arXiv API search syntax",
+    )
     result.add_argument("--output", type=Path, required=True)
     return result
 
 
 def main() -> int:
     args = parser().parse_args()
-    if not 1 <= args.limit <= 100:
-        raise SystemExit("arXiv search limit must be in 1..100")
-    metadata, records = collect(args.query, args.limit)
+    if not 1 <= args.limit <= 2000:
+        raise SystemExit("arXiv search limit must be in 1..2000")
+    metadata, records = collect(
+        args.query, args.limit, args.from_date, args.to_date, args.raw_query
+    )
     args.output.parent.mkdir(parents=True, exist_ok=True)
     with args.output.open("w", newline="", encoding="utf-8") as output:
         writer = csv.DictWriter(

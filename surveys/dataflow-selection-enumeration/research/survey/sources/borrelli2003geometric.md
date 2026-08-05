@@ -54,8 +54,9 @@ decisions.
 
 The exact 22-entry printed bibliography was title-screened and reconciled with
 the publisher deposit in
-`screening/primary-borrelli2003geometric-backward.tsv`. All 179 DOI-linked
-OpenCitations records were title-screened in
-`screening/opencitations-borrelli2003geometric-forward.tsv`. The forward chase
+`screening/baseline-2026-08-04/primary-borrelli2003geometric-backward.tsv`.
+All 179 DOI-linked OpenCitations records were title-screened in
+`screening/baseline-2026-08-04/opencitations-borrelli2003geometric-forward.tsv`.
+The forward chase
 surfaced the pLCP, unique-selection, projection-interreduction, exact-solver,
 and policy-quotient successors recorded separately in the catalog.

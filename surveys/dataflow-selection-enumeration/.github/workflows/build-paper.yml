@@ -1,4 +1,4 @@
-name: Build paper
+name: Verify survey and build paper
 
 on:
   push:
@@ -13,7 +13,7 @@ concurrency:
 
 jobs:
   build:
-    name: Build manuscript PDF
+    name: Validate evidence and build manuscript
     runs-on: ubuntu-24.04
     timeout-minutes: 20
     permissions:

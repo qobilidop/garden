@@ -1,8 +1,10 @@
 # citekey — Title
 
+- **Template version:** 2
 - **Status:** deep-read
 - **Primary source:**
 - **Version read:**
+- **Last reviewed:** YYYY-MM-DD
 - **Bibliography key:**
 
 ## Why it matters
@@ -36,3 +38,9 @@
 ## Questions and possible weaknesses
 
 -
+
+## Update impact
+
+- **Syntheses affected:**
+- **Claims affected:**
+- **Manuscript action:** none / revise locations

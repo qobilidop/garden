@@ -7,20 +7,24 @@ enumerating every distinct **selection observation** with exact guards and
 residual values while omitting selections in unobserved case cones. Starting at
 the requested result, the observation traversal follows every operand of a
 strict operator and only the selected cases of a selection operator. A
-novelty audit found that the original broad theory proposal decomposes into
-established semantic and enumeration machinery; the formal development is
-therefore retained as a unifying lens rather than presented as a new
-foundational calculus.
+formal development connects this observer to established semantic and
+enumeration machinery and serves as a unifying lens across the surveyed
+literatures.
 
 ## Current phase
 
-The systematic map is closed under its recorded protocol, and the formal
-synthesis is available as a complete manuscript. Closure is relative to the
-captured sources, queries, rankings, and 4 August 2026 access date; it is not a
-claim of worldwide literature completeness. See
-[`research/README.md`](research/README.md) for the evidence workflow and
-[`research/survey/protocol.md`](research/survey/protocol.md) for the review
-protocol.
+The repository now maintains a living survey. Its initial systematic-map
+baseline is closed relative to the captured sources, queries, rankings, and
+4 August 2026 access date; later research is incorporated through registered
+recurring searches and citation refreshes. This is not a claim of worldwide
+literature completeness.
+
+Start with [`research/survey/README.md`](research/survey/README.md) for the file
+map and update lifecycle, or inspect current freshness directly:
+
+```console
+./dev.sh python3 scripts/survey/update.py status
+```
 
 ## Authorship and AI assistance
 
@@ -52,20 +56,30 @@ explicit rebuild is wanted:
 The same command compiles `manuscript/main.typ` to
 `build/manuscript.pdf` and verifies that the PDF contains extractable text.
 
+To stage the next due literature searches without committing unfinished
+results:
+
+```console
+./dev.sh python3 scripts/survey/update.py fetch --due
+```
+
+The staged batch is written under `.scratch/`; the survey update guide defines
+the screening and promotion steps.
+
 ### Downloading the PDF from GitHub
 
 The [paper website](https://qobilidop.github.io/dataflow-selection-enumeration/)
 links to the latest manuscript and the public research record. The PDF is also
 available [directly](https://qobilidop.github.io/dataflow-selection-enumeration/manuscript.pdf).
-The **Build paper** workflow republishes the website and PDF to GitHub Pages
-after every successful push to `main`.
+The **Verify survey and build paper** workflow republishes the website and PDF
+to GitHub Pages after every successful push to `main`.
 
-The **Build paper** workflow builds and verifies the manuscript on every push
-to `main`, on pull requests, and when started manually from the Actions tab.
-To download its result:
+The **Verify survey and build paper** workflow builds and verifies the
+manuscript on every push to `main`, on pull requests, and when started manually
+from the Actions tab. To download its result:
 
 1. Open the repository's **Actions** tab.
-2. Select **Build paper** and open a successful workflow run.
+2. Select **Verify survey and build paper** and open a successful workflow run.
 3. In that run's **Artifacts** section, download **manuscript-pdf**.
 
 The downloaded archive contains `manuscript.pdf`. Artifacts are retained for

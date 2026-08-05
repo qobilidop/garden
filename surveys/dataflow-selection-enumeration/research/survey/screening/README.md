@@ -2,7 +2,11 @@
 
 These TSV files freeze the identifier, title, DOI, year, venue, and type records
 returned by the discovery index for each audited query or citation-neighborhood
-row in `../search-log.tsv`. They intentionally omit abstracts and full text.
+row in `../logs/searches.tsv`. Some source exporters include abstracts; full
+text is never committed here.
+
+`baseline-2026-08-04/` contains the complete first mapping snapshot. Later
+fully adjudicated batches use their own `YYYY-MM-DD/` directories.
 
 The snapshots serve three purposes:
 
@@ -19,18 +23,22 @@ bibliographic metadata. For example, its ECOOP 2024 record currently associates
 the compositional-symbolic-execution title with the wrong article DOI; the
 catalog and bibliography use the official Dagstuhl record.
 
-OpenAlex citation-neighborhood and concept-query files are generated through:
+New update batches use date-named subdirectories. OpenAlex citation-neighborhood
+and concept-query files are generated through:
 
 ```console
-./dev.sh python3 scripts/openalex-screen.py ... --output research/survey/screening/NAME.tsv
+./dev.sh python3 scripts/survey/screen_openalex.py ... \
+  --output research/survey/screening/YYYY-MM-DD/NAME.tsv
 ```
 
-The independent Crossref closure batch uses a second exporter with a
-source-neutral identifier column:
+Manual Crossref result snapshots use a source-neutral identifier column. Date
+bounds are required for recurring updates and may be supplied for an ad hoc
+snapshot:
 
 ```console
-./dev.sh python3 scripts/crossref-screen.py QUERY \
-  --limit 50 --output research/survey/screening/NAME.tsv
+./dev.sh python3 scripts/survey/screen_crossref.py QUERY \
+  --limit 100 --from-date YYYY-MM-DD --to-date YYYY-MM-DD \
+  --output research/survey/screening/YYYY-MM-DD/NAME.tsv
 ```
 
 Files named `primary-CITEKEY-backward.tsv` transcribe the complete reference
@@ -46,6 +54,6 @@ nor a DOI. The exporter retains them under the snapshot-local identifier
 `unresolved-record-N`; this exposes missing index metadata without deleting a
 screened result or inventing authoritative bibliographic identity.
 
-No closure claim follows merely from the presence of snapshots. The protocol's
-deep-reading, separate seed chasing, consecutive no-add rounds, and independent
-audit requirements still apply.
+No freshness or closure claim follows merely from the presence of snapshots.
+The catalog, syntheses, evidence matrix, manuscript, and update state must also
+be reconciled under the living protocol.

@@ -1,8 +1,14 @@
-# Claims ledger
+# Claims and qualification ledger
 
-No item in this file is a paper contribution merely because it is listed. Each
-claim must survive the closest-work audit and acquire explicit assumptions,
-proof obligations, and evidence.
+This file records the survey's current synthesis claims and the negative
+constraints inherited from the original-paper audit. No item is novel merely
+because it is listed. Each active claim must have explicit scope, anchored
+evidence, and a stated relationship to the closest established result.
+
+## Retired original-paper hypotheses
+
+These rejected or reduced hypotheses remain as guardrails against reintroducing
+claims that the survey has already shown to be known.
 
 ## H01 — Inputs induce unique selection observations
 
@@ -126,7 +132,9 @@ proof obligations, and evidence.
   complete activation/outcome tuples. Formula size, serialized output,
   incremental solving cost, and compiled enumeration remain separate.
 
-## S01 — Taxonomy of omission mechanisms
+## Current survey synthesis claims
+
+### S01 — Taxonomy of omission mechanisms
 
 - **Status:** survey synthesis
 - **Statement:** Structural non-observation, existential projection, logical
@@ -137,7 +145,7 @@ proof obligations, and evidence.
 - **Evidence required:** an extraction matrix covering definitions, observer,
   representation, guarantee, and complexity for every deep-read work.
 
-## S02 — Three equivalent presentations of selection observation
+### S02 — Three equivalent presentations of selection observation
 
 - **Status:** survey synthesis; formal derivation recorded
 - **Statement:** For finite total selective term graphs, the same graph-relative
@@ -148,7 +156,7 @@ proof obligations, and evidence.
   established literatures; present only the cross-literature equivalence as our
   organizing derivation.
 
-## S03 — Fiber generation equals projected enumeration
+### S03 — Fiber generation equals projected enumeration
 
 - **Status:** survey synthesis; formal derivation recorded
 - **Statement:** A concolically generated local guard is the exact input fiber
@@ -158,7 +166,7 @@ proof obligations, and evidence.
   require \(K\) satisfying models plus a final unsatisfiable query. Solver time
   and representation size remain separate.
 
-## S04 — Dense activation regions are an all-sites-observed special case
+### S04 — Dense activation regions are an all-sites-observed special case
 
 - **Status:** survey synthesis; broad novelty defeated
 - **Statement:** Translating each ReLU regime to a binary selection and
@@ -197,7 +205,7 @@ proof obligations, and evidence.
   regime enumeration, guard-plus-residual output, dynamic sparsity, or an
   extensional requested-class quotient.
 
-## S05 — Selection observations are an observer-equivalence partition
+### S05 — Selection observations are an observer-equivalence partition
 
 - **Status:** survey synthesis; broad novelty defeated
 - **Statement:** Totalizing each site with an `unobserved` sentinel makes the
@@ -212,7 +220,7 @@ proof obligations, and evidence.
   form of each fiber and its residual, plus any demonstrable construction
   advantage. The quotient and generic exact enumeration are established.
 
-## S06 — Demand-guided refinement is established independently
+### S06 — Demand-guided refinement is established independently
 
 - **Status:** survey synthesis; broad novelty defeated
 - **Statement:** Lindblad represents satisfying sets by partial constructor
@@ -228,7 +236,7 @@ proof obligations, and evidence.
   residual symbolic values, and an analysis beyond the prior partial-state
   search results.
 
-## S07 — Decision paths and compiled observation functions subsume the output shape
+### S07 — Decision paths and compiled observation functions subsume the output shape
 
 - **Status:** survey synthesis; broad novelty defeated
 - **Statement:** A deterministic root-to-leaf path is an input-relative partial
@@ -245,7 +253,7 @@ proof obligations, and evidence.
   graph-specific construction, composition, or representation theorem beyond
   generic decision structures.
 
-## S08 — Fixed-input least demanded computation is established
+### S08 — Fixed-input least demanded computation is established
 
 - **Status:** survey synthesis; terminology and semantic novelty defeated
 - **Statement:** For fixed stream inputs and output-position demands, classical
@@ -262,7 +270,7 @@ proof obligations, and evidence.
   each observation. “Demand-sensitive evaluation” is not itself a
   contribution.
 
-## S09 — Requested-output projection does not define the selection observer
+### S09 — Requested-output projection does not define the selection observer
 
 - **Status:** survey synthesis; broad novelty defeated
 - **Statement:** Projecting a rich internal decision history to a requested
@@ -281,7 +289,7 @@ proof obligations, and evidence.
   contextual selection-site outcomes that retains observed equal-valued
   events; it is not the kernel of the requested output function.
 
-## S10 — Parametric-program canonicality and complexity are established
+### S10 — Parametric-program canonicality and complexity are established
 
 - **Status:** survey synthesis; broad novelty defeated
 - **Statement:** Full-dimensional pLP/pQP/pLCP partitions already have exact
@@ -301,7 +309,7 @@ proof obligations, and evidence.
   events, typed residuals, and exact positive inverse fibers over a shared
   pure dataflow graph.
 
-## S11 — Exact choice-record reduction is established for concurrent schedules
+### S11 — Exact choice-record reduction is established for concurrent schedules
 
 - **Status:** survey synthesis; broad novelty defeated
 - **Statement:** Symbolic partial-order methods already retain representative
@@ -316,7 +324,7 @@ proof obligations, and evidence.
   the requested-root input-fiber observer over contextual sites, not schedule
   equivalence.
 
-## S12 — Partial event records already induce exact hidden-state sets
+### S12 — Partial event records already induce exact hidden-state sets
 
 - **Status:** survey synthesis; broad novelty defeated
 - **Statement:** Petri-net observers can characterize exactly the current
@@ -333,7 +341,7 @@ proof obligations, and evidence.
   established. This manuscript's narrower object partitions initial caller
   inputs of a pure function and attaches a typed residual value.
 
-## S13 — Exact quotienting carries no automatic performance advantage
+### S13 — Exact quotienting carries no automatic performance advantage
 
 - **Status:** survey synthesis; implementation claim rejected
 - **Statement:** A smaller exact semantic quotient can cost more to construct
@@ -346,7 +354,7 @@ proof obligations, and evidence.
   practical speedup. Any implementation claim requires measurements against
   projected encodings, decision diagrams, and specialized quotients.
 
-## S14 — Request-relative complete prefixes and count-sensitive observers are established
+### S14 — Request-relative complete prefixes and count-sensitive observers are established
 
 - **Status:** survey synthesis; broad novelty defeated
 - **Statement:** Petri-net unfolding can parameterize the semantic information
