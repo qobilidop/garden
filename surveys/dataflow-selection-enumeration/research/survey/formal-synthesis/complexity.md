@@ -11,10 +11,10 @@ Use explicit parameters rather than the ambiguous phrase “graph size”:
   \(\eta_{q,j}(d)\equiv[j\in C_q(\kappa_q(d))]\);
 - \(S_{\mathrm{enc}}=S_G+S_C\): weighted size charged to the exact global
   value/reachability encoding;
-- \(S_A\): DAG or serialized size of the caller constraint, as stated;
+- \(S_A\): DAG or serialized size of the caller-domain predicate, as stated;
 - \(Q\): number of structural selection sites;
 - \(b_q=|\Omega_q|\): outcome count at site \(q\);
-- \(K\): number of feasible selection observations under the caller constraint;
+- \(K\): number of feasible selection observations under the caller-domain predicate;
 - \(L\): maximum number of observed selection sites in one observation;
 - \(S_\tau\): weighted size of the demanded slice for observation \(\tau\),
   including the classifier and direct membership circuits used in that slice;
@@ -26,7 +26,7 @@ Use explicit parameters rather than the ambiguous phrase “graph size”:
 - \(T_{\mathrm{SMT}}(\phi)\): cost of deciding and producing a model for
   formula \(\phi\).
 
-\(S_G\) must count widths and case lists. One width-\(w\) one-hot selector can
+\(S_G\) must count widths and case lists. One width-\(w\) mask-valued selector can
 have one graph node but an \(\Omega(w)\) outcome predicate and \(2^w\) possible
 masks.
 
@@ -109,7 +109,7 @@ When every selection site is a real affine sign test and every site is always
 observed, an observation is a total sign vector, but a general selection fiber
 need not be a full-dimensional arrangement cell. A non-strict classifier
 assigns boundary points to one side, producing half-open regions; an arbitrary
-caller constraint can also cut or lower the dimension of a fiber. For example,
+caller-domain predicate can also cut or lower the dimension of a fiber. For example,
 the outcomes \(x\ge0\) and \(-x\ge0\) are simultaneously true exactly at
 \(x=0\).
 
@@ -267,7 +267,7 @@ forms or implicitly searches up to
 
 positive/negative combinations, retaining only satisfiable atoms. This is the
 baseline used by the SFSM property-testing construction of Huang, Krafczyk,
-and Peleska. Setting \(P\) to site-activity and outcome predicates makes each
+and Peleska. Setting \(P\) to site-reachability and outcome predicates makes each
 atom determine an observation, but atoms can refine observations when they
 retain truth coordinates the observation projects away. Aggregating atoms by
 observation can make the guard a disjunction whose serialized size is
@@ -344,7 +344,7 @@ O\!\left(\sum_\tau S_\tau\right)
 \]
 
 and creates outcome-guard-plus-residual DAGs of the same asymptotic size. If
-every emitted complete guard copies the caller constraint, flat output size is
+every emitted complete guard copies the caller-domain predicate, flat output size is
 
 \[
   O\!\left(KS_A+\sum_\tau S_\tau\right).
@@ -436,7 +436,7 @@ NP-hard: let one selector compute an arbitrary Boolean circuit \(F(x)\) and ask
 whether its \(\mathsf{true}\) outcome is feasible. It is in NP when a finite
 concrete input is a polynomial-size witness and graph evaluation is polynomial.
 
-Counting feasible observations is #P-hard when caller constraints are part of
+Counting feasible observations is #P-hard when caller-domain predicates are part of
 the input: under a Boolean constraint \(F(x)\), expose each input bit as an
 always-observed binary selection outcome, making observations injective on
 satisfying inputs. The number of observations is then \(\#\mathrm{SAT}(F)\).
@@ -450,7 +450,7 @@ coverage operationally through the final unsatisfiable query.
 
 ## Representation comparisons
 
-The activation-variable projected-AllSMT baseline constructs one shared graph
+The reachability-and-outcome projected-AllSMT baseline constructs one shared graph
 encoding of \(O(S_{\mathrm{enc}})\) weighted DAG size when \(\kappa_q\), the
 outcome encoding, and every direct \(\eta_{q,j}\) circuit are supplied
 effectively. An extensional disjunction over all outcomes is charged to

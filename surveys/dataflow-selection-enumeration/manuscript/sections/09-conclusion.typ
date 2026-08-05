@@ -11,15 +11,15 @@ enumerate it and the structure used to represent it. Guarded symbolic
 execution, projected model enumeration, decision structures, demand-guided
 search, geometric traversal, and compositional summaries consequently become
 comparable without being declared equivalent by terminology alone. Local
-positive-guard generation and global activity projection are two general
+observed-outcome-guard generation and global reachability-and-outcome projection are two general
 presentations of the same observer. Decision structures compile it, affine
-methods solve important strict specializations with stronger guarantees, and
+methods solve important restricted specializations with stronger guarantees, and
 component summaries preserve it only under explicit demand, identity, and
 interface conditions.
 
 The survey finds no new generic enumeration paradigm or general complexity
 advantage. Its contribution is a precise problem statement, common vocabulary,
-transfer criteria, and an evidence-backed analysis of known solution families.
+transfer criteria, and an evidence-backed analysis of known solution routes.
 Future progress should therefore state which observer is preserved, which
 record obligations are met, which representation is charged, and which
 assumptions support any claimed improvement.

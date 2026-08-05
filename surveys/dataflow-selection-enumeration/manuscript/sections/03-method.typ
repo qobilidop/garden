@@ -23,7 +23,7 @@ schema. For each work, the map records:
 
 Works in the main comparison have one of three relationships to the target
 problem. A _direct presentation_ enumerates the same observer after explicit
-notation or activity instrumentation. A _strict specialization_ solves the
+notation or reachability instrumentation. A _restricted specialization_ solves the
 same contract under stronger assumptions, such as all sites being observed and
 all classifiers being affine. An _adjacent comparator_ preserves or omits
 information for a different observer and is included only when it clarifies a
@@ -44,7 +44,7 @@ are retained in the repository. Printed primary bibliographies control
 backward snowballing when citation indexes are incomplete or incorrect.
 
 Screening assigns one current catalog disposition. At the archived snapshot,
-the 897 discovered works comprise 201 `deep-read`, 161 `screened`, 420
+the 897 discovered works comprise 202 `deep-read`, 160 `screened`, 420
 `candidate`, and 115 `excluded` records. Here `candidate` is a retained
 discovery disposition, not an unresolved promise to read every record. The
 main technical comparisons rely on deep reads of primary works with pinpoint

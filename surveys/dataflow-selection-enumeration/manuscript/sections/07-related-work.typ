@@ -3,9 +3,11 @@
 The target is one exact selection-observation record per nonempty caller-input
 fiber. Prior approaches become comparable only after fixing that contract.
 Some can enumerate the fibers directly after instrumentation, some compile the
-same finite observer into a shared representation, and some solve strict
-special cases with stronger guarantees. @tab-approaches summarizes the six
-principal families.
+same finite observer into a shared representation, and some solve restricted
+special cases with stronger guarantees. @tab-approaches summarizes six
+recurring, non-exclusive research traditions and implementation routes. They
+mix mechanisms, representations, and restrictions rather than forming a flat
+taxonomy.
 
 #figure(
   block(breakable: false)[
@@ -16,7 +18,7 @@ principal families.
       inset: 3.5pt,
       stroke: (x: none, y: 0.4pt + rgb("c8ced6")),
       table.header(
-        [*Family*], [*Discovery object*], [*Natural output*],
+        [*Route*], [*Discovery object*], [*Natural output*],
         [*Route to target*], [*Principal boundary*],
       ),
       [Guarded symbolic execution], [Feasible path or merged symbolic state],
@@ -24,9 +26,9 @@ principal families.
         [Paths may refine or cross the target partition],
       [Projected model enumeration], [Selected coordinate image],
         [Models, cubes, or compiled cover],
-        [Project totalized activity/outcome coordinates],
-        [A short cube may cover several observations],
-      [Decision structures], [Reached tests or compiled finite function],
+        [Project totalized reachability/outcome coordinates],
+        [Cubes may group observations; projection supplies no residual],
+      [Decision structures], [Compiled finite observer],
         [Tree, BDD, ADD, or related DAG],
         [Compile the totalized observer and residual labels],
         [Compilation size and variable order can dominate],
@@ -36,8 +38,8 @@ principal families.
         [Often lacks exact fiber guards or residuals],
       [Geometric/parametric enumeration], [Cells, modes, or critical regions],
         [Polyhedral guard and affine map],
-        [All-sites-observed affine specialization],
-        [Affine and dimensional assumptions],
+        [Dense signs: direct; critical regions: correspondence needed],
+        [Different observers; affine and dimensional assumptions],
       [Compositional summaries], [Component relation or guarded pieces],
         [Reusable guarded summary],
         [Parameterize summaries by requested outputs],
@@ -45,7 +47,7 @@ principal families.
       )
     ]
   ],
-  caption: [Established solution families expressed in the unified framework.],
+  caption: [Recurring solution routes expressed in the unified framework.],
   kind: table,
 ) <tab-approaches>
 
@@ -73,27 +75,29 @@ agreement with the declared observer.
 
 The local generator formalized in @sec-algorithms is therefore not a new symbolic
 execution paradigm. It is the target observer instantiated in a standard
-guard-and-residual evaluator. Its useful property is the exact positive guard:
+guard-and-residual evaluator. Its useful property is the exact observed-outcome guard:
 structurally unobserved sites require no absence literal because enabled
 reachability is already fixed by the observed outcomes.
 
 == Projected model enumeration
 
-AllSMT enumerates satisfying assignments to designated Boolean or theory
-coordinates while existentially hiding the rest @phan2015allsmtr. Recent
-projected SAT and SMT methods can emit disjoint partial models and avoid a
+Phan's AllSMT enumerates satisfying assignments to designated important
+Boolean coordinates while returning sampled values for relevant theory
+variables @phan2015allsmtr. A finite theory-valued coordinate needs an engine
+whose projection contract explicitly enumerates its values. Recent projected
+SAT and SMT methods can emit disjoint partial models and avoid a
 growing family of ordinary blocking clauses @spallitta2024disjoint
-@spallitta2025projected. Knowledge-compilation approaches similarly enumerate
-or compile projected images into deterministic representations
+@spallitta2025projected. Knowledge compilation similarly supports disjoint
+partial-model enumeration after d-DNNF compilation
 @lagniez2024decisiondnnf.
 
 This is the most direct generic reduction. Give every contextual selection site
 a finite coordinate whose values are its outcomes plus an explicit
-`unobserved` sentinel. Activity equations connect that sentinel to
+`unobserved` sentinel. Reachability equations connect that sentinel to
 requested-root reachability. Projecting the graph formula onto those
 coordinates then enumerates exactly the totalized selection observer. The
-construction is conceptually complete but charges the eager value, classifier,
-case-membership, and activity encodings.
+construction is conceptually complete but charges the whole-graph value, classifier,
+case-membership, and reachability encodings.
 
 The output contract still matters. Enumerating every complete projected tuple
 produces one element per selection observation. A short partial cube can cover
@@ -104,8 +108,9 @@ observation must refine or annotate the cubes accordingly.
 
 == Compiled decision structures
 
-A decision tree records only the tests encountered on a root-to-leaf route;
-tests in other subtrees are structurally absent. Reduced BDDs share Boolean
+A decision tree asks only its representation tests along a root-to-leaf route.
+This is not the same as a graph selection site being unobserved: a compiler may
+choose entirely different input predicates. Reduced BDDs share Boolean
 subfunctions canonically under a fixed variable order @bryant1986bdd, and ADDs
 extend terminals beyond Boolean values @bahar1997add. Finite observer
 partitions can also be generated directly as exact input-equivalence classes
@@ -123,10 +128,11 @@ object.
 
 Compilation also exposes a semantic choice. Reducing nodes that have equal
 successors preserves the compiled observer, but compiling only the requested
-output value may erase equal-valued selection events. Exact neural decision
-trees and affine decision structures make this contrast concrete: they can
-remove infeasible or entailed tests while preserving a policy function
-@nguyen2020ecdt @affinitree2024. They solve the selection-observation task only
+output value may erase equal-valued selection events. Neural decision-tree
+extraction and affine decision structures make this contrast concrete. Nguyen
+et al. construct EC-DTs and report exact empirical fidelity with contradiction
+pruning @nguyen2020ecdt; Affinitree proves semantic preservation and simplifies
+infeasible or entailed tests @affinitree2024. They solve the selection-observation task only
 when their terminals or internal labels retain the declared selection events.
 
 == Demand-guided evaluation and search
@@ -151,35 +157,42 @@ solution only after its demand judgment is proved equal to the enabled closure
 and its fair search is grouped by complete observation fibers.
 
 The comparison also prevents a terminology error. The base graph is not called
-lazy: ordinary nodes are strict under a declared observation policy, while
+lazy: ordinary nodes expose all operands under a declared observation policy, while
 selection sites demand only the cases chosen by their outcomes. “Demand” here
 is graph-relative support for a requested observer, not an operational
 evaluation strategy.
 
 == Geometric and parametric specializations
 
-When every selection is observed and every classifier is the strict sign of an
-affine form, a complete observation is a sign vector and each nonempty fiber is
-a full-dimensional hyperplane-arrangement cell. Reverse-search and incremental
+When every selection is observed, each classifier is the strict sign of a
+distinct nonconstant affine form, and the caller domain is the ambient space
+with all classifier boundaries removed, a complete observation is a sign
+vector and each nonempty fiber is a full-dimensional hyperplane-arrangement
+cell. Reverse-search and incremental
 algorithms enumerate those cells exactly with output-sensitive guarantees
 @avis1996reverse @ferrez2005fixedrank @rada2018new. Exact ReLU analyses likewise
 enumerate activation patterns or polyhedral regions and often attach affine
 output maps @serra2018bounding @vincent2021reachable.
 
-Multiparametric programming provides an even closer guard-and-residual
+Multiparametric programming provides a closely related guard-and-residual
 contract. Critical-region algorithms emit polyhedral parameter guards together
 with affine optimizers and have explicit LP-oracle-relative bounds
 @jones2006parametric @columbano2009sufficient. Piecewise-affine systems compose
 upstream affine maps into downstream guards and can minimize regions with equal
-behavior @geyer2010mode @geyer2008optimal.
+behavior relative to a supplied arrangement and representation class
+@geyer2010mode @geyer2008optimal.
 
-These are strict specializations, not analogies. They solve the target task
-when the observer retains every affine test outcome and the caller domain
-excludes or explicitly assigns boundary points. Their stronger algorithms and
-complexity results should be preferred under those assumptions. They cease to
-be direct when nested selections make some sites structurally absent, when a
-fiber is lower-dimensional, or when equal affine maps are merged despite
-different observed outcomes.
+The full-dimensional hyperplane and dense activation-pattern methods are direct
+specializations under the stated observer and domain restrictions. Assigning
+boundary points to a side produces closed or lower-dimensional strata and
+requires separate face or ownership machinery; the cited open-cell guarantees
+do not transfer automatically. Parametric critical regions instead observe an
+optimizer basis or active set. They are direct only after an explicit model
+shows that this identity is exactly the graph's selection observer; otherwise
+they are strong guard-and-residual comparators. The full-dimensional cell
+algorithms analyzed here no longer instantiate the target when nested
+selections make sites unobserved, the caller predicate cuts across cells, or
+equal affine maps are merged despite different observed outcomes.
 
 == Compositional guarded summaries
 
@@ -209,13 +222,15 @@ enumeration complexity.
 
 === Observer agreement
 
-Projected enumeration is a direct reduction after activity instrumentation.
+Projected enumeration is a direct reduction after reachability instrumentation.
 Candidate-local symbolic execution is a direct presentation after demanded
 evaluation and grouping by exact fibers. Decision structures are direct when
 they compile the totalized selection observer rather than only the output
 function. Demand-guided methods are direct only after their demand relation and
-grouping contract are aligned with the framework. Geometric methods are strict
-specializations. Compositional summaries preserve the observer only with
+grouping contract are aligned with the framework. Dense-sign geometric methods
+are direct restricted specializations; parametric critical regions use a
+different observer unless an explicit correspondence is established.
+Compositional summaries preserve the observer only with
 requested-root demand, contextual identity, and explicit interface support.
 
 This classification is more informative than asking whether a method emits a
@@ -228,11 +243,11 @@ syntax while inducing different fibers.
 === Guarantees and representations
 
 The exact record contract has four independent obligations: complete
-nonredundant observation coverage, guard/fiber equivalence, residual correctness
+duplicate-free observation coverage, guard/fiber equivalence, residual correctness
 throughout the guard, and a feasibility witness. Projected image enumeration
 primarily supplies the first; symbolic evaluation supplies residuals; model
 production supplies witnesses; and the framework's guard theorem connects the
-local record to the semantic fiber. No family inherits all four obligations
+local record to the semantic fiber. No route inherits all four obligations
 merely from its name.
 
 Representation is orthogonal. Flat guards favor streaming and simple APIs but
@@ -283,19 +298,21 @@ inverse images are fibers, and an exact record attaches a guard, residual, and
 witness to each fiber. This distinguishes semantic partitioning from the
 algorithm and data structure used to expose it.
 
-*RQ2.* Six established families cover the principal solution space. Local
+*RQ2.* The included approaches organize into six recurring, overlapping routes. Local
 guarded evaluation and global projected enumeration are equivalent general
 presentations; decision structures compile the observer; demand-guided methods
-supply sparse discovery mechanisms; geometric methods solve strict affine
-specializations; and guarded summaries provide composition.
+supply sparse discovery mechanisms; dense-sign geometric methods solve a
+restricted affine specialization; and guarded summaries provide composition.
 
 *RQ3.* General exactness follows only after all four record obligations are
 proved. General output-sensitive complexity does not follow from sparse demand
 or one model per fiber. Stronger bounds belong to restricted geometric,
 parametric, or compiled inputs and must charge their representations.
 
-*RQ4.* Approaches coincide when their observer kernels agree after explicit
-instrumentation. Coordinate projection, equal-behavior merging, path
+*RQ4.* Approaches induce the same fibers when their observer kernels agree
+after explicit instrumentation. Their labeled images and record schemas then
+correspond only after an explicit image bijection. Coordinate projection,
+equal-behavior merging, path
 refinement, and property-guided search otherwise produce coarser, finer, or
 incomparable partitions. This observer test is the framework's primary rule for
 transferring results across terminology.

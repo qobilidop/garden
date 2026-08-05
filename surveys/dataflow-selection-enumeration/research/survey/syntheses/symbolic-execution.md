@@ -73,6 +73,6 @@ fiber.
 
 ## Remaining comparison obligation
 
-State the erasure map from an observed result to ordinary eager value semantics
+State the erasure map from an observed result to whole-graph value semantics
 and prove adequacy. Any stronger full-abstraction claim must name a context
 language capable of observing selection events.

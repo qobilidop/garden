@@ -11,7 +11,7 @@ frontiers for geometric and parametric specializations.
 Let $S_G$ be weighted source-DAG size, including nodes, edges, case lists,
 constants, widths, and aggregate leaves. Let $S_("enc")$ be the actual shared
 global value-and-reachability encoding size, including source wiring, one
-activity/reachability equation per relevant node and edge, ordinary
+reachability equation per relevant node and edge, ordinary
 primitives, classifiers, outcome encodings, direct case-membership predicates,
 selected combiners, and selection multiplexing. This may be larger than $S_G$. Let $S_A$ be
 caller-constraint size; $n_Q=abs(Q)$ the number of sites;
@@ -21,14 +21,16 @@ subencoding size for record $tau$; and $S_("out")$ the total serialized or DAG
 output size, whichever representation is declared. Finally,
 $T_("SMT")(phi)$ denotes the cost of deciding $phi$ and producing a model.
 
-The source-node count alone is insufficient. A width-$w$ one-hot selector is
+The source-node count alone is insufficient. A width-$w$ mask-valued selector is
 one node but can have $2^w$ mask outcomes. Lowering one multiway site to binary
 choices can also introduce auxiliary decisions whose projection must be merged
 back to one source outcome; such an elaboration must be charged separately.
 
 OutputP requires total time polynomial in serialized input plus total output.
-IncP bounds the time for each produced prefix, and DelayP bounds preprocessing,
-every inter-output delay, and final exhaustion by an input polynomial. A
+IncP bounds the time to produce the first $k$ solutions by a polynomial in the
+input size and $k$ under the stated encoding and balance convention. DelayP
+bounds the time before the first output, between consecutive outputs, and after
+the last output by an input polynomial. A
 compiled decision diagram or d-DNNF is not free preprocessing unless it is
 declared to be the input. No such classification is proved for the general
 algorithm here: exact-record membership, SMT solving, coefficient growth,
@@ -73,13 +75,13 @@ one immutable reference to $A$, it includes only $O(S_A)$ once.
 Before model query $j$, the solver sees
 
 $
-  A and product_(i < j) not g_i.
+  A and and.big_(i < j) not g_i.
 $
 
 An honest solver-time expression is therefore
 
 $
-  sum_(j=0)^K T_("SMT")(A and product_(i < j) not g_i).
+  sum_(j=0)^K T_("SMT")(A and and.big_(i < j) not g_i).
 $
 
 The cumulative blocker DAG can grow to $O(K S_("enc"))$. Incremental solving
@@ -145,8 +147,7 @@ $
 $
 
 arithmetic time with $O(m D)$ working space @avis1996reverse. Sleumer gives
-$O(K m)$ arithmetic time for fixed $D$ and $O(m^2)$ space
-@sleumer1998output. For central
+$O(K m)$ arithmetic time for fixed $D$ @sleumer1998output. For central
 arrangements, Ferrez, Fukuda, and Liebling give the pre-Rada bound
 
 $
@@ -162,7 +163,7 @@ their stated arithmetic or LP-cost models. Rada--Černý additionally classify
 their bounded-encoding algorithm in OutputP; the other displayed operation
 bounds are not silently promoted to coefficient-bit theorems. For the
 full-dimensional rational zonotope dual to this central-arrangement case, Deza
-and Pournin add a rational-bit-model traversal. If $B_Z$ is total generator
+and Pournin give a self-contained rational-bit analysis of a traversal. If $B_Z$ is total generator
 encoding length, its proof gives
 
 $

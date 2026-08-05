@@ -44,7 +44,7 @@ if [[ -f manuscript/main.typ ]]; then
   mkdir -p build
   typst compile \
     --root . \
-    --creation-timestamp 1785801600 \
+    --creation-timestamp 1785913200 \
     --pdf-standard a-2b \
     --no-pdf-tags \
     manuscript/main.typ \

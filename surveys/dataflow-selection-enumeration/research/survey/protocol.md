@@ -11,24 +11,25 @@ systematic mapping study rather than a statistical systematic literature
 review.
 
 The running formal object is a partial map of selection-site outcomes reached
-from requested roots through strict operands and input-selected case edges. A
+from requested roots through all declared operands of ordinary nodes and
+input-selected case edges. A
 monolithic symbolic value or SMT encoding is a baseline, not the target output.
 
 ## Research questions
 
 - **RQ1:** What common terminology precisely defines selection-observation
   enumeration and distinguishes it from neighboring tasks?
-- **RQ2:** Which established approach families can enumerate, compile, or
+- **RQ2:** Which established approach traditions or routes can enumerate, compile, or
   specialize the required fibers, and what instrumentation do they require?
 - **RQ3:** Which correctness, representation, and complexity guarantees does
-  each family provide under its stated assumptions?
+  each route provide under its stated assumptions?
 - **RQ4:** Where do the approaches coincide, where do they compute a refinement
   or quotient of the target observer, and where do they address only an
   adjacent reduction problem?
 
 ## Coverage themes
 
-The comparison is organized around six principal solution families:
+The comparison is organized around six recurring, non-exclusive routes:
 
 1. guarded symbolic execution;
 2. projected model enumeration;
@@ -155,6 +156,12 @@ query or seed, direction, hit count, screened count, included keys, excluded
 keys, and notes. Every non-audit row references exactly one committed snapshot.
 Approximate counts, unknown result sets, and aggregate seed descriptions belong
 in scratch notes rather than the audited log.
+
+Executed rows and their frozen snapshots are append-only. If later primary
+reading changes a catalog disposition, append an `audit` reconciliation row
+rather than rewriting the executed row. Its notes record `promoted-key:KEY` or
+`superseded-key:KEY`; the current catalog gives the resulting disposition while
+the earlier row preserves the adjudication made at execution time.
 
 ## Novelty discipline
 

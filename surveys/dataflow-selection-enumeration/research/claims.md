@@ -104,7 +104,7 @@ claims that the survey has already shown to be known.
   evaluation, without flattening the graph.
 - **Required results:** formal occurrence naming, graph substitution, shared
   demand, invocation, and finite iteration; equality with flattened semantics;
-  a complexity or reuse advantage over activation-variable projected AllSMT.
+  a complexity or reuse advantage over reachability-and-outcome projected AllSMT.
 - **Key risk:** Naive tree neededness does not lift to shared term graphs, and a
   summary that exposes all internal outcomes may simply be ordinary relational
   encoding.
@@ -115,7 +115,7 @@ claims that the survey has already shown to be known.
   topologically composed affine hybrid components, including infeasibility
   pruning. The graph-specific theorem is equality with flattening under
   requested-root demand and contextual site identity; it has no general
-  compactness or output-delay advantage over flat activation instrumentation.
+  compactness or output-delay advantage over flat reachability-and-outcome instrumentation.
 
 ## H06 — Full-observation blocking takes one satisfiable query per result
 
@@ -129,7 +129,7 @@ claims that the survey has already shown to be known.
   unit-cost model-producing oracle, the invocation count is linear in `K`; this
   is not an OutputP, IncP, polynomial-delay, or wall-clock bound. The
   construction is extensionally equivalent to naive projected AllSMT over
-  complete activation/outcome tuples. Formula size, serialized output,
+  complete reachability-and-outcome tuples. Formula size, serialized output,
   incremental solving cost, and compiled enumeration remain separate.
 
 ## Current survey synthesis claims
@@ -152,13 +152,15 @@ source's claim cannot be mistaken for this survey's synthesis.
   taxonomy itself is a cross-literature synthesis, not a theorem attributed to
   any one source.
 
-### S02 — Three equivalent presentations of selection observation
+### S02 — Equivalent presentations of selection observation
 
 - **Status:** survey synthesis; formal derivation recorded
-- **Statement:** For finite total selective term graphs, the same graph-relative
-  observation is characterized by enabled-edge reachability, generated locally
-  by concolic exact-fiber specialization, and encoded globally by total
-  unobserved-or-outcome activation coordinates.
+- **Statement:** For finite total selective term graphs, enabled-edge
+  reachability determines which site outcomes enter the observation. The sparse
+  outcome map, its totalized unobserved/outcome vector, concolic exact-fiber
+  specialization, and global reachability-and-outcome projection induce the
+  same observer fibers. Reachability alone is strictly coarser when distinct
+  outcomes expose the same operand nodes.
 - **Presentation rule:** Attribute the component constructions to their
   established literatures; present only the cross-literature equivalence as our
   organizing derivation.
@@ -167,8 +169,8 @@ source's claim cannot be mistaken for this survey's synthesis.
 
 - **Status:** survey synthesis; formal derivation recorded
 - **Statement:** A concolically generated local guard is the exact input fiber
-  of one observation, and it is equivalent to fixing the projected activation
-  variables in the global encoding.
+  of one observation, and it is equivalent to fixing the projected totalized
+  outcome coordinates in the global reachability encoding.
 - **Consequence:** Model-and-full-fiber-block and naive projected AllSMT both
   require \(K\) satisfying models plus a final unsatisfiable query. Solver time
   and representation size remain separate.
@@ -185,7 +187,8 @@ source's claim cannot be mistaken for this survey's synthesis.
   arithmetic bound, Ferrez et al. give a pre-Rada ray-shooting central-arrangement
   algorithm with \(O(KQ\,LP(Q,D))\) time and input-polynomial working space,
   and Rada and Černý give a later complete duplicate-free incremental
-  formulation; Deza and Pournin add a rational-bit-model zonotope traversal
+  formulation; Deza and Pournin give a self-contained rational-bit analysis of
+  zonotope traversal
   with output-sized retention but no stronger generic bound, while their White
   Whale successor exploits structured symmetry; Serra et al. enumerate
   feasible ReLU patterns;
@@ -205,8 +208,7 @@ source's claim cannot be mistaken for this survey's synthesis.
   regions; and Drammis et al. analyze parallel layerwise enumeration.
 - **Consequence:** A variable sparse domain is also anticipated by ordinary
   decision-tree paths, and exact neural trees/TADS can prune infeasible or
-  forced activation tests while preserving the output. Exact BNN-to-BDD/SDD or
-  d-DNNF compilation can eliminate hidden activations entirely. Novelty
+  forced activation tests while preserving the output. Novelty
   can rest only on the requested-root-relative typed shared-graph observer and
   a nontrivial event-preserving construction/composition result, not exact
   regime enumeration, guard-plus-residual output, dynamic sparsity, or an
@@ -268,10 +270,9 @@ source's claim cannot be mistaken for this survey's synthesis.
   under sequentiality/stability assumptions.
 - **Prior frontier:** Pingali and Arvind give a compositional reverse-demand
   transformation; Avron and Sasson characterize uniform existence of least
-  legal demanded valuations by stability; Part 2 and Vin et al. develop global
-  and operational demand propagation.
+  legal demanded valuations by stability.
 - **Consequence:** Conditional on a translation proving that the source
-  language's semantic least demand matches our declared strict edge policy,
+  language's semantic least demand matches our declared all-operands policy,
   the remaining quantification is over symbolic inputs: enumerate the range of
   the least computation's selection projection and the exact inverse image of
   each observation. “Demand-sensitive evaluation” is not itself a
@@ -313,8 +314,9 @@ source's claim cannot be mistaken for this survey's synthesis.
   nor the first degeneracy-safe output-sensitive region enumeration. The
   surviving formal package concerns a different object: requested-root enabled
   closure, contextual site identity, preservation of equal-valued observed
-  events, typed residuals, and exact positive inverse fibers over a shared
-  pure dataflow graph.
+  events, typed residuals, and exact observed-outcome fibers over a shared
+  pure dataflow graph. Parametric optimizer-basis regions use a different
+  observer unless an explicit correspondence is established.
 
 ### S11 — Exact choice-record reduction is established for concurrent schedules
 
@@ -323,8 +325,8 @@ source's claim cannot be mistaken for this survey's synthesis.
   schedule-bearing symbolic paths while omitting interleavings that are
   equivalent for a declared reachability or temporal-property observer.
 - **Prior frontier:** Holzmann, Godefroid, and Pirottin preserve full state
-  coverage; later SAT/SMT and BDD methods give property-preservation or
-  optimality results; SymPaths proves correctness and completeness of a
+  coverage; Alur et al. preserve local-property verification under a symbolic
+  partial-order reduction; SymPaths proves correctness and completeness of a
   schedule-recorded symbolic semantics relative to concrete executions.
 - **Consequence:** A partial map of observed choices paired with a symbolic
   residual is not unique to dataflow selection. The surviving distinction is
@@ -337,13 +339,12 @@ source's claim cannot be mistaken for this survey's synthesis.
 - **Statement:** Petri-net observers can characterize exactly the current
   markings consistent with an observed transition-label word, compute the set
   of minimum-token initial markings consistent with that word, and incorporate
-  time or unobservable-transition reductions.
+  time and unobservable events.
 - **Prior frontier:** Giua, Júlvez, and Seatzu give a fixed-structure linear
   representation of the compatible current-marking set; Corona et al. make the
   nondeterministic-label case explicit; Li and Hadjicostis compute a complete
-  optimization-restricted initial-marking set; Ghazel, Toguyéni, and Yim use a
-  timed class-graph observer; hierarchical basis graphs extend marking
-  estimation under unobservable transitions at the primary-abstract level.
+  optimization-restricted initial-marking set; and Ghazel, Toguyéni, and Yim
+  use a timed class-graph observer with unobservable events.
 - **Consequence:** Exact inverse consistency under a partial event observer is
   established. This manuscript's narrower object partitions initial caller
   inputs of a pure function and attaches a typed residual value.
@@ -354,9 +355,7 @@ source's claim cannot be mistaken for this survey's synthesis.
 - **Statement:** A smaller exact semantic quotient can cost more to construct
   than a direct analysis of the unreduced symbolic representation.
 - **Prior frontier:** Fisler and Vardi show theoretically and empirically that
-  bisimulation minimization often fails to improve symbolic invariant checking;
-  later work improves symbolic refinement and quotient construction without
-  removing the workload dependence.
+  bisimulation minimization often fails to improve symbolic invariant checking.
 - **Consequence:** The formal observer-fiber construction cannot imply a
   practical speedup. Any implementation claim requires measurements against
   projected encodings, decision diagrams, and specialized quotients.
@@ -384,11 +383,12 @@ source's claim cannot be mistaken for this survey's synthesis.
 - **Status:** organizing survey synthesis
 - **Statement:** A solver or traversal discovers nonempty fibers of a declared
   observer, while a flat guard list, tree, decision diagram, compiled circuit,
-  or polyhedral complex represents those fibers. Observer equivalence requires
-  equality of input kernels after explicit instrumentation; similar output
-  syntax does not establish that equality.
+  or polyhedral complex represents those fibers. Equality of input kernels
+  after explicit instrumentation gives the same fibers; matching labeled
+  records additionally requires an explicit bijection between feasible images.
+  Similar output syntax establishes neither condition.
 - **Consequence:** The main survey classifies prior work as a direct
-  presentation, strict specialization, or adjacent comparator before
+  presentation, restricted specialization, or adjacent comparator before
   transferring correctness or complexity results. This is the paper's
   organizing terminology, not a priority claim for observer kernels,
   enumeration algorithms, or the individual representations.

@@ -29,9 +29,9 @@ Our total observer is
 
 \[
   \overline\Omega_{G,R}:X\to
-  \prod_{q\in Q}(\{\bot_q\}\cup\Omega_q),
+  \prod_{q\in Q}(\{\mathsf{unobs}_q\}\cup\Omega_q),
 
-where coordinate $q$ is $\bot_q$ precisely when $q$ is outside the
+where coordinate $q$ is $\mathsf{unobs}_q$ precisely when $q$ is outside the
 input-relative enabled closure of requested roots $R$. The sparse partial map
 $\Omega_{G,R}$ and this total vector are bijective presentations of the same
 finite observation.
@@ -67,24 +67,26 @@ demand several cases, and contextual call identities.
 The fourth row is therefore best understood as a specialized compilation and
 enumeration strategy for a standard observer quotient.
 
-## Remaining research hypothesis
+## Framework proof obligations and survey value
 
-A defensible original theorem package would need more than equivalence-class
-existence:
+The survey's formal synthesis establishes more than equivalence-class
+existence while making no novelty claim for the component machinery:
 
-1. a graph semantics proving enabled closure, selective logging, and totalized
-   ghost instrumentation equivalent;
-2. exact-local-guard and residual-correctness theorems;
-3. a structure-directed enumerator that produces one record per observation
-   without pre-enumerating the full Boolean alphabet;
-4. a precise comparison with projected AllSMT and IECP showing what work or
-   representation is avoided; and
-5. a lower/upper-bound analysis that accounts for solver cost, guard size,
-   residual DAG size, duplicate suppression, and serialized output.
+1. enabled closure determines which sites contribute outcomes, while selective
+   logging and totalized reachability-and-outcome coordinates represent the
+   same sparse observation;
+2. the observed-outcome guard and residual-correctness theorems state the full
+   local record contract;
+3. local full-fiber blocking and global projection enumerate the same complete
+   observation image, with residualization charged separately;
+4. comparison with projected AllSMT and IECP exposes which observer and output
+   representation each method preserves; and
+5. the complexity analysis charges solver cost, guard size, residual DAG size,
+   duplicate suppression, and serialized output.
 
-Without a nontrivial advantage in item 4 or 5, the work is a valuable semantic
-reconciliation or survey result, but not yet a PLDI-level algorithmic
-contribution.
+These are maintained transfer conditions for the survey framework. They show
+why the approaches are comparable without implying a new generic enumeration
+algorithm or an automatic performance advantage.
 
 ## Terminology
 
@@ -92,4 +94,3 @@ Use **selection observation**, **observed site**, **observation fiber**, and
 **observer-induced partition**. The neighboring literature supports
 *equivalence class partitioning*; it does not support *active selection* as a
 term of art.
-

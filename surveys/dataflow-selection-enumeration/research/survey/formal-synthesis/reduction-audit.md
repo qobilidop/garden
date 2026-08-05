@@ -38,20 +38,21 @@ it supplies no inherited theorem until a semantics-preserving elaboration is
 proved. Subject to that proof, selection observations are projections of
 feasible fingerprints rather than a new kind of search object.
 
-The strongest presently defensible formal target is a correspondence theorem:
-enabled-edge reachability, guarded pull-tab fingerprints, selective ghost
-logging, concolic local guards, and the activation-variable encoding compute
-the same graph-relative observer. The graph-specific proof must handle
-sharing, contextual identity, nested selectors, multi-case demand, and
-non-observation. This is useful synthesis, but the hard-nosed assessment is that it
-is a short semantic reconciliation, not yet a PLDI-level original theorem.
+The survey's formal transfer criterion is a correspondence theorem:
+enabled-edge reachability selects the observed sites, while guarded pull-tab
+fingerprints, selective outcome logging, concolic local guards, and totalized
+reachability-and-outcome coordinates compute the same graph-relative observer.
+The graph-specific proof handles sharing, contextual identity, nested
+selectors, multi-case demand, and non-observation. This is useful semantic
+reconciliation and is presented as survey synthesis, not as a new generic
+enumeration theorem.
 
 ## Audit model and criterion
 
-Fix a selective term graph \(G\), requested roots \(R\), and caller predicate
+Fix a selective term graph \(G\), requested roots \(R\), and caller-domain predicate
 \(A\). For input \(x\), write
 
-- \(e_v(x)\) for the eager symbolic value of node \(v\);
+- \(e_v(x)\) for the whole-graph symbolic value of node \(v\);
 - \(a_v(x,R)\) for membership of \(v\) in the enabled closure;
 - \(p_{q,\omega}(x)\) for the predicate that site \(q\) has outcome
   \(\omega\); and
@@ -163,8 +164,8 @@ guarded input regions versus nondeterministic resolutions.
 ### Candidate guarded-choice meta-encoding
 
 The following translation is a proof obligation, not a theorem inherited from
-the functional-logic sources. Its elaboration must preserve strict ordinary
-operators, selective case edges, requested roots, DAG sharing, contextual
+the functional-logic sources. Its elaboration must preserve the all-operands
+observation policy at ordinary operators, selective case edges, requested roots, DAG sharing, contextual
 occurrence identity, deterministic guards, and residual symbolic values.
 
 Translate ordinary graph nodes to deterministic shared thunks. Translate a
@@ -192,7 +193,7 @@ a binary choice tree with auxiliary identifiers and then projected back to
 one \(q\mapsto\omega\) observation, or the runtime can be generalized to an
 \(m\)-way choice carrying one identifier. The first lowering shows that the
 encoding is routine, but it also means an unmodified binary fingerprint is not
-literally the same map as \(T_G\), especially for one-hot masks.
+literally the same map as \(T_G\), especially for multi-case masks.
 
 For symbolic inputs, each task must also carry its accumulated
 `assume` constraints. Free-variable generators or narrowing choices used to
@@ -333,14 +334,14 @@ finite output
 
 \[
 \overline T_G(x,R)
-  \in\prod_{q\in Q}(\{\bot_q\}\cup\Omega_q).
+  \in\prod_{q\in Q}(\{\mathsf{unobs}_q\}\cup\Omega_q).
 \]
 
 Then two inputs are IECP-equivalent exactly when their totalized selection
 observations agree. This is an extensional subsumption of the desired
 partition. It is not immediately an efficient implementation reduction:
 providing one transition class or output code per feasible observation may
-presuppose enumeration. Using individual activity/outcome predicates instead
+presuppose enumeration. Using individual reachability/outcome predicates instead
 produces a Boolean-atom refinement that must be projected and merged.
 
 The later SFSM property-testing construction makes this alternative explicit.
@@ -352,15 +353,15 @@ For a fixed finite formula alphabet \(\Sigma\), it keeps every satisfiable atom
 \qquad P\subseteq\Sigma.
 \]
 
-Choosing site-activity and outcome formulas makes each atom determine
+Choosing site-reachability and outcome formulas makes each atom determine
 \(\overline T_G\). The construction is disjoint and exhaustive by definition;
 its worst-case class count is \(2^{|\Sigma|}\). Projecting away redundant truth
 coordinates gives the desired fibers, exactly as projected AllSMT does.
 
 These results eliminate novelty for exact finite-observer partitioning and
 satisfiable truth-pattern enumeration. The graph-local theorem can still show
-that observed positive outcome predicates alone characterize a full fiber,
-without explicitly conjoining every negative inactive-site coordinate. A
+that observed-outcome predicates alone characterize a full fiber,
+without explicitly conjoining every negative unobserved-site coordinate. A
 structure-directed enumerator can still avoid materializing all atoms. Those
 are representation and compilation results relative to an established
 quotient, not a new enumeration object.
@@ -398,7 +399,7 @@ finite-domain projected variable per site:
 \[
 z_q=
 \begin{cases}
-\bot_q & \neg a_q,\\
+\mathsf{unobs}_q & \neg a_q,\\
 \operatorname{encode}(\omega) & a_q\land p_{q,\omega}.
 \end{cases}
 \]
@@ -434,7 +435,7 @@ A(x)\land
 \bigwedge_{q\in\operatorname{dom}(\tau)}p_{q,\tau(q)}(x).
 \]
 
-Showing \(G_\tau\leftrightarrow\Gamma_\tau\) is the exact-local-guard
+Showing \(G_\tau\leftrightarrow\Gamma_\tau\) is the exact observed-outcome guard
 theorem. It is not supplied by AllSMT. It uses the special structural fact that
 every observed outcome determines the next enabled case edges, so explicit
 negative literals for unobserved sites are redundant. The proof is a short
@@ -448,8 +449,10 @@ Blocking a complete projected assignment asserts
 \neg(Z=\overline\tau).
 \]
 
-Substituting the deterministic graph definition of \(Z\) makes this exactly
-\(\neg G_\tau\), hence \(\neg\Gamma_\tau\). Model-and-full-fiber-block is
+Under the caller-domain predicate \(A\) and the deterministic graph definitions,
+substituting \(Z\) makes this equivalent to \(\neg G_\tau\), hence to
+\(\neg\Gamma_\tau\) on the solver's current domain. The equivalence is not a
+global identity outside \(A\). Model-and-full-fiber-block is
 therefore lazy projected AllSMT with the projected-assignment blocker already
 specialized to input variables. Both make (K) successful model-producing
 calls and one final unsatisfiable call in the naive blocking scheme.
@@ -482,7 +485,7 @@ Expose the total ghost vector as an ordinary symbolic output:
 An exact output-directed symbolic executor can now use all ghost coordinates
 as its slicing criterion or value observer. Equal ordinary outputs reached
 through different observed selections no longer merge, because their ghost
-vectors differ. An unobserved nested selection has value \(\bot_q\), rather than
+vectors differ. An unobserved nested selection has value \(\mathsf{unobs}_q\), rather than
 being silently projected away as a logical don't-care.
 
 Multi-path symbolic execution with guarded value summaries can represent the
@@ -570,10 +573,11 @@ The logical dependency is:
 
 1. total deterministic DAG semantics gives unique (e_v) and outcomes;
 2. outcome-determined case demand gives a unique enabled closure;
-3. the enabled-closure induction proves both ghost-log and reachability-vector
-   correspondence;
+3. the enabled-closure induction proves separately that
+   \(a_v\leftrightarrow v\in D_G(x,R)\) and
+   \(Z=\overline T_G(x,R)\);
 4. the same induction proves that observed outcome literals imply all unobserved
-   coordinates, yielding the exact-local-guard theorem;
+   coordinates, yielding the exact observed-outcome guard theorem;
 5. exact symbolic primitives plus that local theorem give residual correctness;
 6. inverse-image partitioning plus exact blockers gives enumeration coverage,
    uniqueness, and the (K+1) call count; and
@@ -617,9 +621,9 @@ flattened contextual graph. Reusing the callee's bare site identifier merges
 them. Dynamic MPT identifiers, static graph identifiers, and summary-local
 identifiers coincide only after an explicit occurrence-naming theorem.
 
-### Binary fingerprints do not preserve one-hot site arity
+### Binary fingerprints do not preserve mask-valued site arity
 
-A width-(w) one-hot site can expose an arbitrary enabled-case mask as one
+A width-(w) mask-valued site can expose an arbitrary enabled-case mask as one
 outcome. A binary MPT lowering uses several choice decisions for this one site.
 Bounds in terms of fingerprint length or binary choices do not transfer to the
 site-level parameter (L) without charging outcome encoding size and
@@ -644,21 +648,21 @@ its own proof.
 
 | Proposed result | Classification | Adversarial assessment |
 |---|---|---|
-| Unique eager values and outcomes | elementary | Topological evaluation of a total deterministic DAG. |
+| Unique whole-graph values and outcomes | elementary | Topological evaluation of a total deterministic DAG. |
 | Unique finite selection observation and product bound | elementary | Finite reachability plus counting totalized coordinates. |
 | Partial-map/`unobserved`-vector equivalence | elementary | Coordinatewise encoding for a fixed site set. |
 | Root monotonicity and exact sharing union | elementary | Reachability from a union of roots; not a new sharing theory. |
 | Schedule invariance under exact enabled-closure traversal | elementary | The conclusion is built into the traversal premise. Pull-tabbing handles a harder but different rewrite setting. |
 | Erasure to ordinary value semantics | elementary | Structural induction, assuming totality and selected combiners. |
 | Fiber partition | elementary | Inverse images of a total function. |
-| Exact-local-guard theorem | requires a new proof | Not inherited from AllSMT or MPT. The enabled-closure induction is graph-specific but short. |
+| Exact observed-outcome guard theorem | requires a new proof | Not inherited from AllSMT or MPT. The enabled-closure induction is graph-specific but short. |
 | Conflict-frontier theorem | requires a new proof | Distinct observations must disagree at a commonly observed site; this follows by a short lockstep reachability argument and is stronger than arbitrary function fibers. |
-| Ghost/selective-log equals enabled-edge observation | requires a new proof | Generic selective interpretation is inherited; equality for shared contextual graph nodes is the new instantiation lemma. |
-| Reachability vector equals totalized observation | requires a new proof | A direct induction over the acyclic value/reachability circuit. |
+| Selective outcome log equals the sparse observation | requires a new proof | Generic selective interpretation is inherited; equality for shared contextual graph nodes is the new instantiation lemma. |
+| Reachability-and-outcome coordinates equal the totalized observation | requires a new proof | A direct induction over the acyclic value/reachability circuit. Reachability alone supplies only the support. |
 | Guarded functional-logic fingerprint projects to the observation | requires a new proof | The demand-populated partial map and complete result search are inherited from Braßel and Huch 2007; later fingerprint and pull-tab results do not cover deterministic guards, projection, or stable contextual naming. |
-| Symbolic generator and residual correctness | requires a new proof | Standard symbolic-evaluation induction, with exact-local-guard as the only unusual dependency. |
+| Symbolic generator and residual correctness | requires a new proof | Standard symbolic-evaluation induction, with the exact observed-outcome guard as the only unusual dependency. |
 | Exactly-once coverage and (K+1) oracle calls | elementary / inherited | Elementary full-fiber blocking and the naive projected-AllSMT baseline. Not an enumeration-class result. |
-| Projected enumeration completeness | inherited | Standard AllSMT or projected model enumeration once the activation encoding is proved faithful. |
+| Projected enumeration completeness | inherited | Standard AllSMT or projected model enumeration once the reachability-and-outcome encoding is proved faithful. |
 | Disjoint guarded residual representation | inherited after instrumentation | Value-summary and symbolic-merging frameworks already provide it; grouping by the declared ghost observer must be enforced. |
 | Exact sequential composition | requires a new graph-specific proof | The graph-substitution, requested-boundary-demand, and contextual-identity instance needs proof. Selective and relational composition are inherited, and Geyer et al. 2010 already instantiate residual substitution, guard conjunction, and infeasibility pruning for affine component systems. |
 | Parallel sharing and finite-iteration laws | elementary | Set union and finite induction once occurrence names are fixed. |
@@ -682,8 +686,9 @@ The current formal material supports the following narrow theorem package:
 
 > For finite total selective term graphs with stable contextual site identity,
 > outcome-determined case demand, and exact symbolic primitives, enabled-edge
-> observation, selective reader/writer logging, guarded demanded fingerprints,
-> concolic local guards, and activation-variable projection commute. In
+> reachability supplies observer support, while selective outcome logging,
+> guarded demanded fingerprints, concolic observed-outcome guards, and
+> reachability indicators plus projected outcome coordinates commute. In
 > particular, the conjunction of only the observed outcome predicates is the
 > exact inverse image of one totalized ghost observation, and graph-aware
 > demand-parametric composition agrees with flattening.
@@ -704,10 +709,10 @@ affine sign tests demonstrates an established special case, not the sparse-site
 separator. Motivating and separating examples must include a nested selection
 whose unselected case contains another site.
 
-An original research claim would need an additional separation that survives
-these reductions. Plausible targets are a non-flattening summary
+Further theoretical progress would need an additional separation that survives
+these reductions. Plausible open directions are a non-flattening summary
 representation with a proved asymptotic reuse advantage over the shared global
-activation encoding, a nontrivial observer theorem under an independently
+reachability-and-outcome encoding, a nontrivial observer theorem under an independently
 motivated context language, or an extension to partial/cyclic graphs whose
 fixpoint and enumeration results are not immediate. None is currently
 established. A generic canonical or algorithm-independent partition is not a
@@ -728,8 +733,8 @@ their minimum-norm pQP selection.
 - Do not claim that full-fiber blocking improves the (K+1) model-producing
   invocation count over naive complete projected AllSMT.
 - Do not identify structural non-observation with omitted literals in a short cube.
-- Do not call an exact positive fiber guard literal-minimal; observed-site
-  predicates can be redundant under the caller constraint and one another.
+- Do not call an exact observed-outcome guard literal-minimal; observed-site
+  predicates can be redundant under the caller-domain predicate and one another.
 - Do not call the observation canonical under value-preserving graph rewrites.
 - Do not claim priority for unique, canonical, or algorithm-independent
   parametric partitions, or for degeneracy-safe output-sensitive pLP/pQP/pLCP

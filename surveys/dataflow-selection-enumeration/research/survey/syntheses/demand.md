@@ -17,7 +17,8 @@ different notions occur in the closest work.
 
 The formal synthesis therefore avoids using bare *demand* as its primary noun.
 For input `x` and requested roots `R`, it defines the **enabled closure**
-`D_G(x,R)` by graph reachability through all strict operands and only the cases
+`D_G(x,R)` by graph reachability through all declared operands of ordinary
+nodes and only the cases
 selected by `x`. The **selection observation** is the partial site-outcome map
 whose domain is the selection sites in that closure.
 

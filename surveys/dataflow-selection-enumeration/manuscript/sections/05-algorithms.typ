@@ -1,19 +1,24 @@
 #import "../style.typ": definition, theorem, proposition, proof
 
-= Two general presentations and their equivalence <sec-algorithms>
+= Two observer-enumeration presentations and their equivalence <sec-algorithms>
 
-The survey identified two general routes to the exact record contract. A local
+The survey identified two general routes to enumerating the observer image. A local
 presentation discovers one complete fiber from a model, constructs its
-residual, and blocks the fiber. A global presentation eagerly instruments the
-whole graph and projects a conventional model enumerator onto totalized
+residual, and blocks the fiber. A global presentation constructs a whole-graph
+encoding and projects a conventional model enumerator onto totalized
 observation coordinates. This section states both in the unified terminology
 and proves that they enumerate the same observer. The constructions are
 comparison baselines, not claims of new generic enumeration paradigms.
+Projection directly supplies the observation index and, with model production,
+a witness and an exact fiber predicate obtained by fixing the projected tuple.
+It does not by itself construct a residual; satisfying the full record contract
+requires an exact residualization step, such as the demanded symbolic evaluator
+used by the local presentation.
 
 == Symbolic and solver assumptions
 
 Every primitive, classifier outcome, case-membership relation, selected
-combiner, caller predicate $A$, and typed input-domain constraint must have an
+combiner, caller-domain predicate $A$, and typed input-domain constraint must have an
 exact symbolic representation. A model-producing oracle for a formula returns
 `sat(m)`, `unsat`, or `unknown`. Only `unsat` certifies exhaustion; `unknown`
 produces an explicit incomplete result. We do not assume that the oracle runs
@@ -44,8 +49,8 @@ symbolic residual $e_v$:
 4. A memo hit reuses the pair and records no duplicate event.
 
 Only selection outcomes are specialized to $m$. Replacing an ordinary symbolic
-value by its sampled concrete value would make the guard or residual too
-strong. Write
+value by its sampled concrete value is unsound: it typically weakens the
+outcome guard while overspecializing the residual. Write
 
 $
   op("Gen")(G,m,R) = (T_m, g_m, r_m),
@@ -68,17 +73,21 @@ guard is $A and g_m$.
 ]
 
 #proof[
-  Induct over demanded evaluation while carrying a prefix guard
-  $g^("pre")$. The strengthened invariant says that $e_v$ evaluates to $c_v$
-  at $m$ and, for every $x models A and g^("pre")$, evaluates to the eager
-  value of $v$ at $x$. Ordinary primitives preserve the invariant by exactness.
-  At a selection, the selector residual may itself contain selections already
-  specialized to $m$, but the induction hypothesis makes it equal to the eager
-  selector value throughout the prefix guard. The new predicate
-  $chi_(q,omega)(e_(s_q))$ is therefore equivalent there to the global outcome
-  predicate $p_(q,omega)(x)$ and selects the same case roots. The complete
+  View demanded evaluation as a state transformer. A call entered with guard
+  $g_("in")$ returns a guard $g_("out")$ such that $g_("out")$ implies $g_("in")$,
+  $m models g_("out")$, the returned concrete value is $op("val")_m(v)$, the
+  residual evaluates to that value at $m$, and for every
+  $x models A and g_("out")$ the returned
+  residual $e_v$ evaluates to the total graph value of $v$ at $x$. Guards grow
+  monotonically; consequently, a memoized residual remains valid whenever it
+  is reused because the current guard implies its creation guard. Ordinary
+  primitives preserve this invariant by exactness. At a selection, first
+  evaluating the selector establishes its own post-guard. The new predicate
+  $chi_(q,omega)(e_(s_q))$ is therefore equivalent under the strengthened guard
+  to the global outcome predicate $p_(q,omega)(x)$ and selects the same case
+  roots. The complete
   guard $A and g_m$ is therefore semantically equivalent to
-  $Gamma_(T_m)$ from the exact-local-guard theorem, while the residual invariant
+  $Gamma_(T_m)$ from the exact observed-outcome guard theorem, while the residual invariant
   gives value correctness. Every chosen outcome predicate holds at $m$, so the
   guard is nonempty.
 ]
@@ -98,7 +107,7 @@ Initialize the uncovered formula $U_0=A$ and repeat:
 Previous blockers are not folded into an emitted guard. Every query already
 assumes $A$, so the incremental blocker need only negate $g_j$.
 
-#theorem("complete nonredundant enumeration")[
+#theorem("complete duplicate-free enumeration")[
   Let $K = abs(cal(T)_(G,A,R))$. If the model-producing oracle decides every
   query, full-fiber blocking performs exactly $K$ satisfiable invocations and
   one final unsatisfiable invocation. It emits every feasible observation once,
@@ -121,14 +130,14 @@ exhaustion query must all be charged separately.
 == Global reachability-and-outcome encoding
 
 The alternative presentation symbolically evaluates every node, including
-unobserved case cones. Let $e_v(x)$ be the exact eager symbolic value of $v$.
+unobserved case cones. Let $e_v(x)$ be the exact whole-graph symbolic value of $v$.
 For each case position define the direct predicate
 
 $
   eta_(q,j)(d) <=> j in C_q(kappa_q(d)).
 $
 
-Introduce one Boolean activity variable $a_v$ per node. It is true exactly when
+Introduce one Boolean reachability indicator $a_v$ per node. It is true exactly when
 $v$ is reachable from a requested root through an enabled consumer edge. The
 acyclic defining equations are
 
@@ -141,21 +150,21 @@ $
 $
 
 Multiple consumers contribute by disjunction, and the biconditional prevents
-spurious disconnected activity. Acyclicity gives a unique valuation of the
-activity circuit for every input.
+spurious disconnected reachability. Acyclicity gives a unique valuation of the
+reachability circuit for every input.
 
 For each selection site introduce a projected coordinate ranging directly over
-$Omega_q union {bot_q}$:
+$Omega_q union {op("unobs")_q}$:
 
 $
   z_q = cases(
     kappa_q(e_(s_q)) & "if " a_q,
-    bot_q & "otherwise,"
+    op("unobs")_q & "otherwise,"
   )
 $
 
 Let $Phi_(G,A,R)(x,a,Z)$ conjoin the exact typed input-domain encoding,
-$A(x)$, every displayed activity biconditional, and every displayed coordinate
+$A(x)$, every displayed reachability biconditional, and every displayed coordinate
 definition. Project $Phi_(G,A,R)$ onto $Z=(z_q)_(q in Q)$, so its projected
 image is
 
@@ -165,12 +174,12 @@ $
 
 An exact projected enumerator or finite decision-diagram compiler can then
 enumerate the feasible totalized observations. A Boolean-backed implementation
-may injectively encode the entire finite domain $Omega_q union {bot_q}$ into
+may injectively encode the entire finite domain $Omega_q union {op("unobs")_q}$ into
 designated projected atoms; an SMT enumerator with appropriate finite-domain
 projection may instead retain $z_q$ as a theory term.
 
 #theorem("projection equivalence")[
-  For every caller-domain input $x in cal(X)_A$, the activity equations have
+  For every caller-domain input $x in cal(X)_A$, the reachability equations have
   the unique solution
   $a_v <=> v in D_G(x,R)$, and $Z=overline(T)_G(x,R)$. Hence projected
   models of $Phi_(G,A,R)$ over $Z$ are in bijection with feasible sparse
@@ -183,13 +192,14 @@ projection may instead retain $z_q$ as a theory term.
 
 #proof[
   Induct backward over the acyclic consumer-to-operand graph. Requested roots
-  establish the base activity. An ordinary consumer enables every operand; a
+  establish the base reachability. An ordinary consumer enables every operand; a
   selection enables its selector and exactly the cases selected by the direct
   $eta$ predicates. The biconditionals therefore compute precisely the least
   enabled closure, including disjunctive sharing from multiple consumers.
   Substitution in the definition of $z_q$ gives the totalized partial map.
   Therefore the existential formula holds exactly when $A(x)$ holds and the
-  induced totalized observation equals $overline(tau)$; the exact-local-guard
+  induced totalized observation equals $overline(tau)$; the exact
+  observed-outcome guard
   theorem gives the final equivalence.
 ]
 
@@ -204,7 +214,7 @@ observations.
 
 Local generation avoids constructing unobserved cones for one record and
 returns a sparse observation, guard, and residual directly. The global encoding
-constructs one shared eager value/activity circuit and reuses it across all
+constructs one shared whole-graph value/reachability circuit and reuses it across all
 records; it can exploit mature projected-enumeration algorithms that avoid a
 growing sequence of ordinary blocking clauses. Neither dominates in the
 general model. Classifier and direct case-membership circuits can themselves be
@@ -213,5 +223,6 @@ large residual structures unless DAG sharing is explicit.
 
 The equivalence also fixes attribution. Projected enumeration supplies the
 generic enumerator; symbolic execution supplies residual construction; the
-graph-specific obligation is proving that enabled reachability, totalized
-activity coordinates, and the positive local guard denote the same observer.
+graph-specific obligation is proving that enabled reachability selects the
+recorded sites and that the totalized unobserved/outcome coordinates and the
+observed-outcome guard induce the same observer fibers.

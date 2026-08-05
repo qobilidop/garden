@@ -24,17 +24,17 @@ machinery:
    skipped effects. Exact site logging is a reader-plus-idempotent-writer
    interpretation.
 4. AllSMT, projected disjoint enumeration, and theory decision diagrams
-   enumerate the explicit inactive-or-outcome variables introduced by a
-   polynomial activation encoding.
+   enumerate explicit unobserved-or-outcome coordinates introduced by a
+   polynomial reachability-and-outcome encoding.
 5. The exact guard for one observation is the fiber of a deterministic
    observation function. Full-fiber blocking and projected AllSMT enumerate the
    same fibers and share the naive \(K+1\) model-query bound.
 6. Demand-parametric component composition is exact, but it is ordinary
    selective/relational composition and gives no compactness or delay guarantee.
 
-No single paper found to date packages the precise API of contextual active
-selection maps, exact guards, residual values, and witnesses. That packaging
-difference is insufficient for a PLDI-level theory claim and does not defeat
+No single paper found to date packages the precise API of contextual selection
+observations, exact guards, residual values, and witnesses. That packaging
+difference is insufficient for an original-theory route and does not defeat
 the straightforward reductions.
 
 ## Decision
@@ -44,18 +44,17 @@ symbolic-execution paper.
 
 The survey's technical synthesis will:
 
-- distinguish structural inactivity, existential projection, logical
+- distinguish structural non-observation, existential projection, logical
   don't-care, semantic merging, and abstract merging;
 - relate path semantics, guarded value summaries, hardware functional-space
   partitions, term-graph choices, selective computations, projected
   enumeration, and decision diagrams;
 - formalize selection observation as one common instance;
 - prove the equivalence between exact observation fibers, concolic fiber
-  generation, and activation-variable projected enumeration;
+  generation, and reachability-and-outcome projected enumeration;
 - state exact composition and sharing laws and their scope boundaries;
 - give counterexamples to overbroad terminology and complexity claims; and
-- use XLS IR only as a later case study, not as the source of the general
-  theory.
+- keep the theory independent of any particular intermediate representation.
 
 The intended stretch outlet is ACM Computing Surveys. That target requires a
 substantially more reproducible and comprehensive literature method than the

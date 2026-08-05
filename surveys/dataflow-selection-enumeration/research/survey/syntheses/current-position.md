@@ -10,7 +10,7 @@ residual, and witness per nonempty observer fiber.
 
 The paper does not survey symbolic execution, dataflow, or model enumeration in
 general. A work belongs in the main comparison only when it is a direct
-presentation of this contract, a strict specialization with stronger
+presentation of this contract, a restricted specialization with stronger
 assumptions, or an adjacent comparator needed to establish a boundary.
 
 ## Unified comparison framework
@@ -22,20 +22,21 @@ Every approach is described using three separate choices:
 3. the **representation**, which stores guards, residuals, witnesses, and
    shared structure.
 
-Observer refinement is kernel inclusion. Sparse and totalized selection maps
+Observer refinement is kernel inclusion, equivalently factorization through
+the finer observer's feasible image. Sparse and totalized selection maps
 are isomorphic presentations of one observer. Coordinate projection,
-equal-behavior coalescing, path refinement, and property-relative pruning may
+equal-behavior coalescing, recording full paths, and property-relative pruning may
 instead produce coarser, finer, or incomparable partitions.
 
-## Principal solution families
+## Recurring solution routes
 
-| Family | Relationship to the target |
+| Route | Relationship to the target |
 |---|---|
 | Guarded symbolic execution | Direct after requested-root demand, contextual event logging, and full-fiber grouping |
-| Projected model enumeration | Direct after inactive-or-outcome activity instrumentation |
+| Projected model enumeration | Direct for observation indexing after unobserved-or-outcome instrumentation; residuals require a separate exact step |
 | Decision structures | Direct when compiling the totalized observer rather than only the output function |
 | Demand-guided search | Direct only after its demand judgment and record contract are proved equivalent |
-| Geometric and parametric enumeration | Strict all-sites-observed affine specialization with stronger output-sensitive results |
+| Geometric and parametric enumeration | Dense strict-sign cells are a restricted direct specialization on boundary-free whole-cell domains; optimizer critical regions generally use a different observer |
 | Compositional guarded summaries | Exact representation under requested-output demand, contextual identity, and explicit interface support |
 
 Partial-order reduction, Petri-net unfoldings, observer-guided state reduction,
@@ -47,12 +48,14 @@ residuals.
 
 - The selection-observation formulation is not a new generic enumeration
   paradigm.
-- Enabled reachability, sparse event maps, positive local guards, and
-  totalized projected coordinates are equivalent presentations of the target
-  observer under the paper's finite total graph assumptions.
+- Enabled reachability determines which sites contribute outcomes. Sparse event
+  maps, observed-outcome guards, and totalized reachability-and-outcome
+  coordinates are equivalent presentations of the target observer under the
+  paper's finite total graph assumptions; the closure alone is coarser.
 - A local model-and-full-fiber-block generator and a global projected encoding
-  have the same naive complete-observation image, but not the same runtime,
-  memory use, or output representation.
+  have the same naive complete-observation image, but projection alone does not
+  build a fiber-wide residual and the routes need not share runtime, memory use,
+  or output representation.
 - Exact composition with flattening does not imply compact summaries or reuse.
 - Stronger complexity results belong to restricted geometric, parametric, or
   precompiled representations and do not transfer automatically.
@@ -60,7 +63,7 @@ residuals.
 ## Maintenance implication
 
 A new work changes the paper when it provides a more direct reduction, a new
-solution family, a stronger guarantee for the same observer, a broader exact
+solution route, a stronger guarantee for the same observer, a broader exact
 program model, or a representation result that changes the comparison. Such a
 finding updates the source note, affected thematic synthesis, claim ledger,
 evidence matrix, and manuscript; adding a catalog row alone does not complete

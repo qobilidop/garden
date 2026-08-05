@@ -12,14 +12,15 @@ Assumptions:
 3. Graph sharing is semantic: one node identity may have several consumers.
 4. Site identities are fixed relative to the graph. Calls and finite iteration
    use context-qualified occurrences.
-5. The caller constraint is interpreted in a logic for which the enumeration
-   algorithm has a sound model-producing decision procedure. \`unknown\` is not
-   silently treated as infeasible.
+5. The caller-domain predicate is interpreted in a logic for which the enumeration
+   algorithm has a sound model-producing oracle. Completeness is conditional
+   on decisive answers; \`unknown\` is not silently treated as infeasible.
 
 Value domains need not be finite for the semantic partition to have finitely
-many observations: the graph and each outcome set are finite. XLS bit vectors
-and finite aggregates are finite domains, which gives stronger termination and
-complexity statements.
+many observations: the graph and each outcome set are finite. Finite bit-vector
+and aggregate domains additionally permit exhaustive concrete validation of
+small instances; they do not by themselves give an efficient symbolic
+enumeration bound.
 
 Partial, nondeterministic, relational, cyclic, stateful, or time-varying graphs
 are outside the base theorem. They require explicit extensions rather than
@@ -30,7 +31,7 @@ informal appeals to purity.
 A selective term graph is
 
 \[
-G=(V,E,I,O,\lambda,Q),
+G=(V,E,I,O,Q,\lambda),
 \]
 
 where \(V\) is a finite node set; \(I,O,Q\subseteq V\) are respectively
@@ -77,9 +78,9 @@ f_v:\mathcal D_{u_1}\times\cdots\times\mathcal D_{u_k}
 \longrightarrow\mathcal D_v.
 \]
 
-Every ordinary operator is strict for the separate result-observation
-judgment: observing \(v\) observes all of its operands. This does not assert a
-particular runtime evaluation order.
+Every ordinary operator follows the all-operands policy for the separate
+observation judgment: observing \(v\) observes all of its operands. This does
+not assert a particular runtime evaluation order.
 
 ## Generalized selection site
 
@@ -110,7 +111,7 @@ This separates *selector outcomes* from raw selector values. Examples:
 - A finite indexed select has one outcome per case plus a default outcome;
   each outcome observes one case root.
 - A priority select has one outcome per winning position plus a default.
-- A one-hot select may use the enabled-case mask as its outcome and observe all
+- A mask-valued select may use the enabled-case mask as its outcome and observe all
   enabled case roots. Its combiner is the typed join specified by the language.
 
 The outcome must contain enough information to determine \(C_q(\omega)\). Two
@@ -134,7 +135,7 @@ changing sites and observations.
 
 ## Caller domain
 
-A caller constraint is a predicate
+A caller-domain predicate is a function
 
 \[
 A:\mathcal X_G\to\mathbb B.

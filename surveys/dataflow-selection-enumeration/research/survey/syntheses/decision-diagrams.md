@@ -36,7 +36,7 @@ terminal value.
 
 ## Exact reduction
 
-For a fixed caller constraint, totalize over the entire encoded input domain:
+For a fixed caller-domain predicate, totalize over the entire encoded input domain:
 
 \[
   \widetilde T_{G,A,R}(x)=

@@ -37,8 +37,9 @@ Evaluation of a demanded node returns \((c_v,e_v)\):
 
 A memo hit reuses the pair and does not duplicate a shared site. The symbolic
 component must not replace an ordinary symbolic value with its value under
-\(m\); only selection outcomes are specialized. Model-specific constant
-propagation would make the guard too strong.
+\(m\); only selection outcomes are specialized. Such concretization is
+unsound: it typically weakens the outcome guard while overspecializing the
+residual.
 
 Write
 
@@ -70,26 +71,24 @@ x\models A\land g_m
 =\operatorname{val}_x|_R.
 \]
 
-*Proof sketch.* Induct over the demanded evaluation with a prefix guard
-\(g^{\mathrm{pre}}\). The strengthened invariant is that \(e_v(m)=c_v\) and,
-for every \(x\models A\land g^{\mathrm{pre}}\), the residual already built for
-\(v\) equals \(\operatorname{val}_x(v)\). At a selection, the selector
-residual \(e_s\) may contain inner selections specialized to \(m\), but the
-induction hypothesis gives
+*Proof sketch.* Treat evaluation as a state transformer. A call entered with
+guard \(g_{\mathrm{in}}\) returns guard \(g_{\mathrm{out}}\) such that
+\(g_{\mathrm{out}}\Rightarrow g_{\mathrm{in}}\),
+\(m\models g_{\mathrm{out}}\), and
 
 \[
-  x\models A\land g^{\mathrm{pre}}
+  x\models A\land g_{\mathrm{out}}
   \Longrightarrow
-  \llbracket e_s\rrbracket_x=\operatorname{val}_x(s_q).
+  \llbracket e_v\rrbracket_x=\operatorname{val}_x(v).
 \]
 
-Consequently, under the prefix guard,
+Guards accumulate monotonically, so a memoized residual remains valid when it
+is reused: the current guard implies its creation guard. At a selection, first
+evaluating the selector establishes its post-guard; under that guard,
 \(\chi_{q,\omega}(e_s)\) is equivalent to the global predicate
 \(p_{q,\omega}(x)\). Adding it preserves the invariant for the selected
-combiner. The final generated guard is therefore equivalent to the positive
-conjunction in the exact-local-guard theorem, which proves fiber exactness and
-residual correctness. The predicate also holds for \(m\), so the invariant is
-not vacuous.
+combiner. The final generated guard is therefore the observed-outcome guard,
+which proves fiber exactness and residual correctness.
 
 The generator's model \(m\) is already a witness for its complete guard.
 
@@ -139,7 +138,7 @@ literal-minimal.
 
 ## Reachability-variable projected-AllSMT baseline
 
-For every node \(v\), construct its eager symbolic value term \(e_v(x)\). For
+For every node \(v\), construct its whole-graph symbolic value term \(e_v(x)\). For
 each case position define a direct membership predicate
 
 \[
@@ -161,7 +160,7 @@ a_v \leftrightarrow{}& [v\in R]\\
 
 Thus multiple consumers contribute by disjunction, while the biconditional
 forbids disconnected or otherwise unreachable nodes from being assigned
-spurious activity. Acyclicity makes the equations a unique definitional
+spurious reachability. Acyclicity makes the equations a unique definitional
 circuit. The direct \(\eta\) circuit should be used for succinct outcome
 languages; extensionally disjoining every outcome can be exponentially larger.
 
@@ -169,13 +168,18 @@ For every selection site introduce a finite-domain observation variable
 
 \[
 z_q=\operatorname{ite}
-(a_q,\operatorname{encode}(\kappa_q(e_{s_q})),\bot_q).
+(a_q,\operatorname{encode}(\kappa_q(e_{s_q})),\mathsf{unobs}_q).
 \]
 
 Project the graph formula onto the vector \(Z=(z_q)\). Standard AllSMT,
 projected enumeration, or decision-diagram compilation then enumerates the
 feasible totalized observations. Internal values and reachability variables are
 unimportant variables.
+
+This projection directly supplies the observation index and, when the engine
+is model-producing, a witness. Fixing a projected tuple gives an exact fiber
+predicate. Projection alone does not construct a fiber-wide residual; the full
+record contract needs a separate exact residualization step.
 
 ## Reduction theorem
 

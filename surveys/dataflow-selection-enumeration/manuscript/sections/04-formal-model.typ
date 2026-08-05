@@ -6,8 +6,8 @@ This section defines the problem independently of any solver or data
 structure. The framework separates an observer, its inverse-image fibers, an
 enumeration mechanism, and an output representation. Its graph model is
 intentionally narrower than a general programming language: it isolates the
-finite pure-graph case for which exhaustive observation enumeration is a
-well-defined finite-output task.
+finite, acyclic, deterministic, total pure-graph case for which exhaustive
+observation enumeration is a well-defined finite-output task.
 
 == Selective term graphs
 
@@ -39,10 +39,15 @@ $
   f_v : cal(D)_(u_1) times dots times cal(D)_(u_k) -> cal(D)_v.
 $
 
-Ordinary nodes are _strict only for the observation judgment_: observing their
+Ordinary nodes follow an _all-operands observation policy_: observing their
 result observes every operand. This is a declared structural dependency policy,
 not an operational evaluation order and not an assertion that $f_v$ depends
 extensionally on every argument.
+
+For readers used to runtime dataflow diagrams, the edge direction here may look
+backward: an edge points from a consumer to one of its operands. This lets
+reachability start at the requested results and walk directly toward everything
+they declare as a dependency.
 
 #definition("generalized selection site")[
   A selection site $q in Q$ consists of a selector operand $s_q$, case-root
@@ -62,13 +67,13 @@ extensionally on every argument.
 The outcome is semantic, not necessarily the raw selector value. It must carry
 enough information to determine both the demanded case set and the applicable
 combiner. An indexed selection may have one outcome per case and one default;
-a priority selection may identify the first enabled case; and a one-hot
+a priority selection may identify the first enabled case; and a mask-valued
 selection may use the complete enabled-case mask as one outcome and demand
 several roots. If an interface intends to distinguish two raw values, they must
 be distinct outcomes even when they choose the same cases.
 
 Because the graph is acyclic and every primitive is total, each input $x$
-induces a unique eager value $op("val")_x(v)$ at every node. At a selection site,
+induces a unique _total graph value_ $op("val")_x(v)$ at every node. At a selection site,
 $omega_x(q) = kappa_q(op("val")_x(s_q))$, and the value is obtained by applying
 $h_(q,omega_x(q))$ to the selected case-root values. Values in unselected case
 cones remain mathematically defined; the observation judgment below determines
@@ -84,7 +89,7 @@ excluding unbounded recursion and loops, which could create an infinite event
 domain.
 
 The observation is relative to a requested root set $R subset.eq O$ and a
-caller predicate $A : cal(X)_G -> BB$. All feasibility and completeness claims
+caller-domain predicate $A : cal(X)_G -> BB$. All feasibility and completeness claims
 range over $cal(X)_A = {x in cal(X)_G | A(x)}$. An open multi-output component
 therefore takes $R$ as an interface parameter; observing all outputs
 unconditionally would expose sites that a caller does not request.
@@ -111,19 +116,21 @@ semantics use related backward relevance but impose different semantic
 conditions; @sec-related compares them.
 
 #definition("selection observation")[
-  The selection observation is the dependent finite partial map $T_G(x,R)$
+  The selection observation is the dependent finite partial map $T_G(x,R)$—a
+  typed dictionary in which key $q$ can store only an outcome from $Omega_q$—
   with
   $
     op("dom")(T_G(x,R)) = Q inter D_G(x,R),
     quad T_G(x,R)(q) = omega_x(q).
   $
-  Its totalized presentation uses one fresh sentinel $bot_q in.not Omega_q$ per
+  Its totalized presentation uses one fresh sentinel
+  $op("unobs")_q in.not Omega_q$ per
   site:
   $
     overline(T)_G(x,R)(q) =
       cases(
         T_G(x,R)(q) & "if " q in D_G(x,R),
-        bot_q & "otherwise."
+        op("unobs")_q & "otherwise."
       )
   $
 ]
@@ -131,7 +138,7 @@ conditions; @sec-related compares them.
 For a fixed graph, the partial-map and totalized-vector presentations are
 isomorphic. The first is the intended sparse record; the second permits direct
 projection onto the finite product
-$product_(q in Q)(Omega_q union {bot_q})$.
+$product_(q in Q)(Omega_q union {op("unobs")_q})$.
 
 == Observers, refinements, and representations
 
@@ -141,11 +148,17 @@ $product_(q in Q)(Omega_q union {bot_q})$.
   $
     op("ker")(B) = {(x,y) in cal(X)_A^2 | B(x)=B(y)}.
   $
-  Observer $B_1$ _refines_ observer $B_2$ when some function $h$ satisfies
-  $B_2(x)=h(B_1(x))$ for every $x$; equivalently,
-  $op("ker")(B_1) subset.eq op("ker")(B_2)$. Thus $B_1$ preserves at least
-  every distinction preserved by $B_2$.
+  Observer $B_1$ _refines_ observer $B_2$ when
+  $op("ker")(B_1) subset.eq op("ker")(B_2)$. Equivalently, there is a unique
+  factor map $h : op("im")(B_1) -> op("im")(B_2)$ such that
+  $B_2(x)=h(B_1(x))$ for every $x$. Thus $B_1$ preserves at least every
+  distinction preserved by $B_2$.
 ]
+
+In plain language, an observer is the function used to sort inputs into
+buckets. A _fiber_ is one bucket. Refinement means that knowing the finer
+bucket is enough to recover the coarser one. A residual is a formula or shared
+expression that computes the requested result for every input in one bucket.
 
 For fixed $G$ and $R$, $T_G(-,R)$ is the _selection observer_. Its sparse and
 totalized presentations have the same kernel and are therefore two
@@ -177,7 +190,7 @@ whether the underlying partition has changed.
 ]
 
 #proof[
-  Eager values and outcomes are unique, and finite reachability has one least
+  Total graph values and outcomes are unique, and finite reachability has one least
   closure. The product independently counts one unobserved sentinel or one of
   the outcomes at each site. Reachability from a union of roots is the union of
   reachability from each root in the same enabled graph; site outcomes are fixed
@@ -186,17 +199,17 @@ whether the underlying partition has changed.
 
 == Least valuation under the declared dependency policy
 
-Extend each value domain with a fresh bottom $bot_v$ and order it flatly,
+Extend each value domain with a fresh undefined value $bot_v$ and order it flatly,
 $bot_v <= d$ for every ordinary value $d$, with distinct ordinary values
 incomparable. Order valuations pointwise. An $x$-consistent partial valuation assigns each node
-either $bot_v$ or its eager value. It is dependency-closed when a defined
+either $bot_v$ or its total graph value. It is dependency-closed when a defined
 ordinary node has all operands defined and a defined selection has its
 selector and every case root required by its concrete outcome defined. This is
 an obligation, not a prohibition: another requested root or shared consumer
 may independently require an unselected case root. The valuation is
 $R$-complete when every requested root is defined.
 
-#proposition("strict-dependency least valuation")[
+#proposition("declared-dependency least valuation")[
   The valuation
   $
     nu^*_(x,R)(v) =
@@ -219,12 +232,13 @@ $R$-complete when every requested root is defined.
   order and uniqueness.
 ]
 
-This proposition is a graph-reachability result for the stated strict policy.
+This proposition is a graph-reachability result for the stated all-operands
+policy at ordinary nodes.
 Equality with a language's semantic least demand requires a separate
 translation showing that each source operator has precisely these predecessor
 obligations.
 
-== Fibers and exact positive guards
+== Fibers and exact observed-outcome guards
 
 Fix $G$, $A$, and $R$. The feasible observation image and the fiber of one
 $tau$ in that image are
@@ -242,19 +256,25 @@ partition is the semantic enumeration contract.
 #definition("exact selection-observation enumeration")[
   An exact solution emits one record
   $(tau, gamma_tau, r_tau, m_tau)$ for every
-  $tau in cal(T)_(G,A,R)$ and no other record, such that for every typed input
-  $x$:
+  $tau in cal(T)_(G,A,R)$ and no other record. Its semantic fields have types
+  $gamma_tau : cal(X)_G -> BB$,
+  $r_tau : cal(X)_G -> product_(o in R) cal(D)_o$, and
+  $m_tau in cal(X)_G$. For every typed input $x$ they satisfy
   $
     gamma_tau(x) <=> A(x) and T_G(x,R)=tau;
   $
-  $m_tau models gamma_tau$; and whenever $gamma_tau(x)$ holds,
+  $gamma_tau(m_tau)$; and whenever $gamma_tau(x)$ holds,
   $
-    op("eval")(r_tau,x)=op("val")_x|_R.
+    r_tau(x)=op("val")_x|_R.
   $
-  The four obligations are respectively exhaustive nonredundant indexing,
+  The four obligations are respectively exhaustive duplicate-free indexing,
   exact fiber representation, a feasibility witness, and residual correctness
   throughout the fiber.
 ]
+
+These are semantic functions. A concrete implementation may encode a guard as
+an SMT formula and a residual as a term DAG, provided evaluation has the stated
+meaning; the contract does not require tabulating either function.
 
 For each site outcome, define
 
@@ -264,19 +284,21 @@ $
   p_(q,omega)(x) <=> chi_(q,omega)(op("val")_x(s_q)).
 $
 
-For feasible $tau$, its _positive local guard_ is
+For feasible $tau$, its _observed-outcome guard_ is
 
 $
   Gamma_tau(x) = A(x) and
-    product_(q in op("dom")(tau)) p_(q,tau(q))(x),
+    and.big_(q in op("dom")(tau)) p_(q,tau(q))(x),
 $
 
-where the displayed product is logical conjunction. It mentions outcomes of
-observed sites but contains no literal for an unobserved site. Here _positive_
-means one outcome-equality atom per observed site and no absence atom; an
-outcome atom may itself contain negation or an inequality.
+It mentions outcomes of
+observed sites but contains no outcome or absence atom for an unobserved site.
+The name is semantic rather than syntactic: an outcome predicate may contain
+negation or an inequality, and expanding it may traverse nested selection
+expressions. The demanded generator in @sec-algorithms avoids constructing
+unobserved case cones.
 
-#theorem("exact local guard")[
+#theorem("exact observed-outcome guard")[
   For every feasible observation $tau$ and every input $x$,
   $
     Gamma_tau(x) <=> A(x) and T_G(x,R) = tau.
@@ -316,7 +338,7 @@ entailed by $A$ and the remaining predicates.
   equal domains and equal maps, a contradiction.
 ]
 
-Thus two positive local guards are disjoint because they contain incompatible
+Thus two observed-outcome guards are disjoint because they contain incompatible
 outcome predicates at a shared observed site. This structural separator is
 stronger than the generic fact that distinct function fibers are disjoint and
 is the key reason full-fiber blocking does not need explicit unobserved-site
@@ -381,14 +403,46 @@ $
   contextual prefixes make distinct occurrences disjoint.
 ]
 
-A _demand-parametric exact summary_ contains, for every requested root set,
-one record $(g,delta,tau,r)$ per feasible structural fiber: an exact guard, the
-set of demanded input ports, a selection observation, and a residual for the
-requested outputs. Here $delta=I inter D$ is part of the structural projection,
-not merely an implementation annotation. For a downstream record
+Operationally, picture a pipeline $G_1 arrow.r H$. A downstream summary for
+$H$ says which boundary inputs it needs. Those ports select the requested roots
+for an upstream summary of $G_1$; the upstream residuals are then substituted
+into the downstream guard and residual. The contract below states exactly when
+that familiar substitution covers each flattened-graph input once.
+
+A _demand-parametric exact summary_ is defined by the structural projection
+
+$
+  Pi_(G,R)(x) = (delta_G(x,R), T_G(x,R)),
+  quad delta_G(x,R) = I_G inter D_G(x,R).
+$
+
+For every $(delta,tau) in op("im")(Pi_(G,R))$, the summary has exactly one
+record $(g,delta,tau,r)$ with
+
+$
+  g : product_(i in delta) cal(D)_i -> BB,
+  quad r : product_(i in delta) cal(D)_i
+    -> product_(o in R) cal(D)_o,
+$
+
+such that, for every full component input $x in cal(X)_G$,
+
+$
+  g(x|_delta) <=> Pi_(G,R)(x)=(delta,tau),
+  quad g(x|_delta) => r(x|_delta)=op("val")_x|_R.
+$
+
+This is the _exact-summary contract_. It is a full-domain contract with no
+independent precondition: if an interface precondition mentions an otherwise
+undemanded input, that input must be charged as interface support. For fixed
+$R$, the lockstep argument behind the exact observed-outcome guard shows that
+$tau$ determines $delta$; the demanded-port set remains explicit because it is
+needed by component interfaces.
+
+For a downstream record
 $(h,delta_H,tau_H,r_H)$ of $H$ at demand $R$, and an upstream record
 $(g,delta_1,tau_1,r_1)$ of $G_1$ at demand $rho(delta_H)$, the summary contract
-types the exact guards and residuals as
+gives the following exact guard and residual types:
 
 $
   h : product_(i in delta_H) cal(D)_i -> BB,
@@ -422,13 +476,8 @@ $
 
 Infeasible guard conjunctions are discarded.
 
-This contract uses full-domain component summaries. An independent component
-precondition that mentions an otherwise undemanded input remains an explicit
-interface predicate, and its support must be charged; demand projection cannot
-silently discard it.
-
 #theorem("exact guarded-summary composition")[
-  The feasible composed records form exactly the observation partition of
+  The feasible composed records form exactly the structural partition of
   $F$: every caller input satisfies one record; its demanded inputs,
   contextual observation, and residual agree with flattened evaluation; and
   no two records have the same composite structural projection.
@@ -439,9 +488,10 @@ silently discard it.
   $delta_H$ selects the upstream demand and hence one exact upstream record.
   Guard and residual substitution, together with the flattening proposition,
   proves soundness and coverage. If two composed records had the same
-  observation, disjoint contextual namespaces would make both component
-  observations equal. The exact-local-guard lockstep then fixes their demanded
-  boundary sets, so exact component fibers make the two records identical.
+  structural projection, disjoint contextual namespaces would make both
+  component observations equal. The observed-outcome lockstep argument fixes
+  their demanded boundary sets, so the exact-summary contract makes both
+  component records, and hence the composed records, identical.
 ]
 
 This is equality with flattening, not a compactness theorem. A summary may

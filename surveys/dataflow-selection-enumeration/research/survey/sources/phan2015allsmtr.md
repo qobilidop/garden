@@ -1,8 +1,10 @@
 # phan2015allsmtr — All-Solution Satisfiability Modulo Theories
 
+- **Template version:** 2
 - **Status:** deep-read
 - **Primary source:** https://doi.org/10.1109/ARES.2015.14
 - **Version read:** IEEE proceedings PDF
+- **Last reviewed:** 2026-08-05
 - **Bibliography key:** `phan2015allsmtr`
 
 ## Why it matters
@@ -17,7 +19,9 @@ values for chosen non-Boolean variables.
 The input is a theory formula `phi`, a set `VI` of important Boolean
 variables, and a set `VR` of relevant, possibly non-Boolean variables. The
 output consists of every Boolean valuation of `VI` extendable to a theory
-model of `phi`, with model values for `VR`.
+model of `phi`, with one model's values for `VR` attached to each result. The
+`VR` values are sampled annotations, not independently enumerated coordinates:
+two models that agree on `VI` but differ only on `VR` do not force two outputs.
 
 Program analysis is an application rather than the formal core. The paper
 obtains formulas and important predicates from bounded model checking and
@@ -26,7 +30,9 @@ symbolic execution.
 ## Main definitions
 
 The extended problem `All-SMT(phi, VI, VR)` computes all models of `phi` with
-respect to `VI`; each model also includes a value assignment for `VR`.
+respect to the important Boolean set `VI`; each model also includes a value
+assignment for `VR`. Definition 7 makes `VI` the enumerated Boolean projection,
+while `VR` supplies values in each returned representative.
 Unimportant Boolean variables are not part of the enumerated observation.
 
 ## Results and guarantees
@@ -73,11 +79,13 @@ return witnesses or values for selected theory variables.
 
 ### What is our interpretation or inference?
 
-For each selection occurrence `q`, introduce predicates encoding whether the
-site is inactive or which outcome it takes. If ordinary graph equations
-constrain those predicates as total functions of the input, AllSMT enumerates
-the exact selection observations, and a returned input valuation is a
-witness.
+For each selection occurrence `q`, introduce important Boolean predicates that
+injectively encode whether the site is unobserved or which finite outcome it
+takes. If ordinary graph equations constrain those predicates as total
+functions of the input, AllSMT enumerates the exact selection observations, and
+a returned input valuation is a witness. Merely putting a finite theory-valued
+coordinate in `VR` would not enumerate all of its values; that requires a
+projection engine whose contract explicitly enumerates theory values.
 
 ### Could it subsume our proposed contribution?
 
@@ -96,7 +104,14 @@ only if they support a nontrivial semantic theorem or algorithmic advantage.
 
 ## Questions and possible weaknesses
 
-- Boolean observations are total assignments over `VI`; structural inactivity
+- Boolean observations are total assignments over `VI`; structural non-observation
   therefore needs an explicit value or activation variable.
 - The result-value mechanism returns concrete model values, not a residual
   symbolic function valid over a whole observation region.
+
+## Update impact
+
+- **Syntheses affected:** projected enumeration and current position
+- **Claims affected:** S01, S02, S03, S15
+- **Manuscript action:** clarified in `sec-related` that `VI`, not `VR`, supplies
+  the exhaustively enumerated coordinates

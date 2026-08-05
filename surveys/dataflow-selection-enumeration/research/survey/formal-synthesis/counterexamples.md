@@ -66,9 +66,9 @@ the final outputs are equal. Implicant minimization of the ordinary output may
 drop both decisions; selection observation retains the outcomes of the
 observed sites.
 
-## One-hot outcomes are not binary paths
+## Mask-valued outcomes are not binary paths
 
-A width-\(w\) one-hot selection may demand several case roots simultaneously.
+A width-\(w\) mask-valued selection may demand several case roots simultaneously.
 Treating it as one winning branch is wrong. Treating every raw mask as a
 separate outcome gives \(2^w\) possible outcomes at one site; any bound based
 only on the number of observed sites is wrong.
@@ -106,14 +106,14 @@ other. Its two observation families leave the unselected case inputs
 unconstrained. Static support-local exhaustiveness and input-relative
 selection observation are different quotients.
 
-## Partial primitives break eager erasure
+## Partial primitives break whole-graph value semantics
 
 \`\`\`text
 return select(p, 0, divide(1, 0))
 \`\`\`
 
-If the unselected division is undefined, eager evaluation of every node is not
-total even when selected evaluation has a result. The eager-value erasure and
+If the unselected division is undefined, a whole-graph value assignment is not
+total even when selected evaluation has a result. The value-erasure and
 simple reachability semantics require total primitives or an explicit
 definedness/relational extension.
 

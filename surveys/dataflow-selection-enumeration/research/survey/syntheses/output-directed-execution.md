@@ -105,7 +105,8 @@ shows:
 The formal synthesis is a taxonomy of observer-induced quotients. Ordinary
 paths, output-relevant slices, guarded values, projected tuples, short cubes,
 and graph-relative selection observations preserve different information.
-For finite pure graphs, enabled-closure semantics, ghost-output
-instrumentation, and projected enumeration give equivalent presentations of
-the last object. This cross-community equivalence is useful exposition; its
+For finite pure graphs, the selection observation defined using enabled
+closure, totalized reachability-and-outcome instrumentation, and projected
+enumeration give equivalent presentations of the last object. This
+cross-community equivalence is useful exposition; its
 ingredients and broad algorithmic consequences are prior art.

@@ -14,7 +14,7 @@ For a component \(G:X\to Y\), define its semantic interface
 (\operatorname{val}_G(x)|_R,\delta_G(x,R),T_G(x,R)),
 \]
 
-where \(R\subseteq Y\) is the demanded output set and
+where \(R\subseteq Y\) is the requested root set and
 
 \[
 \delta_G(x,R)=I_G\cap D_G(x,R)
@@ -39,7 +39,7 @@ input node \(i\) instead targets \(\rho(i)\); all other ordered edges and
 semantic labels are unchanged. This is the graph substitution meant by
 \(H\circ_\rho G\).
 
-For input \(x\) and demanded outputs \(R\subseteq O_H\), define the boundary
+For input \(x\) and requested roots \(R\subseteq O_H\), define the boundary
 valuation \(y_i=\operatorname{val}_G(x)(\rho(i))\), and let
 
 \[
@@ -137,6 +137,22 @@ residual for the demanded output tuple. Because the demanded slice contains
 exactly the input ports in \(\delta\), both the case guard and residual can be
 typed over \(\prod_{i\in\delta}\mathcal D_i\).
 
+More precisely, for every \((\delta,\tau)\in\operatorname{im}\Pi_G(-,R)\),
+the full-domain exact-summary contract requires
+
+\[
+g:\prod_{i\in\delta}\mathcal D_i\to\mathbb B,
+\qquad
+r:\prod_{i\in\delta}\mathcal D_i\to\prod_{o\in R}\mathcal D_o,
+\]
+
+and, for every full input \(x\in\mathcal X_G\),
+
+\[
+g(x|_\delta)\iff\Pi_G(x,R)=(\delta,\tau),\qquad
+g(x|_\delta)\Rightarrow r(x|_\delta)=\operatorname{val}_x|_R.
+\]
+
 This statement uses full-domain component summaries. An independent component
 precondition that mentions otherwise undemanded inputs must be carried as an
 additional interface predicate and its support charged explicitly; it cannot
@@ -155,13 +171,15 @@ Pair it with a \(G\) case \((g,D,\tau_G,r_G)\) summarized at demand
 \(S_G=\rho(S_H)\), where
 
 \[
-  r_G:\mathcal X_G\to\prod_{o\in S_G}\mathcal D_o.
+  g:\prod_{j\in D}\mathcal D_j\to\mathbb B,
+  \qquad
+  r_G:\prod_{j\in D}\mathcal D_j\to\prod_{o\in S_G}\mathcal D_o.
 \]
 
 Reindex this boundary tuple as
 
 \[
-  \widehat r_G(x)_i=r_G(x)_{\rho(i)}
+  \widehat r_G(x)_i=r_G(x|_D)_{\rho(i)}
   \qquad(i\in S_H),
 \]
 
@@ -169,7 +187,7 @@ and form
 
 \[
 \begin{split}
-c(x) &\equiv g(x)\land h(\widehat r_G(x)),\\
+c(x) &\equiv g(x|_D)\land h(\widehat r_G(x)),\\
 r(x) &= r_H(\widehat r_G(x)),\\
 \tau &= \iota_G(\tau_G)\sqcup\iota_H(\tau_H).
 \end{split}
@@ -199,7 +217,7 @@ case. Its \(S_H\) fixes the demand at which the concrete input selects the
 unique exact \(G\) case. Residual substitution and the concrete
 exact-composition theorem give soundness and coverage. If two paired records
 had the same composite structural projection, disjoint site namespaces would
-make both \(\tau_H\) and \(\tau_G\) equal. The exact-local-guard lockstep then
+make both \(\tau_H\) and \(\tau_G\) equal. The observed-outcome lockstep then
 makes \(S_H\), followed by \(D\), equal as well, so the component fiber cases
 and hence the pair are identical.
 
@@ -256,8 +274,11 @@ x\equiv_G x'
 \mathcal O_G(x,R)=\mathcal O_G(x',R)
 \]
 
-is the coarsest input equivalence preserving the declared observation, but that
-is the kernel of a function and is tautological. Full abstraction for a context
+is the coarsest input equivalence preserving the instrumented value-and-event
+denotation \(\mathcal O_G=(\operatorname{val}|_R,T_G)\), but that is the kernel
+of a function and is tautological. It is generally finer than the
+selection-observer fiber because it also distinguishes requested output values.
+Full abstraction for a context
 language with a primitive that directly reads site events is likewise obtained
 by construction.
 

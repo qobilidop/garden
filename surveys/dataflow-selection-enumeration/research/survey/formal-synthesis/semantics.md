@@ -1,9 +1,9 @@
 # Value and selection-observation semantics
 
-## Eager value semantics
+## Whole-graph value semantics
 
 Because the graph is acyclic and every primitive is total and deterministic,
-each input \(x\) induces a unique eager value
+each input \(x\) induces a unique total graph value
 \(\operatorname{val}_x(v)\) for every node. Inputs use \(x\); ordinary nodes
 apply \(f_v\); and a selection site applies the combiner for
 
@@ -11,7 +11,7 @@ apply \(f_v\); and a selection site applies the combiner for
 \omega_x(q)=\kappa_q(\operatorname{val}_x(s_q)).
 \]
 
-Eager values for unselected case cones remain mathematically defined. Purity and
+Values for unselected case cones remain mathematically defined. Purity and
 totality make them irrelevant to the selected result. This value semantics is
 separate from the structural observation below.
 
@@ -61,13 +61,14 @@ with
 T_G(x,R)(q)=\omega_x(q).
 \]
 
-A total-vector presentation uses one additional value \(\bot_q\):
+A total-vector presentation uses one additional value
+\(\mathsf{unobs}_q\notin\Omega_q\):
 
 \[
 \overline T_G(x,R)(q)=
 \begin{cases}
 T_G(x,R)(q) & q\in D_G(x,R),\\
-\bot_q & q\notin D_G(x,R).
+\mathsf{unobs}_q & q\notin D_G(x,R).
 \end{cases}
 \]
 
@@ -82,7 +83,7 @@ An instrumented denotation is
 (\operatorname{val}_x|_R,T_G(x,R)).
 \]
 
-Erasing the second component recovers ordinary eager value semantics. The
+Erasing the second component recovers ordinary whole-graph value semantics. The
 instrumentation deliberately distinguishes observed equal-valued alternatives.
 
 ## Basic properties
@@ -90,7 +91,7 @@ instrumentation deliberately distinguishes observed equal-valued alternatives.
 ### Least partial valuation under the declared dependency policy
 
 The enabled closure admits a finite graph-theoretic least-partial-valuation
-presentation for the strict edge-dependency policy declared in the model. For
+presentation for the all-operands edge-dependency policy declared in the model. For
 each node \(v\), extend its value
 domain to the flat domain
 
@@ -133,7 +134,7 @@ Define
   \end{cases}
 \]
 
-**Strict-dependency least-valuation theorem.** The valuation \(\nu^*_{x,R}\)
+**Declared-dependency least-valuation theorem.** The valuation \(\nu^*_{x,R}\)
 is the unique least \(x\)-consistent, dependency-closed, \(R\)-complete
 valuation, and
 
@@ -184,7 +185,7 @@ of possible observations is finite and bounded by
 
 although most such totalized tuples are structurally invalid.
 
-*Proof.* Eager values and outcomes are unique. The enabled graph is finite;
+*Proof.* Total graph values and outcomes are unique. The enabled graph is finite;
 reachability has one least closure. The product bound counts every unobserved or
 outcome value independently and therefore overapproximates the image.
 
@@ -241,7 +242,7 @@ equivalence.
 
 ## Observation fibers
 
-Fix \(G\), \(R\), and caller constraint \(A\). Let
+Fix \(G\), \(R\), and caller-domain predicate \(A\). Let
 
 \[
 \mathcal T_{G,A,R}=
@@ -267,6 +268,21 @@ cover the domain.
 This theorem fixes the semantic contract but is elementary and not a novelty
 claim.
 
+An exact record for \(\tau\) is
+\((\tau,\gamma_\tau,r_\tau,m_\tau)\), where
+
+\[
+\gamma_\tau:\mathcal X_G\to\mathbb B,\qquad
+r_\tau:\mathcal X_G\to\prod_{o\in R}\mathcal D_o,\qquad
+m_\tau\in\mathcal X_G.
+\]
+
+It satisfies \(\gamma_\tau(x)\iff A(x)\land T_G(x,R)=\tau\),
+\(\gamma_\tau(m_\tau)\), and
+\(\gamma_\tau(x)\Rightarrow r_\tau(x)=\operatorname{val}_x|_R\).
+These are semantic functions; an implementation may represent them with exact
+formulas and shared term DAGs.
+
 ## Local characterization of a fiber
 
 For each site and outcome define the local outcome predicate
@@ -277,7 +293,7 @@ For each site and outcome define the local outcome predicate
 \kappa_q(d)=\omega,
 \]
 
-and its eager input-level instance
+and its whole-graph input-level instance
 
 \[
 p_{q,\omega}(x)
@@ -293,7 +309,7 @@ For a feasible observation \(\tau\), define
 \bigwedge_{q\in\operatorname{dom}(\tau)}p_{q,\tau(q)}(x).
 \]
 
-### Exact-local-guard theorem
+### Exact observed-outcome guard theorem
 
 For every feasible \(\tau\),
 
@@ -341,7 +357,7 @@ selector and case roots. All approximants, and thus the two enabled closures,
 are equal. The observation domains are equal, and the maps agree throughout
 that domain, contradicting \(\tau\ne\sigma\).
 
-Consequently the positive cylinders \(\Gamma_\tau\) and
+Consequently the observed-outcome guards \(\Gamma_\tau\) and
 \(\Gamma_\sigma\) are disjoint: they contain incompatible predicates for the
 shared site. This strengthens the elementary inverse-image partition with a
 structural separator.

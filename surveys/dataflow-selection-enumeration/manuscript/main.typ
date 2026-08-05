@@ -25,7 +25,7 @@
   #v(0.2em)
   #text(size: 9.5pt)[Independent researcher]
   #v(0.35em)
-  #text(size: 9.5pt, style: "italic")[Problem · approaches · analysis · Draft · 4 August 2026]
+  #text(size: 9.5pt, style: "italic")[Problem · approaches · analysis · Draft · 5 August 2026]
   #v(0.2em)
   #text(size: 8.5pt)[
     #link("https://qobilidop.github.io/dataflow-selection-enumeration/")[Online manuscript]
@@ -43,20 +43,22 @@
   )[
     #align(center)[*Abstract*]
     #v(0.25em)
-    Given a pure shared dataflow graph, requested outputs, and a caller-input
-    domain, the problem studied here is to enumerate every distinct selection
-    observation exactly once. An observation records the contextual outcomes of
-    precisely those selection sites reached through strict operands and selected
-    case edges. Each record carries an exact inverse-image guard, a residual
-    symbolic value, and a witness. This paper surveys the established approaches
+    Different inputs can make a shared graph consult different selection nodes.
+    We group allowed inputs when the requested outputs consult the same graph
+    occurrences and obtain the same outcomes. For each group, the target is an
+    exact input formula, a symbolic expression for the requested outputs, and
+    one sample input. We call the grouping function the selection observer and
+    each group an observation fiber. The base model is a finite, acyclic,
+    deterministic pure graph with total primitives. This paper surveys the established approaches
     that can solve, compile, or specialize this task: guarded symbolic execution,
     projected model enumeration, decision structures, demand-guided search,
     geometric region traversal, and compositional summaries. Its main synthesis
     is a unified terminology and theoretical framework that separates the
     observer being enumerated from the discovery algorithm and output
-    representation. Within that framework, enabled reachability, sparse event
-    maps, positive local guards, and totalized projected coordinates are
-    equivalent presentations of the selection observer. The comparison explains
+    representation. Within that framework, enabled reachability determines
+    which site outcomes are included; sparse event maps, observed-outcome
+    guards, and totalized reachability-and-outcome coordinates then determine
+    the same input partition. The comparison explains
     which approaches enumerate the same fibers directly, which require
     instrumentation or quotienting, which provide stronger guarantees on
     restricted instances, and which solve only adjacent reduction problems. The

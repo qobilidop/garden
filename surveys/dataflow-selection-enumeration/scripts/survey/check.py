@@ -405,6 +405,31 @@ def main() -> int:
     header, log_rows = rows(SURVEY / "logs" / "searches.tsv")
     if header != SEARCH_HEADER:
         fail(f"unexpected search-log header: {header}")
+    promoted_keys = {
+        match
+        for row in log_rows
+        for match in re.findall(r"(?:^|; )promoted-key:([A-Za-z0-9_.-]+)", row["notes"])
+    }
+    superseded_keys = {
+        match
+        for row in log_rows
+        for match in re.findall(r"(?:^|; )superseded-key:([A-Za-z0-9_.-]+)", row["notes"])
+    }
+    if promoted_keys & superseded_keys:
+        fail(f"disposition audit both promotes and supersedes {sorted(promoted_keys & superseded_keys)[0]}")
+    for row in log_rows:
+        markers = re.findall(
+            r"(?:^|; )(?:promoted|superseded)-key:([A-Za-z0-9_.-]+)",
+            row["notes"],
+        )
+        if markers and row["direction"] != "audit":
+            fail(f"disposition reconciliation is not an audit row: {row['round_id']}")
+    for citekey in promoted_keys:
+        if citekey not in catalog or catalog[citekey]["status"] == "excluded":
+            fail(f"promoted key lacks a retained catalog disposition: {citekey}")
+    for citekey in superseded_keys:
+        if citekey not in catalog or catalog[citekey]["status"] != "excluded":
+            fail(f"superseded key lacks an excluded catalog disposition: {citekey}")
     referenced_snapshots: set[str] = set()
     for number, row in enumerate(log_rows, start=2):
         for field in ("hits", "screened"):
@@ -415,12 +440,18 @@ def main() -> int:
         for citekey in keys(row["included_keys"]):
             if citekey not in catalog:
                 fail(f"search-log row {number} includes unknown key {citekey}")
-            if catalog[citekey]["status"] == "excluded":
+            if (
+                catalog[citekey]["status"] == "excluded"
+                and citekey not in superseded_keys
+            ):
                 fail(f"search-log row {number} includes excluded key {citekey}")
         for citekey in keys(row["excluded_keys"]):
             if citekey not in catalog:
                 fail(f"search-log row {number} excludes unknown key {citekey}")
-            if catalog[citekey]["status"] != "excluded":
+            if (
+                catalog[citekey]["status"] != "excluded"
+                and citekey not in promoted_keys
+            ):
                 fail(f"search-log row {number} exclusion {citekey} is not excluded")
         snapshot_refs = re.findall(r"screening/[^ ;]+\.tsv", row["notes"])
         if row["direction"] == "audit":

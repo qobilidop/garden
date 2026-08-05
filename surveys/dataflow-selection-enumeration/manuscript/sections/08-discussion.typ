@@ -5,17 +5,18 @@
 The paper fixes one problem before comparing solvers. For a finite selective
 DAG, a caller domain, and requested roots, the selection observer maps each
 input to the contextual outcomes reached through enabled edges. Its nonempty
-inverse images define the required records. Positive local guards, demanded
-residual evaluation, totalized activity coordinates, projected enumeration,
+inverse images define the required records. Observed-outcome guards, demanded
+residual evaluation, totalized unobserved/outcome coordinates, projected enumeration,
 and contextual summary composition are then alternative presentations of this
 one semantic contract.
 
 The observer/refinement distinction is the main organizing result. Structural
 absence, existentially hidden coordinates, logical don't-cares, and
-equal-behavior quotients are not interchangeable. Two approaches solve the
-same enumeration problem only when their observer kernels agree after any
-declared instrumentation. Otherwise one computes a refinement, quotient, or
-incomparable partition.
+equal-behavior quotients are not interchangeable. Two approaches induce the
+same input partition only when their observer kernels agree after any declared
+instrumentation. Matching labeled outputs additionally requires an explicit
+bijection between their feasible images. Otherwise one computes a refinement,
+quotient, or incomparable partition.
 
 Selection observations are appropriate for event-aware specifications such as
 checking that graph rewriting, lowering, or component substitution preserves a
@@ -36,18 +37,18 @@ language-specific overflow would invalidate coverage. Cycles, recursion, and
 unbounded dynamic occurrences can make the event domain infinite and require a
 bounded, time-indexed, regular, or coinductive observer instead.
 
-Strictness is an observation policy, not an extensional dependence theorem.
-Every operand of an ordinary node is observed even if algebraic simplification
+The all-operands rule is an observation policy, not an extensional dependence
+theorem. Every operand of an ordinary node is observed even if algebraic simplification
 makes it irrelevant. Translating a lazy language or stream-dataflow semantics
 therefore requires a separate correspondence proof. Likewise, an outcome must
 determine its demanded cases and combiner; two raw selector values with
 different structural consequences cannot be silently grouped as one outcome.
 
-Site identity is intensional. Sharing within one graph or component occurrence
+Site identity is structural and occurrence-sensitive. Sharing within one graph or component occurrence
 records a site once, whereas distinct contextual occurrences receive distinct
 names. A compiler that duplicates, fuses, or lowers selections can change the
 observer while preserving values. Source and lowered observations need an
-explicit event map. The exact positive guard is not necessarily a
+explicit event map. The exact observed-outcome guard is not necessarily a
 literal-minimal formula: logical minimization is a later representation
 transformation and may erase the event whose outcome the record is intended to
 expose.
@@ -85,7 +86,7 @@ The framework suggests a focused research agenda:
 - When can a shared decision structure, disjoint cover, or guarded-summary DAG
   be constructed with output-sensitive delay or polynomial auxiliary space?
 - Which structural restrictions make demanded local generation asymptotically
-  preferable to eager activity projection, rather than merely smaller on one
+  preferable to whole-graph reachability projection, rather than merely smaller on one
   candidate?
 - Under what interface and workload conditions do demand-parametric summaries
   provide reusable compression instead of an exponential family of exact

@@ -44,8 +44,8 @@ fibers follow.
 
 This difference suggests two semantic layers:
 
-1. eager deterministic value semantics for the pure graph; and
-2. a result-observation judgment producing a graph-relative map of outcomes for
+1. total graph value semantics for the pure graph; and
+2. a selection-observation judgment producing a graph-relative map of outcomes for
    sites observed in that evaluation.
 
 The second layer must erase to the first. It cannot be called fully abstract
@@ -57,7 +57,7 @@ distinguished.
 - A site is a graph node or contextual occurrence, not a duplicated syntax-tree
   position.
 - A shared internal node demanded by several consumers is observed once; its
-  activity is the disjunction of consumer demands.
+  reachability is the disjunction of consumer demands.
 - Reusing a callee at two call sites needs distinct contextual occurrence names
   unless the intended observation explicitly merges them.
 - Memoization and any legal evaluation order must preserve the observation.
@@ -65,8 +65,8 @@ distinguished.
   dynamic computation-local choice identifiers to static context-qualified
   occurrence names.
 - Needed reduction to constructor head normal form does not silently establish
-  strict pure-dataflow semantics; the encoding must preserve ordinary strict
-  operands, selective case edges, and requested roots.
+  the graph's observation policy; the encoding must preserve the all-operands
+  rule at ordinary nodes, selective case edges, and requested roots.
 
 These are theorem obligations. They cannot be discharged by silently unfolding
 the graph into a tree.
@@ -76,7 +76,7 @@ the graph into a tree.
 Graph sharing is not itself the missing theory. The formal synthesis must
 distinguish immutable deterministic DAG selections from nondeterministic
 rewriting, quantify contextual occurrence identity explicitly, and show the
-enabled-closure union law. Exporting every internal activity/outcome variable
+enabled-closure union law. Exporting every internal reachability/outcome variable
 then reduces the problem to established selective interpretation and projected
 enumeration; it is a useful correspondence, not a new graph calculus.
 

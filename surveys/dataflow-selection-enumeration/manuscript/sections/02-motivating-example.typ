@@ -9,8 +9,9 @@ q_outer = select(p, q_inner, y)
 return q_outer
 ```
 
-Here the first case is selected when the Boolean selector is true. Both arms
-of `q_inner` are intentionally equal. We request only `q_outer`.
+Here the first case is selected when the Boolean selector is true, so we label
+the outcomes `left` (true) and `right` (false). Both arms of `q_inner` are
+intentionally equal. We request only `q_outer`.
 
 A monolithic value encoding is immediate:
 
@@ -37,7 +38,8 @@ outer and inner sites. @tab-motivating lists the three observations.
     [$q_o -> "left", q_i -> "left"$], [$p and r$], [$x+1$],
     )
   ],
-  caption: [Exact observations for the nested-selection example.],
+  caption: [Exact observations for the nested-selection example; witnesses are
+  omitted from the table, and one is given below.],
   kind: table,
 ) <tab-motivating>
 
@@ -64,11 +66,11 @@ checker deliberately chooses a coarser observer and merges them. The framework
 does not declare one policy universally preferable; it makes the policy an
 explicit part of the problem statement.
 
-Third, the guards contain only positive outcome predicates for sites actually
+Third, the observed-outcome guards contain predicates only for sites actually
 observed in the corresponding record. The first guard does not say anything
 about `r`. Its exactness is structural: once `q_outer` chooses `y`, graph
 reachability cannot enter the cone containing `q_inner`. The later
-exact-local-guard theorem generalizes this lockstep argument to arbitrary
+exact observed-outcome guard theorem generalizes this lockstep argument to arbitrary
 finite shared graphs and multi-case selections.
 
 Fourth, one model per record is not the desired residual. For example,
@@ -77,8 +79,29 @@ residual valid on the whole fiber is $x+1$, not the sampled value $1$. Exact
 enumeration must combine model discovery with symbolic specialization.
 
 This nested example is intentionally different from a dense ReLU network or a
-flat collection of sign tests. In those all-sites-observed special cases, each
-observation is a total activation vector and established hyperplane-cell or
-neural-region algorithms already enumerate the corresponding guards and affine
-maps. The unselected nested site is the minimal feature that exposes the
-graph-relative observation policy.
+flat collection of strict sign tests. When the caller domain excludes all test
+boundaries, each observation is a total activation vector and established
+full-dimensional cell algorithms already enumerate the corresponding guards
+and affine maps. The unselected nested site is the minimal feature that exposes
+the graph-relative observation policy.
+
+== Framework at a glance
+
+The concrete observer is easy to compute. Start at the requested root set. At
+an ordinary operation, walk to every operand. At a selection, always walk to
+its selector and only to the case roots enabled by that outcome. Record each
+selection occurrence reached by this backward walk and its outcome. Two inputs
+belong to the same observation fiber exactly when these records match.
+
+The formal section gives names to the pieces: $G$ is the graph, $R$ the
+requested root set, $A$ the caller-domain predicate, $D_G(x,R)$ the nodes
+reached by the walk, and $T_G(x,R)$ its selection record. For one feasible
+record $tau$, its fiber $F_tau$ is the input group with record $tau$, while
+$Gamma_tau$ is an exact formula for that group. The rest of the paper asks how
+existing methods discover these groups and represent their formulas, residual
+output expressions, and sample inputs.
+
+An implementation-oriented reading path is this example, the opening and
+comparison table of @sec-related, the two constructions in @sec-algorithms,
+and @sec-conclusion. The intervening definitions and proofs make the contracts
+and transfer conditions precise.
