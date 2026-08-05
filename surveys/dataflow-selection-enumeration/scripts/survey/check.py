@@ -46,9 +46,10 @@ EXPLORATORY_HEADER = [
     "notes",
 ]
 EVIDENCE_HEADER = [
-    "claim_id",
-    "manuscript_location",
-    "claim",
+    "evidence_id",
+    "supports_claims",
+    "manuscript_anchors",
+    "literature_claim",
     "citekeys",
     "source_note_anchors",
     "evidence_scope",
@@ -126,6 +127,42 @@ def rows(path: Path) -> tuple[list[str], list[dict[str, str]]]:
 
 def keys(field: str) -> list[str]:
     return [] if field == "-" else field.split(",")
+
+
+def markdown_heading_anchors(text: str) -> set[str]:
+    """Return GitHub-style fragments for the simple headings in source notes."""
+    anchors: set[str] = set()
+    occurrences: dict[str, int] = {}
+    for match in re.finditer(r"^#{1,6}\s+(.+?)\s*$", text, re.MULTILINE):
+        heading = re.sub(r"[`*_~]", "", match.group(1)).lower()
+        base = re.sub(r"[^\w\s-]", "", heading)
+        base = re.sub(r"\s+", "-", base.strip())
+        duplicate = occurrences.get(base, 0)
+        occurrences[base] = duplicate + 1
+        anchors.add(base if duplicate == 0 else f"{base}-{duplicate}")
+    return anchors
+
+
+def research_questions(text: str) -> dict[str, str]:
+    """Extract wrapped Markdown/Typst RQ bullets into normalized sentences."""
+    lines = text.splitlines()
+    extracted: dict[str, str] = {}
+    index = 0
+    while index < len(lines):
+        match = re.match(
+            r"^- \*{1,2}(RQ\d+):\*{1,2}\s+(.+)$", lines[index]
+        )
+        if match is None:
+            index += 1
+            continue
+        identifier, first = match.groups()
+        parts = [first.strip()]
+        index += 1
+        while index < len(lines) and lines[index].startswith("  "):
+            parts.append(lines[index].strip())
+            index += 1
+        extracted[identifier] = " ".join(parts)
+    return extracted
 
 
 def seed_key(notes: str) -> str | None:
@@ -208,46 +245,162 @@ def main() -> int:
         if citekey not in bibliography_keys:
             fail(f"deep-read work {citekey} has no bibliography entry")
 
+    claims_text = (ROOT / "research" / "claims.md").read_text(encoding="utf-8")
+    current_claims = claims_text.split(
+        "## Current survey synthesis claims", maxsplit=1
+    )[-1]
+    synthesis_claims = set(
+        re.findall(r"^### (S\d{2})\s+—", current_claims, re.MULTILINE)
+    )
+    if not synthesis_claims:
+        fail("claims ledger has no current Sxx synthesis claims")
+
+    manuscript_paths = sorted((ROOT / "manuscript").rglob("*.typ"))
+    manuscript_texts = {
+        path: path.read_text(encoding="utf-8") for path in manuscript_paths
+    }
+    manuscript_labels: set[str] = set()
+    manuscript_citation_pairs: set[tuple[str, str]] = set()
+    for path, text in manuscript_texts.items():
+        labels = [
+            (match.start(), match.group(1))
+            for match in re.finditer(r"<(sec-[A-Za-z0-9-]+)>", text)
+        ]
+        manuscript_labels.update(label for _, label in labels)
+        for citation in re.finditer(r"@([A-Za-z0-9_-]+)", text):
+            citekey = citation.group(1)
+            if citekey not in bibliography_keys:
+                continue
+            enclosing = [
+                label for position, label in labels if position < citation.start()
+            ]
+            if not enclosing:
+                fail(
+                    "bibliography citation outside a labeled manuscript section: "
+                    f"{citekey} in {path.relative_to(ROOT)}"
+                )
+            manuscript_citation_pairs.add((enclosing[-1], citekey))
+
+    protocol_rqs = research_questions(
+        (SURVEY / "protocol.md").read_text(encoding="utf-8")
+    )
+    introduction_rqs = research_questions(
+        (ROOT / "manuscript" / "sections" / "01-introduction.typ").read_text(
+            encoding="utf-8"
+        )
+    )
+    expected_rq_ids = {"RQ1", "RQ2", "RQ3", "RQ4"}
+    if set(protocol_rqs) != expected_rq_ids:
+        fail("protocol must define exactly RQ1 through RQ4")
+    if protocol_rqs != introduction_rqs:
+        differing = sorted(set(protocol_rqs) ^ set(introduction_rqs))
+        if not differing:
+            differing = sorted(
+                identifier
+                for identifier in protocol_rqs
+                if protocol_rqs[identifier] != introduction_rqs[identifier]
+            )
+        fail(f"protocol/manuscript research-question drift: {differing[0]}")
+
     header, evidence_rows = rows(SURVEY / "evidence-matrix.tsv")
     if header != EVIDENCE_HEADER:
         fail(f"unexpected evidence-matrix header: {header}")
-    claim_ids: set[str] = set()
-    covered_citations: set[str] = set()
-    evidence_key_sets: list[tuple[int, set[str]]] = []
+    evidence_ids: set[str] = set()
+    supported_claims: set[str] = set()
+    covered_citation_pairs: set[tuple[str, str]] = set()
+    source_anchor_cache: dict[str, set[str]] = {}
     for number, row in enumerate(evidence_rows, start=2):
-        claim_id = row["claim_id"]
-        if not claim_id or claim_id in claim_ids:
-            fail(f"duplicate or empty evidence claim_id on row {number}: {claim_id}")
-        claim_ids.add(claim_id)
+        evidence_id = row["evidence_id"]
+        if not re.fullmatch(r"E\d{3}", evidence_id):
+            fail(f"invalid evidence ID on row {number}: {evidence_id}")
+        if evidence_id in evidence_ids:
+            fail(f"duplicate evidence ID on row {number}: {evidence_id}")
+        evidence_ids.add(evidence_id)
+
+        row_claims = keys(row["supports_claims"])
+        if len(row_claims) != len(set(row_claims)):
+            fail(f"evidence row {number} repeats a supported claim")
+        for claim_id in row_claims:
+            if claim_id not in synthesis_claims:
+                fail(f"evidence row {number} supports unknown claim {claim_id}")
+            supported_claims.add(claim_id)
+
+        row_anchors = keys(row["manuscript_anchors"])
+        if len(row_anchors) != len(set(row_anchors)):
+            fail(f"evidence row {number} repeats a manuscript anchor")
+        for anchor in row_anchors:
+            if anchor not in manuscript_labels:
+                fail(f"evidence row {number} uses unknown manuscript anchor {anchor}")
+        if not row_claims and not row_anchors:
+            fail(f"evidence row {number} supports neither a claim nor the manuscript")
+        for field in ("literature_claim", "evidence_scope", "caveat"):
+            if not row[field].strip():
+                fail(f"evidence row {number} has empty {field}")
+
         row_keys = keys(row["citekeys"])
         if not row_keys:
             fail(f"evidence row {number} has no citekeys")
+        if len(row_keys) != len(set(row_keys)):
+            fail(f"evidence row {number} repeats a citekey")
+        source_references = row["source_note_anchors"].split(";")
+        references_by_key: dict[str, str] = {}
+        for reference in source_references:
+            match = re.fullmatch(
+                r"sources/([A-Za-z0-9_.-]+)\.md#([A-Za-z0-9_.-]+)",
+                reference,
+            )
+            if match is None:
+                fail(f"invalid source-note anchor on evidence row {number}: {reference}")
+            citekey, anchor = match.groups()
+            if citekey in references_by_key:
+                fail(f"duplicate source-note anchor for {citekey} on row {number}")
+            references_by_key[citekey] = anchor
         for citekey in row_keys:
             if citekey not in bibliography_keys:
                 fail(f"evidence row {number} cites unknown bibliography key {citekey}")
             source_note = SURVEY / "sources" / f"{citekey}.md"
             if not source_note.is_file():
                 fail(f"evidence row {number} cites {citekey} without a source note")
-            expected_anchor = f"sources/{citekey}.md#"
-            if expected_anchor not in row["source_note_anchors"]:
+            if citekey not in references_by_key:
                 fail(f"evidence row {number} has no source-note anchor for {citekey}")
-            covered_citations.add(citekey)
-        evidence_key_sets.append((number, set(row_keys)))
+            if citekey not in source_anchor_cache:
+                source_anchor_cache[citekey] = markdown_heading_anchors(
+                    source_note.read_text(encoding="utf-8")
+                )
+            anchor = references_by_key[citekey]
+            if anchor not in source_anchor_cache[citekey]:
+                fail(
+                    f"evidence row {number} uses missing anchor "
+                    f"sources/{citekey}.md#{anchor}"
+                )
+        extra_source_keys = sorted(set(references_by_key) - set(row_keys))
+        if extra_source_keys:
+            fail(
+                f"evidence row {number} anchors unlisted citekey "
+                f"{extra_source_keys[0]}"
+            )
 
-    manuscript_text = "\n".join(
-        path.read_text(encoding="utf-8")
-        for path in sorted((ROOT / "manuscript").rglob("*.typ"))
-    )
-    manuscript_citations = (
-        set(re.findall(r"@([A-Za-z0-9_-]+)", manuscript_text))
-        & bibliography_keys
-    )
-    missing_evidence = sorted(manuscript_citations - covered_citations)
+        row_key_set = set(row_keys)
+        for anchor in row_anchors:
+            matching_pairs = {
+                pair
+                for pair in manuscript_citation_pairs
+                if pair[0] == anchor and pair[1] in row_key_set
+            }
+            if not matching_pairs:
+                fail(
+                    f"evidence row {number} has no cited source at manuscript "
+                    f"anchor {anchor}"
+                )
+            covered_citation_pairs.update(matching_pairs)
+
+    missing_claims = sorted(synthesis_claims - supported_claims)
+    if missing_claims:
+        fail(f"synthesis claim has no evidence row: {missing_claims[0]}")
+    missing_evidence = sorted(manuscript_citation_pairs - covered_citation_pairs)
     if missing_evidence:
-        fail(f"manuscript citation has no evidence row: {missing_evidence[0]}")
-    for number, row_keys in evidence_key_sets:
-        if manuscript_citations.isdisjoint(row_keys):
-            fail(f"evidence row {number} has no citekey used by the manuscript")
+        anchor, citekey = missing_evidence[0]
+        fail(f"manuscript citation has no evidence row at {anchor}: {citekey}")
 
     header, log_rows = rows(SURVEY / "logs" / "searches.tsv")
     if header != SEARCH_HEADER:

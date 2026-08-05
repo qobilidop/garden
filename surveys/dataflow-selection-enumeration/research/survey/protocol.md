@@ -2,11 +2,13 @@
 
 ## Objective and study type
 
-Maintain a systematic map of how prior work represents and exhaustively
-enumerates selection observations of finite pure dataflow graphs. The survey
-compares neighboring semantic objects and algorithms; it does not estimate
-empirical effect sizes and is therefore a systematic mapping study rather than
-a statistical systematic literature review.
+Maintain a problem-centered systematic map of exhaustive selection-observation
+enumeration in finite pure dataflow graphs. The map identifies established
+solution families, translates them into one terminology, and records exactly
+when their observers, guarantees, and representations coincide with the target
+contract. It does not estimate empirical effect sizes and is therefore a
+systematic mapping study rather than a statistical systematic literature
+review.
 
 The running formal object is a partial map of selection-site outcomes reached
 from requested roots through strict operands and input-selected case edges. A
@@ -14,41 +16,34 @@ monolithic symbolic value or SMT encoding is a baseline, not the target output.
 
 ## Research questions
 
-- **RQ1:** Which mathematical program models support symbolic evaluation
-  without conventional control-flow paths?
-- **RQ2:** Which objects are enumerated: paths, traces, cases, configurations,
-  models, implicants, cubes, guarded values, or input regions?
-- **RQ3:** Which approaches retain partial rather than total decisions, and
-  how do they treat inactive or irrelevant choices?
-- **RQ4:** Which soundness, completeness, uniqueness, coverage, disjointness,
-  or minimality properties are defined and proved?
-- **RQ5:** How are residual symbolic values, witnesses, and graph sharing
-  represented?
-- **RQ6:** Which algorithms avoid redundant products of choices, and what
-  complexity or output-sensitivity results are known?
-- **RQ7:** Which assumptions are made about purity, totality, effects, cycles,
-  time, and solver completeness?
-- **RQ8:** Which examples expose the distinction between merged values, global
-  decision assignments, and dynamically observed choices?
+- **RQ1:** What common terminology precisely defines selection-observation
+  enumeration and distinguishes it from neighboring tasks?
+- **RQ2:** Which established approach families can enumerate, compile, or
+  specialize the required fibers, and what instrumentation do they require?
+- **RQ3:** Which correctness, representation, and complexity guarantees does
+  each family provide under its stated assumptions?
+- **RQ4:** Where do the approaches coincide, where do they compute a refinement
+  or quotient of the target observer, and where do they address only an
+  adjacent reduction problem?
 
 ## Coverage themes
 
-The map deliberately crosses research communities. Its stable themes are:
+The comparison is organized around six principal solution families:
 
-1. symbolic execution, guarded values, path merging, and trace partitioning;
-2. circuits, synchronous languages, dataflow demand, and symbolic simulation;
-3. AllSAT/AllSMT, projected or partial models, decision diagrams, and finite
-   observer partitions;
-4. functional-logic choice fingerprints, needed evaluation, demand-driven
-   testing, and lazy partial-input refinement;
-5. hyperplane cells, neural activation/output regions, CPWL models, hybrid
-   modes, and parametric critical regions;
-6. partial-order reduction, unfoldings, Petri-net observations, and symbolic
-   state quotients;
-7. property-, target-, context-, and observer-guided exploration or reduction;
-   and
-8. compositional semantics, summaries, residualization, graph sharing, and
-   contextual identity.
+1. guarded symbolic execution;
+2. projected model enumeration;
+3. compiled decision structures;
+4. demand-guided evaluation and search;
+5. geometric and parametric enumeration; and
+6. compositional guarded summaries.
+
+The map still crosses symbolic execution, dataflow semantics, functional-logic
+programming, model enumeration, knowledge compilation, geometry, parametric
+programming, concurrency, and state reduction. Those broader communities are
+discovery vocabulary, not separate research questions. Partial-order
+reduction, unfoldings, Petri-net observation, property-guided exploration, and
+state quotienting remain adjacent comparators when they clarify an
+observer-relative boundary without implementing the target record contract.
 
 Exact recurring searches are versioned in `updates/queries.tsv`. New vocabulary
 discovered during reading is added there in a separate commit rather than
@@ -64,7 +59,7 @@ silently changing an executed search.
 | `screening/` | Frozen result sets | Commit only after every row is screened |
 | `sources/` | Primary-work extraction and pinpoint evidence | Required for deep reads |
 | `syntheses/` | Current cross-paper understanding | Revise after each reading batch |
-| `evidence-matrix.tsv` | Manuscript claim-to-source traceability | Revise with manuscript claims |
+| `evidence-matrix.tsv` | Synthesis/manuscript claim-to-source traceability | Revise with claims or manuscript evidence |
 | `updates/state.tsv` | Completion state of recurring searches | Advance only after reconciliation |
 | `updates/tasks.tsv` | Periodic non-query maintenance | Advance only after the task is complete |
 
@@ -98,8 +93,10 @@ discovery disposition, not automatically a reading queue.
 A deep read must inspect the primary work's definitions, central algorithms,
 theorem statements and assumptions, complexity discussion, examples, and
 related work. Complete the source-note template with stable URLs and pinpoint
-locations. Any technical manuscript claim must also have an anchored row in
-`evidence-matrix.tsv`.
+locations. Any active synthesis claim must be connected to at least one
+evidence row, and any technical manuscript citation must be connected at its
+stable section label. Evidence IDs identify literature claims; `Sxx` IDs refer
+only to the synthesis claims in `research/claims.md`.
 
 Priority controls maintenance obligations. Every `critical` work must be
 deep-read and must have separate usable backward and forward citation chases.

@@ -26,7 +26,8 @@ counts. The second validates the evidence graph and builds the manuscript.
 - `syntheses/` stores the current cross-paper understanding by theme.
 - `formal-synthesis/` stores the definitions, reductions, and proofs used to
   connect the surveyed themes.
-- `evidence-matrix.tsv` connects manuscript claims to source-note anchors.
+- `evidence-matrix.tsv` connects stable synthesis claims and manuscript section
+  labels to source-note anchors.
 - `updates/` contains recurring searches and their completion state.
 
 ## Definition of done for a new paper

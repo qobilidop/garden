@@ -7,9 +7,9 @@
 - **Authorship:** Bili Dong, independent researcher
 
 The catalog baseline contains 897 entries, including 201 deep reads, and the
-audited logs contain 35,720 screened record occurrences. The focused manuscript
-is supported by 25 current claim-evidence rows. These are snapshot counts, not
-targets and not measures of worldwide completeness.
+audited logs contain 35,720 screened record occurrences. The current
+claim-evidence matrix supports the focused synthesis and manuscript. These are
+snapshot records, not targets and not measures of worldwide completeness.
 
 Source notes created during the initial campaign use several historical
 layouts. They remain evidence records, but are migrated to template version 2

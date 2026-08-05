@@ -61,8 +61,9 @@ The audited record contains 318 database queries and 245 separately recorded
 backward or forward citation chases. Excluding repeated adjudication passes,
 the log contains 35,720 screened record occurrences; this is neither a
 unique-paper count nor an estimate of a literature population. A claim-level
-evidence matrix links every manuscript citation to source-note anchors and
-states the scope and caveat of the comparison.
+evidence matrix links every manuscript citation at its stable section label and
+every active synthesis claim to source-note anchors, while stating the scope
+and caveat of each comparison.
 
 == Bounded baseline and living updates
 

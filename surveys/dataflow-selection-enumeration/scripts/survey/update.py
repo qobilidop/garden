@@ -96,7 +96,7 @@ def status(args: argparse.Namespace) -> int:
     )
     print(
         f"Evidence: {len(source_notes)} source notes, "
-        f"{len(evidence_rows)} claim rows"
+        f"{len(evidence_rows)} evidence rows"
     )
     print(
         f"Source-note schema: {current_source_notes} current, "

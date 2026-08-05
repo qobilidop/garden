@@ -13,8 +13,8 @@ It is synthetic and current rather than a chronological notebook.
 5. Reconcile the relevant thematic files in `survey/syntheses/`.
 6. Update `terminology.md`, `claims.md`, and the formal synthesis when the
    cross-paper interpretation changes.
-7. Add or revise `survey/evidence-matrix.tsv` before changing a technical
-   manuscript claim.
+7. Add or revise `survey/evidence-matrix.tsv` when a synthesis claim or
+   technical manuscript claim changes.
 8. Record durable research choices in `decisions/`.
 
 The operational entry point is [`survey/README.md`](survey/README.md). The

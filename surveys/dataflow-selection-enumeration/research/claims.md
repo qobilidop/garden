@@ -134,6 +134,11 @@ claims that the survey has already shown to be known.
 
 ## Current survey synthesis claims
 
+The `Sxx` identifiers below are stable synthesis-claim IDs. The
+`supports_claims` column of `survey/evidence-matrix.tsv` connects primary-source
+evidence to them; evidence rows have their own `Exxx` identifiers so that a
+source's claim cannot be mistaken for this survey's synthesis.
+
 ### S01 — Taxonomy of omission mechanisms
 
 - **Status:** survey synthesis
@@ -142,8 +147,10 @@ claims that the survey has already shown to be known.
   induce different observers. Abstract merging, symmetry quotienting, and
   property-guided pruning are adjacent instances of the same observer-relative
   principle rather than direct implementations of the target enumerator.
-- **Evidence required:** a focused extraction and claim-evidence matrix covering
-  the primary sources used for each main solution family and adjacent boundary.
+- **Evidence:** the claim-evidence matrix connects the four omission mechanisms
+  and adjacent observer-relative reductions to their primary-source rows. The
+  taxonomy itself is a cross-literature synthesis, not a theorem attributed to
+  any one source.
 
 ### S02 — Three equivalent presentations of selection observation
 

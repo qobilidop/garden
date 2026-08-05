@@ -17,7 +17,8 @@ auditable reporting of secondary studies.
 - Every critical work is deep-read and receives separate backward and forward
   citation chases. Defective index bibliographies are supplemented from the
   primary work.
-- Manuscript citations are checked against anchored claim-evidence rows.
+- Active synthesis claims and manuscript citation/section pairs are checked
+  against anchored claim-evidence rows.
 - Recurring update searches have a versioned registry and independently
   tracked completion state. Fetching does not count as completion until its
   effects are reconciled through the manuscript.
