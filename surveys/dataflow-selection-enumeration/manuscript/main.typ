@@ -34,33 +34,35 @@
 
 #v(0.8em)
 
-#block(
-  width: 88%,
-  inset: (x: 1em, y: 0.65em),
-  fill: rgb("f7f9fb"),
-  radius: 2pt,
-)[
-  #align(center)[*Abstract*]
-  #v(0.25em)
-  Given a pure shared dataflow graph, requested outputs, and a caller-input
-  domain, the problem studied here is to enumerate every distinct selection
-  observation exactly once. An observation records the contextual outcomes of
-  precisely those selection sites reached through strict operands and selected
-  case edges. Each record carries an exact inverse-image guard, a residual
-  symbolic value, and a witness. This paper surveys the established approaches
-  that can solve, compile, or specialize this task: guarded symbolic execution,
-  projected model enumeration, decision structures, demand-guided search,
-  geometric region traversal, and compositional summaries. Its main synthesis
-  is a unified terminology and theoretical framework that separates the
-  observer being enumerated from the discovery algorithm and output
-  representation. Within that framework, enabled reachability, sparse event
-  maps, positive local guards, and totalized projected coordinates are
-  equivalent presentations of the selection observer. The comparison explains
-  which approaches enumerate the same fibers directly, which require
-  instrumentation or quotienting, which provide stronger guarantees on
-  restricted instances, and which solve only adjacent reduction problems. The
-  result is a problem-centered survey and semantic contract, not a claim of a
-  new generic enumeration paradigm or practical speedup.
+#pad(x: 6%)[
+  #block(
+    width: 100%,
+    inset: (x: 1em, y: 0.65em),
+    fill: rgb("f7f9fb"),
+    radius: 2pt,
+  )[
+    #align(center)[*Abstract*]
+    #v(0.25em)
+    Given a pure shared dataflow graph, requested outputs, and a caller-input
+    domain, the problem studied here is to enumerate every distinct selection
+    observation exactly once. An observation records the contextual outcomes of
+    precisely those selection sites reached through strict operands and selected
+    case edges. Each record carries an exact inverse-image guard, a residual
+    symbolic value, and a witness. This paper surveys the established approaches
+    that can solve, compile, or specialize this task: guarded symbolic execution,
+    projected model enumeration, decision structures, demand-guided search,
+    geometric region traversal, and compositional summaries. Its main synthesis
+    is a unified terminology and theoretical framework that separates the
+    observer being enumerated from the discovery algorithm and output
+    representation. Within that framework, enabled reachability, sparse event
+    maps, positive local guards, and totalized projected coordinates are
+    equivalent presentations of the selection observer. The comparison explains
+    which approaches enumerate the same fibers directly, which require
+    instrumentation or quotienting, which provide stronger guarantees on
+    restricted instances, and which solve only adjacent reduction problems. The
+    result is a problem-centered survey and semantic contract, not a claim of a
+    new generic enumeration paradigm or practical speedup.
+  ]
 ]
 
 #include "sections/01-introduction.typ"
