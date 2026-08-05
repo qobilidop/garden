@@ -1,9 +1,10 @@
-= Complexity and established special cases <sec-complexity>
+= Complexity, tradeoffs, and specialized frontiers <sec-complexity>
 
-The number of solver calls is not a cost model. This section first charges the
-graph, symbolic circuits, solver formulas, and serialized output, and then
-compares restricted instances with established output-sensitive enumeration
-results.
+The comparison framework must separate record count, representation size,
+oracle invocations, and actual enumeration complexity. This section first
+charges the graph, symbolic circuits, solver formulas, and serialized output,
+then identifies hardness in the general problem and stronger established
+frontiers for geometric and parametric specializations.
 
 == Parameters and enumeration classes
 

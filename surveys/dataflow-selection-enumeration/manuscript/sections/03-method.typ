@@ -1,130 +1,107 @@
-= Systematic mapping method <sec-method>
+= Survey scope and evidence method <sec-method>
 
-The evidence study is a systematic _map_, not a statistical systematic
-literature review. Its purpose is to classify semantic objects, algorithms,
-omission mechanisms, guarantees, and assumptions across research communities.
-The protocol follows established guidance on systematic mapping
+The evidence study is a systematic map rather than a statistical systematic
+literature review. It follows established guidance on systematic mapping
 @petersen2015mapping, separate backward and forward snowballing
 @wohlin2014snowballing, and auditable reporting of secondary studies
-@kitchenham2023segress.
+@kitchenham2023segress. Its purpose is to locate and compare solution
+mechanisms for the problem defined by @sec-formal-model, not to survey
+every use of symbolic execution, dataflow, or enumeration.
 
-== Research questions and scope
+== Comparison questions and inclusion levels
 
-The map asks what program models are used for path-free symbolic evaluation;
-what objects are enumerated; which approaches retain partial rather than total
-decisions; what soundness, completeness, disjointness, or minimality guarantees
-are proved; how residuals, witnesses, and sharing are represented; what
-complexity results exist; and which assumptions are made about purity,
-totality, cycles, time, and solver completeness.
+The four research questions in the introduction determine the extraction
+schema. For each work, the map records:
 
-The search vocabulary spans twenty-seven clusters. They cover symbolic
-execution and hardware simulation; synchronous and dataflow testing; projected
-model and cube enumeration; trace partitioning, decision structures,
-residualization, slicing, and demand; functional-logic and bounded-testing
-search; finite-observer partitions; hyperplane, neural, continuous
-piecewise-linear (CPWL), hybrid, and
-parametric regions; stream-dataflow demand; observer-, property-, and
-context-guided state or schedule reduction; higher-order concolic inputs; and
-behavioral state quotients. The protocol groups the stable coverage themes;
-the accompanying update registry versions the recurring exact searches.
+- its program or mathematical model and observer;
+- the enumerated object and the information it omits or merges;
+- its discovery algorithm and output representation;
+- its coverage, uniqueness, guard, residual, and witness guarantees;
+- its complexity statement and charged input/output representation; and
+- its assumptions about purity, totality, effects, cycles, time, dimension,
+  and solver completeness.
 
-The protocol began with a smaller vocabulary. Newly exposed clusters were
-added only through recorded reopenings; prior no-add rounds were then retired
-rather than counted as closure. This matters because demand-driven
-functional-logic search, Lazy SmallCheck, ordinary decision trees, and exact
-region enumeration each materially narrowed the initial organizing thesis.
+Works in the main comparison have one of three relationships to the target
+problem. A _direct presentation_ enumerates the same observer after explicit
+notation or activity instrumentation. A _strict specialization_ solves the
+same contract under stronger assumptions, such as all sites being observed and
+all classifiers being affine. An _adjacent comparator_ preserves or omits
+information for a different observer and is included only when it clarifies a
+semantic or complexity boundary. This classification keeps partial-order
+reduction, Petri-net observation, hardware protocol semantics, and directed
+testing from being presented as alternative implementations of an input-fiber
+enumerator.
 
-== Selection and extraction
+== Discovery, screening, and technical evidence
 
-A work is included when it makes a technical contribution to at least one
-research question and exposes enough detail to compare semantics, guarantees,
-or algorithmic behavior. Applications of an unchanged executor, conventional
-control-flow-graph (CFG) def-use testing, machine-learning graph staging,
-superseded secondary
-versions, unobtainable technical claims, and out-of-scope computational models
-receive stable exclusion codes.
+Discovery deliberately used a broader vocabulary than the final paper. It
+covered symbolic execution and guarded values; projected and partial model
+enumeration; decision structures; functional-logic and demand-guided search;
+dataflow and hardware semantics; geometric, neural, and parametric regions;
+and observer-relative state or search reduction. Exact database queries,
+result depths, dates, source-dependent metadata, and frozen screened snapshots
+are retained in the repository. Printed primary bibliographies control
+backward snowballing when citation indexes are incomplete or incorrect.
 
-Every audited database query records its exact text, source, date, hit count,
-screened count, and frozen source-dependent metadata snapshot; abstracts are
-retained when the source exposes them. The bounded closest-work snowballing
-seed set is exactly the catalog entries marked `priority=critical`, and every
-such seed receives separate backward and forward citation chases. The broader
-comparison table also contains comparison-only boundary works and does not make
-them additional closure seeds. Because citation indexes can
-omit references, merge versions, or attach incorrect identifiers, the printed
-primary bibliography controls backward closure. Technical extraction is based
-on the primary paper and records definition, algorithm, theorem, complexity,
-assumption, and example anchors. Search indexes are discovery instruments, not
-the source for mathematical claims.
+Screening assigns one current catalog disposition. At the archived snapshot,
+the 897 discovered works comprise 201 `deep-read`, 161 `screened`, 420
+`candidate`, and 115 `excluded` records. Here `candidate` is a retained
+discovery disposition, not an unresolved promise to read every record. The
+main technical comparisons rely on deep reads of primary works with pinpoint
+definition, algorithm, theorem, complexity, assumption, or example anchors.
+Primary-abstract or metadata-only records may establish search scope or a
+qualified chronology statement, but they do not support theorem or algorithm
+claims.
 
-The extraction taxonomy has six dimensions:
+The focused manuscript cites 56 cataloged works: 53 deep-read technical
+sources and three screened methodological guides. No candidate-status work is
+cited. This is narrower than the discovery catalog by design.
 
-- the program or mathematical model;
-- the represented or enumerated object;
-- the mechanism that omits, merges, abstracts, or quotients information;
-- the concrete representation and enumeration algorithm;
-- the proved or claimed guarantees; and
-- the semantic and computational assumptions.
+The audited record contains 318 database queries and 245 separately recorded
+backward or forward citation chases. Excluding repeated adjudication passes,
+the log contains 35,720 screened record occurrences; this is neither a
+unique-paper count nor an estimate of a literature population. A claim-level
+evidence matrix links every manuscript citation to source-note anchors and
+states the scope and caveat of the comparison.
 
-At the archived snapshot, the catalog contains 897 entries and marks 201 as
-deep-read. The audited log contains 318 database queries and 245 separately
-recorded backward or forward citation chases. Excluding repeated independent
-adjudication passes, these rows contain 35,720 screened record occurrences;
-this is not a unique-paper or population count. Eighty-three evidence rows link
-manuscript claims to anchored primary-source notes.
+== Bounded baseline and living updates
 
-== Saturation rule
+The baseline was frozen only after every surfaced record received a catalog
+disposition, every critical source was deep-read and chased in both directions,
+and two predeclared replacement rounds added neither a conceptual solution
+family nor a plausible close competitor. This is _bounded mapping closure_
+relative to the recorded sources, rankings, query depths, and date—not a claim
+that no additional work exists.
 
-The bounded map closes only after every candidate surfaced by the recorded
-exploratory and audited searches is reconciled by a catalog disposition or an
-explicit `not-recorded` log note, every critical source is deep-read and
-snowballed in both directions, two consecutive
-predeclared replacement rounds add neither a conceptual cluster nor a plausible
-close competitor, and independent passes audit the final record sets and
-borderline exclusions.
-A result that introduces a new omission mechanism or enumerates observations
-while avoiding decisions irrelevant to a request reopens the map. Closure is
-therefore relative to the recorded databases and date; it is not a proof that
-world literature contains no additional relevant work.
+The repository treats the snapshot as an updateable baseline. Registered
+Crossref and arXiv searches recur every 90 days, critical-source forward
+neighborhoods are refreshed at least annually, and a new mechanism or plausible
+direct competitor triggers an immediate reopening. A coverage date advances
+only after catalog dispositions, source notes, thematic syntheses, evidence
+rows, and affected manuscript claims have been reconciled. The current search
+record was last reconciled on 4 August 2026.
 
-The repository treats this closed map as an initial baseline rather than a
-terminal artifact. Registered Crossref and arXiv searches recur every 90 days,
-the critical-source forward neighborhoods are refreshed at least annually, and
-a new theme or plausible close competitor triggers an immediate update. A
-future manuscript version advances its coverage date only after the resulting
-catalog dispositions, source notes, syntheses, evidence rows, and prose have
-been reconciled.
-
-The repository accompanying this paper contains the protocol, baseline,
-query registry, catalog, audited search log, frozen screening snapshots, source
-notes, thematic syntheses, evidence matrix, and claim ledger. Downloaded papers
-and transient search responses are deliberately excluded. The current rendered manuscript is
-available at
+The accompanying repository contains the protocol, query registry, catalog,
+audited search log, frozen screening snapshots, primary-source notes, thematic
+syntheses, evidence matrix, claim ledger, and manuscript checks. Downloaded
+papers, transient API responses, and search-engine exports are deliberately
+excluded. The current manuscript and repository are linked from
 #link("https://qobilidop.github.io/dataflow-selection-enumeration/")[the paper website].
-The search record was last reconciled on 4 August 2026.
 
-== Validity threats
+== Validity threats and AI assistance
 
-The initial extraction has one primary agent. Three separate agent passes
-duplicate-screened every logical record in the final closure rounds, but all
-worked from the same project framing; they are not independent human review
-teams, and no inter-rater agreement statistic was computed. Database coverage
-and metadata are visibly incomplete; exact counts describe captured record
-occurrences, not a population of papers. Vocabulary drift is acute because the
-same phenomenon is called a path, fingerprint, configuration, cube, activation
-pattern, mode, or critical region in different communities. Finally, the
-formal framework is an interpretive bridge: this paper distinguishes a theorem
-stated in prior work from a theorem obtained only after changing the observer
-or adding graph instrumentation.
+The breadth-first discovery campaign may miss work whose terminology does not
+intersect the registered queries or citation neighborhoods. Database rankings
+are opaque, metadata services omit or merge records, and exact counts describe
+captured occurrences rather than a population. The framework itself can bias
+classification: a theorem proved for a different observer must not be silently
+transferred after adding instrumentation or changing the output quotient.
 
-== AI assistance and author responsibility
-
-OpenAI Codex (GPT-5.6 Sol) provided substantial assistance throughout this
-project, including literature-search planning, organization of the evidence
-record, cross-paper synthesis, development of the formal presentation,
-drafting and editing of manuscript text, and repository tooling. Bili Dong
-directed the project, is the sole author of record, and accepts responsibility
-for the manuscript. This draft remains under continuing human review. AI
-output is not treated as evidence: literature claims are intended to rest on
-the cited primary sources and accompanying evidence record, and mathematical
-claims must be checked against the stated definitions and proofs.
+Initial extraction and the repeated duplicate-screening passes were conducted
+with substantial assistance from OpenAI Codex (GPT-5.6 Sol) under the author's
+direction. The passes reused the same project framing and are repeated
+AI-assisted checks, not independent human reviewers; no inter-rater agreement
+statistic was computed. Bili Dong is the sole author of record, directed the
+project, and accepts responsibility for the manuscript. AI output is not
+treated as evidence: literature claims are tied to primary sources, and the
+mathematical statements remain subject to human verification.

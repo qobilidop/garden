@@ -3,7 +3,7 @@
 #show: paper
 
 #set document(
-  title: "Exhaustive Enumeration of Selection Observations in Pure Dataflow Graphs",
+  title: "Exhaustive Enumeration of Selection Observations in Pure Dataflow Graphs: A Survey and Unified Framework",
   author: "Bili Dong",
   keywords: (
     "symbolic execution",
@@ -17,14 +17,15 @@
 #align(center)[
   #text(size: 21pt, weight: "bold")[
     Exhaustive Enumeration of Selection Observations\
-    in Pure Dataflow Graphs
+    in Pure Dataflow Graphs\
+    #text(size: 15pt)[A Survey and Unified Framework]
   ]
   #v(0.75em)
   #text(size: 11.5pt)[Bili Dong]
   #v(0.2em)
   #text(size: 9.5pt)[Independent researcher]
   #v(0.35em)
-  #text(size: 9.5pt, style: "italic")[Survey and formal synthesis · Draft · 4 August 2026]
+  #text(size: 9.5pt, style: "italic")[Problem · approaches · analysis · Draft · 4 August 2026]
   #v(0.2em)
   #text(size: 8.5pt)[
     #link("https://qobilidop.github.io/dataflow-selection-enumeration/")[Online manuscript]
@@ -41,40 +42,34 @@
 )[
   #align(center)[*Abstract*]
   #v(0.25em)
-  Symbolic execution is often described as constructing a formula or symbolic
-  value. A different task is to enumerate, exhaustively and without
-  duplication, the distinct decision observations induced by a requested
-  result. For a pure shared dataflow graph, an input may expose one selection
-  site while leaving sites in unselected case cones structurally unobserved.
-  Each emitted observation record should carry an exact input guard, a residual
-  symbolic value, and a witness. This paper maps the many established forms of that
-  problem across symbolic execution, projected model enumeration,
-  functional-logic search, demand-driven testing and dataflow, decision
-  diagrams, hyperplane and neural-region enumeration, and piecewise-affine
-  systems. The map shows that the broad algorithmic proposal is not a new
-  enumeration paradigm: finite observer partitions, projected AllSMT,
-  decision structures, guarded residuals, and demand-guided search each cover
-  substantial parts of it. We then give a common formal model that keeps the
-  remaining distinctions explicit. A _selection observation_ is the partial
-  map of contextual site outcomes reached from requested roots through strict
-  operands and selected case edges. We prove that, relative to caller predicate
-  $A$, conjoining $A$ with one outcome predicate for each observed site and no
-  unobserved-site literal defines its exact inverse-image fiber, relate local
-  concolic generation to a global reachability-and-projection encoding, prove
-  exact composition under graph substitution and sharing, and separate one
-  model-producing query per fiber plus a final exhaustion query from genuine
-  output-polynomial complexity. The
-  result is a reproducible survey and a conservative formal synthesis, not a
-  claim of priority for symbolic enumeration itself.
+  Given a pure shared dataflow graph, requested outputs, and a caller-input
+  domain, the problem studied here is to enumerate every distinct selection
+  observation exactly once. An observation records the contextual outcomes of
+  precisely those selection sites reached through strict operands and selected
+  case edges. Each record carries an exact inverse-image guard, a residual
+  symbolic value, and a witness. This paper surveys the established approaches
+  that can solve, compile, or specialize this task: guarded symbolic execution,
+  projected model enumeration, decision structures, demand-guided search,
+  geometric region traversal, and compositional summaries. Its main synthesis
+  is a unified terminology and theoretical framework that separates the
+  observer being enumerated from the discovery algorithm and output
+  representation. Within that framework, enabled reachability, sparse event
+  maps, positive local guards, and totalized projected coordinates are
+  equivalent presentations of the selection observer. The comparison explains
+  which approaches enumerate the same fibers directly, which require
+  instrumentation or quotienting, which provide stronger guarantees on
+  restricted instances, and which solve only adjacent reduction problems. The
+  result is a problem-centered survey and semantic contract, not a claim of a
+  new generic enumeration paradigm or practical speedup.
 ]
 
 #include "sections/01-introduction.typ"
 #include "sections/02-motivating-example.typ"
-#include "sections/03-method.typ"
 #include "sections/04-formal-model.typ"
+#include "sections/03-method.typ"
+#include "sections/07-related-work.typ"
 #include "sections/05-algorithms.typ"
 #include "sections/06-complexity.typ"
-#include "sections/07-related-work.typ"
 #include "sections/08-discussion.typ"
 #include "sections/09-conclusion.typ"
 

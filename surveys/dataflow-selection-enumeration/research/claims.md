@@ -138,12 +138,12 @@ claims that the survey has already shown to be known.
 
 - **Status:** survey synthesis
 - **Statement:** Structural non-observation, existential projection, logical
-  don't-care, equal-value coalescing, abstract merging, and heuristic
-  functional-space partitioning, state-space symmetry quotienting, and
-  observation-pattern or specification-guided search pruning omit different
-  information and preserve different observers.
-- **Evidence required:** an extraction matrix covering definitions, observer,
-  representation, guarantee, and complexity for every deep-read work.
+  don't-care, and equal-behavior coalescing omit different information and can
+  induce different observers. Abstract merging, symmetry quotienting, and
+  property-guided pruning are adjacent instances of the same observer-relative
+  principle rather than direct implementations of the target enumerator.
+- **Evidence required:** a focused extraction and claim-evidence matrix covering
+  the primary sources used for each main solution family and adjacent boundary.
 
 ### S02 — Three equivalent presentations of selection observation
 
@@ -371,3 +371,17 @@ claims that the survey has already shown to be known.
   internal-event observer can support a novelty claim by itself. The remaining
   distinction is the exact caller-input inverse-fiber and typed-residual
   packaging for contextual selection sites in a pure shared graph.
+
+### S15 — Observer, mechanism, and representation are separate comparison axes
+
+- **Status:** organizing survey synthesis
+- **Statement:** A solver or traversal discovers nonempty fibers of a declared
+  observer, while a flat guard list, tree, decision diagram, compiled circuit,
+  or polyhedral complex represents those fibers. Observer equivalence requires
+  equality of input kernels after explicit instrumentation; similar output
+  syntax does not establish that equality.
+- **Consequence:** The main survey classifies prior work as a direct
+  presentation, strict specialization, or adjacent comparator before
+  transferring correctness or complexity results. This is the paper's
+  organizing terminology, not a priority claim for observer kernels,
+  enumeration algorithms, or the individual representations.

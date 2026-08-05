@@ -15,10 +15,19 @@ presented as inherited terms of art.
 | Symbolic result valid in a region | symbolic store, value summary, residual | guarded residual value | selected | MultiSE already uses *value summary* for disjoint guarded expressions. |
 | Exhaustive disjoint output | partition, cover, disjoint enumeration | exact observation partition | selected (local) | “Complete” must name caller domain, graph, observation policy, and solver assumptions. |
 | Overall computational task | symbolic evaluation, path enumeration, configuration enumeration, projected model enumeration | exact enumeration of selection observations | selected (local description) | “Symbolic evaluation” alone does not imply enumeration and may mean one monolithic SMT encoding. “Exact enumeration” names the externally visible task. |
+| Semantics being enumerated | observation, abstraction, quotient, projection | observer; observer fiber; observer refinement | selected | An observer determines the input partition. Refinement means kernel inclusion, equivalently factorization through the finer observer. |
+| Complete emitted item | case, region, path result, projected model | observation record `(observation, guard, residual, witness)` | selected (local contract) | The four fields carry distinct coverage, exactness, value, and feasibility obligations. |
+| How fibers are found | exploration, solving, compilation, traversal | enumeration mechanism | selected | Keep separate from the observer and output representation. |
+| How results are stored | cases, cubes, tree, diagram, regions | output representation | selected | A shared compiled object and a flat record stream can denote the same observer with different size measures. |
 | Relevance policy | demand, activity, liveness, cone of influence | enabled closure; result observation | selected (local) | “Demand” remains useful when discussing prior work, but the formal object is enabled-edge reachability. |
 | Stable representation | canonical, normalized, deterministic | graph-relative unique | selected | *Canonical* is reserved for a stated equivalence and representation conditions. |
 
 ## Required distinctions
+
+- **Observer vs. mechanism vs. representation:** the observer fixes which
+  inputs are equivalent, the mechanism discovers its nonempty fibers, and the
+  representation stores them. Changing a solver or data structure need not
+  change the observer; projecting or coalescing coordinates can.
 
 - **Observation vs. operational demand:** a selection site is *observed for*
   \((x,R)\) exactly when it belongs to the enabled closure reached from the

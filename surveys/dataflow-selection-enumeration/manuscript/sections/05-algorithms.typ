@@ -1,13 +1,14 @@
 #import "../style.typ": definition, theorem, proposition, proof
 
-= Algorithms and correctness <sec-algorithms>
+= Two general presentations and their equivalence <sec-algorithms>
 
-We now give two exact presentations of the same partition. The first discovers
-one complete fiber from a model and blocks it. The second eagerly instruments
-the whole graph and projects a conventional model enumerator onto totalized
-observation coordinates. Their equivalence is both an implementation choice
-and a novelty boundary: the second presentation is a direct reduction to
-projected enumeration.
+The survey identified two general routes to the exact record contract. A local
+presentation discovers one complete fiber from a model, constructs its
+residual, and blocks the fiber. A global presentation eagerly instruments the
+whole graph and projects a conventional model enumerator onto totalized
+observation coordinates. This section states both in the unified terminology
+and proves that they enumerate the same observer. The constructions are
+comparison baselines, not claims of new generic enumeration paradigms.
 
 == Symbolic and solver assumptions
 

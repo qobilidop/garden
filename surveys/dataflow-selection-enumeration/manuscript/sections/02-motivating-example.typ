@@ -1,4 +1,4 @@
-= Motivating example <sec-example>
+= Problem setup by example <sec-example>
 
 Let `p` and `r` be Boolean inputs and `x` and `y` be integer inputs. Consider
 the shared, pure graph
@@ -54,6 +54,15 @@ different because the observer records which outcome of `q_inner` was reached.
 A quotient by output value, residual function, or maximal affine behavior
 would merge them. That quotient is legitimate for a different objective but is
 not this observer.
+
+This distinction has a concrete specification role even without assigning
+operational significance to evaluation order. An event-aware validation task
+may ask whether every source selection outcome remains represented after graph
+rewriting, lowering, or component substitution. The two inner outcomes then
+belong to different records despite equal values. A value-only equivalence
+checker deliberately chooses a coarser observer and merges them. The framework
+does not declare one policy universally preferable; it makes the policy an
+explicit part of the problem statement.
 
 Third, the guards contain only positive outcome predicates for sites actually
 observed in the corresponding record. The first guard does not say anything

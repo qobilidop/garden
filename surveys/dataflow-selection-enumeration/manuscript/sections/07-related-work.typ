@@ -1,785 +1,301 @@
-= Related work and synthesis <sec-related>
+= Known approaches and comparative analysis <sec-related>
 
-The closest literature is not one lineage with changing terminology. It is a
-set of constructions that preserve different observers while producing
-superficially similar partial assignments, guards, or residuals. This section
-organizes those constructions by the information they retain and states the
-reduction or boundary in each case.
-
-@tab-lineages summarizes the observer retained by each major lineage before
-the detailed comparison.
+The target is one exact selection-observation record per nonempty caller-input
+fiber. Prior approaches become comparable only after fixing that contract.
+Some can enumerate the fibers directly after instrumentation, some compile the
+same finite observer into a shared representation, and some solve strict
+special cases with stronger guarantees. @tab-approaches summarizes the six
+principal families.
 
 #figure(
   block(breakable: false)[
-    #text(size: 8.4pt)[
+    #text(size: 8.2pt)[
       #table(
-      columns: (0.85fr, 1.25fr, 1.15fr, 1.4fr, 1.45fr),
+      columns: (1.05fr, 1.15fr, 1.2fr, 1.25fr, 1.4fr),
       align: left,
       inset: 3.5pt,
       stroke: (x: none, y: 0.4pt + rgb("c8ced6")),
       table.header(
-        [*Lineage*], [*Primary object*], [*Information omitted*],
-        [*Established result*], [*Boundary here*],
+        [*Family*], [*Discovery object*], [*Natural output*],
+        [*Route to target*], [*Principal boundary*],
       ),
-      [Symbolic execution], [Path or guarded residual],
-        [Merged or irrelevant paths], [Exact guarded behavior],
-        [Different event observer],
-      [Projected enumeration], [Selected-coordinate models],
-        [Unprojected variables], [Complete projected image],
-        [Sparse map requires totalization],
-      [Demand-guided search], [Forced inputs or choices],
-        [Unforced structure], [Complete or fair values],
-        [Usually no exact fiber residual],
-      [State/loop reduction], [Reduced markings, runs, or sibling states],
-        [Symmetric/bisimilar states; redundant interleavings or patterns],
-        [Exact quotient or heuristic postponement],
-        [State space or search order, not input fiber],
-      [Directed path search], [Branch under path context],
-        [Repeated or target-failing contexts], [Coverage or target heuristic],
-        [No exhaustive observer partition],
-      [Trees and diagrams], [Reached tests or compiled function],
-        [Skipped tests; shared subfunctions], [Exact finite observer],
-        [Flat guards can lose sharing],
-      [Neural trees/typed affine decision structures (TADS)],
-        [Feasible piecewise-linear (PWL) policy regions],
-        [Infeasible or entailed tests], [Exact guard/map or action tree],
-        [Fixed neural/PWL architecture],
-      [Binarized neural-network (BNN) diagrams], [Requested class function],
-        [Hidden activations], [Exact BDD/SDD compilation],
-        [Finite binary extensional output],
-      [Geometric/piecewise-affine (PWA)], [Cells or affine modes],
-        [Equal-map cells after quotient], [Exact region traversal/composition],
-        [Affine, dimensional assumptions],
-      [This synthesis], [Requested-root event fiber],
-        [Unreached case cones], [Equivalent local/global presentations],
-        [Finite typed pure DAG],
+      [Guarded symbolic execution], [Feasible path or merged symbolic state],
+        [Guarded residual], [Log demanded site outcomes],
+        [Paths may refine or cross the target partition],
+      [Projected model enumeration], [Selected coordinate image],
+        [Models, cubes, or compiled cover],
+        [Project totalized activity/outcome coordinates],
+        [A short cube may cover several observations],
+      [Decision structures], [Reached tests or compiled finite function],
+        [Tree, BDD, ADD, or related DAG],
+        [Compile the totalized observer and residual labels],
+        [Compilation size and variable order can dominate],
+      [Demand-guided search], [Forced inputs, choices, or values],
+        [Partial map or value stream],
+        [Align demand with requested-root enabled closure],
+        [Often lacks exact fiber guards or residuals],
+      [Geometric/parametric enumeration], [Cells, modes, or critical regions],
+        [Polyhedral guard and affine map],
+        [All-sites-observed affine specialization],
+        [Affine and dimensional assumptions],
+      [Compositional summaries], [Component relation or guarded pieces],
+        [Reusable guarded summary],
+        [Parameterize summaries by requested outputs],
+        [Exact composition does not imply compact reuse],
       )
     ]
   ],
-  caption: [Primary objects, omission mechanisms, guarantees, and boundaries across the compared lineages.],
+  caption: [Established solution families expressed in the unified framework.],
   kind: table,
-) <tab-lineages>
+) <tab-approaches>
 
-== Symbolic execution and guarded residuals
+== Guarded symbolic execution
 
-=== Symbolic residuals and conditional values
+Classical symbolic execution associates path conditions with symbolic states
+or substitutions. Denotational treatments make this correspondence exact
+@voogd2025compositional, while multi-path execution merges paths into guarded
+symbolic values @sen2015multise. Solver-aided libraries and reusable merging
+semantics preserve the same basic separation between guards and residual
+values @porncharoenwase2022merging @lu2023grisette.
 
-Classical symbolic execution partitions inputs by feasible control-flow
-histories. Denotational treatments make each path condition and symbolic
-substitution a semantic piece @voogd2025compositional. MultiSE instead merges
-paths into value summaries whose alternatives are guarded symbolic
-expressions; in the exact setting those guards are disjoint and exhaustive
-@sen2015multise. Reusable symbolic interpreters and compositional merging
-frameworks further show that purity, library structure, and normalized guarded
-values do not by themselves define a new semantic object
-@porncharoenwase2022merging @lu2023grisette.
-Conditional-compilation analysis and its conditional-value rewrite semantics
-predate these systems: nested guarded macro values compute exact source-
-presence conditions without enumerating feasible preprocessor paths
-@hu2000conditional @latendresse2003conditional @latendresse2004rewrite. They supply an exact
-conditional-value precedent, but its observer is compilation presence rather
-than runtime selection behavior.
-Much earlier, the global value graph compactly represented symbolic expression
-values together with their flow across arbitrary control-flow graphs
-@reif1977globalvalue. Dataflow-network semantics also studies schematological
-equivalence, including partially interpreted networks
-@rabinovich1996schematological @rabinovich1997partial. These are graph-native
-symbolic sharing and network-equivalence precedents, not input partitions
-indexed by requested internal observations.
-=== Dataflow and hardware semantics
+These systems supply two parts of the target record almost directly: a
+feasibility guard and a residual. They do not by themselves choose the
+selection observer. Conventional paths may distinguish branches outside the
+requested enabled closure, merge histories that retain different requested
+events, or split one observation because of unrelated control flow. To solve
+the target problem, evaluation must be demanded from the requested roots,
+record contextual selection outcomes, preserve graph sharing, and block the
+entire resulting fiber rather than one execution model. Output-directed and
+dependence-guided symbolic execution already demonstrate that exploration can
+be organized around queried values rather than complete paths
+@denaro2012allvalues @wang2017dependence; the remaining obligation is exact
+agreement with the declared observer.
 
-The surrounding network-semantics lineage is broader still: it includes
-compositional relational semantics for indeterminate networks, full abstraction
-for nondeterministic networks, a network calculus and algebra, a fibrational
-account, and stability and sequentiality results
-@stark1989relational @russell1989fullabstraction @stark1992calculus
-@stark1995algebra @stark1991fibrations @panangaden1990stability. These titles
-establish whole-network semantic and structural boundaries; none of their
-accessible records states an exact image-and-inverse-fiber contract for a
-requested sparse internal observer.
-Jonsson's later trace semantics makes this boundary sharper: it is fully
-abstract and compositional for nondeterministic FIFO dataflow, and extends to
-asynchronous networks with unordered or lossy channels
-@jonsson1994fullabstraction. Jonsson and Kok had already related two fully
-abstract nondeterministic-dataflow models by proving them isomorphic
-@jonssonkok1989comparison. Abramsky's generalized Kahn principle gives a still
-broader fixed-point boundary for a class of nondeterministic abstract
-asynchronous networks, including models over event structures
-@abramsky1990generalizedkahn. These results compare whole network behaviors;
-they do not enumerate requested firing outcomes and their caller-input inverse
-images.
+The local generator formalized in @sec-algorithms is therefore not a new symbolic
+execution paradigm. It is the target observer instantiated in a standard
+guard-and-residual evaluator. Its useful property is the exact positive guard:
+structurally unobserved sites require no absence literal because enabled
+reachability is already fixed by the observed outcomes.
 
-Meaning-preserving translation has related Kahn processes to firing-based
-actors @cedersjo2016processesactors, while a constructive sufficient
-compatibility analysis supports the reverse actor-to-Kahn translation
-@tretter2015actorsaskahn. Other hybrids assign Kahn or decidable-dataflow
-behavior per actor port @oh2013portactor, compose dataflow and Kahn networks in
-a hierarchical parameterized execution model @arras2016dkpn, or carry SCADE's
-Kahn semantics into a synchronous Kahn multicore implementation
-@colaco2018scadekahn. These are substantial program-model and implementation
-boundaries, but none returns a partition of caller inputs by one requested
-internal observation with a typed residual.
-The intensional/extensional distinction is itself explicit in dataflow
-semantics. A categorical account records stepwise token production, whereas a
-synchronous Kahn account records the functions computed by nodes; the two are
-proved equivalent under Wadge's cycle-sum deadlock-freedom condition
-@gay2003intensional. This intensional history remains a whole-program token
-interaction semantics, not the inverse image of one requested internal-site
-observer over caller inputs.
-Within that lineage, fixed-point input/output semantics has been made
-compositional for Petri-net parallel composition, feedback, and output merging
-while remaining consistent with step sequences @gold1995petridataflow.
-Indeterminate dataflow has a separate expressiveness hierarchy for fair-merge
-primitives under network composition @panangaden1992expressive and a later
-profunctor-based relational model with a congruent bisimulation
-@hildebrandt2004relational. Extensional Kahn semantics has also supported a
-dependency-graph test proving deadlock freedom @wadge1981deadlock. These
-results preserve network behavior, primitive expressiveness, bisimulation, or
-deadlock freedom—not the inverse fibers of one requested internal observer.
-At a different abstraction level, faceted ETL workflows have a complete
-categorical axiomatization and a three-dimensional diagram language more
-expressive than a single DAG @delpeuch2020faceted. Its completeness concerns
-workflow equations, not exhaustive image and inverse-fiber enumeration for a
-declared internal observer.
+== Projected model enumeration
 
-Selection observations choose a particular intensional quotient of these
-executions. They discard ordinary control history, retain the outcome of every
-observed selection site even when alternatives have equal residuals, and omit
-a site only when it lies outside the enabled closure. All-values symbolic
-execution and dependence-guided multipath techniques can avoid exploring
-branches irrelevant to selected program values @denaro2012allvalues
-@wang2017dependence, but their requested variables, CFG paths, and equivalence
-criteria differ from this graph observer. The contribution here is therefore
-not disjoint guarded residuals; it is the explicit correspondence between one
-declared site observer, its exact local fiber, and its projected encoding.
-General symbolic path simulation has also been embedded as a feasibility
-service inside path-sensitive interprocedural dataflow analysis
-@hampapuram2005pathsimulation. That integration answers client path queries;
-it does not emit the complete requested-event image and inverse input fibers.
-Symbolic simulation has separately been applied directly to synchronous
-programs @garriou2002synchronous and extended to synchronous dataflow programs
-with timers @baudart2019timers. That language model is close to this paper's
-dataflow setting, but its output remains symbolic executions rather than a
-sparse requested-site observation partition.
-Exact high-level WCET analysis has likewise used symbolic state-space
-exploration of synchronous programs @logothetis2003wcet. Its exactness belongs
-to the timing-analysis objective, not to enumeration of all caller-input fibers
-under a selected internal-event observer.
-More recently, parametric WCET analysis has inferred input conditions from
-binary code and produced a formula for procedure WCET as a function of
-arguments, including argument-dependent branches and loops
-@grebant2024parametric. This is a close input-sensitive conditional summary,
-but its observable is execution time: it does not enumerate the image and
-inverse fibers of a sparse internal selection map or attach the program's
-general residual value to each fiber.
-Synchronous dataflow language design also has explicit transparency and
-compositionality lines @cheung2021transparent @benveniste2000compositional.
-Their semantic and compilation boundaries organize whole program networks;
-they do not derive an input-indexed sparse map at one requested result.
-Recent mechanization gives an operational Coq semantics for asynchronous
-FIFO-connected dataflow circuits, sufficient conditions for schedule-independent
-observable channel histories, and equivalent graph and structured-calculus
-representations @law2025dataflowcircuits. This strengthens the formal
-program-model boundary, but its observable is whole-circuit channel history,
-not a requested sparse selection map and its exact input fibers.
-The corresponding dissertation extends the mechanization across two levels:
-dataflow-circuit specification and hardware implementation, as a step toward a
-Rocq-verified dynamically scheduled HLS compiler @law2026hardware. That
-refinement boundary relates whole circuit models rather than enumerating an
-internal selection observer over symbolic caller inputs.
-Earlier cross-level results are substantial. A conformance relation maps
-explicit synchronous-hardware signals to token production and consumption in
-asynchronous queued dataflow while preserving worst-case throughput and
-latency @tripakis2016tokenssignals. Modular refinement from synchronous
-machines to bounded latency-insensitive dataflow networks gives a separate
-cycle-accurate compositional guarantee @vijayaraghavan2009bounded. Both relate
-whole hardware and dataflow behaviors, not the inverse input fibers of one
-requested internal observer.
-The latency-insensitive lineage also generalizes wrappers to independently used
-channels, arbitrary interconnect topologies, and multiple clocks
-@singh2004generalizedlatency; validates protocol families against synchronous
-designs by latency equivalence @suhaib2006validating; and gives a
-process-algebraic system model @kapoor2009latencyinsensitive. At the block
-level, proved input and output buffers preserve token sequences under the
-paper's fairness assumptions while backpressure breaks long combinational paths
-@cao2015latencyblocks. These works strengthen the whole-channel implementation
-and validation boundary, not the requested-site observer-fiber result.
-Dynamic-dataflow execution-trace graphs are a closer guard-level predecessor.
-Their nodes are concrete action firings and their dependency edges include
-tokens, ports, state, and explicit guard-enable or guard-disable relations;
-serial executions support a finite design-space reconstruction
-@brunet2013guardtraces @brunet2015dynamicdataflow. The later journal formalism
-specifies the processing needed for one execution-trace graph to represent all
-admissible trajectories of a dynamic dataflow process network
-@casalebrunet2018etg. This completeness is over action-firing schedules and
-dependencies, not over caller-input fibers, and its trace nodes carry no
-general residual value per observation.
-Formal optimization of HLS dataflow circuits gives a complementary omission
-boundary. Model checking can prove that generic handshake behaviors are absent
-before simplifying the circuit without restricting behavior, while
-HLS-informed inductive invariants make the required property proofs scalable
-@xu2023dynamism @xu2023invariants. Latency and occupancy balancing can instead
-remove spurious stalls, make exchanges predictable, and expose further
-handshake simplification opportunities @xu2024spuriousdynamism. These methods
-prove or transform selected circuit behaviors; they do not enumerate all
-input-indexed internal observations.
+AllSMT enumerates satisfying assignments to designated Boolean or theory
+coordinates while existentially hiding the rest @phan2015allsmtr. Recent
+projected SAT and SMT methods can emit disjoint partial models and avoid a
+growing family of ordinary blocking clauses @spallitta2024disjoint
+@spallitta2025projected. Knowledge-compilation approaches similarly enumerate
+or compile projected images into deterministic representations
+@lagniez2024decisiondnnf.
 
-=== Delayed choices and symbolic heaps
+This is the most direct generic reduction. Give every contextual selection site
+a finite coordinate whose values are its outcomes plus an explicit
+`unobserved` sentinel. Activity equations connect that sentinel to
+requested-root reachability. Projecting the graph formula onto those
+coordinates then enumerates exactly the totalized selection observer. The
+construction is conceptually complete but charges the eager value, classifier,
+case-membership, and activity encodings.
 
-Delayed-choice execution is an especially instructive neighbor. A bounded
-nondeterministic value remains in a shared suspension until a non-copy use
-forces a concrete alternative, preserving reachable visible states while
-avoiding unused choices @gligoric2008delayed. Concrete forcing still separates
-values that induce the same selector outcome and can enumerate values where
-our residual remains symbolic. Structural observation, concrete forcing, and
-logical relevance are consequently three different omission rules.
+The output contract still matters. Enumerating every complete projected tuple
+produces one element per selection observation. A short partial cube can cover
+many tuples and is therefore a compact cover of the observer image rather than
+the requested record stream. Disjoint short-model methods make such covers
+precise, but a consumer that requires one residual and witness per complete
+observation must refine or annotate the cubes accordingly.
 
-Heap symbolic execution supplies a stronger conditional-value predecessor.
-Case-optimal bounded heap exploration already retained one non-isomorphic heap
-configuration per strong-property case @deng2007caseoptimal.
-Symbolic initialization places null, fresh-object, alias, and uninitialized
-possibilities in guarded value sets inside one heap instead of forking the
-generalized-symbolic-execution (GSE) tree; a bisimulation proves exactly the
-same feasible control-flow sequences
-@hillery2016heap. POSE later represents alias alternatives with `ite`-valued
-fields and empirically targets one symbolic trace per program path
-@braione2026pose. Its authors explicitly leave formal soundness and
-completeness relative to GSE open, so the construction and experiments must not
-be upgraded to an equivalence theorem. Both works establish up-front merging
-of conditional input structure, but partition by program control rather than
-the requested selection observer.
-Conversely, path-minimal-object generation constructs only the object
-properties needed to replay one selected TypeScript path
-@menshutin2025pathminimal. That is sparse path-relative input synthesis, not an
-exhaustive partition over all observations.
+== Compiled decision structures
 
-=== State and schedule quotients
+A decision tree records only the tests encountered on a root-to-leaf route;
+tests in other subtrees are structurally absent. Reduced BDDs share Boolean
+subfunctions canonically under a fixed variable order @bryant1986bdd, and ADDs
+extend terminals beyond Boolean values @bahar1997add. Finite observer
+partitions can also be generated directly as exact input-equivalence classes
+or satisfiable atoms of a declared observation alphabet
+@krafczyk2017effective @huang2024exhaustive.
 
-State-space and exploration quotients provide two further boundaries. The
-well-formed colored-net symbolic-reachability lineage begins at least with the
-1991 construction and its expanded journal treatment: it groups markings by
-encoded color symmetries while preserving the represented reachability
-analysis; constraint-based variants extend the quotient toward asymmetric
-models, and partial-symmetry constructions interpolate between them
-@chiola1991wellformed @chiola1997srg @haddad1995partial @capra2005colored. A recent symbolic-execution
-framework instead explores canonical orbit representatives of symmetric
-embedded-system states and states quotient-soundness and constraint-reuse
-results, while limiting empirical validation to a toy prototype
-@iavich2026symmetry.
+For finite encoded inputs, compiling the function
+$x mapsto overline(T)_G(x,R)$ yields an exact representation of the target
+partition. Leaves or terminals may additionally carry residual identifiers and
+witnesses. A tree exposes the sparse sequence of tests made along one route; a
+diagram exposes shared predicates and subfunctions across many routes. Either
+can be exponentially smaller or larger than a flat guard list, so a comparison
+must state whether the output is a stream of records or one shared compiled
+object.
 
-Partial-order reduction supplies a much older and broader exact omission
-lineage. Coverage-preserving reductions remove redundant concurrent sequences
-while retaining full reachable-state coverage @holzmann1992coverage. Later
-symbolic methods use BDDs or SAT/SMT independence conditions and can preserve
-local properties, LTL without next, or a representative set with no redundant
-interleavings under the method's declared optimality criterion
-@alur2001partialorder @bhattacharya2005symbolicpor @kahlon2009mpor
-@vandermeulen2011por. Concolic dynamic partial-order reduction (DPOR) applies
-the same schedule quotient during
-test generation @saarikivi2012dpor. SymPaths is closer still: it records
-scheduling events in symbolic paths and proves correctness and completeness of
-the reduced symbolic semantics relative to concrete multithreaded executions
-@deboer2020sympaths. These are exact schedule quotients, not caller-input
-fibers; approximate POR makes that boundary explicit by parameterizing
-approximately commuting actions and nearby initial states @fan2018approxpor.
-Lazy happens-before sharpens the same boundary by ignoring mutex-only edges to
-obtain a more precise schedule-state equivalence than ordinary happens-before
-@thomson2015lazy.
-Other observer-sensitive POR precedents relax which actions count as visible
-under a checked property, or soundly approximate may-happen-before from static
-field accesses and the current dynamic state to omit unnecessary scheduling
-choices @peled2001relaxedvisibility @parizek2014approxhb. Explicit task-level
-happens-before constraints can instead be analyzed into a static abstraction
-that classifies task pairs as sequential, exclusive, or parallel
-@angerer2010schedule. These are property or schedule observers, not caller-
-input partitions.
-A symbolic observation graph makes this observed/unobserved distinction
-structural: its symbolic nodes aggregate states linked by unobserved
-transitions, while observed transitions remain explicit edges
-@ouni2017sog. The construction compacts a concurrent-system state graph for
-model checking. It does not enumerate the preimages of observations over
-caller inputs or associate a residual program value with each preimage.
-RT-MOBS uses a different observer object: it compositionally builds Time Petri
-Net monitors and target formulas from real-time property patterns
-@ge2021rtmobs. Such an observer is a model fragment composed with the system
-for property checking, rather than an enumerated selection value whose inverse
-caller-input set carries a residual program value.
-The same distinction persists in stubborn-set refinements: safety properties
-or state-property questions drive the reduction @hansen2016safety
-@kristensen2006question, transparent and optimal variants sharpen which
-representatives can be omitted @siegel2012transparent @valmari2011optimal,
-and property automata can direct both POR and search @jensen2022automata.
-Earlier and parallel variants specialize stubborn sets to standard, linear-
-time, simple linear-time, or combined state/event temporal properties
-@schmidt1999standard @varpaaniemi2005linear @lehmann2012simplelinear
-@benes2011stateevent.
-Those methods preserve a model-checking question over schedules; they do not
-derive an inverse partition of all caller inputs for a selected graph event.
+Compilation also exposes a semantic choice. Reducing nodes that have equal
+successors preserves the compiled observer, but compiling only the requested
+output value may erase equal-valued selection events. Exact neural decision
+trees and affine decision structures make this contrast concrete: they can
+remove infeasible or entailed tests while preserving a policy function
+@nguyen2020ecdt @affinitree2024. They solve the selection-observation task only
+when their terminals or internal labels retain the declared selection events.
 
-More directly, optimal DPOR with observers makes dependencies conditional on
-future reads or receives, covers every maximal observational-equivalence class,
-and emits no equivalent maximal schedules twice @aronis2018observers. Its
-context-sensitive journal successor combines that observer relation with
-state-relative commutation and reports exponential reductions over either
-ingredient alone @albert2023dpor. Thus exact observer-relative omission and
-duplicate-free enumeration are established even beyond ordinary independence;
-the quotient coordinate is still a concurrent schedule, not a caller input.
-Reads-from and reads-value-from quotients sharpen the observation dimension:
-they retain a representative according to which value a read sees, with the
-latter sometimes exponentially coarser while preserving local-safety coverage
-@abdulla2019readsfrom @agarwal2021rvf. Canonical symbolic configurations can
-also group distributed states and interleavings together @pick2023psym.
-Maximal-causality reduction claims one execution per largest causal class and
-a provably minimal execution count @huang2015mcr. It has also been extended to
-total store order (TSO) and partial store order (PSO), while a later variant
-uses static dependency analysis to reduce
-the causal constraints without silently accepting the redundancy that the
-analysis can introduce @huang2016mcrtso @huang2017staticmcr.
-An independent weak-memory line models thread scheduling and store-buffer
-nondeterminism together to give sound DPOR under TSO and PSO; its optional
-buffer bound is explicitly incomplete @zhang2015relaxeddpor.
-Value-happens-before instead
-groups same-valued observations, can be exponentially coarser than happens-
-before, and admits polynomial time per class for bounded threads
-@chatterjee2019valuecentric.
-Dynamic cone-of-influence reduction is closer to a requested-observer
-criterion because relevance changes with the checked property, state, and
-interleaving @telbisz2025coi; it preserves one property judgment rather than
-enumerating every observer value and inverse input fiber.
-At a component boundary, interface grammars compile allowed nested call
-sequences and semantic constraints into environment stubs for modular model
-checking @hughes2008interface. This is an analyst-supplied interface observer,
-not a derived partition of caller inputs.
+== Demand-guided evaluation and search
 
-=== Petri-net unfoldings and observers
+Functional-logic implementations use stable choice identities and
+demand-populated decision maps so that shared nondeterministic choices remain
+consistent @brassel2007tighter @brassel2011thesis. Pull-tabbing and fair
+evaluation address exhaustive value production in shared term graphs
+@antoy2011pull @jost2023fairscheme. Lazy SmallCheck refines just the partial
+input demanded by a Boolean observation and remains exhaustive over its bounded
+domain @runciman2008smallcheck. Classical dataflow analyses compute least or
+reverse demand for a fixed requested result @avron1994stability
+@pingali1985efficient, and modern bidirectional demand semantics can characterize
+minimal sufficient partial inputs @xia2024demand.
 
-Petri-net semantics provides complete partial-order objects independent of
-slicing. Token-flow DAGs modulo isomorphism unify processes, partial languages,
-rewriting terms, step sequences, and firing sequences
-@juhas2009tokenflows. Token-flow unfoldings combine that representation with
-prime event structures: one avoids isomorphic processes and a reduced variant
-further decreases representations whose underlying runs are isomorphic, while
-both retain complete partial-order behavior; bounded nets admit canonical
-complete finite prefixes @bergenthum2009unfolding. A modular construction
-derives a complete prefix directly from interface-relative component summaries,
-without first constructing the global net @madalinski2009modularprefix.
-Contextual prefixes treat read-only access and multiple event histories
-directly for arbitrary semi-weighted bounded contextual nets
-@baldan2008contextualprefix. Symbolic complete prefixes for safe Time Petri Nets
-represent every temporally complete extended process by prefix substitution
-under symbolic token-age constraints @chatain2006timeprefix. A later symbolic
-unfolding carries time, parameters, and stopwatches and improves
-prefix locality and compactness for ordinary safe Time Petri Nets, but the
-finite-complete-prefix theorem is restricted to that nonparametric subclass
-@jard2013parametricunfolding. High-level
-symbolic prefixes generalize the safe-net construction and extend its cut-off
-criterion to a class with infinitely many reachable markings
-@wuerdemann2024symbolicprefix. Token-trail semantics instead gives a labelled-net
-language that represents conflict and concurrency,
-contains all finite unfoldings, and relates the source net's step language to
-those of the member nets @kovar2024tokentrail. For 1-safe free-choice nets, a
-full prefix of the maximal-step computation tree supports reveals and excludes
-analysis and computes the sets of transition labels occurring in all maximal
-runs, with an exponential worst-case footprint bound
-@adobbati2022informationflowprefix. The underlying information-flow semantics
-also includes negative excludes, set-valued extended reveals, and
-occurrence-count-sensitive repeated reveals @bernardinello2016revealsexcludes.
-A later bounded equal-conflict construction computes multiplicity-sensitive
-parametric reveals correctly on a finite full prefix, extending the model from
-1-safe free-choice nets to bounded weighted nets
-@adobbati2024parametricreveals.
+These results establish that dynamically sparse choices and requested-result
+demand are not new. Their natural output, however, is commonly a value stream,
+a partial input, a choice fingerprint, or a fixed-input demand set. The target
+enumerator additionally requires the complete inverse-image guard and a
+residual valid over that entire guard. A demand system becomes a direct
+solution only after its demand judgment is proved equal to the enabled closure
+and its fair search is grouped by complete observation fibers.
 
-Two other prefix results make the request-relative boundary explicit. A
-general unfolding framework lets the user declare which information a prefix
-must preserve and how cutoffs are recognized while separating extension order
-from cutoff correctness @bonet2014recent. Goal-driven unfolding specializes a
-finite safe net to one requested marking, omits transitions outside every
-minimal goal-reaching configuration, and preserves all such configurations
-@chatain2017goaldriven. These are rich whole-net behavior languages,
-reachability summaries, prefixes, unfoldings, and transition observations—not
-input-indexed observations of one requested pure-dataflow result or typed
-residual functions over its caller-input fibers.
+The comparison also prevents a terminology error. The base graph is not called
+lazy: ordinary nodes are strict under a declared observation policy, while
+selection sites demand only the cases chosen by their outcomes. “Demand” here
+is graph-relative support for a requested observer, not an operational
+evaluation strategy.
 
-Colored-net symbolic unfoldings provide another true-concurrency
-representation: they avoid materializing every independent-action interleaving
-and commute with component product @chatain2010factorization. Color quotienting
-and impossible-place-color removal can additionally produce a bisimilar
-unfolded net @bilgram2023unfolding. Other state reductions replace an acyclic
-implicit-transition subnet by basis markings or compute maximum bisimulation
-through fully symbolic partition refinement @ma2017basis
-@mumme2013bisimulation @dovier2002rank @wimmer2006sigref. The BDD lineage
-predates those works @bouali1992symbolicbisim; later parallel signature
-refinement improves quotient construction and representation
-@vandijk2018multicore. Importantly, whole-system bisimulation minimization can
-cost more than direct symbolic invariant checking @fisler2002bisimulation, so
-exact quotienting alone implies no practical advantage.
-Time-anonymous-token analysis instead merges timestamps assessed as irrelevant
-to future timed behavior, with minor information loss explicitly disclosed
-@bellettini2011time. Partial-observation estimators address the dual question
-of which Petri-net states remain possible. Event-based state estimators predate
-the later exact formulations @giua1997estimators. Fixed-structure linear
-constraints can characterize exactly the current markings consistent with an
-observed label word @giua2003marking @corona2003observers, while a related
-algorithm returns every minimum-total-token _initial_ marking consistent with
-that word @li2013minimum. Contact-free silent transitions admit an exact
-fixed-structure linear characterization @giua2005state, and representative-
-marking graphs recover a complete consistency set from a smaller basis plus
-linear systems @ma2017representative. A reduced online observer goes further
-representationally: it enumerates only minimal explanations and basis markings,
-whose unobservable reach is exactly the complete current-marking estimate
-@jiroveanu2008monitoring. Contact-free silent transitions, minimal
-explanations, token-number prediction, and time-label constraints extend the
-minimum-initial-state line under different assumptions @ruan2019unobservable
-@yue2024minimal @yue2025prediction @li2026minimumstate. Observed state-class
-graphs and hierarchical bases address timed or silent current-state estimation
-@li2024timedstate @ghazel2009observer @ma2021hierarchical
-@aguirre2008observability. The original modified state-class-graph estimator
-for silent timed transitions is retained with a correction caveat rather than
-an unqualified completeness claim @basile2013timedmarking. A later linear
-formulation returns the complete timed marking set without the full state-class
-graph @ma2020timedmarking, and a region observer treats timed automata with no event observation
-@gao2020noevent. A probabilistic variant weights the consistent marking set
-@cabasino2015probabilistic. A different observation model starts
-from measured places even when no transition firing is directly observed
-@arichi2026estimation. The inverse problem has also been posed directly:
-finite asynchronous token-change observations support reconstruction of
-compatible Petri-net structures, with optimization of transition and incidence
-counts under the paper's assumptions @ruan2016pnreconstruction. Finally,
-observation-equivalent Petri-net generators can
-replace marking outputs by adaptive labels while preserving exactly the
-consistent firing-sequence and marking sets @tong2016observation. These results
-make inverse-observation sets, compact exact representations, and observer
-compilation established concepts. Sparse symbolic loop execution instead
-observes sibling states' branch-edge patterns up to a loop-impact barrier and
-postpones repeated patterns @busse2024ssle. The former is a state quotient and
-the latter a coverage-oriented search heuristic. Neither is an exact partition
-of caller inputs by requested internal events, but both preclude a broad claim
-that observation-guided omission or symbolic quotienting is new.
+== Geometric and parametric specializations
 
-=== Target- and property-guided search
+When every selection is observed and every classifier is the strict sign of an
+affine form, a complete observation is a sign vector and each nonempty fiber is
+a full-dimensional hyperplane-arrangement cell. Reverse-search and incremental
+algorithms enumerate those cells exactly with output-sensitive guarantees
+@avis1996reverse @ferrez2005fixedrank @rada2018new. Exact ReLU analyses likewise
+enumerate activation patterns or polyhedral regions and often attach affine
+output maps @serra2018bounding @vincent2021reachable.
 
-Context-guided concolic search similarly prefers candidate branches reached
-under new dominator-filtered path contexts and widens the context depth only
-incrementally @seo2014context. A dissertation extension learns and merges
-preconditions from prior executions that fail to reach one requested target,
-then prunes the target-relative search @seo2015context. These mechanisms make
-requested-goal and observation-relative pruning established ideas. They change
-search order or exclude target-failing paths; they do not enumerate the exact
-image and inverse fibers of a total finite observer.
+Multiparametric programming provides an even closer guard-and-residual
+contract. Critical-region algorithms emit polyhedral parameter guards together
+with affine optimizers and have explicit LP-oracle-relative bounds
+@jones2006parametric @columbano2009sufficient. Piecewise-affine systems compose
+upstream affine maps into downstream guards and can minimize regions with equal
+behavior @geyer2010mode @geyer2008optimal.
 
-Earlier target guidance assigns state-dependent fitness to paths approaching a
-requested coverage goal, while abstraction-guided concurrent testing ranks
-thread and data choices through a backward slice from the selected assertion
-@xie2009fitness @rungta2009abstraction. Both reinforce the same boundary:
-targeted observations can organize sparse exploration without defining a
-complete observer quotient.
+These are strict specializations, not analogies. They solve the target task
+when the observer retains every affine test outcome and the caller domain
+excludes or explicitly assigns boundary points. Their stronger algorithms and
+complexity results should be preferred under those assumptions. They cease to
+be direct when nested selections make some sites structurally absent, when a
+fiber is lower-dimensional, or when equal affine maps are merged despite
+different observed outcomes.
 
-Learned pruning makes the guarantee boundary sharper. Homi retains only states
-predicted to improve coverage or expose bugs, and NumScout removes functions
-predicted irrelevant to a requested numerical-defect class
-@cha2020homi @chen2025numscout. Both are intentionally approximate. They
-establish requested-observation control over state retention, not an exact
-equivalence relation or exhaustive enumeration contract.
+== Compositional guarded summaries
 
-Coverage can also reduce the concrete seeds supplied to symbolic execution.
-Coverage-based cause reduction retains a subset with the same statement
-coverage and then prioritizes that subset before exploration
-@zhang2014reduction. This is observation-preserving preprocessing, not a
-semantic quotient of symbolic executions.
+Compositional symbolic execution summarizes component behavior with guarded
+relations, preconditions, postconditions, or path fragments
+@godefroid2007compositional @anand2008demand @voogd2025compositional. Guarded
+piecewise-affine composition substitutes an upstream residual into downstream
+guards and residuals while discarding infeasible conjunctions
+@geyer2010mode. Selective computations supply an abstract interface for
+statically visible, dynamically chosen effects @mokhov2019selective.
 
-Property-guided work supplies a stronger boundary than coverage heuristics.
-Regular-property-guided dynamic symbolic execution (DSE) combines an event-FSM
-history with a static
-over-approximation of future events to prioritize branches likely to reach one
-accepted trace @zhang2015regular. SRV's ideal rules additionally slice branches
-that cannot contribute a counterexample or whose accepted continuations are
-equivalent to an already explored event sequence when Preset/Postset satisfy
-the stated soundness conditions. The evaluated implementation is explicitly
-unsound because its Postset is context-insensitive @yu2018symbolic.
-Derivative-guided symbolic execution represents LTLf trace
-specifications as symbolic finite automata, uses residual specifications to
-prune precondition traces, and proves soundness and falsification completeness
-relative to its naive semantics @yuan2025derivative. Thus requested-event and
-specification-relative omission can carry conditional or relative preservation
-theorems. These methods seek property witnesses, not every observation and its
-exact inverse input fiber.
-An analogous structural reduction for Time Petri Nets builds a firing
-dependency graph from the initial marking and a target MTL formula, removes
-never-fired or property-irrelevant transitions, and preserves the execution
-paths needed for property checking equivalent to the unsliced net
-@chariyathitipong2022tpnslicing. It returns one property-relative sliced model,
-not every observation and its inverse caller-input set.
-Structural-dependency slicing supplies a marking-sensitive predecessor
-@yu2015dynamicpnslicing. Safety slicing preserves verification and falsification
-of the stated stutter-invariant linear-time safety properties while guaranteeing
-that the slice's state space is no larger @rakow2012safetyslicing. Stronger
-maximal/minimal algorithms retain either
-every node that may contribute tokens to requested places in any computation,
-or the nodes for one shortest contributing sequence, with the respective
-maximality and minimality proved @llorens2023pnslicing. Timed aggregate graphs
-give another exact boundary by finitely preserving timed traces and reachable
-states of bounded strong-semantics Time Petri Nets @klai2015tag. These methods
-return a subnet or state graph rather than a partition of caller inputs paired
-with residual functions.
-Discrete-event observation policies can themselves depend on states or
-transitions; exact constructions produce a deterministic generator for the
-visible event language @sears2018observationpolicies. A complementary
-optimization minimizes the observable event alphabet while preserving
-supervisor control equivalence @hu2026minimalobservation. Thus sparse and
-minimal event observation are established objects, but they range over event
-languages and supervisors rather than pure-program input fibers.
-At a component boundary, dynamic interface reduction discovers externally
-visible behavior online and avoids global exploration of internal behavior
-that cannot propagate through the interface @guo2011interface. This is a
-strong finite-observer analogue, but it preserves model-checking behavior
-rather than enumerating the observer's inverse input sets.
+The unified framework adds two parameters needed by the target observer:
+requested output roots determine boundary demand, and contextual prefixes
+distinguish multiple component occurrences while retaining sharing within an
+occurrence. Under full-domain component summaries, guard substitution and
+namespaced observation union agree with flattened graph evaluation. This is an
+exact compositional presentation of the same partition.
 
-Assertion- and coverage-directed methods sharpen that conclusion. Summaries of
-prior assertion-safe executions can soundly prune later multithreaded
-executions while preserving reachable error locations @guo2015assertion.
-Earlier abstract subsumption already backtracks when a symbolic heap state is
-contained in a previously explored abstract state, obtaining finite but
-under-approximate exploration for recursive heaps and arrays
-@anand2006subsumption.
-Modular glass-box checking instead safely checks large sets of similar states
-together and substitutes component abstractions during bounded exhaustive
-input and schedule exploration @roberson2010glassbox. Its grouped object is a
-model-checker state set, not a requested-event caller-input fiber.
-Postconditioned symbolic execution gives an exact path-level counterpart:
-weakest-precondition summaries prune a new suffix already covered by prior
-bounded behavior @yi2018postconditioned.
-Observation-specific redundant-state detection instead soundly prunes a state
-when no continuation can reach a new declared code location
-@bugrara2013redundant. Both preserve search objectives rather than enumerate
-the complete image and input fibers of a multivalued observer.
-Neighborhood graph abstraction uses the dual over-approximate setting: an
-abstract shape is discarded when another denotes a superset of its concrete
-graphs and covers its abstract behavior @zambon2012subsumption.
-The publisher abstract for dependency-derived compatible branch sets states
-sound omission of paths that add no branch coverage under a bounded exploration
-objective @yi2024compatible. An index abstract also reports multipoint DSE path
-equivalence, but primary full text remains unavailable @lu2017multipoint. The
-stronger results establish property-relative semantic omission without
-establishing exhaustive observer fibers.
+Exactness does not imply compactness. A component with many outputs can require
+one summary family per demand mask, caller predicates can split component
+fibers differently at different occurrences, and residual substitution can
+duplicate large terms unless sharing is retained. Compositional summaries are
+therefore a representation and reuse strategy, not a general improvement in
+enumeration complexity.
 
-Finite path-family decomposition also appears in LLM-powered symbolic
-execution: coverage-set partitions and property slices can summarize infinitely
-many loop paths with finitely many derived subprograms @li2025llm. The practical
-verification oracle there is explicitly approximate, so this establishes a
-structural partition and termination boundary rather than an exact semantic
-enumerator.
+== Cross-approach analysis
 
-== Projection, Boolean atoms, and decision structures
+=== Observer agreement
 
-AllSMT enumerates valuations of designated Boolean predicates together with
-one relevant assignment to designated theory variables per Boolean valuation
-@phan2015allsmtr. Later algorithms enumerate disjoint partial models and
-projected SAT/SMT models without ordinary blocking clauses
-@spallitta2024disjoint @spallitta2025projected. Instrumenting every selection
-site with an `unobserved`-or-outcome coordinate reduces the present result set
-directly to complete projected assignments. A short projected cube may omit a
-coordinate and cover several complete observations, so it has a different
-output contract; that distinction does not invalidate the reduction.
+Projected enumeration is a direct reduction after activity instrumentation.
+Candidate-local symbolic execution is a direct presentation after demanded
+evaluation and grouping by exact fibers. Decision structures are direct when
+they compile the totalized selection observer rather than only the output
+function. Demand-guided methods are direct only after their demand relation and
+grouping contract are aligned with the framework. Geometric methods are strict
+specializations. Compositional summaries preserve the observer only with
+requested-root demand, contextual identity, and explicit interface support.
 
-Finite observers also induce exact input partitions without a program-path
-presentation. Input-equivalence-class construction enumerates satisfiable
-behavioral patterns over possibly infinite input domains and minimizes them to
-a coarsest finite partition @krafczyk2017effective. Exhaustive
-property-oriented testing enumerates all satisfiable atoms of a fixed
-guard/output/property alphabet @huang2024exhaustive. After totalization, a
-selection observation is simply another finite observer. Its nonempty fibers
-are therefore not a new kind of semantic quotient. What the graph proof adds
-is that one fiber has an exact positive guard containing only observed-site
-outcomes; generic Boolean-atom enumeration normally states both positive and
-negative coordinates.
+This classification is more informative than asking whether a method emits a
+“partial assignment.” Structural absence is an observer value. Existential
+projection hides coordinates from a formula. A logical don't-care permits
+either value while preserving a represented set. Equal-residual coalescing
+changes the observer through a quotient. The four operations can yield similar
+syntax while inducing different fibers.
 
-Decision trees give an even simpler special case. One input encounters only
-the tests on its root-to-leaf path, whose outcomes form a sparse map; the path
-conjunction is a disjoint guard and the leaf is a result @quinlan1986trees.
-For finitely encoded inputs, reduced ordered BDDs and ADDs compile a totalized
-finite-range observer and share its preimages, with canonicity only for fixed
-variable order and terminal equality @bryant1986bdd @bahar1997add. Flattening
-one terminal preimage to one formula may destroy that sharing. Thus sparse path
-shape, exact disjointness, and compilation are established; the remaining
-specificity is requested-root graph reachability, contextual site identity,
-and a symbolic residual per observation fiber.
+=== Guarantees and representations
 
-Neural-specific compilation makes this boundary concrete. Exact OBDDs, SDDs,
-and deterministic decomposable circuits have been learned or constructed for
-binarized networks @shih2019bnn @shi2020tractable @tang2023abdd
-@bertossi2023shap. The last route substitutes internal threshold definitions,
-compiles the output through an SDD, and enables repeated exact SHAP queries;
-its SDD step can be exponential in primal-graph treewidth. BDD4BNN composes block diagrams
-while existentially eliminating hidden activation vectors and produces one
-exact reduced BDD per requested output class over a declared binary input
-region @bdd4bnn2023. Its diagrams support exact counting, robustness, and
-prime-implicant explanations, although compilation and whole-network diagram
-operations can be exponential. Newer Boolean transformations retain exactness
-for binary networks but use bounded approximation for real-valued networks
-@tang2026boolean. These results rule out a claim that exact neural observers
-must retain every internal decision. They compile an extensional class
-function on a finite Boolean domain, whereas the present observer deliberately
-retains reached internal site identities and attaches typed symbolic residuals.
-Exact logic synthesis of binarized neural inference supplies a related circuit
-representation without enumerating the output partition @chi2018bnnsynthesis.
-Earlier Boolean-algebra extraction composes per-neuron Boolean functions and
-can remove redundant hidden nodes without changing a binary or bipolar
-network's function @yang2004booleanrules. Direct truth-table evaluation and
-Boolean minimization likewise extract an exact rule set for a small
-Boolean-feature neural classifier, while the same method becomes
-sampling-based approximation at larger feature counts @mereani2019rule.
-Exact consistency-cube minimization separately establishes complete minimal
-prime-implicant enumeration @dusa2019consistency. These results compile an
-extensional Boolean function; they do not preserve a sparse map of reached
-hidden selections.
+The exact record contract has four independent obligations: complete
+nonredundant observation coverage, guard/fiber equivalence, residual correctness
+throughout the guard, and a feasibility witness. Projected image enumeration
+primarily supplies the first; symbolic evaluation supplies residuals; model
+production supplies witnesses; and the framework's guard theorem connects the
+local record to the semantic fiber. No family inherits all four obligations
+merely from its name.
 
-== Needed search, partial inputs, and dataflow demand
+Representation is orthogonal. Flat guards favor streaming and simple APIs but
+can repeat shared predicates and residuals. Trees preserve encountered-test
+structure. BDDs, ADDs, d-DNNFs, and related DAGs share subproblems but charge
+compilation and representation choices. Polyhedral complexes expose adjacency
+that flat formulas omit. Consequently, record count alone cannot compare two
+implementations that serialize different objects.
 
-Functional-logic implementations attach stable identifiers to shared choices
-and populate a fingerprint only as demanded computation reaches them.
-Pull-tabbing, set functions, and the Fair Scheme use such maps to organize
-complete or fair value search @antoy2011pull @brassel2007tighter
-@brassel2011thesis @jost2023fairscheme. Their choices arise from
-nondeterministic evaluation and their identities can be dynamic and
-computation-local. The present graph is deterministic for each input and uses
-static contextual identities so that summaries can be instantiated at distinct
-occurrences. Nevertheless, demand-populated partial decision maps and shared
-choice consistency are clear prior art.
+=== Complexity and applicability
 
-Demand-guided exhaustive testing supplies a second close boundary. Korat
-backtracks only over object fields read by an executable predicate
-@boyapati2002korat. Lazy SmallCheck refines the tagged constructor hole forced
-by a pure Boolean property and skips all bounded refinements once the result is
-known @runciman2008smallcheck. Solver-backed lazy initialization extends the
-idea to partial heaps @geldenhuys2013bounded @rosner2015bliss
-@copia2022lissa @copia2023precise. These methods already avoid a Cartesian
-product by following an observer. They may represent one semantic class with
-several partial inputs, however, and do not generally return one exact
-inverse-fiber guard with a symbolic residual.
+The general problem has exponentially many observations, NP-hard
+single-outcome feasibility, and \#P-hard counting special cases. One successful
+model query per observation plus a final exhaustion query is only an oracle-call
+accounting. It gives no OutputP, incremental-polynomial, polynomial-delay, or
+wall-clock theorem. Geometric and parametric restrictions have genuine
+output-sensitive algorithms; compiled methods may amortize enumeration after
+potentially expensive preprocessing; local methods may avoid unobserved cones
+but repeat solver and residual work. These are tradeoffs, not a universal
+ranking.
 
-Higher-order concolic testing provides a different canonicalization result. It
-evolves canonical function inputs from constraints observed during execution
-and proves sound evaluation and bug-finding completeness modulo concretization
-and SMT incompleteness @you2021higherorder. It searches a canonical input
-language for one counterexample rather than producing every exact first-order
-input fiber, but blocks a broad claim that canonical symbolic input search is
-new. An earlier verifier likewise gives sound proofs and counterexample-
-complete search for a terminating pure higher-order fragment by controlling
-dynamic dispatch and progressively unfolding functions @voirol2015counterexample.
-Nguyễn and Van Horn instead progressively decompose unknown functions,
-retain first-order path constraints, reconstruct concrete functional inputs,
-and prove relative counterexample completeness modulo base reasoning
-@nguyen2015counterexamples. Their expanded contract system adds recursive data,
-first-class contracts, flow-sensitive refinement, and verification
-@nguyen2017contracts.
-Contracts had already served as sound symbolic higher-order values
-@tobinhochstadt2012contracts. A later game-semantics formulation captures
-arbitrary external functional behavior soundly and completely, with finite
-exploration obtained by explicit recursion and callback-depth bounds
-@lin2020game.
-Earlier still, quantified refinement types establish sound relative
-completeness for higher-order functional safety, with a later system extending
-the result to universal and existential nondeterministic branching properties
-@unno2013relative @unno2018relative. The theoretical systems rely on relative
-first-order reasoning, while their automated inference procedures retain
-documented incompleteness. They prove or refute a property rather than enumerate
-the complete finite image of this paper's observer.
+== Adjacent reduction problems
 
-Classical demand-driven dataflow is the direct fixed-input semantic precedent.
-Pingali and Arvind propagate requested output positions backward through a
-stream graph and prove correctness and parsimony compositionally
-@pingali1985efficient @pingali1986efficient. Avron and Sasson characterize when
-a least legal output-complete valuation exists uniformly through stability
-@avron1994stability. The strict finite acyclic dependency policy in
-@sec-formal-model has a simpler reachability least valuation. The
-change is one of quantification: prior dataflow work computes a least demanded
-computation for fixed inputs, whereas this synthesis varies inputs, projects
-each least computation to selection events, and enumerates the inverse fibers.
-Neither reverse demand nor least computation is claimed as new.
+Several broad literatures informed the observer vocabulary without providing
+alternative implementations of the target contract. Partial-order reduction
+omits redundant interleavings while preserving reachable states or temporal
+properties @holzmann1992coverage @alur2001partialorder. Petri-net unfoldings
+represent concurrent configurations, and goal-directed prefixes can preserve
+all minimal configurations reaching a requested marking while omitting
+irrelevant transitions @bonet2014recent @chatain2017goaldriven. Observer- and
+property-guided state reduction preserves a declared event language, state
+quotient, or coverage objective @aronis2018observers
+@bugrara2013redundant. These works confirm the general lesson that omission is
+observer-relative, but their outputs are runs, markings, states, or search
+objectives rather than caller-input fibers with residual functions.
 
-Selective functors provide a separate compositional precedent. Their free
-syntax and interpretations describe static computations with dynamically
-selected effects @mokhov2019selective. They motivate the component boundary
-but do not themselves enumerate exact caller-input fibers. Likewise,
-compositional symbolic execution already reuses path summaries
-@godefroid2007compositional @anand2008demand. The flattening law in this paper
-therefore records semantic compatibility; it does not claim the first reusable
-summary calculus.
+Whole-network dataflow semantics similarly supplies important boundaries for
+determinism, stability, and compositionality, but usually observes streams,
+traces, or network behavior rather than finite requested-root selection maps.
+The main comparison therefore uses fixed-input least-demand results where they
+directly explain enabled closure and leaves the broader semantic lineage in the
+repository synthesis.
 
-== Geometric cells, parametric programs, and output quotients
+== Answers to the comparison questions
 
-When every selection is an affine sign test and every site is observed,
-observations become total sign vectors. Hyperplane-arrangement algorithms
-already enumerate the full-dimensional cells exactly once with
-output-sensitive bounds @avis1996reverse @sleumer1998output
-@ferrez2005fixedrank @rada2018new. Exact ReLU methods likewise enumerate dense
-activation patterns, stars, polyhedra, or complete cell complexes and often
-attach affine output maps @serra2018bounding @tran2019star
-@vincent2021reachable @wang2022regions. These results establish exact
-guard-plus-affine-residual enumeration and exponential worst cases. Their zero
-or boundary coordinates and their dense activation vectors are not the same
-as structural non-observation, but the all-sites-observed specialization is a
-direct reduction.
+*RQ1.* The common object is a finite observer on caller inputs. Its nonempty
+inverse images are fibers, and an exact record attaches a guard, residual, and
+witness to each fiber. This distinguishes semantic partitioning from the
+algorithm and data structure used to expose it.
 
-That dense-cell baseline does not exhaust exact neural observers. Layer-wise
-conversions already represented ReLU classifiers as multivariate decision
-trees @nguyen2020ecdt @aytekin2022trees. Affinitree composes piecewise-linear
-neural operators into a tree with affine tests and terminals, removes
-LP-infeasible paths, and can merge semantics-preserving subtrees
-@affinitree2024. Chang et al. go further for ReLU controllers: their exact
-state-dependent tree omits infeasible activation tests and performs output
-comparisons only while actions remain competitive; their pointwise-equivalence
-theorem makes the leaves an exact policy representation @chang2026compact.
-Logemann and Veith similarly compress policy trees and analyze polyhedral exact
-output regions, but the published exactness argument and boundary convention
-are less formal @logemann2023nn2eqcdt @logemann2024exact. Consequently,
-feasibility-pruned and output-relative neural decision trees are established.
-Their object is the extensional action or affine-map partition of a fixed
-neural/PWL architecture, not an observation of arbitrary contextual selection
-events in a typed shared graph.
+*RQ2.* Six established families cover the principal solution space. Local
+guarded evaluation and global projected enumeration are equivalent general
+presentations; decision structures compile the observer; demand-guided methods
+supply sparse discovery mechanisms; geometric methods solve strict affine
+specializations; and guarded summaries provide composition.
 
-Compositional hybrid-mode construction topologically substitutes upstream
-affine maps into downstream guards, prunes infeasible products, and emits an
-exact piecewise-affine guard/map representation @geyer2010mode. Exact
-piecewise-affine minimization, clipping, and separation can then coalesce
-regions that implement the same behavior @geyer2008optimal
-@kvasnica2012clipping @kvasnica2013separation. A recent compositional neural
-controller construction independently applies this PWA substitution pattern
-layer by layer @soto2025pwa. Our observer intentionally takes
-the opposite side of that quotient: equal-valued alternatives remain distinct
-when their selection outcomes were observed. Guard substitution and residual
-composition are nevertheless inherited techniques.
+*RQ3.* General exactness follows only after all four record obligations are
+proved. General output-sensitive complexity does not follow from sparse demand
+or one model per fiber. Stronger bounds belong to restricted geometric,
+parametric, or compiled inputs and must charge their representations.
 
-Multiparametric programming provides the strongest direct complexity
-comparators. Reverse search enumerates full-dimensional pLP regions with
-reconstructible affine optimizers @jones2006parametric. Sufficient-matrix pLCP
-enumeration supplies explicit output-linear LP-oracle bounds covering pLP and
-convex pQP @columbano2009sufficient. Minimum-norm selection can produce a
-unique continuous, algorithm-independent pQP partition
-@spjotvold2007unique, while degeneracy-safe pQP traversal finds every
-full-dimensional neighbor across a facet @patrinos2010graphical. Polyhedral
-projection and pLP solution are polynomially interreducible
-@jones2008projection. Exact output-sensitive region enumeration, unique
-selected optimizers, and projection are therefore all prior results.
-
-Finally, requested-result quotienting is itself established. Different
-explicit-MPC active-set regions can share the requested first control action
-while later actions differ @konig2020common @mitze2021common. Polyhedral reward
-regions can likewise induce the same optimal policy @shin2024multitask. A
-requested output is an extensional quotient. A selection observation is
-intensional: it retains equal-valued events actually encountered while omitting
-sites outside the requested enabled closure. This distinction defines the
-paper's object, but requested relativity alone does not establish priority.
-
-== Result of the comparison
-
-No broad constituent is new in isolation: not sparse choice maps, exact
-partitions, projected enumeration, guarded residuals, demand-guided omission,
-graph sharing, compositional substitution, geometric region traversal, or
-requested-output quotienting. The synthesis packages a narrower object for a
-finite typed shared graph and proves the agreement of its structural,
-concolic, and projected presentations. The literature map found no single
-audited work with exactly that package, but bounded search cannot turn this
-packaging gap into a priority claim. Its value is a precise specification and
-a set of reduction boundaries against which a future implementation can be
-measured.
+*RQ4.* Approaches coincide when their observer kernels agree after explicit
+instrumentation. Coordinate projection, equal-behavior merging, path
+refinement, and property-guided search otherwise produce coarser, finer, or
+incomparable partitions. This observer test is the framework's primary rule for
+transferring results across terminology.

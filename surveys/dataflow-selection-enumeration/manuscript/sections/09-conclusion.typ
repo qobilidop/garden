@@ -1,27 +1,25 @@
 = Conclusion <sec-conclusion>
 
-Selection-observation enumeration is best understood as an observer-design
-problem before it is treated as a solver problem. For a requested result in a
-pure shared dataflow graph, the observer studied here records outcomes of
-exactly the selection sites reached through strict operands and selected case
-edges. Its inverse fibers preserve equal-valued observed events while omitting
-structurally unobserved sites.
+Exhaustive enumeration of selection observations is a specific
+observer-partition problem. For a caller domain and requested roots in a pure
+shared dataflow graph, each input induces a sparse map of contextual selection
+outcomes. The exact output is one guard, residual, and witness for every
+nonempty inverse-image fiber of that map.
 
-The literature map shows that the broad ingredients are established:
-projected enumeration handles finite observer coordinates, symbolic execution
-provides guarded residuals, functional-logic and bounded-testing systems omit
-undemanded choices, decision structures compile finite observers, classical
-dataflow supplies fixed-input least demand, and geometric and parametric
-methods already give exact output-sensitive region algorithms in important
-special cases. The formal synthesis connects these boundaries. Relative to the
-caller predicate, one outcome atom per observed site and no absence atoms
-define an exact fiber; local residual generation and global activity projection
-enumerate the same partition; contextual summaries
-agree with flattened shared-graph semantics; and one model per fiber is an
-oracle-call accounting, not an enumeration-complexity result.
+The unified framework separates this semantic object from the method used to
+enumerate it and the structure used to represent it. Guarded symbolic
+execution, projected model enumeration, decision structures, demand-guided
+search, geometric traversal, and compositional summaries consequently become
+comparable without being declared equivalent by terminology alone. Local
+positive-guard generation and global activity projection are two general
+presentations of the same observer. Decision structures compile it, affine
+methods solve important strict specializations with stronger guarantees, and
+component summaries preserve it only under explicit demand, identity, and
+interface conditions.
 
-Accordingly, the paper claims neither a new generic enumeration paradigm nor a
-practical speedup. It contributes a reproducible map and a precise semantic
-contract. The next question is empirical: whether a graph-aware implementation
-can exploit this contract more effectively than established projected,
-compiled, or specialized alternatives on real workloads.
+The survey finds no new generic enumeration paradigm or general complexity
+advantage. Its contribution is a precise problem statement, common vocabulary,
+transfer criteria, and an evidence-backed analysis of known solution families.
+Future progress should therefore state which observer is preserved, which
+record obligations are met, which representation is charged, and which
+assumptions support any claimed improvement.

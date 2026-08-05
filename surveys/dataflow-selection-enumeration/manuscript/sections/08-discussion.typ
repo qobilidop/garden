@@ -1,147 +1,115 @@
-= Discussion and limitations <sec-discussion>
+= Boundaries and open problems <sec-discussion>
 
-== What the synthesis establishes
+== What the framework establishes
 
-The formal development fixes one observer before choosing an enumerator. For a
-finite selective DAG, requested roots and one concrete input determine an
-enabled closure and hence a partial map of observed site outcomes. Totalizing
-that map exposes an ordinary finite observer; its nonempty inverse images are
-the exact semantic records. The exact-local-guard theorem then gives a
-graph-specific representation of one inverse image without negative literals
-for structurally unobserved sites. Candidate-local residualization and global
-reachability instrumentation are two implementations of the same partition,
-and contextual prefixing makes the semantics agree with flattened graph
-substitution.
+The paper fixes one problem before comparing solvers. For a finite selective
+DAG, a caller domain, and requested roots, the selection observer maps each
+input to the contextual outcomes reached through enabled edges. Its nonempty
+inverse images define the required records. Positive local guards, demanded
+residual evaluation, totalized activity coordinates, projected enumeration,
+and contextual summary composition are then alternative presentations of this
+one semantic contract.
 
-This is useful primarily as a specification. It says exactly what an
-enumerator must preserve when an unselected cone contains further decisions,
-when equal-valued alternatives remain observable events, when several roots
-share a site, and when a component appears at more than one occurrence. It
-also identifies a concrete validation oracle: records must have satisfiable
-guards, pairwise-conflicting observations, exact guard/fiber equivalence,
-residual correctness on the entire guard, and coverage certified only by a
-decisive final query.
+The observer/refinement distinction is the main organizing result. Structural
+absence, existentially hidden coordinates, logical don't-cares, and
+equal-behavior quotients are not interchangeable. Two approaches solve the
+same enumeration problem only when their observer kernels agree after any
+declared instrumentation. Otherwise one computes a refinement, quotient, or
+incomparable partition.
 
-The work does not establish that this observer is preferable for every client.
-A client interested only in output value should merge equal residual
-functions. A client interested in optimization policy may project away the
-solver history. A diagnostic client may instead retain control or causal
-events beyond selections. Those are different kernels of different observers,
-not approximations ordered by one universal notion of precision.
+Selection observations are appropriate for event-aware specifications such as
+checking that graph rewriting, lowering, or component substitution preserves a
+declared map of source selection events. They are not preferable for every
+client. A value-only client should merge behaviorally equal records; an
+optimization client may retain active constraints rather than source events;
+and a diagnostic client may record causal events beyond selections. The
+framework makes these choices explicit rather than ranking them by a universal
+notion of precision.
 
-== Semantic boundaries
+== Semantic scope
 
 The theory assumes a finite, typed, acyclic, deterministic, pure graph.
 Ordinary primitives, classifiers, and selected combiners are total. Partial
-operations require either a proved precondition in $A$ or an explicit error
-outcome; silently ignoring division by zero, invalid indexing, overflow modes,
-or assertion failure would invalidate coverage. Cycles, recursion, and
-unbounded dynamic occurrences can make the event domain infinite and need a
-different observation model, such as bounded unfolding, time-indexed events,
-or a regular summary.
+operations require a proved caller precondition or an explicit error outcome;
+silently ignoring division by zero, invalid indexing, assertion failure, or
+language-specific overflow would invalidate coverage. Cycles, recursion, and
+unbounded dynamic occurrences can make the event domain infinite and require a
+bounded, time-indexed, regular, or coinductive observer instead.
 
 Strictness is an observation policy, not an extensional dependence theorem.
-The model observes every operand of an ordinary node even if algebraic
-simplification makes one operand irrelevant. Changing this policy changes the
-fibers. In particular, translating a lazy language or a stable stream-dataflow
-semantics requires a proof that its least demanded computation has the same
-support; the graph reachability proposition alone is insufficient.
+Every operand of an ordinary node is observed even if algebraic simplification
+makes it irrelevant. Translating a lazy language or stream-dataflow semantics
+therefore requires a separate correspondence proof. Likewise, an outcome must
+determine its demanded cases and combiner; two raw selector values with
+different structural consequences cannot be silently grouped as one outcome.
 
-Site identity is similarly intensional. One component occurrence preserves
-its internal sharing, while two occurrences receive different prefixes. A
-compiler that duplicates, fuses, reassociates, or lowers selections can alter
-the observation even when output values are unchanged. Source-level and
-lowered-IR observations should therefore be related by an explicit event map,
-not assumed equivalent. Multiway lowering also introduces auxiliary decisions
-that must be projected back if the intended outcome is the source-level case.
+Site identity is intensional. Sharing within one graph or component occurrence
+records a site once, whereas distinct contextual occurrences receive distinct
+names. A compiler that duplicates, fuses, or lowers selections can change the
+observer while preserving values. Source and lowered observations need an
+explicit event map. The exact positive guard is not necessarily a
+literal-minimal formula: logical minimization is a later representation
+transformation and may erase the event whose outcome the record is intended to
+expose.
 
-The positive guard theorem depends on each recorded outcome determining the
-set of demanded cases and the applicable combiner. If two raw selector values
-have different structural consequences, they cannot share one outcome. The
-theorem proves exactness, not minimality: a positive literal may be entailed by
-the caller domain and the remaining literals. Logical minimization can shorten
-a guard but may also erase an observed event from the representation, so it
-must be treated as a separate output transformation.
+== Solver, output, and composition boundaries
 
-== Solver and representation boundaries
-
-Exhaustion is conditional on exact symbolic encodings and decisive oracle
-answers. An `unknown`, timeout, unsupported primitive, incomplete theory
-combination, or inexact floating-point abstraction produces an explicitly
-incomplete enumeration. A model is only a witness for one fiber, and evaluating
-the requested output at that model is not a residual valid throughout the
-fiber.
+Exhaustion depends on exact symbolic encodings and decisive oracle answers. An
+`unknown`, timeout, unsupported primitive, incomplete theory combination, or
+inexact floating-point abstraction yields an explicitly incomplete result. A
+model is a witness for one fiber, not a residual valid throughout it.
 
 The exact $K+1$ model-producing invocation count is deliberately weak. It does
 not charge solver work, formula growth, coefficient bits, projection,
-serialization, or the final unsatisfiable proof. The general problem contains
-NP-hard feasibility and \#P-hard counting special cases, and $K$ itself may be
-exponential. No OutputP, IncP, DelayP, or compact-summary theorem is proved.
-Established affine and parametric restrictions have stronger
-output-sensitive algorithms, so a practical evaluator should dispatch to or
-compare against them where their assumptions hold.
+serialization, or final unsatisfiability. The number of fibers can be
+exponential, and feasibility and counting contain familiar hard special cases.
+No general OutputP, IncP, DelayP, compact-summary, or practical-speedup theorem
+is established.
 
-Representation choices can dominate the apparent result. A list of flat
-guards, a DAG of shared predicates, a decision diagram, a disjoint partial
-cover, and a stream of complete observations can denote the same finite
-observer image with exponentially different sizes. Residuals need explicit
-DAG sharing as well: recursively printing a shared term as a tree can be
-exponential in the source graph. Any implementation evaluation must report
-serialized bytes, shared node counts, compilation time, peak memory, and
-solver effort rather than only the number of emitted records.
+Representation can dominate the comparison. Flat guards, trees, diagrams,
+compiled circuits, polyhedral complexes, and residual DAGs may denote the same
+observer with exponentially different sizes. Exact guarded-summary composition
+has the same caveat: equality with flattening does not imply reuse. A component
+with many outputs can require exponentially many demand masks, and different
+caller predicates can split its fibers differently at each occurrence.
 
-Demand-parametric component summaries have the same caveat. Equality with
-flattening does not imply reuse: a component with many outputs can require
-$2^(abs(O_H))$ demand masks, and contextual caller constraints can split its
-input fibers differently at each occurrence. Summary construction becomes an
-empirical proposition only after a representation and workload distribution
-are fixed.
+== Open theoretical questions
 
-== Evidence limitations and reproducibility
+The framework suggests a focused research agenda:
 
-The literature study is a systematic map, not a census or meta-analysis.
-Vocabulary spans several communities, database rankings are opaque, and
-metadata services omit references, merge versions, and throttle requests. The
-protocol therefore records exact queries and frozen result snapshots, uses
-primary bibliographies for backward chasing, and treats database indexes only
-as discovery instruments. Repeated reopenings are a feature of the method:
-new clusters invalidate earlier saturation attempts rather than being folded
-quietly into a post hoc query set.
+- Which observer languages make selection events, value behavior, active
+  constraints, and diagnostic causality explicit, and which refinement or
+  full-abstraction results relate them?
+- Which classes of partial operations, cycles, or recurring component
+  occurrences retain a finite or finitely representable observation image?
+- When can a shared decision structure, disjoint cover, or guarded-summary DAG
+  be constructed with output-sensitive delay or polynomial auxiliary space?
+- Which structural restrictions make demanded local generation asymptotically
+  preferable to eager activity projection, rather than merely smaller on one
+  candidate?
+- Under what interface and workload conditions do demand-parametric summaries
+  provide reusable compression instead of an exponential family of exact
+  fibers?
 
-The final two frozen rounds added no conceptual cluster or plausible close
-competitor after reconciliation. In the first, three separate passes screened
-all 800 Crossref records from eight 100-result rankings. The second conjuncted
-every query term over arXiv's `all` field and returned zero hits for all eight
-queries; three audits verified the files, translation, and live response.
-These results establish mapping closure only under the recorded trigger,
-sources, queries, rankings, depth, and access date. The arXiv result in
-particular demonstrates narrow source/query saturation, not high recall. It
-does not prove that no closer work exists. Citation-network coverage, shared
-framing among the agent screeners, and the lack of independent human duplicate
-screening remain threats.
+These questions keep the observer, enumerator, and representation separate.
+Improving one does not automatically strengthen the other two.
 
-The repository retains the protocol, registered recurring queries, catalog,
-audited search log, source notes, screening snapshots, syntheses, claim ledger,
-and manuscript checks. Due searches are staged outside the evidence record and
-count as complete only after screening and manuscript reconciliation. These
-artifacts make the boundary inspectable and later reopening repeatable; they do
-not turn a bounded map into proof of worldwide completeness.
+== Evidence and implementation agenda
 
-== Implementation and evaluation agenda
+The map is a bounded and updateable evidence baseline, not a census. Vocabulary
+crosses several communities, indexes omit and merge records, and the screening
+passes shared one AI-assisted project framing. The committed queries,
+snapshots, source notes, syntheses, evidence matrix, and claim ledger make the
+boundary inspectable and repeatable; they cannot establish worldwide
+completeness or substitute for independent human review.
 
-This paper reports no tool or benchmark results. A future implementation should
-first validate semantics on small finite graphs by exhaustive concrete input
-enumeration, comparing the observed map, guard membership, residual value, and
-coverage. It should then compare candidate-local full-fiber blocking against a
-global projected encoding, an ADD or MTBDD compilation for finite inputs, and
-specialized geometric enumerators on affine cases. Adversarial examples should
-include unobserved nested sites, equal-valued observed alternatives, shared
-sites reached from multiple roots, multi-case selections, lower-dimensional
-fibers, and repeated component occurrences.
-
-Only such measurements could support a claim about practical advantage.
-Promising questions are whether local generation avoids enough unobserved
-encoding to offset repeated solver calls, whether global compilation shares
-enough structure to dominate flat records, and whether demand-parametric
-summaries are reusable across real callers. Until then, the formal model should
-be read as a conservative semantic contract and cross-literature synthesis.
+This paper reports no implementation or benchmark result. A future evaluator
+should first validate small finite graphs by exhaustive concrete input
+enumeration, checking observation identity, guard membership, residual values,
+witnesses, and coverage. It should then compare local full-fiber blocking,
+global projected enumeration, finite-input ADD or MTBDD compilation, and
+specialized geometric traversal on inputs that expose nested unobserved sites,
+equal-valued observed alternatives, sharing, multiple roots, multiway choices,
+lower-dimensional fibers, and repeated components. Measurements should report
+serialized and shared output size, compilation cost, solver effort, peak
+memory, and final-exhaustion cost—not only record count.

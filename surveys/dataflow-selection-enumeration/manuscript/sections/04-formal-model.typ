@@ -1,9 +1,11 @@
 #import "../style.typ": definition, theorem, proposition, proof
 
-= Formal model <sec-formal-model>
+= Unified terminology and theoretical framework <sec-formal-model>
 
-This section fixes the observer before discussing an implementation. The model
-is intentionally narrower than a general programming language: it isolates the
+This section defines the problem independently of any solver or data
+structure. The framework separates an observer, its inverse-image fibers, an
+enumeration mechanism, and an output representation. Its graph model is
+intentionally narrower than a general programming language: it isolates the
 finite pure-graph case for which exhaustive observation enumeration is a
 well-defined finite-output task.
 
@@ -131,6 +133,34 @@ isomorphic. The first is the intended sparse record; the second permits direct
 projection onto the finite product
 $product_(q in Q)(Omega_q union {bot_q})$.
 
+== Observers, refinements, and representations
+
+#definition("observer and refinement")[
+  On a fixed caller domain $cal(X)_A$, an _observer_ is a total function
+  $B : cal(X)_A -> Y$. Its observable equivalence is its kernel
+  $
+    op("ker")(B) = {(x,y) in cal(X)_A^2 | B(x)=B(y)}.
+  $
+  Observer $B_1$ _refines_ observer $B_2$ when some function $h$ satisfies
+  $B_2(x)=h(B_1(x))$ for every $x$; equivalently,
+  $op("ker")(B_1) subset.eq op("ker")(B_2)$. Thus $B_1$ preserves at least
+  every distinction preserved by $B_2$.
+]
+
+For fixed $G$ and $R$, $T_G(-,R)$ is the _selection observer_. Its sparse and
+totalized presentations have the same kernel and are therefore two
+representations of one observer. By contrast, projecting away site coordinates
+or coalescing records with equal residual functions generally produces a
+coarser observer. A control-flow path or execution trace may be finer, and it
+may also preserve distinctions incomparable with requested-root selection
+events.
+
+This vocabulary separates semantic objects from encodings. A flat list of
+guards, a decision tree, a decision diagram, and a projected-model stream may
+represent the same observer image. A partial cube can instead represent a set
+of image elements. Calling all of these outputs “partial decisions” obscures
+whether the underlying partition has changed.
+
 #proposition("determinacy, finiteness, and sharing")[
   For every $x$ and $R$, $D_G(x,R)$ and $T_G(x,R)$ are unique, and
   $
@@ -208,6 +238,23 @@ $
 Because $T_G(-,R)$ is a total function on $cal(X)_A$, its nonempty fibers are
 pairwise disjoint and cover the caller domain. This elementary inverse-image
 partition is the semantic enumeration contract.
+
+#definition("exact selection-observation enumeration")[
+  An exact solution emits one record
+  $(tau, gamma_tau, r_tau, m_tau)$ for every
+  $tau in cal(T)_(G,A,R)$ and no other record, such that for every typed input
+  $x$:
+  $
+    gamma_tau(x) <=> A(x) and T_G(x,R)=tau;
+  $
+  $m_tau models gamma_tau$; and whenever $gamma_tau(x)$ holds,
+  $
+    op("eval")(r_tau,x)=op("val")_x|_R.
+  $
+  The four obligations are respectively exhaustive nonredundant indexing,
+  exact fiber representation, a feasibility witness, and residual correctness
+  throughout the fiber.
+]
 
 For each site outcome, define
 

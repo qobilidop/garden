@@ -6,9 +6,10 @@
 - **Manuscript:** complete draft under continuing human review
 - **Authorship:** Bili Dong, independent researcher
 
-The initial baseline contains 897 catalog entries, 201 deep reads, 35,720
-screened record occurrences, and 83 claim-evidence rows. These are snapshot
-counts, not targets and not measures of worldwide completeness.
+The catalog baseline contains 897 entries, including 201 deep reads, and the
+audited logs contain 35,720 screened record occurrences. The focused manuscript
+is supported by 25 current claim-evidence rows. These are snapshot counts, not
+targets and not measures of worldwide completeness.
 
 Source notes created during the initial campaign use several historical
 layouts. They remain evidence records, but are migrated to template version 2

@@ -1,55 +1,67 @@
 # Current position
 
-## Survey conclusion
+## Survey question
 
-The selection-observation formulation is not a new enumeration paradigm.
-Existing literatures already provide the principal ingredients: guarded
-symbolic partitions, projected and partial model enumeration, sparse choice
-fingerprints, demand-relative refinement, observer-equivalence partitions,
-decision structures, exact geometric regions, and observer-preserving search
-reductions.
+The paper is a problem-centered survey of exhaustive enumeration of selection
+observations in finite pure dataflow graphs. For a caller domain and requested
+roots, the target observer records the contextual outcomes of exactly the
+selection sites in the enabled closure. The required output is one exact guard,
+residual, and witness per nonempty observer fiber.
 
-The paper's defensible role is to compare these mechanisms under one explicit
-observer and explain which notions of “omission” preserve which information.
-The selection-observation formalism is a unifying running instance, not evidence
-of priority merely because no paper uses exactly the same package.
+The paper does not survey symbolic execution, dataflow, or model enumeration in
+general. A work belongs in the main comparison only when it is a direct
+presentation of this contract, a strict specialization with stronger
+assumptions, or an adjacent comparator needed to establish a boundary.
 
-## Stable comparison boundaries
+## Unified comparison framework
 
-| Theme | Established boundary | Consequence for this survey |
-|---|---|---|
-| Symbolic execution | Exact guards and residual states or values already partition behavior | Do not claim guard-plus-residual output as new |
-| Model enumeration | Projected AllSMT and disjoint partial models enumerate selected finite coordinates | Treat activation instrumentation as a direct baseline |
-| Demand and functional logic | Needed evaluation and fingerprints omit choices not reached by a computation | Distinguish graph observation from operational demand, not by sparsity alone |
-| Decision structures | Root-to-leaf paths and reduced diagrams encode partial encountered tests and exact finite observers | A sparse decision map or exact input partition is insufficient novelty |
-| Observer equivalence | Finite observers induce exact input fibers and can be minimized behaviorally | Present the quotient as standard and the graph-local guard as specialized |
-| Geometric and neural regions | Exact region enumerators emit guards and affine outputs, sometimes pruning forced tests | Separate structural non-observation from feasibility or extensional pruning |
-| Concurrency and unfoldings | POR, prefixes, and state quotients preserve selected behaviors or observers | Avoid conflating caller-input fibers with run/configuration reduction |
-| Dataflow and composition | Demand propagation, selective interpretations, and guarded component composition are established | Attribute component constructions and state only the cross-literature correspondence |
+Every approach is described using three separate choices:
 
-## Narrow formal synthesis
+1. the **observer**, which determines the input partition;
+2. the **enumeration mechanism**, which discovers the nonempty fibers; and
+3. the **representation**, which stores guards, residuals, witnesses, and
+   shared structure.
 
-For a fixed deterministic pure graph and requested roots, the paper observes
-the outcomes of exactly those input-selected sites in the enabled closure,
-retains equal-valued observed alternatives, and omits sites outside that
-closure. It then relates:
+Observer refinement is kernel inclusion. Sparse and totalized selection maps
+are isomorphic presentations of one observer. Coordinate projection,
+equal-behavior coalescing, path refinement, and property-relative pruning may
+instead produce coarser, finer, or incomparable partitions.
 
-1. enabled-edge reachability;
-2. sparse graph-relative outcome maps;
-3. exact inverse-image guards and residual values;
-4. ghost inactive-or-outcome instrumentation; and
-5. projected model enumeration.
+## Principal solution families
 
-The elementary fiber partition and one-model-per-fiber query count are known or
-derived baselines. The useful result is a careful correspondence with explicit
-scope conditions for sharing, contextual identity, totality, and solver
-completeness.
+| Family | Relationship to the target |
+|---|---|
+| Guarded symbolic execution | Direct after requested-root demand, contextual event logging, and full-fiber grouping |
+| Projected model enumeration | Direct after inactive-or-outcome activity instrumentation |
+| Decision structures | Direct when compiling the totalized observer rather than only the output function |
+| Demand-guided search | Direct only after its demand judgment and record contract are proved equivalent |
+| Geometric and parametric enumeration | Strict all-sites-observed affine specialization with stronger output-sensitive results |
+| Compositional guarded summaries | Exact representation under requested-output demand, contextual identity, and explicit interface support |
+
+Partial-order reduction, Petri-net unfoldings, observer-guided state reduction,
+and broad dataflow semantics remain adjacent evidence. They establish that
+omission is observer-relative but do not emit caller-input fibers with typed
+residuals.
+
+## Stable conclusions
+
+- The selection-observation formulation is not a new generic enumeration
+  paradigm.
+- Enabled reachability, sparse event maps, positive local guards, and
+  totalized projected coordinates are equivalent presentations of the target
+  observer under the paper's finite total graph assumptions.
+- A local model-and-full-fiber-block generator and a global projected encoding
+  have the same naive complete-observation image, but not the same runtime,
+  memory use, or output representation.
+- Exact composition with flattening does not imply compact summaries or reuse.
+- Stronger complexity results belong to restricted geometric, parametric, or
+  precompiled representations and do not transfer automatically.
 
 ## Maintenance implication
 
-A new work matters when it changes one of the boundaries above: it introduces a
-new omission mechanism, proves a stronger preservation or complexity result,
-handles a broader program model, or more directly subsumes the running
-observer. Such a work updates the relevant thematic synthesis, the subsumption
-table, `research/claims.md`, and the manuscript; merely adding it to the catalog
-does not complete the update.
+A new work changes the paper when it provides a more direct reduction, a new
+solution family, a stronger guarantee for the same observer, a broader exact
+program model, or a representation result that changes the comparison. Such a
+finding updates the source note, affected thematic synthesis, claim ledger,
+evidence matrix, and manuscript; adding a catalog row alone does not complete
+the update.

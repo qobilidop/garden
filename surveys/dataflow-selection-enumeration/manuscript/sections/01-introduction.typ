@@ -1,81 +1,97 @@
 = Introduction <sec-introduction>
 
-Consider a pure expression graph containing nested conditionals, multiplexers,
-priority selectors, or other finite choice operators. A conventional symbolic
-evaluator can translate the requested output to one term containing nested
-`ite` expressions. That translation is useful, but it does not answer the
-enumeration question:
+Consider a finite pure dataflow graph containing nested conditionals,
+multiplexers, priority selectors, or other finite choice operators. A caller
+supplies an input from a declared domain and requests one or more graph
+results. The problem of this survey is:
 
 #align(center)[
-  _Which distinct selection observations can the requested result expose, and
-  what exact inputs and residual value belong to each one?_
+  _Enumerate every distinct selection observation induced by the requested
+  results, exactly once, together with its exact input guard, residual value,
+  and a witness._
 ]
 
-The distinction matters whenever a decision is inside an unselected case cone.
-Such a site is not merely an unconstrained Boolean coordinate. It is absent
-from the structural observation for that input and request. Conversely, two
-selected alternatives may compute equal values while remaining different
-observed events. An output-value quotient, a logical implicant, a path, and a
-sparse selection observation therefore preserve different information.
+A _selection observation_ records the contextual outcome of each selection
+site reached from the requested roots through strict operands and selected
+case edges. It is sparse because a site in an unselected case cone is absent,
+not merely assigned an unconstrained value. Its inverse image in the caller
+domain is an _observation fiber_. An exact enumerator returns one record
 
-This paper studies the exact finite partition induced by that observer. The
-base program is a finite, typed, acyclic, pure term graph with sharing. Ordinary
-operators are total and structurally strict: observing their result observes
-all operands. A selection first observes its selector and then only the case
-roots determined by the selector outcome. Starting from a requested root set,
-these rules define an input-indexed enabled closure. The selection sites in
-that closure, mapped to their outcomes, form the _selection observation_. Its
-inverse image under the input-to-observation map is an _observation fiber_.
+$
+  ("observation", "guard", "residual", "witness")
+$
 
-The adjective _exact_ carries four obligations. The enumerator must cover every
-feasible observation relative to a stated caller domain, emit none twice,
-describe each fiber by an equivalent guard, and return a residual value valid
-throughout that fiber. Solver `unknown`, unsupported primitives, partial
-operations, cycles, and unbounded dynamic occurrences cannot be hidden behind
-a completeness claim.
+per nonempty fiber. The guard denotes precisely that fiber; the residual
+computes the requested values throughout it; and the witness demonstrates
+feasibility.
 
-At first sight, this appears to be a new form of demand-sensitive symbolic
-execution. The systematic map in this paper rejects that broad novelty claim.
-Projected AllSMT already enumerates finite observer coordinates
-@phan2015allsmtr, including disjoint partial models
-@spallitta2024disjoint @spallitta2025projected. Multi-path symbolic execution
-already represents guarded residual values @sen2015multise. Functional-logic
-search uses demand-populated maps with stable choice identifiers
-@brassel2007tighter @brassel2011thesis. Lazy SmallCheck refines only the input
-fragments forced by a Boolean observer @runciman2008smallcheck. Exact input
-equivalence partitions and decision diagrams compile finite observer functions
-@krafczyk2017effective @huang2024exhaustive. Hyperplane and neural methods
-enumerate exact geometric cells, often with affine residual maps
-@avis1996reverse @serra2018bounding @vincent2021reachable. Classical dataflow
-work gives least-demanded or reverse-demand computation for fixed inputs
-@avron1994stability @pingali1985efficient. These are not terminological
-near-misses; several are direct reductions or strict special cases.
+This task is easy to misidentify. A monolithic symbolic value describes output
+semantics but does not enumerate structural observations. A path records a
+control-flow history rather than the enabled portion of an arbitrary shared
+graph. A projected model fixes selected logical coordinates but needs explicit
+activity instrumentation to represent structural absence. A partial cube may
+cover several complete observations. A geometric region can give an exact
+guard and affine residual while quotienting equal behavior or assuming that
+every site is active. These objects can look alike while answering different
+questions.
 
-The contribution is consequently a survey and formal synthesis:
+The survey therefore separates three choices that are often conflated:
 
-- A reproducible cross-community map distinguishes structural
-  non-observation, existential projection, logical don't-care, equal-value
-  coalescing, abstract merging, and heuristic partitioning.
-- A graph-relative observer gives precise meaning to an input-dependent sparse
-  map without calling it a path or claiming that the source language is lazy.
-- The _exact-local-guard theorem_ shows that, relative to caller domain $A$,
-  conjoining $A$ with one outcome predicate for each observed site defines one
-  complete fiber. Explicit literals for structurally unobserved sites are
-  unnecessary because enabled reachability fixes their absence.
-- A local concolic generator and a global reachability-variable projected
-  encoding are proved to enumerate the same partition. Full-fiber blocking
-  uses one successful model query per observation, but this is explicitly not
-  an OutputP or polynomial-delay theorem.
-- Demand-parametric component summaries compose exactly with flattened graph
-  substitution when site identities are contextual and sharing is preserved.
-  The guard-substitution algebra itself is attributed to established
-  relational and piecewise-affine composition.
-- Reductions to decision trees, selective functors, projected enumeration,
-  activation regions, and parametric partitions delimit what the synthesis
-  does _not_ establish.
+- the _observer_, which determines when two inputs belong to the same record;
+- the _enumeration mechanism_, which discovers all nonempty fibers; and
+- the _representation_, which stores guards, residuals, witnesses, and shared
+  structure.
 
-The strongest claim is therefore deliberately narrow. For the stated graph
-model, enabled-edge reachability, sparse event logging, local exact guards,
-and global finite-coordinate projection are equivalent presentations of one
-observer. This correspondence is useful as a specification for symbolic
-evaluators, but it is not a new generic enumeration skeleton.
+This separation makes established approaches directly comparable. Projected
+AllSMT enumerates selected finite coordinates @phan2015allsmtr and can emit
+disjoint partial covers @spallitta2024disjoint @spallitta2025projected.
+Multi-path symbolic execution supplies guarded residual values
+@sen2015multise. Functional-logic search maintains demand-populated maps with
+stable choice identities @brassel2007tighter @brassel2011thesis, and Lazy
+SmallCheck refines only the input fragments demanded by a Boolean observer
+@runciman2008smallcheck. Decision trees and diagrams compile finite observer
+functions @bryant1986bdd @bahar1997add. Hyperplane and parametric methods give
+stronger output-sensitive enumeration results for affine special cases
+@avis1996reverse @jones2006parametric. None of these names alone specifies the
+selection-observation problem; the comparison depends on the observer and
+contract attached to the method.
+
+The paper answers four questions:
+
+- *RQ1:* What common terminology precisely defines selection-observation
+  enumeration and distinguishes it from neighboring tasks?
+- *RQ2:* Which established approach families can enumerate, compile, or
+  specialize the required fibers, and what instrumentation do they require?
+- *RQ3:* Which correctness, representation, and complexity guarantees does
+  each family provide under its stated assumptions?
+- *RQ4:* Where do the approaches coincide, where do they compute a refinement
+  or quotient of the target observer, and where do they address only an
+  adjacent reduction problem?
+
+The contribution is consequently a problem-centered survey and unified
+framework:
+
+- A finite selective-term-graph model defines requested-root enabled closure,
+  contextual site identity, sparse observations, exact fibers, and the output
+  record contract.
+- An observer-refinement order distinguishes structural non-observation,
+  existential projection, logical don't-care, and equal-behavior quotienting
+  without treating them as interchangeable forms of sparsity.
+- Six solution families are compared under one set of semantic, algorithmic,
+  representational, and complexity dimensions.
+- Formal correspondences show that positive local guards and global
+  activity-and-outcome projection describe the same partition, while guarded
+  summaries agree with flattened graph substitution under explicit sharing and
+  interface conditions.
+
+The framework is a synthesis, not a priority claim for its ingredients. Its
+purpose is to state one problem precisely enough that results from different
+communities can be transferred only when their observers and assumptions
+actually agree.
+
+The problem setup appears in @sec-example. The unified framework is defined in
+@sec-formal-model, the bounded evidence method is reported in @sec-method, and
+the known solution families are compared in @sec-related. The principal
+correspondences and complexity boundaries follow in @sec-algorithms and
+@sec-complexity. Remaining semantic, evidence, and implementation limits are
+stated in @sec-discussion.
