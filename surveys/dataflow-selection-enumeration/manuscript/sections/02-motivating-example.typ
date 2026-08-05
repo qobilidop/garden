@@ -32,8 +32,8 @@ outer and inner sites. There are exactly three observations:
       [*Observation*], [*Exact guard*], [*Residual*],
     ),
     [$q_o -> "right"$], [$not p$], [$y$],
-    [$q_o -> "left", q_i -> "left"$], [$p and not r$], [$x+1$],
-    [$q_o -> "left", q_i -> "right"$], [$p and r$], [$x+1$],
+    [$q_o -> "left", q_i -> "right"$], [$p and not r$], [$x+1$],
+    [$q_o -> "left", q_i -> "left"$], [$p and r$], [$x+1$],
   )
 ]
 

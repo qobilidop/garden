@@ -168,8 +168,9 @@ Use one of these stable exclusion codes in the catalog:
 
 ## Screening and deep reading
 
-Title/abstract screening assigns taxonomy fields, priority, and status. Deep
-reading uses the source-note template and must inspect definitions, the central
+Screening assigns taxonomy fields, priority, and status from the title plus the
+abstract or other metadata exposed by the source. Deep reading uses the
+source-note template and must inspect definitions, the central
 algorithm, theorem statements and assumptions, complexity discussion, examples,
 and related work—not only the abstract and introduction. Claims used in the
 manuscript must also appear in `evidence-matrix.tsv` with a source-note anchor.
@@ -185,9 +186,13 @@ The extraction taxonomy is deliberately multi-dimensional:
 
 ## Snowballing and saturation
 
-For every closest work, perform backward citation chasing and forward citation
-chasing as separate log rows. `search-log.tsv` records one seed, one direction,
-and one stable result set per row; aggregate descriptions are invalid.
+The bounded closest-work snowballing seed set is exactly the catalog entries
+marked `priority=critical`. For every such seed, perform backward citation
+chasing and forward citation chasing as separate log rows. `search-log.tsv`
+records one seed, one direction, and one stable result set per row; aggregate
+descriptions are invalid. `closest-work.md` is a broader comparison table: it
+also retains comparison-only boundaries and does not make each row a closure
+seed.
 
 An index-provided backward neighborhood satisfies this requirement only when
 it exports the seed's complete primary bibliography. If identifiers are
@@ -203,7 +208,8 @@ The initial mapping closes only after:
 1. every work named by an exploratory row is either cataloged or explicitly
    marked `not-recorded` in that row;
 2. the bounded critical reading set is complete;
-3. every closest work has separately recorded backward and forward chasing;
+3. every `priority=critical` seed has separately recorded backward and forward
+   chasing;
 4. two consecutive *audited* rounds add neither a conceptual cluster nor a
    plausible close competitor;
 5. an independent reviewer audits borderline exclusions and the closure log.
@@ -225,7 +231,9 @@ The tab-separated audited log has these fields:
 - `screened`: exact count screened;
 - `included_keys`: comma-separated catalog keys, or `-`;
 - `excluded_keys`: comma-separated catalog keys with excluded status, or `-`;
-- `notes`: filters, inaccessible records, result-set artifact, or limitations.
+- `notes`: filters, inaccessible records, exactly one `screening/*.tsv`
+  result-set artifact for every non-audit row, or limitations. An audit row
+  normally has no result set but may link one reconciled snapshot.
 
 A row with an approximate hit count, unknown screened set, or aggregated seeds
 is exploratory and must not be moved into the audited log.
@@ -247,6 +255,9 @@ A negative answer to novelty is a useful survey outcome and must be recorded in
 ## Survey snapshot
 
 - Protocol established: 2026-08-04
-- Paper route: theory-backed survey after the novelty audit in decision 0002
-- Stretch venue standard: ACM Computing Surveys
+- Paper route: self-published versioned research artifact after the novelty
+  audit in decision 0002
+- Authorship route: AI-authored repository release; any later conventional
+  submission requires an accountable human author and venue-required AI
+  disclosure
 - Working language: English

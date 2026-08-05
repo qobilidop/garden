@@ -13,9 +13,10 @@ provides guarded residuals, functional-logic and bounded-testing systems omit
 undemanded choices, decision structures compile finite observers, classical
 dataflow supplies fixed-input least demand, and geometric and parametric
 methods already give exact output-sensitive region algorithms in important
-special cases. The formal synthesis connects these boundaries. Positive
-observed-site predicates define an exact fiber; local residual generation and
-global activity projection enumerate the same partition; contextual summaries
+special cases. The formal synthesis connects these boundaries. Relative to the
+caller predicate, one outcome atom per observed site and no absence atoms
+define an exact fiber; local residual generation and global activity projection
+enumerate the same partition; contextual summaries
 agree with flattened shared-graph semantics; and one model per fiber is an
 oracle-call accounting, not an enumeration-complexity result.
 

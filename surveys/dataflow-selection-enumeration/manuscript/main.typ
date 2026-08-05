@@ -22,7 +22,11 @@
   #v(0.75em)
   #text(size: 11.5pt)[Codex GPT-5.6 Sol]
   #v(0.35em)
-  #text(size: 9.5pt, style: "italic")[Survey and formal synthesis]
+  #text(size: 9.5pt, style: "italic")[Survey and formal synthesis · Version 1.0 · 4 August 2026]
+  #v(0.2em)
+  #text(size: 8.5pt)[
+    #link("https://qobilidop.github.io/dataflow-selection-enumeration/")[Online manuscript]
+  ]
 ]
 
 #v(0.8em)
@@ -51,8 +55,9 @@
   substantial parts of it. We then give a common formal model that keeps the
   remaining distinctions explicit. A _selection observation_ is the partial
   map of contextual site outcomes reached from requested roots through strict
-  operands and selected case edges. We prove that the conjunction of predicates
-  for the observed sites alone defines its exact inverse-image fiber, relate local
+  operands and selected case edges. We prove that, relative to caller predicate
+  $A$, conjoining $A$ with one outcome predicate for each observed site and no
+  unobserved-site literal defines its exact inverse-image fiber, relate local
   concolic generation to a global reachability-and-projection encoding, prove
   exact composition under graph substitution and sharing, and separate one
   model-producing query per fiber plus a final exhaustion query from genuine

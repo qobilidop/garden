@@ -11,12 +11,12 @@ projected enumeration.
 
 == Symbolic and solver assumptions
 
-Every primitive, classifier outcome, case-membership relation, and selected
-combiner must have an exact symbolic representation. A model-producing oracle
-for a formula returns `sat(m)`, `unsat`, or `unknown`. Only `unsat` certifies
-exhaustion; `unknown` produces an explicit incomplete result. We do not assume
-that the oracle runs in polynomial time or that a decision-only oracle returns
-a witness for free.
+Every primitive, classifier outcome, case-membership relation, selected
+combiner, caller predicate $A$, and typed input-domain constraint must have an
+exact symbolic representation. A model-producing oracle for a formula returns
+`sat(m)`, `unsat`, or `unknown`. Only `unsat` certifies exhaustion; `unknown`
+produces an explicit incomplete result. We do not assume that the oracle runs
+in polynomial time or that a decision-only oracle returns a witness for free.
 
 For an input model $m in cal(X)_A$, a demanded evaluator carries three objects:
 
@@ -143,24 +143,37 @@ Multiple consumers contribute by disjunction, and the biconditional prevents
 spurious disconnected activity. Acyclicity gives a unique valuation of the
 activity circuit for every input.
 
-For each selection site introduce a finite-domain projected coordinate
+For each selection site introduce a projected coordinate ranging directly over
+$Omega_q union {bot_q}$:
 
 $
   z_q = cases(
-    op("encode")(kappa_q(e_(s_q))) & "if " a_q,
+    kappa_q(e_(s_q)) & "if " a_q,
     bot_q & "otherwise,"
   )
 $
 
-where `encode` is injective on $Omega_q$. Project the graph formula onto
-$Z=(z_q)_(q in Q)$. Any exact projected AllSMT, disjoint projected enumerator,
-or finite decision-diagram compiler can then enumerate the feasible totalized
-observations.
+Let $Phi_(G,A,R)(x,a,Z)$ conjoin the exact typed input-domain encoding,
+$A(x)$, every displayed activity biconditional, and every displayed coordinate
+definition. Project $Phi_(G,A,R)$ onto $Z=(z_q)_(q in Q)$, so its projected
+image is
+
+$
+  {Z | exists x,a : Phi_(G,A,R)(x,a,Z)}.
+$
+
+An exact projected enumerator or finite decision-diagram compiler can then
+enumerate the feasible totalized observations. A Boolean-backed implementation
+may injectively encode the entire finite domain $Omega_q union {bot_q}$ into
+designated projected atoms; an SMT enumerator with appropriate finite-domain
+projection may instead retain $z_q$ as a theory term.
 
 #theorem("projection equivalence")[
-  For every input $x$, the activity equations have the unique solution
+  For every caller-domain input $x in cal(X)_A$, the activity equations have
+  the unique solution
   $a_v <=> v in D_G(x,R)$, and $Z=overline(T)_G(x,R)$. Hence projected
-  enumeration over $Z$ is in bijection with feasible sparse observations.
+  models of $Phi_(G,A,R)$ over $Z$ are in bijection with feasible sparse
+  observations.
   For every feasible $tau$,
   $
     A(x) and Z = overline(tau)

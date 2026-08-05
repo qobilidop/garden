@@ -1,0 +1,43 @@
+rank	source_id	year	doi	title	venue	type
+1	citation-1	2017	-	Topics in Hyperplane Arrangements	American Mathematical Society	book
+2	citation-2	2023	10.1109/TPAMI.2022.3201490	On the Decision Boundaries of Deep Neural Networks: A Tropical Geometry Perspective	IEEE Transactions on Pattern Analysis and Machine Intelligence	journal-article
+3	citation-3	2000	10.1017/CBO9780511586507	Oriented Matroids	Cambridge University Press	book
+4	citation-4	2019	-	The Geometry of Deep Networks: Power Diagram Subdivision	NeurIPS	proceedings-article
+5	citation-5	2014	10.1109/TNNLS.2013.2293637	On the Complexity of Neural Network Classifiers: A Comparison Between Shallow and Deep Architectures	IEEE Transactions on Neural Networks and Learning Systems	journal-article
+6	citation-6	2024	10.1109/TPAMI.2023.3328347	Understanding and Accelerating Neural Architecture Search with Training-Free and Theory-Grounded Metrics	IEEE Transactions on Pattern Analysis and Machine Intelligence	journal-article
+7	citation-7	2019	10.1016/B978-0-12-814066-6.00007-6	Analysis of Combinatorial Neural Codes: An Algebraic Approach	Algebraic and Combinatorial Computational Biology	book-chapter
+8	citation-8	2018	-	Gaussian Process Behaviour in Wide Deep Neural Networks	ICLR	proceedings-article
+9	citation-9	1988	10.1137/0609045	Eigenvalues and Condition Numbers of Random Matrices	SIAM Journal on Matrix Analysis and Applications	journal-article
+10	citation-10	2018	-	Empirical Study of the Topology and Geometry of Deep Networks	CVPR	proceedings-article
+11	citation-11	2022	10.1137/20M1368902	On Transversality of Bent Hyperplane Arrangements and the Topological Expressiveness of ReLU Neural Networks	SIAM Journal on Applied Algebra and Geometry	journal-article
+12	citation-12	2022	10.48550/ARXIV.2204.06062	Local and Global Topological Complexity Measures of ReLU Neural Network Functions	arXiv	preprint
+13	citation-13	2017	10.17169/REFUBIUM-16729	Piecewise Linear Morse Theory	PhD thesis	dissertation
+14	citation-14	2018	-	On Characterizing the Capacity of Neural Networks Using Algebraic Topology	arXiv	preprint
+15	citation-15	2019	10.3390/math7100992	Universal Function Approximation by Deep Neural Nets with Bounded Width and ReLU Activations	Mathematics	journal-article
+16	citation-16	2019	-	Deep ReLU Networks Have Surprisingly Few Activation Patterns	NeurIPS	proceedings-article
+17	citation-17	2019	-	Complexity of Linear Regions in Deep Networks	ICML	proceedings-article
+18	citation-18	2015	-	Delving Deep into Rectifiers: Surpassing Human-Level Performance on ImageNet Classification	ICCV	proceedings-article
+19	citation-19	2016	-	Deep Residual Learning for Image Recognition	CVPR	proceedings-article
+20	citation-20	1991	10.1016/0893-6080(91)90009-T	Approximation Capabilities of Multilayer Feedforward Networks	Neural Networks	journal-article
+21	citation-21	2020	-	Hyperplane Neural Codes and the Polar Complex	Topological Data Analysis	book-chapter
+22	citation-22	2018	10.5555/3327757.3327948	Neural Tangent Kernel: Convergence and Generalization in Neural Networks	NeurIPS	proceedings-article
+23	citation-23	2019	-	Provable Certificates for Adversarial Examples: Fitting a Ball in the Union of Polytopes	NeurIPS	proceedings-article
+24	citation-24	2015	-	Deep Learning	Nature	journal-article
+25	citation-25	2020	-	Finding the Homology of Decision Boundaries with Active Learning	NeurIPS	proceedings-article
+26	citation-26	2014	-	On the Number of Linear Regions of Deep Neural Networks	NeurIPS	proceedings-article
+27	citation-27	2010	-	Rectified Linear Units Improve Restricted Boltzmann Machines	ICML	proceedings-article
+28	citation-28	2019	-	PyTorch: An Imperative Style, High-Performance Deep Learning Library	NeurIPS	proceedings-article
+29	citation-29	2024	-	SDXL: Improving Latent Diffusion Models for High-Resolution Image Synthesis	ICLR	proceedings-article
+30	citation-30	2015	-	U-Net: Convolutional Networks for Biomedical Image Segmentation	MICCAI	proceedings-article
+31	citation-31	2018	-	SageMath: The Sage Mathematics Software System (Version 9.0)	Sage Developers	software
+32	citation-32	2020	-	Empirical Bounds on Linear Regions of Deep Rectifier Networks	AAAI	proceedings-article
+33	citation-33	2018	-	Bounding and Counting Linear Regions of Deep Neural Networks	ICML	proceedings-article
+34	citation-34	2004	-	An Introduction to Hyperplane Arrangements	Geometric Combinatorics	book-chapter
+35	citation-35	2021	-	MLP-Mixer: An All-MLP Architecture for Vision	NeurIPS	proceedings-article
+36	citation-36	1990	10.1137/0611023	Average-Case Stability of Gaussian Elimination	SIAM Journal on Matrix Analysis and Applications	journal-article
+37	citation-37	2018	-	High-Dimensional Probability: An Introduction with Applications in Data Science	Cambridge University Press	book
+38	citation-38	2020	-	On the Number of Linear Regions of Convolutional Neural Networks	ICML	proceedings-article
+39	citation-39	2020	-	Reachability Analysis for Feed-Forward Neural Networks Using Face Lattices	arXiv	preprint
+40	citation-40	2021	-	Reachability Analysis of Convolutional Neural Networks	arXiv	preprint
+41	citation-41	2018	-	Tropical Geometry of Deep Neural Networks	ICML	proceedings-article
+42	citation-42	2020	-	Empirical Studies on the Properties of Linear Regions in Deep Neural Networks	ICLR	proceedings-article

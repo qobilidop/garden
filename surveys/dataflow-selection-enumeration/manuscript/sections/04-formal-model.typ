@@ -18,11 +18,13 @@ well-defined finite-output task.
   nodes, output roots, and selection-site nodes; $I inter Q = emptyset$; and
   $N = V without (I union Q)$ is the set of ordinary nodes. Thus $I$, $N$,
   and $Q$ partition $V$; an output root may belong to any category. Input nodes
-  have no operand positions. The typed operand relation
-  $E subset.eq V times NN times V$ contains $(v,j,u)$ when operand position
+  have no operand positions. The finite typed operand relation
+  $E subset.eq V times NN_0 times V$ contains $(v,j,u)$ when operand position
   $j$ of consumer $v$ is supplied by $u$. Operand positions are unique per
   consumer, edges are type-correct, and the consumer-to-operand relation is
-  acyclic. For every selection $q$, its operand edges are exactly
+  acyclic. Every ordinary node of arity $k$ has exactly one operand edge at
+  each position $1,dots,k$ and no other operand edges. For every selection $q$,
+  its operand edges are exactly
   $(q,0,s_q)$ and $(q,j,c_(q,j))$ for $1 <= j <= m_q$. The label map $lambda$
   supplies result types and node semantics.
 ]
@@ -154,8 +156,9 @@ $product_(q in Q)(Omega_q union {bot_q})$.
 
 == Least valuation under the declared dependency policy
 
-Extend each value domain with a fresh bottom $bot_v$ and order it flatly below
-all ordinary values. An $x$-consistent partial valuation assigns each node
+Extend each value domain with a fresh bottom $bot_v$ and order it flatly,
+$bot_v <= d$ for every ordinary value $d$, with distinct ordinary values
+incomparable. Order valuations pointwise. An $x$-consistent partial valuation assigns each node
 either $bot_v$ or its eager value. It is dependency-closed when a defined
 ordinary node has all operands defined and a defined selection has its
 selector and every case root required by its concrete outcome defined. This is
@@ -222,7 +225,9 @@ $
 $
 
 where the displayed product is logical conjunction. It mentions outcomes of
-observed sites but contains no literal for an unobserved site.
+observed sites but contains no literal for an unobserved site. Here _positive_
+means one outcome-equality atom per observed site and no absence atom; an
+outcome atom may itself contain negation or an inequality.
 
 #theorem("exact local guard")[
   For every feasible observation $tau$ and every input $x$,
@@ -351,16 +356,18 @@ $
 $
 
 Thus every expression below consumes precisely the demanded boundary tuple.
-Reindex the upstream residual at the downstream inputs by
+For a full caller input $x$, write $x|_(delta_1)$ for its restriction to the
+demanded upstream ports. Reindex the upstream residual at the downstream inputs
+by
 
 $
-  hat(r)_1(x)_i = r_1(x)_(rho(i)), quad i in delta_H.
+  hat(r)_1(x)_i = r_1(x|_(delta_1))_(rho(i)), quad i in delta_H.
 $
 
 Their composed record is
 
 $
-  (g(x) and h(hat(r)_1(x)),
+  (g(x|_(delta_1)) and h(hat(r)_1(x)),
    delta_1,
    tau_1 union c dot tau_H,
    r_H(hat(r)_1(x))).

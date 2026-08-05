@@ -2,15 +2,18 @@
 
 Status: closed under the recorded mapping protocol on 2026-08-04
 
-This document will compare only the works that could plausibly subsume the
-proposed contribution. Inclusion here is intentionally more selective than the
-survey catalog.
+This document compares works that plausibly subsume the proposed contribution
+or establish a particularly important boundary. Inclusion here is intentionally
+more selective than the survey catalog but broader than the bounded
+snowballing seed set. Mapping closure uses exactly catalog entries marked
+`priority=critical` as closest-work seeds; a comparison-only row here does not
+create an additional chasing obligation.
 
 ## Comparison dimensions
 
 | Work | Program model | Enumerated object | Partiality and inactivity | Exact partition | Residual value | Main guarantee | Complexity | Potential subsumption |
 |---|---|---|---|---|---|---|---|---|
-| Voogd et al. 2023 | Imperative programs with branching and loops | Feasible terminating traces and semantic pieces | Complete branch traces; divergence leaves a subpartition | Yes, for terminating inputs | Symbolic substitution / piece behavior | Concrete correspondence and trace-piece bijection | Not the focus | Subsumes generic partition, guard, residual, soundness, and completeness claims. |
+| Voogd et al. 2025 | Imperative programs with branching and loops | Feasible terminating traces and semantic pieces | Complete branch traces; divergence leaves a subpartition | Yes, for terminating inputs | Symbolic substitution / piece behavior | Concrete correspondence and trace-piece bijection | Not the focus | Subsumes generic partition, guard, residual, soundness, and completeness claims. |
 | Sen et al. 2015 (MultiSE) | Imperative low-level language with computed jumps | Guarded symbolic expressions in value summaries | Merges path guards, optionally coalescing equal values | Guards for each variable are disjoint and exhaustive | Yes | Concrete soundness; logical equivalence to DSE absent approximations | Empirical sharing and speedup | Very close: already provides disjoint exhaustive guarded residual values. |
 | Spallitta et al. 2024/2025 | SAT and SMT formulas with projected variables | Disjoint partial satisfying assignments / implicants | Unassigned variables are don't-cares; 2025 work adds projection and SMT | Yes, over satisfying assignments | No program residual | Complete nonrepeating enumeration | Output may be exponentially smaller than total models; solver algorithms studied | A selector-observation encoding may reduce our configurations and witnesses to projected AllSMT. |
 | Krafczyk and Peleska 2017 | I/O transition systems with infinite inputs and finite state/output domains | Exact input classes preserving destination-state sets from every source state class | Every local transition predicate gets a positive/negative behavioral status; later equivalent classes are merged | Yes; global satisfiable products are disjoint/exhaustive, then minimized to the coarsest IECP | Finite transition output only | Complete finite abstraction and I/O-equivalence checking | Exponential predicate subsets and cross-state products, pruned by SMT | Semantically subsumes observer-fiber partitioning after one-step instrumentation; graph-specific construction and symbolic residuals remain. |

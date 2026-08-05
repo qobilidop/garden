@@ -2439,3 +2439,25 @@ reported as narrow source/query saturation. They do not establish global
 literature completeness, statistical independence of retrieval systems, or a
 priority claim. Later work, a different index, or a newly exposed conceptual
 cluster reopens the map.
+
+## Post-review artifact-integrity audit
+
+The manuscript self-review exposed nine primary-complete or citation-index
+rows whose screened counts and dispositions had been logged but whose frozen
+TSV artifacts were not linked. On 2026-08-04, the exact printed bibliographies
+for Avron--Sasson, Pingali--Arvind, Serra et al., Vincent--Schwager, Masden,
+Berzins, Drammis et al., and Balestriero--LeCun were frozen and linked. The two
+logged Feng forward records were reconstructed from current Semantic Scholar
+identifiers and DOI metadata; their original API ranking was unavailable, so
+the log and snapshot say this explicitly. The existing exact Feng backward
+snapshot was linked to its earlier row.
+
+Complete title reconciliation added four already-cataloged works to the
+affected `included_keys` fields: Yang et al. for Masden, Wang for Berzins, and
+two Avis parallel-enumeration papers for Drammis et al. No new catalog entry,
+conceptual cluster, exclusion, or plausible close competitor resulted, so this
+artifact repair does not reopen mapping closure. The checker now requires
+exactly one frozen snapshot for every non-audit log row, validates its record
+count, rejects orphan snapshots, checks catalog/source-note status agreement
+where the note uses the canonical status vocabulary, and rejects evidence rows
+unused by the manuscript.

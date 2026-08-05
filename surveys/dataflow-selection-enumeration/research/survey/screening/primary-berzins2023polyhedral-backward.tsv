@@ -1,0 +1,31 @@
+rank	source_id	year	doi	title	venue	type
+1	citation-1	2023	10.1137/1.9781611977578.ch3	Analyzing and Implementing GPU Hash Tables	SIAM Symposium on Algorithmic Principles of Computer Systems	proceedings-article
+2	citation-2	2022	-	Batch Normalization Explained	arXiv	preprint
+3	citation-3	2021	10.1109/JPROC.2020.3042100	Mad Max: Affine Spline Insights into Deep Learning	Proceedings of the IEEE	journal-article
+4	citation-4	2022	-	POLICE: Provably Optimal Linear Constraint Enforcement for Deep Neural Networks	arXiv	preprint
+5	citation-5	2019	-	The Geometry of Deep Networks: Power Diagram Subdivision	NeurIPS	proceedings-article
+6	citation-6	2022	10.3390/math10071123	Gaussian Perturbations in ReLU Networks and the Arrangement of Activation Regions	Mathematics	journal-article
+7	citation-7	2022	10.1137/20M1368902	On Transversality of Bent Hyperplane Arrangements and the Topological Expressiveness of ReLU Neural Networks	SIAM Journal on Applied Algebra and Geometry	journal-article
+8	citation-8	2003	-	Convex Polytopes	Springer	book
+9	citation-9	2016	-	Piecewise Linear Morse Theory	Freie Universität Berlin	dissertation
+10	citation-10	2019	-	Complexity of Linear Regions in Deep Networks	arXiv	preprint
+11	citation-11	2019	-	Deep ReLU Networks Have Surprisingly Few Activation Patterns	NeurIPS	proceedings-article
+12	citation-12	2019	10.1109/CVPR.2019.00013	Why ReLU Networks Yield High-Confidence Predictions Far Away from the Training Data and How to Mitigate the Problem	CVPR	proceedings-article
+13	citation-13	2022	-	Exact Visualization of Deep Neural Network Geometry and Decision Boundary	NeurIPS 2022 Workshop on Symmetry and Geometry in Neural Representations	workshop-paper
+14	citation-14	2023	-	SplineCam: Exact Visualization and Characterization of Deep Network Geometry and Decision Boundaries	CVPR	proceedings-article
+15	citation-15	2019	-	Provable Certificates for Adversarial Examples: Fitting a Ball in the Union of Polytopes	NeurIPS	proceedings-article
+16	citation-16	2020	10.1109/HiPC50609.2020.00015	WarpCore: A Library for Fast Hash Tables on GPUs	HiPC	proceedings-article
+17	citation-17	2019	-	Polyhedral Products over Finite Posets	Kyoto Journal of Mathematics	journal-article
+18	citation-18	2018	-	SNIP: Single-Shot Network Pruning Based on Connection Sensitivity	arXiv	preprint
+19	citation-19	2020	-	Analytic Marching: An Analytic Meshing Solution from Deep Implicit Surface Networks	ICML	proceedings-article
+20	citation-20	2021	10.1109/TPAMI.2021.3135007	Learning and Meshing from Deep Implicit Surface Networks Using an Efficient Implementation of Analytic Marching	IEEE Transactions on Pattern Analysis and Machine Intelligence	journal-article
+21	citation-21	2002	-	Lectures on Discrete Geometry	Springer	book
+22	citation-22	2014	-	On the Number of Linear Regions of Deep Neural Networks	NeurIPS	proceedings-article
+23	citation-23	2013	-	On the Number of Response Regions of Deep Feed Forward Networks with Piece-Wise Linear Activations	-	preprint
+24	citation-24	2017	-	On the Expressive Power of Deep Neural Networks	ICML	proceedings-article
+25	citation-25	2020	-	Reverse-Engineering Deep ReLU Networks	ICML	proceedings-article
+26	citation-26	2020	-	Locally Linear Attributes of ReLU Neural Networks	arXiv	preprint
+27	citation-27	2018	-	Bounding and Counting Linear Regions of Deep Neural Networks	ICML	proceedings-article
+28	citation-28	2015	-	Representation Benefits of Deep Feedforward Networks	arXiv	preprint
+29	citation-29	2016	-	Benefits of Depth in Neural Networks	COLT	proceedings-article
+30	citation-30	2022	10.24963/ijcai.2022/492	Estimation and Comparison of Linear Regions for ReLU Networks	IJCAI	proceedings-article

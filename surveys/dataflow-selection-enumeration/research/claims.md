@@ -141,9 +141,9 @@ proof obligations, and evidence.
 
 - **Status:** survey synthesis; formal derivation recorded
 - **Statement:** For finite total selective term graphs, the same graph-relative
-  observation is obtained by enabled-edge reachability, a selective
-  reader/finite-event-set-writer interpretation followed by conflict-free map
-  decoding, and a total unobserved-or-outcome activation encoding.
+  observation is characterized by enabled-edge reachability, generated locally
+  by concolic exact-fiber specialization, and encoded globally by total
+  unobserved-or-outcome activation coordinates.
 - **Presentation rule:** Attribute the component constructions to their
   established literatures; present only the cross-literature equivalence as our
   organizing derivation.

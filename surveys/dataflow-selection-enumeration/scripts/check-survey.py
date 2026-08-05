@@ -107,9 +107,20 @@ def main() -> int:
     bibliography = (ROOT / "references.bib").read_text(encoding="utf-8")
     bibliography_keys = set(re.findall(r"@[A-Za-z]+\{([^,]+),", bibliography))
     for citekey, row in catalog.items():
+        source_note = SURVEY / "sources" / f"{citekey}.md"
+        if source_note.is_file() and row["status"] != "excluded":
+            status_match = re.search(
+                r"^- \*\*Status:\*\* (candidate|screened|deep-read|excluded)\b",
+                source_note.read_text(encoding="utf-8"),
+                flags=re.MULTILINE,
+            )
+            if status_match and status_match.group(1) != row["status"]:
+                fail(
+                    f"catalog/source-note status mismatch for {citekey}: "
+                    f"{row['status']} != {status_match.group(1)}"
+                )
         if row["status"] != "deep-read":
             continue
-        source_note = SURVEY / "sources" / f"{citekey}.md"
         if not source_note.is_file():
             fail(f"deep-read work {citekey} has no source note")
         if citekey not in bibliography_keys:
@@ -120,6 +131,7 @@ def main() -> int:
         fail(f"unexpected evidence-matrix header: {header}")
     claim_ids: set[str] = set()
     covered_citations: set[str] = set()
+    evidence_key_sets: list[tuple[int, set[str]]] = []
     for number, row in enumerate(evidence_rows, start=2):
         claim_id = row["claim_id"]
         if not claim_id or claim_id in claim_ids:
@@ -138,6 +150,7 @@ def main() -> int:
             if expected_anchor not in row["source_note_anchors"]:
                 fail(f"evidence row {number} has no source-note anchor for {citekey}")
             covered_citations.add(citekey)
+        evidence_key_sets.append((number, set(row_keys)))
 
     manuscript_text = "\n".join(
         path.read_text(encoding="utf-8")
@@ -150,6 +163,9 @@ def main() -> int:
     missing_evidence = sorted(manuscript_citations - covered_citations)
     if missing_evidence:
         fail(f"manuscript citation has no evidence row: {missing_evidence[0]}")
+    for number, row_keys in evidence_key_sets:
+        if manuscript_citations.isdisjoint(row_keys):
+            fail(f"evidence row {number} has no citekey used by the manuscript")
 
     header, log_rows = rows(SURVEY / "search-log.tsv")
     if header != SEARCH_HEADER:
@@ -171,7 +187,16 @@ def main() -> int:
                 fail(f"search-log row {number} excludes unknown key {citekey}")
             if catalog[citekey]["status"] != "excluded":
                 fail(f"search-log row {number} exclusion {citekey} is not excluded")
-        for relative in re.findall(r"screening/[^ ;]+\.tsv", row["notes"]):
+        snapshot_refs = re.findall(r"screening/[^ ;]+\.tsv", row["notes"])
+        if row["direction"] == "audit":
+            if len(snapshot_refs) > 1:
+                fail(f"audit search-log row {number} references multiple snapshots")
+        elif len(snapshot_refs) != 1:
+            fail(
+                f"non-audit search-log row {number} must reference exactly one "
+                f"screening snapshot, found {len(snapshot_refs)}"
+            )
+        for relative in snapshot_refs:
             referenced_snapshots.add(relative)
             snapshot = SURVEY / relative
             if not snapshot.is_file():

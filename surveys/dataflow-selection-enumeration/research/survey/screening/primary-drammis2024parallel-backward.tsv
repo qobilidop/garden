@@ -1,0 +1,28 @@
+rank	source_id	year	doi	title	venue	type
+1	citation-1	1996	10.1016/0166-218X(95)00026-N	Reverse Search for Enumeration	Discrete Applied Mathematics	journal-article
+2	citation-2	2016	-	A Parallel Framework for Reverse Search Using mts	arXiv	preprint
+3	citation-3	2018	-	mplrs: A Scalable Parallel Vertex/Facet Enumeration Code	Mathematical Programming Computation	journal-article
+4	citation-4	2021	-	mts: A Light Framework for Parallelizing Tree Search Codes	Optimization Methods and Software	journal-article
+5	citation-5	2023	10.1109/ICASSP49357.2023.10095698	Fast and Exact Enumeration of Deep Networks Partitions Regions	ICASSP	proceedings-article
+6	citation-6	2009	-	Learning Deep Architectures for AI	Foundations and Trends in Machine Learning	journal-article
+7	citation-7	2014	-	On the Complexity of Shallow and Deep Neural Network Classifiers	ESANN	proceedings-article
+8	citation-8	2020	-	Activation Regions as a Proxy for Understanding Neural Networks	PhD dissertation	dissertation
+9	citation-9	2017	-	EMNIST: Extending MNIST to Handwritten Letters	IJCNN	proceedings-article
+10	citation-10	2019	-	Deep ReLU Networks Have Surprisingly Few Activation Patterns	arXiv	preprint
+11	citation-11	2023	-	When Deep Learning Meets Polyhedral Theory: A Survey	-	preprint
+12	citation-12	2018	10.1126/science.aau0577	AI Researchers Allege That Machine Learning Is Alchemy	Science	journal-article
+13	citation-13	2014	-	Adam: A Method for Stochastic Optimization	arXiv	preprint
+14	citation-14	2012	-	ImageNet Classification with Deep Convolutional Neural Networks	NeurIPS	proceedings-article
+15	citation-15	2014	-	On the Number of Linear Regions of Deep Neural Networks	NeurIPS	proceedings-article
+16	citation-16	2018	-	Sensitivity and Generalization in Neural Networks: An Empirical Study	arXiv	preprint
+17	citation-17	2014	-	Gurobi Optimizer Reference Manual	Gurobi Optimization	manual
+18	citation-18	2013	-	On the Number of Response Regions of Deep Feed Forward Networks with Piece-Wise Linear Activations	arXiv	preprint
+19	citation-19	2018	10.1137/15M1027930	A New Algorithm for Enumeration of Cells of Hyperplane Arrangements and a Comparison with Avis and Fukuda’s Reverse Search	SIAM Journal on Discrete Mathematics	journal-article
+20	citation-20	2020	-	Dissecting Deep Neural Networks	arXiv	preprint
+21	citation-21	1901	-	Anzeige einer Abhandlung über die Theorie der vielfachen Kontinuität	Springer	book
+22	citation-22	2019	-	Empirical Bounds on Linear Regions of Deep Rectifier Networks	arXiv	preprint
+23	citation-23	2018	-	Bounding and Counting Linear Regions of Deep Neural Networks	NeurIPS	proceedings-article
+24	citation-24	2016	-	Mastering the Game of Go with Deep Neural Networks and Tree Search	Nature	journal-article
+25	citation-25	2000	10.3929/ETHZ-A-003889994	Hyperplane Arrangements: Construction, Visualization and Application	ETH Zurich	dissertation
+26	citation-26	2021	-	TROPEX: An Algorithm for Extracting Linear Terms in Deep Neural Networks	-	preprint
+27	citation-27	2023	-	Any Deep ReLU Network Is Shallow	arXiv	preprint

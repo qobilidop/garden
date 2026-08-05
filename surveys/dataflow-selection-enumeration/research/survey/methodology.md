@@ -15,23 +15,26 @@ to audit its selection process.
 - Exploratory, non-replayable searches are separated from audited searches and
   explicitly marked `not-recorded`.
 - Every audited database query and citation direction has an exact seed or
-  query, hit count, screened count, and frozen title-level result set.
+  query, hit count, screened count, and frozen source-dependent metadata result
+  set; abstracts are retained when the source exposes them.
 - Index citation neighborhoods are checked against the primary bibliography;
   unresolved or truncated backward results are supplemented by a complete
   primary-reference snapshot and cannot independently establish closure.
-- The bounded closest-work set is read from primary papers rather than index
-  abstracts. Technical claims carry page, section, definition, theorem, or
+- The bounded closest-work snowballing seed set is exactly the catalog entries
+  marked `priority=critical` and is read from primary papers rather than index
+  abstracts. The broader comparison table also contains comparison-only
+  boundaries. Technical claims carry page, section, definition, theorem, or
   algorithm anchors in source notes.
 - Final no-add queries and the rule that reopens the map were predeclared.
 - Three separate agent passes duplicate-screened every logical record in each
   final closure round and audited the query, file, and anomaly counts before
   the map was called closed.
 
-At the archived snapshot, the catalog has 897 entries, of which 200 are marked
+At the archived snapshot, the catalog has 897 entries, of which 201 are marked
 deep-read. The audited log contains 318 database-query rows and 245 separately
 recorded backward or forward citation chases. Excluding duplicate adjudication
 passes, those rows account for 35,720 screened record occurrences; occurrence
-counts are not unique-paper counts. Eighty-four claim-evidence rows connect
+counts are not unique-paper counts. Eighty-three claim-evidence rows connect
 manuscript statements to primary-source notes.
 
 ## Threats that remain

@@ -21,7 +21,8 @@ The search vocabulary spans twenty-seven clusters. They cover symbolic
 execution and hardware simulation; synchronous and dataflow testing; projected
 model and cube enumeration; trace partitioning, decision structures,
 residualization, slicing, and demand; functional-logic and bounded-testing
-search; finite-observer partitions; hyperplane, neural, CPWL, hybrid, and
+search; finite-observer partitions; hyperplane, neural, continuous
+piecewise-linear (CPWL), hybrid, and
 parametric regions; stream-dataflow demand; observer-, property-, and
 context-guided state or schedule reduction; higher-order concolic inputs; and
 behavioral state quotients. The protocol lists the complete vocabulary and its
@@ -38,13 +39,18 @@ region enumeration each materially narrowed the original thesis.
 A work is included when it makes a technical contribution to at least one
 research question and exposes enough detail to compare semantics, guarantees,
 or algorithmic behavior. Applications of an unchanged executor, conventional
-CFG def-use testing, machine-learning graph staging, superseded secondary
+control-flow-graph (CFG) def-use testing, machine-learning graph staging,
+superseded secondary
 versions, unobtainable technical claims, and out-of-scope computational models
 receive stable exclusion codes.
 
 Every audited database query records its exact text, source, date, hit count,
-screened count, and frozen title-level snapshot. Every closest work receives
-separate backward and forward citation chases. Because citation indexes can
+screened count, and frozen source-dependent metadata snapshot; abstracts are
+retained when the source exposes them. The bounded closest-work snowballing
+seed set is exactly the catalog entries marked `priority=critical`, and every
+such seed receives separate backward and forward citation chases. The broader
+comparison table also contains comparison-only boundary works and does not make
+them additional closure seeds. Because citation indexes can
 omit references, merge versions, or attach incorrect identifiers, the printed
 primary bibliography controls backward closure. Technical extraction is based
 on the primary paper and records definition, algorithm, theorem, complexity,
@@ -60,11 +66,11 @@ The extraction taxonomy has six dimensions:
 - the proved or claimed guarantees; and
 - the semantic and computational assumptions.
 
-At the archived snapshot, the catalog contains 897 entries and marks 200 as
+At the archived snapshot, the catalog contains 897 entries and marks 201 as
 deep-read. The audited log contains 318 database queries and 245 separately
 recorded backward or forward citation chases. Excluding repeated independent
 adjudication passes, these rows contain 35,720 screened record occurrences;
-this is not a unique-paper or population count. Eighty-four evidence rows link
+this is not a unique-paper or population count. Eighty-three evidence rows link
 manuscript claims to anchored primary-source notes.
 
 == Saturation rule
@@ -84,9 +90,9 @@ world literature contains no additional relevant work.
 The repository accompanying this paper contains the protocol, catalog,
 query-level search log, frozen screening snapshots, source notes, evidence
 matrix, claim ledger, and closure audit. Downloaded papers and transient search
-responses are deliberately excluded. The archived `v1.0` artifact and rendered
+responses are deliberately excluded. The archived `v1.0` release and rendered
 manuscript are available at
-#link("https://github.com/qobilidop/dataflow-selection-enumeration/tree/v1.0")[the repository]
+#link("https://github.com/qobilidop/dataflow-selection-enumeration/releases/tag/v1.0")[the release]
 and
 #link("https://qobilidop.github.io/dataflow-selection-enumeration/")[reader],
 respectively; the search record was last reconciled on 4 August 2026.
@@ -104,3 +110,8 @@ pattern, mode, or critical region in different communities. Finally, the
 formal framework is an interpretive bridge: this paper distinguishes a theorem
 stated in prior work from a theorem obtained only after changing the observer
 or adding graph instrumentation.
+
+This version is a self-published research artifact authored by the AI system
+named on the title page. Any later submission to a conventional venue would
+require an accountable human author and the venue's required disclosure of AI
+assistance; this release does not claim otherwise.

@@ -36,13 +36,14 @@ reduction or boundary in each case.
       [Trees and diagrams], [Reached tests or compiled function],
         [Skipped tests; shared subfunctions], [Exact finite observer],
         [Flat guards can lose sharing],
-      [Neural trees/TADS], [Feasible PWL policy regions],
+      [Neural trees/typed affine decision structures (TADS)],
+        [Feasible piecewise-linear (PWL) policy regions],
         [Infeasible or entailed tests], [Exact guard/map or action tree],
         [Fixed neural/PWL architecture],
-      [BNN diagrams], [Requested class function],
+      [Binarized neural-network (BNN) diagrams], [Requested class function],
         [Hidden activations], [Exact BDD/SDD compilation],
         [Finite binary extensional output],
-      [Geometric/PWA], [Cells or affine modes],
+      [Geometric/piecewise-affine (PWA)], [Cells or affine modes],
         [Equal-map cells after quotient], [Exact region traversal/composition],
         [Affine, dimensional assumptions],
       [This synthesis], [Requested-root event fiber],
@@ -54,9 +55,11 @@ reduction or boundary in each case.
 
 == Symbolic execution and guarded residuals
 
+=== Symbolic residuals and conditional values
+
 Classical symbolic execution partitions inputs by feasible control-flow
 histories. Denotational treatments make each path condition and symbolic
-substitution a semantic piece @voogd2023denotational. MultiSE instead merges
+substitution a semantic piece @voogd2025compositional. MultiSE instead merges
 paths into value summaries whose alternatives are guarded symbolic
 expressions; in the exact setting those guards are disjoint and exhaustive
 @sen2015multise. Reusable symbolic interpreters and compositional merging
@@ -76,6 +79,8 @@ equivalence, including partially interpreted networks
 @rabinovich1996schematological @rabinovich1997partial. These are graph-native
 symbolic sharing and network-equivalence precedents, not input partitions
 indexed by requested internal observations.
+=== Dataflow and hardware semantics
+
 The surrounding network-semantics lineage is broader still: it includes
 compositional relational semantics for indeterminate networks, full abstraction
 for nondeterministic networks, a network calculus and algebra, a fibrational
@@ -212,6 +217,8 @@ handshake simplification opportunities @xu2024spuriousdynamism. These methods
 prove or transform selected circuit behaviors; they do not enumerate all
 input-indexed internal observations.
 
+=== Delayed choices and symbolic heaps
+
 Delayed-choice execution is an especially instructive neighbor. A bounded
 nondeterministic value remains in a shared suspension until a non-copy use
 forces a concrete alternative, preserving reachable visible states while
@@ -239,6 +246,8 @@ properties needed to replay one selected TypeScript path
 @menshutin2025pathminimal. That is sparse path-relative input synthesis, not an
 exhaustive partition over all observations.
 
+=== State and schedule quotients
+
 State-space and exploration quotients provide two further boundaries. The
 well-formed colored-net symbolic-reachability lineage begins at least with the
 1991 construction and its expanded journal treatment: it groups markings by
@@ -258,7 +267,8 @@ symbolic methods use BDDs or SAT/SMT independence conditions and can preserve
 local properties, LTL without next, or a representative set with no redundant
 interleavings under the method's declared optimality criterion
 @alur2001partialorder @bhattacharya2005symbolicpor @kahlon2009mpor
-@vandermeulen2011por. Concolic DPOR applies the same schedule quotient during
+@vandermeulen2011por. Concolic dynamic partial-order reduction (DPOR) applies
+the same schedule quotient during
 test generation @saarikivi2012dpor. SymPaths is closer still: it records
 scheduling events in symbolic paths and proves correctness and completeness of
 the reduced symbolic semantics relative to concrete multithreaded executions
@@ -314,7 +324,8 @@ latter sometimes exponentially coarser while preserving local-safety coverage
 also group distributed states and interleavings together @pick2023psym.
 Maximal-causality reduction claims one execution per largest causal class and
 a provably minimal execution count @huang2015mcr. It has also been extended to
-TSO and PSO, while a later variant uses static dependency analysis to reduce
+total store order (TSO) and partial store order (PSO), while a later variant
+uses static dependency analysis to reduce
 the causal constraints without silently accepting the redundancy that the
 analysis can introduce @huang2016mcrtso @huang2017staticmcr.
 An independent weak-memory line models thread scheduling and store-buffer
@@ -332,6 +343,8 @@ At a component boundary, interface grammars compile allowed nested call
 sequences and semantic constraints into environment stubs for modular model
 checking @hughes2008interface. This is an analyst-supplied interface observer,
 not a derived partition of caller inputs.
+
+=== Petri-net unfoldings and observers
 
 Petri-net semantics provides complete partial-order objects independent of
 slicing. Token-flow DAGs modulo isomorphism unify processes, partial languages,
@@ -436,6 +449,8 @@ the latter a coverage-oriented search heuristic. Neither is an exact partition
 of caller inputs by requested internal events, but both preclude a broad claim
 that observation-guided omission or symbolic quotienting is new.
 
+=== Target- and property-guided search
+
 Context-guided concolic search similarly prefers candidate branches reached
 under new dominator-filtered path contexts and widens the context depth only
 incrementally @seo2014context. A dissertation extension learns and merges
@@ -466,7 +481,8 @@ coverage and then prioritizes that subset before exploration
 semantic quotient of symbolic executions.
 
 Property-guided work supplies a stronger boundary than coverage heuristics.
-Regular-property-guided DSE combines an event-FSM history with a static
+Regular-property-guided dynamic symbolic execution (DSE) combines an event-FSM
+history with a static
 over-approximation of future events to prioritize branches likely to reach one
 accepted trace @zhang2015regular. SRV's ideal rules additionally slice branches
 that cannot contribute a counterexample or whose accepted continuations are
@@ -548,7 +564,8 @@ enumerator.
 
 == Projection, Boolean atoms, and decision structures
 
-AllSMT enumerates assignments to selected predicates and theory terms
+AllSMT enumerates valuations of designated Boolean predicates together with
+one relevant assignment to designated theory variables per Boolean valuation
 @phan2015allsmtr. Later algorithms enumerate disjoint partial models and
 projected SAT/SMT models without ordinary blocking clauses
 @spallitta2024disjoint @spallitta2025projected. Instrumenting every selection

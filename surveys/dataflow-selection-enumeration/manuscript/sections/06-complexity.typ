@@ -107,8 +107,11 @@ definitional encoding, or measured serialized bytes.
 
 Feasibility of one requested outcome is NP-hard even for Boolean graphs: let a
 selector compute an arbitrary circuit $F(x)$ and ask whether its `true` outcome
-is feasible. With finite polynomial-size inputs the problem is in NP, but the
-general typed model makes no uniform membership claim.
+is feasible. For polynomial-size Boolean circuits over explicitly encoded
+finite bit-vector inputs, a supplied input verifies feasibility in polynomial
+time, so that restricted problem is in NP. The general typed model allows
+primitives without a declared polynomial-time evaluation bound and therefore
+makes no uniform membership claim.
 
 Counting feasible observations is \#P-hard when $A$ is part of the input. Under
 a Boolean constraint $F(x)$, expose every input bit as an always-observed
@@ -120,47 +123,50 @@ coNP-hard by propositional validity.
 
 == Hyperplane cells: a strict all-sites-observed case
 
-Suppose every site is structurally observed. After canonicalization, let the
-geometric core contain $n_Q$ nonconstant affine forms
-$ell_q : RR^D -> RR$ of the original input that define distinct hyperplanes.
-Constant and scalar-duplicate site coordinates are outside this core; where
-present, their deterministic outcomes are reconstructed in the observation
-record. Let
-$A(x) <=> product_(q in Q) ell_q(x) != 0$, and totalize each classifier
+Suppose every site is structurally observed. After canonicalization, let
+$Q_c subset.eq Q$ be a geometric core of $m=abs(Q_c)$ sites. For each
+$q in Q_c$, the classifier is the strict sign of a nonconstant affine form
+$ell_q : RR^D -> RR$, and distinct core forms define distinct hyperplanes.
+Constant and scalar-duplicate site coordinates are outside this core; a fixed
+reconstruction map restores their deterministic outcomes in each full
+observation record. Let
+$A(x) <=> product_(q in Q_c) ell_q(x) != 0$, and define each core classifier
 arbitrarily on zero outside that caller domain. Each feasible core observation
-is one full-dimensional open cell of the resulting $n_Q$-hyperplane
-arrangement. The cost symbols below are
+is one full-dimensional open cell of the resulting $m$-hyperplane arrangement,
+and $K$ is equivalently the number of such cells and reconstructed observations.
+The cost symbols below are
 source-specific: $L_("AF")(m,d)$ is the arithmetic cost of the LP used by
 Avis--Fukuda, while $L_F$ and $L_R$ denote the LP costs charged respectively by
 Ferrez et al. and Rada--Černý. Avis and Fukuda enumerate all $K$ cells in
 
 $
-  O(K n_Q D L_("AF")(n_Q,D))
+  O(K m D L_("AF")(m,D))
 $
 
-arithmetic time with $O(n_Q D)$ working space @avis1996reverse. Sleumer gives
-$O(K n_Q)$ arithmetic time for fixed $D$ and $O(n_Q^2)$ space
+arithmetic time with $O(m D)$ working space @avis1996reverse. Sleumer gives
+$O(K m)$ arithmetic time for fixed $D$ and $O(m^2)$ space
 @sleumer1998output. For central
 arrangements, Ferrez, Fukuda, and Liebling give the pre-Rada bound
 
 $
-  O(K n_Q L_F(n_Q,D))
+  O(K m L_F(m,D))
 $
 
-with $O(n_Q D)$ working space @ferrez2005fixedrank. Rada and Černý later give a
+with $O(m D)$ working space @ferrez2005fixedrank. Rada and Černý later give a
 different incremental sign-prefix formulation with
-$O(K n_Q L_R(n_Q,D))$ time @rada2018new.
+$O(K m L_R(m,D))$ time @rada2018new.
 
 All four algorithms are complete, duplicate-free, and output-polynomial under
 their stated arithmetic or LP-cost models. Rada--Černý additionally classify
 their bounded-encoding algorithm in OutputP; the other displayed operation
-bounds are not silently promoted to coefficient-bit theorems. Deza and Pournin
-add a rational-bit-model zonotope traversal. If $B_Z$ is total generator
+bounds are not silently promoted to coefficient-bit theorems. For the
+full-dimensional rational zonotope dual to this central-arrangement case, Deza
+and Pournin add a rational-bit-model traversal. If $B_Z$ is total generator
 encoding length, its proof gives
 
 $
-  O(K n_Q [q(n_Q,D,B_Z) + log K])
-    = O(K p(n_Q,D,B_Z)),
+  O(K m [q(m,D,B_Z) + log K])
+    = O(K p(m,D,B_Z)),
 $
 
 for unspecified polynomials $q$ and $p$, while retaining all visited vertices
@@ -169,6 +175,9 @@ can greatly reduce structured instances but gives no stronger generic theorem
 @deza2026whitewhale. Newer circuit-guided central-arrangement algorithms report
 large practical improvements without a replacement OutputP, IncP, or DelayP
 bound @dussault2025bdifferential.
+
+These traversal bounds count core cells. Materializing dense records that
+restore every noncore coordinate adds $O(K abs(Q))$ output work.
 
 The reduction has sharp boundaries. A non-strict classifier assigns boundary
 points to one side, and an arbitrary $A$ can cut or lower the dimension of a
