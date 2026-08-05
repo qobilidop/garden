@@ -117,7 +117,13 @@ read-only resource access and account for events with multiple histories over
 arbitrary semi-weighted bounded contextual nets. Symbolic complete prefixes
 also cover safe Time Petri Net processes, while high-level symbolic prefixes
 cover a safe class and an extension with infinitely many reachable markings.
-Token-trail net languages jointly expose conflict and concurrency and cover
+A later symbolic unfolding carries stopwatch and parameter constraints and
+improves locality for ordinary safe Time Petri Nets, but its finite-complete-
+prefix theorem is restricted to that nonparametric subclass. For 1-safe
+free-choice nets, a full prefix of the maximal-step computation tree supports
+reveals and excludes and computes the transition-label footprints of all
+maximal runs. Token-trail net languages jointly expose conflict and concurrency
+and cover
 finite unfoldings and step languages. Dynamic slices can be marking or MTL
 relative; safety slices preserve verification and falsification of the stated
 stutter-invariant properties; maximal slicing can retain every transition that
@@ -157,10 +163,12 @@ semantic ingredients are close:
 - conformance, latency-insensitive validation, and bounded-network refinement
   relate dataflow to hardware;
 - token-flow semantics; redundancy-reduced, modular, contextual-read, timed,
-  and high-level symbolic complete prefixes; and token-trail semantics supply
+  and high-level symbolic complete prefixes; parametric and stopwatch symbolic
+  unfoldings with explicit finiteness limits; and token-trail semantics supply
   complete Petri-net behavior representations; and
-- Petri-net slicing, reconstruction, and observation-policy synthesis supply
-  property-preserving requested-event and observation-driven inverse results.
+- maximal-run footprint analysis, Petri-net slicing, reconstruction, and
+  observation-policy synthesis supply property-preserving requested-event and
+  observation-driven inverse results.
 
 The survey therefore rules out claims of inventing choice-induced dataflow
 partitioning, symbolic trace equivalence, contextual demand, or modular hardware

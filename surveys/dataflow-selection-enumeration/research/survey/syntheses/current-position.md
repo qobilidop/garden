@@ -66,7 +66,8 @@ already supplies:
   soundness, property preservation, optimality, or relative-completeness
   guarantees, plus explicit approximate variants;
 - symbolic unfoldings that avoid redundant concurrent interleavings and
-  commute with component product;
+  commute with component product, plus symbolic time, stopwatch, and parameter
+  constraints whose finite-prefix guarantees remain subclass-specific;
 - exact basis-marking and bisimulation state reductions, a mildly lossy
   time-anonymous abstraction, and estimation graphs for partial observers;
 - exact fixed-structure current-marking sets and minimum-token initial-marking
@@ -105,8 +106,10 @@ already supplies:
   buffers across single- and multi-clock hardware boundaries;
 - token-flow and token-trail semantic languages; redundancy-reduced, modular,
   contextual-read, timed, and high-level symbolic complete prefixes, including
-  an infinite-marking class; property-preserving Petri-net slices; and
-  observation-driven Petri-net structure reconstruction; and
+  an infinite-marking class; parametric and stopwatch symbolic unfoldings with
+  explicit finite-prefix limits; maximal-run transition-footprint prefixes;
+  property-preserving Petri-net slices; and observation-driven Petri-net
+  structure reconstruction; and
 - a complete categorical language for value-dependent faceted dataflow
   workflows.
 

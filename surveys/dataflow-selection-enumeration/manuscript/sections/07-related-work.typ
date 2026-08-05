@@ -347,16 +347,24 @@ Contextual prefixes treat read-only access and multiple event histories
 directly for arbitrary semi-weighted bounded contextual nets
 @baldan2008contextualprefix. Symbolic complete prefixes for safe Time Petri Nets
 represent every temporally complete extended process by prefix substitution
-under symbolic token-age constraints @chatain2006timeprefix. High-level
+under symbolic token-age constraints @chatain2006timeprefix. A later symbolic
+unfolding carries time, parameters, and stopwatches and improves
+prefix locality and compactness for ordinary safe Time Petri Nets, but the
+finite-complete-prefix theorem is restricted to that nonparametric subclass
+@jard2013parametricunfolding. High-level
 symbolic prefixes generalize the safe-net construction and extend its cut-off
 criterion to a class with infinitely many reachable markings
 @wuerdemann2024symbolicprefix. Token-trail semantics instead gives a labelled-net
 language that represents conflict and concurrency,
 contains all finite unfoldings, and relates the source net's step language to
-those of the member nets @kovar2024tokentrail. These are rich whole-net behavior
-languages, reachability summaries, prefixes, and unfoldings, not input-indexed
-observations of one requested pure-dataflow result or typed residual functions
-over its caller-input fibers.
+those of the member nets @kovar2024tokentrail. For 1-safe free-choice nets, a
+full prefix of the maximal-step computation tree supports reveals and excludes
+analysis and computes the sets of transition labels occurring in all maximal
+runs, with an exponential worst-case footprint bound
+@adobbati2022informationflowprefix. These are rich whole-net behavior
+languages, reachability summaries, prefixes, unfoldings, and unordered
+transition-set footprints, not input-indexed observations of one requested
+pure-dataflow result or typed residual functions over its caller-input fibers.
 
 Colored-net symbolic unfoldings provide another true-concurrency
 representation: they avoid materializing every independent-action interleaving

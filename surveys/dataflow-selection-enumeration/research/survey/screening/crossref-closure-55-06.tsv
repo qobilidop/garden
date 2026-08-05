@@ -1,0 +1,101 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1017/cbo9780511730344.008	2010	10.1017/cbo9780511730344.008	Linear Inverse Problems	Sparse Image and Signal Processing	book-chapter
+2	10.1109/tip.2026.3662583/mm1	None	10.1109/tip.2026.3662583/mm1	DeepGSR: Deep group-based sparse representation network for solving image inverse problems_supp1-3662583.pdf		component
+3	10.1017/cbo9781316104514.008	2015	10.1017/cbo9781316104514.008	Linear Inverse Problems	Sparse Image and Signal Processing	book-chapter
+4	10.1088/0266-5611/26/9/095001	2010	10.1088/0266-5611/26/9/095001	Nonnegative image reconstruction from sparse Fourier data: a new deconvolution algorithm	Inverse Problems	journal-article
+5	10.2307/30134435	1988	10.2307/30134435	Input on Leucocytozoonosis Requested	AAV Today	journal-article
+6	10.1145/3799902.3811099	2026	10.1145/3799902.3811099	Sparse-to-Complete: From Sparse Image Captures to Complete 3D Scenes	Proceedings of the Special Interest Group on Computer Graphics and Interactive Techniques Conference Conference Papers	proceedings-article
+7	10.1088/1361-6420/ad0c42	2024	10.1088/1361-6420/ad0c42	An image inpainting algorithm using exemplar matching and low-rank sparse prior	Inverse Problems	journal-article
+8	10.1016/j.neucom.2005.02.019	2005	10.1016/j.neucom.2005.02.019	A general solution to blind inverse problems for sparse input signals	Neurocomputing	journal-article
+9	10.1016/j.imavis.2007.12.006	2008	10.1016/j.imavis.2007.12.006	Non-negative sparse coding shrinkage for image denoising using normal inverse Gaussian density model	Image and Vision Computing	journal-article
+10	10.1109/dicta.2013.6691499	2013	10.1109/dicta.2013.6691499	Image Matting for Sparse User Input by Iterative Refinement	2013 International Conference on Digital Image Computing: Techniques and Applications (DICTA)	proceedings-article
+11	10.1016/j.mri.2020.08.014	2020	10.1016/j.mri.2020.08.014	Magnetic resonance image enhancement using highly sparse input	Magnetic Resonance Imaging	journal-article
+12	10.7554/elife.13214.012	None	10.7554/elife.13214.012	Figure 4—figure supplement 1. Basal forebrain input from the prefrontal cortex.		component
+13	10.1007/s11760-025-04704-5	2025	10.1007/s11760-025-04704-5	Constrained maximum correntropy criterion based sparse algorithm for sparse channel estimation against noisy input	Signal, Image and Video Processing	journal-article
+14	10.1049/iet-ipr.2019.0129	2020	10.1049/iet-ipr.2019.0129	Single image super‐resolution based on sparse representation using dictionaries trained with input image patches	IET Image Processing	journal-article
+15	10.1109/tip.2026.3662583	2026	10.1109/tip.2026.3662583	DeepGSR: Deep Group-Based Sparse Representation Network for Solving Image Inverse Problems	IEEE Transactions on Image Processing	journal-article
+16	10.1016/j.jvcir.2021.103367	2021	10.1016/j.jvcir.2021.103367	Gaze prediction for first-person videos based on inverse non-negative sparse coding with determinant sparse measure	Journal of Visual Communication and Image Representation	journal-article
+17	10.1080/17415977.2013.840302	2014	10.1080/17415977.2013.840302	Regularized sparse representation for image deconvolution	Inverse Problems in Science and Engineering	journal-article
+18	10.1088/1361-6420/abcd26	2021	10.1088/1361-6420/abcd26	A mathematical model for image saturation with an application to the restoration of solar images via adaptive sparse deconvolution	Inverse Problems	journal-article
+19	10.1088/1361-6420/ad7f81	2024	10.1088/1361-6420/ad7f81	AdaTL<sub>1</sub>: an adaptive non-convex sparse solver with applications to CT reconstruction and image denoising	Inverse Problems	journal-article
+20	10.1109/icassp.2017.7952394	2017	10.1109/icassp.2017.7952394	Sparse inverse bilateral filters for image processing	2017 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)	proceedings-article
+21	10.1109/vcip.2011.6116043	2011	10.1109/vcip.2011.6116043	Observation quality guaranteed layout of camera networks via sparse representation	2011 Visual Communications and Image Processing (VCIP)	proceedings-article
+22	10.1049/ipr2.12310	2021	10.1049/ipr2.12310	Moving target inverse synthetic aperture radar image resolution enhancement based on two‐dimensional block sparse signal reconstruction	IET Image Processing	journal-article
+23	10.1097/00006199-197903000-00004	1979	10.1097/00006199-197903000-00004	Complete Report of Descriptive and Inferential Statistics Requested	Nursing Research	journal-article
+24	10.1016/j.neucom.2024.127945	2024	10.1016/j.neucom.2024.127945	Sparse multi-view image clustering with complete similarity information	Neurocomputing	journal-article
+25	10.1186/s13640-017-0200-7	2017	10.1186/s13640-017-0200-7	Sparse signal subspace decomposition based on adaptive over-complete dictionary	EURASIP Journal on Image and Video Processing	journal-article
+26	10.1109/icip55913.2025.11084518	2025	10.1109/icip55913.2025.11084518	Bidirectional Flow Fields for Sparse Input Novel View Synthesis of Dynamic Scenes	2025 IEEE International Conference on Image Processing (ICIP)	proceedings-article
+27	10.1109/tip.2015.2427518	2015	10.1109/tip.2015.2427518	Inverse Sparse Tracker With a Locally Weighted Distance Metric	IEEE Transactions on Image Processing	journal-article
+28	10.1117/12.2550535	2020	10.1117/12.2550535	The image-to-physical liver registration sparse data challenge: characterizing inverse biomechanical model resolution	Medical Imaging 2020: Image-Guided Procedures, Robotic Interventions, and Modeling	proceedings-article
+29	10.1109/tip.2013.2255305	2013	10.1109/tip.2013.2255305	Sparse Stochastic Processes and Discretization of Linear Inverse Problems	IEEE Transactions on Image Processing	journal-article
+30	10.1109/tip.2019.2927458	2020	10.1109/tip.2019.2927458	Jointly Using Low-Rank and Sparsity Priors for Sparse Inverse Synthetic Aperture Radar Imaging	IEEE Transactions on Image Processing	journal-article
+31	10.1029/97eo00190	1997	10.1029/97eo00190	Community input requested	Eos, Transactions American Geophysical Union	journal-article
+32	10.1109/icra48506.2021.9560813	2021	10.1109/icra48506.2021.9560813	Linear Inverse Problem for Depth Completion with RGB Image and Sparse LIDAR Fusion	2021 IEEE International Conference on Robotics and Automation (ICRA)	proceedings-article
+33	10.70675/3fcb8b61z9ee7z4df7z86bczbe1bb27dfc82	None	10.70675/3fcb8b61z9ee7z4df7z86bczbe1bb27dfc82	Accelerating sparse inverse problems using structured approximations		dissertation
+34	10.1016/j.jag.2014.03.015	2014	10.1016/j.jag.2014.03.015	Sparse dimensionality reduction of hyperspectral image based on semi-supervised local Fisher discriminant analysis	International Journal of Applied Earth Observation and Geoinformation	journal-article
+35	10.1109/tip.2019.2959912	2020	10.1109/tip.2019.2959912	Grayscale-Thermal Tracking via Inverse Sparse Representation-Based Collaborative Encoding	IEEE Transactions on Image Processing	journal-article
+36	10.1109/icsip52628.2021.9688960	2021	10.1109/icsip52628.2021.9688960	A Curved SAR Sparse Imaging Method Based on Approximate Observation	2021 IEEE 6th International Conference on Signal and Image Processing (ICSIP)	proceedings-article
+37	10.1109/eorsa.2014.6927881	2014	10.1109/eorsa.2014.6927881	Multi-view oblique aerial image sparse matching	2014 Third International Workshop on Earth Observation and Remote Sensing Applications (EORSA)	proceedings-article
+38	10.58837/chula.the.1995.996	None	10.58837/chula.the.1995.996	Color image input using a black-and-white image input device		dissertation
+39	10.1088/0266-5611/29/6/065011	2013	10.1088/0266-5611/29/6/065011	Sparse, adaptive Smolyak quadratures for Bayesian inverse problems	Inverse Problems	journal-article
+40	10.1088/0266-5611/28/4/045003	2012	10.1088/0266-5611/28/4/045003	Sparse deterministic approximation of Bayesian inverse problems	Inverse Problems	journal-article
+41	10.1109/icassp.1998.681832	None	10.1109/icassp.1998.681832	Sparse inverse solution methods for signal and image processing applications	Proceedings of the 1998 IEEE International Conference on Acoustics, Speech and Signal Processing, ICASSP '98 (Cat. No.98CH36181)	proceedings-article
+42	10.1515/9783111357270-005	2024	10.1515/9783111357270-005	5 Image reconstructions using sparse dictionary representations and implicit, nonnegative mappings	Inverse Problems on Large Scales	book-chapter
+43	10.1049/iet-rsn.2015.0517	2016	10.1049/iet-rsn.2015.0517	High‐resolution multiple‐input–multiple‐output–inverse synthetic aperture radar imaging based on sparse representation	IET Radar, Sonar &amp; Navigation	journal-article
+44	10.1109/tmm.2011.2161760	2011	10.1109/tmm.2011.2161760	Missing Image Data Reconstruction Based on Adaptive Inverse Projection via Sparse Representation	IEEE Transactions on Multimedia	journal-article
+45	10.1109/access.2026.3658526	2026	10.1109/access.2026.3658526	Effective Input Projection for Updating Dictionary Atoms in Sparse Coding-Based Image Denoising	IEEE Access	journal-article
+46	10.1523/jneurosci.02-02-00216.1982	1982	10.1523/jneurosci.02-02-00216.1982	Inverse relationship between transmitter release and terminal length in synapses on frog muscle fibers of uniform input resistance	The Journal of Neuroscience	journal-article
+47	10.5353/th_991043982879103414	None	10.5353/th_991043982879103414	Data-driven high-quality 3D model creation from sparse input		dissertation
+48	10.1049/iet-ipr.2012.0554	2013	10.1049/iet-ipr.2012.0554	Effective two‐step method for face hallucination based on sparse compensation on over‐complete patches	IET Image Processing	journal-article
+49	10.1117/12.2188764	2015	10.1117/12.2188764	Joint sparse recovery in inverse scattering	SPIE Proceedings	proceedings-article
+50	10.70675/f62305b0z79c5z4b10z91a9z9814de5eca35	None	10.70675/f62305b0z79c5z4b10z91a9z9814de5eca35	Inverse estimation of sparse mechanical excitation sources by Bayesian filtering		dissertation
+51	10.1097/00149078-198812010-00011	1988	10.1097/00149078-198812010-00011	ON-SITE INCINERATION REQUESTED FOR LOW-LEVEL RADIOACTIVE WASTE	Biomedical Safety &amp; Standards	journal-article
+52	10.5194/gmd-2016-256-rc2	2017	10.5194/gmd-2016-256-rc2	"Review of Hase et al, ""Atmospheric inverse modeling via sparse reconstruction"""		peer-review
+53	10.21236/ad0717073	1970	10.21236/ad0717073	Maintaining a Sparse Inverse in the Simplex Method		report
+54	10.1515/9783110226157.201	2010	10.1515/9783110226157.201	Sparse Recovery in Inverse Problems	Theoretical Foundations and Numerical Methods for Sparse Recovery	book-chapter
+55	10.1088/0266-5611/20/6/s13	2004	10.1088/0266-5611/20/6/s13	Inverse scattering with sparse Bayesian vector regression	Inverse Problems	journal-article
+56	10.55776/p19496	2007	10.55776/p19496			grant
+57	10.1088/0266-5611/33/1/014002	2017	10.1088/0266-5611/33/1/014002	Flexible sparse regularization	Inverse Problems	journal-article
+58	10.3934/ipi.2021017	2021	10.3934/ipi.2021017	Nonlocal latent low rank sparse representation for single image super resolution via self-similarity learning	Inverse Problems and Imaging	journal-article
+59	10.1111/j.1547-5069.1998.tb01256.x	1998	10.1111/j.1547-5069.1998.tb01256.x	Clinical Trials ‐ Response from Reader's Requested	Image: the Journal of Nursing Scholarship	journal-article
+60	10.7717/peerj.2108/fig-3	None	10.7717/peerj.2108/fig-3	Figure 3: Over-complete Dictionaries (A), (C), (E) and sparse-approximations of original spectrogram (B), (D), (F) for Primary Forest site dawn chorus for Mini-batch gradient learning, Gabor Field Dictionary and SI- PLCA2D Component Dictionary.		component
+61	10.1088/0266-5611/26/10/105016	2010	10.1088/0266-5611/26/10/105016	Effective solution of nonlinear subsurface flow inverse problems in sparse bases	Inverse Problems	journal-article
+62	10.5220/0006499500540063	2017	10.5220/0006499500540063	Efficient Implementation of Self-Organizing Map for Sparse Input Data	Proceedings of the 9th International Joint Conference on Computational Intelligence	proceedings-article
+63	10.1117/12.2687127	2023	10.1117/12.2687127	Image restoration techniques for space-based lightweight optically sparse aperture Earth-observation telescopes in the longwave infrared domain	Image and Signal Processing for Remote Sensing XXIX	proceedings-article
+64	10.1021/acs.jctc.3c00651.s001	None	10.1021/acs.jctc.3c00651.s001	Surrogate Modeling of the Relative Entropy for Inverse Design Using Smolyak Sparse Grids		component
+65	10.70675/27d33ff7z1f90z47b8z99b3z130931488615	None	10.70675/27d33ff7z1f90z47b8z99b3z130931488615	Cortical source imaging : from the laplacian montage to sparse inverse solutions		dissertation
+66	10.1017/cbo9781139093514.011	2012	10.1017/cbo9781139093514.011	Bitangential inverse input scattering problems	Bitangential Direct and Inverse Problems for Systems of Integral and Differential Equations	book-chapter
+67	10.1007/978-981-95-0401-5_5	2026	10.1007/978-981-95-0401-5_5	Inverse Gaussian Fibers for Future OAM-MDM-WDM Optical Networking Systems	Advances in Communication, Signal and Image Processing	book-chapter
+68	10.1109/tci.2019.2956888	2020	10.1109/tci.2019.2956888	Adaptive Quantile Sparse Image (AQuaSI) Prior for Inverse Imaging Problems	IEEE Transactions on Computational Imaging	journal-article
+69	10.1016/j.jag.2009.08.002	2009	10.1016/j.jag.2009.08.002	Classifiers vs. input variables—The drivers in image classification for land cover mapping	International Journal of Applied Earth Observation and Geoinformation	journal-article
+70	10.1088/1361-6420/ab28cb	2020	10.1088/1361-6420/ab28cb	Sparse reconstructions of acoustic source for inverse scattering problems in measure space	Inverse Problems	journal-article
+71	10.1117/12.2534825	2019	10.1117/12.2534825	A fast gradient-based algorithm for image reconstruction in inverse geometry CT architecture with sparse distributed sources	15th International Meeting on Fully Three-Dimensional Image Reconstruction in Radiology and Nuclear Medicine	proceedings-article
+72	10.1109/icip.2006.312574	2006	10.1109/icip.2006.312574	Sparse Image Reconstruction using Sparse Priors	2006 International Conference on Image Processing	proceedings-article
+73	10.1021/ed077p296	2000	10.1021/ed077p296	Input Requested for a History of the Division of Chemical Education	Journal of Chemical Education	journal-article
+74	10.1088/0266-5611/26/11/115015	2010	10.1088/0266-5611/26/11/115015	Sparse channel separation using random probes	Inverse Problems	journal-article
+75	10.1109/tii.2023.3280327	2024	10.1109/tii.2023.3280327	Sparse Observation Assimilated Digital Image Correlation for High Fidelity Deformation Field Reconstruction	IEEE Transactions on Industrial Informatics	journal-article
+76	10.1137/080730822	2010	10.1137/080730822	Simultaneously Sparse Solutions to Linear Inverse Problems with Multiple System Matrices and a Single Observation Vector	SIAM Journal on Scientific Computing	journal-article
+77	10.70675/81005738z3d5dz4be5z8e89z3fb5ff866cd5	None	10.70675/81005738z3d5dz4be5z8e89z3fb5ff866cd5	Design and evaluation of sparse models and algorithms for audio inverse problems		dissertation
+78	10.1088/0266-5611/26/12/125012	2010	10.1088/0266-5611/26/12/125012	Compressive sensing principles and iterative sparse recovery for inverse and ill-posed problems	Inverse Problems	journal-article
+79	10.1088/0266-5611/11/4/001	1995	10.1088/0266-5611/11/4/001	Global uniqueness for inverse parabolic problems with final observation	Inverse Problems	journal-article
+80	10.1088/1361-6420/ade180	2025	10.1088/1361-6420/ade180	Heavy-ball enhanced pseudo-inverse-based hard thresholding algorithms for sparse linear inverse problems	Inverse Problems	journal-article
+81	10.5194/egusphere-egu21-3506	2021	10.5194/egusphere-egu21-3506	Assimilating sparse data in glaciological inverse problems		posted-content
+82	10.1109/tgrs.2007.892598	2007	10.1109/tgrs.2007.892598	Sparse Inverse Covariance Estimates for Hyperspectral Image Classification	IEEE Transactions on Geoscience and Remote Sensing	journal-article
+83	10.1088/1361-6420/ac9b84	2022	10.1088/1361-6420/ac9b84	Gradient flows and randomised thresholding: sparse inversion and classification*	Inverse Problems	journal-article
+84	10.32614/cran.package.sparseinv	2018	10.32614/cran.package.sparseinv	sparseinv: Computation of the Sparse Inverse Subset	CRAN: Contributed Packages	dataset
+85	10.7717/peerjcs.2052/fig-14	None	10.7717/peerjcs.2052/fig-14	Figure 14: Input image.		component
+86	10.1063/1.4709492	2012	10.1063/1.4709492	Complete tailor-made inverse filter for image processing of scanning SQUID microscope	Applied Physics Letters	journal-article
+87	10.1109/tcsvt.2024.3385360/mm1	None	10.1109/tcsvt.2024.3385360/mm1	Depth-Guided Robust Point Cloud Fusion NeRF for Sparse Input Views_supp1-3385360.pdf		component
+88	10.7717/peerjcs.216/fig-7	None	10.7717/peerjcs.216/fig-7	Figure 7: Input image.		component
+89	10.1088/1361-6420/ae3740	2026	10.1088/1361-6420/ae3740	Levenberg–Marquardt hard thresholding pursuit for sparse bilinear inverse problems	Inverse Problems	journal-article
+90	10.1088/1361-6420/ad1f82	2024	10.1088/1361-6420/ad1f82	Corrigendum: Sparse optimization problems in fractional order Sobolev spaces (2023 Inverse Problems 39 044001)	Inverse Problems	journal-article
+91	10.2139/ssrn.5966950	2025	10.2139/ssrn.5966950	OE-Diff: Observation-Embedded Diffusion with Closed-Form Guidance and Inverse-Root Scheduling for Real-World Image Super-Resolution		posted-content
+92	10.1016/j.jag.2024.104227	2024	10.1016/j.jag.2024.104227	SLRCNN: Integrating sparse and low-rank with a CNN denoiser for hyperspectral and multispectral image fusion	International Journal of Applied Earth Observation and Geoinformation	journal-article
+93	10.1088/1361-6420/acbe5e	2023	10.1088/1361-6420/acbe5e	Sparse optimization problems in fractional order Sobolev spaces	Inverse Problems	journal-article
+94	10.1002/9780470231616.ch10	2007	10.1002/9780470231616.ch10	Multiple‐Input Multiple‐Output (MIMO) Adaptive Inverse Control Systems	Adaptive Inverse Control	other
+95	10.1021/acscatal.6b01170.s001	None	10.1021/acscatal.6b01170.s001	Observation of an Inverse Kinetic Isotope Effect in Oxygen Evolution Electrochemistry		component
+96	10.1088/1361-6420/abb5e2	2020	10.1088/1361-6420/abb5e2	Inverse electromagnetic obstacle scattering problems with multi-frequency sparse backscattering far field data	Inverse Problems	journal-article
+97	10.1017/cbo9781139093514.012	2012	10.1017/cbo9781139093514.012	Bitangential inverse input impedance and spectral problems	Bitangential Direct and Inverse Problems for Systems of Integral and Differential Equations	book-chapter
+98	10.1002/9780470685853.ch14	2010	10.1002/9780470685853.ch14	Solving Stochastic Inverse Problems: A Sparse Grid Collocation Approach	Large‐Scale Inverse Problems and Quantification of Uncertainty	other
+99	10.2139/ssrn.4598459	2023	10.2139/ssrn.4598459	Semantic Analysis of Driving Behavior Based on Sparse Inverse Covariance Matrix		posted-content
+100	10.1007/978-3-031-25820-6_11	2023	10.1007/978-3-031-25820-6_11	Sparse Approximate Inverse Preconditioners	Nečas Center Series	book-chapter

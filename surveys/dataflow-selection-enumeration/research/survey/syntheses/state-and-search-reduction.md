@@ -36,8 +36,14 @@ to avoid constructing the global Petri net. Complete-prefix algorithms also
 operate directly on contextual nets with read arcs and multiple event
 histories, on safe timed nets with symbolic token ages, and on high-level
 symbolic nets, including an extended class with infinitely many reachable
-markings. These are reductions or finite representations of whole-net runs and
-reachability, not caller-input observation fibers with typed residuals.
+markings. A later construction carries time, stopwatch, and parameter
+constraints symbolically, but proves finite-prefix completeness only for the
+ordinary safe Time-Petri-net subclass. For 1-safe free-choice nets, a different
+full prefix folds maximal-step paths at repeated markings and supports exact
+reveals, excludes, and maximal-run transition-set footprints, with exponential
+worst-case footprint computation. These are reductions or finite
+representations of whole-net runs and reachability, not caller-input
+observation fibers with typed residuals.
 Bilgram et al. further quotient behaviorally equivalent colors and remove
 impossible place colors while preserving a bisimilar unfolded net.
 

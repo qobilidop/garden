@@ -2201,3 +2201,88 @@ If round 55 reopens the map, round 56 is retired unexecuted. If both qualify,
 they establish the required two-round no-add sequence only for the recorded
 sources, exact queries, captured rankings, date, and frozen trigger. Complete
 primary and independent audits remain mandatory before closure.
+
+## Outcome of round 55 and retirement of round 56
+
+Round 55 reopens the map under the frozen conservative trigger. All three
+auditors parsed and title-screened the 800 logical occurrences. Every snapshot
+has the required seven-column header, 100 records, ranks 1--100, and 100 unique
+nonblank source identifiers. The batch contains 699 unique identifiers and 656
+unique nonblank titles under the recorded aggressive normalization. Eight
+blank-title occurrences are one grant and seven versions of irrelevant
+supplemental datasets. Six quoted titles are multiline logical records and were
+parsed as single records.
+
+Conservative reconciliation retains two canonical works:
+
+- Jard et al. construct symbolic unfoldings for safe parametric stopwatch
+  Petri nets, retaining time, stopwatch, and parameter constraints. Their
+  finite-complete-prefix result is deliberately narrower: it applies only to
+  the ordinary safe Time-Petri-net subclass. The 2010 conference chapter is
+  reconciled to the expanded 2013 journal article.
+- Adobbati et al. construct a finite full prefix of the maximal-step
+  computation tree for 1-safe free-choice nets. It is adequate for reveals and
+  excludes analysis, and a terminating algorithm computes exactly the sets of
+  transition labels occurring in all maximal runs. Those footprints discard
+  event order and multiplicity and have an exponential worst-case computation
+  bound.
+
+The earlier Time-Petri-net prefix is a predecessor represented alongside the
+changed parametric-stopwatch symbolic boundary. Other finite-prefix algorithms,
+symbolic reachability graphs, component semantics, process-at-a-time variants,
+and language encodings remain supporting or within represented Petri-net
+semantic lineages. None of the additions supplies the target construction:
+their domains are whole-net processes or runs, not caller inputs to a requested
+pure-program result, and neither emits exact caller-input guards with typed
+residual values. Round 55 therefore cannot count toward closure, and round 56
+is retired unexecuted.
+
+## Replacement round `closure-replacement-57`: Crossref
+
+Frozen on 2026-08-04 after reconciliation and independent adjudication of
+round 55, and before any round-57 or round-58 query was executed. Source:
+Crossref REST API. The first four queries follow the two changed semantic
+objects and their observer guarantees, the fifth crosses symbolic prefix and
+observer terminology, and the final three are direct-target queries. Each
+exact phrase is searched with `query.bibliographic`, sorted by relevance, with
+the first 100 records exported unless fewer are returned. A round qualifies as
+no-add only if complete screening adds neither a conceptual cluster nor a
+plausible close competitor. A publication within an already represented
+lineage does not reopen the map unless it changes the compared semantic object,
+guarantee, or program-model boundary, or is materially closer to the target
+construction.
+
+| ID | Exact query |
+|---|---|
+| C57-01 | `symbolic unfolding parametric stopwatch Petri nets parameter valuations` |
+| C57-02 | `finite full prefix free choice net transition information flow footprints` |
+| C57-03 | `reveals excludes transition relations finite prefix maximal step` |
+| C57-04 | `exact maximal run footprint enumeration free choice Petri net` |
+| C57-05 | `compositional symbolic observer finite prefix transition footprints` |
+| C57-06 | `complete sparse requested site observation image caller input inverse fibers` |
+| C57-07 | `exact internal event observation partition typed residual function` |
+| C57-08 | `requested selection site outcomes input fibers symbolic residuals` |
+
+## Replacement round `closure-replacement-58`: arXiv
+
+Execute only if round 57 adds neither a conceptual cluster nor a plausible
+close competitor. Source: arXiv API. Frozen on 2026-08-04 before any round-57
+or round-58 execution. Each phrase is submitted as the conjunction of all
+alphanumeric terms across arXiv's `all` field, sorted by relevance, with at
+most the first 100 records and abstracts exported.
+
+| ID | Exact query |
+|---|---|
+| C58-01 | `symbolic unfolding parametric stopwatch Petri nets parameter valuations` |
+| C58-02 | `finite full prefix free choice net transition information flow footprints` |
+| C58-03 | `reveals excludes transition relations finite prefix maximal step` |
+| C58-04 | `exact maximal run footprint enumeration free choice Petri net` |
+| C58-05 | `compositional symbolic observer finite prefix transition footprints` |
+| C58-06 | `complete sparse requested site observation image caller input inverse fibers` |
+| C58-07 | `exact internal event observation partition typed residual function` |
+| C58-08 | `requested selection site outcomes input fibers symbolic residuals` |
+
+If round 57 reopens the map, round 58 is retired unexecuted. If both qualify,
+they establish the required two-round no-add sequence only for the recorded
+sources, exact queries, captured rankings, date, and frozen trigger. Complete
+primary and independent audits remain mandatory before closure.
