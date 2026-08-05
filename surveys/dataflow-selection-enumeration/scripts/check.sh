@@ -84,10 +84,25 @@ if [[ -f manuscript/main.typ ]]; then
     --no-pdf-tags \
     manuscript/main.typ \
     build/manuscript.pdf
-  pdftotext build/manuscript.pdf build/manuscript.txt
+  pdftotext build/manuscript.pdf build/manuscript.txt \
+    2>build/pdf-text.stderr
+  if [[ -s build/pdf-text.stderr ]]; then
+    printf 'PDF text-extraction diagnostics were emitted:\n' >&2
+    cat build/pdf-text.stderr >&2
+    exit 1
+  fi
   test -s build/manuscript.txt
 
-  pdf_author="$(pdfinfo build/manuscript.pdf | sed -n 's/^Author:[[:space:]]*//p')"
+  pdfinfo build/manuscript.pdf \
+    >build/pdfinfo.txt \
+    2>build/pdf-metadata.stderr
+  if [[ -s build/pdf-metadata.stderr ]]; then
+    printf 'PDF metadata diagnostics were emitted:\n' >&2
+    cat build/pdf-metadata.stderr >&2
+    exit 1
+  fi
+
+  pdf_author="$(sed -n 's/^Author:[[:space:]]*//p' build/pdfinfo.txt)"
   if [[ "${pdf_author}" != "Codex GPT-5.6 Sol" ]]; then
     printf 'Unexpected PDF author metadata: %s\n' "${pdf_author}" >&2
     exit 1
