@@ -17,6 +17,14 @@
   others — divergent scanner versions once made CI and hooks disagree
   on the same config.
 
+## Fan-out
+
+- Subagents inherit no operating rules. A fan-out prompt that could
+  touch a gated capability (browser-mediated downloads, deletions,
+  pushes) states the gate explicitly — three survey pipelines once
+  escalated to the user's browser unprompted
+  (surveys/agent-assisted-review-methodology/decisions/0007).
+
 ## Scratch
 
 - Notes live at `scratch/YYYY/YYYY-MM-DD/slug.md`. The date directory is the
