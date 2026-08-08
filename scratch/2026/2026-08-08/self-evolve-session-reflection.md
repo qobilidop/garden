@@ -65,6 +65,11 @@ P7 feedback memory (batch harness edits for /evolve).
 Staged, not applied: P8 (prefer task notifications over foreground
 wait-loops; three orphaned waiters this session) — harness-version-
 specific, lowest durability; promote if it recurs in a future session.
+Staged post-run: archived third-party snapshots carry public embedded
+keys (reCAPTCHA site key in the klaassen2025 capture) that trip
+gitleaks' generic-api-key rule on full-history scans — a shadow-side
+allowlist for `*-snapshot.html` is warranted once a second instance
+appears.
 
 ## Open threads
 
