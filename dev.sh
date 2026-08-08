@@ -1,18 +1,54 @@
 #!/bin/bash
-# Run a command in the reproducible dev container (built on first use).
-# The repo mounts at /work; the host rclone config mounts writable so
-# refreshed OAuth tokens persist. No args drops into a shell.
+# Run a command in the reproducible dev container; no args drops into a shell.
+#
+#   ./dev.sh [--pull | --build] [cmd...]
+#     --pull    refresh the image from GHCR (picks up new publishes)
+#     --build   build the image locally from .devcontainer/ (Dockerfile work;
+#               push to main afterwards so CI republishes for every machine)
+#
+# Image comes from GHCR (published by .github/workflows/dev-image.yml); local
+# build is the fallback when the pull fails (offline). Override the image with
+# DEV_IMAGE=... for sha-pinned debugging. The repo mounts at /work; the host
+# rclone config mounts writable so refreshed OAuth tokens persist.
+# (On a Linux host this would need user mapping to avoid root-owned files;
+# Docker Desktop on macOS handles ownership transparently.)
 set -euo pipefail
 cd "$(dirname "$0")"
 
 # Opportunistically arm the leak-guard hooks (idempotent; survives fresh clones).
 git config core.hooksPath hooks 2>/dev/null || true
 
-IMG=sys0-dev
-docker image inspect "$IMG" >/dev/null 2>&1 || docker build -t "$IMG" .devcontainer
+IMG="${DEV_IMAGE:-ghcr.io/qobilidop/sys0/dev:latest}"
 
+case "${1:-}" in
+  -h|--help) sed -n '2,12p' "$0"; exit 0 ;;
+  --pull)    shift; docker pull "$IMG" ;;
+  --build)   shift; docker build -t "$IMG" .devcontainer ;;
+esac
+
+if ! docker image inspect "$IMG" >/dev/null 2>&1; then
+  docker info >/dev/null 2>&1 || { echo "dev.sh: docker daemon not running" >&2; exit 1; }
+  if [ -n "${DEV_IMAGE:-}" ]; then
+    docker pull "$IMG"  # explicit pin: never substitute a local build for it
+  else
+    docker pull "$IMG" || docker build -t "$IMG" .devcontainer
+  fi
+fi
+
+# Warn when .devcontainer/ changed after the image was created (advisory only).
+created="$(docker image inspect -f '{{.Created}}' "$IMG" 2>/dev/null || true)"
+if [ -n "$created" ]; then
+  newer="$(python3 -c "
+import datetime, os, sys
+img = datetime.datetime.fromisoformat('$created'.replace('Z', '+00:00')).timestamp()
+files = [os.path.join(r, f) for r, _, fs in os.walk('.devcontainer') for f in fs]
+print(' '.join(f for f in files if os.path.getmtime(f) > img))" 2>/dev/null || true)"
+  [ -n "$newer" ] && echo "dev.sh: note — newer than image: $newer (use --build to test locally, --pull after CI republishes)" >&2
+fi
+
+mkdir -p "$HOME/.config/rclone"
 TTYFLAG=""
-[ -t 0 ] && TTYFLAG="-it"
+[ -t 0 ] && [ -t 1 ] && TTYFLAG="-it"
 exec docker run --rm $TTYFLAG \
   -v "$PWD":/work -w /work \
   -v "$HOME/.config/rclone":/root/.config/rclone \
