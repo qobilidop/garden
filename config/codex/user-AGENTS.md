@@ -10,3 +10,8 @@
   active Codex session and append its output unchanged. The command resolves
   the session model, not merely the configured default. If it fails, stop and
   report the failure; never guess or hard-code a model name.
+- Shell discipline: use absolute paths for file operations that span
+  repositories; never pass interactive flags (`-i`) in scripted commands —
+  their exit codes are meaningless without a tty; verify a deletion by
+  listing the target afterward, never by exit code (git status cannot see
+  empty directories).
