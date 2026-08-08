@@ -1,3 +1,7 @@
+---
+author: Claude Fable 5
+---
+
 # nanuk: naming and scope decisions
 
 2026-07-10. Session with Claude on naming the educational packet-processor

@@ -1,3 +1,7 @@
+---
+author: Claude Fable 5
+---
+
 # Theory of packet parsing: scope, models, and IR expressiveness
 
 Questions: (1) Is there a consensus on what "packet parsing" involves vs. out-of-scope? (2) How can a packet-parsing IR be shown expressive enough — and not over-general? (3) What mathematical models of packet parsers exist?

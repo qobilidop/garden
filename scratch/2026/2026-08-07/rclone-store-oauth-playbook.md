@@ -1,3 +1,7 @@
+---
+author: Claude Fable 5
+---
+
 # rclone Drive store: own OAuth client + drive.file scope
 
 2026-08-07. Context: rclone's shared Google Drive client_id retires during

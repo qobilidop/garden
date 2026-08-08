@@ -1,3 +1,7 @@
+---
+author: Claude Fable 5
+---
+
 # Digital life system design
 
 2026-07-03. Status: draft for review.

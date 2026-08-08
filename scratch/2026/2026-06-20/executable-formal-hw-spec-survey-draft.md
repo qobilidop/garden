@@ -1,3 +1,7 @@
+---
+author: Claude Fable 5
+---
+
 # Executable formal specifications of hardware — survey framing (draft)
 
 *2026-06-20; consolidated 2026-07-03 from an earlier project directory into a

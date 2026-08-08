@@ -1,3 +1,7 @@
+---
+author: Claude Fable 5
+---
+
 # Formal specs for protocol wire formats: what's been tried, what it teaches Pakeles
 
 Question: what approaches exist for giving RFC wire formats formal / machine-readable specifications, what lessons emerged, and is "hand-write RFC specs in an IR + generate parser conformance tests" a useful value statement or just a demo?

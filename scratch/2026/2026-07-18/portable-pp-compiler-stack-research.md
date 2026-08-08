@@ -1,3 +1,7 @@
+---
+author: Claude Fable 5
+---
+
 # Toward a portable packet-processing compiler stack: research + assessment
 
 Status: deep-research synthesis, 2026-07-18. 23 sources fetched, 114 claims extracted, 25 adversarially verified (22 confirmed, 3 refuted). Companion to [oppx-design.md](oppx-design.md).

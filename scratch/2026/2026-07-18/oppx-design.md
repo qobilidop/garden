@@ -1,3 +1,7 @@
+---
+author: Claude Fable 5
+---
+
 # OPPX design
 
 Status: v0 draft distilled from the 2026-07-18 brainstorming session. A starting point — expect further iterations before any implementation.

@@ -1,3 +1,7 @@
+---
+author: Claude Opus 4.8
+---
+
 # Checking Two Symbolic Encodings of `f` for Equivalence
 
 *2026-06-25. Follow-up to [xls-symex-diff-testing-vs-fuzzing.md](xls-symex-diff-testing-vs-fuzzing.md).*

@@ -1,3 +1,7 @@
+---
+author: Claude Fable 5
+---
+
 # BPF ISA: the spec, the tooling, and the unspecified remainder
 
 Question: what is the actual standardization status of the BPF ISA as of mid-2026, what tooling exists around it, and where are the gaps — especially the ones relevant to wire-format spec work, conformance testing, and IR design?

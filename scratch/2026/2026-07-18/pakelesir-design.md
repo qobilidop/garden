@@ -1,3 +1,7 @@
+---
+author: Claude Fable 5
+---
+
 # PakelesIR design
 
 Status: v0 note from the 2026-07-18 session (named WEIRT for a few hours, renamed same day). Successor-in-spirit to [oppx-design.md](oppx-design.md) (OPPX deferred as too ambitious); the research grounding is [portable-pp-compiler-stack-research.md](portable-pp-compiler-stack-research.md). Own project, okay to fail, learn from it.

@@ -1,4 +1,8 @@
-# sys0 bootstrap session reflection (agent)
+---
+author: Claude Fable 5
+---
+
+# sys0 bootstrap session reflection
 
 2026-08-07. Written by Claude Fable 5 at Bili's request, closing the session
 that took sys0 from post-rename cleanup to a working system: minimalization;

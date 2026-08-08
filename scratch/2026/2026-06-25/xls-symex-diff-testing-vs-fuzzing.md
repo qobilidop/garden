@@ -1,3 +1,7 @@
+---
+author: Claude Opus 4.8
+---
+
 # Diff Testing with XLS as Source of Truth — Symbolic/Concolic vs Fuzzing
 
 *2026-06-25. Follow-up to [xls-symex-evaluation.md](xls-symex-evaluation.md), narrowing the use case to differential testing.*

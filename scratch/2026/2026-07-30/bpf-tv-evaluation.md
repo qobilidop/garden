@@ -1,3 +1,7 @@
+---
+author: Claude Fable 5
+---
+
 # bpf-tv: evaluating a translation validator for LLVM IR → BPF
 
 Question: is building an arm-tv-style translation validator for the LLVM BPF backend worth pursuing, and if so in what shape?

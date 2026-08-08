@@ -10,6 +10,20 @@
   repository itself shows — never local setup (installed plugins, machine
   details, private repos' contents).
 
+## Scratch
+
+- Notes live at `scratch/YYYY/YYYY-MM-DD/slug.md`. The date directory is the
+  capture date and the H1 is the title — no date or title frontmatter.
+- Authorship is binary — the writer of the prose. A note with no `author:`
+  frontmatter is Bili's; agent-written notes open with an `author:` field
+  naming the model, matching the commit trailer:
+
+  ```markdown
+  ---
+  author: Claude Fable 5
+  ---
+  ```
+
 ## Skills
 
 - Canonical skills live in `skills/<name>/`; deploy each by committed

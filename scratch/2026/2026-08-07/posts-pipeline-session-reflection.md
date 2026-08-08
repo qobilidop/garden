@@ -1,4 +1,8 @@
-# posts pipeline session reflection (agent)
+---
+author: Claude Fable 5
+---
+
+# posts pipeline session reflection
 
 2026-08-07, second session. Written by Claude Fable 5 at Bili's request,
 closing the session that built the library's second content type: the

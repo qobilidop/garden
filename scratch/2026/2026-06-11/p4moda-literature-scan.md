@@ -1,3 +1,7 @@
+---
+author: agent (model unrecorded)
+---
+
 # Literature scan: novelty check and related-work foundation
 
 Date: 2026-06-12. Method: deep-research workflow — 5 search angles, 20 primary sources, 99 extracted claims, 25 adversarially verified (3-vote panels) — plus a second-pass verification (same day) that re-ran the claims whose original verifier panels stalled on fetch failures (the giant P4-16 spec HTML, paywalled IEEE/ACM pages). The second pass used downloaded copies and open-access mirrors (USENIX, author preprints, GitHub raw); all previously-unverified claims are now resolved. Everything in the "Confirmed" sections is backed by verbatim quotes from primary sources.

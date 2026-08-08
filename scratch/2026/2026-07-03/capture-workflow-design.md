@@ -1,3 +1,7 @@
+---
+author: Claude Fable 5
+---
+
 # Capture workflow design
 
 2026-07-03. Status: draft, not approved for implementation.

@@ -1,3 +1,7 @@
+---
+author: Claude Opus 4.8
+---
+
 # Symbolic Executor for XLS IR — Evaluation Report
 
 *Deep research synthesis, 2026-06-25. 15 sources, 25 claims adversarially verified (20 confirmed, 5 killed).*

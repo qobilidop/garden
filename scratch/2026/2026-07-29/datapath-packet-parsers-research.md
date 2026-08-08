@@ -1,3 +1,7 @@
+---
+author: Claude Fable 5
+---
+
 # Datapath packet parsers: the world's most important ones and their characteristics
 
 Question: which are the world's most important datapath packet parsers, and what makes each important and distinctive? "Datapath parser" = the header-parsing stage inside packet-processing pipelines running on live traffic — Linux kernel parsing, eBPF/XDP, P4 parser blocks, DPDK, and hardware-offloaded parsers — not analyst tools like Wireshark/Zeek.

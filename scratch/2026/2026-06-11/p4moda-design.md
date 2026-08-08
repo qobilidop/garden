@@ -1,3 +1,7 @@
+---
+author: agent (model unrecorded)
+---
+
 # P4moda design
 
 Status: draft for review. Distilled from the 2026-06-12 brainstorming session.

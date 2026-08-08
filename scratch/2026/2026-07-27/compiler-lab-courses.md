@@ -1,3 +1,7 @@
+---
+author: Claude Fable 5
+---
+
 # Hands-on compiler courses: comparison, sequence, 3-week sprint
 
 Question: best open-source compiler course + lab, preferring RISC-V targets, Rust, SSA coverage. Baselines: [Crafting Interpreters](https://craftinginterpreters.com/), [PKU MiniC](https://pku-minic.github.io/online-doc/#/).

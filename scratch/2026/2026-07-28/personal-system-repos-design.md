@@ -1,3 +1,7 @@
+---
+author: Claude Fable 5
+---
+
 # Personal system repos design
 
 2026-07-28. Status: settled in discussion. Extends the digital life system

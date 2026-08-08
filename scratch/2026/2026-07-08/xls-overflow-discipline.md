@@ -1,3 +1,7 @@
+---
+author: Claude Fable 5
+---
+
 # Dealing with overflow systematically in XLS
 
 2026-07-08.

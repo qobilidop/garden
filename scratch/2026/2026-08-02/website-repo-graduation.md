@@ -1,3 +1,7 @@
+---
+author: Claude Opus 5
+---
+
 # Website graduates to its own repo
 
 2026-08-02. Status: done. Executes — early — the last bullet of the 2026-07-28

@@ -1,4 +1,8 @@
-# self-evolve session reflection (agent)
+---
+author: Claude Fable 5
+---
+
+# self-evolve session reflection
 
 2026-08-08, closing the session that built the self-evolving-agents
 shelf (three papers, four posts), distilled the evolve skill from it,

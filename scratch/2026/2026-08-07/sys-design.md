@@ -1,3 +1,7 @@
+---
+author: Claude Fable 5
+---
+
 # sys: a generational public hub
 
 2026-08-07. Status: settled in discussion, not yet built. Revisits — and

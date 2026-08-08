@@ -1,3 +1,7 @@
+---
+author: Claude Opus 4.8
+---
+
 # Designing my digital garden from first principles
 
 *2026-06-20. Staged draft — move to `notes/` once that bed exists.*
