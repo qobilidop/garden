@@ -1,0 +1,413 @@
+key	decision	via	year	title	id	rationale
+arxiv:2403.04382	E1	consensus	2024	Acceleron: A Tool to Accelerate Research Ideation	http://arxiv.org/abs/2403.04382v1	
+arxiv:2407.08940	E1	consensus	2024	Large Language Models as Biomedical Hypothesis Generators: A Comprehensive Evaluation	http://arxiv.org/abs/2407.08940v2	
+arxiv:2411.00816	E1	consensus	2024	CycleResearcher: Improving Automated Research via Automated Review	http://arxiv.org/abs/2411.00816v3	
+arxiv:2411.11910	E1	consensus	2024	AIGS: Generating Science from AI-Powered Automated Falsification	http://arxiv.org/abs/2411.11910v2	
+arxiv:2411.13768	E1	consensus	2024	Evaluation-Driven Development and Operations of LLM Agents: A Process Model and Reference Architecture	http://arxiv.org/abs/2411.13768v3	
+arxiv:2412.06681	E1	consensus	2024	Toward LLM-Agent-Based Modeling of Transportation Systems: A Conceptual Framework	http://arxiv.org/abs/2412.06681v2	
+arxiv:2502.12669	E1	consensus	2025	Perovskite-LLM: Knowledge-Enhanced Large Language Models for Perovskite Solar Cell Research	http://arxiv.org/abs/2502.12669v3	
+arxiv:2503.00096	E1	consensus	2025	BixBench: a Comprehensive Benchmark for LLM-based Agents in Computational Biology	http://arxiv.org/abs/2503.00096v3	
+arxiv:2503.23170	E1	consensus	2025	AstroAgents: A Multi-Agent AI for Hypothesis Generation from Mass Spectrometry Data	http://arxiv.org/abs/2503.23170v1	
+arxiv:2504.09736	E1	consensus	2025	Agentic Workflows for Economic Research: Design and Implementation	http://arxiv.org/abs/2504.09736v1	
+arxiv:2504.18765	E1	consensus	2025	A Vision for Auto Research with LLM Agents	http://arxiv.org/abs/2504.18765v3	
+arxiv:2505.18705	E1	consensus	2025	AI-Researcher: Autonomous Scientific Innovation	http://arxiv.org/abs/2505.18705v1	
+arxiv:2508.08137	E1	consensus	2025	MuaLLM: A Multimodal Large Language Model Agent for Circuit Design Assistance with Hybrid Contextual Retrieval-Augmented Generation	http://arxiv.org/abs/2508.08137v1	
+arxiv:2509.14778	E1	consensus	2025	OpenLens AI: Fully Autonomous Research Agent for Health Infomatics	http://arxiv.org/abs/2509.14778v2	
+arxiv:2509.26076	E1	consensus	2025	IMProofBench: Benchmarking AI on Research-Level Mathematical Proof Generation	http://arxiv.org/abs/2509.26076v2	
+arxiv:2511.03179	E1	consensus	2025	Toward Autonomous Engineering Design: A Knowledge-Guided Multi-Agent Framework	http://arxiv.org/abs/2511.03179v3	
+arxiv:2511.11257	E1	consensus	2025	AIonopedia: an LLM agent orchestrating multimodal learning for ionic liquid discovery	https://doi.org/10.48550/arXiv.2511.11257	
+arxiv:2511.16931	E1	consensus	2025	OmniScientist: Toward a Co-evolving Ecosystem of Human and AI Scientists	http://arxiv.org/abs/2511.16931v2	
+arxiv:2511.21382	E1	consensus	2025	Large Language Models for Unit Test Generation: Achievements, Challenges, and Opportunities	http://arxiv.org/abs/2511.21382v2	
+arxiv:2601.12607	E1	consensus	2026	A Cloud-based Multi-Agentic Workflow for Science	http://arxiv.org/abs/2601.12607v1	
+arxiv:2602.05115	E1	consensus	2026	SocialVeil: Probing Social Intelligence of Language Agents under Communication Barriers	http://arxiv.org/abs/2602.05115v1	
+arxiv:2605.26340	E1	adjudicated	2026	ScientistOne: Towards Human-Level Autonomous Research via Chain-of-Evidence	http://arxiv.org/abs/2605.26340v1	autonomous primary-research agent; verifiability of own outputs, not evidence synthesis
+doi:10.00024v2	E1	consensus	2025	EpidemIQs: Prompt-to-Paper LLM Agents for Epidemic Modeling and Analysis	http://arxiv.org/abs/2510.00024v2	
+doi:10.06155v3	E1	adjudicated	2023	CoQuest: Exploring Research Question Co-Creation with an LLM-based Agent	http://arxiv.org/abs/2310.06155v3	RQ co-creation for primary research (borderline: planning-stage adjacent)
+doi:10.1002/adma.202502771	E1	consensus	2025	Empowering Generalist Material Intelligence with Large Language Models	https://doi.org/10.1002/adma.202502771	
+doi:10.1016/j.autcon.2025.106103	E1	consensus	2025	Large language model-empowered paradigm for automated geotechnical site planning and geological characterization	https://doi.org/10.1016/j.autcon.2025.106103	
+doi:10.1016/j.autcon.2025.106209	E1	consensus	2025	Systematic analysis of large language models for automating document-to-smart contract transformation	https://doi.org/10.1016/j.autcon.2025.106209	
+doi:10.1016/j.autcon.2026.106872	E1	consensus	2026	Multimodal large language model-driven framework for road crack assessment	https://doi.org/10.1016/j.autcon.2026.106872	
+doi:10.1016/j.infsof.2024.107523	E1	consensus	2024	Fine-tuning and prompt engineering for large language models-based code review automation	https://doi.org/10.1016/j.infsof.2024.107523	
+doi:10.1038/s41524-025-01554-0	E1	consensus	2025	Applications of natural language processing and large language models in materials discovery	https://doi.org/10.1038/s41524-025-01554-0	
+doi:10.1038/s41598-024-77535-y	E1	consensus	2024	Development and validation of a novel AI framework using NLP with LLM integration for relevant clinical data extraction through automated chart review	https://doi.org/10.1038/s41598-024-77535-y	
+doi:10.1053/j.gastro.2023.12.019	E1	consensus	2023	A Comparison of a Large Language Model vs Manual Chart Review for the Extraction of Data Elements From the Electronic Health Record	https://doi.org/10.1053/j.gastro.2023.12.019	
+doi:10.1093/jamia/ocae072	E1	adjudicated	2024	Large language models facilitate the generation of electronic health record phenotyping algorithms	https://doi.org/10.1093/jamia/ocae072	LLM generates phenotyping algorithms; literature synthesis is input, product is clinical artifact
+doi:10.1101/2023.08.31.23294924	E1	consensus	2023	A comparison of large language model versus manual chart review for extraction of data elements from the electronic health record	https://doi.org/10.1101/2023.08.31.23294924	
+doi:10.1101/2023.11.08.23298252	E1	consensus	2023	Development of a privacy preserving large language model for automated data extraction from thyroid cancer pathology reports	https://doi.org/10.1101/2023.11.08.23298252	
+doi:10.1109/cac67268.2025.11487326	E1	consensus	2025	A Large Language Model-Driven Natural Language Instructions Control System for Robotic Arm	https://doi.org/10.1109/cac67268.2025.11487326	
+doi:10.1109/icosst69113.2025.11315415	E1	adjudicated	2025	LLM-Agent Powered Automated Literature Review and Hypothesis Generation for Cancer Biomarker Discovery	https://doi.org/10.1109/ICOSST69113.2025.11315415	discovery pipeline; literature monitoring feeds hypothesis generation (borderline)
+doi:10.1109/iseda65950.2025.11100410	E1	consensus	2025	SpecLLM: Exploring Generation and Review of VLSI Design Specification with Large Language Model	https://doi.org/10.1109/iseda65950.2025.11100410	
+doi:10.1145/3571884.3604313	E1	consensus	2023	Harnessing Large Language Models for Cognitive Assistants in Factories	https://doi.org/10.1145/3571884.3604313	
+doi:10.1186/s12967-026-07849-0	E1	consensus	2026	AI-driven CRISPR screening: optimizing gene editing through automation and intelligent decision support	https://doi.org/10.1186/s12967-026-07849-0	
+doi:10.14445/22315381/ijett-v73i11p101	E1	consensus	2025	LLM Agent Integrated with TENS Device for the Treatment of Neck Pain in Teleworking	https://doi.org/10.14445/22315381/ijett-v73i11p101	
+doi:10.18653/v1/2025.findings-emnlp.320	E1	consensus	2025	Agent Laboratory: Using LLM Agents as Research Assistants	https://doi.org/10.18653/v1/2025.findings-emnlp.320	
+doi:10.21203/rs.3.rs-5351103/v1	E1	consensus	2024	DNAHLM - DNA sequence and Human Language mixed large language Model	https://doi.org/10.21203/rs.3.rs-5351103/v1	
+doi:10.2139/ssrn.5193679	E1	consensus	2025	A Multi-Agent Large Language Model (Llm) Framework for Code-Complying Design Automation of Concrete Structures	https://doi.org/10.2139/ssrn.5193679	
+doi:10.2139/ssrn.6463647	E1	consensus	2026	Claim Automation using Large Language Model	https://doi.org/10.2139/ssrn.6463647	
+doi:10.2196/64544	E1	consensus	2025	Using Large Language Models to Automate Data Extraction From Surgical Pathology Reports: Retrospective Cohort Study	https://doi.org/10.2196/64544	
+doi:10.22260/isarc2025/0009	E1	consensus	2025	A Large Language Model as an Assistant for Software-Independent Structural Analytical Model Review and Editing	https://doi.org/10.22260/isarc2025/0009	
+doi:10.2478/cait-2026-0006	E1	consensus	2026	Automated Bug Detection and Program Repair Using Deep Learning: A Comprehensive Review	https://doi.org/10.2478/cait-2026-0006	
+doi:10.30574/wjarr.2022.13.3.0263	E1	consensus	2022	Large language model-based automation of clinical workflows: A systematic framework for healthcare process optimization	https://doi.org/10.30574/wjarr.2022.13.3.0263	
+doi:10.3390/a19030178	E1	consensus	2026	AI-Driven IFC Processing for Automated IBS Scoring	https://doi.org/10.3390/a19030178	
+doi:10.3390/electronics13244912	E1	consensus	2024	Multimodal Large Language Model-Based Fault Detection and Diagnosis in Context of Industry 4.0	https://doi.org/10.3390/electronics13244912	
+doi:10.59324/ejmeb.2025.2(5).14	E1	consensus	2025	The Effect of LLM Automation on Performance Marketing Scale: Evidence on CAC, ROMI, and Creative Cycle Velocity	https://doi.org/10.59324/ejmeb.2025.2(5).14	
+doi:10.64898/2026.06.24.26356357	E1	consensus	2026	RESCUE: An end-to-end multi-agent LLM system for proactive rare-disease patient screening in the EHR	https://doi.org/10.64898/2026.06.24.26356357	
+doi:10.67535/tsp.000001.041	E1	consensus	2025	A Specialized Large Language Model for Electronic Design Automation	https://doi.org/10.67535/tsp.000001.041	
+arxiv:2305.18703	E2	consensus	2023	Domain Specialization as the Key to Make Large Language Models Disruptive: A Comprehensive Survey	http://arxiv.org/abs/2305.18703v7	
+arxiv:2308.10620	E2	consensus	2023	Large Language Models for Software Engineering: A Systematic Literature Review	https://doi.org/10.48550/arxiv.2308.10620	
+arxiv:2308.10792	E2	consensus	2023	Instruction Tuning for Large Language Models: A Survey	https://doi.org/10.48550/arxiv.2308.10792	
+arxiv:2308.11432	E2	consensus	2023	A Survey on Large Language Model based Autonomous Agents	https://doi.org/10.48550/arxiv.2308.11432	
+arxiv:2309.14504	E2	consensus	2023	People's Perceptions Toward Bias and Related Concepts in Large Language Models: A Systematic Review	http://arxiv.org/abs/2309.14504v2	
+arxiv:2312.02003	E2	consensus	2023	A Survey on Large Language Model (LLM) Security and Privacy: The Good, the Bad, and the Ugly	https://doi.org/10.48550/arxiv.2312.02003	
+arxiv:2401.07534	E2	consensus	2024	Exploring the Potential of Large Language Models in Self-adaptive Systems	http://arxiv.org/abs/2401.07534v1	
+arxiv:2402.10350	E2	consensus	2024	Large Language Models for Forecasting and Anomaly Detection: A Systematic Literature Review	https://doi.org/10.48550/arxiv.2402.10350	
+arxiv:2403.14280	E2	consensus	2024	Large Language Models for Blockchain Security: A Systematic Literature Review	https://doi.org/10.48550/arxiv.2403.14280	
+arxiv:2403.15401	E2	consensus	2024	Large Language Model for Mental Health: A Systematic Review	http://arxiv.org/abs/2403.15401v3	
+arxiv:2404.04834	E2	consensus	2024	LLM-Based Multi-Agent Systems for Software Engineering: Literature Review, Vision and the Road Ahead	http://arxiv.org/abs/2404.04834v4	
+arxiv:2404.05399	E2	consensus	2024	SafetyPrompts: a Systematic Review of Open Datasets for Evaluating and Improving Large Language Model Safety	http://arxiv.org/abs/2404.05399v2	
+arxiv:2405.01466	E2	consensus	2024	A Systematic Literature Review on Large Language Models for Automated Program Repair	https://doi.org/10.48550/arxiv.2405.01466	
+arxiv:2405.04760	E2	consensus	2024	Large Language Models for Cyber Security: A Systematic Literature Review	https://doi.org/10.48550/arxiv.2405.04760	
+arxiv:2405.11029	E2	consensus	2024	Generative Artificial Intelligence: A Systematic Review and Applications	http://arxiv.org/abs/2405.11029v1	
+arxiv:2406.00515	E2	consensus	2024	A Survey on Large Language Models for Code Generation	https://doi.org/10.48550/arxiv.2406.00515	
+arxiv:2407.12192	E2	consensus	2024	Towards Dataset-scale and Feature-oriented Evaluation of Text Summarization in Large Language Model Prompts	http://arxiv.org/abs/2407.12192v3	
+arxiv:2408.02248	E2	adjudicated	2024	ReDel: A Toolkit for LLM-Powered Recursive Multi-Agent Systems	http://arxiv.org/abs/2408.02248v2	generic recursive multi-agent toolkit; review compilation only an example
+arxiv:2409.04833	E2	consensus	2024	Achieving Peak Performance for Large Language Models: A Systematic Review	http://arxiv.org/abs/2409.04833v1	
+arxiv:2409.11864	E2	consensus	2024	Motivations, Challenges, Best Practices, and Benefits for Bots and Conversational Agents in Software Engineering: A Multivocal Literature Review	http://arxiv.org/abs/2409.11864v2	
+arxiv:2412.09248	E2	consensus	2024	A Systematic Review of Knowledge Tracing and Large Language Models in Education: Opportunities, Issues, and Future Research	http://arxiv.org/abs/2412.09248v1	
+arxiv:2501.11223	E2	consensus	2025	Reasoning Language Models: A Blueprint	http://arxiv.org/abs/2501.11223v4	
+arxiv:2502.07960	E2	adjudicated	2025	Accelerating Scientific Research Through a Multi-LLM Framework	http://arxiv.org/abs/2502.07960v1	general research-workflow accelerator; no secondary-study framing
+arxiv:2502.08796	E2	consensus	2025	A Systematic Review on the Evaluation of Large Language Models in Theory of Mind Tasks	http://arxiv.org/abs/2502.08796v1	
+arxiv:2503.01159	E2	consensus	2025	Large Language Models for Healthcare Text Classification: A Systematic Review	http://arxiv.org/abs/2503.01159v1	
+arxiv:2503.04110	E2	consensus	2025	InterChat: Enhancing Generative Visual Analytics using Multimodal Interactions	http://arxiv.org/abs/2503.04110v2	
+arxiv:2503.04490	E2	consensus	2025	Large Language Models in Bioinformatics: A Survey	http://arxiv.org/abs/2503.04490v3	
+arxiv:2503.19213	E2	consensus	2025	A Survey of Large Language Model Agents for Question Answering	http://arxiv.org/abs/2503.19213v1	
+arxiv:2504.02917	E2	consensus	2025	Bias in Large Language Models Across Clinical Applications: A Systematic Review	http://arxiv.org/abs/2504.02917v1	
+arxiv:2504.15909	E2	consensus	2025	Synergizing RAG and Reasoning: A Systematic Review	http://arxiv.org/abs/2504.15909v2	
+arxiv:2505.04769	E2	consensus	2025	Vision-Language-Action (VLA) Models: Concepts, Progress, Applications and Challenges	http://arxiv.org/abs/2505.04769v2	
+arxiv:2505.08245	E2	consensus	2025	Large Language Model Psychometrics: A Systematic Review of Evaluation, Validation, and Enhancement	http://arxiv.org/abs/2505.08245v3	
+arxiv:2505.18846	E2	consensus	2025	LLM-Driven APT Detection for 6G Wireless Networks: A Systematic Review and Taxonomy	http://arxiv.org/abs/2505.18846v2	
+arxiv:2505.20503	E2	consensus	2025	Embodied AI with Foundation Models for Mobile Service Robots: A Systematic Review	http://arxiv.org/abs/2505.20503v2	
+arxiv:2506.00066	E2	consensus	2025	Literature Review Of Multi-Agent Debate For Problem-Solving	http://arxiv.org/abs/2506.00066v1	
+arxiv:2506.04290	E2	consensus	2025	Interpretable LLMs for Credit Risk: A Systematic Review and Taxonomy	http://arxiv.org/abs/2506.04290v2	
+arxiv:2506.06518	E2	consensus	2025	A Systematic Review of Poisoning Attacks Against Large Language Models	http://arxiv.org/abs/2506.06518v1	
+arxiv:2506.07583	E2	adjudicated	2025	Beyond the Sentence: A Survey on Context-Aware Machine Translation with Large Language Models	http://arxiv.org/abs/2506.07583v1	NLP domain survey
+arxiv:2506.18199	E2	consensus	2025	Prompt Engineering Techniques for Mitigating Cultural Bias Against Arabs and Muslims in Large Language Models: A Systematic Review	http://arxiv.org/abs/2506.18199v2	
+arxiv:2506.21818	E2	consensus	2025	A systematic review of research on large language models for computer programming education	http://arxiv.org/abs/2506.21818v1	
+arxiv:2507.03156	E2	consensus	2025	The Impact of LLM-Assistants on Software Developer Productivity: A Systematic Literature Review	https://doi.org/10.48550/arXiv.2507.03156	
+arxiv:2507.03637	E2	consensus	2025	Large Language Models for Combinatorial Optimization: A Systematic Review	http://arxiv.org/abs/2507.03637v1	
+arxiv:2508.06401	E2	consensus	2025	A Systematic Literature Review of Retrieval-Augmented Generation: Techniques, Metrics, and Challenges	https://doi.org/10.48550/arXiv.2508.06401	
+arxiv:2508.06691	E2	consensus	2025	Role of Large Language Models and Retrieval-Augmented Generation for Accelerating Crystalline Material Discovery: A Systematic Review	http://arxiv.org/abs/2508.06691v1	
+arxiv:2508.15361	E2	consensus	2025	A Survey on Large Language Model Benchmarks	http://arxiv.org/abs/2508.15361v1	
+arxiv:2508.16701	E2	consensus	2025	Generative Artificial Intelligence and Agents in Research and Teaching	http://arxiv.org/abs/2508.16701v2	
+arxiv:2509.19327	E2	consensus	2025	A systematic review of trial-matching pipelines using large language models	http://arxiv.org/abs/2509.19327v1	
+arxiv:2511.04703	E2	consensus	2025	Measuring what Matters: Construct Validity in Large Language Model Benchmarks	http://arxiv.org/abs/2511.04703v1	
+arxiv:2512.00020	E2	consensus	2025	Large Language Model for Verilog Code Generation: Literature Review and the Road Ahead	https://doi.org/10.48550/arXiv.2512.00020	
+arxiv:2512.01693	E2	adjudicated	2025	LitMOF: An LLM Multi-Agent for Literature-Validated Metal-Organic Frameworks Database Correction and Expansion	arXiv:2512.01693	literature mining for materials database curation, not evidence synthesis
+arxiv:2601.04583	E2	consensus	2026	Autonomous Agents on Blockchains: Standards, Execution Models, and Trust Boundaries	http://arxiv.org/abs/2601.04583v1	
+arxiv:2602.10453	E2	consensus	2026	The Landscape of Prompt Injection Threats in LLM Agents: From Taxonomy to Analysis	http://arxiv.org/abs/2602.10453v1	
+arxiv:2602.23373	E2	consensus	2025	An Agentic LLM Framework for Adverse Media Screening in AML Compliance	https://doi.org/10.48550/arXiv.2602.23373	
+arxiv:2603.22928	E2	consensus	2026	SoK: The Attack Surface of Agentic AI -- Tools, and Autonomy	http://arxiv.org/abs/2603.22928v1	
+arxiv:2604.16321	E2	consensus	2026	LLM-Based Multi-Agent Systems for Code Generation: A Multi-Vocal Literature Review	http://arxiv.org/abs/2604.16321v1	
+arxiv:2604.16359	E2	consensus	2026	LLM4Log: A Systematic Review of Large Language Model-based Log Analysis	http://arxiv.org/abs/2604.16359v2	
+arxiv:2604.22861	E2	adjudicated	2026	IntrAgent: An LLM Agent for Content-Grounded Information Retrieval through Literature Review	https://doi.org/10.48550/arXiv.2604.22861	generic IR-from-literature task framing (borderline: extraction-adjacent)
+arxiv:2607.26212	E2	consensus	2026	Multi-Agent Debate Strategies: Survey, Taxonomy, and Challenges	http://arxiv.org/abs/2607.26212v1	
+doi:10.08612v1	E2	consensus	2025	Impact of LLMs on Team Collaboration in Software Development	http://arxiv.org/abs/2510.08612v1	
+doi:10.1001/jama.2024.21700	E2	consensus	2024	Testing and Evaluation of Health Care Applications of Large Language Models	https://doi.org/10.1001/jama.2024.21700	
+doi:10.1001/jamanetworkopen.2024.57879	E2	consensus	2025	Large Language Models for Chatbot Health Advice Studies	https://doi.org/10.1001/jamanetworkopen.2024.57879	
+doi:10.1002/cesm.70060/v1/review1	E2	adjudicated	2025	Review for "Using Large Language Models to Address Contextual Questions in Systematic Reviews"	https://doi.org/10.1002/cesm.70060/v1/review1	peer-review record or decision letter, not a study (protocol gap: no doc-type code; using E2, see decisions/0003)
+doi:10.1002/cesm.70060/v1/review2	E2	adjudicated	2025	Review for "Using Large Language Models to Address Contextual Questions in Systematic Reviews"	https://doi.org/10.1002/cesm.70060/v1/review2	peer-review record or decision letter, not a study (protocol gap: no doc-type code; using E2, see decisions/0003)
+doi:10.1002/cesm.70060/v1/review3	E2	adjudicated	2025	Review for "Using Large Language Models to Address Contextual Questions in Systematic Reviews"	https://doi.org/10.1002/cesm.70060/v1/review3	peer-review record or decision letter, not a study (protocol gap: no doc-type code; using E2, see decisions/0003)
+doi:10.1002/eng2.70365/v1/decision1	E2	adjudicated	2025	Decision letter for "Systematic Literature Review of LLM‐Large Language Model in Medical: Digital Health, Technology and Applications"	https://doi.org/10.1002/eng2.70365/v1/decision1	peer-review record or decision letter, not a study (protocol gap: no doc-type code; using E2, see decisions/0003)
+doi:10.1002/eng2.70365/v1/review1	E2	adjudicated	2025	Review for "Systematic Literature Review of LLM‐Large Language Model in Medical: Digital Health, Technology and Applications"	https://doi.org/10.1002/eng2.70365/v1/review1	peer-review record or decision letter, not a study (protocol gap: no doc-type code; using E2, see decisions/0003)
+doi:10.1002/eng2.70365/v1/review2	E2	adjudicated	2025	Review for "Systematic Literature Review of LLM‐Large Language Model in Medical: Digital Health, Technology and Applications"	https://doi.org/10.1002/eng2.70365/v1/review2	peer-review record or decision letter, not a study (protocol gap: no doc-type code; using E2, see decisions/0003)
+doi:10.1002/eng2.70365/v2/decision1	E2	adjudicated	2025	Decision letter for "Systematic Literature Review of LLM‐Large Language Model in Medical: Digital Health, Technology and Applications"	https://doi.org/10.1002/eng2.70365/v2/decision1	peer-review record or decision letter, not a study (protocol gap: no doc-type code; using E2, see decisions/0003)
+doi:10.1002/eng2.70365/v2/review1	E2	adjudicated	2025	Review for "Systematic Literature Review of LLM‐Large Language Model in Medical: Digital Health, Technology and Applications"	https://doi.org/10.1002/eng2.70365/v2/review1	peer-review record or decision letter, not a study (protocol gap: no doc-type code; using E2, see decisions/0003)
+doi:10.1002/eng2.70365/v2/review2	E2	adjudicated	2025	Review for "Systematic Literature Review of LLM‐Large Language Model in Medical: Digital Health, Technology and Applications"	https://doi.org/10.1002/eng2.70365/v2/review2	peer-review record or decision letter, not a study (protocol gap: no doc-type code; using E2, see decisions/0003)
+doi:10.1002/hkj2.70102	E2	consensus	2026	What is artificial intelligence doing to emergency medicine? From hype to real‐world impact	https://doi.org/10.1002/hkj2.70102	
+doi:10.1007/s00432-024-05678-6	E2	consensus	2024	Utilizing large language models in breast cancer management: systematic review	https://doi.org/10.1007/s00432-024-05678-6	
+doi:10.1007/s10439-023-03284-0	E2	adjudicated	2023	ChatGPT, Bard, and Large Language Models for Biomedical Research: Opportunities and Pitfalls	https://doi.org/10.1007/s10439-023-03284-0	no-abstract domain-topic work; conventionally out of scope
+doi:10.1007/s10462-025-11389-2	E2	consensus	2025	Safeguarding large language models: a survey	https://doi.org/10.1007/s10462-025-11389-2	
+doi:10.1007/s10462-026-11650-2	E2	consensus	2026	Automated machine learning in the era of large language models: a systematic review of green, trustworthy, and human-centered automation (2020–2026)	https://doi.org/10.1007/s10462-026-11650-2	
+doi:10.1007/s10489-026-07340-9	E2	consensus	2026	LLM-based agent systems: a systematic literature review and position on hybrid architectures and evaluation frameworks	https://doi.org/10.1007/s10489-026-07340-9	
+doi:10.1007/s11042-024-20016-1	E2	consensus	2024	Generative artificial intelligence: a systematic review and applications	https://doi.org/10.1007/s11042-024-20016-1	
+doi:10.1007/s11280-024-01291-2	E2	consensus	2024	A survey on large language models for recommendation	https://doi.org/10.1007/s11280-024-01291-2	
+doi:10.1007/s11704-024-40231-1	E2	consensus	2024	A survey on large language model based autonomous agents	https://doi.org/10.1007/s11704-024-40231-1	
+doi:10.1007/s11704-024-40555-y	E2	consensus	2024	Large language models for generative information extraction: a survey	https://doi.org/10.1007/s11704-024-40555-y	
+doi:10.1007/s11704-026-50857-y	E2	consensus	2025	Beyond Self-Talk: A Communication-Centric Survey of LLM-Based Multi-Agent Systems	https://doi.org/10.1007/s11704-026-50857-y	
+doi:10.1007/s11704-026-60308-3	E2	consensus	2026	A Survey of Large Language Models	https://doi.org/10.1007/s11704-026-60308-3	
+doi:10.1007/s40670-024-02206-6	E2	consensus	2024	ChatGPT and Other Large Language Models in Medical Education — Scoping Literature Review	https://doi.org/10.1007/s40670-024-02206-6	
+doi:10.1007/s43621-025-01094-z	E2	consensus	2025	The role of large language models in personalized learning: a systematic review of educational impact	https://doi.org/10.1007/s43621-025-01094-z	
+doi:10.1007/s44163-024-00197-2	E2	consensus	2024	Large language models to process, analyze, and synthesize biomedical texts: a scoping review	https://doi.org/10.1007/s44163-024-00197-2	
+doi:10.1007/s44217-025-00424-7	E2	consensus	2025	A systematic literature review to implement large language model in higher education: issues and solutions	https://doi.org/10.1007/s44217-025-00424-7	
+doi:10.1007/s44443-025-00177-1	E2	consensus	2025	A survey on privacy risks and protection in large language models	https://doi.org/10.1007/s44443-025-00177-1	
+doi:10.1016/j.caeo.2024.100174	E2	consensus	2024	Application of generative artificial intelligence (GenAI) in language teaching and learning: A scoping literature review	https://doi.org/10.1016/j.caeo.2024.100174	
+doi:10.1016/j.csi.2024.103917	E2	consensus	2024	Large language models for code completion: A systematic literature review	https://doi.org/10.1016/j.csi.2024.103917	
+doi:10.1016/j.enbuild.2024.114788	E2	adjudicated	2024	Advancing building energy modeling with large language models: Exploration and case studies	https://doi.org/10.1016/j.enbuild.2024.114788	no-abstract domain-topic work; conventionally out of scope
+doi:10.1016/j.esmorw.2025.100298	E2	consensus	2025	100P Systematic review of large language models in clinical trial matching automation	https://doi.org/10.1016/j.esmorw.2025.100298	
+doi:10.1016/j.future.2025.107829	E2	consensus	2025	The role of Large Language Models in addressing IoT challenges: A systematic literature review	https://doi.org/10.1016/j.future.2025.107829	
+doi:10.1016/j.hcc.2024.100211	E2	consensus	2024	A survey on large language model (LLM) security and privacy: The Good, The Bad, and The Ugly	https://doi.org/10.1016/j.hcc.2024.100211	
+doi:10.1016/j.hcc.2025.100300	E2	consensus	2025	On protecting the data privacy of Large Language Models (LLMs) and LLM agents: A literature review	https://doi.org/10.1016/j.hcc.2025.100300	
+doi:10.1016/j.identj.2025.103854	E2	consensus	2025	A Scoping Review of Large Language Models in Dental Education: Applications, Challenges, and Prospects	https://doi.org/10.1016/j.identj.2025.103854	
+doi:10.1016/j.ijnurstu.2025.105322	E2	consensus	2025	The use of large language models in clinical documentation: A scoping review	https://doi.org/10.1016/j.ijnurstu.2025.105322	
+doi:10.1016/j.isci.2024.109713	E2	consensus	2024	The application of large language models in medicine: A scoping review	https://doi.org/10.1016/j.isci.2024.109713	
+doi:10.1016/j.jacr.2025.09.004	E2	consensus	2025	Leveraging Large Language Models to Enhance Radiology Report Readability: A Systematic Review	https://doi.org/10.1016/j.jacr.2025.09.004	
+doi:10.1016/j.jacr.2025.10.005	E2	adjudicated	2025	Use of Large Language Models on Radiology Reports: A Scoping Review	https://doi.org/10.1016/j.jacr.2025.10.005	no-abstract domain-topic work; conventionally out of scope
+doi:10.1016/j.jad.2024.11.052	E2	adjudicated	2024	Exploring the efficacy and potential of large language models for depression: A systematic review	https://doi.org/10.1016/j.jad.2024.11.052	no-abstract domain-topic work; conventionally out of scope
+doi:10.1016/j.rcim.2024.102883	E2	adjudicated	2024	A survey on potentials, pathways and challenges of large language models in new-generation intelligent manufacturing	https://doi.org/10.1016/j.rcim.2024.102883	no-abstract domain-topic work; conventionally out of scope
+doi:10.1016/j.rcim.2025.102982	E2	adjudicated	2025	Integrating large language model and digital twins in the context of industry 5.0: Framework, challenges and opportunities	https://doi.org/10.1016/j.rcim.2025.102982	no-abstract domain-topic work; conventionally out of scope
+doi:10.1016/j.rser.2025.115558	E2	adjudicated	2025	Opportunities of applying Large Language Models in building energy sector	https://doi.org/10.1016/j.rser.2025.115558	no-abstract domain-topic work; conventionally out of scope
+doi:10.1016/j.sapharm.2023.05.016	E2	adjudicated	2023	The emergent role of artificial intelligence, natural learning processing, and large language models in higher education and research	https://doi.org/10.1016/j.sapharm.2023.05.016	no-abstract domain-topic work; conventionally out of scope
+doi:10.1038/s41746-023-00979-5	E2	consensus	2023	Systematic review and meta-analysis of AI-based conversational agents for promoting mental health and well-being	https://doi.org/10.1038/s41746-023-00979-5	
+doi:10.1038/s41746-024-01157-x	E2	consensus	2024	The ethics of ChatGPT in medicine and healthcare: a systematic review on Large Language Models (LLMs)	https://doi.org/10.1038/s41746-024-01157-x	
+doi:10.1038/s41746-024-01258-7	E2	consensus	2024	A framework for human evaluation of large language models in healthcare derived from literature review	https://doi.org/10.1038/s41746-024-01258-7	
+doi:10.1038/s41746-025-01566-6	E2	consensus	2025	Accuracy of online symptom assessment applications, large language models, and laypeople for self–triage decisions	https://doi.org/10.1038/s41746-025-01566-6	
+doi:10.1038/s43856-024-00717-2	E2	consensus	2025	Current applications and challenges in large language models for patient care: a systematic review	https://doi.org/10.1038/s43856-024-00717-2	
+doi:10.1039/d4cs00913d	E2	consensus	2024	From text to insight: large language models for chemical data extraction	https://doi.org/10.1039/d4cs00913d	
+doi:10.1080/10494820.2023.2204343	E2	consensus	2023	A systematic review of research on speech-recognition chatbots for language learning: Implications for future directions in the era of large language models	https://doi.org/10.1080/10494820.2023.2204343	
+doi:10.1080/17538947.2024.2353122	E2	consensus	2024	GPT, large language models (LLMs) and generative artificial intelligence (GAI) models in geospatial science: a systematic review	https://doi.org/10.1080/17538947.2024.2353122	
+doi:10.1093/ehjdh/ztaf028	E2	consensus	2025	Applications of large language models in cardiovascular disease: a systematic review	https://doi.org/10.1093/ehjdh/ztaf028	
+doi:10.1093/jamia/ocaf008	E2	consensus	2025	Improving large language model applications in biomedicine with retrieval-augmented generation: a systematic review, meta-analysis, and clinical development guidelines	https://doi.org/10.1093/jamia/ocaf008	
+doi:10.1101/2023.02.19.23286155	E2	consensus	2023	The Utility of ChatGPT as an Example of Large Language Models in Healthcare Education, Research and Practice: Systematic Review on the Future Perspectives and Potential Limitations	https://doi.org/10.1101/2023.02.19.23286155	
+doi:10.1101/2023.08.07.23293769	E2	consensus	2023	Large Language Models (LLMs) and Empathy – A Systematic Review	https://doi.org/10.1101/2023.08.07.23293769	
+doi:10.1101/2024.04.15.24305869	E2	consensus	2024	A Systematic Review of Testing and Evaluation of Healthcare Applications of Large Language Models (LLMs)	https://doi.org/10.1101/2024.04.15.24305869	
+doi:10.1101/2024.04.19.588095	E2	consensus	2024	Large Language Models to process, analyze, and synthesize biomedical texts – a scoping review	https://doi.org/10.1101/2024.04.19.588095	
+doi:10.1101/2024.08.11.24311828	E2	consensus	2024	Testing and Evaluation of Generative Large Language Models in Electronic Health Record Applications: A Systematic Review	https://doi.org/10.1101/2024.08.11.24311828	
+doi:10.1109/access.2024.3424945	E2	consensus	2024	Achieving Peak Performance for Large Language Models: A Systematic Review	https://doi.org/10.1109/access.2024.3424945	
+doi:10.1109/access.2024.3505983	E2	consensus	2024	Application of Large Language Models in Cybersecurity: A Systematic Literature Review	https://doi.org/10.1109/access.2024.3505983	
+doi:10.1109/access.2025.3601206	E2	consensus	2025	A Systematic Literature Review of Hallucinations in Large Language Models	https://doi.org/10.1109/access.2025.3601206	
+doi:10.1109/access.2025.3608650	E2	consensus	2025	A Systematic Literature Review of Large Language Model Applications in Industry	https://doi.org/10.1109/access.2025.3608650	
+doi:10.1109/aimla67915.2026.11522318	E2	consensus	2026	Intelligent ERP AI Agent with RAG and LLM Integration: A Systematic Literature Review	https://doi.org/10.1109/AIMLA67915.2026.11522318	
+doi:10.1109/cste62025.2024.00031	E2	consensus	2024	Large Language Models in Education: A Systematic Review	https://doi.org/10.1109/cste62025.2024.00031	
+doi:10.1109/icatc68823.2025.11407822	E2	consensus	2025	Systematic Literature Review of Explainable LLM-Powered ChatOps for CI/CD Pipeline Diagnostics and Developer Support	https://doi.org/10.1109/ICATC68823.2025.11407822	
+doi:10.1109/iccae59995.2024.10569797	E2	adjudicated	2024	Ethical Judgment using Large Language Model	https://doi.org/10.1109/iccae59995.2024.10569797	no-abstract domain-topic work; conventionally out of scope
+doi:10.1109/icicat68430.2025.11414680	E2	consensus	2025	From Traditional Algorithms to Large Language Models: Evolution of AI in Financial Market Prediction	https://doi.org/10.1109/ICICAT68430.2025.11414680	
+doi:10.1109/icimcis68501.2025.11326960	E2	consensus	2025	Conversational Learning Architectures for Vocabulary Acquisition: A Systematic Literature Review of LLM and Spaced Repetition Approaches	https://doi.org/10.1109/ICIMCIS68501.2025.11326960	
+doi:10.1109/icodse68111.2025.11351763	E2	consensus	2025	Quality Evaluation of LLM-based Generated Test Case: A Literature Review	https://doi.org/10.1109/ICoDSE68111.2025.11351763	
+doi:10.1109/ict4da67218.2025.11282707	E2	consensus	2025	Large Language Model (LLM) based Question and Answering System (QAS): A systematic literature review	https://doi.org/10.1109/ICT4DA67218.2025.11282707	
+doi:10.1109/ithet69978.2026.11584977	E2	consensus	2026	AI Multi-Agent Systems for Educational Content Generation: A Systematic Literature Review	https://doi.org/10.1109/ITHET69978.2026.11584977	
+doi:10.1109/mipro70003.2026.11591539	E2	consensus	2026	Toward Assisted Engineering of Urban Water Infrastructure: A Systematic Review of Large Language Models in Urban Drainage	https://doi.org/10.1109/MIPRO70003.2026.11591539	
+doi:10.1109/seeda-cecnsm68644.2025.11329702	E2	consensus	2025	Cyber Threat Detection and Mitigation on Social Media Using Large Language Models (LLMs): A Systematic Review	https://doi.org/10.1109/SEEDA-CECNSM68644.2025.11329702	
+doi:10.1109/sita67914.2025.11273696	E2	consensus	2025	Gamification Empowered by LLM-Based Agents: A Systematic Literature Review	https://doi.org/10.1109/SITA67914.2025.11273696	
+doi:10.1109/tkde.2024.3392335	E2	consensus	2024	Recommender Systems in the Era of Large Language Models (LLMs)	https://doi.org/10.1109/tkde.2024.3392335	
+doi:10.1109/tkde.2024.3469578	E2	consensus	2024	Large Language Models on Graphs: A Comprehensive Survey	https://doi.org/10.1109/tkde.2024.3469578	
+doi:10.1111/apt.18058	E2	consensus	2024	Systematic review: The use of large language models as medical chatbots in digestive diseases	https://doi.org/10.1111/apt.18058	
+doi:10.1111/medu.15402	E2	consensus	2024	A systematic review of large language models and their implications in medical education	https://doi.org/10.1111/medu.15402	
+doi:10.1136/bmjonc-2025-000759	E2	consensus	2025	Large language models in oncology: a review	https://doi.org/10.1136/bmjonc-2025-000759	
+doi:10.1145/3641554.3701863	E2	consensus	2025	Large Language Models in Computer Science Education: A Systematic Literature Review	https://doi.org/10.1145/3641554.3701863	
+doi:10.1145/3695988	E2	consensus	2024	Large Language Models for Software Engineering: A Systematic Literature Review	https://doi.org/10.1145/3695988	
+doi:10.1145/3708522	E2	consensus	2024	Large Language Model for Vulnerability Detection and Repair: Literature Review and the Road Ahead	https://doi.org/10.1145/3708522	
+doi:10.1145/3708525	E2	consensus	2024	Efficient and Green Large Language Models for Software Engineering: Literature Review, Vision, and the Road Ahead	https://doi.org/10.1145/3708525	
+doi:10.1145/3712003	E2	consensus	2025	LLM-Based Multi-Agent Systems for Software Engineering: Literature Review, Vision, and the Road Ahead	https://doi.org/10.1145/3712003	
+doi:10.1145/3747588	E2	consensus	2025	A Survey on Large Language Models for Code Generation	https://doi.org/10.1145/3747588	
+doi:10.1145/3769676	E2	consensus	2025	Large Language Models for Cyber Security: A Systematic Literature Review	https://doi.org/10.1145/3769676	
+doi:10.1145/3796522	E2	consensus	2025	A Systematic Literature Review of Parameter-Efficient Fine-Tuning for Large Code Models	https://doi.org/10.1145/3796522	
+doi:10.1145/3809494	E2	consensus	2025	The Impact of LLM-Assistants on Software Developer Productivity: A Systematic Review and Mapping Study	https://doi.org/10.1145/3809494	
+doi:10.1177/03000605251347556	E2	consensus	2025	Clinical applications of large language models in medicine and surgery: A scoping review	https://doi.org/10.1177/03000605251347556	
+doi:10.1186/s12909-024-05239-y	E2	consensus	2024	Large language models for generating medical examinations: systematic review	https://doi.org/10.1186/s12909-024-05239-y	
+doi:10.1186/s12911-025-02954-4	E2	consensus	2025	A systematic review of large language model (LLM) evaluations in clinical medicine	https://doi.org/10.1186/s12911-025-02954-4	
+doi:10.1186/s12929-025-01131-z	E2	consensus	2025	Impact of large language model (ChatGPT) in healthcare: an umbrella review and evidence synthesis	https://doi.org/10.1186/s12929-025-01131-z	
+doi:10.1186/s12939-025-02419-0	E2	consensus	2025	Evaluating and addressing demographic disparities in medical large language models: a systematic review	https://doi.org/10.1186/s12939-025-02419-0	
+doi:10.1186/s42400-025-00361-w	E2	consensus	2025	When LLMs meet cybersecurity: a systematic literature review	https://doi.org/10.1186/s42400-025-00361-w	
+doi:10.1371/journal.pdig.0000877	E2	consensus	2025	Retrieval augmented generation for large language models in healthcare: A systematic review	https://doi.org/10.1371/journal.pdig.0000877	
+doi:10.17892v1	E2	consensus	2025	Advances in Pre-trained Language Models for Domain-Specific Text Classification: A Systematic Review	http://arxiv.org/abs/2510.17892v1	
+doi:10.20944/preprints202512.0359.v1	E2	consensus	2025	Retrieval Augmented Generation (RAG) and Large Language Models (LLMs) for Enterprise Knowledge Management and Document Automation: A Systematic Literature Review	https://doi.org/10.20944/preprints202512.0359.v1	
+doi:10.21203/rs.3.rs-5589929/v1	E2	consensus	2025	Large Language Model for Requirements Engineering: A Systematic Literature Review	https://doi.org/10.21203/rs.3.rs-5589929/v1	
+doi:10.21203/rs.3.rs-9057643/v1	E2	consensus	2026	Synthetic Participants Generated by Large Language Models: A Systematic Literature Review	https://doi.org/10.21203/rs.3.rs-9057643/v1	
+doi:10.21203/rs.3.rs-9377879/v1	E2	consensus	2026	Large Language Models for Material Science: A Systematic Review	https://doi.org/10.21203/rs.3.rs-9377879/v1	
+doi:10.21203/rs.3.rs-9527568/v1	E2	consensus	2026	Multimodal and Large Language Model Approaches in Cybersecurity: A Systematic Review	https://doi.org/10.21203/rs.3.rs-9527568/v1	
+doi:10.21275/sr251207022056	E2	consensus	2025	A Systematic Review of Vulnerability Scanning Tools for Large Language Models (LLMs)	https://doi.org/10.21275/sr251207022056	
+doi:10.2139/ssrn.5688905	E2	consensus	2025	Systematic Review of Large Language Model Applications in Transport Engineering	https://doi.org/10.2139/ssrn.5688905	
+doi:10.2139/ssrn.6086099	E2	consensus	2026	Systematic Review of Large Language Model Applications in Transport Engineering	https://doi.org/10.2139/ssrn.6086099	
+doi:10.2139/ssrn.6864773	E2	consensus	2026	Quality Assurance of Large Language Model-based Software: A Systematic Literature Review	https://doi.org/10.2139/ssrn.6864773	
+doi:10.21533/pen.v13.i3.460	E2	consensus	2025	Large language models in medicine: A systematic review of applications in medical, healthcare, and educational contexts	https://doi.org/10.21533/pen.v13.i3.460	
+doi:10.2196/22769	E2	consensus	2024	Applications and Concerns of ChatGPT and Other Conversational Large Language Models in Health Care: Systematic Review	https://doi.org/10.2196/22769	
+doi:10.2196/52597	E2	consensus	2024	Large Language Models and Empathy: Systematic Review	https://doi.org/10.2196/52597	
+doi:10.2196/57400	E2	consensus	2024	Large Language Models for Mental Health Applications: Systematic Review	https://doi.org/10.2196/57400	
+doi:10.2196/59607	E2	consensus	2024	Examining the Role of Large Language Models in Orthopedics: Systematic Review	https://doi.org/10.2196/59607	
+doi:10.2196/64963	E2	consensus	2025	Comparing Diagnostic Accuracy of Clinical Professionals and Large Language Models: Systematic Review and Meta-Analysis	https://doi.org/10.2196/64963	
+doi:10.2196/65984	E2	consensus	2025	Large Language Model Applications for Health Information Extraction in Oncology: Scoping Review	https://doi.org/10.2196/65984	
+doi:10.2196/66648	E2	consensus	2024	Large Language Models in Gastroenterology: Systematic Review	https://doi.org/10.2196/66648	
+doi:10.2196/72062	E2	consensus	2025	Large Language Models in Medical Diagnostics: Scoping Review With Bibliometric Analysis	https://doi.org/10.2196/72062	
+doi:10.2196/preprints.52600	E2	adjudicated	2023	The Application Potential of Large Language Model in the Management for Diabetic Ketoacidosis: Systematic Review (Preprint)	https://doi.org/10.2196/preprints.52600	clinical application review
+doi:10.2196/preprints.79039	E2	consensus	2025	Large Language Model–Based Virtual Patient Systems for History-Taking in Medical Education: Comprehensive Systematic Review (Preprint)	https://doi.org/10.2196/preprints.79039	
+doi:10.22260/isarc2026/0172	E2	adjudicated	2026	Domain-specific Large Language Model Pretraining for Construction Specification Review	https://doi.org/10.22260/isarc2026/0172	no-abstract domain-topic work; conventionally out of scope
+doi:10.30574/wjarr.2025.26.2.1665	E2	adjudicated	2025	Building an LLM Agent for Life Sciences Literature QA and Summarization	https://doi.org/10.30574/wjarr.2025.26.2.1665	generic RAG literature QA/summarization
+doi:10.30574/wjarr.2026.29.3.0679	E2	consensus	2026	LLM integration and the zero trust perimeter: A systematic review of trust enforcement failures and defensive architectures	https://doi.org/10.30574/wjarr.2026.29.3.0679	
+doi:10.31004/riggs.v5i1.6990	E2	consensus	2026	The Evolution of Decision Support Systems (DSS) to Strategic AI: A Systematic Review of Architectural Shifts and Business Value	https://doi.org/10.31004/riggs.v5i1.6990	
+doi:10.31219/osf.io/63nbc_v1	E2	consensus	2025	Automated Video Analytics in Marketing Research: A Systematic Literature Review and a Novel Multimodal Large Language Model Method.	https://doi.org/10.31219/osf.io/63nbc_v1	
+doi:10.32038/ltrq.2025.49.13	E2	consensus	2025	Artificial Intelligence in Language Education: A Systematic Review of Multilingual Applications, Large Language Models, and Emerging Challenges	https://doi.org/10.32038/ltrq.2025.49.13	
+doi:10.3389/fdgth.2025.1659134	E2	consensus	2025	Large language models in real-world clinical workflows: a systematic review of applications and implementation	https://doi.org/10.3389/fdgth.2025.1659134	
+doi:10.3389/feduc.2024.1392091	E2	consensus	2024	The impact of large language models on higher education: exploring the connection between AI and Education 4.0	https://doi.org/10.3389/feduc.2024.1392091	
+doi:10.3389/feduc.2026.1733861	E2	consensus	2026	Task automation and instructional planning support with large language models: a systematic review	https://doi.org/10.3389/feduc.2026.1733861	
+doi:10.3389/fmed.2024.1512824	E2	consensus	2025	Emerging applications of NLP and large language models in gastroenterology and hepatology: a systematic review	https://doi.org/10.3389/fmed.2024.1512824	
+doi:10.3389/fpsyt.2024.1422807	E2	consensus	2024	Applications of large language models in psychiatry: a systematic review	https://doi.org/10.3389/fpsyt.2024.1422807	
+doi:10.3390/app14125068	E2	consensus	2024	From Large Language Models to Large Multimodal Models: A Literature Review	https://doi.org/10.3390/app14125068	
+doi:10.3390/app15105683	E2	consensus	2025	Large Language Model-Powered Automated Assessment: A Systematic Review	https://doi.org/10.3390/app15105683	
+doi:10.3390/app16010368	E2	consensus	2025	Retrieval-Augmented Generation (RAG) and Large Language Models (LLMs) for Enterprise Knowledge Management and Document Automation: A Systematic Literature Review	https://doi.org/10.3390/app16010368	
+doi:10.3390/asi9040068	E2	consensus	2026	Systemic Integration of Artificial Intelligence in Financial Project Management: A Systematic Literature Review and BERTopic-Based Analysis	https://doi.org/10.3390/asi9040068	
+doi:10.3390/fi17120536	E2	consensus	2025	A Literature Review of Personalized Large Language Models for Email Generation and Automation	https://doi.org/10.3390/fi17120536	
+doi:10.3390/healthcare11060887	E2	consensus	2023	ChatGPT Utility in Healthcare Education, Research, and Practice: Systematic Review on the Promising Perspectives and Valid Concerns	https://doi.org/10.3390/healthcare11060887	
+doi:10.3390/healthcare11202776	E2	consensus	2023	Leveraging Generative AI and Large Language Models: A Comprehensive Roadmap for Healthcare Integration	https://doi.org/10.3390/healthcare11202776	
+doi:10.3390/healthcare12080825	E2	consensus	2024	AI and Ethics: A Systematic Review of the Ethical Considerations of Large Language Model Use in Surgery Research	https://doi.org/10.3390/healthcare12080825	
+doi:10.3390/healthcare13060603	E2	consensus	2025	A Review of Large Language Models in Medical Education, Clinical Decision Support, and Healthcare Administration	https://doi.org/10.3390/healthcare13060603	
+doi:10.3390/info15060345	E2	consensus	2024	Large Language Models (LLMs) in Engineering Education: A Systematic Review and Suggestions for Practical Adoption	https://doi.org/10.3390/info15060345	
+doi:10.3390/info16100894	E2	consensus	2025	Large Language Model Agents for Biomedicine: A Comprehensive Review of Methods, Evaluations, Challenges, and Future Directions	https://doi.org/10.3390/info16100894	
+doi:10.3390/info17060615	E2	consensus	2026	Large Language Model Adoption: Systematic Review, Theoretical Frameworks, and Meta-Analytic Evidence	https://doi.org/10.3390/info17060615	
+doi:10.3390/jcm13113041	E2	consensus	2024	Clinical and Surgical Applications of Large Language Models: A Systematic Review	https://doi.org/10.3390/jcm13113041	
+doi:10.3390/su18115313	E2	consensus	2026	Human–AI Collaboration Across Decision Support, Autonomous Systems, and LLM Agents: A Systematic Review and Collaboration Convergence Framework	https://doi.org/10.3390/su18115313	
+doi:10.3390/vaccines13040350	E2	consensus	2025	Safety and Efficacy of Vaccination During Lactation: A Comprehensive Review of Vaccines for Maternal and Infant Health Utilizing a Large Language Model Citation Screening System	https://doi.org/10.3390/vaccines13040350	
+doi:10.36227/techrxiv.174060396.65470777/v1	E2	consensus	2025	Potential of Large Language Model for Activity Recognition in Activities of Daily Living: A Systematic Review	https://doi.org/10.36227/techrxiv.174060396.65470777/v1	
+doi:10.36227/techrxiv.175423896.60947030/v1	E2	consensus	2025	The Triple Illusion Architecture: An Ontological Analysis of Systematic Knowledge Gaps in Large Language Model Interactions	https://doi.org/10.36227/techrxiv.175423896.60947030/v1	
+doi:10.38124/ijisrt/26apr455	E2	consensus	2026	A Systematic Review of Large Language Models for Automation in Civil Engineering: Applications, Challenges, and Future Directions	https://doi.org/10.38124/ijisrt/26apr455	
+doi:10.4274/dir.2026.263812	E2	consensus	2026	Reporting checklist for foundation and large language models in medical research (REFINE): an international consensus guideline	https://doi.org/10.4274/dir.2026.263812	
+doi:10.5281/zenodo.19042469	E2	consensus	2026	A Taxonomy of Epistemic Failure Modes in Large Language Models	https://doi.org/10.5281/zenodo.19042469	
+doi:10.5334/uproc.201	E2	consensus	2025	Artificial Intelligence and Large Language Models in Higher Education: Results of a Systematic Review 	https://doi.org/10.5334/uproc.201	
+doi:10.5753/latinoware.2025.16271	E2	consensus	2025	Applications of Knowledge Graphs in the Portuguese Language: A Systematic Literature Review	https://doi.org/10.5753/latinoware.2025.16271	
+doi:10.59431/jda.v5i1.810	E2	consensus	2026	Large Language Model Integration in Desktop Applications: A Systematic Literature Review	https://doi.org/10.59431/jda.v5i1.810	
+doi:10.63116/vxul2925	E2	consensus	2025	The Accuracy of ChatGPT in Answering FAQs, Making Clinical Recommendations, and Categorizing Patient Symptoms: A Literature Review.	https://doi.org/10.63116/vxul2925	
+doi:10.66972/ada202734	E2	consensus	2026	From Multi-Agent Reinforcement Learning to Agentic AI: A Comprehensive Literature Review of Algorithmic Advances and Decision-Analytic Implications (2020-2025)	https://doi.org/10.66972/ada202734	
+doi:10.1111/1742-6723.70148	E3	adjudicated	2025	The Role of Artificial Intelligence in Enabling Medical Research	https://doi.org/10.1111/1742-6723.70148	commentary on AI in medical research; no methodological guidance
+doi:10.1111/2041-210x.14397/v1/review1	E3	consensus	2024	Review for "Pressure to publish introduces large‐language model risks"	https://doi.org/10.1111/2041-210x.14397/v1/review1	
+doi:10.32388/4hde0x	E3	consensus	2025	Review of: "A Dutch Financial Large Language Model"	https://doi.org/10.32388/4hde0x	
+doi:10.32388/wiskgx	E3	consensus	2024	Review of: "A Dutch Financial Large Language Model"	https://doi.org/10.32388/wiskgx	
+arxiv:2401.06320	E6	consensus	2024	Zero-shot Generative Large Language Models for Systematic Review Screening Automation	http://arxiv.org/abs/2401.06320v2	
+doi:10.32942/x21s64	E6	consensus	2024	Leveraging AI to improve evidence synthesis in conservation	https://doi.org/10.32942/x21s64	
+arxiv:2305.11828	I	consensus	2023	Appraising the Potential Uses and Harms of LLMs for Medical Systematic Reviews	http://arxiv.org/abs/2305.11828v3	
+arxiv:2306.14905	I	consensus	2023	PRISMA-DFLLM: An Extension of PRISMA for Systematic Literature Reviews using Domain-specific Finetuned Large Language Models	https://doi.org/10.48550/arxiv.2306.14905	
+arxiv:2308.06610	I	consensus	2023	Bio-SIEVE: Exploring Instruction Tuning Large Language Models for Systematic Review Automation	https://doi.org/10.48550/arXiv.2308.06610	
+arxiv:2403.02574	I	consensus	2024	ChatCite: LLM Agent with Human Workflow Guidance for Comparative Literature Summary	https://doi.org/10.48550/arXiv.2403.02574	
+arxiv:2403.08399	I	consensus	2024	System for systematic literature review using multiple AI agents: Concept and an empirical evaluation	http://arxiv.org/abs/2403.08399v2	
+arxiv:2405.14445	I	consensus	2024	Exploring the use of a Large Language Model for data extraction in systematic reviews: a rapid feasibility study	http://arxiv.org/abs/2405.14445v2	
+arxiv:2406.17755	I	consensus	2024	Accelerating Clinical Evidence Synthesis with Large Language Models	https://doi.org/10.48550/arxiv.2406.17755	
+arxiv:2408.04646	I	consensus	2024	Efficacy of Large Language Models in Systematic Reviews	http://arxiv.org/abs/2408.04646v2	
+arxiv:2409.04600	I	consensus	2024	The emergence of Large Language Models (LLM) as a tool in literature reviews: an LLM automated systematic review	http://arxiv.org/abs/2409.04600v1	
+arxiv:2411.02451	I	consensus	2024	High-performance automated abstract screening with large language model ensembles	http://arxiv.org/abs/2411.02451v2	
+arxiv:2411.06159	I	consensus	2024	Mixture of Knowledge Minigraph Agents for Literature Review Generation	http://arxiv.org/abs/2411.06159v3	
+arxiv:2412.15247	I	consensus	2024	Streamlining Systematic Reviews: A Novel Application of Large Language Models	http://arxiv.org/abs/2412.15247v1	
+arxiv:2501.05468	I	consensus	2025	LatteReview: A Multi-Agent Framework for Systematic Review Automation Using Large Language Models	http://arxiv.org/abs/2501.05468v2	
+arxiv:2501.19359	I	consensus	2025	Mechanical Properties of the Meninges: Large Language Model Assisted Systematic Review of over 25,000 Studies	http://arxiv.org/abs/2501.19359v1	
+arxiv:2502.14767	I	consensus	2025	Tree-of-Debate: Multi-Persona Debate Trees Elicit Critical Thinking for Scientific Comparative Analysis	http://arxiv.org/abs/2502.14767v2	
+arxiv:2502.15702	I	consensus	2025	Large language models streamline automated systematic review: A preliminary study	http://arxiv.org/abs/2502.15702v1	
+arxiv:2503.13857	I	consensus	2025	Enabling Inclusive Systematic Reviews: Incorporating Preprint Articles with Large Language Model-Driven Evaluations	http://arxiv.org/abs/2503.13857v4	
+arxiv:2504.04193	I	consensus	2025	AiReview: An Open Platform for Accelerating Systematic Reviews with LLMs	http://arxiv.org/abs/2504.04193v1	
+arxiv:2504.08752	I	consensus	2025	Patience is all you need! An agentic system for performing scientific literature review	http://arxiv.org/abs/2504.08752v1	
+arxiv:2504.14822	I	consensus	2025	Completing A Systematic Review in Hours instead of Months with Interactive AI Agents	http://arxiv.org/abs/2504.14822v2	
+arxiv:2504.20276	I	consensus	2025	Enhancing Systematic Reviews with Large Language Models: Using GPT-4 and Kimi	http://arxiv.org/abs/2504.20276v1	
+arxiv:2505.07155	I	consensus	2025	Reassessing Large Language Model Boolean Query Generation for Systematic Reviews	http://arxiv.org/abs/2505.07155v2	
+arxiv:2505.20310	I	consensus	2025	Manalyzer: End-to-end Automated Meta-analysis with Multi-agent System	https://doi.org/10.48550/arXiv.2505.20310	
+arxiv:2505.22787	I	consensus	2025	Can Large Language Models Match the Conclusions of Systematic Reviews?	http://arxiv.org/abs/2505.22787v1	
+arxiv:2505.24757	I	consensus	2025	LGAR: Zero-Shot LLM-Guided Neural Ranking for Abstract Screening in Systematic Literature Reviews	https://doi.org/10.48550/arXiv.2505.24757	
+arxiv:2508.12170	I	consensus	2025	Energy Efficiency in Robotics Software: A Systematic Literature Review (2020-2024)	https://doi.org/10.48550/arXiv.2508.12170	
+arxiv:2510.05138	I	consensus	2025	LiRA: A Multi-Agent Framework for Reliable and Readable Literature Review Generation	https://doi.org/10.48550/arXiv.2510.05138	
+arxiv:2510.16091	I	consensus	2025	Evaluating Prompting Strategies and Large Language Models in Systematic Literature Review Screening: Relevance and Task-Stage Classification	https://doi.org/10.48550/arXiv.2510.16091	
+arxiv:2511.12635	I	consensus	2025	LLM4SCREENLIT: Recommendations on Assessing the Performance of Large Language Models for Screening Literature in Systematic Reviews	http://arxiv.org/abs/2511.12635v2	
+arxiv:2511.17689	I	consensus	2025	ARISE: Agentic Rubric-Guided Iterative Survey Engine for Automated Scholarly Paper Generation	http://arxiv.org/abs/2511.17689v1	
+arxiv:2512.11261	I	consensus	2025	Leveraging LLMs for Title and Abstract Screening for Systematic Review: A Cost-Effective Dynamic Few-Shot Learning Approach	http://arxiv.org/abs/2512.11261v1	
+arxiv:2512.20022	I	consensus	2025	LLM-Assisted Abstract Screening with OLIVER: Evaluating Calibration and Single-Model vs. Actor-Critic Configurations in Literature Reviews	https://doi.org/10.48550/arXiv.2512.20022	
+arxiv:2602.00011	I	consensus	2025	Chained Prompting for Better Systematic Review Search Strategies	http://arxiv.org/abs/2602.00011v1	
+arxiv:2603.22327	I	consensus	2026	Evaluating AI-based Scientific Knowledge Synthesis with Epidemiological Systematic Reviews	arXiv:2603.22327	
+arxiv:2603.24767	I	consensus	2026	Fine-Tuning A Large Language Model for Systematic Review Screening	http://arxiv.org/abs/2603.24767v1	
+arxiv:2603.28336	I	consensus	2026	A Multi-Agent Rhizomatic Pipeline for Non-Linear Literature Analysis	http://arxiv.org/abs/2603.28336v2	
+arxiv:2604.01452	I	consensus	2026	A Multi-Agent Human-LLM Collaborative Framework for Closed-Loop Scientific Literature Summarization	http://arxiv.org/abs/2604.01452v1	
+arxiv:2605.15245	I	adjudicated	2026	Assistance to Autonomy: A Systematic Literature Review of Agentic AI across the Software Development Life Cycle	https://doi.org/10.48550/arXiv.2605.15245	SLR describing its own multi-agent LLM screening pipeline; application exemplar
+arxiv:2606.28363	I	consensus	2026	meta-pipe: An LLM-agent pipeline for end-to-end automated systematic review and meta-analysis	arXiv:2606.28363	
+arxiv:2607.05031	I	adjudicated	2026	LLM-Based Test Oracles: Source-of-Authority Taxonomy -- A Systematic Literature Review	arXiv:2607.05031	SLR reporting own LLM pre-filter with dual-human screening; application exemplar
+doi:10.1001/jamanetworkopen.2024.20496	I	consensus	2024	Performance of a Large Language Model in Screening Citations	https://doi.org/10.1001/jamanetworkopen.2024.20496	
+doi:10.1002/cesm.70033	I	consensus	2025	Data Extractions Using a Large Language Model (Elicit) and Human Reviewers in Randomized Controlled Trials: A Systematic Comparison	https://doi.org/10.1002/cesm.70033	
+doi:10.1002/cesm.70042	I	consensus	2025	Enhancing Evidence Synthesis Efficiency: Leveraging Large Language Models and Agentic Workflows for Optimized Literature Screening	https://doi.org/10.1002/cesm.70042	
+doi:10.1002/cesm.70058	I	consensus	2025	Harnessing Large‐Language Models for Efficient Data Extraction in Systematic Reviews: The Role of Prompt Engineering	https://doi.org/10.1002/cesm.70058	
+doi:10.1002/hkj2.70085	I	consensus	2026	Automated systematic reviews using machine learning and large language models in clinical practice guideline development: A perspective	https://doi.org/10.1002/hkj2.70085	
+doi:10.1002/jrsm.1710	I	consensus	2024	Data extraction for evidence synthesis using a large language model: A proof‐of‐concept study	https://doi.org/10.1002/jrsm.1710	
+doi:10.1002/jrsm.1715	I	consensus	2024	Can large language models replace humans in systematic reviews? Evaluating <scp>GPT</scp>‐4's efficacy in screening and extracting data from peer‐reviewed and grey literature in multiple languages	https://doi.org/10.1002/jrsm.1715	
+doi:10.1002/jrsm.1732	I	consensus	2024	Performance of two large language models for data extraction in evidence synthesis	https://doi.org/10.1002/jrsm.1732	
+doi:10.1007/978-3-031-56027-9_25	I	consensus	2024	Zero-shot Generative Large Language Models for Systematic Review Screening Automation	https://doi.org/10.1007/978-3-031-56027-9_25	
+doi:10.1007/s10462-024-10902-3	I	consensus	2024	Artificial intelligence for literature reviews: opportunities and challenges	https://doi.org/10.1007/s10462-024-10902-3	
+doi:10.1007/s11192-024-05206-w	I	consensus	2025	Disentangling patent quality: using a large language model for a systematic literature review	https://doi.org/10.1007/s11192-024-05206-w	
+doi:10.1007/s41669-024-00476-9	I	consensus	2024	Artificial Intelligence to Automate Network Meta-Analyses: Four Case Studies to Evaluate the Potential Application of Large Language Models	https://doi.org/10.1007/s41669-024-00476-9	
+doi:10.1016/j.accre.2025.03.013	I	consensus	2025	Global agricultural adaptation case database and trend analysis based on large language models	https://doi.org/10.1016/j.accre.2025.03.013	
+doi:10.1016/j.ijmedinf.2025.106035	I	consensus	2025	Enhancing AI for citation screening in literature reviews: Improving accuracy with ensemble models	https://doi.org/10.1016/j.ijmedinf.2025.106035	
+doi:10.1016/j.jbi.2024.104640	I	consensus	2024	Leveraging generative AI for clinical evidence synthesis needs to ensure trustworthiness	https://doi.org/10.1016/j.jbi.2024.104640	
+doi:10.1016/j.jclinepi.2025.111746	I	consensus	2025	Large language models for conducting systematic reviews: on the rise, but not yet ready for use—a scoping review	https://doi.org/10.1016/j.jclinepi.2025.111746	
+doi:10.1016/j.jval.2025.04.1193	I	consensus	2025	MSR41 The Use of Large Language Models for Systematic Literature Review Automation: An Evaluation of Quality and Time Savings	https://doi.org/10.1016/j.jval.2025.04.1193	
+doi:10.1016/j.jval.2025.08.002	I	consensus	2025	A4SLR: An Agentic Artificial Intelligence-Assisted Systematic Literature Review Framework to Augment Evidence Synthesis for Health Economics and Outcomes Research and Health Technology Assessment	https://doi.org/10.1016/j.jval.2025.08.002	
+doi:10.1016/j.jval.2025.09.2953	I	consensus	2025	SA11 An AI-Enhanced Targeted Literature Review Workflow to Support Inclusive Research Practices and Population Science Research: A Human-in-the-Loop Approach	https://doi.org/10.1016/j.jval.2025.09.2953	
+doi:10.1016/j.jval.2025.09.3033	I	consensus	2025	SA92 Testing Automated-Prompt Engineering Strategies for Systematic Literature Review Screening	https://doi.org/10.1016/j.jval.2025.09.3033	
+doi:10.1016/j.jval.2026.03.1578	I	consensus	2026	MSR79 AUTOMATION OF SYSTEMATIC REVIEWS WITH LARGE LANGUAGE MODELS	https://doi.org/10.1016/j.jval.2026.03.1578	
+doi:10.1016/j.smrv.2025.102192	I	consensus	2025	Accuracy of large language models in data extraction from randomized controlled trials in sleep medicine: A proof-of-concept study	https://doi.org/10.1016/j.smrv.2025.102192	
+doi:10.1016/j.tox.2024.153933	I	consensus	2024	Artificial intelligence-based data extraction for next generation risk assessment: Is fine-tuning of a large language model worth the effort?	https://doi.org/10.1016/j.tox.2024.153933	
+doi:10.1016/j.tree.2024.04.007	I	consensus	2024	Leveraging AI to improve evidence synthesis in conservation	https://doi.org/10.1016/j.tree.2024.04.007	
+doi:10.1017/rsm.2025.10014	I	consensus	2025	Optimal large language models to screen citations for systematic reviews	https://doi.org/10.1017/rsm.2025.10014	
+doi:10.1017/rsm.2025.10065	I	consensus	2026	Transforming evidence synthesis: A systematic review of the evolution of automated meta-analysis in the age of AI	https://doi.org/10.1017/rsm.2025.10065	
+doi:10.1038/s41746-025-01457-w	I	consensus	2025	Language models for data extraction and risk of bias assessment in complementary medicine	https://doi.org/10.1038/s41746-025-01457-w	
+doi:10.1038/s41746-025-01840-7	I	consensus	2025	Accelerating clinical evidence synthesis with large language models	https://doi.org/10.1038/s41746-025-01840-7	
+doi:10.1038/s41746-025-02273-y	I	consensus	2025	Streamlining evidence based clinical recommendations with large language models	https://doi.org/10.1038/s41746-025-02273-y	
+doi:10.1073/pnas.2411962122	I	consensus	2025	Transforming literature screening: The emerging role of large language models in systematic reviews	https://doi.org/10.1073/pnas.2411962122	
+doi:10.1093/ehjdh/ztag070	I	consensus	2026	Automated full-text screening and accelerated reviews using large language models with context-aware agents: an exploratory analysis in biomarker research	https://doi.org/10.1093/ehjdh/ztag070	
+doi:10.1093/jamia/ocae325	I	consensus	2025	Collaborative large language models for automated data extraction in living systematic reviews	https://doi.org/10.1093/jamia/ocae325	
+doi:10.1093/jamia/ocaf050	I	consensus	2025	High-performance automated abstract screening with large language model ensembles	https://doi.org/10.1093/jamia/ocaf050	
+doi:10.1093/jamia/ocaf063	I	consensus	2025	The emergence of large language models as tools in literature reviews: a large language model-assisted systematic review	https://doi.org/10.1093/jamia/ocaf063	
+doi:10.1097/js9.0000000000002215	I	consensus	2025	AI-driven evidence synthesis: data extraction of randomized controlled trials with large language models	https://doi.org/10.1097/js9.0000000000002215	
+doi:10.1101/2023.10.02.23296415	I	consensus	2023	Data Extraction for Evidence Synthesis Using a Large Language Model: A Proof-of-Concept Study	https://doi.org/10.1101/2023.10.02.23296415	
+doi:10.1101/2023.12.15.23300018	I	consensus	2023	Sensitivity, specificity and avoidable workload of using a large language models for title and abstract screening in systematic reviews and meta-analyses	https://doi.org/10.1101/2023.12.15.23300018	
+doi:10.1101/2023.12.29.23300652	I	consensus	2023	Citation screening using large language models for creating clinical practice guidelines: A protocol for a prospective study	https://doi.org/10.1101/2023.12.29.23300652	
+doi:10.1101/2024.02.20.24303083	I	consensus	2024	How good are large language models for automated data extraction from randomized trials?	https://doi.org/10.1101/2024.02.20.24303083	
+doi:10.1101/2024.06.03.24308405	I	consensus	2024	Evaluating the Efficacy of Large Language Models for Systematic Review and Meta-Analysis Screening	https://doi.org/10.1101/2024.06.03.24308405	
+doi:10.1101/2024.06.26.24309513	I	consensus	2024	Comparison of large language models for citation screening: A protocol for a prospective study	https://doi.org/10.1101/2024.06.26.24309513	
+doi:10.1101/2024.09.20.24314108	I	consensus	2024	Collaborative Large Language Models for Automated Data Extraction in Living Systematic Reviews	https://doi.org/10.1101/2024.09.20.24314108	
+doi:10.1101/2025.06.13.25329541	I	consensus	2025	Automation of Systematic Reviews with Large Language Models	https://doi.org/10.1101/2025.06.13.25329541	
+doi:10.1101/2025.08.11.25333429	I	consensus	2025	A LLM-based Multi-Agent Collaborative Approach for Screening Prioritization towards Automated Systematic Reviews	https://doi.org/10.1101/2025.08.11.25333429	
+doi:10.1109/fllm67465.2025.11391146	I	consensus	2025	Cal-X: Enhancing Systematic Review Screening with LLMs and Next-Token Likelihood Calibration	https://doi.org/10.1109/FLLM67465.2025.11391146	
+doi:10.1109/jcdl67857.2025.00042	I	consensus	2025	Efficient Citation Screening by Weak Classifier Ensemble*	https://doi.org/10.1109/jcdl67857.2025.00042	
+doi:10.1109/sami68106.2026.11420686	I	consensus	2026	Assessing Probability Rating Performance for Large Language Models in Systematic Literature Review Automation	https://doi.org/10.1109/SAMI68106.2026.11420686	
+doi:10.1111/cobi.14464	I	consensus	2025	New opportunities and challenges for conservation evidence synthesis from advances in natural language processing	https://doi.org/10.1111/cobi.14464	
+doi:10.1115/detc2023-116962	I	consensus	2023	AI-Accelerated Design of Evidence Synthesis for Global Development	https://doi.org/10.1115/detc2023-116962	
+doi:10.1136/bmjdhai-2025-000017	I	consensus	2025	Large language model enhanced framework for systematic reviews and meta-analyses	https://doi.org/10.1136/bmjdhai-2025-000017	
+doi:10.1136/bmjebm-2024-113199	I	consensus	2024	From promise to practice: challenges and pitfalls in the evaluation of large language models for data extraction in evidence synthesis	https://doi.org/10.1136/bmjebm-2024-113199	
+doi:10.1136/bmjment-2025-301762	I	consensus	2025	Development and evaluation of prompts for a large language model to screen titles and abstracts in a living systematic review	https://doi.org/10.1136/bmjment-2025-301762	
+doi:10.1145/3715964	I	consensus	2025	Automating Research Synthesis with Domain-Specific Large Language Model Fine-Tuning	https://doi.org/10.1145/3715964	
+doi:10.1186/s12874-025-02532-2	I	consensus	2025	Evaluating the performance of artificial intelligence in summarizing pre-coded text to support evidence synthesis: a comparison between chatbots and humans	https://doi.org/10.1186/s12874-025-02532-2	
+doi:10.1186/s12874-025-02644-9	I	consensus	2025	Artificial intelligence for the science of evidence synthesis: how good are AI-powered tools for automatic literature screening?	https://doi.org/10.1186/s12874-025-02644-9	
+doi:10.1186/s13643-023-02243-z	I	consensus	2023	Are ChatGPT and large language models “the answer” to bringing us closer to systematic review automation?	https://doi.org/10.1186/s13643-023-02243-z	
+doi:10.1186/s13643-024-02575-4	I	consensus	2024	Title and abstract screening for literature reviews using large language models: an exploratory study in the biomedical domain	https://doi.org/10.1186/s13643-024-02575-4	
+doi:10.1186/s13643-024-02666-2	I	consensus	2024	Large language models, updates, and evaluation of automation tools for systematic reviews: a summary of significant discussions at the eighth meeting of the International Collaboration for the Automation of Systematic Reviews (ICASR)	https://doi.org/10.1186/s13643-024-02666-2	
+doi:10.1186/s13643-025-02842-y	I	consensus	2026	The landscape of artificial intelligence tools and platforms for evidence synthesis: a scoping review	https://doi.org/10.1186/s13643-025-02842-y	
+doi:10.1186/s13643-026-03199-6	I	consensus	2026	Comparing supervised machine learning and large language models in title-abstract screening	https://doi.org/10.1186/s13643-026-03199-6	
+doi:10.1186/s13750-025-00360-x	I	consensus	2025	Testing the utility of GPT for title and abstract screening in environmental systematic evidence synthesis	https://doi.org/10.1186/s13750-025-00360-x	
+doi:10.1186/s40634-023-00662-4	I	consensus	2023	Accelerated evidence synthesis in orthopaedics—the roles of natural language processing, expert annotation and large language models	https://doi.org/10.1186/s40634-023-00662-4	
+doi:10.1200/jco.2025.43.16_suppl.e13657	I	consensus	2025	A living systematic literature review (L-SLR) for non–small-cell lung (NSCLC), prostate (PC), and breast cancer (BC), built with an agentic text annotation system powered by large language models (LLM) to assist treatment decision making.	https://doi.org/10.1200/jco.2025.43.16_suppl.e13657	
+doi:10.12688/f1000research.51117.3	I	consensus	2025	Data extraction methods for systematic review (semi)automation: Update of a living systematic review	https://doi.org/10.12688/f1000research.51117.3	
+doi:10.14264/01498af	I	consensus	2026	AI-driven approaches for effective systematic review literature screening	https://doi.org/10.14264/01498af	
+doi:10.17526v2	I	consensus	2023	Can large language models replace humans in the systematic review process? Evaluating GPT-4's efficacy in screening and extracting data from peer-reviewed and grey literature in multiple languages	http://arxiv.org/abs/2310.17526v2	
+doi:10.17605/osf.io/g2d4n	I	consensus	2026	TITAN SR vs ChatGPT 4.1 for Abstract Screening.	https://doi.org/10.17605/osf.io/g2d4n	
+doi:10.18653/v1/2024.climatenlp-1.20	I	consensus	2024	Assessing the Effectiveness of GPT-4o in Climate Change Evidence Synthesis and Systematic Assessments: Preliminary Insights	https://doi.org/10.18653/v1/2024.climatenlp-1.20	
+doi:10.2139/ssrn.4797024	I	consensus	2024	A Critical Assessment of Large Language Models for Systematic Reviews: Utilizing ChatGPT for Complex Data Extraction	https://doi.org/10.2139/ssrn.4797024	
+doi:10.2139/ssrn.4870368	I	consensus	2024	AI-Driven Evidence Synthesis: Data Extraction of Randomized Controlled Trials with Large Language Models	https://doi.org/10.2139/ssrn.4870368	
+doi:10.2139/ssrn.4943759	I	consensus	2024	Accuracy of Large Language Models for Literature Screening in Systematic Reviews and Meta-Analyses	https://doi.org/10.2139/ssrn.4943759	
+doi:10.2139/ssrn.5760724	I	consensus	2025	Towards AI-supported SLR Automation: Citation Screening with Transformers	https://doi.org/10.2139/ssrn.5760724	
+doi:10.2196/48996	I	consensus	2023	Automated Paper Screening for Clinical Reviews Using Large Language Models: Data Analysis Study	https://doi.org/10.2196/48996	
+doi:10.2196/53164	I	consensus	2024	Hallucination Rates and Reference Accuracy of ChatGPT and Bard for Systematic Reviews: Comparative Analysis	https://doi.org/10.2196/53164	
+doi:10.2196/56780	I	consensus	2024	Potential Roles of Large Language Models in the Production of Systematic Reviews and Meta-Analyses	https://doi.org/10.2196/56780	
+doi:10.2196/58366	I	consensus	2025	The AI Reviewer: Evaluating AI’s Role in Citation Screening for Streamlined Systematic Reviews	https://doi.org/10.2196/58366	
+doi:10.2196/64682	I	consensus	2025	GPT-3.5 Turbo and GPT-4 Turbo in Title and Abstract Screening for Systematic Reviews	https://doi.org/10.2196/64682	
+doi:10.2196/67488	I	consensus	2025	Accuracy of Large Language Models for Literature Screening in Thoracic Surgery: Diagnostic Study	https://doi.org/10.2196/67488	
+doi:10.2196/68097	I	consensus	2025	Critical Assessment of Large Language Models’ (ChatGPT) Performance in Data Extraction for Systematic Reviews: Exploratory Study	https://doi.org/10.2196/68097	
+doi:10.22038/abjs.2025.84896.3874	I	consensus	2025	Evaluation of a Popular Large Language Model in Orthopedic Literature Review: Comparison to Previously Published Reviews	https://doi.org/10.22038/ABJS.2025.84896.3874	
+doi:10.24252/instek.v10i1.57445	I	consensus	2025	DOES PERSONALIZATION MATTER IN PROMPTING? A CASE STUDY OF CLASSIFYING PAPER METADATA USING ZERO-SHOT PROMPTING	https://doi.org/10.24252/instek.v10i1.57445	
+doi:10.3233/shti251264	I	consensus	2025	Performance of LLMs in Citation Screening: A Comparison Across Datasets with Varied Inclusion Rates	https://doi.org/10.3233/shti251264	
+doi:10.3389/frai.2025.1662202	I	consensus	2025	Analysis of article screening and data extraction performance by an AI systematic literature review platform	https://doi.org/10.3389/frai.2025.1662202	
+doi:10.3390/a18050296	I	consensus	2025	Benchmarking Multiple Large Language Models for Automated Clinical Trial Data Extraction in Aging Research	https://doi.org/10.3390/a18050296	
+doi:10.3390/biomedinformatics5010015	I	consensus	2025	How to Write Effective Prompts for Screening Biomedical Literature Using Large Language Models	https://doi.org/10.3390/biomedinformatics5010015	
+doi:10.3390/fi16050167	I	consensus	2024	A Hybrid Semi-Automated Workflow for Systematic and Literature Review Processes with Large Language Model Analysis	https://doi.org/10.3390/fi16050167	
+doi:10.3390/info16050378	I	consensus	2025	Large Language Models in Systematic Review Screening: Opportunities, Challenges, and Methodological Considerations	https://doi.org/10.3390/info16050378	
+doi:10.3390/jcm15114230	I	consensus	2026	Evaluating Large Language Models for Automated Evidence Synthesis in Neuroimaging AI: A Multi-Model Benchmark	https://doi.org/10.3390/jcm15114230	
+doi:10.3390/make7020028	I	consensus	2025	Accelerating Disease Model Parameter Extraction: An LLM-Based Ranking Approach to Select Initial Studies For Literature Review Automation	https://doi.org/10.3390/make7020028	
+doi:10.35542/osf.io/wn3cd	I	consensus	2024	MetaMate: Large Language Model to the Rescue of Automated Data Extraction for Educational Systematic Reviews and Meta-analyses	https://doi.org/10.35542/osf.io/wn3cd	
+doi:10.5334/jors.730	I	consensus	2026	metaScreener: A Plugin-Based Desktop Application for Human-in-the-Loop Systematic Literature Screening	https://doi.org/10.5334/jors.730	
+doi:10.64898/2026.01.07.26343635	I	consensus	2026	Efficient Citation Screening by Weak Classifier Ensemble*	https://doi.org/10.64898/2026.01.07.26343635	
+doi:10.64898/2026.04.06.716861	I	consensus	2026	Quantifying Scientific Consensus in Biomedical Hypotheses via LLM-Assisted Literature Screening	https://doi.org/10.64898/2026.04.06.716861	
+doi:10.64898/2026.07.29.741127	I	consensus	2026	Operationalising LLM-assisted screening of literature to support systematic reviews	https://doi.org/10.64898/2026.07.29.741127	
+doi:10.64898/2026.07.30.26359375	I	consensus	2026	A PRISMA-Aligned Agentic Framework for Medical Systematic Reviews and Evidence Synthesis	https://doi.org/10.64898/2026.07.30.26359375	
+doi:10.7326/annals-24-02189	I	consensus	2025	Development of Prompt Templates for Large Language Model–Driven Screening in Systematic Reviews	https://doi.org/10.7326/annals-24-02189	
+doi:10.7326/annals-25-00739	I	consensus	2025	Artificial Intelligence–Assisted Data Extraction With a Large Language Model: A Study Within Reviews	https://doi.org/10.7326/annals-25-00739	
+doi:10.7759/cureus.43023	I	consensus	2023	Streamlining Systematic Reviews: Harnessing Large Language Models for Quality Assessment and Risk-of-Bias Evaluation	https://doi.org/10.7759/cureus.43023	
+doi:10.7759/cureus.90026	I	consensus	2025	Is Large Language Model-Assisted Citation Screening Feasible in a Scoping Review on Nonpharmacological Interventions for Delirium in Patients With Cancer?	https://doi.org/10.7759/cureus.90026	

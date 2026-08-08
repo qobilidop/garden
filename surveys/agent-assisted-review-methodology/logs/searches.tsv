@@ -1,0 +1,14 @@
+date	qid	source	query	results
+2026-08-08	oa1	openalex	"large language model" "systematic review"	50
+2026-08-08	oa2	openalex	"large language model" "literature review"	50
+2026-08-08	oa3	openalex	"language model" "evidence synthesis"	50
+2026-08-08	oa4	openalex	"citation screening" "language model"	21
+2026-08-08	oa5	openalex	"data extraction" "large language model" review	50
+2026-08-08	s21	semanticscholar	large language model systematic review automation	50
+2026-08-08	s22	semanticscholar	LLM literature review screening agent	FAILED:HTTP Error 429: 
+2026-08-08	s23	semanticscholar	evidence synthesis language model reliability	FAILED:HTTP Error 429: 
+2026-08-08	cr1	crossref	large language model systematic review automation	50
+2026-08-08	ax1	arxiv	all:"systematic review" AND all:"large language model"	50
+2026-08-08	ax2	arxiv	all:"literature review" AND all:"language model" AND all:agent	50
+2026-08-08	s22	semanticscholar	LLM literature review screening agent	50
+2026-08-08	s23	semanticscholar	evidence synthesis language model reliability	FAILED:persistent-429
