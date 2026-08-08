@@ -8,6 +8,7 @@ RUN apt-get update \
  && curl -fsSL https://rclone.org/install.sh | bash
 
 # Leak-guard scanner, pinned; release naming maps amd64 -> x64.
+# Keep in sync with GITLEAKS_VERSION in .github/workflows/gitleaks.yml.
 ARG TARGETARCH
 RUN A="$TARGETARCH"; [ "$A" = "amd64" ] && A=x64; \
     curl -fsSL "https://github.com/gitleaks/gitleaks/releases/download/v8.30.1/gitleaks_8.30.1_linux_${A}.tar.gz" \

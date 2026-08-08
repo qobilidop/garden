@@ -1,4 +1,6 @@
 # Extends gitleaks' default rules; see hooks/check.sh for how this runs.
+# Root-level [[allowlists]] needs gitleaks >= 8.25.0 — older versions
+# silently ignore it (this bit CI once; gitleaks.yml pins the version).
 [extend]
 useDefault = true
 

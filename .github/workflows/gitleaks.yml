@@ -7,6 +7,7 @@ on:
     # early Sat morning Pacific (owner asleep) + weekend Actions trough; the
     # :17 dodges GitHub's congested top-of-hour cron queue.
     - cron: "17 10 * * 6"
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -21,3 +22,8 @@ jobs:
       - uses: gitleaks/gitleaks-action@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Same version as the dev image (.devcontainer/Dockerfile) and
+          # local hooks; keep the two pins in sync. The action's default
+          # (8.24.3) predates root-level [[allowlists]] (added in 8.25.0)
+          # and silently ignores .gitleaks.toml allowlist entries.
+          GITLEAKS_VERSION: 8.30.1
