@@ -7,6 +7,7 @@ Systems that modify themselves from their own experience. Shelf:
 [[wang2023-voyager]] (the founding skill-library exemplar),
 [[liu2026-a-taxonomy-of-self-evolving-agents]] (the three-locus cut),
 [[weng2026-harness]] (harness engineering as the near-term RSI site),
+[[osmani2026-loop-engineering]] (the loop layer from the product side),
 [[vincent2026-the-therapist-pattern]] and [[vincent2026-superpowers-6]]
 (field reports), [[karpathy2026-llm-wiki]] (the pattern applied to
 knowledge rather than procedures).
@@ -35,7 +36,11 @@ one loop shape:
   deterministic code no LLM touches; Self-Harness accepts only
   non-regressing candidates; [[gao2025-a-survey-of-self-evolving-agents]]
   reaches the same rule from the risk side (evaluation and permissions
-  outside the loop, approval gates, rollback).
+  outside the loop, approval gates, rollback). By mid-2026 the rule
+  ships as a consumer primitive: [[osmani2026-loop-engineering]]'s tour
+  of coding-agent products finds the maker/checker split built into
+  both major tools, down to run-until-done stop conditions graded by a
+  model other than the one doing the work.
 - **Receipts.** A claimed lesson counts only as a diff in a versioned,
   inspectable surface through the designated writer
   ([[vincent2026-the-therapist-pattern]]); audit records name behavior,
@@ -83,7 +88,11 @@ does the loop close.
 
 [[vincent2026-superpowers-6]]'s three rungs — assisted analysis,
 overnight delegation, autonomous research — each earned by building
-eval infrastructure first, never by trusting the proposer more.
+eval infrastructure first, never by trusting the proposer more. The
+ladder's floor is now mainstream practice:
+[[osmani2026-loop-engineering]]'s scheduled triage-and-fix loops run
+the work autonomously but never update themselves — delegation without
+self-improvement, the substrate the rest of the shelf evolves.
 [[vincent2026-the-therapist-pattern]] explores replacing human gates
 with structural internal ones (sole-writer roles, time as a gate) — a
 philosophical fork from the survey's human-approval checklist worth
