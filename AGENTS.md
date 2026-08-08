@@ -10,6 +10,13 @@
   repository itself shows — never local setup (installed plugins, machine
   details, private repos' contents).
 
+## Guards
+
+- A machine check that runs in more than one place (hooks, dev image,
+  CI) pins a single version, and each pin site cross-references the
+  others — divergent scanner versions once made CI and hooks disagree
+  on the same config.
+
 ## Scratch
 
 - Notes live at `scratch/YYYY/YYYY-MM-DD/slug.md`. The date directory is the
@@ -44,6 +51,13 @@
   the build.
 - Build with Node from the dev image (`./dev.sh`); CI builds in the same
   image via `.github/workflows/site.yml`.
+
+## Conventions
+
+- A convention found to exist only by imitation gets codified in its
+  governing skill in the same change, and machine-checked where
+  checkable — unwritten conventions drift (H1 shapes, display names,
+  and citation forms all did).
 
 ## Skills
 

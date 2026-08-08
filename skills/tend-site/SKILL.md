@@ -1,0 +1,41 @@
+---
+name: tend-site
+description: Develop and verify the sys0 website (site/, Astro) — the build/preview/deploy loop, its cache and environment traps, and where the site's contract and lints live. Use when changing site/ code or styles, debugging site builds or deploys, or verifying content renders on the published site.
+---
+
+# Tend the site
+
+The contract is AGENTS.md §Site: `site/` reads exactly `wiki/` and
+`library/`, read-only; owned logic in `site/src/lib/`; unresolved
+`[[targets]]` and bare citekey mentions fail the build via
+`lintContent()` in `site/src/lib/sitemap.mjs`, called at config load
+(`astro.config.mjs`).
+
+## The loop
+
+- Build: `npm run build` in `site/`. After changing `astro.config.mjs`
+  or anything in `src/lib/`, clear caches first:
+  `rm -rf .astro node_modules/.astro dist` — the content layer caches
+  rendered entries by content hash and serves stale HTML for unchanged
+  markdown.
+- Errors thrown inside the markdown pipeline are logged but the build
+  exits 0 — a check that must gate CI throws at config load instead.
+  Verify enforcement by exit code, never by error text.
+- Preview: `npm run preview` (localhost:4321/sys0/); screenshot and show
+  the user before proposing a commit — visual changes get visual review.
+- Deploy: push triggers `.github/workflows/site.yml` (builds in the dev
+  image, deploys to Pages). Watch by exit code
+  (`gh run watch <id> --exit-status`), then curl the live page for the
+  specific change.
+- Never run npm installs or builds through `dev.sh` against the host
+  checkout: the mount shares `site/node_modules`, and Linux binaries
+  clobber the macOS ones ("Cannot find native binding"); reinstall on
+  the host if it happens.
+
+## Design system
+
+Grayscale tokens in `src/styles/global.css`; the only hues are the
+`--paper`/`--post` identity dots (CVD-validated against both surfaces).
+Serif prose, sans apparatus, mono citekey handles; 44rem measure.
+Design decisions trace to researched precedent — match that bar when
+changing them.
