@@ -26,6 +26,10 @@ below critical mass it is a mere container).
 
 ## Page anatomy
 
+- Titles and headings are sentence case, proper nouns keeping their
+  canonical casing ("AI for mathematics", never "AI for Mathematics") —
+  the wiki convention (Wikipedia MOS): capitals then carry information,
+  and titles read as prose when linked inline.
 - H1 names the topic. The opening paragraph defines it in one or two
   sentences, then gives the shelf: every cited work as `[[citekey]]`
   with a parenthetical role — what part it plays on this page ("the

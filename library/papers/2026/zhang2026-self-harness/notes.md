@@ -19,7 +19,7 @@ synthesis: "The loop architecture — evidence before proposal, bounded surfaces
 # Self-Harness: Harnesses That Improve Themselves
 
 Shanghai AI Lab preprint defining the paradigm this library first met
-through weng2026-harness's summary: a fixed model improves the harness it
+through [[weng2026-harness]]'s summary: a fixed model improves the harness it
 runs under — no human engineer, no stronger external agent (their contrast
 with Meta-Harness). The framing is deliberately narrow and the paper is
 candid about it: not open-ended self-improvement, but whether the same
@@ -105,7 +105,7 @@ adaptation the introduction makes.
   warning that pass-rate non-regression is too weak a gate for
   higher-stakes harness changes.
 - **In this library:** this answers the abstraction-boundary concern
-  weng2026-harness raised — surfaces here are explicitly fenced — and
+  [[weng2026-harness]] raised — surfaces here are explicitly fenced — and
   for a human-gated personal system the transferable pattern is the
   evidence discipline: mine weaknesses from real traces, propose
   minimal itemized edits tied to specific failures, and treat human

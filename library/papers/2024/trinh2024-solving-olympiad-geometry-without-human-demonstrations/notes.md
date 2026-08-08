@@ -83,7 +83,7 @@ search.
 - **Caveats (stated plainly by the paper):** IMO-AG-30 is
   *translations* into a narrow domain-specific language covering 75%
   of IMO geometry — the specification layer is where the claim's scope
-  lives, the same statement-fidelity boundary the ai4math shelf tracks
+  lives, the same statement-fidelity boundary the [[ai4math]] shelf tracks
   everywhere else; the comparison to humans is "approximate" by the
   authors' own framing.
 

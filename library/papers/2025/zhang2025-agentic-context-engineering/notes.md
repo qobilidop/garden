@@ -113,5 +113,5 @@ nothing from a large playbook.
   itemized entries over blob rewrites, deterministic merges,
   dedup-and-prune hygiene, helpful/harmful provenance, and no
   self-update without a reliable feedback signal — convergent with the
-  safety architecture gao2025-a-survey-of-self-evolving-agents reaches
+  safety architecture [[gao2025-a-survey-of-self-evolving-agents]] reaches
   from the risk side.

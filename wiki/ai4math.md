@@ -133,15 +133,15 @@ loop closing on science rather than benchmarks.
 
 The announcement is deliberately thin; the mathematics lives in the
 linked ten-proofs paper — the natural next ingestion, as a papers/
-entry, now with jiang2026's checklist to apply (rediscovery,
+entry, now with [[jiang2026-from-solvers-to-research]]'s checklist to apply (rediscovery,
 specification fidelity, selection bias). Open questions the current
 works raise but don't settle: *tooling* for statement–formalization
-correspondence (jiang2026 names the failure and floats FormalAlign-
+correspondence ([[jiang2026-from-solvers-to-research]] names the failure and floats FormalAlign-
 style checkers, but nothing settles it); whether the released
 reasoning traces support or merely narrate the discovery claims; how
 the five named human follow-up papers to the unit-distance disproof
 treat AI-originated results; and whether the First Proof challenge
-(ten never-published research problems, endorsed by jiang2026 as the
+(ten never-published research problems, endorsed by [[jiang2026-from-solvers-to-research]] as the
 clean evaluation) resists the contamination that saturated the
 competition benchmarks. The kernel-side thread continues too:
 verified kernels reaching inductives, and whether comparator-style

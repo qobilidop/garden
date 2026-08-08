@@ -21,7 +21,7 @@ synthesis: "The most concrete public numbers yet for a self-improving harness â€
 Release post that is really a field report of harness self-improvement
 run at production scale: the Superpowers build loop (the subagent-driven
 development orchestration this library first met in
-vincent2025-superpowers) optimized by a frontier model against a
+[[vincent2025-superpowers]]) optimized by a frontier model against a
 regression eval suite, cutting wall-clock time ~50% and token spend
 ~60% with, per their evals, no quality loss. The optimizer was
 Anthropic's Fable during its brief availability window ("shipped (and
@@ -65,9 +65,9 @@ The most concrete public numbers yet for a self-improving harness in a
 widely-deployed framework, and a live demonstration of the architecture
 the academic shelf prescribes: proposals from a model, promotion gated
 by a regression eval suite outside the loop
-(zhang2026-self-harness's protocol at commercial scale), negative
+([[zhang2026-self-harness]]'s protocol at commercial scale), negative
 results and closed leads logged (the literature-bias fix
-weng2026-harness calls for), and pre-registered predictions against the
+[[weng2026-harness]] calls for), and pre-registered predictions against the
 "p-hacking and eureka-ing" failure mode.
 
 - **Durable:** the Codex-isolation incident's lesson, which the papers

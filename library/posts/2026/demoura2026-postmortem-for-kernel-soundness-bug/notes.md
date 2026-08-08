@@ -82,7 +82,7 @@ feel-good process fix.
   and the untrusted-elaborator principle.
 - **Era-bound:** the specific PR inventory.
 - **In this library:** the direct counterweight to
-  openai2026-ten-advances-in-mathematics, whose evidentiary story leans
+  [[openai2026-ten-advances-in-mathematics]], whose evidentiary story leans
   on Lean certificates neutralizing skepticism of corporate math claims
   — this incident quantifies the residual risk behind that move (kernel
   implementation bugs exist) and shows why the layered answer

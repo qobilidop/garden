@@ -3,9 +3,11 @@ import { unified } from '@astrojs/markdown-remark'
 import remarkMath from 'remark-math'
 import rehypeKatex from 'rehype-katex'
 import remarkWikilinks from './src/lib/wikilinks.mjs'
-import { buildResolveMap } from './src/lib/sitemap.mjs'
+import { buildResolveMap, lintContent } from './src/lib/sitemap.mjs'
 
 const BASE = '/sys0'
+const resolve = buildResolveMap(BASE)
+lintContent(resolve)
 
 export default defineConfig({
   site: 'https://qobilidop.github.io',
@@ -17,7 +19,7 @@ export default defineConfig({
     processor: unified({
       remarkPlugins: [
         remarkMath,
-        [remarkWikilinks, { resolve: buildResolveMap(BASE) }],
+        [remarkWikilinks, { resolve }],
       ],
       rehypePlugins: [rehypeKatex],
     }),

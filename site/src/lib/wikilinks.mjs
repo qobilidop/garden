@@ -15,7 +15,12 @@ export function slugifyAnchor(anchor) {
     .replace(/\s+/g, '-')
 }
 
-// resolve: Map<name, href>
+// resolve: Map<name, {href, label, kind}>
+// Display: explicit [[target|alias]] wins; otherwise the target's label
+// (citekey author-year handle, or a wiki page's title).
+// Dead targets and bare mentions are caught by lintContent() at config
+// load (sitemap.mjs) — errors thrown here would only be logged by the
+// content layer, not fail the build.
 export default function remarkWikilinks({ resolve }) {
   return (tree, file) => {
     visit(tree, 'text', (node, index, parent) => {
@@ -28,8 +33,8 @@ export default function remarkWikilinks({ resolve }) {
         const [targetAndAnchor, alias] = inner.split('|', 2)
         const [target, anchor] = targetAndAnchor.split('#', 2)
         const name = target.trim()
-        const href = resolve.get(name)
-        if (href === undefined) {
+        const entry = resolve.get(name)
+        if (entry === undefined) {
           throw new Error(
             `Unresolved wikilink [[${name}]] in ${file.path ?? 'unknown file'}`,
           )
@@ -37,11 +42,17 @@ export default function remarkWikilinks({ resolve }) {
         if (m.index > last) {
           parts.push({ type: 'text', value: node.value.slice(last, m.index) })
         }
+        const hProperties = {
+          className: ['wikilink', `wikilink-${entry.kind}`],
+        }
+        if (entry.tip) hProperties['data-tip'] = entry.tip
         parts.push({
           type: 'link',
-          url: anchor ? `${href}#${slugifyAnchor(anchor)}` : href,
-          data: { hProperties: { className: ['wikilink'] } },
-          children: [{ type: 'text', value: (alias ?? name).trim() }],
+          url: anchor ? `${entry.href}#${slugifyAnchor(anchor)}` : entry.href,
+          data: { hProperties },
+          children: [
+            { type: 'text', value: (alias ?? entry.label ?? name).trim() },
+          ],
         })
         last = m.index + raw.length
       }

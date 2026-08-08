@@ -89,7 +89,7 @@ new skills build on banked ones.
   swords, cobblestone as fuel, GPT-4 at 15× GPT-3.5 prices) date it
   precisely. The "first LLM-powered embodied lifelong learning agent"
   claim is marketing-adjacent but roughly earned.
-- **In this library:** in gao2025-a-survey-of-self-evolving-agents's
+- **In this library:** in [[gao2025-a-survey-of-self-evolving-agents]]'s
   frame this is the founding exemplar of tool/skill evolution; for a
   personal system whose skills directory grows by distilling sessions,
   the two lessons that carry over verbatim are: index skills by what

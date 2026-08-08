@@ -26,7 +26,7 @@ monthly installment in his "how I'm using coding agents" series it is a
 practitioner's field report, not a design document — but it contains the
 earliest widely-read description of a working *skills-that-improve-
 skills* loop, months before the academic versions this library holds
-(zhang2026-self-harness, zhang2025-agentic-context-engineering) put
+([[zhang2026-self-harness]], [[zhang2025-agentic-context-engineering]]) put
 numbers on the same ideas.
 
 ## The mechanisms
@@ -83,11 +83,11 @@ framework and says so.
 - **Durable (what this post adds over the library's academic shelf):**
   every safeguard the papers formalize appears here in conversational
   form, discovered by iteration — necessity pressure-testing is
-  zhang2026-self-harness's addressability filter plus regression gate;
-  the gameshow failure is the weak-evaluator trap weng2026-harness
+  [[zhang2026-self-harness]]'s addressability filter plus regression gate;
+  the gameshow failure is the weak-evaluator trap [[weng2026-harness]]
   catalogs; subagent-isolated memory search is context hygiene ACE
   would call collapse-avoidance; verification-before-persistence is
-  wang2023-voyager's critic gate. The 2,249-memories null result is
+  [[wang2023-voyager]]'s critic gate. The 2,249-memories null result is
   the post's most valuable datum for anyone building a distillation
   loop: most accumulated lessons are already absorbed by a working
   system, so an earned-lesson filter is not optional caution but the

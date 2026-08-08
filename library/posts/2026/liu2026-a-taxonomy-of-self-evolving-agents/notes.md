@@ -18,7 +18,7 @@ synthesis: "Two additive cuts on gao2025's survey: the artifact as a first-class
 
 # A Taxonomy of Self-evolving Agents
 
-A practitioner's blog post that cuts the self-evolving-agents field along a
+A practitioner's blog post that cuts the field of self-evolving agents along a
 single axis — *what evolves* — into three loci: **model**, **harness**, and
 **artifact**. Starting from "Agent = Model + Harness," it adds artifacts
 (the agent's outputs: discovered kernels, generated papers, robot policies)
@@ -92,7 +92,7 @@ citation base is a few dozen exemplar systems, chosen for illustration.
   facto standard" observations; casual factual claims (FARS run costs,
   dates) are repeated from primary sources without verification.
 - **In this library:** read against
-  gao2025-a-survey-of-self-evolving-agents, the post's model/harness
+  [[gao2025-a-survey-of-self-evolving-agents]], the post's model/harness
   split is a coarsening of the survey's four "what evolves" loci
   (weights vs context+tools+architecture), and its third level maps
   onto the survey's population-based/evolutionary paradigm. The

@@ -137,6 +137,42 @@ main a[href^="http"] {
   text-decoration-style: dotted;
 }
 
+/* Library citations render as their citekey handle — mono, like the
+   citekey on the work page's citation card. */
+.wikilink-library {
+  font-family: var(--mono);
+  font-size: 0.85em;
+}
+
+/* Hover card: the citation's full title/author/venue, from data-tip.
+   CSS-only; hover-capable devices only (touch taps through to the page). */
+@media (hover: hover) {
+  .wikilink-library {
+    position: relative;
+  }
+
+  .wikilink-library:hover::after {
+    content: attr(data-tip);
+    position: absolute;
+    left: 0;
+    top: calc(100% + 0.4rem);
+    z-index: 10;
+    width: max-content;
+    max-width: 24rem;
+    padding: 0.5rem 0.75rem;
+    background: var(--bg-raised);
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    color: var(--fg);
+    font-family: var(--sans);
+    font-size: 0.8rem;
+    line-height: 1.45;
+    white-space: pre-line;
+    text-align: left;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  }
+}
+
 /* Code */
 
 code,

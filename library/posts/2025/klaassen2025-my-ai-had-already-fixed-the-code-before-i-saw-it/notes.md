@@ -82,11 +82,11 @@ the compounding to actually happen.
   Code.
 - **Unverifiable as-told:** the opening anecdote.
 - **Era-bound:** the Cora and Claude Code specifics.
-- **In this library:** vincent2025-superpowers is the twin from the
+- **In this library:** [[vincent2025-superpowers]] is the twin from the
   same season — Klaassen names the philosophy, Vincent ships the
   machinery — and both independently converge on
   lessons-earned-from-real-work as the input to harness growth, which
-  liu2026-a-taxonomy-of-self-evolving-agents would file as harness
+  [[liu2026-a-taxonomy-of-self-evolving-agents]] would file as harness
   self-improvement whose loop closes in code review. For the evolve
   skill, this is the philosophy citation: rules route from failures
   ("every bug becomes a permanent lesson") and the locus that

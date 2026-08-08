@@ -85,7 +85,7 @@ formal statements match the informal ones).
   position in a live dispute.
 - **Era-bound:** model/pricing specifics and the access-initiative
   framing.
-- **In this library:** in liu2026-a-taxonomy-of-self-evolving-agents
+- **In this library:** in [[liu2026-a-taxonomy-of-self-evolving-agents]]
   terms, this is the loop closing on science rather than benchmarks. If
   the mathematical content becomes relevant, the paper itself is the
   thing to ingest as a papers/ entry; this entry records the
