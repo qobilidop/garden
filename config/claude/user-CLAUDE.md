@@ -12,4 +12,7 @@
   repositories; never pass interactive flags (`-i`) in scripted commands —
   their exit codes are meaningless without a tty; verify a deletion by
   listing the target afterward, never by exit code (git status cannot see
-  empty directories).
+  empty directories); in zsh one-liners, quote bare `=`-prefixed words and
+  any glob that may not match — an unmatched glob aborts the whole command;
+  never rely on a `cd` persisting from earlier in a compound command or a
+  previous call — invoke repo tools by absolute path.
