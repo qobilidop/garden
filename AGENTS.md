@@ -32,6 +32,19 @@
   needs enough accumulated material to synthesize, never a single work.
   No index, no per-page frontmatter: the directory lists, git logs.
 
+## Site
+
+- `site/` renders the repo to GitHub Pages (Astro). It reads exactly
+  `wiki/` and `library/` — the two collections in
+  `site/src/content.config.ts` are the allowlist — and writes nothing
+  back; presentation needs never reshape note conventions.
+- Owned logic lives in `site/src/lib/` (wikilink resolution, backlink
+  graph, work metadata); everything else is rented substrate (Astro,
+  remark, KaTeX, Pagefind, Mermaid). An unresolved `[[target]]` fails
+  the build.
+- Build with Node from the dev image (`./dev.sh`); CI builds in the same
+  image via `.github/workflows/site.yml`.
+
 ## Skills
 
 - Canonical skills live in `skills/<name>/`; deploy each by committed

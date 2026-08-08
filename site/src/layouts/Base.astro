@@ -1,0 +1,79 @@
+---
+import 'katex/dist/katex.min.css'
+import '../styles/global.css'
+
+interface Props {
+  title?: string
+  description?: string
+}
+
+const { title, description } = Astro.props
+const base = import.meta.env.BASE_URL.replace(/\/$/, '')
+const pageTitle = title ? `${title} · sys0` : 'sys0'
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    {description && <meta name="description" content={description} />}
+    <link rel="icon" href={`${base}/favicon.svg`} type="image/svg+xml" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav>
+        <a href={`${base}/`} class="brand">sys0</a>
+        <a href={`${base}/wiki/`}>wiki</a>
+        <a href={`${base}/library/`}>library</a>
+        <a href={`${base}/search/`}>search</a>
+      </nav>
+    </header>
+    <main data-pagefind-body>
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <p>
+        <a href="https://github.com/qobilidop/sys0">source</a> · text
+        <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> ·
+        code <a href="https://github.com/qobilidop/sys0/blob/main/LICENSE-MIT">MIT</a>
+      </p>
+    </footer>
+    <script>
+      // Mermaid renders client-side, loaded only on pages that need it.
+      const blocks = document.querySelectorAll<HTMLElement>(
+        'pre > code.language-mermaid, pre[data-language="mermaid"]',
+      )
+      if (blocks.length > 0) {
+        const { default: mermaid } = await import('mermaid')
+        // Bind the diagram theme to the page's grayscale tokens (never
+        // filter-invert — it breaks non-line-art).
+        const css = getComputedStyle(document.documentElement)
+        const v = (name: string) => css.getPropertyValue(name).trim()
+        mermaid.initialize({
+          startOnLoad: false,
+          theme: 'base',
+          themeVariables: {
+            background: v('--bg'),
+            primaryColor: v('--bg-raised'),
+            primaryTextColor: v('--fg'),
+            primaryBorderColor: v('--muted'),
+            lineColor: v('--muted'),
+            fontFamily: v('--sans') || 'sans-serif',
+          },
+        })
+        const nodes: HTMLElement[] = []
+        for (const block of blocks) {
+          const pre = block.tagName === 'PRE' ? block : block.parentElement!
+          const div = document.createElement('div')
+          div.className = 'mermaid'
+          div.textContent = block.textContent ?? ''
+          pre.replaceWith(div)
+          nodes.push(div)
+        }
+        await mermaid.run({ nodes })
+      }
+    </script>
+  </body>
+</html>

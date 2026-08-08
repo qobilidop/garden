@@ -1,0 +1,26 @@
+---
+import { getCollection, render } from 'astro:content'
+import Base from '../../layouts/Base.astro'
+import Backlinks from '../../components/Backlinks.astro'
+import { getInbound } from '../../lib/graph'
+import { extractTitle } from '../../lib/works'
+
+export async function getStaticPaths() {
+  const entries = await getCollection('wiki')
+  return entries.map((entry) => ({
+    params: { slug: entry.id },
+    props: { entry },
+  }))
+}
+
+const { entry } = Astro.props
+const { Content } = await render(entry)
+const refs = (await getInbound()).get(entry.id) ?? []
+---
+
+<Base title={extractTitle(entry.body ?? '') ?? entry.id}>
+  <article>
+    <Content />
+  </article>
+  <Backlinks heading="Linked from" refs={refs} />
+</Base>

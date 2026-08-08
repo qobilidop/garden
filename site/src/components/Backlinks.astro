@@ -1,0 +1,26 @@
+---
+import type { Ref } from '../lib/graph'
+
+interface Props {
+  heading: string
+  refs: Ref[]
+}
+
+const { heading, refs } = Astro.props
+---
+
+{
+  refs.length > 0 && (
+    <section class="backlinks" data-pagefind-ignore>
+      <h2>{heading}</h2>
+      <ul>
+        {refs.map((ref) => (
+          <li>
+            <a href={ref.href}>{ref.title}</a>
+            <span class="kind">{ref.kind}</span>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )
+}

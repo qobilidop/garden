@@ -1,0 +1,302 @@
+/* sys0 — grayscale, typography-first. Prose in serif (Charter/Georgia,
+   zero webfonts); apparatus (nav, metadata, backlinks) in system sans.
+   Light and dark via prefers-color-scheme; tokens flip, structure doesn't.
+   Link grammar: internal solid underline, external dotted; no hue. */
+
+:root {
+  --bg: #fcfcfc;
+  --bg-raised: #f2f2f2;
+  --fg: #1a1a1a;
+  --muted: #6e6e6e;
+  --rule: #e4e4e4;
+  --underline: #a8a8a8;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #151515;
+    --bg-raised: #1e1e1e;
+    --fg: #d6d6d6;
+    --muted: #8f8f8f;
+    --rule: #2c2c2c;
+    --underline: #5a5a5a;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --serif: Charter, Georgia, serif;
+  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+    sans-serif;
+  --mono: ui-monospace, "SF Mono", "Cascadia Code", Menlo, Consolas, monospace;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0 1.25rem;
+  max-width: 42rem;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--serif);
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 17px;
+  }
+}
+
+/* Header / nav — apparatus, sans */
+
+.site-header {
+  padding: 1.5rem 0 3rem;
+  font-family: var(--sans);
+  font-size: 0.85rem;
+}
+
+.site-header nav {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.site-header a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.site-header a.brand {
+  color: var(--fg);
+  font-weight: 600;
+}
+
+.site-header a:hover {
+  color: var(--fg);
+}
+
+main {
+  min-height: 60vh;
+}
+
+/* Prose */
+
+h1,
+h2,
+h3 {
+  line-height: 1.25;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 1.6em;
+  margin: 0 0 1rem;
+}
+
+h2 {
+  font-size: 1.25em;
+  margin-top: 2.25rem;
+}
+
+h3 {
+  font-size: 1.05em;
+}
+
+p,
+li {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Links: text-colored, gray underline; internal solid, external dotted */
+
+a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: var(--underline);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+
+a:hover {
+  text-decoration-color: var(--fg);
+}
+
+main a[href^="http"] {
+  text-decoration-style: dotted;
+}
+
+/* Code */
+
+code,
+pre,
+kbd {
+  font-family: var(--mono);
+  font-size: 0.85em;
+}
+
+:not(pre) > code {
+  background: var(--bg-raised);
+  padding: 0.1em 0.3em;
+  border-radius: 3px;
+}
+
+pre {
+  padding: 0.75rem 1rem;
+  overflow-x: auto;
+  background: var(--bg-raised);
+  border-radius: 4px;
+  line-height: 1.5;
+}
+
+/* Astro/Shiki inline theme fallback: keep code readable in both themes
+   without shipping two highlight themes yet. */
+@media (prefers-color-scheme: dark) {
+  .astro-code,
+  .astro-code span {
+    color: var(--astro-code-foreground, inherit) !important;
+    background: transparent !important;
+  }
+}
+
+blockquote {
+  margin: 1rem 0;
+  padding-left: 1rem;
+  border-left: 2px solid var(--rule);
+  color: var(--muted);
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--rule);
+  margin: 2.5rem 0;
+}
+
+table {
+  border-collapse: collapse;
+  font-size: 0.9em;
+  display: block;
+  overflow-x: auto;
+}
+
+th,
+td {
+  border: 1px solid var(--rule);
+  padding: 0.35rem 0.6rem;
+  text-align: left;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Math and diagrams may break the measure, scrolling in place */
+
+.katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.25rem 0;
+}
+
+.mermaid {
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
+/* Work pages: catalog-card citation header — sans, hairline-ruled */
+
+.work-meta {
+  margin-bottom: 2.5rem;
+  padding: 0.75rem 0;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.work-meta p {
+  margin: 0.2rem 0;
+}
+
+.work-meta .citekey {
+  font-family: var(--mono);
+}
+
+.work-meta .work-title {
+  color: var(--fg);
+}
+
+.work-links a {
+  margin-right: 0.75rem;
+  font-family: var(--mono);
+}
+
+.kind {
+  margin-left: 0.5rem;
+  color: var(--muted);
+  font-family: var(--sans);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.author {
+  display: block;
+  color: var(--muted);
+  font-family: var(--sans);
+  font-size: 0.8rem;
+}
+
+.work-list li {
+  margin-bottom: 0.75rem;
+}
+
+/* Backlinks — end-of-page apparatus */
+
+.backlinks {
+  margin-top: 3.5rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--rule);
+  font-family: var(--sans);
+}
+
+.backlinks h2 {
+  margin: 0 0 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.backlinks ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0.9rem;
+}
+
+.backlinks li {
+  margin: 0.35rem 0;
+}
+
+/* Footer */
+
+.site-footer {
+  margin-top: 4rem;
+  padding: 1.25rem 0 2rem;
+  border-top: 1px solid var(--rule);
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.site-footer a {
+  color: inherit;
+}

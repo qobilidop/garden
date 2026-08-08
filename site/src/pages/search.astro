@@ -1,0 +1,27 @@
+---
+import Base from '../layouts/Base.astro'
+---
+
+<Base title="search">
+  <h1>Search</h1>
+  <div id="search" data-pagefind-ignore></div>
+  <script>
+    // Pagefind's index and UI exist only in the production build output.
+    const base = import.meta.env.BASE_URL.replace(/\/$/, '')
+    const css = document.createElement('link')
+    css.rel = 'stylesheet'
+    css.href = `${base}/pagefind/pagefind-ui.css`
+    document.head.append(css)
+    const script = document.createElement('script')
+    script.src = `${base}/pagefind/pagefind-ui.js`
+    script.onload = () => {
+      // @ts-expect-error PagefindUI is provided by the loaded script
+      new PagefindUI({ element: '#search', showSubResults: true })
+    }
+    script.onerror = () => {
+      const el = document.getElementById('search')
+      if (el) el.textContent = 'Search is available on the deployed site only.'
+    }
+    document.head.append(script)
+  </script>
+</Base>

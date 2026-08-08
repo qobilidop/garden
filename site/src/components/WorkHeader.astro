@@ -1,0 +1,43 @@
+---
+import type { CollectionEntry } from 'astro:content'
+import { workOf, fieldOf, shelfOf } from '../lib/works'
+
+interface Props {
+  entry: CollectionEntry<'library'>
+}
+
+const { entry } = Astro.props
+const work = workOf(entry)
+const shelf = shelfOf(entry)
+const notesBy = fieldOf(entry, 'notes-by')
+const retrieved = fieldOf(entry, 'retrieved')
+const doi = work.doi?.split(/\s/, 1)[0]
+const arxiv = work.arxiv?.split(/\s/, 1)[0]?.replace(/v\d+$/, '')
+---
+
+<header class="work-meta" data-pagefind-ignore>
+  <p class="citekey">
+    {entry.id}
+    {shelf && <span class="kind">{shelf.kind === 'papers' ? 'paper' : 'post'}</span>}
+  </p>
+  {work.title && <p class="work-title">{work.title}</p>}
+  {work.author && <p>{work.author}</p>}
+  {
+    (work.venue || work.date) && (
+      <p>{[work.venue, work.date].filter(Boolean).join(' · ')}</p>
+    )
+  }
+  <p class="work-links">
+    {doi && <a href={`https://doi.org/${doi}`}>doi:{doi}</a>}
+    {arxiv && <a href={`https://arxiv.org/abs/${arxiv}`}>arXiv:{arxiv}</a>}
+  </p>
+  {
+    (notesBy || retrieved) && (
+      <p class="notes-attribution">
+        {[notesBy && `notes by ${notesBy}`, retrieved && `retrieved ${retrieved}`]
+          .filter(Boolean)
+          .join(' · ')}
+      </p>
+    )
+  }
+</header>
