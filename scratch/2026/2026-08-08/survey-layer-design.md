@@ -115,6 +115,27 @@ survey: completion requires zero promotions, protecting survey
 velocity from library rigor. The G1 population is the queue;
 directories are evidence of work, intentions are queue lines.
 
+Speed profile (measured on the 4-paper methodology batch, 2026-08-08,
+~5.3 min/paper): source hunting and archive-record polling dominated
+tool time; synthesis writing dominated model time. Consequences:
+
+- OA resolvers first (Unpaywall/OpenAlex; now in ingest-paper §1) —
+  one call replaces the publisher-mirror tour, and confirmed-closed
+  is a real answer.
+- Archiving is asynchronous (now in ingest-paper §4): SPN once,
+  deviation comment as the queue, retry on next touch — never poll
+  within a session.
+- G1 work fans out: per-paper resolve → capture → transcribe →
+  evidence-note pipelines are independent (disjoint paths, no
+  worktree isolation needed) and parallelize across subagents,
+  proactively — with model tier matched to the stage (mechanical
+  fetch/verify cheap, per-work notes mid-tier, cross-work synthesis
+  strongest); serial by nature are cross-work synthesis, wiki
+  writeback, store push/manifest, and commits.
+- Discussions sweeps are not on the survey path: ingest-paper never
+  had one (only ingest-post does, where reception is part of a
+  web-native work's record); survey-scale ingestion stays sweep-free.
+
 ## Deliverable toolchain
 
 - **Bibliography generated from the library**: a `tools/` script emits

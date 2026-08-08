@@ -19,6 +19,15 @@ rclone `store:` remote; `./dev.sh <cmd>` provides the pinned toolchain
 - Find the version-of-record. An arXiv paper may have been published at a
   venue: the latest arXiv revision is often the camera-ready (check the PDF's
   own header). Record both identities when so.
+- Locate the PDF via the OA resolvers before hand-probing hosts: Unpaywall
+  (`api.unpaywall.org/v2/<doi>?email=<contact>`) returns the best legal
+  open-access location or confirms there is none; OpenAlex
+  (`api.openalex.org/works/doi:<doi>`, `best_oa_location`) is the
+  cross-check. One call replaces the publisher-mirror tour, and a
+  confirmed-closed answer is a real result — fall back to the Wayback
+  ladder or record a queue item instead of probing on. (Learned
+  2026-08-08: PRISMA/Petersen hunting cost ~6 min that Unpaywall answers
+  in seconds.)
 - Download only from immutable URLs: pin the arXiv version
   (`arxiv.org/pdf/<id>v<N>`, never the bare `/pdf/<id>` pointer). Verify the
   download is the right work by opening it, not by filename.
@@ -116,6 +125,13 @@ Archive fallbacks, in order, when SPN won't cooperate (523/429 overload,
 
 Never record an `archived:` URL that wasn't verified against the
 artifact.
+
+Archiving is asynchronous by design: when no verified record exists,
+trigger SPN once, write the deviation comment (`# archived: none yet —
+SPN triggered <date>; retry on next touch`), and move on — SPN indexing
+lags sessions, so re-polling within one buys nothing (three rechecks on
+2026-08-08 cost ~4 min and still ended unarchived). The comment is the
+queue; any later touch of the entry retries the verification.
 
 ## 5. Synthesis notes
 
