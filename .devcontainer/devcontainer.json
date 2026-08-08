@@ -1,0 +1,6 @@
+{
+  "name": "sys0",
+  "build": {
+    "dockerfile": "Dockerfile"
+  }
+}
