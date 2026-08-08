@@ -15,4 +15,7 @@
   empty directories); in zsh one-liners, quote bare `=`-prefixed words and
   any glob that may not match — an unmatched glob aborts the whole command;
   never rely on a `cd` persisting from earlier in a compound command or a
-  previous call — invoke repo tools by absolute path.
+  previous call — invoke repo tools by absolute path; `$?` after a
+  pipeline is the last command's exit, not the interesting one's — check
+  `pipestatus` (zsh) / `PIPESTATUS` (bash), or don't pipe the command
+  whose exit code gates a decision.

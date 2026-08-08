@@ -18,7 +18,10 @@ rclone `store:` remote; `./dev.sh <cmd>` provides the pinned toolchain
   trust memory for bibliographic facts.
 - Find the version-of-record. An arXiv paper may have been published at a
   venue: the latest arXiv revision is often the camera-ready (check the PDF's
-  own header). Record both identities when so.
+  own header). Record both identities when so. Co-published works (common
+  for medical statements — PRISMA appeared in five journals at once): one
+  entry, the most-cited DOI primary, capture whichever co-publication is
+  accessible, and comment the mapping in frontmatter.
 - Locate the PDF via the OA resolvers before hand-probing hosts: Unpaywall
   (`api.unpaywall.org/v2/<doi>?email=<contact>`) returns the best legal
   open-access location or confirms there is none; OpenAlex
