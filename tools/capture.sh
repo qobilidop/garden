@@ -72,12 +72,18 @@ trap 'rm -rf "$TMP"' EXIT
 
 check_and_verify() {  # sets ARCHIVED, TS, VERIFIED, FRESH
   ARCHIVED= TS= VERIFIED=none FRESH=false
-  curl -sS --max-time 30 "https://archive.org/wayback/available?url=$URL" -o "$TMP/avail.json" || return
+  curl -sS --max-time 30 "https://archive.org/wayback/available?url=$URL" -o "$TMP/avail.json" || true
   read -r ARCHIVED TS < <(python3 -c "
 import json,sys
 try: s=json.load(open('$TMP/avail.json'))['archived_snapshots']['closest']
 except Exception: sys.exit(0)
 if s.get('available'): print(s['url'].replace('http://','https://'), s['timestamp'])" ) || true
+  if [ -z "${ARCHIVED:-}" ]; then
+    # availability API false-negatives under load; CDX is the reliable index
+    echo "availability empty; querying CDX" >&2
+    TS=$(curl -sS --max-time 45 "https://web.archive.org/cdx/search/cdx?url=$URL&output=text&fl=timestamp,statuscode&filter=statuscode:200&limit=25" | awk 'END{print $1}')
+    [ -n "${TS:-}" ] && ARCHIVED="https://web.archive.org/web/$TS/$URL"
+  fi
   [ -n "${ARCHIVED:-}" ] || return
   [ "${TS:0:8}" -ge "$(echo "$RETRIEVED" | tr -d -)" ] 2>/dev/null && FRESH=true
   local idurl="https://web.archive.org/web/${TS}id_/$URL"

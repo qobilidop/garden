@@ -70,8 +70,10 @@ whole.
   summarize it to booleans.
 - Wayback's availability API returned false negatives twice (DSP,
   polu2020) while CDX had the records; SPN accepted repeatedly
-  without materializing snapshots. Staged capture.sh improvement:
-  query CDX as fallback when availability returns empty.
+  without materializing snapshots. ~~Staged capture.sh improvement~~ —
+  resolved by the second /evolve: CDX fallback implemented and tested
+  (polu2020 verifies end-to-end; hubert exercises the empty path and
+  exits 2).
 - Nature stamps every PDF download, so live fetches are never
   byte-identical to any archive record; resolved by adopting the
   verified Wayback record itself as the stored blob (AlphaGeometry).
@@ -94,12 +96,30 @@ stale — now Pakeles); oppx memory cited pre-rename `scratchpad/` paths
 (now `scratch/`, verified); prefer-minimal-prose scoped itself to the
 renamed `garden` repo.
 
+## Second retrospective (same day, after the wiki layer and the batches)
+
+Applied: evidence-before-assertion pattern 4 generalized from
+"subagent reports" to "persisted values are copied from primary
+output" (three same-day instances of the one mechanism: Haiku
+attribution, fabricated timestamp, 19-vs-21 miscount); capture.sh CDX
+fallback (tested both paths); ingest-paper batch-JSON clause and
+ladder rule 3 extended to stamping origins (adopt the id_ record as
+the blob — used for AlphaGeometry, Alon, and the wang2023 precedent);
+memory drift fixes (survey draft's scratchpad/garden path, sys-
+personal-system's stale "pending" list marked historical). Promoted
+same-turn as user feedback, outside the retrospective: the
+figure-viewing rule and the labeled-bullet assessment format, both in
+ingest-paper. No rejections this round.
+
 ## Staged, not promoted
 
 - GitHub's REST gists endpoint returns `{"message": "Server Error"}`
   for high-fork gists while raw and clone paths work (one occurrence,
   karpathy run). Promote into ingest-post if a second versioned-source
   ingestion hits it.
+- Batch-ingestion shape that worked once (five papers): run the
+  mechanical tier for all works first (resolve → capture → transcribe),
+  then synthesize each. Promote into ingest-paper on the next batch.
 - Gist comment sections as a discussions venue: present on the
   captured page but uncounted this run; decide handling when a gist
   with substantial comments arrives.

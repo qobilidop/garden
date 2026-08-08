@@ -93,8 +93,10 @@ snapshot suffices. Mutable pages (HTML): the snapshot must be no older than
 `retrieved`, else trigger `https://web.archive.org/save/<url>`.
 
 `tools/capture.sh --blob|--page <url> <dest>` runs the mechanical tier —
-fetch, availability, gzip-aware `id_` verification, SPN trigger — and
-reports JSON (exit 2 = no verified record; fall back manually).
+fetch, availability (CDX fallback), gzip-aware `id_` verification, SPN
+trigger — and reports JSON (exit 2 = no verified record; fall back
+manually). In batch runs, persist each capture's JSON verbatim — never
+reduce it to booleans; `archived:` URLs are copied from it.
 
 Archive fallbacks, in order, when SPN won't cooperate (523/429 overload,
 302s that never materialize):
@@ -105,9 +107,11 @@ Archive fallbacks, in order, when SPN won't cooperate (523/429 overload,
 2. For a versioned arXiv URL with no snapshot of its own: a bare-pointer
    snapshot captured while it served that version, verified
    sha256-identical to the download, recorded with a frontmatter comment.
-3. When the publisher gates the version-of-record itself (OpenReview
-   challenge pages block curl and WebFetch): fetch the blob from a
-   Wayback `id_` record.
+3. When the publisher gates the version-of-record (OpenReview challenge
+   pages block curl and WebFetch; Cell bot-blocks non-browser clients)
+   or stamps each download so live fetches are never byte-identical
+   (Nature): fetch the verified Wayback `id_` record and store *it* as
+   the blob — archive and blob identical by construction.
 
 Never record an `archived:` URL that wasn't verified against the
 artifact.
