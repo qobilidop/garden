@@ -25,6 +25,31 @@ accumulate reusable library and wiki assets.
 
 Depth follows from scope; "shallow vs deep" is not the cut.
 
+Genre note: the wiki is the living narrative-review layer, surveys are
+the systematic layer (systematic review / mapping study tradition —
+protocol, audited search, evidence tables), the library the shared
+evidence base under both. Each survey names its genre explicitly.
+The methodology canon is ingested (2026-08-08: kitchenham2007,
+petersen2008, wohlin2014, page2021) and distilled in
+wiki/survey-methodology.md; the survey skill grounds in it.
+
+## The wiki/survey boundary
+
+Evidence basis, not subject or depth: **the wiki speaks only for its
+shelf; a survey speaks for the literature** relative to a documented
+search. Completeness and negative-existence claims ("no prior work
+does X") are survey-only — they are meaningless without a search
+record. A wiki page may grow arbitrarily deep without becoming a
+survey; when a topic demands literature-completeness, that is the
+trigger to run one. Pages never convert.
+
+The boundary is machine-enforced by scoping citekey resolution: inside
+`surveys/`, `[[citekey]]` falls back library → survey source notes
+(G1 citable); in `wiki/` and `library/`, citekeys must resolve in the
+library — citing a G1 work from the wiki is a lint error, which forces
+the "wiki page needs it" promotion trigger instead of relying on
+convention.
+
 ## Settled decisions
 
 1. **Human-triggered only.** A survey starts when Bili decides, after
@@ -40,6 +65,9 @@ Depth follows from scope; "shallow vs deep" is not the cut.
    resource is maintenance, so freshness registries (recurring-search
    + refresh cadence, per the dataflow repo's decision 0004) are
    opt-in per survey, and a survey may close honorably instead.
+   Refresh leans on citation chasing over re-querying: new relevant
+   work almost certainly cites the survey's included papers or the
+   survey itself (wohlin2014's extension deduction).
 3. **Wiki owns topic material.** Whatever fits a wiki entry goes to
    the wiki, written back continuously during the survey (same
    discipline as ingestion writebacks). Survey syntheses keep only the
@@ -50,7 +78,10 @@ Depth follows from scope; "shallow vs deep" is not the cut.
    Claude/Codex configs allow genuinely different model families), a
    computed disagreement rate, and a human review gate before
    deposition — deposition is the release-scale analog of the
-   human-gated commit.
+   human-gated commit. The classical instruments transfer directly
+   (kitchenham2007): Cohen's kappa for dual passes, test–retest on a
+   random sample for the single-reviewer case (an agent re-pass),
+   sensitivity analysis for claims resting on disputed extractions.
 5. **Tools promoted now, scaffolding later.** The screening scripts
    (arXiv/Crossref/OpenAlex/Semantic Scholar) and the consistency
    invariant (catalog, source notes, syntheses, claims, evidence rows,
@@ -74,9 +105,10 @@ Depth follows from scope; "shallow vs deep" is not the cut.
   writeback — the expensive, reusable-value delta, and the only part
   that queues.
 
-`[[citekey]]` resolution falls back library-first, then survey source
-notes: the lint stays strict, G1 works are citable immediately, and
-promotion silently upgrades the link target. Promotion is
+Inside `surveys/`, `[[citekey]]` resolution falls back library-first,
+then survey source notes: the lint stays strict, G1 works are citable
+immediately, and promotion silently upgrades the link target (the
+fallback is scoped to `surveys/` — see the boundary section). Promotion is
 demand-driven — a second survey touches the work ("promote on second
 touch"), a wiki page needs it, or Bili asks. Never inline during a
 survey: completion requires zero promotions, protecting survey
@@ -101,6 +133,13 @@ directories are evidence of work, intentions are queue lines.
 
 ## Citability and authorship
 
+- **The deposition gate answers PRISMA 2020** (page2021): full
+  search strategies from the audited logs, near-miss exclusions with
+  reasons from the disposition-coded catalog (item 16b), agent-pass
+  counts/independence/automation details (items 8–9), data and code
+  availability by construction (item 27). Genre caveat: for a pure
+  mapping study the synthesis items relax (petersen2008), but the
+  transparency items never do.
 - **Zenodo deposition per survey** via the REST API (the GitHub
   integration is release-scoped whole-repo zips — wrong granularity in
   any architecture). A `tools/` packaging script archives
@@ -132,4 +171,9 @@ directories are evidence of work, intentions are queue lines.
 - Manuscript `@citation` parsing into the backlink graph.
 - Deposition script details: DataCite metadata template, what the
   archive vendors (cited library notes vs commit-SHA reference).
-- A workable inter-rater disagreement metric for agent passes.
+- Adapting Cohen's kappa to agent passes: what counts as an
+  independent rater when passes share a model family, and what
+  agreement threshold gates promotion of an extraction.
+- Petersen's 2015 update (closed access) stays a queue item; the
+  citation-matrix and iteration-decay diagnostics (wohlin2014) are
+  tooling candidates for the screening scripts.
