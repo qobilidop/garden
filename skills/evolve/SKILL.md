@@ -38,8 +38,9 @@ not one).
 
 ## 3. Route each lesson to its locus
 
-- **Skill** (`skills/<name>/`, symlinked from `.claude/skills/`): a
-  procedure that will be repeated. Name it by purpose, for retrieval.
+- **Skill** (`skills/<name>/`, symlinked from both `.claude/skills/` and
+  `.agents/skills/`): a procedure that will be repeated. Name it by
+  purpose, for retrieval.
 - **Rule**: a standing constraint on behavior. Project-scoped →
   `AGENTS.md` here; global → the mirrored configs for *both* agents
   (`config/claude/user-CLAUDE.md`, `config/codex/user-AGENTS.md`),
