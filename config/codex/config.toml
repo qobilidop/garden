@@ -1,0 +1,19 @@
+# Durable user preferences managed by sys0. sync.py merges only these keys into
+# the live config and preserves all other Codex- and machine-managed state.
+
+approvals_reviewer = "user"
+model = "gpt-5.6-sol"
+model_reasoning_effort = "xhigh"
+service_tier = "default"
+
+[tui]
+status_line = ["model-with-reasoning", "current-dir", "git-branch", "permissions", "context-used"]
+
+# OpenAI-managed plugin marketplaces remain outside this overlay.
+
+[features]
+js_repl = false
+
+[desktop]
+conversationDetailMode = "STEPS_COMMANDS"
+ambient-suggestions-enabled = false
