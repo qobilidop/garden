@@ -74,3 +74,8 @@ unmeasured — the exact gap claim 11 names in the literature); English
 sources only; 12 U-rows unresolved. Living maintenance: NOT registered
 (closed baseline; revival criteria = skill v1 extraction or a v2
 cross-vendor campaign).
+
+Erratum (2026-08-08, post-freeze): a duplicate audit found ~22
+duplicate-title groups (~26 excess rows, ~3.9%) among the 672 includes
+— preprint↔published and versioned pairs the key normalization missed.
+Counts above are as-frozen, not recomputed; see decisions/0008.
