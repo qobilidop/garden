@@ -84,25 +84,29 @@ adaptation the introduction makes.
 
 ## Assessment
 
-Two methodological soft spots, neither acknowledged as such. First, the
-held-out split is not a test set: it gates *every* promotion round, so
-the final harness has been selected against it repeatedly, and the
-headline "held-out" gains carry selection bias — a true untouched split
-would be needed to measure generalization cleanly. Second, the initial
-harness is a deliberate floor (a few sentences of prompt plus bare
-tools), so the large relative gains (+138% for Qwen) substantially
-measure rediscovery of standard harness furniture — loop breakers,
-artifact checks — that mature harnesses ship with; there is no comparison
-against a well-engineered baseline. n=64 tasks with two attempts per
-candidate also makes individual accept decisions noisy, only partly
-mitigated by the non-regression rule. What survives these caveats: the
-loop architecture itself (evidence before proposal, addressability
-filtering, bounded surfaces, conservative gating, audit records, logged
-rejections), the different-models-need-different-harnesses result, and
-the closing warning that pass-rate non-regression is too weak a gate for
-higher-stakes harness changes. This answers the abstraction-boundary
-concern weng2026-harness raised — surfaces here are explicitly fenced —
-and for a human-gated personal system the transferable pattern is the
-evidence discipline: mine weaknesses from real traces, propose minimal
-itemized edits tied to specific failures, and treat human review as the
-regression gate the paper says pass-rates alone cannot provide.
+- **Weaknesses (two methodological soft spots, neither acknowledged as
+  such):** the held-out split is not a test set — it gates *every*
+  promotion round, so the final harness has been selected against it
+  repeatedly and the headline "held-out" gains carry selection bias (a
+  true untouched split would be needed to measure generalization
+  cleanly); and the initial harness is a deliberate floor (a few
+  sentences of prompt plus bare tools), so the large relative gains
+  (+138% for Qwen) substantially measure rediscovery of standard
+  harness furniture — loop breakers, artifact checks — that mature
+  harnesses ship with, with no comparison against a well-engineered
+  baseline. n=64 tasks with two attempts per candidate also makes
+  individual accept decisions noisy, only partly mitigated by the
+  non-regression rule.
+- **Durable (what survives these caveats):** the loop architecture
+  itself (evidence before proposal, addressability filtering, bounded
+  surfaces, conservative gating, audit records, logged rejections), the
+  different-models-need-different-harnesses result, and the closing
+  warning that pass-rate non-regression is too weak a gate for
+  higher-stakes harness changes.
+- **In this library:** this answers the abstraction-boundary concern
+  weng2026-harness raised — surfaces here are explicitly fenced — and
+  for a human-gated personal system the transferable pattern is the
+  evidence discipline: mine weaknesses from real traces, propose
+  minimal itemized edits tied to specific failures, and treat human
+  review as the regression gate the paper says pass-rates alone cannot
+  provide.

@@ -75,14 +75,19 @@ experts for new and verified kernels.
 
 A model postmortem: specific mechanics, named credits, a one-hour fix, no
 defensiveness, and an explicit architectural argument instead of a
-feel-good process fix. For this library it is the direct counterweight to
-openai2026-ten-advances-in-mathematics, whose evidentiary story leans on
-Lean certificates neutralizing skepticism of corporate math claims — this
-incident quantifies the residual risk behind that move (kernel
-implementation bugs exist) and shows why the layered answer (independent
-checkers kept current, eventually verified kernels) is what actually
-carries the trust. Durable: the two-independent-bugs arithmetic of
-defense in depth, and the untrusted-elaborator principle. Era-bound: the
-specific PR inventory. The Breitner hypothesis — models strong enough to
-find soundness bugs change the threat model for proof infrastructure —
-is the sentence most worth remembering.
+feel-good process fix.
+
+- **Durable:** the two-independent-bugs arithmetic of defense in depth,
+  and the untrusted-elaborator principle.
+- **Era-bound:** the specific PR inventory.
+- **In this library:** the direct counterweight to
+  openai2026-ten-advances-in-mathematics, whose evidentiary story leans
+  on Lean certificates neutralizing skepticism of corporate math claims
+  — this incident quantifies the residual risk behind that move (kernel
+  implementation bugs exist) and shows why the layered answer
+  (independent checkers kept current, eventually verified kernels) is
+  what actually carries the trust.
+
+The Breitner hypothesis — models strong enough to find soundness bugs
+change the threat model for proof infrastructure — is the sentence most
+worth remembering.

@@ -91,22 +91,26 @@ nothing from a large playbook.
 
 ## Assessment
 
-Durable: the two named failure modes (brevity bias, context collapse) as
-vocabulary; the design rule that LLMs propose but deterministic code
-merges; itemized context with provenance counters as the unit of memory;
-the ablation evidence that incremental-vs-monolithic is where the value
-is; feedback quality as the binding constraint on any self-updating
-context. Era-bound: the specific numbers and leaderboard placements, the
-KV-cache economics argument (true today, framed as a trend), and the
-system roster. Weaknesses: gains are demonstrated where dense reusable
-domain structure exists — two finance benchmarks plus one agent suite is
-a narrow base for the "comprehensive playbooks beat concise prompts"
-generalization, and the paper itself shows the counter-regime; a citation
-slip survives to camera-ready (Dynamic Cheatsheet attributed to "Krause
-et al., 2019" in §2.1, correctly Suzgun et al. 2025 elsewhere). For a
-harness that persists memory and rules across sessions (this repo
-included), this is the direct blueprint: itemized entries over blob
-rewrites, deterministic merges, dedup-and-prune hygiene, helpful/harmful
-provenance, and no self-update without a reliable feedback signal —
-convergent with the safety architecture gao2025-a-survey-of-self-evolving-
-agents reaches from the risk side.
+- **Durable:** the two named failure modes (brevity bias, context
+  collapse) as vocabulary; the design rule that LLMs propose but
+  deterministic code merges; itemized context with provenance counters
+  as the unit of memory; the ablation evidence that
+  incremental-vs-monolithic is where the value is; feedback quality as
+  the binding constraint on any self-updating context.
+- **Era-bound:** the specific numbers and leaderboard placements, the
+  KV-cache economics argument (true today, framed as a trend), and the
+  system roster.
+- **Weaknesses:** gains are demonstrated where dense reusable domain
+  structure exists — two finance benchmarks plus one agent suite is a
+  narrow base for the "comprehensive playbooks beat concise prompts"
+  generalization, and the paper itself shows the counter-regime; a
+  citation slip survives to camera-ready (Dynamic Cheatsheet attributed
+  to "Krause et al., 2019" in §2.1, correctly Suzgun et al. 2025
+  elsewhere).
+- **In this library:** for a harness that persists memory and rules
+  across sessions (this repo included), this is the direct blueprint:
+  itemized entries over blob rewrites, deterministic merges,
+  dedup-and-prune hygiene, helpful/harmful provenance, and no
+  self-update without a reliable feedback signal — convergent with the
+  safety architecture gao2025-a-survey-of-self-evolving-agents reaches
+  from the risk side.

@@ -97,13 +97,17 @@ and moves on, this is a researcher's deep map of exactly that level, with
 editorial judgments a survey usually omits (SIA's evidence rated
 "provisional" over confounded baselines; Self-Harness flagged for broken
 abstraction boundaries if the editable surface isn't fenced; the
-distillation-not-RSI critique of Autodata). It converges from the
-practitioner side on the same architecture gao2025's safety chapter
-reaches from the risk side: evaluation and permissions must live outside
-the self-modification loop. Durable: the optimization-target progression,
-the updating-vs-benefit distinction, the challenges catalog, and the
-prediction that harness functions internalize into models while
-interfaces persist. Era-bound: the specific system roster, already dense
-with 2026 arXiv preprints. Notably self-describing: the design patterns
-it catalogs — file-system memory, spawned sub-agents, skills — are the
-harness this library's own ingestion sessions run on.
+distillation-not-RSI critique of Autodata).
+
+- **Durable:** the optimization-target progression, the
+  updating-vs-benefit distinction, the challenges catalog, and the
+  prediction that harness functions internalize into models while
+  interfaces persist.
+- **Era-bound:** the specific system roster, already dense with 2026
+  arXiv preprints.
+- **In this library:** it converges from the practitioner side on the
+  same architecture gao2025's safety chapter reaches from the risk
+  side — evaluation and permissions must live outside the
+  self-modification loop. Notably self-describing: the design patterns
+  it catalogs — file-system memory, spawned sub-agents, skills — are
+  the harness this library's own ingestion sessions run on.

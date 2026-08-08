@@ -86,15 +86,17 @@ for long-horizon drift, approval gates on high-stakes actions.
 
 As a map, it works: the taxonomy is orthogonal enough to place any given
 system, the formalism gives the field shared notation, and the evaluation
-and safety chapters are genuine contributions rather than appendices. Its
-weaknesses are the genre's: leaf-level coverage is a citation flood already
-aging at press time, and the ASI framing in the title writes a check the
-content never cashes (the conclusion quietly retreats to "adaptive,
-trustworthy, aligned"). The durable pieces are the operational definition's
-three criteria, the intra/inter-test-time distinction, the episodic-reset
-critique of benchmarks, and the safety checklist — all of which apply
-directly to any system that persists memory or skills across sessions,
-including the personal-infrastructure kind: experience-dependent,
-persistent, self-initiated updates are exactly what a memory-carrying
-coding agent does, and the memory-poisoning and drift risks transfer
-as-is.
+and safety chapters are genuine contributions rather than appendices.
+
+- **Durable:** the operational definition's three criteria, the
+  intra/inter-test-time distinction, the episodic-reset critique of
+  benchmarks, and the safety checklist.
+- **Weaknesses (the genre's):** leaf-level coverage is a citation flood
+  already aging at press time, and the ASI framing in the title writes
+  a check the content never cashes (the conclusion quietly retreats to
+  "adaptive, trustworthy, aligned").
+- **In this library:** the durable pieces apply directly to any system
+  that persists memory or skills across sessions, including the
+  personal-infrastructure kind: experience-dependent, persistent,
+  self-initiated updates are exactly what a memory-carrying coding
+  agent does, and the memory-poisoning and drift risks transfer as-is.

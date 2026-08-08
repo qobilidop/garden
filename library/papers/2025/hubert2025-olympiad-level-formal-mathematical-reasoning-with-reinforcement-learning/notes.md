@@ -76,25 +76,28 @@ being consciously operated here.
 
 ## Assessment
 
-Durable: verifier-grounded RL at scale as the experience-based
-pillar of AI4Math (versus the human-corpus pillar of
-[[polu2020-generative-language-modeling-for-automated-theorem-proving]],
-which it cites as the origin of the line, and the informal-guided
-pillar of [[jiang2022-draft-sketch-and-prove]]); TTRL; the
-fidelity-agnostic curriculum; the minimum-return objective over
-AND-subgoals (incentivizing balanced decompositions — a small design
-gem). Era-bound: every compute figure, and the headline itself —
-Gemini Deep Think reached gold within a year (the paper's own
-timing: received June 2025, eleven months after the result it
-reports). Honest limitations, stated by the authors: multi-day
-inference against humans' 4.5 hours; a scale "likely beyond most
-academic groups"; combinatorics unsolved (P3/P5 — and formal-imo
-combinatorics at 20.3% vs ~73–76% for algebra/NT, the same
-domain gap [[jiang2026-from-solvers-to-research]]'s tables show
-field-wide); and the closing admission that competition math has a
-fixed concept library, while research mathematics requires theory
-building — the exact boundary the solvers-to-researchers survey
-draws. In [[liu2026-a-taxonomy-of-self-evolving-agents]]'s terms,
-the loop here closes on competition benchmarks with perfect
-verification; what lies beyond it is conjecture generation, which is
-[[novikov2025-alphaevolve]]'s territory.
+- **Durable:** verifier-grounded RL at scale as the experience-based
+  pillar of AI4Math (versus the human-corpus pillar of
+  [[polu2020-generative-language-modeling-for-automated-theorem-proving]],
+  which it cites as the origin of the line, and the informal-guided
+  pillar of [[jiang2022-draft-sketch-and-prove]]); TTRL; the
+  fidelity-agnostic curriculum; the minimum-return objective over
+  AND-subgoals (incentivizing balanced decompositions — a small design
+  gem).
+- **Era-bound:** every compute figure, and the headline itself —
+  Gemini Deep Think reached gold within a year (the paper's own
+  timing: received June 2025, eleven months after the result it
+  reports).
+- **Limitations (stated by the authors):** multi-day inference against
+  humans' 4.5 hours; a scale "likely beyond most academic groups";
+  combinatorics unsolved (P3/P5 — and formal-imo combinatorics at
+  20.3% vs ~73–76% for algebra/NT, the same domain gap
+  [[jiang2026-from-solvers-to-research]]'s tables show field-wide);
+  and the closing admission that competition math has a fixed concept
+  library, while research mathematics requires theory building — the
+  exact boundary the solvers-to-researchers survey draws.
+- **In this library:** in
+  [[liu2026-a-taxonomy-of-self-evolving-agents]]'s terms, the loop
+  here closes on competition benchmarks with perfect verification;
+  what lies beyond it is conjecture generation, which is
+  [[novikov2025-alphaevolve]]'s territory.

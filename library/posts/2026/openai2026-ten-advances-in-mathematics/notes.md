@@ -76,12 +76,16 @@ mathematics is exhibited, so the post's evidentiary weight rests entirely
 on the linked paper and the Lean certificates — the latter being the
 load-bearing move, since machine-checked proofs neutralize the usual
 skepticism about corporate research claims (modulo checking that the
-formal statements match the informal ones). Durable: the workflow shape
-(model-generated arguments → human-assisted manuscripts → Lean
-formalization → released reasoning traces) and the attribution stance,
-which is an early, explicit position in a live dispute. Era-bound:
-model/pricing specifics and the access-initiative framing. In
-liu2026-a-taxonomy-of-self-evolving-agents terms (this library), this is
-the loop closing on science rather than benchmarks. If the mathematical
-content becomes relevant, the paper itself is the thing to ingest as a
-papers/ entry; this entry records the announcement.
+formal statements match the informal ones).
+
+- **Durable:** the workflow shape (model-generated arguments →
+  human-assisted manuscripts → Lean formalization → released reasoning
+  traces) and the attribution stance, which is an early, explicit
+  position in a live dispute.
+- **Era-bound:** model/pricing specifics and the access-initiative
+  framing.
+- **In this library:** in liu2026-a-taxonomy-of-self-evolving-agents
+  terms, this is the loop closing on science rather than benchmarks. If
+  the mathematical content becomes relevant, the paper itself is the
+  thing to ingest as a papers/ entry; this entry records the
+  announcement.

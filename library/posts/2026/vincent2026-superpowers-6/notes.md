@@ -67,13 +67,18 @@ by a regression eval suite outside the loop
 (zhang2026-self-harness's protocol at commercial scale), negative
 results and closed leads logged (the literature-bias fix
 weng2026-harness calls for), and pre-registered predictions against the
-"p-hacking and eureka-ing" failure mode. The Codex-isolation incident
-adds a lesson the papers understate: the evaluator is code too, and an
-unverified gate passes everything. Caveats: all numbers are
-self-reported on the project's own young eval suite; the post has a
-recruiting and product stake; and the note-writer is the model the post
-credits, which readers should weigh. Era-bound: model roster and
-prices. For the evolve skill, rung (1)–(3) is a useful maturity map —
-this repo's loop is at rung one by design, with the human as the gate;
-what the post argues is that each further rung is earned by building
-the eval infrastructure first, not by trusting the proposer more.
+"p-hacking and eureka-ing" failure mode.
+
+- **Durable:** the Codex-isolation incident's lesson, which the papers
+  understate — the evaluator is code too, and an unverified gate passes
+  everything.
+- **Era-bound:** model roster and prices.
+- **Caveats:** all numbers are self-reported on the project's own young
+  eval suite; the post has a recruiting and product stake; and the
+  note-writer is the model the post credits, which readers should
+  weigh.
+- **In this library:** for the evolve skill, rung (1)–(3) is a useful
+  maturity map — this repo's loop is at rung one by design, with the
+  human as the gate; what the post argues is that each further rung is
+  earned by building the eval infrastructure first, not by trusting the
+  proposer more.

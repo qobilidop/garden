@@ -65,12 +65,14 @@ gaming reviewers; it is the same economics from the other side.
 
 ## Assessment
 
-The durable core is the exit-decision structure — read-depth as an explicit
-resource allocation with checkpoints — and the re-implementation test for
-deep reading, which is method-independent. Era-bound: the survey mechanics
-(Google Scholar/CiteSeer keyword bootstrapping) date to 2007 and are now the
-most automatable step, though the shared-citation/key-people heuristic
-transfers intact to whatever does the searching. Fits this library directly:
-pass 1's five Cs are what a catalog entry should let you answer without
-opening the blob, and pass 3's "reconstruct from memory" is the honest bar
-for what a synthesis note ought to enable.
+- **Durable:** the exit-decision structure — read-depth as an explicit
+  resource allocation with checkpoints — and the re-implementation test
+  for deep reading, which is method-independent.
+- **Era-bound:** the survey mechanics (Google Scholar/CiteSeer keyword
+  bootstrapping) date to 2007 and are now the most automatable step,
+  though the shared-citation/key-people heuristic transfers intact to
+  whatever does the searching.
+- **In this library:** pass 1's five Cs are what a catalog entry should
+  let you answer without opening the blob, and pass 3's "reconstruct
+  from memory" is the honest bar for what a synthesis note ought to
+  enable.

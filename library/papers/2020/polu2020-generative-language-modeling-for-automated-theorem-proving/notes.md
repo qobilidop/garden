@@ -78,22 +78,24 @@ context evolution, observed here in weight space in 2020.
 
 ## Assessment
 
-Durable: the proofstep objective as the recipe (modern provers still
-train on serialized goal→tactic text); verifier-coupled search;
-expert iteration; pretraining transfer; and the adoption bar — a
-contribution counts when the community merges it, the same
-verification-before-persistence standard [[wang2023-voyager]] later
-applied to skills. Era-bound: Metamath itself (the field moved to
-Lean for exactly the expressiveness reasons §3 lists), the parameter
-counts, and the search-economics (~1k V100-hours per evaluation).
-Never peer-reviewed, which given its influence is a comment on venue
-lag, not the work. Reading it after
-[[jiang2026-from-solvers-to-research]] is an exercise in
-recognition: pretraining data curation, RL from verifier feedback,
-synthetic data, iterative self-improvement — the 2026 taxonomy's
-whole training-strategies axis is present here in miniature. And the
-arc from this paper's 23 shortened Metamath proofs to
-[[openai2026-ten-advances-in-mathematics]]'s claimed frontier
-results is the same lab, six years apart — the modest, humanly
-verified beginning of the trajectory whose loudest claim the library
-now also holds.
+- **Durable:** the proofstep objective as the recipe (modern provers
+  still train on serialized goal→tactic text); verifier-coupled
+  search; expert iteration; pretraining transfer; and the adoption
+  bar — a contribution counts when the community merges it, the same
+  verification-before-persistence standard [[wang2023-voyager]] later
+  applied to skills.
+- **Era-bound:** Metamath itself (the field moved to Lean for exactly
+  the expressiveness reasons §3 lists), the parameter counts, and the
+  search economics (~1k V100-hours per evaluation).
+- **Caveats:** never peer-reviewed, which given its influence is a
+  comment on venue lag, not the work.
+- **In this library:** reading it after
+  [[jiang2026-from-solvers-to-research]] is an exercise in
+  recognition — pretraining data curation, RL from verifier feedback,
+  synthetic data, iterative self-improvement: the 2026 taxonomy's
+  whole training-strategies axis is present here in miniature. And the
+  arc from this paper's 23 shortened Metamath proofs to
+  [[openai2026-ten-advances-in-mathematics]]'s claimed frontier
+  results is the same lab, six years apart — the modest, humanly
+  verified beginning of the trajectory whose loudest claim the library
+  now also holds.

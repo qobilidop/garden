@@ -73,21 +73,25 @@ built but not yet wired in at posting time.
 ## Assessment
 
 First-person, informal, no benchmarks; the author is describing his own
-framework and says so. Some claims are demonstrations-by-anecdote (the
-book-mining workflow — "read this, write down what you learned" — is
-called foundational but shown only in outline), and the Cialdini framing
-invites over-reading. What has aged well, and what this post adds over
-the library's academic shelf: **every safeguard the papers formalize
-appears here in conversational form, discovered by iteration** —
-necessity pressure-testing is zhang2026-self-harness's addressability
-filter plus regression gate; the gameshow failure is the
-weak-evaluator trap weng2026-harness catalogs; subagent-isolated memory
-search is context hygiene ACE would call collapse-avoidance;
-verification-before-persistence is wang2023-voyager's critic gate. The
-2,249-memories null result is the post's most valuable datum for anyone
-building a distillation loop: most accumulated lessons are already
-absorbed by a working system, so an earned-lesson filter is not
-optional caution but the main mechanism. The remembering-conversations
-design later shipped as the episodic-memory plugin, and this library's
-evolve skill's stage-then-promote rule is this post's necessity test
-made explicit.
+framework and says so.
+
+- **Weaknesses:** some claims are demonstrations-by-anecdote (the
+  book-mining workflow — "read this, write down what you learned" — is
+  called foundational but shown only in outline), and the Cialdini
+  framing invites over-reading.
+- **Durable (what this post adds over the library's academic shelf):**
+  every safeguard the papers formalize appears here in conversational
+  form, discovered by iteration — necessity pressure-testing is
+  zhang2026-self-harness's addressability filter plus regression gate;
+  the gameshow failure is the weak-evaluator trap weng2026-harness
+  catalogs; subagent-isolated memory search is context hygiene ACE
+  would call collapse-avoidance; verification-before-persistence is
+  wang2023-voyager's critic gate. The 2,249-memories null result is
+  the post's most valuable datum for anyone building a distillation
+  loop: most accumulated lessons are already absorbed by a working
+  system, so an earned-lesson filter is not optional caution but the
+  main mechanism.
+- **In this library:** the remembering-conversations design later
+  shipped as the episodic-memory plugin, and this library's evolve
+  skill's stage-then-promote rule is this post's necessity test made
+  explicit.

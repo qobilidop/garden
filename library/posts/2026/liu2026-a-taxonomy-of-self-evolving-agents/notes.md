@@ -84,19 +84,23 @@ science, or the physical world.
 
 Category: informal position/organization piece, not a survey — the
 citation base is a few dozen exemplar systems, chosen for illustration.
-Read against gao2025-a-survey-of-self-evolving-agents (this library): the
-post's model/harness split is a coarsening of the survey's four "what
-evolves" loci (weights vs context+tools+architecture), and its third
-level maps onto the survey's population-based/evolutionary paradigm. The
-genuinely additive moves are (1) elevating the *artifact* to a
-first-class evolution locus, which cleanly separates
-agents-that-improve-outputs from agents-that-improve-themselves — a
-distinction the survey's agent-centric formalism handles awkwardly — and
-(2) the "where does the loop close" question, a sharper deployment-facing
-probe than the survey's when/how axes. Durable: the three-locus cut and
-the three questions, both cheap to apply to any concrete system.
-Era-bound: the specific system roster and the "skills are now de facto
-standard" observations; casual factual claims (FARS run costs, dates) are
-repeated from primary sources without verification. Honest about its own
-blur — the taxonomy is offered as a way
-to stop arguing about names, not as a formal partition.
+
+- **Durable:** the three-locus cut and the three questions, both cheap
+  to apply to any concrete system.
+- **Era-bound:** the specific system roster and the "skills are now de
+  facto standard" observations; casual factual claims (FARS run costs,
+  dates) are repeated from primary sources without verification.
+- **In this library:** read against
+  gao2025-a-survey-of-self-evolving-agents, the post's model/harness
+  split is a coarsening of the survey's four "what evolves" loci
+  (weights vs context+tools+architecture), and its third level maps
+  onto the survey's population-based/evolutionary paradigm. The
+  genuinely additive moves are (1) elevating the *artifact* to a
+  first-class evolution locus, which cleanly separates
+  agents-that-improve-outputs from agents-that-improve-themselves — a
+  distinction the survey's agent-centric formalism handles awkwardly —
+  and (2) the "where does the loop close" question, a sharper
+  deployment-facing probe than the survey's when/how axes.
+
+Honest about its own blur — the taxonomy is offered as a way to stop
+arguing about names, not as a formal partition.

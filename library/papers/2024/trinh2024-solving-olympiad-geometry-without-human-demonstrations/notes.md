@@ -66,23 +66,26 @@ search.
 
 ## Assessment
 
-Durable: the division of labor (neural proposes exogenous terms,
-symbolic closes deduction — the same split
-[[jiang2022-draft-sketch-and-prove]] found at the tactic level, here
-made architectural); synthetic-data-from-symbolic-exploration as the
-answer to data scarcity, one step more radical than
-[[polu2020-generative-language-modeling-for-automated-theorem-proving]]'s
-human-corpus training; traceback minimality as a generalization
-mechanism. Era-bound: the model and search scale, GPT-4 as the LLM
-baseline, and the result itself — AlphaGeometry2 reached gold-level
-geometry within a year (per [[jiang2026-from-solvers-to-research]],
-which defers geometry methods to an appendix precisely because the
-DSL makes them hard to generalize from). The honest boundary the
-paper states plainly: IMO-AG-30 is *translations* into a narrow
-domain-specific language covering 75% of IMO geometry — the
-specification layer is where the claim's scope lives, the same
-statement-fidelity boundary the ai4math shelf tracks everywhere
-else. The comparison to humans is "approximate" by the authors' own
-framing; what is not approximate is the machine-vs-machine ladder,
-and that ladder is the durable evidence that neural guidance plus
-symbolic exactness beats either alone.
+- **Durable:** the division of labor (neural proposes exogenous terms,
+  symbolic closes deduction — the same split
+  [[jiang2022-draft-sketch-and-prove]] found at the tactic level, here
+  made architectural); synthetic-data-from-symbolic-exploration as the
+  answer to data scarcity, one step more radical than
+  [[polu2020-generative-language-modeling-for-automated-theorem-proving]]'s
+  human-corpus training; traceback minimality as a generalization
+  mechanism.
+- **Era-bound:** the model and search scale, GPT-4 as the LLM
+  baseline, and the result itself — AlphaGeometry2 reached gold-level
+  geometry within a year (per [[jiang2026-from-solvers-to-research]],
+  which defers geometry methods to an appendix precisely because the
+  DSL makes them hard to generalize from).
+- **Caveats (stated plainly by the paper):** IMO-AG-30 is
+  *translations* into a narrow domain-specific language covering 75%
+  of IMO geometry — the specification layer is where the claim's scope
+  lives, the same statement-fidelity boundary the ai4math shelf tracks
+  everywhere else; the comparison to humans is "approximate" by the
+  authors' own framing.
+
+What is not approximate is the machine-vs-machine ladder, and that
+ladder is the durable evidence that neural guidance plus symbolic
+exactness beats either alone.

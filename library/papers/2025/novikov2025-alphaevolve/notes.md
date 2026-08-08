@@ -67,28 +67,30 @@ strength).
 
 ## Assessment
 
-Durable: evolution as the harness that converts test-time compute
-into discovery, with the evaluator sidestepping hallucination
-entirely (only executed, scored code persists — verification-before-
-persistence at population scale, [[wang2023-voyager]]'s rule with
-the critic replaced by ground truth); the evolve-the-searcher
-abstraction choice; multi-metric scoring as diversity pressure; the
-solution-vs-constructor-vs-searcher abstraction menu. Era-bound:
-model roster, every specific record (the math details were deferred
-to a follow-up paper), and the white-paper genre — no peer review,
-self-reported infra numbers. The boundary is stated by the authors
-(automated evaluators only) and sharpened by
-[[jiang2026-from-solvers-to-research]]: score-function-driven
-exploration is bound to predefined objectives, transfers no
-structure across problems, and invents no concepts — it widens
-search, not understanding. That critique coexists with this shelf's
-strongest counterpoint to it: within evaluator reach, the system
-produced provably correct, humanly-verified new mathematics.
-In [[liu2026-a-taxonomy-of-self-evolving-agents]]'s taxonomy this is
-the canonical artifact-locus system, and its complement is
-[[hubert2025-olympiad-level-formal-mathematical-reasoning-with-reinforcement-learning]]:
-AlphaProof searches proof space under a fixed verifier, AlphaEvolve
-searches object space under a fixed scorer — proofs of statements
-versus witnesses for bounds, the two halves of what
-[[openai2026-ten-advances-in-mathematics]]-style claims must
-eventually integrate.
+- **Durable:** evolution as the harness that converts test-time
+  compute into discovery, with the evaluator sidestepping
+  hallucination entirely (only executed, scored code persists —
+  verification-before-persistence at population scale,
+  [[wang2023-voyager]]'s rule with the critic replaced by ground
+  truth); the evolve-the-searcher abstraction choice; multi-metric
+  scoring as diversity pressure; the
+  solution-vs-constructor-vs-searcher abstraction menu.
+- **Era-bound:** model roster, every specific record (the math details
+  were deferred to a follow-up paper), and the white-paper genre — no
+  peer review, self-reported infra numbers.
+- **Boundary:** stated by the authors (automated evaluators only) and
+  sharpened by [[jiang2026-from-solvers-to-research]] —
+  score-function-driven exploration is bound to predefined objectives,
+  transfers no structure across problems, and invents no concepts; it
+  widens search, not understanding. That critique coexists with this
+  shelf's strongest counterpoint to it: within evaluator reach, the
+  system produced provably correct, humanly-verified new mathematics.
+- **In this library:** in
+  [[liu2026-a-taxonomy-of-self-evolving-agents]]'s taxonomy this is
+  the canonical artifact-locus system, and its complement is
+  [[hubert2025-olympiad-level-formal-mathematical-reasoning-with-reinforcement-learning]]:
+  AlphaProof searches proof space under a fixed verifier, AlphaEvolve
+  searches object space under a fixed scorer — proofs of statements
+  versus witnesses for bounds, the two halves of what
+  [[openai2026-ten-advances-in-mathematics]]-style claims must
+  eventually integrate.

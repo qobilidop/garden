@@ -96,11 +96,14 @@ in the Q&A he credits, half-seriously, for UNIX).
 
 The advice is a coherent control system, not a list of virtues: allocate
 attention (10% meta-work), compound the rest, keep the problem queue warm,
-and minimize steady-state ego taxes. Two caveats Hamming flags himself: the
-sample is survivors ("I have never dared to go out and ask those who didn't
-do great work"), and luck's counterfactuals are unknowable — his strongest
-claim is only that Feynman-grade people visibly *would have done something*
-great regardless of which something. Era-bound details (open doors,
-secretaries, Bell Labs abundance) translate but don't copy; the durable core
-is that problem *selection* and problem *reframing* are trained, scheduled
-activities, not traits.
+and minimize steady-state ego taxes.
+
+- **Durable:** the core claim that problem *selection* and problem
+  *reframing* are trained, scheduled activities, not traits.
+- **Era-bound:** the mechanics (open doors, secretaries, Bell Labs
+  abundance) translate but don't copy.
+- **Caveats (flagged by Hamming himself):** the sample is survivors ("I
+  have never dared to go out and ask those who didn't do great work"),
+  and luck's counterfactuals are unknowable — his strongest claim is
+  only that Feynman-grade people visibly *would have done something*
+  great regardless of which something.

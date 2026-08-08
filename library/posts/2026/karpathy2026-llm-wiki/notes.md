@@ -100,14 +100,16 @@ record.
 
 ## Assessment
 
-Durable: the compile-vs-retrieve distinction; writeback of answers;
-lint as a named maintenance ritual; the schema as co-evolved
-configuration; the maintenance-cost explanation for why personal wikis
-historically die. These are structural claims, not tool claims.
-Era-bound: the Obsidian/Marp/Dataview/qmd specifics, and the
-no-RAG-needed position, which the author himself scopes to small scale
-and one wiki. Unverified: every workflow claim is a single
-practitioner's self-report — persuasive, uncheckable from the record.
+- **Durable:** the compile-vs-retrieve distinction; writeback of
+  answers; lint as a named maintenance ritual; the schema as co-evolved
+  configuration; the maintenance-cost explanation for why personal
+  wikis historically die. These are structural claims, not tool claims.
+- **Era-bound:** the Obsidian/Marp/Dataview/qmd specifics, and the
+  no-RAG-needed position, which the author himself scopes to small
+  scale and one wiki.
+- **Unverified:** every workflow claim is a single practitioner's
+  self-report — persuasive, uncheckable from the record.
+
 The deliberate abstraction is honest about being untestable: there is
 no method here to fail, only a shape to instantiate.
 

@@ -58,20 +58,23 @@ cited, not detailed).
 
 Freshest entry on this shelf (two weeks old at ingestion) and the only
 one addressing *identity* as an evolution locus — a surface the
-skills/rules/memory taxonomy doesn't name. The architecture is
-convergent evolution with the academic line this library holds: sole
-write access through a dedicated role is
-zhang2025-agentic-context-engineering's LLM-proposes/gatekeeper-merges
-split and zhang2026-self-harness's proposer/promoter separation, applied
-to persona; the planned multi-day slow-roll adds a gate dimension
-(time) none of the papers use. It is also the direct answer to the
-"misevolution" and drift risks gao2025-a-survey-of-self-evolving-agents
-catalogs — but where the survey's checklist assumes human approval
-gates, this pattern deliberately replaces them with structural internal
-ones, a genuine philosophical fork worth watching. Era-bound and
-unverified: single anecdote, no eval harness yet (said plainly in the
-post), product pre-release, author's stake obvious. For the evolve
-skill the transferable idea is the receipt: a claimed lesson counts
-only when it lands in a versioned, inspectable surface through the
-designated writer — "I'll remember that" is a red flag; a diff is
-evidence.
+skills/rules/memory taxonomy doesn't name.
+
+- **Durable:** the receipt — a claimed lesson counts only when it lands
+  in a versioned, inspectable surface through the designated writer;
+  "I'll remember that" is a red flag, a diff is evidence. That is the
+  transferable idea for the evolve skill.
+- **Era-bound and unverified:** single anecdote, no eval harness yet
+  (said plainly in the post), product pre-release, author's stake
+  obvious.
+- **In this library:** convergent evolution with the academic line —
+  sole write access through a dedicated role is
+  zhang2025-agentic-context-engineering's LLM-proposes/gatekeeper-merges
+  split and zhang2026-self-harness's proposer/promoter separation,
+  applied to persona; the planned multi-day slow-roll adds a gate
+  dimension (time) none of the papers use. It is also the direct answer
+  to the "misevolution" and drift risks
+  gao2025-a-survey-of-self-evolving-agents catalogs — but where the
+  survey's checklist assumes human approval gates, this pattern
+  deliberately replaces them with structural internal ones, a genuine
+  philosophical fork worth watching.

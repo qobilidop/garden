@@ -76,20 +76,22 @@ fine-tuned small specialists.
 
 ## Assessment
 
-Durable: the draft–sketch–prove decomposition itself; the sketch as
-the interface object between informal and formal (Wiedijk's proof
-sketches, operationalized); the neural-proposes/symbolic-closes
-division of labor; the diversity-over-correctness economics.
-Era-bound: the model roster (Codex, Minerva), Isabelle/Sledgehammer
-specifics, and every number — miniF2F is now saturated at 99.6% by
-descendants of exactly this recipe fused with the search line's
-expert iteration. Caveats the paper half-acknowledges: the
-correctness audit is n=50 and manual; the "autoformalizer corrects
-errors" claim rests on 8 cases; and the human-draft baseline is one
-proof per problem versus 100 samples, so the headline
-human-vs-model comparison conflates draft quality with draft
-count. In [[openai2026-ten-advances-in-mathematics]]'s disclosed
-workflow (model arguments → human-assisted manuscripts → Lean
-formalization) the DSP shape is recognizable at research scale —
-which also imports its caveat: the formal artifact certifies the
-endpoint, not the narrative that produced it.
+- **Durable:** the draft–sketch–prove decomposition itself; the sketch
+  as the interface object between informal and formal (Wiedijk's proof
+  sketches, operationalized); the neural-proposes/symbolic-closes
+  division of labor; the diversity-over-correctness economics.
+- **Era-bound:** the model roster (Codex, Minerva),
+  Isabelle/Sledgehammer specifics, and every number — miniF2F is now
+  saturated at 99.6% by descendants of exactly this recipe fused with
+  the search line's expert iteration.
+- **Caveats (half-acknowledged by the paper):** the correctness audit
+  is n=50 and manual; the "autoformalizer corrects errors" claim rests
+  on 8 cases; and the human-draft baseline is one proof per problem
+  versus 100 samples, so the headline human-vs-model comparison
+  conflates draft quality with draft count.
+- **In this library:** in
+  [[openai2026-ten-advances-in-mathematics]]'s disclosed workflow
+  (model arguments → human-assisted manuscripts → Lean formalization)
+  the DSP shape is recognizable at research scale — which also imports
+  its caveat: the formal artifact certifies the endpoint, not the
+  narrative that produced it.

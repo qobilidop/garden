@@ -129,7 +129,9 @@ artifact.
   correctness, contributions, clarity); the notes should let a reader
   reconstruct the paper's structure and judge its strong and weak points
   without opening the blob. Include an honest assessment section — what is
-  durable, what is era-bound or overclaimed.
+  durable, what is era-bound or overclaimed — as labeled bullets
+  (**Durable:**, **Era-bound:**, **Weaknesses:**/**Caveats:**), not one
+  dense paragraph; a closing synthesis line may stay prose.
 - Attribution: one living notes file per author, updated on reread — no
   dated copies. Agent synthesis is `notes.md` with `notes-by` naming agent +
   model. Human notes are `notes-<name>.md`, created only when distilled

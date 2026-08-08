@@ -71,18 +71,22 @@ machinery — a reader comment preserved in the Wayback record makes the
 standing critique ("a list of well-known good engineering practices;
 machines speed up the feedback cycle"), and it is fair as far as it
 goes: what is new is that an agent closes the loop cheaply enough for
-the compounding to actually happen. Reception ran delayed: the HN
-thread was modest (17 points), but by January 2026 Will Larson was
-endorsing the practice as "an extremely effective way to convert
-intuited best-practices into something specific, concrete, and largely
-automatic," and Every shipped an open-source compounding-engineering
-plugin for Claude Code. Unverifiable as-told: the opening anecdote.
-Era-bound: the Cora and Claude Code specifics. Against this library's
-shelf: vincent2025-superpowers is the twin from the same season —
-Klaassen names the philosophy, Vincent ships the machinery — and both
-independently converge on lessons-earned-from-real-work as the input to
-harness growth, which liu2026-a-taxonomy-of-self-evolving-agents would
-file as harness self-improvement whose loop closes in code review. For
-the evolve skill, this is the philosophy citation: rules route from
-failures ("every bug becomes a permanent lesson") and the locus that
-compounds is the codified workflow.
+the compounding to actually happen.
+
+- **Reception (delayed):** the HN thread was modest (17 points), but
+  by January 2026 Will Larson was endorsing the practice as "an
+  extremely effective way to convert intuited best-practices into
+  something specific, concrete, and largely automatic," and Every
+  shipped an open-source compounding-engineering plugin for Claude
+  Code.
+- **Unverifiable as-told:** the opening anecdote.
+- **Era-bound:** the Cora and Claude Code specifics.
+- **In this library:** vincent2025-superpowers is the twin from the
+  same season — Klaassen names the philosophy, Vincent ships the
+  machinery — and both independently converge on
+  lessons-earned-from-real-work as the input to harness growth, which
+  liu2026-a-taxonomy-of-self-evolving-agents would file as harness
+  self-improvement whose loop closes in code review. For the evolve
+  skill, this is the philosophy citation: rules route from failures
+  ("every bug becomes a permanent lesson") and the locus that
+  compounds is the codified workflow.

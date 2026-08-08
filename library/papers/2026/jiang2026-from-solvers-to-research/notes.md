@@ -106,21 +106,22 @@ keep shared libraries maintainable.
 
 ## Assessment
 
-Durable: the solver-vs-researcher framing and its benchmark-
-exhaustion argument; the Erdős accounting with its
-rediscovery-dominates-novelty finding; the specification-fidelity
-examples (Erdős #124 will be the standard citation); the
-SMT-vs-CAS verification-gap distinction. Era-bound: the SOTA tables
-(half the entries are 2025 technical reports), the tool roster, and
-the Erdős counts, explicitly a moving target. Weaknesses: the
-taxonomy chapters are citation floods with little editorial judgment
-(contrast [[weng2026-harness]]'s opinionated mapping of its field);
-the roadmap items vary widely in concreteness (knowledge-graph and
-concept-invention sections are aspiration, not mechanism); minor
-dating inconsistency between Table 6 (January) and Fig. 6 (April);
-and the paper predates the August 2026 ten-advances announcement —
-its snapshot stops just before the field's loudest claim, which its
-caveats section reads as written for.
+- **Durable:** the solver-vs-researcher framing and its
+  benchmark-exhaustion argument; the Erdős accounting with its
+  rediscovery-dominates-novelty finding; the specification-fidelity
+  examples (Erdős #124 will be the standard citation); the SMT-vs-CAS
+  verification-gap distinction.
+- **Era-bound:** the SOTA tables (half the entries are 2025 technical
+  reports), the tool roster, and the Erdős counts, explicitly a moving
+  target.
+- **Weaknesses:** the taxonomy chapters are citation floods with little
+  editorial judgment (contrast [[weng2026-harness]]'s opinionated
+  mapping of its field); the roadmap items vary widely in concreteness
+  (knowledge-graph and concept-invention sections are aspiration, not
+  mechanism); minor dating inconsistency between Table 6 (January) and
+  Fig. 6 (April); and the paper predates the August 2026 ten-advances
+  announcement — its snapshot stops just before the field's loudest
+  claim, which its caveats section reads as written for.
 
 ## Relations in this library
 
