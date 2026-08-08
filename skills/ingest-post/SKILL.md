@@ -93,7 +93,7 @@ citekey: <citekey>
 work:
   title: <title>
   author: <author or org>
-  date: <publication date>
+  date: <publication date — ISO to known precision: YYYY[-MM[-DD]]; never invent finer parts>
 source:  # snapshot → shadow; figures (N PNGs) → store   <- only if figures
   url: <page url>
   archived: <wayback snapshot url>

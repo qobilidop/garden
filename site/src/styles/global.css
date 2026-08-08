@@ -10,6 +10,10 @@
   --muted: #6e6e6e;
   --rule: #e4e4e4;
   --underline: #a8a8a8;
+  /* The only two hues on the site: paper/post identity dots, validated
+     for CVD separation and 3:1 contrast on both surfaces. */
+  --paper: #2a78d6;
+  --post: #eb6834;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -20,6 +24,8 @@
     --muted: #8f8f8f;
     --rule: #2c2c2c;
     --underline: #5a5a5a;
+    --paper: #3987e5;
+    --post: #d95926;
   }
 }
 
@@ -37,7 +43,9 @@
 body {
   margin: 0 auto;
   padding: 0 1.25rem;
-  max-width: 42rem;
+  /* ~700px: 75-80 characters at 18px serif — the top of the guidance
+     band (Bringhurst 45-75, ideal 66; WCAG ceiling 80). */
+  max-width: 44rem;
   background: var(--bg);
   color: var(--fg);
   font-family: var(--serif);
@@ -253,8 +261,66 @@ img {
   font-size: 0.8rem;
 }
 
+.work-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .work-list li {
   margin-bottom: 0.9rem;
+}
+
+.kind[data-kind]::before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 0.35em;
+  border-radius: 50%;
+  vertical-align: 0.02em;
+}
+
+.kind[data-kind='paper']::before {
+  background: var(--paper);
+}
+
+.kind[data-kind='post']::before {
+  background: var(--post);
+}
+
+/* Month label: once per month (ledger convention — repeats suppressed),
+   darker than the type tag so it reads as a timeline marker. */
+.tag .month {
+  color: var(--fg);
+  font-family: var(--sans);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+/* Wide viewports: hang the tag into the left gutter, first line aligned
+   with the title (tufte-css's margin hang, mirrored left; stephango and
+   Vercel-changelog precedent). Right rag keeps the type column steady;
+   month labels jut left onto their own track. Below the breakpoint the
+   tag stays inline — same DOM, metadata never hidden. */
+@media (min-width: 64rem) {
+  .work-list li {
+    position: relative;
+  }
+
+  .work-list .tag {
+    position: absolute;
+    top: 0;
+    left: -9.75rem;
+    width: 9rem;
+    text-align: right;
+    line-height: 1.8rem; /* match the title's 18px x 1.6 line box */
+  }
+
+  .work-list .kind {
+    margin-left: 0;
+  }
 }
 
 /* The note's one-line take — our voice, so serif italic, not apparatus sans */

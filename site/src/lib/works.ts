@@ -45,8 +45,13 @@ export function dateOf(entry: CollectionEntry<'library'>): {
     raw instanceof Date ? raw.toISOString().slice(0, 10) : String(raw ?? '')
   const m = s.match(/^(\d{4})(?:-(\d{2}))?(?:-(\d{2}))?/)
   if (!m) return { sortKey: '0000' }
+  // Mixed precision, newest-first: year-only dates sort ABOVE the year's
+  // month-dated entries (DESC-NULLS-FIRST convention), placing them
+  // directly under the year header — which is their honest label, the
+  // ledger logic one level up. '99' > any real month; missing days keep
+  // CSL zero-padding (they only affect order within a month label).
   return {
-    sortKey: [m[1], m[2] ?? '00', m[3] ?? '00'].join('-'),
+    sortKey: [m[1], m[2] ?? '99', m[3] ?? '00'].join('-'),
     month: m[2] ? MONTHS[Number(m[2]) - 1] : undefined,
   }
 }

@@ -70,7 +70,7 @@ work:
   title: <full title>
   author: <authors; "First Author et al. (N authors)" when many>
   venue: <venue, volume/pages if applicable>
-  date: <publication date>
+  date: <publication date — ISO to known precision: YYYY[-MM[-DD]]; never invent finer parts>
   doi: <doi if one exists>          # identifies the work — lives here, not under sources
   arxiv: <id vN + note> (if applicable)
 sources:

@@ -20,11 +20,19 @@ for (const e of entries) {
   byYear.get(year)!.push(e)
 }
 const years = [...byYear.keys()].sort((a, b) => b.localeCompare(a))
+const shown = new Map<(typeof entries)[number], boolean>()
 for (const year of years) {
-  byYear.get(year)!.sort(
+  const list = byYear.get(year)!
+  list.sort(
     (a, b) =>
       b.date.sortKey.localeCompare(a.date.sortKey) || a.id.localeCompare(b.id),
   )
+  // Ledger convention: label a month only on its first (newest) entry.
+  let prev: string | undefined
+  for (const e of list) {
+    shown.set(e, e.date.month !== undefined && e.date.month !== prev)
+    prev = e.date.month ?? prev
+  }
 }
 ---
 
@@ -42,9 +50,14 @@ for (const year of years) {
           {byYear.get(year)!.map((e) => (
             <li>
               <a href={`${base}/library/${e.id}/`}>{e.title}</a>
-              <span class="kind">
-                {e.shelf?.kind === 'papers' ? 'paper' : 'post'}
-                {e.date.month && ` · ${e.date.month}`}
+              <span class="tag">
+                {shown.get(e) && <span class="month">{e.date.month} ·</span>}
+                <span
+                  class="kind"
+                  data-kind={e.shelf?.kind === 'papers' ? 'paper' : 'post'}
+                >
+                  {e.shelf?.kind === 'papers' ? 'paper' : 'post'}
+                </span>
               </span>
               {e.author && <span class="author">{e.author}</span>}
               {e.synthesis && <span class="synthesis">{e.synthesis}</span>}
