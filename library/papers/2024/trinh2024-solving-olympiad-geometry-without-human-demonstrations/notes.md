@@ -15,9 +15,10 @@ sources:
 retrieved: 2026-08-08
 notes-by: Claude Fable 5
 notes-date: 2026-08-08
+synthesis: "AlphaGeometry makes the neural-proposes/symbolic-closes split architectural and answers data scarcity with synthetic data from symbolic exploration — but the claim's scope lives in the DSL's translation layer."
 ---
 
-# Notes: AlphaGeometry
+# Solving olympiad geometry without human demonstrations
 
 The neuro-symbolic landmark (Nature, Jan 2024; the field's most
 rigorously reviewed result — submitted April 2023, six months in

@@ -14,9 +14,10 @@ discussions:
 retrieved: 2026-08-07
 notes-by: Claude Fable 5
 notes-date: 2026-08-07
+synthesis: "A researcher's opinionated map of the harness level: evaluation and permissions must live outside the self-modification loop, and harness functions will internalize into models while interfaces persist."
 ---
 
-# Notes: Harness Engineering for Self-Improvement
+# Harness Engineering for Self-Improvement
 
 Lil'Log literature survey (31-min read, ~39 references) organizing recent
 self-improving-agent research around one thesis: the harness — the system

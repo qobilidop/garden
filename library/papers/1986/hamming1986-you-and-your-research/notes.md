@@ -16,9 +16,10 @@ sources:
 retrieved: 2026-08-07
 notes-by: Claude Fable 5
 notes-date: 2026-08-07
+synthesis: "Problem selection and reframing are trained, scheduled activities, not traits — a control system of allocated attention, compounding effort, and minimized ego taxes."
 ---
 
-# Notes: You and Your Research
+# You and Your Research
 
 Hamming's question is why so few scientists do great work when so many have
 the ability. His answer is that first-class work is a managed outcome: luck

@@ -13,9 +13,10 @@ sources:
 retrieved: 2026-08-07
 notes-by: Claude Fable 5
 notes-date: 2026-08-07
+synthesis: "Reading depth is an explicit resource allocation with exit checkpoints, and the re-implementation test is the honest bar for deep reading."
 ---
 
-# Notes: How to Read a Paper
+# How to Read a Paper
 
 A two-page editorial whose premise is economic: researchers read hundreds of
 hours of papers yearly, the skill is never taught, and the default strategy —

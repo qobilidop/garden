@@ -254,7 +254,23 @@ img {
 }
 
 .work-list li {
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.9rem;
+}
+
+/* The note's one-line take — our voice, so serif italic, not apparatus sans */
+
+.synthesis {
+  display: block;
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.work-meta .synthesis {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--fg);
 }
 
 /* Backlinks — end-of-page apparatus */

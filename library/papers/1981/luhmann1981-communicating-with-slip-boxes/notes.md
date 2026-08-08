@@ -14,9 +14,10 @@ sources:
 retrieved: 2026-08-08
 notes-by: Claude Fable 5
 notes-date: 2026-08-08
+synthesis: "The missing middle of the compounding-artifact lineage: fixed addresses, explicit links, and surprise as the test of a knowledge system, run for decades at full human maintenance cost."
 ---
 
-# Notes: Communicating with Slip Boxes
+# Kommunikation mit Zettelkästen: Ein Erfahrungsbericht (Communicating with Slip Boxes: An Empirical Account)
 
 Luhmann's six-page "experience report" on the Zettelkasten, framed
 with dry wit as empirical sociology about "me and someone else,

@@ -14,9 +14,10 @@ sources:
 retrieved: 2026-08-07
 notes-by: Claude Fable 5
 notes-date: 2026-08-08  # figure pass 2026-08-08
+synthesis: "The founding exemplar of skill-library evolution: verification before persistence, frontier-aware task proposal, and skills indexed by purpose — demonstrated against notably handicapped baselines."
 ---
 
-# Notes: Voyager
+# Voyager: An Open-Ended Embodied Agent with Large Language Models
 
 The canonical skill-library paper (NVIDIA-led, TMLR 03/2024, first posted
 May 2023): a GPT-4 agent in Minecraft that proposes its own tasks, writes

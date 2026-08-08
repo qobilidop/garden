@@ -13,9 +13,10 @@ discussions:
 retrieved: 2026-08-07
 notes-by: Claude Fable 5
 notes-date: 2026-08-07
+synthesis: "The most concrete public numbers yet for a self-improving harness — promotion gated by evals outside the loop, negative results logged — and the Codex-isolation lesson: the evaluator is code too, and an unverified gate passes everything."
 ---
 
-# Notes: Superpowers 6
+# Superpowers 6
 
 Release post that is really a field report of harness self-improvement
 run at production scale: the Superpowers build loop (the subagent-driven

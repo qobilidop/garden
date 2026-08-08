@@ -16,9 +16,10 @@ sources:
 retrieved: 2026-08-07
 notes-by: Claude Fable 5
 notes-date: 2026-08-07
+synthesis: "Contexts should grow as itemized, provenance-counted entries with deterministic merges — brevity bias and context collapse name why blob rewrites fail, and feedback quality binds any self-updating context."
 ---
 
-# Notes: Agentic Context Engineering (ACE)
+# Agentic Context Engineering: Evolving Contexts for Self-Improving Language Models
 
 ICLR 2026 methods paper (Stanford, SambaNova, UC Berkeley) in the
 natural-language-feedback lineage (Reflexion → TextGrad → GEPA → Dynamic

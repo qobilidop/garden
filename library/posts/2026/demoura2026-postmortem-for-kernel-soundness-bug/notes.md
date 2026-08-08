@@ -13,9 +13,10 @@ discussions:
 retrieved: 2026-08-07
 notes-by: Claude Fable 5
 notes-date: 2026-08-07
+synthesis: "A model postmortem quantifying the residual risk behind 'the kernel checked it': soundness now requires two independent bugs to fail, elaborators must stay untrusted — and models strong enough to find soundness bugs change the threat model."
 ---
 
-# Notes: Postmortem for Kernel Soundness Bug #14576
+# Postmortem for Kernel Soundness Bug #14576
 
 First-party incident postmortem by Lean's creator (Lean FRO chief
 architect), published four days after the fix. The incident: on July 25,

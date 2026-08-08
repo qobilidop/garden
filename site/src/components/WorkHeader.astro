@@ -11,6 +11,7 @@ const work = workOf(entry)
 const shelf = shelfOf(entry)
 const notesBy = fieldOf(entry, 'notes-by')
 const retrieved = fieldOf(entry, 'retrieved')
+const synthesis = fieldOf(entry, 'synthesis')
 const doi = work.doi?.split(/\s/, 1)[0]
 const arxiv = work.arxiv?.split(/\s/, 1)[0]?.replace(/v\d+$/, '')
 ---
@@ -40,4 +41,5 @@ const arxiv = work.arxiv?.split(/\s/, 1)[0]?.replace(/v\d+$/, '')
       </p>
     )
   }
+  {synthesis && <p class="synthesis">{synthesis}</p>}
 </header>

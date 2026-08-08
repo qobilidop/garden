@@ -14,9 +14,10 @@ sources:
 retrieved: 2026-08-08
 notes-by: Claude Fable 5
 notes-date: 2026-08-08
+synthesis: "AlphaProof is verifier-grounded RL at AlphaZero scale plus test-time RL on problem variants — IMO silver at a compute scale beyond academia, with competition math's fixed concept library marking where research mathematics begins."
 ---
 
-# Notes: AlphaProof
+# Olympiad-level formal mathematical reasoning with reinforcement learning
 
 The AlphaZero-of-mathematics paper (Nature, Nov 2025; 39 DeepMind
 authors, Silver as senior author) — the formal write-up, sixteen

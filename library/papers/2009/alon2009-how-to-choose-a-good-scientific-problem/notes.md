@@ -15,9 +15,10 @@ sources:
 retrieved: 2026-08-08
 notes-by: Claude Fable 5
 notes-date: 2026-08-08
+synthesis: "Problem choice is teachable: a two-axis Pareto scheme with life-stage weighting, a three-month commitment rule, and the cloud/problem-C vocabulary for the mid-project reframe."
 ---
 
-# Notes: How To Choose a Good Scientific Problem
+# How To Choose a Good Scientific Problem
 
 Three-page Forum essay by a systems biologist whose opening
 observation earns the piece its place: problem choice is essential to

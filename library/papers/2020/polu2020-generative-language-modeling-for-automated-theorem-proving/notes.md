@@ -13,9 +13,10 @@ sources:
 retrieved: 2026-08-08
 notes-by: Claude Fable 5
 notes-date: 2026-08-08
+synthesis: "GPT-f set the recipe modern provers still run — tactic generation as language modeling, verifier-coupled search, expert iteration — with community-merged proofs as the adoption bar."
 ---
 
-# Notes: Generative Language Modeling for Automated Theorem Proving (GPT-f)
+# Generative Language Modeling for Automated Theorem Proving
 
 The founding paper of LLM-based theorem proving — a methods/system
 paper from OpenAI (Polu & Sutskever, Sep 2020) that

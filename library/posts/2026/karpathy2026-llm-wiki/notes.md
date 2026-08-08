@@ -24,9 +24,10 @@ discussions:
 retrieved: 2026-08-08
 notes-by: Claude Fable 5
 notes-date: 2026-08-08
+synthesis: "The wiki compiles understanding rather than retrieving it, and the LLM pays the maintenance cost that historically killed personal wikis — structural claims that outlive the tool roster."
 ---
 
-# Notes: LLM Wiki
+# LLM Wiki
 
 A ~12KB single-file gist proposing a pattern for personal knowledge
 management with LLM agents: instead of RAG-style retrieval that

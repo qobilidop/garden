@@ -13,9 +13,10 @@ sources:
 retrieved: 2026-08-08
 notes-by: Claude Fable 5
 notes-date: 2026-08-08
+synthesis: "The solver regime is saturated and its benchmarks exhausted; the frontier is research agents — with specification fidelity and the SMT-vs-CAS verification gap as the load-bearing distinctions."
 ---
 
-# Notes: From Solvers to Research
+# From Solvers to Research: Large Language Model-Driven Formal Mathematics at the Research Frontier
 
 Position paper plus survey from UCLA and LLNL (19 authors — the roster
 includes Tao, Bertozzi, Meka, Sahai — with equal-contribution first

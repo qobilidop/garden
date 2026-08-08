@@ -14,9 +14,10 @@ discussions:
 retrieved: 2026-08-07
 notes-by: Claude Fable 5
 notes-date: 2026-08-07
+synthesis: "The academic shelf's safeguards discovered independently by iteration — plus the 2,249-memories null result: most accumulated lessons are already absorbed, so an earned-lesson filter is the main mechanism, not optional caution."
 ---
 
-# Notes: Superpowers
+# Superpowers: How I'm using coding agents in October 2025
 
 The launch post for Superpowers (Jesse Vincent — RT, K-9 Mail,
 Keyboardio), shipped the morning Anthropic released Claude Code's plugin

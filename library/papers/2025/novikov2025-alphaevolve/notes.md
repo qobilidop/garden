@@ -15,9 +15,10 @@ sources:
 retrieved: 2026-08-08
 notes-by: Claude Fable 5
 notes-date: 2026-08-08
+synthesis: "Evolution as the harness that converts test-time compute into discovery: only executed, scored code persists, sidestepping hallucination — within evaluator reach, and only there."
 ---
 
-# Notes: AlphaEvolve
+# AlphaEvolve: A coding agent for scientific and algorithmic discovery
 
 DeepMind white paper (June 2025) for the discovery-by-evolution
 pillar of AI4Math: an evolutionary coding agent where frontier LLMs

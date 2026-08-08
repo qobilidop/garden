@@ -83,6 +83,7 @@ sources:
 retrieved: <today>
 notes-by: <agent name + model, or human name>
 notes-date: <today>
+synthesis: <the notes' one-sentence take, when they have one>
 ---
 ```
 
@@ -118,6 +119,11 @@ artifact.
 
 ## 5. Synthesis notes
 
+- The H1 is `work.title` verbatim — no prefix, no shortened display
+  names; community names (AlphaProof) belong in prose and the
+  `synthesis:` line, not the title. `synthesis:` distills the notes'
+  argument to one sentence when they have one (the site catalog
+  surfaces it); omit it for works merely cataloged.
 - Read the shadow text form (transcript/snapshot), not the PDF — that is
   what it exists for. For long works, navigate by heading structure and read
   targeted slices; do not skip the parts a fair assessment needs.

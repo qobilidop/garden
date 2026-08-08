@@ -21,9 +21,10 @@ discussions:
 retrieved: 2026-08-07
 notes-by: Claude Fable 5
 notes-date: 2026-08-07
+synthesis: "The evidentiary weight rests entirely on Lean certificates neutralizing corporate-claim skepticism — modulo statement fidelity — and the disclosed workflow is draft-sketch-prove's shape at research scale."
 ---
 
-# Notes: Ten advances in mathematics and theoretical computer science
+# Ten advances in mathematics and theoretical computer science
 
 Org-authored announcement post, not a technical exposition: OpenAI claims
 ten results, each resolving or making substantial progress on a

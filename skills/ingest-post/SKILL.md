@@ -102,15 +102,18 @@ discussions:
 retrieved: <today>
 notes-by: <agent name + model, or human name>
 notes-date: <today>
+synthesis: <the notes' one-sentence take, when they have one>
 ---
 ```
 
 ## 6. Synthesis notes
 
-Same bar as ingest-paper §5: read the shadow snapshot, write
-transformation not compression, include an honest assessment (durable vs
-era-bound, unverified claims, author's stake), and read the library —
-cite related entries by citekey and say what this work adds against them.
+Same bar as ingest-paper §5: the H1 is `work.title` verbatim and
+`synthesis:` carries the notes' one-sentence take when they have one;
+read the shadow snapshot, write transformation not compression, include
+an honest assessment (durable vs era-bound, unverified claims, author's
+stake), and read the library — cite related entries by citekey and say
+what this work adds against them.
 Writeback: update the `wiki/` topic pages this work touches
 (skills/tend-wiki).
 

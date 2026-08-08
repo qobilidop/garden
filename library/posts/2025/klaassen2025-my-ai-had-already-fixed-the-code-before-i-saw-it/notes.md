@@ -16,9 +16,10 @@ discussions:
 retrieved: 2026-08-07
 notes-by: Claude Fable 5
 notes-date: 2026-08-07
+synthesis: "Named the philosophy: each unit of engineering should make the next cheaper, and agents close the feedback loop cheaply enough for the compounding to actually happen."
 ---
 
-# Notes: My AI Had Already Fixed the Code Before I Saw It
+# My AI Had Already Fixed the Code Before I Saw It
 
 The essay that coined **compounding engineering** (Kieran Klaassen,
 general manager of Cora, Every's email assistant; Source Code column).

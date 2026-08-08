@@ -16,9 +16,10 @@ sources:
 retrieved: 2026-08-08
 notes-by: Claude Fable 5
 notes-date: 2026-08-08
+synthesis: "Draft–sketch–prove operationalizes Wiedijk's proof sketches: neural proposes structure, symbolic closes rigor — the division of labor every informal-guided prover since inherits."
 ---
 
-# Notes: Draft, Sketch, and Prove (DSP)
+# Draft, Sketch, and Prove: Guiding Formal Theorem Provers with Informal Proofs
 
 The paradigm paper for informal-guided formal proving (ICLR 2023;
 equal-contribution leads Jiang, Welleck, Zhou). The architecture is a

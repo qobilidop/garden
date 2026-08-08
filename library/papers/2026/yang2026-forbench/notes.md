@@ -14,9 +14,10 @@ sources:
 retrieved: 2026-08-08
 notes-by: Claude Fable 5
 notes-date: 2026-08-08
+synthesis: "Fork on testbench conditions, not design branches: a symbolic-simulation runtime with simulation ergonomics — real engineering value, though the 'third path' framing oversells its distance from prior symbolic simulation."
 ---
 
-# Forbench: symbolic simulation as a "more formal" testbench
+# Forbench: Symbolic Simulation Helps Make Your Testbench More Formal
 
 **Category:** a hardware-verification tool/methodology paper (ICCAD '26).
 **Context:** pre-silicon RTL functional verification sits on two poles —

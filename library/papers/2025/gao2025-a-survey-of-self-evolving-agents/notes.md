@@ -14,9 +14,10 @@ sources:
 retrieved: 2026-08-07
 notes-by: Claude Fable 5
 notes-date: 2026-08-07
+synthesis: "A usable field map — experience-dependent, persistent, self-initiated updates define self-evolution, and the safety checklist transfers as-is to memory-carrying agents — though the ASI framing writes a check the content never cashes."
 ---
 
-# Notes: A Survey of Self-Evolving Agents
+# A Survey of Self-Evolving Agents: What, When, How, and Where to Evolve on the Path to Artificial Super Intelligence
 
 First systematic survey of agents that modify themselves from their own
 experience — 77 pages, TMLR camera-ready. Its claim to first-ness rests on

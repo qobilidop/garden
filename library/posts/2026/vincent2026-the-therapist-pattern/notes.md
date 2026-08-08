@@ -12,9 +12,10 @@ source:  # snapshot → shadow; cross-posted to primeradiant.com/blog
 retrieved: 2026-08-07
 notes-by: Claude Fable 5
 notes-date: 2026-08-07
+synthesis: "Identity as an evolution locus with a receipt rule: a claimed lesson counts only when it lands in a versioned, inspectable surface through the designated writer — 'I'll remember that' is a red flag, a diff is evidence."
 ---
 
-# Notes: The Therapist Pattern
+# The Therapist Pattern
 
 Field report from Prime Radiant (Jesse Vincent's company; Sen is their
 "agentic colleague" harness, pre-open-source) proposing a governance

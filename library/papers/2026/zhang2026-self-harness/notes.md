@@ -13,9 +13,10 @@ sources:
 retrieved: 2026-08-07
 notes-by: Claude Fable 5
 notes-date: 2026-08-07
+synthesis: "The loop architecture — evidence before proposal, bounded surfaces, conservative gating — survives scrutiny; the headline gains, measured against a floor baseline with a reused held-out split, do not."
 ---
 
-# Notes: Self-Harness
+# Self-Harness: Harnesses That Improve Themselves
 
 Shanghai AI Lab preprint defining the paradigm this library first met
 through weng2026-harness's summary: a fixed model improves the harness it

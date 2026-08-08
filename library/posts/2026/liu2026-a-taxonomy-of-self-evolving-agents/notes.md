@@ -13,9 +13,10 @@ discussions:
 retrieved: 2026-08-07
 notes-by: Claude Fable 5
 notes-date: 2026-08-07
+synthesis: "Two additive cuts on gao2025's survey: the artifact as a first-class evolution locus, and 'where does the loop close' as the deployment-facing question."
 ---
 
-# Notes: A Taxonomy of Self-evolving Agents
+# A Taxonomy of Self-evolving Agents
 
 A practitioner's blog post that cuts the self-evolving-agents field along a
 single axis — *what evolves* — into three loci: **model**, **harness**, and
