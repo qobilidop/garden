@@ -1,0 +1,125 @@
+key	decision	via	year	title	rationale
+arxiv:2605.26340	E1	adjudicated	2026	ScientistOne: Towards Human-Level Autonomous Research via Chain-of-Evidence	autonomous primary-research agent; verifiability of own outputs, not evidence synthesis
+doi:10.06155v3	E1	adjudicated	2023	CoQuest: Exploring Research Question Co-Creation with an LLM-based Agent	RQ co-creation for primary research (borderline: planning-stage adjacent)
+doi:10.1093/jamia/ocae072	E1	adjudicated	2024	Large language models facilitate the generation of electronic health record phenotyping al	LLM generates phenotyping algorithms; literature synthesis is input, product is clinical artifact
+doi:10.1109/icosst69113.2025.11315415	E1	adjudicated	2025	LLM-Agent Powered Automated Literature Review and Hypothesis Generation for Cancer Biomark	discovery pipeline; literature monitoring feeds hypothesis generation (borderline)
+arxiv:2408.02248	E2	adjudicated	2024	ReDel: A Toolkit for LLM-Powered Recursive Multi-Agent Systems	generic recursive multi-agent toolkit; review compilation only an example
+arxiv:2502.07960	E2	adjudicated	2025	Accelerating Scientific Research Through a Multi-LLM Framework	general research-workflow accelerator; no secondary-study framing
+arxiv:2506.07583	E2	adjudicated	2025	Beyond the Sentence: A Survey on Context-Aware Machine Translation with Large Language Mod	NLP domain survey
+arxiv:2512.01693	E2	adjudicated	2025	LitMOF: An LLM Multi-Agent for Literature-Validated Metal-Organic Frameworks Database Corr	literature mining for materials database curation, not evidence synthesis
+arxiv:2604.22861	E2	adjudicated	2026	IntrAgent: An LLM Agent for Content-Grounded Information Retrieval through Literature Revi	generic IR-from-literature task framing (borderline: extraction-adjacent)
+doi:10.1002/cesm.70060/v1/review1	E2	adjudicated	2025	Review for "Using Large Language Models to Address Contextual Questions in Systematic Revi	peer-review record or decision letter, not a study (protocol gap: no doc-type code; using E2, see decisions/0003)
+doi:10.1002/cesm.70060/v1/review2	E2	adjudicated	2025	Review for "Using Large Language Models to Address Contextual Questions in Systematic Revi	peer-review record or decision letter, not a study (protocol gap: no doc-type code; using E2, see decisions/0003)
+doi:10.1002/cesm.70060/v1/review3	E2	adjudicated	2025	Review for "Using Large Language Models to Address Contextual Questions in Systematic Revi	peer-review record or decision letter, not a study (protocol gap: no doc-type code; using E2, see decisions/0003)
+doi:10.1002/eng2.70365/v1/decision1	E2	adjudicated	2025	Decision letter for "Systematic Literature Review of LLM‐Large Language Model in Medical: 	peer-review record or decision letter, not a study (protocol gap: no doc-type code; using E2, see decisions/0003)
+doi:10.1002/eng2.70365/v1/review1	E2	adjudicated	2025	Review for "Systematic Literature Review of LLM‐Large Language Model in Medical: Digital H	peer-review record or decision letter, not a study (protocol gap: no doc-type code; using E2, see decisions/0003)
+doi:10.1002/eng2.70365/v1/review2	E2	adjudicated	2025	Review for "Systematic Literature Review of LLM‐Large Language Model in Medical: Digital H	peer-review record or decision letter, not a study (protocol gap: no doc-type code; using E2, see decisions/0003)
+doi:10.1002/eng2.70365/v2/decision1	E2	adjudicated	2025	Decision letter for "Systematic Literature Review of LLM‐Large Language Model in Medical: 	peer-review record or decision letter, not a study (protocol gap: no doc-type code; using E2, see decisions/0003)
+doi:10.1002/eng2.70365/v2/review1	E2	adjudicated	2025	Review for "Systematic Literature Review of LLM‐Large Language Model in Medical: Digital H	peer-review record or decision letter, not a study (protocol gap: no doc-type code; using E2, see decisions/0003)
+doi:10.1002/eng2.70365/v2/review2	E2	adjudicated	2025	Review for "Systematic Literature Review of LLM‐Large Language Model in Medical: Digital H	peer-review record or decision letter, not a study (protocol gap: no doc-type code; using E2, see decisions/0003)
+doi:10.1007/s10439-023-03284-0	E2	adjudicated	2023	ChatGPT, Bard, and Large Language Models for Biomedical Research: Opportunities and Pitfal	no-abstract domain-topic work; conventionally out of scope
+doi:10.1016/j.enbuild.2024.114788	E2	adjudicated	2024	Advancing building energy modeling with large language models: Exploration and case studie	no-abstract domain-topic work; conventionally out of scope
+doi:10.1016/j.jacr.2025.10.005	E2	adjudicated	2025	Use of Large Language Models on Radiology Reports: A Scoping Review	no-abstract domain-topic work; conventionally out of scope
+doi:10.1016/j.jad.2024.11.052	E2	adjudicated	2024	Exploring the efficacy and potential of large language models for depression: A systematic	no-abstract domain-topic work; conventionally out of scope
+doi:10.1016/j.rcim.2024.102883	E2	adjudicated	2024	A survey on potentials, pathways and challenges of large language models in new-generation	no-abstract domain-topic work; conventionally out of scope
+doi:10.1016/j.rcim.2025.102982	E2	adjudicated	2025	Integrating large language model and digital twins in the context of industry 5.0: Framewo	no-abstract domain-topic work; conventionally out of scope
+doi:10.1016/j.rser.2025.115558	E2	adjudicated	2025	Opportunities of applying Large Language Models in building energy sector	no-abstract domain-topic work; conventionally out of scope
+doi:10.1016/j.sapharm.2023.05.016	E2	adjudicated	2023	The emergent role of artificial intelligence, natural learning processing, and large langu	no-abstract domain-topic work; conventionally out of scope
+doi:10.1109/iccae59995.2024.10569797	E2	adjudicated	2024	Ethical Judgment using Large Language Model	no-abstract domain-topic work; conventionally out of scope
+doi:10.2196/preprints.52600	E2	adjudicated	2023	The Application Potential of Large Language Model in the Management for Diabetic Ketoacido	clinical application review
+doi:10.22260/isarc2026/0172	E2	adjudicated	2026	Domain-specific Large Language Model Pretraining for Construction Specification Review	no-abstract domain-topic work; conventionally out of scope
+doi:10.30574/wjarr.2025.26.2.1665	E2	adjudicated	2025	Building an LLM Agent for Life Sciences Literature QA and Summarization	generic RAG literature QA/summarization
+doi:10.1111/1742-6723.70148	E3	adjudicated	2025	The Role of Artificial Intelligence in Enabling Medical Research	commentary on AI in medical research; no methodological guidance
+arxiv:2605.15245	I	adjudicated	2026	Assistance to Autonomy: A Systematic Literature Review of Agentic AI across the Software D	SLR describing its own multi-agent LLM screening pipeline; application exemplar
+arxiv:2607.05031	I	adjudicated	2026	LLM-Based Test Oracles: Source-of-Authority Taxonomy -- A Systematic Literature Review	SLR reporting own LLM pre-filter with dual-human screening; application exemplar
+doi:10.1371/journal.pone.0227742	E2	snowball+overturned	2020	Error rates of human reviewers during abstract screening in systematic reviews	Human reviewer error rates, not an AI/ML system
+doi:10.1093/nar/gkab326	E2	snowball+overturned	2021	LitSuggest: a web-based system for literature recommendation and curation using machine le	Generic literature recommender, no SR-stage framing
+doi:10.1186/s13643-021-01787-2	E2	snowball+overturned	2021	CogTale: an online platform for the evaluation, synthesis, and dissemination of evidence f	Evidence repository/dissemination platform, no AI/ML shown
+doi:10.1007/978-3-030-85292-4_32	U	snowball+verify-U	2021	Natural Language Processing Applications in the Clinical Neurosciences: A Machine Learning	No abstract; scope unclear from title alone
+doi:10.1109/camp51653.2021.9498061	E2	snowball+overturned	2021	Towards Automated Detection of Contradictory Research Claims in Medical Literature Using D	Generic biomedical claim-contradiction NLP, no SR framing
+doi:10.1200/cci.21.00035	E2	snowball+overturned	2021	Adjuvant Tyrosine Kinase Inhibitors in Renal Cell Carcinoma: A Concluded Living Systematic	Domain clinical living review; automation an incidental detail
+doi:10.1109/access.2021.3072900	E2	snowball+overturned	2021	Efficient Automated Processing of the Unstructured Documents Using Artificial Intelligence	Domain SLR about AI extraction techniques generally
+doi:10.1186/s12911-021-01395-z	E2	snowball+overturned	2021	A clinical trials corpus annotated with UMLS entities to enhance the access to evidence-ba	Generic UMLS NER corpus, no review-stage automation framing
+doi:10.1016/j.artmed.2021.102098	U	snowball+verify-U	2021	Enhancing evidence-based medicine with natural language argumentative analysis of clinical	Empty abstract; title ambiguous between argument mining and EBM
+doi:10.3389/fpsyg.2022.830345	E2	snowball+overturned	2022	Inclusion of Clinicians in the Development and Evaluation of Clinical Artificial Intellige	SLR on clinician acceptance of AI tools, not review automation
+doi:10.1080/00273171.2022.2115965	E2	snowball+overturned	2022	A Gentle Introduction to Bayesian Network Meta-Analysis Using an Automated R Package	Automated statistical R package, not AI/ML-based method
+doi:10.1007/s00228-022-03329-8	U	snowball+verify-U	2022	Feasibility study and evaluation of expert opinion on the semi-automated meta-analysis and	Empty abstract; unclear if semi-automation is AI-based
+doi:10.1016/j.nocx.2022.100103	E2	snowball+overturned	2022	Natural language processing-guided meta-analysis and structure factor database extraction 	NLP trend analysis of glass literature, not evidence synthesis
+doi:10.1016/j.xcrm.2022.100860	E3	snowball+overturned	2022	Evidence synthesis, digital scribes, and translational challenges for artificial intellige	Broad opinion piece on AI translational challenges, not guidance
+doi:10.1007/s10489-022-03957-8	E2	snowball+overturned	2022	KIETA: Key-insight extraction from scientific tables	Table extraction for general literature review, not SR-specific
+doi:10.1007/s13042-022-01710-8	U	snowball+verify-U	2022	Leveraging deep learning for automatic literature screening in intelligent bibliometrics	Empty abstract; bibliometrics framing unclear vs evidence synthesis
+doi:10.1681/asn.0000000000000166	E3	snowball+overturned	2023	Retrieve, Summarize, and Verify: How Will ChatGPT Affect Information Seeking from the Medi	General commentary on ChatGPT info-seeking, no guidance
+doi:10.1038/s41591-023-02366-9	E3	snowball+overturned	2023	AI-generated text may have a role in evidence-based medicine	Opinion piece on AI's role in EBM
+t:theroleofchatgptinscientificcommunicationwritingbetterscientificreviewarticles	E2	snowball+overturned	2023	The role of ChatGPT in scientific communication: writing better scientific review articles	Generic ChatGPT writing-assistance advice, no SR framing
+doi:10.3390/ijerph20105881	E1	snowball+overturned	2023	Using Machine Learning Algorithms to Pool Data from Meta-Analysis for the Prediction of Co	ML predicts jump outcome, primary sports research
+doi:10.1016/j.jval.2023.09.2185	U	snowball+verify-U	2023	MSR126 AutoCriteria: Advancing Clinical Trial Study With AI-Powered Eligibility Criteria E	No abstract, ambiguous SR vs trial-matching scope
+doi:10.1177/21925682231195783	E2	snowball+overturned	2023	ChatGPT and its Role in the Decision-Making for the Diagnosis and Treatment of Lumbar Spin	ChatGPT clinical-guideline Q&A, review done conventionally
+doi:10.1142/9789811286421_0002	E2	snowball+overturned	2023	Clinfo.ai: An Open-Source Retrieval-Augmented Large Language Model System for Answering Me	Generic RAG clinical QA, no SR framing
+doi:10.1109/ieir59294.2023.10391253	E2	snowball+overturned	2023	Mining Topic Structure of AI Algorithmic Literature	LLM topic-mining of literature, no SR framing
+doi:10.1136/bmjopen-2023-076865	E2	snowball+overturned	2023	Large language model-based information extraction from free-text radiology reports: a scop	Scoping review protocol on domain LLM-IE topic
+doi:10.1080/08989621.2023.2185514	E3	snowball+overturned	2023	Using ChatGPT to conduct a literature review	Opinion letter on ChatGPT hallucinating refs, no guidance
+doi:10.1007/s43681-023-00294-5	E2	snowball+overturned	2023	Guidance for researchers and peer-reviewers on the ethical use of Large Language Models (L	Broad LLM research-ethics guidance, not review-stage specific
+doi:10.1016/j.eswa.2023.120964	E2	snowball+overturned	2023	Automated clinical knowledge graph generation framework for evidence based medicine	Clinical KG generation for decision support, not review stage
+doi:10.1038/s41591-022-02139-w	E2	snowball+overturned	2023	PRISMA AI reporting guidelines for systematic reviews and meta-analyses on AI in healthcar	PRISMA-AI reports AI as review subject, not a tool
+doi:10.1016/j.imu.2024.101589	E2	snowball+overturned	2024	SEETrials: Leveraging large language models for safety and efficacy extraction in oncology	Trial-abstract extraction pipeline, no SR/synthesis framing
+doi:10.1016/j.asoc.2024.112374	E2	snowball+overturned	2024	Patient centric trustworthy AI in medical analysis and disease prediction: A Comprehensive	Trustworthy AI survey for disease prediction, not review methods
+doi:10.21203/rs.3.rs-5409185/v1	U	snowball+verify-U	2024	Can Large Language Models facilitate evidence-based decision support for conservation?	Vague title, no abstract, decision-support scope unclear
+doi:10.1016/j.ebiom.2024.104988	E2	snowball+overturned	2024	PubMed and beyond: biomedical literature search in the age of artificial intelligence	Generic biomedical literature search tool overview, not SR-specific
+doi:10.1093/jamia/ocae129	E2	snowball+overturned	2024	RefAI: a GPT-powered retrieval-augmented generative tool for biomedical literature recomme	Generic biomedical literature recommendation/summarization tool, not SR-specific
+arxiv:2402.11456	E2	snowball+overturned	2024	FactPICO: Factuality Evaluation for Plain Language Summarization of Medical Evidence	Single-document RCT summarization, not multi-study evidence synthesis
+doi:10.1007/978-981-97-1717-0_16	U	snowball+verify-U	2024	LLM Collaboration PLM Improves Critical Information Extraction Tasks in Medical Articles	No abstract; extraction task's review framing unclear
+doi:10.1007/s13139-024-00876-z	E2	snowball+overturned	2024	How to Harness the Power of GPT for Scientific Research: A Comprehensive Review of Methodo	General GPT research guidance, not review-stage specific
+doi:10.3390/ijms252111811	E2	snowball+overturned	2024	An Accurate and Efficient Approach to Knowledge Extraction from Scientific Publications Us	General biomedical knowledge extraction, no SR framing
+doi:10.1177/09610006241295802	E2	snowball+overturned	2024	Are AI tools better than traditional tools in literature searching? Evidence from E-commer	Generic literature search tool comparison, not SR-framed
+doi:10.1093/nar/gkae235	E2	snowball+overturned	2024	PubTator 3.0: an AI-powered literature resource for unlocking biomedical knowledge	General biomedical literature annotation resource
+doi:10.1109/access.2024.3521596	E2	snowball+overturned	2024	From Information Overload to Lucidity: A Survey on Leveraging GPTs for Systematic Summariz	General GPT summarization survey, not SR-framed
+doi:10.21105/joss.08135	E2	snowball+overturned	2025	PyPaperRetriever: A Python Tool for Finding and Downloading Scientific Literature	General PDF retrieval tool, not review-specific
+doi:10.1017/ijmedinf.2025.106048	U	snowball+verify-U			No title or abstract provided
+doi:10.2480/agrmet.d-24-00042	E2	snowball+overturned	2025	Crop phenology data extraction from research papers using a large language model	Crop dataset extraction, no SR framing
+doi:10.1109/tale66047.2025.11346619	E2	snowball+overturned	2025	Beyond Search: Measuring LLM Performance for Scientific Literature Discovery	General literature discovery, not SR-framed
+doi:10.1093/iwc/iwaf001	E2	snowball+overturned	2025	Introducing the INSPIRE Framework: Guidelines From Expert Librarians for Search and Select	Librarian search guidelines, no AI/LLM
+doi:10.1016/j.eiar.2025.108243	E1	snowball+overturned	2025	Large-scale analysis of environmental and circularity metrics in construction products thr	Extracts EPD product data, not literature review
+doi:10.1016/j.phacli.2025.07.006	E2	snowball+overturned	2025	Extraction de données d’articles scientifiques pharmaceutiques par intelligence artificiel	Pharma article extraction for platform, no SR
+doi:10.3390/informatics12040135	E2	snowball+overturned	2025	Enhancing Intuitive Decision-Making and Reliance Through Human–AI Collaboration: A Review	Human-AI decision support review, not SR methods
+doi:10.1007/978-3-031-97207-2_2	E2	snowball+overturned	2025	Introducing ORKG ASK: An AI-Driven Scholarly Literature Search and Exploration System Taki	General scholarly search tool, not SR-framed
+doi:10.1177/23800844251321839	E3	snowball+overturned	2025	How Artificial Intelligence Can Revolutionize Evidence-Based Health Care: A Critical Comme	Opinion commentary, minimal review-stage guidance
+doi:10.2196/preprints.80247	E6	snowball+overturned	2025	PRISMA-trAIce: A Proposed Checklist for Transparent Reporting of Artificial Intelligence i	Preprint duplicate of PRISMA-trAIce (10.2196/80247) [Fable: E2 upheld — reporting guidance for reviews OF AI; RQ3-adjace
+doi:10.63973/1998-6785/2025-3/21-30	E2	snowball+overturned	2025	The use of artificial intelligence services to search for scientific literature	AI literature search tool, no SR framing
+doi:10.1016/j.ipm.2025.104216	E2	snowball+overturned	2025	A survey on biomedical automatic text summarization with large language models	generic biomedical summarization survey, not SR-specific
+doi:10.1007/s11069-025-07285-1	E2	snowball+overturned	2025	Flood resilience in cities and urban agglomerations: a systematic review of hazard causes,	domain flood-hazard review, LLM tool incidental
+doi:10.1053/j.jvca.2025.07.026	E2	snowball+overturned	2025	Dependability of Large Language Models in Cardiovascular Medicine: A Scoping Review	domain scoping review about AI in cardiology
+doi:10.1186/s12936-025-05722-x	E2	snowball+overturned	2025	Improving reproducibility of Plasmodium falciparum culture: a large-language-model-driven 	domain malaria review, LLM incidental tool
+doi:10.64898/2025.12.22.696019	E2	snowball+overturned	2025	Queryome: Orchestrating Retrieval, Reasoning, and Synthesis across Biomedical Literature	generic biomedical RAG/agent system, no SR framing
+doi:10.2139/ssrn.5394918	E2	snowball+overturned	2025	Human-AI Collaboration in Academic Writing: A Narrative Review and the Scholarly HI-AI Loo	general academic-writing framework, not SR-specific
+doi:10.3389/fdgth.2025.1569554	E2	snowball+overturned	2025	Summarizing clinical evidence utilizing large language models for cancer treatments: a bli	LLM clinical-evidence summaries, no SR search protocol
+doi:10.12688/f1000research.169999.1	E2	snowball+overturned	2025	Combining implementation and data sciences to accelerate evidence integration into healthc	implementation-science platform, not review automation
+doi:10.1200/cci-24-00311	U	snowball+verify-U	2025	Reasoning Models for Text Mining in Oncology: A Comparison Between o1 Preview, GPT-4o, and	trial text-mining task, SR link unclear
+doi:10.1097/fjc.0000000000001774	E2	snowball+overturned	2025	Cardiac Remodeling in Preeclampsia: A Large Language Model–Assisted Meta-Analysis and Meta	domain meta-analysis, AI suite used incidentally
+doi:10.1039/d5dd00482a	E2	snowball+overturned	2025	Optimizing data extraction from materials science literature: a study of tools using large	materials-science data mining, no SR framing
+doi:10.1016/j.inffus.2025.103332	E2	snowball+overturned	2025	Large language models for automated scholarly paper review: A survey	automated peer-review of manuscripts, not lit review
+doi:10.1016/j.jcms.2025.08.004	U	snowball+verify-U	2025	Citation integrity in the age of AI: evaluating the risks of reference hallucination in ma	title-only, unclear if about review generation
+doi:10.7717/peerj-cs.3921	E2	snowball+overturned	2026	Modelling and classifying the components of literature reviews: a novel annotation schema 	generic NLP annotation schema, no evidence-synthesis framing
+doi:10.1016/j.imr.2026.101349	E2	snowball+overturned	2026	Integration of large language models and evidence-based Chinese medicine: A scoping review	domain scoping review of LLMs in EBM broadly
+doi:10.2139/ssrn.6234340	E6	snowball+overturned	2026	Validation of a Local, Schema-Constrained LLM Pipeline for Abstract Screening and Abstract	duplicate of row 8 study (same local pipeline)
+doi:10.2196/85840	E2	snowball+overturned	2026	Artificial Intelligence for Evidence Synthesis of Emerging Biologics to Improve Skeletal H	domain clinical SR incidentally using AI workflow
+doi:10.1111/jpc.70513	E2	snowball+overturned	2026	The Use of Artificial Intelligence in Neonatal Seizure Detection: An Artificial Intelligen	domain SR on seizure detection, AI tool incidental
+doi:10.3390/bioengineering13030365	E2	snowball+overturned	2026	Applications of Large Language Models in Medical Research: From Systematic Reviews to Clin	broad narrative review beyond review-methodology scope
+doi:10.1016/j.cpr.2026.102728	E2	snowball+overturned	2026	AI-powered methods for psychological assessment in adolescence psychological disorders: A 	domain review of AI psychological assessment tools
+doi:10.3390/a19030214	E2	snowball+overturned	2026	Efficient and Verified Research Data Extraction with LLM	primary-literature DNA-probe extraction, no evidence-synthesis framing
+doi:10.1007/978-3-032-10728-2_11	U	snowball+verify-U	2026	DSAɪVE - Dynamic Systematic AI Vector Engine - Literature Review in Multidisciplinary Cont	No abstract; title ambiguous, unclear scope
+doi:10.3390/s26020747	E2	snowball+overturned	2026	Cybersecurity in Radio Frequency Technologies: A Scientometric and Systematic Review with 	Domain RF cybersecurity review; AI screening incidental detail
+doi:10.1007/s11192-026-05622-0	E2	snowball+overturned	2026	Can large language models assess the quality of peer review? An empirical study	Peer-review quality assessment, not systematic-review automation
+doi:10.1109/sustech67720.2026.11536359	E2	snowball+overturned	2026	Irrigation Scheduling Dataset Extraction Using LLM-Mined Research Evidence	Domain literature mining pipeline, not SR-framed
+doi:10.1016/j.vhri.2026.101658	U	snowball+verify-U	2026	Artificial Intelligence in Health Technology Assessment Submissions: A Targeted Review of 	No abstract; unclear if about review-stage automation
+doi:10.3390/publications14020036	E2	snowball+overturned	2026	Literature Search Query in Academic Databases: Artificial Intelligence Think Tank Guidelin	Search-strategy guideline; abstract lacks AI automation content
+doi:10.3389/fdgth.2025.1706383	E2	snowball+overturned	2026	Epistemic and ethical limits of large language models in evidence-based medicine: from kno	LLM clinical judgment/EBM reasoning, not review-stage automation
+doi:10.1093/jamia/ocag037	E2	snowball+overturned	2026	A critical evaluation of generative query expansion on biomedical literature retrieval	Generic biomedical retrieval query expansion, no SR framing
+doi:10.1038/s41591-026-04229-5	E2	snowball+overturned	2026	LLM-assisted systematic review of large language models in clinical medicine	Domain review of clinical LLM studies, not methodology-focused
+doi:10.1088/2632-2153/ae5442	E2	snowball+overturned	2026	Zero-shot evidence-grounded extraction of blood–brain barrier nanoparticle design paramete	Materials-design data extraction, no evidence-synthesis framing
+doi:10.62487/saimsaraed91d2be	E1	snowball+overturned	2026	Research Automation in Healthcare: Scoping Review with ☸SAIMSARA	Broad healthcare research automation, not SR-specific
+doi:10.1186/s41073-026-00231-0	E2	snowball+overturned	2026	Potential and limitations of a large language model in the statistical review of comparati	Statistical/manuscript review, not SR appraisal stage
+doi:10.1016/j.xinn.2025.101253	E2	snowball+overturned	2026	A survey on LLM-as-a-judge	Generic LLM-as-a-judge survey, no evidence-synthesis link
+doi:10.1007/s00417-025-07092-1	E2	snowball+overturned	2026	Comparing the performance of four mainstream large language models on medical literature r	LLMs generate essays from own knowledge, not SR-pipeline assistance
+doi:10.1177/22104968261453132	E2	snowball+overturned	2026	External Knowledge Integration in Large Language Models: A Survey on Methods, Challenges, 	generic RAG/knowledge-integration survey, no review-stage framing
+doi:10.1016/j.egyai.2026.100741	E2	snowball+overturned	2026	AI-driven methodology for mining scientific literature and extracting databases: A case st	generic AI literature-mining/database extraction, no SR framing
+doi:10.1080/17501229.2026.2698703	E2	snowball+overturned	2026	Synthesizing eye-tracking research in L2 listening assessment: a human-AI collaborative sy	domain eye-tracking SR; AI collaboration only incidental

@@ -1,6 +1,6 @@
 # Campaign status
 
-Phase: screening COMPLETE (2026-08-08). Next: snowball round.
+Phase: snowball round COMPLETE (2026-08-08). Catalog: 1291 works, 672 included (533 via snowball, verified by sonnet pass; overturn rate ~13%). Next: classification faceting, then G1.
 
 - Searched: 11 logged queries, 4 sources (1 persistent 429 logged);
   419 raw candidates, 412 after arxiv-DOI dedup (7 merged; the

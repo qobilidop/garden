@@ -1,3 +1,5 @@
 logs/raw/
 candidates.tsv
 work/
+snowball-candidates.tsv
+catalog.tsv
