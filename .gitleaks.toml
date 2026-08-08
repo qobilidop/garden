@@ -1,0 +1,10 @@
+# Extends gitleaks' default rules; see hooks/check.sh for how this runs.
+[extend]
+useDefault = true
+
+# Library notes frontmatter: `citekey: <author><year>-<slug>` lines can cross
+# the generic-api-key entropy threshold (first hit: zhang2026-self-harness).
+[[allowlists]]
+description = "library citekey frontmatter is not a credential"
+regexTarget = "line"
+regexes = ['''^\s*citekey: [a-z][a-z0-9-]+$''']
