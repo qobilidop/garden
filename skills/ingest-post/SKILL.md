@@ -111,8 +111,8 @@ Same bar as ingest-paper §5: read the shadow snapshot, write
 transformation not compression, include an honest assessment (durable vs
 era-bound, unverified claims, author's stake), and read the library —
 cite related entries by citekey and say what this work adds against them.
-Writeback: update the `wiki/` topic pages this work touches (AGENTS.md
-§Wiki).
+Writeback: update the `wiki/` topic pages this work touches
+(skills/tend-wiki).
 
 Before proposing commits, self-review the notes against the source:
 every attribution (who did what) and number re-checked, and every

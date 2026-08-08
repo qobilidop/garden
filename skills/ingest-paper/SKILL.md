@@ -141,7 +141,7 @@ artifact.
   model. Human notes are `notes-<name>.md`, created only when distilled
   content exists.
 - Writeback: update the `wiki/` topic pages this work touches
-  (AGENTS.md §Wiki).
+  (skills/tend-wiki).
 - Before proposing commits, self-review the notes against the source:
   every attribution (who did what) and number re-checked, and every
   criticism verified as carefully as a claim.
