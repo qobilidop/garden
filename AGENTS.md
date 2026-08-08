@@ -28,7 +28,8 @@
 
 - Canonical skills live in `skills/<name>/`; deploy each by committed
   relative symlinks in both `.claude/skills/` (read by Claude Code) and
-  `.agents/skills/` (read by Codex).
+  `.agents/skills/` (the cross-client convention — Codex and other
+  agents).
 
 ## Mirrored agent configuration
 

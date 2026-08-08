@@ -1,6 +1,7 @@
 ---
 name: ingest-paper
-description: Ingest a research paper into the sys library — canonical PDF to the Drive store, mechanical transcript to shadow, author-labeled synthesis notes to sys. Use when asked to ingest, add, or capture a paper (given a URL, DOI, arXiv id, or title) into the library.
+description: Ingest a research paper into the sys library — canonical PDF to the Drive store, mechanical transcript to shadow, author-labeled synthesis notes to sys. Use when asked to ingest, add, or capture a paper (given a URL, DOI, arXiv id, or title) into the library. For informal web-native writing (blog posts, announcements, Q&A answers), use ingest-post instead.
+compatibility: "Requires the sys repo with its private shadow/ checkout, an rclone store: remote, and network access; ./dev.sh supplies pinned tools (rclone, pymupdf4llm) when the host lacks them."
 ---
 
 # Ingest a paper

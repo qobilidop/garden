@@ -1,6 +1,7 @@
 ---
 name: ingest-post
-description: Ingest a post (blog post, org announcement, Q&A answer) into the sys library — HTML snapshot to shadow, load-bearing figures to the Drive store, synthesis notes plus a curated discussions list to sys. Use when asked to ingest, add, or capture a post or article (given a URL) into the library.
+description: Ingest a post (blog post, org announcement, Q&A answer) into the sys library — HTML snapshot to shadow, load-bearing figures to the Drive store, synthesis notes plus a curated discussions list to sys. Use when asked to ingest, add, or capture a post or article (given a URL) into the library. For formally published research papers (arXiv, DOI, venue), use ingest-paper instead.
+compatibility: "Requires the sys repo with its private shadow/ checkout and network access; the rclone store: remote only when figures are captured."
 ---
 
 # Ingest a post
@@ -19,8 +20,8 @@ as author. Never trust memory for bibliographic facts.
 
 ## 2. Citekey
 
-Same rule as ingest-paper §2 — `<lowercase-author><year>-<slug>` with URL
-slug preferred and both candidates normalized. Posts usually take the
+Same rule as `../ingest-paper/SKILL.md` §2 — `<lowercase-author><year>-<slug>`
+with URL slug preferred and both candidates normalized. Posts usually take the
 slug branch (`openai2026-ten-advances-in-mathematics`,
 `weng2026-harness`).
 
@@ -41,7 +42,8 @@ slug branch (`openai2026-ten-advances-in-mathematics`,
   than `retrieved` — except that an older snapshot verified
   byte-identical to the capture suffices, with a frontmatter comment
   (trigger `https://web.archive.org/save/<url>` otherwise). When SPN
-  won't cooperate, the fallback ladder in ingest-paper §4 applies.
+  won't cooperate, the fallback ladder in `../ingest-paper/SKILL.md` §4
+  applies.
 - **Paywalled source**: the free preview is the record — capture it,
   state the paywall in a frontmatter comment, scope the notes to it, and
   name re-capture through the user's browser session as the upgrade
