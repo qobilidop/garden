@@ -1,0 +1,9 @@
+#!/bin/bash
+# stdin lines: <local ref> <local sha> <remote ref> <remote sha>
+set -euo pipefail
+HOOKS="$(cd "$(dirname "$0")" && pwd)"
+zeros=0000000000000000000000000000000000000000
+while read -r _ lsha _ rsha; do
+  [ "$lsha" = "$zeros" ] && continue  # branch deletion pushes nothing
+  "$HOOKS/check.sh" range "$rsha" "$lsha"
+done

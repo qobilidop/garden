@@ -5,6 +5,9 @@
 set -euo pipefail
 cd "$(dirname "$0")"
 
+# Opportunistically arm the leak-guard hooks (idempotent; survives fresh clones).
+git config core.hooksPath hooks 2>/dev/null || true
+
 IMG=sys0-dev
 docker image inspect "$IMG" >/dev/null 2>&1 || docker build -t "$IMG" .devcontainer
 

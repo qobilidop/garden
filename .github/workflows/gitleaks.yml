@@ -1,0 +1,23 @@
+name: Gitleaks
+
+on:
+  push:
+  schedule:
+    # Weekly full-history rescan as detection rules improve. Sat 10:17 UTC =
+    # early Sat morning Pacific (owner asleep) + weekend Actions trough; the
+    # :17 dodges GitHub's congested top-of-hour cron queue.
+    - cron: "17 10 * * 6"
+
+permissions:
+  contents: read
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
