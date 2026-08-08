@@ -21,7 +21,10 @@ multi-session pass) for:
   interpretations, missed context;
 - repetition — any procedure performed the same way twice or more, here
   or across reflections;
-- surprises — anything that contradicted a rule, memory, or expectation.
+- surprises — anything that contradicted a rule, memory, or expectation;
+- dead weight — rules, memories, or skill lines that recent sessions
+  never exercised, that failed to prevent their target error, or that
+  reality has drifted past (renames, moved paths, superseded facts).
 
 Cluster by mechanism, not symptom: two failures earn one lesson only if
 the same missing rule would have prevented both. Every candidate lesson
@@ -55,9 +58,11 @@ not one).
 
 ## 4. Propose itemized deltas
 
-One item per lesson, minimal, localized. Update an existing entry in
-place over adding a near-duplicate; never rewrite a whole file to add a
-line — wholesale rewrites are where accumulated detail dies. Each
+One item per lesson, minimal, localized. A delta may be a removal —
+simplification is evolution too, and every retrospective should look for
+at least one subtraction. Update an existing entry in place over adding
+a near-duplicate; never rewrite a whole file to add a line — wholesale
+rewrites are where accumulated detail dies. Each
 proposal states: **evidence** (what happened), **change** (the delta),
 **expected effect**, **regression risk** (what this could break or
 over-trigger on). Prefer refinements that leave existing artifacts

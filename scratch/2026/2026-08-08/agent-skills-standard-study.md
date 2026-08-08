@@ -129,15 +129,11 @@ Deliberately not adopted, with reasons:
 
 ## Open threads
 
-- Staged for next /evolve, with recurrence evidence from the
-  karpathy2026-llm-wiki run (2026-08-08): a `tools/capture.sh` for the
-  ingest skills' mechanical tier — fetch → snapshot → Wayback
-  availability → `id_` fetch → gunzip → byte-compare → SPN trigger.
-  Every ingestion re-derives this dance in ad-hoc bash (the documented
-  gzip gotcha was re-hit live before being re-applied); a tested script
-  is this study's own "bundle repeated logic" signal applied to the
-  pipeline. Synthesis and self-review stay manual — they are the
-  quality core, not overhead.
+- ~~Staged: `tools/capture.sh` for the ingest skills' mechanical
+  tier~~ — resolved by the same day's /evolve: built, tested against
+  the karpathy captures (both modes reproduce the manual
+  verifications), wired into both ingest skills. Synthesis and
+  self-review stay manual — they are the quality core, not overhead.
 
 - Skill scoping decided 2026-08-08: the ingest pair is correctly
   project-level; evolve's correct home is user level (most sessions

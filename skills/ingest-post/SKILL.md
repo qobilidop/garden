@@ -34,6 +34,13 @@ slug branch (`openai2026-ten-advances-in-mathematics`,
   (`web.archive.org/web/<ts>id_/<url>`) and verify its text against the
   live page through the user's browser; the frontmatter comment records
   this.
+- **Author-versioned source** (a gist or other git-backed page): pin the
+  revision — capture the raw file at its commit sha alongside the page
+  snapshot and verify the two agree. The pinned raw URL is immutable, so
+  any Wayback record of it suffices once verified. When the work is the
+  author's own canonicalization of an earlier post (tweet → gist),
+  record the original appearance as a second identity — frontmatter
+  comment plus first discussions entry, with a text capture to shadow.
 - **Figures → store** (only when load-bearing — content diagrams, not
   site chrome or related-post cards):
   `shadow/store/library/posts/<year>/<citekey>/figures/`. View them; the
@@ -41,9 +48,10 @@ slug branch (`openai2026-ten-advances-in-mathematics`,
 - **Archive**: mutable page, so the Wayback snapshot must be no older
   than `retrieved` — except that an older snapshot verified
   byte-identical to the capture suffices, with a frontmatter comment
-  (trigger `https://web.archive.org/save/<url>` otherwise). When SPN
-  won't cooperate, the fallback ladder in `../ingest-paper/SKILL.md` §4
-  applies.
+  (trigger `https://web.archive.org/save/<url>` otherwise). Run the
+  mechanical tier with `tools/capture.sh --page <url> <dest>` (`--blob`
+  for pinned-revision URLs). When SPN won't cooperate, the fallback
+  ladder in `../ingest-paper/SKILL.md` §4 applies.
 - **Paywalled source**: the free preview is the record — capture it,
   state the paywall in a frontmatter comment, scope the notes to it, and
   name re-capture through the user's browser session as the upgrade
@@ -61,7 +69,8 @@ Sweep where the audience actually is; access paths that work today:
   (r/hackernews, r/hypeurls).
 - X: search through the user's browser session; there is no free
   anonymous read path. Status IDs encode UTC creation time
-  (`(id >> 22) + 1288834974657` ms).
+  (`(id >> 22) + 1288834974657` ms). Quote-cards carry no anchor to the
+  quoted status — click the `div[role="link"]` card via JS to reach it.
 - Others as found: Lobsters (`lobste.rs/domains/<domain>.json`), Tildes,
   Mastodon (public RSS/API).
 

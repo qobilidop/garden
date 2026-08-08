@@ -92,6 +92,10 @@ Immutable blobs (published PDFs, versioned arXiv URLs): any existing
 snapshot suffices. Mutable pages (HTML): the snapshot must be no older than
 `retrieved`, else trigger `https://web.archive.org/save/<url>`.
 
+`tools/capture.sh --blob|--page <url> <dest>` runs the mechanical tier —
+fetch, availability, gzip-aware `id_` verification, SPN trigger — and
+reports JSON (exit 2 = no verified record; fall back manually).
+
 Archive fallbacks, in order, when SPN won't cooperate (523/429 overload,
 302s that never materialize):
 
