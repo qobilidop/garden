@@ -24,6 +24,14 @@
   ---
   ```
 
+## Wiki
+
+- `wiki/<topic>.md`: flat, living topic pages distilling the library
+  across works — agent-written, human-directed, citing works by
+  `[[citekey]]`. Ingestion updates the pages a work touches; a new page
+  needs enough accumulated material to synthesize, never a single work.
+  No index, no per-page frontmatter: the directory lists, git logs.
+
 ## Skills
 
 - Canonical skills live in `skills/<name>/`; deploy each by committed
