@@ -56,7 +56,15 @@ convention.
    discussion clarifying the problem — never agent-initiated. The gate:
    a survey must name the decision or claim it serves ("I need to know
    X before doing Y"); mere topical interest gets a wiki page.
-2. **Hub, not spokes.** Surveys live at `surveys/<slug>/`.
+2. **Method frozen per campaign (decided 2026-08-08).** Each survey
+   pins the skill version it runs under (commit SHA in its protocol).
+   Mid-campaign deviations are permitted but logged as decision
+   records — method *redesign* waits for the post-survey /evolve,
+   which yields skill v(N+1); a survey may then re-baseline under the
+   new version as a fresh frozen release (versioned DOIs once
+   deposition exists) — the PRISMA 2009→2020 pattern. Gate outside
+   the loop, applied to methodology.
+3. **Hub, not spokes.** Surveys live at `surveys/<slug>/`.
    Cross-survey connections surface mechanically through the shared
    substrate — two surveys citing the same `[[citekey]]`, backlinks
    making the overlap visible — which spoke repos with private
@@ -68,12 +76,12 @@ convention.
    Refresh leans on citation chasing over re-querying: new relevant
    work almost certainly cites the survey's included papers or the
    survey itself (wohlin2014's extension deduction).
-3. **Wiki owns topic material.** Whatever fits a wiki entry goes to
+4. **Wiki owns topic material.** Whatever fits a wiki entry goes to
    the wiki, written back continuously during the survey (same
    discipline as ingestion writebacks). Survey syntheses keep only the
    problem-scoped delta, citing wiki pages — no duplicated living
    prose. Frozen depositions cite wiki state at a commit SHA.
-4. **Verification protocol from the dataflow repo's own threat list:**
+5. **Verification protocol from the dataflow repo's own threat list:**
    independent extraction passes on critical works (the mirrored
    Claude/Codex configs allow genuinely different model families), a
    computed disagreement rate, and a human review gate before
@@ -82,13 +90,13 @@ convention.
    (kitchenham2007): Cohen's kappa for dual passes, test–retest on a
    random sample for the single-reviewer case (an agent re-pass),
    sensitivity analysis for claims resting on disputed extractions.
-5. **Tools promoted now, scaffolding later.** The screening scripts
+6. **Tools promoted now, scaffolding later.** The screening scripts
    (arXiv/Crossref/OpenAlex/Semantic Scholar) and the consistency
    invariant (catalog, source notes, syntheses, claims, evidence rows,
    and manuscript must agree — hook-checkable) are the reusable
    machinery. Other campaign scaffolding stays per-survey until a
    second survey demands it.
-6. **Not a site collection yet.** The content.config.ts allowlist
+7. **Not a site collection yet.** The content.config.ts allowlist
    stays wiki + library until rendering surveys is a deliberate,
    separate decision.
 
@@ -154,6 +162,13 @@ tool time; synthesis writing dominated model time. Consequences:
 
 ## Citability and authorship
 
+**Deferred (2026-08-08):** out of scope for the current phase — the
+focus is producing high-quality surveys; DOI minting, deposition, and
+CITATION.cff become relevant when a survey is worth citing. The
+PRISMA-answerability gate above survives the deferral (it is quality
+apparatus, not publishing apparatus). Design preserved below for when
+this phase arrives.
+
 - **The deposition gate answers PRISMA 2020** (page2021): full
   search strategies from the audited logs, near-miss exclusions with
   reasons from the disposition-coded catalog (item 16b), agent-pass
@@ -188,6 +203,15 @@ tool time; synthesis writing dominated model time. Consequences:
   (scratch/2026/2026-06-20/) fresh and extract the skill from it —
   per the bootstrap precedent, the skill is written after one real
   pass, not before.
+- Queued survey candidate (2026-08-08): **agent-assisted systematic
+  review methodology** — scoped to pass the gate (serves the layer's
+  own protocol decisions: agent-adapted kappa, automation vs
+  authorship disclosure, independence across shared model families);
+  runs *after* an object-level campaign, under pinned skill v1, its
+  own deviation log doubling as primary data for its v2. The broad
+  "survey of survey methodology" was rejected: published tertiary
+  studies (Kitchenham's own; arXiv:1909.10751) already carry that
+  completeness work — ingest them as the wiki shelf deepens instead.
 - Site rendering of surveys (collection, layout, search).
 - Manuscript `@citation` parsing into the backlink graph.
 - Deposition script details: DataCite metadata template, what the
