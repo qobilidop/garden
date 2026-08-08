@@ -3,15 +3,13 @@ citekey: liu2026-a-taxonomy-of-self-evolving-agents
 work:
   title: A Taxonomy of Self-evolving Agents
   author: Shilong Liu
-  venue: Self-published, personal blog (lsl.zone)
   date: 2026-07-08
-  x-article: https://x.com/atasteoff/status/2074800880017342665 (companion thread)
-sources:
-  html:  # → shadow snapshot; figures (5 PNGs) → store
-    url: https://lsl.zone/blog/2026/a-taxonomy-of-self-evolving-agents/
-    archived: https://web.archive.org/web/20260801121942/https://lsl.zone/blog/2026/a-taxonomy-of-self-evolving-agents/
-    # snapshot predates retrieved by 6 days, but verified byte-identical to
-    # the capture (save endpoint unreachable from this session)
+source:  # snapshot → shadow; figures → store
+  url: https://lsl.zone/blog/2026/a-taxonomy-of-self-evolving-agents/
+  archived: https://web.archive.org/web/20260801121942/https://lsl.zone/blog/2026/a-taxonomy-of-self-evolving-agents/
+  # predates retrieved, but verified byte-identical to the capture
+discussions:
+  - https://x.com/atasteoff/status/2074800880017342665
 retrieved: 2026-08-07
 notes-by: Claude Fable 5
 notes-date: 2026-08-07
@@ -27,15 +25,16 @@ as a third, less-discussed locus, then sorts current work into three levels:
 artifact iterative optimization, harness self-improvement, and model
 learning without gold answers. The author is a computer-vision/agents
 researcher writing informally; two of the cited systems (Eevee, Alita-G)
-are his own work.
+are the author's own work, flagged as such in the text.
 
 ## The three levels
 
 **Artifact iterative optimization** — the agent improves an external
 output, not itself. Human sets target and evaluation criteria; the agent
 loops propose → check until criteria are met (AlphaEvolve for algorithm
-discovery, Analemma AI's FARS auto-research run — 417 hours, 166 papers,
-~$180k — GPU-kernel search). The post's historical framing: this is
+discovery; Analemma AI's FARS auto-research run — 417 hours, 166 papers,
+~$180k; Recursive Superintelligence's GPU-kernel search). The post's
+historical framing: this is
 neural-architecture-search with the hand-designed operator set and search
 heuristic both replaced by the LLM, which widens the search space and
 improves the searcher at once; longer agent horizons (from <5 tool calls in
@@ -98,6 +97,6 @@ probe than the survey's when/how axes. Durable: the three-locus cut and
 the three questions, both cheap to apply to any concrete system.
 Era-bound: the specific system roster and the "skills are now de facto
 standard" observations; casual factual claims (FARS run costs, dates) are
-repeated from primary sources without verification, and self-citations go
-unflagged. Honest about its own blur — the taxonomy is offered as a way
+repeated from primary sources without verification. Honest about its own
+blur — the taxonomy is offered as a way
 to stop arguing about names, not as a formal partition.
