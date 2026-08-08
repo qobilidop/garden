@@ -24,10 +24,17 @@ rclone `store:` remote; `./dev.sh <cmd>` provides the pinned toolchain
 
 ## 2. Citekey
 
-`<lowercase-first-author-surname><year>-<kebab-cased-title>`, truncating the
-title at the first colon. Example:
-`gao2025-a-survey-of-self-evolving-agents`. The citekey determines every
-path below; no lookup tables.
+`<lowercase-first-author-surname><year>-<slug>`. Slug precedence, first
+match wins:
+
+1. The canonical URL's slug, when the work is web-native and the URL ends
+   in readable words (not an id, date, or hash) — the author's own
+   compression of their title. Take the shorter of URL slug and title form.
+   Example: `openai2026-ten-advances-in-mathematics`.
+2. The kebab-cased title, truncated at the first colon. Example:
+   `gao2025-a-survey-of-self-evolving-agents`.
+
+The citekey determines every path below; no lookup tables.
 
 ## 3. Capture to tiers
 
