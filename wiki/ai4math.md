@@ -1,12 +1,45 @@
 # AI for mathematics
 
 AI systems producing mathematics, and the machinery for trusting what
-they produce. Shelf: [[openai2026-ten-advances-in-mathematics]] (the
-capability claim), [[demoura2026-postmortem-for-kernel-soundness-bug]]
-(the trust infrastructure's failure mode, published the same day), and
-[[jiang2026-from-solvers-to-research]] (the field map: position paper
-+ survey arguing the solver regime is saturated and the frontier is
-research agents).
+they produce. The shelf, by role: the field map
+([[jiang2026-from-solvers-to-research]] — solver regime saturated,
+research agents are the frontier), the founding methods
+([[polu2020-generative-language-modeling-for-automated-theorem-proving]],
+[[jiang2022-draft-sketch-and-prove]],
+[[trinh2024-solving-olympiad-geometry-without-human-demonstrations]]),
+the scale landmarks
+([[hubert2025-olympiad-level-formal-mathematical-reasoning-with-reinforcement-learning]],
+[[novikov2025-alphaevolve]]), the capability claim
+([[openai2026-ten-advances-in-mathematics]]), and the trust
+infrastructure's failure mode
+([[demoura2026-postmortem-for-kernel-soundness-bug]], published the
+same day as the claim).
+
+## How the capability was built
+
+Four method lineages, each anchored by a founding work, converge in
+today's systems. **Generate-and-search**:
+[[polu2020-generative-language-modeling-for-automated-theorem-proving]]
+(GPT-f) cast tactic generation as language modeling, coupled the
+model to the verifier, and proposed expert iteration — the recipe
+[[hubert2025-olympiad-level-formal-mathematical-reasoning-with-reinforcement-learning]]
+(AlphaProof) ran at AlphaZero scale to IMO silver, adding test-time
+RL on self-generated problem variants as a third scaling axis.
+**Informal-guided**: [[jiang2022-draft-sketch-and-prove]] split labor
+between an LLM (structure, from informal drafts) and symbolic
+automation (rigor at the leaves) — the decomposition lineage behind
+today's subgoal provers. **Neuro-symbolic with synthetic data**:
+[[trinh2024-solving-olympiad-geometry-without-human-demonstrations]]
+(AlphaGeometry) trained on 100M symbolically-generated proofs and
+reserved the neural net for exogenous terms (auxiliary
+constructions), the one move deduction engines cannot make.
+**Evolutionary discovery**: [[novikov2025-alphaevolve]] evolves
+programs under a fixed scorer — witnesses and bounds rather than
+proofs, the artifact-side complement to the prover lines. Recurring
+across all four: the generator is never trusted (verifier, prover,
+or scorer gates everything), and scarce formal data is manufactured
+(synthetic proofs, auto-formalized curricula, self-generated
+variants) rather than awaited.
 
 ## The trust architecture
 
@@ -29,6 +62,13 @@ checkers only compose if all are kept current. Verified kernels
 inductive handling inherited the bug precisely because it is a port,
 not yet a verification.
 
+The practices at the trust stack's operating end are visible in
+[[hubert2025-olympiad-level-formal-mathematical-reasoning-with-reinforcement-learning]]:
+every AlphaProof proof gets an independent final check by the
+standard Lean toolchain plus an audit that only three accepted
+axioms were used — the discipline the postmortem's layered argument
+prescribes, run in production.
+
 Above the kernel sits a second trust layer the certificates don't
 cover: **statement fidelity**. [[jiang2026-from-solvers-to-research]]
 documents it as the field's recurring failure — compilation does not
@@ -39,7 +79,11 @@ problem remains open), and formalizers with equal headline scores
 yield sharply different downstream prover success. Together the two
 layers bound what "machine-checked" certifies: the kernel can be
 wrong about the proof, and the formalization can be wrong about the
-statement.
+statement. One elegant inversion: AlphaProof trained on ~80M
+auto-formalized statements *without* fidelity checking — a
+mistranslated problem is still a well-formed training instance.
+Infidelity poisons evaluation but feeds curricula; the layer only
+becomes load-bearing when a claim rides on it.
 
 ## AI on both sides of the ledger
 
@@ -58,15 +102,20 @@ adversaries exactly as they reassure reviewers.
 
 [[jiang2026-from-solvers-to-research]] supplies the shelf's base
 rates. Competition benchmarks are exhausted (miniF2F ~30%→99.6% in
-four years; IMO at medal level), but the Erdős-problem accounting —
+four years — AlphaProof holds that endpoint; IMO at medal level and
+climbing), but the Erdős-problem accounting —
 maintained on a co-author's own database — shows genuinely novel
 AI-primary solutions are the smallest category, dwarfed by AI
 literature reviews and AI-formalized proofs, and outnumbered by
 solutions that turned out to be rediscoveries of published work.
 Claimed pattern: AI succeeds on insight-then-short-proof problems;
 sustained novel construction and concept invention remain the
-boundary (score-function-driven evolution à la AlphaEvolve widens
-search but reorganizes nothing). This is the frame to apply to any
+boundary. [[novikov2025-alphaevolve]] sits exactly on it: within
+evaluator reach it produced provably correct new mathematics (the
+4×4 rank-48 result, Erdős minimum-overlap and kissing-number
+improvements), yet its exploration is bound to predefined scoring
+functions — it widens search without reorganizing concepts, which is
+the survey's precise diagnosis of where discovery stops. This is the frame to apply to any
 capability claim on this shelf: check rediscovery, check
 specification, expect selection bias in what gets reported.
 

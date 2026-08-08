@@ -49,7 +49,10 @@ one loop shape:
 [[gao2025-a-survey-of-self-evolving-agents]] cuts four ways (weights,
 context, tools, architecture); [[liu2026-a-taxonomy-of-self-evolving-agents]]
 coarsens to model/harness/artifact and adds the artifact as a
-first-class locus; [[vincent2026-the-therapist-pattern]] names one the
+first-class locus (its canonical exemplar, [[novikov2025-alphaevolve]],
+is now in the library: evolution over programs under a fixed scorer,
+with MAP-elites diversity and verification-before-persistence at
+population scale); [[vincent2026-the-therapist-pattern]] names one the
 taxonomies miss (identity/persona); [[karpathy2026-llm-wiki]] shows the
 same loop with *knowledge* as the evolving artifact — compile sources
 into a maintained wiki instead of re-retrieving, with the Memex's

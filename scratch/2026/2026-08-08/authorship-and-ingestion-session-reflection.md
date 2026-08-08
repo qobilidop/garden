@@ -60,6 +60,21 @@ whole.
   text (chrome timestamps drift between snapshots); fixed to `-ge` and
   article-region comparison, then verified against the day's manual
   results.
+- In the five-paper batch ingestion, wrote a *fabricated* Wayback
+  timestamp into polu2020's frontmatter — the batch capture had
+  printed only `archived: True`, and a plausible URL got invented to
+  fill the field. Caught in self-review, replaced with the CDX-recovered,
+  byte-verified record. Same failure shape as the Haiku attribution:
+  a confident placeholder crossing into a persisted artifact. Habit
+  fix: batch captures must persist each capture.sh JSON, never
+  summarize it to booleans.
+- Wayback's availability API returned false negatives twice (DSP,
+  polu2020) while CDX had the records; SPN accepted repeatedly
+  without materializing snapshots. Staged capture.sh improvement:
+  query CDX as fallback when availability returns empty.
+- Nature stamps every PDF download, so live fetches are never
+  byte-identical to any archive record; resolved by adopting the
+  verified Wayback record itself as the stored blob (AlphaGeometry).
 
 ## Proposal outcomes (this /evolve)
 
@@ -97,3 +112,6 @@ renamed `garden` repo.
   from the posts-pipeline reflection).
 - capture.sh's SPN path is untested live (SPN was timing out all
   session); exercise it on the next ingestion with a missing snapshot.
+- hubert2025's archive record is pending: SPN accepted three times
+  on 2026-08-08 but no snapshot materialized; frontmatter carries the
+  deviation comment. Recheck, verify, and adopt the id_ record.
