@@ -6,22 +6,24 @@ set -euo pipefail
 
 REPO="$(cd "$(dirname "$0")" && pwd)"
 LIVE="$HOME/.claude"
-FILES=(settings.json statusline.sh)
+# repo-name:live-name; user-CLAUDE.md maps to the global CLAUDE.md because a
+# literal CLAUDE.md here would double-load as directory instructions.
+FILES=(settings.json statusline.sh user-CLAUDE.md:CLAUDE.md)
 
 case "${1:-}" in
   diff)
     status=0
-    for f in "${FILES[@]}"; do
-      diff -u "$REPO/$f" "$LIVE/$f" || status=1
+    for spec in "${FILES[@]}"; do
+      diff -u "$REPO/${spec%%:*}" "$LIVE/${spec##*:}" || status=1
     done
     [ "$status" -eq 0 ] && echo "in sync"
     exit "$status"
     ;;
   pull)
-    for f in "${FILES[@]}"; do cp -p "$LIVE/$f" "$REPO/$f"; done
+    for spec in "${FILES[@]}"; do cp -p "$LIVE/${spec##*:}" "$REPO/${spec%%:*}"; done
     ;;
   push)
-    for f in "${FILES[@]}"; do cp -p "$REPO/$f" "$LIVE/$f"; done
+    for spec in "${FILES[@]}"; do cp -p "$REPO/${spec%%:*}" "$LIVE/${spec##*:}"; done
     ;;
   *)
     echo "usage: sync.sh diff|pull|push   (pull: live -> repo, push: repo -> live)" >&2
