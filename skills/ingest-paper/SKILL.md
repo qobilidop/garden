@@ -34,9 +34,11 @@ match wins:
 2. The kebab-cased title, truncated at the first colon. Example:
    `gao2025-a-survey-of-self-evolving-agents`.
 
-Before kebab-casing, strip trailing reference identifiers from the title
-(issue numbers like `#14576`, version tags, trailing bare numbers) — they
-stay in `work.title`; restore one to the slug only to break a collision.
+Normalize candidates before comparing: strip leading date prefixes from
+URL slugs (`2026-07-04-harness` → `harness`) and trailing reference
+identifiers from titles (issue numbers like `#14576`, version tags, bare
+numbers) — those stay in `work.title`; restore one to the slug only to
+break a collision.
 
 The citekey determines every path below; no lookup tables.
 
