@@ -40,7 +40,13 @@ slug branch (`openai2026-ten-advances-in-mathematics`,
 - **Archive**: mutable page, so the Wayback snapshot must be no older
   than `retrieved` — except that an older snapshot verified
   byte-identical to the capture suffices, with a frontmatter comment
-  (trigger `https://web.archive.org/save/<url>` otherwise).
+  (trigger `https://web.archive.org/save/<url>` otherwise). When SPN
+  won't cooperate, the fallback ladder in ingest-paper §4 applies.
+- **Paywalled source**: the free preview is the record — capture it,
+  state the paywall in a frontmatter comment, scope the notes to it, and
+  name re-capture through the user's browser session as the upgrade
+  path. Claims about the gated remainder from secondary sources are not
+  asserted.
 
 ## 4. Discussions
 
@@ -98,7 +104,8 @@ cite related entries by citekey and say what this work adds against them.
 Before proposing commits, self-review the notes against the source:
 every attribution (who did what) and number re-checked, and every
 criticism verified as carefully as a claim — an unfair critique is a
-worse error than a missed one.
+worse error than a missed one. WebFetch summaries are leads, never
+sources — assert only what the captured record contains.
 
 ## 7. Close
 

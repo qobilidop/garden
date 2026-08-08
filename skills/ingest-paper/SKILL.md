@@ -91,6 +91,22 @@ Immutable blobs (published PDFs, versioned arXiv URLs): any existing
 snapshot suffices. Mutable pages (HTML): the snapshot must be no older than
 `retrieved`, else trigger `https://web.archive.org/save/<url>`.
 
+Archive fallbacks, in order, when SPN won't cooperate (523/429 overload,
+302s that never materialize):
+
+1. An existing snapshot verified identical to the capture — fetch the
+   `id_` record (`web.archive.org/web/<ts>id_/<url>`; the response may be
+   gzipped, decompress before comparing).
+2. For a versioned arXiv URL with no snapshot of its own: a bare-pointer
+   snapshot captured while it served that version, verified
+   sha256-identical to the download, recorded with a frontmatter comment.
+3. When the publisher gates the version-of-record itself (OpenReview
+   challenge pages block curl and WebFetch): fetch the blob from a
+   Wayback `id_` record.
+
+Never record an `archived:` URL that wasn't verified against the
+artifact.
+
 ## 5. Synthesis notes
 
 - Read the shadow text form (transcript/snapshot), not the PDF — that is
