@@ -1,7 +1,7 @@
 ---
 import { getCollection } from 'astro:content'
 import Base from '../../layouts/Base.astro'
-import { extractTitle, fieldOf, shelfOf, workOf } from '../../lib/works'
+import { dateOf, extractTitle, fieldOf, shelfOf, workOf } from '../../lib/works'
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '')
 const entries = (await getCollection('library')).map((e) => ({
@@ -10,6 +10,7 @@ const entries = (await getCollection('library')).map((e) => ({
   shelf: shelfOf(e),
   author: workOf(e).author,
   synthesis: fieldOf(e, 'synthesis'),
+  date: dateOf(e),
 }))
 
 const byYear = new Map<string, typeof entries>()
@@ -20,7 +21,10 @@ for (const e of entries) {
 }
 const years = [...byYear.keys()].sort((a, b) => b.localeCompare(a))
 for (const year of years) {
-  byYear.get(year)!.sort((a, b) => a.id.localeCompare(b.id))
+  byYear.get(year)!.sort(
+    (a, b) =>
+      b.date.sortKey.localeCompare(a.date.sortKey) || a.id.localeCompare(b.id),
+  )
 }
 ---
 
@@ -40,6 +44,7 @@ for (const year of years) {
               <a href={`${base}/library/${e.id}/`}>{e.title}</a>
               <span class="kind">
                 {e.shelf?.kind === 'papers' ? 'paper' : 'post'}
+                {e.date.month && ` · ${e.date.month}`}
               </span>
               {e.author && <span class="author">{e.author}</span>}
               {e.synthesis && <span class="synthesis">{e.synthesis}</span>}
