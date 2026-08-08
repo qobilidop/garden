@@ -198,18 +198,19 @@ this phase arrives.
 
 ## Open items
 
-- Sequencing: bootstrap by migrating the dataflow survey's residue, or
-  run the parked executable-formal-HW-spec survey
-  (scratch/2026/2026-06-20/) fresh and extract the skill from it —
-  per the bootstrap precedent, the skill is written after one real
-  pass, not before.
-- Queued survey candidate (2026-08-08): **agent-assisted systematic
-  review methodology** — scoped to pass the gate (serves the layer's
-  own protocol decisions: agent-adapted kappa, automation vs
-  authorship disclosure, independence across shared model families);
-  runs *after* an object-level campaign, under pinned skill v1, its
-  own deviation log doubling as primary data for its v2. The broad
-  "survey of survey methodology" was rejected: published tertiary
+- Sequencing (revised 2026-08-08, Bili's call): the bootstrap campaign
+  IS the meta survey — **agent-assisted systematic review
+  methodology** (surveys/agent-assisted-review-methodology/), run
+  under pinned method v0 (this design note + protocol), iterating
+  survey ↔ skill a few rounds until the method stabilizes; only then
+  do object-level campaigns (dataflow-residue migration, the parked
+  HW-spec survey) run under the matured skill. Rationale: the meta
+  survey's subject makes its own deviation log primary data, so
+  skill-development cycles and survey-improvement cycles are the same
+  cycles. Genre: systematic map; scope: LLM era (2020+) core with
+  pre-LLM lineage as background via its existing reviews; scale:
+  compact (~100–300 screened, 15–25 G1 deep-reads). The broad
+  "survey of survey methodology" stays rejected: published tertiary
   studies (Kitchenham's own; arXiv:1909.10751) already carry that
   completeness work — ingest them as the wiki shelf deepens instead.
 - Site rendering of surveys (collection, layout, search).
