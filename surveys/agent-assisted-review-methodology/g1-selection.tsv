@@ -1,0 +1,26 @@
+key	year	title	reason
+doi:10.2196/80247	2025	Transparent Reporting of AI in Systematic Literature Reviews: Development of the PRISMA-	RQ3: PRISMA-family transparent-AI-reporting extension
+doi:10.1002/cesm.70063	2025	Responsible Integration of Artificial Intelligence in Rapid Reviews: A Position Statemen	RQ3: responsible-AI position for rapid reviews (Cochrane venue)
+doi:10.1186/s12874-021-01451-2	2021	Guidance for using artificial intelligence for title and abstract screening while conduc	RQ3: pre-LLM canonical guidance for AI title/abstract screening
+doi:10.31219/osf.io/ju8dk	2024	Leveraging Artificial Intelligence for Systematic Reviews: The FRAISR Reporting Framewor	RQ3: FRAISR AI-reporting framework
+arxiv:2511.12635	2025	LLM4SCREENLIT: Recommendations on Assessing the Performance of Large Language Models for	RQ2/RQ3: recommendations for assessing LLM screening performance
+doi:10.2139/ssrn.7048543	2026	HAICO-SLR Guide: Conducting and Reporting Human-AI Collaboration in Systematic Literatur	RQ3/RQ4: HAICO-SLR human-AI collaboration conduct+reporting guide
+doi:10.1101/2025.11.03.25339455	2025	Dual-Model LLM Ensemble via Web Chat Interfaces Reaches Near-Perfect Sensitivity for Sys	RQ4/RQ2: dual-model ensemble screening, near-perfect sensitivity claim
+arxiv:2307.06464	2023	Assessing the Ability of ChatGPT to Screen Articles for Systematic Reviews	RQ2: early ChatGPT screening evaluation (SE)
+doi:10.1109/esem64174.2025.00053	2025	SESR-Eval: Dataset for Evaluating LLMs in the Title-Abstract Screening of Systematic Rev	RQ2: SESR-Eval SE screening benchmark
+doi:10.1109/saner-c67878.2026.00047	2026	Empirical Evaluation of Open Source Large Language Models for Paper Selection: Are LLMs 	RQ2: open-source LLM paper selection (SE)
+doi:10.2196/64682	2025	GPT-3.5 Turbo and GPT-4 Turbo in Title and Abstract Screening for Systematic Reviews	RQ2: GPT-3.5/4 screening with human comparison (med)
+doi:10.1136/bmjebm-2023-112678	2023	Enhancing title and abstract screening for systematic reviews with GPT-3.5 turbo	RQ2: GPT screening enhancement, human baseline
+doi:10.1016/j.jclinepi.2024.111533	2024	Benchmarking Human–AI collaboration for common evidence appraisal tools	RQ2: human-AI collaboration benchmark, appraisal tools
+doi:10.7326/m22-0092	2022	Accuracy and Efficiency of Machine Learning–Assisted Risk-of-Bias Assessments in “Real-W	RQ2: pre-LLM ML risk-of-bias real-world accuracy
+doi:10.1136/bmjebm-2024-112990	2024	Pilot study on large language models for risk-of-bias assessments in systematic reviews:	RQ2: LLM risk-of-bias pilot
+doi:10.12688/f1000research.151493.2	2024	(Semi)automated approaches to data extraction for systematic reviews and meta-analyses i	RQ1/RQ2: extraction-automation approaches review
+doi:10.1145/3674805.3690743	2024	Data extraction for systematic mapping study using a large language model - a proof-of-c	RQ2: LLM data extraction for mapping study (SE)
+doi:10.1016/j.infsof.2021.106589	2021	Automation of systematic literature reviews: A systematic literature review	RQ1 anchor: automation-of-SLRs tertiary (SE)
+doi:10.1186/s13643-024-02666-2	2024	Large language models, updates, and evaluation of automation tools for systematic review	RQ1 anchor: LLMs + automation tool landscape update
+doi:10.64898/2026.07.30.26359375	2026	A PRISMA-Aligned Agentic Framework for Medical Systematic Reviews and Evidence Synthesis	RQ1: PRISMA-aligned agentic end-to-end framework
+doi:10.2196/56780	2024	Potential Roles of Large Language Models in the Production of Systematic Reviews and Met	RQ1 anchor: roles of LLMs across SR production
+doi:10.1109/seaa53835.2021.00015	2021	Automated Support for Searching and Selecting Evidence in Software Engineering: A Cross-	RQ1: automated search/selection cross-domain (SE)
+doi:10.1007/978-3-032-02813-6_1	2025	Augmenting Systematic Literature Reviews: A Human-AI Collaborative Framework	RQ4: human-AI collaborative SLR framework (SE)
+arxiv:2607.05031	2026	LLM-Based Test Oracles: Source-of-Authority Taxonomy -- A Systematic Literature Review	exemplar: domain SLR reporting its own LLM screening pipeline
+doi:10.2196/76130	2026	The Phases of Living Evidence Synthesis Using AI: Living Evidence Synthesis (Version 1)	RQ1: AI living-evidence-synthesis phases (living-survey relevance)

@@ -1,6 +1,6 @@
 # Campaign status
 
-Phase: snowball round COMPLETE (2026-08-08). Catalog: 1291 works, 672 included (533 via snowball, verified by sonnet pass; overturn rate ~13%). Next: classification faceting, then G1.
+Phase: snowball round COMPLETE (2026-08-08). Catalog: 1291 works, 672 included (533 via snowball, verified by sonnet pass; overturn rate ~13%). Classification COMPLETE: map.tsv (672 faceted; screen=225, extract=113, meta=111, end2end=90; human-agree evidence=260; med=412 vs se=17). G1 selected (25, g1-selection.tsv). Next: G1 capture pipelines, syntheses, baseline.
 
 - Searched: 11 logged queries, 4 sources (1 persistent 429 logged);
   419 raw candidates, 412 after arxiv-DOI dedup (7 merged; the
