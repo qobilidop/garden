@@ -58,6 +58,13 @@ touch files the client itself created.
 ## Maintenance triggers
 
 - Auth broken (token revoked/expired/scope error): redo step 3 only.
+- **Revoking any refresh token for the client revokes the client's whole
+  grant for that user** — every token dies, including newer ones from
+  separate consents (observed 2026-08-08: revoking a superseded
+  full-scope token 401'd the active drive.file token). To retire a
+  superseded token, revoke and immediately re-run step 3; there is no
+  selective revocation. Also scrub any plaintext token JSON left in
+  task-output/temp files once the config holds it.
 - Client secret leaked: console → Clients → reset secret → steps 2–3.
 - New machine: copy rclone.conf, or redo step 3 there.
 - Any scope or folder change: steps 2–5, remembering drive.file cannot

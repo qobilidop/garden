@@ -48,6 +48,10 @@ migrated the store remote to an app-scoped OAuth client, and then ran
 - The Wayback SPN service was effectively down all evening; every
   archive URL was ultimately satisfied by verification against existing
   records instead. The fallback ladder is now in the ingest skills.
+- At wrap-up, revoking a superseded OAuth refresh token killed the
+  *active* token too — Google revokes the client's entire grant, not
+  the single token. Assumed otherwise, verified only after acting;
+  recovered by re-running the playbook's re-auth step. Playbook amended.
 
 ## Proposal outcomes (first /evolve run)
 
