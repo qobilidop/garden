@@ -13,7 +13,7 @@ sources:
     archived: http://web.archive.org/web/20260606071006/https://openreview.net/pdf?id=ehfRiF0R3a
 retrieved: 2026-08-07
 notes-by: Claude Fable 5
-notes-date: 2026-08-07
+notes-date: 2026-08-08  # figure pass 2026-08-08
 ---
 
 # Notes: Voyager
@@ -48,7 +48,11 @@ iron 6.4×, and Voyager alone reaches diamond (one of three runs). In a
 fresh world with cleared inventory, Voyager solves all four unseen tasks;
 no baseline solves any — and bolting Voyager's skill library onto AutoGPT
 lifts it from zero to partial success, showing the library is a portable
-asset, not an entangled component. The ablations rank the parts:
+asset, not an entangled component. A limitations-section demo (Fig. 10)
+shows one capability the loop alone lacks: with a human supplying visual
+critique or curriculum, Voyager builds complex 3D structures (nether
+portal, house) — spatial feedback its text-only self-verification cannot
+provide. The ablations rank the parts:
 removing the curriculum costs 93% of discovered items, removing
 self-verification costs 73% (the largest of any feedback type), no skill
 library means plateau in later stages, and GPT-3.5 in place of GPT-4 for

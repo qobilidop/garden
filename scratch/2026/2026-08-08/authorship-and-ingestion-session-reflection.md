@@ -28,6 +28,13 @@ whole.
   retrospectives should mine for dead weight — unexercised rules,
   drifted facts, stale names — not only for additions. Now in the
   evolve skill (§1 mining bullet, §4 removal deltas).
+- **Figure-blind synthesis mostly survived its audit.** The user caught
+  that ingest-paper's read-the-transcript rule meant no figure was ever
+  viewed (pymupdf4llm drops them silently). The skill now requires
+  viewing load-bearing figures from the stored PDF, and the reread of
+  all four figure-bearing papers confirmed the existing notes with one
+  real gap (Voyager's human-feedback building demo) — captions carry
+  more than expected, but the rule was still wrong.
 - **The standard repaid study immediately.** The YAML-colon hazard the
   client-implementation guide warns about was reproduced live in this
   repo's own frontmatter within the hour, and caught by the validator

@@ -117,6 +117,10 @@ artifact.
 - Read the shadow text form (transcript/snapshot), not the PDF — that is
   what it exists for. For long works, navigate by heading structure and read
   targeted slices; do not skip the parts a fair assessment needs.
+- The transcript carries figure captions, not figures. Before writing
+  synthesis, view the load-bearing figures directly from the stored PDF
+  (read the pages their captions name) — the synthesis should reflect
+  what they show.
 - Write transformation, not compression: what someone who understood the
   paper would say, never a condensed transcript. A note writable only with
   the source open belongs in shadow, not here.
