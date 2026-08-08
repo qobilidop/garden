@@ -95,6 +95,11 @@ transformation not compression, include an honest assessment (durable vs
 era-bound, unverified claims, author's stake), and read the library —
 cite related entries by citekey and say what this work adds against them.
 
+Before proposing commits, self-review the notes against the source:
+every attribution (who did what) and number re-checked, and every
+criticism verified as carefully as a claim — an unfair critique is a
+worse error than a missed one.
+
 ## 7. Close
 
 - `tools/store.sh push` only when figures went to store.
