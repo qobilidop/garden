@@ -126,3 +126,19 @@ Deliberately not adopted, with reasons:
   frontmatter invites drift.
 - `license` field: the repo's licenses govern; add only if a skill is
   exported standalone.
+
+## Open threads
+
+- Skill scoping decided 2026-08-08: the ingest pair is correctly
+  project-level; evolve's correct home is user level (most sessions
+  happen outside sys0, and a harness-improvement ritual confined to the
+  harness repo misses most of its evidence). Promote on the first real
+  cross-repo need, not before — promotion is a design task, not a
+  symlink: the body's routing surfaces (skills/, config/ mirrors,
+  scratch/) must be re-grounded as "the sys repo" by stable location
+  instead of cwd, and reflections from private-repo sessions need an
+  explicit rule for what may cross into public scratch. Canonical file
+  stays in sys0; deployment via `~/.claude/skills/` and
+  `~/.agents/skills/` symlinks managed with the other user-scope
+  config. Project copy shadows the user copy on collision, so the dual
+  deploy resolves cleanly in sys0 itself.
