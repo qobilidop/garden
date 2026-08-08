@@ -1,7 +1,6 @@
-# Bili's Digital Garden
+# sys0
 
-[![Devcontainer](https://github.com/qobilidop/garden/actions/workflows/devcontainer.yml/badge.svg)](https://github.com/qobilidop/garden/actions/workflows/devcontainer.yml)
-[![Gitleaks](https://github.com/qobilidop/garden/actions/workflows/gitleaks.yml/badge.svg)](https://github.com/qobilidop/garden/actions/workflows/gitleaks.yml)
+Incarnation 0 of sys — Bili's public hub for knowledge, skills, and process.
 
 ## License
 
