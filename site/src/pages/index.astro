@@ -20,11 +20,12 @@ const recent = library
 <Base description="A personal research system: a wiki distilling a reading library.">
   <h1>sys0</h1>
   <p>
-    The public face of a personal research system. Three layers live here:
-    the <a href={`${base}/wiki/`}>wiki</a> — living topic pages that distill
-    a reading library across works — the
+    The public face of a personal research system. Three layers live here,
+    in order of refinement: the
     <a href={`${base}/library/`}>library</a> — the works themselves, papers
-    and posts, each with synthesis notes — and
+    and posts, each with synthesis notes — the
+    <a href={`${base}/wiki/`}>wiki</a> — living topic pages that distill
+    the library across works — and
     <a href={`${base}/surveys/`}>surveys</a> — manuscripts of systematic
     review campaigns run under a pinned method. Wiki pages cite works; work
     pages list the topics that cite them.
@@ -35,6 +36,17 @@ const recent = library
     the system itself — its conventions, skills, and tools — is developed
     in the open.
   </p>
+
+  <h2>Recently ingested</h2>
+  <ul>
+    {
+      recent.map((w) => (
+        <li>
+          <a href={`${base}/library/${w.id}/`}>{w.title}</a>
+        </li>
+      ))
+    }
+  </ul>
 
   <h2>Topics</h2>
   <ul>
@@ -53,17 +65,6 @@ const recent = library
       surveys.map((e) => (
         <li>
           <a href={`${base}/surveys/${e.id}/`}>{extractTitle(e.body ?? '') ?? e.id}</a>
-        </li>
-      ))
-    }
-  </ul>
-
-  <h2>Recently ingested</h2>
-  <ul>
-    {
-      recent.map((w) => (
-        <li>
-          <a href={`${base}/library/${w.id}/`}>{w.title}</a>
         </li>
       ))
     }
