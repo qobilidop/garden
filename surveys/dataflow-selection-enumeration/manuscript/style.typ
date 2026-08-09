@@ -1,25 +1,7 @@
-#let paper(body) = {
-  set page(
-    paper: "us-letter",
-    margin: (x: 0.9in, y: 0.78in),
-    numbering: "1",
-    number-align: center,
-  )
-  set text(
-    font: ("Libertinus Serif", "DejaVu Serif"),
-    size: 10.5pt,
-    lang: "en",
-  )
-  set par(justify: true, leading: 0.58em)
-  set heading(numbering: "1.")
-  set list(indent: 1.15em, body-indent: 0.55em)
-  show link: set text(fill: rgb("245b8a"))
-  show raw.where(block: true): set text(
-    font: "DejaVu Sans Mono",
-    size: 8.7pt,
-  )
-  body
-}
+// Theorem apparatus for the manuscript sections. Page style comes
+// from the shared surveys/style.typ (which was ported from this
+// manuscript's original style); only the formal-statement machinery
+// is local.
 
 #let named-statement(kind, title, body) = {
   let number = counter(kind)
