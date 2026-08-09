@@ -13,24 +13,21 @@ after every small change.
 
 ## Deferred to the next update
 
-- **Build the syntheses layer.** `record/syntheses/` (cross-source
-  understanding between `sources/` evidence and the manuscript) is
-  now the standard record shape; this survey predates it. Distill
-  the manuscript's four organizing findings into thematic synthesis
-  files plus a `current-position.md` entry point, then re-check that
-  every manuscript findings claim has a synthesis home.
-- **Reconstruct the protocol.** The selection rules, key grammar,
-  and update procedure live in this README; extract them into a
-  `record/protocol.md` per the protocol-before-search discipline, so
-  the contract is a document rather than sections of the entry
-  point.
-- **Start the claims ledger and evidence binding.** `record/claims.md`
-  (statused synthesis claims with scope and closest established
-  result) and `record/evidence.md` (evidence items binding claims
-  and manuscript sections to source-note anchors) are now standard;
-  seed the claims from the manuscript's four organizing findings
-  when building the syntheses layer, and register the manuscript's
-  technical citations as evidence rows.
+- **Register the remaining manuscript citations as evidence
+  records.** `evidence.md` covers the findings-bearing citations;
+  the method-canon citations (their notes live as library pages, not
+  record notes) and full section-by-section coverage are not yet
+  registered.
+- **Reconcile manuscript compressions flagged by the syntheses.**
+  The syntheses carry five places where the manuscript compresses
+  what the notes support (hamel2021's graded risk-ranking, the
+  direction of fagerberg2025's adjudication relabels, huang2026's
+  middle ablation, the PRISMA-AI status discrepancy, and the
+  unstaged oami2025-vs-madeyski2025 metric dispute); fold them into
+  the manuscript on its next revision.
+- **Grade evidence certainty.** `evidence.md` supports the optional
+  GRADE-inspired **Certainty** field; grade the 20 records on the
+  next evidence touch.
 - **Fill per-row decided keys.** Historical log rows carry counts
   only; future search and snowball rows record their
   `included_keys`/`excluded_keys` per the unified write contract.

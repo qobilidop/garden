@@ -77,7 +77,7 @@ def status(args: argparse.Namespace) -> int:
             evidence += f" ({len(thin)} claims on a single item)"
     print(evidence)
     template = SURVEY / "sources" / "_template.md"
-    if template.is_file():
+    if template.is_file() and "Template version" in template.read_text(encoding="utf-8"):
         current_source_notes = sum(
             "- **Template version:** 2" in path.read_text(encoding="utf-8")
             for path in source_notes

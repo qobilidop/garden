@@ -56,6 +56,20 @@ def read_tsv(path, expected, errors):
         return list(reader)
 
 
+def markdown_heading_anchors(text):
+    """Return GitHub-style fragments for the simple headings in source notes."""
+    anchors = set()
+    occurrences = {}
+    for match in re.finditer(r"^#{1,6}\s+(.+?)\s*$", text, re.MULTILINE):
+        heading = re.sub(r"[`*_~]", "", match.group(1)).lower()
+        base = re.sub(r"[^\w\s-]", "", heading)
+        base = re.sub(r"\s+", "-", base.strip())
+        duplicate = occurrences.get(base, 0)
+        occurrences[base] = duplicate + 1
+        anchors.add(base if duplicate == 0 else f"{base}-{duplicate}")
+    return anchors
+
+
 def duplicates(values):
     return sorted(value for value, count in Counter(values).items() if count > 1)
 
@@ -125,7 +139,11 @@ def main():
         if row["kind"] == "audit" and row["notes"] == "":
             errors.append(f"log.tsv:{lineno}: audit row without notes")
 
-    notes = sorted((RECORD / "sources").glob("*.md"))
+    notes = sorted(
+        path
+        for path in (RECORD / "sources").glob("*.md")
+        if path.name != "_template.md"
+    )
     reads = Counter()
     note_keys = set()
     required_sections = {"## Evidence", "## Bearing on RQs", "## Evidence limits"}
@@ -225,6 +243,100 @@ def main():
     for value in sorted(bib_keys - citations):
         errors.append(f"uncited references.bib entry: {value}")
 
+    claims_text = (RECORD / "claims.md").read_text(encoding="utf-8")
+    claim_ids = set(re.findall(r"^### (C\d{2})\s+—", claims_text, re.M))
+    if not claim_ids:
+        errors.append("claims ledger has no Cxx claims")
+
+    evidence_text = (RECORD / "evidence.md").read_text(encoding="utf-8")
+    evidence_field_map = {
+        "Finding": "finding",
+        "Works": "citekeys",
+        "Anchors": "anchors",
+        "Supports": "supports",
+        "Manuscript": "manuscript",
+        "Scope": "scope",
+        "Caveat": "caveat",
+        "Certainty": "certainty",
+    }
+    evidence_ids = set()
+    supported_claims = set()
+    anchor_cache = {}
+    evidence_count = 0
+    for block in re.split(r"(?m)^### ", evidence_text)[1:]:
+        evidence_count += 1
+        identifier = block.splitlines()[0].strip()
+        if not re.fullmatch(r"E\d{3}", identifier):
+            errors.append(f"invalid evidence id: {identifier}")
+            continue
+        if identifier in evidence_ids:
+            errors.append(f"duplicate evidence id: {identifier}")
+        evidence_ids.add(identifier)
+        record = {column: "-" for column in evidence_field_map.values()}
+        for label, value in re.findall(
+            r"(?m)^- \*\*([A-Za-z]+):\*\* (.*)$", block
+        ):
+            if label not in evidence_field_map:
+                errors.append(f"{identifier}: unknown evidence field {label!r}")
+                continue
+            record[evidence_field_map[label]] = value.strip()
+        if record["certainty"] not in ("-", "high", "moderate", "low"):
+            errors.append(f"{identifier}: invalid certainty {record['certainty']!r}")
+        for field in ("finding", "scope", "caveat"):
+            if record[field] in ("", "-"):
+                errors.append(f"{identifier}: empty {field}")
+        record_claims = [] if record["supports"] == "-" else [
+            claim.strip() for claim in record["supports"].split(",")
+        ]
+        for claim in record_claims:
+            if claim not in claim_ids:
+                errors.append(f"{identifier}: supports unknown claim {claim}")
+            supported_claims.add(claim)
+        record_labels = [] if record["manuscript"] == "-" else [
+            label.strip() for label in record["manuscript"].split(",")
+        ]
+        for label in record_labels:
+            if label not in labels:
+                errors.append(f"{identifier}: unknown manuscript label {label}")
+        if not record_claims and not record_labels:
+            errors.append(f"{identifier}: supports neither a claim nor the manuscript")
+        record_keys = [] if record["citekeys"] == "-" else [
+            key.strip() for key in record["citekeys"].split(",")
+        ]
+        if not record_keys:
+            errors.append(f"{identifier}: no citekeys")
+        anchor_refs = {}
+        for reference in record["anchors"].split(";"):
+            reference = reference.strip()
+            match = re.fullmatch(
+                r"sources/([A-Za-z0-9_.-]+)\.md#([A-Za-z0-9_.-]+)", reference
+            )
+            if match is None:
+                errors.append(f"{identifier}: invalid anchor {reference!r}")
+                continue
+            anchor_refs[match.group(1)] = match.group(2)
+        for citekey in record_keys:
+            note = RECORD / "sources" / f"{citekey}.md"
+            if not note.is_file():
+                errors.append(f"{identifier}: {citekey} has no source note")
+                continue
+            if citekey not in anchor_refs:
+                errors.append(f"{identifier}: no anchor for {citekey}")
+                continue
+            if citekey not in anchor_cache:
+                anchor_cache[citekey] = markdown_heading_anchors(
+                    note.read_text(encoding="utf-8")
+                )
+            if anchor_refs[citekey] not in anchor_cache[citekey]:
+                errors.append(
+                    f"{identifier}: missing anchor "
+                    f"sources/{citekey}.md#{anchor_refs[citekey]}"
+                )
+        for citekey in set(anchor_refs) - set(record_keys):
+            errors.append(f"{identifier}: anchors unlisted citekey {citekey}")
+    for claim in sorted(claim_ids - supported_claims):
+        errors.append(f"claim has no evidence record: {claim}")
+
     stage_cross = {}
     for stage in sorted(STAGES):
         rows = [row for row in included if row["stage"] == stage]
@@ -250,6 +362,8 @@ def main():
         "evidence": dict(sorted(dimensions["evidence"][1].items())),
         "setting": dict(sorted(dimensions["setting"][1].items())),
         "stage_cross_table": stage_cross,
+        "claims": len(claim_ids),
+        "evidence_records": evidence_count,
         "source_notes": len(notes),
         "read_depth": dict(sorted(reads.items())),
         "curated_source_notes": len(curated),
