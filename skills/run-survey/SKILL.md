@@ -139,11 +139,17 @@ Shape note, as intent rather than drift.
 - On a material evidence or synthesis revision, preserve every existing
   `notes-by` writer and append the reviser (human name or agent + model).
   Mechanical edits do not add authorship.
-- Optional syntheses layer (`record/syntheses/`): thematic living
-  documents stating the current cross-paper understanding — they
-  compare definitions and results, never concatenate paper
-  summaries; each reading batch names the syntheses it affects, and
-  git keeps superseded interpretations.
+- The syntheses layer (`record/syntheses/`) is the survey's
+  understanding, between evidence and presentation: thematic living
+  documents comparing definitions and results across works — never
+  concatenated paper summaries — with `current-position.md` as the
+  compact entry point. Three layers, one direction: `sources/` holds
+  evidence, `syntheses/` holds cross-source understanding, the
+  manuscript presents it. Understanding changes land in syntheses
+  first, never manuscript-first; each reading batch names the
+  syntheses it affects; a manuscript claim with no synthesis home is
+  a review finding. Git keeps superseded interpretations. (This is
+  the survey-local instance of the library → wiki pattern.)
 - Per-paper definition of done: a work is integrated only when its
   disposition is recorded, any required source note is anchored in
   the primary work, affected syntheses and claims are updated, and
@@ -206,9 +212,10 @@ over the whole survey directory and iterate to closure:
 - *Consistency auditor* — recompute every number mechanically across
   manuscript, landing page, and record; hunt cross-artifact
   disagreement.
-- *Cold referee* — claims versus the evidence notes: overreach,
-  unscoped superlatives, uncaveated preprint numbers, structure and
-  prose a hostile methodologist would flag.
+- *Cold referee* — claims versus the syntheses and evidence notes:
+  overreach, unscoped superlatives, uncaveated preprint numbers,
+  manuscript claims with no synthesis home, structure and prose a
+  hostile methodologist would flag.
 - *Resumability stress-test* — execute the record README as a
   stranger with only the survey directory; every ambiguity is a
   finding.
@@ -250,9 +257,12 @@ fix introduces before persisting it.
   contract: scope, search parameters, snowball spec, selection rules
   with examples, key grammar, facet tokens, curation bar, numbered
   update procedure — build docs stay in AGENTS.md and this skill,
-  pointed to rather than duplicated), `catalog.tsv` and `log.tsv`
-  per the §1 grammar, `sources/`, and, when the manuscript publishes
-  quantities derived from the catalog, a campaign-local
+  pointed to rather than duplicated), `status.md` (current coverage
+  and maintenance state, with deferred work for the next update as a
+  section — the survey's todo lives here, not in a separate file),
+  `catalog.tsv` and `log.tsv` per the §1 grammar, `sources/`,
+  `syntheses/`, and, when the manuscript publishes quantities
+  derived from the catalog, a campaign-local
   `record/scripts/check.py`; the source fetchers, snowball tool, and
   registry-driven update tool ship with this skill (`scripts/`). The validator checks schemas, keys, facet
   tokens, source-note and bibliography/citation closure, and prints

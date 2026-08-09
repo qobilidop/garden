@@ -135,7 +135,3 @@ source notes, syntheses, evidence rows, and manuscript changes; do
 not advance `updates/state.tsv` before that reconciliation. Updates
 are staged on demand; any plausible close competitor or new
 vocabulary theme starts one immediately.
-
-Deferred from the standalone repo: its hardened PDF gate (PDF/A-2b
-output, Poppler structural diagnostics, pinned toolchain digests) is
-not yet ported to the shared manuscript build.

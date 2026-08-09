@@ -29,3 +29,12 @@ competitor or new vocabulary theme starts an update immediately.
 Current interpretation is summarized in `syntheses/current-position.md`.
 Publication-snapshot requirements are in `protocol.md`; update execution steps
 are in `updates/README.md`.
+
+## Deferred to the next update
+
+- **Curate a landing-page reading list.** The standard survey landing
+  carries a taxonomy-sectioned reading list; this survey's landing
+  predates it. Curate anchors from the 202 deep reads.
+- **Port the hardened PDF gate.** The standalone repo's PDF/A-2b
+  output and Poppler structural diagnostics (pinned toolchain
+  digests) are not yet ported to the shared manuscript build.
