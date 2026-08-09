@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Compile survey manuscripts into site/public/ for deploy.
 
-For each surveys/<slug>/ with manuscript.typ + manuscript-html.typ:
+For each surveys/<slug>/manuscript/ with manuscript.typ +
+manuscript-html.typ:
   site/public/surveys/<slug>/manuscript.pdf   (paged wrapper)
   site/public/surveys/<slug>/manuscript.html  (HTML wrapper, styled)
 
@@ -30,8 +31,8 @@ def compile_typ(src, out, *flags):
 def main():
     css = CSS.read_text()
     built = []
-    for paged in sorted(REPO.glob("surveys/*/manuscript.typ")):
-        slug = paged.parent.name
+    for paged in sorted(REPO.glob("surveys/*/manuscript/manuscript.typ")):
+        slug = paged.parent.parent.name
         html_src = paged.parent / "manuscript-html.typ"
         out_dir = REPO / "site" / "public" / "surveys" / slug
         out_dir.mkdir(parents=True, exist_ok=True)

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate ../references.bib from refs.tsv (citekey<TAB>doi:...|arxiv:...).
+"""Generate references.bib from refs.tsv (citekey<TAB>doi:...|arxiv:...).
 
 Entry keys are rewritten to our citekeys. DOI entries come from doi.org
 content negotiation (Crossref/DataCite BibTeX); arXiv entries from the
@@ -13,7 +13,7 @@ import urllib.request
 from pathlib import Path
 
 HERE = Path(__file__).parent
-OUT = HERE.parent / "references.bib"
+OUT = HERE / "references.bib"
 
 
 def fetch(url, accept=None):

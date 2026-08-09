@@ -53,11 +53,12 @@
   `wiki/`, `library/`, and `surveys/*/index.md` — the three
   collections in `site/src/content.config.ts` are the allowlist — and
   writes nothing back; presentation needs never reshape note
-  conventions. Survey manuscripts are Typst (`manuscript.typ` paged,
-  `manuscript-html.typ` HTML, shared `content.typ`/`meta.typ`),
-  compiled into `site/public/` by `site/scripts/build-manuscripts.py`
-  (typst pinned in the dev image), standalone by design — the landing
-  page `index.md` is the citekey/backlink surface.
+  conventions. A survey groups as `index.md` (landing page, the
+  citekey/backlink surface) + `campaign/` (frozen record) +
+  `manuscript/` (Typst paper: paged + HTML wrappers over shared
+  `content.typ`/`meta.typ`, standalone by design), compiled into
+  `site/public/` by `site/scripts/build-manuscripts.py` (typst pinned
+  in the dev image).
 - Owned logic lives in `site/src/lib/` (wikilink resolution, backlink
   graph, work metadata); everything else is rented substrate (Astro,
   remark, KaTeX, Pagefind, Mermaid). An unresolved `[[target]]` fails
