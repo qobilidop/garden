@@ -47,7 +47,7 @@ does not attempt.
 - `sources/` — one primary-source evidence note per deep-read work.
 - `syntheses/` — current cross-paper understanding: thematic files,
   the adopted terminology (`terminology.md`), and the unified
-  framework's formal workspace (`framework/` — definitions,
+  theory's formal workspace (`unified-theory/` — definitions,
   reductions, proofs, counterexamples, reduction audit).
 - `evidence-matrix.tsv` — binds synthesis claims and manuscript
   section labels to source-note anchors.
@@ -69,7 +69,7 @@ does not attempt.
 4. Create a primary-source note for every deep-read work.
 5. Reconcile the relevant thematic files in `syntheses/`.
 6. Update `syntheses/terminology.md`, `claims.md`, and
-   `syntheses/framework/` when the cross-paper interpretation
+   `syntheses/unified-theory/` when the cross-paper interpretation
    changes.
 7. Add or revise `evidence-matrix.tsv` when a synthesis claim or
    technical manuscript claim changes.

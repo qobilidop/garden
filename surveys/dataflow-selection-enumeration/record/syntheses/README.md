@@ -12,5 +12,5 @@ manuscript. Chronological reading notes do not belong here.
 `current-position.md` is the compact entry point. `subsumption-boundaries.md`
 compares the approaches that most directly overlap the survey's formal object.
 `terminology.md` records the adopted terms and required distinctions, and
-`framework/` is the unified framework's formal workspace — definitions,
+`unified-theory/` is the unified theory's formal workspace — definitions,
 derivations, counterexamples, and the reduction audit.

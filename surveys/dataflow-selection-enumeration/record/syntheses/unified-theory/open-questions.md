@@ -1,4 +1,4 @@
-# Open syntheses/framework obligations
+# Open syntheses/unified-theory obligations
 
 - **F01 — Partiality and recurrence:** Determine which classes of partial
   primitives, cycles, recursion, or recurring component occurrences retain a
