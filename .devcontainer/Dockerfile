@@ -4,7 +4,6 @@ FROM ubuntu:24.04
 RUN apt-get update \
  && apt-get install -y --no-install-recommends \
       git curl ca-certificates unzip xz-utils python3 python3-venv \
-      fonts-libertinus fonts-dejavu \
  && rm -rf /var/lib/apt/lists/* \
  && curl -fsSL https://rclone.org/install.sh | bash
 
@@ -23,6 +22,8 @@ RUN A="$TARGETARCH"; [ "$A" = "amd64" ] && A=x64; \
 
 # Typst for survey manuscripts (surveys/*/manuscript.typ -> PDF + HTML),
 # pinned; the HTML target is experimental (--features html) as of 0.15.
+# No font packages: typst embeds Libertinus Serif and DejaVu Sans Mono,
+# the two families surveys/style.typ uses.
 ENV TYPST_VERSION=0.15.1
 RUN A="$TARGETARCH"; [ "$A" = "amd64" ] && A=x86_64; [ "$A" = "arm64" ] && A=aarch64; \
     curl -fsSL "https://github.com/typst/typst/releases/download/v${TYPST_VERSION}/typst-${A}-unknown-linux-musl.tar.xz" \
