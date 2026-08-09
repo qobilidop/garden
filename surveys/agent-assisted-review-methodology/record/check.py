@@ -13,8 +13,10 @@ RECORD = Path(__file__).resolve().parent
 SURVEY = RECORD.parent
 MANUSCRIPT = SURVEY / "manuscript"
 
-INCLUDED_FIELDS = [
+CATALOG_FIELDS = [
     "key",
+    "status",
+    "code",
     "year",
     "title",
     "stage",
@@ -22,12 +24,27 @@ INCLUDED_FIELDS = [
     "evidence",
     "setting",
 ]
-EXCLUDED_FIELDS = ["key", "code"]
+LOG_FIELDS = [
+    "date",
+    "kind",
+    "id",
+    "source",
+    "query_or_seed",
+    "direction",
+    "hits",
+    "screened",
+    "included_keys",
+    "excluded_keys",
+    "notes",
+]
+STATUSES = {"included", "excluded", "parked"}
+KINDS = {"search", "snowball", "audit", "exploratory"}
+FACET_FIELDS = ["stage", "contribution", "evidence", "setting"]
 STAGES = {"search", "screen", "extract", "appraise", "synthesize", "report", "end2end", "meta"}
 CONTRIBUTIONS = {"method", "system", "evaluation", "guideline", "position"}
 EVIDENCE = {"human-agree", "benchmark", "none"}
 SETTINGS = {"med", "se", "general"}
-EXCLUSION_CODES = {"E1", "E2", "E3", "E4", "E5", "E6", "E7", "U"}
+EXCLUSION_CODES = {"E1", "E2", "E3", "E4", "E5", "E6", "E7"}
 KEY = re.compile(r"(?:doi:10\.\d{4,9}/\S+|arxiv:\d{4}\.\d{4,5}|t:[a-z0-9]+|legacy:\S+)$")
 
 
@@ -36,11 +53,7 @@ def read_tsv(path, expected, errors):
         reader = csv.DictReader(source, delimiter="\t")
         if reader.fieldnames != expected:
             errors.append(f"{path.name}: header {reader.fieldnames!r}, expected {expected!r}")
-        rows = list(reader)
-    for lineno, row in enumerate(rows, start=2):
-        if None in row or any(value == "" for value in row.values()):
-            errors.append(f"{path.name}:{lineno}: incomplete row")
-    return rows
+        return list(reader)
 
 
 def duplicates(values):
@@ -49,19 +62,38 @@ def duplicates(values):
 
 def main():
     errors = []
-    included = read_tsv(RECORD / "included.tsv", INCLUDED_FIELDS, errors)
-    excluded = read_tsv(RECORD / "excluded.tsv", EXCLUDED_FIELDS, errors)
+    catalog = read_tsv(RECORD / "catalog.tsv", CATALOG_FIELDS, errors)
 
-    included_keys = [row["key"] for row in included]
-    excluded_keys = [row["key"] for row in excluded]
-    for label, values in (("included", included_keys), ("excluded", excluded_keys)):
-        for value in duplicates(values):
-            errors.append(f"duplicate {label} key: {value}")
-    for value in sorted(set(included_keys) & set(excluded_keys)):
-        errors.append(f"key is both included and excluded: {value}")
-    for value in included_keys + excluded_keys:
+    for lineno, row in enumerate(catalog, start=2):
+        if None in row or row["key"] == "" or row["status"] not in STATUSES:
+            errors.append(f"catalog.tsv:{lineno}: malformed row")
+            continue
+        if row["status"] == "included":
+            if row["code"] != "":
+                errors.append(f"catalog.tsv:{lineno}: included row carries a code")
+            for field in ["year", "title", *FACET_FIELDS]:
+                if row[field] == "":
+                    errors.append(f"catalog.tsv:{lineno}: included row missing {field}")
+        else:
+            for field in ["year", "title", *FACET_FIELDS]:
+                if row[field] != "":
+                    errors.append(f"catalog.tsv:{lineno}: {row['status']} row carries {field}")
+            if row["status"] == "excluded" and row["code"] not in EXCLUSION_CODES:
+                errors.append(f"catalog.tsv:{lineno}: unknown exclusion code {row['code']!r}")
+            if row["status"] == "parked" and row["code"] != "":
+                errors.append(f"catalog.tsv:{lineno}: parked row carries a code")
+
+    keys_all = [row["key"] for row in catalog]
+    for value in duplicates(keys_all):
+        errors.append(f"duplicate catalog key: {value}")
+    for value in keys_all:
         if not KEY.fullmatch(value):
             errors.append(f"invalid key: {value}")
+
+    included = [row for row in catalog if row["status"] == "included"]
+    excluded = [row for row in catalog if row["status"] == "excluded"]
+    parked = [row for row in catalog if row["status"] == "parked"]
+    included_keys = [row["key"] for row in included]
 
     dimensions = {
         "stage": (STAGES, Counter(row["stage"] for row in included)),
@@ -76,8 +108,22 @@ def main():
         for value in sorted(set(counts) - allowed):
             errors.append(f"unknown {field}: {value}")
     codes = Counter(row["code"] for row in excluded)
-    for value in sorted(set(codes) - EXCLUSION_CODES):
-        errors.append(f"unknown exclusion code: {value}")
+
+    log = read_tsv(RECORD / "log.tsv", LOG_FIELDS, errors)
+    kind_counts = Counter()
+    for lineno, row in enumerate(log, start=2):
+        if None in row or row["kind"] not in KINDS:
+            errors.append(f"log.tsv:{lineno}: malformed row or unknown kind")
+            continue
+        kind_counts[row["kind"]] += 1
+        if row["date"] == "" or row["id"] == "":
+            errors.append(f"log.tsv:{lineno}: missing date or id")
+        if row["kind"] in {"search", "snowball"} and (
+            row["source"] == "" or row["query_or_seed"] == "" or row["hits"] == ""
+        ):
+            errors.append(f"log.tsv:{lineno}: {row['kind']} row missing source/query/hits")
+        if row["kind"] == "audit" and row["notes"] == "":
+            errors.append(f"log.tsv:{lineno}: audit row without notes")
 
     notes = sorted((RECORD / "sources").glob("*.md"))
     reads = Counter()
@@ -132,7 +178,7 @@ def main():
         if not note_identifiers:
             errors.append(f"{note.name}: missing work DOI/arXiv identifier")
         elif not (note_identifiers & set(included_keys)):
-            errors.append(f"{note.name}: no work identifier maps to included.tsv")
+            errors.append(f"{note.name}: no work identifier maps to an included catalog row")
     if len(note_keys) != len(notes):
         errors.append("duplicate source-note citekey")
 
@@ -193,11 +239,12 @@ def main():
         }
 
     report = {
-        "catalog_rows": len(included) + len(excluded),
+        "catalog_rows": len(catalog),
         "included_rows": len(included),
         "excluded_rows": len(excluded),
-        "unresolved_rows": codes.get("U", 0),
+        "parked_rows": len(parked),
         "exclusion_codes": dict(sorted(codes.items())),
+        "log_rows": dict(sorted(kind_counts.items())),
         "stage": dict(sorted(dimensions["stage"][1].items())),
         "contribution": dict(sorted(dimensions["contribution"][1].items())),
         "evidence": dict(sorted(dimensions["evidence"][1].items())),

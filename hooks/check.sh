@@ -24,6 +24,9 @@ check_blobs() {  # stdin: "<size><TAB><path>" per file
       case "$path" in
         # Machine-generated, textual, required for reproducible npm ci.
         *package-lock.json) ;;
+        # Survey records and bibliographies: textual, load-bearing,
+        # legitimately catalog-sized (dse catalog 204KB, bib 141KB).
+        surveys/*/record/*.tsv|surveys/*/manuscript/references*.bib) ;;
         *) fail "file over $((MAX_BYTES / 1000))KB: $path ($size bytes) — if truly intentional, raise MAX_BYTES here consciously" ;;
       esac
     fi

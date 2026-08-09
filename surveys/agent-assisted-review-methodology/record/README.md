@@ -13,12 +13,14 @@ An updater needs this directory, the
 `AGENTS.md`, and the current `run-survey` skill. Process history lives in
 git and is not required to resume.
 
-- `searches.tsv` — every initial request attempt, with verbatim query
-  vocabulary, dates, and yields
-- `included.tsv` — the 646 currently included works with abstract-level
-  primary-focus facets
-- `excluded.tsv` — 646 excluded, unresolved, superseded, or retracted
-  identifiers retained as screening memory
+- `log.tsv` — the append-only event log: every initial request
+  attempt with verbatim query vocabulary, dates, and yields
+  (`kind=search`), plus `audit` rows for corrections and
+  migrations
+- `catalog.tsv` — one current row per surfaced work; status
+  vocabulary `included` (646, with abstract-level primary-focus
+  facets), `excluded` (634, coded screening memory), `parked`
+  (12, undecidable now, re-screened each update)
 - `sources/` — evidence notes for the 25 deep-read works
 - `check.py` — structural checks and mechanically derived quantities
 
@@ -52,8 +54,8 @@ The 2026-08-08 adversarial review resolved 24 duplicate/version aliases
 to their versions of record and moved two formally retracted works to
 E7. One later journal publication (Madeyski et al.) added a canonical
 DOI while retaining its arXiv identifier as E6 memory, so the retained
-ledger now has 1,292 identifier rows: 646 included and 646 in
-`excluded.tsv`.
+ledger now has 1,292 identifier rows: 646 included, 634 excluded,
+and 12 parked.
 
 Mechanical normalized-title grouping now leaves one apparent collision:
 `10.1016/j.jclinepi.2025.111894` is the Stage I protocol and
@@ -75,7 +77,7 @@ regenerate them. Current catalog and facet counts are mechanical.
 | Vocabulary pre-screen | 881 passed | — | 323 uncataloged rejects |
 | Wave-2 screen + verification | 879 added | 533 | two of 881 merged on catalog entry |
 | Campaign close | 1,291 | 672 | before integrity correction |
-| Integrity correction | 1,292 | 646 | 24 aliases resolved, two retractions removed, one later publication migrated; 12 U rows remain parked |
+| Integrity correction | 1,292 | 646 | 24 aliases resolved, two retractions removed, one later publication migrated; 12 rows remain parked |
 
 For every future update, append a row to this ledger. It is the retained
 provenance for future funnel changes.
@@ -85,7 +87,7 @@ provenance for future funnel changes.
 
 ## Search procedure
 
-The 13 rows in `searches.tsv` are 11 logical qids plus retries. Initial
+The 13 `search` rows in `log.tsv` are 11 logical qids plus retries. Initial
 qid `s22` failed once and then succeeded; `s23` failed twice and never
 succeeded. The successful initial requests returned 471 result rows.
 
@@ -140,7 +142,7 @@ through its registrar, compare full normalized titles and authors, and
 adjudicate ambiguous pairs. Exclusions are deduplicated by exact key;
 their version aliases are explicitly retained as E6. When a published
 version replaces an included preprint, replace the included key and add
-the superseded identifier to `excluded.tsv` as E6.
+the superseded identifier as an excluded catalog row with code E6.
 
 For a candidate matching a retained `t:` row, compare its normalized full
 title with both the stored slug and display prefix, then adjudicate from
@@ -170,8 +172,8 @@ Apply the case-insensitive title vocabulary
 Then test the reconstructed title plus abstract against
 `large language model|language model|\bllm|gpt|agent|automat|artificial intelligence|machine learning|deep learning|neural`.
 If the abstract is missing, test the title alone and send a vocabulary
-miss to U rather than silently discarding it. Count title-filter rejects,
-model-vocabulary rejects, missing-data U rows, merges, screened rows, and
+miss to `parked` rather than silently discarding it. Count title-filter rejects,
+model-vocabulary rejects, missing-data parked rows, merges, screened rows, and
 includes in the update ledger. Run one backward+forward round from new
 includes and a verification pass over everything it screens in.
 
@@ -304,8 +306,8 @@ and `.pdf`.
 
 1. Choose the new cutoff; execute the search and snowball procedures;
    append request attempts and the update-ledger row.
-2. Deduplicate, screen, adjudicate, and human-gate; update both TSVs and
-   re-screen all 12 current U rows.
+2. Deduplicate, screen, adjudicate, and human-gate; update the catalog and
+   re-screen all 12 current parked rows.
 3. Apply the taxonomy decision rules; deep-read new anchor candidates,
    preserving and appending `notes-by` attribution on material revisions.
 4. Update the curated list, manuscript prose, historical/current funnel,
