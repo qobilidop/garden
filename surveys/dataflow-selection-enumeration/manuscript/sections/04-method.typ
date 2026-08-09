@@ -1,25 +1,20 @@
-= Survey scope and evidence method <sec-method>
+= Survey scope and evidence basis <sec-method>
 
 The evidence study is a systematic map rather than a statistical systematic
 literature review. It is organized following the framing of systematic
 mapping @petersen2015mapping, separate backward and forward snowballing
 @wohlin2014snowballing, and auditable reporting of secondary studies
-@kitchenham2023segress; no completed reporting checklist is claimed. Its purpose is to locate and compare solution
-mechanisms for the problem defined by @sec-formal-model, not to survey
-every use of symbolic execution, dataflow, or enumeration.
+@kitchenham2023segress; no completed reporting checklist is claimed. It
+supports the comparison of solution mechanisms for the problem in
+@sec-formal-model, not a census of every use of symbolic execution, dataflow,
+or enumeration.
 
-== Comparison questions and inclusion levels
+== Comparison and inclusion
 
 The four research questions in the introduction determine the extraction
-schema. For each work, the map records:
-
-- its program or mathematical model and observer;
-- the enumerated object and the information it omits or merges;
-- its discovery algorithm and output representation;
-- its coverage, uniqueness, guard, residual, and witness guarantees;
-- its complexity statement and charged input/output representation; and
-- its assumptions about purity, totality, effects, cycles, time, dimension,
-  and solver completeness.
+schema. For each work, the map compares its model and observer, enumerated
+object, discovery algorithm, output representation, guarantees, complexity
+charge, and semantic or solver assumptions.
 
 Works in the main comparison have one of three relationships to the target
 problem. A _direct presentation_ enumerates the same observer after explicit
@@ -27,10 +22,9 @@ notation or reachability instrumentation. A _restricted specialization_ solves t
 same contract under stronger assumptions, such as all sites being observed and
 all classifiers being affine. An _adjacent comparator_ preserves or omits
 information for a different observer and is included only when it clarifies a
-semantic or complexity boundary. This classification keeps partial-order
-reduction, Petri-net observation, hardware protocol semantics, and directed
-testing from being presented as alternative implementations of an input-fiber
-enumerator.
+semantic or complexity boundary. The classification prevents a neighboring
+reduction problem from being presented as an alternative implementation of an
+input-fiber enumerator.
 
 == Discovery, screening, and technical evidence
 
@@ -38,46 +32,26 @@ Discovery deliberately used a broader vocabulary than the final paper. It
 covered symbolic execution and guarded values; projected and partial model
 enumeration; decision structures; functional-logic and demand-guided search;
 dataflow and hardware semantics; geometric, neural, and parametric regions;
-and observer-relative state or search reduction. Exact database queries,
-result depths, dates, and source-dependent metadata are retained in
-the audited log; result sets are staged and discarded after
-reconciliation, so the log row is the audit unit. Printed primary bibliographies control
-backward snowballing when citation indexes are incomplete or incorrect.
+and observer-relative state or search reduction. Exact queries, result depths,
+dates, and citation chases are retained in the audited log. Transient result
+sets are discarded after reconciliation, so the log row is the audit unit;
+primary bibliographies supplement incomplete citation indexes.
 
-Screening assigns one current catalog disposition. At the archived 2026-08-04
-snapshot, the 897 discovered works comprised 202 `deep-read`, 160 `screened`,
-420 `candidate`, and 115 `excluded` records. A 2026-08-09 record audit then
-demoted 83 deep-read works whose notes supported no synthesis claim,
-manuscript citation, or thematic synthesis back to `screened` — three
-AI-assisted review passes, recorded with the demoted keys in an audit log
-row, judged that the demotions cost the route comparison nothing — merged
-one screened conference-version alias onto its existing duplicate-version
-exclusion row, and an update batch over the registered queries added 24
-rows — and a post-review read-depth audit demoted one further abstract-only
-deep read — so the current catalog holds 920 works: 118 `deep-read`, 243
-`screened`, 424 `candidate`, and 135 `excluded` (94 of the exclusions are
-superseded duplicate versions; 41 are substantive scope exclusions). Here
-`candidate` is a retained discovery disposition, not an unresolved promise to
-read every record. The main technical comparisons rely on deep reads of
-primary works with pinpoint definition, algorithm, theorem, complexity,
-assumption, or example anchors.
-Primary-abstract or metadata-only records may establish search scope or a
-qualified chronology statement, but they do not support theorem or algorithm
-claims.
+Through 9 August 2026, 340 database queries and 245 backward or forward
+citation chases yielded 36,828 screened record occurrences. Repeated hits and
+rows rejected before cataloging remain in that occurrence count; it is neither
+a unique-paper count nor an estimate of a literature population. After
+deduplication and audit, the current catalog contains 920 works: 118
+`deep-read`, 243 `screened`, 424 retained `candidate`, and 135 `excluded`
+records. Candidate status records discovery rather than a promise to read the
+work. The manuscript cites 76 deep-read technical sources and four screened
+works; no candidate-status work supports a manuscript claim.
 
-The focused manuscript cites 80 cataloged works: 76 deep-read technical
-sources and four screened works (three methodological guides and one
-abstract-only comparator). No candidate-status work is cited. This is
-narrower than the discovery catalog by design.
-
-The audited record contains 340 database queries (318 from the baseline
-campaign, 22 from the 2026-08-09 update batch) and 245 separately recorded
-backward or forward citation chases. Excluding repeated adjudication passes,
-the log contains 36,828 screened record occurrences; this is neither a
-unique-paper count nor an estimate of a literature population. A claim-level
-evidence ledger links every manuscript citation at its stable section label and
-every active synthesis claim to source-note anchors, while stating the scope
-and caveat of each comparison.
+Technical claims rely on primary works with pinpoint definition, algorithm,
+theorem, complexity, assumption, or example anchors. Abstract- or
+metadata-level records support only search scope or qualified chronology. The
+evidence ledger binds manuscript claims to those source anchors and carries
+their scope and caveats.
 
 == Bounded baseline and on-demand updates
 
@@ -88,28 +62,12 @@ family nor a plausible close competitor. This is _bounded mapping closure_
 relative to the recorded sources, rankings, query depths, and date—not a claim
 that no additional work exists.
 
-The survey record treats the snapshot as an updateable baseline. The
-registered searches and their reconciliation state make staging an
-update a single command; no update schedule is promised, updates run
-on demand, and a new mechanism or plausible direct competitor
-triggers an immediate reopening. A coverage date advances
-only after catalog dispositions, source notes, thematic syntheses, evidence
-rows, and affected manuscript claims have been reconciled. The first such
-update ran on 9 August 2026: the 22 registered queries were retrieved at
-their registered caps — the top 100 relevance- or recency-ranked rows per
-query, 1,108 rows in all, although several Crossref queries reported far
-larger match counts over the five-day interval — deduplicating to 872
-unique retrieved records, which a dual-pass screen with adjudication and a human gate
-resolved to four new candidates and 20 coded exclusions; the remaining 848
-are recorded only in the log row counts. The no-new-competitor conclusion
-of this batch is therefore relative to those ranked top-100 slices. The
-current search record was last reconciled on 9 August 2026.
-
-The survey record accompanying this paper contains the protocol, query
-registry, catalog, audited search log, primary-source notes, thematic
-syntheses, evidence ledger, claim ledger, and manuscript checks. Downloaded
-papers, transient API responses, and search-engine exports are deliberately
-excluded. The current manuscript and record are linked from
+Updates run on demand when a new mechanism or plausible direct competitor
+appears. The current record was last reconciled on 9 August 2026, when 22
+registered queries were rerun at caps of the top 100 relevance- or
+recency-ranked results. The resulting no-new-competitor finding is limited to
+those ranked slices. The protocol, queries, catalog, log, source notes,
+syntheses, and evidence and claim ledgers are linked from
 #link("https://qobilidop.github.io/sys0/surveys/dataflow-selection-enumeration/")[the survey's landing page].
 
 == Validity threats and AI assistance
