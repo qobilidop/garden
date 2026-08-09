@@ -3,7 +3,7 @@
 // and abstract so the two renders cannot drift.
 
 #let title = "Agent-Assisted Systematic Review Methodology"
-#let subtitle = "A Systematic Map"
+#let subtitle = "A Survey"
 #let byline = "Bili Dong"
 #let author-note = [
   Following the no-AI-authorship convention this survey maps (RQ3),

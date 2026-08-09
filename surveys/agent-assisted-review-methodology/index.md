@@ -1,4 +1,4 @@
-# Agent-Assisted Systematic Review Methodology: A Systematic Map
+# Agent-Assisted Systematic Review Methodology: A Survey
 
 A systematic map of the LLM-era literature on automating systematic
 reviews: 1,291 works cataloged, 672 included and classified under a
