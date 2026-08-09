@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Compile survey manuscripts into site/public/ for deploy.
 
-For each surveys/<slug>/manuscript/ with manuscript.typ +
-manuscript-html.typ:
+For each surveys/<slug>/manuscript/ with manuscript.typ (paged
+entrypoint) + manuscript-html.typ:
   site/public/surveys/<slug>/manuscript.pdf   (paged wrapper)
   site/public/surveys/<slug>/manuscript.html  (HTML wrapper, styled)
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate references.bib from refs.tsv (citekey<TAB>doi:...|arxiv:...).
+"""Generate references.bib from references.tsv (citekey<TAB>doi:...|arxiv:...).
 
 Entry keys are rewritten to our citekeys. DOI entries come from doi.org
 content negotiation (Crossref/DataCite BibTeX); arXiv entries from the
@@ -16,6 +16,38 @@ HERE = Path(__file__).parent
 OUT = HERE / "references.bib"
 
 
+def split_fields(body):
+    """Split a BibTeX entry body into fields at brace depth zero."""
+    fields, depth, cur = [], 0, []
+    for ch in body:
+        if ch == "{":
+            depth += 1
+        elif ch == "}":
+            depth -= 1
+        if ch == "," and depth == 0:
+            fields.append("".join(cur))
+            cur = []
+        else:
+            cur.append(ch)
+    fields.append("".join(cur))
+    return [f.strip() for f in fields if f.strip()]
+
+
+def fmt(entry):
+    """Re-emit an entry in canonical layout: one lowercased field per
+    line, values verbatim. Sources differ (Crossref: one line; arXiv:
+    multi-line; manual: hand-wrapped) — this makes them uniform."""
+    m = re.match(r"@(\w+)\s*\{\s*([^,]*),(.*)\}\s*$", entry.strip(), re.S)
+    if not m:
+        return entry.strip()
+    kind, key, body = m.groups()
+    lines = []
+    for field in split_fields(body):
+        name, _, value = field.partition("=")
+        lines.append(f"  {name.strip().lower()} = {value.strip()},")
+    return "@" + kind.lower() + "{" + key.strip() + ",\n" + "\n".join(lines) + "\n}"
+
+
 def fetch(url, accept=None):
     req = urllib.request.Request(url, headers={"User-Agent": "sys0-bibgen"})
     if accept:
@@ -27,7 +59,7 @@ def fetch(url, accept=None):
 def main():
     rows = [
         line.split("\t")
-        for line in (HERE / "refs.tsv").read_text().splitlines()
+        for line in (HERE / "references.tsv").read_text().splitlines()
         if line.strip()
     ]
     entries, failed = [], []
@@ -58,14 +90,16 @@ def main():
         bib = re.sub(
             r"\bmonth=([A-Za-z]+)", lambda m: f"month={m.group(1)[:3].lower()}", bib
         )
-        entries.append(bib)
+        entries.append(fmt(bib))
         time.sleep(1)
     manual = HERE / "references-manual.bib"
-    body = "\n\n".join(entries) + "\n"
     if manual.exists():
-        body += "\n" + manual.read_text()
-    OUT.write_text(body)
-    print(f"{len(entries)} fetched + manual; {len(failed)} failed")
+        raw = manual.read_text()
+        entries.extend(
+            fmt("@" + e) for e in re.split(r"^@", raw, flags=re.M) if e.strip()
+        )
+    OUT.write_text("\n\n".join(entries) + "\n")
+    print(f"{len(entries)} entries ({len(failed)} failed)")
     for key, ident, err in failed:
         print(f"FAILED: {key} ({ident}): {err}", file=sys.stderr)
     return 1 if failed else 0

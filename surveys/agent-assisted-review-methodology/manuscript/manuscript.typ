@@ -7,6 +7,13 @@
 #set document(
   title: title + ": " + subtitle,
   author: byline,
+  keywords: (
+    "systematic review automation",
+    "large language models",
+    "agents",
+    "evidence synthesis",
+    "systematic map",
+  ),
 )
 
 #titleblock(

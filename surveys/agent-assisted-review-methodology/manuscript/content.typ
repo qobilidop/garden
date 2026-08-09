@@ -260,9 +260,9 @@ social-science inventory with no pooled benchmark @legate2024, and
 secondhand error ranges of 4–31% @gartlehner2025.
 
 *Read against human baselines.* Single human reviewers run \~87–92%
-screening sensitivity (range 42–100%; cited in Fagerberg et al.
-@fagerberg2025), human extraction error reaches 50% of data elements
-(cited in Gartlehner et al. @gartlehner2025), and the one RCT-grade
+screening sensitivity (range 42–100%; cited in
+#cite(<fagerberg2025>, form: "prose")), human extraction error reaches 50% of data elements
+(cited in #cite(<gartlehner2025>, form: "prose")), and the one RCT-grade
 automation study found noninferiority, not superiority, with
 inconclusive time savings @arno2022[abstract-only]. Agent evidence
 should be calibrated against these imperfect baselines, not an
