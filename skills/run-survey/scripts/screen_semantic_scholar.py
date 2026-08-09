@@ -104,6 +104,8 @@ def parser() -> argparse.ArgumentParser:
     search = commands.add_parser("search")
     search.add_argument("query")
     search.add_argument("--limit", type=int, default=100)
+    search.add_argument("--from-year", type=int)
+    search.add_argument("--to-year", type=int)
     search.add_argument("--output", type=Path, required=True)
     search.add_argument("--metadata-output", type=Path)
 
@@ -129,6 +131,10 @@ def main() -> int:
             "offset": "0",
             "fields": f"{PAPER_FIELDS},abstract",
         }
+        if args.from_year or args.to_year:
+            parameters["year"] = (
+                f"{args.from_year or ''}-{args.to_year or ''}"
+            )
         page = request_json("paper/search", parameters)
         total = int(page.get("total") or 0)
         papers = page.get("data") or []

@@ -4,6 +4,7 @@
 import argparse
 import csv
 import json
+import re
 from pathlib import Path
 import sys
 import urllib.parse
@@ -74,6 +75,29 @@ def resolve_seed(seed: str) -> dict:
     return request_json(f"works/{encoded}")
 
 
+def resolve_title_seed(title: str, year: int) -> dict:
+    """Resolve an identifier-less seed by exact normalized title + year.
+
+    Ambiguity is an error by design: log and skip the seed rather
+    than guessing."""
+    normalize = lambda value: re.sub(r"[^a-z0-9]", "", value.lower())
+    result = request_json(
+        "works", {"filter": f"title.search:{title}", "per-page": "25"}
+    )
+    matches = [
+        work
+        for work in result.get("results", [])
+        if normalize(work.get("title") or "") == normalize(title)
+        and work.get("publication_year") == year
+    ]
+    if len(matches) != 1:
+        raise SystemExit(
+            f"seed title resolution is ambiguous ({len(matches)} exact "
+            "normalized-title and year matches)"
+        )
+    return matches[0]
+
+
 def fetch_ids(ids: list[str]) -> tuple[list[dict], list[str]]:
     works = []
     unresolved = []
@@ -109,16 +133,29 @@ def paginate(parameters: dict[str, str], limit: int | None) -> tuple[int, list[d
 
 def collect(args: argparse.Namespace) -> tuple[dict[str, object], list[dict]]:
     if args.command == "search":
-        total, works = paginate({"search": args.query}, args.limit)
+        parameters = {"search": args.query}
+        bounds = []
+        if args.from_date:
+            bounds.append(f"from_publication_date:{args.from_date}")
+        if args.to_date:
+            bounds.append(f"to_publication_date:{args.to_date}")
+        if bounds:
+            parameters["filter"] = ",".join(bounds)
+        total, works = paginate(parameters, args.limit)
         metadata = {
             "kind": "search",
             "query": args.query,
+            "from_date": args.from_date,
+            "to_date": args.to_date,
             "hits": total,
             "exported": len(works),
         }
         return metadata, works
 
-    seed = resolve_seed(args.seed)
+    if args.seed:
+        seed = resolve_seed(args.seed)
+    else:
+        seed = resolve_title_seed(args.by_title, args.year)
     seed_id = seed["id"].rsplit("/", 1)[-1]
     if args.direction == "backward":
         reference_ids = seed.get("referenced_works") or []
@@ -131,7 +168,7 @@ def collect(args: argparse.Namespace) -> tuple[dict[str, object], list[dict]]:
         unresolved = []
     metadata = {
         "kind": "snowball",
-        "seed": args.seed,
+        "seed": args.seed or f"title:{args.by_title} ({args.year})",
         "seed_openalex_id": seed_id,
         "seed_title": seed.get("title"),
         "direction": args.direction,
@@ -149,11 +186,21 @@ def parser() -> argparse.ArgumentParser:
     search = commands.add_parser("search")
     search.add_argument("query")
     search.add_argument("--limit", type=int)
+    search.add_argument("--from-date")
+    search.add_argument("--to-date")
     search.add_argument("--output", type=Path, required=True)
     search.add_argument("--include-abstract", action="store_true")
 
     snowball = commands.add_parser("snowball")
-    snowball.add_argument("seed", help="DOI or OpenAlex work identifier")
+    snowball.add_argument(
+        "seed", nargs="?", help="DOI or OpenAlex work identifier"
+    )
+    snowball.add_argument(
+        "--by-title", help="exact title for an identifier-less seed"
+    )
+    snowball.add_argument(
+        "--year", type=int, help="publication year for --by-title"
+    )
     snowball.add_argument("direction", choices=("backward", "forward"))
     snowball.add_argument("--limit", type=int)
     snowball.add_argument("--output", type=Path, required=True)

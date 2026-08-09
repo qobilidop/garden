@@ -19,7 +19,7 @@ Use the machine-generated view rather than editing counts here after every
 small change:
 
 ```console
-./dev.sh python3 surveys/dataflow-selection-enumeration/record/scripts/update.py status
+./dev.sh python3 skills/run-survey/scripts/update.py --record surveys/dataflow-selection-enumeration/record status
 ```
 
 Updates are staged on demand; the registered queries and their last

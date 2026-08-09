@@ -10,7 +10,7 @@ a result set does not advance state.
 ## 1. Inspect freshness
 
 ```console
-./dev.sh python3 surveys/dataflow-selection-enumeration/record/scripts/update.py status
+./dev.sh python3 skills/run-survey/scripts/update.py --record surveys/dataflow-selection-enumeration/record status
 ```
 
 ## 2. Stage result sets
@@ -18,8 +18,8 @@ a result set does not advance state.
 Fetch all registered queries, or one query while testing:
 
 ```console
-./dev.sh python3 surveys/dataflow-selection-enumeration/record/scripts/update.py fetch --all
-./dev.sh python3 surveys/dataflow-selection-enumeration/record/scripts/update.py fetch --query-id crossref-symbolic-residual
+./dev.sh python3 skills/run-survey/scripts/update.py --record surveys/dataflow-selection-enumeration/record fetch --all
+./dev.sh python3 skills/run-survey/scripts/update.py --record surveys/dataflow-selection-enumeration/record fetch --query-id crossref-symbolic-residual
 ```
 
 Results and a JSON manifest are written under
@@ -48,7 +48,7 @@ staged result set is discarded after reconciliation. Then reconcile syntheses,
 claims, terminology, formal material, the evidence matrix, and manuscript.
 
 Only after all of those changes are complete should `state.tsv` be advanced to
-the batch date. Record the same interval and query ID in the promoted log row. Run `./dev.sh python3 surveys/dataflow-selection-enumeration/record/check.py` before committing.
+the batch date. Record the same interval and query ID in the promoted log row. Run `./dev.sh python3 surveys/dataflow-selection-enumeration/record/scripts/check.py` before committing.
 
 ## Citation maintenance
 

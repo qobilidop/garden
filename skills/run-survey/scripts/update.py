@@ -17,7 +17,7 @@ ROOT = Path(__file__).resolve().parents[2]
 SURVEY = ROOT / "record"
 UPDATES = SURVEY / "updates"
 # Shared source fetchers live with the run-survey skill.
-SCRIPT_DIR = Path(__file__).resolve().parents[4] / "skills" / "run-survey" / "scripts"
+SCRIPT_DIR = Path(__file__).resolve().parent
 ARXIV_INTERVAL_SECONDS = 3.0
 
 
@@ -53,34 +53,32 @@ def status(args: argparse.Namespace) -> int:
     catalog = read_tsv(SURVEY / "catalog.tsv")
     catalog_statuses = Counter(row["status"] for row in catalog)
     log_rows = read_tsv(SURVEY / "log.tsv")
-    evidence_rows = read_tsv(SURVEY / "evidence-matrix.tsv")
     source_notes = [
         path
         for path in (SURVEY / "sources").glob("*.md")
         if path.name != "_template.md"
     ]
-    current_source_notes = sum(
-        "- **Template version:** 2" in path.read_text(encoding="utf-8")
-        for path in source_notes
-    )
 
     print(f"Survey status as of {today.isoformat()}")
-    print(
-        "Catalog: "
-        f"{len(catalog)} works "
-        f"({catalog_statuses['deep-read']} deep-read, "
-        f"{catalog_statuses['screened']} screened, "
-        f"{catalog_statuses['candidate']} candidate, "
-        f"{catalog_statuses['excluded']} excluded)"
+    breakdown = ", ".join(
+        f"{count} {status}" for status, count in sorted(catalog_statuses.items())
     )
-    print(
-        f"Evidence: {len(source_notes)} source notes, "
-        f"{len(evidence_rows)} evidence rows"
-    )
-    print(
-        f"Source-note schema: {current_source_notes} current, "
-        f"{len(source_notes) - current_source_notes} legacy"
-    )
+    print(f"Catalog: {len(catalog)} works ({breakdown})")
+    evidence = f"Evidence: {len(source_notes)} source notes"
+    matrix = SURVEY / "evidence-matrix.tsv"
+    if matrix.is_file():
+        evidence += f", {len(read_tsv(matrix))} evidence rows"
+    print(evidence)
+    template = SURVEY / "sources" / "_template.md"
+    if template.is_file():
+        current_source_notes = sum(
+            "- **Template version:** 2" in path.read_text(encoding="utf-8")
+            for path in source_notes
+        )
+        print(
+            f"Source-note schema: {current_source_notes} current, "
+            f"{len(source_notes) - current_source_notes} legacy"
+        )
     audited = [row for row in log_rows if row.get("kind") != "exploratory"]
     print(f"Search record: {len(audited)} audited log rows "
           f"(+{len(log_rows) - len(audited)} exploratory)")
@@ -117,6 +115,28 @@ def command_for(
             str(SCRIPT_DIR / "screen_arxiv.py"),
             *common,
             "--raw-query",
+        ]
+    if query["source"] == "openalex":
+        return [
+            sys.executable,
+            str(SCRIPT_DIR / "screen_openalex.py"),
+            "search",
+            *common,
+        ]
+    if query["source"] == "semanticscholar":
+        return [
+            sys.executable,
+            str(SCRIPT_DIR / "screen_semantic_scholar.py"),
+            "search",
+            query["query"],
+            "--limit",
+            query["limit"],
+            "--from-year",
+            state["last_completed"][:4],
+            "--to-year",
+            today.isoformat()[:4],
+            "--output",
+            str(output),
         ]
     raise SystemExit(f"unsupported registered source: {query['source']}")
 
@@ -237,6 +257,11 @@ def fetch(args: argparse.Namespace) -> int:
 
 def parser() -> argparse.ArgumentParser:
     root = argparse.ArgumentParser()
+    root.add_argument(
+        "--record",
+        required=True,
+        help="path to the survey's record/ directory",
+    )
     commands = root.add_subparsers(dest="command", required=True)
 
     status_parser = commands.add_parser("status")
@@ -256,6 +281,12 @@ def parser() -> argparse.ArgumentParser:
 
 def main() -> int:
     args = parser().parse_args()
+    global ROOT, SURVEY, UPDATES
+    SURVEY = Path(args.record).resolve()
+    if not (SURVEY / "updates" / "queries.tsv").is_file():
+        raise SystemExit(f"not a survey record with a registry: {SURVEY}")
+    ROOT = SURVEY.parent
+    UPDATES = SURVEY / "updates"
     return args.function(args)
 
 

@@ -22,7 +22,13 @@ git and is not required to resume.
   facets), `excluded` (634, coded screening memory), `parked`
   (12, undecidable now, re-screened each update)
 - `sources/` — evidence notes for the 25 deep-read works
-- `check.py` — structural checks and mechanically derived quantities
+- `updates/` — registered queries (`queries.tsv`), their last
+  reconciled executions (`state.tsv`), and periodic tasks
+  (`tasks.tsv`); stage an update with the shared tool
+  (`python3 skills/run-survey/scripts/update.py --record
+  surveys/agent-assisted-review-methodology/record fetch --all`)
+- `scripts/check.py` — structural checks and mechanically derived
+  quantities
 
 ## Scope and status
 
@@ -318,7 +324,7 @@ and `.pdf`.
 4. Update the curated list, manuscript prose, historical/current funnel,
    abstract, limitations, and draft date wherever the derived report or
    findings changed.
-5. Run `python3 surveys/agent-assisted-review-methodology/record/check.py`.
+5. Run `python3 surveys/agent-assisted-review-methodology/record/scripts/check.py`.
    Reconcile its catalog, exclusion-code, facet, note, curation, and
    citation totals against this README, `../index.md`,
    `../manuscript/meta.typ`, and every table/quantity in

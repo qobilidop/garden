@@ -235,8 +235,9 @@ fix introduces before persisting it.
   last-reconciled state (`state.tsv`), and periodic non-query
   maintenance (`tasks.tsv`). Updates are human-triggered and the
   registry carries no schedule — staging is one command
-  (`update.py fetch --all`), triggered by a close competitor, a new
-  theme, or simply wanting fresher coverage. Fetches stage into
+  (`scripts/update.py --record surveys/<slug>/record fetch --all`),
+  triggered by a close competitor, a new theme, or simply wanting
+  fresher coverage. Fetches stage into
   scratch and never advance state. An update batch: fetch the
   registered queries over the inclusive interval since last
   reconciliation → dedup against the catalog and screen every row →
@@ -251,9 +252,9 @@ fix introduces before persisting it.
   update procedure — build docs stay in AGENTS.md and this skill,
   pointed to rather than duplicated), `catalog.tsv` and `log.tsv`
   per the §1 grammar, `sources/`, and, when the manuscript publishes
-  quantities derived from the catalog, a campaign-local `check.py`;
-  the registry-driven update tool lives in `record/scripts/`; the
-  source fetchers and snowball tool ship with this skill. The validator checks schemas, keys, facet
+  quantities derived from the catalog, a campaign-local
+  `record/scripts/check.py`; the source fetchers, snowball tool, and
+  registry-driven update tool ship with this skill (`scripts/`). The validator checks schemas, keys, facet
   tokens, source-note and bibliography/citation closure, and prints
   the derived counts for cross-surface reconciliation; a qualitative
   survey may omit it. Everything else — protocols, intermediate syntheses, work

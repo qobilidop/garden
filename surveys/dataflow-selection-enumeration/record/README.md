@@ -9,12 +9,12 @@ lives in git.
 ## Start here
 
 ```console
-./dev.sh python3 surveys/dataflow-selection-enumeration/record/scripts/update.py status
-./dev.sh python3 surveys/dataflow-selection-enumeration/record/check.py
+./dev.sh python3 skills/run-survey/scripts/update.py --record surveys/dataflow-selection-enumeration/record status
+./dev.sh python3 surveys/dataflow-selection-enumeration/record/scripts/check.py
 ```
 
-`update.py status` reports coverage dates, due searches, and current
-record counts. `check.py` validates the evidence graph: catalog,
+`update.py status` reports coverage dates and current record
+counts. `check.py` validates the evidence graph: catalog,
 audited logs, screening snapshots, evidence matrix, bibliography, and
 manuscript citation anchors.
 
@@ -53,9 +53,8 @@ does not attempt.
   section labels to source-note anchors.
 - `updates/` — recurring searches (`queries.tsv`), their reconciled
   state (`state.tsv`), and periodic tasks (`tasks.tsv`).
-- `check.py` — the record validator.
-- `scripts/` — the registry-driven update tool; the shared source
-  fetchers and snowball tool live in `skills/run-survey/scripts/`.
+- `scripts/check.py` — the record validator; the shared fetchers,
+  snowball, and update tools live in `skills/run-survey/scripts/`.
 
 ## Evidence flow
 
@@ -125,7 +124,7 @@ last fully reconciled executions in `updates/state.tsv`; periodic
 citation maintenance in `updates/tasks.tsv`. Stage due searches with
 
 ```console
-./dev.sh python3 surveys/dataflow-selection-enumeration/record/scripts/update.py fetch --all
+./dev.sh python3 skills/run-survey/scripts/update.py --record surveys/dataflow-selection-enumeration/record fetch --all
 ```
 
 Registered runs use an inclusive interval from the last reconciled
