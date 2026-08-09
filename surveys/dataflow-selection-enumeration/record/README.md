@@ -64,8 +64,8 @@ does not attempt.
 2. Give every discovered work a disposition in `catalog.tsv`.
 3. Screen every returned record, then append one audited execution
    row to `log.tsv`; discard the staged result set after
-   reconciliation (the log row is the audit unit). The baseline's
-   frozen screening snapshots live in git history.
+   reconciliation (the log row is the audit unit; the baseline's
+   frozen snapshots were retired from the record on 2026-08-09).
 4. Create a primary-source note for every deep-read work.
 5. Reconcile the relevant thematic files in `syntheses/`.
 6. Update `terminology.md`, `claims.md`, and the formal synthesis
