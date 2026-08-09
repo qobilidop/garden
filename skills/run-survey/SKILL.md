@@ -16,10 +16,11 @@ literature it mapped.
 ## 1. Protocol and scaffold
 
 - Scaffold `surveys/<slug>/` up front with its three surfaces:
-  `index.md` (landing page, written at §8), `campaign/` (the record:
-  `protocol.md`, `prompts/`, `decisions/`, `sources/`, `syntheses/`,
-  `logs/`, `scripts/`, catalogs, `status.md`, `baseline.md`), and
-  `manuscript/` (the paper, §8). `campaign/.gitignore` covers
+  `index.md` (landing page, written at §8), `record/` (the working
+  record during the campaign: `protocol.md`, `prompts/`,
+  `decisions/`, `sources/`, `syntheses/`, `logs/`, `scripts/`,
+  catalogs, `status.md`, `baseline.md`), and `manuscript/` (the
+  paper, §8). `record/.gitignore` covers
   `logs/raw/`, `work/`, `candidates.tsv`, `catalog.tsv`,
   `snowball-candidates.tsv`. Commit contract: curated dispositions
   (included + adjudicated), notes, syntheses, claims, decisions,
@@ -205,6 +206,11 @@ self-mining.
 
 ## Close
 
+- After the manuscript and landing page exist, prune the record to
+  its minimal resumable state — `README.md` (scope, selection
+  rules, window, update procedure), `searches.tsv`, `included.tsv`
+  (with facets), `excluded.tsv` (keys + codes), `sources/` — process
+  artifacts live on in git history and the shadow mirror.
 - Verify committed artifacts match the commit contract; propose commits
   with the attribution trailer; commit only on the user's word.
 - The campaign ends closed: living maintenance is not registered unless

@@ -1,0 +1,39 @@
+---
+citekey: oconnor2024-large-language-models-updates-and-evaluation-of-automation-tools-for-systematic-reviews
+work:
+  title: "Large language models, updates, and evaluation of automation tools for systematic reviews: a summary of significant discussions at the eighth meeting of the International Collaboration for the Automation of Systematic Reviews (ICASR)"
+  author: "Annette M. O’Connor, Justin Clark, James Thomas, René Spijker, Wojciech Kusa, Vickie R. Walker, Melissa Bond"
+  venue: "Systematic Reviews"
+  date: 2024
+  doi: 10.1186/s13643-024-02666-2
+read: full-text
+source: "shadow/store/library/papers/2024/oconnor2024-large-language-models-updates-and-evaluation-of-automation-tools-for-systematic-reviews/"
+facets:
+  stage: "meta"
+  contribution: "evaluation"
+  setting: "med"
+retrieved: 2026-08-08
+notes-by: Claude Sonnet-class (survey deep-read pipeline)
+notes-date: 2026-08-08
+synthesis: "Large language models, updates, and evaluation of automation tools for systematic reviews"
+---
+
+# Large language models, updates, and evaluation of automation tools for systematic reviews: a summary of significant discussions at the eighth meeting of the International Collaboration for the Automation of Systematic Reviews (ICASR)
+
+## Evidence
+Commentary summarizing the eighth ICASR (International Collaboration for the Automation of Systematic Reviews) meeting, UCL, Sept 7–8 2023 — not a primary study, but a community consensus/landscape report across four themed sessions (tool benefits/harms, LLM potential/pitfalls, evaluation of automation, ICASR's future).
+
+- **Tools cataloged (Session 1):** Polyglot Search Translator (cross-database search-query translation) — reported ~50% less screening effort from more precise, refined searches; RevMan Replicant (auto-generates results-section text from RevMan 5 files, reducing transcription errors). Both free, discipline-agnostic to varying degrees (Polyglot ties to bibliographic databases common in clinical/public-health search; RevMan Replicant to Cochrane-style reviews). Covidence cited as adoption-scale evidence: >300,000 users, >265,000 reviews started since 2015.
+- **LLM potential/pitfalls (Session 2), three invited talks:** (1) I. Marshall (KCL) — LLMs' fluency masks factual inaccuracy; multi-document summarization (core to SR synthesis) is a weak point; model updates undermine reproducibility; accountability for LLM-sourced misinformation is diffuse. (2) Elicit team — proposed "factored cognition" (decomposing SR tasks into narrow sub-prompts) as a mitigation for hallucination; presenters claimed this solves hallucination but the commentary explicitly flags "evidence to support this statement was not provided." (3) H. Scells — reports on Wang et al.'s ChatGPT-generated Boolean search queries (CLEF TAR + a seed-study test collection): guided prompts outperform unguided/broad prompts; LLMs frequently misconstrue domain terms, degrading precision; recommends anchoring LLM query generation to controlled vocabularies (e.g., MeSH) and expert (information-specialist) supervision. Session consensus: LLMs' current utility for generating full systematic reviews is "limited," useful mainly for drafting/templating with human oversight.
+- **Evaluation of automation tools (Session 3):** A Wellcome-funded project (Bond et al.) mapping evaluations of "digital evidence synthesis tools" (DESTs) in climate-change-and-health found a "very small percentage" of systematic reviews openly disclose use of advanced AI tools, with reliance instead on "rudimentary tools" — in both education and climate/health domains (citing two of their own mapping reviews). Methodological/metrics debate: critique of Work Saved over Sampling (WSS) as a screening-automation metric, advocating true-negative rate (TNR) for better comparability (Kusa et al. 2023, ISWA); an outcome-based evaluation framework proposed that weighs studies by their actual influence on review conclusions rather than raw recall (Kusa et al., ICTIR '23); statistically validated, probability-theory-based stopping criteria for ML-assisted screening (Callaghan & Müller-Hansen, Syst Rev 2020); the CSMeD benchmark proposed to standardize citation-screening-automation datasets and provide unified API access (Kusa et al., NeurIPS Datasets & Benchmarks 2023), addressing documentation/availability/size inconsistencies across existing SR datasets.
+- **Future of ICASR (Session 4):** Explicit call for a governing body to standardize best-practice evaluation methods for automation tools — no such body currently exists; ICASR intends to seek funding toward (1) better communication of automation research and (2) collating evaluation data, aiming to produce evaluation guidance ahead of ICASR 2024.
+
+## Bearing on RQs
+Primary value is as an **RQ1 landscape anchor**: a curated, community-vetted snapshot (ICASR is the field's standing coordination body) of which automation tools and LLM-use patterns were salient as of late 2023, spanning search (Polyglot), reporting (RevMan Replicant), screening-adjacent adoption scale (Covidence), and LLM-specific pitfalls (hallucination, non-reproducibility from model drift, factual inaccuracy in multi-document synthesis). Also bears on **RQ2 (reliability/measurement)**: names three concrete metric-design threads worth chasing as primary sources — WSS→TNR critique, outcome-based (influence-weighted) evaluation, and statistically grounded stopping criteria — plus the CSMeD benchmark as a candidate standardized evaluation substrate. Strong **RQ3 (norms) anchor**: documents the field's own diagnosis that AI-tool use in published SRs is rarely disclosed, and that no guiding body yet enforces evaluation standards — directly motivating disclosure/guidance work this survey's RQ3 tracks. Touches **RQ4 (design gap)** only at the level of naming a need (a coordinating body, standardized evaluation guidance) rather than proposing a design; the "factored cognition" mention is a design idea for LLM-human decomposition but the paper itself withholds endorsement, noting unsubstantiated hallucination claims.
+
+## Evidence limits
+- Commentary/meeting-summary genre, not a study: no original data collection, no methods section, no statistics beyond numbers borrowed from cited talks/papers (e.g., "~50% less screening" for Polyglot, ">300,000 users" for Covidence) — these figures are reported secondhand and unverified within this paper itself.
+- Several claims are explicitly flagged by the authors as unsupported in the source presentation (the factored-cognition/hallucination claim) — a rare case of a source self-flagging weak evidence, useful to cite as such rather than as a finding.
+- Coverage of prior ICASR meetings (esp. the 7th, Köln 2022) is acknowledged as thin ("details ... were not specified in the provided text"), signaling a gap in the meeting-report lineage.
+- All numeric/technical claims trace to other primary sources cited in the references (tools, metrics, benchmarks) — this note treats them as landscape pointers for follow-up G1 ingestion of those primary sources (e.g., Kusa et al. WSS/TNR and outcome-based papers, CSMeD, Callaghan & Müller-Hansen stopping criteria, Wang et al. ChatGPT Boolean queries), not as independently verified findings.
+- Health/EBM-centric venue and author group (Systematic Reviews journal, ICASR membership skews clinical/public-health); explicitly notes some tools (Polyglot, RevMan) need translation work before use in social/agricultural/environmental-science reviews — a generalizability caveat the paper itself raises.

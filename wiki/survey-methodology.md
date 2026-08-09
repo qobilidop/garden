@@ -88,10 +88,10 @@ passes is an unsolved instrumentation gap.
 
 ## The agent-era frontier
 
-The canon predates agents, and the first sys0 survey campaign
-(surveys/agent-assisted-review-methodology/, baseline v1 frozen
-2026-08-08) mapped what has grown in the gap: 672 works on AI-assisted
-evidence synthesis, 2020–2026. Read against this page's theses, the
+The canon predates agents, and the first sys0 survey
+([[agent-assisted-review-methodology]], draft v1, 2026-08-08) mapped
+what has grown in the gap: 672 works on AI-assisted evidence
+synthesis, 2020–2026. Read against this page's theses, the
 campaign's findings rhyme with the canon rather than replacing it —
 the LLM-era stage skew reproduces the pre-LLM one (screening dominant,
 appraisal and reporting thin); evaluation practice still fails
@@ -103,9 +103,14 @@ disclosure norms converge on content while instruments fragment,
 extending [[page2021-the-prisma-2020-statement]]'s items 8–9 in four
 competing unvalidated directions; and reviewer-independence — the
 canon's measured-reliability thesis applied to agents — is entirely
-undefined in the literature. The campaign's syntheses and claims
-ledger carry the detail; its load-bearing works are G1 survey sources
-awaiting promotion before this page can cite them directly.
+undefined in the literature. A designed next experiment falls out of
+that gap: a cross-vendor dual-screening pass (the mirrored Codex
+configuration exists for exactly this), with disagreements analyzed
+by error type — among the first deliberate cross-family independence
+measurements the mapped literature lacks. The survey's manuscript
+carries the detail; its load-bearing works are evidence-note sources
+in the survey record awaiting promotion before this page can cite
+them directly.
 
 ## Local instantiation and open questions
 

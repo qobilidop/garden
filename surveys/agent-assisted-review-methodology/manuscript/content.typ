@@ -159,10 +159,10 @@ includes. All 672 includes were classified under the taxonomy of
 
 25 works were selected for deep reads as the map's anchors: 20 read
 in full text, 5 abstract-only. Citations resting on abstract-only
-evidence carry an "abstract-only" marker. The complete working
-record — protocol, search logs, curated catalogs, per-work evidence
-notes, and known issues — is public in the campaign record linked in
-the title note.
+evidence carry an "abstract-only" marker. The survey record linked in
+the title note holds the criteria, the search log, the classified
+catalog, and the per-work evidence notes; the full working history is
+in the repository.
 
 = RQ1 — Landscape: the pre-LLM shape, with the ends filling in <sec-rq1>
 
@@ -406,8 +406,7 @@ the terminology dependence snowballing exists to escape @wohlin2014,
 and a single-pass second wave; a post-freeze audit found \~3.9%
 residual duplicates in the include set. Coverage is English-only and
 the evidence base is medicine-dominant (412 of 672), so imported
-thresholds are medicine-calibrated. Known issues are logged in the
-public campaign record.
+thresholds are medicine-calibrated.
 
 = Conclusion
 
@@ -424,7 +423,7 @@ model-family diversity buys recall, yet no one can say what
 
 The map data behind this survey, the per-work evidence notes, and a
 curated reading list organized by the taxonomy of @sec-taxonomy are
-maintained on the survey's landing page and in the public campaign
+maintained on the survey's landing page and in the public survey
 record.
 
 #bibliography(

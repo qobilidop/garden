@@ -23,7 +23,7 @@
   meta: [
     #draft ·
     #link(landing)[landing page] ·
-    #link(record)[campaign record]
+    #link(record)[survey record]
   ],
 )
 

@@ -1,0 +1,46 @@
+---
+citekey: oami2025-gpt-35-turbo-and-gpt-4-turbo-in-title-and-abstract-screening-for-systematic-reviews
+work:
+  title: "GPT-3.5 Turbo and GPT-4 Turbo in Title and Abstract Screening for Systematic Reviews"
+  author: "Takehiko Oami, Yohei Okada, Taka-aki Nakada"
+  venue: "JMIR Medical Informatics"
+  date: 2025
+  doi: 10.2196/64682
+read: full-text
+source: "shadow/store/library/papers/2025/oami2025-gpt-35-turbo-and-gpt-4-turbo-in-title-and-abstract-screening-for-systematic-reviews/"
+facets:
+  stage: "screen"
+  contribution: "evaluation"
+  evidence: "human-agree"
+  setting: "med"
+retrieved: 2026-08-08
+notes-by: Claude Sonnet-class (survey deep-read pipeline)
+notes-date: 2026-08-08
+synthesis: "GPT-3.5 Turbo vs GPT-4 Turbo, post hoc accuracy/speed comparison"
+---
+
+# GPT-3.5 Turbo and GPT-4 Turbo in Title and Abstract Screening for Systematic Reviews
+
+## Evidence
+- Research letter: post hoc analysis of the authors' own prior study (Oami, Okada, Nakada, JAMA Netw Open 2024, ref [6]), re-running the same LLM-assisted citation-screening pipeline on GPT-4 Turbo in addition to the original GPT-3.5 Turbo, to isolate the effect of model upgrade holding prompt/pipeline fixed.
+- Data: 5 clinical questions (CQs) from the Japanese Clinical Practice Guidelines for Management of Sepsis and Septic Shock 2024. Conventional (human) full-text screening selected 0.24% of citations (41/16,669) across the 5 CQs — an extreme-imbalance screening setting.
+- Pipeline: Python (v3.9.0) + OpenAI API; zero-shot relevance judgment per reference against PICOS-style criteria (patient characteristics, interventions, comparisons, study designs) specific to each CQ. Identical prompt used for both models — the prompt had been optimized for sensitivity in the authors' prior study. Reference standard = final included-study list from the conventional (human) review. Screening run June 6–7, 2024. STARD guidelines followed.
+- GPT-3.5 Turbo: sensitivity 0.83 (95% CI 0.67–0.92), specificity 0.51 (95% CI 0.39–0.63) — random-effects pooled across CQs 1–5 (heterogeneity for specificity: I²=100%, P<.001; for sensitivity I²=0%, P=.68).
+- GPT-4 Turbo: sensitivity 0.85 (95% CI 0.63–0.95), specificity 0.98 (95% CI 0.97–0.99) — heterogeneity for specificity I²=95%, P<.001; for sensitivity I²=27%, P=.24.
+- Model comparison: no significant sensitivity difference (median difference −0.06, 95% CI −0.50 to 0.23); significant specificity difference favoring GPT-4 Turbo (median difference 0.48, 95% CI 0.29–0.62).
+- Speed: GPT-3.5 Turbo screened 100 studies in 0.9 min vs GPT-4 Turbo's 1.6 min (mean difference 0.69 min, 95% CI 0.53–0.86, unpaired 2-tailed t test, P<.001) — GPT-3.5 Turbo ~1.8x faster per 100 records, but the gap is a fraction of a minute per 100 records either way.
+- Per-CQ breakdown (Figure 1, forest plots): GPT-3.5 Turbo sensitivity ranged 0.75–1.00 across the 5 CQs; specificity ranged 0.37–0.70. GPT-4 Turbo sensitivity ranged 0.50–1.00 (CQ3 lowest at 0.50, 95% CI 0.12–0.88); specificity ranged 0.96–0.99, tightly clustered.
+- No cost ($) figures reported anywhere — only wall-clock processing time per 100 studies.
+- Authors' framing: despite slower processing, GPT-4 Turbo's much higher specificity ("crucial for reducing workloads in subsequent review phases by minimizing the inclusion of irrelevant studies") makes it "more suitable" overall — an explicit sensitivity-vs-specificity-vs-speed trade-off argument rather than a single-axis "better" claim.
+
+## Bearing on RQs
+Directly bears on RQ2 (reliability/agreement metrics): a clean same-prompt, same-pipeline, model-upgrade-only comparison isolating how much of citation-screening performance is attributable to base-model capability vs. prompt/harness design — useful as a controlled counterpoint to studies that vary prompt and model simultaneously. Reports sensitivity, specificity, and processing-time metrics with CIs and heterogeneity statistics, and explicitly argues for specificity (not sensitivity) as the deciding factor when sensitivity is comparable — a metrics-prioritization argument relevant to RQ2's "how is agent performance measured" framing. Only lightly touches RQ4 (no ensembling; single-model-at-a-time design) and RQ1 (workflow is a minimal single-pass LLM screen, not a broader system).
+
+## Evidence limits
+- Single domain (sepsis/critical care guidelines), single institution (Chiba University); authors explicitly flag limited generalizability to other medical domains.
+- Post hoc study design carries acknowledged selection-bias risk (authors' own limitation #2).
+- Only 2 models tested, both now superseded (GPT-3.5 Turbo, GPT-4 Turbo); authors explicitly recommend future work test OpenAI o1 or newer models — direct relevance to current (2026) agentic-review methodology is dated.
+- No alternative prompts or prompt-engineering variants tested — confounds "model capability" with "this one fixed prompt," though that fixation is also the paper's methodological strength (isolating the model variable).
+- Extreme class imbalance (0.24% positive rate) means specificity differences of a few points translate to large absolute differences in false-positive workload, but the paper does not report absolute FP/FN counts or downstream reviewer-workload estimates, only rates.
+- Research letter format (JMIR Med Inform): short, no full methods in the main text — clinical-question definitions, exact prompt text, and per-run data are relegated to Multimedia Appendix 1 (DOCX, not independently verified in this reading), so some methodological detail (exact prompt wording) unconfirmed from the main PDF alone.
+- No cost data reported (explicitly absent, not just unfound).

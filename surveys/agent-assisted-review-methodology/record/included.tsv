@@ -1,0 +1,673 @@
+key	year	title	stage	contribution	evidence	setting
+arxiv:2005.06601	2020	Unlocking the Power of Deep PICO Extraction: Step-wise Medical NER Id…	extract	method	benchmark	med
+arxiv:2112.05596	2021	Automated tabulation of clinical trial results: A joint entity and re…	extract	method	benchmark	med
+arxiv:2211.15397	2022	Automating Systematic Literature Reviews with Natural Language Proces…	meta	position	none	general
+arxiv:2305.00844	2023	Automated Paper Screening for Clinical Reviews Using Large Language M…	screen	evaluation	human-agree	med
+arxiv:2305.11828	2023	Appraising the Potential Uses and Harms of LLMs for Medical Systemati…	meta	evaluation	none	med
+arxiv:2306.14905	2023	PRISMA-DFLLM: An Extension of PRISMA for Systematic Literature Review…	end2end	method	none	general
+arxiv:2307.06464	2023	Assessing the Ability of ChatGPT to Screen Articles for Systematic Re…	screen	evaluation	human-agree	se
+arxiv:2308.06610	2023	Bio-SIEVE: Exploring Instruction Tuning Large Language Models for Sys…	screen	method	benchmark	med
+arxiv:2310.17526	2023	Can large language models replace humans in the systematic review pro…	end2end	evaluation	human-agree	med
+arxiv:2311.07918	2023	Automated title and abstract screening for scoping reviews using the…	screen	system	human-agree	general
+arxiv:2311.12474	2023	CSMeD: Bridging the Dataset Gap in Automated Citation Screening for S…	screen	evaluation	benchmark	med
+arxiv:2403.02574	2024	ChatCite: LLM Agent with Human Workflow Guidance for Comparative Lite…	synthesize	method	none	general
+arxiv:2403.08399	2024	System for systematic literature review using multiple AI agents: Con…	end2end	system	benchmark	general
+arxiv:2405.14445	2024	Exploring the use of a Large Language Model for data extraction in sy…	extract	evaluation	human-agree	general
+arxiv:2406.17755	2024	Accelerating Clinical Evidence Synthesis with Large Language Models	end2end	system	none	med
+arxiv:2408.04646	2024	Efficacy of Large Language Models in Systematic Reviews	end2end	evaluation	human-agree	general
+arxiv:2409.04600	2024	The emergence of Large Language Models (LLM) as a tool in literature…	meta	evaluation	none	med
+arxiv:2411.02451	2024	High-performance automated abstract screening with large language mod…	screen	evaluation	human-agree	med
+arxiv:2411.06159	2024	Mixture of Knowledge Minigraph Agents for Literature Review Generation	synthesize	method	none	general
+arxiv:2412.15247	2024	Streamlining Systematic Reviews: A Novel Application of Large Languag…	screen	system	human-agree	med
+arxiv:2501.05468	2025	LatteReview: A Multi-Agent Framework for Systematic Review Automation…	end2end	system	benchmark	general
+arxiv:2501.19359	2025	Mechanical Properties of the Meninges: Large Language Model Assisted…	screen	evaluation	none	general
+arxiv:2502.14767	2025	Tree-of-Debate: Multi-Persona Debate Trees Elicit Critical Thinking f…	appraise	method	none	general
+arxiv:2502.15702	2025	Large language models streamline automated systematic review: A preli…	end2end	evaluation	human-agree	med
+arxiv:2503.13857	2025	Enabling Inclusive Systematic Reviews: Incorporating Preprint Article…	appraise	method	benchmark	med
+arxiv:2504.04193	2025	AiReview: An Open Platform for Accelerating Systematic Reviews with L…	screen	system	none	med
+arxiv:2504.08752	2025	Patience is all you need! An agentic system for performing scientific…	end2end	system	none	general
+arxiv:2504.14822	2025	Completing A Systematic Review in Hours instead of Months with Intera…	end2end	system	none	med
+arxiv:2504.20276	2025	Enhancing Systematic Reviews with Large Language Models: Using GPT-4…	extract	evaluation	human-agree	general
+arxiv:2505.07155	2025	Reassessing Large Language Model Boolean Query Generation for Systema…	search	evaluation	benchmark	general
+arxiv:2505.20310	2025	Manalyzer: End-to-end Automated Meta-analysis with Multi-agent System	end2end	system	none	general
+arxiv:2505.22787	2025	Can Large Language Models Match the Conclusions of Systematic Reviews?	synthesize	evaluation	human-agree	med
+arxiv:2505.24757	2025	LGAR: Zero-Shot LLM-Guided Neural Ranking for Abstract Screening in S…	screen	method	none	general
+arxiv:2508.12170	2025	Energy Efficiency in Robotics Software: A Systematic Literature Revie…	report	evaluation	none	se
+arxiv:2510.05138	2025	LiRA: A Multi-Agent Framework for Reliable and Readable Literature Re…	synthesize	system	none	general
+arxiv:2510.16091	2025	Evaluating Prompting Strategies and Large Language Models in Systemat…	screen	evaluation	benchmark	general
+arxiv:2511.12635	2025	LLM4SCREENLIT: Recommendations on Assessing the Performance of Large…	meta	guideline	none	general
+arxiv:2511.17689	2025	ARISE: Agentic Rubric-Guided Iterative Survey Engine for Automated Sc…	report	system	none	general
+arxiv:2512.11261	2025	Leveraging LLMs for Title and Abstract Screening for Systematic Revie…	screen	method	benchmark	med
+arxiv:2512.20022	2025	LLM-Assisted Abstract Screening with OLIVER: Evaluating Calibration a…	screen	system	benchmark	general
+arxiv:2602.00011	2025	Chained Prompting for Better Systematic Review Search Strategies	search	method	none	general
+arxiv:2603.22327	2026	Evaluating AI-based Scientific Knowledge Synthesis with Epidemiologic…	meta	evaluation	human-agree	med
+arxiv:2603.24767	2026	Fine-Tuning A Large Language Model for Systematic Review Screening	screen	method	benchmark	general
+arxiv:2603.28336	2026	A Multi-Agent Rhizomatic Pipeline for Non-Linear Literature Analysis	end2end	system	none	general
+arxiv:2604.01452	2026	A Multi-Agent Human-LLM Collaborative Framework for Closed-Loop Scien…	synthesize	system	none	general
+arxiv:2605.15245	2026	Assistance to Autonomy: A Systematic Literature Review of Agentic AI…	report	evaluation	none	se
+arxiv:2606.28363	2026	meta-pipe: An LLM-agent pipeline for end-to-end automated systematic…	end2end	system	none	med
+arxiv:2607.05031	2026	LLM-Based Test Oracles: Source-of-Authority Taxonomy -- A Systematic…	screen	evaluation	human-agree	se
+doi:10.1001/jamanetworkopen.2024.20496	2024	Performance of a Large Language Model in Screening Citations	screen	evaluation	human-agree	med
+doi:10.1002/cesm.12021	2023	Machine learning for accelerating screening in evidence reviews	screen	position	none	med
+doi:10.1002/cesm.12041	2024	The use of a large language model to create plain language summaries…	report	evaluation	human-agree	med
+doi:10.1002/cesm.70031	2025	Using GPT‐4 for Title and Abstract Screening in a Literature Review o…	screen	evaluation	human-agree	general
+doi:10.1002/cesm.70033	2025	Data Extractions Using a Large Language Model (Elicit) and Human Revi…	extract	evaluation	human-agree	med
+doi:10.1002/cesm.70036	2025	Using Artificial Intelligence Tools as Second Reviewers for Data Extr…	extract	evaluation	human-agree	med
+doi:10.1002/cesm.70042	2025	Enhancing Evidence Synthesis Efficiency: Leveraging Large Language Mo…	screen	system	human-agree	med
+doi:10.1002/cesm.70046	2025	Artificial Intelligence and Automation in Evidence Synthesis: An Inve…	meta	evaluation	none	general
+doi:10.1002/cesm.70047	2025	Leveraging AI for Meta‐Analysis: Evaluating LLMs in Detecting Publica…	appraise	evaluation	benchmark	med
+doi:10.1002/cesm.70048	2025	Using a Large Language Model (ChatGPT‐4o) to Assess the Risk of Bias…	appraise	evaluation	human-agree	med
+doi:10.1002/cesm.70050	2025	Comparison of Elicit AI and Traditional Literature Searching in Evide…	search	evaluation	human-agree	med
+doi:10.1002/cesm.70058	2025	Harnessing Large‐Language Models for Efficient Data Extraction in Sys…	extract	method	human-agree	med
+doi:10.1002/cesm.70059	2025	RETRACTED: Human‐in‐the‐Loop Artificial Intelligence System for Syste…	end2end	system	human-agree	general
+doi:10.1002/cesm.70061	2025	Assessing the Feasibility and Acceptability of a Bespoke Large Langua…	extract	evaluation	human-agree	med
+doi:10.1002/cesm.70063	2025	Responsible Integration of Artificial Intelligence in Rapid Reviews:…	meta	guideline	none	med
+doi:10.1002/cesm.70082	2026	Batch Size Effects on Mid‐2025 State‐of‐the‐Art Large Language Model…	screen	evaluation	human-agree	med
+doi:10.1002/cesm.70088	2026	An Open‐Source Systematic Reviews Integrated System (OSSYRIS) – Strea…	end2end	system	none	general
+doi:10.1002/cl2.1129	2020	On the use of computer‐assistance to facilitate systematic mapping	meta	position	none	general
+doi:10.1002/gin2.70079	2026	Integrating Artificial Intelligence and Automation Into Living Guidel…	meta	guideline	none	med
+doi:10.1002/hkj2.70085	2026	Automated systematic reviews using machine learning and large languag…	meta	position	none	med
+doi:10.1002/jat.4204	2021	Toxic effects of nanomaterials for health applications: How automatio…	end2end	evaluation	none	med
+doi:10.1002/jcv2.12234	2024	How to optimize the systematic review process using AI tools	meta	guideline	none	general
+doi:10.1002/jrsm.1518	2021	Training sample selection: Impact on screening automation in diagnost…	screen	method	benchmark	med
+doi:10.1002/jrsm.1533	2021	Risk of bias assessment in preclinical literature using natural langu…	appraise	method	benchmark	med
+doi:10.1002/jrsm.1553	2022	Using artificial intelligence methods for systematic review in health…	meta	evaluation	none	med
+doi:10.1002/jrsm.1589	2022	In‐depth evaluation of machine learning methods for semi‐automating a…	screen	evaluation	human-agree	med
+doi:10.1002/jrsm.1593	2022	Investigation of text‐mining methodologies to aid the construction of…	search	evaluation	human-agree	med
+doi:10.1002/jrsm.1604	2022	<scp><i>Paperfetcher</i></scp>: A tool to automate handsearching and…	search	system	none	general
+doi:10.1002/jrsm.1636	2023	A real‐world evaluation of the implementation of <scp>NLP</scp> techn…	screen	evaluation	human-agree	med
+doi:10.1002/jrsm.1665	2023	A mapping exercise using automated techniques to develop a search str…	search	method	none	general
+doi:10.1002/jrsm.1689	2023	Methods for using Bing's AI‐powered search engine for data extraction…	extract	method	none	med
+doi:10.1002/jrsm.1710	2024	Data extraction for evidence synthesis using a large language model:…	extract	evaluation	human-agree	med
+doi:10.1002/jrsm.1715	2024	Can large language models replace humans in systematic reviews? Evalu…	end2end	evaluation	human-agree	med
+doi:10.1002/jrsm.1731	2024	Automation tools to support undertaking scoping reviews	meta	guideline	none	med
+doi:10.1002/jrsm.1732	2024	Performance of two large language models for data extraction in evide…	extract	evaluation	human-agree	med
+doi:10.1002/jrsm.1761	2024	Towards the automatic risk of bias assessment on randomized controlle…	appraise	evaluation	human-agree	med
+doi:10.1002/jrsm.1762	2024	An evaluation of the performance of stopping rules in <scp>AI</scp>‐a…	screen	evaluation	benchmark	general
+doi:10.1002/ksa.70412	2026	Automated data extraction for systematic reviews using GPT‐5.2 and Go…	extract	evaluation	human-agree	med
+doi:10.1002/ksa.70462	2026	Using a large language model as a third reviewer to augment dual huma…	screen	evaluation	human-agree	med
+doi:10.1002/pra2.1290	2025	<scp>AI</scp> ‐Augmented Search for Systematic Reviews: A Comparative…	search	evaluation	benchmark	general
+doi:10.1002/wcms.70047	2025	Automating Data Extraction From Scientific Literature and General <sc…	extract	system	none	general
+doi:10.1007/978-1-0716-1566-9_2	2021	Semi-automated Tools for Systematic Searches	search	method	none	general
+doi:10.1007/978-3-030-50420-5_32	2020	The Concept of System for Automated Scientific Literature Reviews Gen…	end2end	system	none	general
+doi:10.1007/978-3-030-90966-6_9	2021	Automation in Healthcare Systematic Review	meta	position	none	med
+doi:10.1007/978-3-031-48858-0_25	2023	Leveraging Large Language Models for Literature Review Tasks - A Case…	end2end	evaluation	none	general
+doi:10.1007/978-3-031-56027-9_25	2024	Zero-shot Generative Large Language Models for Systematic Review Scre…	screen	evaluation	human-agree	med
+doi:10.1007/978-3-031-56069-9_28	2024	SciSpace Literature Review: Harnessing AI for Effortless Scientific D…	end2end	system	none	general
+doi:10.1007/978-3-031-70421-5_16	2024	Towards the Utilization of AI-Powered Assistance for Systematic Liter…	end2end	position	none	general
+doi:10.1007/978-3-032-02813-6_1	2025	Augmenting Systematic Literature Reviews: A Human-AI Collaborative Fr…	end2end	method	none	se
+doi:10.1007/978-3-032-11442-6_39	2025	Comparative Assessment of ChatGPT, DeepSeek, and Human Reviewers for…	screen	evaluation	human-agree	med
+doi:10.1007/978-3-032-30801-6_6	2026	End-to-End Automation of Multilingual Scoping Reviews Using Agentic AI	end2end	system	none	general
+doi:10.1007/978-3-032-30813-9_3	2026	A PRISMA-Aligned Workflow for LLM-Assisted Title–Abstract Screening:…	screen	method	none	med
+doi:10.1007/978-981-95-3456-2_27	2025	SGSimEval: A Comprehensive Multifaceted and Similarity-Enhanced Bench…	report	evaluation	benchmark	se
+doi:10.1007/978-981-96-0348-0_3	2024	Highlighting Case Studies in LLM Literature Review of Interdisciplina…	meta	evaluation	none	general
+doi:10.1007/978-981-99-3243-6_7	2023	Automating Systematic Literature Reviews with Natural Language Proces…	meta	position	none	general
+doi:10.1007/s00134-025-08226-z	2025	How large language models can help us write a systematic review	report	guideline	none	med
+doi:10.1007/s00146-025-02406-7	2025	Can generative AI reliably synthesise literature? exploring hallucina…	meta	evaluation	human-agree	general
+doi:10.1007/s00405-024-08464-9	2024	Is generative pre-trained transformer artificial intelligence (Chat-G…	synthesize	evaluation	human-agree	med
+doi:10.1007/s00607-023-01181-x	2023	Artificial intelligence to automate the systematic review of scientif…	end2end	system	none	general
+doi:10.1007/s10462-024-10844-w	2024	Towards the automation of systematic reviews using natural language p…	meta	evaluation	none	general
+doi:10.1007/s10462-024-10902-3	2024	Artificial intelligence for literature reviews: opportunities and cha…	meta	position	none	general
+doi:10.1007/s10648-024-09862-5	2024	Screening Smarter, Not Harder: A Comparative Analysis of Machine Lear…	screen	evaluation	human-agree	general
+doi:10.1007/s10648-024-09972-0	2024	Semi-automating the Scoping Review Process: Is it Worthwhile? A Metho…	meta	evaluation	none	general
+doi:10.1007/s10648-026-10136-5	2026	Automated Data Extraction by Large Language Models: Assessing Accurac…	extract	evaluation	human-agree	general
+doi:10.1007/s10791-020-09381-1	2020	A comparison of automatic Boolean query formulation for systematic re…	search	evaluation	benchmark	general
+doi:10.1007/s10815-024-03089-7	2024	Utilizing artificial intelligence in academic writing: an in-depth ev…	report	evaluation	human-agree	med
+doi:10.1007/s10916-025-02212-0	2025	Large Language Models and the Analyses of Adherence to Reporting Guid…	appraise	evaluation	human-agree	med
+doi:10.1007/s10916-025-02246-4	2025	How Well Do ChatGPT and Claude Perform in Study Selection for Systema…	screen	evaluation	human-agree	med
+doi:10.1007/s11192-020-03648-6	2020	Automatic document screening of medical literature using word and tex…	screen	method	benchmark	med
+doi:10.1007/s11192-024-05206-w	2025	Disentangling patent quality: using a large language model for a syst…	end2end	evaluation	none	general
+doi:10.1007/s11301-025-00522-8	2025	A hybrid framework for creating artificial intelligence-augmented sys…	end2end	method	none	general
+doi:10.1007/s11423-026-10629-8	2026	Scaffolding systematic reviews in learning design and technology thro…	meta	guideline	none	general
+doi:10.1007/s12178-025-10001-y	2025	Evaluating the Efficacy and Efficiency of GPT-5 for Automated Title a…	screen	evaluation	human-agree	med
+doi:10.1007/s40264-023-01367-4	2023	Validation of a Natural Language Machine Learning Model for Safety Li…	screen	evaluation	none	med
+doi:10.1007/s40273-026-01648-7	2026	A Machine Learning and Large Language Model Tool for Systematic Liter…	end2end	system	human-agree	med
+doi:10.1007/s40290-024-00539-6	2024	Automated Mass Extraction of Over 680,000 PICOs from Clinical Study A…	extract	evaluation	benchmark	med
+doi:10.1007/s41060-025-00731-0	2025	Hallucination in AI-generated financial literature reviews: evaluatin…	synthesize	evaluation	benchmark	general
+doi:10.1007/s41666-026-00246-8	2026	Leveraging LLMs for Title and Abstract Screening for Systematic Revie…	screen	method	none	general
+doi:10.1007/s41669-024-00476-9	2024	Artificial Intelligence to Automate Network Meta-Analyses: Four Case…	end2end	evaluation	human-agree	med
+doi:10.1016/j.accre.2025.03.013	2025	Global agricultural adaptation case database and trend analysis based…	extract	system	none	general
+doi:10.1016/j.acra.2025.08.014	2025	Evaluating Large Language Models for Radiology Systematic Review Titl…	screen	evaluation	human-agree	med
+doi:10.1016/j.actpsy.2023.104095	2023	Sample size in quantitative instrument-based studies published in Sco…	extract	method	none	general
+doi:10.1016/j.adaj.2025.08.011	2025	Comparing the performance of ChatGPT, DeepSeek, and Gemini in systema…	meta	evaluation	benchmark	med
+doi:10.1016/j.artmed.2020.101949	2020	EBM+: Advancing Evidence-Based Medicine via two level automatic ident…	extract	system	none	med
+doi:10.1016/j.artmed.2024.102989	2024	Enhancing systematic reviews: An in-depth analysis on the impact of a…	screen	evaluation	benchmark	med
+doi:10.1016/j.beth.2026.07.001	2026	Performance Accuracy of ChatGPT for Data Extraction in Randomised Con…	extract	evaluation	human-agree	med
+doi:10.1016/j.cag.2026.104537	2026	Leveraging LLMs for semi-automatic corpus filtration in systematic li…	screen	method	none	se
+doi:10.1016/j.cardfail.2023.06.015	2023	ChatGPT Produces Fabricated References and Falsehoods When Used for S…	search	evaluation	none	med
+doi:10.1016/j.chb.2024.108215	2024	Using machine learning for continuous updating of meta-analysis in ed…	screen	method	benchmark	general
+doi:10.1016/j.cmicom.2026.105214	2026	A proof-of-concept performance evaluation of six large language model…	extract	evaluation	human-agree	med
+doi:10.1016/j.cmpb.2025.108962	2025	ExtractPDF: A data extraction tool for scientific papers applied to a…	extract	system	none	med
+doi:10.1016/j.cola.2024.101287	2024	Screening articles for systematic reviews with ChatGPT	screen	evaluation	benchmark	general
+doi:10.1016/j.compbiomed.2025.110464	2025	Enhancing search strategies for systematic reviews on drug Harms: An…	search	evaluation	benchmark	med
+doi:10.1016/j.crfs.2021.12.010	2021	Automatic classification of literature in systematic reviews on food…	screen	method	benchmark	general
+doi:10.1016/j.crsus.2024.100132	2024	Human-AI collaboration to identify literature for evidence synthesis	end2end	method	human-agree	general
+doi:10.1016/j.dajour.2023.100162	2023	A novel application of machine learning and zero-shot classification…	screen	method	benchmark	med
+doi:10.1016/j.ecoinf.2024.102819	2024	Harnessing artificial intelligence for efficient systematic reviews:…	screen	evaluation	none	general
+doi:10.1016/j.envint.2020.105623	2020	SWIFT-Active Screener: Accelerated document screening through active…	screen	system	human-agree	med
+doi:10.1016/j.envint.2021.107025	2021	Evaluation of a semi-automated data extraction tool for public health…	extract	system	human-agree	general
+doi:10.1016/j.eswax.2020.100030	2020	Using a neural network-based feature extraction method to facilitate…	screen	method	benchmark	general
+doi:10.1016/j.euros.2023.07.005	2023	A Machine Learning Framework Reduces the Manual Workload for Systemat…	screen	evaluation	human-agree	med
+doi:10.1016/j.geoderma.2026.117890	2026	Rapid evidence mapping of soil fauna responses to agricultural manage…	extract	method	benchmark	general
+doi:10.1016/j.hlc.2026.05.032	2026	Accuracy of Large Language Models in Extracting Literature Features f…	extract	evaluation	human-agree	med
+doi:10.1016/j.ijmedinf.2024.105500	2024	Automating biomedical literature review for rapid drug discovery: Lev…	end2end	system	none	med
+doi:10.1016/j.ijmedinf.2024.105531	2024	Implementation and evaluation of an additional GPT-4-based reviewer i…	screen	evaluation	human-agree	med
+doi:10.1016/j.ijmedinf.2025.106035	2025	Enhancing AI for citation screening in literature reviews: Improving…	screen	method	benchmark	med
+doi:10.1016/j.ijmedinf.2025.106205	2025	AI-assisted literature screening: A hybrid approach using large langu…	screen	method	benchmark	med
+doi:10.1016/j.ijmedinf.2026.106463	2026	Empowering open medium-sized generative language models for effective…	search	method	benchmark	med
+doi:10.1016/j.imed.2025.12.006	2025	Evaluation of artificial intelligence-based tool Covidence in literat…	screen	evaluation	human-agree	med
+doi:10.1016/j.imr.2025.101217	2025	Using artificial intelligence for the development of a living evidenc…	end2end	system	benchmark	med
+doi:10.1016/j.imr.2026.101351	2026	Design and methodology of the AI-empowered Clinical Evidence for Inte…	end2end	system	none	med
+doi:10.1016/j.infsof.2021.106589	2021	Automation of systematic literature reviews: A systematic literature…	meta	evaluation	none	se
+doi:10.1016/j.ipm.2025.104245	2025	Harnessing language models for computational literature review of eme…	meta	method	none	general
+doi:10.1016/j.iswa.2022.200141	2022	Automated MeSH term suggestion for effective query formulation in sys…	search	method	none	med
+doi:10.1016/j.iswa.2023.200193	2023	An analysis of work saved over sampling in the evaluation of automate…	screen	method	none	med
+doi:10.1016/j.jaad.2025.03.101	2025	Transparent reporting of generative artificial intelligence use in sy…	report	guideline	none	general
+doi:10.1016/j.jbi.2022.104185	2022	Improvement of intervention information detection for automated clini…	screen	method	benchmark	med
+doi:10.1016/j.jbi.2023.104389	2023	The use of artificial intelligence for automating or semi-automating…	meta	position	none	med
+doi:10.1016/j.jbi.2024.104640	2024	Leveraging generative AI for clinical evidence synthesis needs to ens…	meta	position	none	med
+doi:10.1016/j.jbi.2025.104860	2025	Do it faster with PICOS: Generative AI-Assisted systematic review scr…	screen	system	none	med
+doi:10.1016/j.jbi.2025.104911	2025	An optimized code-free AI approach for efficient and accurate literat…	screen	system	benchmark	med
+doi:10.1016/j.jbi.2026.105086	2026	Performance of large language models in data extraction for evidence…	extract	evaluation	benchmark	med
+doi:10.1016/j.jclinane.2025.112030	2025	Combining large language models enhances screening sensitivity in sys…	screen	method	human-agree	med
+doi:10.1016/j.jclinepi.2020.01.008	2020	A full systematic review was completed in 2 weeks using automation to…	end2end	evaluation	none	med
+doi:10.1016/j.jclinepi.2020.09.024	2020	Citation screening using crowdsourcing and machine learning produced…	screen	evaluation	human-agree	med
+doi:10.1016/j.jclinepi.2020.11.003	2020	Machine learning reduced workload with minimal risk of missing studie…	screen	method	human-agree	med
+doi:10.1016/j.jclinepi.2021.01.010	2021	Natural language processing was effective in assisting rapid title an…	screen	method	human-agree	med
+doi:10.1016/j.jclinepi.2021.06.030	2021	Systematic review automation tools improve efficiency but lack of kno…	meta	evaluation	none	general
+doi:10.1016/j.jclinepi.2021.12.005	2021	Tools to support the automation of systematic reviews: a scoping revi…	meta	evaluation	none	general
+doi:10.1016/j.jclinepi.2022.04.027	2022	Artificial intelligence in COVID-19 evidence syntheses was underutili…	meta	evaluation	none	med
+doi:10.1016/j.jclinepi.2022.06.007	2022	A novel tool that allows interactive screening of PubMed citations sh…	screen	system	none	med
+doi:10.1016/j.jclinepi.2022.08.013	2022	In a pilot study, automated real-time systematic review updates were…	search	system	human-agree	med
+doi:10.1016/j.jclinepi.2023.04.006	2023	Analysis of predictive performance and reliability of classifiers for…	appraise	evaluation	benchmark	med
+doi:10.1016/j.jclinepi.2024.111533	2024	Benchmarking Human–AI collaboration for common evidence appraisal too…	appraise	evaluation	human-agree	med
+doi:10.1016/j.jclinepi.2025.111738	2025	Comparing Artificial Intelligence and manual methods in systematic re…	meta	evaluation	none	general
+doi:10.1016/j.jclinepi.2025.111746	2025	Large language models for conducting systematic reviews: on the rise,…	meta	position	none	med
+doi:10.1016/j.jclinepi.2025.111894	2025	Comparison of AI-assisted and human-generated plain language summarie…	report	evaluation	human-agree	med
+doi:10.1016/j.jclinepi.2025.112102	2025	Comparison of AI-assisted and human-generated plain language summarie…	report	evaluation	human-agree	med
+doi:10.1016/j.jclinepi.2026.112221	2026	Large language models show promising performance for some systematic…	meta	evaluation	human-agree	general
+doi:10.1016/j.jclinepi.2026.112383	2026	Large language models for systematic reviews were reported to perform…	meta	evaluation	none	med
+doi:10.1016/j.jcrc.2025.155358	2025	Can large language models approximate the results of meta-analyses in…	synthesize	evaluation	human-agree	med
+doi:10.1016/j.jdent.2024.105259	2024	Assessing the article screening efficiency of artificial intelligence…	screen	evaluation	benchmark	med
+doi:10.1016/j.jdent.2025.105846	2025	Artificial intelligence as a tool for data extraction is not fully re…	extract	evaluation	human-agree	med
+doi:10.1016/j.jdent.2025.105877	2025	Large language models for the screening step in systematic reviews in…	screen	evaluation	human-agree	med
+doi:10.1016/j.jdent.2025.106245	2025	Accuracy of LLMs to retrieve numeric data for meta-analysis in dentis…	extract	evaluation	human-agree	med
+doi:10.1016/j.jeph.2025.202990	2025	Validation of a generative artificial intelligence tool for the criti…	appraise	evaluation	human-agree	med
+doi:10.1016/j.jmir.2023.11.005	2023	Using ChatGPT and other forms of generative AI in systematic reviews:…	meta	position	none	med
+doi:10.1016/j.jval.2020.04.007	2020	AI4 CAN WE DECREASE THE SCREENING BURDEN IN SYSTEMATIC REVIEWS? PERFO…	screen	evaluation	human-agree	med
+doi:10.1016/j.jval.2022.09.1831	2022	MSR100 Applicability of Artificial Intelligence in Targeted Literatur…	meta	evaluation	none	general
+doi:10.1016/j.jval.2024.10.2450	2024	MSR217 Evaluating a Large Language Model Approach for Full-Text Scree…	screen	evaluation	human-agree	med
+doi:10.1016/j.jval.2025.04.1193	2025	MSR41 The Use of Large Language Models for Systematic Literature Revi…	meta	evaluation	none	med
+doi:10.1016/j.jval.2025.07.001	2025	Role of Generative Artificial Intelligence in Assisting Systematic Re…	meta	evaluation	human-agree	med
+doi:10.1016/j.jval.2025.08.001	2025	The “Artificial Intelligence Statistician”: Utilizing Generative Arti…	synthesize	method	none	med
+doi:10.1016/j.jval.2025.08.002	2025	A4SLR: An Agentic Artificial Intelligence-Assisted Systematic Literat…	end2end	system	none	med
+doi:10.1016/j.jval.2025.09.2953	2025	SA11 An AI-Enhanced Targeted Literature Review Workflow to Support In…	end2end	system	none	med
+doi:10.1016/j.jval.2025.09.3033	2025	SA92 Testing Automated-Prompt Engineering Strategies for Systematic L…	screen	evaluation	none	med
+doi:10.1016/j.jval.2025.12.019	2026	RETRACTED: Integrating Generative Artificial Intelligence Into Eviden…	meta	guideline	none	general
+doi:10.1016/j.jval.2026.03.1578	2026	MSR79 AUTOMATION OF SYSTEMATIC REVIEWS WITH LARGE LANGUAGE MODELS	end2end	system	human-agree	med
+doi:10.1016/j.jval.2026.06.012	2026	The Use of Generative Artificial Intelligence in Systematic Literatur…	meta	evaluation	none	general
+doi:10.1016/j.lindif.2025.102849	2025	AI tools for systematic literature reviews and meta-analyses in educa…	meta	guideline	none	general
+doi:10.1016/j.mcpdig.2024.05.023	2024	Future of Evidence Synthesis: Automated, Living, and Interactive Syst…	meta	position	none	med
+doi:10.1016/j.mex.2022.101935	2022	An automated method for developing search strategies for systematic r…	search	method	none	general
+doi:10.1016/j.mex.2024.103129	2024	AI-pocalypse now: Automating the systematic literature review with SP…	end2end	system	none	general
+doi:10.1016/j.mex.2026.104041	2026	A reproducible optimisation protocol for calibrating prompt-based lar…	meta	method	none	general
+doi:10.1016/j.otsr.2026.104793	2026	Artificial Intelligence in Systematic Reviews and Meta-Analyses: Task…	meta	evaluation	benchmark	med
+doi:10.1016/j.patter.2025.101318	2025	ASReview LAB v.2: Open-source text screening with multiple agents and…	screen	system	benchmark	general
+doi:10.1016/j.prevetmed.2026.106908	2026	A rule-based large language model screening framework for evidence sy…	screen	method	human-agree	med
+doi:10.1016/j.prosdent.2026.02.009	2026	Performance of large language models conducting systematic review tas…	end2end	evaluation	human-agree	med
+doi:10.1016/j.psychres.2023.115334	2023	ChatGPT and Bard exhibit spontaneous citation fabrication during psyc…	search	evaluation	none	med
+doi:10.1016/j.puhe.2026.106220	2026	An overview of artificial intelligence approaches for automating evid…	meta	position	none	general
+doi:10.1016/j.rmal.2024.100101	2024	Utilizing ASReview in screening primary studies for meta-research in…	screen	guideline	none	general
+doi:10.1016/j.rmal.2025.100258	2025	Automate the ‘boring bits’: An assessment of AI-assisted systematic r…	screen	evaluation	none	general
+doi:10.1016/j.smrv.2025.102192	2025	Accuracy of large language models in data extraction from randomized…	extract	evaluation	human-agree	med
+doi:10.1016/j.surge.2023.12.005	2024	An evaluation of AI generated literature reviews in musculoskeletal r…	report	evaluation	none	med
+doi:10.1016/j.tele.2026.102447	2026	Beyond accuracy: assessing the information quality of large language…	meta	evaluation	benchmark	general
+doi:10.1016/j.tox.2024.153933	2024	Artificial intelligence-based data extraction for next generation ris…	extract	evaluation	human-agree	general
+doi:10.1016/j.tree.2024.04.007	2024	Leveraging AI to improve evidence synthesis in conservation	meta	position	none	general
+doi:10.1016/j.vhri.2025.101539	2025	Evaluating the Performance of Claude 3.7 Sonnet in Data Extraction Au…	extract	evaluation	human-agree	general
+doi:10.1016/j.ymeth.2024.04.005	2024	AlpaPICO: Extraction of PICO frames from clinical trial documents usi…	extract	method	benchmark	med
+doi:10.1016/j.yrtph.2026.106182	2026	Automated extraction of toxicological mechanism of action from PubMed…	end2end	system	benchmark	general
+doi:10.1016/j.zefq.2023.06.007	2023	A narrative review of recent tools and innovations toward automating…	meta	position	none	med
+doi:10.1016/s2542-5196(21)00179-0	2021	Systematic mapping of global research on climate and health: a machin…	search	method	none	general
+doi:10.1017/rsm.2024.16	2025	Can machine learning help accelerate article screening for systematic…	screen	evaluation	benchmark	general
+doi:10.1017/rsm.2025.1	2025	A comprehensive systematic review dataset is a rich resource for trai…	screen	system	benchmark	med
+doi:10.1017/rsm.2025.10014	2025	Optimal large language models to screen citations for systematic revi…	screen	evaluation	human-agree	med
+doi:10.1017/rsm.2025.10030	2025	Automating the data extraction process for systematic reviews using G…	extract	system	human-agree	med
+doi:10.1017/rsm.2025.10031	2025	StudyTypeTeller—Large language models to automatically classify resea…	screen	system	human-agree	med
+doi:10.1017/rsm.2025.10034	2025	Using large language models to directly screen electronic databases a…	search	evaluation	human-agree	med
+doi:10.1017/rsm.2025.10044	2025	Compact large language models for title and abstract screening in sys…	screen	evaluation	human-agree	general
+doi:10.1017/rsm.2025.10054	2025	Beyond human gold standards: A multimodel framework for automated abs…	screen	method	human-agree	med
+doi:10.1017/rsm.2025.10065	2026	Transforming evidence synthesis: A systematic review of the evolution…	meta	position	none	general
+doi:10.1017/rsm.2025.10066	2026	What level of automation is “good enough”? A benchmark of large langu…	extract	evaluation	human-agree	med
+doi:10.1017/rsm.2025.15	2025	Validation of large language models (Llama 3 and ChatGPT-4o mini) for…	screen	evaluation	human-agree	med
+doi:10.1017/rsm.2025.16	2025	Generative artificial intelligence use in evidence synthesis: A syste…	meta	evaluation	human-agree	general
+doi:10.1017/rsm.2026.10080	2026	Using <i>Elicit</i> AI research assistant for data extraction in syst…	extract	evaluation	human-agree	general
+doi:10.1017/rsm.2026.10093	2026	Prompt engineering of large language models for paper screening in me…	screen	evaluation	human-agree	med
+doi:10.1017/rsm.2026.10094	2026	Large language model-based paper classification framework with key-in…	screen	method	human-agree	general
+doi:10.1021/acs.jchemed.5c00931	2025	Artificial Intelligence (AI)-Augmented “Living” Meta-Analyses toward…	synthesize	method	none	general
+doi:10.1021/acsami.5c08837	2025	AI-Assisted Tools for Scientific Review Writing: Opportunities and Ca…	report	system	benchmark	general
+doi:10.1021/acsenvironau.4c00042	2024	Evaluating GPT Models for Automated Literature Screening in Wastewate…	screen	evaluation	benchmark	med
+doi:10.1021/acsomega.5c04542	2025	The Landscape of Wearable Sensors and Automated Literature Analysis w…	synthesize	method	none	general
+doi:10.1027/2151-2604/a000509	2023	Reducing Literature Screening Workload With Machine Learning	screen	position	none	general
+doi:10.1038/s41415-023-6132-y	2023	Application ChatGPT in conducting systematic reviews and meta-analyses	meta	position	none	med
+doi:10.1038/s41432-026-01206-2	2026	From reviews to real-time: dynamic evidence in dentistry	synthesize	method	none	med
+doi:10.1038/s41467-025-62058-5	2025	A foundation model for human-AI collaboration in medical literature m…	end2end	system	human-agree	med
+doi:10.1038/s41467-025-62783-x	2025	Evidence triangulator: using large language models to extract and syn…	synthesize	system	benchmark	med
+doi:10.1038/s41598-022-05939-9	2022	Automated meta-analysis of the event-related potential (ERP) literatu…	synthesize	method	none	general
+doi:10.1038/s41598-025-99423-9	2025	Prompt engineering in ChatGPT for literature review: practical guide…	extract	guideline	benchmark	general
+doi:10.1038/s41746-023-00896-7	2023	Evaluating large language models on medical evidence summarization	synthesize	evaluation	human-agree	med
+doi:10.1038/s41746-024-01239-w	2024	Closing the gap between open source and commercial large language mod…	synthesize	evaluation	benchmark	med
+doi:10.1038/s41746-025-01457-w	2025	Language models for data extraction and risk of bias assessment in co…	extract	evaluation	human-agree	med
+doi:10.1038/s41746-025-01840-7	2025	Accelerating clinical evidence synthesis with large language models	end2end	system	human-agree	med
+doi:10.1038/s41746-025-02273-y	2025	Streamlining evidence based clinical recommendations with large langu…	end2end	system	human-agree	med
+doi:10.1038/s41746-026-02431-w	2026	Large language models in systematic review and meta-analysis of surgi…	end2end	evaluation	human-agree	med
+doi:10.1038/s42256-020-00287-7	2021	An open source machine learning framework for efficient and transpare…	screen	system	human-agree	general
+doi:10.1038/s44355-026-00068-w	2026	Closing the screening gap but not the writing gap: a two-topic evalua…	end2end	evaluation	human-agree	med
+doi:10.1038/s44387-026-00080-8	2026	AIM review tool: artificial intelligence for smarter systematic revie…	screen	system	benchmark	general
+doi:10.1042/cs20220494	2023	Systematic online living evidence summaries: emerging tools to accele…	end2end	system	none	med
+doi:10.1055/a-2890-8325	2026	On the utility of ChatGPT in conducting a literature review on deep l…	end2end	evaluation	human-agree	med
+doi:10.1073/pnas.2411962122	2025	Transforming literature screening: The emerging role of large languag…	screen	evaluation	human-agree	med
+doi:10.1080/00015385.2023.2231299	2023	Does the long-term administration of proton pump inhibitors increase…	end2end	method	none	med
+doi:10.1080/00015385.2023.2240120	2023	Prompting ChatGPT to perform an umbrella review	end2end	evaluation	none	med
+doi:10.1080/00332747.2025.2541531	2025	AI Tools in Academia: Evaluating NotebookLM as a Tool for Conducting…	synthesize	evaluation	none	med
+doi:10.1080/00472778.2021.1955125	2021	“Hasta la vista, baby” – will machine learning terminate human litera…	meta	position	none	general
+doi:10.1080/10447318.2026.2646419	2026	LitPilot: A Human-Centered Platform for Transparent and Interactive S…	end2end	system	none	general
+doi:10.1080/14737167.2023.2234639	2023	Can artificial intelligence separate the wheat from the chaff in syst…	screen	evaluation	human-agree	med
+doi:10.1080/14737167.2026.2691995	2026	REFLECTIVE-TIAB: cost-effective prompt optimization for large languag…	screen	method	benchmark	med
+doi:10.1080/14737167.2026.2695957	2026	Comparative landscape of artificial intelligence-assisted systematic…	meta	position	none	med
+doi:10.1080/17437199.2020.1716198	2020	Semi-Automated evidence synthesis in health psychology: current metho…	meta	position	none	med
+doi:10.1080/19345747.2023.2209079	2023	Choosing the Right Tool for the Job: Screening Tools for Systematic R…	screen	guideline	none	general
+doi:10.1080/26408066.2025.2548853	2025	Artificial Intelligence in Systematic Literature Reviews: Social Work…	synthesize	evaluation	human-agree	general
+doi:10.1080/2833373x.2025.2546791	2025	Large language models for data extraction in toxicology: implications…	extract	position	none	med
+doi:10.1086/713525	2021	Technology for Research Synthesis: An Application of Sociotechnical S…	meta	position	none	general
+doi:10.1093/asj/sjad093	2023	Truth or Lies? The Pitfalls and Limitations of ChatGPT in Systematic…	meta	position	none	med
+doi:10.1093/bioinformatics/btad542	2023	Towards precise PICO extraction from abstracts of randomized controll…	extract	method	benchmark	med
+doi:10.1093/ehjdh/ztag070	2026	Automated full-text screening and accelerated reviews using large lan…	screen	system	human-agree	med
+doi:10.1093/ejo/cjae011	2024	Enhancing systematic reviews in orthodontics: a comparative examinati…	search	evaluation	benchmark	med
+doi:10.1093/eurpub/ckaf072	2025	Evaluation of a large language model (ChatGPT) versus human researche…	appraise	evaluation	human-agree	med
+doi:10.1093/jamia/ocac066	2022	Automated medical literature screening using artificial intelligence:…	screen	evaluation	human-agree	med
+doi:10.1093/jamia/ocad036	2023	<i>EvidenceMap</i>: a three-level knowledge representation for medica…	extract	system	benchmark	med
+doi:10.1093/jamia/ocae166	2024	A question-answering framework for automated abstract screening using…	screen	method	benchmark	med
+doi:10.1093/jamia/ocae325	2025	Collaborative large language models for automated data extraction in…	extract	method	human-agree	med
+doi:10.1093/jamia/ocaf030	2025	Enhancing systematic literature reviews with generative artificial in…	end2end	system	benchmark	med
+doi:10.1093/jamia/ocaf050	2025	High-performance automated abstract screening with large language mod…	screen	evaluation	human-agree	med
+doi:10.1093/jamia/ocaf063	2025	The emergence of large language models as tools in literature reviews…	meta	position	none	med
+doi:10.1093/jamia/ocaf117	2025	Automated analyses of risk of bias and critical appraisal of systemat…	appraise	evaluation	human-agree	med
+doi:10.1093/jamia/ocag014	2026	Interactive active learning for literature screening: finetuning GPT…	screen	method	benchmark	med
+doi:10.1093/jamiaopen/ooac015	2022	Evaluation of publication type tagging as a strategy to screen random…	screen	evaluation	benchmark	med
+doi:10.1093/jamiaopen/ooac107	2023	Not so weak PICO: leveraging weak supervision for participants, inter…	extract	method	benchmark	med
+doi:10.1093/jamiaopen/ooae098	2024	<i>Literature search sandbox</i>: a large language model that generat…	search	system	benchmark	med
+doi:10.1093/jamiaopen/ooag043	2026	Zero-shot interpretable biomedical literature appraisal with generati…	appraise	evaluation	human-agree	med
+doi:10.1093/nsr/nwaf169	2025	Automated literature research and review-generation method based on l…	end2end	method	human-agree	general
+doi:10.1093/ofid/ofag401	2026	Efficacy of a Large Language Model Data Extraction System in Evidence…	extract	evaluation	human-agree	med
+doi:10.1093/pnasnexus/pgae461	2024	Artificial intelligence in food and nutrition evidence: The challenge…	meta	position	none	med
+doi:10.1097/cm9.0000000000003923	2026	Artificial intelligence-facilitated evidence-based medicine research…	meta	position	none	med
+doi:10.1097/fjc.0000000000001768	2025	Validation of Synthesa AI, a Large Language Model-Based Screening Too…	screen	evaluation	benchmark	med
+doi:10.1097/gox.0000000000005339	2023	The Utility of Artificial Intelligence for Systematic Reviews and Boo…	search	method	none	general
+doi:10.1097/js9.0000000000002215	2025	AI-driven evidence synthesis: data extraction of randomized controlle…	extract	method	human-agree	med
+doi:10.1098/rspb.2024.0423	2024	The changing landscape of text mining: a review of approaches for eco…	meta	position	none	general
+doi:10.1101/2023.04.22.23288967	2023	Evaluating Large Language Models on Medical Evidence Summarization	synthesize	evaluation	human-agree	med
+doi:10.1101/2023.06.13.23291311	2023	Exploring the Role of Chat GPT in patient care (diagnosis and Treatme…	report	evaluation	none	med
+doi:10.1101/2023.06.29.23291656	2023	Automated data extraction of unstructured grey literature in health r…	extract	position	none	general
+doi:10.1101/2023.09.06.23295072	2023	Utilizing ChatGPT to select literature for meta-analysis shows worklo…	screen	evaluation	human-agree	med
+doi:10.1101/2023.10.02.23296415	2023	Data Extraction for Evidence Synthesis Using a Large Language Model:…	extract	evaluation	human-agree	med
+doi:10.1101/2023.12.14.23299933	2023	Trustworthiness of Systematic Review Automation An interview at Coven…	meta	position	none	general
+doi:10.1101/2023.12.15.23300018	2023	Sensitivity, specificity and avoidable workload of using a large lang…	screen	evaluation	human-agree	med
+doi:10.1101/2023.12.17.23300102	2023	A Novel Question-Answering Framework for Automated Abstract Screening…	screen	method	benchmark	med
+doi:10.1101/2023.12.29.23300652	2023	Citation screening using large language models for creating clinical…	screen	evaluation	none	med
+doi:10.1101/2024.01.18.24301502	2024	SEETrials: Leveraging Large Language Models for Safety and Efficacy E…	extract	system	benchmark	med
+doi:10.1101/2024.02.20.24303083	2024	How good are large language models for automated data extraction from…	extract	evaluation	human-agree	med
+doi:10.1101/2024.03.18.24304457	2024	A Large Language Model Approach to Extracting Causal Evidence across…	extract	method	benchmark	med
+doi:10.1101/2024.03.20.24304572	2024	Large Language Model in Medical Information Extraction from Titles an…	extract	evaluation	benchmark	med
+doi:10.1101/2024.05.01.24306691	2024	Evaluating a Large Language Model’s Ability to Answer Clinicians’ Req…	report	evaluation	human-agree	med
+doi:10.1101/2024.05.22.24307740	2024	Accuracy and reliability of data extraction for systematic reviews us…	extract	evaluation	benchmark	med
+doi:10.1101/2024.06.01.24308323	2024	Prompting is all you need: LLMs for systematic review screening	screen	method	human-agree	general
+doi:10.1101/2024.06.03.24308405	2024	Evaluating the Efficacy of Large Language Models for Systematic Revie…	screen	evaluation	human-agree	med
+doi:10.1101/2024.06.26.24309513	2024	Comparison of large language models for citation screening: A protoco…	screen	evaluation	none	med
+doi:10.1101/2024.07.08.24310046	2024	Exploring potential of AI usage in the knowledge and evidence service…	meta	evaluation	none	med
+doi:10.1101/2024.09.18.24313828	2024	Leveraging large language models for systematic reviewing: A case stu…	screen	evaluation	human-agree	med
+doi:10.1101/2024.09.20.24314108	2024	Collaborative Large Language Models for Automated Data Extraction in…	extract	method	human-agree	med
+doi:10.1101/2024.10.01.24314702	2024	Large language models for abstract screening in systematic- and scopi…	screen	evaluation	human-agree	general
+doi:10.1101/2024.11.15.24317267	2024	Agentic AI for Streamlining Title and Abstract Screening: Addressing…	screen	evaluation	human-agree	general
+doi:10.1101/2024.12.06.24318592	2024	Reasoning Models for Text Mining in Oncology – a Comparison Between o…	extract	evaluation	benchmark	med
+doi:10.1101/2024.12.19.24319326	2024	Large language models for conducting systematic reviews: on the rise,…	meta	position	none	med
+doi:10.1101/2025.03.20.25324350	2025	AI-Assisted Data Extraction with a Large Language Model: A Study With…	extract	evaluation	human-agree	med
+doi:10.1101/2025.04.08.25325463	2025	M-PreSS: A Model Pre-training Approach for Study Screening in Systema…	screen	method	benchmark	general
+doi:10.1101/2025.06.13.25329541	2025	Automation of Systematic Reviews with Large Language Models	end2end	system	human-agree	med
+doi:10.1101/2025.07.21.25331917	2025	Assessing the feasibility and acceptability of a bespoke large langua…	extract	evaluation	human-agree	med
+doi:10.1101/2025.08.04.25332893	2025	MetaMind: A Multi-Agent Transformer-Driven Framework for Automated Ne…	end2end	system	benchmark	med
+doi:10.1101/2025.08.11.25333429	2025	A LLM-based Multi-Agent Collaborative Approach for Screening Prioriti…	screen	method	human-agree	general
+doi:10.1101/2025.08.24.25334314	2025	LLM-Guided Weak Supervision Improves Active Learning for Abstract Scr…	screen	method	benchmark	general
+doi:10.1101/2025.09.02.25334159	2025	Scaling the Prompt: How Batch Size Shapes Performance of Mid-2025 Sta…	screen	evaluation	human-agree	med
+doi:10.1101/2025.11.03.25339455	2025	Dual-Model LLM Ensemble via Web Chat Interfaces Reaches Near-Perfect…	screen	evaluation	human-agree	med
+doi:10.1109/access.2025.3554504	2025	Comparing Generative AI Literature Reviews Versus Human-Led Systemati…	end2end	evaluation	human-agree	general
+doi:10.1109/bigdata62323.2024.10825310	2024	Empowering Meta-Analysis: Leveraging Large Language Models for Scient…	synthesize	method	benchmark	general
+doi:10.1109/cbi68102.2025.00012	2025	Can AI be a Scholar? A Systematic Review on the Role of Generative AI…	meta	evaluation	none	general
+doi:10.1109/ccwc60891.2024.10427829	2024	Large Language Model-Based Architecture for Automatic Outcome Data Ex…	extract	system	benchmark	med
+doi:10.1109/cinti67731.2025.11311831	2025	Large Language Models for Title/Abstract Screening in Systematic Lite…	screen	evaluation	human-agree	general
+doi:10.1109/csgb53040.2021.9496030	2021	Method for Biomedical Information Extraction of Immunosuppressive Cel…	extract	method	benchmark	med
+doi:10.1109/das69882.2026.11553334	2026	Scholar Augment: An End-to-End Multi-LLM Platform for Accelerating Sy…	end2end	system	none	general
+doi:10.1109/esem64174.2025.00053	2025	SESR-Eval: Dataset for Evaluating LLMs in the Title-Abstract Screenin…	screen	evaluation	benchmark	se
+doi:10.1109/fllm63129.2024.10852425	2024	Screening Automation for Systematic Reviews: A 5-Tier Prompting Appro…	screen	method	benchmark	med
+doi:10.1109/fllm63129.2024.10852447	2024	Large Language Models for Literature Reviews - An Exemplary Compariso…	meta	evaluation	human-agree	med
+doi:10.1109/fllm67465.2025.11391146	2025	Cal-X: Enhancing Systematic Review Screening with LLMs and Next-Token…	screen	method	human-agree	general
+doi:10.1109/icapai55158.2022.9801564	2022	The application of artificial intelligence on different types of lite…	meta	evaluation	none	general
+doi:10.1109/icarc64760.2025.10963273	2025	Enhancing Systematic Literature Reviews: Evaluating the Performance o…	meta	evaluation	benchmark	general
+doi:10.1109/iciset62123.2024.10939517	2024	Automated Literature Review Using NLP Techniques and LLM-Based Retrie…	report	system	benchmark	general
+doi:10.1109/icmet67594.2025.11452106	2025	L-PRISMA: An Extension of PRISMA in the Era of Generative Artificial…	report	guideline	none	general
+doi:10.1109/ieses66335.2025.11359889	2025	Enhancing Fine-Tuning of LLMs for Domain-Specific Literature Review	synthesize	method	none	general
+doi:10.1109/iscsic54682.2021.00034	2021	Accelerating the Early Identification of Relevant Studies in Title an…	screen	method	benchmark	general
+doi:10.1109/jbhi.2020.2984704	2020	Aceso: PICO-Guided Evidence Summarization on Medical Literature	extract	system	benchmark	med
+doi:10.1109/jbhi.2024.3483816	2024	Benchmarking Large Language Models in Evidence-Based Medicine	meta	evaluation	benchmark	med
+doi:10.1109/jcdl67857.2025.00042	2025	Efficient Citation Screening by Weak Classifier Ensemble*	screen	method	benchmark	general
+doi:10.1109/sami68106.2026.11420686	2026	Assessing Probability Rating Performance for Large Language Models in…	screen	evaluation	human-agree	general
+doi:10.1109/saner-c67878.2026.00047	2026	Empirical Evaluation of Open Source Large Language Models for Paper S…	screen	evaluation	human-agree	se
+doi:10.1109/seaa53835.2021.00015	2021	Automated Support for Searching and Selecting Evidence in Software En…	search	evaluation	none	se
+doi:10.1109/weef-gedc59520.2023.10344098	2023	Leveraging the Potential of Generative AI to Accelerate Systematic Li…	screen	evaluation	human-agree	general
+doi:10.1109/wsese66602.2025.00010	2025	On the Difficulties of Conducting and Replicating Systematic Literatu…	meta	position	none	se
+doi:10.1111/2041-210x.14341	2024	Large language models help facilitate the automated synthesis of info…	synthesize	method	benchmark	general
+doi:10.1111/ceo.14268	2023	<scp>ChatGPT</scp> as a tool for conducting literature review for dry…	end2end	evaluation	none	med
+doi:10.1111/cobi.14464	2025	New opportunities and challenges for conservation evidence synthesis…	meta	position	none	general
+doi:10.1111/itor.70054	2025	Pitfalls, benefits, and comparative analysis of artificial intelligen…	meta	evaluation	benchmark	general
+doi:10.1111/jebm.70166	2026	Performance of Large Language Models in Automated Medical Literature…	screen	evaluation	human-agree	med
+doi:10.1111/jocn.17818	2025	Developing and Evaluating the Use of <scp>ChatGPT</scp> as a Screenin…	screen	evaluation	human-agree	med
+doi:10.1115/1.4064245	2023	ADVISE: Accelerating the Creation of Evidence Syntheses for Global De…	search	system	none	general
+doi:10.1115/detc2023-116962	2023	AI-Accelerated Design of Evidence Synthesis for Global Development	screen	system	none	general
+doi:10.1136/bjo-2024-326254	2025	Can large language models fully automate or partially assist paper se…	screen	evaluation	human-agree	med
+doi:10.1136/bmjdhai-2025-000017	2025	Large language model enhanced framework for systematic reviews and me…	meta	guideline	none	med
+doi:10.1136/bmjebm-2023-112530	2024	Rapid review methods series: Guidance on the use of supportive softwa…	meta	guideline	none	med
+doi:10.1136/bmjebm-2023-112597	2024	Integrating large language models in systematic reviews: a framework…	appraise	method	human-agree	med
+doi:10.1136/bmjebm-2023-112678	2023	Enhancing title and abstract screening for systematic reviews with GP…	screen	evaluation	human-agree	med
+doi:10.1136/bmjebm-2024-112990	2024	Pilot study on large language models for risk-of-bias assessments in…	appraise	evaluation	human-agree	med
+doi:10.1136/bmjebm-2024-113066	2025	Novel AI applications in systematic review: GPT-4 assisted data extra…	extract	evaluation	human-agree	med
+doi:10.1136/bmjebm-2024-113199	2024	From promise to practice: challenges and pitfalls in the evaluation o…	extract	position	none	med
+doi:10.1136/bmjebm-2024-113320	2025	Opportunities, challenges and risks of using artificial intelligence…	meta	position	none	med
+doi:10.1136/bmjebm-2025-114044	2026	Evaluating data extraction error by a large language model from rando…	extract	evaluation	human-agree	med
+doi:10.1136/bmjhci-2023-100830	2023	Comparative study of ChatGPT and human evaluators on the assessment o…	appraise	evaluation	human-agree	med
+doi:10.1136/bmjment-2025-301762	2025	Development and evaluation of prompts for a large language model to s…	screen	evaluation	human-agree	med
+doi:10.1136/bmjopen-2023-072254	2023	Artificial intelligence in systematic reviews: promising when appropr…	screen	guideline	none	med
+doi:10.1136/bmjopen-2023-076912	2024	Inter-reviewer reliability of human literature reviewing and implicat…	meta	evaluation	human-agree	med
+doi:10.1136/bmjopen-2025-099921	2025	The introduction and adoption of artificial intelligence in systemati…	screen	evaluation	none	general
+doi:10.1136/bmjopen-2025-106546	2025	Comparing the accuracy of AI-assisted data extraction versus human do…	extract	evaluation	human-agree	med
+doi:10.1136/rapm-2023-104646	2023	Addition of dexamethasone to prolong peripheral nerve blocks: a ChatG…	report	evaluation	human-agree	med
+doi:10.1136/rapm-2024-106231	2025	Evaluating the utility of large language models in generating search…	search	evaluation	benchmark	med
+doi:10.1136/rapm-2024-106358	2025	Human versus artificial intelligence: evaluating ChatGPT’s performanc…	end2end	evaluation	human-agree	med
+doi:10.1145/3366423.3380185	2020	Automatic Boolean Query Formulation for Systematic Review Literature…	search	method	benchmark	general
+doi:10.1145/3528588.3528658	2022	Supporting systematic literature reviews using deep-learning-based la…	screen	method	benchmark	se
+doi:10.1145/3539618.3591703	2023	Can ChatGPT Write a Good Boolean Query for Systematic Review Literatu…	search	evaluation	benchmark	general
+doi:10.1145/3539618.3591768	2023	Smooth Operators for Effective Systematic Review Queries	search	method	benchmark	med
+doi:10.1145/3578337.3605135	2023	Outcome-based Evaluation of Systematic Review Automation	screen	method	none	general
+doi:10.1145/3624918.3625322	2023	Generating Natural Language Queries for More Effective Systematic Rev…	screen	method	benchmark	med
+doi:10.1145/3661167.3661172	2024	The Promise and Challenges of Using LLMs to Accelerate the Screening…	screen	evaluation	human-agree	se
+doi:10.1145/3674805.3686666	2024	ChatGPT application in Systematic Literature Reviews in Software Engi…	screen	evaluation	human-agree	se
+doi:10.1145/3674805.3690743	2024	Data extraction for systematic mapping study using a large language m…	extract	evaluation	benchmark	se
+doi:10.1145/3715964	2025	Automating Research Synthesis with Domain-Specific Large Language Mod…	synthesize	method	benchmark	general
+doi:10.1145/3726302.3730133	2025	AiReview: An Open Platform for Accelerating Systematic Reviews with L…	screen	system	none	med
+doi:10.1145/3731120.3744586	2025	AIDME: A Scalable, Interpretable Framework for AI-Aided Scoping Revie…	screen	system	none	general
+doi:10.1145/3742414.3794723	2026	From Verification Burden to Trusted Collaboration: Design Goals for L…	search	evaluation	none	general
+doi:10.1145/3747912.3747962	2025	AI Tools for Automating Systematic Literature Reviews	meta	evaluation	benchmark	general
+doi:10.1145/3772363.3798755	2026	MetaMate: Understanding How Educational Researchers Experience AI-Ass…	extract	system	human-agree	general
+doi:10.1145/3776734.3794506	2026	Charting the Growth of Social-Physical HRI (spHRI): A Systematic Revi…	screen	evaluation	human-agree	general
+doi:10.1145/3777490.3777511	2026	Human-Centred Research Automation: Agentic AI Framework for Literatur…	end2end	system	none	general
+doi:10.1155/2024/8815424	2024	Applying ChatGPT and AI‐Powered Tools to Accelerate Evidence Reviews	meta	evaluation	none	general
+doi:10.1159/000552717	2026	SmartEBM AI Agent: A Web-Based Platform for Streamlining Network Meta…	synthesize	system	none	med
+doi:10.1177/02683962211048201	2021	Artificial intelligence and the conduct of literature reviews	meta	position	none	general
+doi:10.1177/02683962251371062	2025	Natural language processing enhanced literature reviews	meta	position	none	general
+doi:10.1177/02683962261425675	2026	Generative artificial intelligence for literature reviews	meta	position	none	general
+doi:10.1177/03400352241263532	2024	Exploring the use of generative artificial intelligence in systematic…	search	evaluation	human-agree	general
+doi:10.1177/03400352251342513	2025	Exploring the potential of artificial intelligence usage in the knowl…	meta	evaluation	none	med
+doi:10.1177/08944393231196281	2023	Cheap, Quick, and Rigorous: Artificial Intelligence and the Systemati…	meta	guideline	none	general
+doi:10.1177/08944393251404052	2025	Evaluating the AI Tool “Elicit” as a Semi-Automated Second Reviewer f…	extract	evaluation	human-agree	med
+doi:10.1177/10225536261459518	2026	Automating methodological quality assessment in orthopedic systematic…	appraise	evaluation	human-agree	med
+doi:10.1177/15230864251405885	2025	Artificial Intelligence Tools in Biomedical Research: Part 1—Literatu…	search	position	none	med
+doi:10.1177/20552076261467480	2026	Custom GPT models for complex rheumatology systematic reviews: A two-…	extract	evaluation	human-agree	med
+doi:10.1177/25152459261442150	2026	Fast-Track Your Abstract Screening: Mastering ASReview for Accelerati…	screen	guideline	benchmark	general
+doi:10.1186/s12859-021-04396-x	2021	Using neural networks to support high-quality evidence mapping	screen	method	none	med
+doi:10.1186/s12874-020-01031-w	2020	The semi-automation of title and abstract screening: a retrospective…	screen	evaluation	human-agree	med
+doi:10.1186/s12874-020-01129-1	2020	An evaluation of DistillerSR’s machine learning-based prioritization…	screen	evaluation	human-agree	med
+doi:10.1186/s12874-021-01354-2	2021	Creating efficiencies in the extraction of data from randomized trial…	extract	evaluation	human-agree	med
+doi:10.1186/s12874-021-01451-2	2021	Guidance for using artificial intelligence for title and abstract scr…	screen	guideline	none	med
+doi:10.1186/s12874-022-01631-8	2022	Abstract screening using the automated tool Rayyan: results of effect…	screen	evaluation	human-agree	med
+doi:10.1186/s12874-022-01649-y	2022	Automating risk of bias assessment in systematic reviews: a real-time…	appraise	evaluation	human-agree	med
+doi:10.1186/s12874-022-01805-4	2022	Machine learning computational tools to assist the performance of sys…	meta	evaluation	none	med
+doi:10.1186/s12874-023-02038-9	2023	Semi-automated assessment of the risk of bias due to missing evidence…	appraise	system	none	med
+doi:10.1186/s12874-024-02203-8	2024	Methodological insights into ChatGPT’s screening performance in syste…	screen	evaluation	human-agree	med
+doi:10.1186/s12874-025-02528-y	2025	Using artificial intelligence for systematic review: the example of e…	search	evaluation	human-agree	general
+doi:10.1186/s12874-025-02532-2	2025	Evaluating the performance of artificial intelligence in summarizing…	synthesize	evaluation	human-agree	general
+doi:10.1186/s12874-025-02583-5	2025	Streamlining systematic reviews with large language models using prom…	screen	evaluation	benchmark	med
+doi:10.1186/s12874-025-02644-9	2025	Artificial intelligence for the science of evidence synthesis: how go…	screen	evaluation	human-agree	general
+doi:10.1186/s12874-025-02729-5	2026	Assessing data extraction in randomized clinical trials with large la…	extract	evaluation	human-agree	med
+doi:10.1186/s12874-026-02847-8	2026	From chaos to clarity: schema-constrained AI for auditable biomedical…	extract	system	benchmark	med
+doi:10.1186/s12874-026-02892-3	2026	Evaluating Elicit’s systematic reviews workflow in an umbrella review…	end2end	evaluation	human-agree	med
+doi:10.1186/s12911-022-01897-4	2022	Automatic data extraction to support meta-analysis statistical analys…	extract	system	none	med
+doi:10.1186/s12911-022-02085-0	2022	LiSA: an assisted literature search pipeline for detecting serious ad…	search	system	none	med
+doi:10.1186/s12911-023-02328-8	2023	Automatic literature screening using the PAJO deep-learning model for…	screen	method	benchmark	med
+doi:10.1186/s12911-025-03138-w	2025	A comparative study of screening performance between abstrackr and GP…	screen	evaluation	benchmark	general
+doi:10.1186/s12916-026-04709-y	2026	The Trial Bank initiative to promote trustworthy living evidence for…	end2end	system	none	med
+doi:10.1186/s12967-023-04371-5	2024	Development of search strategies for systematic reviews in health usi…	search	evaluation	none	med
+doi:10.1186/s13018-025-06386-8	2025	Applying machine learning to enhance core outcome set development: au…	extract	evaluation	human-agree	med
+doi:10.1186/s13326-022-00271-7	2022	An annotated corpus of clinical trial publications supporting schema-…	extract	method	benchmark	med
+doi:10.1186/s13326-024-00305-2	2024	Comparing generative and extractive approaches to information extract…	extract	evaluation	benchmark	med
+doi:10.1186/s13643-020-01324-7	2020	Machine learning for screening prioritization in systematic reviews:…	screen	evaluation	human-agree	med
+doi:10.1186/s13643-020-01351-4	2020	A focus on cross-purpose tools, automated recognition of study design…	meta	position	none	general
+doi:10.1186/s13643-020-01450-2	2020	Comparison of a traditional systematic review approach with review-of…	screen	evaluation	human-agree	med
+doi:10.1186/s13643-020-01521-4	2020	Statistical stopping criteria for automated screening in systematic r…	screen	method	human-agree	med
+doi:10.1186/s13643-020-01569-2	2021	The views of health guideline developers on the use of automation in…	meta	guideline	none	med
+doi:10.1186/s13643-021-01635-3	2021	Research Screener: a machine learning tool to semi-automate abstract…	screen	system	human-agree	general
+doi:10.1186/s13643-021-01700-x	2021	Text mining to support abstract screening for knowledge syntheses: a…	screen	method	human-agree	general
+doi:10.1186/s13643-021-01763-w	2021	srBERT: automatic article classification model for systematic review…	screen	method	benchmark	med
+doi:10.1186/s13643-021-01881-5	2022	Automation of literature screening using machine learning in medical…	screen	method	none	med
+doi:10.1186/s13643-022-02045-9	2022	Reducing systematic review burden using Deduklick: a novel, automated…	search	system	human-agree	med
+doi:10.1186/s13643-022-02074-4	2022	PICO entity extraction for preclinical animal literature	extract	method	benchmark	med
+doi:10.1186/s13643-022-02163-4	2023	Unsupervised title and abstract screening for systematic review: a re…	screen	method	benchmark	general
+doi:10.1186/s13643-023-02243-z	2023	Are ChatGPT and large language models “the answer” to bringing us clo…	meta	position	none	general
+doi:10.1186/s13643-023-02257-7	2023	Performance of active learning models for screening prioritization in…	screen	evaluation	benchmark	med
+doi:10.1186/s13643-023-02351-w	2023	Evaluation of a prototype machine learning tool to semi-automate data…	extract	evaluation	human-agree	med
+doi:10.1186/s13643-023-02353-8	2023	Semi-automating abstract screening with a natural language model pret…	screen	evaluation	human-agree	med
+doi:10.1186/s13643-024-02575-4	2024	Title and abstract screening for literature reviews using large langu…	screen	evaluation	human-agree	med
+doi:10.1186/s13643-024-02590-5	2024	Machine learning to optimize literature screening in medical guidelin…	screen	evaluation	human-agree	med
+doi:10.1186/s13643-024-02592-3	2024	Automation of systematic reviews of biomedical literature: a scoping…	meta	evaluation	none	med
+doi:10.1186/s13643-024-02609-x	2024	Evaluating the effectiveness of large language models in abstract scr…	screen	evaluation	benchmark	general
+doi:10.1186/s13643-024-02666-2	2024	Large language models, updates, and evaluation of automation tools fo…	meta	guideline	none	general
+doi:10.1186/s13643-024-02682-2	2024	Leveraging artificial intelligence to enhance systematic reviews in h…	meta	position	none	med
+doi:10.1186/s13643-024-02688-w	2024	Semi-automated title-abstract screening using natural language proces…	screen	method	benchmark	general
+doi:10.1186/s13643-025-02842-y	2026	The landscape of artificial intelligence tools and platforms for evid…	meta	position	none	general
+doi:10.1186/s13643-025-02895-z	2025	ReviewGenie: a novel automated system for systematic reviews—an explo…	end2end	system	none	med
+doi:10.1186/s13643-025-02997-8	2025	Accelerating the pace and accuracy of systematic reviews using AI: a…	screen	evaluation	human-agree	general
+doi:10.1186/s13643-026-03101-4	2026	Study protocol for evaluating automation of systematic review process…	screen	evaluation	none	med
+doi:10.1186/s13643-026-03199-6	2026	Comparing supervised machine learning and large language models in ti…	screen	evaluation	human-agree	general
+doi:10.1186/s13643-026-03228-4	2026	Using full agreement across multiple large language models for title-…	screen	method	human-agree	general
+doi:10.1186/s13750-025-00360-x	2025	Testing the utility of GPT for title and abstract screening in enviro…	screen	evaluation	human-agree	general
+doi:10.1186/s13750-025-00362-9	2025	Evaluating generative AI for qualitative data extraction in community…	extract	evaluation	human-agree	general
+doi:10.1186/s13750-025-00370-9	2025	Spanish-language text classification for environmental evidence synth…	screen	evaluation	benchmark	general
+doi:10.1186/s13750-026-00381-0	2026	Assessing the effectiveness of ontology-grounded AI term extraction u…	extract	evaluation	human-agree	general
+doi:10.1186/s40634-023-00662-4	2023	Accelerated evidence synthesis in orthopaedics—the roles of natural l…	meta	position	none	med
+doi:10.1200/cci-25-00233	2025	Rapid Clinical Evidence Explorer: A Generative Pre-Trained Transforme…	end2end	system	benchmark	med
+doi:10.1200/cci.20.00087	2021	Artificial Intelligence Clinical Evidence Engine for Automatic Identi…	end2end	system	human-agree	med
+doi:10.1200/jco.2025.43.16_suppl.e13657	2025	A living systematic literature review (L-SLR) for non–small-cell lung…	extract	system	human-agree	med
+doi:10.1227/neu.0000000000003450	2025	Using Natural Language Processing to Automate Screening of Abstracts…	screen	evaluation	human-agree	med
+doi:10.12688/f1000research.151493.2	2024	(Semi)automated approaches to data extraction for systematic reviews…	extract	guideline	none	general
+doi:10.12688/f1000research.186817.1	2026	Building a Living, Ontology-Informed and Large Language Model-Assiste…	synthesize	system	none	med
+doi:10.12688/f1000research.22781.1	2020	Data extraction methods for systematic review (semi)automation: A liv…	extract	position	none	med
+doi:10.12688/f1000research.51117.1	2021	Data extraction methods for systematic review (semi)automation: A liv…	extract	position	none	med
+doi:10.12688/f1000research.51117.2	2023	Data extraction methods for systematic review (semi)automation: Updat…	extract	position	none	general
+doi:10.12688/f1000research.51117.3	2025	Data extraction methods for systematic review (semi)automation: Updat…	meta	position	none	general
+doi:10.12923/pielxxiw-2025-0002	2025	Evidence-based advanced prompt engineeringin nursing research: qualit…	search	method	benchmark	med
+doi:10.1371/journal.pone.0313401	2025	ChatGPT-4o can serve as the second rater for data extraction in syste…	extract	evaluation	human-agree	med
+doi:10.1371/journal.pone.0323563	2025	Careful design of Large Language Model pipelines enables expert-level…	search	system	none	general
+doi:10.1371/journal.pone.0342895	2026	MetaMind: A multi-agent transformer-driven framework for automated ne…	end2end	system	human-agree	med
+doi:10.14264/01498af	2026	AI-driven approaches for effective systematic review literature scree…	screen	evaluation	none	general
+doi:10.14569/ijacsa.2024.01501122	2024	Transformative Automation: AI in Scientific Literature Reviews	end2end	method	none	general
+doi:10.1609/aaai.v38i21.30577	2024	GEAR-Up: Generative AI and External Knowledge-Based Retrieval: Upgrad…	search	system	none	general
+doi:10.17526v2	2023	Can large language models replace humans in the systematic review pro…	end2end	evaluation	human-agree	general
+doi:10.17605/osf.io/g2d4n	2026	TITAN SR vs ChatGPT 4.1 for Abstract Screening.	screen	evaluation	human-agree	med
+doi:10.18653/v1/2021.findings-emnlp.147	2021	Sent2Span: Span Detection for PICO Extraction in the Biomedical Text…	extract	method	benchmark	med
+doi:10.18653/v1/2022.bionlp-1.18	2022	Intra-Template Entity Compatibility based Slot-Filling for Clinical T…	extract	method	benchmark	med
+doi:10.18653/v1/2022.bionlp-1.34	2022	DISTANT-CTO: A Zero Cost, Distantly Supervised Approach to Improve Lo…	extract	method	benchmark	med
+doi:10.18653/v1/2023.acl-short.119	2023	Summarizing, Simplifying, and Synthesizing Medical Evidence using GPT…	synthesize	evaluation	human-agree	med
+doi:10.18653/v1/2023.bionlp-1.37	2023	Zero-Shot Information Extraction for Clinical Meta-Analysis using Lar…	extract	evaluation	human-agree	med
+doi:10.18653/v1/2023.eacl-demo.27	2023	Automatically Summarizing Evidence from Clinical Trials: A Prototype…	synthesize	system	none	med
+doi:10.18653/v1/2023.emnlp-main.626	2023	Appraising the Potential Uses and Harms of LLMs for Medical Systemati…	meta	evaluation	none	med
+doi:10.18653/v1/2024.climatenlp-1.20	2024	Assessing the Effectiveness of GPT-4o in Climate Change Evidence Synt…	synthesize	evaluation	human-agree	general
+doi:10.20944/preprints202407.2198.v1	2024	Topic Modeling for Faster Literature Screening Using Transformer-Base…	screen	method	benchmark	med
+doi:10.20944/preprints202501.2029.v1	2025	A Zero-Shot Comparison of Large Language Models for Efficient Screeni…	screen	evaluation	human-agree	med
+doi:10.20944/preprints202502.0396.v1	2025	How to Write Effective Prompts for Screening Biomedical Literature Us…	screen	guideline	none	med
+doi:10.21037/jmai-24-408	2025	Evaluating large language models for title/abstract screening: a syst…	screen	evaluation	human-agree	general
+doi:10.2106/jbjs.25.01373	2026	Conducting Systematic Reviews in a Day: Enter Artificial Intelligence	end2end	position	none	med
+doi:10.21203/rs.3.rs-10200494/v1	2026	Automated Meta-Analysis of Transcranial Magnetic Stimulation Based on…	synthesize	method	none	med
+doi:10.21203/rs.3.rs-10358339/v1	2026	The Use of Artificial Intelligence in Article Searching and Scientifi…	search	position	none	general
+doi:10.21203/rs.3.rs-3099291/v1	2023	Human-AI Collaboration to Identify Literature for Evidence Synthesis	search	method	none	general
+doi:10.21203/rs.3.rs-4007725/v1	2024	Generative Artificial Intelligence, Python, and Gathering Grey Litera…	search	method	none	general
+doi:10.21203/rs.3.rs-4022248/v1	2024	Comparative Analysis of Automatic Literature Review Using Mistral Lar…	report	evaluation	human-agree	general
+doi:10.21203/rs.3.rs-4922498/v1	2024	Evaluating Generative AI to Extract Qualitative Data from Peer-Review…	extract	evaluation	none	general
+doi:10.21203/rs.3.rs-5063165/v1	2024	LLMscreen: A Python Package for Systematic Review Screening of Scient…	screen	system	none	general
+doi:10.21203/rs.3.rs-7265470/v1	2025	SPECTRUM SRA: An R Shiny Application to Automate Systematic Reviews U…	end2end	system	none	general
+doi:10.21203/rs.3.rs-8729984/v1	2026	Will generative AI help solve systematic literature reviews? Evidence…	meta	evaluation	none	general
+doi:10.21203/rs.3.rs-9260490/v1	2026	End-to-End Reliability of Automated Systems for Diagnostic Evidence E…	extract	evaluation	benchmark	med
+doi:10.21203/rs.3.rs-9308492/v1	2026	A Living Systematic Review Engine: LLM-Automated Evidence Surveillanc…	end2end	system	human-agree	med
+doi:10.21203/rs.3.rs-9582053/v1	2026	LLM-assisted screening and extraction for systematic reviews: workloa…	extract	evaluation	none	general
+doi:10.21203/rs.3.rs-9590065/v1	2026	Audax: A Principled Method for AI-Assisted Evidence Synthesis	synthesize	method	none	general
+doi:10.21203/rs.3.rs-9789751/v1	2026	Tools to semi-automate title and abstract screening in the evidence s…	screen	evaluation	none	general
+doi:10.2139/ssrn.4520426	2023	Large Language Model Demonstrates Human-Comparable Sensitivity in Ini…	screen	evaluation	human-agree	med
+doi:10.2139/ssrn.4797024	2024	A Critical Assessment of Large Language Models for Systematic Reviews…	extract	evaluation	benchmark	med
+doi:10.2139/ssrn.4870368	2024	AI-Driven Evidence Synthesis: Data Extraction of Randomized Controlle…	extract	method	human-agree	med
+doi:10.2139/ssrn.4943759	2024	Accuracy of Large Language Models for Literature Screening in Systema…	screen	evaluation	human-agree	med
+doi:10.2139/ssrn.5760724	2025	Towards AI-supported SLR Automation: Citation Screening with Transfor…	screen	method	benchmark	general
+doi:10.2139/ssrn.6263105	2026	Automatic selection of primary studies in systematic reviews with evo…	screen	method	none	general
+doi:10.2139/ssrn.7048543	2026	HAICO-SLR Guide: Conducting and Reporting Human-AI Collaboration in S…	meta	guideline	none	general
+doi:10.2188/jea.je20230227	2023	Efficiency and Workload Reduction of Semi-automated Citation Screenin…	screen	evaluation	human-agree	med
+doi:10.2188/jea.je20260233	2026	Qualitative Analysis of Discrepancy Patterns Between Large Language M…	screen	evaluation	human-agree	med
+doi:10.2196/20007	2020	Artificial Intelligence for Rapid Meta-Analysis: Case Study on Ocular…	synthesize	method	human-agree	med
+doi:10.2196/24418	2021	The Impact of Systematic Review Automation Tools on Methodological Qu…	end2end	evaluation	human-agree	med
+doi:10.2196/35568	2023	Automating Quality Assessment of Medical Evidence in Systematic Revie…	appraise	method	benchmark	med
+doi:10.2196/39736	2023	An Automated Literature Review Tool (LiteRev) for Streamlining and Ac…	end2end	system	benchmark	general
+doi:10.2196/48933	2023	Applications of the Natural Language Processing Tool ChatGPT in Clini…	extract	evaluation	human-agree	med
+doi:10.2196/48949	2024	Cocreating an Automated mHealth Apps Systematic Review Process With G…	end2end	system	none	med
+doi:10.2196/48996	2023	Automated Paper Screening for Clinical Reviews Using Large Language M…	screen	evaluation	human-agree	med
+doi:10.2196/51187	2024	The Use of Generative AI for Scientific Literature Searches for Syste…	search	evaluation	benchmark	med
+doi:10.2196/51526	2024	Assessing the Efficacy of ChatGPT Versus Human Researchers in Identif…	search	evaluation	human-agree	med
+doi:10.2196/52758	2024	Human-Comparable Sensitivity of Large Language Models in Identifying…	screen	evaluation	human-agree	med
+doi:10.2196/53164	2024	Hallucination Rates and Reference Accuracy of ChatGPT and Bard for Sy…	search	evaluation	human-agree	med
+doi:10.2196/55827	2024	Evaluation of RMES, an Automated Software Tool Utilizing AI, for Lite…	screen	evaluation	human-agree	med
+doi:10.2196/56537	2024	Evaluating Literature Reviews Conducted by Humans Versus ChatGPT: Com…	report	evaluation	human-agree	med
+doi:10.2196/56780	2024	Potential Roles of Large Language Models in the Production of Systema…	meta	guideline	none	med
+doi:10.2196/58366	2025	The AI Reviewer: Evaluating AI’s Role in Citation Screening for Strea…	screen	evaluation	human-agree	med
+doi:10.2196/63347	2025	Using ChatGPT to Improve the Presentation of Plain Language Summaries…	report	evaluation	benchmark	med
+doi:10.2196/64682	2025	GPT-3.5 Turbo and GPT-4 Turbo in Title and Abstract Screening for Sys…	screen	evaluation	human-agree	med
+doi:10.2196/67488	2025	Accuracy of Large Language Models for Literature Screening in Thoraci…	screen	evaluation	human-agree	med
+doi:10.2196/68097	2025	Critical Assessment of Large Language Models’ (ChatGPT) Performance i…	extract	evaluation	human-agree	med
+doi:10.2196/68666	2025	Evaluating a Customized Version of ChatGPT for Systematic Review Data…	extract	system	human-agree	med
+doi:10.2196/72412	2025	Using Large Language Models to Assess the Consistency of Randomized C…	appraise	evaluation	none	med
+doi:10.2196/76130	2026	The Phases of Living Evidence Synthesis Using AI: Living Evidence Syn…	meta	guideline	none	med
+doi:10.2196/76252	2025	Automated Literature Screening for Hepatocellular Carcinoma Treatment…	screen	method	human-agree	med
+doi:10.2196/80247	2025	Transparent Reporting of AI in Systematic Literature Reviews: Develop…	report	guideline	none	med
+doi:10.2196/81049	2026	AI-Assisted Systematic Literature Review of the Economic Burden of Pn…	end2end	system	human-agree	med
+doi:10.2196/81597	2025	Artificial Intelligence Tools for Automating Evidence Synthesis: Scop…	meta	evaluation	none	med
+doi:10.2196/90588	2026	Evaluating the Methodological Quality of Artificial Intelligence–Assi…	meta	evaluation	none	med
+doi:10.2196/92132	2026	Value and Credibility of Meta-Analysis: Tutorial on Enhancing Methodo…	synthesize	guideline	none	med
+doi:10.2196/preprints.103608	2026	Identity-cued scoring asymmetry in LLM verification of realist CMO ex…	appraise	evaluation	none	general
+doi:10.2196/preprints.104335	2026	Machine learning-assisted versus conventional title and abstract scre…	screen	evaluation	human-agree	med
+doi:10.2196/preprints.106373	2026	Leveraging Large Language Models for Systematic Reviews - a Replicati…	end2end	method	human-agree	general
+doi:10.2196/preprints.107732	2026	Performance of Google NotebookLM for AI-assisted data extraction and…	extract	evaluation	none	med
+doi:10.2196/preprints.48996	2023	Automated Paper Screening for Clinical Reviews Using Large Language M…	screen	evaluation	human-agree	med
+doi:10.2196/preprints.67488	2024	Accuracy of Large Language Models for Literature Screening in Thoraci…	screen	evaluation	benchmark	med
+doi:10.2196/preprints.87065	2025	From Automation to Strategy: Managing AI Uncertainty in Meta-analysis…	end2end	method	none	general
+doi:10.2196/preprints.93396	2026	Topology-Aware Context Routing and Neuro-Symbolic Reasoning for Clini…	extract	method	benchmark	med
+doi:10.2196/preprints.97813	2026	Eliciting Reader Preferences for Automated Systematic Grey Literature…	report	evaluation	none	general
+doi:10.22038/abjs.2025.84896.3874	2025	Evaluation of a Popular Large Language Model in Orthopedic Literature…	end2end	evaluation	human-agree	med
+doi:10.23736/s2724-606x.25.05849-x	2026	Evaluation of six large language models for study identification in a…	screen	evaluation	human-agree	med
+doi:10.24252/instek.v10i1.57445	2025	DOES PERSONALIZATION MATTER IN PROMPTING? A CASE STUDY OF CLASSIFYING…	screen	evaluation	benchmark	general
+doi:10.24963/kr.2020/68	2020	Towards a Logic of Meta-Analysis	synthesize	position	none	general
+doi:10.29173/cais2020	2025	Applying LLMs and Semantic Technologies for Data Extraction in Litera…	extract	evaluation	benchmark	general
+doi:10.29173/jchla29590	2021	PICO Portal (product review)	screen	system	none	med
+doi:10.29173/jchla29657	2023	Elicit (product review)	end2end	system	none	general
+doi:10.31219/osf.io/ju8dk	2024	Leveraging Artificial Intelligence for Systematic Reviews: The FRAISR…	meta	guideline	none	general
+doi:10.31234/osf.io/g93zf	2023	Reproducibility and Data storage Checklist for Active Learning-Aided…	screen	guideline	none	general
+doi:10.31234/osf.io/nc8hs	2024	Strategizing AI Utilization for Psychological Literature Screening: A…	screen	evaluation	benchmark	general
+doi:10.31234/osf.io/nq4d2	2024	Large Language Models in Psychology: Application in the Context of a…	extract	evaluation	human-agree	general
+doi:10.31235/osf.io/w5b8v	2024	Guidelines and open-source toolbox for systematic literature reviews…	end2end	guideline	none	general
+doi:10.3233/shti220146	2022	Representation and Normalization of Complex Interventions for Evidenc…	extract	method	benchmark	med
+doi:10.3233/shti230347	2023	How Good Is ChatGPT for Medication Evidence Synthesis?	synthesize	evaluation	benchmark	med
+doi:10.3233/shti251264	2025	Performance of LLMs in Citation Screening: A Comparison Across Datase…	screen	evaluation	human-agree	med
+doi:10.32384/jeahil20623	2024	The role of ChatGPT in developing systematic literature searches: an…	search	guideline	none	med
+doi:10.3389/fcimb.2026.1876326	2026	Artificial intelligence can match domain experts in evidence extracti…	extract	evaluation	human-agree	med
+doi:10.3389/fdgth.2026.1799623	2026	Performance of large language models and prompt engineering strategie…	extract	evaluation	human-agree	med
+doi:10.3389/fphar.2025.1454245	2025	How much can we save by applying artificial intelligence in evidence…	meta	evaluation	none	med
+doi:10.3389/frai.2021.685298	2021	Sysrev: A FAIR Platform for Data Curation and Systematic Evidence Rev…	end2end	system	none	general
+doi:10.3389/frai.2024.1454945	2024	Automated information extraction model enhancing traditional Chinese…	extract	method	benchmark	med
+doi:10.3389/frai.2025.1587244	2025	From data extraction to analysis: a comparative study of ELISE capabi…	end2end	evaluation	benchmark	med
+doi:10.3389/frai.2025.1662202	2025	Analysis of article screening and data extraction performance by an A…	end2end	evaluation	human-agree	med
+doi:10.3389/frma.2025.1684137	2025	Can AI assess literature like experts? An entropy-based comparison of…	appraise	evaluation	human-agree	general
+doi:10.3390/a18050296	2025	Benchmarking Multiple Large Language Models for Automated Clinical Tr…	extract	evaluation	benchmark	med
+doi:10.3390/app12062891	2022	Survey of BERT-Base Models for Scientific Text Classification: COVID-…	screen	method	benchmark	med
+doi:10.3390/app14199103	2024	Automating Systematic Literature Reviews with Retrieval-Augmented Gen…	meta	position	none	general
+doi:10.3390/bdcc8090110	2024	Combining Semantic Matching, Word Embeddings, Transformers, and LLMs…	search	method	benchmark	general
+doi:10.3390/bioengineering13070773	2026	From API to Action: A Multi-Model Comparison of OpenAI, Anthropic, Go…	extract	evaluation	human-agree	med
+doi:10.3390/biomedicines11061623	2023	PRISMA Systematic Literature Review, including with Meta-Analysis vs.…	end2end	evaluation	human-agree	med
+doi:10.3390/biomedinformatics3010009	2023	Towards Automated Meta-Analysis of Clinical Trials: An Overview	meta	position	none	med
+doi:10.3390/biomedinformatics5010015	2025	How to Write Effective Prompts for Screening Biomedical Literature Us…	screen	guideline	none	med
+doi:10.3390/biomedinformatics5020025	2025	Performance Comparison of Large Language Models for Efficient Literat…	screen	evaluation	benchmark	med
+doi:10.3390/educsci15111488	2025	Machine Learning-Assisted Systematic Review: A Case Study in Learning…	screen	evaluation	human-agree	general
+doi:10.3390/electronics14173404	2025	Integrated Survey Classification and Trend Analysis via LLMs: An Ense…	synthesize	method	benchmark	se
+doi:10.3390/fi16050167	2024	A Hybrid Semi-Automated Workflow for Systematic and Literature Review…	end2end	method	none	general
+doi:10.3390/healthcare12222241	2024	Enhancing Clinical Reasoning with Virtual Patients: A Hybrid Systemat…	end2end	evaluation	human-agree	med
+doi:10.3390/info16050378	2025	Large Language Models in Systematic Review Screening: Opportunities,…	screen	guideline	none	med
+doi:10.3390/info16050420	2025	PROMPTHEUS: A Human-Centered Pipeline to Streamline Systematic Litera…	end2end	system	none	general
+doi:10.3390/info17050449	2026	Linguistic Polarity and Decision Architecture in LLM-Based Abstract S…	screen	evaluation	benchmark	med
+doi:10.3390/info17050501	2026	Validating Large Language Models for Title-Abstract Screening in Low-…	screen	evaluation	human-agree	general
+doi:10.3390/informatics13030043	2026	Artificial Intelligence in Literature Review Synthesis: A Step-by-Ste…	meta	guideline	none	general
+doi:10.3390/jcm12165410	2023	Comparing Meta-Analyses with ChatGPT in the Evaluation of the Effecti…	synthesize	evaluation	benchmark	med
+doi:10.3390/jcm12175550	2023	Examining the Validity of ChatGPT in Identifying Relevant Nephrology…	search	evaluation	benchmark	med
+doi:10.3390/jcm15082830	2026	Efficacy of Large Language Models for Screening of Systematic Reviews…	screen	evaluation	human-agree	med
+doi:10.3390/jcm15114230	2026	Evaluating Large Language Models for Automated Evidence Synthesis in…	extract	evaluation	benchmark	med
+doi:10.3390/jcm15156005	2026	How Often Do Large Language Models Agree with Each Other—And with the…	extract	evaluation	human-agree	med
+doi:10.3390/jpm13101457	2023	Navigating the Landscape of Personalized Medicine: The Relevance of C…	search	evaluation	benchmark	med
+doi:10.3390/make7020028	2025	Accelerating Disease Model Parameter Extraction: An LLM-Based Ranking…	screen	method	benchmark	general
+doi:10.3390/reports9010090	2026	Accelerating Evidence Synthesis: A BERT-Assisted Workflow for Meta-An…	screen	method	benchmark	med
+doi:10.3390/systems11070351	2023	Harnessing the Power of ChatGPT for Automating Systematic Review Proc…	end2end	method	none	general
+doi:10.34133/hds.0322	2025	LitAutoScreener: Development and Validation of an Automated Literatur…	screen	system	benchmark	med
+doi:10.34190/ecrm.23.1.2528	2024	On the Use of Generative AI for Literature Reviews: An Exploration of…	meta	evaluation	none	general
+doi:10.35542/osf.io/wn3cd	2024	MetaMate: Large Language Model to the Rescue of Automated Data Extrac…	extract	system	benchmark	general
+doi:10.36469/001c.165173	2026	Evaluating AI Performance in Systematic Literature Reviews for HEOR:…	meta	evaluation	human-agree	med
+doi:10.3758/s13428-026-03052-7	2026	Automating data extraction in meta-research: A multi-model benchmark…	extract	evaluation	benchmark	general
+doi:10.3928/01477447-20231220-02	2023	Utility of Artificial Intelligence in Orthopedic Surgery Literature R…	search	evaluation	human-agree	med
+doi:10.47176/mjiri.37.95	2023	A Scoping Review of Adopted Information Extraction Methods for RCTs	meta	position	none	med
+doi:10.47909/ijsmc.52	2021	A roadmap toward the automatic composition of systematic literature r…	end2end	position	none	general
+doi:10.5195/jmla.2025.1860	2025	Automated tools for systematic review screening methods: an applicati…	screen	evaluation	none	med
+doi:10.5220/0013562900003967	2025	Evaluating Large Language Models for Literature Screening: A Systemat…	screen	evaluation	human-agree	general
+doi:10.52591/lxai202012126	2020	Neural language models for text classification in evidence-based medi…	screen	method	benchmark	med
+doi:10.5334/jors.730	2026	metaScreener: A Plugin-Based Desktop Application for Human-in-the-Loo…	screen	system	none	general
+doi:10.59707/hymrolst8553	2026	Systematic Review Management Platforms Powered by Artificial Intellig…	meta	evaluation	none	med
+doi:10.6087/kcse.384	2025	Research trends and comparisons of major generative artificial intell…	meta	evaluation	benchmark	general
+doi:10.64898/2025.12.22.25342875	2025	When AI Meets the FDA: An Evaluation of Large Language Models Perform…	end2end	evaluation	human-agree	med
+doi:10.64898/2025.12.24.25342959	2025	End-to-End Reliability of Automated Systems for Diagnostic Data Extra…	extract	evaluation	benchmark	med
+doi:10.64898/2026.01.07.26343635	2026	Efficient Citation Screening by Weak Classifier Ensemble*	screen	method	benchmark	general
+doi:10.64898/2026.02.07.26345640	2026	Collaborative large language models (LLMs) are all you need for scree…	screen	method	human-agree	general
+doi:10.64898/2026.02.17.706322	2026	Breaking the Extraction Bottleneck: A Single AI Agent Achieves Statis…	extract	evaluation	human-agree	general
+doi:10.64898/2026.02.25.26347053	2026	Accuracy and efficiency of using artificial intelligence for data ext…	extract	evaluation	human-agree	med
+doi:10.64898/2026.03.03.26346690	2026	Show Your Work: Verbatim Evidence Requirements and Automated Assessme…	screen	method	benchmark	med
+doi:10.64898/2026.03.04.26347506	2026	Evaluating a Locally Deployed 20-Billion Parameter Large Language Mod…	screen	evaluation	human-agree	med
+doi:10.64898/2026.04.06.716861	2026	Quantifying Scientific Consensus in Biomedical Hypotheses via LLM-Ass…	screen	method	none	med
+doi:10.64898/2026.04.08.26350384	2026	JARVIS, should this study be selected for full-text screening? Perfor…	screen	system	benchmark	med
+doi:10.64898/2026.04.13.26350802	2026	Cochrane Evaluation of (Semi-) Automated Review Methods (CESAR): Prot…	meta	evaluation	human-agree	med
+doi:10.64898/2026.04.28.26352009	2026	MechaScreener: Large Language Model-Based Automated Screening for Sys…	screen	system	benchmark	general
+doi:10.64898/2026.06.02.26354724	2026	Audited large language model triage for systematic review screening i…	screen	evaluation	human-agree	med
+doi:10.64898/2026.06.26.26356653	2026	Autonomous generation of decision-grade clinical evidence	end2end	system	benchmark	med
+doi:10.64898/2026.06.26.26356718	2026	Enhancing Title and Abstract Priority Screening Through EdRoSi AI Pip…	screen	system	benchmark	general
+doi:10.64898/2026.07.01.26356995	2026	Comparing Artificial Intelligence versus Human Screening in Systemati…	screen	evaluation	human-agree	med
+doi:10.64898/2026.07.29.741127	2026	Operationalising LLM-assisted screening of literature to support syst…	screen	method	human-agree	general
+doi:10.64898/2026.07.30.26359375	2026	A PRISMA-Aligned Agentic Framework for Medical Systematic Reviews and…	end2end	system	none	med
+doi:10.66434/ijssr.v1i1.538	2026	ystematic reviews in the era of artificial intelligence: Opportunitie…	meta	position	none	general
+doi:10.69528/jkmla.2025.52.1.28	2025	Quality Evaluation of Generative AI–Based Search Strategies in System…	search	evaluation	human-agree	med
+doi:10.7142/igakutoshokan.72.3_136	2025	Expanding the Feasibility of Systematic Reviews With AI Support: A Pr…	screen	evaluation	none	general
+doi:10.7326/annals-24-02189	2025	Development of Prompt Templates for Large Language Model–Driven Scree…	screen	method	human-agree	med
+doi:10.7326/annals-25-00012	2025	Large Language Models for Screening Search Results in Systematic Revi…	screen	position	none	general
+doi:10.7326/annals-25-00739	2025	Artificial Intelligence–Assisted Data Extraction With a Large Languag…	extract	evaluation	human-agree	med
+doi:10.7326/m22-0092	2022	Accuracy and Efficiency of Machine Learning–Assisted Risk-of-Bias Ass…	appraise	evaluation	human-agree	med
+doi:10.7326/m23-3389	2024	Sensitivity and Specificity of Using GPT-3.5 Turbo Models for Title a…	screen	evaluation	human-agree	med
+doi:10.7717/peerj-cs.2822	2025	Validation of automated paper screening for esophagectomy systematic…	screen	evaluation	human-agree	med
+doi:10.7759/cureus.111193	2026	Benchmarking a Local Schema-Constrained Large Language Model Pipeline…	end2end	system	benchmark	med
+doi:10.7759/cureus.37281	2023	Overview of Early ChatGPT’s Presence in Medical Literature: Insights…	meta	position	none	med
+doi:10.7759/cureus.43023	2023	Streamlining Systematic Reviews: Harnessing Large Language Models for…	appraise	position	none	med
+doi:10.7759/cureus.90026	2025	Is Large Language Model-Assisted Citation Screening Feasible in a Sco…	screen	evaluation	human-agree	med
+t:methodologicalinformationextractionfromrandomizedcontrolledtrialpublicationsapil	2022	Methodological information extraction from randomized controlled tria…	extract	method	benchmark	med

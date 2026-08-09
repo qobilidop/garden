@@ -10,7 +10,7 @@
   #html.elem("p", attrs: (class: "byline"))[#byline#html.elem("sup")[\*]]
   #html.elem("p", attrs: (class: "meta"))[
     #draft · #link(landing)[landing page] ·
-    #link(record)[campaign record] ·
+    #link(record)[survey record] ·
     #link("manuscript.pdf")[PDF]
   ]
   #html.elem("p", attrs: (class: "authornote"))[\* #author-note]

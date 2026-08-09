@@ -1,6 +1,7 @@
 # sys0
 
 Incarnation 0 of sys — Bili's public hub for knowledge, skills, and process.
+Rendered at <https://qobilidop.github.io/sys0/>.
 
 ## License
 

@@ -12,8 +12,8 @@
   the campaign — search, screening, classification, deep reads — and
   drafted this manuscript (orchestration, synthesis, drafting). The
   author directed the campaign, approved the protocol, gated every
-  stage, and takes responsibility for the content; per-stage
-  disclosure is in the campaign record's baseline.
+  stage, and takes responsibility for the content; the working record
+  is public in the repository.
 ]
 #let draft = "Draft v1 · 2026-08-08"
 #let landing = "https://qobilidop.github.io/sys0/surveys/agent-assisted-review-methodology/"

@@ -1,0 +1,43 @@
+---
+citekey: huang2026-a-prisma-aligned-agentic-framework-for-medical-systematic-reviews-and-evidence-synthesis
+work:
+  title: "A PRISMA-Aligned Agentic Framework for Medical Systematic Reviews and Evidence Synthesis"
+  author: "Haoming Huang et al. (9 authors)"
+  venue: "openRxiv"
+  date: 2026
+  doi: 10.64898/2026.07.30.26359375
+read: full-text
+source: "shadow/store/library/papers/2026/huang2026-a-prisma-aligned-agentic-framework-for-medical-systematic-reviews-and-evidence-synthesis/"
+facets:
+  stage: "end2end"
+  contribution: "system"
+  setting: "med"
+retrieved: 2026-08-08
+notes-by: Claude Sonnet-class (survey deep-read pipeline)
+notes-date: 2026-08-08
+synthesis: "MedSR-Copilot, a multi-agent PRISMA-aligned copilot for full-workflow medical SR automation"
+---
+
+# A PRISMA-Aligned Agentic Framework for Medical Systematic Reviews and Evidence Synthesis
+
+## Evidence
+- **Architecture:** MedSR-Copilot = four LLM-powered subagents (literature retrieval `a_lr`, literature screening `a_ls`, data extraction `a_de`, RoB assessment `a_rob`) plus a non-agentic statistical synthesis engine `E_syn`, sharing a tool set `T` (NCBI Entrez/PubMed access, a MinerU-parsed full-text content pool, a visualization engine, the synthesis engine). All subagents run on Gemini 3.1 Flash-Lite except RoB, which uses a dedicated fine-tuned model (SR-RoB-7B). Pipeline is a fixed sequential chain (retrieve → screen → extract/RoB in parallel → synthesize), not a debate/voting multi-agent design — no cross-agent adjudication.
+- **PRISMA-item mapping:** input is a structured protocol (PICOS question `T_PICOS`, eligibility criteria `C_elig`, predefined analysis groups `G`). Retrieval uses only Population+Intervention terms, augmented by a "Review-RAG" module that retrieves prior related SRs (PMC full text) as references for MeSH/keyword query construction (mirrors PRISMA search-strategy documentation item). Screening is coarse-to-fine: title-level (P+I only) → abstract-level (all 5 PICOS dims, scored +1/0/-1, top-100 advance) → full-text-level (PICOS + detailed inclusion/exclusion criteria, all 5 dims must be "consistent") → tournament-style reranking (8 parallel single-elimination tournaments, groups of 5, top-2 advance each round, top-k=20 retained) — maps to PRISMA study-selection/flow-diagram items; a PRISMA flow diagram is auto-generated from stage counts. Data extraction is two-stage: source-context localization then numerical standardization (unit/parameter conversion), reducing single-pass context burden. RoB assessment uses SR-RoB-7B (Qwen2.5-7B, GRPO-trained with format+accuracy reward) to output domain-level judgments (5 Cochrane RoB-1 domains: random sequence generation, allocation concealment, blinding of participants/personnel, blinding of outcome assessment, incomplete outcome data) with supporting evidence text, feeding RoB summary plots. Evidence synthesis is a fixed random-effects meta-analysis (not agentic) producing pooled effect, CI, heterogeneity, forest plot, and a 3-class conclusion (favor intervention / favor control / no significant effect). Intermediate artifacts (extraction tables, RoB judgments+evidence, flow diagrams) are preserved for human-in-the-loop review/revision at every stage.
+- **MedSR-Bench:** new benchmark, 100 SRs across 24 medical domains from Cochrane Library (post-2023, PMC/OA, PubMed-indexed primary studies), 1,297 RCTs, 1,204 RoB-labeled samples, 2,144 analysis groups, 7,570 data-extraction samples, 1,908 end-to-end conclusion samples. Test-time restricted to literature published before the source SR (mirrors reviewers' contemporaneous knowledge).
+- **End-to-end evaluation (n=1,908 conclusion samples, 3-class accuracy vs. human-derived conclusion):** MedSR-Copilot 63.6%, vs. TrialMindSLR 34.8%, DeepSeek-v4-flash 31.0%, Gemini 3 Flash 45.3%, GPT-5.4-Mini 29.4% — an 18.3-pp gain over the best baseline (Gemini 3 Flash). Domain breakdown: Maternal-Child 62.1% (+6.1pp), Internal 61.3% (+23.3pp), Surgical 61.1% (+27.8pp), Alternative Medicine 81.2% (+3.1pp) vs. second-best.
+- **Subtask numbers:** Screening F1 (MedSR-Copilot vs. best of 5 baselines) — TrialReviewBench 46.3% (Rec 56.2/Prec 43.4), TrialPanorama 43.9% (63.3/41.3), MedSR-Bench 51.0% (62.1/47.2); Gemini 3 Flash has higher recall (up to 90.3%) but far lower F1 (~19-23%) from over-inclusion. Retrieval Recall@3000/@5000: TrialReviewBench 74.8/79.6%, TrialPanorama 81.4/84.2%, MedSR-Bench 78.1/82.2% (+2.5–11.7pp over TrialMindSLR). Data extraction: MedSR-Bench group recall 90.5%/accuracy 63.5%; Yun Bench recall 97.6%/accuracy 63.4%. RoB judgment accuracy: RoBBR 64.3%, MedSR-Bench 70.1% (+3.8/+2.1pp over DeepSeek-v4-flash).
+- **Ablation (end-to-end accuracy drop on removal):** two-stage data extraction −14.9pp (largest), tournament reranking −7.6pp, Review-RAG −3.3pp. RoB module not ablated (feeds explanatory output, not the conclusion label).
+- **Human-AI collaboration study:** 4 medical-background participants, balanced crossed design, 4 SR topics (infectious disease, cardiovascular, occupational health, health systems), 23 analysis-group conclusion samples + 110 data-extraction samples, closed 200-study candidate pool per topic (no live search, reproducibility control). Routine-practice condition (general LLMs/web search/reference managers allowed) vs. MedSR-Copilot-augmented condition. Conclusion accuracy 16.7% → 44.1% (+27.4pp); total processing time −167.2 min (−64.9%).
+- Baselines for end-to-end/subtask comparison: 3 general LLMs (DeepSeek-v4-flash, Gemini 3 Flash, GPT-5.4-Mini, chained via task-specific prompts into an ad hoc agent harness for end-to-end), a retrieval-specialized model (DeepRetrieval), and 2 automated SR agents (Manalyzer — retrieval/screening only; TrialMindSLR — no native statistical synthesis, so its output is passed through MedSR-Copilot's own synthesis engine for a fair end-to-end comparison, meaning TrialMindSLR's end-to-end number already benefits from the paper's own synthesis component).
+
+## Bearing on RQs
+- **RQ1 (landscape/end-to-end design):** A rare full-PRISMA-workflow system (retrieval → screening → extraction → RoB → synthesis) evaluated end-to-end rather than per-subtask, with an explicit new benchmark (MedSR-Bench) built for that purpose. Concrete architectural pattern: task-decomposed subagents sharing one LLM backbone plus one domain-fine-tuned model (RoB) plus one fully non-agentic deterministic component (statistical synthesis) — evidence that not every SR stage needs to be "agentic." Ablation isolates which design choices (two-stage extraction > reranking > Review-RAG) matter most for end-to-end conclusion accuracy, a useful RQ1 landscape data point on where agentic effort pays off.
+- **RQ4 (design gap/independence):** Notably does NOT use multi-agent debate, ensembling, or cross-agent adjudication for independence — it is a single sequential pipeline with one model per stage (single LLM instance per subtask, no redundancy/voting). This is a negative data point for RQ4: a strong-performing, full-workflow system that gets its reliability gains from task decomposition and structured intermediate artifacts (enabling human-in-the-loop inspection) rather than from multi-agent independence/adjudication mechanisms.
+
+## Evidence limits
+- Preprint, medRxiv, posted 2026-08-03, explicitly not peer-reviewed.
+- Author-constructed benchmark (MedSR-Bench) and author-run baselines/ablations — no independent replication; PICOS/eligibility-criteria annotations partly auto-extracted by Gemini 3 Flash with only "manual check," not independent dual annotation.
+- Human-AI collaboration study is very small (4 participants, 23 conclusion samples, 4 topics) — likely underpowered for the reported effect sizes; same-lab authorship, no blinding described, closed candidate pool is an artificial (reproducibility-motivated) constraint that may not reflect live-search practice.
+- Retrieval restricted to PubMed only (authors' own stated limitation); interventional-review focus only, not diagnostic/prognostic reviews.
+- Best subtask accuracy/recall numbers are still modest in absolute terms (e.g., 63–70% RoB accuracy, ~63% data-item accuracy, ~46-51% screening F1), and end-to-end conclusion accuracy tops out at 63.6% — the paper's own framing of "trustworthy automation" is aspirational rather than demonstrated at high absolute reliability.
+- Comparison baselines' "end-to-end" numbers for TrialMindSLR are computed by grafting MedSR-Copilot's own synthesis engine onto TrialMindSLR's outputs, which could either help or hurt that baseline's reported score in ways not fully disentangled from MedSR-Copilot's own contribution.
