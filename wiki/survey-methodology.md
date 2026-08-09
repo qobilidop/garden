@@ -9,7 +9,13 @@ medicine as adapted by software engineering. Shelf:
 (the mapping genre's founding statement),
 [[wohlin2014-guidelines-for-snowballing-in-systematic-literature-studies-and-a-replication-in-software-engineering]]
 (the citation-based search procedure),
-[[page2021-the-prisma-2020-statement]] (the reporting standard).
+[[page2021-the-prisma-2020-statement]] (the reporting standard),
+[[madeyski2025-llm4screenlit]] (the measurement-reform statement for
+LLM screening),
+[[woelfle2024-benchmarking-humanai-collaboration]] (the human-gate
+placement benchmark),
+[[fagerberg2025-dual-model-llm-ensemble-via-web-chat-interfaces-reaches-near-perfect-sensitivity-for-systematic-review-screening]]
+(the family-diversity ensemble evidence).
 
 ## The genres trade depth for breadth, not quality for laziness
 
@@ -84,7 +90,21 @@ report: *how many* reviewers, *whether* independent, *which*
 automation tools. Written for ML screening tools, those items land
 directly on agent-run surveys, where independent extraction passes
 play the second reviewer and an inter-rater statistic for agent
-passes is an unsolved instrumentation gap.
+passes is an unsolved instrumentation gap. The first agent-era
+measurements sharpen that gap rather than close it.
+[[fagerberg2025-dual-model-llm-ensemble-via-web-chat-interfaces-reaches-near-perfect-sensitivity-for-systematic-review-screening]]'s
+duplicate-run κ of 0.78–0.93 shows a model disagreeing with itself
+far less than it errs — its mistakes are systematic, so test–retest
+is the wrong instrument for an agent pass and redundancy must come
+from outside the model.
+[[woelfle2024-benchmarking-humanai-collaboration]] turns the canon's
+two-extractor design into a routing rule — score items where one
+human and one LLM agree, defer disagreements to a second human —
+that significantly beats solo raters on the instruments where humans
+themselves are reliable (PRISMA, AMSTAR), and collapses into
+near-total deferral on PRECIS-2, where the human raters' own κ is
+0.29: the collaboration pattern carries the result, and human
+inter-rater reliability still bounds it.
 
 ## The agent-era frontier
 
@@ -96,21 +116,29 @@ campaign's findings rhyme with the canon rather than replacing it —
 the LLM-era stage skew reproduces the pre-LLM one (screening dominant,
 appraisal and reporting thin); evaluation practice still fails
 [[kitchenham2007-guidelines-for-performing-systematic-literature-reviews-in-software-engineering]]-grade
-measurement discipline (a 29-paper review co-authored by Kitchenham
-herself finds only a quarter report confusion matrices, and
-accuracy-ranked model choice can silently discard relevant evidence);
+measurement discipline ([[madeyski2025-llm4screenlit]] — Kitchenham
+among its authors — finds only a quarter of 29 evaluations report
+confusion matrices, shows accuracy-ranked model choice silently
+discarding relevant evidence, and prescribes the repair: full
+confusion matrices, Lost Evidence as the headline number,
+cost-weighted ranking with the false-negative weight declared);
 disclosure norms converge on content while instruments fragment,
 extending [[page2021-the-prisma-2020-statement]]'s items 8–9 in four
 competing unvalidated directions; and reviewer-independence — the
 canon's measured-reliability thesis applied to agents — is entirely
-undefined in the literature. A designed next experiment falls out of
-that gap: a cross-vendor dual-screening pass (the mirrored Codex
-configuration exists for exactly this), with disagreements analyzed
-by error type — among the first deliberate cross-family independence
-measurements the mapped literature lacks. The survey's manuscript
-carries the detail; its load-bearing works are evidence-note sources
-in the survey record awaiting promotion before this page can cite
-them directly.
+undefined in the literature. The best ensemble evidence,
+[[fagerberg2025-dual-model-llm-ensemble-via-web-chat-interfaces-reaches-near-perfect-sensitivity-for-systematic-review-screening]],
+reaches 99.7% screening sensitivity with a cross-family OR-ensemble
+whose two models err in complementary places — but it runs no
+same-family arm, so "different family" is never isolated from "any
+second screener". A designed next experiment falls out of exactly
+that missing arm: a cross-vendor dual-screening pass (the mirrored
+Codex configuration exists for exactly this), with disagreements
+analyzed by error type — among the first deliberate cross-family
+independence measurements the mapped literature lacks. The survey's
+manuscript carries the detail; its most load-bearing works are now
+library entries (shelved above), the rest evidence-note sources in
+the survey record.
 
 ## Local instantiation and open questions
 
