@@ -34,10 +34,10 @@ provenance was not kept), so the wave table here — not the log alone
 — is the provenance for funnel changes. Evidence registration is
 partial by declaration: `evidence.md` covers the findings-bearing
 citations; registering the remainder is deferred in `status.md`.
-Three further legacy deviations from the current shared shape are
-declared as deferred work in `status.md` — bare (unslugged)
-exclusion codes, no `priority`/critical column, and count-only
-historical log rows — each with its convergence rule there.
+Two further legacy deviations from the current shared shape are
+declared as deferred work in `status.md` — no work yet designated
+`critical` in the `priority` column, and count-only historical log
+rows — each with its convergence rule there.
 
 ## Files
 
@@ -50,9 +50,14 @@ are in `protocol.md`.
   described here, never applied silently.
 - `status.md` — current coverage and manuscript state, plus deferred
   work; counts are regenerated, not hand-edited.
-- `catalog.tsv` — one current row per surfaced work; statuses
-  `included` (abstract-level primary-focus facets), `excluded`
-  (coded screening memory), `parked` (re-screened each update).
+- `catalog.tsv` — one current row per surfaced work: `key`, `status`
+  (`included` — abstract-level primary-focus facets; `excluded` —
+  coded screening memory; `parked` — re-screened each update), `code`
+  (slugged exclusion code, excluded rows only), `year`, `title`,
+  the taxonomy facets `stage`/`contribution`/`evidence`/`setting`
+  (included rows only), and `priority` (`critical` marking the
+  closest-work set; every row defaults to `medium` until a critical
+  set is designated per `status.md`).
 - `log.tsv` — the append-only event log: `search` rows with verbatim
   queries, dates, and yields, plus `audit` rows for corrections and
   migrations; future search and snowball rows record decided keys.
@@ -76,10 +81,10 @@ are in `protocol.md`.
 The campaign closed with 1,291 identifier rows and 672 included rows.
 The 2026-08-08 adversarial review resolved 24 duplicate/version aliases
 to their versions of record and moved two formally retracted works to
-E7. One later journal publication (Madeyski et al.) added a canonical
-DOI while retaining its arXiv identifier as E6 memory, so the retained
-ledger now has 1,292 identifier rows: 646 included, 634 excluded,
-and 12 parked.
+E7-retracted-or-withdrawn. One later journal publication (Madeyski et
+al.) added a canonical DOI while retaining its arXiv identifier as
+E6-duplicate-or-superseded memory, so the retained ledger now has
+1,292 identifier rows: 646 included, 634 excluded, and 12 parked.
 
 Mechanical normalized-title grouping now leaves one apparent collision:
 `10.1016/j.jclinepi.2025.111894` is the Stage I protocol and

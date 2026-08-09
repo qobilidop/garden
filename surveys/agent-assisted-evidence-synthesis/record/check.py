@@ -31,9 +31,18 @@ def stage_cross_table(catalog):
 
 CONFIG = {
     "record_dir": RECORD,
-    "catalog_columns": ["key", "status", "code", "year", "title", *FACET_FIELDS],
+    "catalog_columns": ["key", "status", "code", "year", "title", *FACET_FIELDS, "priority"],
     "statuses": {"included", "excluded", "parked"},
-    "exclusion_codes": {"E1", "E2", "E3", "E4", "E5", "E6", "E7"},
+    "exclusion_codes": {
+        "E1-primary-research-automation",
+        "E2-generic-nlp-no-synthesis-framing",
+        "E3-opinion-without-guidance",
+        "E4-before-window",
+        "E5-insufficient-metadata",
+        "E6-duplicate-or-superseded",
+        "E7-retracted-or-withdrawn",
+    },
+    "priorities": {"critical", "high", "medium", "low"},
     "status_required_fields": {"included": ["year", "title", *FACET_FIELDS]},
     "status_forbidden_fields": {
         "excluded": ["year", "title", *FACET_FIELDS],

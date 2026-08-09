@@ -16,6 +16,16 @@ vocabulary as new qids in `queries.tsv` to close that gap. The old
 title named the field's dominant genre; the new one names the
 declared scope.
 
+**2026-08-09 — update-window semantics.** The reconstructed rule 2
+promised an overlap start one calendar year before the previous
+cutoff. The unified update tooling (shared with
+dataflow-selection-enumeration) instead fetches the inclusive
+interval since each query's `last_reconciled` date; rule 2 now
+states the semantics actually run. Delayed indexing beyond the
+inclusive boundary is accepted as a coverage limitation. A query
+never yet reconciled takes the survey window start (2020-01-01) as
+its first from-date.
+
 ## Objective and study type
 
 Maintain an exploratory systematic map of AI-assisted and automated
@@ -38,12 +48,14 @@ not risk-of-bias or certainty assessments.
 1. Run one request for each distinct qid in `queries.tsv`, using its
    last query text and the source template below. Do not replay
    historical FAILED rows as separate queries.
-2. Use an overlap start one calendar year before the previous cutoff
-   and a new explicit upper cutoff. Post-filter every source to
-   `overlap_start <= publication_date <= new_cutoff`; arXiv requires
+2. Fetch the inclusive interval from each query's `last_reconciled`
+   date (the window start, 2020-01-01, for a query never yet
+   reconciled) through a new explicit upper cutoff — the shared
+   update tool stages exactly this. Post-filter every source to
+   `from_date <= publication_date <= new_cutoff`; arXiv requires
    this locally because its template has no date parameter. The
-   overlap catches delayed indexing and is absorbed by
-   identifier/title deduplication.
+   inclusive boundary day is absorbed by identifier/title
+   deduplication.
 3. A request gets at most three attempts, separated by 10 and 30
    seconds. Append one log row per attempt with the same qid/date. A
    terminal failure is `FAILED:<HTTP/status reason>` and is
@@ -87,10 +99,12 @@ Because 529 of the original display titles were truncated at 70
 characters, a prefix match is a candidate match, not proof: resolve
 the stored DOI/arXiv key through its registrar, compare full
 normalized titles and authors, and adjudicate ambiguous pairs.
-Version aliases of exclusions are retained as E6. When a published
-version replaces an included preprint, replace the included key and
-add the superseded identifier as an excluded catalog row with code
-E6. For a candidate matching a retained `t:` row, compare its
+Version aliases of exclusions are retained as
+E6-duplicate-or-superseded. When a published version replaces an
+included preprint, replace the included key and add the superseded
+identifier as an excluded catalog row with code
+E6-duplicate-or-superseded. For a candidate matching a retained `t:`
+row, compare its
 normalized full title with both the stored slug and display prefix,
 then adjudicate from the candidate's authors, year, and venue; if
 those metadata do not establish identity, keep the records separate
@@ -129,24 +143,29 @@ reproducible candidate-level facts.
 - **Include:** a peer-reviewed work or preprint whose subject
   matches the scope above.
 - **Exclude** (survey-declared codes, validator-enforced):
-  - E1 — primary-research automation only
-  - E2 — generic NLP/RAG without evidence-synthesis framing
-  - E3 — opinion without actionable guidance
-  - E4 — before the searched window
-  - E5 — insufficient accessible metadata to determine subject after
-    identifier, landing-page, and abstract checks
-  - E6 — duplicate or superseded identifier/version
-  - E7 — retracted or withdrawn
+  - E1-primary-research-automation — primary-research automation only
+  - E2-generic-nlp-no-synthesis-framing — generic NLP/RAG without
+    evidence-synthesis framing
+  - E3-opinion-without-guidance — opinion without actionable guidance
+  - E4-before-window — before the searched window
+  - E5-insufficient-metadata — insufficient accessible metadata to
+    determine subject after identifier, landing-page, and abstract
+    checks
+  - E6-duplicate-or-superseded — duplicate or superseded
+    identifier/version
+  - E7-retracted-or-withdrawn — retracted or withdrawn
 - Undecidable candidates take the `parked` status instead of a code
   and are re-screened on every update.
 
 Boundary examples: a literature-QA system with no secondary-study
-framing is E2; prompt advice for generic paper summarization is E2;
+framing is E2-generic-nlp-no-synthesis-framing; prompt advice for
+generic paper summarization is E2-generic-nlp-no-synthesis-framing;
 an LLM screening titles/abstracts for a systematic review is
 included. A closed paper with an informative abstract can be
-included and deep-read as abstract-only; E5 is for records lacking
-enough metadata even to decide scope. A method spanning evidence
-review and primary hypothesis generation is E1 when the
+included and deep-read as abstract-only;
+E5-insufficient-metadata is for records lacking enough metadata even
+to decide scope. A method spanning evidence review and primary
+hypothesis generation is E1-primary-research-automation when the
 primary-research product is its central contribution; park the
 candidate when that priority cannot be decided from the available
 abstract.
@@ -155,9 +174,10 @@ Each pass receives the full available title, abstract, year, venue,
 and identifier. Pass A uses an eligibility-first framing: identify
 positive evidence that the work contributes to a secondary-study
 stage, otherwise return the best E-code. Pass B uses an
-exclusion-first framing: attempt to prove E1–E5, otherwise include.
-Both return JSON
-`{"decision":"include|E1|E2|E3|E4|E5|parked","reason":"one sentence","confidence":"high|medium|low"}`.
+exclusion-first framing: attempt to prove
+E1-primary-research-automation through E5-insufficient-metadata,
+otherwise include. Both return JSON
+`{"decision":"include|E1-primary-research-automation|E2-generic-nlp-no-synthesis-framing|E3-opinion-without-guidance|E4-before-window|E5-insufficient-metadata|parked","reason":"one sentence","confidence":"high|medium|low"}`.
 Use different model tiers/vendors when available. The adjudicator
 sees the candidate and both outputs, resolves disagreements, and
 emits the same schema. The human gate reviews counts, all

@@ -31,11 +31,9 @@ after every small change.
 - **Fill per-row decided keys.** Historical log rows carry counts
   only; future search and snowball rows record their
   `included_keys`/`excluded_keys` per the unified write contract.
-- **Slug the exclusion codes.** The shared standard is
-  self-documenting slugged codes (`E6-out-of-scope-model` form);
-  this catalog still carries bare `E1`–`E7`. Mechanical rename of
-  634 coded rows plus the protocol, README, and manuscript method
-  mentions.
-- **Declare a critical set.** The shared standard carries a
-  `priority` column whose `critical` works must be deep-read and
-  chased both directions; this catalog has no priority column yet.
+- **Declare a critical set.** The catalog now carries a `priority`
+  column (every row defaulted to `medium` on 2026-08-09); no work is
+  yet marked `critical`. The shared standard requires every
+  `critical` work to be deep-read and chased both directions —
+  designate the closest-work set under human/stronger-model
+  judgment.
