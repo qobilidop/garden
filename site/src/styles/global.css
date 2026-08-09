@@ -1,6 +1,8 @@
 /* sys0 — grayscale, typography-first. Prose in serif (Charter/Georgia,
    zero webfonts); apparatus (nav, metadata, backlinks) in system sans.
-   Light and dark via prefers-color-scheme; tokens flip, structure doesn't.
+   Light and dark follow prefers-color-scheme by default; an explicit
+   nav-toggle choice sets data-theme on <html> and wins (the dark token
+   block appears twice so both routes work — keep the copies in sync).
    Link grammar: internal solid underline, external dotted; no hue. */
 
 :root {
@@ -17,7 +19,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme='light']) {
     --bg: #151515;
     --bg-raised: #1e1e1e;
     --fg: #d6d6d6;
@@ -27,6 +29,17 @@
     --paper: #3987e5;
     --post: #d95926;
   }
+}
+
+:root[data-theme='dark'] {
+  --bg: #151515;
+  --bg-raised: #1e1e1e;
+  --fg: #d6d6d6;
+  --muted: #8f8f8f;
+  --rule: #2c2c2c;
+  --underline: #5a5a5a;
+  --paper: #3987e5;
+  --post: #d95926;
 }
 
 * {
@@ -80,6 +93,20 @@ body {
 .site-header a.brand {
   color: var(--fg);
   font-weight: 600;
+}
+
+.theme-toggle {
+  margin-left: auto;
+  padding: 0;
+  border: none;
+  background: none;
+  font: inherit;
+  color: var(--muted);
+  cursor: pointer;
+}
+
+.theme-toggle:hover {
+  color: var(--fg);
 }
 
 .site-header a:hover {
@@ -199,11 +226,16 @@ pre {
 /* Astro/Shiki inline theme fallback: keep code readable in both themes
    without shipping two highlight themes yet. */
 @media (prefers-color-scheme: dark) {
-  .astro-code,
-  .astro-code span {
+  :root:not([data-theme='light']) .astro-code,
+  :root:not([data-theme='light']) .astro-code span {
     color: var(--astro-code-foreground, inherit) !important;
     background: transparent !important;
   }
+}
+:root[data-theme='dark'] .astro-code,
+:root[data-theme='dark'] .astro-code span {
+  color: var(--astro-code-foreground, inherit) !important;
+  background: transparent !important;
 }
 
 blockquote {
