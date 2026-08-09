@@ -57,3 +57,23 @@ in the session's commits (`1ab8e00`..`00d1f0c`) and this note.
 ## Rejected
 
 - None this round.
+
+## Post-retrospective addendum (same day)
+
+Two further work items closed their own loops inline — no unmined
+lessons remain from them:
+
+- **run-survey restructure** (progressive disclosure; heavy mode
+  dissolved): the two-direction audit surfaced 17 findings (5
+  surgery losses, 12 practiced-but-unwritten conventions), all
+  applied to the skill, tend-wiki, and the aarm record in the same
+  pass.
+- **create-skill** created from three-source prior-art research;
+  /evolve §3 now routes the how there. The disclosure threshold,
+  description-budget cap, and person-wording nuance were encoded at
+  creation.
+
+Staged items unchanged and still awaiting recurrence: the
+declared-quantities validator assertion; load-the-governing-skill
+before the first domain command. One rule-compliance miss to watch,
+not a rule gap: the persisting-`cd` trap recurred (codex sync push).
