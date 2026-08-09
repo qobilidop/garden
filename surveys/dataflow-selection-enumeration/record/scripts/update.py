@@ -4,7 +4,7 @@
 import argparse
 import csv
 from collections import Counter
-from datetime import date, timedelta
+from datetime import date
 import json
 from pathlib import Path
 import shlex
@@ -39,34 +39,13 @@ def records() -> tuple[list[dict[str, str]], dict[str, dict[str, str]]]:
     return queries, state
 
 
-def due_date(query: dict[str, str], state: dict[str, str]) -> date:
-    return parse_date(state["last_completed"]) + timedelta(
-        days=int(query["cadence_days"])
-    )
-
-
-def task_due_date(task: dict[str, str]) -> date:
-    return parse_date(task["last_completed"]) + timedelta(
-        days=int(task["cadence_days"])
-    )
-
-
 def status(args: argparse.Namespace) -> int:
     queries, state = records()
     active = [query for query in queries if query["active"] == "true"]
     tasks = read_tsv(UPDATES / "tasks.tsv")
     today = parse_date(args.as_of)
-    overdue = [
-        query
-        for query in active
-        if due_date(query, state[query["query_id"]]) <= today
-    ]
-    overdue_tasks = [task for task in tasks if task_due_date(task) <= today]
-    next_due = min(
-        [
-            *(due_date(query, state[query["query_id"]]) for query in active),
-            *(task_due_date(task) for task in tasks),
-        ],
+    last_reconciled = min(
+        (parse_date(state[q["query_id"]]["last_completed"]) for q in active),
         default=None,
     )
 
@@ -105,19 +84,11 @@ def status(args: argparse.Namespace) -> int:
     audited = [row for row in log_rows if row.get("kind") != "exploratory"]
     print(f"Search record: {len(audited)} audited log rows "
           f"(+{len(log_rows) - len(audited)} exploratory), {len(snapshots)} snapshots")
-    print(f"Recurring searches: {len(active)} active, {len(overdue)} overdue")
-    if overdue:
-        for query in sorted(overdue, key=lambda item: item["query_id"]):
-            identifier = query["query_id"]
-            print(f"  due {due_date(query, state[identifier])}: {identifier}")
-    print(f"Periodic tasks: {len(tasks)} tracked, {len(overdue_tasks)} overdue")
-    for task in sorted(overdue_tasks, key=lambda item: item["task_id"]):
-        print(f"  due {task_due_date(task)}: {task['task_id']}")
-    if not overdue and not overdue_tasks and next_due is not None:
-        print(f"Next maintenance due: {next_due.isoformat()}")
-
-    if args.fail_if_overdue and (overdue or overdue_tasks):
-        return 1
+    print(f"Registered searches: {len(active)} active"
+          + (f", last fully reconciled {last_reconciled.isoformat()}"
+             if last_reconciled else ""))
+    print(f"Periodic tasks: {len(tasks)} tracked")
+    print("Updates are staged on demand: fetch --all or --query-id ID")
     return 0
 
 
@@ -162,13 +133,7 @@ def select_queries(args: argparse.Namespace) -> list[dict[str, str]]:
         return selected
     if args.all:
         return active
-    if args.due:
-        return [
-            query
-            for query in active
-            if due_date(query, state[query["query_id"]]) <= today
-        ]
-    raise SystemExit("choose --due, --all, or at least one --query-id")
+    raise SystemExit("choose --all or at least one --query-id")
 
 
 def write_manifest(path: Path, manifest: dict[str, object]) -> None:
@@ -195,7 +160,7 @@ def fetch(args: argparse.Namespace) -> int:
         raise SystemExit("staged output must remain under .scratch/")
 
     if not selected:
-        print("No registered searches are due.")
+        print("No queries selected.")
         return 0
 
     manifest_path = output_dir / "manifest.json"
@@ -276,12 +241,10 @@ def parser() -> argparse.ArgumentParser:
 
     status_parser = commands.add_parser("status")
     status_parser.add_argument("--as-of", default=date.today().isoformat())
-    status_parser.add_argument("--fail-if-overdue", action="store_true")
     status_parser.set_defaults(function=status)
 
     fetch_parser = commands.add_parser("fetch")
     choice = fetch_parser.add_mutually_exclusive_group()
-    choice.add_argument("--due", action="store_true")
     choice.add_argument("--all", action="store_true")
     choice.add_argument("--query-id", action="append")
     fetch_parser.add_argument("--as-of", default=date.today().isoformat())

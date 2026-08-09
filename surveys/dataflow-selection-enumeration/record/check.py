@@ -73,14 +73,12 @@ UPDATE_QUERY_HEADER = [
     "theme",
     "query",
     "limit",
-    "cadence_days",
     "active",
     "notes",
 ]
 UPDATE_STATE_HEADER = ["query_id", "last_completed", "outcome", "notes"]
 UPDATE_TASK_HEADER = [
     "task_id",
-    "cadence_days",
     "last_completed",
     "outcome",
     "notes",
@@ -549,9 +547,8 @@ def main() -> int:
             fail(f"unsupported update source on row {number}: {row['source']}")
         if not row["query"].strip():
             fail(f"empty update query on row {number}")
-        for field in ("limit", "cadence_days"):
-            if not row[field].isdigit() or int(row[field]) <= 0:
-                fail(f"invalid update {field} on row {number}: {row[field]}")
+        if not row["limit"].isdigit() or int(row["limit"]) <= 0:
+            fail(f"invalid update limit on row {number}: {row['limit']}")
         if row["source"] == "arxiv":
             if int(row["limit"]) > 100:
                 fail(f"arXiv update limit exceeds 100 on row {number}")
@@ -593,8 +590,6 @@ def main() -> int:
         if not identifier or identifier in task_ids:
             fail(f"duplicate or empty update task ID on row {number}")
         task_ids.add(identifier)
-        if not row["cadence_days"].isdigit() or int(row["cadence_days"]) <= 0:
-            fail(f"invalid update task cadence on row {number}")
         try:
             date.fromisoformat(row["last_completed"])
         except ValueError:

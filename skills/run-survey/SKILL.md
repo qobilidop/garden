@@ -96,7 +96,7 @@ Shape note, as intent rather than drift.
 - Declare a bounded `critical` set — the closest-work candidates.
   Every critical work is deep-read and gets separate backward and
   forward citation chases immediately; forward neighborhoods are
-  refreshed on the recorded cadence.
+  refreshed as part of any substantial update batch.
 - Snowball one backward+forward round via citation indexes; record
   the pre-filter vocabulary verbatim; a verification pass re-judges
   everything the wave screens in. When an index returns a truncated,
@@ -107,8 +107,9 @@ Shape note, as intent rather than drift.
 - Screening: two agent passes on different model tiers and prompt
   framings, disagreements adjudicated by the strongest available
   model, a human gating the result; single-pass waves only with a
-  verification pass. Exclusion codes E1–E7 plus `U` (parked,
-  re-screened each update); E7 means formally retracted or withdrawn,
+  verification pass. Exclusion codes E1–E7 (undecidable candidates
+  take the `parked` status instead of a code, re-screened each
+  update); E7 means formally retracted or withdrawn,
   and the load-bearing code gets boundary examples in the README. No
   query left `FAILED` at close without a recorded reason.
 
@@ -225,9 +226,10 @@ fix introduces before persisting it.
 - Update infrastructure, standing but unscheduled: a registry of the
   recurring queries (`record/updates/queries.tsv`), their
   last-reconciled state (`state.tsv`), and periodic non-query
-  maintenance (`tasks.tsv`). Updates are human-triggered — the
-  registry makes staging one command, and any advisory cadence in
-  the record is a suggestion, not a promise. Fetches stage into
+  maintenance (`tasks.tsv`). Updates are human-triggered and the
+  registry carries no schedule — staging is one command
+  (`update.py fetch --all`), triggered by a close competitor, a new
+  theme, or simply wanting fresher coverage. Fetches stage into
   scratch and never advance state. An update batch: fetch the
   registered queries over the inclusive interval since last
   reconciliation → dedup against the catalog and screen every row →

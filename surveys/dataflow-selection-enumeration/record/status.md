@@ -2,7 +2,7 @@
 
 - **Coverage through:** 2026-08-04
 - **Baseline:** closed under the recorded initial mapping protocol
-- **Maintenance state:** current; no recurring search is yet due
+- **Maintenance state:** reconciled through the coverage date; updates on demand
 - **Manuscript:** complete draft under continuing human review
 - **Authorship:** Bili Dong, independent researcher
 
@@ -22,10 +22,9 @@ small change:
 ./dev.sh python3 surveys/dataflow-selection-enumeration/record/scripts/update.py status
 ```
 
-The next recurring database-search cycle is due after 90 days. Critical-source
-forward citation chasing is refreshed at least annually and whenever a newly
-added work becomes critical. Any plausible close competitor or new vocabulary
-theme starts an update immediately, regardless of cadence.
+Updates are staged on demand; the registered queries and their last
+reconciled executions live in `updates/`. Any plausible close
+competitor or new vocabulary theme starts an update immediately.
 
 Current interpretation is summarized in `syntheses/current-position.md`.
 Publication-snapshot requirements are in `protocol.md`; update execution steps

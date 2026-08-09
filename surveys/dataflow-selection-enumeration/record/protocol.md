@@ -101,14 +101,17 @@ only to the synthesis claims in `claims.md`.
 Priority controls maintenance obligations. Every `critical` work must be
 deep-read and must have separate usable backward and forward citation chases.
 New critical works receive both chases immediately; existing critical works
-receive a forward refresh at the cadence recorded in `updates/README.md`.
+receive a forward refresh as part of any update batch.
 
 ## Incremental maintenance
 
-Run the registered Crossref and arXiv searches every 90 days. Run a complete
-forward-citation refresh of the critical set at least annually. Also begin an
-update immediately when alerts, peer feedback, or reading expose a plausible
-close competitor or a new coverage theme.
+Updates are staged on demand — there is no maintenance schedule. The
+registered searches and the update tool make staging one command
+(`update.py fetch --all`). Begin an update immediately when alerts,
+peer feedback, or reading expose a plausible close competitor or a
+new coverage theme, and otherwise whenever fresher coverage is
+wanted; a complete forward-citation refresh of the critical set
+belongs in any substantial update batch.
 
 Scheduled database runs search an inclusive interval from the last fully
 reconciled date through the new batch date. Crossref ranks that bounded set by
@@ -134,13 +137,15 @@ reconciled.
 
 ## Snapshot closure and reopening
 
-The repository is living; “current” means that no registered maintenance task
-is overdue and no promoted finding remains unreconciled. A publication snapshot
+The map is an updatable closed snapshot; “current” means that no
+promoted finding remains unreconciled, and freshness is stated as the
+last reconciled coverage date. A publication snapshot
 may claim bounded mapping closure only when:
 
 1. every discovered work has a catalog disposition;
 2. every critical work is deep-read and chased in both directions;
-3. all registered searches due for that snapshot have been adjudicated;
+3. every registered search has an adjudicated execution covering the
+   snapshot's coverage date;
 4. two prospective, independently checked no-add batches find neither a new
    theme nor a plausible close competitor; and
 5. the manuscript, evidence matrix, and syntheses agree on the coverage date.

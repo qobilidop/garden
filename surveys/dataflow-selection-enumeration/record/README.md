@@ -118,12 +118,12 @@ the relevant update state advance.
 
 ## To update
 
-Recurring queries and cadence live in `updates/queries.tsv`; their
+Registered queries live in `updates/queries.tsv`; their
 last fully reconciled executions in `updates/state.tsv`; periodic
 citation maintenance in `updates/tasks.tsv`. Stage due searches with
 
 ```console
-./dev.sh python3 surveys/dataflow-selection-enumeration/record/scripts/update.py fetch --due
+./dev.sh python3 surveys/dataflow-selection-enumeration/record/scripts/update.py fetch --all
 ```
 
 Registered runs use an inclusive interval from the last reconciled
@@ -131,9 +131,9 @@ date through the batch date, with source-appropriate relevance or
 recency ordering. A promoted update commits the frozen result set,
 one matching audited-log row, catalog dispositions, and all affected
 source notes, syntheses, evidence rows, and manuscript changes; do
-not advance `updates/state.tsv` before that reconciliation. Any
-plausible close competitor or new vocabulary theme starts an update
-immediately, regardless of cadence.
+not advance `updates/state.tsv` before that reconciliation. Updates
+are staged on demand; any plausible close competitor or new
+vocabulary theme starts one immediately.
 
 Deferred from the standalone repo: its hardened PDF gate (PDF/A-2b
 output, Poppler structural diagnostics, pinned toolchain digests) is

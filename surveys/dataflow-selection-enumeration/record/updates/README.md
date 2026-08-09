@@ -15,10 +15,10 @@ a result set does not advance state.
 
 ## 2. Stage result sets
 
-Fetch all overdue queries, or one query while testing:
+Fetch all registered queries, or one query while testing:
 
 ```console
-./dev.sh python3 surveys/dataflow-selection-enumeration/record/scripts/update.py fetch --due
+./dev.sh python3 surveys/dataflow-selection-enumeration/record/scripts/update.py fetch --all
 ./dev.sh python3 surveys/dataflow-selection-enumeration/record/scripts/update.py fetch --query-id crossref-symbolic-residual
 ```
 
@@ -52,7 +52,8 @@ the batch date. Record the same interval and query ID in the promoted log row. R
 
 ## Citation maintenance
 
-Recurring database searches complement rather than replace snowballing. A new
-critical work requires separate backward and forward snapshots. Existing
-critical works receive a complete forward refresh at least annually; index
-defects must be recorded and checked against another stable source.
+Registered database searches complement rather than replace
+snowballing. A new critical work requires separate backward and
+forward snapshots. Existing critical works receive a complete forward
+refresh as part of any substantial update batch; index defects must
+be recorded and checked against another stable source.
