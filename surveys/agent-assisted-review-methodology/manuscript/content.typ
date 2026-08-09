@@ -77,12 +77,13 @@ Cochrane's classifiers) enter as background through their existing
 reviews rather than re-screened primary studies.
 
 LLM-era secondary literature exists but is narrower than this map.
-@luo2024 survey potential LLM roles stage by stage as a viewpoint;
-the International Collaboration for the Automation of Systematic
-Reviews reports community progress and evaluation threads
-@oconnor2024; @song2026 inventory tools for living evidence
-synthesis; and @madeyski2025 review 29 LLM-screening evaluations with
-a methodological focus. Each covers one stage, one community, or one
+Luo et al. @luo2024 survey potential LLM roles stage by
+stage as a viewpoint; the International Collaboration for the
+Automation of Systematic Reviews reports community progress and
+evaluation threads @oconnor2024; Song et al. @song2026
+inventory tools for living evidence synthesis; and
+Madeyski et al. @madeyski2025 review 29 LLM-screening
+evaluations with a methodological focus. Each covers one stage, one community, or one
 lifecycle; none spans stages, settings, and norms together, and none
 examines the agent-primary configuration this campaign embodies. To
 our knowledge this is the first secondary study of the field that is
@@ -236,7 +237,7 @@ publication-update phase @song2026.
 
 Two gaps persist from the pre-LLM era. Software engineering holds 17
 setting-classified includes against medicine's 412 — the
-order-of-magnitude evidence gap #cite(<napoleao2021>, form: "prose")
+order-of-magnitude evidence gap Napoleão et al. @napoleao2021
 measured has survived the LLM transition, and SE has no guidance or
 norms work of its own. And adoption runs ahead of disclosure: the
 field's own coordination body reports that published reviews rarely
@@ -277,10 +278,10 @@ social-science inventory with no pooled benchmark @legate2024, and
 secondhand error ranges of 4–31% @gartlehner2025.
 
 *Read against human baselines.* Single human reviewers run \~87–92%
-screening sensitivity (range 42–100%; cited in
-#cite(<fagerberg2025>, form: "prose")), human extraction error
-reaches 50% of data elements (cited in
-#cite(<gartlehner2025>, form: "prose")), and the one RCT-grade
+screening sensitivity (range 42–100%; cited in Fagerberg et al.
+@fagerberg2025), human extraction error
+reaches 50% of data elements (cited in Gartlehner et al.
+@gartlehner2025), and the one RCT-grade
 automation study found noninferiority, not superiority, with
 inconclusive time savings @arno2022[abstract-only]. Agent evidence
 should be calibrated against these imperfect baselines, not an
@@ -490,6 +491,6 @@ summarized in the baseline.
 #bibliography(
   "references.bib",
   full: true,
-  style: "apa",
+  style: "association-for-computing-machinery",
   title: [References],
 )
