@@ -47,6 +47,14 @@ asked eagerly or lazily, or avoided through concretization. These are not
 interchangeable optimizations: each shifts precision and cost between the
 executor, memory model, and solver.
 
+[[phan2015-all-solution-satisfiability-modulo-theories]] makes the observation
+boundary explicit by enumerating theory-consistent valuations of designated
+Boolean coordinates. [[spallitta2024-disjoint-projected-enumeration-for-sat-and-smt-without-blocking-clauses]]
+can instead emit a disjoint cover of projected partial models. Neither solver
+contract decides which program events matter: branch variables, output bits,
+and structurally observed selections induce different partitions. The solver
+can exhaust the encoded observer without proving that it is the right one.
+
 That boundary also determines where approximation enters. MultiSE
 concretizes an unsupported symbolic operation and marks the execution
 incomplete; Forbench offers user-supplied abstraction predicates when
