@@ -42,8 +42,9 @@ does not attempt.
 - `catalog.tsv` — disposition ledger for discovered works.
 - `claims.md` — contribution and qualification ledger.
 - `terminology.md` — adopted terms and required distinctions.
-- `searches.tsv` — audited search executions.
-- `searches-exploratory.tsv` — reconciled exploratory searches.
+- `log.tsv` — the append-only event log: audited `search`,
+  `snowball`, and `audit` rows, plus non-replayable `exploratory`
+  rows retained as history.
 - `screening/` — frozen, fully screened result sets.
 - `sources/` — one primary-source evidence note per deep-read work.
 - `syntheses/` — current cross-paper understanding by theme.
@@ -63,7 +64,7 @@ does not attempt.
    result is screened).
 2. Give every discovered work a disposition in `catalog.tsv`.
 3. Preserve only fully screened result sets and append their audited
-   execution rows to `searches.tsv`.
+   execution rows to `log.tsv`.
 4. Create a primary-source note for every deep-read work.
 5. Reconcile the relevant thematic files in `syntheses/`.
 6. Update `terminology.md`, `claims.md`, and the formal synthesis

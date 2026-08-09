@@ -22,27 +22,19 @@ CATALOG_HEADER = [
     "venue",
     "primary_url",
     "relevance",
-    "exclusion_reason",
+    "code",
 ]
-SEARCH_HEADER = [
+LOG_HEADER = [
     "date",
-    "round_id",
-    "phase",
+    "kind",
+    "id",
     "source",
-    "exact_query_or_seed",
+    "query_or_seed",
     "direction",
     "hits",
     "screened",
     "included_keys",
     "excluded_keys",
-    "notes",
-]
-EXPLORATORY_HEADER = [
-    "date",
-    "discovery_source",
-    "query_or_method",
-    "results_screened",
-    "works_added",
     "notes",
 ]
 EVIDENCE_HEADER = [
@@ -401,9 +393,9 @@ def main() -> int:
         anchor, citekey = missing_evidence[0]
         fail(f"manuscript citation has no evidence row at {anchor}: {citekey}")
 
-    header, log_rows = rows(SURVEY / "searches.tsv")
-    if header != SEARCH_HEADER:
-        fail(f"unexpected search-log header: {header}")
+    header, log_rows = rows(SURVEY / "log.tsv")
+    if header != LOG_HEADER:
+        fail(f"unexpected log header: {header}")
     promoted_keys = {
         match
         for row in log_rows
@@ -421,8 +413,8 @@ def main() -> int:
             r"(?:^|; )(?:promoted|superseded)-key:([A-Za-z0-9_.-]+)",
             row["notes"],
         )
-        if markers and row["direction"] != "audit":
-            fail(f"disposition reconciliation is not an audit row: {row['round_id']}")
+        if markers and row["kind"] != "audit":
+            fail(f"disposition reconciliation is not an audit row: {row['id']}")
     for citekey in promoted_keys:
         if citekey not in catalog or catalog[citekey]["status"] == "excluded":
             fail(f"promoted key lacks a retained catalog disposition: {citekey}")
@@ -431,6 +423,12 @@ def main() -> int:
             fail(f"superseded key lacks an excluded catalog disposition: {citekey}")
     referenced_snapshots: set[str] = set()
     for number, row in enumerate(log_rows, start=2):
+        if row["kind"] not in {"search", "snowball", "audit", "exploratory"}:
+            fail(f"log row {number} has unknown kind {row['kind']!r}")
+        if row["kind"] == "exploratory":
+            if "not-recorded" not in row["notes"]:
+                fail(f"exploratory log row {number} is not reconciled")
+            continue
         for field in ("hits", "screened"):
             if not row[field].isdigit():
                 fail(f"search-log row {number} has nonnumeric {field}")
@@ -453,7 +451,7 @@ def main() -> int:
             ):
                 fail(f"search-log row {number} exclusion {citekey} is not excluded")
         snapshot_refs = re.findall(r"screening/[^ ;]+\.tsv", row["notes"])
-        if row["direction"] == "audit":
+        if row["kind"] == "audit":
             if len(snapshot_refs) > 1:
                 fail(f"audit search-log row {number} references multiple snapshots")
         elif len(snapshot_refs) != 1:
@@ -508,13 +506,6 @@ def main() -> int:
             for item in rows_by_seed.get(key, [])
         ):
             fail(f"defective backward chase for {key} has no primary bibliography")
-
-    header, exploratory_rows = rows(SURVEY / "searches-exploratory.tsv")
-    if header != EXPLORATORY_HEADER:
-        fail(f"unexpected exploratory-log header: {header}")
-    for number, row in enumerate(exploratory_rows, start=2):
-        if "not-recorded" not in row["notes"]:
-            fail(f"exploratory-search-log row {number} is not reconciled")
 
     screening_paths = sorted((SURVEY / "screening").rglob("*.tsv"))
     for path in screening_paths:

@@ -2,7 +2,7 @@
 
 These TSV files freeze the identifier, title, DOI, year, venue, and type records
 returned by the discovery index for each audited query or citation-neighborhood
-row in `../searches.tsv`. Some source exporters include abstracts; full
+row in `../log.tsv`. Some source exporters include abstracts; full
 text is never committed here.
 
 `baseline-2026-08-04/` contains the complete first mapping snapshot. Later
@@ -15,7 +15,7 @@ The snapshots serve three purposes:
    repairing it; and
 3. let an independent reviewer reproduce the inclusion and exclusion audit.
 
-The search log is authoritative for the exact query or seed, hit count,
+The event log is authoritative for the exact query or seed, hit count,
 screened count, included catalog keys, exclusions, and known limitations. A
 snapshot records discovery metadata only; technical claims still require a
 primary source note. OpenAlex records are discovery evidence, not authoritative

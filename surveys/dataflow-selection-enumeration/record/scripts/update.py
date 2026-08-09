@@ -72,7 +72,7 @@ def status(args: argparse.Namespace) -> int:
 
     catalog = read_tsv(SURVEY / "catalog.tsv")
     catalog_statuses = Counter(row["status"] for row in catalog)
-    log_rows = read_tsv(SURVEY / "searches.tsv")
+    log_rows = read_tsv(SURVEY / "log.tsv")
     evidence_rows = read_tsv(SURVEY / "evidence-matrix.tsv")
     snapshots = list((SURVEY / "screening").rglob("*.tsv"))
     source_notes = [
@@ -102,7 +102,9 @@ def status(args: argparse.Namespace) -> int:
         f"Source-note schema: {current_source_notes} current, "
         f"{len(source_notes) - current_source_notes} legacy"
     )
-    print(f"Search record: {len(log_rows)} log rows, {len(snapshots)} snapshots")
+    audited = [row for row in log_rows if row.get("kind") != "exploratory"]
+    print(f"Search record: {len(audited)} audited log rows "
+          f"(+{len(log_rows) - len(audited)} exploratory), {len(snapshots)} snapshots")
     print(f"Recurring searches: {len(active)} active, {len(overdue)} overdue")
     if overdue:
         for query in sorted(overdue, key=lambda item: item["query_id"]):

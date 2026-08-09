@@ -55,8 +55,7 @@ silently changing an executed search.
 | Record | Purpose | Update rule |
 |---|---|---|
 | `catalog.tsv` | One current disposition per discovered work | Update during screening |
-| `searches.tsv` | Audited query and snowball execution log | Append after adjudication |
-| `searches-exploratory.tsv` | Non-replayable early discovery record | Baseline evidence only |
+| `log.tsv` | Append-only event log: `search`, `snowball`, and `audit` rows, plus `exploratory` rows retained as non-replayable early history | Append after adjudication |
 | `screening/` | Frozen result sets | Commit only after every row is screened |
 | `sources/` | Primary-work extraction and pinpoint evidence | Required for deep reads |
 | `syntheses/` | Current cross-paper understanding | Revise after each reading batch |
@@ -151,9 +150,10 @@ always relative to the named sources, exact queries, result depths, and date.
 
 ## Audited search-log schema
 
-`searches.tsv` contains: execution date, round ID, phase, source, exact
-query or seed, direction, hit count, screened count, included keys, excluded
-keys, and notes. Every non-audit row references exactly one committed snapshot.
+`log.tsv` contains: execution date, kind (`search`, `snowball`,
+`audit`, or `exploratory`), event id, source, exact query or seed,
+direction, hit count, screened count, included keys, excluded keys,
+and notes. Every non-audit row references exactly one committed snapshot.
 Approximate counts, unknown result sets, and aggregate seed descriptions belong
 in scratch notes rather than the audited log.
 

@@ -1,4 +1,4 @@
-citekey	year	cluster	status	priority	venue	primary_url	relevance	exclusion_reason
+citekey	year	cluster	status	priority	venue	primary_url	relevance	code
 king1976symbolic	1976	symbolic-execution	candidate	high	CACM	https://doi.org/10.1145/360248.360252	Foundational symbolic execution and path-condition semantics	-
 voogd2023denotational	2023	semantics	excluded	medium	ICTAC	https://doi.org/10.1007/978-3-031-47963-2_22	Conference precursor retained for lineage; current claims use the expanded 2025 journal treatment	E7-duplicate-version
 mauborgne2005trace	2005	abstract-interpretation	deep-read	high	ESOP	https://doi.org/10.1007/978-3-540-31987-0_2	Established trace-partitioning terminology and semantics	-
