@@ -47,16 +47,16 @@ EVIDENCE_HEADER = [
     "evidence_scope",
     "caveat",
 ]
-UPDATE_QUERY_HEADER = [
+QUERIES_HEADER = [
     "query_id",
     "source",
     "theme",
     "query",
     "limit",
     "active",
+    "last_reconciled",
     "notes",
 ]
-UPDATE_STATE_HEADER = ["query_id", "last_completed", "outcome", "notes"]
 BACKWARD_DEFECT_MARKERS = (
     "unresolved",
     "index omits",
@@ -454,9 +454,9 @@ def main() -> int:
         ):
             fail(f"defective backward chase for {key} has no primary bibliography")
 
-    header, query_rows = rows(SURVEY / "updates" / "queries.tsv")
-    if header != UPDATE_QUERY_HEADER:
-        fail(f"unexpected update-query header: {header}")
+    header, query_rows = rows(SURVEY / "queries.tsv")
+    if header != QUERIES_HEADER:
+        fail(f"unexpected queries header: {header}")
     query_ids: set[str] = set()
     for number, row in enumerate(query_rows, start=2):
         identifier = row["query_id"]
@@ -476,30 +476,13 @@ def main() -> int:
                 fail(f"arXiv update query is not source-native on row {number}")
         if row["active"] not in ("true", "false"):
             fail(f"invalid update active flag on row {number}: {row['active']}")
-
-    header, state_rows = rows(SURVEY / "updates" / "state.tsv")
-    if header != UPDATE_STATE_HEADER:
-        fail(f"unexpected update-state header: {header}")
-    state_ids: set[str] = set()
-    for number, row in enumerate(state_rows, start=2):
-        identifier = row["query_id"]
-        if not identifier or identifier in state_ids:
-            fail(f"duplicate or empty update state ID on row {number}")
-        state_ids.add(identifier)
         try:
-            date.fromisoformat(row["last_completed"])
+            date.fromisoformat(row["last_reconciled"])
         except ValueError:
             fail(
-                f"invalid update completion date on row {number}: "
-                f"{row['last_completed']}"
+                f"invalid last_reconciled date on row {number}: "
+                f"{row['last_reconciled']}"
             )
-        if not row["outcome"].strip():
-            fail(f"empty update outcome on row {number}")
-    if state_ids != query_ids:
-        missing = sorted(query_ids - state_ids)
-        extra = sorted(state_ids - query_ids)
-        detail = missing[0] if missing else extra[0]
-        fail(f"update query/state ID mismatch: {detail}")
 
     return 0
 

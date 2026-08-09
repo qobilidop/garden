@@ -46,7 +46,7 @@ reduction, unfoldings, Petri-net observation, property-guided exploration, and
 state quotienting remain adjacent comparators when they clarify an
 observer-relative boundary without implementing the target record contract.
 
-Exact recurring searches are versioned in `updates/queries.tsv`. New vocabulary
+Exact recurring searches are versioned in `queries.tsv`. New vocabulary
 discovered during reading is added there in a separate commit rather than
 silently changing an executed search.
 
@@ -59,7 +59,7 @@ silently changing an executed search.
 | `sources/` | Primary-work extraction and pinpoint evidence | Required for deep reads |
 | `syntheses/` | Current cross-paper understanding | Revise after each reading batch |
 | `evidence-matrix.tsv` | Synthesis/manuscript claim-to-source traceability | Revise with claims or manuscript evidence |
-| `updates/state.tsv` | Completion state of registered searches | Advance only after reconciliation |
+| `queries.tsv` | Standing discovery queries with their last reconciled dates | Vocabulary edits in their own commit; `last_reconciled` advances only after reconciliation |
 
 Search indexes are discovery aids. Primary papers, official proceedings,
 publisher records, or stable author-hosted versions control technical and

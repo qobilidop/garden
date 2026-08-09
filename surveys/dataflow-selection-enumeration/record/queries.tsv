@@ -1,0 +1,23 @@
+query_id	source	theme	query	limit	active	last_reconciled	notes
+crossref-symbolic-residual	crossref	symbolic-execution	symbolic execution guarded residual enumeration	100	true	2026-08-04	Guarded values, multipath execution, and exact residual partitions
+arxiv-symbolic-residual	arxiv	symbolic-execution	(all:symbolic AND all:execution) AND (all:guarded OR all:residual OR (all:path AND all:merging))	100	true	2026-08-04	Recent preprints on guarded symbolic results
+crossref-projected-enumeration	crossref	model-enumeration	projected model enumeration disjoint partial assignment	100	true	2026-08-04	AllSAT, AllSMT, implicants, and projected cubes
+arxiv-projected-enumeration	arxiv	model-enumeration	"(all:AllSAT OR all:AllSMT OR all:""projected model"") AND (all:enumeration OR all:partial)"	100	true	2026-08-04	Recent projected-enumeration preprints
+crossref-demand-observation	crossref	demand	demand driven symbolic evaluation observation	100	true	2026-08-04	Demand-sensitive symbolic evaluation and testing
+arxiv-demand-observation	arxiv	demand	"(all:demand OR all:needed) AND all:""symbolic evaluation"""	100	true	2026-08-04	Recent demand-relative symbolic methods
+crossref-term-graph-fingerprint	crossref	term-graphs	term graph choice fingerprint sharing	100	true	2026-08-04	Needed evaluation, choice identities, and shared search
+arxiv-term-graph-fingerprint	arxiv	term-graphs	"all:""term graph"" AND (all:choice OR all:sharing OR all:fingerprint)"	100	true	2026-08-04	Recent functional-logic and term-graph work
+crossref-observer-partition	crossref	observer-equivalence	observer equivalence input partition symbolic	100	true	2026-08-04	Finite observers and exact input equivalence classes
+arxiv-observer-partition	arxiv	observer-equivalence	"(all:observer OR all:observation) AND all:""input partition"""	100	true	2026-08-04	Recent observer-induced partition work
+crossref-neural-regions	crossref	neural-regions	exact neural network region enumeration decision diagram	100	true	2026-08-04	Exact activation, output-region, tree, and diagram methods
+arxiv-neural-regions	arxiv	neural-regions	"all:""neural network"" AND (all:""region enumeration"" OR all:""linear region"" OR all:""activation region"")"	100	true	2026-08-04	Recent exact neural-region preprints
+crossref-parametric-regions	crossref	parametric-regions	piecewise affine critical region exact enumeration	100	true	2026-08-04	PWA, hybrid, and multiparametric-region enumeration
+arxiv-parametric-regions	arxiv	parametric-regions	"(all:""piecewise affine"" OR all:""critical region"") AND (all:enumeration OR all:partition)"	100	true	2026-08-04	Recent PWA and hybrid-region preprints
+crossref-symbolic-por	crossref	partial-order	symbolic partial order reduction observer preservation	100	true	2026-08-04	Observer-preserving schedule and state reduction
+arxiv-symbolic-por	arxiv	partial-order	"all:""partial order reduction"" AND (all:symbolic OR all:observation OR all:property)"	100	true	2026-08-04	Recent symbolic POR preprints
+crossref-directed-unfolding	crossref	unfoldings	goal directed unfolding observation Petri net	100	true	2026-08-04	Requested-property prefixes and observation reductions
+arxiv-directed-unfolding	arxiv	unfoldings	"(all:unfolding OR all:""Petri net"") AND (all:directed OR all:goal OR all:observation)"	100	true	2026-08-04	Recent unfolding and Petri-net observer work
+crossref-dataflow-demand	crossref	dataflow-demand	dataflow demand semantics requested output	100	true	2026-08-04	Classical and current result-relative dataflow demand
+arxiv-dataflow-demand	arxiv	dataflow-demand	"all:dataflow AND (all:demand OR all:""requested output"" OR all:backward)"	100	true	2026-08-04	Recent dataflow-demand preprints
+crossref-selection-fibers	crossref	selection-observation	selection observation input fiber symbolic residual	100	true	2026-08-04	Direct terminology and close-competitor search
+arxiv-selection-fibers	arxiv	selection-observation	"(all:selection OR all:choice) AND (all:observation OR all:""input fiber"" OR all:residual) AND (all:symbolic OR all:dataflow)"	100	true	2026-08-04	Direct recent-preprint search

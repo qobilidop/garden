@@ -51,5 +51,6 @@ organizing derivation, not a claim to a new generic enumeration paradigm.
 The baseline is superseded for current-status purposes as soon as a later work,
 a newly exposed vocabulary cluster, or a changed primary result could alter the
 taxonomy, comparison boundary, formal synthesis, or manuscript. Such a finding
-starts an update batch under `updates/README.md`; it does not rewrite this
+starts an update batch under the README's To update procedure; it
+does not rewrite this
 baseline.

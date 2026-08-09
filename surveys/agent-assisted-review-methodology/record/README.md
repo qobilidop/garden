@@ -22,9 +22,8 @@ git and is not required to resume.
   facets), `excluded` (634, coded screening memory), `parked`
   (12, undecidable now, re-screened each update)
 - `sources/` — evidence notes for the 25 deep-read works
-- `updates/` — registered queries (`queries.tsv`) and their last
-  reconciled executions (`state.tsv`); stage an update with the
-  shared tool
+- `queries.tsv` — the standing discovery queries, each row carrying
+  its `last_reconciled` date; stage an update with the shared tool
   (`python3 skills/run-survey/scripts/update.py --record
   surveys/agent-assisted-review-methodology/record fetch --all`)
 - `scripts/check.py` — structural checks and mechanically derived

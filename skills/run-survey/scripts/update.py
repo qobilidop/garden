@@ -33,19 +33,16 @@ def parse_date(value: str) -> date:
         raise SystemExit(f"invalid ISO date {value!r}") from error
 
 
-def records() -> tuple[list[dict[str, str]], dict[str, dict[str, str]]]:
-    queries = read_tsv(UPDATES / "queries.tsv")
-    state_rows = read_tsv(UPDATES / "state.tsv")
-    state = {row["query_id"]: row for row in state_rows}
-    return queries, state
+def records() -> list[dict[str, str]]:
+    return read_tsv(SURVEY / "queries.tsv")
 
 
 def status(args: argparse.Namespace) -> int:
-    queries, state = records()
+    queries = records()
     active = [query for query in queries if query["active"] == "true"]
     today = parse_date(args.as_of)
     last_reconciled = min(
-        (parse_date(state[q["query_id"]]["last_completed"]) for q in active),
+        (parse_date(q["last_reconciled"]) for q in active),
         default=None,
     )
 
@@ -90,7 +87,6 @@ def status(args: argparse.Namespace) -> int:
 
 def command_for(
     query: dict[str, str],
-    state: dict[str, str],
     today: date,
     output: Path,
 ) -> list[str]:
@@ -99,7 +95,7 @@ def command_for(
         "--limit",
         query["limit"],
         "--from-date",
-        state["last_completed"],
+        query["last_reconciled"],
         "--to-date",
         today.isoformat(),
         "--output",
@@ -130,7 +126,7 @@ def command_for(
             "--limit",
             query["limit"],
             "--from-year",
-            state["last_completed"][:4],
+            query["last_reconciled"][:4],
             "--to-year",
             today.isoformat()[:4],
             "--output",
@@ -140,7 +136,7 @@ def command_for(
 
 
 def select_queries(args: argparse.Namespace) -> list[dict[str, str]]:
-    queries, state = records()
+    queries = records()
     active = [query for query in queries if query["active"] == "true"]
     today = parse_date(args.as_of)
     if args.query_id:
@@ -166,7 +162,6 @@ def write_manifest(path: Path, manifest: dict[str, object]) -> None:
 def fetch(args: argparse.Namespace) -> int:
     selected = select_queries(args)
     today = parse_date(args.as_of)
-    _, state = records()
     output_dir = Path(args.output_dir) if args.output_dir else (
         ROOT / ".scratch" / "survey-update" / today.isoformat()
     )
@@ -205,9 +200,7 @@ def fetch(args: argparse.Namespace) -> int:
     last_arxiv_request: float | None = None
     for query in selected:
         output = output_dir / f"{query['query_id']}.tsv"
-        command = command_for(
-            query, state[query["query_id"]], today, output
-        )
+        command = command_for(query, today, output)
         if args.dry_run:
             print(shlex.join(command))
             continue
@@ -279,12 +272,11 @@ def parser() -> argparse.ArgumentParser:
 
 def main() -> int:
     args = parser().parse_args()
-    global ROOT, SURVEY, UPDATES
+    global ROOT, SURVEY
     SURVEY = Path(args.record).resolve()
-    if not (SURVEY / "updates" / "queries.tsv").is_file():
+    if not (SURVEY / "queries.tsv").is_file():
         raise SystemExit(f"not a survey record with a registry: {SURVEY}")
     ROOT = SURVEY.parent
-    UPDATES = SURVEY / "updates"
     return args.function(args)
 
 

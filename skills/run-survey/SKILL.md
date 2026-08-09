@@ -242,9 +242,9 @@ fix introduces before persisting it.
   competitor; and manuscript, record, and landing page agree on the
   coverage date. State closure as relative to the named sources,
   exact queries, result depths, and date — never as completeness.
-- Update infrastructure, standing but unscheduled: a registry of
-  the recurring queries (`record/updates/queries.tsv`) and their
-  last-reconciled state (`state.tsv`). Updates are human-triggered and the
+- Update infrastructure, standing but unscheduled: the standing
+  queries in `record/queries.tsv`, each row carrying its
+  `last_reconciled` date. Updates are human-triggered and the
   registry carries no schedule — staging is one command
   (`scripts/update.py --record surveys/<slug>/record fetch --all`),
   triggered by a close competitor, a new theme, or simply wanting

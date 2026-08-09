@@ -22,13 +22,13 @@ small change:
 ./dev.sh python3 skills/run-survey/scripts/update.py --record surveys/dataflow-selection-enumeration/record status
 ```
 
-Updates are staged on demand; the registered queries and their last
-reconciled executions live in `updates/`. Any plausible close
+Updates are staged on demand; the standing queries and their last
+reconciled dates live in `queries.tsv`. Any plausible close
 competitor or new vocabulary theme starts an update immediately.
 
 Current interpretation is summarized in `syntheses/current-position.md`.
 Publication-snapshot requirements are in `protocol.md`; update execution steps
-are in `updates/README.md`.
+are in the README's To update procedure.
 
 ## Deferred to the next update
 

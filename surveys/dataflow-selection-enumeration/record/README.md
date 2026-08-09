@@ -51,8 +51,8 @@ does not attempt.
   connect the surveyed themes.
 - `evidence-matrix.tsv` — binds synthesis claims and manuscript
   section labels to source-note anchors.
-- `updates/` — registered queries (`queries.tsv`) and their
-  reconciled state (`state.tsv`).
+- `queries.tsv` — the standing discovery queries, each row carrying
+  its `last_reconciled` date.
 - `scripts/check.py` — the record validator; the shared fetchers,
   snowball, and update tools live in `skills/run-survey/scripts/`.
 
@@ -119,9 +119,8 @@ the relevant update state advance.
 
 ## To update
 
-Registered queries live in `updates/queries.tsv`; their last fully
-reconciled executions in `updates/state.tsv`. Updates are staged on
-demand; any plausible close competitor or new vocabulary theme
+The standing queries live in `queries.tsv`, each row carrying its
+`last_reconciled` date. Updates are staged on demand; any plausible close competitor or new vocabulary theme
 starts one immediately.
 
 1. Stage result sets into `.scratch/` (never committed; the tool
@@ -144,5 +143,5 @@ starts one immediately.
    catalog, and reconcile syntheses, claims, terminology, formal
    material, the evidence matrix, and affected manuscript text;
    discard the staged result set.
-4. Only then advance `updates/state.tsv` to the batch date and run
-   `scripts/check.py`.
+4. Only then advance the rows' `last_reconciled` to the batch date
+   and run `scripts/check.py`.
