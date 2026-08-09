@@ -7,6 +7,8 @@ Systems that modify themselves from their own experience. Shelf:
 [[wang2023-voyager]] (the founding skill-library exemplar),
 [[liu2026-a-taxonomy-of-self-evolving-agents]] (the three-locus cut),
 [[weng2026-harness]] (harness engineering as the near-term RSI site),
+[[favaro2026-when-ai-builds-itself]] (frontier-lab evidence of R&D
+automation),
 [[osmani2026-loop-engineering]] (the loop layer from the product side),
 [[vincent2026-the-therapist-pattern]] and [[vincent2026-superpowers-6]]
 (field reports), [[karpathy2026-llm-wiki]] (the pattern applied to
@@ -93,6 +95,15 @@ ladder's floor is now mainstream practice:
 [[osmani2026-loop-engineering]]'s scheduled triage-and-fix loops run
 the work autonomously but never update themselves — delegation without
 self-improvement, the substrate the rest of the shelf evolves.
+At frontier-lab scale, [[favaro2026-when-ai-builds-itself]] supplies the
+same distinction with internal operational evidence: code volume and
+fixed-goal experiment execution rose sharply, while humans still chose
+research problems and scoring rubrics, and review became the bottleneck.
+Its open-ended-task curves are LLM-judged and its next-step comparison
+selects moments where the human had room to improve, so they show a rung
+being climbed, not research-taste parity. Under the field map's
+experience-dependent, persistent, self-initiated test, this is accelerated
+delegation inside AI R&D, not yet a self-evolving system.
 [[vincent2026-the-therapist-pattern]] explores replacing human gates
 with structural internal ones (sole-writer roles, time as a gate) — a
 philosophical fork from the survey's human-approval checklist worth

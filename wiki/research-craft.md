@@ -7,7 +7,8 @@ as a procedure), [[keshav2007-how-to-read-a-paper]] (reading as
 budgeted passes), [[luhmann1981-communicating-with-slip-boxes]] (the
 note network as a communication partner), and
 [[karpathy2026-llm-wiki]] (knowledge as a compiled, maintained
-artifact).
+artifact), with [[favaro2026-when-ai-builds-itself]] as frontier-lab
+evidence that execution cheapens before problem choice and judgment.
 
 ## Craft is scheduled, not trait-based
 
@@ -23,6 +24,14 @@ supplies the selection procedure Hamming's ritual gestures at: rank
 candidates on feasibility × interest, keep only the Pareto front,
 weight by career stage — and enforce a three-month no-commitment rule,
 because projects take years and weeks spent choosing repay months.
+Favaro and Clark make that allocation pressure concrete inside an AI
+lab: when code and fixed-goal experiments become cheap in human time,
+deciding which experiments matter, which results to trust, and when to
+abandon a direction becomes the remaining bottleneck. Their selected
+next-step probe is not a measure of research taste—it begins from 129
+moments where the human had room to improve and uses a model judge—but
+it shows why problem-selection procedure matters more, not less, as
+execution accelerates.
 In each case the practitioner who "just has the knack" is replaced by
 a mechanism an ordinary week can execute.
 
