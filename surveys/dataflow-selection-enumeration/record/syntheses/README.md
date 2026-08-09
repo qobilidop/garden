@@ -6,7 +6,7 @@ summaries. Git preserves superseded interpretations.
 
 Every deep-reading batch must identify the syntheses it affects. A synthesis
 update should state the current conclusion, strongest supporting and limiting
-results, scope conditions, and any consequence for `research/claims.md` or the
+results, scope conditions, and any consequence for `claims.md` or the
 manuscript. Chronological reading notes do not belong here.
 
 `current-position.md` is the compact entry point. `subsumption-boundaries.md`

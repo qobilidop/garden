@@ -1,47 +1,121 @@
-# Living survey workspace
+# Survey record
 
-This directory is organized around the lifecycle of a maintained survey, not
-the chronology of its first literature search.
+The maintained evidence and reasoning behind the survey — synthetic
+and current rather than a chronological notebook. An agent redoing or
+updating it needs this directory, the manuscript, and the repo's
+build toolchain (AGENTS.md and the run-survey skill). Process history
+lives in git.
 
 ## Start here
 
 ```console
-./dev.sh python3 scripts/survey/update.py status
-./dev.sh ./scripts/check.sh
+./dev.sh python3 surveys/dataflow-selection-enumeration/scripts/survey/update.py status
+./dev.sh python3 surveys/dataflow-selection-enumeration/scripts/survey/check.py
 ```
 
-The first command reports coverage dates, due searches, and current record
-counts. The second validates the evidence graph and builds the manuscript.
+`update.py status` reports coverage dates, due searches, and current
+record counts. `check.py` validates the evidence graph: catalog,
+audited logs, screening snapshots, evidence matrix, bibliography, and
+manuscript citation anchors.
 
 ## Information architecture
 
-- `protocol.md` defines the stable scope, selection rules, and maintenance
-  lifecycle.
-- `status.md` states the current human-readable coverage and manuscript state.
-- `baseline.md` summarizes the first closed mapping snapshot.
-- `catalog.tsv` is the disposition ledger for discovered works.
-- `logs/` records audited and exploratory search executions.
-- `screening/` stores frozen, fully screened result sets.
-- `sources/` stores one primary-source evidence note per deep-read work.
-- `syntheses/` stores the current cross-paper understanding by theme.
-- `formal-synthesis/` stores the definitions, reductions, and proofs used to
+- `protocol.md` — stable scope, selection rules, exclusion codes, and
+  maintenance lifecycle.
+- `methodology.md` — mapping methodology and validity record.
+- `status.md` — current human-readable coverage and manuscript state.
+- `baseline.md` — the first closed mapping snapshot (2026-08-04).
+- `catalog.tsv` — disposition ledger for discovered works.
+- `claims.md` — contribution and qualification ledger.
+- `terminology.md` — adopted terms and required distinctions.
+- `logs/` — audited and exploratory search executions.
+- `screening/` — frozen, fully screened result sets.
+- `sources/` — one primary-source evidence note per deep-read work.
+- `syntheses/` — current cross-paper understanding by theme.
+- `formal-synthesis/` — definitions, reductions, and proofs that
   connect the surveyed themes.
-- `evidence-matrix.tsv` connects stable synthesis claims and manuscript section
-  labels to source-note anchors.
-- `updates/` contains recurring searches and their completion state.
+- `evidence-matrix.tsv` — binds synthesis claims and manuscript
+  section labels to source-note anchors.
+- `updates/` — recurring searches (`queries.tsv`), their reconciled
+  state (`state.tsv`), and periodic tasks (`tasks.tsv`).
+- [`../decisions/`](../decisions/) — durable research choices.
 
-## Definition of done for a new paper
+## Evidence flow
 
-A discovered paper is not integrated merely because it appears in the catalog.
-Integration is complete when its disposition is recorded, any required source
-note is anchored in the primary work, affected syntheses and claim entries are
-updated, and every resulting manuscript change is reflected in the evidence
-matrix. Only then may the relevant update state advance.
+1. Stage new search results and downloaded papers in `.scratch/`
+   (survey-local, gitignored; API output is not evidence until every
+   result is screened).
+2. Give every discovered work a disposition in `catalog.tsv`.
+3. Preserve only fully screened result sets and append their audited
+   execution rows to `logs/searches.tsv`.
+4. Create a primary-source note for every deep-read work.
+5. Reconcile the relevant thematic files in `syntheses/`.
+6. Update `terminology.md`, `claims.md`, and the formal synthesis
+   when the cross-paper interpretation changes.
+7. Add or revise `evidence-matrix.tsv` when a synthesis claim or
+   technical manuscript claim changes.
+8. Record durable research choices in `../decisions/`.
 
-Raw API responses, downloaded papers, and unfinished screening batches stay in
-`.scratch/`.
+A discovered paper is integrated only when its disposition is
+recorded, any required source note is anchored in the primary work,
+affected syntheses and claim entries are updated, and every resulting
+manuscript change is reflected in the evidence matrix. Only then may
+the relevant update state advance.
 
-The source-note template is versioned. Historical baseline notes are upgraded
-when revisited; new or modified notes use the current template and must record a
-review date, evidence locations, the work/interpretation distinction, and update
-impact.
+## Status vocabulary
+
+- Literature `candidate`: retained discovery-level record, not
+  automatically a pending task.
+- Literature `screened`: adjudicated from title, abstract, or stable
+  metadata.
+- Literature `deep-read`: primary technical source read and anchored
+  in a structured source note.
+- Literature `excluded`: stable exclusion code records why it is out
+  of scope, superseded, application-only, unobtainable, or
+  duplicative.
+- Priority `critical`: bounded closest-work set; each member must be
+  deep-read and chased backward and forward.
+- Claims: `hypothesis`, `supported`, `needs-qualification`,
+  `known-result`, or `rejected`.
+- Decisions and terminology: `open`, `provisional`, `adopted`, or
+  `superseded`.
+
+## Operating rules
+
+- Do not present a claim as novel merely because no contradicting
+  paper has yet been found. Record novelty as a hypothesis until the
+  closest-work audit is complete.
+- Base literature claims on primary sources. Record a stable URL or
+  DOI and pinpoint sections, definitions, theorems, algorithms, or
+  pages for important evidence. Keep quotations short and distinguish
+  authors' claims from interpretation.
+- Keep durable files synthetic and current rather than chronological;
+  git carries history — distill scratch notes instead of committing
+  research diaries.
+- The source-note template is versioned. Historical baseline notes
+  are upgraded when revisited; new or modified notes use the current
+  template and record a review date, evidence locations, the
+  work/interpretation distinction, and update impact.
+
+## To update
+
+Recurring queries and cadence live in `updates/queries.tsv`; their
+last fully reconciled executions in `updates/state.tsv`; periodic
+citation maintenance in `updates/tasks.tsv`. Stage due searches with
+
+```console
+./dev.sh python3 surveys/dataflow-selection-enumeration/scripts/survey/update.py fetch --due
+```
+
+Registered runs use an inclusive interval from the last reconciled
+date through the batch date, with source-appropriate relevance or
+recency ordering. A promoted update commits the frozen result set,
+one matching audited-log row, catalog dispositions, and all affected
+source notes, syntheses, evidence rows, and manuscript changes; do
+not advance `updates/state.tsv` before that reconciliation. Any
+plausible close competitor or new vocabulary theme starts an update
+immediately, regardless of cadence.
+
+Deferred from the standalone repo: its hardened PDF gate (PDF/A-2b
+output, Poppler structural diagnostics, pinned toolchain digests) is
+not yet ported to the shared manuscript build.

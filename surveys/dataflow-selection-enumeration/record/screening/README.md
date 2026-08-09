@@ -27,8 +27,8 @@ New update batches use date-named subdirectories. OpenAlex citation-neighborhood
 and concept-query files are generated through:
 
 ```console
-./dev.sh python3 scripts/survey/screen_openalex.py ... \
-  --output research/survey/screening/YYYY-MM-DD/NAME.tsv
+./dev.sh python3 surveys/dataflow-selection-enumeration/scripts/survey/screen_openalex.py ... \
+  --output surveys/dataflow-selection-enumeration/record/screening/YYYY-MM-DD/NAME.tsv
 ```
 
 Manual Crossref result snapshots use a source-neutral identifier column. Date
@@ -36,9 +36,9 @@ bounds are required for recurring updates and may be supplied for an ad hoc
 snapshot:
 
 ```console
-./dev.sh python3 scripts/survey/screen_crossref.py QUERY \
+./dev.sh python3 surveys/dataflow-selection-enumeration/scripts/survey/screen_crossref.py QUERY \
   --limit 100 --from-date YYYY-MM-DD --to-date YYYY-MM-DD \
-  --output research/survey/screening/YYYY-MM-DD/NAME.tsv
+  --output surveys/dataflow-selection-enumeration/record/screening/YYYY-MM-DD/NAME.tsv
 ```
 
 Files named `primary-CITEKEY-backward.tsv` transcribe the complete reference
