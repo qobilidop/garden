@@ -1,6 +1,6 @@
-// Backlink graph over the wiki + library collections: scan every document's
-// raw body for [[targets]], invert into an inbound map. Computed once per
-// build and cached.
+// Backlink graph over the wiki + library + surveys collections: scan every
+// document's raw body for [[targets]], invert into an inbound map. Computed
+// once per build and cached.
 import { getCollection } from 'astro:content'
 import { extractTitle } from './works'
 
@@ -8,7 +8,7 @@ const LINK_RE = /\[\[([^[\]]+)\]\]/g
 
 export interface Ref {
   id: string
-  kind: 'wiki' | 'library'
+  kind: 'wiki' | 'library' | 'survey'
   href: string
   title: string
 }
@@ -42,6 +42,12 @@ async function build(): Promise<Map<string, Ref[]>> {
       id: e.id,
       kind: 'library' as const,
       href: `${base}/library/${e.id}/`,
+      body: e.body ?? '',
+    })),
+    ...(await getCollection('surveys')).map((e) => ({
+      id: e.id,
+      kind: 'survey' as const,
+      href: `${base}/surveys/${e.id}/`,
       body: e.body ?? '',
     })),
   ]

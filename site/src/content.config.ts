@@ -1,5 +1,7 @@
-// The allowlist: the site reads exactly these two collections and nothing
-// else in the repo. Library IDs are citekeys (the parent directory name).
+// The allowlist: the site reads exactly these three collections and
+// nothing else in the repo. Library IDs are citekeys (the parent
+// directory name); survey IDs are the campaign slug (the parent
+// directory of its manuscript).
 import { defineCollection } from 'astro:content'
 import { glob } from 'astro/loaders'
 
@@ -15,4 +17,12 @@ const library = defineCollection({
   }),
 })
 
-export const collections = { wiki, library }
+const surveys = defineCollection({
+  loader: glob({
+    base: '../surveys',
+    pattern: '*/manuscript.md',
+    generateId: ({ entry }) => entry.split('/').at(-2)!,
+  }),
+})
+
+export const collections = { wiki, library, surveys }

@@ -5,11 +5,11 @@ description: Develop and verify the sys0 website (site/, Astro) — the build/pr
 
 # Tend the site
 
-The contract is AGENTS.md §Site: `site/` reads exactly `wiki/` and
-`library/`, read-only; owned logic in `site/src/lib/`; unresolved
-`[[targets]]` and bare citekey mentions fail the build via
-`lintContent()` in `site/src/lib/sitemap.mjs`, called at config load
-(`astro.config.mjs`).
+The contract is AGENTS.md §Site: `site/` reads exactly `wiki/`,
+`library/`, and `surveys/*/manuscript.md`, read-only; owned logic in
+`site/src/lib/`; unresolved `[[targets]]` and bare citekey mentions
+fail the build via `lintContent()` in `site/src/lib/sitemap.mjs`,
+called at config load (`astro.config.mjs`).
 
 ## The loop
 

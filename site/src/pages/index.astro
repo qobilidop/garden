@@ -6,6 +6,7 @@ import { extractTitle, fieldOf } from '../lib/works'
 const base = import.meta.env.BASE_URL.replace(/\/$/, '')
 const wiki = await getCollection('wiki')
 const library = await getCollection('library')
+const surveys = await getCollection('surveys')
 const recent = library
   .map((e) => ({
     id: e.id,
@@ -19,12 +20,14 @@ const recent = library
 <Base description="A personal research system: a wiki distilling a reading library.">
   <h1>sys0</h1>
   <p>
-    The public face of a personal research system. Two layers live here:
+    The public face of a personal research system. Three layers live here:
     the <a href={`${base}/wiki/`}>wiki</a> — living topic pages that distill
-    a reading library across works — and the
+    a reading library across works — the
     <a href={`${base}/library/`}>library</a> — the works themselves, papers
-    and posts, each with synthesis notes. Wiki pages cite works; work pages
-    list the topics that cite them.
+    and posts, each with synthesis notes — and
+    <a href={`${base}/surveys/`}>surveys</a> — manuscripts of systematic
+    review campaigns run under a pinned method. Wiki pages cite works; work
+    pages list the topics that cite them.
   </p>
   <p>
     Everything is rendered from
@@ -39,6 +42,17 @@ const recent = library
       wiki.map((e) => (
         <li>
           <a href={`${base}/wiki/${e.id}/`}>{extractTitle(e.body ?? '') ?? e.id}</a>
+        </li>
+      ))
+    }
+  </ul>
+
+  <h2>Surveys</h2>
+  <ul>
+    {
+      surveys.map((e) => (
+        <li>
+          <a href={`${base}/surveys/${e.id}/`}>{extractTitle(e.body ?? '') ?? e.id}</a>
         </li>
       ))
     }

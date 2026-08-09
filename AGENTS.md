@@ -50,9 +50,10 @@
 ## Site
 
 - `site/` renders the repo to GitHub Pages (Astro). It reads exactly
-  `wiki/` and `library/` — the two collections in
-  `site/src/content.config.ts` are the allowlist — and writes nothing
-  back; presentation needs never reshape note conventions.
+  `wiki/`, `library/`, and `surveys/*/manuscript.md` — the three
+  collections in `site/src/content.config.ts` are the allowlist — and
+  writes nothing back; presentation needs never reshape note
+  conventions.
 - Owned logic lives in `site/src/lib/` (wikilink resolution, backlink
   graph, work metadata); everything else is rented substrate (Astro,
   remark, KaTeX, Pagefind, Mermaid). An unresolved `[[target]]` fails

@@ -37,7 +37,7 @@ across medicine (where evidence synthesis is core infrastructure),
 software engineering (which imported the method), and general venues.
 
 This paper maps that literature. Following the systematic-map genre
-(petersen2008), it aims at classified coverage rather than pooled
+([[petersen2008-systematic-mapping-studies-in-software-engineering]]), it aims at classified coverage rather than pooled
 effect estimates, asking four questions:
 
 - **RQ1 (landscape):** What methods, systems, and workflows exist for
@@ -63,15 +63,15 @@ guidance sanctions for AI, which we take up in the discussion.
 The pre-LLM baseline is well documented. van Dinter et al.'s
 landscape review (vandinter2021: 41 automation studies, 2006–2020)
 found every study in Kitchenham's conducting-the-review phase
-(kitchenham2007) — screening dominant, appraisal nearly empty,
+([[kitchenham2007-guidelines-for-performing-systematic-literature-reviews-in-software-engineering]]) — screening dominant, appraisal nearly empty,
 planning and reporting untouched, and exactly one deep-learning study
 in the corpus. Napoleão et al.'s cross-domain mapping (napoleao2021)
 quantified the adoption gap between medicine and software
 engineering: eight practice-adopted screening tools in medicine
 versus two in SE. The classic method canon — review guidelines
-(kitchenham2007), mapping-study procedure (petersen2008),
-snowballing (wohlin2014), and PRISMA 2020 reporting
-(page2021) — predates LLMs and supplies both the vocabulary of
+([[kitchenham2007-guidelines-for-performing-systematic-literature-reviews-in-software-engineering]]), mapping-study procedure ([[petersen2008-systematic-mapping-studies-in-software-engineering]]),
+snowballing ([[wohlin2014-guidelines-for-snowballing-in-systematic-literature-studies-and-a-replication-in-software-engineering]]), and PRISMA 2020 reporting
+([[page2021-the-prisma-2020-statement]]) — predates LLMs and supplies both the vocabulary of
 this map and the method under automation pressure. Pre-LLM machine
 classifiers for screening (text mining for study identification,
 Cochrane's classifiers) enter this map as background through their
@@ -99,7 +99,7 @@ single-pass) were adjudicated by the strongest tier (Fable) with
 persisted rationales. Wave-1 dispositions: 139 includes.
 
 **Snowball.** One backward+forward round from the 139 includes via
-OpenAlex (wohlin2014): 1,204 new candidates after a
+OpenAlex ([[wohlin2014-guidelines-for-snowballing-in-systematic-literature-studies-and-a-replication-in-software-engineering]]): 1,204 new candidates after a
 title-vocabulary pre-filter; 323 without AI-side vocabulary excluded
 en bloc; 881 screened single-pass (Haiku-class); all 624 resulting
 includes/uncertains then re-judged by an adversarial verification
@@ -332,7 +332,7 @@ this survey mapped.
 Same-vendor dual screening means κ = 0.937 may overstate
 independence. Snowball coverage is bounded: one non-decayed round, a
 title-vocabulary pre-filter that reintroduces the terminology
-dependence snowballing exists to escape (wohlin2014), and
+dependence snowballing exists to escape ([[wohlin2014-guidelines-for-snowballing-in-systematic-literature-studies-and-a-replication-in-software-engineering]]), and
 single-pass wave-2 excludes carry unquantified recall risk.
 Screening and classification read truncated abstracts (600–900
 chars); facets are abstract-level and single-pass; deep-read
@@ -399,9 +399,9 @@ are derived from the works' own metadata.
   for Evaluating LLMs in the Title-Abstract Screening of Systematic
   Reviews" (ESEM '25). arxiv:2507.19027v2;
   doi:10.1109/esem64174.2025.00053.
-- **kitchenham2007** — Kitchenham & Charters, "Guidelines for
+- **[[kitchenham2007-guidelines-for-performing-systematic-literature-reviews-in-software-engineering]]** — Kitchenham & Charters, "Guidelines for
   performing Systematic Literature Reviews in Software Engineering"
-  (EBSE-2007-01). [[kitchenham2007-guidelines-for-performing-systematic-literature-reviews-in-software-engineering]]
+  (EBSE-2007-01).
 - **legate2024** — Legate, Nimon & Noblin, "(Semi)automated
   approaches to data extraction for systematic reviews and
   meta-analyses in social sciences: A living review" (F1000Research
@@ -425,13 +425,12 @@ are derived from the works' own metadata.
 - **oconnor2024** — Large language models: updates and evaluation of
   automation tools for systematic reviews (ICASR, 2024).
   doi:10.1186/s13643-024-02666-2.
-- **page2021** — Page et al., "The PRISMA 2020 statement: an updated
+- **[[page2021-the-prisma-2020-statement]]** — Page et al., "The PRISMA 2020 statement: an updated
   guideline for reporting systematic reviews" (BMJ 372:n71, 2021).
-  doi:10.1136/bmj.n71. [[page2021-the-prisma-2020-statement]]
-- **petersen2008** — Petersen, Feldt, Mujtaba & Mattsson, "Systematic
+  doi:10.1136/bmj.n71.
+- **[[petersen2008-systematic-mapping-studies-in-software-engineering]]** — Petersen, Feldt, Mujtaba & Mattsson, "Systematic
   Mapping Studies in Software Engineering" (EASE 2008).
   doi:10.14236/ewic/EASE2008.8.
-  [[petersen2008-systematic-mapping-studies-in-software-engineering]]
 - **safarpour2026** — Empirical evaluation of open-source large
   language models for paper selection (SANER-C, 2026).
   doi:10.1109/saner-c67878.2026.00047.
@@ -446,7 +445,6 @@ are derived from the works' own metadata.
   doi:10.1016/j.infsof.2021.106589.
 - **woelfle2024** — Benchmarking human-AI collaboration for
   systematic review appraisal (2024). doi:10.1016/j.jclinepi.2024.111533.
-- **wohlin2014** — Wohlin, "Guidelines for Snowballing in Systematic
+- **[[wohlin2014-guidelines-for-snowballing-in-systematic-literature-studies-and-a-replication-in-software-engineering]]** — Wohlin, "Guidelines for Snowballing in Systematic
   Literature Studies and a Replication in Software Engineering"
   (EASE 2014). doi:10.1145/2601248.2601268.
-  [[wohlin2014-guidelines-for-snowballing-in-systematic-literature-studies-and-a-replication-in-software-engineering]]
