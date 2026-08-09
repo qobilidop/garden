@@ -1,7 +1,9 @@
 # Claims and qualification ledger
 
-This file records the survey's current synthesis claims. No item is
-novel merely because it is listed. Each active claim must have explicit scope, anchored
+This file records the survey's current synthesis claims, each with
+status `hypothesis`, `supported`, `needs-qualification`,
+`known-result`, or `rejected`. No item is novel merely because it is
+listed. Each active claim must have explicit scope, anchored
 evidence, and a stated relationship to the closest established result.
 
 ## Current survey synthesis claims

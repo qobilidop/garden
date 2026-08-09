@@ -52,18 +52,10 @@ silently changing an executed search.
 
 ## Records and authority
 
-| Record | Purpose | Update rule |
-|---|---|---|
-| `catalog.tsv` | One current disposition per discovered work | Update during screening |
-| `log.tsv` | Append-only event log: `search`, `snowball`, and `audit` rows, plus `exploratory` rows retained as non-replayable early history | Append after adjudication |
-| `sources/` | Primary-work extraction and pinpoint evidence | Required for deep reads |
-| `syntheses/` | Current cross-paper understanding | Revise after each reading batch |
-| `evidence-matrix.tsv` | Synthesis/manuscript claim-to-source traceability | Revise with claims or manuscript evidence |
-| `queries.tsv` | Standing discovery queries with their last reconciled dates | Vocabulary edits in their own commit; `last_reconciled` advances only after reconciliation |
-
-Search indexes are discovery aids. Primary papers, official proceedings,
-publisher records, or stable author-hosted versions control technical and
-bibliographic claims.
+The file map, with each record's purpose and update rule, is the
+README's Files section. Search indexes are discovery aids. Primary
+papers, official proceedings, publisher records, or stable
+author-hosted versions control technical and bibliographic claims.
 
 ## Inclusion and exclusion
 
@@ -118,18 +110,8 @@ protects against delayed deposits; catalog deduplication absorbs repeats.
 Unbounded searches remain useful for deliberate scope expansion but do not
 constitute an incremental update.
 
-Each update batch follows this order:
-
-1. inspect `update.py status` and fetch due searches into `.scratch/`;
-2. deduplicate against the catalog and screen every returned record;
-3. promote only fully adjudicated snapshots and append matching log rows;
-4. deep-read and snowball any new critical work;
-5. update thematic syntheses, terminology, claims, and formal synthesis;
-6. update evidence rows and manuscript text affected by the findings;
-7. advance update state only when all impacts are reconciled; and
-8. run the full repository check before committing.
-
-An update is incomplete if it only adds bibliography entries or source notes.
+The numbered procedure is the README's To update section. An update
+is incomplete if it only adds bibliography entries or source notes.
 The cross-paper synthesis and every affected manuscript claim must also be
 reconciled.
 
