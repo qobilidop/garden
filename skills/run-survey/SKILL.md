@@ -21,8 +21,14 @@ literature it mapped.
   `snowball-candidates.tsv`. Commit contract: curated dispositions
   (included + adjudicated), notes, syntheses, claims, decisions,
   baseline, search logs; intermediates stay local and mirror to shadow
-  at freeze. (Both gitignore and catalog split were mid-campaign
-  retrofits in v0 — decisions 0001, 0006.)
+  at freeze, after which the local copies are deleted. (Both gitignore
+  and catalog split were mid-campaign retrofits in v0 — decisions
+  0001, 0006.)
+- The included-works record is one table, `included.tsv` (key, via,
+  year, title), which classification later extends with facet columns
+  — v0 split identity (`catalog-included.tsv`) from facets (`map.tsv`)
+  into two tables with identical key sets, an accident of stage
+  ordering.
 - The protocol states: RQs; genre and window; disposition codes;
   scale as a fan-out budget (batches × tier), applied to the
   *post-snowball* pool; the independence axis of every dual-pass stage
@@ -148,6 +154,24 @@ literature it mapped.
   deep-read note is a freeze blocker, not a disclosure); mirror
   gitignored intermediates to shadow; rewrite `status.md` to CLOSED
   with final numbers only.
+
+## 8. Manuscript
+
+- The reader-facing output, distinct from `baseline.md` (the frozen
+  methods record — PRISMA separates these too). Human-gated: written
+  when the findings deserve a reader, not by default at freeze.
+- `manuscript.md` in the survey directory: repo-native markdown,
+  `[[citekey]]` citations for library-resolvable works, a References
+  section with full metadata for everything cited. Shape: introduction
+  (motivation and hook), background (lineage), method (condensed from
+  `baseline.md`), one section per RQ grown from `syntheses/` —
+  inverting the register from internal delta notes to self-contained
+  prose — then discussion and conclusion.
+- Tables and flow counts come from the committed record (funnel,
+  map distributions, agreement stats); never restate numbers the
+  catalogs don't back.
+- Site rendering, PDF export, and deposition are separate downstream
+  threads; the manuscript exists in repo-native form first.
 
 ## Decision records
 
