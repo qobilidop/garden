@@ -66,7 +66,9 @@ Three surfaces in `surveys/<slug>/`:
   then build a facet scheme by keywording and classify every include
   under it. Prefer few, mechanical facets; cut judgment-heavy fields
   rather than classify them noisily (v1's judgment field varied 5.7×
-  across passes and was unusable).
+  across passes and was unusable). A formal-subject survey builds a
+  unified theoretical framework on top of the taxonomy — see Theory
+  mode.
 - Deep-read the anchor candidates into `record/sources/` notes:
   library-note frontmatter (citekey, registrar work metadata,
   `synthesis:` one-liner) over an extraction body (`## Evidence`
@@ -166,6 +168,64 @@ fix introduces before persisting it.
 - Verify builds, propose commits with the attribution trailer, commit
   on the user's word; use post-campaign /evolve when there are durable
   lessons worth promoting into the harness.
+
+## Theory mode (for formal subjects)
+
+When the survey's subject is a formal problem and the synthesis is a
+unified framework, not only a facet taxonomy. The reference
+implementation is dataflow-selection-enumeration (manuscript §3–§6,
+`record/formal-synthesis/`, `record/claims.md`). Its moves:
+
+- **Problem before solvers.** Open with a formal model of the object
+  the literatures argue about, independent of any solver or data
+  structure, deliberately narrowed until the task is well-defined
+  (the reference isolates the finite, acyclic, deterministic, total
+  case). Separate four things and keep them separate throughout: the
+  observer (what is asked), its fibers (the semantic object), the
+  discovery algorithm, and the output representation — mechanism and
+  representation are orthogonal to the object.
+- **Coordinates plus equivalence theorems.** Give each literature's
+  native object a coordinate in the framework and prove the
+  coordinates induce the same partition. The equivalence results are
+  what license cross-literature comparison — without them "the same
+  problem" is an analogy, not a theorem.
+- **Relationship taxonomy.** Classify every compared work's relation
+  to the target problem — direct presentation / restricted
+  specialization / adjacent comparator — with any instrumentation or
+  quotient stated explicitly. Never silently transfer a theorem
+  across an observer change; framework-induced misclassification is
+  a named validity threat, not just a risk.
+- **Contract decomposition.** Split the target guarantee into
+  independent obligations (the reference: coverage, guard–fiber
+  equivalence, residual correctness, witness) and assess each work
+  per-obligation. No approach inherits all obligations from its
+  name; similar output syntax can hide different semantics.
+- **Novelty as hypothesis.** Every synthesis claim lives in a claims
+  ledger with status, scope, anchored evidence, and its closest
+  established result; a claim is never novel merely because no
+  contradicting paper surfaced. Run an adversarial reduction audit
+  (reduce each tempting "new" statement to the nearest established
+  construction) and keep a counterexamples file of small models that
+  falsify overclaims. Rejected hypotheses are retained as guardrails
+  against reintroduction. Label every theorem prior work / direct
+  derivation / local synthesis.
+- **Record layer.** `record/formal-synthesis/` holds the model,
+  semantics, derivations, complexity notes, counterexamples,
+  reduction audit, and open questions; `claims.md` is the ledger; an
+  evidence matrix binds manuscript claims at stable section labels
+  to source-note anchors. Changes propagate formal-synthesis →
+  ledger → manuscript, never manuscript-first.
+- **Manuscript additions.** The framework section uses the shared
+  statement apparatus (`surveys/style.typ` definitions/theorems,
+  target-aware for HTML); the terminology maps each literature's
+  native vocabulary onto framework terms (a "known as" list per
+  concept); complexity claims name their charge model — oracle-call
+  accounting is not an output-sensitivity theorem.
+
+Theory mode refines, not relaxes, the no-research rule: definitions
+and connecting theorems are contributed as a unifying lens, and
+anything that could read as a novel result must survive the
+reduction audit first.
 
 ## Heavy mode (opt-in)
 
