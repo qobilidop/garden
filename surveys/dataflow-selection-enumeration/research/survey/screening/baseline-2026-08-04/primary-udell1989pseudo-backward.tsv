@@ -1,0 +1,24 @@
+rank	source_id	year	doi	title	venue	type
+1	citation-1	1987	10.1016/0898-1221(87)90077-0	The Use of Linear Sums in Exhaustive Testing	Computers and Mathematics with Applications	article
+2	citation-2	1984		Fault Coverage of Pseudo-Exhaustive Testing	International Symposium on Fault-Tolerant Computing	proceedings-article
+3	citation-3	1985		Network Segmentation for Pseudo-Exhaustive Testing	Stanford Center for Reliable Computing technical report	technical-report
+4	citation-4	1958		The Theory of Graphs and Its Applications	Methuen	book
+5	citation-5	1991	10.1007/BF01759033	Partitioning Circuits for Improved Testability	Algorithmica	article
+6	citation-6	1986	10.1109/TC.1986.1676718	Linear Dependencies in Linear Feedback Shift Registers	IEEE Transactions on Computers	article
+7	citation-7	1987		An Approach to Modular Test Generation Based on the Transparency of Modules	CompEuro 1987	proceedings-article
+8	citation-8	1981	10.1109/TC.1981.1675717	Design for Autonomous Test	IEEE Transactions on Computers	article
+9	citation-9	1982	10.1109/DAC.1982.1585544	Verification Testing	Design Automation Conference	proceedings-article
+10	citation-10	1984	10.1109/TC.1984.1676477	Verification Testing—A Pseudoexhaustive Test Technique	IEEE Transactions on Computers	article
+11	citation-11	1970		Fault Dominance in Combinational Circuits	technical report	technical-report
+12	citation-12	1986		Pseudo-Exhaustive Testing Strategy for Large Combinational Circuits	Computer Systems Science and Engineering	article
+13	citation-13	1983		Circuit Segmentation for Pseudo-Exhaustive Testing	Stanford Center for Reliable Computing technical report	technical-report
+14	citation-14	1984	10.1049/IP-E.1984.0021	An Algorithm for the Partitioning of Logic Circuits	IEE Proceedings E	article
+15	citation-15	1987		Circuit Segmentation for Pseudo-Exhaustive Testing via Simulated Annealing	International Test Conference	proceedings-article
+16	citation-16	1983	10.1109/TC.1983.1676175	Exhaustive Test Pattern Generation with Constant Weight Vectors	IEEE Transactions on Computers	article
+17	citation-17	1986		Test Set Generation for Pseudo-Exhaustive BIST	International Conference on Computer-Aided Design	proceedings-article
+18	citation-18	1988	10.1109/TEST.1988.207832	Reconfigurable Hardware for Pseudo-Exhaustive Test	International Test Conference	proceedings-article
+19	citation-19	1988	10.1109/TEST.1988.207895	Partial Hardware Partitioning: A New Pseudo-Exhaustive Test Implementation	International Test Conference	proceedings-article
+20	citation-20	1988		An Efficient Segmentation Program for Pseudo-Exhaustive Test	technical report	technical-report
+21	citation-21	1988		Pseudo-Exhaustive Test and Segmentation: Formal Definitions and Extended Fault Coverage Results	technical report	technical-report
+22	citation-22	1985		An Operationally Efficient Scheme for Exhaustive Test-Pattern Generation Using Linear Codes	International Test Conference	proceedings-article
+23	citation-23	1986	10.1109/TC.1986.1676772	Condensed Linear Feedback Shift Register (LFSR) Testing—A Pseudoexhaustive Test Technique	IEEE Transactions on Computers	article

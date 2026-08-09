@@ -1,0 +1,13 @@
+rank	source_id	year	doi	title	venue	type
+1	citation-1	2000		Reachability in Petri nets: an approach based on constraint programming	Universite de Lille 1	dissertation
+2	10.1109/cdc.1988.194300	1988	10.1109/cdc.1988.194300	Dynamical Logic Observers for Finite Automata	27th IEEE Conference on Decision and Control	proceedings-article
+3	10.1109/cdc.1989.70090	1989	10.1109/cdc.1989.70090	Classical and Logic Based Regulator Design and its Complexity for Partially Observed Automata	28th IEEE Conference on Decision and Control	proceedings-article
+4	10.1006/jcss.1999.1634	1999	10.1006/jcss.1999.1634	Petri Net Languages and Infinite Subsets of Nm	Journal of Computer and System Sciences	article
+5	10.1109/cdc.1997.652507	1997	10.1109/cdc.1997.652507	Petri Net State Estimators Based on Event Observation	36th IEEE Conference on Decision and Control	proceedings-article
+6	10.1109/tac.2002.802769	2002	10.1109/tac.2002.802769	Observability of place/transition nets	IEEE Transactions on Automatic Control	article
+7	10.1109/9.250512	1993	10.1109/9.250512	Predicates and Predicate Transformers for Supervisory Control of Discrete Event Dynamical Systems	IEEE Transactions on Automatic Control	article
+8	citation-8	1998		Identification in Discrete Event Systems	IEEE International Conference on Systems, Man and Cybernetics	proceedings-article
+9	10.1109/5.24143	1989	10.1109/5.24143	Petri Nets: Properties, Analysis and Applications	Proceedings of the IEEE	article
+10	10.1109/9.57018	1990	10.1109/9.57018	Observability of discrete event dynamic systems	IEEE Transactions on Automatic Control	article
+11	citation-11	1981		Petri Net Theory and the Modeling of Systems	Prentice-Hall	book
+12	10.1109/cdc.1986.267551	1986	10.1109/cdc.1986.267551	Observability of Discrete-Event Systems	25th IEEE Conference on Decision and Control	proceedings-article

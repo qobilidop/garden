@@ -1,0 +1,11 @@
+rank	openalex_id	year	doi	title	venue	type
+1	W4386317506	2023	https://doi.org/10.1145/3607845	The Verse Calculus: A Core Calculus for Deterministic Functional Logic Programming	Proceedings of the ACM on Programming Languages	article
+2	W3205648430	2021	https://doi.org/10.1145/3479394.3479411	From Non-determinism to Goroutines: A Fair Implementation of Curry in Go		conference-paper
+3	W4297858853	2022	https://doi.org/10.1017/s1471068426100453	A Monadic Implementation of Functional Logic Programs	Theory and Practice of Logic Programming	article
+4	W4313799999	2023	https://doi.org/10.1007/978-3-031-24841-2_1	RICE: An Optimizing Curry Compiler	Lecture notes in computer science	conference-paper
+5	W1980046290	2013	https://doi.org/10.1145/2505879.2505881	Are <i>needed</i> redexes really needed?		conference-paper
+6	W2567054742	2016	https://doi.org/10.4204/eptcs.234.13	Proving Non-Deterministic Computations in Agda	Electronic Proceedings in Theoretical Computer Science	article
+7	W2214632428	2015	https://doi.org/10.4204/eptcs.183.2	Needed Computations Shortcutting Needed Steps	Electronic Proceedings in Theoretical Computer Science	article
+8	W3080520587	2021	https://doi.org/10.1007/978-3-030-75333-7_4	Memoized Pull-Tabbing for Functional Logic Programming	Lecture notes in computer science	conference-paper
+9	W7114996729	2025	https://doi.org/10.1145/3756907.3756915	Determinism Types for Functional Logic Programming		conference-paper
+10	W7119494595	2026	https://doi.org/10.1145/3776699	Domain-Theoretic Semantics for Functional Logic Programming	Proceedings of the ACM on Programming Languages	article

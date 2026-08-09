@@ -1,0 +1,103 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1006/jsco.1997.0167	1998	10.1006/jsco.1997.0167	A Polycyclic Quotient Algorithm	Journal of Symbolic Computation	journal-article
+2	10.1016/s0747-7171(87)80060-3	1987	10.1016/s0747-7171(87)80060-3	Towards a soluble quotient algorithm	Journal of Symbolic Computation	journal-article
+3	10.1006/jsco.1994.1064	1994	10.1006/jsco.1994.1064	A Finite Soluble Quotient Algorithm	Journal of Symbolic Computation	journal-article
+4	10.1016/j.jsc.2004.11.010	2005	10.1016/j.jsc.2004.11.010	Bezoutian and quotient ring structure	Journal of Symbolic Computation	journal-article
+5	10.1016/j.jsc.2026.102553	2026	10.1016/j.jsc.2026.102553	Sum-and-quotient characteristic decomposition of polynomial ideals	Journal of Symbolic Computation	journal-article
+6	10.1016/s0747-7171(08)80084-3	1990	10.1016/s0747-7171(08)80084-3	Implementing the Baumslag-Cannonito-Miller polycyclic quotient algorithm	Journal of Symbolic Computation	journal-article
+7	10.1109/dsn.2009.5270315	2009	10.1109/dsn.2009.5270315	Fitness-guided path exploration in dynamic symbolic execution	2009 IEEE/IFIP International Conference on Dependable Systems &amp; Networks	proceedings-article
+8	10.1016/s0747-7171(08)80080-6	1990	10.1016/s0747-7171(08)80080-6	A nilpotent quotient algorithm for graded Lie rings	Journal of Symbolic Computation	journal-article
+9	10.1145/3772726.3772846	2025	10.1145/3772726.3772846	Logic-Guided Exploration for Symbolic Gridworld Tasks via Safety-Constrained Masking and Goal-Oriented Shaping	Proceedings of the 2nd International Conference on Intelligent Computing and Data Analysis	proceedings-article
+10	10.36948/ijfmr.2026.v08i02.73628	2026	10.36948/ijfmr.2026.v08i02.73628	Adversity Quotient (AQ) and Emotional Quotient (EQ) in Academic Learning: A Qualitative Exploration of Their Relationship	International Journal For Multidisciplinary Research	journal-article
+11	10.7717/peerjcs.272/table-1	None	10.7717/peerjcs.272/table-1	"Table 1: Results of symbolic states from a forward symbolic exploration by timed automaton
+                      <i>M</i>
+                      ."		component
+12	10.21467/abstracts.93.45	2020	10.21467/abstracts.93.45	Quotient-difference Algorithm: Application in Seismic Observation Results Processing	Abstracts of The Second Eurasian RISK-2020 Conference and Symposium	proceedings-article
+13	10.1525/si.1994.17.3.239	1994	10.1525/si.1994.17.3.239	Naturalistic Observation in the Laboratory	Symbolic Interaction	journal-article
+14	10.1162/thld_a_00295	2005	10.1162/thld_a_00295	Quotient City: A Topological Exploration of Space	Thresholds	journal-article
+15	10.14711/thesis-b1477728	None	10.14711/thesis-b1477728	Context and precondition-guided search strategies in dynamic symbolic execution		dissertation
+16	10.4324/9781410601728-5	2000	10.4324/9781410601728-5	First Steps: Symbolic Interactionism and Premarital Sexuality	To Dance the Dance	book-chapter
+17	10.1145/3373207.3404017	2020	10.1145/3373207.3404017	Modular techniques for effective localization and double ideal quotient	Proceedings of the 45th International Symposium on Symbolic and Algebraic Computation	proceedings-article
+18	10.70675/a2711f7bza605z4cc2za9f7zde7b76530bd3	None	10.70675/a2711f7bza605z4cc2za9f7zde7b76530bd3	Human-guided exploration of datasets		dissertation
+19	10.1525/si.1991.14.4.449	1991	10.1525/si.1991.14.4.449	The Uses of Observation in French Sociology	Symbolic Interaction	journal-article
+20	10.1145/2442829.2442868	2012	10.1145/2442829.2442868	Border basis representation of a general quotient algebra	Proceedings of the 37th International Symposium on Symbolic and Algebraic Computation	proceedings-article
+21	10.1145/1277500.1277518	2007	10.1145/1277500.1277518	From quotient-difference to generalized eigenvalues and sparse polynomial interpolation	Proceedings of the 2007 international workshop on Symbolic-numeric computation	proceedings-article
+22	10.1007/978-1-349-04084-1_6	1979	10.1007/978-1-349-04084-1_6	Participant Observation	The Making of Symbolic Interactionism	book-chapter
+23	10.1145/1005285.1005321	2004	10.1145/1005285.1005321	Maximal quotient rational reconstruction	Proceedings of the 2004 international symposium on Symbolic and algebraic computation	proceedings-article
+24	10.1016/j.jsc.2009.02.004	2009	10.1016/j.jsc.2009.02.004	Noether normalization guided by monomial cone decompositions	Journal of Symbolic Computation	journal-article
+25	10.1145/800205.806317	1976	10.1145/800205.806317	Calculating presentations for certain kinds of quotient groups	Proceedings of the third ACM symposium on Symbolic and algebraic computation  - SYMSAC '76	proceedings-article
+26	10.1080/13698030701466820	2007	10.1080/13698030701466820	An exploration of mothers’ experience of infant observation	Infant Observation	journal-article
+27	10.22215/etd/2026-17152	None	10.22215/etd/2026-17152	Predictive Coding Meets Symbolic Cognition: A Framework for Modality-Guided Visual Imagination		dissertation
+28	10.1017/jsl.2025.30	2025	10.1017/jsl.2025.30	COMPUTABLE TYPE OF CERTAIN QUOTIENT SPACES	The Journal of Symbolic Logic	journal-article
+29	10.1021/jacs.3c11306.s002	None	10.1021/jacs.3c11306.s002	Cheminformatics-Guided Cell-Free Exploration of Peptide Natural Products		component
+30	10.1021/jacs.3c11306.s001	None	10.1021/jacs.3c11306.s001	Cheminformatics-Guided Cell-Free Exploration of Peptide Natural Products		component
+31	10.1525/si.1988.11.1.85	1988	10.1525/si.1988.11.1.85	THE MOVIES AND SOCIAL OBSERVATION: READING BLUMER'S <i>MOVIES AND CONDUCT</i>	Symbolic Interaction	journal-article
+32	10.70675/59879a08z30e0z46f3z9a68za368eeeaba57	None	10.70675/59879a08z30e0z46f3z9a68za368eeeaba57	Neural bases of variable binding in symbolic representations : experimental and modelling exploration		dissertation
+33	10.1002/symb.197	2015	10.1002/symb.197	Toward the Exploration of the Situated Order of Video Practices	Symbolic Interaction	journal-article
+34	10.17760/d20791816	None	10.17760/d20791816	Guided visual exploration of classification and regression models		dissertation
+35	10.2178/jsl/1230396922	2008	10.2178/jsl/1230396922	Borel complexity of isomorphism between quotient Boolean algebras	Journal of Symbolic Logic	journal-article
+36	10.53593/n3311a	2020	10.53593/n3311a	Using self-guided data exploration in Excel		report
+37	10.1007/s11227-025-07132-x	2025	10.1007/s11227-025-07132-x	SPINEX-symbolic regression: similarity-based symbolic regression with explainable neighbors exploration	The Journal of Supercomputing	journal-article
+38	10.1017/cbo9780511735431.010	1983	10.1017/cbo9780511735431.010	Appendix: The festivals	Symbolic Structures	other
+39	10.4324/9781410601728	2000	10.4324/9781410601728	To Dance the Dance		book
+40	10.1179/003103210x12599211960366	2010	10.1179/003103210x12599211960366	Middle Bronze Age Ramparts: Functional and Symbolic Structures	Palestine Exploration Quarterly	journal-article
+41	10.2139/ssrn.4908526	2024	10.2139/ssrn.4908526	Small Satellites: Revolutionizing Space Exploration and Earth Observation		posted-content
+42	10.2178/jsl/1058448449	2003	10.2178/jsl/1058448449	Elementary properties of the Boolean hull and reduced quotient functors	Journal of Symbolic Logic	journal-article
+43	10.2139/ssrn.6579998	2026	10.2139/ssrn.6579998	Lightweight Neuro-Symbolic Framework for Tabular Data Classification Using Rule-Guided Machine Learning		posted-content
+44	10.1016/j.jsc.2020.04.003	2021	10.1016/j.jsc.2020.04.003	A multi-computational exploration of some games of pure chance	Journal of Symbolic Computation	journal-article
+45	10.22215/etd/2020-13898	None	10.22215/etd/2020-13898	Semantics-Guided Exploration of Latent Spaces for Shape Synthesis		dissertation
+46	10.1109/lra.2024.3445634/mm1	None	10.1109/lra.2024.3445634/mm1	Neural Observation Field Guided Hybrid Optimization of Camera Placement_supp1-3445634.mp4		component
+47	10.2307/2586786	1999	10.2307/2586786	Friedberg splittings in Σ<sub>3</sub><sup>0</sup> quotient lattices of	Journal of Symbolic Logic	journal-article
+48	10.70675/991bfc58zef05z4a1cza701z586e142ba758	None	10.70675/991bfc58zef05z4a1cza701z586e142ba758	Reliability-Guided Design Space Exploration for Safety-Critical Applications		dissertation
+49	10.1525/si.1981.4.2.157	1981	10.1525/si.1981.4.2.157	What George Mead Should Have Said: Exploration of a Problem of Interpretation*	Symbolic Interaction	journal-article
+50	10.31219/osf.io/jz6kg_v1	2025	10.31219/osf.io/jz6kg_v1	The Recursive Collapse Model: Symbolic Observation and the Energetics of Coherent Systems		posted-content
+51	10.21203/rs.3.rs-3311608/v1	None	10.21203/rs.3.rs-3311608/v1	BinaRena: a platform for human-guided binning and exploration of metagenomes		component
+52	10.1017/cbo9780511735431.011	1983	10.1017/cbo9780511735431.011	Notes	Symbolic Structures	book-chapter
+53	10.1021/acs.cgd.8b01509.s001	None	10.1021/acs.cgd.8b01509.s001	Structural Landscape-Guided Exploration of a New Polymorph of 4Nitrobenzoic Acid		component
+54	10.1017/cbo9780511735431.001	1983	10.1017/cbo9780511735431.001	Preface	Symbolic Structures	book-chapter
+55	10.1017/cbo9780511735431.012	1983	10.1017/cbo9780511735431.012	Bibliography	Symbolic Structures	book-chapter
+56	10.1093/oso/9780195098709.003.0008	1997	10.1093/oso/9780195098709.003.0008	Assembly Plan From Observation	Symbolic Visual Learning	book-chapter
+57	10.70675/eb3ca119z46c6z44c2zb8a4z75d2bd53def8	None	10.70675/eb3ca119z46c6z44c2zb8a4z75d2bd53def8	Efficient adaptation of reinforcement learning agents : from model-free exploration to symbolic world models		dissertation
+58	10.5194/egusphere-egu22-982	2022	10.5194/egusphere-egu22-982	One station observation system for Mars exploration		posted-content
+59	10.4324/9780203052945-12	2012	10.4324/9780203052945-12	Cultivation of Mental Skills Through Symbolic Forms	Interaction of Media, Cognition, and Learning	book-chapter
+60	10.1017/cbo9780511735431	1983	10.1017/cbo9780511735431	Symbolic Structures		monograph
+61	10.21275/sr25423123740	2025	10.21275/sr25423123740	Symbolic Connections between Homeopathic Remedies and Planetary Archetypes: A Theoretical Exploration	International Journal of Science and Research (IJSR)	journal-article
+62	10.1021/acssuschemeng.5c06927.s001	None	10.1021/acssuschemeng.5c06927.s001	From Optimization to Mechanism: Bayesian Optimization-Guided Exploration of pXylene Electro-oxidation		component
+63	10.33915/etd.12637	None	10.33915/etd.12637	Enhancing Robotic Exploration through Semantically-Guided Sampling Strategies		dissertation
+64	10.5194/egusphere-egu26-16584	2026	10.5194/egusphere-egu26-16584	Improving Cloud–Radiation Interaction Simulations with an Observation-Constrained Symbolic-Regression Cloud-Fraction Diagnostic		posted-content
+65	10.1021/acs.jctc.4c01401.s001	None	10.1021/acs.jctc.4c01401.s001	Chemical Reaction Networks from Scratch with Reaction Prediction and Kinetics-Guided Exploration		component
+66	10.1021/acs.jctc.4c00294.s001	None	10.1021/acs.jctc.4c00294.s001	Simulation-Guided Conformational Space Exploration to Assess Reactive Conformations of a Ribozyme		component
+67	10.2307/j.ctv1zqdv0b.36	2021	10.2307/j.ctv1zqdv0b.36	Appendix H:	Discovering Mars	book-chapter
+68	10.5220/0010295704150422	2021	10.5220/0010295704150422	Imaging Reality and Abstraction an Exploration of Natural and Symbolic Patterns	Proceedings of the 16th International Joint Conference on Computer Vision, Imaging and Computer Graphics Theory and Applications	proceedings-article
+69	10.1021/acs.organomet.8b00538.s001	None	10.1021/acs.organomet.8b00538.s001	Selective Continuous Flow Iodination Guided by Direct Spectroscopic Observation of Equilibrating Aryl Lithium Regioisomers		component
+70	10.5220/0014951800004094	2026	10.5220/0014951800004094	Learning-Guided Symbolic Solver Selection for Dynamic Multi-UAV Missions in Simulation	Proceedings of the 16th International Conference on Simulation and Modeling Methodologies, Technologies and Applications	proceedings-article
+71	10.1080/13698030108401637	2001	10.1080/13698030108401637	Emerging personalities: An exploration of projective processes	Infant Observation	journal-article
+72	10.2307/j.ctv1zqdv0b.23	2021	10.2307/j.ctv1zqdv0b.23	[Illustrations]	Discovering Mars	book-chapter
+73	10.2139/ssrn.5182163	2025	10.2139/ssrn.5182163	A Platform for Human-Guided Symbolic Learning		posted-content
+74	10.1145/3666000.3669679	2024	10.1145/3666000.3669679	New Bounds on Quotient Polynomials with Applications to Exact Division and Divisibility Testing of Sparse Polynomials	Proceedings of the 2024 International Symposium on Symbolic and Algebraic Computation	proceedings-article
+75	10.1017/s1755020321000538	2023	10.1017/s1755020321000538	SZEMERÉDI’S THEOREM: AN EXPLORATION OF IMPURITY, EXPLANATION, AND CONTENT	The Review of Symbolic Logic	journal-article
+76	10.1109/tit.2007.915972	2008	10.1109/tit.2007.915972	Guided Scrambling Polynomials for Periodic Quotient Relationship Patterns	IEEE Transactions on Information Theory	journal-article
+77	10.1021/jacs.5c16333.s001	None	10.1021/jacs.5c16333.s001	Deep Learning Guided Exploration of Transition Metal Oxide Catalysts in Acetylene Selective Hydrogenation		component
+78	10.1021/acschembio.1c00157.s001	None	10.1021/acschembio.1c00157.s001	Synthase-Selective Exploration of a Tunicate Microbiome by Activity-Guided Single-Cell Genomics		component
+79	10.4324/9781410601728-11	2000	10.4324/9781410601728-11	Sexual Aggression in Dating	To Dance the Dance	book-chapter
+80	10.31274/etd-20200624-8	None	10.31274/etd-20200624-8	A qualitative exploration of female Harley-Davidson apparel wearer's symbolic expression of identities through dress		dissertation
+81	10.1021/acschembio.1c00157.s002	None	10.1021/acschembio.1c00157.s002	Synthase-Selective Exploration of a Tunicate Microbiome by Activity-Guided Single-Cell Genomics		component
+82	10.47191/ijmcr/v13i10.17	2025	10.47191/ijmcr/v13i10.17	Exploration of Students’ Mathematical Ability Level: A Review of Adversity Quotient Types	International Journal of Mathematics And Computer Research	journal-article
+83	10.1017/cbo9780511735431.002	1983	10.1017/cbo9780511735431.002	The ethnographic background	Symbolic Structures	book-chapter
+84	10.1109/synasc.2012.18	2012	10.1109/synasc.2012.18	Symbolic State Space Exploration of RT Systems in the Cloud	2012 14th International Symposium on Symbolic and Numeric Algorithms for Scientific Computing	proceedings-article
+85	10.1179/003103212x13177220555523	2012	10.1179/003103212x13177220555523	THE SYMBOLIC AND SOCIAL MEANINGS OF THE INTERMEDIATE BRONZE AGE COPPER DAGGERS	Palestine Exploration Quarterly	journal-article
+86	10.1017/cbo9780511735431.006	1983	10.1017/cbo9780511735431.006	Water and fertility	Symbolic Structures	book-chapter
+87	10.4324/9781410601728-13	2000	10.4324/9781410601728-13	Last Steps: Concluding Remarks	To Dance the Dance	book-chapter
+88	10.2307/j.ctv1zqdv0b.25	2021	10.2307/j.ctv1zqdv0b.25	Shooting the Moon(s):	Discovering Mars	book-chapter
+89	10.1080/13698036.2011.583429	2011	10.1080/13698036.2011.583429	‘Containing the container’: an exploration of the mother–midwife relationship	Infant Observation	journal-article
+90	10.1115/1.860045_ch114	2012	10.1115/1.860045_ch114	HOE: Hot-Guided Symbolic Execution	International Conference on Advanced Computer Theory and Engineering, 5th (ICACTE 2012)	book-chapter
+91	10.1061/9780784416044.ch02	2022	10.1061/9780784416044.ch02	Exploration and Sampling Methods	Geotechnical Testing, Observation, and Documentation	book-chapter
+92	10.1006/jsco.2002.0550	2002	10.1006/jsco.2002.0550	Comparing Approaches to the Exploration of the Domain of Residue Classes	Journal of Symbolic Computation	journal-article
+93	10.1039/d6dd00294c/v1/review1	2026	10.1039/d6dd00294c/v1/review1	"Review for ""Efficient and Scalable Expansion of Property Limits via Novelty-Guided Exploration"""		peer-review
+94	10.1145/2828959.2828966	2015	10.1145/2828959.2828966	An exploration of error quotient in multiple contexts	Proceedings of the 15th Koli Calling Conference on Computing Education Research	proceedings-article
+95	10.1039/d6dd00294c/v2/review1	2026	10.1039/d6dd00294c/v2/review1	"Review for ""Efficient and Scalable Expansion of Property Limits via Novelty-Guided Exploration"""		peer-review
+96	10.1039/d6dd00294c/v2/review2	2026	10.1039/d6dd00294c/v2/review2	"Review for ""Efficient and Scalable Expansion of Property Limits via Novelty-Guided Exploration"""		peer-review
+97	10.61686/wvpme91329	None	10.61686/wvpme91329			grant
+98	10.1021/acs.jmedchem.0c01272.s002	None	10.1021/acs.jmedchem.0c01272.s002	[1,2,4]Triazolo[1,5a]pyrimidine Phosphodiesterase 2A Inhibitors: Structure and Free-Energy Perturbation-Guided Exploration		component
+99	10.4324/9781410601728-7	2000	10.4324/9781410601728-7	The Sexuality of Early Adolescence	To Dance the Dance	book-chapter
+100	10.1021/acs.jmedchem.0c01272.s003	None	10.1021/acs.jmedchem.0c01272.s003	[1,2,4]Triazolo[1,5a]pyrimidine Phosphodiesterase 2A Inhibitors: Structure and Free-Energy Perturbation-Guided Exploration		component

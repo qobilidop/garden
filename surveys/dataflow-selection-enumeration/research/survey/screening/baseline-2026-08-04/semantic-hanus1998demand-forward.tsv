@@ -1,0 +1,5 @@
+rank	source_id	year	doi	title	venue	type
+1	dc996ed9c17b643d2ce8444350ebf50e672743eb	2012		Implementing Functional Logic Programs by Translation into Purely Functional Programs		
+2	9e595813d6af14cdb30f7f6327cf9886c0a5623c	2008	10.1007/978-3-642-24452-0_2	From Functional Logic Programs to Purely Functional Programs Preserving Laziness	International Symposium on Implementation and Application of Functional Languages	JournalArticle
+3	855f6135cae8daa88a7296f525deaeb87c4a4ee9	2007		Property Directed Generation of First-Order Test Data	Symposium on Trends in Functional Programming	JournalArticle
+4	12f9380ecebc588f76bca831ade133f9eb313561	2007	10.1016/j.entcs.2007.09.018	Higher-Order Proof Construction Based on First-Order Narrowing	LFMTP@CADE	JournalArticle

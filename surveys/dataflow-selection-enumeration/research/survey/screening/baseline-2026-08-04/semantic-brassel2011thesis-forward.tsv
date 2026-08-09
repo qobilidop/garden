@@ -1,0 +1,18 @@
+rank	source_id	year	doi	title	venue	type
+1	66112b536741c937e18dab3351cbd51c45bf88d6	2025	10.4204/EPTCS.421.7	An Execution Model for RICE	Workshop on Logical and Semantic Frameworks with Applications	JournalArticle
+2	aa937cce29b709ac2b95fc53df8e13cd31b67ad4	2023	10.1145/3591241	Defunctionalization with Dependent Types	Proc. ACM Program. Lang.	JournalArticle
+3	456795745a14c045ebe01944b18a8851d0d65f42	2019	10.1007/978-3-030-05998-9_6	Improving Residuation in Declarative Programs	International Symposium on Practical Aspects of Declarative Languages	JournalArticle
+4	60ced889a0144efabe5564440f5b5637311bb810	2018	10.1145/3236950.3236957	Verifying Fail-Free Declarative Programs	ACM-SIGPLAN International Conference on Principles and Practice of Declarative Programming	Book
+5	e2120cb78771dca82fefca5a1c892d952c7534eb	2018		Making Bubbling Practical	arXiv.org	JournalArticle
+6	b6fd6ae1af0d9e91f7a509696d722842f13699ae	2017	10.3233/FI-2020-1925	Combining Static and Dynamic Contract Checking for Curry	International Workshop/Symposium on Logic-based Program Synthesis and Transformation	JournalArticle
+7	9a13c73b27bb830ff0b29445aac51d78995d8f76	2017		Normalization and Partial Evaluation of Functional Logic Programs		
+8	ee44cf736b71cb4859fba8f869c602dab95693da	2013	10.1007/978-3-319-14125-1_12	Compiling a Functional Logic Language: The Fair Scheme	International Workshop/Symposium on Logic-based Program Synthesis and Transformation	JournalArticle
+9	8d3b7e3d120c39feb70d9a890457945c9a2f4784	2013	10.1145/2505879.2505896	A semantics for weakly encapsulated search in functional logic programs	ACM-SIGPLAN International Conference on Principles and Practice of Declarative Programming	JournalArticle
+10	7f9e1f99f01557d9f77a5507f075cad3e76086e2	2012	10.1007/978-3-642-29822-6_5	Compiling a Functional Logic Language: The Basic Scheme	Fuji International Symposium on Functional and Logic Programming	JournalArticle
+11	8615805892333dab0cbb317bf4749f04d3c4f199	2011	10.1007/978-3-642-45284-0_9	Implementing Equational Constraints in a Functional Language	International Symposium on Practical Aspects of Declarative Languages	JournalArticle
+12	3747c4b08ab574c641e3713784f8d0a3ddef9529	2011	10.1007/978-3-642-22531-4_1	KiCS2: A New Compiler from Curry to Haskell	Workshop on Functional and Constraint Logic Programming	JournalArticle
+13	801c96bb86a4b1577c06b89625a926dd45a3e3cf	2011	10.1017/S1471068411000263	On the correctness of pull-tabbing	Theory and Practice of Logic Programming	JournalArticle
+14	d89925d1fd57ab3ae7d8435de4bd3bd6a1a3b732	2018		2 4 A ug 2 01 8 Making Bubbling Practical		
+15	782074e7913a966dce36c5bec571ca8a5d6a0e9b	2014		A Partial Evaluator for Curry	WLP/WFLP	JournalArticle
+16	777de020e377896a61e0623cd1b8288dff6beeb3	2012	10.15760/ETD.914	The Basic Scheme for the Evaluation of Functional Logic Programs		
+17	d1d56b1c5f63a8df851f987bc99a8de9a0ba4144	2012	10.4230/LIPIcs.ICLP.2012.130	Improving Lazy Non-Deterministic Computations by Demand Analysis	International Conference on Logic Programming	JournalArticle

@@ -1,0 +1,20 @@
+rank	openalex_id	year	doi	title	venue	type
+1	W1497028280	2008	https://doi.org/10.1007/978-3-540-78800-3_27	RWset: Attacking Path Explosion in Constraint-Based Test Generation	Lecture notes in computer science	conference-paper
+2	W1586497944	2010	https://doi.org/10.1007/978-3-642-14295-6_10	Lazy Annotation for Program Testing and Verification	Lecture notes in computer science	conference-paper
+3	W1777881387	2007	https://doi.org/10.1007/978-3-540-71209-1_12	JPF–SE: A Symbolic Execution Extension to Java PathFinder	Lecture notes in computer science	conference-paper
+4	W1967031800	1998	https://doi.org/10.1145/268946.268950	Data flow analysis is model checking of abstract interpretations		conference-paper
+5	W2001601301	2011	https://doi.org/10.1145/2025113.2025152	Path exploration based on symbolic output		conference-paper
+6	W2008812751	2010	https://doi.org/10.1145/1831708.1831733	Exploiting program dependencies for scalable multiple-path symbolic execution		conference-paper
+7	W2012997183	2006	https://doi.org/10.1145/1146238.1146243	Test input generation for java containers using state matching		conference-paper
+8	W2024795941	1994	https://doi.org/10.1145/193173.195402	Performing data flow testing on classes		conference-paper
+9	W2042465741	2007	https://doi.org/10.1145/1273463.1273478	Variably interprocedural program analysis for runtime error detection		conference-paper
+10	W2049707975	2008	https://doi.org/10.1109/fmcad.2008.ecp.23	Symbolic Program Analysis Using Term Rewriting and Generalization		conference-paper
+11	W2055489377	2010	https://doi.org/10.1109/tse.2010.49	Proofs from Tests	IEEE Transactions on Software Engineering	article
+12	W2082172430	2009	https://doi.org/10.1007/s10009-009-0118-1	A survey of new trends in symbolic execution for software testing and analysis	International Journal on Software Tools for Technology Transfer	article
+13	W2101512909	1976	https://doi.org/10.1145/360248.360252	Symbolic execution and program testing	Communications of the ACM	article
+14	W2121669067	1988	https://doi.org/10.1109/32.6194	An applicable family of data flow testing criteria	IEEE Transactions on Software Engineering	article
+15	W2126499694	2000	https://doi.org/10.1145/347324.348870	Automated Testing of Classes		conference-paper
+16	W2144344516	1987	https://doi.org/10.1145/24039.24041	The program dependence graph and its use in optimization	ACM Transactions on Programming Languages and Systems	article
+17	W2171469152	2008	https://doi.org/10.1007/978-3-540-78800-3_28	Demand-Driven Compositional Symbolic Execution	Lecture notes in computer science	conference-paper
+18	W4237492309	2005	https://doi.org/10.1145/1065010.1065036	DART		conference-paper
+19	W4246385123	2007	https://doi.org/10.1145/1190216.1190226	Compositional dynamic test generation		conference-paper

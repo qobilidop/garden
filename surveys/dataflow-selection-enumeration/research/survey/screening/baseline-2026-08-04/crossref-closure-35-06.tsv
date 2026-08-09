@@ -1,0 +1,102 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1007/3-540-63166-6_33	1997	10.1007/3-540-63166-6_33	Relaxed visibility enhances partial order reduction	Lecture Notes in Computer Science	book-chapter
+2	10.1023/a:1011202615884	2001	10.1023/a:1011202615884	Relaxed Visibility Enhances Partial Order Reduction	Formal Methods in System Design	journal-article
+3	10.1145/2813885.2737956	2015	10.1145/2813885.2737956	Dynamic partial order reduction for relaxed memory models	ACM SIGPLAN Notices	journal-article
+4	10.1145/2737924.2737956	2015	10.1145/2737924.2737956	Dynamic partial order reduction for relaxed memory models	Proceedings of the 36th ACM SIGPLAN Conference on Programming Language Design and Implementation	proceedings-article
+5	10.1007/s42985-021-00123-6	2021	10.1007/s42985-021-00123-6	The unique continuation property for second order evolution PDEs	Partial Differential Equations and Applications	journal-article
+6	10.1080/03605302.2015.1025980	2015	10.1080/03605302.2015.1025980	Doubling Property and Vanishing Order of Steklov Eigenfunctions	Communications in Partial Differential Equations	journal-article
+7	10.3390/e18100347	2016	10.3390/e18100347	Boltzmann Complexity: An Emergent Property of the Majorization Partial Order	Entropy	journal-article
+8	10.7554/elife.00031.004	None	10.7554/elife.00031.004	Figure 2. Visibility conditions.		component
+9	10.70675/532b2830ze66cz49fez91eczed67fd0a6176	None	10.70675/532b2830ze66cz49fez91eczed67fd0a6176	A study on the visibility property of Kobayashi geodesics		dissertation
+10	10.1007/s42985-025-00339-w	2025	10.1007/s42985-025-00339-w	Correction to “The unique continuation property for second order evolution PDEs” [Partial Differ. Equ. Appl. 2, 67 (2021), 46 p] with additional comments	Partial Differential Equations and Applications	journal-article
+11	10.1109/iccsa.2007.1	2007	10.1109/iccsa.2007.1	3D Visibility and Partial Visibility Complex	2007 International Conference on Computational Science and its Applications (ICCSA 2007)	proceedings-article
+12	10.23919/ecc.2003.7086498	2003	10.23919/ecc.2003.7086498	A relaxed criterion for contraction theory: Application to an underwater vehicle observer	2003 European Control Conference (ECC)	proceedings-article
+13	10.1109/icsc58660.2023.10449817	2023	10.1109/icsc58660.2023.10449817	Reduced-Order Observer Design for Time-Delay Systems Using Partial Pole Placement	2023 IEEE 11th International Conference on Systems and Control (ICSC)	proceedings-article
+14	10.1109/robio.2005.246258	2005	10.1109/robio.2005.246258	Adaptive and relaxed visibility-based PRM	2005 IEEE International Conference on Robotics and Biomimetics - ROBIO	proceedings-article
+15	10.1007/s11083-011-9217-1	2012	10.1007/s11083-011-9217-1	Complete Multipartite Graphs and the Relaxed Coloring Game	Order	journal-article
+16	10.1109/iccsa.2007.82	2007	10.1109/iccsa.2007.82	3D Visibility and Partial Visibility Complex	2007 International Conference on Computational Science and its Applications (ICCSA 2007)	proceedings-article
+17	10.1007/978-981-97-1654-8_5	2024	10.1007/978-981-97-1654-8_5	Variable-Order Observer-Based Fault Tolerant Control for Aircraft with Partial Actuator and Sensor Failures	Fault Tolerant Control of Large Civil Aircraft	book-chapter
+18	10.1016/j.sigpro.2014.03.036	2014	10.1016/j.sigpro.2014.03.036	Relaxed observer design of discrete-time T–S fuzzy systems via a novel multi-instant fuzzy observer	Signal Processing	journal-article
+19	10.6028/nbs.tn.1180	1983	10.6028/nbs.tn.1180	Size of letters required for visibility as a function of viewing distance and observer visual acuity		report
+20	10.1002/9781118387726.ch13	2012	10.1002/9781118387726.ch13	Fractional Order Disturbance Observer	Fractional Order Motion Controls	other
+21	10.1109/csicc.2009.5349323	2009	10.1109/csicc.2009.5349323	Visibility of a moving segment observer	2009 14th International CSI Computer Conference	proceedings-article
+22	10.1016/j.crma.2011.11.016	2011	10.1016/j.crma.2011.11.016	A Note on the Bernstein property of a fourth order complex partial differential equations	Comptes Rendus. Mathématique	journal-article
+23	10.1117/3.866274.ch8	None	10.1117/3.866274.ch8	Relaxed Sampling Constraints with Partial Propagations	Numerical Simulation of Optical Wave Propagation with Examples in MATLAB	book-chapter
+24	10.7153/jmi-2023-17-35	2023	10.7153/jmi-2023-17-35	A new partial order based on core partial order and star partial order	Journal of Mathematical Inequalities	journal-article
+25	10.1063/1.4810178	2013	10.1063/1.4810178	Relaxed structural property of Al nano-cluster: Theory	AIP Conference Proceedings	proceedings-article
+26	10.1007/springerreference_62608	None	10.1007/springerreference_62608	Partial Order	SpringerReference	reference-entry
+27	10.1007/s00025-009-0387-8	2009	10.1007/s00025-009-0387-8	A Bernstein Property of Some Fourth Order Partial Differential Equations	Results in Mathematics	journal-article
+28	10.2307/3033483	1977	10.2307/3033483	Observer Visibility and Comfort in a Surveillance Situation	Sociometry	journal-article
+29	10.1007/s40304-024-00408-3	2024	10.1007/s40304-024-00408-3	Finite Groups with Some Subgroups of Prime Power Order Satisfying the Partial $$ \Pi $$-property	Communications in Mathematics and Statistics	journal-article
+30	10.1007/s00526-018-1324-z	2018	10.1007/s00526-018-1324-z	Order property and modulus of continuity of weak KAM solutions	Calculus of Variations and Partial Differential Equations	journal-article
+31	10.1108/03684920010333198	2000	10.1108/03684920010333198	Observer or self‐observer in second‐order cybernetics?	Kybernetes	journal-article
+32	10.1109/ccdc.2017.7978778	2017	10.1109/ccdc.2017.7978778	Relaxed fuzzy observer-based output feedback control with multilateral matrix method	2017 29th Chinese Control And Decision Conference (CCDC)	proceedings-article
+33	10.1002/rnc.1377	2009	10.1002/rnc.1377	Observer‐based control of block‐triangular discrete time hybrid automata on a partial order	International Journal of Robust and Nonlinear Control	journal-article
+34	10.1016/j.chaos.2023.113666	2023	10.1016/j.chaos.2023.113666	Decentralized observer-based control for interconnected fractional-order stochastic systems under input saturation using partial state variables	Chaos, Solitons &amp; Fractals	journal-article
+35	10.70675/5d30a84dzdaf5z43d3z962az463b11989817	None	10.70675/5d30a84dzdaf5z43d3z962az463b11989817	Adaptive observer and control design of different classes ofcoupled partial differential equations		dissertation
+36	10.1016/j.ipl.2007.11.015	2008	10.1016/j.ipl.2007.11.015	Ant colony optimization with partial order reduction for discovering safety property violations in concurrent models	Information Processing Letters	journal-article
+37	10.1007/s00025-010-0030-8	2010	10.1007/s00025-010-0030-8	A Bernstein Property of a Class of Fourth Order Complex Partial Differential Equations	Results in Mathematics	journal-article
+38	10.1007/s11083-014-9336-6	2015	10.1007/s11083-014-9336-6	The Relaxed Edge-Coloring Game and k-Degenerate Graphs	Order	journal-article
+39	10.1007/978-1-4613-1881-1_8	1987	10.1007/978-1-4613-1881-1_8	On the Relaxed Consecutive Retrieval Property in File Organization	Foundations of Data Organization	book-chapter
+40	10.1115/1.861rac_ch3	2018	10.1115/1.861rac_ch3	Fractional-Order PID Controller and Fractional-Order Disturbance Observer	Robust Adaptive Control for Fractional-Order Systems with Disturbance and Saturation	book-chapter
+41	10.3390/drones8110679	2024	10.3390/drones8110679	High-Order Disturbance Observer-Based Fuzzy Fixed-Time Safe Tracking Control for Uncertain Unmanned Helicopter with Partial State Constraints and Multisource Disturbances	Drones	journal-article
+42	10.1007/s11083-009-9126-8	2009	10.1007/s11083-009-9126-8	The Partial Ordering on the Automorphism Group of the Countable Generic Partial Order	Order	journal-article
+43	10.1016/j.ifacol.2019.12.637	2019	10.1016/j.ifacol.2019.12.637	Adaptive Relaxed Fuzzy-observer Output Feedback Control: Further Findings and Synthesis	IFAC-PapersOnLine	journal-article
+44	10.23919/ecc54610.2021.9654955	2021	10.23919/ecc54610.2021.9654955	Flux Observer for the Levitated Ball with Relaxed Excitation Conditions	2021 European Control Conference (ECC)	proceedings-article
+45	10.1109/sled.2011.6051555	2011	10.1109/sled.2011.6051555	A comparison of an adaptive full-order observer and a reduced-order observer for synchronous reluctance motor drives	2011 Symposium on Sensorless Control for Electrical Drives	proceedings-article
+46	10.23919/ecc65951.2025.11187243	2025	10.23919/ecc65951.2025.11187243	Distributed Unknown Input Observer Design with Relaxed Conditions: Theory and Application to Vehicle Platooning	2025 European Control Conference (ECC)	proceedings-article
+47	10.1109/aces.2014.6808018	2014	10.1109/aces.2014.6808018	A comparative study between Luenberger full order observer and full order observer designed by generalized matrix inverse method	2014 First International Conference on Automation, Control, Energy and Systems (ACES)	proceedings-article
+48	10.1201/9781003071877-5	2020	10.1201/9781003071877-5	A Hybrid Relaxed-Lagrangian Second Order Condition for Minimum	Differential Games and Control Theory III	book-chapter
+49	10.1007/s42985-023-00259-7	2023	10.1007/s42985-023-00259-7	A damped Kačanov scheme for the numerical solution of a relaxed p(x)-Poisson equation	Partial Differential Equations and Applications	journal-article
+50	10.1002/9781119393351.ch3	2017	10.1002/9781119393351.ch3	Fractional‐Order PID Controller and Fractional‐Order Disturbance Observer	Robust Adaptive Control for Fractional‐Order Systems with Disturbance and Saturation	other
+51	10.1142/9789814390385_0002	2012	10.1142/9789814390385_0002	Partial Differential Equations of First Order	Partial Differential Equations of First Order and Their Applications to Physics	book-chapter
+52	10.3390/math10122055	2022	10.3390/math10122055	Relaxed Observer-Based H∞-Control for Markov Jump Fuzzy Systems with Incomplete Transition Probabilities and Sensor Failures	Mathematics	journal-article
+53	10.1007/s00025-010-0046-0	2010	10.1007/s00025-010-0046-0	Erratum to: A Bernstein Property of a Class of Fourth Order Complex Partial Differential Equations	Results in Mathematics	journal-article
+54	10.21236/ada187430	1987	10.21236/ada187430	On Observer Problems for Systems Governed by Partial Differential Equations		report
+55	10.1142/9789812815699_0002	1999	10.1142/9789812815699_0002	Partial Differential Equations of First Order	Partial Differential Equations of First Order and Their Applications to Physics	book-chapter
+56	10.1016/j.ejcon.2023.100801	2023	10.1016/j.ejcon.2023.100801	Parametric design method for partial eigenstructure assignment of second-order linear systems via observer-based state feedback	European Journal of Control	journal-article
+57	10.1142/9789812815699_0004	1999	10.1142/9789812815699_0004	Nonlinear Partial Differential Equations of First Order	Partial Differential Equations of First Order and Their Applications to Physics	book-chapter
+58	10.1109/cdc.2007.4434386	2007	10.1109/cdc.2007.4434386	Observer based fuzzy-control design using relaxed LMI conditions	2007 46th IEEE Conference on Decision and Control	proceedings-article
+59	10.1142/9789814390385_0004	2012	10.1142/9789814390385_0004	Nonlinear Partial Differential Equations of First Order	Partial Differential Equations of First Order and Their Applications to Physics	book-chapter
+60	10.1016/j.sysconle.2004.05.013	2004	10.1016/j.sysconle.2004.05.013	A relaxed condition for stability of nonlinear observer-based controllers	Systems &amp; Control Letters	journal-article
+61	10.48137/2074-2975_2021_8_5	2021	10.48137/2074-2975_2021_8_5	Crisis geopolitics and new world order: prospects of Russia	Nauchno-analiticheskii zhurnal Obozrevatel' - Observer	journal-article
+62	10.1109/fuzz62266.2025.11152229	2025	10.1109/fuzz62266.2025.11152229	Relaxed Conditions for Observer-Based Control of T-S Fuzzy System with Unmeasured Premise Variables	2025 IEEE International Conference on Fuzzy Systems (FUZZ)	proceedings-article
+63	10.1145/2345156.1993521	2012	10.1145/2345156.1993521	Partial-coherence abstractions for relaxed memory models	ACM SIGPLAN Notices	journal-article
+64	10.21136/mb.1997.126183	1997	10.21136/mb.1997.126183	Transitivity and partial order	Mathematica Bohemica	journal-article
+65	10.1007/s00009-024-02603-6	2024	10.1007/s00009-024-02603-6	On the Partial $$ \Pi $$-Property of Some Subgroups of Prime Power Order of Finite Groups	Mediterranean Journal of Mathematics	journal-article
+66	10.1515/9783110206753.21	None	10.1515/9783110206753.21	3 Linear Partial Differential Equations of the First Order	Elements of Partial Differential Equations	book-chapter
+67	10.31235/osf.io/4tyan	2022	10.31235/osf.io/4tyan	Non-Fungible Tokens (NFT) for Visibility and Intellectual Property Protection in the Nigerian Visual Art Industry		posted-content
+68	10.1142/9789811270895_0002	2023	10.1142/9789811270895_0002	Second-order Partial Differential Equations	Partial Differential Equations	book-chapter
+69	10.48137/2074-2975_2023_2_62	2023	10.48137/2074-2975_2023_2_62	Eurasia on track to meet the new world order	Nauchno-analiticheskii zhurnal Obozrevatel - Observer	journal-article
+70	10.1142/9789811270895_0001	2023	10.1142/9789811270895_0001	First-order Partial Differential Equations	Partial Differential Equations	book-chapter
+71	10.3724/sp.j.1004.2012.00288	2012	10.3724/sp.j.1004.2012.00288	High-order Terminal Sliding Mode Flux Observer for Induction Motors	Acta Automatica Sinica	journal-article
+72	10.1101/2023.09.07.556282	2023	10.1101/2023.09.07.556282	Partial Face Visibility and Facial Cognition: An Electroencephalography and Eye-Tracking Investigation		posted-content
+73	10.1080/03605302.2012.741177	2013	10.1080/03605302.2012.741177	On the Existence of Solutions for Fully Nonlinear Elliptic Equations Under Relaxed Convexity Assumptions	Communications in Partial Differential Equations	journal-article
+74	10.12958/adm2434	2026	10.12958/adm2434	Natural partial order on semigroups of partial transformations with invariant set	Algebra and Discrete Mathematics	journal-article
+75	10.2977/prims/1195143361	1999	10.2977/prims/1195143361	Divergence Property of Formal Solutions for Singular First Order Linear Partial Differential Equations	Publications of the Research Institute for Mathematical Sciences	journal-article
+76	10.1016/j.jprocont.2010.06.021	2010	10.1016/j.jprocont.2010.06.021	Full-order observer-based actuator fault detection and reduced-order observer-based fault reconstruction for a class of uncertain nonlinear systems	Journal of Process Control	journal-article
+77	10.5220/0005959704260432	2016	10.5220/0005959704260432	A Reduced Order Steering State Observer for Automated Steering Control Functions	Proceedings of the 13th International Conference on Informatics in Control, Automation and Robotics	proceedings-article
+78	10.1016/j.ifacol.2022.07.330	2022	10.1016/j.ifacol.2022.07.330	Adaptive observer design for time-varying systems with relaxed excitation conditions*	IFAC-PapersOnLine	journal-article
+79	10.1201/9781003762355-2	2026	10.1201/9781003762355-2	First Order Partial Differential Equations	Partial Differential Equations	book-chapter
+80	10.1016/j.isatra.2015.07.001	2015	10.1016/j.isatra.2015.07.001	Relaxed observer design of discrete-time T–S fuzzy systems via a novel slack variable approach	ISA Transactions	journal-article
+81	10.1007/3-540-33970-1_4	None	10.1007/3-540-33970-1_4	Introduction to partial order theory exemplified by the Evaluation of Sampling Sites	Partial Order in Environmental Sciences and Chemistry	book-chapter
+82	10.1109/ascc.2017.8287499	2017	10.1109/ascc.2017.8287499	Fractional-order observer for integer-order LTI systems	2017 11th Asian Control Conference (ASCC)	proceedings-article
+83	10.1109/icsyse.1991.161167	1991	10.1109/icsyse.1991.161167	Optimal reduced-order observer-estimators	IEEE International Conference on Systems Engineering	proceedings-article
+84	10.1109/aic61668.2024.10730951	2024	10.1109/aic61668.2024.10730951	Order Visibility: Supply chain order milestone prediction	2024 IEEE 3rd World Conference on Applied Intelligence and Computing (AIC)	proceedings-article
+85	10.2139/ssrn.6766778	2026	10.2139/ssrn.6766778	Partial Observers in Quantum Causal Chains: A Formal Framework for Cascaded Observer Uncertainty		posted-content
+86	10.1016/s0893-9659(03)00084-3	2003	10.1016/s0893-9659(03)00084-3	Partial relaxed monotonicity and general auxiliary problem principle with applications	Applied Mathematics Letters	journal-article
+87	10.1016/j.jmaa.2017.11.001	2018	10.1016/j.jmaa.2017.11.001	A Bernstein property of certain types of fourth order partial differential equations	Journal of Mathematical Analysis and Applications	journal-article
+88	10.2307/j.ctv32r03gt.115	2023	10.2307/j.ctv32r03gt.115	Partial Visibility:	The American Sonnet	book-chapter
+89	10.1002/cplx.21775	2016	10.1002/cplx.21775	Relaxed fuzzy observer‐based output feedback control synthesis of discrete‐time nonlinear control systems	Complexity	journal-article
+90	10.1142/9789812815699_0006	1999	10.1142/9789812815699_0006	Characteristic Surfaces of Linear Partial Differential Equation of Second Order	Partial Differential Equations of First Order and Their Applications to Physics	book-chapter
+91	10.1017/9781108642217.009	2021	10.1017/9781108642217.009	Are Property Rights a Cause or Consequence of Political Order?	Land, the State, and War	book-chapter
+92	10.1007/bf02679618	2001	10.1007/bf02679618	Partial match queries in relaxed multidimensional search trees	Algorithmica	journal-article
+93	10.1142/9789814390385_0006	2012	10.1142/9789814390385_0006	Characteristic Surfaces of Linear Partial Differential Equation of Second Order	Partial Differential Equations of First Order and Their Applications to Physics	book-chapter
+94	10.1016/j.asoc.2016.04.028	2016	10.1016/j.asoc.2016.04.028	Relaxed observer design of discrete-time nonlinear systems via a novel ranking-based switching mechanism	Applied Soft Computing	journal-article
+95	10.1109/tia.2012.2226200	2012	10.1109/tia.2012.2226200	Comparison of a Reduced-Order Observer and a Full-Order Observer for Sensorless Synchronous Motor Drives	IEEE Transactions on Industry Applications	journal-article
+96	10.1017/cbo9780511569388.002	1975	10.1017/cbo9780511569388.002	Partial differential equations of the first order	Partial Differential Equations	book-chapter
+97	10.2139/ssrn.7107298	2026	10.2139/ssrn.7107298	"Reconceptualizing the Quantum Observer:&amp;nbsp;Information Responsiveness as a Universal Property
+&lt;br&gt;"		posted-content
+98	10.1007/978-3-642-30709-6_2	2013	10.1007/978-3-642-30709-6_2	Cone and Partial Order Methods	Developments in Mathematics	book-chapter
+99	10.1109/cgi.1998.694267	None	10.1109/cgi.1998.694267	Visibility as an intrinsic property of geometric models	Proceedings. Computer Graphics International (Cat. No.98EX149)	proceedings-article
+100	10.1007/978-3-319-45421-4_9	2017	10.1007/978-3-319-45421-4_9	Application of Partial Order Theory to Multidimensional Poverty Analysis in Switzerland	Partial Order Concepts in Applied Sciences	book-chapter

@@ -1,0 +1,101 @@
+rank	source_id	year	doi	title	venue	type
+1	10.21203/rs.3.rs-9430237/v1	2026	10.21203/rs.3.rs-9430237/v1	A Compositional Exact-Search Calculus over a Single Binary Primitive: Bounded Enumeration, Macro Closure, and Stability Audits for EML Trees		posted-content
+2	10.5817/cz.muni.eurocomb23-035	2023	10.5817/cz.muni.eurocomb23-035	Exact enumeration of graphs and bipartite graphs with degree constraints	Proceedings of the 12th European Conference on Combinatorics, Graph Theory and Applications	proceedings-article
+3	10.29172/c8a21c51-a881-4efa-bcbe-3d0377b1a631	None	10.29172/c8a21c51-a881-4efa-bcbe-3d0377b1a631	Series expansions &amp; exact enumeration	Physics Subject Headings (PhySH)	dataset
+4	10.1017/cbo9780511605826.027	2000	10.1017/cbo9780511605826.027	Exact enumeration	Diffusion and Reactions in Fractals and Disordered Systems	other
+5	10.1515/sagmb-2013-0084	2014	10.1515/sagmb-2013-0084	Robust methods to detect disease-genotype association in genetic association studies: calculate p-values using exact conditional enumeration instead of simulated permutations or asymptotic approximations	Statistical Applications in Genetics and Molecular Biology	journal-article
+6	10.5821/dissertation-2117-107956	None	10.5821/dissertation-2117-107956	Graph enumeration and random graphs		dissertation
+7	10.1201/b15899-14	2016	10.1201/b15899-14	Graph Enumeration	Combinatorial Methods with Computer Applications	book-chapter
+8	10.70675/5b855781z7162z4371z9dc4z68ce3612d035	None	10.70675/5b855781z7162z4371z9dc4z68ce3612d035	Efficient enumeration algorithms for minimal graph completions and deletions		dissertation
+9	10.1090/spec/108/07	2025	10.1090/spec/108/07	Graph enumeration and probability	Spectrum	book-chapter
+10	10.1201/9781315139111-15	2018	10.1201/9781315139111-15	Enumeration of Kekule Valence Structures	Chemical Graph Theory	book-chapter
+11	10.1017/cbo9780511721649.005	2008	10.1017/cbo9780511721649.005	Cut Enumeration	Algorithmic Aspects of Graph Connectivity	book-chapter
+12	10.21236/ada282914	1994	10.21236/ada282914	Conditional Graph Completions		report
+13	10.1093/oso/9780198514978.003.0002	1997	10.1093/oso/9780198514978.003.0002	Enumeration	Graph Connections	book-chapter
+14	10.1515/9783112480588-005	1988	10.1515/9783112480588-005	13. Appropriate state enumeration	Multivariable Control	book-chapter
+15	10.1002/(sici)1097-0118(199610)23:2<105::aid-jgt1>3.3.co;2-s	1996	10.1002/(sici)1097-0118(199610)23:2<105::aid-jgt1>3.3.co;2-s	Enumeration of connected graph coverings	Journal of Graph Theory	journal-article
+16	10.1201/9781315139111-18	2018	10.1201/9781315139111-18	Isomer Enumeration I. The Cayley Generating Functions	Chemical Graph Theory	book-chapter
+17	10.1007/11847250_13	2006	10.1007/11847250_13	edge dominating set: Efficient Enumeration-Based Exact Algorithms	Lecture Notes in Computer Science	book-chapter
+18	10.1201/9781420036190-12	2005	10.1201/9781420036190-12	Elements of Conditional Analysis	Exact Analysis of Discrete Data	book-chapter
+19	10.7717/peerj-cs.2717/table-2	None	10.7717/peerj-cs.2717/table-2	Table 2: Comparison of nodes and edges between event graph (EG) and Periodic Event Graph (PEG) with residual nodes, classified as simple residual nodes (SR) or periodic residual nodes (PR), leading to various event graph variations.		component
+20	10.1002/(sici)1097-0118(199610)23:2<105::aid-jgt1>3.0.co;2-x	1996	10.1002/(sici)1097-0118(199610)23:2<105::aid-jgt1>3.0.co;2-x	Enumeration of connected graph coverings	Journal of Graph Theory	journal-article
+21	10.2139/ssrn.5361306	2025	10.2139/ssrn.5361306	&lt;p&gt;Exact Enumeration of Composite Numbers Using Least Prime Factors&lt;/p&gt;		posted-content
+22	10.1115/1.0002036v	2021	10.1115/1.0002036v	Enhancements to the Perfect Matching Approach for Graph Enumeration-Based Engineering Challenges		posted-content
+23	10.1109/lra.2023.3286171/mm1	None	10.1109/lra.2023.3286171/mm1	Cascaded Compositional Residual Learning for Complex Interactive Behaviors_supp1-3286171.mp4		component
+24	10.2139/ssrn.6809313	2026	10.2139/ssrn.6809313	Conditional Optical Readout of a Residual ComplementarityCoordinate		posted-content
+25	10.1155/ijmm/1411005	2026	10.1155/ijmm/1411005	Exact Dominion of the Prism Graph: Enumeration by Congruence Class via Cyclic Words	International Journal of Mathematics and Mathematical Sciences	journal-article
+26	10.7151/dmgt.2246	2019	10.7151/dmgt.2246	Asymptotic enumeration of non-uniform linear hypergraphs	Discussiones Mathematicae Graph Theory	journal-article
+27	10.70675/25490d0ez8918z41b0z98d8zf136f421b746	None	10.70675/25490d0ez8918z41b0z98d8zf136f421b746	Enumeration Algorithms and Graph Theoretical Models to Address Biological Problems Related To Symbiosis		dissertation
+28	10.26434/chemrxiv.15002134/v2	2026	10.26434/chemrxiv.15002134/v2	Regular Gauge for the Exact Factorization Conditional State at Nonadiabatic Events		posted-content
+29	10.1017/cbo9781316271452.008	2016	10.1017/cbo9781316271452.008	Compositional methods II	The Graph Music of Morton Feldman	book-chapter
+30	10.70675/c88d3eefz09fdz478ez9d74z34a85f57bb16	None	10.70675/c88d3eefz09fdz478ez9d74z34a85f57bb16	On the Optimization of Recursive Plan Enumeration with an Application to Property Graph Queries		dissertation
+31	10.1002/9781119243496.ch11	2017	10.1002/9781119243496.ch11	Residual, conditional variance, and conditional covariance	Wiley Series in Probability and Statistics	other
+32	10.1007/978-3-031-22562-8_8	2023	10.1007/978-3-031-22562-8_8	Enumeration and Pölya’s Theorem	Advanced Graph Theory	book-chapter
+33	10.1142/9789813148857_0009	2016	10.1142/9789813148857_0009	Dots and Lines. The Origins of Graph Theory	A Walk Through Combinatorics	book-chapter
+34	10.1016/j.vlsi.2011.11.011	2012	10.1016/j.vlsi.2011.11.011	Exact custom instruction enumeration for extensible processors	Integration	journal-article
+35	10.1215/00127094-2024-0037	2025	10.1215/00127094-2024-0037	Exact enumeration of fullerenes	Duke Mathematical Journal	journal-article
+36	10.1142/9789814335249_0009	2011	10.1142/9789814335249_0009	Dots and Lines: The Origins of Graph Theory	A Walk Through Combinatorics	book-chapter
+37	10.1142/9789812773074_0009	2006	10.1142/9789812773074_0009	Dots and Lines: The Origins of Graph Theory	A Walk Through Combinatorics	book-chapter
+38	10.1201/9781420036190.ch5	2005	10.1201/9781420036190.ch5	Elements of Conditional Analysis	Exact Analysis of Discrete Data	book-chapter
+39	10.5070/c63261985	2023	10.5070/c63261985	Exact enumeration of satisfiable 2-SAT formulae	Combinatorial Theory	journal-article
+40	10.21203/rs.3.rs-8698448/v1	2026	10.21203/rs.3.rs-8698448/v1	Exact conditional inference in models for longitudinal designs		posted-content
+41	10.1007/978-981-96-7151-9_2	2025	10.1007/978-981-96-7151-9_2	The Residual Life and Inactivity Time of Coherent Systems	Conditional Order Statistics and Conditional Spacings	book-chapter
+42	10.1002/jgt.3190030313	1979	10.1002/jgt.3190030313	Enumeration of graphs by degree sequence	Journal of Graph Theory	journal-article
+43	10.1002/jgt.3190050110	1981	10.1002/jgt.3190050110	Enumeration of nonisomorphic planar maps	Journal of Graph Theory	journal-article
+44	10.1021/acsaem.5c04004.s001	None	10.1021/acsaem.5c04004.s001	Performance Optimization of Air-Processed Perovskite Solar Cells via Compositional Engineering and Residual Stress Analysis		component
+45	10.1142/10258	2016	10.1142/10258	A Walk Through Combinatorics		book
+46	10.1142/4918	2002	10.1142/4918	A Walk Through Combinatorics		monograph
+47	10.1142/6177	2006	10.1142/6177	A Walk Through Combinatorics		monograph
+48	10.4135/9781412984355.n7	2008	10.4135/9781412984355.n7	Working with Conditional Paths	Graph Algebra	book-chapter
+49	10.1016/0026-2714(94)90500-2	1994	10.1016/0026-2714(94)90500-2	Exact enumeration of minimal paths of partitioned networks	Microelectronics Reliability	journal-article
+50	10.1142/8027	2011	10.1142/8027	A Walk Through Combinatorics		book
+51	10.2139/ssrn.5166089	2025	10.2139/ssrn.5166089	A Measure of Conditional Dependence for Multivariate Compositional Data		posted-content
+52	10.1201/9781439863879-12	1998	10.1201/9781439863879-12	Random Graphs and Graph Enumeration	Erdos on Graphs	book-chapter
+53	10.1109/cvpr42600.2020.00386	2020	10.1109/cvpr42600.2020.00386	CPR-GCN: Conditional Partial-Residual Graph Convolutional Network in Automated Anatomical Labeling of Coronary Arteries	2020 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)	proceedings-article
+54	10.2139/ssrn.6205944	2026	10.2139/ssrn.6205944	Exact Pruned Route Enumeration with Set Partitioning for Multi-Pickup and Delivery Problem with Time Windows		posted-content
+55	10.1093/oso/9780198502517.003.010	1998	10.1093/oso/9780198502517.003.010	Planar Enumeration	Graph Theory as I Have Known It	book-chapter
+56	10.1142/9789811202582_0015	2019	10.1142/9789811202582_0015	Graph Enumeration Problems	Clifford Algebras and Zeons	book-chapter
+57	10.1002/jgt.3190180407	1994	10.1002/jgt.3190180407	Unit subduced cycle indices for combinatorial enumeration	Journal of Graph Theory	journal-article
+58	10.1186/1297-9686-40-1-25	2008	10.1186/1297-9686-40-1-25	A rapid conditional enumeration haplotyping method in pedigrees	Genetics Selection Evolution	journal-article
+59	10.1016/j.dam.2005.06.009	2006	10.1016/j.dam.2005.06.009	Exact enumeration of acyclic deterministic automata	Discrete Applied Mathematics	journal-article
+60	10.1017/9781009766012.005	2026	10.1017/9781009766012.005	Asymptotic Enumeration via Graph Containers and Entropy	Surveys in Combinatorics 2026	book-chapter
+61	10.1002/jgt.3190040202	1980	10.1002/jgt.3190040202	Enumeration of weak isomorphism classes of signed graphs	Journal of Graph Theory	journal-article
+62	10.1007/978-981-96-7151-9_3	2025	10.1007/978-981-96-7151-9_3	Residual Lifetime and Inactivity Time of Coherent Systems Under Double Monitoring	Conditional Order Statistics and Conditional Spacings	book-chapter
+63	10.1002/jgt.3190090418	1985	10.1002/jgt.3190090418	Enumeration of cyclically 4‐connected cubic graphs	Journal of Graph Theory	journal-article
+64	10.1142/9789811277856_0009	2023	10.1142/9789811277856_0009	Dots and Lines. The Origins of Graph Theory	A Walk Through Combinatorics	book-chapter
+65	10.1142/9789814335249_fmatter	2011	10.1142/9789814335249_fmatter	FRONT MATTER	A Walk Through Combinatorics	other
+66	10.26226/morressier.604907f41a80aac83ca25d04	2021	10.26226/morressier.604907f41a80aac83ca25d04	Compositional Analysis of Probabilistic Timed Graph Transformation Systems		posted-content
+67	10.1017/cbo9781316271452.007	2016	10.1017/cbo9781316271452.007	Compositional methods I	The Graph Music of Morton Feldman	book-chapter
+68	10.1142/9789814335249_bmatter	2011	10.1142/9789814335249_bmatter	BACK MATTER	A Walk Through Combinatorics	other
+69	10.1142/9789813148857_fmatter	2016	10.1142/9789813148857_fmatter	FRONT MATTER	A Walk Through Combinatorics	other
+70	10.1142/9789812773074_fmatter	2006	10.1142/9789812773074_fmatter	FRONT MATTER	A Walk Through Combinatorics	other
+71	10.1109/tip.2024.3358726/mm1	None	10.1109/tip.2024.3358726/mm1	Event Graph Guided Compositional Spatial-Temporal Reasoning for Video Question Answering_supp1-3358726.pdf		component
+72	10.1002/jgt.3190080204	1984	10.1002/jgt.3190080204	Enumeration by frame group and range groups	Journal of Graph Theory	journal-article
+73	10.1080/03610918708812633	1987	10.1080/03610918708812633	A comparison of some conditional and unconditional exact tests for 2x2 contingency tables	Communications in Statistics - Simulation and Computation	journal-article
+74	10.1142/9789812773074_bmatter	2006	10.1142/9789812773074_bmatter	BACK MATTER	A Walk Through Combinatorics	other
+75	10.1093/oso/9780198277606.003.0006	1991	10.1093/oso/9780198277606.003.0006	Combination and Enumeration	Exchange In Oceania	book-chapter
+76	10.1515/cogl.2009.028	2009	10.1515/cogl.2009.028	Imperative as conditional: From constructional to compositional semantics	Cognitive Linguistics	journal-article
+77	10.1142/9789813148857_bmatter	2016	10.1142/9789813148857_bmatter	BACK MATTER	A Walk Through Combinatorics	other
+78	10.1021/acsomega.9b00260.s001	None	10.1021/acsomega.9b00260.s001	Compositional Characterization of Expelled and Residual Oils in the Source Rocks from Oil GenerationExpulsion Thermal Simulation Experiments		component
+79	10.2139/ssrn.4934720	2024	10.2139/ssrn.4934720	Conditional Shift-Robust Conformal Prediction for Graph Neural Network		posted-content
+80	10.1016/j.phpro.2012.05.006	2012	10.1016/j.phpro.2012.05.006	Exact Enumeration of Self-Avoiding Walks on Percolation Clusters	Physics Procedia	journal-article
+81	10.2139/ssrn.4862107	2024	10.2139/ssrn.4862107	Conditional Shift-Robust Conformal Prediction for Graph Neural Network		posted-content
+82	10.1109/dsd51259.2020.00016	2020	10.1109/dsd51259.2020.00016	Revisiting Explicit Enumeration for Exact Synthesis	2020 23rd Euromicro Conference on Digital System Design (DSD)	proceedings-article
+83	10.1002/9781118557938.ch35	2013	10.1002/9781118557938.ch35	Enumeration of Spanning Trees of an Undirected Graph	Mathematics for Informatics and Computer Science	other
+84	10.1142/9789814335249_0010	2011	10.1142/9789814335249_0010	Staying Connected: Trees	A Walk Through Combinatorics	book-chapter
+85	10.7151/dmgt.1033	1996	10.7151/dmgt.1033	A partition of the Catalan numbers and enumeration of genealogical trees	Discussiones Mathematicae Graph Theory	journal-article
+86	10.1016/0026-2714(90)90084-z	1990	10.1016/0026-2714(90)90084-z	Simple enumeration of minimal cutsets of acyclic directed graph	Microelectronics Reliability	journal-article
+87	10.1103/physrevb.35.2071	1987	10.1103/physrevb.35.2071	Spiral-lattice-site animals: An exact enumeration study	Physical Review B	journal-article
+88	10.1088/1742-6596/410/1/012071	2013	10.1088/1742-6596/410/1/012071	Exact Enumeration of Protein Conformations from Fragment Assembly	Journal of Physics: Conference Series	journal-article
+89	10.1142/9789812773074_0005	2006	10.1142/9789812773074_0005	Divide and Conquer: Partitions	A Walk Through Combinatorics	book-chapter
+90	10.1142/9789812773074_0010	2006	10.1142/9789812773074_0010	Staying Connected: Trees	A Walk Through Combinatorics	book-chapter
+91	10.1201/9781315154848-3	2017	10.1201/9781315154848-3	Conditional symmetries of reaction-diffusion-convection equations	Nonlinear Reaction-Diffusion-Convection Equations	book-chapter
+92	10.1142/9789813148857_0010	2016	10.1142/9789813148857_0010	Staying Connected. Trees	A Walk Through Combinatorics	book-chapter
+93	10.2139/ssrn.4531510	2023	10.2139/ssrn.4531510	Conditional Connectivities of the $N$ Dimensional Godan Graph		posted-content
+94	10.1142/13455	2023	10.1142/13455	A Walk Through Combinatorics		book
+95	10.1002/jgt.3190190402	1995	10.1002/jgt.3190190402	Enumeration of trees by inversions	Journal of Graph Theory	journal-article
+96	10.1016/j.cognition.2021.104815	2021	10.1016/j.cognition.2021.104815	Learning exact enumeration and approximate estimation in deep neural network models	Cognition	journal-article
+97	10.3389/feduc.2021.624149	2021	10.3389/feduc.2021.624149	Exploring Class Enumeration in Bayesian Growth Mixture Modeling Based on Conditional Medians	Frontiers in Education	journal-article
+98	10.1007/springerreference_57653	None	10.1007/springerreference_57653	Exact Graph Coloring Using Inclusion-Exclusion, 2006; Bj&amp;#xf6;rklund, Husfeldt	SpringerReference	reference-entry
+99	10.1142/9789813148857_0005	2016	10.1142/9789813148857_0005	Divide and Conquer. Partitions	A Walk Through Combinatorics	book-chapter
+100	10.1142/9789812773296_0006	2006	10.1142/9789812773296_0006	Small Maximal Independent Sets and Faster Exact Graph Coloring	Graph Algorithms and Applications 4	book-chapter

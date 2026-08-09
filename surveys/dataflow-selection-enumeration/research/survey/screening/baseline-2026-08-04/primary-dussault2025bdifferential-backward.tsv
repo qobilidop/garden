@@ -1,0 +1,69 @@
+rank	source_id	year	doi	title	venue	type
+1	citation-1	1984	-	Newton’s method for linear complementarity problems	-	-
+2	citation-2	2017	-	Topics in hyperplane Arrangements	-	-
+3	citation-3	1981	-	Arrangements of planes in space	-	-
+4	citation-4	1983	-	Erratum: “arrangements of planes in space”	-	-
+5	citation-5	1996	-	Reverse search for enumeration	-	-
+6	citation-6	2019	-	Polynomial threshold functions, hyperplane arrangements, and random tensors	-	-
+7	citation-7	2012	-	Nonconvergence of the plain Newton-min algorithm for linear complementarity problems with a P -matrix	-	-
+8	citation-8	2013	-	An algorithmic characterization of P-matricity	-	-
+9	citation-9	2019	-	An algorithmic characterization of P-matricity II: adjustments, reﬁnements, and validation	-	-
+10	citation-10	2014	-	Gas phase appearance and disappearance as a problem with comple- mentarity constraints	-	-
+11	citation-11	1999	-	Nonlinear Programming (second edition)	-	-
+12	citation-12	1982	-	A recursive sweep-plane algorithm, determining all cells of a ﬁnite division of Rd 	-	-
+13	citation-13	1997	-	Optimisation Numérique – Aspects théoriques et pratiques	-	-
+14	citation-14	2006	-	Numerical Optimization – Theo- retical and Practical Aspects (second edition)	-	-
+15	citation-15	2006	-	Convex Analysis and Nonlinear Optimization – Theory and Examples (second edition)	-	-
+16	citation-16	2022	-	A class of optimization problems motivated by rank estimators in robust regression	-	-
+17	citation-17	2011	-	Computation of generalized diﬀerentials in nonlinear complementarity prob- lems	-	-
+18	citation-18	1983	-	Linear Programming	-	-
+19	citation-19	1983	-	Optimization and Nonsmooth Analysis	-	-
+20	citation-20	1995	-	Applications of random sampling in computational geom- etry, II	-	-
+21	citation-21	1970	-	A generalization of the linear complementarity problem	-	-
+22	citation-22	2009	-	The Linear Complementarity Problem	-	-
+23	citation-23	2006	-	Elements of information theory (second edition)	-	-
+24	citation-24	2000	-	A theoretical and numerical comparison of some semis- mooth algorithms for complementarity problems	-	-
+25	citation-25	2019	-	A lower bound on the iterative complexity of the Harker and Pang globalization technique of the Newton-min algorithm for solving the linear complementarity problem	-	-
+26	citation-26	2019	-	Polyhedral Newton-min algorithms for com- plementarity problems	-	-
+27	citation-27	2022	-	Exact computation of an error bound for the balanced linear complementarity problem with unique solution	-	-
+28	citation-28	2023	-	On the B-diﬀerential of the com- ponentwise minimum of two aﬃne vector functions – The full report	-	-
+29	citation-29	2023	-	Arrangement of hyperplanes in the space by a dual approach	-	-
+30	citation-30	2023	-	Partial description of the B- diﬀerential of the componentwise minimum of two vector functions by linearization	-	-
+31	citation-31	1986	-	Constructing arrangements of lines and hyperplanes with applications	-	-
+32	citation-32	1987	-	Algorithms in Combinatorial Geometry, volume 10 of EATCS Monographs on Theoretical Computer Science	-	-
+33	citation-33	2003	-	Finite-Dimensional Variational Inequalities and Complementarity Problems (two volumes)	-	-
+34	citation-34	2021	-	Fragments d’Optimisation Différentiable – Théorie et Algorithmes	-	-
+35	citation-35	2022	-	Selected Topics on Continuous Optimization – Version 2	-	-
+36	citation-36	1873	-	Über die Auﬂösung linearer Gleichungen mit reellen Coeﬃcienten	-	-
+37	citation-37	1984	-	Trees and Hills: Methodology for Maximizing Functions of Systems of Linear Rela- tions	-	-
+38	citation-38	1972	-	Arrangements and Spreads	-	-
+39	citation-39	2019	-	On the number of circuits in regular matroids (with connec- tions to lattices and codes)	-	-
+40	citation-40	2018	-	Arrangements	-	-
+41	citation-41	2001	-	Fundamentals of Convex Analysis	-	-
+42	citation-42	2014	-	Newton-Type Methods for Optimization and Variational Problems	-	-
+43	citation-43	1998	-	Solving box constrained variational inequalities by using the natural residual with D-gap function globalization	-	-
+44	citation-44	1986	-	Extension of Newton and quasi-Newton methods to systems of PC1 equations	-	-
+45	citation-45	2012	-	Fully coupled generalised hybrid-mixed ﬁnite element ap- proximation of two-phase two-component ﬂow in porous media	-	-
+46	citation-46	2013	-	Fully coupled generalised hybrid-mixed ﬁnite element approximation of two-phase two-component ﬂow in porous media	-	-
+47	citation-47	1988	-	Linear Complementarity, Linear and Nonlinear Programming (Internet edition, prepared by Feng-Tien Yu, 1997)	-	-
+48	citation-48	2011	-	Matroid theory (second edition)	-	-
+49	citation-49	1990	-	Newton’s method for B-diﬀerentiable equations	-	-
+50	citation-50	1991	-	A B-diﬀerentiable equation-based, globally and locally quadratically convergent algorithm for nonlinear programs, complementarity and variational inequality problems	-	-
+51	citation-51	1995	-	Complementarity problems	-	-
+52	citation-52	1993	-	Convergence analysis of some algorithms for solving nonsmooth equations	-	-
+53	citation-53	1993	-	A nonsmooth version of Newton’s method	-	-
+54	citation-54	2018	-	A new algorithm for enumeration of cells of hyperplane arrange- ments and a comparison with Avis and Fukuda’s reverse search	-	-
+55	citation-55	1919	-	Über partielle und totale diﬀerenzierbarkeit	-	-
+56	citation-56	1887	-	On the ﬁgures formed by the intercepts of a system of straight lines in a plane, and on analogous relations in space of three dimensions	-	-
+57	citation-57	1970	-	Convex Analysis	-	-
+58	citation-58	1950	-	Theorie der vielfachen Kontinuität (in german)	-	-
+59	citation-59	1998	-	Output-sensitive cell enumeration in hyperplane arrangements	-	-
+60	citation-60	2000	-	Hyperplane arrangements – Construction, visualization and application	-	-
+61	citation-61	2019	-	On a new exponential iterative method for solving nonsmooth equations	-	-
+62	citation-62	2007	-	An introduction to hyperplane arrangements	-	-
+63	citation-63	1826	-	Einige Gesetze über die Theilung der Ebene und des Raumes	-	-
+64	citation-64	1994	-	The generalized order linear complementarity problem	-	-
+65	citation-65	1975	-	Matroïdes orientables	-	-
+66	citation-66	1966	-	Partitions of N-space by hyperplanes	-	-
+67	citation-67	1975	-	Facing up to arrangements: face-count formulas for partitions of space by hyperplanes	-	-
+68	citation-68	2009	-	Global error bounds for the extended vertical LCP	-	-

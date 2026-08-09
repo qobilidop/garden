@@ -1,0 +1,101 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1145/3543622.3573196	2023	10.1145/3543622.3573196	Eliminating Excessive Dynamism of Dataflow Circuits Using Model Checking	Proceedings of the 2023 ACM/SIGDA International Symposium on Field Programmable Gate Arrays	proceedings-article
+2	10.1145/3626202.3637570	2024	10.1145/3626202.3637570	Suppressing Spurious Dynamism of Dataflow Circuits via Latency and Occupancy Balancing	Proceedings of the 2024 ACM/SIGDA International Symposium on Field Programmable Gate Arrays	proceedings-article
+3	10.1109/tcad.2008.2009147	2009	10.1109/tcad.2008.2009147	Strengthening Model Checking Techniques With Inductive Invariants	IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems	journal-article
+4	10.70675/33859af0z9c09z423dzb345z62ae1ec51d10	None	10.70675/33859af0z9c09z423dzb345z62ae1ec51d10	Mechanized semantics for circuits : from dataflow to hardware		dissertation
+5	10.1007/978-3-642-59195-2_18	1997	10.1007/978-3-642-59195-2_18	Linear Inductive Reductive Dataflow System for ViSC	Visualization and Mathematics	book-chapter
+6	10.70675/11dbc4fbze359z4c25za113zbeec938794a6	None	10.70675/11dbc4fbze359z4c25za113zbeec938794a6	Finding inductive invariants using satisfiability modulo theories and convex optimization		dissertation
+7	10.1016/b978-0-08-018310-7.50011-x	1975	10.1016/b978-0-08-018310-7.50011-x	Inductive Circuits	Basic Electric Circuits	book-chapter
+8	10.1145/3533767.3534381	2022	10.1145/3533767.3534381	Almost correct invariants: synthesizing inductive invariants by fuzzing proofs	Proceedings of the 31st ACM SIGSOFT International Symposium on Software Testing and Analysis	proceedings-article
+9	10.1109/iccad57390.2023.10323796	2023	10.1109/iccad57390.2023.10323796	Automatic Inductive Invariant Generation for Scalable Dataflow Circuit Verification	2023 IEEE/ACM International Conference on Computer Aided Design (ICCAD)	proceedings-article
+10	10.4064/fm-59-3-243-262	1966	10.4064/fm-59-3-243-262	Inductive invariants and dimension theory	Fundamenta Mathematicae	journal-article
+11	10.1109/fmcad.2014.6987603	2014	10.1109/fmcad.2014.6987603	Small inductive safe invariants	2014 Formal Methods in Computer-Aided Design (FMCAD)	proceedings-article
+12	10.23943/princeton/9780691153476.003.0005	2012	10.23943/princeton/9780691153476.003.0005	The Inductive Step of the Fundamental Proposition: The Simpler Cases	The Decomposition of Global Conformal Invariants (AM-182)	book-chapter
+13	10.4064/cm-28-1-29-31	1973	10.4064/cm-28-1-29-31	Mappings and inductive invariants	Colloquium Mathematicum	journal-article
+14	10.1109/async65240.2025.00020	2025	10.1109/async65240.2025.00020	Translating General Slack Elastic Programs into Dataflow Circuits	2025 29th IEEE International Symposium on Asynchronous Circuits and Systems (ASYNC)	proceedings-article
+15	10.1109/asic.1995.580746	None	10.1109/asic.1995.580746	High performance single chip dataflow processor	Proceedings of Eighth International Application Specific Integrated Circuits Conference	proceedings-article
+16	10.4064/cm-25-1-73-78	1972	10.4064/cm-25-1-73-78	Inductive invariants of closed extensions of mappings	Colloquium Mathematicum	journal-article
+17	10.1515/9781400842728.211	2012	10.1515/9781400842728.211	5. The Inductive Step of the Fundamental Proposition: The Simpler Cases	The Decomposition of Global Conformal Invariants (AM-182)	book-chapter
+18	10.23943/princeton/9780691153476.003.0006	2012	10.23943/princeton/9780691153476.003.0006	The Inductive Step of the Fundamental Proposition: The Hard Cases, Part I	The Decomposition of Global Conformal Invariants (AM-182)	book-chapter
+19	10.23943/princeton/9780691153476.003.0007	2012	10.23943/princeton/9780691153476.003.0007	The Inductive Step of the Fundamental Proposition: The Hard Cases, Part II	The Decomposition of Global Conformal Invariants (AM-182)	book-chapter
+20	10.1109/iscas.1988.15104	None	10.1109/iscas.1988.15104	Analysis of dataflow program graphs	1988., IEEE International Symposium on Circuits and Systems	proceedings-article
+21	10.11606/t.76.2025.tde-28112025-091108	None	10.11606/t.76.2025.tde-28112025-091108	Quantum circuits beyond definite causality: expressibility, entanglement and unitary invariants		dissertation
+22	10.1515/9781400842728.361	2012	10.1515/9781400842728.361	7. The Inductive Step of the Fundamental Proposition: The Hard Cases, Part II	The Decomposition of Global Conformal Invariants (AM-182)	book-chapter
+23	10.1109/csf.2018.00025	2018	10.1109/csf.2018.00025	Inductive Invariants for Noninterference in Multi-agent Workflows	2018 IEEE 31st Computer Security Foundations Symposium (CSF)	proceedings-article
+24	10.1515/9781400842728.297	2012	10.1515/9781400842728.297	6. The Inductive Step of the Fundamental Proposition: The Hard Cases, Part I	The Decomposition of Global Conformal Invariants (AM-182)	book-chapter
+25	10.1109/hpca47549.2020.00063	2020	10.1109/hpca47549.2020.00063	A Hybrid Systolic-Dataflow Architecture for Inductive Matrix Algorithms	2020 IEEE International Symposium on High Performance Computer Architecture (HPCA)	proceedings-article
+26	10.2168/lmcs-6(3:22)2010	2010	10.2168/lmcs-6(3:22)2010	The General Vector Addition System Reachability Problem by Presburger Inductive Invariants	Logical Methods in Computer Science	journal-article
+27	10.1145/2568225.2568281	2014	10.1145/2568225.2568281	Inductive verification of data model invariants for web applications	Proceedings of the 36th International Conference on Software Engineering	proceedings-article
+28	10.1016/b978-0-12-809643-7.00019-x	2016	10.1016/b978-0-12-809643-7.00019-x	Capacitive and Inductive Coupling in Circuits	Information Security Science	book-chapter
+29	10.1109/fmcad.2007.4401996	2007	10.1109/fmcad.2007.4401996	Automated Extraction of Inductive Invariants to Aid Model Checking	Formal Methods in Computer Aided Design (FMCAD'07)	proceedings-article
+30	10.1142/s1793830922500197	2022	10.1142/s1793830922500197	Inductive graph invariants and approximation algorithms	Discrete Mathematics, Algorithms and Applications	journal-article
+31	10.1109/lics.2009.10	2009	10.1109/lics.2009.10	The General Vector Addition System Reachability Problem by Presburger Inductive Invariants	2009 24th Annual IEEE Symposium on Logic In Computer Science	proceedings-article
+32	10.5769/j201001005	2010	10.5769/j201001005	Semantic Malware Resistance Using Inductive Invariants	The International Journal of Forensic Computer Science	journal-article
+33	10.1109/jssc.2005.845560	2005	10.1109/jssc.2005.845560	Analysis and design of inductive coupling and transceiver circuit for inductive inter-chip wireless superconnect	IEEE Journal of Solid-State Circuits	journal-article
+34	10.1109/itc-cscc.2019.8793453	2019	10.1109/itc-cscc.2019.8793453	Synthesis of Distributed Control Circuits for Dynamic Scheduling across Multiple Dataflow Graphs	2019 34th International Technical Conference on Circuits/Systems, Computers and Communications (ITC-CSCC)	proceedings-article
+35	10.1093/oso/9780195089264.003.0009	1994	10.1093/oso/9780195089264.003.0009	Supervised Inductive Learning	Circuits of the Mind	book-chapter
+36	10.1007/978-0-387-28341-8_2	2006	10.1007/978-0-387-28341-8_2	Inductive peaking circuits	Wideband Amplifiers	book-chapter
+37	10.1109/ieeestd.2004.94432	None	10.1109/ieeestd.2004.94432	IEEE Guide for Methods of Power-Factor Measurement for Low-Voltage Inductive Test Circuits		standard
+38	10.1109/hldvt.2006.319987	2006	10.1109/hldvt.2006.319987	IChecker: An Efficient Checker for Inductive Invariants	2006 IEEE International High Level Design Validation and Test Workshop	proceedings-article
+39	10.1109/iscas.2006.1692708	None	10.1109/iscas.2006.1692708	System-level verification on high-level synthesis of dataflow graph	2006 IEEE International Symposium on Circuits and Systems	proceedings-article
+40	10.1007/978-1-4020-9075-2_3	2009	10.1007/978-1-4020-9075-2_3	Inductive Link Design	Analog Circuits and Signal Processing	book-chapter
+41	10.1109/date.2007.364480	2007	10.1109/date.2007.364480	Boosting the Role of Inductive Invariants in Model Checking	2007 Design, Automation &amp; Test in Europe Conference &amp; Exhibition	proceedings-article
+42	10.1109/famcad.2007.12	2007	10.1109/famcad.2007.12	Automated Extraction of Inductive Invariants to Aid Model Checking	Formal Methods in Computer Aided Design (FMCAD'07)	proceedings-article
+43	10.1007/978-1-4615-0399-6_2	2004	10.1007/978-1-4615-0399-6_2	Inductive Properties of Electric Circuits	Power Distribution Networks in High Speed Integrated Circuits	book-chapter
+44	10.1007/978-3-319-14514-3_1	2015	10.1007/978-3-319-14514-3_1	Thermal Circuits	Heat Transfer Modeling	book-chapter
+45	10.1109/tcad.2021.3105574	2022	10.1109/tcad.2021.3105574	From C/C++ Code to High-Performance Dataflow Circuits	IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems	journal-article
+46	10.1109/ieeestd.1972.81621	None	10.1109/ieeestd.1972.81621	IEEE Standard Guide for Methods of Power-Factor Measurement for Low-Voltage Inductive Test Circuits		standard
+47	10.1002/9781119123095.ch10	2024	10.1002/9781119123095.ch10	Inductive DC–DC Converters	Design of Power Management Integrated Circuits	other
+48	10.1145/3289602.3293914	2019	10.1145/3289602.3293914	Speculative Dataflow Circuits	Proceedings of the 2019 ACM/SIGDA International Symposium on Field-Programmable Gate Arrays	proceedings-article
+49	10.1109/icfpt56656.2022.9974425	2022	10.1109/icfpt56656.2022.9974425	Load-Store Queue Sizing for Efficient Dataflow Circuits	2022 International Conference on Field-Programmable Technology (ICFPT)	proceedings-article
+50	10.1049/iet-cds.2015.0148	2017	10.1049/iet-cds.2015.0148	Optimising loops in dynamic dataflow	IET Circuits, Devices &amp; Systems	journal-article
+51	10.1109/ddecs.2006.1649581	None	10.1109/ddecs.2006.1649581	Design of a Scalable Asynchronous Dataflow Processor	2006 IEEE Design and Diagnostics of Electronic Circuits and systems	proceedings-article
+52	10.1049/iet-cds.2019.0225	2020	10.1049/iet-cds.2019.0225	Dataflow and microarchitecture co‐optimisation for sparse CNN on distributed processing element accelerator	IET Circuits, Devices &amp; Systems	journal-article
+53	10.1049/iet-cds.2015.0071	2016	10.1049/iet-cds.2015.0071	Dataflow object detection system for FPGA‐based smart camera	IET Circuits, Devices &amp; Systems	journal-article
+54	10.1109/ccet48361.2019.8989385	2019	10.1109/ccet48361.2019.8989385	Synthesize Inductive Invariants by K-means++ and Support Vector Machine	2019 IEEE 2nd International Conference on Computer and Communication Engineering Technology (CCET)	proceedings-article
+55	10.1017/cbo9781139021128.019	2013	10.1017/cbo9781139021128.019	Exact noise analysis for a cascode amplifier with inductive degeneration	High-Frequency Integrated Circuits	other
+56	10.1007/978-1-4613-1929-0_1	1987	10.1007/978-1-4613-1929-0_1	Inductive Energy Storage Circuits and Switches	Opening Switches	book-chapter
+57	10.1109/tcsi.2024.3425895	2024	10.1109/tcsi.2024.3425895	Energy and Bandwidth Efficient Sparse Programmable Dataflow Accelerator	IEEE Transactions on Circuits and Systems I: Regular Papers	journal-article
+58	10.1145/2914770.2837640	2016	10.1145/2914770.2837640	Decidability of inferring inductive invariants	ACM SIGPLAN Notices	journal-article
+59	10.1109/dac56929.2023.10247686	2023	10.1109/dac56929.2023.10247686	An Iterative Method for Mapping-Aware Frequency Regulation in Dataflow Circuits	2023 60th ACM/IEEE Design Automation Conference (DAC)	proceedings-article
+60	10.1109/memcod.2009.5185393	2009	10.1109/memcod.2009.5185393	Bounded Dataflow Networks and Latency-Insensitive circuits	2009 7th IEEE/ACM International Conference on Formal Methods and Models for Co-Design	proceedings-article
+61	10.1007/10930755_17	2003	10.1007/10930755_17	Inductive Invariants for Nested Recursion	Lecture Notes in Computer Science	book-chapter
+62	10.1109/tcsi.2011.2177017	2012	10.1109/tcsi.2011.2177017	Novel Feedback Theory of Electric Circuits—Part II: Loop Invariants	IEEE Transactions on Circuits and Systems I: Regular Papers	journal-article
+63	10.1109/tcs.1982.1085131	1982	10.1109/tcs.1982.1085131	Roundoff Noise Invariants in Normal Digital Filters	IEEE Transactions on Circuits and Systems	journal-article
+64	10.1109/ojcas.2021.3116342	2021	10.1109/ojcas.2021.3116342	Methodologies for Synthesizing and Analyzing Dynamic Dataflow Programs in Heterogeneous Systems for Edge Computing	IEEE Open Journal of Circuits and Systems	journal-article
+65	10.1109/stc-csit.2017.8098837	2017	10.1109/stc-csit.2017.8098837	An inductive approach to pattern recognition and its connection with geometric invariants	2017 12th International Scientific and Technical Conference on Computer Sciences and Information Technologies (CSIT)	proceedings-article
+66	10.23638/lmcs-15(3:18)2019	2019	10.23638/lmcs-15(3:18)2019	Bounded Quantifier Instantiation for Checking Inductive Invariants	Logical Methods in Computer Science	journal-article
+67	10.1109/iscas.2005.1465386	None	10.1109/iscas.2005.1465386	Dynamic Coarse Grain Dataflow Reconfiguration Technique for Real-Time Systems Design	2005 IEEE International Symposium on Circuits and Systems	proceedings-article
+68	10.1109/iscas48785.2022.9937927	2022	10.1109/iscas48785.2022.9937927	HLS-based dataflow hardware architecture for Support Vector Machine in FPGA	2022 IEEE International Symposium on Circuits and Systems (ISCAS)	proceedings-article
+69	10.1007/978-1-4020-9075-2_7	2009	10.1007/978-1-4020-9075-2_7	An Inductive Power Link for a Capsule Endoscope	Analog Circuits and Signal Processing	book-chapter
+70	10.1109/tcsi.2018.2840092	2018	10.1109/tcsi.2018.2840092	Energy-Efficient Convolution Architecture Based on Rescheduled Dataflow	IEEE Transactions on Circuits and Systems I: Regular Papers	journal-article
+71	10.1109/4.272116	1994	10.1109/4.272116	Eliminating inductive noise of external chip interconnections	IEEE Journal of Solid-State Circuits	journal-article
+72	10.1109/tcad.2016.2597223	2017	10.1109/tcad.2016.2597223	Parameterized Dataflow Scenarios	IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems	journal-article
+73	10.1109/tcs.1974.1083947	1974	10.1109/tcs.1974.1083947	Quasi-power algebraic invariants of linear networks	IEEE Transactions on Circuits and Systems	journal-article
+74	10.1109/fccm53951.2022.9786084	2022	10.1109/fccm53951.2022.9786084	Resource Sharing in Dataflow Circuits	2022 IEEE 30th Annual International Symposium on Field-Programmable Custom Computing Machines (FCCM)	proceedings-article
+75	10.1109/sp54263.2024.00180	2024	10.1109/sp54263.2024.00180	ConjunCT: Learning Inductive Invariants to Prove Unbounded Instruction Safety Against Microarchitectural Timing Attacks	2024 IEEE Symposium on Security and Privacy (SP)	proceedings-article
+76	10.1145/3033019.3033027	2017	10.1145/3033019.3033027	From functional programs to pipelined dataflow circuits	Proceedings of the 26th International Conference on Compiler Construction	proceedings-article
+77	10.1109/iscas.1989.100686	None	10.1109/iscas.1989.100686	Digital filters for inductive inference applications	IEEE International Symposium on Circuits and Systems	proceedings-article
+78	10.1109/tcs.1975.1084067	1975	10.1109/tcs.1975.1084067	On sensitivity invariants for continuously equivalent networks	IEEE Transactions on Circuits and Systems	journal-article
+79	10.1201/9781003515333-26	2024	10.1201/9781003515333-26	Purely Inductive Circuits with Sinusoidal and Non-sinusoidal Sources 23	Simulation-based Labs for Circuit Analysis	book-chapter
+80	10.1007/978-3-642-27951-5_39	2012	10.1007/978-3-642-27951-5_39	Generating Inductive Invariants for Petri Nets	Advances in Intelligent and Soft Computing	book-chapter
+81	10.1109/tcasai.2024.3461716	2024	10.1109/tcasai.2024.3461716	LoopTree: Exploring the Fused-Layer Dataflow Accelerator Design Space	IEEE Transactions on Circuits and Systems for Artificial Intelligence	journal-article
+82	10.1007/11513988_19	2005	10.1007/11513988_19	Formal Verification of Pentium ® 4 Components with Symbolic Simulation and Inductive Invariants	Lecture Notes in Computer Science	book-chapter
+83	10.1145/3431920.3439472	2021	10.1145/3431920.3439472	Resource Sharing in Dataflow Circuits	The 2021 ACM/SIGDA International Symposium on Field-Programmable Gate Arrays	proceedings-article
+84	10.1007/978-0-387-71601-5_2	2008	10.1007/978-0-387-71601-5_2	Inductive Properties of Electric Circuits	Power Distribution Networks with On-Chip Decoupling Capacitors	book-chapter
+85	10.1109/iscas45731.2020.9180403	2020	10.1109/iscas45731.2020.9180403	A Systolic Dataflow Based Accelerator for CNNs	2020 IEEE International Symposium on Circuits and Systems (ISCAS)	proceedings-article
+86	10.1049/ip-g-1.1982.0042	1982	10.1049/ip-g-1.1982.0042	Product of inductive and capacitive operators	IEE Proceedings G (Electronic Circuits and Systems)	journal-article
+87	10.1109/tcad.2013.2265852	2013	10.1109/tcad.2013.2265852	Schedule-Extended Synchronous Dataflow Graphs	IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems	journal-article
+88	10.1109/iscas.2013.6571930	2013	10.1109/iscas.2013.6571930	Live demonstration: High level software and hardware synthesis of dataflow programs	2013 IEEE International Symposium on Circuits and Systems (ISCAS2013)	proceedings-article
+89	10.1109/isscc42614.2022.9731612	2022	10.1109/isscc42614.2022.9731612	SambaNova SN10 RDU: A 7nm Dataflow Architecture to Accelerate Software 2.0	2022 IEEE International Solid- State Circuits Conference (ISSCC)	proceedings-article
+90	10.1109/iscas.1988.15231	None	10.1109/iscas.1988.15231	Invariants and characteristics of sigma-differential pulse code modulation	1988., IEEE International Symposium on Circuits and Systems	proceedings-article
+91	10.1109/iscas.2013.6572071	2013	10.1109/iscas.2013.6572071	FPGA implementation of a scheduler supporting parallel dataflow execution	2013 IEEE International Symposium on Circuits and Systems (ISCAS2013)	proceedings-article
+92	10.1145/2837614.2837640	2016	10.1145/2837614.2837640	Decidability of inferring inductive invariants	Proceedings of the 43rd Annual ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages	proceedings-article
+93	10.1109/ieeestd.2014.6915662	None	10.1109/ieeestd.2014.6915662	IEEE Guide for Methods of Power-Factor Measurement for Low-Voltage (1000 V AC or lower) Inductive Test Circuits		standard
+94	10.1109/norcas57515.2022.9934591	2022	10.1109/norcas57515.2022.9934591	Dataflow Optimizations in a Sub-uW Data-Driven TCN Accelerator for Continuous ECG Monitoring	2022 IEEE Nordic Circuits and Systems Conference (NorCAS)	proceedings-article
+95	10.1109/tcsi.2023.3258411	2023	10.1109/tcsi.2023.3258411	Agamotto: A Performance Optimization Framework for CNN Accelerator With Row Stationary Dataflow	IEEE Transactions on Circuits and Systems I: Regular Papers	journal-article
+96	10.1109/tcsi.2025.3585054	2026	10.1109/tcsi.2025.3585054	Low-Power Vision Transformer Accelerator With Hardware-Aware Pruning and Optimized Dataflow	IEEE Transactions on Circuits and Systems I: Regular Papers	journal-article
+97	10.1109/icicm63644.2024.10814337	2024	10.1109/icicm63644.2024.10814337	A Reconfigurable Dataflow Baseband Processor for MIMO Communication System Applications	2024 9th International Conference on Integrated Circuits and Microsystems (ICICM)	proceedings-article
+98	10.1038/scientificamerican05091891-12802bsupp	1891	10.1038/scientificamerican05091891-12802bsupp	Inductive Disturbances in Telephone Circuits	Scientific American	journal-article
+99	10.1109/tcad.2006.883927	2006	10.1109/tcad.2006.883927	Profile-Driven Instruction Mapping for Dataflow Architectures	IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems	journal-article
+100	10.1049/ip-g-1.1981.0024	1981	10.1049/ip-g-1.1981.0024	Generation of inductive and capacitive accretive operators	IEE Proceedings G (Electronic Circuits and Systems)	journal-article

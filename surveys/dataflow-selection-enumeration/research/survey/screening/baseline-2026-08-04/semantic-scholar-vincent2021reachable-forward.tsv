@@ -1,0 +1,60 @@
+rank	source_id	year	doi	title	venue	type
+1	1557a1f435919c33650a23b4d43df9146c8be4bf	2026	10.48550/arXiv.2603.08964	The FABRIC Strategy for Verifying Neural Feedback Systems	arXiv.org	JournalArticle
+2	b992104d7ec11650e123320fc42c7fa3731066a3	2025	10.1109/CDC57313.2025.11312068	A Guided Retraining Strategy For Safe ReLU Neural Network Controllers Of Linear Systems	IEEE Conference on Decision and Control	JournalArticle,Conference
+3	0d3b20ee0e2a85050b5a43692d1fec557e529bb7	2025	10.1145/3763328	Marching Neurons: Accurate Surface Extraction for Neural Implicit Shapes	ACM Transactions on Graphics	JournalArticle
+4	8abccd885f807e953a86cf3533f5fd1112699f97	2025	10.1109/DASC66011.2025.11257265	Predictive Uncertainty for Runtime Assurance of a Real-Time Computer Vision-Based Landing System	Symposium on Dependable Autonomic and Secure Computing	JournalArticle,Conference
+5	8349f4b76844bcc6ab6143d13a69c962f0b6f8e6	2025	10.48550/arXiv.2507.04523	Verification of Visual Controllers via Compositional Geometric Transformations	arXiv.org	JournalArticle
+6	90ec21cb69adc4bf9a020286ff453304bec653c0	2025	10.48550/arXiv.2505.22798	Efficient Preimage Approximation for Neural Network Certification	arXiv.org	JournalArticle
+7	9e089ea4899ea4a22760c0f8f6c032937b8106d4	2025	10.48550/arXiv.2505.03643	BURNS: Backward Underapproximate Reachability for Neural-Feedback-Loop Systems	arXiv.org	JournalArticle
+8	14319606ff962ebdb0adc50ea579dcc82a26af24	2025	10.1109/CDC57313.2025.11312208	Learning Verifiable Control Policies Using Relaxed Verification	IEEE Conference on Decision and Control	JournalArticle,Conference
+9	64b1ebc33890b1b82fb80b33d124afbf7c1d4fdf	2025		Polyhedral Enclosures: An Efficient Combinatorial Abstraction for Nonlinear Neural Feedback Systems		
+10	5cbdb2bc5823ed8c69d22eb3b8810536f435313a	2024	10.1109/TCST.2025.3593237	Safe Autonomy for Uncrewed Surface Vehicles Using Adaptive Control and Reachability Analysis	IEEE Transactions on Control Systems Technology	JournalArticle
+11	05dc076a19acc5eca0cd3c8f7618701db79aacb2	2024	10.1109/CDC56724.2024.10886505	Estimation of Constraint Admissible Invariant Set with Neural Lyapunov Function	IEEE Conference on Decision and Control	JournalArticle,Conference
+12	4b6b82a459815af16e5b8e2f500c3fb12c8740eb	2024	10.1109/ICRA55743.2025.11127579	Guaranteed Reach-Avoid for Black-Box Systems through Narrow Gaps via Neural Network Reachability	IEEE International Conference on Robotics and Automation	JournalArticle,Conference
+13	1d6124e3d63a7de960a86deb2f5608ab2331a0fd	2024	10.48550/arXiv.2408.09262	PREMAP: A Unifying PREiMage APproximation Framework for Neural Networks	Journal of machine learning research	JournalArticle
+14	334d78097a54732bcf87e6a01301ce97376e7825	2024	10.48550/arXiv.2406.04476	Provable Bounds on the Hessian of Neural Networks: Derivative-Preserving Reachability Analysis	arXiv.org	JournalArticle
+15	74fbd49f0feb6a034807c529a5bc199d455e0aa9	2024	10.1109/JIOT.2024.3360294	Hybrid and Spatiotemporal Detection of Cyberattack Network Traffic in Cloud Data Centers	IEEE Internet of Things Journal	JournalArticle
+16	47e80f59767b01226833b58f6cf19070da20dce9	2024	10.48550/arXiv.2403.13297	POLICEd RL: Learning Closed-Loop Robot Control Policies with Provable Satisfaction of Hard Constraints	Robotics: Science and Systems Conference	JournalArticle
+17	011fe9b5f5a49264fb66cec403238f353acedbcb	2024	10.48550/arXiv.2402.15604	Goal-Reaching Trajectory Design Near Danger with Piecewise Affine Reach-avoid Computation	Robotics: Science and Systems Conference	JournalArticle
+18	dea215fea3f27d4c149108f04427d01cce32ceb0	2023	10.1109/LCSYS.2023.3342088	Safety Verification of Neural-Network-Based Controllers: A Set Invariance Approach	IEEE Control Systems Letters	JournalArticle
+19	9e7f1280622ee70bbcaa1bd590a3fd7d0c384e2a	2023	10.3389/fdata.2023.1274831	Integrating geometries of ReLU feedforward neural networks	Frontiers Big Data	JournalArticle
+20	aa376713f28662a6ec05e77d6029f408a4dc4fc8	2023	10.1109/ICRA57147.2024.10610163	Online Data-Driven Safety Certification for Systems Subject to Unknown Disturbances	IEEE International Conference on Robotics and Automation	JournalArticle,Conference
+21	da82671b521d53c1d241ce54f7f1145342c89b5d	2023	10.23919/ACC60939.2024.10644573	Hybrid Zonotope-Based Backward Reachability Analysis for Neural Feedback Systems With Nonlinear Plant Models	American Control Conference	JournalArticle,Conference
+22	60210132afd88795ede5efa054ef6f0a6601b0d4	2023	10.1109/SMC53992.2023.10393988	Deep and Spatio-Temporal Detection for Abnormal Traffic in Cloud Data Centers	IEEE International Conference on Systems, Man and Cybernetics	JournalArticle,Conference
+23	6b8736af96de06dd5a0992c8af0c244e8b8d5e3b	2023	10.48550/arXiv.2306.17418	ReLU Neural Networks, Polyhedral Decompositions, and Persistent Homolog	TAG-ML	JournalArticle
+24	5dc0a134425d0f7e05919b934ab1975b1ba5be49	2023	10.48550/arXiv.2305.00241	When Deep Learning Meets Polyhedral Theory: A Survey	INFORMS journal on computing	JournalArticle,Review
+25	c0ba93140109ba8df17125c2245b706729a3632b	2023	10.48550/arXiv.2304.01826	CGDTest: A Constrained Gradient Descent Algorithm for Testing Neural Networks	arXiv.org	JournalArticle
+26	0c33a3d4c2270dd9d39df3074a5ec1ac0112921c	2023	10.1109/CDC49753.2023.10383853	Data-Driven Covariance Steering Control Design	IEEE Conference on Decision and Control	JournalArticle,Conference
+27	1211f9a4a0624b9ede24752569071218025c91c7	2023	10.1109/LCSYS.2023.3289572	Backward Reachability Analysis of Neural Feedback Systems Using Hybrid Zonotopes	IEEE Control Systems Letters	JournalArticle
+28	8d20c4ff4caf475b6f0de8e72a2362ab0d163084	2023	10.48550/arXiv.2303.03530	Incorporating Human Path Preferences in Robot Navigation with Minimal Interventions	arXiv.org	JournalArticle
+29	70f0dd9a55b7175f6b5e42255e1420f03df3e968	2023	10.48550/arXiv.2303.01713	Convex Bounds on the Softmax Function with Applications to Robustness Verification	International Conference on Artificial Intelligence and Statistics	JournalArticle
+30	0ad90df9d692dfb040a9aa6dab1e6065de0cae4a	2023	10.48550/arXiv.2302.01404	Provably Bounding Neural Network Preimages	Neural Information Processing Systems	JournalArticle
+31	d62356d0d27ed94ca7dbe73ab4b2d07afe13423e	2023	10.48550/arXiv.2301.12893	Formalizing Piecewise Affine Activation Functions of Neural Networks in Coq	NASA Formal Methods	JournalArticle
+32	d5ac8ea8b775d7cfcf3ddffd7bf3a7351c788b5d	2023	10.1007/s10009-023-00703-4	First three years of the international verification of neural networks competition (VNN-COMP)	International Journal on Software Tools for Technology Transfer (STTT)	JournalArticle
+33	c70fba8b518fcdfa425e87b85c70ad7cb4d2131b	2022	10.48550/arXiv.2212.08578	Provable Fairness for Neural Network Models using Formal Verification	EWAF	JournalArticle
+34	417ebd7b5acf7dee5637e23eb9ff3332b97d8aaa	2022	10.48550/arXiv.2212.07553	Automated Reachability Analysis of Neural Network-Controlled Systems via Adaptive Polytopes	Conference on Learning for Dynamics & Control	JournalArticle
+35	1bb8c9667fae87256e7bb17e1a552b57d56e7168	2022	10.1109/LCSYS.2023.3260731	DRIP: Domain Refinement Iteration With Polytopes for Backward Reachability Analysis of Neural Feedback Loops	IEEE Control Systems Letters	JournalArticle
+36	d91030446de2d7af30ee74b4166bbd71e52f430a	2022	10.48550/arXiv.2212.01544	Probabilistic Verification of ReLU Neural Networks via Characteristic Functions	Conference on Learning for Dynamics & Control	JournalArticle
+37	7c178fb5e6f0a27844cb7781d423841ea2cadd6f	2022	10.1109/ICRA48891.2023.10160732	ReachLipBnB: A branch-and-bound method for reachability analysis of neural autonomous systems using Lipschitz bounds	IEEE International Conference on Robotics and Automation	JournalArticle,Conference
+38	1a3babf1a1709fc9219b8069c5ff47396168a37c	2022	10.1109/TNNLS.2025.3571720	Reachable Polyhedral Marching (RPM): An Exact Analysis Tool for Deep-Learned Control Systems	IEEE Transactions on Neural Networks and Learning Systems	JournalArticle
+39	a4f36897e6f4124540cb572295a67467db4a6642	2022	10.23919/ACC55779.2023.10156051	A Hybrid Partitioning Strategy for Backward Reachability of Neural Feedback Loops	American Control Conference	JournalArticle,Conference
+40	479059a41b614ea6f44912e3e4a34c3a07001601	2022	10.1109/OJCSYS.2023.3265901	Backward Reachability Analysis of Neural Feedback Loops: Techniques for Linear and Nonlinear Systems	IEEE Open Journal of Control Systems	JournalArticle
+41	084dde25b73c0ae5a88d80d20f88084b186ee0b0	2022	10.1007/978-3-031-06773-0_13	Case Studies for Computing Density of Reachable States for Safe Autonomous Motion Planning	NASA Formal Methods	JournalArticle
+42	36e5adeba77c92c28e842c26e7a64f56aec940ab	2022	10.1007/978-3-031-33170-1_2	Open- and Closed-Loop Neural Network Verification using Polynomial Zonotopes	NASA Formal Methods	JournalArticle
+43	0478a6cf397808e21fa9ac727ff248cbf0982882	2022	10.1016/j.automatica.2023.111487	Chordal sparsity for SDP-based neural network verification	at - Automatisierungstechnik	JournalArticle
+44	bfa6558e1ecf8c11b8503f405d48fbb065d3024a	2022	10.1109/CDC51059.2022.9992847	Backward Reachability Analysis for Neural Feedback Loops	IEEE Conference on Decision and Control	JournalArticle,Conference
+45	07a7aa37a3a3a76b71fe285e89154a0f33ece4d7	2022	10.1109/CDC51059.2022.9992655	Safety Verification of Neural Feedback Systems Based on Constrained Zonotopes	IEEE Conference on Decision and Control	JournalArticle,Conference
+46	92db409d73f90f3922674efba9f9384659a2a3bd	2022	10.48550/arXiv.2203.11201	Efficient Neural Network Analysis with Sum-of-Infeasibilities	International Conference on Tools and Algorithms for Construction and Analysis of Systems	JournalArticle
+47	96ca3a0f625273efd6f412838cd18cac08592642	2022	10.1145/3563325	Scalable verification of GNN-based job schedulers	Proc. ACM Program. Lang.	JournalArticle
+48	70980575ba92b9d28e6efe72e2f99a266b2a40f2	2021		A Simple and Efficient Sampling-based Algorithm for General Reachability Analysis	Conference on Learning for Dynamics & Control	JournalArticle
+49	cf202af4254f5e870fcd3e6ff4b887de4eed3613	2021		Traversing the Local Polytopes of ReLU Neural Networks: A Unified Approach for Network Verification	arXiv.org	JournalArticle
+50	089f1202c26faacd80cca277d0c9e044862eea3c	2021	10.1109/CDC45484.2021.9683154	Neural Network Verification in Control	IEEE Conference on Decision and Control	JournalArticle,Conference,Review
+51	cdeda26deee31c5a6c0bea82c754a42b9e2ee624	2021		Learning Density Distribution of Reachable States for Autonomous Systems	Conference on Robot Learning	JournalArticle
+52	e228ce01c4ee51cababd2102d23f0c620d02b289	2021		The Second International Verification of Neural Networks Competition (VNN-COMP 2021): Summary and Results	arXiv.org	JournalArticle
+53	931041e00849b660cfd945239668f42ff887ccc3	2021		Constrained Feedforward Neural Network Training via Reachability Analysis	arXiv.org	JournalArticle
+54	153e8354da2e1e85faa30463738f6a2a5ab56866	2021	10.1145/3540250.3549120	Neural termination analysis	ESEC/SIGSOFT FSE	JournalArticle,Book
+55	a0bbccdb1c29f9c0f8a63cc80831970ed3963638	2020	10.1007/s10994-021-06050-2	Global optimization of objective functions represented by ReLU networks	Machine-mediated learning	JournalArticle
+56	f01a8fecb6b28e1ba620eff714223c4526c9bf23	2024	10.1109/LCSYS.2024.3392494	A Monotonicity Framework for Stability Verification of Planar Path-Following Controllers	IEEE Control Systems Letters	JournalArticle
+57	60746ad1841908bc5d1c572d350d687e77c86c3b	2022	10.48550/arXiv.2206.03482	Parametric Chordal Sparsity for SDP-based Neural Network Verification	arXiv.org	JournalArticle
+58	ff2bd327abf39d81b254a69671462d10687e5e13			Efﬁcient Preimage Approximation for Neural Network Certiﬁcation		
+59	c70aa4349449876796f0bd94aca0720e6e6b3d5c			Practical Techniques for Reachability-Based Safety Verifcation of Real-World Neural Feedback Loops		

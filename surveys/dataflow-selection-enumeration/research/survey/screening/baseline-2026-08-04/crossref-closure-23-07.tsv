@@ -1,0 +1,101 @@
+rank	source_id	year	doi	title	venue	type
+1	10.3182/20090610-3-it-4004.00044	2009	10.3182/20090610-3-it-4004.00044	Colored Petri Net inversion for Backward Reachability Analysis	IFAC Proceedings Volumes	journal-article
+2	10.5772/5328	2008	10.5772/5328	Using Transition Invariants for Reachability Analysis of Petri Nets	Petri Net, Theory and Applications	book-chapter
+3	10.3390/sym16121612	2024	10.3390/sym16121612	Research on the Security of NC-Link Numerical Control Equipment Protocol Based on Colored Petri Net	Symmetry	journal-article
+4	10.7551/mitpress/8811.003.0008	2011	10.7551/mitpress/8811.003.0008	Colored Petri Nets	Modeling Business Processes	book-chapter
+5	10.3390/sym10100454	2018	10.3390/sym10100454	An Automatic Algorithm to Generate a Reachability Tree for Large-Scale Fuzzy Petri Net by And/Or Graph	Symmetry	journal-article
+6	10.1201/9781439808856-8	2018	10.1201/9781439808856-8	Colored Petri Net	System Modeling and Control with Resource-Oriented Petri Nets	book-chapter
+7	10.1016/j.cie.2016.07.031	2016	10.1016/j.cie.2016.07.031	TIMSPAT – Reachability graph search-based optimization tool for colored Petri net-based scheduling	Computers &amp; Industrial Engineering	journal-article
+8	10.3724/sp.j.1087.2013.01128	2013	10.3724/sp.j.1087.2013.01128	Reachability analysis of Petri net based on constraint optimization	Journal of Computer Applications	journal-article
+9	10.1201/9781439808856-6	2018	10.1201/9781439808856-6	Colored Petri Net ���������������������������������������������������������������������������������������������� 3	System Modeling and Control with Resource-Oriented Petri Nets	book-chapter
+10	10.5772/5327	2008	10.5772/5327	Incremental Integer Linear Programming Models for Petri Nets Reachability Problems	Petri Net, Theory and Applications	book-chapter
+11	10.5772/50518	2012	10.5772/50518	Reachability Criterion with Sufficient Test Space for Ordinary Petri Net	Petri Nets - Manufacturing and Computer Science	book-chapter
+12	10.3724/sp.j.1016.2010.00288	2010	10.3724/sp.j.1016.2010.00288	A Reachability Determining Algorithm of Petri Net Based on Process Verification	Chinese Journal of Computers	journal-article
+13	10.21203/rs.3.rs-2907003/v1	2023	10.21203/rs.3.rs-2907003/v1	A Fuzzy Colored Petri-Net Approach for Hybrid Intrusion Prediction		posted-content
+14	10.1109/icsmc.1994.399967	None	10.1109/icsmc.1994.399967	Characterizing uncontrollable reachability for colored controlled Petri nets	Proceedings of IEEE International Conference on Systems, Man and Cybernetics	proceedings-article
+15	10.1007/978-3-540-71560-3_3	None	10.1007/978-3-540-71560-3_3	Reduced Reachability Graphs	Lecture Notes in Control and Information Sciences	book-chapter
+16	10.1201/9781439808856.ch3	2009	10.1201/9781439808856.ch3	Colored Petri Net	Automation and Control Engineering	book-chapter
+17	10.1109/eurosim.2013.72	2013	10.1109/eurosim.2013.72	Extended Reachability Graph of Petri Net for Cost Estimation	2013 8th EUROSIM Congress on Modelling and Simulation	proceedings-article
+18	10.1109/synasc.2005.26	2005	10.1109/synasc.2005.26	Colored Petri nets state-space reduction via symbolic execution	Seventh International Symposium on Symbolic and Numeric Algorithms for Scientific Computing (SYNASC'05)	proceedings-article
+19	10.25791/pribor.02.2020.1152	2020	10.25791/pribor.02.2020.1152	Reachability Analysis of The Reachability Tree of a Reversible Petri Net	Приборы и системы. Управление, контроль, диагностика	journal-article
+20	10.1145/3436980.3436984	2020	10.1145/3436980.3436984	The ABCs of petri net reachability relaxations	ACM SIGLOG News	journal-article
+21	10.1109/ipps.1992.222996	None	10.1109/ipps.1992.222996	Hierarchically organized Petri net state space for reachability and deadlock analysis	Proceedings Sixth International Parallel Processing Symposium	proceedings-article
+22	10.1201/9780203859759.ch272	2009	10.1201/9780203859759.ch272	Application of linear logic to backward reachability analysis of Colored Petri Nets	Reliability, Risk, and Safety	book-chapter
+23	10.1007/3-540-44919-1_16	2003	10.1007/3-540-44919-1_16	On Reachability in Autonomous Continuous Petri Net Systems	Lecture Notes in Computer Science	book-chapter
+24	10.7763/ijmo.2012.v2.131	2012	10.7763/ijmo.2012.v2.131	A New Approach to Object Oriented Software Simulation Based on UML Statechart and Colored Petri Net	International Journal of Modeling and Optimization	journal-article
+25	10.23940/ijpe.18.02.p10.290299	2018	10.23940/ijpe.18.02.p10.290299	Adaptive Short-Circuit Current Calculation Model based on Colored Petri Net	International Journal of Performability Engineering	journal-article
+26	10.3390/en19092162	2026	10.3390/en19092162	Fault Diagnosis for Active Distribution Network Based on Colored and Fuzzy Colored Petri Net	Energies	journal-article
+27	10.1016/0026-2714(91)90235-y	1991	10.1016/0026-2714(91)90235-y	Local area network implementation of petri net reachability analysis	Microelectronics Reliability	journal-article
+28	10.3390/sym13112218	2021	10.3390/sym13112218	Online Activation and Deactivation of a Petri Net Supervisor	Symmetry	journal-article
+29	10.1007/978-3-642-84524-6_13	1991	10.1007/978-3-642-84524-6_13	On Well-Formed Coloured Nets and Their Symbolic Reachability Graph	High-level Petri Nets	book-chapter
+30	10.25791/asu.3.2020.1167	2020	10.25791/asu.3.2020.1167	Reverse Petri Net Analysis by Reachability Tree	Промышленные АСУ и контроллеры	journal-article
+31	10.4304/jnw.9.7.1883-1891	2014	10.4304/jnw.9.7.1883-1891	A Network Attack Model based on Colored Petri Net	Journal of Networks	journal-article
+32	10.3390/sym14051052	2022	10.3390/sym14051052	Petri-Net-Based Scheduling of Flexible Manufacturing Systems Using an Estimate Function	Symmetry	journal-article
+33	10.1109/mwscas.2004.1354378	None	10.1109/mwscas.2004.1354378	On some analysis properties of colored petri net using underlying net	The 2004 47th Midwest Symposium on Circuits and Systems, 2004. MWSCAS '04.	proceedings-article
+34	10.5391/ijfis.2013.13.3.200	2013	10.5391/ijfis.2013.13.3.200	A Subclass of Petri Net with Reachability Equivalent to State Equation Satisfiability: Live Single Branch Petri Net	International Journal of Fuzzy Logic and Intelligent Systems	journal-article
+35	10.1109/cimat.1994.389098	None	10.1109/cimat.1994.389098	A zero-one programming of Petri nets to colored Petri net transformation	Proceedings of the Fourth International Conference on Computer Integrated Manufacturing and Automation Technology	proceedings-article
+36	10.1016/j.ress.2011.10.003	2012	10.1016/j.ress.2011.10.003	Backward reachability of Colored Petri Nets for systems diagnosis	Reliability Engineering &amp; System Safety	journal-article
+37	10.1109/icnsc.2016.7478977	2016	10.1109/icnsc.2016.7478977	Lean reachability tree for Petri net analysis	2016 IEEE 13th International Conference on Networking, Sensing, and Control (ICNSC)	proceedings-article
+38	10.1109/icii.2001.983016	None	10.1109/icii.2001.983016	Modeling of SET protocol based on UML and colored Petri net	2001 International Conferences on Info-Tech and Info-Net. Proceedings (Cat. No.01EX479)	proceedings-article
+39	10.1061/41064(358)223	2009	10.1061/41064(358)223	Dynamic Model of Transit Signal Priority on Colored Time Petri Net	ICCTP 2009	proceedings-article
+40	10.1061/9780784412442.203	2012	10.1061/9780784412442.203	Research on Modeling of Cold Chain Distribution Based on Timed Colored Petri Net	CICTP 2012	proceedings-article
+41	10.1109/sfcs.1998.743436	None	10.1109/sfcs.1998.743436	A primitive recursive algorithm for the general Petri net reachability problem	Proceedings 39th Annual Symposium on Foundations of Computer Science (Cat. No.98CB36280)	proceedings-article
+42	10.2514/5.9781600866296.0181.0192	1993	10.2514/5.9781600866296.0181.0192	Colored Petri Net Model of Command and Control Nodes	Toward a Science of Command, Control, and Communications	book-chapter
+43	10.17706/jcp.13.2.236-243	2018	10.17706/jcp.13.2.236-243	Weak Consistency Model in Distributed Systems Using Hierarchical Colored Petri Net	Journal of Computers	journal-article
+44	10.1201/b17399-173	2014	10.1201/b17399-173	A Colored Petri Net model for railway track maintenance with two-level inspection	Safety and Reliability: Methodology and Applications	book-chapter
+45	10.1109/bmei.2010.5639812	2010	10.1109/bmei.2010.5639812	Colored Petri net based workflow model mapping	2010 3rd International Conference on Biomedical Engineering and Informatics	proceedings-article
+46	10.1109/candar.2015.65	2015	10.1109/candar.2015.65	Accelerating Reachability Analysis on Petri Net for Mutual Exclusion-Based Deadlock Detection	2015 Third International Symposium on Computing and Networking (CANDAR)	proceedings-article
+47	10.1109/tac.2016.2574120	2017	10.1109/tac.2016.2574120	Basis Marking Representation of Petri Net Reachability Spaces and Its Application to the Reachability Problem	IEEE Transactions on Automatic Control	journal-article
+48	10.1109/synasc.2011.16	2011	10.1109/synasc.2011.16	Reachability Analysis of Time Basic Petri Nets: A Time Coverage Approach	2011 13th International Symposium on Symbolic and Numeric Algorithms for Scientific Computing	proceedings-article
+49	10.5391/jkiis.2006.16.3.291	2006	10.5391/jkiis.2006.16.3.291	Fuzzy Colored Timed Petri Nets for Context Inference	Journal of Korean Institute of Intelligent Systems	journal-article
+50	10.1016/j.ins.2017.03.014	2017	10.1016/j.ins.2017.03.014	Petri net representation and reachability analysis of 0–1 integer linear programming problems	Information Sciences	journal-article
+51	10.1007/978-3-031-61433-0_11	2024	10.1007/978-3-031-61433-0_11	Petri Net Synthesis from a Reachability Set	Lecture Notes in Computer Science	book-chapter
+52	10.4304/jsw.8.12.3152-3157	2013	10.4304/jsw.8.12.3152-3157	The Performance Analysis of Web Service Composition Based on Timed Colored Petri Net	Journal of Software	journal-article
+53	10.4028/www.scientific.net/amm.404.618	2013	10.4028/www.scientific.net/amm.404.618	Two-Tone Colored Petri Net and its Application in PLC	Applied Mechanics and Materials	journal-article
+54	10.1016/0304-3975(77)90059-7	1977	10.1016/0304-3975(77)90059-7	Decidable problems on the strong connectivity of Petri net reachability sets	Theoretical Computer Science	journal-article
+55	10.1299/jsmeicone.2015.23._icone23-1_20	2015	10.1299/jsmeicone.2015.23._icone23-1_20	ICONE23-1031 FUNCTION-CENTERED MODELING OF THE DIGITAL INSTRUMENT AND CONTROL SYSTEM USING THE COLORED PETRI NET	The Proceedings of the International Conference on Nuclear Engineering (ICONE)	journal-article
+56	10.1109/apsec.1997.640172	None	10.1109/apsec.1997.640172	Finite symbolic reachability graphs for high-level Petri nets	Proceedings of Joint 4th International Computer Science Conference and 4th Asia Pacific Software Engineering Conference	proceedings-article
+57	10.1177/0037549703038876	2003	10.1177/0037549703038876	Colored Petri Net Modules of Complex Selecting Criteria	SIMULATION	journal-article
+58	10.1109/icsmc.1995.538193	None	10.1109/icsmc.1995.538193	Petri net reachability analysis meets model-based diagnostic problem solving	1995 IEEE International Conference on Systems, Man and Cybernetics. Intelligent Systems for the 21st Century	proceedings-article
+59	10.1145/800076.802477	1981	10.1145/800076.802477	An algorithm for the general Petri net reachability problem	Proceedings of the thirteenth annual ACM symposium on Theory of computing  - STOC '81	proceedings-article
+60	10.1016/s0304-3975(96)00010-2	1997	10.1016/s0304-3975(96)00010-2	A symbolic reachability graph for coloured petri nets	Theoretical Computer Science	journal-article
+61	10.1109/mwscas.1990.140833	None	10.1109/mwscas.1990.140833	Colored Petri net models of concurrent Ada programs	Proceedings of the 33rd Midwest Symposium on Circuits and Systems	proceedings-article
+62	10.1007/bfb0097780	1999	10.1007/bfb0097780	Stochastic colored petri net models for rainbow optical networks	Lecture Notes in Computer Science	book-chapter
+63	10.1109/apscc.2007.4414491	2007	10.1109/apscc.2007.4414491	Colored Petri Net Based Automatic Service Composition	The 2nd IEEE Asia-Pacific Service Computing Conference (APSCC 2007)	proceedings-article
+64	10.1137/0213029	1984	10.1137/0213029	An Algorithm for the General Petri Net Reachability Problem	SIAM Journal on Computing	journal-article
+65	10.1016/j.ic.2008.06.003	2008	10.1016/j.ic.2008.06.003	Bouziane’s transformation of the Petri net reachability problem and incorrectness of the related algorithm	Information and Computation	journal-article
+66	10.1109/icca.2007.4376878	2007	10.1109/icca.2007.4376878	Analysis for Reachability Problem of Bounded Petri Net Using Key Constraints Method	2007 IEEE International Conference on Control and Automation	proceedings-article
+67	10.1109/wodes.2002.1167680	None	10.1109/wodes.2002.1167680	Undirected colored Petri net for modelling and supervisory control of AGV systems	Sixth International Workshop on Discrete Event Systems, 2002. Proceedings.	proceedings-article
+68	10.3724/sp.j.1218.2013.00332	2013	10.3724/sp.j.1218.2013.00332	Research on Modeling and Reachability Problem of Autonomous Underwater Vehicle Architecture Based on Object-oriented Petri Net	Robot	journal-article
+69	10.17485/ijst/2015/v8i35/77633	2015	10.17485/ijst/2015/v8i35/77633	Modeling Timestamp Ordering Method Using Colored Petri Net	Indian Journal of Science and Technology	journal-article
+70	10.1109/iccke.2011.6413320	2011	10.1109/iccke.2011.6413320	Modeling a resource management method using hierarchical colored Petri net	2011 1st International eConference on Computer and Knowledge Engineering (ICCKE)	proceedings-article
+71	10.1109/icecct.2015.7226095	2015	10.1109/icecct.2015.7226095	Rectangular array languages generated by a Colored Petri net	2015 IEEE International Conference on Electrical, Computer and Communication Technologies (ICECCT)	proceedings-article
+72	10.1109/eei63073.2024.10696035	2024	10.1109/eei63073.2024.10696035	Workflow Net Based on Colored Petri Net: A Modeling Method for MBSE Modeling Activities	2024 6th International Conference on Electronic Engineering and Informatics (EEI)	proceedings-article
+73	10.1109/tencon.2016.7848436	2016	10.1109/tencon.2016.7848436	Interface driven service discovery: Colored Petri-Net based approach	2016 IEEE Region 10 Conference (TENCON)	proceedings-article
+74	10.3901/jme.2011.10.185	2011	10.3901/jme.2011.10.185	System Maintainability Modeling Method Based on Colored Stochastic Time Petri Net	Journal of Mechanical Engineering	journal-article
+75	10.1109/pnpm.1989.68539	None	10.1109/pnpm.1989.68539	Colored GSPN models and automatic symmetry detection	Proceedings of the Third International Workshop on Petri Nets and Performance Models, PNPM89	proceedings-article
+76	10.2168/lmcs-8(4:9)2012	2012	10.2168/lmcs-8(4:9)2012	Petri Net Reachability Graphs: Decidability Status of First Order Properties	Logical Methods in Computer Science	journal-article
+77	10.1109/eit63098.2024.10762064	2024	10.1109/eit63098.2024.10762064	Analysis of virtual coupling control parameters based on colored Petri net	2024 3rd International Conference on Electronics and Information Technology (EIT)	proceedings-article
+78	10.5013/ijssst.a.17.25.11	2016	10.5013/ijssst.a.17.25.11	Optimization Analysis of Hospital Business Process Based on Colored Time Petri Net	International Journal of Simulation: Systems, Science &amp; Technology	journal-article
+79	10.1049/cp.2011.0480	2011	10.1049/cp.2011.0480	Optimal switching operation using knowledge based colored petri net	International Conference on Sustainable Energy and Intelligent Systems (SEISCON 2011)	proceedings-article
+80	10.1109/acomp.2017.23	2017	10.1109/acomp.2017.23	Modeling and Simulation of ISO 8583 Transaction Using Timed Colored Petri Net	2017 International Conference on Advanced Computing and Applications (ACOMP)	proceedings-article
+81	10.1016/s0377-2217(01)00026-1	2002	10.1016/s0377-2217(01)00026-1	Task net: Transactional workflow model based on colored Petri net	European Journal of Operational Research	journal-article
+82	10.1007/978-3-642-13675-7_11	2010	10.1007/978-3-642-13675-7_11	Factorization Properties of Symbolic Unfoldings of Colored Petri Nets	Lecture Notes in Computer Science	book-chapter
+83	10.1109/apscc.2007.16	2007	10.1109/apscc.2007.16	Colored Petri Net Based Automatic Service Composition	The 2nd IEEE Asia-Pacific Service Computing Conference (APSCC 2007)	proceedings-article
+84	10.1109/iccsn.2009.58	2009	10.1109/iccsn.2009.58	Verification and Analysis of Access Control Policy with Colored Petri Net	2009 International Conference on Communication Software and Networks	proceedings-article
+85	10.3390/sym17040487	2025	10.3390/sym17040487	Improvement of Scheduling Optimization of Cyber-Physical Systems Based on Petri Net and Intelligent Algorithm	Symmetry	journal-article
+86	10.1109/mmmc.2006.1651321	None	10.1109/mmmc.2006.1651321	Modeling of Web-based Collaborative Negotiation Systems Using Colored Petri Net	2006 12th International Multi-Media Modelling Conference	proceedings-article
+87	10.1109/ieec.2010.5533237	2010	10.1109/ieec.2010.5533237	Generating Test Cases Using Colored Petri Net	2010 2nd International Symposium on Information Engineering and Electronic Commerce	proceedings-article
+88	10.1109/icirt.2018.8641674	2018	10.1109/icirt.2018.8641674	Using Colored Petri net for Level-Crossing safety analysis	2018 International Conference on Intelligent Rail Transportation (ICIRT)	proceedings-article
+89	10.1109/isic.2002.1157863	None	10.1109/isic.2002.1157863	Colored Petri net control of OR-logic	Proceedings of the IEEE Internatinal Symposium on Intelligent Control	proceedings-article
+90	10.1023/b:disc.0000028197.25480.d6	2004	10.1023/b:disc.0000028197.25480.d6	A Sufficient Condition for Reachability in a General Petri Net	Discrete Event Dynamic Systems	journal-article
+91	10.1109/icrms.2009.5270112	2009	10.1109/icrms.2009.5270112	A new approach to analyze the reachability of petri net and its use in maintenance	2009 8th International Conference on Reliability, Maintainability and Safety	proceedings-article
+92	10.1109/lpe.2002.1029618	None	10.1109/lpe.2002.1029618	Power estimation of sequential circuits using hierarchical colored hardware Petri net modeling	Proceedings of the International Symposium on Low Power Electronics and Design	proceedings-article
+93	10.1007/978-3-540-76719-0_20	None	10.1007/978-3-540-76719-0_20	Enhancing Web-Based Adaptive Learning with Colored Timed Petri Net	Lecture Notes in Computer Science	book-chapter
+94	10.1109/ptc.2003.1304751	None	10.1109/ptc.2003.1304751	A colored Petri-Net model for load-transfer in MRT power systems	2003 IEEE Bologna Power Tech Conference Proceedings,	proceedings-article
+95	10.3390/info15020118	2024	10.3390/info15020118	Formal Security Analysis of ISA100.11a Standard Protocol Based on Colored Petri Net Tool	Information	journal-article
+96	10.1109/access.2019.2955282	2019	10.1109/access.2019.2955282	Colored Petri Net Based Cache Side Channel Vulnerability Evaluation	IEEE Access	journal-article
+97	10.3390/app122312385	2022	10.3390/app122312385	Timed Colored Petri Net-Based Event Generators for Web Systems Simulation	Applied Sciences	journal-article
+98	10.1007/978-3-319-45994-3_6	2016	10.1007/978-3-319-45994-3_6	Occam’s Razor Applied to the Petri Net Coverability Problem	Lecture Notes in Computer Science	book-chapter
+99	10.1109/ihmsc.2009.89	2009	10.1109/ihmsc.2009.89	Application of Colored Petri Net in Command and Control System	2009 International Conference on Intelligent Human-Machine Systems and Cybernetics	proceedings-article
+100	10.1109/iecon.2010.5675312	2010	10.1109/iecon.2010.5675312	Colored Petri Net model of the Session Initiation Protocol (SIP)	IECON 2010 - 36th Annual Conference on IEEE Industrial Electronics Society	proceedings-article

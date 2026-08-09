@@ -1,0 +1,101 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1201/9781003336945-2	2022	10.1201/9781003336945-2	Dataflow Computing	Acceleration of Biomedical Image Processing with Dataflow on FPGAs	book-chapter
+2	10.1109/tr.2008.2010170	2008	10.1109/tr.2008.2010170	Your Inputs Requested for the 2008 Annual Technical Report (ATR)	IEEE Transactions on Reliability	journal-article
+3	10.1201/9781003336945-3	2022	10.1201/9781003336945-3	Acceleration of Imperative Code with Dataflow Computing	Acceleration of Biomedical Image Processing with Dataflow on FPGAs	book-chapter
+4	10.1097/00006199-197903000-00004	1979	10.1097/00006199-197903000-00004	Complete Report of Descriptive and Inferential Statistics Requested	Nursing Research	journal-article
+5	10.1201/9781003336945	2022	10.1201/9781003336945	Acceleration of Biomedical Image Processing with Dataflow on FPGAs		monograph
+6	10.1201/9781003336945-4	2022	10.1201/9781003336945-4	Biomedical Image Processing and Reconstruction	Acceleration of Biomedical Image Processing with Dataflow on FPGAs	book-chapter
+7	10.7554/elife.43761.007	None	10.7554/elife.43761.007	Table 2. Summary of the major FC inputs to each site.		component
+8	10.1097/00149078-198812010-00011	1988	10.1097/00149078-198812010-00011	ON-SITE INCINERATION REQUESTED FOR LOW-LEVEL RADIOACTIVE WASTE	Biomedical Safety &amp; Standards	journal-article
+9	10.1111/j.1547-5069.1998.tb01256.x	1998	10.1111/j.1547-5069.1998.tb01256.x	Clinical Trials ‐ Response from Reader's Requested	Image: the Journal of Nursing Scholarship	journal-article
+10	10.1201/9781003336945-1	2022	10.1201/9781003336945-1	Introduction	Acceleration of Biomedical Image Processing with Dataflow on FPGAs	book-chapter
+11	10.1201/9781003336945-5	2022	10.1201/9781003336945-5	Conclusion	Acceleration of Biomedical Image Processing with Dataflow on FPGAs	book-chapter
+12	10.32657/10356/50583	None	10.32657/10356/50583	Algorithms for image saliency via sparse representation and multi-scale inputs image retargeting		dissertation
+13	10.1023/a:1015565108790	2002	10.1023/a:1015565108790	Editorial: Open Letter to the Scientific Community of Mycologists. Inputs from Referees Requested	Water, Air, and Soil Pollution	journal-article
+14	10.1201/b11716-30	2017	10.1201/b11716-30	Dataflow-Based Design and Implementation of Image Processing Applications	Multimedia Image and Video Processing	book-chapter
+15	10.4204/eptcs.323.1	2020	10.4204/eptcs.323.1	A Complete Language for Faceted Dataflow Programs	Electronic Proceedings in Theoretical Computer Science	journal-article
+16	10.1109/test.1991.519519	None	10.1109/test.1991.519519	ACHIEVING COMPLETE DELAY FAULT TESTABILITY BY EXTRA INPUTS	1991, Proceedings. International Test Conference	proceedings-article
+17	10.5194/gmd-2019-24-rc2	2019	10.5194/gmd-2019-24-rc2	Requested review		peer-review
+18	10.5194/cp-2017-28-rc1	2017	10.5194/cp-2017-28-rc1	Requested Review		peer-review
+19	10.1080/13696998.2026.2655546	2026	10.1080/13696998.2026.2655546	Response to Kirshner et al.: updated cost consequence analyses using requested inputs	Journal of Medical Economics	journal-article
+20	10.1145/2871744	2016	10.1145/2871744	On Memory Reuse Between Inputs and Outputs of Dataflow Actors	ACM Transactions on Embedded Computing Systems	journal-article
+21	10.5194/gmd-2016-95-rc2	2016	10.5194/gmd-2016-95-rc2	Requested review		peer-review
+22	10.7717/peerjcs.760/fig-4	None	10.7717/peerjcs.760/fig-4	Figure 4: Corresponding mapping relationships among the conditional inputs, refined image and ground truth.		component
+23	10.1016/0262-8856(83)90057-4	1983	10.1016/0262-8856(83)90057-4	Slow scan inputs to Intellect 200	Image and Vision Computing	journal-article
+24	10.5194/gmd-2016-95-rc5	2016	10.5194/gmd-2016-95-rc5	Requested review		peer-review
+25	10.5194/bg-7-4037-2010	2010	10.5194/bg-7-4037-2010	Atmospheric nutrient inputs to the northern levantine basin from a long-term observation: sources and comparison with riverine inputs	Biogeosciences	journal-article
+26	10.1093/jof/73.11.724	1975	10.1093/jof/73.11.724	Logging Around an Osprey Nest Site–An Observation	Journal of Forestry	journal-article
+27	10.3403/30338627u	None	10.3403/30338627u	Space. Earth observation. Image processing levels		standard
+28	10.3403/30338627	None	10.3403/30338627	Space. Earth observation. Image processing levels		standard
+29	10.5220/0001339800130021	2007	10.5220/0001339800130021	ITKBOARD: A VISUAL DATAFLOW LANGUAGE FOR BIOMEDICAL IMAGE PROCESSING	Proceedings of the Second International Conference on Software and Data Technologies	proceedings-article
+30	10.1007/s11554-014-0462-6	2016	10.1007/s11554-014-0462-6	High-level dataflow programming for real-time image processing on smart cameras	Journal of Real-Time Image Processing	journal-article
+31	10.1109/cain58948.2023.00010	2023	10.1109/cain58948.2023.00010	Dataflow graphs as complete causal graphs	2023 IEEE/ACM 2nd International Conference on AI Engineering – Software Engineering for AI (CAIN)	proceedings-article
+32	10.3030/838342	2019	10.3030/838342			grant
+33	10.1109/dasip.2010.5706280	2010	10.1109/dasip.2010.5706280	Classification and transformation of dynamic dataflow programs	2010 Conference on Design and Architectures for Signal and Image Processing (DASIP)	proceedings-article
+34	10.7717/peerj.4396/supp-8	None	10.7717/peerj.4396/supp-8	Data S3: TM-site results of the complete pB263R model		component
+35	10.32388/cx7gu8	2020	10.32388/cx7gu8	Performed Observation Approach Anatomic Site Code	Definitions	reference-entry
+36	10.7554/elife.35657.006	None	10.7554/elife.35657.006	Figure 2—figure supplement 1. Complete list of all inputs to ChAT and PV interneurons.		component
+37	10.2352/cic.1994.2.1.art00028	1994	10.2352/cic.1994.2.1.art00028	A Dataflow Environment for Real-Time Image Processing Applications	Color and Imaging Conference	journal-article
+38	10.5194/se-2019-41-ec2	2019	10.5194/se-2019-41-ec2	requested changes		peer-review
+39	10.32388/z2nm41	2020	10.32388/z2nm41	Defined Observation Target Anatomic Site Code	Definitions	reference-entry
+40	10.2307/j.ctt5hjn3x.3	None	10.2307/j.ctt5hjn3x.3	AS REQUESTED	Imperial	book-chapter
+41	10.1007/s11119-004-0687-7	2005	10.1007/s11119-004-0687-7	Soil Test, Aerial Image and Yield Data as Inputs for Site-specific Fertility and Hybrid Management Under Maize	Precision Agriculture	journal-article
+42	10.1145/3731302.3731319	2026	10.1145/3731302.3731319	Advanced: Optimal Dataflow Programs and Dataflow SPLs	Science of Software Product Lines	book-chapter
+43	10.1007/3-540-54415-1_47	1991	10.1007/3-540-54415-1_47	Towards a complete hierarchy of compositional dataflow models	Lecture Notes in Computer Science	book-chapter
+44	10.1016/j.image.2013.08.013	2013	10.1016/j.image.2013.08.013	Automated design of networks of transport-triggered architecture processors using dynamic dataflow programs	Signal Processing: Image Communication	journal-article
+45	10.1021/acsomega.6c05429.s001	None	10.1021/acsomega.6c05429.s001	ImagiChem: Hybrid Deterministic Image-Conditioned Generation of Chemically Valid and Drug-like Molecules from Artistic Inputs		component
+46	10.32388/5rc18o	2020	10.32388/5rc18o	Defined Observation Target Anatomic Site Laterality Code	Definitions	reference-entry
+47	10.1036/1097-8542.181000	None	10.1036/1097-8542.181000	Dataflow systems	AccessScience	dataset
+48	10.32388/1mchwl	2020	10.32388/1mchwl	Performed Observation Approach Anatomic Site Laterality Code	Definitions	reference-entry
+49	10.1021/jacs.6b11525.s001	None	10.1021/jacs.6b11525.s001	Direct Observation of Nanosecond Water Exchange Dynamics at a Protein Metal Site		component
+50	10.7717/peerj-cs.1626/table-5	None	10.7717/peerj-cs.1626/table-5	Table 5: Requested action satisfaction policy.		component
+51	10.5194/cp-2016-78-rc1	2016	10.5194/cp-2016-78-rc1	Review requested by journal editor		peer-review
+52	10.1109/icpr.1990.119397	None	10.1109/icpr.1990.119397	The synchronous dataflow machine: a computer architecture for real time image processing	[1990] Proceedings. 10th International Conference on Pattern Recognition	proceedings-article
+53	10.32388/padn7l	2020	10.32388/padn7l	Defined Observation Result Target Anatomic Site Code	Definitions	reference-entry
+54	10.17816/jowd18811-24757	None	10.17816/jowd18811-24757	Intraoperative observation of complete fundal rupture of the uterus at the first stage of labor		component
+55	10.1109/dasip.2017.8122118	2017	10.1109/dasip.2017.8122118	Detecting data-parallel synchronous dataflow graphs	2017 Conference on Design and Architectures for Signal and Image Processing (DASIP)	proceedings-article
+56	10.17816/jowd18811-18508	None	10.17816/jowd18811-18508	Intraoperative observation of complete fundal rupture of the uterus at the first stage of labor		component
+57	10.4324/9780203870709-15	2009	10.4324/9780203870709-15	OBSERVATION AND CONTENT ANALYSIS	Quantitative Psychological Research	book-chapter
+58	10.1109/icpp.1993.66	1993	10.1109/icpp.1993.66	Dataflow Graph Optimization for Dataflow Architectures a Dataflow Otimizing Compiler	1993 International Conference on Parallel Processing - ICPP'93 Vol2	proceedings-article
+59	10.23919/eusipco47968.2020.9287315	2021	10.23919/eusipco47968.2020.9287315	Study on the Influence of Multiple Image Inputs of a Multi-View Fusion Neural Network Based on Grad-CAM and Masked Image Inputs	2020 28th European Signal Processing Conference (EUSIPCO)	proceedings-article
+60	10.1109/dasip.2018.8596931	2018	10.1109/dasip.2018.8596931	Design Flow for Portable Dataflow Programming of Heterogeneous Platforms	2018 Conference on Design and Architectures for Signal and Image Processing (DASIP)	proceedings-article
+61	10.5194/os-2016-31-rc1	2016	10.5194/os-2016-31-rc1	Requested review of the COSYNA manuscript		peer-review
+62	10.2307/jj.10040758	2024	10.2307/jj.10040758	Birdwatching in Maine		monograph
+63	10.1049/ipr2.12466	2022	10.1049/ipr2.12466	Image classification using convolutional neural network with wavelet domain inputs	IET Image Processing	journal-article
+64	10.1201/9780367813277-15	2020	10.1201/9780367813277-15	Perform On-Site Observation	Applied Ergonomics Handbook	book-chapter
+65	10.32388/os9onb	2020	10.32388/os9onb	Performed Observation Result Target Anatomic Site Laterality Code	Definitions	reference-entry
+66	10.13164/re.2025.0482	2025	10.13164/re.2025.0482	A Streaming Dataflow Accelerator for Sparse SVM Kernel Computation in Hyperspectral Image Classification	Radioengineering	journal-article
+67	10.1109/his.2007.54	2007	10.1109/his.2007.54	Dataflow orchestration of image processing algorithms using high-level petri nets	7th International Conference on Hybrid Intelligent Systems (HIS 2007)	proceedings-article
+68	10.32388/eiwrf1	2020	10.32388/eiwrf1	Defined Observation Result Target Anatomic Site Laterality Code	Definitions	reference-entry
+69	10.1787/888933953489	None	10.1787/888933953489	Figure 6.3. TFA Measures: Support Types Requested		component
+70	10.1002/9781394306657.fmatter	2024	10.1002/9781394306657.fmatter	Front Matter	Multitemporal Earth Observation Image Analysis	other
+71	10.23919/ecc.2007.7068990	2007	10.23919/ecc.2007.7068990	Unknown inputs, robust state observation for linear parameter varying systems	2007 European Control Conference (ECC)	proceedings-article
+72	10.1109/reconfig.2016.7857161	2016	10.1109/reconfig.2016.7857161	Dataflow optimization for programmable embedded image preprocessing accelerators	2016 International Conference on ReConFigurable Computing and FPGAs (ReConFig)	proceedings-article
+73	10.7717/peerjcs.283/fig-4	None	10.7717/peerjcs.283/fig-4	Figure 4: Throughput achieved based on dynamic UDP and TCP traffic inputs and the optimal path chosen for (A) TIA from site 1 to 4; (B) GA from site 1 to 4; C: TIA from site 3 to 2; (D) GA from site 3 to 2.		component
+74	10.1002/9781394306657.index	2024	10.1002/9781394306657.index	Index	Multitemporal Earth Observation Image Analysis	other
+75	10.1109/meco.2017.7977122	2017	10.1109/meco.2017.7977122	A DataFlow course: Dataflow supercomputing	2017 6th Mediterranean Conference on Embedded Computing (MECO)	proceedings-article
+76	10.7554/elife.37382.021	None	10.7554/elife.37382.021	Author response image 7. V-LHX6 OE neurons also received a small amount of excitatory inputs by vGlut1.		component
+77	10.1016/j.automatica.2009.04.009	2009	10.1016/j.automatica.2009.04.009	An observation algorithm for nonlinear systems with unknown inputs	Automatica	journal-article
+78	10.1016/j.automatica.2021.109572	2021	10.1016/j.automatica.2021.109572	A structural approach to unknown inputs observation for switching linear systems	Automatica	journal-article
+79	10.1109/fpl.2014.6927378	2014	10.1109/fpl.2014.6927378	Biomedical image processing and reconstruction with dataflow computing on FPGAs	2014 24th International Conference on Field Programmable Logic and Applications (FPL)	proceedings-article
+80	10.2307/jj.10040758.23	2024	10.2307/jj.10040758.23	References	Birdwatching in Maine	book-chapter
+81	10.5194/bg-2016-313-sc1	2016	10.5194/bg-2016-313-sc1	requested review of manucript		peer-review
+82	10.1061/9780784480922.002	2017	10.1061/9780784480922.002	Analysis of Site-Specific MEPDG Traffic Inputs Parameters for the State of Tennessee in Comparison to National Inputs	Airfield and Highway Pavements 2017	proceedings-article
+83	10.2307/jj.10040758.22	2024	10.2307/jj.10040758.22	Afterword	Birdwatching in Maine	book-chapter
+84	10.1061/9780784416044.ch10	2022	10.1061/9780784416044.ch10	Project Site Safety	Geotechnical Testing, Observation, and Documentation	book-chapter
+85	10.7717/peerj-cs.4049/supp-8	None	10.7717/peerj-cs.4049/supp-8	Supplemental Information 8: Complete image files ‘Anatomy’ and ‘Taxonomy’.		component
+86	10.1109/dasip.2014.7115605	2014	10.1109/dasip.2014.7115605	Automatic generation of dataflow-based reconfigurable co-processing units	Proceedings of the 2014 Conference on Design and Architectures for Signal and Image Processing	proceedings-article
+87	10.1021/acs.nanolett.5b03093.s001	None	10.1021/acs.nanolett.5b03093.s001	Vibrational Spectroscopic Observation of Atomic-Scale Local Surface Sites Using Site-Selective Signal Enhancement		component
+88	10.17951/sil.2025.34.3.23-34	2025	10.17951/sil.2025.34.3.23-34	Some Remarks on Consumer-Requested Invalidity	Studia Iuridica Lublinensia	journal-article
+89	10.2307/j.ctt1cg4mcd.49	2014	10.2307/j.ctt1cg4mcd.49	Observation and Case Study	Psychology	book-chapter
+90	10.1007/s11554-023-01378-5	2024	10.1007/s11554-023-01378-5	A real-time and high-performance MobileNet accelerator based on adaptive dataflow scheduling for image classification	Journal of Real-Time Image Processing	journal-article
+91	10.17816/jowd20646-24753	None	10.17816/jowd20646-24753	Fig. 2. Intraoperative image of the complete uterus didelphia		component
+92	10.17816/jowd20646-19734	None	10.17816/jowd20646-19734	Fig. 2. Intraoperative image of the complete uterus didelphia		component
+93	10.1093/oseo/instance.00059576	1647	10.1093/oseo/instance.00059576	1310. Observation	The Complete Poetry of Robert Herrick, Vol. 1	book-chapter
+94	10.1109/ichis.2007.4344076	2007	10.1109/ichis.2007.4344076	Dataflow orchestration of image processing algorithms using high-level petri nets	7th International Conference on Hybrid Intelligent Systems (HIS 2007)	proceedings-article
+95	10.5194/gi-2015-40-ec1	2016	10.5194/gi-2015-40-ec1	Authors' response requested		peer-review
+96	10.1016/j.jag.2024.104253	2024	10.1016/j.jag.2024.104253	Recovering NDVI over lake surfaces: Initial insights from CYGNSS data enhanced by ERA-5 inputs	International Journal of Applied Earth Observation and Geoinformation	journal-article
+97	10.1093/oseo/instance.00058694	1647	10.1093/oseo/instance.00058694	429. Observation	The Complete Poetry of Robert Herrick, Vol. 1	book-chapter
+98	10.5194/gmd-2020-359-rc1	2020	10.5194/gmd-2020-359-rc1	Important contribution - minor clarifications requested		peer-review
+99	10.58837/chula.the.2022.17	None	10.58837/chula.the.2022.17	The requested record is temporarily suppressed.		dissertation
+100	10.5194/amt-2019-197-rc1	2019	10.5194/amt-2019-197-rc1	Requested review by editorial office		peer-review

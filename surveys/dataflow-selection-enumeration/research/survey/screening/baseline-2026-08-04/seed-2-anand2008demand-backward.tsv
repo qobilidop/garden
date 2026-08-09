@@ -1,0 +1,33 @@
+rank	openalex_id	year	doi	title	venue	type
+1	W101497066	2007	https://doi.org/10.1007/978-3-540-73368-3_41	Structural Abstraction of Software Verification Conditions	Lecture notes in computer science	conference-paper
+2	W145972366	2007		LATEST : Lazy Dynamic Test Input Generation	UC Berkeley	report
+3	W1517790727	2007	https://doi.org/10.1007/978-3-540-73368-3_10	Low-Level Library Analysis and Summarization	Lecture notes in computer science	conference-paper
+4	W1556566737	2004	https://doi.org/10.1007/978-3-540-24730-2_35	A Temporal Logic of Nested Calls and Returns	Lecture notes in computer science	conference-paper
+5	W1966982815	2005	https://doi.org/10.1145/1040305.1040334	Scalable error detection using boolean satisfiability		conference-paper
+6	W1971719033	2007	https://doi.org/10.1145/1273463.1273464	Under-constrained execution		conference-paper
+7	W1993836075	2002	https://doi.org/10.1145/512529.512558	Extended static checking for Java		conference-paper
+8	W2002644257	2001	https://doi.org/10.1145/503502.503503	Model checking of hierarchical state machines	ACM Transactions on Programming Languages and Systems	article
+9	W2080573945	1995	https://doi.org/10.1145/199448.199462	Precise interprocedural dataflow analysis via graph reachability		conference-paper
+10	W2084974764	2000	https://doi.org/10.1002/(sici)1097-024x(200006)30:7<775::aid-spe309>3.0.co;2-h	A static analyzer for finding dynamic programming errors	Software Practice and Experience	article
+11	W2096449544	2005	https://doi.org/10.1145/1064978.1065036	DART	ACM SIGPLAN Notices	article
+12	W2101512909	1976	https://doi.org/10.1145/360248.360252	Symbolic execution and program testing	Communications of the ACM	article
+13	W2115666255	1972	https://doi.org/10.1145/321707.321708	An Algorithm for the Design of Simple Precedence Grammars	Journal of the ACM	article
+14	W2118915305	2000	https://doi.org/10.1109/ase.2000.873666	Generating test data for branch coverage		conference-paper
+15	W2122751766	2003	https://doi.org/10.1145/940071.940114	Tracking pointers with path and context sensitivity for bug detection in C programs		conference-paper
+16	W2129538349	2004	https://doi.org/10.1007/978-3-540-24730-2_15	A Tool for Checking ANSI-C Programs	Lecture notes in computer science	conference-paper
+17	W2132897303	2006	https://doi.org/10.1145/1180405.1180445	EXE		conference-paper
+18	W2133612077	2007	https://doi.org/10.1145/1190215.1190226	Compositional dynamic test generation	ACM SIGPLAN Notices	article
+19	W2133900335	2005	https://doi.org/10.1145/1081706.1081749	Parameterized unit tests		conference-paper
+20	W2135453964	1990	https://doi.org/10.1145/123186.123222	Efficient implementation of a BDD package		conference-paper
+21	W2138721431	2002	https://doi.org/10.1109/icsm.1990.131379	A dynamic approach of test data generation		conference-paper
+22	W2139478536	2005	https://doi.org/10.1145/1108768.1108817	Generalizing symbolic execution to library classes	ACM SIGSOFT Software Engineering Notes	article
+23	W2146641295	2005	https://doi.org/10.1145/1062455.1062533	Check 'n' crash		conference-abstract
+24	W2162284942	2012	https://doi.org/10.1145/2442776.2442783	Automatic predicate abstraction of C programs	ACM SIGPLAN Notices	article
+25	W2171683519	2004	https://doi.org/10.1145/1007512.1007526	Test input generation with java PathFinder		conference-paper
+26	W2483644644	2006	https://doi.org/10.1007/11949374	Software Engineering Education in the Modern Age	Lecture notes in computer science	conference-paper
+27	W2495889793	2002	https://doi.org/10.1007/3-540-45473-x	Fast Software Encryption	Lecture notes in computer science	conference-paper
+28	W2561675875	1999	https://doi.org/10.1108/ir.1999.04926fae.001	Lecture Notes in Computer Science 1205	Industrial Robot the international journal of robotics research and application	article
+29	W3011487919	2009	https://doi.org/10.4324/9780203864760-20	ADDITION AND MULTIPLICATION		article
+30	W4237492309	2005	https://doi.org/10.1145/1065010.1065036	DART		conference-paper
+31	W4242057943	2001	https://doi.org/10.1145/378795.378846	Automatic predicate abstraction of C programs		conference-paper
+32	W4248280766	2005	https://doi.org/10.1145/1108792.1108817	Generalizing symbolic execution to library classes		conference-paper

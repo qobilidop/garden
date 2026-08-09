@@ -1,0 +1,103 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1016/0097-8485(87)85001-5	1987	10.1016/0097-8485(87)85001-5	An algorithm for evaluation of the exact partition function of free internal rotation, and other quantal systems having quadratically dependent energy levels	Computers &amp; Chemistry	journal-article
+2	10.1063/1.37180	1988	10.1063/1.37180	The atomic internal partition function	AIP Conference Proceedings	proceedings-article
+3	10.1016/b978-1-4831-9973-3.50007-0	1968	10.1016/b978-1-4831-9973-3.50007-0	PERFECT GASES AND THE INTERNAL PARTITION FUNCTION	Equilibrium Statistical Mechanics	book-chapter
+4	10.1016/j.bpj.2013.11.2467	2014	10.1016/j.bpj.2013.11.2467	Exact Partition Function Zeros of the Wako-Saitô-Muñoz-Eaton Protein Model	Biophysical Journal	journal-article
+5	10.1109/icip.2010.5650185	2010	10.1109/icip.2010.5650185	Estimation of the Ising field parameter thanks to the exact partition function	2010 IEEE International Conference on Image Processing	proceedings-article
+6	10.1119/1.1976530	1970	10.1119/1.1976530	Exact Partition Function for the Two-Dimensional Ising Model	American Journal of Physics	journal-article
+7	10.1016/0375-9601(83)90217-7	1983	10.1016/0375-9601(83)90217-7	An exact partition function for the classical Dzialoshinsky-Moriya chain	Physics Letters A	journal-article
+8	10.1103/physrevlett.110.248101	2013	10.1103/physrevlett.110.248101	Exact Partition Function Zeros of The Wako-Saitô-Muñoz-Eaton Protein Model	Physical Review Letters	journal-article
+9	10.1142/s0217732312502008	2012	10.1142/s0217732312502008	EXACT ABJM PARTITION FUNCTION FROM TBA	Modern Physics Letters A	journal-article
+10	10.3938/jkps.44.617	2004	10.3938/jkps.44.617	Exact Partition Function Zeros of Two-Dimensional Lattice Polymers	Journal of the Korean Physical Society	journal-article
+11	10.1016/0038-1098(90)90927-4	1990	10.1016/0038-1098(90)90927-4	Dynamic compensation theorem and exact partition function of a spin-boson system	Solid State Communications	journal-article
+12	10.1103/physrevb.57.12772	1998	10.1103/physrevb.57.12772	Exact nonequilibrium current from the partition function for impurity-transport problems	Physical Review B	journal-article
+13	10.1007/978-3-642-41449-7_42	2014	10.1007/978-3-642-41449-7_42	Table 40. D2 16O (D16OD): Internal partition function	Non-linear Triatomic Molecules	book-chapter
+14	10.1016/j.cpc.2018.03.022	2018	10.1016/j.cpc.2018.03.022	Transfer matrix algorithm for computing the exact partition function of a square lattice polymer	Computer Physics Communications	journal-article
+15	10.1155/2017/6970870	2017	10.1155/2017/6970870	Exact Partition Function for the Random Walk of an Electrostatic Field	Advances in Mathematical Physics	journal-article
+16	10.1007/jhep05(2019)077	2019	10.1007/jhep05(2019)077	Exact generalized partition function of 2D CFTs at large central charge	Journal of High Energy Physics	journal-article
+17	10.1016/0921-4534(90)90539-q	1990	10.1016/0921-4534(90)90539-q	Partition function of the BCS model in the nonregular phase: Exact results	Physica C: Superconductivity	journal-article
+18	10.1093/ptep/ptv145	2015	10.1093/ptep/ptv145	Exact instanton expansion of the ABJM partition function	Progress of Theoretical and Experimental Physics	journal-article
+19	10.1016/0550-3213(96)00134-4	1996	10.1016/0550-3213(96)00134-4	Exact partition function and boundary state of 2D massive Ising field theory with boundary magnetic field	Nuclear Physics B	journal-article
+20	10.4324/9781003317210-18	2023	10.4324/9781003317210-18	Kolkata Partition Museum	The Long History of Partition in Bengal	book-chapter
+21	10.1016/0375-9601(90)90603-l	1990	10.1016/0375-9601(90)90603-l	Exact calculation method of the partition function for one-component classical systems with two-body interactions	Physics Letters A	journal-article
+22	10.4324/9781003317210-15	2023	10.4324/9781003317210-15	Revisiting Bengal Partition	The Long History of Partition in Bengal	book-chapter
+23	10.1007/bf00672086	1990	10.1007/bf00672086	Exact quantum partition function of the BCS model	International Journal of Theoretical Physics	journal-article
+24	10.1103/physreve.86.011802	2012	10.1103/physreve.86.011802	Exact partition function zeros of a polymer on a simple cubic lattice	Physical Review E	journal-article
+25	10.1143/ptp.84.81	1990	10.1143/ptp.84.81	Statistical Mechanics of a Spin-Boson System	Progress of Theoretical Physics	journal-article
+26	10.1103/physreve.62.4558	2000	10.1103/physreve.62.4558	Exact zeros of the partition function for a continuum system with double Gaussian peaks	Physical Review E	journal-article
+27	10.1007/s10714-020-02673-3	2020	10.1007/s10714-020-02673-3	Non-perturbative 3D quantum gravity: quantum boundary states and exact partition function	General Relativity and Gravitation	journal-article
+28	10.1093/hesc/9780198777489.003.0013	2017	10.1093/hesc/9780198777489.003.0013	The electronic partition function	Statistical Thermodynamics	book-chapter
+29	10.1103/physreva.35.4122	1987	10.1103/physreva.35.4122	Quantum oscillator in a non-self-interacting radiation field: Exact calculation of the partition function	Physical Review A	journal-article
+30	10.7717/peerj-cs.2717/table-2	None	10.7717/peerj-cs.2717/table-2	Table 2: Comparison of nodes and edges between event graph (EG) and Periodic Event Graph (PEG) with residual nodes, classified as simple residual nodes (SR) or periodic residual nodes (PR), leading to various event graph variations.		component
+31	10.1142/s0217732395001071	1995	10.1142/s0217732395001071	EXACT PARTITION FUNCTION AND BOUNDARY STATE OF CRITICAL ISING MODEL WITH BOUNDARY MAGNETIC FIELD	Modern Physics Letters A	journal-article
+32	10.1016/j.cpc.2011.01.004	2011	10.1016/j.cpc.2011.01.004	Parallel algorithm for calculation of the exact partition function of a lattice polymer	Computer Physics Communications	journal-article
+33	10.1119/1.1986101	1971	10.1119/1.1986101	"Erratum: “Exact Partition Function for the Two-Dimensional Ising Model,” [Amer. J. Phys.
+                    <b>38</b>
+                    , 1033 (1970)]"	American Journal of Physics	journal-article
+34	10.1063/1.3486176	2010	10.1063/1.3486176	Exact partition function zeros and the collapse transition of a two-dimensional lattice polymer	The Journal of Chemical Physics	journal-article
+35	10.1088/1742-5468/ad64bc	2024	10.1088/1742-5468/ad64bc	Exact partition function of the Potts model on the Sierpinski gasket and the Hanoi lattice	Journal of Statistical Mechanics: Theory and Experiment	journal-article
+36	10.1007/bf02754349	1962	10.1007/bf02754349	On the internal energy and partition function of a Bose system	Il Nuovo Cimento	journal-article
+37	10.1007/bf01017800	1986	10.1007/bf01017800	Exact solution for the partition function of a system of interacting fermions	Theoretical and Mathematical Physics	journal-article
+38	10.1038/srep33523	2016	10.1038/srep33523	Exact low-temperature series expansion for the partition function of the zero-field Ising model on the infinite square lattice	Scientific Reports	journal-article
+39	10.1016/s0009-2614(89)87451-2	1989	10.1016/s0009-2614(89)87451-2	On the temperature dependence of the partition function: Molecular free internal rotation	Chemical Physics Letters	journal-article
+40	10.1143/ptp/84.1.81	1990	10.1143/ptp/84.1.81	Statistical Mechanics of a Spin-Boson System: The Dynamic Compensation Theorem and the Exact Partition Function	Progress of Theoretical Physics	journal-article
+41	10.1016/j.asr.2016.11.021	2017	10.1016/j.asr.2016.11.021	Partition function and astronomical observation of interstellar isomers: Is there a link?	Advances in Space Research	journal-article
+42	10.1063/1.1669624	1968	10.1063/1.1669624	Exact Calculation of the Partition Function for a Model of Two-Dimensional Polymer Crystallization by Chain Folding	The Journal of Chemical Physics	journal-article
+43	10.1016/0009-2614(88)80064-2	1988	10.1016/0009-2614(88)80064-2	On the partition function of free internal rotation. A semiclassical approach	Chemical Physics Letters	journal-article
+44	10.1088/0256-307x/14/4/001	1997	10.1088/0256-307x/14/4/001	Exact Expressions of Energy Spectrum and Partition Function for Quantum Quadratic Systems	Chinese Physics Letters	journal-article
+45	10.1088/0305-4470/36/50/001	2003	10.1088/0305-4470/36/50/001	Random trees between two walls: exact partition function	Journal of Physics A: Mathematical and General	journal-article
+46	10.1016/s0009-2614(02)01907-3	2003	10.1016/s0009-2614(02)01907-3	A novel partition function for partially asymmetrical internal rotation	Chemical Physics Letters	journal-article
+47	10.1007/s00220-008-0438-0	2008	10.1007/s00220-008-0438-0	On the Exact Evaluation of Certain Instances of the Potts Partition Function by Quantum Computers	Communications in Mathematical Physics	journal-article
+48	10.1063/1.1743419	1957	10.1063/1.1743419	Partition Function for Internal Rotation in Methanol and Similar Molecular Models	The Journal of Chemical Physics	journal-article
+49	10.1021/j150559a018	1958	10.1021/j150559a018	Evaluation of the Partition Function for Restricted Internal Rotation	The Journal of Physical Chemistry	journal-article
+50	10.1016/s0304-8853(99)00809-4	2000	10.1016/s0304-8853(99)00809-4	Exact analytical partition function and spin gap for a 2×3 quantum spin ladder	Journal of Magnetism and Magnetic Materials	journal-article
+51	10.1016/0375-9601(92)90233-c	1992	10.1016/0375-9601(92)90233-c	Reply to the comment on “Exact calculation method of the partition function for one-component classical systems with two-body interactions”	Physics Letters A	journal-article
+52	10.2139/ssrn.3549335	2020	10.2139/ssrn.3549335	Antiduality in Exact Partition Games	SSRN Electronic Journal	journal-article
+53	10.1093/hesc/9780198777489.003.0003	2017	10.1093/hesc/9780198777489.003.0003	Applications of the molecular partition function	Statistical Thermodynamics	book-chapter
+54	10.1093/hesc/9780198727873.003.0071	2016	10.1093/hesc/9780198727873.003.0071	The partition function	Elements of Physical Chemistry	book-chapter
+55	10.1002/prot.10327	2003	10.1002/prot.10327	Observation of residual dipolar couplings in short peptides	Proteins: Structure, Function, and Bioinformatics	journal-article
+56	10.1016/0378-4371(91)90011-z	1991	10.1016/0378-4371(91)90011-z	Exact solution of a general two-dimensional Ising model: The partition function	Physica A: Statistical Mechanics and its Applications	journal-article
+57	10.1088/0305-4470/18/15/003	1985	10.1088/0305-4470/18/15/003	The exact location of partition function zeros, a new method for statistical mechanics	Journal of Physics A: Mathematical and General	journal-article
+58	10.1103/physreva.38.527	1988	10.1103/physreva.38.527	Reply to ‘‘Comment on ‘Quantum oscillator in a non-self-interacting radiation field: Exact calculation of the partition function’ ’’	Physical Review A	journal-article
+59	10.58213/we33q780	2020	10.58213/we33q780	PARTITION: AN INEVITABLE EVENT?	Vidhyayana	journal-article
+60	10.1063/1.1673552	1970	10.1063/1.1673552	Exact Calculation of the Partition Function for a Generalized Model of Two-Dimensional Polymer Crystallization by Chain Folding	The Journal of Chemical Physics	journal-article
+61	10.1103/physreva.37.3609	1988	10.1103/physreva.37.3609	Comment on ‘‘Quantum oscillator in a non-self-interacting radiation field: Exact calculation of the partition function’’	Physical Review A	journal-article
+62	10.1023/b:tamp.0000033034.38474.cc	2004	10.1023/b:tamp.0000033034.38474.cc	An Algebraic Method for the Exact Solution of the Partition Function of the Canonical Ensemble in Nuclear Multifragmentation	Theoretical and Mathematical Physics	journal-article
+63	10.31274/rtd-180813-8908	None	10.31274/rtd-180813-8908	Toward the development and implementation of object-oriented extensions for discrete-event simulation in a strongly-typed procedural language		dissertation
+64	10.1002/9783527809080.cataz12397	2020	10.1002/9783527809080.cataz12397	partition coefficient, partition function	Catalysis from A to Z	other
+65	10.1093/hesc/9780198777489.003.0002	2017	10.1093/hesc/9780198777489.003.0002	Sum over states: the molecular partition function	Statistical Thermodynamics	book-chapter
+66	10.1142/s0217751x06025493	2006	10.1142/s0217751x06025493	CLOSED BOSONIC STRING PARTITION FUNCTION IN TIME INDEPENDENT EXACT <font>pp</font>-WAVE BACKGROUND	International Journal of Modern Physics A	journal-article
+67	10.1088/1751-8113/42/38/385004	2009	10.1088/1751-8113/42/38/385004	Some exact results on the Potts model partition function in a magnetic field	Journal of Physics A: Mathematical and Theoretical	journal-article
+68	10.1016/0009-2614(94)87058-6	1994	10.1016/0009-2614(94)87058-6	The partition function of free internal rotation. Combined direct and transformed expressions numerical study	Chemical Physics Letters	journal-article
+69	10.1016/j.physa.2026.131909	2026	10.1016/j.physa.2026.131909	Exact computation of the partition function for classical lattice models on hierarchical lattices	Physica A: Statistical Mechanics and its Applications	journal-article
+70	10.1016/s0378-4371(00)00225-9	2000	10.1016/s0378-4371(00)00225-9	Exact Potts model partition function on strips of the triangular lattice	Physica A: Statistical Mechanics and its Applications	journal-article
+71	10.31219/osf.io/m9dzb	2021	10.31219/osf.io/m9dzb	WAVE FUNCTION TO PARTITION FUNCTION: A CORRELATION		posted-content
+72	10.1103/physreve.88.022710	2013	10.1103/physreve.88.022710	"Exact partition function zeros of the Wako-Saitô-Muñoz-Eaton<mml:math xmlns:mml=""http://www.w3.org/1998/Math/MathML"" display=""inline""><mml:mi>β</mml:mi></mml:math>hairpin model"	Physical Review E	journal-article
+73	10.1016/s0304-8853(98)00252-2	1998	10.1016/s0304-8853(98)00252-2	Exact analytical partition function and energy levels for a Heisenberg ring of N=6 spin 1/2 sites	Journal of Magnetism and Magnetic Materials	journal-article
+74	10.3103/s1060992x17020035	2017	10.3103/s1060992x17020035	Polynomial algorithm for exact calculation of partition function for binary spin model on planar graphs	Optical Memory and Neural Networks	journal-article
+75	10.1088/0305-4470/21/11/005	1988	10.1088/0305-4470/21/11/005	An exact functional relation for the partition function of a 2D Ising model with magnetic field	Journal of Physics A: Mathematical and General	journal-article
+76	10.1088/0305-4470/20/2/037	1987	10.1088/0305-4470/20/2/037	Comment on 'The exact location of partition function zeros, a new method for statistical mechanics'	Journal of Physics A: Mathematical and General	journal-article
+77	10.1088/0953-4075/25/8/006	1992	10.1088/0953-4075/25/8/006	Exact classical vibrational-rotational partition function for Lennard-Jones and Morse potentials	Journal of Physics B: Atomic, Molecular and Optical Physics	journal-article
+78	10.1007/springerreference_16814	None	10.1007/springerreference_16814	internal event	SpringerReference	reference-entry
+79	10.1007/bf02846123	1979	10.1007/bf02846123	Scattering contributions to the internal partition function of a diatomic molecular system	Pramana	journal-article
+80	10.1007/jhep12(2015)092	2015	10.1007/jhep12(2015)092	Exact partition function in U(2) × U(2) ABJM theory deformed by mass and Fayet-Iliopoulos terms	Journal of High Energy Physics	journal-article
+81	10.1021/j100404a033	1986	10.1021/j100404a033	Once again on the partition function of free internal rotation: rigorous results	The Journal of Physical Chemistry	journal-article
+82	10.1086/305607	1998	10.1086/305607	The Signature of the Internal Partition Function in Thermodynamical Quantities of the Solar Interior	The Astrophysical Journal	journal-article
+83	10.1093/hesc/9780198777489.003.0010	2017	10.1093/hesc/9780198777489.003.0010	The ideal diatomic gas: the rotational partition function	Statistical Thermodynamics	book-chapter
+84	10.1093/hesc/9780198777489.003.0012	2017	10.1093/hesc/9780198777489.003.0012	The ideal diatomic gas: the vibrational partition function	Statistical Thermodynamics	book-chapter
+85	10.1093/hesc/9780198777489.003.0008	2017	10.1093/hesc/9780198777489.003.0008	The ideal monatomic gas: the translational partition function	Statistical Thermodynamics	book-chapter
+86	10.1093/hesc/9780198777489.003.0004	2017	10.1093/hesc/9780198777489.003.0004	From molecule to mole: the canonical partition function	Statistical Thermodynamics	book-chapter
+87	10.1002/0471743984.vse5386	2005	10.1002/0471743984.vse5386	Partition Function	Van Nostrand's Scientific Encyclopedia	other
+88	10.1002/jcc.540120217	1991	10.1002/jcc.540120217	A simple approximation for the vibrational partition function of a hindered internal rotation	Journal of Computational Chemistry	journal-article
+89	10.1063/1.452846	1987	10.1063/1.452846	The modified Pitzer–Gwinn method for partition function of restricted internal rotation of a molecule	The Journal of Chemical Physics	journal-article
+90	10.1145/2335484.2335506	2012	10.1145/2335484.2335506	Partition and compose	Proceedings of the 6th ACM International Conference on Distributed Event-Based Systems	proceedings-article
+91	10.1088/1742-5468/2009/03/p03010	2009	10.1088/1742-5468/2009/03/p03010	On analyticity with respect to the replica number in random energy models: I. An exact expression for the moment of the partition function	Journal of Statistical Mechanics: Theory and Experiment	journal-article
+92	10.1142/s0217979201004630	2001	10.1142/s0217979201004630	EXACT PARTITION FUNCTION FOR THE POTTS MODEL WITH NEXT-NEAREST NEIGHBOR COUPLINGS ON ARBITRARY-LENGTH LADDERS	International Journal of Modern Physics B	journal-article
+93	10.1111/imj.14775	2021	10.1111/imj.14775	Relationship between residual kidney function and symptom burden in haemodialysis patients	Internal Medicine Journal	journal-article
+94	10.1140/epjc/s2005-02357-y	2005	10.1140/epjc/s2005-02357-y	Finite-size effects and scaling for the thermal QCD deconfinementphase transition within the exact color-singlet partition function	The European Physical Journal C	journal-article
+95	10.1021/acs.jctc.0c00493.s001	None	10.1021/acs.jctc.0c00493.s001	Internal Conversion and Intersystem Crossing with the Exact Factorization		component
+96	10.1515/9781400887255-008	2017	10.1515/9781400887255-008	Lecture 7. Breiman Theorem. Pinsker Partition. K-Systems. Exact Endomorphisms. Gibbs Measures	Topics in Ergodic Theory (PMS-44)	book-chapter
+97	10.1063/1.1723626	1942	10.1063/1.1723626	Erratum: The Partition Function of Molecules with Internal Torsion I. Single Asymmetric Top Attached to Rigid Framework	The Journal of Chemical Physics	journal-article
+98	10.3386/t0194	1996	10.3386/t0194	Exact Maximum Likelihood Estimation of Observation-Driven Econometric   Models		report
+99	10.4324/9781003317210-1	2023	10.4324/9781003317210-1	Introduction	The Long History of Partition in Bengal	book-chapter
+100	10.1109/access.2020.3048675	2021	10.1109/access.2020.3048675	Polyphonic Sound Event Detection Based on Residual Convolutional Recurrent Neural Network With Semi-Supervised Loss Function	IEEE Access	journal-article

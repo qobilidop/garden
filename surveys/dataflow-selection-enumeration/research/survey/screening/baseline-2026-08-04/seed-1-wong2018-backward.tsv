@@ -1,0 +1,64 @@
+rank	openalex_id	year	doi	title	venue	type
+1	W123201289	2011		Introducing Binary Decision Diagrams in the explicit-state verification of Java code	Middlesex University Research Repository (Middlesex University Of London)	conference-paper
+2	W216996474	2018	https://doi.org/10.1184/r1/6469391	TACHYON: Tandem Execution for Efficient Live Patch Testing	Figshare	article
+3	W1265250368	2012	https://doi.org/10.1007/978-3-642-30793-5_12	Secure Multi-Execution through Static Program Transformation	Lecture notes in computer science	conference-paper
+4	W1494019345	2005	https://doi.org/10.1007/3-540-28901-1	Software Product Line Engineering : Foundations, Principles, and Techniques		article
+5	W1668251704	2013		The Java Virtual Machine Specification, Java SE 8 Edition		book
+6	W1692229780	2015	https://doi.org/10.4230/lipics.ecoop.2015.495	The Love/Hate Relationship with the C Preprocessor: An Interview Study	DROPS (Schloss Dagstuhl – Leibniz Center for Informatics)	article
+7	W1967897074	2008	https://doi.org/10.1109/tse.2008.37	Delta Execution for Efficient State-Space Exploration of Object-Oriented Programs	IEEE Transactions on Software Engineering	article
+8	W1983306745	2012	https://doi.org/10.1109/issre.2012.23	Shared Execution for Efficiently Testing Product Lines		conference-paper
+9	W1989790414	2014	https://doi.org/10.1145/2660193.2660212	Phosphor		conference-paper
+10	W1995290095	2012	https://doi.org/10.1145/2382196.2382275	FlowFox		conference-paper
+11	W1999296854	2014	https://doi.org/10.1145/2568225.2568300	Exploring variability-aware execution for testing plugin-based web applications		conference-paper
+12	W2002377711	2013	https://doi.org/10.5555/2486788.2486825	Comparative causality: explaining the differences between executions		article
+13	W2002638840	1994	https://doi.org/10.1089/cmb.1994.1.337	On the Complexity of Multiple Sequence Alignment	Journal of Computational Biology	article
+14	W2008332764	2010	https://doi.org/10.1109/sp.2010.15	Noninterference through Secure Multi-execution		conference-paper
+15	W2009288394	2013	https://doi.org/10.1145/2491411.2491437	Scalable analysis of variable software		conference-paper
+16	W2026859971	2012	https://doi.org/10.1007/978-3-642-33666-9_17	Multi-perspectives on Feature Models	Lecture notes in computer science	conference-paper
+17	W2029717992	2015	https://doi.org/10.1145/2694344.2694394	Dual Execution for On the Fly Fine Grained Execution Comparison		conference-paper
+18	W2040060046	2000	https://doi.org/10.1007/s100090050043	Model checking JAVA programs using JAVA PathFinder	International Journal on Software Tools for Technology Transfer	article
+19	W2048064553	2014	https://doi.org/10.1145/2580950	A Classification and Survey of Analysis Strategies for Software Product Lines	ACM Computing Surveys	article
+20	W2069283169	2013	https://doi.org/10.1145/2491956.2491976	SPL <sup>LIFT</sup>		conference-paper
+21	W2073869982	2014	https://doi.org/10.1145/2642937.2643001	Tracking load-time configuration options		conference-paper
+22	W2074231493	1970	https://doi.org/10.1016/0022-2836(70)90057-4	A general method applicable to the search for similarities in the amino acid sequence of two proteins	Journal of Molecular Biology	article
+23	W2075699551	2011	https://doi.org/10.1145/1883612.1883618	A survey of combinatorial testing	ACM Computing Surveys	article
+24	W2094819373	2012	https://doi.org/10.1145/2377816.2377817	Toward variability-aware testing		conference-paper
+25	W2095450067	2012	https://doi.org/10.1109/sp.2012.48	Rozzle: De-cloaking Internet Malware		conference-paper
+26	W2097146584	2009	https://doi.org/10.1145/1508244.1508267	Efficient online validation with delta execution		conference-paper
+27	W2098345837	2010	https://doi.org/10.1145/1806799.1806864	Using symbolic evaluation to understand behavior in configurable software systems		conference-paper
+28	W2102863244	2014	https://doi.org/10.1145/2661136.2661143	Variational Data Structures		conference-paper
+29	W2105438268	2010	https://doi.org/10.1016/j.infsof.2010.05.011	Software product line testing – A systematic mapping study	Information and Software Technology	article
+30	W2108999965	2003	https://doi.org/10.1016/s1389-1286(02)00352-3	Feature interaction: a critical review and considered forecast	Computer Networks	article
+31	W2115346618	2013	https://doi.org/10.1007/978-3-642-35992-7_2	Variation Programming with the Choice Calculus	Lecture notes in computer science	conference-paper
+32	W2121081915	2002	https://doi.org/10.1145/587051.587053	Isolating cause-effect chains from computer programs		conference-paper
+33	W2135841285	2010	https://doi.org/10.1109/tse.2010.62	An Analysis and Survey of the Development of Mutation Testing	IEEE Transactions on Software Engineering	article
+34	W2136305343	2007	https://doi.org/10.1145/1250734.1250782	Towards locating execution omission errors		conference-paper
+35	W2136601052	2015	https://doi.org/10.1145/2786805.2786830	MultiSE: multi-path symbolic execution using value summaries		conference-paper
+36	W2143106812	2011	https://doi.org/10.1145/1985793.1985872	Coalescing executions for fast uncertainty analysis		conference-paper
+37	W2145373440	2011	https://doi.org/10.1109/tse.2011.104	GenProg: A Generic Method for Automatic Software Repair	IEEE Transactions on Software Engineering	article
+38	W2148524997	2007	https://doi.org/10.1145/1294261.1294284	AutoBash		conference-paper
+39	W2149207009	2007	https://doi.org/10.1145/1297027.1297033	Statistically rigorous java performance evaluation		conference-paper
+40	W2149257325	2008	https://doi.org/10.2201/niipi.2008.5.8	Feature interaction: the security threat from within software systems	Progress in Informatics	article
+41	W2151497944	2013	https://doi.org/10.5555/2486788.2486869	Safe software updates via multi-version execution		article
+42	W2153684747	2012	https://doi.org/10.1145/2103621.2103677	Multiple facets for dynamic information flow	ACM SIGPLAN Notices	article
+43	W2167626029	2011	https://doi.org/10.1145/2025113.2025139	Proactive detection of collaboration conflicts		conference-paper
+44	W2171239903	2013	https://doi.org/10.1145/2465106.2465121	Faceted execution of policy-agnostic programs		conference-paper
+45	W2202148857	2016	https://doi.org/10.1145/2908080.2908098	Precise, dynamic information flow for database-backed applications		conference-paper
+46	W2278011425	1999		Proceedings of the European Conference on Object-oriented Programming (ECOOP'99)	Springer US	article
+47	W2294668324	2016	https://doi.org/10.1145/2884781.2884793	A comparison of 10 sampling algorithms for configurable systems		conference-paper
+48	W2317668908	2016	https://doi.org/10.1145/2872362.2872395	LDX		conference-paper
+49	W2394570354	2016	https://doi.org/10.1007/s10009-016-0425-2	Efficient family-based model checking via variability abstractions	International Journal on Software Tools for Technology Transfer	article
+50	W2463192860	2016	https://doi.org/10.1007/978-3-662-49635-0_1	Faceted Dynamic Information Flow via Control and Data Monads	Lecture notes in computer science	conference-paper
+51	W2477378326	2005	https://doi.org/10.1007/3-540-28901-1	Software Product Line Engineering		book
+52	W2511206070	2016	https://doi.org/10.1145/2970276.2970322	On essential configuration complexity: measuring interactions in highly-configurable systems		conference-paper
+53	W2577202647	2017	https://doi.org/10.1145/3023956.3023966	A choice of variational stacks		conference-paper
+54	W2590137773	2017	https://doi.org/10.1145/3092703.3092714	Faster mutation analysis via equivalence modulo states		conference-paper
+55	W2727998829	2017	https://doi.org/10.48550/arxiv.1706.09357	Differential Testing for Variational Analyses: Experience from Developing KConfigReader	arXiv (Cornell University)	preprint
+56	W2761910860	2017	https://doi.org/10.1145/3135932.3135951	How to efficiently process 2 <sup>100</sup> list variations		conference-paper
+57	W2784023338	2018	https://doi.org/10.1145/3168365.3168376	VarXplorer		conference-paper
+58	W2832106038	2018	https://doi.org/10.48550/arxiv.1807.03837	Understanding Differences among Executions with Variational Traces	arXiv (Cornell University)	preprint
+59	W2887631783	2018	https://doi.org/10.4230/lipics.ecoop.2018.17	CROCHET: Checkpoint and Rollback via Lightweight Heap Traversal on Stock JVMs	DROPS (Schloss Dagstuhl – Leibniz Center for Informatics)	article
+60	W2890509371	2018	https://doi.org/10.1145/3243734.3243806	Faceted Secure Multi Execution		conference-paper
+61	W2898665208	2018	https://doi.org/10.1145/3236024.3264837	Beyond testing configurable systems: applying variational execution to automatic program repair and higher order mutation testing		conference-paper
+62	W3100118001	2016		Precise, dynamic information flow for database-backed applications	DSpace@MIT (Massachusetts Institute of Technology)	preprint
+63	W4206358530	2012	https://doi.org/10.1145/2103656.2103677	Multiple facets for dynamic information flow		conference-paper

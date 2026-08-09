@@ -1,0 +1,101 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1109/isvlsi.2009.16	2009	10.1109/isvlsi.2009.16	Synchronization-Based Abstraction Refinement for Modular Verification of Asynchronous Designs	2009 IEEE Computer Society Annual Symposium on VLSI	proceedings-article
+2	10.1007/978-3-642-15769-1_22	2010	10.1007/978-3-642-15769-1_22	Thread-Modular Counterexample-Guided Abstraction Refinement	Lecture Notes in Computer Science	book-chapter
+3	10.1007/978-3-540-30482-1_23	2004	10.1007/978-3-540-30482-1_23	Counterexample Guided Abstraction Refinement Via Program Execution	Lecture Notes in Computer Science	book-chapter
+4	10.15476/elte.2019.217	None	10.15476/elte.2019.217	Program abstraction and efficient execution		dissertation
+5	10.1016/j.ress.2015.03.012	2015	10.1016/j.ress.2015.03.012	Verifying large modular systems using iterative abstraction refinement	Reliability Engineering &amp; System Safety	journal-article
+6	10.1109/tc.2009.187	2010	10.1109/tc.2009.187	Modular Model Checking of Large Asynchronous Designs with Efficient Abstraction Refinement	IEEE Transactions on Computers	journal-article
+7	10.1007/0-387-34600-7_3	None	10.1007/0-387-34600-7_3	Abstraction	Series on Integrated Circuits and Systems	book-chapter
+8	10.1007/0-387-34600-7_4	None	10.1007/0-387-34600-7_4	Refinement	Series on Integrated Circuits and Systems	book-chapter
+9	10.1007/978-3-319-10575-8_13	2018	10.1007/978-3-319-10575-8_13	Abstraction and Abstraction Refinement	Handbook of Model Checking	book-chapter
+10	10.21236/ada442050	2004	10.21236/ada442050	Compositional Abstraction and Refinement for Aspects (CARA)		report
+11	10.15514/ispras-2023-35(3)-14	2023	10.15514/ispras-2023-35(3)-14	Predicate Abstraction Refinement in Thread-Modular Analysis	Proceedings of the Institute for System Programming of the RAS	journal-article
+12	10.1109/icnsc.2014.6819595	2014	10.1109/icnsc.2014.6819595	A new abstraction-refinement based verifier for modular linear hybrid automata and its implementation	Proceedings of the 11th IEEE International Conference on Networking, Sensing and Control	proceedings-article
+13	10.3724/sp.j.1001.2008.01149	2008	10.3724/sp.j.1001.2008.01149	Verification of Component Composition Based on Abstraction Refinement	Journal of Software	journal-article
+14	10.1007/0-387-27006-x_4	None	10.1007/0-387-27006-x_4	Probabilistic data refinement: The steam boiler	Monographs in Computer Science	book-chapter
+15	10.70675/e2f846eezbcafz4543za309z6a60439b9888	None	10.70675/e2f846eezbcafz4543za309z6a60439b9888	Abstraction and modular verification of inter-enterprise business processes		dissertation
+16	10.1007/978-3-540-73580-9_27	None	10.1007/978-3-540-73580-9_27	An Analysis of Map-Based Abstraction and Refinement	Lecture Notes in Computer Science	book-chapter
+17	10.1007/b138392	2005	10.1007/b138392	Abstraction, Refinement and Proof for Probabilistic Systems	Monographs in Computer Science	book
+18	10.70675/cfa8995bz0af1z4195za29dz066f976c9165	None	10.70675/cfa8995bz0af1z4195za29dz066f976c9165	Abstraction and comparison of execution traces for analysis of embedded multimedia applications		dissertation
+19	10.1109/iccad.2003.1257810	None	10.1109/iccad.2003.1257810	Improving Ariadne's Bundle by following multiple threads in abstraction refinement	ICCAD-2003. International Conference on Computer Aided Design (IEEE Cat. No.03CH37486)	proceedings-article
+20	10.35662/unine-thesis-3199	None	10.35662/unine-thesis-3199	Webassembly as an abstraction for secure and efficient computing in trusted execution environments		dissertation
+21	10.14711/thesis-b1450539	None	10.14711/thesis-b1450539	Scalable symbolic analysis of large real world programs using API abstraction and execution histories		dissertation
+22	10.21236/ada457877	2004	10.21236/ada457877	Predicate Abstraction and Refinement Techniques for Verifying Verilog		report
+23	10.1021/acs.jcim.5c02454.s001	None	10.1021/acs.jcim.5c02454.s001	Large Language Model Agent for Modular Task Execution in Drug Discovery		component
+24	10.1587/transinf.e93.d.994	2010	10.1587/transinf.e93.d.994	An Abstraction Refinement Technique for Timed Automata Based on Counterexample-Guided Abstraction Refinement Loop	IEICE Transactions on Information and Systems	journal-article
+25	10.1007/978-3-540-45069-6_27	2003	10.1007/978-3-540-45069-6_27	Thread-Modular Abstraction Refinement	Lecture Notes in Computer Science	book-chapter
+26	10.21428/92fbeb44.ed873363	None	10.21428/92fbeb44.ed873363	Latent Drummer: A New Abstraction for Modular Sequencers	NIME 2022	proceedings-article
+27	10.1007/0-387-34600-7	2006	10.1007/0-387-34600-7	Abstraction Refinement for Large Scale Model Checking	Series on Integrated Circuits and Systems	book
+28	10.1007/0-387-34600-7_9	None	10.1007/0-387-34600-7_9	Conclusions	Series on Integrated Circuits and Systems	book-chapter
+29	10.1007/0-387-34600-7_1	None	10.1007/0-387-34600-7_1	Introduction	Series on Integrated Circuits and Systems	book-chapter
+30	10.1109/dmcc.1991.633097	None	10.1109/dmcc.1991.633097	Communication Abstraction and Process Refinement	The Sixth Distributed Memory Computing Conference, 1991. Proceedings	proceedings-article
+31	10.1109/ecbs.2008.40	2008	10.1109/ecbs.2008.40	Counterexample Guided Abstraction Refinement is Better under Equational Abstraction	15th Annual IEEE International Conference and Workshop on the Engineering of Computer Based Systems (ecbs 2008)	proceedings-article
+32	10.21203/rs.3.rs-9034420/v1	2026	10.21203/rs.3.rs-9034420/v1	Structural Recomputation Framework: A Deterministic Execution Abstraction for Memory-Constrained Dynamic Programming in Bioinformatics		posted-content
+33	10.3990/1.9789036546461	None	10.3990/1.9789036546461	An abstraction-refinement theory for the analysis and design of concurrent real-time systems		dissertation
+34	10.1007/0-387-34600-7_6	None	10.1007/0-387-34600-7_6	Disjunctive Decomposition	Series on Integrated Circuits and Systems	book-chapter
+35	10.1007/978-1-4471-3273-8_3	1988	10.1007/978-1-4471-3273-8_3	Procedures, Parameters, and Abstraction: Separate Concerns	On the Refinement Calculus	book-chapter
+36	10.1007/0-387-27006-x_7	None	10.1007/0-387-27006-x_7	Proved rules for probabilistic loops	Monographs in Computer Science	book-chapter
+37	10.1007/0-387-34600-7_2	None	10.1007/0-387-34600-7_2	Symbolic Model Checking	Series on Integrated Circuits and Systems	book-chapter
+38	10.1007/0-387-27006-x_2	None	10.1007/0-387-27006-x_2	Probabilistic loops: Invariants and variants	Monographs in Computer Science	book-chapter
+39	10.1007/0-387-34600-7_5	None	10.1007/0-387-34600-7_5	Compositional SCC Analysis	Series on Integrated Circuits and Systems	book-chapter
+40	10.1007/0-387-27006-x_10	None	10.1007/0-387-27006-x_10	The quantitative algebra of qTL	Monographs in Computer Science	book-chapter
+41	10.1007/0-387-27006-x_5	None	10.1007/0-387-27006-x_5	Theory for the demonic model	Monographs in Computer Science	book-chapter
+42	10.1007/0-387-27006-x_9	None	10.1007/0-387-27006-x_9	Quantitative temporal logic: An introduction	Monographs in Computer Science	book-chapter
+43	10.21236/ada470547	2005	10.21236/ada470547	Word Level Predicate Abstraction and Refinement for Verifying RTL Verilog		report
+44	10.1007/0-387-27006-x_6	None	10.1007/0-387-27006-x_6	The geometry of probabilistic programs	Monographs in Computer Science	book-chapter
+45	10.1007/0-387-34600-7_8	None	10.1007/0-387-34600-7_8	Refining SAT Decision Ordering	Series on Integrated Circuits and Systems	book-chapter
+46	10.21236/ada457878	2004	10.21236/ada457878	Experiments with SAT-Based Symbolic Simulation Using Reparameterization in the Abstraction Refinement Framework		report
+47	10.21236/ada400402	2002	10.21236/ada400402	Reducing Manual Abstraction in Formal Verification of Out-of-Order Execution		report
+48	10.1007/978-1-4471-0287-8_5	2001	10.1007/978-1-4471-0287-8_5	Abstraction and refinement of features	Language Constructs for Describing Features	book-chapter
+49	10.1007/978-1-4615-6317-4_7	1997	10.1007/978-1-4615-6317-4_7	Strategic Subgoaling: Using Abstraction Systems	Interleaving Planning and Execution for Autonomous Robots	book-chapter
+50	10.14201/gredos.170086	None	10.14201/gredos.170086	Advancing Quantum Natural Language Processing: Novel Quantum Circuits and Modular Execution Techniques		dissertation
+51	10.64898/2026.05.05.722946	2026	10.64898/2026.05.05.722946	Motor abstraction training generalizes to the refinement of specific movement patterns		posted-content
+52	10.1109/rtss.2013.41	2013	10.1109/rtss.2013.41	Combinatorial Abstraction Refinement for Feasibility Analysis	2013 IEEE 34th Real-Time Systems Symposium	proceedings-article
+53	10.1007/0-387-34600-7_7	None	10.1007/0-387-34600-7_7	Far Side Image Computation	Series on Integrated Circuits and Systems	book-chapter
+54	10.2139/ssrn.5876823	2025	10.2139/ssrn.5876823	Modular Abstraction System (MAS): An Architectural Solution for LLM Context Governance and Autonomous Development		posted-content
+55	10.1007/978-1-4939-3295-5_21	2016	10.1007/978-1-4939-3295-5_21	Complexity Management: Refinement and Abstraction	Model-Based Systems Engineering with OPM and SysML	book-chapter
+56	10.1109/lra.2026.3678003/mm1	None	10.1109/lra.2026.3678003/mm1	Advances in Hybrid Modular Climbing Robots: Design Principles and Refinement Strategies_supp1-3678003.mp4		component
+57	10.1145/2345156.1993567	2012	10.1145/2345156.1993567	Scaling abstraction refinement via pruning	ACM SIGPLAN Notices	journal-article
+58	10.1145/3578359.3593037	2023	10.1145/3578359.3593037	Towards Modular Trusted Execution Environments	Proceedings of the 6th Workshop on System Software for Trusted Execution	proceedings-article
+59	10.1007/0-387-27006-x_11	None	10.1007/0-387-27006-x_11	The quantitative modal μ-calculus, and gambling games	Monographs in Computer Science	book-chapter
+60	10.1127/1432-8364/2010/0067	2010	10.1127/1432-8364/2010/0067	A Modular System for Road Updating, Refinement and Classification from Satellite Images	Photogrammetrie - Fernerkundung - Geoinformation	journal-article
+61	10.3390/g9030039	2018	10.3390/g9030039	An Abstraction-Refinement Methodologyfor Reasoning about Network Games†	Games	journal-article
+62	10.1007/0-387-27006-x_1	None	10.1007/0-387-27006-x_1	Introduction to pGCL: Its logic and its model	Monographs in Computer Science	book-chapter
+63	10.1109/rtss.2009.14	2009	10.1109/rtss.2009.14	Component-Based Abstraction Refinement for Timed Controller Synthesis	2009 30th IEEE Real-Time Systems Symposium	proceedings-article
+64	10.1109/iccps.2011.24	2011	10.1109/iccps.2011.24	Abstraction Refinement for Stability	2011 IEEE/ACM Second International Conference on Cyber-Physical Systems	proceedings-article
+65	10.1007/3-540-36577-x_13	2003	10.1007/3-540-36577-x_13	Multiple-Counterexample Guided Iterative Abstraction Refinement: An Industrial Evaluation	Lecture Notes in Computer Science	book-chapter
+66	10.1109/cdc.2014.7040368	2014	10.1109/cdc.2014.7040368	Incremental synthesis of switching protocols via abstraction refinement	53rd IEEE Conference on Decision and Control	proceedings-article
+67	10.1049/pbpc022e_ch14	2019	10.1049/pbpc022e_ch14	Developing portable embedded software for multicore systems through formal abstraction and refinement	Many-Core Computing: Hardware and Software	book-chapter
+68	10.32920/32288082	2026	10.32920/32288082	Development of a Modular Pick-and-Place Execution Framework in ROS 2 with MoveIt 2		posted-content
+69	10.1007/0-387-27006-x_8	None	10.1007/0-387-27006-x_8	Infinite state spaces, angelic choice and the transformer hierarchy	Monographs in Computer Science	book-chapter
+70	10.29007/scv7	None	10.29007/scv7	EPR-based k-induction with Counterexample Guided Abstraction Refinement	EPiC Series in Computing	proceedings-article
+71	10.1109/wcre.2012.26	2012	10.1109/wcre.2012.26	Execution Trace Abstraction Based on Meta Patterns Usage	2012 19th Working Conference on Reverse Engineering	proceedings-article
+72	10.1109/acc.2016.7526478	2016	10.1109/acc.2016.7526478	Optimal control with regular objectives using an abstraction-refinement approach	2016 American Control Conference (ACC)	proceedings-article
+73	10.2139/ssrn.6195659	2026	10.2139/ssrn.6195659	The Modular Abstraction System&amp;nbsp;(MAS): A Deterministic Cognitive Architecture for LLM Governance (Consolidated Master V5.0)		posted-content
+74	10.32920/32288082.v1	2026	10.32920/32288082.v1	Development of a Modular Pick-and-Place Execution Framework in ROS 2 with MoveIt 2		posted-content
+75	10.23919/acc.2017.7963006	2017	10.23919/acc.2017.7963006	Compositional abstraction refinement for control synthesis under lasso-shaped specifications	2017 American Control Conference (ACC)	proceedings-article
+76	10.1109/icsai.2017.8248391	2017	10.1109/icsai.2017.8248391	Continuous simulation abstraction refinement for Markov decision processes	2017 4th International Conference on Systems and Informatics (ICSAI)	proceedings-article
+77	10.1127/0028-3649/2004/2004-0049	2004	10.1127/0028-3649/2004/2004-0049	Structure refinement of natural robinsonite, Pb4Sb6S13: cation distribution and modular description	Neues Jahrbuch für Mineralogie - Monatshefte	journal-article
+78	10.2316/p.2013.801-015	2013	10.2316/p.2013.801-015	LEGO Robot Design using Incrementally Modular Abstraction Hierarchy	Modelling, Identification and Control / 801: Advances in Computer Science	proceedings-article
+79	10.1007/978-1-4471-3550-0_15	1992	10.1007/978-1-4471-3550-0_15	Revisiting Abstraction Functions For Reasoning About Concurrency	Workshops in Computing	book-chapter
+80	10.1613/jair.1.11217	2018	10.1613/jair.1.11217	Counterexample-Guided Cartesian Abstraction Refinement for Classical Planning	Journal of Artificial Intelligence Research	journal-article
+81	10.29007/4zh8	None	10.29007/4zh8	Towards an Abstraction-Refinement Framework for Reasoning with Large Theories	Kalpa Publications in Computing	proceedings-article
+82	10.1109/date.2009.5090935	2009	10.1109/date.2009.5090935	Strengthening properties using abstraction refinement	2009 Design, Automation &amp; Test in Europe Conference &amp; Exhibition	proceedings-article
+83	10.31274/etd-180810-4590	None	10.31274/etd-180810-4590	PaniniJ: adding the capsule programming abstraction to Java to provide linguistic support for modular reasoning in concurrent program design		dissertation
+84	10.1109/hldvt.2009.5340163	2009	10.1109/hldvt.2009.5340163	Activity-based refinement for abstraction-guided simulation	2009 IEEE International High Level Design Validation and Test Workshop	proceedings-article
+85	10.31979/etd.xcn7-29et	None	10.31979/etd.xcn7-29et	Refinement and Execution of a Clinical Trial on Biofeedback for Gait Retraining for People With Unilateral Transfemoral Amputation		dissertation
+86	10.1109/vlsi.2008.64	2008	10.1109/vlsi.2008.64	MPSoC Communication Architecture Exploration Using an Abstraction Refinement Method	21st International Conference on VLSI Design (VLSID 2008)	proceedings-article
+87	10.1109/acc.2007.4282139	2007	10.1109/acc.2007.4282139	Reachability Analysis Of Linear Hybrid Automata By Using Counterexample Fragment Based Abstraction Refinement	2007 American Control Conference	proceedings-article
+88	10.1109/tcad.2006.873897	2006	10.1109/tcad.2006.873897	Improving Ariadne's Bundle by Following Multiple Threads in Abstraction Refinement	IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems	journal-article
+89	10.1109/cns.2017.8228675	2017	10.1109/cns.2017.8228675	Linkography abstraction refinement and cyber security	2017 IEEE Conference on Communications and Network Security (CNS)	proceedings-article
+90	10.14236/ewic/dcc1996.8	1996	10.14236/ewic/dcc1996.8	Ternary Simulation: Refinement of Binary Functions or Abstraction of Real-Time Behaviour?	Electronic Workshops in Computing	proceedings-article
+91	10.1145/1993316.1993567	2011	10.1145/1993316.1993567	Scaling abstraction refinement via pruning	ACM SIGPLAN Notices	journal-article
+92	10.1016/s0304-3975(00)00169-9	2001	10.1016/s0304-3975(00)00169-9	Refinement and state machine abstraction	Theoretical Computer Science	journal-article
+93	10.1109/hldvt.2009.5340178	2009	10.1109/hldvt.2009.5340178	Automated debugging with high level abstraction and refinement	2009 IEEE International High Level Design Validation and Test Workshop	proceedings-article
+94	10.2139/ssrn.6098520	2026	10.2139/ssrn.6098520	ADAPT: A Modular Architecture for LLMDriven Robotic Task and Motion Planning with Memory-Guided Execution		posted-content
+95	10.1109/cw.2006.14	2006	10.1109/cw.2006.14	An Incrementally Modular Abstraction Hierarchy for Linear Software Development Methodology	2006 International Conference on Cyberworlds	proceedings-article
+96	10.1109/csmr.2005.19	None	10.1109/csmr.2005.19	Conditioned Semantic Slicing via Abstraction and Refinement in FermaT	Ninth European Conference on Software Maintenance and Reengineering	proceedings-article
+97	10.1145/1629911.1630058	2009	10.1145/1629911.1630058	Constraints in one-to-many concretization for abstraction refinement	Proceedings of the 46th Annual Design Automation Conference	proceedings-article
+98	10.1109/fmcad.2007.4401989	2007	10.1109/fmcad.2007.4401989	Automatic Abstraction Refinement for Generalized Symbolic Trajectory Evaluation	Formal Methods in Computer Aided Design (FMCAD'07)	proceedings-article
+99	10.1109/lics.2006.10	None	10.1109/lics.2006.10	An Abstraction-Refinement Framework for Multi-Agent Systems	21st Annual IEEE Symposium on Logic in Computer Science (LICS'06)	proceedings-article
+100	10.7717/peerjcs.1238/fig-2	None	10.7717/peerjcs.1238/fig-2	Figure 2: Multiple execution traces of an application with DeloreanJS.		component

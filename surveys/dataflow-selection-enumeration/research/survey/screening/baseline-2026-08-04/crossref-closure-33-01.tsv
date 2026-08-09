@@ -1,0 +1,101 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1145/1869542.1869544	2010	10.1145/1869542.1869544	now happens-before later	Proceedings of the ACM international conference companion on Object oriented programming systems languages and applications companion	proceedings-article
+2	10.1145/2858788.2688533	2015	10.1145/2858788.2688533	The lazy happens-before relation: better partial-order reduction for systematic concurrency testing	ACM SIGPLAN Notices	journal-article
+3	10.1145/2688500.2688533	2015	10.1145/2688500.2688533	The lazy happens-before relation: better partial-order reduction for systematic concurrency testing	Proceedings of the 20th ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming	proceedings-article
+4	10.2307/j.ctv1g4rvh7.19	2021	10.2307/j.ctv1g4rvh7.19	The Lazy Susan	Peach State	book-chapter
+5	10.1126/science.aah7353	2021	10.1126/science.aah7353	Can ‘predictive policing' prevent crime before it happens?	AAAS Articles DO Group	dataset
+6	10.64628/ab.vu7ft4qjk	2013	10.64628/ab.vu7ft4qjk	Spotting the collapse of a species before it happens		posted-content
+7	10.1021/acs.jcim.5b00331.s001	None	10.1021/acs.jcim.5b00331.s001	H274Ys Effect on Oseltamivir Resistance: What Happens Before the Drug Enters the Binding Site		component
+8	10.1145/2632362.2632365	2014	10.1145/2632362.2632365	Approximating happens-before order: interplay between static analysis and state space traversal	Proceedings of the 2014 International SPIN Symposium on Model Checking of Software	proceedings-article
+9	10.2139/ssrn.6327478	2026	10.2139/ssrn.6327478	The Epistemic Tension Metric: Quantifying Model Breakdown Before It Happens		posted-content
+10	10.4324/9781315566863-23	2016	10.4324/9781315566863-23	What happens before service design?	An Introduction to Industrial Service Design	book-chapter
+11	10.63620/mkjcnr.2026.1067	2026	10.63620/mkjcnr.2026.1067	Clinical Emotional Forecasting: A Conceptual Framework for How Nurses Anticipate a Patient’s Next Emotional State Before It Happens	Journal of Clinical Nursing &amp; Reports	journal-article
+12	10.3133/fs20043060	2004	10.3133/fs20043060	Mapping a flood before it happens	Fact Sheet	report-component
+13	10.1037/e564312006-002	1995	10.1037/e564312006-002	Controlling Crime Before It Happens: Risk-Focused Prevention	PsycEXTRA Dataset	dataset
+14	10.5040/9798400670077.ch-005	2012	10.5040/9798400670077.ch-005	Teaching, and what Happens Before and After	Information Basics for College Students	other
+15	10.32674/3c7ks911	2024	10.32674/3c7ks911	Don’t Quit Before the Miracle Happens	Bridging Cultures, Empowering Futures: Global Citizenship and International Education	book-chapter
+16	10.1049/iet-com.2013.0097	2013	10.1049/iet-com.2013.0097	Effective lazy schedule for the layered belief propagation algorithm	IET Communications	journal-article
+17	10.5539/ies.v19n2p48	2026	10.5539/ies.v19n2p48	What Happens Before Learning Happens? Psychological Readiness as the Missing Foundation of Informal Intercultural Learning	International Education Studies	journal-article
+18	10.1215/9780822399254-003	1996	10.1215/9780822399254-003	The Equivalence of Events	Nothing Happens	book-chapter
+19	10.1145/1706356.1706372	2010	10.1145/1706356.1706372	Optimizing relational algebra operations using generic equivalence discriminators and lazy products	Proceedings of the 2010 ACM SIGPLAN workshop on Partial evaluation and program manipulation	proceedings-article
+20	10.1016/s1474-6670(17)35780-4	2003	10.1016/s1474-6670(17)35780-4	What Happens When Certainty Equivalence is Not Valid?	IFAC Proceedings Volumes	journal-article
+21	10.1108/eb002067	1981	10.1108/eb002067	Antecedents — influencing behaviour before it happens	Education + Training	journal-article
+22	10.1016/s0262-4079(18)31788-3	2018	10.1016/s0262-4079(18)31788-3	Spot cybercrime before it happens	New Scientist	journal-article
+23	10.7551/mitpress/4316.003.0007	1994	10.7551/mitpress/4316.003.0007	Lazy Functional State Threads: An Abstract	Logic Programming	book-chapter
+24	10.1109/isre.2001.948593	None	10.1109/isre.2001.948593	What happens before requirements engineering?	Proceedings Fifth IEEE International Symposium on Requirements Engineering	proceedings-article
+25	10.1515/9780822374695-006	2020	10.1515/9780822374695-006	3 MUSIC AS ACTION	Sensing Sound	book-chapter
+26	10.7312/gilm19420-010	2023	10.7312/gilm19420-010	8 CONSENT BEFORE AND AFTER #METOO	The #MeToo Effect	book-chapter
+27	10.32614/cran.package.synchronicity	2010	10.32614/cran.package.synchronicity	synchronicity: Boost Mutex Functionality in R	CRAN: Contributed Packages	dataset
+28	10.4324/9780203093825-17	2014	10.4324/9780203093825-17	What happens before the lesson? Planning and preparation	Physical Education 5-11	book-chapter
+29	10.1182/blood.2026034423	2026	10.1182/blood.2026034423	Identifying steroid-refractory aGVHD before it happens	Blood	journal-article
+30	10.1016/s0262-1762(05)00479-7	2005	10.1016/s0262-1762(05)00479-7	Preventing equipment failure before it happens	World Pumps	journal-article
+31	10.1215/9780822374695-004	None	10.1215/9780822374695-004	Music as Action	Sensing Sound	book-chapter
+32	10.1126/science.aae0170	2016	10.1126/science.aae0170	How to identify a bad vaccine reaction before it happens	Science	journal-article
+33	10.64628/ab.cydhuf5tu	2021	10.64628/ab.cydhuf5tu	Euro 2020: could Twitter stop racist abuse before it happens?		posted-content
+34	10.1201/9781315191386-2	2017	10.1201/9781315191386-2	Boots and Saddles (Before 1932)	Equivalence	book-chapter
+35	10.1016/j.arcontrol.2003.10.001	2003	10.1016/j.arcontrol.2003.10.001	What happens when certainty equivalence is not valid?	Annual Reviews in Control	journal-article
+36	10.5040/9798881870584.ch-4	2024	10.5040/9798881870584.ch-4	Summering with Polio	Herding Immunity	other
+37	10.1016/0167-4048(88)90516-0	1988	10.1016/0167-4048(88)90516-0	Computer crime—What to do before it happens	Computers &amp; Security	journal-article
+38	10.1016/j.lindif.2012.06.005	2012	10.1016/j.lindif.2012.06.005	What happens before and after it happens: Insights regarding antecedences and consequences of adult learning	Learning and Individual Differences	journal-article
+39	10.1211/pj.2026.1.419172	2026	10.1211/pj.2026.1.419172	The GPhC must demonstrate equivalence before shortening the international registration route	Pharmaceutical Journal	journal-article
+40	10.1542/peds.2014-3747	2015	10.1542/peds.2014-3747	Supporting Fatherhood Before and After It Happens	Pediatrics	journal-article
+41	10.17816/kazmj86902-47900	None	10.17816/kazmj86902-47900	Schedule of multifraction chromatic study of duodenal bile of patient I. before and after surgery - neurogenic sphincterotomy.		component
+42	10.1136/bmj.39456.696296.7d	2008	10.1136/bmj.39456.696296.7d	What happens before reaching the front door?	BMJ	journal-article
+43	10.15366/bp2018.18.006	2018	10.15366/bp2018.18.006	Volney ante las ruinas de Palmira: lo que pasa y no pasa con el tiempo // Volney before the ruins of Palmyra: what happens and does not happen with time	Bajo Palabra	journal-article
+44	10.1097/01.cot.0000513040.80235.b3	2017	10.1097/01.cot.0000513040.80235.b3	Predicting Cancer Before It Happens Is Not Far From Reality	Oncology Times	journal-article
+45	10.4324/9780203822814-15	2007	10.4324/9780203822814-15	What happens before the lesson? Planning and preparation	Physical Education and Development 3-11	book-chapter
+46	10.64628/ab.fckudwera	2024	10.64628/ab.fckudwera	How to catch a supernova explosion before it happens – and what we can learn from it		posted-content
+47	10.1097/01244666-200605000-00004	2006	10.1097/01244666-200605000-00004	Fight infant abduction before it happens	Nursing Critical Care	journal-article
+48	10.1109/wiri.2005.29	None	10.1109/wiri.2005.29	Precognition: Thinking about the query before it happens	International Workshop on Challenges in Web Information Retrieval and Integration	proceedings-article
+49	10.1016/b978-1-85617-631-6.00021-4	2009	10.1016/b978-1-85617-631-6.00021-4	Mutex Services	Real-Time Embedded Multithreading Using ThreadX and MIPS	book-chapter
+50	10.1016/b978-1-85617-601-9.00021-8	2009	10.1016/b978-1-85617-601-9.00021-8	Mutex Services	Real-Time Embedded Multithreading Using ThreadX	book-chapter
+51	10.1109/vcris68011.2025.11250548	2025	10.1109/vcris68011.2025.11250548	Hardening DLT-Daemon against TOCTOU Vulnerabilities: A Study on Atomic Mutex Locking for Critical State Resilience	2025 2nd International Conference On Cryptography And Information Security (VCRIS)	proceedings-article
+52	10.4324/9781003325994-4	2025	10.4324/9781003325994-4	What Happens Before You Get There	Understanding Self-Neglect	book-chapter
+53	10.1002/j.1551-8833.1978.tb04178.x	1978	10.1002/j.1551-8833.1978.tb04178.x	Plan for an Emergency Before It Happens	Journal AWWA	journal-article
+54	10.23919/date48585.2020.9116512	2020	10.23919/date48585.2020.9116512	Lazy Event Prediction using Defining Trees and Schedule Bypass for Out-of-Order PDES	2020 Design, Automation &amp; Test in Europe Conference &amp; Exhibition (DATE)	proceedings-article
+55	10.1126/science.365.6450.246-b	2019	10.1126/science.365.6450.246-b	Confronting bias before it happens	Science	journal-article
+56	10.1097/00130561-199612000-00007	1996	10.1097/00130561-199612000-00007	Relieving Pain Before It Happens	The Back Letter	journal-article
+57	10.1097/bor.0b013e32832a2e44	2009	10.1097/bor.0b013e32832a2e44	What happens before the onset of rheumatoid arthritis?	Current Opinion in Rheumatology	journal-article
+58	10.1037/e481252006-003	2006	10.1037/e481252006-003	Spotlight: Mice Show What Happens Before Tumors Spread	PsycEXTRA Dataset	dataset
+59	10.1016/s0031-398x(05)70716-5	2005	10.1016/s0031-398x(05)70716-5	Before Changing the Periodicity Schedule	Pediatric News	journal-article
+60	10.4324/9780203085257-8	2013	10.4324/9780203085257-8	A Contested Normal: What Happens Afterwards?	Justice before Reconciliation	book-chapter
+61	10.2307/j.ctt1ww3vdh.6	None	10.2307/j.ctt1ww3vdh.6	The Physiology of Menopause:	What Every Woman Needs to Know about Menopause	book-chapter
+62	10.64628/aam.efg745cgx	2023	10.64628/aam.efg745cgx	To prevent child sexual abuse, we need to change our thinking — and stop exploitation before it happens		posted-content
+63	10.1007/978-3-319-03680-9_49	2013	10.1007/978-3-319-03680-9_49	Detecting Mutex Pairs in State Spaces by Sampling	Lecture Notes in Computer Science	book-chapter
+64	10.4324/9781843140047-19	2000	10.4324/9781843140047-19	SCHEDULE I Conditions to be complied with before release on bail	Criminal Litigation &amp; Sentencing	book-chapter
+65	10.1093/law/9780190490836.003.0015	2018	10.1093/law/9780190490836.003.0015	Part Two The Iowa Constitution and Commentary, Art.XII Schedule	The Iowa State Constitution	book
+66	10.2139/ssrn.3759217	2021	10.2139/ssrn.3759217	Happens-Before not Being Preserved in Statistical Analysis: Why the Reproduction Rate of a Pandemic Seems to React to An Intervention before the Intervention	SSRN Electronic Journal	journal-article
+67	10.1108/02580540810854677	2008	10.1108/02580540810854677	Plan for disaster before it happens	Strategic Direction	journal-article
+68	10.64628/aa.v6u9cxa45	2021	10.64628/aa.v6u9cxa45	QLD police will use AI to ‘predict’ domestic violence before it happens. Beware the unintended consequences		posted-content
+69	10.1145/3276515	2018	10.1145/3276515	What happens-after the first race? enhancing the predictive power of happens-before based dynamic race detection	Proceedings of the ACM on Programming Languages	journal-article
+70	10.36227/techrxiv.23683821	2023	10.36227/techrxiv.23683821	HTLL: Latency-aware Scalable Blocking Mutex		posted-content
+71	10.5771/9781538175446-37	2024	10.5771/9781538175446-37	4. Summering with Polio: Life before the Modern Childhood Vaccination Schedule	Herding Immunity	book-chapter
+72	10.46473/wcsaj27240606/15-05-2020-0002//full/html	2020	10.46473/wcsaj27240606/15-05-2020-0002//full/html	Before The Pandemic Ends: Making Sure This Never Happens Again	World Complexity Science Academy Journal	journal-article
+73	10.1109/tase.2013.24	2013	10.1109/tase.2013.24	An Operational Approach to Happens-Before Memory Model	2013 International Symposium on Theoretical Aspects of Software Engineering	proceedings-article
+74	10.1037/032562	1992	10.1037/032562	The Beginning Starts Long Before It Happens	Contemporary Psychology: A Journal of Reviews	journal-article
+75	10.1016/j.mehy.2026.111894	2026	10.1016/j.mehy.2026.111894	The Stage 1 Plus hypothesis in status epilepticus: predicting resistance before it happens	Medical Hypotheses	journal-article
+76	10.1038/s41558-022-01409-2	2022	10.1038/s41558-022-01409-2	Catching maladaptation before it happens	Nature Climate Change	journal-article
+77	10.5840/chesterton200127425	2001	10.5840/chesterton200127425	Judging a Conference Before It Happens	The Chesterton Review	journal-article
+78	10.4324/9780429440151-6	2019	10.4324/9780429440151-6	Questions to Understand what Happens before the Patient Visits	Medical Clinics and Practices	book-chapter
+79	10.1177/070674378903400506	1989	10.1177/070674378903400506	Assaultive Behaviour: Before it Happens…	The Canadian Journal of Psychiatry	journal-article
+80	10.1109/rtas.2008.17	2008	10.1109/rtas.2008.17	Equivalence between Schedule Representations: Theory and Applications	2008 IEEE Real-Time and Embedded Technology and Applications Symposium	proceedings-article
+81	10.1101/2025.03.06.641785	2025	10.1101/2025.03.06.641785	Forecasting Perception Before It Happens: Context-Specific Connectivity Patterns Predict Perceptual Outcomes		posted-content
+82	10.1093/gmo/9781561592630.article.j261800	2003	10.1093/gmo/9781561592630.article.j261800	Lazy Ade	Oxford Music Online	reference-entry
+83	10.1007/978-3-540-79124-9_9	None	10.1007/978-3-540-79124-9_9	Static Analysis Via Abstract Interpretation of the Happens-Before Memory Model	Lecture Notes in Computer Science	book-chapter
+84	10.5040/9798216991038.0019	2005	10.5040/9798216991038.0019	Schedule	Virginia State Constitution	other
+85	10.12987/9780300236514-004	1996	10.12987/9780300236514-004	1 The Physiology of Menopause: How It Happens	What Every Woman Needs to Know about Menopause	book-chapter
+86	10.1093/gao/9781884446054.article.t2072789	2014	10.1093/gao/9781884446054.article.t2072789	Lazy Susan	Oxford Art Online	reference-entry
+87	10.2307/jj.7492233.12	2023	10.2307/jj.7492233.12	Where It Happens:	Washington State Politics and Government	book-chapter
+88	10.1061/40745(146)8	2004	10.1061/40745(146)8	Risk Management...Predicting Your Next Concrete Pipe Sewer Failure Before it Happens	Pipeline Engineering and Construction	proceedings-article
+89	10.1201/9781003174868-16	2024	10.1201/9781003174868-16	Grains from before the Dawn of Time	A Meteorite Killed My Cow	book-chapter
+90	10.1142/9781848166837_0005	2001	10.1142/9781848166837_0005	ALL SELECTION THAT REALLY MATTERS HAPPENS BEFORE REPRODUCTION	Once We Were Hunters	book-chapter
+91	10.3390/philosophies11020061	2026	10.3390/philosophies11020061	Change Before Time: Empirical Equivalence, Mechanics, and Structures for Dynamic Metaphysics	Philosophies	journal-article
+92	10.1016/0142-0496(79)90125-5	1979	10.1016/0142-0496(79)90125-5	Risk evaluation: Counting the cost before it happens	Computer Fraud &amp; Security Bulletin	journal-article
+93	10.2196/preprints.108194	2026	10.2196/preprints.108194	Conversational AI Establishes Patient Understanding Before Clinician Contact: A Randomized Equivalence Trial (Preprint)		posted-content
+94	10.1007/s11704-015-4492-4	2016	10.1007/s11704-015-4492-4	An operational happens-before memory model	Frontiers of Computer Science	journal-article
+95	10.1037/e454272008-001	1994	10.1037/e454272008-001	State of Alaska epidemiology bulletin: New childhood immunization schedule	PsycEXTRA Dataset	dataset
+96	10.1109/asscc.2006.357952	2006	10.1109/asscc.2006.357952	Conference Schedule	2006 IEEE Asian Solid-State Circuits Conference	proceedings-article
+97	10.3928/0048-5713-19890201-13	1989	10.3928/0048-5713-19890201-13	Sexual Exploitation of Patients: How It Begins Before It Happens	Psychiatric Annals	journal-article
+98	10.4337/9781800889330.00032	2022	10.4337/9781800889330.00032	The state of the citizen	The Politics of the Public Encounter	book-chapter
+99	10.1007/978-1-4613-4265-6_4	1976	10.1007/978-1-4613-4265-6_4	The Case Against Closing of State Hospitals	State Mental Hospitals	book-chapter
+100	10.1212/01.wnl.0000316808.21277.69	2008	10.1212/01.wnl.0000316808.21277.69	Detecting Alzheimer disease before it happens	Neurology	journal-article

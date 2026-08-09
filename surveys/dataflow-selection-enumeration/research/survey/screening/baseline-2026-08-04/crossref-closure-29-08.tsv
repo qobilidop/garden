@@ -1,0 +1,105 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1109/access.2019.2894352	2019	10.1109/access.2019.2894352	Minimum Initial Marking Estimation in Labeled Petri Nets With Unobservable Transitions	IEEE Access	journal-article
+2	10.23919/ecc.1999.7099435	1999	10.23919/ecc.1999.7099435	An iterative linear relaxation and tabu search approach to minimum initial marking problems of timed marked graphs	1999 European Control Conference (ECC)	proceedings-article
+3	10.1007/11538356_12	2005	10.1007/11538356_12	Studies on the Minimum Initial Marking of a Class of Hybrid Timed Petri Nets	Lecture Notes in Computer Science	book-chapter
+4	10.1109/icsmc.2000.884458	None	10.1109/icsmc.2000.884458	Minimum initial marking in timed marked graphs	SMC 2000 Conference Proceedings. 2000 IEEE International Conference on Systems, Man and Cybernetics. 'Cybernetics Evolving to Systems, Humans, Organizations, and their Complex Interactions' (Cat. No.00CH37166)	proceedings-article
+5	10.1109/tsmc.2024.3357742	2024	10.1109/tsmc.2024.3357742	Minimum Initial Marking Estimation in Labeled Petri Nets With Unobservable Transitions Based on Minimal Explanations	IEEE Transactions on Systems, Man, and Cybernetics: Systems	journal-article
+6	10.1587/transfun.e96.a.540	2013	10.1587/transfun.e96.a.540	Two Heuristic Algorithms for the Minimum Initial Marking Problem of Timed Petri Nets	IEICE Transactions on Fundamentals of Electronics, Communications and Computer Sciences	journal-article
+7	10.1109/acc.2009.5160266	2009	10.1109/acc.2009.5160266	Minimum initial marking estimation in labeled Petri nets	2009 American Control Conference	proceedings-article
+8	10.64861/aikj9678	2024	10.64861/aikj9678	Minimum Observation Methods of Initial Maneuver Determination	AMOS 2024 Technical Papers	proceedings-article
+9	10.1016/j.ins.2025.122618	2026	10.1016/j.ins.2025.122618	Minimum initial state estimation of labeled time Petri nets in the presence of unobservable transitions	Information Sciences	journal-article
+10	10.1109/icsmc.1997.625757	None	10.1109/icsmc.1997.625757	A heuristic algorithm for the minimum initial marking problem of Petri nets	1997 IEEE International Conference on Systems, Man, and Cybernetics. Computational Cybernetics and Simulation	proceedings-article
+11	10.1109/tac.2012.2203050	2013	10.1109/tac.2012.2203050	Minimum Initial Marking Estimation in Labeled Petri Nets	IEEE Transactions on Automatic Control	journal-article
+12	10.1109/access.2020.2967342	2020	10.1109/access.2020.2967342	Genetic-Based Approach for Minimum Initial Marking Estimation in Labeled Petri Nets	IEEE Access	journal-article
+13	10.1109/skg49510.2019.00021	2019	10.1109/skg49510.2019.00021	GRASP-Based Approach for Minimum Initial Marking Estimation in Labeled Petri Nets	2019 15th International Conference on Semantics, Knowledge and Grids (SKG)	proceedings-article
+14	10.1109/tac.2024.3510521	2025	10.1109/tac.2024.3510521	Minimum Initial Marking Estimation in Labeled Petri Nets Using Minimum Token Number Prediction	IEEE Transactions on Automatic Control	journal-article
+15	10.1016/j.ins.2024.121623	2025	10.1016/j.ins.2024.121623	Configuration of liveness-enforcing initial marking with the minimum resources for resource allocation systems	Information Sciences	journal-article
+16	10.3403/30387860	None	10.3403/30387860	Road marking materials. Retroreflecting road studs		standard
+17	10.3403/30184643	None	10.3403/30184643	Road marking materials. Retroreflecting road studs		standard
+18	10.3403/01250453u	None	10.3403/01250453u	Road marking materials. Retroreflecting road studs		standard
+19	10.3403/01250453	None	10.3403/01250453	Road marking materials. Retroreflecting road studs		standard
+20	10.1109/ic_aset49463.2020.9318298	2020	10.1109/ic_aset49463.2020.9318298	Minimum Initial Marking Estimation in Labeled Petri Nets through Genetic Algorithm and Tabu Search	2020 4th International Conference on Advanced Systems and Emergent Technologies (IC_ASET)	proceedings-article
+21	10.1109/codit.2019.8820467	2019	10.1109/codit.2019.8820467	Towards a Minimum Initial Marking Estimation Procedure for P-Time Labelled Petri net Systems	2019 6th International Conference on Control, Decision and Information Technologies (CoDIT)	proceedings-article
+22	10.1109/etfa.2013.6648063	2013	10.1109/etfa.2013.6648063	Marking estimation of Time Petri nets with unobservable transitions	2013 IEEE 18th Conference on Emerging Technologies &amp; Factory Automation (ETFA)	proceedings-article
+23	10.3233/faia190063	2019	10.3233/faia190063	Minimum Initial Marking Estimation in Labeled Petri Nets Using Simulated Annealing	Frontiers in Artificial Intelligence and Applications	book-chapter
+24	10.1007/978-1-4899-6782-4_3	1981	10.1007/978-1-4899-6782-4_3	A Drop of Milk: Observer, Observation, Observable and Unobservable	Mathematics and Physics	book-chapter
+25	10.1080/01969722.2020.1770505	2020	10.1080/01969722.2020.1770505	Minimum Initial Marking Estimation of Labeled Petri Nets Based on GRASP Inspired Method (GMIM)	Cybernetics and Systems	journal-article
+26	10.1007/978-3-030-57628-8_9	2020	10.1007/978-3-030-57628-8_9	Active Learning of Timed Automata with Unobservable Resets	Lecture Notes in Computer Science	book-chapter
+27	10.46916/05032026-978-5-00276-022-0	2026	10.46916/05032026-978-5-00276-022-0	OPTIMIZATION OF LASER MARKING PARAMETERS BASED ON INITIAL SURFACE ROUGHNESS OF WORKPIECES	OPTIMIZATION OF LASER MARKING PARAMETERS BASED ON INITIAL SURFACE ROUGHNESS OF WORKPIECES	book-chapter
+28	10.1080/0005772x.2016.1205327	2016	10.1080/0005772x.2016.1205327	Observation Hive Marking Apparatus (OHMA): An Inexpensive Method For Mass-Marking Honey Bees In Observation Hives	Bee World	journal-article
+29	10.1016/j.chemphys.2020.111046	2021	10.1016/j.chemphys.2020.111046	Initial estimate for minimum energy pathways and transition states using velocities in internal coordinates	Chemical Physics	journal-article
+30	10.17816/dd633976-4384171	None	10.17816/dd633976-4384171	Fig. 2. Box plots of the distribution of residual liquid marking quality indicators: a — average residual liquid density; b — maximum residual liquid density; c — minimum residual liquid density. OM — single-stage marking; DM — two-stage marking.		component
+31	10.1108/ec-07-2024-0624	2025	10.1108/ec-07-2024-0624	Engineering efficiency unleashed: minimum initial marking estimation in labeled Petri nets through a cutting-edge hybrid evolutionary heuristic	Engineering Computations	journal-article
+32	10.1515/9781400827992.51	2009	10.1515/9781400827992.51	Observation	Marking Time	book-chapter
+33	10.1520/d6359-99	None	10.1520/d6359-99	Specification for Minimum Retroreflectance of Newly Applied Pavement Marking Using Portable Hand-Operated Instruments		standard
+34	10.1109/tase.2013.2290314	2014	10.1109/tase.2013.2290314	State Estimation of Timed Labeled Petri Nets With Unobservable Transitions	IEEE Transactions on Automation Science and Engineering	journal-article
+35	10.7717/peerj.6089/fig-4	None	10.7717/peerj.6089/fig-4	Figure 4: Morphological criteria marking the transition to P9.		component
+36	10.5040/9798216187868.ch-001	1996	10.5040/9798216187868.ch-001	Initial Conditions: A Minimum Economic and Political Transition in Cuba	The Laws and Legal System of a Free-Market Cuba	other
+37	10.1520/d6359	None	10.1520/d6359	Specification for Minimum Retroreflectance of Newly Applied Pavement Marking Using Portable Hand-Operated Instruments		standard
+38	10.1007/978-94-015-9391-5_19	2000	10.1007/978-94-015-9391-5_19	Observation, Contextuality, and Realism	Boston Studies in the Philosophy of Science	book-chapter
+39	10.1021/acsestair.5c00504.s001	None	10.1021/acsestair.5c00504.s001	Improving Source-Sink Analysis of Atmospheric Species Using Observation-Based Box Model with Reaction Marking		component
+40	10.1109/icsmc.2007.4413809	2007	10.1109/icsmc.2007.4413809	Marking estimation of fuzzy timed marked graphs	2007 IEEE International Conference on Systems, Man and Cybernetics	proceedings-article
+41	10.7717/peerj.6089/fig-5	None	10.7717/peerj.6089/fig-5	Figure 5: Morphological criteria marking the transition to P10–P16.		component
+42	10.1587/transfun.e92.a.2732	2009	10.1587/transfun.e92.a.2732	Two Enhanced Heuristic Algorithms for the Minimum Initial Marking Problem of Petri Nets	IEICE Transactions on Fundamentals of Electronics, Communications and Computer Sciences	journal-article
+43	10.5220/0006006103180326	2016	10.5220/0006006103180326	Quantifying Fidelity for Timed Transition Systems	Proceedings of the 6th International Conference on Simulation and Modeling Methodologies, Technologies and Applications	proceedings-article
+44	10.1002/tee.22276	2016	10.1002/tee.22276	An algorithm for the minimum initial marking problem of a structurally live Petri net with inhibitor arcs	IEEJ Transactions on Electrical and Electronic Engineering	journal-article
+45	10.23919/ecc.2007.7068612	2007	10.23919/ecc.2007.7068612	High-order sliding-mode observation and fault detection via weakly unobservable subspace reconstruction	2007 European Control Conference (ECC)	proceedings-article
+46	10.1109/tsmc.2014.2353575	2015	10.1109/tsmc.2014.2353575	Marking Estimation of P-Time Petri Nets With Unobservable Transitions	IEEE Transactions on Systems, Man, and Cybernetics: Systems	journal-article
+47	10.1109/iscas.1992.230420	None	10.1109/iscas.1992.230420	An equivalence net-condition between place-liveness and transition-liveness and its initial-marking-based necessary and sufficient liveness condition of Petri nets	[Proceedings] 1992 IEEE International Symposium on Circuits and Systems	proceedings-article
+48	10.1086/155381	1977	10.1086/155381	Indirect observation of unobservable interstellar molecules	The Astrophysical Journal	journal-article
+49	10.1109/coase.2014.6899358	2014	10.1109/coase.2014.6899358	Marking optimization of deterministic timed weighted marked graphs	2014 IEEE International Conference on Automation Science and Engineering (CASE)	proceedings-article
+50	10.1021/acs.joc.9b00502.s001	None	10.1021/acs.joc.9b00502.s001	Cyclobutyne: Minimum or Transition State?		component
+51	10.1109/cise.2010.5676750	2010	10.1109/cise.2010.5676750	Transform Dual Transition Timed Petri Net into Timed Automaton for Model Checking with UPPAAL	2010 International Conference on Computational Intelligence and Software Engineering	proceedings-article
+52	10.1109/icsmc.2000.886497	None	10.1109/icsmc.2000.886497	A new heuristic method for solving the minimum initial marking problem of Petri nets	SMC 2000 Conference Proceedings. 2000 IEEE International Conference on Systems, Man and Cybernetics. 'Cybernetics Evolving to Systems, Humans, Organizations, and their Complex Interactions' (Cat. No.00CH37166)	proceedings-article
+53	10.1002/tee.70044	2025	10.1002/tee.70044	Minimum Initial Marking Estimation in Labeled Petri Nets for Required Resource Minimization of Automated Manufacturing Systems	IEEJ Transactions on Electrical and Electronic Engineering	journal-article
+54	10.1007/978-94-015-9391-5_16	2000	10.1007/978-94-015-9391-5_16	Observation, Construction and Speculation in Cosmology	Boston Studies in the Philosophy of Science	book-chapter
+55	10.1109/tac.2016.2642403	2017	10.1109/tac.2016.2642403	Minimum Sparsity of Unobservable Power Network Attacks	IEEE Transactions on Automatic Control	journal-article
+56	10.1109/cdc.1993.325061	None	10.1109/cdc.1993.325061	Marking optimization of stochastic timed event graphs using IPA	Proceedings of 32nd IEEE Conference on Decision and Control	proceedings-article
+57	10.1063/1.3106462	2009	10.1063/1.3106462	Marking of Fluid Timed Events Graphs with Multipliers for a desired cycle time	AIP Conference Proceedings	proceedings-article
+58	10.1109/tii.2022.3200598	2023	10.1109/tii.2022.3200598	Digital-Twin Consistency Checking Based on Observed Timed Events With Unobservable Transitions in Smart Manufacturing	IEEE Transactions on Industrial Informatics	journal-article
+59	10.1007/bf01299545	1993	10.1007/bf01299545	On the calculation of minimum variance estimators for unobservable dependent variables	Computational Optimization and Applications	journal-article
+60	10.3233/fi-2009-0092	2009	10.3233/fi-2009-0092	"Timed Delay Bisimulation is an Equivalence Relation for Timed			 Transition Systems"	Fundamenta Informaticae	journal-article
+61	10.1109/smc.2013.401	2013	10.1109/smc.2013.401	Marking Observer of Labeled Petri Nets with Uncertainty in the Initial Marking	2013 IEEE International Conference on Systems, Man, and Cybernetics	proceedings-article
+62	10.5220/0011986700003464	2023	10.5220/0011986700003464	Timed Transition Tour for Race Detection in Distributed Systems	Proceedings of the 18th International Conference on Evaluation of Novel Approaches to Software Engineering	proceedings-article
+63	10.1016/0164-1212(86)90028-2	1986	10.1016/0164-1212(86)90028-2	Timed petri nets: A solution to the minimum-time-reachability problem between two states of a timed-event graph	Journal of Systems and Software	journal-article
+64	10.23919/ecc.2013.6669548	2013	10.23919/ecc.2013.6669548	Minimum-time flow control of timed continuous Choice-Free nets	2013 European Control Conference (ECC)	proceedings-article
+65	10.2307/3072078	2002	10.2307/3072078	Estimating State-Transition Probabilities for Unobservable States Using Capture-Recapture/Resighting Data	Ecology	journal-article
+66	10.21236/ad0333238	1962	10.21236/ad0333238	Transition, Minimum Critical, Minimum Transition, and Roughness Reynolds Numbers for Seven Blunt Bodies of Revolution in Flight between Mach Numbers of 1.72 and 15.1		report
+67	10.5220/0004067703320335	2012	10.5220/0004067703320335	Modeling and Diagnosis Characterization using Timed Observation Theory	Proceedings of the 7th International Conference on Software Paradigm Trends	proceedings-article
+68	10.7717/peerj-cs.2995/fig-6	None	10.7717/peerj-cs.2995/fig-6	"Figure 6: Model of replica module of process P
+                      <sub>2</sub>
+                      with the initial marking of case study 1."		component
+69	10.1109/codit.2016.7593525	2016	10.1109/codit.2016.7593525	Marking optimization of deterministic timed weighted marked graphs under infinite server semantics	2016 International Conference on Control, Decision and Information Technologies (CoDIT)	proceedings-article
+70	10.1016/j.ejcon.2020.12.002	2021	10.1016/j.ejcon.2020.12.002	Min-Plus realizable control design for partially observable timed event graphs under marking constraints	European Journal of Control	journal-article
+71	10.1007/3-540-56863-8_56	1993	10.1007/3-540-56863-8_56	Marking optimization of stochastic timed event graphs	Lecture Notes in Computer Science	book-chapter
+72	10.1109/oecc.2015.7340280	2015	10.1109/oecc.2015.7340280	Sequentially timed all-optical mapping photography for observation of ultrafast phenomena	2015 Opto-Electronics and Communications Conference (OECC)	proceedings-article
+73	10.1021/acs.jctc.8b00169.s002	None	10.1021/acs.jctc.8b00169.s002	Minimum Energy Paths and Transition States by Curve Optimization		component
+74	10.1021/acs.jctc.8b00169.s001	None	10.1021/acs.jctc.8b00169.s001	Minimum Energy Paths and Transition States by Curve Optimization		component
+75	10.1007/3-540-56689-9_48	1993	10.1007/3-540-56689-9_48	Marking optimization in timed event graphs	Lecture Notes in Computer Science	book-chapter
+76	10.7717/peerj.17787/supp-6	None	10.7717/peerj.17787/supp-6	Table S4: Rarefied biological observation matrix for initial A-E experiments		component
+77	10.17816/morph.603840-4184150	None	10.17816/morph.603840-4184150	Fig. 3. Screenshot of the atlas page with the initial marking of the fetal section at 13 weeks of gestational development.		component
+78	10.1007/978-3-319-39702-3_8	2017	10.1007/978-3-319-39702-3_8	Being Acknowledged and Marking the Transition	Losing Political Office	book-chapter
+79	10.1890/0012-9658(2002)083[3276:estpfu]2.0.co;2	2002	10.1890/0012-9658(2002)083[3276:estpfu]2.0.co;2	ESTIMATING STATE-TRANSITION PROBABILITIES FOR UNOBSERVABLE STATES USING CAPTURE–RECAPTURE/RESIGHTING DATA	Ecology	journal-article
+80	10.1073/pnas.0504720102	2005	10.1073/pnas.0504720102	Direct observation of thitherto unobservable quantum phenomena by using electrons	Proceedings of the National Academy of Sciences	journal-article
+81	10.1016/j.vlsi.2019.01.013	2019	10.1016/j.vlsi.2019.01.013	Self-timed, minimum latency circuits for the internet of things	Integration	journal-article
+82	10.1109/icnsc52481.2021.9702177	2021	10.1109/icnsc52481.2021.9702177	Optimal Input Calculation and Control for a Class of Timed Petri Nets under Marking Constraints	2021 IEEE International Conference on Networking, Sensing and Control (ICNSC)	proceedings-article
+83	10.1016/j.ejcon.2023.100831	2023	10.1016/j.ejcon.2023.100831	Reconfigurable timed graphs for the design of optimal scheduling in uncertain environments based on transition-timed Petri net	European Journal of Control	journal-article
+84	10.1007/3-540-54430-5_98	1991	10.1007/3-540-54430-5_98	Abstract timed observation and process algebra	Lecture Notes in Computer Science	book-chapter
+85	10.7717/peerj-cs.2995/fig-5	None	10.7717/peerj-cs.2995/fig-5	Figure 5: Top-level of the proposed model for CCDS with three constituting processes with the initial marking of case study 1.		component
+86	10.1007/s00024-018-1970-2	2019	10.1007/s00024-018-1970-2	Unobservable Components Modelling of Monthly Average Maximum and Minimum Temperature Patterns in India 1981–2015	Pure and Applied Geophysics	journal-article
+87	10.2139/ssrn.6810702	2026	10.2139/ssrn.6810702	"The Fate Mechanism:
+&lt;br&gt;
+Jung's Clinical Observation, Libet's Experimental Confirmation, and the Neuroscientific Case for a Timed Interception Window"		posted-content
+88	10.1109/cdc.1995.480643	None	10.1109/cdc.1995.480643	Admissible initial conditions and control of timed event graphs	Proceedings of 1995 34th IEEE Conference on Decision and Control	proceedings-article
+89	10.1109/ccca.2011.6031518	2011	10.1109/ccca.2011.6031518	Supervisory control of timed-place marked graph based on Marking Exclusion Constraint	2011 International Conference on Communications, Computing and Control Applications (CCCA)	proceedings-article
+90	10.29007/kkds	None	10.29007/kkds	Unifying Equivalences for Timed Transition Systems	EPiC Series in Computing	proceedings-article
+91	10.1109/cdc.2016.7798994	2016	10.1109/cdc.2016.7798994	Supervisor localization of timed discrete-event systems under partial observation	2016 IEEE 55th Conference on Decision and Control (CDC)	proceedings-article
+92	10.3403/03121580u	None	10.3403/03121580u	Conveyor belts. Determination of minimum transition distance on three idler rollers		standard
+93	10.1023/a:1007706009628	1999	10.1023/a:1007706009628	Elicitation of Subjective Probabilities when the Initial Endowment is Unobservable	Journal of Risk and Uncertainty	journal-article
+94	10.3403/03121580	None	10.3403/03121580	Conveyor belts. Determination of minimum transition distance on three idler rollers		standard
+95	10.1021/acs.jpca.5b10848.s001	None	10.1021/acs.jpca.5b10848.s001	NMR Investigations of Noncovalent Carbon Tetrel Bonds. Computational Assessment and Initial Experimental Observation		component
+96	10.1515/9780824862992-017	2017	10.1515/9780824862992-017	16. Inscriptions as Initial Conditions: Federation Square (Melbourne, Australia) and the Silencing of the Mark	Inscribed Landscapes	book-chapter
+97	10.1109/acc.2003.1238961	None	10.1109/acc.2003.1238961	Marking estimation of Petri nets based on partial observation	Proceedings of the 2003 American Control Conference, 2003.	proceedings-article
+98	10.1007/bf01797153	1996	10.1007/bf01797153	Marking optimization of stochastic timed event graphs using IPA	Discrete Event Dynamic Systems	journal-article
+99	10.1201/9780429301544-15	2019	10.1201/9780429301544-15	Marking the Transition to an Urban IPM Program	Pest Management in Transition	book-chapter
+100	10.21248/zaspil.52.2010.380	2010	10.21248/zaspil.52.2010.380	Glottal marking of vowel-initial words in German	ZAS Papers in Linguistics	journal-article

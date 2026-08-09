@@ -1,0 +1,101 @@
+rank	source_id	year	doi	title	venue	type
+1	10.70675/0d242e5czfe16z49f6za04ezf51f4dabb08e	None	10.70675/0d242e5czfe16z49f6za04ezf51f4dabb08e	Mechanized semantics and verified compilation for a dataflow synchronous language with reset		dissertation
+2	10.70675/39a5d53bzce3fz4517z9ee1z77b5242313f9	None	10.70675/39a5d53bzce3fz4517z9ee1z77b5242313f9	Verified compilation of a synchronous dataflow language with state machines		dissertation
+3	10.1145/3373108	2019	10.1145/3373108	Models, Algorithms, and Proofs for &amp;quot;Mechanized Semantics and Verified Compilation for a Dataflow Synchronous Language with Reset&amp;quot;	Artifact Digital Object Group	dataset
+4	10.1145/3371112	2020	10.1145/3371112	Mechanized semantics and verified compilation for a dataflow synchronous language with reset	Proceedings of the ACM on Programming Languages	journal-article
+5	10.1145/3608102	2023	10.1145/3608102	Verified Compilation of Synchronous Dataflow with State Machines	ACM Transactions on Embedded Computing Systems	journal-article
+6	10.1201/b12211-4	2017	10.1201/b12211-4	Steady-State Behavior of Synchronous Machines	Analysis of Synchronous Machines	book-chapter
+7	10.1002/9781119371083.ch1	2016	10.1002/9781119371083.ch1	Synchronous Finite State Machines	Digital Electronics 3	other
+8	10.1201/9781439882979-9	2009	10.1201/9781439882979-9	Synchronous Machines: Steady State	Electric Machines	book-chapter
+9	10.1145/215465.215582	1995	10.1145/215465.215582	Clock analysis of synchronous dataflow programs	Proceedings of the 1995 ACM SIGPLAN symposium on Partial evaluation and semantics-based program manipulation  - PEPM '95	proceedings-article
+10	10.70675/33859af0z9c09z423dzb345z62ae1ec51d10	None	10.70675/33859af0z9c09z423dzb345z62ae1ec51d10	Mechanized semantics for circuits : from dataflow to hardware		dissertation
+11	10.17771/pucrio.acad.30650	None	10.17771/pucrio.acad.30650	DATAFLOW SEMANTICS FOR END-USER PROGRAMMABLE APPLICATIONS		dissertation
+12	10.1145/331119.331418	1996	10.1145/331119.331418	Specification of a functional synchronous dataflow language for parallel implementations with the denotational semantics	Proceedings of the 1996 ACM symposium on Applied Computing  - SAC '96	proceedings-article
+13	10.1002/9780470522622.ch8	2009	10.1002/9780470522622.ch8	Axiomatic Semantics of State Machines	UML 2 Semantics and Applications	other
+14	10.1093/oso/9780198593782.003.0004	1993	10.1093/oso/9780198593782.003.0004	Steady-State and Transient Operation Of Synchronous Machines and Synchronous Motor Drives	Electrical Machines and Drives	book-chapter
+15	10.1109/compsac51774.2021.00018/video	None	10.1109/compsac51774.2021.00018/video	Video for Synthesis of Heterogeneous Dataflow Models from Synchronous Specifications		component
+16	10.1201/9781003214519-6	2021	10.1201/9781003214519-6	Synchronous Machines	Electric Machines	book-chapter
+17	10.3990/1.9789036540414	None	10.3990/1.9789036540414	On the analysis of synchronous dataflow graphs		dissertation
+18	10.1111/j.1749-6632.1992.tb26038.x	1992	10.1111/j.1749-6632.1992.tb26038.x	The LUSTRE Synchronous Dataflow Programming Language: Design and Semantics	Annals of the New York Academy of Sciences	journal-article
+19	10.1109/isorc.2000.839516	None	10.1109/isorc.2000.839516	A semantics of UML state-machines using synchronous pre-order transition systems	Proceedings Third IEEE International Symposium on Object-Oriented Real-Time Distributed Computing (ISORC 2000) (Cat. No. PR00607)	proceedings-article
+20	10.1145/3609131	2023	10.1145/3609131	A Constructive State-based Semantics and Interpreter for a Synchronous Data-flow Language with State Machines	ACM Transactions on Embedded Computing Systems	journal-article
+21	10.1007/978-1-4615-1417-6_5	2001	10.1007/978-1-4615-1417-6_5	OPTIMIST: Optimal State Minimization for Synchronous FSM’s	Sequential Optimization of Asynchronous and Synchronous Finite-State Machines	book-chapter
+22	10.1007/3-540-36498-6_35	2003	10.1007/3-540-36498-6_35	Parallelism versus Nondeterminism — On the Semantics of Abstract State Machines	Lecture Notes in Computer Science	book-chapter
+23	10.1007/978-1-4419-6345-1_30	2010	10.1007/978-1-4419-6345-1_30	Decidable Signal Processing Dataflow Graphs: Synchronous and Cyclo-Static Dataflow Graphs	Handbook of Signal Processing Systems	book-chapter
+24	10.1007/978-1-4615-1417-6_6	2001	10.1007/978-1-4615-1417-6_6	OPTIMISTO: Synchronous State Minimization for Optimum Output Logic	Sequential Optimization of Asynchronous and Synchronous Finite-State Machines	book-chapter
+25	10.1201/9781439882979-13	2009	10.1201/9781439882979-13	Synchronous Machine Transients	Electric Machines	book-chapter
+26	10.1145/2841316.2841327	2016	10.1145/2841316.2841327	Intuitionistic Logic and Kripke Semantics	Verified Functional Programming in Agda	book-chapter
+27	10.3390/machines14060681	2026	10.3390/machines14060681	Dual-Motor Position Control Based on a Synchronous State Observer	Machines	journal-article
+28	10.1007/978-1-4614-6859-2_33	2013	10.1007/978-1-4614-6859-2_33	Decidable Dataflow Models for Signal Processing: Synchronous Dataflow and Its Extensions	Handbook of Signal Processing Systems	book-chapter
+29	10.70675/6f1bb95ez3f2fz485fz94f7z7b9e2575e76a	None	10.70675/6f1bb95ez3f2fz485fz94f7z7b9e2575e76a	Modeling, Scheduling, Pipelining and Configuration of Synchronous Dataflow Graphs with Throughput Constraints		dissertation
+30	10.1109/9780470544914.app1	2009	10.1109/9780470544914.app1	Appendix: Principles of Operation of Synchronous Machines	Inspection of Large Synchronous Machines	book-chapter
+31	10.1201/b12211-5	2017	10.1201/b12211-5	Transient Analysis of Synchronous Machines	Analysis of Synchronous Machines	book-chapter
+32	10.1007/978-3-642-18216-7_5	2003	10.1007/978-3-642-18216-7_5	Synchronous Multi-Agent ASMs	Abstract State Machines	book-chapter
+33	10.1201/b12211-11	2017	10.1201/b12211-11	Computer Simulation of Synchronous Machines	Analysis of Synchronous Machines	book-chapter
+34	10.1007/978-1-4614-6859-2_30	2013	10.1007/978-1-4614-6859-2_30	Integrated Modeling Using Finite State Machines and Dataflow Graphs	Handbook of Signal Processing Systems	book-chapter
+35	10.1016/b978-0-08-010017-3.50014-x	1964	10.1016/b978-0-08-010017-3.50014-x	POSSIBLE APPLICATIONS OF ASYNCHRONIZED SYNCHRONOUS MACHINES	Asynchronized Synchronous Machines	book-chapter
+36	10.1007/3-540-36498-6_23	2003	10.1007/3-540-36498-6_23	A Framework for Modeling the Semantics of Expression Evaluation with Abstract State Machines	Lecture Notes in Computer Science	book-chapter
+37	10.1007/978-1-4615-4325-1_12	2000	10.1007/978-1-4615-4325-1_12	Synchronous Dataflow	Languages for Digital Embedded Systems	book-chapter
+38	10.1109/vts.2001.923422	None	10.1109/vts.2001.923422	Partial reset for synchronous sequential circuits using almost independent reset signals	Proceedings 19th IEEE VLSI Test Symposium. VTS 2001	proceedings-article
+39	10.1186/s43067-024-00163-z	2024	10.1186/s43067-024-00163-z	Three-phase balance relay using numerical techniques experimentally verified on synchronous machines	Journal of Electrical Systems and Information Technology	journal-article
+40	10.1201/b12211-12	2012	10.1201/b12211-12	Computer Simulation of Synchronous Machines	Analysis of Synchronous Machines, Second Edition	book-chapter
+41	10.3403/bsen60034-16	None	10.3403/bsen60034-16	Rotating electrical machines. Excitation systems for synchronous machines		standard
+42	10.1017/cbo9780511770524.005	2009	10.1017/cbo9780511770524.005	The semantics of dataflow with firing	From Semantics to Computer Science	book-chapter
+43	10.17918/00001103	None	10.17918/00001103	Mapping DNNs onto a NoC-based MPSoC using synchronous dataflow graphs		dissertation
+44	10.1016/b978-0-12-398527-9.00007-3	2012	10.1016/b978-0-12-398527-9.00007-3	Clocked Set–Reset Latches	Synchronous Precharge Logic	book-chapter
+45	10.1109/tcad.2023.3239538	2023	10.1109/tcad.2023.3239538	Efficient Computation of the Max-Plus Semantics of Synchronous Dataflow Graphs	IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems	journal-article
+46	10.1007/978-3-319-91734-4_23	2019	10.1007/978-3-319-91734-4_23	Integrated Modeling Using Finite State Machines and Dataflow Graphs	Handbook of Signal Processing Systems	book-chapter
+47	10.1145/72981.72984	1989	10.1145/72981.72984	Towards dataflow analysis of communicating finite state machines	Proceedings of the eighth annual ACM Symposium on Principles of distributed computing  - PODC '89	proceedings-article
+48	10.1007/978-1-4419-6345-1_36	2010	10.1007/978-1-4419-6345-1_36	Integrated Modeling using Finite State Machines and Dataflow Graphs	Handbook of Signal Processing Systems	book-chapter
+49	10.1007/978-1-4615-1659-0_3	2001	10.1007/978-1-4615-1659-0_3	Codesign Finite State Machines	Synchronous Equivalence	book-chapter
+50	10.1007/978-1-4615-1417-6	2001	10.1007/978-1-4615-1417-6	Sequential Optimization of Asynchronous and Synchronous Finite-State Machines		book
+51	10.1049/pbpo186e_ch14	2021	10.1049/pbpo186e_ch14	High-speed synchronous reluctance machines	Synchronous Reluctance Machines: Analysis, optimization and applications	book-chapter
+52	10.1002/9781394280452.fmatter	2025	10.1002/9781394280452.fmatter	Parameter Estimation of Permanent Magnet Synchronous Machines	Parameter Estimation of Permanent Magnet Synchronous Machines	other
+53	10.3403/30203681	None	10.3403/30203681	Rotating electrical machines		standard
+54	10.1201/b12211-14	2012	10.1201/b12211-14	Time Domain Solution of the State Equation	Analysis of Synchronous Machines, Second Edition	book-chapter
+55	10.1002/9781118460641.app4	2012	10.1002/9781118460641.app4	State‐Space Eigenvector Calculation	Direct Eigen Control for Induction Machines and Synchronous Motors	other
+56	10.3403/00811800u	None	10.3403/00811800u	Rotating electrical machines. Excitation systems for synchronous machines		standard
+57	10.3403/00811800	None	10.3403/00811800	Rotating electrical machines. Excitation systems for synchronous machines		standard
+58	10.22541/au.173702742.21820971/v1	2025	10.22541/au.173702742.21820971/v1	Improving Reluctance Synchronous Machines with the Use of Permanent Magnetic and Analyzing Permanent Magnetic Synchronous Machines		posted-content
+59	10.1093/oso/9780198593911.003.0002	1996	10.1093/oso/9780198593911.003.0002	Classification of Reluctance Synchronous Machines and Drives	Reluctance Synchronous Machines and Drives	book-chapter
+60	10.5220/0001683700420049	2008	10.5220/0001683700420049	SEMANTICS AND REFINEMENT OF BEHAVIOR STATE MACHINES	Proceedings of the Tenth International Conference on Enterprise Information Systems	proceedings-article
+61	10.1016/b978-0-08-010017-3.50015-1	1964	10.1016/b978-0-08-010017-3.50015-1	CALCULATIONS OF APPLICATIONS OF ASYNCHRONIZED SYNCHRONOUS MACHINES IN CERTAIN CASES	Asynchronized Synchronous Machines	book-chapter
+62	10.1109/icelmach.2012.6350294	2012	10.1109/icelmach.2012.6350294	Steady-state and transient parameter computation for wound field synchronous machines	2012 XXth International Conference on Electrical Machines	proceedings-article
+63	10.1007/3-540-32364-3_5	2005	10.1007/3-540-32364-3_5	Evolutionary Synthesis of Synchronous Finite State Machines	Studies in Fuzziness and Soft Computing	book-chapter
+64	10.1002/9781119546924.ch7	2019	10.1002/9781119546924.ch7	Steady‐State Models and Operation of Synchronous Machines	Power System Modeling, Computation, and Control	other
+65	10.1109/edtc.1997.582416	None	10.1109/edtc.1997.582416	On the use of reset to increase the testability of interconnected finite-state machines	Proceedings European Design and Test Conference. ED &amp; TC 97	proceedings-article
+66	10.1007/978-1-4613-1389-2_3	1996	10.1007/978-1-4613-1389-2_3	Synchronous dataflow	The Kluwer International Series in Engineering and Computer Science	book-chapter
+67	10.1002/9781394185931.ch2	2022	10.1002/9781394185931.ch2	Control of Hybrid Excited Synchronous Machines	Hybrid Excited Synchronous Machines	other
+68	10.1049/pbpo186e_ch5	2021	10.1049/pbpo186e_ch5	Nonlinear analytical model for synchronous reluctance machines	Synchronous Reluctance Machines: Analysis, optimization and applications	book-chapter
+69	10.3403/30067813	None	10.3403/30067813	Rotating electrical machines		standard
+70	10.1201/b11685-12	2011	10.1201/b11685-12	Synchronous Machines	Electrical Machines with MATLAB	book-chapter
+71	10.3403/00830403u	None	10.3403/00830403u	Rotating electrical machines		standard
+72	10.3403/00830403	None	10.3403/00830403	Rotating electrical machines		standard
+73	10.1002/9781394185931.ch1	2022	10.1002/9781394185931.ch1	Hybrid Excited Synchronous Machines	Hybrid Excited Synchronous Machines	other
+74	10.5381/jot.2007.6.9.a2	2007	10.5381/jot.2007.6.9.a2	Direct Semantics of Extended State Machines.	The Journal of Object Technology	journal-article
+75	10.1036/1097-8542.yb110105	None	10.1036/1097-8542.yb110105	Permanent-magnet synchronous machines	AccessScience	dataset
+76	10.1109/icpp.2009.66	2009	10.1109/icpp.2009.66	Optimizing Communication Scheduling Using Dataflow Semantics	2009 International Conference on Parallel Processing	proceedings-article
+77	10.1002/9781394185931.ch3	2022	10.1002/9781394185931.ch3	Experimental Studies of Hybrid Excited Synchronous Machines	Hybrid Excited Synchronous Machines	other
+78	10.1007/978-3-030-76020-5_18	2021	10.1007/978-3-030-76020-5_18	A Framework for Modeling the Semantics of Synchronous and Asynchronous Procedures with Abstract State Machines	Lecture Notes in Computer Science	book-chapter
+79	10.3403/02201930	None	10.3403/02201930	Identification cards. Integrated circuit(s) cards with contacts		standard
+80	10.1201/9781003795841-5	2026	10.1201/9781003795841-5	The Synchronous Generator Steady and State Performance	Principles of AC Machines	book-chapter
+81	10.1109/iccl.1988.13054	None	10.1109/iccl.1988.13054	Languages in electrotechnical laboratory's dataflow machines	Proceedings. 1988 International Conference on Computer Languages	proceedings-article
+82	10.1007/3-211-27389-1_51	None	10.1007/3-211-27389-1_51	Two-Criterion Optimization in State Assignment for Synchronous Finite State Machines using NSGA-II	Adaptive and Natural Computing Algorithms	book-chapter
+83	10.1049/pbpo186e_ch6	2021	10.1049/pbpo186e_ch6	Design criteria of flux-barriers in synchronous reluctance machines	Synchronous Reluctance Machines: Analysis, optimization and applications	book-chapter
+84	10.1049/pbpo186e_ch4	2021	10.1049/pbpo186e_ch4	Reluctance network model of high-speed synchronous reluctance machines	Synchronous Reluctance Machines: Analysis, optimization and applications	book-chapter
+85	10.3403/02201930u	None	10.3403/02201930u	Identification cards. Integrated circuit(s) cards with contacts		standard
+86	10.1007/978-1-4615-1417-6_2	2001	10.1007/978-1-4615-1417-6_2	Background	Sequential Optimization of Asynchronous and Synchronous Finite-State Machines	book-chapter
+87	10.1007/978-1-4615-1417-6_9	2001	10.1007/978-1-4615-1417-6_9	Conclusions	Sequential Optimization of Asynchronous and Synchronous Finite-State Machines	book-chapter
+88	10.1007/978-3-540-87603-8_9	None	10.1007/978-3-540-87603-8_9	A Verified AsmL Implementation of Belief Revision	Lecture Notes in Computer Science	book-chapter
+89	10.1007/978-981-13-0423-1_1	2019	10.1007/978-981-13-0423-1_1	Linear Machines: State of the Art with Emphasis on Sustainable Applications	Power Systems	book-chapter
+90	10.1109/icvd.1997.567964	None	10.1109/icvd.1997.567964	Synthesis for logical initializability of synchronous finite state machines	Proceedings Tenth International Conference on VLSI Design	proceedings-article
+91	10.1007/bfb0022475	None	10.1007/bfb0022475	An extensional treatment of dataflow deadlock	Lecture Notes in Computer Science	book-chapter
+92	10.1007/978-1-4615-1417-6_1	2001	10.1007/978-1-4615-1417-6_1	Introduction	Sequential Optimization of Asynchronous and Synchronous Finite-State Machines	book-chapter
+93	10.36227/techrxiv.171340597.72893394/v1	2024	10.36227/techrxiv.171340597.72893394/v1	Extended State Observer Based Stator Flux Linkage Estimation of Nonlinear Synchronous Machines		posted-content
+94	10.1080/07313569308909678	1993	10.1080/07313569308909678	LOSS OF FIELD SOLID STATE RELAY FOR PROTECTION OF SYNCHRONOUS MACHINES	Electric Machines &amp; Power Systems	journal-article
+95	10.1016/c2013-0-01728-8	1964	10.1016/c2013-0-01728-8	Asynchronized Synchronous Machines		edited-book
+96	10.1023/a:1013765011735	2002	10.1023/a:1013765011735	Holism, Conceptual-Role Semantics, and Syntactic Semantics	Minds and Machines	journal-article
+97	10.1145/1629911.1630146	2009	10.1145/1629911.1630146	Reduction techniques for synchronous dataflow graphs	Proceedings of the 46th Annual Design Automation Conference	proceedings-article
+98	10.1007/978-1-4615-1417-6_4	2001	10.1007/978-1-4615-1417-6_4	CHASM: Optimal State Assignment for Asynchronous FSM’s	Sequential Optimization of Asynchronous and Synchronous Finite-State Machines	book-chapter
+99	10.1016/b978-044450228-5/50013-8	1999	10.1016/b978-044450228-5/50013-8	Towards a New Formal SDL Semantics based on Abstract State Machines	SDL '99	book-chapter
+100	10.1007/bf01186644	1995	10.1007/bf01186644	A compositional dataflow semantics for Petri nets	Acta Informatica	journal-article

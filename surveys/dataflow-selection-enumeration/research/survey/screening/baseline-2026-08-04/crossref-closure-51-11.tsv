@@ -1,0 +1,101 @@
+rank	source_id	year	doi	title	venue	type
+1	10.4204/eptcs.323.1	2020	10.4204/eptcs.323.1	A Complete Language for Faceted Dataflow Programs	Electronic Proceedings in Theoretical Computer Science	journal-article
+2	10.22215/etd/1994-02809	None	10.22215/etd/1994-02809	Equivalence of categorical calculus theories based on smoothness and boundedness.		dissertation
+3	10.1017/cbo9780511760754.021	2010	10.1017/cbo9780511760754.021	Morita equivalence	Algebraic Theories	book-chapter
+4	10.1109/bigdata.2016.7840779	2016	10.1109/bigdata.2016.7840779	Managing a complicated workflow based on dataflow-based workflow scheduler	2016 IEEE International Conference on Big Data (Big Data)	proceedings-article
+5	10.1023/a:1008735511095	2000	10.1023/a:1008735511095	Morita Equivalence of Sketches	Applied Categorical Structures	journal-article
+6	10.1109/niss.2009.212	2009	10.1109/niss.2009.212	Supporting Dynamic Workflow Adaptation in a Dataflow-Constrained Workflow Net	2009 International Conference on New Trends in Information and Service Science	proceedings-article
+7	10.1023/a:1008732224512	2000	10.1023/a:1008732224512	Weak Equivalence of Internal Categories	Applied Categorical Structures	journal-article
+8	10.1007/s10773-017-3433-4	2017	10.1007/s10773-017-3433-4	Categorical Equivalence Between Orthomodular Dynamic Algebras and Complete Orthomodular Lattices	International Journal of Theoretical Physics	journal-article
+9	10.7717/peerj-cs.2917/fig-1	None	10.7717/peerj-cs.2917/fig-1	Figure 1: Complete dam monitoring workflow.		component
+10	10.1006/inco.1996.0012	1996	10.1006/inco.1996.0012	On Schematological Equivalence of Dataflow Networks	Information and Computation	journal-article
+11	10.7717/peerj.20538/supp-3	None	10.7717/peerj.20538/supp-3	Supplemental Information 3: The complete analysis workflow		component
+12	10.1006/inco.1997.2658	1997	10.1006/inco.1997.2658	On Schematological Equivalence of Partially Interpreted Dataflow Networks	Information and Computation	journal-article
+13	10.1093/oso/9780198538516.003.0008	1999	10.1093/oso/9780198538516.003.0008	Complete and categorical theories	Model Theory	book-chapter
+14	10.1109/services.2010.93	2010	10.1109/services.2010.93	Fault-Tolerance in Dataflow-Based Scientific Workflow Management	2010 6th World Congress on Services	proceedings-article
+15	10.1109/tsc.2010.58	2012	10.1109/tsc.2010.58	A Dataflow-Based Scientific Workflow Composition Framework	IEEE Transactions on Services Computing	journal-article
+16	10.1007/s11005-023-01765-w	2024	10.1007/s11005-023-01765-w	Quantization as a categorical equivalence	Letters in Mathematical Physics	journal-article
+17	10.1023/a:1012095313842	2001	10.1023/a:1012095313842	Boundedness and Complete Distributivity	Applied Categorical Structures	journal-article
+18	10.1142/s1793557120500527	2019	10.1142/s1793557120500527	Categorical equivalence of clones of operations preserving a nontrivial n-equivalence	Asian-European Journal of Mathematics	journal-article
+19	10.1007/s10485-026-09875-x	2026	10.1007/s10485-026-09875-x	Equivalence via Surjections	Applied Categorical Structures	journal-article
+20	10.1142/s0219498819500087	2019	10.1142/s0219498819500087	Categorical Morita equivalence and monoidal Morita equivalence of semisimple Hopf algebras of dimension pqr	Journal of Algebra and Its Applications	journal-article
+21	10.1021/acs.jproteome.8b00968.s002	None	10.1021/acs.jproteome.8b00968.s002	IsoProt: A Complete and Reproducible Workflow To Analyze iTRAQ/TMT Experiments		component
+22	10.1023/a:1008709313586	2000	10.1023/a:1008709313586	Cauchy Complete Nearness Spaces	Applied Categorical Structures	journal-article
+23	10.1021/acs.jproteome.5c00266.s001	None	10.1021/acs.jproteome.5c00266.s001	Complete Data Analysis Workflow for Quantitative DIA Mass Spectrometry Using Nextflow		component
+24	10.1086/701047	2019	10.1086/701047	Definable Categorical Equivalence	Philosophy of Science	journal-article
+25	10.1109/amige.2008.ecp.32	2008	10.1109/amige.2008.ecp.32	State Machine Workflow Modeling and Dataflow Analysis	2008 IEEE Symposium on Advanced Management of Information for Globalized Enterprises (AMIGE)	proceedings-article
+26	10.1021/acs.jproteome.8b00968.s001	None	10.1021/acs.jproteome.8b00968.s001	IsoProt: A Complete and Reproducible Workflow To Analyze iTRAQ/TMT Experiments		component
+27	10.1007/bf03168668	1997	10.1007/bf03168668	Expectations and solutions for HIS/RIS/PACS dataflow and workflow	Journal of Digital Imaging	journal-article
+28	10.1201/9780203748671-10	2017	10.1201/9780203748671-10	An algebraic version of categorical equivalence for varieties and more general algebraic categories	Logic and algebra	book-chapter
+29	10.3724/sp.j.1041.2012.01124	2013	10.3724/sp.j.1041.2012.01124	Testing Measurement Equivalence of Categorical Items’ Threshold/Difficulty Parameters: A Comparison of CCFA and (M)IRT Approaches	Acta Psychologica Sinica	journal-article
+30	10.1021/jasms.3c00072.s002	None	10.1021/jasms.3c00072.s002	A Complete Workflow for High Throughput Human Single Skeletal Muscle Fiber Proteomics		component
+31	10.1021/jasms.3c00072.s003	None	10.1021/jasms.3c00072.s003	A Complete Workflow for High Throughput Human Single Skeletal Muscle Fiber Proteomics		component
+32	10.1109/pdcat.2005.246	2005	10.1109/pdcat.2005.246	Using Dataflow Information to Improve Inter-Workflow Instance Concurrency	Sixth International Conference on Parallel and Distributed Computing Applications and Technologies (PDCAT'05)	proceedings-article
+33	10.1007/s00012-013-0235-2	2013	10.1007/s00012-013-0235-2	Composition of matrix products and categorical equivalence	Algebra universalis	journal-article
+34	10.1016/j.aim.2003.11.008	2004	10.1016/j.aim.2003.11.008	Trees and ultrametric spaces: a categorical equivalence	Advances in Mathematics	journal-article
+35	10.1021/jasms.3c00072.s004	None	10.1021/jasms.3c00072.s004	A Complete Workflow for High Throughput Human Single Skeletal Muscle Fiber Proteomics		component
+36	10.5220/0007353500002108	2019	10.5220/0007353500002108	Equivalence of Turn-Regularity and Complete Extensions	Proceedings of the 14th International Joint Conference on Computer Vision, Imaging and Computer Graphics Theory and Applications	proceedings-article
+37	10.5220/0007353500390047	2019	10.5220/0007353500390047	Equivalence of Turn-Regularity and Complete Extensions	Proceedings of the 14th International Joint Conference on Computer Vision, Imaging and Computer Graphics Theory and Applications	proceedings-article
+38	10.7717/peerj.17126/supp-9	None	10.7717/peerj.17126/supp-9	Supplemental Information 9: Workflow for complete genome sequencing using short read sequences.		component
+39	10.1021/jasms.3c00072.s005	None	10.1021/jasms.3c00072.s005	A Complete Workflow for High Throughput Human Single Skeletal Muscle Fiber Proteomics		component
+40	10.1021/jasms.3c00072.s001	None	10.1021/jasms.3c00072.s001	A Complete Workflow for High Throughput Human Single Skeletal Muscle Fiber Proteomics		component
+41	10.1007/bf00878502	1994	10.1007/bf00878502	What is concrete equivalence?	Applied Categorical Structures	journal-article
+42	10.1007/pl00000331	2001	10.1007/pl00000331	Categorical equivalence of varieties and invariant relations	Algebra Universalis	journal-article
+43	10.1023/a:1023533424445	2003	10.1023/a:1023533424445	Metric and Complete Metric σ-Frames	Applied Categorical Structures	journal-article
+44	10.1515/ms-2025-0093	2025	10.1515/ms-2025-0093	A new categorical equivalence for stone algebras	Mathematica Slovaca	journal-article
+45	10.1515/9783110618594-034	2019	10.1515/9783110618594-034	The Fight against Antisemitism and the Iranian Regime: Challenges and Contradictions in the Light of Adorno’s Categorical Imperative	Comprehending and Confronting Antisemitism	book-chapter
+46	10.1007/978-3-642-12814-1_18	2010	10.1007/978-3-642-12814-1_18	Auditing Workflow Executions against Dataflow Policies	Lecture Notes in Business Information Processing	book-chapter
+47	10.1002/cpe.1708	2011	10.1002/cpe.1708	Dataflow detection and applications to workflow scheduling	Concurrency and Computation: Practice and Experience	journal-article
+48	10.1007/s11225-014-9569-9	2015	10.1007/s11225-014-9569-9	A Categorical Equivalence for Product Algebras	Studia Logica	journal-article
+49	10.4324/9780080962573-14	2012	10.4324/9780080962573-14	Complete Animation	Visual Effects Society Handbook	book-chapter
+50	10.1305/ndjfl/1093891297	1974	10.1305/ndjfl/1093891297	A categorical equivalence of proofs.	Notre Dame Journal of Formal Logic	journal-article
+51	10.1007/s000120050087	1998	10.1007/s000120050087	Categorical equivalence of algebras with a majority term	Algebra Universalis	journal-article
+52	10.12697/acutm.2012.16.14	2012	10.12697/acutm.2012.16.14	Categorical equivalence of some algebras	Acta et Commentationes Universitatis Tartuensis de Mathematica	journal-article
+53	10.1007/s10485-015-9394-y	2016	10.1007/s10485-015-9394-y	Automorphic Equivalence of Many-Sorted Algebras	Applied Categorical Structures	journal-article
+54	10.1007/s11225-012-9444-5	2012	10.1007/s11225-012-9444-5	M-Zeroids: Structure and Categorical Equivalence	Studia Logica	journal-article
+55	10.1556/sscmath.40.2003.4.4	2003	10.1556/sscmath.40.2003.4.4	On categorical equivalence of finite algebras generating arithmetical varieties	Studia Scientiarum Mathematicarum Hungarica	journal-article
+56	10.1109/hicss.2008.120	2008	10.1109/hicss.2008.120	Developing a Workflow Design Framework Based on Dataflow Analysis	Proceedings of the 41st Annual Hawaii International Conference on System Sciences (HICSS 2008)	proceedings-article
+57	10.2307/2586574	2000	10.2307/2586574	Categorical quasivarieties via Morita equivalence	Journal of Symbolic Logic	journal-article
+58	10.2172/2280633	2024	10.2172/2280633	A Complete Machine-Learning-Based Workflow to Illuminate Earthquake Processes		report
+59	10.7717/peerj-cs.2808/fig-8	None	10.7717/peerj-cs.2808/fig-8	Figure 8: A complete workflow diagram from raw dataset processing to model performance evaluation.		component
+60	10.1007/s10485-013-9305-z	2014	10.1007/s10485-013-9305-z	On Morita Equivalence of Partially Ordered Monoids	Applied Categorical Structures	journal-article
+61	10.1080/00927870701511996	2007	10.1080/00927870701511996	Categorical Morita Equivalence for Group-Theoretical Categories	Communications in Algebra	journal-article
+62	10.1016/s0304-3975(98)00232-1	2000	10.1016/s0304-3975(98)00232-1	Detecting equivalence of modular specifications with categorical diagrams	Theoretical Computer Science	journal-article
+63	10.2139/ssrn.3509245	2019	10.2139/ssrn.3509245	Detection of Dataflow Modeling Anomalies in Workflow Systems: Toward an Active Help Verification Using Model Checking	SSRN Electronic Journal	journal-article
+64	10.2139/ssrn.5245075	2025	10.2139/ssrn.5245075	Complete Complex Finsler Metrics and Uniform Equivalence of the Kobayashi Metric		posted-content
+65	10.1007/978-3-031-61705-8_2	2024	10.1007/978-3-031-61705-8_2	Koszul Duality Equivalence	Lecture Notes in Mathematics	book-chapter
+66	10.4203/ccp.90.24	None	10.4203/ccp.90.24	Grid Workflow Acceleration using a Dataflow Paradigm	Civil-Comp Proceedings	proceedings-article
+67	10.1016/j.jalgebra.2024.12.008	2025	10.1016/j.jalgebra.2024.12.008	A categorical interpretation of Morita equivalence for dynamical von Neumann algebras	Journal of Algebra	journal-article
+68	10.1016/j.fss.2023.108762	2024	10.1016/j.fss.2023.108762	A categorical equivalence for odd or even involutive FL -chains	Fuzzy Sets and Systems	journal-article
+69	10.2139/ssrn.4605554	2023	10.2139/ssrn.4605554	Complete Complex Finsler Metrics and Uniform Equivalence of the Kobayashi Metric		posted-content
+70	10.22541/essoar.175795203.37768605/v1	2025	10.22541/essoar.175795203.37768605/v1	Redefining Uncertainty: A Complete Bayesian Workflow for Ocean Color Remote Sensing		posted-content
+71	10.1109/tase.2012.18	2012	10.1109/tase.2012.18	Dataflow Weaknesses Analysis of Scientific Workflow Based on Fault Tree	2012 Sixth International Symposium on Theoretical Aspects of Software Engineering	proceedings-article
+72	10.1007/s10485-015-9406-y	2016	10.1007/s10485-015-9406-y	Morita Equivalence for Many-Sorted Enriched Theories	Applied Categorical Structures	journal-article
+73	10.1007/978-3-540-73940-1_4	None	10.1007/978-3-540-73940-1_4	A Categorical Observation of Timed Testing Equivalence	Lecture Notes in Computer Science	book-chapter
+74	10.1007/s10485-013-9347-2	2014	10.1007/s10485-013-9347-2	Two Ways to Centralizers of Equivalence Relations	Applied Categorical Structures	journal-article
+75	10.1016/j.csda.2021.107304	2021	10.1016/j.csda.2021.107304	Equivalence class selection of categorical graphical models	Computational Statistics &amp; Data Analysis	journal-article
+76	10.1007/s11083-014-9318-8	2015	10.1007/s11083-014-9318-8	The Categorical Equivalence Between Algebraic Domains and F-Augmented Closure Spaces	Order	journal-article
+77	10.1109/iciw.2009.64	2009	10.1109/iciw.2009.64	Orchestration Evolution Following Dataflow Concepts: Introducing Unanticipated Loops inside a Legacy Workflow	2009 Fourth International Conference on Internet and Web Applications and Services	proceedings-article
+78	10.1007/s11225-025-10191-z	2026	10.1007/s11225-025-10191-z	Orthomodular and Unsharp Orthomodular Lattices: A Categorical Equivalence	Studia Logica	journal-article
+79	10.1007/s11225-010-9250-x	2010	10.1007/s11225-010-9250-x	Quantum Computational Structures: Categorical Equivalence for Square Root qMV -algebras	Studia Logica	journal-article
+80	10.1017/s0960129597002430	1998	10.1017/s0960129597002430	Algorithms for categorical equivalence	Mathematical Structures in Computer Science	journal-article
+81	10.1002/malq.200310036	2003	10.1002/malq.200310036	Categorical abstract algebraic logic: The criterion for deductive equivalence	Mathematical Logic Quarterly	journal-article
+82	10.21203/rs.3.rs-6586210/v1	2025	10.21203/rs.3.rs-6586210/v1	CAD-CAM complete digital dentures: An improved clinical and laboratory workflow		posted-content
+83	10.1023/a:1008795426330	2000	10.1023/a:1008795426330	A Complete Classification of the Simultaneously Bireflective and Bicoreflective Subconstructs of Approach Spaces	Applied Categorical Structures	journal-article
+84	10.4324/9780080928326-10	2012	10.4324/9780080928326-10	Recording	Pro Tools 8 Kit	book-chapter
+85	10.4324/9780080928326-7	2012	10.4324/9780080928326-7	Introduction	Pro Tools 8 Kit	book-chapter
+86	10.4324/9780080928326-11	2012	10.4324/9780080928326-11	Editing	Pro Tools 8 Kit	book-chapter
+87	10.31223/x54j1j	2025	10.31223/x54j1j	Redefining Uncertainty: A Complete Bayesian Workflow for Ocean Color Remote Sensing		posted-content
+88	10.4324/9780080928326	2012	10.4324/9780080928326	Pro Tools 8 Kit		book
+89	10.1016/b978-0-240-80890-1.50011-5	2007	10.1016/b978-0-240-80890-1.50011-5	Digital Post-Production Workflow	The Complete Guide to Professional Wedding Photography	book-chapter
+90	10.1021/acs.jproteome.5c00210.s001	None	10.1021/acs.jproteome.5c00210.s001	Do-It-Yourself De Novo Antibody Sequencing Workflow that Achieves Complete Accuracy of the Variable Regions		component
+91	10.2139/ssrn.5451424	2025	10.2139/ssrn.5451424	Redefining Uncertainty: A Complete Bayesian Workflow for Ocean Color Remote Sensing		posted-content
+92	10.1016/s0304-3975(02)00454-1	2003	10.1016/s0304-3975(02)00454-1	On categorical equivalence of Gentzen-style derivations in IMLL	Theoretical Computer Science	journal-article
+93	10.1007/s10485-024-09792-x	2025	10.1007/s10485-024-09792-x	An Equivalence Between Two Models of $$\infty $$-Categories of Enriched Presheaves	Applied Categorical Structures	journal-article
+94	10.4324/9780080928326-9	2012	10.4324/9780080928326-9	Composing	Pro Tools 8 Kit	book-chapter
+95	10.4324/9780080928326-12	2012	10.4324/9780080928326-12	Mixing	Pro Tools 8 Kit	book-chapter
+96	10.1017/s000497270003118x	1997	10.1017/s000497270003118x	Categorical equivalence of finite groups	Bulletin of the Australian Mathematical Society	journal-article
+97	10.1109/icws.2019.00076	2019	10.1109/icws.2019.00076	Equivalence-Enhanced Microservice Workflow Orchestration to Efficiently Increase Reliability	2019 IEEE International Conference on Web Services (ICWS)	proceedings-article
+98	10.1007/s11225-021-09960-3	2022	10.1007/s11225-021-09960-3	A Categorical Equivalence for Tense Nelson Algebras	Studia Logica	journal-article
+99	10.1016/b978-0-12-193750-8.50010-6	1977	10.1016/b978-0-12-193750-8.50010-6	Criterion for Near-Complete Decomposability Equivalence Classes of Aggregates	Decomposability	book-chapter
+100	10.1089/bioe.2024.0046	2024	10.1089/bioe.2024.0046	A Multi-Faceted Issue to Complete Volume 6	Bioelectricity	journal-article

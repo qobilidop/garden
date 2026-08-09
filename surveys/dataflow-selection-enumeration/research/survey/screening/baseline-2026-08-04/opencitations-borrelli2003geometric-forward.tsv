@@ -1,0 +1,180 @@
+rank	source_id	year	doi	title	venue	type
+1	doi:10.1109/acc.2005.1470060	-	10.1109/acc.2005.1470060	Unique Polyhedral Representations Of Continuous Selections For Convex Multiparametric Quadratic Programs	Proceedings Of The 2005, American Control Conference, 2005.	proceedings article
+2	doi:10.1109/cdc.2003.1271665	-	10.1109/cdc.2003.1271665	Explicit Solutions For Optimal Maneuver-based Motion Planning	42Nd IEEE International Conference On Decision And Control (IEEE Cat. No.03CH37475)	proceedings article
+3	doi:10.1109/cdc.2003.1273111	-	10.1109/cdc.2003.1273111	Further Results On Multiparametric Quadratic Programming	42Nd IEEE International Conference On Decision And Control (IEEE Cat. No.03CH37475)	proceedings article
+4	doi:10.3166/ejc.9.177-189	2003	10.3166/ejc.9.177-189	Hybrid Systems Modeling And Control	European Journal Of Control	journal article
+5	doi:10.1109/tac.2003.816984	2003	10.1109/tac.2003.816984	Min-max Control Of Constrained Uncertain Discrete-Time Linear Systems	IEEE Transactions On Automatic Control	journal article
+6	doi:10.1023/b:jota.0000012733.44020.54	2004	10.1023/b:jota.0000012733.44020.54	An Algorithm For Approximate Multiparametric Linear Programming	Journal Of Optimization Theory And Applications	journal article
+7	doi:10.1016/j.compchemeng.2004.08.007	2004	10.1016/j.compchemeng.2004.08.007	Analysis Of Linear Programming In Model Predictive Control	Computers & Chemical Engineering	journal article
+8	doi:10.3182/20050703-6-cz-1902.00903	2005	10.3182/20050703-6-cz-1902.00903	A Method For Obtaining Continuous Solutions To Multiparametric Linear Programs	IFAC Proceedings Volumes	journal article
+9	doi:10.1002/aic.10842	2006	10.1002/aic.10842	Uncertainty Analysis On The Righthand Side For MILP Problems	Annual Review Of Fluid Mechanics	journal article
+10	doi:10.1002/rnc.1077	2006	10.1002/rnc.1077	Explicit Robust Model Predictive Control Using Recursive Closed-Loop Prediction	International Journal Of Robust And Nonlinear Control	journal article
+11	doi:10.1007/11832225_25	2006	10.1007/11832225_25	Primal-Dual Enumeration For Multiparametric Linear Programming	Lecture Notes In Computer Science	book chapter
+12	doi:10.1109/acc.2006.1657353	2006	10.1109/acc.2006.1657353	Stable Receding Horizon Control For Max-Plus-Linear Systems	2006 American Control Conference	proceedings article
+13	doi:10.1109/acc.2006.1657485	2006	10.1109/acc.2006.1657485	Offline Robust Model Predictive Control With Rewinding Prediction	2006 American Control Conference	proceedings article
+14	doi:10.1109/cdc.2006.377330	2006	10.1109/cdc.2006.377330	On The Continuity And Complexity Of Control Laws Based On Multiparametric Linear Programs	Proceedings Of The 45Th IEEE Conference On Decision And Control	proceedings article
+15	doi:10.1109/cdc.2006.377366	2006	10.1109/cdc.2006.377366	Worst-case Optimal Control Of Uncertain Max-Plus-Linear Systems	Proceedings Of The 45Th IEEE Conference On Decision And Control	proceedings article
+16	doi:10.1109/cdc.2006.377493	2006	10.1109/cdc.2006.377493	Set-Invariant Estimators For Multiple-Output Discrete-Time Systems	Proceedings Of The 45Th IEEE Conference On Decision And Control	proceedings article
+17	doi:10.1109/cdc.2006.377502	2006	10.1109/cdc.2006.377502	Parametric Analysis Of Controllers For Constrained Linear Systems	Proceedings Of The 45Th IEEE Conference On Decision And Control	proceedings article
+18	doi:10.1109/cdc.2006.377797	2006	10.1109/cdc.2006.377797	Multiparametric Linear Complementarity Problems	Proceedings Of The 45Th IEEE Conference On Decision And Control	proceedings article
+19	doi:10.1109/cdc.2006.377799	2006	10.1109/cdc.2006.377799	Reverse Search For Parametric Linear Programming	Proceedings Of The 45Th IEEE Conference On Decision And Control	proceedings article
+20	doi:10.3182/20060402-4-br-2902.00153	2006	10.3182/20060402-4-br-2902.00153	Short-Term Scheduling Of Chemical Process Including Uncertainty	IFAC Proceedings Volumes	journal article
+21	doi:10.1007/s10589-006-6447-z	2006	10.1007/s10589-006-6447-z	An Algorithm For Approximate Multiparametric Convex Programming	Nonprofit Management And Leadership	journal article
+22	doi:10.1109/tac.2006.878720	2006	10.1109/tac.2006.878720	Relaxing Dynamic Programming	IEEE Transactions On Automatic Control	journal article
+23	doi:10.1016/j.automatica.2006.06.026	2006	10.1016/j.automatica.2006.06.026	On The Facet-To-Facet Property Of Solutions To Convex Parametric Quadratic Programs	Automatica	journal article
+24	doi:10.1002/aic.11351	2007	10.1002/aic.11351	Process Scheduling Under Uncertainty Using Multiparametric Programming	AIChE Journal	journal article
+25	doi:10.3166/ejc.13.152-170	2007	10.3166/ejc.13.152-170	Multiparametric Linear Programming With Applications To Control	European Journal Of Control	journal article
+26	doi:10.1109/date.2007.364689	2007	10.1109/date.2007.364689	Adaptive Power Management In Energy Harvesting Systems	2007 Design, Automation & Test In Europe Conference & Exhibition	proceedings article
+27	doi:10.1109/tac.2007.899071	2007	10.1109/tac.2007.899071	Finite-Horizon Min–Max Control Of Max-Plus-Linear Systems	IEEE Transactions On Automatic Control	journal article
+28	doi:10.1021/ie070148s	2007	10.1021/ie070148s	A New Methodology For The General Multiparametric Mixed-Integer Linear Programming (MILP) Problems	Industrial & Engineering Chemistry Research	journal article
+29	doi:10.1007/s11590-007-0056-3	2007	10.1007/s11590-007-0056-3	A Multi-Parametric Programming Approach For Constrained Dynamic Programming Problems	Optimization Letters	journal article
+30	doi:10.23919/ecc.2007.7068822	2007	10.23919/ecc.2007.7068822	A Dynamic Programming Approach For Constrained Multi-Stage Problems Via Multi-Parametric Programming	2007 European Control Conference (ECC)	proceedings article
+31	doi:10.1007/s10957-007-9215-z	2007	10.1007/s10957-007-9215-z	Continuous Selection And Unique Polyhedral Representation Of Solutions To Convex Parametric Quadratic Programs	Journal Of Optimization Theory And Applications	journal article
+32	doi:10.1016/j.automatica.2007.03.008	2007	10.1016/j.automatica.2007.03.008	Lexicographic Perturbation For Multiparametric Linear Programming With Applications To Control	Automatica	journal article
+33	doi:10.1016/j.conengprac.2006.10.009	2007	10.1016/j.conengprac.2006.10.009	Short-term Scheduling Of Chemical Process Including Uncertainty	Control Engineering Practice	journal article
+34	doi:10.1002/rnc.1251	2008	10.1002/rnc.1251	An Online Active Set Strategy To Overcome The Limitations Of Explicit MPC	Building Simulation	journal article
+35	doi:10.1109/cdc.2008.4738794	2008	10.1109/cdc.2008.4738794	The Double Description Method For The Approximation Of Explicit MPC Control Laws	2008 47Th IEEE Conference On Decision And Control	proceedings article
+36	doi:10.1145/1403375.1403431	2008	10.1145/1403375.1403431	Robust And Low Complexity Rate Control For Solar Powered Sensors	Proceedings Of The Conference On Design, Automation And Test In Europe - DATE '08	proceedings article
+37	doi:10.1137/060659314	2008	10.1137/060659314	Efficient On-Line Computation Of Constrained Optimal Control	SIAM Journal On Control And Optimization	journal article
+38	doi:10.1109/date.2008.4484691	2008	10.1109/date.2008.4484691	Robust And Low Complexity Rate Control For Solar Powered Sensors	2008 Design, Automation And Test In Europe	proceedings article
+39	doi:10.1007/s10957-008-9384-4 10.3929/ethz-b-000014099	-	10.1007/s10957-008-9384-4 10.3929/ethz-b-000014099	-	-	-
+40	doi:10.1080/00207170601094404	2008	10.1080/00207170601094404	Model Predictive Control For Uncertain Max–Min-Plus-Scaling Systems	International Journal Of Control	journal article
+41	doi:10.1109/iemce.2008.4617943	2008	10.1109/iemce.2008.4617943	A Framework For Multi-Parametric Programming And Control — An Overview	2008 IEEE International Engineering Management Conference	proceedings article
+42	doi:10.1109/chicc.2008.4604876	2008	10.1109/chicc.2008.4604876	Multiparametric Linear Programming For Control	2008 27Th Chinese Control Conference	proceedings article
+43	doi:10.1109/chicc.2008.4605311	2008	10.1109/chicc.2008.4605311	MPC-based Design Of On-Off Control Law Of The Attitude Control Thruster	2008 27Th Chinese Control Conference	proceedings article
+44	doi:10.1007/978-0-387-88617-6_3	2009	10.1007/978-0-387-88617-6_3	Modeling And Managing Uncertainty In Process Planning And Scheduling	Springer Optimization And Its Applications	book chapter
+45	doi:10.1007/978-3-642-01094-1_29	2009	10.1007/978-3-642-01094-1_29	A Survey On Explicit Model Predictive Control	Nonlinear Model Predictive Control	book chapter
+46	doi:10.3182/20090921-3-tr-3005.00058	2009	10.3182/20090921-3-tr-3005.00058	Guaranteed Cost Control For Constrained Takagi-Sugeno Fuzzy Systems	IFAC Proceedings Volumes	journal article
+47	doi:10.1002/rnc.1309	2009	10.1002/rnc.1309	Robust Control Of Constrained Max-Plus-Linear Systems	International Journal Of Robust And Nonlinear Control	journal article
+48	doi:10.1007/s10898-008-9398-3	2009	10.1007/s10898-008-9398-3	Global Optimization Of Multi-Parametric MILP Problems	Journal Of Global Optimization	journal article
+49	doi:10.1109/icma.2009.5246402	2009	10.1109/icma.2009.5246402	Model Predictive Control Based On Linear Programming For Engine Idle Speed Control	2009 International Conference On Mechatronics And Automation	proceedings article
+50	doi:10.1002/rnc.1392	2009	10.1002/rnc.1392	Inf-sup Control Of Discontinuous Piecewise Affine Systems	International Journal Of Robust And Nonlinear Control	journal article
+51	doi:10.1016/j.automatica.2009.09.032	2009	10.1016/j.automatica.2009.09.032	Multiobjective Model Predictive Control	Automatica	journal article
+52	doi:10.1109/cdc.2009.5400430	2009	10.1109/cdc.2009.5400430	On The Computation Of Linear Model Predictive Control Laws	Proceedings Of The 48H IEEE Conference On Decision And Control (CDC) Held Jointly With 2009 28Th Chinese Control Conference	proceedings article
+53	doi:10.1109/aspdac.2010.5419916	2010	10.1109/aspdac.2010.5419916	Dynamic Power Management In Environmentally Powered Systems	2010 15Th Asia And South Pacific Design Automation Conference (ASP-DAC)	proceedings article
+54	doi:10.1016/j.conengprac.2009.09.001	2010	10.1016/j.conengprac.2009.09.001	Min–max Control Using Parametric Approximate Dynamic Programming	Control Engineering Practice	journal article
+55	doi:10.1109/infcom.2010.5461925	2010	10.1109/infcom.2010.5461925	Demand-Oblivious Routing: Distributed Vs. Centralized Approaches	2010 Proceedings IEEE INFOCOM	proceedings article
+56	doi:10.1016/j.ejor.2009.04.019	2010	10.1016/j.ejor.2009.04.019	Multiparametric Linear Programming: Support Set And Optimal Partition Invariancy	European Journal Of Operational Research	journal article
+57	doi:10.1109/tc.2009.158	2010	10.1109/tc.2009.158	Adaptive Power Management For Environmentally Powered Systems	Meteoritics & Planetary Science	journal article
+58	doi:10.1109/iscc.2010.5546757	2010	10.1109/iscc.2010.5546757	On Optimal Multipath Rate-Adaptive Routing	The IEEE Symposium On Computers And Communications	proceedings article
+59	doi:10.1145/1773814.1773818	2010	10.1145/1773814.1773818	An Energy Management Framework For Energy Harvesting Embedded Systems	ACM Journal On Emerging Technologies In Computing Systems	journal article
+60	doi:10.1145/1749608.1749610	2010	10.1145/1749608.1749610	Typing Linear Constraints	ACM Transactions On Programming Languages And Systems	journal article
+61	doi:10.1016/j.automatica.2010.06.008	2010	10.1016/j.automatica.2010.06.008	A New Algorithm For Solving Convex Parametric Quadratic Programs Based On Graphical Derivatives Of Solution Mappings	Automatica	journal article
+62	doi:10.1080/10556788.2011.556635	2011	10.1080/10556788.2011.556635	Tolerance Analysis In Linear Systems And Linear Programming	Optimization Methods And Software	journal article
+63	doi:10.1109/icmic.2011.5973770	2011	10.1109/icmic.2011.5973770	Explicit MPC For Multi-Rate Control Systems	Proceedings Of 2011 International Conference On Modelling, Identification And Control	proceedings article
+64	doi:10.1002/9783527631216.ch6	2011	10.1002/9783527631216.ch6	Bilevel And Multilevel Programming	Multi-Parametric Programming	book chapter
+65	doi:10.1002/9783527631216.ch7	2011	10.1002/9783527631216.ch7	Dynamic Programming	Multi-Parametric Programming	book chapter
+66	doi:10.1007/978-1-4614-3924-0_5	2012	10.1007/978-1-4614-3924-0_5	Multiobjective Optimization Via Parametric Optimization: Models, Algorithms, And Applications	Springer Proceedings In Mathematics & Statistics	book chapter
+67	doi:10.1109/infcom.2012.6195807	2012	10.1109/infcom.2012.6195807	Optimal Resource Allocation To Defend Against Deliberate Attacks In Networking Infrastructures	2012 Proceedings IEEE INFOCOM	proceedings article
+68	doi:10.1007/s10898-012-9895-2	2012	10.1007/s10898-012-9895-2	On The Global Solution Of Multi-Parametric Mixed Integer Linear Programming Problems	Journal Of Global Optimization	journal article
+69	doi:10.1007/s10287-012-0144-4	2012	10.1007/s10287-012-0144-4	Theoretical And Algorithmic Advances In Multi-Parametric Programming And Control	Computational Management Science	journal article
+70	doi:10.1049/iet-cta.2010.0443	2012	10.1049/iet-cta.2010.0443	Field Programmable Gate Array/System On A Programmable Chip-Based Implementation Of Model Predictive Controller	IET Control Theory & Applications	journal article
+71	doi:10.1007/s10601-012-9127-x	2012	10.1007/s10601-012-9127-x	A Complexity Perspective On Entailment Of Parameterized Linear Constraints	Constraints	journal article
+72	doi:10.1007/s10472-013-9332-3	2013	10.1007/s10472-013-9332-3	On Quantified Linear Implications	Annals Of Mathematics And Artificial Intelligence	journal article
+73	doi:10.1002/aic.14140	2013	10.1002/aic.14140	Proactive Scheduling Of Batch Processes By A Combined Robust Optimization And Multiparametric Programming Approach	The Journal Of Finance	journal article
+74	doi:10.1007/978-3-319-03401-0_5	2014	10.1007/978-3-319-03401-0_5	Predictive Control In Power Electronics And Drives: Basic Concepts, Theory, And Methods	Advanced And Intelligent Control In Power Electronics And Drives	book chapter
+75	doi:10.1155/2014/358148	2014	10.1155/2014/358148	Robust Tube-Based MPC With Piecewise Affine Control Laws	Abstract And Applied Analysis	journal article
+76	doi:10.1016/j.compchemeng.2013.08.005	2014	10.1016/j.compchemeng.2013.08.005	Parametric Optimization With Uncertainty On The Left Hand Side Of Linear Programs	Computers & Chemical Engineering	journal article
+77	doi:10.1007/s10898-014-0143-9	2014	10.1007/s10898-014-0143-9	A Branch And Bound Method For The Solution Of Multiparametric Mixed Integer Linear Programming Problems	Journal Of Global Optimization	journal article
+78	doi:10.1016/j.compchemeng.2013.10.009	2014	10.1016/j.compchemeng.2013.10.009	Approximate Solution Of mp-MILP Problems Using Piecewise Affine Relaxation Of Bilinear Terms	Computers & Chemical Engineering	journal article
+79	doi:10.1002/9783527631209.ch6	2014	10.1002/9783527631209.ch6	Bilevel And Multilevel Programming	Process Systems Engineering	book chapter
+80	doi:10.1002/9783527631209.ch7	2014	10.1002/9783527631209.ch7	Dynamic Programming	Process Systems Engineering	book chapter
+81	doi:10.1016/j.compchemeng.2014.01.011	2014	10.1016/j.compchemeng.2014.01.011	Solving Linear And Quadratic Programs With An Analog Circuit	Computers & Chemical Engineering	journal article
+82	doi:10.1016/j.suscom.2014.08.002	2014	10.1016/j.suscom.2014.08.002	Temperature-aware Adaptive Power Management: An Analytical Approach For Joint Processor And Cooling Mode Selection	Sustainable Computing: Informatics And Systems	journal article
+83	doi:10.1007/978-3-319-26687-9_3	2015	10.1007/978-3-319-26687-9_3	Implications Of Inverse Parametric Optimization In Model Predictive Control	Developments In Model-Based Optimization And Control	book chapter
+84	doi:10.1109/hicss.2015.306	2015	10.1109/hicss.2015.306	Probabilistic Forecast Of Real-Time LMP Via Multiparametric Programming	2015 48Th Hawaii International Conference On System Sciences	proceedings article
+85	doi:10.1109/tits.2014.2354052	2015	10.1109/tits.2014.2354052	Fast Online Computation Of A Model Predictive Controller And Its Application To Fuel Economy–Oriented Adaptive Cruise Control	IEEE Transactions On Intelligent Transportation Systems	journal article
+86	doi:10.1109/twc.2015.2403351	2015	10.1109/twc.2015.2403351	A Framework For Evaluating The Best Achievable Performance By Distributed Lifetime-Efficient Routing Schemes In Wireless Sensor Networks	IEEE Transactions On Wireless Communications	journal article
+87	doi:10.1002/net.21617	2015	10.1002/net.21617	Rate-adaptive Multipath Routing: Distributed, Centralized, And Hybrid Architectures	Networks	journal article
+88	doi:10.1109/pesgm.2015.7286497	2015	10.1109/pesgm.2015.7286497	Stochastic Coordinated Transaction Scheduling Via Probabilistic Forecast	2015 IEEE Power & Energy Society General Meeting	proceedings article
+89	doi:10.1016/j.automatica.2015.05.021	2015	10.1016/j.automatica.2015.05.021	Explicit Hybrid Model-Predictive Control: The Exact Solution	Automatica	journal article
+90	doi:10.1109/tpwrs.2016.2572138	2016	10.1109/tpwrs.2016.2572138	Learning The LMP-Load Coupling From Data: A Support Vector Machine Based Approach	IEEE Transactions On Power Systems	journal article
+91	doi:10.1109/tpwrs.2016.2592380	2016	10.1109/tpwrs.2016.2592380	Probabilistic Forecasting Of Real-Time LMP And Network Congestion	IEEE Transactions On Power Systems	journal article
+92	doi:10.1016/j.apenergy.2016.04.060	2016	10.1016/j.apenergy.2016.04.060	Distributionally Robust Hydro-Thermal-Wind Economic Dispatch	Applied Energy	journal article
+93	doi:10.1109/icirt.2016.7588722	2016	10.1109/icirt.2016.7588722	Hierarchical Energy Management Of Multi-Train Railway Transport System With Energy Storages	2016 IEEE International Conference On Intelligent Rail Transportation (ICIRT)	proceedings article
+94	doi:10.1080/10556788.2016.1213839	2016	10.1080/10556788.2016.1213839	Distributed Primal–Dual Interior-Point Methods For Solving Tree-Structured Coupled Convex Problems Using Message-Passing	Optimization Methods And Software	journal article
+95	doi:10.1109/tifs.2016.2581313	2016	10.1109/tifs.2016.2581313	A Unified Resource Allocation Framework For Defending Against Pollution Attacks In Wireless Network Coding Systems	IEEE Transactions On Information Forensics And Security	journal article
+96	doi:10.1016/j.cherd.2016.09.034	2016	10.1016/j.cherd.2016.09.034	On Multi-Parametric Programming And Its Applications In Process Systems Engineering	Chemical Engineering Research And Design	journal article
+97	doi:10.1002/aic.15755	2017	10.1002/aic.15755	Multi‐parametric Linear Programming Under Global Uncertainty	AIChE Journal	journal article
+98	doi:10.1109/pc.2017.7976234	2017	10.1109/pc.2017.7976234	Nonlinear Hierarchical Building Zone And Microgrid Control Based On Sensitivity Analysis	2017 21St International Conference On Process Control (PC)	proceedings article
+99	doi:10.1016/j.apenergy.2017.03.087	2017	10.1016/j.apenergy.2017.03.087	Modular Energy Cost Optimization For Buildings With Integrated Microgrid	Applied Energy	journal article
+100	doi:10.1177/0143624417731298	2017	10.1177/0143624417731298	Sensibility And Uncertainties Analysis Method Dedicated To Home Energy Management Problem	Building Services Engineering Research And Technology	journal article
+101	doi:10.1109/itsc.2017.8317787	2017	10.1109/itsc.2017.8317787	Hierarchical Coordination Of Trains And Traction Substation Storages For Energy Cost Optimization	2017 IEEE 20Th International Conference On Intelligent Transportation Systems (ITSC)	proceedings article
+102	doi:10.1007/978-3-319-75151-1_3	2018	10.1007/978-3-319-75151-1_3	Sets Of Nash Equilibria In Polymatrix Mixed-Strategy Games	Pareto-Nash-Stackelberg Game And Control Theory	book chapter
+103	doi:10.1109/access.2018.2862428	2018	10.1109/access.2018.2862428	An Offline Optimization And Online Table Look-Up Strategy Of Two-Layer Model Predictive Control	IEEE Access	journal article
+104	doi:10.1007/s10957-018-1281-x	2018	10.1007/s10957-018-1281-x	An Improved Multi-parametric Programming Algorithm For Flux Balance Analysis Of Metabolic Networks	Journal Of Optimization Theory And Applications	journal article
+105	doi:10.1109/eeeic.2018.8494481	2018	10.1109/eeeic.2018.8494481	Smart Energy Management Of A Railway Station	2018 IEEE International Conference On Environment And Electrical Engineering And 2018 IEEE Industrial And Commercial Power Systems Europe (EEEIC / I&CPS Europe)	proceedings article
+106	doi:10.1016/j.compchemeng.2018.04.015	2018	10.1016/j.compchemeng.2018.04.015	Multi-parametric Mixed Integer Linear Programming Under Global Uncertainty	Computers & Chemical Engineering	journal article
+107	doi:10.1007/978-3-319-77489-3_16	2018	10.1007/978-3-319-77489-3_16	Explicit (Offline) Optimization For MPC	Handbook Of Model Predictive Control	book chapter
+108	doi:10.1007/978-3-319-77489-3_17	2018	10.1007/978-3-319-77489-3_17	Real-Time Implementation Of Explicit Model Predictive Control	Handbook Of Model Predictive Control	book chapter
+109	doi:10.1049/iet-cta.2018.5744	2018	10.1049/iet-cta.2018.5744	Static Output Feedback Control Design For Constrained Linear Discrete‐Time Systems Using Data Cluster Analysis	IET Control Theory & Applications	journal article
+110	doi:10.1007/s10035-018-0851-9	2018	10.1007/s10035-018-0851-9	A Geometry-Based Algorithm For Cloning Real Grains 2.0	Granular Matter	journal article
+111	doi:10.1177/0020294019838589	2019	10.1177/0020294019838589	An Improved Constrained Dynamic Matrix Control For Temperature In An Industrial Coke Furnace	Measurement And Control	journal article
+112	doi:10.23919/ecc.2019.8796040	2019	10.23919/ecc.2019.8796040	Day-ahead Strategic Marketing Of Energy Prosumption: A Machine Learning Approach Based On Neural Networks	2019 18Th European Control Conference (ECC)	proceedings article
+113	doi:10.1109/tits.2018.2882087	2019	10.1109/tits.2018.2882087	Hierarchical Model Predictive Control For Coordinated Electric Railway Traction System Energy Management	IEEE Transactions On Intelligent Transportation Systems	journal article
+114	doi:10.1080/02331934.2019.1638387	2019	10.1080/02331934.2019.1638387	A Parameter Method For Linear Algebra And Optimization With Uncertainties	Optimization	journal article
+115	doi:10.1007/978-3-030-38137-0_2	2020	10.1007/978-3-030-38137-0_2	Parametric Optimisation: 65 Years Of Developments And Status Quo	Uncertainty-aware Integration Of Control With Process Operations And Multi-parametric Programming Under Global Uncertainty	book chapter
+116	doi:10.1016/j.ifacol.2020.12.1655	2020	10.1016/j.ifacol.2020.12.1655	Distributed Multi-Building Coordination For Demand Response	IFAC-PapersOnLine	journal article
+117	doi:10.1016/j.ifacol.2020.12.333	2020	10.1016/j.ifacol.2020.12.333	Robust Point-to-Set Control Of Hybrid Systems With Uncertainties Using Constraint Tightening	IFAC-PapersOnLine	journal article
+118	doi:10.1109/oajpe.2020.3006828	2020	10.1109/oajpe.2020.3006828	Impact Of Energy Storage On Economic Dispatch Of Distribution Systems: A Multi-Parametric Linear Programming Approach And Its Implications	IEEE Open Access Journal Of Power And Energy	journal article
+119	doi:10.9746/sicetr.56.57	2020	10.9746/sicetr.56.57	Day-ahead Scheduling Method For Electricity Markets Using Neural Networks	Transactions Of The Society Of Instrument And Control Engineers	journal article
+120	doi:10.1016/j.automatica.2019.108649	2020	10.1016/j.automatica.2019.108649	Minimax Strategy In Approximate Model Predictive Control	Automatica	journal article
+121	doi:10.1177/0020294019881739	2020	10.1177/0020294019881739	An Improved Constrained Predictive Functional Control For Industrial Processes: A Chamber Pressure Process Study	Measurement And Control	journal article
+122	doi:10.1109/tpwrs.2019.2938618	2020	10.1109/tpwrs.2019.2938618	Incorporating Massive Scenarios In Transmission Expansion Planning With High Renewable Energy Penetration	IEEE Transactions On Power Systems	journal article
+123	doi:10.1016/j.compchemeng.2020.106849	2020	10.1016/j.compchemeng.2020.106849	A Class Of Multi-Parametric Quadratic Program With An Uncertain Objective Function	Computers & Chemical Engineering	journal article
+124	doi:10.1007/s11081-020-09535-6	2020	10.1007/s11081-020-09535-6	A Space Exploration Algorithm For Multiparametric Programming Via Delaunay Triangulation	Optimization And Engineering	journal article
+125	doi:10.1007/s10898-020-00933-9	2020	10.1007/s10898-020-00933-9	The Exact Solution Of Multiparametric Quadratically Constrained Quadratic Programming Problems	Journal Of Global Optimization	journal article
+126	doi:10.1109/pesgm41954.2020.9282083	2020	10.1109/pesgm41954.2020.9282083	MPLP-based Factor Influence Analysis On Real-time LMP	2020 IEEE Power & Energy Society General Meeting (PESGM)	proceedings article
+127	doi:10.1080/00207721.2020.1795948	2020	10.1080/00207721.2020.1795948	Design Of Reduced Complexity Controllers For Linear Systems Under Constraints Using Data Cluster Analysis	The Lancet Regional Health - Europe	journal article
+128	doi:10.1109/tste.2019.2953867	2020	10.1109/tste.2019.2953867	Fast Power System Cascading Failure Path Searching With High Wind Power Penetration	IEEE Transactions On Sustainable Energy	journal article
+129	doi:10.1109/smartgridcomm47815.2020.9302942	2020	10.1109/smartgridcomm47815.2020.9302942	Learning To Optimize Power Distribution Grids Using Sensitivity-Informed Deep Neural Networks	2020 IEEE International Conference On Communications, Control, And Computing Technologies For Smart Grids (SmartGridComm)	proceedings article
+130	doi:10.1002/9781119265245.ch2	2020	10.1002/9781119265245.ch2	Multi‐parametric Linear Programming	Multi‐Parametric Optimization And Control	-
+131	doi:10.5937/menhottur2102095m	2021	10.5937/menhottur2102095m	Dimensioning The Extended Capacity Of Zlatar Ski Center Using Linear Programming Method	Menadzment U Hotelijerstvu I Turizmu	journal article
+132	doi:10.1002/oca.2709	2021	10.1002/oca.2709	Terminal‐cost Design For Model Predictive Control With Linear Stage‐Costs: A Set‐Theoretic Method	Optimal Control Applications And Methods	journal article
+133	doi:10.1109/tsg.2020.3038651	2021	10.1109/tsg.2020.3038651	Fast Probabilistic Hosting Capacity Analysis For Active Distribution Systems	IEEE Transactions On Smart Grid	journal article
+134	doi:10.1093/imaman/dpab017	2021	10.1093/imaman/dpab017	Dynamic Hedging In Incomplete Markets Using Risk Measures	IMA Journal Of Management Mathematics	journal article
+135	doi:10.1109/tac.2020.3020827	2021	10.1109/tac.2020.3020827	Parallel MPC For Linear Systems With Input Constraints	IEEE Transactions On Automatic Control	journal article
+136	doi:10.1109/tste.2021.3086953	2021	10.1109/tste.2021.3086953	Economic Value Of Energy Storages In Unit Commitment With Renewables And Its Implication On Storage Sizing	IEEE Transactions On Sustainable Energy	journal article
+137	doi:10.3390/pr9101762	2021	10.3390/pr9101762	Set Membership Estimation With Dynamic Flux Balance Models	Processes	journal article
+138	doi:10.3390/app11209408	2021	10.3390/app11209408	On The Competitiveness Of Oblivious Routing: A Statistical View	Applied Sciences	journal article
+139	doi:10.1109/tec.2021.3116153	2021	10.1109/tec.2021.3116153	Modular Hierarchical Model Predictive Control For Coordinated And Holistic Energy Management Of Buildings	IEEE Transactions On Energy Conversion	journal article
+140	doi:10.1016/j.ejor.2021.04.004	2022	10.1016/j.ejor.2021.04.004	Global Sensitivity Analysis Via A Statistical Tolerance Approach	European Journal Of Operational Research	journal article
+141	doi:10.1109/tsg.2021.3128631	2022	10.1109/tsg.2021.3128631	Flexibility Requirement When Tracking Renewable Power Fluctuation With Peer-to-Peer Energy Sharing	IEEE Transactions On Smart Grid	journal article
+142	doi:10.1109/tpwrs.2021.3110528	2022	10.1109/tpwrs.2021.3110528	Parametric Distribution Optimal Power Flow With Variable Renewable Generation	IEEE Transactions On Power Systems	journal article
+143	doi:10.1109/tpwrs.2021.3124579	2022	10.1109/tpwrs.2021.3124579	Nonparametric Probabilistic Optimal Power Flow	IEEE Transactions On Power Systems	journal article
+144	doi:10.1109/tpwrs.2021.3125624	2022	10.1109/tpwrs.2021.3125624	Strategic Generation Investment In Energy Markets: A Multiparametric Programming Approach	IEEE Transactions On Power Systems	journal article
+145	doi:10.1109/tpwrs.2021.3127189	2022	10.1109/tpwrs.2021.3127189	Learning To Solve The AC-OPF Using Sensitivity-Informed Deep Neural Networks	IEEE Transactions On Power Systems	journal article
+146	doi:10.1016/j.compchemeng.2022.107872	2022	10.1016/j.compchemeng.2022.107872	Online Estimation Using Dynamic Flux Balance Model And Multiparametric Programming	Computers & Chemical Engineering	journal article
+147	doi:10.1109/cdc51059.2022.9992451	2022	10.1109/cdc51059.2022.9992451	Exact Complexity Certification Of A Standard Branch And Bound Method For Mixed-Integer Linear Programming	2022 IEEE 61St Conference On Decision And Control (CDC)	proceedings article
+148	doi:10.1007/978-3-031-29100-5_6	2023	10.1007/978-3-031-29100-5_6	Forecast For The Future	Power Electronics And Power Systems	book chapter
+149	doi:10.1016/j.ifacol.2023.10.1576	2023	10.1016/j.ifacol.2023.10.1576	Quantifying Impact On Safety From Cyber-Attacks On Cyber-Physical Systems	IFAC-PapersOnLine	journal article
+150	doi:10.1109/lcsys.2022.3188357	2023	10.1109/lcsys.2022.3188357	Parallel MPC For Linear Systems With State And Input Constraints	IEEE Control Systems Letters	journal article
+151	doi:10.2139/ssrn.4425135	2023	10.2139/ssrn.4425135	Multi-Objective Assortment Optimization: Profit, Risk, Customer Utility, And Beyond	SSRN Electronic Journal	journal article
+152	doi:10.1109/pesgm52003.2023.10252967	2023	10.1109/pesgm52003.2023.10252967	Low-Carbon Economic Dispatch Of Bulk Power Systems Using Nash Bargaining Game	2023 IEEE Power & Energy Society General Meeting (PESGM)	proceedings article
+153	doi:10.1109/pesgm52003.2023.10253209	2023	10.1109/pesgm52003.2023.10253209	Strategic Investment In Energy Markets Using Bayesian Optimization	2023 IEEE Power & Energy Society General Meeting (PESGM)	proceedings article
+154	doi:10.1109/psgec58411.2023.10255799	2023	10.1109/psgec58411.2023.10255799	Quantifying The Effects Of Demand-Side Resources To Provide Flexible Ramping Products	2023 3Rd Power System And Green Energy Conference (PSGEC)	proceedings article
+155	doi:10.1016/j.ejcon.2023.100881	2023	10.1016/j.ejcon.2023.100881	An ADMM-based Algorithm For Stabilizing Distributed Model Predictive Control Without Terminal Cost And Constraint	European Journal Of Control	journal article
+156	doi:10.1007/s11081-023-09845-5	2023	10.1007/s11081-023-09845-5	A Novel Parallel Combinatorial Algorithm For Multiparametric Programming	Optimization And Engineering	journal article
+157	oci:06022961417-06401394348	-	-	-	-	-
+158	doi:10.1109/lcsys.2024.3405958	2024	10.1109/lcsys.2024.3405958	Multiparametric Analysis Of Multi-Task Markov Decision Processes: Structure, Invariance, And Reducibility	JMIR Aging	journal article
+159	doi:10.32604/ee.2024.047401	2024	10.32604/ee.2024.047401	Improved Unit Commitment With Accurate Dynamic Scenarios Clustering Based On Multi-Parametric Programming And Benders Decomposition	Energy Engineering	journal article
+160	doi:10.1287/opre.2023.0565	2024	10.1287/opre.2023.0565	Application-Driven Learning: A Closed-Loop Prediction And Optimization Approach Applied To Dynamic Reserves And Demand Forecasting	Operations Research	journal article
+161	doi:10.1016/j.apenergy.2024.123836	2024	10.1016/j.apenergy.2024.123836	Online Probabilistic Energy Flow For Hydrogen-Power-Heat System Based On Multi-Parametric Programming	Applied Energy	journal article
+162	doi:10.1109/naps61145.2024.10741733	2024	10.1109/naps61145.2024.10741733	Risk-Aware Value-Oriented Net Demand Forecasting For Virtual Power Plants	2024 56Th North American Power Symposium (NAPS)	proceedings article
+163	doi:10.1016/j.renene.2024.121107	2024	10.1016/j.renene.2024.121107	End-to-end Learning For Stochastic Preventive Dispatch Of Renewables-Rich Power Systems In Abnormal Weather Conditions	Renewable Energy	journal article
+164	doi:10.1287/ijoc.2023.0220	2024	10.1287/ijoc.2023.0220	Efficiently Constructing Convex Approximation Sets In Multiobjective Optimization Problems	INFORMS Journal On Computing	journal article
+165	doi:10.1287/moor.2020.0334	2024	10.1287/moor.2020.0334	Dynamic Resource Allocation: The Geometry And Robustness Of Constant Regret	Mathematics Of Operations Research	journal article
+166	doi:10.1109/ei264398.2024.10990589	2024	10.1109/ei264398.2024.10990589	Improved Risk Analysis For Micro-grids Based On Multi-Parametric Programming	2024 IEEE 8Th Conference On Energy Internet And Energy System Integration (EI2)	proceedings article
+167	doi:10.1109/ei264398.2024.10991381	2024	10.1109/ei264398.2024.10991381	A Fast Risk Assessment Method For Power System Considering Wind Power Uncertainty	2024 IEEE 8Th Conference On Energy Internet And Energy System Integration (EI2)	proceedings article
+168	doi:10.1007/978-3-031-85096-7_12	2025	10.1007/978-3-031-85096-7_12	Applications	Springer Optimization And Its Applications	book chapter
+169	doi:10.1002/9781394334599.ch17	2025	10.1002/9781394334599.ch17	Deep Learning Techniques For Solving Optimal Power Flow Problems	Smart Cyber‐Physical Power Systems	-
+170	doi:10.1109/tsg.2024.3503554	2025	10.1109/tsg.2024.3503554	Toward Value-Oriented Renewable Energy Forecasting: An Iterative Learning Approach	IEEE Transactions On Smart Grid	journal article
+171	doi:10.1016/j.ejcon.2025.101217	2025	10.1016/j.ejcon.2025.101217	Fast And Lightweight: A Real-Time Parallelizable MPC For Embedded Systems	European Journal Of Control	journal article
+172	doi:10.1109/eem64765.2025.11050290	2025	10.1109/eem64765.2025.11050290	Resiliency-Aware Planning Of Active Distribution Grids Using Multi-Parametric Programming	2025 21St International Conference On The European Energy Market (EEM)	proceedings article
+173	doi:10.1016/j.compchemeng.2025.109157	2025	10.1016/j.compchemeng.2025.109157	Decision Rule-Based Method For Multiparametric Linear Programming	Computers & Chemical Engineering	journal article
+174	doi:10.1016/j.segan.2025.101878	2025	10.1016/j.segan.2025.101878	Strategic Bidding In Energy Markets With Gradient-Based Iterative Methods	Sustainable Energy, Grids And Networks	journal article
+175	doi:10.1109/icocta66834.2025.11337298	2025	10.1109/icocta66834.2025.11337298	Trajectory Tracking Problems For Discrete-Time Linear Dynamics Via Explicit MPC	2025 IEEE 5Th International Conference On Control Theory And Applications (ICoCTA)	proceedings article
+176	doi:10.1007/s40866-025-00301-0	2025	10.1007/s40866-025-00301-0	Optimized Stochastic Scheduling Of Wind Energy With EV Integration And Demand Response Using MINLP	Smart Grids And Sustainable Energy	journal article
+177	doi:10.1016/j.energy.2025.137983	2025	10.1016/j.energy.2025.137983	Reliable And Economic Operation Of Regional-Community Integrated Energy Systems: A Hybrid Game Approach Based On State Similarity	Energy	journal article
+178	doi:10.1109/tempr.2025.3613973	2025	10.1109/tempr.2025.3613973	Improving Sequential Market Coordination Via Value-Oriented Renewable Energy Forecasting	IEEE Transactions On Energy Markets, Policy And Regulation	journal article
+179	doi:10.1016/j.apenergy.2026.127582	2026	10.1016/j.apenergy.2026.127582	Modeling And Tackling Unit Commitment Constraint Screening Under Uncertainty	Applied Energy	journal article

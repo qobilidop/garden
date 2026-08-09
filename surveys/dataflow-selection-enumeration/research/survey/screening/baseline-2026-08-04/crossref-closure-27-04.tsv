@@ -1,0 +1,101 @@
+rank	source_id	year	doi	title	venue	type
+1	10.3030/101083038	2023	10.3030/101083038			grant
+2	10.1017/cbo9780511569845.004	1993	10.1017/cbo9780511569845.004	Hardware Verification using Higher Order Logic	Higher Order Logic and Hardware Verification	book-chapter
+3	10.1145/2774975.2774978	2015	10.1145/2774975.2774978	Counter-example complete verification for higher-order functions	Proceedings of the 6th ACM SIGPLAN Symposium on Scala	proceedings-article
+4	10.1017/cbo9780511569845.002	1993	10.1017/cbo9780511569845.002	Hardware Verification	Higher Order Logic and Hardware Verification	book-chapter
+5	10.1017/cbo9780511569845.003	1993	10.1017/cbo9780511569845.003	Higher Order Logic and the HOL System	Higher Order Logic and Hardware Verification	book-chapter
+6	10.1145/2480359.2429081	2013	10.1145/2480359.2429081	Automating relatively complete verification of higher-order functional programs	ACM SIGPLAN Notices	journal-article
+7	10.1145/2429069.2429081	2013	10.1145/2429069.2429081	Automating relatively complete verification of higher-order functional programs	Proceedings of the 40th annual ACM SIGPLAN-SIGACT symposium on Principles of programming languages	proceedings-article
+8	10.1017/cbo9780511569845.009	1993	10.1017/cbo9780511569845.009	References	Higher Order Logic and Hardware Verification	book-chapter
+9	10.1017/cbo9780511569845.005	1993	10.1017/cbo9780511569845.005	Abstraction	Higher Order Logic and Hardware Verification	book-chapter
+10	10.1017/cbo9780511569845.001	1993	10.1017/cbo9780511569845.001	Preface	Higher Order Logic and Hardware Verification	book-chapter
+11	10.70675/8e153fb0z54c9z4004z8b28za822c1e74a78	None	10.70675/8e153fb0z54c9z4004z8b28za822c1e74a78	Automatic verification of higher-order functional programs using regular tree languages		dissertation
+12	10.1017/cbo9780511569845.006	1993	10.1017/cbo9780511569845.006	Data Abstraction	Higher Order Logic and Hardware Verification	book-chapter
+13	10.1017/cbo9780511569845	1993	10.1017/cbo9780511569845	Higher Order Logic and Hardware Verification		monograph
+14	10.1017/cbo9780511569845.007	1993	10.1017/cbo9780511569845.007	Temporal Abstraction	Higher Order Logic and Hardware Verification	book-chapter
+15	10.26226/morressier.604907f41a80aac83ca25d24	2021	10.26226/morressier.604907f41a80aac83ca25d24	Sound and Complete Concolic Testing for Higher-Order Functions		posted-content
+16	10.1023/a:1019916231463	2002	10.1023/a:1019916231463	Dependent Types for Program Termination Verification	Higher-Order and Symbolic Computation	journal-article
+17	10.1017/cbo9780511569845.008	1993	10.1017/cbo9780511569845.008	Abstraction between Models	Higher Order Logic and Hardware Verification	book-chapter
+18	10.1145/3158100	2018	10.1145/3158100	Relatively complete refinement type system for verification of higher-order non-deterministic programs	Proceedings of the ACM on Programming Languages	journal-article
+19	10.1145/1594834.1480933	2009	10.1145/1594834.1480933	Types and higher-order recursion schemes for verification of higher-order programs	ACM SIGPLAN Notices	journal-article
+20	10.31274/rtd-20200616-25	None	10.31274/rtd-20200616-25	FocusCheck: a tool for verification and counterexample analysis of sequential C programs		dissertation
+21	10.3030/713999	2017	10.3030/713999			grant
+22	10.1007/978-3-662-03809-3_5	1999	10.1007/978-3-662-03809-3_5	Higher-Order Logics	Introduction to Formal Hardware Verification	book-chapter
+23	10.31274/etd-180810-2447	None	10.31274/etd-180810-2447	Modular verification of higher-order methods with mandatory calls specified by model programs		dissertation
+24	10.1109/date.2011.5763058	2011	10.1109/date.2011.5763058	Counterexample-guided SMT-driven optimal buffer sizing	2011 Design, Automation &amp; Test in Europe	proceedings-article
+25	10.1007/978-3-319-21668-3_12	2015	10.1007/978-3-319-21668-3_12	Counterexample-Guided Quantifier Instantiation for Synthesis in SMT	Lecture Notes in Computer Science	book-chapter
+26	10.1145/1480881.1480933	2009	10.1145/1480881.1480933	Types and higher-order recursion schemes for verification of higher-order programs	Proceedings of the 36th annual ACM SIGPLAN-SIGACT symposium on Principles of programming languages	proceedings-article
+27	10.14711/thesis-b924427	None	10.14711/thesis-b924427	Function approximation with higher-order fuzzy systems		dissertation
+28	10.1017/9781316664018.013	None	10.1017/9781316664018.013	Executive Function and Higher-Order Thinking	Cognitive Neuroscience	book-chapter
+29	10.1016/b978-155860701-9/50011-8	2005	10.1016/b978-155860701-9/50011-8	Function Index	Higher-Order Perl	book-chapter
+30	10.2139/ssrn.5223444	2025	10.2139/ssrn.5223444	An Efficient Method to Calculate Complete Sets in Higher-Order Argumentation Frameworks		posted-content
+31	10.1209/0295-5075/21/2/003	1993	10.1209/0295-5075/21/2/003	A Counterexample to a Conjecture of Dirac for a System with Singular Higher-Order Lagrangian	Europhysics Letters (EPL)	journal-article
+32	10.31274/cc-20240624-1296	2021	10.31274/cc-20240624-1296	SMT-based formal verification of safety properties in neural networks		report
+33	10.1007/3-540-58450-1_41	1994	10.1007/3-540-58450-1_41	Mechanical verification of distributed algorithms in higher-order logic	Lecture Notes in Computer Science	book-chapter
+34	10.1109/host.1993.264573	None	10.1109/host.1993.264573	Ambiguity function, polynomial phase signals and higher-order cyclostationarity	[1993 Proceedings] IEEE Signal Processing Workshop on Higher-Order Statistics	proceedings-article
+35	10.3724/sp.j.1001.2012.04196	2012	10.3724/sp.j.1001.2012.04196	Path Sensitive Program Verification Based on SMT Solvers	Journal of Software	journal-article
+36	10.1109/ivsw.2016.7566605	2016	10.1109/ivsw.2016.7566605	Counterexample-guided diagnosis	2016 1st IEEE International Verification and Security Workshop (IVSW)	proceedings-article
+37	10.1007/3-540-57826-9_159	1994	10.1007/3-540-57826-9_159	Verification in higher order logic of mutual exclusion algorithm	Lecture Notes in Computer Science	book-chapter
+38	10.23919/acc45564.2020.9147430	2020	10.23919/acc45564.2020.9147430	Generating Longest Counterexample: On the Cross-roads of Mixed Integer Linear Programming and SMT	2020 American Control Conference (ACC)	proceedings-article
+39	10.1109/host.1999.778696	None	10.1109/host.1999.778696	Average likelihood function and higher-order statistics	Proceedings of the IEEE Signal Processing Workshop on Higher-Order Statistics. SPW-HOS '99	proceedings-article
+40	10.1007/978-3-030-91374-8_17	2022	10.1007/978-3-030-91374-8_17	Higher-Order Description of Brain Function	Understanding Complex Systems	book-chapter
+41	10.1007/bfb0055146	1998	10.1007/bfb0055146	Object-oriented verification based on record subtyping in Higher-Order Logic	Lecture Notes in Computer Science	book-chapter
+42	10.1007/s10990-007-9000-6	2007	10.1007/s10990-007-9000-6	Symbolic reachability analysis using narrowing and its application to verification of cryptographic protocols	Higher-Order and Symbolic Computation	journal-article
+43	10.21236/ada120207	1982	10.21236/ada120207	Third Order Efficiency of the MLE. A Counterexample.		report
+44	10.1007/bfb0023744	None	10.1007/bfb0023744	Verification of a multiprocessor cache protocol using simulation relations and higher-order logic (summary)	Lecture Notes in Computer Science	book-chapter
+45	10.1145/3158141	2018	10.1145/3158141	Refinement reflection: complete verification with SMT	Proceedings of the ACM on Programming Languages	journal-article
+46	10.1007/978-3-642-15898-8_10	2010	10.1007/978-3-642-15898-8_10	SMT-Based Formal Verification of a TTEthernet Synchronization Function	Lecture Notes in Computer Science	book-chapter
+47	10.1007/bf00353655	1989	10.1007/bf00353655	A counterexample in the theory of random orders	Order	journal-article
+48	10.2307/44151752	1985	10.2307/44151752	Higher Order Riemann Complete Integrals	Real Analysis Exchange	journal-article
+49	10.1007/bf01108595	1994	10.1007/bf01108595	A counterexample about poset reconstruction	Order	journal-article
+50	10.1007/978-1-4471-3534-0_19	1990	10.1007/978-1-4471-3534-0_19	Formal Specification and Verification of Asynchronous Processes in Higher-Order Logic	Workshops in Computing	book-chapter
+51	10.1007/bf00383963	1996	10.1007/bf00383963	A counterexample to the finite height conjecture	Order	journal-article
+52	10.3390/fractalfract6090485	2022	10.3390/fractalfract6090485	Formal Verification of Fractional-Order PID Control Systems Using Higher-Order Logic	Fractal and Fractional	journal-article
+53	10.1007/978-3-642-14052-5_11	2010	10.1007/978-3-642-14052-5_11	Nitpick: A Counterexample Generator for Higher-Order Logic Based on a Relational Model Finder	Lecture Notes in Computer Science	book-chapter
+54	10.55776/t1306	2021	10.55776/t1306			grant
+55	10.1007/bfb0105417	1996	10.1007/bfb0105417	Function definition in higher-order logic	Lecture Notes in Computer Science	book-chapter
+56	10.15607/rss.2007.iii.039	2007	10.15607/rss.2007.iii.039	Dynamic Coverage Verification in Mobile Sensor Networks Via Switched Higher Order Laplacians	Robotics: Science and Systems III	proceedings-article
+57	10.3030/101222524	2026	10.3030/101222524			grant
+58	10.1017/9781108923361.012	2023	10.1017/9781108923361.012	Executive Function and Higher-Order Thinking	Cognitive Neuroscience	book-chapter
+59	10.13182/xyz-47439	2025	10.13182/xyz-47439	Verification of a Reduced-Order, Thermal-Hydraulic Code Using Higher-Order Analysis Tools	Nuclear and Emerging Technologies for Space (NETS 2025)	proceedings-article
+60	10.1007/3-540-57826-9_150	1994	10.1007/3-540-57826-9_150	Eliminating higher-order quantifiers to obtain decision procedures for hardware verification	Lecture Notes in Computer Science	book-chapter
+61	10.1016/j.ifacol.2018.06.334	2018	10.1016/j.ifacol.2018.06.334	Counterexample Computation in Compositional Nonblocking Verification	IFAC-PapersOnLine	journal-article
+62	10.21236/ad0623745	1965	10.21236/ad0623745	EXPANSIONS OF KAMPE DE FERIET'S DOUBLE HYPERGEOMETRIC FUNCTION OF HIGHER ORDER		report
+63	10.5204/thesis.eprints.242261	None	10.5204/thesis.eprints.242261	Functional capability and higher order executive function in adults with amblyopia and strabismus		dissertation
+64	10.7554/elife.108005.1.sa0	2025	10.7554/elife.108005.1.sa0	Reviewer #3 (Public review): Importance of higher-order epistasis in protein sequence-function relationships		peer-review
+65	10.7554/elife.108005.1	2025	10.7554/elife.108005.1	Importance of higher-order epistasis in protein sequence-function relationships		posted-content
+66	10.7554/elife.108005.1.sa2	2025	10.7554/elife.108005.1.sa2	Reviewer #1 (Public review): Importance of higher-order epistasis in protein sequence-function relationships		peer-review
+67	10.7554/elife.108005.1.sa1	2025	10.7554/elife.108005.1.sa1	Reviewer #2 (Public review): Importance of higher-order epistasis in protein sequence-function relationships		peer-review
+68	10.1145/3310232.3310240	2018	10.1145/3310232.3310240	ESVERIFY	Proceedings of the 30th Symposium on Implementation and Application of Functional Languages	proceedings-article
+69	10.2139/ssrn.5234352	2025	10.2139/ssrn.5234352	Analyzing Action Interference of Administrative Obligations for Smt-Based Verification		posted-content
+70	10.1215/kjm/1250271324	2008	10.1215/kjm/1250271324	A counterexample to a conjecture of complete fan	Kyoto Journal of Mathematics	journal-article
+71	10.1016/s0967-0661(04)00076-0	2004	10.1016/s0967-0661(04)00076-0	Verification of a cruise control system using counterexample-guided search*1	Control Engineering Practice	journal-article
+72	10.1007/3-540-44755-5_1	2001	10.1007/3-540-44755-5_1	JavaCard Program Verification	Lecture Notes in Computer Science	book-chapter
+73	10.29007/3n54	None	10.29007/3n54	A Complete Calculus of Monotone and Antitone Higher-Order Functions	EPiC Series in Computing	proceedings-article
+74	10.1920/wp.cem.2017.3017	2026	10.1920/wp.cem.2017.3017	Semiparametric efficient empirical higher order influence function estimators		report
+75	10.1142/9789814415477_0003	1986	10.1142/9789814415477_0003	GREEN’S FUNCTION	Boundary Value Problems from Higher Order Differential Equations	book-chapter
+76	10.7554/elife.108005.1.sa3	2025	10.7554/elife.108005.1.sa3	eLife Assessment: Importance of higher-order epistasis in protein sequence-function relationships		peer-review
+77	10.1007/978-3-319-51641-7_9	2016	10.1007/978-3-319-51641-7_9	Counterexample-Guided Prefix Refinement Analysis for Program Verification	Communications in Computer and Information Science	book-chapter
+78	10.1145/3457784.3457823	2021	10.1145/3457784.3457823	SMT-Based Theorem Verification for Testing-Based Formal Verification	2021 10th International Conference on Software and Computer Applications	proceedings-article
+79	10.1115/1.4064620	2023	10.1115/1.4064620	Development and Verification of a Higher-Order Computational Fluid Dynamics Solver	Journal of Verification, Validation and Uncertainty Quantification	journal-article
+80	10.1007/978-3-642-33386-6_32	2012	10.1007/978-3-642-33386-6_32	Higher-Order Approximations for Verification of Stochastic Hybrid Systems	Lecture Notes in Computer Science	book-chapter
+81	10.23919/date64628.2025.10993237	2025	10.23919/date64628.2025.10993237	Word-Level Counterexample Reduction Methods for Hardware Verification	2025 Design, Automation &amp;amp; Test in Europe Conference (DATE)	proceedings-article
+82	10.1007/978-3-8348-9982-8_18	2009	10.1007/978-3-8348-9982-8_18	Automata-Theoretic Verification based on Counterexample Specifications	Informatik als Dialog zwischen Theorie und Anwendung	book-chapter
+83	10.1007/978-3-030-81685-8_39	2021	10.1007/978-3-030-81685-8_39	Counterexample-Guided Partial Bounding for Recursive Function Synthesis	Lecture Notes in Computer Science	book-chapter
+84	10.7551/mitpress/7830.003.0039	2008	10.7551/mitpress/7830.003.0039	Dynamic Coverage Verification in Mobile Sensor Networks via Switched Higher Order Laplacians	Robotics	book-chapter
+85	10.4018/978-1-61520-711-4.ch010	None	10.4018/978-1-61520-711-4.ch010	Analysis and Improvement of Function Approximation Capabilities of Pi-Sigma Higher Order Neural Networks	Artificial Higher Order Neural Networks for Computer Science and Engineering	book-chapter
+86	10.1007/bfb0055137	1998	10.1007/bfb0055137	Mechanical verification of total correctness through diversion verification conditions	Lecture Notes in Computer Science	book-chapter
+87	10.1515/9783110630855-009	2019	10.1515/9783110630855-009	9. Lipschitz spaces of higher order	Function Classes on the Unit Disc	book-chapter
+88	10.1145/3236950.3236969	2018	10.1145/3236950.3236969	Lazy Abstraction for Higher-Order Program Verification	Proceedings of the 20th International Symposium on Principles and Practice of Declarative Programming	proceedings-article
+89	10.1007/978-3-642-33386-6_26	2012	10.1007/978-3-642-33386-6_26	Verification of Partial-Information Probabilistic Systems Using Counterexample-Guided Refinements	Lecture Notes in Computer Science	book-chapter
+90	10.29007/3ngx	None	10.29007/3ngx	Towards Strong Higher-Order Automation for Fast Interactive Verification	EPiC Series in Computing	proceedings-article
+91	10.1214/aoms/1177728925	1953	10.1214/aoms/1177728925	A Higher Order Complete Class Theorem	The Annals of Mathematical Statistics	journal-article
+92	10.1007/978-1-4612-3658-0_10	1989	10.1007/978-1-4612-3658-0_10	Mechanizing Programming Logics in Higher Order Logic	Current Trends in Hardware Verification and Automated Theorem Proving	book-chapter
+93	10.1007/978-1-4612-3658-0_9	1989	10.1007/978-1-4612-3658-0_9	Automating Recursive Type Definitions in Higher Order Logic	Current Trends in Hardware Verification and Automated Theorem Proving	book-chapter
+94	10.1109/icst.2012.90	2012	10.1109/icst.2012.90	Bounded Program Verification Using an SMT Solver: A Case Study	2012 IEEE Fifth International Conference on Software Testing, Verification and Validation	proceedings-article
+95	10.1109/iccd.1989.63356	None	10.1109/iccd.1989.63356	Formal verification of state-machines using higher-order logic	Proceedings 1989 IEEE International Conference on Computer Design: VLSI in Computers and Processors	proceedings-article
+96	10.1007/s11083-021-09564-5	2022	10.1007/s11083-021-09564-5	Poset Exponentiation and a Counterexample Birkhoff Said in 1942 He Did Not Have	Order	journal-article
+97	10.1090/dimacs/029/05	1997	10.1090/dimacs/029/05	A complete axiomatization of a first-order temporal logic over trace systems	DIMACS Series in Discrete Mathematics and Theoretical Computer Science	book-chapter
+98	10.1017/cbo9780511487491.009	2000	10.1017/cbo9780511487491.009	Dispositionalist higher-order thought theory (1): function	Phenomenal Consciousness	book-chapter
+99	10.1109/issrew55968.2022.00078	2022	10.1109/issrew55968.2022.00078	Improving Counterexample Quality from Failed Program Verification	2022 IEEE International Symposium on Software Reliability Engineering Workshops (ISSREW)	proceedings-article
+100	10.1007/10046537_106	None	10.1007/10046537_106	Table 23. Cubic system VIIb. Fourth-order stiffnesses for metals. Complete sets	Landolt-Börnstein - Group III Condensed Matter	book-chapter

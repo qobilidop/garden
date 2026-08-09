@@ -1,0 +1,36 @@
+rank	source_id	year	doi	title	venue	type
+1	citation-1	2009		Simulink demos	MathWorks	software
+2	citation-2	2004		Semantic translation of Simulink/Stateflow models to hybrid automata using graph transformations	Electronic Notes in Theoretical Computer Science	article
+3	https://doi.org/10.1016/0304-3975(94)00202-T	1995	https://doi.org/10.1016/0304-3975(94)00202-T	The algorithmic analysis of hybrid systems	Theoretical Computer Science	article
+4	https://doi.org/10.1145/1450058.1450071	2008	https://doi.org/10.1145/1450058.1450071	Symbolic analysis for improving simulation coverage of Simulink/Stateflow models	EMSOFT	conference-paper
+5	https://doi.org/10.1007/3-540-45657-0_30	2002	https://doi.org/10.1007/3-540-45657-0_30	The d/dt tool for verification of hybrid systems	CAV	conference-paper
+6	https://doi.org/10.1007/3-540-48983-5_8	1999	https://doi.org/10.1007/3-540-48983-5_8	Orthogonal polyhedra: Representation and computation	HSCC	conference-paper
+7	https://doi.org/10.1016/j.scico.2006.03.009	2007	https://doi.org/10.1016/j.scico.2006.03.009	The octahedron abstract domain	Science of Computer Programming	article
+8	https://doi.org/10.1007/978-3-540-70930-5_6	2006	https://doi.org/10.1007/978-3-540-70930-5_6	An instrumentation-based approach to controller model validation	ASWSD	conference-paper
+9	citation-9	1976		Static determination of dynamic properties of programs	International Symposium on Programming	conference-paper
+10	https://doi.org/10.1145/512760.512770	1978	https://doi.org/10.1145/512760.512770	Automatic discovery of linear restraints among variables of a program	POPL	conference-paper
+11	https://doi.org/10.1007/978-3-540-71493-4_16	2007	https://doi.org/10.1007/978-3-540-71493-4_16	Systematic simulation using sensitivity analysis	HSCC	conference-paper
+12	https://doi.org/10.1007/978-3-540-24743-2_22	2004	https://doi.org/10.1007/978-3-540-24743-2_22	Benchmarks for hybrid systems verification	HSCC	conference-paper
+13	https://doi.org/10.1007/978-3-540-31954-2_17	2005	https://doi.org/10.1007/978-3-540-31954-2_17	PHAVer: Algorithmic verification of hybrid systems past HyTech	HSCC	conference-paper
+14	https://doi.org/10.1007/978-3-540-70545-1_19	2008	https://doi.org/10.1007/978-3-540-70545-1_19	AutoMOTGen: Automatic Model Oriented Test Generator for Embedded Control Systems	CAV	conference-paper
+15	https://doi.org/10.1007/978-3-540-31954-2_19	2005	https://doi.org/10.1007/978-3-540-31954-2_19	Reachability of uncertain linear systems using zonotopes	HSCC	conference-paper
+16	https://doi.org/10.1007/978-3-540-78929-1_16	2008	https://doi.org/10.1007/978-3-540-78929-1_16	Zonotope/hyperplane intersection for hybrid systems reachability analysis	HSCC	conference-paper
+17	https://doi.org/10.1007/11730637_22	2006	https://doi.org/10.1007/11730637_22	Verification using simulation	HSCC	conference-paper
+18	citation-18	2009		GLPK (GNU Linear Programming Kit)	GNU	software
+19	https://doi.org/10.1145/1065010.1065036	2005	https://doi.org/10.1145/1065010.1065036	DART: Directed automated random testing	PLDI	conference-paper
+20	https://doi.org/10.1023/A:1008678014487	1997	https://doi.org/10.1023/A:1008678014487	Verification of real-time systems using linear relation analysis	Formal Methods in System Design	article
+21	https://doi.org/10.1007/3-540-60472-3_14	1995	https://doi.org/10.1007/3-540-60472-3_14	HyTech: The Cornell hybrid technology tool	Hybrid Systems II	conference-paper
+22	https://doi.org/10.1007/978-3-540-71493-4_27	2007	https://doi.org/10.1007/978-3-540-71493-4_27	Robust test generation and coverage for hybrid systems	HSCC	conference-paper
+23	https://doi.org/10.1109/WCRE.2001.957836	2001	https://doi.org/10.1109/WCRE.2001.957836	The octagon abstract domain	WCRE	conference-paper
+24	citation-24	2009		Implementation of Qhull	Qhull	software
+25	citation-25	2009		Reactis	Reactive Systems	software
+26	https://doi.org/10.1007/978-3-540-78800-3_14	2008	https://doi.org/10.1007/978-3-540-78800-3_14	Symbolic model checking of hybrid systems using template polyhedra	TACAS	conference-paper
+27	https://doi.org/10.1007/978-3-540-30579-8_2	2005	https://doi.org/10.1007/978-3-540-30579-8_2	Scalable analysis of linear systems using mathematical programming	VMCAI	conference-paper
+28	citation-28	2009		Simulink Design Verifier	MathWorks	software
+29	https://doi.org/10.1145/1081706.1081750	2005	https://doi.org/10.1145/1081706.1081750	CUTE: A concolic unit testing engine for C	ESEC/FSE	conference-paper
+30	citation-30	2000		Modeling and verifying hybrid dynamic systems using CheckMate	ADPM	conference-paper
+31	citation-31	2009		Simulink Reference	MathWorks	other
+32	citation-32	2009		Safety Test Builder	TNI-Software	software
+33	https://doi.org/10.1007/3-540-36580-X_35	2003	https://doi.org/10.1007/3-540-36580-X_35	Efficient representation and computation of reachable sets for hybrid systems	HSCC	conference-paper
+34	https://doi.org/10.1145/1113830.1113834	2005	https://doi.org/10.1145/1113830.1113834	Translating discrete-time Simulink to Lustre	ACM Transactions on Embedded Computing Systems	article
+35	citation-35	2009		T-VEC Tester	T-VEC Technologies	software

@@ -1,0 +1,101 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1016/j.infsof.2014.07.012	2015	10.1016/j.infsof.2014.07.012	Infeasible path generalization in dynamic symbolic execution	Information and Software Technology	journal-article
+2	10.1109/icst.2010.13	2010	10.1109/icst.2010.13	Explanation-Based Generalization of Infeasible Path	2010 Third International Conference on Software Testing, Verification and Validation	proceedings-article
+3	10.1155/2020/4258291	2020	10.1155/2020/4258291	Infeasible Path Detection Based on Code Pattern and Backward Symbolic Execution	Mathematical Problems in Engineering	journal-article
+4	10.70675/ad02174dzc59bz412az9e9dz59e075e8f728	None	10.70675/ad02174dzc59bz412az9e9dz59e075e8f728	Infeasible Path Detection : a Formal Model and an Algorithm		dissertation
+5	10.1007/springerreference_26147	None	10.1007/springerreference_26147	symbolic input-output assignment	SpringerReference	reference-entry
+6	10.4156/jdcta.vol5.issue5.18	2011	10.4156/jdcta.vol5.issue5.18	Research on Infeasible Branch-Based Infeasible Path in Program	International Journal of Digital Content Technology and its Applications	journal-article
+7	10.1109/icsea.2010.74	2010	10.1109/icsea.2010.74	A Symbolic Execution Tool Based on the Elimination of Infeasible Paths	2010 Fifth International Conference on Software Engineering Advances	proceedings-article
+8	10.23919/eusipco63237.2025.11226668	2025	10.23919/eusipco63237.2025.11226668	Detection of Infeasible Input in Speech Enhancement with Deep Complex U-Net	2025 33rd European Signal Processing Conference (EUSIPCO)	proceedings-article
+9	10.1145/3302516.3307349	2019	10.1145/3302516.3307349	Path sensitive MFP solutions in presence of intersecting infeasible control flow path segments	Proceedings of the 28th International Conference on Compiler Construction	proceedings-article
+10	10.1109/issre55969.2022.00054	2022	10.1109/issre55969.2022.00054	Learning to Prune Infeasible Paths in Generalized Symbolic Execution	2022 IEEE 33rd International Symposium on Software Reliability Engineering (ISSRE)	proceedings-article
+11	10.1016/s0747-7171(87)80012-3	1987	10.1016/s0747-7171(87)80012-3	A generalization of reduction rings	Journal of Symbolic Computation	journal-article
+12	10.1016/j.jsc.2019.12.005	2021	10.1016/j.jsc.2019.12.005	A generalization of the Katzman-Zhang algorithm	Journal of Symbolic Computation	journal-article
+13	10.1016/j.jsc.2010.06.020	2010	10.1016/j.jsc.2010.06.020	On a generalization of Stickelberger’s Theorem	Journal of Symbolic Computation	journal-article
+14	10.36227/techrxiv.174058890.00970765/v1	2025	10.36227/techrxiv.174058890.00970765/v1	Dual Generalization Attack: Enhancing Adversarial Transferability through Surrogate Model and Input Feature Generalization		posted-content
+15	10.5220/0003986400430052	2012	10.5220/0003986400430052	A Survey of Infeasible Path Detection	Proceedings of the 7th International Conference on Evaluation of Novel Approaches to Software Engineering	proceedings-article
+16	10.1007/978-3-319-43144-4_3	2016	10.1007/978-3-319-43144-4_3	Infeasible Paths Elimination by Symbolic Execution Techniques	Lecture Notes in Computer Science	book-chapter
+17	10.1016/j.jsc.2014.09.022	2015	10.1016/j.jsc.2014.09.022	Triangular systems and a generalization of primitive polynomials	Journal of Symbolic Computation	journal-article
+18	10.1007/978-3-540-69166-2_16	None	10.1007/978-3-540-69166-2_16	SLR: Path-Sensitive Analysis through Infeasible-Path Detection and Syntactic Language Refinement	Lecture Notes in Computer Science	book-chapter
+19	10.1109/icsess47205.2019.9040767	2019	10.1109/icsess47205.2019.9040767	Detecting Interprocedural Infeasible Paths via Symbolic Propagation and Dataflow Analysis	2019 IEEE 10th International Conference on Software Engineering and Service Science (ICSESS)	proceedings-article
+20	10.1109/icycs.2008.492	2008	10.1109/icycs.2008.492	Research on Translucent Mechanism-Based Infeasible Path	2008 The 9th International Conference for Young Computer Scientists	proceedings-article
+21	10.2307/2267964	1951	10.2307/2267964	Generalization and Evidence.	The Journal of Symbolic Logic	journal-article
+22	10.1137/s105262349427409x	1997	10.1137/s105262349427409x	An Infeasible Path-Following Method for Monotone Complementarity Problems	SIAM Journal on Optimization	journal-article
+23	10.1002/aic.690280615	1982	10.1002/aic.690280615	Infeasible path optimization with sequential modular simulators	AIChE Journal	journal-article
+24	10.1109/ast58925.2023.00012	2023	10.1109/ast58925.2023.00012	Structural Test Input Generation for 3-Address Code Coverage Using Path-Merged Symbolic Execution	2023 IEEE/ACM International Conference on Automation of Software Test (AST)	proceedings-article
+25	10.1016/0098-1354(85)80003-x	1985	10.1016/0098-1354(85)80003-x	Improved infeasible path optimization for sequential modular simulators—I: The interface	Computers &amp; Chemical Engineering	journal-article
+26	10.5220/0005159703370342	2014	10.5220/0005159703370342	A Generalization of the CMA-ES Algorithm for Functions with Matrix Input	Proceedings of the International Conference on Evolutionary Computation Theory and Applications	proceedings-article
+27	10.1109/qrs-c65679.2025.00092	2025	10.1109/qrs-c65679.2025.00092	Research on Automatic Detection of Infeasible Paths Based on Symbolic Execution and Constraint Solving	2025 25th International Conference on Software Quality, Reliability, and Security Companion (QRS-C)	proceedings-article
+28	10.1016/b978-0-444-63965-3.50107-0	2017	10.1016/b978-0-444-63965-3.50107-0	Infeasible Path Global Flowsheet Optimization Using McCormick Relaxations	Computer Aided Chemical Engineering	book-chapter
+29	10.1109/tevc.2025.3581739/mm1	None	10.1109/tevc.2025.3581739/mm1	Enhancing Generalization in Evolutionary Feature Construction for Symbolic Regression Through Vicinal Jensen Gap Minimization_supp1-3581739.pdf		component
+30	10.1166/jctn.2015.4151	2015	10.1166/jctn.2015.4151	Research Progress on Infeasible Path Detecting Problem	Journal of Computational and Theoretical Nanoscience	journal-article
+31	10.1109/qrs.2016.26	2016	10.1109/qrs.2016.26	A Method for Pruning Infeasible Paths via Graph Transformations and Symbolic Execution	2016 IEEE International Conference on Software Quality, Reliability and Security (QRS)	proceedings-article
+32	10.1016/0950-5849(95)98039-i	1995	10.1016/0950-5849(95)98039-i	A path generation method for testing LCSAJs that restrains infeasible paths	Information and Software Technology	journal-article
+33	10.17816/pavlovj609568-4188115	None	10.17816/pavlovj609568-4188115	Fig. 1. Topology of the artificial neuronal network, search for regularities and generalization of input data.		component
+34	10.1016/j.jsc.1999.05.001	2004	10.1016/j.jsc.1999.05.001	Symbolic computation for mobile robot path planning	Journal of Symbolic Computation	journal-article
+35	10.1080/10556789308805537	1993	10.1080/10556789308805537	A path-following infeasible-interior-point algorithm for linear complementarity problems	Optimization Methods and Software	journal-article
+36	10.1006/jsco.1997.0165	1998	10.1006/jsco.1997.0165	A Generalization of Gröbner Basis Algorithms to Polycyclic Group Rings	Journal of Symbolic Computation	journal-article
+37	10.1109/access.2019.2894593	2019	10.1109/access.2019.2894593	Detecting Interprocedural Infeasible Paths Based on Unsatisfiable Path Constraint Patterns	IEEE Access	journal-article
+38	10.1007/s12239-026-00494-y	2026	10.1007/s12239-026-00494-y	Priority-Aware Tracking of Infeasible Trajectories via Smooth Input Saturation and Asymmetric Control Structure	International Journal of Automotive Technology	journal-article
+39	10.1007/springerreference_5655	None	10.1007/springerreference_5655	Infeasible solution	SpringerReference	reference-entry
+40	10.1109/rtas.2014.6926000	2014	10.1109/rtas.2014.6926000	Trickle: Automated infeasible path detection using all minimal unsatisfiable subsets	2014 IEEE 19th Real-Time and Embedded Technology and Applications Symposium (RTAS)	proceedings-article
+41	10.1016/j.neucom.2004.01.006	2004	10.1016/j.neucom.2004.01.006	Generalization by symbolic abstraction in cascaded recurrent networks	Neurocomputing	journal-article
+42	10.1016/s0895-7177(03)90003-3	2003	10.1016/s0895-7177(03)90003-3	An infeasible-start path-following method for monotone LCPs	Mathematical and Computer Modelling	journal-article
+43	10.7717/peerj-cs.3587/fig-9	None	10.7717/peerj-cs.3587/fig-9	Figure 9: (A) Convergence analysis and theoretical bounds. (B) Generalization scaling laws. (C) Robustness to input variations.		component
+44	10.1023/a:1010060315625	1998	10.1023/a:1010060315625	An Introduction to Landin's “A Generalization of Jumps and Labels”	Higher-Order and Symbolic Computation	journal-article
+45	10.26686/wgtn.14273315	2021	10.26686/wgtn.14273315	Feature selection to improve generalization of genetic programming for high-dimensional symbolic regression		posted-content
+46	10.1142/9789812798862_0027	1995	10.1142/9789812798862_0027	SIMPLIFIED ANALYSIS OF AN O(nL)-ITERATION INFEASIBLE PREDICTOR-CORRECTOR PATH-FOLLOWING METHOD FOR MONOTONE LINEAR COMPLEMENTARITY PROBLEMS	Recent Trends in Optimization Theory and Applications	book-chapter
+47	10.2514/3.13053	1996	10.2514/3.13053	Infeasible path optimal design methods with applications to aerodynamic shape optimization	AIAA Journal	journal-article
+48	10.1016/j.jsc.2011.05.009	2011	10.1016/j.jsc.2011.05.009	Flat families by strongly stable ideals and a generalization of Gröbner bases	Journal of Symbolic Computation	journal-article
+49	10.26686/wgtn.14273315.v1	2021	10.26686/wgtn.14273315.v1	Feature selection to improve generalization of genetic programming for high-dimensional symbolic regression		posted-content
+50	10.2139/ssrn.4606048	2023	10.2139/ssrn.4606048	Pic: Domain Generalization by Path Information Constraint		posted-content
+51	10.1093/oso/9780198517719.003.0003	1997	10.1093/oso/9780198517719.003.0003	Generalization	Path Integral Methods	book-chapter
+52	10.1016/0098-1354(85)80004-1	1985	10.1016/0098-1354(85)80004-1	Improved infeasible path optimization for sequential modular simulators—II: the optimization algorithm	Computers &amp; Chemical Engineering	journal-article
+53	10.1016/j.jsc.2005.08.002	2006	10.1016/j.jsc.2005.08.002	Gröbner finite path algebras	Journal of Symbolic Computation	journal-article
+54	10.1109/fmcad.2008.ecp.23	2008	10.1109/fmcad.2008.ecp.23	Symbolic Program Analysis Using Term Rewriting and Generalization	2008 Formal Methods in Computer-Aided Design	proceedings-article
+55	10.1016/j.jsc.2013.03.001	2013	10.1016/j.jsc.2013.03.001	Generalization of the Lee–OʼSullivan list decoding for one-point AG codes	Journal of Symbolic Computation	journal-article
+56	10.1006/jsco.1994.1028	1994	10.1006/jsco.1994.1028	Regular Path Expressions in Feature Logic	Journal of Symbolic Computation	journal-article
+57	10.1109/cec.2007.4424738	2007	10.1109/cec.2007.4424738	An analysis of generalization in XCS with symbolic conditions	2007 IEEE Congress on Evolutionary Computation	proceedings-article
+58	10.1093/oso/9780198517719.003.0006	1997	10.1093/oso/9780198517719.003.0006	Algebraic Generalization	Path Integral Methods	book-chapter
+59	10.1007/s101070050009	2000	10.1007/s101070050009	The global linear convergence of an infeasible non-interior path-following algorithm for complementarity problems with uniform P -functions	Mathematical Programming	journal-article
+60	10.1017/cbo9780511546990.010	2007	10.1017/cbo9780511546990.010	Automatic generation of symbolic traces	Path-Oriented Program Analysis	book-chapter
+61	10.1016/j.orl.2009.11.006	2010	10.1016/j.orl.2009.11.006	Convergence of the homotopy path for a full-Newton step infeasible interior-point method	Operations Research Letters	journal-article
+62	10.1525/si.2011.34.4.425	2011	10.1525/si.2011.34.4.425	Traps on the Path of Analysis	Symbolic Interaction	journal-article
+63	10.1109/scam.2017.13	2017	10.1109/scam.2017.13	Working Around Loops for Infeasible Path Detection in Binary Programs	2017 IEEE 17th International Working Conference on Source Code Analysis and Manipulation (SCAM)	proceedings-article
+64	10.1007/978-3-0348-0294-9_8	2013	10.1007/978-3-0348-0294-9_8	Path Integral Approach	The Weyl Operator and its Generalization	book-chapter
+65	10.1109/vtc2024-spring62846.2024.10683065	2024	10.1109/vtc2024-spring62846.2024.10683065	Propagation Path-Informed High-Generalization Path Loss Model for Unknown Region Estimation	2024 IEEE 99th Vehicular Technology Conference (VTC2024-Spring)	proceedings-article
+66	10.1016/j.infsof.2007.06.006	2008	10.1016/j.infsof.2007.06.006	Heuristics-based infeasible path detection for dynamic test data generation	Information and Software Technology	journal-article
+67	10.1007/1-4020-0613-6_18743	2000	10.1007/1-4020-0613-6_18743	symbolic input-output assignment	Computer Science and Communications Dictionary	book-chapter
+68	10.3726/978-3-653-05546-7	2017	10.3726/978-3-653-05546-7	A Path to a Conception of Symbolic Truth		monograph
+69	10.1080/10556789408805552	1994	10.1080/10556789408805552	The complexity of an infeasible interior-point path-following method for the solution of linear programs	Optimization Methods and Software	journal-article
+70	10.1017/s1755020317000077	2017	10.1017/s1755020317000077	CATEGORICAL HARMONY AND PATH INDUCTION	The Review of Symbolic Logic	journal-article
+71	10.1109/sp61157.2025.00190	2025	10.1109/sp61157.2025.00190	Empc: Effective Path Prioritization for Symbolic Execution with Path Cover	2025 IEEE Symposium on Security and Privacy (SP)	proceedings-article
+72	10.1007/978-3-0348-9208-7_5	1996	10.1007/978-3-0348-9208-7_5	A Generalization of the Orlando Formula — Symbolic Manipulation Approach	Stability Theory	book-chapter
+73	10.1609/aaai.v36i8.20841	2022	10.1609/aaai.v36i8.20841	Symbolic Brittleness in Sequence Models: On Systematic Generalization in Symbolic Mathematics	Proceedings of the AAAI Conference on Artificial Intelligence	journal-article
+74	10.1515/9783110481068-002	2016	10.1515/9783110481068-002	1. Pattern recognition, infeasible systems of linear inequalities, and graphs	Graphs for Pattern Recognition	book-chapter
+75	10.1242/prelights.43611	2026	10.1242/prelights.43611	Generalization and extinction of learned fear alter primary sensory input to the brain		posted-content
+76	10.5220/0012374700003636	2024	10.5220/0012374700003636	Dynamic Path Planning for Autonomous Vehicles: A Neuro-Symbolic Approach	Proceedings of the 16th International Conference on Agents and Artificial Intelligence	proceedings-article
+77	10.34198/ejms.16326.36.531536	2026	10.34198/ejms.16326.36.531536	Path Averaged Polynomial Contractions: A New Generalization of Polynomial Contractions, Path-Averaged Contractions, and Banach Contractions	Earthline Journal of Mathematical Sciences	journal-article
+78	10.31274/td-20260804-208	None	10.31274/td-20260804-208	Symbolic execution for probabilistic programs: path probabilities testing and verification in prism model checker		dissertation
+79	10.1023/a:1025824903683	2003	10.1023/a:1025824903683	Path Dependent Analysis of Logic Programs	Higher-Order and Symbolic Computation	journal-article
+80	10.1016/s0747-7171(87)80023-8	1987	10.1016/s0747-7171(87)80023-8	Path of subterms ordering and recursive decomposition ordering revisited	Journal of Symbolic Computation	journal-article
+81	10.21437/interspeech.2011-379	2011	10.21437/interspeech.2011-379	Towards voice-input symbolic pattern retrieval using parameter-based search	Interspeech 2011	proceedings-article
+82	10.25148/etd.fi14032377	None	10.25148/etd.fi14032377	A software tool that generates symbolic model verifier (SMV) input language from a predicate transition net		dissertation
+83	10.1109/iccq65694.2025.11314570	2025	10.1109/iccq65694.2025.11314570	Path-Minimal Objects in ArkTS Symbolic Execution: From Path Constraints to TypeScript Tests	2025 5th International Conference on Code Quality (ICCQ)	proceedings-article
+84	10.1007/978-3-642-59789-3_65	2000	10.1007/978-3-642-59789-3_65	Marking and Generalization by Symbolic Objects in the Symbolic Official Data Analysis Software	Studies in Classification, Data Analysis, and Knowledge Organization	book-chapter
+85	10.1145/32439.32469	1986	10.1145/32439.32469	Computer understanding and generalization of symbolic mathematical calculations: a case study in physics problem solving	Proceedings of the fifth ACM symposium on Symbolic and algebraic computation  - SYMSAC '86	proceedings-article
+86	10.1093/oed/4936581961	2023	10.1093/oed/4936581961	infeasible, adj.	Oxford English Dictionary	book-chapter
+87	10.2307/2275928	1994	10.2307/2275928	On a generalization of distributivity	Journal of Symbolic Logic	journal-article
+88	10.1016/j.amc.2006.07.135	2007	10.1016/j.amc.2006.07.135	A numerical study of an infeasible primal-dual path-following algorithm for linear programming	Applied Mathematics and Computation	journal-article
+89	10.2178/jsl/1183743730	1991	10.2178/jsl/1183743730	A generalization of forking	The Journal of Symbolic Logic	journal-article
+90	10.1145/800205.806348	1976	10.1145/800205.806348	Generalization of Manin's conditional algorithm	Proceedings of the third ACM symposium on Symbolic and algebraic computation  - SYMSAC '76	proceedings-article
+91	10.1109/synasc.2010.78	2010	10.1109/synasc.2010.78	Path Directed Symbolic Execution in the K Framework	2010 12th International Symposium on Symbolic and Numeric Algorithms for Scientific Computing	proceedings-article
+92	10.2307/2268578	1941	10.2307/2268578	A generalization of the antilogism	Journal of Symbolic Logic	journal-article
+93	10.1524/stnd.2005.23.4.249	2005	10.1524/stnd.2005.23.4.249	Input-dependent estimation of generalization error under covariate shift	Statistics &amp; Decisions	journal-article
+94	10.1007/s11590-016-0997-5	2017	10.1007/s11590-016-0997-5	An arc-search infeasible-interior-point method for symmetric optimization in a wide neighborhood of the central path	Optimization Letters	journal-article
+95	10.37547/ajsshr/volume04issue10-08	2024	10.37547/ajsshr/volume04issue10-08	SYMBOLIC CONNOTATIONS AS AN INPUT TO THE DESIGN OF THE ADVERTISING POSTER	American Journal Of Social Sciences And Humanity Research	journal-article
+96	10.1021/acs.jpcc.8b03405.s001	None	10.1021/acs.jpcc.8b03405.s001	Significantly Improving the Prediction of Molecular Atomization Energies by an Ensemble of Machine Learning Algorithms and Rescanning Input Space: A Stacked Generalization Approach		component
+97	10.1287/moor.22.2.378	1997	10.1287/moor.22.2.378	On the Convergence of the Iteration Sequence of Infeasible Path Following Algorithms for Linear Complementarity Problems	Mathematics of Operations Research	journal-article
+98	10.1007/978-3-642-01947-0_15	2009	10.1007/978-3-642-01947-0_15	Spatial Generalization of the Planar Path Generation Problem	Computational Kinematics	book-chapter
+99	10.1137/04060771x	2006	10.1137/04060771x	An Iterative Solver-Based Infeasible  Primal-Dual Path-Following Algorithm for Convex Quadratic Programming	SIAM Journal on Optimization	journal-article
+100	10.21125/edulearn.2025.2525	2025	10.21125/edulearn.2025.2525	INVESTIGATING 7TH GRADE STUDENTS' PATTERN GENERALIZATIONS RELYING ON FACTUAL, CONTEXTUAL, AND SYMBOLIC GENERALIZATION	EDULEARN Proceedings	proceedings-article

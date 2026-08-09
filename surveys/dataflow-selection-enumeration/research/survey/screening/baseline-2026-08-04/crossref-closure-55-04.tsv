@@ -1,0 +1,101 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1007/11767589_8	2006	10.1007/11767589_8	Complete Finite Prefixes of Symbolic Unfoldings of Safe Time Petri Nets	Lecture Notes in Computer Science	book-chapter
+2	10.1007/3-540-48068-4_11	2002	10.1007/3-540-48068-4_11	Computing a Finite Prefix of a Time Petri Net	Lecture Notes in Computer Science	book-chapter
+3	10.5772/5322	2008	10.5772/5322	Scheduling Analysis of FMS Using the Unfolding Time Petri Nets	Petri Net, Theory and Applications	book-chapter
+4	10.1109/dac.1996.545546	None	10.1109/dac.1996.545546	Verification of asynchronous circuits using time Petri net unfolding	33rd Design Automation Conference Proceedings, 1996	proceedings-article
+5	10.46298/arima.3177	2017	10.46298/arima.3177	Unfolding through processes to compute the complete prefix of Petri nets	Revue Africaine de Recherche en Informatique et Mathématiques Appliquées	journal-article
+6	10.1016/s1571-0661(05)80293-2	1999	10.1016/s1571-0661(05)80293-2	Deriving a Graph Rewriting System from a Complete Finite Prefix of an Unfolding	Electronic Notes in Theoretical Computer Science	journal-article
+7	10.1109/tla.2017.7912599	2017	10.1109/tla.2017.7912599	Unfolding for Time Petri Net	IEEE Latin America Transactions	journal-article
+8	10.1109/compsac.2005.148	None	10.1109/compsac.2005.148	Supervisory Control of Time Petri Nets Using Net Unfolding	29th Annual International Computer Software and Applications Conference (COMPSAC'05)	proceedings-article
+9	10.1145/240518.240530	1996	10.1145/240518.240530	Verification of asynchronous circuits using time Petri net unfolding	Proceedings of the 33rd annual conference on Design automation conference  - DAC '96	proceedings-article
+10	10.3233/fi-2009-148	2009	10.3233/fi-2009-148	"Modular Construction of Finite and Complete Prefixes of Petri net			 Unfoldings"	Fundamenta Informaticae	journal-article
+11	10.1109/ds-rt.2015.34	2015	10.1109/ds-rt.2015.34	Timing Analysis of Cyclic Time Petri Net Using Relaxed Unfolding and Global Time Technique	2015 IEEE/ACM 19th International Symposium on Distributed Simulation and Real Time Applications (DS-RT)	proceedings-article
+12	10.1007/978-3-658-11765-8_3	2016	10.1007/978-3-658-11765-8_3	Translating MA Processes into Safe Petri Nets — Complete Construction	A Polynomial Translation of Mobile Ambients into Safe Petri Nets	book-chapter
+13	10.1109/acsd.2008.4574598	2008	10.1109/acsd.2008.4574598	Modular construction of finite and complete prefixes of Petri net unfoldings	2008 8th International Conference on Application of Concurrency to System Design	proceedings-article
+14	10.5120/11964-7824	2013	10.5120/11964-7824	Embedding an Arbitrary 1-safe Petri Net into a Boolean Petri Net	International Journal of Computer Applications	journal-article
+15	10.5120/12830-0245	2013	10.5120/12830-0245	Construction of a Crisp Boolean Petri Net from a 1-safe Petri Net	International Journal of Computer Applications	journal-article
+16	10.1109/pacc.2011.5979037	2011	10.1109/pacc.2011.5979037	A Disconnected 1-Safe Petri Net Whose Reachability Tree Is Homomorphic to a Complete Boolean Lattice	2011 International Conference on Process Automation, Control and Computing	proceedings-article
+17	10.1007/bf00366572	1990	10.1007/bf00366572	Real-time control software for transaction processing based on colored safe Petri Net model	Real-Time Systems	journal-article
+18	10.5772/10297	2010	10.5772/10297	Modeling Multimedia Synchronization Using a Time Petri Net Based Approach	Advances in Petri Net Theory and Applications	book-chapter
+19	10.5772/5318	2008	10.5772/5318	Model Checking of Time Petri Nets	Petri Net, Theory and Applications	book-chapter
+20	10.1007/978-3-642-41115-1_2	2013	10.1007/978-3-642-41115-1_2	The Classic Petri Net	Time and Petri Nets	book-chapter
+21	10.5772/5320	2008	10.5772/5320	From Time Petri Nets to Timed Automata	Petri Net, Theory and Applications	book-chapter
+22	10.23919/ecc.1999.7099843	1999	10.23919/ecc.1999.7099843	Validation of liveness for 1-safe hybrid Petri nets using network unfolding	1999 European Control Conference (ECC)	proceedings-article
+23	10.1007/3-540-51525-9_12	1989	10.1007/3-540-51525-9_12	Representation by finite and safe Petri nets	Lecture Notes in Computer Science	book-chapter
+24	10.7551/mitpress/8811.003.0007	2011	10.7551/mitpress/8811.003.0007	Extending Petri Nets by Adding Color and Time	Modeling Business Processes	book-chapter
+25	10.3724/sp.j.1001.2011.04018	2011	10.3724/sp.j.1001.2011.04018	Time Petri Net Model with Mixed Semantics	Journal of Software	journal-article
+26	10.1002/9781119262114.ch3	2016	10.1002/9781119262114.ch3	Comparison Petri Nets – Finite State Automaton	Systems Dependability Assessment	other
+27	10.1109/icsmc.1997.637370	None	10.1109/icsmc.1997.637370	A concurrency characteristic in Petri net unfolding	1997 IEEE International Conference on Systems, Man, and Cybernetics. Computational Cybernetics and Simulation	proceedings-article
+28	10.1515/auto-2021-0101	2022	10.1515/auto-2021-0101	Learning Petri net models from sensor data of conveying systems based on the merging of prefix and postfix trees	at - Automatisierungstechnik	journal-article
+29	10.1016/s1474-6670(17)30723-1	2004	10.1016/s1474-6670(17)30723-1	Control of safe ordinary petri nets with marking specifications using unfolding	IFAC Proceedings Volumes	journal-article
+30	10.3724/sp.j.1016.2010.00900	2010	10.3724/sp.j.1016.2010.00900	A Time Petri Net Model Based on Uniform Distribution	Chinese Journal of Computers	journal-article
+31	10.1007/s10626-005-4057-z	2005	10.1007/s10626-005-4057-z	Control of Safe Ordinary Petri Nets Using Unfolding	Discrete Event Dynamic Systems	journal-article
+32	10.3182/20130904-3-uk-4041.00039	2013	10.3182/20130904-3-uk-4041.00039	Supervision Patterns: Formal Diagnosability Checking by Petri Net Unfolding	IFAC Proceedings Volumes	journal-article
+33	10.1109/access.2024.3384489	2024	10.1109/access.2024.3384489	Petri Net Unfolding-Based Detection and Replay of Program Deadlocks	IEEE Access	journal-article
+34	10.1007/bfb0055644	1998	10.1007/bfb0055644	Unfolding and finite prefix for nets with read arcs	Lecture Notes in Computer Science	book-chapter
+35	10.5772/5324	2008	10.5772/5324	Estimation of Mean Response Time of Multi&amp;#151;Agent Systems Using Petri Nets	Petri Net, Theory and Applications	book-chapter
+36	10.1145/3290420.3290430	2018	10.1145/3290420.3290430	An introduction and review of petri net unfolding technology	Proceedings of the 4th International Conference on Communication and Information Processing	proceedings-article
+37	10.5772/5321	2008	10.5772/5321	Timed Hierarchical Object-Oriented Petri Net	Petri Net, Theory and Applications	book-chapter
+38	10.1109/pnpm.2003.1231549	None	10.1109/pnpm.2003.1231549	State class timed automaton of a time Petri net	10th International Workshop on Petri Nets and Performance Models, 2003. Proceedings.	proceedings-article
+39	10.1142/9789812839763_0010	1999	10.1142/9789812839763_0010	REAL-TIME PETRI NETS FOR DISCRETE EVENT CONTROL	Modeling, Simulation, and Control of Flexible Manufacturing Systems	book-chapter
+40	10.1109/csa.2013.199	2013	10.1109/csa.2013.199	Relaxed Unfolding for Time Petri Nets	2013 International Conference on Computer Sciences and Applications	proceedings-article
+41	10.7551/mitpress/8811.003.0010	2011	10.7551/mitpress/8811.003.0010	Analyzing Petri Net Models	Modeling Business Processes	book-chapter
+42	10.1016/j.jsc.2013.12.006	2014	10.1016/j.jsc.2013.12.006	Generalizations of complete mappings of finite fields and some applications	Journal of Symbolic Computation	journal-article
+43	10.1016/j.jsc.2016.05.001	2017	10.1016/j.jsc.2016.05.001	Matrix-F5 algorithms over finite-precision complete discrete valuation fields	Journal of Symbolic Computation	journal-article
+44	10.1007/springerreference_21281	None	10.1007/springerreference_21281	Petri net	SpringerReference	reference-entry
+45	10.1007/s10703-013-0188-2	2013	10.1007/s10703-013-0188-2	Symbolic unfolding of parametric stopwatch Petri nets	Formal Methods in System Design	journal-article
+46	10.1142/9789812839763_0011	1999	10.1142/9789812839763_0011	COMPARISON OF REAL-TIME PETRI NETS AND LADDER LOGIC DIAGRAMS	Modeling, Simulation, and Control of Flexible Manufacturing Systems	book-chapter
+47	10.1609/icaps.v19i1.13343	2009	10.1609/icaps.v19i1.13343	Optimality Properties of Planning Via Petri Net Unfolding: A Formal Analysis	Proceedings of the International Conference on Automated Planning and Scheduling	journal-article
+48	10.1609/icaps.v29i1.3473	2019	10.1609/icaps.v29i1.3473	On the Relation between Star-Topology Decoupling and Petri Net Unfolding	Proceedings of the International Conference on Automated Planning and Scheduling	journal-article
+49	10.1007/978-3-540-79230-7_6	None	10.1007/978-3-540-79230-7_6	A Feature-Complete Petri Net Semantics for WS-BPEL 2.0	Lecture Notes in Computer Science	book-chapter
+50	10.1109/icnsc.2017.8000077	2017	10.1109/icnsc.2017.8000077	DICER: Data Inconsistency CheckER based on the unfolding technique of Petri net	2017 IEEE 14th International Conference on Networking, Sensing and Control (ICNSC)	proceedings-article
+51	10.1007/978-3-031-48278-6_16	2024	10.1007/978-3-031-48278-6_16	Model Checking Safe, Strongly Persistent Petri Nets	Computer Science Foundations and Applied Logic	book-chapter
+52	10.5772/5311	2008	10.5772/5311	Modelling and Analysis of Real-Time Systems with RTCP-Nets	Petri Net, Theory and Applications	book-chapter
+53	10.1109/access.2022.3165185	2022	10.1109/access.2022.3165185	A Finite Prefix for Analyzing Information Flow Among Transitions of a Free-Choice Net	IEEE Access	journal-article
+54	10.5772/10294	2010	10.5772/10294	Petri Net as a Manufacturing System Scheduling Tool	Advances in Petri Net Theory and Applications	book-chapter
+55	10.1109/icices.2014.7034154	2014	10.1109/icices.2014.7034154	Railway fail-safe signalization and interlocking design based on automation Petri Net	International Conference on Information Communication and Embedded Systems (ICICES2014)	proceedings-article
+56	10.5120/14657-2946	2013	10.5120/14657-2946	A Wheel 1-Safe Petri Net Generating all the {0; 1}^n Sequences	International Journal of Computer Applications	journal-article
+57	10.1007/978-3-540-40022-6_3	2003	10.1007/978-3-540-40022-6_3	Petri Net Transformations in the ≫Petri Net Baukasten≪	Lecture Notes in Computer Science	book-chapter
+58	10.1007/978-3-540-89287-8_12	2008	10.1007/978-3-540-89287-8_12	McMillan’s Complete Prefix for Contextual Nets	Lecture Notes in Computer Science	book-chapter
+59	10.64628/aai.tsmchxpkg	2020	10.64628/aai.tsmchxpkg	COVID-19 vaccines were developed in record time – but are these game-changers safe?		posted-content
+60	10.5772/45741	2012	10.5772/45741	Real-Time Petri Net Based Control System Design for Distributed Autonomous Robotic Manufacturing Systems	Manufacturing System	book-chapter
+61	10.1109/idt.2008.4802509	2008	10.1109/idt.2008.4802509	Temporal reduction in time Petri net	2008 3rd International Design and Test Workshop	proceedings-article
+62	10.1002/9781119262114.part1	2016	10.1002/9781119262114.part1	Short Review of Petri Net Modeling	Systems Dependability Assessment	other
+63	10.1007/3-540-46002-0_26	2002	10.1007/3-540-46002-0_26	Parallelisation of the Petri Net Unfolding Algorithm	Lecture Notes in Computer Science	book-chapter
+64	10.1109/case.2011.6042481	2011	10.1109/case.2011.6042481	A symbolic schedulability technique of real-time systems modeled by P-Time Petri nets	2011 IEEE International Conference on Automation Science and Engineering	proceedings-article
+65	10.1007/3-540-57208-2_20	1993	10.1007/3-540-57208-2_20	A generalized event structure for the Muller unfolding of a safe net	Lecture Notes in Computer Science	book-chapter
+66	10.1142/9789814324298_0003	2012	10.1142/9789814324298_0003	Petri Net Processes and Extension Operators	Property-Preserving Petri Net Process Algebra in Software Engineering	book-chapter
+67	10.5772/5323	2008	10.5772/5323	Error Recovery in Production Systems: A Petri Net Based Intelligent System Approach	Petri Net, Theory and Applications	book-chapter
+68	10.1109/emwrt.1993.639093	1993	10.1109/emwrt.1993.639093	A Petri Net Based Modelling and Synthesis Technique for Real-Time Systems	Fifth Euromicro Workshop on Real-Time Systems	proceedings-article
+69	10.20961/its.v3i2.650	2016	10.20961/its.v3i2.650	CLUSTERING BUSINESS PROCESS MODEL PETRI NET DENGAN COMPLETE LINKAGE	Jurnal Teknologi &amp; Informasi ITSmart	journal-article
+70	10.1109/iecon.1998.723957	None	10.1109/iecon.1998.723957	A result on the relationship between Petri net and directed graph-real time fault diagnosis based on Petri net model	IECON '98. Proceedings of the 24th Annual Conference of the IEEE Industrial Electronics Society (Cat. No.98CH36200)	proceedings-article
+71	10.1109/grc.2009.5255065	2009	10.1109/grc.2009.5255065	Time consistency adjustment algorithm of time Petri Net	2009 IEEE International Conference on Granular Computing	proceedings-article
+72	10.1016/0747-7171(92)90011-r	1992	10.1016/0747-7171(92)90011-r	Unification under a mixed prefix	Journal of Symbolic Computation	journal-article
+73	10.3724/sp.j.1146.2010.00533	2011	10.3724/sp.j.1146.2010.00533	Research on Modeling and Analyzing Method of Real-time System Based on Hierarchical Real-time Coloured Petri Net	Journal of Electronics &amp; Information Technology	journal-article
+74	10.1016/s0304-3975(97)00235-1	1998	10.1016/s0304-3975(97)00235-1	Reachability in live and safe free-choice Petri nets is NP-complete	Theoretical Computer Science	journal-article
+75	10.5772/7499	2010	10.5772/7499	GPenSIM: A New Petri Net Simulator	Petri Nets Applications	book-chapter
+76	10.1007/978-3-642-15643-4_22	2010	10.1007/978-3-642-15643-4_22	Symbolic Unfolding of Parametric Stopwatch Petri Nets	Lecture Notes in Computer Science	book-chapter
+77	10.4108/infoscale.2007.888	2007	10.4108/infoscale.2007.888	A Complete and Efficient Strategy Based on Petri Net in Automated Trust Negotiation	Proceedings of the 2nd International ICST Conference on Scalable Information Systems	proceedings-article
+78	10.1142/9789812839763_0007	1999	10.1142/9789812839763_0007	PETRI NET SIMULATION AND TOOLS	Modeling, Simulation, and Control of Flexible Manufacturing Systems	book-chapter
+79	10.1109/pnpm.1989.68556	None	10.1109/pnpm.1989.68556	On the pertinence of the extended time Petri net model for analyzing communication activities	Proceedings of the Third International Workshop on Petri Nets and Performance Models, PNPM89	proceedings-article
+80	10.1109/mmmc.2005.26	None	10.1109/mmmc.2005.26	Color Time Petri Net for Interactive Adaptive Multimedia Objects	11th International Multimedia Modelling Conference	proceedings-article
+81	10.1109/dasc.2006.313733	2006	10.1109/dasc.2006.313733	Coloured Petri Net Modelling of Real-Time Task Scheduling	2006 ieee/aiaa 25TH Digital Avionics Systems Conference	proceedings-article
+82	10.4249/scholarpedia.6477	2008	10.4249/scholarpedia.6477	Petri net	Scholarpedia	journal-article
+83	10.1109/mace.2010.5535580	2010	10.1109/mace.2010.5535580	Further study on liveness of time Petri net	2010 International Conference on Mechanic Automation and Control Engineering	proceedings-article
+84	10.1098/rsfs.2024.0059	2025	10.1098/rsfs.2024.0059	Petri net on expanded networks computes the dynamics of finite multilevel models	Interface Focus	journal-article
+85	10.1016/j.automatica.2025.112241	2025	10.1016/j.automatica.2025.112241	Verification of current-state opacity and opaque time for labeled time Petri net systems	Automatica	journal-article
+86	10.1109/synasc.2011.16	2011	10.1109/synasc.2011.16	Reachability Analysis of Time Basic Petri Nets: A Time Coverage Approach	2011 13th International Symposium on Symbolic and Numeric Algorithms for Scientific Computing	proceedings-article
+87	10.5772/5310	2008	10.5772/5310	Petri Net Transformations	Petri Net, Theory and Applications	book-chapter
+88	10.1109/codit.2017.8102578	2017	10.1109/codit.2017.8102578	Time Petri net with rendezvous	2017 4th International Conference on Control, Decision and Information Technologies (CoDIT)	proceedings-article
+89	10.1109/coase.2015.7294076	2015	10.1109/coase.2015.7294076	Real time identification of Time Petri net faulty models	2015 IEEE International Conference on Automation Science and Engineering (CASE)	proceedings-article
+90	10.1061/41064(358)223	2009	10.1061/41064(358)223	Dynamic Model of Transit Signal Priority on Colored Time Petri Net	ICCTP 2009	proceedings-article
+91	10.1109/rams.2012.6175427	2012	10.1109/rams.2012.6175427	The safety analysis of flight landing based on Time Petri Net	2012 Proceedings Annual Reliability and Maintainability Symposium	proceedings-article
+92	10.1109/apsec.1997.640172	None	10.1109/apsec.1997.640172	Finite symbolic reachability graphs for high-level Petri nets	Proceedings of Joint 4th International Computer Science Conference and 4th Asia Pacific Software Engineering Conference	proceedings-article
+93	10.3403/30175183	None	10.3403/30175183	Analysis techniques for dependability. Petri net techniques		standard
+94	10.1145/1837934.1838000	2010	10.1145/1837934.1838000	Symbolic integration at compile time in finite element methods	Proceedings of the 2010 International Symposium on Symbolic and Algebraic Computation	proceedings-article
+95	10.46298/.12578	2024	10.46298/.12578	Taking Complete Finite Prefixes To High Level, Symbolically	Fundamenta Informaticae	journal-article
+96	10.1049/ic:19950173	1995	10.1049/ic:19950173	A Petri-net based codesign system for real-time applications	IEE Colloquium on Partitioning in Hardware-Software Codesigns	proceedings-article
+97	10.1016/s1474-6670(17)64101-6	1986	10.1016/s1474-6670(17)64101-6	Validation of Petri Net Models by ‘Petri-Net-Machine’	IFAC Proceedings Volumes	journal-article
+98	10.3403/30175183u	None	10.3403/30175183u	Analysis techniques for dependability. Petri net techniques		standard
+99	10.4018/978-1-4666-9594-8.les13	None	10.4018/978-1-4666-9594-8.les13	Petri Net Computing	Petri Nets for Modeling and Computing	book-chapter
+100	10.1007/978-1-4615-1009-3_7	2002	10.1007/978-1-4615-1009-3_7	Delay Time Petri Nets and Net Reduction	Compositional Verification of Concurrent and Real-Time Systems	book-chapter

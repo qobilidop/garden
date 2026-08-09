@@ -1,0 +1,7 @@
+rank	source_id	year	doi	title	venue	type
+1	citation-1	1997	-	Parallel Evaluation Strategies for Functional Logic Languages	ICLP	proceedings-article
+2	citation-2	2000	10.1145/351240.351266	QuickCheck: A Lightweight Tool for Random Testing of Haskell Programs	ICFP	proceedings-article
+3	citation-3	1997	10.1145/258948.258958	A Unified Computation Model for Functional and Logic Programming	POPL	proceedings-article
+4	citation-4	2006	-	Curry: An Integrated Functional Logic Language	technical report	technical-report
+5	citation-5	1998	-	Demand-Driven Search in Functional Logic Programs	LIFO	technical-report
+6	citation-6	2007	-	Source Code for Examples Including Reference Implementation	companion artifact	software

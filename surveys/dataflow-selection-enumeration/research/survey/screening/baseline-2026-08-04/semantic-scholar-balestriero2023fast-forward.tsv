@@ -1,0 +1,9 @@
+rank	source_id	year	doi	title	venue	type
+1	f181fd2b4d46367c05c23b3b88e446beaa947faf	2026		Expressivity Saturation: Reduced Affine Region Usage Under Increasing Task Complexity		
+2	670595a9278f415b96d2cb72cc5acd8e16cf48b0	2026	10.48550/arXiv.2605.10396	Causal Explanations from the Geometric Properties of ReLU Neural Networks	arXiv.org	JournalArticle
+3	49341b291707219131de2ca700b7111aaaed1f5d	2026	10.48550/arXiv.2605.06218	AffineLens: Capturing the Continuous Piecewise Affine Functions of Neural Networks	arXiv.org	JournalArticle
+4	adc518127ebab33e1a4a810aa6244fb105877a04	2025	10.1038/s41598-025-99060-2	Machines that halt resolve the undecidability of artificial intelligence alignment	Scientific Reports	JournalArticle
+5	43a15ab9cbb03be7bc0032c42b1c4acc27d1506e	2024	10.48550/arXiv.2408.08995	On the Undecidability of Artificial Intelligence Alignment: Machines that Halt	arXiv.org	JournalArticle
+6	1b4773a491e819f267458948f74a2d2d64c9ee5d	2024	10.48550/arXiv.2403.00860	Parallel Algorithms for Exact Enumeration of Deep Neural Network Activation Regions	arXiv.org	JournalArticle
+7	b8a7507fe6561b225cb2fa8e56566fc4e3bb04e6	2023	10.48550/arXiv.2307.03630	PAC bounds of continuous Linear Parameter-Varying systems related to neural ODEs	arXiv.org	JournalArticle
+8	99cb82ac72703733a90a700d91ef75a8c14c7cb8	2023	10.48550/arXiv.2306.11827	Any Deep ReLU Network is Shallow	arXiv.org	JournalArticle

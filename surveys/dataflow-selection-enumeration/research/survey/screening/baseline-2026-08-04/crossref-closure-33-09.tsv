@@ -1,0 +1,101 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1007/s10817-014-9319-8	2015	10.1007/s10817-014-9319-8	Symbolic Execution Proofs for Higher Order Store Programs	Journal of Automated Reasoning	journal-article
+2	10.1023/a:1014408032446	2001	10.1023/a:1014408032446	From Syntactic Theories to Interpreters: Automating the Proof of Unique Decomposition	Higher-Order and Symbolic Computation	journal-article
+3	10.1023/a:1019964114625	2002	10.1023/a:1019964114625	A Formalised Proof of the Soundness and Completeness of a Simply Typed Lambda-Calculus with Explicit Substitutions	Higher-Order and Symbolic Computation	journal-article
+4	10.1007/s10990-007-9007-z	2007	10.1007/s10990-007-9007-z	A proof-theoretic foundation of abortive continuations	Higher-Order and Symbolic Computation	journal-article
+5	10.1007/s10990-012-9082-7	2011	10.1007/s10990-012-9082-7	A proof of Moessner’s theorem by coinduction	Higher-Order and Symbolic Computation	journal-article
+6	10.1023/a:1010006229549	2000	10.1023/a:1010006229549	Higher-Order UnCurrying	Higher-Order and Symbolic Computation	journal-article
+7	10.1145/2398857.2384655	2012	10.1145/2398857.2384655	Higher-order symbolic execution via contracts	ACM SIGPLAN Notices	journal-article
+8	10.1023/a:1010027404223	1998	10.1023/a:1010027404223	Definitional Interpreters for Higher-Order Programming Languages	Higher-Order and Symbolic Computation	journal-article
+9	10.1145/2384616.2384655	2012	10.1145/2384616.2384655	Higher-order symbolic execution via contracts	Proceedings of the ACM international conference on Object oriented programming systems languages and applications	proceedings-article
+10	10.1023/a:1025815202775	2003	10.1023/a:1025815202775	Editorial	Higher-Order and Symbolic Computation	journal-article
+11	10.1023/a:1010023032358	1999	10.1023/a:1010023032358	Editorial	Higher-Order and Symbolic Computation	journal-article
+12	10.1023/a:1022974204050	2002	10.1023/a:1022974204050	Editorial	Higher-Order and Symbolic Computation	journal-article
+13	10.1023/a:1010025114115	1999	10.1023/a:1010025114115	Editorial	Higher-Order and Symbolic Computation	journal-article
+14	10.1023/a:1010093700911	1999	10.1023/a:1010093700911	Continuation-Based Multiprocessing	Higher-Order and Symbolic Computation	journal-article
+15	10.1023/a:1010032817863	1998	10.1023/a:1010032817863	Editorial	Higher-Order and Symbolic Computation	journal-article
+16	10.1023/a:1011513031288	2001	10.1023/a:1011513031288	Editorial	Higher-Order and Symbolic Computation	journal-article
+17	10.1023/a:1010002000861	1999	10.1023/a:1010002000861	Editorial	Higher-Order and Symbolic Computation	journal-article
+18	10.1023/a:1010047103315	1998	10.1023/a:1010047103315	Editorial	Higher-Order and Symbolic Computation	journal-article
+19	10.1023/a:1010089522078	1999	10.1023/a:1010089522078	Introduction	Higher-Order and Symbolic Computation	journal-article
+20	10.1023/a:1010014500357	2000	10.1023/a:1010014500357	Editorial	Higher-Order and Symbolic Computation	journal-article
+21	10.1023/a:1026586714900	2000	10.1023/a:1026586714900	Editorial	Higher-Order and Symbolic Computation	journal-article
+22	10.1023/a:1010085415024	1999	10.1023/a:1010085415024	Growing a Language	Higher-Order and Symbolic Computation	journal-article
+23	10.1023/a:1010052222987	1999	10.1023/a:1010052222987	Computing with Contexts	Higher-Order and Symbolic Computation	journal-article
+24	10.1023/a:1010022412197	2000	10.1023/a:1010022412197	Editorial	Higher-Order and Symbolic Computation	journal-article
+25	10.1017/s0956796816000216	2017	10.1017/s0956796816000216	Higher order symbolic execution for contract verification and refutation	Journal of Functional Programming	journal-article
+26	10.1023/a:1020834727430	2002	10.1023/a:1020834727430	Editorial	Higher-Order and Symbolic Computation	journal-article
+27	10.1023/a:1010028231554	1998	10.1023/a:1010028231554	Introduction	Higher-Order and Symbolic Computation	journal-article
+28	10.1023/a:1010074329461	2000	10.1023/a:1010074329461	Continuations Revisited	Higher-Order and Symbolic Computation	journal-article
+29	10.1023/a:1010049917750	1999	10.1023/a:1010049917750	Continuation-Based Multiprocessing Revisited	Higher-Order and Symbolic Computation	journal-article
+30	10.1023/a:1010012532463	1998	10.1023/a:1010012532463	Retraction Approach to CPS Transform	Higher-Order and Symbolic Computation	journal-article
+31	10.1023/a:1010062026735	2000	10.1023/a:1010062026735	Reminiscences of Christopher Strachey	Higher-Order and Symbolic Computation	journal-article
+32	10.1023/a:1019966413716	2002	10.1023/a:1019966413716	Editorial	Higher-Order and Symbolic Computation	journal-article
+33	10.1023/b:lisp.0000029480.20108.7d	2004	10.1023/b:lisp.0000029480.20108.7d	Editorial	Higher-Order and Symbolic Computation	journal-article
+34	10.1023/a:1012905312544	2001	10.1023/a:1012905312544	Editorial	Higher-Order and Symbolic Computation	journal-article
+35	10.1023/a:1014426530629	2001	10.1023/a:1014426530629	Editorial	Higher-Order and Symbolic Computation	journal-article
+36	10.1023/a:1010070228552	2000	10.1023/a:1010070228552	Christopher Strachey and Fundamental Concepts	Higher-Order and Symbolic Computation	journal-article
+37	10.1023/a:1026547031739	2000	10.1023/a:1026547031739	Efficiency by Incrementalization: An Introduction	Higher-Order and Symbolic Computation	journal-article
+38	10.1023/a:1010053724918	2000	10.1023/a:1010053724918	A Hard Act to Follow	Higher-Order and Symbolic Computation	journal-article
+39	10.1023/a:1010057925827	2000	10.1023/a:1010057925827	My Years with Strachey	Higher-Order and Symbolic Computation	journal-article
+40	10.1023/a:1010000313106	2000	10.1023/a:1010000313106	Fundamental Concepts in Programming Languages	Higher-Order and Symbolic Computation	journal-article
+41	10.1023/a:1025824903683	2003	10.1023/a:1025824903683	Path Dependent Analysis of Logic Programs	Higher-Order and Symbolic Computation	journal-article
+42	10.1023/a:1012944815270	2001	10.1023/a:1012944815270	Type-Based Useless-Variable Elimination	Higher-Order and Symbolic Computation	journal-article
+43	10.1023/a:1010064516533	1998	10.1023/a:1010064516533	The π-Calculus in Direct Style	Higher-Order and Symbolic Computation	journal-article
+44	10.1023/a:1010005808988	2000	10.1023/a:1010005808988	Christopher Strachey: A Personal Recollection	Higher-Order and Symbolic Computation	journal-article
+45	10.1023/a:1010043619517	1999	10.1023/a:1010043619517	Partial Evaluation of Computation Process, Revisited	Higher-Order and Symbolic Computation	journal-article
+46	10.1023/a:1019916231463	2002	10.1023/a:1019916231463	Dependent Types for Program Termination Verification	Higher-Order and Symbolic Computation	journal-article
+47	10.1023/a:1010087314987	1998	10.1023/a:1010087314987	A Syntactic Theory of Dynamic Binding	Higher-Order and Symbolic Computation	journal-article
+48	10.1023/a:1025695922492	2003	10.1023/a:1025695922492	Editorial	Higher-Order and Symbolic Computation	journal-article
+49	10.1023/a:1010097524009	2000	10.1023/a:1010097524009	Christopher Strachey: Recollections of His Influence	Higher-Order and Symbolic Computation	journal-article
+50	10.1023/a:1010010009897	2000	10.1023/a:1010010009897	From Language Concepts to Implementation Concepts	Higher-Order and Symbolic Computation	journal-article
+51	10.1023/a:1010004307057	1999	10.1023/a:1010004307057	Partial Evaluation of the Euclidean Algorithm, Revisited	Higher-Order and Symbolic Computation	journal-article
+52	10.1023/a:1010001708080	2000	10.1023/a:1010001708080	Cambridge and CPL in the 1960s	Higher-Order and Symbolic Computation	journal-article
+53	10.1007/10990.1573-0557	None	10.1007/10990.1573-0557	Higher-Order and Symbolic Computation		journal
+54	10.1023/a:1010041423101	2000	10.1023/a:1010041423101	From Macrogeneration to Syntactic Abstraction	Higher-Order and Symbolic Computation	journal-article
+55	10.1023/b:lisp.0000029481.73168.ef	2004	10.1023/b:lisp.0000029481.73168.ef	Editorial	Higher-Order and Symbolic Computation	journal-article
+56	10.1023/a:1025872819613	2003	10.1023/a:1025872819613	Non-Standard Semantics for Program Slicing	Higher-Order and Symbolic Computation	journal-article
+57	10.1023/a:1010014110806	2000	10.1023/a:1010014110806	Christopher Strachey and the Cambridge CPL Compiler	Higher-Order and Symbolic Computation	journal-article
+58	10.1023/a:1025689206562	2003	10.1023/a:1025689206562	Formal Foundations of Operational Semantics	Higher-Order and Symbolic Computation	journal-article
+59	10.1023/b:lisp.0000029446.78563.a4	2004	10.1023/b:lisp.0000029446.78563.a4	A Retrospective on Region-Based Memory Management	Higher-Order and Symbolic Computation (formerly LISP and Symbolic Computation)	journal-article
+60	10.1023/a:1026551132647	2000	10.1023/a:1026551132647	Glossary for Partial Evaluation and Related Topics	Higher-Order and Symbolic Computation	journal-article
+61	10.1023/a:1020887011500	2002	10.1023/a:1020887011500	Comparing Control Constructs by Double-Barrelled CPS	Higher-Order and Symbolic Computation	journal-article
+62	10.1023/a:1010018211714	2000	10.1023/a:1010018211714	Some Reflections on Strachey and His Work	Higher-Order and Symbolic Computation	journal-article
+63	10.1023/a:1012996816178	2001	10.1023/a:1012996816178	Calculating Sized Types	Higher-Order and Symbolic Computation	journal-article
+64	10.1007/3-540-58450-1_38	1994	10.1007/3-540-58450-1_38	Symbolic animation as a proof tool	Lecture Notes in Computer Science	book-chapter
+65	10.1023/a:1023059701827	2003	10.1023/a:1023059701827	Editorial	Higher-Order and Symbolic Computation	journal-article
+66	10.1023/a:1020839128338	2002	10.1023/a:1020839128338	Optimizing Nested Loops Using Local CPS Conversion	Higher-Order and Symbolic Computation	journal-article
+67	10.1023/a:1025829004592	2003	10.1023/a:1025829004592	Corrigendum: Polymorphic Type Assignment and CPS Conversion	Higher-Order and Symbolic Computation	journal-article
+68	10.1023/a:1010035401770	1999	10.1023/a:1010035401770	Combining Program and Data Specialization	Higher-Order and Symbolic Computation	journal-article
+69	10.1023/b:lisp.0000029450.36668.cb	2004	10.1023/b:lisp.0000029450.36668.cb	Using Circular Programs to Deforest in Accumulating Parameters	Higher-Order and Symbolic Computation	journal-article
+70	10.1023/a:1010022312623	2000	10.1023/a:1010022312623	Abstract Models of Storage	Higher-Order and Symbolic Computation	journal-article
+71	10.1023/b:lisp.0000029447.02190.42	2004	10.1023/b:lisp.0000029447.02190.42	Cost-Augmented Partial Evaluation of Functional Logic Programs	Higher-Order and Symbolic Computation	journal-article
+72	10.1023/a:1025876920522	2003	10.1023/a:1025876920522	Automatic Generation of Staged Geometric Predicates	Higher-Order and Symbolic Computation	journal-article
+73	10.1023/a:1020895213317	2002	10.1023/a:1020895213317	Axioms for Recursion in Call-by-Value	Higher-Order and Symbolic Computation	journal-article
+74	10.1023/a:1026599015809	2000	10.1023/a:1026599015809	Slicing Software for Model Construction	Higher-Order and Symbolic Computation	journal-article
+75	10.1023/a:1010020917337	1999	10.1023/a:1010020917337	Unchecked Exceptions Can Be Strictly More Powerful Than Call/CC	Higher-Order and Symbolic Computation	journal-article
+76	10.1023/b:lisp.0000029444.99264.c0	2004	10.1023/b:lisp.0000029444.99264.c0	Compiler Optimization Correctness by Temporal Logic	Higher-Order and Symbolic Computation (formerly LISP and Symbolic Computation)	journal-article
+77	10.4018/978-1-61520-711-4.ch002	None	10.4018/978-1-61520-711-4.ch002	Higher Order Neural Networks for Symbolic, Sub-symbolic and Chaotic Computations	Artificial Higher Order Neural Networks for Computer Science and Engineering	book-chapter
+78	10.1023/a:1014455931537	2001	10.1023/a:1014455931537	Tree Rerooting in Distributed Garbage Collection: Implementation and Performance Evaluation	Higher-Order and Symbolic Computation	journal-article
+79	10.1023/a:1020891112409	2002	10.1023/a:1020891112409	Linear Continuation-Passing	Higher-Order and Symbolic Computation	journal-article
+80	10.1023/a:1010048229036	2000	10.1023/a:1010048229036	A Foreword to ‘Fundamental Concepts in Programming Languages’	Higher-Order and Symbolic Computation	journal-article
+81	10.1023/b:lisp.0000029449.57959.bd	2004	10.1023/b:lisp.0000029449.57959.bd	Program Adaptation via Output-Constraint Specialization	Higher-Order and Symbolic Computation	journal-article
+82	10.1023/a:1010060315625	1998	10.1023/a:1010060315625	An Introduction to Landin's “A Generalization of Jumps and Labels”	Higher-Order and Symbolic Computation	journal-article
+83	10.1023/a:1010079421970	1998	10.1023/a:1010079421970	The First Report on Scheme Revisited	Higher-Order and Symbolic Computation	journal-article
+84	10.1023/a:1010058213619	2000	10.1023/a:1010058213619	Linear-Time Self-Interpretation of the Pure Lambda Calculus	Higher-Order and Symbolic Computation	journal-article
+85	10.1023/a:1019912130555	2002	10.1023/a:1019912130555	Formalization and Analysis of Class Loading in Java	Higher-Order and Symbolic Computation	journal-article
+86	10.1023/a:1010010314528	2000	10.1023/a:1010010314528	A Polymorphic Environment Calculus and its Type-Inference Algorithm	Higher-Order and Symbolic Computation	journal-article
+87	10.1023/a:1020843229247	2002	10.1023/a:1020843229247	Secure Information Flow via Linear Continuations	Higher-Order and Symbolic Computation	journal-article
+88	10.1023/a:1010066127644	2000	10.1023/a:1010066127644	Induction, Domains, Calculi: Strachey's Contributions to Programming-Language Engineering	Higher-Order and Symbolic Computation	journal-article
+89	10.1007/s10990-008-9038-0	2008	10.1007/s10990-008-9038-0	Adapting functional programs to higher order logic	Higher-Order and Symbolic Computation	journal-article
+90	10.1023/a:1014403914699	2001	10.1023/a:1014403914699	A Network Protocol Stack in Standard ML	Higher-Order and Symbolic Computation	journal-article
+91	10.1023/a:1023063919574	2003	10.1023/a:1023063919574	Universal Regular Path Queries	Higher-Order and Symbolic Computation	journal-article
+92	10.1023/a:1010095604496	1999	10.1023/a:1010095604496	Partial Evaluation of Computation Process--An Approach to a Compiler-Compiler	Higher-Order and Symbolic Computation	journal-article
+93	10.1007/s10990-007-9021-1	2007	10.1007/s10990-007-9021-1	Editorial	Higher-Order and Symbolic Computation	journal-article
+94	10.1017/cbo9781139021326.011	2012	10.1017/cbo9781139021326.011	Implementing Proof Systems	Programming with Higher-Order Logic	book-chapter
+95	10.1023/a:1011549115358	2001	10.1023/a:1011549115358	A Generic Reification Technique for Object-Oriented Reflective Languages	Higher-Order and Symbolic Computation	journal-article
+96	10.1023/a:1010072901408	1999	10.1023/a:1010072901408	An Early Use of Continuations and Partial Evaluation for Compiling Rules Written in First-Order Predicate Calculus	Higher-Order and Symbolic Computation	journal-article
+97	10.1023/a:1010026413531	2000	10.1023/a:1010026413531	Continuations: A Mathematical Semantics for Handling Full Jumps	Higher-Order and Symbolic Computation	journal-article
+98	10.1017/9781009561280.010	2025	10.1017/9781009561280.010	Higher-Order Quantification	Proof Theory and Logic Programming	book-chapter
+99	10.1023/a:1012992731199	2001	10.1023/a:1012992731199	The Second Futamura Projection for Type-Directed Partial Evaluation	Higher-Order and Symbolic Computation	journal-article
+100	10.1093/jigpal/jzad008	2024	10.1093/jigpal/jzad008	Proof-carrying parameters in certified symbolic execution	Logic Journal of the IGPL	journal-article

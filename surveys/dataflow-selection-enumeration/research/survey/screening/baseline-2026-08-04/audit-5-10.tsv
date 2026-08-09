@@ -1,0 +1,105 @@
+rank	source_id	year	doi	title	venue	type
+1	10.14711/thesis-991013384263603412	None	10.14711/thesis-991013384263603412	Equilibrium analysis, pricing, and route choice for shared on-demand mobility services		dissertation
+2	10.1109/cacml64929.2025.11010961	2025	10.1109/cacml64929.2025.11010961	Demand Prediction with Gravity Graph Attention Networks for Shared Bike Systems	2025 4th Asia Conference on Algorithms, Computing and Machine Learning (CACML)	proceedings-article
+3	10.3390/electronics12061381	2023	10.3390/electronics12061381	Short-Term Demand Prediction of Shared Bikes Based on LSTM Network	Electronics	journal-article
+4	10.1117/12.2614985	2021	10.1117/12.2614985	Short-term demand forecasting of shared bicycles based on long short-term memory neural network and climate characteristics	2021 International Conference on Neural Networks, Information and Communication Engineering	proceedings-article
+5	10.3390/math11244994	2023	10.3390/math11244994	Demand Prediction of Shared Bicycles Based on Graph Convolutional Network-Gated Recurrent Unit-Attention Mechanism	Mathematics	journal-article
+6	10.65286/icic.v21i4.63213	2025	10.65286/icic.v21i4.63213	Shared Bicycle Demand Prediction Based on Hierarchical Spatiotemporal Graph Convolution Network	Poster Volume Ⅳ  The 2025 Twenty-First International  Conference on Intelligent Computing July 26-29, 2025  Ningbo, China	proceedings-article
+7	10.4271/ja3163_202106	None	10.4271/ja3163_202106	Taxonomy of On-Demand and Shared Mobility: Ground, Aviation, and Marine		standard
+8	10.1177/0193841x9101500404	1991	10.1177/0193841x9101500404	Evaluation of Behavioral Demand Models of Consumer Choice in Health Care	Evaluation Review	journal-article
+9	10.1016/j.procs.2025.03.129	2025	10.1016/j.procs.2025.03.129	Towards more granular choice set building in location choice models: A graph-structured meta-topology as an alternative to matrices in agent-based travel demand models	Procedia Computer Science	journal-article
+10	10.2139/ssrn.4860917	2024	10.2139/ssrn.4860917	Predicting Short-Term Bike-Sharing Demand at Station Level: A Deep Graph-Based Multi-Task Spatiotemporal Approach		posted-content
+11	10.5194/agile-giss-1-12-2020	2020	10.5194/agile-giss-1-12-2020	Short-term Traffic Demand Prediction using Graph Convolutional Neural Networks	AGILE: GIScience Series	journal-article
+12	10.18653/v1/2024.textgraphs-1.14	2024	10.18653/v1/2024.textgraphs-1.14	Skoltech at TextGraphs-17 Shared Task: Finding GPT-4 Prompting Strategies for Multiple Choice Questions	Proceedings of TextGraphs-17: Graph-based Methods for Natural Language Processing	proceedings-article
+13	10.1145/3694811.3697821	2024	10.1145/3694811.3697821	EGNN-based Topology Control in Wireless Mobile Infrastructure on Demand with Shared Access Restrictions	Proceedings of the 3rd GNNet Workshop on Graph Neural Networking Workshop	proceedings-article
+14	10.2139/ssrn.903079	2006	10.2139/ssrn.903079	Eliciting the Demand for Long Term Care Coverage: A Discrete Choice Modelling Analysis	SSRN Electronic Journal	journal-article
+15	10.15760/trec.132	2010	10.15760/trec.132	Long-Term Evaluation of Individualized Marketing Programs for Travel Demand Management		report
+16	10.2139/ssrn.4903667	2024	10.2139/ssrn.4903667	Predicting Short-Term Bike-Sharing Demand at Station Level: A Semi-Adaptive Graph-Based Multi-Task Spatiotemporal Approach		posted-content
+17	10.5860/choice.26-5650	1989	10.5860/choice.26-5650	Forest site evaluation and long-term productivity	Choice Reviews Online	journal-article
+18	10.3390/su15107903	2023	10.3390/su15107903	Convolutional Long Short-Term Memory Two-Dimensional Bidirectional Graph Convolutional Network for Taxi Demand Prediction	Sustainability	journal-article
+19	10.2139/ssrn.4750430	2024	10.2139/ssrn.4750430	An Adaptive Spatio-Temporal Graph Recurrent Network for Short-Term Electric Vehicle Charging Demand Prediction		posted-content
+20	10.3724/j.fjyl.202312280590	2024	10.3724/j.fjyl.202312280590	Evaluation on Demand Responsiveness of Flexibly-Shared Outdoor Fitness Facilities	Landscape Architecture	journal-article
+21	10.1016/j.tbs.2020.12.003	2021	10.1016/j.tbs.2020.12.003	User interest in on-demand, shared, and driverless mobility: Evidence from stated preference choice experiments in Southern Ontario	Travel Behaviour and Society	journal-article
+22	10.1016/j.trd.2024.104221	2024	10.1016/j.trd.2024.104221	Short-term and long-term impacts of shared autonomous vehicle choice behavior	Transportation Research Part D: Transport and Environment	journal-article
+23	10.3790/vjh.69.3.371	2000	10.3790/vjh.69.3.371	The Demand for Evaluation from a Public Choice Perspective	Vierteljahrshefte zur Wirtschaftsforschung	journal-article
+24	10.7717/peerj-cs.2391/fig-1	None	10.7717/peerj-cs.2391/fig-1	Figure 1: Demand graph for bike-sharing stations.		component
+25	10.1093/oso/9780198830986.003.0007	2018	10.1093/oso/9780198830986.003.0007	Electoral Choice—Voter Demand and Party Supply	Oxford Scholarship Online	book
+26	10.58837/chula.the.2019.135	None	10.58837/chula.the.2019.135	Analysis of demand on shared mobility packages in university campus		dissertation
+27	10.21437/interspeech.2015-646	2015	10.21437/interspeech.2015-646	An evaluation of graph clustering methods for unsupervised term discovery	Interspeech 2015	proceedings-article
+28	10.3030/745016	2016	10.3030/745016			grant
+29	10.5204/thesis.eprints.250812	None	10.5204/thesis.eprints.250812	Travel demand analytics of Shared E-Scooter using econometric models		dissertation
+30	10.1093/oso/9780199546275.003.0023	2009	10.1093/oso/9780199546275.003.0023	Medical-legal aspects of evidence-based choice and shared decision-making	Shared Decision-Making in Health Care	book-chapter
+31	10.5220/0012961400004508	2024	10.5220/0012961400004508	Forecasting Demand of Shared Bikes Based on ARIMA Model	Proceedings of the 1st International Conference on Engineering Management, Information Technology and Intelligence	proceedings-article
+32	10.5040/9798216966890.0013	1994	10.5040/9798216966890.0013	"10 
+The Need for Objective Program 
+Evaluation for Long-Term Demand- 
+Side Management Success
+ 1"	Energizing the Energy Policy Process	other
+33	10.1145/3018787.3018795	2017	10.1145/3018787.3018795	Ligra: A Lightweight Graph Processing Framework for Shared Memory	Shared-Memory Parallelism Can Be Simple, Fast, and Scalable	book-chapter
+34	10.1093/oso/9780199546275.003.0001	2009	10.1093/oso/9780199546275.003.0001	Shared decision-making in health care: Achieving evidence-based patient choice	Shared Decision-Making in Health Care	book-chapter
+35	10.1201/9780429493768	2018	10.1201/9780429493768	Graph Theory (on Demand Printing Of 02787)		book
+36	10.2307/j.ctv16758p6.9	2014	10.2307/j.ctv16758p6.9	APRO-CHOICE MORAL FRAMEWORK	Pro-Life, Pro-Choice	book-chapter
+37	10.2139/ssrn.5220532	2025	10.2139/ssrn.5220532	Understanding Demand for Shared Autonomous Micro-Mobility		posted-content
+38	10.2139/ssrn.5076777	2025	10.2139/ssrn.5076777	Extended Booking Horizons in Rural Shared Mobility-on-Demand Systems: Insights and Implications for Demand Management		posted-content
+39	10.3390/w14081291	2022	10.3390/w14081291	Short-Term Bathwater Demand Forecasting for Shared Shower Rooms in Smart Campuses Using Machine Learning Methods	Water	journal-article
+40	10.1093/oso/9780195037104.003.0010	1986	10.1093/oso/9780195037104.003.0010	Choice and Private Schools: Dynamics of Supply and Demand	Private Education	book-chapter
+41	10.5860/choice.49-7181	2012	10.5860/choice.49-7181	Shared responsibility, shared risk: government, markets, and social policy in the twenty-first century	Choice Reviews Online	journal-article
+42	10.1093/oso/9780199546275.003.0009	2009	10.1093/oso/9780199546275.003.0009	Ethical issues around evidence-based patient choice and shared decision-making	Shared Decision-Making in Health Care	book-chapter
+43	10.1201/9781482275605-13	1986	10.1201/9781482275605-13	Short term demand forecasting.	Water Demand Forecasting	book-chapter
+44	10.3390/w16060831	2024	10.3390/w16060831	Urban Water Demand Prediction Based on Attention Mechanism Graph Convolutional Network-Long Short-Term Memory	Water	journal-article
+45	10.1109/fists46898.2020.9264852	2020	10.1109/fists46898.2020.9264852	Short-Term Demand and Volatility Prediction of Shared Micro-Mobility: a case study of e-scooter in Thammasat University	2020 Forum on Integrated and Sustainable Transportation Systems (FISTS)	proceedings-article
+46	10.2307/j.ctv16758p6.8	2014	10.2307/j.ctv16758p6.8	PRO-CHOICE, NOT PRO-ABORTION:	Pro-Life, Pro-Choice	book-chapter
+47	10.1002/hec.1271	2008	10.1002/hec.1271	Eliciting the demand for long‐term care coverage: a discrete choice modelling analysis	Health Economics	journal-article
+48	10.1101/2025.07.24.666659	2025	10.1101/2025.07.24.666659	Short-term memory capacity and chronic stress levels predict cognitive effort choice as a function of reward level and effort demand		posted-content
+49	10.1109/ccta49430.2022.9966139	2022	10.1109/ccta49430.2022.9966139	Demand-for graph evaluation of traffic congestion due to Altruistic Lane Changes of CAVs	2022 IEEE Conference on Control Technology and Applications (CCTA)	proceedings-article
+50	10.5194/egusphere-egu23-13314	2023	10.5194/egusphere-egu23-13314	Assessment of Long-Term and Spatio-temporal Changes between Rice Productivity and Irrigation Water Demand in South and North Korea based on Shared Socioeconomic Pathways (SSP) Scenario		posted-content
+51	10.1145/800024.808357	1971	10.1145/800024.808357	Sim/61	Proceedings of the SIGOPS workshop on System performance evaluation  -	proceedings-article
+52	10.1109/spdp.1991.218229	None	10.1109/spdp.1991.218229	A shared-memory multiprocessor garbage collector and its evaluation for committed-choice logic programs	Proceedings of the Third IEEE Symposium on Parallel and Distributed Processing	proceedings-article
+53	10.1016/j.trd.2023.103962	2023	10.1016/j.trd.2023.103962	Sparse trip demand prediction for shared E-scooter using spatio-temporal graph neural networks	Transportation Research Part D: Transport and Environment	journal-article
+54	10.1093/acprof:oso/9780198723448.003.0001	2016	10.1093/acprof:oso/9780198723448.003.0001	Shared decision making	Shared Decision Making in Health Care	book-chapter
+55	10.1007/s11116-019-10010-0	2020	10.1007/s11116-019-10010-0	Steering short-term demand for car-sharing: a mode choice and policy impact analysis by trip distance	Transportation	journal-article
+56	10.1016/b978-0-12-311050-3.50021-8	1976	10.1016/b978-0-12-311050-3.50021-8	DEMAND AND CONSUMER CHOICE	Economics Private and Public Choice	book-chapter
+57	10.1109/icaace65325.2025.11019712	2025	10.1109/icaace65325.2025.11019712	The Shared Bicycle Demand Prediction Algorithm Based on Improved Graph Convolutional Network with Non-Negative Matrix Factorization	2025 8th International Conference on Advanced Algorithms and Control Engineering (ICAACE)	proceedings-article
+58	10.1007/s11116-025-10582-0	2025	10.1007/s11116-025-10582-0	Multi-frequency spatial-temporal graph neural network for short-term metro OD demand prediction during public health emergencies	Transportation	journal-article
+59	10.3390/s25216739	2025	10.3390/s25216739	Deep Learning-Driven Bus Short-Term OD Demand Prediction via a Physics-Guided Adaptive Graph Spatio-Temporal Attention Network	Sensors	journal-article
+60	10.5040/9781474288323.ch-003	2016	10.5040/9781474288323.ch-003	Making history: shared perspectives and shared problems in the study of long-term change	The Waves of Time : Long-Term Change and International Relations	book-chapter
+61	10.1088/1742-6596/1903/1/012059	2021	10.1088/1742-6596/1903/1/012059	Short-term Demand Forecasting of Shared Bicycles Based on Seasonal Grey Markov Model	Journal of Physics: Conference Series	journal-article
+62	10.5860/choice.169509	2014	10.5860/choice.169509	Shared Shelf Commons	Choice Reviews Online	journal-article
+63	10.2307/j.ctv16758p6.10	2014	10.2307/j.ctv16758p6.10	RESPECTING FETAL LIFE AND PREGNANT WOMEN:	Pro-Life, Pro-Choice	book-chapter
+64	10.1201/9781482275605-9	1986	10.1201/9781482275605-9	Short term demand forecasting - some engineering considerations.	Water Demand Forecasting	book-chapter
+65	10.31979/etd.4q67-hyb3	None	10.31979/etd.4q67-hyb3	Knowledge Graph-based Multiple-Choice Question Generation		dissertation
+66	10.1109/icpet55165.2022.9918240	2022	10.1109/icpet55165.2022.9918240	Long-Term Planning of Shared Energy Storage for Multiple Renewable Energy Bases Considering the Growth of Renewables and Load Demand	2022 4th International Conference on Power and Energy Technology (ICPET)	proceedings-article
+67	10.2139/ssrn.4109864	2022	10.2139/ssrn.4109864	Evaluation of Freight Co2 Emissions Reduction Considering Demand and Carriers' Choice Behavior	SSRN Electronic Journal	journal-article
+68	10.7287/peerj-cs.1260v0.2/reviews/3	2023	10.7287/peerj-cs.1260v0.2/reviews/3	"Peer Review #3 of ""Semantic-visual shared knowledge graph for zero-shot learning (v0.2)"""		peer-review
+69	10.1117/12.3118778	2026	10.1117/12.3118778	Research on shared bike supply-demand forecasting and regional dispatching strategy based on improved long short-term memory network	Third International Conference on Intelligent Transportation and Smart Cities (ICITSC 2026)	proceedings-article
+70	10.5038/cutr-nicr-y2-2-5.2	2024	10.5038/cutr-nicr-y2-2-5.2	Advancing Equity and Congestion Relief: An Investigation of On-Demand Shared Rides for Underserved Populations		report
+71	10.7287/peerj-cs.1260v0.1/reviews/4	2023	10.7287/peerj-cs.1260v0.1/reviews/4	"Peer Review #4 of ""Semantic-visual shared knowledge graph for zero-shot learning (v0.1)"""		peer-review
+72	10.7287/peerj-cs.1260v0.1/reviews/2	2023	10.7287/peerj-cs.1260v0.1/reviews/2	"Peer Review #2 of ""Semantic-visual shared knowledge graph for zero-shot learning (v0.1)"""		peer-review
+73	10.7287/peerj-cs.1260v0.1/reviews/3	2023	10.7287/peerj-cs.1260v0.1/reviews/3	"Peer Review #3 of ""Semantic-visual shared knowledge graph for zero-shot learning (v0.1)"""		peer-review
+74	10.1093/acprof:oso/9780198723448.003.0028	2016	10.1093/acprof:oso/9780198723448.003.0028	Implementing shared decision making	Shared Decision Making in Health Care	book-chapter
+75	10.1093/acprof:oso/9780198723448.003.0014	2016	10.1093/acprof:oso/9780198723448.003.0014	Models for teaching shared decision making	Shared Decision Making in Health Care	book-chapter
+76	10.1016/j.apenergy.2025.125320	2025	10.1016/j.apenergy.2025.125320	An adaptive spatio-temporal graph recurrent network for short-term electric vehicle charging demand prediction	Applied Energy	journal-article
+77	10.1016/j.jpubeco.2020.104353	2021	10.1016/j.jpubeco.2020.104353	Housing liquidity and long-term care insurance demand: A quantitative evaluation	Journal of Public Economics	journal-article
+78	10.5860/choice.33-1446	1995	10.5860/choice.33-1446	Performing music: shared concerns	Choice Reviews Online	journal-article
+79	10.3390/su11216173	2019	10.3390/su11216173	The Predictability of Short-Term Urban Rail Demand: Choice of Time Resolution and Methodology	Sustainability	journal-article
+80	10.1016/j.knosys.2025.114986	2026	10.1016/j.knosys.2025.114986	Predicting short-Term bike-Sharing demand at station level: A multi-Task dynamic graph-based spatiotemporal approach	Knowledge-Based Systems	journal-article
+81	10.2139/ssrn.5122445	2025	10.2139/ssrn.5122445	Directed Acyclic Graph Representation of the Demand -Supply Model		posted-content
+82	10.1109/tbdata.2021.3063553	2021	10.1109/tbdata.2021.3063553	Long-term Origin-Destination Demand Prediction with Graph Deep Learning	IEEE Transactions on Big Data	journal-article
+83	10.1787/888933617776	None	10.1787/888933617776	Graph 1.49 ICT-related foreign value added content of domestic final demand, 2011		component
+84	10.1093/acprof:oso/9780198723448.003.0013	2016	10.1093/acprof:oso/9780198723448.003.0013	The three talk model of shared decision making	Shared Decision Making in Health Care	book-chapter
+85	10.23943/princeton/9780691202754.003.0002	2020	10.23943/princeton/9780691202754.003.0002	The theory choice and of consumer demand	A Course in Microeconomic Theory	book-chapter
+86	10.1093/acprof:oso/9780195189629.003.0009	2006	10.1093/acprof:oso/9780195189629.003.0009	Consumer Choice and Demand	Microeconomics	book-chapter
+87	10.1787/888933617548	None	10.1787/888933617548	Graph 1.37 Origin of demand sustaining jobs in OECD information industries, 1995-2014		component
+88	10.2307/j.ctv16758p6.3	2014	10.2307/j.ctv16758p6.3	ACKNOWLEDGMENTS	Pro-Life, Pro-Choice	book-chapter
+89	10.2986/tren.102-0398	None	10.2986/tren.102-0398	Shared Vision For A Long Term Pastorate		dissertation
+90	10.3386/w29993	2022	10.3386/w29993	Demand Analysis under Latent Choice Constraints		report
+91	10.2307/j.ctv16758p6.13	2014	10.2307/j.ctv16758p6.13	NOTES	Pro-Life, Pro-Choice	book-chapter
+92	10.5860/choice.27-5446	1990	10.5860/choice.27-5446	Shared housing for the elderly	Choice Reviews Online	journal-article
+93	10.5860/choice.47-3240	2010	10.5860/choice.47-3240	Shared obliviousness in family systems	Choice Reviews Online	journal-article
+94	10.1093/acprof:oso/9780198723448.003.0037	2016	10.1093/acprof:oso/9780198723448.003.0037	Shared decision making and motivational interviewing	Shared Decision Making in Health Care	book-chapter
+95	10.1093/acprof:oso/9780198723448.003.0036	2016	10.1093/acprof:oso/9780198723448.003.0036	Shared decision making, health literacy, and patient empowerment	Shared Decision Making in Health Care	book-chapter
+96	10.2139/ssrn.4740818	2024	10.2139/ssrn.4740818	An Alternative Method for Pricing Shared Rides in an On-Demand Application		posted-content
+97	10.31234/osf.io/f6vrx	2020	10.31234/osf.io/f6vrx	Choice in shared resource problems: a social motives selection model		posted-content
+98	10.2139/ssrn.4646397	2023	10.2139/ssrn.4646397	Graph Neural Network-Based Tourism Demand Forecasting		posted-content
+99	10.3390/app12031161	2022	10.3390/app12031161	Short-Term Prediction of Bike-Sharing Demand Using Multi-Source Data: A Spatial-Temporal Graph Attentional LSTM Approach	Applied Sciences	journal-article
+100	10.1002/jgt.22874	2023	10.1002/jgt.22874	The strong fractional choice number of 3‐choice‐critical graphs	Journal of Graph Theory	journal-article

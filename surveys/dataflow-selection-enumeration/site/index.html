@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Exhaustive Enumeration of Selection Observations</title>
+
+    <meta
+      name="description"
+      content="A survey and formal synthesis of exhaustive selection-observation enumeration in finite pure dataflow graphs."
+    >
+    <meta
+      name="keywords"
+      content="symbolic execution, dataflow graphs, projected model enumeration, demand semantics, term graphs"
+    >
+    <meta name="author" content="Bili Dong">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#f3f0e8">
+    <link
+      rel="canonical"
+      href="https://qobilidop.github.io/dataflow-selection-enumeration/"
+    >
+
+    <meta property="og:type" content="article">
+    <meta
+      property="og:title"
+      content="Exhaustive Enumeration of Selection Observations in Pure Dataflow Graphs"
+    >
+    <meta
+      property="og:description"
+      content="A survey and formal synthesis for finite pure dataflow graphs."
+    >
+    <meta
+      property="og:url"
+      content="https://qobilidop.github.io/dataflow-selection-enumeration/"
+    >
+    <meta name="twitter:card" content="summary">
+    <meta
+      name="twitter:title"
+      content="Exhaustive Enumeration of Selection Observations"
+    >
+    <meta
+      name="twitter:description"
+      content="A survey and formal synthesis for finite pure dataflow graphs."
+    >
+
+    <meta
+      name="citation_title"
+      content="Exhaustive Enumeration of Selection Observations in Pure Dataflow Graphs"
+    >
+    <meta name="citation_author" content="Bili Dong">
+    <meta name="citation_publication_date" content="2026/08/04">
+    <meta
+      name="citation_pdf_url"
+      content="https://qobilidop.github.io/dataflow-selection-enumeration/manuscript.pdf"
+    >
+
+    <style>
+      :root {
+        color-scheme: light;
+        --paper: #f3f0e8;
+        --ink: #17221e;
+        --text: #3d4944;
+        --muted: #68736e;
+        --accent: #17624f;
+        --accent-dark: #0f493b;
+        --line: rgba(23, 34, 30, 0.17);
+        --serif: "Iowan Old Style", "Palatino Linotype", Palatino,
+          "Book Antiqua", Georgia, serif;
+        --sans: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        min-width: 320px;
+        background: var(--paper);
+      }
+
+      body {
+        min-width: 320px;
+        min-height: 100vh;
+        margin: 0;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at 92% 95%, rgba(23, 98, 79, 0.09), transparent 30rem),
+          var(--paper);
+        font-family: var(--sans);
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      a:focus-visible {
+        border-radius: 0.2rem;
+        outline: 3px solid rgba(23, 98, 79, 0.32);
+        outline-offset: 4px;
+      }
+
+      .page {
+        display: flex;
+        flex-direction: column;
+        width: calc(100% - 3rem);
+        max-width: 72rem;
+        min-height: 100vh;
+        margin: 0 auto;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        gap: 1.5rem;
+        padding: 1.8rem 0;
+        border-bottom: 1px solid var(--line);
+      }
+
+      header p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        line-height: 1.4;
+        text-transform: uppercase;
+      }
+
+      header .kind {
+        color: var(--accent);
+      }
+
+      main {
+        display: grid;
+        flex: 1;
+        align-content: center;
+        grid-template-columns: minmax(0, 1fr);
+        justify-items: center;
+        width: 100%;
+        max-width: 64rem;
+        min-width: 0;
+        margin: 0 auto;
+        padding: clamp(3rem, 6vh, 5rem) 0;
+        text-align: center;
+      }
+
+      h1 {
+        width: 100%;
+        max-width: 18ch;
+        margin: 0;
+        font-family: var(--serif);
+        font-size: clamp(3.5rem, 7.4vw, 6.25rem);
+        font-weight: 500;
+        letter-spacing: -0.045em;
+        line-height: 0.97;
+        text-wrap: balance;
+      }
+
+      .summary {
+        width: 100%;
+        max-width: 46rem;
+        margin: clamp(2.2rem, 5vw, 3.25rem) auto 0;
+        color: var(--text);
+        font-family: var(--serif);
+        font-size: clamp(1.15rem, 2vw, 1.45rem);
+        line-height: 1.6;
+      }
+
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 100%;
+        gap: 0.75rem;
+        margin-top: 2.4rem;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 3.2rem;
+        padding: 0.75rem 1.15rem;
+        border: 1px solid var(--line);
+        border-radius: 0.35rem;
+        background: rgba(255, 255, 255, 0.32);
+        font-size: 0.9rem;
+        font-weight: 700;
+        line-height: 1;
+        text-decoration: none;
+        transition: background-color 150ms ease, border-color 150ms ease,
+          transform 150ms ease;
+      }
+
+      .button:hover {
+        border-color: rgba(23, 34, 30, 0.35);
+        background: rgba(255, 255, 255, 0.7);
+        transform: translateY(-1px);
+      }
+
+      .button.primary {
+        border-color: var(--accent);
+        background: var(--accent);
+        color: #fff;
+      }
+
+      .button.primary:hover {
+        border-color: var(--accent-dark);
+        background: var(--accent-dark);
+      }
+
+      .button span {
+        margin-left: 0.7rem;
+        font-size: 1.08em;
+        font-weight: 500;
+      }
+
+      .record {
+        width: 100%;
+        max-width: 46rem;
+        margin: 2.2rem auto 0;
+        padding-top: 1.4rem;
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+        font-size: 0.88rem;
+      }
+
+      .record a {
+        color: var(--accent-dark);
+        font-weight: 700;
+        text-underline-offset: 0.25em;
+      }
+
+      footer {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        margin-top: auto;
+        padding: 1.5rem 0 2rem;
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+        font-size: 0.75rem;
+        text-align: center;
+      }
+
+      footer p {
+        margin: 0;
+      }
+
+      footer a {
+        text-underline-offset: 0.2em;
+      }
+
+      @media (max-width: 42rem) {
+        .page {
+          width: calc(100% - 2rem);
+        }
+
+        header {
+          display: grid;
+          justify-items: center;
+          gap: 0.35rem;
+          padding: 1.35rem 0;
+          text-align: center;
+        }
+
+        main {
+          padding: 3.5rem 0 4rem;
+        }
+
+        h1 {
+          max-width: 100%;
+          font-size: clamp(2.45rem, 11.5vw, 3.25rem);
+          letter-spacing: -0.035em;
+          overflow-wrap: break-word;
+        }
+
+        .actions {
+          display: grid;
+        }
+
+        .button {
+          width: 100%;
+        }
+
+        footer {
+          display: grid;
+          justify-items: center;
+          gap: 0.35rem;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .button {
+          transition: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <p class="kind">Survey &amp; formal synthesis</p>
+        <p>Draft · 5 August 2026</p>
+      </header>
+
+      <main>
+        <h1>Exhaustive Enumeration of Selection Observations</h1>
+        <p class="summary">
+          A theoretical study of how to enumerate every distinct selection
+          observation induced by a requested result in a finite, pure dataflow
+          graph. It connects demand semantics, projected model enumeration,
+          decision structures, and exact observation fibers in a common formal
+          model.
+        </p>
+
+        <nav class="actions" aria-label="Paper links">
+          <a class="button primary" href="manuscript.pdf">
+            Read the paper <span aria-hidden="true">→</span>
+          </a>
+          <a
+            class="button"
+            href="https://github.com/qobilidop/dataflow-selection-enumeration"
+          >
+            View on GitHub <span aria-hidden="true">↗</span>
+          </a>
+        </nav>
+
+        <p class="record">
+          The source notes, cross-paper syntheses, claim ledger, and durable
+          decisions are available in the
+          <a
+            href="https://github.com/qobilidop/dataflow-selection-enumeration/tree/main/research"
+          >research record</a>.
+        </p>
+      </main>
+
+      <footer>
+        <p>
+          <a
+            href="https://github.com/qobilidop/dataflow-selection-enumeration/blob/main/CITATION.cff"
+          >Citation</a>
+          ·
+          <a
+            href="https://github.com/qobilidop/dataflow-selection-enumeration/blob/main/LICENSE"
+          >Rights status</a>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

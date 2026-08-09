@@ -1,0 +1,51 @@
+rank	openalex_id	year	doi	title	venue	type
+1	W3025883815	2020	https://doi.org/10.1038/s41596-020-0317-5	Reproducible molecular networking of untargeted mass spectrometry data using GNPS	Nature Protocols	article
+2	W2275387952	2016		Website Fingerprinting: Attacks and Defenses	UWSpace (University of Waterloo)	dissertation
+3	W2901992705	2018	https://doi.org/10.1093/nar/gky1140	KnotProt 2.0: a database of proteins with knots and other entangled structures	Nucleic Acids Research	article
+4	W2026090185	2007	https://doi.org/10.1002/jssc.200700261	Extraction, separation, and detection methods for phenolic acids and flavonoids	Journal of Separation Science	article
+5	W2068276297	2008	https://doi.org/10.1116/1.2890972	Nanoimprint lithography: An old story in modern times? A review	Journal of Vacuum Science & Technology B Microelectronics and Nanometer Structures Processing Measurement and Phenomena	article
+6	W4366590727	2023	https://doi.org/10.3390/s23084117	A Critical Cybersecurity Analysis and Future Research Directions for the Internet of Things: A Comprehensive Review	Sensors	article
+7	W4400381946	2024	https://doi.org/10.56553/popets-2024-0112	Raising the Bar: Improved Fingerprinting Attacks and Defenses for Video Streaming Traffic	Proceedings on Privacy Enhancing Technologies	article
+8	W2018588595	2009	https://doi.org/10.4312/dp.36.2	The Impact of Rapid Climate Change on Prehistoric Societies during the Holocene in the Eastern Mediterranean	Documenta Praehistorica	article
+9	W3132826558	2014	https://doi.org/10.1007/978-1-4842-0076-6	Pro Git	Apress eBooks	book
+10	W1852445038	2013	https://doi.org/10.24908/ss.v12i1.4718	‘My fingerprint on Osama’s cup.’ On objectivity and the role of the fictive regarding the acceptance of a biometric technology	Surveillance & Society	article
+11	W4229499968	2017	https://doi.org/10.1515/9789048529087	Fanfiction and the Author	Amsterdam University Press eBooks	book
+12	W3089115757	2021	https://doi.org/10.1109/comst.2021.3093615	De-Anonymisation Attacks on Tor: A Survey	IEEE Communications Surveys & Tutorials	article
+13	W2903165924	2023	https://doi.org/10.5287/bodleian:nokoozeep	Journalism, media and technology trends and predictions 2018	Oxford University Research Archive (ORA) (University of Oxford)	report
+14	W3124842799	2021	https://doi.org/10.1038/s41596-020-00455-4	Cognitive analysis of metabolomics data for systems biology	Nature Protocols	article
+15	W2583422618	2017	https://doi.org/10.1107/s2059798316016570	An editor for the generation and customization of geometry restraints	Acta Crystallographica Section D Structural Biology	article
+16	W1978122897	2005	https://doi.org/10.1007/0-306-47548-0_4	Driving Forces for M-Commerce Success	Kluwer Academic Publishers eBooks	book-chapter
+17	W578214175	1994	https://doi.org/10.5860/choice.32-1541	Applications of artificial intelligence in chemistry	Choice Reviews Online	book-review
+18	W2732894000	2007	https://doi.org/10.6028/nist.sp.800-101	Guidelines on cell phone forensics		report
+19	W4380269727	2023	https://doi.org/10.34172/ijhpm.2023.7292	Corporate Political Activity: Taxonomies and Model of Corporate Influence on Public Policy	International Journal of Health Policy and Management	article
+20	W4213154881	2015	https://doi.org/10.1007/978-1-4302-6584-9	A Practical Guide to TPM 2.0	Apress eBooks	book
+21	W2080401675	2014	https://doi.org/10.1145/2642918.2647397	Gaze-touch		conference-paper
+22	W4281394661	2022	https://doi.org/10.1007/s40979-022-00104-1	Using digital forensics in higher education to detect academic misconduct	International Journal for Educational Integrity	article
+23	W4390673254	2024	https://doi.org/10.22323/1.439.0009	TASI Lectures on the Particle Physics and Astrophysics of Dark Matter		conference-paper
+24	W1969623908	2014	https://doi.org/10.1371/journal.pcbi.1003559	Chemical, Target, and Bioactive Properties of Allosteric Modulation	PLoS Computational Biology	article
+25	W3211680672	2021	https://doi.org/10.1016/j.carbpol.2021.118885	Liquid-state NMR spectroscopy for complex carbohydrate structural analysis: A hitchhiker's guide	Carbohydrate Polymers	article
+26	W2582723196	2018	https://doi.org/10.12688/f1000research.10531.5	Blockchain protocols in clinical trials: Transparency and traceability of consent	F1000Research	article
+27	W3005904783	2019	https://doi.org/10.3389/fgene.2019.01232	Conversations Surrounding the Use of DNA Tests in the Family Reunification of Migrants Separated at the United States-Mexico Border in 2018	Frontiers in Genetics	article
+28	W2973409925	2019	https://doi.org/10.3390/metabo9100200	The metaRbolomics Toolbox in Bioconductor and beyond	Metabolites	article
+29	W2128170203	2017	https://doi.org/10.48550/arxiv.1708.02357	Towards A Novel Unified Framework for Developing Formal, Network and Validated Agent-Based Simulation Models of Complex Adaptive Systems	arXiv (Cornell University)	preprint
+30	W4210637885	2022	https://doi.org/10.1017/s0143814x21000210	Never let a serious crisis go to waste: the introduction of supplemental carbon taxes in Europe	Journal of Public Policy	article
+31	W3181067988	2021	https://doi.org/10.9734/ajrcos/2021/v10i330242	SQL Injection Attacks Prevention System Technology: Review	Asian Journal of Research in Computer Science	article
+32	W2056744254	2007	https://doi.org/10.7282/t3xs5vsz	Ultrasonic nondestructive evaluation of armor ceramics	Rutgers University Community Repository (Rutgers University)	dissertation
+33	W4297858853	2022	https://doi.org/10.1017/s1471068426100453	A Monadic Implementation of Functional Logic Programs	Theory and Practice of Logic Programming	article
+34	W1492509325	2014		Autonomous, Collaborative, Unmanned Aerial Vehicles for Search and Rescue	Durham e-Theses (Durham University)	dissertation
+35	W783257918	2018	https://doi.org/10.1184/r1/6470123	Human-Computer Interaction and Collective Intelligence	KiltHub Repository	article
+36	W4388960329	2023	https://doi.org/10.1145/3605763.3625243	Too Close for Comfort? Measuring Success of Sampled-Data Leakage Attacks Against Encrypted Search		conference-paper
+37	W2896773123	2017	https://doi.org/10.1515/9789048529087	Fanfiction and the Author: How Fanfic Changes Popular Cultural Texts	BiblioBoard Library Catalog (Open Research Library)	book
+38	W436893263	2009		Design and Evaluation of a User-Centric Information System : Enhancing Student Life with Mobile Computing	BIBSYS Brage (BIBSYS (Norway))	dissertation
+39	W4200134327	2021	https://doi.org/10.1007/978-3-030-81210-2	Migration and Pandemics	IMISCOE research series	book
+40	W4401073914	2024	https://doi.org/10.3390/insects15080572	Multitrophic and Multilevel Interactions Mediated by Volatile Organic Compounds	Insects	article
+41	W1536281849	2008	https://doi.org/10.5038/cutr-nctr-rr-2006-06	Travel Assistant Device (TAD) to Aid Transit Riders with Special Needs		report
+42	W2127001232	2010	https://doi.org/10.2139/ssrn.1572182	Kiva.org: Crowd-Sourced Microfinance and Cooperation in Group Lending	SSRN Electronic Journal	preprint
+43	W2911911212	2014	https://doi.org/10.32614/rj-2014-015	Archiving Reproducible Research with R and Dataverse	The R Journal	article
+44	W4401444746	2024	https://doi.org/10.32604/cmc.2024.048893	AI-Driven Learning Management Systems: Modern Developments, Challenges and Future Trends during the Age of ChatGPT	Computers, materials & continua/Computers, materials & continua (Print)	article
+45	W4256534172	2017	https://doi.org/10.12688/f1000research.10531.4	Blockchain protocols in clinical trials: Transparency and traceability of consent	F1000Research	article
+46	W4383346212	2023	https://doi.org/10.3390/su151310612	Email Security Issues, Tools, and Techniques Used in Investigation	Sustainability	article
+47	W4402198072	2024	https://doi.org/10.3390/genes15091160	Cell-Free DNA Hydroxymethylation in Cancer: Current and Emerging Detection Methods and Clinical Applications	Genes	article
+48	W4234983291	2017	https://doi.org/10.12688/f1000research.10531.3	Blockchain protocols in clinical trials: Transparency and traceability of consent	F1000Research	article
+49	W4403345800	2024	https://doi.org/10.48550/arxiv.2410.07095	MLE-bench: Evaluating Machine Learning Agents on Machine Learning Engineering	arXiv (Cornell University)	preprint
+50	W4387135732	2023	https://doi.org/10.1002/9781394177165.ch4	Revolution of the Metaverse and Blockchain Technology		other

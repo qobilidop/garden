@@ -1,0 +1,101 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1109/acc.2009.5160266	2009	10.1109/acc.2009.5160266	Minimum initial marking estimation in labeled Petri nets	2009 American Control Conference	proceedings-article
+2	10.1109/codit.2019.8820467	2019	10.1109/codit.2019.8820467	Towards a Minimum Initial Marking Estimation Procedure for P-Time Labelled Petri net Systems	2019 6th International Conference on Control, Decision and Information Technologies (CoDIT)	proceedings-article
+3	10.1109/access.2019.2894352	2019	10.1109/access.2019.2894352	Minimum Initial Marking Estimation in Labeled Petri Nets With Unobservable Transitions	IEEE Access	journal-article
+4	10.1002/tee.22276	2016	10.1002/tee.22276	An algorithm for the minimum initial marking problem of a structurally live Petri net with inhibitor arcs	IEEJ Transactions on Electrical and Electronic Engineering	journal-article
+5	10.1109/icsmc.1997.625757	None	10.1109/icsmc.1997.625757	A heuristic algorithm for the minimum initial marking problem of Petri nets	1997 IEEE International Conference on Systems, Man, and Cybernetics. Computational Cybernetics and Simulation	proceedings-article
+6	10.1109/tac.2012.2203050	2013	10.1109/tac.2012.2203050	Minimum Initial Marking Estimation in Labeled Petri Nets	IEEE Transactions on Automatic Control	journal-article
+7	10.1109/access.2020.2967342	2020	10.1109/access.2020.2967342	Genetic-Based Approach for Minimum Initial Marking Estimation in Labeled Petri Nets	IEEE Access	journal-article
+8	10.1109/skg49510.2019.00021	2019	10.1109/skg49510.2019.00021	GRASP-Based Approach for Minimum Initial Marking Estimation in Labeled Petri Nets	2019 15th International Conference on Semantics, Knowledge and Grids (SKG)	proceedings-article
+9	10.1109/tac.2024.3510521	2025	10.1109/tac.2024.3510521	Minimum Initial Marking Estimation in Labeled Petri Nets Using Minimum Token Number Prediction	IEEE Transactions on Automatic Control	journal-article
+10	10.1007/11538356_12	2005	10.1007/11538356_12	Studies on the Minimum Initial Marking of a Class of Hybrid Timed Petri Nets	Lecture Notes in Computer Science	book-chapter
+11	10.1109/ic_aset49463.2020.9318298	2020	10.1109/ic_aset49463.2020.9318298	Minimum Initial Marking Estimation in Labeled Petri Nets through Genetic Algorithm and Tabu Search	2020 4th International Conference on Advanced Systems and Emergent Technologies (IC_ASET)	proceedings-article
+12	10.1109/iscas.1992.230420	None	10.1109/iscas.1992.230420	An equivalence net-condition between place-liveness and transition-liveness and its initial-marking-based necessary and sufficient liveness condition of Petri nets	[Proceedings] 1992 IEEE International Symposium on Circuits and Systems	proceedings-article
+13	10.3233/faia190063	2019	10.3233/faia190063	Minimum Initial Marking Estimation in Labeled Petri Nets Using Simulated Annealing	Frontiers in Artificial Intelligence and Applications	book-chapter
+14	10.1080/01969722.2020.1770505	2020	10.1080/01969722.2020.1770505	Minimum Initial Marking Estimation of Labeled Petri Nets Based on GRASP Inspired Method (GMIM)	Cybernetics and Systems	journal-article
+15	10.1108/ec-07-2024-0624	2025	10.1108/ec-07-2024-0624	Engineering efficiency unleashed: minimum initial marking estimation in labeled Petri nets through a cutting-edge hybrid evolutionary heuristic	Engineering Computations	journal-article
+16	10.2139/ssrn.5009694	2024	10.2139/ssrn.5009694	Petri Net Identification of Automated Discrete Event Systems by Variation Character of Observable Marking Vectors		posted-content
+17	10.1587/transfun.e96.a.540	2013	10.1587/transfun.e96.a.540	Two Heuristic Algorithms for the Minimum Initial Marking Problem of Timed Petri Nets	IEICE Transactions on Fundamentals of Electronics, Communications and Computer Sciences	journal-article
+18	10.1587/transfun.e92.a.2732	2009	10.1587/transfun.e92.a.2732	Two Enhanced Heuristic Algorithms for the Minimum Initial Marking Problem of Petri Nets	IEICE Transactions on Fundamentals of Electronics, Communications and Computer Sciences	journal-article
+19	10.1109/smc.2013.401	2013	10.1109/smc.2013.401	Marking Observer of Labeled Petri Nets with Uncertainty in the Initial Marking	2013 IEEE International Conference on Systems, Man, and Cybernetics	proceedings-article
+20	10.1109/icsmc.2000.886497	None	10.1109/icsmc.2000.886497	A new heuristic method for solving the minimum initial marking problem of Petri nets	SMC 2000 Conference Proceedings. 2000 IEEE International Conference on Systems, Man and Cybernetics. 'Cybernetics Evolving to Systems, Humans, Organizations, and their Complex Interactions' (Cat. No.00CH37166)	proceedings-article
+21	10.1002/tee.70044	2025	10.1002/tee.70044	Minimum Initial Marking Estimation in Labeled Petri Nets for Required Resource Minimization of Automated Manufacturing Systems	IEEJ Transactions on Electrical and Electronic Engineering	journal-article
+22	10.1109/tsmc.2024.3357742	2024	10.1109/tsmc.2024.3357742	Minimum Initial Marking Estimation in Labeled Petri Nets With Unobservable Transitions Based on Minimal Explanations	IEEE Transactions on Systems, Man, and Cybernetics: Systems	journal-article
+23	10.12988/jite.2016.6831	2016	10.12988/jite.2016.6831	Modeling of adaptive traffic lights using basic Petri net marking	Journal of Innovative Technology and Education	journal-article
+24	10.1109/cdc.2014.7040445	2014	10.1109/cdc.2014.7040445	Initial marking estimation in labeled Petri nets in a probabilistic setting	53rd IEEE Conference on Decision and Control	proceedings-article
+25	10.1109/icsmc.2002.1167945	None	10.1109/icsmc.2002.1167945	Improving the calculus of the marking graph of petri net with BDD like structure	IEEE International Conference on Systems, Man and Cybernetics	proceedings-article
+26	10.5772/5321	2008	10.5772/5321	Timed Hierarchical Object-Oriented Petri Net	Petri Net, Theory and Applications	book-chapter
+27	10.1109/iscas.1989.100356	None	10.1109/iscas.1989.100356	Legal firing sequences and minimum initial markings for Petri nets	IEEE International Symposium on Circuits and Systems	proceedings-article
+28	10.7551/mitpress/8811.003.0010	2011	10.7551/mitpress/8811.003.0010	Analyzing Petri Net Models	Modeling Business Processes	book-chapter
+29	10.1109/cdc40024.2019.9030221	2019	10.1109/cdc40024.2019.9030221	Critical Observability of Petri Nets with Unknown Initial Marking	2019 IEEE 58th Conference on Decision and Control (CDC)	proceedings-article
+30	10.1109/icee-b.2017.8191971	2017	10.1109/icee-b.2017.8191971	Fault detection in timed Petri net partially observed	2017 5th International Conference on Electrical Engineering - Boumerdes (ICEE-B)	proceedings-article
+31	10.1007/springerreference_21281	None	10.1007/springerreference_21281	Petri net	SpringerReference	reference-entry
+32	10.1016/j.ins.2019.07.008	2019	10.1016/j.ins.2019.07.008	Optimal Petri net supervisor synthesis for forbidden state problems using marking mask	Information Sciences	journal-article
+33	10.1109/icsess.2014.6933565	2014	10.1109/icsess.2014.6933565	PCTL* stochastic model checking label-extended probabilistic Petri net system model	2014 IEEE 5th International Conference on Software Engineering and Service Science	proceedings-article
+34	10.1007/3-540-26821-9_7	None	10.1007/3-540-26821-9_7	Hybrid Petri Nets with Speeds Depending on the C-Marking	Discrete, Continuous, and Hybrid Petri Nets	book-chapter
+35	10.5120/13013-0316	2013	10.5120/13013-0316	Existence and Uniqueness of a Minimum Crisp Boolean Petri Net	International Journal of Computer Applications	journal-article
+36	10.23919/ecc.1999.7099435	1999	10.23919/ecc.1999.7099435	An iterative linear relaxation and tabu search approach to minimum initial marking problems of timed marked graphs	1999 European Control Conference (ECC)	proceedings-article
+37	10.5772/10294	2010	10.5772/10294	Petri Net as a Manufacturing System Scheduling Tool	Advances in Petri Net Theory and Applications	book-chapter
+38	10.23919/ccc58697.2023.10240021	2023	10.23919/ccc58697.2023.10240021	Minimum Cut Set Solving Method Based on Petri Net and Improved Binary Decision Diagram	2023 42nd Chinese Control Conference (CCC)	proceedings-article
+39	10.1109/icis.2014.6912160	2014	10.1109/icis.2014.6912160	Game theory semantics for PCTL model checking label-extended probabilistic Petri net	2014 IEEE/ACIS 13th International Conference on Computer and Information Science (ICIS)	proceedings-article
+40	10.1007/978-3-540-40022-6_3	2003	10.1007/978-3-540-40022-6_3	Petri Net Transformations in the ≫Petri Net Baukasten≪	Lecture Notes in Computer Science	book-chapter
+41	10.1002/9781119262114.part1	2016	10.1002/9781119262114.part1	Short Review of Petri Net Modeling	Systems Dependability Assessment	other
+42	10.1007/s10626-026-00450-z	2026	10.1007/s10626-026-00450-z	Marking and firing transition estimation for partially observed petri nets without observable transitions	Discrete Event Dynamic Systems	journal-article
+43	10.1142/9789814324298_0003	2012	10.1142/9789814324298_0003	Petri Net Processes and Extension Operators	Property-Preserving Petri Net Process Algebra in Software Engineering	book-chapter
+44	10.5772/5323	2008	10.5772/5323	Error Recovery in Production Systems: A Petri Net Based Intelligent System Approach	Petri Net, Theory and Applications	book-chapter
+45	10.1541/ieejeiss1987.122.7_1166	2002	10.1541/ieejeiss1987.122.7_1166	A Genetic Algorithm Approach to Minimum Initial Marking Problems of Petri Nets	IEEJ Transactions on Electronics, Information and Systems	journal-article
+46	10.1016/j.automatica.2021.110074	2022	10.1016/j.automatica.2021.110074	Dual perspectives of equilibrium throughput properties of continuous mono-T-semiflow Petri nets: Firing rate and initial marking variations	Automatica	journal-article
+47	10.1109/etfa.2014.7005154	2014	10.1109/etfa.2014.7005154	State feedback control of labeled Petri nets with uncertainty in the initial marking	Proceedings of the 2014 IEEE Emerging Technology and Factory Automation (ETFA)	proceedings-article
+48	10.5772/7499	2010	10.5772/7499	GPenSIM: A New Petri Net Simulator	Petri Nets Applications	book-chapter
+49	10.1016/j.ins.2023.119922	2024	10.1016/j.ins.2023.119922	State estimation in labeled time Petri net systems using observed modified state class graph	Information Sciences	journal-article
+50	10.5772/10297	2010	10.5772/10297	Modeling Multimedia Synchronization Using a Time Petri Net Based Approach	Advances in Petri Net Theory and Applications	book-chapter
+51	10.1142/9789812839763_0007	1999	10.1142/9789812839763_0007	PETRI NET SIMULATION AND TOOLS	Modeling, Simulation, and Control of Flexible Manufacturing Systems	book-chapter
+52	10.4249/scholarpedia.6477	2008	10.4249/scholarpedia.6477	Petri net	Scholarpedia	journal-article
+53	10.1109/iscas.1992.230421	None	10.1109/iscas.1992.230421	The minimum initial submarking problem of Petri nets with application to communication protocol design	[Proceedings] 1992 IEEE International Symposium on Circuits and Systems	proceedings-article
+54	10.5772/5310	2008	10.5772/5310	Petri Net Transformations	Petri Net, Theory and Applications	book-chapter
+55	10.4028/www.scientific.net/amm.668-669.1208	2014	10.4028/www.scientific.net/amm.668-669.1208	A Method of Producing Protocol Minimum Complete Test Cases Based on Petri Net Process	Applied Mechanics and Materials	journal-article
+56	10.3403/30175183	None	10.3403/30175183	Analysis techniques for dependability. Petri net techniques		standard
+57	10.1016/s1474-6670(17)64101-6	1986	10.1016/s1474-6670(17)64101-6	Validation of Petri Net Models by ‘Petri-Net-Machine’	IFAC Proceedings Volumes	journal-article
+58	10.3403/30175183u	None	10.3403/30175183u	Analysis techniques for dependability. Petri net techniques		standard
+59	10.4018/978-1-4666-9594-8.les13	None	10.4018/978-1-4666-9594-8.les13	Petri Net Computing	Petri Nets for Modeling and Computing	book-chapter
+60	10.1016/j.ins.2024.121623	2025	10.1016/j.ins.2024.121623	Configuration of liveness-enforcing initial marking with the minimum resources for resource allocation systems	Information Sciences	journal-article
+61	10.5772/5312	2008	10.5772/5312	Petri Net Based Modelling of Communication in Systems on Chip	Petri Net, Theory and Applications	book-chapter
+62	10.1093/oed/1477097321	2023	10.1093/oed/1477097321	Petri net, n.	Oxford English Dictionary	book-chapter
+63	10.5772/7503	2010	10.5772/7503	Workflow Diagnosis Using Petri Net Charts	Petri Nets Applications	book-chapter
+64	10.7551/mitpress/8811.003.0008	2011	10.7551/mitpress/8811.003.0008	Colored Petri Nets	Modeling Business Processes	book-chapter
+65	10.1109/tac.2016.2574120	2017	10.1109/tac.2016.2574120	Basis Marking Representation of Petri Net Reachability Spaces and Its Application to the Reachability Problem	IEEE Transactions on Automatic Control	journal-article
+66	10.7551/mitpress/8811.003.0009	2011	10.7551/mitpress/8811.003.0009	Hierarchical Petri Nets	Modeling Business Processes	book-chapter
+67	10.1109/poweri.2006.1632569	2006	10.1109/poweri.2006.1632569	Fault diagnosis of power system using neural Petri net and fuzzy neural Petri net	2006 IEEE Power India Conference	proceedings-article
+68	10.1109/icnsc.2010.5461506	2010	10.1109/icnsc.2010.5461506	Fault-tolerant controller design using Petri nets with minimum initial state specifications	2010 International Conference on Networking, Sensing and Control (ICNSC)	proceedings-article
+69	10.1016/j.automatica.2023.110911	2023	10.1016/j.automatica.2023.110911	Assessment of initial-state-opacity in live and bounded labeled Petri net systems via optimization techniques	Automatica	journal-article
+70	10.1007/3-540-50580-6_31	1988	10.1007/3-540-50580-6_31	Infinitary partial Petri net languages and their relationship to other Petri net semantics	Lecture Notes in Computer Science	book-chapter
+71	10.5772/5313	2008	10.5772/5313	An Inter-Working Petri Net Model between SIMPLE and IMPS for XDM Service	Petri Net, Theory and Applications	book-chapter
+72	10.1007/0-387-21552-2_3	2002	10.1007/0-387-21552-2_3	The Marking Process	Stochastic Petri Nets	book-chapter
+73	10.1007/978-1-4615-1537-1_1	2001	10.1007/978-1-4615-1537-1_1	The Petri Net Model	Supervision of Petri Nets	book-chapter
+74	10.1016/j.ins.2025.122618	2026	10.1016/j.ins.2025.122618	Minimum initial state estimation of labeled time Petri nets in the presence of unobservable transitions	Information Sciences	journal-article
+75	10.1201/9781439808856-8	2018	10.1201/9781439808856-8	Colored Petri Net	System Modeling and Control with Resource-Oriented Petri Nets	book-chapter
+76	10.7551/mitpress/8811.003.0006	2011	10.7551/mitpress/8811.003.0006	Application of Petri Nets	Modeling Business Processes	book-chapter
+77	10.1079/cabicompendium.39961	2023	10.1079/cabicompendium.39961	Phaeoacremonium minimum (Petri disease)	CABI Compendium	dataset
+78	10.1007/978-3-642-10669-9_7	2010	10.1007/978-3-642-10669-9_7	Hybrid Petri Nets with Speeds Depending on the C-Marking	Discrete, Continuous, and Hybrid Petri Nets	book-chapter
+79	10.1002/9781119262114.ch6	2016	10.1002/9781119262114.ch6	Petri Net Modeling of the Accidental Process	Systems Dependability Assessment	other
+80	10.1007/978-3-642-35179-2_10	2012	10.1007/978-3-642-35179-2_10	An Initial Coloured Petri Net Model of the Hypertext Transfer Protocol Operating over the Transmission Control Protocol	Lecture Notes in Computer Science	book-chapter
+81	10.5772/5318	2008	10.5772/5318	Model Checking of Time Petri Nets	Petri Net, Theory and Applications	book-chapter
+82	10.1002/9781119262114.part3	2016	10.1002/9781119262114.part3	Stochastic Petri Nets	Systems Dependability Assessment	other
+83	10.7551/mitpress/8811.003.0005	2011	10.7551/mitpress/8811.003.0005	Basic Concepts of Petri Nets	Modeling Business Processes	book-chapter
+84	10.1007/978-3-662-04457-5_4	2001	10.1007/978-3-662-04457-5_4	Petri Net Semantics	Monographs in Theoretical Computer Science An EATCS Series	book-chapter
+85	10.1201/9781439808856-6	2018	10.1201/9781439808856-6	Colored Petri Net ���������������������������������������������������������������������������������������������� 3	System Modeling and Control with Resource-Oriented Petri Nets	book-chapter
+86	10.21437/interspeech.2005-776	2005	10.21437/interspeech.2005-776	Assimilation and deletion phenomena involving word-final /n/ and word-initial /p, t, k/ in modern Greek: a codification of the observed variation intended for use in TTS synthesis	Interspeech 2005	proceedings-article
+87	10.1007/978-3-642-41115-1_2	2013	10.1007/978-3-642-41115-1_2	The Classic Petri Net	Time and Petri Nets	book-chapter
+88	10.3403/30387860	None	10.3403/30387860	Road marking materials. Retroreflecting road studs		standard
+89	10.3403/30184643	None	10.3403/30184643	Road marking materials. Retroreflecting road studs		standard
+90	10.3403/01250453u	None	10.3403/01250453u	Road marking materials. Retroreflecting road studs		standard
+91	10.3403/01250453	None	10.3403/01250453	Road marking materials. Retroreflecting road studs		standard
+92	10.5772/5325	2008	10.5772/5325	Diagnosis of Discrete Event Systems with Petri Nets	Petri Net, Theory and Applications	book-chapter
+93	10.5772/56	2008	10.5772/56	Petri Net, Theory and Applications		edited-book
+94	10.1007/978-3-662-60651-3_2	2019	10.1007/978-3-662-60651-3_2	How Petri Net Theory Serves Petri Net Model Checking: A Survey	Lecture Notes in Computer Science	book-chapter
+95	10.5772/5319	2008	10.5772/5319	A Linear Logic Based Approach to Timed Petri Nets	Petri Net, Theory and Applications	book-chapter
+96	10.1002/0471028959.sof240	2002	10.1002/0471028959.sof240	Petri Net	Encyclopedia of Software Engineering	other
+97	10.5772/5320	2008	10.5772/5320	From Time Petri Nets to Timed Automata	Petri Net, Theory and Applications	book-chapter
+98	10.1201/9781439808856-10	2018	10.1201/9781439808856-10	Resource-Oriented Petri Net Modeling	System Modeling and Control with Resource-Oriented Petri Nets	book-chapter
+99	10.1177/09596518251334860	2025	10.1177/09596518251334860	A simulated annealing method for minimum initial marking estimation in labeled Petri nets: Applications and comparative studies	Proceedings of the Institution of Mechanical Engineers, Part I: Journal of Systems and Control Engineering	journal-article
+100	10.1201/9781439808856-9	2018	10.1201/9781439808856-9	Process-Oriented Petri Net Modeling	System Modeling and Control with Resource-Oriented Petri Nets	book-chapter

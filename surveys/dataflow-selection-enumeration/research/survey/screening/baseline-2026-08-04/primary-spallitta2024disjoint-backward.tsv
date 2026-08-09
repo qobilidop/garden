@@ -1,0 +1,36 @@
+rank	source_id	year	doi	title	venue	type
+1	citation-1	2000		Counting Models Using Connected Components	AAAI/IAAI 2000	proceedings-article
+2	citation-2	1997		Using CSP Look-Back Techniques to Solve Real-World SAT Instances	AAAI/IAAI 1997	proceedings-article
+3	citation-3	2015		Approximate Counting in SMT and Value Estimation for Probabilistic Programs	TACAS 2015	proceedings-article
+4	10.1007/978-3-642-36742-7_7	2013	10.1007/978-3-642-36742-7_7	The MathSAT5 SMT Solver	TACAS 2013	proceedings-article
+5	10.1145/368273.368557	1962	10.1145/368273.368557	A Machine Program for Theorem-Proving	Communications of the ACM	article
+6	10.1109/FMCAD.2013.6679390	2013	10.1109/FMCAD.2013.6679390	Computing Prime Implicants	FMCAD 2013	proceedings-article
+7	10.1007/978-3-319-47175-4_3	2016	10.1007/978-3-319-47175-4_3	A Comparative Study of SAT-Based Itemsets Mining	Research and Development in Intelligent Systems XXXIII	book-chapter
+8	10.4230/LIPIcs.SAT.2023.9	2023	10.4230/LIPIcs.SAT.2023.9	AllSAT for Combinational Circuits	SAT 2023	proceedings-article
+9	10.1007/978-3-540-30494-4_20	2004	10.1007/978-3-540-30494-4_20	Memory Efficient All-Solutions SAT Solver and Its Application for Reachability Analysis	FMCAD 2004	proceedings-article
+10	citation-10	2000		SATLIB: An Online Resource for Research on SAT	SAT 2000	proceedings-article
+11	10.1007/11527695_13	2005	10.1007/11527695_13	Using DPLL for Efficient OBDD Construction	SAT 2004	proceedings-article
+12	10.1007/978-3-540-31980-1_19	2005	10.1007/978-3-540-31980-1_19	Efficient Conflict Analysis for Finding All Satisfying Assignments of a Boolean Circuit	TACAS 2005	proceedings-article
+13	10.1007/978-3-540-24605-3_21	2004	10.1007/978-3-540-24605-3_21	A Case for Efficient Solution Enumeration	SAT 2003	proceedings-article
+14	10.24963/ijcai.2017/93	2017	10.24963/ijcai.2017/93	An Improved Decision-DNNF Compiler	IJCAI 2017	proceedings-article
+15	10.1007/978-3-540-45069-6_15	2003	10.1007/978-3-540-45069-6_15	A Symbolic Approach to Predicate Abstraction	CAV 2003	proceedings-article
+16	10.1109/DATE.2004.1268860	2004	10.1109/DATE.2004.1268860	A Novel SAT All-Solutions Solver for Efficient Preimage Computation	DATE 2004	proceedings-article
+17	10.24963/ijcai.2022/259	2022	10.24963/ijcai.2022/259	AllSATCC: Boosting AllSAT Solving with Efficient Component Analysis	IJCAI 2022	proceedings-article
+18	10.1109/12.769433	1999	10.1109/12.769433	GRASP: A Search Algorithm for Propositional Satisfiability	IEEE Transactions on Computers	article
+19	10.1007/3-540-45657-0_19	2002	10.1007/3-540-45657-0_19	Applying SAT Methods in Unbounded Symbolic Model Checking	CAV 2002	proceedings-article
+20	10.1007/978-3-030-24258-9_18	2019	10.1007/978-3-030-24258-9_18	Backing Backtracking	SAT 2019	proceedings-article
+21	10.29007/vgg4	2019	10.29007/vgg4	Combining Conflict-Driven Clause Learning and Chronological Backtracking for Propositional Model Counting	GCAI 2019	proceedings-article
+22	10.1007/978-3-030-51825-7_5	2020	10.1007/978-3-030-51825-7_5	Four Flavors of Entailment	SAT 2020	proceedings-article
+23	10.48550/arXiv.2110.12924	2021	10.48550/arXiv.2110.12924	On Enumerating Short Projected Models	arXiv	preprint
+24	10.1016/j.artint.2019.04.003	2019	10.1016/j.artint.2019.04.003	Advanced SMT Techniques for Weighted Model Integration	Artificial Intelligence	article
+25	citation-25	2005		Good Learning and Implicit Model Enumeration	ICTAI 2005	proceedings-article
+26	citation-26	2005		Good Learning and Implicit Model Enumeration	ICTAI 2005	proceedings-article
+27	10.1145/378239.379017	2001	10.1145/378239.379017	Chaff: Engineering an Efficient SAT Solver	DAC 2001	proceedings-article
+28	10.1007/978-3-319-94144-8_7	2018	10.1007/978-3-319-94144-8_7	Chronological Backtracking	SAT 2018	proceedings-article
+29	10.48550/arXiv.2003.04225	2020	10.48550/arXiv.2003.04225	Are You Satisfied by This Partial Assignment?	arXiv	preprint
+30	citation-30	2019		GANAK: A Scalable Probabilistic Exact Model Counter	IJCAI 2019	proceedings-article
+31	10.1613/jair.193	2000	10.1613/jair.193	Backbone Fragility and the Local Search Cost Peak	Journal of Artificial Intelligence Research	article
+32	citation-32	2022		SMT-Based Weighted Model Integration with Structure Awareness	UAI 2022	proceedings-article
+33	10.1145/2975585	2016	10.1145/2975585	Implementing Efficient All Solutions SAT Solvers	ACM Journal of Experimental Algorithmics	article
+34	10.1109/VLSID.2014.22	2014	10.1109/VLSID.2014.22	All-SAT Using Minimal Blocking Clauses	VLSID 2014	proceedings-article
+35	10.1145/3324884.3416569	2020	10.1145/3324884.3416569	Accelerating All-SAT Computation with Short Blocking Clauses	ASE 2020	proceedings-article

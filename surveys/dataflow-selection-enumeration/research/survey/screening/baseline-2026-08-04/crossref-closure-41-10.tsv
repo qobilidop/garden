@@ -1,0 +1,101 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1017/cbo9780511730344.008	2010	10.1017/cbo9780511730344.008	Linear Inverse Problems	Sparse Image and Signal Processing	book-chapter
+2	10.1109/tip.2026.3662583/mm1	None	10.1109/tip.2026.3662583/mm1	DeepGSR: Deep group-based sparse representation network for solving image inverse problems_supp1-3662583.pdf		component
+3	10.70675/f9a5c7a1zedd2z4c6aza032z9c1687f5063c	None	10.70675/f9a5c7a1zedd2z4c6aza032z9c1687f5063c	Feature selection, sparse coding and normalization for material image Classification		dissertation
+4	10.7551/mitpress/8996.003.0019	2011	10.7551/mitpress/8996.003.0019	Optimization Methods for Sparse Inverse Covariance Selection	Optimization for Machine Learning	book-chapter
+5	10.1017/cbo9781316104514.008	2015	10.1017/cbo9781316104514.008	Linear Inverse Problems	Sparse Image and Signal Processing	book-chapter
+6	10.1109/icig.2013.123	2013	10.1109/icig.2013.123	Multi-focus Image Fusion Based on Sparse Representation with Adaptive Sparse Domain Selection	2013 Seventh International Conference on Image and Graphics	proceedings-article
+7	10.1088/0266-5611/26/9/095001	2010	10.1088/0266-5611/26/9/095001	Nonnegative image reconstruction from sparse Fourier data: a new deconvolution algorithm	Inverse Problems	journal-article
+8	10.21236/ada513259	2010	10.21236/ada513259	Image Modeling and Enhancement via Structured Sparse Model Selection		report
+9	10.1088/1361-6420/ad0c42	2024	10.1088/1361-6420/ad0c42	An image inpainting algorithm using exemplar matching and low-rank sparse prior	Inverse Problems	journal-article
+10	10.1016/j.imavis.2007.12.006	2008	10.1016/j.imavis.2007.12.006	Non-negative sparse coding shrinkage for image denoising using normal inverse Gaussian density model	Image and Vision Computing	journal-article
+11	10.1109/icip.2010.5653853	2010	10.1109/icip.2010.5653853	Image modeling and enhancement via structured sparse model selection	2010 IEEE International Conference on Image Processing	proceedings-article
+12	10.3403/30203208	None	10.3403/30203208	Safety of machinery. Interlocking devices associated with guards. Principles for design and selection		standard
+13	10.1109/tip.2026.3662583	2026	10.1109/tip.2026.3662583	DeepGSR: Deep Group-Based Sparse Representation Network for Solving Image Inverse Problems	IEEE Transactions on Image Processing	journal-article
+14	10.1016/j.csda.2021.107380	2022	10.1016/j.csda.2021.107380	Fourier transform sparse inverse regression estimators for sufficient variable selection	Computational Statistics &amp; Data Analysis	journal-article
+15	10.1016/j.jvcir.2021.103367	2021	10.1016/j.jvcir.2021.103367	Gaze prediction for first-person videos based on inverse non-negative sparse coding with determinant sparse measure	Journal of Visual Communication and Image Representation	journal-article
+16	10.3403/30203208u	None	10.3403/30203208u	Safety of machinery. Interlocking devices associated with guards. Principles for design and selection		standard
+17	10.1080/17415977.2013.840302	2014	10.1080/17415977.2013.840302	Regularized sparse representation for image deconvolution	Inverse Problems in Science and Engineering	journal-article
+18	10.1016/j.spl.2024.110348	2025	10.1016/j.spl.2024.110348	Sparse inverse covariance selection with mass-nonlocal priors	Statistics &amp; Probability Letters	journal-article
+19	10.2139/ssrn.4583898	2023	10.2139/ssrn.4583898	Adaptive Sparse Learning Feature Selection for Scene Image Recognition		posted-content
+20	10.1088/1361-6420/abcd26	2021	10.1088/1361-6420/abcd26	A mathematical model for image saturation with an application to the restoration of solar images via adaptive sparse deconvolution	Inverse Problems	journal-article
+21	10.3403/00799712u	None	10.3403/00799712u	Safety of machinery. Interlocking devices associated with guards. Principles for design and selection		standard
+22	10.3403/30565159	None	10.3403/30565159	Safety of machinery. Interlocking devices associated with guards. Principles for design and selection		standard
+23	10.3403/00799712	None	10.3403/00799712	Safety of machinery. Interlocking devices associated with guards. Principles for design and selection		standard
+24	10.1088/1361-6420/ad7f81	2024	10.1088/1361-6420/ad7f81	AdaTL<sub>1</sub>: an adaptive non-convex sparse solver with applications to CT reconstruction and image denoising	Inverse Problems	journal-article
+25	10.1016/j.imavis.2013.12.013	2014	10.1016/j.imavis.2013.12.013	Sparse feature selection based on graph Laplacian for web image annotation	Image and Vision Computing	journal-article
+26	10.1109/icassp.2017.7952394	2017	10.1109/icassp.2017.7952394	Sparse inverse bilateral filters for image processing	2017 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)	proceedings-article
+27	10.1109/vcip.2011.6116043	2011	10.1109/vcip.2011.6116043	Observation quality guaranteed layout of camera networks via sparse representation	2011 Visual Communications and Image Processing (VCIP)	proceedings-article
+28	10.1049/ipr2.12310	2021	10.1049/ipr2.12310	Moving target inverse synthetic aperture radar image resolution enhancement based on two‐dimensional block sparse signal reconstruction	IET Image Processing	journal-article
+29	10.1049/iet-ipr.2018.5423	2019	10.1049/iet-ipr.2018.5423	Band selection of hyperspectral image by sparse manifold clustering	IET Image Processing	journal-article
+30	10.1016/j.neunet.2026.109394	2027	10.1016/j.neunet.2026.109394	An intelligent sparse approximate inverse selection method based on convolutional neural networks	Neural Networks	journal-article
+31	10.3403/30405144	None	10.3403/30405144	Tracked Changes. Safety of machinery. Interlocking devices associated with guards. Principles for design and selection		standard
+32	10.1109/icip.2011.6116223	2011	10.1109/icip.2011.6116223	Sparse representation based band selection for hyperspectral images	2011 18th IEEE International Conference on Image Processing	proceedings-article
+33	10.1109/icip.1998.727220	None	10.1109/icip.1998.727220	Efficient computation for sequential forward observation selection in image reconstruction	Proceedings 1998 International Conference on Image Processing. ICIP98 (Cat. No.98CB36269)	proceedings-article
+34	10.1109/tip.2025.3620667	2025	10.1109/tip.2025.3620667	Bi-Sparse Unsupervised Feature Selection	IEEE Transactions on Image Processing	journal-article
+35	10.1109/tsp.2014.2303429	2014	10.1109/tsp.2014.2303429	On ${l}_{q}$ Optimization and Sparse Inverse Covariance Selection	IEEE Transactions on Signal Processing	journal-article
+36	10.1109/acpr.2017.49	2017	10.1109/acpr.2017.49	Robust Jointly Sparse Regression for Image Feature Selection	2017 4th IAPR Asian Conference on Pattern Recognition (ACPR)	proceedings-article
+37	10.1049/ipr2.12281	2021	10.1049/ipr2.12281	Low‐rank nonnegative sparse representation and local preservation‐based matrix regression for supervised image feature selection	IET Image Processing	journal-article
+38	10.1109/tip.2015.2427518	2015	10.1109/tip.2015.2427518	Inverse Sparse Tracker With a Locally Weighted Distance Metric	IEEE Transactions on Image Processing	journal-article
+39	10.1117/12.2550535	2020	10.1117/12.2550535	The image-to-physical liver registration sparse data challenge: characterizing inverse biomechanical model resolution	Medical Imaging 2020: Image-Guided Procedures, Robotic Interventions, and Modeling	proceedings-article
+40	10.1049/iet-ipr.2019.1404	2020	10.1049/iet-ipr.2019.1404	Robust graph regularised sparse matrix regression for two‐dimensional supervised feature selection	IET Image Processing	journal-article
+41	10.1109/tip.2013.2255305	2013	10.1109/tip.2013.2255305	Sparse Stochastic Processes and Discretization of Linear Inverse Problems	IEEE Transactions on Image Processing	journal-article
+42	10.1016/j.cviu.2021.103273	2021	10.1016/j.cviu.2021.103273	Margin-based discriminant embedding guided sparse matrix regression for image supervised feature selection	Computer Vision and Image Understanding	journal-article
+43	10.1109/icip.2010.5653387	2010	10.1109/icip.2010.5653387	Sparse constraint nearest neighbour selection in cross-media retrieval	2010 IEEE International Conference on Image Processing	proceedings-article
+44	10.1007/978-3-642-34487-9_14	2012	10.1007/978-3-642-34487-9_14	Group Sparse Inverse Covariance Selection with a Dual Augmented Lagrangian Method	Lecture Notes in Computer Science	book-chapter
+45	10.1109/wacv.2018.00165	2018	10.1109/wacv.2018.00165	Image Segmentation Using Sparse Subset Selection	2018 IEEE Winter Conference on Applications of Computer Vision (WACV)	proceedings-article
+46	10.1109/tip.2019.2927458	2020	10.1109/tip.2019.2927458	Jointly Using Low-Rank and Sparsity Priors for Sparse Inverse Synthetic Aperture Radar Imaging	IEEE Transactions on Image Processing	journal-article
+47	10.5013/ijssst.a.17.42.06	2016	10.5013/ijssst.a.17.42.06	Image Feature Selection Based on Sparse Representation and Feature Entropy	International Journal of Simulation: Systems, Science &amp; Technology	journal-article
+48	10.1109/icra48506.2021.9560813	2021	10.1109/icra48506.2021.9560813	Linear Inverse Problem for Depth Completion with RGB Image and Sparse LIDAR Fusion	2021 IEEE International Conference on Robotics and Automation (ICRA)	proceedings-article
+49	10.1016/j.image.2016.03.009	2016	10.1016/j.image.2016.03.009	Sample selection for visual domain adaptation via sparse coding	Signal Processing: Image Communication	journal-article
+50	10.1093/bioinformatics/bts717	2013	10.1093/bioinformatics/bts717	Ultranet: efficient solver for the sparse inverse covariance selection problem in gene network modeling	Bioinformatics	journal-article
+51	10.70675/3fcb8b61z9ee7z4df7z86bczbe1bb27dfc82	None	10.70675/3fcb8b61z9ee7z4df7z86bczbe1bb27dfc82	Accelerating sparse inverse problems using structured approximations		dissertation
+52	10.1016/j.jag.2014.03.015	2014	10.1016/j.jag.2014.03.015	Sparse dimensionality reduction of hyperspectral image based on semi-supervised local Fisher discriminant analysis	International Journal of Applied Earth Observation and Geoinformation	journal-article
+53	10.1088/0266-5611/28/1/015004	2012	10.1088/0266-5611/28/1/015004	Spatially adapted regularization parameter selection based on the local discrepancy function for Poissonian image deblurring	Inverse Problems	journal-article
+54	10.1109/tip.2019.2959912	2020	10.1109/tip.2019.2959912	Grayscale-Thermal Tracking via Inverse Sparse Representation-Based Collaborative Encoding	IEEE Transactions on Image Processing	journal-article
+55	10.1088/1361-6420/acb0f7	2023	10.1088/1361-6420/acb0f7	Masked unbiased principles for parameter selection in variational image restoration under Poisson noise	Inverse Problems	journal-article
+56	10.1109/wisp.2011.6051703	2011	10.1109/wisp.2011.6051703	Image inpainting using sparse approximation with adaptive window selection	2011 IEEE 7th International Symposium on Intelligent Signal Processing	proceedings-article
+57	10.2316/p.2012.786-024	2012	10.2316/p.2012.786-024	A Training Band Selection Algorithm for Sparse Representation based Hyperspectral Data Compression	Signal and Image Processing	proceedings-article
+58	10.1109/icee.2018.8472489	2018	10.1109/icee.2018.8472489	Single Image Super Resolution via Adaptive Group-Based Sparse Domain Selection	Electrical Engineering (ICEE), Iranian Conference on	proceedings-article
+59	10.1016/j.imavis.2015.06.006	2015	10.1016/j.imavis.2015.06.006	Semi-supervised sparse feature selection based on multi-view Laplacian regularization	Image and Vision Computing	journal-article
+60	10.1049/ipr2.12828	2023	10.1049/ipr2.12828	Latent low‐rank representation sparse regression model with symmetric constraint for unsupervised feature selection	IET Image Processing	journal-article
+61	10.1109/icip46576.2022.9897863	2022	10.1109/icip46576.2022.9897863	SRL-SOA: Self-Representation Learning with Sparse 1D-Operational Autoencoder for Hyperspectral Image Band Selection	2022 IEEE International Conference on Image Processing (ICIP)	proceedings-article
+62	10.1109/icsip52628.2021.9688960	2021	10.1109/icsip52628.2021.9688960	A Curved SAR Sparse Imaging Method Based on Approximate Observation	2021 IEEE 6th International Conference on Signal and Image Processing (ICSIP)	proceedings-article
+63	10.1109/eorsa.2014.6927881	2014	10.1109/eorsa.2014.6927881	Multi-view oblique aerial image sparse matching	2014 Third International Workshop on Earth Observation and Remote Sensing Applications (EORSA)	proceedings-article
+64	10.1088/0266-5611/29/6/065011	2013	10.1088/0266-5611/29/6/065011	Sparse, adaptive Smolyak quadratures for Bayesian inverse problems	Inverse Problems	journal-article
+65	10.1088/0266-5611/28/4/045003	2012	10.1088/0266-5611/28/4/045003	Sparse deterministic approximation of Bayesian inverse problems	Inverse Problems	journal-article
+66	10.1109/icassp.1998.681832	None	10.1109/icassp.1998.681832	Sparse inverse solution methods for signal and image processing applications	Proceedings of the 1998 IEEE International Conference on Acoustics, Speech and Signal Processing, ICASSP '98 (Cat. No.98CH36181)	proceedings-article
+67	10.1109/dcc.2015.29	2015	10.1109/dcc.2015.29	Adaptive Submodular Dictionary Selection for Sparse Representation Modeling with Application to Image Super-Resolution	2015 Data Compression Conference	proceedings-article
+68	10.1515/9783111357270-005	2024	10.1515/9783111357270-005	5 Image reconstructions using sparse dictionary representations and implicit, nonnegative mappings	Inverse Problems on Large Scales	book-chapter
+69	10.1016/j.patcog.2019.04.011	2019	10.1016/j.patcog.2019.04.011	Robust Jointly Sparse Regression with Generalized Orthogonal Learning for Image Feature Selection	Pattern Recognition	journal-article
+70	10.1109/icosp.2014.7015160	2014	10.1109/icosp.2014.7015160	Multi-view Laplacian sparse feature selection for web image annotation	2014 12th International Conference on Signal Processing (ICSP)	proceedings-article
+71	10.1109/icip.2012.6467132	2012	10.1109/icip.2012.6467132	Saliency-based selection of sparse descriptors for action recognition	2012 19th IEEE International Conference on Image Processing	proceedings-article
+72	10.1109/icics.2011.6174293	2011	10.1109/icics.2011.6174293	Image denoising using sparse approximation with adaptive window selection	2011 8th International Conference on Information, Communications &amp; Signal Processing	proceedings-article
+73	10.1049/ipr2.12772	2023	10.1049/ipr2.12772	Non‐negative low‐rank adaptive preserving sparse matrix regression model for supervised image feature selection and classification	IET Image Processing	journal-article
+74	10.1109/tip.2011.2108306	2011	10.1109/tip.2011.2108306	Image Deblurring and Super-Resolution by Adaptive Sparse Domain Selection and Adaptive Regularization	IEEE Transactions on Image Processing	journal-article
+75	10.1109/tmm.2011.2161760	2011	10.1109/tmm.2011.2161760	Missing Image Data Reconstruction Based on Adaptive Inverse Projection via Sparse Representation	IEEE Transactions on Multimedia	journal-article
+76	10.1088/1742-6596/1476/1/012001	2020	10.1088/1742-6596/1476/1/012001	Selection of regularization parameter in sparse inverse problems for DOA estimation	Journal of Physics: Conference Series	journal-article
+77	10.1137/080742531	2010	10.1137/080742531	Adaptive First-Order Methods for General Sparse Inverse Covariance Selection	SIAM Journal on Matrix Analysis and Applications	journal-article
+78	10.1117/12.2188764	2015	10.1117/12.2188764	Joint sparse recovery in inverse scattering	SPIE Proceedings	proceedings-article
+79	10.1016/j.image.2023.117006	2023	10.1016/j.image.2023.117006	Multi-scale deep feature fusion based sparse dictionary selection for video summarization	Signal Processing: Image Communication	journal-article
+80	10.70675/f62305b0z79c5z4b10z91a9z9814de5eca35	None	10.70675/f62305b0z79c5z4b10z91a9z9814de5eca35	Inverse estimation of sparse mechanical excitation sources by Bayesian filtering		dissertation
+81	10.1109/icip.2017.8296588	2017	10.1109/icip.2017.8296588	Robust face recognition based on iterative sparse coding and pixel selection	2017 IEEE International Conference on Image Processing (ICIP)	proceedings-article
+82	10.1109/icip.2009.5414368	2009	10.1109/icip.2009.5414368	Base selection in estimating sparse foreground in video	2009 16th IEEE International Conference on Image Processing (ICIP)	proceedings-article
+83	10.5194/gmd-2016-256-rc2	2017	10.5194/gmd-2016-256-rc2	"Review of Hase et al, ""Atmospheric inverse modeling via sparse reconstruction"""		peer-review
+84	10.1515/9783110226157.201	2010	10.1515/9783110226157.201	Sparse Recovery in Inverse Problems	Theoretical Foundations and Numerical Methods for Sparse Recovery	book-chapter
+85	10.21236/ad0717073	1970	10.21236/ad0717073	Maintaining a Sparse Inverse in the Simplex Method		report
+86	10.1088/0266-5611/20/6/s13	2004	10.1088/0266-5611/20/6/s13	Inverse scattering with sparse Bayesian vector regression	Inverse Problems	journal-article
+87	10.3390/s23031212	2023	10.3390/s23031212	Sparse Depth-Guided Image Enhancement Using Incremental GP with Informative Point Selection	Sensors	journal-article
+88	10.55776/p19496	2007	10.55776/p19496			grant
+89	10.1109/icip.2017.8296559	2017	10.1109/icip.2017.8296559	Regularized selection: A new paradigm for inverse based regularized image reconstruction techniques	2017 IEEE International Conference on Image Processing (ICIP)	proceedings-article
+90	10.1088/0266-5611/33/1/014002	2017	10.1088/0266-5611/33/1/014002	Flexible sparse regularization	Inverse Problems	journal-article
+91	10.1109/tip.2017.2713948	2017	10.1109/tip.2017.2713948	2D Feature Selection by Sparse Matrix Regression	IEEE Transactions on Image Processing	journal-article
+92	10.1109/icip.2017.8296621	2017	10.1109/icip.2017.8296621	ADMM penalty parameter selection with krylov subspace recycling technique for sparse coding	2017 IEEE International Conference on Image Processing (ICIP)	proceedings-article
+93	10.3934/ipi.2021017	2021	10.3934/ipi.2021017	Nonlocal latent low rank sparse representation for single image super resolution via self-similarity learning	Inverse Problems and Imaging	journal-article
+94	10.1088/0266-5611/26/10/105016	2010	10.1088/0266-5611/26/10/105016	Effective solution of nonlinear subsurface flow inverse problems in sparse bases	Inverse Problems	journal-article
+95	10.1016/j.media.2019.02.001	2019	10.1016/j.media.2019.02.001	Frequency-splitting dynamic MRI reconstruction using multi-scale 3D convolutional sparse coding and automatic parameter selection	Medical Image Analysis	journal-article
+96	10.1109/icip.2012.6466943	2012	10.1109/icip.2012.6466943	Salient view selection based on sparse representation	2012 19th IEEE International Conference on Image Processing	proceedings-article
+97	10.1117/12.2687127	2023	10.1117/12.2687127	Image restoration techniques for space-based lightweight optically sparse aperture Earth-observation telescopes in the longwave infrared domain	Image and Signal Processing for Remote Sensing XXIX	proceedings-article
+98	10.1021/acs.jctc.3c00651.s001	None	10.1021/acs.jctc.3c00651.s001	Surrogate Modeling of the Relative Entropy for Inverse Design Using Smolyak Sparse Grids		component
+99	10.70675/27d33ff7z1f90z47b8z99b3z130931488615	None	10.70675/27d33ff7z1f90z47b8z99b3z130931488615	Cortical source imaging : from the laplacian montage to sparse inverse solutions		dissertation
+100	10.1109/tci.2019.2956888	2020	10.1109/tci.2019.2956888	Adaptive Quantile Sparse Image (AQuaSI) Prior for Inverse Imaging Problems	IEEE Transactions on Computational Imaging	journal-article

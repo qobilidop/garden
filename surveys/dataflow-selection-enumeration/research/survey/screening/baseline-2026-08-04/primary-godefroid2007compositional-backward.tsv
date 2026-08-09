@@ -1,0 +1,26 @@
+rank	source_id	year	doi	title	venue	type
+1	https://doi.org/10.1145/1075382.1075387	2005	https://doi.org/10.1145/1075382.1075387	Analysis of Recursive State Machines	ACM Transactions on Programming Languages and Systems	article
+2	https://doi.org/10.1145/288195.288305	1998	https://doi.org/10.1145/288195.288305	Model Checking of Hierarchical State Machines	FSE	conference-paper
+3	https://doi.org/10.5555/998675.999437	2004	https://doi.org/10.5555/998675.999437	Generating Tests from Counterexamples	ICSE	conference-paper
+4	https://doi.org/10.1145/566172.566191	2002	https://doi.org/10.1145/566172.566191	Korat: Automated testing based on Java predicates	ISSTA	conference-paper
+5	citation-5	2000	https://doi.org/10.1002/(SICI)1097-024X(200006)30:7%3C775::AID-SPE309%3E3.0.CO;2-H	A static analyzer for finding dynamic programming errors	Software: Practice and Experience	article
+6	citation-6	2004		Model Checking One Million Lines of C Code	NDSS	conference-paper
+7	https://doi.org/10.1007/11537328_2	2005	https://doi.org/10.1007/11537328_2	Execution Generated Test Cases: How to Make Systems Code Crash Itself	SPIN	conference-paper
+8	https://doi.org/10.1145/1176887.1176925	2006	https://doi.org/10.1145/1176887.1176925	Software Partitioning for Effective Automated Unit Testing	EMSOFT	conference-paper
+9	https://doi.org/10.1145/1062455.1062533	2005	https://doi.org/10.1145/1062455.1062533	Check'n Crash: Combining Static Checking and Testing	ICSE	conference-paper
+10	https://doi.org/10.1145/512529.512538	2002	https://doi.org/10.1145/512529.512538	ESP: Path-Sensitive Program Verification in Polynomial Time	PLDI	conference-paper
+11	citation-11	1999		A Survey on Automatic Test Data Generation	Conference on Computer Science and Engineering	conference-paper
+12	https://doi.org/10.1007/11589976_3	2005	https://doi.org/10.1007/11589976_3	Software Model Checking: Searching for Computations in the Abstract or the Concrete	IFM	conference-paper
+13	https://doi.org/10.1145/1065010.1065036	2005	https://doi.org/10.1145/1065010.1065036	DART: Directed Automated Random Testing	PLDI	conference-paper
+14	https://doi.org/10.5555/786768.786970	2000	https://doi.org/10.5555/786768.786970	Generating Test Data for Branch Coverage	ASE	conference-paper
+15	https://doi.org/10.1145/263699.263717	1997	https://doi.org/10.1145/263699.263717	Model Checking for Programming Languages using VeriSoft	POPL	conference-paper
+16	citation-16	2005		The Soundness of Bugs is What Matters	BUGS	conference-paper
+17	https://doi.org/10.1145/512529.512539	2002	https://doi.org/10.1145/512529.512539	A System and Language for Building System-Specific Static Analyses	PLDI	conference-paper
+18	https://doi.org/10.1145/360248.360252	1976	https://doi.org/10.1145/360248.360252	Symbolic Execution and Program Testing	Communications of the ACM	article
+19	https://doi.org/10.1109/ICSM.1990.131379	1990	https://doi.org/10.1109/ICSM.1990.131379	A Dynamic Approach of Test Data Generation	ICSM	conference-paper
+20	https://doi.org/10.5555/539883	1979	https://doi.org/10.5555/539883	The Art of Software Testing	Wiley	book
+21	https://doi.org/10.1145/199448.199462	1995	https://doi.org/10.1145/199448.199462	Precise interprocedural dataflow analysis via graph reachability	POPL	conference-paper
+22	https://doi.org/10.1145/1081706.1081750	2005	https://doi.org/10.1145/1081706.1081750	CUTE: A Concolic Unit Testing Engine for C	ESEC/FSE	conference-paper
+23	https://doi.org/10.1145/1007512.1007526	2004	https://doi.org/10.1145/1007512.1007526	Test Input Generation with Java PathFinder	ISSTA	conference-paper
+24	https://doi.org/10.1007/978-3-540-31980-1_24	2005	https://doi.org/10.1007/978-3-540-31980-1_24	Symstra: A Framework for Generating Object-Oriented Unit Tests Using Symbolic Execution	TACAS	conference-paper
+25	https://doi.org/10.1109/SP.2006.7	2006	https://doi.org/10.1109/SP.2006.7	Automatically Generating Malicious Disks using Symbolic Execution	IEEE Symposium on Security and Privacy	conference-paper

@@ -1,0 +1,122 @@
+rank	source_id	year	doi	title	venue	type
+1	e_1_3_1_2_2	2020		An SMT-based approach for verifying binarized neural networks	CoRR	reference
+2	10.1145/3314221.3314614	2019	10.1145/3314221.3314614	Optimization and abstraction: a synergistic approach for analyzing neural network robustness	Proceedings of the 40th ACM SIGPLAN Conference on Programming Language Design and Implementation	proceedings-article
+3	10.1016/0890-5401(87)90052-6	1987	10.1016/0890-5401(87)90052-6	Learning regular sets from queries and counterexamples	Information and Computation	journal-article
+4	10.1007/978-3-030-59152-6_5	2020	10.1007/978-3-030-59152-6_5	DeepAbstract: Neural Network Abstraction for Accelerating Verification	Lecture Notes in Computer Science	book-chapter
+5	10.1371/journal.pone.0130140	2015	10.1371/journal.pone.0130140	On Pixel-Wise Explanations for Non-Linear Classifier Decisions by Layer-Wise Relevance Propagation	PLOS ONE	journal-article
+6	e_1_3_1_7_2			Baidu. 2021. Apollo. https://apollo.auto.		reference
+7	10.1109/ICSE43902.2021.00039	2021	10.1109/ICSE43902.2021.00039	Scalable Quantitative Verification for Deep Neural Networks	2021 IEEE/ACM 43rd International Conference on Software Engineering (ICSE)	proceedings-article
+8	10.1145/3319535.3354245	2019	10.1145/3319535.3354245	Quantitative Verification of Neural Networks and Its Security Applications	Proceedings of the 2019 ACM SIGSAC Conference on Computer and Communications Security	proceedings-article
+9	10.1007/978-3-030-51074-9_2	2020	10.1007/978-3-030-51074-9_2	An SMT Theory of Fixed-Point Arithmetic	Lecture Notes in Computer Science	book-chapter
+10	10.1007/3-540-36577-X_28	2003	10.1007/3-540-36577-X_28	Construction of Efficient BDDs for Bounded Arithmetic Constraints	Lecture Notes in Computer Science	book-chapter
+11	10.5555/1717251		10.5555/1717251			reference
+12	10.1109/TC.1986.1676819	1986	10.1109/TC.1986.1676819	Graph-Based Algorithms for Boolean Function Manipulation	IEEE Transactions on Computers	journal-article
+13	10.1145/136035.136043	1992	10.1145/136035.136043	Symbolic Boolean manipulation with ordered binary-decision diagrams	ACM Computing Surveys	journal-article
+14	10.1109/TDSC.2021.3088661	2022	10.1109/TDSC.2021.3088661	Taking Care of the Discretization Problem: A Comprehensive Study of the Discretization Problem and a Black-Box Adversarial Attack in Discrete Integer Domain	IEEE Transactions on Dependable and Secure Computing	journal-article
+15	e_1_3_1_16_2	2020		Branch and bound for piecewise linear neural network verification	J. Mach. Learn. Res.	reference
+16	10.1109/SP.2017.49	2017	10.1109/SP.2017.49	Towards Evaluating the Robustness of Neural Networks	2017 IEEE Symposium on Security and Privacy (SP)	proceedings-article
+17	10.1109/SP40001.2021.00004	2021	10.1109/SP40001.2021.00004	Who is Real Bob? Adversarial Attacks on Speaker Recognition Systems	2021 IEEE Symposium on Security and Privacy (SP)	proceedings-article
+18	e_1_3_1_19_2	2021		SEC4SR: A security analysis platform for speaker recognition	CoRR	reference
+19	10.1109/TDSC.2022.3189397	2024	10.1109/TDSC.2022.3189397	AS2T: Arbitrary Source-To-Target Adversarial Attack on Speaker Recognition Systems	IEEE Transactions on Dependable and Secure Computing	journal-article
+20	10.1007/978-3-030-03592-1_16	2018	10.1007/978-3-030-03592-1_16	Verification of Binarized Neural Networks via Inter-neuron Factoring	Lecture Notes in Computer Science	book-chapter
+21	10.1007/978-3-319-68167-2_18	2017	10.1007/978-3-319-68167-2_18	Maximum Resilience of Artificial Neural Networks	Lecture Notes in Computer Science	book-chapter
+22	e_1_3_1_23_2			Piotr Dabkowski and Yarin Gal. 2017. Real Time Image Saliency for Black Box Classifiers (NIPS’17). 6970–6979.		reference
+23	10.1145/1014052.1014066	2004	10.1145/1014052.1014066	Adversarial classification	Proceedings of the tenth ACM SIGKDD international conference on Knowledge discovery and data mining	proceedings-article
+24	e_1_3_1_25_2	2018		Limitations of adversarial robustness: Strong no free lunch theorem	CoRR	reference
+25	10.1007/978-3-319-77935-5_9	2018	10.1007/978-3-319-77935-5_9	Output Range Analysis for Deep Feedforward Neural Networks	Lecture Notes in Computer Science	book-chapter
+26	e_1_3_1_27_2	2018		Proceedings of the 34th Conference on Uncertainty in Artificial Intelligence		reference
+27	10.3233/SAT190014	2006	10.3233/SAT190014	Translating Pseudo-Boolean Constraints into SAT	Journal on Satisfiability, Boolean Modeling and Computation	journal-article
+28	10.1007/978-3-319-68167-2_19	2017	10.1007/978-3-319-68167-2_19	Formal Verification of Piece-Wise Linear Feed-Forward Neural Networks	Lecture Notes in Computer Science	book-chapter
+29	10.1007/978-3-030-53288-8_3	2020	10.1007/978-3-030-53288-8_3	An Abstraction-Based Framework for Neural Network Verification	Lecture Notes in Computer Science	book-chapter
+30	10.1109/CVPR.2018.00175	2018	10.1109/CVPR.2018.00175	Robust Physical-World Attacks on Deep Learning Visual Classification	2018 IEEE/CVF Conference on Computer Vision and Pattern Recognition	proceedings-article
+31	10.1109/ICCV.2017.371	2017	10.1109/ICCV.2017.371	Interpretable Explanations of Black Boxes by Meaningful Perturbation	2017 IEEE International Conference on Computer Vision (ICCV)	proceedings-article
+32	e_1_3_1_33_2	2017		Proceedings of the 1st International Workshop on Comprehensibility and Explanation in AI and ML		reference
+33	10.1109/SP.2018.00058	2018	10.1109/SP.2018.00058	AI2: Safety and Robustness Certification of Neural Networks with Abstract Interpretation	2018 IEEE Symposium on Security and Privacy (SP)	proceedings-article
+34	e_1_3_1_35_2	2020		Justicia: A stochastic SAT approach to formally verify fairness	CoRR	reference
+35	10.1007/978-3-030-45237-7_5	2020	10.1007/978-3-030-45237-7_5	How Many Bits Does it Take to Quantize Your Neural Network?	Lecture Notes in Computer Science	book-chapter
+36	e_1_3_1_37_2	2019		Proceedings of the 36th International Conference on Machine Learning		reference
+37	e_1_3_1_38_2	2018		Proceedings of the 6th International Conference on Learning Representations		reference
+38	10.1109/ISSRE52982.2021.00044	2021	10.1109/ISSRE52982.2021.00044	Eager Falsification for Accelerating Robustness Verification of Deep Neural Networks	2021 IEEE 32nd International Symposium on Software Reliability Engineering (ISSRE)	proceedings-article
+39	e_1_3_1_40_2	2015		Proceedings of the 32nd International Conference on Machine Learning		reference
+40	e_1_3_1_41_2	2017		Proceedings of the Annual Conference on Neural Information Processing Systems		reference
+41	e_1_3_1_42_2	2020		Scalable verification of quantized neural networks (Technical Report)	arXiv preprint arXiv:2012.08185	reference
+42	10.1609/aaai.v36i4.20291	2022	10.1609/aaai.v36i4.20291	Optimizing Binary Decision Diagrams with MaxSAT for Classification	Proceedings of the AAAI Conference on Artificial Intelligence	journal-article
+43	10.1016/j.cosrev.2020.100270	2020	10.1016/j.cosrev.2020.100270	A survey of safety and trustworthiness of deep neural networks: Verification, testing, adversarial attack and defence, and interpretability	Computer Science Review	journal-article
+44	10.1007/978-3-319-63387-9_1	2017	10.1007/978-3-319-63387-9_1	Safety Verification of Deep Neural Networks	Lecture Notes in Computer Science	book-chapter
+45	e_1_3_1_46_2	2016		Proceedings of the Annual Conference on Neural Information Processing Systems		reference
+46	10.1109/34.291440	1994	10.1109/34.291440	A database for handwritten text recognition research	IEEE Transactions on Pattern Analysis and Machine Intelligence	journal-article
+47	e_1_3_1_48_2	2020		Proceedings of the Annual Conference on Neural Information Processing Systems		reference
+48	10.1016/j.tra.2016.09.010	2016	10.1016/j.tra.2016.09.010	Driving to safety: How many miles of driving would it take to demonstrate autonomous vehicle reliability?	Transportation Research Part A: Policy and Practice	journal-article
+49	10.1007/978-3-319-63387-9_5	2017	10.1007/978-3-319-63387-9_5	Reluplex: An Efficient SMT Solver for Verifying Deep Neural Networks	Lecture Notes in Computer Science	book-chapter
+50	10.1007/978-3-030-25540-4_26	2019	10.1007/978-3-030-25540-4_26	The Marabou Framework for Verification and Analysis of Deep Neural Networks	Lecture Notes in Computer Science	book-chapter
+51	10.4271/2019-01-0123	2019	10.4271/2019-01-0123	Safety Argument Considerations for Public Road Testing of Autonomous Vehicles	SAE International Journal of Advances and Current Practices in Mobility	journal-article
+52	10.1007/978-3-319-94144-8_27	2018	10.1007/978-3-319-94144-8_27	Constrained Image Generation Using Binarized Neural Networks with Decision Procedures	Lecture Notes in Computer Science	book-chapter
+53	10.1007/s11265-017-1255-5	2018	10.1007/s11265-017-1255-5	Efficient Object Detection Using Embedded Binarized Neural Networks	Journal of Signal Processing Systems	journal-article
+54	e_1_3_1_55_2	2017		Proceedings of International Conference on Learning Representations		reference
+55	e_1_3_1_56_2			Yann LeCun and Corinna Cortes. 2010. MNIST handwritten digit database.		reference
+56	10.1007/978-3-030-32304-2_15	2019	10.1007/978-3-030-32304-2_15	Analyzing Deep Neural Networks with Symbolic Propagation: Towards Higher Precision and Faster Verification	Lecture Notes in Computer Science	book-chapter
+57	10.1145/3368089.3417918	2020	10.1145/3368089.3417918	PRODeep: a platform for robustness verification of deep neural networks	Proceedings of the 28th ACM Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering	proceedings-article
+58	10.48550/arXiv.2207.00759		10.48550/arXiv.2207.00759			reference
+59	10.1007/s11390-020-0546-7	2020	10.1007/s11390-020-0546-7	Verifying ReLU Neural Networks from a Model Checking Perspective	Journal of Computer Science and Technology	journal-article
+60	e_1_3_1_61_2	2017		An approach to reachability analysis for feed-forward ReLU neural networks	CoRR	reference
+61	10.1007/978-3-319-10431-7_4	2014	10.1007/978-3-319-10431-7_4	A Thread-Safe Library for Binary Decision Diagrams	Lecture Notes in Computer Science	book-chapter
+62	10.1145/3238147.3238202	2018	10.1145/3238147.3238202	DeepGauge: multi-granularity testing criteria for deep learning systems	Proceedings of the 33rd ACM/IEEE International Conference on Automated Software Engineering	proceedings-article
+63	10.1145/3236024.3236082	2018	10.1145/3236024.3236082	MODE: automated neural network model debugging via state differential analysis and input selection	Proceedings of the 2018 26th ACM Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering	proceedings-article
+64	10.1609/aaai.v33i01.33014536	2019	10.1609/aaai.v33i01.33014536	The Curse of Concentration in Robust Learning: Evasion and Poisoning Attacks from Concentration of Measure	Proceedings of the AAAI Conference on Artificial Intelligence	journal-article
+65	10.5555/3108009.3108031		10.5555/3108009.3108031			reference
+66	10.1007/978-1-4615-3190-6	1993	10.1007/978-1-4615-3190-6	Symbolic Model Checking		book
+67	10.1023/A:1008643722423	1997	10.1023/A:1008643722423	Arithmetic Boolean Expression Manipulator Using BDDs	Formal Methods in System Design	journal-article
+68	e_1_3_1_69_2	2020		Interpretable machine learning - A brief history, state-of-the-art and challenges	CoRR	reference
+69	e_1_3_1_70_2			Laurence Moroney. 2021. Introduction to tensorflow for artificial intelligence machine learning and deep learning. https://www.coursera.org/learn/introduction-tensorflow.		reference
+70	10.5555/1103348.1709476		10.5555/1103348.1709476			reference
+71	10.5555/3304652.3304827		10.5555/3304652.3304827			reference
+72	10.1609/aaai.v32i1.12206	2018	10.1609/aaai.v32i1.12206	Verifying Properties of Binarized Deep Neural Networks	Proceedings of the AAAI Conference on Artificial Intelligence	journal-article
+73	10.1007/978-3-030-24258-9_19	2019	10.1007/978-3-030-24258-9_19	Assessing Heuristic Machine Learning Explanations with Model Counting	Lecture Notes in Computer Science	book-chapter
+74	e_1_3_1_75_2	2020		Proceedings of the 8th International Conference on Learning Representations		reference
+75	10.1145/3052973.3053009	2017	10.1145/3052973.3053009	Practical Black-Box Attacks against Machine Learning	Proceedings of the 2017 ACM on Asia Conference on Computer and Communications Security	proceedings-article
+76	10.1109/EuroSP.2016.36	2016	10.1109/EuroSP.2016.36	The Limitations of Deep Learning in Adversarial Settings	2016 IEEE European Symposium on Security and Privacy (EuroS&amp;P)	proceedings-article
+77	10.1145/3132747.3132785	2017	10.1145/3132747.3132785	DeepXplore	Proceedings of the 26th Symposium on Operating Systems Principles	proceedings-article
+78	10.1007/978-3-642-14295-6_24	2010	10.1007/978-3-642-14295-6_24	An Abstraction-Refinement Approach to Verification of Artificial Neural Networks	Lecture Notes in Computer Science	book-chapter
+79	e_1_3_1_80_2	2019		Proceedings of the 7th International Conference on Learning Representations		reference
+80	10.1007/978-3-319-46493-0_32	2016	10.1007/978-3-319-46493-0_32	XNOR-Net: ImageNet Classification Using Binary Convolutional Neural Networks	Lecture Notes in Computer Science	book-chapter
+81	10.1145/2939672.2939778	2016	10.1145/2939672.2939778	"""Why Should I Trust You?"""	Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining	proceedings-article
+82	10.1146/annurev-bioeng-071516-044442	2017	10.1146/annurev-bioeng-071516-044442	Deep Learning in Medical Image Analysis	Annual Review of Biomedical Engineering	journal-article
+83	10.1007/978-3-030-24258-9_25	2019	10.1007/978-3-030-24258-9_25	Verifying Binarized Neural Networks by Angluin-Style Learning	Lecture Notes in Computer Science	book-chapter
+84	e_1_3_1_85_2	2017		International Conference on Machine Learning		reference
+85	e_1_3_1_86_2	2014		Workshop at International Conference on Learning Representations		reference
+86	e_1_3_1_87_2	2019		Proceedings of the Annual Conference on Neural Information Processing Systems		reference
+87	e_1_3_1_88_2	2018		Proceedings of the Annual Conference on Neural Information Processing Systems (NeurIPS’18)		reference
+88	e_1_3_1_89_2	2019		An abstract domain for certifying neural networks	Proceedings of the ACM on Programming Languages (POPL)	reference
+89	e_1_3_1_90_2	2017		Smoothgrad: Removing noise by adding noise	arXiv preprint arXiv:1706.03825	reference
+90	e_1_3_1_91_2			Fabio Somenzi. 2015. CUDD: CU Decision Diagram Package Release 3.0.0.		reference
+91	10.1002/int.22510	2021	10.1002/int.22510	Advanced evasion attacks and mitigations on practical ML‐based phishing website classifiers	International Journal of Intelligent Systems	journal-article
+92	10.1145/3238147.3238172	2018	10.1145/3238147.3238172	Concolic testing for deep neural networks	Proceedings of the 33rd ACM/IEEE International Conference on Automated Software Engineering	proceedings-article
+93	10.5555/3305890.3306024		10.5555/3305890.3306024			reference
+94	e_1_3_1_95_2	2014		Proceedings of International Conference on Learning Representations		reference
+95	e_1_3_1_96_2	2019		Proceedings of the 36th International Conference on Machine Learning		reference
+96	10.1145/3180155.3180220	2018	10.1145/3180155.3180220	DeepTest	Proceedings of the 40th International Conference on Software Engineering	proceedings-article
+97	e_1_3_1_98_2	2019		Proceedings of the 7th International Conference on Learning Representations		reference
+98	10.1007/978-3-030-53288-8_2	2020	10.1007/978-3-030-53288-8_2	Verification of Deep Convolutional Neural Networks Using ImageStars	Lecture Notes in Computer Science	book-chapter
+99	10.1007/978-3-030-30942-8_39	2019	10.1007/978-3-030-30942-8_39	Star-Based Reachability Analysis of Deep Neural Networks	Lecture Notes in Computer Science	book-chapter
+100	e_1_3_1_101_2	2018		Proceedings of the 35th International Conference on Machine Learning		reference
+101	10.1007/978-3-319-25942-0_3	2015	10.1007/978-3-319-25942-0_3	A Comparative Study of BDD Packages for Probabilistic Symbolic Model Checking	Lecture Notes in Computer Science	book-chapter
+102	e_1_3_1_103_2	2015		International Conference on Tools and Algorithms for the Construction and Analysis of Systems		reference
+103	e_1_3_1_104_2	2014		Proceedings of the International Workshops on Parallel Processing		reference
+104	10.5555/3277203.3277323		10.5555/3277203.3277323			reference
+105	e_1_3_1_106_2	2021		Proceedings of the Annual Conference on Neural Information Processing Systems		reference
+106	e_1_3_1_107_2	2019		Proceedings of the 7th International Conference on Learning Representations		reference
+107	e_1_3_1_108_2	2018		Proceedings of the 35th International Conference on Machine Learning		reference
+108	e_1_3_1_109_2	2018		Proceedings of the 35th International Conference on Machine Learning		reference
+109	10.1007/978-3-319-89960-2_22	2018	10.1007/978-3-319-89960-2_22	Feature-Guided Black-Box Safety Testing of Deep Neural Networks	Lecture Notes in Computer Science	book-chapter
+110	e_1_3_1_111_2	2018		Proceedings of the 35th International Conference on Machine Learning		reference
+111	10.1016/j.tcs.2019.05.046	2020	10.1016/j.tcs.2019.05.046	A game-based approximate verification of deep neural networks with provable guarantees	Theoretical Computer Science	journal-article
+112	10.1109/TNNLS.2018.2808470	2018	10.1109/TNNLS.2018.2808470	Output Reachable Set Estimation and Verification for Multilayer Neural Networks	IEEE Transactions on Neural Networks and Learning Systems	journal-article
+113	e_1_3_1_114_2	2017		Fashion-mnist: A novel image dataset for benchmarking machine learning algorithms	arXiv preprint arXiv:1708.07747	reference
+114	10.1145/3293882.3330579	2019	10.1145/3293882.3330579	DeepHunter: a coverage-guided fuzz testing framework for deep neural networks	Proceedings of the 28th ACM SIGSOFT International Symposium on Software Testing and Analysis	proceedings-article
+115	e_1_3_1_116_2	2020		Improving neural network verification through spurious region guided refinement	CoRR	reference
+116	10.1109/TSE.2019.2962027	2022	10.1109/TSE.2019.2962027	Machine Learning Testing: Survey, Landscapes and Horizons	IEEE Transactions on Software Engineering	journal-article
+117	10.1109/CVPR.2019.00642	2019	10.1109/CVPR.2019.00642	Interpreting CNNs via Decision Trees	2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)	proceedings-article
+118	10.1007/978-3-030-81685-8_8	2021	10.1007/978-3-030-81685-8_8	BDD4BNN: A BDD-Based Quantitative Analysis Framework for Binarized Neural Networks	Lecture Notes in Computer Science	book-chapter
+119	10.1145/3551349.3556916	2022	10.1145/3551349.3556916	QVIP: An ILP-based Formal Verification Approach for Quantized Neural Networks	Proceedings of the 37th IEEE/ACM International Conference on Automated Software Engineering	proceedings-article
+120	10.1145/3460319.3464822	2021	10.1145/3460319.3464822	Attack as defense: characterizing adversarial examples using robustness	Proceedings of the 30th ACM SIGSOFT International Symposium on Software Testing and Analysis	proceedings-article
+121	10.1007/978-3-031-22308-2_20	2022	10.1007/978-3-031-22308-2_20	CLEVEREST: Accelerating CEGAR-based Neural Network Verification via Adversarial Attacks	Lecture Notes in Computer Science	book-chapter

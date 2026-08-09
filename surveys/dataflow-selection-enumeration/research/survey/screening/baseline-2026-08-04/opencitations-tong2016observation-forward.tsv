@@ -1,0 +1,73 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1177/1687814018808170	2018	10.1177/1687814018808170	Transformation Of Business Process Model And Notation Models Onto Petri Nets And Their Analysis	Advances In Mechanical Engineering	journal article
+2	10.1109/tac.2016.2574120	2017	10.1109/tac.2016.2574120	Basis Marking Representation Of Petri Net Reachability Spaces And Its Application To The Reachability Problem	IEEE Transactions On Automatic Control	journal article
+3	10.1016/j.ins.2016.11.011	2017	10.1016/j.ins.2016.11.011	Deadlock Recovery For Flexible Manufacturing Systems Modeled With Petri Nets	Information Sciences	journal article
+4	10.1109/access.2024.3408637	2024	10.1109/access.2024.3408637	A Deadlock Prevention Strategy For Petri Nets Through Tuning Time Constraints	IEEE Access	journal article
+5	10.1109/access.2018.2840539	2018	10.1109/access.2018.2840539	Comparative Analysis Of Sequential And Combinatorial Auctions Based On Petri Nets	IEEE Access	journal article
+6	10.1109/tac.2019.2907413	2020	10.1109/tac.2019.2907413	Marking Estimation In A Class Of Time Labeled Petri Nets	IEEE Transactions On Automatic Control	journal article
+7	10.1016/j.ins.2016.05.020	2016	10.1016/j.ins.2016.05.020	Deadlock Analysis And Control In Resource Allocation Systems	Information Sciences	journal article
+8	10.1049/cth2.12546	2023	10.1049/cth2.12546	A Symbolic Approach To The Verification And Enforcement Of Current‐State Opacity Using Labelled Petri Nets	IET Control Theory & Applications	journal article
+9	10.1177/1687814019833866	2019	10.1177/1687814019833866	Modules Of Petri Nets And New Petri Net Structure: Arcs With A Weighted Function Set	Advances In Mechanical Engineering	journal article
+10	10.1109/access.2017.2735418	2017	10.1109/access.2017.2735418	A Minimal Supervisory Structure To Optimally Enforce Liveness On Petri Net Models For Flexible Manufacturing Systems	IEEE Access	journal article
+11	10.1177/1687814017750707	2018	10.1177/1687814017750707	Optimal Enforcement Of Liveness To Flexible Manufacturing Systems Modeled With Petri Nets Via Transition-Based Controllers	Advances In Mechanical Engineering	journal article
+12	10.1080/02533839.2018.1504694	2018	10.1080/02533839.2018.1504694	Simulation And Analysis Of Reconfigurable Assembly Systems Based On R-TNCES	Journal Of The Chinese Institute Of Engineers	journal article
+13	10.1080/00207543.2017.1346835	2017	10.1080/00207543.2017.1346835	State Estimation Of Discrete Event Systems For RUL Prediction Issue	International Journal Of Production Research	journal article
+14	10.1109/access.2017.2720630	2017	10.1109/access.2017.2720630	Synthesis Of Liveness-Enforcing Petri Net Supervisors Based On A Think-Globally-Act-Locally Approach And Vector Covering For Flexible Manufacturing Systems	IEEE Access	journal article
+15	10.1109/access.2018.2872572	2018	10.1109/access.2018.2872572	Improved Multi-Step Look-Ahead Control Policies For Automated Manufacturing Systems	IEEE Access	journal article
+16	10.1109/tase.2020.3006435	2021	10.1109/tase.2020.3006435	RCTL: New Temporal Logic For Improved Formal Verification Of Reconfigurable Discrete-Event Systems	IEEE Transactions On Automation Science And Engineering	journal article
+17	10.1177/1687814017700354	2017	10.1177/1687814017700354	A Class Of Generalized Petri Nets And Its State Equation	Advances In Mechanical Engineering	journal article
+18	10.1109/tsmc.2018.2856763	2020	10.1109/tsmc.2018.2856763	An Extended Object Constraint Language For Adaptive Discrete Event Systems With Application To Reconfigurable Wireless Sensor Networks	IEEE Transactions On Systems, Man, And Cybernetics: Systems	journal article
+19	10.1109/access.2019.2936052	2019	10.1109/access.2019.2936052	On Algebraic Identification Of Critical States For Deadlock Control In Automated Manufacturing Systems Modeled With Petri Nets	Eğitim Ve Yeni Yaklaşımlar Dergisi	journal article
+20	10.1109/access.2017.2696029	2017	10.1109/access.2017.2696029	Computation Of An Optimal Transformed Linear Constraint In A Class Of Petri Nets With Uncontrollable Transitions	IEEE Access	journal article
+21	10.1109/access.2018.2883774	2018	10.1109/access.2018.2883774	Mining Resource Community And Resource Role Network From Event Logs	IEEE Access	journal article
+22	10.1109/access.2017.2768069	2017	10.1109/access.2017.2768069	Resource Configuration Analysis For A Class Of Petri Nets Based On Strongly Connected Characteristic Resource Subnets	IEEE Access	journal article
+23	10.1109/jas.2024.124560	2025	10.1109/jas.2024.124560	Strong Current-State Opacity Verification Of Discrete-Event Systems Modeled With Time Labeled Petri Nets	IEEE/CAA Journal Of Automatica Sinica	journal article
+24	10.1007/s10626-019-00278-w	2019	10.1007/s10626-019-00278-w	An Improved Approach For Marking Optimization Of Timed Weightedmarked Graphs	Discrete Event Dynamic Systems	journal article
+25	10.1109/access.2017.2773578	2018	10.1109/access.2017.2773578	Random Fuzzy Cost-Profit Equilibrium Model For Locating A Discrete Service Enterprise	IEEE Access	journal article
+26	10.1016/j.ifacol.2021.04.055	2020	10.1016/j.ifacol.2021.04.055	Critical Observability Of Partially Observed Petri Nets	IFAC-PapersOnLine	journal article
+27	10.1109/access.2018.2880460	2018	10.1109/access.2018.2880460	Firing Rate Optimization Of Deterministic Timed Event Graphs By Server Performance Improvement	IEEE Access	journal article
+28	10.31577/cai_2022_5_1310	2022	10.31577/cai_2022_5_1310	Synthesis Of Liveness-Enforcing Petri Net Supervisors Based On A Think-Globally-Act-\Łocally Approach And A Structurally Minimal Method For Flexible Manufacturing Systems	Computing And Informatics	journal article
+29	10.1109/tac.2016.2620429	2017	10.1109/tac.2016.2620429	Verification Of State-Based Opacity Using Petri Nets	IEEE Transactions On Automatic Control	journal article
+30	10.1177/0020294020964840	2020	10.1177/0020294020964840	Path Planning For Automated Guided Vehicle Systems With Time Constraints Using Timed Petri Nets	Measurement And Control	journal article
+31	10.1177/1687814019885294	2020	10.1177/1687814019885294	A Pareto-based Genetic Algorithm For Multi-Objective Scheduling Of Automated Manufacturing Systems	Advances In Mechanical Engineering	journal article
+32	10.1177/1687814017700829	2017	10.1177/1687814017700829	An Integrated Control Method For Designing Non-Blocking Supervisors Using Petri Nets	Advances In Mechanical Engineering	journal article
+33	10.1109/access.2024.3413070	2024	10.1109/access.2024.3413070	Online Verification And Enforcement Of Sequential K-Opacity In Extended Probabilistic Automata	IEEE Access	journal article
+34	10.3390/pr11051501	2023	10.3390/pr11051501	Modeling Of Fault Recovery And Repair For Automated Manufacturing Cells With Load-Sharing Redundant Elements Using Petri Nets	Processes	journal article
+35	10.1109/access.2017.2757044	2018	10.1109/access.2017.2757044	Analysis And Control Of Dynamic Reconfiguration Processes Of Manufacturing Systems	IEEE Access	journal article
+36	10.1007/s40998-018-0091-3	2018	10.1007/s40998-018-0091-3	Modeling, Simulation And Verification Of Probabilistic Reconfigurable Discrete-Event Systems Under Energy And Memory Constraints	Iranian Journal Of Science And Technology, Transactions Of Electrical Engineering	journal article
+37	10.1109/access.2017.2777438	2017	10.1109/access.2017.2777438	Trustworthiness Modeling And Analysis Of Cyber-physical Manufacturing Systems	IEEE Access	journal article
+38	10.1109/access.2020.2998132	2020	10.1109/access.2020.2998132	Vulnerability Evaluation Method For E-Commerce Transaction Systems With Unobservable Transitions	IEEE Access	journal article
+39	10.1093/imamci/dnx024	2017	10.1093/imamci/dnx024	On Structural Reduction Of Liveness-Enforcing Petri Net Supervisors For Flexible Manufacturing Systems: An Algebraic Approach	IMA Journal Of Mathematical Control And Information	journal article
+40	10.1109/access.2019.2906324	2019	10.1109/access.2019.2906324	A Deadlock Prevention Policy For Flexible Manufacturing Systems Modeled With Petri Nets Using Structural Analysis	Eğitim Ve Yeni Yaklaşımlar Dergisi	journal article
+41	10.1109/tac.2020.3044853	2021	10.1109/tac.2020.3044853	Exposure And Revelation Times As A Measure Of Opacity In Timed Stochastic Discrete Event Systems	IEEE Transactions On Automatic Control	journal article
+42	10.3390/math11010047	2022	10.3390/math11010047	The Unfolding: Origins, Techniques, And Applications Within Discrete Event Systems	Mathematics	journal article
+43	10.1109/tase.2023.3346523	2024	10.1109/tase.2023.3346523	Verification Of Current-State Opacity In Time Labeled Petri Nets With Its Application To Smart Houses	IEEE Transactions On Automation Science And Engineering	journal article
+44	10.1109/access.2018.2796640	2018	10.1109/access.2018.2796640	Fault Diagnosis In Partially Observed Petri Nets Using Redundancies	IEEE Access	journal article
+45	10.1177/1687814017693542	2017	10.1177/1687814017693542	Deadlock Analysis And Control Based On Petri Nets: A Siphon Approach Review	Advances In Mechanical Engineering	journal article
+46	10.1016/j.ins.2017.08.014	2017	10.1016/j.ins.2017.08.014	Deadlock And Liveness Characterization For A Class Of Generalized Petri Nets	Information Sciences	journal article
+47	10.1109/access.2019.2945132	2019	10.1109/access.2019.2945132	Diagnosability Of Vector Discrete-Event Systems Using Predicates	Eğitim Ve Yeni Yaklaşımlar Dergisi	journal article
+48	10.1016/j.arcontrol.2018.04.006	2018	10.1016/j.arcontrol.2018.04.006	Petri Nets And Automatic Control: A Historical Perspective	Annual Reviews In Control	journal article
+49	10.1016/j.isatra.2018.11.025	2019	10.1016/j.isatra.2018.11.025	On A Maximally Permissive Deadlock Prevention Policy For Automated Manufacturing Systems By Using Resource-Oriented Petri Nets	ISA Transactions	journal article
+50	10.1109/access.2018.2797213	2018	10.1109/access.2018.2797213	Optimal Petri Net Supervisors Of Discrete Event Systems Via Weighted And Data Inhibitor Arcs	IEEE Access	journal article
+51	10.1109/etfa46521.2020.9211942	2020	10.1109/etfa46521.2020.9211942	A Region-Based Approach For State Estimation Of Timed Automata Under No Event Observation	2020 25Th IEEE International Conference On Emerging Technologies And Factory Automation (ETFA)	proceedings article
+52	10.1002/asjc.1583	2017	10.1002/asjc.1583	Design Of Optimal Petri Net Supervisors For Flexible Manufacturing Systems Via Weighted Inhibitor Arcs	Asian Journal Of Control	journal article
+53	10.1109/access.2019.2907199	2019	10.1109/access.2019.2907199	Modeling And Verification Of A Reliable Multi-Agent Solution Promoting The Autonomy And Self-Sufficiency Of Microgrids In An Isolated Location	Eğitim Ve Yeni Yaklaşımlar Dergisi	journal article
+54	10.1109/access.2020.2989346	2020	10.1109/access.2020.2989346	Hazard Analysis Of Bidder Collusion In Reverse Auctions Based On Petri Nets	IEEE Access	journal article
+55	10.1109/tsmc.2018.2815618	2019	10.1109/tsmc.2018.2815618	Robust Deadlock Control For Automated Manufacturing Systems With Unreliable Resources Based On Petri Net Reachability Graphs	IEEE Transactions On Systems, Man, And Cybernetics: Systems	journal article
+56	10.1109/access.2019.2897753	2019	10.1109/access.2019.2897753	Elementary Siphon-Based Robust Control For Automated Manufacturing Systems With Multiple Unreliable Resources	Eğitim Ve Yeni Yaklaşımlar Dergisi	journal article
+57	10.1109/tsmc.2018.2854158	2020	10.1109/tsmc.2018.2854158	On Hierarchical Construction Of The State Space Of An Automated Manufacturing System Modeled With Petri Nets	IEEE Transactions On Systems, Man, And Cybernetics: Systems	journal article
+58	10.4018/ijwsr.2018100101	2018	10.4018/ijwsr.2018100101	Colored Petri Nets Based Fault Diagnosis In Service Oriented Architecture	International Journal Of Web Services Research	journal article
+59	10.1109/access.2025.3632892	2025	10.1109/access.2025.3632892	Event Concealment In Discrete Event With Observation Losses Systems Via Differential Privacy	IEEE Access	journal article
+60	10.1016/j.automatica.2017.01.013	2017	10.1016/j.automatica.2017.01.013	Decidability Of Opacity Verification Problems In Labeled Petri Net Systems	Automatica	journal article
+61	10.1109/access.2017.2728080	2017	10.1109/access.2017.2728080	On Computation Reduction Of Liveness-Enforcing Supervisors	IEEE Access	journal article
+62	10.3390/sym14051052	2022	10.3390/sym14051052	Petri-Net-Based Scheduling Of Flexible Manufacturing Systems Using An Estimate Function	Electronics	journal article
+63	10.1109/access.2019.2896254	2019	10.1109/access.2019.2896254	Liveness Of Disjunctive And Strict Single-Type Automated Manufacturing System: An ROPN Approach	Eğitim Ve Yeni Yaklaşımlar Dergisi	journal article
+64	10.1109/access.2018.2843380	2018	10.1109/access.2018.2843380	One-Step Control-Ahead Approach For The Design Of An Optimal Petri-Net Based Deadlock Prevention Policy	IEEE Access	journal article
+65	10.1109/access.2018.2867091	2018	10.1109/access.2018.2867091	State Space Characterization Of Disjunctive Single-Unit Resource Allocation Systems	IEEE Access	journal article
+66	10.1109/tsmc.2018.2855209	2020	10.1109/tsmc.2018.2855209	On Methodology For The Verification Of Reconfigurable Timed Net Condition/Event Systems	IEEE Transactions On Systems, Man, And Cybernetics: Systems	journal article
+67	10.1177/1687814019825962	2019	10.1177/1687814019825962	On State-Space Compression And State Reachability Retrieval Of Petri Nets	Advances In Mechanical Engineering	journal article
+68	10.1109/tsmc.2017.2762823	2019	10.1109/tsmc.2017.2762823	Fault Identification Of Discrete Event Systems Modeled By Petri Nets With Unobservable Transitions	IEEE Transactions On Systems, Man, And Cybernetics: Systems	journal article
+69	10.1177/1687814017734709	2017	10.1177/1687814017734709	An Elementary Siphon-Based Deadlock Control Algorithm With Maximally Reachable Number To Cope With Deadlock Problems In Ordinary Petri Nets	Advances In Mechanical Engineering	journal article
+70	10.1177/1687814017724085	2017	10.1177/1687814017724085	Performance Analysis Of Reverse Auction Mechanisms Based On Petri Nets	Advances In Mechanical Engineering	journal article
+71	10.1016/j.ins.2019.01.029	2019	10.1016/j.ins.2019.01.029	Deadlock Analysis And Control Using Petri Net Decomposition Techniques	Information Sciences	journal article
+72	10.1177/1687814018781487	2018	10.1177/1687814018781487	Liveness Characteristic Analysis Of A Class Of Petri Nets	Advances In Mechanical Engineering	journal article

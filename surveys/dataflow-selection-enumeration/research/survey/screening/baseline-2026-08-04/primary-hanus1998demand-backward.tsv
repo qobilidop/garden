@@ -1,0 +1,27 @@
+rank	source_id	year	doi	title	venue	type
+1	citation-1	1992		Definitional Trees	ALP 1992	proceedings-article
+2	citation-2	1997		Optimal Non-Deterministic Functional Logic Computations	ALP 1997	proceedings-article
+3	citation-3	1994		A Needed Narrowing Strategy	POPL 1994	proceedings-article
+4	citation-4	1996		Functional Logic Programming with Real Numbers	Functional Logic Programming 1996	proceedings-article
+5	citation-5	1989		Compiling Control	Journal of Logic Programming	article
+6	citation-6	1985		SLOG: A Logic Programming Language Interpreter Based on Clausal Superposition and Rewriting	IEEE Symposium on Logic Programming	proceedings-article
+7	citation-7	1991		Kernel LEAF: A Logic Plus Functional Language	Journal of Computer and System Sciences	article
+8	citation-8	1996		A Rewriting Logic for Declarative Programming	ESOP 1996	proceedings-article
+9	citation-9	1992		Improving Control of Logic Programs by Using Functional Logic Languages	PLILP 1992	proceedings-article
+10	citation-10	1994		The Integration of Functions into Logic Programming: From Theory to Practice	Journal of Logic Programming	article
+11	citation-11	1997		A Unified Computation Model for Functional and Logic Programming	POPL 1997	proceedings-article
+12	citation-12	1998		Controlling Search in Declarative Programs	PLILP/ALP 1998	proceedings-article
+13	citation-13	1998		Curry: An Integrated Functional Logic Language	Curry language specification	report
+14	citation-14	1997		Haskore Music Tutorial	functional programming tutorial	report
+15	citation-15	1992		Report on the Programming Language Haskell: A Non-Strict, Purely Functional Language, Version 1.2	SIGPLAN Notices	report
+16	citation-16	1994		Combining Functional and Logic Programming Languages	Logic Programming	book-chapter
+17	citation-17	1993		A Demand Driven Computation Strategy for Lazy Narrowing	PLILP 1993	proceedings-article
+18	citation-18	1992		An Implementation of Narrowing: The Prolog-Based Approach	ALP 1992	proceedings-article
+19	citation-19	1992		Logic Programming with Functions and Predicates: The Language BABEL	Journal of Logic Programming	article
+20	citation-20	1987		Negation and Control in Prolog	Springer	book
+21	citation-21	1993		Concurrent Constraint Programming	MIT Press	book
+22	citation-22	1994		Encapsulated Search for Higher-Order Concurrent Constraint Programming	Logic Programming Symposium 1994	proceedings-article
+23	citation-23	1994		The Art of Prolog: Advanced Programming Techniques, Second Edition	MIT Press	book
+24	citation-24	1990		Generation and Compilation of Efficient Computation Rules	ICLP 1990	proceedings-article
+25	citation-25	1985		How to Replace Failure by a List of Successes	FPCA 1985	proceedings-article
+26	citation-26	1995		How to Declare an Imperative	ILPS 1995	proceedings-article

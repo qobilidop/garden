@@ -1,0 +1,19 @@
+rank	source_id	year	doi	title	venue	type
+1	citation-1	2002	10.1016/S0377-2217(02)00061-9	Pivot versus interior point methods: pros and cons	European Journal of Operational Research	journal article
+2	citation-2	1997	10.1016/S0925-7721(96)00023-5	How good are convex hull algorithms?	Computational Geometry	journal article
+3	citation-3	1992	10.1007/BF02293050	A pivoting algorithm for convex hulls and vertex enumeration of arrangements and polyhedra	Discrete & Computational Geometry	journal article
+4	citation-4	1985	-	Computational Geometry: an Introduction	Springer	book
+5	citation-5	1992	10.1090/S0894-0347-1992-1145337-X	Aperiodic tilings, positive scalar curvature, and amenability of spaces	Journal of the American Mathematical Society	journal article
+6	citation-6	2018	10.1007/s00454-017-9873-z	Primitive zonotopes	Discrete & Computational Geometry	journal article
+7	citation-7	2021	-	Root cones and the resonance arrangement	Electronic Journal of Combinatorics	journal article
+8	citation-8	2014	10.1016/j.laa.2014.01.007	Convex integer optimization by constantly many linear counterparts	Linear Algebra and its Applications	journal article
+9	citation-9	1996	10.1016/0166-218X(95)00026-N	Reverse search for enumeration	Discrete Applied Mathematics	journal article
+10	citation-10	1986	10.1137/0215024	Constructing arrangements of lines and hyperplanes with applications	SIAM Journal on Computing	journal article
+11	citation-11	2019	10.4153/S0008439518000668	Diameter, decomposability, and Minkowski sums of polytopes	Canadian Mathematical Bulletin	journal article
+12	citation-12	1982	10.1007/BF02771723	Decomposability of polytopes	Israel Journal of Mathematics	journal article
+13	citation-13	1974	10.1090/S0002-9947-1974-0338929-4	Indecomposable polytopes	Transactions of the American Mathematical Society	journal article
+14	citation-14	2008	10.1007/s00454-008-9051-4	Decomposability of polytopes	Discrete & Computational Geometry	journal article
+15	citation-15	1963	10.1112/S0025579300003995	Decomposable convex polyhedra	Mathematika	journal article
+16	citation-16	1993	-	Geometric Algorithms and Combinatorial Optimization	Springer	book
+17	citation-17	1994	-	More output-sensitive geometric algorithms	35th Annual IEEE Symposium on Foundations of Computer Science	conference paper
+18	citation-18	2020	-	Polyhedral computation	ETH Research Collection	book

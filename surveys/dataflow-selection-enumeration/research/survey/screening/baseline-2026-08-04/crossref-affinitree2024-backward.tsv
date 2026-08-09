@@ -1,0 +1,61 @@
+rank	source_id	year	doi	title	venue	type
+1	8_CR1			Arora, R., Basu, A., Mianjy, P., Mukherjee, A.: Understanding deep neural networks with rectified linear units. In: 6th International Conference on Learning Representations, ICLR 2018, Vancouver, BC, Canada, 30 April–3 May 2018, Conference Track Proceedings. OpenReview.net (2018). https://openreview.net/forum?id=B1J_rgWRW		reference
+2	8_CR2			Aytekin, C.: Neural networks are decision trees. arXiv preprint arXiv:2210.05189 (2022)		reference
+3	10.1007/978-3-030-76384-8_2	2021	10.1007/978-3-030-76384-8_2	nnenum: Verification of ReLU Neural Networks with Optimized Abstraction Refinement	Lecture Notes in Computer Science	book-chapter
+4	10.1109/JPROC.2020.3042100	2021	10.1109/JPROC.2020.3042100	Mad Max: Affine Spline Insights Into Deep Learning	Proceedings of the IEEE	journal-article
+5	10.1109/TC.1986.1676819	1986	10.1109/TC.1986.1676819	Graph-Based Algorithms for Boolean Function Manipulation	IEEE Transactions on Computers	journal-article
+6	10.1177/2053951715622512	2016	10.1177/2053951715622512	How the machine ‘thinks’: Understanding opacity in machine learning algorithms	Big Data &amp; Society	journal-article
+7	8_CR7			Buyl, M., Defrance, M., De Bie, T.: FAIRRET: a framework for differentiable fairness regularization terms. arXiv preprint arXiv:2310.17256 (2023)		reference
+8	10.1109/DSAA54385.2022.10032334	2022	10.1109/DSAA54385.2022.10032334	On Training and Verifying Robust Autoencoders	2022 IEEE 9th International Conference on Data Science and Advanced Analytics (DSAA)	proceedings-article
+9	10.1145/3219819.3220063	2018	10.1145/3219819.3220063	Exact and Consistent Interpretation for Piecewise Linear Neural Networks	Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery &amp; Data Mining	proceedings-article
+10	8_CR10			Dimanov, B., Bhatt, U., Jamnik, M., Weller, A.: You shouldn’t trust me: learning models which conceal unfairness from multiple explanation methods (2020)		reference
+11	10.1145/2090236.2090255	2012	10.1145/2090236.2090255	Fairness through awareness	Proceedings of the 3rd Innovations in Theoretical Computer Science Conference	proceedings-article
+12	10.1007/978-3-031-09153-7_7	2022	10.1007/978-3-031-09153-7_7	Towards a Taxonomy for the Opacity of AI Systems	Studies in Applied Philosophy, Epistemology and Rational Ethics	book-chapter
+13	10.1109/SP.2018.00058	2018	10.1109/SP.2018.00058	AI2: Safety and Robustness Certification of Neural Networks with Abstract Interpretation	2018 IEEE Symposium on Security and Privacy (SP)	proceedings-article
+14	8_CR14			Glorot, X., Bordes, A., Bengio, Y.: Deep sparse rectifier neural networks. In: Proceedings of the Fourteenth International Conference on Artificial Intelligence and Statistics, pp. 315–323. JMLR Workshop and Conference Proceedings (2011)		reference
+15	8_CR15			Goodfellow, I., Warde-Farley, D., Mirza, M., Courville, A., Bengio, Y.: Maxout networks. In: International Conference on Machine Learning, pp. 1319–1327. PMLR (2013)		reference
+16	8_CR16			Goodfellow, I.J., Shlens, J., Szegedy, C.: Explaining and harnessing adversarial examples. arXiv preprint arXiv:1412.6572 (2014)		reference
+17	8_CR17			Gopinath, D., Wang, K., Zhang, M., Pasareanu, C.S., Khurshid, S.: Symbolic execution for deep neural networks. arXiv preprint arXiv:1807.10439 (2018)		reference
+18	10.1016/j.cam.2023.115667	2024	10.1016/j.cam.2023.115667	On the number of regions of piecewise linear neural networks	Journal of Computational and Applied Mathematics	journal-article
+19	10.1145/3236009	2019	10.1145/3236009	A Survey of Methods for Explaining Black Box Models	ACM Computing Surveys	journal-article
+20	8_CR20			Hanin, B., Rolnick, D.: Complexity of linear regions in deep networks. In: Chaudhuri, K., Salakhutdinov, R. (eds.) Proceedings of the 36th International Conference on Machine Learning. Proceedings of Machine Learning Research, vol. 97, pp. 2596–2604. PMLR (2019). https://proceedings.mlr.press/v97/hanin19a.html		reference
+21	8_CR21			Hanin, B., Rolnick, D.: Deep ReLU networks have surprisingly few activation patterns. Adv. Neural. Inf. Process. Syst. 32 (2019)		reference
+22	10.1109/CVPR52729.2023.00369	2023	10.1109/CVPR52729.2023.00369	SplineCam: Exact Visualization and Characterization of Deep Network Geometry and Decision Boundaries	2023 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)	proceedings-article
+23	8_CR23			Ignatiev, A., Narodytska, N., Marques-Silva, J.: On validating, repairing and refining heuristic ml explanations. arXiv preprint arXiv:1907.02509 (2019)		reference
+24	8_CR24			İrsoy, O., Alpaydın, E.: PathFinder: discovering decision pathways in deep neural networks. arXiv preprint arXiv:2210.00319 (2022)		reference
+25	10.1007/s12650-019-00607-z	2020	10.1007/s12650-019-00607-z	Visualizing surrogate decision trees of convolutional neural networks	Journal of Visualization	journal-article
+26	8_CR26	2020		Jordan, M., Dimakis, A.G.: Exactly computing the local Lipschitz constant of ReLU networks. Adv. Neural. Inf. Process. Syst. 33, 7344–7353 (2020)	Adv. Neural. Inf. Process. Syst.	reference
+27	8_CR27			Kohavi, R., Becker, B.: UCI adult data set. UCI Meach. Learn. Repository 5 (1996)		reference
+28	10.1145/3375627.3375833	2020	10.1145/3375627.3375833	"""How do I fool you?"""	Proceedings of the AAAI/ACM Conference on AI, Ethics, and Society	proceedings-article
+29	10.1038/nature14539	2015	10.1038/nature14539	Deep learning	Nature	journal-article
+30	10.1109/5.726791	1998	10.1109/5.726791	Gradient-based learning applied to document recognition	Proceedings of the IEEE	journal-article
+31	8_CR31			Lee, G.H., Jaakkola, T.S.: Oblique decision trees from derivatives of ReLU networks. In: International Conference on Learning Representations (2020). https://openreview.net/forum?id=Bke8UR4FPB		reference
+32	10.1145/3236386.3241340	2018	10.1145/3236386.3241340	The Mythos of Model Interpretability	Queue	journal-article
+33	8_CR33			Logemann, T., Veith, E.M.: NN2EQCDT: equivalent transformation of feed-forward neural networks as DRL policies into compressed decision trees, vol. 15, pp. 94–100 (2023)		reference
+34	8_CR34	2022		Lohaus, M., Kleindessner, M., Kenthapadi, K., Locatello, F., Russell, C.: Are two heads the same as one? Identifying disparate treatment in fair neural networks. Adv. Neural. Inf. Process. Syst. 35, 16548–16562 (2022)	Adv. Neural. Inf. Process. Syst.	reference
+35	8_CR35			Maas, A.L., Hannun, A.Y., Ng, A.Y., et al.: Rectifier nonlinearities improve neural network acoustic models. In: Proceedings of the ICML, Atlanta, GA, vol. 30, p. 3 (2013)		reference
+36	10.1609/aaai.v36i11.21499	2022	10.1609/aaai.v36i11.21499	Delivering Trustworthy AI through Formal XAI	Proceedings of the AAAI Conference on Artificial Intelligence	journal-article
+37	10.1145/3457607	2022	10.1145/3457607	A Survey on Bias and Fairness in Machine Learning	ACM Computing Surveys	journal-article
+38	8_CR38			Molnar, C.: Interpretable machine learning (2020). Lulu.com		reference
+39	8_CR39			Montúfar, G.: Notes on the number of linear regions of deep neural networks (2017)		reference
+40	8_CR40			Montufar, G.F., Pascanu, R., Cho, K., Bengio, Y.: On the number of linear regions of deep neural networks. Adv. Neural Inf. Process. Syst. 27 (2014)		reference
+41	10.1007/s10009-023-00702-5	2023	10.1007/s10009-023-00702-5	Forest GUMP: a tool for verification and explanation	International Journal on Software Tools for Technology Transfer	journal-article
+42	8_CR42			Nguyen, T.D., Kasmarik, K.E., Abbass, H.A.: An exact transformation from deep neural networks to multi-class multivariate decision trees. arXiv preprint arXiv:2003.04675 (2020)		reference
+43	10.1007/s10009-023-00701-6	2023	10.1007/s10009-023-00701-6	The power of typed affine decision structures: a case study	International Journal on Software Tools for Technology Transfer	journal-article
+44	10.3389/fdata.2019.00013	2019	10.3389/fdata.2019.00013	Social Data: Biases, Methodological Pitfalls, and Ethical Boundaries	Frontiers in Big Data	journal-article
+45	10.1016/j.artmed.2022.102471	2023	10.1016/j.artmed.2022.102471	Why did AI get this one wrong? — Tree-based explanations of machine learning model predictions	Artificial Intelligence in Medicine	journal-article
+46	8_CR46			Rolnick, D., Kording, K.: Reverse-engineering deep ReLU networks. In: International Conference on Machine Learning, pp. 8178–8187. PMLR (2020)		reference
+47	8_CR47			Schlüter, M., Nolte, G.: Introduction to symbolic execution of neural networks-towards faithful and explainable surrogate models. Electron. Commun. EASST 82 (2023)		reference
+48	10.1007/s10009-023-00700-7	2023	10.1007/s10009-023-00700-7	Towards rigorous understanding of neural networks via semantics-preserving transformations	International Journal on Software Tools for Technology Transfer	journal-article
+49	8_CR49			Serra, T., Tjandraatmadja, C., Ramalingam, S.: Bounding and counting linear regions of deep neural networks. In: International Conference on Machine Learning, pp. 4558–4566. PMLR (2018)		reference
+50	10.1145/3290354	2019	10.1145/3290354	An abstract domain for certifying neural networks	Proceedings of the ACM on Programming Languages	journal-article
+51	8_CR51			Sudjianto, A., Knauth, W., Singh, R., Yang, Z., Zhang, A.: Unwrapping the black box of deep ReLU networks: interpretability, diagnostics, and simplification. ArXiv abs/2011.04041 (2020)		reference
+52	8_CR52			Sun, Y., Huang, X., Kroening, D., Sharp, J., Hill, M., Ashmore, R.: Testing deep neural networks. arXiv preprint arXiv:1803.04792 (2018)		reference
+53	10.1145/3238147.3238172	2018	10.1145/3238147.3238172	Concolic testing for deep neural networks	Proceedings of the 33rd ACM/IEEE International Conference on Automated Software Engineering	proceedings-article
+54	10.1145/37401.37421	1987	10.1145/37401.37421	Set operations on polyhedra using binary space partitioning trees	Proceedings of the 14th annual conference on Computer graphics and interactive techniques	proceedings-article
+55	10.1007/978-3-030-30942-8_39	2019	10.1007/978-3-030-30942-8_39	Star-Based Reachability Analysis of Deep Neural Networks	Lecture Notes in Computer Science	book-chapter
+56	10.1109/ICSE-Companion52605.2021.00027	2021	10.1109/ICSE-Companion52605.2021.00027	NEUROSPF: A Tool for the Symbolic Analysis of Neural Networks	2021 IEEE/ACM 43rd International Conference on Software Engineering: Companion Proceedings (ICSE-Companion)	proceedings-article
+57	8_CR57			Verma, S., Dickerson, J., Hines, K.: Counterfactual explanations for machine learning: a review. arXiv preprint arXiv:2010.105962 (2020)		reference
+58	10.24963/ijcai.2022/492	2022	10.24963/ijcai.2022/492	Estimation and Comparison of Linear Regions for ReLU Networks	Proceedings of the Thirty-First International Joint Conference on Artificial Intelligence	proceedings-article
+59	8_CR59			Xiao, H., Rasul, K., Vollgraf, R.: Fashion-MNIST: a novel image dataset for benchmarking machine learning algorithms (2017)		reference
+60	10.1007/s13347-019-00382-7	2021	10.1007/s13347-019-00382-7	Solving the Black Box Problem: A Normative Framework for Explainable Artificial Intelligence	Philosophy &amp; Technology	journal-article

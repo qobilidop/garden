@@ -1,0 +1,101 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1145/2813885.2737956	2015	10.1145/2813885.2737956	Dynamic partial order reduction for relaxed memory models	ACM SIGPLAN Notices	journal-article
+2	10.1145/2737924.2737956	2015	10.1145/2737924.2737956	Dynamic partial order reduction for relaxed memory models	Proceedings of the 36th ACM SIGPLAN Conference on Programming Language Design and Implementation	proceedings-article
+3	10.37099/mtu.dc.etdr/1795	None	10.37099/mtu.dc.etdr/1795	DYNAMIC MEMORY MANAGEMENT FOR KEY-VALUE STORE		dissertation
+4	10.1109/compsac61105.2024.00348	2024	10.1109/compsac61105.2024.00348	Trace and Algebraic Semantics for Partial Store Order Memory Model	2024 IEEE 48th Annual Computers, Software, and Applications Conference (COMPSAC)	proceedings-article
+5	10.1109/micro.1999.809454	None	10.1109/micro.1999.809454	Dynamic memory disambiguation in the presence of out-of-order store issuing	MICRO-32. Proceedings of the 32nd Annual ACM/IEEE International Symposium on Microarchitecture	proceedings-article
+6	10.3758/bf03197688	1985	10.3758/bf03197688	Iconic store and partial report	Memory &amp; Cognition	journal-article
+7	10.1109/sibgrapi.2012.27	2012	10.1109/sibgrapi.2012.27	Memory-Efficient Order-Independent Transparency with Dynamic Fragment Buffer	2012 25th SIBGRAPI Conference on Graphics, Patterns and Images	proceedings-article
+8	10.1016/j.cag.2013.07.006	2014	10.1016/j.cag.2013.07.006	Memory-optimized order-independent transparency with Dynamic Fragment Buffer	Computers &amp; Graphics	journal-article
+9	10.1109/ifost.2006.312342	2006	10.1109/ifost.2006.312342	Dynamic Behavior of Electrochemical Capacitor as Buffer-Store	2006 International Forum on Strategic Technology	proceedings-article
+10	10.1145/2345156.1993521	2012	10.1145/2345156.1993521	Partial-coherence abstractions for relaxed memory models	ACM SIGPLAN Notices	journal-article
+11	10.7551/mitpress/4877.003.0020	1999	10.7551/mitpress/4877.003.0020	Multi-Store versus Dynamic Models of Temporary Storage in Memory	The Nature of Cognition	book-chapter
+12	10.1515/9783111636146-001	2025	10.1515/9783111636146-001	1 Classification of second-order partial dynamic equations	Partial Dynamic Equations	book-chapter
+13	10.1109/tpami.2025.3619883/mm1	None	10.1109/tpami.2025.3619883/mm1	Release the Potential of Memory Buffer in Continual Learning: A Dynamic System Perspective_supp1-3619883.pdf		component
+14	10.1145/1993316.1993521	2011	10.1145/1993316.1993521	Partial-coherence abstractions for relaxed memory models	ACM SIGPLAN Notices	journal-article
+15	10.1007/3-540-63166-6_33	1997	10.1007/3-540-63166-6_33	Relaxed visibility enhances partial order reduction	Lecture Notes in Computer Science	book-chapter
+16	10.1021/acs.cgd.4c00043.s001	None	10.1021/acs.cgd.4c00043.s001	Improvement of Carrier Mobility in Quantum Wells by the Surface Smoothing of Strain-Relaxed Buffer Layers		component
+17	10.1145/1993498.1993521	2011	10.1145/1993498.1993521	Partial-coherence abstractions for relaxed memory models	Proceedings of the 32nd ACM SIGPLAN Conference on Programming Language Design and Implementation	proceedings-article
+18	10.1109/12.752664	1999	10.1109/12.752664	An executable specification and verifier for relaxed memory order	IEEE Transactions on Computers	journal-article
+19	10.1007/s10515-007-0017-1	2007	10.1007/s10515-007-0017-1	Lazy buffer semantics for partial order scenarios	Automated Software Engineering	journal-article
+20	10.1016/j.cortex.2018.04.016	2019	10.1016/j.cortex.2018.04.016	Verbal working memory and the phonological buffer: The question of serial order	Cortex	journal-article
+21	10.1111/nyas.15402/v1/review2	2025	10.1111/nyas.15402/v1/review2	"Review for ""Python cardiomyocytes store lipids to buffer against hyperlipidemia"""		peer-review
+22	10.1111/nyas.15402/v1/review1	2025	10.1111/nyas.15402/v1/review1	"Review for ""Python cardiomyocytes store lipids to buffer against hyperlipidemia"""		peer-review
+23	10.1007/978-3-662-53413-7_23	2016	10.1007/978-3-662-53413-7_23	From Array Domains to Abstract Interpretation Under Store-Buffer-Based Memory Models	Lecture Notes in Computer Science	book-chapter
+24	10.21203/rs.3.rs-3257081/v1	2023	10.21203/rs.3.rs-3257081/v1	Dynamic Partial Order Reduction Based on Interference Solution		posted-content
+25	10.1109/icct.2003.1209080	None	10.1109/icct.2003.1209080	Dynamic partial buffer sharing scheme: proportional packet loss rate	International Conference on Communication Technology Proceedings, 2003. ICCT 2003.	proceedings-article
+26	10.1023/a:1011202615884	2001	10.1023/a:1011202615884	Relaxed Visibility Enhances Partial Order Reduction	Formal Methods in System Design	journal-article
+27	10.1016/j.matchemphys.2022.126738	2022	10.1016/j.matchemphys.2022.126738	Fully-relaxed n-AlGaN on AlN / Al2O3 templates using strain-relaxed super-lattice buffer layers	Materials Chemistry and Physics	journal-article
+28	10.1515/9783111636146-002	2025	10.1515/9783111636146-002	2 Classification and canonical forms for linear second-order partial dynamic equations in two independent variables	Partial Dynamic Equations	book-chapter
+29	10.3758/bf03198231	1975	10.3758/bf03198231	Free recall measures of short-term store: Are rehearsal and order of recall data necessary?	Memory &amp; Cognition	journal-article
+30	10.70675/5c9ea897z1b59z4f1bza9d9z9019d5a87c13	None	10.70675/5c9ea897z1b59z4f1bza9d9z9019d5a87c13	Compiler optimisations and relaxed memory consistency models		dissertation
+31	10.1111/nyas.15402/v2/decision1	2025	10.1111/nyas.15402/v2/decision1	"Decision letter for ""Python cardiomyocytes store lipids to buffer against hyperlipidemia"""		peer-review
+32	10.1111/nyas.15402/v1/decision1	2025	10.1111/nyas.15402/v1/decision1	"Decision letter for ""Python cardiomyocytes store lipids to buffer against hyperlipidemia"""		peer-review
+33	10.1108/aeat.2000.12772fab.009	2000	10.1108/aeat.2000.12772fab.009	Buffer store doubles output	Aircraft Engineering and Aerospace Technology	journal-article
+34	10.1016/j.omega.2024.103246	2025	10.1016/j.omega.2024.103246	Dynamic assignment of delivery order bundles to in-store customers	Omega	journal-article
+35	10.26226/morressier.604907f41a80aac83ca25d45	2021	10.26226/morressier.604907f41a80aac83ca25d45	Modular Relaxed Dependencies in Weak Memory Concurrency		posted-content
+36	10.1145/2345156.2254115	2012	10.1145/2345156.2254115	Dynamic synthesis for relaxed memory models	ACM SIGPLAN Notices	journal-article
+37	10.1037/e520592012-745	2010	10.1037/e520592012-745	Rethinking buffer operations in a dual-store framework	PsycEXTRA Dataset	dataset
+38	10.1109/micro50266.2020.00054	2020	10.1109/micro50266.2020.00054	Boosting Store Buffer Efficiency with Store-Prefetch Bursts	2020 53rd Annual IEEE/ACM International Symposium on Microarchitecture (MICRO)	proceedings-article
+39	10.1145/215399.215413	1995	10.1145/215399.215413	An executable specification, analyzer and verifier for RMO (relaxed memory order)	Proceedings of the seventh annual ACM symposium on Parallel algorithms and architectures  - SPAA '95	proceedings-article
+40	10.4028/www.scientific.net/ssp.108-109.797	2005	10.4028/www.scientific.net/ssp.108-109.797	Thin SiGe Relaxed Buffer for Strain Adjustment	Solid State Phenomena	journal-article
+41	10.1007/978-3-031-01733-9_4	2011	10.1007/978-3-031-01733-9_4	Total Store Order and the x86 Memory Model	Synthesis Lectures on Computer Architecture	book-chapter
+42	10.1007/springerreference_13135	None	10.1007/springerreference_13135	dynamic buffer allocation	SpringerReference	reference-entry
+43	10.1145/2254064.2254115	2012	10.1145/2254064.2254115	Dynamic synthesis for relaxed memory models	Proceedings of the 33rd ACM SIGPLAN Conference on Programming Language Design and Implementation	proceedings-article
+44	10.1037/e520602012-213	2011	10.1037/e520602012-213	Rethinking Buffer Operations in a Dual-Store Model	PsycEXTRA Dataset	dataset
+45	10.1137/1.9781611976472.3	2021	10.1137/1.9781611976472.3	A Parallel Packed Memory Array to Store Dynamic Graphs	2021 Proceedings of the Workshop on Algorithm Engineering and Experiments (ALENEX)	book-chapter
+46	10.14324/000.th.10224678	None	10.14324/000.th.10224678	Detecting Relaxed Memory Concurrency Bugs in C and C++ Compilers		dissertation
+47	10.1108/aa.2000.03320daf.003	2000	10.1108/aa.2000.03320daf.003	New buffer store by Excel doubles machine throughput	Assembly Automation	journal-article
+48	10.1088/0268-1242/6/9a/013	1991	10.1088/0268-1242/6/9a/013	Relaxed buffer layers	Semiconductor Science and Technology	journal-article
+49	10.1016/0026-2714(73)90067-x	1973	10.1016/0026-2714(73)90067-x	Fast buffer store has self-control	Microelectronics Reliability	journal-article
+50	10.1007/978-3-319-91746-7_16	2018	10.1007/978-3-319-91746-7_16	Store Memory	Comics Memory	book-chapter
+51	10.1007/978-3-031-01764-3_4	2020	10.1007/978-3-031-01764-3_4	Total Store Order and the x86 Memory Model	Synthesis Lectures on Computer Architecture	book-chapter
+52	10.1007/978-3-658-12680-3_4	2016	10.1007/978-3-658-12680-3_4	Dynamic Partial Order Reduction in Stateful Model Checking	Complete Symbolic Simulation of SystemC Models	book-chapter
+53	10.1007/s11083-011-9217-1	2012	10.1007/s11083-011-9217-1	Complete Multipartite Graphs and the Relaxed Coloring Game	Order	journal-article
+54	10.1145/195470.195534	1994	10.1145/195470.195534	Dynamic memory disambiguation using the memory conflict buffer	ACM SIGPLAN Notices	journal-article
+55	10.1109/tvcg.2013.72	2014	10.1109/tvcg.2013.72	Memory-Hazard-Aware K-Buffer Algorithm for Order-Independent Transparency Rendering	IEEE Transactions on Visualization and Computer Graphics	journal-article
+56	10.1145/381792.195534	1994	10.1145/381792.195534	Dynamic memory disambiguation using the memory conflict buffer	ACM SIGOPS Operating Systems Review	journal-article
+57	10.1109/csac.2004.2	None	10.1109/csac.2004.2	A Dynamic Technique for Eliminating Buffer Overflow Vulnerabilities (and Other Memory Errors)	20th Annual Computer Security Applications Conference	proceedings-article
+58	10.1016/b978-0-08-092582-0.50011-5	1992	10.1016/b978-0-08-092582-0.50011-5	Systems Modeled by Second Order Partial Differential Equations	Dynamic Modeling of Transport Process Systems	book-chapter
+59	10.1016/b978-0-08-092582-0.50010-3	1992	10.1016/b978-0-08-092582-0.50010-3	Systems Modeled by First Order Partial Differential Equations	Dynamic Modeling of Transport Process Systems	book-chapter
+60	10.4324/9781315784854-10	2014	10.4324/9781315784854-10	Memory: Long-term store	Essential Cognitive Psychology	book-chapter
+61	10.1109/iccd.2007.4601888	2007	10.1109/iccd.2007.4601888	A position-insensitive finished store buffer	2007 25th International Conference on Computer Design	proceedings-article
+62	10.1109/isscc.1959.1157040	1959	10.1109/isscc.1959.1157040	Twistor buffer store	1959 IEEE International Solid-State Circuits Conference. Digest of Technical Papers	proceedings-article
+63	10.1037/e570492006-001	2006	10.1037/e570492006-001	Memory Masters: How Savants Store Information	PsycEXTRA Dataset	dataset
+64	10.1117/3.866274.ch8	None	10.1117/3.866274.ch8	Relaxed Sampling Constraints with Partial Propagations	Numerical Simulation of Optical Wave Propagation with Examples in MATLAB	book-chapter
+65	10.4324/9780203977651-10	2005	10.4324/9780203977651-10	The multi-store model	Memory and Forgetting	book-chapter
+66	10.7153/jmi-2023-17-35	2023	10.7153/jmi-2023-17-35	A new partial order based on core partial order and star partial order	Journal of Mathematical Inequalities	journal-article
+67	10.1557/proc-809-b1.4	2004	10.1557/proc-809-b1.4	Ultra-thin strain relaxed SiGe buffer layers with 40% Ge	MRS Proceedings	journal-article
+68	10.1524/itit.1977.19.16.173	1977	10.1524/itit.1977.19.16.173	Modelling and analysis of store-and-forward data switching centres with finite buffer memory and acknowledgement signalling / Modellbildung und Analyse von Teilstreckenvermittlungen unter Berücksichtigung des endlichen Speichers und der Quittungssignalisierung	itit	journal-article
+69	10.4028/3-908451-13-2.797	2005	10.4028/3-908451-13-2.797	Thin SiGe Relaxed Buffer for Strain Adjustment	Solid State Phenomena	book-chapter
+70	10.1145/195473.195534	1994	10.1145/195473.195534	Dynamic memory disambiguation using the memory conflict buffer	Proceedings of the sixth international conference on Architectural support for programming languages and operating systems	proceedings-article
+71	10.1093/acprof:oso/9780198528012.003.0008	2007	10.1093/acprof:oso/9780198528012.003.0008	Long-term memory and the episodic buffer	Working Memory, Thought, and Action	book-chapter
+72	10.1080/09658211.2021.1990347	2022	10.1080/09658211.2021.1990347	On our susceptibility to external memory store manipulation: examining the influence of perceived reliability and expected access to an external store	Memory	journal-article
+73	10.4324/9781315637358-11	2016	10.4324/9781315637358-11	The Permanent Store	Memory	book-chapter
+74	10.1002/num.22006	2016	10.1002/num.22006	Existence and convergence of <scp>G</scp>alerkin approximation for second order hyperbolic equations with memory term	Numerical Methods for Partial Differential Equations	journal-article
+75	10.1007/springerreference_62608	None	10.1007/springerreference_62608	Partial Order	SpringerReference	reference-entry
+76	10.1002/9781119207832.ch13	2012	10.1002/9781119207832.ch13	The New Order and its Challenges	Store Wars	other
+77	10.1111/nyas.15402/v2/response1	2025	10.1111/nyas.15402/v2/response1	"Author response for ""Python cardiomyocytes store lipids to buffer against hyperlipidemia"""		peer-review
+78	10.1145/2400682.2400701	2013	10.1145/2400682.2400701	An integrated pseudo-associativity and relaxed-order approach to hardware transactional memory	ACM Transactions on Architecture and Code Optimization	journal-article
+79	10.31234/osf.io/q9kw5	2018	10.31234/osf.io/q9kw5	States in working memory store items with different memory quality		posted-content
+80	10.1016/0042-207x(63)91458-1	1963	10.1016/0042-207x(63)91458-1	Thin film memory store	Vacuum	journal-article
+81	10.1109/fmcad.2016.7886672	2016	10.1109/fmcad.2016.7886672	Hybrid partial order reduction with under-approximate dynamic points-to and determinacy information	2016 Formal Methods in Computer-Aided Design (FMCAD)	proceedings-article
+82	10.4324/9781003357360-5	2022	10.4324/9781003357360-5	On our susceptibility to external memory store manipulation: examining the influence of perceived reliability and expected access to an external store	Memory Online	book-chapter
+83	10.1109/fpl.2014.6927477	2014	10.1109/fpl.2014.6927477	Secure partial dynamic reconfiguration with unsecured external memory	2014 24th International Conference on Field Programmable Logic and Applications (FPL)	proceedings-article
+84	10.1109/icct.2000.890903	None	10.1109/icct.2000.890903	A dynamic partial buffer sharing scheme for packet loss control in congested networks	WCC 2000 - ICCT 2000. 2000 International Conference on Communication Technology Proceedings (Cat. No.00EX420)	proceedings-article
+85	10.1016/j.cortex.2018.05.015	2019	10.1016/j.cortex.2018.05.015	The phonological loop as a buffer store: An update	Cortex	journal-article
+86	10.1109/micro.1998.742778	None	10.1109/micro.1998.742778	Improving I/O performance with a conditional store buffer	Proceedings. 31st Annual ACM/IEEE International Symposium on Microarchitecture	proceedings-article
+87	10.1145/3293882.3338987	2019	10.1145/3293882.3338987	Conditional dynamic partial order reduction and optimality results	Proceedings of the 28th ACM SIGSOFT International Symposium on Software Testing and Analysis	proceedings-article
+88	10.21236/ada604007	1987	10.21236/ada604007	Aspects of Cache Memory and Instruction Buffer Performance		report
+89	10.21236/ada087490	1980	10.21236/ada087490	Store Separation Testing Techniques at the Arnold Engineering Development Center, Volume 4. Description of Dynamic Drop Store Separation Testing		report
+90	10.1109/isca.2018.00028	2018	10.1109/isca.2018.00028	Non-Speculative Store Coalescing in Total Store Order	2018 ACM/IEEE 45th Annual International Symposium on Computer Architecture (ISCA)	proceedings-article
+91	10.1016/b978-0-08-092582-0.50012-7	1992	10.1016/b978-0-08-092582-0.50012-7	Systems Modeled by First/Second Order, Multidimensional and Multidomain Partial Differential Equations	Dynamic Modeling of Transport Process Systems	book-chapter
+92	10.1145/1047659.1040315	2005	10.1145/1047659.1040315	Dynamic partial-order reduction for model checking software	ACM SIGPLAN Notices	journal-article
+93	10.1109/tase.2026.3717665/mm1	None	10.1109/tase.2026.3717665/mm1	Event-triggered Practical Prescribed-time Consensus Tracking of Second-order Nonlinear Multiagent Systems-A Novel Edge-based Dynamic Memory Approach_supp1-3717665.pdf		component
+94	10.1037/e382312004-008	1990	10.1037/e382312004-008	Science: Ability to store memory linked to glucose levels	PsycEXTRA Dataset	dataset
+95	10.64898/2026.02.18.706716	2026	10.64898/2026.02.18.706716	Minipoa: A minimizer-based method for fast and memory-efficient partial order alignment		posted-content
+96	10.2172/10194922	1993	10.2172/10194922	MBE grown III-V strain relaxed buffer layers and superlattices characterized by atomic force microscopy		report
+97	10.3390/math9070718	2021	10.3390/math9070718	Partial Anti-Synchronization of the Fractional-Order Chaotic Systems through Dynamic Feedback Control	Mathematics	journal-article
+98	10.23919/acc50511.2021.9483319	2021	10.23919/acc50511.2021.9483319	Robust Adaptive Dynamic Mode Decomposition for Reduce Order Modelling of Partial Differential Equations	2021 American Control Conference (ACC)	proceedings-article
+99	10.7717/peerj.11046/fig-5	None	10.7717/peerj.11046/fig-5	Figure 5: Maximum read and write weights for DNC external memory buffer.		component
+100	10.1037/0278-7393.30.3.656	2004	10.1037/0278-7393.30.3.656	The Phonological Store of Working Memory: Is It Phonological and Is It a Store?	Journal of Experimental Psychology: Learning, Memory, and Cognition	journal-article

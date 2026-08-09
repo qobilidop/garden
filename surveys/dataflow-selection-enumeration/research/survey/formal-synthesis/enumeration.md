@@ -1,0 +1,218 @@
+# Exact fiber generation and enumeration
+
+## Symbolic setting
+
+Assume symbolic terms represent every ordinary primitive and every outcome
+predicate exactly. A model oracle for a formula returns \(\mathsf{sat}(m)\),
+\(\mathsf{unsat}\), or \(\mathsf{unknown}\). Completeness is claimed only after
+\(\mathsf{unsat}\); \(\mathsf{unknown}\) produces an explicit incomplete
+result.
+
+## Concolic fiber generation
+
+Given a model input \(m\in\mathcal X_A\), obtained from a solver query whose
+formula implies \(A\), generate its observation and guard without first
+guessing an abstract observation. Maintain
+
+\[
+(\gamma,T,\mu),
+\]
+
+where \(\gamma\) is the symbolic guard, \(T\) the discovered partial site map,
+and \(\mu\) a candidate-local memo from graph-node identity to
+concrete/symbolic value pairs.
+
+Evaluation of a demanded node returns \((c_v,e_v)\):
+
+1. An input returns its value under \(m\) and its symbolic variable.
+2. An ordinary node demands all operands, applies the concrete primitive to
+   concrete values, and the exact symbolic primitive to symbolic values.
+3. A selection site:
+   - first evaluates its selector, including any selections in that cone;
+   - computes \(\omega=\kappa_q(c_s)\);
+   - records \(T(q)=\omega\) once;
+   - conjoins the local symbolic predicate \(\chi_{q,\omega}(e_s)\);
+   - evaluates exactly the case roots in \(C_q(\omega)\); and
+   - constructs the selected symbolic result combiner.
+
+A memo hit reuses the pair and does not duplicate a shared site. The symbolic
+component must not replace an ordinary symbolic value with its value under
+\(m\); only selection outcomes are specialized. Such concretization is
+unsound: it typically weakens the outcome guard while overspecializing the
+residual.
+
+Write
+
+\[
+\operatorname{Gen}(G,m,R)
+=(T_m,g_m,\mathcal R_m),
+\]
+
+where the complete observation guard is \(A\land g_m\) and \(\mathcal R_m\) is
+the residual symbolic output.
+
+## Generator theorem
+
+Assuming exact symbolic primitives, total deterministic value semantics, and
+memoization by node identity,
+
+\[
+x\models A\land g_m
+\quad\Longleftrightarrow\quad
+A(x)\land T_G(x,R)=T_m,
+\]
+
+and
+
+\[
+x\models A\land g_m
+\quad\Longrightarrow\quad
+\llbracket\mathcal R_m\rrbracket_x
+=\operatorname{val}_x|_R.
+\]
+
+*Proof sketch.* Treat evaluation as a state transformer. A call entered with
+guard \(g_{\mathrm{in}}\) returns guard \(g_{\mathrm{out}}\) such that
+\(g_{\mathrm{out}}\Rightarrow g_{\mathrm{in}}\),
+\(m\models g_{\mathrm{out}}\), and
+
+\[
+  x\models A\land g_{\mathrm{out}}
+  \Longrightarrow
+  \llbracket e_v\rrbracket_x=\operatorname{val}_x(v).
+\]
+
+Guards accumulate monotonically, so a memoized residual remains valid when it
+is reused: the current guard implies its creation guard. At a selection, first
+evaluating the selector establishes its post-guard; under that guard,
+\(\chi_{q,\omega}(e_s)\) is equivalent to the global predicate
+\(p_{q,\omega}(x)\). Adding it preserves the invariant for the selected
+combiner. The final generated guard is therefore the observed-outcome guard,
+which proves fiber exactness and residual correctness.
+
+The generator's model \(m\) is already a witness for its complete guard.
+
+## Full-fiber blocking
+
+Initialize the uncovered-domain formula \(U_0=A\). At iteration \(j\):
+
+1. Query the model oracle for \(U_j\).
+2. On \(\mathsf{unknown}\), report incomplete enumeration.
+3. On \(\mathsf{unsat}\), return the accumulated results as complete.
+4. On \(\mathsf{sat}(m_j)\), compute
+   \((T_j,g_j,\mathcal R_j)=\operatorname{Gen}(G,m_j,R)\).
+5. Emit \((T_j,A\land g_j,\mathcal R_j,m_j)\).
+6. Set
+   \[
+   U_{j+1}=U_j\land\neg g_j.
+   \]
+
+The emitted guard contains \(A\); the incremental blocker need only negate
+\(g_j\) because every query already assumes \(A\). Previous blockers must not
+be folded into the emitted guard.
+
+## Enumeration theorem
+
+If there are \(K\) feasible observations and the model-producing solver
+eventually decides every query, full-fiber blocking performs exactly \(K\)
+successful invocations and one final unsatisfiable invocation. It emits every
+feasible observation once, with its exact guard, a correct residual, and a
+witness.
+
+*Proof.* Each satisfiable model lies in one nonempty exact fiber. Blocking that
+fiber prevents its repetition and cannot remove another fiber. Before all
+fibers have been blocked, an input in an unblocked fiber satisfies \(U_j\);
+after all \(K\) have been blocked, the fiber-partition theorem makes \(U_K\)
+unsatisfiable.
+
+This is a \(K\)-linear model-producing-invocation theorem under a unit-cost
+oracle abstraction. It is not an OutputP, IncP, polynomial-delay, ordinary
+decision-oracle, or wall-clock theorem. A decision oracle returns only a bit;
+obtaining a witness requires self-reduction or a function/model oracle.
+
+The semantic fact that every input has one unique observation and the
+algorithmic fact that the enumerator emits no observation twice are distinct.
+The former follows from determinacy; the latter follows here from exact
+full-fiber blocking. Neither fact implies that the conjunction \(g_j\) is
+literal-minimal.
+
+## Reachability-variable projected-AllSMT baseline
+
+For every node \(v\), construct its whole-graph symbolic value term \(e_v(x)\). For
+each case position define a direct membership predicate
+
+\[
+  \eta_{q,j}(d)\Longleftrightarrow
+  j\in C_q(\kappa_q(d)).
+\]
+
+Define every reachability indicator by the exact backward equation
+
+\[
+\begin{split}
+a_v \leftrightarrow{}& [v\in R]\\
+&\lor\!\!\bigvee_{u\in N:\,(u,j,v)\in E} a_u\\
+&\lor\!\!\bigvee_{q:\,v=s_q} a_q\\
+&\lor\!\!\bigvee_{q,j:\,v=c_{q,j}}
+  \left(a_q\land\eta_{q,j}(e_{s_q})\right).
+\end{split}
+\]
+
+Thus multiple consumers contribute by disjunction, while the biconditional
+forbids disconnected or otherwise unreachable nodes from being assigned
+spurious reachability. Acyclicity makes the equations a unique definitional
+circuit. The direct \(\eta\) circuit should be used for succinct outcome
+languages; extensionally disjoining every outcome can be exponentially larger.
+
+For every selection site introduce a finite-domain observation variable
+
+\[
+z_q=\operatorname{ite}
+(a_q,\operatorname{encode}(\kappa_q(e_{s_q})),\mathsf{unobs}_q).
+\]
+
+Project the graph formula onto the vector \(Z=(z_q)\). Standard AllSMT,
+projected enumeration, or decision-diagram compilation then enumerates the
+feasible totalized observations. Internal values and reachability variables are
+unimportant variables.
+
+This projection directly supplies the observation index and, when the engine
+is model-producing, a witness. Fixing a projected tuple gives an exact fiber
+predicate. Projection alone does not construct a fiber-wide residual; the full
+record contract needs a separate exact residualization step.
+
+## Reduction theorem
+
+For every input \(x\), the reachability/outcome encoding has a unique \(Z\) equal to
+\(\overline T_G(x,R)\). Thus projected enumeration over \(Z\) is in bijection
+with the feasible sparse observations.
+
+For each feasible \(\tau\), let \(\overline\tau\) be its totalization. Then,
+under the graph definitions,
+
+\[
+A(x)\land Z=\overline\tau
+\quad\Longleftrightarrow\quad
+A(x)\land g_\tau(x).
+\]
+
+Consequently full-fiber blocking and naive projected AllSMT over complete
+totalized observation tuples enumerate the same partition and share the same
+\(K+1\) model-producing-invocation count. Full-fiber blocking lazily constructs
+an input-only substitution of the projected-assignment blocker. An algorithm
+that emits short partial cubes has a different output object: one cube can
+represent several complete observations.
+
+## Representation tradeoff
+
+Full-fiber generation avoids symbolically constructing unobserved cones for one
+observation, directly returns input guards and residuals, and can keep each
+observation sparse. The reachability/outcome encoding constructs one global
+graph of size linear in the weighted source DAG plus the supplied classifier,
+outcome, and direct case-membership circuits. It shares that encoding across
+all observations and can use mature disjoint-enumeration algorithms that avoid
+ordinary blocking-clause accumulation. No succinctness claim is made when
+those circuits are given only as extensional outcome tables.
+
+These are representation and implementation tradeoffs. No general asymptotic
+advantage follows from the current theory.

@@ -1,0 +1,4 @@
+rank	openalex_id	year	doi	title	venue	type
+1	W3205648430	2021	https://doi.org/10.1145/3479394.3479411	From Non-determinism to Goroutines: A Fair Implementation of Curry in Go		conference-paper
+2	W2515172205	2017	https://doi.org/10.1007/978-3-319-63139-4_6	A New Functional-Logic Compiler for Curry: Sprite	Lecture notes in computer science	conference-paper
+3	W4385408612	2023	https://doi.org/10.15760/etd.3564	Implementing a Functional Logic Programming Language via the Fair Scheme		dissertation

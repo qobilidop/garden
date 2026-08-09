@@ -1,0 +1,14 @@
+rank	source_id	year	doi	title	venue	type
+1	citation-1	2002	-	Model Predictive Control Based on Linear Programming — The Explicit Solution	IEEE Transactions on Automatic Control	journal-article
+2	citation-2	2003	-	A Geometric Algorithm for Multi-Parametric Linear Programming	Journal of Optimization Theory and Applications	journal-article
+3	citation-3	2005	-	Lexicographic Perturbation for Multiparametric Linear Programming with Applications to Control	Automatica	submitted-article
+4	citation-4	1995	-	Postoptimal Analyses, Parametric Programming and Related Topics	Walter de Gruyter	book
+5	citation-5	1996	10.1016/0166-218X(95)00026-N	Reverse Search for Enumeration	Discrete Applied Mathematics	journal-article
+6	citation-6	1997	-	Introduction to Linear Optimization	Athena Scientific	book
+7	citation-7	2005	-	A Method for Obtaining Continuous Solutions to Multiparametric Linear Programs	IFAC World Congress	proceedings-article
+8	citation-8	2003	-	Constrained Optimal Control of Linear and Hybrid Systems	Lecture Notes in Control and Information Sciences	book
+9	citation-9	1983	-	Linear Programming	John Wiley & Sons	book
+10	citation-10	1997	-	Handbook of Discrete and Computational Geometry	CRC Press	book
+11	citation-11	1992	-	A Pivoting Algorithm for Convex Hulls and Vertex Enumeration of Arrangements and Polyhedra	Discrete and Computational Geometry	journal-article
+12	citation-12	-	-	Frequently Asked Questions in Polyhedral Computation	ETH Zurich	webpage
+13	citation-13	2004	-	Multi-Parametric Toolbox (MPT)	MPT project	software-webpage

@@ -1,0 +1,23 @@
+query_id	last_completed	outcome	notes
+crossref-symbolic-residual	2026-08-04	baseline-covered	Initial mapping baseline
+arxiv-symbolic-residual	2026-08-04	baseline-covered	Initial mapping baseline
+crossref-projected-enumeration	2026-08-04	baseline-covered	Initial mapping baseline
+arxiv-projected-enumeration	2026-08-04	baseline-covered	Initial mapping baseline
+crossref-demand-observation	2026-08-04	baseline-covered	Initial mapping baseline
+arxiv-demand-observation	2026-08-04	baseline-covered	Initial mapping baseline
+crossref-term-graph-fingerprint	2026-08-04	baseline-covered	Initial mapping baseline
+arxiv-term-graph-fingerprint	2026-08-04	baseline-covered	Initial mapping baseline
+crossref-observer-partition	2026-08-04	baseline-covered	Initial mapping baseline
+arxiv-observer-partition	2026-08-04	baseline-covered	Initial mapping baseline
+crossref-neural-regions	2026-08-04	baseline-covered	Initial mapping baseline
+arxiv-neural-regions	2026-08-04	baseline-covered	Initial mapping baseline
+crossref-parametric-regions	2026-08-04	baseline-covered	Initial mapping baseline
+arxiv-parametric-regions	2026-08-04	baseline-covered	Initial mapping baseline
+crossref-symbolic-por	2026-08-04	baseline-covered	Initial mapping baseline
+arxiv-symbolic-por	2026-08-04	baseline-covered	Initial mapping baseline
+crossref-directed-unfolding	2026-08-04	baseline-covered	Initial mapping baseline
+arxiv-directed-unfolding	2026-08-04	baseline-covered	Initial mapping baseline
+crossref-dataflow-demand	2026-08-04	baseline-covered	Initial mapping baseline
+arxiv-dataflow-demand	2026-08-04	baseline-covered	Initial mapping baseline
+crossref-selection-fibers	2026-08-04	baseline-covered	Initial mapping baseline
+arxiv-selection-fibers	2026-08-04	baseline-covered	Initial mapping baseline

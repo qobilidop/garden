@@ -1,0 +1,51 @@
+rank	openalex_id	year	doi	title	venue	type
+1	W1591875060	1993		Scheduling Dynamic Dataflow Graphs with Bounded Memory		article
+2	W2015509025	1993	https://doi.org/10.1007/bf01088696	Predicting program execution times by analyzing static and dynamic program paths	Real-Time Systems	article
+3	W4391558363	2024	https://doi.org/10.1145/3597503.3623345	Dataflow Analysis-Inspired Deep Learning for Efficient Vulnerability Detection		conference-paper
+4	W2114489587	2015	https://doi.org/10.5075/epfl-thesis-6663	Analysis and optimization of dynamic dataflow programs	Infoscience (Ecole Polytechnique Fédérale de Lausanne)	dissertation
+5	W2002003432	2008	https://doi.org/10.1109/dsn.2008.4630118	SymPLFIED: Symbolic program-level fault injection and error detection framework		conference-paper
+6	W1965945673	2014		Compositional Symbolic Execution with Memoized Replay	Texas ScholarWorks (Texas Digital Library)	dissertation
+7	W2553403975	2016	https://doi.org/10.1007/s11265-016-1193-7	Performance Analysis of Weakly-Consistent Scenario-Aware Dataflow Graphs	Journal of Signal Processing Systems	article
+8	W54141638	2013		Real-time scheduling of dataflow graphs	HAL (Le Centre pour la Communication Scientifique Directe)	dissertation
+9	W2110346330	2014	https://doi.org/10.4204/eptcs.145.7	Worst-case Throughput Analysis for Parametric Rate and Parametric Actor Execution Time Scenario-Aware Dataflow Graphs	Electronic Proceedings in Theoretical Computer Science	article
+10	W1938198558	1999		Parameterized Modeling and Scheduling of Dataflow Graphs	University Libraries (University of Maryland)	report
+11	W2163014826	1999	https://doi.org/10.1145/301177.301523	Scheduling hardware/software systems using symbolic techniques		conference-paper
+12	W2790911601	2018	https://doi.org/10.1145/3236024.3236085	Code vectors: understanding programs through embedded abstracted symbolic traces		conference-paper
+13	W2507038492	2016	https://doi.org/10.1109/tcad.2016.2597223	Parameterized Dataflow Scenarios	IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems	article
+14	W2125802341	2010	https://doi.org/10.1145/1880050.1880053	Buffer capacity computation for throughput-constrained modal task graphs	ACM Transactions on Embedded Computing Systems	article
+15	W1985449307	1989	https://doi.org/10.1145/63238.63239	Computing as a discipline	Communications of the ACM	article
+16	W2139212997	2000	https://doi.org/10.1145/363911.363914	Graph rewrite systems for program optimization	ACM Transactions on Programming Languages and Systems	article
+17	W1960508220	2015	https://doi.org/10.5555/2830865.2830876	Parametrized dataflow scenarios	TU/e Research Portal	report
+18	W2163529295	2007	https://doi.org/10.1016/j.scico.2007.01.014	Chronos: A timing analyzer for embedded software	Science of Computer Programming	article
+19	W2164392635	2000	https://doi.org/10.1145/347324.383378	Finding bugs with a constraint solver		conference-paper
+20	W3100198463	2003	https://doi.org/10.1145/781131.781153	A static analyzer for large safety-critical software		conference-paper
+21	W2058518337	2003	https://doi.org/10.1016/s1571-0661(04)80611-x	Towards Symbolic Analysis of Visual Modeling Languages	Electronic Notes in Theoretical Computer Science	article
+22	W3036603968	2020	https://doi.org/10.1109/access.2020.3002842	A Systematic Literature Review of Android Malware Detection Using Static Analysis	IEEE Access	review
+23	W2809455012	2011		Performance analysis of weakly-consistent scenario-aware dataflow graphs	TNO Repository	article
+24	W4319870572	2023	https://doi.org/10.1145/3543622.3573196	Eliminating Excessive Dynamism of Dataflow Circuits Using Model Checking		conference-paper
+25	W2032401773	1996	https://doi.org/10.1006/jpdc.1996.0107	Cilk: An Efficient Multithreaded Runtime System	Journal of Parallel and Distributed Computing	article
+26	W4400582453	2024	https://doi.org/10.1145/3660825	Natural Symbolic Execution-Based Testing for Big Data Analytics	Proceedings of the ACM on software engineering.	article
+27	W2130711572	2000	https://doi.org/10.1145/349299.349342	ABCD		conference-paper
+28	W4244413641	2011	https://doi.org/10.1145/1961296.1950396	S2E	ACM SIGPLAN Notices	article
+29	W2157954477	2014	https://doi.org/10.1109/access.2014.2332453	Toward Scalable Systems for Big Data Analytics: A Technology Tutorial	IEEE Access	article
+30	W2009315879	2011	https://doi.org/10.1016/j.scico.2011.04.001	Symbolic execution of Reo circuits using constraint automata	Science of Computer Programming	article
+31	W1975455609	1997	https://doi.org/10.1145/244795.244801	Protocol specifications and component adaptors	ACM Transactions on Programming Languages and Systems	article
+32	W2082318969	1997	https://doi.org/10.1145/262004.262005	Nesting of reducible and irreducible loops	ACM Transactions on Programming Languages and Systems	article
+33	W2907463061	2018	https://doi.org/10.1109/access.2018.2890150	FPGA-Based Accelerators of Deep Learning Networks for Learning and Classification: A Review	IEEE Access	article
+34	W2025304834	1998	https://doi.org/10.1145/271771.271790	Automatic test data generation using constraint solving techniques		conference-paper
+35	W2516577067	2016	https://doi.org/10.1016/j.diin.2016.04.002	BinGold: Towards robust binary analysis by extracting the semantics of binary code as semantic flow graphs (SFGs)	Digital Investigation	article
+36	W2093694045	2011	https://doi.org/10.1002/cpe.1763	Worst‐case execution time analysis‐driven object cache design	Concurrency and Computation Practice and Experience	article
+37	W2149605564	2003		A Decomposed Symbolic Approach to Reactive Planning	DSpace@MIT (Massachusetts Institute of Technology)	dissertation
+38	W2186995949	2002		Phased Computation Graphs in the Polyhedral Model	DSpace@MIT (Massachusetts Institute of Technology)	other
+39	W4317042421	2023	https://doi.org/10.1007/s42979-022-01573-4	Code Generation by Example Using Symbolic Machine Learning	SN Computer Science	article
+40	W2002157613	1999	https://doi.org/10.1145/319301.319347	Efficient logic variables for distributed computing	ACM Transactions on Programming Languages and Systems	article
+41	W3109474872	2020	https://doi.org/10.1145/3428247	Learning graph-based heuristics for pointer analysis without handcrafting application-specific features	Proceedings of the ACM on Programming Languages	article
+42	W4403368714	2024	https://doi.org/10.48550/arxiv.2408.01909	Scaling Symbolic Execution to Large Software Systems	arXiv (Cornell University)	preprint
+43	W2065922404	2014	https://doi.org/10.1145/2666357.2597817	How to compute worst-case execution time by optimization modulo theory and a clever encoding of program semantics	ACM SIGPLAN Notices	article
+44	W1997910015	1997	https://doi.org/10.1145/265943.265972	Mobile objects in distributed Oz	ACM Transactions on Programming Languages and Systems	article
+45	W4393577198	2024	https://doi.org/10.1145/3626202.3637570	Suppressing Spurious Dynamism of Dataflow Circuits via Latency and Occupancy Balancing		conference-paper
+46	W622973652	2011	https://doi.org/10.22028/d291-26385	Symbolic representations in WCET analysis	Publications of the UdS (Saarland University)	dissertation
+47	W2590246587	2017	https://doi.org/10.1145/3133901	The tensor algebra compiler	Proceedings of the ACM on Programming Languages	article
+48	W2566653759	2016	https://doi.org/10.1016/j.micpro.2016.12.004	Worst-case performance analysis of SDF-based parameterized dataflow	Microprocessors and Microsystems	article
+49	W1989988531	2012	https://doi.org/10.1145/2185520.2185528	Decoupling algorithms from schedules for easy optimization of image processing pipelines	ACM Transactions on Graphics	article
+50	W2301678297	2013	https://doi.org/10.2172/1078549	Compositional Dataflow Via Abstract Transition Systems		report

@@ -1,0 +1,102 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1145/1379022.1375625	2008	10.1145/1379022.1375625	Fair stateless model checking	ACM SIGPLAN Notices	journal-article
+2	10.1145/1375581.1375625	2008	10.1145/1375581.1375625	Fair stateless model checking	Proceedings of the 29th ACM SIGPLAN Conference on Programming Language Design and Implementation	proceedings-article
+3	10.1017/cbo9780511626913.001	2009	10.1017/cbo9780511626913.001	Model checking and equivalence checking	Practical Design Verification	book-chapter
+4	10.1145/3360576	2019	10.1145/3360576	Optimal stateless model checking for reads-from equivalence under sequential consistency	Proceedings of the ACM on Programming Languages	journal-article
+5	10.1007/1-4020-2603-x_5	None	10.1007/1-4020-2603-x_5	SAT and ATPG Based Equivalence Checking	Equivalence Checking of Digital Circuits	book-chapter
+6	10.1145/3092282.3092287	2017	10.1145/3092282.3092287	Stateless model checking of the Linux kernel's hierarchical read-copy-update (tree RCU)	Proceedings of the 24th ACM SIGSOFT International SPIN Symposium on Model Checking of Software	proceedings-article
+7	10.1007/978-1-4615-3190-6_8	1993	10.1007/978-1-4615-3190-6_8	Equivalence Computations	Symbolic Model Checking	book-chapter
+8	10.1007/1-4020-2603-x_7	None	10.1007/1-4020-2603-x_7	Checking Equivalence for Partial Implementations	Equivalence Checking of Digital Circuits	book-chapter
+9	10.1007/978-3-030-81685-8_16	2021	10.1007/978-3-030-81685-8_16	Stateless Model Checking Under a Reads-Value-From Equivalence	Lecture Notes in Computer Science	book-chapter
+10	10.1145/2889160.2891042	2016	10.1145/2889160.2891042	Maximally stateless model checking for concurrent bugs under relaxed memory models	Proceedings of the 38th International Conference on Software Engineering Companion	proceedings-article
+11	10.1145/2813885.2737975	2015	10.1145/2813885.2737975	Stateless model checking concurrent programs with maximal causality reduction	ACM SIGPLAN Notices	journal-article
+12	10.1007/3-540-47813-2_5	2002	10.1007/3-540-47813-2_5	An Abstract Schema for Equivalence-Checking Games	Lecture Notes in Computer Science	book-chapter
+13	10.1145/3022671.2984036	2016	10.1145/3022671.2984036	Stateless model checking with data-race preemption points	ACM SIGPLAN Notices	journal-article
+14	10.1145/2737924.2737975	2015	10.1145/2737924.2737975	Stateless model checking concurrent programs with maximal causality reduction	Proceedings of the 36th ACM SIGPLAN Conference on Programming Language Design and Implementation	proceedings-article
+15	10.1007/978-3-540-85114-1_15	None	10.1007/978-3-540-85114-1_15	Improved On-the-Fly Equivalence Checking Using Boolean Equation Systems	Lecture Notes in Computer Science	book-chapter
+16	10.21236/ada363498	1998	10.21236/ada363498	Core-Stateless Fair Queueing: Achieving Approximately Fair Bandwidth Allocations in High Speed Networks		report
+17	10.1109/milcom.2002.1179643	None	10.1109/milcom.2002.1179643	Core-stateless fair rate estimation fair queuing	MILCOM 2002. Proceedings	proceedings-article
+18	10.1016/0304-3975(84)90089-6	1984	10.1016/0304-3975(84)90089-6	On test sets for checking morphism equivalence on languages with fair distribution of letters	Theoretical Computer Science	journal-article
+19	10.1007/978-3-642-39176-7_18	2013	10.1007/978-3-642-39176-7_18	Automatic Equivalence Checking of UF+IA Programs	Lecture Notes in Computer Science	book-chapter
+20	10.1145/2858965.2814297	2015	10.1145/2858965.2814297	SATCheck: SAT-directed stateless model checking for SC and TSO	ACM SIGPLAN Notices	journal-article
+21	10.1007/b105298	2004	10.1007/b105298	Equivalence Checking of Digital Circuits		book
+22	10.1145/3276928	2018	10.1145/3276928	Replication Package for the paper	Artifact Digital Object Group	dataset
+23	10.1109/iccad.2010.5653863	2010	10.1109/iccad.2010.5653863	Efficient state space exploration: Interleaving stateless and state-based model checking	2010 IEEE/ACM International Conference on Computer-Aided Design (ICCAD)	proceedings-article
+24	10.1007/978-3-319-10575-8_2	2018	10.1007/978-3-319-10575-8_2	Temporal Logic and Fair Discrete Systems	Handbook of Model Checking	book-chapter
+25	10.1007/1-4020-2603-x_2	None	10.1007/1-4020-2603-x_2	Preliminaries	Equivalence Checking of Digital Circuits	book-chapter
+26	10.1007/1-4020-2603-x_1	None	10.1007/1-4020-2603-x_1	Introduction	Equivalence Checking of Digital Circuits	book-chapter
+27	10.1145/3360599	2019	10.1145/3360599	Effective lock handling in stateless model checking	Proceedings of the ACM on Programming Languages	journal-article
+28	10.21817/ijcsenet/2020/v9i3/200903013	2020	10.21817/ijcsenet/2020/v9i3/200903013	Stateless Model Checking for the C/C++11 Memory Model	International Journal of Computer Science Engineering	journal-article
+29	10.15760/etd.2459	2000	10.15760/etd.2459	Scalable Equivalence Checking for Behavioral Synthesis		report
+30	10.1145/2983990.2984036	2016	10.1145/2983990.2984036	Stateless model checking with data-race preemption points	Proceedings of the 2016 ACM SIGPLAN International Conference on Object-Oriented Programming, Systems, Languages, and Applications	proceedings-article
+31	10.15760/etd.1066	2000	10.15760/etd.1066	Equivalence Checking for High-Assurance Behavioral Synthesis		report
+32	10.1007/1-4020-2603-x_6	None	10.1007/1-4020-2603-x_6	Exploiting Similarities	Equivalence Checking of Digital Circuits	book-chapter
+33	10.1007/3-540-48387-x_20	1999	10.1007/3-540-48387-x_20	Implementing Model Checking and Equivalence Checking for Time Petri Nets by the RT-MEC Tool	Lecture Notes in Computer Science	book-chapter
+34	10.1007/1-4020-2603-x_9	None	10.1007/1-4020-2603-x_9	Formal Basics	Equivalence Checking of Digital Circuits	book-chapter
+35	10.21203/rs.3.rs-1789092/v1	2022	10.21203/rs.3.rs-1789092/v1	Stateless and Rule-Based Verification For Compliance Checking Applications		posted-content
+36	10.1016/s0890-5401(03)00171-8	2004	10.1016/s0890-5401(03)00171-8	DP lower bounds for equivalence-checking and model-checking of one-counter automata	Information and Computation	journal-article
+37	10.1109/apsec.2013.55	2013	10.1109/apsec.2013.55	Harnessing SMT-Based Bounded Model Checking through Stateless Explicit-State Exploration	2013 20th Asia-Pacific Software Engineering Conference (APSEC)	proceedings-article
+38	10.1007/1-4020-2530-0_6	None	10.1007/1-4020-2530-0_6	Formal Verification for Nonlinear Analog Systems: Approaches to Model and Equivalence Checking	Advanced Formal Verification	book-chapter
+39	10.1007/978-3-642-20674-0_7	2011	10.1007/978-3-642-20674-0_7	Improved Bounded Model Checking for a Fair Branching-Time Temporal Epistemic Logic	Lecture Notes in Computer Science	book-chapter
+40	10.1145/2858965.2814282	2015	10.1145/2858965.2814282	Stateless model checking of event-driven applications	ACM SIGPLAN Notices	journal-article
+41	10.1145/2814270.2814297	2015	10.1145/2814270.2814297	SATCheck: SAT-directed stateless model checking for SC and TSO	Proceedings of the 2015 ACM SIGPLAN International Conference on Object-Oriented Programming, Systems, Languages, and Applications	proceedings-article
+42	10.1007/978-3-030-84629-9_7	2021	10.1007/978-3-030-84629-9_7	PatEC: Pattern-Based Equivalence Checking	Lecture Notes in Computer Science	book-chapter
+43	10.1007/s00236-016-0275-0	2017	10.1007/s00236-016-0275-0	Stateless model checking for TSO and PSO	Acta Informatica	journal-article
+44	10.1007/1-4020-2603-x_10	None	10.1007/1-4020-2603-x_10	The Latch Correspondence Problem	Equivalence Checking of Digital Circuits	book-chapter
+45	10.1145/3158105	2018	10.1145/3158105	Effective stateless model checking for C/C++ concurrency	Proceedings of the ACM on Programming Languages	journal-article
+46	10.1007/1-4020-2603-x_8	None	10.1007/1-4020-2603-x_8	Permutation Independent Boolean Comparison	Equivalence Checking of Digital Circuits	book-chapter
+47	10.1163/2211-4394_rwilwo_com_031988	None	10.1163/2211-4394_rwilwo_com_031988	III.G.7 CONVENTION RELATING TO THE STATUS OF STATELESS PERSONS (WITH SCHEDULE)	International Law &amp; World Order: Weston's &amp; Carlson's Basic Documents	dataset
+48	10.1007/s10703-025-00479-0	2025	10.1007/s10703-025-00479-0	Awaiting for Godot: stateless model checking that avoids executions where nothing happens	Formal Methods in System Design	journal-article
+49	10.1109/icst.2009.39	2009	10.1109/icst.2009.39	Proving Functional Equivalence of Two AES Implementations Using Bounded Model Checking	2009 International Conference on Software Testing Verification and Validation	proceedings-article
+50	10.1177/0037549710383610	2011	10.1177/0037549710383610	Stateless Fair Admission Control	SIMULATION	journal-article
+51	10.1007/1-4020-2603-x_4	None	10.1007/1-4020-2603-x_4	Use of Canonical Data Structures	Equivalence Checking of Digital Circuits	book-chapter
+52	10.1007/978-3-319-66845-1_15	2017	10.1007/978-3-319-66845-1_15	Testing and Verifying Chain Repair Methods for Corfu Using Stateless Model Checking	Lecture Notes in Computer Science	book-chapter
+53	10.1163/2211-4394_ilwo_com_031988	None	10.1163/2211-4394_ilwo_com_031988	III.G.7 CONVENTION RELATING TO THE STATUS OF STATELESS PERSONS (WITH SCHEDULE)	International Law &amp; World Order: Weston's &amp; Carlson's Basic Documents	dataset
+54	10.1145/2814270.2814282	2015	10.1145/2814270.2814282	Stateless model checking of event-driven applications	Proceedings of the 2015 ACM SIGPLAN International Conference on Object-Oriented Programming, Systems, Languages, and Applications	proceedings-article
+55	10.1002/dac.763	2006	10.1002/dac.763	Core‐stateless fair rate estimation fair queuing	International Journal of Communication Systems	journal-article
+56	10.1109/iccad.2010.5651402	2010	10.1109/iccad.2010.5651402	On behavioral model equivalence checking for large analog/mixed signal systems	2010 IEEE/ACM International Conference on Computer-Aided Design (ICCAD)	proceedings-article
+57	10.1007/11506843_23	2005	10.1007/11506843_23	SDL Versus C Equivalence Checking	Lecture Notes in Computer Science	book-chapter
+58	10.1093/comjnl/bxu127	2015	10.1093/comjnl/bxu127	Facilitating Multicore Bounded Model Checking with Stateless Explicit-State Exploration	The Computer Journal	journal-article
+59	10.2139/ssrn.4092940	2022	10.2139/ssrn.4092940	Stateless and Rule-Based Verification for Compliance Checking Applications	SSRN Electronic Journal	journal-article
+60	10.1163/9789004637191_007	1997	10.1163/9789004637191_007	The Convention Relating to the Status of Stateless Persons	Fair Immigration Proceedings in Europe	book-chapter
+61	10.1145/3276505	2018	10.1145/3276505	Optimal stateless model checking under the release-acquire semantics	Proceedings of the ACM on Programming Languages	journal-article
+62	10.5220/0002574300030008	2005	10.5220/0002574300030008	Model-checking Inherently Fair Linear-time Properties	Proceedings of the 3rd International Workshop on Modelling, Simulation, Verification and Validation of Enterprise Information Systems	proceedings-article
+63	10.1163/ilwo-iiig7	None	10.1163/ilwo-iiig7	III.G.7 Convention Relating to the Status of Stateless Persons (with schedule) (28 September 1954)	International Law &amp; World Order	book-chapter
+64	10.1109/tssa.2014.7065931	2014	10.1109/tssa.2014.7065931	Analysis of core-stateless fair queuing for fair bandwidth allocation in an IP network	2014 8th International Conference on Telecommunication Systems Services and Applications (TSSA)	proceedings-article
+65	10.5220/0014931700004015	2026	10.5220/0014931700004015	PLCEQ: Behavioural Equivalence Checking for Industrial PLC Software Migration	Proceedings of the 21st International Conference on Evaluation of Novel Approaches to Software Engineering	proceedings-article
+66	10.4108/eai.14-12-2015.2262622	2016	10.4108/eai.14-12-2015.2262622	Equivalence and Minimization for Model Checking Labeled Markov Chains	Proceedings of the 9th EAI International Conference on Performance Evaluation Methodologies and Tools	proceedings-article
+67	10.1007/s10009-019-00514-6	2019	10.1007/s10009-019-00514-6	Stateless model checking of the Linux kernel’s read–copy update (RCU)	International Journal on Software Tools for Technology Transfer	journal-article
+68	10.1007/978-3-540-75596-8_36	None	10.1007/978-3-540-75596-8_36	On-the-Fly Model Checking of Fair Non-repudiation Protocols	Lecture Notes in Computer Science	book-chapter
+69	10.22541/au.174890229.95638720/v1	2025	10.22541/au.174890229.95638720/v1	Leveraging Sequential Equivalence Checking in PCIe Lane Bonding Logic Verification		posted-content
+70	10.21236/ada538815	2010	10.21236/ada538815	Checking Equivalence of SPMD Programs Using Non-Interference		report
+71	10.1109/act.2009.151	2009	10.1109/act.2009.151	Core-Stateless Fair Queuing for Fair Bandwidth Allocations in Internet	2009 International Conference on Advances in Computing, Control, and Telecommunication Technologies	proceedings-article
+72	10.1007/978-90-481-3065-8_9	2009	10.1007/978-90-481-3065-8_9	Checking Equivalence of States and Circuits	Quantum Circuit Simulation	book-chapter
+73	10.1007/1-4020-2603-x_3	None	10.1007/1-4020-2603-x_3	Representation of Boolean and Pseudo Boolean Functions	Equivalence Checking of Digital Circuits	book-chapter
+74	10.1016/j.tcs.2017.07.007	2018	10.1016/j.tcs.2017.07.007	Equivalence between model-checking flat counter systems and Presburger arithmetic	Theoretical Computer Science	journal-article
+75	10.7490/f1000research.1119008.1	2022	10.7490/f1000research.1119008.1	FAIR-Checker : Checking and inspecting metadata for FAIR bioinformatics resources		posted-content
+76	10.1007/s10270-014-0416-2	2016	10.1007/s10270-014-0416-2	Heuristic search for equivalence checking	Software &amp; Systems Modeling	journal-article
+77	10.1109/ccdc.2009.5194972	2009	10.1109/ccdc.2009.5194972	UFCSQ: A user fair core-stateless queue management algorithm	2009 Chinese Control and Decision Conference	proceedings-article
+78	10.1201/9781315215112-15	2017	10.1201/9781315215112-15	Equivalence Checking	Electronic Design Automation for IC Implementation, Circuit Design, and Process Technology	book-chapter
+79	10.1109/icon.2001.962384	None	10.1109/icon.2001.962384	Approximating fair bandwidth allocation in core-stateless networks	Proceedings. Ninth IEEE International Conference on Networks, ICON 2001.	proceedings-article
+80	10.1007/10722468_5	2000	10.1007/10722468_5	Verification and Optimization of a PLC Control Schedule	Lecture Notes in Computer Science	book-chapter
+81	10.1109/date.1998.655922	None	10.1109/date.1998.655922	Sequential equivalence checking without state space traversal	Proceedings Design, Automation and Test in Europe	proceedings-article
+82	10.1109/access.2018.2859783	2018	10.1109/access.2018.2859783	Fair Resource Sharing for Stateless-Core Packet-Switched Networks With Prioritization	IEEE Access	journal-article
+83	10.1007/978-3-030-59152-6_21	2020	10.1007/978-3-030-59152-6_21	Parallel Graph-Based Stateless Model Checking	Lecture Notes in Computer Science	book-chapter
+84	10.5220/0005914802540259	2016	10.5220/0005914802540259	An Enhanced Equivalence Checking Method to Handle Bugs in Programs with Recurrences	Proceedings of the 11th International Conference on Evaluation of Novel Software Approaches to Software Engineering	proceedings-article
+85	10.1101/799452	2019	10.1101/799452	Excessive drinking and checking in the rat model of Schedule-Induced Polydipsia reveal impaired bi-directional plasticity at BNST GABA synapses		posted-content
+86	10.1016/s0019-9958(78)90139-0	1978	10.1016/s0019-9958(78)90139-0	The decidability of equivalence for deterministic stateless pushdown automata	Information and Control	journal-article
+87	10.1016/j.ic.2015.07.001	2015	10.1016/j.ic.2015.07.001	Quantum Markov chains: Description of hybrid systems, decidability of equivalence, and model checking linear-time properties	Information and Computation	journal-article
+88	10.1109/fmcad.2016.7886660	2016	10.1109/fmcad.2016.7886660	Equivalence checking by logic relaxation	2016 Formal Methods in Computer-Aided Design (FMCAD)	proceedings-article
+89	10.1109/mspec.1996.499956	1996	10.1109/mspec.1996.499956	Equivalence checking at Cray Research	IEEE Spectrum	journal-article
+90	10.2139/ssrn.4511773	2023	10.2139/ssrn.4511773	Equivalence, Identity, and Unitarity Checking in Black-Box Testing of Quantum Programs		posted-content
+91	10.18255/1818-1015-2020-3-260-303	2020	10.18255/1818-1015-2020-3-260-303	Efficient Equivalence Checking Technique for Some Classes of Finite-State Machines	Modeling and Analysis of Information Systems	journal-article
+92	10.1109/glocom.2004.1378057	None	10.1109/glocom.2004.1378057	Core-stateless proportional fair queuing for AF traffic	IEEE Global Telecommunications Conference, 2004. GLOBECOM '04.	proceedings-article
+93	10.1109/glocom.2003.1258819	None	10.1109/glocom.2003.1258819	Differentiated services network with distributed-buffer core-stateless weighted fair queuing	GLOBECOM '03. IEEE Global Telecommunications Conference (IEEE Cat. No.03CH37489)	proceedings-article
+94	10.2139/ssrn.6432688	2026	10.2139/ssrn.6432688	A non-work conserving stateless core fair queuing scheduler for scalable deterministic networking		posted-content
+95	10.5220/0005513903190329	2015	10.5220/0005513903190329	A Path-based Equivalence Checking Method for Petri Net based Models of Programs	Proceedings of the 10th International Conference on Software Engineering and Applications	proceedings-article
+96	10.1145/285243.285273	1998	10.1145/285243.285273	"<i>Core</i>
+            -stateless fair queueing"	ACM SIGCOMM Computer Communication Review	journal-article
+97	10.3390/electronics10182207	2021	10.3390/electronics10182207	Static Equivalence Checking for OpenFlow Networks	Electronics	journal-article
+98	10.1007/978-3-319-46520-3_20	2016	10.1007/978-3-319-46520-3_20	Equivalence-Based Abstraction Refinement for $$\mu $$ HORS Model Checking	Lecture Notes in Computer Science	book-chapter
+99	10.1109/mp.2004.1309785	2004	10.1109/mp.2004.1309785	Equivalence checking for digital circuits	IEEE Potentials	journal-article
+100	10.1109/dac.1997.597155	None	10.1109/dac.1997.597155	Equivalence Checking Using Cuts And Heaps	Proceedings of the 34th Design Automation Conference	proceedings-article

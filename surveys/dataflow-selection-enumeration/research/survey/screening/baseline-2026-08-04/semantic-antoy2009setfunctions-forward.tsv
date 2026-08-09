@@ -1,0 +1,50 @@
+rank	source_id	year	doi	title	venue	type
+1	3a904b325b68971ad7a7117af95cd7708c3cb3d6	2025	10.1145/3756907.3756915	Determinism Types for Functional Logic Programming	ACM-SIGPLAN International Conference on Principles and Practice of Declarative Programming	Book
+2	dd440ab49acaebc372771325129e4a06c5f1dc2a	2024	10.48550/arXiv.2402.12960	Inferring Non-Failure Conditions for Declarative Programs	Fuji International Symposium on Functional and Logic Programming	JournalArticle
+3	17e647788449d7c56f02e3c6c576f71852985511	2023	10.1145/3607845	The Verse Calculus: A Core Calculus for Deterministic Functional Logic Programming	Proc. ACM Program. Lang.	JournalArticle
+4	6ec5b1fbaf25e7252965dcf36e435818ba4c99f8	2022	10.1145/3551357.3551370	A Monadic Implementation of Functional Logic Programs	ACM-SIGPLAN International Conference on Principles and Practice of Declarative Programming	Book
+5	49f1ec8d74b163bdde52fbcf211cb86ba0419c1f	2022	10.1017/S1471068422000187	From Logic to Functional Logic Programs	Theory and Practice of Logic Programming	JournalArticle
+6	fe0a69a57676920ac2e72df2a72b5e99b3f49dda	2021	10.1145/3479394.3479411	From Non-determinism to Goroutines: A Fair Implementation of Curry in Go	ACM-SIGPLAN International Conference on Principles and Practice of Declarative Programming	JournalArticle
+7	f5351f9f2ed81f6b690311d8b29683305ea4c0ff	2019	10.1007/978-3-030-46714-2_15	Adding Data to Curry	DECLARE	JournalArticle
+8	456795745a14c045ebe01944b18a8851d0d65f42	2019	10.1007/978-3-030-05998-9_6	Improving Residuation in Declarative Programs	International Symposium on Practical Aspects of Declarative Languages	JournalArticle
+9	60ced889a0144efabe5564440f5b5637311bb810	2018	10.1145/3236950.3236957	Verifying Fail-Free Declarative Programs	ACM-SIGPLAN International Conference on Principles and Practice of Declarative Programming	Book
+10	5f4888c5debf216008f0eb3e0a198eadf2f4ad43	2018	10.1007/978-3-030-16202-3_6	Synthesizing Set Functions	Workshop on Functional and Constraint Logic Programming	JournalArticle
+11	b6fd6ae1af0d9e91f7a509696d722842f13699ae	2017	10.3233/FI-2020-1925	Combining Static and Dynamic Contract Checking for Curry	International Workshop/Symposium on Logic-based Program Synthesis and Transformation	JournalArticle
+12	9a13c73b27bb830ff0b29445aac51d78995d8f76	2017		Normalization and Partial Evaluation of Functional Logic Programs		
+13	83133332ab6eb1df584203b3d6f237aef0f5b08c	2017	10.1007/978-3-319-51676-9_1	Eliminating Irrelevant Non-determinism in Functional Logic Programs	International Symposium on Practical Aspects of Declarative Languages	JournalArticle
+14	6c8b5b578bd6ae37f7012b4abbed74ec891f94aa	2016	10.1007/978-3-319-63139-4_13	CurryCheck: Checking Properties of Curry Programs	International Workshop/Symposium on Logic-based Program Synthesis and Transformation	JournalArticle
+15	52ad12fd5a8519421d743e8136722c7b51bccf2b	2016	10.1017/S1471068416000168	Default rules for Curry*	Theory and Practice of Logic Programming	JournalArticle
+16	d519fcc67671e4821e0e72c68b611880ae6c4672	2015	10.1007/978-3-319-19686-2_6	CHR(Curry): Interpretation and Compilation of Constraint Handling Rules in Curry	International Symposium on Practical Aspects of Declarative Languages	JournalArticle
+17	ee44cf736b71cb4859fba8f869c602dab95693da	2013	10.1007/978-3-319-14125-1_12	Compiling a Functional Logic Language: The Fair Scheme	International Workshop/Symposium on Logic-based Program Synthesis and Transformation	JournalArticle
+18	8d3b7e3d120c39feb70d9a890457945c9a2f4784	2013	10.1145/2505879.2505896	A semantics for weakly encapsulated search in functional logic programs	ACM-SIGPLAN International Conference on Principles and Practice of Declarative Programming	JournalArticle
+19	845114823d310eb12a95d93700c0916c9804de9b	2013	10.1007/978-3-319-08909-6_6	And... Action! - Monoid Actions and (Pre)orders	KDPD	JournalArticle
+20	dc996ed9c17b643d2ce8444350ebf50e672743eb	2012		Implementing Functional Logic Programs by Translation into Purely Functional Programs		
+21	7f9e1f99f01557d9f77a5507f075cad3e76086e2	2012	10.1007/978-3-642-29822-6_5	Compiling a Functional Logic Language: The Basic Scheme	Fuji International Symposium on Functional and Logic Programming	JournalArticle
+22	763df4bd4418be04eaf10eedce11e8b2f4bc9dd8	2012	10.1007/978-3-642-27694-1_4	Contracts and Specifications for Functional Logic Programming	International Symposium on Practical Aspects of Declarative Languages	JournalArticle
+23	c57ce5a3396846c5618172238bfa9b03edf6c4bc	2011	10.1007/978-3-642-22531-4_2	New Functional Logic Design Patterns	Workshop on Functional and Constraint Logic Programming	JournalArticle
+24	801c96bb86a4b1577c06b89625a926dd45a3e3cf	2011	10.1017/S1471068411000263	On the correctness of pull-tabbing	Theory and Practice of Logic Programming	JournalArticle
+25	67887ba587d2a5e2a9045d0e7f00e2f847664d5a	2010		On functional logic programming and its application to testing		
+26	9dd8a0d9da5417c3ceba04cce5e05ceea6d2785f	2010	10.1016/j.jsc.2010.01.006	Programming with narrowing: A tutorial	Journal of symbolic computation	JournalArticle
+27	2a02385c6698cd003612b8487123bb2086368313	2010	10.1007/978-3-642-20775-4_2	Transforming Functional Logic Programs into Monadic Functional Programs	Workshop on Functional and Constraint Logic Programming	JournalArticle
+28	1b8f76d2c1c74a22502da7b8bfb55bb6e56929b7	2024	10.1007/978-3-031-71294-4_2	Improving Logic Programs by Adding Functions	International Workshop/Symposium on Logic-based Program Synthesis and Transformation	JournalArticle
+29	7ade8d7e5de47a3aed65b44f7644cf2c90c7bcae	2020	10.1007/978-3-030-46714-2	Declarative Programming and Knowledge Management: Conference on Declarative Programming, DECLARE 2019, Unifying INAP, WLP, and WFLP, Cottbus, Germany, September 9–12, 2019, Revised Selected Papers	DECLARE	Book
+30	99533654015f3c7514f74c91e43b8b1f98e512a7	2020		A Tool for Testing Properties of Curry Programs		
+31	685359292b52fe8e267533ffdd7d687703ab53f1	2019		P L ] 2 8 A ug 2 01 9 Adding Data to Curry		
+32	4658ed859d0036bb94d54a1fba6101700cdb2c64	2017		CPM : A Declarative Package Manager with Semantic Versioning – System Description –		
+33	fa62bf7b4387f74fd995db6f5cf9df170ff7b944	2015	10.1007/978-3-319-19686-2	Practical Aspects of Declarative Languages	Lecture Notes in Computer Science	Review
+34	fc1a67d229de3fe9d5eca81bcaa129b269dbc585	2015		Default Rules in Functional Logic Programs		
+35	31796b7de7db7c5444f945c3ce470813d2b602a9	2014		Exploring Non-Determinism in Graph Algorithms	WLP/WFLP	JournalArticle
+36	14c69f0e96a618682dde324eb890a024d3ab048a	2014		Curry without Success	WLP/WFLP	JournalArticle
+37	62389f8b2c08e02db0a212d4a86fa67453975722	2014		Integration of Finite Domain Constraints in KiCS2	Software Engineering	JournalArticle
+38	7528c7d0b2182e974b53ba9244d49b718259327f	2014		Declarative Multi-paradigm Programming	WLP/WFLP	JournalArticle
+39	d87040971fb84654c252f3985a601bca43186fcf	2013	10.1007/978-3-319-08909-6	Declarative Programming and Knowledge Management	Lecture Notes in Computer Science	
+40	c05a3d04d95975e8aa5726d20b1506353f2696aa	2013	10.1007/978-3-642-37651-1	Programming Logics	Lecture Notes in Computer Science	
+41	4b3df21d0524d7b11347be52cf3277f6c6ce2197	2013	10.1007/978-3-642-37651-1_6	Functional Logic Programming: From Theory to Curry	Programming Logics	JournalArticle
+42	caeabae70bc93471bce5b057f7ad79e3973ace3c	2012	10.1007/978-3-642-29822-6	Functional and Logic Programming	Lecture Notes in Computer Science	
+43	d1d56b1c5f63a8df851f987bc99a8de9a0ba4144	2012	10.4230/LIPIcs.ICLP.2012.130	Improving Lazy Non-Deterministic Computations by Demand Analysis	International Conference on Logic Programming	JournalArticle
+44	154968e7efaec1b65678d74f342991d15e87ad3d	2011	10.4230/LIPIcs.ICLP.2011.198	Declarative Processing of Semistructured Web Data	International Conference on Logic Programming	JournalArticle
+45	637115bf8215f2cef172b46ac9cf7121584c5672	2010		The Pull-Tab Transformation		
+46	894c78a356504869c25b3882321d713c585312a4	2010		A Transformation Tool for Functional Logic Program Development ?		
+47	dbb1e0f49bdb39c2ff72f022673815408f11c051	2010		The Third International Workshop on Graph Computation Models		
+48	1d9379b399cafd183442a7146d4762202938f633	2009		Towards a Parallel Search for Solutions of Non-deterministic Computations	GI Jahrestagung	JournalArticle
+49	da11d2718a1d14bc80fcc6fbb3c8c28fb868221f			Can Logic Programming Be Liberated from Predicates and Backtracking?		

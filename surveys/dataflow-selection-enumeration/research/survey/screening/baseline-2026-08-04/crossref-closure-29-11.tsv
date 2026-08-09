@@ -1,0 +1,101 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1007/978-3-032-06847-7_9	2026	10.1007/978-3-032-06847-7_9	On-the-Fly Cone-of-Influence Reduction for Model Checking Concurrent Software	Lecture Notes in Computer Science	book-chapter
+2	10.3233/978-1-60750-065-0-29	2009	10.3233/978-1-60750-065-0-29	Combining Partial Order Reduction with Bounded Model Checking	Concurrent Systems Engineering Series	book-chapter
+3	10.1145/2813885.2737975	2015	10.1145/2813885.2737975	Stateless model checking concurrent programs with maximal causality reduction	ACM SIGPLAN Notices	journal-article
+4	10.1007/978-3-319-10575-8_18	2018	10.1007/978-3-319-10575-8_18	Model Checking Concurrent Programs	Handbook of Model Checking	book-chapter
+5	10.70675/5e4b4b6fz230dz42cfza4a6zc332f27a1763	None	10.70675/5e4b4b6fz230dz42cfza4a6zc332f27a1763	Quasi optimal model checking for concurrent systems		dissertation
+6	10.1145/2737924.2737975	2015	10.1145/2737924.2737975	Stateless model checking concurrent programs with maximal causality reduction	Proceedings of the 36th ACM SIGPLAN Conference on Programming Language Design and Implementation	proceedings-article
+7	10.21203/rs.3.rs-738517/v1	2022	10.21203/rs.3.rs-738517/v1	Checking Reachability Property in Complex Concurrent Software Systems with a Knowledge Discovery Approach		posted-content
+8	10.1007/978-3-658-12680-3_4	2016	10.1007/978-3-658-12680-3_4	Dynamic Partial Order Reduction in Stateful Model Checking	Complete Symbolic Simulation of SystemC Models	book-chapter
+9	10.5821/dissertation-2117-95294	None	10.5821/dissertation-2117-95294	Bounded model checking for asynchronous concurrent systems		dissertation
+10	10.31274/etd-180810-2213	None	10.31274/etd-180810-2213	Dynamic abstraction model checking		dissertation
+11	10.2139/ssrn.6416109	2026	10.2139/ssrn.6416109	LTL Model Checking of Concurrent Self Modifying Code		posted-content
+12	10.1007/978-3-540-93900-9_2	2008	10.1007/978-3-540-93900-9_2	Model Checking Concurrent Programs	Lecture Notes in Computer Science	book-chapter
+13	10.1007/978-3-319-94111-0_16	2018	10.1007/978-3-319-94111-0_16	Genetic Synthesis of Concurrent Code Using Model Checking and Statistical Model Checking	Lecture Notes in Computer Science	book-chapter
+14	10.1007/978-3-319-52234-0_14	2017	10.1007/978-3-319-52234-0_14	Dynamic Reductions for Model Checking Concurrent Software	Lecture Notes in Computer Science	book-chapter
+15	10.1002/spe.2321	2016	10.1002/spe.2321	A graph-labeling approach for efficient cone-of-influence computation in model-checking problems with multiple properties	Software: Practice and Experience	journal-article
+16	10.1007/978-3-642-39176-7_20	2013	10.1007/978-3-642-39176-7_20	Model Checking Unbounded Concurrent Lists	Lecture Notes in Computer Science	book-chapter
+17	10.1007/978-3-642-02652-2_9	2009	10.1007/978-3-642-02652-2_9	Reduction of Verification Conditions for Concurrent System Using Mutually Atomic Transactions	Lecture Notes in Computer Science	book-chapter
+18	10.1145/1047659.1040315	2005	10.1145/1047659.1040315	Dynamic partial-order reduction for model checking software	ACM SIGPLAN Notices	journal-article
+19	10.1360/jos181270	2007	10.1360/jos181270	Compositional Model Checking and Compositional Refinement Checking of Concurrent Reactive Systems	Journal of Software	journal-article
+20	10.1007/s10009-004-0154-9	2004	10.1007/s10009-004-0154-9	Symmetry reductions for model checking of concurrent dynamic software	International Journal on Software Tools for Technology Transfer	journal-article
+21	10.5353/th_b4129069	None	10.5353/th_b4129069	Passivity checking and enforcement in VLSI model reduction exercise		dissertation
+22	10.1007/3-540-46017-9_5	2002	10.1007/3-540-46017-9_5	Symmetry Reduction Criteria for Software Model Checking	Lecture Notes in Computer Science	book-chapter
+23	10.4304/jsw.4.8.867-874	2009	10.4304/jsw.4.8.867-874	A Framework for Model Checking Concurrent Java Components	Journal of Software	journal-article
+24	10.1145/1040305.1040315	2005	10.1145/1040305.1040315	Dynamic partial-order reduction for model checking software	Proceedings of the 32nd ACM SIGPLAN-SIGACT symposium on Principles of programming languages	proceedings-article
+25	10.26686/wgtn.17004076	None	10.26686/wgtn.17004076	On the Use of Model Checking for the Bounded and Unbounded Verification of Nonblocking Concurrent Data Structures		dissertation
+26	10.1007/978-3-540-78163-9_15	None	10.1007/978-3-540-78163-9_15	Extending Model Checking with Dynamic Analysis	Lecture Notes in Computer Science	book-chapter
+27	10.1007/978-3-540-73370-6_6	None	10.1007/978-3-540-73370-6_6	Distributed Dynamic Partial Order Reduction Based Verification of Threaded Software	Lecture Notes in Computer Science	book-chapter
+28	10.1109/wccit.2013.6618673	2013	10.1109/wccit.2013.6618673	Cone of influence and constants propgation reduction techniques for MDG model checker	2013 World Congress on Computer and Information Technology (WCCIT)	proceedings-article
+29	10.1109/ase.2001.989852	None	10.1109/ase.2001.989852	Model-checking real-time concurrent systems	Proceedings 16th Annual International Conference on Automated Software Engineering (ASE 2001)	proceedings-article
+30	10.1007/978-1-4020-8420-1_3	None	10.1007/978-1-4020-8420-1_3	Principles of Concurrent Checking	Frontiers In Electronic Testing	book-chapter
+31	10.1007/3-540-45139-0_6	2001	10.1007/3-540-45139-0_6	Addressing dynamic issues of program model checking	Lecture Notes in Computer Science	book-chapter
+32	10.1007/978-3-540-85114-1_20	None	10.1007/978-3-540-85114-1_20	Efficient Stateful Dynamic Partial Order Reduction	Lecture Notes in Computer Science	book-chapter
+33	10.1007/978-3-540-24622-0_16	2004	10.1007/978-3-540-24622-0_16	Verifying Atomicity Specifications for Concurrent Object-Oriented Software Using Model-Checking	Lecture Notes in Computer Science	book-chapter
+34	10.1109/eurcon.2007.4400379	2007	10.1109/eurcon.2007.4400379	Model Checking in Concurrent Programming Teaching	"EUROCON 2007 - The International Conference on ""Computer as a Tool"""	proceedings-article
+35	10.1007/978-3-540-85114-1_8	None	10.1007/978-3-540-85114-1_8	Dynamic Delayed Duplicate Detection for External Memory Model Checking	Lecture Notes in Computer Science	book-chapter
+36	10.1007/978-1-4020-8420-1_4	None	10.1007/978-1-4020-8420-1_4	Concurrent Checking for the Adders	Frontiers In Electronic Testing	book-chapter
+37	10.1007/11691617_19	2006	10.1007/11691617_19	Model Checking Dynamic States in GROOVE	Lecture Notes in Computer Science	book-chapter
+38	10.1007/3-540-46017-9_10	2002	10.1007/3-540-46017-9_10	Partial Order Reduction in Directed Model Checking	Lecture Notes in Computer Science	book-chapter
+39	10.1007/978-3-319-10575-8_6	2018	10.1007/978-3-319-10575-8_6	Partial-Order Reduction	Handbook of Model Checking	book-chapter
+40	10.1109/iccad.2004.1382542	None	10.1109/iccad.2004.1382542	Dynamic transition relation simplification for bounded property checking	IEEE/ACM International Conference on Computer Aided Design, 2004. ICCAD-2004.	proceedings-article
+41	10.1201/b19254-13	2017	10.1201/b19254-13	Model Checking of Distributed and Concurrent Systems	Embedded Software Development	book-chapter
+42	10.1007/978-3-030-94583-1_20	2022	10.1007/978-3-030-94583-1_20	Stateful Dynamic Partial Order Reduction for Model Checking Event-Driven Applications that Do Not Terminate	Lecture Notes in Computer Science	book-chapter
+43	10.1109/vtest.1994.292321	None	10.1109/vtest.1994.292321	Controllable self-checking checkers for conditional concurrent checking	Proceedings of IEEE VLSI Test Symposium	proceedings-article
+44	10.1145/2043556.2043582	2011	10.1145/2043556.2043582	Practical software model checking via dynamic interface reduction	Proceedings of the Twenty-Third ACM Symposium on Operating Systems Principles	proceedings-article
+45	10.1109/iit.2009.5413772	2009	10.1109/iit.2009.5413772	Using model checking tool for teaching concurrent programming concepts	2009 International Conference on Innovations in Information Technology (IIT)	proceedings-article
+46	10.1016/s1571-0661(05)80009-x	2003	10.1016/s1571-0661(05)80009-x	Space-Reduction Strategies for Model Checking Dynamic Software	Electronic Notes in Theoretical Computer Science	journal-article
+47	10.1007/s002360050074	1997	10.1007/s002360050074	Decidability of model checking for infinite-state concurrent systems	Acta Informatica	journal-article
+48	10.1007/978-3-540-93900-9_23	2008	10.1007/978-3-540-93900-9_23	An Automata-Theoretic Dynamic Completeness Criterion for Bounded Model-Checking	Lecture Notes in Computer Science	book-chapter
+49	10.5381/jot.2008.7.1.a1	2008	10.5381/jot.2008.7.1.a1	Applying Model Checking to Concurrent UML Models.	The Journal of Object Technology	journal-article
+50	10.1109/fmcad.2015.7542256	2015	10.1109/fmcad.2015.7542256	Theory-aided model checking of concurrent transition systems	2015 Formal Methods in Computer-Aided Design (FMCAD)	proceedings-article
+51	10.1016/j.elerap.2004.09.003	2005	10.1016/j.elerap.2004.09.003	Dynamic checking of temporal constraints for concurrent workflows	Electronic Commerce Research and Applications	journal-article
+52	10.1007/978-3-642-00431-5_7	2009	10.1007/978-3-642-00431-5_7	Towards Partial Order Reduction for Model Checking Temporal Epistemic Logic	Lecture Notes in Computer Science	book-chapter
+53	10.1109/fmcad.2006.31	2006	10.1109/fmcad.2006.31	Symmetry Reduction for STE Model Checking	2006 Formal Methods in Computer Aided Design	proceedings-article
+54	10.1007/3-540-60761-7_34	1996	10.1007/3-540-60761-7_34	Model checking	Lecture Notes in Computer Science	book-chapter
+55	10.1007/978-3-540-68237-0_12	None	10.1007/978-3-540-68237-0_12	A Model Checking Language for Concurrent Value-Passing Systems	Lecture Notes in Computer Science	book-chapter
+56	10.1109/lics.1996.561322	None	10.1109/lics.1996.561322	Model-checking of correctness conditions for concurrent objects	Proceedings 11th Annual IEEE Symposium on Logic in Computer Science	proceedings-article
+57	10.1587/transinf.2022edl8030	2022	10.1587/transinf.2022edl8030	Reduction of Register Pushdown Systems with Freshness Property to Pushdown Systems in LTL Model Checking	IEICE Transactions on Information and Systems	journal-article
+58	10.1145/3748522.3779956	2026	10.1145/3748522.3779956	CTL Model Checking of Concurrent Self Modifying Code	Proceedings of the 41st ACM/SIGAPP Symposium on Applied Computing	proceedings-article
+59	10.1109/mdt.2010.63	2010	10.1109/mdt.2010.63	"Concurrent checking for logic [review of ""New Methods of Concurrent Checking (Goessel, M., et al; 2008)"	IEEE Design &amp; Test of Computers	journal-article
+60	10.1109/icasic.2005.1611476	None	10.1109/icasic.2005.1611476	Frontend model generation for SAT-based property checking	2005 6th International Conference on ASIC	proceedings-article
+61	10.1007/978-3-642-18275-4_15	2011	10.1007/978-3-642-18275-4_15	Join-Lock-Sensitive Forward Reachability Analysis for Concurrent Programs with Dynamic Process Creation	Lecture Notes in Computer Science	book-chapter
+62	10.1007/978-3-642-00255-7_22	2009	10.1007/978-3-642-00255-7_22	Dynamic Path Reduction for Software Model Checking	Lecture Notes in Computer Science	book-chapter
+63	10.1145/2889160.2891042	2016	10.1145/2889160.2891042	Maximally stateless model checking for concurrent bugs under relaxed memory models	Proceedings of the 38th International Conference on Software Engineering Companion	proceedings-article
+64	10.1109/icnc.2011.47	2011	10.1109/icnc.2011.47	Bounded Model Checking of Concurrent Systems with Unbounded Integer Variables	2011 Second International Conference on Networking and Computing	proceedings-article
+65	10.1007/978-3-540-85114-1_2	None	10.1007/978-3-540-85114-1_2	The Case for Context-Bounded Verification of Concurrent Programs	Lecture Notes in Computer Science	book-chapter
+66	10.2118/94-35	1994	10.2118/94-35	A Mathematical Model For Multiple-Cone Hydrocylone Concurrent Three-phase (CTP) Separation System	Annual Technical Meeting	proceedings-article
+67	10.1007/978-1-4020-8420-1	2008	10.1007/978-1-4020-8420-1	New Methods of Concurrent Checking	Frontiers In Electronic Testing	book
+68	10.1145/2632362.2632366	2014	10.1145/2632362.2632366	Local state space construction for compositional verification of concurrent systems	Proceedings of the 2014 International SPIN Symposium on Model Checking of Software	proceedings-article
+69	10.4304/jsw.9.6.1619-1625	2014	10.4304/jsw.9.6.1619-1625	Model Checking the Convergence Property of BGP Networks	Journal of Software	journal-article
+70	10.23919/fmcad.2019.8894279	2019	10.23919/fmcad.2019.8894279	Concurrent Chaining Hash Maps for Software Model Checking	2019 Formal Methods in Computer Aided Design (FMCAD)	proceedings-article
+71	10.1007/s11432-015-0882-6	2016	10.1007/s11432-015-0882-6	Model checking concurrent systems with MSVL	Science China Information Sciences	journal-article
+72	10.1093/biomet/asn074	2009	10.1093/biomet/asn074	Model checking in regression via dimension reduction	Biometrika	journal-article
+73	10.1007/11513988_9	2005	10.1007/11513988_9	Bounded Model Checking of Concurrent Programs	Lecture Notes in Computer Science	book-chapter
+74	10.1007/s10515-023-00391-z	2023	10.1007/s10515-023-00391-z	Automated verification of concurrent go programs via bounded model checking	Automated Software Engineering	journal-article
+75	10.1007/978-3-540-85114-1_10	None	10.1007/978-3-540-85114-1_10	Efficient Modeling of Concurrent Systems in BMC	Lecture Notes in Computer Science	book-chapter
+76	10.5220/0004877804800487	2014	10.5220/0004877804800487	Runtime Assertion Checking and Theorem Proving for Concurrent and Distributed Systems	Proceedings of the 2nd International Conference on Model-Driven Engineering and Software Development	proceedings-article
+77	10.1109/ssiri.2010.37	2010	10.1109/ssiri.2010.37	Model Checking a Lazy Concurrent List-Based Set Algorithm	2010 Fourth International Conference on Secure Software Integration and Reliability Improvement	proceedings-article
+78	10.1142/s0219876222500372	2023	10.1142/s0219876222500372	A Concurrent Topology Optimization Model for Dynamic Property of Structures with Connectable Graded Microstructures	International Journal of Computational Methods	journal-article
+79	10.1118/1.3673068	2012	10.1118/1.3673068	Dynamic cone beam CT angiography of carotid and cerebral arteries using canine model	Medical Physics	journal-article
+80	10.4204/eptcs.204.3	2016	10.4204/eptcs.204.3	Compositional model checking of concurrent systems, with Petri nets	Electronic Proceedings in Theoretical Computer Science	journal-article
+81	10.1016/s1571-0661(05)80678-4	1997	10.1016/s1571-0661(05)80678-4	Semantic analysis of concurrent ML by abstract model-checking	Electronic Notes in Theoretical Computer Science	journal-article
+82	10.1006/inco.1999.2847	2000	10.1006/inco.1999.2847	Model-Checking of Correctness Conditions for Concurrent Objects	Information and Computation	journal-article
+83	10.1016/s0141-9331(01)00131-4	2002	10.1016/s0141-9331(01)00131-4	A tool supporting efficient model checking of concurrent specifications	Microprocessors and Microsystems	journal-article
+84	10.3390/electronics10232957	2021	10.3390/electronics10232957	Finding More Property Violations in Model Checking via the Restart Policy	Electronics	journal-article
+85	10.1145/2693208.2693240	2015	10.1145/2693208.2693240	Concurrent Bounded Model Checking	ACM SIGSOFT Software Engineering Notes	journal-article
+86	10.1109/tc.2014.2329701	2014	10.1109/tc.2014.2329701	Compositional Model Checking of Concurrent Systems	IEEE Transactions on Computers	journal-article
+87	10.7873/date.2013.168	2013	10.7873/date.2013.168	QF_BV Model Checking with Property Directed Reachability	Design, Automation &amp; Test in Europe Conference &amp; Exhibition (DATE), 2013	proceedings-article
+88	10.1016/s1571-0661(05)01232-6	2000	10.1016/s1571-0661(05)01232-6	Semantic analysis of concurrent ML by abstract model-checking	Electronic Notes in Theoretical Computer Science	journal-article
+89	10.1007/978-3-642-39176-7_17	2013	10.1007/978-3-642-39176-7_17	Mining Sequential Patterns to Explain Concurrent Counterexamples	Lecture Notes in Computer Science	book-chapter
+90	10.1007/978-3-0348-7268-3_6	1992	10.1007/978-3-0348-7268-3_6	Algebraic Approach to Checking Strict Positive Real Property of Uncertain Real Rational Functions	Robustness of Dynamic Systems with Parameter Uncertainties	book-chapter
+91	10.2139/ssrn.6556668	2026	10.2139/ssrn.6556668	Unleash the Hidden Power of CAR-based Model Checking through Dynamic Traversal		posted-content
+92	10.1016/j.scico.2014.10.008	2015	10.1016/j.scico.2014.10.008	Model checking of concurrent programs with static analysis of field accesses	Science of Computer Programming	journal-article
+93	10.1007/978-3-658-12680-3_3	2016	10.1007/978-3-658-12680-3_3	Static Partial Order Reduction in Stateful Model Checking	Complete Symbolic Simulation of SystemC Models	book-chapter
+94	10.1007/978-1-4419-9359-5_6	2011	10.1007/978-1-4419-9359-5_6	Bounded Model Checking for Concurrent Systems: Synchronous Vs. Asynchronous	High-Level Verification	book-chapter
+95	10.1145/334725.334743	1999	10.1145/334725.334743	How to verify concurrent Ada programs	ACM SIGAda Ada Letters	journal-article
+96	10.1007/978-3-642-11319-2_2	2010	10.1007/978-3-642-11319-2_2	Verifying Concurrent Programs with Chalice	Lecture Notes in Computer Science	book-chapter
+97	10.1007/3-540-44829-2_6	2003	10.1007/3-540-44829-2_6	A Light-Weight Algorithm for Model Checking with Symmetry Reduction and Weak Fairness	Lecture Notes in Computer Science	book-chapter
+98	10.1007/978-1-4471-3827-3_1	2004	10.1007/978-1-4471-3827-3_1	Introduction to Dynamic Model Reduction Techniques	Model Order Reduction Techniques	book-chapter
+99	10.1145/3155284.3018749	2017	10.1145/3155284.3018749	Checking Concurrent Data Structures Under the C/C++11 Memory Model	ACM SIGPLAN Notices	journal-article
+100	10.1109/models-c.2019.00082	2019	10.1109/models-c.2019.00082	Optimizing Hierarchical, Concurrent State Machines in Umple for Model Checking	2019 ACM/IEEE 22nd International Conference on Model Driven Engineering Languages and Systems Companion (MODELS-C)	proceedings-article

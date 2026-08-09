@@ -1,0 +1,22 @@
+rank	openalex_id	year	doi	title	venue	type
+1	W1884521777	2002	https://doi.org/10.1109/real.1998.739746	Automatic testing of reactive systems		conference-paper
+2	W2010945517	2002	https://doi.org/10.1016/s0167-6423(02)00093-x	Mode-Automata: a new domain-specific construct for the development of safe critical systems	Science of Computer Programming	article
+3	W131629833	2014	https://doi.org/10.1007/978-3-642-54862-8_55	Environment-Model Based Testing of Control Systems: Case Studies	Lecture notes in computer science	conference-paper
+4	W2622306730	2017	https://doi.org/10.11591/ijece.v7i5.pp2635-2644	LusRegTes: A Regression Testing Tool for Lustre Programs	International Journal of Electrical and Computer Engineering (IJECE)	article
+5	W2797513556	2018	https://doi.org/10.1007/978-3-319-89963-3_13	TESTOR: A Modular Tool for On-the-Fly Conformance Test Case Generation	Lecture notes in computer science	conference-paper
+6	W2146557215	2008	https://doi.org/10.1016/j.entcs.2008.05.013	Lustre as a System Modeling Language: Lussensor, a Case-Study with Sensor Networks	Electronic Notes in Theoretical Computer Science	article
+7	W1192043084	2016	https://doi.org/10.1007/s10009-016-0444-z	Require, test, and trace IT	International Journal on Software Tools for Technology Transfer	article
+8	W2066840041	2009	https://doi.org/10.1016/j.entcs.2009.03.030	Executable Contracts for Incremental Prototypes of Embedded Systems	Electronic Notes in Theoretical Computer Science	article
+9	W2622439648	2010		Reactive processing for synchronous languages and its worst case reaction time analysis	Multimedialen Archiv und Publikationsserver der Christian-Albrechts-Universität zu Kiel (Christian-Albrechts-Universität zu Kiel)	dissertation
+10	W35884834	2009	https://doi.org/10.22215/etd/2009-10147	An open framework for the specification and execution of a testable requirements model		dissertation
+11	W4383898431	2023	https://doi.org/10.1109/icse-seip58684.2023.00049	Automated Test Case Generation for Safety-Critical Software in Scade		conference-paper
+12	W4214508441	2011	https://doi.org/10.1201/b11321-16	Automatic Testing of LUSTRE/SCADE Programs		book-chapter
+13	W4211091066	2021	https://doi.org/10.1093/comjnl/bxab196	<scp>sasa</scp>: a SimulAtor of Self-stabilizing Algorithms	The Computer Journal	article
+14	W17197670	2010	https://doi.org/10.1177/014107680710000103	Test automatique de programmes Lustre / SCADE	Journal of the Royal Society of Medicine	dissertation
+15	W3017505392	2020	https://doi.org/10.4204/eptcs.316.7	Specifying a Cryptographical Protocol in Lustre and SCADE	Electronic Proceedings in Theoretical Computer Science	article
+16	W2953017628	2005	https://doi.org/10.31274/rtd-20201107-74	An approach to translate LUSTRE code to ACL2	Iowa State University Digital Repository (Iowa State University)	article
+17	W3094390602	2019	https://doi.org/10.70675/f10cb421z48baz4be5zb393z2521d93ceee4	On Model-based Testing of GALS Systems		dissertation
+18	W593506720	2012		Critères de test et génération de séquences de tests pour des systèmes réactifs synchrones modélisés par des équations flots de données et contrôlés par des automates étendus	HAL (Le Centre pour la Communication Scientifique Directe)	dissertation
+19	W4409189769	2025	https://doi.org/10.1007/s42979-025-03824-6	Testing Stream Programs from Pre/Post-models	SN Computer Science	article
+20	W2924794136	2017		Consolidation de validation fonctionnelle de systèmes critiques à l'aide de model checking : application au contrôle commande de centrales nucléaires	HAL (Le Centre pour la Communication Scientifique Directe)	dissertation
+21	W2784224911	2017	https://doi.org/10.70675/573f6e3fzc3abz4c05zb068z39716bc84663	high-level component-based models for functional verificationof systems-on-a-chip		dissertation

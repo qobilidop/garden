@@ -1,0 +1,39 @@
+rank	source_id	year	doi	title	venue	type
+1	citation-1	2008		Calysto: Scalable and Precise Extended Static Checking	ICSE 2008	proceedings-article
+2	citation-2	2007		Structural Abstraction of Software Verification Conditions	CAV 2007	proceedings-article
+3	citation-3	2008		KLEE: Unassisted and Automatic Generation of High-Coverage Tests for Complex Systems Programs	OSDI 2008	proceedings-article
+4	citation-4	2009		Snugglebug: A Powerful Approach to Weakest Preconditions	PLDI 2009	proceedings-article
+5	citation-5	2010		Symbolic Security Analysis of Ruby-on-Rails Web Applications	CCS 2010	proceedings-article
+6	citation-6	2012		The S2E Platform: Design, Implementation, and Applications	ACM Transactions on Computer Systems	article
+7	citation-7	2003		Behavioral Consistency of C and Verilog Programs Using Bounded Model Checking	DAC 2003	proceedings-article
+8	citation-8	2013		Verifying Systems Rules Using Rule-Directed Symbolic Execution	ASPLOS 2013	proceedings-article
+9	citation-9	2008		Sound, Complete and Scalable Path-Sensitive Analysis	PLDI 2008	proceedings-article
+10	citation-10	2007		A Decision Procedure for Bit-Vectors and Arrays	CAV 2007	proceedings-article
+11	citation-11	2007		Compositional Dynamic Test Generation	POPL 2007	proceedings-article
+12	citation-12	2005		DART: Directed Automated Random Testing	PLDI 2005	proceedings-article
+13	citation-13	2008		Program Analysis as Constraint Solving	PLDI 2008	proceedings-article
+14	citation-14	2006		How Is Aliasing Used in Systems Software?	FSE 2006	proceedings-article
+15	citation-15	2004		Logic in Computer Science: Modelling and Reasoning about Systems	Cambridge University Press	book
+16	citation-16	1976		Symbolic Execution and Program Testing	Communications of the ACM	article
+17	citation-17	2003		Generalized Symbolic Execution for Model Checking and Testing	TACAS 2003	proceedings-article
+18	citation-18	2008		Deriving State Machines from TinyOS Programs Using Symbolic Execution	IPSN 2008	proceedings-article
+19	citation-19	2012		Efficient State Merging in Symbolic Execution	PLDI 2012	proceedings-article
+20	citation-20	2013		Scaling Up Symbolic Analysis by Removing Beta-Equivalent States	HKUST	technical-report
+21	citation-21	1989		Petri Nets: Properties, Analysis and Applications	Proceedings of the IEEE	article
+22	citation-22	2012		Abstractions from Tests	POPL 2012	proceedings-article
+23	citation-23	2008		Differential Symbolic Execution	FSE 2008	proceedings-article
+24	citation-24	2011		Directed Incremental Symbolic Execution	PLDI 2011	proceedings-article
+25	citation-25	2008		Combining Unit-Level Symbolic Execution and System-Level Concrete Execution for Testing NASA Software	ISSTA 2008	proceedings-article
+26	citation-26	2012		Modeling Software Execution Environment	WCRE 2012	proceedings-article
+27	citation-27	2013		Limits of Computation: An Introduction to the Undecidable and the Intractable	CRC Press	book
+28	citation-28	2003		Inference in First-Order Logic	Artificial Intelligence: A Modern Approach	book-chapter
+29	citation-29	2010		Exploiting Program Dependencies for Scalable Multiple-Path Symbolic Execution	ISSTA 2010	proceedings-article
+30	citation-30	2005		CUTE: A Concolic Unit Testing Engine for C	FSE 2005	proceedings-article
+31	citation-31	2012		Scaling Symbolic Execution Using Ranged Analysis	OOPSLA 2012	proceedings-article
+32	citation-32	1993		Problem Reduction by Removing Redundant Constraints	Foundations of Constraint Satisfaction	book-chapter
+33	citation-33	2006		Test Input Generation for Java Containers Using State Matching	ISSTA 2006	proceedings-article
+34	citation-34	2003		ARCHER: Using Symbolic, Path-Sensitive Analysis to Detect Memory Access Errors	FSE 2003	proceedings-article
+35	citation-35	1976		A System to Generate Test Data and Symbolically Execute Programs	IEEE Transactions on Software Engineering	article
+36	citation-36	2008		RWset: Attacking Path Explosion in Constraint-Based Test Generation	TACAS 2008	proceedings-article
+37	citation-37	2013		Redundant State Detection for Dynamic Symbolic Execution	USENIX ATC 2013	proceedings-article
+38	citation-38	2009	10.1007/s10009-008-0090-1	Symbolic Execution with Abstraction	International Journal on Software Tools for Technology Transfer	article

@@ -1,0 +1,53 @@
+rank	openalex_id	year	doi	title	venue	type
+1	W67485690	2004	https://doi.org/10.1007/b105236	Advanced Formal Verification		book
+2	W2111979321	2011	https://doi.org/10.1109/date.2011.5763253	Efficient validation input generation in RTL by hybridized source code analysis		conference-paper
+3	W2139531926	2007	https://doi.org/10.1109/hldvt.2007.4392789	Automatic error diagnosis and correction for RTL designs		conference-paper
+4	W2624991222	2017	https://doi.org/10.1145/3079856.3080247	Bespoke Processors for Applications with Ultra-low Area and Power Constraints		conference-paper
+5	W2604243775	2017	https://doi.org/10.1145/3037697.3037711	Determining Application-specific Peak Power and Energy Requirements for Ultra-low Power Processors		conference-paper
+6	W1705269376	2002	https://doi.org/10.1109/hldvt.2001.972803	Symbolic simulation heuristics for high-level design descriptions with uninterpreted functions		conference-paper
+7	W2143006079	2008	https://doi.org/10.1145/1391469.1391475	Parallelizing CAD		conference-paper
+8	W1977902681	2005	https://doi.org/10.1007/s10766-005-8910-3	Constructing Efficient Formal Models from High-Level Descriptions Using Symbolic Simulation	International Journal of Parallel Programming	article
+9	W2074371713	2014	https://doi.org/10.1145/2676549	Scaling Input Stimulus Generation through Hybrid Static and Dynamic Analysis of RTL	ACM Transactions on Design Automation of Electronic Systems	article
+10	W1988635588	2007	https://doi.org/10.1109/tcad.2006.882511	Simulation-Based Bug Trace Minimization With BMC-Based Refinement	IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems	article
+11	W2095371841	2005	https://doi.org/10.1049/ip-cdt:20045073	System level validation using formal techniques	IEE Proceedings - Computers and Digital Techniques	article
+12	W4253532935	2013	https://doi.org/10.1109/iccad.2013.6691189	Conquering the scheduling alternative explosion problem of SystemC symbolic simulation		conference-paper
+13	W2003469913	2013	https://doi.org/10.5555/2561828.2561961	Conquering the scheduling alternative explosion problem of SystemC symbolic simulation	International Conference on Computer Aided Design	conference-paper
+14	W2780799857	2017	https://doi.org/10.1145/3148052	Determining Application-Specific Peak Power and Energy Requirements for Ultra-Low-Power Processors	ACM Transactions on Computer Systems	article
+15	W2146772952	2011	https://doi.org/10.5555/1950815.1950915	Facilitating unreachable code diagnosis and debugging	Asia and South Pacific Design Automation Conference	conference-paper
+16	W4255789569	2004	https://doi.org/10.1109/iwrsp.2004.1311087	Towards formal verification on the system level		conference-paper
+17	W1495940602	2005	https://doi.org/10.1007/978-3-540-30579-8_22	Verification of an Error Correcting Code by Abstract Interpretation	Lecture notes in computer science	conference-paper
+18	W2128513456	2005		Embedded tutorial: Formal equivalence checking between system-level models and RTL		article
+19	W1981423850	2005	https://doi.org/10.1016/j.sysarc.2004.10.006	Functional test generation based on word-level SAT	Journal of Systems Architecture	article
+20	W2108137606	2009	https://doi.org/10.1145/1531542.1531637	Enhancing bug hunting using high-level symbolic simulation		conference-paper
+21	W2736817226	2017	https://doi.org/10.1109/test.2017.8242038	RTL functional test generation using factored concolic execution		conference-paper
+22	W2076119072	2011	https://doi.org/10.1109/iccd.2011.6081380	Applying verification intention for design customization via property mining under constrained testbenches		conference-paper
+23	W2913483809	2011	https://doi.org/10.1007/s10703-011-0116-2	Conjugate symmetry	Formal Methods in System Design	article
+24	W3016369156	2017	https://doi.org/10.1145/3140659.3080247	Bespoke Processors for Applications with Ultra-low Area and Power Constraints	ACM SIGARCH Computer Architecture News	article
+25	W2624128518	2007		Functional Design Error Diagnosis, Correction and Layout Repair of Digital Circuits		article
+26	W2612688648	2017	https://doi.org/10.1109/hpca.2017.48	Enabling Effective Module-Oblivious Power Gating for Embedded Processors		conference-paper
+27	W2123952499	2005	https://doi.org/10.5555/1129601.1129748	Simulation-based bug trace minimization with BMC-based refinement	International Conference on Computer Aided Design	conference-paper
+28	W4239772905	2005	https://doi.org/10.1109/iccad.2005.1560201	Embedded tutorial: formal equivalence checking between system-level models and RTL		conference-paper
+29	W2103820086	2008	https://doi.org/10.1109/ddecs.2008.4538785	Ad-Hoc Translations to Close Verilog Semantics Gap		conference-paper
+30	W4236624493	2002	https://doi.org/10.1109/dac.2002.1012603	Handling special constructs in symbolic simulation		conference-paper
+31	W113732979	2003		Using Symbolic Simulation for Bounded Property Checking.		article
+32	W3146781481	2010	https://doi.org/10.1109/aspdac.2010.5419784	Optimizing blocks in an SoC using symbolic code-statement reachability analysis		conference-paper
+33	W2012280694	2010	https://doi.org/10.5555/1899721.1899902	Optimizing blocks in an SoC using symbolic code-statement reachability analysis	Asia and South Pacific Design Automation Conference	conference-paper
+34	W2105593427	2002	https://doi.org/10.1109/icasic.2001.982489	Design verification using formal techniques		conference-paper
+35	W2135756607	2004	https://doi.org/10.1109/rsp.2004.43	Towards formal verification on the system level		conference-paper
+36	W2067062441	2004	https://doi.org/10.1016/j.csi.2004.09.004	A novel formal verification approach for RTL hardware IP cores	Computer Standards & Interfaces	article
+37	W2122103287	2009	https://doi.org/10.1109/hldvt.2009.5340163	Activity-based refinement for abstraction-guided simulation		conference-paper
+38	W3149848474	2011	https://doi.org/10.1109/aspdac.2011.5722238	Facilitating unreachable code diagnosis and debugging		conference-paper
+39	W56582144	2013	https://doi.org/10.1007/978-3-642-41947-8_31	Novel Method to Generate Tests for VHDL	Communications in computer and information science	conference-paper
+40	W1996586238	2007	https://doi.org/10.1145/1269843.1269854	Efficient event-driven simulation of parallel processor architectures		conference-abstract
+41	W2149986670	2002	https://doi.org/10.1145/513918.513947	Handling special constructs in symbolic simulation	Proceedings - ACM IEEE Design Automation Conference	conference-abstract
+42	W1898172537	2002	https://doi.org/10.1109/hldvt.2001.972806	Symbolic simulation techniques-state-of-the-art and applications		conference-paper
+43	W2143926895	2006	https://doi.org/10.1109/date.2006.244010	Using conjugate symmetries to enhance gate-level simulations		conference-abstract
+44	W2161212079	2007	https://doi.org/10.1109/hldvt.2007.4392797	Formal model construction using HDL simulation semantics		conference-paper
+45	W2121818071	2003	https://doi.org/10.1145/775832.775946	Symbolic representation with ordered function templates		conference-paper
+46	W2042691921	2012	https://doi.org/10.1109/memcod.2012.6292297	Improving design verifiability by early RTL coverability analysis		conference-paper
+47	W2183748025	2008		EQUIVALENCE CHECKING FOR HIGH-LEVEL SYNTHESIS FLOW		article
+48	W4241310825	2006	https://doi.org/10.1007/0-387-29906-8_3	Symbolic Simulation		book-chapter
+49	W4241697435	2017	https://doi.org/10.1145/3093315.3037711	Determining Application-specific Peak Power and Energy Requirements for Ultra-low Power Processors	ACM SIGOPS Operating Systems Review	article
+50	W4245328481	2004	https://doi.org/10.1109/dac.2003.1219040	Symbolic representation with ordered function templates		conference-paper
+51	W4415003529	2025	https://doi.org/10.1109/mlcad65511.2025.11189172	LLM-assisted Path Exploration for RTL Verification		conference-paper
+52	W4416429992	2025	https://doi.org/10.1109/iccad66269.2025.11240634	COTIA: Concolic Testing with Intelligent Agent		conference-paper

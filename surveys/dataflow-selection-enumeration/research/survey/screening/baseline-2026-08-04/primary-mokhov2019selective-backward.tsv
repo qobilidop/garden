@@ -1,0 +1,48 @@
+rank	source_id	year	doi	title	venue	type
+1	https://doi.org/10.1017/S0956796801004099	2001	https://doi.org/10.1017/S0956796801004099	Exceptional syntax	Journal of Functional Programming	article
+2	citation-2	2013		Interactive theorem proving and program development: Coq'Art: The calculus of inductive constructions	Springer	book
+3	citation-3	2019		Implementation of selective applicative functors in Scala	GitHub	software
+4	citation-4	2018		Deriving Via	Haskell Symposium	conference-paper
+5	https://doi.org/10.4204/EPTCS.153.2	2014	https://doi.org/10.4204/EPTCS.153.2	Free applicative functors	MSFP	conference-paper
+6	https://doi.org/10.1145/641675.642111	1975	https://doi.org/10.1145/641675.642111	A preliminary architecture for a basic data-flow processor	ACM SIGARCH Computer Architecture News	article
+7	https://doi.org/10.1145/2426890.2426910	2013	https://doi.org/10.1145/2426890.2426910	Fixing idioms: A recursion primitive for applicative DSLs	PEPM	conference-paper
+8	citation-8	2016		More on Applicative Effects in Free Monads	Web article	other
+9	citation-9	2017		Profunctors, Arrows, & Static Analysis	Web article	other
+10	https://doi.org/10.1145/2976002.2976005	2016	https://doi.org/10.1145/2976002.2976005	Free delivery (functional pearl)	Haskell Symposium	conference-paper
+11	citation-11	2019		Implementation of selective applicative functors in Kotlin	GitHub	software
+12	https://doi.org/10.1145/2804302.2804311	2015	https://doi.org/10.1145/2804302.2804311	The remote monad design pattern	Haskell Symposium	conference-paper
+13	citation-13	2011		Boolean Blindness	Web article	other
+14	citation-14	2018		Implementation of selective applicative functors in PureScript	GitHub	software
+15	https://doi.org/10.1016/S0167-6423(99)00023-4	2000	https://doi.org/10.1016/S0167-6423(99)00023-4	Generalising monads to arrows	Science of Computer Programming	article
+16	https://doi.org/10.1017/S0956796898003050	1998	https://doi.org/10.1017/S0956796898003050	Monadic parsing in Haskell	Journal of Functional Programming	article
+17	citation-17	2015		Incremental: A library for incremental computations. Bind, scopes, and invalidation	Jane Street	software
+18	citation-18	2018		Dune: A composable build system	Jane Street	software
+19	https://doi.org/10.1145/2804302.2804319	2015	https://doi.org/10.1145/2804302.2804319	Freer Monads, More Extensible Effects	Haskell Symposium	conference-paper
+20	https://doi.org/10.1145/331963.331977	2000	https://doi.org/10.1145/331963.331977	Domain specific embedded compilers	PEPM	conference-paper
+21	https://doi.org/10.1016/j.entcs.2011.02.018	2011	https://doi.org/10.1016/j.entcs.2011.02.018	Idioms are oblivious, arrows are meticulous, monads are promiscuous	Electronic Notes in Theoretical Computer Science	article
+22	citation-22	2019		Implementation of selective applicative functors in Coq	GitHub	software
+23	https://doi.org/10.1145/2692915.2628144	2014	https://doi.org/10.1145/2692915.2628144	There is no fork: An abstraction for efficient, concurrent, and concise data access	ICFP	conference-paper
+24	https://doi.org/10.1145/2976002.2976007	2016	https://doi.org/10.1145/2976002.2976007	Desugaring Haskell's do-notation into applicative operations	Haskell Symposium	conference-paper
+25	https://doi.org/10.1017/S0956796807006326	2008	https://doi.org/10.1017/S0956796807006326	Applicative programming with effects	Journal of Functional Programming	article
+26	https://doi.org/10.1007/978-3-642-34407-7_11	2011	https://doi.org/10.1007/978-3-642-34407-7_11	Hardware design with generalized arrows	IFL	conference-paper
+27	citation-27	2013		Free Applicative Functors in Haskell	Web article	other
+28	https://doi.org/10.1016/0890-5401(91)90052-4	1991	https://doi.org/10.1016/0890-5401(91)90052-4	Notions of computation and monads	Information and Computation	article
+29	citation-29	2009		Conditional partial order graphs	Newcastle University	dissertation
+30	citation-30	2018		Selective applicative functors (blog post)	Newcastle University blog	other
+31	citation-31	2019		Implementation of selective applicative functors in Haskell	Hackage	software
+32	https://doi.org/10.1145/3236774	2018	https://doi.org/10.1145/3236774	Build Systems à la Carte	Proceedings of the ACM on Programming Languages	article
+33	https://doi.org/10.1145/507669.507664	2001	https://doi.org/10.1145/507669.507664	A new notation for arrows	ICFP	conference-paper
+34	citation-34	2019		Sigma Selective	Gist	software
+35	citation-35	2012		Applicative functors with branch/choice	Haskell-Cafe	other
+36	citation-36	2017		Profunctor optics: Modular data accessors	The Art, Science, and Engineering of Programming	article
+37	citation-37	2017		Notions of computation as monoids	Journal of Functional Programming	article
+38	citation-38	2019		Implementation of selective applicative functors in Swift	GitHub	software
+39	https://doi.org/10.1145/1543134.1411292	2008	https://doi.org/10.1145/1543134.1411292	SmallCheck and Lazy SmallCheck: Automatic exhaustive testing for small values	Haskell Symposium	conference-paper
+40	citation-40	2018		Reconfigurable asynchronous pipelines: From formal models to silicon	DATE	conference-paper
+41	citation-41	1996		Deterministic, error-correcting combinator parsers	Advanced Functional Programming	conference-paper
+42	https://doi.org/10.1017/S0956796808006758	2008	https://doi.org/10.1017/S0956796808006758	Data types à la carte	Journal of Functional Programming	article
+43	citation-43	2018		OCaml Package Manager	OPAM	software
+44	https://doi.org/10.1145/99370.99404	1989	https://doi.org/10.1145/99370.99404	Theorems for free!	FPCA	conference-paper
+45	citation-45	1995		Monads for functional programming	Advanced Functional Programming	conference-paper
+46	citation-46	2010		Abstraction for web programming	University of Edinburgh	dissertation
+47	citation-47	2009		An IRC conversation about Branchy type class	GitHub	other

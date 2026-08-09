@@ -1,0 +1,103 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1007/springerreference_72115	None	10.1007/springerreference_72115	Bilevel Linear Programming: Complexity, Equivalence to Minmax, Concave Programs	SpringerReference	reference-entry
+2	10.1016/0377-2217(91)90312-j	1991	10.1016/0377-2217(91)90312-j	The equivalence of an LCP to a parametric linear program with a scalar parameter	European Journal of Operational Research	journal-article
+3	10.1007/0-306-48332-7_29	2001	10.1007/0-306-48332-7_29	Bilevel Linear Programming: Complexity, Equivalence to Minmax, Concave Programs	Encyclopedia of Optimization	book-chapter
+4	10.1007/978-0-387-74759-0_37	2008	10.1007/978-0-387-74759-0_37	Bilevel Linear Programming: Complexity, Equivalence to Minmax, Concave Programs	Encyclopedia of Optimization	book-chapter
+5	10.1007/s11704-021-0340-x	2022	10.1007/s11704-021-0340-x	The parametric complexity of bisimulation equivalence of normed pushdown automata	Frontiers of Computer Science	journal-article
+6	10.1155/2020/9342640	2020	10.1155/2020/9342640	Predicting Metabolite-Disease Associations Based on Linear Neighborhood Similarity with Improved Bipartite Network Projection Algorithm	Complexity	journal-article
+7	10.1007/s00186-016-0554-0	2016	10.1007/s00186-016-0554-0	Equivalence between polyhedral projection, multiple objective linear programming and vector linear programming	Mathematical Methods of Operations Research	journal-article
+8	10.1109/icvd.1998.646665	None	10.1109/icvd.1998.646665	Efficient signatures with linear space complexity for detecting Boolean function equivalence	Proceedings Eleventh International Conference on VLSI Design	proceedings-article
+9	10.1023/a:1026142613465	2003	10.1023/a:1026142613465	A Note on the Equivalence and Complexity of Linear Grammars	Grammars	journal-article
+10	10.1016/j.chemphys.2012.02.022	2012	10.1016/j.chemphys.2012.02.022	Parametric projection operator technique for second order non-linear response	Chemical Physics	journal-article
+11	10.1515/ms-2025-1033	2026	10.1515/ms-2025-1033	Equivalence analysis on BLUEs of partial parametric functions under a two-stage linear model	Mathematica Slovaca	journal-article
+12	10.1016/j.tcs.2015.03.006	2015	10.1016/j.tcs.2015.03.006	Program equivalence in linear contexts	Theoretical Computer Science	journal-article
+13	10.1109/compeng50184.2022.9905468	2022	10.1109/compeng50184.2022.9905468	On the equivalence of the three-link to the almost linear form	2022 IEEE Workshop on Complexity in Engineering (COMPENG)	proceedings-article
+14	10.1155/2018/8073481	2018	10.1155/2018/8073481	Robust Stability of Fractional‐Order Linear Time‐Invariant Systems: Parametric versus Unstructured Uncertainty Models	Complexity	journal-article
+15	10.1007/bf01581642	1980	10.1007/bf01581642	Computational complexity of parametric linear programming	Mathematical Programming	journal-article
+16	10.1016/j.econlet.2011.09.028	2012	10.1016/j.econlet.2011.09.028	News shocks or parametric indeterminacy? An observational equivalence result in linear rational expectations models	Economics Letters	journal-article
+17	10.1007/978-3-319-58741-7_15	2017	10.1007/978-3-319-58741-7_15	Turing Computable Embeddings, Computable Infinitary Equivalence, and Linear Orders	Lecture Notes in Computer Science	book-chapter
+18	10.1016/j.orl.2021.06.005	2021	10.1016/j.orl.2021.06.005	Complexity of linear minimization and projection on some sets	Operations Research Letters	journal-article
+19	10.1007/978-3-642-46709-7_11	1990	10.1007/978-3-642-46709-7_11	Equivalence and parametric analysis in linear fractional programming	Lecture Notes in Economics and Mathematical Systems	book-chapter
+20	10.1016/j.ifacol.2020.12.569	2020	10.1016/j.ifacol.2020.12.569	Low-complexity stabilizing PWA controllers for linear systems with parametric uncertainties	IFAC-PapersOnLine	journal-article
+21	10.1109/spawc.2009.5161786	2009	10.1109/spawc.2009.5161786	Piecewise linear relaying: A low complexity parametric relaying	2009 IEEE 10th Workshop on Signal Processing Advances in Wireless Communications	proceedings-article
+22	10.1007/s12095-025-00790-x	2025	10.1007/s12095-025-00790-x	On the sample complexity of linear code equivalence for all code rates	Cryptography and Communications	journal-article
+23	10.1007/s10107-014-0823-8	2015	10.1007/s10107-014-0823-8	A polynomial projection algorithm for linear feasibility problems	Mathematical Programming	journal-article
+24	10.1017/s0956796899003639	2000	10.1017/s0956796899003639	Program equivalence in a linear functional language	Journal of Functional Programming	journal-article
+25	10.1007/s10878-023-01054-1	2023	10.1007/s10878-023-01054-1	Nonnegative partial s-goodness for the equivalence of a 0-1 linear program to weighted linear programming	Journal of Combinatorial Optimization	journal-article
+26	10.1007/978-3-030-20572-0_6	2020	10.1007/978-3-030-20572-0_6	Exponentially Dichotomous Linear Systems of Differential Equations with Piecewise Constant Argument	Nonlinear Systems and Complexity	book-chapter
+27	10.1016/j.optlaseng.2022.107377	2023	10.1016/j.optlaseng.2022.107377	Evaluating parametric uncertainty using non-linear regression in fringe projection	Optics and Lasers in Engineering	journal-article
+28	10.1007/s00138-025-01743-3	2025	10.1007/s00138-025-01743-3	An Efficient point-in-convex 3D polyhedron test using a projective algorithm with sub-linear expected complexity	Machine Vision and Applications	journal-article
+29	10.1016/j.cam.2007.02.038	2008	10.1016/j.cam.2007.02.038	On the equivalence of parametric contexts for linear inequality systems	Journal of Computational and Applied Mathematics	journal-article
+30	10.70675/5233e6a1z281fz4540za45fzd32249cf9cd4	None	10.70675/5233e6a1z281fz4540za45fzd32249cf9cd4	From automata to cyclic proofs : equivalence algorithms and descriptive complexity		dissertation
+31	10.1137/0209031	1980	10.1137/0209031	On the Computational Complexity of Program Scheme Equivalence	SIAM Journal on Computing	journal-article
+32	10.1007/978-1-4613-0897-3_20	1987	10.1007/978-1-4613-0897-3_20	Projection Complete Graph Problems Corresponding to a Branching-Program-Based Characterization of the Complexity Classes NC 1 ,Land NL	Mathematical Logic and Its Applications	book-chapter
+33	10.1007/springerreference_5933	None	10.1007/springerreference_5933	Parametric linear programming	SpringerReference	reference-entry
+34	10.1007/s00034-016-0465-6	2017	10.1007/s00034-016-0465-6	Low-Complexity $$l_0$$ l 0 -Norm Penalized Shrinkage Linear and Widely Linear Affine Projection Algorithms	Circuits, Systems, and Signal Processing	journal-article
+35	10.1134/s0361768811020113	2011	10.1134/s0361768811020113	The parametric solution of underdetermined linear ODEs	Programming and Computer Software	journal-article
+36	10.1016/s0277-5387(00)84051-6	1990	10.1016/s0277-5387(00)84051-6	Alkaline hydrolysis of linear tetra-, hexa- and octaphosphate	Polyhedron	journal-article
+37	10.70675/4714cfc0z7540z46edz8647z654a35f388b1	None	10.70675/4714cfc0z7540z46edz8647z654a35f388b1	A logical study of program equivalence		dissertation
+38	10.36227/techrxiv.24187980.v1	2023	10.36227/techrxiv.24187980.v1	Navigating Complexity Riemann Hypothesis, Medical Predictions, and Computational Equivalence		posted-content
+39	10.36227/techrxiv.24187980	2023	10.36227/techrxiv.24187980	Navigating Complexity Riemann Hypothesis, Medical Predictions, and Computational Equivalence		posted-content
+40	10.14293/pr2199.001853.v1	2025	10.14293/pr2199.001853.v1	"Asymptotic Equivalence of Bit-Based Prime
+
+                    Complexity and Shannon Entropy"		posted-content
+41	10.1016/j.jco.2003.10.001	2004	10.1016/j.jco.2003.10.001	Quantum complexity of parametric integration	Journal of Complexity	journal-article
+42	10.1007/s11590-010-0237-3	2012	10.1007/s11590-010-0237-3	On linear vector program and vector matrix game equivalence	Optimization Letters	journal-article
+43	10.3846/13926292.2016.1208119	2016	10.3846/13926292.2016.1208119	PARAMETRIC COMPLEXITY REDUCTION OF DISCRETE-TIME LINEAR SYSTEMS HAVING A SLOW INITIAL ONSET OR DELAY	Mathematical Modelling and Analysis	journal-article
+44	10.31224/5597	2025	10.31224/5597	On Equivalence of Tractable and Non-polynomial Classes of Complexity		posted-content
+45	10.1201/b15925-4	2013	10.1201/b15925-4	Complexity Theory .......................................................... Application of Complexity Theory to Program	Successful Program Management	book-chapter
+46	10.1201/b10872-5	2016	10.1201/b10872-5	Complexity in Program Management	Program Management Complexity	book-chapter
+47	10.1007/s10623-022-01055-x	2022	10.1007/s10623-022-01055-x	The equivalence of linear codes implies semi-linear equivalence	Designs, Codes and Cryptography	journal-article
+48	10.5220/0014410800004728	2026	10.5220/0014410800004728	APPA: A Cluster-Preserving Approximating Parametric Projection Algorithm	Proceedings of the 21st International Conference on Computer Graphics, Interaction and Visualization Theory and Applications	proceedings-article
+49	10.1016/j.combustflame.2021.111935	2022	10.1016/j.combustflame.2021.111935	Intrinsic instabilities in premixed hydrogen flames: Parametric variation of pressure, equivalence ratio, and temperature. Part 1 - Dispersion relations in the linear regime	Combustion and Flame	journal-article
+50	10.1609/aaai.v27i1.8696	2013	10.1609/aaai.v27i1.8696	Sample Complexity and Performance Bounds for Non-Parametric Approximate Linear Programming	Proceedings of the AAAI Conference on Artificial Intelligence	journal-article
+51	10.1007/s10107-021-01623-4	2022	10.1007/s10107-021-01623-4	Complexity of linear relaxations in integer programming	Mathematical Programming	journal-article
+52	10.32614/cran.package.equaltestmi	2017	10.32614/cran.package.equaltestmi	equaltestMI: Examine Measurement Invariance via Equivalence Testing and Projection Method	CRAN: Contributed Packages	dataset
+53	10.1007/978-1-4615-4975-8_4	1999	10.1007/978-1-4615-4975-8_4	Integer Linear Systems: Projection and Inverse Projection	Large Scale Linear and Integer Optimization: A Unified Approach	book-chapter
+54	10.1016/j.combustflame.2021.111936	2022	10.1016/j.combustflame.2021.111936	Intrinsic instabilities in premixed hydrogen flames: parametric variation of pressure, equivalence ratio, and temperature. Part 2 – Non‐linear regime and flame speed enhancement	Combustion and Flame	journal-article
+55	10.1016/s0277-5387(00)84591-x	1993	10.1016/s0277-5387(00)84591-x	Reactions of 1,3-butanediol with hexachlorocyclotriphosphazene: unusual non-equivalence of phosphorus nuclei in the spirocyclic product N3P3Cl4[OCH(CH3)CH2CH2O]	Polyhedron	journal-article
+56	10.1016/j.laa.2004.09.006	2005	10.1016/j.laa.2004.09.006	Equivalence of quadruples and feedback equivalence of related pairs	Linear Algebra and its Applications	journal-article
+57	10.1016/s0277-5387(00)83756-0	1991	10.1016/s0277-5387(00)83756-0	Hydrolysis of cyclopenta-, cyclohepta-, linear penta- and heptaphosphate in aqueous solution	Polyhedron	journal-article
+58	10.1007/s10107-005-0610-7	2006	10.1007/s10107-005-0610-7	Improved complexity results on solving real-number linear feasibility problems	Mathematical Programming	journal-article
+59	10.1007/springerreference_333	None	10.1007/springerreference_333	Linear Complexity	SpringerReference	reference-entry
+60	10.1006/jcom.2001.0621	2002	10.1006/jcom.2001.0621	Linear Complexity, k-Error Linear Complexity, and the Discrete Fourier Transform	Journal of Complexity	journal-article
+61	10.1504/ijcsm.2025.10073023	2025	10.1504/ijcsm.2025.10073023	Linear Polynomial Algebra Migration System for Program Equivalence and Approximate Optimisation	International Journal of Computing Science and Mathematics	journal-article
+62	10.1007/3-540-08860-1_17	1978	10.1007/3-540-08860-1_17	The complexity of equivalence and containment for free single variable program schemes	Lecture Notes in Computer Science	book-chapter
+63	10.22331/q-2024-07-02-1391	2024	10.22331/q-2024-07-02-1391	Polynomial Equivalence of Complexity Geometries	Quantum	journal-article
+64	10.1201/b15925-13	2013	10.1201/b15925-13	Complexity-Based Program Management	Successful Program Management	book-chapter
+65	10.1201/b15925-8	2013	10.1201/b15925-8	Complexity and Program Management	Successful Program Management	book-chapter
+66	10.1111/j.1467-9574.2010.00466.x	2010	10.1111/j.1467-9574.2010.00466.x	Exact linear rank tests for two-sample equivalence problems with continuous data	Statistica Neerlandica	journal-article
+67	10.33140/jeee.04.05.10	2025	10.33140/jeee.04.05.10	On Equivalence of Tractable and Non-polynomial Classes of Complexity	Journal of Electrical Electronics Engineering	journal-article
+68	10.1007/978-3-030-20572-0_14	2020	10.1007/978-3-030-20572-0_14	Asymptotic Equivalence of Hybrid Systems	Nonlinear Systems and Complexity	book-chapter
+69	10.1109/ccc.1996.507675	None	10.1109/ccc.1996.507675	Succinct representation, leaf languages, and projection reductions	Proceedings of Computational Complexity (Formerly Structure in Complexity Theory)	proceedings-article
+70	10.1016/j.sigpro.2007.03.016	2007	10.1016/j.sigpro.2007.03.016	A low-complexity suboptimal filter for continuous–discrete linear systems with parametric uncertainties	Signal Processing	journal-article
+71	10.1002/9780470770894.app3	2007	10.1002/9780470770894.app3	Appendix 3: Lumen vs Etendue Parametric Model	Projection Displays	other
+72	10.1016/s0304-3975(02)00374-2	2003	10.1016/s0304-3975(02)00374-2	Equivalence of conservative, free, linear program schemas is decidable	Theoretical Computer Science	journal-article
+73	10.33774/coe-2025-3g759	2025	10.33774/coe-2025-3g759	On Equivalence of Tractable and Non-polynomial Classes of Complexity		posted-content
+74	10.1201/b15925-14	2013	10.1201/b15925-14	Applied Complexity and Program Management	Successful Program Management	book-chapter
+75	10.33774/coe-2025-3g759-v2	2025	10.33774/coe-2025-3g759-v2	On Equivalence of Tractable and Non-polynomial Classes of Complexity		posted-content
+76	10.1006/jcom.1999.0508	1999	10.1006/jcom.1999.0508	Monte Carlo Complexity of Parametric Integration	Journal of Complexity	journal-article
+77	10.1016/s0277-5387(00)86250-6	1989	10.1016/s0277-5387(00)86250-6	Linear enthalpy correlation in molybdenum(VI) octahedral substitutions	Polyhedron	journal-article
+78	10.1201/b15925-15	2013	10.1201/b15925-15	Successful Program Management and Complexity	Successful Program Management	book-chapter
+79	10.1504/ijcsm.2025.149893	2025	10.1504/ijcsm.2025.149893	Linear polynomial algebra migration system for program equivalence and approximate optimisation	International Journal of Computing Science and Mathematics	journal-article
+80	10.1515/math-2023-0125	2023	10.1515/math-2023-0125	Linear maps preserving equivalence or asymptotic equivalence on Banach space	Open Mathematics	journal-article
+81	10.23919/ecc.2013.6669386	2013	10.23919/ecc.2013.6669386	Every continuous piecewise affine function can be obtained by solving a parametric linear program	2013 European Control Conference (ECC)	proceedings-article
+82	10.1007/springerreference_72580	None	10.1007/springerreference_72580	Parametric Linear Programming: Cost Simplex Algorithm	SpringerReference	reference-entry
+83	10.1007/s10107-016-1061-z	2017	10.1007/s10107-016-1061-z	A parametric simplex algorithm for linear vector optimization problems	Mathematical Programming	journal-article
+84	10.1155/2021/3143324	2021	10.1155/2021/3143324	Local Asymptotic Normality Complexity Arising in a Parametric Statistical Lévy Model	Complexity	journal-article
+85	10.1016/j.jco.2015.11.002	2016	10.1016/j.jco.2015.11.002	Equivalence of anchored and ANOVA spaces via interpolation	Journal of Complexity	journal-article
+86	10.1002/9781119265245.ch2	2020	10.1002/9781119265245.ch2	Multi‐parametric Linear Programming	Multi‐Parametric Optimization and Control	other
+87	10.1007/978-3-030-20572-0_13	2020	10.1007/978-3-030-20572-0_13	Asymptotic Equivalence and Almost Periodic Solutions	Nonlinear Systems and Complexity	book-chapter
+88	10.1007/978-1-4419-9180-5_3	2004	10.1007/978-1-4419-9180-5_3	Finite Projection Methods for Linear Systems	Projectors and Projection Methods	book-chapter
+89	10.7554/elife.38069.015	None	10.7554/elife.38069.015	Figure 2—source data 2. Measurement of tenocyte projection branching complexity along VMS.		component
+90	10.1016/j.jco.2014.04.002	2014	10.1016/j.jco.2014.04.002	Complexity of parametric integration in various smoothness classes	Journal of Complexity	journal-article
+91	10.1016/s0165-0114(00)00015-4	2001	10.1016/s0165-0114(00)00015-4	Fuzzy non-linear integer program by parametric programming approach	Fuzzy Sets and Systems	journal-article
+92	10.1515/9783112706916-007	1982	10.1515/9783112706916-007	6. On Procedures for Analysing Parametric Optimization Problems	Non-Linear Parametric Optimization	book-chapter
+93	10.1016/0010-468x(82)90054-x	1982	10.1016/0010-468x(82)90054-x	A computer program for the analysis of structural identifiability and equivalence of linear compartmental models	Computer Programs in Biomedicine	journal-article
+94	10.1016/0885-064x(87)90007-0	1987	10.1016/0885-064x(87)90007-0	A simplex variant solving an m × d linear program in O(min(m2, d2) expected number of pivot steps	Journal of Complexity	journal-article
+95	10.1007/s10957-025-02901-3	2026	10.1007/s10957-025-02901-3	Revisit Iterative Complexity of Some Projection-type Methods for Monotone Linear Variational Inequality Problems	Journal of Optimization Theory and Applications	journal-article
+96	10.1111/j.1520-8583.2008.00154.x	2008	10.1111/j.1520-8583.2008.00154.x	PRESUPPOSITION PROJECTION AND LOGICAL EQUIVALENCE*	Philosophical Perspectives	journal-article
+97	10.1016/s0277-5387(01)00978-0	2002	10.1016/s0277-5387(01)00978-0	Linear coordination of Hg(II) by cysteamine	Polyhedron	journal-article
+98	10.1201/b15925-17	2013	10.1201/b15925-17	The Future of Program Management and Complexity	Successful Program Management	book-chapter
+99	10.1145/2426890.2426903	2013	10.1145/2426890.2426903	TRSynth	Proceedings of the ACM SIGPLAN 2013 workshop on Partial evaluation and program manipulation	proceedings-article
+100	10.1201/b15925-11	2013	10.1201/b15925-11	Technology-Based Communication, Complexity, and Program Management	Successful Program Management	book-chapter

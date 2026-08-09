@@ -1,0 +1,101 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1007/bf02280834	1994	10.1007/bf02280834	A fully abstract trace model for dataflow and asynchronous networks	Distributed Computing	journal-article
+2	10.1145/75277.75291	1989	10.1145/75277.75291	A fully abstract trace model for dataflow networks	Proceedings of the 16th ACM SIGPLAN-SIGACT symposium on Principles of programming languages  - POPL '89	proceedings-article
+3	10.1007/3-540-51486-4_79	1989	10.1007/3-540-51486-4_79	An iterative metric fully abstract semantics for nondeterministic dataflow (extended abstract)	Lecture Notes in Computer Science	book-chapter
+4	10.1017/cbo9780511770524.005	2009	10.1017/cbo9780511770524.005	The semantics of dataflow with firing	From Semantics to Computer Science	book-chapter
+5	10.1109/lics.2009.12	2009	10.1109/lics.2009.12	Trace Semantics is Fully Abstract	2009 24th Annual IEEE Symposium on Logic In Computer Science	proceedings-article
+6	10.1145/2554850.2554865	2014	10.1145/2554850.2554865	Fully abstract trace semantics for low-level isolation mechanisms	Proceedings of the 29th Annual ACM Symposium on Applied Computing	proceedings-article
+7	10.1007/978-3-540-73420-8_58	None	10.1007/978-3-540-73420-8_58	A Fully Abstract Trace Semantics for General References	Lecture Notes in Computer Science	book-chapter
+8	10.1016/j.cl.2015.03.002	2015	10.1016/j.cl.2015.03.002	Fully abstract trace semantics for protected module architectures	Computer Languages, Systems &amp; Structures	journal-article
+9	10.1007/978-3-540-31987-0_29	2005	10.1007/978-3-540-31987-0_29	Java JR: Fully Abstract Trace Semantics for a Core Java Language	Lecture Notes in Computer Science	book-chapter
+10	10.1016/j.scico.2013.10.002	2014	10.1016/j.scico.2013.10.002	A fully abstract trace-based semantics for reasoning about backward compatibility of class libraries	Science of Computer Programming	journal-article
+11	10.70675/33859af0z9c09z423dzb345z62ae1ec51d10	None	10.70675/33859af0z9c09z423dzb345z62ae1ec51d10	Mechanized semantics for circuits : from dataflow to hardware		dissertation
+12	10.17771/pucrio.acad.30650	None	10.17771/pucrio.acad.30650	DATAFLOW SEMANTICS FOR END-USER PROGRAMMABLE APPLICATIONS		dissertation
+13	10.1007/s11265-012-0682-6	2013	10.1007/s11265-012-0682-6	Port Based Actor Model with Kahn Process Network Model and Decidable Dataflow Model	Journal of Signal Processing Systems	journal-article
+14	10.70675/0d242e5czfe16z49f6za04ezf51f4dabb08e	None	10.70675/0d242e5czfe16z49f6za04ezf51f4dabb08e	Mechanized semantics and verified compilation for a dataflow synchronous language with reset		dissertation
+15	10.1007/bfb0040252	None	10.1007/bfb0040252	A generalized Kahn Principle for abstract asynchronous networks	Lecture Notes in Computer Science	book-chapter
+16	10.1007/bfb0040262	None	10.1007/bfb0040262	Equationally fully abstract models of PCF	Lecture Notes in Computer Science	book-chapter
+17	10.1007/3-540-56596-5_38	1993	10.1007/3-540-56596-5_38	A fully abstract model for a nonuniform concurrent language with parameterization and locality	Lecture Notes in Computer Science	book-chapter
+18	10.1017/cbo9780511770524.018	2009	10.1017/cbo9780511770524.018	A constructive denotational semantics for Kahn networks in Coq	From Semantics to Computer Science	book-chapter
+19	10.1109/lics.2001.932487	None	10.1109/lics.2001.932487	A fully abstract game semantics of local exceptions	Proceedings 16th Annual IEEE Symposium on Logic in Computer Science	proceedings-article
+20	10.1109/lics.1994.316084	None	10.1109/lics.1994.316084	A fully abstract semantics for concurrent graph reduction	Proceedings Ninth Annual IEEE Symposium on Logic in Computer Science	proceedings-article
+21	10.1007/978-1-4612-4118-8_8	1997	10.1007/978-1-4612-4118-8_8	Towards Fully Abstract Semantics for Local Variables: Preliminary Report	Algol-like Languages	book-chapter
+22	10.1007/3-540-51285-3_43	1989	10.1007/3-540-51285-3_43	Comparing two fully abstract dataflow models	Lecture Notes in Computer Science	book-chapter
+23	10.7146/brics.v6i28.20097	1999	10.7146/brics.v6i28.20097	A Fully Abstract Presheaf Semantics of SCCS with Finite Delay	BRICS Report Series	journal-article
+24	10.1007/978-3-319-27810-0_6	2016	10.1007/978-3-319-27810-0_6	Probabilistic Abstract Interpretation: From Trace Semantics to DTMC’s and Linear Regression	Lecture Notes in Computer Science	book-chapter
+25	10.1016/0304-3975(96)80128-9	1995	10.1016/0304-3975(96)80128-9	A fully abstract semantics for a nondeterministic functional language with monadic types	Theoretical Computer Science	journal-article
+26	10.1109/lics.1999.782637	None	10.1109/lics.1999.782637	A fully abstract game semantics for finite nondeterminism	Proceedings. 14th Symposium on Logic in Computer Science (Cat. No. PR00158)	proceedings-article
+27	10.1109/pdp.2016.34	2016	10.1109/pdp.2016.34	DKPN: A Composite Dataflow/Kahn Process Networks Execution Model	2016 24th Euromicro International Conference on Parallel, Distributed, and Network-Based Processing (PDP)	proceedings-article
+28	10.1109/lics.2002.1029820	None	10.1109/lics.2002.1029820	A fully abstract may testing semantics for concurrent objects	Proceedings 17th Annual IEEE Symposium on Logic in Computer Science	proceedings-article
+29	10.1016/s0304-3975(00)00331-5	2002	10.1016/s0304-3975(00)00331-5	A fully abstract denotational semantics for the π-calculus	Theoretical Computer Science	journal-article
+30	10.1109/icpp.2009.66	2009	10.1109/icpp.2009.66	Optimizing Communication Scheduling Using Dataflow Semantics	2009 International Conference on Parallel Processing	proceedings-article
+31	10.1007/3-540-16816-8_26	1986	10.1007/3-540-16816-8_26	A fully abstract semantics and a proof system for an algol-like language with sharing	Lecture Notes in Computer Science	book-chapter
+32	10.1006/inco.1998.2738	1998	10.1006/inco.1998.2738	A Fully Abstract Semantics for Concurrent Constraint Programming	Information and Computation	journal-article
+33	10.3765/salt.v0i0.2963	2015	10.3765/salt.v0i0.2963	More Facts that Isomorphism Cannot Explain	Semantics and Linguistic Theory	journal-article
+34	10.1007/bfb0022475	None	10.1007/bfb0022475	An extensional treatment of dataflow deadlock	Lecture Notes in Computer Science	book-chapter
+35	10.1109/lics.1995.523261	None	10.1109/lics.1995.523261	A fully abstract semantics for a concurrent functional language with monadic types	Proceedings of Tenth Annual IEEE Symposium on Logic in Computer Science	proceedings-article
+36	10.1006/inco.1994.1047	1994	10.1006/inco.1994.1047	Fully Abstract Semantics for Observably Sequential Languages	Information and Computation	journal-article
+37	10.7551/mitpress/6170.003.0015	1999	10.7551/mitpress/6170.003.0015	Language/World Isomorphism?	Semantics, Tense, and Time	book-chapter
+38	10.1016/0304-3975(95)00012-l	1995	10.1016/0304-3975(95)00012-l	Fully abstract compositional semantics for an algebra of logic programs	Theoretical Computer Science	journal-article
+39	10.1007/s002360050124	1998	10.1007/s002360050124	A fully abstract semantics for causality in the $\pi$ -calculus	Acta Informatica	journal-article
+40	10.1016/j.tcs.2004.10.012	2005	10.1016/j.tcs.2004.10.012	A fully abstract may testing semantics for concurrent objects	Theoretical Computer Science	journal-article
+41	10.1007/bf01186644	1995	10.1007/bf01186644	A compositional dataflow semantics for Petri nets	Acta Informatica	journal-article
+42	10.3765/salt.v17i0.2963	2007	10.3765/salt.v17i0.2963	More Facts that Isomorphism Cannot Explain	Semantics and Linguistic Theory	journal-article
+43	10.1007/bf01211075	1995	10.1007/bf01211075	A fully abstract semantics of classes for Object-Z	Formal Aspects of Computing	journal-article
+44	10.1007/978-1-4757-3851-3_10	1997	10.1007/978-1-4757-3851-3_10	Linearity, Sharing and State: A Fully Abstract Game Semantics for Idealized Algol with Active Expressions	Algol-like Languages	book-chapter
+45	10.1109/lics.1998.705669	None	10.1109/lics.1998.705669	A fully abstract game semantics for general references	Proceedings. Thirteenth Annual IEEE Symposium on Logic in Computer Science (Cat. No.98CB36226)	proceedings-article
+46	10.1109/lics.1989.39184	None	10.1109/lics.1989.39184	A fully abstract semantics for a functional language with logic variables	[1989] Proceedings. Fourth Annual Symposium on Logic in Computer Science	proceedings-article
+47	10.1093/comjnl/32.4.290	1989	10.1093/comjnl/32.4.290	First Steps Towards Fully Abstract Semantics for Object-Oriented Languages	The Computer Journal	journal-article
+48	10.1109/lics.1988.5130	None	10.1109/lics.1988.5130	Fully abstract denotational semantics for flat Concurrent Prolog	[1988] Proceedings. Third Annual Information Symposium on Logic in Computer Science	proceedings-article
+49	10.1007/3-540-45022-x_14	2000	10.1007/3-540-45022-x_14	Fully-Abstract Statecharts Semantics via Intuitionistic Kripke Models	Lecture Notes in Computer Science	book-chapter
+50	10.1017/cbo9780511770524.008	2009	10.1017/cbo9780511770524.008	Program semantics and infinite regular terms	From Semantics to Computer Science	book-chapter
+51	10.1007/s002360050029	1995	10.1007/s002360050029	A compositional dataflow semantics for Petri nets	Acta Informatica	journal-article
+52	10.1017/cbo9780511770524.003	2009	10.1017/cbo9780511770524.003	Classical coordination mechanisms in the chemical model	From Semantics to Computer Science	book-chapter
+53	10.1017/cbo9780511770524.011	2009	10.1017/cbo9780511770524.011	Semantics of program representation graphs	From Semantics to Computer Science	book-chapter
+54	10.1007/978-3-319-92711-4_11	2018	10.1007/978-3-319-92711-4_11	Process Data Types - A Fully General Model of Concurrent Refinement	Refinement	book-chapter
+55	10.1007/bfb0018344	None	10.1007/bfb0018344	Compositional relational semantics for indeterminate dataflow networks	Lecture Notes in Computer Science	book-chapter
+56	10.1016/j.cl.2005.01.001	2009	10.1016/j.cl.2005.01.001	Class invariants as abstract interpretation of trace semantics	Computer Languages, Systems &amp; Structures	journal-article
+57	10.1145/75277.75289	1989	10.1145/75277.75289	Fully abstract compositional semantics for logic programs	Proceedings of the 16th ACM SIGPLAN-SIGACT symposium on Principles of programming languages  - POPL '89	proceedings-article
+58	10.1145/1218563.1218579	2007	10.1145/1218563.1218579	Fully abstract semantics of additive aspects by translation	Proceedings of the 6th international conference on Aspect-oriented software development	proceedings-article
+59	10.1007/bfb0022459	1979	10.1007/bfb0022459	Semantics of Concurrent Computation	Lecture Notes in Computer Science	book
+60	10.1515/ling.1974.12.141.27	1974	10.1515/ling.1974.12.141.27	ALGEBRAIC SEMANTICS FOR NARRATIVE	Linguistics	journal-article
+61	10.1007/bfb0039592	None	10.1007/bfb0039592	Natural semantics	Lecture Notes in Computer Science	book-chapter
+62	10.7146/brics.v4i36.18962	1997	10.7146/brics.v4i36.18962	Relational Semantics of Non-Deterministic Dataflow	BRICS Report Series	journal-article
+63	10.1016/s0304-3975(98)00356-9	1999	10.1016/s0304-3975(98)00356-9	A fully abstract semantics for a higher-order functional language with nondeterministic computation	Theoretical Computer Science	journal-article
+64	10.1016/s0020-0190(96)00177-9	1996	10.1016/s0020-0190(96)00177-9	There is no fully abstract fixpoint semantics for non-deterministic languages with infinite computations	Information Processing Letters	journal-article
+65	10.1145/73560.73577	1988	10.1145/73560.73577	Towards fully abstract semantics for local variables	Proceedings of the 15th ACM SIGPLAN-SIGACT symposium on Principles of programming languages  - POPL '88	proceedings-article
+66	10.1017/cbo9780511770524.006	2009	10.1017/cbo9780511770524.006	Kahn networks at the dawn of functional programming	From Semantics to Computer Science	book-chapter
+67	10.1201/9781003142331-6	2021	10.1201/9781003142331-6	Isomorphism	Contemporary Abstract Algebra	book-chapter
+68	10.1007/3-540-59042-0_77	1995	10.1007/3-540-59042-0_77	A fully abstract semantics for causality in the π-calculus	Lecture Notes in Computer Science	book-chapter
+69	10.1017/cbo9780511770524.023	2009	10.1017/cbo9780511770524.023	Reflections on INRIA and the role of Gilles Kahn	From Semantics to Computer Science	book-chapter
+70	10.1016/0304-3975(94)90054-x	1994	10.1016/0304-3975(94)90054-x	A denotational semantics and dataflow construction for logic programs	Theoretical Computer Science	journal-article
+71	10.1017/cbo9780511770524.016	2009	10.1017/cbo9780511770524.016	Theorem-proving support in programming language semantics	From Semantics to Computer Science	book-chapter
+72	10.1016/s1571-0661(05)80311-1	1999	10.1016/s1571-0661(05)80311-1	A Fully Abstract Presheaf Semantics of SCCS with Finite Delay	Electronic Notes in Theoretical Computer Science	journal-article
+73	10.4204/eptcs.18.2	2010	10.4204/eptcs.18.2	A Fully Abstract Symbolic Semantics for Psi-Calculi	Electronic Proceedings in Theoretical Computer Science	journal-article
+74	10.1016/s0304-3975(00)00281-4	2001	10.1016/s0304-3975(00)00281-4	A fully abstract denotational semantics for the calculus of higher-order communicating systems	Theoretical Computer Science	journal-article
+75	10.1016/s0020-0190(99)00042-3	1999	10.1016/s0020-0190(99)00042-3	Abstract interpretation of trace semantics for concurrent calculi	Information Processing Letters	journal-article
+76	10.1017/cbo9780511770524.001	2009	10.1017/cbo9780511770524.001	Preface	From Semantics to Computer Science	book-chapter
+77	10.1007/3-540-17945-3_20	1987	10.1007/3-540-17945-3_20	A fully abstract semantics for data flow nets	Lecture Notes in Computer Science	book-chapter
+78	10.26226/morressier.604907f41a80aac83ca25d35	2021	10.26226/morressier.604907f41a80aac83ca25d35	Revisiting semantics of interactions for trace validity analysis		posted-content
+79	10.1016/s0304-3975(01)00247-x	2003	10.1016/s0304-3975(01)00247-x	Towards categorical models for fairness: fully abstract presheaf semantics of SCCS with finite delay	Theoretical Computer Science	journal-article
+80	10.1007/3-540-58338-6_84	1994	10.1007/3-540-58338-6_84	A fully abstract semantics for termination in Petri nets	Lecture Notes in Computer Science	book-chapter
+81	10.1201/b16102-16	2013	10.1201/b16102-16	Isomorphism and Invariants	Abstract Algebra	book-chapter
+82	10.1109/emsoft.2015.7318265	2015	10.1109/emsoft.2015.7318265	Executing dataflow actors as kahn processes	2015 International Conference on Embedded Software (EMSOFT)	proceedings-article
+83	10.1007/978-3-642-30767-6_17	2012	10.1007/978-3-642-30767-6_17	A Fully Abstract View for Local Cause Semantics	Lecture Notes in Computer Science	book-chapter
+84	10.1016/s1571-0661(04)80016-1	1995	10.1016/s1571-0661(04)80016-1	A fully abstract semantics for a nondeterministic functional language with monadic types	Electronic Notes in Theoretical Computer Science	journal-article
+85	10.23943/princeton/9780691181387.003.0019	2019	10.23943/princeton/9780691181387.003.0019	The Quasi-Isomorphism Theorem	The Plaid Model	book-chapter
+86	10.1016/j.patcog.2007.11.003	2008	10.1016/j.patcog.2007.11.003	Interval-valued versus intuitionistic fuzzy sets: Isomorphism versus semantics	Pattern Recognition	journal-article
+87	10.1007/3-540-55808-x_45	1992	10.1007/3-540-55808-x_45	Fully abstract semantics for higher order communicating systems	Lecture Notes in Computer Science	book-chapter
+88	10.1007/s11704-018-7069-1	2019	10.1007/s11704-018-7069-1	A fully abstract semantics for value-passing CCS for trees	Frontiers of Computer Science	journal-article
+89	10.1016/s1571-0661(05)80222-1	1998	10.1016/s1571-0661(05)80222-1	A Fully Abstract Metric-Space Denotational Semantics for Reactive Probabilistic Processes	Electronic Notes in Theoretical Computer Science	journal-article
+90	10.1201/b16102-39	2013	10.1201/b16102-39	Homomorphisms and Isomorphism Theorems	Abstract Algebra	book-chapter
+91	10.1007/bfb0055650	1998	10.1007/bfb0055650	Fibrational semantics of dataflow networks	Lecture Notes in Computer Science	book-chapter
+92	10.1016/s1571-0661(04)00016-7	2004	10.1016/s1571-0661(04)00016-7	A fully abstract semantics for a nondeterministic functional language with monadic types	Electronic Notes in Theoretical Computer Science	journal-article
+93	10.1007/978-1-4471-3860-0_10	1990	10.1007/978-1-4471-3860-0_10	A Simple Generalization of Kahn’s Principle to Indeterminate Dataflow Networks	Workshops in Computing	book-chapter
+94	10.1007/3-540-55808-x_26	1992	10.1007/3-540-55808-x_26	Dataflow semantics for Petri nets	Lecture Notes in Computer Science	book-chapter
+95	10.5220/0014692100004015	2026	10.5220/0014692100004015	A Simple Trace Semantics for Asynchronous Sequence Diagrams	Proceedings of the 21st International Conference on Evaluation of Novel Approaches to Software Engineering	proceedings-article
+96	10.4204/eptcs.120.1	2013	10.4204/eptcs.120.1	Proceedings Combined 20th International Workshop on Expressiveness in Concurrency and 10th Workshop on Structural Operational Semantics	Electronic Proceedings in Theoretical Computer Science	journal-article
+97	10.1145/937563.937565	2003	10.1145/937563.937565	Class analyses as abstract interpretations of trace semantics	ACM Transactions on Programming Languages and Systems	journal-article
+98	10.1109/samos.2016.7818327	2016	10.1109/samos.2016.7818327	Processes and actors: Translating Kahn processes to dataflow with firing	2016 International Conference on Embedded Computer Systems: Architectures, Modeling and Simulation (SAMOS)	proceedings-article
+99	10.4204/eptcs.164.3	2014	10.4204/eptcs.164.3	A fully-abstract semantics of lambda-mu in the pi-calculus	Electronic Proceedings in Theoretical Computer Science	journal-article
+100	10.1007/s00165-003-0018-1	2003	10.1007/s00165-003-0018-1	Intensional and Extensional Semantics of Dataflow Programs	Formal Aspects of Computing	journal-article

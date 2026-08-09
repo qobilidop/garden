@@ -1,0 +1,101 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1109/isqed.2006.61	None	10.1109/isqed.2006.61	Equivalence Checking of C Programs by Locally Performing Symbolic Simulation on Dependence Graphs	7th International Symposium on Quality Electronic Design (ISQED'06)	proceedings-article
+2	10.1103/physreva.98.032305	2018	10.1103/physreva.98.032305	Local equivalence of complete bipartite and repeater graph states	Physical Review A	journal-article
+3	10.1109/fpl.2012.6339261	2012	10.1109/fpl.2012.6339261	Verification of streaming designs by combining symbolic simulation and equivalence checking	22nd International Conference on Field Programmable Logic and Applications (FPL)	proceedings-article
+4	10.1007/s10494-025-00698-9	2026	10.1007/s10494-025-00698-9	On Local Equivalence Ratio Dependence of the Burning Rate in Premixed Turbulent Lean Hydrogen/Air Flames: A Direct Numerical Simulation Analysis	Flow, Turbulence and Combustion	journal-article
+5	10.1109/icccas.2009.5250316	2009	10.1109/icccas.2009.5250316	Equivalence checking of high-level designs based on symbolic simulation	2009 International Conference on Communications, Circuits and Systems	proceedings-article
+6	10.1103/physreva.75.032325	2007	10.1103/physreva.75.032325	Local unitary versus local Clifford equivalence of stabilizer and graph states	Physical Review A	journal-article
+7	10.1109/date.1998.655923	None	10.1109/date.1998.655923	On the reuse of symbolic simulation results for incremental equivalence verification of switch-level circuits	Proceedings Design, Automation and Test in Europe	proceedings-article
+8	10.1002/(sici)1097-0118(199602)21:2<211::aid-jgt11>3.0.co;2-m	1996	10.1002/(sici)1097-0118(199602)21:2<211::aid-jgt11>3.0.co;2-m	On ?-equivalence and ?-equivalence of graphs	Journal of Graph Theory	journal-article
+9	10.1002/(sici)1097-0118(199602)21:2<211::aid-jgt11>3.3.co;2-j	1996	10.1002/(sici)1097-0118(199602)21:2<211::aid-jgt11>3.3.co;2-j	On σ‐equivalence and χ‐equivalence of graphs	Journal of Graph Theory	journal-article
+10	10.1007/0-387-29906-8_3	None	10.1007/0-387-29906-8_3	Symbolic Simulation	Scalable Hardware Verification with Symbolic Simulation	book-chapter
+11	10.1109/hpcs48598.2019.9188053	2019	10.1109/hpcs48598.2019.9188053	Parallel construction of the Symbolic Observation Graph	2019 International Conference on High Performance Computing &amp; Simulation (HPCS)	proceedings-article
+12	10.2178/bsl.1904020	2013	10.2178/bsl.1904020	Analytic equivalence relations and the forcing method	Bulletin of Symbolic Logic	journal-article
+13	10.1007/978-1-4615-3190-6_8	1993	10.1007/978-1-4615-3190-6_8	Equivalence Computations	Symbolic Model Checking	book-chapter
+14	10.3150/25-bej1852	2026	10.3150/25-bej1852	Rates of convergence and normal approximations for estimators of local dependence random graph models	Bernoulli	journal-article
+15	10.2307/2268782	1956	10.2307/2268782	On Equivalence Relations.	The Journal of Symbolic Logic	journal-article
+16	10.32469/10355/43138	None	10.32469/10355/43138	Passage-related local item dependence and spurious latent classes in the mixture Rasch model : a simulation study		dissertation
+17	10.1109/9780470546512.ch10	2009	10.1109/9780470546512.ch10	Symbolic Signal Flow Graph Methods in SwitchedCapacitor Design	Symbolic Analysis Techniques	book-chapter
+18	10.7203/celestinesca.1.19447	1977	10.7203/celestinesca.1.19447	«Hilado-Cordón-Cadena»: Symbolic Equivalence in &lt;i&gt;La Celestina&lt;/i&gt;	Celestinesca	journal-article
+19	10.1017/s175502031800045x	2018	10.1017/s175502031800045x	ON MORITA EQUIVALENCE AND INTERPRETABILITY	The Review of Symbolic Logic	journal-article
+20	10.1017/s1755020326101154	2026	10.1017/s1755020326101154	THE MODAL LOGIC OF EXACT EQUIVALENCE	The Review of Symbolic Logic	journal-article
+21	10.1103/physreva.70.034302	2004	10.1103/physreva.70.034302	Efficient algorithm to recognize the local Clifford equivalence of graph states	Physical Review A	journal-article
+22	10.1006/jsco.1993.1004	1993	10.1006/jsco.1993.1004	The Equivalence Problem for Finite Rings	Journal of Symbolic Computation	journal-article
+23	10.1016/j.jsc.2008.09.004	2009	10.1016/j.jsc.2008.09.004	On the equivalence of binary quartics	Journal of Symbolic Computation	journal-article
+24	10.1017/s1755020316000186	2016	10.1017/s1755020316000186	MORITA EQUIVALENCE	The Review of Symbolic Logic	journal-article
+25	10.1201/9781032674858-6	2025	10.1201/9781032674858-6	Equivalence Principle	General Relativity	book-chapter
+26	10.1016/s0747-7171(08)80053-3	1990	10.1016/s0747-7171(08)80053-3	The complexity of equivalence for commutative rings	Journal of Symbolic Computation	journal-article
+27	10.1017/s1755020315000258	2016	10.1017/s1755020315000258	ON THE LOGIC OF FACTUAL EQUIVALENCE	The Review of Symbolic Logic	journal-article
+28	10.1016/j.jsc.2025.102480	2026	10.1016/j.jsc.2025.102480	Subalgebra and Khovanskii bases equivalence	Journal of Symbolic Computation	journal-article
+29	10.1017/s1755020319000303	2020	10.1017/s1755020319000303	ON MORITA EQUIVALENCE AND INTERPRETABILITY	The Review of Symbolic Logic	journal-article
+30	10.1016/j.jsc.2010.09.009	2011	10.1016/j.jsc.2010.09.009	Symbolic graphs for attributed graph constraints	Journal of Symbolic Computation	journal-article
+31	10.1515/9783110258417.36	None	10.1515/9783110258417.36	3.4 Local equivalence	Spaces of Dynamical Systems	book-chapter
+32	10.1115/ht-fed2004-56084	2004	10.1115/ht-fed2004-56084	Hydraulic Simulation of a Ramjet Combustion Chamber: An Optical Method for Local Equivalence Ratios Measurements and Comparison With a CFD Code	Volume 1	proceedings-article
+33	10.1525/si.2007.30.1.27	2007	10.1525/si.2007.30.1.27	The Construction of Historical Equivalence: Weighing the Red and Brown Scares	Symbolic Interaction	journal-article
+34	10.31274/etd-180810-3900	None	10.31274/etd-180810-3900	Graph determined symbolic dynamics and hybrid systems		dissertation
+35	10.1007/978-3-7908-2711-8_3	2004	10.1007/978-3-7908-2711-8_3	The Potential Dependence of Equivalence Scales on Income	Contributions to Economics	book-chapter
+36	10.1007/978-981-97-9404-1_8	2025	10.1007/978-981-97-9404-1_8	Strong Shift Equivalence, Flow Equivalence and Cuntz–Krieger Algebras	Mathematical Physics Studies	book-chapter
+37	10.1016/j.jsc.2014.08.003	2015	10.1016/j.jsc.2014.08.003	Point equivalence of second-order ODEs: Maximal invariant classification order	Journal of Symbolic Computation	journal-article
+38	10.1007/3-540-40922-x_26	2000	10.1007/3-540-40922-x_26	Sequential Equivalence Checking by Symbolic Simulation	Lecture Notes in Computer Science	book-chapter
+39	10.1016/j.csda.2026.108443	2026	10.1016/j.csda.2026.108443	Scalable signed exponential random graph models under local dependence	Computational Statistics &amp; Data Analysis	journal-article
+40	10.1037/e636172009-001	2009	10.1037/e636172009-001	Emergence of Stimulus Equivalence Explained by Graph Theory	PsycEXTRA Dataset	dataset
+41	10.1017/9781108899727.010	2021	10.1017/9781108899727.010	Finite-to-One Codes and Finite Equivalence	An Introduction to Symbolic Dynamics and Coding	book-chapter
+42	10.1002/jgt.22500	2020	10.1002/jgt.22500	Edge Kempe equivalence of regular graph covers	Journal of Graph Theory	journal-article
+43	10.1016/j.jsc.2018.04.011	2019	10.1016/j.jsc.2018.04.011	An equivalence theorem for regular differential chains	Journal of Symbolic Computation	journal-article
+44	10.1037/e710802011-001	2011	10.1037/e710802011-001	Stimulus equivalence and graph theory applied to sign language teaching: Rebuilding the graph of equivalent stimuli	PsycEXTRA Dataset	dataset
+45	10.1007/978-3-662-10176-6_2	2004	10.1007/978-3-662-10176-6_2	Zero Equivalence	Algorithms and Computation in Mathematics	book-chapter
+46	10.1007/0-387-29906-8_5	None	10.1007/0-387-29906-8_5	Approximate Simulation	Scalable Hardware Verification with Symbolic Simulation	book-chapter
+47	10.1007/978-3-031-72008-6_2	2025	10.1007/978-3-031-72008-6_2	Preliminaries on Knowledge Graph and Symbolic Logic	Synthesis Lectures on Data, Semantics, and Knowledge	book-chapter
+48	10.2139/ssrn.2769580	2016	10.2139/ssrn.2769580	:                                                   (Local Communities in the Search for a Local Identity: Symbolic Politics and Non-Symbolic Practice)	SSRN Electronic Journal	journal-article
+49	10.1017/cbo9780511626302.009	1995	10.1017/cbo9780511626302.009	FINITE-TO-ONE CODES AND FINITE EQUIVALENCE	An Introduction to Symbolic Dynamics and Coding	book-chapter
+50	10.1002/(sici)1097-0118(199703)24:3<249::aid-jgt6>3.0.co;2-p	1997	10.1002/(sici)1097-0118(199703)24:3<249::aid-jgt6>3.0.co;2-p	Parity equivalence in eulerian graphs	Journal of Graph Theory	journal-article
+51	10.1207/s15327868ms0404_3	1989	10.1207/s15327868ms0404_3	Analogical Transforms: A Cognitive Theory of the Origin and Development of Equivalence Transformations	Metaphor and Symbolic Activity	journal-article
+52	10.1109/mascots.2010.65	2010	10.1109/mascots.2010.65	A Symbolic Reachability Graph and Associated Markov Process for a Class of Dynamic Petri Nets	2010 IEEE International Symposium on Modeling, Analysis and Simulation of Computer and Telecommunication Systems	proceedings-article
+53	10.1007/978-981-97-9404-1_3	2025	10.1007/978-981-97-9404-1_3	Flow Equivalence	Mathematical Physics Studies	book-chapter
+54	10.2139/ssrn.419982	2003	10.2139/ssrn.419982	On the Income Dependence of Equivalence Scales		posted-content
+55	10.1016/j.jsc.2019.07.013	2020	10.1016/j.jsc.2019.07.013	Elimination-based certificates for triangular equivalence and rank profiles	Journal of Symbolic Computation	journal-article
+56	10.1016/j.jsc.2023.01.001	2023	10.1016/j.jsc.2023.01.001	Equivalence and reduction of bivariate polynomial matrices to their Smith forms	Journal of Symbolic Computation	journal-article
+57	10.1006/jsco.1994.1029	1994	10.1006/jsco.1994.1029	Symbolic Local Refinement of Tetrahedral Grids	Journal of Symbolic Computation	journal-article
+58	10.1016/j.jsc.2026.102586	2027	10.1016/j.jsc.2026.102586	Certificate for orthogonal equivalence of real polynomials by polynomial-weighted principal component analysis	Journal of Symbolic Computation	journal-article
+59	10.1016/j.jsc.2014.09.041	2015	10.1016/j.jsc.2014.09.041	Equivalence of differential equations of order one	Journal of Symbolic Computation	journal-article
+60	10.1002/jgt.20509	2011	10.1002/jgt.20509	Equivalence of four descriptions of generalized line graphs	Journal of Graph Theory	journal-article
+61	10.1007/978-3-7643-7400-6_22	None	10.1007/978-3-7643-7400-6_22	Kempe Equivalence of Colorings	Trends in Mathematics	book-chapter
+62	10.5220/0010652500003063	2021	10.5220/0010652500003063	Relaxed Dissimilarity-based Symbolic Histogram Variants for Granular Graph Embedding	Proceedings of the 13th International Joint Conference on Computational Intelligence	proceedings-article
+63	10.1037/e662752012-001	2012	10.1037/e662752012-001	Stimulus Equivalence Using Graph Theory: Nodal Distance and Isomorphism Concepts	PsycEXTRA Dataset	dataset
+64	10.1016/j.jsc.2013.09.003	2014	10.1016/j.jsc.2013.09.003	Practical graph isomorphism, II	Journal of Symbolic Computation	journal-article
+65	10.1006/jsco.1997.0118	1997	10.1006/jsco.1997.0118	Computing the Newtonian Graph	Journal of Symbolic Computation	journal-article
+66	10.1002/jgt.20545	2011	10.1002/jgt.20545	The equivalence of two conjectures of Berge and Fulkerson	Journal of Graph Theory	journal-article
+67	10.1016/j.jsc.2011.01.002	2011	10.1016/j.jsc.2011.01.002	On a new method for finding generalized equivalence transformations for differential equations involving arbitrary functions	Journal of Symbolic Computation	journal-article
+68	10.1016/j.jsc.2013.06.002	2013	10.1016/j.jsc.2013.06.002	The Graph Isomorphism Problem and approximate categories	Journal of Symbolic Computation	journal-article
+69	10.1016/j.jsc.2015.11.009	2016	10.1016/j.jsc.2015.11.009	Logspace computations in graph products	Journal of Symbolic Computation	journal-article
+70	10.1007/978-981-97-9404-1_4	2025	10.1007/978-981-97-9404-1_4	Continuous Orbit Equivalence	Mathematical Physics Studies	book-chapter
+71	10.1142/9789811253591_0003	2022	10.1142/9789811253591_0003	Gravity at Finite Temperature, Equivalence Principle, and Local Lorentz Invariance	Breakdown of Einstein's Equivalence Principle	book-chapter
+72	10.5817/am2025-1-9	2025	10.5817/am2025-1-9	Local equivalence of some maximally symmetric $(2,3,5)$-distributions II	Archivum Mathematicum	journal-article
+73	10.1145/3764928	2026	10.1145/3764928	SymX: Energy-based Simulation from Symbolic Expressions	ACM Transactions on Graphics	journal-article
+74	10.1002/jgt.3190110210	1987	10.1002/jgt.3190110210	Subcontraction‐equivalence and Hadwiger's conjecture	Journal of Graph Theory	journal-article
+75	10.2139/ssrn.4321346	2023	10.2139/ssrn.4321346	Equivalence between Conformal Circles and Local Diffeomorphisms		posted-content
+76	10.1021/acs.energyfuels.8b02858.s001	None	10.1021/acs.energyfuels.8b02858.s001	New Dependence of NO Emissions on the Equivalence Ratio in Moderate or Intense Low-Oxygen Dilution Combustion		component
+77	10.2307/j.ctt4cgrzn.21	None	10.2307/j.ctt4cgrzn.21	The Symbolic Equivalence of Allomotifs:	Meaning of Folklore	book-chapter
+78	10.1016/j.jsc.2024.102376	2025	10.1016/j.jsc.2024.102376	Graph sequence learning for premise selection	Journal of Symbolic Computation	journal-article
+79	10.1016/j.physleta.2025.131223	2026	10.1016/j.physleta.2025.131223	On local unitary equivalence and local permutation equivalence of bipartite quantum states under permutation transformations	Physics Letters A	journal-article
+80	10.1016/s0747-7171(88)80047-6	1988	10.1016/s0747-7171(88)80047-6	Using Gröbner bases to determine algebra membership, split surjective algebra homomorphisms determine birational equivalence	Journal of Symbolic Computation	journal-article
+81	10.21236/ada110846	1981	10.21236/ada110846	Optimal Approximation of Sparse Hessians and Its Equivalence to a Graph Coloring Problem.		report
+82	10.70675/71d28c80z0772z4822zb94ez15ad4d8024dd	None	10.70675/71d28c80z0772z4822zb94ez15ad4d8024dd	Neural-Symbolic Integration of knowledge extraction and reasoning on graph-structured data		dissertation
+83	10.1002/jgt.22908	2023	10.1002/jgt.22908	Kempe equivalence of 4‐critical planar graphs	Journal of Graph Theory	journal-article
+84	10.1109/ssp.2012.6319822	2012	10.1109/ssp.2012.6319822	Mapping equivalence under iterative dynamics for symbolic sequences	2012 IEEE Statistical Signal Processing Workshop (SSP)	proceedings-article
+85	10.1007/s12597-026-01245-4	2026	10.1007/s12597-026-01245-4	Optimization of sustainable sensor networks using graph parameter equivalence on unit disk graph corona products for smart cities	OPSEARCH	journal-article
+86	10.1037/e535712014-001	2014	10.1037/e535712014-001	Stimulus Equivalence Using Graph Theory: Basic Concepts and Operations	PsycEXTRA Dataset	dataset
+87	10.1007/978-3-658-12680-3_6	2016	10.1007/978-3-658-12680-3_6	Heuristic Symbolic Subsumption	Complete Symbolic Simulation of SystemC Models	book-chapter
+88	10.1109/synasc.2014.30	2014	10.1109/synasc.2014.30	Reducing Partial Equivalence to Partial Correctness	2014 16th International Symposium on Symbolic and Numeric Algorithms for Scientific Computing	proceedings-article
+89	10.1145/3811327	2026	10.1145/3811327	YASPS: A Symbolic Framework for Extensible, High-Performance IPC Simulation	ACM Transactions on Graphics	journal-article
+90	10.3390/math7100990	2019	10.3390/math7100990	Continuous Orbit Equivalence on Self-Similar Graph Actions	Mathematics	journal-article
+91	10.1037/e637432010-001	2010	10.1037/e637432010-001	Using Stimulus Equivalence to Teach Brazilian Sign Language Based on Graph Theory	PsycEXTRA Dataset	dataset
+92	10.1016/j.jsc.2022.07.005	2023	10.1016/j.jsc.2022.07.005	New remarks on the factorization and equivalence problems for a class of multivariate polynomial matrices	Journal of Symbolic Computation	journal-article
+93	10.1016/j.jsc.2009.10.002	2010	10.1016/j.jsc.2009.10.002	Origami fold as algebraic graph rewriting	Journal of Symbolic Computation	journal-article
+94	10.1017/cbo9780511543050.003	2003	10.1017/cbo9780511543050.003	Symbolic Dynamics	Graph Directed Markov Systems	book-chapter
+95	10.1002/cjs.11573	2021	10.1002/cjs.11573	Local structure graph models with higher‐order dependence	Canadian Journal of Statistics	journal-article
+96	10.1017/s014338570300018x	2004	10.1017/s014338570300018x	Strong shift equivalence of symbolic dynamical systems and Morita equivalence of <i>C</i><sup>*</sup>-algebras	Ergodic Theory and Dynamical Systems	journal-article
+97	10.1007/978-981-97-9404-1_9	2025	10.1007/978-981-97-9404-1_9	Classification Theorem for Continuous Orbit Equivalence	Mathematical Physics Studies	book-chapter
+98	10.1017/s1755020323000242	2024	10.1017/s1755020323000242	TESTING DEFINITIONAL EQUIVALENCE OF THEORIES VIA AUTOMORPHISM GROUPS	The Review of Symbolic Logic	journal-article
+99	10.1017/s1755020326101178	2026	10.1017/s1755020326101178	KRIPKE’S FIXED POINTS AND LEITGEB’S SEMANTIC DEPENDENCE	The Review of Symbolic Logic	journal-article
+100	10.1093/ietfec/e88-a.12.3315	2005	10.1093/ietfec/e88-a.12.3315	An Equivalence Checking Method for C Descriptions Based on Symbolic Simulation with Textual Differences	IEICE Transactions on Fundamentals of Electronics, Communications and Computer Sciences	journal-article

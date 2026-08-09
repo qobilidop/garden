@@ -1,0 +1,5 @@
+rank	source_id	year	doi	title	venue	type
+1	6ec5b1fbaf25e7252965dcf36e435818ba4c99f8	2022	10.1145/3551357.3551370	A Monadic Implementation of Functional Logic Programs	ACM-SIGPLAN International Conference on Principles and Practice of Declarative Programming	Book
+2	fe0a69a57676920ac2e72df2a72b5e99b3f49dda	2021	10.1145/3479394.3479411	From Non-determinism to Goroutines: A Fair Implementation of Curry in Go	ACM-SIGPLAN International Conference on Principles and Practice of Declarative Programming	JournalArticle
+3	4d164c60ebc13f26a9296530a9c8198582979e6e	2021		Can Logic Programming Be Liberated from Backtracking?		
+4	da11d2718a1d14bc80fcc6fbb3c8c28fb868221f			Can Logic Programming Be Liberated from Predicates and Backtracking?		

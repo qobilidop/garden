@@ -1,0 +1,101 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1007/978-3-662-68191-6_3	2024	10.1007/978-3-662-68191-6_3	Computing a Parametric Reveals Relation For Bounded Equal-Conflict Petri Nets	Lecture Notes in Computer Science	book-chapter
+2	10.1007/3-540-48068-4_11	2002	10.1007/3-540-48068-4_11	Computing a Finite Prefix of a Time Petri Net	Lecture Notes in Computer Science	book-chapter
+3	10.1007/978-3-642-18222-8_3	2010	10.1007/978-3-642-18222-8_3	Bounded Parametric Model Checking for Elementary Net Systems	Lecture Notes in Computer Science	book-chapter
+4	10.12988/ams.2015.4121020	2015	10.12988/ams.2015.4121020	Bounded conflict free Petri nets of a field	Applied Mathematical Sciences	journal-article
+5	10.2139/ssrn.4814230	2024	10.2139/ssrn.4814230	Airport Surface Conflict Resolution Based on Improved Hybrid Petri Net and Inverse Reinforcement Learning		posted-content
+6	10.1515/auto-2021-0101	2022	10.1515/auto-2021-0101	Learning Petri net models from sensor data of conveying systems based on the merging of prefix and postfix trees	at - Automatisierungstechnik	journal-article
+7	10.1007/s00236-017-0310-9	2018	10.1007/s00236-017-0310-9	Bounded choice-free Petri net synthesis: algorithmic issues	Acta Informatica	journal-article
+8	10.1109/qest.2008.28	2008	10.1109/qest.2008.28	Polynomial Throughput Bounds for Equal Conflict Petri Nets with Multi-guarded Transitions	2008 Fifth International Conference on Quantitative Evaluation of Systems	proceedings-article
+9	10.1299/jamdsm.4.701	2010	10.1299/jamdsm.4.701	Dynamic Optimization of Simultaneous Dispatching and Conflict-free Routing for Automated Guided Vehicles  - Petri Net Decomposition Approach -	Journal of Advanced Mechanical Design, Systems, and Manufacturing	journal-article
+10	10.1007/978-3-031-48278-6_15	2024	10.1007/978-3-031-48278-6_15	Bounded Choice-Free Net Synthesis	Computer Science Foundations and Applied Logic	book-chapter
+11	10.5772/5321	2008	10.5772/5321	Timed Hierarchical Object-Oriented Petri Net	Petri Net, Theory and Applications	book-chapter
+12	10.1109/pnpm.2001.953353	None	10.1109/pnpm.2001.953353	Dependability assessment of an industrial Programmable Logic Controller via Parametric Fault-Tree and High Level Petri net	Proceedings 9th International Workshop on Petri Nets and Performance Models	proceedings-article
+13	10.1109/icce-tw.2014.6904088	2014	10.1109/icce-tw.2014.6904088	Petri net analysis on path protection of a multipath system with bounded buffers	2014 IEEE International Conference on Consumer Electronics - Taiwan	proceedings-article
+14	10.1109/icca.2007.4376878	2007	10.1109/icca.2007.4376878	Analysis for Reachability Problem of Bounded Petri Net Using Key Constraints Method	2007 IEEE International Conference on Control and Automation	proceedings-article
+15	10.7551/mitpress/8811.003.0010	2011	10.7551/mitpress/8811.003.0010	Analyzing Petri Net Models	Modeling Business Processes	book-chapter
+16	10.1007/springerreference_21281	None	10.1007/springerreference_21281	Petri net	SpringerReference	reference-entry
+17	10.1109/coase.2010.5584183	2010	10.1109/coase.2010.5584183	Petri net-based scheduling of time-constrained dual-arm cluster tools with bounded activity time variation	2010 IEEE International Conference on Automation Science and Engineering	proceedings-article
+18	10.3182/20060517-3-fr-2903.00146	2006	10.3182/20060517-3-fr-2903.00146	VERIFICATION OF ETHERNET PROTOCOLS VIA PARAMETRIC COMPOSITION OF PETRI NET	IFAC Proceedings Volumes	journal-article
+19	10.1016/j.automatica.2023.110911	2023	10.1016/j.automatica.2023.110911	Assessment of initial-state-opacity in live and bounded labeled Petri net systems via optimization techniques	Automatica	journal-article
+20	10.5772/10294	2010	10.5772/10294	Petri Net as a Manufacturing System Scheduling Tool	Advances in Petri Net Theory and Applications	book-chapter
+21	10.1088/0032-1028/16/4/002	1974	10.1088/0032-1028/16/4/002	Threshold fields of the purely growing parametric instabilities in bounded homogeneous magnetoactive plasmas	Plasma Physics	journal-article
+22	10.1063/1.862203	1978	10.1063/1.862203	Threshold behavior of the three-wave parametric-decay interaction in bounded inhomogeneous plasmas	The Physics of Fluids	journal-article
+23	10.1007/978-3-540-40022-6_3	2003	10.1007/978-3-540-40022-6_3	Petri Net Transformations in the ≫Petri Net Baukasten≪	Lecture Notes in Computer Science	book-chapter
+24	10.1007/978-3-642-21834-7_15	2011	10.1007/978-3-642-21834-7_15	On Parametric Steady State Analysis of a Generalized Stochastic Petri Net with a Fork-Join Subnet	Lecture Notes in Computer Science	book-chapter
+25	10.1016/j.ifacol.2021.04.072	2020	10.1016/j.ifacol.2021.04.072	On the Equilibrium Sets of Topologically Equal Conflict Timed Continuous Petri Nets	IFAC-PapersOnLine	journal-article
+26	10.1002/9781119262114.part1	2016	10.1002/9781119262114.part1	Short Review of Petri Net Modeling	Systems Dependability Assessment	other
+27	10.20535/srit.2308-8893.2021.2.08	2021	10.20535/srit.2308-8893.2021.2.08	Set difference operation for regular Petri net languages for the producer/consumer problem with the bounded buffer	System research and information technologies	journal-article
+28	10.1007/978-3-319-19488-2_12	2015	10.1007/978-3-319-19488-2_12	On the Reversibility of Live Equal-Conflict Petri Nets	Lecture Notes in Computer Science	book-chapter
+29	10.3233/fi-2010-272	2010	10.3233/fi-2010-272	Bounded Parametric Verification for Distributed Time Petri Nets with Discrete-Time Semantics	Fundamenta Informaticae	journal-article
+30	10.1109/synasc.2010.57	2010	10.1109/synasc.2010.57	Linear Algebraic Approach for Home Markings in Live and Bounded Equal Conflict Systems	2010 12th International Symposium on Symbolic and Numeric Algorithms for Scientific Computing	proceedings-article
+31	10.1142/9789814324298_0003	2012	10.1142/9789814324298_0003	Petri Net Processes and Extension Operators	Property-Preserving Petri Net Process Algebra in Software Engineering	book-chapter
+32	10.5772/5323	2008	10.5772/5323	Error Recovery in Production Systems: A Petri Net Based Intelligent System Approach	Petri Net, Theory and Applications	book-chapter
+33	10.1016/0020-0190(92)90158-r	1992	10.1016/0020-0190(92)90158-r	A solution to the covering problem for 1-bounded conflict-free Petri nets using Linear Programming	Information Processing Letters	journal-article
+34	10.1007/3-540-58152-9_27	1994	10.1007/3-540-58152-9_27	Well-formedness of Equal Conflict systems	Lecture Notes in Computer Science	book-chapter
+35	10.5772/7499	2010	10.5772/7499	GPenSIM: A New Petri Net Simulator	Petri Nets Applications	book-chapter
+36	10.5772/10297	2010	10.5772/10297	Modeling Multimedia Synchronization Using a Time Petri Net Based Approach	Advances in Petri Net Theory and Applications	book-chapter
+37	10.1007/978-3-642-29072-5_6	2012	10.1007/978-3-642-29072-5_6	Bounded Model Checking for Parametric Timed Automata	Lecture Notes in Computer Science	book-chapter
+38	10.1142/9789812839763_0007	1999	10.1142/9789812839763_0007	PETRI NET SIMULATION AND TOOLS	Modeling, Simulation, and Control of Flexible Manufacturing Systems	book-chapter
+39	10.4249/scholarpedia.6477	2008	10.4249/scholarpedia.6477	Petri net	Scholarpedia	journal-article
+40	10.5772/5310	2008	10.5772/5310	Petri Net Transformations	Petri Net, Theory and Applications	book-chapter
+41	10.3403/30175183	None	10.3403/30175183	Analysis techniques for dependability. Petri net techniques		standard
+42	10.1016/0020-0190(91)90225-7	1991	10.1016/0020-0190(91)90225-7	A polynomial time algorithm to decide pairwise concurrency of transitions for 1-bounded conflict-free Petri nets	Information Processing Letters	journal-article
+43	10.1007/3-540-56863-8_59	1993	10.1007/3-540-56863-8_59	Liveness and home states in equal conflict systems	Lecture Notes in Computer Science	book-chapter
+44	10.1016/s1474-6670(17)64101-6	1986	10.1016/s1474-6670(17)64101-6	Validation of Petri Net Models by ‘Petri-Net-Machine’	IFAC Proceedings Volumes	journal-article
+45	10.3403/30175183u	None	10.3403/30175183u	Analysis techniques for dependability. Petri net techniques		standard
+46	10.4018/978-1-4666-9594-8.les13	None	10.4018/978-1-4666-9594-8.les13	Petri Net Computing	Petri Nets for Modeling and Computing	book-chapter
+47	10.2139/ssrn.6383757	2026	10.2139/ssrn.6383757	Constraint Automata with Prefix and Suffix: Reachability and Bounded Emptiness		posted-content
+48	10.5772/5312	2008	10.5772/5312	Petri Net Based Modelling of Communication in Systems on Chip	Petri Net, Theory and Applications	book-chapter
+49	10.1093/oed/1477097321	2023	10.1093/oed/1477097321	Petri net, n.	Oxford English Dictionary	book-chapter
+50	10.5772/7503	2010	10.5772/7503	Workflow Diagnosis Using Petri Net Charts	Petri Nets Applications	book-chapter
+51	10.7551/mitpress/8811.003.0008	2011	10.7551/mitpress/8811.003.0008	Colored Petri Nets	Modeling Business Processes	book-chapter
+52	10.7551/mitpress/8811.003.0009	2011	10.7551/mitpress/8811.003.0009	Hierarchical Petri Nets	Modeling Business Processes	book-chapter
+53	10.1109/poweri.2006.1632569	2006	10.1109/poweri.2006.1632569	Fault diagnosis of power system using neural Petri net and fuzzy neural Petri net	2006 IEEE Power India Conference	proceedings-article
+54	10.1007/3-540-50580-6_31	1988	10.1007/3-540-50580-6_31	Infinitary partial Petri net languages and their relationship to other Petri net semantics	Lecture Notes in Computer Science	book-chapter
+55	10.5772/5313	2008	10.5772/5313	An Inter-Working Petri Net Model between SIMPLE and IMPS for XDM Service	Petri Net, Theory and Applications	book-chapter
+56	10.1016/j.automatica.2024.111958	2025	10.1016/j.automatica.2024.111958	Corrigendum to “Assessment of initial-state-opacity in live and bounded labeled Petri net systems via optimization techniques” [Automatica 152 (2023) 110911]	Automatica	journal-article
+57	10.1007/978-1-4615-1537-1_1	2001	10.1007/978-1-4615-1537-1_1	The Petri Net Model	Supervision of Petri Nets	book-chapter
+58	10.3233/fi-2016-1376	2016	10.3233/fi-2016-1376	On Liveness and Reversibility of Equal-Conflict Petri Nets	Fundamenta Informaticae	journal-article
+59	10.1016/s1474-6670(17)41455-8	1997	10.1016/s1474-6670(17)41455-8	A Design Method of the Conflict-Free Petri Net Models for the Manufacturing Systems Control	IFAC Proceedings Volumes	journal-article
+60	10.1109/tc.2012.114	2013	10.1109/tc.2012.114	Petri Net-Based FTL Architecture for Parametric WCET Estimation via FTL Operation Sequence Derivation	IEEE Transactions on Computers	journal-article
+61	10.1109/icsmc.1998.725382	None	10.1109/icsmc.1998.725382	How to construct maximal conflict free processes from Petri net simulations	SMC'98 Conference Proceedings. 1998 IEEE International Conference on Systems, Man, and Cybernetics (Cat. No.98CH36218)	proceedings-article
+62	10.1201/9781439808856-8	2018	10.1201/9781439808856-8	Colored Petri Net	System Modeling and Control with Resource-Oriented Petri Nets	book-chapter
+63	10.1109/icsmc.2010.5642227	2010	10.1109/icsmc.2010.5642227	A conflict solution manufacturing system modeling using Fuzzy Coloured Petri net	2010 IEEE International Conference on Systems, Man and Cybernetics	proceedings-article
+64	10.7551/mitpress/8811.003.0006	2011	10.7551/mitpress/8811.003.0006	Application of Petri Nets	Modeling Business Processes	book-chapter
+65	10.46298/.8467	2021	10.46298/.8467	The Complexity of Synthesis of $b$-Bounded Petri Nets	Fundamenta Informaticae	journal-article
+66	10.1002/9781119262114.ch6	2016	10.1002/9781119262114.ch6	Petri Net Modeling of the Accidental Process	Systems Dependability Assessment	other
+67	10.1360/n112016-00137	2016	10.1360/n112016-00137	Semi-tensor product of matrices approach to stability and stabilization analysis of bounded Petri net systems	SCIENTIA SINICA Informationis	journal-article
+68	10.4236/ijcns.2011.41008	2011	10.4236/ijcns.2011.41008	A Parametric Colored Petri Net Model of a Switched Network	International Journal of Communications, Network and System Sciences	journal-article
+69	10.5772/5318	2008	10.5772/5318	Model Checking of Time Petri Nets	Petri Net, Theory and Applications	book-chapter
+70	10.1002/9781119262114.part3	2016	10.1002/9781119262114.part3	Stochastic Petri Nets	Systems Dependability Assessment	other
+71	10.7551/mitpress/8811.003.0005	2011	10.7551/mitpress/8811.003.0005	Basic Concepts of Petri Nets	Modeling Business Processes	book-chapter
+72	10.1016/j.omega.2006.02.001	2008	10.1016/j.omega.2006.02.001	A systematic approach for supply chain conflict detection with a hierarchical Petri Net extension	Omega	journal-article
+73	10.1007/978-3-662-04457-5_4	2001	10.1007/978-3-662-04457-5_4	Petri Net Semantics	Monographs in Theoretical Computer Science An EATCS Series	book-chapter
+74	10.1201/9781439808856-6	2018	10.1201/9781439808856-6	Colored Petri Net ���������������������������������������������������������������������������������������������� 3	System Modeling and Control with Resource-Oriented Petri Nets	book-chapter
+75	10.1007/978-3-642-41115-1_2	2013	10.1007/978-3-642-41115-1_2	The Classic Petri Net	Time and Petri Nets	book-chapter
+76	10.5772/5325	2008	10.5772/5325	Diagnosis of Discrete Event Systems with Petri Nets	Petri Net, Theory and Applications	book-chapter
+77	10.5772/56	2008	10.5772/56	Petri Net, Theory and Applications		edited-book
+78	10.1007/978-3-662-60651-3_2	2019	10.1007/978-3-662-60651-3_2	How Petri Net Theory Serves Petri Net Model Checking: A Survey	Lecture Notes in Computer Science	book-chapter
+79	10.5772/5319	2008	10.5772/5319	A Linear Logic Based Approach to Timed Petri Nets	Petri Net, Theory and Applications	book-chapter
+80	10.1002/0471028959.sof240	2002	10.1002/0471028959.sof240	Petri Net	Encyclopedia of Software Engineering	other
+81	10.5772/5320	2008	10.5772/5320	From Time Petri Nets to Timed Automata	Petri Net, Theory and Applications	book-chapter
+82	10.1201/9781439808856-10	2018	10.1201/9781439808856-10	Resource-Oriented Petri Net Modeling	System Modeling and Control with Resource-Oriented Petri Nets	book-chapter
+83	10.1016/s1474-6670(17)57719-8	1996	10.1016/s1474-6670(17)57719-8	Composition of Conflict-Free Petri Net Models for Control of Flexible Manufacturing Systems	IFAC Proceedings Volumes	journal-article
+84	10.1201/9781439808856-9	2018	10.1201/9781439808856-9	Process-Oriented Petri Net Modeling	System Modeling and Control with Resource-Oriented Petri Nets	book-chapter
+85	10.5772/10292	2010	10.5772/10292	Production Process Object Modeling Based Petri Nets	Advances in Petri Net Theory and Applications	book-chapter
+86	10.1016/j.tcs.2023.114073	2023	10.1016/j.tcs.2023.114073	Trap spaces of Boolean networks are conflict-free siphons of their Petri net encoding	Theoretical Computer Science	journal-article
+87	10.1007/bfb0016213	None	10.1007/bfb0016213	Petri net tools	Lecture Notes in Computer Science	book-chapter
+88	10.5772/5328	2008	10.5772/5328	Using Transition Invariants for Reachability Analysis of Petri Nets	Petri Net, Theory and Applications	book-chapter
+89	10.3390/app16094180	2026	10.3390/app16094180	From Mathematics to Art: Petri Net Modelling of Tribonacci and k-Bonacci Petri Net Fractal Patterns	Applied Sciences	journal-article
+90	10.1007/3-540-45541-8_7	2001	10.1007/3-540-45541-8_7	Parameterized Net Classes: A Uniform Approach to Petri Net Classes	Lecture Notes in Computer Science	book-chapter
+91	10.11648/j.ajesa.20170504.11	2017	10.11648/j.ajesa.20170504.11	Fluidification of Stochastic Petri Net by Non Linear Timed Continuous Petri Net	American Journal of Embedded Systems and Applications	journal-article
+92	10.1016/j.nahs.2022.101153	2022	10.1016/j.nahs.2022.101153	An optimization-based approach to assess non-interference in labeled and bounded Petri net systems	Nonlinear Analysis: Hybrid Systems	journal-article
+93	10.1109/tase.2007.912716	2008	10.1109/tase.2007.912716	Schedulability Analysis of Time-Constrained Cluster Tools With Bounded Time Variation by an Extended Petri Net	IEEE Transactions on Automation Science and Engineering	journal-article
+94	10.31274/etd-180810-2060	None	10.31274/etd-180810-2060	Comparison of encoding schemes for symbolic model checking of bounded petri nets		dissertation
+95	10.1007/978-3-540-40022-6_6	2003	10.1007/978-3-540-40022-6_6	The Petri Net Kernel	Lecture Notes in Computer Science	book-chapter
+96	10.5772/10299	2010	10.5772/10299	Parallel Application Scheduling Model Based on Petri Net with Changeable Structure	Advances in Petri Net Theory and Applications	book-chapter
+97	10.1016/j.nahs.2023.101455	2024	10.1016/j.nahs.2023.101455	Duality of controllability and observability in proportional equal conflict timed continuous Petri Nets	Nonlinear Analysis: Hybrid Systems	journal-article
+98	10.1108/03684921211257766	2012	10.1108/03684921211257766	Petri net model for supply‐chain quality conflict resolution of a complex product	Kybernetes	journal-article
+99	10.5120/11964-7824	2013	10.5120/11964-7824	Embedding an Arbitrary 1-safe Petri Net into a Boolean Petri Net	International Journal of Computer Applications	journal-article
+100	10.3390/machines11050552	2023	10.3390/machines11050552	Research on Operation Conflict of Auxiliary Transport Locomotive in Complex Mine Based on Extended Petri Net	Machines	journal-article

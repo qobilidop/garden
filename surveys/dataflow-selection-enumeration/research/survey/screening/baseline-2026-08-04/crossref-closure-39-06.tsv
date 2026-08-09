@@ -1,0 +1,101 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1023/a:1008629725384	1997	10.1023/a:1008629725384	Stubborn Sets for Real-Time Petri Nets	Formal Methods in System Design	journal-article
+2	10.1007/978-3-642-41115-1_5	2013	10.1007/978-3-642-41115-1_5	Petri Nets with Time Windows	Time and Petri Nets	book-chapter
+3	10.1109/rtse.1998.766512	None	10.1109/rtse.1998.766512	Teaching real-time systems using Petri nets	Proceedings Real-Time Systems Education III	proceedings-article
+4	10.1002/9781119420712.ch9	2017	10.1002/9781119420712.ch9	Timed Petri Nets	Real‐Time Embedded Systems	other
+5	10.1007/978-3-642-41115-1_3	2013	10.1007/978-3-642-41115-1_3	Time Petri Nets	Time and Petri Nets	book-chapter
+6	10.1007/978-3-642-68353-4_38	1982	10.1007/978-3-642-68353-4_38	Petri Nets and Reliable Real-Time Systems	Informatik-Fachberichte	book-chapter
+7	10.1109/pnpm.1999.796566	None	10.1109/pnpm.1999.796566	Non equivalence between time Petri nets and time stream Petri nets	Proceedings 8th International Workshop on Petri Nets and Performance Models (Cat. No.PR00331)	proceedings-article
+8	10.1109/emrts.2003.1212753	None	10.1109/emrts.2003.1212753	Modeling flexible real time systems with preemptive time Petri nets	15th Euromicro Conference on Real-Time Systems, 2003. Proceedings.	proceedings-article
+9	10.1109/wpdrts.1995.470489	None	10.1109/wpdrts.1995.470489	Verification of schedulability of real-time systems with extended time Petri nets	Proceedings of Third Workshop on Parallel and Distributed Real-Time Systems	proceedings-article
+10	10.1109/emwrt.1993.639096	1993	10.1109/emwrt.1993.639096	Real-Time Systems Control Based on Object Oriented Concepts and Petri Nets	Fifth Euromicro Workshop on Real-Time Systems	proceedings-article
+11	10.1002/0471224626.ch8	2002	10.1002/0471224626.ch8	Timed Petri Nets	Real‐Time Systems	other
+12	10.1109/cmpass.1991.161052	None	10.1109/cmpass.1991.161052	Specifying and verifying real-time systems using time Petri nets and real-time temporal logic	COMPASS '91, Proceedings of the Sixth Annual Conference on Computer Assurance	proceedings-article
+13	10.1016/b978-0-08-029980-8.50072-x	1984	10.1016/b978-0-08-029980-8.50072-x	A REAL TIME MONITOR, ITS REPRESENTATION BY PETRI NETS AND AN APPLICATION	Real Time Digital Control Application	book-chapter
+14	10.5220/0005841700050013	2016	10.5220/0005841700050013	Petri Nets Modeling for the Schedulability Analysis of Industrial Real Time Systems	Proceedings of the International Workshop on domAin specific Model-based AppRoaches to vErificaTion and validaTiOn	proceedings-article
+15	10.1007/978-3-642-41115-1_4	2013	10.1007/978-3-642-41115-1_4	Timed Petri Nets	Time and Petri Nets	book-chapter
+16	10.1145/2680541	2015	10.1145/2680541	Stubborn Sets for Time Petri Nets	ACM Transactions on Embedded Computing Systems	journal-article
+17	10.1007/978-981-19-6309-4_8	2022	10.1007/978-981-19-6309-4_8	Time Petri Nets and Time-Soundness	Petri Nets	book-chapter
+18	10.5772/7516	2010	10.5772/7516	A new Control Synthesis Approach of P-Time Petri Nets	Petri Nets Applications	book-chapter
+19	10.1109/ecrts.2007.86	2007	10.1109/ecrts.2007.86	Casting Preemptive Time Petri Nets in the Development Life Cycle of Real-Time Software	19th Euromicro Conference on Real-Time Systems (ECRTS'07)	proceedings-article
+20	10.1109/cdc.1993.325157	None	10.1109/cdc.1993.325157	Synthesis of real-time supervisors for controlled time Petri nets	Proceedings of 32nd IEEE Conference on Decision and Control	proceedings-article
+21	10.5772/5311	2008	10.5772/5311	Modelling and Analysis of Real-Time Systems with RTCP-Nets	Petri Net, Theory and Applications	book-chapter
+22	10.36227/techrxiv.22688353	2023	10.36227/techrxiv.22688353	A Novel IoT-Enabled System for Real-Time Face Mask Recognition Based on Petri Nets		posted-content
+23	10.4018/978-1-4666-9594-8.les2	None	10.4018/978-1-4666-9594-8.les2	Equivalent Transformations of Time Petri Nets	Petri Nets for Modeling and Computing	book-chapter
+24	10.1016/b978-0-08-024490-7.50032-1	1980	10.1016/b978-0-08-024490-7.50032-1	PETRI NETS FOR REAL TIME CONTROL ALGORITHMS DECOMPOSITION	Distributed Computer Control System	book-chapter
+25	10.36227/techrxiv.22688353.v1	2023	10.36227/techrxiv.22688353.v1	A Novel IoT-Enabled System for Real-Time Face Mask Recognition Based on Petri Nets		posted-content
+26	10.1007/3-540-69108-1_8	1998	10.1007/3-540-69108-1_8	On Stubborn Sets in the Verification of Linear Time Temporal Properties	Lecture Notes in Computer Science	book-chapter
+27	10.1109/ats.1999.810766	None	10.1109/ats.1999.810766	Generating test cases for real-time software by time Petri nets model	Proceedings Eighth Asian Test Symposium (ATS'99)	proceedings-article
+28	10.1145/1167999.1168029	2006	10.1145/1167999.1168029	Implementation of time petri nets in real-time Java	Proceedings of the 4th international workshop on Java technologies for real-time and embedded systems  - JTRES '06	proceedings-article
+29	10.1142/9789812839763_0010	1999	10.1142/9789812839763_0010	REAL-TIME PETRI NETS FOR DISCRETE EVENT CONTROL	Modeling, Simulation, and Control of Flexible Manufacturing Systems	book-chapter
+30	10.1016/b978-0-08-041894-0.50026-5	1992	10.1016/b978-0-08-041894-0.50026-5	MODELLING TIME CRITICAL COMMUNICATION NETWORKS WITH STOCHASTIC TIMED PETRI NETS	Real-Time Programming 1992	book-chapter
+31	10.1109/pnpm.1993.393437	None	10.1109/pnpm.1993.393437	A reactive real-time systems modelling and programming aid tool based on the synchronous Petri nets formalism	Proceedings of 5th International Workshop on Petri Nets and Performance Models	proceedings-article
+32	10.1007/978-3-642-31131-4_13	2012	10.1007/978-3-642-31131-4_13	Stubborn Sets for Simple Linear Time Properties	Lecture Notes in Computer Science	book-chapter
+33	10.1109/real.2004.9	None	10.1109/real.2004.9	A Translation Based Method for the Timed Analysis of Scheduling Extended Time Petri Nets	25th IEEE International Real-Time Systems Symposium	proceedings-article
+34	10.1007/978-3-540-32870-4_1	2006	10.1007/978-3-540-32870-4_1	Petri Nets with Time	Studies in Computational Intelligence	book-chapter
+35	10.1007/3-540-48068-4_10	2002	10.1007/3-540-48068-4_10	Real-Time Synchronised Petri Nets	Lecture Notes in Computer Science	book-chapter
+36	10.1007/3-540-45397-0_21	2001	10.1007/3-540-45397-0_21	Schedulability Analysis of Real Time Actor Systems Using Coloured Petri Nets	Lecture Notes in Computer Science	book-chapter
+37	10.1109/acc.1994.751916	None	10.1109/acc.1994.751916	Application of supervisor synthesis for controlled time Petri nets to real-time database systems	Proceedings of 1994 American Control Conference - ACC '94	proceedings-article
+38	10.1007/s11241-006-9006-x	2006	10.1007/s11241-006-9006-x	Distributed simulation of modular time Petri nets: An approach and a case study exploiting temporal uncertainty	Real-Time Systems	journal-article
+39	10.1109/case.2011.6042481	2011	10.1109/case.2011.6042481	A symbolic schedulability technique of real-time systems modeled by P-Time Petri nets	2011 IEEE International Conference on Automation Science and Engineering	proceedings-article
+40	10.1142/9789812839763_0011	1999	10.1142/9789812839763_0011	COMPARISON OF REAL-TIME PETRI NETS AND LADDER LOGIC DIAGRAMS	Modeling, Simulation, and Control of Flexible Manufacturing Systems	book-chapter
+41	10.1007/978-1-4615-1009-3_7	2002	10.1007/978-1-4615-1009-3_7	Delay Time Petri Nets and Net Reduction	Compositional Verification of Concurrent and Real-Time Systems	book-chapter
+42	10.1023/a:1008101416758	2000	10.1023/a:1008101416758	WCET Analysis of Superscalar Processors Using Simulation With Coloured Petri Nets	Real-Time Systems	journal-article
+43	10.1007/978-3-540-32870-4_3	2006	10.1007/978-3-540-32870-4_3	From Time Petri Nets to Timed Automata	Studies in Computational Intelligence	book-chapter
+44	10.1109/wpdrts.1994.365642	None	10.1109/wpdrts.1994.365642	Modeling priority schemes with timed Petri nets	Second Workshop on Parallel and Distributed Real-Time Systems	proceedings-article
+45	10.1109/isorc.2001.922853	None	10.1109/isorc.2001.922853	Composing real-time objects: a case for Petri nets and Girard's linear logic	Fourth IEEE International Symposium on Object-Oriented Real-Time Distributed Computing. ISORC 2001	proceedings-article
+46	10.1007/bf01088590	1993	10.1007/bf01088590	High-Level Timed Petri Nets as a kernel for executable specifications	Real-Time Systems	journal-article
+47	10.1007/978-3-642-68353-4_1	1982	10.1007/978-3-642-68353-4_1	Overview on Topic 1: Application of Nets to Real-Time Systems	Informatik-Fachberichte	book-chapter
+48	10.1109/etfa.2013.6647939	2013	10.1109/etfa.2013.6647939	State observer synthesis of real-time systems modeled by P-time Petri nets	2013 IEEE 18th Conference on Emerging Technologies &amp; Factory Automation (ETFA)	proceedings-article
+49	10.1002/9780470611647.ch15	2009	10.1002/9780470611647.ch15	Hierarchical Time Stream Petri Nets	Petri Nets	other
+50	10.5013/ijssst.a.13.02.04	2012	10.5013/ijssst.a.13.02.04	Developing a Petri Nets based Real-Time Control Simulator	International Journal of Simulation Systems Science &amp; Technology	journal-article
+51	10.5220/0005514003300338	2015	10.5220/0005514003300338	New Schedulability Analysis for Real-Time Systems based on MDE and Petri Nets Model at Early Design Stages	Proceedings of the 10th International Conference on Software Engineering and Applications	proceedings-article
+52	10.1007/3-540-63139-9_34	1997	10.1007/3-540-63139-9_34	Time processes for time Petri nets	Lecture Notes in Computer Science	book-chapter
+53	10.1002/9780470611647.ch5	2009	10.1002/9780470611647.ch5	Time Petri Nets	Petri Nets	other
+54	10.1016/0165-6074(93)90201-u	1993	10.1016/0165-6074(93)90201-u	Real-time specification using Petri nets	Microprocessing and Microprogramming	journal-article
+55	10.5772/intechopen.76769	2018	10.5772/intechopen.76769	Process Petri Nets with Time Stamps and Their Using in Project Management	Petri Nets in Science and Engineering	book-chapter
+56	10.1109/etfa.2001.997686	None	10.1109/etfa.2001.997686	Discrete time approach of time Petri nets for real-time systems analysis	ETFA 2001. 8th International Conference on Emerging Technologies and Factory Automation. Proceedings (Cat. No.01TH8597)	proceedings-article
+57	10.1007/978-3-642-41115-1	2013	10.1007/978-3-642-41115-1	Time and Petri Nets		book
+58	10.1109/wpdrts.1997.637986	None	10.1109/wpdrts.1997.637986	Hybrid modelling with second order fluid stochastic Petri nets	Proceedings of 5th International Workshop on Parallel and Distributed Real-Time Systems and 3rd Workshop on Object-Oriented Real-Time Systems	proceedings-article
+59	10.1007/3-540-48068-4_3	2002	10.1007/3-540-48068-4_3	The Real-Time Refinement Calculus: A Foundation for Machine-Independent Real-Time Programming	Lecture Notes in Computer Science	book-chapter
+60	10.1109/ipdps.2001.925065	None	10.1109/ipdps.2001.925065	Discrete time stochastic petri nets for modeling and evaluation of real-time systems	Proceedings 15th International Parallel and Distributed Processing Symposium. IPDPS 2001	proceedings-article
+61	10.4018/jertcs.2013040104	2013	10.4018/jertcs.2013040104	Time Petri Nets with Action Duration	International Journal of Embedded and Real-Time Communication Systems	journal-article
+62	10.1016/s1474-6670(17)65401-6	1979	10.1016/s1474-6670(17)65401-6	Petri Nets for Real Time Control Algorithms Decomposition	IFAC Proceedings Volumes	journal-article
+63	10.1002/9780470611647.ch6	2009	10.1002/9780470611647.ch6	Temporal Composition and Time Stream Petri Nets	Petri Nets	other
+64	10.5772/5318	2008	10.5772/5318	Model Checking of Time Petri Nets	Petri Net, Theory and Applications	book-chapter
+65	10.1007/978-3-031-33620-1_19	2023	10.1007/978-3-031-33620-1_19	Experimenting with Stubborn Sets on Petri Nets	Lecture Notes in Computer Science	book-chapter
+66	10.1109/valid.2009.31	2009	10.1109/valid.2009.31	Time-Optimal Real-Time Test Case Generation Using Prioritized Time Petri Nets	2009 First International Conference on Advances in System Testing and Validation Lifecycle	proceedings-article
+67	10.1007/3-540-55676-1_6	1992	10.1007/3-540-55676-1_6	Scheduling hard real time systems using high-level Petri nets	Lecture Notes in Computer Science	book-chapter
+68	10.1007/978-981-19-6309-4_10	2022	10.1007/978-981-19-6309-4_10	Plain Time Petri Nets with Priorities	Petri Nets	book-chapter
+69	10.1007/bf01088807	1995	10.1007/bf01088807	Analysis of railway stations by means of interval timed coloured Petri nets	Real-Time Systems	journal-article
+70	10.1007/bf01088591	1993	10.1007/bf01088591	Giving semantics to SA/RT by means of high-level timed Petri nets	Real-Time Systems	journal-article
+71	10.1145/186258.187243	1994	10.1145/186258.187243	Analysis of real-time programs with simple time Petri nets	Proceedings of the 1994 international symposium on Software testing and analysis  - ISSTA '94	proceedings-article
+72	10.1007/978-3-642-41115-1_2	2013	10.1007/978-3-642-41115-1_2	The Classic Petri Net	Time and Petri Nets	book-chapter
+73	10.3390/logistics10010017	2026	10.3390/logistics10010017	A Hybrid Formal and Optimization Framework for Real-Time Scheduling: Combining Extended Time Petri Nets with Genetic Algorithms	Logistics	journal-article
+74	10.1109/isorc.2008.75	2008	10.1109/isorc.2008.75	Abstract State Spaces for Time Petri Nets Analysis	2008 11th IEEE International Symposium on Object and Component-Oriented Real-Time Distributed Computing (ISORC)	proceedings-article
+75	10.5772/47744	2012	10.5772/47744	A Forward On-The-Fly Approach in Controller Synthesis of Time Petri Nets	Petri Nets - Manufacturing and Computer Science	book-chapter
+76	10.1016/s1474-6670(17)46367-1	1996	10.1016/s1474-6670(17)46367-1	Modelling and ADA Implementation of Real-Time Systems Using Time Petri Nets	IFAC Proceedings Volumes	journal-article
+77	10.1109/pnpm.2001.953371	None	10.1109/pnpm.2001.953371	Multiple enabledness of transitions in Petri nets with time	Proceedings 9th International Workshop on Petri Nets and Performance Models	proceedings-article
+78	10.1002/9780470611012.ch1	2008	10.1002/9780470611012.ch1	Time Petri Nets – Analysis Methods and Verification with TINA	Modeling and Verification of Real‐Time Systems	other
+79	10.1007/978-1-4615-5537-7_4	1998	10.1007/978-1-4615-5537-7_4	Time Petri Nets	The Kluwer International Series on Discrete Event Dynamic Systems	book-chapter
+80	10.3390/math12060812	2024	10.3390/math12060812	Formal Modeling and Verification of Embedded Real-Time Systems: An Approach and Practical Tool Based on Constraint Time Petri Nets	Mathematics	journal-article
+81	10.1109/robot.1987.1087866	None	10.1109/robot.1987.1087866	Essentially decision free Petri nets for real-time resource allocation	Proceedings. 1987 IEEE International Conference on Robotics and Automation	proceedings-article
+82	10.5772/5320	2008	10.5772/5320	From Time Petri Nets to Timed Automata	Petri Net, Theory and Applications	book-chapter
+83	10.1016/0967-0661(94)90173-2	1994	10.1016/0967-0661(94)90173-2	158 Structured petri nets - An approach for specifying complex real-time systems	Control Engineering Practice	journal-article
+84	10.1109/pnpm.2003.1231550	None	10.1109/pnpm.2003.1231550	A discrete time model for performance evaluation and correctness verification of real time systems	10th International Workshop on Petri Nets and Performance Models, 2003. Proceedings.	proceedings-article
+85	10.2172/1827848	2021	10.2172/1827848	Real time lattice gauge theory actions	Real time lattice gauge theory actions	proceedings-article
+86	10.1109/isic.1990.128576	None	10.1109/isic.1990.128576	A real-time Petri nets simulator for automated manufacturing systems	Proceedings. 5th IEEE International Symposium on Intelligent Control 1990	proceedings-article
+87	10.1109/pnpm.1999.796568	None	10.1109/pnpm.1999.796568	Checking time Petri nets for linear duration properties	Proceedings 8th International Workshop on Petri Nets and Performance Models (Cat. No.PR00331)	proceedings-article
+88	10.1016/s1474-6670(17)42126-4	1998	10.1016/s1474-6670(17)42126-4	Decentralized Implementation of Real-Time Systems Using Time Petri Nets. Application to Mobile Robot Control	IFAC Proceedings Volumes	journal-article
+89	10.1109/pnpm.1991.238802	None	10.1109/pnpm.1991.238802	Time warp simulation of stochastic Petri nets	Proceedings of the Fourth International Workshop on Petri Nets and Performance Models PNPM91	proceedings-article
+90	10.1109/pnpm.2003.1231538	None	10.1109/pnpm.2003.1231538	Computing response time distributions using stochastic Petri nets and matrix diagrams	10th International Workshop on Petri Nets and Performance Models, 2003. Proceedings.	proceedings-article
+91	10.1007/3-540-69108-1_7	1998	10.1007/3-540-69108-1_7	Finding Stubborn Sets of Coloured Petri Nets without Unfolding	Lecture Notes in Computer Science	book-chapter
+92	10.1016/b978-0-7506-1102-2.50009-8	1993	10.1016/b978-0-7506-1102-2.50009-8	Real-time software requirements specification and animation using extended Petri nets: theory and application	Safety Aspects of Computer Control	book-chapter
+93	10.1109/tii.2009.2017201	2009	10.1109/tii.2009.2017201	Computation of Performance Bounds for Real-Time Systems Using Time Petri Nets	IEEE Transactions on Industrial Informatics	journal-article
+94	10.1109/pnpm.1997.595550	None	10.1109/pnpm.1997.595550	Estimation methods for stochastic Petri nets based on standardized time series	Proceedings of the Seventh International Workshop on Petri Nets and Performance Models	proceedings-article
+95	10.1109/pnpm.1993.393446	None	10.1109/pnpm.1993.393446	Automated time scale decomposition and analysis of stochastic Petri nets	Proceedings of 5th International Workshop on Petri Nets and Performance Models	proceedings-article
+96	10.1109/tse.2002.1041054	2002	10.1109/tse.2002.1041054	Compositional schedulability analysis of real-time systems using time Petri nets	IEEE Transactions on Software Engineering	journal-article
+97	10.1007/978-3-319-96154-5_23	2019	10.1007/978-3-319-96154-5_23	Modelling Time Using Petri Nets	Carl Adam Petri: Ideas, Personality, Impact	book-chapter
+98	10.1360/crad20060127	2006	10.1360/crad20060127	High-Level Low-Power Synthesis of Real-Time Systems Using Time Petri Nets	Journal of Computer Research and Development	journal-article
+99	10.2307/3680988	1995	10.2307/3680988	Using Stochastic Petri Nets for Real-Time Nth-Order Stochastic Composition	Computer Music Journal	journal-article
+100	10.1007/978-1-4615-4493-7_32	2000	10.1007/978-1-4615-4493-7_32	Off-Line Computation of Real-Time Schedules by Means of Petri nets	Discrete Event Systems	book-chapter

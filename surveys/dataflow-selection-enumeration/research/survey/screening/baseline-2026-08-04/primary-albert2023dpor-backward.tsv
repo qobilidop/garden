@@ -1,0 +1,33 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1145/2535838.2535845	2014	10.1145/2535838.2535845	Optimal Dynamic Partial Order Reduction	ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages	proceedings-article
+2	10.1145/3360576	2019	10.1145/3360576	Optimal Stateless Model Checking for Reads-From Equivalence Under Sequential Consistency	Proceedings of the ACM on Programming Languages	journal-article
+3	10.1145/3276505	2018	10.1145/3276505	Optimal Stateless Model Checking Under the Release-Acquire Semantics	Proceedings of the ACM on Programming Languages	journal-article
+4	10.1007/978-3-319-63387-9_26	2017	10.1007/978-3-319-63387-9_26	Context-Sensitive Dynamic Partial Order Reduction	Computer Aided Verification	book-chapter
+5	10.1145/3293882.3330565	2019	10.1145/3293882.3330565	Optimal Context-Sensitive Dynamic Partial Order Reduction with Observers	ACM SIGSOFT International Symposium on Software Testing and Analysis	proceedings-article
+6	10.1145/2892208.2892236	2016	10.1145/2892208.2892236	SYCO: A Systematic Testing Tool for Concurrent Objects	International Conference on Compiler Construction	proceedings-article
+7	10.1007/978-3-319-96142-2_24	2018	10.1007/978-3-319-96142-2_24	Constrained Dynamic Partial Order Reduction	Computer Aided Verification	book-chapter
+8	10.1007/978-3-319-95582-7_33	2018	10.1007/978-3-319-95582-7_33	SDN-Actors: Modeling and Verification of SDN Programs	Formal Methods	book-chapter
+9	10.1007/978-3-319-89963-3_14	2018	10.1007/978-3-319-89963-3_14	Optimal Dynamic Partial Order Reduction with Observers	Tools and Algorithms for the Construction and Analysis of Systems	book-chapter
+10	10.1145/3468264.3468549	2021	10.1145/3468264.3468549	Sound and Efficient Concurrency Bug Prediction	ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering	proceedings-article
+11	10.1145/3158119	2018	10.1145/3158119	Data-Centric Dynamic Partial Order Reduction	Proceedings of the ACM on Programming Languages	journal-article
+12	10.1007/s100090050035	1999	10.1007/s100090050035	State Space Reduction Using Partial Order Techniques	International Journal on Software Tools for Technology Transfer	journal-article
+13	10.1145/1040305.1040315	2005	10.1145/1040305.1040315	Dynamic Partial-Order Reduction for Model Checking Software	ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages	proceedings-article
+14	10.1007/bfb0023731	1991	10.1007/bfb0023731	Using Partial Orders to Improve Automatic Verification Methods	Computer Aided Verification	book-chapter
+15	10.1007/3-540-60761-7	1996	10.1007/3-540-60761-7	Partial-Order Methods for the Verification of Concurrent Systems: An Approach to the State-Explosion Problem	Lecture Notes in Computer Science	book
+16	10.1007/3-540-56922-7_36	1993	10.1007/3-540-56922-7_36	Refining Dependencies Improves Partial-Order Verification Methods (Extended Abstract)	Computer Aided Verification	book-chapter
+17	10.1007/978-3-642-25271-6_8	2012	10.1007/978-3-642-25271-6_8	ABS: A Core Language for Abstract Behavioral Specification	Formal Methods for Components and Objects	book-chapter
+18	10.1007/978-3-642-02658-4_31	2009	10.1007/978-3-642-02658-4_31	Monotonic Partial Order Reduction: An Optimal Symbolic Partial Order Reduction Technique	Computer Aided Verification	book-chapter
+19	10.1016/0304-3975(92)90054-j	1992	10.1016/0304-3975(92)90054-j	Defining Conditional Independence Using Collapses	Theoretical Computer Science	journal-article
+20	10.1145/3498711	2022	10.1145/3498711	Truly Stateless, Optimal Dynamic Partial Order Reduction	Proceedings of the ACM on Programming Languages	journal-article
+21	10.1145/3360599	2019	10.1145/3360599	Effective Lock Handling in Stateless Model Checking	Proceedings of the ACM on Programming Languages	journal-article
+22	10.1145/3314221.3314609	2019	10.1145/3314221.3314609	Model Checking for Weakly Consistent Libraries	ACM SIGPLAN Conference on Programming Language Design and Implementation	proceedings-article
+23	citation-23	2015		Nidhugg	GitHub	software
+24	10.1007/3-540-17906-2_30	1987	10.1007/3-540-17906-2_30	Trace Theory	Petri Nets: Central Models and Their Properties	book-chapter
+25	10.1145/1250734.1250785	2007	10.1145/1250734.1250785	Iterative Context Bounding for Systematic Testing of Multithreaded Programs	ACM SIGPLAN Conference on Programming Language Design and Implementation	proceedings-article
+26	10.1007/978-3-319-96142-2_22	2018	10.1007/978-3-319-96142-2_22	Quasi-Optimal Partial Order Reduction	Computer Aided Verification	book-chapter
+27	10.1007/s10766-020-00661-3	2020	10.1007/s10766-020-00661-3	Dynamic Analysis Method for Concurrency Bugs in Multi-process/Multi-thread Environments	International Journal of Parallel Programming	journal-article
+28	10.1145/3371085	2020	10.1145/3371085	Fast, Sound, and Effectively Complete Dynamic Race Prediction	Proceedings of the ACM on Programming Languages	journal-article
+29	10.4230/lipics.concur.2015.456	2015	10.4230/lipics.concur.2015.456	Unfolding-Based Partial Order Reduction	International Conference on Concurrency Theory	proceedings-article
+30	10.1007/978-3-030-53288-8_18	2020	10.1007/978-3-030-53288-8_18	Symbolic Partial-Order Execution for Testing Multi-Threaded Programs	Computer Aided Verification	book-chapter
+31	10.1007/3-540-53863-1_36	1991	10.1007/3-540-53863-1_36	Stubborn Sets for Reduced State Space Generation	Advances in Petri Nets	book-chapter
+32	10.1007/978-3-540-78800-3_29	2008	10.1007/978-3-540-78800-3_29	Peephole Partial Order Reduction	Tools and Algorithms for the Construction and Analysis of Systems	book-chapter

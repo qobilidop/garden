@@ -1,0 +1,11 @@
+rank	openalex_id	year	doi	title	venue	type
+1	W4409328709	2024	https://doi.org/10.1145/3622781.3674170	Control Logic Synthesis: Drawing the Rest of the OWL		conference-paper
+2	W4413014921	2025	https://doi.org/10.1145/3676642.3736123	<scp>SYL</scp> Q-SV: Scaling Symbolic Execution of Hardware Designs with Query Caching		conference-paper
+3	W4401990435	2024	https://doi.org/10.1109/dsn-s60304.2024.00014	Exploring Use of Symbolic Execution for Service Analysis		conference-paper
+4	W4411172859	2025	https://doi.org/10.1109/vts65138.2025.11022839	Special Session: Bringing Symbolic Execution to the Security Verification of Hardware Designs		conference-paper
+5	W4412537232	2025	https://doi.org/10.1109/ast66626.2025.00011	Automated Test Generation for Integration Testing		conference-paper
+6	W4414433660	2025	https://doi.org/10.1109/fdl68117.2025.11165271	Leveraging Piecewise Composition to Infer Environment Constraints for Hardware Designs		conference-paper
+7	W4417169733	2025	https://doi.org/10.1109/dsd67783.2025.00068	Leveraging Design Static Analysis for Vertical Reuse in Functional Verification		conference-paper
+8	W7163564614	2026	https://doi.org/10.23919/date69613.2026.11539427	RLConcolic: Enhancing Concolic Testing via Multi-Step Reinforcement Learning		conference-paper
+9	W7167498387	2026	https://doi.org/10.1109/cscwd68734.2026.11582111	Dataflow-Based Path Pruning in Symbolic Execution for Hardware Verification		conference-paper
+10	W7170181533	2026	https://doi.org/10.1007/978-3-032-32519-8_26	HyperQB 2.0: A Bounded Model Checker for Hyperproperties	Lecture notes in computer science	conference-paper

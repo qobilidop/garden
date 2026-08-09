@@ -1,0 +1,103 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1109/rtas54340.2022.00018	2022	10.1109/rtas54340.2022.00018	Partial-Order Reduction for Schedule-Abstraction-based Response-Time Analyses of Non-Preemptive Tasks	2022 IEEE 28th Real-Time and Embedded Technology and Applications Symposium (RTAS)	proceedings-article
+2	10.1109/rtss62706.2024.00051	2024	10.1109/rtss62706.2024.00051	Work-in-Progress: Response-Time Analysis of Partitioned and Clustered Systems with the Schedule-Abstraction Framework	2024 IEEE Real-Time Systems Symposium (RTSS)	proceedings-article
+3	10.1109/ipsn61024.2024.00055	2024	10.1109/ipsn61024.2024.00055	Poster Abstract: Extending Schedule-Abstraction Graph for Event-Triggered Response-Time Analysis	2024 23rd ACM/IEEE International Conference on Information Processing in Sensor Networks (IPSN)	proceedings-article
+4	10.1007/bfb0013038	1989	10.1007/bfb0013038	Correctness and full abstraction of metric semantics for concurrency	Lecture Notes in Computer Science	book-chapter
+5	10.1109/rtss52674.2021.00052	2021	10.1109/rtss52674.2021.00052	Work-in-Progress: Analysis of TSN Time-Aware Shapers using Schedule Abstraction Graphs	2021 IEEE Real-Time Systems Symposium (RTSS)	proceedings-article
+6	10.1109/rtss52674.2021.00061	2021	10.1109/rtss52674.2021.00061	Work-in-Progress: Partial-Order Reduction in Reachability-Based Response-Time Analyses	2021 IEEE Real-Time Systems Symposium (RTSS)	proceedings-article
+7	10.1109/rtss59052.2023.00052	2023	10.1109/rtss59052.2023.00052	Work-in-Progress: Generating Counter-Examples to Schedulability Using the Schedule Abstraction	2023 IEEE Real-Time Systems Symposium (RTSS)	proceedings-article
+8	10.1007/s11241-023-09398-x	2023	10.1007/s11241-023-09398-x	Partial-order reduction in reachability-based response-time analyses of limited-preemptive DAG tasks	Real-Time Systems	journal-article
+9	10.1109/icc.2007.123	2007	10.1109/icc.2007.123	A Space-Time Code Design for Partial-Response CPM: Diversity Order and Coding Gain	2007 IEEE International Conference on Communications	proceedings-article
+10	10.3311/minisy2025-008	2025	10.3311/minisy2025-008	Towards Integrating Abstraction and Partial Order Reduction in Probabilistic Model Checking: Survey of Challenges and Opportunities	Proceedings of the 32nd Minisymposium	proceedings-article
+11	10.1145/3696355.3696361	2024	10.1145/3696355.3696361	Towards Efficient Parallel GPU Scheduling: Interference Awareness with Schedule Abstraction	Proceedings of the 32nd International Conference on Real-Time Networks and Systems	proceedings-article
+12	10.4103/2041-9414.198908	2017	10.4103/2041-9414.198908	Optimizing the Microscopy Time Schedule for Chromosomal Dosimetry of High-dose and Partial-body Irradiations	Genome Integrity	journal-article
+13	10.21236/ada278953	1994	10.21236/ada278953	Security and Privacy for Partial Order Time		report
+14	10.1145/2642937.2642998	2014	10.1145/2642937.2642998	Assertion guided abstraction	Proceedings of the 29th ACM/IEEE International Conference on Automated Software Engineering	proceedings-article
+15	10.21236/ada564549	2012	10.21236/ada564549	High Order Strong Stability Preserving Time Discretizations for the Time Evolution of Hyperbolic Partial Differential Equations		report
+16	10.1016/j.jfranklin.2018.11.060	2019	10.1016/j.jfranklin.2018.11.060	Fractional-order partial pole assignment for time-delay systems based on resonance and time response criteria analysis	Journal of the Franklin Institute	journal-article
+17	10.4324/9780429321047-4	2019	10.4324/9780429321047-4	Branching time and partial order in temporal logics	Time and Logic	book-chapter
+18	10.1145/1450058.1450060	2008	10.1145/1450058.1450060	Event order abstraction for parametric real-time system verification	Proceedings of the 8th ACM international conference on Embedded software	proceedings-article
+19	10.1515/9783111636146-001	2025	10.1515/9783111636146-001	1 Classification of second-order partial dynamic equations	Partial Dynamic Equations	book-chapter
+20	10.1002/num.22068	2017	10.1002/num.22068	Convergence analysis of some first order and second order time accurate gradient schemes for semilinear second order hyperbolic equations	Numerical Methods for Partial Differential Equations	journal-article
+21	10.3990/1.9789036556774	None	10.3990/1.9789036556774	Higher order time-implicit bounds preserving discontinuous Galerkin discretizations for partial differential equations		dissertation
+22	10.1002/num.22982	2023	10.1002/num.22982	Recovery of the time‐dependent zero‐order coefficient in a fourth‐order parabolic problem	Numerical Methods for Partial Differential Equations	journal-article
+23	10.21236/ada261371	1993	10.21236/ada261371	Signed Vector Timestamps: A Secure Protocol for Partial Order Time. Revision.		report
+24	10.1002/num.70006	2025	10.1002/num.70006	First‐Order Empirical Interpolation Method for Real‐Time Solution of Parametric Time‐Dependent Nonlinear PDEs	Numerical Methods for Partial Differential Equations	journal-article
+25	10.3758/bf03331701	1967	10.3758/bf03331701	Response to a sinusoidal time-varying reinforcement schedule	Psychonomic Science	journal-article
+26	10.2307/j.ctv1g13jk5.17	2021	10.2307/j.ctv1g13jk5.17	Response:	Abstraction in Medieval Art	book-chapter
+27	10.1201/9781315152905-10	2017	10.1201/9781315152905-10	Scattering for Time Dependent Perturbations	Spectral and Scattering Theory for Second-Order Partial Differential Operators	book-chapter
+28	10.1007/978-981-99-3740-0_7	2023	10.1007/978-981-99-3740-0_7	Partial Order of Policy and Policy Improvement	Reinforcement Learning: Discrete-Time Markov Decision Process	book-chapter
+29	10.24287/j.1123-950	None	10.24287/j.1123-950	Figure 8  Time to complete response to therapy for mucormycosis depending on partial response (the median time to resolution is 82 days in case of early response vs 179 days in case of late response)		component
+30	10.28919/jmcs/4548	2020	10.28919/jmcs/4548	Numerical solution of time fractional order partial differential equations	Journal of Mathematical and Computational Science	journal-article
+31	10.1002/num.22088	2017	10.1002/num.22088	Quintic spline technique for time fractional fourth‐order partial differential equation	Numerical Methods for Partial Differential Equations	journal-article
+32	10.4324/9781315236438-3	2017	10.4324/9781315236438-3	Existence, Negation, and Abstraction in the Neoplatonic Hierarchys 1	Themes in Neoplatonic and Aristotelian Logic	book-chapter
+33	10.5117/9789462989894-16	2025	10.5117/9789462989894-16	Response: Astral Abstraction	Abstraction in Medieval Art	book-chapter
+34	10.1088/1742-6596/1739/1/012004	2021	10.1088/1742-6596/1739/1/012004	Free Response Approach for the Second Order Partial Differential System with Time Periodic Coefficient	Journal of Physics: Conference Series	journal-article
+35	10.21275/sr24701101324	2024	10.21275/sr24701101324	Economic Order Quantity Model for Deteriorating Items under Inflation with Time Dependent Demand and Partial Backlogging	International Journal of Science and Research (IJSR)	journal-article
+36	10.1016/j.padiff.2022.100453	2022	10.1016/j.padiff.2022.100453	Time-dependent generalized normal and gamma distributions as solutions of higher-order partial differential equations	Partial Differential Equations in Applied Mathematics	journal-article
+37	10.1515/9789048542673-016	2021	10.1515/9789048542673-016	13. Response: Astral Abstraction	Abstraction in Medieval Art	book-chapter
+38	10.2139/ssrn.4441407	2023	10.2139/ssrn.4441407	Hieval: A Scalable Schedule Evaluation Method for Spatial Accelerator Via Hierarchical Abstraction		posted-content
+39	10.5040/9789048566952.ch-013	2021	10.5040/9789048566952.ch-013	Response: Astral Abstraction	Abstraction in Medieval Art	other
+40	10.1007/s11241-017-9297-0	2018	10.1007/s11241-017-9297-0	Delay-dependent partial order reduction technique for real time systems	Real-Time Systems	journal-article
+41	10.1002/num.22241	2018	10.1002/num.22241	Wavelet Galerkin schemes for higher order time dependent partial differential equations	Numerical Methods for Partial Differential Equations	journal-article
+42	10.1017/cbo9780511569845.005	1993	10.1017/cbo9780511569845.005	Abstraction	Higher Order Logic and Hardware Verification	book-chapter
+43	10.1016/j.padiff.2025.101090	2025	10.1016/j.padiff.2025.101090	Approximate analytical solution of a class of highly nonlinear time–fractional-order partial differential equations	Partial Differential Equations in Applied Mathematics	journal-article
+44	10.1007/bfb0013031	1989	10.1007/bfb0013031	Modeling concurrency by partial orders and nonlinear transition systems	Lecture Notes in Computer Science	book-chapter
+45	10.1016/j.padiff.2025.101131	2025	10.1016/j.padiff.2025.101131	Solving a class of distributed-order time fractional wave-diffusion differential equations using the generalized fractional-order Bernoulli wavelets	Partial Differential Equations in Applied Mathematics	journal-article
+46	10.1007/978-0-387-87809-6_2	2009	10.1007/978-0-387-87809-6_2	Large Time Asymptotics for Solutions of Nonlinear First-Order Partial Differential Equations	Springer Monographs in Mathematics	book-chapter
+47	10.7153/jmi-2023-17-35	2023	10.7153/jmi-2023-17-35	A new partial order based on core partial order and star partial order	Journal of Mathematical Inequalities	journal-article
+48	10.23943/princeton/9780691168791.003.0003	2016	10.23943/princeton/9780691168791.003.0003	Constraints of Time	Feeding Gotham	book-chapter
+49	10.1016/j.padiff.2024.100717	2024	10.1016/j.padiff.2024.100717	Numerical method for second order singularly perturbed delay differential equations with fractional order in time via fitted computational method	Partial Differential Equations in Applied Mathematics	journal-article
+50	10.1093/oso/9780198712084.003.0017	2019	10.1093/oso/9780198712084.003.0017	Second-Order Abstraction Before and After Russell’s Paradox	Essays on Frege's Basic Laws of Arithmetic	book-chapter
+51	10.1007/978-3-642-19835-9_31	2011	10.1007/978-3-642-19835-9_31	Boosting Lazy Abstraction for SystemC with Partial Order Reduction	Lecture Notes in Computer Science	book-chapter
+52	10.1515/9783111636146-002	2025	10.1515/9783111636146-002	2 Classification and canonical forms for linear second-order partial dynamic equations in two independent variables	Partial Dynamic Equations	book-chapter
+53	10.7717/peerj.20180/table-3	None	10.7717/peerj.20180/table-3	Table 3: Four testing time points schedule.		component
+54	10.1002/num.21768	2013	10.1002/num.21768	Nonintrusive reduced‐order modeling of parametrized time‐dependent partial differential equations	Numerical Methods for Partial Differential Equations	journal-article
+55	10.1109/lics.1996.561357	None	10.1109/lics.1996.561357	Partial-order methods for model checking: from linear time to branching time	Proceedings 11th Annual IEEE Symposium on Logic in Computer Science	proceedings-article
+56	10.1016/j.padiff.2023.100513	2023	10.1016/j.padiff.2023.100513	Homotopy perturbation method for solving time-fractional nonlinear Variable-Order Delay Partial Differential Equations	Partial Differential Equations in Applied Mathematics	journal-article
+57	10.7717/peerjcs.1522/table-2	None	10.7717/peerjcs.1522/table-2	Table 2: Regression fitting schedule time (s).		component
+58	10.7554/elife.21920.005	None	10.7554/elife.21920.005	Figure 4. Experimental time course and schedule.		component
+59	10.1063/1.2990894	2008	10.1063/1.2990894	An Adaptive Higher Order Method in Time for Partial Integro‐Differential Equations	AIP Conference Proceedings	proceedings-article
+60	10.1017/cbo9780511569845.006	1993	10.1017/cbo9780511569845.006	Data Abstraction	Higher Order Logic and Hardware Verification	book-chapter
+61	10.58837/chula.the.2018.328	None	10.58837/chula.the.2018.328	Finite integration method using chebyshev polynomials for solving time-dependent linear partial differential equations and linear fractional order differential equations		dissertation
+62	10.20944/preprints202606.1299.v1	2026	10.20944/preprints202606.1299.v1	The Space-Time Partial Derivatives of Lyapunov Function for Non-Autonomous Fractional-Order Systems		posted-content
+63	10.1016/j.padiff.2026.101363	2026	10.1016/j.padiff.2026.101363	A high-order finite difference scheme incorporating analytical absorbing boundary conditions for variable-order time-fractional diffusion equations on unbounded domains	Partial Differential Equations in Applied Mathematics	journal-article
+64	10.1017/cbo9780511569845.007	1993	10.1017/cbo9780511569845.007	Temporal Abstraction	Higher Order Logic and Hardware Verification	book-chapter
+65	10.7717/peerjcs.1522/table-1	None	10.7717/peerjcs.1522/table-1	Table 1: Regression fitting schedule Time (s).		component
+66	10.25162/hermes-2024-0015	2024	10.25162/hermes-2024-0015	Tages-Ordnung	Hermes	journal-article
+67	10.1037/e665992011-051	1973	10.1037/e665992011-051	Time Course and Dose-Response Effects of Orally Administered Delta-9-THC on Interval Schedule Performance of Rats	PsycEXTRA Dataset	dataset
+68	10.1016/j.lmot.2022.101866	2023	10.1016/j.lmot.2022.101866	Inter-response time shaping by percentile schedule with discrete trial procedure	Learning and Motivation	journal-article
+69	10.1007/springerreference_62608	None	10.1007/springerreference_62608	Partial Order	SpringerReference	reference-entry
+70	10.1515/9781400869800-015	2015	10.1515/9781400869800-015	Interview Schedule	China, the United Nations and World Order	book-chapter
+71	10.4324/9781315184944-17	2017	10.4324/9781315184944-17	More about Schedule and Citation Order	Classification Made Simple	book-chapter
+72	10.1007/bf00340778	1987	10.1007/bf00340778	A linear time algorithm to find the jump number of 2-dimensional bipartite partial orders	Order	journal-article
+73	10.1007/978-3-540-73580-9_1	None	10.1007/978-3-540-73580-9_1	State Abstraction in Real-Time Heuristic Search	Lecture Notes in Computer Science	book-chapter
+74	10.1080/03605308208820227	1982	10.1080/03605308208820227	Short time asymptotics for fundamental solutions of higher order parabolic equation	Communications in Partial Differential Equations	journal-article
+75	10.1016/j.padiff.2023.100554	2023	10.1016/j.padiff.2023.100554	Genocchi polynomials for variable-order time fractional Fornberg–Whitham type equations	Partial Differential Equations in Applied Mathematics	journal-article
+76	10.1002/num.22907	2023	10.1002/num.22907	Convergence analysis of a fast second‐order time‐stepping numerical method for two‐dimensional nonlinear time–space fractional Schrödinger equation	Numerical Methods for Partial Differential Equations	journal-article
+77	10.6027/9789289332699-12-en	2009	10.6027/9789289332699-12-en	Time schedule		component
+78	10.1515/demo-2022-0105	2022	10.1515/demo-2022-0105	Time series with infinite-order partial copula dependence	Dependence Modeling	journal-article
+79	10.3182/20130204-3-fr-4032.00223	2013	10.3182/20130204-3-fr-4032.00223	Further Results on Finite Time Partial Stability of Fractional Order Time Delay Systems	IFAC Proceedings Volumes	journal-article
+80	10.1063/1.5049080	2018	10.1063/1.5049080	Stability of the third order partial differential equations with time delay	AIP Conference Proceedings	proceedings-article
+81	10.1080/03605302.2011.593015	2011	10.1080/03605302.2011.593015	Short-Time Existence for Some Higher-Order Geometric Flows	Communications in Partial Differential Equations	journal-article
+82	10.1037/e543922009-019	1969	10.1037/e543922009-019	Division 12 Program (Partial Schedule), 1969 APA Meeting--Sheraton Park Hotel	PsycEXTRA Dataset	dataset
+83	10.4324/9781315236438	2017	10.4324/9781315236438	Themes in Neoplatonic and Aristotelian Logic		monograph
+84	10.7717/peerj.21142/supp-2	None	10.7717/peerj.21142/supp-2	Supplemental Information 2: Time schedule in the experiment		component
+85	10.1017/cbo9780511569845.008	1993	10.1017/cbo9780511569845.008	Abstraction between Models	Higher Order Logic and Hardware Verification	book-chapter
+86	10.1002/num.21755	2013	10.1002/num.21755	Convergence analysis of some high–order time accurate schemes for a finite volume method for second order hyperbolic equations on general nonconforming multidimensional spatial meshes	Numerical Methods for Partial Differential Equations	journal-article
+87	10.1002/num.22358	2019	10.1002/num.22358	Time evolution of discrete fourth‐order elliptic operators	Numerical Methods for Partial Differential Equations	journal-article
+88	10.1007/bfb0013020	1989	10.1007/bfb0013020	Time, logic and computation	Lecture Notes in Computer Science	book-chapter
+89	10.5422/fordham/9780823299881.003.0008	2022	10.5422/fordham/9780823299881.003.0008	Time as a Real Abstraction	Concrete Utopianism	book-chapter
+90	10.1142/9781800611788_0002	2022	10.1142/9781800611788_0002	The Point Is an Abstraction: The Method of Extensive Abstraction	Alfred North Whitehead, Philosopher of Time	book-chapter
+91	10.1002/num.22635	2020	10.1002/num.22635	"Numerical solution of
+            <scp>ABC</scp>
+            space–time fractional distributed order reaction–diffusion equation"	Numerical Methods for Partial Differential Equations	journal-article
+92	10.1016/0031-9384(77)90199-8	1977	10.1016/0031-9384(77)90199-8	The response of desalivate rats to a time-dependent food reinforcement schedule	Physiology &amp; Behavior	journal-article
+93	10.22541/au.164852856.66724659/v1	2022	10.22541/au.164852856.66724659/v1	Numerical solution of multidimensional time-space fractional integro-partial differential equation of distributed order		posted-content
+94	10.22360/summersim.2016.scsc.017	2016	10.22360/summersim.2016.scsc.017	Second Order GDEVS Abstraction of Electronic Circuits	2016 Summer Computer Simulation Conference (SCSC 2016)	proceedings-article
+95	10.1002/num.22171	2018	10.1002/num.22171	Stability analysis for fractional‐order partial differential equations by means of space spectral time Adams‐Bashforth Moulton method	Numerical Methods for Partial Differential Equations	journal-article
+96	10.1007/bfb0013030	1989	10.1007/bfb0013030	Partial orderings descriptions and observations of nondeterministic concurrent processes	Lecture Notes in Computer Science	book-chapter
+97	10.1016/j.sigpro.2015.07.021	2016	10.1016/j.sigpro.2015.07.021	Real-time tracking-by-learning with high-order regularization fusion for big video abstraction	Signal Processing	journal-article
+98	10.1201/9781498710664-9	2014	10.1201/9781498710664-9	Partial Differential Equations Second and Zeroth Order in Time	Computational Mathematics in Engineering and Applied Science	book-chapter
+99	10.1002/num.1032	2001	10.1002/num.1032	Extension of high‐order compact schemes to time‐dependent problems	Numerical Methods for Partial Differential Equations	journal-article
+100	10.1002/num.22352	2019	10.1002/num.22352	A fast second‐order difference scheme for the space–time fractional equation	Numerical Methods for Partial Differential Equations	journal-article

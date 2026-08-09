@@ -1,0 +1,11 @@
+rank	source_id	year	doi	title	venue	type
+1	citation-1	1992		Symbolic Boolean Manipulation with Ordered Binary-Decision Diagrams	ACM Computing Surveys	article
+2	citation-2	1997		Formal Hardware Verification with BDDs: An Introduction	IEEE Pacific Rim Conference on Communications, Computers and Signal Processing	proceedings-article
+3	citation-3	1999		Formal Verification Using Parametric Representations of Boolean Constraints	DAC 1999	proceedings-article
+4	10.1109/ICCAD.1996.569909	1996	10.1109/ICCAD.1996.569909	Partitioned ROBDDs - A Compact, Canonical and Efficiently Manipulable Representation for Boolean Functions	ICCAD 1996	proceedings-article
+5	citation-5	1991		On the Complexity of VLSI Implementations and Graph Representations of Boolean Functions with Application to Integer Multiplication	IEEE Transactions on Computers	article
+6	citation-6	2004		Improved Symbolic Simulation by Functional Space Decomposition	ASP-DAC 2004	proceedings-article
+7	citation-7	1999		Digital Systems Design with VHDL and Synthesis: An Integrated Approach	IEEE Computer Society Press	book
+8	citation-8	2003		Enhanced Symbolic Simulation for Efficient Verification of Embedded Array Systems	ASP-DAC 2003	proceedings-article
+9	citation-9	1998		Verification of Floating Point Adders	CAV 1998	proceedings-article
+10	citation-10	1996		Practical Modeling Examples - HDL Chip Design	Doone Publications	book-chapter

@@ -1,0 +1,43 @@
+rank	source_id	year	doi	title	venue	type
+1	citation-1	2017	-	Reachable Set Computation and Safety Verification for Neural Networks with ReLU Activations	-	reference
+2	10.1007/978-3-030-30942-8_39	2019	10.1007/978-3-030-30942-8_39	Star-Based Reachability Analysis of Deep Neural Networks	Lecture Notes in Computer Science	book-chapter
+3	citation-3	2020	-	Reachability Analysis for Feed-Forward Neural Networks Using Face Lattices	-	reference
+4	10.1073/PNAS.93.4.1591	1996	10.1073/PNAS.93.4.1591	A Fast Marching Level Set Method for Monotonically Advancing Fronts	Proceedings of the National Academy of Sciences	journal-article
+5	10.1109/IROS.2006.282649	2006	10.1109/IROS.2006.282649	Path Planning for Mobile Robot Navigation Using Voronoi Diagram and Fast Marching	2006 IEEE/RSJ International Conference on Intelligent Robots and Systems	proceedings-article
+6	10.1177/0278364915577958	2015	10.1177/0278364915577958	Fast Marching Tree: A Fast Marching Sampling-Based Method for Optimal Motion Planning in Many Dimensions	The International Journal of Robotics Research	journal-article
+7	10.1145/37402.37422	1987	10.1145/37402.37422	Marching Cubes: A High Resolution 3D Surface Construction Algorithm	ACM SIGGRAPH Computer Graphics	journal-article
+8	citation-8	2020	-	Analytic Marching: An Analytic Meshing Solution from Deep Implicit Surface Networks	-	reference
+9	citation-9	2014	-	On the Number of Linear Regions of Deep Neural Networks	Advances in Neural Information Processing Systems	reference
+10	10.3390/MATH7100992	2019	10.3390/MATH7100992	Universal Function Approximation by Deep Neural Nets with Bounded Width and ReLU Activations	Mathematics	journal-article
+11	citation-11	2018	-	Understanding Deep Neural Networks with Rectified Linear Units	International Conference on Learning Representations	reference
+12	citation-12	2019	-	ReLU Deep Neural Networks and Linear Finite Elements	Journal of Computational Mathematics	reference
+13	citation-13	2020	-	Reverse-Engineering Deep ReLU Networks	-	reference
+14	citation-14	2019	-	Learning Stable Deep Dynamics Models	Advances in Neural Information Processing Systems	reference
+15	citation-15	2020	-	Neural Certificates for Safe Control Policies	-	reference
+16	citation-16	2020	-	ART: Abstraction Refinement-Guided Training for Provably Correct Neural Networks	-	reference
+17	citation-17	2020	-	Safe Predictors for Enforcing Input-Output Specifications	-	reference
+18	citation-18	2017	-	Reluplex: An Efficient SMT Solver for Verifying Deep Neural Networks	International Conference on Computer Aided Verification	reference
+19	citation-19	2019	-	Algorithms for Verifying Deep Neural Networks	-	reference
+20	10.1109/TNNLS.2018.2808470	2018	10.1109/TNNLS.2018.2808470	Output Reachable Set Estimation and Verification for Multilayer Neural Networks	IEEE Transactions on Neural Networks and Learning Systems	journal-article
+21	citation-21	2018	-	Towards Fast Computation of Certified Robustness for ReLU Networks	International Conference on Machine Learning	reference
+22	citation-22	2018	-	Formal Security Analysis of Neural Networks Using Symbolic Intervals	USENIX Security Symposium	reference
+23	citation-23	2018	-	Efficient Formal Safety Analysis of Neural Networks	Advances in Neural Information Processing Systems	reference
+24	citation-24	2018	-	Efficient Neural Network Robustness Certification with General Activation Functions	Advances in Neural Information Processing Systems	reference
+25	citation-25	2017	-	Output Range Analysis for Deep Neural Networks	-	reference
+26	citation-26	2018	-	Formal Verification of CNN-Based Perception Systems	-	reference
+27	citation-27	2017	-	An Approach to Reachability Analysis for Feed-Forward ReLU Neural Networks	-	reference
+28	10.24963/IJCAI.2018/368	2018	10.24963/IJCAI.2018/368	Reachability Analysis of Deep Neural Networks with Provable Guarantees	Proceedings of the Twenty-Seventh International Joint Conference on Artificial Intelligence	proceedings-article
+29	10.1145/3302504.3311806	2019	10.1145/3302504.3311806	Verisig: Verifying Safety Properties of Hybrid Systems with Neural Network Controllers	Proceedings of the 22nd ACM International Conference on Hybrid Systems: Computation and Control	proceedings-article
+30	10.1145/3290354	2019	10.1145/3290354	An Abstract Domain for Certifying Neural Networks	Proceedings of the ACM on Programming Languages	journal-article
+31	10.1109/SP.2018.00058	2018	10.1109/SP.2018.00058	AI2: Safety and Robustness Certification of Neural Networks with Abstract Interpretation	2018 IEEE Symposium on Security and Privacy	proceedings-article
+32	citation-32	2019	-	A Reachability Method for Verifying Dynamical Systems with Deep Neural Network Controllers	-	reference
+33	citation-33	2020	-	Dissecting Deep Neural Networks	-	reference
+34	citation-34	2019	-	Complexity of Linear Regions in Deep Networks	International Conference on Machine Learning	reference
+35	citation-35	2019	-	Deep ReLU Networks Have Surprisingly Few Activation Patterns	Advances in Neural Information Processing Systems	reference
+36	10.1109/CDC.2004.1429297	2004	10.1109/CDC.2004.1429297	Efficient Computation of Controller Partitions in Multi-Parametric Programming	2004 43rd IEEE Conference on Decision and Control	proceedings-article
+37	10.1137/15M1020575	2017	10.1137/15M1020575	JuMP: A Modeling Language for Mathematical Optimization	SIAM Review	journal-article
+38	citation-38	2003	-	Cddlib Reference Manual	Report version 093a	reference
+39	10.1007/978-3-319-66706-5_11	2017	10.1007/978-3-319-66706-5_11	Scalable Minimizing-Operators on Polyhedra via Parametric Linear Programming	Lecture Notes in Computer Science	book-chapter
+40	citation-40	2020	-	JuliaPolyhedra/CDDLib.jl: v0.6.1	-	reference
+41	10.1109/DASC.2016.7778091	2016	10.1109/DASC.2016.7778091	Policy Compression for Aircraft Collision Avoidance Systems	2016 IEEE/AIAA 35th Digital Avionics Systems Conference	proceedings-article
+42	10.1007/978-3-030-25540-4_26	2019	10.1007/978-3-030-25540-4_26	The Marabou Framework for Verification and Analysis of Deep Neural Networks	Lecture Notes in Computer Science	book-chapter

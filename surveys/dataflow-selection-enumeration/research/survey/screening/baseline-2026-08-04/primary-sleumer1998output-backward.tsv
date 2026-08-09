@@ -1,0 +1,13 @@
+rank	source_id	year	doi	title	venue	type
+1	citation-1	1996	10.1016/0166-218X(95)00026-N	Reverse Search for Enumeration	Discrete Applied Mathematics	journal-article
+2	citation-2	-	-	Primal-Dual Methods for Vertex and Facet Enumeration	-	article
+3	citation-3	-	-	The Parallel Search Bench ZRAM and Its Applications	-	article
+4	citation-4	-	-	Oriented Matroids	-	book
+5	citation-5	-	-	Algorithms in Combinatorial Geometry	-	book
+6	citation-6	-	-	Topologically Sweeping an Arrangement	-	article
+7	citation-7	1986	10.1137/0215024	Constructing Arrangements of Lines and Hyperplanes with Applications	SIAM Journal on Computing	journal-article
+8	citation-8	-	-	cdd+ Reference Manual	-	manual
+9	citation-9	-	-	Worst-Case Optimal Hidden-Surface Removal	-	article
+10	citation-10	-	-	Linear Programming in Linear Time When Dimension Is Fixed	-	article
+11	citation-11	-	-	Computational Geometry Column 28	-	article
+12	citation-12	-	-	Enumerating Extreme Points in Higher Dimensions	-	article

@@ -1,0 +1,35 @@
+rank	source_id	year	doi	title	venue	type
+1	citation-1	1987		Trace theory	Advances in Petri Nets	book chapter
+2	citation-2			ASM bytecode analysis framework	ASM	software
+3	citation-3	2014		Optimal dynamic partial order reduction	POPL	conference paper
+4	citation-4	2010		A randomized scheduler with probabilistic guarantees of finding bugs	ASPLOS	conference paper
+5	citation-5	1998		State space reduction using partial order techniques	International Journal on Software Tools for Technology Transfer	journal article
+6	citation-6	2013		Bounded partial-order reduction	OOPSLA	conference paper
+7	10.1007/978-3-540-78800-3_24	2008	10.1007/978-3-540-78800-3_24	Z3: an efficient SMT solver	TACAS	conference paper
+8	citation-8	2006		The Yices SMT solver	SRI International	technical report
+9	citation-9	2012		Predicting null-pointer dereferences in concurrent programs	FSE	conference paper
+10	citation-10	2005		Dynamic partial-order reduction for model checking software	POPL	conference paper
+11	citation-11	1996		Partial-Order Methods for the Verification of Concurrent Systems: An Approach to the State-Explosion Problem	University of Liège	doctoral thesis
+12	citation-12	1997		Model checking for programming languages using VeriSoft	POPL	conference paper
+13	citation-13	2005		Software model checking: The VeriSoft approach	Formal Methods in System Design	journal article
+14	citation-14	2010		LEAP: Lightweight deterministic multi-processor replay of concurrent Java programs	FSE	conference paper
+15	citation-15	2013		Clap: Recording local executions to reproduce concurrency failures	PLDI	conference paper
+16	citation-16	2014		Maximal sound predictive race detection with control flow abstraction	PLDI	conference paper
+17	citation-17	2011		Change-aware preemption prioritization	ISSTA	conference paper
+18	citation-18	2009		Monotonic partial order reduction: An optimal symbolic partial order reduction technique	CAV	conference paper
+19	citation-19	2014		Assertion guided abstraction: a cooperative optimization for dynamic partial order reduction	ASE	conference paper
+20	citation-20	1978		Time, clocks, and the ordering of events in a distributed system	Communications of the ACM	journal article
+21	citation-21	2007		A study of interleaving coverage criteria	ESEC-FSE	conference paper
+22	citation-22	2007		Partial-order reduction for context-bounded state exploration	Microsoft Research	technical report
+23	citation-23	2007		Iterative context bounding for systematic testing of multithreaded programs	PLDI	conference paper
+24	citation-24	2008		Fair stateless model checking	PLDI	conference paper
+25	citation-25	2008		Finding and reproducing heisenbugs in concurrent programs	OSDI	conference paper
+26	citation-26	2012		Multicore acceleration of priority-based schedulers for concurrency bug detection	PLDI	conference paper
+27	citation-27	2010		Pinplay: a framework for deterministic replay and reproducible analysis of parallel programs	CGO	conference paper
+28	citation-28	2011		Generating data race witnesses by an SMT-based analysis	NFM	conference paper
+29	citation-29	2008		Race directed random testing of concurrent programs	PLDI	conference paper
+30	citation-30	2012		Maximal causal models for sequentially consistent systems	RV	conference paper
+31	citation-31	2014		Fast bug finding in lock-free data structures with cb-dpor	Massachusetts Institute of Technology	master thesis
+32	citation-32	2010		Trace-based symbolic analysis for atomicity violations	TACAS	conference paper
+33	citation-33	2011		Coverage guided systematic concurrency testing	ICSE	conference paper
+34	citation-34	2012		Maple: A coverage-driven testing tool for multithreaded programs	OOPSLA	conference paper

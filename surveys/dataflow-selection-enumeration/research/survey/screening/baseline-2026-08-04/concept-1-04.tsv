@@ -1,0 +1,26 @@
+rank	openalex_id	year	doi	title	venue	type
+1	W2147880316	2001		Conditional Random Fields: Probabilistic Models for Segmenting and Labeling Sequence Data	ScholarlyCommons (University of Pennsylvania)	other
+2	W2112796928	1998	https://doi.org/10.1109/5.726791	Gradient-based learning applied to document recognition	Proceedings of the IEEE	article
+3	W2107726111	1996	https://doi.org/10.1613/jair.301	Reinforcement Learning: A Survey	Journal of Artificial Intelligence Research	article
+4	W2168448159	2005	https://doi.org/10.1103/revmodphys.77.137	The Kuramoto model: A simple paradigm for synchronization phenomena	Reviews of Modern Physics	article
+5	W2168359464	1998	https://doi.org/10.1016/s0004-3702(98)00023-x	Planning and acting in partially observable stochastic domains	Artificial Intelligence	article
+6	W1501934796	1989		Sequencing and scheduling : algorithms and complexity	TU/e Research Portal	report
+7	W2789091536	2018	https://doi.org/10.1145/3178876.3186014	Semantics and Complexity of GraphQL		conference-paper
+8	W1831347135	2011	https://doi.org/10.1007/978-3-642-21581-0_11	Enumerating All Solutions of a Boolean CSP by Non-decreasing Weight	Lecture notes in computer science	conference-paper
+9	W1603182045	2010	https://doi.org/10.1007/978-3-642-14295-6_51	Quantifier Elimination by Lazy Model Enumeration	Lecture notes in computer science	conference-paper
+10	W1640599491	2001	https://doi.org/10.48550/arxiv.cs/0106031	Complexity Results and Practical Algorithms for Logics in Knowledge Representation	arXiv (Cornell University)	preprint
+11	W3081593229	2020	https://doi.org/10.1109/ojia.2020.3020184	Model Predictive Control of Power Electronic Systems: Methods, Results, and Challenges	IEEE Open Journal of Industry Applications	article
+12	W4380433164	2023	https://doi.org/10.1145/3588931	Maximal Defective Clique Enumeration	Proceedings of the ACM on Management of Data	article
+13	W2165151302	2011	https://doi.org/10.1186/1475-2875-10-202	Mathematical models of malaria - a review	Malaria Journal	article
+14	W2104834906	2014	https://doi.org/10.1257/jel.52.3.740	What Do We Learn from the Weather? The New Climate-Economy Literature	Journal of Economic Literature	article
+15	W2766363310	2019	https://doi.org/10.1016/j.dam.2019.02.025	A complexity theory for hard enumeration problems	Discrete Applied Mathematics	article
+16	W2792270834	2018	https://doi.org/10.1016/j.apenergy.2018.02.156	Approximate model predictive building control via machine learning	Applied Energy	article
+17	W1850900101	1996		Modeling and verification of randomized distributed real-time systems	DSpace@MIT (Massachusetts Institute of Technology)	dissertation
+18	W2883227679	2020	https://doi.org/10.1145/3422648.3422655	Constant-Delay Enumeration for Nondeterministic Document Spanners	ACM SIGMOD Record	article
+19	W2914039150	2011	https://doi.org/10.1016/j.jcss.2011.09.006	Enumerating homomorphisms	Journal of Computer and System Sciences	article
+20	W2888663614	2018	https://doi.org/10.1016/j.dam.2018.06.038	Incremental delay enumeration: Space and time	Discrete Applied Mathematics	article
+21	W2133297572	2013	https://doi.org/10.1155/2013/704504	A Review of Data Fusion Techniques	The Scientific World JOURNAL	article
+22	W1986968252	2015	https://doi.org/10.1186/s13015-014-0031-3	EUCALYPT: efficient tree reconciliation enumerator	Algorithms for Molecular Biology	article
+23	W2240520130	2011	https://doi.org/10.4230/lipics.csl.2011.189	Enumeration Complexity of Logical Query Problems with Second-order Variables	DROPS (Schloss Dagstuhl – Leibniz Center for Informatics)	article
+24	W2088455835	2014	https://doi.org/10.1109/jproc.2014.2320516	Physical Unclonable Functions and Applications: A Tutorial	Proceedings of the IEEE	article
+25	W2559930736	2016	https://doi.org/10.1113/jp271671	Uncertainty and variability in computational and mathematical models of cardiac physiology	The Journal of Physiology	article

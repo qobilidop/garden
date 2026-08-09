@@ -1,0 +1,33 @@
+rank	openalex_id	year	doi	title	venue	type
+1	W1488750823	1996	https://doi.org/10.1007/3-540-61628-4_7	Deterministic, error-correcting combinator parsers	Lecture notes in computer science	conference-paper
+2	W1508641834	2004		Interactive theorem proving and program development. Coq'Art: The Calculus of inductive constructions.	HAL (Le Centre pour la Communication Scientifique Directe)	book
+3	W1545417228	2010		Abstraction for web programming	ERA	conference-abstract
+4	W1595447477	2012	https://doi.org/10.1007/978-3-642-34407-7_11	Hardware Design with Generalized Arrows	Lecture notes in computer science	conference-paper
+5	W1997143185	1991	https://doi.org/10.1016/0890-5401(91)90052-4	Notions of computation and monads	Information and Computation	article
+6	W1997644097	1998	https://doi.org/10.1017/s0956796898003050	Monadic parsing in Haskell	Journal of Functional Programming	article
+7	W2029976661	2008	https://doi.org/10.1145/1411286.1411292	Smallcheck and lazy smallcheck		conference-paper
+8	W2034871280	2015	https://doi.org/10.1145/2804302.2804311	The remote monad design pattern		conference-paper
+9	W2057292961	1989	https://doi.org/10.1145/99370.99404	Theorems for free!		conference-paper
+10	W2064138295	2000	https://doi.org/10.1016/s0167-6423(99)00023-4	Generalising monads to arrows	Science of Computer Programming	article
+11	W2068873267	2014	https://doi.org/10.1145/2628136.2628144	There is no fork		conference-paper
+12	W2070764484	2013	https://doi.org/10.1145/2426890.2426910	Fixing idioms		conference-paper
+13	W2073001576	2015	https://doi.org/10.1145/2804302.2804319	Freer monads, more extensible effects		conference-paper
+14	W2103711664	2014	https://doi.org/10.4204/eptcs.153.2	Free Applicative Functors	Electronic Proceedings in Theoretical Computer Science	article
+15	W2106742806	2011	https://doi.org/10.1016/j.entcs.2011.02.018	Idioms are Oblivious, Arrows are Meticulous, Monads are Promiscuous	Electronic Notes in Theoretical Computer Science	article
+16	W2116435685	2001	https://doi.org/10.1145/507635.507664	A new notation for arrows		conference-paper
+17	W2116813111	2007	https://doi.org/10.1017/s0956796807006326	Applicative programming with effects	Journal of Functional Programming	article
+18	W2136202785	1995	https://doi.org/10.1007/3-540-59451-5_2	Monads for functional programming	Lecture notes in computer science	conference-paper
+19	W2137380783	1998	https://doi.org/10.1145/285930.286058	A preliminary architecture for a basic data-flow processor		conference-paper
+20	W2163552400	2008	https://doi.org/10.1017/s0956796808006758	Data types à la carte	Journal of Functional Programming	article
+21	W2338036611	2001	https://doi.org/10.1017/s0956796801004099	Exceptional syntax	Journal of Functional Programming	article
+22	W2501393023	2016	https://doi.org/10.1145/2976002.2976005	Free delivery (functional pearl)		conference-paper
+23	W2513970686	2016	https://doi.org/10.1145/2976002.2976007	Desugaring Haskell's do-notation into applicative operations		conference-paper
+24	W2786033663	2018	https://doi.org/10.23919/date.2018.8342264	Reconfigurable asynchronous pipelines: From formal models to silicon		conference-paper
+25	W2791446013	2018	https://doi.org/10.1145/3236774	Build systems à la carte	Proceedings of the ACM on Programming Languages	article
+26	W2958869096	2019	https://doi.org/10.1145/3341694	Selective applicative functors	Proceedings of the ACM on Programming Languages	article
+27	W2990129438				Bristol Research (University of Bristol)	other
+28	W3004785238	1999	https://doi.org/10.1145/331963.331977	Domain specific embedded compilers	ACM SIGPLAN Notices	article
+29	W3005608680	2008	https://doi.org/10.1145/1543134.1411292	Smallcheck and lazy smallcheck	ACM SIGPLAN Notices	article
+30	W3010222729	2014	https://doi.org/10.1145/2692915.2628144	There is no fork	ACM SIGPLAN Notices	article
+31	W3030938094	2001	https://doi.org/10.1145/507669.507664	A new notation for arrows	ACM SIGPLAN Notices	article
+32	W4246838776	1974	https://doi.org/10.1145/641675.642111	A preliminary architecture for a basic data-flow processor	ACM SIGARCH Computer Architecture News	article

@@ -1,0 +1,102 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1109/cscwd68734.2026.11582111	2026	10.1109/cscwd68734.2026.11582111	Dataflow-Based Path Pruning in Symbolic Execution for Hardware Verification	2026 29th International Conference on Computer Supported Cooperative Work in Design (CSCWD)	proceedings-article
+2	10.1007/0-387-29906-8_3	None	10.1007/0-387-29906-8_3	Symbolic Simulation	Scalable Hardware Verification with Symbolic Simulation	book-chapter
+3	10.1007/0-387-29906-8	2006	10.1007/0-387-29906-8	Scalable Hardware Verification with Symbolic Simulation		book
+4	10.1007/0-387-29906-8_7	None	10.1007/0-387-29906-8_7	Conclusion	Scalable Hardware Verification with Symbolic Simulation	book-chapter
+5	10.1007/0-387-29906-8_1	None	10.1007/0-387-29906-8_1	Introduction	Scalable Hardware Verification with Symbolic Simulation	book-chapter
+6	10.1007/0-387-29906-8_2	None	10.1007/0-387-29906-8_2	Design and Verification of Digital Systems	Scalable Hardware Verification with Symbolic Simulation	book-chapter
+7	10.1007/0-387-29906-8_6	None	10.1007/0-387-29906-8_6	Exact Parametrizations	Scalable Hardware Verification with Symbolic Simulation	book-chapter
+8	10.1007/0-387-29906-8_5	None	10.1007/0-387-29906-8_5	Approximate Simulation	Scalable Hardware Verification with Symbolic Simulation	book-chapter
+9	10.1007/0-387-29906-8_4	None	10.1007/0-387-29906-8_4	Compacting Intermediate States	Scalable Hardware Verification with Symbolic Simulation	book-chapter
+10	10.2139/ssrn.6749762	2026	10.2139/ssrn.6749762	An Algorithm-Hardware Co-Optimized Accelerator for Efficient Deep GCN Inference with Hybrid Dataflow and Dynamic Pruning		posted-content
+11	10.1109/icst.2009.15	2009	10.1109/icst.2009.15	Pruning the Search Space in Path-Based Test Generation	2009 International Conference on Software Testing Verification and Validation	proceedings-article
+12	10.1145/1108768.1108808	2006	10.1145/1108768.1108808	Symbolic path simulation in path-sensitive dataflow analysis	ACM SIGSOFT Software Engineering Notes	journal-article
+13	10.1109/ats.2000.893645	None	10.1109/ats.2000.893645	Formal verification of data-path circuits based on symbolic simulation	Proceedings of the Ninth Asian Test Symposium	proceedings-article
+14	10.1007/3-540-44798-9_4	2001	10.1007/3-540-44798-9_4	Pruning Techniques for the SAT-Based Bounded Model Checking Problem	Lecture Notes in Computer Science	book-chapter
+15	10.1007/1-4020-7876-5_16	2004	10.1007/1-4020-7876-5_16	Hardware-Based Verification	Professional Verification	book-chapter
+16	10.1145/1108792.1108808	2005	10.1145/1108792.1108808	Symbolic path simulation in path-sensitive dataflow analysis	Proceedings of the 6th ACM SIGPLAN-SIGSOFT workshop on Program analysis for software tools and engineering	proceedings-article
+17	10.31274/td-20260804-208	None	10.31274/td-20260804-208	Symbolic execution for probabilistic programs: path probabilities testing and verification in prism model checker		dissertation
+18	10.1016/s0950-5849(99)00060-9	2000	10.1016/s0950-5849(99)00060-9	Symbolic path-based protocol verification	Information and Software Technology	journal-article
+19	10.70675/33859af0z9c09z423dzb345z62ae1ec51d10	None	10.70675/33859af0z9c09z423dzb345z62ae1ec51d10	Mechanized semantics for circuits : from dataflow to hardware		dissertation
+20	10.1109/iwrsp.1996.506718	None	10.1109/iwrsp.1996.506718	Design verification based on hardware emulation	Proceedings Seventh IEEE International Workshop on Rapid System Prototyping. Shortening the Path from Specification to Prototype	proceedings-article
+21	10.1016/b978-0-444-89208-9.50020-x	1991	10.1016/b978-0-444-89208-9.50020-x	A Method for Symbolic Verification of Synchronous Circuits	Computer Hardware Description Languages and their Applications	book-chapter
+22	10.1007/978-3-642-19237-1_11	2011	10.1007/978-3-642-19237-1_11	Dataflow Analysis for Properties of Aspect Systems	Lecture Notes in Computer Science	book-chapter
+23	10.1007/bfb0021721	None	10.1007/bfb0021721	Advancements in symbolic traversal techniques	Lecture Notes in Computer Science	book-chapter
+24	10.1109/tcsi.2025.3585054	2026	10.1109/tcsi.2025.3585054	Low-Power Vision Transformer Accelerator With Hardware-Aware Pruning and Optimized Dataflow	IEEE Transactions on Circuits and Systems I: Regular Papers	journal-article
+25	10.12792/iciae2023.054	2023	10.12792/iciae2023.054	Introduction Hardware Switching Functionality to Web browser-based FPGA Hardware Verification System	The Proceedings of The 11th IIAE International Conference on Industrial Application Engineering 2023	proceedings-article
+26	10.1007/0-387-97226-9_21	1990	10.1007/0-387-97226-9_21	Verification of synchronous circuits by symbolic logic simulation	Lecture Notes in Computer Science	book-chapter
+27	10.1007/11560548_19	2005	10.1007/11560548_19	A New SAT-Based Algorithm for Symbolic Trajectory Evaluation	Lecture Notes in Computer Science	book-chapter
+28	10.1145/3716828	2025	10.1145/3716828	Parameterized Hardware Verification Through A Term-level Generalized Symbolic Trajectory Evaluation And Its Linkage With Concrete Hardware Verification At Netlist Level	Formal Aspects of Computing	journal-article
+29	10.1007/11560548_13	2005	10.1007/11560548_13	Saturation-Based Symbolic Reachability Analysis Using Conjunctive and Disjunctive Partitioning	Lecture Notes in Computer Science	book-chapter
+30	10.1007/11560548_25	2005	10.1007/11560548_25	Symbolic Partial Order Reduction for Rule Based Transition Systems	Lecture Notes in Computer Science	book-chapter
+31	10.1007/978-0-387-35190-2_11	1997	10.1007/978-0-387-35190-2_11	A Parallel Approach to Symbolic Traversal based on Set Partitioning	IFIP Advances in Information and Communication Technology	book-chapter
+32	10.1007/3-540-48153-2_18	1999	10.1007/3-540-48153-2_18	Formal Verification of Designs with Complex Control by Symbolic Simulation	Lecture Notes in Computer Science	book-chapter
+33	10.4995/thesis/10251/236527	None	10.4995/thesis/10251/236527	Advanced Narrowing-Based Symbolic Verification Techniques in Maude		dissertation
+34	10.1109/vts65138.2025.11022839	2025	10.1109/vts65138.2025.11022839	Special Session: Bringing Symbolic Execution to the Security Verification of Hardware Designs	2025 IEEE 43rd VLSI Test Symposium (VTS)	proceedings-article
+35	10.1109/isvlsi.2013.6654650	2013	10.1109/isvlsi.2013.6654650	Symbolic verification of timed asynchronous hardware protocols	2013 IEEE Computer Society Annual Symposium on VLSI (ISVLSI)	proceedings-article
+36	10.1007/11678779_1	2006	10.1007/11678779_1	Path-Based System Level Stimuli Generation	Lecture Notes in Computer Science	book-chapter
+37	10.1007/11757283_4	2006	10.1007/11757283_4	BDD-Based Hardware Verification	Lecture Notes in Computer Science	book-chapter
+38	10.1109/host49136.2021.9702283	2021	10.1109/host49136.2021.9702283	HERMES: Hardware-Efficient Speculative Dataflow Architecture for Bonsai Merkle Tree-Based Memory Authentication	2021 IEEE International Symposium on Hardware Oriented Security and Trust (HOST)	proceedings-article
+39	10.1007/3-540-63475-4_1	1997	10.1007/3-540-63475-4_1	Symbolic trajectory evaluation	Lecture Notes in Computer Science	book-chapter
+40	10.1007/978-3-540-77966-7_5	None	10.1007/978-3-540-77966-7_5	Symbolic Execution and Model Checking for Testing	Lecture Notes in Computer Science	book-chapter
+41	10.1007/978-3-319-03077-7_6	2013	10.1007/978-3-319-03077-7_6	Symbolic Model-Based Testing for Industrial Automation Software	Lecture Notes in Computer Science	book-chapter
+42	10.1109/aspdac.1995.486380	None	10.1109/aspdac.1995.486380	Symbolic verification of hardware systems	Proceedings of ASP-DAC'95/CHDL'95/VLSI'95 with EDA Technofair	proceedings-article
+43	10.1017/cbo9780511569845.002	1993	10.1017/cbo9780511569845.002	Hardware Verification	Higher Order Logic and Hardware Verification	book-chapter
+44	10.70675/5385914cz7618z4b0ez854ez35b7a3c3aff1	None	10.70675/5385914cz7618z4b0ez854ez35b7a3c3aff1	Formal verification of weak topological orderings and dataflow analysis		dissertation
+45	10.1007/3-540-48153-2_19	1999	10.1007/3-540-48153-2_19	Hints to Accelerate Symbolic Traversal	Lecture Notes in Computer Science	book-chapter
+46	10.1007/978-3-540-39724-3_15	2003	10.1007/978-3-540-39724-3_15	Semi-formal Verification of Memory Systems by Symbolic Simulation	Lecture Notes in Computer Science	book-chapter
+47	10.1109/iccd.1993.393406	None	10.1109/iccd.1993.393406	Hardware verification using symbolic state transition graphs	Proceedings of 1993 IEEE International Conference on Computer Design ICCD'93	proceedings-article
+48	10.21236/ada188553	1987	10.21236/ada188553	A Methodology for Hardware Verification Based on Logic Simulation.		report
+49	10.1007/978-3-319-70389-3_12	2017	10.1007/978-3-319-70389-3_12	PRuning Through Satisfaction	Lecture Notes in Computer Science	book-chapter
+50	10.1007/3-540-60385-9_20	1995	10.1007/3-540-60385-9_20	A symbolic relation for a subset of VHDL'87 descriptions and its application to symbolic model checking	Lecture Notes in Computer Science	book-chapter
+51	10.1109/desec.2018.8625128	2018	10.1109/desec.2018.8625128	Dynamic Path Pruning in Symbolic Execution	2018 IEEE Conference on Dependable and Secure Computing (DSC)	proceedings-article
+52	10.1007/978-1-4612-0351-3_18	1993	10.1007/978-1-4612-0351-3_18	The Role of a Symbolic Programming Language in Hardware Verification: The Case of Maple	Mathematical Computation with Maple V: Ideas and Applications	book-chapter
+53	10.1007/978-0-387-35190-2_10	1997	10.1007/978-0-387-35190-2_10	Symbolic Model Checking for a Discrete Clocked Temporal Logic with Intervals	IFIP Advances in Information and Communication Technology	book-chapter
+54	10.1145/3194554.3194627	2018	10.1145/3194554.3194627	Dataflow-Based Mapping of Spiking Neural Networks on Neuromorphic Hardware	Proceedings of the 2018 Great Lakes Symposium on VLSI	proceedings-article
+55	10.1017/cbo9780511569845.004	1993	10.1017/cbo9780511569845.004	Hardware Verification using Higher Order Logic	Higher Order Logic and Hardware Verification	book-chapter
+56	10.1016/b978-075067730-1/50011-6	2005	10.1016/b978-075067730-1/50011-6	Hardware Verification Environment and Co-Verification	Co-verification of Hardware and Software for ARM SoC Design	book-chapter
+57	10.15368/theses.2017.40	None	10.15368/theses.2017.40	"Verification of Receiver Equalization by Integrating Dataflow
+                                Simulation and Physical Channels"		dissertation
+58	10.1109/iscas48785.2022.9937927	2022	10.1109/iscas48785.2022.9937927	HLS-based dataflow hardware architecture for Support Vector Machine in FPGA	2022 IEEE International Symposium on Circuits and Systems (ISCAS)	proceedings-article
+59	10.5220/0009342302820291	2020	10.5220/0009342302820291	Composite Web Services as Dataflow Graphs for Constraint Verification	Proceedings of the 10th International Conference on Cloud Computing and Services Science	proceedings-article
+60	10.1109/rtas52030.2021.00061	2021	10.1109/rtas52030.2021.00061	Work in Progress: Path-based Graph Partition for Parallel Hardware-accelerated Functional Verification	2021 IEEE 27th Real-Time and Embedded Technology and Applications Symposium (RTAS)	proceedings-article
+61	10.21236/ada237355	1991	10.21236/ada237355	Specification and Verification of Real-Time Constraints in Coarse-Grain Dataflow		report
+62	10.1007/978-3-642-19583-9_14	2011	10.1007/978-3-642-19583-9_14	vlogsl: A Strategy Language for Simulation-Based Verification of Hardware	Lecture Notes in Computer Science	book-chapter
+63	10.1007/11757283_3	2006	10.1007/11757283_3	An Introduction to Symbolic Trajectory Evaluation	Lecture Notes in Computer Science	book-chapter
+64	10.1007/3-540-44798-9_13	2001	10.1007/3-540-44798-9_13	Coverability Analysis Using Symbolic Model Checking	Lecture Notes in Computer Science	book-chapter
+65	10.1007/978-3-319-26287-1_7	2015	10.1007/978-3-319-26287-1_7	TSO to SC via Symbolic Execution	Lecture Notes in Computer Science	book-chapter
+66	10.1007/978-3-319-24953-7_18	2015	10.1007/978-3-319-24953-7_18	Lazy-CSeq-SP: Boosting Sequentialization-Based Verification of Multi-threaded C Programs via Symbolic Pruning of Redundant Schedules	Lecture Notes in Computer Science	book-chapter
+67	10.1049/ic:19951039	1995	10.1049/ic:19951039	Verification or validation of hardware-software codesigns?	IEE Colloquium on `Verification of Hardware Software Codesign'	proceedings-article
+68	10.1109/hsc.1994.336710	None	10.1109/hsc.1994.336710	A dynamic dataflow model suitable for efficient mixed hardware and software implementations of DSP applications	Third International Workshop on Hardware/Software Codesign	proceedings-article
+69	10.1007/1-4020-8024-7_2	None	10.1007/1-4020-8024-7_2	Verification Methodologies	The e Hardware Verification Language	book-chapter
+70	10.4324/9780429341267-10	2019	10.4324/9780429341267-10	Pruning of classical formulations	Evidence-based Ayurveda	book-chapter
+71	10.1007/11560548_17	2005	10.1007/11560548_17	Automatic Generation of Hints for Symbolic Traversal	Lecture Notes in Computer Science	book-chapter
+72	10.1145/3428245	2020	10.1145/3428245	Dataflow-based pruning for speeding up superoptimization	Proceedings of the ACM on Programming Languages	journal-article
+73	10.1016/b978-0-444-81641-2.50011-3	1993	10.1016/b978-0-444-81641-2.50011-3	Prevail-DM: a framework-based environment for formal hardware verification	Computer Hardware Description Languages and their Applications	book-chapter
+74	10.1007/3-540-60385-9_10	1995	10.1007/3-540-60385-9_10	Transforming Boolean relations by symbolic encoding	Lecture Notes in Computer Science	book-chapter
+75	10.1109/spl.2007.371755	2007	10.1109/spl.2007.371755	Execution of Algorithms Using a Dynamic Dataflow Model for Reconfigurable Hardware - Commands in Dataflow Graph	2007 3rd Southern Conference on Programmable Logic	proceedings-article
+76	10.1007/978-0-387-36254-0_3	None	10.1007/978-0-387-36254-0_3	OOP, C++, and Verification	Hardware Verification with C++	book-chapter
+77	10.1007/11560548_34	2005	10.1007/11560548_34	High-Level Modelling, Analysis, and Verification on FPGA-Based Hardware Design	Lecture Notes in Computer Science	book-chapter
+78	10.1109/iscas45731.2020.9181101/video	None	10.1109/iscas45731.2020.9181101/video	Video for Hardware-Aware Pruning of DNNs using LFSR-Generated Pseudo-Random Indices		component
+79	10.11606/t.55.2015.tde-30062015-141638	None	10.11606/t.55.2015.tde-30062015-141638	ChipCflow: tool for convert C code in a static dataflow architecture in reconfigurable hardware		dissertation
+80	10.3390/s26092910	2026	10.3390/s26092910	HAPQ: A Hardware-Aware Pruning and Quantization Pipeline for Event-Based SNN Detection	Sensors	journal-article
+81	10.1007/978-1-4419-0224-5_7	2009	10.1007/978-1-4419-0224-5_7	Exact symbolic models for verification	Verification and Control of Hybrid Systems	book-chapter
+82	10.1016/b978-075067730-1/50009-8	2005	10.1016/b978-075067730-1/50009-8	Hardware/Software Co-Verification	Co-verification of Hardware and Software for ARM SoC Design	book-chapter
+83	10.1007/978-1-4419-0224-5_10	2009	10.1007/978-1-4419-0224-5_10	Approximate symbolic models for verification	Verification and Control of Hybrid Systems	book-chapter
+84	10.1007/978-0-387-36254-0_6	None	10.1007/978-0-387-36254-0_6	Truss: A Standard Verification Framework	Hardware Verification with C++	book-chapter
+85	10.1007/978-3-319-26287-1_8	2015	10.1007/978-3-319-26287-1_8	Parallel Symbolic Execution: Merging In-Flight Requests	Lecture Notes in Computer Science	book-chapter
+86	10.1007/0-306-46995-2_6	None	10.1007/0-306-46995-2_6	Hardware/Software Co-verification	System-on-a-Chip Verification	book-chapter
+87	10.36227/techrxiv.176539688.81587421/v1	2025	10.36227/techrxiv.176539688.81587421/v1	Adaptive Dataflow and Precision Optimization for Deep Learning on Configurable Hardware Architectures		posted-content
+88	10.1007/978-3-642-34188-5_18	2012	10.1007/978-3-642-34188-5_18	Symbolic Testing of OpenCL Code	Lecture Notes in Computer Science	book-chapter
+89	10.1007/bfb0021710	None	10.1007/bfb0021710	A graph-based method for timing diagrams representation and verification	Lecture Notes in Computer Science	book-chapter
+90	10.1016/b978-075067730-1/50010-4	2005	10.1016/b978-075067730-1/50010-4	Advanced Hardware/Software Co-Verification	Co-verification of Hardware and Software for ARM SoC Design	book-chapter
+91	10.21437/interspeech.2012-300	2012	10.21437/interspeech.2012-300	Search space pruning based on anticipated path recombination in LVCSR	Interspeech 2012	proceedings-article
+92	10.21236/ada205630	1989	10.21236/ada205630	Hardware-Specific Symbolic Signal Manipulation		report
+93	10.1007/978-3-030-30596-3_11	2020	10.1007/978-3-030-30596-3_11	Hardware Trojan Detection Schemes Using Path Delay and Side-Channel Analysis	System-on-Chip Security	book-chapter
+94	10.1007/978-0-387-71740-1_6	None	10.1007/978-0-387-71740-1_6	Truss: A Standard Verification Framework	Hardware Verification with SystemVerilog	book-chapter
+95	10.2139/ssrn.6341779	2026	10.2139/ssrn.6341779	USE: An HBM-Backed Hardware State Engine for UTXO-Based Blockchain Transaction Verification		posted-content
+96	10.3724/sp.j.1001.2012.04196	2012	10.3724/sp.j.1001.2012.04196	Path Sensitive Program Verification Based on SMT Solvers	Journal of Software	journal-article
+97	10.1109/wartia.2014.6976412	2014	10.1109/wartia.2014.6976412	Path sensitive analysis based on dataflow information and program slicing	2014 IEEE Workshop on Advanced Research and Technology in Industry Applications (WARTIA)	proceedings-article
+98	10.1007/3-540-60385-9_1	1995	10.1007/3-540-60385-9_1	What if model checking must be truly symbolic	Lecture Notes in Computer Science	book-chapter
+99	10.1007/978-3-540-39724-3_6	2003	10.1007/978-3-540-39724-3_6	Efficient Symbolic Model Checking of Software Using Partial Disjunctive Partitioning	Lecture Notes in Computer Science	book-chapter
+100	10.1007/1-4020-8024-7_5	None	10.1007/1-4020-8024-7_5	e as a Verification Language	The e Hardware Verification Language	book-chapter

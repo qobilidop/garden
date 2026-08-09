@@ -1,0 +1,35 @@
+rank	openalex_id	year	doi	title	venue	type
+1	W114760959	2013	https://doi.org/10.1007/978-3-642-41010-9_4	Boolean Quantifier Elimination for Automotive Configuration – A Case Study	Lecture notes in computer science	conference-paper
+2	W169672073	2007	https://doi.org/10.3233/sat190034	Lazy Satisfiability Modulo Theories	Journal on Satisfiability Boolean Modeling and Computation	article
+3	W185791078	2014	https://doi.org/10.1007/978-3-319-10428-7_38	Incremental QBF Solving	Lecture notes in computer science	conference-paper
+4	W221370897	2011	https://doi.org/10.1007/978-3-642-22110-1_17	Existential Quantification as Incremental SAT	Lecture notes in computer science	conference-paper
+5	W1506660274	2000	https://doi.org/10.1007/3-540-40922-x_22	SAT-Based Image Computation with Application in Reachability Analysis	Lecture notes in computer science	conference-paper
+6	W1513230022	2007	https://doi.org/10.1007/978-3-540-72200-7_23	clasp: A Conflict-Driven Answer Set Solver	Lecture notes in computer science	conference-paper
+7	W1787074469	1999	https://doi.org/10.1007/3-540-49059-0_14	Symbolic Model Checking without BDDs	Lecture notes in computer science	conference-paper
+8	W1820309519	2004	https://doi.org/10.1007/978-3-540-30494-4_20	Memory Efficient All-Solutions SAT Solver and Its Application for Reachability Analysis	Lecture notes in computer science	conference-paper
+9	W1878475345	2013	https://doi.org/10.1007/978-3-642-40196-1_16	SAT-Based Analysis and Quantification of Information Flow in Programs	Lecture notes in computer science	conference-paper
+10	W2021874124	2013	https://doi.org/10.1007/s00224-013-9447-2	Compact DSOP and Partial DSOP Forms	Theory of Computing Systems	article
+11	W2039585983	2008	https://doi.org/10.1007/s10817-008-9114-5	Backdoor Sets of Quantified Boolean Formulas	Journal of Automated Reasoning	article
+12	W2044560939	1999	https://doi.org/10.1109/12.769433	GRASP: a search algorithm for propositional satisfiability	IEEE Transactions on Computers	article
+13	W2057361103	1962	https://doi.org/10.1145/368273.368557	A machine program for theorem-proving	Communications of the ACM	article
+14	W2062897452	1960	https://doi.org/10.1145/321033.321034	A Computing Procedure for Quantification Theory	Journal of the ACM	article
+15	W2100404896	2000	https://doi.org/10.1007/10722167_36	Tuning SAT Checkers for Bounded Model Checking	Lecture notes in computer science	conference-paper
+16	W2111265695	2003	https://doi.org/10.5555/789083.1022826	Efficient Preimage Computation Using A Novel Success-Driven ATPG		article
+17	W2118622620	2016	https://doi.org/10.1145/2975585	Implementing Efficient All Solutions SAT Solvers	ACM Journal of Experimental Algorithmics	article
+18	W2126626789	2006	https://doi.org/10.1007/11817963_39	SMT Techniques for Fast Predicate Abstraction	Lecture notes in computer science	conference-paper
+19	W2142785340	2001	https://doi.org/10.1145/378239.379017	Chaff		conference-paper
+20	W2151398141	2002	https://doi.org/10.1007/3-540-45657-0_19	Applying SAT Methods in Unbounded Symbolic Model Checking	Lecture notes in computer science	conference-paper
+21	W2171471221	2004		A Novel SAT All-Solutions Solver for Efficient Preimage Computation		article
+22	W2526677161	2016	https://doi.org/10.1145/2934466.2934478	Exploiting the enumeration of all feature model configurations		conference-paper
+23	W2741018875	2017	https://doi.org/10.24963/ijcai.2017/100	Efficient Weighted Model Integration via SMT-Based Predicate Abstraction		conference-paper
+24	W2808288800	2018	https://doi.org/10.1613/jair.1.11201	An Exhaustive DPLL Algorithm for Model Counting	Journal of Artificial Intelligence Research	article
+25	W2811313511	2018	https://doi.org/10.1007/978-3-319-94418-0_27	Computing with SAT Oracles: Past, Present and Future	Lecture notes in computer science	conference-paper
+26	W2830979276	2018	https://doi.org/10.1109/ddecs.2018.00028	Augmenting All Solution SAT Solving for Circuits with Structural Information		conference-paper
+27	W2904298505	2018	https://doi.org/10.1109/ictai.2018.00111	Dualizing Projected Model Counting		conference-paper
+28	W2904953947	2019	https://doi.org/10.1609/aaai.v33i01.33011536	A Recursive Algorithm for Projected Model Counting	Proceedings of the AAAI Conference on Artificial Intelligence	conference-paper
+29	W2911399329	2017		An Abstract Dual Propositional Model Counter.		article
+30	W2937129136	2019	https://doi.org/10.1016/j.artint.2019.04.003	Advanced SMT techniques for weighted model integration	Artificial Intelligence	article
+31	W2996781639	2019	https://doi.org/10.29007/vgg4	Combining Conflict-Driven Clause Learning and Chronological Backtracking for Propositional Model Counting	EPiC series in computing	conference-paper
+32	W3009128102	2020	https://doi.org/10.48550/arxiv.2003.04225	Are You Satisfied by This Partial Assignment?	arXiv (Cornell University)	preprint
+33	W4243217271	2019	https://doi.org/10.1007/978-3-030-24258-9_18	Backing Backtracking	Lecture notes in computer science	conference-paper
+34	W4246783757	2018	https://doi.org/10.1007/978-3-319-94144-8_7	Chronological Backtracking	Lecture notes in computer science	conference-paper

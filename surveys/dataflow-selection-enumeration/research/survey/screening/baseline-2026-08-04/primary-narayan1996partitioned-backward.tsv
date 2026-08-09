@@ -1,0 +1,30 @@
+rank	source_id	year	doi	title	venue	type
+1	citation-1	1978		Binary Decision Diagrams	IEEE Transactions on Computers	article
+2	citation-2	1991		Boolean Satisfiability and Equivalence Checking Using General Binary Decision Diagrams	ICCD 1991	proceedings-article
+3	citation-3	1980		Equivalence of Free Boolean Graphs Can Be Decided Probabilistically in Polynomial Time	Information Processing Letters	article
+4	citation-4	1996		Personal Communication, Manuscript	unpublished	manuscript
+5	citation-5	1990		Efficient Implementation of a BDD Package	DAC 1990	proceedings-article
+6	10.1109/TC.1986.1676819	1986	10.1109/TC.1986.1676819	Graph-Based Algorithms for Boolean Function Manipulation	IEEE Transactions on Computers	article
+7	citation-7	1991		On the Complexity of VLSI Implementations and Graph Representations of Boolean Functions with Application to Integer Multiplication	IEEE Transactions on Computers	article
+8	citation-8	1995		Binary Decision Diagrams and Beyond: Enabling Technologies for Formal Verification	ICCAD 1995	proceedings-article
+9	citation-9	1991		Symbolic Model Checking with Partitioned Transition Relations	DAC 1991	proceedings-article
+10	citation-10	1992		Symbolic Model Checking: 10^20 States and Beyond	Information and Computation	article
+11	citation-11	1989		Verification of Sequential Machines Based on Symbolic Execution	Workshop on Automatic Verification Methods for Finite State Systems	proceedings-article
+12	citation-12	1994		Efficient Representation and Manipulation of Switching Functions Based on Ordered Kronecker Functional Decision Diagrams	DAC 1994	proceedings-article
+13	citation-13	1978		The Complexity of Equivalence and Containment for Free Single Variable Program Schemes	Lecture Notes in Computer Science 62	book-chapter
+14	10.1109/12.324566	1994	10.1109/12.324566	Efficient Boolean Manipulation with OBDDs Can Be Extended to FBDDs	IEEE Transactions on Computers	article
+15	citation-15	1992		Functional Partitioning for Verification and Related Problems	Brown/MIT VLSI Conference	proceedings-article
+16	citation-16	1992		Probabilistic Verification of Boolean Functions	Formal Methods in System Design	article
+17	citation-17	1995		Advanced Verification Techniques Based on Learning	DAC 1995	proceedings-article
+18	citation-18	1996		Decomposition Techniques for Efficient ROBDD Construction	Formal Methods in CAD 1996	proceedings-article
+19	citation-19	1992		Multilevel Logic Synthesis Based on Functional Decision Diagrams	European DAC 1992	proceedings-article
+20	citation-20	1990		A Parallel Algorithm for Constructing Binary Decision Diagrams	ICCD 1990	proceedings-article
+21	citation-21	1988		Logic Verification Using Binary Decision Diagrams in a Logic Synthesis Environment	ICCAD 1988	proceedings-article
+22	citation-22	1993		Zero-Suppressed BDDs for Set Manipulation in Combinatorial Problems	DAC 1993	proceedings-article
+23	citation-23	1995		Overcoming Memory Constraints in ROBDD Construction by Functional Decomposition and Partitioning	UC Berkeley Electronics Research Laboratory	report
+24	citation-24	1996		A Study of Composition Schemes for Mixed Apply/Compose Based Construction of ROBDDs	International Conference on VLSI Design 1996	proceedings-article
+25	citation-25	1995		An Improved Data Parallel Algorithm for Boolean Function Manipulation Using BDDs	Euromicro Workshop on Parallel and Distributed Processing 1995	proceedings-article
+26	citation-26	1995		Novel Verification Framework Combining Structural and OBDD Methods in a Synthesis Environment	DAC 1995	proceedings-article
+27	citation-27	1993		Dynamic Variable Ordering for Ordered Binary Decision Diagrams	ICCAD 1993	proceedings-article
+28	citation-28	1994		Symmetry Detection and Dynamic Variable Ordering of Decision Diagrams	ICCAD 1994	proceedings-article
+29	citation-29	1979		Area-Time Complexity for VLSI	STOC 1979	proceedings-article

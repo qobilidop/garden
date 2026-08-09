@@ -1,0 +1,101 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1360/jos170628	2006	10.1360/jos170628	Symbolic WCET Analysis of Programs Containing Input-Dependent Branches	Journal of Software	journal-article
+2	10.70675/3aae1dacz8e78z4548zb112z283138654eb5	None	10.70675/3aae1dacz8e78z4548zb112z283138654eb5	Efficient tree-based symbolic WCET computation		dissertation
+3	10.1007/978-1-4612-1894-4_37	1997	10.1007/978-1-4612-1894-4_37	Parametric Control of Prosodic Variables by Symbolic Input in TTS Synthesis	Progress in Speech Synthesis	book-chapter
+4	10.1109/cgo.2006.1	None	10.1109/cgo.2006.1	2D-Profiling: Detecting Input-Dependent Branches with a Single Input Data Set	International Symposium on Code Generation and Optimization (CGO'06)	proceedings-article
+5	10.14236/ewic/vecos2008.12	2008	10.14236/ewic/vecos2008.12	Computing WCET using symbolic execution	Electronic Workshops in Computing	proceedings-article
+6	10.1109/icecs.2008.4674877	2008	10.1109/icecs.2008.4674877	Tighter WCET analysis of input dependent programs with classified-cache memory architecture	2008 15th IEEE International Conference on Electronics, Circuits and Systems	proceedings-article
+7	10.33235/wcet.42.4.41-47	2022	10.33235/wcet.42.4.41-47	The meaning of diabetes for individuals who develop diabetic foot ulcer: a qualitative study informed by social constructivism and symbolic interactionism frameworks	WCET Journal	journal-article
+8	10.1007/springerreference_26147	None	10.1007/springerreference_26147	symbolic input-output assignment	SpringerReference	reference-entry
+9	10.1145/1629335.1629354	2009	10.1145/1629335.1629354	Symbolic state traversal for WCET analysis	Proceedings of the seventh ACM international conference on Embedded software	proceedings-article
+10	10.33235/wcet	None	10.33235/wcet	WCET Journal		journal
+11	10.33235/wcet.44	None	10.33235/wcet.44		WCET Journal	journal-volume
+12	10.33235/wcet.39.3.8	2019	10.33235/wcet.39.3.8	Around the WCET® world – International Collaboration	WCET Journal	journal-article
+13	10.33235/wcet.45	None	10.33235/wcet.45		WCET Journal	journal-volume
+14	10.33235/wcet.43	None	10.33235/wcet.43		WCET Journal	journal-volume
+15	10.33235/wcet.44.3	2024	10.33235/wcet.44.3		WCET Journal	journal-issue
+16	10.33235/wcet.40.2	2020	10.33235/wcet.40.2		WCET Journal	journal-issue
+17	10.1145/2038642.2038692	2011	10.1145/2038642.2038692	Symbolic simulation on complicated loops for WCET path analysis	Proceedings of the ninth ACM international conference on Embedded software	proceedings-article
+18	10.33235/wcet.45.1	2025	10.33235/wcet.45.1		WCET Journal	journal-issue
+19	10.33235/wcet.44.4	2024	10.33235/wcet.44.4		WCET Journal	journal-issue
+20	10.33235/wcet.40.4	2020	10.33235/wcet.40.4		WCET Journal	journal-issue
+21	10.33235/wcet.43.4.7	2023	10.33235/wcet.43.4.7	WCET®: Global connectedness – common issues and proposed solutions	WCET Journal	journal-article
+22	10.33235/wcet.40	None	10.33235/wcet.40		WCET Journal	journal-volume
+23	10.1016/s0747-7171(03)00072-5	2003	10.1016/s0747-7171(03)00072-5	Computing all parametric solutions for blending parametric surfaces	Journal of Symbolic Computation	journal-article
+24	10.33235/wcet.39.1	2019	10.33235/wcet.39.1		WCET Journal	journal-issue
+25	10.33235/wcet.41	None	10.33235/wcet.41		WCET Journal	journal-volume
+26	10.33235/wcet.39	None	10.33235/wcet.39		WCET Journal	journal-volume
+27	10.33235/wcet.45.1.7	None	10.33235/wcet.45.1.7		WCET Journal	journal-volume
+28	10.33235/wcet.41.4	2021	10.33235/wcet.41.4		WCET Journal	journal-issue
+29	10.33235/wcet.40.3	2020	10.33235/wcet.40.3		WCET Journal	journal-issue
+30	10.33235/wcet.42.3.42-47	2022	10.33235/wcet.42.3.42-47	Selected abstracts from the 23rd Biennial WCET® Congress in Fort Worth, Texas	WCET Journal	journal-article
+31	10.1109/date.2003.1186386	None	10.1109/date.2003.1186386	Exact high level WCET analysis of synchronous programs by symbolic state space exploration	2003 Design, Automation and Test in Europe Conference and Exhibition	proceedings-article
+32	10.1109/date.2003.1253608	None	10.1109/date.2003.1253608	Exact high level WCET analysis of synchronous programs by symbolic state space exploration	2003 Design, Automation and Test in Europe Conference and Exhibition	proceedings-article
+33	10.33235/wcet.42.1.7-8	2022	10.33235/wcet.42.1.7-8	Recognition	WCET Journal	journal-article
+34	10.33235/wcet.42	None	10.33235/wcet.42		WCET Journal	journal-volume
+35	10.33235/wcet.43.3	2023	10.33235/wcet.43.3		WCET Journal	journal-issue
+36	10.33235/wcet.45.2	2025	10.33235/wcet.45.2		WCET Journal	journal-issue
+37	10.33235/wcet.39.2	2019	10.33235/wcet.39.2		WCET Journal	journal-issue
+38	10.1016/j.sysarc.2010.06.009	2011	10.1016/j.sysarc.2010.06.009	An efficient algorithm for parametric WCET calculation	Journal of Systems Architecture	journal-article
+39	10.33235/wcet.43.1	2023	10.33235/wcet.43.1		WCET Journal	journal-issue
+40	10.33235/wcet.44.4.39-47	2024	10.33235/wcet.44.4.39-47	Selected abstracts from the 24th Biennial WCET® Congress in Glasgow, UK	WCET Journal	journal-article
+41	10.33235/wcet.39.3	2019	10.33235/wcet.39.3		WCET Journal	journal-issue
+42	10.33235/wcet.44.1	2024	10.33235/wcet.44.1		WCET Journal	journal-issue
+43	10.33235/wcet.45.1.34-40	2025	10.33235/wcet.45.1.34-40	Selected abstracts from the 24th Biennial WCET® Congress in Glasgow, UK	WCET Journal	journal-article
+44	10.33235/wcet.41.2	2021	10.33235/wcet.41.2		WCET Journal	journal-issue
+45	10.33235/wcet.40.1	2020	10.33235/wcet.40.1		WCET Journal	journal-issue
+46	10.1145/3147413	2018	10.1145/3147413	Symbolic WCET Computation	ACM Transactions on Embedded Computing Systems	journal-article
+47	10.33235/wcet.41.2.10-21	2021	10.33235/wcet.41.2.10-21	Practice Implications from the WCET® International Ostomy Guideline 2020	WCET Journal	journal-article
+48	10.33235/wcet.41.3	2021	10.33235/wcet.41.3		WCET Journal	journal-issue
+49	10.33235/wcet.42.3	2022	10.33235/wcet.42.3		WCET Journal	journal-issue
+50	10.33235/wcet.43.4	2023	10.33235/wcet.43.4		WCET Journal	journal-issue
+51	10.33235/wcet.44.3.8	2024	10.33235/wcet.44.3.8	Giving two minutes of time	WCET Journal	journal-article
+52	10.33235/wcet.42.2	2022	10.33235/wcet.42.2		WCET Journal	journal-issue
+53	10.1007/978-3-642-29709-0_20	2012	10.1007/978-3-642-29709-0_20	Symbolic Loop Bound Computation for WCET Analysis	Lecture Notes in Computer Science	book-chapter
+54	10.33235/wcet.40.4.12-17	2020	10.33235/wcet.40.4.12-17	Results of the WCET® 2019 Membership Survey: Implications and planning	WCET Journal	journal-article
+55	10.1109/rtcsa.2009.9	2009	10.1109/rtcsa.2009.9	An Efficient Algorithm for Parametric WCET Calculation	2009 15th IEEE International Conference on Embedded and Real-Time Computing Systems and Applications	proceedings-article
+56	10.33235/wcet.44.2.7	2024	10.33235/wcet.44.2.7	Gifted and giving	WCET Journal	journal-article
+57	10.33235/wcet.39.4	2019	10.33235/wcet.39.4		WCET Journal	journal-issue
+58	10.33235/wcet.41.1.6	2021	10.33235/wcet.41.1.6	Recognising resilience	WCET Journal	journal-article
+59	10.33235/wcet.42.1	2022	10.33235/wcet.42.1		WCET Journal	journal-issue
+60	10.33235/wcet.42.4	2022	10.33235/wcet.42.4		WCET Journal	journal-issue
+61	10.33235/wcet.39.3.6-7	2019	10.33235/wcet.39.3.6-7	WCET® Journal: Embracing multi-lingual exposure to enhance global inclusiveness	WCET Journal	journal-article
+62	10.33235/wcet.44.3.7	2024	10.33235/wcet.44.3.7	Shared expertise informing practice	WCET Journal	journal-article
+63	10.33235/wcet.41.1	2021	10.33235/wcet.41.1		WCET Journal	journal-issue
+64	10.33235/wcet.44.2	2024	10.33235/wcet.44.2		WCET Journal	journal-issue
+65	10.1016/j.jsc.2019.11.002	2021	10.1016/j.jsc.2019.11.002	Necklaces count polynomial parametric osculants	Journal of Symbolic Computation	journal-article
+66	10.33235/wcet.39.2.42-43	2019	10.33235/wcet.39.2.42-43	Vale: Patricia Blackley	WCET Journal	journal-article
+67	10.33235/wcet.41.2.6	2021	10.33235/wcet.41.2.6	Synthesising evidence	WCET Journal	journal-article
+68	10.33235/wcet.43.2	2023	10.33235/wcet.43.2		WCET Journal	journal-issue
+69	10.1016/j.jsc.2008.09.003	2009	10.1016/j.jsc.2008.09.003	Analytic classification of plane branches up to multiplicity 4	Journal of Symbolic Computation	journal-article
+70	10.1016/j.jsc.2012.08.003	2013	10.1016/j.jsc.2012.08.003	Algorithms for the implementation of the analytic classification of plane branches	Journal of Symbolic Computation	journal-article
+71	10.36227/techrxiv.176583441.14882602/v1	2025	10.36227/techrxiv.176583441.14882602/v1	Extracting Predictable Structure from Prime Numbers via Parametric Symbolic Encoding		posted-content
+72	10.33235/wcet.42.1.sup.s3-4	2022	10.33235/wcet.42.1.sup.s3-4	Editorial	WCET Journal	journal-article
+73	10.33235/wcet.42.4.7	2022	10.33235/wcet.42.4.7	Reaffirmation	WCET Journal	journal-article
+74	10.1016/j.jsc.2016.12.006	2017	10.1016/j.jsc.2016.12.006	Parametric FGLM algorithm	Journal of Symbolic Computation	journal-article
+75	10.33235/wcet.44.3.sup.s2	2024	10.33235/wcet.44.3.sup.s2	Evolution and evidence in convexity	WCET Journal	journal-article
+76	10.1007/3-540-26842-1_7	None	10.1007/3-540-26842-1_7	Parametric Problems	Algorithms and Computation in Mathematics	book-chapter
+77	10.33235/wcet.40.1.6	2020	10.33235/wcet.40.1.6	Life’s challenges: together we can win	WCET Journal	journal-article
+78	10.33235/wcet.41.4.7	2021	10.33235/wcet.41.4.7	Great expectations	WCET Journal	journal-article
+79	10.1142/9781848161313_0039	2003	10.1142/9781848161313_0039	Constructing Branches of Solutions of Nonlinear PDE's	Challenging the Boundaries of Symbolic Computation	proceedings-article
+80	10.1016/j.jsc.2022.07.006	2023	10.1016/j.jsc.2022.07.006	An extended GCRD algorithm for parametric univariate polynomial matrices and application to parametric Smith form	Journal of Symbolic Computation	journal-article
+81	10.1109/tc.2012.114	2013	10.1109/tc.2012.114	Petri Net-Based FTL Architecture for Parametric WCET Estimation via FTL Operation Sequence Derivation	IEEE Transactions on Computers	journal-article
+82	10.1016/j.sysarc.2024.103086	2024	10.1016/j.sysarc.2024.103086	Parametric WCET as a function of procedure arguments: Analysis and applications	Journal of Systems Architecture	journal-article
+83	10.1016/j.jsc.2006.02.008	2007	10.1016/j.jsc.2006.02.008	Standard bases for local rings of branches and their modules of differentials	Journal of Symbolic Computation	journal-article
+84	10.33235/wcet.42.3.30-33	2022	10.33235/wcet.42.3.30-33	Descriptive presentation of wound care data	WCET Journal	journal-article
+85	10.33235/wcet.39.1.40	2019	10.33235/wcet.39.1.40	Neuropathic Limb Care	WCET Journal	journal-article
+86	10.33235/wcet.44.4.7	2024	10.33235/wcet.44.4.7	Sustaining the legacy	WCET Journal	journal-article
+87	10.33235/wcet.43.3.7	2023	10.33235/wcet.43.3.7	Ingenuity: out of necessity	WCET Journal	journal-article
+88	10.33235/wcet.40.4.9	2020	10.33235/wcet.40.4.9	Guest editorial	WCET Journal	journal-article
+89	10.1007/978-3-642-24349-3_6	2012	10.1007/978-3-642-24349-3_6	Improving the Precision of WCET Analysis by Input Constraints and Model-Derived Flow Constraints	Advances in Real-Time Systems	book-chapter
+90	10.1016/j.jsc.2007.01.007	2007	10.1016/j.jsc.2007.01.007	Solving parametric polynomial systems	Journal of Symbolic Computation	journal-article
+91	10.33235/wcet.42.2.7	2022	10.33235/wcet.42.2.7	Bespoke approaches to wound management	WCET Journal	journal-article
+92	10.33235/wcet.43.4.20-26	2023	10.33235/wcet.43.4.20-26	WCET® 2023 membership survey results: reviewing the past and planning the future	WCET Journal	journal-article
+93	10.33235/wcet.42.1.sup.s5-7	2022	10.33235/wcet.42.1.sup.s5-7	The importance of pouching system barrier fit	WCET Journal	journal-article
+94	10.33235/wcet.44.3.26-30	2024	10.33235/wcet.44.3.26-30	WHAM evidence summary: potassium permanganate (Condy’s crystals)	WCET Journal	journal-article
+95	10.33235/wcet.44.1.44-48	2024	10.33235/wcet.44.1.44-48	WHAM evidence summary: fish skin for treating burns	WCET Journal	journal-article
+96	10.1049/ic:19960513	1996	10.1049/ic:19960513	The application of symbolic computation in the analysis of systems having parametric uncertainty	IEE Colloquium on Symbolic Computation for Control	proceedings-article
+97	10.1016/j.jsc.2024.102353	2025	10.1016/j.jsc.2024.102353	Orthogonal-symplectic matrices and their parametric representation	Journal of Symbolic Computation	journal-article
+98	10.1016/s0747-7171(03)00068-3	2003	10.1016/s0747-7171(03)00068-3	Implicitization of differential rational parametric equations	Journal of Symbolic Computation	journal-article
+99	10.1006/jsco.1996.0079	1997	10.1006/jsco.1996.0079	Special Issue on Parametric Algebraic Curves and Applications	Journal of Symbolic Computation	journal-article
+100	10.33235/wcet.42.1.34-39	2022	10.33235/wcet.42.1.34-39	WHAM evidence summary: Papaya-based products for treating wounds	WCET Journal	journal-article

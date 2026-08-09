@@ -1,0 +1,101 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1109/snr.2016.7479381	2016	10.1109/snr.2016.7479381	Model reduction of discrete time hybrid systems: A structural approach based on observability	2016 International Workshop on Symbolic and Numerical Methods for Reachability Analysis (SNR)	proceedings-article
+2	10.1109/synasc.2011.16	2011	10.1109/synasc.2011.16	Reachability Analysis of Time Basic Petri Nets: A Time Coverage Approach	2011 13th International Symposium on Symbolic and Numeric Algorithms for Scientific Computing	proceedings-article
+3	10.1109/reldis.2002.1180176	None	10.1109/reldis.2002.1180176	Service time optimal self-stabilizing token circulation protocol on anonymous undirectional rings	21st IEEE Symposium on Reliable Distributed Systems, 2002. Proceedings.	proceedings-article
+4	10.3724/sp.j.1001.2008.03111	2009	10.3724/sp.j.1001.2008.03111	Symbolic Reachability Analysis of Hybrid Systems	Journal of Software	journal-article
+5	10.70675/f273f52az0906z443cza443z172023a62cf5	None	10.70675/f273f52az0906z443cza443z172023a62cf5	Automatic Symbolic Goal Abstraction via Reachability Analysis in Hierarchical Reinforcement Learning		dissertation
+6	10.1109/snr39519.2016	2016	10.1109/snr39519.2016	2016 International Workshop on Symbolic and Numerical Methods for Reachability Analysis (SNR)		proceedings
+7	10.1109/rtss52674.2021.00061	2021	10.1109/rtss52674.2021.00061	Work-in-Progress: Partial-Order Reduction in Reachability-Based Response-Time Analyses	2021 IEEE Real-Time Systems Symposium (RTSS)	proceedings-article
+8	10.1007/978-3-642-15349-5_2	2010	10.1007/978-3-642-15349-5_2	Symbolic and Compositional Reachability for Timed Automata	Lecture Notes in Computer Science	book-chapter
+9	10.1109/snr.2016.7479375	2016	10.1109/snr.2016.7479375	Copyright	2016 International Workshop on Symbolic and Numerical Methods for Reachability Analysis (SNR)	proceedings-article
+10	10.1007/978-3-319-40648-0_20	2016	10.1007/978-3-319-40648-0_20	Bandwidth and Wavefront Reduction for Static Variable Ordering in Symbolic Reachability Analysis	Lecture Notes in Computer Science	book-chapter
+11	10.1006/jsco.2001.0472	2001	10.1006/jsco.2001.0472	Symbolic Reachability Computation for Families of Linear Vector Fields	Journal of Symbolic Computation	journal-article
+12	10.29007/249v	None	10.29007/249v	Symbolic-Numeric Reachability Analysis of Hybrid Systems	EPiC Series in Computing	proceedings-article
+13	10.1109/snr.2016.7479374	2016	10.1109/snr.2016.7479374	Front cover	2016 International Workshop on Symbolic and Numerical Methods for Reachability Analysis (SNR)	proceedings-article
+14	10.1016/j.tcs.2017.01.015	2017	10.1016/j.tcs.2017.01.015	Symbolic optimal expected time reachability computation and controller synthesis for probabilistic timed automata	Theoretical Computer Science	journal-article
+15	10.1007/s11241-023-09398-x	2023	10.1007/s11241-023-09398-x	Partial-order reduction in reachability-based response-time analyses of limited-preemptive DAG tasks	Real-Time Systems	journal-article
+16	10.1109/icassp55912.2026.11462860	2026	10.1109/icassp55912.2026.11462860	Time-Shifted Token Scheduling for Symbolic Music Generation	ICASSP 2026 - 2026 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)	proceedings-article
+17	10.7717/peerjcs.1165/fig-14	None	10.7717/peerjcs.1165/fig-14	Figure 14: Token creation time.		component
+18	10.1002/9781119619727.ch12	2020	10.1002/9781119619727.ch12	Symbolic Heuristic Search	Supervisory Control and Scheduling of Resource Allocation Systems	other
+19	10.1016/j.jsc.2011.12.051	2012	10.1016/j.jsc.2011.12.051	Applying abstract acceleration to (co-)reachability analysis of reactive programs	Journal of Symbolic Computation	journal-article
+20	10.55056/ceur-ws.org/vol-1356/paper_74.pdf	2015	10.55056/ceur-ws.org/vol-1356/paper_74.pdf	An Interleaving Reduction for Reachability Checking in Symbolic Modeling	CEUR Workshop Proceedings, Vol-1356: Proceedings of the 11th International Conference on ICT in Education, Research and Industrial Applications: Integration, Harmonization and Knowledge Transfer	proceedings-article
+21	10.1007/s10009-007-0057-7	2008	10.1007/s10009-007-0057-7	Efficient guided symbolic reachability using reachability expressions	International Journal on Software Tools for Technology Transfer	journal-article
+22	10.1007/11691372_8	2006	10.1007/11691372_8	Efficient Guided Symbolic Reachability Using Reachability Expressions	Lecture Notes in Computer Science	book-chapter
+23	10.2139/ssrn.5626374	2025	10.2139/ssrn.5626374	Cached Adaptive Token Merging: Dynamic Token Reduction and Redundant Computation Elimination in Diffusion Model		posted-content
+24	10.70675/2a748ed0zfe97z4094z8555z32dc5f68fb7c	None	10.70675/2a748ed0zfe97z4094z8555z32dc5f68fb7c	Reachability analysis with Lebesgue-integrable time-varying uncertainties		dissertation
+25	10.1007/0-387-23905-7_12	None	10.1007/0-387-23905-7_12	Hierarchical Symbolic Analysis and Hierarchical Model Order Reduction	Symbolic Analysis and Reduction of VLSI Circuits	book-chapter
+26	10.1016/b978-1-85617-094-9.50030-x	1991	10.1016/b978-1-85617-094-9.50030-x	Time Domain Reflectometry Applications For Token-Ring Networks	Token Ring Technology Report	book-chapter
+27	10.1016/s1474-6670(17)40040-1	1998	10.1016/s1474-6670(17)40040-1	Symbolic Reachability Analysis of Hybrid Systems	IFAC Proceedings Volumes	journal-article
+28	10.2307/j.ctt46nsdj.58	None	10.2307/j.ctt46nsdj.58	A Token Effort	In Another Time	book-chapter
+29	10.1109/wodes.2008.4605965	2008	10.1109/wodes.2008.4605965	Synthesis of controllers using symbolic reachability graphs	2008 9th International Workshop on Discrete Event Systems	proceedings-article
+30	10.1016/j.automatica.2021.109543	2021	10.1016/j.automatica.2021.109543	Least-violating symbolic controller synthesis for safety, reachability and attractivity specifications	Automatica	journal-article
+31	10.1109/snr.2016.7479380	2016	10.1109/snr.2016.7479380	Computing ODE-barriers in hyper-rectangles	2016 International Workshop on Symbolic and Numerical Methods for Reachability Analysis (SNR)	proceedings-article
+32	10.2139/ssrn.4988357	2024	10.2139/ssrn.4988357	Symbolic Ownership and Limited Power: A Comparative Analysis of Green Bay Packers Stock and WLFI Governance Token		posted-content
+33	10.55277/researchhub.kf4nn2y9	2026	10.55277/researchhub.kf4nn2y9	Is Liberty Token Legit or a Scam? My Honest Review — Is It Just Another Symbolic Product Hype or Real?		report
+34	10.1007/s10990-007-9000-6	2007	10.1007/s10990-007-9000-6	Symbolic reachability analysis using narrowing and its application to verification of cryptographic protocols	Higher-Order and Symbolic Computation	journal-article
+35	10.1017/cbo9781139207799.006	2012	10.1017/cbo9781139207799.006	Token Causality	Causality, Probability, and Time	book-chapter
+36	10.12681/eadd/41151	None	10.12681/eadd/41151	Modeling, reachability and observability of linear multivariable discrete time systems		dissertation
+37	10.1109/cng.1984.680773	None	10.1109/cng.1984.680773	Comparison Of Token Holding Time Strategies For A Static Token Passing Bus	Proceedings Computer Networking Symposium, 1984.	proceedings-article
+38	10.1109/synasc.2018.00066	2018	10.1109/synasc.2018.00066	Proving Reachability Properties by Coinduction (Extended Abstract)	2018 20th International Symposium on Symbolic and Numeric Algorithms for Scientific Computing (SYNASC)	proceedings-article
+39	10.1109/date.2003.1253707	None	10.1109/date.2003.1253707	Set manipulation with Boolean functional vectors for symbolic reachability analysis	2003 Design, Automation and Test in Europe Conference and Exhibition	proceedings-article
+40	10.1109/access.2022.3190527	2022	10.1109/access.2022.3190527	A State-Equation-Based Method to Non-Reachability Analysis of Ordinary Petri Nets With Token-Free Circuit-Based Subnets	IEEE Access	journal-article
+41	10.1109/ihmsc.2018.00095	2018	10.1109/ihmsc.2018.00095	An Efficient Algorithm in Anonymous Social Network with Reachability Preservation	2018 10th International Conference on Intelligent Human-Machine Systems and Cybernetics (IHMSC)	proceedings-article
+42	10.1007/978-3-642-24288-5_19	2011	10.1007/978-3-642-24288-5_19	A Fully Symbolic Bisimulation Algorithm	Lecture Notes in Computer Science	book-chapter
+43	10.7330/9780874213669.c064	1998	10.7330/9780874213669.c064	A TOKEN EFFORT	In Another Time	book-chapter
+44	10.1109/sbcci.1998.715422	None	10.1109/sbcci.1998.715422	A co-synthesis approach based on symbolic reachability analysis	Proceedings. XI Brazilian Symposium on Integrated Circuit Design (Cat. No.98EX216)	proceedings-article
+45	10.1109/icra55743.2025.11128095	2025	10.1109/icra55743.2025.11128095	RM4D: A Combined Reachability and Inverse Reachability Map for Common 6-/7-Axis Robot Arms by Dimensionality Reduction to 4D	2025 IEEE International Conference on Robotics and Automation (ICRA)	proceedings-article
+46	10.33612/diss.812183357	None	10.33612/diss.812183357	Singular Switched Systems in Discrete Time: Solvability, Observability, and Reachability Notions		dissertation
+47	10.1201/b19258-32	2016	10.1201/b19258-32	Finite Reachability Time Tracking	Nonlinear Systems Tracking	book-chapter
+48	10.2168/lmcs-4(4:14)2008	2008	10.2168/lmcs-4(4:14)2008	Symbolic Backwards-Reachability Analysis for Higher-Order Pushdown Systems	Logical Methods in Computer Science	journal-article
+49	10.1109/icinfa.2009.5205124	2009	10.1109/icinfa.2009.5205124	Symbolic reachability computation of a class of second-order systems	2009 International Conference on Information and Automation	proceedings-article
+50	10.1109/rttas.1996.509535	None	10.1109/rttas.1996.509535	Scalable compositional reachability analysis of real-time concurrent systems	Proceedings Real-Time Technology and Applications	proceedings-article
+51	10.1080/00207179.2010.543703	2011	10.1080/00207179.2010.543703	Complexity reduction through a Schur-based decomposition for reachability analysis of linear time-invariant systems	International Journal of Control	journal-article
+52	10.1163/9789004617179_011	1994	10.1163/9789004617179_011	Music and Number in Token of the Holy Virgin	Symbolic Scores	book-chapter
+53	10.7717/peerj-cs.3029/fig-4	None	10.7717/peerj-cs.3029/fig-4	Figure 4: Percentage change in execution time with dynamic token mechanism.		component
+54	10.1109/snr.2016.7479378	2016	10.1109/snr.2016.7479378	Software certification of airborne cyber-physical systems under DO-178C	2016 International Workshop on Symbolic and Numerical Methods for Reachability Analysis (SNR)	proceedings-article
+55	10.1103/ynm6-znr4	2026	10.1103/ynm6-znr4	Generalized parton distributions from symbolic regression	Physical Review D	journal-article
+56	10.14264/uql.2018.637	None	10.14264/uql.2018.637	A Study on Time-Dependent Reachability and Route Scheduling in Road Network		dissertation
+57	10.1007/978-3-642-02652-2_17	2009	10.1007/978-3-642-02652-2_17	Subsumer-First: Steering Symbolic Reachability Analysis	Lecture Notes in Computer Science	book-chapter
+58	10.1007/978-3-642-84524-6_13	1991	10.1007/978-3-642-84524-6_13	On Well-Formed Coloured Nets and Their Symbolic Reachability Graph	High-level Petri Nets	book-chapter
+59	10.1525/si.1996.19.3.203	1996	10.1525/si.1996.19.3.203	Narrative Mapping of Social Worlds: The Voice of Experience in Alcoholics Anonymous	Symbolic Interaction	journal-article
+60	10.1109/ismvl49045.2020.00-34	2020	10.1109/ismvl49045.2020.00-34	Symbolic Algorithms for Token Swapping	2020 IEEE 50th International Symposium on Multiple-Valued Logic (ISMVL)	proceedings-article
+61	10.1109/iscc53001.2021.9631259	2021	10.1109/iscc53001.2021.9631259	Holder-of-key threshold access token for anonymous data resources	2021 IEEE Symposium on Computers and Communications (ISCC)	proceedings-article
+62	10.1007/0-387-23905-7_3	None	10.1007/0-387-23905-7_3	Model-Order Reduction	Symbolic Analysis and Reduction of VLSI Circuits	book-chapter
+63	10.1007/bf01088620	1994	10.1007/bf01088620	Conventional and early token release scheduling models for the IEEE 802.5 token ring	Real-Time Systems	journal-article
+64	10.1016/j.tcs.2006.07.008	2006	10.1016/j.tcs.2006.07.008	Complete symbolic reachability analysis using back-and-forth narrowing	Theoretical Computer Science	journal-article
+65	10.1103/t156-vypq	2026	10.1103/t156-vypq	Symbolic regression of GW quasiparticle corrections	Physical Review B	journal-article
+66	10.1109/iccad.2006.320120	2006	10.1109/iccad.2006.320120	Decomposing Image Computation for Symbolic Reachability Analysis Using Control Flow Information	2006 IEEE/ACM International Conference on Computer Aided Design	proceedings-article
+67	10.1109/hldvt.2010.5496663	2010	10.1109/hldvt.2010.5496663	An improvement in decomposed reachability analysis for symbolic model checking	2010 IEEE International High Level Design Validation and Test Workshop (HLDVT)	proceedings-article
+68	10.1109/icra.2011.5980008	2011	10.1109/icra.2011.5980008	Symbolic reachability computation using the disjunctive partitioning technique in Supervisory Control Theory	2011 IEEE International Conference on Robotics and Automation	proceedings-article
+69	10.4324/9781003516736-23	2024	10.4324/9781003516736-23	Some Effects of Proportions on Group Life: Skewed Sex Ratios and Responses to Token Women1	Women and Symbolic Interaction	book-chapter
+70	10.1016/j.entcs.2008.12.036	2008	10.1016/j.entcs.2008.12.036	A New Algorithm for Partitioned Symbolic Reachability Analysis	Electronic Notes in Theoretical Computer Science	journal-article
+71	10.1109/synasc.2013.58	2013	10.1109/synasc.2013.58	Token Free Bounded Delay Codes and Hash Iteration	2013 15th International Symposium on Symbolic and Numeric Algorithms for Scientific Computing	proceedings-article
+72	10.1007/3-540-44685-0_12	2001	10.1007/3-540-44685-0_12	Symbolic Computation of Maximal Probabilisti Reachability	Lecture Notes in Computer Science	book-chapter
+73	10.2139/ssrn.5148097	2025	10.2139/ssrn.5148097	A New Framework for Bounding Reachability Probabilities of Continuous-Time Stochastic Systems		posted-content
+74	10.1007/0-387-23905-7_9	None	10.1007/0-387-23905-7_9	Exact Symbolic Analysis Using Determinant Decision Diagrams	Symbolic Analysis and Reduction of VLSI Circuits	book-chapter
+75	10.1016/j.ifacol.2021.04.060	2020	10.1016/j.ifacol.2021.04.060	Symbolic Reachability Analysis of High Dimensional Max-Plus Linear Systems	IFAC-PapersOnLine	journal-article
+76	10.1145/3428246	2020	10.1145/3428246	FlowCFL: generalized type-based reachability analysis: graph reduction and equivalence of CFL-based and type-based reachability	Proceedings of the ACM on Programming Languages	journal-article
+77	10.1016/j.procs.2012.04.150	2012	10.1016/j.procs.2012.04.150	Reachability Analysis of Concurrent Boolean Programs with Symbolic Counter Abstraction	Procedia Computer Science	journal-article
+78	10.1007/978-3-319-08867-9_27	2014	10.1007/978-3-319-08867-9_27	Reachability Analysis of Hybrid Systems Using Symbolic Orthogonal Projections	Lecture Notes in Computer Science	book-chapter
+79	10.1016/j.automatica.2007.08.004	2008	10.1016/j.automatica.2007.08.004	Symbolic reachability analysis of genetic regulatory networks using discrete abstractions	Automatica	journal-article
+80	10.1109/tii.2021.3129631	2022	10.1109/tii.2021.3129631	A Time-Sensitive Token-Based Anonymous Authentication and Dynamic Group Key Agreement Scheme for Industry 5.0	IEEE Transactions on Industrial Informatics	journal-article
+81	10.1109/snr.2016.7479382	2016	10.1109/snr.2016.7479382	CSiSAT: A satisfiability solver for SMT formulas with continuous probability distributions	2016 International Workshop on Symbolic and Numerical Methods for Reachability Analysis (SNR)	proceedings-article
+82	10.1145/1993886.1993910	2011	10.1145/1993886.1993910	Deciding reachability of the infimum of a multivariate polynomial	Proceedings of the 36th international symposium on Symbolic and algebraic computation	proceedings-article
+83	10.1109/real.1996.563700	None	10.1109/real.1996.563700	Approximate reachability analysis of timed automata	17th IEEE Real-Time Systems Symposium	proceedings-article
+84	10.5220/0007102305750582	2017	10.5220/0007102305750582	Enhancement Student Activity using Time Token Arends Model on Sociology Subject	2nd International Conference on Sociology Education	proceedings-article
+85	10.1145/307418.307430	1999	10.1145/307418.307430	Symbolic reachability analysis of large finite state machines using don't cares	Proceedings of the conference on Design, automation and test in Europe	proceedings-article
+86	10.1109/icis.2009.146	2009	10.1109/icis.2009.146	Symbolic Reachability Computation of a Class of Nonlinear Systems	2009 Eighth IEEE/ACIS International Conference on Computer and Information Science	proceedings-article
+87	10.12700/aph.11.03.2014.03.13	2014	10.12700/aph.11.03.2014.03.13	On the Reachability of Linear Time Varying Systems	Acta Polytechnica Hungarica	journal-article
+88	10.1007/0-387-23905-7_10	None	10.1007/0-387-23905-7_10	S-Expanded Determinant Decision Diagrams for Symbolic Analysis	Symbolic Analysis and Reduction of VLSI Circuits	book-chapter
+89	10.1016/s0304-3975(99)00033-x	1999	10.1016/s0304-3975(99)00033-x	Symbolic reachability analysis of FIFO-channel systems with nonregular sets of configurations	Theoretical Computer Science	journal-article
+90	10.1109/apsec.1997.640172	None	10.1109/apsec.1997.640172	Finite symbolic reachability graphs for high-level Petri nets	Proceedings of Joint 4th International Computer Science Conference and 4th Asia Pacific Software Engineering Conference	proceedings-article
+91	10.2307/2274958	1990	10.2307/2274958	Reachability is harder for directed than for undirected finite graphs	Journal of Symbolic Logic	journal-article
+92	10.1109/rtss.2008.19	2008	10.1109/rtss.2008.19	Approximate Parameter Synthesis for Probabilistic Time-Bounded Reachability	2008 Real-Time Systems Symposium	proceedings-article
+93	10.1109/snr.2016.7479376	2016	10.1109/snr.2016.7479376	Accurate rigorous simulation should be possible for good designs	2016 International Workshop on Symbolic and Numerical Methods for Reachability Analysis (SNR)	proceedings-article
+94	10.7717/peerj-cs.2428/fig-9	None	10.7717/peerj-cs.2428/fig-9	Figure 9: Experimental results on the variation of model inference time with token size.		component
+95	10.1016/s0304-3975(96)00010-2	1997	10.1016/s0304-3975(96)00010-2	A symbolic reachability graph for coloured petri nets	Theoretical Computer Science	journal-article
+96	10.1109/date.1999.761091	None	10.1109/date.1999.761091	Symbolic reachability analysis of large finite state machines using don't cares	Design, Automation and Test in Europe Conference and Exhibition, 1999. Proceedings (Cat. No. PR00078)	proceedings-article
+97	10.1016/j.scico.2024.103097	2024	10.1016/j.scico.2024.103097	Narrowing and heuristic search for symbolic reachability analysis of concurrent object-oriented systems	Science of Computer Programming	journal-article
+98	10.1145/996566.996790	2004	10.1145/996566.996790	Quantum logic synthesis by symbolic reachability analysis	Proceedings of the 41st annual Design Automation Conference	proceedings-article
+99	10.2178/jsl/1082418537	2004	10.2178/jsl/1082418537	Formalized token models and duality in semantics: an algebraic approach	Journal of Symbolic Logic	journal-article
+100	10.1016/j.entcs.2003.10.004	2004	10.1016/j.entcs.2003.10.004	A Symbolic Procedure for Control Reachability in the Asynchronous π-calculus	Electronic Notes in Theoretical Computer Science	journal-article

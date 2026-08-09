@@ -1,0 +1,82 @@
+rank	source_id	year	doi	title	venue	type
+1	citation-1	2015		The EPFL Combinational Benchmark Suite	International Workshop on Logic & Synthesis	proceedings-article
+2	10.1007/978-3-319-24318-4_10	2015	10.1007/978-3-319-24318-4_10	#∃SAT: Projected Model Counting	SAT 2015	proceedings-article
+3	10.3233/FAIA201017	2021	10.3233/FAIA201017	Satisfiability Modulo Theories	Handbook of Satisfiability	book-chapter
+4	citation-4	1997		Using CSP Look-Back Techniques to Solve Real-World SAT Instances	AAAI 1997	proceedings-article
+5	citation-5	2015		Probabilistic Inference in Hybrid Domains by Weighted Model Integration	IJCAI 2015	proceedings-article
+6	10.1007/s00224-013-9447-2	2013	10.1007/s00224-013-9447-2	Compact DSOP and Partial DSOP Forms	Theory of Computing Systems	article
+7	10.3233/FAIA336	2021	10.3233/FAIA336	Handbook of Satisfiability	IOS Press	book
+8	10.3233/SAT190039	2008	10.3233/SAT190039	PicoSAT Essentials	Journal on Satisfiability, Boolean Modeling and Computation	article
+9	10.3233/SAT190085	2009	10.3233/SAT190085	Successful SAT Encoding Techniques	Journal on Satisfiability, Boolean Modeling and Computation	article
+10	citation-10	2016		A SAT-Based Approach for Mining Association Rules	IJCAI 2016	proceedings-article
+11	10.1016/0747-7171(92)90009-S	1992	10.1016/0747-7171(92)90009-S	An Optimality Result for Clause Form Translation	Journal of Symbolic Computation	article
+12	citation-12	1985		A Neutral Netlist of 10 Combinational Benchmark Circuits and a Target Translator in Fortran	ISCAS 1985	proceedings-article
+13	10.1145/37888.37890	1987	10.1145/37888.37890	COSMOS: A Compiled Simulator for MOS Circuits	DAC 1987	proceedings-article
+14	10.1007/s00236-017-0297-2	2017	10.1007/s00236-017-0297-2	Approximate Counting in SMT and Value Estimation for Probabilistic Programs	Acta Informatica	article
+15	10.1007/978-3-642-36742-7_7	2013	10.1007/978-3-642-36742-7_7	The MathSAT5 SMT Solver	TACAS 2013	proceedings-article
+16	10.1007/978-1-4684-3384-5_11	1978	10.1007/978-1-4684-3384-5_11	Negation as Failure	Logic and Data Bases	book-chapter
+17	10.1023/B:FORM.0000040025.89719.f3	2004	10.1023/B:FORM.0000040025.89719.f3	Predicate Abstraction of ANSI-C Programs Using SAT	Formal Methods in System Design	article
+18	citation-18	2002		A Knowledge Compilation Map	Journal of Artificial Intelligence Research	article
+19	10.1007/978-3-319-47175-4_3	2016	10.1007/978-3-319-47175-4_3	A Comparative Study of SAT-Based Itemsets Mining	Research and Development in Intelligent Systems XXXIII	book-chapter
+20	10.4230/LIPIcs.SAT.2023.9	2023	10.4230/LIPIcs.SAT.2023.9	AllSAT for Combinational Circuits	SAT 2023	proceedings-article
+21	10.4230/LIPIcs.SAT.2024.13	2024	10.4230/LIPIcs.SAT.2024.13	Entailing Generalization Boosts Enumeration	SAT 2024	proceedings-article
+22	citation-22	2015		PySMT: A Solver-Agnostic Library for Fast Prototyping of SMT-Based Algorithms	SMT Workshop 2015	proceedings-article
+23	10.1016/j.tcs.2016.10.019	2018	10.1016/j.tcs.2016.10.019	Computing and Estimating the Volume of the Solution Space of SMT(LA) Constraints	Theoretical Computer Science	article
+24	10.1007/978-3-540-72200-7_13	2007	10.1007/978-3-540-72200-7_13	Conflict-Driven Answer Set Enumeration	LPNMR 2007	proceedings-article
+25	10.3233/FAIA201009	2021	10.3233/FAIA201009	Model Counting	Handbook of Satisfiability	book-chapter
+26	10.1007/978-3-540-30494-4_20	2004	10.1007/978-3-540-30494-4_20	Memory Efficient All-Solutions SAT Solver and Its Application for Reachability Analysis	FMCAD 2004	proceedings-article
+27	10.1109/54.785838	1999	10.1109/54.785838	Unveiling the ISCAS-85 Benchmarks: A Case Study in Reverse Engineering	IEEE Design & Test of Computers	article
+28	10.1007/11527695_13	2004	10.1007/11527695_13	Using DPLL for Efficient OBDD Construction	SAT 2004	proceedings-article
+29	10.1007/978-3-642-39071-5_17	2013	10.1007/978-3-642-39071-5_17	Minimizing Models for Tseitin-Encoded SAT Instances	SAT 2013	proceedings-article
+30	10.1007/978-3-319-11558-0_11	2014	10.1007/978-3-319-11558-0_11	Enumerating Prime Implicants of Propositional Formulae in Conjunctive Normal Form	JELIA 2014	proceedings-article
+31	10.1007/11527695_15	2005	10.1007/11527695_15	Clause Form Conversions for Boolean Circuits	SAT 2004	proceedings-article
+32	citation-32	2014		Automated Analysis and Debugging of Network Connectivity Policies	Microsoft Research	report
+33	10.1007/978-3-540-31980-1_19	2005	10.1007/978-3-540-31980-1_19	Efficient Conflict Analysis for Finding All Satisfying Assignments of a Boolean Circuit	TACAS 2005	proceedings-article
+34	citation-34	2005		Prime Clauses for Fast Enumeration of Satisfying Assignments to Boolean Circuits	DAC 2005	proceedings-article
+35	10.1007/978-3-540-24605-3_21	2004	10.1007/978-3-540-24605-3_21	A Case for Efficient Solution Enumeration	SAT 2003	proceedings-article
+36	10.1145/3551349.3556938	2022	10.1145/3551349.3556938	Tseitin or Not Tseitin? The Impact of CNF Transformations on Feature-Model Analyses	ASE 2022	proceedings-article
+37	citation-37	2024		Leveraging Decision-DNNF Compilation for Enumerating Disjoint Partial Models	KR 2024	proceedings-article
+38	10.1609/aaai.v33i01.33011536	2019	10.1609/aaai.v33i01.33011536	A Recursive Algorithm for Projected Model Counting	AAAI 2019	proceedings-article
+39	10.24963/ijcai.2017/93	2017	10.24963/ijcai.2017/93	An Improved Decision-DNNF Compiler	IJCAI 2017	proceedings-article
+40	10.1007/978-3-540-45069-6_15	2003	10.1007/978-3-540-45069-6_15	A Symbolic Approach to Predicate Abstraction	CAV 2003	proceedings-article
+41	10.1007/11817963_39	2006	10.1007/11817963_39	SMT Techniques for Fast Predicate Abstraction	CAV 2006	proceedings-article
+42	10.1109/DATE.2004.1268860	2004	10.1109/DATE.2004.1268860	A Novel SAT All-Solutions Solver for Efficient Preimage Computation	DATE 2004	proceedings-article
+43	10.24963/ijcai.2022/259	2022	10.24963/ijcai.2022/259	AllSATCC: Boosting AllSAT Solving with Efficient Component Analysis	IJCAI 2022	proceedings-article
+44	10.1016/j.artint.2004.04.004	2004	10.1016/j.artint.2004.04.004	ASSAT: Computing Answer Sets of a Logic Program by SAT Solvers	Artificial Intelligence	article
+45	10.1145/1985793.1985957	2011	10.1145/1985793.1985957	Program Analysis: From Qualitative Analysis to Quantitative Analysis (NIER Track)	ICSE 2011	proceedings-article
+46	citation-46	2015		Checking Beliefs in Dynamic Networks	NSDI 2015	proceedings-article
+47	citation-47	2013		Network Verification in the Light of Program Verification	Microsoft Research	report
+48	10.1109/ICCAD51958.2021.9643520	2021	10.1109/ICCAD51958.2021.9643520	An Efficient Two-Phase Method for Prime Compilation of Non-Clausal Boolean Formulae	ICCAD 2021	proceedings-article
+49	10.1007/978-3-642-02959-2_33	2009	10.1007/978-3-642-02959-2_33	Volume Computation for Boolean Combination of Linear Arithmetic Constraints	CADE 2009	proceedings-article
+50	10.5281/zenodo.14035594	2024	10.5281/zenodo.14035594	On CNF Conversion for SAT and SMT Enumeration: Benchmarks, Results and Plots	Zenodo	dataset
+51	10.5281/zenodo.14033421	2024	10.5281/zenodo.14033421	On CNF Conversion for SAT and SMT Enumeration: Source Code	Zenodo	software
+52	10.4230/LIPIcs.SAT.2023.15	2023	10.4230/LIPIcs.SAT.2023.15	On CNF Conversion for Disjoint SAT Enumeration	SAT 2023	proceedings-article
+53	10.1007/3-540-45657-0_19	2002	10.1007/3-540-45657-0_19	Applying SAT Methods in Unbounded Symbolic Model Checking	CAV 2002	proceedings-article
+54	10.1016/j.tcs.2005.07.029	2005	10.1016/j.tcs.2005.07.029	On Converting CNF to DNF	Theoretical Computer Science	article
+55	10.1145/288548.288586	1998	10.1145/288548.288586	Finding All Simple Disjunctive Decompositions Using Irredundant Sum-of-Products Forms	ICCAD 1998	proceedings-article
+56	10.1109/ICTAI.2018.00111	2018	10.1109/ICTAI.2018.00111	Dualizing Projected Model Counting	ICTAI 2018	proceedings-article
+57	10.1007/978-3-030-51825-7_5	2020	10.1007/978-3-030-51825-7_5	Four Flavors of Entailment	SAT 2020	proceedings-article
+58	10.1016/j.dam.2024.10.021	2025	10.1016/j.dam.2024.10.021	On Enumerating Short Projected Models	Discrete Applied Mathematics	article
+59	10.1016/j.artint.2019.04.003	2019	10.1016/j.artint.2019.04.003	Advanced SMT Techniques for Weighted Model Integration	Artificial Intelligence	article
+60	10.24963/ijcai.2017/100	2017	10.24963/ijcai.2017/100	Efficient Weighted Model Integration via SMT-Based Predicate Abstraction	IJCAI 2017	proceedings-article
+61	citation-61	2005		Good Learning and Implicit Model Enumeration	ICTAI 2005	proceedings-article
+62	10.1016/S0004-3702(99)00035-1	1999	10.1016/S0004-3702(99)00035-1	Algorithms for Selective Enumeration of Prime Implicants	Artificial Intelligence	article
+63	10.1109/ARES.2015.14	2015	10.1109/ARES.2015.14	All-Solution Satisfiability Modulo Theories: Applications, Algorithms and Benchmarks	ARES 2015	proceedings-article
+64	10.1016/S0747-7171(86)80028-1	1986	10.1016/S0747-7171(86)80028-1	A Structure-Preserving Clause Form Translation	Journal of Symbolic Computation	article
+65	10.3233/FAIA200985	2021	10.3233/FAIA200985	CNF Encodings	Handbook of Satisfiability	book-chapter
+66	citation-66	2015		Prime Compilation of Non-Clausal Formulae	IJCAI 2015	proceedings-article
+67	10.1007/978-3-540-24730-2_3	2004	10.1007/978-3-540-24730-2_3	Minimal Assignments for Bounded Model Checking	TACAS 2004	proceedings-article
+68	10.48550/arXiv.2003.04225	2020	10.48550/arXiv.2003.04225	Are You Satisfied by This Partial Assignment?	arXiv	preprint
+69	10.1007/978-3-031-99984-0_37	2025	10.1007/978-3-031-99984-0_37	Entailment vs. Verification for Partial-Assignment Satisfiability and Enumeration	CADE 2025	proceedings-article
+70	10.1609/aaai.v38i8.28652	2024	10.1609/aaai.v38i8.28652	Disjoint Partial Enumeration without Blocking Clauses	AAAI 2024	proceedings-article
+71	10.1016/j.artint.2025.104346	2025	10.1016/j.artint.2025.104346	Disjoint Projected Enumeration for SAT and SMT without Blocking Clauses	Artificial Intelligence	article
+72	10.1016/j.artint.2024.104067	2024	10.1016/j.artint.2024.104067	Enhancing SMT-Based Weighted Model Integration by Structure Awareness	Artificial Intelligence	article
+73	citation-73	2022		SMT-Based Weighted Model Integration with Structure Awareness	UAI 2022	proceedings-article
+74	10.1109/DDECS.2018.00028	2018	10.1109/DDECS.2018.00028	Augmenting All Solution SAT Solving for Circuits with Structural Information	DDECS 2018	proceedings-article
+75	10.2197/ipsjjip.25.459	2017	10.2197/ipsjjip.25.459	Exploiting Functional Dependencies of Variables in All Solutions SAT Solvers	Journal of Information Processing	article
+76	10.1145/2975585	2016	10.1145/2975585	Implementing Efficient All Solutions SAT Solvers	ACM Journal of Experimental Algorithmics	article
+77	10.1145/2695664.2695941	2015	10.1145/2695664.2695941	BDD Construction for All Solutions SAT and Efficient Caching Mechanism	SAC 2015	proceedings-article
+78	10.1007/978-3-642-81955-1_28	1983	10.1007/978-3-642-81955-1_28	On the Complexity of Derivation in Propositional Calculus	Automation of Reasoning	book-chapter
+79	10.1109/VLSID.2014.22	2014	10.1109/VLSID.2014.22	All-SAT Using Minimal Blocking Clauses	VLSID 2014	proceedings-article
+80	10.1145/3324884.3416569	2020	10.1145/3324884.3416569	Accelerating All-SAT Computation with Short Blocking Clauses	ASE 2020	proceedings-article
+81	10.1007/s00224-014-9553-9	2015	10.1007/s00224-014-9553-9	Estimating the Volume of Solution Space for Satisfiability Modulo Linear Real Arithmetic	Theory of Computing Systems	article

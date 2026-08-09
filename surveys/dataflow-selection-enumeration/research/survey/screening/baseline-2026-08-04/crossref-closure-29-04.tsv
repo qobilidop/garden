@@ -1,0 +1,101 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1145/3158100	2018	10.1145/3158100	Relatively complete refinement type system for verification of higher-order non-deterministic programs	Proceedings of the ACM on Programming Languages	journal-article
+2	10.1145/2480359.2429081	2013	10.1145/2480359.2429081	Automating relatively complete verification of higher-order functional programs	ACM SIGPLAN Notices	journal-article
+3	10.1145/2429069.2429081	2013	10.1145/2429069.2429081	Automating relatively complete verification of higher-order functional programs	Proceedings of the 40th annual ACM SIGPLAN-SIGACT symposium on Principles of programming languages	proceedings-article
+4	10.70675/8e153fb0z54c9z4004z8b28za822c1e74a78	None	10.70675/8e153fb0z54c9z4004z8b28za822c1e74a78	Automatic verification of higher-order functional programs using regular tree languages		dissertation
+5	10.1145/3674662	2024	10.1145/3674662	Automated Verification of Higher-Order Probabilistic Programs via a Dependent Refinement Type System	Proceedings of the ACM on Programming Languages	journal-article
+6	10.1145/2813885.2737971	2015	10.1145/2813885.2737971	Relatively complete counterexamples for higher-order programs	ACM SIGPLAN Notices	journal-article
+7	10.1017/cbo9780511569845.004	1993	10.1017/cbo9780511569845.004	Hardware Verification using Higher Order Logic	Higher Order Logic and Hardware Verification	book-chapter
+8	10.1145/2737924.2737971	2015	10.1145/2737924.2737971	Relatively complete counterexamples for higher-order programs	Proceedings of the 36th ACM SIGPLAN Conference on Programming Language Design and Implementation	proceedings-article
+9	10.1007/s10817-020-09571-y	2020	10.1007/s10817-020-09571-y	ICE-Based Refinement Type Discovery for Higher-Order Functional Programs	Journal of Automated Reasoning	journal-article
+10	10.1007/bf00264295	1983	10.1007/bf00264295	A sound and relatively complete Hoare-logic for a language with higher type procedures	Acta Informatica	journal-article
+11	10.1145/2774975.2774978	2015	10.1145/2774975.2774978	Counter-example complete verification for higher-order functions	Proceedings of the 6th ACM SIGPLAN Symposium on Scala	proceedings-article
+12	10.1007/978-3-642-29822-6_2	2012	10.1007/978-3-642-29822-6_2	Automated Verification of Higher-Order Functional Programs	Lecture Notes in Computer Science	book-chapter
+13	10.1017/cbo9780511569845.002	1993	10.1017/cbo9780511569845.002	Hardware Verification	Higher Order Logic and Hardware Verification	book-chapter
+14	10.1017/cbo9780511569845.003	1993	10.1017/cbo9780511569845.003	Higher Order Logic and the HOL System	Higher Order Logic and Hardware Verification	book-chapter
+15	10.2139/ssrn.4418683	2023	10.2139/ssrn.4418683	Relatively Exact Controllability for Higher-Order Fractional Stochastic Delay Differential Equations		posted-content
+16	10.2139/ssrn.4385969	2023	10.2139/ssrn.4385969	Relatively Exact Controllability for Higher-Order Fractional Stochastic Delay Differential Equations		posted-content
+17	10.1007/978-1-4612-3658-0_9	1989	10.1007/978-1-4612-3658-0_9	Automating Recursive Type Definitions in Higher Order Logic	Current Trends in Hardware Verification and Automated Theorem Proving	book-chapter
+18	10.1007/978-1-4612-1674-2_3	1998	10.1007/978-1-4612-1674-2_3	Higher-Order Logic	Refinement Calculus	book-chapter
+19	10.1017/cbo9780511569845.009	1993	10.1017/cbo9780511569845.009	References	Higher Order Logic and Hardware Verification	book-chapter
+20	10.1145/3294032.3294081	2019	10.1145/3294032.3294081	Combining higher-order model checking with refinement type inference	Proceedings of the 2019 ACM SIGPLAN Workshop on Partial Evaluation and Program Manipulation	proceedings-article
+21	10.1017/cbo9780511569845.005	1993	10.1017/cbo9780511569845.005	Abstraction	Higher Order Logic and Hardware Verification	book-chapter
+22	10.1017/cbo9780511569845.001	1993	10.1017/cbo9780511569845.001	Preface	Higher Order Logic and Hardware Verification	book-chapter
+23	10.1145/2500365.2500600	2013	10.1145/2500365.2500600	Unifying refinement and hoare-style reasoning in a logic for higher-order concurrency	Proceedings of the 18th ACM SIGPLAN international conference on Functional programming	proceedings-article
+24	10.1017/cbo9780511569845.006	1993	10.1017/cbo9780511569845.006	Data Abstraction	Higher Order Logic and Hardware Verification	book-chapter
+25	10.1017/cbo9780511569845	1993	10.1017/cbo9780511569845	Higher Order Logic and Hardware Verification		monograph
+26	10.1017/cbo9780511569845.007	1993	10.1017/cbo9780511569845.007	Temporal Abstraction	Higher Order Logic and Hardware Verification	book-chapter
+27	10.1007/3-540-44755-5_15	2001	10.1007/3-540-44755-5_15	Abstraction and Refinement in Higher Order Logic	Lecture Notes in Computer Science	book-chapter
+28	10.1017/s0956796816000216	2017	10.1017/s0956796816000216	Higher order symbolic execution for contract verification and refutation	Journal of Functional Programming	journal-article
+29	10.1145/2914770.2837667	2016	10.1145/2914770.2837667	Temporal verification of higher-order functional programs	ACM SIGPLAN Notices	journal-article
+30	10.26226/morressier.604907f41a80aac83ca25d24	2021	10.26226/morressier.604907f41a80aac83ca25d24	Sound and Complete Concolic Testing for Higher-Order Functions		posted-content
+31	10.1023/a:1019916231463	2002	10.1023/a:1019916231463	Dependent Types for Program Termination Verification	Higher-Order and Symbolic Computation	journal-article
+32	10.1145/2500365.2500589	2013	10.1145/2500365.2500589	C-SHORe	Proceedings of the 18th ACM SIGPLAN international conference on Functional programming	proceedings-article
+33	10.1016/j.jfa.2008.09.004	2009	10.1016/j.jfa.2008.09.004	Weak-type inequalities for higher order Riesz–Laguerre transforms	Journal of Functional Analysis	journal-article
+34	10.1017/cbo9780511569845.008	1993	10.1017/cbo9780511569845.008	Abstraction between Models	Higher Order Logic and Hardware Verification	book-chapter
+35	10.1145/1594834.1480933	2009	10.1145/1594834.1480933	Types and higher-order recursion schemes for verification of higher-order programs	ACM SIGPLAN Notices	journal-article
+36	10.1145/62678.62697	1988	10.1145/62678.62697	Partial polymorphic type inference and higher-order unification	Proceedings of the 1988 ACM conference on LISP and functional programming	proceedings-article
+37	10.1145/2578855.2535873	2014	10.1145/2578855.2535873	A type-directed abstraction refinement approach to higher-order model checking	ACM SIGPLAN Notices	journal-article
+38	10.1109/lics.2013.33	2013	10.1109/lics.2013.33	A Relatively Complete Generic Hoare Logic for Order-Enriched Effects	2013 28th Annual ACM/IEEE Symposium on Logic in Computer Science	proceedings-article
+39	10.1007/s10990-008-9038-0	2008	10.1007/s10990-008-9038-0	Adapting functional programs to higher order logic	Higher-Order and Symbolic Computation	journal-article
+40	10.3030/713999	2017	10.3030/713999			grant
+41	10.1007/978-3-662-03809-3_5	1999	10.1007/978-3-662-03809-3_5	Higher-Order Logics	Introduction to Formal Hardware Verification	book-chapter
+42	10.1016/j.ins.2023.119631	2023	10.1016/j.ins.2023.119631	Relatively exact controllability for higher-order fractional stochastic delay differential equations	Information Sciences	journal-article
+43	10.31274/etd-180810-2447	None	10.31274/etd-180810-2447	Modular verification of higher-order methods with mandatory calls specified by model programs		dissertation
+44	10.1145/581478.581496	2002	10.1145/581478.581496	Type classes with more higher-order polymorphism	Proceedings of the seventh ACM SIGPLAN international conference on Functional programming	proceedings-article
+45	10.1145/1291151.1291181	2007	10.1145/1291151.1291181	Type-safe higher-order channels in ML-like languages	Proceedings of the 12th ACM SIGPLAN international conference on Functional programming	proceedings-article
+46	10.23952/jnfa.2017.30	2017	10.23952/jnfa.2017.30	Higher order fractional boundary value problems for mixed type derivatives	Journal of Nonlinear Functional Analysis	journal-article
+47	10.1142/9789812799876_0009	2001	10.1142/9789812799876_0009	Higher Order Functional Equations	Complex Vector Functional Equations	book-chapter
+48	10.1007/978-1-4614-3442-9_3	2015	10.1007/978-1-4614-3442-9_3	Fuzzy Sets of Higher Type and Higher Order in Fuzzy Modeling	Frontiers of Higher Order Fuzzy Sets	book-chapter
+49	10.1145/2837614.2837667	2016	10.1145/2837614.2837667	Temporal verification of higher-order functional programs	Proceedings of the 43rd Annual ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages	proceedings-article
+50	10.32917/hmj/1206129616	1988	10.32917/hmj/1206129616	Oscillation theory of higher order linear functional-differential equations of neutral type	Hiroshima Mathematical Journal	journal-article
+51	10.1007/978-3-642-54833-8_21	2014	10.1007/978-3-642-54833-8_21	Automatic Termination Verification for Higher-Order Functional Programs	Lecture Notes in Computer Science	book-chapter
+52	10.1145/2535838.2535873	2014	10.1145/2535838.2535873	A type-directed abstraction refinement approach to higher-order model checking	Proceedings of the 41st ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages	proceedings-article
+53	10.1145/1480881.1480933	2009	10.1145/1480881.1480933	Types and higher-order recursion schemes for verification of higher-order programs	Proceedings of the 36th annual ACM SIGPLAN-SIGACT symposium on Principles of programming languages	proceedings-article
+54	10.1016/j.jfa.2014.02.014	2014	10.1016/j.jfa.2014.02.014	Gaussian bounds for higher-order elliptic differential operators with Kato type potentials	Journal of Functional Analysis	journal-article
+55	10.1007/3-540-52559-9_79	1990	10.1007/3-540-52559-9_79	Formal verification of data type refinement — Theory and practice	Lecture Notes in Computer Science	book-chapter
+56	10.1080/01630563.2013.809583	2014	10.1080/01630563.2013.809583	Higher-Order Efficiency Conditions Via Higher-Order Tangent Cones	Numerical Functional Analysis and Optimization	journal-article
+57	10.2139/ssrn.5223444	2025	10.2139/ssrn.5223444	An Efficient Method to Calculate Complete Sets in Higher-Order Argumentation Frameworks		posted-content
+58	10.1080/01630563.2011.557917	2011	10.1080/01630563.2011.557917	General Theory for Integer-Type Algorithm for Higher Order Differential Equations	Numerical Functional Analysis and Optimization	journal-article
+59	10.1017/s0956796810000079	2010	10.1017/s0956796810000079	Parametricity, type equality, and higher-order polymorphism	Journal of Functional Programming	journal-article
+60	10.5539/mas.v2n6p169	2008	10.5539/mas.v2n6p169	Periodic Solutions of Higher Order with Restoring Terms Delay Functional Differential Equation with Neutral Type	Modern Applied Science	journal-article
+61	10.1201/9780429321689-20	2020	10.1201/9780429321689-20	On Kneser-Type Solutions	Oscillation, Nonoscillation, Stability and Asymptotic Properties for Second and Higher Order Functional Differential Equations	book-chapter
+62	10.1109/mace.2011.5986973	2011	10.1109/mace.2011.5986973	Periodic solutions for higher order neutral type delay functional differential equation	2011 Second International Conference on Mechanic Automation and Control Engineering	proceedings-article
+63	10.21136/mb.2003.134005	2003	10.21136/mb.2003.134005	Radicals and complete distributivity in relatively normal lattices	Mathematica Bohemica	journal-article
+64	10.1021/acsomega.7b02031.s001	None	10.1021/acsomega.7b02031.s001	Magnetic Nanocomposites and Their Incorporation into Higher Order Biosynthetic Functional Architectures		component
+65	10.7551/mitpress/6945.003.0005	1998	10.7551/mitpress/6945.003.0005	Higher-Order Logic	Type-Logical Semantics	book-chapter
+66	10.1016/j.jfa.2017.10.017	2018	10.1016/j.jfa.2017.10.017	Global well-posedness and long-time dynamics for a higher order quasi-geostrophic type equation	Journal of Functional Analysis	journal-article
+67	10.1007/3-540-58450-1_41	1994	10.1007/3-540-58450-1_41	Mechanical verification of distributed algorithms in higher-order logic	Lecture Notes in Computer Science	book-chapter
+68	10.1017/s0956796808006989	2009	10.1017/s0956796808006989	Type-safe higher-order channels with channel locality	Journal of Functional Programming	journal-article
+69	10.1007/978-3-319-59418-7_15	2018	10.1007/978-3-319-59418-7_15	The Complete Product Design Life Cycle	ASIC/SoC Functional Design Verification	book-chapter
+70	10.1007/3-540-57826-9_159	1994	10.1007/3-540-57826-9_159	Verification in higher order logic of mutual exclusion algorithm	Lecture Notes in Computer Science	book-chapter
+71	10.1007/3-540-58450-1_56	1994	10.1007/3-540-58450-1_56	Automating verification by functional abstraction at the system level	Lecture Notes in Computer Science	book-chapter
+72	10.1080/01630563.2016.1179202	2016	10.1080/01630563.2016.1179202	Mixed Type Duality for Set-valued Optimization Problems via Higher-order Radial Epiderivatives	Numerical Functional Analysis and Optimization	journal-article
+73	10.1017/cbo9781139021326.012	2012	10.1017/cbo9781139021326.012	Computations over Functional Programs	Programming with Higher-Order Logic	book-chapter
+74	10.1201/9781003358541-3	2023	10.1201/9781003358541-3	Higher-Order Functions	Quick Functional Programming	book-chapter
+75	10.1021/acs.jpclett.5c01620.s002	None	10.1021/acs.jpclett.5c01620.s002	Higher Order Polaronic-Exciton Recombination in Two-Dimensional DionJacobson-Type Perovskites		component
+76	10.1021/acs.jpclett.5c01620.s001	None	10.1021/acs.jpclett.5c01620.s001	Higher Order Polaronic-Exciton Recombination in Two-Dimensional DionJacobson-Type Perovskites		component
+77	10.1007/3-540-45685-6_7	2002	10.1007/3-540-45685-6_7	Type-Theoretic Functional Semantics	Lecture Notes in Computer Science	book-chapter
+78	10.1007/bfb0055146	1998	10.1007/bfb0055146	Object-oriented verification based on record subtyping in Higher-Order Logic	Lecture Notes in Computer Science	book-chapter
+79	10.3030/101083038	2023	10.3030/101083038			grant
+80	10.1007/bfb0026816	1995	10.1007/bfb0026816	A complete narrowing calculus for higher-order functional logic programming	Lecture Notes in Computer Science	book-chapter
+81	10.1080/01630563.2011.595602	2011	10.1080/01630563.2011.595602	Practical Implementation and Error Bound of Integer-Type Algorithm for Higher-Order Differential Equations	Numerical Functional Analysis and Optimization	journal-article
+82	10.1007/s10990-007-9000-6	2007	10.1007/s10990-007-9000-6	Symbolic reachability analysis using narrowing and its application to verification of cryptographic protocols	Higher-Order and Symbolic Computation	journal-article
+83	10.1007/bfb0023744	None	10.1007/bfb0023744	Verification of a multiprocessor cache protocol using simulation relations and higher-order logic (summary)	Lecture Notes in Computer Science	book-chapter
+84	10.1109/icise.2010.5689856	2010	10.1109/icise.2010.5689856	A new result for existence of periodic solutions for higher order neutral type delay functional differential equation	The 2nd International Conference on Information Science and Engineering	proceedings-article
+85	10.9734/bjmcs/2013/3481	2013	10.9734/bjmcs/2013/3481	Oscillation Criteria for the Solutions of Higher Order Functional Dierence Equations of Neutral type	British Journal of Mathematics &amp; Computer Science	journal-article
+86	10.1016/j.jfa.2026.111508	2026	10.1016/j.jfa.2026.111508	Differentiation, Taylor series, and all order spectral shift functions, for relatively bounded perturbations	Journal of Functional Analysis	journal-article
+87	10.2307/44151752	1985	10.2307/44151752	Higher Order Riemann Complete Integrals	Real Analysis Exchange	journal-article
+88	10.1007/978-3-662-02880-3_2	1993	10.1007/978-3-662-02880-3_2	Refinement Calculus, Lattices and Higher Order Logic	NATO ASI Series	book-chapter
+89	10.1007/978-1-4471-3534-0_19	1990	10.1007/978-1-4471-3534-0_19	Formal Specification and Verification of Asynchronous Processes in Higher-Order Logic	Workshops in Computing	book-chapter
+90	10.3390/fractalfract6090485	2022	10.3390/fractalfract6090485	Formal Verification of Fractional-Order PID Control Systems Using Higher-Order Logic	Fractal and Fractional	journal-article
+91	10.1007/s10990-012-9087-2	2011	10.1007/s10990-012-9087-2	Functional un|unparsing	Higher-Order and Symbolic Computation	journal-article
+92	10.1007/3540543961_22	1991	10.1007/3540543961_22	Efficient type inference for higher-order binding-time analysis	Lecture Notes in Computer Science	book-chapter
+93	10.1093/logcom/5.4.397	1995	10.1093/logcom/5.4.397	Conjunctive Type Systems and Abstract Interpretation of Higher-order Functional Programs	Journal of Logic and Computation	journal-article
+94	10.1007/s10990-009-9043-y	2009	10.1007/s10990-009-9043-y	Expressible sharing for functional circuit description	Higher-Order and Symbolic Computation	journal-article
+95	10.32614/cran.package.functional	2011	10.32614/cran.package.functional	functional: Curry, Compose, and Other Higher-Order Functions	CRAN: Contributed Packages	dataset
+96	10.31274/rtd-180813-11179	None	10.31274/rtd-180813-11179	Oscillation behavior of higher order functional differential equations with distributed deviating arguments		dissertation
+97	10.1007/3-540-49253-4_17	1998	10.1007/3-540-49253-4_17	A Synergy Between Model-Checking and Type Inference for the Verification of Value-Passing Higher-Order Processes	Lecture Notes in Computer Science	book-chapter
+98	10.1017/9781108981804	2022	10.1017/9781108981804	Higher-Order Logic and Type Theory		monograph
+99	10.1109/fmcad.2006.2	2006	10.1109/fmcad.2006.2	A Refinement Method for Validity Checking of Quantified First-Order Formulas in Hardware Verification	2006 Formal Methods in Computer Aided Design	proceedings-article
+100	10.1016/b978-044451155-3/50008-6	2003	10.1016/b978-044451155-3/50008-6	Higher-order schemes	Godunov-type Schemes	book-chapter

@@ -1,0 +1,103 @@
+rank	source_id	year	doi	title	venue	type
+1	10.2139/ssrn.5477673	2025	10.2139/ssrn.5477673	Interpretable Reinforcement Learning for Distribution System Restoration via Imitation Learning-Based Decision Tree Policy Extraction		posted-content
+2	10.7717/peerj-cs.3219/fig-4	None	10.7717/peerj-cs.3219/fig-4	Figure 4: Policy decision-making process in reinforcement learning.		component
+3	10.5220/0012928000003886	2024	10.5220/0012928000003886	Analyzing Exact Output Regions of Reinforcement Learning Policy Neural Networks for High-Dimensional Input-Output Spaces	Proceedings of the 1st International Conference on Explainable AI for Neural and Symbolic Methods	proceedings-article
+4	10.1007/978-981-99-3740-0_7	2023	10.1007/978-981-99-3740-0_7	Partial Order of Policy and Policy Improvement	Reinforcement Learning: Discrete-Time Markov Decision Process	book-chapter
+5	10.1007/978-981-99-3740-0_2	2023	10.1007/978-981-99-3740-0_2	Environment and Policy	Reinforcement Learning: Discrete-Time Markov Decision Process	book-chapter
+6	10.63028/10067/2136190151162165141	None	10.63028/10067/2136190151162165141	Towards efficient decision-making : policy compression for reinforcement learning on resource-constrained devices		dissertation
+7	10.1023/a:1007367629006	1997	10.1023/a:1007367629006	An Exact Probability Metric for Decision Tree Splitting and Stopping	Machine Learning	journal-article
+8	10.1016/j.epsr.2025.112647	2026	10.1016/j.epsr.2025.112647	Microgrid formation for outage recovery: Hybrid randomized ensembled reinforcement learning with decision tree policy interpretation	Electric Power Systems Research	journal-article
+9	10.3390/e26080648	2024	10.3390/e26080648	Efficient Detection of Malicious Traffic Using a Decision Tree-Based Proximal Policy Optimisation Algorithm: A Deep Reinforcement Learning Malicious Traffic Detection Model Incorporating Entropy	Entropy	journal-article
+10	10.1007/978-981-99-3740-0_10	2023	10.1007/978-981-99-3740-0_10	Equivalence between Visitation Frequency and Policy	Reinforcement Learning: Discrete-Time Markov Decision Process	book-chapter
+11	10.1109/cdc.2016.7798399	2016	10.1109/cdc.2016.7798399	An exact distributed newton method for reinforcement learning	2016 IEEE 55th Conference on Decision and Control (CDC)	proceedings-article
+12	10.1109/saner56733.2023.00112	2023	10.1109/saner56733.2023.00112	Deep Reinforcement Learning Guided Decision Tree Learning For Program Synthesis	2023 IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER)	proceedings-article
+13	10.1038/s41598-026-65016-3	2026	10.1038/s41598-026-65016-3	Parameterized exact fair decision tree learning with small sensitive group regimes	Scientific Reports	journal-article
+14	10.1007/978-1-4612-2404-4_38	1996	10.1007/978-1-4612-2404-4_38	An Exact Probability Metric for Decision Tree Splitting	Lecture Notes in Statistics	book-chapter
+15	10.32470/ccn.2023.1083-0	2023	10.32470/ccn.2023.1083-0	Confidence optimally modulates decision policy in reinforcement learning	2023 Conference on Cognitive Computational Neuroscience	proceedings-article
+16	10.1007/978-4-431-68275-2_9	1994	10.1007/978-4-431-68275-2_9	Rule Generation and Generalization by Inductive Decision Tree and Reinforcement Learning	Distributed Autonomous Robotic Systems	book-chapter
+17	10.71443/9789349552982-07	2025	10.71443/9789349552982-07	Curriculum Learning Strategies for Accelerating Policy Development in Autonomous Decision Systems	Deep Reinforcement Learning Applications in Autonomous Systems and Decision Making	book-chapter
+18	10.1109/lra.2026.3700379/mm1	None	10.1109/lra.2026.3700379/mm1	RLRC: Reinforcement Learning-based Recovery for Compressed Vision-Language-Action Models_supp1-3700379.mp4		component
+19	10.1109/cdc40024.2019.9029969	2019	10.1109/cdc40024.2019.9029969	Distributed off-Policy Actor-Critic Reinforcement Learning with Policy Consensus	2019 IEEE 58th Conference on Decision and Control (CDC)	proceedings-article
+20	10.1109/icbk.2018.00051	2018	10.1109/icbk.2018.00051	Reinforcement Learning Based Decision Tree Induction Over Data Streams with Concept Drifts	2018 IEEE International Conference on Big Knowledge (ICBK)	proceedings-article
+21	10.1016/j.resourpol.2017.05.007	2017	10.1016/j.resourpol.2017.05.007	Forecasting copper prices by decision tree learning	Resources Policy	journal-article
+22	10.2139/ssrn.6143426	2026	10.2139/ssrn.6143426	Smart Decision Support Systems For Dynamic Tax Policy Optimization Using Reinforcement Learning	SSRN Electronic Journal	journal-article
+23	10.1007/978-981-19-7784-8_7	2023	10.1007/978-981-19-7784-8_7	Direct RL with Policy Gradient	Reinforcement Learning for Sequential Decision and Optimal Control	book-chapter
+24	10.1109/ccdc.2018.8408296	2018	10.1109/ccdc.2018.8408296	Deep reinforcement learning policy in Hex game system	2018 Chinese Control And Decision Conference (CCDC)	proceedings-article
+25	10.1109/sii.2012.6427332	2012	10.1109/sii.2012.6427332	Rule abstraction and transfer in reinforcement learning by decision tree	2012 IEEE/SICE International Symposium on System Integration (SII)	proceedings-article
+26	10.1002/9781118266502.ch3	2012	10.1002/9781118266502.ch3	Reinforcement Learning	Reinforcement and Systemic Machine Learning for Decision Making	other
+27	10.1016/j.mex.2026.104011	2026	10.1016/j.mex.2026.104011	Decision tree and reinforcement learning for contextual electricity consumption forecasting in buildings	MethodsX	journal-article
+28	10.31979/etd.63be-cbuw	None	10.31979/etd.63be-cbuw	Multi-step Prediction using Tree Generation for Reinforcement Learning		dissertation
+29	10.71443/9789349552982-02	2025	10.71443/9789349552982-02	Policy Optimization and Actor-Critic Methods in Complex Decision-Making Frameworks	Deep Reinforcement Learning Applications in Autonomous Systems and Decision Making	book-chapter
+30	10.1007/978-981-19-0638-1_4	2022	10.1007/978-981-19-0638-1_4	Policy-Based Reinforcement Learning	Deep Reinforcement Learning	book-chapter
+31	10.1101/2021.07.11.21260328	2021	10.1101/2021.07.11.21260328	"A reinforcement learning model to inform optimal decision paths for HIV elimination
+                  <sup>1</sup>"		posted-content
+32	10.4271/2026-99-1714	2026	10.4271/2026-99-1714	"Energy Saving and Personalized Thermal Comfort Control Based on
+                    Reinforcement Learning and Decision Tree"	SAE Technical Paper Series	proceedings-article
+33	10.7717/peerj.15751/fig-3	None	10.7717/peerj.15751/fig-3	Figure 3: Machine learning decision tree.		component
+34	10.1016/j.mlwa.2022.100345	2022	10.1016/j.mlwa.2022.100345	Exact Shapley values for local and model-true explanations of decision tree ensembles	Machine Learning with Applications	journal-article
+35	10.70675/0ed8ca20zbb44z43e8z93b6z3736718702e8	None	10.70675/0ed8ca20zbb44z43e8z93b6z3736718702e8	Improving Decision Tree Learning		dissertation
+36	10.1109/iccv.2017.43	2017	10.1109/iccv.2017.43	Tracking as Online Decision-Making: Learning a Policy from Streaming Videos with Reinforcement Learning	2017 IEEE International Conference on Computer Vision (ICCV)	proceedings-article
+37	10.1016/j.hcl.2025.08.002	2026	10.1016/j.hcl.2025.08.002	Using Tree-Based Reinforcement Learning Methods to Support Personalized Decision-Making in Hand Treatment	Hand Clinics	journal-article
+38	10.52843/cassyni.6fs4s9	2022	10.52843/cassyni.6fs4s9	Model Based Reinforcement Learning: Policy Iteration, Value Iteration, and Dynamic Programming		posted-content
+39	10.1007/978-981-19-7784-8_12	2024	10.1007/978-981-19-7784-8_12	Correction to: Reinforcement Learning for Sequential Decision and Optimal Control	Reinforcement Learning for Sequential Decision and Optimal Control	book-chapter
+40	10.23919/ccc63176.2024.10662399	2024	10.23919/ccc63176.2024.10662399	Self-play Decision-making Method of Deep Reinforcement Learning Guided by Behavior Tree under Complex Environment	2024 43rd Chinese Control Conference (CCC)	proceedings-article
+41	10.31234/osf.io/nspf5	2022	10.31234/osf.io/nspf5	The role of reinforcement learning in shaping the decision policy in methamphetamine use disorders		posted-content
+42	10.1109/ccdc65474.2025.11090282	2025	10.1109/ccdc65474.2025.11090282	Research on UAV Path Planning Method Based on Reinforcement Learning and Behavioral Tree Modeling	2025 37th Chinese Control and Decision Conference (CCDC)	proceedings-article
+43	10.3389/fnbot.2022.996412	2022	10.3389/fnbot.2022.996412	Autonomous maneuver decision-making method based on reinforcement learning and Monte Carlo tree search	Frontiers in Neurorobotics	journal-article
+44	10.1504/ijaisc.2010.032511	2010	10.1504/ijaisc.2010.032511	Fuzzy decision tree function approximation in reinforcement learning	International Journal of Artificial Intelligence and Soft Computing	journal-article
+45	10.1007/978-981-19-7784-8_10	2023	10.1007/978-981-19-7784-8_10	Deep Reinforcement Learning	Reinforcement Learning for Sequential Decision and Optimal Control	book-chapter
+46	10.1016/j.adhoc.2024.103751	2025	10.1016/j.adhoc.2024.103751	Computational Offloading and Resource Allocation for IoT applications using Decision Tree based Reinforcement Learning	Ad Hoc Networks	journal-article
+47	10.1021/acsomega.9b01480.s001	None	10.1021/acsomega.9b01480.s001	Enhancing Biomolecular Sampling with Reinforcement Learning: A Tree Search Molecular Dynamics Simulation Method		component
+48	10.1007/springerreference_64591	None	10.1007/springerreference_64591	Compressed Suffix Tree	SpringerReference	reference-entry
+49	10.1109/cdc51059.2022.9992584	2022	10.1109/cdc51059.2022.9992584	Structured-policy Q-learning: an LMI-based Design Strategy for Distributed Reinforcement Learning	2022 IEEE 61st Conference on Decision and Control (CDC)	proceedings-article
+50	10.1109/cdc.2016.7798684	2016	10.1109/cdc.2016.7798684	Symbolic method for deriving policy in reinforcement learning	2016 IEEE 55th Conference on Decision and Control (CDC)	proceedings-article
+51	10.14264/b917733	None	10.14264/b917733	Adaptive reinforcement learning for practical decision making		dissertation
+52	10.1109/iccsi53130.2021.9736263	2021	10.1109/iccsi53130.2021.9736263	Extracting Decision Tree from Trained Deep Reinforcement Learning in Traffic Signal Control	2021 International Conference on Cyber-Physical Social Intelligence (ICCSI)	proceedings-article
+53	10.71443/9789349552982-09	2025	10.71443/9789349552982-09	Application of Proximal Policy Optimization for Stable Decision Making in Non-Stationary Environments	Deep Reinforcement Learning Applications in Autonomous Systems and Decision Making	book-chapter
+54	10.1109/cdc51059.2022.9992427	2022	10.1109/cdc51059.2022.9992427	Reinforcement Learning with Unbiased Policy Evaluation and Linear Function Approximation	2022 IEEE 61st Conference on Decision and Control (CDC)	proceedings-article
+55	10.1109/cdc40024.2019.9029403	2019	10.1109/cdc40024.2019.9029403	Policy Gradient using Weak Derivatives for Reinforcement Learning	2019 IEEE 58th Conference on Decision and Control (CDC)	proceedings-article
+56	10.1007/978-981-13-8285-7_10	2019	10.1007/978-981-13-8285-7_10	Policy-Based Reinforcement Learning Approaches	Deep Reinforcement Learning	book-chapter
+57	10.1007/978-981-19-7784-8_1	2023	10.1007/978-981-19-7784-8_1	Introduction to Reinforcement Learning	Reinforcement Learning for Sequential Decision and Optimal Control	book-chapter
+58	10.31449/inf.v49i27.7369	2025	10.31449/inf.v49i27.7369	Q-learning and Policy Gradient-Based Reinforcement Learning Method to Decision Making of Phased Array Radar Jamming	Informatica	journal-article
+59	10.1002/9781118266502.ch1	2012	10.1002/9781118266502.ch1	Introduction to Reinforcement and Systemic Machine Learning	Reinforcement and Systemic Machine Learning for Decision Making	other
+60	10.1007/978-3-658-37616-1_6	2022	10.1007/978-3-658-37616-1_6	Advanced Quantum Policy Approximation in Policy Gradient Reinforcement Learning	Reinforcement Learning with Hybrid Quantum Approximation in the NISQ Context	book-chapter
+61	10.1109/cdc49753.2023.10384223	2023	10.1109/cdc49753.2023.10384223	Non-Stationary Policy Learning for Multi-Timescale Multi-Agent Reinforcement Learning	2023 62nd IEEE Conference on Decision and Control (CDC)	proceedings-article
+62	10.5040/9781350393288.ch-012	2003	10.5040/9781350393288.ch-012	Decision Tree Learning	Artificial Intelligence	book-chapter
+63	10.70675/27c82b35z7007z4db0zbc59z080a9537762f	None	10.70675/27c82b35z7007z4db0zbc59z080a9537762f	Contributions to decision tree based learning		dissertation
+64	10.71443/9789349552982-13	2025	10.71443/9789349552982-13	Multi-Objective Reinforcement Learning for Balancing Efficiency and Safety in Autonomous Decision Making	Deep Reinforcement Learning Applications in Autonomous Systems and Decision Making	book-chapter
+65	10.1109/ccdc52312.2021.9602755	2021	10.1109/ccdc52312.2021.9602755	Policy Gradient Reinforcement Learning for Parameterized Continuous-Time Optimal Control	2021 33rd Chinese Control and Decision Conference (CCDC)	proceedings-article
+66	10.1007/3-540-44795-4_9	2003	10.1007/3-540-44795-4_9	Speeding Up Relational Reinforcement Learning through the Use of an Incremental First Order Decision Tree Learner	Lecture Notes in Computer Science	book-chapter
+67	10.5220/0014461100004052	2026	10.5220/0014461100004052	Sample Policy Gradient: A Competitive Policy Optimisation Method for Off-Policy Reinforcement Learning	Proceedings of the 18th International Conference on Agents and Artificial Intelligence	proceedings-article
+68	10.32657/10356/183129	None	10.32657/10356/183129	Decision-making with cooperative multi-agent reinforcement learning		dissertation
+69	10.26686/wgtn.17138678	None	10.26686/wgtn.17138678	Policy Direct Search for Effective Reinforcement Learning		dissertation
+70	10.1109/cdc51059.2022.9993035	2022	10.1109/cdc51059.2022.9993035	Newton-based Policy Search for Networked Multi-agent Reinforcement Learning	2022 IEEE 61st Conference on Decision and Control (CDC)	proceedings-article
+71	10.1002/2050-7038.12531/v2/decision1	2020	10.1002/2050-7038.12531/v2/decision1	"Decision letter for ""Deep learning and reinforcement learning approach on microgrid"""		peer-review
+72	10.1002/2050-7038.12531/v1/decision1	2020	10.1002/2050-7038.12531/v1/decision1	"Decision letter for ""Deep learning and reinforcement learning approach on microgrid"""		peer-review
+73	10.1007/978-3-642-17537-4_83	2010	10.1007/978-3-642-17537-4_83	Multivariate Decision Tree Function Approximation for Reinforcement Learning	Lecture Notes in Computer Science	book-chapter
+74	10.1109/ccdc62350.2024.10587935	2024	10.1109/ccdc62350.2024.10587935	Online learning control law design based on policy gradient reinforcement learning	2024 36th Chinese Control and Decision Conference (CCDC)	proceedings-article
+75	10.5220/0010316901130124	2021	10.5220/0010316901130124	Mixed Deep Reinforcement Learning-behavior Tree for Intelligent Agents Design	Proceedings of the 13th International Conference on Agents and Artificial Intelligence	proceedings-article
+76	10.1515/9783110595567-004	2020	10.1515/9783110595567-004	3. Decision tree learning	Machine Learning and Visual Perception	book-chapter
+77	10.71443/9789349552982-15	2025	10.71443/9789349552982-15	Integrating Reinforcement Learning with Simulation Environments for Testing and Training Autonomous Decision Models	Deep Reinforcement Learning Applications in Autonomous Systems and Decision Making	book-chapter
+78	10.12694/scpe.v22i4.1870	2021	10.12694/scpe.v22i4.1870	A Method to Improve Exact Matching Results in Compressed Text using Parallel Wavelet Tree	Scalable Computing: Practice and Experience	journal-article
+79	10.1002/9781119815068.ch14	2022	10.1002/9781119815068.ch14	Exact Dynamic Programming	Reinforcement Learning and Stochastic Optimization	other
+80	10.1016/j.asoc.2025.114387	2026	10.1016/j.asoc.2025.114387	Distributed and real-time IoT task scheduling approach through a decision tree reinforcement learning	Applied Soft Computing	journal-article
+81	10.32657/10356/173125	None	10.32657/10356/173125	Robust and adaptive decision-making: a reinforcement learning perspective		dissertation
+82	10.22541/au.177222571.15877912/v1	2026	10.22541/au.177222571.15877912/v1	EXPLAINABLE REINFORCEMENT LEARNING FOR TRANSPARENT AUTONOMOUS DECISION SYSTEMS		posted-content
+83	10.1007/978-3-642-27645-3_1	2012	10.1007/978-3-642-27645-3_1	Reinforcement Learning and Markov Decision Processes	Adaptation, Learning, and Optimization	book-chapter
+84	10.1002/9781119873747.ch2	2023	10.1002/9781119873747.ch2	Markov Decision Process and Reinforcement Learning	Deep Reinforcement Learning for Wireless Communications and Networking	other
+85	10.1017/9781009051873.016	2022	10.1017/9781009051873.016	Markov Decision Processes	Control Systems and Reinforcement Learning	other
+86	10.1007/978-981-19-4933-3_14	2024	10.1007/978-981-19-4933-3_14	Tree Search	Reinforcement Learning	book-chapter
+87	10.14711/thesis-hdl169606	None	10.14711/thesis-hdl169606	Advancing Cooperative Decision Making in Multi-Agent Reinforcement Learning		dissertation
+88	10.3390/automation5040032	2024	10.3390/automation5040032	Decision-Making Policy for Autonomous Vehicles on Highways Using Deep Reinforcement Learning (DRL) Method	Automation	journal-article
+89	10.70675/9b3ad39az3d7bz48aczaf65z13493c0afa4c	None	10.70675/9b3ad39az3d7bz48aczaf65z13493c0afa4c	Optimal Decision Trees via Search : A Reinforcement Learning framework		dissertation
+90	10.71443/9789349552982-05	2025	10.71443/9789349552982-05	Hierarchical Reinforcement Learning for Decision Making in Large-Scale Autonomous Networks	Deep Reinforcement Learning Applications in Autonomous Systems and Decision Making	book-chapter
+91	10.12681/eadd/44083	None	10.12681/eadd/44083	Directed exploration of policy space in reinforcement learning		dissertation
+92	10.32657/10356/173035	None	10.32657/10356/173035	Multi-agent reinforcement learning for complex sequential decision-making		dissertation
+93	10.53347/rid-57104	2017	10.53347/rid-57104	Decision tree (machine learning)	Radiopaedia.org	reference-entry
+94	10.58837/chula.the.2013.920	None	10.58837/chula.the.2013.920	Decision Tree-Based Learning Using Multi-Attributed Lens		dissertation
+95	10.3390/app12104851	2022	10.3390/app12104851	Applications of Decision Tree and Random Forest as Tree-Based Machine Learning Techniques for Analyzing the Ultimate Strain of Spliced and Non-Spliced Reinforcement Bars	Applied Sciences	journal-article
+96	10.1515/9783110520651-003	2017	10.1515/9783110520651-003	3. Dynamic fuzzy decision tree learning	Dynamic Fuzzy Machine Learning	book-chapter
+97	10.1016/j.epsr.2022.107932	2022	10.1016/j.epsr.2022.107932	Enhanced Oblique Decision Tree Enabled Policy Extraction for Deep Reinforcement Learning in Power System Emergency Control	Electric Power Systems Research	journal-article
+98	10.1201/b23383-18	2023	10.1201/b23383-18	Policy-Based Deep Reinforcement Learning	Machine Learning, Animated	book-chapter
+99	10.1109/ddcls66240.2025.11065313	2025	10.1109/ddcls66240.2025.11065313	Extraction and Interpretability of Reinforcement Learning Control Strategies for Distribution Network Fault Recovery Based on Decision Tree	2025 IEEE 14th Data Driven Control and Learning Systems (DDCLS)	proceedings-article
+100	10.32877/bt.v8i1.2645	2025	10.32877/bt.v8i1.2645	Decision Tree and Reinforcement Learning Approaches in Adapting Math Problems Based on Student Ability	bit-Tech	journal-article

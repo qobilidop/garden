@@ -1,0 +1,18 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1007/978-3-030-32409-4_23	2019	10.1007/978-3-030-32409-4_23	Combining Parallel Emptiness Checks With Partial Order Reductions	Formal Methods And Software Engineering	book chapter
+2	10.1007/978-3-319-45994-3_7	2016	10.1007/978-3-319-45994-3_7	Safety Property-Driven Stubborn Sets	Lecture Notes In Computer Science	book chapter
+3	10.1007/978-3-642-04761-9_4	2009	10.1007/978-3-642-04761-9_4	Exploring The Scope For Partial Order Reduction	Automated Technology For Verification And Analysis	book chapter
+4	10.1007/11691617_11	2006	10.1007/11691617_11	Abstract Matching For Software Model Checking	Model Checking Software	book chapter
+5	10.1016/s1571-0661(04)80411-0	2002	10.1016/s1571-0661(04)80411-0	Stuttering-Insensitive Automata For On-the-fly Detection Of Livelock Properties	Electronic Notes In Theoretical Computer Science	journal article
+6	10.1007/s10703-011-0126-0	2011	10.1007/s10703-011-0126-0	Transparent Partial Order Reduction	Formal Methods In System Design	journal article
+7	10.1007/978-3-319-51046-0_13	2016	10.1007/978-3-319-51046-0_13	More Stubborn Set Methods For Process Algebras	Concurrency, Security, And Puzzles	book chapter
+8	10.1007/978-3-642-34059-8_15	2012	10.1007/978-3-642-34059-8_15	A Counterexample-Based Incremental And Modular Verification Approach	Large-Scale Complex IT Systems. Development, Operation And Management	book chapter
+9	10.1007/3-540-45657-0_48	2002	10.1007/3-540-45657-0_48	Compressing Transitions For Model Checking	Computer Aided Verification	book chapter
+10	10.1007/978-3-642-36742-7_42	2013	10.1007/978-3-642-36742-7_42	Strength-Based Decomposition Of The Property Büchi Automaton For Faster Model Checking	Tools And Algorithms For The Construction And Analysis Of Systems	book chapter
+11	10.1145/3531130.3533343	2022	10.1145/3531130.3533343	Abstractions For The Local-Time Semantics Of Timed Automata: A Foundation For Partial-Order Methods	Proceedings Of The 37Th Annual ACM/IEEE Symposium On Logic In Computer Science	proceedings article
+12	10.1002/stvr.422	2010	10.1002/stvr.422	Verification Support For ARINC-653-based Avionics Software	Software Testing, Verification And Reliability	journal article
+13	10.1007/s10703-006-0006-1	2006	10.1007/s10703-006-0006-1	Question-guided Stubborn Set Methods For State Properties	Formal Methods In System Design	journal article
+14	10.1007/978-3-030-94583-1_8	2022	10.1007/978-3-030-94583-1_8	Automata-Driven Partial Order Reduction And Guided Search For LTL Model Checking	Lecture Notes In Computer Science	book chapter
+15	10.1007/978-3-642-13675-7_5	2010	10.1007/978-3-642-13675-7_5	Can Stubborn Sets Be Optimal?	Applications And Theory Of Petri Nets	book chapter
+16	10.1007/978-3-032-06847-7_9	2025	10.1007/978-3-032-06847-7_9	On-the-Fly Cone-of-Influence Reduction For Model Checking Concurrent Software	Lecture Notes In Computer Science	book chapter
+17	10.1145/3498538	2022	10.1145/3498538	BiRD: Race Detection In Software Binaries Under Relaxed Memory Models	ACM Transactions On Software Engineering And Methodology	journal article

@@ -1,0 +1,9 @@
+rank	source_id	year	doi	title	venue	type
+1	6ec5b1fbaf25e7252965dcf36e435818ba4c99f8	2022	10.1145/3551357.3551370	A Monadic Implementation of Functional Logic Programs	ACM-SIGPLAN International Conference on Principles and Practice of Declarative Programming	Book
+2	fe0a69a57676920ac2e72df2a72b5e99b3f49dda	2021	10.1145/3479394.3479411	From Non-determinism to Goroutines: A Fair Implementation of Curry in Go	ACM-SIGPLAN International Conference on Principles and Practice of Declarative Programming	JournalArticle
+3	da407a1fa736b89bea5f54731f4a6b2fa8c22963	2020	10.1007/978-3-030-75333-7_4	Memoized Pull-Tabbing for Functional Logic Programming	Workshop on Functional and Constraint Logic Programming	JournalArticle
+4	a695936649e76d0fe7d3aceb802c59f18b09f00c	2018	10.1007/978-3-319-90686-7_10	Equivalence Checking of Non-deterministic Operations	Fuji International Symposium on Functional and Logic Programming	JournalArticle
+5	b6fd6ae1af0d9e91f7a509696d722842f13699ae	2017	10.3233/FI-2020-1925	Combining Static and Dynamic Contract Checking for Curry	International Workshop/Symposium on Logic-based Program Synthesis and Transformation	JournalArticle
+6	084b75320cf05d61c3dff468a7bee495f20c9271	2014	10.1145/2543728.2543744	A modular and generic analysis server system for functional logic programs	ACM SIGPLAN Workshop on Partial Evaluation and Program Manipulation	JournalArticle
+7	8d3b7e3d120c39feb70d9a890457945c9a2f4784	2013	10.1145/2505879.2505896	A semantics for weakly encapsulated search in functional logic programs	ACM-SIGPLAN International Conference on Principles and Practice of Declarative Programming	JournalArticle
+8	d1c9197a29d146bd997acc8e0888f14415aa6315	2013		A Generic Analysis Server System for Functional Logic Programs	arXiv.org	JournalArticle

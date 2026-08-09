@@ -1,0 +1,17 @@
+rank	openalex_id	year	doi	title	venue	type
+1	W151011738	1974		Introduction to Mathematical Theory of Computation		book
+2	W655501358	1975		Recursive Programming Techniques	CERN Document Server (European Organization for Nuclear Research)	other
+3	W1525140360	1976		CONS Should Not Evaluate its Arguments.	International Colloquium on Automata, Languages and Programming	article
+4	W1527809250	1981	https://doi.org/10.1016/0096-0551(81)90077-1	Functional programming: Application and implementation	Computer Languages	article
+5	W1535347731	1976		Coroutines and networks of parallel processes	HAL (Le Centre pour la Communication Scientifique Directe)	report
+6	W1559577056	1974	https://doi.org/10.1007/3-540-06859-7_145	First version of a data flow procedure language	Lecture notes in computer science	conference-paper
+7	W1572417472	1977		Some relationships between asynchronous interpreters of a dataflow language	eScholarship (California Digital Library)	article
+8	W1579433101	1972		Mathematical Theory of Computation		article
+9	W1986604235	1981	https://doi.org/10.1145/800223.806771	Applications of feedback in functional programming		conference-paper
+10	W2009685354	1973	https://doi.org/10.1145/800125.804054	Correct and optimal implementations of recursion in a simple programming language		conference-paper
+11	W2011087973	1981	https://doi.org/10.1145/800223.806766	The semantic elegance of applicative languages		conference-paper
+12	W2075052434	1974	https://doi.org/10.1016/s0022-0000(74)80048-6	Correct and optimal implementations of recursion in a simple programming language	Journal of Computer and System Sciences	article
+13	W2170884007	1971	https://doi.org/10.1147/sj.102.0086	The formal description of programming languages	IBM Systems Journal	article
+14	W2172307690	1978	https://doi.org/10.1145/359576.359579	Can programming be liberated from the von Neumann style?	Communications of the ACM	article
+15	W2741432134	2011	https://doi.org/10.1007/978-3-642-22012-8	Automata, Languages and Programming	Lecture notes in computer science	conference-paper
+16	W2998487127	1978		An asynchronous programming language and computing machine	eScholarship (California Digital Library)	article

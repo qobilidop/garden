@@ -1,0 +1,101 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1007/bf02280834	1994	10.1007/bf02280834	A fully abstract trace model for dataflow and asynchronous networks	Distributed Computing	journal-article
+2	10.1145/75277.75291	1989	10.1145/75277.75291	A fully abstract trace model for dataflow networks	Proceedings of the 16th ACM SIGPLAN-SIGACT symposium on Principles of programming languages  - POPL '89	proceedings-article
+3	10.1109/async.2011.15	2011	10.1109/async.2011.15	Improving Dependability and Performance of Fully Asynchronous On-chip Networks	2011 17th IEEE International Symposium on Asynchronous Circuits and Systems	proceedings-article
+4	10.1007/3-540-51486-4_79	1989	10.1007/3-540-51486-4_79	An iterative metric fully abstract semantics for nondeterministic dataflow (extended abstract)	Lecture Notes in Computer Science	book-chapter
+5	10.1109/async.2003.1199172	None	10.1109/async.2003.1199172	An analysis of determinacy using a trace-theoretic model of asynchronous circuits	Ninth International Symposium on Asynchronous Circuits and Systems, 2003. Proceedings.	proceedings-article
+6	10.1007/978-1-4302-5921-3_10	2013	10.1007/978-1-4302-5921-3_10	TPL Dataflow	Pro Asynchronous Programming with .NET	book-chapter
+7	10.5220/0007306701210128	2019	10.5220/0007306701210128	Asynchronous Price Stabilization Model in Networks	Proceedings of the 11th International Conference on Agents and Artificial Intelligence	proceedings-article
+8	10.1109/micro61859.2024.00084	2024	10.1109/micro61859.2024.00084	LoAS: Fully Temporal-Parallel Dataflow for Dual-Sparse Spiking Neural Networks	2024 57th IEEE/ACM International Symposium on Microarchitecture (MICRO)	proceedings-article
+9	10.1007/3-540-51285-3_43	1989	10.1007/3-540-51285-3_43	Comparing two fully abstract dataflow models	Lecture Notes in Computer Science	book-chapter
+10	10.1109/tnn.2002.805751	2002	10.1109/tnn.2002.805751	Stability of fully asynchronous discrete-time discrete-state dynamic networks	IEEE Transactions on Neural Networks	journal-article
+11	10.1109/tmscs.2018.2790921	2018	10.1109/tmscs.2018.2790921	Execution Trace Graph of Dataflow Process Networks	IEEE Transactions on Multi-Scale Computing Systems	journal-article
+12	10.1109/isit.2008.4595103	2008	10.1109/isit.2008.4595103	Constructions of fully-diverse high-rate space-frequency codes for asynchronous cooperative relay networks	2008 IEEE International Symposium on Information Theory	proceedings-article
+13	10.1109/tase.2018.00011	2018	10.1109/tase.2018.00011	A Fully Abstract Encoding for Sub Asynchronous Pi Calculus	2018 International Symposium on Theoretical Aspects of Software Engineering (TASE)	proceedings-article
+14	10.1109/lics.2009.12	2009	10.1109/lics.2009.12	Trace Semantics is Fully Abstract	2009 24th Annual IEEE Symposium on Logic In Computer Science	proceedings-article
+15	10.1109/tnn.2005.863413	2006	10.1109/tnn.2005.863413	Basins of Attraction in Fully Asynchronous Discrete-Time Discrete-State Dynamic Networks	IEEE Transactions on Neural Networks	journal-article
+16	10.1109/async.2013.20	2013	10.1109/async.2013.20	An Asynchronous Dataflow Signal Processing Architecture to Minimize Energy per Op	2013 IEEE 19th International Symposium on Asynchronous Circuits and Systems	proceedings-article
+17	10.1109/tc.2004.88	2004	10.1109/tc.2004.88	An asynchronous dataflow FPGA architecture	IEEE Transactions on Computers	journal-article
+18	10.1016/j.tcs.2025.115073	2025	10.1016/j.tcs.2025.115073	Asynchronous fully-decentralized SGD in the cluster-based model	Theoretical Computer Science	journal-article
+19	10.1016/j.automatica.2021.110092	2022	10.1016/j.automatica.2021.110092	Fully asynchronous policy evaluation in distributed reinforcement learning over networks	Automatica	journal-article
+20	10.1109/ccgrid57682.2023.00018	2023	10.1109/ccgrid57682.2023.00018	An Asynchronous Dataflow-Driven Execution Model For Distributed Accelerator Computing	2023 IEEE/ACM 23rd International Symposium on Cluster, Cloud and Internet Computing (CCGrid)	proceedings-article
+21	10.1016/j.pmcj.2016.08.001	2017	10.1016/j.pmcj.2016.08.001	Opportunistic Time-of-Arrival localization in fully asynchronous wireless networks	Pervasive and Mobile Computing	journal-article
+22	10.1109/aicas57966.2023.10168602	2023	10.1109/aicas57966.2023.10168602	A Systolic Array with Activation Stationary Dataflow for Deep Fully-Connected Networks	2023 IEEE 5th International Conference on Artificial Intelligence Circuits and Systems (AICAS)	proceedings-article
+23	10.1109/tdsc.2025.3569608/mm1	None	10.1109/tdsc.2025.3569608/mm1	: Fully Asynchronous BFT Consensus Made Truly Scalable_supp1-3569608.pdf		component
+24	10.1109/icvc.1999.820837	None	10.1109/icvc.1999.820837	Asynchronous interaction between FSM and dataflow models	ICVC '99. 6th International Conference on VLSI and CAD (Cat. No.99EX361)	proceedings-article
+25	10.23919/eusipco47968.2020.9287589	2021	10.23919/eusipco47968.2020.9287589	Distributed Trace Ratio Optimization in Fully-Connected Sensor Networks	2020 28th European Signal Processing Conference (EUSIPCO)	proceedings-article
+26	10.1371/journal.pone.0066491	2013	10.1371/journal.pone.0066491	Dynamics of Random Boolean Networks under Fully Asynchronous Stochastic Update Based on Linear Representation	PLoS ONE	journal-article
+27	10.1007/bfb0039054	1990	10.1007/bfb0039054	On the asynchronous nature of communication in concurrent logic languages: A fully abstract model based on sequences	Lecture Notes in Computer Science	book-chapter
+28	10.1109/tsipn.2026.3712245	2026	10.1109/tsipn.2026.3712245	Fully Asynchronous Delayed Gradient Tracking Over Directed Networks	IEEE Transactions on Signal and Information Processing over Networks	journal-article
+29	10.1109/tsipn.2026.3712245/mm1	None	10.1109/tsipn.2026.3712245/mm1	Fully Asynchronous Delayed Gradient Tracking over Directed Networks_supp1-3712245.pdf		component
+30	10.1016/bs.adcom.2014.10.001	2015	10.1016/bs.adcom.2014.10.001	Sorting Networks on Maxeler Dataflow Supercomputing Systems	Advances in Computers	book-chapter
+31	10.1109/lics.2005.6	None	10.1109/lics.2005.6	Asynchronous Games 4: A Fully Complete Model of Propositional Linear Logic	20th Annual IEEE Symposium on Logic in Computer Science (LICS' 05)	proceedings-article
+32	10.1109/ddecs.2006.1649581	None	10.1109/ddecs.2006.1649581	Design of a Scalable Asynchronous Dataflow Processor	2006 IEEE Design and Diagnostics of Electronic Circuits and systems	proceedings-article
+33	10.1016/0893-6080(88)90471-6	1988	10.1016/0893-6080(88)90471-6	Analysis of dataflow diagrams by neural network	Neural Networks	journal-article
+34	10.1007/978-3-642-46475-1_12	1983	10.1007/978-3-642-46475-1_12	Fully Asynchronous Logical Description of Networks Comprising Feedback Loops	Lecture Notes in Biomathematics	book-chapter
+35	10.4324/9781410611482-9	2004	10.4324/9781410611482-9	The Online Interaction Learning Model: An Integrated Theoretical Framework for Learning Networks	Learning Together Online	book-chapter
+36	10.4324/9781410611482-8	2004	10.4324/9781410611482-8	What Are Asynchronous Learning Networks?	Learning Together Online	book-chapter
+37	10.1145/2554850.2554865	2014	10.1145/2554850.2554865	Fully abstract trace semantics for low-level isolation mechanisms	Proceedings of the 29th Annual ACM Symposium on Applied Computing	proceedings-article
+38	10.1007/978-3-540-73420-8_58	None	10.1007/978-3-540-73420-8_58	A Fully Abstract Trace Semantics for General References	Lecture Notes in Computer Science	book-chapter
+39	10.1007/bfb0040252	None	10.1007/bfb0040252	A generalized Kahn Principle for abstract asynchronous networks	Lecture Notes in Computer Science	book-chapter
+40	10.1109/compsac.2019.10282	2019	10.1109/compsac.2019.10282	An Evaluation of An Asynchronous Task Based Dataflow Approach For Uintah	2019 IEEE 43rd Annual Computer Software and Applications Conference (COMPSAC)	proceedings-article
+41	10.1007/springerreference_302663	None	10.1007/springerreference_302663	Asynchronous Learning Networks	SpringerReference	reference-entry
+42	10.1109/async65240.2025.00020	2025	10.1109/async65240.2025.00020	Translating General Slack Elastic Programs into Dataflow Circuits	2025 29th IEEE International Symposium on Asynchronous Circuits and Systems (ASYNC)	proceedings-article
+43	10.5220/0014692100004015	2026	10.5220/0014692100004015	A Simple Trace Semantics for Asynchronous Sequence Diagrams	Proceedings of the 21st International Conference on Evaluation of Novel Approaches to Software Engineering	proceedings-article
+44	10.1007/978-3-319-66125-4_1	2017	10.1007/978-3-319-66125-4_1	Implementing Neural Networks by Using the DataFlow Paradigm	Computer Communications and Networks	book-chapter
+45	10.1109/icccn.2017.8038468	2017	10.1109/icccn.2017.8038468	Uniform Circle Formation by Asynchronous Robots: A Fully-Distributed Approach	2017 26th International Conference on Computer Communication and Networks (ICCCN)	proceedings-article
+46	10.4324/9781410611482-20	2004	10.4324/9781410611482-20	Asynchronous Learning Networks: Looking Back and Looking Forward	Learning Together Online	book-chapter
+47	10.1016/j.cl.2015.03.002	2015	10.1016/j.cl.2015.03.002	Fully abstract trace semantics for protected module architectures	Computer Languages, Systems &amp; Structures	journal-article
+48	10.4324/9781410611482-16	2004	10.4324/9781410611482-16	Faculty Roles and Satisfaction in Asynchronous Learning Networks	Learning Together Online	book-chapter
+49	10.1201/9781003284789-3	2022	10.1201/9781003284789-3	Asynchronous Networks-on-Chip	Asynchronous On-Chip Networks and Fault-Tolerant Techniques	book-chapter
+50	10.1142/9789814354707_0015	1992	10.1142/9789814354707_0015	Performance Analysis of an Asynchronous Dataflow Computing Machine for Parallel Machine Learning	Artificial Intelligence Methods and Applications	book-chapter
+51	10.1109/tnn.2009.2027016	2009	10.1109/tnn.2009.2027016	Corrections to “Basins of Attraction in Fully Asynchronous Discrete-Time Discrete-State Dynamic Networks” [Mar 06 397-408]	IEEE Transactions on Neural Networks	journal-article
+52	10.1109/tsipn.2024.3444484/mm1	None	10.1109/tsipn.2024.3444484/mm1	R-FAST: Robust Fully-Asynchronous Stochastic Gradient Tracking over General Topology_supp1-3444484.pdf		component
+53	10.1109/tase.2025.3547338/mm1	None	10.1109/tase.2025.3547338/mm1	Fully Asynchronous Neuromorphic Perception for Mobile Robot Dodging with Loihi Chips_supp1-3547338.mp4		component
+54	10.1201/9781003284789-4	2022	10.1201/9781003284789-4	Optimizing Asynchronous On-Chip Networks	Asynchronous On-Chip Networks and Fault-Tolerant Techniques	book-chapter
+55	10.1109/iccs.2008.4737248	2008	10.1109/iccs.2008.4737248	Optimal fully adaptive power management protocols for asynchronous multi-hop ad hoc wireless networks	2008 11th IEEE Singapore International Conference on Communication Systems	proceedings-article
+56	10.1109/icnn.1993.298689	None	10.1109/icnn.1993.298689	An asynchronous neural network model for shortest path problem	IEEE International Conference on Neural Networks	proceedings-article
+57	10.1109/dsn.2004.1311952	2004	10.1109/dsn.2004.1311952	A Markov reward model for reliable synchronous dataflow system design	International Conference on Dependable Systems and Networks, 2004	proceedings-article
+58	10.1007/springerreference_301934	None	10.1007/springerreference_301934	Discourse in Asynchronous Learning Networks	SpringerReference	reference-entry
+59	10.1109/acsd.2016.22	2016	10.1109/acsd.2016.22	Asynchronous Dataflow De-Elastisation for Efficient Heterogeneous Synthesis	2016 16th International Conference on Application of Concurrency to System Design (ACSD)	proceedings-article
+60	10.1007/3-540-47813-2_18	2002	10.1007/3-540-47813-2_18	A Fully Abstract Model for Higher-Order Mobile Ambients	Lecture Notes in Computer Science	book-chapter
+61	10.1007/3-540-45105-6_88	2003	10.1007/3-540-45105-6_88	Asynchronous Genetic Algorithms for Heterogeneous Networks Using Coarse-Grained Dataflow	Lecture Notes in Computer Science	book-chapter
+62	10.1109/async.1996.494447	None	10.1109/async.1996.494447	Using partial orders for trace theoretic verification of asynchronous circuits	Proceedings Second International Symposium on Advanced Research in Asynchronous Circuits and Systems	proceedings-article
+63	10.1109/tsipn.2024.3444484	2024	10.1109/tsipn.2024.3444484	R-FAST: Robust Fully-Asynchronous Stochastic Gradient Tracking Over General Topology	IEEE Transactions on Signal and Information Processing over Networks	journal-article
+64	10.2139/ssrn.6875241	2026	10.2139/ssrn.6875241	Graph as App: A GPU Dataflow Substrate for Domain-Agnostic Living Networks		posted-content
+65	10.31390/gradschool_disstheses.4602	None	10.31390/gradschool_disstheses.4602	Neural Networks With Asynchronous Control.		dissertation
+66	10.1007/978-3-030-50426-7_8	2020	10.1007/978-3-030-50426-7_8	Fully-Asynchronous Fully-Implicit Variable-Order Variable-Timestep Simulation of Neural Networks	Lecture Notes in Computer Science	book-chapter
+67	10.1155/2023/9823068	2023	10.1155/2023/9823068	Retracted: AFLPC: An Asynchronous Federated Learning Privacy-Preserving Computing Model Applied to 5G-V2X	Security and Communication Networks	journal-article
+68	10.1007/978-3-030-13803-5_9	2019	10.1007/978-3-030-13803-5_9	Bitcoin Mining Using Maxeler DataFlow Computers	Computer Communications and Networks	book-chapter
+69	10.1109/apmc.2008.4958484	2008	10.1109/apmc.2008.4958484	A fully scalable, asynchronous parallel MLFMA	2008 Asia-Pacific Microwave Conference	proceedings-article
+70	10.1201/9781420000016.ch2	2002	10.1201/9781420000016.ch2	Asynchronous Transfer Mode (ATM) Networks	Building Broadband Networks	book-chapter
+71	10.1007/978-3-319-66125-4_3	2017	10.1007/978-3-319-66125-4_3	Binary Search in the DataFlow Paradigm	Computer Communications and Networks	book-chapter
+72	10.2172/1078549	2013	10.2172/1078549	Compositional Dataflow Via Abstract Transition Systems		report
+73	10.1109/iscas.2001.921979	None	10.1109/iscas.2001.921979	A new resource constrained asynchronous scheduling method through transformation of dataflow graphs	ISCAS 2001. The 2001 IEEE International Symposium on Circuits and Systems (Cat. No.01CH37196)	proceedings-article
+74	10.1109/iccd58817.2023.00070	2023	10.1109/iccd58817.2023.00070	Conveyor: Towards Asynchronous Dataflow in Systolic Array to Exploit Unstructured Sparsity	2023 IEEE 41st International Conference on Computer Design (ICCD)	proceedings-article
+75	10.1007/978-3-540-31987-0_29	2005	10.1007/978-3-540-31987-0_29	Java JR: Fully Abstract Trace Semantics for a Core Java Language	Lecture Notes in Computer Science	book-chapter
+76	10.1109/pdp.2016.34	2016	10.1109/pdp.2016.34	DKPN: A Composite Dataflow/Kahn Process Networks Execution Model	2016 24th Euromicro International Conference on Parallel, Distributed, and Network-Based Processing (PDP)	proceedings-article
+77	10.1142/9789812772596_0012	2006	10.1142/9789812772596_0012	The Model of PCF in S is Fully Abstract	Domain-Theoretic Foundations of Functional Programming	book-chapter
+78	10.1306/c1ea4cca-16c9-11d7-8645000102c1865d	1978	10.1306/c1ea4cca-16c9-11d7-8645000102c1865d	Model for Trace-Element Partitioning in Limestones: ABSTRACT	AAPG Bulletin	journal-article
+79	10.1016/s0946-672x(03)80004-4	2003	10.1016/s0946-672x(03)80004-4	Development of zinc deficiency in 65Zn labeled, fully grown rats as a model for adult individuals	Journal of Trace Elements in Medicine and Biology	journal-article
+80	10.1016/j.scico.2013.10.002	2014	10.1016/j.scico.2013.10.002	A fully abstract trace-based semantics for reasoning about backward compatibility of class libraries	Science of Computer Programming	journal-article
+81	10.1201/9781003284789-2	2022	10.1201/9781003284789-2	Asynchronous Circuits	Asynchronous On-Chip Networks and Fault-Tolerant Techniques	book-chapter
+82	10.1021/acsami.0c14704.s002	None	10.1021/acsami.0c14704.s002	Fully Inkjet-Printed Mesoporous SnO2Based Ultrasensitive Gas Sensors for Trace Amount NO2 Detection		component
+83	10.5821/dissertation-2117-95538	None	10.5821/dissertation-2117-95538	Atomic dataflow model		dissertation
+84	10.1093/geroni/igac059.1703	2022	10.1093/geroni/igac059.1703	BRINGING INTERACTIVITY TO FULLY ASYNCHRONOUS PROGRAMS	Innovation in Aging	journal-article
+85	10.1021/acsami.0c14704.s001	None	10.1021/acsami.0c14704.s001	Fully Inkjet-Printed Mesoporous SnO2Based Ultrasensitive Gas Sensors for Trace Amount NO2 Detection		component
+86	10.1109/icecs.2012.6463674	2012	10.1109/icecs.2012.6463674	A fully complementary and fully differential self-biased asynchronous CMOS comparator	2012 19th IEEE International Conference on Electronics, Circuits, and Systems (ICECS 2012)	proceedings-article
+87	10.3724/sp.j.1001.2008.02181	2008	10.3724/sp.j.1001.2008.02181	Dataflow-Style Java Parallel Programming Model and Runtime Optimization	Journal of Software	journal-article
+88	10.1109/tsp.2010.2052613	2010	10.1109/tsp.2010.2052613	Distributed Adaptive Node-Specific Signal Estimation in Fully Connected Sensor Networks—Part II: Simultaneous and Asynchronous Node Updating	IEEE Transactions on Signal Processing	journal-article
+89	10.3233/fi-1995-22128	1995	10.3233/fi-1995-22128	AN ALGEBRA OF DATAFLOW NETWORKS	Fundamenta Informaticae	journal-article
+90	10.1016/0893-6080(88)90111-6	1988	10.1016/0893-6080(88)90111-6	Chaotic relaxation in concurrent asynchronous neural networks	Neural Networks	journal-article
+91	10.1007/978-3-319-66125-4_2	2017	10.1007/978-3-319-66125-4_2	Solving the Poisson Equation by Using DataFlow Technology	Computer Communications and Networks	book-chapter
+92	10.1103/physrevresearch.4.013203	2022	10.1103/physrevresearch.4.013203	Fully device-independent model on quantum networks	Physical Review Research	journal-article
+93	10.70675/3bc3906azc7fez413az854aze520767f5dd7	None	10.70675/3bc3906azc7fez413az854aze520767f5dd7	Distributed estimation and optimization in asynchronous networks		dissertation
+94	10.1145/3729256	2025	10.1145/3729256	Ripple: Asynchronous Programming for Spatial Dataflow Architectures	Proceedings of the ACM on Programming Languages	journal-article
+95	10.1007/978-3-319-16229-4_1	2015	10.1007/978-3-319-16229-4_1	The DataFlow Paradigm	Computer Communications and Networks	book-chapter
+96	10.70675/79450ec3z4ba3z4908za267z58ffed3915eb	None	10.70675/79450ec3z4ba3z4908za267z58ffed3915eb	Joint design of deep neural networks and FPGA dataflow architectures for semantic segmentation in autonomous vehicles		dissertation
+97	10.1109/ijcnn.2015.7280804	2015	10.1109/ijcnn.2015.7280804	A novel hardware-efficient cochlea model based on asynchronous cellular automaton	2015 International Joint Conference on Neural Networks (IJCNN)	proceedings-article
+98	10.1109/dasip.2014.7115623	2014	10.1109/dasip.2014.7115623	Execution trace graph analysis of dataflow programs: Bounded buffer scheduling and deadlock recovery using model predictive control	Proceedings of the 2014 Conference on Design and Architectures for Signal and Image Processing	proceedings-article
+99	10.1007/s42979-023-02372-1	2023	10.1007/s42979-023-02372-1	A Fully Physics-Based CMOS Camera Model Within a 3-D Virtual World Ray Trace Simulation Engine	SN Computer Science	journal-article
+100	10.1145/2020373.2020377	2010	10.1145/2020373.2020377	Asynchronous PGAS runtime for Myrinet networks	Proceedings of the Fourth Conference on Partitioned Global Address Space Programming Model	proceedings-article

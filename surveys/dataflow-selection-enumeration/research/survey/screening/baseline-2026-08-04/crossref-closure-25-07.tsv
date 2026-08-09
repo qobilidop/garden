@@ -1,0 +1,101 @@
+rank	source_id	year	doi	title	venue	type
+1	10.1109/mwscas.1990.140833	None	10.1109/mwscas.1990.140833	Colored Petri net models of concurrent Ada programs	Proceedings of the 33rd Midwest Symposium on Circuits and Systems	proceedings-article
+2	10.1007/978-3-642-13675-7_11	2010	10.1007/978-3-642-13675-7_11	Factorization Properties of Symbolic Unfoldings of Colored Petri Nets	Lecture Notes in Computer Science	book-chapter
+3	10.7551/mitpress/8811.003.0008	2011	10.7551/mitpress/8811.003.0008	Colored Petri Nets	Modeling Business Processes	book-chapter
+4	10.1201/9781439808856-8	2018	10.1201/9781439808856-8	Colored Petri Net	System Modeling and Control with Resource-Oriented Petri Nets	book-chapter
+5	10.1201/9781439808856-6	2018	10.1201/9781439808856-6	Colored Petri Net ���������������������������������������������������������������������������������������������� 3	System Modeling and Control with Resource-Oriented Petri Nets	book-chapter
+6	10.1016/0020-0255(91)90051-u	1991	10.1016/0020-0255(91)90051-u	Extended colored Petri net: An efficient tool for analyzing concurrent systems	Information Sciences	journal-article
+7	10.5772/5322	2008	10.5772/5322	Scheduling Analysis of FMS Using the Unfolding Time Petri Nets	Petri Net, Theory and Applications	book-chapter
+8	10.21203/rs.3.rs-2907003/v1	2023	10.21203/rs.3.rs-2907003/v1	A Fuzzy Colored Petri-Net Approach for Hybrid Intrusion Prediction		posted-content
+9	10.1201/9781439808856.ch3	2009	10.1201/9781439808856.ch3	Colored Petri Net	Automation and Control Engineering	book-chapter
+10	10.1109/synasc.2005.26	2005	10.1109/synasc.2005.26	Colored Petri nets state-space reduction via symbolic execution	Seventh International Symposium on Symbolic and Numeric Algorithms for Scientific Computing (SYNASC'05)	proceedings-article
+11	10.1109/wsc.2012.6465203	2012	10.1109/wsc.2012.6465203	An efficient method for unfolding colored Petri nets	Proceedings Title: Proceedings of the 2012 Winter Simulation Conference (WSC)	proceedings-article
+12	10.1109/dac.1996.545546	None	10.1109/dac.1996.545546	Verification of asynchronous circuits using time Petri net unfolding	33rd Design Automation Conference Proceedings, 1996	proceedings-article
+13	10.7763/ijmo.2012.v2.131	2012	10.7763/ijmo.2012.v2.131	A New Approach to Object Oriented Software Simulation Based on UML Statechart and Colored Petri Net	International Journal of Modeling and Optimization	journal-article
+14	10.1109/icnds.2009.62	2009	10.1109/icnds.2009.62	Analysis of Concurrent Security Protocols Using Colored Petri Nets	2009 International Conference on Networking and Digital Society	proceedings-article
+15	10.23940/ijpe.18.02.p10.290299	2018	10.23940/ijpe.18.02.p10.290299	Adaptive Short-Circuit Current Calculation Model based on Colored Petri Net	International Journal of Performability Engineering	journal-article
+16	10.3390/en19092162	2026	10.3390/en19092162	Fault Diagnosis for Active Distribution Network Based on Colored and Fuzzy Colored Petri Net	Energies	journal-article
+17	10.4304/jnw.9.7.1883-1891	2014	10.4304/jnw.9.7.1883-1891	A Network Attack Model based on Colored Petri Net	Journal of Networks	journal-article
+18	10.2174/9789815322705125010006	2025	10.2174/9789815322705125010006	Theoretical Aspects of Petri Nets	Analysis of Boundedness and Safeness in a Petri Net-Based Specification of Concurrent Control Systems	book-chapter
+19	10.1109/mwscas.2004.1354378	None	10.1109/mwscas.2004.1354378	On some analysis properties of colored petri net using underlying net	The 2004 47th Midwest Symposium on Circuits and Systems, 2004. MWSCAS '04.	proceedings-article
+20	10.1109/cimat.1994.389098	None	10.1109/cimat.1994.389098	A zero-one programming of Petri nets to colored Petri net transformation	Proceedings of the Fourth International Conference on Computer Integrated Manufacturing and Automation Technology	proceedings-article
+21	10.1061/41064(358)223	2009	10.1061/41064(358)223	Dynamic Model of Transit Signal Priority on Colored Time Petri Net	ICCTP 2009	proceedings-article
+22	10.1109/icii.2001.983016	None	10.1109/icii.2001.983016	Modeling of SET protocol based on UML and colored Petri net	2001 International Conferences on Info-Tech and Info-Net. Proceedings (Cat. No.01EX479)	proceedings-article
+23	10.1061/9780784412442.203	2012	10.1061/9780784412442.203	Research on Modeling of Cold Chain Distribution Based on Timed Colored Petri Net	CICTP 2012	proceedings-article
+24	10.2174/97898153227051250101	2025	10.2174/97898153227051250101	Analysis of Boundedness and Safeness in a Petri Net-Based Specification of Concurrent Control Systems		monograph
+25	10.17706/jcp.13.2.236-243	2018	10.17706/jcp.13.2.236-243	Weak Consistency Model in Distributed Systems Using Hierarchical Colored Petri Net	Journal of Computers	journal-article
+26	10.1201/b17399-173	2014	10.1201/b17399-173	A Colored Petri Net model for railway track maintenance with two-level inspection	Safety and Reliability: Methodology and Applications	book-chapter
+27	10.2514/6.1991-3716	1991	10.2514/6.1991-3716	Verifying concurrent system behavior with Petri net invariants	8th Computing in Aerospace Conference	proceedings-article
+28	10.1109/bmei.2010.5639812	2010	10.1109/bmei.2010.5639812	Colored Petri net based workflow model mapping	2010 3rd International Conference on Biomedical Engineering and Informatics	proceedings-article
+29	10.2514/5.9781600866296.0181.0192	1993	10.2514/5.9781600866296.0181.0192	Colored Petri Net Model of Command and Control Nodes	Toward a Science of Command, Control, and Communications	book-chapter
+30	10.46298/.9351	2023	10.46298/.9351	Methods for Efficient Unfolding of Colored Petri Nets	Fundamenta Informaticae	journal-article
+31	10.5391/jkiis.2006.16.3.291	2006	10.5391/jkiis.2006.16.3.291	Fuzzy Colored Timed Petri Nets for Context Inference	Journal of Korean Institute of Intelligent Systems	journal-article
+32	10.1201/9781003762416-55	2026	10.1201/9781003762416-55	An application of restricted colored Petri Nets for Concurrent Engineering in construction	Advances in Concurrent Engineering	book-chapter
+33	10.4028/www.scientific.net/amm.404.618	2013	10.4028/www.scientific.net/amm.404.618	Two-Tone Colored Petri Net and its Application in PLC	Applied Mechanics and Materials	journal-article
+34	10.1299/jsmeicone.2015.23._icone23-1_20	2015	10.1299/jsmeicone.2015.23._icone23-1_20	ICONE23-1031 FUNCTION-CENTERED MODELING OF THE DIGITAL INSTRUMENT AND CONTROL SYSTEM USING THE COLORED PETRI NET	The Proceedings of the International Conference on Nuclear Engineering (ICONE)	journal-article
+35	10.1007/978-981-19-6309-4_1	2022	10.1007/978-981-19-6309-4_1	Elementary Net Systems	Petri Nets	book-chapter
+36	10.1177/0037549703038876	2003	10.1177/0037549703038876	Colored Petri Net Modules of Complex Selecting Criteria	SIMULATION	journal-article
+37	10.4304/jsw.8.12.3152-3157	2013	10.4304/jsw.8.12.3152-3157	The Performance Analysis of Web Service Composition Based on Timed Colored Petri Net	Journal of Software	journal-article
+38	10.1007/bfb0097780	1999	10.1007/bfb0097780	Stochastic colored petri net models for rainbow optical networks	Lecture Notes in Computer Science	book-chapter
+39	10.1109/apscc.2007.4414491	2007	10.1109/apscc.2007.4414491	Colored Petri Net Based Automatic Service Composition	The 2nd IEEE Asia-Pacific Service Computing Conference (APSCC 2007)	proceedings-article
+40	10.1007/3-540-45397-0_23	2001	10.1007/3-540-45397-0_23	A Cooperative Petri Net Editor	Lecture Notes in Computer Science	book-chapter
+41	10.1109/wodes.2002.1167680	None	10.1109/wodes.2002.1167680	Undirected colored Petri net for modelling and supervisory control of AGV systems	Sixth International Workshop on Discrete Event Systems, 2002. Proceedings.	proceedings-article
+42	10.17485/ijst/2015/v8i35/77633	2015	10.17485/ijst/2015/v8i35/77633	Modeling Timestamp Ordering Method Using Colored Petri Net	Indian Journal of Science and Technology	journal-article
+43	10.1109/iccke.2011.6413320	2011	10.1109/iccke.2011.6413320	Modeling a resource management method using hierarchical colored Petri net	2011 1st International eConference on Computer and Knowledge Engineering (ICCKE)	proceedings-article
+44	10.1007/0-8176-4488-1_3	2006	10.1007/0-8176-4488-1_3	The Supervision of Petri Nets	Systems and Control: Foundations &amp; Applications	book-chapter
+45	10.1109/icecct.2015.7226095	2015	10.1109/icecct.2015.7226095	Rectangular array languages generated by a Colored Petri net	2015 IEEE International Conference on Electrical, Computer and Communication Technologies (ICECCT)	proceedings-article
+46	10.1109/tencon.2016.7848436	2016	10.1109/tencon.2016.7848436	Interface driven service discovery: Colored Petri-Net based approach	2016 IEEE Region 10 Conference (TENCON)	proceedings-article
+47	10.1007/0-8176-4488-1_2	2006	10.1007/0-8176-4488-1_2	An Introduction to Petri Nets	Systems and Control: Foundations &amp; Applications	book-chapter
+48	10.1109/hicss.1990.205211	None	10.1109/hicss.1990.205211	Petri net models of concurrent Ada programs	Twenty-Third Annual Hawaii International Conference on System Sciences	proceedings-article
+49	10.1109/eei63073.2024.10696035	2024	10.1109/eei63073.2024.10696035	Workflow Net Based on Colored Petri Net: A Modeling Method for MBSE Modeling Activities	2024 6th International Conference on Electronic Engineering and Informatics (EEI)	proceedings-article
+50	10.1115/imece1997-0024	1997	10.1115/imece1997-0024	Petri Net Modeling for Disassembly Process Planning	Concurrent Product Design and Environmentally Conscious Manufacturing	proceedings-article
+51	10.1007/978-3-030-51831-8_23	2020	10.1007/978-3-030-51831-8_23	MCC: A Tool for Unfolding Colored Petri Nets in PNML Format	Lecture Notes in Computer Science	book-chapter
+52	10.3901/jme.2011.10.185	2011	10.3901/jme.2011.10.185	System Maintainability Modeling Method Based on Colored Stochastic Time Petri Net	Journal of Mechanical Engineering	journal-article
+53	10.1007/0-8176-4488-1_5	2006	10.1007/0-8176-4488-1_5	Decentralized Supervision of Petri Nets	Systems and Control: Foundations &amp; Applications	book-chapter
+54	10.1177/1063293x10379765	2010	10.1177/1063293x10379765	Petri Net-based Coordination Component for Collaborative Design	Concurrent Engineering	journal-article
+55	10.1007/3-540-45397-0_8	2001	10.1007/3-540-45397-0_8	OB(PN)2: An Object Based Petri Net Programming Notation	Lecture Notes in Computer Science	book-chapter
+56	10.1109/eit63098.2024.10762064	2024	10.1109/eit63098.2024.10762064	Analysis of virtual coupling control parameters based on colored Petri net	2024 3rd International Conference on Electronics and Information Technology (EIT)	proceedings-article
+57	10.5013/ijssst.a.17.25.11	2016	10.5013/ijssst.a.17.25.11	Optimization Analysis of Hospital Business Process Based on Colored Time Petri Net	International Journal of Simulation: Systems, Science &amp; Technology	journal-article
+58	10.1049/cp.2011.0480	2011	10.1049/cp.2011.0480	Optimal switching operation using knowledge based colored petri net	International Conference on Sustainable Energy and Intelligent Systems (SEISCON 2011)	proceedings-article
+59	10.1109/acomp.2017.23	2017	10.1109/acomp.2017.23	Modeling and Simulation of ISO 8583 Transaction Using Timed Colored Petri Net	2017 International Conference on Advanced Computing and Applications (ACOMP)	proceedings-article
+60	10.1016/s0377-2217(01)00026-1	2002	10.1016/s0377-2217(01)00026-1	Task net: Transactional workflow model based on colored Petri net	European Journal of Operational Research	journal-article
+61	10.1109/etfa.1995.496808	None	10.1109/etfa.1995.496808	Simulation of colored Petri nets in concurrent logic programming	Proceedings 1995 INRIA/IEEE Symposium on Emerging Technologies and Factory Automation. ETFA'95	proceedings-article
+62	10.1109/tla.2017.7912599	2017	10.1109/tla.2017.7912599	Unfolding for Time Petri Net	IEEE Latin America Transactions	journal-article
+63	10.1109/apscc.2007.16	2007	10.1109/apscc.2007.16	Colored Petri Net Based Automatic Service Composition	The 2nd IEEE Asia-Pacific Service Computing Conference (APSCC 2007)	proceedings-article
+64	10.1109/iccsn.2009.58	2009	10.1109/iccsn.2009.58	Verification and Analysis of Access Control Policy with Colored Petri Net	2009 International Conference on Communication Software and Networks	proceedings-article
+65	10.1109/mmmc.2006.1651321	None	10.1109/mmmc.2006.1651321	Modeling of Web-based Collaborative Negotiation Systems Using Colored Petri Net	2006 12th International Multi-Media Modelling Conference	proceedings-article
+66	10.1109/ieec.2010.5533237	2010	10.1109/ieec.2010.5533237	Generating Test Cases Using Colored Petri Net	2010 2nd International Symposium on Information Engineering and Electronic Commerce	proceedings-article
+67	10.1109/icirt.2018.8641674	2018	10.1109/icirt.2018.8641674	Using Colored Petri net for Level-Crossing safety analysis	2018 International Conference on Intelligent Rail Transportation (ICIRT)	proceedings-article
+68	10.2174/9789815322705125010004	2025	10.2174/9789815322705125010004	Acknowledgement	Analysis of Boundedness and Safeness in a Petri Net-Based Specification of Concurrent Control Systems	book-chapter
+69	10.1109/isic.2002.1157863	None	10.1109/isic.2002.1157863	Colored Petri net control of OR-logic	Proceedings of the IEEE Internatinal Symposium on Intelligent Control	proceedings-article
+70	10.1016/0026-2714(91)90004-q	1991	10.1016/0026-2714(91)90004-q	Petri net models of concurrent Ada programs	Microelectronics Reliability	journal-article
+71	10.2174/9789815322705125010001	2025	10.2174/9789815322705125010001	Foreword	Analysis of Boundedness and Safeness in a Petri Net-Based Specification of Concurrent Control Systems	book-chapter
+72	10.2174/9789815322705125010014	2025	10.2174/9789815322705125010014	Acronyms	Analysis of Boundedness and Safeness in a Petri Net-Based Specification of Concurrent Control Systems	book-chapter
+73	10.2174/9789815322705125010003	2025	10.2174/9789815322705125010003	Dedication	Analysis of Boundedness and Safeness in a Petri Net-Based Specification of Concurrent Control Systems	book-chapter
+74	10.1109/icsmc.1997.637370	None	10.1109/icsmc.1997.637370	A concurrency characteristic in Petri net unfolding	1997 IEEE International Conference on Systems, Man, and Cybernetics. Computational Cybernetics and Simulation	proceedings-article
+75	10.2174/9789815322705125010002	2025	10.2174/9789815322705125010002	Preface	Analysis of Boundedness and Safeness in a Petri Net-Based Specification of Concurrent Control Systems	book-chapter
+76	10.1109/lpe.2002.1029618	None	10.1109/lpe.2002.1029618	Power estimation of sequential circuits using hierarchical colored hardware Petri net modeling	Proceedings of the International Symposium on Low Power Electronics and Design	proceedings-article
+77	10.1007/978-3-540-76719-0_20	None	10.1007/978-3-540-76719-0_20	Enhancing Web-Based Adaptive Learning with Colored Timed Petri Net	Lecture Notes in Computer Science	book-chapter
+78	10.1007/0-8176-4488-1_6	2006	10.1007/0-8176-4488-1_6	Deadlock and Liveness Properties of Petri Nets	Systems and Control: Foundations &amp; Applications	book-chapter
+79	10.1007/0-8176-4488-1_9	2006	10.1007/0-8176-4488-1_9	DES Control of Concurrent Hybrid Systems	Systems and Control: Foundations &amp; Applications	book-chapter
+80	10.1109/ptc.2003.1304751	None	10.1109/ptc.2003.1304751	A colored Petri-Net model for load-transfer in MRT power systems	2003 IEEE Bologna Power Tech Conference Proceedings,	proceedings-article
+81	10.1109/access.2019.2955282	2019	10.1109/access.2019.2955282	Colored Petri Net Based Cache Side Channel Vulnerability Evaluation	IEEE Access	journal-article
+82	10.3390/app122312385	2022	10.3390/app122312385	Timed Colored Petri Net-Based Event Generators for Web Systems Simulation	Applied Sciences	journal-article
+83	10.3390/info15020118	2024	10.3390/info15020118	Formal Security Analysis of ISA100.11a Standard Protocol Based on Colored Petri Net Tool	Information	journal-article
+84	10.1109/csip.2012.6308919	2012	10.1109/csip.2012.6308919	fault diagnosis mODEL based on weight Fuzzy Colored Petri NeT	2012 International Conference on Computer Science and Information Processing (CSIP)	proceedings-article
+85	10.1109/icsmc.2004.1401303	None	10.1109/icsmc.2004.1401303	Modeling inheritance anomaly in concurrent systems using colored Petri nets	2004 IEEE International Conference on Systems, Man and Cybernetics (IEEE Cat. No.04CH37583)	proceedings-article
+86	10.1109/iecon.2010.5675312	2010	10.1109/iecon.2010.5675312	Colored Petri Net model of the Session Initiation Protocol (SIP)	IECON 2010 - 36th Annual Conference on IEEE Industrial Electronics Society	proceedings-article
+87	10.11591/ijins.v2i5.3471	2013	10.11591/ijins.v2i5.3471	Modeling Kerberos Authentication Protocol Using Colored Petri Net	International Journal of Information and Network Security (IJINS)	journal-article
+88	10.1109/itc-cscc55581.2022.9895042	2022	10.1109/itc-cscc55581.2022.9895042	Modeling Shor's Algorithm with Colored Petri Net	2022 37th International Technical Conference on Circuits/Systems, Computers and Communications (ITC-CSCC)	proceedings-article
+89	10.3390/s22093418	2022	10.3390/s22093418	Colored Petri Net Modelling and Evaluation of Drone Inspection Methods for Distribution Networks	Sensors	journal-article
+90	10.1109/icsmc.1991.169975	None	10.1109/icsmc.1991.169975	A colored Petri net model of distributed tactical decision making	Conference Proceedings 1991 IEEE International Conference on Systems, Man, and Cybernetics	proceedings-article
+91	10.1109/tisc.2010.5714602	2010	10.1109/tisc.2010.5714602	Transformation of an activity model into a Colored Petri Net model	Trendz in Information Sciences &amp; Computing(TISC2010)	proceedings-article
+92	10.1109/fgcns.2008.149	2008	10.1109/fgcns.2008.149	Colored Petri Net Representation of RDF Models	2008 Second International Conference on Future Generation Communication and Networking Symposia	proceedings-article
+93	10.1109/ihmsc.2009.89	2009	10.1109/ihmsc.2009.89	Application of Colored Petri Net in Command and Control System	2009 International Conference on Intelligent Human-Machine Systems and Cybernetics	proceedings-article
+94	10.1109/coase.2008.4626438	2008	10.1109/coase.2008.4626438	Unified Colored Timed Petri net models for the adaptive control of disassembly systems	2008 IEEE International Conference on Automation Science and Engineering	proceedings-article
+95	10.1515/auto-2021-0175	2024	10.1515/auto-2021-0175	Petri net based diagnostic approach for concurrent discrete event systems	at - Automatisierungstechnik	journal-article
+96	10.2174/9789815322705125010015	2025	10.2174/9789815322705125010015	Subject Index	Analysis of Boundedness and Safeness in a Petri Net-Based Specification of Concurrent Control Systems	book-chapter
+97	10.2139/ssrn.7193125	2026	10.2139/ssrn.7193125	POOH: A research software platform for Petri-net-based concurrent control systems and XT/R-exact hypergraph decomposition		posted-content
+98	10.2174/9789815322705125010013	2025	10.2174/9789815322705125010013	Appendix A	Analysis of Boundedness and Safeness in a Petri Net-Based Specification of Concurrent Control Systems	book-chapter
+99	10.2174/9789815322705125010005	2025	10.2174/9789815322705125010005	Control Systems	Analysis of Boundedness and Safeness in a Petri Net-Based Specification of Concurrent Control Systems	book-chapter
+100	10.1007/3-540-56863-8_65	1993	10.1007/3-540-56863-8_65	A colored Petri Net model for a naval command and control system	Lecture Notes in Computer Science	book-chapter
