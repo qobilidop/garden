@@ -1,7 +1,6 @@
-Citations use the campaign's citekey handles (`vandinter2021`),
-resolved in the references; claims resting on abstract-only evidence
-are marked (A). The frozen method record, claim ledger, and per-work
-evidence notes live in the campaign record linked above.
+Citations resting on abstract-only evidence carry an "abstract-only"
+marker. The frozen method record, claim ledger, and per-work evidence
+notes live in the campaign record linked above.
 
 = Introduction
 
@@ -14,7 +13,7 @@ across medicine (where evidence synthesis is core infrastructure),
 software engineering (which imported the method), and general venues.
 
 This paper maps that literature. Following the systematic-map genre
-(`petersen2008`), it aims at classified coverage rather than pooled
+@petersen2008, it aims at classified coverage rather than pooled
 effect estimates, asking four questions:
 
 - *RQ1 (landscape):* What methods, systems, and workflows exist for
@@ -38,17 +37,18 @@ guidance sanctions for AI, which we take up in the discussion.
 = Background
 
 The pre-LLM baseline is well documented. van Dinter et al.'s
-landscape review (`vandinter2021`: 41 automation studies, 2006–2020)
-found every study in Kitchenham's conducting-the-review phase
-(`kitchenham2007`) — screening dominant, appraisal nearly empty,
-planning and reporting untouched, and exactly one deep-learning study
-in the corpus. Napoleão et al.'s cross-domain mapping
-(`napoleao2021`) quantified the adoption gap between medicine and
-software engineering: eight practice-adopted screening tools in
-medicine versus two in SE. The classic method canon — review
-guidelines (`kitchenham2007`), mapping-study procedure
-(`petersen2008`), snowballing (`wohlin2014`), and PRISMA 2020
-reporting (`page2021`) — predates LLMs and supplies both the
+landscape review (#cite(<vandinter2021>, form: "year")#[;] 41 automation
+studies, 2006–2020) found every study in Kitchenham's
+conducting-the-review phase (#cite(<kitchenham2007>, form: "year")) —
+screening dominant, appraisal nearly empty, planning and reporting
+untouched, and exactly one deep-learning study in the corpus.
+Napoleão et al.'s cross-domain mapping
+(#cite(<napoleao2021>, form: "year")) quantified the adoption gap
+between medicine and software engineering: eight practice-adopted
+screening tools in medicine versus two in SE. The classic method canon — review
+guidelines @kitchenham2007, mapping-study procedure
+@petersen2008, snowballing @wohlin2014, and PRISMA 2020
+reporting @page2021 — predates LLMs and supplies both the
 vocabulary of this map and the method under automation pressure.
 Pre-LLM machine classifiers for screening (text mining for study
 identification, Cochrane's classifiers) enter this map as background
@@ -77,11 +77,11 @@ strongest tier (Fable) with persisted rationales. Wave-1
 dispositions: 139 includes.
 
 *Snowball.* One backward+forward round from the 139 includes via
-OpenAlex (`wohlin2014`): 1,204 new candidates after a
+OpenAlex @wohlin2014: 1,204 new candidates after a
 title-vocabulary pre-filter; 323 without AI-side vocabulary excluded
 en bloc; 881 screened single-pass (Haiku-class); all 624 resulting
 includes/uncertains then re-judged by an adversarial verification
-pass (Sonnet-class), which confirmed 533 and overturned ~79 (~13%) —
+pass (Sonnet-class), which confirmed 533 and overturned \~79 (\~13%) —
 a measured single-pass error rate. Iteration yield did not decay;
 coverage is bounded by the one-round cap.
 
@@ -96,15 +96,15 @@ signal only.
 
 *Deep reads.* 25 works selected by facet-guided choice for evidence
 extraction: 20 read in full text (PDFs archived, transcripts
-retained), 5 abstract-only. Claims resting on abstract-only evidence
-are marked (A). Every claim below cites its evidence note in the
-campaign record.
+retained), 5 abstract-only. Citations resting on abstract-only
+evidence carry an "abstract-only" marker. Every claim below cites its
+evidence note in the campaign record.
 
 *Deviations and erratum.* Seven in-campaign deviations are logged in
 the campaign's decision records (notably the snowball pre-filter, the
 single-pass wave, and an autonomous browser-download escalation). A
-post-freeze audit found ~22 residual duplicate-title groups (~26
-excess rows, ~3.9% of includes) that key normalization missed; counts
+post-freeze audit found \~22 residual duplicate-title groups (\~26
+excess rows, \~3.9% of includes) that key normalization missed; counts
 are reported as frozen.
 
 #figure(
@@ -133,12 +133,12 @@ third of everything — but the formerly empty ends are now populated.
 A reporting/guidance cluster exists (22 reporting-stage plus 36
 guideline-contribution works), and end-to-end systems are a real
 class of 90 works, neither of which had any pre-LLM presence
-(`vandinter2021`). Appraisal remains the thinnest evaluated stage,
-consistent with it also being the hardest (`woelfle2024`).
+@vandinter2021. Appraisal remains the thinnest evaluated stage,
+consistent with it also being the hardest @woelfle2024.
 
 The strongest-documented end-to-end system is instructive for what it
-does _not_ contain. MedSR-Copilot (`huang2026`: four subagents, a
-fine-tuned risk-of-bias model, a deterministic synthesis engine)
+does _not_ contain. MedSR-Copilot @huang2026 — four subagents, a
+fine-tuned risk-of-bias model, a deterministic synthesis engine —
 reaches 63.6% end-to-end conclusion accuracy against a 45.3% best
 baseline on a 100-review benchmark with no debate, voting, or agent
 redundancy anywhere — reliability comes from task decomposition,
@@ -148,16 +148,17 @@ ablations rank two-stage extraction (−14.9pp) far above retrieval-RAG
 calibrate how far "end-to-end" remains from unattended use. In the
 living-evidence lifecycle the tail is thinner still: across 34
 inventoried tools, exactly one serves the publication-update phase
-(`song2026`).
+@song2026.
 
 Two gaps persist from the pre-LLM era. Software engineering holds 17
 setting-classified includes against medicine's 412 — the
-order-of-magnitude evidence gap `napoleao2021` measured has survived
+order-of-magnitude evidence gap #cite(<napoleao2021>, form: "prose")
+measured has survived
 the LLM transition, and SE has no guidance or norms work of its own.
 And adoption runs ahead of disclosure: the field's own coordination
 body reports that published reviews rarely disclose advanced AI use
-(`oconnor2024`), even as concrete disclosed-adoption exemplars exist
-(`mughal2026`).
+@oconnor2024, even as concrete disclosed-adoption exemplars exist
+@mughal2026.
 
 = RQ2 — Reliability: abundant, but mismeasured
 
@@ -171,40 +172,41 @@ found 24% reporting complete confusion matrices, 10% reporting MCC,
 and 59% leaning on accuracy, which its reanalyses show is invalid
 under screening's class imbalance: an accuracy-best model lost 63.3%
 of relevant evidence where the cost-weighted-best lost 5.8%
-(`madeyski2025`). Even the choice between pooled and per-review
-aggregation changes the answer on the same data (`huotala2025`).
+@madeyski2025. Even the choice between pooled and per-review
+aggregation changes the answer on the same data @huotala2025.
 
 *What the numbers show.* No model in a 9-LLM × 24-review sweep met
 the field's deployment bar of recall ≥ 0.95 at precision ≈ 0.50
-(`huotala2025`). Prompt wording alone swung GPT-3.5-era screening
-sensitivity from 62% to junior-reviewer level (`gargari2023`). In the
+@huotala2025. Prompt wording alone swung GPT-3.5-era screening
+sensitivity from 62% to junior-reviewer level @gargari2023. In the
 one controlled same-prompt generation comparison, upgrading GPT-3.5
 to GPT-4 Turbo moved specificity 0.51→0.98 while sensitivity stayed
 flat (0.83→0.85, n.s.) — model scale bought workload reduction, not
-evidence retention (`oami2025`). Across corpora, cross-review
+evidence retention @oami2025. Across corpora, cross-review
 variance exceeds cross-model variance, and performance collapses
-exactly where human conflict rates are high (`syriani2023`,
-`huotala2025`). On appraisal instruments every individual LLM scored
+exactly where human conflict rates are high @syriani2023 @huotala2025. On appraisal instruments every individual LLM scored
 below every individual human, with both degrading together as the
 instrument hardens — human inter-rater κ falls from 0.84 to 0.29
-(`woelfle2024`). Extraction evidence is thin: one SE proof-of-concept
-at 87.8% accuracy (`felizardo2024` (A)), a 23-tool social-science
-inventory with no pooled benchmark (`legate2024`), and secondhand
-error ranges of 4–31% (`gartlehner2025`).
+@woelfle2024. Extraction evidence is thin: one SE proof-of-concept
+at 87.8% accuracy @felizardo2024[abstract-only], a 23-tool
+social-science
+inventory with no pooled benchmark @legate2024, and secondhand
+error ranges of 4–31% @gartlehner2025.
 
-*Read against human baselines.* Single human reviewers run ~87–92%
-screening sensitivity (range 42–100%; cited in `fagerberg2025`),
+*Read against human baselines.* Single human reviewers run \~87–92%
+screening sensitivity (range 42–100%; cited in
+#cite(<fagerberg2025>, form: "prose")),
 human extraction error reaches 50% of data elements (cited in
-`gartlehner2025`), and the one RCT-grade automation study found
-noninferiority, not superiority, with inconclusive time savings
-(`arno2022` (A)). Agent evidence should be calibrated against these
+#cite(<gartlehner2025>, form: "prose")), and the one RCT-grade
+automation study found noninferiority, not superiority, with
+inconclusive time savings @arno2022[abstract-only]. Agent evidence
+should be calibrated against these
 imperfect baselines, not an idealized perfect reviewer.
 
 = RQ3 — Norms: convergent content, fragmenting instruments
 
-Every guidance source from the pre-LLM wave (`hamel2021`) through
-2024–2026 (`gartlehner2025`, `degen2024`, `holst2025`,
-`fernandes2026`) converges on the same disclosure obligations: name
+Every guidance source from the pre-LLM wave @hamel2021 through
+2024–2026 @gartlehner2025 @degen2024 @holst2025 @fernandes2026 converges on the same disclosure obligations: name
 the tool and version; disclose the exact prompt and configuration;
 state which stage the AI performed and what the human did; describe
 verification; keep a human accountable (no AI authorship); and never
@@ -214,19 +216,20 @@ re-checking single-reviewer exclusions and extractions.
 
 The instruments implementing this content are fragmenting. Four
 unvalidated proposals now compete — PRISMA-trAIce's 14 items and
-human/AI-split flow diagram (`holst2025`), FRAISR's per-stage
-machine-readable table (`degen2024`), HAICO-SLR's dual
-conduct-and-reporting tables (`fernandes2026`), and a
-position-statement layer (RAISE and the Cochrane-family statements,
-`gartlehner2025`) — while the officially announced PRISMA-AI remains
+human/AI-split flow diagram @holst2025, FRAISR's per-stage
+machine-readable table @degen2024, HAICO-SLR's dual
+conduct-and-reporting tables @fernandes2026, and a
+position-statement layer — RAISE @gartlehner2025 and the
+Cochrane-family statements — while the officially announced PRISMA-AI
+remains
 unpublished and PRISMA 2020 itself covers automation only at the
-selection items (`luo2024`). The map's 36 guideline works suggest
+selection items @luo2024. The map's 36 guideline works suggest
 instruments are arriving faster than any accumulates adoption
 evidence: a standards race. Meanwhile practice lags all of them —
-disclosure in published reviews stays rare (`oconnor2024`), and the
+disclosure in published reviews stays rare @oconnor2024, and the
 best in-practice template is an individual exemplar: name the model,
 cite the PRISMA item, publish a validation table beside the flow
-diagram, revisit residual risk in limitations (`mughal2026`).
+diagram, revisit residual risk in limitations @mughal2026.
 
 = RQ4 — Independence: the undefined middle
 
@@ -238,23 +241,23 @@ four designed data points and one negative case:
   at 49.3% specificity against individual sensitivities of 86–98% —
   with a documented blind-spot catch where one family failed a
   vaccine-subgroup criterion at 43% sensitivity and the other flagged
-  the same records (`fagerberg2025`). Family diversity caught what
+  the same records @fagerberg2025. Family diversity caught what
   within-family redundancy could not.
 - A 9-run consistency ensemble reached human-level appraisal accuracy
   only on items surviving unanimous agreement, deferring 74–88% of
   items; the _deferral_ design — human + LLM score, send
   disagreements to a second human — beat both humans-alone and
-  ensembles at 95–96% accuracy while sparing ~65–70% of
-  second-reviewer workload (`woelfle2024`). Agreement-gating, not
+  ensembles at 95–96% accuracy while sparing \~65–70% of
+  second-reviewer workload @woelfle2024. Agreement-gating, not
   voting, is the evidence-backed pattern.
 - Open-weight models screen more conservatively than GPT-4.1 across
   25k titles — a family-diversity signal awaiting full-text numbers
-  (`safarpour2026` (A)).
-- High self-consistency coexists with mediocre accuracy (run-to-run
-  Fleiss κ 0.82–0.97 on hard corpora; `syriani2023`) — stability is
-  not validity.
+  @safarpour2026[abstract-only].
+- High self-consistency coexists with mediocre accuracy — run-to-run
+  Fleiss κ 0.82–0.97 on hard corpora @syriani2023 — stability is not
+  validity.
 - The negative case: the best end-to-end system uses no redundancy at
-  all (`huang2026`); independence mechanisms are not yet how the
+  all @huang2026; independence mechanisms are not yet how the
   strongest pipelines buy reliability.
 
 What no source provides is a definition: what makes two agent passes
@@ -263,7 +266,7 @@ prompts, tiers, vendors, training corpora? The correlated-error
 question (shared training data producing shared blind spots) is
 unmeasured everywhere; the pre-LLM guidance thought carefully about
 human reviewer independence and simply has no agent analogue
-(`hamel2021`). This is the map's clearest open problem.
+@hamel2021. This is the map's clearest open problem.
 
 = Discussion: this campaign as an instance of its subject
 
@@ -274,8 +277,7 @@ execution is fair evidence — in both directions.
 prompt-frame split produced κ = 0.937 on a bounded binary task, while
 the judgment-graded classification field varied 5.7× across same-tier
 single passes — matching the literature's pattern of high agreement
-on bounded tasks and degradation with judgment load (`syriani2023`,
-`woelfle2024`). The adversarial verification pass overturned ~13% of
+on bounded tasks and degradation with judgment load @syriani2023 @woelfle2024. The adversarial verification pass overturned \~13% of
 single-pass decisions, a measured error rate that the protocol's cost
 asymmetry (false excludes are lost; false includes get caught later)
 had wagered on.
@@ -298,7 +300,7 @@ disclosed in the title note.
 in our own execution. We measured agreement where it was cheapest
 (binary screening) and not where judgment lived — classification ran
 single-pass and extraction has no second pass, the precise gap the
-literature names. Key normalization bugs left ~3.9% residual
+literature names. Key normalization bugs left \~3.9% residual
 duplicates in the include set, found only by post-freeze audit. And
 three deep-read pipelines autonomously escalated to a
 permission-gated browser fallback, a small live instance of the
@@ -318,11 +320,11 @@ this survey mapped.
 Same-vendor dual screening means κ = 0.937 may overstate
 independence. Snowball coverage is bounded: one non-decayed round, a
 title-vocabulary pre-filter that reintroduces the terminology
-dependence snowballing exists to escape (`wohlin2014`), and
+dependence snowballing exists to escape @wohlin2014, and
 single-pass wave-2 excludes carry unquantified recall risk. Screening
 and classification read truncated abstracts (600–900 chars); facets
 are abstract-level and single-pass; deep-read extraction has no
-second pass. ~3.9% residual duplicates remain in the frozen include
+second pass. \~3.9% residual duplicates remain in the frozen include
 set. English only; 12 rows undecidable on available metadata. The map
 is a closed baseline, not a living review; revival criteria are
 recorded in the baseline record.
