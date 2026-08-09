@@ -5,8 +5,9 @@
   excluded, 76 parked); include-level total 776
 - **Maintenance state:** 2026-08-09 update batch reconciled and
   human-gated; updates on demand
-- **Manuscript:** revised for the 2026-08-09 batch; under continuing
-  human review
+- **Manuscript:** revised for the 2026-08-09 batch and passed through
+  a four-reviewer adversarial panel with a verification round; under
+  continuing human review
 
 Counts are mechanical — regenerate with the shared update tool's
 `status` command or `check.py` rather than editing them here
@@ -83,6 +84,22 @@ limitations disclosures; git keeps the log itself.
 - **Grade evidence certainty.** `evidence.md` supports the optional
   GRADE-inspired **Certainty** field; grade the 27 records on the
   next evidence touch.
-- **Fill per-row decided keys.** Historical log rows carry counts
-  only; future search and snowball rows record their
+- **Fill per-row decided keys.** Campaign-era log rows carry counts
+  only; update rows from 2026-08-09 onward record their
   `included_keys`/`excluded_keys` per the unified write contract.
+- **Generalize the batch pipeline into the shared tooling.** Dedup,
+  abstract enrichment, the snowball vocabulary filter, and the
+  primary-complete handler were written per-batch under `.scratch/`,
+  which git does not keep. The rules are now in `protocol.md`, but the
+  next update rebuilds the tools. Promoting them to
+  `skills/run-survey/scripts/` alongside `update.py` would remove the
+  largest rebuild cost from every future batch.
+- **Re-test the terminology synthesis against the appraisal notes.**
+  `syntheses/terminology.md` was drafted against the 25 notes present
+  at the time; hirt2021 and rose2025 arrived during drafting and bear
+  on its appraisal-vocabulary strand. The manuscript states this scope
+  explicitly; the re-test is owed.
+- **Fold in the last two manuscript compressions.** The PRISMA-AI
+  status discrepancy and the oami2025-vs-madeyski2025 metric dispute
+  are summarized in the limitations rather than in the sections that
+  make the claims.
