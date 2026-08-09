@@ -32,19 +32,21 @@ Three surfaces in `surveys/<slug>/`:
 - `record/` — the minimal resumable state (§7).
 - `manuscript/` — the Typst paper (§5).
 
-Declare the genre up front: a *closed map* (searched, screened,
-frozen; updated on demand) or a *living survey* (registered
-recurring searches with tracked completion state — §7). The catalog
-grammar follows the genre: the minimal pair (`included.tsv` +
-`excluded.tsv`) for a closed map; a disposition ledger
-(`catalog.tsv`, one current disposition per discovered work —
+Every survey is an *updatable closed map*: it closes on bounded
+mapping closure (§7) and promises no maintenance cadence — but the
+update infrastructure stays standing, so that when an update is
+wanted, staging it is one command and the record README's procedure
+carries it to reconciliation. Choose the catalog grammar by what the
+record retains: the minimal pair (`included.tsv` + `excluded.tsv`)
+when every surfaced work is adjudicated in or out; a disposition
+ledger (`catalog.tsv`, one current disposition per discovered work —
 candidate / screened / deep-read / excluded — plus priority and
-cluster) when the survey retains candidates it has not promised to
-read — dedup still goes through the normalized identifier grammar of
-§2 whatever the ledger's key column shows. Every record file gets a
-stated purpose and update rule in the README; layers beyond the
-minimal shape are declared there in a Shape note, as intent rather
-than drift.
+cluster) when discovery outruns adjudication and candidates are
+retained without a promise to read them. Dedup goes through the
+normalized identifier grammar of §2 either way. Every record file
+gets a stated purpose and update rule in the README; layers beyond
+the minimal shape are declared there in a Shape note, as intent
+rather than drift.
 
 ## 2. Search, catalog, screen
 
@@ -209,18 +211,20 @@ fix introduces before persisting it.
   competitor; and manuscript, record, and landing page agree on the
   coverage date. State closure as relative to the named sources,
   exact queries, result depths, and date — never as completeness.
-- A living survey registers its recurring searches
-  (`record/updates/queries.tsv`), their reconciled state
-  (`state.tsv`), and periodic non-query maintenance (`tasks.tsv`).
-  Fetches stage into scratch and never advance state. An update
-  batch: fetch due queries over the inclusive interval since last
+- Update infrastructure, standing but unscheduled: a registry of the
+  recurring queries (`record/updates/queries.tsv`), their
+  last-reconciled state (`state.tsv`), and periodic non-query
+  maintenance (`tasks.tsv`). Updates are human-triggered — the
+  registry makes staging one command, and any advisory cadence in
+  the record is a suggestion, not a promise. Fetches stage into
+  scratch and never advance state. An update batch: fetch the
+  registered queries over the inclusive interval since last
   reconciliation → dedup against the catalog and screen every row →
   promote the frozen snapshot with one matching audited-log row →
   deep-read and snowball new critical works → reconcile syntheses,
   claims, terminology, evidence rows, and affected manuscript text →
-  only then advance state and run the record validator. A new
-  mechanism or plausible close competitor reopens the map
-  immediately, regardless of cadence.
+  only then advance state and run the record validator. A plausible
+  close competitor or new mechanism is always grounds to update now.
 - Prune `record/` to the minimal resumable state: `README.md` (the
   contract: scope, search parameters, snowball spec, selection rules
   with examples, key grammar, facet tokens, curation bar, numbered
