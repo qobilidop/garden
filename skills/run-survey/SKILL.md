@@ -18,7 +18,9 @@ workflow as guidance rather than pinning a skill or repository commit,
 and describe material method changes in the record README in plain
 language. Use the post-campaign /evolve when execution exposes a
 durable harness lesson. This method was reshaped from the
-agent-assisted-review-methodology campaign and its review rounds.
+agent-assisted-review-methodology campaign and its review rounds,
+then united with the dataflow-selection-enumeration living-survey
+method; those two records are the reference implementations.
 
 ## 1. Shape
 
@@ -29,6 +31,20 @@ Three surfaces in `surveys/<slug>/`:
   link, and the curated reading list as its body.
 - `record/` — the minimal resumable state (§7).
 - `manuscript/` — the Typst paper (§5).
+
+Declare the genre up front: a *closed map* (searched, screened,
+frozen; updated on demand) or a *living survey* (registered
+recurring searches with tracked completion state — §7). The catalog
+grammar follows the genre: the minimal pair (`included.tsv` +
+`excluded.tsv`) for a closed map; a disposition ledger
+(`catalog.tsv`, one current disposition per discovered work —
+candidate / screened / deep-read / excluded — plus priority and
+cluster) when the survey retains candidates it has not promised to
+read — dedup still goes through the normalized identifier grammar of
+§2 whatever the ledger's key column shows. Every record file gets a
+stated purpose and update rule in the README; layers beyond the
+minimal shape are declared there in a Shape note, as intent rather
+than drift.
 
 ## 2. Search, catalog, screen
 
@@ -49,9 +65,32 @@ Three surfaces in `surveys/<slug>/`:
 - One included-works table (`included.tsv`; year-at-screening,
   truncated display titles) that classification extends with facet
   columns; `excluded.tsv` (key + code) is permanent screening memory.
+- Two log tiers: the audited log is append-only, every row
+  referencing exactly one frozen screening snapshot
+  (`record/screening/YYYY-MM-DD/`); non-replayable early discovery
+  goes to `searches-exploratory.tsv` as baseline evidence only. A
+  later disposition change appends an audit reconciliation row
+  (`promoted-key:`/`superseded-key:` in notes) — executed rows are
+  never rewritten.
+- Snapshots expose index defects rather than repairing them: keep
+  unresolved stubs under snapshot-local ids, note wrong registrar
+  metadata, and let primary/publisher records control bibliographic
+  and technical claims — indexes are discovery aids only.
+- Evidence-support hierarchy: abstract- or metadata-level records
+  support scope and chronology statements only; theorem, algorithm,
+  and guarantee claims require a deep-read note with pinpoint
+  anchors.
+- Declare a bounded `critical` set — the closest-work candidates.
+  Every critical work is deep-read and gets separate backward and
+  forward citation chases immediately; forward neighborhoods are
+  refreshed on the recorded cadence.
 - Snowball one backward+forward round via citation indexes; record
   the pre-filter vocabulary verbatim; a verification pass re-judges
-  everything the wave screens in.
+  everything the wave screens in. When an index returns a truncated,
+  unresolved, or implausibly empty bibliography, transcribe the
+  primary version's printed reference list as the backward snapshot.
+- New vocabulary discovered while reading lands in the query set in
+  its own commit — never silently edit an executed search.
 - Screening: two agent passes on different model tiers and prompt
   framings, disagreements adjudicated by the strongest available
   model, a human gating the result; single-pass waves only with a
@@ -79,6 +118,17 @@ Three surfaces in `surveys/<slug>/`:
 - On a material evidence or synthesis revision, preserve every existing
   `notes-by` writer and append the reviser (human name or agent + model).
   Mechanical edits do not add authorship.
+- Optional syntheses layer (`record/syntheses/`): thematic living
+  documents stating the current cross-paper understanding — they
+  compare definitions and results, never concatenate paper
+  summaries; each reading batch names the syntheses it affects, and
+  git keeps superseded interpretations.
+- Per-paper definition of done: a work is integrated only when its
+  disposition is recorded, any required source note is anchored in
+  the primary work, affected syntheses and claims are updated, and
+  every resulting manuscript change is reflected in the evidence
+  surfaces. Merely adding bibliography entries or notes is not
+  integration.
 
 ## 4. Curate the reading list
 
@@ -151,16 +201,38 @@ fix introduces before persisting it.
 
 ## 7. Record and close
 
+- Close on *bounded mapping closure*, not exhaustion of energy:
+  every surfaced work has a disposition; every critical work is
+  deep-read and chased in both directions; all searches due for the
+  snapshot are adjudicated; two predeclared, independently checked
+  no-add rounds find neither a new theme nor a plausible close
+  competitor; and manuscript, record, and landing page agree on the
+  coverage date. State closure as relative to the named sources,
+  exact queries, result depths, and date — never as completeness.
+- A living survey registers its recurring searches
+  (`record/updates/queries.tsv`), their reconciled state
+  (`state.tsv`), and periodic non-query maintenance (`tasks.tsv`).
+  Fetches stage into scratch and never advance state. An update
+  batch: fetch due queries over the inclusive interval since last
+  reconciliation → dedup against the catalog and screen every row →
+  promote the frozen snapshot with one matching audited-log row →
+  deep-read and snowball new critical works → reconcile syntheses,
+  claims, terminology, evidence rows, and affected manuscript text →
+  only then advance state and run the record validator. A new
+  mechanism or plausible close competitor reopens the map
+  immediately, regardless of cadence.
 - Prune `record/` to the minimal resumable state: `README.md` (the
   contract: scope, search parameters, snowball spec, selection rules
   with examples, key grammar, facet tokens, curation bar, numbered
-  update procedure, rebuild instructions), `searches.tsv`,
-  `included.tsv`, `excluded.tsv`, `sources/`, and, when the manuscript
-  publishes quantities derived from the catalog, a campaign-local
-  `check.py`. The validator checks schemas, keys, facet tokens,
-  source-note and bibliography/citation closure, and prints the derived
-  counts for cross-surface reconciliation; a qualitative survey may
-  omit it. Everything else — protocols, intermediate syntheses, work
+  update procedure — build docs stay in AGENTS.md and this skill,
+  pointed to rather than duplicated), `searches.tsv`, the catalog per
+  the §1 grammar, `sources/`, and, when the manuscript publishes
+  quantities derived from the catalog, a campaign-local `check.py`;
+  survey-local tooling beyond it (fetchers, freshness) lives in
+  `record/scripts/`. The validator checks schemas, keys, facet
+  tokens, source-note and bibliography/citation closure, and prints
+  the derived counts for cross-surface reconciliation; a qualitative
+  survey may omit it. Everything else — protocols, intermediate syntheses, work
   sheets — lives on in git history and the shadow mirror.
 - Updates follow the record README's own procedure; this skill defers
   to it. Its last step syncs counts and dates in the README and the
