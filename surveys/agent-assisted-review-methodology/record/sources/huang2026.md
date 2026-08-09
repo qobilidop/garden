@@ -1,5 +1,5 @@
 ---
-citekey: huang2026-a-prisma-aligned-agentic-framework-for-medical-systematic-reviews-and-evidence-synthesis
+citekey: huang2026
 work:
   title: "A PRISMA-Aligned Agentic Framework for Medical Systematic Reviews and Evidence Synthesis"
   author: "Haoming Huang et al. (9 authors)"

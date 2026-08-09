@@ -1,5 +1,5 @@
 ---
-citekey: vandinter2021-automation-of-systematic-literature-reviews
+citekey: vandinter2021
 work:
   title: "Automation of systematic literature reviews: A systematic literature review"
   author: "Raymon van Dinter, Bedir Tekinerdogan, Cagatay Catal"

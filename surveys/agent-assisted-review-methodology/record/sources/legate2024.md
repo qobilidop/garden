@@ -1,5 +1,5 @@
 ---
-citekey: legate2024-semiautomated-approaches-to-data-extraction-for-systematic-reviews-and-meta-analyses-in-social-sciences
+citekey: legate2024
 work:
   title: "(Semi)automated approaches to data extraction for systematic reviews and meta-analyses in social sciences: A living review"
   author: "Amanda Legate, Kim Nimon, Ashlee Noblin"

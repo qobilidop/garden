@@ -1,5 +1,5 @@
 ---
-citekey: safarpour2026-empirical-evaluation-of-open-source-large-language-models-for-paper-selection
+citekey: safarpour2026
 work:
   title: "Empirical Evaluation of Open Source Large Language Models for Paper Selection: Are LLMs Trustworthy Tools for Scoping Reviews?"
   author: "Homayoun Safarpour, Gergő Balogh, Aondowase James Orban"

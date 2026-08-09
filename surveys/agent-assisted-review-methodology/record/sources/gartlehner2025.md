@@ -1,5 +1,5 @@
 ---
-citekey: gartlehner2025-responsible-integration-of-artificial-intelligence-in-rapid-reviews
+citekey: gartlehner2025
 work:
   title: "Responsible Integration of Artificial Intelligence in Rapid Reviews: A Position Statement From the Cochrane Rapid Reviews Methods Group"
   author: "Gerald Gartlehner, Barbara Nussbaumer‐Streit, Candyce Hamel, Chantelle Garritty, Ursula Griebler, Valerie Jean King, Declan Devane, Chris Kamel"

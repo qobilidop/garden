@@ -1,5 +1,5 @@
 ---
-citekey: mughal2026-llm-based-test-oracles
+citekey: mughal2026
 work:
   title: "LLM-Based Test Oracles: Source-of-Authority Taxonomy -- A Systematic Literature Review"
   author: "Ali Hassaan Mughal, Muhammad Bilal"

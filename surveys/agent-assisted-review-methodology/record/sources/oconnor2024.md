@@ -1,5 +1,5 @@
 ---
-citekey: oconnor2024-large-language-models-updates-and-evaluation-of-automation-tools-for-systematic-reviews
+citekey: oconnor2024
 work:
   title: "Large language models, updates, and evaluation of automation tools for systematic reviews: a summary of significant discussions at the eighth meeting of the International Collaboration for the Automation of Systematic Reviews (ICASR)"
   author: "Annette M. O’Connor, Justin Clark, James Thomas, René Spijker, Wojciech Kusa, Vickie R. Walker, Melissa Bond"

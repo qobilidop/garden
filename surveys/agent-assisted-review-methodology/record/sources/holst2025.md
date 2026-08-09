@@ -1,5 +1,5 @@
 ---
-citekey: holst2025-transparent-reporting-of-ai-in-systematic-literature-reviews
+citekey: holst2025
 work:
   title: "Transparent Reporting of AI in Systematic Literature Reviews: Development of the PRISMA-trAIce Checklist"
   author: "Dirk Holst, Keno Moenck, Julian Koch, Ole Schmedemann, Thorsten Schüppstuhl"

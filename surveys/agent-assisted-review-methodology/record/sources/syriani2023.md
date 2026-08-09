@@ -1,5 +1,5 @@
 ---
-citekey: syriani2023-assessing-the-ability-of-chatgpt-to-screen-articles-for-systematic-reviews
+citekey: syriani2023
 work:
   title: "Screening articles for systematic reviews with ChatGPT"
   author: "Eugene Syriani, Istvan David, Gauransh Kumar"

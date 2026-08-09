@@ -1,5 +1,5 @@
 ---
-citekey: napoleao2021-automated-support-for-searching-and-selecting-evidence-in-software-engineering
+citekey: napoleao2021
 work:
   title: "Automated Support for Searching and Selecting Evidence in Software Engineering: A Cross-domain Systematic Mapping"
   author: "Bianca Minetto Napoleao, Fabio Petrillo, Sylvain Halle"

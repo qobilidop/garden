@@ -1,5 +1,5 @@
 ---
-citekey: degen2024-leveraging-artificial-intelligence-for-systematic-reviews
+citekey: degen2024
 work:
   title: "Leveraging Artificial Intelligence for Systematic Reviews:  The FRAISR Reporting Framework and guidance for researchers"
   author: "Ben Degen, Sebastian Vogel, Daniela Rzejak"

@@ -1,5 +1,5 @@
 ---
-citekey: huotala2025-sesr-eval
+citekey: huotala2025
 work:
   title: "SESR-Eval: Dataset for Evaluating LLMs in the Title-Abstract Screening of Systematic Reviews"
   author: "Aleksi Huotala, Miikka Kuutila, Mika Mäntylä"

@@ -1,5 +1,5 @@
 ---
-citekey: madeyski2025-llm4screenlit
+citekey: madeyski2025
 work:
   title: "LLM4SCREENLIT: Recommendations on Assessing the Performance of Large Language Models for Screening Literature in Systematic Reviews"
   author: "Lech Madeyski, Barbara Kitchenham, Martin Shepperd"

@@ -1,5 +1,5 @@
 ---
-citekey: fagerberg2025-dual-model-llm-ensemble-via-web-chat-interfaces-reaches-near-perfect-sensitivity-for-systematic-review-screening
+citekey: fagerberg2025
 work:
   title: "Dual-Model LLM Ensemble via Web Chat Interfaces Reaches Near-Perfect Sensitivity for Systematic-Review Screening: A Multi-Domain Validation with Equivalence to API Access"
   author: "Petter Fagerberg, Oscar Sallander, Kim Vikhe Patil, Anders Berg, Anastasia Nyman, Natalia Borg, Thomas Lindén"

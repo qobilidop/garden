@@ -1,5 +1,5 @@
 ---
-citekey: woelfle2024-benchmarking-humanai-collaboration
+citekey: woelfle2024
 work:
   title: "Benchmarking Human–AI collaboration for common evidence appraisal tools"
   author: "Tim Woelfle, Julian Hirt, Perrine Janiaud, Ludwig Kappos, John P.A. Ioannidis, Lars G. Hemkens"

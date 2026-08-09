@@ -1,5 +1,5 @@
 ---
-citekey: felizardo2024-data-extraction-for-systematic-mapping-study-using-a-large-language-model-a-proof-of-concept-study-in-software-engineering
+citekey: felizardo2024
 work:
   title: "Data extraction for systematic mapping study using a large language model - a proof-of-concept study in software engineering"
   author: "Katia Romero Felizardo, Igor Steinmacher, Márcia Sampaio Lima, Anderson Deizepe, Tayana Uchôa Conte, Monalessa Perini Barcellos"

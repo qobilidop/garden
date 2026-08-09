@@ -1,5 +1,5 @@
 ---
-citekey: fernandes2026-haico-slr-guide
+citekey: fernandes2026
 work:
   title: "HAICO-SLR Guide: Conducting and Reporting Human-AI Collaboration in Systematic Literature Reviews"
   author: "Bernardo Fernandes, Mariana Oliveira Schleder, Otávio Costa de Oliveira, Roger  de Bem Jaeger, Leandro Nascimento, Fernanda dos Santos de Oliveira"

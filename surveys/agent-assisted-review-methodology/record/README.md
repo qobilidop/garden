@@ -54,8 +54,9 @@ are in `protocol.md`.
   migrations; future search and snowball rows record decided keys.
 - `queries.tsv` — the standing discovery queries, each row carrying
   its `last_reconciled` date.
-- `sources/` — an evidence note per deep-read work; `_template.md`
-  is the note contract.
+- `sources/` — an evidence note per deep-read work, named by short
+  citekey; the note contract is the `run-survey` skill's
+  `assets/source-note-template.md`.
 - `syntheses/` — the understanding layer: thematic files with
   `current-position.md` as entry point, revised after each reading
   batch.
@@ -115,11 +116,11 @@ Add an anchor's canonical identifier to `../manuscript/references.tsv`,
 then run from the repository root:
 
 ```sh
-./dev.sh python3 surveys/agent-assisted-review-methodology/manuscript/make-references.py
+./dev.sh python3 skills/run-survey/scripts/make_references.py --manuscript surveys/agent-assisted-review-methodology/manuscript
 ./dev.sh python3 site/scripts/build-manuscripts.py
 ```
 
-`make-references.py` validates duplicate keys/identifiers, accepts a
+`make_references.py` validates duplicate keys/identifiers, accepts a
 same-key fallback in `references-manual.bib`, and replaces
 `references.bib` atomically only after every entry resolves. On any
 failure it leaves the prior bibliography untouched. The build writes

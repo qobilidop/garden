@@ -1,5 +1,5 @@
 ---
-citekey: hamel2021-guidance-for-using-artificial-intelligence-for-title-and-abstract-screening-while-conducting-knowledge-syntheses
+citekey: hamel2021
 work:
   title: "Guidance for using artificial intelligence for title and abstract screening while conducting knowledge syntheses"
   author: "Candyce Hamel, Mona Hersi, Shannon E. Kelly, Andrea C. Tricco, Sharon Straus, George Wells, Ba’ Pham, Brian Hutton"

@@ -1,5 +1,5 @@
 ---
-citekey: barsby2024-pilot-study-on-large-language-models-for-risk-of-bias-assessments-in-systematic-reviews
+citekey: barsby2024
 work:
   title: "Pilot study on large language models for risk-of-bias assessments in systematic reviews: A(I) new type of bias?"
   author: "Joseph Barsby, Samuel Hume, Hamish AL Lemmey, Joseph Cutteridge, Regent Lee, Katarzyna D Bera"

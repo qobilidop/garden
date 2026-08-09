@@ -1,5 +1,5 @@
 ---
-citekey: gargari2023-enhancing-title-and-abstract-screening-for-systematic-reviews-with-gpt-35-turbo
+citekey: gargari2023
 work:
   title: "Enhancing title and abstract screening for systematic reviews with GPT-3.5 turbo"
   author: "Omid Kohandel Gargari, Mohammad Hossein Mahmoudi, Mahsa Hajisafarali, Reza Samiee"

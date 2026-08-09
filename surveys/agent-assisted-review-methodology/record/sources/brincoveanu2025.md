@@ -1,5 +1,5 @@
 ---
-citekey: brincoveanu2025-augmenting-systematic-literature-reviews
+citekey: brincoveanu2025
 work:
   title: "Augmenting Systematic Literature Reviews: A Human-AI Collaborative Framework"
   author: "Constantin Brîncoveanu, K. Valerie Carl, Aaron Witzki, Oliver Hinz"
