@@ -28,7 +28,10 @@ rclone `store:` remote; `./dev.sh <cmd>` provides the pinned toolchain
   (`api.openalex.org/works/doi:<doi>`, `best_oa_location`) is the
   cross-check. One call replaces the publisher-mirror tour, and a
   confirmed-closed answer is a real result — fall back to the Wayback
-  ladder or record a queue item instead of probing on. (Learned
+  ladder or record a queue item instead of probing on. The queue is
+  `library/queue.md` (one line per work: what it is and what it
+  would feed; ingesting removes the line, and identifiers there are
+  pointers to verify, not bibliography). (Learned
   2026-08-08: PRISMA/Petersen hunting cost ~6 min that Unpaywall answers
   in seconds.)
 - Download only from immutable URLs: pin the arXiv version
