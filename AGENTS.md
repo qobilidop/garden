@@ -50,10 +50,14 @@
 ## Site
 
 - `site/` renders the repo to GitHub Pages (Astro). It reads exactly
-  `wiki/`, `library/`, and `surveys/*/manuscript.md` — the three
+  `wiki/`, `library/`, and `surveys/*/index.md` — the three
   collections in `site/src/content.config.ts` are the allowlist — and
   writes nothing back; presentation needs never reshape note
-  conventions.
+  conventions. Survey manuscripts are Typst (`manuscript.typ` paged,
+  `manuscript-html.typ` HTML, shared `content.typ`/`meta.typ`),
+  compiled into `site/public/` by `site/scripts/build-manuscripts.py`
+  (typst pinned in the dev image), standalone by design — the landing
+  page `index.md` is the citekey/backlink surface.
 - Owned logic lives in `site/src/lib/` (wikilink resolution, backlink
   graph, work metadata); everything else is rented substrate (Astro,
   remark, KaTeX, Pagefind, Mermaid). An unresolved `[[target]]` fails

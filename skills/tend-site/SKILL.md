@@ -6,10 +6,15 @@ description: Develop and verify the sys0 website (site/, Astro) — the build/pr
 # Tend the site
 
 The contract is AGENTS.md §Site: `site/` reads exactly `wiki/`,
-`library/`, and `surveys/*/manuscript.md`, read-only; owned logic in
+`library/`, and `surveys/*/index.md`, read-only; owned logic in
 `site/src/lib/`; unresolved `[[targets]]` and bare citekey mentions
 fail the build via `lintContent()` in `site/src/lib/sitemap.mjs`,
-called at config load (`astro.config.mjs`).
+called at config load (`astro.config.mjs`). Survey manuscripts are
+compiled separately — `./dev.sh python3 site/scripts/build-manuscripts.py`
+(typst, pinned in the dev image; the HTML target is experimental) into
+gitignored `site/public/surveys/`; CI runs the same script before the
+Astro build, and a push that changes `.devcontainer/` races the image
+republish — re-run the Site workflow if it fails on a stale image.
 
 ## The loop
 

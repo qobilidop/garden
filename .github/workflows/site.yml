@@ -6,6 +6,7 @@ on:
     paths:
       - "wiki/**"
       - "library/**"
+      - "surveys/**"
       - "site/**"
       - ".github/workflows/site.yml"
   workflow_dispatch:
@@ -25,6 +26,10 @@ jobs:
     container: ghcr.io/${{ github.repository }}/dev:latest
     steps:
       - uses: actions/checkout@v4
+      # Requires typst from the dev image. A push that changes
+      # .devcontainer/ races the image republish (dev-image.yml) —
+      # if this step fails on a stale image, re-run after it merges.
+      - run: python3 site/scripts/build-manuscripts.py
       - run: npm ci
         working-directory: site
       - run: npm run build

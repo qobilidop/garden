@@ -19,15 +19,15 @@ export function citekeys() {
   return [...libraryFiles().keys()]
 }
 
-// Surveys render only their manuscript; the slug is the campaign
-// directory name.
+// Surveys enter the site through their landing page (index.md); the
+// slug is the campaign directory name.
 export function surveySlugs() {
   return [...surveyFiles().keys()]
 }
 
 function surveyFiles() {
   const map = new Map()
-  for (const p of globSync('surveys/*/manuscript.md', { cwd: repoRoot })) {
+  for (const p of globSync('surveys/*/index.md', { cwd: repoRoot })) {
     map.set(basename(dirname(p)), join(repoRoot, p))
   }
   return map
@@ -132,7 +132,7 @@ export function lintContent(resolve) {
   const files = [
     ...globSync('wiki/*.md', { cwd: repoRoot }),
     ...globSync('library/**/notes.md', { cwd: repoRoot }),
-    ...globSync('surveys/*/manuscript.md', { cwd: repoRoot }),
+    ...globSync('surveys/*/index.md', { cwd: repoRoot }),
   ]
   const violations = []
   for (const rel of files) {
