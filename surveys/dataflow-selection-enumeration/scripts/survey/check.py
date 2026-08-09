@@ -12,7 +12,7 @@ csv.field_size_limit(sys.maxsize)
 
 
 ROOT = Path(__file__).resolve().parents[2]
-SURVEY = ROOT / "research" / "survey"
+SURVEY = ROOT / "record"
 CATALOG_HEADER = [
     "citekey",
     "year",
@@ -176,8 +176,8 @@ def fail(message: str) -> None:
 
 
 def main() -> int:
-    markdown_paths = [ROOT / "README.md", ROOT / "REPRODUCIBILITY.md"]
-    markdown_paths.extend(sorted((ROOT / "research").rglob("*.md")))
+    markdown_paths = sorted((ROOT / "record").rglob("*.md"))
+    markdown_paths.extend(sorted((ROOT / "decisions").rglob("*.md")))
     for markdown in markdown_paths:
         text = markdown.read_text(encoding="utf-8")
         for target in re.findall(r"\]\(([^)]+)\)", text):
@@ -198,7 +198,7 @@ def main() -> int:
     if len(catalog) != len(catalog_rows):
         fail("catalog contains duplicate citekeys")
 
-    bibliography = (ROOT / "references.bib").read_text(encoding="utf-8")
+    bibliography = (ROOT / "manuscript" / "references.bib").read_text(encoding="utf-8")
     bibliography_keys = set(re.findall(r"@[A-Za-z]+\{([^,]+),", bibliography))
     for source_note in sorted((SURVEY / "sources").glob("*.md")):
         if source_note.name == "_template.md":
@@ -245,7 +245,7 @@ def main() -> int:
         if citekey not in bibliography_keys:
             fail(f"deep-read work {citekey} has no bibliography entry")
 
-    claims_text = (ROOT / "research" / "claims.md").read_text(encoding="utf-8")
+    claims_text = (ROOT / "record" / "claims.md").read_text(encoding="utf-8")
     current_claims = claims_text.split(
         "## Current survey synthesis claims", maxsplit=1
     )[-1]

@@ -14,7 +14,7 @@ import time
 
 
 ROOT = Path(__file__).resolve().parents[2]
-SURVEY = ROOT / "research" / "survey"
+SURVEY = ROOT / "record"
 UPDATES = SURVEY / "updates"
 SCRIPT_DIR = Path(__file__).resolve().parent
 ARXIV_INTERVAL_SECONDS = 3.0
