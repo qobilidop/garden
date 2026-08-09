@@ -1,7 +1,0 @@
-.codex
-.git
-.scratch
-build
-*.pdf
-__pycache__
-*.pyc
