@@ -14,9 +14,12 @@
   listing the target afterward, never by exit code (git status cannot see
   empty directories); in zsh one-liners, quote bare `=`-prefixed words and
   any glob that may not match — an unmatched glob aborts the whole command;
-  never rely on a `cd` persisting from earlier in a compound command or a
-  previous call — invoke repo tools by absolute path, and use absolute
-  paths inside heredocs and generated scripts; `$?` after a pipeline is
+  never issue a `cd` to shorten a path, and never rely on one persisting
+  from an earlier call — a shell that looks like it kept its directory
+  is the third recurrence of this trap; when a tool genuinely needs a
+  working directory, scope it inside that one call and treat the shell
+  as resetting afterwards. Invoke repo tools by absolute path, and use
+  absolute paths inside heredocs and generated scripts; `$?` after a pipeline is
   the last command's exit, not the interesting one's — run a gating
   command unpiped with output captured to a file and test bare `$?`
   (grep/tail the file afterwards); when a pipe is unavoidable, check

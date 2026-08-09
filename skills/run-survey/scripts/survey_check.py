@@ -41,6 +41,14 @@ Config keys (all paths resolved against ``record_dir``):
   (default ``(?:sec|tab)-[A-Za-z0-9-]+``).
 - ``extra_reports``: optional list of callables ``catalog_dict -> dict``
   merged into the printed derived-counts report.
+- ``declared_quantities``: optional list of published-count assertions,
+  each ``{"name", "value", "surfaces", "patterns"}``. ``value`` is a
+  report key or a callable over the report; ``patterns`` are regexes
+  whose first group captures the number as written (commas allowed).
+  Every match in every surface must equal the derived value, so a
+  count that drifts in prose fails the validator instead of waiting
+  for a reviewer. Keep patterns narrow enough to skip historical
+  figures a survey states on purpose.
 """
 
 import csv
@@ -534,6 +542,29 @@ def run(config):
         report[field] = dict(sorted(counter.items()))
     for extra_report in config.get("extra_reports", []):
         report.update(extra_report(catalog))
+
+    # --- declared quantities ---
+    # A survey names the counts it publishes and the exact phrasings that
+    # assert them; every match must equal the derived value. Prose counts
+    # drift silently otherwise — one update shipped ten stale figures that
+    # only an adversarial reviewer caught.
+    for declared in config.get("declared_quantities", []):
+        expected = declared["value"](report) if callable(declared["value"]) else report[declared["value"]]
+        for relative in declared["surfaces"]:
+            path = survey / relative
+            if not path.is_file():
+                errors.append(f"declared-quantity surface is missing: {relative}")
+                continue
+            text = path.read_text(encoding="utf-8")
+            for pattern in declared["patterns"]:
+                for match in re.finditer(pattern, text):
+                    found = int(match.group(1).replace(",", ""))
+                    if found != expected:
+                        errors.append(
+                            f"{relative}: {declared['name']} reads {match.group(1)}, "
+                            f"derived value is {expected} (matched {pattern!r})"
+                        )
+
     print(json.dumps(report, indent=2, sort_keys=True))
     for error in errors:
         print(f"ERROR: {error}", file=sys.stderr)

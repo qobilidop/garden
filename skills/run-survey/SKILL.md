@@ -306,7 +306,12 @@ over the whole survey directory and iterate to closure:
   identifiers resolved, bib ↔ citations ↔ notes closed.
 
 Fix, then send reviewers the delta for per-finding verdicts (FIXED /
-PARTIAL / NOT ADDRESSED); adjudicate reviewer disagreements on
+PARTIAL / NOT ADDRESSED) *and* for regressions the fixes introduced —
+ask for new defects explicitly, because a fix is unreviewed text
+written under time pressure. One such round caught a corrected number
+that was still wrong, two sections left contradicting each other, and
+two hedges that had replaced an overclaim with a phrase saying
+nothing. Adjudicate reviewer disagreements on
 primary evidence, never on authority; verify every fresh quantity a
 fix introduces before persisting it.
 
@@ -365,7 +370,13 @@ fix introduces before persisting it.
   citation, or synthesis may be demoted back to `screened` by an
   audit row, its note retiring to git history. Everything else —
   intermediate syntheses, work
-  sheets — lives on in git history and the shadow mirror.
+  sheets — lives on in git history and the shadow mirror. Scratch
+  holds a batch's *data*, never its *mechanics*: a procedure that will
+  recur ships as a tracked script in this skill's `scripts/`. One
+  update's dedup, abstract enrichment, vocabulary filter, and
+  defective-bibliography handler were written under a gitignored
+  `.scratch/`, so the policy survived in the protocol while the tools
+  vanished and the next updater rebuilds them.
 - Updates follow the record README's own procedure; this skill defers
   to it. Its last step syncs counts and dates in the README and the
   landing page.

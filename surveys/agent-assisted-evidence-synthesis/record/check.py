@@ -66,6 +66,52 @@ CONFIG = {
     "noted_statuses": {"included", "deep-read"},
     "claim_required_fields": ["Status", "Statement", "Scope"],
     "extra_reports": [stage_cross_table],
+    # Patterns match only current-state assertions; the campaign's own
+    # historical figures (646 included works, 1,292 rows) are stated on
+    # purpose and must not be caught.
+    "declared_quantities": [
+        {
+            "name": "include-level total",
+            "value": lambda r: r["status"]["included"] + r["status"]["deep-read"],
+            "surfaces": [
+                "index.md", "record/status.md", "manuscript/meta.typ",
+                "manuscript/sections/01-introduction.typ",
+                "manuscript/sections/04-method.typ",
+                "manuscript/sections/05-rq1.typ",
+                "manuscript/sections/06-rq2.typ",
+                "manuscript/sections/09-discussion.typ",
+                "manuscript/sections/10-threats.typ",
+            ],
+            "patterns": [
+                r"of ([\d,]+) works",
+                r"([\d,]+) include-level",
+                r"([\d,]+)-work map",
+                r"([\d,]+) included works \(",
+                r"map of ([\d,]+) included works",
+                r"([\d,]+) include-level rows",
+            ],
+        },
+        {
+            "name": "catalog rows",
+            "value": "catalog_rows",
+            "surfaces": ["index.md", "record/status.md", "manuscript/meta.typ",
+                         "manuscript/sections/04-method.typ"],
+            "patterns": [r"([\d,]+)-row catalog", r"([\d,]+) works \("],
+        },
+        {
+            "name": "deep reads",
+            "value": lambda r: r["status"]["deep-read"],
+            "surfaces": [
+                "record/status.md", "manuscript/meta.typ",
+                "manuscript/sections/04-method.typ",
+                "manuscript/sections/08-rq4.typ",
+                "manuscript/sections/09-discussion.typ",
+                "manuscript/sections/10-threats.typ",
+                "manuscript/sections/11-conclusion.typ",
+            ],
+            "patterns": [r"(?:of|the) ([\d,]+) (?:selected )?deep reads", r"([\d,]+) works were deep-read"],
+        },
+    ],
 }
 
 if __name__ == "__main__":

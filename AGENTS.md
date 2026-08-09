@@ -25,9 +25,19 @@
 - Subagents inherit no operating rules. A fan-out prompt that could
   touch a gated capability (browser-mediated downloads, deletions,
   pushes) states the gate explicitly — three survey pipelines once
-  escalated to the user's browser unprompted (agent-assisted survey
-  decision 0007, in git history; the decision logs were pruned when
-  survey records were minimized).
+  escalated to the user's browser unprompted.
+- A fan-out that delegates *judgment* says so: decisions must be the
+  agent's own reading, never a script, regex, or keyword heuristic,
+  and each carries a justification specific to its item. The
+  orchestrator checks that before consuming the output — distinct
+  justifications should roughly equal item count. Two of six screening
+  passes once returned classifiers instead of judgments (one an
+  explicit program, one 97 decisions sharing 7 template reasons);
+  both were plausible in aggregate and invisible from decision counts.
+- A subagent's reported statistic is a claim, not primary output.
+  Recompute anything destined for a persisted artifact, and check that
+  a partition sums to its denominator — a published "49 of 66" survived
+  two rounds because nobody noticed 54 + 8 ≠ 66.
 - Writing fan-outs default to worktree isolation (clean per-agent
   baseline, mechanical merge-back); read-only fan-outs share the
   tree. When parallel writers must share a tree, their prompts
