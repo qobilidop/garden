@@ -1,30 +1,12 @@
 # Survey protocol
 
-The rules of this survey; the README is the map and the operating
-procedure. The original campaign predates this document — it was
-reconstructed from the campaign's retained rules on 2026-08-09, and
-material method changes are described here in plain language.
-
-**2026-08-09 — retitle.** The survey was retitled from
-"Agent-Assisted Systematic Review Methodology" to "Agent-Assisted
-Evidence Synthesis" (slug `agent-assisted-review-methodology` →
-`agent-assisted-evidence-synthesis`). The declared scope below is
-unchanged — it already covered secondary studies broadly — but the
-executed query vocabulary was review-centric relative to it; this
-update adds mapping-study, scoping-review, and living-review query
-vocabulary as new qids in `queries.tsv` to close that gap. The old
-title named the field's dominant genre; the new one names the
-declared scope.
-
-**2026-08-09 — update-window semantics.** The reconstructed rule 2
-promised an overlap start one calendar year before the previous
-cutoff. The unified update tooling (shared with
-dataflow-selection-enumeration) instead fetches the inclusive
-interval since each query's `last_reconciled` date; rule 2 now
-states the semantics actually run. Delayed indexing beyond the
-inclusive boundary is accepted as a coverage limitation. A query
-never yet reconciled takes the survey window start (2020-01-01) as
-its first from-date.
+The rules of this survey, always in their current form; the README
+is the map and the operating procedure. The original campaign
+predates this document — it was reconstructed from the campaign's
+retained rules on 2026-08-09. Material method changes update these
+rules in place and are logged in plain language in `status.md`'s
+Method changes section (append-only), with event-level audit rows in
+`log.tsv`.
 
 ## Objective and study type
 
@@ -125,7 +107,7 @@ and title rules above before counting a candidate
 Apply the case-insensitive title vocabulary
 `review|screening|synthesis|extraction|meta-analys|survey|systematic|evidence|literature|prisma|appraisal`.
 Then test the reconstructed title plus abstract against
-`large language model|language model|\bllm|gpt|agent|automat|artificial intelligence|machine learning|deep learning|neural`.
+`large language model|language model|\bllm|gpt|agent|automat|artificial intelligence|machine learning|deep learning|neural|\bai\b|\bgenai\b|\bgai\b|generative ai|foundation model`.
 If the abstract is missing, test the title alone and send a
 vocabulary miss to `parked` rather than silently discarding it.
 Count title-filter rejects, model-vocabulary rejects, missing-data

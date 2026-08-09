@@ -15,8 +15,8 @@ every map number traces to the catalog, and caveats travel with a
 number everywhere it appears — a survey about a field's evidence
 cannot launder its own. Campaigns are human-triggered. Use this
 workflow as guidance rather than pinning a skill or repository commit,
-and describe material method changes in the record README in plain
-language. Use the post-campaign /evolve when execution exposes a
+and log material method changes in plain language in the record's
+`status.md` Method changes section. Use the post-campaign /evolve when execution exposes a
 durable harness lesson. This method was reshaped from the
 agent-assisted-evidence-synthesis campaign and its review rounds,
 then united with the dataflow-selection-enumeration living-survey
@@ -66,8 +66,13 @@ Shape note, as intent rather than drift.
   human-gate the protocol (scope, research questions, selection
   criteria, facet plan, source list) before the first logged search,
   as `record/protocol.md` (a thin survey may fold it into the record
-  README's contract). Material method changes are described there in
-  plain language as they happen, never applied silently.
+  README's contract). The protocol always reads as the current
+  rules: a material method change updates it in place and is logged,
+  dated and append-only, in `status.md`'s Method changes section as
+  it happens — never applied silently. The log is campaign-scoped:
+  it dissolves at campaign close (§7), its content by then absorbed
+  into the protocol's final state, the log's audit rows, and the
+  manuscript's disclosures.
 - One append-only event log (`record/log.tsv`; the engine enforces
   its schema) with four kinds: `search` (an executed
   query), `snowball` (a citation chase, direction backward/forward),
@@ -328,7 +333,11 @@ fix introduces before persisting it.
   in AGENTS.md and this skill, pointed to rather than duplicated),
   `status.md` (H1 `# Current survey status`, a `**Coverage
   through:**` bullet, mechanical counts copied from the validator,
-  and deferred work under `## Deferred to the next update` — the
+  the campaign-scoped `## Method changes` log — the append-only
+  plain-language record of protocol amendments while a campaign is
+  open, dissolved at close once absorbed into protocol, audit rows,
+  and manuscript — and
+  deferred work under `## Deferred to the next update` — the
   survey's todo lives here, not in a separate file),
   `catalog.tsv` and `log.tsv` per the §1 grammar, `sources/`,
   `syntheses/`, `claims.md` with `evidence.md` binding claims and

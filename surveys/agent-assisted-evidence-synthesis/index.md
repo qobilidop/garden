@@ -2,23 +2,23 @@
 
 An exploratory systematic map of AI-assisted and automated evidence
 synthesis — systematic reviews, maps, and related secondary studies —
-in the LLM era: 646 included works after resolving known
-version aliases and retractions in the original 1,291-row campaign
-catalog, classified under a four-dimensional taxonomy, with selected
-anchors curated below.
+in the LLM era: 777 included works (752 included + 25 deep-read) in a
+1,965-row catalog spanning the original integrity-corrected campaign
+and the human-gated 2026-08-09 update batch, classified under a
+four-dimensional taxonomy, with selected anchors curated below.
 
 **Read:** [manuscript (HTML)](manuscript.html) ·
 [manuscript (PDF)](manuscript.pdf)
 
 **Survey record:**
 [method, searches, catalog, evidence notes](https://github.com/qobilidop/sys0/tree/main/surveys/agent-assisted-evidence-synthesis/record)
-— searched through 2026-08-08.
+— searched through 2026-08-09.
 
 **Topic context:** [[survey-methodology]]
 
 ## Reading list
 
-The works that anchor the field, curated from the 646-work map and
+The works that anchor the field, curated from the 777-work map and
 organized by the survey's taxonomy. Entries link the original paper
 (where a stable public link exists) and our notes on it (library pages where ingested, our
 evidence notes in the record otherwise).

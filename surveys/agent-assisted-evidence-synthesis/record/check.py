@@ -13,7 +13,12 @@ FACET_FIELDS = ["stage", "contribution", "evidence", "setting"]
 
 
 def stage_cross_table(catalog):
-    included = [row for row in catalog.values() if row["status"] == "included"]
+    # Include-level rows: deep-read is a scrutiny level above included,
+    # so map-level counts cover both statuses.
+    included = [
+        row for row in catalog.values()
+        if row["status"] in ("included", "deep-read")
+    ]
     table = {}
     for stage in sorted({"search", "screen", "extract", "appraise", "synthesize", "report", "end2end", "meta"}):
         rows = [row for row in included if row["stage"] == stage]
@@ -32,7 +37,7 @@ def stage_cross_table(catalog):
 CONFIG = {
     "record_dir": RECORD,
     "catalog_columns": ["key", "status", "code", "year", "title", *FACET_FIELDS, "priority"],
-    "statuses": {"included", "excluded", "parked"},
+    "statuses": {"included", "deep-read", "excluded", "parked"},
     "exclusion_codes": {
         "E1-primary-research-automation",
         "E2-generic-nlp-no-synthesis-framing",
@@ -43,7 +48,10 @@ CONFIG = {
         "E7-retracted-or-withdrawn",
     },
     "priorities": {"critical", "high", "medium", "low"},
-    "status_required_fields": {"included": ["year", "title", *FACET_FIELDS]},
+    "status_required_fields": {
+        "included": ["year", "title", *FACET_FIELDS],
+        "deep-read": ["year", "title", *FACET_FIELDS],
+    },
     "status_forbidden_fields": {
         "excluded": ["year", "title", *FACET_FIELDS],
         "parked": ["year", "title", *FACET_FIELDS],
@@ -54,8 +62,8 @@ CONFIG = {
         "evidence": {"human-agree", "benchmark", "none"},
         "setting": {"med", "se", "general"},
     },
-    "facet_statuses": {"included"},
-    "noted_statuses": {"included"},
+    "facet_statuses": {"included", "deep-read"},
+    "noted_statuses": {"included", "deep-read"},
     "claim_required_fields": ["Status", "Statement", "Scope"],
     "extra_reports": [stage_cross_table],
 }

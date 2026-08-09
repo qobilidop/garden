@@ -36,7 +36,7 @@ arxiv:2603.28336	included		2026	A Multi-Agent Rhizomatic Pipeline for Non-Linear
 arxiv:2604.01452	included		2026	A Multi-Agent Human-LLM Collaborative Framework for Closed-Loop Scien…	synthesize	system	none	general	medium
 arxiv:2605.15245	included		2026	Assistance to Autonomy: A Systematic Literature Review of Agentic AI…	report	evaluation	none	se	medium
 arxiv:2606.28363	included		2026	meta-pipe: An LLM-agent pipeline for end-to-end automated systematic…	end2end	system	none	med	medium
-arxiv:2607.05031	included		2026	LLM-Based Test Oracles: Source-of-Authority Taxonomy -- A Systematic…	screen	evaluation	human-agree	se	medium
+arxiv:2607.05031	deep-read		2026	LLM-Based Test Oracles: Source-of-Authority Taxonomy -- A Systematic…	screen	evaluation	human-agree	se	high
 doi:10.1001/jamanetworkopen.2024.20496	included		2024	Performance of a Large Language Model in Screening Citations	screen	evaluation	human-agree	med	medium
 doi:10.1002/cesm.12021	included		2023	Machine learning for accelerating screening in evidence reviews	screen	position	none	med	medium
 doi:10.1002/cesm.12041	included		2024	The use of a large language model to create plain language summaries…	report	evaluation	human-agree	med	medium
@@ -50,7 +50,7 @@ doi:10.1002/cesm.70048	included		2025	Using a Large Language Model (ChatGPT‐4o
 doi:10.1002/cesm.70050	included		2025	Comparison of Elicit AI and Traditional Literature Searching in Evide…	search	evaluation	human-agree	med	medium
 doi:10.1002/cesm.70058	included		2025	Harnessing Large‐Language Models for Efficient Data Extraction in Sys…	extract	method	human-agree	med	medium
 doi:10.1002/cesm.70061	included		2025	Assessing the Feasibility and Acceptability of a Bespoke Large Langua…	extract	evaluation	human-agree	med	medium
-doi:10.1002/cesm.70063	included		2025	Responsible Integration of Artificial Intelligence in Rapid Reviews:…	meta	guideline	none	med	medium
+doi:10.1002/cesm.70063	deep-read		2025	Responsible Integration of Artificial Intelligence in Rapid Reviews:…	meta	guideline	none	med	high
 doi:10.1002/cesm.70082	included		2026	Batch Size Effects on Mid‐2025 State‐of‐the‐Art Large Language Model…	screen	evaluation	human-agree	med	medium
 doi:10.1002/cesm.70088	included		2026	An Open‐Source Systematic Reviews Integrated System (OSSYRIS) – Strea…	end2end	system	none	general	medium
 doi:10.1002/cl2.1129	included		2020	On the use of computer‐assistance to facilitate systematic mapping	meta	position	none	general	medium
@@ -84,7 +84,7 @@ doi:10.1007/978-3-031-48858-0_25	included		2023	Leveraging Large Language Models
 doi:10.1007/978-3-031-56027-9_25	included		2024	Zero-shot Generative Large Language Models for Systematic Review Scre…	screen	evaluation	human-agree	med	medium
 doi:10.1007/978-3-031-56069-9_28	included		2024	SciSpace Literature Review: Harnessing AI for Effortless Scientific D…	end2end	system	none	general	medium
 doi:10.1007/978-3-031-70421-5_16	included		2024	Towards the Utilization of AI-Powered Assistance for Systematic Liter…	end2end	position	none	general	medium
-doi:10.1007/978-3-032-02813-6_1	included		2025	Augmenting Systematic Literature Reviews: A Human-AI Collaborative Fr…	end2end	method	none	se	medium
+doi:10.1007/978-3-032-02813-6_1	deep-read		2025	Augmenting Systematic Literature Reviews: A Human-AI Collaborative Fr…	end2end	method	none	se	high
 doi:10.1007/978-3-032-11442-6_39	included		2025	Comparative Assessment of ChatGPT, DeepSeek, and Human Reviewers for…	screen	evaluation	human-agree	med	medium
 doi:10.1007/978-3-032-30801-6_6	included		2026	End-to-End Automation of Multilingual Scoping Reviews Using Agentic AI	end2end	system	none	general	medium
 doi:10.1007/978-3-032-30813-9_3	included		2026	A PRISMA-Aligned Workflow for LLM-Assisted Title–Abstract Screening:…	screen	method	none	med	medium
@@ -127,7 +127,7 @@ doi:10.1016/j.cardfail.2023.06.015	included		2023	ChatGPT Produces Fabricated Re
 doi:10.1016/j.chb.2024.108215	included		2024	Using machine learning for continuous updating of meta-analysis in ed…	screen	method	benchmark	general	medium
 doi:10.1016/j.cmicom.2026.105214	included		2026	A proof-of-concept performance evaluation of six large language model…	extract	evaluation	human-agree	med	medium
 doi:10.1016/j.cmpb.2025.108962	included		2025	ExtractPDF: A data extraction tool for scientific papers applied to a…	extract	system	none	med	medium
-doi:10.1016/j.cola.2024.101287	included		2024	Screening articles for systematic reviews with ChatGPT	screen	evaluation	human-agree	se	medium
+doi:10.1016/j.cola.2024.101287	deep-read		2024	Screening articles for systematic reviews with ChatGPT	screen	evaluation	human-agree	se	high
 doi:10.1016/j.compbiomed.2025.110464	included		2025	Enhancing search strategies for systematic reviews on drug Harms: An…	search	evaluation	benchmark	med	medium
 doi:10.1016/j.crfs.2021.12.010	included		2021	Automatic classification of literature in systematic reviews on food…	screen	method	benchmark	general	medium
 doi:10.1016/j.crsus.2024.100132	included		2024	Human-AI collaboration to identify literature for evidence synthesis	end2end	method	human-agree	general	medium
@@ -147,8 +147,8 @@ doi:10.1016/j.ijmedinf.2026.106463	included		2026	Empowering open medium-sized g
 doi:10.1016/j.imed.2025.12.006	included		2025	Evaluation of artificial intelligence-based tool Covidence in literat…	screen	evaluation	human-agree	med	medium
 doi:10.1016/j.imr.2025.101217	included		2025	Using artificial intelligence for the development of a living evidenc…	end2end	system	benchmark	med	medium
 doi:10.1016/j.imr.2026.101351	included		2026	Design and methodology of the AI-empowered Clinical Evidence for Inte…	end2end	system	none	med	medium
-doi:10.1016/j.infsof.2021.106589	included		2021	Automation of systematic literature reviews: A systematic literature…	meta	evaluation	none	se	medium
-doi:10.1016/j.infsof.2026.108204	included		2026	LLM4SCREENLIT: Recommendations on Assessing the Performance of Large…	meta	guideline	none	general	medium
+doi:10.1016/j.infsof.2021.106589	deep-read		2021	Automation of systematic literature reviews: A systematic literature…	meta	evaluation	none	se	critical
+doi:10.1016/j.infsof.2026.108204	deep-read		2026	LLM4SCREENLIT: Recommendations on Assessing the Performance of Large…	meta	guideline	none	general	critical
 doi:10.1016/j.ipm.2025.104245	included		2025	Harnessing language models for computational literature review of eme…	meta	method	none	general	medium
 doi:10.1016/j.iswa.2022.200141	included		2022	Automated MeSH term suggestion for effective query formulation in sys…	search	method	none	med	medium
 doi:10.1016/j.iswa.2023.200193	included		2023	An analysis of work saved over sampling in the evaluation of automate…	screen	method	none	med	medium
@@ -170,7 +170,7 @@ doi:10.1016/j.jclinepi.2022.04.027	included		2022	Artificial intelligence in COV
 doi:10.1016/j.jclinepi.2022.06.007	included		2022	A novel tool that allows interactive screening of PubMed citations sh…	screen	system	none	med	medium
 doi:10.1016/j.jclinepi.2022.08.013	included		2022	In a pilot study, automated real-time systematic review updates were…	search	system	human-agree	med	medium
 doi:10.1016/j.jclinepi.2023.04.006	included		2023	Analysis of predictive performance and reliability of classifiers for…	appraise	evaluation	benchmark	med	medium
-doi:10.1016/j.jclinepi.2024.111533	included		2024	Benchmarking Human–AI collaboration for common evidence appraisal too…	appraise	evaluation	human-agree	med	medium
+doi:10.1016/j.jclinepi.2024.111533	deep-read		2024	Benchmarking Human–AI collaboration for common evidence appraisal too…	appraise	evaluation	human-agree	med	critical
 doi:10.1016/j.jclinepi.2025.111738	included		2025	Comparing Artificial Intelligence and manual methods in systematic re…	meta	evaluation	none	general	medium
 doi:10.1016/j.jclinepi.2025.111746	included		2025	Large language models for conducting systematic reviews: on the rise,…	meta	position	none	med	medium
 doi:10.1016/j.jclinepi.2025.111894	included		2025	Comparison of AI-assisted and human-generated plain language summarie…	report	evaluation	human-agree	med	medium
@@ -295,7 +295,7 @@ doi:10.1097/fjc.0000000000001768	included		2025	Validation of Synthesa AI, a Lar
 doi:10.1097/gox.0000000000005339	included		2023	The Utility of Artificial Intelligence for Systematic Reviews and Boo…	search	method	none	general	medium
 doi:10.1097/js9.0000000000002215	included		2025	AI-driven evidence synthesis: data extraction of randomized controlle…	extract	method	human-agree	med	medium
 doi:10.1098/rspb.2024.0423	included		2024	The changing landscape of text mining: a review of approaches for eco…	meta	position	none	general	medium
-doi:10.1101/2023.06.13.23291311	included		2023	Exploring the Role of Chat GPT in patient care (diagnosis and Treatme…	report	evaluation	none	med	medium
+doi:10.34172/hpp.2023.22	included		2023	Exploring the Role of Chat GPT in patient care (diagnosis and Treatme…	report	evaluation	none	med	medium
 doi:10.1101/2023.06.29.23291656	included		2023	Automated data extraction of unstructured grey literature in health r…	extract	position	none	general	medium
 doi:10.1101/2023.09.06.23295072	included		2023	Utilizing ChatGPT to select literature for meta-analysis shows worklo…	screen	evaluation	human-agree	med	medium
 doi:10.1101/2023.12.14.23299933	included		2023	Trustworthiness of Systematic Review Automation An interview at Coven…	meta	position	none	general	medium
@@ -322,7 +322,7 @@ doi:10.1101/2025.06.13.25329541	included		2025	Automation of Systematic Reviews 
 doi:10.1101/2025.08.11.25333429	included		2025	A LLM-based Multi-Agent Collaborative Approach for Screening Prioriti…	screen	method	human-agree	general	medium
 doi:10.1101/2025.08.24.25334314	included		2025	LLM-Guided Weak Supervision Improves Active Learning for Abstract Scr…	screen	method	benchmark	general	medium
 doi:10.1101/2025.09.02.25334159	included		2025	Scaling the Prompt: How Batch Size Shapes Performance of Mid-2025 Sta…	screen	evaluation	human-agree	med	medium
-doi:10.1101/2025.11.03.25339455	included		2025	Dual-Model LLM Ensemble via Web Chat Interfaces Reaches Near-Perfect…	screen	evaluation	human-agree	med	medium
+doi:10.1101/2025.11.03.25339455	deep-read		2025	Dual-Model LLM Ensemble via Web Chat Interfaces Reaches Near-Perfect…	screen	evaluation	human-agree	med	critical
 doi:10.1109/access.2025.3554504	included		2025	Comparing Generative AI Literature Reviews Versus Human-Led Systemati…	end2end	evaluation	human-agree	general	medium
 doi:10.1109/bigdata62323.2024.10825310	included		2024	Empowering Meta-Analysis: Leveraging Large Language Models for Scient…	synthesize	method	benchmark	general	medium
 doi:10.1109/cbi68102.2025.00012	included		2025	Can AI be a Scholar? A Systematic Review on the Role of Generative AI…	meta	evaluation	none	general	medium
@@ -330,7 +330,7 @@ doi:10.1109/ccwc60891.2024.10427829	included		2024	Large Language Model-Based Ar
 doi:10.1109/cinti67731.2025.11311831	included		2025	Large Language Models for Title/Abstract Screening in Systematic Lite…	screen	evaluation	human-agree	general	medium
 doi:10.1109/csgb53040.2021.9496030	included		2021	Method for Biomedical Information Extraction of Immunosuppressive Cel…	extract	method	benchmark	med	medium
 doi:10.1109/das69882.2026.11553334	included		2026	Scholar Augment: An End-to-End Multi-LLM Platform for Accelerating Sy…	end2end	system	none	general	medium
-doi:10.1109/esem64174.2025.00053	included		2025	SESR-Eval: Dataset for Evaluating LLMs in the Title-Abstract Screenin…	screen	evaluation	benchmark	se	medium
+doi:10.1109/esem64174.2025.00053	deep-read		2025	SESR-Eval: Dataset for Evaluating LLMs in the Title-Abstract Screenin…	screen	evaluation	benchmark	se	critical
 doi:10.1109/fllm63129.2024.10852425	included		2024	Screening Automation for Systematic Reviews: A 5-Tier Prompting Appro…	screen	method	benchmark	med	medium
 doi:10.1109/fllm63129.2024.10852447	included		2024	Large Language Models for Literature Reviews - An Exemplary Compariso…	meta	evaluation	human-agree	med	medium
 doi:10.1109/fllm67465.2025.11391146	included		2025	Cal-X: Enhancing Systematic Review Screening with LLMs and Next-Token…	screen	method	human-agree	general	medium
@@ -344,8 +344,8 @@ doi:10.1109/jbhi.2020.2984704	included		2020	Aceso: PICO-Guided Evidence Summari
 doi:10.1109/jbhi.2024.3483816	included		2024	Benchmarking Large Language Models in Evidence-Based Medicine	meta	evaluation	benchmark	med	medium
 doi:10.1109/jcdl67857.2025.00042	included		2025	Efficient Citation Screening by Weak Classifier Ensemble*	screen	method	benchmark	general	medium
 doi:10.1109/sami68106.2026.11420686	included		2026	Assessing Probability Rating Performance for Large Language Models in…	screen	evaluation	human-agree	general	medium
-doi:10.1109/saner-c67878.2026.00047	included		2026	Empirical Evaluation of Open Source Large Language Models for Paper S…	screen	evaluation	human-agree	se	medium
-doi:10.1109/seaa53835.2021.00015	included		2021	Automated Support for Searching and Selecting Evidence in Software En…	search	evaluation	none	se	medium
+doi:10.1109/saner-c67878.2026.00047	deep-read		2026	Empirical Evaluation of Open Source Large Language Models for Paper S…	screen	evaluation	human-agree	se	high
+doi:10.1109/seaa53835.2021.00015	deep-read		2021	Automated Support for Searching and Selecting Evidence in Software En…	search	evaluation	none	se	high
 doi:10.1109/weef-gedc59520.2023.10344098	included		2023	Leveraging the Potential of Generative AI to Accelerate Systematic Li…	screen	evaluation	human-agree	general	medium
 doi:10.1109/wsese66602.2025.00010	included		2025	On the Difficulties of Conducting and Replicating Systematic Literatu…	meta	position	none	se	medium
 doi:10.1111/2041-210x.14341	included		2024	Large language models help facilitate the automated synthesis of info…	synthesize	method	benchmark	general	medium
@@ -360,8 +360,8 @@ doi:10.1136/bjo-2024-326254	included		2025	Can large language models fully autom
 doi:10.1136/bmjdhai-2025-000017	included		2025	Large language model enhanced framework for systematic reviews and me…	meta	guideline	none	med	medium
 doi:10.1136/bmjebm-2023-112530	included		2024	Rapid review methods series: Guidance on the use of supportive softwa…	meta	guideline	none	med	medium
 doi:10.1136/bmjebm-2023-112597	included		2024	Integrating large language models in systematic reviews: a framework…	appraise	method	human-agree	med	medium
-doi:10.1136/bmjebm-2023-112678	included		2023	Enhancing title and abstract screening for systematic reviews with GP…	screen	evaluation	human-agree	med	medium
-doi:10.1136/bmjebm-2024-112990	included		2024	Pilot study on large language models for risk-of-bias assessments in…	appraise	evaluation	human-agree	med	medium
+doi:10.1136/bmjebm-2023-112678	deep-read		2023	Enhancing title and abstract screening for systematic reviews with GP…	screen	evaluation	human-agree	med	high
+doi:10.1136/bmjebm-2024-112990	deep-read		2024	Pilot study on large language models for risk-of-bias assessments in…	appraise	evaluation	human-agree	med	high
 doi:10.1136/bmjebm-2024-113066	included		2025	Novel AI applications in systematic review: GPT-4 assisted data extra…	extract	evaluation	human-agree	med	medium
 doi:10.1136/bmjebm-2024-113199	included		2024	From promise to practice: challenges and pitfalls in the evaluation o…	extract	position	none	med	medium
 doi:10.1136/bmjebm-2024-113320	included		2025	Opportunities, challenges and risks of using artificial intelligence…	meta	position	none	med	medium
@@ -383,7 +383,7 @@ doi:10.1145/3578337.3605135	included		2023	Outcome-based Evaluation of Systemati
 doi:10.1145/3624918.3625322	included		2023	Generating Natural Language Queries for More Effective Systematic Rev…	screen	method	benchmark	med	medium
 doi:10.1145/3661167.3661172	included		2024	The Promise and Challenges of Using LLMs to Accelerate the Screening…	screen	evaluation	human-agree	se	medium
 doi:10.1145/3674805.3686666	included		2024	ChatGPT application in Systematic Literature Reviews in Software Engi…	screen	evaluation	human-agree	se	medium
-doi:10.1145/3674805.3690743	included		2024	Data extraction for systematic mapping study using a large language m…	extract	evaluation	benchmark	se	medium
+doi:10.1145/3674805.3690743	deep-read		2024	Data extraction for systematic mapping study using a large language m…	extract	evaluation	benchmark	se	high
 doi:10.1145/3715964	included		2025	Automating Research Synthesis with Domain-Specific Large Language Mod…	synthesize	method	benchmark	general	medium
 doi:10.1145/3726302.3730133	included		2025	AiReview: An Open Platform for Accelerating Systematic Reviews with L…	screen	system	none	med	medium
 doi:10.1145/3731120.3744586	included		2025	AIDME: A Scalable, Interpretable Framework for AI-Aided Scoping Revie…	screen	system	none	general	medium
@@ -409,7 +409,7 @@ doi:10.1186/s12859-021-04396-x	included		2021	Using neural networks to support h
 doi:10.1186/s12874-020-01031-w	included		2020	The semi-automation of title and abstract screening: a retrospective…	screen	evaluation	human-agree	med	medium
 doi:10.1186/s12874-020-01129-1	included		2020	An evaluation of DistillerSR’s machine learning-based prioritization…	screen	evaluation	human-agree	med	medium
 doi:10.1186/s12874-021-01354-2	included		2021	Creating efficiencies in the extraction of data from randomized trial…	extract	evaluation	human-agree	med	medium
-doi:10.1186/s12874-021-01451-2	included		2021	Guidance for using artificial intelligence for title and abstract scr…	screen	guideline	none	med	medium
+doi:10.1186/s12874-021-01451-2	deep-read		2021	Guidance for using artificial intelligence for title and abstract scr…	screen	guideline	none	med	high
 doi:10.1186/s12874-022-01631-8	included		2022	Abstract screening using the automated tool Rayyan: results of effect…	screen	evaluation	human-agree	med	medium
 doi:10.1186/s12874-022-01649-y	included		2022	Automating risk of bias assessment in systematic reviews: a real-time…	appraise	evaluation	human-agree	med	medium
 doi:10.1186/s12874-022-01805-4	included		2022	Machine learning computational tools to assist the performance of sys…	meta	evaluation	none	med	medium
@@ -451,7 +451,7 @@ doi:10.1186/s13643-024-02575-4	included		2024	Title and abstract screening for l
 doi:10.1186/s13643-024-02590-5	included		2024	Machine learning to optimize literature screening in medical guidelin…	screen	evaluation	human-agree	med	medium
 doi:10.1186/s13643-024-02592-3	included		2024	Automation of systematic reviews of biomedical literature: a scoping…	meta	evaluation	none	med	medium
 doi:10.1186/s13643-024-02609-x	included		2024	Evaluating the effectiveness of large language models in abstract scr…	screen	evaluation	benchmark	general	medium
-doi:10.1186/s13643-024-02666-2	included		2024	Large language models, updates, and evaluation of automation tools fo…	meta	guideline	none	general	medium
+doi:10.1186/s13643-024-02666-2	deep-read		2024	Large language models, updates, and evaluation of automation tools fo…	meta	guideline	none	general	high
 doi:10.1186/s13643-024-02682-2	included		2024	Leveraging artificial intelligence to enhance systematic reviews in h…	meta	position	none	med	medium
 doi:10.1186/s13643-024-02688-w	included		2024	Semi-automated title-abstract screening using natural language proces…	screen	method	benchmark	general	medium
 doi:10.1186/s13643-025-02842-y	included		2026	The landscape of artificial intelligence tools and platforms for evid…	meta	position	none	general	medium
@@ -469,7 +469,7 @@ doi:10.1200/cci-25-00233	included		2025	Rapid Clinical Evidence Explorer: A Gene
 doi:10.1200/cci.20.00087	included		2021	Artificial Intelligence Clinical Evidence Engine for Automatic Identi…	end2end	system	human-agree	med	medium
 doi:10.1200/jco.2025.43.16_suppl.e13657	included		2025	A living systematic literature review (L-SLR) for non–small-cell lung…	extract	system	human-agree	med	medium
 doi:10.1227/neu.0000000000003450	included		2025	Using Natural Language Processing to Automate Screening of Abstracts…	screen	evaluation	human-agree	med	medium
-doi:10.12688/f1000research.151493.2	included		2024	(Semi)automated approaches to data extraction for systematic reviews…	extract	guideline	none	general	medium
+doi:10.12688/f1000research.151493.2	deep-read		2024	(Semi)automated approaches to data extraction for systematic reviews…	extract	guideline	none	general	high
 doi:10.12688/f1000research.186817.1	included		2026	Building a Living, Ontology-Informed and Large Language Model-Assiste…	synthesize	system	none	med	medium
 doi:10.12688/f1000research.22781.2	included		2020	Data extraction methods for systematic review (semi)automation: A liv…	extract	position	none	med	medium
 doi:10.12688/f1000research.51117.3	included		2025	Data extraction methods for systematic review (semi)automation: Updat…	meta	position	none	general	medium
@@ -511,7 +511,7 @@ doi:10.2139/ssrn.4797024	included		2024	A Critical Assessment of Large Language 
 doi:10.2139/ssrn.4943759	included		2024	Accuracy of Large Language Models for Literature Screening in Systema…	screen	evaluation	human-agree	med	medium
 doi:10.2139/ssrn.5760724	included		2025	Towards AI-supported SLR Automation: Citation Screening with Transfor…	screen	method	benchmark	general	medium
 doi:10.2139/ssrn.6263105	included		2026	Automatic selection of primary studies in systematic reviews with evo…	screen	method	none	general	medium
-doi:10.2139/ssrn.7048543	included		2026	HAICO-SLR Guide: Conducting and Reporting Human-AI Collaboration in S…	meta	guideline	none	general	medium
+doi:10.2139/ssrn.7048543	deep-read		2026	HAICO-SLR Guide: Conducting and Reporting Human-AI Collaboration in S…	meta	guideline	none	general	critical
 doi:10.2188/jea.je20230227	included		2023	Efficiency and Workload Reduction of Semi-automated Citation Screenin…	screen	evaluation	human-agree	med	medium
 doi:10.2188/jea.je20260233	included		2026	Qualitative Analysis of Discrepancy Patterns Between Large Language M…	screen	evaluation	human-agree	med	medium
 doi:10.2196/20007	included		2020	Artificial Intelligence for Rapid Meta-Analysis: Case Study on Ocular…	synthesize	method	human-agree	med	medium
@@ -527,17 +527,17 @@ doi:10.2196/52758	included		2024	Human-Comparable Sensitivity of Large Language 
 doi:10.2196/53164	included		2024	Hallucination Rates and Reference Accuracy of ChatGPT and Bard for Sy…	search	evaluation	human-agree	med	medium
 doi:10.2196/55827	included		2024	Evaluation of RMES, an Automated Software Tool Utilizing AI, for Lite…	screen	evaluation	human-agree	med	medium
 doi:10.2196/56537	included		2024	Evaluating Literature Reviews Conducted by Humans Versus ChatGPT: Com…	report	evaluation	human-agree	med	medium
-doi:10.2196/56780	included		2024	Potential Roles of Large Language Models in the Production of Systema…	meta	guideline	none	med	medium
+doi:10.2196/56780	deep-read		2024	Potential Roles of Large Language Models in the Production of Systema…	meta	guideline	none	med	critical
 doi:10.2196/58366	included		2025	The AI Reviewer: Evaluating AI’s Role in Citation Screening for Strea…	screen	evaluation	human-agree	med	medium
 doi:10.2196/63347	included		2025	Using ChatGPT to Improve the Presentation of Plain Language Summaries…	report	evaluation	benchmark	med	medium
-doi:10.2196/64682	included		2025	GPT-3.5 Turbo and GPT-4 Turbo in Title and Abstract Screening for Sys…	screen	evaluation	human-agree	med	medium
+doi:10.2196/64682	deep-read		2025	GPT-3.5 Turbo and GPT-4 Turbo in Title and Abstract Screening for Sys…	screen	evaluation	human-agree	med	high
 doi:10.2196/67488	included		2025	Accuracy of Large Language Models for Literature Screening in Thoraci…	screen	evaluation	human-agree	med	medium
 doi:10.2196/68097	included		2025	Critical Assessment of Large Language Models’ (ChatGPT) Performance i…	extract	evaluation	human-agree	med	medium
 doi:10.2196/68666	included		2025	Evaluating a Customized Version of ChatGPT for Systematic Review Data…	extract	system	human-agree	med	medium
 doi:10.2196/72412	included		2025	Using Large Language Models to Assess the Consistency of Randomized C…	appraise	evaluation	none	med	medium
-doi:10.2196/76130	included		2026	The Phases of Living Evidence Synthesis Using AI: Living Evidence Syn…	meta	guideline	none	med	medium
+doi:10.2196/76130	deep-read		2026	The Phases of Living Evidence Synthesis Using AI: Living Evidence Syn…	meta	guideline	none	med	critical
 doi:10.2196/76252	included		2025	Automated Literature Screening for Hepatocellular Carcinoma Treatment…	screen	method	human-agree	med	medium
-doi:10.2196/80247	included		2025	Transparent Reporting of AI in Systematic Literature Reviews: Develop…	report	guideline	none	med	medium
+doi:10.2196/80247	deep-read		2025	Transparent Reporting of AI in Systematic Literature Reviews: Develop…	report	guideline	none	med	critical
 doi:10.2196/81049	included		2026	AI-Assisted Systematic Literature Review of the Economic Burden of Pn…	end2end	system	human-agree	med	medium
 doi:10.2196/81597	included		2025	Artificial Intelligence Tools for Automating Evidence Synthesis: Scop…	meta	evaluation	none	med	medium
 doi:10.2196/90588	included		2026	Evaluating the Methodological Quality of Artificial Intelligence–Assi…	meta	evaluation	none	med	medium
@@ -556,7 +556,7 @@ doi:10.24963/kr.2020/68	included		2020	Towards a Logic of Meta-Analysis	synthesi
 doi:10.29173/cais2020	included		2025	Applying LLMs and Semantic Technologies for Data Extraction in Litera…	extract	evaluation	benchmark	general	medium
 doi:10.29173/jchla29590	included		2021	PICO Portal (product review)	screen	system	none	med	medium
 doi:10.29173/jchla29657	included		2023	Elicit (product review)	end2end	system	none	general	medium
-doi:10.31219/osf.io/ju8dk	included		2024	Leveraging Artificial Intelligence for Systematic Reviews: The FRAISR…	meta	guideline	none	general	medium
+doi:10.31219/osf.io/ju8dk	deep-read		2024	Leveraging Artificial Intelligence for Systematic Reviews: The FRAISR…	meta	guideline	none	general	critical
 doi:10.31234/osf.io/g93zf	included		2023	Reproducibility and Data storage Checklist for Active Learning-Aided…	screen	guideline	none	general	medium
 doi:10.31234/osf.io/nc8hs	included		2024	Strategizing AI Utilization for Psychological Literature Screening: A…	screen	evaluation	benchmark	general	medium
 doi:10.31234/osf.io/nq4d2	included		2024	Large Language Models in Psychology: Application in the Context of a…	extract	evaluation	human-agree	general	medium
@@ -630,14 +630,14 @@ doi:10.64898/2026.06.26.26356653	included		2026	Autonomous generation of decisio
 doi:10.64898/2026.06.26.26356718	included		2026	Enhancing Title and Abstract Priority Screening Through EdRoSi AI Pip…	screen	system	benchmark	general	medium
 doi:10.64898/2026.07.01.26356995	included		2026	Comparing Artificial Intelligence versus Human Screening in Systemati…	screen	evaluation	human-agree	med	medium
 doi:10.64898/2026.07.29.741127	included		2026	Operationalising LLM-assisted screening of literature to support syst…	screen	method	human-agree	general	medium
-doi:10.64898/2026.07.30.26359375	included		2026	A PRISMA-Aligned Agentic Framework for Medical Systematic Reviews and…	end2end	system	none	med	medium
+doi:10.64898/2026.07.30.26359375	deep-read		2026	A PRISMA-Aligned Agentic Framework for Medical Systematic Reviews and…	end2end	system	none	med	critical
 doi:10.66434/ijssr.v1i1.538	included		2026	ystematic reviews in the era of artificial intelligence: Opportunitie…	meta	position	none	general	medium
 doi:10.69528/jkmla.2025.52.1.28	included		2025	Quality Evaluation of Generative AI–Based Search Strategies in System…	search	evaluation	human-agree	med	medium
 doi:10.7142/igakutoshokan.72.3_136	included		2025	Expanding the Feasibility of Systematic Reviews With AI Support: A Pr…	screen	evaluation	none	general	medium
 doi:10.7326/annals-24-02189	included		2025	Development of Prompt Templates for Large Language Model–Driven Scree…	screen	method	human-agree	med	medium
 doi:10.7326/annals-25-00012	included		2025	Large Language Models for Screening Search Results in Systematic Revi…	screen	position	none	general	medium
 doi:10.7326/annals-25-00739	included		2025	Artificial Intelligence–Assisted Data Extraction With a Large Languag…	extract	evaluation	human-agree	med	medium
-doi:10.7326/m22-0092	included		2022	Accuracy and Efficiency of Machine Learning–Assisted Risk-of-Bias Ass…	appraise	evaluation	human-agree	med	medium
+doi:10.7326/m22-0092	deep-read		2022	Accuracy and Efficiency of Machine Learning–Assisted Risk-of-Bias Ass…	appraise	evaluation	human-agree	med	high
 doi:10.7326/m23-3389	included		2024	Sensitivity and Specificity of Using GPT-3.5 Turbo Models for Title a…	screen	evaluation	human-agree	med	medium
 doi:10.7717/peerj-cs.2822	included		2025	Validation of automated paper screening for esophagectomy systematic…	screen	evaluation	human-agree	med	medium
 doi:10.7759/cureus.111193	included		2026	Benchmarking a Local Schema-Constrained Large Language Model Pipeline…	end2end	system	benchmark	med	medium
@@ -764,10 +764,10 @@ doi:10.1007/978-3-032-10728-2_11	parked								medium
 doi:10.1007/978-3-032-13187-4_14	excluded	E1-primary-research-automation							medium
 doi:10.1007/978-3-032-30813-9_73	excluded	E6-duplicate-or-superseded							medium
 doi:10.1007/978-981-96-8309-3_34	excluded	E1-primary-research-automation							medium
-doi:10.1007/978-981-97-1717-0_16	parked								medium
+doi:10.1007/978-981-97-1717-0_16	excluded	E2-generic-nlp-no-synthesis-framing							medium
 doi:10.1007/s00134-019-05872-y	excluded	E2-generic-nlp-no-synthesis-framing							medium
 doi:10.1007/s00170-026-18711-4	excluded	E2-generic-nlp-no-synthesis-framing							medium
-doi:10.1007/s00228-022-03329-8	parked								medium
+doi:10.1007/s00228-022-03329-8	included		2022	Feasibility study and evaluation of expert opinion on the semi-automated meta-analysis and the conventional meta-analysis	synthesize	evaluation	human-agree	med	medium
 doi:10.1007/s00417-025-07092-1	excluded	E2-generic-nlp-no-synthesis-framing							medium
 doi:10.1007/s00432-024-05678-6	excluded	E2-generic-nlp-no-synthesis-framing							medium
 doi:10.1007/s00590-021-03059-0	excluded	E2-generic-nlp-no-synthesis-framing							medium
@@ -797,7 +797,7 @@ doi:10.1007/s11704-024-40555-y	excluded	E2-generic-nlp-no-synthesis-framing					
 doi:10.1007/s11704-026-50857-y	excluded	E2-generic-nlp-no-synthesis-framing							medium
 doi:10.1007/s11704-026-60308-3	excluded	E2-generic-nlp-no-synthesis-framing							medium
 doi:10.1007/s12652-025-05007-w	excluded	E2-generic-nlp-no-synthesis-framing							medium
-doi:10.1007/s13042-022-01710-8	parked								medium
+doi:10.1007/s13042-022-01710-8	included		2022	Leveraging deep learning for automatic literature screening in intelligent bibliometrics	screen	method	human-agree	general	medium
 doi:10.1007/s13139-024-00876-z	excluded	E2-generic-nlp-no-synthesis-framing							medium
 doi:10.1007/s13139-026-01029-0	excluded	E2-generic-nlp-no-synthesis-framing							medium
 doi:10.1007/s13410-026-01672-5	excluded	E3-opinion-without-guidance							medium
@@ -815,7 +815,7 @@ doi:10.1007/s44336-024-00009-2	excluded	E2-generic-nlp-no-synthesis-framing					
 doi:10.1007/s44443-025-00177-1	excluded	E2-generic-nlp-no-synthesis-framing							medium
 doi:10.1016/j.acalib.2024.102901	excluded	E2-generic-nlp-no-synthesis-framing							medium
 doi:10.1016/j.amjsurg.2025.116657	excluded	E2-generic-nlp-no-synthesis-framing							medium
-doi:10.1016/j.artmed.2021.102098	parked								medium
+doi:10.1016/j.artmed.2021.102098	included		2021	Enhancing evidence-based medicine with natural language argumentative analysis of clinical trials	appraise	method	none	med	medium
 doi:10.1016/j.asoc.2024.112374	excluded	E2-generic-nlp-no-synthesis-framing							medium
 doi:10.1016/j.atech.2026.101812	excluded	E2-generic-nlp-no-synthesis-framing							medium
 doi:10.1016/j.atech.2026.102264	excluded	E2-generic-nlp-no-synthesis-framing							medium
@@ -1082,7 +1082,7 @@ doi:10.1186/s40537-025-01236-0	excluded	E1-primary-research-automation							med
 doi:10.1186/s41073-026-00231-0	excluded	E2-generic-nlp-no-synthesis-framing							medium
 doi:10.1186/s41239-023-00436-z	excluded	E2-generic-nlp-no-synthesis-framing							medium
 doi:10.1186/s42400-025-00361-w	excluded	E2-generic-nlp-no-synthesis-framing							medium
-doi:10.1200/cci-24-00311	parked								medium
+doi:10.1200/cci-24-00311	excluded	E2-generic-nlp-no-synthesis-framing							medium
 doi:10.1200/cci.21.00035	excluded	E2-generic-nlp-no-synthesis-framing							medium
 doi:10.12688/f1000research.169999.1	excluded	E2-generic-nlp-no-synthesis-framing							medium
 doi:10.12688/f1000research.22781.1	excluded	E6-duplicate-or-superseded							medium
@@ -1291,3 +1291,676 @@ doi:10.2196/preprints.48996	excluded	E6-duplicate-or-superseded							medium
 doi:10.2196/preprints.67488	excluded	E6-duplicate-or-superseded							medium
 doi:10.64898/2026.01.07.26343635	excluded	E6-duplicate-or-superseded							medium
 legacy:arxiv:2310.17526v2	excluded	E6-duplicate-or-superseded							medium
+doi:10.1101/2023.06.13.23291311	excluded	E6-duplicate-or-superseded							medium
+doi:10.31222/osf.io/nbe5q	excluded	E6-duplicate-or-superseded							medium
+t:thetrialbankinitiativetopromotetrustworthylivingevidenceformedicationsafetypromi	excluded	E6-duplicate-or-superseded							medium
+t:evaluatingaibasedscientificknowledgesynthesiswithepidemiologicalsystematicreview	excluded	E6-duplicate-or-superseded							medium
+doi:10.2196/preprints.39736	excluded	E6-duplicate-or-superseded							medium
+arxiv:2211.15268	excluded	E2-generic-nlp-no-synthesis-framing							medium
+arxiv:2303.13379	excluded	E2-generic-nlp-no-synthesis-framing							medium
+arxiv:2405.03066	excluded	E2-generic-nlp-no-synthesis-framing							medium
+arxiv:2408.11961	excluded	E1-primary-research-automation							medium
+arxiv:2409.00097	excluded	E2-generic-nlp-no-synthesis-framing							medium
+arxiv:2411.05285	excluded	E2-generic-nlp-no-synthesis-framing							medium
+arxiv:2411.14473	excluded	E6-duplicate-or-superseded							medium
+arxiv:2412.06564	excluded	E2-generic-nlp-no-synthesis-framing							medium
+arxiv:2502.00015	excluded	E2-generic-nlp-no-synthesis-framing							medium
+arxiv:2502.03032	excluded	E2-generic-nlp-no-synthesis-framing							medium
+arxiv:2503.10497	excluded	E2-generic-nlp-no-synthesis-framing							medium
+arxiv:2504.01990	excluded	E2-generic-nlp-no-synthesis-framing							medium
+arxiv:2504.14367	excluded	E2-generic-nlp-no-synthesis-framing							medium
+arxiv:2505.01469	excluded	E2-generic-nlp-no-synthesis-framing							medium
+arxiv:2505.18906	excluded	E2-generic-nlp-no-synthesis-framing							medium
+arxiv:2506.23749	excluded	E2-generic-nlp-no-synthesis-framing							medium
+arxiv:2507.12483	excluded	E2-generic-nlp-no-synthesis-framing							medium
+arxiv:2508.11698	excluded	E2-generic-nlp-no-synthesis-framing							medium
+arxiv:2509.25160	excluded	E2-generic-nlp-no-synthesis-framing							medium
+arxiv:2510.18787	excluded	E2-generic-nlp-no-synthesis-framing							medium
+arxiv:2512.01953	excluded	E2-generic-nlp-no-synthesis-framing							medium
+arxiv:2512.04116	excluded	E2-generic-nlp-no-synthesis-framing							medium
+arxiv:2512.06914	excluded	E2-generic-nlp-no-synthesis-framing							medium
+arxiv:2512.19466	excluded	E2-generic-nlp-no-synthesis-framing							medium
+arxiv:2602.10147	included		2026	On the Use of a Large Language Model to Support the Conduction of a Systematic Mapping Study: A Brief Report from a Practitioner's View	end2end	guideline	none	general	medium
+arxiv:2602.21950	excluded	E2-generic-nlp-no-synthesis-framing							medium
+arxiv:2602.22291	excluded	E2-generic-nlp-no-synthesis-framing							medium
+arxiv:2603.00399	excluded	E2-generic-nlp-no-synthesis-framing							medium
+arxiv:2603.04476	excluded	E2-generic-nlp-no-synthesis-framing							medium
+arxiv:2603.14643	excluded	E2-generic-nlp-no-synthesis-framing							medium
+arxiv:2603.21654	excluded	E2-generic-nlp-no-synthesis-framing							medium
+arxiv:2605.23148	excluded	E1-primary-research-automation							medium
+arxiv:2606.01416	excluded	E2-generic-nlp-no-synthesis-framing							medium
+arxiv:2607.21605	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1002/acp.3762	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1002/alz.038135	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1002/aps.70069	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1002/bse.70038	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1002/cesm.12044	included		2024	Methods for conducting a living evidence profile on mpox: An evidence map of the literature	end2end	method	none	med	medium
+doi:10.1002/cesm.12045	included		2024	Designing, refining and reflecting on 3 years of daily evidence surveillance for Australia's living national COVID‐19 guidelines	search	method	none	med	medium
+doi:10.1002/cesm.70024	included		2025	Cochrane's COVID‐19 Living Systematic Reviews: A Mixed‐Methods Study of Their Conduct, Reporting and Currency	meta	evaluation	none	med	medium
+doi:10.1002/cesm.70046/v1/decision1	excluded	E5-insufficient-metadata							medium
+doi:10.1002/cesm.70046/v1/review1	excluded	E5-insufficient-metadata							medium
+doi:10.1002/cesm.70046/v1/review2	excluded	E5-insufficient-metadata							medium
+doi:10.1002/cesm.70046/v2/decision1	excluded	E5-insufficient-metadata							medium
+doi:10.1002/cesm.70084	excluded	E5-insufficient-metadata							medium
+doi:10.1002/gin2.70062	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1002/jeo2.12025	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1002/jrsm.1335	excluded	E4-before-window							medium
+doi:10.1002/jrsm.27	excluded	E4-before-window							medium
+doi:10.1002/rev3.70141	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1002/sd.71195	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1002/widm.1569	included		2024	Using Machine Learning for Systematic Literature Review Case in Point: Agile Software Development	synthesize	evaluation	human-agree	se	medium
+doi:10.1007/978-3-030-10752-9_1	excluded	E4-before-window							medium
+doi:10.1007/978-3-030-99736-6_39	included		2022	Automation of Citation Screening for Systematic Literature Reviews Using Neural Networks: A Replicability Study	screen	evaluation	human-agree	se	medium
+doi:10.1007/978-3-031-16474-3_5	included		2022	A Rapid Semi-automated Literature Review on Legal Precedents Retrieval	search	method	none	general	medium
+doi:10.1007/978-3-031-98290-3_28	included		2025	Literature Reviews with AI: Leveraging Research Rabbit and BERT-Based Models for Efficient Retrieval and Topic Clustering	search	method	none	general	medium
+doi:10.1007/978-3-032-00549-6_16	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1007/978-3-032-27666-7_15	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1007/978-3-032-29372-5_30	included		2026	AISA: A Web-Based Platform for Evaluating the Literature Search Capabilities of LLMs	search	system	benchmark	general	medium
+doi:10.1007/978-3-032-29842-3_34	excluded	E1-primary-research-automation							medium
+doi:10.1007/978-981-92-0291-1_11	excluded	E1-primary-research-automation							medium
+doi:10.1007/978-981-97-0169-8_52	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1007/978-981-97-9443-0_14	included		2024	Generation of Scientific Literature Surveys Based on Large Language Models (LLM) and Multi-Agent Systems (MAS)	end2end	system	none	general	medium
+doi:10.1007/s00146-025-02805-w	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1007/s00246-026-04416-8	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1007/s00330-024-11107-6	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1007/s00406-026-02344-5	excluded	E1-primary-research-automation							medium
+doi:10.1007/s00414-026-03947-2	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1007/s00423-026-04109-z	excluded	E1-primary-research-automation							medium
+doi:10.1007/s00586-026-09925-x	included		2026	Accuracy in spinal level determination, including transitional vertebrae: an ASReview supported systematic review	screen	method	none	med	medium
+doi:10.1007/s00778-026-01000-7	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1007/s10072-026-09294-9	excluded	E1-primary-research-automation							medium
+doi:10.1007/s10113-024-02283-8	included		2024	Integrating artificial intelligence with expert knowledge in global environmental assessments: opportunities, challenges and the way ahead	meta	position	human-agree	general	medium
+doi:10.1007/s10115-022-01772-8	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1007/s10209-021-00843-x	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1007/s10270-021-00908-8	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1007/s10389-022-01795-z	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1007/s10462-026-11512-x	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1007/s10462-026-11531-8	included		2026	Systematic literature review of multi-objective hyper-heuristics: a human-in-the-loop large language model methodology	screen	method	none	general	medium
+doi:10.1007/s10515-022-00337-x	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1007/s10567-025-00519-5	included		2025	Artificial Intelligence Software to Accelerate Screening for Living Systematic Reviews	screen	system	human-agree	med	medium
+doi:10.1007/s10578-026-02074-8	excluded	E1-primary-research-automation							medium
+doi:10.1007/s10579-026-09948-2	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1007/s10639-021-10570-8	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1007/s10664-020-09872-1	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1007/s10664-020-09881-0	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1007/s10668-026-08039-0	excluded	E1-primary-research-automation							medium
+doi:10.1007/s10758-026-10012-9	excluded	E1-primary-research-automation							medium
+doi:10.1007/s10796-015-9589-7	excluded	E4-before-window							medium
+doi:10.1007/s10803-026-07463-5	excluded	E1-primary-research-automation							medium
+doi:10.1007/s10864-026-09647-6	excluded	E1-primary-research-automation							medium
+doi:10.1007/s10878-026-01451-2	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1007/s10916-026-02450-w	excluded	E1-primary-research-automation							medium
+doi:10.1007/s11065-026-09712-x	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1007/s11121-026-01885-4	included		2026	Identifying and Prioritizing Core Components of Relationship Education Programs: a Case Study of an Artificial Intelligence (AI) Assisted Systematic Review	extract	method	none	med	medium
+doi:10.1007/s11192-026-05763-2	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1007/s11192-026-05771-2	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1007/s11357-026-02447-w	excluded	E1-primary-research-automation							medium
+doi:10.1007/s11704-026-51716-6	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1007/s12103-026-09938-8	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1007/s12525-025-00754-2	included		2025	Exploring the scope of generative AI in literature review development	meta	position	none	general	medium
+doi:10.1007/s13272-025-00818-1	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1007/s13534-025-00497-1	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1007/s13555-026-01789-9	excluded	E1-primary-research-automation							medium
+doi:10.1007/s40489-026-00580-y	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1007/s40501-025-00363-y	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1007/s40725-026-00286-8	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1007/s43621-025-01480-7	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1007/s44163-023-00065-5	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1007/s44163-025-00432-4	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1007/s44163-025-00628-8	included		2025	Evaluating AI toolchains for systematic literature reviews using a rubric-based workflow approach	meta	guideline	none	general	medium
+doi:10.1007/s44163-025-00784-x	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1007/s44163-026-01918-5	included		2026	Evaluating large language model performance in US FDA regulatory science	extract	evaluation	human-agree	med	medium
+doi:10.1007/s44212-024-00060-w	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1007/s44230-025-00090-w	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1007/s44290-026-00583-y	excluded	E1-primary-research-automation							medium
+doi:10.1016/j.accinf.2024.100715	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1016/j.artmed.2008.08.009	excluded	E4-before-window							medium
+doi:10.1016/j.artmed.2026.103501	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1016/j.asoc.2021.107765	included		2021	A Multi-Channel Convolutional Neural Network approach to automate the citation screening process	screen	method	human-agree	general	medium
+doi:10.1016/j.autcon.2023.105183	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1016/j.autcon.2025.106255	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1016/j.autcon.2025.106346	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1016/j.autcon.2026.107060	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1016/j.autcon.2026.107198	excluded	E1-primary-research-automation							medium
+doi:10.1016/j.bcra.2025.100347	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1016/j.caeai.2022.100087	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1016/j.caeai.2023.100136	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1016/j.caeo.2024.100169	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1016/j.cma.2026.119271	excluded	E1-primary-research-automation							medium
+doi:10.1016/j.conctc.2019.100443	excluded	E4-before-window							medium
+doi:10.1016/j.cosrev.2020.100308	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1016/j.dsm.2024.09.005	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1016/j.ejso.2026.111741	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1016/j.envint.2019.105228	excluded	E4-before-window							medium
+doi:10.1016/j.eswa.2013.08.047	excluded	E4-before-window							medium
+doi:10.1016/j.eswa.2021.115261	included		2021	A decision support system for automating document retrieval and citation screening	screen	system	human-agree	general	medium
+doi:10.1016/j.eswa.2026.133805	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1016/j.eswa.2026.133942	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1016/j.gfs.2022.100615	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1016/j.gofs.2026.05.004	included		2026	[From PubMed to GPT: A narrative review of the emerging role of Large Language Models in systematic reviews].	meta	guideline	none	med	medium
+doi:10.1016/j.ijhm.2026.104870	excluded	E1-primary-research-automation							medium
+doi:10.1016/j.ijmedinf.2025.106048	included		2025	Leveraging open-source large language models (LLMs) in scoping reviews: a case study on disability and AI applications	screen	evaluation	human-agree	med	medium
+doi:10.1016/j.infsof.2020.106296	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1016/j.infsof.2021.106783	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1016/j.infsof.2022.107128	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1016/j.infsof.2022.107142	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1016/j.infsof.2025.107757	included		2025	Exploring the use of LLMs for the selection phase in systematic literature studies	screen	evaluation	human-agree	se	medium
+doi:10.1016/j.iref.2026.105636	excluded	E1-primary-research-automation							medium
+doi:10.1016/j.jaad.2026.05.139	included		2026	Artificial intelligence in evidence synthesis: Benefits, limitations, and the importance of transparent reporting	meta	guideline	none	med	medium
+doi:10.1016/j.jbi.2014.06.005	excluded	E4-before-window							medium
+doi:10.1016/j.jbi.2015.05.004	excluded	E4-before-window							medium
+doi:10.1016/j.jbi.2016.03.026	excluded	E4-before-window							medium
+doi:10.1016/j.jbi.2016.06.001	excluded	E4-before-window							medium
+doi:10.1016/j.jbi.2017.06.018	excluded	E4-before-window							medium
+doi:10.1016/j.jbi.2019.103202	excluded	E4-before-window							medium
+doi:10.1016/j.jbi.2020.103383	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1016/j.jbi.2022.104030	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1016/j.jbi.2023.104482	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1016/j.jcjo.2026.07.006	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1016/j.jclepro.2021.126655	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1016/j.jclepro.2022.132764	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1016/j.jclepro.2023.137741	included		2023	A comprehensive, semi-automated systematic literature review (SLR) design: Application to P-graph research with a focus on sustainability	end2end	method	none	general	medium
+doi:10.1016/j.jclinepi.2017.08.011	excluded	E4-before-window							medium
+doi:10.1016/j.jclinepi.2023.10.007	included		2023	Crowd-sourcing and automation facilitated the identification and classification of randomized controlled trials in a living review	screen	method	human-agree	med	medium
+doi:10.1016/j.jclinepi.2023.111231	included		2023	Optimizing process and methods for a living systematic review: 30 search updates and three review updates later	end2end	guideline	none	med	medium
+doi:10.1016/j.jclinepi.2026.112211	included		2026	Living evidence and gap maps: a scoping review of automation and living mode parameters reported in 44 digital interfaces and their documentation	meta	evaluation	none	med	medium
+doi:10.1016/j.jenvman.2024.120126	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1016/j.jksuci.2021.09.018	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1016/j.jneumeth.2024.110209	included		2024	A Systematic Online Living Evidence Summary of experimental Alzheimer’s disease research	end2end	system	none	med	medium
+doi:10.1016/j.jpedsurg.2026.162956	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1016/j.jpowsour.2024.234674	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1016/j.jss.2017.06.024	excluded	E4-before-window							medium
+doi:10.1016/j.jss.2020.110736	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1016/j.jss.2022.111515	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1016/j.jval.2025.04.1124	included		2025	MT14 Role of Generative Artificial Intelligence in Assisting Systematic Review Process in Health Research: A Systematic Review	meta	evaluation	none	med	medium
+doi:10.1016/j.landig.2025.100960	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1016/j.mex.2020.100831	included		2020	A clustering approach for topic filtering within systematic literature reviews	screen	method	none	general	medium
+doi:10.1016/j.nepr.2025.104614	included		2025	Human-led and artificial intelligence-automated critical appraisal of systematic reviews: Comparative evaluation	appraise	evaluation	human-agree	med	medium
+doi:10.1016/j.neunet.2026.109267	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1016/j.oneear.2023.12.011	included		2024	Machine learning evidence map reveals global differences in adaptation action	synthesize	method	none	general	medium
+doi:10.1016/j.pan.2024.05.518	included		2024	The living evidence map of pancreatic surgery – an innovative tool for contemporary evidence synthesis	end2end	system	none	med	medium
+doi:10.1016/j.procs.2023.08.149	included		2023	Evaluation of Attention-Based LSTM and Bi-LSTM Networks For Abstract Text Classification in Systematic Literature Review Automation	screen	evaluation	human-agree	general	medium
+doi:10.1016/j.procs.2025.04.122	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1016/j.pubrev.2026.102745	excluded	E1-primary-research-automation							medium
+doi:10.1016/j.scitotenv.2024.171556	included		2024	Living review framework for better policy design and management of hazardous waste in Australia	synthesize	method	human-agree	general	medium
+doi:10.1016/j.semarthrit.2026.153026	excluded	E1-primary-research-automation							medium
+doi:10.1016/j.softx.2025.102198	included		2025	LitOrganizer: Automating the process of data extraction and organization for scientific literature reviews	extract	system	none	general	medium
+doi:10.1016/j.tjpad.2026.100645	excluded	E1-primary-research-automation							medium
+doi:10.1016/j.tree.2024.11.013	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1017/s1368980019005305	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1021/acs.iecr.3c03898.s001	excluded	E1-primary-research-automation							medium
+doi:10.1021/acs.jpclett.6c02004	excluded	E1-primary-research-automation							medium
+doi:10.1021/acsenergylett.2c00250.s001	excluded	E1-primary-research-automation							medium
+doi:10.1021/acssynbio.4c00091	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1038/s41405-024-00277-6	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1038/s41432-026-01238-8	included		2026	Can artificial intelligence accurately assess systematic review quality? Benchmarking large language models for AMSTAR 2 appraisal in dental evidence synthesis	appraise	evaluation	human-agree	med	medium
+doi:10.1038/s41467-025-64105-7	excluded	E1-primary-research-automation							medium
+doi:10.1038/s41558-021-01168-6	included		2021	Machine-learning-based evidence and attribution mapping of 100,000 climate impact studies	synthesize	method	none	general	medium
+doi:10.1038/s41558-023-01890-3	included		2023	The next generation of machine learning for tracking adaptation texts	search	method	none	general	medium
+doi:10.1038/s41598-025-98483-1	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1038/s41598-026-65398-4	excluded	E1-primary-research-automation							medium
+doi:10.1038/s41598-026-65690-3	excluded	E1-primary-research-automation							medium
+doi:10.1038/s41746-023-00879-8	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1038/s41746-025-01565-7	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1038/s41746-025-01611-4	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1038/s41746-025-02302-w	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1038/s41746-026-02382-2	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1038/s41746-026-02909-7	excluded	E3-opinion-without-guidance							medium
+doi:10.1038/s41746-026-03061-y	excluded	E1-primary-research-automation							medium
+doi:10.1038/s41746-026-03093-4	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1038/s41746-026-03110-6	excluded	E1-primary-research-automation							medium
+doi:10.1038/s41746-026-03133-z	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1038/s43856-026-01839-5	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1038/s44184-024-00056-z	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1038/s44277-025-00049-6	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1038/s44387-025-00011-z	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1049/ic.2011.0004	excluded	E4-before-window							medium
+doi:10.1049/rpg2.70327	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1061/jccee5.cpeng-7723	excluded	E1-primary-research-automation							medium
+doi:10.1080/00207543.2026.2641103	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1080/0142159x.2024.2314198	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1080/0194262x.2026.2674695	included		2026	‘To Boldly Go…’ Guidance for Engineering Librarians Navigating the Landscape of Knowledge Synthesis	meta	guideline	none	general	medium
+doi:10.1080/13600869.2025.2497630	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1080/13803611.2026.2698571	included		2026	Artificial intelligence in systematic reviews and meta-analyses: capabilities and methodological and ethical considerations	meta	position	none	general	medium
+doi:10.1080/15228959.2023.2224125	included		2023	Elicit: AI literature review research assistant	search	system	none	general	medium
+doi:10.1080/17517575.2021.1986862	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1080/23311983.2026.2703451	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1080/24725579.2026.2619123	included		2026	A large language model framework for knowledge graph construction of randomized controlled trials for evidence synthesis and querying	extract	method	human-agree	med	medium
+doi:10.1080/24750158.2022.2087954	included		2022	The Development of a Living Knowledge System and Implications for Future Systematic Searching	screen	system	none	general	medium
+doi:10.1088/3050-2454/ae524c	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1093/bib/bbad453	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1093/biomethods/bpag006	included		2026	Large language model-based multiagent collaboration for abstract screening toward automated systematic reviews	screen	method	human-agree	med	medium
+doi:10.1093/cid/ciad407	excluded	E3-opinion-without-guidance							medium
+doi:10.1093/jamia/ocae035	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1093/jamia/ocag045	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1093/jamia/ocv044	excluded	E4-before-window							medium
+doi:10.1093/jamiaopen/ooae139	included		2024	The FAIR database: facilitating access to public health research literature	extract	system	human-agree	med	medium
+doi:10.1093/postmj/qgae122	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1093/toxsci/kfad134	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1097/ajn.0000000000000288	included		2026	Using Artificial Intelligence to Enhance Evidence Search and Synthesis	meta	position	none	med	medium
+doi:10.1101/2021.07.09.450648	excluded	E1-primary-research-automation							medium
+doi:10.1101/2021.09.07.21263207	included		2021	<i>metaCOVID:</i> An R-Shiny application for living meta-analyses of COVID-19 trials	synthesize	system	none	med	medium
+doi:10.1101/2021.09.30.462652	included		2021	Are Machines-learning Methods More Efficient than Humans in Triaging Literature for Systematic Reviews?	screen	evaluation	human-agree	med	medium
+doi:10.1101/2022.06.13.22276242	included		2022	Managing the evidence infodemic: Automation approaches used for developing NICE COVID-19 living guidelines	screen	method	none	med	medium
+doi:10.1101/2023.01.18.524571	included		2023	Ensemble of deep learning language models to support the creation of living systematic reviews for the COVID-19 literature	screen	method	human-agree	med	medium
+doi:10.1101/2023.02.20.23286179	included		2023	LiteRev, an Automation Tool to Support Literature Reviews: A Case Study on Acute and Early HIV Infection in Sub-Saharan Africa	search	system	human-agree	med	medium
+doi:10.1101/2023.07.11.548354	excluded	E6-duplicate-or-superseded							medium
+doi:10.1101/2024.12.02.24318184	included		2024	Next Generation Evidence: High-Precision Information Retrieval for Rapid Clinical Guideline Updates	search	system	human-agree	med	medium
+doi:10.1101/2025.11.07.25339719	included		2025	Best Practice Methods for Living Evidence Synthesis in Health Care: An International Modified Delphi Survey	meta	guideline	none	med	medium
+doi:10.1108/ecam-10-2025-1668	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1108/emjb-03-2024-0055	included		2024	AI meets academia: transforming systematic literature reviews	meta	position	none	general	medium
+doi:10.1108/et-05-2023-0169	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1109/aaiml67890.2026.11498114	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1109/access.2020.2974934	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1109/access.2021.3089560	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1109/access.2021.3101039	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1109/access.2021.3134628	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1109/access.2022.3182372	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1109/access.2022.3206366	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1109/access.2023.3326101	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1109/apsec.2017.10	excluded	E4-before-window							medium
+doi:10.1109/asp-dac66049.2026.11420505	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1109/bigdata55660.2022.10020376	included		2022	Academic Graph: A Literature Review System	search	system	none	general	medium
+doi:10.1109/cisti.2016.7521620	excluded	E4-before-window							medium
+doi:10.1109/clei47609.2019.235079	excluded	E4-before-window							medium
+doi:10.1109/dsn69566.2026.00018	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1109/fie63693.2025.11328649	included		2025	Leveraging Llms for Streamlining and Demystifying the Systematic Literature Review Process	end2end	system	none	general	medium
+doi:10.1109/icadcs70036.2026.11583464	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1109/iccams65118.2025.11234492	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1109/icced64257.2024.10983111	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1109/iccsm66818.2025.00027	included		2025	Toward the Conduction of Automated Systematic Literature Reviews: The Role of Large Language Models	screen	evaluation	human-agree	general	medium
+doi:10.1109/icctech66294.2025.00027	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1109/icdca69396.2026.11620226	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1109/icecet61485.2024.10698379	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1109/icimtech67074.2025.11265175	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1109/icnte66387.2026.11437404	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1109/icprs58416.2023.10179038	included		2023	UAV Remote Sensing applications and current trends in crop monitoring and diagnostics: A Systematic Literature Review	screen	method	human-agree	general	medium
+doi:10.1109/icsedi66420.2026.11568358	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1109/iseda65950.2025.11101179	excluded	E1-primary-research-automation							medium
+doi:10.1109/issre59848.2023.00026	excluded	E1-primary-research-automation							medium
+doi:10.1109/lra.2026.3699266	excluded	E1-primary-research-automation							medium
+doi:10.1109/mts.2025.3558666	excluded	E3-opinion-without-guidance							medium
+doi:10.1109/raai67517.2025.11423280	excluded	E1-primary-research-automation							medium
+doi:10.1109/sami68106.2026.11420449	included		2026	From Automation to Validation: Assessing Human–LLM Agreement in Systematic Reviews of Venture Capital Investment Strategies	screen	evaluation	human-agree	general	medium
+doi:10.1109/snams.2018.8554896	excluded	E4-before-window							medium
+doi:10.1109/tccn.2025.3612760	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1109/tits.2026.3678653	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1109/tnb.2016.2565481	excluded	E4-before-window							medium
+doi:10.1109/tpwrd.2026.3673645	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1109/tse.2017.2704579	excluded	E4-before-window							medium
+doi:10.1109/tse.2022.3170122	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1109/wsese66602.2025.00015	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1111/1742-6723.70243	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1111/2041-210x.13268	excluded	E4-before-window							medium
+doi:10.1111/bjet.13370	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1111/dar.70068	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1111/desc.12988	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1111/jan.16493/v1/review1	excluded	E5-insufficient-metadata							medium
+doi:10.1111/jan.16493/v1/review2	excluded	E5-insufficient-metadata							medium
+doi:10.1111/jan.16493/v2/review1	excluded	E5-insufficient-metadata							medium
+doi:10.1111/jan.16493/v3/review1	excluded	E5-insufficient-metadata							medium
+doi:10.1111/jan.16493/v4/review1	excluded	E5-insufficient-metadata							medium
+doi:10.1111/jebm.12658	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1111/jnu.12628	included		2021	Agreement in Risk of Bias Assessment Between RobotReviewer and Human Reviewers: An Evaluation Study on Randomised Controlled Trials in Nursing‐Related Cochrane Reviews	appraise	evaluation	human-agree	med	medium
+doi:10.1111/jocn.70490	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.11124/jbies-21-00458	included		2022	Managing unmanageable loads of evidence: are living reviews the answer?	meta	position	none	med	medium
+doi:10.11124/jbies-25-00236	included		2026	User experience and adoption of automation and AI for evidence synthesis: a scoping review protocol	meta	evaluation	none	med	medium
+doi:10.1117/12.3117647	excluded	E1-primary-research-automation							medium
+doi:10.1123/jmpb.2025-0070	included		2026	Two Decades of Physical Activity Classification Algorithms: An Artificial Intelligence-Assisted Systematic Review by the LABDA Consortium	extract	system	none	general	medium
+doi:10.1126/science.adk8946	excluded	E1-primary-research-automation							medium
+doi:10.1136/bmjhci-2023-100914	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1136/fmch-2023-002602	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1142/s0218213024500234	included		2024	The Automation of Science? Possibilities and Boundaries of AI Applications for Conducting Systematic Literature Reviews	meta	evaluation	none	general	medium
+doi:10.1142/s2811032323300025	excluded	E3-opinion-without-guidance							medium
+doi:10.1145/2837185.2837279	excluded	E4-before-window							medium
+doi:10.1145/3011141.3011177	excluded	E4-before-window							medium
+doi:10.1145/3084226.3084243	excluded	E4-before-window							medium
+doi:10.1145/3194747.3194748	excluded	E4-before-window							medium
+doi:10.1145/3308558.3313544	excluded	E4-before-window							medium
+doi:10.1145/3457608	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1145/3520480	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1145/3561818	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1145/3640794.3665582	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1145/3641555.3705184	included		2025	Exploring the Impact of Unsupervised Clustering Methods in Systematic Literature Reviews	synthesize	method	none	general	medium
+doi:10.1145/3726122.3726228	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1145/3745019	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1145/3786149.3788298	included		2026	On the Use of a Large Language Model to Support the Conduction of a Systematic Mapping Study: A Brief Report from a Practitioner’s View	end2end	guideline	none	se	medium
+doi:10.1145/3803437.3806408	included		2026	AISysRev - LLM-based Tool for Title-abstract Screening	screen	system	human-agree	general	medium
+doi:10.1145/3803437.3807385	excluded	E1-primary-research-automation							medium
+doi:10.1155/2022/6933523	included		2022	Construction of a Meta-Evidence Prototype Database of Traditional Chinese Medicine Splenogastric Diseases and Its Application in an Automatic Meta-Analysis System	synthesize	system	none	med	medium
+doi:10.1155/2023/6660983	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1158/1538-7445.am2026-2747	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1159/000515908	included		2021	Utilizing Artificial Intelligence to Manage COVID-19 Scientific Evidence Torrent with Risklick AI: A Critical Tool for Pharmacology and Therapy Development	search	system	benchmark	med	medium
+doi:10.11591/eei.v13i2.6077	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1161/svin.125.002261	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1163/1568539x-bja10382	excluded	E1-primary-research-automation							medium
+doi:10.1177/01925121261466179	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1177/14697874261467043	excluded	E1-primary-research-automation							medium
+doi:10.1177/18911803261462152	included		2026	Don’t Let the Evidence Die: From Rapid to Living Reviews, Experiences From the Global South	meta	guideline	none	general	medium
+doi:10.1177/18911803261469813	included		2026	Techniques, Performance, and Feasibility of Natural Language Processing for Abstract Screening in Evidence Synthesis: A Systematic Review	screen	evaluation	human-agree	general	medium
+doi:10.1177/20552076261462624	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1177/22104968261465514	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1177/27541231261459663	included		2026	Large language models for evidence-based planning: Evaluating an SLR-RAG framework for knowledge synthesis of urban vacant land	synthesize	method	human-agree	general	medium
+doi:10.1186/1471-2105-11-55	excluded	E4-before-window							medium
+doi:10.1186/2046-4053-3-74	excluded	E4-before-window							medium
+doi:10.1186/2046-4053-4-5	excluded	E4-before-window							medium
+doi:10.1186/s12874-025-02631-0	included		2025	Using a large language model (ChatGPT) to assess risk of bias in randomized controlled trials of medical interventions: protocol for a pilot study of interrater agreement with human reviewers	appraise	evaluation	human-agree	med	medium
+doi:10.1186/s12903-026-09411-2	excluded	E1-primary-research-automation							medium
+doi:10.1186/s12903-026-09486-x	excluded	E1-primary-research-automation							medium
+doi:10.1186/s12911-024-02459-6	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1186/s12982-026-02577-8	excluded	E1-primary-research-automation							medium
+doi:10.1186/s12982-026-02629-z	excluded	E1-primary-research-automation							medium
+doi:10.1186/s13012-024-01396-2	included		2024	A living critical interpretive synthesis to yield a framework on the production and dissemination of living evidence syntheses for decision-making	meta	guideline	none	med	medium
+doi:10.1186/s13064-026-00302-4	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1186/s13643-015-0031-5	excluded	E4-before-window							medium
+doi:10.1186/s13643-015-0066-7	excluded	E4-before-window							medium
+doi:10.1186/s13643-015-0147-7	excluded	E4-before-window							medium
+doi:10.1186/s13643-016-0384-4	excluded	E4-before-window							medium
+doi:10.1186/s13643-018-0724-7	excluded	E4-before-window							medium
+doi:10.1186/s13643-018-0740-7	excluded	E4-before-window							medium
+doi:10.1186/s13643-019-0942-7	excluded	E4-before-window							medium
+doi:10.1186/s13643-019-1062-0	excluded	E4-before-window							medium
+doi:10.1186/s13643-019-1074-9	excluded	E4-before-window							medium
+doi:10.1186/s13643-021-01665-x	included		2021	LOCATE: a prospective evaluation of the value of Leveraging Ongoing Citation Acquisition Techniques for living Evidence syntheses	search	evaluation	human-agree	med	medium
+doi:10.1186/s13643-023-02247-9	included		2023	Ensemble of deep learning language models to support the creation of living systematic reviews for the COVID-19 literature	screen	method	human-agree	med	medium
+doi:10.1186/s13643-023-02421-z	included		2024	Systematic review using a spiral approach with machine learning	screen	method	benchmark	general	medium
+doi:10.1186/s13643-026-03279-7	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1186/s13643-026-03288-6	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1186/s43168-026-00641-0	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1197/jamia.m1929	excluded	E4-before-window							medium
+doi:10.1197/jamia.m3162	excluded	E4-before-window							medium
+doi:10.1200/cci-25-00215	excluded	E1-primary-research-automation							medium
+doi:10.1200/cci.21.00129	included		2022	Machine Learning Approach to Facilitate Knowledge Synthesis at the Intersection of Liver Cancer, Epidemiology, and Health Disparities Research	screen	method	human-agree	med	medium
+doi:10.12688/f1000research.165927.1	included		2025	Harmful health effects of e-cigarettes (vapes) and other non-tobacco oral nicotine products, trends in their use, and interventions: living protocol for a living evidence map and linked research digests	screen	method	human-agree	med	medium
+doi:10.12688/f1000research.171774.2	included		2026	Tracking the Evolving Role of Artificial Intelligence in Implementation Science: Protocol for a Living Scoping Review of Applications, Evaluation Approaches and Outcomes	meta	evaluation	none	med	medium
+doi:10.12688/f1000research.179775.1	included		2026	Artificial intelligence tools for automating assessments of reporting guideline adherence: a protocol for a systematic review	appraise	evaluation	none	med	medium
+doi:10.12775/qs.2026.67.74129	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.13107/jocr.2025.v15.i04.5420	excluded	E3-opinion-without-guidance							medium
+doi:10.1371/journal.pdig.0001354	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1371/journal.pone.0233757	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1371/journal.pone.0236091	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1371/journal.pone.0304317	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1371/journal.pone.0320151	included		2025	Using artificial intelligence tools to automate data extraction for living evidence syntheses	extract	system	human-agree	med	medium
+doi:10.1371/journal.pone.0329349	included		2025	An open-source interactive AI framework for assisting automatic literature review in forensic medicine: Focus on brain injury mechanisms	screen	evaluation	human-agree	med	medium
+doi:10.1371/journal.pone.0340277	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.14324/lre.22.1.40	included		2024	Uses of artificial intelligence and machine learning in systematic reviews of education research	meta	guideline	none	general	medium
+doi:10.14445/22315381/ijett-v74i5p122	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.14445/22315381/ijett-v74i7p110	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.14445/22315381/ijett-v74i7p117	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.14445/22315381/ijett-v74i7p121	excluded	E1-primary-research-automation							medium
+doi:10.14445/22315381/ijett-v74i7p123	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.14445/22315381/ijett-v74i7p127	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.14445/22315381/ijett-v74i7p131	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.14445/22315381/ijett-v74i7p132	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.15388/infedu.2020.14	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.1609/aaaiss.v8i1.42561	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.17605/osf.io/79f8u	included		2026	Large Language Models for Screening in Living Evidence Pipelines: An Evaluation Using EPPI Reviewer in the field of Education	screen	evaluation	human-agree	general	medium
+doi:10.17605/osf.io/ebqxm	included		2026	Mapping the evidence evaluating the impact of Generative AI on teaching and learning for children and young people: Protocol for a living evidence and gap map	screen	method	human-agree	general	medium
+doi:10.17605/osf.io/kta9g	included		2026	Mechanisms and functional readouts of skeletal muscle ageing in Drosophila and their translatability to human sarcopenia: a scoping review protocol	screen	method	none	med	medium
+doi:10.17605/osf.io/sfndq	excluded	E6-duplicate-or-superseded							medium
+doi:10.18260/1-2--47414	included		2024	Exploring Generative AI and Natural Language Processing to Develop Search Strategies for Systematic Reviews	search	method	none	general	medium
+doi:10.18419/opus-18222	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.18653/v1/2023.acl-long.411	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.18653/v1/2024.bionlp-1.39	included		2024	Intervention extraction in preclinical animal studies of Alzheimer’s Disease: Enhancing regex performance with language model-based filtering	extract	method	human-agree	med	medium
+doi:10.18653/v1/2025.findings-naacl.269	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.20944/preprints202505.0566.v1	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.20944/preprints202606.0407.v1	included		2026	Evaluating a Large Language Model for Semi-Automated Versus Human-Only Data Extraction in Evidence Synthesis: A Study Protocol	extract	evaluation	human-agree	med	medium
+doi:10.21105/joss.07616	included		2025	An Introduction to prismAId: Open-Source and Open Science AI for Advancing Information Extraction in Systematic Reviews	extract	system	none	general	medium
+doi:10.21203/rs.3.pex-1836/v1	included		2022	Global Tracking of Climate Change Adaptation Policy Using Machine Learning: a Systematic Map Protocol	extract	method	human-agree	general	medium
+doi:10.21203/rs.3.rs-10529339/v1	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.21203/rs.3.rs-10538848/v1	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.21203/rs.3.rs-2292464/v1	excluded	E6-duplicate-or-superseded							medium
+doi:10.21203/rs.3.rs-2292464/v2	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.21203/rs.3.rs-2497596/v1	included		2023	Systematic Review using a Spiral approach with Machine Learning	screen	method	benchmark	general	medium
+doi:10.21203/rs.3.rs-3119345/v1	included		2023	Is Artificial Intelligence Replacing Humans in Systematic Literature Reviews? A Systematic Literature Review	meta	evaluation	none	med	medium
+doi:10.21203/rs.3.rs-3288515/v1	included		2023	Using a large language model (ChatGPT) to assess risk of bias in randomized controlled trials of medical interventions: protocol for a pilot study of interrater agreement with human reviewers	appraise	evaluation	human-agree	med	medium
+doi:10.21203/rs.3.rs-3425312/v1	included		2023	Automation of systematic reviews of biomedical literature: a systematic review of studies indexed in PubMed	meta	evaluation	none	med	medium
+doi:10.21203/rs.3.rs-5277729/v1	excluded	E6-duplicate-or-superseded							medium
+doi:10.21203/rs.3.rs-5975490/v1	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.21203/rs.3.rs-7078540/v1	included		2025	Automated Evidence Synthesis of Cognitive Interventions in Older People using the CogTale Platform: A Validation Study	synthesize	system	human-agree	med	medium
+doi:10.2139/ssrn.4406117	included		2023	A Content-Based Recommendation Model for Living Evidence	search	method	none	general	medium
+doi:10.2139/ssrn.5668523	included		2025	Living mode parameters and automation in living Evidence and Gap Maps (L-EGMs): a scoping review	meta	evaluation	none	general	medium
+doi:10.2139/ssrn.5736644	parked								medium
+doi:10.2139/ssrn.7219499	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.2139/ssrn.7230339	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.2139/ssrn.7244698	included		2026	When Automation Concentrates Judgment: A Systematic Review and Meta-analysis of Residual Decision Difficulty and Oversight Burden Following AI Adoption	extract	evaluation	human-agree	general	medium
+doi:10.2172/3403477	parked								medium
+doi:10.21956/openreseurope.15135.r27710	excluded	E5-insufficient-metadata							medium
+doi:10.21956/openreseurope.15135.r27711	excluded	E5-insufficient-metadata							medium
+doi:10.2196/17158	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.2196/25714	included		2021	Using a Secure, Continually Updating, Web Source Processing Pipeline to Support the Real-Time Data Synthesis and Analysis of Scientific Literature: Development and Validation Study	search	system	none	med	medium
+doi:10.2196/43006	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.2196/53787	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.2196/54653	included		2024	Accelerating Evidence Synthesis in Observational Studies: Development of a Living Natural Language Processing–Assisted Intelligent Systematic Literature Review System	end2end	system	human-agree	med	medium
+doi:10.2196/60432	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.2196/62924	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.2196/63126	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.2196/68998	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.2196/69284	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.2196/99386	included		2026	From Static Outputs to Living Evidence: AI for Integrated Knowledge Translation in Canadian Health Research	meta	position	none	med	medium
+doi:10.2196/preprints.109158	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.2196/preprints.54653	included		2023	Accelerating Evidence Synthesis in Observational Studies: A Living NLP-Assisted Intelligent Systematic Literature Review System (Preprint)	end2end	system	human-agree	med	medium
+doi:10.2196/preprints.57648	included		2024	Diagnostic performance of artificial intelligence tools for article screening during literature review: A systematic review (Preprint)	screen	evaluation	human-agree	med	medium
+doi:10.2196/preprints.99386	excluded	E6-duplicate-or-superseded							medium
+doi:10.22439/jba.v15i1.7813	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.22541/au.174793687.72304886/v1	included		2025	AI and Automation in Evidence Synthesis: An Investigation of Methods Employed in Cochrane, Campbell Collaboration, and Environmental Evidence Reviews	meta	evaluation	none	general	medium
+doi:10.22617/wps260200-2	included		2026	Automating Evidence Synthesis: A Comparative Evaluation of Large Language Models for Data Extraction	extract	evaluation	benchmark	general	medium
+doi:10.23970/ahrqepcmethtestingmachinelearning	included		2020	Testing a Machine Learning Tool for Facilitating Living Systematic Reviews of Chronic Pain Treatments	screen	evaluation	none	med	medium
+doi:10.2478/minib-2025-0007	included		2025	Automating the Systematic Literature Review Process in Management Science Using Artificial Intelligence	meta	evaluation	none	general	medium
+doi:10.24908/pceea.2026.21516	excluded	E1-primary-research-automation							medium
+doi:10.24908/pceea.2026.21576	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.24969/hvt..673	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.25258/ijddt.16.36s.132	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.25259/ijmr_2271_2025	excluded	E3-opinion-without-guidance							medium
+doi:10.25259/stn_30_2026	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.29333/ejgm/14354	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.3030/894990	excluded	E5-insufficient-metadata							medium
+doi:10.30574/ijsra.2026.20.1.1330	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.30953/thmt.v9.459	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.31234/osf.io/u6hbs_v3	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.31435/ijitss.3(51).2026.6368	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.31893/multirev.2027030	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.3233/978-1-61499-101-4-688	excluded	E4-before-window							medium
+doi:10.3233/shti260406	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.32604/cmes.2025.059152	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.3352/jeehp.2024.21.6	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.33578/jpfkip.v14i6.852-870	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.33774/coe-2025-rmsqf	included		2025	AI-assisted Living Evidence Databases for Conservation Science	screen	system	human-agree	general	medium
+doi:10.3389/fdgth.2026.1737957	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.3389/feduc.2021.540027	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.3389/fmed.2024.1477898	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.3389/fmed.2026.1810098	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.3389/fpubh.2026.1833611	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.3389/frobt.2021.744526	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.3389/fspor.2024.1408887	excluded	E1-primary-research-automation							medium
+doi:10.3389/or.2026.1757059	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.3390/a18080499	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.3390/agriculture16141518	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.3390/ai7020077	excluded	E1-primary-research-automation							medium
+doi:10.3390/aieduc2020008	included		2026	Auditing GenAI Literature Search Workflows: A Replicable Protocol for Traceable, Accountable Retrieval in Student-Facing Inquiry	search	evaluation	human-agree	general	medium
+doi:10.3390/app10176125	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.3390/app11093986	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.3390/app14093842	included		2024	Reproducibility and Data Storage for Active Learning-Aided Systematic Reviews	screen	guideline	none	general	medium
+doi:10.3390/app16052493	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.3390/app16147303	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.3390/asi9070149	excluded	E1-primary-research-automation							medium
+doi:10.3390/bioengineering11040342	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.3390/biomimetics10110723	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.3390/electronics14010120	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.3390/electronics15030524	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.3390/en19061588	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.3390/fi17020076	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.3390/fire9030131	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.3390/healthcare12040446	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.3390/healthcare13101205	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.3390/ijerph20156438	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.3390/informatics12010009	included		2025	Evaluating the Reliability of ChatGPT for Health-Related Questions: A Systematic Review	screen	evaluation	human-agree	med	medium
+doi:10.3390/jcs8040131	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.3390/s25020464	included		2025	Mapping the Green Urban: A Comprehensive Review of Materials and Learning Methods for Green Infrastructure Mapping	screen	method	none	general	medium
+doi:10.3390/s25051318	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.3390/sci7030124	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.3390/socsci14010030	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.3390/su12062420	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.3390/su12145502	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.3390/w17202994	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.36227/techrxiv.23589741.v4	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.36652/0869-4931-2025-79-11-519-523	excluded	E1-primary-research-automation							medium
+doi:10.36713/epra26155	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.38124/ijisrt/26aug075	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.38124/ijisrt/26jul649	excluded	E1-primary-research-automation							medium
+doi:10.4230/oasics.icpec.2023.9	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.4274/thoracrespract.2025.2025-6-3	excluded	E1-primary-research-automation							medium
+doi:10.46328/ijte.1028	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.46799/ajesh.v5i6.779	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.47191/ijcsrr/v9-i8-10	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.47191/ijsshr/v9-i8-06	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.48009/4_iis_2021_320-329	included		2021	COVID-19 LITERATURE TREND AND TOPICS ANALYSES USING INTELLIGENT TEXT MINING	synthesize	method	none	med	medium
+doi:10.51214/biis.v4i2.1657	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.5256/f1000research.201984.r501334	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.5256/f1000research.204148.r504163	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.5256/f1000research.205729.r505624	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.52690/jitim.v6i2.1526	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.5281/zenodo.21854967	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.5281/zenodo.21854968	excluded	E6-duplicate-or-superseded							medium
+doi:10.52876/jcs.1227392	excluded	E1-primary-research-automation							medium
+doi:10.5334/pme.954	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.5455/aim.2024.33.4-10	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.55982/openpraxis.17.1.750	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.57197/jdr-2026-0937	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.5753/sbbd_estendido.2025.247977	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.5753/sbes.2025.11612	included		2025	Comparing LLMs and Proposing an ML-Based Approach for Search String Generation in Systematic Literature Reviews	search	method	benchmark	se	medium
+doi:10.5867/medwave.2020.11.8092	included		2020	Living systematic review: new inputs and challenges	meta	guideline	none	med	medium
+doi:10.58776/ijitcsa.v4i2.262	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.59188/eduvest.v6i8.53181	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.59188/eduvest.v6i8.53268	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.59261/inkubis.v8i2.363	excluded	E1-primary-research-automation							medium
+doi:10.5954/icarob.2023.gs3-4	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.6007/ijarped/v15-i3/28576	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.6084/m9.figshare.33169523	included		2026	Technical Report - An Auditable Multi-Agent Framework for LLM-Assisted Extraction and Classification of Usability and UX Aspects in SMS	extract	system	none	se	medium
+doi:10.6084/m9.figshare.33169523.v2	excluded	E6-duplicate-or-superseded							medium
+doi:10.64898/2026.01.10.698833	excluded	E1-primary-research-automation							medium
+doi:10.64898/2026.01.23.701317	included		2026	Set-up, validation, evaluation, and cost-benefit analysis of an AI-assisted assessment of responsible research practices in a sample of life science publications	appraise	evaluation	human-agree	med	medium
+doi:10.64898/2026.03.26.26349194	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.64898/2026.07.04.26357263	included		2026	A large language model-assisted workflow for generating a living evidence base for climate-sensitive foodborne disease	screen	method	human-agree	med	medium
+doi:10.64898/2026.07.17.739284	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.65069/ara21202614	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.66206/eduheart.ijnhha.121	excluded	E1-primary-research-automation							medium
+doi:10.66238/fsrma113	excluded	E1-primary-research-automation							medium
+doi:10.66238/fsrma115	excluded	E1-primary-research-automation							medium
+doi:10.66238/fsrma116	excluded	E1-primary-research-automation							medium
+doi:10.69768/55yg1b04	excluded	E1-primary-research-automation							medium
+doi:10.7150/thno.108552	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.7551/mitpress/5188.003.0008	excluded	E4-before-window							medium
+doi:10.7717/peerj-cs.3769	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.7717/peerj-cs.3882	included		2026	A large language model-driven scientific literature surveys generation framework based on multi-agents and retrieval-augmented generation	report	method	human-agree	general	medium
+doi:10.7717/peerj-cs.3950	excluded	E2-generic-nlp-no-synthesis-framing							medium
+doi:10.7753/ijcatr1312.1022	excluded	E1-primary-research-automation							medium
+doi:10.7759/cureus.100845	excluded	E1-primary-research-automation							medium
+doi:10.7759/cureus.109161	excluded	E1-primary-research-automation							medium
+doi:10.9781/ijimai.2023.07.006	excluded	E2-generic-nlp-no-synthesis-framing							medium
+t:3ddefectbenchacontrolledfactorialstudyofvisionlanguagemodelevaluationpipelinesfo	excluded	E2-generic-nlp-no-synthesis-framing							medium
+t:avavlmadaptivevisualattentionvisionlanguagemodelforinthewildconstructionsitemoni	excluded	E1-primary-research-automation							medium
+t:beyondtheleaderboardasynthesisoftooluseplanningandreasoningfailuresinlargelangua	excluded	E2-generic-nlp-no-synthesis-framing							medium
+t:buildingsystematicreviewsusingautomatictextclassificationtechniques	excluded	E4-before-window							medium
+doi:10.1016/j.jval.2024.03.1490	included		2024	MSR57 Transforming Systematic Literature Reviews: Unleashing the Potential of GPT-4: A Cutting-Edge Large Language Model, to Elevate Research Synthesis	synthesize	method	none	med	medium
+doi:10.1016/j.jval.2024.03.2418	included		2024	MSR103 Optimizing Systematic Literature Reviews in Endometrial Cancer: Leveraging AI for Real-Time Article Screening and Data Extraction in Clinical Trials	screen	method	none	med	medium
+doi:10.1186/s12874-024-02224-3	included		2024	Machine learning models for abstract screening task - A systematic literature review application for health economics and outcome research	screen	evaluation	human-agree	med	medium
+doi:10.1016/j.jval.2024.03.1448	included		2024	MSR15 Revolutionizing Systematic Literature Reviews: Harnessing the Power of Large Language Model (GPT-4) for Enhanced Research Synthesis	synthesize	method	none	med	medium
+doi:10.1016/j.jval.2024.03.1492	included		2024	MSR59 Advancing Systematic Literature Reviews: The Integration of AI-Powered NLP Models in Data Collection Processes	extract	method	none	med	medium
+doi:10.1016/j.jval.2023.09.2190	parked								medium
+doi:10.1007/s00799-015-0156-0	parked								medium
+t:proceduresforperformingsystematicreviews	parked								medium
+doi:10.1016/j.rtbm.2026.101806	parked								medium
+doi:10.1016/s0146-0005(97)80013-4	parked								medium
+doi:10.1038/d41586-021-03690-1	parked								medium
+doi:10.1016/j.infsof.2016.09.002	parked								medium
+doi:10.1016/j.infsof.2020.106257	parked								medium
+doi:10.1016/j.infsof.2020.106298	parked								medium
+doi:10.1016/j.infsof.2020.106293	parked								medium
+doi:10.1007/s10664-021-09992-2	parked								medium
+doi:10.1016/j.jss.2021.111044	parked								medium
+doi:10.1016/j.jss.2021.111081	parked								medium
+doi:10.1007/s10270-022-01050-9	parked								medium
+doi:10.1016/j.jss.2023.111796	parked								medium
+doi:10.1038/nature25753	parked								medium
+doi:10.1007/s10654-019-00576-5	parked								medium
+doi:10.1016/j.jclinepi.2008.02.004	parked								medium
+doi:10.1016/j.jclinepi.2015.08.032	parked								medium
+doi:10.1016/j.jclinepi.2017.08.010	parked								medium
+doi:10.1016/j.jval.2019.09.1736	parked								medium
+doi:10.1016/j.eururo.2021.03.016	parked								medium
+doi:10.1016/j.critrevonc.2022.103706	parked								medium
+doi:10.46658/jbirm-17-04	parked								medium
+doi:10.1016/j.jclinepi.2022.05.001	parked								medium
+doi:10.1016/j.jclinepi.2022.09.020	parked								medium
+doi:10.1016/j.infsof.2012.04.003	parked								medium
+doi:10.1016/j.jbi.2013.10.005	parked								medium
+doi:10.1016/j.artmed.2010.10.005	parked								medium
+doi:10.1016/j.ajp.2011.03.003	parked								medium
+doi:10.1016/j.artmed.2012.05.002	parked								medium
+doi:10.1016/j.jclinepi.2004.11.024	parked								medium
+doi:10.1016/j.infsof.2010.05.003	parked								medium
+doi:10.1016/j.jclinepi.2008.10.016	parked								medium
+doi:10.1016/j.jbi.2016.10.014	parked								medium
+doi:10.1016/j.compag.2018.12.044	parked								medium
+doi:10.1016/j.cities.2024.105169	parked								medium
+doi:10.1016/j.envdev.2024.101019	parked								medium
+doi:10.1016/j.is.2023.102231	parked								medium
+doi:10.1007/s11069-024-07064-4	parked								medium
+doi:10.1016/j.ijme.2025.101283	parked								medium
+doi:10.1007/s12530-023-09494-0	parked								medium
+doi:10.1007/s10796-023-10432-3	parked								medium
+doi:10.1007/s13744-025-01268-4	parked								medium
+doi:10.6007/ijarbss/v14-i12/24160	parked								medium
+doi:10.1007/s11105-023-01373-x	parked								medium
+doi:10.1007/s10869-023-09890-y	parked								medium
+doi:10.1016/j.technovation.2023.102903	parked								medium
+doi:10.1016/j.enbuild.2025.116238	parked								medium
+doi:10.1007/978-3-031-56481-9_22	parked								medium
+doi:10.1007/978-3-031-07472-1_8	parked								medium
+doi:10.1007/978-3-662-69306-3_4	parked								medium
+doi:10.1063/5.0154563	parked								medium
+doi:10.1007/978-3-031-66982-8_5	parked								medium
+doi:10.1007/s00210-025-04139-2	parked								medium
+doi:10.1016/j.knosys.2025.114344	parked								medium
+doi:10.1016/j.watres.2025.124530	parked								medium
+doi:10.2139/ssrn.5526753	parked								medium
+doi:10.1016/b978-0-443-29210-1.00069-8	parked								medium
+doi:10.1007/978-3-032-07718-9_52	parked								medium
+doi:10.1016/j.cose.2026.104869	parked								medium
+doi:10.1007/s42087-026-00647-6	parked								medium
+doi:10.2139/ssrn.5254765	parked								medium
+t:theprisma2020statementanupdatedguidelineforreportingsystematicreviews	parked								medium
+doi:10.3233/jnd-200546	parked								medium
+t:automatedliteratureanalysisthreatsandexperiences	excluded	E4-before-window							medium
+t:thesignificantcostofsystematicreviewsandmetaanalysesacallforgreaterinvolvementof	excluded	E4-before-window							medium
+t:amachinelearningapproachforsemiautomatedsearchandselectioninliteraturestudies	excluded	E4-before-window							medium
+t:automaticbooleanqueryrefinementforsystematicreviewliteraturesearch	excluded	E4-before-window							medium
+t:automationinsystematicscopingandrapidreviewsbyannlptoolkitacasestudyinenhancedli	excluded	E4-before-window							medium
+t:linkeddataapproachforselectionprocessautomationinsystematicreviews	excluded	E4-before-window							medium
+doi:10.1007/s11219-017-9386-2	excluded	E4-before-window							medium
+doi:10.1371/journal.pmed.1001603	excluded	E4-before-window							medium
+doi:10.7326/0003-4819-147-4-200708210-00179	excluded	E4-before-window							medium
+t:avisualanalysisapproachtoupdatesystematicreviews	excluded	E4-before-window							medium
+t:analysingtheuseofgraphstorepresenttheresultsofsystematicreviewsinsoftwareenginee	excluded	E4-before-window							medium
+t:avisualtextminingapproachforsystematicreviews	excluded	E4-before-window							medium
+t:textminingtechniquesandtoolsforsystematicliteraturereviewsasystematicliteraturer	excluded	E4-before-window							medium
+t:acriticalanalysisofstudiesthataddresstheuseoftextminingforcitationscreeninginsys	excluded	E4-before-window							medium
+t:anexplorationoftheuseoftextminingsoftwareinsystematicreviews	excluded	E4-before-window							medium
+t:ahybridfeatureselectionrulemeasureanditsapplicationtosystematicreview	excluded	E4-before-window							medium
+t:amethodtosupportsearchstringbuildinginsystematicliteraturereviewsthroughvisualte	excluded	E4-before-window							medium
+t:arankingbasedapproachforsupportingtheinitialselectionofprimarystudiesinasystemat	excluded	E4-before-window							medium
+t:activelearningforbiomedicalcitationscreening	excluded	E4-before-window							medium
+t:enhancingacademicliteraturereviewthroughrelevancerecommendationusingbibliometric	excluded	E4-before-window							medium
+t:thecanonicalmodelofstructurefordataextractioninsystematicreviewsofscientificrese	excluded	E4-before-window							medium
+doi:10.1109/access.2020.2983656	parked								medium
+t:usingrulebasedclassifiersinsystematicreviewsasemanticclassassociationrulesapproa	excluded	E4-before-window							medium
+t:usingvisualtextminingtosupportthestudyselectionactivityinsystematicliteraturerev	excluded	E4-before-window							medium
+t:applyingsystematicreviewstodiversestudytypesanexperiencereport	excluded	E4-before-window							medium
+t:experiencesconductingsystematicreviewsfromnovicesperspective	excluded	E4-before-window							medium
+t:thechallengeofhighrecallinbiomedicalsystematicsearch	excluded	E4-before-window							medium
+doi:10.1080/01421590220145707	excluded	E4-before-window							medium
+t:systematicreviewsneedsystematicsearchers	excluded	E4-before-window							medium
+doi:10.1186/s13643-016-0315-4	excluded	E4-before-window							medium
+t:dataextractionerrorsinmetaanalysesthatusestandardizedmeandifferences	excluded	E4-before-window							medium
+t:developingsearchstrategiesfordetectingrelevantexperimentsforsystematicreviews	excluded	E4-before-window							medium

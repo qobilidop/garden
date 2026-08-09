@@ -46,18 +46,28 @@ are in `protocol.md`.
 
 - `protocol.md` — scope, search/key/snowball rules, selection codes
   with boundary examples, screening pass structure, taxonomy tokens,
-  note/synthesis/claims discipline. Material method changes are
-  described here, never applied silently.
+  note/synthesis/claims discipline — always in current final form.
+  Material method changes update it in place, never silently: each
+  change is logged in `status.md`'s Method changes section with an
+  audit row in `log.tsv`.
 - `status.md` — current coverage and manuscript state, plus deferred
-  work; counts are regenerated, not hand-edited.
+  work; counts are regenerated, not hand-edited. Its Method changes
+  section is the campaign-scoped, append-only plain-language change
+  log for `protocol.md`: it survives regeneration while a campaign
+  is open and dissolves at campaign close, once its content is
+  absorbed into the protocol's final state, the `log.tsv` audit
+  rows, and the manuscript disclosures.
 - `catalog.tsv` — one current row per surfaced work: `key`, `status`
   (`included` — abstract-level primary-focus facets; `excluded` —
   coded screening memory; `parked` — re-screened each update), `code`
   (slugged exclusion code, excluded rows only), `year`, `title`,
   the taxonomy facets `stage`/`contribution`/`evidence`/`setting`
-  (included rows only), and `priority` (`critical` marking the
-  closest-work set; every row defaults to `medium` until a critical
-  set is designated per `status.md`).
+  (included rows only), and `priority` (`critical` marks the
+  closest-work set — competing maps, the load-bearing evidence works,
+  and the disclosure instruments, derived from
+  `syntheses/current-position.md` and listed in the designation audit
+  row — chased both directions on every substantial update batch;
+  other deep reads are `high`; all remaining rows `medium`).
 - `log.tsv` — the append-only event log: `search` rows with verbatim
   queries, dates, and yields, plus `audit` rows for corrections and
   migrations; future search and snowball rows record decided keys.
@@ -113,6 +123,15 @@ provenance for future funnel changes.
 
 | Date | Prior cutoff | New cutoff | Qids succeeded / failed | Raw results | Unique new | Prefilter rejects | Screened | Parked | Aliases | Included | Human gate |
 |---|---|---|---|---:|---:|---:|---:|---:|---:|---:|---|
+| 2026-08-09 | 2026-08-08 | 2026-08-09 | 17/1 (+22 chases, 2 primary-complete) | 1,644 | 673 | 566 | 585 | 75 standing | 13 resolved, 13 dropped | +131 (777 total) | Bili, 2026-08-09 |
+
+Column semantics: Raw results counts all staged rows (query, chase,
+and primary-complete files); Unique new is the catalog row delta;
+Prefilter rejects are snowball vocabulary rejects (title + model);
+Screened counts dual-pass decisions; Parked is the standing total
+after the batch; Aliases counts version pairs resolved to E6 plus
+unresolved-reference artifacts dropped; Included is the include-level
+delta (batch include decisions minus rediscoveries).
 
 The 13 `search` rows in `log.tsv` are 11 logical qids plus retries:
 initial qid `s22` failed once and then succeeded; `s23` failed twice
