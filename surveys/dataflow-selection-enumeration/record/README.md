@@ -41,14 +41,14 @@ does not attempt.
 - `baseline.md` — the first closed mapping snapshot (2026-08-04).
 - `catalog.tsv` — disposition ledger for discovered works.
 - `claims.md` — contribution and qualification ledger.
-- `terminology.md` — adopted terms and required distinctions.
 - `log.tsv` — the append-only event log: audited `search`,
   `snowball`, and `audit` rows, plus non-replayable `exploratory`
   rows retained as history.
 - `sources/` — one primary-source evidence note per deep-read work.
-- `syntheses/` — current cross-paper understanding by theme.
-- `formal-synthesis/` — definitions, reductions, and proofs that
-  connect the surveyed themes.
+- `syntheses/` — current cross-paper understanding: thematic files,
+  the adopted terminology (`terminology.md`), and the unified
+  framework's formal workspace (`framework/` — definitions,
+  reductions, proofs, counterexamples, reduction audit).
 - `evidence-matrix.tsv` — binds synthesis claims and manuscript
   section labels to source-note anchors.
 - `queries.tsv` — the standing discovery queries, each row carrying
@@ -68,8 +68,9 @@ does not attempt.
    frozen snapshots were retired from the record on 2026-08-09).
 4. Create a primary-source note for every deep-read work.
 5. Reconcile the relevant thematic files in `syntheses/`.
-6. Update `terminology.md`, `claims.md`, and the formal synthesis
-   when the cross-paper interpretation changes.
+6. Update `syntheses/terminology.md`, `claims.md`, and
+   `syntheses/framework/` when the cross-paper interpretation
+   changes.
 7. Add or revise `evidence-matrix.tsv` when a synthesis claim or
    technical manuscript claim changes.
 8. Record durable research choices in this README (operating rules)

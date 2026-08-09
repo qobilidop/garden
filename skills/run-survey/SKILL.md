@@ -298,7 +298,7 @@ fix introduces before persisting it.
 When the survey's subject is a formal problem and the synthesis is a
 unified framework, not only a facet taxonomy. The reference
 implementation is dataflow-selection-enumeration (manuscript §3–§6,
-`record/formal-synthesis/`, `record/claims.md`). Its moves:
+`record/syntheses/framework/`, `record/claims.md`). Its moves:
 
 - **Problem before solvers.** Open with a formal model of the object
   the literatures argue about, independent of any solver or data
@@ -335,11 +335,13 @@ implementation is dataflow-selection-enumeration (manuscript §3–§6,
   it retires to git history, the manuscript itself becoming the
   guardrail. Label every theorem prior work / direct derivation /
   local synthesis.
-- **Record layer.** `record/formal-synthesis/` holds the model,
-  semantics, derivations, complexity notes, counterexamples,
-  reduction audit, and open questions; `claims.md` is the ledger; an
+- **Record layer.** `record/syntheses/framework/` is the formal
+  workspace — model, semantics, derivations, complexity notes,
+  counterexamples, reduction audit, open questions — beside the
+  thematic syntheses and the adopted terminology
+  (`syntheses/terminology.md`); `claims.md` is the ledger; an
   evidence matrix binds manuscript claims at stable section labels
-  to source-note anchors. Changes propagate formal-synthesis →
+  to source-note anchors. Changes propagate understanding layer →
   ledger → manuscript, never manuscript-first.
 - **Manuscript additions.** The framework section uses the shared
   statement apparatus (`surveys/style.typ` definitions/theorems,
