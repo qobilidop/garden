@@ -50,6 +50,9 @@ def main():
             failed.append((key, ident, f"non-bibtex response: {bib[:60]!r}"))
             continue
         bib = re.sub(r"^(@\w+\{)[^,]*,", rf"\g<1>{key},", bib, count=1)
+        # Brace name particles so citation styles keep them
+        # ("van Dinter et al.", not "Dinter et al.").
+        bib = bib.replace("author={van Dinter,", "author={{van Dinter},")
         # Crossref emits month=July; typst's biblatex parser only knows
         # the standard three-letter abbreviations.
         bib = re.sub(

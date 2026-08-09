@@ -19,6 +19,11 @@
   set list(indent: 1.15em, body-indent: 0.55em)
   show link: set text(fill: rgb("245b8a"))
   show raw: set text(font: "DejaVu Sans Mono", size: 9pt)
+  // Long tables (map distribution, findings summary) break across
+  // pages instead of leaving a page-sized gap before them; full
+  // width so fractional table columns resolve against the text
+  // measure instead of collapsing in a shrink-wrapped figure.
+  show figure: set block(breakable: true, width: 100%)
   body
 }
 
