@@ -28,7 +28,7 @@ The paper contributes:
 
 + a consistent terminology and a four-dimensional taxonomy for the
   field (@sec-taxonomy);
-+ a faceted map of 646 included works (2020–2026), after resolving
++ a faceted map of 776 included works (2020–2026), after resolving
   known version aliases and retractions in the campaign catalog
   (@sec-rq1);
 + a scoped synthesis of what the selected evidence shows about reliability

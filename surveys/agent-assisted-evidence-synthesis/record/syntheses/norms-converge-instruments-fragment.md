@@ -169,9 +169,14 @@ and the work is an unrefereed preprint.
 - The secondary-reviewer sanction rests on secondhand effectiveness
   figures (screening incorrect-inclusion 0–29%, median 10%; extraction
   error 4–31%, median 14% — gartlehner2025 citing Clark et al.).
-- No included map row is jointly SE + guideline; every instrument here
-  is medicine-rooted or general-purpose. SE has no native norms
-  literature in this map.
+- The update falsifies this synthesis's earlier claim that no map row
+  is jointly SE + guideline: `doi:10.1145/3786149.3788298` (2026) is
+  coded `se` + `guideline`. It is a practitioner experience report on
+  using an LLM to support a systematic mapping study, not an
+  instrument, so the surviving and narrower claim is that SE has no
+  native norms *instrument* in this map — every disclosure or
+  reproducibility instrument here remains medicine-rooted or
+  general-purpose. SE × appraise is still empty.
 
 ## Consequences for the manuscript
 

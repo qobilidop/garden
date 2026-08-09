@@ -1,6 +1,6 @@
 = RQ4 — Independence: an exploratory deep-read gap <sec-rq4>
 
-The 25 selected deep reads contain two designed multi-model or
+The 31 selected deep reads contain four designed multi-model or
 human–model comparisons, two indirect signals, and one system with no
 redundancy. This is an exploratory subset, not an exhaustively searched
 class:
@@ -23,6 +23,20 @@ class:
   @woelfle2024. The reference was two-rater consensus, prompts differed
   by model, and time savings were not measured. This supports deferral
   for these instruments, not a general design law.
+- A cross-vendor three-agent vote (GPT-4o Mini, Claude 3 Haiku,
+  Gemini 1.5 Flash, with a fourth model adjudicating) beat every
+  constituent — mean average precision 0.341 against 0.271, 0.266, and
+  0.182 — and beat its own debate and adjudication variants
+  @akinseloyin2026. Alone among the selected works it measures a
+  proxy for independence, reporting Spearman correlations of 0.48–0.56
+  between its agents' scores and concluding that model heterogeneity is
+  what makes aggregating weak screeners work. Its three agents differ
+  in vendor, size, and training corpus at once, with no same-family
+  arm, so the causal claim outruns the design.
+- A five-model same-family ensemble reached F1 89.16% against a best
+  standalone 88.53% and reports no correlation or error-overlap
+  statistic between its members at all @knafou2023 — a configuration
+  documented without a mechanism.
 - An abstract reports that open-weight models screened more
   conservatively than GPT-4.1 across 25k titles — a model-behavior
   contrast awaiting full-text numbers
@@ -34,11 +48,28 @@ class:
   architecture is descriptive and supplies no comparison of independence
   mechanisms.
 
-None of the 25 selected deep reads explicitly defines what makes two
-agent passes _independent_ in the sense dual human review requires —
-different prompts, tiers, vendors, or training corpora — or measures
-correlated error from shared training data. The campaign had no targeted
-independence/ensemble query and no independence facet, so this observation
-cannot establish a literature-wide absence. It motivates a targeted
-follow-up to the human-independence concerns in earlier guidance
-@hamel2021.
+None of the 31 selected deep reads defines what makes two agent passes
+_independent_ in the sense dual human review requires — a criterion for
+when one pass counts as independent of another. The 2026-08-09 update
+narrowed this finding without closing it: the first measurement of a
+proxy has arrived @akinseloyin2026, and with it the most suggestive
+evidence in the set that independence is the operative quantity.
+Allowing that study's agents to debate raised their inter-agent
+correlation and lowered ensemble performance relative to voting them
+independently — interaction consuming the diversity the ensemble was
+exploiting. That is a within-study comparison supporting a mechanism,
+not a definition, and no selected work reports the quantity a theory
+would need: error correlation measured within versus across model
+families.
+
+Neither wave ran a targeted independence query or coded an
+independence facet, so this observation cannot establish a
+literature-wide absence — and one incidental finding shows how the
+frame binds. Chasing the newest of these works forward surfaced a
+clinical-AI oversight framework, out of scope here, that defers
+uncertain model outputs to humans by triangulating model
+heterogeneity, stochastic inconsistency, and reasoning critique. The
+machinery this field lacks may be under construction in an adjacent
+one that an evidence-synthesis search will not see. The finding
+motivates a targeted follow-up to the human-independence concerns in
+earlier guidance @hamel2021.

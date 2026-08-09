@@ -20,7 +20,7 @@ source's claim cannot be mistaken for this survey's synthesis.
 ### C01 — LLM-era stage distribution reproduces the pre-LLM skew
 
 - **Status:** supported
-- **Statement:** In the retained 646-work map, screening is the largest
+- **Statement:** In the retained 776-work map, screening is the largest
   primary-focus category (216) while appraisal (25) and reporting (22)
   are the smallest — the same conducting-the-review skew documented
   before LLMs — alongside guideline (34) and end-to-end (85)
@@ -39,7 +39,7 @@ source's claim cannot be mistaken for this survey's synthesis.
   the claim is distributional, not causal.
 - **Caveats:** The map counts come from `catalog.tsv`, not from the
   evidence ledger; facet labels are unvalidated single-pass
-  abstract-level codes; the medicine-heavy catalog (394/646 vs 17 SE)
+  abstract-level codes; the medicine-heavy catalog (463/776 vs 23 SE)
   does not show that the adoption gap widened.
 
 ### C02 — Reliability evidence is abundant but mismeasured
@@ -104,7 +104,7 @@ source's claim cannot be mistaken for this survey's synthesis.
   configuration-level results without isolating model family, model
   identity, run count, or combination rule as the cause; one strong
   end-to-end system uses no redundancy at all.
-- **Scope:** Strictly the 25 deep reads. The campaign ran no targeted
+- **Scope:** Strictly the 31 deep reads. Neither wave ran a targeted
   independence/ensemble query and coded no independence facet, so
   this is not a literature-wide absence claim.
 - **Closest established:** Hamel et al.'s pre-LLM guidance works out
@@ -141,4 +141,4 @@ source's claim cannot be mistaken for this survey's synthesis.
   not an empirical claim and is not graded here.
 - **Caveats:** The scheme was applied single-pass from truncated
   abstracts, and full-text notes disagree with abstract-level facets
-  for 8 of 25 deep reads (manuscript, Limitations).
+  for 9 of 31 deep reads (manuscript, Limitations).

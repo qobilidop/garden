@@ -5,9 +5,9 @@
     columns: (2.2em, 27em, 12em),
     align: (left, left, left),
     table.header([RQ], [Finding], [Evidence]),
-    [1], [Single-pass primary-focus coding assigns 216 of 646 works to
+    [1], [Single-pass primary-focus coding assigns 256 of 776 works to
       screening; appraisal (25) and reporting (22) are smallest], [map],
-    [1], [The retained map is medicine-heavy (394 rows) relative to SE
+    [1], [The retained map is medicine-heavy (463 rows) relative to SE
       (17); this is not an adoption-trend measure], [map;
       @napoleao2021],
     [1], [One end-to-end preprint uses decomposition, structured

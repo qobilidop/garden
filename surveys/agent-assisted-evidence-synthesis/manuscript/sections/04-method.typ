@@ -36,13 +36,15 @@ with HTTP 429 on six attempts across two spaced rounds and is counted
 as no query. Each query fetched the inclusive interval since its own
 last reconciliation (the survey window start, for the six new ones).
 
-The update also declared a bounded critical set — eleven closest works
+The update also declared a bounded critical set — twelve closest works
 comprising the competing maps, the load-bearing evidence studies, and
 the disclosure instruments — and chased each backward and forward.
-Two backward chases returned bibliographies the citation index could
-not supply (one empty, one with 23 unresolved references); both were
+Three backward chases returned bibliographies the citation index could
+not supply (two empty, one with 23 unresolved references); each was
 re-chased from the publisher-deposited reference list of the primary
-version and are marked as such in the record.
+version and is marked as such in the record. That registrar defect
+affecting a quarter of the backward chases is itself a finding about
+index reliability, not a one-off.
 
 Screening followed the protocol's dual-pass design: an
 eligibility-first pass and an exclusion-first pass on different model
@@ -81,15 +83,15 @@ alone.
     [Integrity correction], [672 included rows], [646 works],
     [*Update (2026-08-09)*], [], [],
     [Search (18-query set; 17 succeeded)], [—], [517 rows],
-    [Critical-set chases (22 + 2 primary)], [11 seeds], [1,127 rows],
-    [Vocabulary pre-screen (chase rows)], [1,127], [561 retained],
-    [Dedup, enrichment, park], [1,078], [585 screened],
+    [Critical-set chases (24 + 3 primary)], [12 seeds], [1,191 rows],
+    [Vocabulary pre-screen (chase rows)], [1,191], [595 retained],
+    [Dedup, enrichment, park], [1,112], [585 screened],
     [Dual-pass screen + adjudication], [585], [132 includes],
-    [Date-rule coding (primary chase)], [32], [31 before-window],
+    [Date-rule coding (primary chases)], [41], [39 before-window],
     [Integrity (aliases, artifacts)], [26 rows], [13 E6, 13 dropped],
-    [*Current ledger*], [1,965 rows], [*777 include-level*],
-    [Facet classification], [777], [the map],
-    [Deep reads], [777], [DEEPREADS notes],
+    [*Current ledger*], [1,975 rows], [*776 include-level*],
+    [Facet classification], [776], [the map],
+    [Deep reads], [776], [31 notes],
   ),
   caption: [Identification and selection funnel across both waves.
     Campaign phase quantities are retained historical aggregates:
@@ -98,7 +100,7 @@ alone.
     881 screened rows merged on entry (412 + 879 = 1,291), and a later
     publication migration brought the ledger to 1,292 before the
     update. Update quantities are candidate-level and reproducible
-    from the record's log. Of the 1,078 rows surviving the chase
+    from the record's log. Of the 1,112 rows surviving the chase
     pre-screen, 585 reached screening; the remainder were already
     cataloged, merged into another row, or parked for lack of any
     registrar abstract. The update's 132 include decisions yield 131
@@ -113,15 +115,15 @@ this survey retains its logged queries rather than the unfiltered
 result sets — a deliberate departure from the save-everything practice
 of the SLR canon @kitchenham2007, justified by replayability of the
 verbatim queries and disclosed here because it limits reanalysis.
-Thirty-one rows from one primary-complete chase were coded
+Thirty-nine rows from the primary-complete chases were coded
 before-window mechanically from verified publication years without a
-screening pass. Seventy-five rows remain parked as undecidable on
+screening pass. Seventy-six rows remain parked as undecidable on
 available metadata and are re-screened on every update; 137 candidates
 carried no registrar abstract at screening time and were judged on
 title, venue, and year.
 
-DEEPREADS works were selected facet-guided for deep reads as candidate
-anchors. Citations resting on abstract-only evidence carry an
+Thirty-one works carry evidence notes, selected facet-guided as
+candidate anchors. Citations resting on abstract-only evidence carry an
 "abstract-only" marker. The survey record linked in the title note
 holds the protocol, the append-only search and audit log with
 per-row decided keys, the classified catalog, the syntheses, and the

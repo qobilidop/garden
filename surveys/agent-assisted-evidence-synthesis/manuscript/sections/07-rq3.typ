@@ -14,10 +14,19 @@ quality-assurance reviewer, re-checking single-reviewer exclusions
 and extractions; HAICO-SLR goes further, sanctioning AI first-pass
 filtering and drafting under human validation @fernandes2026.
 
-Three unvalidated deep-read proposals coexist: PRISMA-trAIce's 14 items and
+Three unvalidated disclosure proposals coexist: PRISMA-trAIce's 14 items and
 human/AI-split flow diagram @holst2025, FRAISR's per-stage
 machine-readable table @degen2024, and HAICO-SLR's dual
-conduct-and-reporting tables @fernandes2026. A layer of position
+conduct-and-reporting tables @fernandes2026. A fourth instrument
+fragments the picture along a second axis rather than competing on the
+first: the RDAL checklist prescribes what an active-learning-aided
+review must *store* — random seeds, labeling order, per-iteration model
+identity and training-set size — rather than what its authors must
+report, motivated by the observation that storing every relevance score
+scales quadratically with corpus size @lombaers2024. It is equally
+unvalidated; its only application is a worked example against a tool
+two of its three authors develop, and by its own accounting that tool
+stores eleven of its fifteen items. A layer of position
 statements sits beside them: the Cochrane-family statements endorse the
 RAISE guidance @gartlehner2025, while the officially announced PRISMA-AI
 remains unpublished and PRISMA 2020 itself covers automation only at the
@@ -28,3 +37,13 @@ disclosure in the education and climate/health domains they discuss
 @oconnor2024. One detailed practice exemplar among the deep reads names
 the model, cites a PRISMA item, publishes a validation table beside the
 flow diagram, and revisits residual risk in limitations @mughal2026.
+
+Where the map can watch norms actually being made, the difficulty is
+measurable. A three-round Delphi of 29 experts on living evidence
+synthesis reached consensus on 19 of 23 statements, but its authors
+report that agreement ran lowest precisely on the objective, actionable
+use of automation and digital tools, and highest on general statements
+@golob2025[preprint]. Its one automation statement to reach consensus —
+that software and automation should be validated and justified — is
+neutral on the role question these guidance sources disagree about. The
+field converges least where a norm would bind.

@@ -24,7 +24,9 @@ named by thesis:
   shared core; the proposed instruments are plural and unvalidated.
 - `independence-undefined.md` — no selected work defines agent-reviewer
   independence; what the ensemble and deferral evidence does and does
-  not establish.
+  not establish, including the first measured proxy.
+- `terminology.md` — which of the field's own words are contested
+  (genre nouns, stage granularity, "living") and which are not.
 
 Works are cited by citekey prefix (e.g. `fagerberg2025`), resolving to
 the evidence notes in `../sources/`. Numbers stated here were checked
