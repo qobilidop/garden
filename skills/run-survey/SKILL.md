@@ -36,44 +36,55 @@ Every survey is an *updatable closed map*: it closes on bounded
 mapping closure (§7) and promises no maintenance cadence — but the
 update infrastructure stays standing, so that when an update is
 wanted, staging it is one command and the record README's procedure
-carries it to reconciliation. Choose the catalog grammar by what the
-record retains: the minimal pair (`included.tsv` + `excluded.tsv`)
-when every surfaced work is adjudicated in or out; a disposition
-ledger (`catalog.tsv`, one current disposition per discovered work —
-candidate / screened / deep-read / excluded — plus priority and
-cluster) when discovery outruns adjudication and candidates are
-retained without a promise to read them. Dedup goes through the
-normalized identifier grammar of §2 either way. Every record file
-gets a stated purpose and update rule in the README; layers beyond
-the minimal shape are declared there in a Shape note, as intent
-rather than drift.
+carries it to reconciliation.
+
+The record's spine is one ledger and one log, the same grammar at
+every scale. `catalog.tsv` holds the current state: one row per
+surfaced work, ever — `key`, `status`, `code` (exclusion code when
+excluded), then survey-declared columns (facets, cluster, priority,
+display title). The status vocabulary is declared in the README from
+one scrutiny scale — `candidate` (surfaced, unjudged) → `screened`
+(judged from metadata) → `included`/`deep-read` — with terminal
+`excluded` (coded) and `parked` (undecidable now, re-screened on
+update). A minimal survey declares `{included, excluded, parked}`;
+a discovery-heavy one adds the earlier states rather than switching
+systems. `log.tsv` holds history (§2). Dedup goes through the
+normalized identifier grammar of §2 whatever the key column shows.
+Every record file gets a stated purpose and update rule in the
+README; layers beyond the minimal shape are declared there in a
+Shape note, as intent rather than drift.
 
 ## 2. Search, catalog, screen
 
-- Logged queries (`record/searches.tsv`: date, qid, source, query,
-  results) against OpenAlex / Crossref / Semantic Scholar / arXiv;
-  per-source request templates, caps, and retry conventions are
-  documented in the record README — the logged rows are the query
-  set, rerun verbatim on update.
+- One append-only event log (`record/log.tsv`: date, kind, id,
+  source, query_or_seed, direction, hits, screened, included_keys,
+  excluded_keys, notes) with four kinds: `search` (an executed
+  query), `snowball` (a citation chase, direction backward/forward),
+  `audit` (corrections and campaign events — alias resolutions,
+  retractions, migrations), and `exploratory` (early non-replayable
+  discovery, retained as history but counting toward nothing).
+  Queries run against OpenAlex / Crossref / Semantic Scholar /
+  arXiv; per-source request templates, caps, and retry conventions
+  are documented in the record README — the logged search rows are
+  the query set, rerun verbatim on update.
 - One key grammar, documented in the README: `doi:`/`arxiv:`
   normalized (arXiv-DOIs collapse, versions stripped, lowercase),
   `t:<title-slug>` fallback; a published version of an included
-  preprint replaces its key, superseded key to `excluded.tsv` as E6.
+  preprint replaces its key, the superseded key staying as an
+  excluded catalog row (E6).
 - Before deriving counts, run a catalog-integrity pass: one work has
-  one canonical included row; adjudicate suspected aliases from full
+  one canonical catalog row; adjudicate suspected aliases from full
   registrar metadata and authorship, never title similarity alone;
   retain superseded identifiers as E6 and move formally retracted or
   withdrawn works to E7.
-- One included-works table (`included.tsv`; year-at-screening,
-  truncated display titles) that classification extends with facet
-  columns; `excluded.tsv` (key + code) is permanent screening memory.
-- Two log tiers: the audited log is append-only, every row
-  referencing exactly one frozen screening snapshot
-  (`record/screening/YYYY-MM-DD/`); non-replayable early discovery
-  goes to `searches-exploratory.tsv` as baseline evidence only. A
-  later disposition change appends an audit reconciliation row
-  (`promoted-key:`/`superseded-key:` in notes) — executed rows are
-  never rewritten.
+- Log invariants: append-only — a disposition change is a new
+  `audit` row (`promoted-key:`/`superseded-key:` in notes) plus a
+  catalog update, never a rewrite; every published number derives
+  from the audited kinds; when the survey keeps frozen screening
+  snapshots (`record/screening/YYYY-MM-DD/`, declared in the
+  README), each audited search or snowball row references exactly
+  one, and the validator checks referenced snapshots exist and
+  match the screened counts.
 - Snapshots expose index defects rather than repairing them: keep
   unresolved stubs under snapshot-local ids, note wrong registrar
   metadata, and let primary/publisher records control bibliographic
@@ -229,8 +240,8 @@ fix introduces before persisting it.
   contract: scope, search parameters, snowball spec, selection rules
   with examples, key grammar, facet tokens, curation bar, numbered
   update procedure — build docs stay in AGENTS.md and this skill,
-  pointed to rather than duplicated), `searches.tsv`, the catalog per
-  the §1 grammar, `sources/`, and, when the manuscript publishes
+  pointed to rather than duplicated), `catalog.tsv` and `log.tsv`
+  per the §1 grammar, `sources/`, and, when the manuscript publishes
   quantities derived from the catalog, a campaign-local `check.py`;
   survey-local tooling beyond it (fetchers, freshness) lives in
   `record/scripts/`. The validator checks schemas, keys, facet
