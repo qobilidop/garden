@@ -168,7 +168,8 @@ Shape note, as intent rather than drift.
   established result; ids are `Cxx`, epistemically neutral so they
   survive status transitions.
 - `record/evidence.md` — the binding layer: one record per evidence
-  item (`Exxx`) stating one checkable literature fact, linked
+  item (`Exxx`) stating one checkable finding from the literature
+  (findings support claims; never two senses of "claim"), linked
   downward to citekeys and source-note anchors, upward to the `Cxx`
   claims it supports, across to the manuscript sections that cite on
   its strength, with scope and caveat riding the row. The validator

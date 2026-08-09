@@ -24,7 +24,7 @@ Canon anchors: Kitchenham 2007 (SLR guidelines), Petersen 2008
 | `sources/` evidence notes | data extraction (forms) | pinpoint anchors to sections/tables of the primary work |
 | `syntheses/` | (data) synthesis | the cross-source understanding layer |
 | `claims.md` | synthesis claims ledger | statused assertions; cf. assurance-case claims (CAE/GSN) |
-| `evidence.md` | evidence table / GRADE summary-of-findings; CAE claims–evidence binding; traceability matrix | one row per evidence item, binding claims and manuscript anchors to source anchors, caveat riding the row |
+| `evidence.md` | evidence table / GRADE summary-of-findings; CAE claims–evidence binding; traceability matrix | one record per evidence item; its **Finding** field is Toulmin's grounds — findings support claims, keeping one sense of "claim" |
 | protocol (`protocol.md` / README contract) | review protocol | Kitchenham: written and gated before the search |
 
 Known conscious deviations from canon practice, always disclosed in

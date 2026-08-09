@@ -254,7 +254,7 @@ def main() -> int:
 
     evidence_text = (SURVEY / "evidence.md").read_text(encoding="utf-8")
     evidence_field_map = {
-        "Claim": "literature_claim",
+        "Finding": "finding",
         "Works": "citekeys",
         "Anchors": "source_note_anchors",
         "Supports": "supports_claims",
@@ -305,7 +305,7 @@ def main() -> int:
                 fail(f"evidence row {number} uses unknown manuscript anchor {anchor}")
         if not row_claims and not row_anchors:
             fail(f"evidence row {number} supports neither a claim nor the manuscript")
-        for field in ("literature_claim", "evidence_scope", "caveat"):
+        for field in ("finding", "evidence_scope", "caveat"):
             if row[field].strip() in ("", "-"):
                 fail(f"evidence row {number} has empty {field}")
 
