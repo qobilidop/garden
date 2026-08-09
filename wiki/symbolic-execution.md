@@ -2,13 +2,17 @@
 
 Symbolic execution runs programs over symbolic inputs and accumulates
 constraints that describe sets of concrete behaviors. The shelf, by role:
-[[sen2015-multise]] (incremental path merging through guarded value
-summaries) and [[yang2026-forbench]] (hardware symbolic simulation that
-forks on testbench decisions rather than design branches).
+[[baldoni2016-a-survey-of-symbolic-execution-techniques]] (field architecture
+and taxonomy), [[sen2015-multise]] (incremental path merging through guarded
+value summaries), and [[yang2026-forbench]] (hardware symbolic simulation
+that forks on testbench decisions rather than design branches).
 
 ## Path explosion moves between representations
 
-The execution tree is not the only place alternatives can live.
+The execution tree is not the only place alternatives can live. The Baldoni
+et al. survey shows the broader spectrum: an engine can fork states, encode
+choices in if-then-else or array formulas, summarize repeated code, merge
+selected states, or deliberately concretize and omit choices.
 [[sen2015-multise]] factors a set of paths by variable: each variable and the
 program counter map to guarded values, so identical values share one
 expression and merging happens on every assignment. [[yang2026-forbench]]
@@ -36,6 +40,13 @@ pruning, word-level sweeping, and assumption-guided evaluation. In both
 systems the solver is not a black-box backend: what it can represent cheaply
 determines the state model in front of it.
 
+The survey generalizes that observation beyond merging. Symbolic addresses
+can become path forks, conditional expressions, array-theory terms, or
+concrete commitments. Constraints can be rewritten, partitioned, cached,
+asked eagerly or lazily, or avoided through concretization. These are not
+interchangeable optimizations: each shifts precision and cost between the
+executor, memory model, and solver.
+
 That boundary also determines where approximation enters. MultiSE
 concretizes an unsupported symbolic operation and marks the execution
 incomplete; Forbench offers user-supplied abstraction predicates when
@@ -59,11 +70,19 @@ boilerplate. A representation can compress the behaviors it is asked to
 consider; it cannot establish that the harness expressed the right behaviors,
 that the bound was deep enough, or that an omitted theory was irrelevant.
 
+Terminology can obscure that contract. The Baldoni et al. survey calls an
+analysis *sound* when it has no false negatives and *complete* when it has no
+false positives, the reverse of a convention common in logic and static
+analysis. Claims should therefore be read through the stated behavior: which
+unsafe executions may be missed, which reported executions may be spurious,
+and what concretization or modeling step created that boundary.
+
 ## What the shelf needs next
 
-The missing bridge is a contemporary comparison of guarded value summaries,
-ITE-heavy symbolic simulation, and path-based execution under the same
-programs, solver, memory budget, and end-task metric. The shelf also lacks the
-foundational DART/KLEE lineage and a study of harness-construction effort.
-Those additions would test whether the two current works describe a durable
-representation spectrum or merely successful points in different domains.
+The field survey supplies a durable taxonomy, but not a reproducible or
+quantitative comparison. The missing bridge is a contemporary experiment on
+guarded value summaries, ITE-heavy symbolic simulation, and path-based
+execution under the same programs, solver, memory budget, and end-task
+metric. The shelf also lacks primary ingestions of the foundational DART/KLEE
+lineage and a study of harness-construction effort. Those additions would
+test which points on the representation spectrum work under which conditions.
