@@ -1,7 +1,0 @@
-rank	openalex_id	year	doi	title	venue	type
-1	W4411269405	2025	https://doi.org/10.1145/3729289	A Hybrid Approach to Semi-automated Rust Verification	Proceedings of the ACM on Programming Languages	article
-2	W4401202381	2025	https://doi.org/10.1145/3704856	Formal Foundations for Translational Separation Logic Verifiers	Proceedings of the ACM on Programming Languages	article
-3	W4411723866	2025	https://doi.org/10.1145/3742876.3742884	Imperative Program Synthesis by Abstract Static Analysis and SMT Mutations		conference-paper
-4	W4413846604	2025	https://doi.org/10.1145/3744915.3748474	On Synthesizing Presence Conditions in Numerical Software Product Lines		conference-paper
-5	W4411088602	2025	https://doi.org/10.1145/3743131	Outcome Logic: A Unified Approach to the Metatheory of Program Logics with Branching Effects	ACM Transactions on Programming Languages and Systems	article
-6	W4415420857	2025	https://doi.org/10.15439/2025f8874	While-guard Synthesis by Abstract Static Analysis and CHC Solving	Annals of Computer Science and Information Systems	conference-paper

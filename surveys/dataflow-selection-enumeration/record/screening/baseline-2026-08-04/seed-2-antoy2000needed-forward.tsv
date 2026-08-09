@@ -1,6 +1,0 @@
-rank	openalex_id	year	doi	title	venue	type
-1	W2059799630	1994	https://doi.org/10.1016/0743-1066(94)90034-5	The integration of functions into logic programming: From theory to practice	The Journal of Logic Programming	article
-2	W42989434	2014	https://doi.org/10.1007/978-3-319-12904-4_4	Conditional Narrowing Modulo in Rewriting Logic and Maude	Lecture notes in computer science	conference-paper
-3	W1963929645	1998	https://doi.org/10.1016/s1571-0661(05)82550-2	Adventures in sequent calculus modulo equations	Electronic Notes in Theoretical Computer Science	article
-4	W159470393	2000	https://doi.org/10.15760/etd.6977	Compiling Evaluable Functions in the Godel Programming Language		report
-5	W2981853380	2000	https://doi.org/10.15760/etd.7071	Evaluable Functions in the Godel Programming Language: Parsing and Representing Rewrite Rules		report

@@ -1,5 +1,0 @@
-rank	source_id	year	doi	title	venue	type
-1	doi:10.1007/978-3-642-33125-1_6	2012	10.1007/978-3-642-33125-1_6	Polyhedral Analysis Using Parametric Objectives	Static Analysis [doi:10.1007/978-3-642-33125-1 isbn:9783642331244 isbn:9783642331251 openalex:W4253172809 omid:br/0613055194]	book chapter
-2	doi:10.1002/rnc.1392	2009	10.1002/rnc.1392	Inf-sup Control Of Discontinuous Piecewise Affine Systems	International Journal Of Robust And Nonlinear Control [doi:10.1002/(issn)1099-1239 issn:1049-8923 issn:1099-1239 openalex:S156578089 omid:br/0615047644]	journal article
-3	doi:10.1002/cpe.6050	2020	10.1002/cpe.6050	A Task‐Based Approach To Parallel Parametric Linear Programming Solving, And Application To Polyhedral Computations	Concurrency And Computation: Practice And Experience [doi:10.1002/(issn)1532-0634 issn:1532-0626 issn:1532-0634 openalex:S11065456 omid:br/0622020903]	journal article
-4	doi:10.1016/j.automatica.2010.06.008	2010	10.1016/j.automatica.2010.06.008	A New Algorithm For Solving Convex Parametric Quadratic Programs Based On Graphical Derivatives Of Solution Mappings	Automatica [issn:0005-1098 openalex:S51360982 omid:br/068064894]	journal article

@@ -80,15 +80,15 @@ Shape note, as intent rather than drift.
 - Log invariants: append-only — a disposition change is a new
   `audit` row (`promoted-key:`/`superseded-key:` in notes) plus a
   catalog update, never a rewrite; every published number derives
-  from the audited kinds; when the survey keeps frozen screening
-  snapshots (`record/screening/YYYY-MM-DD/`, declared in the
-  README), each audited search or snowball row references exactly
-  one, and the validator checks referenced snapshots exist and
-  match the screened counts.
-- Snapshots expose index defects rather than repairing them: keep
-  unresolved stubs under snapshot-local ids, note wrong registrar
-  metadata, and let primary/publisher records control bibliographic
-  and technical claims — indexes are discovery aids only.
+  from the audited kinds. Result sets are staged in scratch during
+  screening and discarded after reconciliation — the log row (date,
+  verbatim query, counts, decided keys, notes) is the audit unit;
+  the bar is traceability, and result sets are re-derivable by
+  rerunning the logged query.
+- Index defects are recorded, not repaired: note unresolved
+  identifiers and wrong registrar metadata in the log row, and let
+  primary/publisher records control bibliographic and technical
+  claims — indexes are discovery aids only.
 - Evidence-support hierarchy: abstract- or metadata-level records
   support scope and chronology statements only; theorem, algorithm,
   and guarantee claims require a deep-read note with pinpoint
@@ -100,8 +100,9 @@ Shape note, as intent rather than drift.
 - Snowball one backward+forward round via citation indexes; record
   the pre-filter vocabulary verbatim; a verification pass re-judges
   everything the wave screens in. When an index returns a truncated,
-  unresolved, or implausibly empty bibliography, transcribe the
-  primary version's printed reference list as the backward snapshot.
+  unresolved, or implausibly empty bibliography, chase from the
+  primary version's printed reference list and mark the log row
+  `primary-complete`.
 - New vocabulary discovered while reading lands in the query set in
   its own commit — never silently edit an executed search.
 - Screening: two agent passes on different model tiers and prompt

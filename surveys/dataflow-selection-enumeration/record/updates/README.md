@@ -43,8 +43,8 @@ For every staged row:
 
 ## 4. Promote an audited batch
 
-Copy the fully screened snapshot to `screening/YYYY-MM-DD/`, append one matching
-row to `log.tsv`, and update the catalog. Then reconcile syntheses,
+Append one matching row to `log.tsv` and update the catalog; the
+staged result set is discarded after reconciliation. Then reconcile syntheses,
 claims, terminology, formal material, the evidence matrix, and manuscript.
 
 Only after all of those changes are complete should `state.tsv` be advanced to

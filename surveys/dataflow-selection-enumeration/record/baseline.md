@@ -1,7 +1,8 @@
 # Initial mapping baseline
 
 This file records the compact, durable outcome of the first mapping campaign.
-The audited logs and frozen result sets retain the execution evidence; Git
+The audited log retains the execution evidence (the baseline's
+frozen result sets live in git history); Git
 history retains the superseded chronological closure narrative.
 
 ## Snapshot
@@ -40,7 +41,8 @@ organizing derivation, not a claim to a new generic enumeration paradigm.
 ## Evidence locations
 
 - `log.tsv` records every audited query or citation chase.
-- `screening/` freezes each screened result set.
+- the baseline screening snapshots, now retained only in git
+  history, froze each screened result set.
 - `catalog.tsv` records the current disposition of discovered works.
 - `sources/` anchors technical extraction in primary works.
 - `syntheses/` records the current cross-paper interpretation.

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate the survey catalog, audited log, and screening snapshots."""
+"""Validate the survey catalog, audited log, and evidence surfaces."""
 
 import csv
 from datetime import date
@@ -47,26 +47,6 @@ EVIDENCE_HEADER = [
     "evidence_scope",
     "caveat",
 ]
-SCREENING_HEADER = [
-    "rank",
-    "openalex_id",
-    "year",
-    "doi",
-    "title",
-    "venue",
-    "type",
-]
-OPENALEX_ABSTRACT_SCREENING_HEADER = [*SCREENING_HEADER, "abstract"]
-GENERIC_SCREENING_HEADER = [
-    "rank",
-    "source_id",
-    "year",
-    "doi",
-    "title",
-    "venue",
-    "type",
-]
-GENERIC_ABSTRACT_SCREENING_HEADER = [*GENERIC_SCREENING_HEADER, "abstract"]
 UPDATE_QUERY_HEADER = [
     "query_id",
     "source",
@@ -193,9 +173,6 @@ def main() -> int:
         if source_note.name == "_template.md":
             continue
         source_text = source_note.read_text(encoding="utf-8")
-        for relative in re.findall(r"`(screening/[^`]+\.tsv)`", source_text):
-            if not (SURVEY / relative).is_file():
-                fail(f"source note {source_note.name} references missing {relative}")
         if CURRENT_SOURCE_TEMPLATE not in source_text:
             continue
         for required in CURRENT_SOURCE_REQUIRED:
@@ -419,7 +396,6 @@ def main() -> int:
     for citekey in superseded_keys:
         if citekey not in catalog or catalog[citekey]["status"] != "excluded":
             fail(f"superseded key lacks an excluded catalog disposition: {citekey}")
-    referenced_snapshots: set[str] = set()
     for number, row in enumerate(log_rows, start=2):
         if row["kind"] not in {"search", "snowball", "audit", "exploratory"}:
             fail(f"log row {number} has unknown kind {row['kind']!r}")
@@ -448,27 +424,6 @@ def main() -> int:
                 and citekey not in promoted_keys
             ):
                 fail(f"search-log row {number} exclusion {citekey} is not excluded")
-        snapshot_refs = re.findall(r"screening/[^ ;]+\.tsv", row["notes"])
-        if row["kind"] == "audit":
-            if len(snapshot_refs) > 1:
-                fail(f"audit search-log row {number} references multiple snapshots")
-        elif len(snapshot_refs) != 1:
-            fail(
-                f"non-audit search-log row {number} must reference exactly one "
-                f"screening snapshot, found {len(snapshot_refs)}"
-            )
-        for relative in snapshot_refs:
-            referenced_snapshots.add(relative)
-            snapshot = SURVEY / relative
-            if not snapshot.is_file():
-                fail(f"search-log row {number} references missing {relative}")
-            _, snapshot_rows = rows(snapshot)
-            if len(snapshot_rows) != int(row["screened"]):
-                fail(
-                    f"search-log row {number} reports {row['screened']} screened "
-                    f"records but {relative} contains {len(snapshot_rows)}"
-                )
-
     rows_by_seed: dict[str, list[dict[str, str]]] = {}
     for row in log_rows:
         key = seed_key(row["notes"])
@@ -504,35 +459,6 @@ def main() -> int:
             for item in rows_by_seed.get(key, [])
         ):
             fail(f"defective backward chase for {key} has no primary bibliography")
-
-    screening_paths = sorted((SURVEY / "screening").rglob("*.tsv"))
-    for path in screening_paths:
-        header, snapshot_rows = rows(path)
-        if header not in (
-            SCREENING_HEADER,
-            OPENALEX_ABSTRACT_SCREENING_HEADER,
-            GENERIC_SCREENING_HEADER,
-            GENERIC_ABSTRACT_SCREENING_HEADER,
-        ):
-            fail(f"unexpected screening header in {path.relative_to(ROOT)}: {header}")
-        for rank, row in enumerate(snapshot_rows, start=1):
-            if row["rank"] != str(rank):
-                fail(f"nonsequential rank in {path.relative_to(ROOT)}")
-            identifier_field = (
-                "openalex_id"
-                if header in (SCREENING_HEADER, OPENALEX_ABSTRACT_SCREENING_HEADER)
-                else "source_id"
-            )
-            if not row[identifier_field]:
-                fail(f"missing identifier in {path.relative_to(ROOT)} row {rank + 1}")
-
-    unreferenced = sorted(
-        str(path.relative_to(SURVEY))
-        for path in screening_paths
-        if str(path.relative_to(SURVEY)) not in referenced_snapshots
-    )
-    if unreferenced:
-        fail(f"unreferenced screening snapshot: {unreferenced[0]}")
 
     header, query_rows = rows(SURVEY / "updates" / "queries.tsv")
     if header != UPDATE_QUERY_HEADER:

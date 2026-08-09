@@ -10,8 +10,9 @@ auditable reporting of secondary studies.
 
 - Research questions, selection rules, extraction dimensions, and stable
   exclusion codes are versioned in `protocol.md`.
-- Audited searches retain exact queries or seeds, counts, dispositions, and
-  frozen result sets; non-replayable early discovery is kept separate.
+- Audited searches retain exact queries or seeds, counts, and
+  dispositions; non-replayable early discovery is marked exploratory.
+  Result sets are not retained — the log row is the audit unit.
 - Search indexes are discovery instruments. Technical extraction uses primary
   sources and records page, section, definition, theorem, or algorithm anchors.
 - Every critical work is deep-read and receives separate backward and forward
@@ -36,8 +37,8 @@ computed. Human review remains necessary before conventional publication.
 
 **Index coverage and metadata quality.** Citation indexes omit bibliographies,
 leave identifiers unresolved, conflate versions, and sometimes attach incorrect
-DOIs. Frozen snapshots expose these defects but cannot repair all missing
-records. Primary publisher or author sources control technical claims.
+DOIs. Log-row notes record such defects as encountered; primary
+publisher or author sources control technical claims.
 
 **Vocabulary drift.** The map crosses symbolic execution, term graphs,
 hardware, demand semantics, event structures, decision diagrams, geometric

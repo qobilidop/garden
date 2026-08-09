@@ -53,7 +53,6 @@ def status(args: argparse.Namespace) -> int:
     catalog_statuses = Counter(row["status"] for row in catalog)
     log_rows = read_tsv(SURVEY / "log.tsv")
     evidence_rows = read_tsv(SURVEY / "evidence-matrix.tsv")
-    snapshots = list((SURVEY / "screening").rglob("*.tsv"))
     source_notes = [
         path
         for path in (SURVEY / "sources").glob("*.md")
@@ -83,7 +82,7 @@ def status(args: argparse.Namespace) -> int:
     )
     audited = [row for row in log_rows if row.get("kind") != "exploratory"]
     print(f"Search record: {len(audited)} audited log rows "
-          f"(+{len(log_rows) - len(audited)} exploratory), {len(snapshots)} snapshots")
+          f"(+{len(log_rows) - len(audited)} exploratory)")
     print(f"Registered searches: {len(active)} active"
           + (f", last fully reconciled {last_reconciled.isoformat()}"
              if last_reconciled else ""))

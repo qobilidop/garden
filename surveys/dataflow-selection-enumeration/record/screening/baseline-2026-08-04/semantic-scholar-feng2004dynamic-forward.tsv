@@ -1,3 +1,0 @@
-rank	source_id	year	doi	title	venue	type
-1	8e808ca204c1406c381a94ffc6ca7aaba106cbec	2005	10.1145/1109118.1109122	Using 2-domain partitioned OBDD data structure in an enhanced symbolic simulator	ACM Transactions on Design Automation of Electronic Systems	journal-article
-2	d66f21f1d81d4b76b9b8acb3fd2c73ca1c357e28	2006	10.1109/TEST.2006.297666	Characteristic States and Cooperative Game Based Search for Efficient Sequential ATPG and Design Validation	2006 IEEE International Test Conference	proceedings-article

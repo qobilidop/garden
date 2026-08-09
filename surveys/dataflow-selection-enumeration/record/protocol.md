@@ -56,7 +56,6 @@ silently changing an executed search.
 |---|---|---|
 | `catalog.tsv` | One current disposition per discovered work | Update during screening |
 | `log.tsv` | Append-only event log: `search`, `snowball`, and `audit` rows, plus `exploratory` rows retained as non-replayable early history | Append after adjudication |
-| `screening/` | Frozen result sets | Commit only after every row is screened |
 | `sources/` | Primary-work extraction and pinpoint evidence | Required for deep reads |
 | `syntheses/` | Current cross-paper understanding | Revise after each reading batch |
 | `evidence-matrix.tsv` | Synthesis/manuscript claim-to-source traceability | Revise with claims or manuscript evidence |
@@ -158,13 +157,14 @@ always relative to the named sources, exact queries, result depths, and date.
 `log.tsv` contains: execution date, kind (`search`, `snowball`,
 `audit`, or `exploratory`), event id, source, exact query or seed,
 direction, hit count, screened count, included keys, excluded keys,
-and notes. Every non-audit row references exactly one committed snapshot.
+and notes. Result sets are staged in `.scratch/` during screening and
+discarded after reconciliation — the log row is the audit unit.
 Approximate counts, unknown result sets, and aggregate seed descriptions belong
 in scratch notes rather than the audited log.
 
-Executed rows and their frozen snapshots are append-only. If later primary
-reading changes a catalog disposition, append an `audit` reconciliation row
-rather than rewriting the executed row. Its notes record `promoted-key:KEY` or
+Executed rows are append-only. If later primary reading changes a
+catalog disposition, append an `audit` reconciliation row rather than
+rewriting the executed row. Its notes record `promoted-key:KEY` or
 `superseded-key:KEY`; the current catalog gives the resulting disposition while
 the earlier row preserves the adjudication made at execution time.
 

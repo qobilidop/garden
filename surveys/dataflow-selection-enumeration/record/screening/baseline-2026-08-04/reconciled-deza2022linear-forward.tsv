@@ -1,6 +1,0 @@
-rank	source_id	year	doi	title	venue	type
-1	https://doi.org/10.1109/ICRA48891.2023.10160555	2023	10.1109/ICRA48891.2023.10160555	Finding Optimal Modular Robots for Aerial Tasks	IEEE International Conference on Robotics and Automation	application
-2	https://doi.org/10.1007/978-3-032-03844-9_9	2026	10.1007/978-3-032-03844-9_9	Sizing the White Whale	Fields Institute Communications	closest successor
-3	https://doi.org/10.1007/s00454-023-00557-2	2023	10.1007/s00454-023-00557-2	Computing Characteristic Polynomials of Hyperplane Arrangements with Symmetries	Discrete & Computational Geometry	different output
-4	https://arxiv.org/abs/2303.05173	2023	-	M-Representation of Polytopes	arXiv	representation
-5	https://doi.org/10.1007/978-3-031-50507-2	2024	10.1007/978-3-031-50507-2	Convexity from the Geometric Point of View	Springer	secondary source

@@ -45,7 +45,6 @@ does not attempt.
 - `log.tsv` — the append-only event log: audited `search`,
   `snowball`, and `audit` rows, plus non-replayable `exploratory`
   rows retained as history.
-- `screening/` — frozen, fully screened result sets.
 - `sources/` — one primary-source evidence note per deep-read work.
 - `syntheses/` — current cross-paper understanding by theme.
 - `formal-synthesis/` — definitions, reductions, and proofs that
@@ -63,8 +62,10 @@ does not attempt.
    (survey-local, gitignored; API output is not evidence until every
    result is screened).
 2. Give every discovered work a disposition in `catalog.tsv`.
-3. Preserve only fully screened result sets and append their audited
-   execution rows to `log.tsv`.
+3. Screen every returned record, then append one audited execution
+   row to `log.tsv`; discard the staged result set after
+   reconciliation (the log row is the audit unit). The baseline's
+   frozen screening snapshots live in git history.
 4. Create a primary-source note for every deep-read work.
 5. Reconcile the relevant thematic files in `syntheses/`.
 6. Update `terminology.md`, `claims.md`, and the formal synthesis

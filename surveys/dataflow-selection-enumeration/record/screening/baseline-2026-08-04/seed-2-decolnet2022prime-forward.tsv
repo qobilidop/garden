@@ -1,6 +1,0 @@
-rank	openalex_id	year	doi	title	venue	type
-1	W4390807477	2024	https://doi.org/10.1016/j.ijar.2023.109112	On the failings of Shapley values for explainability	International Journal of Approximate Reasoning	article
-2	W4306928732	2022	https://doi.org/10.1016/j.datak.2022.102088	On the explanatory power of Boolean decision trees	Data & Knowledge Engineering	article
-3	W4386987719	2023	https://doi.org/10.1007/978-3-031-43619-2_8	A New Class of Explanations for Classifiers with Non-binary Features	Lecture notes in computer science	conference-paper
-4	W4386818493	2023	https://doi.org/10.3233/faia230305	Abductive Explanations of Classifiers Under Constraints: Complexity and Properties	Frontiers in artificial intelligence and applications	book-chapter
-5	W4385764525	2023	https://doi.org/10.24963/ijcai.2023/352	On Translations between ML Models for XAI Purposes		conference-paper
