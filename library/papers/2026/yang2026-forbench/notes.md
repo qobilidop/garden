@@ -12,8 +12,8 @@ sources:
     url: https://arxiv.org/pdf/2608.01045v1
     archived: https://web.archive.org/web/20260806200150/https://arxiv.org/pdf/2608.01045v1
 retrieved: 2026-08-08
-notes-by: Claude Fable 5
-notes-date: 2026-08-08
+notes-by: "Claude Fable 5; Codex GPT-5.6 Sol"
+notes-date: 2026-08-09
 synthesis: "Fork on testbench conditions, not design branches: a symbolic-simulation runtime with simulation ergonomics — real engineering value, though the 'third path' framing oversells its distance from prior symbolic simulation."
 ---
 
@@ -114,7 +114,7 @@ Python API via Boost.Python. Three experiments:
   random's 11058s; rocketTile_small: 79.16% in 9438s). EBMC N/A on the
   large ones (crashed).
 - **Bug finding (Table 4).** Ten injected bugs (E0–E9) in a micro-riscv
-  RV32I core, reproducing Bruns et al. [18]'s symbolic-execution setup.
+  RV32I core, reproducing Bruns et al. [18]'s [[symbolic-execution]] setup.
   Both find 10/10, but Forbench does it in 17.4s total vs 11,645s, and
   explores 23 branches total vs ~101M executed instructions / 13,072
   partial paths — the testbench-forking-beats-DUT-forking claim made
