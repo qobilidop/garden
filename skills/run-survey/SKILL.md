@@ -103,9 +103,14 @@ Shape note, as intent rather than drift.
   retain superseded identifiers under the superseded-version code and
   formally retracted works under the retraction code.
 - Log invariants: append-only — a disposition change is a new
-  `audit` row (`promoted-key:`/`superseded-key:` in notes) plus a
-  catalog update, never a rewrite; every published number derives
-  from the audited kinds. Result sets are staged in scratch during
+  `audit` row plus a catalog update, never a rewrite; every published
+  number derives from the audited kinds. The audit row names the keys
+  it moves so the engine can reconcile a wave's historical decision
+  with current state: `promoted-key:`/`superseded-key:` for a version
+  replacement, `reclassified-key:` when later evidence (a deep read,
+  a re-screen) overturns what an earlier wave decided. A search or
+  snowball row keeps the decision it recorded at the time; only the
+  audit row carries the correction. Result sets are staged in scratch during
   screening and discarded after reconciliation — the log row (date,
   verbatim query, counts, decided keys, notes) is the audit unit;
   the bar is traceability, and result sets are re-derivable by

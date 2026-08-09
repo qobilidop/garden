@@ -401,12 +401,19 @@ def run(config):
     # --- log ---
     log_rows = read_tsv(record / "log.tsv", LOG_HEADER, errors)
     kind_counts = Counter()
-    promoted, superseded = set(), set()
+    promoted, superseded, reclassified = set(), set(), set()
     for row in log_rows:
         promoted.update(re.findall(r"(?:^|; )promoted-key:(\S+?)(?:;|$)", row["notes"]))
         superseded.update(re.findall(r"(?:^|; )superseded-key:(\S+?)(?:;|$)", row["notes"]))
-        if re.search(r"(?:^|; )(?:promoted|superseded)-key:", row["notes"]) and row["kind"] != "audit":
+        # A later audit may correct what an earlier wave decided. The log is
+        # append-only, so that row keeps its historical decision and the audit
+        # row carries the correction; both cannot describe current state.
+        reclassified.update(re.findall(r"(?:^|; )reclassified-key:(\S+?)(?:;|$)", row["notes"]))
+        if re.search(r"(?:^|; )(?:promoted|superseded|reclassified)-key:", row["notes"]) and row["kind"] != "audit":
             errors.append(f"log id {row['id']}: disposition reconciliation is not an audit row")
+    for key in sorted(reclassified):
+        if key not in catalog:
+            errors.append(f"reclassified key is not in the catalog: {key}")
     for key in sorted(promoted & superseded):
         errors.append(f"log both promotes and supersedes {key}")
     for key in sorted(promoted):
@@ -443,12 +450,12 @@ def run(config):
         for key in cell_keys(row["included_keys"]):
             if key not in catalog:
                 errors.append(f"log.tsv:{lineno}: includes unknown key {key}")
-            elif catalog[key]["status"] == "excluded" and key not in superseded:
+            elif catalog[key]["status"] == "excluded" and key not in superseded | reclassified:
                 errors.append(f"log.tsv:{lineno}: includes excluded key {key}")
         for key in cell_keys(row["excluded_keys"]):
             if key not in catalog:
                 errors.append(f"log.tsv:{lineno}: excludes unknown key {key}")
-            elif catalog[key]["status"] != "excluded" and key not in promoted:
+            elif catalog[key]["status"] != "excluded" and key not in promoted | reclassified:
                 errors.append(f"log.tsv:{lineno}: exclusion {key} is not excluded")
         seed = seed_key(row["notes"])
         if seed is not None:
