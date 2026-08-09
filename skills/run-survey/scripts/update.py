@@ -100,13 +100,20 @@ def command_for(
     query: dict[str, str],
     today: date,
     output: Path,
+    initial_from_date: str | None = None,
 ) -> list[str]:
+    from_date = query["last_reconciled"] or initial_from_date
+    if not from_date:
+        raise SystemExit(
+            f"query {query['query_id']!r} was never reconciled; pass "
+            "--initial-from-date <survey window start> to stage its first run"
+        )
     common = [
         query["query"],
         "--limit",
         query["limit"],
         "--from-date",
-        query["last_reconciled"],
+        from_date,
         "--to-date",
         today.isoformat(),
         "--output",
@@ -137,7 +144,7 @@ def command_for(
             "--limit",
             query["limit"],
             "--from-year",
-            query["last_reconciled"][:4],
+            from_date[:4],
             "--to-year",
             today.isoformat()[:4],
             "--output",
@@ -149,7 +156,6 @@ def command_for(
 def select_queries(args: argparse.Namespace) -> list[dict[str, str]]:
     queries = records()
     active = [query for query in queries if query["active"] == "true"]
-    today = parse_date(args.as_of)
     if args.query_id:
         selected = [query for query in active if query["query_id"] in args.query_id]
         missing = sorted(set(args.query_id) - {query["query_id"] for query in selected})
@@ -211,7 +217,7 @@ def fetch(args: argparse.Namespace) -> int:
     last_arxiv_request: float | None = None
     for query in selected:
         output = output_dir / f"{query['query_id']}.tsv"
-        command = command_for(query, today, output)
+        command = command_for(query, today, output, args.initial_from_date)
         if args.dry_run:
             print(shlex.join(command))
             continue
@@ -275,6 +281,11 @@ def parser() -> argparse.ArgumentParser:
     choice.add_argument("--all", action="store_true")
     choice.add_argument("--query-id", action="append")
     fetch_parser.add_argument("--as-of", default=date.today().isoformat())
+    fetch_parser.add_argument(
+        "--initial-from-date",
+        help="window start for queries with no last_reconciled date "
+        "(their first staged run; take it from the survey protocol)",
+    )
     fetch_parser.add_argument("--output-dir")
     fetch_parser.add_argument("--dry-run", action="store_true")
     fetch_parser.set_defaults(function=fetch)

@@ -494,10 +494,14 @@ def run(config):
             errors.append(f"queries.tsv:{lineno}: arXiv query is not source-native")
         if row["active"] not in ("true", "false"):
             errors.append(f"queries.tsv:{lineno}: invalid active flag {row['active']!r}")
-        try:
-            date.fromisoformat(row["last_reconciled"])
-        except ValueError:
-            errors.append(f"queries.tsv:{lineno}: invalid last_reconciled {row['last_reconciled']!r}")
+        # Empty last_reconciled marks a registered query that has never
+        # been reconciled (its first staged run takes the window start
+        # from the protocol via update.py --initial-from-date).
+        if row["last_reconciled"]:
+            try:
+                date.fromisoformat(row["last_reconciled"])
+            except ValueError:
+                errors.append(f"queries.tsv:{lineno}: invalid last_reconciled {row['last_reconciled']!r}")
 
     # --- landing page curation ---
     index_text = (survey / "index.md").read_text(encoding="utf-8")
