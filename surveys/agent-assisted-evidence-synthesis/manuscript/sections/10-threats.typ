@@ -15,7 +15,7 @@ retains logged queries rather than unfiltered result sets.
 
 Registrar defects shaped the update materially. Three of twelve
 backward chases returned bibliographies the citation index could not
-supply, requiring publisher-deposited reference lists; 137 screened
+supply, requiring publisher-deposited reference lists; 87 screened
 candidates carried no registrar abstract and were judged on title,
 venue, and year; 39 rows were coded before-window mechanically from
 publication years without a screening pass. Seventy-six records remain
@@ -32,6 +32,15 @@ passes are repeated automated checks, not independent human reviewers,
 and the survey's own RQ4 finding — that nobody has defined what makes
 two agent reviewers independent — applies to this survey's method as
 much as to its corpus.
+
+This manuscript compresses what its notes support in a small number
+of places that the record itemizes as deferred work — among them the
+status of PRISMA-AI, on which two sources disagree, and an unstaged
+dispute between two selected works over which screening metric to
+prescribe. The disclosure exemplar we cite is validated by its own
+authors, on a stratified sample whose single observed miss carries a
+wide interval; the randomized appraisal study we lean on completed 7
+of 15 recruited teams.
 
 The integrity review resolved known version aliases across both waves
 but cannot prove that no semantically renamed duplicate remains. The

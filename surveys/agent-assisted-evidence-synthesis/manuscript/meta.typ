@@ -37,16 +37,21 @@
   quality ratings, and they record the comparison a work claims
   rather than one verified to have occurred. The selected studies
   expose heterogeneous performance and recurring metric failures
-  under class imbalance — in the sharpest case, one appraisal tool
-  agreeing with human judgment at $kappa = 0.60$ on one domain and
-  $0.04$ on another within a single corpus. Disclosure proposals now
-  span two genres, reporting and reproducible storage, none validated
-  or adopted; a consensus panel agreed least on the actionable use of
-  automation. No selected work defines what makes two agent reviewers
-  independent, though one now measures inter-agent correlation and
-  finds that letting its agents debate erodes both that independence
-  and their accuracy. The survey contributes consistent terminology,
-  a four-dimensional taxonomy, and a curated reading list; it was
-  compiled with LLM-agent assistance under human direction, with a
-  minimal public record and its own failure modes disclosed.
+  under class imbalance — in the sharpest case, one pre-LLM appraisal
+  tool agreeing with human judgment at $kappa = 0.60$ on one domain
+  and $0.04$ on another within a single nursing corpus (abstract-only
+  evidence). Disclosure proposals now span two genres, reporting and
+  reproducible storage, none reporting validation or adoption; in the
+  one consensus exercise the map contains, a preprint panel's own
+  account places its weakest agreement on actionable automation use.
+  No selected work defines what makes two agent reviewers independent,
+  though one now measures inter-agent correlation and finds that
+  letting its agents debate raises that correlation and costs the
+  ensemble the margin independent voting gave it. The survey
+  contributes consistent terminology, a four-dimensional taxonomy over
+  single-pass abstract-level coding, and a curated reading list; it
+  was compiled with LLM-agent assistance under human direction, with a
+  minimal public record and its own failure modes disclosed —
+  including two screening passes that returned keyword heuristics
+  rather than judgments and had to be discarded.
 ]

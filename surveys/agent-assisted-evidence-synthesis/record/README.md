@@ -127,7 +127,7 @@ provenance for future funnel changes.
 
 | Date | Prior cutoff | New cutoff | Qids succeeded / failed | Raw results | Unique new | Prefilter rejects | Screened | Parked | Aliases | Included | Human gate |
 |---|---|---|---|---:|---:|---:|---:|---:|---:|---:|---|
-| 2026-08-09 | 2026-08-08 | 2026-08-09 | 17/1 (+24 chases, 3 primary-complete) | 1,708 | 683 | 596 | 585 | 76 standing | 13 resolved, 13 dropped | +130 (776 total) | Bili, 2026-08-09 |
+| 2026-08-09 | 2026-08-08 | 2026-08-09 | 16/1 (+24 chases, 3 primary-complete) | 1,708 | 683 | 596 | 585 | 76 standing | 13 resolved, 13 dropped | +130 (776 total) | Bili, 2026-08-09 |
 
 Column semantics: Raw results counts all staged rows (query, chase,
 and primary-complete files); Unique new is the catalog row delta;

@@ -52,9 +52,10 @@ summarize prior estimates of single-human-reviewer screening sensitivity
 at \~87–92% (range 42–100%). #cite(<gartlehner2025>, form: "prose") cite
 prior reports that human extraction errors reach 50% of data elements.
 A rare RCT-grade automation study found noninferiority, not superiority,
-with inconclusive time savings @arno2022[abstract-only]; it remains the
-only such study in the map after the 2026-08-09 update, which added
-appraisal-stage works but no further randomized evidence. Agent evidence
+with inconclusive time savings @arno2022[abstract-only]; it remains
+the only randomized evaluation among the 31 deep reads after the
+2026-08-09 update. The map's facets do not record study design, so we
+did not check the wider catalog for others. Agent evidence
 should be calibrated against these imperfect baselines, not an idealized
 perfect reviewer.
 
@@ -64,7 +65,9 @@ cannot be placed on one scale. A cross-vendor three-agent vote reached
 mean average precision 0.341 against constituents at 0.271, 0.266, and
 0.182, with WSS\@95% of 0.680 @akinseloyin2026; a five-model
 same-family BERT ensemble reached F1 89.16% against a best standalone
-88.53% @knafou2023. Relative gain, absolute F1 points, and
+88.53% on document-type triage at roughly 70/30 balance, against
+labels from a single crowdsourced annotation team @knafou2023 — a
+less imbalanced task than the screening evidence above. Relative gain, absolute F1 points, and
 ranking-based precision are different measurement families, and the
 metric-fragmentation problem this section documents within studies
 recurs between them.
@@ -73,8 +76,9 @@ The second of those studies also repeats a pattern first visible in
 appraisal: requiring unanimity plus a probability threshold lifts
 screening performance to about 98.5% F1 at roughly 99% recall while
 deciding only about half the corpus @knafou2023, just as
-consistency-gated appraisal reached human-level accuracy only on the
-items it did not defer @woelfle2024. Accuracy bought with deferred
+consistency-gated appraisal reached accuracy whose confidence
+interval merely overlapped human performance, and only on the items it
+did not defer @woelfle2024. Accuracy bought with deferred
 coverage now appears at two stages and in two technology generations,
 which makes it a shape worth naming — though the two designs share no
 corpus, metric, or model family, so this is a recurring pattern rather

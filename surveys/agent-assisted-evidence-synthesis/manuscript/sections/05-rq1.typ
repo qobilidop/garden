@@ -37,8 +37,10 @@ exact differences describe the retained coding rather than population
 prevalence.
 
 The 2026-08-09 update grew the map by about a fifth without changing
-its shape: every stage grew, the ordering is unchanged, and screening's
-share moved from 33.4% to 33.0%. We do not read the per-cell growth
+its shape: every stage grew, the pipeline-stage ordering is unchanged,
+and screening's share moved from 33.4% to 33.0%. The only rank change
+is that `meta`, which is not a pipeline stage, broke a tie with
+`extract`. We do not read the per-cell growth
 rates as signal. The update's searches were directed — new genre
 vocabulary, citation chases seeded from twelve designated works, and a
 re-screen of parked rows — so a cell's growth measures where we looked,
@@ -54,7 +56,8 @@ end-to-end conclusion accuracy against a 45.3% best baseline on 100
 reviews. The system uses task decomposition, structured intermediate
 artifacts, and human review, with no debate, voting, or agent redundancy.
 Its tested ablations attribute −14.9 percentage points to removing
-two-stage extraction and −3.3 points to removing retrieval augmentation;
+two-stage extraction, −7.6 to removing tournament reranking, and −3.3
+to removing retrieval augmentation (its baselines were author-run);
 human review and redundancy were not ablated, so the study does not
 establish either as the causal source of reliability. Its screening F1
 of about 0.44–0.51 also qualifies the meaning of "end-to-end." In Song

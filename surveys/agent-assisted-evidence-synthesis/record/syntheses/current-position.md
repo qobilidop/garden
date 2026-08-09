@@ -105,7 +105,7 @@ retained coding, not population prevalence.
 - A saturation-iterated snowball or validated dual-pass facet coding
   could move the map's distributions (finding 1 rests on single-pass
   truncated-abstract coding; notes disagree with abstract-level facets
-  for 8 of 25 deep reads).
+  for 9 of 31 deep reads).
 - Full text of safarpour2026 (open-vs-proprietary screening contrast)
   and brincoveanu2025 (threshold-gated human–AI split) — both currently
   abstract-only — could strengthen or complicate findings 2 and 4.

@@ -6,9 +6,9 @@
     align: (left, left, left),
     table.header([RQ], [Finding], [Evidence]),
     [1], [Single-pass primary-focus coding assigns 256 of 776 works to
-      screening; appraisal (25) and reporting (22) are smallest], [map],
+      screening; appraisal (33) and reporting (23) are smallest], [map],
     [1], [The retained map is medicine-heavy (463 rows) relative to SE
-      (17); this is not an adoption-trend measure], [map;
+      (23); this is not an adoption-trend measure], [map;
       @napoleao2021],
     [1], [One end-to-end preprint uses decomposition, structured
       artifacts, human review, and no redundancy; only extraction and
@@ -33,6 +33,10 @@
     [4], [Human–LLM deferral outperformed comparison arms on two easier
       retrospective appraisal instruments, not as a general law],
       [@woelfle2024],
+    [5], [The field's genre nouns and stage granularity are contested;
+      its stage names are not, and an earlier claim of a
+      medicine-versus-SE stage-vocabulary split did not survive
+      testing], [deep reads; canon],
     [4], [None of 31 selected deep reads defines agent-reviewer
       independence; the campaign did not search or code the question
       exhaustively], [deep-read subset; @hamel2021],

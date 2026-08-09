@@ -39,6 +39,14 @@ limitations disclosures; git keeps the log itself.
   boundary is accepted as a coverage limitation. A never-reconciled
   query takes the survey window start (2020-01-01) as its first
   from-date.
+- **2026-08-09 — screening-pass quality failure.** Two exclusion-first
+  passes on the smaller tier returned keyword heuristics rather than
+  judgments (one an explicit classifier program, one 97 decisions
+  sharing 7 template justifications). Both were discarded and re-run
+  with an explicit no-heuristic instruction. The detector that caught
+  them — distinct justifications per decision — is now part of how
+  screening output is accepted, and the episode is disclosed in the
+  manuscript rather than only fixed.
 - **2026-08-09 — title-prefilter recall gap disclosed.** Designating
   akinseloyin2026 critical and chasing it surfaced a work whose
   abstract is on-topic but whose title carries no genre term, so the
@@ -63,13 +71,15 @@ limitations disclosures; git keeps the log itself.
   the method-canon citations (their notes live as library pages, not
   record notes) and full section-by-section coverage are not yet
   registered.
-- **Reconcile manuscript compressions flagged by the syntheses.**
-  The syntheses carry five places where the manuscript compresses
-  what the notes support (hamel2021's graded risk-ranking, the
-  direction of fagerberg2025's adjudication relabels, huang2026's
-  middle ablation, the PRISMA-AI status discrepancy, and the
-  unstaged oami2025-vs-madeyski2025 metric dispute); fold them into
-  the manuscript on its next revision.
+- **Reconcile the two remaining manuscript compressions.** The
+  2026-08-09 revision folded in three of the five the syntheses
+  flagged: hamel2021's graded risk-ranking, the direction of
+  fagerberg2025's adjudication relabels with its specificity lower
+  bound, and huang2026's middle ablation. Two remain summarized only
+  in the limitations rather than in the sections that make the
+  claims — the PRISMA-AI status discrepancy between holst2025 and
+  fernandes2026, and the unstaged oami2025-vs-madeyski2025 metric
+  dispute.
 - **Grade evidence certainty.** `evidence.md` supports the optional
   GRADE-inspired **Certainty** field; grade the 27 records on the
   next evidence touch.

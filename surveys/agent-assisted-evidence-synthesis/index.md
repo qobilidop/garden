@@ -18,7 +18,7 @@ four-dimensional taxonomy, with selected anchors curated below.
 
 ## Reading list
 
-The works that anchor the field, curated from the 776-work map and
+The works that anchor this map, curated from its 776 included works and
 organized by the survey's taxonomy. Entries link the original paper
 (where a stable public link exists) and our notes on it (library pages where ingested, our
 evidence notes in the record otherwise).

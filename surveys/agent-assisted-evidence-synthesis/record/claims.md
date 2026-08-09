@@ -46,7 +46,7 @@ source's claim cannot be mistaken for this survey's synthesis.
 ### C02 — Reliability evidence is abundant but mismeasured
 
 - **Status:** supported
-- **Statement:** The map labels 249 works human-agreement and 152
+- **Statement:** The map labels 303 works human-agreement and 158
   benchmark, yet the selected deep reads show that common measurement
   practice under heavy class imbalance obscures what those comparisons
   mean: accuracy-style metrics flip model rankings, aggregation

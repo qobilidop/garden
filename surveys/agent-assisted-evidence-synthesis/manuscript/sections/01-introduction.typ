@@ -26,16 +26,17 @@ or pooled effect estimates. It asks four questions:
 
 The paper contributes:
 
-+ a consistent terminology and a four-dimensional taxonomy for the
-  field (@sec-taxonomy);
-+ a faceted map of 776 included works (2020–2026), after resolving
-  known version aliases and retractions in the campaign catalog
-  (@sec-rq1);
++ a terminology and four-dimensional taxonomy fixed for this survey,
+  with a tested account of which of the field's own terms are
+  contested and which are not (@sec-taxonomy);
++ a faceted map of 776 included works (2020–2026) under single-pass,
+  unvalidated, abstract-level coding, after resolving known version
+  aliases and retractions across both waves (@sec-rq1);
 + a scoped synthesis of what the selected evidence shows about reliability
   (@sec-rq2), norms (@sec-rq3), and multi-model design (@sec-rq4);
   and
-+ a curated, annotated reading list of the works that anchor the
-  field, organized by the taxonomy and maintained on the survey's
++ a curated, annotated reading list of the works that anchor this
+  map, organized by the taxonomy and maintained on the survey's
   landing page.
 
 @sec-background positions the survey against prior reviews.

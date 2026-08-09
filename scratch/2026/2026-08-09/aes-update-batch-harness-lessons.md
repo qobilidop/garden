@@ -35,6 +35,24 @@ Raw material for the post-campaign /evolve; not yet rules.
   this time (opposite direction from v1's over-exclusion) — the
   systematic error direction depends on the corpus mix (snowball
   waves pull in domain reviews), not just the tier.
+- **The batch pipeline is unscripted in the shared tooling and was
+  rebuilt in gitignored scratch.** `dedup.py`, `enrich.py`, the
+  snowball vocabulary filter, and the primary-complete handler were
+  written per-batch under `surveys/*/.scratch/`, which `.gitignore`
+  excludes — so the mechanics vanish while the policy stays. The
+  resumability reviewer rated this the survey's most serious
+  resumability defect. Policy is now written into the survey's
+  protocol (defective-bibliography re-chase, enrichment order,
+  pre-window date rule, the Crossref citing-position pseudo-DOI
+  hazard), but the *tools* should be generalized into
+  `skills/run-survey/scripts/` — a `dedup`/`enrich` pair taking a
+  record path, mirroring how `update.py fetch` already works. Doing
+  it would remove the largest rebuild cost from every future update.
+- **A gate artifact policy question the reviewer surfaced**: the
+  human gate's disagreement set and agreement sample live in scratch
+  and are discarded, so the ledger keeps an attestation whose
+  evidence no auditor can inspect. Declared a deliberate bound for
+  now; worth deciding whether the sample should be retained.
 - **Session-scoped protocol conventions landed mid-campaign**:
   method-change log lives in status.md (campaign-scoped, dissolves
   at close), protocol.md stays final-state — already codified in the

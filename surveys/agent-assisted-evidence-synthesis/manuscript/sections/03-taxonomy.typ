@@ -37,14 +37,28 @@ development, registration, discrepancy resolution, or publication
 update are stages of their own — not disputes about what the shared
 stages are named.
 
-One genuine term split survives that test, and it sits at appraisal.
+An earlier version of this survey asserted that stage vocabulary
+splits along community lines. Tested term by term against the selected
+notes, that does not survive: both communities use _screening_ and
+_selection_ (the distinction is stage-outcome versus operation, not
+medicine versus software engineering), and no extraction-versus-
+collection dispute appears. The one community difference we can put a
+count behind is metric vocabulary, not stage vocabulary — WSS\@95%
+appears in eleven medicine studies against one in software
+engineering @napoleao2021.
+
+One genuine term split does survive that test, and it sits at
+appraisal.
 The software-engineering canon says quality assessment
 @kitchenham2007 @vandinter2021; the Cochrane line says risk of bias
 @arno2022 @huang2026; and a third sense scores appraisal instruments
 on reviews and trials rather than judging bias at all — PRISMA,
 AMSTAR, and PRECIS-2 in @woelfle2024. Our single `appraise` facet
 spans all three, so a row coded `appraise` should not be read as a
-risk-of-bias judgment specifically.
+risk-of-bias judgment specifically. These vocabulary findings rest on
+the twenty-five notes read when the terminology synthesis was drafted;
+the appraisal-stage notes added afterwards have not been re-tested
+against them.
 
 *Assistance configurations.* We use _LLM assistance_ for a single
 model performing a bounded task under prompting, and _agent_ loosely

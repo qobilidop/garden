@@ -281,8 +281,8 @@ point of this section rather than an argument for adopting the label.
   degen2024 (OSF), fagerberg2025 and huang2026 (medRxiv).
 - The three-communities comparison is a deep-read-level observation.
   By the notes' `setting` facet the 25 reads are roughly 12 medicine,
-  8 SE, 5 general — but the map itself is 394 medicine rows against
-  17 SE rows among the 646 coded works, so SE vocabulary claims rest
+  8 SE, 5 general — but the map itself is 463 medicine rows against
+  23 SE rows among the 776 coded works, so SE vocabulary claims rest
   on a small deep-read stratum, not on the map.
 - This synthesis was drafted against the 25 notes present in
   `sources/` at drafting time. At least one further note (hirt2021)
