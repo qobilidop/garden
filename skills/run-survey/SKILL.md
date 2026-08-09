@@ -163,10 +163,19 @@ Shape note, as intent rather than drift.
   a review finding. Git keeps superseded interpretations. (This is
   the survey-local instance of the library → wiki pattern.)
 - `record/claims.md` — the synthesis claims as a statused ledger:
-  each claim carries status, explicit scope, anchored evidence, and
-  its closest established result; no item is novel merely because it
-  is listed. The evidence surfaces and manuscript cite claims by
-  their stable ids.
+  each claim carries status (`hypothesis` → `supported` /
+  `known-result` / `rejected`), explicit scope, and its closest
+  established result; ids are `Cxx`, epistemically neutral so they
+  survive status transitions.
+- `record/evidence.tsv` — the binding layer: one row per evidence
+  item (`Exxx`) stating one checkable literature fact, linked
+  downward to citekeys and source-note anchors, upward to the `Cxx`
+  claims it supports, across to the manuscript sections that cite on
+  its strength, with scope and caveat riding the row. The validator
+  enforces the bindings — every active claim has evidence rows,
+  every technical manuscript citation is registered at its section
+  label. A survey whose manuscript asserts nothing beyond
+  catalog-derived counts may omit it, like `check.py`.
 - Per-paper definition of done: a work is integrated only when its
   disposition is recorded, any required source note is anchored in
   the primary work, affected syntheses and claims are updated, and
@@ -278,8 +287,9 @@ fix introduces before persisting it.
   and maintenance state, with deferred work for the next update as a
   section — the survey's todo lives here, not in a separate file),
   `catalog.tsv` and `log.tsv` per the §1 grammar, `sources/`,
-  `syntheses/`, `claims.md`, and, when the manuscript publishes quantities
-  derived from the catalog, a campaign-local
+  `syntheses/`, `claims.md` with `evidence.tsv` binding claims and
+  manuscript sections to source anchors, and, when the manuscript
+  publishes quantities derived from the catalog, a campaign-local
   `record/check.py`; the source fetchers, snowball tool, and
   registry-driven update tool ship with this skill (`scripts/`). The validator checks schemas, keys, facet
   tokens, source-note and bibliography/citation closure, and prints
@@ -339,10 +349,10 @@ implementation is dataflow-selection-enumeration (manuscript §3–§6,
   workspace — model, semantics, derivations, complexity notes,
   counterexamples, reduction audit, open questions — beside the
   thematic syntheses and the adopted terminology
-  (`syntheses/terminology.md`); `claims.md` is the ledger; an
-  evidence matrix binds manuscript claims at stable section labels
-  to source-note anchors. Changes propagate understanding layer →
-  ledger → manuscript, never manuscript-first.
+  (`syntheses/terminology.md`); the standard `claims.md` and
+  `evidence.tsv` carry the assertions and their bindings. Changes
+  propagate understanding layer → ledger → manuscript, never
+  manuscript-first.
 - **Manuscript additions.** The framework section uses the shared
   statement apparatus (`surveys/style.typ` definitions/theorems,
   target-aware for HTML); the terminology maps each literature's

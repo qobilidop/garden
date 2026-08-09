@@ -24,10 +24,13 @@ after every small change.
   `record/protocol.md` per the protocol-before-search discipline, so
   the contract is a document rather than sections of the entry
   point.
-- **Start the claims ledger.** `record/claims.md` (statused synthesis
-  claims with scope, anchored evidence, and closest established
-  result) is now standard; seed it from the manuscript's four
-  organizing findings when building the syntheses layer.
+- **Start the claims ledger and evidence binding.** `record/claims.md`
+  (statused synthesis claims with scope and closest established
+  result) and `record/evidence.tsv` (evidence items binding claims
+  and manuscript sections to source-note anchors) are now standard;
+  seed the claims from the manuscript's four organizing findings
+  when building the syntheses layer, and register the manuscript's
+  technical citations as evidence rows.
 - **Fill per-row decided keys.** Historical log rows carry counts
   only; future search and snowball rows record their
   `included_keys`/`excluded_keys` per the unified write contract.

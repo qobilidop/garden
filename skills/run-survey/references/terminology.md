@@ -23,7 +23,8 @@ Canon anchors: Kitchenham 2007 (SLR guidelines), Petersen 2008
 | flow table | PRISMA 2020 flow diagram | table form; arithmetic must reconcile |
 | `sources/` evidence notes | data extraction (forms) | pinpoint anchors to sections/tables of the primary work |
 | `syntheses/` | (data) synthesis | the cross-source understanding layer |
-| `claims.md` | synthesis claims ledger | SEGRESS-spirit claim–evidence traceability, with the evidence matrix in theory mode |
+| `claims.md` | synthesis claims ledger | statused assertions; cf. assurance-case claims (CAE/GSN) |
+| `evidence.tsv` | evidence table / GRADE summary-of-findings; CAE claims–evidence binding; traceability matrix | one row per evidence item, binding claims and manuscript anchors to source anchors, caveat riding the row |
 | protocol (`protocol.md` / README contract) | review protocol | Kitchenham: written and gated before the search |
 
 Known conscious deviations from canon practice, always disclosed in
