@@ -31,7 +31,7 @@ def request_json(path: str, parameters: dict[str, str] | None = None) -> dict:
     request = urllib.request.Request(
         url,
         headers={
-            "User-Agent": "dataflow-selection-enumeration/0 (mailto:qobilidop@gmail.com)"
+            "User-Agent": "sys0-surveys/0 (mailto:qobilidop@gmail.com)"
         },
     )
     with urllib.request.urlopen(request, timeout=60) as response:

@@ -16,7 +16,8 @@ import time
 ROOT = Path(__file__).resolve().parents[2]
 SURVEY = ROOT / "record"
 UPDATES = SURVEY / "updates"
-SCRIPT_DIR = Path(__file__).resolve().parent
+# Shared source fetchers live with the run-survey skill.
+SCRIPT_DIR = Path(__file__).resolve().parents[4] / "skills" / "run-survey" / "scripts"
 ARXIV_INTERVAL_SECONDS = 3.0
 
 

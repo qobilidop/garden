@@ -21,7 +21,7 @@ FIELDS = (
     "type",
     "abstract",
 )
-USER_AGENT = "dataflow-selection-enumeration/0 (mailto:qobilidop@gmail.com)"
+USER_AGENT = "sys0-surveys/0 (mailto:qobilidop@gmail.com)"
 
 
 def text(value: object) -> str:

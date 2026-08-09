@@ -13,7 +13,7 @@ def fetch(doi: str) -> dict:
     request = urllib.request.Request(
         f"https://api.crossref.org/works/{encoded}",
         headers={
-            "User-Agent": "dataflow-selection-enumeration/0 (mailto:qobilidop@gmail.com)"
+            "User-Agent": "sys0-surveys/0 (mailto:qobilidop@gmail.com)"
         },
     )
     with urllib.request.urlopen(request, timeout=30) as response:

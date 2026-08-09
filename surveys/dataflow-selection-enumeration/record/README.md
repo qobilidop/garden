@@ -54,7 +54,8 @@ does not attempt.
 - `updates/` — recurring searches (`queries.tsv`), their reconciled
   state (`state.tsv`), and periodic tasks (`tasks.tsv`).
 - `check.py` — the record validator.
-- `scripts/` — search fetchers and the freshness/update tool.
+- `scripts/` — the registry-driven update tool; the shared source
+  fetchers and snowball tool live in `skills/run-survey/scripts/`.
 
 ## Evidence flow
 

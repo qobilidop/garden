@@ -14,7 +14,7 @@ from urllib.error import HTTPError
 
 
 API_ROOT = "https://api.semanticscholar.org/graph/v1"
-USER_AGENT = "dataflow-selection-enumeration/0 (mailto:qobilidop@gmail.com)"
+USER_AGENT = "sys0-surveys/0 (mailto:qobilidop@gmail.com)"
 BASE_FIELDS = ("rank", "source_id", "year", "doi", "title", "venue", "type")
 PAPER_FIELDS = "paperId,title,year,externalIds,venue,publicationTypes"
 

@@ -11,7 +11,7 @@ import urllib.parse
 import urllib.request
 
 
-USER_AGENT = "dataflow-selection-enumeration/0 (mailto:qobilidop@gmail.com)"
+USER_AGENT = "sys0-surveys/0 (mailto:qobilidop@gmail.com)"
 FIELDS = ("rank", "source_id", "year", "doi", "title", "venue", "type")
 
 

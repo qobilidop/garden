@@ -64,9 +64,12 @@ Shape note, as intent rather than drift.
   retractions, migrations), and `exploratory` (early non-replayable
   discovery, retained as history but counting toward nothing).
   Queries run against OpenAlex / Crossref / Semantic Scholar /
-  arXiv; per-source request templates, caps, and retry conventions
-  are documented in the record README — the logged search rows are
-  the query set, rerun verbatim on update.
+  arXiv via the shared fetchers in this skill's `scripts/` (query,
+  date bounds, and limits are arguments; the snowball procedure is
+  `snowball_openalex.py`); caps and retry conventions are documented
+  in the record README — the logged search rows are the query set,
+  rerun verbatim on update. Search and snowball rows record their
+  decided keys per row, not only counts.
 - One key grammar, documented in the README: `doi:`/`arxiv:`
   normalized (arXiv-DOIs collapse, versions stripped, lowercase),
   `t:<title-slug>` fallback; a published version of an included
@@ -108,7 +111,10 @@ Shape note, as intent rather than drift.
 - Screening: two agent passes on different model tiers and prompt
   framings, disagreements adjudicated by the strongest available
   model, a human gating the result; single-pass waves only with a
-  verification pass. Exclusion codes E1–E7 (undecidable candidates
+  verification pass. Passes emit
+  `{"decision", "reason", "confidence"}`; the adjudicated one-line
+  reason is kept in the catalog row when the survey declares a
+  rationale column, not discarded. Exclusion codes E1–E7 (undecidable candidates
   take the `parked` status instead of a code, re-screened each
   update); E7 means formally retracted or withdrawn,
   and the load-bearing code gets boundary examples in the README. No
@@ -246,8 +252,8 @@ fix introduces before persisting it.
   pointed to rather than duplicated), `catalog.tsv` and `log.tsv`
   per the §1 grammar, `sources/`, and, when the manuscript publishes
   quantities derived from the catalog, a campaign-local `check.py`;
-  survey-local tooling beyond it (fetchers, freshness) lives in
-  `record/scripts/`. The validator checks schemas, keys, facet
+  the registry-driven update tool lives in `record/scripts/`; the
+  source fetchers and snowball tool ship with this skill. The validator checks schemas, keys, facet
   tokens, source-note and bibliography/citation closure, and prints
   the derived counts for cross-surface reconciliation; a qualitative
   survey may omit it. Everything else — protocols, intermediate syntheses, work
