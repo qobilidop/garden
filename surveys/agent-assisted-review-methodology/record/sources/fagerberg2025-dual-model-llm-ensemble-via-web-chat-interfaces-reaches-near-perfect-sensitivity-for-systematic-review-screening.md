@@ -14,9 +14,9 @@ facets:
   evidence: "human-agree"
   setting: "med"
 retrieved: 2026-08-08
-notes-by: Claude Sonnet-class (survey deep-read pipeline)
+notes-by: "Claude Sonnet-class (survey deep-read pipeline); Codex GPT-5.6 Sol (adversarial review)"
 notes-date: 2026-08-08
-synthesis: "GUI-based dual-LLM ensemble for abstract screening"
+synthesis: "A cross-vendor OR ensemble showed complementary screening decisions, but the preprint did not isolate model-family diversity and its headline sensitivity uses author-adjudicated labels"
 ---
 
 # Dual-Model LLM Ensemble via Web Chat Interfaces Reaches Near-Perfect Sensitivity for Systematic-Review Screening: A Multi-Domain Validation with Equivalence to API Access
@@ -28,18 +28,19 @@ synthesis: "GUI-based dual-LLM ensemble for abstract screening"
 - Reference standard: original Cochrane full-text inclusion/exclusion decisions (348 include / 388 exclude), then a pre-specified targeted-adjudication protocol reclassified 18 records (all Include→Exclude, judged original library misclassifications) yielding final adjudicated gold standard of 330 include / 406 exclude (N=736).
 - Ensemble (adjudicated standard): GUI ensemble = 99.7% sensitivity (95% CI 98.3–100.0%; 329/330 TP, 1 FN) and 49.3% specificity (95% CI 44.3–54.2%). API ensemble = 99.1% sensitivity (95% CI 97.4–99.8%; 327/330 TP, 3 FN), same 49.3% specificity. McNemar p=0.625 (no significant GUI-vs-API difference); TOST equivalence within ±2 pp met (p-lower=1.1×10⁻⁵, p-upper=0.011).
 - Single-run ensemble (one run per model, sensitivity analysis): GUI R1s = 99.1% sensitivity (327/330), 56.2% specificity (95% CI 51.2–61.0%); API R1s = 98.5% sensitivity (325/330), 53.9% specificity (95% CI 49.0–58.9%).
-- Individual model performance (adjusted standard, range across the 4 GUI+API runs each): Gemini 2.5 Pro sensitivity 94.5–98.2%, specificity 59.1–63.1%. GPT-5 Thinking sensitivity 86.4–88.2%, specificity 65.0–67.0%. Complementary profile: Gemini higher sensitivity, GPT-5 higher specificity — motivating the cross-family ensemble.
+- Individual model performance (adjusted standard, range across the 4 GUI+API runs each): Gemini 2.5 Pro sensitivity 94.5–98.2%, specificity 59.1–63.1%. GPT-5 Thinking sensitivity 86.4–88.2%, specificity 65.0–67.0%. The models had complementary observed profiles, but the design does not isolate model identity, vendor/family, run count, and the inclusive OR rule as causes.
 - Duplicate-run reliability (same model/modality, run 1 vs run 2): Cohen's κ = 0.78–0.93 ("substantial" to "almost perfect").
-- Domain variability: GPT-5 Thinking single-run sensitivity dropped to 43% (3/7 TP) on SR7 (vaccines in haematological-malignancy patients) — traced to GPT-5 wrongly assuming absence of the target subgroup; Gemini instead flagged those records as ambiguous/full-text.
+- Domain variability: in a post-hoc examination, GPT-5 Thinking single-run sensitivity was 43% (3/7 TP) on SR7 (vaccines in haematological-malignancy patients); the authors attributed the misses to assumptions that the target subgroup was absent, while Gemini flagged the same records as ambiguous/full-text. The subgroup has only seven positives and was not a controlled family-diversity comparison.
 - Human baseline cited (from prior literature, not this study): single-reviewer sensitivity ~87–92% (range 42–100% across individual reviewers).
 - No cost or processing-time/throughput data reported — explicitly named as a limitation and left to future prospective studies. No dollar or latency figures given anywhere in the text.
 - Full Table S1 (adjudicated standard) per-run TP/FN/TN/FP/sensitivity/specificity for all 8 individual runs + 4 ensemble variants; Table S2 repeats vs. the original (pre-adjudication) Cochrane standard, where ensemble sensitivity is lower (94.0–94.5%) since it counts the 18 reclassified records as misses.
 
 ## Bearing on RQs
-Directly targets RQ4 (multi-model ensemble design): demonstrates a simple OR-rule, cross-vendor (OpenAI/Google) two-model ensemble with complementary sensitivity/specificity profiles, and shows model-family diversity catches model-specific blind spots (the SR7 vaccine-subgroup failure case) — a concrete mechanism argument for diversity, not just an ensemble-vs-single-model comparison. Also bears on RQ2 (metrics): reports sensitivity, specificity, Cohen's κ inter-run reliability, McNemar and TOST equivalence testing as a fairly complete metrics stack, though omits cost/time/workload metrics by the authors' own admission.
+Directly targets RQ4 (multi-model ensemble design): evaluates a simple OR-rule, cross-vendor (OpenAI/Google) two-model ensemble and documents complementary decisions in one small subgroup. It supports the observed performance of this configuration, not a causal claim that model-family diversity produced the gain: no same-family or matched single-model ensemble isolates that factor. It also bears on RQ2 (metrics): reports sensitivity, specificity, Cohen's κ inter-run reliability, McNemar and TOST equivalence testing as a fairly complete metrics stack, though omits cost/time/workload metrics by the authors' own admission.
 
 ## Evidence limits
 - Preprint, not peer-reviewed (medRxiv, posted 2025-11-06; explicit "not certified by peer review" notice).
+- No same-family ensemble arm or matched ablation separates cross-family diversity from model identity, vendor, duplicate runs, or the OR rule; the highlighted vaccine-subgroup contrast was post hoc and contained seven positives.
 - Single institutional setting (Sweden's National Board of Health and Welfare); same author group's second paper in a series (cites their own prior medRxiv preprint, ref [10], for prompt/methodology details) — limited independent replication.
 - Domain restricted to medicine (Cochrane reviews only); generalization to other SR domains untested.
 - Reference standard is full-text inclusion, not abstract-level truth, so specificity is explicitly flagged by the authors as a conservative lower bound (many LLM "false positives" would have been correctly excluded at abstract stage too).

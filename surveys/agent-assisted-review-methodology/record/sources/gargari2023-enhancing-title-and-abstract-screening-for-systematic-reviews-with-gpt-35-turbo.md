@@ -14,7 +14,7 @@ facets:
   evidence: "human-agree"
   setting: "med"
 retrieved: 2026-08-08
-notes-by: Claude Sonnet-class (survey deep-read pipeline)
+notes-by: "Claude Sonnet-class (survey deep-read pipeline); Codex GPT-5.6 Sol (adversarial review)"
 notes-date: 2026-08-08
 synthesis: "GPT-3.5 Turbo prompt-engineering case study for title/abstract screening"
 ---
@@ -33,13 +33,13 @@ synthesis: "GPT-3.5 Turbo prompt-engineering case study for title/abstract scree
   - Prompt 3 ("Experienced Systematic Researcher" role): increased accuracy, decreased sensitivity vs. prior prompts.
   - Prompt 4 (adds "inclusivity sentence" instructing inclusion of uncertain studies): increased sensitivity, reduced specificity.
   - Prompt 5 (original criteria + inclusivity sentence): highest sensitivity of all prompts tested — described as similar to the junior researcher and surpassing the senior researcher (no exact numbers given for either).
-  - Prompt 6 (descriptive sentence replacing segmented criteria): significant sensitivity reduction — authors conclude GPT responds better to segmented/classic criteria than free-text descriptions.
+  - Prompt 6 (descriptive sentence replacing segmented criteria): the authors describe a sensitivity reduction and infer that GPT responds better to segmented/classic criteria than free-text descriptions; no significance test is reported.
   - Prompt 7 (rephrased inclusivity language, more detail): substantially increased sensitivity vs. Prompt 6.
   - Prompt 8 (4-question screening tool, include if all answered "Yes"/"Unsure"): performed poorly, "potentially due to the technical structure of GPT" — no root-cause diagnosis given.
 - Human comparison: stated qualitatively only for Prompt 5 (matches junior, beats senior); no full human-vs-best-prompt table in the main text. Authors explicitly note even human screeners did not reach "exemplary performance," attributed to subjective/undefined eligibility criteria (e.g., ambiguity in what counts as "sleep troubles").
 
 ## Bearing on RQs
-Bears on RQ2 (reliability/agreement metrics) as a prompt-sensitivity case study: demonstrates that accuracy/sensitivity/specificity for the same base model (GPT-3.5 Turbo) on the same task swing substantially (62%→highest-observed sensitivity) purely from prompt wording — role framing, segmented vs. descriptive criteria, and an explicit "inclusivity sentence" for uncertain cases. Useful as a qualitative counterpoint to model-comparison studies (e.g. oami2025): it isolates prompt design rather than model capability as the reliability lever, and its "inclusivity sentence" finding (raises sensitivity, trades specificity) is a reusable practitioner-facing pattern. Only lightly touches RQ1 (workflow is single-pass zero-shot classification, no broader agent architecture) and does not touch RQ3/RQ4 (no reporting-standard discussion, no ensembling/multi-agent design).
+Bears on RQ2 (reliability/agreement metrics) as a prompt-sensitivity case study: eight sequential variants for the same base model and review produced materially different reported sensitivity/specificity directions. The case suggests that role framing, segmented versus descriptive criteria, and an "inclusivity sentence" may affect screening behavior, but it does not isolate prompt wording from iteration/order effects or quantify most differences. It is a qualitative counterpoint to model-comparison studies (for example, oami2025), not a causal estimate or validated practitioner pattern. It only lightly touches RQ1 (single-pass zero-shot classification, no broader agent architecture) and does not address RQ3/RQ4 (no reporting-standard discussion or ensembling/multi-agent design).
 
 ## Evidence limits
 - N=1 systematic review, single domain (insomnia/light therapy), single search (330 citations) — explicitly flagged by the authors as a non-generalizable single-case study.

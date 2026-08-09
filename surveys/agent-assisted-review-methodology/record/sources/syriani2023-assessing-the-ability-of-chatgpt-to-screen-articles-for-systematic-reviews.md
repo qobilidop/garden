@@ -1,9 +1,11 @@
 ---
 citekey: syriani2023-assessing-the-ability-of-chatgpt-to-screen-articles-for-systematic-reviews
 work:
-  title: "Assessing the Ability of ChatGPT to Screen Articles for Systematic Reviews"
+  title: "Screening articles for systematic reviews with ChatGPT"
   author: "Eugene Syriani, Istvan David, Gauransh Kumar"
-  date: 2023
+  venue: "Journal of Computer Languages"
+  date: 2024
+  doi: 10.1016/j.cola.2024.101287
   arxiv: 2307.06464
 read: full-text
 source: "shadow/store/library/papers/2023/syriani2023-assessing-the-ability-of-chatgpt-to-screen-articles-for-systematic-reviews/"
@@ -12,12 +14,12 @@ facets:
   contribution: "evaluation"
   setting: "se"
 retrieved: 2026-08-08
-notes-by: Claude Sonnet-class (survey deep-read pipeline)
+notes-by: "Claude Sonnet-class (survey deep-read pipeline); Codex GPT-5.6 Sol (adversarial review)"
 notes-date: 2026-08-08
 synthesis: "early SE-setting ChatGPT screening evaluation"
 ---
 
-# Assessing the Ability of ChatGPT to Screen Articles for Systematic Reviews
+# Screening articles for systematic reviews with ChatGPT
 
 ## Evidence
 - Datasets: 5 ReLiS-hosted SE systematic-review/mapping-study corpora (DSMLCompo N=2683, MobileMDE N=292, MPM4CPS N=205, RL4SE N=1089, UpdateCollabMDE N=875; total N=5222, 467 included/4755 excluded); ground truth = expert reviewer decisions with recorded conflicts (avg. 19% conflict rate across datasets).
@@ -33,4 +35,11 @@ synthesis: "early SE-setting ChatGPT screening evaluation"
 RQ2 (early SE screening evidence, pre-agentic single-LLM baseline): concrete SE-domain accuracy/consistency/cost numbers against traditional ML baselines, useful as a low anchor predating agent-based or ensemble approaches. RQ1 (SE-setting anchor): one of the few SR-screening evaluations conducted entirely on software-engineering (not medical) corpora, via the ReLiS platform.
 
 ## Evidence limits
-Numbers from transcript only; N=1 run (no consistency stats) for 3 of 5 datasets. Single vendor/model version (GPT-3.5 Turbo, April–June 2023), no ensemble or agentic design — a pre-agent baseline, not itself an agent-review method. SE-only external validity claimed by the authors but restricted to ReLiS-hosted projects.
+Numbers are from the arXiv-version transcript; DOI
+10.1016/j.cola.2024.101287 identifies the 2024 journal publication,
+but this review did not perform a line-by-line version comparison. N=1
+run (no consistency stats) for 3 of 5 datasets. Single vendor/model
+version (GPT-3.5 Turbo, April–June 2023), no ensemble or agentic design
+— a pre-agent baseline, not itself an agent-review method. SE-only
+external validity claimed by the authors but restricted to ReLiS-hosted
+projects.

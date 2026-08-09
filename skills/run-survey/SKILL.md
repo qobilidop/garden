@@ -13,10 +13,12 @@ research commitment that must then be defended). The bar is
 *traceability*, not reproducibility: every claim cites its source,
 every map number traces to the catalog, and caveats travel with a
 number everywhere it appears — a survey about a field's evidence
-cannot launder its own. Campaigns are human-triggered, pin this
-skill's commit SHA in `record/README.md`, and redesign the method
-only through the post-campaign /evolve. Method v2, reshaped from the
-agent-assisted-review-methodology campaign and its review round.
+cannot launder its own. Campaigns are human-triggered. Use this
+workflow as guidance rather than pinning a skill or repository commit,
+and describe material method changes in the record README in plain
+language. Use the post-campaign /evolve when execution exposes a
+durable harness lesson. This method was reshaped from the
+agent-assisted-review-methodology campaign and its review rounds.
 
 ## 1. Shape
 
@@ -39,6 +41,11 @@ Three surfaces in `surveys/<slug>/`:
   normalized (arXiv-DOIs collapse, versions stripped, lowercase),
   `t:<title-slug>` fallback; a published version of an included
   preprint replaces its key, superseded key to `excluded.tsv` as E6.
+- Before deriving counts, run a catalog-integrity pass: one work has
+  one canonical included row; adjudicate suspected aliases from full
+  registrar metadata and authorship, never title similarity alone;
+  retain superseded identifiers as E6 and move formally retracted or
+  withdrawn works to E7.
 - One included-works table (`included.tsv`; year-at-screening,
   truncated display titles) that classification extends with facet
   columns; `excluded.tsv` (key + code) is permanent screening memory.
@@ -48,10 +55,10 @@ Three surfaces in `surveys/<slug>/`:
 - Screening: two agent passes on different model tiers and prompt
   framings, disagreements adjudicated by the strongest available
   model, a human gating the result; single-pass waves only with a
-  verification pass. Exclusion codes E1–E6 plus `U` (parked,
-  re-screened each update); the load-bearing code gets boundary
-  examples in the README. No query left `FAILED` at close without a
-  recorded reason.
+  verification pass. Exclusion codes E1–E7 plus `U` (parked,
+  re-screened each update); E7 means formally retracted or withdrawn,
+  and the load-bearing code gets boundary examples in the README. No
+  query left `FAILED` at close without a recorded reason.
 
 ## 3. Terminology, taxonomy, classification
 
@@ -67,6 +74,9 @@ Three surfaces in `surveys/<slug>/`:
   limits`). Note facets from full text are authoritative for that
   work but never silently overwrite the abstract-level map —
   disagreements stand, disclosed in the manuscript's limitations.
+- On a material evidence or synthesis revision, preserve every existing
+  `notes-by` writer and append the reviser (human name or agent + model).
+  Mechanical edits do not add authorship.
 
 ## 4. Curate the reading list
 
@@ -143,14 +153,19 @@ fix introduces before persisting it.
   contract: scope, search parameters, snowball spec, selection rules
   with examples, key grammar, facet tokens, curation bar, numbered
   update procedure, rebuild instructions), `searches.tsv`,
-  `included.tsv`, `excluded.tsv`, `sources/`. Everything else —
-  protocols, intermediate syntheses, work sheets — lives on in git
-  history and the shadow mirror.
+  `included.tsv`, `excluded.tsv`, `sources/`, and, when the manuscript
+  publishes quantities derived from the catalog, a campaign-local
+  `check.py`. The validator checks schemas, keys, facet tokens,
+  source-note and bibliography/citation closure, and prints the derived
+  counts for cross-surface reconciliation; a qualitative survey may
+  omit it. Everything else — protocols, intermediate syntheses, work
+  sheets — lives on in git history and the shadow mirror.
 - Updates follow the record README's own procedure; this skill defers
   to it. Its last step syncs counts and dates in the README and the
   landing page.
 - Verify builds, propose commits with the attribution trailer, commit
-  on the user's word; the post-campaign /evolve harvests lessons.
+  on the user's word; use post-campaign /evolve when there are durable
+  lessons worth promoting into the harness.
 
 ## Heavy mode (opt-in)
 
