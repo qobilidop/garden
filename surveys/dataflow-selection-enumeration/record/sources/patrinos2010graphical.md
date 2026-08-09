@@ -62,12 +62,12 @@ discusses exact complete traversal under degeneracy.
 ## Citation-neighborhood audit
 
 The publisher's exact sequential 49-entry bibliography was title-screened in
-`screening/baseline-2026-08-04/primary-patrinos2010graphical-backward.tsv`.
+`screening/baseline-2026-08-04/primary-patrinos2010graphical-backward.tsv` (retired to git history).
 Access restrictions
 prevented visual comparison with the printed reference section, so the source
 of that exact count is stated explicitly. All 45 DOI-linked OpenCitations
 records were title-screened in
-`screening/baseline-2026-08-04/opencitations-patrinos2010graphical-forward.tsv`.
+`screening/baseline-2026-08-04/opencitations-patrinos2010graphical-forward.tsv` (retired to git history).
 The chase retained
 the sufficient-matrix output-sensitive predecessor and later piecewise-QP,
 two-phase pLCP, connected-graph, QCQP, and region-free boundaries.

@@ -19,4 +19,4 @@
 
 These are research questions left open by the manuscript, not hypotheses of
 novelty. Close an item only after reconciling the unified theory, claim
-ledger, evidence matrix where prior work is involved, and manuscript text.
+ledger, evidence ledger where prior work is involved, and manuscript text.

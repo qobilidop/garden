@@ -7,9 +7,9 @@
 - **Manuscript:** complete draft under continuing human review
 - **Authorship:** Bili Dong, independent researcher
 
-The catalog baseline contains 897 entries, including 201 deep reads, and the
+The catalog baseline contains 897 entries, including 202 deep reads, and the
 audited logs contain 35,720 screened record occurrences. The current
-claim-evidence matrix supports the focused synthesis and manuscript. These are
+evidence ledger supports the focused synthesis and manuscript. These are
 snapshot records, not targets and not measures of worldwide completeness.
 
 Source notes created during the initial campaign use several historical
@@ -33,6 +33,9 @@ are in the README's To update procedure.
 
 ## Deferred to the next update
 
+- **Add boundary examples for the load-bearing exclusion code.**
+  `E6-out-of-scope-model` carries most judgment; the protocol should
+  give two or three boundary examples.
 - **Grade evidence certainty.** `evidence.md` now carries an optional
   GRADE-inspired **Certainty** field (`high`/`moderate`/`low`); grade
   the 33 items on the next evidence touch rather than mechanically

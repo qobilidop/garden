@@ -62,11 +62,11 @@ The audited record contains 318 database queries and 245 separately recorded
 backward or forward citation chases. Excluding repeated adjudication passes,
 the log contains 35,720 screened record occurrences; this is neither a
 unique-paper count nor an estimate of a literature population. A claim-level
-evidence matrix links every manuscript citation at its stable section label and
+evidence ledger links every manuscript citation at its stable section label and
 every active synthesis claim to source-note anchors, while stating the scope
 and caveat of each comparison.
 
-== Bounded baseline and living updates
+== Bounded baseline and on-demand updates
 
 The baseline was frozen only after every surfaced record received a catalog
 disposition, every critical source was deep-read and chased in both directions,
@@ -86,7 +86,7 @@ record was last reconciled on 4 August 2026.
 
 The accompanying repository contains the protocol, query registry,
 catalog, audited search log, primary-source notes, thematic
-syntheses, evidence matrix, claim ledger, and manuscript checks. Downloaded
+syntheses, evidence ledger, claim ledger, and manuscript checks. Downloaded
 papers, transient API responses, and search-engine exports are deliberately
 excluded. The current manuscript and repository are linked from
 #link("https://qobilidop.github.io/sys0/surveys/dataflow-selection-enumeration/")[the survey's landing page].

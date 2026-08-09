@@ -13,6 +13,16 @@ csv.field_size_limit(sys.maxsize)
 
 ROOT = Path(__file__).resolve().parents[1]
 SURVEY = ROOT / "record"
+EXCLUSION_CODES = {
+    "E1-def-use-testing",
+    "E2-ml-graph-runtime",
+    "E3-secondary",
+    "E4-application-only",
+    "E5-unobtainable",
+    "E6-out-of-scope-model",
+    "E7-duplicate-version",
+    "E8-retracted",
+}
 CATALOG_HEADER = [
     "citekey",
     "year",
@@ -147,6 +157,12 @@ def main() -> int:
     header, catalog_rows = rows(SURVEY / "catalog.tsv")
     if header != CATALOG_HEADER:
         fail(f"unexpected catalog header: {header}")
+    for number, row in enumerate(catalog_rows, start=2):
+        if row["status"] == "excluded":
+            if row["code"] not in EXCLUSION_CODES:
+                fail(f"undeclared exclusion code on catalog row {number}: {row['code']}")
+        elif row["code"] not in ("", "-"):
+            fail(f"non-excluded catalog row {number} carries a code")
     catalog = {row["citekey"]: row for row in catalog_rows}
     if len(catalog) != len(catalog_rows):
         fail("catalog contains duplicate citekeys")

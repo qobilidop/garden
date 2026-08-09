@@ -1,4 +1,4 @@
-# Living survey protocol
+# Survey protocol
 
 ## Objective and study type
 
@@ -72,7 +72,20 @@ Use these stable exclusion codes:
 - `E4-application-only`: unchanged application of an existing executor;
 - `E5-unobtainable`: insufficient technical content after recorded attempts;
 - `E6-out-of-scope-model`: cannot answer a research question under scope; and
-- `E7-duplicate-version`: superseded version retained for lineage.
+- `E7-duplicate-version`: superseded version retained for lineage; and
+- `E8-retracted`: formally retracted or withdrawn.
+
+Codes are this survey's declared vocabulary; `check.py` enforces it.
+
+## Keys and conventions
+
+Catalog keys are author-year citekeys minted at screening
+(`<surname><year><slug>`); deduplication goes through DOI, stable
+identifier, and normalized title, per the README's update procedure.
+Cluster values are an open vocabulary, one per row, introduced during
+screening. Query caps are the `limit` column of `queries.tsv` (arXiv
+at most 100); retry and request-spacing conventions live in the
+shared update tool.
 
 ## Screening, reading, and extraction
 
@@ -103,7 +116,7 @@ new coverage theme, and otherwise whenever fresher coverage is
 wanted; a complete forward-citation refresh of the critical set
 belongs in any substantial update batch.
 
-Scheduled database runs search an inclusive interval from the last fully
+Update database runs search an inclusive interval from the last fully
 reconciled date through the new batch date. Crossref ranks that bounded set by
 relevance; arXiv returns recent submissions first. The overlapping boundary
 protects against delayed deposits; catalog deduplication absorbs repeats.
@@ -128,7 +141,7 @@ may claim bounded mapping closure only when:
    snapshot's coverage date;
 4. two prospective, independently checked no-add batches find neither a new
    theme nor a plausible close competitor; and
-5. the manuscript, evidence matrix, and syntheses agree on the coverage date.
+5. the manuscript, evidence ledger, and syntheses agree on the coverage date.
 
 A later paper, changed result, or new theme reopens the current map. Closure is
 always relative to the named sources, exact queries, result depths, and date.
@@ -145,7 +158,9 @@ in scratch notes rather than the audited log.
 
 Executed rows are append-only. If later primary reading changes a
 catalog disposition, append an `audit` reconciliation row rather than
-rewriting the executed row. Its notes record `promoted-key:KEY` or
+rewriting the executed row. Snapshot paths in historical rows and
+source notes reference the retired `screening/` tree and resolve
+only in git history. Its notes record `promoted-key:KEY` or
 `superseded-key:KEY`; the current catalog gives the resulting disposition while
 the earlier row preserves the adjudication made at execution time.
 

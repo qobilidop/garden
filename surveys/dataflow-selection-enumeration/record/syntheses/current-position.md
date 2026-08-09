@@ -66,5 +66,5 @@ A new work changes the paper when it provides a more direct reduction, a new
 solution route, a stronger guarantee for the same observer, a broader exact
 program model, or a representation result that changes the comparison. Such a
 finding updates the source note, affected thematic synthesis, claim ledger,
-evidence matrix, and manuscript; adding a catalog row alone does not complete
+evidence ledger, and manuscript; adding a catalog row alone does not complete
 the update.

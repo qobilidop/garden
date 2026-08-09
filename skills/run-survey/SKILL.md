@@ -84,12 +84,12 @@ Shape note, as intent rather than drift.
   normalized (arXiv-DOIs collapse, versions stripped, lowercase),
   `t:<title-slug>` fallback; a published version of an included
   preprint replaces its key, the superseded key staying as an
-  excluded catalog row (E6).
+  excluded catalog row under the survey's superseded-version code.
 - Before deriving counts, run a catalog-integrity pass: one work has
   one canonical catalog row; adjudicate suspected aliases from full
   registrar metadata and authorship, never title similarity alone;
-  retain superseded identifiers as E6 and move formally retracted or
-  withdrawn works to E7.
+  retain superseded identifiers under the superseded-version code and
+  formally retracted works under the retraction code.
 - Log invariants: append-only — a disposition change is a new
   `audit` row (`promoted-key:`/`superseded-key:` in notes) plus a
   catalog update, never a rewrite; every published number derives
@@ -126,10 +126,12 @@ Shape note, as intent rather than drift.
   verification pass. Passes emit
   `{"decision", "reason", "confidence"}`; the adjudicated one-line
   reason is kept in the catalog row when the survey declares a
-  rationale column, not discarded. Exclusion codes E1–E7 (undecidable candidates
-  take the `parked` status instead of a code, re-screened each
-  update); E7 means formally retracted or withdrawn,
-  and the load-bearing code gets boundary examples in the README. No
+  rationale column, not discarded. Exclusion codes are
+  survey-declared in the protocol and validator-enforced (aarm's
+  E1–E7 is the reference set); every vocabulary includes
+  superseded-version and formal-retraction codes; undecidable
+  candidates take the `parked` status instead of a code, re-screened
+  each update; the load-bearing code gets boundary examples. No
   query left `FAILED` at close without a recorded reason.
 
 ## 3. Terminology, taxonomy, classification
@@ -141,15 +143,19 @@ Shape note, as intent rather than drift.
   across passes and was unusable). A formal-subject survey builds a
   unified theoretical framework on top of the taxonomy — see Theory
   mode.
-- Deep-read the anchor candidates into `record/sources/` notes:
-  library-note frontmatter (citekey, registrar work metadata,
+- Deep-read the anchor candidates into `record/sources/` notes.
+  The note contract is the survey's versioned
+  `sources/_template.md` when present; the default for new surveys
+  is library-note frontmatter (citekey, registrar work metadata,
   `synthesis:` one-liner) over an extraction body (`## Evidence`
   anchored to sections/tables, `## Bearing on RQs`, `## Evidence
-  limits`). Note facets from full text are authoritative for that
-  work but never silently overwrite the abstract-level map —
+  limits`) — the aarm reference; dse's template v2 is the other
+  reference shape. Note facets from full text are authoritative for
+  that work but never silently overwrite the abstract-level map —
   disagreements stand, disclosed in the manuscript's limitations.
 - On a material evidence or synthesis revision, preserve every existing
-  `notes-by` writer and append the reviser (human name or agent + model).
+  `notes-by` writer and append the reviser (human name or agent + model),
+  where the note template carries authorship.
   Mechanical edits do not add authorship.
 - The syntheses layer (`record/syntheses/`) is the survey's
   understanding, between evidence and presentation: thematic living
@@ -163,10 +169,11 @@ Shape note, as intent rather than drift.
   a review finding. Git keeps superseded interpretations. (This is
   the survey-local instance of the library → wiki pattern.)
 - `record/claims.md` — the synthesis claims as a statused ledger:
-  each claim carries status (`hypothesis` → `supported` /
-  `known-result` / `rejected`), explicit scope, and its closest
-  established result; ids are `Cxx`, epistemically neutral so they
-  survive status transitions.
+  each claim carries a status on the survey's declared scale (the
+  reference lifecycle: `hypothesis` → `supported` / `known-result` /
+  `rejected`, declared in the preamble), explicit scope, and its
+  closest established result; ids are `Cxx`, epistemically neutral
+  so they survive status transitions.
 - `record/evidence.md` — the binding layer: one record per evidence
   item (`Exxx`) stating one checkable finding from the literature
   (findings support claims; never two senses of "claim"), linked
@@ -202,7 +209,8 @@ Shape note, as intent rather than drift.
 ## 5. Manuscript
 
 - Typst, split for drift-freedom: `meta.typ` (title, byline,
-  abstract) + `content.typ` (body) + `manuscript.typ` (paged
+  abstract) + `content.typ` (body; a long manuscript may split into
+  `sections/*.typ` files it includes) + `manuscript.typ` (paged
   entrypoint, imports `surveys/style.typ`) + `manuscript-html.typ`
   (HTML wrapper, `html.elem` title block). The byline names the
   accountable human author; the agent contribution is a title-page
@@ -210,8 +218,9 @@ Shape note, as intent rather than drift.
 - Shape: introduction with explicit contributions; background and
   related surveys; terminology and taxonomy; an honest, brief "how
   this survey was made" with the flow table (PRISMA's flow diagram
-  in table form; arithmetic must reconcile — state merges and
-  uncataloged exclusions); findings
+  in table form) or a reconciled prose funnel — either way the
+  arithmetic must reconcile, stating merges and uncataloged
+  exclusions; findings
   sections; synthesis and open problems with a findings table;
   limitations; conclusion. Numbers only from the record; superlatives
   scoped ("among the deep reads"); preprint and adjudication caveats
@@ -220,7 +229,10 @@ Shape note, as intent rather than drift.
   `make-references.py` (registrar BibTeX via DOI content negotiation
   and arXiv; repairs live in the generator; output carries a
   generated-file marker) → `references.bib`; author-year citations;
-  hand entries in `references-manual.bib`.
+  hand entries in `references-manual.bib`. A hand-canonical
+  `references.bib` with per-entry primary-source verification is an
+  accepted alternative, declared in the record's Shape note (the
+  dse reference).
 - Build: `./dev.sh python3 site/scripts/build-manuscripts.py` (typst
   pinned in the dev image) → `site/public/surveys/<slug>/`.
 - Typst gotchas (all earned): `~` is a non-breaking space — escape
@@ -312,8 +324,9 @@ fix introduces before persisting it.
 
 When the survey's subject is a formal problem and the synthesis is a
 unified framework, not only a facet taxonomy. The reference
-implementation is dataflow-selection-enumeration (manuscript §3–§6,
-`record/syntheses/unified-theory/`, `record/claims.md`). Its moves:
+implementation is dataflow-selection-enumeration (manuscript §3 and
+§6–§7 as rendered, `record/syntheses/unified-theory/`,
+`record/claims.md`). Its moves:
 
 - **Problem before solvers.** Open with a formal model of the object
   the literatures argue about, independent of any solver or data

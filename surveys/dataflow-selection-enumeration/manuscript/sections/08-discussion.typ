@@ -100,7 +100,7 @@ Improving one does not automatically strengthen the other two.
 The map is a bounded and updateable evidence baseline, not a census. Vocabulary
 crosses several communities, indexes omit and merge records, and the screening
 passes shared one AI-assisted project framing. The committed queries,
-snapshots, source notes, syntheses, evidence matrix, and claim ledger make the
+log, source notes, syntheses, evidence ledger, and claim ledger make the
 boundary inspectable and repeatable; they cannot establish worldwide
 completeness or substitute for independent human review.
 

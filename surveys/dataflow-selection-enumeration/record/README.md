@@ -25,9 +25,12 @@ shape: `catalog.tsv` is a four-state disposition ledger because
 discovery outran adjudication and candidates are retained without a
 promise to read them; the protocol is a separate document rather
 than README sections because tooling parses it (`check.py` reads the
-research questions there); and the evidence ledger plus the
+research questions there); the evidence ledger plus the
 unified-theory workspace bind manuscript claims to evidence at a
-granularity the minimal shape does not attempt.
+granularity the minimal shape does not attempt; and the bibliography
+is a hand-canonical `references.bib` (every entry checked against a
+primary source) rather than the generated-from-identifiers
+pipeline.
 
 ## Files
 
@@ -50,7 +53,9 @@ for each are in `protocol.md`.
 - `queries.tsv` — the standing discovery queries, each row carrying
   its `last_reconciled` date; vocabulary edits in their own commit,
   `last_reconciled` advanced only after full reconciliation.
-- `sources/` — one evidence note per deep-read work; `_template.md`
+- `sources/` — an evidence note per deep-read work, plus notes for
+  screened works whose boundary judgment needed recording;
+  `_template.md`
   is the note contract (versioned; historical notes migrate when
   revisited, per `status.md`).
 - `syntheses/` — the understanding layer, revised after each reading

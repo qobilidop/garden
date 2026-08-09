@@ -1,14 +1,18 @@
 # Claims and qualification ledger
 
-This file records the survey's current synthesis claims, each with
-status `hypothesis`, `supported`, `needs-qualification`,
-`known-result`, or `rejected`. No item is novel merely because it is
-listed. Each active claim must have explicit scope, anchored
+This file records the survey's current synthesis claims. Every
+current claim is a settled survey synthesis — its **Status:** line
+reads `survey synthesis`, with a qualifier after the semicolon
+recording how novelty resolved (broad novelty defeated, formal
+derivation recorded, implementation claim rejected). A new claim
+enters as `hypothesis` and moves to `supported`, `known-result`, or
+`rejected` under the novelty discipline. No item is novel merely
+because it is listed. Each active claim must have explicit scope, anchored
 evidence, and a stated relationship to the closest established result.
 
 ## Current survey synthesis claims
 
-The `Sxx` identifiers below are stable synthesis-claim IDs. The
+The `Cxx` identifiers below are stable synthesis-claim IDs. The
 **Supports:** field of `evidence.md` connects primary-source
 evidence to them; evidence rows have their own `Exxx` identifiers so that a
 source's claim cannot be mistaken for this survey's synthesis.
@@ -21,7 +25,7 @@ source's claim cannot be mistaken for this survey's synthesis.
   induce different observers. Abstract merging, symmetry quotienting, and
   property-guided pruning are adjacent instances of the same observer-relative
   principle rather than direct implementations of the target enumerator.
-- **Evidence:** the claim-evidence matrix connects the four omission mechanisms
+- **Evidence:** the evidence ledger connects the four omission mechanisms
   and adjacent observer-relative reductions to their primary-source rows. The
   taxonomy itself is a cross-literature synthesis, not a theorem attributed to
   any one source.
