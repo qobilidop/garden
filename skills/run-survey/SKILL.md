@@ -80,11 +80,15 @@ Shape note, as intent rather than drift.
   in the record README — the logged search rows are the query set,
   rerun verbatim on update. Search and snowball rows record their
   decided keys per row, not only counts.
-- One key grammar, documented in the README: `doi:`/`arxiv:`
+- One key grammar, documented in the protocol: `doi:`/`arxiv:`
   normalized (arXiv-DOIs collapse, versions stripped, lowercase),
-  `t:<title-slug>` fallback; a published version of an included
-  preprint replaces its key, the superseded key staying as an
-  excluded catalog row under the survey's superseded-version code.
+  `t:<title-slug>` fallback, `legacy:` reserved for rows whose
+  identifier and title are both unrecoverable; a published version
+  of an included preprint replaces its key, the superseded key
+  staying as an excluded catalog row under the survey's
+  superseded-version code. Citekeys are minted only for works that
+  acquire a note or citation; `references.tsv` and note frontmatter
+  identifiers bridge them to catalog keys.
 - Before deriving counts, run a catalog-integrity pass: one work has
   one canonical catalog row; adjudicate suspected aliases from full
   registrar metadata and authorship, never title similarity alone;
@@ -127,8 +131,9 @@ Shape note, as intent rather than drift.
   `{"decision", "reason", "confidence"}`; the adjudicated one-line
   reason is kept in the catalog row when the survey declares a
   rationale column, not discarded. Exclusion codes are
-  survey-declared in the protocol and validator-enforced (aarm's
-  E1–E7 is the reference set); every vocabulary includes
+  survey-declared in the protocol and validator-enforced, slugged to
+  be self-documenting (dse's `E6-out-of-scope-model` form is the
+  reference); every vocabulary includes
   superseded-version and formal-retraction codes; undecidable
   candidates take the `parked` status instead of a code, re-screened
   each update; the load-bearing code gets boundary examples. No
@@ -143,14 +148,15 @@ Shape note, as intent rather than drift.
   across passes and was unusable). A formal-subject survey builds a
   unified theoretical framework on top of the taxonomy — see Theory
   mode.
-- Deep-read the anchor candidates into `record/sources/` notes.
-  The note contract is the survey's versioned
-  `sources/_template.md` when present; the default for new surveys
-  is library-note frontmatter (citekey, registrar work metadata,
-  `synthesis:` one-liner) over an extraction body (`## Evidence`
-  anchored to sections/tables, `## Bearing on RQs`, `## Evidence
-  limits`) — the aarm reference; dse's template v2 is the other
-  reference shape. Note facets from full text are authoritative for
+- Deep-read the anchor candidates into `record/sources/` notes,
+  each named `<citekey>.md`. The note contract is this skill's
+  `assets/source-note-template.md` — library-note frontmatter
+  (citekey, registrar work metadata, `synthesis:` one-liner) over an
+  extraction body (`## Evidence` anchored to sections/tables, with
+  `###` subsections allowed for dense theory-mode reads,
+  `## Bearing on RQs`, `## Evidence limits`); surveys declare any
+  extra fields in their README Shape note rather than forking the
+  template. Note facets from full text are authoritative for
   that work but never silently overwrite the abstract-level map —
   disagreements stand, disclosed in the manuscript's limitations.
 - On a material evidence or synthesis revision, preserve every existing
@@ -226,13 +232,15 @@ Shape note, as intent rather than drift.
   scoped ("among the deep reads"); preprint and adjudication caveats
   attached wherever the number appears, including the abstract.
 - Bibliography: `references.tsv` (citekey → identifier) →
-  `make-references.py` (registrar BibTeX via DOI content negotiation
-  and arXiv; repairs live in the generator; output carries a
-  generated-file marker) → `references.bib`; author-year citations;
-  hand entries in `references-manual.bib`. A hand-canonical
-  `references.bib` with per-entry primary-source verification is an
-  accepted alternative, declared in the record's Shape note (the
-  dse reference).
+  `scripts/make_references.py --manuscript <dir>` (registrar BibTeX
+  via DOI content negotiation and arXiv; repairs live in the
+  generator; output carries a generated-file marker) →
+  `references.bib`; author-year citations; hand entries in
+  `references-manual.bib` — including pins for entries whose
+  registrar record is defective (missing year, surname-only author),
+  caught by diffing regenerated output before accepting it. The bib
+  holds exactly the cited works; evidence-only works are located by
+  their notes' frontmatter, not bib entries.
 - Build: `./dev.sh python3 site/scripts/build-manuscripts.py` (typst
   pinned in the dev image) → `site/public/surveys/<slug>/`.
 - Typst gotchas (all earned) live in `references/typst.md` —
@@ -296,12 +304,16 @@ fix introduces before persisting it.
   `catalog.tsv` and `log.tsv` per the §1 grammar, `sources/`,
   `syntheses/`, `claims.md` with `evidence.md` binding claims and
   manuscript sections to source anchors, and, when the manuscript
-  publishes quantities derived from the catalog, a campaign-local
-  `record/check.py`; the source fetchers, snowball tool, and
-  registry-driven update tool ship with this skill (`scripts/`). The validator checks schemas, keys, facet
-  tokens, source-note and bibliography/citation closure, and prints
-  the derived counts for cross-surface reconciliation; a qualitative
-  survey may omit it. Everything else — protocols, intermediate syntheses, work
+  publishes quantities derived from the catalog, a thin
+  `record/check.py` that declares the survey's vocabularies (columns,
+  statuses, codes, facets, strictness flags) and runs the shared
+  engine `scripts/survey_check.py`; the source fetchers, snowball
+  tool, registry-driven update tool, and bibliography generator ship
+  with this skill (`scripts/`). The engine checks schemas, keys,
+  facet tokens, source-note contract, claims fields, evidence
+  bindings, log invariants, queries, and bibliography/citation
+  closure, and prints the derived counts for cross-surface
+  reconciliation; a qualitative survey may omit the check entirely. Everything else — protocols, intermediate syntheses, work
   sheets — lives on in git history and the shadow mirror.
 - Updates follow the record README's own procedure; this skill defers
   to it. Its last step syncs counts and dates in the README and the
@@ -343,9 +355,13 @@ implementation is dataflow-selection-enumeration (manuscript §3 and
   per-obligation. No approach inherits all obligations from its
   name; similar output syntax can hide different semantics.
 - **Novelty as hypothesis.** Every synthesis claim lives in a claims
-  ledger with status, scope, anchored evidence, and its closest
-  established result; a claim is never novel merely because no
-  contradicting paper surfaced. Run an adversarial reduction audit
+  ledger with status, explicit `Scope`, anchored evidence, and its
+  closest established result (`Prior frontier`); a claim is never
+  novel merely because no contradicting paper surfaced. A settled
+  claim's terminal status records how novelty resolved —
+  `survey synthesis; <qualifier>` (broad novelty defeated, formal
+  derivation recorded, implementation claim rejected, organizing
+  terminology). Run an adversarial reduction audit
   (reduce each tempting "new" statement to the nearest established
   construction) and keep a counterexamples file of small models that
   falsify overclaims. A rejected hypothesis stays in the ledger as a
