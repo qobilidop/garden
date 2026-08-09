@@ -84,7 +84,7 @@ A deep read must inspect the primary work's definitions, central algorithms,
 theorem statements and assumptions, complexity discussion, examples, and
 related work. Complete the source-note template with stable URLs and pinpoint
 locations. Any active synthesis claim must be connected to at least one
-evidence row, and any technical manuscript citation must be connected at its
+evidence item, and any technical manuscript citation must be connected at its
 stable section label. Evidence IDs identify literature claims; `Cxx` IDs refer
 only to the synthesis claims in `claims.md`.
 

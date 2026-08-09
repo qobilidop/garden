@@ -33,6 +33,11 @@ are in the README's To update procedure.
 
 ## Deferred to the next update
 
+- **Grade evidence certainty.** `evidence.md` now carries an optional
+  GRADE-inspired **Certainty** field (`high`/`moderate`/`low`); grade
+  the 33 items on the next evidence touch rather than mechanically
+  now.
+
 - **Curate a landing-page reading list.** The standard survey landing
   carries a taxonomy-sectioned reading list; this survey's landing
   predates it. Curate anchors from the 202 deep reads.

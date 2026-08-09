@@ -9,7 +9,7 @@ evidence, and a stated relationship to the closest established result.
 ## Current survey synthesis claims
 
 The `Sxx` identifiers below are stable synthesis-claim IDs. The
-`supports_claims` column of `evidence.tsv` connects primary-source
+**Supports:** field of `evidence.md` connects primary-source
 evidence to them; evidence rows have their own `Exxx` identifiers so that a
 source's claim cannot be mistaken for this survey's synthesis.
 

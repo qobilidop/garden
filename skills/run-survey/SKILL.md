@@ -167,15 +167,19 @@ Shape note, as intent rather than drift.
   `known-result` / `rejected`), explicit scope, and its closest
   established result; ids are `Cxx`, epistemically neutral so they
   survive status transitions.
-- `record/evidence.tsv` — the binding layer: one row per evidence
+- `record/evidence.md` — the binding layer: one record per evidence
   item (`Exxx`) stating one checkable literature fact, linked
   downward to citekeys and source-note anchors, upward to the `Cxx`
   claims it supports, across to the manuscript sections that cite on
   its strength, with scope and caveat riding the row. The validator
   enforces the bindings — every active claim has evidence rows,
   every technical manuscript citation is registered at its section
-  label. A survey whose manuscript asserts nothing beyond
-  catalog-derived counts may omit it, like `check.py`.
+  label; an optional GRADE-inspired **Certainty** grade
+  (`high`/`moderate`/`low`) rides the record. A survey whose
+  manuscript asserts nothing beyond catalog-derived counts may omit
+  it, like `check.py`. The genre rule: token-celled ledgers are TSV
+  (catalog, log, queries); prose-celled ledgers are markdown records
+  (claims, evidence).
 - Per-paper definition of done: a work is integrated only when its
   disposition is recorded, any required source note is anchored in
   the primary work, affected syntheses and claims are updated, and
@@ -287,7 +291,7 @@ fix introduces before persisting it.
   and maintenance state, with deferred work for the next update as a
   section — the survey's todo lives here, not in a separate file),
   `catalog.tsv` and `log.tsv` per the §1 grammar, `sources/`,
-  `syntheses/`, `claims.md` with `evidence.tsv` binding claims and
+  `syntheses/`, `claims.md` with `evidence.md` binding claims and
   manuscript sections to source anchors, and, when the manuscript
   publishes quantities derived from the catalog, a campaign-local
   `record/check.py`; the source fetchers, snowball tool, and

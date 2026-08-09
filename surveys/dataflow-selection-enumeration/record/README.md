@@ -59,7 +59,7 @@ for each are in `protocol.md`.
   formal workspace (`unified-theory/`).
 - `claims.md` — the synthesis claims ledger (`Cxx` ids cited by
   `evidence.tsv`); statuses declared in its preamble.
-- `evidence.tsv` — one row per evidence item (`Exxx`), binding
+- `evidence.md` — one record per evidence item (`Exxx`), binding
   synthesis claims and manuscript section labels to source-note
   anchors; revised whenever claims or manuscript evidence change.
 - `check.py` — the record validator; the shared search,

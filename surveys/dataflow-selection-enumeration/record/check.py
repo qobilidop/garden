@@ -37,16 +37,6 @@ LOG_HEADER = [
     "excluded_keys",
     "notes",
 ]
-EVIDENCE_HEADER = [
-    "evidence_id",
-    "supports_claims",
-    "manuscript_anchors",
-    "literature_claim",
-    "citekeys",
-    "source_note_anchors",
-    "evidence_scope",
-    "caveat",
-]
 QUERIES_HEADER = [
     "query_id",
     "source",
@@ -262,9 +252,31 @@ def main() -> int:
             )
         fail(f"protocol/manuscript research-question drift: {differing[0]}")
 
-    header, evidence_rows = rows(SURVEY / "evidence.tsv")
-    if header != EVIDENCE_HEADER:
-        fail(f"unexpected evidence header: {header}")
+    evidence_text = (SURVEY / "evidence.md").read_text(encoding="utf-8")
+    evidence_field_map = {
+        "Claim": "literature_claim",
+        "Works": "citekeys",
+        "Anchors": "source_note_anchors",
+        "Supports": "supports_claims",
+        "Manuscript": "manuscript_anchors",
+        "Scope": "evidence_scope",
+        "Caveat": "caveat",
+        "Certainty": "certainty",
+    }
+    evidence_rows = []
+    for block in re.split(r"(?m)^### ", evidence_text)[1:]:
+        identifier = block.splitlines()[0].strip()
+        row = {column: "-" for column in evidence_field_map.values()}
+        row["evidence_id"] = identifier
+        for label, value in re.findall(
+            r"(?m)^- \*\*([A-Za-z]+):\*\* (.*)$", block
+        ):
+            if label not in evidence_field_map:
+                fail(f"unknown evidence field {label!r} in {identifier}")
+            row[evidence_field_map[label]] = value.strip()
+        if row["certainty"] not in ("-", "high", "moderate", "low"):
+            fail(f"invalid certainty in {identifier}: {row['certainty']}")
+        evidence_rows.append(row)
     evidence_ids: set[str] = set()
     supported_claims: set[str] = set()
     covered_citation_pairs: set[tuple[str, str]] = set()
@@ -294,7 +306,7 @@ def main() -> int:
         if not row_claims and not row_anchors:
             fail(f"evidence row {number} supports neither a claim nor the manuscript")
         for field in ("literature_claim", "evidence_scope", "caveat"):
-            if not row[field].strip():
+            if row[field].strip() in ("", "-"):
                 fail(f"evidence row {number} has empty {field}")
 
         row_keys = keys(row["citekeys"])

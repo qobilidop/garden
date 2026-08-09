@@ -26,7 +26,7 @@ after every small change.
   point.
 - **Start the claims ledger and evidence binding.** `record/claims.md`
   (statused synthesis claims with scope and closest established
-  result) and `record/evidence.tsv` (evidence items binding claims
+  result) and `record/evidence.md` (evidence items binding claims
   and manuscript sections to source-note anchors) are now standard;
   seed the claims from the manuscript's four organizing findings
   when building the syntheses layer, and register the manuscript's

@@ -6,6 +6,7 @@ import csv
 from collections import Counter
 from datetime import date
 import json
+import re
 from pathlib import Path
 import shlex
 import subprocess
@@ -61,9 +62,19 @@ def status(args: argparse.Namespace) -> int:
     )
     print(f"Catalog: {len(catalog)} works ({breakdown})")
     evidence = f"Evidence: {len(source_notes)} source notes"
-    matrix = SURVEY / "evidence.tsv"
-    if matrix.is_file():
-        evidence += f", {len(read_tsv(matrix))} evidence rows"
+    evidence_path = SURVEY / "evidence.md"
+    if evidence_path.is_file():
+        text = evidence_path.read_text(encoding="utf-8")
+        items = re.findall(r"(?m)^### (E\d{3})", text)
+        support_counts = Counter(
+            claim.strip()
+            for line in re.findall(r"(?m)^- \*\*Supports:\*\* (.*)$", text)
+            for claim in line.split(",")
+        )
+        thin = [claim for claim, count in support_counts.items() if count == 1]
+        evidence += f", {len(items)} evidence items"
+        if thin:
+            evidence += f" ({len(thin)} claims on a single item)"
     print(evidence)
     template = SURVEY / "sources" / "_template.md"
     if template.is_file():
