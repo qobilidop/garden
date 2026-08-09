@@ -26,9 +26,13 @@ method; those two records are the reference implementations.
 
 Three surfaces in `surveys/<slug>/`:
 
-- `index.md` — the landing page and `[[slug]]` backlink target:
-  short description, links to both manuscript renders, the record
-  link, and the curated reading list as its body.
+- `index.md` — the landing page and `[[slug]]` backlink target. Fixed
+  skeleton: H1 `<title>: <subtitle>`, one abstract-like paragraph
+  carrying the funnel counts and closure status, then `**Read:**`
+  (HTML · PDF), `**Survey record:**` (GitHub tree URL) `— searched
+  through <date>` (the coverage-date stamp §7 closure checks), and
+  `**Topic context:** [[<wiki-topic>]]` — the survey↔wiki join —
+  followed by the curated reading list as the body.
 - `record/` — the minimal resumable state (§7).
 - `manuscript/` — the Typst paper (§5).
 
@@ -64,9 +68,8 @@ Shape note, as intent rather than drift.
   as `record/protocol.md` (a thin survey may fold it into the record
   README's contract). Material method changes are described there in
   plain language as they happen, never applied silently.
-- One append-only event log (`record/log.tsv`: date, kind, id,
-  source, query_or_seed, direction, hits, screened, included_keys,
-  excluded_keys, notes) with four kinds: `search` (an executed
+- One append-only event log (`record/log.tsv`; the engine enforces
+  its schema) with four kinds: `search` (an executed
   query), `snowball` (a citation chase, direction backward/forward),
   `audit` (corrections and campaign events — alias resolutions,
   retractions, migrations), and `exploratory` (early non-replayable
@@ -77,7 +80,7 @@ Shape note, as intent rather than drift.
   search method, so citation chases are their `snowball`
   subcommands), `fetch_*` for identifier-driven retrieval; caps and
   retry conventions are documented
-  in the record README — the logged search rows are the query set,
+  in the protocol — the logged search rows are the query set,
   rerun verbatim on update. Search and snowball rows record their
   decided keys per row, not only counts.
 - One key grammar, documented in the protocol: `doi:`/`arxiv:`
@@ -127,7 +130,11 @@ Shape note, as intent rather than drift.
 - Screening: two agent passes on different model tiers and prompt
   framings, disagreements adjudicated by the strongest available
   model, a human gating the result; single-pass waves only with a
-  verification pass. Passes emit
+  verification pass. Expect the exclusion-first/smaller-tier pass to
+  over-code exclusions (one batch measured ~4× vs the mid tier);
+  label-only disagreements lean drop-unless-both-coded, and the
+  catalog-memory bar belongs to the adjudicator, not the passes.
+  Passes emit
   `{"decision", "reason", "confidence"}`; the adjudicated one-line
   reason is kept in the catalog row when the survey declares a
   rationale column, not discarded. Exclusion codes are
@@ -137,7 +144,15 @@ Shape note, as intent rather than drift.
   superseded-version and formal-retraction codes; undecidable
   candidates take the `parked` status instead of a code, re-screened
   each update; the load-bearing code gets boundary examples. No
-  query left `FAILED` at close without a recorded reason.
+  query left `FAILED` at close without a recorded reason. Update log
+  rows reuse the `queries.tsv` `query_id` as their log `id`; empty
+  decided-key cells are empty strings (`-` accepted as legacy).
+- A campaign whose subject or stakes demand formal validity
+  apparatus may escalate campaign-wide — not by default: cross-vendor
+  passes with a declared independence axis (the Codex mirror when
+  available), Cohen's κ, committed fleet prompts, and a frozen
+  disclosure baseline (PRISMA 2020 items 8–9 in spirit) — the v1
+  aarm campaign's git history is the reference.
 
 ## 3. Terminology, taxonomy, classification
 
@@ -146,23 +161,21 @@ Shape note, as intent rather than drift.
   under it. Prefer few, mechanical facets; cut judgment-heavy fields
   rather than classify them noisily (v1's judgment field varied 5.7×
   across passes and was unusable). A formal-subject survey builds a
-  unified theoretical framework on top of the taxonomy — see Theory
-  mode.
+  unified theoretical framework on top of the taxonomy — load
+  `references/theory-mode.md`.
 - Deep-read the anchor candidates into `record/sources/` notes,
   each named `<citekey>.md`. The note contract is this skill's
-  `assets/source-note-template.md` — library-note frontmatter
-  (citekey, registrar work metadata, `synthesis:` one-liner) over an
-  extraction body (`## Evidence` anchored to sections/tables, with
-  `###` subsections allowed for dense theory-mode reads,
-  `## Bearing on RQs`, `## Evidence limits`); surveys declare any
-  extra fields in their README Shape note rather than forking the
-  template. Note facets from full text are authoritative for
+  `assets/source-note-template.md`; surveys declare extra fields in
+  their README Shape note rather than forking the template. Note
+  facets from full text are authoritative for
   that work but never silently overwrite the abstract-level map —
   disagreements stand, disclosed in the manuscript's limitations.
 - On a material evidence or synthesis revision, preserve every existing
   `notes-by` writer and append the reviser (human name or agent + model),
   where the note template carries authorship.
-  Mechanical edits do not add authorship.
+  Mechanical edits do not add authorship — but a migration that
+  distills, splits, or authors any prose (a synthesis one-liner, an
+  evidence-limits line) is material, not mechanical.
 - The syntheses layer (`record/syntheses/`) is the survey's
   understanding, between evidence and presentation: thematic living
   documents comparing definitions and results across works — never
@@ -172,8 +185,11 @@ Shape note, as intent rather than drift.
   manuscript presents it. Understanding changes land in syntheses
   first, never manuscript-first; each reading batch names the
   syntheses it affects; a manuscript claim with no synthesis home is
-  a review finding. Git keeps superseded interpretations. (This is
-  the survey-local instance of the library → wiki pattern.)
+  a review finding. A synthesis update states the current conclusion,
+  the strongest supporting and limiting results, scope conditions,
+  and any consequence for `claims.md`/the manuscript — never
+  chronological reading notes. Git keeps superseded interpretations.
+  (This is the survey-local instance of the library → wiki pattern.)
 - `record/claims.md` — the synthesis claims as a statused ledger:
   each claim carries a status on the survey's declared scale (the
   reference lifecycle: `hypothesis` → `supported` / `known-result` /
@@ -189,11 +205,13 @@ Shape note, as intent rather than drift.
   enforces the bindings — every active claim has evidence rows,
   every technical manuscript citation is registered at its section
   label; an optional GRADE-inspired **Certainty** grade
-  (`high`/`moderate`/`low`) rides the record. A survey whose
+  (`high`/`moderate`/`low`) rides the record, graded against the
+  source notes' read depth and evidence limits. A survey whose
   manuscript asserts nothing beyond catalog-derived counts may omit
   it, like `check.py`. The genre rule: token-celled ledgers are TSV
   (catalog, log, queries); prose-celled ledgers are markdown records
-  (claims, evidence).
+  (claims, evidence), each opening with a preamble that declares its
+  id scheme, field list, and delimiter grammar.
 - Per-paper definition of done: a work is integrated only when its
   disposition is recorded, any required source note is anchored in
   the primary work, affected syntheses and claims are updated, and
@@ -214,13 +232,17 @@ Shape note, as intent rather than drift.
 
 ## 5. Manuscript
 
-- Typst, split for drift-freedom: `meta.typ` (title, byline,
-  abstract) + `content.typ` (body; a long manuscript may split into
+- Typst, split for drift-freedom: `meta.typ` (exports `title`,
+  `subtitle`, `byline`, `author-note`, `draft` — the
+  "Draft YYYY-MM-DD" stamp — `landing`, `record`, `abstract-body`)
+  + `content.typ` (body; a long manuscript may split into
   `sections/*.typ` files it includes) + `manuscript.typ` (paged
   entrypoint, imports `surveys/style.typ`) + `manuscript-html.typ`
   (HTML wrapper, `html.elem` title block). The byline names the
-  accountable human author; the agent contribution is a title-page
-  footnote (`author-note` in `meta.typ`).
+  accountable human author; the `author-note` title-page footnote
+  carries the four-part disclosure: human accountability, the named
+  system/model and its scope of assistance, "AI output is not
+  treated as evidence", and the public-record pointer.
 - Shape: introduction with explicit contributions; background and
   related surveys; terminology and taxonomy; an honest, brief "how
   this survey was made" with the flow table (PRISMA's flow diagram
@@ -228,6 +250,8 @@ Shape note, as intent rather than drift.
   arithmetic must reconcile, stating merges and uncataloged
   exclusions; findings
   sections; synthesis and open problems with a findings table;
+  a validity-threats passage stating what the AI-assisted passes are
+  and are not (repeated checks, not independent human reviewers);
   limitations; conclusion. Numbers only from the record; superlatives
   scoped ("among the deep reads"); preprint and adjudication caveats
   attached wherever the number appears, including the abstract.
@@ -286,21 +310,25 @@ fix introduces before persisting it.
   (`scripts/update.py --record surveys/<slug>/record fetch --all`),
   triggered by a close competitor, a new theme, or simply wanting
   fresher coverage. Fetches stage into
-  scratch and never advance state. An update batch: fetch the
-  registered queries over the inclusive interval since last
-  reconciliation → dedup against the catalog and screen every row →
-  promote the frozen snapshot with one matching audited-log row →
-  deep-read and snowball new critical works → reconcile syntheses,
-  claims, terminology, evidence rows, and affected manuscript text →
-  only then advance state and run the record validator. A plausible
+  scratch and never advance state; the record README's numbered
+  procedure carries a batch from staging through reconciliation —
+  one audited-log row per executed query — to advancing state and a
+  clean validator run, and no state advances before the human gate,
+  whose approval lands in the README's update ledger (one row per
+  reconciled batch over survey-declared count columns with a Human
+  gate cell, column semantics stated beside the table). A plausible
   close competitor or new mechanism is always grounds to update now.
 - Prune `record/` to the minimal resumable state: `README.md` (the
-  contract: scope, search parameters, snowball spec, selection rules
-  with examples, key grammar, facet tokens, curation bar, numbered
-  update procedure — build docs stay in AGENTS.md and this skill,
-  pointed to rather than duplicated), `status.md` (current coverage
-  and maintenance state, with deferred work for the next update as a
-  section — the survey's todo lives here, not in a separate file),
+  operating contract — intro with the self-sufficiency statement,
+  Start here commands, Shape note, Files map, update ledger,
+  bibliography-and-build, numbered update procedure; the method
+  rules themselves — scope, search/key/snowball/selection rules,
+  facet tokens — live in `protocol.md` per §2, and build docs stay
+  in AGENTS.md and this skill, pointed to rather than duplicated),
+  `status.md` (H1 `# Current survey status`, a `**Coverage
+  through:**` bullet, mechanical counts copied from the validator,
+  and deferred work under `## Deferred to the next update` — the
+  survey's todo lives here, not in a separate file),
   `catalog.tsv` and `log.tsv` per the §1 grammar, `sources/`,
   `syntheses/`, `claims.md` with `evidence.md` binding claims and
   manuscript sections to source anchors, and, when the manuscript
@@ -309,94 +337,25 @@ fix introduces before persisting it.
   statuses, codes, facets, strictness flags) and runs the shared
   engine `scripts/survey_check.py`; the source fetchers, snowball
   tool, registry-driven update tool, and bibliography generator ship
-  with this skill (`scripts/`). The engine checks schemas, keys,
-  facet tokens, source-note contract, claims fields, evidence
-  bindings, log invariants, queries, and bibliography/citation
-  closure, and prints the derived counts for cross-surface
-  reconciliation; a qualitative survey may omit the check entirely. Everything else — protocols, intermediate syntheses, work
+  with this skill (`scripts/`). The engine validates every record
+  surface end to end and prints the derived counts for cross-surface
+  reconciliation; a qualitative survey may omit the check entirely.
+  A deep read that no longer supports any evidence item, manuscript
+  citation, or synthesis may be demoted back to `screened` by an
+  audit row, its note retiring to git history. Everything else —
+  intermediate syntheses, work
   sheets — lives on in git history and the shadow mirror.
 - Updates follow the record README's own procedure; this skill defers
   to it. Its last step syncs counts and dates in the README and the
   landing page.
 - Verify builds, propose commits with the attribution trailer, commit
-  on the user's word; use post-campaign /evolve when there are durable
-  lessons worth promoting into the harness.
+  on the user's word. A long campaign stages harness lessons in
+  `scratch/` as they surface; post-campaign /evolve mines them.
 
 ## Theory mode (for formal subjects)
 
 When the survey's subject is a formal problem and the synthesis is a
-unified framework, not only a facet taxonomy. The reference
-implementation is dataflow-selection-enumeration (manuscript §3 and
-§6–§7 as rendered, `record/syntheses/unified-theory/`,
-`record/claims.md`). Its moves:
-
-- **Problem before solvers.** Open with a formal model of the object
-  the literatures argue about, independent of any solver or data
-  structure, deliberately narrowed until the task is well-defined
-  (the reference isolates the finite, acyclic, deterministic, total
-  case). Separate four things and keep them separate throughout: the
-  observer (what is asked), its fibers (the semantic object), the
-  discovery algorithm, and the output representation — mechanism and
-  representation are orthogonal to the object.
-- **Coordinates plus equivalence theorems.** Give each literature's
-  native object a coordinate in the framework and prove the
-  coordinates induce the same partition. The equivalence results are
-  what license cross-literature comparison — without them "the same
-  problem" is an analogy, not a theorem.
-- **Relationship taxonomy.** Classify every compared work's relation
-  to the target problem — direct presentation / restricted
-  specialization / adjacent comparator — with any instrumentation or
-  quotient stated explicitly. Never silently transfer a theorem
-  across an observer change; framework-induced misclassification is
-  a named validity threat, not just a risk.
-- **Contract decomposition.** Split the target guarantee into
-  independent obligations (the reference: coverage, guard–fiber
-  equivalence, residual correctness, witness) and assess each work
-  per-obligation. No approach inherits all obligations from its
-  name; similar output syntax can hide different semantics.
-- **Novelty as hypothesis.** Every synthesis claim lives in a claims
-  ledger with status, explicit `Scope`, anchored evidence, and its
-  closest established result (`Prior frontier`); a claim is never
-  novel merely because no contradicting paper surfaced. A settled
-  claim's terminal status records how novelty resolved —
-  `survey synthesis; <qualifier>` (broad novelty defeated, formal
-  derivation recorded, implementation claim rejected, organizing
-  terminology). Run an adversarial reduction audit
-  (reduce each tempting "new" statement to the nearest established
-  construction) and keep a counterexamples file of small models that
-  falsify overclaims. A rejected hypothesis stays in the ledger as a
-  guardrail until its reduction is argued in the manuscript — then
-  it retires to git history, the manuscript itself becoming the
-  guardrail. Label every theorem prior work / direct derivation /
-  local synthesis.
-- **Record layer.** `record/syntheses/unified-theory/` is the formal
-  workspace — model, semantics, derivations, complexity notes,
-  counterexamples, reduction audit, open questions — beside the
-  thematic syntheses and the adopted terminology
-  (`syntheses/terminology.md`); the standard `claims.md` and
-  `evidence.md` carry the assertions and their bindings. Changes
-  propagate understanding layer → ledger → manuscript, never
-  manuscript-first.
-- **Manuscript additions.** The framework section uses the shared
-  statement apparatus (`surveys/style.typ` definitions/theorems,
-  target-aware for HTML); the terminology maps each literature's
-  native vocabulary onto framework terms (a "known as" list per
-  concept); complexity claims name their charge model — oracle-call
-  accounting is not an output-sensitivity theorem.
-
-Theory mode refines, not relaxes, the no-research rule: definitions
-and connecting theorems are contributed as a unifying lens, and
-anything that could read as a novel result must survive the
-reduction audit first.
-
-## Heavy mode (opt-in)
-
-When a campaign's subject or stakes genuinely demand validity
-apparatus — not by default: dual-pass screening with Cohen's κ and a
-declared independence axis (cross-vendor pass B via the Codex mirror
-when available), adjudicated catalogs with persisted rationales,
-committed fleet prompts, decision records with a mandatory
-`Skill implication:` field, and a frozen disclosure baseline in the
-spirit of PRISMA 2020 items 8–9. The v1 campaign
-(agent-assisted-review-methodology) ran this way; its git history is
-the reference implementation.
+unified framework rather than only a facet taxonomy, load
+`references/theory-mode.md` before designing the synthesis — the
+framework moves, novelty discipline, and record layer live there;
+dataflow-selection-enumeration is the reference implementation.

@@ -23,6 +23,10 @@ below critical mass it is a mere container).
 - Cite only ingested works — every `[[citekey]]` resolves in
   `library/`. A work worth citing that isn't ingested is an ingestion
   queue item, not a dangling link.
+- Surveys join the wiki from the other side: each survey landing page
+  carries `**Topic context:** [[<topic>]]`, so the topic page a
+  survey cites should acknowledge the survey (`[[<survey-slug>]]`)
+  where its findings bear on the argument — the join is two-way.
 
 ## Page anatomy
 

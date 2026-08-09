@@ -19,7 +19,7 @@ read: full-text | abstract-only
 source: <shadow path when captured; otherwise public URL, acquisition note, or "none">
 facets: <assessed note-level facets; may be partial; omit when the survey keeps facets in the catalog only>
 retrieved: YYYY-MM-DD
-notes-by: <writer; preserve prior writers and append material revisers separated by semicolons>
+notes-by: <writer (phase); preserve prior writers, append material revisers, "; "-separated, chronological; a fan-out fleet is named by tier, e.g. "Claude Sonnet-class (survey deep-read pipeline)">
 notes-date: YYYY-MM-DD
 synthesis: <one-line take>
 ---

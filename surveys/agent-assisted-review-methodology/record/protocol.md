@@ -188,7 +188,8 @@ contribution `method|system|evaluation|guideline|position`; evidence
 
 ## Notes, syntheses, claims, and evidence
 
-The note contract is `sources/_template.md`. Note-level full-text
+The note contract is the `run-survey` skill's
+`assets/source-note-template.md`. Note-level full-text
 facets are authoritative for that work but do not silently rewrite
 the abstract-coded map; disclose disagreements. Each reading batch
 names the syntheses it affects; understanding changes land in

@@ -39,6 +39,8 @@ Config keys (all paths resolved against ``record_dir``):
   bullets must equal the protocol's RQ1..RQn.
 - ``label_pattern``: regex for manuscript section labels
   (default ``(?:sec|tab)-[A-Za-z0-9-]+``).
+- ``extra_reports``: optional list of callables ``catalog_dict -> dict``
+  merged into the printed derived-counts report.
 """
 
 import csv

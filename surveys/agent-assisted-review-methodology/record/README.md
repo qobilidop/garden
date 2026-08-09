@@ -34,6 +34,10 @@ provenance was not kept), so the wave table here — not the log alone
 — is the provenance for funnel changes. Evidence registration is
 partial by declaration: `evidence.md` covers the findings-bearing
 citations; registering the remainder is deferred in `status.md`.
+Three further legacy deviations from the current shared shape are
+declared as deferred work in `status.md` — bare (unslugged)
+exclusion codes, no `priority`/critical column, and count-only
+historical log rows — each with its convergence rule there.
 
 ## Files
 
