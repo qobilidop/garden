@@ -2,10 +2,7 @@
 #import "../../style.typ": paper, titleblock, abstract
 #import "meta.typ": title, subtitle, byline, author-note, draft, landing, record, abstract-body
 
-#show: paper.with(
-  running-author: "Bili Dong",
-  footer-note: [sys0 Surveys · Draft v1 · 2026-08-08],
-)
+#show: paper
 
 #set document(
   title: title + ": " + subtitle,
@@ -15,7 +12,7 @@
 #titleblock(
   title: title,
   subtitle: subtitle,
-  byline: [#upper(byline)#footnote[#author-note]],
+  byline: [#byline#footnote[#author-note]],
   meta: [
     #draft ·
     #link(landing)[landing page] ·

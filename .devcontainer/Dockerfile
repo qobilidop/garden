@@ -22,16 +22,8 @@ RUN A="$TARGETARCH"; [ "$A" = "amd64" ] && A=x64; \
 
 # Typst for survey manuscripts (surveys/*/manuscript.typ -> PDF + HTML),
 # pinned; the HTML target is experimental (--features html) as of 0.15.
-# Typst embeds Libertinus Serif and DejaVu Sans Mono; Libertinus Sans
-# (Biolinum's successor, the ACM heading face surveys/style.typ uses)
-# is not embedded and comes from the upstream release.
-ENV LIBERTINUS_VERSION=7.051
-RUN curl -fsSL -o /tmp/libertinus.zip \
-      "https://github.com/alerque/libertinus/releases/download/v${LIBERTINUS_VERSION}/Libertinus-${LIBERTINUS_VERSION}.zip" \
- && mkdir -p /usr/share/fonts/opentype/libertinus \
- && unzip -j -q /tmp/libertinus.zip "*/static/OTF/LibertinusSans-*.otf" \
-      -d /usr/share/fonts/opentype/libertinus \
- && rm /tmp/libertinus.zip
+# No font packages: typst embeds Libertinus Serif and DejaVu Sans Mono,
+# the two families surveys/style.typ uses.
 ENV TYPST_VERSION=0.15.1
 RUN A="$TARGETARCH"; [ "$A" = "amd64" ] && A=x86_64; [ "$A" = "arm64" ] && A=aarch64; \
     curl -fsSL "https://github.com/typst/typst/releases/download/v${TYPST_VERSION}/typst-${A}-unknown-linux-musl.tar.xz" \
