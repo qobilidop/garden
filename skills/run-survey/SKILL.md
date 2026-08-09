@@ -354,7 +354,7 @@ implementation is dataflow-selection-enumeration (manuscript §3–§6,
   counterexamples, reduction audit, open questions — beside the
   thematic syntheses and the adopted terminology
   (`syntheses/terminology.md`); the standard `claims.md` and
-  `evidence.tsv` carry the assertions and their bindings. Changes
+  `evidence.md` carry the assertions and their bindings. Changes
   propagate understanding layer → ledger → manuscript, never
   manuscript-first.
 - **Manuscript additions.** The framework section uses the shared
