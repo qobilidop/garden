@@ -1,11 +1,24 @@
-# sebastiani2025entailment — Entailment vs. Verification for Partial-Assignment Satisfiability and Enumeration
+---
+citekey: sebastiani2025entailment
+work:
+  title: "Entailment vs. Verification for Partial-Assignment Satisfiability and Enumeration"
+  author: "Roberto Sebastiani"
+  venue: "CADE 30"
+  date: 2025
+  doi: 10.1007/978-3-031-99984-0_37
+read: full-text
+source: "Official open-access CADE 30 proceedings PDF via https://doi.org/10.1007/978-3-031-99984-0_37"
+retrieved: "-"
+notes-by: Codex (initial campaign); Claude Fable 5 (record migration)
+notes-date: 2026-08-04
+synthesis: "Proves that verification and entailment of partial assignments diverge under existential projection even for CNF matrices, so calling a short partial cube one semantic observation region requires an entailment claim, not mere syntactic reduction — sharpens the boundary with projected AllSMT enumeration"
+---
 
-- **Status:** deep-read
-- **Primary source:** https://doi.org/10.1007/978-3-031-99984-0_37
-- **Version read:** official open-access CADE 30 proceedings PDF
-- **Bibliography key:** `sebastiani2025entailment`
+# Entailment vs. Verification for Partial-Assignment Satisfiability and Enumeration
 
-## Why it matters
+## Evidence
+
+### Why it matters
 
 This paper makes the semantic ambiguity behind short partial models explicit.
 It distinguishes inexpensive residual evaluation from logical coverage of all
@@ -13,7 +26,7 @@ total extensions, proves that the two differ under projection even when the
 matrix is CNF, and argues that enumeration should use entailment. The result is
 directly relevant to how observation cubes and exact fibers are specified.
 
-## Main definitions
+### Main definitions
 
 Definition 1 says that a partial truth assignment `mu` *verifies* `phi` when
 three-valued evaluation returns true, equivalently when the residual `phi|mu`
@@ -29,7 +42,7 @@ extension-dependent `delta` over `B` satisfying `psi`. The quantifier order is
 therefore `for all eta, exists delta`, not one shared witness for the whole
 cube (Section 3.2, pp. 724–725).
 
-## Theorems and semantic guarantees
+### Theorems and semantic guarantees
 
 Theorem 1 proves that verification and entailment coincide for tautology-free
 CNF formulas. For generic formulas, verification implies entailment but not
@@ -55,7 +68,7 @@ equivalence must equal entailment. Adding a finite collection of syntactic
 simplifications to verification cannot in general recover these properties
 (pp. 726–727).
 
-## Complexity and algorithmic consequences
+### Complexity and algorithmic consequences
 
 Verification is polynomial in the formula representation; entailment requires
 validity of the residual and is co-NP-complete. The paper nevertheless observes
@@ -71,7 +84,7 @@ The paper reports prior empirical improvement but says earlier dual-search
 implementations did not compete with the state of the art (Section 4.3,
 p. 731).
 
-## Motivating examples
+### Motivating examples
 
 Examples 1–2 use the equivalent formulas
 `(A1 and A2) or (A1 and not A2)` and `A1`. The cube `{A1}` entails both, but
@@ -88,44 +101,7 @@ verification-based HALL generalization return four total assignments, whereas
 OBDD/SDD reduction or entailment-based generalization can return the single
 cube (pp. 729–731).
 
-## Relationship to our hypothesis
-
-### What is directly established by the work?
-
-Partial-assignment coverage should be defined by entailment if it is intended
-to be invariant under equivalent formula presentations. Existential projection
-creates a verification/entailment gap even for a CNF matrix, and standard or
-NNF-aware CNF conversion does not remove that semantic gap.
-
-### What is our interpretation or inference?
-
-If an activation/outcome encoding emits short partial cubes, calling a cube one
-semantic observation region requires an entailment claim, not merely that one
-label completion makes the encoding reduce to true. Exact observation guards
-already have the stronger form: they define precisely all inputs mapped to one
-fixed graph-relative observation.
-
-Our complete observation record is not itself a partial satisfying assignment.
-It is the image of a deterministic graph observer, with structural inactivity
-defined by enabled-edge reachability. When represented as a totalized tuple,
-every inactive-or-outcome coordinate is explicit, so the paper's ambiguity
-arises only if that tuple is further compressed into a cube.
-
-### Could it subsume our proposed contribution?
-
-It subsumes any proposed novelty claim that logical entailment is a new or
-better semantics for short enumeration cubes. It does not define which graph
-sites are observed from requested roots, distinguish observed equal-valued alternatives,
-construct residual program values, prove exact graph composition, or enumerate
-one record per graph-intensional observation fiber.
-
-It strengthens the boundary with projected AllSMT: a solver-generated partial
-model may be a compact cover of several selection observations, while our
-enumeration fixes the full observation and computes its exact fiber. Any paper
-claim must state which object is being partitioned and whether omitted
-coordinates mean logical don't-care or structural inactivity.
-
-## Evidence locations
+### Evidence locations
 
 - Section 3.1, pp. 723–724: Definitions 1–2, Theorem 1, Properties 5–6, and
   Examples 1–2.
@@ -136,7 +112,40 @@ coordinates mean logical don't-care or structural inactivity.
 - Sections 4.2–4.3, pp. 729–731: d-DNNF/OBDD/SDD behavior, dual search, HALL,
   and Examples 7–9.
 
-## Questions and possible weaknesses
+## Bearing on RQs
+
+What is directly established by the work: partial-assignment coverage should
+be defined by entailment if it is intended to be invariant under equivalent
+formula presentations. Existential projection creates a verification/
+entailment gap even for a CNF matrix, and standard or NNF-aware CNF conversion
+does not remove that semantic gap.
+
+Our interpretation or inference: if an activation/outcome encoding emits short
+partial cubes, calling a cube one semantic observation region requires an
+entailment claim, not merely that one label completion makes the encoding
+reduce to true. Exact observation guards already have the stronger form: they
+define precisely all inputs mapped to one fixed graph-relative observation.
+
+Our complete observation record is not itself a partial satisfying assignment.
+It is the image of a deterministic graph observer, with structural inactivity
+defined by enabled-edge reachability. When represented as a totalized tuple,
+every inactive-or-outcome coordinate is explicit, so the paper's ambiguity
+arises only if that tuple is further compressed into a cube.
+
+Could it subsume our proposed contribution: it subsumes any proposed novelty
+claim that logical entailment is a new or better semantics for short
+enumeration cubes. It does not define which graph sites are observed from
+requested roots, distinguish observed equal-valued alternatives, construct
+residual program values, prove exact graph composition, or enumerate one
+record per graph-intensional observation fiber.
+
+It strengthens the boundary with projected AllSMT: a solver-generated partial
+model may be a compact cover of several selection observations, while our
+enumeration fixes the full observation and computes its exact fiber. Any paper
+claim must state which object is being partitioned and whether omitted
+coordinates mean logical don't-care or structural inactivity.
+
+## Evidence limits
 
 - The work analyzes propositional formulas and Boolean abstractions. Theory
   consistency in AllSMT adds another obligation not formalized by its central

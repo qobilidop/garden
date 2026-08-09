@@ -58,9 +58,12 @@ would merge them. That quotient is legitimate for a different objective but is
 not this observer.
 
 This distinction has a concrete specification role even without assigning
-operational significance to evaluation order. An event-aware validation task
+operational significance to evaluation order. As a stated hypothetical — no
+worked instance is developed in this survey — an event-aware validation task
 may ask whether every source selection outcome remains represented after graph
-rewriting, lowering, or component substitution. The two inner outcomes then
+rewriting, lowering, or component substitution (a task that itself requires a
+declared event correspondence, since such transformations can change the
+observer; see @sec-discussion). The two inner outcomes then
 belong to different records despite equal values. A value-only equivalence
 checker deliberately chooses a coarser observer and merges them. The framework
 does not declare one policy universally preferable; it makes the policy an

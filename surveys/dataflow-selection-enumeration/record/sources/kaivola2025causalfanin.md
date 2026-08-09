@@ -1,15 +1,24 @@
-# kaivola2025causalfanin — Timed Causal Fanin Analysis
+---
+citekey: kaivola2025causalfanin
+work:
+  title: "Timed Causal Fanin Analysis for Symbolic Simulation"
+  author: "Roope Kaivola, Neta Bar Kama"
+  venue: "Formal Methods in System Design"
+  date: 2025
+  doi: 10.1007/s10703-025-00478-1
+read: abstract-only
+source: "the keyed 2025 journal version was seen only as metadata/abstract/publisher preview; full text was read from the open-access 2022 FMCAD precursor at https://doi.org/10.34727/2022/isbn.978-3-85448-053-2_16; technical anchors cite the precursor"
+retrieved: "-"
+notes-by: Codex (initial campaign); Claude Fable 5 (record migration)
+notes-date: 2026-08-04
+synthesis: "Timed causal fanin analysis follows only trace-conditioned combinational/sequential dependencies backward from a verification goal — a close hardware analogue of enabled-closure reachability, though it computes one relevance set per trigger, not an exhaustive table of observation guards and residuals"
+---
 
-- **Status:** deep-read; critical enabled-closure predecessor
-- **Primary source:** https://doi.org/10.1007/s10703-025-00478-1
-- **Detailed open source:** https://doi.org/10.34727/2022/isbn.978-3-85448-053-2_16
-- **Version read:** 2025 journal metadata, abstract, and publisher preview;
-  detailed technical analysis uses the official open-access 2022 FMCAD version
-  of record
-- **Bibliography keys:** `kaivola2025causalfanin` (expanded journal article),
-  `kaivola2022causalfanin` (conference precursor)
+# Timed Causal Fanin Analysis for Symbolic Simulation
 
-## Version boundary
+## Evidence
+
+### Version boundary
 
 The 2025 Formal Methods in System Design article is the current, expanded
 treatment: volume 67(1), pp. 3--26, published online 16 May 2025. Its abstract
@@ -33,7 +42,7 @@ analysis for symbolic simulation*, both authors, and year 2025; it reports zero
 forward citations at capture time, hence the exact-DOI forward snapshot has a
 header and no result rows.
 
-## Why it matters
+### Why it matters
 
 Timed causal fanin is a direct hardware precedent for an input- or
 property-sensitive enabled closure. Starting at time-indexed signals in a
@@ -46,7 +55,7 @@ static cone-of-influence slicing.
 It does not, however, observe the selected mux outcomes, partition the input
 space by those observations, or enumerate exact guards and residuals.
 
-## Circuit and symbolic model
+### Circuit and symbolic model
 
 The source model is a synchronous sequential circuit containing combinational
 gates and flip-flops. Verification focuses on one fixed, bounded transaction,
@@ -69,7 +78,7 @@ resulting symbolic inputs range exactly over trigger-satisfying assignments.
 BDD canonicity and simplification then expose both directly and indirectly
 implied cycle-specific constants in internal control logic.
 
-## Formal object
+### Formal object
 
 Let the preliminary trace give a value to each signal-time pair. The 2022
 paper defines two local dependence relations.
@@ -102,7 +111,7 @@ closure rules:
 The within-cycle closure stops at flip-flop boundaries; the second rule moves
 the traversal backwards in time.
 
-## Algorithm
+### Algorithm
 
 The method has three passes.
 
@@ -119,7 +128,7 @@ The preliminary run is not merely timed constant propagation: constants can
 follow from the combination of the trigger, parametric substitution, circuit
 logic, and canonical BDD simplification.
 
-## Guarantees
+### Guarantees
 
 The 2022 paper states that weakening is safe: proving a property on the
 weakened trace implies it on the unweakened trace with the same stimulus. It
@@ -136,7 +145,7 @@ Dynamic weakening in the preliminary run sacrifices precision, not safety. If
 an internal control remains `X` instead of simplifying to a constant, both
 possible dependencies remain in the causal fanin.
 
-## Complexity and performance
+### Complexity and performance
 
 The paper gives no asymptotic bound for the complete method. Once the
 preliminary values and local fanin relations are available, computing the least
@@ -158,7 +167,7 @@ division and square root proofs completed in roughly six to eight weeks; and
 all FP16 operations, including multiplication, fused multiply-add, division,
 and square root, were verified closed box.
 
-## Motivating example
+### Motivating example
 
 The running circuit combines a one-cycle adder and a two-cycle multiplier on a
 shared result path. The property requests a correct add result in the next
@@ -173,17 +182,26 @@ excluding the multiplier datapath. This example is useful for our paper
 because static transitive fanin would retain both datapaths, whereas a
 trace-conditioned enabled closure does not.
 
-## Relationship to enabled closure and observation fibers
+### Evidence locations
 
-### What is directly established by the work?
+- 2025 article metadata and abstract: current version, scope, and FP16 claim.
+- 2022 Sections II--III, pp. 100--104: symbolic values, `X`, weakening,
+  parametric substitution, local causal-fanin rules, least closure, and safety
+  argument.
+- 2022 Figures 5--8, pp. 103--104: shared adder/multiplier example.
+- 2022 Sections IV--V, pp. 105--107: industrial context, complexity limits,
+  proof effort, and FP16 results.
 
-- output-rooted, cycle-indexed backwards relevance;
-- input/property-sensitive pruning of combinational fanin;
-- selected-input behavior for concretely controlled muxes;
-- time-sensitive predecessor selection for state elements; and
-- safe abstraction of everything outside the retained closure.
+### Assessment
 
-### What is our interpretation or inference?
+This work merits **critical** status for the enabled-closure axis. It is the
+closest circuit-specific predecessor found for trace-conditioned backward
+reachability through selection and state edges. It does not answer the
+observation-fiber or compositional-summary problem, so its critical status
+should constrain the demand/relevance claim rather than collapse the paper's
+entire thesis.
+
+## Bearing on RQs
 
 On a time-unrolled mux graph, timed causal fanin is a close analogue of our
 enabled closure \(D_G(x,R)\). A concrete mux selector enables its selector edge
@@ -198,8 +216,6 @@ causes multiple possible fanins to be retained. Its causal fanin can therefore
 behave like a safe union or overapproximation of several per-input enabled
 closures.
 
-### Could it subsume our proposed contribution?
-
 It subsumes any broad claim that cycle-sensitive, property-directed circuit
 fanin or mux-guided demand is new. It does not define the selection observation
 
@@ -213,21 +229,9 @@ relevance set for a verification task, not an exhaustive disjoint table of
 input guards and residual functions. No complexity result is parameterized by
 the number of feasible observations.
 
-## Evidence locations
+## Evidence limits
 
-- 2025 article metadata and abstract: current version, scope, and FP16 claim.
-- 2022 Sections II--III, pp. 100--104: symbolic values, `X`, weakening,
-  parametric substitution, local causal-fanin rules, least closure, and safety
-  argument.
-- 2022 Figures 5--8, pp. 103--104: shared adder/multiplier example.
-- 2022 Sections IV--V, pp. 105--107: industrial context, complexity limits,
-  proof effort, and FP16 results.
-
-## Assessment
-
-This work merits **critical** status for the enabled-closure axis. It is the
-closest circuit-specific predecessor found for trace-conditioned backward
-reachability through selection and state edges. It does not answer the
-observation-fiber or compositional-summary problem, so its critical status
-should constrain the demand/relevance claim rather than collapse the paper's
-entire thesis.
+Read the 2025 journal article at abstract/metadata level only — the full text
+was inaccessible in the research environment; detailed claims above are
+anchored to the full-text 2022 FMCAD precursor, as detailed in Version
+boundary above.

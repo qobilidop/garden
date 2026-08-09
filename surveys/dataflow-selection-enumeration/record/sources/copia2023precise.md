@@ -1,11 +1,24 @@
-# copia2023precise — Precise Lazy Initialization
+---
+citekey: copia2023precise
+work:
+  title: "Precise Lazy Initialization for Programs with Complex Heap Inputs"
+  author: "Juan Manuel Copia, Facundo Molina, Nazareno Aguirre, Marcelo F. Frias, Alessandra Gorla, Pablo Ponzio"
+  venue: "ISSRE 2023"
+  date: 2023
+  doi: 10.1109/issre59848.2023.00080
+read: full-text
+source: "ISSRE 2023 paper (pp. 752-762) via https://doi.org/10.1109/ISSRE59848.2023.00080"
+retrieved: "-"
+notes-by: Codex (initial campaign); Claude Fable 5 (record migration)
+notes-date: 2026-08-04
+synthesis: "PLI's joint heap/primitive feasibility oracle is a directly reusable existential-feasibility contract for demand-driven symbolic execution, but it enumerates feasible states rather than exact observation fibers or their residuals"
+---
 
-- **Status:** deep-read; high-priority demand-driven heap predecessor
-- **Primary source:** https://doi.org/10.1109/ISSRE59848.2023.00080
-- **Version read:** ISSRE 2023 paper, pp. 752--762
-- **Bibliography key:** `copia2023precise`
+# Precise Lazy Initialization for Programs with Complex Heap Inputs
 
-## Why it matters
+## Evidence
+
+### Why it matters
 
 Precise Lazy Initialization (PLI) closes LISSA's feasibility gap by deciding
 whether the symbolic heap and the primitive program path condition have a
@@ -14,7 +27,7 @@ feasible symbolic states explored by ordinary lazy initialization. This is
 strong prior work for joint feasibility pruning during demand-driven symbolic
 execution.
 
-## State and algorithm
+### State and algorithm
 
 A PLI symbolic state is a pair $(\mathit{symH},\mathit{pathCond})$. The
 precondition is split into a heap-structural executable predicate
@@ -31,7 +44,7 @@ If all candidate heaps fail, the symbolic state is pruned. The implementation
 reuses a parent's witness when a new primitive branch or lazy heap assignment
 does not invalidate it.
 
-## Formal guarantee
+### Formal guarantee
 
 Theorem 1 states, for a program, precondition, and finite scopes, that a
 symbolic state feasible with respect to the precondition is explored by LI iff
@@ -48,7 +61,7 @@ This theorem concerns feasible symbolic-execution states, not uniqueness,
 disjointness, or maximality of their concretizations. PLI can visit many states
 that correspond to the same coarser observation.
 
-## Complexity boundary
+### Complexity boundary
 
 The bounded heap candidates can grow exponentially with scope, and the
 precondition itself is symbolically executed for candidates. PLI reduces paths
@@ -57,7 +70,17 @@ on most subjects, but gives no output-polynomial or polynomial-delay
 enumeration bound. Its experimental output is feasible paths and concrete test
 inputs, not observer equivalence classes.
 
-## Relationship to selection observations
+### Evidence locations
+
+- Sections I--II, paper pp. 752--755: motivation, symbolic-state model, and
+  LISSA's separation problem.
+- Section III and Algorithm 1, pp. 755--758: joint candidate-heap, SMT, and
+  symbolic-precondition solver.
+- Section III-E, pp. 758--759: Theorem 1 and proof sketch.
+- Sections IV--V, pp. 759--761: empirical path/runtime results and exponential
+  candidate-space discussion.
+
+## Bearing on RQs
 
 PLI provides a directly reusable oracle contract for finite heap encodings:
 
@@ -78,13 +101,9 @@ Thus PLI defeats a broad claim of first exact on-demand symbolic exploration
 with joint solver pruning. It does not subsume a theorem about enumerating the
 image and inverse images of the selection-observation function.
 
-## Evidence locations
+## Evidence limits
 
-- Sections I--II, paper pp. 752--755: motivation, symbolic-state model, and
-  LISSA's separation problem.
-- Section III and Algorithm 1, pp. 755--758: joint candidate-heap, SMT, and
-  symbolic-precondition solver.
-- Section III-E, pp. 758--759: Theorem 1 and proof sketch.
-- Sections IV--V, pp. 759--761: empirical path/runtime results and exponential
-  candidate-space discussion.
-
+- No separate limits section in the source note; the relationship discussion
+  above already states PLI's boundary directly — no extensional observation
+  key, no exact-fiber contract, and no theorem about enumerating the image and
+  inverse images of a selection-observation function.

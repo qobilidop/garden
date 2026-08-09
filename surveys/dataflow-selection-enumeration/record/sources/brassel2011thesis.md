@@ -1,17 +1,23 @@
-# brassel2011thesis — Implementing Functional Logic Programs by Translation into Purely Functional Programs
+---
+citekey: brassel2011thesis
+work:
+  title: "Implementing Functional Logic Programs by Translation into Purely Functional Programs"
+  author: "Bernd Braßel"
+  venue: "PhD thesis, Christian-Albrechts-Universität zu Kiel"
+  date: 2011
+source: "German National Library dissertation PDF (179 pp.), https://d-nb.info/1020245336/34, urn:nbn:de:gbv:8-diss-70568"
+read: full-text
+retrieved: "-"
+notes-by: Codex (initial campaign); Claude Fable 5 (record migration)
+notes-date: 2026-08-04
+synthesis: "Chapter 5 translates lazy functional-logic programs into purely functional programs with explicit Choice ID nodes and proves value-set equality (Theorem 3) via a consistent choice-identifier assignment; Chapter 6's finite partial Map ID Choice is the closest concrete precedent to a sparse selection-outcome map, though it resolves dynamically created nondeterministic choices rather than deterministic input-guarded dataflow selections."
+---
 
-- **Status:** deep-read; critical formal and representational predecessor
-- **Primary source:** https://d-nb.info/1020245336/34
-- **Persistent identifier:** `urn:nbn:de:gbv:8-diss-70568`
-- **Bibliographic record:** https://dblp.org/rec/phd/dnb/Brassel11
-- **Version read:** 179-page dissertation PDF preserved by the German National
-  Library
-- **Bibliography key:** `brassel2011thesis`
-- **Date note:** the title page says Kiel 2010, while the examination/printing
-  approval and German National Library dissertation record date the work to
-  2011. This repository follows the primary library record and uses 2011.
+# Implementing Functional Logic Programs by Translation into Purely Functional Programs
 
-## Why it matters
+## Evidence
+
+### Why it matters
 
 This dissertation is the strongest formal predecessor in the
 choice-identifier lineage read so far. Chapter 5 translates lazy
@@ -30,7 +36,7 @@ our proposed observation records outcomes of deterministic input guards at
 static dataflow selections and is intended to denote an exact inverse image of
 concrete inputs.
 
-## Program and semantic model
+### Program and semantic model
 
 The source is a first-order lazy functional-logic language with call-time
 choice. Earlier chapters reduce free variables and narrowing to binary
@@ -61,12 +67,12 @@ positive unbounded integers with `initID = 1`, `leftID i = 2*i`, and
 independence and preservation properties needed to keep dynamic calls uniquely
 identified.
 
-## The choice assignment: two distinct presentations
+### The choice assignment: two distinct presentations
 
 The dissertation contains two related but importantly different assignment
 objects.
 
-### Formal Chapter 5 object
+#### Formal Chapter 5 object
 
 Section 5.2.1 asks for a representation of a mapping from identifiers to
 `{1,2}`. It describes the representation as a subset of
@@ -85,7 +91,7 @@ uses finitely many such decisions, but Chapter 5 does not separately define a
 finite-map datatype, prove that the domain is minimal, or enumerate the maps as
 observable results.
 
-### Concrete Chapter 6 object
+#### Concrete Chapter 6 object
 
 Section 6.2 first represents decisions by mutable `IORef Choice` cells, where
 `Choice = ChooseLeft | ChooseRight | NoChoice`. For parallel and encapsulated
@@ -107,7 +113,7 @@ The map is still search state, not a canonical result descriptor. It can retain
 decisions made earlier in a task even when the eventual value does not depend
 on them, and different complete assignments can produce the same value.
 
-## Head-normal-form extraction
+### Head-normal-form extraction
 
 Definition 5.2.11 defines `hnf(ch,e)` by two cases:
 
@@ -126,7 +132,7 @@ next constructor, while the search strategy controls how missing choices are
 assigned. It does not, however, make the resulting assignment a weakest or
 minimal observation.
 
-## Invalid branches, laziness, and sharing
+### Invalid branches, laziness, and sharing
 
 The motivating `selfEq coin` example evaluates to a tree containing several
 occurrences of choice identifier `1`. Mixed paths that take left at one
@@ -153,7 +159,7 @@ deterministic `e1` is computed once, and the measured transformed implementation
 essentially pays `t(e1)` plus the negligible choice cost. This is an operational
 and empirical benefit in addition to the heap-sharing modeled in the proof.
 
-## Theorem 3: exact scope of adequacy
+### Theorem 3: exact scope of adequacy
 
 Definition 5.4.1 defines `[[e]]_7` as the set of constructor values obtainable
 from a terminating derivation
@@ -185,7 +191,7 @@ sets of choice maps. It does not say that each value is produced once, that a
 particular traversal is fair, or that returned assignments form a disjoint
 partition of another input space.
 
-## Search strategies and enumeration guarantees
+### Search strategies and enumeration guarantees
 
 Section 6.2 instantiates the abstract extractor with depth-first,
 breadth-first, iterative-deepening, and parallel searches. Monadic lists expose
@@ -204,7 +210,7 @@ both yield `True`, and §6.6 uses `nub` explicitly in an encapsulated-search
 example when duplicate values are unwanted. No nonredundant assignment or
 value-enumeration result is stated.
 
-## Algorithm and cost
+### Algorithm and cost
 
 At transformation time, compute the transitive set of operations depending on
 nondeterministic choice, add a split identifier supply to their calls, translate
@@ -230,7 +236,7 @@ made `queens 8` exceed 4 GB and slowed `queens 7` from 0.16 s to 11.48 s. These
 measurements establish practical relevance but are not output-sensitive
 complexity guarantees.
 
-## KiCS2 continuation adjudication
+### KiCS2 continuation adjudication
 
 The WFLP 2011 paper *KiCS2: A New Compiler from Curry to Haskell*
 (https://doi.org/10.1007/978-3-642-22531-4_1) is an implementation continuation,
@@ -247,7 +253,7 @@ catalog therefore correctly keeps `brassel2011kics2` as a distinct candidate;
 a second deep-read note was not needed to adjudicate the formal priority issue
 assigned here.
 
-## Terminology
+### Terminology
 
 Established terms worth retaining are *call-time choice*, *choice identifier*,
 *identifier supply*, *set of choices*, *choice tree*, *head normal form*,
@@ -261,7 +267,7 @@ reserved for the Chapter 6 `Map ID Choice` representation. We should not call
 that map a fiber, path condition, or minimal observation; the dissertation does
 not give it those semantics.
 
-## Motivating-example lesson
+### Motivating-example lesson
 
 `selfEq coin` is an excellent compact demonstration of why stable identities
 matter: naive lifting computes illegal mixed results, while a strict monadic
@@ -276,41 +282,7 @@ the conjunction of those deterministic local guards describes exactly the
 input fiber and exactly the root-relative enabled closure, rather than merely
 enforcing consistency among copies of an arbitrary nondeterministic decision.
 
-## Relationship to our hypothesis
-
-### What is directly established by the work?
-
-A lazy shared computation with nondeterministic choices can be compiled into a
-pure functional choice tree. Stable identifiers associate copied occurrences,
-and a consistent identifier-to-branch assignment extracts exactly the source
-constructor values. A concrete search can discover decisions on demand in a
-finite immutable map and can be instantiated by multiple traversal strategies.
-
-### What is our interpretation or inference?
-
-The same engineering pattern can instrument deterministic dataflow selections:
-give each selection a stable site identity, record its concrete guard outcome
-when evaluation reaches it, and preserve that fact under sharing. This is an
-analogy, not an immediate corollary. Dynamic choice-call identity and static
-graph-site identity have different contextual and invocation obligations.
-
-### Could it subsume our proposed contribution?
-
-It subsumes any broad claim for a sparse map from stable decision identifiers
-to binary outcomes, lazy population of such a map, consistent decisions across
-shared occurrences, or exact recovery of functional-logic values by quantified
-choice assignments.
-
-It does not define deterministic guard formulas over concrete inputs,
-root-relative enabled closure, an exact inverse-image partition, residual
-symbolic functions, full-fiber blocking, or compositional/output-sensitive
-bounds. Its assignments are not proved minimal or nonredundant, and its search
-space is semantic nondeterminism rather than a partition of deterministic
-inputs. The defensible novelty boundary is therefore our deterministic
-guard-induced observation and its fiber/composition theory, not the map
-representation or lazy extraction mechanism.
-
-## Forward-citation screen
+### Forward-citation screen
 
 Semantic Scholar's exact-title search resolves the dissertation to paper ID
 `dc996ed9c17b643d2ce8444350ebf50e672743eb` (DBLP
@@ -322,7 +294,7 @@ KiCS2, correctness of pull-tabbing, the basic and fair compilation schemes,
 demand analysis, weakly encapsulated search, and later bubbling work. The
 snapshot is discovery evidence, not a completeness claim about scholarship.
 
-## Primary-bibliography screen
+### Primary-bibliography screen
 
 The dissertation's pp. 171--179 contain 121 bibliography entries, all
 transcribed in the primary backward snapshot. The snapshot deliberately keeps
@@ -333,7 +305,7 @@ redex-trail paper. It also repairs only a PDF extraction line break that splits
 the underlying bibliographic entry is otherwise preserved. This is the
 complete primary reference list, not an index reconstruction.
 
-## Evidence locations
+### Evidence locations
 
 - Chapter 5 introduction and §5.1, pp. 91--96: translation goal, `Choice ID`,
   free identifier algebra, `selfEq coin`, invalid mixed branches, laziness, and
@@ -353,7 +325,37 @@ complete primary reference list, not an index reconstruction.
 - §6.9, pp. 157--158: space-leak limitation.
 - Chapter 7, pp. 169--170: claimed theoretic and practical contributions.
 
-## Questions and possible weaknesses
+## Bearing on RQs
+
+What is directly established by the work: a lazy shared computation with
+nondeterministic choices can be compiled into a pure functional choice tree.
+Stable identifiers associate copied occurrences, and a consistent
+identifier-to-branch assignment extracts exactly the source constructor
+values. A concrete search can discover decisions on demand in a finite
+immutable map and can be instantiated by multiple traversal strategies.
+
+Our interpretation or inference: the same engineering pattern can instrument
+deterministic dataflow selections: give each selection a stable site identity,
+record its concrete guard outcome when evaluation reaches it, and preserve
+that fact under sharing. This is an analogy, not an immediate corollary.
+Dynamic choice-call identity and static graph-site identity have different
+contextual and invocation obligations.
+
+Could it subsume our proposed contribution: it subsumes any broad claim for a
+sparse map from stable decision identifiers to binary outcomes, lazy
+population of such a map, consistent decisions across shared occurrences, or
+exact recovery of functional-logic values by quantified choice assignments.
+
+It does not define deterministic guard formulas over concrete inputs,
+root-relative enabled closure, an exact inverse-image partition, residual
+symbolic functions, full-fiber blocking, or compositional/output-sensitive
+bounds. Its assignments are not proved minimal or nonredundant, and its search
+space is semantic nondeterminism rather than a partition of deterministic
+inputs. The defensible novelty boundary is therefore our deterministic
+guard-induced observation and its fiber/composition theory, not the map
+representation or lazy extraction mechanism.
+
+## Evidence limits
 
 - Chapter 5 leaves `lookup` abstract and does not state a precise finite-map
   invariant for the quantified choice sets; the immutable partial map arrives

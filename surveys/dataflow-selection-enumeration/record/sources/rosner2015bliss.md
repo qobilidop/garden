@@ -1,11 +1,24 @@
-# rosner2015bliss — BLISS
+---
+citekey: rosner2015bliss
+work:
+  title: "BLISS: Improved Symbolic Execution by Bounded Lazy Initialization with SAT Support"
+  author: "Nicolás Rosner, Jaco Geldenhuys, Nazareno Aguirre, Willem Visser, Marcelo F. Frias"
+  venue: "IEEE TSE 41(7)"
+  date: 2015
+  doi: 10.1109/tse.2015.2389225
+read: full-text
+source: "IEEE TSE 41(7), pp. 639–660, via https://doi.org/10.1109/TSE.2015.2389225"
+retrieved: "-"
+notes-by: Codex (initial campaign); Claude Fable 5 (record migration)
+notes-date: 2026-08-04
+synthesis: "BLISS strengthens bounded lazy initialization with field-bound refinement and SAT-based feasibility pruning, proving that BLI, RBLI, and BLISS preserve the valid structures produced by ordinary lazy initialization under explicit assumptions — strong prior art for on-demand partial-state exploration with formal preservation of all feasible completions"
+---
 
-- **Status:** deep-read; high-priority demand-driven heap predecessor
-- **Primary source:** https://doi.org/10.1109/TSE.2015.2389225
-- **Version read:** IEEE TSE 41(7), pp. 639--660
-- **Bibliography key:** `rosner2015bliss`
+# BLISS
 
-## Why it matters
+## Evidence
+
+### Why it matters
 
 BLISS strengthens bounded lazy initialization with two exact pruning layers:
 refining field bounds as a partial heap grows, and asking SAT whether the
@@ -15,7 +28,7 @@ initialization under explicit assumptions. This is strong prior art for
 on-demand partial-state exploration with feasibility pruning and formal
 preservation of all feasible completions.
 
-## Algorithms and theorems
+### Algorithms and theorems
 
 BLI associates each symbolic field with a set of relational-bound tuples.
 RBLI propagates concrete assignments through these labels, removing tuples
@@ -41,7 +54,7 @@ Several different symbolic paths may still lead to related completions, and
 the output is the symbolic-execution state rather than one equivalence-class
 record.
 
-## Complexity boundary
+### Complexity boundary
 
 SAT rejects inconsistent partial heaps earlier, but the number of bounded
 heaps and program paths remains exponential in scope in the worst case. The
@@ -54,7 +67,15 @@ BLI/RBLI and a declarative invariant equivalent to the executable
 precondition for BLISS. SAT feasibility concerns heap completion; ordinary
 primitive path conditions are handled separately by the symbolic executor.
 
-## Relationship to selection observations
+### Evidence locations
+
+- Sections 2.1--2.3, paper pp. 640--645: LI, relational bounds, BLI, and
+  Theorem 1.
+- Section 3, pp. 645--647: heap-bound refinement and Theorem 2.
+- Section 4, pp. 647--652: BLISS/BLISSDB, Theorems 3--4, and assumptions.
+- Section 5, pp. 652--658: empirical results and resource limits.
+
+## Bearing on RQs
 
 BLISS supplies a useful proof pattern: show that every pruned partial state has
 empty concretization and that every valid total object remains represented by
@@ -72,11 +93,8 @@ site. The former is an unknown component of a partially constructed input;
 the latter is an omitted coordinate of an intensional execution observer
 because the site is outside the enabled closure.
 
-## Evidence locations
+## Evidence limits
 
-- Sections 2.1--2.3, paper pp. 640--645: LI, relational bounds, BLI, and
-  Theorem 1.
-- Section 3, pp. 645--647: heap-bound refinement and Theorem 2.
-- Section 4, pp. 647--652: BLISS/BLISSDB, Theorems 3--4, and assumptions.
-- Section 5, pp. 652--658: empirical results and resource limits.
-
+No separate weaknesses section is given; the correctness theorems are
+conditioned on strong external artifacts (see Complexity boundary above) and
+no output-sensitive enumeration theorem is provided.

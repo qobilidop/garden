@@ -1,11 +1,24 @@
-# alur2001partialorder — Partial-Order Reduction in Symbolic State Space
+---
+citekey: alur2001partialorder
+work:
+  title: "Partial-Order Reduction in Symbolic State-Space Exploration"
+  author: "Rajeev Alur, Robert K. Brayton, Thomas A. Henzinger, Shaz Qadeer, Sriram K. Rajamani"
+  venue: "Formal Methods in System Design"
+  date: 2001
+  doi: 10.1023/a:1008767206905
+read: full-text
+source: "Journal article via https://doi.org/10.1023/A:1008767206905, pp. 97–116"
+retrieved: "-"
+notes-by: Codex (initial campaign); Claude Fable 5 (record migration)
+notes-date: 2026-08-04
+synthesis: "Combines BDD-based symbolic model checking with partial-order reduction to skip verification-irrelevant interleavings — an exact observer-relative choice-omission precedent, though for concurrent scheduling rather than caller-input fibers"
+---
 
-- **Status:** deep-read; exact interleaving-reduction comparator
-- **Primary source:** https://doi.org/10.1023/A:1008767206905
-- **Version read:** journal treatment, pp. 97--116
-- **Bibliography key:** `alur2001partialorder`
+# Partial-Order Reduction in Symbolic State-Space Exploration
 
-## Why it matters
+## Evidence
+
+### Why it matters
 
 The method combines BDD-based symbolic state representation with partial-order
 reduction. For asynchronous systems, interleavings of independent events that
@@ -13,7 +26,7 @@ are equivalent for local-property verification need not all be explored. This
 is an exact observer-relative omission of execution choices, though its object
 is concurrent scheduling rather than caller-input fibers.
 
-## Evidence locations
+### Evidence locations
 
 - Abstract and Section 1: equivalence of independent-event interleavings for
   local properties and the symbolic/partial-order combination.
@@ -23,9 +36,14 @@ is concurrent scheduling rather than caller-input fibers.
   exploration.
 - Evaluation: asynchronous design examples and BDD/state reductions.
 
-## Relationship and evidence limit
+## Bearing on RQs
 
 The preserved observer is a local temporal property over concurrent state
 transitions. It neither records requested internal selection identities nor
 partitions a pure function's caller inputs, but it defeats broad novelty for
 exact choice omission under an observer-preserving equivalence.
+
+## Evidence limits
+
+Read at full-text level (journal treatment, pp. 97–116); the note records no
+evidence-quality caveats beyond the scope boundary above.

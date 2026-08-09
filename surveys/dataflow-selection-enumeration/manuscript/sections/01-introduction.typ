@@ -96,4 +96,5 @@ The problem setup appears in @sec-example. The unified framework is defined in
 the known solution routes are compared in @sec-related. The principal
 correspondences and complexity boundaries follow in @sec-algorithms and
 @sec-complexity. Remaining semantic, evidence, and implementation limits are
-stated in @sec-discussion.
+stated in @sec-discussion, and @sec-conclusion closes with the surviving
+formal package.

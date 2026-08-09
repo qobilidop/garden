@@ -1,12 +1,24 @@
-# jones2006parametric — reverse search for parametric linear programming
+---
+citekey: jones2006parametric
+work:
+  title: "Reverse Search for Parametric Linear Programming"
+  author: "Colin N. Jones, Jan M. Maciejowski"
+  venue: "CDC 2006"
+  date: 2006
+  doi: 10.1109/cdc.2006.377799
+read: full-text
+source: "Open conference preprint at https://infoscience.epfl.ch/server/api/core/bitstreams/84c29bf6-b53a-4260-a2f1-552dee61efcf/content (DOI https://doi.org/10.1109/cdc.2006.377799)"
+retrieved: "-"
+notes-by: Codex (initial campaign); Claude Fable 5 (record migration)
+notes-date: 2026-08-04
+synthesis: "Reverse search enumerates every full-dimensional critical region of a multi-parametric LP in duplicate-free, output-sensitive, constant output-relative-space traversal, each basis reconstructing an exact polyhedral guard and affine optimizer — a direct geometric residual-enumeration baseline predating the neural-network guard-plus-affine-map line"
+---
 
-- **Status:** deep-read; critical output-sensitive region baseline
-- **Primary source:** https://doi.org/10.1109/CDC.2006.377799
-- **Open copy:** https://infoscience.epfl.ch/server/api/core/bitstreams/84c29bf6-b53a-4260-a2f1-552dee61efcf/content
-- **Version read:** open conference preprint
-- **Bibliography key:** `jones2006parametric`
+# reverse search for parametric linear programming
 
-## Why it matters
+## Evidence
+
+### Why it matters
 
 Jones and Maciejowski enumerate every full-dimensional critical region of a
 multi-parametric linear program by reverse search. The traversal is
@@ -15,7 +27,7 @@ space. Each emitted basis determines an exact polyhedral guard and reconstructs
 the affine optimizer. This predates the neural-network guard-plus-affine-map
 line and gives a direct geometric residual-enumeration baseline.
 
-## Parametric model and output
+### Parametric model and output
 
 The standard form is
 
@@ -49,7 +61,7 @@ original primal pLP, the basis reconstructs the affine optimizer
 The pseudocode emits bases rather than serializing these formulas, but the
 exact guard and residual are mechanically determined by each output.
 
-## Reverse-search algorithm
+### Reverse-search algorithm
 
 The algorithm walks the one-skeleton of \(E^TD\). At basis \(B\), the
 `neighbour` operation removes redundant projected tangent rays, coalesces
@@ -64,7 +76,7 @@ visits each vertex exactly once. The critical regions cover \(X\) and have
 disjoint relative interiors. Closed guards can overlap on boundaries, and
 lower-dimensional-only regions are not reported.
 
-## Assumptions and printed-contract caveats
+### Assumptions and printed-contract caveats
 
 The result assumes:
 
@@ -84,7 +96,7 @@ Second, Algorithm 1 lacks an explicit halt after the root has exhausted its
 neighbor counter. Standard reverse-search termination is clear from the prose,
 but an implementation of the printed loop needs that stop condition.
 
-## Complexity
+### Complexity
 
 Let \(e=n-m\) and let \(N_r\) be the number of output regions. Equations
 16--20 give
@@ -103,7 +115,17 @@ polynomial-delay classification. The paper also notes that the hidden
 coefficient makes the method slower on small instances despite its better
 asymptotic dependence on \(N_r\).
 
-## Relationship to selection observations
+### Evidence locations
+
+- Section II-C--D and equations 8--12: standard form and affine optimizer
+  reconstruction.
+- Definition 3 and Theorem 4: critical regions as projected-polytope vertices.
+- Sections IV--IV-B, Algorithm 1, and Theorem 5: neighbor computation and
+  reverse-search traversal.
+- Equations 16--20 and Section V: time and space complexity.
+- Sections VI--VII: optional memory/parallel extensions and example.
+
+## Bearing on RQs
 
 This work establishes exact, duplicate-free, output-sensitive enumeration of
 full-dimensional real-polyhedral guards with reconstructible affine residuals.
@@ -118,17 +140,7 @@ output, typed DAG sharing, contextual selection identity, or requirement to
 retain two equal optimizer behaviors because they traversed different observed
 events.
 
-## Evidence locations
-
-- Section II-C--D and equations 8--12: standard form and affine optimizer
-  reconstruction.
-- Definition 3 and Theorem 4: critical regions as projected-polytope vertices.
-- Sections IV--IV-B, Algorithm 1, and Theorem 5: neighbor computation and
-  reverse-search traversal.
-- Equations 16--20 and Section V: time and space complexity.
-- Sections VI--VII: optional memory/parallel extensions and example.
-
-## Limitations
+## Evidence limits
 
 - Only full-dimensional pLP critical regions are enumerated.
 - Closed guards need a boundary ownership convention for a literal partition.

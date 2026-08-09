@@ -1,11 +1,24 @@
-# wang2017dependence — Dependence Guided Symbolic Execution
+---
+citekey: wang2017dependence
+work:
+  title: "Dependence Guided Symbolic Execution"
+  author: "Haijun Wang, Ting Liu, Xiaohong Guan, Chao Shen, Qinghua Zheng, Zijiang Yang"
+  venue: "IEEE TSE 43(3)"
+  date: 2017
+  doi: 10.1109/tse.2016.2584063
+read: full-text
+source: "Authors' TSE manuscript: https://se-lab.cs.wmich.edu/static/pdf/DGSE.pdf (DOI record https://doi.org/10.1109/TSE.2016.2584063)"
+retrieved: "-"
+notes-by: Codex (initial campaign); Claude Fable 5 (record migration)
+notes-date: 2026-08-04
+synthesis: "Dependence-guided symbolic execution directly develops the thesis that paths can be pruned when all symbolic values at their statement instances have already been covered collectively by other paths, giving a practical dependence approximation, a formal fault-detection theorem, and an independent-choices example reducing 2^N paths to N+1"
+---
 
-- **Status:** deep-read; critical predecessor
-- **Primary source:** https://doi.org/10.1109/TSE.2016.2584063
-- **Version read:** authors' TSE manuscript, https://se-lab.cs.wmich.edu/static/pdf/DGSE.pdf
-- **Bibliography key:** `wang2017dependence`
+# Dependence Guided Symbolic Execution
 
-## Why it matters
+## Evidence
+
+### Why it matters
 
 Dependence-guided symbolic execution (DGSE) directly develops the thesis that
 paths can be pruned when all symbolic values at their statement instances have
@@ -14,7 +27,7 @@ dependence approximation, a formal fault-detection theorem, and an independent
 choices example reducing `2^N` paths to `N+1`. It is mandatory prior art for
 both value-directed enumeration and redundant-product avoidance.
 
-## Program and semantic model (RQ1, RQ7)
+### Program and semantic model (RQ1, RQ7)
 
 The paper uses an imperative program CFG `(N,E)` and conventional dynamic
 symbolic execution with generated test inputs. Branch outcomes are treated as
@@ -29,7 +42,7 @@ dependence analysis. Conservative alias/dependence overapproximation can retain
 redundant paths but is intended not to lose distinctive ones; resource bounds
 and unsupported solver theories can still lose paths.
 
-## Exact value criterion and dependence approximation (RQ2–RQ3)
+### Exact value criterion and dependence approximation (RQ2–RQ3)
 
 The ideal criterion is statement-local and collective. A new path is redundant
 when every symbolic value at every statement instance on it has appeared at
@@ -48,7 +61,7 @@ Irrelevant preceding branch constraints are omitted. This is not an
 output-only quotient: every statement instance may serve as an observer, so
 faults unrelated to the final output can remain covered.
 
-## Dependences and algorithm
+### Dependences and algorithm
 
 Definitions 1–3 adapt branch-sensitive control, data, and potential dependence.
 Definition 4 adds *interactive dependence*: two earlier nodes interact when
@@ -68,7 +81,7 @@ execution, `DGPathExec`:
 Algorithm 3 computes interactive dependence by a pair-reaching-definition
 analysis followed by a worklist closure.
 
-## Guarantees (RQ4)
+### Guarantees (RQ4)
 
 - Lemma 5.1 proves that adjacent nodes in a relevant path slice have a
   transitive-dependence relation.
@@ -82,14 +95,14 @@ The theorem is reachability/fault completeness, not equality between the exact
 symbolic-value quotient and DGSE's approximation. It does not enumerate
 canonical cases or prove guard disjointness, uniqueness, or minimality.
 
-## Residuals, witnesses, and sharing (RQ5)
+### Residuals, witnesses, and sharing (RQ5)
 
 Solver-generated test inputs are witnesses. DGSE deliberately does not store
 symbolic values, residual expressions, or a shared result graph; relevant
 slices stand in for expression equality. Its collective-coverage relation can
 use different paths for different statement values.
 
-## Complexity and performance (RQ6)
+### Complexity and performance (RQ6)
 
 Algorithm 3 has stated `O(n^3)` complexity in CFG nodes; the preceding
 pair-reaching-definition analysis is polynomial. Path exploration remains
@@ -104,7 +117,7 @@ inputs, 10,279 rather than 136,766 total paths. Simpler relevant path
 conditions and fewer expensive unsatisfiable queries sometimes made the time
 speedup larger than the path-count reduction.
 
-## Motivating examples (RQ8)
+### Motivating examples (RQ8)
 
 Figure 1's two independent absolute-value computations show collective value
 coverage: the mixed path contributes no new statement value even though no
@@ -112,40 +125,7 @@ single earlier path matches it. Figure 4 generalizes this to the `2^N` versus
 `N+1` family. Figure 2 contrasts DGSE with PESO: an output-only criterion can
 miss an earlier crash, whereas all-statement value coverage retains it.
 
-## Relationship to PESO, SPD, and our hypothesis
-
-### What is directly established by the work?
-
-Collective coverage of statement-level symbolic values as a path-redundancy
-criterion; a dependence-based exploration that preserves conditional-abort
-fault detection under stated assumptions; sparse relevant path conditions; and
-an explicit independent-product reduction.
-
-### What is our interpretation or inference?
-
-The ideal value criterion is broader than our result observation because it
-treats every statement as a potential fault site, but it is coarser about
-provenance because equal symbolic values are interchangeable. A selection
-observation instead retains an observed site's outcome even when both arms have
-equal residual values, and omits sites structurally inactive for the requested
-result.
-
-PESO partitions executions by one requested output's relevant slice and proves
-that an RSC fixes that output. DGSE seeks all-statement fault coverage and uses
-collective slice coverage. SPD statically computes query-specific path families
-and guarded residual values; DGSE dynamically explores witnesses and stores no
-residual graph.
-
-### Could it subsume our proposed contribution?
-
-It subsumes broad claims that symbolic-value coverage and dependence-guided
-partial conditions can avoid independent path products. It does not directly
-produce exact selection-observation fibers, residual values, compositional
-summaries, or one canonical record per observation. Those narrower differences
-must be formalized; “value-directed symbolic execution” is not a viable novelty
-claim.
-
-## Evidence locations
+### Evidence locations
 
 - Sections 1 and 3, Figures 1–2: exact symbolic-value intuition, collective
   coverage, fault-oriented motivation, and PESO comparison.
@@ -160,7 +140,35 @@ claim.
 - Sections 7 and 9: conservative analysis, solver limitations, program
   coupling, and future work.
 
-## Questions and possible weaknesses
+## Bearing on RQs
+
+What is directly established by the work: collective coverage of
+statement-level symbolic values as a path-redundancy criterion; a
+dependence-based exploration that preserves conditional-abort fault detection
+under stated assumptions; sparse relevant path conditions; and an explicit
+independent-product reduction.
+
+Our interpretation or inference: the ideal value criterion is broader than our
+result observation because it treats every statement as a potential fault
+site, but it is coarser about provenance because equal symbolic values are
+interchangeable. A selection observation instead retains an observed site's
+outcome even when both arms have equal residual values, and omits sites
+structurally inactive for the requested result.
+
+PESO partitions executions by one requested output's relevant slice and proves
+that an RSC fixes that output. DGSE seeks all-statement fault coverage and uses
+collective slice coverage. SPD statically computes query-specific path families
+and guarded residual values; DGSE dynamically explores witnesses and stores no
+residual graph.
+
+Could it subsume our proposed contribution: it subsumes broad claims that
+symbolic-value coverage and dependence-guided partial conditions can avoid
+independent path products. It does not directly produce exact
+selection-observation fibers, residual values, compositional summaries, or one
+canonical record per observation. Those narrower differences must be
+formalized; "value-directed symbolic execution" is not a viable novelty claim.
+
+## Evidence limits
 
 - How does the exact statement-value criterion behave when expression equality
   is semantic rather than syntactic?

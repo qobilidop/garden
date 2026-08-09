@@ -1,12 +1,24 @@
-# ferrez2005fixedrank — ray-shooting reverse search for central arrangements
+---
+citekey: ferrez2005fixedrank
+work:
+  title: "Solving the Fixed Rank Convex Quadratic Maximization in Binary Variables by a Parallel Zonotope Construction Algorithm"
+  author: "Jean-Alexandre Ferrez, Komei Fukuda, Thomas M. Liebling"
+  venue: "European Journal of Operational Research"
+  date: 2005
+  doi: 10.1016/j.ejor.2003.04.011
+read: full-text
+source: "April 2003 revised author manuscript at https://www.cs.mcgill.ca/~fukuda/download/paper/qpzono0304a.pdf (DOI https://doi.org/10.1016/j.ejor.2003.04.011)"
+retrieved: "-"
+notes-by: Codex (initial campaign); Claude Fable 5 (record migration)
+notes-date: 2026-08-04
+synthesis: "Gives the pre-Rada ray-shooting reverse-search algorithm for central hyperplane-arrangement cells with an O(n·LP(n,d)·|C|) time bound — the dense strict-affine specialization of duplicate-free output-polynomial enumeration, with no requested root, enabled closure, or typed residual graph"
+---
 
-- **Status:** deep-read; critical arrangement-enumeration baseline
-- **Primary source:** https://doi.org/10.1016/j.ejor.2003.04.011
-- **Open copy:** https://www.cs.mcgill.ca/~fukuda/download/paper/qpzono0304a.pdf
-- **Version read:** April 2003 revised author manuscript of the 2005 article
-- **Bibliography key:** `ferrez2005fixedrank`
+# ray-shooting reverse search for central arrangements
 
-## Why it matters
+## Evidence
+
+### Why it matters
 
 Ferrez, Fukuda, and Liebling give the pre-Rada ray-shooting reverse-search
 algorithm for cells of a central hyperplane arrangement. Theorem 4.1 improves
@@ -21,7 +33,7 @@ maximization to enumeration of zonotope vertices. That application is
 substantive, but the arrangement-enumeration section has its own theorem,
 algorithm, implementation, and arithmetic study.
 
-## Optimization and geometric reductions
+### Optimization and geometric reductions
 
 For a positive-semidefinite \(Q=V^TV\) of fixed rank \(d\), the paper rewrites
 
@@ -49,7 +61,7 @@ strict sign cells \(C(V)\subseteq\{-,+\}^n\). The enumerated record is a dense
 total sign vector, from which the associated zonotope vertex is the sum of the
 positively marked generators.
 
-## Ray-shooting reverse search
+### Ray-shooting reverse search
 
 After removing zero columns and coalescing collinear columns, adjacency is a
 single feasible sign flip. One LP decides whether index \(j\) is flippable.
@@ -75,7 +87,7 @@ is positive by intersecting with a translated copy of the last hyperplane; the
 other half is obtained by sign negation. This optimization needs to be included
 when interpreting the theorem's output contract.
 
-## Literal pseudocode and tie qualifications
+### Literal pseudocode and tie qualifications
 
 The displayed `CellEnumeration` procedure traverses the positive-last-sign
 tree but contains no explicit `output(c)` statement. Taken literally, it emits
@@ -93,7 +105,7 @@ lexicographic witness representation or coefficient growth. These are
 precision qualifications rather than evidence against the reverse-search
 tree theorem.
 
-## Parallel and arithmetic evidence
+### Parallel and arithmetic evidence
 
 The ZRAM implementation distributes reverse-search subtrees. Tables 2--3 show
 near-linear speedup on the larger tested instance up to eight processors, but
@@ -107,7 +119,20 @@ slower on the reported small cases. The theorem is for rational input and an
 LP-cost abstraction, not the floating-point implementation and not a
 coefficient-bit bound.
 
-## Relationship to selection observations
+### Evidence locations
+
+- Section 3, Theorems 3.1--3.4: fixed-rank reduction, zonotope count, and
+  arrangement duality.
+- Section 4 and Theorem 4.1: regularity, adjacency, ray-shooting parent, and
+  time/space bound.
+- Displayed `CellEnumeration`: positive-half traversal and omitted emission
+  step.
+- Section 5 and Tables 1--4: implementation, parallel scaling, and exact versus
+  floating-point arithmetic.
+- Section 6: separation between exhaustive reverse search and the incomplete
+  local-search heuristic.
+
+## Bearing on RQs
 
 In the strict-affine all-sites-observed specialization, every arrangement cell
 is one dense selection observation and its open input fiber. Ferrez et al.
@@ -121,20 +146,7 @@ typed residual graph, contextual site identity, or boundary-inclusive fiber.
 It emits no general program residual. Its contribution is exactly the dense
 strict real-affine geometric subproblem, not the sparse graph observer.
 
-## Evidence locations
-
-- Section 3, Theorems 3.1--3.4: fixed-rank reduction, zonotope count, and
-  arrangement duality.
-- Section 4 and Theorem 4.1: regularity, adjacency, ray-shooting parent, and
-  time/space bound.
-- Displayed `CellEnumeration`: positive-half traversal and omitted emission
-  step.
-- Section 5 and Tables 1--4: implementation, parallel scaling, and exact versus
-  floating-point arithmetic.
-- Section 6: separation between exhaustive reverse search and the incomplete
-  local-search heuristic.
-
-## Limitations
+## Evidence limits
 
 - The sign output is dense, strict, and full dimensional.
 - Literal emission and antipodal reconstruction are elided from the

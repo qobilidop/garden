@@ -1,11 +1,24 @@
-# jones2006lcp — full-dimensional parametric LCP enumeration
+---
+citekey: jones2006lcp
+work:
+  title: "Multiparametric Linear Complementarity Problems"
+  author: "Colin N. Jones, Manfred Morari"
+  venue: "CDC 2006"
+  date: 2006
+  doi: 10.1109/CDC.2006.377797
+read: full-text
+source: "Open conference paper, https://doi.org/10.1109/CDC.2006.377797"
+retrieved: "-"
+notes-by: Codex (initial campaign); Claude Fable 5 (record migration)
+notes-date: 2026-08-04
+synthesis: "Formulates multiparametric LCPs for positive-semidefinite matrices, covering pLP and convex pQP instances, and enumerates all full-dimensional solution regions via lexicographic perturbation and adjacency exploration — the direct precursor generalized and analyzed by Columbano, Fukuda, and Jones."
+---
 
-- **Status:** deep-read; direct sufficient-matrix precursor
-- **Primary source:** https://doi.org/10.1109/CDC.2006.377797
-- **Version read:** open conference paper
-- **Bibliography key:** `jones2006lcp`
+# Multiparametric Linear Complementarity Problems
 
-## Contribution
+## Evidence
+
+### Contribution
 
 Jones and Morari formulate multiparametric linear complementarity problems for
 positive-semidefinite matrices, covering pLP and convex pQP instances, and
@@ -14,7 +27,7 @@ assigns a unique complementary basis to degenerate interiors, and adjacency
 exploration reaches every full-dimensional basis region. The result is the
 direct precursor generalized and analyzed by Columbano, Fukuda, and Jones.
 
-## Guarantees and boundary
+### Guarantees
 
 The full-dimensional regions have disjoint interiors and their closures cover
 the parameter domain under the paper's assumptions. The enumeration is
@@ -22,15 +35,24 @@ complete for the perturbed basis representation, while boundary-only solution
 sets are not separate outputs. The paper calls the procedure output-sensitive
 but does not provide the later closed per-output formulas.
 
-The basis and its inequalities determine a dense optimization critical region.
-There is no requested-result demand, structurally absent selection coordinate,
-typed shared graph, contextual event identity, or residual for a general pure
-dataflow computation.
-
-## Evidence locations
+### Evidence locations
 
 - Abstract and Section I: pLCP class and inclusion of pLP/pQP.
 - Section II and Theorem 2: polyhedral solution regions, coverage, and interior
   separation.
 - Section III and Algorithm 1: adjacency enumeration and completeness.
 - Final discussion: output-sensitive framing and scope limitations.
+
+## Bearing on RQs
+
+The basis and its inequalities determine a dense optimization critical region.
+There is no requested-result demand, structurally absent selection coordinate,
+typed shared graph, contextual event identity, or residual for a general pure
+dataflow computation.
+
+## Evidence limits
+
+Read at full-text level; the source note recorded no dedicated evidence-limits
+section beyond the boundary caveats already stated above (the paper calls its
+procedure output-sensitive but does not give the later closed per-output
+formulas; boundary-only solution sets are not separate outputs).

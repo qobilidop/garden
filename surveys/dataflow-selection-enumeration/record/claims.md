@@ -25,6 +25,8 @@ source's claim cannot be mistaken for this survey's synthesis.
   induce different observers. Abstract merging, symmetry quotienting, and
   property-guided pruning are adjacent instances of the same observer-relative
   principle rather than direct implementations of the target enumerator.
+- **Scope:** Cross-literature classification of omission mechanisms; a descriptive taxonomy with no algorithmic content of its own.
+- **Prior frontier:** Each omission mechanism is separately established in its own literature (projected enumeration, don’t-care minimization, equal-behavior factorization, decision-path sparsity); the four-way distinction and the adjacency classification are this survey’s organization.
 - **Evidence:** the evidence ledger connects the four omission mechanisms
   and adjacent observer-relative reductions to their primary-source rows. The
   taxonomy itself is a cross-literature synthesis, not a theorem attributed to
@@ -39,6 +41,9 @@ source's claim cannot be mistaken for this survey's synthesis.
   specialization, and global reachability-and-outcome projection induce the
   same observer fibers. Reachability alone is strictly coarser when distinct
   outcomes expose the same operand nodes.
+- **Scope:** Finite, total selective term graphs under the survey's deterministic pure-dataflow model.
+- **Prior frontier:** The component constructions are individually established (guarded/multipath symbolic execution, projected AllSMT, demand semantics, decision-path records); the recorded derivation is the cross-literature equivalence on this model
+  (E002, low certainty: the fiber correspondence is the survey's synthesis).
 - **Presentation rule:** Attribute the component constructions to their
   established literatures; present only the cross-literature equivalence as our
   organizing derivation.
@@ -49,6 +54,8 @@ source's claim cannot be mistaken for this survey's synthesis.
 - **Statement:** A concolically generated local guard is the exact input fiber
   of one observation, and it is equivalent to fixing the projected totalized
   outcome coordinates in the global reachability encoding.
+- **Scope:** Single observations of the same model; equivalence of the concolic local guard and the projected global encoding, with cost and representation kept separate.
+- **Prior frontier:** Phan’s AllSMT model-and-block enumeration and Spallitta’s disjoint projected enumeration establish the enumeration side; the identification of the concolic local guard with the exact fiber of the projected encoding is the recorded derivation.
 - **Consequence:** Model-and-full-fiber-block and naive projected AllSMT both
   require \(K\) satisfying models plus a final unsatisfiable query. Solver time
   and representation size remain separate.
@@ -60,10 +67,12 @@ source's claim cannot be mistaken for this survey's synthesis.
   requesting a dense network's output makes every activation site observed.
   On full-dimensional interiors, feasible activation patterns and their
   polyhedral regions are exactly the resulting observation image and fibers.
+- **Scope:** All-sites-observed affine specializations — hyperplane-arrangement cells, dense ReLU activation regions on full-dimensional interiors, and parametric partitions.
 - **Prior frontier:** Avis and Fukuda prove output-polynomial reverse-search
-  enumeration of every arrangement cell, Sleumer improves the fixed-dimension
+  enumeration of every arrangement cell under an arithmetic/LP-operation cost
+  model (not a coefficient-bit bound), Sleumer improves the fixed-dimension
   arithmetic bound, Ferrez et al. give a pre-Rada ray-shooting central-arrangement
-  algorithm with \(O(KQ\,LP(Q,D))\) time and input-polynomial working space,
+  algorithm with \(O(K m\,LP(m,D))\) time (writing \(m\) for the hyperplane count) and input-polynomial working space,
   and Rada and Černý give a later complete duplicate-free incremental
   formulation; Deza and Pournin give a self-contained rational-bit analysis of
   zonotope traversal
@@ -98,11 +107,12 @@ source's claim cannot be mistaken for this survey's synthesis.
 - **Statement:** Totalizing each site with an `unobserved` sentinel makes the
   selection observation a finite-valued function. Its nonempty fibers are the
   exact kernel equivalence classes of that observer.
-- **Prior frontier:** IOSTS input-equivalence-class partitioning enumerates and
-  minimizes exact behavior-preserving classes over infinite input domains;
-  SFSM property testing enumerates satisfiable Boolean atoms of a finite
-  guard/output/property alphabet; projected AllSMT enumerates a chosen finite
-  observer vector.
+- **Scope:** Totalized finite-valued observers over the survey model; the partition statement, not any construction.
+- **Prior frontier:** The partition statement itself is elementary (the kernel
+  of a totalized finite-valued function); what is established elsewhere is its
+  exact generic enumeration — IOSTS input-equivalence-class partitioning over
+  infinite input domains, SFSM property testing over satisfiable Boolean
+  atoms, and projected AllSMT over a chosen finite observer vector.
 - **Consequence:** The remaining graph-specific result is the compact local
   form of each fiber and its residual, plus any demonstrable construction
   advantage. The quotient and generic exact enumeration are established.
@@ -115,6 +125,7 @@ source's claim cannot be mistaken for this survey's synthesis.
   exactly the tagged hole forced by a pure Boolean property and skips all total
   refinements when the answer is known. Korat supplies access-guided exhaustive
   generation for finitized object inputs.
+- **Scope:** Property-directed demand-driven generation over finitized or constructor-shaped inputs.
 - **Prior frontier:** BLI, BLISS, LISSA, and PLI provide the imperative heap
   continuation, culminating in exact preservation of bounded jointly feasible
   heap/path symbolic states.
@@ -131,6 +142,7 @@ source's claim cannot be mistaken for this survey's synthesis.
   leaf guard, and its leaf carries a result. Totalizing graph-site
   non-observation turns the target observer into an ordinary finite-range
   function. For finitely encoded inputs it is compilable as an MTBDD or ADD.
+- **Scope:** Finitely encoded inputs and compiled representations of totalized observers.
 - **Prior frontier:** Bryant proves canonicity of reduced ordered Boolean
   function graphs for a fixed order; Bahar et al. extend the terminal carrier
   to finite algebraic values. Both retain exponential worst cases.
@@ -146,9 +158,11 @@ source's claim cannot be mistaken for this survey's synthesis.
 - **Statement:** For fixed stream inputs and output-position demands, classical
   dataflow semantics defines or implements a least sufficient computation
   under sequentiality/stability assumptions.
+- **Scope:** Fixed stream inputs and output-position demands under the cited sequentiality/stability assumptions.
 - **Prior frontier:** Pingali and Arvind give a compositional reverse-demand
   transformation; Avron and Sasson characterize uniform existence of least
-  legal demanded valuations by stability.
+  legal demanded valuations by stability; Xia et al. give the mechanized
+  bidirectional demand semantics that is the closest modern result (E025).
 - **Consequence:** Conditional on a translation proving that the source
   language's semantic least demand matches our declared all-operands policy,
   the remaining quantification is over symbolic inputs: enumerate the range of
@@ -163,13 +177,16 @@ source's claim cannot be mistaken for this survey's synthesis.
   output can merge cases whose unrequested continuation differs. That quotient
   is extensional and distinct from recording the sparse internal selections
   reached while computing the request.
+- **Scope:** The relation between requested-output projections and the intensional sparse observation map.
 - **Prior frontier:** König and Mönnigmann prove that explicit-MPC regions with
   different later-horizon actions can share the same requested first action.
   Mitze et al. extend common-first-action reuse to nonlinear MPC. Kvasnica and
   coauthors give exact clipping- and separator-based factorizations that erase
-  region descriptions while preserving the pointwise controller output. Shin
+  region descriptions while preserving the pointwise controller output (E026,
+  low certainty: the cross-domain correspondence is the survey's synthesis). Shin
   and Yang independently identify polyhedral reward sets that induce the same
-  optimal MDP policy and study policy invariance and reward-space reduction.
+  optimal MDP policy and study policy invariance and reward-space reduction
+  (E031, abstract-only read, low certainty).
 - **Consequence:** “Requested-root-relative” alone is not a contribution. The
   survey's object must be an intensional, input-dependent sparse map of
   contextual selection-site outcomes that retains observed equal-valued
@@ -181,6 +198,7 @@ source's claim cannot be mistaken for this survey's synthesis.
 - **Statement:** Full-dimensional pLP/pQP/pLCP partitions already have exact
   degeneracy-safe traversals, explicit output-sensitive LP-oracle bounds, and
   unique optimizer selections under stated assumptions.
+- **Scope:** Full-dimensional pLP/pQP/pLCP partitions under each work’s stated matrix-class assumptions (Patrinos and Sarimveis work without nondegeneracy).
 - **Prior frontier:** Jones and Morari give the positive-semidefinite pLCP
   precursor; Columbano, Fukuda, and Jones give explicit general-position and
   lexicographically perturbed sufficient-matrix bounds; Spjøtvold, Tøndel, and
@@ -202,6 +220,7 @@ source's claim cannot be mistaken for this survey's synthesis.
 - **Statement:** Symbolic partial-order methods already retain representative
   schedule-bearing symbolic paths while omitting interleavings that are
   equivalent for a declared reachability or temporal-property observer.
+- **Scope:** Concurrent-schedule observers for declared reachability or temporal properties.
 - **Prior frontier:** Holzmann, Godefroid, and Pirottin preserve full state
   coverage; Alur et al. preserve local-property verification under a symbolic
   partial-order reduction; SymPaths proves correctness and completeness of a
@@ -218,6 +237,7 @@ source's claim cannot be mistaken for this survey's synthesis.
   markings consistent with an observed transition-label word, compute the set
   of minimum-token initial markings consistent with that word, and incorporate
   time and unobservable events.
+- **Scope:** Petri-net state estimation under partial event-label observation.
 - **Prior frontier:** Giua, Júlvez, and Seatzu give a fixed-structure linear
   representation of the compatible current-marking set; Corona et al. make the
   nondeterministic-label case explicit; Li and Hadjicostis compute a complete
@@ -232,6 +252,7 @@ source's claim cannot be mistaken for this survey's synthesis.
 - **Status:** survey synthesis; implementation claim rejected
 - **Statement:** A smaller exact semantic quotient can cost more to construct
   than a direct analysis of the unreduced symbolic representation.
+- **Scope:** BDD-based bisimulation quotients for symbolic invariant checking, the setting of the single supporting study.
 - **Prior frontier:** Fisler and Vardi show theoretically and empirically that
   bisimulation minimization often fails to improve symbolic invariant checking.
 - **Consequence:** The formal observer-fiber construction cannot imply a
@@ -246,6 +267,7 @@ source's claim cannot be mistaken for this survey's synthesis.
   requested marking while omitting transitions outside all such
   configurations, and decide multiplicity-sensitive reveals relations over
   bounded equal-conflict maximal runs.
+- **Scope:** Petri-net unfolding prefixes and reveals relations over bounded equal-conflict maximal runs.
 - **Prior frontier:** Bonet et al. separate user-declared configuration
   equivalence, cutting contexts, and event selection; Chatain and Paulevé prove
   completeness of finite goal-driven prefixes; Bernardinello et al. define
@@ -258,13 +280,15 @@ source's claim cannot be mistaken for this survey's synthesis.
 
 ### C15 — Observer, mechanism, and representation are separate comparison axes
 
-- **Status:** organizing survey synthesis
+- **Status:** survey synthesis; organizing terminology
 - **Statement:** A solver or traversal discovers nonempty fibers of a declared
   observer, while a flat guard list, tree, decision diagram, compiled circuit,
   or polyhedral complex represents those fibers. Equality of input kernels
   after explicit instrumentation gives the same fibers; matching labeled
   records additionally requires an explicit bijection between feasible images.
   Similar output syntax establishes neither condition.
+- **Scope:** The survey's comparison methodology across every surveyed route; terminology, not a priority claim.
+- **Prior frontier:** The separation echoes established observer-relative equivalence and knowledge-compilation representation distinctions; its use as a three-way relationship classification for this problem is the survey’s organizing apparatus.
 - **Consequence:** The main survey classifies prior work as a direct
   presentation, restricted specialization, or adjacent comparator before
   transferring correctness or complexity results. This is the paper's

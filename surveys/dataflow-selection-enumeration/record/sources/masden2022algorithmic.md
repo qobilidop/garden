@@ -1,12 +1,24 @@
-# masden2022algorithmic — Algorithmic Determination of the Combinatorial Structure of ReLU Regions
+---
+citekey: masden2022algorithmic
+work:
+  title: "Algorithmic Determination of the Combinatorial Structure of the Linear Regions of ReLU Neural Networks"
+  author: "Marissa A. Masden"
+  venue: "SIAM J. Applied Algebra and Geometry 9(2)"
+  date: 2025
+  doi: 10.1137/24m1646996
+read: full-text
+source: "arXiv v1 full text for theorems/algorithms; 2025 SIAM J. Applied Algebra and Geometry publication metadata via https://doi.org/10.1137/24M1646996"
+retrieved: "-"
+notes-by: Codex (initial campaign); Claude Fable 5 (record migration)
+notes-date: 2026-08-04
+synthesis: "Computes a strictly richer object than a list of full-dimensional activation patterns — the cells in every dimension of a ReLU network's canonical polyhedral complex and their complete face poset via injective ternary sign sequences — establishing that exact lower-dimensional structure is already developed in the neural-region literature"
+---
 
-- **Status:** deep-read; critical richer-region predecessor
-- **Primary source:** https://doi.org/10.1137/24M1646996
-- **Version read:** 2025 publication metadata, abstract, and 42-entry bibliography;
-  arXiv v1 for the full theorem and algorithm text
-- **Bibliography key:** `masden2022algorithmic`
+# Algorithmic Determination of the Combinatorial Structure of ReLU Regions
 
-## Why it matters
+## Evidence
+
+### Why it matters
 
 Masden computes a strictly richer object than a list of full-dimensional
 activation patterns: the cells in every dimension of a ReLU network's
@@ -14,7 +26,7 @@ canonical polyhedral complex and their complete face poset. This establishes
 that ternary sign sequences and exact lower-dimensional structure are already
 developed in the neural-region literature.
 
-## Object and sign semantics
+### Object and sign semantics
 
 Definition 13 assigns every cell a sign sequence in
 \(\{-1,0,1\}^N\), using the signs of all node maps. Theorem 14 proves that
@@ -28,7 +40,7 @@ Theorem 15 shows that the set of dense binary activation patterns of
 full-dimensional regions does not determine cell adjacency or decision-boundary
 topology. The richer ternary complex is needed for that purpose.
 
-## Algorithm and guarantee
+### Algorithm and guarantee
 
 The layerwise algorithm begins with first-layer hyperplane intersections. For
 each earlier cell and each later layer, it solves systems combining \(k\) new
@@ -47,7 +59,17 @@ intermediate neurons for random initialization, while dependence on input
 dimension is exponential. This is not a worst-case polynomial bound for an
 arbitrary trained network.
 
-## Relationship to selection observations
+### Evidence locations
+
+- Definitions 10--13 and Lemma 12, paper pp. 3--4 and appendix: genericity,
+  supertransversality, and sign sequences.
+- Theorems 14--15 and Lemma 16, pp. 3--4 and appendix: injectivity,
+  insufficiency of binary patterns, and codimension.
+- Theorem 20 and Lemma 21, pp. 4--5: cubical dual and face reconstruction.
+- Lemmas 22--23 and Section 4.1, pp. 6 and appendix: layerwise enumeration.
+- Section 4.3, p. 7: numerical and complexity qualifications.
+
+## Bearing on RQs
 
 The paper defeats novelty claims for ternary structural regime labels, exact
 cell-complex extraction, and face-poset reconstruction. Every neural node
@@ -65,12 +87,8 @@ retaining equal-valued selected outcomes. The objects answer different
 questions and neither should be called simply "the canonical partition"
 without a fixed equivalence relation.
 
-## Evidence locations
+## Evidence limits
 
-- Definitions 10--13 and Lemma 12, paper pp. 3--4 and appendix: genericity,
-  supertransversality, and sign sequences.
-- Theorems 14--15 and Lemma 16, pp. 3--4 and appendix: injectivity,
-  insufficiency of binary patterns, and codimension.
-- Theorem 20 and Lemma 21, pp. 4--5: cubical dual and face reconstruction.
-- Lemmas 22--23 and Section 4.1, pp. 6 and appendix: layerwise enumeration.
-- Section 4.3, p. 7: numerical and complexity qualifications.
+The 2025 published version was read only at metadata/abstract/bibliography
+level; the theorem and algorithm claims above are anchored to arXiv v1 full
+text, which may differ in detail from the final published wording.

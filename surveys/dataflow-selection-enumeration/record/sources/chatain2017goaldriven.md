@@ -1,13 +1,24 @@
-# chatain2017goaldriven — Goal-driven Petri-net unfolding
+---
+citekey: chatain2017goaldriven
+work:
+  title: "Goal-Driven Unfolding of Petri Nets"
+  author: "Thomas Chatain, Loïc Paulevé"
+  venue: "CONCUR 2017"
+  date: 2017
+  doi: 10.4230/lipics.concur.2017.18
+read: full-text
+source: "Published CONCUR 2017 LIPIcs article via https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.CONCUR.2017.18, volume 85, article 18, pp. 18:1–18:16"
+retrieved: "-"
+notes-by: Codex (initial campaign); Claude Fable 5 (record migration)
+notes-date: 2026-08-04
+synthesis: "Goal-driven Petri-net unfolding skips transitions outside every minimal goal-reaching configuration while preserving the complete set of minimal configurations — a direct instance of observer-relative omission for partial-order configurations, not caller-input partitioning"
+---
 
-- **Status:** deep-read; exact goal-relative configuration-enumeration boundary
-- **Primary source and open full text:**
-  https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.CONCUR.2017.18
-- **Version read:** published CONCUR 2017 LIPIcs article, volume 85, article
-  18, pp. 18:1--18:16
-- **Bibliography key:** `chatain2017goaldriven`
+# Goal-Driven Unfolding of Petri Nets
 
-## Evidence locations
+## Evidence
+
+### Evidence locations
 
 - Section 2, Definitions 1--5 (pp. 18:4--18:5), works with safe Petri nets,
   occurrence-net configurations, unfoldings, and adequate-order finite
@@ -49,7 +60,7 @@
   goal-driven construction can instead retain only all minimal configurations
   relevant to the goal.
 
-## Relationship and evidence limit
+## Bearing on RQs
 
 This directly instantiates observer-relative omission: for a requested goal
 marking, it skips transitions outside every minimal goal-reaching
@@ -61,3 +72,8 @@ The enumerated objects are partial-order Petri-net configurations leading to a
 marking. The method does not partition caller inputs by sparse internal-site
 outcomes, construct exact inverse fibers or guards, or attach a typed symbolic
 residual to each observation.
+
+## Evidence limits
+
+Read at full-text level (published CONCUR 2017 LIPIcs article, pp. 18:1–18:16);
+the note records no evidence-quality caveats beyond the scope boundary above.

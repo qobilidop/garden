@@ -1,12 +1,24 @@
-# krafczyk2017effective — Effective Infinite-State Model Checking by IECP
+---
+citekey: krafczyk2017effective
+work:
+  title: "Effective Infinite-State Model Checking by Input Equivalence Class Partitioning"
+  author: "Niklas Krafczyk, Jan Peleska"
+  venue: "ICTSS 2017"
+  date: 2017
+  doi: 10.1007/978-3-319-67549-7_3
+read: full-text
+source: "Author-deposited ICTSS 2017 paper via https://doi.org/10.1007/978-3-319-67549-7_3, pp. 38–53 (open copy: https://inria.hal.science/hal-01678956)"
+retrieved: "-"
+notes-by: Codex (initial campaign); Claude Fable 5 (record migration)
+notes-date: 2026-08-04
+synthesis: "Constructs the coarsest input-equivalence-class partition of an infinite input domain by enumerating satisfiable transition-condition combinations and merging behaviorally indistinguishable classes — the closest generic predecessor for exact input-fiber enumeration of a finite observer"
+---
 
-- **Status:** deep-read; critical observer-equivalence predecessor
-- **Primary source:** https://doi.org/10.1007/978-3-319-67549-7_3
-- **Version read:** author-deposited ICTSS 2017 paper, pp. 38--53
-- **Open copy:** https://inria.hal.science/hal-01678956
-- **Bibliography key:** `krafczyk2017effective`
+# Effective Infinite-State Model Checking by Input Equivalence Class Partitioning
 
-## Why it matters
+## Evidence
+
+### Why it matters
 
 Krafczyk and Peleska construct an exact finite partition of a possibly infinite
 input domain according to what transition behavior every finite state/output
@@ -21,7 +33,7 @@ equivalence-class enumeration, finite abstraction of an infinite input domain,
 solver-pruned enumeration of predicate combinations, disjoint exhaustive
 guards, or post-enumeration coarsening.
 
-## System and equivalence relation
+### System and equivalence relation
 
 The model is a livelock-free input/output state-transition system (IOSTS).
 Inputs may have infinite domains; internal state variables and outputs have
@@ -37,7 +49,7 @@ If $g_{i,j}$ denotes the condition under which state class $A_j$ is reachable
 from $A_i$, then the per-source observation is the truth pattern of the finite
 family $G_i=\{g_{i,j}\}_j$, equivalently its set of true conditions.
 
-## Enumeration algorithm
+### Enumeration algorithm
 
 **Algorithm 1** recursively enumerates every satisfiable subset $p\subseteq
 G_i$. Unsatisfiable prefixes prune their supersets. Because one satisfiable
@@ -59,7 +71,7 @@ Transducer minimization can then merge symbols whose transitions have the same
 target and output from every minimized state; the union of their input regions
 is the coarsest IECP.
 
-## Complexity boundary
+### Complexity boundary
 
 Algorithm 1 searches subsets of each $G_i$, so it has an immediate
 $2^{|G_i|}$ worst-case candidate space. Algorithm 2 searches a product of
@@ -73,7 +85,7 @@ Transducer construction/minimization adds cost in the finite number of state
 and input classes. Formula serialization and union after merging are not
 analyzed as enumeration output size.
 
-## Reduction from selection observations
+### Reduction from selection observations
 
 Instrument a pure graph as a one-step transition system whose finite visible
 output is the totalized selection-observation vector
@@ -92,6 +104,18 @@ realizable vector, the coarsest IECP is extensionally exactly
   x\sim_\Omega y\iff
   \overline\Omega_{G,R}(x)=\overline\Omega_{G,R}(y).
 \]
+
+### Evidence locations
+
+- Section 2.1, paper pp. 40--42: IOSTS and finite `MO` state classes.
+- Section 2.2, pp. 42--47: IECP definition, Algorithms 1--2, disjointification,
+  exhaustive satisfiable-product enumeration, and product pruning.
+- Section 2.3, pp. 47--49: transducer construction, minimization, and coarsest
+  IECP.
+- Section 3, pp. 49--52: experiments against explicit-discretization model
+  checking.
+
+## Bearing on RQs
 
 This is a genuine semantic reduction of the partition object. It does not yet
 give a competitive construction from the original graph: supplying one
@@ -114,17 +138,7 @@ Safe claim:
 > structure-directed enumeration and residualization theorem that avoids
 > predeclaring all observer classes, not the existence of the partition.
 
-## Evidence locations
-
-- Section 2.1, paper pp. 40--42: IOSTS and finite `MO` state classes.
-- Section 2.2, pp. 42--47: IECP definition, Algorithms 1--2, disjointification,
-  exhaustive satisfiable-product enumeration, and product pruning.
-- Section 2.3, pp. 47--49: transducer construction, minimization, and coarsest
-  IECP.
-- Section 3, pp. 49--52: experiments against explicit-discretization model
-  checking.
-
-## Assumptions and limitations
+## Evidence limits
 
 - Finite internal-state and output domains and livelock freedom are essential.
 - Transition conditions $g_{i,j}$ are assumed obtainable from the model.
@@ -134,4 +148,3 @@ Safe claim:
   identities or structural non-observation.
 - Coarsest merging is by finite transducer behavior, not by equality of
   symbolic residual functions.
-

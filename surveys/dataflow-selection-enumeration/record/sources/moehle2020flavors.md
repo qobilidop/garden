@@ -1,11 +1,24 @@
-# moehle2020flavors — Four Flavors of Entailment
+---
+citekey: moehle2020flavors
+work:
+  title: "Four Flavors of Entailment"
+  author: "Sibylle Möhle, Roberto Sebastiani, Armin Biere"
+  venue: "SAT 2020"
+  date: 2020
+  doi: 10.1007/978-3-030-51825-7_5
+read: full-text
+source: "SAT 2020 Springer LNCS 12178 proceedings text, pp. 62–71, via https://doi.org/10.1007/978-3-030-51825-7_5"
+retrieved: "-"
+notes-by: Codex (initial campaign); Claude Fable 5 (record migration)
+notes-date: 2026-08-04
+synthesis: "Separates four increasingly powerful entailment checks for recognizing when a partial assignment covers projected models, culminating in the exact forall-X-exists-Y projected query — the semantic core of compressing several visible assignments into one cube when hidden witnesses may differ"
+---
 
-- **Status:** deep-read
-- **Primary source:** https://doi.org/10.1007/978-3-030-51825-7_5
-- **Version read:** SAT 2020, Springer LNCS 12178 proceedings text, pp. 62–71
-- **Bibliography key:** `moehle2020flavors`
+# Four Flavors of Entailment
 
-## Why it matters
+## Evidence
+
+### Why it matters
 
 This paper separates four increasingly powerful ways to recognize that a
 partial assignment already covers projected models. Its strongest condition
@@ -13,7 +26,7 @@ is the exact `forall X exists Y` projected-entailment query. That quantifier
 order is the semantic core of compressing several visible assignments into one
 cube when each visible completion may require a different hidden witness.
 
-## Formula and output model
+### Formula and output model
 
 The input is a Boolean formula `F(X,Y)`, where `X` contains relevant variables
 and `Y` contains irrelevant variables. Enumeration should produce a DNF `M`
@@ -32,7 +45,7 @@ entailment fails because some joint `x2,y` extensions falsify `F`, but projected
 entailment holds because each choice of `x2` has a matching `y` (Table 1,
 pp. 65–66).
 
-## The four entailment checks
+### The four entailment checks
 
 The paper orders four checks by power and cost (Section 3, pp. 64–66):
 
@@ -50,7 +63,7 @@ Table 1 gives formulas and trails separating the four levels, so none of these
 tests can in general replace the next stronger test without losing possible
 cube compression.
 
-## Enumeration procedure and guarantees
+### Enumeration procedure and guarantees
 
 Figure 1 embeds the selected entailment oracle in chronological CDCL. The
 procedure propagates, analyzes conflicts, and otherwise either records the
@@ -72,7 +85,7 @@ numbered theorem/proof statements. The paper supplies no OutputP, IncP, or
 polynomial-delay theorem. More powerful oracles may shorten outputs but make
 each entailment check substantially harder.
 
-## Implementation and empirical scope
+### Implementation and empirical scope
 
 The contribution is theoretical and algorithmic. It proposes combining dual
 reasoning with chronological CDCL and contrasts the design with blocking and
@@ -80,39 +93,7 @@ shrinking enumerators, but reports no implementation evaluation. The authors
 leave implementation and experiments as future work (Sections 5–6, pp.
 69–71).
 
-## Relationship to our hypothesis
-
-### What is directly established by the work?
-
-A partial cube over visible variables covers all its visible completions under
-existential projection exactly when the residual satisfies a
-`forall visible, exists hidden` QBF. A SAT-only entailment oracle is incomplete
-for that purpose. Chronological CDCL can use any of four increasingly strong
-checks to enumerate a nonoverlapping DNF without blocking clauses.
-
-### What is our interpretation or inference?
-
-This result directly covers the semantic question posed when a projected
-AllSAT method tries to omit some explicit observation coordinates from its
-output cube. If hidden program or encoding choices can depend on the omitted
-observation values, exact compression requires the strongest projected query,
-not one shared hidden witness.
-
-Our proposed exact-fiber enumeration avoids that compression problem by first
-fixing a complete graph-relative observation, including inactivity values, and
-then deriving the inputs with exactly that observation. It can still use a QBF
-or analogous quantified check to simplify a fiber, but shortest-cube discovery
-is not part of the record's semantic identity.
-
-### Could it subsume our proposed contribution?
-
-It subsumes the claim that `forall X exists Y` projected entailment is a new
-semantic basis for partial projected model cubes, and it supplies an important
-blocking-free enumeration baseline. It does not define demanded graph sites,
-structural non-observation, observed equal-arm choices, exact guards for fixed
-observations, residual program values, or modular composition.
-
-## Evidence locations
+### Evidence locations
 
 - Sections 1–2, pp. 62–64: projected-model problem and chronological-CDCL
   setup.
@@ -122,7 +103,35 @@ observations, residual program values, or modular composition.
 - Figure 2 and Section 5, pp. 67–70: calculus and correctness discussion.
 - Section 6, pp. 70–71: claimed novelty and future implementation work.
 
-## Questions and possible weaknesses
+## Bearing on RQs
+
+What is directly established by the work: a partial cube over visible
+variables covers all its visible completions under existential projection
+exactly when the residual satisfies a `forall visible, exists hidden` QBF. A
+SAT-only entailment oracle is incomplete for that purpose. Chronological CDCL
+can use any of four increasingly strong checks to enumerate a nonoverlapping
+DNF without blocking clauses.
+
+Our interpretation or inference: this result directly covers the semantic
+question posed when a projected AllSAT method tries to omit some explicit
+observation coordinates from its output cube. If hidden program or encoding
+choices can depend on the omitted observation values, exact compression
+requires the strongest projected query, not one shared hidden witness.
+
+Our proposed exact-fiber enumeration avoids that compression problem by first
+fixing a complete graph-relative observation, including inactivity values, and
+then deriving the inputs with exactly that observation. It can still use a QBF
+or analogous quantified check to simplify a fiber, but shortest-cube discovery
+is not part of the record's semantic identity.
+
+Could it subsume our proposed contribution: it subsumes the claim that
+`forall X exists Y` projected entailment is a new semantic basis for partial
+projected model cubes, and it supplies an important blocking-free enumeration
+baseline. It does not define demanded graph sites, structural non-observation,
+observed equal-arm choices, exact guards for fixed observations, residual
+program values, or modular composition.
+
+## Evidence limits
 
 - The strongest exact oracle is `Pi_2^P`; no bound shows when smaller output
   compensates for that per-check cost.

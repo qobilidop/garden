@@ -1,13 +1,24 @@
-# boyapati2002korat — Korat
+---
+citekey: boyapati2002korat
+work:
+  title: "Korat: Automated Testing Based on Java Predicates"
+  author: "Chandrasekhar Boyapati, Sarfraz Khurshid, Darko Marinov"
+  venue: "ISSTA 2002"
+  date: 2002
+  doi: 10.1145/566172.566191
+read: full-text
+source: "ISSTA 2002 paper (pp. 123-133) via https://doi.org/10.1145/566172.566191; open copy at https://mir.cs.illinois.edu/marinov/publications/BoyapatiETAL02Korat.pdf"
+retrieved: "-"
+notes-by: Codex (initial campaign); Claude Fable 5 (record migration)
+notes-date: 2026-08-04
+synthesis: "Korat's access-guided backtracking establishes sound, exhaustive, nonredundant bounded generation driven by an executable predicate's dynamic read set — the direct search-principle predecessor, though its emitted artifact is concrete inputs rather than a symbolic observation fiber"
+---
 
-- **Status:** deep-read; critical predicate-demanded enumeration predecessor
-- **Primary source:** https://doi.org/10.1145/566172.566191
-- **Version read:** ISSTA 2002 paper, pp. 123--133
-- **Open copy:**
-  https://mir.cs.illinois.edu/marinov/publications/BoyapatiETAL02Korat.pdf
-- **Bibliography key:** `boyapati2002korat`
+# Korat: Automated Testing Based on Java Predicates
 
-## Why it matters
+## Evidence
+
+### Why it matters
 
 Korat exhaustively generates every bounded nonisomorphic input satisfying an
 executable Java predicate. Its central optimization monitors exactly which
@@ -20,7 +31,7 @@ first consumer-access-guided exhaustive generation, first use of partial
 candidate information to prune a finite Cartesian product, or first
 nonredundant bounded enumeration driven by an executable observer.
 
-## Finitized input domain
+### Finitized input domain
 
 A **finitization** gives a finite domain for every field of every allocated
 object: a finite number of objects per class, finite primitive ranges, and the
@@ -33,7 +44,7 @@ The executable predicate is usually `repOk`, a representation invariant, but
 Korat wraps arbitrary multi-argument preconditions into the same interface.
 The required search property is Boolean acceptance of a complete candidate.
 
-## Access-guided search
+### Access-guided search
 
 Instrumentation records fields in order of first access during one predicate
 execution. After the predicate returns, Korat backtracks on this dynamic field
@@ -52,7 +63,7 @@ This is a dynamic dependency trace. A naturally short-circuiting predicate can
 reject a bad prefix after reading few fields; a predicate that reads everything
 before returning yields little or no pruning.
 
-## Completeness and symmetry
+### Completeness and symmetry
 
 For deterministic predicates, field-access pruning does not remove any valid
 candidate because values not read during the execution cannot influence its
@@ -70,7 +81,7 @@ not over equal predicate access traces or equal graph-selection observations.
 Two nonisomorphic valid structures remain separate even if the predicate reads
 the same fields and returns the same result.
 
-## Complexity boundary
+### Complexity boundary
 
 The worst case remains the full field-domain product when the predicate reads
 every field. The paper gives exact raw-space formulas and empirical candidate,
@@ -82,7 +93,19 @@ The empirical conclusion is that access-guided backtracking supplies the main
 pruning and symmetry breaking mainly reduces the number of valid structures.
 This is evidence, not a worst-case separation theorem.
 
-## Relationship to selection-observation enumeration
+### Evidence locations
+
+- Abstract and Section 1, paper pp. 123--124: complete nonisomorphic bounded
+  generation and access-guided pruning.
+- Sections 3.1--3.2, pp. 126--127: finitization, candidate vector, and raw
+  product size.
+- Section 3.3, pp. 127--128: dynamic field ordering, unread-field pruning,
+  valid-candidate handling, and nondeterministic-predicate guarantee.
+- Section 3.4, pp. 128--129: rooted object-graph isomorphism and canonical
+  representative generation.
+- Section 5, pp. 130--132: empirical candidate counts and pruning attribution.
+
+## Bearing on RQs
 
 Korat's observer is one Boolean predicate. Its dynamic read set is used to
 accelerate exhaustive generation, but it is not part of the emitted semantic
@@ -117,19 +140,7 @@ subsumption of the result type. The safe statement is:
 > Korat. Our formal synthesis changes the quotient key and emitted artifact,
 > not the general principle of refining or backtracking only on accessed data.
 
-## Evidence locations
-
-- Abstract and Section 1, paper pp. 123--124: complete nonisomorphic bounded
-  generation and access-guided pruning.
-- Sections 3.1--3.2, pp. 126--127: finitization, candidate vector, and raw
-  product size.
-- Section 3.3, pp. 127--128: dynamic field ordering, unread-field pruning,
-  valid-candidate handling, and nondeterministic-predicate guarantee.
-- Section 3.4, pp. 128--129: rooted object-graph isomorphism and canonical
-  representative generation.
-- Section 5, pp. 130--132: empirical candidate counts and pruning attribution.
-
-## Assumptions and limitations
+## Evidence limits
 
 - Exhaustiveness is relative to a user-supplied finite finitization.
 - The principal guarantee assumes deterministic predicate executions.
@@ -137,4 +148,3 @@ subsumption of the result type. The safe statement is:
 - The output is concrete valid inputs, not a disjoint symbolic partition.
 - No exact guard, symbolic residual, stable selection-site identity, or
   one-record-per-access-pattern contract is defined.
-

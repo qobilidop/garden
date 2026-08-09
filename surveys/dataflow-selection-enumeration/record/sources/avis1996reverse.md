@@ -1,12 +1,24 @@
-# avis1996reverse — Reverse Search for Enumeration
+---
+citekey: avis1996reverse
+work:
+  title: "Reverse Search for Enumeration"
+  author: "David Avis, Komei Fukuda"
+  venue: "Discrete Applied Mathematics"
+  date: 1996
+  doi: 10.1016/0166-218x(95)00026-n
+read: full-text
+source: "Author PDF (McGill): https://cgm.cs.mcgill.ca/~avis/doc/avis/AF96a.pdf; DOI https://doi.org/10.1016/0166-218X(95)00026-N"
+retrieved: "-"
+notes-by: Codex (initial campaign); Claude Fable 5 (record migration)
+notes-date: 2026-08-04
+synthesis: "Reverse search gives general memory-efficient, output-polynomial enumeration and already instantiates exact, duplicate-free arrangement-cell enumeration in polynomial working space — predating the later incremental sign-prefix algorithms"
+---
 
-- **Status:** deep-read; critical output-sensitive predecessor
-- **Primary source:** https://doi.org/10.1016/0166-218X(95)00026-N
-- **Open copy:** https://cgm.cs.mcgill.ca/~avis/doc/avis/AF96a.pdf
-- **Version read:** Discrete Applied Mathematics 65 (1996), author PDF
-- **Bibliography key:** `avis1996reverse`
+# Reverse Search for Enumeration
 
-## Why it matters
+## Evidence
+
+### Why it matters
 
 Avis and Fukuda establish reverse search as a general memory-efficient
 enumeration method and instantiate it for full-dimensional cells of affine
@@ -16,7 +28,7 @@ polynomial working space. We therefore cannot claim that completeness,
 nonduplication, OutputP enumeration, or easy parallel traversal begins with the
 later sign-prefix algorithm.
 
-## Model and enumerated object
+### Model and enumerated object
 
 Section 3.2 takes \(m\) distinct affine hyperplanes in \(\mathbb R^n\). A cell
 is a nonempty total sign vector in \(\{-,+\}^m\), equivalently the intersection
@@ -30,7 +42,7 @@ matches an all-sites-observed selection observer only when outcomes are strict
 signs and the caller domain excludes boundary points. Non-strict branch
 semantics can instead produce half-open or lower-dimensional fibers.
 
-## Reverse-search construction and guarantee
+### Reverse-search construction and guarantee
 
 Property 2.1 shows that a finite local-search trace with a unique terminal
 object induces a directed spanning tree or forest whose arcs can be traversed
@@ -46,7 +58,7 @@ The paper does not label this conclusion as a standalone numbered
 3.1, the unique reoriented root, and the traversal. Theorem 3.3 is the
 complexity theorem.
 
-## Complexity
+### Complexity
 
 Let \(l(m,n)\) be the arithmetic cost of the required LP with \(n\) variables
 and roughly \(m\) inequalities. Theorem 3.3 gives
@@ -60,7 +72,20 @@ linear-time fixed-dimensional LP routine, this becomes
 \(O(m^2|C|)\). This is an output-polynomial arithmetic/LP-operation result, not
 an independently stated coefficient-bit-complexity bound.
 
-## Relationship to later work and our hypothesis
+### Evidence locations
+
+- Printed p. 24, Property 2.1: spanning-forest and unique-sink reverse-search
+  invariant.
+- Printed p. 29, Section 3.2 opening: affine model, strict sign vectors, open
+  cells, and adjacency.
+- Printed p. 29, Lemma 3.1 and Corollary 3.2: progress toward the root and
+  height at most \(m\).
+- Printed pp. 30--31, LP (3.1): adjacency oracle.
+- Printed p. 31, Theorem 3.3: time and space bounds.
+- Printed p. 31: the authors' qualified historical-priority statement begins
+  "We believe" and must not be restated as an independently proved fact.
+
+## Bearing on RQs
 
 Sleumer retains the reverse-search framework and improves the
 fixed-dimensional cell bound by a factor of \(m\). Rada and Černý later insert
@@ -74,20 +99,7 @@ broad enumeration guarantee. It has no requested-root-relative structural
 absence, context-qualified graph occurrence, typed residual expression, or
 dataflow composition interface.
 
-## Evidence locations
-
-- Printed p. 24, Property 2.1: spanning-forest and unique-sink reverse-search
-  invariant.
-- Printed p. 29, Section 3.2 opening: affine model, strict sign vectors, open
-  cells, and adjacency.
-- Printed p. 29, Lemma 3.1 and Corollary 3.2: progress toward the root and
-  height at most \(m\).
-- Printed pp. 30--31, LP (3.1): adjacency oracle.
-- Printed p. 31, Theorem 3.3: time and space bounds.
-- Printed p. 31: the authors' qualified historical-priority statement begins
-  "We believe" and must not be restated as an independently proved fact.
-
-## Questions and limitations
+## Evidence limits
 
 - The cell output omits every lower-dimensional arrangement face.
 - The complexity analysis is expressed through LP/arithmetic cost.

@@ -1,13 +1,24 @@
-# columbano2009sufficient — output-sensitive sufficient-matrix pLCP enumeration
+---
+citekey: columbano2009sufficient
+work:
+  title: "An Output-Sensitive Algorithm for Multi-Parametric LCPs with Sufficient Matrices"
+  author: "Sebastiano Columbano, Komei Fukuda, Colin N. Jones"
+  venue: "Polyhedral Computation"
+  date: 2009
+  doi: 10.1090/crmp/048/04
+read: full-text
+source: "Open author manuscript (arXiv:0807.2318) corresponding to the published chapter, https://doi.org/10.1090/crmp/048/04"
+retrieved: "-"
+notes-by: Codex (initial campaign); Claude Fable 5 (record migration)
+notes-date: 2026-08-04
+synthesis: "Gives a generic graph traversal for multi-parametric LCPs with sufficient matrices — covering parametric LP and convex parametric QP — enumerating full-dimensional critical domains with explicit per-output LP-oracle work; the strongest closed output-sensitive bound in the direct pLP/pQP lineage, superseding claims that the Jones reverse-search formula was the last explicit bound before degeneracy-safe pQP traversal."
+---
 
-- **Status:** deep-read; strongest explicit parametric-programming complexity
-  comparator
-- **Primary source:** https://doi.org/10.1090/crmp/048/04
-- **Open copy:** https://arxiv.org/abs/0807.2318
-- **Version read:** open author manuscript corresponding to the published chapter
-- **Bibliography key:** `columbano2009sufficient`
+# An Output-Sensitive Algorithm for Multi-Parametric LCPs with Sufficient Matrices
 
-## Why it matters
+## Evidence
+
+### Why it matters
 
 Columbano, Fukuda, and Jones give a generic graph traversal for
 multi-parametric linear complementarity problems with sufficient matrices, a
@@ -18,7 +29,7 @@ closed output-sensitive bound located in the direct pLP/pQP lineage and
 supersedes any statement that the Jones reverse-search formula was the last
 explicit bound before degeneracy-safe pQP traversal.
 
-## Object and traversal
+### Object and traversal
 
 The paper represents a solution by a complementary basis of the pLCP. In
 general position, adjacent full-dimensional critical domains differ by pivots
@@ -33,7 +44,7 @@ convex pQP formulations. The output remains a dense optimization partition:
 it does not model requested roots, structurally unobserved graph sites,
 context-qualified occurrence identity, or equal-valued internal events.
 
-## Complexity
+### Complexity
 
 Let the pLCP have dimension (n) and parameter dimension (d). Theorem 6.1
 charges each general-position output by
@@ -56,7 +67,7 @@ exceed the number of unperturbed critical domains. The analysis treats LP as
 an oracle, gives no coefficient-bit or DelayP theorem, retains an output-sized
 visited set, and omits lower-dimensional-only regions.
 
-## Evidence locations
+### Evidence locations
 
 - Sections 2–4: sufficient-matrix pLCP model, critical domains, adjacency, and
   general-position traversal.
@@ -65,9 +76,17 @@ visited set, and omits lower-dimensional-only regions.
 - Conclusion: input-polynomial and output-linear framing, with the caveat that
   the perturbed output can be larger than the unperturbed representation.
 
-## Positioning consequence
+## Bearing on RQs
 
 Exact, degeneracy-safe, output-sensitive full-dimensional pLP/pQP region
 enumeration is established prior art. The dataflow synthesis can compare its
 different observer and representation, but cannot claim priority for generic
 output-sensitive enumeration or a first degeneracy-safe bound.
+
+## Evidence limits
+
+Read at full-text (author manuscript) level; the source note recorded no
+dedicated evidence-limits section beyond the complexity caveats already stated
+in the Evidence section above (LP treated as an oracle, no coefficient-bit or
+DelayP theorem, output-sized visited-state overhead, and lower-dimensional
+regions omitted).

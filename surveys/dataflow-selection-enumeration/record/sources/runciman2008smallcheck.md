@@ -1,12 +1,24 @@
-# runciman2008smallcheck — SmallCheck and Lazy SmallCheck
+---
+citekey: runciman2008smallcheck
+work:
+  title: "SmallCheck and Lazy SmallCheck: Automatic Exhaustive Testing for Small Values"
+  author: "Colin Runciman, Matthew Naylor, Fredrik Lindblad"
+  venue: "Haskell 2008"
+  date: 2008
+  doi: 10.1145/1411286.1411292
+read: full-text
+source: "Open copy https://www.cs.york.ac.uk/fp/smallcheck/smallcheck.pdf; DOI https://doi.org/10.1145/1411286.1411292"
+retrieved: "-"
+notes-by: Codex (initial campaign); Claude Fable 5 (record migration)
+notes-date: 2026-08-04
+synthesis: "Lazy SmallCheck refines only the hole an observer demands and prunes all completions once the Boolean answer is known — the central demand-guided partial-input refinement idea, but for single-property refutation, not exact site-indexed observation-fiber enumeration"
+---
 
-- **Status:** deep-read; critical demand-driven-testing predecessor
-- **Primary source:** https://doi.org/10.1145/1411286.1411292
-- **Version read:** ACM Haskell Symposium paper, pp. 37--48
-- **Open copy:** https://www.cs.york.ac.uk/fp/smallcheck/smallcheck.pdf
-- **Bibliography key:** `runciman2008smallcheck`
+# SmallCheck and Lazy SmallCheck: Automatic Exhaustive Testing for Small Values
 
-## Why it matters
+## Evidence
+
+### Why it matters
 
 Lazy SmallCheck already implements the central operational idea of refining
 only an observer-demanded unknown. It applies a Boolean property to a partial
@@ -22,7 +34,7 @@ counterexample to one Boolean property. It does not enumerate a canonical set
 of site-indexed selection observations, their exact inverse images, and
 symbolic residual results.
 
-## Bounded domain and partial values
+### Bounded domain and partial values
 
 SmallCheck enumerates all finite, total values of a first-order algebraic type
 up to a user-supplied constructor-depth bound. Lazy SmallCheck represents a
@@ -46,7 +58,7 @@ This is operational demand, not backward static dependence. Which position is
 reported can depend on Haskell evaluation order and on whether the property
 uses ordinary or parallel conjunction.
 
-## Refutation algorithm
+### Refutation algorithm
 
 The generic `refute` procedure starts from the universal term for the chosen
 depth and evaluates the property:
@@ -68,7 +80,7 @@ coarsest cylinders on which a richer observer is constant: distinct demand
 orders or constructor prefixes can fragment one semantic fiber, and no merge
 or maximality phase is given.
 
-## Performance evidence
+### Performance evidence
 
 The paper gives empirical test counts, not a general asymptotic analysis. For
 the depth-seven ordered-set insertion property, ordinary SmallCheck runs
@@ -81,7 +93,17 @@ The search tree can still be as large as the bounded total domain. There is no
 polynomial-delay, output-polynomial, nonduplication, or minimal-cylinder
 result.
 
-## Exact relationship to selection-observation enumeration
+### Evidence locations
+
+- Section 3, paper pp. 39--42: exhaustive depth-bounded total-value domain.
+- Section 4 opening, p. 42: partial inputs summarize all total refinements.
+- Sections 4.1--4.4, pp. 42--44: implication, evaluation-order sensitivity,
+  parallel conjunction, and the strict-property counterexample.
+- Sections 4.5--4.6, pp. 44--46: tagged holes, `Answer`, `refine`, and the
+  refutation algorithm.
+- Section 4.7 and Table 3, pp. 46--47: comparative test counts.
+
+## Bearing on RQs
 
 For a fixed graph observer $\Omega_G$, an adaptation could evaluate a partial
 input and emit it when $\Omega_G$ is known. That would give a sound cover by
@@ -109,17 +131,7 @@ Safe claim:
 > is canonical enumeration of exact graph-selection observation fibers with
 > guards, residuals, and witnesses.
 
-## Evidence locations
-
-- Section 3, paper pp. 39--42: exhaustive depth-bounded total-value domain.
-- Section 4 opening, p. 42: partial inputs summarize all total refinements.
-- Sections 4.1--4.4, pp. 42--44: implication, evaluation-order sensitivity,
-  parallel conjunction, and the strict-property counterexample.
-- Sections 4.5--4.6, pp. 44--46: tagged holes, `Answer`, `refine`, and the
-  refutation algorithm.
-- Section 4.7 and Table 3, pp. 46--47: comparative test counts.
-
-## Limitations for our use
+## Evidence limits
 
 - The bounded domain is constructor depth, not an arbitrary SMT-described
   finite or infinite input domain.
@@ -130,4 +142,3 @@ Safe claim:
 - No exact guard language, residual symbolic value, stable graph-site map, or
   semantic coalescing criterion is defined.
 - Demand order is operational and can change the explored partial-term cover.
-

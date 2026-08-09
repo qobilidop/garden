@@ -1,18 +1,31 @@
-# mokhov2019selective — Selective Applicative Functors
+---
+citekey: mokhov2019selective
+work:
+  title: "Selective Applicative Functors"
+  author: "Andrey Mokhov, Georgy Lukyanov, Simon Marlow, Jeremie Dimino"
+  venue: "ICFP 2019"
+  date: 2019
+  doi: 10.1145/3341694
+read: full-text
+source: "Author accepted manuscript via https://doi.org/10.1145/3341694"
+retrieved: "-"
+notes-by: Codex (initial campaign); Claude Fable 5 (record migration)
+notes-date: 2026-08-04
+synthesis: "Selective functors give an established compositional abstraction — algebraic laws, a free construction, and reusable interpreters — for a static computation graph whose effects are selected dynamically, directly threatening a proposed novelty claim based on compositional selection observation"
+---
 
-- **Status:** deep-read
-- **Primary source:** https://doi.org/10.1145/3341694
-- **Version read:** author accepted manuscript
-- **Bibliography key:** `mokhov2019selective`
+# Selective Applicative Functors
 
-## Why it matters
+## Evidence
+
+### Why it matters
 
 Selective functors give an established compositional abstraction for a static
 computation graph whose effects are selected dynamically. Their algebraic laws,
 free construction, and interpreters directly threaten a proposed novelty claim
 based on compositional selection observation.
 
-## Program and semantic model
+### Program and semantic model
 
 An applicative computation exposes all independent effects statically. A monad
 can choose arbitrary future effects from a preceding value. A selective functor
@@ -29,7 +42,7 @@ select : f (Either a b) -> f (a -> b) -> f b
 When the first computation yields `Left a`, the second computation is needed;
 when it yields `Right b`, its effects may be skipped.
 
-## Main definitions
+### Main definitions
 
 The `Selective` interface extends `Applicative` with `select`. Derived
 combinators include conditional execution, binary branching, short-circuiting
@@ -42,7 +55,7 @@ collects only effects visible without resolving opaque conditions. The
 `Validation` instance demonstrates actual omission of errors in inactive
 branches.
 
-## Results and guarantees
+### Results and guarantees
 
 The laws characterize lawful composition. Section 5 gives a free construction
 for rigid selective functors and an interpreter `runSelect`: any natural
@@ -50,7 +63,7 @@ transformation from base commands to a target selective functor extends to the
 whole computation. This is a reusable compositional semantics, not merely an
 execution technique.
 
-## Algorithm
+### Algorithm
 
 The free construction represents a computation as a type-aligned sequence of
 selective steps. An interpreter recursively maps base commands and composes
@@ -58,50 +71,26 @@ them with the target functor's `select`. Static analyses reinterpret the same
 program in effect-collecting functors; execution reinterprets it in a monadic
 or other dynamic instance.
 
-## Complexity
+### Complexity
 
 The paper focuses on expressiveness, laws, and industrial applications rather
 than exhaustive input partitioning. It demonstrates static dependency analysis
 for Dune and speculative execution for Haxl.
 
-## Terminology
+### Terminology
 
 Established terms include *selective functor*, *conditional effects*, *static
 visibility*, *dynamic selection*, *free construction*, *interpretation*, and
 *rigid selective functor*.
 
-## Motivating example
+### Motivating example
 
 The opening example reads a string and prints `pong` only when the value is
 `ping`. Both effects are statically visible, but the write is dynamically
 skipped. The validation example reports only errors from the selected shape
 branch, closely matching omission of inactive graph cones.
 
-## Relationship to our hypothesis
-
-### What is directly established by the work?
-
-Conditional static computations have a compositional algebra, laws, a free
-syntax, and reusable interpretations. Statically present effects can be skipped
-according to computed selectors.
-
-### What is our interpretation or inference?
-
-A fixed selective term graph can log its selection-site event before using
-`select` to evaluate selected cases. Interpreting the free computation in a
-reader of concrete inputs combined with a writer of site events yields the
-per-input structural observation. Thus, plain compositionality and an explicit
-observer are likely standard instances of this abstraction.
-
-### Could it subsume our proposed contribution?
-
-It strongly subsumes a generic claim that static conditional graphs need a new
-compositional semantics. It does not enumerate exact input fibers, construct
-SMT guards, model shared term-graph node identity directly, or return residual
-symbolic functions. Those operations can nevertheless be layered on its free
-interpretation, so a new paper needs more than a selective-functor restatement.
-
-## Evidence locations
+### Evidence locations
 
 - Sections 1–2, pp. 1–11: abstraction, `select`, derived conditionals, examples,
   and laws.
@@ -112,7 +101,28 @@ interpretation, so a new paper needs more than a selective-functor restatement.
 - Sections 5.2–5.3, pp. 18–21: reusable DSL interpretations and instruction
   dependency analysis.
 
-## Questions and possible weaknesses
+## Bearing on RQs
+
+What is directly established by the work: conditional static computations
+have a compositional algebra, laws, a free syntax, and reusable
+interpretations. Statically present effects can be skipped according to
+computed selectors.
+
+Our interpretation or inference: a fixed selective term graph can log its
+selection-site event before using `select` to evaluate selected cases.
+Interpreting the free computation in a reader of concrete inputs combined
+with a writer of site events yields the per-input structural observation.
+Thus, plain compositionality and an explicit observer are likely standard
+instances of this abstraction.
+
+Could it subsume our proposed contribution: it strongly subsumes a generic
+claim that static conditional graphs need a new compositional semantics. It
+does not enumerate exact input fibers, construct SMT guards, model shared
+term-graph node identity directly, or return residual symbolic functions.
+Those operations can nevertheless be layered on its free interpretation, so a
+new paper needs more than a selective-functor restatement.
+
+## Evidence limits
 
 - The free construction is sequence-shaped; graph sharing and identity require
   either explicit commands, memoization, or a separate term-graph syntax.

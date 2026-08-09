@@ -1,12 +1,24 @@
-# geyer2010mode — compositional hybrid mode enumeration
+---
+citekey: geyer2010mode
+work:
+  title: "Efficient Mode Enumeration of Compositional Hybrid Systems"
+  author: "Tobias Geyer, Fabio D. Torrisi, Manfred Morari"
+  venue: "International Journal of Control"
+  date: 2010
+  doi: 10.1080/00207170903159285
+read: full-text
+source: "Author manuscript at https://www.tobiasgeyer.org/GeTM10_EffModeEnum.pdf (DOI https://doi.org/10.1080/00207170903159285)"
+retrieved: "-"
+notes-by: Codex (initial campaign); Claude Fable 5 (record migration)
+notes-date: 2026-08-04
+synthesis: "Enumerates feasible modes of compositional hybrid automata by topological substitution of upstream affine residuals into downstream guards with infeasibility pruning — a direct predecessor for guarded residual composition in the affine case, though every component is fully evaluated with no requested-root-relative enabled closure"
+---
 
-- **Status:** deep-read; critical compositional affine baseline
-- **Primary source:** https://doi.org/10.1080/00207170903159285
-- **Open copy:** https://www.tobiasgeyer.org/GeTM10_EffModeEnum.pdf
-- **Version read:** author manuscript of the 2010 journal article
-- **Bibliography key:** `geyer2010mode`
+# compositional hybrid mode enumeration
 
-## Why it matters
+## Evidence
+
+### Why it matters
 
 Geyer, Torrisi, and Morari enumerate the feasible modes of a composition of
 discrete hybrid automata and translate the result into an equivalent
@@ -19,7 +31,7 @@ residual composition in the affine special case.
 The preliminary HSCC paper appeared in 2003; the 2010 article is the expanded
 canonical source and also treats feedback compositions.
 
-## Model and output object
+### Model and output object
 
 A discrete hybrid automaton contains a finite-state machine, an event
 generator defined by affine inequalities, a mode selector, and switched affine
@@ -39,7 +51,7 @@ Different event markings may select the same mode, and neighboring cells may
 carry the same affine dynamics, so the representation is intentionally not
 canonical or minimum by behavior.
 
-## Enumeration and composition
+### Enumeration and composition
 
 Algorithm 4.1 enumerates the feasible event markings of one component by
 enumerating cells of its event-hyperplane arrangement. Algorithm 4.6 handles a
@@ -73,7 +85,7 @@ can diagnose a composition that is not well posed. This is materially broader
 than our current finite acyclic graph model, although the feedback result is
 specialized to the paper's real polyhedral setting.
 
-## Guarantees and complexity
+### Guarantees and complexity
 
 For the loop-free case, coverage and disjointness follow from the component
 PWA construction and the topological composition proof. The paper imports a
@@ -98,7 +110,25 @@ The cell-enumeration complexity credit is therefore safest under a strict or
 interior-realizability assumption; the overall semantic construction still
 uses the paper's stated deterministic boundary convention.
 
-## Relationship to selection observations
+### Motivating-example opportunity
+
+The paper's Example 4.8 illustrates componentwise refinement by substituted
+affine guards. A useful separating example can preserve that compositional
+shape but add an outer bypass. On the bypass fiber, the downstream component's
+selection site is structurally absent rather than merely assigned an entailed
+or don't-care event marking. The non-bypass fibers then demonstrate the
+inherited residual-substitution construction.
+
+### Evidence locations
+
+- Section 2 and Proposition 2.2: PWA representation and well-posedness.
+- Section 3 and Lemma 3.5: constructive DHA/PWA equivalence.
+- Algorithms 4.1 and 4.6: single-component and loop-free compound enumeration.
+- Corollary 4.7: correctness of acyclic composition.
+- Section 4.3: feedback-arc construction, projection, and well-posedness test.
+- Section 5: examples and empirical behavior.
+
+## Bearing on RQs
 
 If every affine threshold is represented as an always-observed selection site,
 one emitted event marking is a dense observation and its PWA pair gives the
@@ -126,25 +156,7 @@ and exact PWA guard/residual output. It does not supply the requested-root
 graph observer or the correspondence between sparse observations and their
 positive local fibers.
 
-## Motivating-example opportunity
-
-The paper's Example 4.8 illustrates componentwise refinement by substituted
-affine guards. A useful separating example can preserve that compositional
-shape but add an outer bypass. On the bypass fiber, the downstream component's
-selection site is structurally absent rather than merely assigned an entailed
-or don't-care event marking. The non-bypass fibers then demonstrate the
-inherited residual-substitution construction.
-
-## Evidence locations
-
-- Section 2 and Proposition 2.2: PWA representation and well-posedness.
-- Section 3 and Lemma 3.5: constructive DHA/PWA equivalence.
-- Algorithms 4.1 and 4.6: single-component and loop-free compound enumeration.
-- Corollary 4.7: correctness of acyclic composition.
-- Section 4.3: feedback-arc construction, projection, and well-posedness test.
-- Section 5: examples and empirical behavior.
-
-## Limitations
+## Evidence limits
 
 - The compound complexity is not summarized by an end-to-end enumeration
   theorem.

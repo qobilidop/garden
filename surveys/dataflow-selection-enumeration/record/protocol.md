@@ -71,27 +71,81 @@ Use these stable exclusion codes:
 - `E3-secondary`: secondary source superseded by an available primary work;
 - `E4-application-only`: unchanged application of an existing executor;
 - `E5-unobtainable`: insufficient technical content after recorded attempts;
-- `E6-out-of-scope-model`: cannot answer a research question under scope; and
+- `E6-out-of-scope-model`: cannot answer a research question under scope;
 - `E7-duplicate-version`: superseded version retained for lineage; and
 - `E8-retracted`: formally retracted or withdrawn.
 
 Codes are this survey's declared vocabulary; `check.py` enforces it.
 
+`E6-out-of-scope-model` carries most of the scope judgment; its
+boundary, illustrated by three E6-coded catalog rows:
+
+- A work that computes analysis facts over an abstraction rather than
+  concrete-input observations is E6 even when it says "dataflow" —
+  weighted pushdown dataflow analysis (`doi:10.1145/24039.24041`)
+  enumerates interprocedural facts, not input fibers of selection
+  sites. A work that exactly partitions inputs by the outcomes of
+  selection sites is in scope however it names itself.
+- A work whose observer ranges over process transitions or schedules
+  rather than requested-root evaluations of a deterministic graph is
+  E6 — symbolic bisimulation for value-passing processes
+  (`doi:10.1016/0304-3975(94)00172-f`) quotients transition behavior,
+  while observation-quotient work over deterministic evaluation stays
+  in scope as an adjacent comparator.
+- Vocabulary overlap alone never includes: a work "enumerating
+  expression trees" over a different program model
+  (`doi:10.21203/rs.3.rs-9430237/v1`) is E6 — overlap in words is not
+  overlap in observer or represented object.
+
 ## Keys and conventions
 
-Catalog keys are author-year citekeys minted at screening
-(`<surname><year><slug>`); deduplication goes through DOI, stable
-identifier, and normalized title, per the README's update procedure.
+Catalog and log keys use the shared identifier grammar:
+
+1. DOIs normalize to `doi:<doi>` — lowercase, registrar prefixes and
+   `https://doi.org/` stripped, percent-encoding decoded.
+2. arXiv works normalize to `arxiv:<id>` — version suffix stripped;
+   an arXiv-DOI (`10.48550/arxiv.*`) collapses to the same key.
+3. A work with neither identifier takes `t:<title-slug>` — NFKD
+   ASCII, lowercased, non-alphanumerics dropped, truncated to 80
+   characters — and carries its locating URL in the catalog's `url`
+   column. `legacy:<citekey>` is reserved for rows whose identifier
+   and title were both unrecoverable at migration time; upgrade a
+   legacy row to its proper key when either surfaces.
+4. A published version of an included preprint replaces its key; the
+   superseded identifier stays as an excluded row under
+   `E7-duplicate-version`.
+
+Deduplication goes through this grammar: adjudicate suspected aliases
+from full registrar metadata and authorship, never title similarity
+alone. Author-year citekeys (`<surname><year><slug>`) are minted only
+for works that acquire a source note or a manuscript citation; the
+citekey names the note file, the bibliography entry, and every
+evidence and claims reference, and `manuscript/references.tsv` plus
+note frontmatter identifiers bridge citekeys to catalog keys. (The
+initial campaign keyed the catalog and log by citekey; the 2026-08-09
+audit row records the mechanical migration to this grammar.)
+
 Cluster values are an open vocabulary, one per row, introduced during
 screening. Query caps are the `limit` column of `queries.tsv` (arXiv
-at most 100); retry and request-spacing conventions live in the
-shared update tool.
+at most 100); retries back off and space requests per the shared
+update tool.
 
 ## Screening, reading, and extraction
 
 Screening assigns a catalog status, priority, cluster, and concise rationale
 from title, abstract, and stable metadata. Candidate status is a retained
-discovery disposition, not automatically a reading queue.
+discovery disposition, not automatically a reading queue; a candidate
+undecidable from the available metadata takes the `parked` status and is
+re-screened on every update.
+
+Update batches screen with two agent passes on different model tiers and
+prompt framings (one eligibility-first, one exclusion-first), each
+emitting `{"decision", "reason", "confidence"}`; the strongest available
+model adjudicates disagreements, the adjudicated one-line reason lands in
+the catalog's `relevance` column, and a human gates the batch — reviewing
+counts, all disagreements, every parked row, and a sample of agreements —
+before any state advances. (The initial campaign screened in single
+adjudicated passes; this structure governs updates from 2026-08-09.)
 
 A deep read must inspect the primary work's definitions, central algorithms,
 theorem statements and assumptions, complexity discussion, examples, and
@@ -105,6 +159,17 @@ Priority controls maintenance obligations. Every `critical` work must be
 deep-read and must have separate usable backward and forward citation chases.
 New critical works receive both chases immediately; existing critical works
 receive a forward refresh as part of any update batch.
+
+Snowball rules: chases run one backward plus one forward round per seed
+through the shared citation clients, each logged with `seed-key:<key>` in
+the notes column. A discovery-only pass that assigns no dispositions is
+marked `discovery-only` and satisfies no obligation. When an index returns
+a truncated, unresolved, or implausibly empty bibliography, chase from the
+primary version's printed reference list and mark the companion row
+`primary-complete` — `check.py` enforces this for every defective backward
+row. A deep read that no longer supports any evidence item, manuscript
+citation, or synthesis may be demoted back to `screened` by an audit row,
+its note retiring to git history.
 
 ## Incremental maintenance
 

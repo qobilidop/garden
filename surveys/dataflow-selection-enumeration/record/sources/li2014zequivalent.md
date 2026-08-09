@@ -1,13 +1,24 @@
-# li2014zequivalent — Removing Z-Equivalent Symbolic States
+---
+citekey: li2014zequivalent
+work:
+  title: "Scaling Up Symbolic Analysis by Removing Z-Equivalent States"
+  author: "Yueqi Li, S. C. Cheung, Xiangyu Zhang, Yepang Liu"
+  venue: "ACM Transactions on Software Engineering and Methodology"
+  date: 2014
+  doi: 10.1145/2652484
+read: full-text
+source: "Accepted TOSEM manuscript via https://cse.hkust.edu.hk/~scc/ScalingSymbolicAnalysis.pdf; metadata checked against the published article at https://doi.org/10.1145/2652484"
+retrieved: "-"
+notes-by: Codex (initial campaign); Claude Fable 5 (record migration)
+notes-date: 2026-08-04
+synthesis: "Z-equivalence quotients symbolic states by caller-observable behavior at function-return boundaries, provably preserving feasibility and validity — a strong precedent for caller-observational quotienting that nonetheless erases exactly what a graph-intensional selection observation retains"
+---
 
-- **Status:** deep-read; critical boundary-observational predecessor
-- **Primary source:** https://doi.org/10.1145/2652484
-- **Open author copy:** https://cse.hkust.edu.hk/~scc/ScalingSymbolicAnalysis.pdf
-- **Version read:** accepted TOSEM manuscript; bibliographic metadata checked
-  against the published 2014 article
-- **Bibliography key:** `li2014zequivalent`
+# Scaling Up Symbolic Analysis by Removing Z-Equivalent States
 
-## Why it matters
+## Evidence
+
+### Why it matters
 
 Z-equivalence is a strong precedent for quotienting symbolic states by what a
 caller can observe rather than by path history or literal formula identity. It
@@ -21,7 +32,7 @@ internal distinctions that our graph-intensional observer retains. It is
 nonetheless critical to any claim that caller-observational state quotienting
 or future-equivalent component results are new.
 
-## Program and analysis model
+### Program and analysis model
 
 The formal presentation uses a first-order imperative language with integer
 and Boolean expressions, assignments, conditionals, calls, returns, and an
@@ -45,7 +56,7 @@ At a function boundary, variables are classified as:
 The boundary is pragmatic rather than maximally semantic. The paper notes that
 a forward analysis could classify more variables as unobservable.
 
-## Formal equivalence
+### Formal equivalence
 
 Let \(\phi\) and \(\psi\) be Boolean state constraints. Let \(\vec\beta\) be
 the union of their observable variables and let \(\vec\alpha_\phi\) and
@@ -73,7 +84,7 @@ Z-equivalence is consequently sensitive to both satisfiability and
 falsifiability. Merely existentially projecting hidden variables would not
 preserve enough information for the paper's validity results.
 
-## Guarantees
+### Guarantees
 
 The paper states the following results, with proofs delegated to its 2013
 technical report.
@@ -95,7 +106,7 @@ external APIs. With unbounded resources, reduced and unreduced executions have
 the same coverage, warnings, and true/false-positive behavior under the stated
 model.
 
-## Sound linear recognizer
+### Sound linear recognizer
 
 Exact z-equivalence is undecidable over first-order logic because its
 definition alternates universal and existential quantifiers over possibly
@@ -105,7 +116,7 @@ requires exponential computation in general.
 Its practical recognizer therefore proves only a subset of z-equivalences.
 There are two phases.
 
-### Flexible expression analysis
+#### Flexible expression analysis
 
 For a set of disjoint constraint-AST subexpressions, local hidden variables
 occur only within the set; non-local hidden variables also occur elsewhere.
@@ -126,7 +137,7 @@ rooted at `F` nodes are called flexible abstract-syntax subtrees (`FAST`s).
 - **Theorem 8:** the fixed-point FAST set is independent of rule-application
   order.
 
-### State-constraint unification
+#### State-constraint unification
 
 An adapted first-order unifier compares two constraint ASTs top down. It may
 alpha-rename unobservable variables and unify two syntactically different
@@ -138,7 +149,7 @@ The recognizer is sound but incomplete. Tightly coupled occurrences of hidden
 variables can prevent the rules from finding an unconstrained set even when
 one exists.
 
-## Complexity and performance
+### Complexity and performance
 
 Each AST node changes to flexible and enters the worklist at most once, and
 removal processing is constant time under the paper's data structures.
@@ -162,7 +173,7 @@ of Sym-JVM time and 6% of KLEE time; instruction-throughput degradation was
 estimates over represented paths, not directly allocated state counts for an
 unreduced run, which would be infeasible.
 
-## Motivating example
+### Motivating example
 
 The running program reads from either a file or a socket. Loops call external
 `hasNext` and `nextInt` operations, modeled by fresh unconstrained symbols. Two
@@ -183,9 +194,22 @@ three continuation cases. The example makes the central distinction concrete:
 internal branch histories are discarded when they have identical boundary
 possibilities.
 
-## Relationship to enabled closure and observation fibers
+### Evidence locations
 
-### What is directly established by the work?
+- Sections 1--2 and Figure 2, pp. 2--6: external-function motivation and
+  file/socket example.
+- Section 3.1, pp. 6--9: path-sensitive interprocedural semantics and return
+  boundary.
+- Definition 1 and Theorems 1--6, pp. 9--11: z-equivalence and continuation
+  guarantees.
+- Sections 3.3--3.4, pp. 11--17: unconstrained sets, FAST analysis,
+  unification, soundness, incompleteness, and linear cost.
+- Sections 4--5, pp. 17--29: implementation boundaries, evaluation, and
+  comparison with state merging.
+
+## Bearing on RQs
+
+What is directly established by the work:
 
 - a formally defined caller-observational equivalence on symbolic-state
   constraints;
@@ -194,11 +218,10 @@ possibilities.
 - function-boundary state removal without additional semantic imprecision; and
 - a sound, incomplete linear recognizer for a useful fragment.
 
-### What is our interpretation or inference?
-
-Because z-equivalence is an equivalence relation, its classes are trivially
-fibers of the quotient map from symbolic states to z-equivalence classes. They
-are not the fibers of our deterministic graph observer \(T_G(-,R)\).
+What is our interpretation or inference: because z-equivalence is an
+equivalence relation, its classes are trivially fibers of the quotient map
+from symbolic states to z-equivalence classes. They are not the fibers of our
+deterministic graph observer \(T_G(-,R)\).
 
 The two policies preserve almost opposite information. Z-equivalence erases
 callee-local syntax, paths, and fresh symbols whenever callers have the same
@@ -219,33 +242,17 @@ through a callee, then removes redundant states at its return. It does not
 define an output-rooted enabled-edge closure, omit inactive selector cones
 during evaluation, or record a sparse site-outcome map.
 
-### Could it subsume our proposed contribution?
-
-It subsumes a broad claim of novelty for caller-indistinguishable state
-quotienting, continuation-preserving component results, or removing
-path-distinct but observationally identical symbolic states. It does not
-provide one record per graph-relative selection observation, exact guards over
-concrete inputs, a disjoint exhaustive input cover, shared residual DAGs, or an
-enumeration bound in the number of feasible observations.
+Could it subsume our proposed contribution: it subsumes a broad claim of
+novelty for caller-indistinguishable state quotienting, continuation-preserving
+component results, or removing path-distinct but observationally identical
+symbolic states. It does not provide one record per graph-relative selection
+observation, exact guards over concrete inputs, a disjoint exhaustive input
+cover, shared residual DAGs, or an enumeration bound in the number of feasible
+observations.
 
 Any compositional-summary theorem in our paper should state whether summaries
 preserve graph-intensional selection history or quotient it by a boundary
 relation. The latter direction must be compared explicitly with z-equivalence.
-
-## Evidence locations
-
-- Sections 1--2 and Figure 2, pp. 2--6: external-function motivation and
-  file/socket example.
-- Section 3.1, pp. 6--9: path-sensitive interprocedural semantics and return
-  boundary.
-- Definition 1 and Theorems 1--6, pp. 9--11: z-equivalence and continuation
-  guarantees.
-- Sections 3.3--3.4, pp. 11--17: unconstrained sets, FAST analysis,
-  unification, soundness, incompleteness, and linear cost.
-- Sections 4--5, pp. 17--29: implementation boundaries, evaluation, and
-  comparison with state merging.
-
-## Assessment
 
 This work merits **critical** status for the boundary-observation and
 compositional-summary axes. It does not subsume graph-intensional selection
@@ -253,3 +260,8 @@ observations, but it is strong enough to invalidate any unqualified novelty
 claim about quotienting symbolic states by caller-visible behavior or
 preserving all future queries after pruning equivalent component results.
 
+## Evidence limits
+
+Read at full-text level (accepted TOSEM manuscript, cross-checked against the
+published article); the note records no evidence-quality caveats beyond the
+scope boundary above.

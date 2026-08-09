@@ -1,13 +1,24 @@
-# brassel2007tighter — On a Tighter Integration of Functional and Logic Programming
+---
+citekey: brassel2007tighter
+work:
+  title: "On a Tighter Integration of Functional and Logic Programming"
+  author: "Bernd Braßel, Frank Huch"
+  venue: "APLAS 2007"
+  date: 2007
+  doi: 10.1007/978-3-540-76637-7_9
+read: full-text
+source: "APLAS 2007 conference paper via https://doi.org/10.1007/978-3-540-76637-7_9 (open copy: https://citeseerx.ist.psu.edu/document?doi=9b44c5ccc322eda41cf03f347f0a8a29dcad11d7&repid=rep1&type=pdf); metadata checked against the Springer chapter record"
+retrieved: "-"
+notes-by: Codex (initial campaign); Claude Fable 5 (record migration)
+notes-date: 2026-08-04
+synthesis: "Predates pull-tabbing with an explicit partial-function 'branching information' map from stable dynamic OR references to branch positions, lazily extended at exposed choice frontiers — the earliest fingerprint-shaped representation in this lineage, though for nondeterministic program search rather than deterministic selection-site observation"
+---
 
-- **Status:** deep-read; critical fingerprint-lineage predecessor
-- **Primary source:** https://doi.org/10.1007/978-3-540-76637-7_9
-- **Open copy:** https://citeseerx.ist.psu.edu/document?doi=9b44c5ccc322eda41cf03f347f0a8a29dcad11d7&repid=rep1&type=pdf
-- **Version read:** APLAS 2007 conference paper; metadata checked against the
-  Springer chapter record
-- **Bibliography key:** `brassel2007tighter`
+# On a Tighter Integration of Functional and Logic Programming
 
-## Why it matters
+## Evidence
+
+### Why it matters
 
 This paper predates pull-tabbing and already defines *branching information*
 `rho` as a partial function from stable dynamic OR references to branch
@@ -23,7 +34,7 @@ name deterministic selection sites in a fixed graph. The search tree represents
 possible results; it does not partition concrete program inputs into exact
 guard fibers.
 
-## Program and semantic model
+### Program and semantic model
 
 The source language is normalized first-order Flat Curry with constructor and
 function calls, rigid and flexible cases, disjunction, and explicit `let`
@@ -44,7 +55,7 @@ An internal `FAIL` constructor represents failed pattern selection. A separate
 search structure to source-level depth-first, breadth-first, or other traversal
 functions.
 
-## The exact `rho` object
+### The exact `rho` object
 
 Section 4.2 states that branching information `rho` is a **partial function
 from OR references to branching positions**, i.e. natural numbers and, for
@@ -59,7 +70,7 @@ Thus `rho` is not merely extensionally map-like notation: the paper explicitly
 types it as a partial function and looks decisions up by reference. The value
 is persistent functional state rather than a mutable global table.
 
-## Stable identity, lazy extension, and sharing
+### Stable identity, lazy extension, and sharing
 
 The `OR` rule allocates a fresh reference for each dynamically evaluated source
 disjunction. `Lift` retains that reference when a choice is propagated through
@@ -85,7 +96,7 @@ The first computation updates that heap entry; the second looks up `T` rather
 than repeating the work. This is sharing **across** nondeterministic branches,
 not only call-time consistency of the nondeterministic decision itself.
 
-## Theorem 3 and its boundary
+### Theorem 3 and its boundary
 
 Theorem 3 is titled *Completeness of the extended semantics*. If the simplified
 baseline semantics derives `Gamma : e downarrow Delta : v`, then there exist an
@@ -112,7 +123,7 @@ It is again one-directional. Theorem 4 establishes mutual exclusion between
 failure and a non-failure result for the deterministic extended evaluation, but
 there is no nonredundant enumeration or canonical-fingerprint theorem.
 
-## Encapsulated search
+### Encapsulated search
 
 `st` translates internal ordinary values, failures, and OR frontiers to the
 typed `SearchTree`. Because it extends `rho` under each `Or` child, a consumer
@@ -125,7 +136,7 @@ then embodies committed choice and loses the purity of the deterministic lazy
 search-tree interface. It presents how such a fair traversal could be
 implemented, not a theorem that every source-level traversal is fair.
 
-## Complexity and evaluation
+### Complexity and evaluation
 
 No asymptotic time, delay, space, or map-size bound is stated. The central cost
 claim is qualitative and supported by the palindrome example: existing Curry
@@ -139,7 +150,7 @@ Curry System compiler, which translates Curry to Haskell with extended data
 constructors for OR and FAIL. The conclusion reports practical feasibility,
 not an output-sensitive enumeration result.
 
-## Terminology
+### Terminology
 
 Established terms include *OR reference*, *branching information*, *branching
 position*, *heap pruning*, *sharing across non-determinism*, *head normal form*,
@@ -147,7 +158,7 @@ position*, *heap pruning*, *sharing across non-determinism*, *head normal form*,
 does not use *fingerprint* for `rho`, but Alqaddoumi et al. 2010 cite this work
 as part of the history later called fingerprints.
 
-## Fingerprint lineage
+### Fingerprint lineage
 
 1. **Braßel and Huch 2007:** `rho` is explicitly a partial function from fresh,
    dynamically stable OR references to branch positions; `st` lazily extends it.
@@ -172,33 +183,7 @@ lazy frontier extension before the term *fingerprint* was introduced in the
 2009 paper. The 2010 contribution is stable propagation through pull-tab graph
 copies, not the first partial identifier-to-branch map.
 
-## Relationship to our hypothesis
-
-### What is directly established by the work?
-
-Fresh OR references preserve consistent choice identity through sharing and
-lifting. A sparse partial map records branch positions only as lazy search
-exposes OR frontiers. Deterministic heap updates can be shared across
-nondeterministic branches, and every baseline result has a corresponding map
-and extended derivation.
-
-### What is our interpretation or inference?
-
-The map's lazily grown domain resembles a demand observation. Reusing the
-mechanism for deterministic guard outcomes is an implementation analogy, not a
-result of this source: its decisions choose nondeterministic alternatives and
-its domain follows a search-tree traversal.
-
-### Could it subsume our proposed contribution?
-
-It subsumes a claim for sparse partial maps from stable dynamic choice IDs to
-branch outcomes, lazy extension at demand frontiers, and sharing deterministic
-work across branches. It does not define deterministic selection-site observation,
-local guard predicates over concrete inputs, exact inverse-image fibers,
-residual symbolic functions, full-fiber blocking, or compositional and
-output-sensitive enumeration bounds.
-
-## Evidence locations
+### Evidence locations
 
 - Sections 1–2, pp. 122–128: motivating examples, normalized Flat Curry,
   baseline heaps, and call-time choice.
@@ -211,15 +196,34 @@ output-sensitive enumeration bounds.
 - Sections 5–6, pp. 137–138: relationship to bubbling, implementation, and
   scope.
 
-## Forward-citation screen
+## Bearing on RQs
+
+What is directly established by the work: fresh OR references preserve
+consistent choice identity through sharing and lifting. A sparse partial map
+records branch positions only as lazy search exposes OR frontiers.
+Deterministic heap updates can be shared across nondeterministic branches, and
+every baseline result has a corresponding map and extended derivation.
+
+What is our interpretation or inference: the map's lazily grown domain
+resembles a demand observation. Reusing the mechanism for deterministic guard
+outcomes is an implementation analogy, not a result of this source: its
+decisions choose nondeterministic alternatives and its domain follows a
+search-tree traversal.
+
+Could it subsume our proposed contribution: it subsumes a claim for sparse
+partial maps from stable dynamic choice IDs to branch outcomes, lazy extension
+at demand frontiers, and sharing deterministic work across branches. It does
+not define deterministic selection-site observation, local guard predicates
+over concrete inputs, exact inverse-image fibers, residual symbolic functions,
+full-fiber blocking, or compositional and output-sensitive enumeration bounds.
+
+## Evidence limits
 
 Semantic Scholar resolves the DOI to exact paper
 `9b44c5ccc322eda41cf03f347f0a8a29dcad11d7`, with the exact title and both
 authors. The frozen forward snapshot contains all 46 citing records reported
 by the index at capture time. It is discovery evidence, not a completeness
 claim about the scholarly literature.
-
-## Questions and possible weaknesses
 
 - The formal relation highlighted in Theorems 3 and 5 is one-directional
   completeness; the chapter does not state a matching converse theorem.

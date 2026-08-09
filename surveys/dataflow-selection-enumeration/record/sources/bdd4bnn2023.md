@@ -1,12 +1,24 @@
-# bdd4bnn2023 — Precise Quantitative Analysis of Binarized Neural Networks
+---
+citekey: bdd4bnn2023
+work:
+  title: "Precise Quantitative Analysis of Binarized Neural Networks: A BDD-based Approach"
+  author: "Yedi Zhang, Zhe Zhao, Guangke Chen, Fu Song, Taolue Chen"
+  venue: "ACM TOSEM 32(3)"
+  date: 2023
+  doi: 10.1145/3563212
+read: full-text
+source: "ACM TOSEM author copy via https://doi.org/10.1145/3563212 (conference precursor https://doi.org/10.1007/978-3-030-81685-8_8)"
+retrieved: "-"
+notes-by: Codex (initial campaign); Claude Fable 5 (record migration)
+notes-date: 2026-08-04
+synthesis: "BDD4BNN is a direct finite-domain requested-output comparator: for an arbitrary binary input region it constructs one exact BDD per output class, partitioning the region by final classification and supporting exact class counts, robustness queries, prime-implicant explanations, and essential-feature analysis"
+---
 
-- **Status:** deep-read; critical exact requested-class compilation predecessor
-- **Primary source:** https://doi.org/10.1145/3563212
-- **Version read:** ACM TOSEM author copy, 51 pages
-- **Conference precursor:** https://doi.org/10.1007/978-3-030-81685-8_8
-- **Bibliography key:** `bdd4bnn2023`
+# Precise Quantitative Analysis of Binarized Neural Networks
 
-## Why it matters
+## Evidence
+
+### Why it matters
 
 BDD4BNN is a direct finite-domain requested-output comparator. For an arbitrary
 binary input region, it constructs one exact BDD per output class, so those BDDs
@@ -14,7 +26,7 @@ partition the requested region by the final classification. It then supports
 exact class counts, robustness queries, prime-implicant explanations, and
 essential-feature analysis.
 
-## Program and semantic model
+### Program and semantic model
 
 The source model is a layered binarized neural network with binary inputs,
 binary internal activations, and a deterministically tie-broken multiclass
@@ -23,7 +35,7 @@ and output comparisons are translated into cardinality constraints. The input
 region is either a Hamming ball or a partial-coordinate cube represented as a
 BDD.
 
-## Results and guarantees
+### Results and guarantees
 
 Propositions 3.5--3.6 prove the internal- and output-block cardinality
 translations. Theorem 3.7 proves pointwise equality of the original BNN and its
@@ -37,7 +49,7 @@ features. The latter two are different quotients: a prime implicant leaves
 irrelevant input bits as don't-cares, whereas an essential literal occurs in
 every relevant class assignment.
 
-## Algorithm and complexity
+### Algorithm and complexity
 
 Algorithm 1 encodes a cardinality constraint with threshold `k` over `n`
 literals as a BDD. Lemma 3.1 gives `O((n-k)k)` nodes and the same construction
@@ -51,31 +63,7 @@ and hidden layers with up to 100 neurons. They report large speedups over an app
 baseline on the tested instances, but those ratios are empirical, not
 asymptotic guarantees.
 
-## Relationship to our hypothesis
-
-### What is directly established by the work?
-
-- Exact requested-input-region to requested-class fibers for a finite BNN.
-- A compiled shared decision representation with exact counting and sparse
-  prime-implicant explanations.
-- Feasible-input propagation across neural blocks before final output queries.
-
-### What is our interpretation or inference?
-
-Totalizing selection sites and compiling the requested output is a direct
-finite-domain realization of an extensional observer quotient. Prime
-implicants can omit input coordinates, but that omission is logical don't-care,
-not structural non-observation of internal graph events.
-
-### Could it subsume our proposed contribution?
-
-It subsumes the binary-network, final-class extensional specialization and
-defeats any claim that neural-specific exact BDD compilation, requested-region
-partitioning, or sparse explanations are new. It does not preserve equal-valued
-internal event provenance, provide a requested-root sparse site map, or cover
-arbitrary typed pure DAG primitives.
-
-## Evidence locations
+### Evidence locations
 
 - Section 2, pp. 7--10: BNN, BDD, and input-region definitions.
 - Lemmas 3.1--3.4, pp. 11--15: cardinality and region BDD construction.
@@ -86,7 +74,28 @@ arbitrary typed pure DAG primitives.
 - Section 6, pp. 33--43: evaluation and scaling evidence.
 - Section 7, pp. 43--47: comparison with SAT, BDD learning, and abstraction.
 
-## Questions and possible weaknesses
+## Bearing on RQs
+
+What is directly established by the work: exact requested-input-region to
+requested-class fibers for a finite BNN; a compiled shared decision
+representation with exact counting and sparse prime-implicant explanations;
+and feasible-input propagation across neural blocks before final output
+queries.
+
+Our interpretation or inference: totalizing selection sites and compiling the
+requested output is a direct finite-domain realization of an extensional
+observer quotient. Prime implicants can omit input coordinates, but that
+omission is logical don't-care, not structural non-observation of internal
+graph events.
+
+Could it subsume our proposed contribution: it subsumes the binary-network,
+final-class extensional specialization and defeats any claim that
+neural-specific exact BDD compilation, requested-region partitioning, or
+sparse explanations are new. It does not preserve equal-valued internal event
+provenance, provide a requested-root sparse site map, or cover arbitrary typed
+pure DAG primitives.
+
+## Evidence limits
 
 - The exact object is the final class function over a finite binary region; it
   intentionally erases internal activation provenance.

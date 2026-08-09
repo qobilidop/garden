@@ -1,15 +1,24 @@
-# bonet2014recent — User-parametric complete unfolding prefixes
+---
+citekey: bonet2014recent
+work:
+  title: "Recent Advances in Unfolding Technique"
+  author: "Blai Bonet, Patrik Haslum, Victor Khomenko, Sylvie Thiébaux, Walter Vogler"
+  venue: "Theoretical Computer Science"
+  date: 2014
+  doi: 10.1016/j.tcs.2014.07.003
+read: full-text
+source: "Publisher HTML version of record, Theoretical Computer Science 551 (2014) pp. 84–101, via https://doi.org/10.1016/j.tcs.2014.07.003"
+retrieved: "-"
+notes-by: Codex (initial campaign); Claude Fable 5 (record migration)
+notes-date: 2026-08-04
+synthesis: "Parameterizes unfolding-prefix completeness by a user-chosen configuration equivalence plus an implementer-stated decidable cutting relation joined by a proof-only well-founded relation — strong precedent for observer-relative finite summaries separated from exploration order"
+---
 
-- **Status:** deep-read; configuration-equivalence and cut-off boundary
-- **Primary source:** https://doi.org/10.1016/j.tcs.2014.07.003
-- **Institutional record:**
-  https://openresearch-repository.anu.edu.au/items/be36ce28-f87f-4338-8279-6d663b7b7228
-- **Version read:** publisher HTML version of record, *Theoretical Computer
-  Science* 551 (2014), pp. 84--101; the ANU repository records the author PDF
-  but currently restricts the bitstream
-- **Bibliography key:** `bonet2014recent`
+# User-parametric complete unfolding prefixes
 
-## Why it matters
+## Evidence
+
+### Why it matters
 
 The paper makes preservation itself a parameter of an unfolding prefix. A user
 states which configurations count as equivalent, while an implementer states a
@@ -17,7 +26,7 @@ decidable cutting relation; a proof-only well-founded relation connects the
 two. This is strong precedent for an observer-relative finite summary and for
 separating semantic preservation from exploration order.
 
-## Program and semantic model
+### Program and semantic model
 
 The model is a finite place/transition Petri net with an initial multiset
 marking; every transition is assumed to have a nonempty preset (Section 2.1).
@@ -26,7 +35,7 @@ matters through finitariness: marking equivalence has finite index exactly when
 the net has finitely many reachable markings, whereas an unbounded net may
 produce an infinite run and prefix.
 
-## Main definitions
+### Main definitions
 
 - Section 4, Definition 2 parameterizes completeness by an equivalence `≈` on
   configurations of the full unfolding. Every class must have a cut-off-free
@@ -42,7 +51,7 @@ produce an infinite run and prefix.
   `CC:CHAIN` holds: every infinite causal chain with equivalent local
   configurations contains a later event whose causal past contains a cutter.
 
-## Results and theorem boundaries
+### Results and theorem boundaries
 
 - Section 5, Theorem 6 proves completeness for any cutting context and any fair
   result of the generalized algorithm: every minimal configuration in each
@@ -58,7 +67,7 @@ produce an infinite run and prefix.
   an additional selection invariant that prevents selecting an event before
   possible cutters are available.
 
-## Target distinction
+### Target distinction
 
 Section 8 uses a set of target configurations for reachability, coverability,
 safety, planning, or diagnosis. The target set must be closed under the chosen
@@ -68,13 +77,7 @@ that are also closed under the equivalence; Theorem 10 proves the transformed
 relation remains a cutting context. Lemma 11 and Section 8.2 add stronger
 assumptions for optimal on-the-fly search.
 
-These targets are existential goal configurations in a Petri-net unfolding.
-On-the-fly search may stop at the first target, and the prefix preserves
-representatives modulo a user-chosen configuration equivalence. The paper does
-not enumerate every value of a requested internal observer, compute exact
-inverse caller-input fibers, or attach a typed residual value to each class.
-
-## Evidence locations
+### Evidence locations
 
 - Section 2.1: finite-net and nonempty-preset assumptions; boundedness and
   reachable-marking finiteness.
@@ -88,3 +91,15 @@ inverse caller-input fibers, or attach a typed residual value to each class.
   bound.
 - Section 8, Theorem 10, Lemma 11, and Section 8.2: target closure, heuristic
   guidance, safe dead-end pruning, and optimality assumptions.
+
+## Bearing on RQs
+
+These targets are existential goal configurations in a Petri-net unfolding.
+On-the-fly search may stop at the first target, and the prefix preserves
+representatives modulo a user-chosen configuration equivalence.
+
+## Evidence limits
+
+The paper does not enumerate every value of a requested internal observer,
+compute exact inverse caller-input fibers, or attach a typed residual value to
+each class.

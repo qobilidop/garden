@@ -1,12 +1,23 @@
-# gligoric2008delayed — On Delayed Choice Execution for Falsification
+---
+citekey: gligoric2008delayed
+work:
+  title: "On Delayed Choice Execution for Falsification"
+  author: "Milos Gligoric, Tihomir Gvero, Sarfraz Khurshid, Viktor Kuncak, Darko Marinov"
+  venue: "EPFL LARA-REPORT-2008-08"
+  date: 2008
+read: full-text
+source: "EPFL IC LARA-REPORT-2008-08 via https://infoscience.epfl.ch/server/api/core/bitstreams/fa02f0c5-b893-40a3-9522-1c074a9df2ff/content, 19 pages"
+retrieved: "-"
+notes-by: Codex (initial campaign); Claude Fable 5 (record migration)
+notes-date: 2026-08-04
+synthesis: "Delayed-choice execution suspends nondeterministic values until first non-copy use, so one delayed execution can represent all concrete values of an unforced choice — the closest prior statement of 'do not enumerate choices the computation never observes,' though without a stable site-to-outcome observation or exact fiber partition"
+---
 
-- **Status:** deep-read; critical demand-sensitive predecessor
-- **Primary source:**
-  https://infoscience.epfl.ch/server/api/core/bitstreams/fa02f0c5-b893-40a3-9522-1c074a9df2ff/content
-- **Version read:** EPFL IC LARA-REPORT-2008-08, 19 pages
-- **Bibliography key:** `gligoric2008delayed`
+# On Delayed Choice Execution for Falsification
 
-## Why it matters
+## Evidence
+
+### Why it matters
 
 This paper states the closest prior version of the motivating principle “do not
 enumerate choices that the requested computation never observes.” It transforms
@@ -22,7 +33,7 @@ paper does not, however, define or export a stable site-to-outcome observation,
 nor does it prove that those cylinders form an exact or maximal input-fiber
 partition.
 
-## Program and execution model
+### Program and execution model
 
 The source is an imperative guarded-command control-flow graph with visible and
 invisible variables. Statements include reads, writes, copies, `assume`, and
@@ -40,7 +51,7 @@ concrete value. This is established and precise for its operational semantics.
 Our term *observed* is preferable for the graph paper because membership in an
 enabled closure is not implemented by a particular forcing machine.
 
-## Correctness theorem
+### Correctness theorem
 
 Let `alpha(c,d)` project a program state onto its control state and visible
 variables. Section 3.3 moves each `force` down the eager tree across independent
@@ -59,7 +70,7 @@ attach a stable coordinate map to the leaf, prove that such cylinders are exact
 or maximal fibers of the visible result, or enumerate one representative per
 fiber.
 
-## Path reduction and complexity
+### Path reduction and complexity
 
 Moving `force` downward never increases the number of root-to-leaf traces. If
 `K` distinct suspended choices with `N` outcomes are removed at leaves, Section
@@ -72,7 +83,7 @@ paper supplies no worst-case delay, total-space, or solver-call analysis. Its
 implementation in Java PathFinder reports large empirical improvements for
 red-black-tree generation, sorting, and several falsification benchmarks.
 
-## Exact overlap with our motivating example
+### Exact overlap with our motivating example
 
 The sorting example stores keys and payload values in parallel arrays. The sort
 compares keys but only copies payloads. Copy propagation therefore leaves every
@@ -95,39 +106,14 @@ symbolic residual. The distinction is therefore not merely that we record more
 metadata: we quotient used inputs by selection outcomes while preserving
 ordinary symbolic computation within a fiber.
 
-## Relationship to selection observations
-
-### Directly established
-
-- nondeterministic values can remain suspended until first non-copy use;
-- copying preserves one shared delayed decision;
-- invisible never-forced choices need not branch;
-- visible reachable-state sets are preserved exactly; and
-- eliminating `K` independent `N`-way leaf choices can reduce paths by `N^K`.
-
-### Not established
-
-- stable identifiers for syntactic selection sites;
-- an emitted stable partial map of forced sites to outcomes;
-- deterministic guards whose outcomes are selected by concrete inputs;
-- exact positive-cylinder formulas for one observation;
-- pairwise-disjoint fibers or conflict-frontier structure;
-- duplicate-free observation enumeration; or
-- compositional graph summaries.
-
-Our algorithm can be viewed as lifting this paper's operational omission
-principle into an explicit graph-intensional observable with exact inverse
-images, while coarsening concrete forced values to semantic selection outcomes.
-That is a legitimate synthesis, but the omission principle itself is prior art.
-
-## Terminology
+### Terminology
 
 Established terms include *delayed choice*, *force*, *suspension*, *visible
 variable*, *invisible variable*, *copy propagation*, *computation tree*, and
 *bounded-exhaustive testing*. “Demand” appears informally through when a value is
 used; the formal event is `force`.
 
-## Evidence locations
+### Evidence locations
 
 - Sections 1–2, pp. 2–9: guarded-command falsification, bounded-exhaustive
   testing, first-use choice, and motivating examples.
@@ -139,7 +125,26 @@ used; the formal event is `force`.
 - Sections 5–6, pp. 16–18: relationship to lazy initialization, lightweight
   symbolic execution, and the universal never-forced-value observation.
 
-## Questions and weaknesses
+## Bearing on RQs
+
+Directly established: nondeterministic values can remain suspended until first
+non-copy use; copying preserves one shared delayed decision; invisible
+never-forced choices need not branch; visible reachable-state sets are
+preserved exactly; and eliminating `K` independent `N`-way leaf choices can
+reduce paths by `N^K`.
+
+Not established: stable identifiers for syntactic selection sites; an emitted
+stable partial map of forced sites to outcomes; deterministic guards whose
+outcomes are selected by concrete inputs; exact positive-cylinder formulas for
+one observation; pairwise-disjoint fibers or conflict-frontier structure;
+duplicate-free observation enumeration; or compositional graph summaries.
+
+Our algorithm can be viewed as lifting this paper's operational omission
+principle into an explicit graph-intensional observable with exact inverse
+images, while coarsening concrete forced values to semantic selection outcomes.
+That is a legitimate synthesis, but the omission principle itself is prior art.
+
+## Evidence limits
 
 - Correctness is stated for the set of visible states, not complete trace
   equivalence or a stable decision observer.

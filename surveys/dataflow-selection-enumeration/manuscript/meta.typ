@@ -15,7 +15,7 @@
   literature claims rest on the cited primary sources and the public
   working record in the repository.
 ]
-#let draft = "Draft 2026-08-05"
+#let draft = "Draft 2026-08-09"
 #let landing = "https://qobilidop.github.io/sys0/surveys/dataflow-selection-enumeration/"
 #let record = "https://github.com/qobilidop/sys0/tree/main/surveys/dataflow-selection-enumeration/record"
 

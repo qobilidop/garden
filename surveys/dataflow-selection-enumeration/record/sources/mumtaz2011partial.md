@@ -1,14 +1,24 @@
-# mumtaz2011partial — P-PET: Partial Pseudo-Exhaustive Test for High Defect Coverage
+---
+citekey: mumtaz2011partial
+work:
+  title: "P-PET: Partial Pseudo-Exhaustive Test for High Defect Coverage"
+  author: "Abdullah Mumtaz, Michael E. Imhof, Hans-Joachim Wunderlich"
+  venue: "ITC 2011"
+  date: 2011
+  doi: 10.1109/test.2011.6139130
+read: full-text
+source: "Author-hosted accepted manuscript via https://www.iti.uni-stuttgart.de/fileadmin/rami/files/publications/2011/ITC_MumtazIW2011.pdf (published: https://doi.org/10.1109/TEST.2011.6139130)"
+retrieved: "-"
+notes-by: Codex (initial campaign); Claude Fable 5 (record migration)
+notes-date: 2026-08-04
+synthesis: "Pseudo-exhaustive circuit testing requires every assignment on each output's structural input cone rather than the full global input space — a direct antecedent for local-observer-relative exhaustiveness, though over full structural cones (including unselected mux arms) rather than exact enabled-closure fibers"
+---
 
-- **Status:** deep-read; critical representative of support-local exhaustive
-  circuit testing
-- **Primary source:** https://doi.org/10.1109/TEST.2011.6139130
-- **Version read:** author-hosted accepted manuscript
-- **Open copy:**
-  https://www.iti.uni-stuttgart.de/fileadmin/rami/files/publications/2011/ITC_MumtazIW2011.pdf
-- **Bibliography key:** `mumtaz2011partial`
+# P-PET: Partial Pseudo-Exhaustive Test for High Defect Coverage
 
-## Why it matters
+## Evidence
+
+### Why it matters
 
 Pseudo-exhaustive testing is a direct combinational-DAG predecessor for
 exhaustiveness relative to a local observation support. Instead of applying all
@@ -23,7 +33,7 @@ full input patterns, treats an output cone as containing all structural
 predecessors—including both arms of a mux—and pursues fault coverage rather
 than exact semantic input fibers or residual functions.
 
-## Circuit and test-set model
+### Circuit and test-set model
 
 Let a combinational circuit $C$ have primary inputs $I$ and outputs $O$.
 For output $o$, its cone is the minimal subcircuit containing every structural
@@ -54,7 +64,7 @@ coverage. Larger cones receive the generated patterns but are not guaranteed
 to see every local assignment (Section I, paper pp. 1--2). Thus *partial* in
 P-PET means partial circuit coverage, not partial input records.
 
-## Enumeration and synthesis algorithm
+### Enumeration and synthesis algorithm
 
 The implementation uses programmable linear-feedback shift registers. A
 primitive feedback polynomial $p$ of degree $r$ tests a cone $k$ when its
@@ -79,7 +89,7 @@ $k_a$, so subset cones are removed before greedy polynomial construction
 covers the most remaining maximal cones and then the most smaller cones
 (Section VI-B, paper pp. 4--5).
 
-## Guarantees and complexity boundary
+### Guarantees and complexity boundary
 
 For every cone retained in $K_c$, the construction checks that some selected
 polynomial projects to every cone assignment. This is an exact coverage
@@ -98,7 +108,7 @@ gates covered at a chosen cutoff, required polynomials/patterns, stuck-at
 coverage, $N$-detectability, and non-target bridging-fault coverage
 (Section VII, paper pp. 5--8).
 
-## Historical lineage
+### Historical lineage
 
 McCluskey's 1984 verification-testing paper introduced exhaustive testing of
 individual output cones. Udell and McCluskey's 1989 paper formalized segments
@@ -114,7 +124,20 @@ particular, that circuits with at most five outputs and maximum cone size $k$
 can always be tested with $2^k$ patterns. These are bounds for local truth-table
 coverage, not for selection-observation enumeration.
 
-## Relationship to selection observations
+### Evidence locations
+
+- Section I and equations (1)--(2), paper pp. 1--2: cone definition, PET
+  contract, test-length bounds, and P-PET cutoff.
+- Sections II-B and III, paper pp. 2--3: pattern-generator lineage, minimum-set
+  hardness statement, and polynomial-cover objective.
+- Section V, paper p. 3: linear-independence criterion for exhaustive cone
+  projection.
+- Section VI and Algorithm 6, paper pp. 4--5: subset-cone elimination and
+  set-cover heuristic.
+- Section VII, paper pp. 5--8: empirical metrics and scope.
+- Section VIII, paper p. 8: stated P-PET guarantee and limitations.
+
+## Bearing on RQs
 
 ### Shared insight
 
@@ -157,20 +180,7 @@ the image of the observation map, prove exact fibers, or preserve site identity.
 Consequently PET is a strong local-exhaustiveness predecessor but not a direct
 reduction of the proposed semantic object.
 
-## Evidence locations
-
-- Section I and equations (1)--(2), paper pp. 1--2: cone definition, PET
-  contract, test-length bounds, and P-PET cutoff.
-- Sections II-B and III, paper pp. 2--3: pattern-generator lineage, minimum-set
-  hardness statement, and polynomial-cover objective.
-- Section V, paper p. 3: linear-independence criterion for exhaustive cone
-  projection.
-- Section VI and Algorithm 6, paper pp. 4--5: subset-cone elimination and
-  set-cover heuristic.
-- Section VII, paper pp. 5--8: empirical metrics and scope.
-- Section VIII, paper p. 8: stated P-PET guarantee and limitations.
-
-## Questions and limitations
+## Evidence limits
 
 - The paper's word *partial* is easily misread as a partial-assignment result;
   it is instead a cutoff that gives no exhaustive guarantee for large cones.

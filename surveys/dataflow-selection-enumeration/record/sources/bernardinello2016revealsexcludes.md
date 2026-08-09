@@ -1,17 +1,24 @@
-# bernardinello2016revealsexcludes — Reveals/excludes observer semantics
+---
+citekey: bernardinello2016revealsexcludes
+work:
+  title: "Non-Interference Notions Based on Reveals and Excludes Relations for Petri Nets"
+  author: "Luca Bernardinello, Görkem Kılınç, Lucia Pomello"
+  venue: "ToPNoC XI"
+  date: 2016
+  doi: 10.1007/978-3-662-53401-4_3
+read: full-text
+source: "Open PNSE 2015 preliminary full text: https://ceur-ws.org/Vol-1372/paper4.pdf (cross-checked against the canonical 2016 ToPNoC XI record at https://doi.org/10.1007/978-3-662-53401-4_3 and https://boa.unimib.it/handle/10281/146399)"
+retrieved: "-"
+notes-by: Codex (initial campaign); Claude Fable 5 (record migration)
+notes-date: 2026-08-04
+synthesis: "Reveals/excludes relations formalize occurrence-count and negative (non-occurrence) information flow between Petri-net transitions in maximal runs — a semantic predecessor to later finite-prefix reveals algorithms, over transition occurrence rather than an enumerated observer image"
+---
 
-- **Status:** deep-read; multiplicity-sensitive and negative-information
-  observer boundary
-- **Primary source:** https://doi.org/10.1007/978-3-662-53401-4_3
-- **Primary institutional record:** https://boa.unimib.it/handle/10281/146399
-- **Open primary preliminary full text:**
-  https://ceur-ws.org/Vol-1372/paper4.pdf
-- **Version read:** complete PNSE 2015 preliminary, pp. 59--78,
-  cross-checked against the canonical 2016 ToPNoC XI chapter metadata and
-  abstract, pp. 49--70
-- **Bibliography key:** `bernardinello2016revealsexcludes`
+# Non-Interference Notions Based on Reveals and Excludes Relations for Petri Nets
 
-## Evidence locations
+## Evidence
+
+### Evidence locations
 
 - Section 2 (preliminary pp. 60--62) fixes finite ordinary Petri nets with
   nonempty transition presets; behavior may be infinite and is represented by
@@ -41,7 +48,7 @@
   beginning to be explored. The paper gives definitions and comparison
   propositions, not a decision algorithm or complexity bound.
 
-## Relationship and evidence limit
+## Bearing on RQs
 
 The 2016 ToPNoC chapter is canonical; the identically titled open PNSE 2015
 paper is its preliminary primary version and receives no separate key. This is
@@ -50,6 +57,8 @@ remains distinct: it introduces occurrence-count observation and negative
 excludes/non-interference, whereas the 2022 free-choice footprint construction
 forgets multiplicity and the 2024 bounded equal-conflict work supplies later
 exact parametric-reveals algorithms.
+
+## Evidence limits
 
 Its observer ranges over transition occurrence or nonoccurrence in maximal
 Petri-net runs. It neither enumerates the observer image nor constructs

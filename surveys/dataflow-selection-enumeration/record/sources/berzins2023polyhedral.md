@@ -1,18 +1,30 @@
-# berzins2023polyhedral — Polyhedral Complex Extraction from ReLU Networks Using Edge Subdivision
+---
+citekey: berzins2023polyhedral
+work:
+  title: "Polyhedral Complex Extraction from ReLU Networks Using Edge Subdivision"
+  author: "Arturs Berzins"
+  venue: "ICML 2023"
+  date: 2023
+source: "ICML 2023 paper, https://proceedings.mlr.press/v202/berzins23a.html"
+read: full-text
+retrieved: "-"
+notes-by: Codex (initial campaign); Claude Fable 5 (record migration)
+notes-date: 2026-08-04
+synthesis: "Extracts the exact bounded ReLU polyhedral complex via one-skeleton edge subdivision rather than redundant per-region processing — the closest contemporaneous GPU/parallel competitor to Balestriero, and a stronger geometric output than a selection-enumeration observer needs."
+---
 
-- **Status:** deep-read; critical contemporaneous exact-complex method
-- **Primary source:** https://proceedings.mlr.press/v202/berzins23a.html
-- **Version read:** ICML 2023 paper
-- **Bibliography key:** `berzins2023polyhedral`
+# Polyhedral Complex Extraction from ReLU Networks Using Edge Subdivision
 
-## Why it matters
+## Evidence
+
+### Why it matters
 
 Berzins extracts the exact bounded ReLU polyhedral complex by subdividing its
 one-skeleton rather than redundantly processing each region. It is the closest
 contemporaneous GPU/parallel competitor to Balestriero and a stronger
 geometric output than our observer needs.
 
-## Object and algorithm
+### Object and algorithm
 
 The method represents every cell by a ternary sign vector and maintains the
 vertices and edges of the complex. For every neuron, it:
@@ -28,7 +40,7 @@ by perturbing zero signs. The implementation restricts the input to a bounded
 polyhedral domain, adding domain signs and perturbing boundary zeros only
 toward the interior.
 
-## Guarantee and complexity audit
+### Guarantee and complexity audit
 
 The argument assumes a generic arrangement: no existing vertex lies on the
 new folded hyperplane. Under that assumption the edge-subdivision construction
@@ -46,7 +58,15 @@ exponential output size remain relevant.
 The method assumes a fully connected ReLU network, genericity, and a bounded
 polyhedral domain. Nongeneric and unbounded cases are left for future work.
 
-## Relationship to selection observations
+### Evidence locations
+
+- Sections 3.3--3.5, paper pp. 3--4: sign vectors and complex model.
+- Sections 4.1--4.2, pp. 5--6: perturbation and edge-subdivision algorithm.
+- Section 4.2.3 and Appendix A, pp. 6 and 11: complexity claim and assumptions.
+- Section 5.1.1, p. 7: limited validation check.
+- Section 6, p. 9: bounded/generic scope and future work.
+
+## Bearing on RQs
 
 The full cell complex contains dense signs for all ReLU units and includes
 lower-dimensional boundary faces. It does not request a subset of result
@@ -59,11 +79,10 @@ It nevertheless prevents claims that exact cell-complex extraction,
 sign-vector face reconstruction, or GPU-parallel exact region processing is
 new.
 
-## Evidence locations
+## Evidence limits
 
-- Sections 3.3--3.5, paper pp. 3--4: sign vectors and complex model.
-- Sections 4.1--4.2, pp. 5--6: perturbation and edge-subdivision algorithm.
-- Section 4.2.3 and Appendix A, pp. 6 and 11: complexity claim and assumptions.
-- Section 5.1.1, p. 7: limited validation check.
-- Section 6, p. 9: bounded/generic scope and future work.
-
+Read at full-text (ICML) level; the source note recorded no dedicated
+evidence-limits section beyond the assumptions and complexity caveats already
+stated in the Evidence section above (genericity, boundedness, and the
+\(O(|V|)\) versus \(O(|V|\log|V|)\) discrepancy between the claimed and
+implemented bound).

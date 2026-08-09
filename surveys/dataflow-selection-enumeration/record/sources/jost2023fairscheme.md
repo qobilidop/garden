@@ -1,13 +1,24 @@
-# jost2023fairscheme — Implementing a Functional Logic Programming Language via the Fair Scheme
+---
+citekey: jost2023fairscheme
+work:
+  title: "Implementing a Functional Logic Programming Language via the Fair Scheme"
+  author: "Andrew Michael Jost"
+  venue: "PhD dissertation, Portland State University"
+  date: 2023
+  doi: 10.15760/etd.3564
+read: full-text
+source: "Portland State University dissertation via https://doi.org/10.15760/etd.3564 (repository record: https://pdxscholar.library.pdx.edu/open_access_etds/6419/), 254 pages"
+retrieved: "-"
+notes-by: Codex (initial campaign); Claude Fable 5 (record migration)
+notes-date: 2026-08-04
+synthesis: "The Fair Scheme's latest full formalization: sound, complete, optimal narrowing via sparse demand-populated fingerprints — establishing fingerprints and fair scheduling as prior art the survey's duplicate-free enumeration and guarded meta-encoding claims must be proven against"
+---
 
-- **Status:** deep-read; high-priority expanded treatment
-- **Primary source:** https://doi.org/10.15760/etd.3564
-- **Repository record:**
-  https://pdxscholar.library.pdx.edu/open_access_etds/6419/
-- **Version read:** final 254-page Portland State University dissertation
-- **Bibliography key:** `jost2023fairscheme`
+# Implementing a Functional Logic Programming Language via the Fair Scheme
 
-## Why it matters
+## Evidence
+
+### Why it matters
 
 The dissertation is the latest full formalization and implementation account of
 the Fair Scheme. Its abstract calls the simple scheme sound, complete, and
@@ -22,7 +33,7 @@ choice decisions; the fair queue attempts to enumerate all values. What is
 missing is deterministic-input partitioning and duplicate-free enumeration of
 the fingerprint projection itself.
 
-## Simple Fair Scheme
+### Simple Fair Scheme
 
 Chapter 3 formalizes finite acyclic LOIS graph-rewrite systems. The dispatcher
 maintains a queue of live computations and rotates after each finite step. A
@@ -35,7 +46,7 @@ to constructor-rooted form. This does not identify a minimum support of the
 eventual value, and it is not the same relation as deterministic enabled
 reachability from requested roots.
 
-## Formal theorems
+### Formal theorems
 
 **Theorem 3.4.7** imports Antoy's pull-tabbing correctness theorem: consistent
 rewriting before and after a choice-free pull-tabbing derivation has the same
@@ -58,7 +69,7 @@ for fairness. The dissertation calls the scheme complete, but the displayed
 correctness theorem remains the per-state existential result rather than a
 separate formal liveness or duplicate-free enumeration theorem.
 
-## Extensions and proof boundary
+### Extensions and proof boundary
 
 Chapter 4 adds lazy free-variable instantiation (`FS-x`), equational constraints
 (`FS-beta`), and set functions (`FS-S`). It explicitly states that extending the
@@ -73,7 +84,7 @@ Constraint stores additionally correlate identifiers. This is close to symbolic
 input generation, but the generated choices range over program values and may
 be infinite; they do not yield formulas describing exact concrete-input fibers.
 
-## Concrete fingerprint representation
+### Concrete fingerprint representation
 
 Chapter 5 describes a runtime configuration containing an expression,
 fingerprint, constraint store, binding store, and scan state. A fingerprint is
@@ -86,7 +97,20 @@ copies a root pointer, while insertion copies only shared nodes along a path.
 The dissertation provides this engineering rationale but no asymptotic bound
 for total configurations, fingerprint growth, delay, or emitted values.
 
-## Relationship to selection observations
+### Evidence locations
+
+- Chapter 2.3.1, pp. 57–61: equivalent representations of nondeterminism.
+- Chapter 3.2.2, pp. 96–100: choice identifiers and consistent computation.
+- Chapter 3.3, pp. 101–105: dispatch queue and target procedures.
+- Chapter 3.4, pp. 105–118: need, value preservation, and optimality theorems.
+- Chapter 4 introduction, pp. 121–122: explicit informal-proof boundary for
+  the extensions.
+- Chapter 4.1, pp. 133–139: generator choices and fingerprint-based bindings.
+- Chapter 5.2, pp. 187–191: configurations and concrete fingerprint structure.
+- Chapter 7.1, pp. 216–218: operational completeness examples and resource
+  qualifications.
+
+## Bearing on RQs
 
 ### Subsumed claims
 
@@ -111,20 +135,7 @@ collapse the input-fiber theorem, but any manuscript must treat fingerprints as
 established prior art and prove the guarded meta-encoding rather than suggesting
 that sparse observations are new.
 
-## Evidence locations
-
-- Chapter 2.3.1, pp. 57–61: equivalent representations of nondeterminism.
-- Chapter 3.2.2, pp. 96–100: choice identifiers and consistent computation.
-- Chapter 3.3, pp. 101–105: dispatch queue and target procedures.
-- Chapter 3.4, pp. 105–118: need, value preservation, and optimality theorems.
-- Chapter 4 introduction, pp. 121–122: explicit informal-proof boundary for
-  the extensions.
-- Chapter 4.1, pp. 133–139: generator choices and fingerprint-based bindings.
-- Chapter 5.2, pp. 187–191: configurations and concrete fingerprint structure.
-- Chapter 7.1, pp. 216–218: operational completeness examples and resource
-  qualifications.
-
-## Questions and weaknesses
+## Evidence limits
 
 - The theorem called correctness is not an exactly-once enumeration theorem.
 - The full Curry extensions are not covered by the Chapter 3 formal proofs.

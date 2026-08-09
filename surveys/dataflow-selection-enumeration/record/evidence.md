@@ -10,9 +10,9 @@ semicolon-separated.
 Fields: **Finding** (what the literature shows), **Works** (citekeys),
 **Anchors** (`sources/<citekey>.md#<heading>`), **Supports** (`Cxx`,
 omitted when none), **Manuscript** (section labels, omitted when
-none), **Scope**, **Caveat**, and optional **Certainty**
-(`high`/`moderate`/`low`, GRADE-inspired; graded on next evidence
-touch).
+none), **Scope**, **Caveat**, and **Certainty** (`high`/`moderate`/`low`,
+GRADE-inspired; assigned 2026-08-09 against the source notes' read
+depth and evidence limits).
 
 
 ### E001
@@ -23,6 +23,7 @@ touch).
 - **Manuscript:** sec-method
 - **Scope:** methodology
 - **Caveat:** These sources guide reporting; they do not certify literature completeness.
+- **Certainty:** low
 
 ### E002
 
@@ -33,6 +34,7 @@ touch).
 - **Manuscript:** sec-introduction,sec-related
 - **Scope:** definitions and correctness theorems
 - **Caveat:** The exact equivalence conditions and merge contracts differ across languages; correspondence with selection fibers is our synthesis.
+- **Certainty:** low
 
 ### E003
 
@@ -43,6 +45,7 @@ touch).
 - **Manuscript:** sec-related
 - **Scope:** algorithms, guarantees, and experiments
 - **Caveat:** Their CFG and dependence observers are not the selection-observation fiber.
+- **Certainty:** moderate
 
 ### E004
 
@@ -50,9 +53,10 @@ touch).
 - **Works:** phan2015allsmtr,spallitta2024disjoint,spallitta2025projected
 - **Anchors:** sources/phan2015allsmtr.md#evidence-locations;sources/spallitta2024disjoint.md#evidence-locations;sources/spallitta2025projected.md#evidence-locations
 - **Supports:** C01,C02,C03,C15
-- **Manuscript:** sec-introduction,sec-related
+- **Manuscript:** sec-introduction,sec-related,sec-algorithms
 - **Scope:** algorithm and coverage/nonrepetition results
 - **Caveat:** Phan enumerates important Boolean coordinates; relevant theory-variable values are sampled annotations. A short projected cube can cover several complete observation tuples; equality with local exact fibers requires activity instrumentation and totalized output coordinates.
+- **Certainty:** high
 
 ### E005
 
@@ -63,6 +67,7 @@ touch).
 - **Manuscript:** sec-related
 - **Scope:** definitions, enumeration algorithms, and exactness results
 - **Caveat:** The graph-specific positive guard is a specialized representation of these generic fibers.
+- **Certainty:** high
 
 ### E006
 
@@ -73,6 +78,7 @@ touch).
 - **Manuscript:** sec-introduction,sec-related
 - **Scope:** representation definitions and complexity
 - **Caveat:** A symbolic residual per observation terminal requires an additional construction.
+- **Certainty:** high
 
 ### E007
 
@@ -83,6 +89,7 @@ touch).
 - **Manuscript:** sec-introduction,sec-related
 - **Scope:** choice representations and adequacy/value-preservation theorems
 - **Caveat:** Identities and nondeterministic result semantics differ from static contextual graph sites.
+- **Certainty:** moderate
 
 ### E008
 
@@ -93,6 +100,7 @@ touch).
 - **Manuscript:** sec-introduction,sec-related
 - **Scope:** algorithm and exhaustiveness argument
 - **Caveat:** It does not emit one canonical exact guard/residual record per selection-observation fiber.
+- **Certainty:** high
 
 ### E009
 
@@ -103,6 +111,7 @@ touch).
 - **Manuscript:** sec-related
 - **Scope:** transform correctness, parsimony, and stability characterization
 - **Caveat:** Equality with the survey's strict finite enabled closure requires a specialization proof.
+- **Certainty:** high
 
 ### E010
 
@@ -113,6 +122,7 @@ touch).
 - **Manuscript:** sec-related
 - **Scope:** universal interpreter and summary algorithms
 - **Caveat:** They do not state the exact requested-root observation-fiber correspondence.
+- **Certainty:** moderate
 
 ### E011
 
@@ -123,6 +133,7 @@ touch).
 - **Manuscript:** sec-related
 - **Scope:** algorithm and preservation argument
 - **Caveat:** The observer is a concurrent local property, not a requested-root input fiber.
+- **Certainty:** high
 
 ### E012
 
@@ -133,6 +144,7 @@ touch).
 - **Manuscript:** sec-introduction,sec-related,sec-complexity
 - **Scope:** algorithms, spanning arguments, and complexity theorems
 - **Caveat:** Bounds do not transfer to non-strict boundary fibers or arbitrary caller predicates.
+- **Certainty:** high
 
 ### E013
 
@@ -143,16 +155,18 @@ touch).
 - **Manuscript:** sec-complexity
 - **Scope:** complexity theorem and algorithm comparison
 - **Caveat:** The Deza-Pournin algorithm retains output-sized state; the successor improvements are structure-dependent.
+- **Certainty:** moderate
 
 ### E014
 
-- **Finding:** Exact neural methods enumerate dense activation cells, exact input stars or polyhedra, and affine maps; activation cells and maximal equal-map regions are distinct quotients.
-- **Works:** serra2018bounding,vincent2021reachable,wang2022regions
-- **Anchors:** sources/serra2018bounding.md#evidence-locations;sources/vincent2021reachable.md#evidence-locations;sources/wang2022regions.md#why-it-matters
+- **Finding:** Exact neural methods enumerate dense activation cells, exact input stars or polyhedra, and affine maps.
+- **Works:** serra2018bounding,vincent2021reachable
+- **Anchors:** sources/serra2018bounding.md#evidence-locations;sources/vincent2021reachable.md#evidence-locations
 - **Supports:** C04,C15
-- **Manuscript:** sec-related,sec-complexity
-- **Scope:** encodings, traversal, exactness, and quotient distinction
+- **Manuscript:** sec-related
+- **Scope:** encodings, traversal, and exactness
 - **Caveat:** Most results concern bounded dense networks and require boundary qualifications.
+- **Certainty:** moderate
 
 ### E015
 
@@ -163,6 +177,7 @@ touch).
 - **Manuscript:** sec-related
 - **Scope:** construction and empirical evaluation for EC-DT; equivalence theorem and LP simplification for Affinitree
 - **Caveat:** Both preserve an extensional network function rather than the contextual selection-event observer; Affinitree's theorem-level guarantee is not attributed to EC-DT.
+- **Certainty:** moderate
 
 ### E016
 
@@ -170,9 +185,10 @@ touch).
 - **Works:** geyer2010mode,geyer2008optimal
 - **Anchors:** sources/geyer2010mode.md#evidence-locations;sources/geyer2008optimal.md#evidence-locations
 - **Supports:** C01,C04,C09,C15
-- **Manuscript:** sec-related,sec-complexity
+- **Manuscript:** sec-related,sec-complexity,sec-formal-model
 - **Scope:** composition, exactness, and complexity results
 - **Caveat:** These methods preserve extensional affine behavior rather than contextual graph events.
+- **Certainty:** high
 
 ### E017
 
@@ -183,6 +199,7 @@ touch).
 - **Manuscript:** sec-introduction,sec-related,sec-complexity
 - **Scope:** algorithm and complexity theorem
 - **Caveat:** The theorem is basis and full-dimensional-region relative and omits a coefficient-bit bound.
+- **Certainty:** high
 
 ### E018
 
@@ -193,6 +210,7 @@ touch).
 - **Manuscript:** sec-related,sec-complexity
 - **Scope:** theorems and algorithm analyses
 - **Caveat:** Each guarantee has distinct assumptions; perturbed bases can outnumber unperturbed regions and no general DelayP or bit bound is inferred.
+- **Certainty:** high
 
 ### E019
 
@@ -203,6 +221,7 @@ touch).
 - **Manuscript:** sec-complexity
 - **Scope:** enumeration-complexity definitions
 - **Caveat:** A solver or compilation oracle is not free unless its representation and cost are part of the stated input model.
+- **Certainty:** high
 
 ### E020
 
@@ -213,6 +232,7 @@ touch).
 - **Manuscript:** sec-related
 - **Scope:** primary algorithms and preservation results
 - **Caveat:** The omitted dimension is concurrent schedule or state-space behavior, not requested-root-relative caller-input fibers.
+- **Certainty:** high
 
 ### E021
 
@@ -223,6 +243,7 @@ touch).
 - **Manuscript:** sec-related
 - **Scope:** primary algorithm and stated soundness scope
 - **Caveat:** The preserved objective is code observation during bounded exploration, not an exact caller-input fiber partition.
+- **Certainty:** high
 
 ### E022
 
@@ -233,6 +254,7 @@ touch).
 - **Manuscript:** sec-related
 - **Scope:** primary open paper, reduction property, algorithm, and theorems
 - **Caveat:** The output is a partial-order configuration prefix for marking reachability, not a partition of symbolic caller inputs or a residual-valued observer image.
+- **Certainty:** high
 
 ### E023
 
@@ -243,6 +265,7 @@ touch).
 - **Manuscript:** sec-related
 - **Scope:** primary article and theorem-level framework analysis
 - **Caveat:** The user declaration ranges over unfolding preservation and cutoffs; it does not derive requested selection-site observations, input fibers, or typed residuals.
+- **Certainty:** high
 
 ### E024
 
@@ -253,6 +276,7 @@ touch).
 - **Manuscript:** sec-related
 - **Scope:** official primary paper, definitions, propositions, and complexity analysis
 - **Caveat:** This is not designated-variable projection. Compilation may be exponential, and a partial cube can cover several observations unless totalized activity/outcome coordinates are required in every output.
+- **Certainty:** high
 
 ### E025
 
@@ -263,6 +287,7 @@ touch).
 - **Manuscript:** sec-related
 - **Scope:** primary preprint, formal definitions, mechanized lemmas, and theorems
 - **Caveat:** The demand result concerns one known total input and partial-value definedness; it does not enumerate internal selection observations or exact caller-input fibers.
+- **Certainty:** high
 
 ### E026
 
@@ -270,8 +295,10 @@ touch).
 - **Works:** konig2020common,mitze2021common,kvasnica2012clipping,kvasnica2013separation
 - **Anchors:** sources/konig2020common.md#exact-result;sources/mitze2021common.md#contribution;sources/kvasnica2012clipping.md#contribution;sources/kvasnica2013separation.md#contribution
 - **Supports:** C09,C15
+- **Manuscript:** sec-related,sec-discussion
 - **Scope:** exact first-action grouping, certified reuse, and pointwise-equivalent controller factorizations
 - **Caveat:** These are extensional output quotients or factorizations, not sparse contextual selection-event observers; the cross-domain distinction is our synthesis.
+- **Certainty:** low
 
 ### E027
 
@@ -279,8 +306,10 @@ touch).
 - **Works:** giua2003marking,corona2003observers,li2009minimum,ghazel2009observer
 - **Anchors:** sources/giua2003marking.md#evidence-locations;sources/corona2003observers.md#evidence-locations;sources/li2009minimum.md#evidence-locations;sources/ghazel2009observer.md#evidence-locations
 - **Supports:** C12,C15
+- **Manuscript:** sec-related
 - **Scope:** exact compatible-marking sets, optimization-restricted initial sets, and timed state estimation
 - **Caveat:** The hidden objects are Petri-net markings or timed states, not caller inputs paired with typed residual program values; the detailed minimum-marking claim is pinned to the full conference primary.
+- **Certainty:** high
 
 ### E028
 
@@ -288,8 +317,10 @@ touch).
 - **Works:** fisler2002bisimulation
 - **Anchors:** sources/fisler2002bisimulation.md#evidence-locations
 - **Supports:** C13,C15
+- **Manuscript:** sec-related,sec-discussion
 - **Scope:** exact quotient construction, analysis, and experiments
 - **Caveat:** This rejects an automatic performance inference; it does not predict the workload of selection-fiber enumeration.
+- **Certainty:** moderate
 
 ### E029
 
@@ -297,8 +328,10 @@ touch).
 - **Works:** tran2019star,robinson2020dissecting,masden2022algorithmic,berzins2023polyhedral,drammis2024parallel
 - **Anchors:** sources/tran2019star.md#evidence-locations;sources/robinson2020dissecting.md#evidence-locations;sources/masden2022algorithmic.md#evidence-locations;sources/berzins2023polyhedral.md#evidence-locations;sources/drammis2024parallel.md#evidence-locations
 - **Supports:** C04,C15
+- **Manuscript:** sec-related
 - **Scope:** primary algorithms, exactness statements, and representation boundaries
 - **Caveat:** These objects need not preserve the graph's contextual selection observer.
+- **Certainty:** moderate
 
 ### E030
 
@@ -306,8 +339,10 @@ touch).
 - **Works:** lindblad2007property,boyapati2002korat,geldenhuys2013bounded,rosner2015bliss,copia2022lissa,copia2023precise
 - **Anchors:** sources/lindblad2007property.md#evidence-locations;sources/boyapati2002korat.md#evidence-locations;sources/geldenhuys2013bounded.md#evidence-locations;sources/rosner2015bliss.md#evidence-locations;sources/copia2022lissa.md#evidence-locations;sources/copia2023precise.md#evidence-locations
 - **Supports:** C06,C15
+- **Manuscript:** sec-related
 - **Scope:** primary algorithms and work-specific correctness scopes
 - **Caveat:** Lindblad states but does not prove the needed soundness/completeness conditions; the other works have their own proved or explicitly scoped guarantees. Their observers and artifacts differ from exact selection-observation records.
+- **Certainty:** moderate
 
 ### E031
 
@@ -315,8 +350,10 @@ touch).
 - **Works:** shin2024multitask
 - **Anchors:** sources/shin2024multitask.md#relevance
 - **Supports:** C09,C15
+- **Manuscript:** sec-related
 - **Scope:** primary abstract and conference-archive presentation text
 - **Caveat:** This screened source supports only the high-level comparator claim, not an enumeration theorem, canonicality result, or complexity bound.
+- **Certainty:** low
 
 ### E032
 
@@ -324,8 +361,10 @@ touch).
 - **Works:** deboer2020sympaths
 - **Anchors:** sources/deboer2020sympaths.md#evidence-locations
 - **Supports:** C11,C15
+- **Manuscript:** sec-related
 - **Scope:** primary semantics and correctness theorems
 - **Caveat:** The choice record observes concurrent schedules rather than requested-root graph selections.
+- **Certainty:** high
 
 ### E033
 
@@ -333,5 +372,27 @@ touch).
 - **Works:** bernardinello2016revealsexcludes,adobbati2024parametricreveals
 - **Anchors:** sources/bernardinello2016revealsexcludes.md#evidence-locations;sources/adobbati2024parametricreveals.md#evidence-locations
 - **Supports:** C14,C15
+- **Manuscript:** sec-related
 - **Scope:** primary definitions, algorithms, and bounded-net guarantees
 - **Caveat:** These are run/event observers over Petri nets, not caller-input fibers with residual functions.
+- **Certainty:** high
+
+### E034
+
+- **Finding:** Maximal affine regions of a ReLU network merge connected activation cells that implement the same affine map, so region counts under the two definitions differ.
+- **Works:** wang2022regions
+- **Anchors:** sources/wang2022regions.md#why-it-matters
+- **Supports:** C04,C15
+- **Scope:** the quotient distinction between activation cells and equal-map regions
+- **Caveat:** Abstract-only read; the claim is anchored at abstract level and supports no theorem or algorithm statement.
+- **Certainty:** low
+
+### E035
+
+- **Finding:** Prime-implicant enumeration from Decision-DNNF circuits has characterized output-sensitive complexity, establishing don't-care-style implicant minimization as its own literature.
+- **Works:** decolnet2022prime
+- **Anchors:** sources/decolnet2022prime.md#complexity-definitions-and-results
+- **Supports:** C01
+- **Scope:** the logical don't-care leg of the omission-mechanism taxonomy
+- **Caveat:** Anchors the leg's existence and complexity framing, not any correspondence with the selection observer; that correspondence is the survey's taxonomy.
+- **Certainty:** high

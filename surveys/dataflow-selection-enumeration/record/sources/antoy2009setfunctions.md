@@ -1,12 +1,24 @@
-# antoy2009setfunctions — Set Functions for Functional Logic Programming
+---
+citekey: antoy2009setfunctions
+work:
+  title: "Set Functions for Functional Logic Programming"
+  author: "Sergio Antoy, Michael Hanus"
+  venue: "PPDP 2009"
+  date: 2009
+  doi: 10.1145/1599410.1599420
+read: full-text
+source: "Author-hosted PPDP 2009 paper at https://www.michaelhanus.de/papers/PPDP09.pdf (DOI https://doi.org/10.1145/1599410.1599420)"
+retrieved: "-"
+notes-by: Codex (initial campaign); Claude Fable 5 (record migration)
+notes-date: 2026-08-04
+synthesis: "Introduces the fingerprint — a set of nondeterministic steps inside a set-function argument — the oldest identified ancestor of the choice-identifier/outcome maps later used in pull-tabbing, though not itself a partial-function selection record"
+---
 
-- **Status:** deep-read; critical predecessor
-- **Primary source:** https://doi.org/10.1145/1599410.1599420
-- **Open version:** https://www.michaelhanus.de/papers/PPDP09.pdf
-- **Version read:** author-hosted PPDP 2009 paper
-- **Bibliography key:** `antoy2009setfunctions`
+# Set Functions for Functional Logic Programming
 
-## Why it matters
+## Evidence
+
+### Why it matters
 
 This paper introduces the term *fingerprint* for a computation history used to
 separate different sources of nondeterminism. Its representation is the oldest
@@ -21,7 +33,7 @@ PPDP 2009 fingerprint is a set of nondeterministic *steps inside the argument
 of a set function* along one root-to-leaf derivation. It is neither defined as
 a partial function nor returned as the enumerated result.
 
-## Program and semantic model
+### Program and semantic model
 
 Programs are limited-overlapping inductively sequential (LOIS) term-graph
 rewrite systems. Deterministic operations are organized by definitional trees;
@@ -38,7 +50,7 @@ redex root. This dynamic origin relation, rather than present-day syntactic
 containment, determines whether a choice belongs to the argument's
 nondeterminism.
 
-## Set functions and what is enumerated
+### Set functions and what is enumerated
 
 For every operation `f`, its set function `f_S` collects nondeterminism caused
 by `f` while leaving nondeterminism caused by the arguments external. Thus, for
@@ -70,7 +82,7 @@ Fingerprints are internal evidence for assigning those leaves to possibly
 several set-valued results of `f_S(t)`. The algorithm does **not** enumerate
 fingerprints as an API, nor one input region per fingerprint.
 
-## Exact fingerprint definition
+### Exact fingerprint definition
 
 Definition 5 calls the fingerprint of a value leaf `L_v` the **set of
 nondeterministic steps inside the argument** on the path from the root of
@@ -95,7 +107,7 @@ Accordingly:
 - the domain records argument-internal nondeterministic history, not precisely
   the selection sites in a requested output's enabled closure.
 
-## Results and guarantees
+### Results and guarantees
 
 Lemma 1 recalls deterministic confluence of the program class: steps at
 distinct nodes commute up to graph-node renaming. Theorem 1 is the paper's
@@ -122,7 +134,7 @@ The guarantees must not be overstated:
 - there is no pairwise-nonredundant enumeration theorem for fingerprints,
   ordinary values, or set-valued results.
 
-## Algorithm
+### Algorithm
 
 Lazily traverse `C(f(t))` as far as demanded by the surrounding computation.
 For every value leaf, retain the nondeterministic steps originating inside `t`.
@@ -131,7 +143,7 @@ comparability, and collects the values attached to each group. This avoids
 having to decide in advance how far an argument must be evaluated before the
 set function starts collecting internal nondeterminism.
 
-## Complexity
+### Complexity
 
 No asymptotic time, delay, or space bound is proved. Computation spaces and
 their set-valued results may be infinite and are intended to be traversed
@@ -139,14 +151,14 @@ lazily. The paper gives neither a bound on fingerprint size nor an output-
 sensitive result. Its argument is semantic—order independence and correct
 grouping—rather than a performance analysis.
 
-## Terminology
+### Terminology
 
 Established terms include *set function*, *computation space*, *complete
 strategy*, *sensible strategy*, *inside step*, *outside step*, *fingerprint*,
 *deterministic confluence*, and *order independence*. Here a fingerprint is
 specifically an argument-internal nondeterministic-step history.
 
-## Motivating examples
+### Motivating examples
 
 The `bigCoin` example cleanly illustrates separation of operation and argument
 nondeterminism. The larger `queens` example uses the set function of `unsafe`
@@ -155,7 +167,7 @@ placement first. The itinerary example uses set functions to compute a shortest
 route. These examples motivate encapsulated search, not structural observation
 of deterministic dataflow selections.
 
-## Fingerprint lineage
+### Fingerprint lineage
 
 1. **PPDP 2009:** a leaf fingerprint is a set of nondeterministic steps inside
    a set-function argument; the proposed concrete representation is a set of
@@ -175,31 +187,7 @@ Thus PPDP 2009 is the terminological and node/rule-set origin, GCM 2010 is the
 stable choice-ID propagation step, and MPT is the task-local partial-map and
 memoization refinement.
 
-## Relationship to our hypothesis
-
-### What is directly established by the work?
-
-Sets of identified nondeterministic decisions can summarize the relevant part
-of a graph-rewrite derivation and can guide order-independent grouping of
-values. The paper proves a sufficient comparable-fingerprint criterion for two
-ordinary values to belong to the same set-function result.
-
-### What is our interpretation or inference?
-
-A legal node/rule-pair set is extensionally similar to a sparse partial
-assignment. That observation is an interpretation; the paper itself defines a
-set of steps and never gives the map/fiber semantics proposed for deterministic
-selections.
-
-### Could it subsume our proposed contribution?
-
-It subsumes novelty for the general fingerprint idea and for using stable
-nondeterministic step histories to group graph-computation results. It does not
-define deterministic guard outcomes, root-relative activity, exact inverse
-images over concrete inputs, residual symbolic functions, or nonredundant
-projected enumeration.
-
-## Evidence locations
+### Evidence locations
 
 - Section 2, pp. 74–75: LOIS graph rewriting, computation spaces, complete and
   sensible strategies, deterministic confluence, and sets of values.
@@ -212,7 +200,26 @@ projected enumeration.
   correctness.
 - Section 7, p. 81: claimed contributions and scope.
 
-## Questions and possible weaknesses
+## Bearing on RQs
+
+What is directly established by the work: sets of identified nondeterministic
+decisions can summarize the relevant part of a graph-rewrite derivation and
+can guide order-independent grouping of values. The paper proves a sufficient
+comparable-fingerprint criterion for two ordinary values to belong to the same
+set-function result.
+
+Our interpretation or inference: a legal node/rule-pair set is extensionally
+similar to a sparse partial assignment. That observation is an interpretation;
+the paper itself defines a set of steps and never gives the map/fiber
+semantics proposed for deterministic selections.
+
+Could it subsume our proposed contribution: it subsumes novelty for the
+general fingerprint idea and for using stable nondeterministic step histories
+to group graph-computation results. It does not define deterministic guard
+outcomes, root-relative activity, exact inverse images over concrete inputs,
+residual symbolic functions, or nonredundant projected enumeration.
+
+## Evidence limits
 
 - The paper calls subset comparability an equivalence relation for the
   fingerprint family used by the construction; subset comparability is not an

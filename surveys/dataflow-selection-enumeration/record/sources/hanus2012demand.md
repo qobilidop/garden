@@ -1,11 +1,24 @@
-# hanus2012demand — Improving Lazy Non-Deterministic Computations by Demand Analysis
+---
+citekey: hanus2012demand
+work:
+  title: "Improving Lazy Non-Deterministic Computations by Demand Analysis"
+  author: "Michael Hanus"
+  venue: "ICLP 2012"
+  date: 2012
+  doi: 10.4230/LIPIcs.ICLP.2012.130
+read: full-text
+source: "Official LIPIcs conference PDF, https://doi.org/10.4230/LIPIcs.ICLP.2012.130"
+retrieved: "-"
+notes-by: Codex (initial campaign); Claude Fable 5 (record migration)
+notes-date: 2026-08-04
+synthesis: "The closest demand-analysis predecessor: combines a lazy graph-like representation of all nondeterministic results, stable choice identifiers, and an analysis that exposes a demanded choice before a consumer duplicates it — blocking a broad novelty claim for using demand information to avoid exploring or duplicating unobserved choice structure."
+---
 
-- **Status:** deep-read
-- **Primary source:** https://doi.org/10.4230/LIPIcs.ICLP.2012.130
-- **Version read:** official LIPIcs conference PDF
-- **Bibliography key:** `hanus2012demand`
+# Improving Lazy Non-Deterministic Computations by Demand Analysis
 
-## Why it matters
+## Evidence
+
+### Why it matters
 
 This paper is the closest demand-analysis predecessor to our proposal. It
 combines a lazy graph-like representation of all nondeterministic results,
@@ -14,7 +27,7 @@ before a consumer duplicates it. It therefore blocks a broad novelty claim for
 using demand information to avoid exploring or duplicating unobserved choice
 structure.
 
-## Program and semantic model
+### Program and semantic model
 
 The source language is Curry with non-strict, nondeterministic operations and
 call-time choice. The semantic account uses CRWL-style reduction over partial
@@ -30,7 +43,7 @@ same identifier, result extraction must make the same left/right decision for
 every occurrence of that choice. Lazy evaluation interleaves construction of a
 choice tree with a separately selectable traversal strategy.
 
-## Main definitions
+### Main definitions
 
 - A partial value is a constructor value that may contain `bottom`; `[P]_bottom`
   is the set of program rules instantiated by partial constructor
@@ -52,7 +65,7 @@ choice tree with a separately selectable traversal strategy.
 The analysis computes a static property of operation arguments. It does **not**
 compute a runtime partial map from active choice identifiers to outcomes.
 
-## Results and guarantees
+### Results and guarantees
 
 Theorem 1, imported from the author's earlier call-pattern analysis, relates
 the concrete fixpoint to partial CRWL reductions in both directions for calls
@@ -67,7 +80,7 @@ a particular tree traversal. It motivates explicit choice trees as supporting
 complete search strategies and relies on the underlying call-time-choice and
 pull-tabbing literature for their semantic correctness.
 
-## Algorithm
+### Algorithm
 
 First compute demanded argument positions with the abstract fixpoint. Separately
 mark an operation nondeterministic if a defining rule contains choice or a free
@@ -77,7 +90,7 @@ is proven demanded and `e` is classified nondeterministic. Strict evaluation
 then exposes and pulls the choice outside `f` before `f` can duplicate the
 argument.
 
-## Complexity
+### Complexity
 
 There is no asymptotic bound for the analysis, transformed evaluation, or
 complete enumeration. The depth-bounded abstract domain is finite but grows
@@ -87,7 +100,7 @@ nondeterminism: KiCS2 `addNum5` fell from 8.58 s to 0.01 s and `dupList5` from
 52.49 s to 0.11 s. `psort` changed only from 4.98 s to 4.78 s because the
 complete permutation could not safely be forced.
 
-## Terminology
+### Terminology
 
 Useful established terms are *call-time choice*, *partial value*, *demanded
 argument*, *strict application*, *choice identifier*, *identifier supply*,
@@ -95,7 +108,7 @@ argument*, *strict application*, *choice identifier*, *identifier supply*,
 semantic strictness property of an operation position, whereas our active
 selection set is input- and root-relative.
 
-## Motivating example
+### Motivating example
 
 `xorSelf x = xor x x` is applied to `aBool = True ? False`. Lazy substitution
 duplicates the shared nondeterministic argument before its choice is exposed,
@@ -107,33 +120,7 @@ motivating example, although ours should replace nondeterministic choice by a
 deterministic, input-guarded selection and emphasize exact fibers rather than
 only avoided work.
 
-## Relationship to our hypothesis
-
-### What is directly established by the work?
-
-Demand can be defined semantically for lazy nondeterministic programs,
-soundly approximated by abstract interpretation, and used to expose a demanded
-nondeterministic subcomputation before sharing would duplicate it. Stable
-choice identifiers preserve call-time decisions across copied choice nodes.
-
-### What is our interpretation or inference?
-
-Static demand is complementary to our dynamic enabled closure: it identifies
-positions that are definitely strict across executions, while our observation
-records which deterministic selections are actually reached for a particular
-input and root set. The dramatic benchmark gains support the importance of
-representing demanded structure accurately, but they do not establish our
-fiber or output-sensitive complexity claims.
-
-### Could it subsume our proposed contribution?
-
-It subsumes a generic claim that demand analysis can improve lazy exploration
-of shared choices. It does not define deterministic guard outcomes, an
-input-indexed sparse observation, exact inverse-image guards, residual symbolic
-functions, or compositional bounds. Our theory should cite it as a direct
-predecessor and avoid presenting demand-driven pruning itself as novel.
-
-## Evidence locations
+### Evidence locations
 
 - Sections 2–3, pp. 132–135: partial CRWL values, call-time choice,
   `Choice ID`, pull-tabbing, consistent extraction, and lazy choice trees.
@@ -144,7 +131,29 @@ predecessor and avoid presenting demand-driven pruning itself as novel.
 - Section 6 and Table 1, pp. 139–140: prototype and timings.
 - Section 7, p. 140: stated scope and limitations.
 
-## Questions and possible weaknesses
+## Bearing on RQs
+
+What is directly established by the work: demand can be defined semantically
+for lazy nondeterministic programs, soundly approximated by abstract
+interpretation, and used to expose a demanded nondeterministic subcomputation
+before sharing would duplicate it. Stable choice identifiers preserve
+call-time decisions across copied choice nodes.
+
+Our interpretation or inference: static demand is complementary to our dynamic
+enabled closure: it identifies positions that are definitely strict across
+executions, while our observation records which deterministic selections are
+actually reached for a particular input and root set. The dramatic benchmark
+gains support the importance of representing demanded structure accurately,
+but they do not establish our fiber or output-sensitive complexity claims.
+
+Could it subsume our proposed contribution: it subsumes a generic claim that
+demand analysis can improve lazy exploration of shared choices. It does not
+define deterministic guard outcomes, an input-indexed sparse observation,
+exact inverse-image guards, residual symbolic functions, or compositional
+bounds. Our theory should cite it as a direct predecessor and avoid presenting
+demand-driven pruning itself as novel.
+
+## Evidence limits
 
 - The soundness chain for the optimized program is not packaged as a single
   transformation theorem in this paper.

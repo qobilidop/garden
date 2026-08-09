@@ -1,14 +1,24 @@
-# vincent2021reachable — Reachable Polyhedral Marching
+---
+citekey: vincent2021reachable
+work:
+  title: "Reachable Polyhedral Marching (RPM): A Safety Verification Algorithm for Robotic Systems with Deep Neural Network Components"
+  author: "Joseph A. Vincent, Mac Schwager"
+  venue: "ICRA 2021"
+  date: 2021
+  doi: 10.1109/icra48506.2021.9561956
+read: full-text
+source: "arXiv v2 (1 April 2021) at https://arxiv.org/abs/2011.11609 (DOI https://doi.org/10.1109/icra48506.2021.9561956); expanded version arXiv:2210.08339 published as https://doi.org/10.1109/tnnls.2025.3571720"
+retrieved: "-"
+notes-by: Codex (initial campaign); Claude Fable 5 (record migration)
+notes-date: 2026-08-04
+synthesis: "Reachable Polyhedral Marching enumerates every feasible ReLU activation pattern with its exact input polyhedron and affine output map via adjacency-based work-list traversal — the strongest adjacency-oriented pre-Balestriero analogue of an (observation, guard, residual) enumerator, though its regime identifier is a dense activation vector with no requested-root-relative sparsity"
+---
 
-- **Status:** deep-read; critical guard-plus-residual predecessor
-- **Primary source:** https://doi.org/10.1109/ICRA48506.2021.9561956
-- **Version read:** arXiv v2, 1 April 2021
-- **Open copy:** https://arxiv.org/abs/2011.11609
-- **Expanded version:** arXiv:2210.08339; published in IEEE TNNLS (2025),
-  https://doi.org/10.1109/TNNLS.2025.3571720
-- **Bibliography key:** `vincent2021reachable`
+# Reachable Polyhedral Marching
 
-## Why it matters
+## Evidence
+
+### Why it matters
 
 Reachable Polyhedral Marching (RPM) enumerates every feasible ReLU activation
 pattern together with its exact input polyhedron and affine output map. It is
@@ -17,7 +27,7 @@ the strongest adjacency-oriented pre-Balestriero analogue of an
 guard-plus-affine method: Tran's stars, Robinson's explicit piecewise-affine
 conversion, and other reachability constructions precede it.
 
-## Mathematical object
+### Mathematical object
 
 For an activation pattern \(a\), equations (8)--(12) derive:
 
@@ -28,7 +38,7 @@ Redundant halfspaces are removed by linear programming. Remaining essential
 constraints are facets and identify adjacent cells. The output is therefore
 an explicit piecewise-affine representation, not merely a count.
 
-## Algorithm
+### Algorithm
 
 Algorithm 1 computes the activation pattern across a facet, including cases
 where a zero affine constraint causes downstream or degenerate units to change
@@ -43,7 +53,7 @@ reached cell. The conference version states this argument in prose rather than
 as a numbered theorem. A later extended version supplies a formal
 neighbor-pattern theorem and appendix proof.
 
-## Complexity and assumptions
+### Complexity and assumptions
 
 There is no end-to-end asymptotic theorem. Each emitted region can require up
 to one redundancy LP per hidden neuron plus neighbor construction and set
@@ -58,7 +68,15 @@ exact-enough LP comparisons, and adjacency through shared codimension-one
 faces. It enumerates full-dimensional cells rather than lower-dimensional
 boundary cells.
 
-## Relationship to our observer
+### Evidence locations
+
+- Definitions 1--3, paper pp. 2--3: PWA and polyhedral-complex model.
+- Equations (8)--(12), pp. 3--4: cell-local affine map and H-representation.
+- Algorithm 1, p. 4: neighboring activation pattern.
+- Algorithm 2 and completeness argument, pp. 4--5: exhaustive adjacency walk.
+- Sections V--VI: forward/backward reachability applications and evaluation.
+
+## Bearing on RQs
 
 RPM already returns three artifacts that broad versions of our pitch would
 claim: a structural regime identifier, an exact guard, and a residual affine
@@ -75,10 +93,12 @@ remaining separator is the requested-root-relative typed shared-graph observer
 with contextual site identity and exact inverse fibers—not
 guard-plus-residual enumeration or a varying path domain by itself.
 
-## Evidence locations
+## Evidence limits
 
-- Definitions 1--3, paper pp. 2--3: PWA and polyhedral-complex model.
-- Equations (8)--(12), pp. 3--4: cell-local affine map and H-representation.
-- Algorithm 1, p. 4: neighboring activation pattern.
-- Algorithm 2 and completeness argument, pp. 4--5: exhaustive adjacency walk.
-- Sections V--VI: forward/backward reachability applications and evaluation.
+Read at full-text level from arXiv v2 (1 April 2021). There is no end-to-end
+asymptotic theorem: each emitted region can require up to one redundancy LP
+per hidden neuron plus neighbor construction and set membership, and total
+work is necessarily output-sensitive in the number of activation cells and can
+be exponential in network size. The conference version's completeness argument
+is stated in prose rather than as a numbered theorem; a later extended version
+supplies a formal neighbor-pattern theorem and appendix proof.

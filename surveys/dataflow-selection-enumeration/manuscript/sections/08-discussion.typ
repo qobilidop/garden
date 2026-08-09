@@ -21,7 +21,9 @@ quotient, or incomparable partition.
 Selection observations are appropriate for event-aware specifications such as
 checking that graph rewriting, lowering, or component substitution preserves a
 declared map of source selection events. They are not preferable for every
-client. A value-only client should merge behaviorally equal records; an
+client. A value-only client should merge behaviorally equal records, as
+explicit-control methods do when they group regions that share the requested
+first action @konig2020common; an
 optimization client may retain active constraints rather than source events;
 and a diagnostic client may record causal events beyond selections. The
 framework makes these choices explicit rather than ranking them by a universal
@@ -65,7 +67,9 @@ not charge solver work, formula growth, coefficient bits, projection,
 serialization, or final unsatisfiability. The number of fibers can be
 exponential, and feasibility and counting contain familiar hard special cases.
 No general OutputP, IncP, DelayP, compact-summary, or practical-speedup theorem
-is established.
+is established. The negative precedent is explicit: BDD bisimulation
+minimization can cost more than the symbolic invariant check it was meant to
+accelerate @fisler2002bisimulation.
 
 Representation can dominate the comparison. Flat guards, trees, diagrams,
 compiled circuits, polyhedral complexes, and residual DAGs may denote the same

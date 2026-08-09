@@ -1,11 +1,24 @@
-# masina2025cnf — On CNF Conversion for SAT and SMT Enumeration
+---
+citekey: masina2025cnf
+work:
+  title: "On CNF Conversion for SAT and SMT Enumeration"
+  author: "Gabriele Masina, Giuseppe Spallitta, Roberto Sebastiani"
+  venue: "Journal of Artificial Intelligence Research"
+  date: 2025
+  doi: 10.1613/jair.1.16870
+read: full-text
+source: "Author preprint via https://doi.org/10.1613/jair.1.16870 (arXiv:2303.14971v7), matching the 2025 JAIR title and theorem structure"
+retrieved: "-"
+notes-by: Codex (initial campaign); Claude Fable 5 (record migration)
+notes-date: 2026-08-04
+synthesis: "Shows that ordinary CNF conversion (Tseitin) can fragment one short verifying partial assignment into many projected assignments, and that NNF plus Plaisted–Greenbaum preserves them — a required encoding baseline and warning for any activation/outcome instrumentation handed to projected AllSMT"
+---
 
-- **Status:** deep-read
-- **Primary source:** https://doi.org/10.1613/jair.1.16870
-- **Version read:** author preprint, arXiv:2303.14971v7, matching the 2025 JAIR title and theorem structure
-- **Bibliography key:** `masina2025cnf`
+# On CNF Conversion for SAT and SMT Enumeration
 
-## Why it matters
+## Evidence
+
+### Why it matters
 
 This paper shows that a solver encoding can split one short satisfying partial
 assignment into many longer projected assignments even though the encoding is
@@ -13,7 +26,7 @@ equisatisfiable and has linear size. It is therefore a direct warning for any
 claim that a straightforward activation/outcome encoding preserves the compact
 observation partition operationally.
 
-## Formula and output model
+### Formula and output model
 
 Formulas are Boolean or quantifier-free theory formulas represented as rooted
 DAGs. A partial truth assignment `mu` propositionally satisfies `phi` when the
@@ -28,7 +41,7 @@ enumeration of a CNF `psi(A,B)` returns assignments on relevant atoms `A` for
 `exists B. psi`, with `B` serving as fresh or otherwise irrelevant atoms
 (Section 2.2, pp. 6–7).
 
-## Main results and guarantees
+### Main results and guarantees
 
 Fact 1 states that a partial assignment satisfying `phi` need not satisfy
 `exists B. CNF_Ts(phi)`. Tseitin label equivalences can force the enumerator to
@@ -54,7 +67,7 @@ assignments into verifying ones. The authors explicitly state that current
 enumerators may choose a different total label assignment and therefore have
 no formal guarantee of obtaining the best minimization (Section 4, p. 15).
 
-## Algorithm and empirical scope
+### Algorithm and empirical scope
 
 The baseline projected procedure finds a total model, minimizes only relevant
 atoms while retaining a total label assignment, blocks the projected cube, and
@@ -74,7 +87,7 @@ nearly-total assignments. Its experiments with projected d-DNNF compilation
 showed little output-size benefit and worse runtime, attributed to branching,
 extra labels, caching, and partitioning behavior (Section 5.5, pp. 22–23).
 
-## Motivating examples
+### Motivating examples
 
 Examples 1–3 use a seven-atom formula with a conjunction in one disjunct and a
 nested equivalence in the other. The short original assignment
@@ -83,39 +96,7 @@ nine projected assignments to cover that region; Plaisted–Greenbaum can requir
 three; `NNF + Plaisted–Greenbaum` again permits the single original assignment
 (pp. 8–14).
 
-## Relationship to our hypothesis
-
-### What is directly established by the work?
-
-For verification-based partial SAT/SMT enumeration, a common linear CNF
-conversion may introduce artificial output fragmentation. NNF preprocessing
-followed by Plaisted–Greenbaum conversion preserves each verifying partial
-assignment without adding original-atom decisions.
-
-### What is our interpretation or inference?
-
-The same risk applies if a non-CNF activation/outcome instrumentation is handed
-to projected AllSMT: fresh encoding labels can cause several cubes for one
-semantic observation region. `NNF + CNF_PG` is therefore a required encoding
-baseline when comparing cube enumeration, but it does not define the semantic
-observation.
-
-Our enumerator instead obtains a complete graph-relative observation from one
-model and blocks its exact input fiber. That construction does not depend on a
-solver returning a shortest verifying cube. Conversely, a short cube produced
-by this paper's methods can omit an active observation coordinate and cover
-several selection observations. Logical don't-care remains different from
-structural inactivity.
-
-### Could it subsume our proposed contribution?
-
-It subsumes the claim that a better CNF conversion can preserve compact
-verification-based partial assignments. It does not provide output-demanded
-selection semantics, exact one-record-per-observation fibers, residual program
-values, modular composition, or a theorem that a generic enumeration run emits
-one cube per structural observation.
-
-## Evidence locations
+### Evidence locations
 
 - Section 2.1, pp. 3–5: partial satisfaction, minimality, DAG size, and NNF.
 - Section 2.2 and Algorithm 1, pp. 6–7: projected enumeration contract and
@@ -127,7 +108,35 @@ one cube per structural observation.
 - Section 5, pp. 15–22: evaluation design and results.
 - Section 5.5, pp. 22–23: boundaries for solving, counting, and d-DNNF.
 
-## Questions and possible weaknesses
+## Bearing on RQs
+
+What is directly established by the work: for verification-based partial
+SAT/SMT enumeration, a common linear CNF conversion may introduce artificial
+output fragmentation. NNF preprocessing followed by Plaisted–Greenbaum
+conversion preserves each verifying partial assignment without adding
+original-atom decisions.
+
+Our interpretation or inference: the same risk applies if a non-CNF
+activation/outcome instrumentation is handed to projected AllSMT: fresh
+encoding labels can cause several cubes for one semantic observation region.
+`NNF + CNF_PG` is therefore a required encoding baseline when comparing cube
+enumeration, but it does not define the semantic observation.
+
+Our enumerator instead obtains a complete graph-relative observation from one
+model and blocks its exact input fiber. That construction does not depend on a
+solver returning a shortest verifying cube. Conversely, a short cube produced
+by this paper's methods can omit an active observation coordinate and cover
+several selection observations. Logical don't-care remains different from
+structural inactivity.
+
+Could it subsume our proposed contribution: it subsumes the claim that a
+better CNF conversion can preserve compact verification-based partial
+assignments. It does not provide output-demanded selection semantics, exact
+one-record-per-observation fibers, residual program values, modular
+composition, or a theorem that a generic enumeration run emits one cube per
+structural observation.
+
+## Evidence limits
 
 - The paper's `propositionally satisfies` relation is verification. The
   companion semantic analysis in `sebastiani2025entailment` shows that this is

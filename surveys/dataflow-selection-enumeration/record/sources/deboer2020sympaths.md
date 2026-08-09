@@ -1,19 +1,36 @@
-# deboer2020sympaths — Symbolic execution meets POR
+---
+citekey: deboer2020sympaths
+work:
+  title: "SymPaths: Symbolic Execution Meets Partial Order Reduction"
+  author: "Frank S. de Boer, Marcello M. Bonsangue, Einar Broch Johnsen, Violet Ka I Pun, S. Lizeth Tapia Tarifa, Lars Tveito"
+  venue: "Deductive Software Verification: Future Perspectives"
+  date: 2020
+  doi: 10.1007/978-3-030-64354-6_13
+read: full-text
+source: "Author-hosted full text via https://doi.org/10.1007/978-3-030-64354-6_13, pp. 313--338"
+retrieved: "-"
+notes-by: Codex (initial campaign); Claude Fable 5 (record migration)
+notes-date: 2026-08-04
+synthesis: "SymPaths couples a recorded symbolic-path choice history with partial-order-reduction pruning over thread schedules and mutable state — the closest concurrent symbolic-state comparator, though not indexed by requested-root selection sites and caller-input fibers"
+---
 
-- **Status:** deep-read; closest concurrent symbolic-state comparator
-- **Primary source:** https://doi.org/10.1007/978-3-030-64354-6_13
-- **Version read:** author-hosted full text, pp. 313--338
-- **Bibliography key:** `deboer2020sympaths`
+# SymPaths: Symbolic Execution Meets Partial Order Reduction
 
-## Evidence locations
+## Evidence
+
+### Evidence locations
 
 - Definitions 2--3: symbolic paths retain scheduling events, dependencies,
   substitutions, path conditions, and thread pools.
 - Theorems 2--3 and POR corollaries: establish correctness and completeness
   against concrete executions, then preserve representative equivalent paths.
 
-## Relationship and evidence limit
+## Bearing on RQs
 
 SymPaths already couples a recorded choice history with a symbolic residual
-state and exact POR pruning. Its records concern thread schedules and mutable
-states, not requested-root-relative selection-site maps and caller-input fibers.
+state and exact POR pruning.
+
+## Evidence limits
+
+Its records concern thread schedules and mutable states, not requested-root-relative
+selection-site maps and caller-input fibers.

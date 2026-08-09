@@ -1,15 +1,24 @@
-# sleumer1998output — Output-Sensitive Cell Enumeration in Hyperplane Arrangements
+---
+citekey: sleumer1998output
+work:
+  title: "Output-Sensitive Cell Enumeration in Hyperplane Arrangements"
+  author: "Nora Sleumer"
+  venue: "SWAT'98"
+  date: 1998
+  doi: 10.1007/BFb0054377
+read: full-text
+source: "SWAT 1998 conference pp. 300--301 (publisher preview) plus same-author 2000 dissertation Ch. 3 for detail, https://doi.org/10.1007/BFb0054377"
+retrieved: "-"
+notes-by: Codex (initial campaign); Claude Fable 5 (record migration)
+notes-date: 2026-08-04
+synthesis: "Improves fixed-dimensional reverse-search enumeration of affine arrangement cells from Avis–Fukuda's O(m^2|C|) to O(m|C|) arithmetic time, enumerating bounded and unbounded full-dimensional cells exactly once under no geometric assumption beyond distinct hyperplanes — the strongest early output-sensitive baseline for the strict-affine special case."
+---
 
-- **Status:** deep-read; critical fixed-dimensional predecessor
-- **Primary source:** https://doi.org/10.1007/BFb0054377
-- **Publisher preview:** https://page-one.springer.com/pdf/preview/10.1007/BFb0054377
-- **Expanded primary treatment:** https://doi.org/10.3929/ethz-a-003889994
-- **Version read:** SWAT 1998 pp. 300--301 for the published model and headline
-  result; same-author 2000 dissertation, Chapter 3, for detailed pseudocode,
-  perturbation treatment, and theorem statements
-- **Bibliography key:** `sleumer1998output`
+# Output-Sensitive Cell Enumeration in Hyperplane Arrangements
 
-## Why it matters
+## Evidence
+
+### Why it matters
 
 Sleumer improves the fixed-dimensional reverse-search enumeration of affine
 arrangement cells from Avis--Fukuda's \(O(m^2|C|)\) arithmetic time to
@@ -18,7 +27,7 @@ cells exactly once, under no geometric assumption beyond distinct
 hyperplanes. It is therefore the strongest early output-sensitive baseline
 for the strict-affine special case.
 
-## Model and enumerated object
+### Model and enumerated object
 
 The published conference text takes \(m\) distinct affine hyperplanes in fixed
 dimension \(d\). Every output is the total sign vector of a nonempty
@@ -32,7 +41,7 @@ fixed-dimensional bound. The detailed statements below were checked against
 Sleumer's expanded same-author dissertation, Chapter 3; theorem numbering
 refers to that treatment rather than to unseen conference pages.
 
-## Algorithm and guarantee
+### Algorithm and guarantee
 
 `ParentSearch` chooses a deterministic neighboring cell that flips a negative
 sign toward the reoriented all-positive root. `AllAdj` identifies all
@@ -45,7 +54,7 @@ The theoretical model has no "cell must contain a vertex" restriction. That
 condition appears only in the dissertation's evaluated implementation and
 must not be promoted to an algorithmic assumption.
 
-## Complexity
+### Complexity
 
 For fixed \(d\), Sleumer proves
 
@@ -69,21 +78,7 @@ time and
 operations. The dissertation conjectures, rather than proves, a matching
 exact-implementation bit bound.
 
-## Relationship to later work and our hypothesis
-
-Rada and Černý explicitly distinguish a reverse-search variant using all
-constraints from the Sleumer variant using discovered tight facets. Their
-black-box comparison restates a looser maximum-\(\ell\) bound, while their own
-incremental algorithm has a different LP profile. Sleumer nevertheless
-settles the earlier priority for output-sensitive fixed-dimensional cell
-enumeration.
-
-As with Avis--Fukuda, the output is dense: every hyperplane receives a sign.
-It does not define graph-derived observation, omit an unselected case cone,
-retain a typed symbolic residual, or compose summaries across a dataflow
-boundary.
-
-## Evidence locations
+### Evidence locations
 
 - Conference p. 300: full-dimensional cell model, fixed \(d\)
   \(O(m|C|)\), and factor-\(m\) improvement.
@@ -97,7 +92,21 @@ boundary.
 - Dissertation pp. 23--24: perturbation treatment for degeneracy.
 - Dissertation p. 40: implementation-only vertex restriction.
 
-## Questions and limitations
+## Bearing on RQs
+
+Rada and Černý explicitly distinguish a reverse-search variant using all
+constraints from the Sleumer variant using discovered tight facets. Their
+black-box comparison restates a looser maximum-\(\ell\) bound, while their own
+incremental algorithm has a different LP profile. Sleumer nevertheless
+settles the earlier priority for output-sensitive fixed-dimensional cell
+enumeration.
+
+As with Avis--Fukuda, the output is dense: every hyperplane receives a sign.
+It does not define graph-derived observation, omit an unselected case cone,
+retain a typed symbolic residual, or compose summaries across a dataflow
+boundary.
+
+## Evidence limits
 
 - The output contains only full-dimensional open cells, not the full face
   lattice.

@@ -1,13 +1,24 @@
-# balestriero2023fast — Fast and Exact Enumeration of Deep Networks Partitions Regions
+---
+citekey: balestriero2023fast
+work:
+  title: "Fast and Exact Enumeration of Deep Networks Partitions Regions"
+  author: "Randall Balestriero, Yann LeCun"
+  venue: "ICASSP 2023"
+  date: 2023
+  doi: 10.1109/icassp49357.2023.10095698
+read: full-text
+source: "ICASSP paper text via https://doi.org/10.1109/ICASSP49357.2023.10095698; arXiv v1 (posted 20 January 2024) at https://arxiv.org/abs/2401.11188"
+retrieved: "-"
+notes-by: Codex (initial campaign); Claude Fable 5 (record migration)
+notes-date: 2026-08-04
+synthesis: "Exact activation-cell enumeration for piecewise-affine networks is the all-sites-observed special case of selection-observation enumeration; its geometrically-implied-sign omission is logical compression, not structural non-observation, and its formal and complexity claims are unsupported by proof"
+---
 
-- **Status:** deep-read; critical special-case competitor
-- **Primary source:** https://doi.org/10.1109/ICASSP49357.2023.10095698
-- **Version read:** arXiv v1, posted 20 January 2024; five-page ICASSP
-  paper text
-- **Open copy:** https://arxiv.org/abs/2401.11188
-- **Bibliography key:** `balestriero2023fast`
+# Fast and Exact Enumeration of Deep Networks Partitions Regions
 
-## Why it matters
+## Evidence
+
+### Why it matters
 
 The paper enumerates exactly the feasible activation cells of a continuous
 piecewise-affine neural layer and extends that construction layerwise. Under a
@@ -21,7 +32,7 @@ The paper does not model result-relative structural non-observation. A `0` in
 its emitted ternary prefix says that a sign is geometrically implied by earlier
 halfspaces, not that the unit was outside the observed computation.
 
-## Model and enumerated object
+### Model and enumerated object
 
 Section 2.1, equation (1), uses a real affine layer followed by a pointwise
 continuous piecewise-affine activation,
@@ -48,7 +59,7 @@ An interior witness supplies the unique actual sign behind every `0`. The
 ternary vector is therefore an order-dependent compressed certificate for an
 ordinary total activation cell.
 
-## Algorithm
+### Algorithm
 
 Algorithm 1, Section 2.2, processes units in a fixed order. At a prefix cell it
 uses linear programming to test whether the next hyperplane intersects the
@@ -64,7 +75,7 @@ opposite successor, and recursively emits every full-dimensional cell. Unlike
 the ICASSP paper, the earlier work proves completeness, nonduplication, and an
 OutputP bound.
 
-## Formal-support audit
+### Formal-support audit
 
 The ICASSP paper contains no numbered definition, theorem, lemma,
 proposition, or proof. Statements that the method "provably enumerates" all
@@ -87,7 +98,7 @@ cannot serve as either an actual sign or a generic slope. The deep algorithm is
 therefore not exact as printed for the paper's main claimed activation
 families.
 
-## Complexity audit
+### Complexity audit
 
 Let \(r_k\) be the number of cells after inserting the first \(k\)
 hyperplanes. A natural exact-oracle bound is
@@ -105,7 +116,7 @@ deep-network depth. It also gives no work/span analysis for its claim of
 parallelism. The recurrence is informally output-sensitive, but the paper does
 not establish OutputP, IncP, DelayP, or linear time in \(D\).
 
-## Assumptions and empirical boundary
+### Assumptions and empirical boundary
 
 The intended method assumes a finite feedforward real CPA network,
 sign-determined pointwise activations, nondegenerate weights, and exact
@@ -120,7 +131,16 @@ two-dimensional cell counts are also incompatible with generic arrangements
 of the reported number of affine lines over all of \(\mathbb R^2\), implying
 an unstated restriction or a materially different experiment.
 
-## Exact relationship to selection observations
+### Evidence locations
+
+- Abstract and Section 1, paper pp. 1--2: exact/parallel/linear claims.
+- Section 2.1 and equations (1)--(3), pp. 2--3: CPA layer and sign-cell object.
+- Section 2.2 and Algorithm 1, p. 3: recursive LP feasibility search and
+  printed defects.
+- Section 3.2, pp. 4--5: layerwise pullback and problematic `diag(q)` formula.
+- Figure 1 and Table 1, pp. 1 and 3: under-specified experiments.
+
+## Bearing on RQs
 
 Encode every ReLU regime as a binary selection. In a dense feedforward network
 whose final output is requested, ordinary dependencies reach every activation
@@ -142,12 +162,10 @@ Safe claim:
 > case. Geometrically implied signs are logical compression, not structural
 > non-observation.
 
-## Evidence locations
+## Evidence limits
 
-- Abstract and Section 1, paper pp. 1--2: exact/parallel/linear claims.
-- Section 2.1 and equations (1)--(3), pp. 2--3: CPA layer and sign-cell object.
-- Section 2.2 and Algorithm 1, p. 3: recursive LP feasibility search and
-  printed defects.
-- Section 3.2, pp. 4--5: layerwise pullback and problematic `diag(q)` formula.
-- Figure 1 and Table 1, pp. 1 and 3: under-specified experiments.
-
+- No separate limits section in the source note; the paper's claims are
+  unsupported by any formal statement (see ### Formal-support audit above)
+  and by a complexity derivation (see ### Complexity audit), and its
+  experiments are under-specified (see ### Assumptions and empirical
+  boundary).

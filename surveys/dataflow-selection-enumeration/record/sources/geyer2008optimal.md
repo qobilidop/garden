@@ -1,13 +1,24 @@
-# geyer2008optimal — optimal reduction of polyhedral piecewise systems
+---
+citekey: geyer2008optimal
+work:
+  title: "Optimal Complexity Reduction of Polyhedral Piecewise Affine Systems"
+  author: "Tobias Geyer, Fabio D. Torrisi, Manfred Morari"
+  venue: "Automatica"
+  date: 2008
+  doi: 10.1016/j.automatica.2007.11.027
+read: full-text
+source: "Author manuscript, https://www.tobiasgeyer.org/GeTM08_OptRed.pdf, corresponding to https://doi.org/10.1016/j.automatica.2007.11.027"
+retrieved: "-"
+notes-by: Codex (initial campaign); Claude Fable 5 (record migration)
+notes-date: 2026-08-04
+synthesis: "Computes smaller exact representations of polyhedral piecewise systems by merging cells that carry the same behavior — a stronger and earlier baseline than later neural-network work for globally coalescing equal-affine regions, and the precise counterpoint to a selection observer that deliberately retains distinct observed outcomes even when their residual functions are equal."
+---
 
-- **Status:** deep-read; critical behavior-quotient baseline
-- **Primary source:** https://doi.org/10.1016/j.automatica.2007.11.027
-- **Open copy:** https://www.tobiasgeyer.org/GeTM08_OptRed.pdf
-- **Logic-minimizer reference:** https://digicoll.lib.berkeley.edu/record/135029/files/ERL-86-65.pdf
-- **Version read:** author manuscript of the 2008 journal article
-- **Bibliography key:** `geyer2008optimal`
+# Optimal Complexity Reduction of Polyhedral Piecewise Affine Systems
 
-## Why it matters
+## Evidence
+
+### Why it matters
 
 Geyer, Torrisi, and Morari compute smaller exact representations of
 polyhedral piecewise systems by merging cells that carry the same behavior.
@@ -18,7 +29,7 @@ also the precise counterpoint to our observer: selection observations
 deliberately retain distinct observed outcomes even when their residual
 functions are equal.
 
-## Input and guard representation
+### Input and guard representation
 
 The input is a polyhedral piecewise system on a domain \(R\), normally a PWA
 system with regions \(P_j\) and behaviors \(y=f_j(x)\). The exact core
@@ -40,7 +51,7 @@ trivial modifications, but the modified algorithms are not printed. Exact
 deterministic partition claims are therefore safest on cell interiors or with
 an explicit inherited tie rule.
 
-## Disjoint reduction
+### Disjoint reduction
 
 Algorithm 1 recursively splits an envelope containing same-color cells along
 arrangement hyperplanes. A branch is accepted when its envelope contains no
@@ -55,7 +66,7 @@ union of original cells and its cuts must come from the supplied arrangement.
 Section 8 gives an example where adding a new hyperplane produces a smaller
 partition. The theorem is not unrestricted minimum convex partitioning.
 
-## Overlapping reduction
+### Overlapping reduction
 
 Algorithm 2 builds a Boolean truth table for each color: target cells are
 `1`, other-color cells are `0`, and empty arrangement sign vectors are
@@ -74,7 +85,7 @@ defensible when exact cover mode is used; the secondary minimum-facet claim is
 not established by that implementation alone, and a default heuristic run
 establishes neither global optimum.
 
-## Preservation, noncanonicity, and complexity
+### Preservation, noncanonicity, and complexity
 
 Every accepted guard retains the unchanged function/color of its source cells,
 so the exact algorithms preserve state update, output, or controller action at
@@ -94,7 +105,20 @@ needs new LP calls; Algorithm 3 adds LP-based arrangement construction and can
 greatly increase the number of cells. The reported scale and reduction ratios
 are empirical, not output-sensitive or delay bounds.
 
-## Relationship to selection observations
+### Evidence locations
+
+- Sections 2.2--3 and Assumption 1: input model, colors, and optimization
+  problems.
+- Section 5.1, Algorithm 1, and Lemma 17: exact minimum disjoint reduction.
+- Sections 6--7, Algorithms 2--3, and Lemmas 19 and 21: overlapping and general
+  reductions.
+- Section 8: a new cutting hyperplane can improve the restricted disjoint
+  optimum.
+- Sections 7.2 and 9.1: approximate reduction versus exact behavior
+  preservation.
+- Sections 9--11: empirical scale, implementation, and limitations.
+
+## Bearing on RQs
 
 After exact observation fibers and their residuals have been computed, this
 paper's color reduction can merge fibers whose residual behavior is equal. That
@@ -116,20 +140,7 @@ It does not define a requested-root-relative sparse site observer, contextual
 graph identities, typed shared residual DAGs, or preservation of distinct
 observed outcomes with equal residuals.
 
-## Evidence locations
-
-- Sections 2.2--3 and Assumption 1: input model, colors, and optimization
-  problems.
-- Section 5.1, Algorithm 1, and Lemma 17: exact minimum disjoint reduction.
-- Sections 6--7, Algorithms 2--3, and Lemmas 19 and 21: overlapping and general
-  reductions.
-- Section 8: a new cutting hyperplane can improve the restricted disjoint
-  optimum.
-- Sections 7.2 and 9.1: approximate reduction versus exact behavior
-  preservation.
-- Sections 9--11: empirical scale, implementation, and limitations.
-
-## Limitations
+## Evidence limits
 
 - Minimum cardinality is relative to the stated representation class.
 - The non-disjoint theorem depends on a genuinely exact logic minimizer.

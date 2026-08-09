@@ -1,12 +1,24 @@
-# antoy2014fairscheme — Compiling a Functional Logic Language: The Fair Scheme
+---
+citekey: antoy2014fairscheme
+work:
+  title: "Compiling a Functional Logic Language: The Fair Scheme"
+  author: "Sergio Antoy, Andy Jost"
+  venue: "LOPSTR 2014"
+  date: 2014
+  doi: 10.1007/978-3-319-14125-1_12
+read: full-text
+source: "Extended LOPSTR 2014 author PDF: https://web.cecs.pdx.edu/~antoy/homepage/publications/lopstr13/long.pdf"
+retrieved: "-"
+notes-by: Codex (initial campaign); Claude Fable 5 (record migration)
+notes-date: 2026-08-04
+synthesis: "The closest operational predecessor found after the initial functional-logic audit: demand-directed reduction of only needed subexpressions, a fair queue intended to expose all nondeterministic result values, stable pull-tab choice identifiers, and finite sparse fingerprints combined in one finite acyclic term-graph setting, though eventual production of every value remains only conjectural"
+---
 
-- **Status:** deep-read; critical close predecessor
-- **Primary source:** https://doi.org/10.1007/978-3-319-14125-1_12
-- **Extended version read:**
-  https://web.cecs.pdx.edu/~antoy/homepage/publications/lopstr13/long.pdf
-- **Bibliography key:** `antoy2014fairscheme`
+# Compiling a Functional Logic Language: The Fair Scheme
 
-## Why it matters
+## Evidence
+
+### Why it matters
 
 This is the closest operational predecessor found after the initial
 functional-logic audit. It combines all of the following in one finite acyclic
@@ -24,7 +36,7 @@ record dynamically created program nondeterminism on paths to result values;
 selection observations record deterministic, input-selected graph sites and
 induce exact input fibers.
 
-## Model and algorithm
+### Model and algorithm
 
 The source is a limited-overlapping inductively sequential (LOIS)
 constructor-based graph-rewrite system. Expressions are finite, acyclic,
@@ -45,7 +57,7 @@ the roots of need. This is established semantic terminology, but it differs
 from our graph-local enabled closure: constructor normalization and rewrite
 redex discovery determine Fair Scheme demand.
 
-## Choice identity and fingerprints
+### Choice identity and fingerprints
 
 A fresh choice identifier decorates each dynamically created choice. A pull-tab
 copy preserves its source identifier, so all copies denote one call-time choice.
@@ -65,7 +77,7 @@ the queued expression. It is not exposed as a canonical result object, and the
 paper does not prove that each consistent fingerprint is generated once or that
 equal result values have equal fingerprints.
 
-## Formal results and their exact scope
+### Formal results and their exact scope
 
 **Theorem 1 (Optimality).** One invocation of `S` terminates with a
 replacement at a node needed for its operation-rooted argument; rewriting that
@@ -95,7 +107,7 @@ constructor values under consistent computation. Choice identifiers are
 ignored in the intermediate simulation lemmas and reintroduced by filtering
 inconsistent fingerprints.
 
-## Complexity and implementation evidence
+### Complexity and implementation evidence
 
 No asymptotic total-time, delay, queue-size, fingerprint-size, or
 output-sensitive bound is proved. The implementation section gives qualitative
@@ -108,32 +120,7 @@ queue elements may therefore perform the same or disjoint needed step, which
 the paper notes creates parallelism. This is operational sharing, not a
 compositional summary theorem.
 
-## Relationship to selection observations
-
-### Directly established
-
-- finite sparse choice-ID/outcome fingerprints;
-- dynamic identity stable through copied choices;
-- demand-directed evaluation of needed graph subexpressions;
-- value preservation for consistent pull-tabbing states; and
-- needed-step optimality for the simple finite acyclic LOIS scheme.
-
-### Not established
-
-- static context-qualified identities for deterministic selection sites;
-- symbolic input variables or feasible input regions;
-- exact positive guard cylinders for a fingerprint;
-- pairwise-disjoint input fibers or full-fiber blocking;
-- duplicate-free enumeration of projected fingerprints;
-- a literal-minimal fingerprint or guard; or
-- compositional reuse across graph substitution.
-
-The closest defensible correspondence is that a selection observation is a
-projection of a demanded fingerprint in a guarded-choice *meta-encoding*. That
-correspondence still requires a proof covering strictness, multi-way selectors,
-assumptions, projection, and renaming of dynamic choice identities.
-
-## Evidence locations
+### Evidence locations
 
 - Sections 2–3, pp. 2–13 of the extended version: LOIS graphs, need, failure,
   pull-tabbing, and target procedures.
@@ -143,7 +130,26 @@ assumptions, projection, and renaming of dynamic choice identities.
 - Sections 6–8, pp. 21–23: implementation, fairness, related work, and the
   bounded meaning of optimality.
 
-## Questions and weaknesses
+## Bearing on RQs
+
+Directly established: finite sparse choice-ID/outcome fingerprints; dynamic
+identity stable through copied choices; demand-directed evaluation of needed
+graph subexpressions; value preservation for consistent pull-tabbing states;
+and needed-step optimality for the simple finite acyclic LOIS scheme.
+
+Not established: static context-qualified identities for deterministic
+selection sites; symbolic input variables or feasible input regions; exact
+positive guard cylinders for a fingerprint; pairwise-disjoint input fibers or
+full-fiber blocking; duplicate-free enumeration of projected fingerprints; a
+literal-minimal fingerprint or guard; or compositional reuse across graph
+substitution.
+
+The closest defensible correspondence is that a selection observation is a
+projection of a demanded fingerprint in a guarded-choice *meta-encoding*. That
+correspondence still requires a proof covering strictness, multi-way selectors,
+assumptions, projection, and renaming of dynamic choice identities.
+
+## Evidence limits
 
 - Eventual production is claimed informally but left conjectural in this paper.
 - Fingerprints are path annotations used for consistency, not enumerated

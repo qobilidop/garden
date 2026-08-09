@@ -1,11 +1,24 @@
-# geldenhuys2013bounded — Bounded Lazy Initialization
+---
+citekey: geldenhuys2013bounded
+work:
+  title: "Bounded Lazy Initialization"
+  author: "Jaco Geldenhuys, Nazareno Aguirre, Marcelo F. Frias, Willem Visser"
+  venue: "NFM 2013"
+  date: 2013
+  doi: 10.1007/978-3-642-38088-4_16
+read: full-text
+source: "NFM 2013 author manuscript via https://doi.org/10.1007/978-3-642-38088-4_16, pp. 229--243"
+retrieved: "-"
+notes-by: Codex (initial campaign); Claude Fable 5 (record migration)
+notes-date: 2026-08-04
+synthesis: "Bounded lazy initialization explores a heap only as program field accesses demand it, filtering null/existing/fresh alternatives via precomputed relational field bounds and canonical labels — a demand-driven heap predecessor whose observer is an imperative execution path, not a site-indexed selection map"
+---
 
-- **Status:** deep-read; high-priority demand-driven heap predecessor
-- **Primary source:** https://doi.org/10.1007/978-3-642-38088-4_16
-- **Version read:** NFM 2013 author manuscript, pp. 229--243
-- **Bibliography key:** `geldenhuys2013bounded`
+# Bounded Lazy Initialization
 
-## Why it matters
+## Evidence
+
+### Why it matters
 
 Bounded lazy initialization (BLI) explores a heap only as program field
 accesses demand it. When an uninitialized reference field is read, it considers
@@ -19,7 +32,7 @@ not a site-indexed map of selected dataflow edges. It preserves the symbolic
 heap and path condition needed for program analysis; it does not enumerate the
 equivalence classes induced by a requested-root selection observer.
 
-## Model and algorithm
+### Model and algorithm
 
 The input is a Java heap of reference objects within a finite node scope. A
 partially initialized heap contains concrete allocated nodes and reference
@@ -40,7 +53,7 @@ Canonical breadth-first allocation prevents multiple isomorphic construction
 orders from representing the same concrete structure. A second algorithm
 incorporates this symmetry breaking into lazy initialization.
 
-## Guarantee and boundary
+### Guarantee and boundary
 
 The paper argues that pruning is sound because an omitted alternative does not
 occur in any valid structure represented by the correct bounds. The later
@@ -57,7 +70,16 @@ space remains combinatorial in the number of objects and reference fields; the
 paper gives empirical counts and runtimes rather than output-sensitive or
 polynomial-delay bounds.
 
-## Relationship to selection observations
+### Evidence locations
+
+- Sections 1--2, paper pp. 229--233: lazy initialization, TACO bounds, and
+  redundant/isomorphic heaps.
+- Section 3, pp. 233--239: field labels, two BLI algorithms, and pruning
+  rationale.
+- Section 4, pp. 239--240: implementation data structures.
+- Section 5, pp. 240--242: empirical comparison and scaling limits.
+
+## Bearing on RQs
 
 Both algorithms avoid eagerly constructing data that the consumer has not
 accessed. The correspondence stops there:
@@ -77,12 +99,8 @@ Encoding finite heaps and field reads into a pure selector graph would make a
 bounded BLI exploration an implementation strategy for a specialized graph,
 but BLI neither defines nor emits the resulting observation partition.
 
-## Evidence locations
+## Evidence limits
 
-- Sections 1--2, paper pp. 229--233: lazy initialization, TACO bounds, and
-  redundant/isomorphic heaps.
-- Section 3, pp. 233--239: field labels, two BLI algorithms, and pruning
-  rationale.
-- Section 4, pp. 239--240: implementation data structures.
-- Section 5, pp. 240--242: empirical comparison and scaling limits.
-
+Read at full-text level from the NFM 2013 author manuscript; the note records
+no limitations beyond the scope distinctions already given in Bearing on RQs
+above.

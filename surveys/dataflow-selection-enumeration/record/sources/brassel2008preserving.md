@@ -1,18 +1,30 @@
-# brassel2008preserving — From Functional Logic Programs to Purely Functional Programs Preserving Laziness
+---
+citekey: brassel2008preserving
+work:
+  title: "From Functional Logic Programs to Purely Functional Programs Preserving Laziness"
+  author: "Bernd Braßel, Sebastian Fischer"
+  venue: "IFL 2008"
+  date: 2008
+  doi: 10.1007/978-3-642-24452-0_2
+read: full-text
+source: "Author PDF (archived): https://web.archive.org/web/20200322120446id_/https://www-ps.informatik.uni-kiel.de/~sebf/data/pub/ifl08.pdf"
+retrieved: "-"
+notes-by: Codex (initial campaign); Claude Fable 5 (record migration)
+notes-date: 2026-08-04
+synthesis: "The compact primary publication of the pure choice-tree transformation: a lazy Haskell target program with a demand-extended finite partial map from stable choice identifiers to Boolean decisions and an explicit lazy search tree — without a correctness proof, minimization, or fiber interpretation"
+---
 
-- **Status:** deep-read; critical direct predecessor
-- **Primary source:** https://doi.org/10.1007/978-3-642-24452-0_2
-- **Open author version:**
-  https://web.archive.org/web/20200322120446id_/https://www-ps.informatik.uni-kiel.de/~sebf/data/pub/ifl08.pdf
-- **Author bibliography:** https://sebfisch.github.io/research/
-- **Version read:** complete 19-page author PDF corresponding to the revised
-  selected IFL 2008 paper
-- **Bibliography key:** `brassel2008preserving`
-- **Date note:** the conference and DBLP record use 2008; Springer published the
-  revised-selected-paper volume in 2011. This repository follows the event year
-  and citekey, while recording the publication lag in BibTeX.
+# From Functional Logic Programs to Purely Functional Programs Preserving Laziness
 
-## Why it matters
+## Evidence
+
+### Date note
+
+The conference and DBLP record use 2008; Springer published the revised
+selected-paper volume in 2011. This repository follows the event year and
+citekey, while recording the publication lag in BibTeX.
+
+### Why it matters
 
 This paper is the compact primary publication of the pure choice-tree
 transformation later developed and proved in Braßel's dissertation. It gives an
@@ -27,7 +39,7 @@ however, return or minimize those maps, interpret them as deterministic input
 regions, or prove an adequacy theorem. Its own conclusion explicitly says that
 correctness is not proved in this paper.
 
-## Program and semantic model
+### Program and semantic model
 
 The source language is Curry under call-time choice. Overlapping rules are
 nondeterministic, shared actual arguments denote values rather than repeatable
@@ -52,7 +64,7 @@ Only operations that directly or transitively depend on `(?)` receive an
 identifier-supply parameter, so deterministic program parts avoid that runtime
 argument.
 
-## Stable identifiers and transformation
+### Stable identifiers and transformation
 
 The abstract `ID` interface provides `initID`, `leftID`, and `rightID`.
 `leftID` and `rightID` must be injective, have disjoint images, and never yield
@@ -82,7 +94,7 @@ plus failure propagation. Unlike the dissertation, the paper gives the
 construction but no proposition or proof that the generated call identifiers
 remain independent during evaluation.
 
-## The finite partial choice map
+### The finite partial choice map
 
 Section 3.4 defines the extractor with an initially empty association list:
 
@@ -109,7 +121,7 @@ is a runtime search context, not an emitted observable. It may contain decisions
 irrelevant to a later equal value, and the paper gives no minimization or
 canonicalization procedure.
 
-## `hnf`, search trees, and invalid branches
+### `hnf`, search trees, and invalid branches
 
 The first `hnf` returns a list of values. Missing decisions use list
 concatenation, fixing depth-first search. `Failure` contributes `[]`; a
@@ -136,7 +148,7 @@ choice differently. Stable identifiers and lookup prune such mixed histories.
 This is call-time-choice consistency, not logical infeasibility of a
 deterministic input region.
 
-## Laziness and sharing
+### Laziness and sharing
 
 The key semantic-operational example is `selfEq coin`. A list lifting violates
 call-time choice by treating the two uses of the argument independently. A
@@ -156,7 +168,7 @@ GHC can optimize the generated program. These are primary implementation
 advantages over the authors' earlier KiCS translation, which used unsafe effects
 to generate labels.
 
-## Correctness and enumeration guarantees
+### Correctness and enumeration guarantees
 
 There is no correctness theorem in this paper. Section 6 says so explicitly and
 only argues that the construction is conceptually similar to the earlier KiCS
@@ -175,7 +187,7 @@ The association lists are not output objects and are not proved to partition a
 space. Complete-normal-form evaluation is declared orthogonal and delegated to
 the earlier KiCS work.
 
-## Algorithm and complexity
+### Algorithm and complexity
 
 At compile time, normalize the program, compute the transitive
 nondeterministic-operation set, thread split identifier supplies through those
@@ -203,7 +215,7 @@ constant space. The authors identify garbage collection and memory behavior as
 future work. The compiler itself is also future work at this point; the
 experiment validates a prototype translation, not a completed Curry system.
 
-## Relationship to the dissertation and KiCS2
+### Relationship to the dissertation and KiCS2
 
 Braßel's dissertation states that its Chapter 5 §§5.1--5.2 publish the content
 of this paper. The dissertation expands the syntax and identifier independence
@@ -216,7 +228,7 @@ benchmark claims; the dissertation should be used for formal adequacy; this
 paper should be used for priority of the pure transformation and its explicit
 demand-extended association-list map.
 
-## Terminology
+### Terminology
 
 Useful established terms are *call-time choice*, *choice identifier*, *choice
 tree*, *search tree*, *head normal form*, *uniform program*, *finite failure*,
@@ -228,7 +240,7 @@ an extensional characterization of their executable list representation. We
 should reserve *selection observation* for our deterministic graph object and
 not suggest that its sparse-map shape is new.
 
-## Motivating-example lesson
+### Motivating-example lesson
 
 The pair of examples is unusually effective. `selfEq coin` isolates semantic
 consistency and late demand in a handful of lines. Permutation sort shows why
@@ -241,37 +253,7 @@ by a graph where a root-specific consumer renders whole subgraphs inactive. The
 novel theorem must then move beyond this paper by interpreting deterministic
 guard outcomes as exact concrete-input fibers.
 
-## Relationship to our hypothesis
-
-### What is directly established by the work?
-
-A pure lazy target program can reify nondeterministic choices with stable IDs,
-carry a finite partial association from IDs to Boolean decisions, extend it only
-when evaluation exposes an unseen choice, and produce a lazy explicit search
-tree for separately programmable traversal. Host-language sharing can preserve
-deterministic work across branches.
-
-### What is our interpretation or inference?
-
-The association list is extensionally a sparse observation of choices demanded
-on one search branch. Reusing that implementation pattern for deterministic
-dataflow selections is plausible, but it requires a new identity discipline and
-proof that actual guard evaluations correspond exactly to the root-relative
-enabled closure.
-
-### Could it subsume our proposed contribution?
-
-It subsumes novelty claims for stable binary decision IDs, a demand-extended
-finite partial decision map, lazy choice-tree construction, local pruning of
-inconsistent shared decisions, or separation of tree production from traversal.
-
-It does not define input predicates, deterministic selection outcomes, exact
-inverse-image fibers, residual symbolic functions, full-fiber blocking,
-nonredundant observations, or compositional/output-sensitive complexity. It
-also supplies no correctness theorem for its own transformation. Our novelty
-must be stated in those deterministic semantic and enumeration obligations.
-
-## Forward-citation screen
+### Forward-citation screen
 
 Semantic Scholar resolves the DOI to paper ID
 `9e595813d6af14cdb30f7f6327cf9886c0a5623c` with event year 2008 and reports
@@ -281,7 +263,7 @@ analysis, and later Curry verification work. The index reports 30 references,
 but the complete primary PDF contains 28; the primary bibliography snapshot
 therefore follows the paper rather than the index.
 
-## Evidence locations
+### Evidence locations
 
 - §1, pp. 1--3 of the author PDF: claimed contribution, target-language
   motivation, sharing across nondeterminism, pure labeling, and scope.
@@ -300,7 +282,31 @@ therefore follows the paper rather than the index.
   pure laziness-preserving translation, and future work.
 - References, pp. 18--19: complete 28-entry primary bibliography.
 
-## Questions and possible weaknesses
+## Bearing on RQs
+
+A pure lazy target program can reify nondeterministic choices with stable IDs,
+carry a finite partial association from IDs to Boolean decisions, extend it only
+when evaluation exposes an unseen choice, and produce a lazy explicit search
+tree for separately programmable traversal. Host-language sharing can preserve
+deterministic work across branches.
+
+The association list is extensionally a sparse observation of choices demanded
+on one search branch. Reusing that implementation pattern for deterministic
+dataflow selections is plausible, but it requires a new identity discipline and
+proof that actual guard evaluations correspond exactly to the root-relative
+enabled closure.
+
+It subsumes novelty claims for stable binary decision IDs, a demand-extended
+finite partial decision map, lazy choice-tree construction, local pruning of
+inconsistent shared decisions, or separation of tree production from traversal.
+
+It does not define input predicates, deterministic selection outcomes, exact
+inverse-image fibers, residual symbolic functions, full-fiber blocking,
+nonredundant observations, or compositional/output-sensitive complexity. It
+also supplies no correctness theorem for its own transformation. Our novelty
+must be stated in those deterministic semantic and enumeration obligations.
+
+## Evidence limits
 
 - The paper's central transformation has no direct correctness proof; reliance
   on the earlier side-effecting scheme is only an analogy until the later

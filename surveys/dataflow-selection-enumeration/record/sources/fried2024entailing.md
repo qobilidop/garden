@@ -1,11 +1,24 @@
-# fried2024entailing — Entailing Generalization Boosts Enumeration
+---
+citekey: fried2024entailing
+work:
+  title: "Entailing Generalization Boosts Enumeration"
+  author: "Dror Fried, Alexander Nadel, Roberto Sebastiani, Yogev Shalmon"
+  venue: "SAT 2024"
+  date: 2024
+  doi: 10.4230/lipics.sat.2024.13
+read: full-text
+source: "Open-access SAT 2024 proceedings PDF via https://doi.org/10.4230/LIPIcs.SAT.2024.13"
+retrieved: "-"
+notes-by: Codex (initial campaign); Claude Fable 5 (record migration)
+notes-date: 2026-08-04
+synthesis: "The closest circuit-native account of the semantic gap between propagating a partial input through a graph and proving every completion forces the observed output: orders gate, satisfying, and entailing generalization, then uses entailment-producing unsatisfiable cores inside an exhaustive AllSAT blocking loop"
+---
 
-- **Status:** deep-read; critical model-enumeration neighbor
-- **Primary source:** https://doi.org/10.4230/LIPIcs.SAT.2024.13
-- **Version read:** official open-access SAT 2024 proceedings PDF
-- **Bibliography key:** `fried2024entailing`
+# Entailing Generalization Boosts Enumeration
 
-## Why it matters
+## Evidence
+
+### Why it matters
 
 This paper gives the closest circuit-native account of the semantic gap
 between propagating a partial input through a graph and proving that every
@@ -15,7 +28,7 @@ inside an exhaustive AllSAT blocking loop. It therefore rules out novelty
 claims based merely on graph-native enumeration, semantic generalization, or
 entailment-based omission.
 
-## Program and output model
+### Program and output model
 
 The input is a finite acyclic single-output combinational Boolean circuit
 `Gamma = <I,G,o>`. An input assignment maps each variable to `0`, `1`, or the
@@ -34,7 +47,7 @@ and `Q` must be logically equivalent to the circuit's asserted output. The
 paper intentionally studies overlapping covers: one total input may be
 subsumed by multiple emitted cubes (Section 4, Article 13:6--13:7).
 
-## Algorithms and guarantees
+### Algorithms and guarantees
 
 Definition 2 orders three ways to generalize a total model:
 
@@ -67,7 +80,7 @@ blocked, the returned DNF covers exactly all satisfying total inputs. It is
 explicitly not guaranteed to be disjoint, prime, minimum-cardinality, or
 minimum-size.
 
-## Complexity and empirical scope
+### Complexity and empirical scope
 
 The paper provides no OutputP, IncP, polynomial-delay, or total-runtime
 classification. Unsatisfiable-core minimization is local; globally smallest
@@ -80,7 +93,7 @@ quality among the evaluated configurations. The experiments also show that
 solver choice, forward versus backward ternary generalization, and core
 minimization materially affect the result (Section 5, Article 13:8--13:12).
 
-## Motivating example
+### Motivating example
 
 Figure 2 has inputs `a,b`, internal gates for `a and b` and `a and not b`, and
 an output that is their disjunction. The cube `{a=1}` entails the output:
@@ -94,45 +107,7 @@ not structural inactivity. Both `b` completions remain relevant alternatives;
 no internal selection site is omitted because its containing case is outside
 an enabled closure.
 
-## Relationship to our synthesis
-
-### What is directly established by the work?
-
-Circuit-native ternary simulation, CNF gate satisfaction, and semantic
-entailment induce genuinely different generalization powers. Entailment can
-produce exponentially more compact coverage than a propagation-based notion
-in the surrounding partial-assignment literature, and it works directly in an
-exhaustive enumerate-generalize-block architecture.
-
-### What is our interpretation or inference?
-
-An exact observation fiber is stronger and differently typed than an
-entailing input cube. A fiber fixes one graph-intensional observation and is
-one cell of a pairwise-disjoint partition of the caller domain. An entailing
-AllSAT cube only says that all of its inputs force output `1`; two such cubes
-may overlap and may combine many different internal selection observations.
-
-The paper's `X` is also distinct from our inactive marker. `X` permits both
-Boolean completions of a caller input or gate abstraction. Inactivity says
-that a graph site does not belong to the enabled closure for that concrete
-observation. Logical generalization can erase distinctions among observed sites;
-observation enumeration deliberately retains them.
-
-### Could it subsume our proposed contribution?
-
-It subsumes claims of first applying entailment-based partial assignments to
-circuit enumeration, first exploiting the difference between graph
-propagation and semantic coverage, or first combining native circuit
-generalization with iterative blocking. Together with projected partial-model
-work, it makes a broad algorithmic novelty claim untenable.
-
-It does not define a selector-site observer, enabled closure, graph-relative
-observation equivalence, exact disjoint fibers, guarded residual values, or
-compositional summaries of such observations. Those remaining objects are a
-cross-literature formal synthesis, not automatically an original algorithmic
-contribution.
-
-## Evidence locations
+### Evidence locations
 
 - Figure 2 and Section 1, Article 13:2--13:3: entailing but non-satisfying
   circuit cube.
@@ -144,7 +119,42 @@ contribution.
 - Section 5, Article 13:8--13:12: benchmarks, metrics, ablations, and results.
 - Section 6, Article 13:12: scope and proposed extensions.
 
-## Questions and possible weaknesses
+## Bearing on RQs
+
+What is directly established by the work: circuit-native ternary simulation,
+CNF gate satisfaction, and semantic entailment induce genuinely different
+generalization powers. Entailment can produce exponentially more compact
+coverage than a propagation-based notion in the surrounding partial-assignment
+literature, and it works directly in an exhaustive
+enumerate-generalize-block architecture.
+
+Our interpretation or inference: an exact observation fiber is stronger and
+differently typed than an entailing input cube. A fiber fixes one
+graph-intensional observation and is one cell of a pairwise-disjoint partition
+of the caller domain. An entailing AllSAT cube only says that all of its
+inputs force output `1`; two such cubes may overlap and may combine many
+different internal selection observations.
+
+The paper's `X` is also distinct from our inactive marker. `X` permits both
+Boolean completions of a caller input or gate abstraction. Inactivity says
+that a graph site does not belong to the enabled closure for that concrete
+observation. Logical generalization can erase distinctions among observed sites;
+observation enumeration deliberately retains them.
+
+Could it subsume our proposed contribution: it subsumes claims of first
+applying entailment-based partial assignments to circuit enumeration, first
+exploiting the difference between graph propagation and semantic coverage, or
+first combining native circuit generalization with iterative blocking.
+Together with projected partial-model work, it makes a broad algorithmic
+novelty claim untenable.
+
+It does not define a selector-site observer, enabled closure, graph-relative
+observation equivalence, exact disjoint fibers, guarded residual values, or
+compositional summaries of such observations. Those remaining objects are a
+cross-literature formal synthesis, not automatically an original algorithmic
+contribution.
+
+## Evidence limits
 
 - Correctness is inherited from the cited generic blocking scheme rather than
   isolated as a theorem for Algorithm 1.

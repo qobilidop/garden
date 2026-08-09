@@ -1,12 +1,24 @@
-# rada2018new — A New Algorithm for Enumeration of Cells of Hyperplane Arrangements
+---
+citekey: rada2018new
+work:
+  title: "A New Algorithm for Enumeration of Cells of Hyperplane Arrangements and a Comparison with Avis–Fukuda's Reverse Search"
+  author: "Miroslav Rada, Michal Černý"
+  venue: "SIAM Journal on Discrete Mathematics"
+  date: 2018
+  doi: 10.1137/15m1027930
+read: full-text
+source: "Authors' 2016 preprint at https://nb.vse.cz/~cernym/preprinty/p1.pdf (DOI https://doi.org/10.1137/15m1027930)"
+retrieved: "-"
+notes-by: Codex (initial campaign); Claude Fable 5 (record migration)
+notes-date: 2026-08-04
+synthesis: "Gives a proof-bearing incremental sign-prefix algorithm for exact, duplicate-free, output-polynomial hyperplane-arrangement cell enumeration later specialized by Balestriero and LeCun to neural activation hyperplanes, though it always assigns a side to every hyperplane with no input-relative structural observation"
+---
 
-- **Status:** deep-read; critical algorithmic predecessor
-- **Primary source:** https://doi.org/10.1137/15M1027930
-- **Version read:** authors' 2016 preprint of the 2018 SIAM article
-- **Open copy:** https://nb.vse.cz/~cernym/preprinty/p1.pdf
-- **Bibliography key:** `rada2018new`
+# A New Algorithm for Enumeration of Cells of Hyperplane Arrangements
 
-## Why it matters
+## Evidence
+
+### Why it matters
 
 Rada and Černý provide a proof-bearing incremental cell-enumeration algorithm
 that Balestriero and LeCun later specialize to neural activation hyperplanes.
@@ -20,7 +32,7 @@ IncEnu preserves exact, duplicate-free, output-polynomial
 enumeration of full-dimensional hyperplane cells. Those properties cannot be
 claimed as new for our more general solver recurrence.
 
-## Model and cell representation
+### Model and cell representation
 
 An arrangement \(A_m\) contains \(m\) affine hyperplanes in
 \(\mathbb R^d\). A cell is represented by a total sign vector selecting one
@@ -31,7 +43,7 @@ successor has a strict interior witness; the notation
 constraints, \(d+O(1)\) variables, and coefficient bit sizes bounded by the
 input (Section 2).
 
-## Incremental Enumeration
+### Incremental Enumeration
 
 Algorithm 1 processes one hyperplane at a time. Given a prefix cell and its
 witness, it obtains the side of the new hyperplane containing that witness
@@ -54,7 +66,7 @@ retain the witness-implied actual sign and test only the opposite side. The
 paper also gives an equivalent flattened variant for comparison with
 Avis--Fukuda reverse search.
 
-## Guarantees
+### Guarantees
 
 Theorem 3.1 proves that the output stream is complete and contains no
 duplicates. Uniqueness follows because every full-dimensional cell has one
@@ -76,7 +88,18 @@ The result is stronger and more carefully parameterized than a bare
 superpolynomial when dimension varies, so output polynomiality is the relevant
 enumeration guarantee.
 
-## Relationship to our algorithm
+### Evidence locations
+
+- Introduction, preprint pp. 1--2: full-dimensional cells, compactness, and
+  output-polynomiality.
+- Section 2 and equation (2.1), pp. 2--3: sign cells, witnesses, and LP model.
+- Section 3.1 and Algorithm 1, pp. 3--4: incremental recurrence.
+- Theorem 3.1, p. 5: completeness and no duplicates.
+- Theorem 3.2 and Corollary 3.3, pp. 5--6: time, space, and OutputP result.
+- Dussault et al. 2025, Section 5.2.1(B): zero-witness pseudocode caveat and
+  explicit two-sided perturbation.
+
+## Bearing on RQs
 
 For one real affine layer restricted to strict signs away from all hyperplane
 boundaries, the reduction is direct: each local outcome predicate is a
@@ -95,21 +118,12 @@ side to every hyperplane. Thus it subsumes the generic incremental feasibility
 search and its basic output bound, but not the graph-specific observer or its
 enabled-closure correspondence.
 
-Do not claim:
+## Evidence limits
+
+Do not claim, on the strength of this work:
 
 - first recursive feasibility-pruned enumeration;
 - first exact or duplicate-free sign-region enumeration;
 - first OutputP cell enumeration; or
 - a novel \(O(KR)\)-style oracle-query bound in the all-sites-observed affine
   case.
-
-## Evidence locations
-
-- Introduction, preprint pp. 1--2: full-dimensional cells, compactness, and
-  output-polynomiality.
-- Section 2 and equation (2.1), pp. 2--3: sign cells, witnesses, and LP model.
-- Section 3.1 and Algorithm 1, pp. 3--4: incremental recurrence.
-- Theorem 3.1, p. 5: completeness and no duplicates.
-- Theorem 3.2 and Corollary 3.3, pp. 5--6: time, space, and OutputP result.
-- Dussault et al. 2025, Section 5.2.1(B): zero-witness pseudocode caveat and
-  explicit two-sided perturbation.

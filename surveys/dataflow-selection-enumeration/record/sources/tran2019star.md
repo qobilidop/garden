@@ -1,13 +1,24 @@
-# tran2019star — Star-Based Reachability Analysis of Deep Neural Networks
+---
+citekey: tran2019star
+work:
+  title: "Star-Based Reachability Analysis of Deep Neural Networks"
+  author: "Hoang-Dung Tran, Diago Manzanas Lopez, Patrick Musau, Xiaodong Yang, Luan Viet Nguyen, Weiming Xiang, Taylor T. Johnson"
+  venue: "CAV 2019"
+  date: 2019
+  doi: 10.1007/978-3-030-30942-8_39
+read: full-text
+source: "CAV 2019 LNCS proceedings PDF via https://doi.org/10.1007/978-3-030-30942-8_39"
+retrieved: "-"
+notes-by: Codex (initial campaign); Claude Fable 5 (record migration)
+notes-date: 2026-08-05
+synthesis: "Exact star reachability retains an affine image plus predicates over original basis variables, with an LP-feasibility worst case and complete unsafe-input reconstruction — an earlier guard-plus-affine-residual construction than RPM, restricted to dense ReLU semantics"
+---
 
-- **Template version:** 2
-- **Status:** deep-read
-- **Primary source:** https://doi.org/10.1007/978-3-030-30942-8_39
-- **Version read:** CAV 2019 LNCS proceedings PDF
-- **Last reviewed:** 2026-08-05
-- **Bibliography key:** `tran2019star`
+# Star-Based Reachability Analysis of Deep Neural Networks
 
-## Why it matters
+## Evidence
+
+### Why it matters
 
 Exact star reachability is an earlier guard-plus-affine-residual construction
 than RPM. A star retains an affine image together with predicates over its
@@ -22,33 +33,27 @@ The construction covers dense ReLU semantics and can encode an exact input
 guard plus affine image. It does not define input-dependent structural absence
 of selector sites or a requested-root-relative observation.
 
-## Relationship to our hypothesis
-
-### What is directly established by the work?
-
-The exact star construction retains an affine image and predicates over the
-original basis variables, with the stated LP-feasibility worst case and unsafe
-input reconstruction.
-
-### What is our interpretation or inference?
-
-A star can serve as an exact guard-plus-affine-residual representation for a
-dense ReLU region, but its observer is not automatically the contextual
-selection observer.
-
-### Could it subsume our proposed contribution?
-
-It subsumes an affine restricted case, not structurally unobserved nested sites
-or the four-field general record contract.
-
-## Evidence locations
+### Evidence locations
 
 - Algorithm 3.1, PDF p. 6 / LNCS p. 675: exact reachable-star construction.
 - Theorems 1--2, PDF p. 7 / LNCS p. 676: worst-case LP count and complete
   unsafe-input reconstruction.
 
-## Update impact
+## Bearing on RQs
 
-- **Syntheses affected:** geometric and neural-region comparison
-- **Claims affected:** C04, C15
-- **Manuscript action:** retained only the qualified exact-neural-region claim
+The exact star construction retains an affine image and predicates over the
+original basis variables, with the stated LP-feasibility worst case and unsafe
+input reconstruction.
+
+A star can serve as an exact guard-plus-affine-residual representation for a
+dense ReLU region, but its observer is not automatically the contextual
+selection observer.
+
+It subsumes an affine restricted case, not structurally unobserved nested sites
+or the four-field general record contract.
+
+## Evidence limits
+
+Read at full-text level from the CAV 2019 LNCS proceedings PDF; the note
+records no limitations beyond the scope distinction already given in Bearing
+on RQs above.
