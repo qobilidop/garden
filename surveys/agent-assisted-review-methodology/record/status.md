@@ -19,6 +19,10 @@ after every small change.
   the manuscript's four organizing findings into thematic synthesis
   files plus a `current-position.md` entry point, then re-check that
   every manuscript findings claim has a synthesis home.
+- **Start the claims ledger.** `record/claims.md` (statused synthesis
+  claims with scope, anchored evidence, and closest established
+  result) is now standard; seed it from the manuscript's four
+  organizing findings when building the syntheses layer.
 - **Fill per-row decided keys.** Historical log rows carry counts
   only; future search and snowball rows record their
   `included_keys`/`excluded_keys` per the unified write contract.

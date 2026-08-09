@@ -150,6 +150,11 @@ Shape note, as intent rather than drift.
   syntheses it affects; a manuscript claim with no synthesis home is
   a review finding. Git keeps superseded interpretations. (This is
   the survey-local instance of the library → wiki pattern.)
+- `record/claims.md` — the synthesis claims as a statused ledger:
+  each claim carries status, explicit scope, anchored evidence, and
+  its closest established result; no item is novel merely because it
+  is listed. The evidence surfaces and manuscript cite claims by
+  their stable ids.
 - Per-paper definition of done: a work is integrated only when its
   disposition is recorded, any required source note is anchored in
   the primary work, affected syntheses and claims are updated, and
@@ -260,7 +265,7 @@ fix introduces before persisting it.
   and maintenance state, with deferred work for the next update as a
   section — the survey's todo lives here, not in a separate file),
   `catalog.tsv` and `log.tsv` per the §1 grammar, `sources/`,
-  `syntheses/`, and, when the manuscript publishes quantities
+  `syntheses/`, `claims.md`, and, when the manuscript publishes quantities
   derived from the catalog, a campaign-local
   `record/scripts/check.py`; the source fetchers, snowball tool, and
   registry-driven update tool ship with this skill (`scripts/`). The validator checks schemas, keys, facet
@@ -312,9 +317,11 @@ implementation is dataflow-selection-enumeration (manuscript §3–§6,
   contradicting paper surfaced. Run an adversarial reduction audit
   (reduce each tempting "new" statement to the nearest established
   construction) and keep a counterexamples file of small models that
-  falsify overclaims. Rejected hypotheses are retained as guardrails
-  against reintroduction. Label every theorem prior work / direct
-  derivation / local synthesis.
+  falsify overclaims. A rejected hypothesis stays in the ledger as a
+  guardrail until its reduction is argued in the manuscript — then
+  it retires to git history, the manuscript itself becoming the
+  guardrail. Label every theorem prior work / direct derivation /
+  local synthesis.
 - **Record layer.** `record/formal-synthesis/` holds the model,
   semantics, derivations, complexity notes, counterexamples,
   reduction audit, and open questions; `claims.md` is the ledger; an
