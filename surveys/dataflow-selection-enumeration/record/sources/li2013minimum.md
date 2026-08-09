@@ -41,5 +41,5 @@ full conference precursor; no journal-only strengthening is imported.
 ## Update impact
 
 - **Syntheses affected:** none beyond the `li2009minimum` promotion
-- **Claims affected:** S12, S15 now point to `li2009minimum`
+- **Claims affected:** C12, C15 now point to `li2009minimum`
 - **Manuscript action:** none

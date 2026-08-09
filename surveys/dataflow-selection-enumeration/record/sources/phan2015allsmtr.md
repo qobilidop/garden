@@ -112,6 +112,6 @@ only if they support a nontrivial semantic theorem or algorithmic advantage.
 ## Update impact
 
 - **Syntheses affected:** projected enumeration and current position
-- **Claims affected:** S01, S02, S03, S15
+- **Claims affected:** C01, C02, C03, C15
 - **Manuscript action:** clarified in `sec-related` that `VI`, not `VR`, supplies
   the exhaustively enumerated coordinates

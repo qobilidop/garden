@@ -50,5 +50,5 @@ or the four-field general record contract.
 ## Update impact
 
 - **Syntheses affected:** geometric and neural-region comparison
-- **Claims affected:** S04, S15
+- **Claims affected:** C04, C15
 - **Manuscript action:** retained only the qualified exact-neural-region claim

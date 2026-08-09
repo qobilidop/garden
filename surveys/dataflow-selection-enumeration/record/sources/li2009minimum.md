@@ -63,6 +63,6 @@ importing journal-only statements from metadata.
 ## Update impact
 
 - **Syntheses affected:** current position and partial-event observer boundary
-- **Claims affected:** S12, S15
+- **Claims affected:** C12, C15
 - **Manuscript action:** none; the work is an evidence-ledger comparator rather
   than a manuscript citation

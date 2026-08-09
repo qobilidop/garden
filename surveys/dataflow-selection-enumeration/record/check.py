@@ -210,10 +210,10 @@ def main() -> int:
         "## Current survey synthesis claims", maxsplit=1
     )[-1]
     synthesis_claims = set(
-        re.findall(r"^### (S\d{2})\s+—", current_claims, re.MULTILINE)
+        re.findall(r"^### (C\d{2})\s+—", current_claims, re.MULTILINE)
     )
     if not synthesis_claims:
-        fail("claims ledger has no current Sxx synthesis claims")
+        fail("claims ledger has no current Cxx synthesis claims")
 
     manuscript_paths = sorted((ROOT / "manuscript").rglob("*.typ"))
     manuscript_texts = {
@@ -262,9 +262,9 @@ def main() -> int:
             )
         fail(f"protocol/manuscript research-question drift: {differing[0]}")
 
-    header, evidence_rows = rows(SURVEY / "evidence-matrix.tsv")
+    header, evidence_rows = rows(SURVEY / "evidence.tsv")
     if header != EVIDENCE_HEADER:
-        fail(f"unexpected evidence-matrix header: {header}")
+        fail(f"unexpected evidence header: {header}")
     evidence_ids: set[str] = set()
     supported_claims: set[str] = set()
     covered_citation_pairs: set[tuple[str, str]] = set()

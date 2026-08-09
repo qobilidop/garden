@@ -16,7 +16,7 @@ procedure. Process history lives in git.
 
 `update.py status` reports coverage dates and current record counts.
 `check.py` validates the evidence graph: catalog, log, queries,
-evidence matrix, bibliography, and manuscript citation anchors.
+evidence ledger, bibliography, and manuscript citation anchors.
 
 ## Shape
 
@@ -25,7 +25,7 @@ shape: `catalog.tsv` is a four-state disposition ledger because
 discovery outran adjudication and candidates are retained without a
 promise to read them; the protocol is a separate document rather
 than README sections because tooling parses it (`check.py` reads the
-research questions there); and the evidence matrix plus the
+research questions there); and the evidence ledger plus the
 unified-theory workspace bind manuscript claims to evidence at a
 granularity the minimal shape does not attempt.
 
@@ -57,11 +57,11 @@ for each are in `protocol.md`.
   batch: thematic files, `current-position.md` as entry point, the
   adopted terminology (`terminology.md`), and the unified theory's
   formal workspace (`unified-theory/`).
-- `claims.md` — the synthesis claims ledger (`Sxx` ids cited by the
-  evidence matrix); statuses declared in its preamble.
-- `evidence-matrix.tsv` — binds synthesis claims and manuscript
-  section labels to source-note anchors; revised whenever claims or
-  manuscript evidence change.
+- `claims.md` — the synthesis claims ledger (`Cxx` ids cited by
+  `evidence.tsv`); statuses declared in its preamble.
+- `evidence.tsv` — one row per evidence item (`Exxx`), binding
+  synthesis claims and manuscript section labels to source-note
+  anchors; revised whenever claims or manuscript evidence change.
 - `check.py` — the record validator; the shared search,
   fetch, and update tools live in `skills/run-survey/scripts/`.
 
@@ -87,7 +87,7 @@ conditions in `protocol.md`).
 3. Deep-read and snowball any new `critical` work, both directions.
 4. Append one matching log row per executed query, update the
    catalog, and reconcile syntheses, claims, terminology, the
-   unified theory, the evidence matrix, and affected manuscript
+   unified theory, the evidence ledger, and affected manuscript
    text; discard the staged result set.
 5. Only then advance the rows' `last_reconciled` to the batch date,
    sync `status.md` and the landing page, and run

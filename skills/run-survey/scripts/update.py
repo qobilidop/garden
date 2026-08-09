@@ -61,7 +61,7 @@ def status(args: argparse.Namespace) -> int:
     )
     print(f"Catalog: {len(catalog)} works ({breakdown})")
     evidence = f"Evidence: {len(source_notes)} source notes"
-    matrix = SURVEY / "evidence-matrix.tsv"
+    matrix = SURVEY / "evidence.tsv"
     if matrix.is_file():
         evidence += f", {len(read_tsv(matrix))} evidence rows"
     print(evidence)
