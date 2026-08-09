@@ -14,7 +14,9 @@ compiled separately — `./dev.sh python3 site/scripts/build-manuscripts.py`
 (typst, pinned in the dev image; the HTML target is experimental) into
 gitignored `site/public/surveys/`; CI runs the same script before the
 Astro build, and a push that changes `.devcontainer/` races the image
-republish — re-run the Site workflow if it fails on a stale image.
+republish — the proven recovery, runnable as one background chain:
+`gh run watch <dev-image-run> --exit-status && gh workflow run
+site.yml`, then watch the new run and curl the live page.
 
 ## The loop
 

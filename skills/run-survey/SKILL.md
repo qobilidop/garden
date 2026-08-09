@@ -1,219 +1,165 @@
 ---
 name: run-survey
-description: Run a survey campaign in surveys/<slug>/ — protocol, logged searches, fleet screening, snowball, classification, graded deep-reads, syntheses, and a frozen disclosure baseline. Use when asked to run, resume, or close a survey, systematic map, or review campaign. For ingesting a single work outside a campaign, use ingest-paper or ingest-post instead.
+description: Run a survey campaign in surveys/<slug>/ — search and catalog a field, build its terminology and taxonomy, curate a reading list, and write a Typst manuscript, leaving a minimal resumable record. Use when asked to run, resume, update, or close a survey, systematic map, or review campaign. For ingesting a single work outside a campaign, use ingest-paper or ingest-post instead.
 ---
 
 # Run a survey campaign
 
-Campaigns are human-triggered, never agent-initiated. Each campaign
-pins the commit SHA of this skill in its protocol and runs under it;
-mid-campaign deviations go to `decisions/`, and method redesign happens
-only in the post-campaign /evolve (skill vN+1) — a later skill version
-never invalidates an earlier frozen baseline. Method v1 distilled from
-the agent-assisted-review-methodology campaign (2026-08-08) and the
-literature it mapped.
+Goals first: a survey exists for learning, published as a garden
+artifact — not research. It contributes terminology, a taxonomy, and
+synthesis of others' work; it makes no new empirical claims and never
+uses its own execution as a data point (claiming a data point is a
+research commitment that must then be defended). The bar is
+*traceability*, not reproducibility: every claim cites its source,
+every map number traces to the catalog, and caveats travel with a
+number everywhere it appears — a survey about a field's evidence
+cannot launder its own. Campaigns are human-triggered, pin this
+skill's commit SHA in `record/README.md`, and redesign the method
+only through the post-campaign /evolve. Method v2, reshaped from the
+agent-assisted-review-methodology campaign and its review round.
 
-## 1. Protocol and scaffold
+## 1. Shape
 
-- Scaffold `surveys/<slug>/` up front with its three surfaces:
-  `index.md` (landing page, written at §8), `record/` (the working
-  record during the campaign: `protocol.md`, `prompts/`,
-  `decisions/`, `sources/`, `syntheses/`, `logs/`, `scripts/`,
-  catalogs, `status.md`, `baseline.md`), and `manuscript/` (the
-  paper, §8). `record/.gitignore` covers
-  `logs/raw/`, `work/`, `candidates.tsv`, `catalog.tsv`,
-  `snowball-candidates.tsv`. Commit contract: curated dispositions
-  (included + adjudicated), notes, syntheses, claims, decisions,
-  baseline, search logs; intermediates stay local and mirror to shadow
-  at freeze, after which the local copies are deleted. (Both gitignore
-  and catalog split were mid-campaign retrofits in v0 — decisions
-  0001, 0006.)
-- The included-works record is one table, `included.tsv` (key, via,
-  year, title), which classification later extends with facet columns
-  — v0 split identity (`catalog-included.tsv`) from facets (`map.tsv`)
-  into two tables with identical key sets, an accident of stage
-  ordering.
-- The protocol states: RQs; genre and window; disposition codes;
-  scale as a fan-out budget (batches × tier), applied to the
-  *post-snowball* pool; the independence axis of every dual-pass stage
-  (vendor / tier / prompt-frame); abstract-truncation lengths for each
-  screening input; the skill commit SHA. Project catalog size (rows ×
-  ~230B) against the repo file-size guard now, not at freeze.
-- Disposition codes: `I`, `E1`–`E6` per protocol, `E7` non-study
-  document (letters, peer-review records, editorials — pre-filter on
-  Crossref `type` where available), `U` insufficient metadata to
-  decide. `U` is a to-do, not a disposition: fetch the abstract from a
-  second source or escalate a tier before freeze; surviving `U` rows
-  are counted and disclosed. Any code invented mid-campaign gets a
-  decision record at first use (v0 invented `U` silently, 12 rows).
-- Stated departure: the agent-primary / human-gate stance inverts the
-  mapped guidance (gartlehner2025 principle 1: never fully automate).
-  Declare it in the protocol with its compensating controls — dual
-  pass, adjudication, overturn-rate reporting, human freeze gate.
-- Fleet prompts are committed files in `prompts/` (screen pass A/B,
-  verify, classify, G1 pipeline), dispatched by path so the baseline
-  cites file + SHA. Transcript-only prompts made v0 unreproducible,
-  while its own mapped literature found wording alone swings screening
-  sensitivity drastically (gargari2023).
+Three surfaces in `surveys/<slug>/`:
 
-## 2. Search
+- `index.md` — the landing page and `[[slug]]` backlink target:
+  short description, links to both manuscript renders, the record
+  link, and the curated reading list as its body.
+- `record/` — the minimal resumable state (§7).
+- `manuscript/` — the Typst paper (§5).
 
-- Scripted queries against OpenAlex / Crossref / Semantic Scholar /
-  arXiv; every query logged to `logs/searches.tsv`, raw responses to
-  `logs/raw/`.
-- One shared `keyof()` normalization for every script that mints keys,
-  with the ladder applied in order: arXiv-DOI (`10.48550/arxiv.X`) →
-  `arxiv:X`; strip version suffixes (`vN`, F1000 `.N`); preprint-server
-  DOIs to base form; lowercase. v0 wrote the fix in `snowball.py` and
-  never backported it to `search.py` — fake `doi:` keys minted from
-  arXiv ids let the same work into the include set twice.
-- Completeness gate: no query may remain FAILED when the pool freezes.
-  Retry with longer backoff or an API key, switch source, or write a
-  decision record dropping it (v0 silently lost 1 of 11 queries to a
-  persistent 429).
-- Post-search checkpoint: report the pool size against the protocol's
-  budget; widen the budget explicitly or tighten queries before any
-  screening runs (v0 overshot 4.3× and reinterpreted the ceiling).
+## 2. Search, catalog, screen
 
-## 3. Screen and adjudicate
+- Logged queries (`record/searches.tsv`: date, qid, source, query,
+  results) against OpenAlex / Crossref / Semantic Scholar / arXiv;
+  per-source request templates, caps, and retry conventions are
+  documented in the record README — the logged rows are the query
+  set, rerun verbatim on update.
+- One key grammar, documented in the README: `doi:`/`arxiv:`
+  normalized (arXiv-DOIs collapse, versions stripped, lowercase),
+  `t:<title-slug>` fallback; a published version of an included
+  preprint replaces its key, superseded key to `excluded.tsv` as E6.
+- One included-works table (`included.tsv`; year-at-screening,
+  truncated display titles) that classification extends with facet
+  columns; `excluded.tsv` (key + code) is permanent screening memory.
+- Snowball one backward+forward round via citation indexes; record
+  the pre-filter vocabulary verbatim; a verification pass re-judges
+  everything the wave screens in.
+- Screening: two agent passes on different model tiers and prompt
+  framings, disagreements adjudicated by the strongest available
+  model, a human gating the result; single-pass waves only with a
+  verification pass. Exclusion codes E1–E6 plus `U` (parked,
+  re-screened each update); the load-bearing code gets boundary
+  examples in the README. No query left `FAILED` at close without a
+  recorded reason.
 
-- Dual independent passes over every candidate, differing on a declared
-  independence axis: cheap tier criteria-framed vs mid tier RQ-framed
-  worked; run pass B cross-vendor (the Codex mirror) when available —
-  same-vendor κ overstates independence, v0's own headline finding.
-- Report binary agreement, Cohen's κ, and category-exact agreement,
-  annotated with the axis actually varied. Adjudicate disagreements,
-  uncertains, and single-pass rows with the strongest tier; rationales
-  persist in the adjudicated catalog.
-- Duplicate audit before classification: cluster normalized titles
-  across the whole catalog and resolve clusters to E6. Screeners see
-  one row at a time and structurally cannot catch duplicates; v0
-  shipped ~22 duplicate-title groups in its final include set
-  (decision 0008).
+## 3. Terminology, taxonomy, classification
 
-## 4. Snowball
+- The survey's centerpiece: fix the field's vocabulary explicitly,
+  then build a facet scheme by keywording and classify every include
+  under it. Prefer few, mechanical facets; cut judgment-heavy fields
+  rather than classify them noisily (v1's judgment field varied 5.7×
+  across passes and was unusable).
+- Deep-read the anchor candidates into `record/sources/` notes:
+  library-note frontmatter (citekey, registrar work metadata,
+  `synthesis:` one-liner) over an extraction body (`## Evidence`
+  anchored to sections/tables, `## Bearing on RQs`, `## Evidence
+  limits`). Note facets from full text are authoritative for that
+  work but never silently overwrite the abstract-level map —
+  disagreements stand, disclosed in the manuscript's limitations.
 
-- One backward+forward round from the includes via citation indexes;
-  log per-iteration yield.
-- Any pre-filter (title vocabulary) reintroduces the terminology
-  dependence snowballing exists to escape (wohlin2014) — if used, it
-  gets a decision record and a recall probe.
-- Non-decay clause: the stop rule "one round or decay-to-zero" needs a
-  branch for yield that does not decay. Either budget a second round or
-  declare bounded coverage AND dual-screen a random sample of every
-  excluded set (bulk-excluded and single-pass excludes), reporting a
-  measured false-exclusion rate instead of an unquantified risk. In v0,
-  79% of the map came through the weakened path with a 13% measured
-  single-pass error rate.
-- A single-pass wave (cost-justified by asymmetric error costs) must be
-  followed by an adversarial verification pass on all includes and
-  uncertains; every row carries its provenance (`via`) so syntheses can
-  condition on rigor.
+## 4. Curate the reading list
 
-## 5. Classify
+- The landing page's body: taxonomy-sectioned tables
+  (Paper | What | Venue · Year | Notes) — linked original titles,
+  one-line annotations distilled from the evidence notes, internal
+  links (library wikilink where ingested, record note otherwise).
+- Curated, not exhaustive: works that anchor a section — strongest
+  evidence, defining system, guidance of record. Deep-read does not
+  imply listed; sections stay small; a new anchor joins or displaces.
+  Annotations carry the same caveats as the manuscript's claims.
 
-- Calibration round before fan-out: all classifier agents label the
-  same ~20-row seed; inspect disagreement, tighten facet definitions or
-  cut the facet, then run the fleet.
-- Reliability instrumentation scales with judgment-load, not stage
-  order: mechanical facets (stage, setting) may run single-pass;
-  judgment-graded facets are dual-passed on a ~10% sample with
-  agreement reported, or cut. v0 measured κ only on binary screening —
-  its judgment field (`rq_core`) varied 5.7× across single-pass batches
-  and was unusable except as a pool signal.
-- Scheme changes during classification are allowed (petersen2008) and
-  each gets a decision record — v0's protocol required this and no
-  record was ever written.
+## 5. Manuscript
 
-## 6. G1 deep-reads
+- Typst, split for drift-freedom: `meta.typ` (title, byline,
+  abstract) + `content.typ` (body) + `manuscript.typ` (paged
+  entrypoint, imports `surveys/style.typ`) + `manuscript-html.typ`
+  (HTML wrapper, `html.elem` title block). The byline names the
+  accountable human author; the agent contribution is a title-page
+  footnote (`author-note` in `meta.typ`).
+- Shape: introduction with explicit contributions; background and
+  related surveys; terminology and taxonomy; an honest, brief "how
+  this survey was made" with the funnel table (arithmetic must
+  reconcile — state merges and uncataloged exclusions); findings
+  sections; synthesis and open problems with a findings table;
+  limitations; conclusion. Numbers only from the record; superlatives
+  scoped ("among the deep reads"); preprint and adjudication caveats
+  attached wherever the number appears, including the abstract.
+- Bibliography: `references.tsv` (citekey → identifier) →
+  `make-references.py` (registrar BibTeX via DOI content negotiation
+  and arXiv; repairs live in the generator; output carries a
+  generated-file marker) → `references.bib`; author-year citations;
+  hand entries in `references-manual.bib`.
+- Build: `./dev.sh python3 site/scripts/build-manuscripts.py` (typst
+  pinned in the dev image) → `site/public/surveys/<slug>/`.
+- Typst gotchas (all earned): `~` is a non-breaking space — escape
+  literal tildes; a `;` directly after `#cite(...)` is parsed away —
+  use `#[;]`; `fr` table columns collapse inside figures — use
+  explicit widths for wrapping columns; `#cite(form: "prose")`
+  under numeric CSL styles expands full author lists — hand-write
+  "Author et al. @key" there, and grep for that residue when
+  switching styles back; unbraced name particles (`van X`) drop in
+  author-year rendering — brace them in the bib; typst's BibTeX
+  parser rejects `month=July` — normalize to three-letter forms;
+  the HTML export silently drops `align`/`block` title content —
+  build HTML title blocks from `html.elem`; typst embeds Libertinus
+  Serif and DejaVu Sans Mono (no font packages needed for those).
 
-- Select to the protocol's cap by facet-guided choice, recorded with
-  per-work reasons plus a ranked reserve list. Admission gate: a work
-  with no obtainable full text and no abstract returns to the pool and
-  the slot refills from the reserve (v0 spent a slot on a secondhand
-  note). Abstract-only reads are admitted but marked.
-- Fan out one pipeline per work (capture → transcribe → evidence note
-  with section/table anchors), tiers per ../ingest-paper/SKILL.md.
-  Capture ladder: OA resolvers (Unpaywall/OpenAlex) → publisher →
-  EuropePMC `europepmc.org/articles/PMC<id>?pdf=render` (passes plain
-  curl) → Wayback `id_` record → abstract-only, declared.
-- Pipeline prompts state permission gates explicitly — subagents
-  inherit no operating rules. In v0 three pipelines autonomously used
-  the user's browser to pass bot-challenges, a permission-gated
-  capability (decision 0007). The prompt template forbids
-  browser-mediated fallbacks without asking.
+## 6. Review panel
 
-## 7. Synthesize and freeze
+Before calling the piece done, spawn an adversarial subagent panel
+over the whole survey directory and iterate to closure:
 
-- Syntheses are problem-scoped delta only; topic material writes back
-  to `wiki/` (skills/tend-wiki). `claims.md` numbers each claim, cites
-  evidence rows, and marks abstract-resting claims `(A)`.
-- `baseline.md` follows v0's disclosure shape (PRISMA 2020 items 8–9
-  spirit): flow counts, per-stage models and pass counts, independence
-  axes, prompts by file+SHA, deviations, limitations.
-- Freeze checklist, in order: drain every deferred correction (any
-  decision record saying "belongs to the freeze" — v0 deferred one and
-  never applied it); resolve or count `U` rows; verify catalog ↔ notes
-  ↔ syntheses ↔ claims consistency (a facet row contradicting its
-  deep-read note is a freeze blocker, not a disclosure); mirror
-  gitignored intermediates to shadow; rewrite `status.md` to CLOSED
-  with final numbers only.
+- *Consistency auditor* — recompute every number mechanically across
+  manuscript, landing page, and record; hunt cross-artifact
+  disagreement.
+- *Cold referee* — claims versus the evidence notes: overreach,
+  unscoped superlatives, uncaveated preprint numbers, structure and
+  prose a hostile methodologist would flag.
+- *Resumability stress-test* — execute the record README as a
+  stranger with only the survey directory; every ambiguity is a
+  finding.
+- *Link checker* — repo URLs mapped to local files, external
+  identifiers resolved, bib ↔ citations ↔ notes closed.
 
-## 8. Manuscript and landing page
+Fix, then send reviewers the delta for per-finding verdicts (FIXED /
+PARTIAL / NOT ADDRESSED); adjudicate reviewer disagreements on
+primary evidence, never on authority; verify every fresh quantity a
+fix introduces before persisting it.
 
-- The reader-facing output, distinct from `baseline.md` (the frozen
-  methods record — PRISMA separates these too). Human-gated: written
-  when the findings deserve a reader, not by default at freeze. Two
-  artifacts with different jobs — the arXiv model:
-- **Manuscript** (`manuscript/`, the paper, standalone by design — no
-  wikilinks): Typst, split as `meta.typ` (title/byline/abstract,
-  shared so renders can't drift) + `content.typ` (body) +
-  `manuscript.typ` (paged wrapper and entrypoint, `surveys/style.typ`)
-  + `manuscript-html.typ` (HTML wrapper, `html.elem` title block).
-  The byline names the accountable human author per the
-  no-AI-authorship norm, with the agent contribution disclosed in a
-  title-page footnote (`author-note` in `meta.typ`).
-  Shape: introduction (motivation and hook),
-  background (lineage), method (condensed from `baseline.md`), one
-  section per RQ grown from `syntheses/` — inverting the register from
-  internal delta notes to self-contained prose — then discussion and
-  conclusion. Citekeys appear as mono handles; the bibliography is
-  `manuscript/references.bib`, generated by `make-references.py`
-  from `references.tsv` (DOI content negotiation + arXiv bibtex;
-  unresolvable entries go in `references-manual.bib`). Never restate
-  numbers the catalogs don't back. Compiled to HTML+PDF by
-  `site/scripts/build-manuscripts.py` (typst pinned in the dev image;
-  HTML target experimental).
-- **Landing page** (`index.md`, the site collection entry and the
-  `[[slug]]` backlink target): links, not prose — short description,
-  HTML+PDF links (relative: `manuscript.html`, `manuscript.pdf`),
-  campaign-record link, wiki topic link, and a references list in
-  citekey style, wikilinked only where a library page exists (G2
-  promotion stays demand-driven; the list gains links as works are
-  promoted).
+## 7. Record and close
 
-## Decision records
+- Prune `record/` to the minimal resumable state: `README.md` (the
+  contract: scope, search parameters, snowball spec, selection rules
+  with examples, key grammar, facet tokens, curation bar, numbered
+  update procedure, rebuild instructions), `searches.tsv`,
+  `included.tsv`, `excluded.tsv`, `sources/`. Everything else —
+  protocols, intermediate syntheses, work sheets — lives on in git
+  history and the shadow mirror.
+- Updates follow the record README's own procedure; this skill defers
+  to it. Its last step syncs counts and dates in the README and the
+  landing page.
+- Verify builds, propose commits with the attribution trailer, commit
+  on the user's word; the post-campaign /evolve harvests lessons.
 
-`decisions/NNNN-<slug>.md`, written at the moment of deviation: title,
-`Status:` line (who decided, when), the deviation and rationale, and a
-mandatory closing field —
+## Heavy mode (opt-in)
 
-    Skill implication: none | vN+1 fix: <rule> | open question
-
-Six of v0's seven records carried no forward-pointer, turning the
-post-campaign /evolve into archaeology; this field makes each campaign
-self-mining.
-
-## Close
-
-- After the manuscript and landing page exist, prune the record to
-  its minimal resumable state — `README.md` (scope, selection
-  rules, window, update procedure), `searches.tsv`, `included.tsv`
-  (with facets), `excluded.tsv` (keys + codes), `sources/` — process
-  artifacts live on in git history and the shadow mirror.
-- Verify committed artifacts match the commit contract; propose commits
-  with the attribution trailer; commit only on the user's word.
-- The campaign ends closed: living maintenance is not registered unless
-  the protocol says otherwise; revival criteria go in `baseline.md`.
-- Post-campaign /evolve harvests `Skill implication:` fields into skill
-  vN+1.
+When a campaign's subject or stakes genuinely demand validity
+apparatus — not by default: dual-pass screening with Cohen's κ and a
+declared independence axis (cross-vendor pass B via the Codex mirror
+when available), adjudicated catalogs with persisted rationales,
+committed fleet prompts, decision records with a mandatory
+`Skill implication:` field, and a frozen disclosure baseline in the
+spirit of PRISMA 2020 items 8–9. The v1 campaign
+(agent-assisted-review-methodology) ran this way; its git history is
+the reference implementation.
