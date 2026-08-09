@@ -289,7 +289,10 @@ reviewer and the human is the gate. The mapped guidance has no
 published norms for that mirror image. We state it as a deliberate
 departure with compensating controls: dual passes, strongest-tier
 adjudication, adversarial verification with reported overturn rates,
-a logged deviation record, and a human freeze gate.
+a logged deviation record, and a human freeze gate. The authorship
+convention, by contrast, is followed: the byline names the
+accountable human author, with the agent's primary contribution
+disclosed in the title note.
 
 *Reflexive critique.* The measurement failures RQ2 documents appear
 in our own execution. We measured agreement where it was cheapest

@@ -169,6 +169,9 @@ literature it mapped.
   shared so renders can't drift) + `content.typ` (body) +
   `manuscript.typ` (paged wrapper, `surveys/style.typ`) +
   `manuscript-html.typ` (HTML wrapper, `html.elem` title block).
+  The byline names the accountable human author per the
+  no-AI-authorship norm, with the agent contribution disclosed in a
+  title-page footnote (`author-note` in `meta.typ`).
   Shape: introduction (motivation and hook),
   background (lineage), method (condensed from `baseline.md`), one
   section per RQ grown from `syntheses/` — inverting the register from

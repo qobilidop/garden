@@ -31,6 +31,12 @@ body > * {
   color: #444;
   margin: 0.2rem 0;
 }
+.titleblock .authornote {
+  text-align: left;
+  font-size: 0.8rem;
+  color: #444;
+  margin: 1rem 0 0;
+}
 .abstract {
   padding: 0.65rem 1em;
   background: #f7f9fb;
