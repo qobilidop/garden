@@ -8,7 +8,7 @@ imbalance can change model rankings. Three deep-read disclosure
 proposals share a core but lack validation or adoption evidence. The
 selected multi-model studies document specific ensemble and deferral
 configurations without isolating a general independence mechanism. None
-of the 25 deep reads defines independent agent reviewers; establishing
+of the 31 deep reads defines independent agent reviewers; establishing
 whether the wider literature does so requires a targeted search.
 
 The map data behind this survey, the per-work evidence notes, and a

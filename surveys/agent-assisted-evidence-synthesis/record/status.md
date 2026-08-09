@@ -1,12 +1,12 @@
 # Current survey status
 
 - **Coverage through:** 2026-08-09
-- **Catalog:** 1,965 works (752 included, 25 deep-read, 1,113
-  excluded, 75 parked); include-level total 777
+- **Catalog:** 1,975 works (745 included, 31 deep-read, 1,123
+  excluded, 76 parked); include-level total 776
 - **Maintenance state:** 2026-08-09 update batch reconciled and
   human-gated; updates on demand
-- **Manuscript:** draft predates the 2026-08-09 batch — revision in
-  progress (syntheses → claims/evidence → manuscript)
+- **Manuscript:** revised for the 2026-08-09 batch; under continuing
+  human review
 
 Counts are mechanical — regenerate with the shared update tool's
 `status` command or `check.py` rather than editing them here
@@ -71,7 +71,7 @@ limitations disclosures; git keeps the log itself.
   unstaged oami2025-vs-madeyski2025 metric dispute); fold them into
   the manuscript on its next revision.
 - **Grade evidence certainty.** `evidence.md` supports the optional
-  GRADE-inspired **Certainty** field; grade the 20 records on the
+  GRADE-inspired **Certainty** field; grade the 27 records on the
   next evidence touch.
 - **Fill per-row decided keys.** Historical log rows carry counts
   only; future search and snowball rows record their

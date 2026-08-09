@@ -33,7 +33,7 @@
     [4], [Human–LLM deferral outperformed comparison arms on two easier
       retrospective appraisal instruments, not as a general law],
       [@woelfle2024],
-    [4], [None of 25 selected deep reads defines agent-reviewer
+    [4], [None of 31 selected deep reads defines agent-reviewer
       independence; the campaign did not search or code the question
       exhaustively], [deep-read subset; @hamel2021],
   ),
