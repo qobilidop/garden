@@ -102,25 +102,25 @@ def command_for(
         str(output),
     ]
     if query["source"] == "crossref":
-        return [sys.executable, str(SCRIPT_DIR / "screen_crossref.py"), *common]
+        return [sys.executable, str(SCRIPT_DIR / "search_crossref.py"), *common]
     if query["source"] == "arxiv":
         return [
             sys.executable,
-            str(SCRIPT_DIR / "screen_arxiv.py"),
+            str(SCRIPT_DIR / "search_arxiv.py"),
             *common,
             "--raw-query",
         ]
     if query["source"] == "openalex":
         return [
             sys.executable,
-            str(SCRIPT_DIR / "screen_openalex.py"),
+            str(SCRIPT_DIR / "search_openalex.py"),
             "search",
             *common,
         ]
     if query["source"] == "semanticscholar":
         return [
             sys.executable,
-            str(SCRIPT_DIR / "screen_semantic_scholar.py"),
+            str(SCRIPT_DIR / "search_semantic_scholar.py"),
             "search",
             query["query"],
             "--limit",

@@ -32,8 +32,10 @@ Three surfaces in `surveys/<slug>/`:
 - `record/` — the minimal resumable state (§7).
 - `manuscript/` — the Typst paper (§5).
 
-Every survey is an *updatable closed map*: it closes on bounded
-mapping closure (§7) and promises no maintenance cadence — but the
+Every survey is an *updatable systematic map* (the established
+genre noun; see `references/terminology.md` for how house terms map
+to the field's): it closes on bounded mapping closure (§7) and
+promises no maintenance cadence — but the
 update infrastructure stays standing, so that when an update is
 wanted, staging it is one command and the record README's procedure
 carries it to reconciliation.
@@ -56,6 +58,12 @@ Shape note, as intent rather than drift.
 
 ## 2. Search, catalog, screen
 
+- Protocol before search — the canon's core bias control: write and
+  human-gate the protocol (scope, research questions, selection
+  criteria, facet plan, source list) before the first logged search,
+  as `record/protocol.md` (a thin survey may fold it into the record
+  README's contract). Material method changes are described there in
+  plain language as they happen, never applied silently.
 - One append-only event log (`record/log.tsv`: date, kind, id,
   source, query_or_seed, direction, hits, screened, included_keys,
   excluded_keys, notes) with four kinds: `search` (an executed
@@ -64,9 +72,11 @@ Shape note, as intent rather than drift.
   retractions, migrations), and `exploratory` (early non-replayable
   discovery, retained as history but counting toward nothing).
   Queries run against OpenAlex / Crossref / Semantic Scholar /
-  arXiv via the shared fetchers in this skill's `scripts/` (query,
-  date bounds, and limits are arguments; the snowball procedure is
-  `snowball_openalex.py`); caps and retry conventions are documented
+  arXiv via the shared clients in this skill's `scripts/` —
+  `search_<source>.py` for query-driven discovery (snowballing is a
+  search method, so citation chases are their `snowball`
+  subcommands), `fetch_*` for identifier-driven retrieval; caps and
+  retry conventions are documented
   in the record README — the logged search rows are the query set,
   rerun verbatim on update. Search and snowball rows record their
   decided keys per row, not only counts.
@@ -87,7 +97,9 @@ Shape note, as intent rather than drift.
   screening and discarded after reconciliation — the log row (date,
   verbatim query, counts, decided keys, notes) is the audit unit;
   the bar is traceability, and result sets are re-derivable by
-  rerunning the logged query.
+  rerunning the logged query. (This consciously deviates from
+  Kitchenham's save-unfiltered-results-for-reanalysis practice —
+  disclose it in the method section.)
 - Index defects are recorded, not repaired: note unresolved
   identifiers and wrong registrar metadata in the log row, and let
   primary/publisher records control bibliographic and technical
@@ -183,8 +195,9 @@ Shape note, as intent rather than drift.
   footnote (`author-note` in `meta.typ`).
 - Shape: introduction with explicit contributions; background and
   related surveys; terminology and taxonomy; an honest, brief "how
-  this survey was made" with the funnel table (arithmetic must
-  reconcile — state merges and uncataloged exclusions); findings
+  this survey was made" with the flow table (PRISMA's flow diagram
+  in table form; arithmetic must reconcile — state merges and
+  uncataloged exclusions); findings
   sections; synthesis and open problems with a findings table;
   limitations; conclusion. Numbers only from the record; superlatives
   scoped ("among the deep reads"); preprint and adjudication caveats

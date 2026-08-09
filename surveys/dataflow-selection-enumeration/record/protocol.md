@@ -135,7 +135,7 @@ reconciled.
 
 ## Snapshot closure and reopening
 
-The map is an updatable closed snapshot; “current” means that no
+The survey is an updatable systematic map; “current” means that no
 promoted finding remains unreconciled, and freshness is stated as the
 last reconciled coverage date. A publication snapshot
 may claim bounded mapping closure only when:

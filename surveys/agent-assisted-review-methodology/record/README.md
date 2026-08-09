@@ -120,10 +120,10 @@ On update:
 - Crossref: `api.crossref.org/works?query.bibliographic=<q>&filter=from-pub-date:<start>,until-pub-date:<end>&rows=50&select=DOI,title,issued,container-title,abstract`
 - arXiv: `export.arxiv.org/api/query?search_query=<q>&start=0&max_results=50&sortBy=relevance` followed by the exact local date post-filter
 
-The shared fetchers in `skills/run-survey/scripts/` implement these
-templates, and the snowball procedure below is codified there as
-`snowball_openalex.py`; the parameters above remain the record of
-what was run.
+The shared search clients in `skills/run-survey/scripts/` implement
+these templates, and the snowball procedure below is codified as
+`search_openalex.py snowball`; the parameters above remain the
+record of what was run.
 
 ## Key and version rules
 

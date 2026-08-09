@@ -19,6 +19,11 @@ after every small change.
   the manuscript's four organizing findings into thematic synthesis
   files plus a `current-position.md` entry point, then re-check that
   every manuscript findings claim has a synthesis home.
+- **Reconstruct the protocol.** The selection rules, key grammar,
+  and update procedure live in this README; extract them into a
+  `record/protocol.md` per the protocol-before-search discipline, so
+  the contract is a document rather than sections of the entry
+  point.
 - **Start the claims ledger.** `record/claims.md` (statused synthesis
   claims with scope, anchored evidence, and closest established
   result) is now standard; seed it from the manuscript's four
