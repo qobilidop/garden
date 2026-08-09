@@ -246,7 +246,7 @@ respectively — hypotheses, not validated results.
   ">0.8" wording slip (above) survives into the revision; later-stage
   extension is argument, not evidence.
 - **In this library:** the measurement-reform anchor of
-  [[agent-assisted-review-methodology]] — and a rubric this repo's own
+  [[agent-assisted-evidence-synthesis]] — and a rubric this repo's own
   survey screening should be scored against: keep per-decision
   include/exclude counts so a full confusion matrix is reconstructible
   (R4), report Lost Evidence against the abstract-level catalog rather

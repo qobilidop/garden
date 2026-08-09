@@ -2,7 +2,7 @@
 // (manuscript-html.typ) wrappers — single source for title, byline,
 // and abstract so the two renders cannot drift.
 
-#let title = "Agent-Assisted Systematic Review Methodology"
+#let title = "Agent-Assisted Evidence Synthesis"
 #let subtitle = "A Survey"
 #let byline = "Bili Dong"
 #let author-note = [
@@ -17,8 +17,8 @@
   minimal public record is linked below.
 ]
 #let draft = "Draft 2026-08-08"
-#let landing = "https://qobilidop.github.io/sys0/surveys/agent-assisted-review-methodology/"
-#let record = "https://github.com/qobilidop/sys0/tree/main/surveys/agent-assisted-review-methodology/record"
+#let landing = "https://qobilidop.github.io/sys0/surveys/agent-assisted-evidence-synthesis/"
+#let record = "https://github.com/qobilidop/sys0/tree/main/surveys/agent-assisted-evidence-synthesis/record"
 
 #let abstract-body = [
   Large language models are moving into every stage of systematic

@@ -18,7 +18,7 @@ workflow as guidance rather than pinning a skill or repository commit,
 and describe material method changes in the record README in plain
 language. Use the post-campaign /evolve when execution exposes a
 durable harness lesson. This method was reshaped from the
-agent-assisted-review-methodology campaign and its review rounds,
+agent-assisted-evidence-synthesis campaign and its review rounds,
 then united with the dataflow-selection-enumeration living-survey
 method; those two records are the reference implementations.
 
@@ -152,7 +152,8 @@ Shape note, as intent rather than drift.
   passes with a declared independence axis (the Codex mirror when
   available), Cohen's κ, committed fleet prompts, and a frozen
   disclosure baseline (PRISMA 2020 items 8–9 in spirit) — the v1
-  aarm campaign's git history is the reference.
+  agent-assisted-evidence-synthesis campaign's git history is the
+  reference.
 
 ## 3. Terminology, taxonomy, classification
 

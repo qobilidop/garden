@@ -109,7 +109,7 @@ inter-rater reliability still bounds it.
 ## The agent-era frontier
 
 The canon predates agents, and the first sys0 survey
-([[agent-assisted-review-methodology]]) mapped what has grown in the
+([[agent-assisted-evidence-synthesis]]) mapped what has grown in the
 gap: 672 works on AI-assisted evidence
 synthesis, 2020–2026. Read against this page's theses, the
 campaign's findings rhyme with the canon rather than replacing it —

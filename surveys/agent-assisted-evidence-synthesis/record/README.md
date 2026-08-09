@@ -9,15 +9,15 @@ describe material method changes in the protocol in plain language.
 Process history lives in git and is not required to resume.
 
 An updater needs this directory, the
-[manuscript](https://qobilidop.github.io/sys0/surveys/agent-assisted-review-methodology/manuscript.html)
+[manuscript](https://qobilidop.github.io/sys0/surveys/agent-assisted-evidence-synthesis/manuscript.html)
 (taxonomy in §3; method and historical funnel in §4), the
 repository's `AGENTS.md`, and the current `run-survey` skill.
 
 ## Start here
 
 ```console
-./dev.sh python3 skills/run-survey/scripts/update.py --record surveys/agent-assisted-review-methodology/record status
-./dev.sh python3 surveys/agent-assisted-review-methodology/record/check.py
+./dev.sh python3 skills/run-survey/scripts/update.py --record surveys/agent-assisted-evidence-synthesis/record status
+./dev.sh python3 surveys/agent-assisted-evidence-synthesis/record/check.py
 ```
 
 `update.py status` reports coverage and current record counts.
@@ -120,7 +120,7 @@ Add an anchor's canonical identifier to `../manuscript/references.tsv`,
 then run from the repository root:
 
 ```sh
-./dev.sh python3 skills/run-survey/scripts/make_references.py --manuscript surveys/agent-assisted-review-methodology/manuscript
+./dev.sh python3 skills/run-survey/scripts/make_references.py --manuscript surveys/agent-assisted-evidence-synthesis/manuscript
 ./dev.sh python3 site/scripts/build-manuscripts.py
 ```
 
@@ -128,7 +128,7 @@ then run from the repository root:
 same-key fallback in `references-manual.bib`, and replaces
 `references.bib` atomically only after every entry resolves. On any
 failure it leaves the prior bibliography untouched. The build writes
-`site/public/surveys/agent-assisted-review-methodology/manuscript.html`
+`site/public/surveys/agent-assisted-evidence-synthesis/manuscript.html`
 and `.pdf`.
 
 ## To update

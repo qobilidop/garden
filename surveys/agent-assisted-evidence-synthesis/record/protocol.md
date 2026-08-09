@@ -5,6 +5,17 @@ procedure. The original campaign predates this document — it was
 reconstructed from the campaign's retained rules on 2026-08-09, and
 material method changes are described here in plain language.
 
+**2026-08-09 — retitle.** The survey was retitled from
+"Agent-Assisted Systematic Review Methodology" to "Agent-Assisted
+Evidence Synthesis" (slug `agent-assisted-review-methodology` →
+`agent-assisted-evidence-synthesis`). The declared scope below is
+unchanged — it already covered secondary studies broadly — but the
+executed query vocabulary was review-centric relative to it; this
+update adds mapping-study, scoping-review, and living-review query
+vocabulary as new qids in `queries.tsv` to close that gap. The old
+title named the field's dominant genre; the new one names the
+declared scope.
+
 ## Objective and study type
 
 Maintain an exploratory systematic map of AI-assisted and automated
