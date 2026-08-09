@@ -28,14 +28,16 @@
   findings organize the map. The stage distribution reproduces the
   pre-LLM skew — screening dominates, appraisal and reporting stay
   thin. Reliability evidence is abundant but mismeasured: no evaluated
-  single model meets the field's own screening deployment bar, task
+  single model meets a proposed screening deployment bar, task
   variance exceeds model variance, and evaluation practice itself is
   systematically inadequate under class imbalance. Disclosure norms
-  converge on content while instruments fragment — four unvalidated
-  checklists compete as disclosure in practice stays rare. And
+  converge on a core while instruments fragment — three unvalidated
+  checklists and a layer of position statements compete as
+  disclosure in practice stays rare. And
   reviewer independence for agents is undefined: no work says what
-  makes two agent passes independent, while the best ensemble evidence
-  suggests model-family diversity is what buys recall. The survey
+  makes two agent passes independent, while the best ensemble
+  evidence — a preprint — suggests model-family diversity is what
+  buys recall. The survey
   distills a consistent terminology and taxonomy for the field and is
   accompanied by a curated reading list; it was compiled with
   LLM-agent assistance under human direction, with the full working

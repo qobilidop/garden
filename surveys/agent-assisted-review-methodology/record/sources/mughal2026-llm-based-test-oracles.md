@@ -9,7 +9,7 @@ read: full-text
 source: "shadow/library/papers/2026/mughal2026-llm-based-test-oracles/transcript.md"
 facets:
   stage: "screen"
-  contribution: "evaluation[application]"
+  contribution: "evaluation"
   setting: "se"
 retrieved: 2026-08-08
 notes-by: Claude Sonnet-class (survey deep-read pipeline)

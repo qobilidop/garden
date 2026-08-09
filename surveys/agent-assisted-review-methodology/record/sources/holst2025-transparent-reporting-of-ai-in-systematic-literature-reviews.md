@@ -10,7 +10,7 @@ read: full-text
 source: "https://ai.jmir.org/2025/1/e80247/PDF (publisher, JMIR AI gold OA, CC-BY)"
 facets:
   stage: "report"
-  contribution: "guideline-norms"
+  contribution: "guideline"
   evidence: "none"
   setting: "general"
 retrieved: 2026-08-08

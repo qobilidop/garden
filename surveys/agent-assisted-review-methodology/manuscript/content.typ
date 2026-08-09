@@ -56,10 +56,9 @@ screening tools in medicine versus two in SE. The classic method
 canon — review guidelines @kitchenham2007, mapping-study procedure
 @petersen2008, snowballing @wohlin2014, and PRISMA 2020 reporting
 @page2021 — predates LLMs and supplies both the vocabulary of this
-survey and the method now under automation pressure. Pre-LLM machine
-classifiers for screening (text mining for study identification,
-Cochrane's classifiers) enter as background through their existing
-reviews rather than re-screened primary studies.
+survey and the method now under automation pressure. Pre-LLM screening classifiers (text mining for study
+identification, Cochrane's classifiers) are covered through their
+existing reviews; their primary studies were not re-screened.
 
 LLM-era secondary literature exists but is narrower than this map.
 #cite(<luo2024>, form: "prose") survey potential LLM roles stage by
@@ -97,13 +96,15 @@ accepted; disagreements go to a second human), and _end-to-end
 systems_ (agentic pipelines spanning most or all stages, typically
 with task decomposition and human gates). The guidance literature
 distinguishes the AI-as-_secondary-reviewer_ role (quality-assurance
-checks on human decisions — the sanctioned configuration) from
+checks on human decisions — the most commonly sanctioned
+configuration) from
 AI-as-_primary-reviewer_ (the model makes first-pass decisions a
 human oversees).
 
 *Taxonomy.* The map classifies each work on four dimensions
-(@tab-scheme). The scheme was built by keywording and allowed to
-evolve during classification @petersen2008.
+(@tab-scheme). The scheme was built by keywording — extracting candidate facet
+values from abstracts @petersen2008 — and allowed to evolve during
+classification.
 
 #figure(
   table(
@@ -132,34 +133,44 @@ and gated every stage. Searches ran against OpenAlex, Crossref,
 Semantic Scholar, and arXiv (window 2020-01-01 to 2026-08-08,
 English), pairing review-side vocabulary ("systematic review",
 "evidence synthesis", "citation screening", …) with model-side
-vocabulary ("large language model", agent, automation), plus targeted
-probes for reporting guidance. Candidates were screened by two
-independent agent passes with adjudication of disagreements; one
+vocabulary ("large language model", agent, automation). Candidates
+were screened by two agent passes on different model tiers and
+prompt framings, with disagreements adjudicated; one
 backward+forward snowball round @wohlin2014 followed, with a
-title-vocabulary pre-filter and a verification pass over its
-includes. All 672 includes were classified under the taxonomy of
-@sec-taxonomy. @tab-funnel summarizes the funnel.
+title-vocabulary pre-filter and a verification pass over what it
+screened in. All 672 included works ("includes" below) were
+classified under the taxonomy of @sec-taxonomy; we call the
+resulting classified catalog the map. @tab-funnel summarizes the
+funnel.
 
 #figure(
   table(
     columns: (auto, auto, auto),
     align: (left, right, right),
     table.header([Phase], [In], [Out]),
-    [Search (11 queries, 4 indexes)], [—], [419],
-    [Dedup], [419], [412],
+    [Search (11 queries, 4 indexes)], [—], [419 unique],
+    [Dedup (arXiv–DOI)], [419], [412],
     [Dual-pass screen + adjudication], [412], [139 includes],
-    [Snowball round (pre-filtered)], [139 seeds], [1,204 candidates],
-    [Wave-2 screen + adversarial verify], [1,204], [533 includes],
+    [Snowball round (pre-filtered)], [139 seeds], [1,204 new],
+    [Vocabulary pre-screen], [1,204], [881],
+    [Wave-2 screen + verification], [881], [533 includes],
     [Final catalog], [1,291], [*672 included*],
-    [Facet classification], [672], [map],
+    [Facet classification], [672], [the map],
     [Deep reads], [672], [25 notes],
   ),
-  caption: [Identification and selection funnel.],
+  caption: [Identification and selection funnel. Snowball candidates
+    are new records after deduplication against the catalog; the 323
+    pre-screen exclusions (no model-side vocabulary) were not
+    cataloged, and two of the 881 screened records merged with
+    existing rows on entry (412 + 879 = 1,291).],
 ) <tab-funnel>
 
-25 works were selected for deep reads as the map's anchors: 20 read
-in full text, 5 abstract-only. Citations resting on abstract-only
-evidence carry an "abstract-only" marker. The survey record linked in
+25 works were selected facet-guided for deep reads as candidate
+anchors: 20 read in full text, 5 abstract-only (one with no
+retrievable text at all, reconstructed secondhand). 23 of the 25
+cleared the curation bar and anchor the reading list and the
+citations below; citations resting on abstract-only evidence carry
+an "abstract-only" marker. The survey record linked in
 the title note holds the criteria, the search log, the classified
 catalog, and the per-work evidence notes; the full working history is
 in the repository.
@@ -198,12 +209,14 @@ guideline-contribution works overall), and end-to-end systems are a
 real class of 90 works; neither had any pre-LLM presence
 @vandinter2021. By contribution type, evaluation/benchmark work
 dominates (335 of 672), followed by methods (132), systems/tools
-(109), positions (60), and guidelines (36). Appraisal remains the
-thinnest evaluated stage, consistent with it also being the hardest
-@woelfle2024.
+(109), positions (60), and guidelines (36). Reporting (22 works)
+and appraisal (25) remain the thinnest stages, and appraisal is also
+the hardest @woelfle2024.
 
-The strongest-documented end-to-end system is instructive for what it
-does _not_ contain. MedSR-Copilot @huang2026 — four subagents, a
+The most thoroughly documented end-to-end system among the deep
+reads is instructive for what it does _not_ contain. MedSR-Copilot
+(@huang2026; a preprint evaluated on its authors' own benchmark) —
+four subagents, a
 fine-tuned risk-of-bias model, a deterministic synthesis engine —
 reaches 63.6% end-to-end conclusion accuracy against a 45.3% best
 baseline on a 100-review benchmark with no debate, voting, or agent
@@ -211,19 +224,19 @@ redundancy anywhere; reliability comes from task decomposition,
 structured intermediate artifacts, and human-in-the-loop gates. Its
 ablations rank two-stage extraction (−14.9pp) far above retrieval
 augmentation (−3.3pp), and its absolute stage numbers (screening F1 ≈
-0.46–0.51) calibrate how far "end-to-end" remains from unattended
+0.44–0.51) calibrate how far "end-to-end" remains from unattended
 use. In the living-evidence lifecycle the tail is thinner still:
 across 34 inventoried tools, exactly one serves the
 publication-update phase @song2026.
 
 Two gaps persist from the pre-LLM era. Software engineering holds 17
-setting-classified includes against medicine's 412 — the
-order-of-magnitude evidence gap #cite(<napoleao2021>, form: "prose")
-measured has survived the LLM transition, and SE has no guidance or
-norms work of its own. And adoption runs ahead of disclosure: the
-field's own coordination body reports that published reviews rarely
-disclose advanced AI use @oconnor2024, even as concrete
-disclosed-adoption exemplars exist @mughal2026.
+setting-classified works against medicine's 412 — the adoption gap
+#cite(<napoleao2021>, form: "prose") measured pre-LLM has widened
+into an order-of-magnitude evidence gap, and SE has no guidance or
+norms work of its own. And adoption runs ahead of disclosure: mapping work relayed by the
+field's coordination body found AI use rarely disclosed in the two
+domains it covered @oconnor2024, even as concrete disclosed-adoption
+exemplars exist @mughal2026.
 
 = RQ2 — Reliability: abundant, but mismeasured <sec-rq2>
 
@@ -232,8 +245,7 @@ are benchmark-only (@tab-map); the problem is not evidence volume but
 measurement practice and generalization.
 
 *Measurement practice lags its subject.* A methodological review of
-29 LLM-screening evaluations — with Kitchenham among the authors —
-found 24% reporting complete confusion matrices, 10% reporting the
+29 LLM-screening evaluations found 24% reporting complete confusion matrices, 10% reporting the
 Matthews correlation coefficient (MCC), and 59% leaning on accuracy,
 which its reanalyses show is invalid under screening's class
 imbalance: an accuracy-best model lost 63.3% of relevant evidence
@@ -242,27 +254,28 @@ between pooled and per-review aggregation changes the answer on the
 same data @huotala2025.
 
 *What the numbers show.* No model in a 9-LLM × 24-review sweep met
-the field's deployment bar of recall ≥ 0.95 at precision ≈ 0.50
-@huotala2025. Prompt wording alone swung GPT-3.5-era screening
-sensitivity from 62% to junior-reviewer level @gargari2023. In the
-one controlled same-prompt generation comparison, upgrading GPT-3.5
+a proposed deployment bar of recall ≥ 0.95 at precision ≈ 0.50
+@huotala2025. Prompt wording alone swung GPT-3.5-era screening sensitivity from
+62% to what the authors report as junior-reviewer level (a
+single-review study) @gargari2023. In a controlled same-prompt
+comparison across model generations, upgrading GPT-3.5
 to GPT-4 Turbo moved specificity 0.51→0.98 while sensitivity stayed
 flat (0.83→0.85, not significant) — model scale bought workload
 reduction, not evidence retention @oami2025. Across corpora,
-cross-review variance exceeds cross-model variance, and performance
-collapses exactly where human conflict rates are high @syriani2023
-@huotala2025. On appraisal instruments every individual LLM scored
+cross-review variance exceeds cross-model variance @huotala2025, and
+in the one corpus with a high human conflict rate, performance
+collapsed @syriani2023. On appraisal instruments every individual LLM scored
 below every individual human, with both degrading together as the
 instrument hardens — human inter-rater κ falls from 0.84 to 0.29
 @woelfle2024. Extraction evidence is thin: one SE proof-of-concept at
-87.8% accuracy @felizardo2024[abstract-only], a 23-tool
+87.8% accuracy @felizardo2024[abstract-only], a 23-study
 social-science inventory with no pooled benchmark @legate2024, and
 secondhand error ranges of 4–31% @gartlehner2025.
 
 *Read against human baselines.* Single human reviewers run \~87–92%
 screening sensitivity (range 42–100%; cited in
 #cite(<fagerberg2025>, form: "prose")), human extraction error reaches 50% of data elements
-(cited in #cite(<gartlehner2025>, form: "prose")), and the one RCT-grade
+(cited in #cite(<gartlehner2025>, form: "prose")), and a rare RCT-grade
 automation study found noninferiority, not superiority, with
 inconclusive time savings @arno2022[abstract-only]. Agent evidence
 should be calibrated against these imperfect baselines, not an
@@ -270,28 +283,33 @@ idealized perfect reviewer.
 
 = RQ3 — Norms: convergent content, fragmenting instruments <sec-rq3>
 
-Every guidance source from the pre-LLM wave @hamel2021 through
-2024–2026 @gartlehner2025 @degen2024 @holst2025 @fernandes2026
-converges on the same disclosure obligations: name the tool and
-version; disclose the exact prompt and configuration; state which
-stage the AI performed and what the human did; describe verification;
-keep a human accountable (no AI authorship); and never fully automate
-any stage. The sanctioned positive role is equally consistent: AI as
-a _secondary_ quality-assurance reviewer, re-checking single-reviewer
-exclusions and extractions.
+The guidance sources share a disclosure core: name the tool and
+version, state which stage the AI performed and what the human did,
+and describe verification. The reporting checklists (PRISMA-trAIce
+@holst2025, FRAISR @degen2024) add the exact prompt and
+configuration; the conduct guidance — the pre-LLM screening guidance
+@hamel2021, the Cochrane-family statements @gartlehner2025, and
+HAICO-SLR @fernandes2026 — keeps a human decision in every stage,
+and its LLM-era members add human accountability (no AI
+authorship). In the
+Cochrane-family guidance the sanctioned role for AI is a _secondary_
+quality-assurance reviewer, re-checking single-reviewer exclusions
+and extractions; HAICO-SLR goes further, sanctioning AI first-pass
+filtering and drafting under human validation @fernandes2026.
 
-The instruments implementing this content are fragmenting. Four
-unvalidated proposals now compete — PRISMA-trAIce's 14 items and
+The instruments implementing this content are fragmenting. Three
+unvalidated checklists now compete — PRISMA-trAIce's 14 items and
 human/AI-split flow diagram @holst2025, FRAISR's per-stage
-machine-readable table @degen2024, HAICO-SLR's dual
-conduct-and-reporting tables @fernandes2026, and a
-position-statement layer — RAISE @gartlehner2025 and the
-Cochrane-family statements — while the officially announced PRISMA-AI
-remains unpublished and PRISMA 2020 itself covers automation only at
-the selection items @luo2024. The map's 36 guideline works suggest
+machine-readable table @degen2024, and HAICO-SLR's dual
+conduct-and-reporting tables @fernandes2026 — alongside a layer of
+position statements (the Cochrane-family statements @gartlehner2025,
+which endorse the RAISE guidance), while the officially announced
+PRISMA-AI remains unpublished and PRISMA 2020 itself covers
+automation only at the selection items @luo2024. The map's 36 guideline works suggest
 instruments are arriving faster than any accumulates adoption
 evidence: a standards race. Meanwhile practice lags all of them —
-disclosure in published reviews stays rare @oconnor2024 — and the
+the coordination body's relayed mapping found disclosure rare
+@oconnor2024 — and the
 best in-practice template is an individual exemplar: name the model,
 cite the specific PRISMA item, publish a validation table beside the
 flow diagram, revisit the automation's residual risk in limitations
@@ -300,31 +318,35 @@ flow diagram, revisit the automation's residual risk in limitations
 = RQ4 — Independence: the undefined middle <sec-rq4>
 
 Direct evidence on multi-model design is the map's scarcest class —
-four designed data points and one negative case:
+two designed ensembles, two indirect signals, and one negative
+case:
 
 - A cross-family OR-ensemble (GPT-5 Thinking + Gemini 2.5 Pro, union
   rule, 736 Cochrane citations) reached 99.7% screening sensitivity
   at 49.3% specificity against individual sensitivities of 86–98% —
   with a documented blind-spot catch where one family failed a
   vaccine-subgroup criterion at 43% sensitivity and the other flagged
-  the same records @fagerberg2025. Family diversity caught what
+  the same records (@fagerberg2025; a preprint, and 94.0–94.5%
+  sensitivity against the original Cochrane labels before the
+  authors' own adjudication). Family diversity caught what
   within-family redundancy could not.
 - A 9-run consistency ensemble reached human-level appraisal accuracy
-  only on items surviving unanimous agreement, deferring 74–88% of
-  items; the _deferral_ design — human + LLM score, send
+  only on items surviving near-unanimous agreement, deferring 74–88%
+  of items; the _deferral_ design — human + LLM score, send
   disagreements to a second human — beat both humans-alone and
   ensembles at 95–96% accuracy while sparing \~65–70% of
-  second-reviewer workload @woelfle2024. Agreement-gating, not
-  voting, is the evidence-backed pattern.
+  second-reviewer workload on the two easier instruments, a margin
+  that collapses on the hardest (80–86%, \~29% spared) @woelfle2024.
+  Agreement-gating, not voting, is the evidence-backed pattern.
 - Open-weight models screen more conservatively than GPT-4.1 across
   25k titles — a family-diversity signal awaiting full-text numbers
   @safarpour2026[abstract-only].
 - High self-consistency coexists with mediocre accuracy — run-to-run
-  Fleiss κ 0.82–0.97 on hard corpora @syriani2023 — stability is not
-  validity.
-- The negative case: the best end-to-end system uses no redundancy at
-  all @huang2026; independence mechanisms are not yet how the
-  strongest pipelines buy reliability.
+  Fleiss κ 0.82–0.97 on the two corpora tested @syriani2023 —
+  stability is not validity.
+- The negative case: the best-documented end-to-end system uses no
+  redundancy at all @huang2026; independence mechanisms are not yet
+  how the strongest pipelines buy reliability.
 
 What no source provides is a definition: what makes two agent passes
 _independent_ in the sense dual human review requires — different
@@ -344,15 +366,17 @@ _human_ reviewer independence and simply has no agent analogue
     [1], [Stage distribution reproduces the pre-LLM skew; screening
       dominates, appraisal and reporting stay thin], [map;
       @vandinter2021],
-    [1], [SE remains an order of magnitude behind medicine (17 vs
-      412 includes)], [map; @napoleao2021],
-    [1], [Best end-to-end system derives reliability from
-      decomposition and human gates, not redundancy], [@huang2026],
+    [1], [SE evidence lags medicine by an order of magnitude (17 vs
+      412), extending the pre-LLM adoption gap], [map;
+      @napoleao2021],
+    [1], [Best-documented end-to-end system derives reliability
+      from decomposition and human gates, not redundancy
+      (preprint)], [@huang2026],
     [1], [Living/update automation nearly nonexistent (1 of 34
       tools)], [@song2026],
-    [2], [No evaluated single model meets the screening deployment
-      bar (recall ≥ 0.95, precision ≈ 0.50)], [@huotala2025
-      @oami2025 @gargari2023],
+    [2], [No evaluated single model meets a proposed screening
+      deployment bar (recall ≥ 0.95, precision ≈ 0.50)],
+      [@huotala2025 @oami2025 @gargari2023],
     [2], [Task variance exceeds model variance], [@huotala2025
       @syriani2023],
     [2], [Model upgrades bought specificity (workload), not
@@ -363,22 +387,23 @@ _human_ reviewer independence and simply has no agent analogue
       fragment, unvalidated and unadopted], [@holst2025 @degen2024
       @fernandes2026 @gartlehner2025 @oconnor2024 @luo2024],
     [4], [Cross-vendor OR-ensemble reaches near-perfect screening
-      sensitivity with a documented cross-family blind-spot catch],
-      [@fagerberg2025],
+      sensitivity (preprint; 94.0–94.5% on unadjudicated labels)
+      with a
+      documented cross-family blind-spot catch], [@fagerberg2025],
     [4], [Agreement-gated human–AI deferral beats humans-alone and
-      LLM ensembles on appraisal], [@woelfle2024],
+      LLM ensembles on the easier appraisal instruments],
+      [@woelfle2024],
     [4], [No published definition or measurement of reviewer
       independence for agents], [gap; @fagerberg2025
       @safarpour2026[abstract-only] @hamel2021],
   ),
-  caption: [Summary of findings. The full claim ledger with
-    per-claim evidence anchors is in the campaign record.],
+  caption: [Summary of findings with their evidence.],
 ) <tab-findings>
 
 @tab-findings condenses the findings. Two cross-cutting patterns
 stand out. First, where reliability has been won, it came from
 _structure_, not from scale or redundancy: task decomposition with
-human gates in the strongest end-to-end system @huang2026,
+human gates in the best-documented end-to-end system @huang2026,
 agreement-gated deferral in appraisal @woelfle2024, cost-weighted
 measurement in screening evaluation @madeyski2025. Second, the
 field's bottleneck is methodological rather than technical: the
@@ -390,21 +415,25 @@ The open problems the map surfaces: a definition and measurement of
 reviewer _independence_ for agents (@sec-rq4); evaluated evidence for
 the thin stages — appraisal, synthesis, reporting; the SE evidence
 gap and SE's missing norms work; the near-empty living-evidence
-update tail @song2026; adoption evidence for any of the four
-competing disclosure instruments; and norms for the
-agent-as-primary-reviewer configuration, which the guidance
-literature does not yet contemplate — its sanctioned role for AI
-remains the secondary checker.
+update tail @song2026; adoption evidence for any of the
+competing disclosure instruments; and norms for fully
+agent-primary configurations — the Cochrane-family guidance keeps AI
+as the secondary checker, and only HAICO-SLR sanctions first-pass AI
+roles under human validation @fernandes2026.
 
 = Limitations <sec-threats>
 
 Screening and classification read truncated abstracts (600–900
 characters); facets are abstract-level and single-pass; deep-read
-extraction had no second pass. Snowball recall is bounded by one
-non-decayed round, a title-vocabulary pre-filter that reintroduces
-the terminology dependence snowballing exists to escape @wohlin2014,
-and a single-pass second wave; a post-freeze audit found \~3.9%
-residual duplicates in the include set. Coverage is English-only and
+extraction had no second pass. Snowball recall is bounded by a
+single round not iterated to saturation (yield had not decayed), a
+title-vocabulary pre-filter that reintroduces the terminology
+dependence snowballing exists to escape @wohlin2014, and a
+single-pass second wave; a post-freeze audit found \~3.9% residual
+duplicates in the include set. For 8 of the 25 deep-read works, the
+full-text evidence notes disagree with the map's abstract-level
+facets; the map is reported as computed, and the notes are
+authoritative for those works. Coverage is English-only and
 the evidence base is medicine-dominant (412 of 672), so imported
 thresholds are medicine-calibrated.
 
@@ -413,11 +442,12 @@ thresholds are medicine-calibrated.
 The LLM era has repopulated the systematic-review automation
 landscape without reshaping it: screening still dominates, the hard
 stages stay thin, and the medicine–SE gap persists. The reliability
-literature's headline is methodological — the field measures the
-wrong things more often than it measures the right ones badly. The
+literature's headline is methodological — the dominant failure is
+measuring the wrong quantity, not measuring the right one
+imprecisely. The
 norms literature agrees on what to disclose and disagrees on the
 form, while practice ignores both. And the open problem at the
-frontier is independence: the strongest ensemble result says
+frontier is independence: the strongest ensemble evidence — a preprint — suggests
 model-family diversity buys recall, yet no one can say what
 "independent agent reviewers" means.
 

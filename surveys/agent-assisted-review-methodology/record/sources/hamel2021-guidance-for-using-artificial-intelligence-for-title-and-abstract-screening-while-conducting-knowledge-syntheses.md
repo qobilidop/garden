@@ -10,9 +10,9 @@ read: full-text
 source: "shadow/store/library/papers/2021/hamel2021-guidance-for-using-artificial-intelligence-for-title-and-abstract-screening-while-conducting-knowledge-syntheses/ (publisher PDF gated by a bot/JS challenge on both BMC and PMC; retrieved as a Wayback Machine `id_` capture, timestamp 20211220175236, verified byte-identical to a live browser fetch of the same PDF)"
 facets:
   stage: "screen"
-  contribution: "guideline-norms"
-  evidence: "benchmark-only"
-  setting: "medicine-EBM"
+  contribution: "guideline"
+  evidence: "benchmark"
+  setting: "med"
 retrieved: 2026-08-08
 notes-by: Claude Sonnet-class (survey deep-read pipeline)
 notes-date: 2026-08-08

@@ -44,7 +44,10 @@ def fmt(entry):
     lines = []
     for field in split_fields(body):
         name, _, value = field.partition("=")
-        lines.append(f"  {name.strip().lower()} = {value.strip()},")
+        name, value = name.strip().lower(), value.strip()
+        if name == "doi":
+            value = value.replace("{https://doi.org/", "{")
+        lines.append(f"  {name} = {value},")
     return "@" + kind.lower() + "{" + key.strip() + ",\n" + "\n".join(lines) + "\n}"
 
 
