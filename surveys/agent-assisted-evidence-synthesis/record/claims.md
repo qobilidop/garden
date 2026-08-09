@@ -21,10 +21,11 @@ source's claim cannot be mistaken for this survey's synthesis.
 
 - **Status:** supported
 - **Statement:** In the retained 776-work map, screening is the largest
-  primary-focus category (216) while appraisal (25) and reporting (22)
+  primary-focus category (256) while appraisal (33) and reporting (23)
   are the smallest — the same conducting-the-review skew documented
-  before LLMs — alongside guideline (34) and end-to-end (85)
-  categories that the pre-LLM corpus lacked.
+  before LLMs — alongside guideline (47) and end-to-end (96)
+  categories that the pre-LLM corpus lacked. The 2026-08-09 update
+  grew every cell and changed no ordering.
 - **Scope:** This survey's retained catalog under single-pass
   abstract-level coding; a description of the map, not of population
   prevalence or adoption trends.
@@ -96,14 +97,17 @@ source's claim cannot be mistaken for this survey's synthesis.
 ### C04 — Reviewer independence for agents is undefined; ensemble and deferral evidence is the best available
 
 - **Status:** supported
-- **Statement:** None of the 25 selected deep reads defines what makes
+- **Statement:** None of the 31 selected deep reads defines what makes
   two agent passes independent in the sense dual human review
-  requires, or measures correlated error from shared training data.
-  The best available designs — a cross-vendor OR ensemble and
-  human–LLM agreement-gated deferral — report strong
-  configuration-level results without isolating model family, model
-  identity, run count, or combination rule as the cause; one strong
-  end-to-end system uses no redundancy at all.
+  requires. One work now measures a proxy — inter-agent score
+  correlation of 0.48–0.56 — and argues from it that model
+  heterogeneity drives ensemble gains, showing debate raising that
+  correlation while lowering accuracy; its three agents vary in
+  vendor, size, and corpus at once, so the claim outruns the design.
+  The other designs — a cross-vendor OR ensemble, a same-family
+  probability-sum ensemble, and human–LLM agreement-gated deferral —
+  report configuration-level results without isolating any cause; one
+  strong end-to-end system uses no redundancy at all.
 - **Scope:** Strictly the 31 deep reads. Neither wave ran a targeted
   independence/ensemble query and coded no independence facet, so
   this is not a literature-wide absence claim.
@@ -114,10 +118,16 @@ source's claim cannot be mistaken for this survey's synthesis.
 - **Assessment:** Supported for the deep-read subset — the definitional
   gap is verifiable against every note; the corresponding
   literature-wide claim would be a `hypothesis` and is deliberately
-  not made.
-- **Caveats:** The two key positive studies are single-team and one is
+  not made. The 2026-08-09 update narrowed the claim from "no
+  mechanism measured" to "no definition given", which is the version
+  now carried.
+- **Caveats:** The key positive studies are single-team and one is
   an unreviewed preprint with in-team label adjudication; one
-  supporting signal is abstract-only with no extractable numbers.
+  supporting signal is abstract-only with no extractable numbers. The
+  cross-family versus same-family margin contrast the two update
+  ensembles suggest is confounded by corpus, task, metric, and model
+  era, and is held as a hypothesis for a matched design, not printed
+  as a result.
 
 ### C05 — The four-dimensional taxonomy answers a demonstrated vocabulary divergence
 
@@ -142,3 +152,37 @@ source's claim cannot be mistaken for this survey's synthesis.
 - **Caveats:** The scheme was applied single-pass from truncated
   abstracts, and full-text notes disagree with abstract-level facets
   for 9 of 31 deep reads (manuscript, Limitations).
+
+### C06 — The field's genre nouns are contested; its stage names are not
+
+- **Status:** supported
+- **Statement:** Across the deep reads and the method canon the field
+  runs at least four umbrella nouns (evidence synthesis, knowledge
+  synthesis, secondary studies, systematic literature studies) and six
+  genre nouns for its own products, and its stage models range from
+  four phases to twelve steps — while the shared stages are named
+  recognizably alike. The one genuine stage-name split is at
+  appraisal, where quality assessment, risk of bias, and
+  appraisal-instrument scoring name three overlapping tasks. The
+  earlier framing of a medicine-versus-software-engineering stage
+  vocabulary split is not supported: both communities use screening
+  and selection, and no live extraction-versus-collection dispute
+  appears in the selected evidence.
+- **Scope:** The 31 deep reads plus the four method-canon library
+  pages, read off titles, abstracts, and note prose — not a term
+  frequency study over full texts. "The selected notes do not use X"
+  is a claim about the notes, not about the papers.
+- **Closest established:** Petersen's mapping-study paper argues the
+  genre boundary against Kitchenham's guidelines directly; no selected
+  source compares the systematic map with the scoping review, which is
+  the boundary this survey's own genre sits on.
+- **Assessment:** Supported for the genre and granularity strands,
+  which are checkable per source. The negative finding — no
+  community stage-name split — is the stronger contribution here,
+  because it retracts a claim the manuscript previously made without
+  citation.
+- **Caveats:** Software-engineering vocabulary claims rest on a small
+  deep-read stratum (23 SE rows in a 776-row map). Five deep reads are
+  abstract-only and one was reconstructed secondhand. The one measured
+  community difference in the set is metric vocabulary, not stage
+  vocabulary.

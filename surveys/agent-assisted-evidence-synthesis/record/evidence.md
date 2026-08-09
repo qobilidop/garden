@@ -216,3 +216,74 @@ next evidence touch).
 - **Manuscript:** sec-rq4
 - **Scope:** Title-only screening for SE scoping reviews, open-weight versus proprietary.
 - **Caveat:** Abstract-only — no accuracy or agreement numbers can be extracted; a directional model-behavior contrast awaiting full text.
+
+### E021
+
+- **Finding:** One tool assessed against Cochrane human risk-of-bias judgments on 190 nursing trials agreed at Cohen's kappa 0.60 (allocation concealment), 0.52 (randomization), 0.43 (blinding of personnel), and 0.04 — near chance — for blinding of outcome assessors, with sensitivity 0.44–0.88, specificity 0.48–0.95, and positive predictive value 0.25–0.79 across the same four domains.
+- **Works:** hirt2021
+- **Anchors:** sources/hirt2021.md#evidence
+- **Supports:** C02
+- **Manuscript:** sec-rq2
+- **Scope:** One pre-LLM appraisal tool, one nursing-trial corpus, RoB-1 domains; a within-tool, within-corpus demonstration that stratum and metric choice change the verdict.
+- **Caveat:** Abstract-only; nursing convenience sample drawn from 23 Cochrane reviews of trials published 1958–2016; the tool is a pre-LLM classifier, so this bounds neither LLM appraisal nor current tooling.
+
+### E022
+
+- **Finding:** A registered protocol for a ChatGPT-versus-human risk-of-bias interrater pilot on 75 Cochrane trials reports no empirical results, and operationalizes independence as two different human operators each running the model rather than any model-level control.
+- **Works:** rose2025
+- **Anchors:** sources/rose2025.md#evidence;sources/rose2025.md#evidence-limits
+- **Supports:** C02,C04
+- **Manuscript:** sec-rq2
+- **Scope:** A design to watch, not a result; the only appraisal-stage independence construct stated anywhere in the deep reads.
+- **Caveat:** Protocol with no findings — citing it for any agreement figure would be an error. Its catalog row is coded `evidence: human-agree` from the abstract, describing a planned comparison; the note is authoritative and records the disagreement.
+
+### E023
+
+- **Finding:** A three-agent cross-vendor screening vote (GPT-4o Mini, Claude 3 Haiku, Gemini 1.5 Flash, adjudicated by Gemini 1.5 Pro) beat every constituent — mean average precision 0.341 against 0.271, 0.266, and 0.182, WSS@95% 0.680 — while reporting Spearman correlations of 0.48–0.56 between its agents' scores and concluding that model heterogeneity drives the gain; allowing the agents to debate raised their inter-agent correlation and lowered performance relative to independent voting.
+- **Works:** akinseloyin2026
+- **Anchors:** sources/akinseloyin2026.md#evidence;sources/akinseloyin2026.md#bearing-on-rqs
+- **Supports:** C04
+- **Manuscript:** sec-rq4
+- **Scope:** Title-abstract screening on two review corpora; the only inter-agent correlation measurement in the deep reads, and the only within-study evidence that interaction erodes ensemble diversity.
+- **Caveat:** The three agents differ in vendor, size, and training corpus simultaneously with no same-family arm, so the heterogeneity claim is correlational; a same-vendor adjudicator bias is flagged by the authors but not corrected.
+
+### E024
+
+- **Finding:** A five-model same-family BERT ensemble combined by probability sum reached F1 89.16% against a best standalone member's 88.53%, reporting no correlation, agreement, or error-overlap statistic between its members; requiring unanimity plus a probability threshold reached about 98.5% F1 and 99% recall while deciding roughly half the corpus.
+- **Works:** knafou2023
+- **Anchors:** sources/knafou2023.md#evidence
+- **Supports:** C02,C04
+- **Manuscript:** sec-rq2,sec-rq4
+- **Scope:** Screening for a living COVID-19 systematic review; a configuration documented without any independence mechanism measured, and a second instance of accuracy bought with deferred coverage.
+- **Caveat:** Same-family by construction, so it cannot speak to cross-family diversity; its margin over the best member is under one F1 point, and the bioRxiv preprint could not be re-fetched to confirm it does not differ materially.
+
+### E025
+
+- **Finding:** An international modified Delphi on living evidence synthesis (29 experts, three rounds, ≥80% consensus threshold) reached consensus on 19 of 23 statements, with the authors reporting that agreement ran lowest on the objective, actionable use of automation and digital tools and highest on general statements; its one automation statement to reach consensus is role-neutral.
+- **Works:** golob2025
+- **Anchors:** sources/golob2025.md#evidence
+- **Supports:** C03
+- **Manuscript:** sec-rq3
+- **Scope:** Living evidence synthesis in health care; the only consensus-formation exercise in the set, and the only measurement of where norm-setting itself stalls.
+- **Caveat:** medRxiv preprint, not peer reviewed. The consensus-lowest-on-automation finding rests on the authors' own characterization of their round data; the statement tables render as images and were not machine-readable.
+
+### E026
+
+- **Finding:** A reproducibility checklist for active-learning-aided reviews prescribes fifteen items splitting author pre-registration from software storage — including random seeds, labeling order, and per-iteration model identity and training-set size — motivated by the observation that storing every relevance score scales quadratically with corpus size; its only application is a worked example against one tool, which stores eleven of the fifteen.
+- **Works:** lombaers2024
+- **Anchors:** sources/lombaers2024.md#evidence
+- **Supports:** C03
+- **Manuscript:** sec-rq3
+- **Scope:** Active-learning screening tools; a reproducible-storage instrument, a different genre from the disclosure-reporting checklists.
+- **Caveat:** Unvalidated on any completed review; two of its three authors develop the tool it is checked against, making that a conformance self-check rather than field testing.
+
+### E027
+
+- **Finding:** Across the deep reads and the method canon the field uses at least four umbrella nouns for its object of study and stage models ranging from four phases to twelve steps, while naming the shared stages recognizably alike; the one genuine stage-name split is at appraisal, where quality assessment, risk-of-bias judgment, and appraisal-instrument scoring name three overlapping tasks.
+- **Works:** song2026,degen2024,fernandes2026,luo2024,woelfle2024,vandinter2021
+- **Anchors:** sources/song2026.md#evidence;sources/degen2024.md#evidence;sources/fernandes2026.md#evidence;sources/luo2024.md#evidence;sources/woelfle2024.md#evidence;sources/vandinter2021.md#evidence
+- **Supports:** C06
+- **Manuscript:** sec-taxonomy
+- **Scope:** Read off titles, abstracts, and note prose across the deep reads plus the four method-canon works (Kitchenham & Charters 2007, Petersen 2008, Wohlin 2014, PRISMA 2020), which are held as library pages rather than record notes and so are named here rather than listed as works; not a term-frequency study over full texts.
+- **Caveat:** The canon works above carry no record-note anchors, so this record binds only to the six deep reads. Software-engineering vocabulary claims rest on a 23-row stratum of a 776-row map. The negative finding — that no medicine-versus-SE stage-name split appears — is a claim about the selected notes, not about the literature.
+
