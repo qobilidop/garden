@@ -1,12 +1,18 @@
 query_id	source	theme	query	limit	active	last_reconciled	notes
 ax1	arxiv	core	"all:""systematic review"" AND all:""large language model"""	50	true	2026-08-08	
 ax2	arxiv	core	"all:""literature review"" AND all:""language model"" AND all:agent"	50	true	2026-08-08	
+ax3	arxiv	genre-gap	"all:""systematic mapping"" AND all:""language model"""	50	true		added 2026-08-09: closes review-centric vocabulary gap (retitle audit row)
 cr1	crossref	core	large language model systematic review automation	50	true	2026-08-08	
+cr2	crossref	genre-gap	living evidence synthesis language model automation	50	true		added 2026-08-09: closes review-centric vocabulary gap (retitle audit row)
 oa1	openalex	core	"large language model ""systematic review"""	50	true	2026-08-08	
 oa2	openalex	core	"large language model ""literature review"""	50	true	2026-08-08	
 oa3	openalex	core	"language model ""evidence synthesis"""	50	true	2026-08-08	
 oa4	openalex	core	"citation screening ""language model"""	50	true	2026-08-08	
 oa5	openalex	core	"data extraction ""large language model"" review"	50	true	2026-08-08	
+oa6	openalex	genre-gap	"language model ""systematic mapping"""	50	true		added 2026-08-09: closes review-centric vocabulary gap (retitle audit row)
+oa7	openalex	genre-gap	"""scoping review"" automation ""language model"""	50	true		added 2026-08-09: closes review-centric vocabulary gap (retitle audit row)
+oa8	openalex	genre-gap	"""living evidence"" ""language model"""	50	true		added 2026-08-09: closes review-centric vocabulary gap (retitle audit row)
 s21	semanticscholar	core	large language model systematic review automation	50	true	2026-08-08	
 s22	semanticscholar	core	LLM literature review screening agent	50	true	2026-08-08	
 s23	semanticscholar	core	evidence synthesis language model reliability	50	true	2026-08-08	never succeeded in the initial campaign
+s24	semanticscholar	genre-gap	scoping review automation large language model	50	true		added 2026-08-09: closes review-centric vocabulary gap (retitle audit row)
