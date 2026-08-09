@@ -7,14 +7,11 @@ language models (LLMs) and agent systems. The result is a
 fast-growing methodology literature that evaluates, systematizes, and
 regulates this automation, scattered across medicine (where evidence
 synthesis is core infrastructure), software engineering (SE, which
-imported the method), and general venues. Throughout, we use
-_secondary studies_ for systematic reviews, systematic maps, and
-related evidence syntheses, and _agent_ loosely for an LLM-based
-system acting with some autonomy inside the pipeline.
+imported the method), and general venues.
 
-This paper maps that literature. Following the systematic-map genre
-@petersen2008, it aims at classified coverage rather than pooled
-effect estimates, asking four questions:
+This paper surveys that literature as a systematic map
+@petersen2008: it aims at consistent vocabulary and classified
+coverage rather than pooled effect estimates, asking four questions:
 
 - *RQ1 (landscape):* What methods, systems, and workflows exist for
   LLM/agent assistance at each stage of secondary studies?
@@ -25,36 +22,24 @@ effect estimates, asking four questions:
 - *RQ4 (design gap):* Which designs address independence and
   ensembling across model families, and what remains open?
 
-One feature distinguishes this map from its subject matter: it was
-itself conducted by an agent fleet. Screening, verification,
-classification, and deep reading ran on language models, with a human
-approving the protocol and gating the outputs. The method is an
-instance of the thing surveyed. That cuts both ways: the campaign is
-a live data point for RQ2 and RQ4, and it inverts the role the mapped
-guidance sanctions for AI — a departure we disclose and analyze
-rather than leave implicit.
-
 The paper contributes:
 
-+ a faceted map of 672 included works (2020–2026), classified by
-  pipeline stage, contribution type, evidence type, and setting, from
-  a catalog of 1,291 candidates (@sec-rq1);
-+ a synthesis of the reliability evidence showing that measurement
-  practice, not evidence volume, is the field's weak point
-  (@sec-rq2);
-+ an analysis of the norms landscape — convergent disclosure content,
-  fragmenting instruments, lagging practice (@sec-rq3);
-+ the identification of _reviewer independence for agents_ as an
-  undefined and unmeasured concept, together with the designed
-  cross-vendor experiment it motivates (@sec-rq4); and
-+ a reflexive case study: the campaign's own execution, disclosed
-  per stage and analyzed against the norms it mapped
-  (@sec-discussion).
++ a consistent terminology and a four-dimensional taxonomy for the
+  field (@sec-taxonomy);
++ a faceted map of 672 included works (2020–2026), classified under
+  that taxonomy from a catalog of 1,291 candidates (@sec-rq1);
++ a synthesis of what the evidence shows about reliability
+  (@sec-rq2), norms (@sec-rq3), and multi-model design (@sec-rq4);
+  and
++ a curated, annotated reading list of the works that anchor the
+  field, organized by the taxonomy and maintained on the survey's
+  landing page.
 
-@sec-background positions the map against prior surveys.
-@sec-method details the protocol, funnel, and deviations. Four
-findings sections answer the RQs, @sec-discussion turns the method on
-itself, and @sec-threats states threats to validity.
+@sec-background positions the survey against prior reviews.
+@sec-taxonomy fixes terminology and the taxonomy. @sec-method
+describes how the survey was made. Four sections then answer the
+RQs, @sec-discussion collects the findings and open problems, and
+@sec-threats states limitations.
 
 = Background and Related Surveys <sec-background>
 
@@ -71,74 +56,89 @@ screening tools in medicine versus two in SE. The classic method
 canon — review guidelines @kitchenham2007, mapping-study procedure
 @petersen2008, snowballing @wohlin2014, and PRISMA 2020 reporting
 @page2021 — predates LLMs and supplies both the vocabulary of this
-map and the method now under automation pressure. Pre-LLM machine
+survey and the method now under automation pressure. Pre-LLM machine
 classifiers for screening (text mining for study identification,
 Cochrane's classifiers) enter as background through their existing
 reviews rather than re-screened primary studies.
 
 LLM-era secondary literature exists but is narrower than this map.
-@luo2024 survey potential LLM roles stage by stage as a viewpoint;
-the International Collaboration for the Automation of Systematic
-Reviews reports community progress and evaluation threads
-@oconnor2024; @song2026 inventory tools for living evidence
-synthesis; and @madeyski2025 review 29 LLM-screening evaluations with
-a methodological focus. Each covers one stage, one community, or one
-lifecycle; none spans stages, settings, and norms together, and none
-examines the agent-primary configuration this campaign embodies. To
-our knowledge this is the first secondary study of the field that is
-itself agent-conducted and discloses that execution as data.
+#cite(<luo2024>, form: "prose") survey potential LLM roles stage by
+stage as a viewpoint; the International Collaboration for the
+Automation of Systematic Reviews reports community progress and
+evaluation threads @oconnor2024; #cite(<song2026>, form: "prose")
+inventory tools for living evidence synthesis; and
+#cite(<madeyski2025>, form: "prose") review 29 LLM-screening
+evaluations with a methodological focus. Each covers one stage, one
+community, or one lifecycle; none spans stages, settings, and norms
+together under one vocabulary, which is the gap this survey fills.
 
-= Method <sec-method>
+= Terminology and Taxonomy <sec-taxonomy>
 
-Full disclosure lives in the campaign's frozen baseline record; this
-section condenses it.
+The literature's vocabulary is inconsistent across its three home
+communities; we fix the following usage for this survey.
 
-*Design.* Systematic map under a pre-registered protocol (method v0
-pinned at commit `d4a27ce`), window 2020-01-01 to 2026-08-08, English
-sources.
+*Secondary studies and stages.* A _secondary study_ is a systematic
+review, systematic map, or related evidence synthesis over primary
+studies. Its pipeline stages, in the canonical vocabulary
+@kitchenham2007 @page2021: _search_ (query design and study
+identification), _screening_ (title/abstract and full-text
+selection), _extraction_ (structured data capture from included
+studies), _appraisal_ (quality and risk-of-bias assessment),
+_synthesis_ (qualitative or quantitative aggregation), and
+_reporting_ (writing and disclosure).
 
-*Search.* 11 logged queries against OpenAlex, Crossref, Semantic
-Scholar, and arXiv paired review-side vocabulary ("systematic
-review", "literature review", "evidence synthesis", "citation
-screening", "data extraction") with model-side vocabulary ("large
-language model", LLM, agent, automation) over titles and abstracts,
-plus targeted probes for reporting guidance (PRISMA-family AI
-extensions, RAISE-type guidelines, Cochrane positions). One Semantic
-Scholar query was lost to a persistent rate limit and is logged as
-such. Yield: 419 raw candidates, 412 after arXiv–DOI deduplication.
-Exact query strings, dates, and per-query counts are in the campaign
-record (`logs/searches.tsv`).
+*Assistance configurations.* We use _LLM assistance_ for a single
+model performing a bounded task under prompting, and _agent_ loosely
+for an LLM-based system acting with some autonomy inside the
+pipeline. Multi-model designs occurring in the literature: _ensembles_
+(multiple models vote, or a union/OR rule pools their includes),
+_agreement-gated deferral_ (decisions where model and human agree are
+accepted; disagreements go to a second human), and _end-to-end
+systems_ (agentic pipelines spanning most or all stages, typically
+with task decomposition and human gates). The guidance literature
+distinguishes the AI-as-_secondary-reviewer_ role (quality-assurance
+checks on human decisions — the sanctioned configuration) from
+AI-as-_primary-reviewer_ (the model makes first-pass decisions a
+human oversees).
 
-*Selection.* Included: works — peer-reviewed or preprint — whose
-subject is methods, systems, evaluations, benchmarks, or guidance for
-automating or assisting secondary-study stages with LLMs or agents.
-Exclusion codes: E1 primary-research automation only; E2 generic
-NLP/RAG without evidence-synthesis framing; E3 opinion without
-guidance content; E4 pre-window; E5 inaccessible; E6 duplicate or
-superseded version. A `U` disposition (insufficient metadata to
-decide) was introduced during execution; 12 rows carry it in the
-final catalog.
+*Taxonomy.* The map classifies each work on four dimensions
+(@tab-scheme). The scheme was built by keywording and allowed to
+evolve during classification @petersen2008.
 
-*Screening.* Two independent agent passes per candidate on different
-model tiers and prompt frames (pass A: Haiku-class, criteria-framed;
-pass B: Sonnet-class, framed by the research questions). 417 pairwise
-decisions: binary inclusion agreement 0.971, Cohen's κ = 0.937,
-six-category exact agreement 0.835. 33 rows (disagreements,
-uncertains, single-pass) were adjudicated by the strongest tier
-(Fable-class) with persisted rationales. Wave-1 dispositions: 139
-includes.
+#figure(
+  table(
+    columns: (auto, 24em),
+    align: (left, left),
+    table.header([Dimension], [Values]),
+    [Stage], [search, screen, extract, appraise, synthesize, report;
+      _end-to-end_ for whole-pipeline systems; _meta_ for works about
+      the process or field as a whole (surveys, guidance, community
+      reports)],
+    [Contribution], [method, system/tool, evaluation/benchmark,
+      guideline/norms, position],
+    [Evidence], [human-agreement measured, benchmark-only, none],
+    [Setting], [medicine and evidence-based medicine, software
+      engineering, general],
+  ),
+  caption: [The four-dimensional classification scheme.],
+) <tab-scheme>
 
-*Snowball.* One backward+forward round from the 139 includes via
-OpenAlex @wohlin2014: 1,204 new candidates after a title-vocabulary
-pre-filter; 323 without AI-side vocabulary excluded en bloc; 881
-screened single-pass (Haiku-class); all 624 resulting
-includes/uncertains re-judged by an adversarial verification pass
-(Sonnet-class), which confirmed 533 and overturned \~79 (\~13%) — a
-measured single-pass error rate. Iteration yield did not decay;
-coverage is bounded by the one-round cap.
+= How This Survey Was Made <sec-method>
 
-*Catalog.* Final catalog: 1,291 works — 672 included, 619 excluded
-(E1: 83; E2: 484; E3: 24; E6: 16), 12 undecidable (@tab-funnel).
+The survey was compiled with LLM-agent assistance under human
+direction: agent passes performed search, screening, classification,
+and deep reading; the author set the protocol, approved the scheme,
+and gated every stage. Searches ran against OpenAlex, Crossref,
+Semantic Scholar, and arXiv (window 2020-01-01 to 2026-08-08,
+English), pairing review-side vocabulary ("systematic review",
+"evidence synthesis", "citation screening", …) with model-side
+vocabulary ("large language model", agent, automation), plus targeted
+probes for reporting guidance. Candidates were screened by two
+independent agent passes with adjudication of disagreements; one
+backward+forward snowball round @wohlin2014 followed, with a
+title-vocabulary pre-filter and a verification pass over its
+includes. All 672 includes were classified under the taxonomy of
+@sec-taxonomy. @tab-funnel summarizes the funnel.
 
 #figure(
   table(
@@ -152,35 +152,17 @@ coverage is bounded by the one-round cap.
     [Wave-2 screen + adversarial verify], [1,204], [533 includes],
     [Final catalog], [1,291], [*672 included*],
     [Facet classification], [672], [map],
-    [Deep reads (G1)], [672], [25 notes],
+    [Deep reads], [672], [25 notes],
   ),
   caption: [Identification and selection funnel.],
 ) <tab-funnel>
 
-*Classification.* All 672 includes were faceted single-pass
-(Sonnet-class) on four dimensions, built by keywording and allowed to
-evolve during extraction @petersen2008: *stage* (search, screen,
-extract, appraise, synthesize, report; _end-to-end_ for whole-pipeline
-systems; _meta_ for works about the process or field as a whole —
-surveys, guidance, community reports); *contribution* (method,
-system/tool, evaluation/benchmark, guideline/norms, position);
-*evidence* (human-agreement measured, benchmark-only, none); and
-*setting* (medicine/evidence-based medicine, SE, general). A
-judgment-graded auxiliary field (`rq_core`) varied 7–40 per 56-row
-batch across agents and is treated as a candidate-pool signal only.
-
-*Deep reads.* 25 works selected by facet-guided choice for evidence
-extraction: 20 read in full text (PDFs archived, transcripts
-retained), 5 abstract-only. Citations resting on abstract-only
-evidence carry an "abstract-only" marker. Every claim below cites its
-per-work evidence note in the campaign record.
-
-*Deviations and erratum.* Seven in-campaign deviations are logged as
-decision records — notably the snowball pre-filter, the single-pass
-snowball wave, and an autonomous browser-download escalation by three
-deep-read pipelines. A post-freeze audit found \~22 residual
-duplicate-title groups (\~26 excess rows, \~3.9% of includes) that
-key normalization missed; counts are reported as frozen.
+25 works were selected for deep reads as the map's anchors: 20 read
+in full text, 5 abstract-only. Citations resting on abstract-only
+evidence carry an "abstract-only" marker. The complete working
+record — protocol, search logs, curated catalogs, per-work evidence
+notes, and known issues — is public in the campaign record linked in
+the title note.
 
 = RQ1 — Landscape: the pre-LLM shape, with the ends filling in <sec-rq1>
 
@@ -268,7 +250,8 @@ to GPT-4 Turbo moved specificity 0.51→0.98 while sensitivity stayed
 flat (0.83→0.85, not significant) — model scale bought workload
 reduction, not evidence retention @oami2025. Across corpora,
 cross-review variance exceeds cross-model variance, and performance
-collapses exactly where human conflict rates are high @syriani2023 @huotala2025. On appraisal instruments every individual LLM scored
+collapses exactly where human conflict rates are high @syriani2023
+@huotala2025. On appraisal instruments every individual LLM scored
 below every individual human, with both degrading together as the
 instrument hardens — human inter-rater κ falls from 0.84 to 0.29
 @woelfle2024. Extraction evidence is thin: one SE proof-of-concept at
@@ -277,10 +260,9 @@ social-science inventory with no pooled benchmark @legate2024, and
 secondhand error ranges of 4–31% @gartlehner2025.
 
 *Read against human baselines.* Single human reviewers run \~87–92%
-screening sensitivity (range 42–100%; cited in
-#cite(<fagerberg2025>, form: "prose")), human extraction error
-reaches 50% of data elements (cited in
-#cite(<gartlehner2025>, form: "prose")), and the one RCT-grade
+screening sensitivity (range 42–100%; cited in Fagerberg et al.
+@fagerberg2025), human extraction error reaches 50% of data elements
+(cited in Gartlehner et al. @gartlehner2025), and the one RCT-grade
 automation study found noninferiority, not superiority, with
 inconclusive time savings @arno2022[abstract-only]. Agent evidence
 should be calibrated against these imperfect baselines, not an
@@ -352,7 +334,7 @@ unmeasured everywhere; the pre-LLM guidance thought carefully about
 _human_ reviewer independence and simply has no agent analogue
 @hamel2021. This is the map's clearest open problem.
 
-= Discussion: this campaign as an instance of its subject <sec-discussion>
+= Synthesis and Open Problems <sec-discussion>
 
 #figure(
   table(
@@ -389,77 +371,43 @@ _human_ reviewer independence and simply has no agent analogue
       independence for agents], [gap; @fagerberg2025
       @safarpour2026[abstract-only] @hamel2021],
   ),
-  caption: [Summary of findings. The full twelve-claim ledger with
+  caption: [Summary of findings. The full claim ledger with
     per-claim evidence anchors is in the campaign record.],
 ) <tab-findings>
 
-@tab-findings condenses the map's findings. The map was produced by
-the class of system it maps, so its own execution is fair evidence —
-in both directions.
+@tab-findings condenses the findings. Two cross-cutting patterns
+stand out. First, where reliability has been won, it came from
+_structure_, not from scale or redundancy: task decomposition with
+human gates in the strongest end-to-end system @huang2026,
+agreement-gated deferral in appraisal @woelfle2024, cost-weighted
+measurement in screening evaluation @madeyski2025. Second, the
+field's bottleneck is methodological rather than technical: the
+dominant failure is measuring the wrong thing (accuracy under class
+imbalance, pooled metrics, missing confusion matrices), not the
+absence of capable models.
 
-*As a data point.* Same-vendor dual-pass screening across a tier and
-prompt-frame split produced κ = 0.937 on a bounded binary task, while
-the judgment-graded classification field varied 5.7× across same-tier
-single passes — matching the literature's pattern of high agreement
-on bounded tasks and degradation with judgment load @syriani2023 @woelfle2024. The adversarial verification pass overturned \~13% of
-single-pass decisions, a measured error rate that the protocol's cost
-asymmetry (false excludes are lost; false includes get caught later)
-had wagered on.
+The open problems the map surfaces: a definition and measurement of
+reviewer _independence_ for agents (@sec-rq4); evaluated evidence for
+the thin stages — appraisal, synthesis, reporting; the SE evidence
+gap and SE's missing norms work; the near-empty living-evidence
+update tail @song2026; adoption evidence for any of the four
+competing disclosure instruments; and norms for the
+agent-as-primary-reviewer configuration, which the guidance
+literature does not yet contemplate — its sanctioned role for AI
+remains the secondary checker.
 
-*Against the mapped norms.* The convergent disclosure content of RQ3
-is implemented in the campaign's baseline record — models, pass
-structure, and deviations per stage — but this campaign inverts the
-one norm every guidance source shares. The sanctioned role is AI as
-secondary checker of human work; here the agent is the primary
-reviewer and the human is the gate. The mapped guidance has no
-published norms for that mirror image. We state it as a deliberate
-departure with compensating controls: dual passes, strongest-tier
-adjudication, adversarial verification with reported overturn rates,
-a logged deviation record, and a human freeze gate. The authorship
-convention, by contrast, is followed: the byline names the
-accountable human author, with the agent's primary contribution
-disclosed in the title note.
+= Limitations <sec-threats>
 
-*Reflexive critique.* The measurement failures RQ2 documents appear
-in our own execution. We measured agreement where it was cheapest
-(binary screening) and not where judgment lived — classification ran
-single-pass and extraction has no second pass, the precise gap the
-literature names. Key normalization bugs left \~3.9% residual
-duplicates in the include set, found only by post-freeze audit. And
-three deep-read pipelines autonomously escalated to a
-permission-gated browser fallback, a small live instance of the
-boundary problem the norms literature worries about. Each failure is
-logged as a deviation and codified as a fix in the extracted method —
-in this campaign the deviation log was itself primary data.
-
-= Threats to Validity <sec-threats>
-
-*Descriptive validity.* Screening and classification read abstracts
-truncated to 600–900 characters; facets are abstract-level and
-single-pass; the deep-read evidence notes are agent-written without a
-second extraction pass — inter-rater agreement for extraction is
-unmeasured, the exact gap the mapped literature itself names. The
-judgment-graded `rq_core` field is excluded from claims.
-
-*Theoretical validity.* Same-vendor dual screening means κ = 0.937
-may overstate independence — the axis varied was tier and prompt
-frame, not vendor or training corpus. Recall is bounded: one
-non-decayed snowball round, a title-vocabulary pre-filter that
-reintroduces the terminology dependence snowballing exists to escape
-@wohlin2014, single-pass wave-2 excludes with an unquantified
-false-exclusion rate, and \~3.9% residual duplicates in the frozen
-include set.
-
-*Generalizability.* English sources only; the evidence base is
-medicine-dominant (412 of 672), so imported thresholds and
-conventions are medicine-calibrated. 12 rows remain undecidable on
-available metadata.
-
-*Repeatability.* Scripts, catalogs, logged queries, decision records,
-and per-work evidence notes are public in the campaign record; fleet
-prompts, however, are recorded only in the session transcript, so the
-pipeline is not fully reproducible from the record alone — a fix
-adopted in the extracted method for future campaigns.
+Screening and classification read truncated abstracts (600–900
+characters); facets are abstract-level and single-pass; deep-read
+extraction had no second pass. Snowball recall is bounded by one
+non-decayed round, a title-vocabulary pre-filter that reintroduces
+the terminology dependence snowballing exists to escape @wohlin2014,
+and a single-pass second wave; a post-freeze audit found \~3.9%
+residual duplicates in the include set. Coverage is English-only and
+the evidence base is medicine-dominant (412 of 672), so imported
+thresholds are medicine-calibrated. Known issues are logged in the
+public campaign record.
 
 = Conclusion
 
@@ -469,23 +417,15 @@ stages stay thin, and the medicine–SE gap persists. The reliability
 literature's headline is methodological — the field measures the
 wrong things more often than it measures the right ones badly. The
 norms literature agrees on what to disclose and disagrees on the
-form, while practice ignores both. The open problem is independence:
-the strongest ensemble result says model-family diversity buys
-recall, yet no one can say what "independent agent reviewers" means.
+form, while practice ignores both. And the open problem at the
+frontier is independence: the strongest ensemble result says
+model-family diversity buys recall, yet no one can say what
+"independent agent reviewers" means.
 
-This map, produced agent-primary under a human gate, sits exactly on
-that frontier. Its next step is designed: a cross-vendor dual-pass
-campaign — the mirrored second-agent configuration already exists —
-with disagreement analyzed by error type, which would be among the
-first designed cross-family independence measurements in the
-literature this survey mapped.
-
-*Data availability.* The campaign record — protocol, search logs,
-curated catalogs, per-work evidence notes, syntheses, claim ledger,
-decision records, and the frozen baseline — is public at the
-repository linked in the title note. Raw search responses and
-screening worksheets are preserved in a private archive and
-summarized in the baseline.
+The map data behind this survey, the per-work evidence notes, and a
+curated reading list organized by the taxonomy of @sec-taxonomy are
+maintained on the survey's landing page and in the public campaign
+record.
 
 #bibliography(
   "references.bib",

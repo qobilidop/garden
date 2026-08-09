@@ -35,8 +35,9 @@
   checklists compete as disclosure in practice stays rare. And
   reviewer independence for agents is undefined: no work says what
   makes two agent passes independent, while the best ensemble evidence
-  suggests model-family diversity is what buys recall. The map itself
-  was conducted by an agent fleet under a human gate — the method is
-  an instance of its subject — and we analyze our own execution
-  against the norms we mapped.
+  suggests model-family diversity is what buys recall. The survey
+  distills a consistent terminology and taxonomy for the field and is
+  accompanied by a curated reading list; it was compiled with
+  LLM-agent assistance under human direction, with the full working
+  record public.
 ]
