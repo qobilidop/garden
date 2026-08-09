@@ -1,4 +1,4 @@
-#import "../style.typ": definition, theorem, proposition, proof
+#import "../../../style.typ": definition, theorem, proposition, proof
 
 = Two observer-enumeration presentations and their equivalence <sec-algorithms>
 

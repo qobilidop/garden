@@ -1,6 +1,8 @@
 // Shared manuscript style for survey papers (surveys/*/manuscript.typ).
 // Ported from the dataflow-selection-enumeration manuscript style; the
-// theorem apparatus is dropped (surveys are prose, not proofs).
+// formal-statement apparatus below serves proof-bearing surveys and is
+// target-aware — paged output styles blocks directly, HTML output
+// emits classed divs styled by site/src/styles/paper.css.
 
 #let paper(body) = {
   set page(
@@ -49,7 +51,7 @@
     #block(
       width: 100%,
       inset: (x: 1em, y: 0.65em),
-      fill: rgb("f7f9fb"),
+      fill: luma(247),
       radius: 2pt,
     )[
       #align(center)[*Abstract*]
@@ -58,4 +60,36 @@
     ]
   ]
   v(0.8em)
+}
+
+#let named-statement(kind, title, body) = {
+  let number = counter(kind)
+  number.step()
+  let head = [*#kind #context number.display()#(if title != none { [ (#title)] }).*]
+  context if target() == "html" {
+    html.elem("div", attrs: (class: "statement"))[#head #body]
+  } else {
+    block(
+      width: 100%,
+      breakable: false,
+      inset: (left: 0.8em, right: 0.8em, top: 0.55em, bottom: 0.55em),
+      above: 0.85em,
+      below: 0.85em,
+      stroke: (left: 1.4pt + luma(51)),
+      fill: luma(247),
+    )[#head #body]
+  }
+}
+
+#let definition(title, body) = named-statement("Definition", title, body)
+#let theorem(title, body) = named-statement("Theorem", title, body)
+#let lemma(title, body) = named-statement("Lemma", title, body)
+#let proposition(title, body) = named-statement("Proposition", title, body)
+#let corollary(title, body) = named-statement("Corollary", title, body)
+#let proof(body) = context if target() == "html" {
+  html.elem("div", attrs: (class: "proof"))[_Proof._ #body #sym.square]
+} else {
+  block(above: 0.45em, below: 0.8em)[
+    _Proof._ #body #h(1fr) $square$
+  ]
 }

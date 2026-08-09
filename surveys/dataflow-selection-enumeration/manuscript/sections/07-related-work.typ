@@ -16,7 +16,7 @@ taxonomy.
       columns: (1.05fr, 1.15fr, 1.2fr, 1.25fr, 1.4fr),
       align: left,
       inset: 3.5pt,
-      stroke: (x: none, y: 0.4pt + rgb("c8ced6")),
+      stroke: (x: none, y: 0.4pt + luma(200)),
       table.header(
         [*Route*], [*Discovery object*], [*Natural output*],
         [*Route to target*], [*Principal boundary*],

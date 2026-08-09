@@ -29,7 +29,7 @@ outer and inner sites. @tab-motivating lists the three observations.
     columns: (1.8fr, 1.1fr, 0.8fr),
     align: (left, left, left),
     inset: 5pt,
-    stroke: (x: none, y: 0.45pt + rgb("c8ced6")),
+    stroke: (x: none, y: 0.45pt + luma(200)),
     table.header(
       [*Observation*], [*Exact guard*], [*Residual*],
     ),

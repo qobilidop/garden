@@ -11,4 +11,8 @@
 #include "sections/08-discussion.typ"
 #include "sections/09-conclusion.typ"
 
-#bibliography("references.bib", style: "ieee")
+#bibliography(
+  "references.bib",
+  style: "apa",
+  title: [References],
+)

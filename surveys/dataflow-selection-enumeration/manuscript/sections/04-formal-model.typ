@@ -1,4 +1,4 @@
-#import "../style.typ": definition, theorem, proposition, proof
+#import "../../../style.typ": definition, theorem, proposition, proof
 
 = Unified terminology and theoretical framework <sec-formal-model>
 
