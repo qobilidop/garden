@@ -9,7 +9,7 @@ q = select(p, 7, 7)
 return q
 \`\`\`
 
-Both inputs produce value \(7\), but the proposed structural observer records
+Both inputs produce value \(7\), but the target structural observer records
 different outcomes of \(q\). Therefore the semantics is not fully abstract for
 ordinary value contexts and is not invariant under rewriting the graph to
 \`return 7\`.

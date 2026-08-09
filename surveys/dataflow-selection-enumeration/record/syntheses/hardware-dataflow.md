@@ -99,7 +99,7 @@ Singh and Theobald generalize wrappers to flexible channels, arbitrary network
 topologies, and multiple clocks; Suhaib et al. validate protocol families by
 latency equivalence; Kapoor gives a process-algebraic model; and Cao et al. prove
 that buffered backpressure preserves token sequences while breaking long
-combinational paths. The proposed observer therefore cannot be justified by
+combinational paths. The target observer therefore cannot be justified by
 claiming a first formal bridge, implementation, or validation framework between
 dataflow and hardware; its scope is the narrower input-indexed requested-site
 map.

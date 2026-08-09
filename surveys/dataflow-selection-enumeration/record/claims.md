@@ -125,7 +125,7 @@ source's claim cannot be mistaken for this survey's synthesis.
 - **Statement:** A deterministic root-to-leaf path is an input-relative partial
   map from encountered tests to outcomes, its branch conjunction is a disjoint
   leaf guard, and its leaf carries a result. Totalizing graph-site
-  non-observation turns the proposed observer into an ordinary finite-range
+  non-observation turns the target observer into an ordinary finite-range
   function. For finitely encoded inputs it is compilable as an MTBDD or ADD.
 - **Prior frontier:** Bryant proves canonicity of reduced ordered Boolean
   function graphs for a fixed order; Bahar et al. extend the terminal carrier

@@ -283,5 +283,6 @@ language with a primitive that directly reads site events is likewise obtained
 by construction.
 
 No non-tautological minimality, free, or full-abstraction theorem beyond
-selective-functor interpretation is currently established. This is the main
-failed condition for the original-paper route.
+selective-functor interpretation is currently established; the
+manuscript accordingly presents the selective interpretation as an
+organizing derivation only (F05).
