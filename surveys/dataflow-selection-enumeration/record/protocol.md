@@ -59,8 +59,7 @@ silently changing an executed search.
 | `sources/` | Primary-work extraction and pinpoint evidence | Required for deep reads |
 | `syntheses/` | Current cross-paper understanding | Revise after each reading batch |
 | `evidence-matrix.tsv` | Synthesis/manuscript claim-to-source traceability | Revise with claims or manuscript evidence |
-| `updates/state.tsv` | Completion state of recurring searches | Advance only after reconciliation |
-| `updates/tasks.tsv` | Periodic non-query maintenance | Advance only after the task is complete |
+| `updates/state.tsv` | Completion state of registered searches | Advance only after reconciliation |
 
 Search indexes are discovery aids. Primary papers, official proceedings,
 publisher records, or stable author-hosted versions control technical and

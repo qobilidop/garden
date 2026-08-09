@@ -57,12 +57,6 @@ UPDATE_QUERY_HEADER = [
     "notes",
 ]
 UPDATE_STATE_HEADER = ["query_id", "last_completed", "outcome", "notes"]
-UPDATE_TASK_HEADER = [
-    "task_id",
-    "last_completed",
-    "outcome",
-    "notes",
-]
 BACKWARD_DEFECT_MARKERS = (
     "unresolved",
     "index omits",
@@ -506,25 +500,6 @@ def main() -> int:
         extra = sorted(state_ids - query_ids)
         detail = missing[0] if missing else extra[0]
         fail(f"update query/state ID mismatch: {detail}")
-
-    header, task_rows = rows(SURVEY / "updates" / "tasks.tsv")
-    if header != UPDATE_TASK_HEADER:
-        fail(f"unexpected update-task header: {header}")
-    task_ids: set[str] = set()
-    for number, row in enumerate(task_rows, start=2):
-        identifier = row["task_id"]
-        if not identifier or identifier in task_ids:
-            fail(f"duplicate or empty update task ID on row {number}")
-        task_ids.add(identifier)
-        try:
-            date.fromisoformat(row["last_completed"])
-        except ValueError:
-            fail(
-                f"invalid update task completion date on row {number}: "
-                f"{row['last_completed']}"
-            )
-        if not row["outcome"].strip():
-            fail(f"empty update task outcome on row {number}")
 
     return 0
 

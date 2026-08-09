@@ -51,8 +51,8 @@ does not attempt.
   connect the surveyed themes.
 - `evidence-matrix.tsv` — binds synthesis claims and manuscript
   section labels to source-note anchors.
-- `updates/` — recurring searches (`queries.tsv`), their reconciled
-  state (`state.tsv`), and periodic tasks (`tasks.tsv`).
+- `updates/` — registered queries (`queries.tsv`) and their
+  reconciled state (`state.tsv`).
 - `scripts/check.py` — the record validator; the shared fetchers,
   snowball, and update tools live in `skills/run-survey/scripts/`.
 
@@ -119,19 +119,30 @@ the relevant update state advance.
 
 ## To update
 
-Registered queries live in `updates/queries.tsv`; their
-last fully reconciled executions in `updates/state.tsv`; periodic
-citation maintenance in `updates/tasks.tsv`. Stage due searches with
+Registered queries live in `updates/queries.tsv`; their last fully
+reconciled executions in `updates/state.tsv`. Updates are staged on
+demand; any plausible close competitor or new vocabulary theme
+starts one immediately.
 
-```console
-./dev.sh python3 skills/run-survey/scripts/update.py --record surveys/dataflow-selection-enumeration/record fetch --all
-```
+1. Stage result sets into `.scratch/` (never committed; the tool
+   writes a manifest and spaces consecutive arXiv requests):
 
-Registered runs use an inclusive interval from the last reconciled
-date through the batch date, with source-appropriate relevance or
-recency ordering. A promoted update commits the frozen result set,
-one matching audited-log row, catalog dispositions, and all affected
-source notes, syntheses, evidence rows, and manuscript changes; do
-not advance `updates/state.tsv` before that reconciliation. Updates
-are staged on demand; any plausible close competitor or new
-vocabulary theme starts one immediately.
+   ```console
+   ./dev.sh python3 skills/run-survey/scripts/update.py --record surveys/dataflow-selection-enumeration/record fetch --all
+   ```
+
+   Each registered search covers the inclusive interval from its
+   last reconciled date through the batch date; the repeated
+   boundary date catches delayed deposits and is absorbed by
+   deduplication.
+2. For every staged row: match DOI, stable identifier, and
+   normalized title against `catalog.tsv`; assign a disposition;
+   read the primary source when title and abstract leave relevance
+   plausible; record newly exposed terminology or citation seeds;
+   complete any source note the resulting status requires.
+3. Append one matching log row per executed query, update the
+   catalog, and reconcile syntheses, claims, terminology, formal
+   material, the evidence matrix, and affected manuscript text;
+   discard the staged result set.
+4. Only then advance `updates/state.tsv` to the batch date and run
+   `scripts/check.py`.

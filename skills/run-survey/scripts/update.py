@@ -43,7 +43,6 @@ def records() -> tuple[list[dict[str, str]], dict[str, dict[str, str]]]:
 def status(args: argparse.Namespace) -> int:
     queries, state = records()
     active = [query for query in queries if query["active"] == "true"]
-    tasks = read_tsv(UPDATES / "tasks.tsv")
     today = parse_date(args.as_of)
     last_reconciled = min(
         (parse_date(state[q["query_id"]]["last_completed"]) for q in active),
@@ -85,7 +84,6 @@ def status(args: argparse.Namespace) -> int:
     print(f"Registered searches: {len(active)} active"
           + (f", last fully reconciled {last_reconciled.isoformat()}"
              if last_reconciled else ""))
-    print(f"Periodic tasks: {len(tasks)} tracked")
     print("Updates are staged on demand: fetch --all or --query-id ID")
     return 0
 
