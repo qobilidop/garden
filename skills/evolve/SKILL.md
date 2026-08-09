@@ -41,14 +41,11 @@ not one).
 
 ## 3. Route each lesson to its locus
 
-- **Skill** (`skills/<name>/`, symlinked from both `.claude/skills/` and
-  `.agents/skills/`): a procedure that will be repeated. Name it by
-  purpose, for retrieval. Follow the Agent Skills format (agentskills.io):
-  the description alone does the triggering (what + when + boundary
-  against neighbors), and the body holds only what an agent would get
-  wrong unaided. Directory placement per the spec: templates and
-  boilerplate the agent instantiates → `assets/`; documentation the
-  agent reads → `references/`; executables → `scripts/`.
+- **Skill** (`skills/<name>/`): a procedure that will be repeated —
+  the routing test is recurrence plus a one-sentence boundary against
+  existing skills. Build or revise it with the create-skill skill,
+  which owns the how (format, description, disclosure, deployment,
+  checks).
 - **Rule**: a standing constraint on behavior. Project-scoped →
   `AGENTS.md` here; global → the mirrored configs for *both* agents
   (`config/claude/user-CLAUDE.md`, `config/codex/user-AGENTS.md`),
