@@ -4,6 +4,7 @@ FROM ubuntu:24.04
 RUN apt-get update \
  && apt-get install -y --no-install-recommends \
       git curl ca-certificates unzip xz-utils python3 python3-venv \
+      fonts-libertinus fonts-dejavu \
  && rm -rf /var/lib/apt/lists/* \
  && curl -fsSL https://rclone.org/install.sh | bash
 
@@ -19,6 +20,13 @@ ENV NODE_VERSION=24.19.0
 RUN A="$TARGETARCH"; [ "$A" = "amd64" ] && A=x64; \
     curl -fsSL "https://nodejs.org/dist/v${NODE_VERSION}/node-v${NODE_VERSION}-linux-${A}.tar.xz" \
     | tar -xJ -C /usr/local --strip-components=1
+
+# Typst for survey manuscripts (surveys/*/manuscript.typ -> PDF + HTML),
+# pinned; the HTML target is experimental (--features html) as of 0.15.
+ENV TYPST_VERSION=0.15.1
+RUN A="$TARGETARCH"; [ "$A" = "amd64" ] && A=x86_64; [ "$A" = "arm64" ] && A=aarch64; \
+    curl -fsSL "https://github.com/typst/typst/releases/download/v${TYPST_VERSION}/typst-${A}-unknown-linux-musl.tar.xz" \
+    | tar -xJ -C /usr/local/bin --strip-components=1 "typst-${A}-unknown-linux-musl/typst"
 
 # Python tools live in one venv (avoids PEP 668 fights with the system python).
 RUN python3 -m venv /opt/venv \
