@@ -39,8 +39,9 @@ covered symbolic execution and guarded values; projected and partial model
 enumeration; decision structures; functional-logic and demand-guided search;
 dataflow and hardware semantics; geometric, neural, and parametric regions;
 and observer-relative state or search reduction. Exact database queries,
-result depths, dates, source-dependent metadata, and frozen screened snapshots
-are retained in the repository. Printed primary bibliographies control
+result depths, dates, and source-dependent metadata are retained in
+the audited log; result sets are staged and discarded after
+reconciliation, so the log row is the audit unit. Printed primary bibliographies control
 backward snowballing when citation indexes are incomplete or incorrect.
 
 Screening assigns one current catalog disposition. At the archived snapshot,
@@ -74,20 +75,21 @@ family nor a plausible close competitor. This is _bounded mapping closure_
 relative to the recorded sources, rankings, query depths, and date—not a claim
 that no additional work exists.
 
-The repository treats the snapshot as an updateable baseline. Registered
-Crossref and arXiv searches recur every 90 days, critical-source forward
-neighborhoods are refreshed at least annually, and a new mechanism or plausible
-direct competitor triggers an immediate reopening. A coverage date advances
+The repository treats the snapshot as an updateable baseline. The
+registered searches and their reconciliation state make staging an
+update a single command; no update schedule is promised, updates run
+on demand, and a new mechanism or plausible direct competitor
+triggers an immediate reopening. A coverage date advances
 only after catalog dispositions, source notes, thematic syntheses, evidence
 rows, and affected manuscript claims have been reconciled. The current search
 record was last reconciled on 4 August 2026.
 
-The accompanying repository contains the protocol, query registry, catalog,
-audited search log, frozen screening snapshots, primary-source notes, thematic
+The accompanying repository contains the protocol, query registry,
+catalog, audited search log, primary-source notes, thematic
 syntheses, evidence matrix, claim ledger, and manuscript checks. Downloaded
 papers, transient API responses, and search-engine exports are deliberately
 excluded. The current manuscript and repository are linked from
-#link("https://qobilidop.github.io/dataflow-selection-enumeration/")[the paper website].
+#link("https://qobilidop.github.io/sys0/surveys/dataflow-selection-enumeration/")[the survey's landing page].
 
 == Validity threats and AI assistance
 

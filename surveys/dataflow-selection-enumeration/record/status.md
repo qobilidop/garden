@@ -1,7 +1,8 @@
 # Current survey status
 
 - **Coverage through:** 2026-08-04
-- **Baseline:** closed under the recorded initial mapping protocol
+- **Baseline:** initial campaign closed 2026-08-04 under bounded
+  mapping closure (narrative in manuscript §4; history in git)
 - **Maintenance state:** reconciled through the coverage date; updates on demand
 - **Manuscript:** complete draft under continuing human review
 - **Authorship:** Bili Dong, independent researcher

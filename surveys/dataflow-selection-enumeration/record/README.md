@@ -21,14 +21,13 @@ manuscript citation anchors.
 ## Shape
 
 This record deliberately carries more than the minimal survey-record
-shape (README, searches, included/excluded, sources): `catalog.tsv`
-is a four-state disposition ledger (candidate/screened/deep-read/
-excluded) because a living survey holds candidates the binary
-include/exclude split cannot represent; the method lives in
-`protocol.md`/`methodology.md` rather than only here because tooling
-parses it (`check.py` reads the research questions from
-`protocol.md`); and the synthesis layers (`claims.md`,
-`evidence-matrix.tsv`, `syntheses/`, `formal-synthesis/`) bind
+shape: `catalog.tsv` is a four-state disposition ledger
+(candidate/screened/deep-read/excluded) because discovery outran
+adjudication and candidates are retained without a promise to read
+them; the protocol is a separate document (`protocol.md`) rather
+than README sections because tooling parses it (`check.py` reads the
+research questions there); and the evidence matrix plus the
+unified-theory workspace (`syntheses/unified-theory/`) bind
 manuscript claims to evidence at a granularity the minimal shape
 does not attempt.
 
@@ -36,9 +35,7 @@ does not attempt.
 
 - `protocol.md` — stable scope, selection rules, exclusion codes, and
   maintenance lifecycle.
-- `methodology.md` — mapping methodology and validity record.
 - `status.md` — current human-readable coverage and manuscript state.
-- `baseline.md` — the first closed mapping snapshot (2026-08-04).
 - `catalog.tsv` — disposition ledger for discovered works.
 - `claims.md` — contribution and qualification ledger.
 - `log.tsv` — the append-only event log: audited `search`,
