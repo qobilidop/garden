@@ -46,6 +46,9 @@ version and is marked as such in the record. That registrar defect
 affecting a quarter of the backward chases is itself a finding about
 index reliability, not a one-off.
 
+@tab-funnel gives both waves' funnels side by side, the campaign's as
+retained aggregates and the update's at candidate level.
+
 Screening followed the protocol's dual-pass design: an
 eligibility-first pass and an exclusion-first pass on different model
 tiers, disagreements adjudicated by a stronger model, the human gate

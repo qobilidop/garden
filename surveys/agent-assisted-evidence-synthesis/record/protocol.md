@@ -124,6 +124,31 @@ parked rows, merges, screened rows, and includes in the update
 ledger. Run one backward+forward round from new includes and a
 verification pass over everything it screens in.
 
+When a citation index returns a bibliography that is empty,
+truncated, or largely unresolved, do not accept it as the chase.
+Re-chase from the primary version's publisher-deposited reference
+list (`fetch_crossref_references.py`) and mark the log row
+`primary-complete`. Three of twelve backward chases in the
+2026-08-09 batch needed this. Such a reference list keys its rows by
+citing-position (`<doi>_b7`), not by identifier: those values look
+like DOIs and must never be used as keys — take the separate `doi`
+column, and fall back to the `t:` title slug when it is empty.
+
+Candidates reaching screening should carry the fullest metadata
+available: fill empty abstracts from OpenAlex, then Crossref, before
+the screening passes run, and never synthesize or paraphrase an
+abstract that neither registrar supplies. A row whose abstract
+cannot be filled is judged on title, venue, and year, and prefers
+`parked` to `E5-insufficient-metadata` — E5 asserts that landing-page
+and identifier checks were performed and still left the subject
+undecidable.
+
+A candidate whose publication year is verifiable and before the
+window start takes `E4-before-window` mechanically, without a
+screening pass. This is a shortcut on the dual-pass rule, allowed
+only when the year is established from registrar metadata; it is
+recorded per batch in an audit row naming the count.
+
 The initial wave used the same title vocabulary, but its exact
 model-side list was not retained; its 323 uncataloged prefilter
 rejects and other phase quantities are historical aggregates, not

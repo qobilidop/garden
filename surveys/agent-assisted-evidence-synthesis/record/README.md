@@ -34,10 +34,10 @@ provenance was not kept), so the wave table here — not the log alone
 — is the provenance for funnel changes. Evidence registration is
 partial by declaration: `evidence.md` covers the findings-bearing
 citations; registering the remainder is deferred in `status.md`.
-Two further legacy deviations from the current shared shape are
-declared as deferred work in `status.md` — no work yet designated
-`critical` in the `priority` column, and count-only historical log
-rows — each with its convergence rule there.
+One legacy deviation from the current shared shape remains, declared
+as deferred work in `status.md`: the campaign's historical log rows
+carry counts only, without per-row decided keys. Update rows from
+2026-08-09 onward carry them.
 
 ## Files
 
@@ -58,8 +58,12 @@ are in `protocol.md`.
   absorbed into the protocol's final state, the `log.tsv` audit
   rows, and the manuscript disclosures.
 - `catalog.tsv` — one current row per surfaced work: `key`, `status`
-  (`included` — abstract-level primary-focus facets; `excluded` —
-  coded screening memory; `parked` — re-screened each update), `code`
+  on a single scrutiny scale — `included` (abstract-level
+  primary-focus facets), `deep-read` (included *and* carrying an
+  evidence note in `sources/`; a strictly higher scrutiny level, so
+  headline "included" counts are `included + deep-read`), `excluded`
+  (coded screening memory), and `parked` (re-screened each update) —
+  then `code`
   (slugged exclusion code, excluded rows only), `year`, `title`,
   the taxonomy facets `stage`/`contribution`/`evidence`/`setting`
   (included rows only), and `priority` (`critical` marks the
@@ -123,7 +127,7 @@ provenance for future funnel changes.
 
 | Date | Prior cutoff | New cutoff | Qids succeeded / failed | Raw results | Unique new | Prefilter rejects | Screened | Parked | Aliases | Included | Human gate |
 |---|---|---|---|---:|---:|---:|---:|---:|---:|---:|---|
-| 2026-08-09 | 2026-08-08 | 2026-08-09 | 17/1 (+22 chases, 2 primary-complete) | 1,644 | 673 | 566 | 585 | 75 standing | 13 resolved, 13 dropped | +131 (777 total) | Bili, 2026-08-09 |
+| 2026-08-09 | 2026-08-08 | 2026-08-09 | 17/1 (+24 chases, 3 primary-complete) | 1,708 | 683 | 596 | 585 | 76 standing | 13 resolved, 13 dropped | +130 (776 total) | Bili, 2026-08-09 |
 
 Column semantics: Raw results counts all staged rows (query, chase,
 and primary-complete files); Unique new is the catalog row delta;
@@ -131,12 +135,18 @@ Prefilter rejects are snowball vocabulary rejects (title + model);
 Screened counts dual-pass decisions; Parked is the standing total
 after the batch; Aliases counts version pairs resolved to E6 plus
 unresolved-reference artifacts dropped; Included is the include-level
-delta (batch include decisions minus rediscoveries).
+delta (batch include decisions, minus one rediscovery and one work
+later reclassified out by deep-read triage). The chase and
+primary-complete counts include the pair run when akinseloyin2026 was
+designated critical after the main round, which is why the row's
+totals exceed the figures in any single reconciliation step.
 
-The 13 `search` rows in `log.tsv` are 11 logical qids plus retries:
-initial qid `s22` failed once and then succeeded; `s23` failed twice
-and never succeeded; the successful initial requests returned 471
-result rows.
+The initial campaign's 13 `search` rows in `log.tsv` are 11 logical
+qids plus retries: qid `s22` failed once and then succeeded; `s23`
+failed twice and never succeeded; the successful initial requests
+returned 471 result rows. The inverse held in the 2026-08-09 update,
+where `s23` succeeded and `s22` failed terminally after six attempts
+across two spaced rounds.
 
 ## Bibliography and build
 
@@ -158,8 +168,18 @@ and `.pdf`.
 ## To update
 
 1. Choose the new cutoff; run the search and snowball rules in
-   `protocol.md` (stage with the shared update tool); append request
-   attempts to the log and the update-ledger row above.
+   `protocol.md`. Registered searches stage with
+   `update.py fetch --all` (add `--initial-from-date` for any query
+   whose `last_reconciled` is empty). Citation chases have no
+   orchestrator: invoke `search_openalex.py snowball <seed>
+   <direction>` once per seed and direction, and
+   `fetch_crossref_references.py` for a defective bibliography.
+   Everything downstream of the raw staged file — dedup against the
+   catalog, the vocabulary pre-filter, abstract enrichment — is
+   currently unscripted in the shared tooling and was done with
+   batch-local scripts; expect to rebuild them from the protocol's
+   rules. Append request attempts to the log and the update-ledger
+   row above.
 2. Deduplicate, screen, adjudicate, and human-gate per the protocol;
    update the catalog and re-screen all parked rows.
 3. Apply the taxonomy rules; deep-read new anchor candidates,
@@ -178,5 +198,12 @@ and `.pdf`.
    Check citation closure, HTML anchors, PDF/HTML links, and
    `git diff --check`.
 8. Bump the search window and draft date only after all checks pass;
-   log the human gate and describe any material method change in the
-   protocol.
+   log the human gate and describe any material method change per
+   the protocol. The gate's own working artifacts — the disagreement
+   set, the parked list, the sampled agreements shown to the human —
+   are staged in scratch and are *not* retained: the ledger keeps the
+   attestation (who gated, on what date, over which counts), and the
+   decisions themselves are recoverable from the catalog and log.
+   This is a deliberate bound on the record, consistent with
+   discarding result sets, and it means a future auditor can check
+   what was decided but not what was displayed.

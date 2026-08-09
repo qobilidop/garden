@@ -110,7 +110,13 @@ Shape note, as intent rather than drift.
   replacement, `reclassified-key:` when later evidence (a deep read,
   a re-screen) overturns what an earlier wave decided. A search or
   snowball row keeps the decision it recorded at the time; only the
-  audit row carries the correction. Result sets are staged in scratch during
+  audit row carries the correction. Two further `notes` markers are
+  engine- or convention-level and belong in the same grammar: a
+  snowball row names its seed as `seed-key:<catalog-key>` (the engine
+  requires it on any backward row marked defective, and uses it to
+  bind chases to their critical work), and any row may list
+  undecided rows as `parked-keys:<key>,<key>`. Semicolons separate
+  markers; commas separate keys within one. Result sets are staged in scratch during
   screening and discarded after reconciliation — the log row (date,
   verbatim query, counts, decided keys, notes) is the audit unit;
   the bar is traceability, and result sets are re-derivable by
