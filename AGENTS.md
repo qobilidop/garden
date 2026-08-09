@@ -55,7 +55,7 @@
   writes nothing back; presentation needs never reshape note
   conventions. A survey groups as `index.md` (landing page, the
   citekey/backlink surface) + `record/` (the minimal resumable state:
-  criteria, searches, catalog, evidence notes) + `manuscript/` (Typst
+  method, searches, catalog, evidence notes) + `manuscript/` (Typst
   paper: paged + HTML wrappers over shared `content.typ`/`meta.typ`,
   standalone by design), compiled into `site/public/` by
   `site/scripts/build-manuscripts.py` (typst pinned in the dev

@@ -4,8 +4,8 @@ The minimal resumable state of this survey. An agent redoing or
 updating it needs this directory, the
 [manuscript](https://qobilidop.github.io/sys0/surveys/agent-assisted-review-methodology/manuscript.html)
 (taxonomy in §3; method sketch in §4), and the repo's build toolchain
-(see "To rebuild"). Process history lives in git and the private
-shadow mirror; none of it is needed to resume.
+(AGENTS.md and the run-survey skill). Process history lives in git
+and the private shadow mirror; none of it is needed to resume.
 
 - `searches.tsv` — the queries run, verbatim, with dates and yields
 - `included.tsv` — the 672 included works with taxonomy facets
@@ -34,11 +34,11 @@ shadow mirror; none of it is needed to resume.
 
 Each query ran with a 50-result cap, relevance-sorted; yields overlap
 across queries, and the harvest deduplicates rows by normalized key
-(v1: 471 result rows → 419 unique records → 412 after arXiv–DOI
-merging). In `searches.tsv`, a duplicate qid on the same date is a
-retry and `FAILED:<reason>` rows record failed attempts (v1: qid s23
-never succeeded). A query deviating from its source template logs
-its full request URL in the query column.
+(initial wave: 471 result rows → 419 unique records → 412 after
+arXiv–DOI merging). In `searches.tsv`, a duplicate qid on the same
+date is a retry and `FAILED:<reason>` rows record failed attempts
+(initial wave: qid s23 never succeeded). A query deviating from its
+source template logs its full request URL in the query column.
 
 - OpenAlex: `api.openalex.org/works?filter=title_and_abstract.search:<q>,from_publication_date:<start>&per-page=50&sort=relevance_score:desc`
 - Semantic Scholar: `api.semanticscholar.org/graph/v1/paper/search?query=<q>&year=<startyear>-&limit=50&fields=title,year,venue,abstract,externalIds,url`
@@ -47,14 +47,15 @@ its full request URL in the query column.
 
 ## Snowball
 
-The search seeds a snowball round that contributed most of v1's
-includes: from each include, fetch references and citing works via
-OpenAlex; keep new candidates (deduplicated against the catalog)
+The search seeds a snowball round that contributed most of the
+initial wave's includes: from each include, fetch references and
+citing works via OpenAlex; keep new candidates (deduplicated against
+the catalog)
 whose titles match, case-insensitively,
 `review|screening|synthesis|extraction|meta-analys|survey|systematic|evidence|literature|prisma|appraisal`;
-pre-screen out candidates with no model-side vocabulary — v1's
-exact list survived only in the session transcript; the go-forward
-rule, set at v1.1, is the case-insensitive regex
+pre-screen out candidates with no model-side vocabulary — the
+initial wave's exact list survived only in the session transcript;
+the go-forward rule, set 2026-08-08, is the case-insensitive regex
 `large language model|language model|\bllm|gpt|agent|automat|artificial intelligence|machine learning|deep learning|neural`
 — then screen the rest and run a verification pass over everything
 screened in.
@@ -72,7 +73,8 @@ screened in.
   - E6 — duplicate or superseded version
   - U — undecidable on available metadata; parked in `excluded.tsv`
     as screening memory and re-screened at each update
-- **E2 boundary examples** (78% of v1 exclusions rode on this line):
+- **E2 boundary examples** (78% of initial-wave exclusions rode on
+  this line):
   an LLM answering questions over medical literature with no review
   framing is E2; prompt techniques for summarizing papers outside any
   secondary-study workflow are E2; an LLM screening titles/abstracts
@@ -104,8 +106,9 @@ screened in.
   that anchor a taxonomy section — the strongest evidence, the
   defining system, or the guidance of record — each with a one-line
   annotation and a link to its evidence note in `sources/`. Deep-read
-  does not imply listed (v1 read 25, listed 23); sections stay small
-  (two to six rows in v1), and a new anchor joins or displaces.
+  does not imply listed (the initial wave read 25, listed 23);
+  sections stay small (two to six rows initially), and a new anchor
+  joins or displaces.
 - Evidence notes in `sources/` use the library note frontmatter
   (citekey, work metadata, `synthesis:` one-liner) with an extraction
   body (`## Evidence`, anchored to sections/tables of the work).
@@ -139,14 +142,3 @@ screened in.
    identifiers to `../manuscript/references.tsv`; bump the draft
    date in `../manuscript/meta.typ`.
 7. Bump the window date and work counts here and in `../index.md`.
-
-## To rebuild
-
-`site/scripts/build-manuscripts.py` (repo root) compiles
-`../manuscript/manuscript.typ` → `manuscript.pdf` and
-`../manuscript/manuscript-html.typ` → `manuscript.html` into
-`site/public/surveys/<slug>/`; run it as
-`./dev.sh python3 site/scripts/build-manuscripts.py` (typst is
-pinned in the dev image). `manuscript.typ` imports the shared
-`surveys/style.typ`, outside this directory. Pushing to `main`
-rebuilds and deploys the same way in CI.

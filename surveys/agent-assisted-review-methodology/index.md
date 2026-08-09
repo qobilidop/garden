@@ -3,14 +3,16 @@
 A systematic map of the LLM-era literature on automating systematic
 reviews: 1,291 works cataloged, 672 included and classified under a
 four-dimensional taxonomy, with the works that anchor the field
-curated into the reading list below. Draft v1, 2026-08-08.
+curated into the reading list below.
 
 **Read:** [manuscript (HTML)](manuscript.html) ·
 [manuscript (PDF)](manuscript.pdf)
 
 **Survey record:**
-[criteria, searches, catalog, evidence notes](https://github.com/qobilidop/sys0/tree/main/surveys/agent-assisted-review-methodology/record)
-— searched through 2026-08-08. Topic context: [[survey-methodology]].
+[method, searches, catalog, evidence notes](https://github.com/qobilidop/sys0/tree/main/surveys/agent-assisted-review-methodology/record)
+— searched through 2026-08-08.
+
+**Topic context:** [[survey-methodology]]
 
 ## Reading list
 

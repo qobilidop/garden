@@ -89,8 +89,8 @@ passes is an unsolved instrumentation gap.
 ## The agent-era frontier
 
 The canon predates agents, and the first sys0 survey
-([[agent-assisted-review-methodology]], draft v1, 2026-08-08) mapped
-what has grown in the gap: 672 works on AI-assisted evidence
+([[agent-assisted-review-methodology]]) mapped what has grown in the
+gap: 672 works on AI-assisted evidence
 synthesis, 2020–2026. Read against this page's theses, the
 campaign's findings rhyme with the canon rather than replacing it —
 the LLM-era stage skew reproduces the pre-LLM one (screening dominant,

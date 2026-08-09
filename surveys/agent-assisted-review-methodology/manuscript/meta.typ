@@ -15,7 +15,7 @@
   stage, and takes responsibility for the content; the working record
   is public in the repository.
 ]
-#let draft = "Draft v1 · 2026-08-08"
+#let draft = "Draft 2026-08-08"
 #let landing = "https://qobilidop.github.io/sys0/surveys/agent-assisted-review-methodology/"
 #let record = "https://github.com/qobilidop/sys0/tree/main/surveys/agent-assisted-review-methodology"
 
