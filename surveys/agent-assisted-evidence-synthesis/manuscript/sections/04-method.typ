@@ -57,8 +57,8 @@ agreements and 219 went to adjudication; six further rows from a late
 chase were screened and verified separately, for 585 in all, of which
 132 were included. On the 66 substantive disagreements — one pass
 including where the other excluded — the adjudicator sided with the
-eligibility-first pass 54 times and with the exclusion-first pass 8
-times, choosing an exclusion code in 59. The smaller-tier
+eligibility-first pass 56 times and with the exclusion-first pass 10
+times, choosing an exclusion code in 59 of the 66. The smaller-tier
 exclusion-first pass systematically over-included domain reviews, the
 mirror image of the over-exclusion measured in the initial
 campaign. Facets for the new includes were

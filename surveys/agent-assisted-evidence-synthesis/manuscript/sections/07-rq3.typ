@@ -29,9 +29,10 @@ report, motivated by the observation that storing every relevance score
 scales quadratically with corpus size @lombaers2024. It is equally
 unvalidated; its only application is a worked example against a tool
 two of its three authors develop; in that example the tool stores nine
-of the fifteen items outright, one partly, and leaves four to author
-pre-registration (item numbering reconstructed from the paper's prose,
-since the checklist table was not machine-readable). A layer of position
+of the fifteen items outright and one partly, leaves four to author
+pre-registration, and treats one as optional (item numbering
+reconstructed from the paper's prose, since the checklist table was
+not machine-readable). A layer of position
 statements sits beside them: the Cochrane-family statements endorse the
 RAISE guidance @gartlehner2025, while the officially announced PRISMA-AI
 remains unpublished and PRISMA 2020 itself covers automation only at the
@@ -43,15 +44,17 @@ disclosure in the education and climate/health domains they discuss
 the model, cites a PRISMA item, publishes a validation table beside the
 flow diagram, and revisits residual risk in limitations @mughal2026.
 
-Where the map can watch norms actually being made, the difficulty goes
-on record. A three-round Delphi of 29 experts on living evidence
+Where the map can watch norms actually being made, the difficulty is
+visible in the panel's own report of where its agreement failed. A
+three-round Delphi of 29 experts on living evidence
 synthesis reached consensus on 19 of 23 statements, but its authors
 report that agreement ran lowest precisely on the objective, actionable
 use of automation and digital tools, and highest on general statements
-@golob2025[preprint]. The panel's only automation-relevant statement —
-that software and automation should be validated and justified — did
-reach consensus and is neutral on the role question these guidance
-sources disagree about. In the one consensus exercise this map
-contains, the panel's own account places its weakest agreement on
-actionable automation use; that is a single preprint panel's
-self-report, not a measurement of the field.
+@golob2025[preprint] — the authors' own characterization of their round
+data rather than a published vote breakdown, since the statement tables
+were not machine-readable. The panel's only automation-relevant
+statement, that software and automation should be validated and
+justified, did reach consensus and is neutral on the role question
+these guidance sources disagree about. The one place this map watches
+norms being formed is also the place where operational commitment did
+not form.

@@ -37,8 +37,11 @@ development, registration, discrepancy resolution, or publication
 update are stages of their own — not disputes about what the shared
 stages are named.
 
-An earlier version of this survey asserted that stage vocabulary
-splits along community lines. Tested term by term against the selected
+The vocabulary findings in the rest of this section rest on the
+twenty-five evidence notes read when the survey's terminology
+synthesis was drafted; appraisal-stage notes added afterwards have not
+been re-tested against them. An earlier version of this survey
+asserted that stage vocabulary splits along community lines. Tested term by term against the selected
 notes, that does not survive: both communities use _screening_ and
 _selection_ (the distinction is stage-outcome versus operation, not
 medicine versus software engineering), and no extraction-versus-
@@ -55,10 +58,7 @@ The software-engineering canon says quality assessment
 on reviews and trials rather than judging bias at all — PRISMA,
 AMSTAR, and PRECIS-2 in @woelfle2024. Our single `appraise` facet
 spans all three, so a row coded `appraise` should not be read as a
-risk-of-bias judgment specifically. These vocabulary findings rest on
-the twenty-five notes read when the terminology synthesis was drafted;
-the appraisal-stage notes added afterwards have not been re-tested
-against them.
+risk-of-bias judgment specifically.
 
 *Assistance configurations.* We use _LLM assistance_ for a single
 model performing a bounded task under prompting, and _agent_ loosely

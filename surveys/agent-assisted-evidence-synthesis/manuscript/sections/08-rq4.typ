@@ -1,6 +1,19 @@
 = RQ4 — Independence: an exploratory deep-read gap <sec-rq4>
 
-The 31 selected deep reads contain four designed multi-model or
+None of the 31 selected deep reads defines what makes two agent passes
+_independent_ in the sense dual human review requires — a criterion for
+when one pass counts as independent of another. The nearest thing to
+one is procedural rather than architectural: a registered protocol
+stipulates that two different people each run the model in separate
+sessions @rose2025, defining operator independence while leaving
+sampling, context isolation, and session leakage unaddressed. The
+2026-08-09 update narrowed the finding without closing it — the first
+such measurement among the selected deep reads has arrived
+@akinseloyin2026 — and neither wave ran a targeted independence query
+or coded an independence facet, so this cannot establish a
+literature-wide absence.
+
+The evidence beneath that finding is four designed multi-model or
 human–model comparisons, two indirect signals, and one system with no
 redundancy. This is an exploratory subset, not an exhaustively searched
 class:
@@ -33,8 +46,9 @@ class:
   Gemini 1.5 Flash, with a fourth model adjudicating) beat every
   constituent — mean average precision 0.341 against 0.271, 0.266, and
   0.182 — and beat its own debate variants; one adjudication variant
-  matched it (0.345) at many times the cost @akinseloyin2026. Alone among the selected works it measures a
-  proxy for independence, reporting Spearman correlations of 0.48–0.56
+  matched it (0.345) at many times the cost @akinseloyin2026. Alone
+  among the selected works it measures a proxy for independence,
+  reporting Spearman correlations of 0.48–0.56
   between its agents' scores and concluding that model heterogeneity is
   what makes aggregating weak screeners work. Its three agents differ
   in vendor, size, and training corpus at once, with no same-family
@@ -54,15 +68,7 @@ class:
   architecture is descriptive and supplies no comparison of independence
   mechanisms.
 
-None of the 31 selected deep reads defines what makes two agent passes
-_independent_ in the sense dual human review requires — a criterion for
-when one pass counts as independent of another. The nearest thing to
-one is procedural rather than architectural: a registered protocol
-stipulates that two different people each run the model in separate
-sessions @rose2025, defining operator independence while leaving
-sampling, context isolation, and session leakage unaddressed. The 2026-08-09 update
-narrowed this finding without closing it: the first such measurement among the
-selected deep reads has arrived @akinseloyin2026, and with it the most suggestive
+The measurement that arrived brings with it the most suggestive
 evidence in the set that independence is the operative quantity.
 Allowing that study's agents to debate raised their inter-agent
 correlation and lowered ensemble performance relative to voting them
@@ -72,15 +78,11 @@ not a definition, and no selected work reports the quantity a theory
 would need: error correlation measured within versus across model
 families.
 
-Neither wave ran a targeted independence query or coded an
-independence facet, so this observation cannot establish a
-literature-wide absence — and one incidental finding shows how the
-frame binds. Chasing the newest of these works forward surfaced one
+One incidental finding shows how the survey's frame binds. Chasing the newest of these works forward surfaced one
 clinical-AI oversight preprint, out of scope here and read only at
 abstract level (doi:10.64898/2026.02.08.26345860), whose abstract
 describes deferring uncertain model outputs to humans by triangulating
 model heterogeneity, stochastic inconsistency, and reasoning critique
 — the three signals this set otherwise keeps apart. It is a pointer
-for a targeted follow-up, not evidence about coverage. The finding
-motivates a targeted follow-up to the human-independence concerns in
-earlier guidance @hamel2021.
+for a targeted follow-up on the human-independence concerns raised in
+earlier guidance @hamel2021, not evidence about coverage.

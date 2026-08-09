@@ -31,7 +31,9 @@ point among nine tested models across 24 SE reviews met the authors'
 proposed bar of recall ≥ 0.95 at precision about 0.50 @huotala2025. In
 one Gargari et al. review, prompt variants moved GPT-3.5 sensitivity
 from 62% to a level the authors compared with a junior reviewer
-@gargari2023. Across five highly imbalanced sepsis questions under one
+@gargari2023, though most of that work's per-prompt figures are
+directional prose in an unverified supplement with no significance
+testing. Across five highly imbalanced sepsis questions under one
 prompt, Oami et al. found GPT-4 Turbo specificity of 0.98 versus 0.51
 for GPT-3.5, while sensitivity changed from 0.83 to 0.85 without a
 significant difference @oami2025. Within SESR-Eval, study effects
@@ -74,7 +76,7 @@ recurs between them.
 
 The second of those studies also repeats a pattern first visible in
 appraisal: requiring unanimity plus a probability threshold lifts
-screening performance to about 98.5% F1 at roughly 99% recall while
+triage F1 to about 98.5% at roughly 99% recall while
 deciding only about half the corpus @knafou2023, just as
 consistency-gated appraisal reached accuracy whose confidence
 interval merely overlapped human performance, and only on the items it

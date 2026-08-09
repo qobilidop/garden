@@ -11,7 +11,7 @@
       (23); this is not an adoption-trend measure], [map;
       @napoleao2021],
     [1], [One end-to-end preprint uses decomposition, structured
-      artifacts, human review, and no redundancy; only extraction and
+      artifacts, human review, and no redundancy; extraction, reranking, and
       retrieval contributions were ablated], [@huang2026],
     [1], [One of 34 tools in a living-evidence inventory served the
       publication-update phase; terminology may undercount it], [@song2026],
@@ -24,24 +24,33 @@
       specificity much more than sensitivity], [@oami2025],
     [2], [In a 29-paper convenience sample, confusion-matrix and
       imbalance-aware reporting were uncommon], [@madeyski2025],
-    [3], [Three deep-read disclosure proposals coexist without reported
-      validation or adoption evidence], [@holst2025 @degen2024
-      @fernandes2026],
+    [3], [Four deep-read instruments across two genres — three
+      disclosure checklists and one reproducible-storage checklist —
+      coexist without reported validation or adoption evidence],
+      [@holst2025 @degen2024 @fernandes2026 @lombaers2024],
+    [3], [In the one consensus exercise the map contains, the panel's
+      own account places its weakest agreement on actionable automation
+      use], [@golob2025],
     [4], [A cross-vendor OR ensemble preprint reports 99.7% sensitivity
       on author-adjudicated labels and 94.0–94.5% on original labels;
       family diversity was not isolated], [@fagerberg2025],
     [4], [Human–LLM deferral outperformed comparison arms on two easier
       retrospective appraisal instruments, not as a general law],
       [@woelfle2024],
-    [5], [The field's genre nouns and stage granularity are contested;
-      its stage names are not, and an earlier claim of a
+    [4], [None of 31 selected deep reads defines agent-reviewer
+      independence; neither wave searched or coded the question
+      exhaustively], [deep-read subset; @hamel2021],
+    [4], [The one independence construct in the set is procedural —
+      two human operators running one model — not architectural],
+      [@rose2025],
+    [§3], [The field's genre nouns and stage granularity are contested
+      while its stage names are not; an earlier claim of a
       medicine-versus-SE stage-vocabulary split did not survive
       testing], [deep reads; canon],
-    [4], [None of 31 selected deep reads defines agent-reviewer
-      independence; the campaign did not search or code the question
-      exhaustively], [deep-read subset; @hamel2021],
   ),
-  caption: [Summary of findings with their evidence.],
+  caption: [Summary of findings with their evidence. The final row
+    answers no research question; it reports the terminology result
+    from @sec-taxonomy.],
 ) <tab-findings>
 
 @tab-findings condenses descriptive, differently scoped findings. The
@@ -57,7 +66,7 @@ study of reviewer _independence_ for agents (@sec-rq4); deeper evidence
 for the small appraisal, synthesis, and reporting categories; work in
 the map's underrepresented SE setting; publication-update tools beyond
 the terminology-sensitive inventory @song2026; validation and adoption
-studies for the three disclosure proposals; and norms for agent-primary
+studies for the four instruments; and norms for agent-primary
 configurations. The Cochrane-family guidance keeps AI as a secondary
 checker, while HAICO-SLR sanctions first-pass roles under human
 validation @fernandes2026.
