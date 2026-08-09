@@ -19,7 +19,7 @@ Use the machine-generated view rather than editing counts here after every
 small change:
 
 ```console
-./dev.sh python3 surveys/dataflow-selection-enumeration/scripts/survey/update.py status
+./dev.sh python3 surveys/dataflow-selection-enumeration/record/scripts/update.py status
 ```
 
 The next recurring database-search cycle is due after 90 days. Critical-source

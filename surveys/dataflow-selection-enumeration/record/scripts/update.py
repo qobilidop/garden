@@ -72,7 +72,7 @@ def status(args: argparse.Namespace) -> int:
 
     catalog = read_tsv(SURVEY / "catalog.tsv")
     catalog_statuses = Counter(row["status"] for row in catalog)
-    log_rows = read_tsv(SURVEY / "logs" / "searches.tsv")
+    log_rows = read_tsv(SURVEY / "searches.tsv")
     evidence_rows = read_tsv(SURVEY / "evidence-matrix.tsv")
     snapshots = list((SURVEY / "screening").rglob("*.tsv"))
     source_notes = [

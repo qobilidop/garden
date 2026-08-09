@@ -22,8 +22,9 @@
 - Subagents inherit no operating rules. A fan-out prompt that could
   touch a gated capability (browser-mediated downloads, deletions,
   pushes) states the gate explicitly — three survey pipelines once
-  escalated to the user's browser unprompted
-  (surveys/agent-assisted-review-methodology/decisions/0007).
+  escalated to the user's browser unprompted (agent-assisted survey
+  decision 0007, in git history; the decision logs were pruned when
+  survey records were minimized).
 
 ## Scratch
 

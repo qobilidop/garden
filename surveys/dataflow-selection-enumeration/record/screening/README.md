@@ -2,7 +2,7 @@
 
 These TSV files freeze the identifier, title, DOI, year, venue, and type records
 returned by the discovery index for each audited query or citation-neighborhood
-row in `../logs/searches.tsv`. Some source exporters include abstracts; full
+row in `../searches.tsv`. Some source exporters include abstracts; full
 text is never committed here.
 
 `baseline-2026-08-04/` contains the complete first mapping snapshot. Later
@@ -27,7 +27,7 @@ New update batches use date-named subdirectories. OpenAlex citation-neighborhood
 and concept-query files are generated through:
 
 ```console
-./dev.sh python3 surveys/dataflow-selection-enumeration/scripts/survey/screen_openalex.py ... \
+./dev.sh python3 surveys/dataflow-selection-enumeration/record/scripts/screen_openalex.py ... \
   --output surveys/dataflow-selection-enumeration/record/screening/YYYY-MM-DD/NAME.tsv
 ```
 
@@ -36,7 +36,7 @@ bounds are required for recurring updates and may be supplied for an ad hoc
 snapshot:
 
 ```console
-./dev.sh python3 surveys/dataflow-selection-enumeration/scripts/survey/screen_crossref.py QUERY \
+./dev.sh python3 surveys/dataflow-selection-enumeration/record/scripts/screen_crossref.py QUERY \
   --limit 100 --from-date YYYY-MM-DD --to-date YYYY-MM-DD \
   --output surveys/dataflow-selection-enumeration/record/screening/YYYY-MM-DD/NAME.tsv
 ```

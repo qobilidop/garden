@@ -9,14 +9,28 @@ lives in git.
 ## Start here
 
 ```console
-./dev.sh python3 surveys/dataflow-selection-enumeration/scripts/survey/update.py status
-./dev.sh python3 surveys/dataflow-selection-enumeration/scripts/survey/check.py
+./dev.sh python3 surveys/dataflow-selection-enumeration/record/scripts/update.py status
+./dev.sh python3 surveys/dataflow-selection-enumeration/record/check.py
 ```
 
 `update.py status` reports coverage dates, due searches, and current
 record counts. `check.py` validates the evidence graph: catalog,
 audited logs, screening snapshots, evidence matrix, bibliography, and
 manuscript citation anchors.
+
+## Shape
+
+This record deliberately carries more than the minimal survey-record
+shape (README, searches, included/excluded, sources): `catalog.tsv`
+is a four-state disposition ledger (candidate/screened/deep-read/
+excluded) because a living survey holds candidates the binary
+include/exclude split cannot represent; the method lives in
+`protocol.md`/`methodology.md` rather than only here because tooling
+parses it (`check.py` reads the research questions from
+`protocol.md`); and the synthesis layers (`claims.md`,
+`evidence-matrix.tsv`, `syntheses/`, `formal-synthesis/`) bind
+manuscript claims to evidence at a granularity the minimal shape
+does not attempt.
 
 ## Information architecture
 
@@ -28,7 +42,8 @@ manuscript citation anchors.
 - `catalog.tsv` — disposition ledger for discovered works.
 - `claims.md` — contribution and qualification ledger.
 - `terminology.md` — adopted terms and required distinctions.
-- `logs/` — audited and exploratory search executions.
+- `searches.tsv` — audited search executions.
+- `searches-exploratory.tsv` — reconciled exploratory searches.
 - `screening/` — frozen, fully screened result sets.
 - `sources/` — one primary-source evidence note per deep-read work.
 - `syntheses/` — current cross-paper understanding by theme.
@@ -38,7 +53,8 @@ manuscript citation anchors.
   section labels to source-note anchors.
 - `updates/` — recurring searches (`queries.tsv`), their reconciled
   state (`state.tsv`), and periodic tasks (`tasks.tsv`).
-- [`../decisions/`](../decisions/) — durable research choices.
+- `check.py` — the record validator.
+- `scripts/` — search fetchers and the freshness/update tool.
 
 ## Evidence flow
 
@@ -47,14 +63,16 @@ manuscript citation anchors.
    result is screened).
 2. Give every discovered work a disposition in `catalog.tsv`.
 3. Preserve only fully screened result sets and append their audited
-   execution rows to `logs/searches.tsv`.
+   execution rows to `searches.tsv`.
 4. Create a primary-source note for every deep-read work.
 5. Reconcile the relevant thematic files in `syntheses/`.
 6. Update `terminology.md`, `claims.md`, and the formal synthesis
    when the cross-paper interpretation changes.
 7. Add or revise `evidence-matrix.tsv` when a synthesis claim or
    technical manuscript claim changes.
-8. Record durable research choices in `../decisions/`.
+8. Record durable research choices in this README (operating rules)
+   — git carries their history, as it does for the pre-move decision
+   log.
 
 A discovered paper is integrated only when its disposition is
 recorded, any required source note is anchored in the primary work,
@@ -104,7 +122,7 @@ last fully reconciled executions in `updates/state.tsv`; periodic
 citation maintenance in `updates/tasks.tsv`. Stage due searches with
 
 ```console
-./dev.sh python3 surveys/dataflow-selection-enumeration/scripts/survey/update.py fetch --due
+./dev.sh python3 surveys/dataflow-selection-enumeration/record/scripts/update.py fetch --due
 ```
 
 Registered runs use an inclusive interval from the last reconciled

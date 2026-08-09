@@ -39,7 +39,7 @@ organizing derivation, not a claim to a new generic enumeration paradigm.
 
 ## Evidence locations
 
-- `logs/searches.tsv` records every audited query or citation chase.
+- `searches.tsv` records every audited query or citation chase.
 - `screening/` freezes each screened result set.
 - `catalog.tsv` records the current disposition of discovered works.
 - `sources/` anchors technical extraction in primary works.

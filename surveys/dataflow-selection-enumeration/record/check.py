@@ -11,7 +11,7 @@ import sys
 csv.field_size_limit(sys.maxsize)
 
 
-ROOT = Path(__file__).resolve().parents[2]
+ROOT = Path(__file__).resolve().parents[1]
 SURVEY = ROOT / "record"
 CATALOG_HEADER = [
     "citekey",
@@ -177,7 +177,6 @@ def fail(message: str) -> None:
 
 def main() -> int:
     markdown_paths = sorted((ROOT / "record").rglob("*.md"))
-    markdown_paths.extend(sorted((ROOT / "decisions").rglob("*.md")))
     for markdown in markdown_paths:
         text = markdown.read_text(encoding="utf-8")
         for target in re.findall(r"\]\(([^)]+)\)", text):
@@ -402,7 +401,7 @@ def main() -> int:
         anchor, citekey = missing_evidence[0]
         fail(f"manuscript citation has no evidence row at {anchor}: {citekey}")
 
-    header, log_rows = rows(SURVEY / "logs" / "searches.tsv")
+    header, log_rows = rows(SURVEY / "searches.tsv")
     if header != SEARCH_HEADER:
         fail(f"unexpected search-log header: {header}")
     promoted_keys = {
@@ -510,7 +509,7 @@ def main() -> int:
         ):
             fail(f"defective backward chase for {key} has no primary bibliography")
 
-    header, exploratory_rows = rows(SURVEY / "logs" / "exploratory.tsv")
+    header, exploratory_rows = rows(SURVEY / "searches-exploratory.tsv")
     if header != EXPLORATORY_HEADER:
         fail(f"unexpected exploratory-log header: {header}")
     for number, row in enumerate(exploratory_rows, start=2):

@@ -3,3 +3,5 @@
 /site/dist/
 /site/.astro/
 /site/public/surveys/
+__pycache__/
+surveys/*/.scratch/
