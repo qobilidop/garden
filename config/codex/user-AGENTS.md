@@ -22,4 +22,7 @@
   the last command's exit, not the interesting one's — run a gating
   command unpiped with output captured to a file and test bare `$?`
   (grep/tail the file afterwards); when a pipe is unavoidable, check
-  `pipestatus` (zsh) / `PIPESTATUS` (bash).
+  `pipestatus` (zsh) / `PIPESTATUS` (bash); `while read` silently
+  drops a final line that lacks a trailing newline — iterate lists
+  with a tool that reads to EOF, and verify bulk operations by
+  recount against the input, never by loop completion.

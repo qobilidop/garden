@@ -46,7 +46,9 @@ not one).
   purpose, for retrieval. Follow the Agent Skills format (agentskills.io):
   the description alone does the triggering (what + when + boundary
   against neighbors), and the body holds only what an agent would get
-  wrong unaided.
+  wrong unaided. Directory placement per the spec: templates and
+  boilerplate the agent instantiates → `assets/`; documentation the
+  agent reads → `references/`; executables → `scripts/`.
 - **Rule**: a standing constraint on behavior. Project-scoped →
   `AGENTS.md` here; global → the mirrored configs for *both* agents
   (`config/claude/user-CLAUDE.md`, `config/codex/user-AGENTS.md`),

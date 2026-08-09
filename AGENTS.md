@@ -28,6 +28,13 @@
   escalated to the user's browser unprompted (agent-assisted survey
   decision 0007, in git history; the decision logs were pruned when
   survey records were minimized).
+- Writing fan-outs default to worktree isolation (clean per-agent
+  baseline, mechanical merge-back); read-only fan-outs share the
+  tree. When parallel writers must share a tree, their prompts
+  forbid git state operations (stash/checkout/reset/restore) — two
+  migration agents once ran `git stash`/`pop` under five concurrent
+  writers, both seeking the clean baseline a worktree would have
+  given them.
 
 ## Scratch
 
@@ -68,8 +75,10 @@
   graph, work metadata); everything else is rented substrate (Astro,
   remark, KaTeX, Pagefind, Mermaid). An unresolved `[[target]]` fails
   the build.
-- Build with Node from the dev image (`./dev.sh`); CI builds in the same
-  image via `.github/workflows/site.yml`.
+- CI builds in the dev image (`.github/workflows/site.yml`); local
+  builds run on the host per tend-site — `./dev.sh npm` against the
+  host checkout clobbers native binaries in the shared
+  `node_modules`.
 
 ## Conventions
 
