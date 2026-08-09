@@ -9,7 +9,7 @@ from collections import Counter
 from pathlib import Path
 
 
-RECORD = Path(__file__).resolve().parents[1]
+RECORD = Path(__file__).resolve().parent
 SURVEY = RECORD.parent
 MANUSCRIPT = SURVEY / "manuscript"
 

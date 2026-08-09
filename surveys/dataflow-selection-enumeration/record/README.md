@@ -11,7 +11,7 @@ procedure. Process history lives in git.
 
 ```console
 ./dev.sh python3 skills/run-survey/scripts/update.py --record surveys/dataflow-selection-enumeration/record status
-./dev.sh python3 surveys/dataflow-selection-enumeration/record/scripts/check.py
+./dev.sh python3 surveys/dataflow-selection-enumeration/record/check.py
 ```
 
 `update.py status` reports coverage dates and current record counts.
@@ -62,7 +62,7 @@ for each are in `protocol.md`.
 - `evidence-matrix.tsv` — binds synthesis claims and manuscript
   section labels to source-note anchors; revised whenever claims or
   manuscript evidence change.
-- `scripts/check.py` — the record validator; the shared search,
+- `check.py` — the record validator; the shared search,
   fetch, and update tools live in `skills/run-survey/scripts/`.
 
 ## To update
@@ -91,4 +91,4 @@ conditions in `protocol.md`).
    text; discard the staged result set.
 5. Only then advance the rows' `last_reconciled` to the batch date,
    sync `status.md` and the landing page, and run
-   `scripts/check.py`.
+   `check.py`.

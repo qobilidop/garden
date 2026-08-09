@@ -26,7 +26,7 @@ git and is not required to resume.
   its `last_reconciled` date; stage an update with the shared tool
   (`python3 skills/run-survey/scripts/update.py --record
   surveys/agent-assisted-review-methodology/record fetch --all`)
-- `scripts/check.py` — structural checks and mechanically derived
+- `check.py` — structural checks and mechanically derived
   quantities
 
 ## Scope and status
@@ -323,7 +323,7 @@ and `.pdf`.
 4. Update the curated list, manuscript prose, historical/current funnel,
    abstract, limitations, and draft date wherever the derived report or
    findings changed.
-5. Run `python3 surveys/agent-assisted-review-methodology/record/scripts/check.py`.
+5. Run `python3 surveys/agent-assisted-review-methodology/record/check.py`.
    Reconcile its catalog, exclusion-code, facet, note, curation, and
    citation totals against this README, `../index.md`,
    `../manuscript/meta.typ`, and every table/quantity in

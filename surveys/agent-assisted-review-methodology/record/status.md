@@ -8,7 +8,7 @@
 - **Manuscript:** draft under continuing human review
 
 Counts are mechanical — regenerate with the shared update tool's
-`status` command or `scripts/check.py` rather than editing them here
+`status` command or `check.py` rather than editing them here
 after every small change.
 
 ## Deferred to the next update

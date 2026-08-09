@@ -280,7 +280,7 @@ fix introduces before persisting it.
   `catalog.tsv` and `log.tsv` per the §1 grammar, `sources/`,
   `syntheses/`, `claims.md`, and, when the manuscript publishes quantities
   derived from the catalog, a campaign-local
-  `record/scripts/check.py`; the source fetchers, snowball tool, and
+  `record/check.py`; the source fetchers, snowball tool, and
   registry-driven update tool ship with this skill (`scripts/`). The validator checks schemas, keys, facet
   tokens, source-note and bibliography/citation closure, and prints
   the derived counts for cross-surface reconciliation; a qualitative

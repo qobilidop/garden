@@ -11,7 +11,7 @@ import sys
 csv.field_size_limit(sys.maxsize)
 
 
-ROOT = Path(__file__).resolve().parents[2]
+ROOT = Path(__file__).resolve().parents[1]
 SURVEY = ROOT / "record"
 CATALOG_HEADER = [
     "citekey",
