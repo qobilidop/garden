@@ -16,6 +16,9 @@
   CI) pins a single version, and each pin site cross-references the
   others — divergent scanner versions once made CI and hooks disagree
   on the same config.
+- Merge commits bypass pre-commit hooks — a load-bearing guard also
+  runs at pre-push or in CI (an absorbed repo's oversized files once
+  entered through a merge that pre-commit never saw).
 
 ## Fan-out
 
@@ -74,6 +77,12 @@
   governing skill in the same change, and machine-checked where
   checkable — unwritten conventions drift (H1 shapes, display names,
   and citation forms all did).
+- Every fact has one canonical home; other surfaces point at it,
+  never restate it. Derived views are generated, never committed.
+  Two files that must agree become one file that cannot disagree.
+  (Different altitudes — evidence, understanding, presentation — are
+  not duplication.) The one data bug a day of survey work surfaced
+  was a hand-copied count drifting from its ledger.
 
 ## Skills
 

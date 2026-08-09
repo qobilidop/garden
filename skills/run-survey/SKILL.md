@@ -235,18 +235,8 @@ Shape note, as intent rather than drift.
   dse reference).
 - Build: `./dev.sh python3 site/scripts/build-manuscripts.py` (typst
   pinned in the dev image) → `site/public/surveys/<slug>/`.
-- Typst gotchas (all earned): `~` is a non-breaking space — escape
-  literal tildes; a `;` directly after `#cite(...)` is parsed away —
-  use `#[;]`; `fr` table columns collapse inside figures — use
-  explicit widths for wrapping columns; `#cite(form: "prose")`
-  under numeric CSL styles expands full author lists — hand-write
-  "Author et al. @key" there, and grep for that residue when
-  switching styles back; unbraced name particles (`van X`) drop in
-  author-year rendering — brace them in the bib; typst's BibTeX
-  parser rejects `month=July` — normalize to three-letter forms;
-  the HTML export silently drops `align`/`block` title content —
-  build HTML title blocks from `html.elem`; typst embeds Libertinus
-  Serif and DejaVu Sans Mono (no font packages needed for those).
+- Typst gotchas (all earned) live in `references/typst.md` —
+  consult on any build or render misbehavior.
 
 ## 6. Review panel
 

@@ -83,6 +83,11 @@ already there (a contradiction is surfaced, never silently overwritten);
 delete or correct memories that turned out wrong; keep `MEMORY.md` in
 sync. Retention decays silently — when a memory or rule looks stale,
 verify against current reality before acting on or pruning it.
+After a session that heavily co-evolves a skill and its reference
+implementations, run a two-direction audit with independent agents —
+spec→instance conformance and instance→spec coverage, declared
+divergences exempt (one such audit surfaced twelve real findings,
+with errors on both sides).
 
 ## 7. Close
 
