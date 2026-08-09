@@ -110,6 +110,15 @@ Then test the reconstructed title plus abstract against
 `large language model|language model|\bllm|gpt|agent|automat|artificial intelligence|machine learning|deep learning|neural|\bai\b|\bgenai\b|\bgai\b|generative ai|foundation model`.
 If the abstract is missing, test the title alone and send a
 vocabulary miss to `parked` rather than silently discarding it.
+
+The title stage is applied to the title only, so a work whose title
+carries no genre term is dropped before its abstract is ever read.
+This is a known recall limitation of the snowball prefilter, not a
+scope judgment: it costs works that describe evidence-synthesis
+assistance in the abstract under a title that names only the
+technique or the application domain. It is retained because reading
+every chase abstract does not scale, and it is disclosed in the
+manuscript's limitations.
 Count title-filter rejects, model-vocabulary rejects, missing-data
 parked rows, merges, screened rows, and includes in the update
 ledger. Run one backward+forward round from new includes and a

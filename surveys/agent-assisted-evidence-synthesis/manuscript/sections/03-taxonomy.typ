@@ -1,17 +1,50 @@
 = Terminology and Taxonomy <sec-taxonomy>
 
-The literature's vocabulary is inconsistent across its three home
-communities; we fix the following usage for this survey.
+The field's vocabulary is unstable in a specific place. What the
+stages of a secondary study are *called* is close to shared; what the
+study itself is called, and how many stages it has, is not. We fix the
+following usage for this survey and mark where the literature diverges.
 
-*Secondary studies and stages.* A _secondary study_ is a systematic
-review, systematic map, or related evidence synthesis over primary
-studies. Its pipeline stages, in the canonical vocabulary
-@kitchenham2007 @page2021: _search_ (query design and study
-identification), _screening_ (title/abstract and full-text
-selection), _extraction_ (structured data capture from included
-studies), _appraisal_ (quality and risk-of-bias assessment),
-_synthesis_ (qualitative or quantitative aggregation), and
-_reporting_ (writing and disclosure).
+*The umbrella and the object.* We use _evidence synthesis_ as the
+umbrella genre — covering systematic reviews, systematic maps, scoping
+reviews, rapid reviews, and living reviews alike — and _secondary
+study_ for an individual work of that kind, over primary studies. The
+literature supplies at least four competing umbrellas: evidence
+synthesis in the Cochrane-adjacent line @gartlehner2025, knowledge
+synthesis @hamel2021, secondary studies in software engineering
+@napoleao2021, and systematic literature studies @wohlin2014. The
+object nouns vary as much: @kitchenham2007 governs the systematic
+literature review and admits mapping studies only by contrast, while
+@petersen2008 argues the systematic map is a genre in its own right;
+@page2021 governs systematic reviews and treats *living* as a mode
+rather than a genre. This survey is itself an updatable systematic
+map in @petersen2008's sense, and it was retitled during its
+2026-08-09 update to name the umbrella rather than the dominant genre
+under it.
+
+*Stages.* We use six: _search_ (query design and study
+identification), _screening_ (title/abstract and full-text selection),
+_extraction_ (structured data capture), _appraisal_ (quality and
+risk-of-bias assessment), _synthesis_ (qualitative or quantitative
+aggregation), and _reporting_ (writing and disclosure). This six-stage
+set is our collapse of the canon rather than any source's own scheme:
+@kitchenham2007 specifies twelve steps in three phases, @petersen2008
+five steps — one of them, keywording of abstracts, with no counterpart
+in review vocabulary — and the LLM-era stage models run from four
+phases @song2026 to eight @degen2024 and nine @fernandes2026. The
+substantive disagreements are boundary questions — whether protocol
+development, registration, discrepancy resolution, or publication
+update are stages of their own — not disputes about what the shared
+stages are named.
+
+One genuine term split survives that test, and it sits at appraisal.
+The software-engineering canon says quality assessment
+@kitchenham2007 @vandinter2021; the Cochrane line says risk of bias
+@arno2022 @huang2026; and a third sense scores appraisal instruments
+on reviews and trials rather than judging bias at all — PRISMA,
+AMSTAR, and PRECIS-2 in @woelfle2024. Our single `appraise` facet
+spans all three, so a row coded `appraise` should not be read as a
+risk-of-bias judgment specifically.
 
 *Assistance configurations.* We use _LLM assistance_ for a single
 model performing a bounded task under prompting, and _agent_ loosely

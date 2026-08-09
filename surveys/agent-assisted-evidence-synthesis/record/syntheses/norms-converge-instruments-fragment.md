@@ -1,6 +1,6 @@
 # Norms converge on content, fragment on instruments
 
-Status: current through the 2026-08-08 baseline.
+Status: current through the 2026-08-09 update batch.
 
 ## Current conclusion
 
@@ -8,14 +8,26 @@ Across every selected guidance source the disclosure content is the
 same: name the tool and version, state which stage/task the AI
 performed and what the human did, describe verification, and keep
 accountability human (no AI authorship). What differs — and is not
-converging — is the instrument (three coexisting unvalidated
-proposals with different units of disclosure) and, more substantively,
-the sanctioned AI role: secondary quality-assurance checker in the
+converging — is the instrument and, more substantively, the
+sanctioned AI role: secondary quality-assurance checker in the
 Cochrane-family line versus sanctioned first-pass worker under human
 validation in HAICO-SLR. Coexistence of proposals is not evidence of a
-standards race: none of the three reports validation or adoption, and
-the field's official instrument (PRISMA-AI) remains unpublished since
-its 2022 announcement.
+standards race: none reports validation or adoption, and the field's
+official instrument (PRISMA-AI) remains unpublished since its 2022
+announcement.
+
+The 2026-08-09 update sharpens the fragmentation claim in two ways.
+The instrument count is genre-dependent, not simply three: three
+*disclosure-reporting* instruments (holst2025, degen2024,
+fernandes2026) are joined by a fourth in a different sub-genre,
+lombaers2024's reproducibility and data-storage checklist, which
+prescribes artifacts none of the disclosure instruments name. And the
+difficulty is now measured rather than inferred: in the first
+consensus exercise the map contains (golob2025), agreement was
+*lowest* precisely on the actionable use of automation and digital
+tools, and highest on general statements. The field is not merely
+slow to converge on AI norms; it demonstrably converges least where
+the norms would bind.
 
 ## The convergent core, per source
 
@@ -34,6 +46,18 @@ its 2022 announcement.
   verified), AI-vs-human exclusion counts in an adapted flow diagram.
 - degen2024 (FRAISR): tool name, version, and input parameters
   (verbatim prompt) per stage, plus a machine-readable CSV emission.
+- golob2025 (living evidence synthesis Delphi; medRxiv preprint): 29
+  experts, three rounds, ≥80% consensus threshold; 19 of 23
+  statements reached consensus. Its one automation statement — any
+  software or automation should be validated and justified — is
+  role-neutral, and AI otherwise appears only in a forward-looking
+  discussion favouring human-in-the-loop over full automation for
+  current LLMs.
+- lombaers2024 (RDAL checklist, active-learning screening): 15 items
+  splitting what authors pre-register (team and roles, inclusion
+  criteria, stopping rule) from what software must store (software
+  and version, model components, feature matrix, random seeds,
+  labeling order, per-iteration model identity and training-set size).
 
 ## The fragmentation, precisely
 
@@ -54,6 +78,21 @@ corroborating, independently, why three proposals appeared at once.
 The proposals also disagree about PRISMA-AI's status: holst2025 treats
 it as announced-but-unpublished; fernandes2026's authors say it "was
 never actually developed." Both agree it is not available to use.
+
+lombaers2024 fragments the picture along a second axis rather than
+adding a fourth competitor on the first. Its unit is the stored
+artifact, not the reported item: seeds, labeling order, and
+per-iteration training-set size are things no disclosure checklist
+asks for, and its motivation is technical — storing every relevance
+score scales quadratically with corpus size (terabytes at ~10^6
+records), so it prescribes storing model type and training-set size
+per iteration and reconstructing the rest. It is equally unvalidated:
+its sole application is a worked example against ASReview v1.0, two
+of its three authors are ASReview core developers, and by its own
+table that tool stores 11 of the 15 items — the four it misses
+(team and roles, inclusion criteria, stopping rule, random seeds) are
+left to author pre-registration. A conformance self-check is not
+field-testing.
 
 ## The real normative disagreement: the sanctioned role
 
@@ -93,6 +132,34 @@ rate on a stratified sample) beside the flow diagram, and revisits the
 residual risk in a dedicated limitations subsection. One exemplar and
 one secondhand prevalence estimate do not measure the field; they
 bound it anecdotally from both ends.
+
+Between those bounds sits a third, weaker form the update surfaced
+incidentally. A domain meta-analysis screened out of this map for
+being about automation-and-judgment rather than evidence synthesis
+(doi:10.2139/ssrn.7244698) nonetheless discloses in its methods that
+"screening and extraction were duplicated by language-model
+reviewer-agents with human adjudication," and lists LLM reviewer-agents
+among its keywords — while reporting no agreement statistic, recall,
+or validation for that step. Naming the technique and evidencing it
+are separable practices, and the instruments above conflate them: a
+review disclosing at this level satisfies the tool-and-stage core of
+every checklist here while supplying nothing a reader could use to
+judge the automated step. The observation is anecdotal (one work,
+found opportunistically, outside the map) and is offered as a
+distinction the instruments do not draw, not as prevalence evidence.
+
+golob2025 supplies the mechanism behind the lag, in the one place the
+map can watch norms actually being made. Its panel reached consensus
+on 19 of 23 statements, but the discussion records that agreement ran
+lowest on objective, actionable use of automation and digital tools
+and highest on general or subjective statements. The four
+non-consensus statements are where operational commitment would have
+been. That is a measured instance of the pattern the rest of this
+synthesis infers from instrument proliferation: the closer a norm
+gets to binding practice, the less agreement it commands. The finding
+rests on the authors' own characterisation of their round data
+(the statement tables render as images and were not machine-readable)
+and the work is an unrefereed preprint.
 
 ## Scope conditions
 

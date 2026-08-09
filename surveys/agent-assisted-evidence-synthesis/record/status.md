@@ -39,6 +39,15 @@ limitations disclosures; git keeps the log itself.
   boundary is accepted as a coverage limitation. A never-reconciled
   query takes the survey window start (2020-01-01) as its first
   from-date.
+- **2026-08-09 — title-prefilter recall gap disclosed.** Designating
+  akinseloyin2026 critical and chasing it surfaced a work whose
+  abstract is on-topic but whose title carries no genre term, so the
+  snowball title vocabulary had dropped it before the abstract was
+  read. The work itself is out of scope on its merits (clinical
+  decision support), but the gap is real: `protocol.md` now states
+  the limitation and the manuscript discloses it. The prefilter was
+  not widened — reading every chase abstract does not scale — so this
+  is a disclosed bound on snowball recall, not a fixed defect.
 - **2026-08-09 — snowball model vocabulary.** The batch rejected an
   on-topic "Generative AI" work that never uses a matched literal
   phrase; the model-side vocabulary gained
