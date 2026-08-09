@@ -1,144 +1,323 @@
 # Survey record
 
-The minimal resumable state of this survey. An agent redoing or
-updating it needs this directory, the
+The minimal resumable state of this exploratory systematic map. The
+original campaign predates the current `run-survey` workflow. Future
+updates should use the current workflow as a guide, exercising judgment
+where the retained record or available services differ. Describe material
+method changes here in plain language; the survey is not pinned to a
+particular skill or repository commit.
+
+An updater needs this directory, the
 [manuscript](https://qobilidop.github.io/sys0/surveys/agent-assisted-review-methodology/manuscript.html)
-(taxonomy in §3; method sketch in §4), and the repo's build toolchain
-(AGENTS.md and the run-survey skill). Process history lives in git
-and the private shadow mirror; none of it is needed to resume.
+(taxonomy in §3; method and historical funnel in §4), the repository's
+`AGENTS.md`, and the current `run-survey` skill. Process history lives in
+git and is not required to resume.
 
-- `searches.tsv` — the queries run, verbatim, with dates and yields
-- `included.tsv` — the 672 included works with taxonomy facets
-  (`year` is the year at screening time; titles are display hints
-  truncated at 70 chars — the bibliography carries the version of
-  record)
-- `excluded.tsv` — screening memory: excluded keys with codes
+- `searches.tsv` — every initial request attempt, with verbatim query
+  vocabulary, dates, and yields
+- `included.tsv` — the 646 currently included works with abstract-level
+  primary-focus facets
+- `excluded.tsv` — 646 excluded, unresolved, superseded, or retracted
+  identifiers retained as screening memory
 - `sources/` — evidence notes for the 25 deep-read works
+- `check.py` — structural checks and mechanically derived quantities
 
-## Scope
+## Scope and status
 
-- **Subject:** methods, systems, evaluations, benchmarks, and
-  guidance for automating or assisting the stages of secondary
-  studies (systematic reviews, maps, and related evidence syntheses)
-  with LLMs or agents.
-- **Window searched:** 2020-01-01 through 2026-08-08. Pre-LLM lineage
-  enters as background via its existing reviews, not re-screened
-  primary studies.
-- **Sources:** OpenAlex, Crossref, Semantic Scholar, arXiv. English
-  only. The rows of `searches.tsv` are the query set — rerun them
-  verbatim; they pair review-side vocabulary ("systematic review",
-  "evidence synthesis", …) with model-side vocabulary ("large
-  language model", LLM, GPT, agent, automation).
+- **Subject:** AI-assisted and automated methods, systems, evaluations,
+  benchmarks, and guidance for secondary studies (systematic reviews,
+  maps, and related evidence syntheses). The search was motivated by
+  LLMs and agents but its model-side vocabulary also admitted generic
+  automation, artificial intelligence, machine learning, deep learning,
+  and neural methods. The map therefore includes some narrow-ML lineage
+  and is not an LLM-only denominator.
+- **Window searched:** 2020-01-01 through 2026-08-08, English only.
+  Earlier lineage enters through existing reviews. A few 2020–2022
+  primary automation studies and the 2022 RobotReviewer RCT entered
+  through the broad vocabulary; this was not a comprehensive search of
+  pre-LLM primary research.
+- **Genre:** exploratory systematic map. Relevance-sorted searches were
+  capped at 50 results, one of 11 logical queries never succeeded, and
+  the single snowball wave was not iterated to saturation. Counts
+  describe this retained catalog, not the complete literature.
+- **Evidence status:** the map facets are single-pass abstract-level
+  coding, not risk-of-bias or certainty assessments. The evidence notes
+  are authoritative for the 25 deep reads and may disagree with their
+  map rows.
 
-## Search parameters
+## Integrity ledger
 
-Each query ran with a 50-result cap, relevance-sorted; yields overlap
-across queries, and the harvest deduplicates rows by normalized key
-(initial wave: 471 result rows → 419 unique records → 412 after
-arXiv–DOI merging). In `searches.tsv`, a duplicate qid on the same
-date is a retry and `FAILED:<reason>` rows record failed attempts
-(initial wave: qid s23 never succeeded). A query deviating from its
-source template logs its full request URL in the query column.
+The campaign closed with 1,291 identifier rows and 672 included rows.
+The 2026-08-08 adversarial review resolved 24 duplicate/version aliases
+to their versions of record and moved two formally retracted works to
+E7. One later journal publication (Madeyski et al.) added a canonical
+DOI while retaining its arXiv identifier as E6 memory, so the retained
+ledger now has 1,292 identifier rows: 646 included and 646 in
+`excluded.tsv`.
 
-- OpenAlex: `api.openalex.org/works?filter=title_and_abstract.search:<q>,from_publication_date:<start>&per-page=50&sort=relevance_score:desc`
-- Semantic Scholar: `api.semanticscholar.org/graph/v1/paper/search?query=<q>&year=<startyear>-&limit=50&fields=title,year,venue,abstract,externalIds,url`
-- Crossref: `api.crossref.org/works?query.bibliographic=<q>&filter=from-pub-date:<start>&rows=50&select=DOI,title,issued,container-title,abstract`
-- arXiv: `export.arxiv.org/api/query?search_query=<q>&start=0&max_results=50&sortBy=relevance` (no date parameter; post-filter by year)
+Mechanical normalized-title grouping now leaves one apparent collision:
+`10.1016/j.jclinepi.2025.111894` is the Stage I protocol and
+`10.1016/j.jclinepi.2025.112102` is the distinct Stage II results paper.
+Both are intentionally included. `check.py` verifies key uniqueness and
+the current marginals; this paragraph records the only known display-
+title collision.
 
-## Snowball
+Historical phase counts below are retained aggregates: the pruned record
+does not contain candidate-level wave/source provenance and cannot
+regenerate them. Current catalog and facet counts are mechanical.
 
-The search seeds a snowball round that contributed most of the
-initial wave's includes: from each include, fetch references and
-citing works via OpenAlex; keep new candidates (deduplicated against
-the catalog)
-whose titles match, case-insensitively,
-`review|screening|synthesis|extraction|meta-analys|survey|systematic|evidence|literature|prisma|appraisal`;
-pre-screen out candidates with no model-side vocabulary — the
-initial wave's exact list survived only in the session transcript;
-the go-forward rule, set 2026-08-08, is the case-insensitive regex
-`large language model|language model|\bllm|gpt|agent|automat|artificial intelligence|machine learning|deep learning|neural`
-— then screen the rest and run a verification pass over everything
-screened in.
+| Event | Candidate rows | Included rows | Notes |
+|---|---:|---:|---|
+| Successful initial searches | 471 result rows | — | 419 unique before arXiv–DOI merging |
+| Initial dedup | 412 | — | seven merged rows |
+| Dual-pass screen + adjudication | 412 | 139 | historical aggregate |
+| Snowball retrieval | 1,204 new | — | from 139 seeds; historical aggregate |
+| Vocabulary pre-screen | 881 passed | — | 323 uncataloged rejects |
+| Wave-2 screen + verification | 879 added | 533 | two of 881 merged on catalog entry |
+| Campaign close | 1,291 | 672 | before integrity correction |
+| Integrity correction | 1,292 | 646 | 24 aliases resolved, two retractions removed, one later publication migrated; 12 U rows remain parked |
 
-## Selection
+For every future update, append a row to this ledger. It is the retained
+provenance for future funnel changes.
 
-- **Include:** works (peer-reviewed or preprint) whose subject
-  matches the scope above.
+| Date | Prior cutoff | New cutoff | Qids succeeded / failed | Raw results | Unique new | Prefilter rejects | Screened | U | Aliases | Included | Human gate |
+|---|---|---|---|---:|---:|---:|---:|---:|---:|---:|---|
+
+## Search procedure
+
+The 13 rows in `searches.tsv` are 11 logical qids plus retries. Initial
+qid `s22` failed once and then succeeded; `s23` failed twice and never
+succeeded. The successful initial requests returned 471 result rows.
+
+On update:
+
+1. Run one request for each distinct qid, using its last query text and
+   the source template below. Do not replay historical FAILED rows as
+   separate queries.
+2. Use an overlap start one calendar year before the previous cutoff and
+   a new explicit upper cutoff. Post-filter every source to
+   `overlap_start <= publication_date <= new_cutoff`; arXiv requires this
+   locally because its template has no date parameter. The overlap catches
+   delayed indexing and is absorbed by identifier/title deduplication.
+3. A request gets at most three attempts, separated by 10 and 30 seconds.
+   Append one log row per attempt with the same qid/date. A terminal
+   failure is `FAILED:<HTTP/status reason>` and is disclosed in the wave
+   ledger and manuscript limitations; it is never counted as a successful
+   query.
+4. Retain the 50-result, relevance-sorted cap unless an update chooses and
+   records a different limit. The cap is a coverage limitation, not a claim
+   of saturation.
+
+- OpenAlex: `api.openalex.org/works?filter=title_and_abstract.search:<q>,from_publication_date:<start>,to_publication_date:<end>&per-page=50&sort=relevance_score:desc`
+- Semantic Scholar: `api.semanticscholar.org/graph/v1/paper/search?query=<q>&year=<startyear>-<endyear>&limit=50&fields=title,year,venue,abstract,externalIds,url`
+- Crossref: `api.crossref.org/works?query.bibliographic=<q>&filter=from-pub-date:<start>,until-pub-date:<end>&rows=50&select=DOI,title,issued,container-title,abstract`
+- arXiv: `export.arxiv.org/api/query?search_query=<q>&start=0&max_results=50&sortBy=relevance` followed by the exact local date post-filter
+
+## Key and version rules
+
+Canonical keys are lowercase `doi:<doi>` or `arxiv:<id>`; use
+`t:<title-slug>` only when neither exists. Normalize as follows:
+
+1. Strip `https://doi.org/`, `http://dx.doi.org/`, and bare `doi:` from a
+   DOI, percent-decode it, trim whitespace, and lowercase it.
+2. Collapse `https://arxiv.org/abs/<id>`, `arxiv:<id>`, and arXiv-issued
+   DOI forms to `arxiv:<id>`; strip a trailing version suffix (`vN`).
+3. For a `t:` fallback, Unicode-NFKD normalize the full title, drop
+   combining marks, lowercase, keep only ASCII alphanumerics, and truncate
+   to 80 characters.
+4. `legacy:` is reserved for an already-retained malformed historical
+   alias whose identity cannot be represented without colliding with its
+   canonical row; never mint it for a new candidate.
+
+Examples: `https://doi.org/10.2196/48996` → `doi:10.2196/48996`;
+`https://arxiv.org/abs/2310.17526v2` → `arxiv:2310.17526`.
+
+Deduplicate a new candidate by exact key against both TSVs. Then compare
+its full normalized title to included display prefixes. Because 529 of
+the original display titles were truncated at 70 characters, a prefix
+match is a candidate match, not proof: resolve the stored DOI/arXiv key
+through its registrar, compare full normalized titles and authors, and
+adjudicate ambiguous pairs. Exclusions are deduplicated by exact key;
+their version aliases are explicitly retained as E6. When a published
+version replaces an included preprint, replace the included key and add
+the superseded identifier to `excluded.tsv` as E6.
+
+For a candidate matching a retained `t:` row, compare its normalized full
+title with both the stored slug and display prefix, then adjudicate from
+the candidate's authors, year, and venue. If those metadata do not
+establish identity, keep the records separate or park the candidate as U.
+
+## Snowball procedure
+
+Resolve each included seed to an OpenAlex work. For a DOI use
+`GET /works/https://doi.org/<doi>`. For an arXiv-only seed, search its
+full title, then accept only an exact normalized-title and year match;
+ambiguous seeds are logged and skipped rather than guessed.
+
+For each resolved OpenAlex ID:
+
+- backward candidates are the work object's complete
+  `referenced_works` list;
+- forward candidates come from
+  `GET /works?filter=cites:<OpenAlexID>&per-page=200&cursor=*`, following
+  `meta.next_cursor` until empty;
+- request/retain `id,doi,title,publication_year,abstract_inverted_index,
+  referenced_works`; fetch referenced-work IDs directly as needed;
+- deduplicate by the key/title rules above before counting a candidate.
+
+Apply the case-insensitive title vocabulary
+`review|screening|synthesis|extraction|meta-analys|survey|systematic|evidence|literature|prisma|appraisal`.
+Then test the reconstructed title plus abstract against
+`large language model|language model|\bllm|gpt|agent|automat|artificial intelligence|machine learning|deep learning|neural`.
+If the abstract is missing, test the title alone and send a vocabulary
+miss to U rather than silently discarding it. Count title-filter rejects,
+model-vocabulary rejects, missing-data U rows, merges, screened rows, and
+includes in the update ledger. Run one backward+forward round from new
+includes and a verification pass over everything it screens in.
+
+The initial wave used the same title vocabulary, but its exact model-side
+list was not retained; its 323 uncataloged prefilter rejects and other
+phase quantities are therefore historical aggregates, not reproducible
+candidate-level facts.
+
+## Selection and screening
+
+- **Include:** a peer-reviewed work or preprint whose subject matches the
+  scope above.
 - **Exclude:**
   - E1 — primary-research automation only
   - E2 — generic NLP/RAG without evidence-synthesis framing
-  - E3 — opinion without guidance content
-  - E4 — pre-window
-  - E5 — inaccessible
-  - E6 — duplicate or superseded version
-  - U — undecidable on available metadata; parked in `excluded.tsv`
-    as screening memory and re-screened at each update
-- **E2 boundary examples** (78% of initial-wave exclusions rode on
-  this line):
-  an LLM answering questions over medical literature with no review
-  framing is E2; prompt techniques for summarizing papers outside any
-  secondary-study workflow are E2; an LLM screening titles/abstracts
-  for a specific systematic review, or an evaluation of that task, is
-  in scope.
-- **Pass structure:** two agent passes per candidate on different
-  model tiers and prompt framings, disagreements adjudicated by the
-  strongest available model; a single-pass wave is acceptable only
-  with a verification pass over what it screens in; a human gates the
-  result.
-- **Keys:** `doi:<doi>` or `arxiv:<id>`, normalized — arXiv-DOIs
-  collapse to `arxiv:` ids, version suffixes stripped, lowercase.
-  Works with neither identifier get `t:<title-slug>` (lowercase,
-  alphanumerics only, truncated at 80 chars). Also title-match new
-  candidates against `included.tsv`: when the published version of an
-  included preprint appears, replace the include's key with the
-  published identifier and record the superseded key as E6 in
-  `excluded.tsv`.
+  - E3 — opinion without actionable guidance
+  - E4 — before the searched window
+  - E5 — insufficient accessible metadata to determine subject after
+    identifier, landing-page, and abstract checks
+  - E6 — duplicate or superseded identifier/version
+  - E7 — retracted or withdrawn
+  - U — enough metadata to understand the work, but the scope decision is
+    genuinely ambiguous; re-screen every U row on update
 
-## Classification and curation
+Boundary examples: a literature-QA system with no secondary-study framing
+is E2; prompt advice for generic paper summarization is E2; an LLM
+screening titles/abstracts for a systematic review is included. A closed
+paper with an informative abstract can be included and deep-read as
+abstract-only; E5 is for records lacking enough metadata even to decide
+scope. A method spanning evidence review and primary hypothesis generation
+is E1 when the primary-research product is its central contribution; use U
+when that priority cannot be decided from the available abstract.
 
-- Classify every include on the four taxonomy dimensions defined in
-  manuscript §3; facets live in `included.tsv` using the short
-  tokens: stage `search|screen|extract|appraise|synthesize|report|
-  end2end|meta`; contribution `method|system|evaluation|guideline|
-  position`; evidence `human-agree|benchmark|none`; setting
-  `med|se|general`.
-- The landing-page reading list is curated, not exhaustive: works
-  that anchor a taxonomy section — the strongest evidence, the
-  defining system, or the guidance of record — each with a one-line
-  annotation and a link to its evidence note in `sources/`. Deep-read
-  does not imply listed (the initial wave read 25, listed 23);
-  sections stay small (two to six rows initially), and a new anchor
-  joins or displaces.
-- Evidence notes in `sources/` use the library note frontmatter
-  (citekey, work metadata, `synthesis:` one-liner) with an extraction
-  body (`## Evidence`, anchored to sections/tables of the work).
-  Note `source:` fields reference the private shadow tier; public
-  verification goes through the work's DOI or arXiv link. Note
-  facets come from full-text reads and may disagree with the
-  abstract-level map in `included.tsv` — the note is authoritative
-  for that work, but `included.tsv` is not silently corrected:
-  genuine disagreements stand and are disclosed in the manuscript's
-  limitations. Notes may omit facets the deep read did not assess.
-  Bibliography keys in `../manuscript/` are the author-year prefixes
-  of note citekeys.
+Each pass receives the full available title, abstract, year, venue, and
+identifier. Pass A uses an eligibility-first framing: identify positive
+evidence that the work contributes to a secondary-study stage, otherwise
+return the best E-code. Pass B uses an exclusion-first framing: attempt to
+prove E1–E5, otherwise include. Both return JSON
+`{"decision":"include|E1|E2|E3|E4|E5|U","reason":"one sentence","confidence":"high|medium|low"}`.
+Use different model tiers/vendors when available. The adjudicator sees the
+candidate and both outputs, resolves disagreements, and emits the same
+schema. The human gate reviews counts, all disagreements, every U, and a
+random sample of agreements; record its approval in the update ledger.
 
-## To update
+## Taxonomy and coding
 
-1. Rerun the `searches.tsv` queries verbatim (parameters above) with
-   the window start advanced to the last search date (templates are
-   date- or year-granular; overlap is expected and absorbed by
-   dedup).
-2. Deduplicate candidates against `included.tsv` and `excluded.tsv`
-   by normalized key and by title; screen only what is new, plus the
-   parked `U` rows.
-3. Screen by the selection rules above; record new exclusions in
-   `excluded.tsv`, new includes with facets in `included.tsv`.
-4. Snowball from the new includes (one round, as specified above);
-   screen, verify, and record its yield the same way.
-5. Deep-read and write evidence notes for new anchor-grade works;
-   add them to the reading list.
-6. Update the manuscript where findings shift; regenerate the
-   bibliography via `../manuscript/make-references.py` after adding
-   identifiers to `../manuscript/references.tsv`; bump the draft
-   date in `../manuscript/meta.typ`.
-7. Bump the window date and work counts here and in `../index.md`.
+Every row carries one abstract-level primary-focus value per dimension.
+These are descriptive labels, not quality or certainty judgments.
+
+- **Stage:** `meta` if the work is about the review process/field rather
+  than performing an operational stage; `end2end` only if it substantively
+  implements at least four of search, screen, extract, appraise, synthesize,
+  report; otherwise use the stage named by the primary objective or main
+  evaluation endpoint. If two stages are co-primary and the abstract
+  cannot break the tie, use U pending a deep read.
+- **Contribution:** `evaluation` for a primarily comparative empirical
+  assessment; otherwise `guideline` for prescriptive conduct/reporting,
+  `system` for a released/integrated tool, `method` for a technique or
+  algorithm, and `position` for an argument or agenda. Code the primary
+  contribution, not every component.
+- **Evidence:** `human-agree` when outputs are compared with human or
+  human-derived reference labels; otherwise `benchmark` for a nonhuman
+  benchmark and `none` when neither appears. Precedence is
+  `human-agree > benchmark > none`.
+- **Setting:** `med` for healthcare/biomedical review corpora, `se` for
+  software-engineering secondary studies, and `general` for cross-domain
+  or domain-independent work. Venue alone never determines setting.
+
+The allowed tokens are: stage
+`search|screen|extract|appraise|synthesize|report|end2end|meta`;
+contribution `method|system|evaluation|guideline|position`; evidence
+`human-agree|benchmark|none`; setting `med|se|general`.
+
+## Evidence notes and reading list
+
+Evidence notes use this compact contract:
+
+```yaml
+---
+citekey: <filename stem>
+work:
+  title: <version read>
+  author: <authors>
+  venue: <optional>
+  date: <year or date>
+  doi: <optional>
+  arxiv: <optional>
+read: full-text | abstract-only
+source: <shadow path when captured; otherwise public URL, acquisition note, or "none">
+facets: <assessed note-level facets; may be partial>
+retrieved: YYYY-MM-DD
+notes-by: <writer; preserve prior writers and append material revisers separated by semicolons>
+notes-date: YYYY-MM-DD
+synthesis: <one-line take>
+---
+
+# Title
+
+## Evidence
+## Bearing on RQs
+## Evidence limits
+```
+
+Note-level full-text facets are authoritative for that work but do not
+silently rewrite the abstract-coded map; disclose disagreements. The
+landing-page reading list is curated, not exhaustive: the strongest
+evidence, defining system, or guidance anchor for each taxonomy section.
+Deep-read does not imply listed (25 read, 23 listed). Every annotation
+carries abstract-only, preprint, adjudication, and author-benchmark caveats
+that qualify its claim.
+
+## Bibliography and build
+
+Add an anchor's canonical identifier to `../manuscript/references.tsv`,
+then run from the repository root:
+
+```sh
+./dev.sh python3 surveys/agent-assisted-review-methodology/manuscript/make-references.py
+./dev.sh python3 site/scripts/build-manuscripts.py
+```
+
+`make-references.py` validates duplicate keys/identifiers, accepts a
+same-key fallback in `references-manual.bib`, and replaces
+`references.bib` atomically only after every entry resolves. On any
+failure it leaves the prior bibliography untouched. The build writes
+`site/public/surveys/agent-assisted-review-methodology/manuscript.html`
+and `.pdf`.
+
+## Update and close checklist
+
+1. Choose the new cutoff; execute the search and snowball procedures;
+   append request attempts and the update-ledger row.
+2. Deduplicate, screen, adjudicate, and human-gate; update both TSVs and
+   re-screen all 12 current U rows.
+3. Apply the taxonomy decision rules; deep-read new anchor candidates,
+   preserving and appending `notes-by` attribution on material revisions.
+4. Update the curated list, manuscript prose, historical/current funnel,
+   abstract, limitations, and draft date wherever the derived report or
+   findings changed.
+5. Run `python3 surveys/agent-assisted-review-methodology/record/check.py`.
+   Reconcile its catalog, exclusion-code, facet, note, curation, and
+   citation totals against this README, `../index.md`,
+   `../manuscript/meta.typ`, and every table/quantity in
+   `../manuscript/content.typ`.
+6. Regenerate the bibliography and build both manuscript formats using
+   the commands above. Check citation closure, HTML anchors, PDF/HTML
+   links, and `git diff --check`.
+7. Bump the search window and draft date only after all checks pass; log
+   the human gate and describe any material method change.

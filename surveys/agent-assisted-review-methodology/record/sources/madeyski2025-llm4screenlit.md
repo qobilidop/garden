@@ -3,7 +3,9 @@ citekey: madeyski2025-llm4screenlit
 work:
   title: "LLM4SCREENLIT: Recommendations on Assessing the Performance of Large Language Models for Screening Literature in Systematic Reviews"
   author: "Lech Madeyski, Barbara Kitchenham, Martin Shepperd"
+  venue: "Information and Software Technology"
   date: 2026
+  doi: 10.1016/j.infsof.2026.108204
   arxiv: 2511.12635
 read: full-text
 source: "shadow/library/papers/2025/madeyski2025-llm4screenlit/transcript.md"
@@ -12,7 +14,7 @@ facets:
   contribution: "guideline"
   setting: "general"
 retrieved: 2026-08-08
-notes-by: Claude Sonnet-class (survey deep-read pipeline)
+notes-by: "Claude Sonnet-class (survey deep-read pipeline); Codex GPT-5.6 Sol (adversarial review)"
 notes-date: 2026-08-08
 synthesis: "LLM4SCREENLIT: recommendations for evaluating LLM screening in SRs"
 ---
@@ -45,4 +47,7 @@ synthesis: "LLM4SCREENLIT: recommendations for evaluating LLM screening in SRs"
 
 ## Evidence limits
 
+The evidence extraction above is from arXiv:2511.12635; DOI
+10.1016/j.infsof.2026.108204 identifies the 2026 journal publication,
+but this review did not perform a line-by-line version comparison.
 Recommendations are derived primarily from title/abstract screening evidence; extension to full-text screening is judged "principled" (2 supporting non-SE papers) and extension to data-extraction tasks is "largely theoretical" (1 supporting non-SE paper plus authors' argument) — flagged by the authors themselves as needing empirical validation. Underlying paper pool (29 papers) is a convenience sample assembled via two prior SRs plus informal search, not itself a fully systematic search. Data extraction for the 29-paper review was performed by a single researcher (Kitchenham), with subjectivity concentrated in judging whether papers recognized FN/FP asymmetry.

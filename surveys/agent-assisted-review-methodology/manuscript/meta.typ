@@ -9,37 +9,35 @@
   Following the no-AI-authorship convention this survey maps (RQ3),
   the byline names the accountable human author. The agent
   contribution was primary: Claude Fable 5 (claude-fable-5) executed
-  the campaign — search, screening, classification, deep reads — and
-  drafted this manuscript (orchestration, synthesis, drafting). The
-  author directed the campaign, approved the protocol, gated every
-  stage, and takes responsibility for the content; the working record
-  is public in the repository.
+  the initial campaign — search, screening, classification, deep reads
+  — and drafted the manuscript; Codex GPT-5.6 Sol performed the second
+  adversarial review, catalog-integrity correction, evidence rechecks,
+  and revisions. The author directed both passes, approved the protocol,
+  gated every stage, and takes responsibility for the content; the
+  minimal public record is linked below.
 ]
 #let draft = "Draft 2026-08-08"
 #let landing = "https://qobilidop.github.io/sys0/surveys/agent-assisted-review-methodology/"
-#let record = "https://github.com/qobilidop/sys0/tree/main/surveys/agent-assisted-review-methodology"
+#let record = "https://github.com/qobilidop/sys0/tree/main/surveys/agent-assisted-review-methodology/record"
 
 #let abstract-body = [
   Large language models are moving into every stage of systematic
-  reviews, and the methodology literature is racing to keep up. We map
-  that literature: 1,291 works cataloged from four scholarly indexes
-  and one snowball round (2020–2026), 672 included and faceted by
-  stage, contribution, evidence, and setting, with 25 deep-read. Four
-  findings organize the map. The stage distribution reproduces the
-  pre-LLM skew — screening dominates, appraisal and reporting stay
-  thin. Reliability evidence is abundant but mismeasured: no evaluated
-  single model meets a proposed screening deployment bar, task
-  variance exceeds model variance, and evaluation practice itself is
-  systematically inadequate under class imbalance. Disclosure norms
-  converge on a core while instruments fragment — three unvalidated
-  checklists and a layer of position statements compete as
-  disclosure in practice stays rare. And
-  reviewer independence for agents is undefined: no work says what
-  makes two agent passes independent, while the best ensemble
-  evidence — a preprint — suggests model-family diversity is what
-  buys recall. The survey
-  distills a consistent terminology and taxonomy for the field and is
-  accompanied by a curated reading list; it was compiled with
-  LLM-agent assistance under human direction, with the full working
-  record public.
+  reviews. We present an exploratory map of the broader AI-assisted and
+  automated literature in the LLM era: 646 works retained after a
+  version/retraction integrity pass over a campaign catalog assembled
+  from four scholarly indexes and one snowball round (2020–2026), with
+  25 selected for deep reading. The single-pass abstract coding places
+  screening at the center of the map and appraisal and reporting at its
+  thin end. Its evidence labels are common but are not quality ratings;
+  the selected studies instead expose heterogeneous performance and
+  recurring metric failures under class imbalance. Three deep-read
+  disclosure proposals coexist without validation or adoption evidence,
+  while reported practice was rare in the two domains one source
+  mapped. Among the 25 deep reads, none explicitly defined independence
+  for agent reviewers. One cross-vendor ensemble preprint reports
+  complementary model decisions and high recall, but does not isolate
+  model-family diversity as the cause. The survey contributes consistent
+  terminology, a four-dimensional taxonomy, and a curated reading list;
+  it was compiled with LLM-agent assistance under human direction, with
+  a minimal public record.
 ]
