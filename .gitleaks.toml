@@ -10,3 +10,17 @@ useDefault = true
 description = "library citekey frontmatter is not a credential"
 regexTarget = "line"
 regexes = ['''^\s*citekey: [a-z][a-z0-9-]+$''']
+
+# Survey audit logs (absorbed dataflow-selection-enumeration history and
+# its record/): Semantic Scholar CorpusId hashes and bibliography seed
+# keys are public metadata whose `key:`/`Id:` shapes trip
+# generic-api-key. Matched on the token shape, not the file, so real
+# credentials in the same files still fire.
+[[allowlists]]
+description = "citation-graph identifiers and seed citekeys are not credentials"
+regexTarget = "match"
+regexes = [
+  '''CorpusId:[0-9a-f]{40}''',
+  '''seed-key:[a-z][a-z0-9]*[0-9]{4}[a-z0-9]*''',
+  '''[a-z][a-z0-9]*[0-9]{4}[a-z0-9]*(,[a-z][a-z0-9]*[0-9]{4}[a-z0-9]*)+''',
+]
