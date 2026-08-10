@@ -349,6 +349,15 @@ nothing. Adjudicate reviewer disagreements on
 primary evidence, never on authority; verify every fresh quantity a
 fix introduces before persisting it.
 
+Any source edit invalidates artifact-level closure. Regenerate the
+bibliography, both manuscript forms, and the site before the final delta
+verdict; reviewers close against those generated artifacts as well as the
+source. Visually inspect every PDF page affected by the delta and inspect the
+corresponding HTML structure, because valid Typst source can still become a
+list, empty emphasis node, stale citation, or other export-only regression.
+A source-only FIXED verdict remains provisional until this rebuild-and-render
+pass succeeds.
+
 ## 7. Record, publish, and optionally close
 
 - A dated snapshot is publication-ready when the retained record and
@@ -408,7 +417,15 @@ fix introduces before persisting it.
   tool, registry-driven update tool, and bibliography generator ship
   with this skill (`scripts/`). The engine validates every record
   surface end to end and prints the derived counts for cross-surface
-  reconciliation; a qualitative survey may omit the check entirely.
+  reconciliation. For an updatable quantitative survey, the local checker
+  interprets the current publication checkpoint rather than treating the
+  lifetime log as one batch: the immutable initial funnel plus audited later
+  additions must equal the live catalog; query attempts and successes are
+  scoped to the status coverage date; only the latest update-ledger row is
+  compared with current counts; and any external decision or evidence home is
+  verified to exist and match the key-bearing record that delegates to it.
+  Historical rows remain valid history, not current quantities. A qualitative
+  survey may omit the check entirely.
   A deep read that no longer supports any evidence item, manuscript
   citation, or synthesis may be demoted back to `screened` by an
   audit row, its note retiring to git history. Everything else —

@@ -26,19 +26,27 @@ rclone `store:` remote; `./dev.sh <cmd>` provides the pinned toolchain
   (`api.unpaywall.org/v2/<doi>?email=<contact>`) returns the best legal
   open-access location or confirms there is none; OpenAlex
   (`api.openalex.org/works/doi:<doi>`, `best_oa_location`) is the
-  cross-check. One call replaces the publisher-mirror tour, and a
-  confirmed-closed answer is a real result — use a verified existing
-  Wayback capture as an acquisition fallback or record a queue item instead
-  of probing on. Never request or wait for a new archive capture during
-  ingestion (`AGENTS.md` §Library). The queue is
+  cross-check. One call replaces the publisher-mirror tour. A
+  confirmed-closed answer is a real result: use a verified existing Wayback
+  capture as an acquisition fallback or record a queue item instead of
+  searching mirrors. When a resolver identifies a legal OA PDF but the host
+  serves a bot or JavaScript challenge, make one bounded fallback through an
+  official author or institution publication index and follow the exact PDF
+  link found there — never guess filenames. Verify its title, authors, DOI or
+  venue identity, and PDF header against the registrar record, and note
+  author-copy versus version-of-record provenance in frontmatter. If that
+  check fails, use an existing verified archive or the queue. Never request
+  or wait for a new archive capture during ingestion (`AGENTS.md` §Library).
+  The queue is
   `library/queue.md` (one line per work: what it is and what it
   would feed; ingesting removes the line, and identifiers there are
   pointers to verify, not bibliography). (Learned
   2026-08-08: PRISMA/Petersen hunting cost ~6 min that Unpaywall answers
   in seconds.)
-- Download only from immutable URLs: pin the arXiv version
-  (`arxiv.org/pdf/<id>v<N>`, never the bare `/pdf/<id>` pointer). Verify the
-  download is the right work by opening it, not by filename.
+- Download only from version-pinned or version-specific URLs: pin the arXiv
+  version (`arxiv.org/pdf/<id>v<N>`, never the bare `/pdf/<id>` pointer), or
+  use the stable named file linked by an official publication index. Verify
+  the download is the right work by opening it, not by filename.
 
 ## 2. Citekey
 
