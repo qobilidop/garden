@@ -14,6 +14,9 @@ body > * {
   margin-left: auto;
   margin-right: auto;
 }
+.paper-toc {
+  display: none;
+}
 .titleblock {
   text-align: center;
   margin-bottom: 1.6rem;
@@ -57,6 +60,7 @@ body > * {
 h2 {
   font-size: 1.18rem;
   margin: 1.7rem auto 0.6rem;
+  scroll-margin-top: 1.5rem;
 }
 h3 {
   font-size: 1.05rem;
@@ -136,8 +140,65 @@ section ul {
 section ul li {
   margin: 0.55rem 0;
 }
+@media (min-width: 72rem) {
+  .paper-toc {
+    position: fixed;
+    top: 2.5rem;
+    left: calc(50% + 23.5rem);
+    display: block;
+    width: min(15rem, calc(50vw - 25rem));
+    max-width: none;
+    max-height: calc(100vh - 5rem);
+    margin: 0;
+    padding: 0.15rem 0;
+    overflow-y: auto;
+    color: #666;
+    font: 0.76rem/1.3 -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    scrollbar-width: thin;
+  }
+  .paper-toc-title {
+    margin: 0 0 0.5rem;
+    padding-left: 0.65rem;
+    color: #777;
+    font-size: 0.68rem;
+    font-weight: 650;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .paper-toc ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .paper-toc li {
+    margin: 0;
+    text-align: left;
+    hyphens: none;
+  }
+  .paper-toc a {
+    display: block;
+    padding: 0.32rem 0.55rem;
+    border-left: 2px solid #ddd;
+    color: #666;
+  }
+  .paper-toc a:hover {
+    background: #f7f7f7;
+    color: #111;
+    text-decoration: none;
+  }
+  .paper-toc a[aria-current='location'] {
+    border-left-color: #111;
+    color: #111;
+    font-weight: 650;
+  }
+}
 @media (max-width: 640px) {
   p, li {
     text-align: left;
+  }
+}
+@media print {
+  .paper-toc {
+    display: none !important;
   }
 }
