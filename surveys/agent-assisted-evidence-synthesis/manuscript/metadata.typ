@@ -8,9 +8,10 @@
 #let author-note = [
   The byline names the accountable human author, who directed and gated the
   work and takes responsibility for its content.
-  OpenAI Codex (GPT-5.6 Sol) provided substantial assistance with
+  OpenAI Codex systems (through GPT-5.6 Sol) provided substantial assistance with
   evidence organization, adversarial review, synthesis, manuscript drafting
-  and editing, and repository tooling. Anthropic Claude (Fable 5) provided
+  and editing, and repository tooling. Anthropic Claude systems (through
+  Fable 5) provided
   substantial assistance with search, screening, classification, deep reading,
   synthesis, and manuscript drafting and revision.
   AI output is not treated as evidence; literature claims rest on the cited

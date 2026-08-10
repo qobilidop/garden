@@ -92,6 +92,10 @@ case; this protocol does not duplicate those examples.
 - In migrated source notes, `retrieved: "-"` means that the acquisition date
   was not recorded. `notes-date` is the last recorded review date, not an
   inferred retrieval date.
+- Historical `notes-by` values from the initial campaign name `Codex` without
+  a recoverable exact model. Preserve those values as legacy provenance rather
+  than guessing a model; future material revisions append the revising agent
+  and model under the current shared contract.
 
 ## Publication and novelty qualifications
 

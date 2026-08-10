@@ -96,5 +96,5 @@ If citations change, regenerate the bibliography and both manuscript formats:
 ./dev.sh python3 site/scripts/build-manuscripts.py
 ```
 
-Finish with `check.py` and copy its derived counts into `status.md`, the landing
-page, and manuscript metadata; do not estimate them independently.
+Finish with `check.py` and copy its derived counts into `status.md` and any
+manuscript surfaces that publish them; do not estimate them independently.

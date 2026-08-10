@@ -9,7 +9,7 @@ work:
 read: abstract-only
 source: "Abstract and introduction of the author-hosted accepted paper, https://doi.org/10.1109/ASE.2013.6693083"
 retrieved: 2026-08-09
-notes-by: Codex (publication-review revision)
+notes-by: Codex GPT-5.6 Sol (publication-review revision)
 notes-date: 2026-08-09
 synthesis: "Adapts concolic SMT input generation to high-level Pig dataflow programs and operator-case coverage; its example dataset is not a duplicate-free exact observer partition with residuals."
 ---

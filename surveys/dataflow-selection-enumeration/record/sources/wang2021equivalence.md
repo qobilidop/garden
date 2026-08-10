@@ -9,7 +9,7 @@ work:
 read: full-text
 source: "Official LIPIcs proceedings PDF, https://doi.org/10.4230/LIPIcs.ESA.2021.80"
 retrieved: 2026-08-09
-notes-by: Codex (publication-review revision)
+notes-by: Codex GPT-5.6 Sol (publication-review revision)
 notes-date: 2026-08-09
 synthesis: "A general polynomial-delay framework for enumerating locally colored equivalence classes directly from acyclic decomposable AND/OR solution graphs; it establishes quotient enumeration as a first-class objective but does not emit caller-input guards, residuals, or witnesses."
 ---

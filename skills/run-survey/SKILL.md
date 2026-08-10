@@ -27,19 +27,25 @@ method; those two records are the reference implementations.
 Three surfaces in `surveys/<slug>/`:
 
 - `index.md` — the landing page and `[[slug]]` backlink target. Fixed
-  skeleton: H1 `<title>: <subtitle>`, one abstract-like paragraph
-  carrying the funnel counts and closure status, then `**Read:**`
-  (HTML · PDF), `**Survey record:**` (GitHub tree URL) `— searched
-  through <date>` (the coverage-date stamp §7 closure checks), and
-  `**Topic context:** [[<wiki-topic>]]` — the survey↔wiki join —
-  followed by the curated reading list as the body.
+  skeleton: H1 `<title>: <subtitle>`; `## Summary` with one
+  content-centered synopsis naming the subject, organizing frame,
+  principal synthesis, and important boundaries; `## Links` with
+  three bullets in order — Manuscript (HTML), Manuscript (PDF),
+  Survey record (GitHub tree URL); then `## Reading list` as the
+  body. The landing page explains the survey, not its bookkeeping:
+  current counts, coverage date, and closure state live in
+  `record/status.md` and in manuscript surfaces that publish them.
+  Include a quantity in the summary only when it is substantive to
+  understanding the result.
 - `record/` — the minimal resumable state (§7).
 - `manuscript/` — the Typst paper (§5).
 
 Every survey is an *updatable systematic map* (the established
 genre noun; see `references/terminology.md` for how house terms map
-to the field's): it closes on bounded mapping closure (§7) and
-promises no maintenance cadence — but the
+to the field's). Publication and mapping closure are separate: a
+survey may publish a dated, bounded snapshot while explicitly making
+no bounded mapping-closure claim; the stronger closure criteria live
+in §7. It promises no maintenance cadence — but the
 update infrastructure stays standing, so that when an update is
 wanted, staging it is one command and this skill's procedure, plus
 the record README's local integration points, carries it to
@@ -75,10 +81,10 @@ surfaces.
   The protocol always reads as the current local choices: a material
   method change updates it in place and is logged, dated and
   append-only, in `status.md`'s Method changes section as it happens
-  — never applied silently. The log is campaign-scoped:
-  it dissolves at campaign close (§7), its content by then absorbed
-  into the protocol's final state, the log's audit rows, and the
-  manuscript's disclosures.
+  — never applied silently. The log is publication-checkpoint-scoped:
+  once its entries are absorbed into the protocol's current state,
+  audit rows, and manuscript disclosures, it dissolves at that checkpoint;
+  later material changes start a new section.
 - One append-only event log (`record/log.tsv`; the engine enforces
   its schema) with four kinds: `search` (an executed
   query), `snowball` (a citation chase, direction backward/forward),
@@ -196,7 +202,10 @@ surfaces.
   disagreements stand, disclosed in the manuscript's limitations.
 - On a material evidence or synthesis revision, preserve every existing
   `notes-by` writer and append the reviser (human name or agent + model),
-  where the note template carries authorship.
+  where the note template carries authorship. A historical agent value whose
+  exact model cannot be proved may remain model-unspecified only under a
+  survey-protocol qualification that marks it as legacy provenance; never
+  infer the model from a current default.
   Mechanical edits do not add authorship — but a migration that
   distills, splits, or authors any prose (a synthesis one-liner, an
   evidence-limits line) is material, not mechanical.
@@ -271,11 +280,16 @@ surfaces.
   landing page and survey record, while the landing page owns
   HTML/PDF cross-format navigation). The byline names the
   accountable human author; the `author-note` title-page footnote
-  carries the four-part disclosure: human accountability, the named
-  system/model and its scope of assistance, "AI output is not
-  treated as evidence", and the public-record pointer. This note is
-  the canonical home for those four facts; method and validity prose
-  point back instead of restating them.
+  carries the four-part disclosure: human accountability; each
+  materially contributing system/model and its aggregate assistance
+  scope; "AI output is not treated as evidence"; and the public-record
+  pointer. Keep the roster compact and truthful: name each material product
+  family once with the highest version used, and aggregate its assistance
+  scope only when that scope is true of the family. When model differences
+  are material to the disclosed work, name those models separately. Omit a
+  run-by-run chronology; incidental calls belong in procedure or provenance,
+  not the title-page roster. This note is the canonical home for those four
+  facts; method and validity prose point back instead of restating them.
 - Name split section files `NN-short-stem.typ`. When the top-level
   section has a label, use the identical stem in `<sec-short-stem>`;
   shorten only when the result remains an unambiguous complete word.
@@ -335,14 +349,20 @@ nothing. Adjudicate reviewer disagreements on
 primary evidence, never on authority; verify every fresh quantity a
 fix introduces before persisting it.
 
-## 7. Record and close
+## 7. Record, publish, and optionally close
 
-- Close on *bounded mapping closure*, not exhaustion of energy:
+- A dated snapshot is publication-ready when the retained record and
+  manuscript agree, procedure and unresolved backlog are disclosed,
+  the adversarial panel is closed, validators and builds pass, and the
+  human author approves release. `status.md` records publication state
+  separately from coverage state; publication readiness does not imply
+  mapping closure.
+- Claim *bounded mapping closure*, rather than merely publishing, only when:
   every surfaced work has a disposition; every critical work is
   deep-read and chased in both directions; all searches due for the
   snapshot are adjudicated; two predeclared, independently checked
   no-add rounds find neither a new theme nor a plausible close
-  competitor; and manuscript, record, and landing page agree on the
+  competitor; and manuscript and record agree on the
   coverage date. State closure as relative to the named sources,
   exact queries, result depths, and date — never as completeness.
 - Update infrastructure, standing but unscheduled: the standing
@@ -368,12 +388,14 @@ fix introduces before persisting it.
   `protocol.md` (only the survey-specific objective, questions,
   scope/selection boundaries, vocabularies, and overrides — never a
   copy of the shared method),
-  `status.md` (H1 `# Current survey status`, a `**Coverage
-  through:**` bullet, mechanical counts copied from the validator,
+  `status.md` (H1 `# Current survey status`; `**Coverage through:**`,
+  `**Publication state:**`, and `**Coverage state:**` bullets;
+  mechanical counts copied from the validator;
   the campaign-scoped `## Method changes` log — the append-only
   plain-language record of protocol amendments while a campaign is
-  open, dissolved at close once absorbed into protocol, audit rows,
-  and manuscript — and
+  active, dissolved at a publication checkpoint once its entries have been
+  absorbed into protocol, audit rows, and manuscript, independently of
+  whether bounded mapping closure is claimed — and
   deferred work under `## Deferred to the next update` — the
   survey's todo lives here, not in a separate file),
   `catalog.tsv` and `log.tsv` per the §1 grammar, `sources/`,
@@ -401,7 +423,7 @@ fix introduces before persisting it.
 - Updates follow this skill's shared procedure. The record README
   supplies the concrete commands and local reconciliation surfaces;
   its last local step syncs derived counts and dates in `status.md`
-  and the landing page.
+  and any manuscript surfaces that publish them.
 - Verify builds, propose commits with the attribution trailer, commit
   on the user's word. A long campaign stages harness lessons in
   `scratch/` as they surface; post-campaign /evolve mines them.

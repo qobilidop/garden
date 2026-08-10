@@ -9,7 +9,7 @@ work:
 read: abstract-only
 source: "Primary arXiv abstract and introduction, https://arxiv.org/abs/1809.04193"
 retrieved: 2026-08-09
-notes-by: Codex (publication-review revision)
+notes-by: Codex GPT-5.6 Sol (publication-review revision)
 notes-date: 2026-08-09
 synthesis: "Variational execution represents configuration-dependent values under contexts and shares redundant work across many executions; its native output is a shared multi-configuration execution, not exact selection-observation fiber records."
 ---

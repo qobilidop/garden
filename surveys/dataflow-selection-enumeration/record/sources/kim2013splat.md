@@ -9,7 +9,7 @@ work:
 read: full-text
 source: "Author-hosted ESEC/FSE paper, https://mir.cs.illinois.edu/~marinov/publications/KimETAL13SPLat.pdf"
 retrieved: 2026-08-09
-notes-by: Codex (publication-review revision)
+notes-by: Codex GPT-5.6 Sol (publication-review revision)
 notes-date: 2026-08-09
 synthesis: "SPLat demand-populates a stack of accessed configuration variables, uses SAT to retain feasible partial assignments, and executes one configuration per distinct reachable test trace — a close demand-guided exploration precedent without exact symbolic fiber guards or residuals."
 ---

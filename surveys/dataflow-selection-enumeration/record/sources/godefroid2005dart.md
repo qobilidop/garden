@@ -9,7 +9,7 @@ work:
 read: abstract-only
 source: "Publisher abstract and bibliographic metadata, https://doi.org/10.1145/1064978.1065036"
 retrieved: 2026-08-09
-notes-by: Codex (publication-review revision)
+notes-by: Codex GPT-5.6 Sol (publication-review revision)
 notes-date: 2026-08-09
 synthesis: "Foundational primary anchor for concrete executions whose dynamic symbolic analysis generates new inputs to direct exploration toward alternative paths; it does not group paths into complete observation fibers."
 ---

@@ -2,7 +2,7 @@
 
 The one note template for every survey's `record/sources/`. A survey
 declares deviations (extra frontmatter fields, omitted optional
-fields) in its record README's Shape note; the record validator
+fields) in its local protocol; the record validator
 enforces the contract.
 
 ```markdown
@@ -50,4 +50,7 @@ synthesis: <one-line take>
   negative scans unless the manuscript explicitly makes a secondhand claim.
 - At least one of `work.doi` / `work.arxiv` / `source` must locate
   the version read. `retrieved` may be `-` when the acquisition date
-  was not recorded (historical migrations, declared in the README).
+  was not recorded (historical migrations, declared in the local protocol).
+- Agent writers in `notes-by` include their model. A historical agent value
+  whose exact model cannot be proved may remain model-unspecified only when
+  the local protocol declares it as legacy provenance; never guess it.

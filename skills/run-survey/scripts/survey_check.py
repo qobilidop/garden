@@ -142,6 +142,38 @@ def run(config):
     noted_statuses = set(config["noted_statuses"])
     facet_statuses = set(config.get("facet_statuses", noted_statuses))
 
+    # --- fixed landing-page and status skeletons ---
+    index_text = (survey / "index.md").read_text(encoding="utf-8")
+    first_line = index_text.splitlines()[0] if index_text else ""
+    if not re.fullmatch(r"# .+: .+", first_line):
+        errors.append("index.md: H1 must be '<title>: <subtitle>'")
+    landing_sections = ("## Summary", "## Links", "## Reading list")
+    landing_positions = []
+    for heading in landing_sections:
+        matches = list(re.finditer(rf"(?m)^{re.escape(heading)}[ \t]*$", index_text))
+        if len(matches) != 1:
+            errors.append(f"index.md: expected exactly one {heading!r}")
+        landing_positions.append(matches[0].start() if len(matches) == 1 else -1)
+    if all(position >= 0 for position in landing_positions) and landing_positions != sorted(landing_positions):
+        errors.append("index.md: Summary, Links, and Reading list are out of order")
+    links_match = re.search(r"(?ms)^## Links\s*\n(.*?)(?=^##\s|\Z)", index_text)
+    expected_links = [
+        "- [Manuscript (HTML)](manuscript.html)",
+        "- [Manuscript (PDF)](manuscript.pdf)",
+        f"- [Survey record](https://github.com/qobilidop/sys0/tree/main/surveys/{survey.name}/record)",
+    ]
+    if links_match:
+        link_lines = [line.strip() for line in links_match.group(1).splitlines() if line.strip()]
+        if link_lines != expected_links:
+            errors.append("index.md: Links section must contain HTML, PDF, and survey-record bullets in order")
+
+    status_text = (record / "status.md").read_text(encoding="utf-8")
+    if not status_text.startswith("# Current survey status\n"):
+        errors.append("status.md: H1 must be '# Current survey status'")
+    for field in ("Coverage through", "Publication state", "Coverage state"):
+        if not re.search(rf"(?m)^- \*\*{re.escape(field)}:\*\*", status_text):
+            errors.append(f"status.md: missing '{field}' bullet")
+
     # --- broken local links across the record ---
     for path in sorted(record.rglob("*.md")):
         for target in re.findall(r"\]\(([^)]+)\)", path.read_text(encoding="utf-8")):
@@ -558,7 +590,6 @@ def run(config):
                 errors.append(f"queries.tsv:{lineno}: invalid last_reconciled {row['last_reconciled']!r}")
 
     # --- landing page curation ---
-    index_text = (survey / "index.md").read_text(encoding="utf-8")
     curated = {Path(match).stem for match in re.findall(r"record/sources/([^)]+\.md)", index_text)}
     curated.update(target for target in re.findall(r"\[\[([^\]]+)\]\]", index_text) if target in note_keys)
 

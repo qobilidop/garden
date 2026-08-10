@@ -9,7 +9,7 @@ work:
 read: abstract-only
 source: "Publisher abstract and bibliographic metadata, https://doi.org/10.1145/360248.360252"
 retrieved: 2026-08-09
-notes-by: Codex (publication-review revision)
+notes-by: Codex GPT-5.6 Sol (publication-review revision)
 notes-date: 2026-08-09
 synthesis: "Foundational primary anchor for symbolic inputs, formula-valued execution, and conditional-branch handling in program testing; it establishes the lineage, not observation-fiber grouping."
 ---
