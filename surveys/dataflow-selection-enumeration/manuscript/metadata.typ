@@ -11,7 +11,10 @@
   OpenAI Codex (GPT-5.6 Sol) provided substantial assistance with
   literature-search planning, evidence organization, cross-paper
   synthesis, formal presentation, manuscript drafting and editing,
-  and repository tooling. AI output is not treated as evidence; literature
+  and repository tooling. Anthropic Claude (Fable 5) provided
+  substantial assistance with survey-record migration and
+  manuscript review and revision.
+  AI output is not treated as evidence; literature
   claims rest on the cited primary sources. The survey record linked in the
   title metadata documents the working evidence and synthesis trail.
 ]

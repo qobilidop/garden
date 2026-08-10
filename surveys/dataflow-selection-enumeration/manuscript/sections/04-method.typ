@@ -86,8 +86,10 @@ classification: a theorem proved for a different observer must not be silently
 transferred after adding instrumentation or changing the output quotient.
 
 Discovery, extraction, and the repeated duplicate-screening passes used
-substantial assistance from OpenAI Codex (GPT-5.6 Sol). Because the passes
-reused the same project framing, they are repeated AI-assisted checks, not
-independent human reviews; no inter-rater agreement statistic was computed.
+substantial assistance from OpenAI Codex (GPT-5.6 Sol); later manuscript
+review and revision passes used Anthropic Claude (Fable 5). Because all
+passes reused the same project framing, they are repeated AI-assisted checks,
+not independent human reviews; no inter-rater agreement statistic was
+computed.
 The title-page note gives the full authorship, assistance, evidence-use, and
 public-record disclosure.
