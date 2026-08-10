@@ -1,6 +1,6 @@
 ---
 import type { CollectionEntry } from 'astro:content'
-import { workOf, fieldOf, shelfOf } from '../lib/works'
+import { displayDateOf, fieldOf, shelfOf, workOf } from '../lib/works'
 
 interface Props {
   entry: CollectionEntry<'library'>
@@ -8,6 +8,7 @@ interface Props {
 
 const { entry } = Astro.props
 const work = workOf(entry)
+const workDate = displayDateOf(entry)
 const shelf = shelfOf(entry)
 const notesBy = fieldOf(entry, 'notes-by')
 const retrieved = fieldOf(entry, 'retrieved')
@@ -24,8 +25,8 @@ const arxiv = work.arxiv?.split(/\s/, 1)[0]?.replace(/v\d+$/, '')
   {work.title && <p class="work-title">{work.title}</p>}
   {work.author && <p>{work.author}</p>}
   {
-    (work.venue || work.date) && (
-      <p>{[work.venue, work.date].filter(Boolean).join(' · ')}</p>
+    (work.venue || workDate) && (
+      <p>{[work.venue, workDate].filter(Boolean).join(' · ')}</p>
     )
   }
   <p class="work-links">

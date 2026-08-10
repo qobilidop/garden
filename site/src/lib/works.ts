@@ -21,7 +21,7 @@ export interface Work {
   title?: string
   author?: string
   venue?: string
-  date?: string
+  date?: string | Date
   doi?: string
   arxiv?: string
 }
@@ -33,16 +33,21 @@ export function workOf(entry: CollectionEntry<'library'>): Work {
 
 const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
 
+export function displayDateOf(
+  entry: CollectionEntry<'library'>,
+): string | undefined {
+  const raw = workOf(entry).date
+  if (raw instanceof Date) return raw.toISOString().slice(0, 10)
+  return raw === undefined ? undefined : String(raw)
+}
+
 // work.date values are free-form but ISO-prefixed ("2026-08-02 (arXiv v1)…",
 // "2007-07", "1981"); parse the prefix for sorting and month display.
 export function dateOf(entry: CollectionEntry<'library'>): {
   sortKey: string
   month?: string
 } {
-  // Unquoted YAML dates arrive as Date objects, bare years as numbers.
-  const raw = workOf(entry).date as unknown
-  const s =
-    raw instanceof Date ? raw.toISOString().slice(0, 10) : String(raw ?? '')
+  const s = displayDateOf(entry) ?? ''
   const m = s.match(/^(\d{4})(?:-(\d{2}))?(?:-(\d{2}))?/)
   if (!m) return { sortKey: '0000' }
   // Mixed precision, newest-first: year-only dates sort ABOVE the year's
@@ -61,5 +66,6 @@ export function fieldOf(
   key: string,
 ): string | undefined {
   const v = (entry.data as Record<string, unknown>)[key]
+  if (v instanceof Date) return v.toISOString().slice(0, 10)
   return typeof v === 'string' ? v : undefined
 }
