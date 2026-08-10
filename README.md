@@ -1,12 +1,14 @@
-# sys0
+# qobilidop/sys0
 
-Incarnation 0 of sys — Bili's public hub for knowledge, skills, and process.
-Rendered at <https://qobilidop.github.io/sys0/>.
+## What is sys0?
+
+- Bili's public digital system, version 0.
+- Built around human-AI collaboration.
+- Web view: https://qobilidop.github.io/sys0/.
 
 ## License
 
-Code is MIT ([LICENSE-MIT](LICENSE-MIT)); everything else — prose, data,
-images — is CC BY 4.0 ([LICENSE-CC-BY](LICENSE-CC-BY)). The split is by the
-nature of each file, not its location; a notice in an individual file
-overrides these defaults. Parts of this repository are written with AI
-assistance.
+- Code: [MIT](LICENSE-MIT)
+- Non-code: [CC BY 4.0](LICENSE-CC-BY)
+
+A notice in an individual file overrides these defaults.
