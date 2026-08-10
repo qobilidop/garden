@@ -9,7 +9,8 @@ interface Props {
 
 const { title, description } = Astro.props
 const base = import.meta.env.BASE_URL.replace(/\/$/, '')
-const pageTitle = title ? `${title} · sys0` : 'sys0'
+const siteName = 'qobilidop/sys0'
+const pageTitle = title ? `${title} · ${siteName}` : siteName
 ---
 
 <!doctype html>
@@ -19,7 +20,7 @@ const pageTitle = title ? `${title} · sys0` : 'sys0'
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{pageTitle}</title>
     {description && <meta name="description" content={description} />}
-    <link rel="icon" href={`${base}/favicon.svg`} type="image/svg+xml" />
+    <link rel="icon" href={`${base}/favicon.png`} type="image/png" sizes="128x128" />
     <script is:inline>
       // Pre-paint: apply the stored theme choice before first render so
       // an explicit toggle never flashes the system theme.
@@ -30,11 +31,11 @@ const pageTitle = title ? `${title} · sys0` : 'sys0'
   <body>
     <header class="site-header">
       <nav>
-        <a href={`${base}/`} class="brand">sys0</a>
+        <a href={`${base}/`} class="brand">qobilidop/sys0</a>
         <a href={`${base}/library/`}>library</a>
         <a href={`${base}/wiki/`}>wiki</a>
         <a href={`${base}/surveys/`}>surveys</a>
-        <a href={`${base}/search/`}>search</a>
+        <a href={`${base}/search/`} class="search">search</a>
         <button id="theme-toggle" class="theme-toggle" aria-label="Toggle light/dark theme" title="Toggle light/dark theme">◐</button>
       </nav>
     </header>
@@ -43,9 +44,9 @@ const pageTitle = title ? `${title} · sys0` : 'sys0'
     </main>
     <footer class="site-footer">
       <p>
-        <a href="https://github.com/qobilidop/sys0">source</a> · text
-        <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> ·
-        code <a href="https://github.com/qobilidop/sys0/blob/main/LICENSE-MIT">MIT</a>
+        <a href="https://github.com/qobilidop/sys0">source</a> · code
+        <a href="https://github.com/qobilidop/sys0/blob/main/LICENSE-MIT">MIT</a> ·
+        non-code <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
       </p>
     </footer>
     <script>

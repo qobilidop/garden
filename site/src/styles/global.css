@@ -70,6 +70,11 @@ body {
   body {
     font-size: 17px;
   }
+
+  .site-header nav {
+    gap: 0.5rem 0.75rem;
+    flex-wrap: wrap;
+  }
 }
 
 /* Header / nav — apparatus, sans */
@@ -95,8 +100,11 @@ body {
   font-weight: 600;
 }
 
-.theme-toggle {
+.site-header a.search {
   margin-left: auto;
+}
+
+.theme-toggle {
   padding: 0;
   border: none;
   background: none;
