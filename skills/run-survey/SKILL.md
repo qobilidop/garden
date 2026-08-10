@@ -255,7 +255,9 @@ Shape note, as intent rather than drift.
   + `content.typ` (body; a long manuscript may split into
   `sections/*.typ` files it includes) + `manuscript.typ` (paged
   entrypoint, imports `surveys/style.typ`) + `manuscript-html.typ`
-  (HTML wrapper, `html.elem` title block). The byline names the
+  (HTML wrapper, `html.elem` title block; its meta row links to the
+  landing page and survey record, while the landing page owns
+  HTML/PDF cross-format navigation). The byline names the
   accountable human author; the `author-note` title-page footnote
   carries the four-part disclosure: human accountability, the named
   system/model and its scope of assistance, "AI output is not

@@ -18,5 +18,8 @@ build or render misbehaves.
   build HTML title blocks from `html.elem`.
 - The HTML math export drops decorations like `overline` (MathML
   warnings) — a known cosmetic limit.
+- A MathML root with `display="block"` already has native `block math`
+  layout and centering — styling it with ordinary `display: block`
+  or `display: inline` disables mathematical layout.
 - Typst embeds Libertinus Serif and DejaVu Sans Mono — no font
   packages needed for those.

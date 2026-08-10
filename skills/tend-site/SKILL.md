@@ -28,8 +28,16 @@ site.yml`, then watch the new run and curl the live page.
 - Errors thrown inside the markdown pipeline are logged but the build
   exits 0 — a check that must gate CI throws at config load instead.
   Verify enforcement by exit code, never by error text.
-- Preview: `npm run preview` (localhost:4321/sys0/); screenshot and show
-  the user before proposing a commit — visual changes get visual review.
+- Preview: `npm run preview`; use the URL it prints because the port may
+  vary. Screenshot and show the user before proposing a commit — visual
+  changes get visual review.
+- Survey manuscript presentation: compare representative HTML renders
+  with the corresponding equation- or layout-heavy PDF pages; typography
+  and mathematical structure should stay visually close even though
+  pagination differs. On render trouble, open
+  `skills/run-survey/references/typst.md`. A static renderer is only a
+  typographic smoke test; if no browser is available, report responsive,
+  interactive, and browser-engine-specific behavior as unverified.
 - Deploy: push triggers `.github/workflows/site.yml` (builds in the dev
   image, deploys to Pages). Watch by exit code
   (`gh run watch <id> --exit-status`), then curl the live page for the
