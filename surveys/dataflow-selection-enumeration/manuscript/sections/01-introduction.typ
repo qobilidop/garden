@@ -57,27 +57,12 @@ The survey therefore separates three choices that are often conflated:
 - the _representation_, which stores guards, residuals, witnesses, and shared
   structure.
 
-This separation makes established approaches directly comparable. Projected
-AllSMT enumerates selected finite coordinates @phan2015allsmtr and can emit
-disjoint partial covers @spallitta2024disjoint @spallitta2025projected.
-PESO and SPD already organize symbolic exploration around requested outputs or
-query-relevant path families, with guarded symbolic results
-@qi2013output @santelices2010dependencies; mux functional-space partitioning is
-a close pure-dataflow guard/residual predecessor @feng2004dynamic. Multi-path
-symbolic execution supplies the broader guarded-residual basis
-@sen2015multise. Functional-logic search begins with fingerprints of executed
-nondeterministic steps, later propagates stable choice identities through
-runtime copies, and ultimately exposes demand-populated task maps
-@antoy2009setfunctions @alqaddoumi2010pulltab @hanus2021memoized. Lazy
-SmallCheck refines only the input fragments demanded by a Boolean observer
-@runciman2008smallcheck. Decision trees and diagrams compile finite observer
-functions @bryant1986bdd @bahar1997add. Hyperplane and parametric methods give
-stronger output-sensitive enumeration results for affine special cases
-@avis1996reverse @jones2006parametric, while Wang et al. prove polynomial-delay
-enumeration of equivalence classes under a decomposable AND/OR representation
-@wang2021equivalence. None of these names alone specifies the
-selection-observation problem; the comparison depends on the observer and
-contract attached to the method.
+This separation makes six overlapping routes comparable: guarded symbolic
+execution, projected enumeration, compiled decision structures, demand-guided
+search, geometric or parametric specialization, and compositional summaries.
+Each route has strong precedents, but its name alone does not determine the
+observer or supply the complete record contract. @sec-routes introduces the
+representative literature only where each route is analyzed.
 
 The paper answers four questions:
 
@@ -114,10 +99,11 @@ communities can be transferred only when their observers and assumptions
 actually agree.
 
 @sec-example develops the problem through one graph. @sec-framework then
-defines its semantics independently of any solver, and @sec-method states the
-survey's evidence boundary. @sec-routes presents the six solution routes;
-@sec-synthesis compares their observers, guarantees, and closest established
-results. @sec-algorithms gives the two general enumeration presentations, and
-@sec-complexity separates their costs from stronger specialized frontiers.
-@sec-boundaries states the remaining boundaries and open problems, and
-@sec-conclusion closes with the main conclusions.
+defines its core semantics independently of any solver, and @sec-method states
+the survey's evidence boundary. @sec-routes presents the six solution routes,
+@sec-algorithms gives two general enumeration presentations, and
+@sec-composition states the compositional extension. @sec-complexity separates
+general costs from stronger specialized frontiers; @sec-synthesis then compares
+observers, guarantees, and closest established results. @sec-boundaries states
+the remaining boundaries and open problems, and @sec-conclusion closes with the
+main conclusions.

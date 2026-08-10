@@ -5,158 +5,150 @@ not yet show whether they solve the same problem. This section compares their
 observers and record guarantees, identifies the closest established results
 that bound the survey's claims, and answers the four research questions.
 
-== Observer agreement
+== Observer, contract, and representation
 
-Projected enumeration is a direct reduction after reachability instrumentation.
-Candidate-local symbolic execution is a direct presentation after demanded
-evaluation and grouping by exact fibers. Decision structures are direct when
-they compile the totalized selection observer rather than only the output
-function. Demand-guided methods are direct only after their demand relation and
-grouping contract are aligned with the framework. Dense-sign geometric methods
-are direct restricted specializations; parametric critical regions use a
-different observer unless an explicit correspondence is established.
-Compositional summaries preserve the observer only with
-requested-root demand, contextual identity, and explicit interface support.
+The observer-kernel test gives the shortest comparison. Projected enumeration
+and candidate-local symbolic evaluation are direct general presentations after
+the instrumentation proved in @sec-algorithms. Decision structures are direct
+when they compile the totalized observer; dense-sign geometry is direct only on
+its all-sites-observed affine restriction; and demand-guided, parametric, or
+compositional methods require the correspondence conditions stated in
+@sec-routes and @sec-composition.
 
-This classification is more informative than asking whether a method emits a
-“partial assignment.” Structural absence is an observer value. Existential
-projection hides coordinates from a formula. A logical don't-care permits
-either value while preserving a represented set. Equal-residual coalescing
-changes the observer through a quotient. The four operations can yield similar
-syntax while inducing different fibers.
+This is more precise than asking whether a method emits a “partial assignment.”
+Structural absence is an observer value; existential projection hides formula
+coordinates; a logical don't-care represents either value; and equal-residual
+coalescing takes a quotient. Similar syntax can therefore denote different
+fibers.
 
-== Guarantees and representations
+The record contract adds four independent obligations: duplicate-free
+coverage, guard/fiber equivalence, residual correctness, and a witness. Output
+representation remains orthogonal: a flat record stream, tree, decision DAG,
+or polyhedral complex may encode the same observer while charging very
+different construction and serialization costs. The two tables below separate
+published native guarantees from the framework correspondence needed to obtain
+the target contract.
 
-The exact record contract has four independent obligations: complete
-duplicate-free observation coverage, guard/fiber equivalence, residual correctness
-throughout the guard, and a feasibility witness. Projected image enumeration
-primarily supplies the first; symbolic evaluation supplies residuals; model
-production supplies witnesses; and the framework's guard theorem connects the
-local record to the semantic fiber. No route inherits all four obligations
-merely from its name.
+== Complexity takeaway
 
-Representation is orthogonal. Flat guards favor streaming and simple APIs but
-can repeat shared predicates and residuals. Trees preserve encountered-test
-structure. BDDs, ADDs, d-DNNFs, and related DAGs share subproblems but charge
-compilation and representation choices. Polyhedral complexes expose adjacency
-that flat formulas omit. Consequently, record count alone cannot compare two
-implementations that serialize different objects.
-
-== Complexity and applicability
-
-The general problem has exponentially many observations, NP-hard
-single-outcome feasibility, and \#P-hard counting special cases. One
-successful model query per observation plus a final exhaustion query is only an
-oracle-call accounting. It gives no OutputP, incremental-polynomial,
-polynomial-delay, or wall-clock theorem. Geometric and parametric restrictions
-have genuine output-sensitive algorithms; compiled methods may amortize
-enumeration after potentially expensive preprocessing; local methods may avoid
-unobserved cones but repeat solver and residual work. These are tradeoffs, not
-a universal ranking.
+The general problem can have exponentially many observations and contains hard
+feasibility and counting special cases. Its $K+1$ model-query accounting is not
+an output-sensitive theorem; stronger guarantees belong to restricted or
+precompiled inputs and must charge residuals, witnesses, and representation
+size as @sec-complexity specifies.
 
 == Closest established results
 
-The nearest results are output-directed and dataflow-specific, not only broad
-neighboring literatures. PESO is the closest formal predecessor: it enumerates
-relevant-slice conditions for requested output criteria, associates symbolic
-outputs and tests, and proves exploration completeness under explicit finite
-model and solver assumptions @qi2013output. SPD is the closest shared
-path-family/residual predecessor @santelices2010dependencies. Feng et al.'s
-mux functional-space cells are the closest restricted pure-dataflow
-guard/residual representation @feng2004dynamic, and Kanade et al. are the
-closest graphical-dataflow trace-equivalence predecessor, although their
-symbolic region underapproximates one sampled trace class
-@kanade2009simulink. Sylvia supplies a modern modular RTL comparison with
-replayable witnesses, but its feasible fragment combination retains an
-exponential stated worst case @ryan2023sylvia.
-
-Functional-logic fingerprints are the closest lineage for the sparse map
-shape: set functions record executed nondeterministic steps, pull-tabbing
-introduces stable choice-ID/outcome propagation through runtime copies, and
-memoized pull-tabbing exposes the later task-local partial map
-@antoy2009setfunctions
-@alqaddoumi2010pulltab @hanus2021memoized. The observer is nondeterministic
-evaluation history rather than a deterministic caller-input fiber. SPLat adds
-a close configuration-testing precedent: first reads populate a decision
-stack, SAT prunes feature-model-infeasible partial assignments, and concrete
-configurations witness claimed distinct test traces @kim2013splat.
+The nearest results are output-directed and dataflow-specific, while the
+strongest novelty boundary comes from exact equivalence-class enumeration on a
+different representation. @tab-closest-guarantees consolidates those published
+native objects and guarantees.
 
 #figure(
   block(breakable: true)[
-    #text(size: 7.2pt)[
+    #text(size: 8.1pt)[
       #table(
-        columns: (0.9fr, 1.35fr, 1.25fr, 1.45fr, 1.25fr),
+        columns: (24%, 22%, 25%, 29%),
         align: left,
-        inset: 3pt,
+        inset: 3.5pt,
         stroke: (x: none, y: 0.4pt + luma(200)),
         table.header(
-          [*Work or route*], [*Native observer/output*], [*Coverage guarantee*],
-          [*Guard · residual · witness*], [*Kernel/contract relation*],
+          [*Work and native object*], [*Coverage guarantee*],
+          [*Guard · residual · witness*], [*Relation to target*],
         ),
-        [PESO], [Relevant-slice conditions at requested outputs],
+        [PESO: relevant-slice conditions at requested outputs @qi2013output],
           [Conditionally complete exploration of finite RSCs],
           [RSC/path condition · symbolic output · solver test],
           [Kernel equality open; may refine or fragment a target fiber],
-        [SPD], [Dependence-relevant path-family graph for queried uses],
+        [SPD: queried-use path-family graph @santelices2010dependencies],
           [Exact mode described as pathwise-equivalent; no numbered end-to-end theorem],
           [Path-family condition · shared guarded values · no exposed witness record],
           [Kernel equality open; dependence families may be finer],
-        [Feng et al.], [Mux control/data functional-space cells],
+        [Feng et al.: mux functional-space cells @feng2004dynamic],
           [Mutually exclusive functional-space partition intended],
           [Boolean control · data expression · no witness],
           [Restricted-close; merge choices can make its kernel coarser],
-        [Kanade et al.], [Bounded discrete trace including conditional outcomes],
+        [Kanade et al.: bounded discrete trace @kanade2009simulink],
           [Sampled class is underapproximated],
           [Sufficient predicate · transformer · sample],
           [Different trace observer; sampled region is not a full kernel class],
-        [Fingerprints / MPT], [Task-local choice-ID/outcome map],
+        [Sylvia: RTL path-fragment combination @ryan2023sylvia],
+          [Feasible combinations are SMT-filtered; stated worst case is exponential],
+          [Fragment constraints · no fiber-wide residual · replayable model],
+          [Adjacent modular construction; no selection-fiber theorem],
+        [Fingerprints / MPT: executed-choice map @antoy2009setfunctions
+          @alqaddoumi2010pulltab @hanus2021memoized],
           [Search guarantees are source-strategy-specific],
           [No input guard · result value, not residual · task],
           [Different input domain and observer; no kernel order established],
-        [SPLat], [Reachable test trace under configuration inputs],
+        [SPLat: reachable configuration test trace @kim2013splat],
           [One execution per distinct trace is claimed; no formal exactness theorem],
           [Partial configuration cylinder · none · execution],
           [Trace kernel may be finer or incomparable to selection events],
-        [Wang et al.], [Colored solution-tree equivalence class],
+        [Wang et al.: colored solution-tree class @wang2021equivalence],
           [Every class exactly once; delay $O(n s)$],
           [No input guard · class tree · no witness],
           [Different solution domain; incomparable without a reduction],
-        [Projected AllSMT], [Instrumented totalized observation tuple],
+      )
+    ]
+  ],
+  caption: [Closest and novelty-bounding published comparisons. “Open” means
+  that this survey does not prove equality with the target observer or
+  one-record contract.],
+  kind: table,
+) <tab-closest-guarantees>
+
+The general routes require a separate table because several rows are framework
+reductions or restricted correspondences rather than native end-to-end
+algorithms for the target.
+
+#figure(
+  block(breakable: true)[
+    #text(size: 8.1pt)[
+      #table(
+        columns: (24%, 22%, 25%, 29%),
+        align: left,
+        inset: 3.5pt,
+        stroke: (x: none, y: 0.4pt + luma(200)),
+        table.header(
+          [*Route and native object*], [*Coverage guarantee*],
+          [*Guard · residual · witness*], [*Framework correspondence*],
+        ),
+        [Projected AllSMT: instrumented observation tuple @phan2015allsmtr],
           [Complete tuples enumerate the exact image],
           [Existential fiber · no residual · model],
           [Same kernel after faithful activity/outcome instrumentation],
-        [BDD/ADD compilation], [Finite encoded observer function],
+        [BDD/ADD compilation: finite observer function @bryant1986bdd @bahar1997add],
           [Exact for the compiled function; BDD canonicity needs fixed order],
           [Terminal preimage · optional terminal residual · optional model],
-          [Same kernel iff terminal labels injectively relabel the totalized observer],
-        [Hyperplane traversal], [Strict sign cell],
+          [Same kernel iff labels injectively relabel the totalized observer],
+        [Hyperplane traversal: strict sign cell @avis1996reverse @rada2018new],
           [Complete, duplicate-free, output-sensitive under source cost models],
           [Polyhedral cell · separate/charged · method-specific],
           [Same kernel on the boundary-free all-sites-observed affine restriction],
-        [Parametric traversal], [Optimizer basis or critical region],
+        [Parametric traversal: optimizer basis or region @jones2006parametric
+          @columbano2009sufficient],
           [Full-dimensional basis/region coverage under stated assumptions],
           [Closed polyhedron · affine optimizer · method-specific],
           [Usually different; boundary overlap prevents a disjoint all-input kernel],
-        [Guarded component summaries], [Namespaced component observations under demanded ports],
+        [Guarded component summaries: namespaced observations under demanded
+          ports @geyer2010mode],
           [Exact under full-domain locality and contextual identity assumptions],
-          [Conjoined guard · substituted residual · witness recovered by solving the composed guard],
+          [Conjoined guard · substituted residual · witness from composed guard],
           [Same kernel as flattening under the composition theorem],
       )
     ]
   ],
-  caption: [Guarantees of the closest representatives. “Open” means that this
-  survey does not prove equality with the target observer or one-record
-  contract.],
+  caption: [Route-level guarantees after the instrumentation or restrictions
+  required by the unified framework.],
   kind: table,
-) <tab-guarantees>
+) <tab-route-guarantees>
 
-Wang et al. are important because they defeat a broader novelty claim: their
-dynamic program enumerates every locally colored equivalence class of solution
-trees in an acyclic decomposable AND/OR graph exactly once with delay
-$O(n s)$ @wang2021equivalence. Exact quotient enumeration is therefore not new
-as a general objective. Their class-tree output and decomposability assumptions
-do not supply a reduction from arbitrary selection fibers, caller-input guards,
-residuals, or witnesses.
+The tables make two novelty boundaries explicit. Output-directed guarded
+exploration and sparse executed-choice maps are established, and Wang et al.
+already prove exact polynomial-delay quotient enumeration for a restricted
+decomposable representation. Their class-tree output does not, however, supply
+arbitrary caller-input guards, residuals, or witnesses.
 
 Three exact correspondences remain open: whether instrumented PESO plus RSC
 quotienting yields exactly one selection fiber; whether SPD's dependence
@@ -223,12 +215,12 @@ proved. General output-sensitive complexity does not follow from sparse demand
 or one model per fiber. Stronger bounds belong to restricted geometric,
 parametric, or compiled inputs and must charge their representations. The
 route-by-route obligations and assumptions are summarized in
-@tab-guarantees.
+@tab-closest-guarantees and @tab-route-guarantees.
 
 *RQ4.* Approaches induce the same fibers when their observer kernels agree
 after explicit instrumentation. Their labeled images and record schemas then
 correspond only after an explicit image bijection. Coordinate projection,
 equal-behavior merging, path refinement, and property-guided search otherwise
 produce coarser, finer, or incomparable partitions. This observer test is the
-framework's primary rule for transferring results across terminology;
-@tab-guarantees records the known equality, open, and incomparable cases.
+framework's primary rule for transferring results across terminology; the two
+guarantee tables record the known equality, open, and incomparable cases.

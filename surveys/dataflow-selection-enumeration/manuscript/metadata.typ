@@ -6,14 +6,14 @@
 #let subtitle = "A Survey and Unified Framework"
 #let byline = "Bili Dong"
 #let author-note = [
-  The byline names the accountable human author, who directed the
-  work, gated every stage, and takes responsibility for the content.
+  The byline names the accountable human author, who directed and gated the
+  work and takes responsibility for its content.
   OpenAI Codex (GPT-5.6 Sol) provided substantial assistance with
   literature-search planning, evidence organization, cross-paper
   synthesis, formal presentation, manuscript drafting and editing,
-  and repository tooling. AI output is not treated as evidence;
-  literature claims rest on the cited primary sources and the public
-  working record in the repository.
+  and repository tooling. AI output is not treated as evidence; literature
+  claims rest on the cited primary sources. The survey record linked in the
+  title metadata documents the working evidence and synthesis trail.
 ]
 #let draft = "Draft 2026-08-09"
 #let landing = "https://qobilidop.github.io/sys0/surveys/dataflow-selection-enumeration/"

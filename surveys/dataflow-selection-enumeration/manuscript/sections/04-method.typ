@@ -85,11 +85,9 @@ captured occurrences rather than a population. The framework itself can bias
 classification: a theorem proved for a different observer must not be silently
 transferred after adding instrumentation or changing the output quotient.
 
-Initial extraction and the repeated duplicate-screening passes were conducted
-with substantial assistance from OpenAI Codex (GPT-5.6 Sol) under the author's
-direction. The passes reused the same project framing and are repeated
-AI-assisted checks, not independent human reviewers; no inter-rater agreement
-statistic was computed. Bili Dong is the sole author of record, directed the
-project, and accepts responsibility for the manuscript. AI output is not
-treated as evidence: literature claims are tied to primary sources, and the
-mathematical statements remain subject to human verification.
+Discovery, extraction, and the repeated duplicate-screening passes used
+substantial assistance from OpenAI Codex (GPT-5.6 Sol). Because the passes
+reused the same project framing, they are repeated AI-assisted checks, not
+independent human reviews; no inter-rater agreement statistic was computed.
+The title-page note gives the full authorship, assistance, evidence-use, and
+public-record disclosure.

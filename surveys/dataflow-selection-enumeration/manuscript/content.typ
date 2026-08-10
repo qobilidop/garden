@@ -5,14 +5,25 @@
 #include "sections/03-framework.typ"
 #include "sections/04-method.typ"
 #include "sections/05-routes.typ"
-#include "sections/06-synthesis.typ"
-#include "sections/07-algorithms.typ"
+#include "sections/06-algorithms.typ"
+#include "sections/07-composition.typ"
 #include "sections/08-complexity.typ"
-#include "sections/09-boundaries.typ"
-#include "sections/10-conclusion.typ"
+#include "sections/09-synthesis.typ"
+#include "sections/10-boundaries.typ"
+#include "sections/11-conclusion.typ"
 
-#bibliography(
-  "references.bib",
-  style: "apa",
-  title: [References],
-)
+#context if target() == "html" {
+  bibliography(
+    "references.bib",
+    style: "apa",
+    title: [References],
+  )
+} else {
+  set text(size: 9.7pt)
+  set par(leading: 0.52em)
+  bibliography(
+    "references.bib",
+    style: "apa",
+    title: [References],
+  )
+}

@@ -40,7 +40,7 @@ finding, and the validator enforces the bindings.
 - **Works:** voogd2025compositional,sen2015multise,porncharoenwase2022merging,lu2023grisette
 - **Anchors:** sources/voogd2025compositional.md#evidence-locations;sources/sen2015multise.md#evidence-locations;sources/porncharoenwase2022merging.md#evidence-locations;sources/lu2023grisette.md#evidence-locations
 - **Supports:** C02,C03
-- **Manuscript:** sec-introduction,sec-routes
+- **Manuscript:** sec-routes
 - **Scope:** definitions and correctness theorems
 - **Caveat:** The exact equivalence conditions and merge contracts differ across languages; correspondence with selection fibers is our synthesis.
 - **Certainty:** low
@@ -62,7 +62,7 @@ finding, and the validator enforces the bindings.
 - **Works:** phan2015allsmtr,spallitta2024disjoint,spallitta2025projected
 - **Anchors:** sources/phan2015allsmtr.md#evidence-locations;sources/spallitta2024disjoint.md#evidence-locations;sources/spallitta2025projected.md#evidence-locations
 - **Supports:** C01,C02,C03,C15
-- **Manuscript:** sec-introduction,sec-routes,sec-algorithms
+- **Manuscript:** sec-routes,sec-algorithms,sec-synthesis
 - **Scope:** algorithm and coverage/nonrepetition results
 - **Caveat:** Phan enumerates important Boolean coordinates; relevant theory-variable values are sampled annotations. A short projected cube can cover several complete observation tuples; equality with local exact fibers requires activity instrumentation and totalized output coordinates.
 - **Certainty:** high
@@ -84,7 +84,7 @@ finding, and the validator enforces the bindings.
 - **Works:** bryant1986bdd,bahar1997add
 - **Anchors:** sources/bryant1986bdd.md#evidence-locations;sources/bahar1997add.md#evidence-locations
 - **Supports:** C07,C15
-- **Manuscript:** sec-introduction,sec-routes
+- **Manuscript:** sec-routes,sec-synthesis
 - **Scope:** representation definitions and complexity
 - **Caveat:** A symbolic residual per observation terminal requires an additional construction.
 - **Certainty:** high
@@ -106,7 +106,7 @@ finding, and the validator enforces the bindings.
 - **Works:** runciman2008smallcheck
 - **Anchors:** sources/runciman2008smallcheck.md#evidence-locations
 - **Supports:** C01,C06,C15
-- **Manuscript:** sec-introduction,sec-routes
+- **Manuscript:** sec-routes
 - **Scope:** algorithm and exhaustiveness argument
 - **Caveat:** It does not emit one canonical exact guard/residual record per selection-observation fiber.
 - **Certainty:** high
@@ -150,7 +150,7 @@ finding, and the validator enforces the bindings.
 - **Works:** avis1996reverse,sleumer1998output,ferrez2005fixedrank,rada2018new
 - **Anchors:** sources/avis1996reverse.md#evidence-locations;sources/sleumer1998output.md#evidence-locations;sources/ferrez2005fixedrank.md#evidence-locations;sources/rada2018new.md#evidence-locations
 - **Supports:** C04,C15
-- **Manuscript:** sec-introduction,sec-routes,sec-complexity
+- **Manuscript:** sec-routes,sec-complexity,sec-synthesis
 - **Scope:** algorithms, spanning arguments, and complexity theorems
 - **Caveat:** Bounds do not transfer to non-strict boundary fibers or arbitrary caller predicates.
 - **Certainty:** high
@@ -194,7 +194,7 @@ finding, and the validator enforces the bindings.
 - **Works:** geyer2010mode,geyer2008optimal
 - **Anchors:** sources/geyer2010mode.md#evidence-locations;sources/geyer2008optimal.md#evidence-locations
 - **Supports:** C01,C04,C09,C15
-- **Manuscript:** sec-routes,sec-complexity,sec-framework
+- **Manuscript:** sec-routes,sec-complexity,sec-composition,sec-synthesis
 - **Scope:** composition, exactness, and complexity results
 - **Caveat:** These methods preserve extensional affine behavior rather than contextual graph events.
 - **Certainty:** high
@@ -205,7 +205,7 @@ finding, and the validator enforces the bindings.
 - **Works:** jones2006parametric
 - **Anchors:** sources/jones2006parametric.md#evidence-locations
 - **Supports:** C04,C10,C15
-- **Manuscript:** sec-introduction,sec-routes,sec-complexity
+- **Manuscript:** sec-routes,sec-complexity,sec-synthesis
 - **Scope:** algorithm and complexity theorem
 - **Caveat:** The theorem is basis and full-dimensional-region relative and omits a coefficient-bit bound.
 - **Certainty:** high
@@ -216,7 +216,7 @@ finding, and the validator enforces the bindings.
 - **Works:** jones2006lcp,columbano2009sufficient
 - **Anchors:** sources/jones2006lcp.md#evidence-locations;sources/columbano2009sufficient.md#evidence-locations
 - **Supports:** C04,C10,C15
-- **Manuscript:** sec-routes,sec-complexity
+- **Manuscript:** sec-routes,sec-complexity,sec-synthesis
 - **Scope:** full-dimensional pLCP basis enumeration under the papers' matrix and perturbation assumptions
 - **Caveat:** Perturbed bases can outnumber unperturbed regions; the analysis retains an output-sized visited set and proves neither a coefficient-bit nor a DelayP bound.
 - **Certainty:** high
@@ -455,7 +455,7 @@ finding, and the validator enforces the bindings.
 - **Works:** qi2013output
 - **Anchors:** sources/qi2013output.md#evidence-locations
 - **Supports:** C02,C03,C15
-- **Manuscript:** sec-introduction,sec-routes,sec-synthesis
+- **Manuscript:** sec-routes,sec-synthesis
 - **Scope:** the paper's finite symbolic program model and RSC exploration assumptions
 - **Caveat:** Equal RSCs fix symbolic outputs, but the paper does not prove that RSCs are the coarsest output quotient or that one RSC equals one instrumented selection fiber.
 - **Certainty:** high
@@ -466,7 +466,7 @@ finding, and the validator enforces the bindings.
 - **Works:** santelices2010dependencies
 - **Anchors:** sources/santelices2010dependencies.md#evidence-locations
 - **Supports:** C02,C03,C15
-- **Manuscript:** sec-introduction,sec-routes,sec-synthesis
+- **Manuscript:** sec-routes,sec-synthesis
 - **Scope:** the paper's symbolic program-dependence construction and exact mode
 - **Caveat:** The paper describes equality with pathwise symbolic execution but gives no numbered end-to-end soundness/completeness theorem; exact correspondence to selection fibers is open.
 - **Certainty:** moderate
@@ -477,7 +477,7 @@ finding, and the validator enforces the bindings.
 - **Works:** feng2004dynamic
 - **Anchors:** sources/feng2004dynamic.md#evidence-locations
 - **Supports:** C02,C04,C15
-- **Manuscript:** sec-introduction,sec-synthesis
+- **Manuscript:** sec-synthesis
 - **Scope:** symbolic simulation of the paper's hardware/dataflow model
 - **Caveat:** Heuristic split points and merging can erase source-event provenance; the paper does not prove the target's one-record-per-contextual-observation contract.
 - **Certainty:** moderate
@@ -510,7 +510,7 @@ finding, and the validator enforces the bindings.
 - **Works:** antoy2009setfunctions
 - **Anchors:** sources/antoy2009setfunctions.md#evidence-locations
 - **Supports:** C06,C07,C15
-- **Manuscript:** sec-introduction,sec-routes,sec-synthesis
+- **Manuscript:** sec-routes,sec-synthesis
 - **Scope:** the paper's functional-logic computation-space semantics
 - **Caveat:** Complete strategies enumerate values, but the paper does not prove stable identity across runtime copies, one canonical fingerprint class, a caller-input guard, or a symbolic residual per graph observation.
 - **Certainty:** high
@@ -521,7 +521,7 @@ finding, and the validator enforces the bindings.
 - **Works:** alqaddoumi2010pulltab
 - **Anchors:** sources/alqaddoumi2010pulltab.md#evidence-locations
 - **Supports:** C06,C07,C15
-- **Manuscript:** sec-introduction,sec-routes,sec-synthesis
+- **Manuscript:** sec-routes,sec-synthesis
 - **Scope:** call-time choice under the paper's pull-tab transformation
 - **Caveat:** The paper gives neither a numbered soundness/completeness theorem nor deterministic caller-input fibers and residuals.
 - **Certainty:** moderate
@@ -532,7 +532,7 @@ finding, and the validator enforces the bindings.
 - **Works:** hanus2021memoized
 - **Anchors:** sources/hanus2021memoized.md#evidence-locations
 - **Supports:** C06,C07,C15
-- **Manuscript:** sec-introduction,sec-routes,sec-synthesis
+- **Manuscript:** sec-routes,sec-synthesis
 - **Scope:** the paper's memoized functional-logic evaluation scheme
 - **Caveat:** Correctness and operational completeness are attributed to earlier pull-tabbing results; MPT itself does not define or prove exact input guards, residuals, or selection-fiber coverage.
 - **Certainty:** moderate
@@ -554,7 +554,7 @@ finding, and the validator enforces the bindings.
 - **Works:** wang2021equivalence
 - **Anchors:** sources/wang2021equivalence.md#evidence-locations
 - **Supports:** C05,C15
-- **Manuscript:** sec-introduction,sec-synthesis,sec-complexity
+- **Manuscript:** sec-synthesis,sec-complexity
 - **Scope:** the supplied decomposable acyclic graph, local coloring equivalence, graph size \(n\), and solution size \(s\)
 - **Caveat:** The output is a colored class tree, not a caller-input guard, residual, or witness; no general reduction from arbitrary observer fibers is proved.
 - **Certainty:** high

@@ -8,21 +8,46 @@ frontiers for geometric and parametric specializations.
 
 == Parameters and enumeration classes
 
-Let $S_G$ be weighted source-DAG size, including nodes, edges, case lists,
-constants, widths, and aggregate leaves. Let $S_("enc")$ be the actual shared
-global value-and-reachability encoding size, including source wiring, one
-reachability equation per relevant node and edge, ordinary
-primitives, classifiers, outcome encodings, direct case-membership predicates,
-selected combiners, selection multiplexing, and typed-domain constraints. This
-may be larger than $S_G$. Let $S_(A_("enc"))$ be the shared size of
-$A_("enc")=op("Dom")_G and A$, including the caller constraint and the typed-domain
-encoding; $n_Q=abs(Q)$ the number of sites;
-$b_q=abs(Omega_q)$; $K$ the number of feasible observations; $L$ the maximum
-observed-site count in one record; $S_tau$ the corresponding demanded
-subencoding size for record $tau$; and $S_("out")$ the total serialized or DAG
-output size, whichever representation is declared. Let $W_("wit")$ be the
-total serialized size of the emitted witnesses. Finally,
-$T_("SMT")(phi)$ denotes the cost of deciding $phi$ and producing a model.
+@tab-complexity-parameters fixes the charge model used below. Formula sizes are
+shared-DAG sizes unless a serialized representation is named explicitly.
+
+#figure(
+  block(breakable: false)[
+    #text(size: 8.3pt)[
+      #table(
+        columns: (20%, 39%, 41%),
+        align: left,
+        inset: 3.8pt,
+        stroke: (x: none, y: 0.4pt + luma(200)),
+        table.header([*Symbol*], [*Meaning*], [*What is charged*]),
+        [$S_G$], [Weighted source-DAG size],
+          [Nodes, edges, case lists, constants, widths, and aggregate leaves],
+        [$S_("enc")$], [Actual global value-and-reachability encoding size],
+          [Source wiring; reachability equations; primitives; classifiers;
+          outcomes; case membership; selected combiners; multiplexing; typed domains],
+        [$A_("enc")$, $S_(A_("enc"))$],
+          [$A_("enc")=op("Dom")_G and A$ and its shared size],
+          [Typed-domain encoding plus the caller constraint],
+        [$n_Q$, $b_q$, $K$, $L$],
+          [Site count, outcomes at $q$, feasible observations, and maximum
+          observed sites per record],
+          [Structural and output cardinalities],
+        [$S_tau$], [Demanded subencoding size for record $tau$],
+          [Candidate-local guard and residual construction],
+        [$S_("out")$, $W_("wit")$],
+          [Declared total output size and serialized witness size],
+          [Flat serialization or shared output DAG, plus witnesses],
+        [$T_("SMT")(phi)$], [Cost of deciding $phi$ and producing a model],
+          [Solver work rather than oracle-call count alone],
+      )
+    ]
+  ],
+  caption: [Complexity parameters and their charge boundaries.],
+  kind: table,
+) <tab-complexity-parameters>
+
+In particular, $S_("enc")$ may be larger than $S_G$, and $S_("out")$ is
+meaningful only together with its declared flat or shared representation.
 
 The source-node count alone is insufficient. A width-$w$ mask-valued selector is
 one node but can have $2^w$ mask outcomes. Lowering one multiway site to binary
