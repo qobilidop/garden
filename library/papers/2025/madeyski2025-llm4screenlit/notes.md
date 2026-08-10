@@ -8,9 +8,7 @@ work:
   doi: 10.1016/j.infsof.2026.108204
   arxiv: 2511.12635 v2 (2026-04-25, post-acceptance revision — the captured artifact)
 sources:
-  pdf:
-    url: https://arxiv.org/pdf/2511.12635v2
-    archived: https://web.archive.org/web/20260809053017/https://arxiv.org/pdf/2511.12635v2
+  pdf: https://arxiv.org/pdf/2511.12635v2
 retrieved: 2026-08-08
 notes-by: Claude Fable 5 (claude-fable-5)
 notes-date: 2026-08-08

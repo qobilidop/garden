@@ -29,15 +29,15 @@ concise canonical URL slug second. Posts often take the URL-slug branch
 
 - **Snapshot → shadow** (always):
   `shadow/library/posts/<year>/<citekey>/<slug>-snapshot.html`, the page
-  as-found. When the origin blocks non-browser clients (403 to curl and
-  WebFetch), capture the Wayback original-content record instead
-  (`web.archive.org/web/<ts>id_/<url>`) and verify its text against the
-  live page through the user's browser; the frontmatter comment records
-  this.
+  as-found. Run `tools/capture.sh <url> <dest>`. When the origin already
+  blocks non-browser clients, capture through the user's browser or use a
+  verified existing Wayback original-content record
+  (`web.archive.org/web/<ts>id_/<url>`); the frontmatter comment records
+  that acquisition fallback. Per `AGENTS.md` §Library, ingestion never
+  requests or waits for a new archive capture.
 - **Author-versioned source** (a gist or other git-backed page): pin the
   revision — capture the raw file at its commit sha alongside the page
-  snapshot and verify the two agree. The pinned raw URL is immutable, so
-  any Wayback record of it suffices once verified. When the work is the
+  snapshot and verify the two agree. When the work is the
   author's own canonicalization of an earlier post (tweet → gist),
   record the original appearance as a second identity — frontmatter
   comment plus first discussions entry, with a text capture to shadow.
@@ -45,13 +45,6 @@ concise canonical URL slug second. Posts often take the URL-slug branch
   site chrome or related-post cards):
   `shadow/store/library/posts/<year>/<citekey>/figures/`. View them; the
   synthesis should reflect what they show.
-- **Archive**: mutable page, so the Wayback snapshot must be no older
-  than `retrieved` — except that an older snapshot verified
-  byte-identical to the capture suffices, with a frontmatter comment
-  (trigger `https://web.archive.org/save/<url>` otherwise). Run the
-  mechanical tier with `tools/capture.sh --page <url> <dest>` (`--blob`
-  for pinned-revision URLs). When SPN won't cooperate, the fallback
-  ladder in `../ingest-paper/SKILL.md` §4 applies.
 - **Paywalled source**: the free preview is the record — capture it,
   state the paywall in a frontmatter comment, scope the notes to it, and
   name re-capture through the user's browser session as the upgrade
@@ -84,8 +77,8 @@ chronologically, shortest working URL form, each annotated `# YYYY-MM-DD`
 ## 5. Provenance frontmatter
 
 `notes.md` opens with (omit what doesn't apply — no venue field, no DOI;
-comments only for non-obvious facts like the figure tier or an archive
-rule deviation):
+comments only for non-obvious facts like the figure tier or an acquisition
+fallback):
 
 ```yaml
 ---
@@ -94,9 +87,7 @@ work:
   title: <title>
   author: <author or org>
   date: <publication date — ISO to known precision: YYYY[-MM[-DD]]; never invent finer parts>
-source:  # snapshot → shadow; figures (N PNGs) → store   <- only if figures
-  url: <page url>
-  archived: <wayback snapshot url>
+source: <page url>  # snapshot → shadow; figures (N PNGs) → store   <- only if figures
 discussions:
   - <thread url>  # <YYYY-MM-DD>
 retrieved: <today>
@@ -126,6 +117,7 @@ sources — assert only what the captured record contains.
 ## 7. Close
 
 - `tools/store.sh push` only when figures went to store.
-- Verify all tiers at the citekey paths, then propose the commits (sys:
-  notes; shadow: snapshot + manifest when pushed), each ending with the
-  agent's attribution trailer. Commit only on the user's word.
+- Run `node tools/archive-library.mjs --list` to validate the flat source
+  schema. Verify all tiers at the citekey paths, then propose the commits
+  (sys: notes; shadow: snapshot + manifest when pushed), each ending with
+  the agent's attribution trailer. Commit only on the user's word.

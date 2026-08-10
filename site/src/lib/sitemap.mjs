@@ -6,6 +6,7 @@ import { readdirSync, readFileSync } from 'node:fs'
 import { globSync } from 'node:fs'
 import { basename, dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { sourcesFromFrontmatter } from './library-sources.mjs'
 
 const repoRoot = fileURLToPath(new URL('../../..', import.meta.url))
 
@@ -44,6 +45,7 @@ function libraryFiles() {
     const key = basename(dirname(p))
     const file = join(repoRoot, p)
     const frontmatter = readFileSync(file, 'utf8').match(/^---\n([\s\S]*?)\n---\n/)?.[1] ?? ''
+    sourcesFromFrontmatter(frontmatter, p)
     const declared = frontmatter.match(/^citekey:\s*(\S+)\s*$/m)?.[1]
     const match = key.match(/^[a-z][a-z-]*\d{4}-([a-z0-9]+(?:-[a-z0-9]+){0,2})$/)
     if (!match || key.length > 28) {

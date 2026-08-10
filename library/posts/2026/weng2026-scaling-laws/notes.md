@@ -4,9 +4,7 @@ work:
   title: Scaling Laws, Carefully
   author: Lilian Weng
   date: 2026-06-24
-source:  # snapshot → shadow; figures (15 PNGs) → store
-  url: https://lilianweng.github.io/posts/2026-06-24-scaling-laws/
-  archived:  # none yet — SPN triggered 2026-08-10; retry on next touch
+source: https://lilianweng.github.io/posts/2026-06-24-scaling-laws/  # snapshot → shadow; figures (15 PNGs) → store
   # The interactive toy simulation remains executable in the HTML snapshot;
   # 15 load-bearing plots went to store, while one decorative image was omitted.
 discussions:

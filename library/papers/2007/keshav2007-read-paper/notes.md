@@ -7,9 +7,7 @@ work:
   date: 2007-07
   doi: 10.1145/1273445.1273458
 sources:
-  pdf:  # → store
-    url: http://ccr.sigcomm.org/online/files/p83-keshavA.pdf
-    archived: http://web.archive.org/web/20260724081655/http://ccr.sigcomm.org/online/files/p83-keshavA.pdf
+  pdf: http://ccr.sigcomm.org/online/files/p83-keshavA.pdf  # → store
 retrieved: 2026-08-07
 notes-by: Claude Fable 5
 notes-date: 2026-08-07

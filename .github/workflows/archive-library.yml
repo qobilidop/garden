@@ -1,0 +1,25 @@
+name: Archive library sources
+
+on:
+  schedule:
+    - cron: "17 8 1 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: archive-library
+  cancel-in-progress: false
+
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    container: ghcr.io/${{ github.repository }}/dev:latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check coverage and request missing captures
+        run: >-
+          node tools/archive-library.mjs --request-missing
+          --max-requests 10 --delay-ms 3000

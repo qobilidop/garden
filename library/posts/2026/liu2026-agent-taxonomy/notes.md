@@ -4,10 +4,7 @@ work:
   title: A Taxonomy of Self-evolving Agents
   author: Shilong Liu
   date: 2026-07-08
-source:  # snapshot → shadow; figures → store
-  url: https://lsl.zone/blog/2026/a-taxonomy-of-self-evolving-agents/
-  archived: https://web.archive.org/web/20260801121942/https://lsl.zone/blog/2026/a-taxonomy-of-self-evolving-agents/
-  # predates retrieved, but verified byte-identical to the capture
+source: https://lsl.zone/blog/2026/a-taxonomy-of-self-evolving-agents/  # snapshot → shadow; figures → store
 discussions:
   - https://x.com/atasteoff/status/2074800880017342665  # 2026-07-08
 retrieved: 2026-08-07

@@ -4,11 +4,9 @@ work:
   title: Ten advances in mathematics and theoretical computer science
   author: OpenAI
   date: 2026-08-01
-source:
-  url: https://openai.com/index/ten-advances-in-mathematics/
-  archived: https://web.archive.org/web/20260806092810/https://openai.com/index/ten-advances-in-mathematics/
-  # capture is the archive's original-content record (origin 403s non-browser
-  # clients); text verified identical to the live page at retrieval
+source: https://openai.com/index/ten-advances-in-mathematics/
+  # origin returns 403 to non-browser clients; the snapshot came from a
+  # verified existing Wayback original-content record
 discussions:
   - https://x.com/SebastienBubeck/status/2083456300692979886  # 2026-08-01
   - https://www.reddit.com/r/singularity/comments/1vcgutk/  # 2026-08-01

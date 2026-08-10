@@ -8,9 +8,7 @@ work:
   doi: 10.1145/3182657
   arxiv: 1610.00502v3 (v1 first appeared 2016-10-03; v3 author preprint aligned with ACM publication)
 sources:
-  pdf:  # arXiv v3 author preprint; title and authors match the DOI record
-    url: https://arxiv.org/pdf/1610.00502v3
-    archived: https://web.archive.org/web/20240603230103/https://arxiv.org/pdf/1610.00502v3
+  pdf: https://arxiv.org/pdf/1610.00502v3  # arXiv v3 author preprint; title and authors match the DOI record
 retrieved: 2026-08-09
 notes-by: Codex GPT-5.6 Sol
 notes-date: 2026-08-09

@@ -7,10 +7,8 @@ work:
   date: 2021-03-29
   doi: 10.1136/bmj.n71
 sources:
-  pdf:  # → store
-    url: https://journals.plos.org/plosmedicine/article/file?id=10.1371/journal.pmed.1003583&type=printable
+  pdf: https://journals.plos.org/plosmedicine/article/file?id=10.1371/journal.pmed.1003583&type=printable  # → store
     # BMJ (version of record) bot-blocks downloads; captured the same-day PLoS Medicine co-publication (CC BY, doi 10.1371/journal.pmed.1003583)
-    # archived: none yet — SPN triggered twice 2026-08-08, no record indexed; retry on next touch (sha256 a09df7b2 in shadow manifest anchors the artifact meanwhile)
 retrieved: 2026-08-08
 notes-by: Claude Fable 5
 notes-date: 2026-08-08

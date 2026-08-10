@@ -7,9 +7,7 @@ work:
   date: 2025-11-06  # v1, the only posted version as of retrieval
   doi: 10.1101/2025.11.03.25339455
 sources:
-  pdf:
-    url: https://www.medrxiv.org/content/medrxiv/early/2025/11/06/2025.11.03.25339455.full.pdf
-    archived: https://web.archive.org/web/20260809053101/https://www.medrxiv.org/content/medrxiv/early/2025/11/06/2025.11.03.25339455.full.pdf
+  pdf: https://www.medrxiv.org/content/medrxiv/early/2025/11/06/2025.11.03.25339455.full.pdf
 retrieved: 2026-08-08
 notes-by: Claude Fable 5 (claude-fable-5)
 notes-date: 2026-08-08

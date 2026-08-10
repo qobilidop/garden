@@ -8,11 +8,7 @@ work:
   doi: 10.48550/arXiv.2210.12283
   arxiv: 2210.12283 (v3, 2023-02-20, camera-ready — header confirms ICLR 2023)
 sources:
-  pdf:  # → store; pinned to v3
-    url: https://arxiv.org/pdf/2210.12283v3
-    archived: https://web.archive.org/web/20260723021031/https://arxiv.org/pdf/2210.12283
-    # bare-pointer record captured while it served v3, verified byte-identical
-    # to the pinned download (no snapshot of the v3 URL itself exists)
+  pdf: https://arxiv.org/pdf/2210.12283v3  # → store; pinned to v3
 retrieved: 2026-08-08
 notes-by: Claude Fable 5
 notes-date: 2026-08-08

@@ -7,10 +7,8 @@ work:
   date: 2008-06
   doi: 10.14236/ewic/EASE2008.8
 sources:
-  pdf:  # → store
-    url: https://www.scienceopen.com/document_file/5c16e1ce-c17c-4035-b7db-080757194d49/ScienceOpen/001_Petersen.pdf
-    archived: https://web.archive.org/web/20240430110542/https://www.scienceopen.com/document_file/5c16e1ce-c17c-4035-b7db-080757194d49/ScienceOpen/001_Petersen.pdf
-    # host blocks non-browser clients; the blob IS the fetched Wayback id_ record — archive and blob identical by construction
+  pdf: https://www.scienceopen.com/document_file/5c16e1ce-c17c-4035-b7db-080757194d49/ScienceOpen/001_Petersen.pdf  # → store
+    # host blocks non-browser clients; the stored blob came from a verified existing Wayback capture
 retrieved: 2026-08-08
 notes-by: Claude Fable 5
 notes-date: 2026-08-08

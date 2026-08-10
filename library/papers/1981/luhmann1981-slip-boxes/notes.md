@@ -7,10 +7,7 @@ work:
   date: 1981
   translator: Manfred Kuehn
 sources:
-  html:  # → shadow snapshot; the Kuehn English translation is the captured source
-    url: https://luhmann.surge.sh/communicating-with-slip-boxes
-    archived: https://web.archive.org/web/20260801105546/https://luhmann.surge.sh/communicating-with-slip-boxes
-    # predates retrieved, but verified byte-identical to the capture
+  html: https://luhmann.surge.sh/communicating-with-slip-boxes  # → shadow snapshot; the Kuehn English translation is the captured source
 retrieved: 2026-08-08
 notes-by: Claude Fable 5
 notes-date: 2026-08-08

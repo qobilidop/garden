@@ -8,9 +8,7 @@ work:
   arxiv: 2507.21046 (v4, 2026-01-16, camera-ready)
   doi: 10.48550/arXiv.2507.21046
 sources:
-  pdf:  # → store; pinned to v4 — the bare arXiv pdf URL is a mutable pointer
-    url: https://arxiv.org/pdf/2507.21046v4
-    archived: http://web.archive.org/web/20260417065246/https://arxiv.org/pdf/2507.21046v4
+  pdf: https://arxiv.org/pdf/2507.21046v4  # → store; pinned to v4 — the bare arXiv pdf URL is a mutable pointer
 retrieved: 2026-08-07
 notes-by: Claude Fable 5
 notes-date: 2026-08-07

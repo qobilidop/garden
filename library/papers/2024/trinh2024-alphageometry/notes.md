@@ -7,11 +7,9 @@ work:
   date: 2024-01-17
   doi: 10.1038/s41586-023-06747-5
 sources:
-  pdf:  # → store; open-access version of record
-    url: https://www.nature.com/articles/s41586-023-06747-5.pdf
-    archived: https://web.archive.org/web/20240121150546/https://www.nature.com/articles/s41586-023-06747-5.pdf
+  pdf: https://www.nature.com/articles/s41586-023-06747-5.pdf  # → store; open-access version of record
     # Nature stamps each download, so live fetches are never byte-identical;
-    # the stored blob IS this Wayback record (identical by construction)
+    # the stored blob came from a verified existing Wayback capture
 retrieved: 2026-08-08
 notes-by: Claude Fable 5
 notes-date: 2026-08-08

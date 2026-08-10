@@ -8,9 +8,7 @@ work:
   doi: 10.48550/arXiv.2607.25380
   arxiv: 2607.25380 (v1, 2026-07-28; preprint)
 sources:
-  pdf:  # → store; pinned to v1
-    url: https://arxiv.org/pdf/2607.25380v1
-    archived: https://web.archive.org/web/20260731184008/https://arxiv.org/pdf/2607.25380v1
+  pdf: https://arxiv.org/pdf/2607.25380v1  # → store; pinned to v1
 retrieved: 2026-08-10
 notes-by: Codex GPT-5.6 Sol
 notes-date: 2026-08-10

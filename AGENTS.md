@@ -68,6 +68,17 @@
   needs enough accumulated material to synthesize, never a single work.
   No index, no per-page frontmatter: the directory lists, git logs.
 
+## Library
+
+- Frontmatter stores canonical source URLs, never derived archive state:
+  posts use `source: <url>` and papers use a flat `sources:` map such as
+  `pdf: <url>` or `html: <url>`. Local preservation happens at ingestion;
+  `tools/archive-library.mjs` checks public Wayback coverage monthly and
+  requests missing captures without writing archive links back into notes.
+- Ingestion never waits for or requests a Wayback capture. When an origin is
+  already inaccessible, a verified existing capture may serve as an
+  acquisition fallback; record that provenance in a frontmatter comment.
+
 ## Site
 
 - `site/` renders the repo to GitHub Pages (Astro). It reads exactly

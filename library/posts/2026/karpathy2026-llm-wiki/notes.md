@@ -4,17 +4,11 @@ work:
   title: LLM Wiki
   author: Andrej Karpathy
   date: 2026-04-04
-source:  # snapshot + pinned-revision raw → shadow; no figures
-  url: https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f
-  archived: https://web.archive.org/web/20260806213748/https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f
-  # snapshot predates retrieved (SPN timing out); article text verified
-  # identical to the capture. The gist has exactly one revision
-  # (ac46de1, 2026-04-04); the raw file at that sha is also in shadow,
-  # archived at
-  # https://web.archive.org/web/20260629170211/https://gist.githubusercontent.com/karpathy/442a6bf555914893e9891c11519de94f/raw/ac46de1ad27f92b28ac95459c782c07f6b8c964a/llm-wiki.md
-  # (verified byte-identical). Original appearance: the 2026-04-02 X
-  # post "LLM Knowledge Bases" (first discussions entry) — the gist is
-  # the author's revised canonical form; text capture in shadow.
+source: https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f  # snapshot + pinned-revision raw → shadow; no figures
+  # the gist has exactly one revision (ac46de1, 2026-04-04); the raw file at
+  # that sha is also in shadow. Original appearance: the 2026-04-02 X post
+  # "LLM Knowledge Bases" (first discussions entry) — the gist is the
+  # author's revised canonical form; text capture in shadow.
 discussions:
   - https://x.com/karpathy/status/2039805659525644595  # 2026-04-02
   - https://x.com/karpathy/status/2040470801506541998  # 2026-04-04

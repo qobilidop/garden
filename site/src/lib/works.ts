@@ -71,22 +71,14 @@ export function sourceLinksOf(
   const data = entry.data as Record<string, unknown>
   const links: ExternalLink[] = []
 
-  const single = recordOf(data.source)
-  const singleUrl = httpUrlOf(single?.url ?? data.source)
-  const singleArchive = httpUrlOf(single?.archived)
+  const singleUrl = httpUrlOf(data.source)
   if (singleUrl) pushUnique(links, { label: 'original', url: singleUrl })
-  if (singleArchive)
-    pushUnique(links, { label: 'archive', url: singleArchive })
 
   const sources = recordOf(data.sources)
   for (const [type, value] of Object.entries(sources ?? {})) {
-    const source = recordOf(value)
-    const url = httpUrlOf(source?.url ?? value)
-    const archive = httpUrlOf(source?.archived)
+    const url = httpUrlOf(value)
     const label = sourceTypeLabel(type)
     if (url) pushUnique(links, { label, url })
-    if (archive)
-      pushUnique(links, { label: `${label} archive`, url: archive })
   }
 
   return links

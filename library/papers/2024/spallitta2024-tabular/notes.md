@@ -8,9 +8,7 @@ work:
   doi: 10.1016/j.artint.2025.104346
   arxiv: 2410.18707v2 (v1 first appeared 2024-10-22; v2 author preprint of the 2025 journal article)
 sources:
-  pdf:  # arXiv v2 author preprint; title and authors match the journal record
-    url: https://arxiv.org/pdf/2410.18707v2
-    archived: https://web.archive.org/web/20251018085244/https://arxiv.org/pdf/2410.18707  # bare-pointer snapshot served v2; byte-identical to the stored version
+  pdf: https://arxiv.org/pdf/2410.18707v2  # arXiv v2 author preprint; title and authors match the journal record
 retrieved: 2026-08-09
 notes-by: Codex GPT-5.6 Sol
 notes-date: 2026-08-09

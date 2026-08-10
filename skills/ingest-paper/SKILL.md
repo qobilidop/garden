@@ -27,8 +27,10 @@ rclone `store:` remote; `./dev.sh <cmd>` provides the pinned toolchain
   open-access location or confirms there is none; OpenAlex
   (`api.openalex.org/works/doi:<doi>`, `best_oa_location`) is the
   cross-check. One call replaces the publisher-mirror tour, and a
-  confirmed-closed answer is a real result — fall back to the Wayback
-  ladder or record a queue item instead of probing on. The queue is
+  confirmed-closed answer is a real result — use a verified existing
+  Wayback capture as an acquisition fallback or record a queue item instead
+  of probing on. Never request or wait for a new archive capture during
+  ingestion (`AGENTS.md` §Library). The queue is
   `library/queue.md` (one line per work: what it is and what it
   would feed; ingesting removes the line, and identifiers there are
   pointers to verify, not bibliography). (Learned
@@ -94,12 +96,8 @@ work:
   doi: <doi if one exists>          # identifies the work — lives here, not under sources
   arxiv: <id vN + note> (if applicable)
 sources:
-  pdf:  # → store
-    url: <immutable download url>
-    archived: <wayback snapshot url>
-  html: # → shadow snapshot (when a web-native source exists)
-    url: <page url>
-    archived: <wayback snapshot url>
+  pdf: <immutable download url>  # → store
+  html: <page url>               # → shadow snapshot (when a web-native source exists)
 retrieved: <today>
 notes-by: <agent name + model, or human name>
 notes-date: <today>
@@ -107,42 +105,12 @@ synthesis: <the notes' one-sentence take, when they have one>
 ---
 ```
 
-Every source gets an `archived` Wayback URL — public verifiability for a
-public repo (check `https://archive.org/wayback/available?url=<url>`).
-Immutable blobs (published PDFs, versioned arXiv URLs): any existing
-snapshot suffices. Mutable pages (HTML): the snapshot must be no older than
-`retrieved`, else trigger `https://web.archive.org/save/<url>`.
-
-`tools/capture.sh --blob|--page <url> <dest>` runs the mechanical tier —
-fetch, availability (CDX fallback), gzip-aware `id_` verification, SPN
-trigger — and reports JSON (exit 2 = no verified record; fall back
-manually). In batch runs, persist each capture's JSON verbatim — never
-reduce it to booleans; `archived:` URLs are copied from it.
-
-Archive fallbacks, in order, when SPN won't cooperate (523/429 overload,
-302s that never materialize):
-
-1. An existing snapshot verified identical to the capture — fetch the
-   `id_` record (`web.archive.org/web/<ts>id_/<url>`; the response may be
-   gzipped, decompress before comparing).
-2. For a versioned arXiv URL with no snapshot of its own: a bare-pointer
-   snapshot captured while it served that version, verified
-   sha256-identical to the download, recorded with a frontmatter comment.
-3. When the publisher gates the version-of-record (OpenReview challenge
-   pages block curl and WebFetch; Cell bot-blocks non-browser clients)
-   or stamps each download so live fetches are never byte-identical
-   (Nature): fetch the verified Wayback `id_` record and store *it* as
-   the blob — archive and blob identical by construction.
-
-Never record an `archived:` URL that wasn't verified against the
-artifact.
-
-Archiving is asynchronous by design: when no verified record exists,
-trigger SPN once, write the deviation comment (`# archived: none yet —
-SPN triggered <date>; retry on next touch`), and move on — SPN indexing
-lags sessions, so re-polling within one buys nothing (three rechecks on
-2026-08-08 cost ~4 min and still ended unarchived). The comment is the
-queue; any later touch of the entry retries the verification.
+Run `tools/capture.sh <url> <dest>` for the mechanical fetch and SHA-256
+record. If the origin is already inaccessible, an existing Wayback `id_`
+record may supply the artifact only after content or byte verification; note
+that acquisition fallback in frontmatter. Archive coverage itself is
+external derived state governed by `AGENTS.md` §Library; no `archived:` field
+is stored here.
 
 ## 5. Synthesis notes
 
@@ -183,7 +151,8 @@ queue; any later touch of the entry retries the verification.
 
 - `tools/store.sh push` — uploads the blob and regenerates
   `shadow/store.manifest.json` (explicit copy only; nothing deletes).
-- Verify all tiers exist at the citekey paths, then propose the two commits
-  (sys: notes; shadow: text form + manifest), each ending with the agent's
-  attribution trailer (`Co-Authored-By: <agent + model> <email>`). Commit
-  only on the user's word.
+- Run `node tools/archive-library.mjs --list` to validate the flat source
+  schema. Verify all tiers exist at the citekey paths, then propose the two
+  commits (sys: notes; shadow: text form + manifest), each ending with the
+  agent's attribution trailer (`Co-Authored-By: <agent + model> <email>`).
+  Commit only on the user's word.

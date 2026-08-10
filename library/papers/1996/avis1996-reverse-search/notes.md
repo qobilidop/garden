@@ -7,9 +7,7 @@ work:
   date: "1996-03"
   doi: 10.1016/0166-218X(95)00026-N
 sources:
-  pdf:  # author-hosted journal PDF; title, authors, pagination, and DOI identity match the record
-    url: https://cgm.cs.mcgill.ca/~avis/doc/avis/AF96a.pdf
-    archived: https://web.archive.org/web/20250816081913/https://cgm.cs.mcgill.ca/~avis/doc/avis/AF96a.pdf
+  pdf: https://cgm.cs.mcgill.ca/~avis/doc/avis/AF96a.pdf  # author-hosted journal PDF; title, authors, pagination, and DOI identity match the record
 retrieved: 2026-08-09
 notes-by: Codex GPT-5.6 Sol
 notes-date: 2026-08-09

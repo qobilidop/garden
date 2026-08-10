@@ -4,10 +4,7 @@ work:
   title: Superpowers 6
   author: Jesse Vincent
   date: 2026-06-15
-source:  # snapshot → shadow; cross-posted to primeradiant.com/blog
-  url: https://blog.fsck.com/2026/06/15/Superpowers-6/
-  archived: http://web.archive.org/web/20260703024225/https://blog.fsck.com/2026/06/15/Superpowers-6/
-  # predates retrieved, but verified byte-identical to the capture
+source: https://blog.fsck.com/2026/06/15/Superpowers-6/  # snapshot → shadow; cross-posted to primeradiant.com/blog
 discussions:
   - https://news.ycombinator.com/item?id=48739459  # 2026-06-30
 retrieved: 2026-08-07

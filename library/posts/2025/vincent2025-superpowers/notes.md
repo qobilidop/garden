@@ -4,10 +4,7 @@ work:
   title: "Superpowers: How I'm using coding agents in October 2025"
   author: Jesse Vincent
   date: 2025-10-09
-source:  # snapshot → shadow
-  url: https://blog.fsck.com/2025/10/09/superpowers/
-  archived: http://web.archive.org/web/20260728012359/https://blog.fsck.com/2025/10/09/superpowers/
-  # predates retrieved, but verified byte-identical to the capture
+source: https://blog.fsck.com/2025/10/09/superpowers/  # snapshot → shadow
 discussions:
   - https://simonwillison.net/2025/Oct/10/superpowers/  # 2025-10-10
   - https://news.ycombinator.com/item?id=45547344  # 2025-10-11

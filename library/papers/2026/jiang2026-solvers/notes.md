@@ -7,9 +7,7 @@ work:
   doi: 10.48550/arXiv.2607.07779
   arxiv: 2607.07779 (v1, 2026-07-08; no venue yet)
 sources:
-  pdf:  # → store; pinned to v1
-    url: https://arxiv.org/pdf/2607.07779v1
-    archived: https://web.archive.org/web/20260714003709/https://arxiv.org/pdf/2607.07779v1
+  pdf: https://arxiv.org/pdf/2607.07779v1  # → store; pinned to v1
 retrieved: 2026-08-08
 notes-by: Claude Fable 5
 notes-date: 2026-08-08

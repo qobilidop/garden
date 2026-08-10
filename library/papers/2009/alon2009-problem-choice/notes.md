@@ -7,11 +7,9 @@ work:
   date: 2009-09-25
   doi: 10.1016/j.molcel.2009.09.013
 sources:
-  pdf:  # → store
-    url: https://www.cell.com/molecular-cell/pdf/S1097-2765(09)00641-8.pdf
-    archived: https://web.archive.org/web/20240113054230/https://www.cell.com/molecular-cell/pdf/S1097-2765(09)00641-8.pdf
+  pdf: https://www.cell.com/molecular-cell/pdf/S1097-2765(09)00641-8.pdf  # → store
     # cell.com serves a bot-block page to non-browser clients; the stored
-    # blob IS this Wayback record (identical by construction)
+    # blob came from a verified existing Wayback capture
 retrieved: 2026-08-08
 notes-by: Claude Fable 5
 notes-date: 2026-08-08

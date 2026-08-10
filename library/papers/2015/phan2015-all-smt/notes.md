@@ -7,9 +7,7 @@ work:
   date: "2015-08"
   doi: 10.1109/ARES.2015.14
 sources:
-  pdf:  # first-author-hosted IEEE proceedings PDF; title, authors, pages, and DOI match the record
-    url: https://qsphan.github.io/papers/ares15.pdf
-    archived: https://web.archive.org/web/20250507075750/http://qsphan.github.io/papers/ares15.pdf
+  pdf: https://qsphan.github.io/papers/ares15.pdf  # first-author-hosted IEEE proceedings PDF; title, authors, pages, and DOI match the record
 retrieved: 2026-08-09
 notes-by: Codex GPT-5.6 Sol
 notes-date: 2026-08-09

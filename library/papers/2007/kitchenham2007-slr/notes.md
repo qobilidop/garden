@@ -7,10 +7,8 @@ work:
   date: 2007-07
   # title page says 9 July 2007; the version-control table dates v2.3 20 July — month precision kept
 sources:
-  pdf:  # → store
-    url: https://legacyfileshare.elsevier.com/promis_misc/525444systematicreviewsguide.pdf
-    archived: https://web.archive.org/web/20260803073515/https://legacyfileshare.elsevier.com/promis_misc/525444systematicreviewsguide.pdf
-    # no publisher URL exists for this tech report; Elsevier-hosted courtesy copy, verified byte-identical to the archive record
+  pdf: https://legacyfileshare.elsevier.com/promis_misc/525444systematicreviewsguide.pdf  # → store
+    # no publisher URL exists for this tech report; this is an Elsevier-hosted courtesy copy
 retrieved: 2026-08-08
 notes-by: Claude Fable 5
 notes-date: 2026-08-08

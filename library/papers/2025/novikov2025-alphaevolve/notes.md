@@ -7,11 +7,7 @@ work:
   doi: 10.48550/arXiv.2506.13131
   arxiv: 2506.13131 (v1, sole version; white paper, not peer-reviewed)
 sources:
-  pdf:  # → store; pinned to v1
-    url: https://arxiv.org/pdf/2506.13131v1
-    archived: https://web.archive.org/web/20250705213148/https://arxiv.org/pdf/2506.13131
-    # bare-pointer record, verified byte-identical to the pinned download
-    # (v1 is the only version the pointer ever served)
+  pdf: https://arxiv.org/pdf/2506.13131v1  # → store; pinned to v1
 retrieved: 2026-08-08
 notes-by: Claude Fable 5
 notes-date: 2026-08-08

@@ -8,9 +8,7 @@ work:
   doi: 10.1145/3831252.3834108   # assigned in the paper's ACM reference block; not yet registered at Crossref (proceedings publish Nov 2026)
   arxiv: 2608.01045v1
 sources:
-  pdf:  # → store
-    url: https://arxiv.org/pdf/2608.01045v1
-    archived: https://web.archive.org/web/20260806200150/https://arxiv.org/pdf/2608.01045v1
+  pdf: https://arxiv.org/pdf/2608.01045v1  # → store
 retrieved: 2026-08-08
 notes-by: "Claude Fable 5; Codex GPT-5.6 Sol"
 notes-date: 2026-08-09

@@ -4,10 +4,7 @@ work:
   title: "Postmortem for Kernel Soundness Bug #14576"
   author: Leonardo de Moura
   date: 2026-08-01
-source:
-  url: https://leodemoura.github.io/blog/2026-8-1-postmortem-for-kernel-soundness-bug-14576/
-  archived: https://web.archive.org/web/20260802053903/https://leodemoura.github.io/blog/2026-8-1-postmortem-for-kernel-soundness-bug-14576/
-  # predates retrieved, but verified byte-identical to the capture
+source: https://leodemoura.github.io/blog/2026-8-1-postmortem-for-kernel-soundness-bug-14576/
 discussions:
   - https://news.ycombinator.com/item?id=49137060  # 2026-08-01
 retrieved: 2026-08-07

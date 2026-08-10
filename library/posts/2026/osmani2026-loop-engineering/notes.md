@@ -4,10 +4,7 @@ work:
   title: Loop Engineering
   author: Addy Osmani
   date: 2026-06-07
-source:
-  url: https://addyosmani.com/blog/loop-engineering/
-  archived: https://web.archive.org/web/20260729155041/https://addyosmani.com/blog/loop-engineering/
-  # predates retrieved, but verified text-identical to the capture
+source: https://addyosmani.com/blog/loop-engineering/
 discussions:
   - https://x.com/addyosmani/status/2064127981161959567  # 2026-06-08
   - https://news.ycombinator.com/item?id=48514387  # 2026-06-13

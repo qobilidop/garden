@@ -7,10 +7,7 @@ work:
   date: 2025-11-12
   doi: 10.1038/s41586-025-09833-y
 sources:
-  pdf:  # → store; open-access version of record
-    url: https://www.nature.com/articles/s41586-025-09833-y.pdf
-    archived:  # SPN accepted twice 2026-08-08 but no record queryable yet;
-               # recheck, verify, and adopt the id_ record when it lands
+  pdf: https://www.nature.com/articles/s41586-025-09833-y.pdf  # → store; open-access version of record
 retrieved: 2026-08-08
 notes-by: Claude Fable 5
 notes-date: 2026-08-08

@@ -7,12 +7,8 @@ work:
   date: 1986-03-07
   transcriber: J. F. Kaiser (Bellcore)
 sources:
-  pdf:  # → store
-    url: https://www.cs.virginia.edu/~robins/YouAndYourResearch.pdf
-    archived: http://web.archive.org/web/20260712211616/https://www.cs.virginia.edu/~robins/YouAndYourResearch.pdf
-  html:  # → shadow snapshot
-    url: https://www.cs.virginia.edu/~robins/YouAndYourResearch.html
-    archived: http://web.archive.org/web/20260803132335/https://www.cs.virginia.edu/~robins/YouAndYourResearch.html
+  pdf: https://www.cs.virginia.edu/~robins/YouAndYourResearch.pdf  # → store
+  html: https://www.cs.virginia.edu/~robins/YouAndYourResearch.html  # → shadow snapshot
 retrieved: 2026-08-07
 notes-by: Claude Fable 5
 notes-date: 2026-08-07

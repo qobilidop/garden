@@ -4,12 +4,9 @@ work:
   title: My AI Had Already Fixed the Code Before I Saw It
   author: Kieran Klaassen
   date: 2025-08-18  # page marks an update on 2026-04-23; capture reflects the updated version
-source:  # snapshot → shadow
-  url: https://every.to/source-code/my-ai-had-already-fixed-the-code-before-i-saw-it
-  archived: http://web.archive.org/web/20260604203501/https://every.to/source-code/my-ai-had-already-fixed-the-code-before-i-saw-it
-  # predates retrieved; SPN redirects here rather than recapturing. Both the
-  # capture and this snapshot are paywalled past the free preview (the record
-  # is the preview); their preview text verified equivalent.
+source: https://every.to/source-code/my-ai-had-already-fixed-the-code-before-i-saw-it  # snapshot → shadow
+  # the source is paywalled past the free preview; the captured record and
+  # these notes are scoped to that preview
 discussions:
   - https://news.ycombinator.com/item?id=44941899  # 2025-08-18
   - https://lethain.com/everyinc-compound-engineering/  # 2026-01-19

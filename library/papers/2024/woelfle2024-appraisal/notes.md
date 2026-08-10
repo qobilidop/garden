@@ -7,9 +7,7 @@ work:
   date: 2024-09-12  # published online; November 2024 issue
   doi: 10.1016/j.jclinepi.2024.111533
 sources:
-  pdf:
-    url: https://www.jclinepi.com/article/S0895-4356(24)00289-0/pdf
-    archived:  # none yet — SPN triggered 2026-08-08; retry on next touch
+  pdf: https://www.jclinepi.com/article/S0895-4356(24)00289-0/pdf
 retrieved: 2026-08-08
 notes-by: Claude Fable 5 (claude-fable-5)
 notes-date: 2026-08-08

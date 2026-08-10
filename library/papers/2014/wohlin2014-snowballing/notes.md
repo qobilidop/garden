@@ -7,10 +7,8 @@ work:
   date: 2014-05-13
   doi: 10.1145/2601248.2601268
 sources:
-  pdf:  # → store
-    url: http://www.wohlin.eu/ease14.pdf
-    archived: https://web.archive.org/web/20251118132102/https://www.wohlin.eu/ease14.pdf
-    # author-hosted version (ACM version-of-record gated); verified byte-identical to the archive record
+  pdf: http://www.wohlin.eu/ease14.pdf  # → store
+    # author-hosted version; the ACM version of record is gated
 retrieved: 2026-08-08
 notes-by: Claude Fable 5
 notes-date: 2026-08-08

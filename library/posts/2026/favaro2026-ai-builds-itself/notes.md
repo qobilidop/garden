@@ -4,11 +4,8 @@ work:
   title: When AI builds itself
   author: Marina Favaro and Jack Clark
   date: 2026
-source:  # snapshot → shadow; figures (3 PNGs) → store
-  url: https://www.anthropic.com/institute/recursive-self-improvement
-  archived: https://web.archive.org/web/20260807042131/https://www.anthropic.com/institute/recursive-self-improvement
+source: https://www.anthropic.com/institute/recursive-self-improvement  # snapshot → shadow; figures (3 PNGs) → store
   # The page omits a publication date; HN's first public discussion is 2026-06-04.
-  # The archive predates retrieval, but its text was verified against the capture.
 discussions:
   - https://news.ycombinator.com/item?id=48400842  # 2026-06-04
 retrieved: 2026-08-09

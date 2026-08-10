@@ -4,10 +4,7 @@ work:
   title: The Therapist Pattern
   author: Jesse Vincent
   date: 2026-07-20
-source:  # snapshot → shadow; cross-posted to primeradiant.com/blog
-  url: https://blog.fsck.com/2026/07/20/the-therapist-pattern/
-  archived: http://web.archive.org/web/20260804045104/https://blog.fsck.com/2026/07/20/the-therapist-pattern/
-  # predates retrieved, but verified byte-identical to the capture
+source: https://blog.fsck.com/2026/07/20/the-therapist-pattern/  # snapshot → shadow; cross-posted to primeradiant.com/blog
 # discussions: none found at retrieval (HN, Lobsters swept) — post is two weeks old
 retrieved: 2026-08-07
 notes-by: Claude Fable 5
