@@ -1,4 +1,4 @@
-# Closest-work audit
+# Closest-work audit and reduction boundaries
 
 Status: current through the 2026-08-04 baseline
 

@@ -1,4 +1,4 @@
-# Projected enumeration and knowledge compilation
+# Projected model enumeration and knowledge compilation
 
 ## Strongest reduction
 

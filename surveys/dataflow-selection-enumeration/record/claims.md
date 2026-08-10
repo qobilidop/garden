@@ -56,6 +56,10 @@ source's claim cannot be mistaken for this survey's synthesis.
   outcome coordinates in the global reachability encoding.
 - **Scope:** Single observations of the same model; equivalence of the concolic local guard and the projected global encoding, with cost and representation kept separate.
 - **Prior frontier:** Phan’s AllSMT model-and-block enumeration and Spallitta’s disjoint projected enumeration establish the enumeration side; the identification of the concolic local guard with the exact fiber of the projected encoding is the recorded derivation.
+- **Qualification:** Phan's complete projected tuples index individual finite
+  observations after instrumentation. Spallitta's shorter disjoint projected
+  cubes are covers and can denote several complete tuples; they are not one
+  target fiber per output unless the representation is constrained accordingly.
 - **Consequence:** Model-and-full-fiber-block and naive projected AllSMT both
   require \(K\) satisfying models plus a final unsatisfiable query. Solver time
   and representation size remain separate.
@@ -95,11 +99,12 @@ source's claim cannot be mistaken for this survey's synthesis.
   regions; and Drammis et al. analyze parallel layerwise enumeration.
 - **Consequence:** A variable sparse domain is also anticipated by ordinary
   decision-tree paths, and exact neural trees/TADS can prune infeasible or
-  forced activation tests while preserving the output. Novelty
-  can rest only on the requested-root-relative typed shared-graph observer and
-  a nontrivial event-preserving construction/composition result, not exact
-  regime enumeration, guard-plus-residual output, dynamic sparsity, or an
-  extensional requested-class quotient.
+  forced activation tests while preserving the output. Any remaining
+  contribution must therefore be stated narrowly in terms of the
+  requested-root-relative typed shared-graph observer or a proved
+  event-preserving construction/composition result; exact regime enumeration,
+  guard-plus-residual output, dynamic sparsity, and extensional
+  requested-class quotients are prior art.
 
 ### C05 — Selection observations are an observer-equivalence partition
 
@@ -112,7 +117,9 @@ source's claim cannot be mistaken for this survey's synthesis.
   of a totalized finite-valued function); what is established elsewhere is its
   exact generic enumeration — IOSTS input-equivalence-class partitioning over
   infinite input domains, SFSM property testing over satisfiable Boolean
-  atoms, and projected AllSMT over a chosen finite observer vector.
+  atoms, projected AllSMT over a chosen finite observer vector, and Wang et
+  al.'s polynomial-delay enumeration of locally colored equivalence classes
+  from acyclic decomposable AND/OR solution graphs.
 - **Consequence:** The remaining graph-specific result is the compact local
   form of each fiber and its residual, plus any demonstrable construction
   advantage. The quotient and generic exact enumeration are established.
@@ -121,14 +128,19 @@ source's claim cannot be mistaken for this survey's synthesis.
 
 - **Status:** survey synthesis; broad novelty defeated
 - **Statement:** Lindblad represents satisfying sets by partial constructor
-  terms and refines a property-blocking metavariable; Lazy SmallCheck refines
-  exactly the tagged hole forced by a pure Boolean property and skips all total
-  refinements when the answer is known. Korat supplies access-guided exhaustive
-  generation for finitized object inputs.
+  terms and refines a property-blocking metavariable, but explicitly leaves the
+  stated soundness and completeness conditions unproved. Lazy SmallCheck
+  refines exactly the tagged hole forced by a pure Boolean property and skips
+  all total refinements when the answer is known. Korat supplies access-guided
+  exhaustive generation for finitized object inputs, while SPLat
+  demand-populates configuration decisions and explores feasible partial
+  assignments intended to represent distinct reachable test traces.
 - **Scope:** Property-directed demand-driven generation over finitized or constructor-shaped inputs.
 - **Prior frontier:** BLI, BLISS, LISSA, and PLI provide the imperative heap
   continuation, culminating in exact preservation of bounded jointly feasible
-  heap/path symbolic states.
+  heap/path symbolic states. The functional-logic lineage separately
+  establishes executed-step fingerprints, stable choice-ID propagation, and
+  demand-populated task maps.
 - **Consequence:** A contribution cannot be “demand sensitivity” alone. It
   would need one exact record per graph observation, exact union guards,
   residual symbolic values, and an analysis beyond the prior partial-state
@@ -145,7 +157,11 @@ source's claim cannot be mistaken for this survey's synthesis.
 - **Scope:** Finitely encoded inputs and compiled representations of totalized observers.
 - **Prior frontier:** Bryant proves canonicity of reduced ordered Boolean
   function graphs for a fixed order; Bahar et al. extend the terminal carrier
-  to finite algebraic values. Both retain exponential worst cases.
+  to finite algebraic values. Both retain exponential worst cases. Antoy and
+  Hanus's fingerprint lineage independently establishes sparse,
+  demand-populated partial maps from stable runtime choice identities to
+  outcomes, but for nondeterministic evaluation rather than caller-input
+  guards.
 - **Consequence:** Sparse encountered-test maps, disjoint guards, and shared
   observer compilation are established. Symbolic residual generation is a
   separate obligation. A contribution requires a
@@ -180,13 +196,14 @@ source's claim cannot be mistaken for this survey's synthesis.
 - **Scope:** The relation between requested-output projections and the intensional sparse observation map.
 - **Prior frontier:** König and Mönnigmann prove that explicit-MPC regions with
   different later-horizon actions can share the same requested first action.
-  Mitze et al. extend common-first-action reuse to nonlinear MPC. Kvasnica and
-  coauthors give exact clipping- and separator-based factorizations that erase
-  region descriptions while preserving the pointwise controller output (E026,
-  low certainty: the cross-domain correspondence is the survey's synthesis). Shin
-  and Yang independently identify polyhedral reward sets that induce the same
-  optimal MDP policy and study policy invariance and reward-space reduction
-  (E031, abstract-only read, low certainty).
+  Mitze et al. extend common-first-action reuse to nonlinear MPC (E026).
+  Kvasnica and coauthors give exact clipping- and separator-based factorizations
+  that erase region descriptions while preserving the pointwise controller
+  output (E061, low certainty: the cross-domain correspondence is the survey's
+  synthesis).
+  Chang et al. give a modern exact decision-tree representation of a neural
+  controller's extensional policy, reinforcing the distinction between policy
+  preservation and event preservation.
 - **Consequence:** “Requested-root-relative” alone is not a contribution. The
   survey's object must be an intensional, input-dependent sparse map of
   contextual selection-site outcomes that retains observed equal-valued
@@ -212,7 +229,10 @@ source's claim cannot be mistaken for this survey's synthesis.
   closure, contextual site identity, preservation of equal-valued observed
   events, typed residuals, and exact observed-outcome fibers over a shared
   pure dataflow graph. Parametric optimizer-basis regions use a different
-  observer unless an explicit correspondence is established.
+  observer unless an explicit correspondence is established; closed critical
+  regions can overlap on boundaries and full-dimensional traversal can omit
+  lower-dimensional-only regions, so a disjoint all-input transfer also needs
+  boundary ownership or a restricted caller domain.
 
 ### C11 — Exact choice-record reduction is established for concurrent schedules
 
@@ -234,15 +254,13 @@ source's claim cannot be mistaken for this survey's synthesis.
 
 - **Status:** survey synthesis; broad novelty defeated
 - **Statement:** Petri-net observers can characterize exactly the current
-  markings consistent with an observed transition-label word, compute the set
-  of minimum-token initial markings consistent with that word, and incorporate
-  time and unobservable events.
+  markings consistent with an observed transition-label word.
 - **Scope:** Petri-net state estimation under partial event-label observation.
 - **Prior frontier:** Giua, Júlvez, and Seatzu give a fixed-structure linear
-  representation of the compatible current-marking set; Corona et al. make the
-  nondeterministic-label case explicit; Li and Hadjicostis compute a complete
-  optimization-restricted initial-marking set; and Ghazel, Toguyéni, and Yim
-  use a timed class-graph observer with unobservable events.
+  representation of the compatible current-marking set. This one strong anchor
+  is sufficient for the adjacent inverse-observation boundary; the manuscript
+  does not need a mini-survey of its nondeterministic-label, initial-marking,
+  and timed extensions.
 - **Consequence:** Exact inverse consistency under a partial event observer is
   established. This manuscript's narrower object partitions initial caller
   inputs of a pure function and attaches a typed residual value.
@@ -290,7 +308,7 @@ source's claim cannot be mistaken for this survey's synthesis.
 - **Scope:** The survey's comparison methodology across every surveyed route; terminology, not a priority claim.
 - **Prior frontier:** The separation echoes established observer-relative equivalence and knowledge-compilation representation distinctions; its use as a three-way relationship classification for this problem is the survey’s organizing apparatus.
 - **Consequence:** The main survey classifies prior work as a direct
-  presentation, restricted specialization, or adjacent comparator before
-  transferring correctness or complexity results. This is the paper's
+  presentation, restricted specialization, adjacent comparator, or open
+  correspondence before transferring correctness or complexity results. This is the paper's
   organizing terminology, not a priority claim for observer kernels,
   enumeration algorithms, or the individual representations.

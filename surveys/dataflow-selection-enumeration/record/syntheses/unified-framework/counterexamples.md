@@ -1,4 +1,4 @@
-# Counterexamples and scope tests
+# Counterexamples and scope boundaries
 
 Each example rejects a tempting theorem or an underspecified definition.
 

@@ -86,7 +86,7 @@ depth and evidence limits).
 - **Works:** antoy2011pull,brassel2007tighter,brassel2011thesis,jost2023fairscheme
 - **Anchors:** sources/antoy2011pull.md#evidence-locations;sources/brassel2007tighter.md#evidence-locations;sources/brassel2011thesis.md#evidence-locations;sources/jost2023fairscheme.md#evidence-locations
 - **Supports:** C01,C06,C15
-- **Manuscript:** sec-introduction,sec-routes
+- **Manuscript:** sec-routes
 - **Scope:** choice representations and adequacy/value-preservation theorems
 - **Caveat:** Identities and nondeterministic result semantics differ from static contextual graph sites.
 - **Certainty:** moderate
@@ -203,13 +203,13 @@ depth and evidence limits).
 
 ### E018
 
-- **Finding:** Parametric programming provides a positive-semidefinite pLCP precursor, explicit sufficient-matrix output bounds, unique selected pQP representations, degeneracy-safe adjacency, rank-deficiency handling, and pLP/projection interreduction.
-- **Works:** jones2006lcp,columbano2009sufficient,jones2007lexicographic,spjotvold2007unique,patrinos2010graphical,bemporad2015multiparametric,jones2008projection
-- **Anchors:** sources/jones2006lcp.md#evidence-locations;sources/columbano2009sufficient.md#evidence-locations;sources/jones2007lexicographic.md#evidence-locations;sources/spjotvold2007unique.md#evidence-locations;sources/patrinos2010graphical.md#qualifications-and-complexity;sources/bemporad2015multiparametric.md#evidence-locations;sources/jones2008projection.md#evidence-locations
+- **Finding:** The sufficient-matrix pLCP traversal extends the positive-semidefinite precursor, covers pLP and convex pQP, and gives explicit general-position and lexicographically perturbed LP-oracle bounds per reported basis.
+- **Works:** jones2006lcp,columbano2009sufficient
+- **Anchors:** sources/jones2006lcp.md#evidence-locations;sources/columbano2009sufficient.md#evidence-locations
 - **Supports:** C04,C10,C15
 - **Manuscript:** sec-routes,sec-complexity
-- **Scope:** theorems and algorithm analyses
-- **Caveat:** Each guarantee has distinct assumptions; perturbed bases can outnumber unperturbed regions and no general DelayP or bit bound is inferred.
+- **Scope:** full-dimensional pLCP basis enumeration under the papers' matrix and perturbation assumptions
+- **Caveat:** Perturbed bases can outnumber unperturbed regions; the analysis retains an output-sized visited set and proves neither a coefficient-bit nor a DelayP bound.
 - **Certainty:** high
 
 ### E019
@@ -291,24 +291,24 @@ depth and evidence limits).
 
 ### E026
 
-- **Finding:** Explicit-control methods can merge regions with different later decisions when they share a requested first action, or remove region descriptions while preserving the pointwise controller function.
-- **Works:** konig2020common,mitze2021common,kvasnica2012clipping,kvasnica2013separation
-- **Anchors:** sources/konig2020common.md#exact-result;sources/mitze2021common.md#contribution;sources/kvasnica2012clipping.md#contribution;sources/kvasnica2013separation.md#contribution
+- **Finding:** Explicit-control methods can merge regions with different later decisions when they share a requested first action.
+- **Works:** konig2020common,mitze2021common
+- **Anchors:** sources/konig2020common.md#exact-result;sources/mitze2021common.md#contribution
 - **Supports:** C09,C15
 - **Manuscript:** sec-synthesis,sec-boundaries
-- **Scope:** exact first-action grouping, certified reuse, and pointwise-equivalent controller factorizations
-- **Caveat:** These are extensional output quotients or factorizations, not sparse contextual selection-event observers; the cross-domain distinction is our synthesis.
+- **Scope:** exact first-action grouping and certified reuse
+- **Caveat:** These are extensional output quotients, not sparse contextual selection-event observers; the cross-domain distinction is our synthesis.
 - **Certainty:** low
 
 ### E027
 
-- **Finding:** Petri-net observers characterize current or minimum initial markings consistent with an observed label word and can incorporate nondeterministic labels, timing, or unobservable events.
-- **Works:** giua2003marking,corona2003observers,li2009minimum,ghazel2009observer
-- **Anchors:** sources/giua2003marking.md#evidence-locations;sources/corona2003observers.md#evidence-locations;sources/li2009minimum.md#evidence-locations;sources/ghazel2009observer.md#evidence-locations
+- **Finding:** A labeled-Petri-net observer can characterize exactly the current markings consistent with one observed transition-label word using a fixed-structure linear representation.
+- **Works:** giua2003marking
+- **Anchors:** sources/giua2003marking.md#evidence-locations
 - **Supports:** C12,C15
 - **Manuscript:** sec-synthesis
-- **Scope:** exact compatible-marking sets, optimization-restricted initial sets, and timed state estimation
-- **Caveat:** The hidden objects are Petri-net markings or timed states, not caller inputs paired with typed residual program values; the detailed minimum-marking claim is pinned to the full conference primary.
+- **Scope:** exact compatible current-marking sets for the paper's labeled Petri-net model
+- **Caveat:** The hidden objects are Petri-net markings, not caller inputs paired with typed residual program values.
 - **Certainty:** high
 
 ### E028
@@ -324,36 +324,25 @@ depth and evidence limits).
 
 ### E029
 
-- **Finding:** Exact neural-region work also uses star sets, explicit PWA conversion, polyhedral complexes, and parallel layerwise enumeration, with different output quotients and guarantees.
-- **Works:** tran2019star,robinson2020dissecting,masden2022algorithmic,berzins2023polyhedral,drammis2024parallel
-- **Anchors:** sources/tran2019star.md#evidence-locations;sources/robinson2020dissecting.md#evidence-locations;sources/masden2022algorithmic.md#evidence-locations;sources/berzins2023polyhedral.md#evidence-locations;sources/drammis2024parallel.md#evidence-locations
+- **Finding:** Exact star propagation through a ReLU network retains input predicates and affine images while splitting on feasible activation cases.
+- **Works:** tran2019star
+- **Anchors:** sources/tran2019star.md#evidence-locations
 - **Supports:** C04,C15
 - **Manuscript:** sec-routes
-- **Scope:** primary algorithms, exactness statements, and representation boundaries
-- **Caveat:** These objects need not preserve the graph's contextual selection observer.
-- **Certainty:** moderate
+- **Scope:** exact reachability for the paper's bounded ReLU-network model
+- **Caveat:** A reachable output star is an extensional image object, not the graph's contextual selection observer.
+- **Certainty:** high
 
 ### E030
 
-- **Finding:** Property-blocked and access-guided generation, bounded lazy initialization, BLISS, LISSA, and PLI refine partial inputs or heaps under bounded exhaustive-search objectives.
-- **Works:** lindblad2007property,boyapati2002korat,geldenhuys2013bounded,rosner2015bliss,copia2022lissa,copia2023precise
-- **Anchors:** sources/lindblad2007property.md#evidence-locations;sources/boyapati2002korat.md#evidence-locations;sources/geldenhuys2013bounded.md#evidence-locations;sources/rosner2015bliss.md#evidence-locations;sources/copia2022lissa.md#evidence-locations;sources/copia2023precise.md#evidence-locations
+- **Finding:** Property-directed generation refines the metavariable on which a first-order property is blocked and may return a partial constructor term denoting many satisfying completions.
+- **Works:** lindblad2007property
+- **Anchors:** sources/lindblad2007property.md#evidence-locations
 - **Supports:** C06,C15
 - **Manuscript:** sec-synthesis
-- **Scope:** primary algorithms and work-specific correctness scopes
-- **Caveat:** Lindblad states but does not prove the needed soundness/completeness conditions; the other works have their own proved or explicitly scoped guarantees. Their observers and artifacts differ from exact selection-observation records.
+- **Scope:** the paper's first-order constructor language and property-directed search
+- **Caveat:** The paper states but does not prove the needed soundness and completeness conditions, and it does not aggregate one exact selection-observation fiber or residual.
 - **Certainty:** moderate
-
-### E031
-
-- **Finding:** Reward-space regions can group rewards that induce the same optimal MDP policy and support policy-invariance analysis.
-- **Works:** shin2024multitask
-- **Anchors:** sources/shin2024multitask.md#relevance
-- **Supports:** C09,C15
-- **Manuscript:** sec-synthesis
-- **Scope:** primary abstract and conference-archive presentation text
-- **Caveat:** This screened source supports only the high-level comparator claim, not an enumeration theorem, canonicality result, or complexity bound.
-- **Certainty:** low
 
 ### E032
 
@@ -372,7 +361,6 @@ depth and evidence limits).
 - **Works:** bernardinello2016revealsexcludes,adobbati2024parametricreveals
 - **Anchors:** sources/bernardinello2016revealsexcludes.md#evidence-locations;sources/adobbati2024parametricreveals.md#evidence-locations
 - **Supports:** C14,C15
-- **Manuscript:** sec-synthesis
 - **Scope:** primary definitions, algorithms, and bounded-net guarantees
 - **Caveat:** These are run/event observers over Petri nets, not caller-input fibers with residual functions.
 - **Certainty:** high
@@ -396,3 +384,331 @@ depth and evidence limits).
 - **Scope:** the logical don't-care leg of the omission-mechanism taxonomy
 - **Caveat:** Anchors the leg's existence and complexity framing, not any correspondence with the selection observer; that correspondence is the survey's taxonomy.
 - **Certainty:** high
+
+### E036
+
+- **Finding:** Lexicographic perturbation for multiparametric LP selects a unique continuous piecewise-affine optimizer and nonoverlapping basis regions under the paper's assumptions.
+- **Works:** jones2007lexicographic
+- **Anchors:** sources/jones2007lexicographic.md#evidence-locations
+- **Supports:** C04,C10,C15
+- **Manuscript:** sec-complexity
+- **Scope:** the paper's multiparametric linear-programming model
+- **Caveat:** The result concerns optimizer/basis representations, not contextual graph-event fibers.
+- **Certainty:** high
+
+### E037
+
+- **Finding:** A minimum-norm secondary optimization yields a unique continuous selection from the original pQP solution set with an algorithm-independent polyhedral representation under stated assumptions.
+- **Works:** spjotvold2007unique
+- **Anchors:** sources/spjotvold2007unique.md#evidence-locations
+- **Supports:** C04,C10,C15
+- **Manuscript:** sec-complexity
+- **Scope:** the paper's convex multiparametric quadratic programs
+- **Caveat:** This is a selected optimizer quotient, not a selection-event observer.
+- **Certainty:** high
+
+### E038
+
+- **Finding:** A graphical-derivative adjacency method discovers every full-dimensional convex-pQP neighbor across a facet without nondegeneracy or a facet-to-facet assumption.
+- **Works:** patrinos2010graphical
+- **Anchors:** sources/patrinos2010graphical.md#qualifications-and-complexity
+- **Supports:** C04,C10,C15
+- **Manuscript:** sec-complexity
+- **Scope:** full-dimensional critical regions of the stated convex pQP class
+- **Caveat:** The paper gives no polynomial total, delay, workspace, or coefficient-bit bound and omits lower-dimensional-only regions.
+- **Certainty:** high
+
+### E039
+
+- **Finding:** Rank-deficient strictly convex mpQP can be handled by enumerating optimal active-set combinations with the paper's NNLS-based per-combination analysis.
+- **Works:** bemporad2015multiparametric
+- **Anchors:** sources/bemporad2015multiparametric.md#evidence-locations
+- **Supports:** C04,C10,C15
+- **Manuscript:** sec-complexity
+- **Scope:** the paper's strictly convex mpQP assumptions
+- **Caveat:** At most exponentially many active-set combinations are considered; this is not a new enumeration-class bound.
+- **Certainty:** high
+
+### E040
+
+- **Finding:** Multiparametric linear-program solution and halfspace polyhedral projection have polynomial input and output conversions in both directions.
+- **Works:** jones2008projection
+- **Anchors:** sources/jones2008projection.md#evidence-locations
+- **Supports:** C10,C15
+- **Manuscript:** sec-complexity
+- **Scope:** the representations and reductions stated in the paper
+- **Caveat:** The interreduction does not identify either object with the selection observer.
+- **Certainty:** high
+
+### E041
+
+- **Finding:** PESO enumerates reordered relevant-slice conditions for requested slicing criteria, associates them with symbolic outputs and solver-generated tests, and is conditionally complete for the finite RSC set under a sound and complete solver.
+- **Works:** qi2013output
+- **Anchors:** sources/qi2013output.md#evidence-locations
+- **Supports:** C02,C03,C15
+- **Manuscript:** sec-introduction,sec-routes,sec-synthesis
+- **Scope:** the paper's finite symbolic program model and RSC exploration assumptions
+- **Caveat:** Equal RSCs fix symbolic outputs, but the paper does not prove that RSCs are the coarsest output quotient or that one RSC equals one instrumented selection fiber.
+- **Certainty:** high
+
+### E042
+
+- **Finding:** SPD builds a shared graph of dependence-relevant path families and guarded symbolic values for queried uses while avoiding products of irrelevant control subpaths.
+- **Works:** santelices2010dependencies
+- **Anchors:** sources/santelices2010dependencies.md#evidence-locations
+- **Supports:** C02,C03,C15
+- **Manuscript:** sec-introduction,sec-routes,sec-synthesis
+- **Scope:** the paper's symbolic program-dependence construction and exact mode
+- **Caveat:** The paper describes equality with pathwise symbolic execution but gives no numbered end-to-end soundness/completeness theorem; exact correspondence to selection fibers is open.
+- **Certainty:** moderate
+
+### E043
+
+- **Finding:** Dynamic functional-space partitioning represents mux behavior by mutually exclusive Boolean control cells paired with selected data expressions and recursively omits unselected case partitions.
+- **Works:** feng2004dynamic
+- **Anchors:** sources/feng2004dynamic.md#evidence-locations
+- **Supports:** C02,C04,C15
+- **Manuscript:** sec-introduction,sec-synthesis
+- **Scope:** symbolic simulation of the paper's hardware/dataflow model
+- **Caveat:** Heuristic split points and merging can erase source-event provenance; the paper does not prove the target's one-record-per-contextual-observation contract.
+- **Certainty:** moderate
+
+### E044
+
+- **Finding:** Symbolic Simulink/Stateflow analysis records conditional-block outcomes in bounded discrete traces and carries symbolic predicates and residual transformers.
+- **Works:** kanade2009simulink
+- **Anchors:** sources/kanade2009simulink.md#evidence-locations
+- **Supports:** C02,C15
+- **Manuscript:** sec-synthesis
+- **Scope:** the paper's bounded trace and block-value-region construction
+- **Caveat:** The computed region is an underapproximation of one sampled trace class, not an exhaustive disjoint exact partition.
+- **Certainty:** high
+
+### E045
+
+- **Finding:** Sylvia independently explores RTL block path fragments, combines them with SMT feasibility checks, and returns replayable witness inputs.
+- **Works:** ryan2023sylvia
+- **Anchors:** sources/ryan2023sylvia.md#evidence-locations
+- **Supports:** C03,C15
+- **Manuscript:** sec-synthesis
+- **Scope:** the paper's modular RTL symbolic-execution algorithm
+- **Caveat:** The full fragment combination remains exponential in the stated worst case and the output is not one exact selection-fiber guard/residual record.
+- **Certainty:** moderate
+
+### E046
+
+- **Finding:** Set-function evaluation records the nondeterministic steps actually executed as a fingerprint, representable by choice-node/rule pairs; it does not yet establish the later stable choice-ID partial-map form.
+- **Works:** antoy2009setfunctions
+- **Anchors:** sources/antoy2009setfunctions.md#evidence-locations
+- **Supports:** C06,C07,C15
+- **Manuscript:** sec-introduction,sec-routes,sec-synthesis
+- **Scope:** the paper's functional-logic computation-space semantics
+- **Caveat:** Complete strategies enumerate values, but the paper does not prove stable identity across runtime copies, one canonical fingerprint class, a caller-input guard, or a symbolic residual per graph observation.
+- **Certainty:** high
+
+### E047
+
+- **Finding:** Pull-tabbing propagates immutable choice identifiers so duplicated runtime occurrences of one nondeterministic choice make a consistent decision.
+- **Works:** alqaddoumi2010pulltab
+- **Anchors:** sources/alqaddoumi2010pulltab.md#evidence-locations
+- **Supports:** C06,C07,C15
+- **Manuscript:** sec-introduction,sec-routes,sec-synthesis
+- **Scope:** call-time choice under the paper's pull-tab transformation
+- **Caveat:** The paper gives neither a numbered soundness/completeness theorem nor deterministic caller-input fibers and residuals.
+- **Certainty:** moderate
+
+### E048
+
+- **Finding:** Memoized pull-tabbing demand-populates a task-local fingerprint mapping stable choice identifiers to outcomes and reuses it to avoid repeated traversal.
+- **Works:** hanus2021memoized
+- **Anchors:** sources/hanus2021memoized.md#evidence-locations
+- **Supports:** C06,C07,C15
+- **Manuscript:** sec-introduction,sec-routes,sec-synthesis
+- **Scope:** the paper's memoized functional-logic evaluation scheme
+- **Caveat:** Correctness and operational completeness are attributed to earlier pull-tabbing results; MPT itself does not define or prove exact input guards, residuals, or selection-fiber coverage.
+- **Certainty:** moderate
+
+### E049
+
+- **Finding:** SPLat discovers configuration variables on first read, checks partial assignments against a feature model, and backtracks over the access stack to execute one configuration per claimed distinct reachable test trace.
+- **Works:** kim2013splat
+- **Anchors:** sources/kim2013splat.md#evidence-locations
+- **Supports:** C06,C15
+- **Manuscript:** sec-routes,sec-synthesis
+- **Scope:** bounded finite configuration variables, a test, and the paper's reset/execution assumptions
+- **Caveat:** The paper gives no formal soundness/completeness/nonrepetition theorem and emits neither an exact symbolic fiber guard nor a residual function.
+- **Certainty:** moderate
+
+### E050
+
+- **Finding:** Wang et al.'s `Next` algorithm enumerates every locally colored equivalence class of solution trees in an acyclic decomposable AND/OR graph exactly once with delay \(O(ns)\).
+- **Works:** wang2021equivalence
+- **Anchors:** sources/wang2021equivalence.md#evidence-locations
+- **Supports:** C05,C15
+- **Manuscript:** sec-introduction,sec-synthesis,sec-complexity
+- **Scope:** the supplied decomposable acyclic graph, local coloring equivalence, graph size \(n\), and solution size \(s\)
+- **Caveat:** The output is a colored class tree, not a caller-input guard, residual, or witness; no general reduction from arbitrary observer fibers is proved.
+- **Certainty:** high
+
+### E051
+
+- **Finding:** Chang et al. construct an exact decision-tree representation of a neural-network controller's extensional policy and compact it while preserving policy equivalence.
+- **Works:** chang2026compact
+- **Anchors:** sources/chang2026compact.md#evidence-locations
+- **Supports:** C07,C09,C15
+- **Manuscript:** sec-synthesis,sec-boundaries
+- **Scope:** the paper's neural-controller and decision-tree representation assumptions
+- **Caveat:** Policy equivalence can merge internal activation or selection events and does not provide the survey's residual-valued event observer.
+- **Certainty:** high
+
+### E052
+
+- **Finding:** Explicit conversion of a ReLU network to a piecewise-affine representation emits polyhedral input regions paired with affine maps.
+- **Works:** robinson2020dissecting
+- **Anchors:** sources/robinson2020dissecting.md#evidence-locations
+- **Supports:** C04,C15
+- **Manuscript:** sec-routes
+- **Scope:** the paper's ReLU-network conversion procedure
+- **Caveat:** The representation is extensional and need not retain contextual activation-event identities.
+- **Certainty:** moderate
+
+### E053
+
+- **Finding:** Exact neural-network analysis can construct the full polyhedral complex induced by a piecewise-linear network, including lower-dimensional faces.
+- **Works:** masden2022algorithmic
+- **Anchors:** sources/masden2022algorithmic.md#evidence-locations
+- **Supports:** C04,C15
+- **Manuscript:** sec-routes
+- **Scope:** the paper's genericity and piecewise-linear network assumptions
+- **Caveat:** A face complex is a geometric representation, not a requested-root contextual event observer.
+- **Certainty:** moderate
+
+### E054
+
+- **Finding:** A polyhedral-complex method recovers activation regions and their face relations for piecewise-affine neural networks.
+- **Works:** berzins2023polyhedral
+- **Anchors:** sources/berzins2023polyhedral.md#evidence-locations
+- **Supports:** C04,C15
+- **Manuscript:** sec-routes
+- **Scope:** the paper's network and polyhedral-complex assumptions
+- **Caveat:** Its output quotient and boundary conventions differ from sparse selection observations.
+- **Certainty:** moderate
+
+### E055
+
+- **Finding:** Parallel layerwise activation-region enumeration has work and storage governed by intermediate region counts and the paper's bounded-domain assumptions.
+- **Works:** drammis2024parallel
+- **Anchors:** sources/drammis2024parallel.md#evidence-locations
+- **Supports:** C04,C15
+- **Manuscript:** sec-routes
+- **Scope:** the paper's parallel exact neural-region algorithm
+- **Caveat:** The analysis concerns dense activation regions, not residual-valued sparse observations.
+- **Certainty:** moderate
+
+### E056
+
+- **Finding:** Korat observes fields read by an executable representation invariant and exhaustively generates finitized nonisomorphic satisfying object structures.
+- **Works:** boyapati2002korat
+- **Anchors:** sources/boyapati2002korat.md#evidence-locations
+- **Supports:** C06,C15
+- **Manuscript:** sec-synthesis
+- **Scope:** finitized object structures and the paper's canonical construction procedure
+- **Caveat:** It emits concrete structures, not one symbolic guard/residual record per observer fiber.
+- **Certainty:** high
+
+### E057
+
+- **Finding:** Bounded lazy initialization refines symbolic heap fields on access while using relational bounds and canonical labels to reduce bounded structure generation.
+- **Works:** geldenhuys2013bounded
+- **Anchors:** sources/geldenhuys2013bounded.md#evidence-locations
+- **Supports:** C06,C15
+- **Scope:** the paper's bounded symbolic-heap model
+- **Caveat:** Locally consistent partial heaps can lack a globally valid completion, and no observation quotient is emitted.
+- **Certainty:** moderate
+
+### E058
+
+- **Finding:** BLISS uses SAT with a declarative invariant to retain exactly the bounded heaps admitted by lazy initialization's validity condition.
+- **Works:** rosner2015bliss
+- **Anchors:** sources/rosner2015bliss.md#evidence-locations
+- **Supports:** C06,C15
+- **Manuscript:** sec-synthesis
+- **Scope:** bounded symbolic heaps under the paper's invariant encoding
+- **Caveat:** Heap validity remains separate from path behavior and the output is not an exact observer-fiber partition.
+- **Certainty:** high
+
+### E059
+
+- **Finding:** LISSA combines demand-driven heap refinement with bounded-exhaustive symbolic solving so that no valid heap path admitted by its executable invariant is pruned.
+- **Works:** copia2022lissa
+- **Anchors:** sources/copia2022lissa.md#evidence-locations
+- **Supports:** C06,C15
+- **Manuscript:** sec-synthesis
+- **Scope:** the paper's bounded heap and executable-invariant model
+- **Caveat:** Heap feasibility and primitive path feasibility are not jointly exact in this result, and paths are not grouped by observer fiber.
+- **Certainty:** high
+
+### E060
+
+- **Finding:** Precise lazy initialization jointly solves heap structure and path conditions and preserves exactly the bounded feasible scoped symbolic states of its baseline.
+- **Works:** copia2023precise
+- **Anchors:** sources/copia2023precise.md#evidence-locations
+- **Supports:** C06,C15
+- **Manuscript:** sec-synthesis
+- **Scope:** the paper's bounded scoped symbolic-state model and solver assumptions
+- **Caveat:** Exact state preservation is not one-record-per-selection-observation aggregation and supplies no requested residual function.
+- **Certainty:** high
+
+### E061
+
+- **Finding:** Controller clipping and separator constructions remove explicit region descriptions while preserving the pointwise controller function.
+- **Works:** kvasnica2012clipping,kvasnica2013separation
+- **Anchors:** sources/kvasnica2012clipping.md#contribution;sources/kvasnica2013separation.md#contribution
+- **Supports:** C09,C15
+- **Scope:** exact pointwise-equivalent controller factorizations
+- **Caveat:** Function-preserving factorization is an extensional representation result, not a sparse contextual selection-event observer; the cross-domain distinction is the survey's synthesis.
+- **Certainty:** low
+
+### E062
+
+- **Finding:** Classical symbolic execution runs programs on symbolic inputs, propagates formula-valued states, and treats conditional branches as a central testing problem.
+- **Works:** king1976symbolic
+- **Anchors:** sources/king1976symbolic.md#evidence-locations
+- **Supports:** C02,C15
+- **Manuscript:** sec-routes
+- **Scope:** publisher abstract and bibliographic metadata
+- **Caveat:** The abstract establishes the lineage, not exact observation-fiber grouping or an enumeration theorem.
+- **Certainty:** low
+
+### E063
+
+- **Finding:** DART combines concrete executions with dynamic symbolic analysis that generates new inputs to direct exploration toward alternative program paths.
+- **Works:** godefroid2005dart
+- **Anchors:** sources/godefroid2005dart.md#evidence-locations
+- **Supports:** C02,C03,C15
+- **Manuscript:** sec-routes,sec-algorithms
+- **Scope:** publisher abstract and bibliographic metadata
+- **Caveat:** Model-guided path exploration does not itself aggregate complete selection-observation fibers.
+- **Certainty:** low
+
+### E064
+
+- **Finding:** SEDGE uses concolic SMT reasoning over high-level Pig dataflow programs to generate input data intended to cover operator cases.
+- **Works:** li2013sedge
+- **Anchors:** sources/li2013sedge.md#evidence-locations
+- **Supports:** C02,C15
+- **Manuscript:** sec-routes
+- **Scope:** accepted-paper abstract and introduction
+- **Caveat:** Operator-case coverage by an accumulated example dataset is not duplicate-free exact fiber enumeration with residuals.
+- **Certainty:** low
+
+### E065
+
+- **Finding:** Variational execution represents configuration-dependent alternatives under propositional contexts and shares redundant work across many configurations.
+- **Works:** wong2018variational
+- **Anchors:** sources/wong2018variational.md#evidence-locations
+- **Supports:** C02,C07,C15
+- **Manuscript:** sec-routes
+- **Scope:** primary abstract and introduction
+- **Caveat:** A shared multi-configuration execution is a representation predecessor, not one exact inverse-fiber record per selection observation.
+- **Certainty:** low

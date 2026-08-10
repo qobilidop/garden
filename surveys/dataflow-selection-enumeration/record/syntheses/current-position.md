@@ -28,14 +28,35 @@ are isomorphic presentations of one observer. Coordinate projection,
 equal-behavior coalescing, recording full paths, and property-relative pruning may
 instead produce coarser, finer, or incomparable partitions.
 
+## Closest established results
+
+The closest works are not merely the broad traditions used to organize the
+paper. PESO is the closest formal output-directed path-enumeration predecessor:
+it gives relevant-slice conditions, symbolic outputs, witnesses, and a
+conditional completeness argument. SPD is the closest shared path-family and
+guarded-residual predecessor. Feng et al.'s mux functional-space partitions
+are the closest restricted pure-dataflow guard/residual representation, while
+Kanade et al. are the closest graphical-dataflow trace-equivalence predecessor.
+Stable functional-logic fingerprints are the closest sparse choice-map
+representation. SPLat is a close demand-populated configuration explorer, and
+Wang et al. provide the strongest general exact equivalence-class enumeration
+result under an acyclic decomposable AND/OR representation.
+
+None is silently identified with the target. Exact correspondence to PESO,
+SPD, and Feng's actual algorithms remains open; Kanade computes an
+underapproximation; the functional-logic observer is nondeterministic; SPLat
+does not emit exact fiber guards or residuals; and Wang's output is a colored
+class tree rather than a caller-input record. The field-by-field comparison is
+maintained in `approach-guarantees.md`.
+
 ## Recurring solution routes
 
 | Route | Relationship to the target |
 |---|---|
-| Guarded symbolic execution | Direct after requested-root demand, contextual event logging, and full-fiber grouping |
+| Guarded symbolic execution | Direct only after requested-root demand, contextual event logging, and proved full-fiber grouping; the closest published output-directed algorithms have an open correspondence |
 | Projected model enumeration | Direct for observation indexing after unobserved-or-outcome instrumentation; residuals require a separate exact step |
 | Decision structures | Direct when compiling the totalized observer rather than only the output function |
-| Demand-guided search | Direct only after its demand judgment and record contract are proved equivalent |
+| Demand-guided search | Open correspondence until its demand/trace judgment and record contract are proved equivalent |
 | Geometric and parametric enumeration | Dense strict-sign cells are a restricted direct specialization on boundary-free whole-cell domains; optimizer critical regions generally use a different observer |
 | Compositional guarded summaries | Exact representation under requested-output demand, contextual identity, and explicit interface support |
 
@@ -68,3 +89,8 @@ program model, or a representation result that changes the comparison. Such a
 finding updates the source note, affected thematic synthesis, claim ledger,
 evidence ledger, and manuscript; adding a catalog row alone does not complete
 the update.
+
+The record is presently a bounded search snapshot, not a closed evidence map.
+Deep-read and screened works support the current synthesis, while the remaining
+`candidate` rows are an unresolved discovery backlog. Absence of a closer paper
+from the reviewed set is not evidence that none exists.

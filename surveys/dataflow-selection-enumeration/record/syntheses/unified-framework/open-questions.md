@@ -1,4 +1,4 @@
-# Open unified-theory obligations
+# Open framework obligations
 
 - **F01 — Partiality and recurrence:** Determine which classes of partial
   primitives, cycles, recursion, or recurring component occurrences retain a
@@ -18,5 +18,5 @@
   the observer-relative reduction audit.
 
 These are research questions left open by the manuscript, not hypotheses of
-novelty. Close an item only after reconciling the unified theory, claim
+novelty. Close an item only after reconciling the unified framework, claim
 ledger, evidence ledger where prior work is involved, and manuscript text.

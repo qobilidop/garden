@@ -4,6 +4,15 @@ This ledger records the terminology selected after the close-literature survey.
 Terms marked *local* are deliberately introduced for the synthesis rather than
 presented as inherited terms of art.
 
+Publication wording must make that status visible on first use. _Fiber_,
+_observer/kernel/refinement_, _guard_, _residual_, _projection_, and _symbolic
+execution_ are established vocabulary. _Selective term graph_, _selection
+observation_, _enabled closure_, _observed-outcome guard_, _observation
+record_, _full-fiber blocking_, _concolic exact-fiber generation_, and _exact
+enumeration of selection observations_ are local names or local refinements of
+established ideas. The six groups in the manuscript are _routes_ or
+_traditions_, not a field-wide taxonomy.
+
 | Concept | Terms to investigate | Preferred term | Status | Concern |
 |---|---|---|---|---|
 | Program representation | dataflow graph, expression DAG, term graph, circuit | finite typed pure term graph; *selective term graph* when selections are explicit | selected (local refinement) | “Dataflow” is heavily overloaded; term graph makes sharing central. |
@@ -69,3 +78,9 @@ presented as inherited terms of art.
 - **Graph-relative uniqueness vs. logical canonicity:** renaming, rewriting, or
   duplicating graph sites can change the observation while preserving the
   extensional function.
+
+- **Exact residualization vs. solver operation:** the manuscript's
+  _residualization_ is exact symbolic specialization of requested graph values
+  under a fiber guard. It is not an established primitive supplied by an SMT
+  solver. A solver can check and model formulas; building, simplifying, and
+  representing a fiber-wide residual remains a separate symbolic-program task.

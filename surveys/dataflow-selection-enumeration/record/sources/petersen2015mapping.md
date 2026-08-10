@@ -11,7 +11,7 @@ source: "Abstract and method overview via https://doi.org/10.1016/j.infsof.2015.
 retrieved: "-"
 notes-by: Codex (initial campaign); Claude Fable 5 (record migration)
 notes-date: 2026-08-04
-synthesis: "Methodology source used only to characterize this survey as a systematic map organized around research questions, classification, search, screening, and reporting; no technical claim about selection observations is attributed to it"
+synthesis: "Methodology source used only to guide the survey's research questions, classification, search, screening, and reporting; the unresolved backlog prevents claiming a closed systematic map, and no technical claim about selection observations is attributed to it"
 ---
 
 # systematic mapping guidance
@@ -27,10 +27,10 @@ synthesis: "Methodology source used only to characterize this survey as a system
 ## Bearing on RQs
 
 The paper updates guidelines for conducting systematic mapping studies in
-software engineering. The manuscript uses it only to characterize the study as
-a systematic map organized around research questions, classification, search,
-screening, and reporting; no technical claim about selection observations is
-attributed to it.
+software engineering. The manuscript uses its research-question,
+classification, search, screening, and reporting structure without claiming a
+closed systematic map while candidates remain unresolved; no technical claim
+about selection observations is attributed to it.
 
 ## Evidence limits
 

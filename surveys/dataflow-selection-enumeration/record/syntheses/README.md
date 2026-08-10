@@ -9,8 +9,13 @@ update should state the current conclusion, strongest supporting and limiting
 results, scope conditions, and any consequence for `claims.md` or the
 manuscript. Chronological reading notes do not belong here.
 
-`current-position.md` is the compact entry point. `subsumption-boundaries.md`
-compares the approaches that most directly overlap the survey's formal object.
-`terminology.md` records the adopted terms and required distinctions, and
-`unified-theory/` is the unified theory's formal workspace — definitions,
-derivations, counterexamples, and the reduction audit.
+- `current-position.md` is the compact entry point.
+- `closest-work-audit.md` stress-tests reductions from the approaches that most
+  directly overlap the survey's formal object; its name deliberately avoids
+  implying that subsumption has been proved.
+- `approach-guarantees.md` is the canonical RQ3/RQ4 matrix: it records each
+  representative work's native observer, guarantees, missing record fields,
+  and correspondence status.
+- `terminology.md` records the adopted terms and required distinctions.
+- `unified-framework/` is the manuscript framework's formal workspace — definitions,
+  derivations, counterexamples, and the reduction audit.

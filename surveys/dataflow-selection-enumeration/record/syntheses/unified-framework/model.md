@@ -1,4 +1,4 @@
-# Formal model
+# Unified formal model
 
 ## Scope and assumptions
 

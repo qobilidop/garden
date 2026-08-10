@@ -39,11 +39,11 @@ newlines RFC4180-style — read them with a CSV-aware tool, not bare
 This record deliberately carries more than the minimal survey-record
 shape: `catalog.tsv` is a five-state disposition ledger
 (`candidate`/`screened`/`deep-read`/`excluded`/`parked`) because
-discovery outran adjudication and candidates are retained without a
-promise to read them; the protocol is a separate document rather
+discovery outran adjudication. Candidates are the unresolved screening backlog,
+retained without a promise to deep-read every row; the protocol is a separate document rather
 than README sections because tooling parses it (`check.py` reads the
 research questions there); and the evidence ledger plus the
-unified-theory workspace bind manuscript claims to evidence at a
+unified-framework workspace bind manuscript claims to evidence at a
 granularity the minimal shape does not attempt (Theory mode in the
 `run-survey` skill). Historical source notes carry
 `retrieved: "-"` because per-note acquisition dates were not
@@ -81,8 +81,8 @@ for each are in `protocol.md`.
   `run-survey` skill's `assets/source-note-template.md`.
 - `syntheses/` — the understanding layer, revised after each reading
   batch: thematic files, `current-position.md` as entry point, the
-  adopted terminology (`terminology.md`), and the unified theory's
-  formal workspace (`unified-theory/`).
+  adopted terminology (`terminology.md`), and the manuscript's formal
+  workspace (`unified-framework/`).
 - `claims.md` — the synthesis claims ledger (`Cxx` ids cited by
   `evidence.md`); statuses declared in its preamble; every claim
   carries explicit Scope and its closest established result.
@@ -102,11 +102,11 @@ is the provenance for funnel changes.
 |---|---|---|---|---:|---:|---:|---:|---:|---:|---|
 | 2026-08-09 | 2026-08-04 | 2026-08-09 | 22 / 0 | 1108 | 872 | 872 | 0 | 20 | 4 | approved 2026-08-09 (dual-pass + adjudication; 4 candidates, 20 excluded-with-memory, 848 dropped) |
 
-Column semantics: *Screened* counts rows that completed the screening
-pass (not rows at catalog status `screened`); *Included* counts rows
-retained with a positive disposition (new `candidate`, `screened`, or
-`deep-read` rows); dropped rows are Screened minus Parked, Excluded,
-and Included. The row is appended in To-update step 5 and its Human
+Column semantics: *Screened* counts rows that completed the batch's automated
+screening pass (not rows at catalog status `screened`); the historical
+*Included* column counts rows retained in the catalog, including unresolved
+`candidate` rows, and must not be read as evidence inclusion. Dropped rows are
+Screened minus Parked, Excluded, and Included. The row is appended in To-update step 5 and its Human
 gate cell records the approval already obtained in step 2.
 
 ## Bibliography and build
@@ -143,7 +143,8 @@ conditions in `protocol.md`).
 
 2. Deduplicate every staged row against `catalog.tsv` through the
    protocol's key grammar; screen per the protocol's dual-pass
-   structure; assign dispositions (`parked` when undecidable); a
+   structure; use `candidate` only for an unresolved abstract-level judgment
+   and `parked` only when the required metadata/text is unavailable; a
    human gates the batch before any state advances.
 3. Deep-read and snowball any new `critical` work, both directions;
    forward-refresh the existing critical set in any substantial
@@ -151,7 +152,7 @@ conditions in `protocol.md`).
 4. Append one matching log row per executed query (log rows are
    hand-appended to the TSV — no scripted writer exists), update the
    catalog, and reconcile syntheses, claims, terminology, the
-   unified theory, the evidence ledger, and affected manuscript
+   unified framework, the evidence ledger, and affected manuscript
    text; discard the staged result set.
 5. Regenerate the bibliography if citations changed; rebuild both
    manuscript renders; reconcile every quantity in the manuscript,

@@ -3,8 +3,8 @@ citekey: lindblad2007property
 work:
   title: "Property Directed Generation of First-Order Test Data"
   author: "Fredrik Lindblad"
-  venue: "TFP 2007"
-  date: 2007
+  venue: "Trends in Functional Programming, volume 8 (TFP 2007)"
+  date: 2008
 read: full-text
 source: "Author manuscript (TFP 2007) via archived CiteSeerX copy: https://web.archive.org/web/20221011155516id_/http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.116.2439&rep=rep1&type=pdf; publication record https://research.chalmers.se/publication/111863"
 retrieved: "-"

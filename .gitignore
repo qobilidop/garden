@@ -3,6 +3,7 @@
 /site/dist/
 /site/.astro/
 /site/public/surveys/
-.scratch/
 __pycache__/
-surveys/*/.scratch/
+
+# Ignore temporary files
+tmp/

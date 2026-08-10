@@ -19,9 +19,16 @@ algorithmic precedents unusually close to our target:
   finite guard/output/property alphabet over possibly infinite domains.
 - Projected AllSMT enumerates the finite image of instrumented observer
   variables directly.
+- Wang et al. enumerate locally colored equivalence classes of solution trees
+  directly from an acyclic decomposable AND/OR graph. Their `Next` algorithm
+  emits every class exactly once with delay \(O(ns)\), where the supplied graph
+  has size \(n\) and a solution has size \(s\).
 
-Consequently, the paper cannot present “partition the input domain by a finite
-observer and enumerate all nonempty fibers” as an original theoretical result.
+Consequently, the paper cannot present “partition solutions by an observer and
+enumerate all nonempty classes” as an original theoretical result. Wang et
+al.'s theorem is a particularly important general quotient-enumeration
+precedent, although its decomposable representation and colored class-tree
+output do not supply caller-input guards, residuals, or witnesses.
 
 ## Exact placement of our observer
 
@@ -62,9 +69,10 @@ demand several cases, and contextual call identities.
 | Boolean-atom enumeration | every formula in a fixed alphabet | all satisfiable positive/negative combinations | complete atom | project or union atoms |
 | IOSTS IECP | transition behavior from every finite state class | satisfiable local subsets, then global products | conjunction/product formula | transducer minimization to coarsest behavior |
 | projected AllSMT | chosen finite ghost vector | solver model plus projected blocking | existential projected fiber | inherent equality on projection |
+| Wang et al. equivalence classes | locally colored OR-node labels in an acyclic decomposable AND/OR solution graph | dynamic-programming successor over class trees | no caller-input guard | equality of contracted colored solution trees |
 | graph full-fiber blocking | only observed site outcomes; inactivity intended to follow structurally | evaluate witness, derive local fiber, block it | claimed compact exact fiber | group by complete sparse observation |
 
-The fourth row is therefore best understood as a specialized compilation and
+The fifth row is therefore best understood as a specialized compilation and
 enumeration strategy for a standard observer quotient.
 
 ## Framework proof obligations and survey value

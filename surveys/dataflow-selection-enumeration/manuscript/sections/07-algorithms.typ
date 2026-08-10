@@ -12,8 +12,10 @@ comparison baselines, not claims of new generic enumeration paradigms.
 Projection directly supplies the observation index and, with model production,
 a witness and an exact fiber predicate obtained by fixing the projected tuple.
 It does not by itself construct a residual; satisfying the full record contract
-requires an exact residualization step, such as the demanded symbolic evaluator
-used by the local presentation.
+requires exact symbolic specialization of the requested values under the fiber
+guard, such as the demanded symbolic evaluator used by the local presentation.
+This paper calls that construction _residualization_; it is not a primitive
+operation supplied by an SMT solver.
 
 == Symbolic and solver assumptions
 
@@ -23,6 +25,17 @@ exact symbolic representation. A model-producing oracle for a formula returns
 `sat(m)`, `unsat`, or `unknown`. Only `unsat` certifies exhaustion; `unknown`
 produces an explicit incomplete result. We do not assume that the oracle runs
 in polynomial time or that a decision-only oracle returns a witness for free.
+
+Let $op("Dom")_G(x)$ be the symbolic encoding of the typed input product and
+write
+
+$
+  A_("enc")(x) = op("Dom")_G(x) and A(x).
+$
+
+Every solver query below uses $A_("enc")$. This is explicit because a
+bit-vector or integer lowering can otherwise admit codes that do not denote a
+typed graph input.
 
 For an input model $m in cal(X)_A$, a demanded evaluator carries three objects:
 
@@ -35,6 +48,10 @@ The memo is essential for shared DAGs. Memoizing syntax-tree positions could
 duplicate one source site or allow inconsistent outcomes.
 
 == Concolic exact-fiber generation
+
+The construction uses the standard DART-style pattern of one concrete model
+guiding a simultaneous symbolic evaluation @godefroid2005dart; its additional
+obligation is to generalize that model to the entire exact observation fiber.
 
 Evaluation of a demanded node $v$ returns a concrete value $c_v$ at $m$ and a
 symbolic residual $e_v$:
@@ -56,14 +73,14 @@ $
   op("Gen")(G,m,R) = (T_m, g_m, r_m),
 $
 
-where $r_m$ is the residual tuple for the requested roots and the complete
-guard is $A and g_m$.
+where $r_m$ is the residual tuple for the requested roots and the encoded
+complete guard is $A_("enc") and g_m$.
 
 #theorem("generator correctness")[
   Under the symbolic assumptions above and memoization by node identity,
   $
-    x models A and g_m
-      <=> A(x) and T_G(x,R) = T_m,
+    x models A_("enc") and g_m
+      <=> x in cal(X)_G and A(x) and T_G(x,R) = T_m,
   $
   and every input satisfying that guard satisfies
   $
@@ -77,7 +94,7 @@ guard is $A and g_m$.
   $g_("in")$ returns a guard $g_("out")$ such that $g_("out")$ implies $g_("in")$,
   $m models g_("out")$, the returned concrete value is $op("val")_m(v)$, the
   residual evaluates to that value at $m$, and for every
-  $x models A and g_("out")$ the returned
+  $x models A_("enc") and g_("out")$ the returned
   residual $e_v$ evaluates to the total graph value of $v$ at $x$. Guards grow
   monotonically; consequently, a memoized residual remains valid whenever it
   is reused because the current guard implies its creation guard. Ordinary
@@ -86,7 +103,7 @@ guard is $A and g_m$.
   $chi_(q,omega)(e_(s_q))$ is therefore equivalent under the strengthened guard
   to the global outcome predicate $p_(q,omega)(x)$ and selects the same case
   roots. The complete
-  guard $A and g_m$ is therefore semantically equivalent to
+  guard $A_("enc") and g_m$ is therefore semantically equivalent to
   $Gamma_(T_m)$ from the exact observed-outcome guard theorem, while the residual invariant
   gives value correctness. Every chosen outcome predicate holds at $m$, so the
   guard is nonempty.
@@ -94,18 +111,18 @@ guard is $A and g_m$.
 
 == Full-fiber blocking
 
-Initialize the uncovered formula $U_0=A$ and repeat:
+Initialize the uncovered formula $U_0=A_("enc")$ and repeat:
 
 1. Query the model oracle for $U_j$.
 2. On `unknown`, return all accumulated records marked incomplete.
 3. On `unsat`, return them marked complete.
 4. On `sat(m_j)`, compute
    $(T_j,g_j,r_j)=op("Gen")(G,m_j,R)$ and emit
-   $(T_j,A and g_j,r_j,m_j)$.
+   $(T_j,A_("enc") and g_j,r_j,m_j)$.
 5. Set $U_(j+1)=U_j and not g_j$.
 
 Previous blockers are not folded into an emitted guard. Every query already
-assumes $A$, so the incremental blocker need only negate $g_j$.
+assumes $A_("enc")$, so the incremental blocker need only negate $g_j$.
 
 #theorem("complete duplicate-free enumeration")[
   Let $K = abs(cal(T)_(G,A,R))$. If the model-producing oracle decides every
@@ -163,8 +180,8 @@ $
   )
 $
 
-Let $Phi_(G,A,R)(x,a,Z)$ conjoin the exact typed input-domain encoding,
-$A(x)$, every displayed reachability biconditional, and every displayed coordinate
+Let $Phi_(G,A,R)(x,a,Z)$ conjoin $A_("enc")(x)$, every displayed
+reachability biconditional, and every displayed coordinate
 definition. Project $Phi_(G,A,R)$ onto $Z=(z_q)_(q in Q)$, so its projected
 image is
 

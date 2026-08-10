@@ -1,4 +1,4 @@
-# Formal synthesis
+# Unified formal framework
 
 This workspace contains the definitions and derivations used to connect the
 surveyed literatures. It is supporting analysis for the survey.

@@ -1,4 +1,4 @@
-# What “demand” means across the literature
+# Meanings of demand across the literature
 
 The term does not name one established object. At least six technically
 different notions occur in the closest work.

@@ -13,12 +13,15 @@ constants, widths, and aggregate leaves. Let $S_("enc")$ be the actual shared
 global value-and-reachability encoding size, including source wiring, one
 reachability equation per relevant node and edge, ordinary
 primitives, classifiers, outcome encodings, direct case-membership predicates,
-selected combiners, and selection multiplexing. This may be larger than $S_G$. Let $S_A$ be
-caller-constraint size; $n_Q=abs(Q)$ the number of sites;
+selected combiners, selection multiplexing, and typed-domain constraints. This
+may be larger than $S_G$. Let $S_(A_("enc"))$ be the shared size of
+$A_("enc")=op("Dom")_G and A$, including the caller constraint and the typed-domain
+encoding; $n_Q=abs(Q)$ the number of sites;
 $b_q=abs(Omega_q)$; $K$ the number of feasible observations; $L$ the maximum
 observed-site count in one record; $S_tau$ the corresponding demanded
 subencoding size for record $tau$; and $S_("out")$ the total serialized or DAG
-output size, whichever representation is declared. Finally,
+output size, whichever representation is declared. Let $W_("wit")$ be the
+total serialized size of the emitted witnesses. Finally,
 $T_("SMT")(phi)$ denotes the cost of deciding $phi$ and producing a model.
 
 The source-node count alone is insufficient. A width-$w$ mask-valued selector is
@@ -68,26 +71,30 @@ $
 $
 
 shared-DAG operations and creates guard/residual DAGs of the same order. If
-every flat record copies $A$, output size includes $O(K S_A)$; if records share
-one immutable reference to $A$, it includes only $O(S_A)$ once.
+every flat record copies $A_("enc")$, output size includes
+$O(K S_(A_("enc")))$; if records share one immutable reference to
+$A_("enc")$, it includes only $O(S_(A_("enc")))$ once. Complete record
+serialization additionally includes $W_("wit")$; no representation-independent
+bound on witness byte length is assumed.
 
 Before model query $j$, the solver sees
 
 $
-  A and and.big_(i < j) not g_i.
+  A_("enc") and and.big_(i < j) not g_i.
 $
 
 An honest solver-time expression is therefore
 
 $
-  sum_(j=0)^K T_("SMT")(A and and.big_(i < j) not g_i).
+  sum_(j=0)^K T_("SMT")(A_("enc") and and.big_(i < j) not g_i).
 $
 
-The cumulative blocker DAG can grow to $O(K S_("enc"))$. Incremental solving
+The cumulative blocker DAG can grow to $O(K S_("enc"))$, plus one shared copy
+of $A_("enc")$. Incremental solving
 may reuse learned clauses but supplies no general monotone-runtime or
 polynomial-delay guarantee. The global projected encoding has one shared
-$O(S_("enc"))$ circuit but may spend exponential work compiling or enumerating
-its projected image. The two presentations have the same $K+1$
+$O(S_("enc") + S_(A_("enc")))$ circuit but may spend exponential work compiling
+or enumerating its projected image. The two presentations have the same $K+1$
 model-producing invocation count under naive complete-tuple blocking, not the
 same runtime or memory.
 
@@ -180,7 +187,11 @@ large practical improvements without a replacement OutputP, IncP, or DelayP
 bound @dussault2025bdifferential.
 
 These traversal bounds count core cells. Materializing dense records that
-restore every noncore coordinate adds $O(K abs(Q))$ output work.
+restore every noncore coordinate adds $O(K abs(Q))$ output work. They do not
+automatically bound the survey's complete four-field record: residualization
+must be restricted to an explicitly charged affine/PWA computation or added
+to the construction and serialization cost, and witness production must also
+be charged.
 
 The reduction has sharp boundaries. A non-strict classifier assigns boundary
 points to one side, and an arbitrary $A$ can cut or lower the dimension of a
@@ -192,7 +203,8 @@ bitvector primitives or an arbitrary solver theory.
 
 Jones and Maciejowski enumerate every full-dimensional critical-region basis
 of a multiparametric LP by reverse search. For their constraint matrix
-$A in RR^(m times n)$, parameter dimension $d$, $e=n-m$, and $N_r$ regions,
+$M in RR^(m times n)$ with $op("rank")(M)=m$, parameter dimension $d$, $e=n-m$,
+and $N_r$ regions,
 let $L_P(a,b)$ denote the paper's exact LP-oracle cost at the displayed
 dimensions. Their LP-relative bound is
 
@@ -238,6 +250,26 @@ practical per-combination analyses rather than a new enumeration-class theorem
 @bemporad2015multiparametric. Finally, pLP solution and halfspace polyhedral
 projection are polynomially interreducible, so renaming one side as projection
 does not establish a different complexity frontier @jones2008projection.
+
+The parametric objects also need a local correspondence caveat. The
+full-dimensional critical regions reported by Jones and Maciejowski are closed
+and can overlap on boundaries; regions that exist only in lower dimension are
+not emitted. Without a boundary-ownership convention or a caller-domain
+restriction that removes those boundaries, this is not the disjoint all-input
+fiber contract of @sec-framework. Parametric results are therefore adjacent
+optimizer/basis comparators unless a target-observer correspondence is proved.
+
+== General equivalence-class enumeration
+
+Wang et al. give a different strong frontier: from an explicitly supplied
+acyclic decomposable AND/OR solution graph with locally colored OR nodes, their
+`Next` algorithm enumerates every contracted colored solution-tree class
+exactly once with delay $O(n s)$, where $n$ is graph size and $s$ is the
+solution size @wang2021equivalence. This establishes exact quotient enumeration
+with polynomial delay as prior art. It does not classify the present problem:
+no general reduction from the selection observer to that decomposable
+representation is known, and its outputs are class trees rather than exact
+caller-input guards, residuals, and witnesses.
 
 The resulting complexity claim is intentionally negative but precise: the
 general theory proves finite exact enumeration and an exact $K+1$ oracle-call

@@ -1,4 +1,4 @@
-# Exact activation-region and hyperplane-cell enumeration
+# Exact hyperplane-cell and neural activation-region enumeration
 
 ## Established frontier
 

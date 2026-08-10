@@ -1,5 +1,6 @@
-% Hand-canonical entries for works without a registrar identifier;
-% every other entry is generated from references.tsv.
+% Hand-canonical entries for works without complete registrar metadata, plus
+% overrides where registrar metadata renders poorly. Other entries are
+% generated from references.tsv.
 
 @inproceedings{anand2008demand,
   author    = {Saswat Anand and Patrice Godefroid and Nikolai Tillmann},
@@ -13,12 +14,24 @@
   doi       = {10.1007/978-3-540-78800-3_28}
 }
 
-@inproceedings{berzins2023polyhedral,
-  author = {Arturs Berzins},
-  title = {Polyhedral Complex Extraction from ReLU Networks Using Edge Subdivision},
-  booktitle = {ICML 2023},
-  year = {2023},
-  url = {https://proceedings.mlr.press/v202/berzins23a.html},
+@article{antoy2011pull,
+  author  = {Sergio Antoy},
+  title   = {On the Correctness of Pull-Tabbing},
+  journal = {Theory and Practice of Logic Programming},
+  volume  = {11},
+  number  = {4--5},
+  pages   = {713--730},
+  year    = {2011},
+  doi     = {10.1017/S1471068411000263}
+}
+
+@inproceedings{alqaddoumi2010pulltab,
+  author    = {Abdulla Alqaddoumi and Sergio Antoy and Sebastian Fischer and Fabian Reck},
+  title     = {The Pull-Tab Transformation},
+  booktitle = {Proceedings of the Fourth International Workshop on Graph Computation Models},
+  pages     = {1--6},
+  year      = {2010},
+  url       = {https://web.cecs.pdx.edu/~antoy/homepage/publications/gcm10/paper.pdf}
 }
 
 @inproceedings{brassel2007tighter,
@@ -54,6 +67,18 @@
   doi     = {10.1109/TC.1986.1676819}
 }
 
+@inproceedings{berzins2023polyhedral,
+  author    = {Arturs Berzins},
+  title     = {Polyhedral Complex Extraction from {ReLU} Networks Using Edge Subdivision},
+  booktitle = {Proceedings of the 40th International Conference on Machine Learning},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {202},
+  pages     = {2234--2244},
+  publisher = {PMLR},
+  year      = {2023},
+  url       = {https://proceedings.mlr.press/v202/berzins23a.html}
+}
+
 @inproceedings{bugrara2013redundant,
   author    = {Suhabe Bugrara and Dawson Engler},
   title     = {Redundant State Detection for Dynamic Symbolic Execution},
@@ -62,6 +87,18 @@
   publisher = {USENIX Association},
   year      = {2013},
   url       = {https://www.usenix.org/conference/atc13/technical-sessions/presentation/bugrara},
+}
+
+@inproceedings{chatain2017goaldriven,
+  author    = {Thomas Chatain and Lo{\"i}c Paulev{\'e}},
+  title     = {Goal-Driven Unfolding of Petri Nets},
+  booktitle = {28th International Conference on Concurrency Theory (CONCUR 2017)},
+  series    = {Leibniz International Proceedings in Informatics},
+  volume    = {85},
+  pages     = {18:1--18:16},
+  publisher = {Schloss Dagstuhl -- Leibniz-Zentrum f{\"u}r Informatik},
+  year      = {2017},
+  doi       = {10.4230/LIPIcs.CONCUR.2017.18}
 }
 
 @article{geyer2010mode,
@@ -75,6 +112,27 @@
   doi     = {10.1080/00207170903159285}
 }
 
+@inproceedings{feng2004dynamic,
+  author    = {Tao Feng and Li-C. Wang and Kwang-Ting Cheng and Andy C.-C. Lin},
+  title     = {Improved Symbolic Simulation by Dynamic Functional Space Partitioning},
+  booktitle = {Proceedings of the Design, Automation and Test in Europe Conference and Exhibition},
+  pages     = {42--47},
+  publisher = {IEEE Computer Society},
+  year      = {2004},
+  doi       = {10.1109/DATE.2004.1268825}
+}
+
+@inproceedings{giua2003marking,
+  author    = {Alessandro Giua and Jorge J{\'u}lvez and Carla Seatzu},
+  title     = {Marking Estimation of Petri Nets Based on Partial Observation},
+  booktitle = {Proceedings of the 2003 American Control Conference},
+  volume    = {1},
+  pages     = {326--331},
+  publisher = {IEEE},
+  year      = {2003},
+  doi       = {10.1109/ACC.2003.1238961}
+}
+
 @phdthesis{jost2023fairscheme,
   author  = {Andrew Michael Jost},
   title   = {Implementing a Functional Logic Programming Language via the Fair Scheme},
@@ -85,15 +143,38 @@
   url     = {https://pdxscholar.library.pdx.edu/open_access_etds/6419/}
 }
 
+@inproceedings{jones2006lcp,
+  author    = {Colin N. Jones and Manfred Morari},
+  title     = {Multiparametric Linear Complementarity Problems},
+  booktitle = {Proceedings of the 45th IEEE Conference on Decision and Control},
+  pages     = {5687--5692},
+  publisher = {IEEE},
+  year      = {2006},
+  doi       = {10.1109/CDC.2006.377797}
+}
+
+@inproceedings{lagniez2024decisiondnnf,
+  author    = {Jean-Marie Lagniez and Emmanuel Lonca},
+  title     = {Leveraging Decision-{DNNF} Compilation for Enumerating Disjoint Partial Models},
+  booktitle = {Proceedings of the Twenty-First International Conference on Principles of Knowledge Representation and Reasoning},
+  pages     = {509--519},
+  publisher = {International Joint Conferences on Artificial Intelligence Organization},
+  year      = {2024},
+  doi       = {10.24963/KR.2024/48}
+}
+
 @inproceedings{lindblad2007property,
   author    = {Fredrik Lindblad},
   title     = {Property Directed Generation of First-Order Test Data},
-  booktitle = {Trends in Functional Programming (TFP 2007)},
-  year      = {2007},
+  booktitle = {Trends in Functional Programming},
+  volume    = {8},
+  pages     = {105--123},
+  year      = {2008},
+  isbn      = {9781841501963},
   url       = {https://research.chalmers.se/publication/111863}
 }
 
-@misc{nguyen2020ecdt,
+@article{nguyen2020ecdt,
   author        = {Duy T. Nguyen and Kathryn E. Kasmarik and Hussein A. Abbass},
   title         = {Towards Interpretable {ANNs}: An Exact Transformation to
                    Multi-Class Multivariate Decision Trees},
@@ -101,7 +182,29 @@
   eprint        = {2003.04675},
   archiveprefix = {arXiv},
   primaryclass  = {cs.LG},
+  journal       = {arXiv preprint arXiv:2003.04675},
   doi           = {10.48550/arXiv.2003.04675},
+}
+
+@article{rosner2015bliss,
+  author  = {Nicol{\'a}s Rosner and Jaco Geldenhuys and Nazareno Aguirre and Willem Visser and Marcelo F. Frias},
+  title   = {{BLISS}: Improved Symbolic Execution by Bounded Lazy Initialization with {SAT} Support},
+  journal = {IEEE Transactions on Software Engineering},
+  volume  = {41},
+  number  = {7},
+  pages   = {639--660},
+  year    = {2015},
+  doi     = {10.1109/TSE.2015.2389225}
+}
+
+@inproceedings{ryan2023sylvia,
+  author    = {Kaki Ryan and Cynthia Sturton},
+  title     = {Sylvia: Countering the Path Explosion Problem in the Symbolic Execution of Hardware Designs},
+  booktitle = {2023 Formal Methods in Computer-Aided Design (FMCAD)},
+  pages     = {109--120},
+  publisher = {TU Wien},
+  year      = {2023},
+  doi       = {10.34727/2023/ISBN.978-3-85448-060-0_19}
 }
 
 @inproceedings{serra2018bounding,
@@ -113,4 +216,16 @@
   publisher = {PMLR},
   year      = {2018},
   url       = {https://proceedings.mlr.press/v80/serra18b.html}
+}
+
+@inproceedings{wang2021equivalence,
+  author    = {Yishu Wang and Arnaud Mary and Marie-France Sagot and Blerina Sinaimeri},
+  title     = {A General Framework for Enumerating Equivalence Classes of Solutions},
+  booktitle = {29th Annual European Symposium on Algorithms (ESA 2021)},
+  series    = {Leibniz International Proceedings in Informatics},
+  volume    = {204},
+  pages     = {80:1--80:14},
+  publisher = {Schloss Dagstuhl -- Leibniz-Zentrum f{\"u}r Informatik},
+  year      = {2021},
+  doi       = {10.4230/LIPIcs.ESA.2021.80}
 }

@@ -1,19 +1,21 @@
 # Current survey status
 
 - **Coverage through:** 2026-08-09
-- **Baseline:** initial campaign closed 2026-08-04 under bounded
-  mapping closure (narrative in manuscript §4; history in git);
-  migrated to the shared record shape and updated 2026-08-09
-- **Maintenance state:** reconciled through the coverage date; updates on demand
-- **Manuscript:** complete draft under continuing human review
-- **Authorship:** Bili Dong, independent researcher
+- **Baseline:** the initial campaign was labeled closed on 2026-08-04;
+  publication review found that 422 candidate rows remained unadjudicated, so
+  the bounded-closure claim is withdrawn; migrated to the shared record shape
+  and updated 2026-08-09
+- **Maintenance state:** bounded search snapshot through the coverage date;
+  evidence synthesis reconciled, candidate screening backlog open
+- **Manuscript:** publication-review revision completed; continuing human review
 
-The catalog holds 920 works: 118 deep-read, 243 screened, 424
-candidate, 135 excluded, no parked rows. `sources/` holds 123 notes
-on the unified template (117 full-text, 6 abstract-only); the
-evidence ledger's 35 records are certainty-graded (21 high, 9
-moderate, 5 low). These are snapshot records, not targets and not
-measures of worldwide completeness.
+The catalog holds 924 works: 120 deep-read, 247 screened, 422
+candidate, 135 excluded, no parked rows. `sources/` holds 129 notes
+on the unified template (119 full-text, 10 abstract-only); the
+evidence ledger's 64 records are certainty-graded (36 high, 19
+moderate, 9 low). These are snapshot records, not targets and not
+measures of worldwide completeness. In particular, `candidate` means
+unresolved at abstract-screening level, not included evidence.
 
 Use the machine-generated views rather than editing counts here after
 every small change:
@@ -31,16 +33,18 @@ Current interpretation is summarized in `syntheses/current-position.md`.
 Publication-snapshot requirements are in `protocol.md`; update execution steps
 are in the README's To update procedure.
 
-## Deferred to the next update
+## Open work before any closure claim
 
-- **Screen the 2026-08-09 candidates at abstract level.** The update
-  batch added four title-screened candidates — Java symbolic
+- **Adjudicate all candidate rows at abstract level.** The backlog contains 422
+  rows accumulated across the campaign, not only the latest batch. The
+  2026-08-09 update added four title-screened examples — Java symbolic
   evaluation via large-block encoding (`arxiv:2608.04513`),
   probabilistic symbolic execution in PRISM
   (`doi:10.31274/td-20260804-208`), SORTeD Rashomon-set enumeration
   (`doi:10.52202/085713-1489`), and explicit-MPC distillation trees
   (`doi:10.1109/lcsys.2026.3721668`); none was judged critical, all
-  await abstract screening.
+  await abstract screening. Until the entire backlog is resolved, the record
+  may support a dated search snapshot but not bounded mapping closure.
 - **Recover identifiers and titles for the legacy-keyed rows.** Ten
   rows carry `legacy:` keys (no registrar identifier or recoverable
   title at migration time) and two DOI-keyed rows

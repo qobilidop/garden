@@ -1,4 +1,4 @@
-# Composition and demand-parametric summaries
+# Compositional and demand-parametric summaries
 
 ## Why output demand is an interface parameter
 
@@ -133,9 +133,30 @@ decidable symbolic representation, the fibers of \(\Pi_G\) form a finite
 guarded relation. Represent a component case by
 \((g,\delta,\tau,r)\), where \(g\) is its exact input guard,
 \((\delta,\tau)\) its structural projection, and \(r\) an exact symbolic
-residual for the demanded output tuple. Because the demanded slice contains
-exactly the input ports in \(\delta\), both the case guard and residual can be
-typed over \(\prod_{i\in\delta}\mathcal D_i\).
+residual for the demanded output tuple.
+
+### Demanded-port locality lemma
+
+If \(\Pi_G(x,R)=(\delta,\tau)\) and a typed input \(x'\) agrees with \(x\) on
+\(\delta\), then
+
+\[
+  \Pi_G(x',R)=(\delta,\tau)
+  \quad\text{and}\quad
+  \operatorname{val}_{x'}|_R=\operatorname{val}_{x}|_R.
+\]
+
+*Proof sketch.* Couple a topological value induction with the reachability
+approximants of the enabled closure. Every ordinary operand of a reached node
+is reached, and every selector whose outcome can enable a case has its selector
+operand reached. Hence every external input capable of changing a reached
+value, observed outcome, or subsequent enabled edge lies in \(\delta\). Agreement
+on those inputs preserves values on the current closure, then the same
+selection outcomes preserve the next reachability approximant. Induction gives
+the same closure, observation, and requested values.
+
+The lemma is what permits both the case guard and residual to be typed over
+\(\prod_{i\in\delta}\mathcal D_i\); this does not follow from notation alone.
 
 More precisely, for every \((\delta,\tau)\in\operatorname{im}\Pi_G(-,R)\),
 the full-domain exact-summary contract requires

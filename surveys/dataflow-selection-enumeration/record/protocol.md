@@ -2,13 +2,13 @@
 
 ## Objective and study type
 
-Maintain a problem-centered systematic map of exhaustive selection-observation
-enumeration in finite pure dataflow graphs. The map identifies established
+Maintain a problem-centered scoping survey of exhaustive selection-observation
+enumeration in finite pure dataflow graphs, supported by a reproducible
+systematic search record and evidence map. The survey identifies established
 solution families, translates them into one terminology, and records exactly
 when their observers, guarantees, and representations coincide with the target
-contract. It does not estimate empirical effect sizes and is therefore a
-systematic mapping study rather than a statistical systematic literature
-review.
+contract. It is neither a statistical systematic literature review nor, while
+unresolved candidates remain, a closed systematic map.
 
 The running formal object is a partial map of selection-site outcomes reached
 from requested roots through all declared operands of ordinary nodes and
@@ -17,7 +17,7 @@ monolithic symbolic value or SMT encoding is a baseline, not the target output.
 
 ## Research questions
 
-- **RQ1:** What common terminology precisely defines selection-observation
+- **RQ1:** What consistent terminology precisely defines selection-observation
   enumeration and distinguishes it from neighboring tasks?
 - **RQ2:** Which established approach traditions or routes can enumerate, compile, or
   specialize the required fibers, and what instrumentation do they require?
@@ -133,10 +133,12 @@ update tool.
 ## Screening, reading, and extraction
 
 Screening assigns a catalog status, priority, cluster, and concise rationale
-from title, abstract, and stable metadata. Candidate status is a retained
-discovery disposition, not automatically a reading queue; a candidate
-undecidable from the available metadata takes the `parked` status and is
-re-screened on every update.
+from title, abstract, and stable metadata. `candidate` is an unresolved
+discovery status: the available title or metadata looks potentially relevant,
+but the abstract-level inclusion judgment has not been completed. It is a
+backlog, not a promise that every work will be deep-read. `parked` is reserved
+for a row that cannot be adjudicated because usable metadata or text is
+unavailable after recorded attempts; it is re-screened on every update.
 
 Update batches screen with two agent passes on different model tiers and
 prompt framings (one eligibility-first, one exclusion-first), each
@@ -193,14 +195,18 @@ is incomplete if it only adds bibliography entries or source notes.
 The cross-paper synthesis and every affected manuscript claim must also be
 reconciled.
 
-## Snapshot closure and reopening
+## Snapshot readiness and reopening
 
-The survey is an updatable systematic map; “current” means that no
-promoted finding remains unreconciled, and freshness is stated as the
-last reconciled coverage date. A publication snapshot
-may claim bounded mapping closure only when:
+The survey carries an updatable search and evidence map. A dated publication may be released
+as a _bounded search snapshot_ even when unresolved candidates remain, provided
+the backlog and the limits on inference are reported. “Current” then means
+that promoted evidence has been reconciled, not that every discovered work has
+been adjudicated.
 
-1. every discovered work has a catalog disposition;
+A snapshot may claim _bounded mapping closure_ only when:
+
+1. no discovered work remains `candidate` or `parked` and every work has an
+   adjudicated screened, deep-read, or excluded disposition;
 2. every critical work is deep-read and chased in both directions;
 3. every registered search has an adjudicated execution covering the
    snapshot's coverage date;
@@ -210,6 +216,8 @@ may claim bounded mapping closure only when:
 
 A later paper, changed result, or new theme reopens the current map. Closure is
 always relative to the named sources, exact queries, result depths, and date.
+The current 2026-08-09 record does not satisfy condition 1, so it makes no
+closure claim.
 
 ## Audited search-log schema
 

@@ -1,4 +1,4 @@
-# Value and selection-observation semantics
+# Value semantics and selection observations
 
 ## Whole-graph value semantics
 

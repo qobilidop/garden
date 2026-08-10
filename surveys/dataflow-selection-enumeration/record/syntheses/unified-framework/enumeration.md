@@ -1,4 +1,4 @@
-# Exact fiber generation and enumeration
+# Exact fiber construction and enumeration
 
 ## Symbolic setting
 
@@ -8,10 +8,20 @@ predicate exactly. A model oracle for a formula returns \(\mathsf{sat}(m)\),
 \(\mathsf{unsat}\); \(\mathsf{unknown}\) produces an explicit incomplete
 result.
 
+Let \(\operatorname{Dom}_G(x)\) be the exact solver encoding of the typed input
+product and normalize every query predicate to
+
+\[
+  A_{\mathrm{enc}}(x)=\operatorname{Dom}_G(x)\land A(x).
+\]
+
+This is necessary when the solver lowering has invalid bit-vector or integer
+codes outside the semantic graph domain.
+
 ## Concolic fiber generation
 
 Given a model input \(m\in\mathcal X_A\), obtained from a solver query whose
-formula implies \(A\), generate its observation and guard without first
+formula implies \(A_{\mathrm{enc}}\), generate its observation and guard without first
 guessing an abstract observation. Maintain
 
 \[
@@ -48,7 +58,8 @@ Write
 =(T_m,g_m,\mathcal R_m),
 \]
 
-where the complete observation guard is \(A\land g_m\) and \(\mathcal R_m\) is
+where the encoded complete observation guard is
+\(A_{\mathrm{enc}}\land g_m\) and \(\mathcal R_m\) is
 the residual symbolic output.
 
 ## Generator theorem
@@ -57,15 +68,15 @@ Assuming exact symbolic primitives, total deterministic value semantics, and
 memoization by node identity,
 
 \[
-x\models A\land g_m
+x\models A_{\mathrm{enc}}\land g_m
 \quad\Longleftrightarrow\quad
-A(x)\land T_G(x,R)=T_m,
+x\in\mathcal X_G\land A(x)\land T_G(x,R)=T_m,
 \]
 
 and
 
 \[
-x\models A\land g_m
+x\models A_{\mathrm{enc}}\land g_m
 \quad\Longrightarrow\quad
 \llbracket\mathcal R_m\rrbracket_x
 =\operatorname{val}_x|_R.
@@ -77,7 +88,7 @@ guard \(g_{\mathrm{in}}\) returns guard \(g_{\mathrm{out}}\) such that
 \(m\models g_{\mathrm{out}}\), and
 
 \[
-  x\models A\land g_{\mathrm{out}}
+  x\models A_{\mathrm{enc}}\land g_{\mathrm{out}}
   \Longrightarrow
   \llbracket e_v\rrbracket_x=\operatorname{val}_x(v).
 \]
@@ -94,21 +105,21 @@ The generator's model \(m\) is already a witness for its complete guard.
 
 ## Full-fiber blocking
 
-Initialize the uncovered-domain formula \(U_0=A\). At iteration \(j\):
+Initialize the uncovered-domain formula \(U_0=A_{\mathrm{enc}}\). At iteration \(j\):
 
 1. Query the model oracle for \(U_j\).
 2. On \(\mathsf{unknown}\), report incomplete enumeration.
 3. On \(\mathsf{unsat}\), return the accumulated results as complete.
 4. On \(\mathsf{sat}(m_j)\), compute
    \((T_j,g_j,\mathcal R_j)=\operatorname{Gen}(G,m_j,R)\).
-5. Emit \((T_j,A\land g_j,\mathcal R_j,m_j)\).
+5. Emit \((T_j,A_{\mathrm{enc}}\land g_j,\mathcal R_j,m_j)\).
 6. Set
    \[
    U_{j+1}=U_j\land\neg g_j.
    \]
 
-The emitted guard contains \(A\); the incremental blocker need only negate
-\(g_j\) because every query already assumes \(A\). Previous blockers must not
+The emitted guard contains \(A_{\mathrm{enc}}\); the incremental blocker need only negate
+\(g_j\) because every query already assumes \(A_{\mathrm{enc}}\). Previous blockers must not
 be folded into the emitted guard.
 
 ## Enumeration theorem
@@ -179,7 +190,9 @@ unimportant variables.
 This projection directly supplies the observation index and, when the engine
 is model-producing, a witness. Fixing a projected tuple gives an exact fiber
 predicate. Projection alone does not construct a fiber-wide residual; the full
-record contract needs a separate exact residualization step.
+record contract needs separate exact symbolic specialization of the requested
+values under that fiber. The manuscript calls this construction
+_residualization_; it is not an SMT-solver primitive.
 
 ## Reduction theorem
 
@@ -191,9 +204,9 @@ For each feasible \(\tau\), let \(\overline\tau\) be its totalization. Then,
 under the graph definitions,
 
 \[
-A(x)\land Z=\overline\tau
+A_{\mathrm{enc}}(x)\land Z=\overline\tau
 \quad\Longleftrightarrow\quad
-A(x)\land g_\tau(x).
+A_{\mathrm{enc}}(x)\land g_\tau(x).
 \]
 
 Consequently full-fiber blocking and naive projected AllSMT over complete

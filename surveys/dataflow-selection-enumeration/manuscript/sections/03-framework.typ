@@ -416,6 +416,27 @@ $
   quad delta_G(x,R) = I_G inter D_G(x,R).
 $
 
+#proposition("demanded-port locality")[
+  If $Pi_(G,R)(x)=(delta,tau)$ and a typed input $x'$ agrees with $x$ on
+  $delta$, then
+  $
+    Pi_(G,R)(x')=(delta,tau)
+    quad "and" quad
+    op("val")_(x')|_R=op("val")_x|_R.
+  $
+]
+
+#proof[
+  Couple a topological value induction with the reachability approximants of
+  the enabled closure. Every operand of a reached ordinary node is reached,
+  and the selector operand of every reached selection is reached. Therefore
+  every external input capable of changing a reached value, observed outcome,
+  or subsequently enabled edge lies in $delta$. Agreement on those inputs
+  preserves values on the current closure; equal selection outcomes then
+  preserve the next reachability approximant. Induction gives the same closure,
+  structural projection, and requested values.
+]
+
 For every $(delta,tau) in op("im")(Pi_(G,R))$, the summary has exactly one
 record $(g,delta,tau,r)$ with
 
@@ -486,8 +507,10 @@ Infeasible guard conjunctions are discarded.
 #proof[
   The concrete boundary value selects one exact downstream record. Its
   $delta_H$ selects the upstream demand and hence one exact upstream record.
-  Guard and residual substitution, together with the flattening proposition,
-  proves soundness and coverage. If two composed records had the same
+  Demanded-port locality makes both selections and both residuals depend only
+  on the displayed port restrictions, so the component contracts are
+  well-typed rather than assumptions about ignored inputs. Guard and residual
+  substitution, together with the flattening proposition, proves soundness and coverage. If two composed records had the same
   structural projection, disjoint contextual namespaces would make both
   component observations equal. The observed-outcome lockstep argument fixes
   their demanded boundary sets, so the exact-summary contract makes both

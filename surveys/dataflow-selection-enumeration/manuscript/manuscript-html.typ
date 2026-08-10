@@ -1,7 +1,7 @@
 // HTML wrapper (typst --features html --format html). Emits semantic
 // structure only; the paper look comes from the stylesheet the build
 // script injects. Paged sibling: manuscript.typ.
-#import "meta.typ": title, subtitle, byline, author-note, draft, landing, record, abstract-body
+#import "metadata.typ": title, subtitle, byline, author-note, draft, landing, record, abstract-body
 
 #set heading(numbering: "1.")
 

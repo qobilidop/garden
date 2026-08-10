@@ -54,12 +54,18 @@ taxonomy.
 == Guarded symbolic execution
 
 Classical symbolic execution associates path conditions with symbolic states
-or substitutions. Denotational treatments make this correspondence exact
+or substitutions @king1976symbolic, while DART established the later
+concrete-plus-symbolic, solver-directed test-generation lineage
+@godefroid2005dart. Denotational treatments make this correspondence exact
 under their stated language and merge conditions
 @voogd2025compositional, while multi-path execution merges paths into guarded
-symbolic values @sen2015multise. Solver-aided libraries and reusable merging
-semantics preserve the same basic separation between guards and residual
-values @porncharoenwase2022merging @lu2023grisette.
+symbolic values @sen2015multise. Variational execution similarly carries
+conditional values under configuration contexts and shares computation across
+many configurations, but its native result is a shared multi-configuration
+execution rather than one exact inverse-fiber record @wong2018variational.
+Solver-aided libraries and reusable merging semantics preserve the same basic
+separation between guards and residual values @porncharoenwase2022merging
+@lu2023grisette.
 
 These systems supply two parts of the target record almost directly: a
 feasibility guard and a residual. They do not by themselves choose the
@@ -68,11 +74,24 @@ requested enabled closure, merge histories that retain different requested
 events, or split one observation because of unrelated control flow. To solve
 the target problem, evaluation must be demanded from the requested roots,
 record contextual selection outcomes, preserve graph sharing, and block the
-entire resulting fiber rather than one execution model. Output-directed and
-dependence-guided symbolic execution already demonstrate that exploration can
-be organized around queried values rather than complete paths
-@denaro2012allvalues @wang2017dependence; the remaining obligation is exact
-agreement with the declared observer.
+entire resulting fiber rather than one execution model.
+
+The closest published algorithms make this gap narrow. PESO enumerates
+reordered relevant-slice conditions for requested output criteria, carries
+symbolic outputs and solver-generated tests, and proves conditional exploration
+completeness under a sound and complete solver @qi2013output. SPD constructs a
+shared graph of dependence-relevant path families and guarded symbolic values
+for queried uses @santelices2010dependencies. All-values and dependence-guided
+execution provide further output/value-directed precedents
+@denaro2012allvalues @wang2017dependence. What remains open is not whether
+output-directed guarded exploration exists, but whether PESO's RSC quotient or
+SPD's path-family graph, after site instrumentation, gives exactly one target
+selection fiber rather than a refinement or fragmented cover.
+
+SEDGE is the closest explicitly dataflow-named concolic testing comparator: it
+uses SMT to synthesize high-level Pig inputs intended to exercise operator
+cases. Its coverage target and accumulated example dataset are not a
+duplicate-free exact partition with residuals @li2013sedge.
 
 The local generator formalized in @sec-algorithms is therefore not a new symbolic
 execution paradigm. It is the target observer instantiated in a standard
@@ -138,20 +157,29 @@ when their terminals or internal labels retain the declared selection events.
 
 == Demand-guided evaluation and search
 
-Functional-logic implementations use stable choice identities and
-demand-populated decision maps so that shared nondeterministic choices remain
-consistent @brassel2007tighter @brassel2011thesis. Pull-tabbing and fair
-evaluation address exhaustive value production in shared term graphs
-@antoy2011pull @jost2023fairscheme. Lazy SmallCheck refines just the partial
-input demanded by a Boolean observation and remains exhaustive over its bounded
-domain @runciman2008smallcheck. Classical dataflow analyses compute least or
+Functional-logic set functions and pull-tabbing establish the representation
+lineage most directly: set functions record the nondeterministic steps actually
+executed, the 2010 pull-tab transformation propagates immutable choice
+identifiers so runtime copies make consistent decisions, and memoized
+pull-tabbing finally exposes an explicit task-local partial choice map
+@antoy2009setfunctions @alqaddoumi2010pulltab @hanus2021memoized. Other
+pull-tabbing, translations, and memoization use
+demand-populated decision maps or prove value-set preservation under their own
+search assumptions @brassel2007tighter @antoy2011pull @brassel2011thesis
+@hanus2021memoized @jost2023fairscheme.
+Lazy SmallCheck refines just the partial input demanded by a Boolean observation
+and remains exhaustive over its bounded domain @runciman2008smallcheck. SPLat
+similarly discovers configuration variables on first read, uses SAT to prune
+feature-model-infeasible partial assignments, and executes concrete witnesses
+for distinct claimed test traces @kim2013splat. Classical dataflow analyses compute least or
 reverse demand for a fixed requested result @avron1994stability
 @pingali1985efficient, and modern bidirectional demand semantics can characterize
 minimal sufficient partial inputs @xia2024demand.
 
-These results establish that dynamically sparse choices and requested-result
-demand are not new. Their natural output, however, is commonly a value stream,
-a partial input, a choice fingerprint, or a fixed-input demand set. The target
+These results establish that stable sparse choice maps, dynamically discovered
+configuration decisions, and requested-result demand are not new. Their natural
+output, however, is commonly a value stream, a partial input, a choice
+fingerprint, a concrete test trace, or a fixed-input demand set. The target
 enumerator additionally requires the complete inverse-image guard and a
 residual valid over that entire guard. A demand system becomes a direct
 solution only after its demand judgment is proved equal to the enabled closure

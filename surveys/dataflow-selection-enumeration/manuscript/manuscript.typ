@@ -1,6 +1,6 @@
 // Paged (PDF) wrapper. HTML sibling: manuscript-html.typ.
 #import "../../style.typ": paper, titleblock, abstract
-#import "meta.typ": title, subtitle, byline, author-note, draft, landing, record, abstract-body
+#import "metadata.typ": title, subtitle, byline, author-note, draft, landing, record, abstract-body
 
 #show: paper
 

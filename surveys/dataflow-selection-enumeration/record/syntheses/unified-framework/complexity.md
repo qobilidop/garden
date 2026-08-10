@@ -1,17 +1,22 @@
-# Complexity analysis
+# Complexity of the unified framework
 
 ## Parameters
 
 Use explicit parameters rather than the ambiguous phrase “graph size”:
 
 - \(S_G\): weighted source-DAG size, counting nodes, operand and case edges,
-  bit widths, constants, and aggregate leaves;
-- \(S_C\): total shared circuit size for selector classifiers, outcome
-  encodings, and the direct case-membership predicates
-  \(\eta_{q,j}(d)\equiv[j\in C_q(\kappa_q(d))]\);
-- \(S_{\mathrm{enc}}=S_G+S_C\): weighted size charged to the exact global
-  value/reachability encoding;
-- \(S_A\): DAG or serialized size of the caller-domain predicate, as stated;
+  bit widths, constants, and aggregate leaves, but not pretending that one
+  source node has a constant-size solver encoding;
+- \(S_C\): total shared circuit size for every ordinary primitive, selected
+  combiner, selector classifier, outcome encoding, direct case-membership
+  predicate \(\eta_{q,j}(d)\equiv[j\in C_q(\kappa_q(d))]\), and typed-domain
+  constraint;
+- \(S_{\mathrm{enc}}\): actual shared size of the complete exact global
+  value/reachability encoding. Under an explicit circuit lowering it is
+  \(O(S_G+S_C)\), but it can be asymptotically larger than \(S_G\);
+- \(S_{A_{\mathrm{enc}}}\): shared DAG or serialized size of
+  \(A_{\mathrm{enc}}=\operatorname{Dom}_G\land A\), including both the
+  caller-domain predicate and the typed-domain encoding;
 - \(Q\): number of structural selection sites;
 - \(b_q=|\Omega_q|\): outcome count at site \(q\);
 - \(K\): number of feasible selection observations under the caller-domain predicate;
@@ -22,7 +27,8 @@ Use explicit parameters rather than the ambiguous phrase “graph size”:
   including auxiliary choices and the projection map back to source sites;
 - \(B\): number of candidates built by a particular syntactic branching
   algorithm before feasibility filtering;
-- \(Z\): total serialized or DAG output size, stated explicitly; and
+- \(Z\): total serialized or DAG output size, stated explicitly;
+- \(W_{\mathrm{wit}}\): total serialized size of the emitted witnesses; and
 - \(T_{\mathrm{SMT}}(\phi)\): cost of deciding and producing a model for
   formula \(\phi\).
 
@@ -113,14 +119,15 @@ caller-domain predicate can also cut or lower the dimension of a fiber. For exam
 the outcomes \(x\ge0\) and \(-x\ge0\) are simultaneously true exactly at
 \(x=0\).
 
-For the full domain \(A=\mathsf{true}\), \(Q\) distinct affine hyperplanes,
-and strict positive/negative outcomes that exclude every boundary, each
+For the boundary-free caller domain
+\(A(x)\equiv\bigwedge_q\ell_q(x)\ne0\), \(Q\) distinct affine hyperplanes,
+and strict positive/negative outcomes, each
 nonempty sign fiber is open and therefore is one full-dimensional arrangement
 cell. No simplicity or general-position assumption is needed. In this
 restricted setting, Avis and Fukuda's reverse search gives
 
 \[
-  O(KQD\,l(Q,D))
+  O(KQD\,L_{\mathrm{AF}}(Q,D))
 \]
 
 time and \(O(QD)\) working space. For fixed \(D\), Sleumer improves the
@@ -128,22 +135,30 @@ arithmetic bound to \(O(KQ)\) time with \(O(Q^2)\) space. For a central
 arrangement, Ferrez, Fukuda, and Liebling's ray-shooting reverse search gives
 
 \[
-  O(KQ\,LP(Q,D))
+  O(KQ\,L_F(Q,D))
 \]
 
 time and \(O(QD)\) working space. Rada and Černý's later incremental
 sign-prefix algorithm independently gives
 
 \[
-  O(KQ\,lp(Q,D))
+  O(KQ\,L_R(Q,D))
 \]
 
-time and \(O(lp(Q,D))\) working space, where \(D\) is input dimension and
-\(l,lp\) denote the respective LP-cost abstractions. These are
+time and \(O(L_R(Q,D))\) working space, where \(D\) is input dimension and
+\(L_{\mathrm{AF}}\), \(L_F\), and \(L_R\) denote the source-specific LP-cost
+abstractions for Avis--Fukuda, Ferrez et al., and Rada--Černý. These are
 output-polynomial results for the restricted open-cell representation. The
 Avis--Fukuda, Sleumer, and Ferrez analyses count arithmetic/LP operations
 rather than proving a coefficient-bit bound, and none of the results transfers
 automatically to boundary-inclusive fibers or an arbitrary caller theory.
+
+These bounds enumerate core sign observations and their cell guards. They are
+not automatically bounds for the survey's four-field record: residualization
+must either be restricted to an explicitly charged affine/PWA computation or
+its construction and serialization added to the cost, and a witness must be
+obtained and represented. Restoring dense noncore observation coordinates
+adds \(O(KQ)\) output work before those residual/witness costs.
 
 Deza and Pournin give a complementary rational-bit-model analysis by
 traversing the dual zonotope. Write \(B_Z\) for total generator encoding length
@@ -171,19 +186,28 @@ DelayP bound for those variants; circuit enumeration itself can be exponential.
 A different geometric specialization arises from multi-parametric linear
 programming. Jones and Maciejowski reduce every full-dimensional critical
 region to one vertex of a projected polytope and enumerate those vertices by
-reverse search. With \(e=n-m\) and \(N_r\) critical regions, their bound is
+reverse search. For their constraint matrix \(M\in\mathbb R^{m\times n}\)
+with \(\operatorname{rank}M=m\), let \(e=n-m\), let \(N_r\) be the number of
+critical regions, let \(d\) be the parameter dimension, and let \(L_P(a,b)\)
+denote their LP-oracle cost. Their bound is
 
 \[
   O\!\left(
-    N_r\left(e^2 LP(d,e)+e\,LP(m,n)\right)
+    N_r\left(e^2 L_P(d,e)+e\,L_P(m,n)\right)
   \right)
 \]
 
 time and output-relative \(O(1)\) auxiliary space. Each reported basis
-reconstructs an exact polyhedral guard and affine optimizer. The result is
+reconstructs a polyhedral guard and affine optimizer. The result is
 linear in \(N_r\) only after retaining the LP/dimension coefficient, and it
 does not cover lower-dimensional-only regions, coefficient-bit complexity, or
 our variable-domain graph observer.
+
+The critical regions are closed and may overlap on their boundaries; the
+algorithm reports full-dimensional basis regions and omits regions that exist
+only in lower dimension. It is therefore not the survey's disjoint all-input
+fiber contract without a boundary-ownership rule or a caller-domain
+restriction that removes those boundaries.
 
 The direct pLCP line gives a second explicit bound. Jones and Morari enumerate
 full-dimensional positive-semidefinite pLCP regions under lexicographic
@@ -344,30 +368,32 @@ O\!\left(\sum_\tau S_\tau\right)
 \]
 
 and creates outcome-guard-plus-residual DAGs of the same asymptotic size. If
-every emitted complete guard copies the caller-domain predicate, flat output size is
+every emitted complete guard copies \(A_{\mathrm{enc}}\), flat output size is
 
 \[
-  O\!\left(KS_A+\sum_\tau S_\tau\right).
+  O\!\left(KS_{A_{\mathrm{enc}}}+\sum_\tau S_\tau+W_{\mathrm{wit}}\right).
 \]
 
-If all records share one immutable reference to \(A\), it is instead
-\(O(S_A+\sum_\tau S_\tau)\).
+If all records share one immutable reference to \(A_{\mathrm{enc}}\), it is instead
+\(O(S_{A_{\mathrm{enc}}}+\sum_\tau S_\tau+W_{\mathrm{wit}})\). The explicit
+witness term is necessary because the unrestricted theory assumes no bound on
+serialized model length.
 
 Before query \(j\), the solver sees
 
 \[
-A\land\bigwedge_{i<j}\neg g_i.
+A_{\mathrm{enc}}\land\bigwedge_{i<j}\neg g_i.
 \]
 
 An honest solver-time statement is therefore
 
 \[
 \sum_{j=0}^{K}
-T_{\mathrm{SMT}}\!\left(A\land\bigwedge_{i<j}\neg g_i\right).
+T_{\mathrm{SMT}}\!\left(A_{\mathrm{enc}}\land\bigwedge_{i<j}\neg g_i\right).
 \]
 
 The cumulative blocker DAG can be \(O(KS_{\mathrm{enc}})\), plus one shared
-copy of \(A\). Incrementality may reuse learned facts but gives no general
+copy of \(A_{\mathrm{enc}}\). Incrementality may reuse learned facts but gives no general
 polynomial-delay or monotone-runtime bound.
 
 ## Prefix model-discovery baseline
@@ -411,9 +437,10 @@ satisfies
 |g_\tau|_{\mathrm{DAG}}+|\mathcal R_\tau|_{\mathrm{DAG}}=O(S_\tau).
 \]
 
-The complete guard is \(A\land g_\tau\). Its size is
-\(O(S_A+S_\tau)\) when serialized independently, or \(O(S_\tau)\) additional
-space when it shares a global reference to \(A\).
+The complete guard is \(A_{\mathrm{enc}}\land g_\tau\). Its size is
+\(O(S_{A_{\mathrm{enc}}}+S_\tau)\) when serialized independently, or
+\(O(S_\tau)\) additional space when it shares a global reference to
+\(A_{\mathrm{enc}}\).
 
 This is false for naive tree serialization. In the shared chain
 

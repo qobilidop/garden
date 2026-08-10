@@ -1,25 +1,20 @@
 # Exhaustive Enumeration of Selection Observations in Pure Dataflow Graphs: A Survey and Unified Framework
 
-A problem-centered survey with a formal synthesis: enumerate every
-distinct selection observation of a finite pure dataflow graph —
-exact guards, residual values, one witness input per fiber — and
-compare the literatures that can solve, compile, or specialize the
-task (guarded symbolic execution, projected model enumeration,
-decision structures, demand-guided search, region traversal,
-compositional summaries). 920 works cataloged, 118 deep-read,
-distilled into a unified terminology and framework. An updatable
-systematic map: the baseline closed 2026-08-04 under bounded mapping
-closure; updated and reconciled 2026-08-09; updates are staged on
-demand.
+## Summary
 
-**Read:** [manuscript (HTML)](manuscript.html) ·
-[manuscript (PDF)](manuscript.pdf)
+A problem-centered scoping survey and theory/position synthesis for a proposed
+semantic contract: enumerate every requested-root-relative selection observation
+of a finite pure dataflow graph, with one exact input guard, residual value, and
+witness per nonempty fiber. It identifies the closest prior work, separates
+observer, enumeration mechanism, and output representation, presents local and
+global SMT baselines and restricted output-sensitive special cases, and makes
+the remaining correspondence, implementation, and evaluation questions explicit.
 
-**Survey record:**
-[method, catalog, evidence notes, syntheses](https://github.com/qobilidop/sys0/tree/main/surveys/dataflow-selection-enumeration/record)
-— searched through 2026-08-09.
+## Links
 
-**Topic context:** [[survey-methodology]]
+- [Manuscript (HTML)](manuscript.html)
+- [Manuscript (PDF)](manuscript.pdf)
+- [Survey record](https://github.com/qobilidop/sys0/tree/main/surveys/dataflow-selection-enumeration/record)
 
 ## Reading list
 
@@ -37,11 +32,22 @@ pages where ingested, our evidence notes in the record otherwise).
 | [Stability, Sequentiality and Demand Driven Evaluation in Dataflow](https://doi.org/10.1007/BF03259389) | Defines the least demanded computation for fixed inputs and requested output positions — the fixed-input core of enabled closure, under stability assumptions | Formal Aspects of Computing · 1994 | [notes](https://github.com/qobilidop/sys0/blob/main/surveys/dataflow-selection-enumeration/record/sources/avron1994stability.md) |
 | [A Complexity Theory for Hard Enumeration Problems](https://doi.org/10.1016/j.dam.2019.02.025) | Fixes what delay, incremental, and output-polynomial mean — the standard that reclassifies "one solver call per solution" as an oracle-call count | Discrete Appl Math · 2019 | [notes](https://github.com/qobilidop/sys0/blob/main/surveys/dataflow-selection-enumeration/record/sources/creignou2019enumeration.md) |
 | [Story of Your Lazy Function's Life: A Bidirectional Demand Semantics](https://doi.org/10.1145/3674626) | Mechanized backward propagation of an output request to a minimal sufficient partial input — demand as definedness, not an internal selection trace | ICFP · 2024 | [notes](https://github.com/qobilidop/sys0/blob/main/surveys/dataflow-selection-enumeration/record/sources/xia2024demand.md) |
+| [A General Framework for Enumerating Equivalence Classes of Solutions](https://doi.org/10.4230/LIPIcs.ESA.2021.80) | Enumerates every locally colored solution-tree class exactly once with polynomial delay from an acyclic decomposable AND/OR graph — the strongest general quotient-enumeration precedent, under a different representation and output contract | ESA · 2021 | [notes](https://github.com/qobilidop/sys0/blob/main/surveys/dataflow-selection-enumeration/record/sources/wang2021equivalence.md) |
+
+### Closest dataflow-specific predecessors
+
+| Paper | What | Venue · Year | Notes |
+|---|---|---|---|
+| [Improved Symbolic Simulation by Dynamic Functional Space Partitioning](https://doi.org/10.1109/DATE.2004.1268825) | Mux-selected control/data cells pair mutually exclusive guards with residual data expressions — the closest restricted pure-dataflow representation | DATE · 2004 | [notes](https://github.com/qobilidop/sys0/blob/main/surveys/dataflow-selection-enumeration/record/sources/feng2004dynamic.md) |
+| [Generating and Analyzing Symbolic Traces of Simulink/Stateflow Models](https://doi.org/10.1007/978-3-642-02658-4_33) | Groups initial states by bounded discrete traces that include conditional-block outcomes and carries symbolic transformers, but underapproximates a sampled class | CAV · 2009 | [notes](https://github.com/qobilidop/sys0/blob/main/surveys/dataflow-selection-enumeration/record/sources/kanade2009simulink.md) |
+| [Sylvia: Countering the Path Explosion Problem in the Symbolic Execution of Hardware Designs](https://doi.org/10.34727/2023/isbn.978-3-85448-060-0_19) | Modular RTL path-fragment exploration with SMT feasibility and replayable witnesses; construction savings do not remove the exponential combination boundary | FMCAD · 2023 | [notes](https://github.com/qobilidop/sys0/blob/main/surveys/dataflow-selection-enumeration/record/sources/ryan2023sylvia.md) |
 
 ### Guarded symbolic execution
 
 | Paper | What | Venue · Year | Notes |
 |---|---|---|---|
+| [Path Exploration Based on Symbolic Output](https://doi.org/10.1145/2522920.2522925) | The closest formal predecessor: relevant-slice conditions, symbolic requested outputs, witnesses, and conditional exploration completeness | TOSEM · 2013 | [notes](https://github.com/qobilidop/sys0/blob/main/surveys/dataflow-selection-enumeration/record/sources/qi2013output.md) |
+| [Exploiting Program Dependencies for Scalable Multiple-Path Symbolic Execution](https://doi.org/10.1145/1831708.1831733) | The closest shared path-family/residual predecessor: query-relevant guarded symbolic values in a shared graph, without a numbered end-to-end exact-fiber theorem | ISSTA · 2010 | [notes](https://github.com/qobilidop/sys0/blob/main/surveys/dataflow-selection-enumeration/record/sources/santelices2010dependencies.md) |
 | [All-Values Symbolic Execution](https://doi.org/10.1109/iwast.2012.6228982) | Reindexes exploration by the distinct symbolic values reaching a statement rather than by path; author-run experiments report large savings, but equal-valued alternatives lose their selection identity | AST · 2012 | [notes](https://github.com/qobilidop/sys0/blob/main/surveys/dataflow-selection-enumeration/record/sources/denaro2012allvalues.md) |
 | [MultiSE: Multi-Path Symbolic Execution Using Value Summaries](https://doi.org/10.1145/2786805.2786830) | Value summaries already represent many executions as disjoint, collectively exhaustive guard/expression pairs | ESEC/FSE · 2015 | [[sen2015-multise]] |
 | [A Formal Foundation for Symbolic Evaluation with Merging](https://doi.org/10.1145/3498709) | Mechanized evaluator whose guarded choices exactly represent the reachable concrete outcomes | POPL · 2022 | [notes](https://github.com/qobilidop/sys0/blob/main/surveys/dataflow-selection-enumeration/record/sources/porncharoenwase2022merging.md) |
@@ -71,6 +77,9 @@ pages where ingested, our evidence notes in the record otherwise).
 
 | Paper | What | Venue · Year | Notes |
 |---|---|---|---|
+| [Set Functions for Functional Logic Programming](https://doi.org/10.1145/1599410.1599420) | Introduces fingerprints of executed nondeterministic steps — the beginning of a lineage that later gains stable choice-ID propagation and explicit task-local partial maps | PPDP · 2009 | [notes](https://github.com/qobilidop/sys0/blob/main/surveys/dataflow-selection-enumeration/record/sources/antoy2009setfunctions.md) |
+| [Memoized Pull-Tabbing for Functional Logic Programming](https://doi.org/10.1007/978-3-030-75333-7_4) | Demand-populates a task-local choice-ID/outcome map and reuses it across traversal; the closest partial-map representation, under a different nondeterministic observer | WFLP · 2021 | [notes](https://github.com/qobilidop/sys0/blob/main/surveys/dataflow-selection-enumeration/record/sources/hanus2021memoized.md) |
+| [SPLat: Lightweight Dynamic Analysis for Reducing Combinatorics in Testing Configurable Systems](https://doi.org/10.1145/2491411.2491459) | Discovers configuration variables on first read, prunes infeasible partial assignments with SAT, and executes witnesses for claimed distinct traces, but emits no exact symbolic fiber guard or residual | ESEC/FSE · 2013 | [notes](https://github.com/qobilidop/sys0/blob/main/surveys/dataflow-selection-enumeration/record/sources/kim2013splat.md) |
 | [SmallCheck and Lazy SmallCheck: Automatic Exhaustive Testing for Small Values](https://doi.org/10.1145/1411286.1411292) | Refines only the input a Boolean observation demands and prunes all completions once the answer is known — refutation, not fiber enumeration | Haskell · 2008 | [notes](https://github.com/qobilidop/sys0/blob/main/surveys/dataflow-selection-enumeration/record/sources/runciman2008smallcheck.md) |
 | [On the Correctness of Pull-Tabbing](https://doi.org/10.1017/s1471068411000263) | Shared choice identifiers in term-graph rewriting already yield sound, evaluation-order-independent exhaustive enumeration of consistent results | Theory Pract Log Program · 2011 | [notes](https://github.com/qobilidop/sys0/blob/main/surveys/dataflow-selection-enumeration/record/sources/antoy2011pull.md) |
 | [Implementing Functional Logic Programs by Translation into Purely Functional Programs](https://d-nb.info/1020245336/34) | Choice-ID translation with a proved value-set equality; its finite partial map from choice identifiers to outcomes is the closest precedent for a sparse selection record | PhD thesis, Kiel · 2011 | [notes](https://github.com/qobilidop/sys0/blob/main/surveys/dataflow-selection-enumeration/record/sources/brassel2011thesis.md) |

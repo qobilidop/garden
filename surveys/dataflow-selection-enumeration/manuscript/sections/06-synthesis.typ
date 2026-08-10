@@ -56,62 +56,132 @@ a universal ranking.
 
 == Closest established results
 
-Six specific results, rather than a general sense of related work, bound what
-the framework can claim. Each is the nearest established counterpart to one
-component of the record contract, and each defeats a broad novelty claim a
-reader might otherwise infer.
+The nearest results are output-directed and dataflow-specific, not only broad
+neighboring literatures. PESO is the closest formal predecessor: it enumerates
+relevant-slice conditions for requested output criteria, associates symbolic
+outputs and tests, and proves exploration completeness under explicit finite
+model and solver assumptions @qi2013output. SPD is the closest shared
+path-family/residual predecessor @santelices2010dependencies. Feng et al.'s
+mux functional-space cells are the closest restricted pure-dataflow
+guard/residual representation @feng2004dynamic, and Kanade et al. are the
+closest graphical-dataflow trace-equivalence predecessor, although their
+symbolic region underapproximates one sampled trace class
+@kanade2009simulink. Sylvia supplies a modern modular RTL comparison with
+replayable witnesses, but its feasible fragment combination retains an
+exponential stated worst case @ryan2023sylvia.
 
-Requested-output projection is already known to merge distinct internal
-histories. König and Mönnigmann prove that explicit-MPC regions whose
-later-horizon actions differ can share the requested first action, Mitze et al.
-extend that common-action reuse to nonlinear MPC, Kvasnica and coauthors give
-clipping- and separator-based factorizations that erase region descriptions
-while preserving the controller pointwise, and Shin and Yang identify, at
-abstract level (the one abstract-only read cited in this survey), reward
-regions inducing the same optimal policy @konig2020common @mitze2021common
-@kvasnica2012clipping @kvasnica2013separation @shin2024multitask. Being relative
-to a requested output is therefore not a contribution; retaining the sparse
-internal selection events reached while computing it is.
+Functional-logic fingerprints are the closest lineage for the sparse map
+shape: set functions record executed nondeterministic steps, pull-tabbing
+introduces stable choice-ID/outcome propagation through runtime copies, and
+memoized pull-tabbing exposes the later task-local partial map
+@antoy2009setfunctions
+@alqaddoumi2010pulltab @hanus2021memoized. The observer is nondeterministic
+evaluation history rather than a deterministic caller-input fiber. SPLat adds
+a close configuration-testing precedent: first reads populate a decision
+stack, SAT prunes feature-model-infeasible partial assignments, and concrete
+configurations witness claimed distinct test traces @kim2013splat.
 
-Exact inverse consistency under a partial event observer is likewise
-established. Petri-net estimators characterize exactly the markings consistent
-with an observed transition-label word by a linear system whose structure is
-independent of word length, make the nondeterministic-label case explicit,
-compute the complete set of minimum-token initial markings, and admit timing and
-unobservable events @giua2003marking @corona2003observers @li2009minimum
-@ghazel2009observer. Their hidden objects are markings or timed states, not
-caller inputs carrying typed residual values.
+#figure(
+  block(breakable: true)[
+    #text(size: 7.2pt)[
+      #table(
+        columns: (0.9fr, 1.35fr, 1.25fr, 1.45fr, 1.25fr),
+        align: left,
+        inset: 3pt,
+        stroke: (x: none, y: 0.4pt + luma(200)),
+        table.header(
+          [*Work or route*], [*Native observer/output*], [*Coverage guarantee*],
+          [*Guard · residual · witness*], [*Kernel/contract relation*],
+        ),
+        [PESO], [Relevant-slice conditions at requested outputs],
+          [Conditionally complete exploration of finite RSCs],
+          [RSC/path condition · symbolic output · solver test],
+          [Kernel equality open; may refine or fragment a target fiber],
+        [SPD], [Dependence-relevant path-family graph for queried uses],
+          [Exact mode described as pathwise-equivalent; no numbered end-to-end theorem],
+          [Path-family condition · shared guarded values · no exposed witness record],
+          [Kernel equality open; dependence families may be finer],
+        [Feng et al.], [Mux control/data functional-space cells],
+          [Mutually exclusive functional-space partition intended],
+          [Boolean control · data expression · no witness],
+          [Restricted-close; merge choices can make its kernel coarser],
+        [Kanade et al.], [Bounded discrete trace including conditional outcomes],
+          [Sampled class is underapproximated],
+          [Sufficient predicate · transformer · sample],
+          [Different trace observer; sampled region is not a full kernel class],
+        [Fingerprints / MPT], [Task-local choice-ID/outcome map],
+          [Search guarantees are source-strategy-specific],
+          [No input guard · result value, not residual · task],
+          [Different input domain and observer; no kernel order established],
+        [SPLat], [Reachable test trace under configuration inputs],
+          [One execution per distinct trace is claimed; no formal exactness theorem],
+          [Partial configuration cylinder · none · execution],
+          [Trace kernel may be finer or incomparable to selection events],
+        [Wang et al.], [Colored solution-tree equivalence class],
+          [Every class exactly once; delay $O(n s)$],
+          [No input guard · class tree · no witness],
+          [Different solution domain; incomparable without a reduction],
+        [Projected AllSMT], [Instrumented totalized observation tuple],
+          [Complete tuples enumerate the exact image],
+          [Existential fiber · no residual · model],
+          [Same kernel after faithful activity/outcome instrumentation],
+        [BDD/ADD compilation], [Finite encoded observer function],
+          [Exact for the compiled function; BDD canonicity needs fixed order],
+          [Terminal preimage · optional terminal residual · optional model],
+          [Same kernel iff terminal labels injectively relabel the totalized observer],
+        [Hyperplane traversal], [Strict sign cell],
+          [Complete, duplicate-free, output-sensitive under source cost models],
+          [Polyhedral cell · separate/charged · method-specific],
+          [Same kernel on the boundary-free all-sites-observed affine restriction],
+        [Parametric traversal], [Optimizer basis or critical region],
+          [Full-dimensional basis/region coverage under stated assumptions],
+          [Closed polyhedron · affine optimizer · method-specific],
+          [Usually different; boundary overlap prevents a disjoint all-input kernel],
+        [Guarded component summaries], [Namespaced component observations under demanded ports],
+          [Exact under full-domain locality and contextual identity assumptions],
+          [Conjoined guard · substituted residual · witness recovered by solving the composed guard],
+          [Same kernel as flattening under the composition theorem],
+      )
+    ]
+  ],
+  caption: [Guarantees of the closest representatives. “Open” means that this
+  survey does not prove equality with the target observer or one-record
+  contract.],
+  kind: table,
+) <tab-guarantees>
 
-Multiplicity-sensitive event observation is established for unfoldings.
-Reveals and excludes relations quantify over maximal runs, with a repeated
-variant restricted to runs containing a fixed number of occurrences of the
-observed transition, and a parametric algorithm decides them for bounded
-equal-conflict nets @bernardinello2016revealsexcludes
-@adobbati2024parametricreveals.
+Wang et al. are important because they defeat a broader novelty claim: their
+dynamic program enumerates every locally colored equivalence class of solution
+trees in an acyclic decomposable AND/OR graph exactly once with delay
+$O(n s)$ @wang2021equivalence. Exact quotient enumeration is therefore not new
+as a general objective. Their class-tree output and decomposability assumptions
+do not supply a reduction from arbitrary selection fibers, caller-input guards,
+residuals, or witnesses.
 
-Pairing a recorded choice history with a symbolic residual is established for
-concurrency: SymPaths proves a schedule-recording symbolic semantics sound and
-complete against concrete executions before pruning equivalent paths
-@deboer2020sympaths. Its observer is a thread schedule, not a requested-root
-caller-input fiber.
+Three exact correspondences remain open: whether instrumented PESO plus RSC
+quotienting yields exactly one selection fiber; whether SPD's dependence
+families denote the enabled-closure observer rather than a refinement; and
+whether Feng's actual split/merge algorithm, augmented with immutable
+contextual event labels, preserves every target observation. The survey does
+not use their absence of an explicit theorem as evidence that no reduction
+exists.
 
-Demand-driven refinement over structured inputs has an imperative continuation
-beyond the functional line above. Korat prunes by the fields an executable
-predicate actually reads @boyapati2002korat, Lindblad refines only the
-metavariable blocking a Boolean property and returns a partial constructor term
-denoting all satisfying completions @lindblad2007property, and bounded lazy
-initialization, BLISS, LISSA, and PLI successively add relational field bounds,
-SAT and bounded-exhaustive feasibility oracles, and joint heap/path-condition
-feasibility, each with a preservation result for the states ordinary lazy
-initialization would explore @geldenhuys2013bounded @rosner2015bliss
-@copia2022lissa @copia2023precise. These search partial states; they do not
-aggregate them into exact observation fibers with residuals.
-
-Finally, an exact quotient is not automatically cheaper than the analysis it was
-meant to accelerate. Fisler and Vardi show analytically and experimentally that
-BDD bisimulation minimization can cost more than checking the invariant directly
-and often does not improve the downstream problem @fisler2002bisimulation. No
-performance claim follows from the observer-fiber construction alone.
+The strongest adjacent boundaries remain useful but should not be mistaken for
+the closest algorithms. Requested-output quotients can merge distinct internal
+histories, as in common-first-action controller regions
+@konig2020common @mitze2021common and exact neural-policy decision trees
+@chang2026compact. Giua et al. give exact inverse consistency for Petri-net
+markings under an observed label word @giua2003marking. SymPaths records
+scheduler choices and proves its symbolic semantics sound and complete against
+concrete executions @deboer2020sympaths. Lindblad's property-blocked constructor
+search is a close demand-refinement shape, but its stated soundness and
+completeness conditions are explicitly unproved @lindblad2007property; Korat
+and the BLISS--LISSA--PLI heap line establish stronger bounded access-guided and
+feasibility-preservation results for different artifacts @boyapati2002korat
+@rosner2015bliss @copia2022lissa @copia2023precise. Finally, Fisler and Vardi
+show that exact BDD bisimulation minimization can cost more than direct symbolic
+checking @fisler2002bisimulation. No performance claim follows from the
+observer-fiber construction alone.
 
 == Adjacent reduction problems
 
@@ -151,11 +221,14 @@ a restricted affine specialization; and guarded summaries provide composition.
 *RQ3.* General exactness follows only after all four record obligations are
 proved. General output-sensitive complexity does not follow from sparse demand
 or one model per fiber. Stronger bounds belong to restricted geometric,
-parametric, or compiled inputs and must charge their representations.
+parametric, or compiled inputs and must charge their representations. The
+route-by-route obligations and assumptions are summarized in
+@tab-guarantees.
 
 *RQ4.* Approaches induce the same fibers when their observer kernels agree
 after explicit instrumentation. Their labeled images and record schemas then
 correspond only after an explicit image bijection. Coordinate projection,
 equal-behavior merging, path refinement, and property-guided search otherwise
 produce coarser, finer, or incomparable partitions. This observer test is the
-framework's primary rule for transferring results across terminology.
+framework's primary rule for transferring results across terminology;
+@tab-guarantees records the known equality, open, and incomparable cases.

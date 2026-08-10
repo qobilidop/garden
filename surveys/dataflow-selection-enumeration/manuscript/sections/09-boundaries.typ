@@ -2,12 +2,14 @@
 
 == Applicability of selection observations
 
-Selection observations are appropriate for event-aware specifications such as
-checking that graph rewriting, lowering, or component substitution preserves a
-declared map of source selection events. They are not preferable for every
-client. A value-only client should merge behaviorally equal records, as
+Selection observations may support event-aware specifications such as checking
+that graph rewriting, lowering, or component substitution preserves a declared
+map of source selection events. This is a motivating hypothetical in the
+present paper, not a demonstrated application: no worked validation case or
+evaluation is reported. They are not preferable for every client. A value-only client should merge behaviorally equal records, as
 explicit-control methods do when they group regions that share the requested
-first action @konig2020common; an
+first action @konig2020common or compile an exact extensional policy tree
+@chang2026compact; an
 optimization client may retain active constraints rather than source events;
 and a diagnostic client may record causal events beyond selections. The
 framework makes these choices explicit rather than ranking them by a universal
@@ -61,6 +63,19 @@ observer with exponentially different sizes. Exact guarded-summary composition
 has the same caveat: equality with flattening does not imply reuse. A component
 with many outputs can require exponentially many demand masks, and different
 caller predicates can split its fibers differently at each occurrence.
+
+The exact-guard, projection-equivalence, demanded-port locality, and
+guarded-summary composition results are survey-authored derivations. They have
+not been peer reviewed, mechanized, or independently verified. In particular,
+the paper has not proved exact correspondence between its observer/record
+contract and PESO's relevant-slice conditions, SPD's path-family graph, or
+Feng et al.'s actual functional-space split/merge algorithm. Those are explicit
+open reduction questions, not implicit novelty evidence.
+
+The evidence map is also open. The dated search snapshot contains an unresolved
+candidate backlog, so it supports the comparisons made from adjudicated and
+deep-read works but not a claim that every captured plausible competitor has
+been assessed.
 
 == Open theoretical questions
 

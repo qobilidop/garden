@@ -28,6 +28,18 @@ per nonempty fiber. The guard denotes precisely that fiber; the residual
 computes the requested values throughout it; and the witness demonstrates
 feasibility.
 
+The paper introduces _selection observation_, _selective term graph_,
+_enabled closure_, _observed-outcome guard_, _observation record_, and
+_full-fiber blocking_ as local names or local refinements for this synthesis;
+they are not claimed as established terms of art, and the complete four-field
+contract is not presented as an already established named task. The paper is
+therefore also a theory/position synthesis of a proposed semantic contract,
+not evidence that this exact observer already has a demonstrated consumer.
+_Observer_, _kernel_,
+_fiber_, _guard_, _residual_, _projection_, and _symbolic execution_ retain
+their established meanings. The six groups below are overlapping solution
+routes, not a field-wide taxonomy.
+
 This task is easy to misidentify. A monolithic symbolic value describes output
 semantics but does not enumerate structural observations. A path records a
 control-flow history rather than the enabled portion of an arbitrary shared
@@ -48,20 +60,28 @@ The survey therefore separates three choices that are often conflated:
 This separation makes established approaches directly comparable. Projected
 AllSMT enumerates selected finite coordinates @phan2015allsmtr and can emit
 disjoint partial covers @spallitta2024disjoint @spallitta2025projected.
-Multi-path symbolic execution supplies guarded residual values
-@sen2015multise. Functional-logic search maintains demand-populated maps with
-stable choice identities @brassel2007tighter @brassel2011thesis, and Lazy
+PESO and SPD already organize symbolic exploration around requested outputs or
+query-relevant path families, with guarded symbolic results
+@qi2013output @santelices2010dependencies; mux functional-space partitioning is
+a close pure-dataflow guard/residual predecessor @feng2004dynamic. Multi-path
+symbolic execution supplies the broader guarded-residual basis
+@sen2015multise. Functional-logic search begins with fingerprints of executed
+nondeterministic steps, later propagates stable choice identities through
+runtime copies, and ultimately exposes demand-populated task maps
+@antoy2009setfunctions @alqaddoumi2010pulltab @hanus2021memoized. Lazy
 SmallCheck refines only the input fragments demanded by a Boolean observer
 @runciman2008smallcheck. Decision trees and diagrams compile finite observer
 functions @bryant1986bdd @bahar1997add. Hyperplane and parametric methods give
 stronger output-sensitive enumeration results for affine special cases
-@avis1996reverse @jones2006parametric. None of these names alone specifies the
+@avis1996reverse @jones2006parametric, while Wang et al. prove polynomial-delay
+enumeration of equivalence classes under a decomposable AND/OR representation
+@wang2021equivalence. None of these names alone specifies the
 selection-observation problem; the comparison depends on the observer and
 contract attached to the method.
 
 The paper answers four questions:
 
-- *RQ1:* What common terminology precisely defines selection-observation
+- *RQ1:* What consistent terminology precisely defines selection-observation
   enumeration and distinguishes it from neighboring tasks?
 - *RQ2:* Which established approach traditions or routes can enumerate, compile, or
   specialize the required fibers, and what instrumentation do they require?
