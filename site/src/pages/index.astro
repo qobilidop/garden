@@ -1,46 +1,55 @@
 ---
 import { getCollection } from 'astro:content'
 import Base from '../layouts/Base.astro'
-import { extractTitle, fieldOf } from '../lib/works'
+import {
+  entryPath,
+  ingestedAt,
+  newest,
+  surveyUpdatedAt,
+  wikiUpdatedAt,
+} from '../lib/recency'
+import { extractTitle } from '../lib/works'
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '')
+const tagline = 'A public knowledge base within a broader digital system.'
 const wiki = await getCollection('wiki')
 const library = await getCollection('library')
 const surveys = await getCollection('surveys')
-const recent = library
-  .map((e) => ({
+const RECENT_LIMIT = 5
+const recentLibrary = newest(
+  library.map((e) => ({
     id: e.id,
     title: extractTitle(e.body ?? '') ?? e.id,
-    retrieved: fieldOf(e, 'retrieved') ?? '',
-  }))
-  .sort((a, b) => b.retrieved.localeCompare(a.retrieved))
-  .slice(0, 5)
+    timestamp: ingestedAt(entryPath(e.filePath)),
+  })),
+  RECENT_LIMIT,
+)
+const recentWiki = newest(
+  wiki.map((e) => ({
+    id: e.id,
+    title: extractTitle(e.body ?? '') ?? e.id,
+    timestamp: wikiUpdatedAt(entryPath(e.filePath)),
+  })),
+  RECENT_LIMIT,
+)
+const recentSurveys = newest(
+  surveys.map((e) => ({
+    id: e.id,
+    title: extractTitle(e.body ?? '') ?? e.id,
+    timestamp: surveyUpdatedAt(e.id),
+  })),
+  RECENT_LIMIT,
+)
 ---
 
-<Base description="The public knowledge face of Bili's digital system.">
+<Base description={tagline}>
   <h1>qobilidop/sys0</h1>
-  <p>
-    The public knowledge face of a broader digital system. Three layers live
-    here, in order of refinement: the
-    <a href={`${base}/library/`}>library</a> — the works themselves, papers
-    and posts, each with synthesis notes — the
-    <a href={`${base}/wiki/`}>wiki</a> — living topic pages that distill
-    the library across works — and
-    <a href={`${base}/surveys/`}>surveys</a> — manuscripts of systematic
-    review campaigns run under a pinned method. Wiki pages cite works; work
-    pages list the topics that cite them.
-  </p>
-  <p>
-    Everything is rendered from
-    <a href="https://github.com/qobilidop/sys0">the repository</a>, where
-    the system itself — its conventions, skills, and tools — is developed
-    in the open.
-  </p>
+  <p>{tagline}</p>
 
-  <h2>Recently ingested</h2>
+  <h2>Recently ingested library items</h2>
   <ul>
     {
-      recent.map((w) => (
+      recentLibrary.map((w) => (
         <li>
           <a href={`${base}/library/${w.id}/`}>{w.title}</a>
         </li>
@@ -48,23 +57,23 @@ const recent = library
     }
   </ul>
 
-  <h2>Topics</h2>
+  <h2>Recently updated wiki topics</h2>
   <ul>
     {
-      wiki.map((e) => (
+      recentWiki.map((e) => (
         <li>
-          <a href={`${base}/wiki/${e.id}/`}>{extractTitle(e.body ?? '') ?? e.id}</a>
+          <a href={`${base}/wiki/${e.id}/`}>{e.title}</a>
         </li>
       ))
     }
   </ul>
 
-  <h2>Surveys</h2>
+  <h2>Recently updated surveys</h2>
   <ul>
     {
-      surveys.map((e) => (
+      recentSurveys.map((e) => (
         <li>
-          <a href={`${base}/surveys/${e.id}/`}>{extractTitle(e.body ?? '') ?? e.id}</a>
+          <a href={`${base}/surveys/${e.id}/`}>{e.title}</a>
         </li>
       ))
     }

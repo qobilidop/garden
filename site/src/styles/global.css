@@ -70,11 +70,6 @@ body {
   body {
     font-size: 17px;
   }
-
-  .site-header nav {
-    gap: 0.5rem 0.75rem;
-    flex-wrap: wrap;
-  }
 }
 
 /* Header / nav — apparatus, sans */
@@ -87,7 +82,19 @@ body {
 
 .site-header nav {
   display: flex;
+  align-items: center;
   gap: 1.25rem;
+}
+
+.site-header .nav-sections,
+.site-header .nav-utilities {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.site-header .nav-utilities {
+  margin-left: auto;
 }
 
 .site-header a {
@@ -98,10 +105,6 @@ body {
 .site-header a.brand {
   color: var(--fg);
   font-weight: 600;
-}
-
-.site-header a.search {
-  margin-left: auto;
 }
 
 .theme-toggle {
@@ -119,6 +122,18 @@ body {
 
 .site-header a:hover {
   color: var(--fg);
+}
+
+@media (max-width: 600px) {
+  .site-header nav {
+    gap: 0.5rem 0.75rem;
+    flex-wrap: wrap;
+  }
+
+  .site-header .nav-sections,
+  .site-header .nav-utilities {
+    gap: 0.75rem;
+  }
 }
 
 main {
@@ -452,6 +467,7 @@ img {
   border-top: 1px solid var(--rule);
   font-family: var(--sans);
   font-size: 0.8rem;
+  text-align: center;
   color: var(--muted);
 }
 

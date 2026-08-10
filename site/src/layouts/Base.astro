@@ -32,11 +32,21 @@ const pageTitle = title ? `${title} · ${siteName}` : siteName
     <header class="site-header">
       <nav>
         <a href={`${base}/`} class="brand">qobilidop/sys0</a>
-        <a href={`${base}/library/`}>library</a>
-        <a href={`${base}/wiki/`}>wiki</a>
-        <a href={`${base}/surveys/`}>surveys</a>
-        <a href={`${base}/search/`} class="search">search</a>
-        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle light/dark theme" title="Toggle light/dark theme">◐</button>
+        <span class="nav-sections">
+          <a href={`${base}/library/`}>library</a>
+          <a href={`${base}/wiki/`}>wiki</a>
+          <a href={`${base}/surveys/`}>surveys</a>
+        </span>
+        <span class="nav-utilities">
+          <a href={`${base}/search/`}>search</a>
+          <a href="https://github.com/qobilidop/sys0">github</a>
+          <button
+            id="theme-toggle"
+            class="theme-toggle"
+            aria-label="Toggle light/dark theme"
+            title="Toggle light/dark theme"
+          >◐</button>
+        </span>
       </nav>
     </header>
     <main data-pagefind-body>
@@ -44,9 +54,9 @@ const pageTitle = title ? `${title} · ${siteName}` : siteName
     </main>
     <footer class="site-footer">
       <p>
-        <a href="https://github.com/qobilidop/sys0">source</a> · code
-        <a href="https://github.com/qobilidop/sys0/blob/main/LICENSE-MIT">MIT</a> ·
-        non-code <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
+        code <a href="https://github.com/qobilidop/sys0/blob/main/LICENSE-MIT">MIT</a> ·
+        non-code
+        <a href="https://github.com/qobilidop/sys0/blob/main/LICENSE-CC-BY">CC BY 4.0</a>
       </p>
     </footer>
     <script>

@@ -26,6 +26,9 @@ jobs:
     container: ghcr.io/${{ github.repository }}/dev:latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          # Homepage recency is derived from first-add/last-update commits.
+          fetch-depth: 0
       # Requires typst from the dev image. A push that changes
       # .devcontainer/ races the image republish (dev-image.yml) —
       # if this step fails on a stale image, re-run after it merges.
