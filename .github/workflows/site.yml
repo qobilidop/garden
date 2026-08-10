@@ -29,6 +29,8 @@ jobs:
         with:
           # Homepage recency is derived from first-add/last-update commits.
           fetch-depth: 0
+      - name: Trust the container workspace for Git-backed recency
+        run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
       # Requires typst from the dev image. A push that changes
       # .devcontainer/ races the image republish (dev-image.yml) —
       # if this step fails on a stale image, re-run after it merges.
