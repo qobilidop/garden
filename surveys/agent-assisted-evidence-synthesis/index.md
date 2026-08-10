@@ -2,27 +2,34 @@
 
 ## Summary
 
-A dated, relevance-capped exploratory systematic map of AI assistance across
-evidence synthesis: 776 include-level works in a 1,975-row catalog covering
-2020–2026, with structured evidence notes for 31 selected works (25 full-text,
-5 abstract-only, 1 secondary-only). It maps workflow stages, contribution and evidence types,
-and settings; synthesizes performance measurement, reporting norms, and multi-model
-designs; and makes no bounded mapping-closure claim, with 76 rows still parked.
+An exploratory systematic map of how AI and LLM agents are being used across
+the evidence-synthesis pipeline. It reconciles competing stage vocabularies,
+organizes the retained literature by workflow stage, contribution, evidence
+type, and setting, and synthesizes what selected studies show about performance
+measurement, human baselines, disclosure norms, and multi-model design. The
+retained map is screening- and medicine-heavy, while the reported results are
+heterogeneous and difficult to compare: metrics, aggregation, reference labels,
+and deferral can all change the apparent verdict. Guidance repeatedly calls for
+disclosure of the tool, task, human role, configuration, and verification, but
+the selected proposals cover different subsets and their evidence notes report
+no validation or adoption evidence.
+Ensemble and human–AI deferral designs report conditional gains, while agent
+reviewer independence remains an open measurement problem rather than an
+established construct.
 
-**Read:** [HTML](manuscript.html) · [PDF](manuscript.pdf)
+## Links
 
-**Survey record:**
-[method, catalog, and evidence](https://github.com/qobilidop/sys0/tree/main/surveys/agent-assisted-evidence-synthesis/record)
-— searched through 2026-08-09.
-
-**Topic context:** [[survey-methodology]]
+- [Manuscript (HTML)](manuscript.html)
+- [Manuscript (PDF)](manuscript.pdf)
+- [Survey record](https://github.com/qobilidop/sys0/tree/main/surveys/agent-assisted-evidence-synthesis/record)
 
 ## Reading list
 
-The works that anchor this map, curated from its 776 included works and
-organized by the survey's taxonomy. Entries link the original paper
-(where a stable public link exists) and our notes on it (library pages where ingested, our
-evidence notes in the record otherwise).
+The works that anchor the map, curated from the selected evidence notes and
+organized by the survey's taxonomy, with the method foundations and comparison
+points that bound its synthesis. Entries link the original paper (DOI where one
+exists) and our notes on it (library pages where ingested, our evidence notes
+in the record otherwise).
 
 ### Method foundations
 
