@@ -5,7 +5,9 @@ constraints that describe sets of concrete behaviors. The shelf, by role:
 [[baldoni2016-symbolic]] (field architecture
 and taxonomy), [[sen2015-multise]] (incremental path merging through guarded
 value summaries), and [[yang2026-forbench]] (hardware symbolic simulation
-that forks on testbench decisions rather than design branches).
+that forks on testbench decisions rather than design branches), with
+[[jayasena2023-directed]] as the adjacent hardware-validation map that places
+symbolic and concolic systems among other directed-test generators.
 
 ## Path explosion moves between representations
 
@@ -78,6 +80,16 @@ boilerplate. A representation can compress the behaviors it is asked to
 consider; it cannot establish that the harness expressed the right behaviors,
 that the bound was deep enough, or that an omitted theory was irrelevant.
 
+Hardware directed testing broadens that contract beyond path coverage.
+[[jayasena2023-directed]] follows tests across specification, TLM, RTL,
+gate-level, and post-silicon settings and across functional, security, and
+non-functional goals. A target can be a branch, assertion, processor state,
+Trojan trigger, observable fault effect, or peak-power scenario. Formal
+counterexamples, concolic paths, learned search policies, constrained-random
+samples, and ATPG vectors can all be “directed” while providing different
+guarantees. The target, observer, and translation between abstraction levels
+are therefore part of the result, not incidental details of test production.
+
 Terminology can obscure that contract. The Baldoni et al. survey calls an
 analysis *sound* when it has no false negatives and *complete* when it has no
 false positives, the reverse of a convention common in logic and static
@@ -87,10 +99,14 @@ and what concretization or modeling step created that boundary.
 
 ## What the shelf needs next
 
-The field survey supplies a durable taxonomy, but not a reproducible or
-quantitative comparison. The missing bridge is a contemporary experiment on
-guarded value summaries, ITE-heavy symbolic simulation, and path-based
-execution under the same programs, solver, memory budget, and end-task
-metric. The shelf also lacks primary ingestions of the foundational DART/KLEE
-lineage and a study of harness-construction effort. Those additions would
-test which points on the representation spectrum work under which conditions.
+The software field survey supplies a durable taxonomy, and the hardware
+directed-testing survey supplies a broad adjacent map, but neither provides a
+controlled quantitative comparison. Jayasena and Mishra's final 1–5 plot for
+coverage, scalability, effort, and guarantee is an expert synthesis without a
+reported scoring protocol, not a meta-analysis. The missing bridge is a
+contemporary experiment on guarded value summaries, ITE-heavy symbolic
+simulation, and path-based execution under the same designs, solver, memory
+budget, harness, and end-task metric. The shelf also lacks primary ingestions
+of the foundational DART/KLEE lineage and a study of harness-construction
+effort. Those additions would test which points on the representation
+spectrum work under which conditions.
