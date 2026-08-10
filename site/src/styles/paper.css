@@ -83,14 +83,13 @@ code {
   font-family: 'DejaVu Sans Mono', Menlo, Consolas, monospace;
   font-size: 0.82em;
 }
-pre,
-math[display="block"] {
+pre {
   overflow-x: auto;
 }
+/* The display attribute supplies `display: block math`; overriding it with
+   ordinary `display: block` disables native MathML layout. */
 math[display="block"] {
-  display: block;
   margin: 0.65rem auto;
-  text-align: center;
 }
 a {
   color: #245b8a;
