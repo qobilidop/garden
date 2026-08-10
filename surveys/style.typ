@@ -62,6 +62,12 @@
   v(0.8em)
 }
 
+#let centered-block(body) = context if target() == "html" {
+  html.elem("div", attrs: (class: "centered-block"))[#body]
+} else {
+  align(center)[#body]
+}
+
 #let named-statement(kind, title, body) = {
   let number = counter(kind)
   number.step()

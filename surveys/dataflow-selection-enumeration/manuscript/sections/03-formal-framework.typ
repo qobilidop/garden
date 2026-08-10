@@ -1,6 +1,6 @@
 #import "../../../style.typ": definition, theorem, proposition, proof
 
-= Unified terminology and theoretical framework <sec-formal-model>
+= Selection observations: formal model and semantics <sec-formal-model>
 
 This section defines the problem independently of any solver or data
 structure. The framework separates an observer, its inverse-image fibers, an
@@ -127,7 +127,7 @@ conditions; @sec-related compares them.
   $op("unobs")_q in.not Omega_q$ per
   site:
   $
-    overline(T)_G(x,R)(q) =
+    T^"tot"_G(x,R)(q) =
       cases(
         T_G(x,R)(q) & "if " q in D_G(x,R),
         op("unobs")_q & "otherwise."

@@ -1,4 +1,4 @@
-= Complexity, tradeoffs, and specialized frontiers <sec-complexity>
+= Complexity and specialized frontiers <sec-complexity>
 
 The comparison framework must separate record count, representation size,
 oracle invocations, and actual enumeration complexity. This section first

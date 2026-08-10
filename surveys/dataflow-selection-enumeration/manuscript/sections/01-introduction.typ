@@ -1,3 +1,5 @@
+#import "../../../style.typ": centered-block
+
 = Introduction <sec-introduction>
 
 Consider a finite, typed, acyclic, deterministic pure dataflow graph containing
@@ -6,7 +8,7 @@ operators. Its primitives are total on their typed domains. A caller supplies
 an input from a declared domain and requests one or more graph results. The
 problem of this survey is:
 
-#align(center)[
+#centered-block[
   _Enumerate every distinct selection observation induced by the requested
   results, exactly once, together with its exact input guard, residual value,
   and a witness._
@@ -91,10 +93,11 @@ purpose is to state one problem precisely enough that results from different
 communities can be transferred only when their observers and assumptions
 actually agree.
 
-The problem setup appears in @sec-example. The unified framework is defined in
-@sec-formal-model, the bounded evidence method is reported in @sec-method, and
-the known solution routes are compared in @sec-related. The principal
-correspondences and complexity boundaries follow in @sec-algorithms and
-@sec-complexity. Remaining semantic, evidence, and implementation limits are
-stated in @sec-discussion, and @sec-conclusion closes with the surviving
-formal package.
+@sec-example develops the problem through one graph. @sec-formal-model then
+defines its semantics independently of any solver, and @sec-method states the
+survey's evidence boundary. @sec-related presents the six solution routes;
+@sec-synthesis compares their observers, guarantees, and closest established
+results. @sec-algorithms gives the two general enumeration presentations, and
+@sec-complexity separates their costs from stronger specialized frontiers.
+@sec-discussion states the remaining boundaries and open problems, and
+@sec-conclusion closes with the main conclusions.

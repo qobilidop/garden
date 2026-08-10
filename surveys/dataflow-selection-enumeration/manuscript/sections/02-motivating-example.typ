@@ -1,4 +1,4 @@
-= Problem setup by example <sec-example>
+= Selection observations by example <sec-example>
 
 Let `p` and `r` be Boolean inputs and `x` and `y` be integer inputs. Consider
 the shared, pure graph

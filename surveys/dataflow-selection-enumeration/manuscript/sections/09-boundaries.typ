@@ -1,22 +1,6 @@
 = Boundaries and open problems <sec-discussion>
 
-== What the framework establishes
-
-The paper fixes one problem before comparing solvers. For a finite selective
-DAG, a caller domain, and requested roots, the selection observer maps each
-input to the contextual outcomes reached through enabled edges. Its nonempty
-inverse images define the required records. Observed-outcome guards, demanded
-residual evaluation, totalized unobserved/outcome coordinates, projected enumeration,
-and contextual summary composition are then alternative presentations of this
-one semantic contract.
-
-The observer/refinement distinction is the main organizing result. Structural
-absence, existentially hidden coordinates, logical don't-cares, and
-equal-behavior quotients are not interchangeable. Two approaches induce the
-same input partition only when their observer kernels agree after any declared
-instrumentation. Matching labeled outputs additionally requires an explicit
-bijection between their feasible images. Otherwise one computes a refinement,
-quotient, or incomparable partition.
+== Applicability of selection observations
 
 Selection observations are appropriate for event-aware specifications such as
 checking that graph rewriting, lowering, or component substitution preserves a
@@ -99,22 +83,15 @@ The framework suggests a focused research agenda:
 These questions keep the observer, enumerator, and representation separate.
 Improving one does not automatically strengthen the other two.
 
-== Evidence and implementation agenda
+== Reference implementation and evaluation agenda
 
-The map is a bounded and updateable evidence baseline, not a census. Vocabulary
-crosses several communities, indexes omit and merge records, and the screening
-passes shared one AI-assisted project framing. The committed queries,
-log, source notes, syntheses, evidence ledger, and claim ledger make the
-boundary inspectable and repeatable; they cannot establish worldwide
-completeness or substitute for independent human review.
-
-This paper reports no implementation or benchmark result. A future evaluator
-should first validate small finite graphs by exhaustive concrete input
-enumeration, checking observation identity, guard membership, residual values,
-witnesses, and coverage. It should then compare local full-fiber blocking,
-global projected enumeration, finite-input ADD or MTBDD compilation, and
-specialized geometric traversal on inputs that expose nested unobserved sites,
-equal-valued observed alternatives, sharing, multiple roots, multiway choices,
-lower-dimensional fibers, and repeated components. Measurements should report
-serialized and shared output size, compilation cost, solver effort, peak
-memory, and final-exhaustion cost—not only record count.
+This paper reports no implementation or benchmark result. A reference
+implementation should first validate small finite graphs by exhaustive concrete
+input enumeration, checking observation identity, guard membership, residual
+values, witnesses, and coverage. It should then compare local full-fiber
+blocking, global projected enumeration, finite-input ADD or MTBDD compilation,
+and specialized geometric traversal on inputs that expose nested unobserved
+sites, equal-valued observed alternatives, sharing, multiple roots, multiway
+choices, lower-dimensional fibers, and repeated components. Measurements
+should report serialized and shared output size, compilation cost, solver
+effort, peak memory, and final-exhaustion cost—not only record count.

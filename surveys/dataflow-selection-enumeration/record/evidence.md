@@ -130,7 +130,7 @@ depth and evidence limits).
 - **Works:** alur2001partialorder
 - **Anchors:** sources/alur2001partialorder.md#evidence-locations
 - **Supports:** C11,C15
-- **Manuscript:** sec-related
+- **Manuscript:** sec-synthesis
 - **Scope:** algorithm and preservation argument
 - **Caveat:** The observer is a concurrent local property, not a requested-root input fiber.
 - **Certainty:** high
@@ -229,7 +229,7 @@ depth and evidence limits).
 - **Works:** holzmann1992coverage,aronis2018observers
 - **Anchors:** sources/holzmann1992coverage.md#evidence-locations;sources/aronis2018observers.md#evidence-locations
 - **Supports:** C01,C11,C15
-- **Manuscript:** sec-related
+- **Manuscript:** sec-synthesis
 - **Scope:** primary algorithms and preservation results
 - **Caveat:** The omitted dimension is concurrent schedule or state-space behavior, not requested-root-relative caller-input fibers.
 - **Certainty:** high
@@ -240,7 +240,7 @@ depth and evidence limits).
 - **Works:** bugrara2013redundant
 - **Anchors:** sources/bugrara2013redundant.md#evidence-locations
 - **Supports:** C01,C11,C15
-- **Manuscript:** sec-related
+- **Manuscript:** sec-synthesis
 - **Scope:** primary algorithm and stated soundness scope
 - **Caveat:** The preserved objective is code observation during bounded exploration, not an exact caller-input fiber partition.
 - **Certainty:** high
@@ -251,7 +251,7 @@ depth and evidence limits).
 - **Works:** chatain2017goaldriven
 - **Anchors:** sources/chatain2017goaldriven.md#evidence-locations
 - **Supports:** C01,C14,C15
-- **Manuscript:** sec-related
+- **Manuscript:** sec-synthesis
 - **Scope:** primary open paper, reduction property, algorithm, and theorems
 - **Caveat:** The output is a partial-order configuration prefix for marking reachability, not a partition of symbolic caller inputs or a residual-valued observer image.
 - **Certainty:** high
@@ -262,7 +262,7 @@ depth and evidence limits).
 - **Works:** bonet2014recent
 - **Anchors:** sources/bonet2014recent.md#evidence-locations
 - **Supports:** C01,C14,C15
-- **Manuscript:** sec-related
+- **Manuscript:** sec-synthesis
 - **Scope:** primary article and theorem-level framework analysis
 - **Caveat:** The user declaration ranges over unfolding preservation and cutoffs; it does not derive requested selection-site observations, input fibers, or typed residuals.
 - **Certainty:** high
@@ -295,7 +295,7 @@ depth and evidence limits).
 - **Works:** konig2020common,mitze2021common,kvasnica2012clipping,kvasnica2013separation
 - **Anchors:** sources/konig2020common.md#exact-result;sources/mitze2021common.md#contribution;sources/kvasnica2012clipping.md#contribution;sources/kvasnica2013separation.md#contribution
 - **Supports:** C09,C15
-- **Manuscript:** sec-related,sec-discussion
+- **Manuscript:** sec-synthesis,sec-discussion
 - **Scope:** exact first-action grouping, certified reuse, and pointwise-equivalent controller factorizations
 - **Caveat:** These are extensional output quotients or factorizations, not sparse contextual selection-event observers; the cross-domain distinction is our synthesis.
 - **Certainty:** low
@@ -306,7 +306,7 @@ depth and evidence limits).
 - **Works:** giua2003marking,corona2003observers,li2009minimum,ghazel2009observer
 - **Anchors:** sources/giua2003marking.md#evidence-locations;sources/corona2003observers.md#evidence-locations;sources/li2009minimum.md#evidence-locations;sources/ghazel2009observer.md#evidence-locations
 - **Supports:** C12,C15
-- **Manuscript:** sec-related
+- **Manuscript:** sec-synthesis
 - **Scope:** exact compatible-marking sets, optimization-restricted initial sets, and timed state estimation
 - **Caveat:** The hidden objects are Petri-net markings or timed states, not caller inputs paired with typed residual program values; the detailed minimum-marking claim is pinned to the full conference primary.
 - **Certainty:** high
@@ -317,7 +317,7 @@ depth and evidence limits).
 - **Works:** fisler2002bisimulation
 - **Anchors:** sources/fisler2002bisimulation.md#evidence-locations
 - **Supports:** C13,C15
-- **Manuscript:** sec-related,sec-discussion
+- **Manuscript:** sec-synthesis,sec-discussion
 - **Scope:** exact quotient construction, analysis, and experiments
 - **Caveat:** This rejects an automatic performance inference; it does not predict the workload of selection-fiber enumeration.
 - **Certainty:** moderate
@@ -339,7 +339,7 @@ depth and evidence limits).
 - **Works:** lindblad2007property,boyapati2002korat,geldenhuys2013bounded,rosner2015bliss,copia2022lissa,copia2023precise
 - **Anchors:** sources/lindblad2007property.md#evidence-locations;sources/boyapati2002korat.md#evidence-locations;sources/geldenhuys2013bounded.md#evidence-locations;sources/rosner2015bliss.md#evidence-locations;sources/copia2022lissa.md#evidence-locations;sources/copia2023precise.md#evidence-locations
 - **Supports:** C06,C15
-- **Manuscript:** sec-related
+- **Manuscript:** sec-synthesis
 - **Scope:** primary algorithms and work-specific correctness scopes
 - **Caveat:** Lindblad states but does not prove the needed soundness/completeness conditions; the other works have their own proved or explicitly scoped guarantees. Their observers and artifacts differ from exact selection-observation records.
 - **Certainty:** moderate
@@ -350,7 +350,7 @@ depth and evidence limits).
 - **Works:** shin2024multitask
 - **Anchors:** sources/shin2024multitask.md#relevance
 - **Supports:** C09,C15
-- **Manuscript:** sec-related
+- **Manuscript:** sec-synthesis
 - **Scope:** primary abstract and conference-archive presentation text
 - **Caveat:** This screened source supports only the high-level comparator claim, not an enumeration theorem, canonicality result, or complexity bound.
 - **Certainty:** low
@@ -361,7 +361,7 @@ depth and evidence limits).
 - **Works:** deboer2020sympaths
 - **Anchors:** sources/deboer2020sympaths.md#evidence-locations
 - **Supports:** C11,C15
-- **Manuscript:** sec-related
+- **Manuscript:** sec-synthesis
 - **Scope:** primary semantics and correctness theorems
 - **Caveat:** The choice record observes concurrent schedules rather than requested-root graph selections.
 - **Certainty:** high
@@ -372,7 +372,7 @@ depth and evidence limits).
 - **Works:** bernardinello2016revealsexcludes,adobbati2024parametricreveals
 - **Anchors:** sources/bernardinello2016revealsexcludes.md#evidence-locations;sources/adobbati2024parametricreveals.md#evidence-locations
 - **Supports:** C14,C15
-- **Manuscript:** sec-related
+- **Manuscript:** sec-synthesis
 - **Scope:** primary definitions, algorithms, and bounded-net guarantees
 - **Caveat:** These are run/event observers over Petri nets, not caller-input fibers with residual functions.
 - **Certainty:** high

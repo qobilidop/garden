@@ -1,6 +1,6 @@
 #import "../../../style.typ": definition, theorem, proposition, proof
 
-= Two observer-enumeration presentations and their equivalence <sec-algorithms>
+= Full-fiber blocking and projected enumeration <sec-algorithms>
 
 The survey identified two general routes to enumerating the observer image. A local
 presentation discovers one complete fiber from a model, constructs its
@@ -181,11 +181,11 @@ projection may instead retain $z_q$ as a theory term.
 #theorem("projection equivalence")[
   For every caller-domain input $x in cal(X)_A$, the reachability equations have
   the unique solution
-  $a_v <=> v in D_G(x,R)$, and $Z=overline(T)_G(x,R)$. Hence projected
+  $a_v <=> v in D_G(x,R)$, and $Z=T^"tot"_G(x,R)$. Hence projected
   models of $Phi_(G,A,R)$ over $Z$ are in bijection with feasible sparse
   observations. For every typed input $x$ and feasible $tau$,
   $
-    (exists a : Phi_(G,A,R)(x,a,overline(tau)))
+    (exists a : Phi_(G,A,R)(x,a,tau^"tot"))
       <=> Gamma_tau(x).
   $
 ]
@@ -198,7 +198,7 @@ projection may instead retain $z_q$ as a theory term.
   enabled closure, including disjunctive sharing from multiple consumers.
   Substitution in the definition of $z_q$ gives the totalized partial map.
   Therefore the existential formula holds exactly when $A(x)$ holds and the
-  induced totalized observation equals $overline(tau)$; the exact
+  induced totalized observation equals $tau^"tot"$; the exact
   observed-outcome guard
   theorem gives the final equivalence.
 ]
