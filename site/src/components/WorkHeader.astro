@@ -1,6 +1,13 @@
 ---
 import type { CollectionEntry } from 'astro:content'
-import { displayDateOf, fieldOf, shelfOf, workOf } from '../lib/works'
+import {
+  discussionLinksOf,
+  displayDateOf,
+  fieldOf,
+  shelfOf,
+  sourceLinksOf,
+  workOf,
+} from '../lib/works'
 
 interface Props {
   entry: CollectionEntry<'library'>
@@ -15,6 +22,8 @@ const retrieved = fieldOf(entry, 'retrieved')
 const synthesis = fieldOf(entry, 'synthesis')
 const doi = work.doi?.split(/\s/, 1)[0]
 const arxiv = work.arxiv?.split(/\s/, 1)[0]?.replace(/v\d+$/, '')
+const sourceLinks = sourceLinksOf(entry)
+const discussionLinks = discussionLinksOf(entry)
 ---
 
 <header class="work-meta" data-pagefind-ignore>
@@ -29,10 +38,48 @@ const arxiv = work.arxiv?.split(/\s/, 1)[0]?.replace(/v\d+$/, '')
       <p>{[work.venue, workDate].filter(Boolean).join(' · ')}</p>
     )
   }
-  <p class="work-links">
-    {doi && <a href={`https://doi.org/${doi}`}>doi:{doi}</a>}
-    {arxiv && <a href={`https://arxiv.org/abs/${arxiv}`}>arXiv:{arxiv}</a>}
-  </p>
+  {
+    sourceLinks.length > 0 && (
+      <p class="work-links">
+        <span class="work-link-label">source</span>
+        <span class="work-link-items">
+          {sourceLinks.map((link, index) => (
+            <>
+              {index > 0 && <span class="work-link-separator">·</span>}
+              <a href={link.url}>{link.label}</a>
+            </>
+          ))}
+        </span>
+      </p>
+    )
+  }
+  {
+    discussionLinks.length > 0 && (
+      <p class="work-links">
+        <span class="work-link-label">discussion</span>
+        <span class="work-link-items">
+          {discussionLinks.map((link, index) => (
+            <>
+              {index > 0 && <span class="work-link-separator">·</span>}
+              <a href={link.url}>{link.label}</a>
+            </>
+          ))}
+        </span>
+      </p>
+    )
+  }
+  {
+    (doi || arxiv) && (
+      <p class="work-links work-record-links">
+        <span class="work-link-label">record</span>
+        <span class="work-link-items">
+          {doi && <a href={`https://doi.org/${doi}`}>doi:{doi}</a>}
+          {doi && arxiv && <span class="work-link-separator">·</span>}
+          {arxiv && <a href={`https://arxiv.org/abs/${arxiv}`}>arXiv:{arxiv}</a>}
+        </span>
+      </p>
+    )
+  }
   {
     (notesBy || retrieved) && (
       <p class="notes-attribution">

@@ -26,6 +26,103 @@ export interface Work {
   arxiv?: string
 }
 
+export interface ExternalLink {
+  label: string
+  url: string
+}
+
+function recordOf(value: unknown): Record<string, unknown> | undefined {
+  return value !== null && typeof value === 'object' && !Array.isArray(value)
+    ? (value as Record<string, unknown>)
+    : undefined
+}
+
+function httpUrlOf(value: unknown): string | undefined {
+  if (typeof value !== 'string') return undefined
+  try {
+    const url = new URL(value)
+    return url.protocol === 'http:' || url.protocol === 'https:'
+      ? value
+      : undefined
+  } catch {
+    return undefined
+  }
+}
+
+function sourceTypeLabel(type: string): string {
+  if (type === 'pdf' || type === 'html') return type.toUpperCase()
+  return type
+    .split('-')
+    .filter(Boolean)
+    .map((part) => part[0]?.toUpperCase() + part.slice(1))
+    .join(' ')
+}
+
+function pushUnique(links: ExternalLink[], link: ExternalLink): void {
+  if (!links.some(({ url }) => url === link.url)) links.push(link)
+}
+
+// Posts carry one `source`; papers carry typed `sources` such as PDF and
+// HTML. Normalize both here so provenance presentation cannot drift from the
+// note schema or be reimplemented by individual pages.
+export function sourceLinksOf(
+  entry: CollectionEntry<'library'>,
+): ExternalLink[] {
+  const data = entry.data as Record<string, unknown>
+  const links: ExternalLink[] = []
+
+  const single = recordOf(data.source)
+  const singleUrl = httpUrlOf(single?.url ?? data.source)
+  const singleArchive = httpUrlOf(single?.archived)
+  if (singleUrl) pushUnique(links, { label: 'original', url: singleUrl })
+  if (singleArchive)
+    pushUnique(links, { label: 'archive', url: singleArchive })
+
+  const sources = recordOf(data.sources)
+  for (const [type, value] of Object.entries(sources ?? {})) {
+    const source = recordOf(value)
+    const url = httpUrlOf(source?.url ?? value)
+    const archive = httpUrlOf(source?.archived)
+    const label = sourceTypeLabel(type)
+    if (url) pushUnique(links, { label, url })
+    if (archive)
+      pushUnique(links, { label: `${label} archive`, url: archive })
+  }
+
+  return links
+}
+
+function discussionHostLabel(url: string): string {
+  const host = new URL(url).hostname.toLowerCase().replace(/^www\./, '')
+  if (host === 'news.ycombinator.com') return 'Hacker News'
+  if (host === 'x.com' || host === 'twitter.com') return 'X'
+  if (host === 'reddit.com' || host.endsWith('.reddit.com')) return 'Reddit'
+  if (host === 'lobste.rs') return 'Lobsters'
+  return host
+}
+
+export function discussionLinksOf(
+  entry: CollectionEntry<'library'>,
+): ExternalLink[] {
+  const raw = (entry.data as Record<string, unknown>).discussions
+  if (!Array.isArray(raw)) return []
+
+  const links = raw
+    .map(httpUrlOf)
+    .filter((url): url is string => url !== undefined)
+    .map((url) => ({ label: discussionHostLabel(url), url }))
+  const totals = new Map<string, number>()
+  const seen = new Map<string, number>()
+  for (const { label } of links) totals.set(label, (totals.get(label) ?? 0) + 1)
+
+  return links.map(({ label, url }) => {
+    if ((totals.get(label) ?? 0) === 1) return { label, url }
+    const index = (seen.get(label) ?? 0) + 1
+    seen.set(label, index)
+    return { label: `${label} ${index}`, url }
+  })
+}
+
 export function workOf(entry: CollectionEntry<'library'>): Work {
   const w = (entry.data as Record<string, unknown>).work
   return (w ?? {}) as Work

@@ -331,9 +331,34 @@ img {
   color: var(--fg);
 }
 
+.work-links {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+}
+
+.work-link-label {
+  flex: 0 0 4.75rem;
+  color: var(--muted);
+}
+
+.work-link-items {
+  display: flex;
+  min-width: 0;
+  flex-wrap: wrap;
+  gap: 0 0.35rem;
+}
+
 .work-links a {
-  margin-right: 0.75rem;
+  color: var(--fg);
+}
+
+.work-record-links a {
   font-family: var(--mono);
+}
+
+.work-link-separator {
+  color: var(--muted);
 }
 
 .kind {
