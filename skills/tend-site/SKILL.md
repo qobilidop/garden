@@ -41,7 +41,10 @@ site.yml`, then watch the new run and curl the live page.
 - Deploy: push triggers `.github/workflows/site.yml` (builds in the dev
   image, deploys to Pages). Watch by exit code
   (`gh run watch <id> --exit-status`), then curl the live page for the
-  specific change.
+  specific change. Read the run's final annotations even when it succeeds;
+  a runtime-deprecation annotation on an action is a maintenance finding,
+  not a green-run exemption (Node 20 action drift surfaced this way in
+  2026-08).
 - Never run npm installs or builds through `dev.sh` against the host
   checkout: the mount shares `site/node_modules`, and Linux binaries
   clobber the macOS ones ("Cannot find native binding"); reinstall on

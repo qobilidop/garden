@@ -18,7 +18,7 @@ jobs:
     container: ghcr.io/${{ github.repository }}/dev:latest
     timeout-minutes: 20
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Check coverage and request missing captures
         run: >-
           node tools/archive-library.mjs --request-missing
