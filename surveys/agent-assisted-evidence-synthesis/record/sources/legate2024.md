@@ -7,7 +7,7 @@ work:
   date: 2024
   doi: 10.12688/f1000research.151493.2
 read: full-text
-source: "transcript at shadow/library/papers/2024/legate2024-semiautomated-approaches-to-data-extraction-for-systematic-reviews-and-meta-analyses-in-social-sciences/transcript.md"
+source: "transcript at shadow/library/papers/2024/legate2024-data-extraction/transcript.md"
 facets:
   stage: "extract"
   contribution: "evaluation"

@@ -7,7 +7,7 @@ work:
   date: 2026
   doi: 10.64898/2026.07.30.26359375
 read: full-text
-source: "shadow/store/library/papers/2026/huang2026-a-prisma-aligned-agentic-framework-for-medical-systematic-reviews-and-evidence-synthesis/"
+source: "shadow/store/library/papers/2026/huang2026-medsr-copilot/"
 facets:
   stage: "end2end"
   contribution: "system"

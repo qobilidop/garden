@@ -7,7 +7,7 @@ work:
   date: 2023
   doi: 10.1136/bmjebm-2023-112678
 read: full-text
-source: "shadow/store/library/papers/2023/gargari2023-enhancing-title-and-abstract-screening-for-systematic-reviews-with-gpt-35-turbo/"
+source: "shadow/store/library/papers/2023/gargari2023-gpt-screening/"
 facets:
   stage: "screen"
   contribution: "evaluation"

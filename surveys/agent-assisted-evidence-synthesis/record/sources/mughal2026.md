@@ -6,7 +6,7 @@ work:
   date: 2026
   arxiv: 2607.05031
 read: full-text
-source: "shadow/library/papers/2026/mughal2026-llm-based-test-oracles/transcript.md"
+source: "shadow/library/papers/2026/mughal2026-test-oracles/transcript.md"
 facets:
   stage: "screen"
   contribution: "evaluation"

@@ -8,7 +8,7 @@ work:
   doi: 10.1016/j.cola.2024.101287
   arxiv: 2307.06464
 read: full-text
-source: "shadow/store/library/papers/2023/syriani2023-assessing-the-ability-of-chatgpt-to-screen-articles-for-systematic-reviews/"
+source: "shadow/store/library/papers/2023/syriani2023-chatgpt-screen/"
 facets:
   stage: "screen"
   contribution: "evaluation"

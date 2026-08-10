@@ -7,7 +7,7 @@ work:
   date: 2021
   doi: 10.1109/seaa53835.2021.00015
 read: full-text
-source: "shadow/library/papers/2021/napoleao2021-automated-support-for-searching-and-selecting-evidence-in-software-engineering/transcript.md"
+source: "shadow/library/papers/2021/napoleao2021-search-select/transcript.md"
 facets:
   stage: "search"
   contribution: "evaluation"

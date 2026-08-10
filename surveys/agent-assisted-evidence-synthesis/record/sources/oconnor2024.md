@@ -7,7 +7,7 @@ work:
   date: 2024
   doi: 10.1186/s13643-024-02666-2
 read: full-text
-source: "shadow/store/library/papers/2024/oconnor2024-large-language-models-updates-and-evaluation-of-automation-tools-for-systematic-reviews/"
+source: "shadow/store/library/papers/2024/oconnor2024-icasr/"
 facets:
   stage: "meta"
   contribution: "evaluation"

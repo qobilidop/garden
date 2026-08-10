@@ -7,7 +7,7 @@ work:
   date: 2024
   doi: 10.31219/osf.io/ju8dk
 read: full-text
-source: "transcript at shadow/library/papers/2024/degen2024-leveraging-artificial-intelligence-for-systematic-reviews/transcript.md"
+source: "transcript at shadow/library/papers/2024/degen2024-fraisr/transcript.md"
 facets:
   stage: "report"
   contribution: "guideline"
