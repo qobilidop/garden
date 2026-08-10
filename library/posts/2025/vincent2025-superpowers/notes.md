@@ -26,7 +26,7 @@ monthly installment in his "how I'm using coding agents" series it is a
 practitioner's field report, not a design document — but it contains the
 earliest widely-read description of a working *skills-that-improve-
 skills* loop, months before the academic versions this library holds
-([[zhang2026-self-harness]], [[zhang2025-agentic-context-engineering]]) put
+([[zhang2026-self-harness]], [[zhang2025-ace]]) put
 numbers on the same ideas.
 
 ## The mechanisms

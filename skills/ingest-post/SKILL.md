@@ -20,10 +20,10 @@ as author. Never trust memory for bibliographic facts.
 
 ## 2. Citekey
 
-Same rule as `../ingest-paper/SKILL.md` §2 — `<lowercase-author><year>-<slug>`
-with URL slug preferred and both candidates normalized. Posts usually take the
-slug branch (`openai2026-ten-advances-in-mathematics`,
-`weng2026-harness`).
+Same rule as `../ingest-paper/SKILL.md` §2 —
+`<lowercase-author><year>-<short-label>`, with an established name first and a
+concise canonical URL slug second. Posts often take the URL-slug branch
+(`weng2026-harness`, `weng2026-scaling-laws`).
 
 ## 3. Capture to tiers
 

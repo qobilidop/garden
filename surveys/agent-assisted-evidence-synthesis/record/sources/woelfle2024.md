@@ -7,7 +7,7 @@ work:
   date: 2024
   doi: 10.1016/j.jclinepi.2024.111533
 read: full-text
-source: "shadow/store/library/papers/2024/woelfle2024-benchmarking-humanai-collaboration/"
+source: "shadow/store/library/papers/2024/woelfle2024-human-ai-appraisal/"
 facets:
   stage: "appraise"
   contribution: "evaluation"

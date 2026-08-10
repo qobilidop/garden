@@ -10,16 +10,45 @@ SHADOW="$(cd "$(dirname "$0")/.." && pwd)/shadow"
 REMOTE="store:"
 MANIFEST="$SHADOW/store.manifest.json"
 
+write_manifest() {
+  local raw sorted
+  raw="$(mktemp)"
+  sorted="$(mktemp)"
+  if ! rclone lsjson -R "$REMOTE" > "$raw"; then
+    rm -f "$raw" "$sorted"
+    return 1
+  fi
+  if ! python3 - "$raw" > "$sorted" <<'PY'
+import json
+import sys
+
+with open(sys.argv[1], encoding="utf-8") as source:
+    records = sorted(json.load(source), key=lambda record: record["Path"])
+
+print("[")
+for index, record in enumerate(records):
+    suffix = "," if index + 1 < len(records) else ""
+    print(json.dumps(record, separators=(",", ":")) + suffix)
+print("]")
+PY
+  then
+    rm -f "$raw" "$sorted"
+    return 1
+  fi
+  mv "$sorted" "$MANIFEST"
+  rm -f "$raw"
+}
+
 case "${1:-}" in
   push)
     rclone copy "$SHADOW/store/" "$REMOTE" --progress
-    rclone lsjson -R "$REMOTE" > "$MANIFEST"
+    write_manifest
     ;;
   pull)  # pull [path] — path relative to store root; omit for everything
     rclone copyto "$REMOTE${2:-}" "$SHADOW/store/${2:-}" --progress
     ;;
   manifest)
-    rclone lsjson -R "$REMOTE" > "$MANIFEST"
+    write_manifest
     ;;
   check)  # verify local cache files all exist intact on the remote
     rclone check "$SHADOW/store/" "$REMOTE" --one-way

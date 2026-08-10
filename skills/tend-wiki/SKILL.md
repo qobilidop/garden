@@ -10,7 +10,7 @@ the library across works, agent-written and human-directed, citing works
 by `[[citekey]]`, no index, no per-page frontmatter. This skill is the
 craft on top of it. The layer's own theory is in the library —
 [[karpathy2026-llm-wiki]] (the compiled layer over raw sources) and
-[[luhmann1981-communicating-with-slip-boxes]] (the store must surprise;
+[[luhmann1981-slip-boxes]] (the store must surprise;
 below critical mass it is a mere container).
 
 ## When a page exists
@@ -63,7 +63,7 @@ below critical mass it is a mere container).
 
 - Transformation, not compression: a section must say something no
   single cited work says — the relations are the content
-  ([[luhmann1981-communicating-with-slip-boxes]]'s surprise criterion
+  ([[luhmann1981-slip-boxes]]'s surprise criterion
   is the layer's standing test). A paragraph that reads as serial
   per-work summaries fails it.
 - Source from the works' notes files; open the shadow transcript only

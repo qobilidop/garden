@@ -24,11 +24,11 @@ wording. Git preserves superseded interpretations.
 Works are cited with manuscript citekeys, which normally match note stems in
 `../sources/`. Four shorter manuscript citekeys map to canonical library notes:
 `kitchenham2007` →
-`kitchenham2007-guidelines-for-performing-systematic-literature-reviews-in-software-engineering`,
+`kitchenham2007-slr-guidelines`,
 `petersen2008` →
-`petersen2008-systematic-mapping-studies-in-software-engineering`,
+`petersen2008-systematic-mapping`,
 `wohlin2014` →
-`wohlin2014-guidelines-for-snowballing-in-systematic-literature-studies-and-a-replication-in-software-engineering`,
-and `page2021` → `page2021-the-prisma-2020-statement`. A number or conclusion
+`wohlin2014-snowballing`,
+and `page2021` → `page2021-prisma`. A number or conclusion
 enters a synthesis only with the scope and caveat carried by its evidence note;
 `../evidence.md` records the claims and manuscript sections that use it.

@@ -80,18 +80,18 @@ strength).
   were deferred to a follow-up paper), and the white-paper genre — no
   peer review, self-reported infra numbers.
 - **Boundary:** stated by the authors (automated evaluators only) and
-  sharpened by [[jiang2026-from-solvers-to-research]] —
+  sharpened by [[jiang2026-solvers-to-research]] —
   score-function-driven exploration is bound to predefined objectives,
   transfers no structure across problems, and invents no concepts; it
   widens search, not understanding. That critique coexists with this
   shelf's strongest counterpoint to it: within evaluator reach, the
   system produced provably correct, humanly-verified new mathematics.
 - **In this library:** in
-  [[liu2026-a-taxonomy-of-self-evolving-agents]]'s taxonomy this is
+  [[liu2026-agent-taxonomy]]'s taxonomy this is
   the canonical artifact-locus system, and its complement is
-  [[hubert2025-olympiad-level-formal-mathematical-reasoning-with-reinforcement-learning]]:
+  [[hubert2025-alphaproof]]:
   AlphaProof searches proof space under a fixed verifier, AlphaEvolve
   searches object space under a fixed scorer — proofs of statements
   versus witnesses for bounds, the two halves of what
-  [[openai2026-ten-advances-in-mathematics]]-style claims must
+  [[openai2026-math-advances]]-style claims must
   eventually integrate.

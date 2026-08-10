@@ -93,7 +93,7 @@ MLE-bench, KernelBench.
 ## Assessment
 
 The strongest of the three [[self-evolving-agents]] pieces in this library:
-where [[liu2026-a-taxonomy-of-self-evolving-agents]] names the harness level
+where [[liu2026-agent-taxonomy]] names the harness level
 and moves on, this is a researcher's deep map of exactly that level, with
 editorial judgments a survey usually omits (SIA's evidence rated
 "provisional" over confounded baselines; Self-Harness flagged for broken
@@ -107,7 +107,7 @@ distillation-not-RSI critique of Autodata).
 - **Era-bound:** the specific system roster, already dense with 2026
   arXiv preprints.
 - **In this library:** it converges from the practitioner side on the
-  same architecture [[gao2025-a-survey-of-self-evolving-agents]]'s safety chapter reaches from the risk
+  same architecture [[gao2025-self-evolving-survey]]'s safety chapter reaches from the risk
   side — evaluation and permissions must live outside the
   self-modification loop. Notably self-describing: the design patterns
   it catalogs — file-system memory, spawned sub-agents, skills — are

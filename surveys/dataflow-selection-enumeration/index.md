@@ -58,10 +58,10 @@ pages where ingested, our evidence notes in the record otherwise).
 
 | Paper | What | Venue · Year | Notes |
 |---|---|---|---|
-| [All-Solution Satisfiability Modulo Theories](https://doi.org/10.1109/ares.2015.14) | AllSMT over designated Boolean coordinates with sampled theory values — the solver-level reduction any enumeration claim is measured against | ARES · 2015 | [[phan2015-all-solution-satisfiability-modulo-theories]] |
+| [All-Solution Satisfiability Modulo Theories](https://doi.org/10.1109/ares.2015.14) | AllSMT over designated Boolean coordinates with sampled theory values — the solver-level reduction any enumeration claim is measured against | ARES · 2015 | [[phan2015-all-smt]] |
 | [Disjoint Partial Enumeration without Blocking Clauses](https://doi.org/10.1609/aaai.v38i8.28652) | Mutually exclusive partial models via chronological backtracking and implicant shrinking; unassigned variables are logical don't-cares, not structurally unobserved sites | AAAI · 2024 | [notes](https://github.com/qobilidop/sys0/blob/main/surveys/dataflow-selection-enumeration/record/sources/spallitta2024disjoint.md) |
 | [Leveraging Decision-DNNF Compilation for Enumerating Disjoint Partial Models](https://doi.org/10.24963/kr.2024/48) | Disjoint covering partial models with polynomial post-compilation delay; a faithful reduction still needs an explicit activity variable | KR · 2024 | [notes](https://github.com/qobilidop/sys0/blob/main/surveys/dataflow-selection-enumeration/record/sources/lagniez2024decisiondnnf.md) |
-| [Disjoint Projected Enumeration for SAT and SMT without Blocking Clauses](https://doi.org/10.1016/j.artint.2025.104346) | The strongest direct solver baseline: projected AllSAT/AllSMT that subsumes the target task after polynomial activity/outcome instrumentation | Artif Intell · 2025 | [[spallitta2024-disjoint-projected-enumeration-for-sat-and-smt-without-blocking-clauses]] |
+| [Disjoint Projected Enumeration for SAT and SMT without Blocking Clauses](https://doi.org/10.1016/j.artint.2025.104346) | The strongest direct solver baseline: projected AllSAT/AllSMT that subsumes the target task after polynomial activity/outcome instrumentation | Artif Intell · 2025 | [[spallitta2024-disjoint-enumeration]] |
 
 ### Compiled decision structures
 
@@ -89,7 +89,7 @@ pages where ingested, our evidence notes in the record otherwise).
 
 | Paper | What | Venue · Year | Notes |
 |---|---|---|---|
-| [Reverse Search for Enumeration](https://doi.org/10.1016/0166-218X%2895%2900026-N) | General memory-efficient output-polynomial enumeration, already instantiated for exact duplicate-free arrangement cells | Discrete Appl Math · 1996 | [[avis1996-reverse-search-for-enumeration]] |
+| [Reverse Search for Enumeration](https://doi.org/10.1016/0166-218X%2895%2900026-N) | General memory-efficient output-polynomial enumeration, already instantiated for exact duplicate-free arrangement cells | Discrete Appl Math · 1996 | [[avis1996-reverse-search]] |
 | [Reverse Search for Parametric Linear Programming](https://doi.org/10.1109/cdc.2006.377799) | Duplicate-free, output-sensitive traversal of every full-dimensional critical region, each basis giving a polyhedral guard plus an affine optimizer | CDC · 2006 | [notes](https://github.com/qobilidop/sys0/blob/main/surveys/dataflow-selection-enumeration/record/sources/jones2006parametric.md) |
 | [Optimal Complexity Reduction of Polyhedral Piecewise Affine Systems](https://doi.org/10.1016/j.automatica.2007.11.027) | Merges cells carrying equal behavior into a smaller exact representation — the precise counterpoint to an observer that keeps distinct outcomes with equal residuals | Automatica · 2008 | [notes](https://github.com/qobilidop/sys0/blob/main/surveys/dataflow-selection-enumeration/record/sources/geyer2008optimal.md) |
 | [An Output-Sensitive Algorithm for Multi-Parametric LCPs with Sufficient Matrices](https://doi.org/10.1090/crmp/048/04) | Generic traversal covering parametric LP and convex parametric QP, with explicit per-output LP-oracle work — the strongest closed output-sensitive bound in that lineage | Polyhedral Computation · 2009 | [notes](https://github.com/qobilidop/sys0/blob/main/surveys/dataflow-selection-enumeration/record/sources/columbano2009sufficient.md) |

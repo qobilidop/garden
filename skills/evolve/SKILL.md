@@ -100,7 +100,7 @@ rollback path.
 
 Design distilled from the library's self-evolving-agents shelf:
 
-- `zhang2025-agentic-context-engineering` — itemized deltas merged
+- `zhang2025-ace` — itemized deltas merged
   conservatively beat monolithic rewrites (context collapse); updates
   without a reliable feedback signal go negative.
 - `zhang2026-self-harness` — evidence bundle → bounded minimal proposals
@@ -108,13 +108,13 @@ Design distilled from the library's self-evolving-agents shelf:
   and validation.
 - `wang2023-voyager` — skills indexed by what they're for; verification,
   not the generating pass's enthusiasm, decides what persists.
-- `gao2025-a-survey-of-self-evolving-agents` — approval gates, audit
+- `gao2025-self-evolving-survey` — approval gates, audit
   trail, rollback live outside the evolving loop; retention is the
   neglected failure mode.
 - `weng2026-harness` — improvement machinery is cheap, benefiting is
   scarce: stay lightweight, log negative results, keep the evaluator
   (the user) outside the loop.
-- `vincent2026-the-therapist-pattern` — a claimed lesson counts only as
+- `vincent2026-therapist-pattern` — a claimed lesson counts only as
   a diff in a versioned surface through the designated writer; "I'll
   remember that" is a red flag.
 - `vincent2026-superpowers-6` — autonomy is earned rung by rung, by

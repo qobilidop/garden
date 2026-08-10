@@ -7,7 +7,7 @@ work:
   date: 2025
   doi: 10.1101/2025.11.03.25339455
 read: full-text
-source: "shadow/store/library/papers/2025/fagerberg2025-dual-model-llm-ensemble-via-web-chat-interfaces-reaches-near-perfect-sensitivity-for-systematic-review-screening/"
+source: "shadow/store/library/papers/2025/fagerberg2025-dual-model-screening/"
 facets:
   stage: "screen"
   contribution: "evaluation"

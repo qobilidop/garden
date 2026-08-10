@@ -41,7 +41,27 @@ function surveyTitle(slug) {
 function libraryFiles() {
   const map = new Map()
   for (const p of globSync('library/**/notes.md', { cwd: repoRoot })) {
-    map.set(basename(dirname(p)), join(repoRoot, p))
+    const key = basename(dirname(p))
+    const file = join(repoRoot, p)
+    const frontmatter = readFileSync(file, 'utf8').match(/^---\n([\s\S]*?)\n---\n/)?.[1] ?? ''
+    const declared = frontmatter.match(/^citekey:\s*(\S+)\s*$/m)?.[1]
+    const match = key.match(/^[a-z][a-z-]*\d{4}-([a-z0-9]+(?:-[a-z0-9]+){0,2})$/)
+    if (!match || match[1].length > 32) {
+      throw new Error(
+        `Invalid library citekey "${key}": expected <author><year>-<label>, ` +
+          'with a lowercase label of at most 32 characters and three tokens',
+      )
+    }
+    if (declared !== key) {
+      throw new Error(
+        `Library citekey mismatch: ${p} declares "${declared ?? '(missing)'}", ` +
+          `but its directory is "${key}"`,
+      )
+    }
+    if (map.has(key)) {
+      throw new Error(`Duplicate library citekey "${key}": ${map.get(key)} and ${file}`)
+    }
+    map.set(key, file)
   }
   return map
 }
@@ -72,7 +92,7 @@ function workTip(file) {
 }
 
 // Display labels: a citekey's author-year prefix is the system's short
-// handle (hubert2025-olympiad-… → hubert2025) — the idiom the notes
+// handle (hubert2025-alphaproof → hubert2025) — the idiom the notes
 // themselves use in prose. Prefix collisions get scholarly a/b suffixes
 // in citekey order. Wiki pages label by their H1 title.
 function citekeyLabels(keys) {

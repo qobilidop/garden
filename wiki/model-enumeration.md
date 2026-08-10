@@ -2,10 +2,10 @@
 
 Model enumeration reports every distinct satisfying object selected by a
 formula and an observation contract. The shelf, by role:
-[[phan2015-all-solution-satisfiability-modulo-theories]] (classic projected
-All-SMT interface), [[avis1996-reverse-search-for-enumeration]] (parent-map
+[[phan2015-all-smt]] (classic projected
+All-SMT interface), [[avis1996-reverse-search]] (parent-map
 enumeration with output-sensitive specializations), and
-[[spallitta2024-disjoint-projected-enumeration-for-sat-and-smt-without-blocking-clauses]]
+[[spallitta2024-disjoint-enumeration]]
 (disjoint projected partial models without accumulated blockers).
 
 ## The observation contract determines what “all” means

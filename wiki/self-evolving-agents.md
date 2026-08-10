@@ -1,16 +1,16 @@
 # Self-evolving agents
 
 Systems that modify themselves from their own experience. Shelf:
-[[gao2025-a-survey-of-self-evolving-agents]] (the field map),
-[[zhang2025-agentic-context-engineering]] (context as playbook),
+[[gao2025-self-evolving-survey]] (the field map),
+[[zhang2025-ace]] (context as playbook),
 [[zhang2026-self-harness]] (harness self-improvement protocol),
 [[wang2023-voyager]] (the founding skill-library exemplar),
-[[liu2026-a-taxonomy-of-self-evolving-agents]] (the three-locus cut),
+[[liu2026-agent-taxonomy]] (the three-locus cut),
 [[weng2026-harness]] (harness engineering as the near-term RSI site),
-[[favaro2026-when-ai-builds-itself]] (frontier-lab evidence of R&D
+[[favaro2026-ai-builds-itself]] (frontier-lab evidence of R&D
 automation),
 [[osmani2026-loop-engineering]] (the loop layer from the product side),
-[[vincent2026-the-therapist-pattern]] and [[vincent2026-superpowers-6]]
+[[vincent2026-therapist-pattern]] and [[vincent2026-superpowers-6]]
 (field reports), [[karpathy2026-llm-wiki]] (the pattern applied to
 knowledge rather than procedures).
 
@@ -23,7 +23,7 @@ one loop shape:
 - **Evidence before proposal.** Improvements start from real traces —
   weakness mining with deterministic failure clustering
   ([[zhang2026-self-harness]]), reflection over actual trajectories
-  ([[zhang2025-agentic-context-engineering]]), session mining at
+  ([[zhang2025-ace]]), session mining at
   production scale ([[vincent2026-superpowers-6]]). An addressability
   filter drops failures that reflect task difficulty or model limits —
   not every failure deserves a patch.
@@ -36,7 +36,7 @@ one loop shape:
   by a verifier, not the generating pass — Voyager's self-verification
   critic was its single most valuable feedback type; ACE's merge is
   deterministic code no LLM touches; Self-Harness accepts only
-  non-regressing candidates; [[gao2025-a-survey-of-self-evolving-agents]]
+  non-regressing candidates; [[gao2025-self-evolving-survey]]
   reaches the same rule from the risk side (evaluation and permissions
   outside the loop, approval gates, rollback). By mid-2026 the rule
   ships as a consumer primitive: [[osmani2026-loop-engineering]]'s tour
@@ -45,7 +45,7 @@ one loop shape:
   model other than the one doing the work.
 - **Receipts.** A claimed lesson counts only as a diff in a versioned,
   inspectable surface through the designated writer
-  ([[vincent2026-the-therapist-pattern]]); audit records name behavior,
+  ([[vincent2026-therapist-pattern]]); audit records name behavior,
   surface, evidence, and validation ([[zhang2026-self-harness]]).
 - **Negative results are logged, not discarded** — rejected proposals,
   provably dead ideas, closed leads ([[vincent2026-superpowers-6]],
@@ -53,13 +53,13 @@ one loop shape:
 
 ## What evolves — the loci
 
-[[gao2025-a-survey-of-self-evolving-agents]] cuts four ways (weights,
-context, tools, architecture); [[liu2026-a-taxonomy-of-self-evolving-agents]]
+[[gao2025-self-evolving-survey]] cuts four ways (weights,
+context, tools, architecture); [[liu2026-agent-taxonomy]]
 coarsens to model/harness/artifact and adds the artifact as a
 first-class locus (its canonical exemplar, [[novikov2025-alphaevolve]],
 is now in the library: evolution over programs under a fixed scorer,
 with MAP-elites diversity and verification-before-persistence at
-population scale); [[vincent2026-the-therapist-pattern]] names one the
+population scale); [[vincent2026-therapist-pattern]] names one the
 taxonomies miss (identity/persona); [[karpathy2026-llm-wiki]] shows the
 same loop with *knowledge* as the evolving artifact — compile sources
 into a maintained wiki instead of re-retrieving, with the Memex's
@@ -81,7 +81,7 @@ does the loop close.
 - **Retention is the neglected dimension.** Nearly all benchmarks reset
   agent state between tasks, so the one thing that distinguishes
   self-evolving agents — accumulation and its decay — goes unmeasured
-  ([[gao2025-a-survey-of-self-evolving-agents]]).
+  ([[gao2025-self-evolving-survey]]).
 - **The evaluator is code too.** Superpowers' Codex evals showed zero
   improvement because an isolation bug benchmarked the old version —
   an unverified gate passes everything.
@@ -95,7 +95,7 @@ ladder's floor is now mainstream practice:
 [[osmani2026-loop-engineering]]'s scheduled triage-and-fix loops run
 the work autonomously but never update themselves — delegation without
 self-improvement, the substrate the rest of the shelf evolves.
-At frontier-lab scale, [[favaro2026-when-ai-builds-itself]] supplies the
+At frontier-lab scale, [[favaro2026-ai-builds-itself]] supplies the
 same distinction with internal operational evidence: code volume and
 fixed-goal experiment execution rose sharply, while humans still chose
 research problems and scoring rubrics, and review became the bottleneck.
@@ -104,7 +104,7 @@ selects moments where the human had room to improve, so they show a rung
 being climbed, not research-taste parity. Under the field map's
 experience-dependent, persistent, self-initiated test, this is accelerated
 delegation inside AI R&D, not yet a self-evolving system.
-[[vincent2026-the-therapist-pattern]] explores replacing human gates
+[[vincent2026-therapist-pattern]] explores replacing human gates
 with structural internal ones (sole-writer roles, time as a gate) — a
 philosophical fork from the survey's human-approval checklist worth
 watching.

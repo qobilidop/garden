@@ -2,7 +2,7 @@
 
 Symbolic execution runs programs over symbolic inputs and accumulates
 constraints that describe sets of concrete behaviors. The shelf, by role:
-[[baldoni2016-a-survey-of-symbolic-execution-techniques]] (field architecture
+[[baldoni2016-symbolic-execution]] (field architecture
 and taxonomy), [[sen2015-multise]] (incremental path merging through guarded
 value summaries), and [[yang2026-forbench]] (hardware symbolic simulation
 that forks on testbench decisions rather than design branches).
@@ -47,9 +47,9 @@ asked eagerly or lazily, or avoided through concretization. These are not
 interchangeable optimizations: each shifts precision and cost between the
 executor, memory model, and solver.
 
-[[phan2015-all-solution-satisfiability-modulo-theories]] makes the observation
+[[phan2015-all-smt]] makes the observation
 boundary explicit by enumerating theory-consistent valuations of designated
-Boolean coordinates. [[spallitta2024-disjoint-projected-enumeration-for-sat-and-smt-without-blocking-clauses]]
+Boolean coordinates. [[spallitta2024-disjoint-enumeration]]
 can instead emit a disjoint cover of projected partial models. Neither solver
 contract decides which program events matter: branch variables, output bits,
 and structurally observed selections induce different partitions. The solver

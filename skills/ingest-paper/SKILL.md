@@ -40,23 +40,26 @@ rclone `store:` remote; `./dev.sh <cmd>` provides the pinned toolchain
 
 ## 2. Citekey
 
-`<lowercase-first-author-surname><year>-<slug>`. Slug precedence, first
-match wins:
+`<lowercase-first-author-surname><year>-<short-label>`. The label is at most
+32 characters and three hyphen-separated tokens. Choose it in this order:
 
-1. The canonical URL's slug, when the work is web-native and the URL ends
-   in readable words (not an id, date, or hash) — the author's own
-   compression of their title. Take the shorter of URL slug and title form.
-   Example: `openai2026-ten-advances-in-mathematics`.
-2. The kebab-cased title, truncated at the first colon. Example:
-   `gao2025-a-survey-of-self-evolving-agents`.
+1. The work's established name or acronym, when one exists: `alphageometry`,
+   `alphaproof`, `gpt-f`, `prisma`, `ace`.
+2. A concise canonical URL slug, when it names the work rather than an id,
+   date, or generic page type: `harness`, `scaling-laws`.
+3. One to three distinctive title words: `symbolic-execution`,
+   `dual-model-screening`, `slr-guidelines`.
 
-Normalize candidates before comparing: strip leading date prefixes from
-URL slugs (`2026-07-04-harness` → `harness`) and trailing reference
-identifiers from titles (issue numbers like `#14576`, version tags, bare
-numbers) — those stay in `work.title`; restore one to the slug only to
-break a collision.
+Drop articles and generic framing (`a survey of`, `guidelines for`,
+`towards`, `an approach to`). Strip leading dates from URL slugs
+(`2026-07-04-harness` → `harness`) and keep issue numbers, versions, and bare
+reference identifiers in `work.title`, not the label. If the candidate
+collides, add or replace one meaningful distinguishing word while staying
+within the limits; never append an arbitrary `a`/`b`.
 
-The citekey determines every path below; no lookup tables.
+The citekey is stable after ingestion and determines every path below; no
+lookup tables. The site checks its shape, length, token count, path/frontmatter
+agreement, and uniqueness. Label choice remains a human judgment.
 
 ## 3. Capture to tiers
 

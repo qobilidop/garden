@@ -26,7 +26,7 @@ from scratch rather than extending it.
 - **website** — its own repo, rendering from sys rather than living in it.
 
 ```
-sys/library/papers/1986/hamming1986-you-and-your-research/   # notes, synthesis
+sys/library/papers/1986/hamming1986-your-research/   # notes, synthesis
 sys/shadow/library/papers/1986/hamming1986-.../              # transcript
 sys/shadow/store/library/papers/1986/hamming1986-.../        # pdf
 ```

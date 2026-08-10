@@ -1,13 +1,13 @@
 # Research craft
 
 The deliberate management of knowledge work. Shelf:
-[[hamming1986-you-and-your-research]] (career as a control system),
-[[alon2009-how-to-choose-a-good-scientific-problem]] (problem choice
-as a procedure), [[keshav2007-how-to-read-a-paper]] (reading as
-budgeted passes), [[luhmann1981-communicating-with-slip-boxes]] (the
+[[hamming1986-your-research]] (career as a control system),
+[[alon2009-problem-choice]] (problem choice
+as a procedure), [[keshav2007-read-paper]] (reading as
+budgeted passes), [[luhmann1981-slip-boxes]] (the
 note network as a communication partner), and
 [[karpathy2026-llm-wiki]] (knowledge as a compiled, maintained
-artifact), with [[favaro2026-when-ai-builds-itself]] as frontier-lab
+artifact), with [[favaro2026-ai-builds-itself]] as frontier-lab
 evidence that execution cheapens before problem choice and judgment.
 
 ## Craft is scheduled, not trait-based
@@ -19,7 +19,7 @@ what the field is becoming, a warm queue of 10–20 attackable important
 problems. Keshav's reading skill is not diligence but a pass structure
 with explicit exit decisions after each. Karpathy's knowledge base is
 not discipline but standing operations (ingest, query, lint) encoded in
-a schema document. [[alon2009-how-to-choose-a-good-scientific-problem]]
+a schema document. [[alon2009-problem-choice]]
 supplies the selection procedure Hamming's ritual gestures at: rank
 candidates on feasibility × interest, keep only the Pareto front,
 weight by career stage — and enforce a three-month no-commitment rule,
@@ -69,7 +69,7 @@ exit decisions, write for the reader's first pass.
 
 Hamming manages accumulation *in the researcher* — subconscious
 loading, ambiguity tolerance (log every misfit, as Darwin did), fault
-inventories. [[luhmann1981-communicating-with-slip-boxes]] is the
+inventories. [[luhmann1981-slip-boxes]] is the
 historical proof the externalized version works: twenty-six years of
 a note network run as a *communication partner*, with fixed
 addresses, explicit links and backlinks, no privileged notes, and a
@@ -88,7 +88,7 @@ re-implementation diff is what separates synthesis from summary.
 ## Local instantiation
 
 This library runs all three: pass-1's five Cs are the stated bar for a
-notes file's frontmatter-plus-opening ([[keshav2007-how-to-read-a-paper]]
+notes file's frontmatter-plus-opening ([[keshav2007-read-paper]]
 is cited in the ingest skills' quality bar); transformation-not-
 compression is the pass-3 standard; the shadow/notes/wiki tiers are
 [[karpathy2026-llm-wiki]]'s raw/wiki layers; and /evolve is Great

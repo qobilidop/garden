@@ -116,13 +116,13 @@ no method here to fail, only a shape to instantiate.
 
 ## Relations in this library
 
-- [[zhang2025-agentic-context-engineering]] — same instinct (compile
+- [[zhang2025-ace]] — same instinct (compile
   experience into a persistent, incrementally-updated artifact rather
   than re-derive), but ACE's warning applies: updates without a
   reliable feedback signal degrade. The wiki's implicit feedback is the
   human reading every page in Obsidian; unsupervised batch-ingest
   weakens exactly that check.
-- [[vincent2026-the-therapist-pattern]] — the ownership split is the
+- [[vincent2026-therapist-pattern]] — the ownership split is the
   same: the LLM is the designated writer to a versioned surface, the
   human directs. Karpathy's rule that the human rarely edits the wiki
   directly is that pattern at wiki scale.
