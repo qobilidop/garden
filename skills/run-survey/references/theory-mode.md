@@ -3,8 +3,9 @@
 Load this when the survey's subject is a formal problem and the
 synthesis is a unified framework, not only a facet taxonomy. The
 reference implementation is dataflow-selection-enumeration
-(manuscript §3 and §6–§7 as rendered,
-`record/syntheses/unified-framework/`, `record/claims.md`). Its moves:
+(manuscript sections `sec-framework`, `sec-algorithms`, `sec-composition`,
+`sec-complexity`, and `sec-synthesis`;
+`record/syntheses/unified-framework/`; `record/claims.md`). Its moves:
 
 - **Problem before solvers.** Open with a formal model of the object
   the literatures argue about, independent of any solver or data

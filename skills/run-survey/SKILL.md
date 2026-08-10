@@ -270,7 +270,9 @@ surfaces.
   accountable human author; the `author-note` title-page footnote
   carries the four-part disclosure: human accountability, the named
   system/model and its scope of assistance, "AI output is not
-  treated as evidence", and the public-record pointer.
+  treated as evidence", and the public-record pointer. This note is
+  the canonical home for those four facts; method and validity prose
+  point back instead of restating them.
 - Name split section files `NN-short-stem.typ`. When the top-level
   section has a label, use the identical stem in `<sec-short-stem>`;
   shorten only when the result remains an unambiguous complete word.
@@ -281,8 +283,9 @@ surfaces.
   arithmetic must reconcile, stating merges and uncataloged
   exclusions; findings
   sections; synthesis and open problems with a findings table;
-  a validity-threats passage stating what the AI-assisted passes are
-  and are not (repeated checks, not independent human reviewers);
+  a validity-threats passage limited to procedure-specific AI facts
+  and consequences — for example pass roles, discarded outputs, and
+  why repeated checks are not independent human reviewers;
   limitations; conclusion. Numbers only from the record; superlatives
   scoped ("among the deep reads"); preprint and adjudication caveats
   attached wherever the number appears, including the abstract.

@@ -1,11 +1,11 @@
 = How This Survey Was Made <sec-method>
 
-The survey was compiled with LLM-agent assistance under human
-direction: agent passes performed search, screening, classification,
-and deep reading; the author set the protocol, approved the scheme,
-and gated every stage. It has run in two waves — an initial campaign
-closing 2026-08-08 and an update batch on 2026-08-09 — and the map is
-their reconciled union.
+Agent passes performed search, screening, classification, and deep
+reading under an author-set protocol and human gates. The survey ran
+in two waves — an initial campaign closing 2026-08-08 and an update
+batch on 2026-08-09 — and the map is their reconciled union. The
+title-page note gives the full authorship, assistance, evidence-use,
+and public-record disclosure.
 
 == The initial campaign
 

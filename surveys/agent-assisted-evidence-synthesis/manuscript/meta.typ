@@ -17,7 +17,9 @@
   deep-read passes delegated to Claude Sonnet 5 and Claude Haiku 4.5.
   The author directed every pass, approved the protocol, gated the
   update before any record state advanced, and takes responsibility
-  for the content; the minimal public record is linked below.
+  for the content. AI output is not treated as evidence; literature
+  claims rest on the cited sources. The minimal public record is
+  linked below.
 ]
 #let draft = "Draft 2026-08-09"
 #let landing = "https://qobilidop.github.io/sys0/surveys/agent-assisted-evidence-synthesis/"
