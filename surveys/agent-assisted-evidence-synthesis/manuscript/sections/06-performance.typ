@@ -1,4 +1,4 @@
-= RQ2 — Reliability: common labels, heterogeneous evidence <sec-rq2>
+= RQ2 — Performance and measurement <sec-performance>
 
 The abstract-coded map labels 303 of 776 works `human-agree` and 158
 `benchmark` (@tab-map). These labels record the comparison a work
@@ -22,9 +22,10 @@ tool against Cochrane judgments, Hirt et al. report Cohen's κ of 0.60
 for allocation concealment, 0.52 for randomization, 0.43 for blinding
 of personnel, and 0.04 — near chance — for blinding of outcome
 assessors, alongside sensitivity spanning 0.44–0.88 and positive
-predictive value 0.25–0.79 @hirt2021[abstract-only]. Which stratum and
-which metric a study reports can therefore move the verdict from
-near-chance to moderate agreement within a single tool and corpus.
+predictive value 0.25–0.79 @hirt2021[abstract-only]. Which domain is
+reported can therefore move the agreement verdict from near-chance to
+moderate within a single tool and corpus; sensitivity and predictive
+value expose different failure modes in the same data.
 
 *What individual studies show.* In SESR-Eval, no nondegenerate operating
 point among nine tested models across 24 SE reviews met the authors'
@@ -55,13 +56,22 @@ at \~87–92% (range 42–100%). #cite(<gartlehner2025>, form: "prose") cite
 prior reports that human extraction errors reach 50% of data elements.
 A rare RCT-grade automation study found noninferiority, not superiority,
 with inconclusive time savings @arno2022[abstract-only]; it remains
-the only randomized evaluation among the 31 deep reads after the
-2026-08-09 update. The map's facets do not record study design, so we
+the only randomized evaluation among the selected evidence notes. The map's
+facets do not record study design, so we
 did not check the wider catalog for others. Agent evidence
 should be calibrated against these imperfect baselines, not an idealized
 perfect reviewer.
 
-*Ensemble gains, in incommensurable units.* Two update deep reads
+*The metric prescription remains unsettled.* Oami et al. treat specificity as
+the deciding workload metric when sensitivity is comparable @oami2025.
+Madeyski et al. reject specificity as a primary metric under class imbalance —
+an exclude-everything classifier can score it perfectly — and instead require
+the confusion matrix, lost evidence, and MCC or cost-weighted MCC
+@madeyski2025. Both positions reject recall alone, but they prescribe different
+ways to trade missed evidence against downstream screening work. This survey
+does not resolve that methodological disagreement.
+
+*Ensemble gains, in incommensurable units.* Two selected deep reads
 report ensembles beating their own best member, and their effect sizes
 cannot be placed on one scale. A cross-vendor three-agent vote reached
 mean average precision 0.341 against constituents at 0.271, 0.266, and
@@ -80,8 +90,8 @@ triage F1 to about 98.5% at roughly 99% recall while
 deciding only about half the corpus @knafou2023, just as
 consistency-gated appraisal reached accuracy whose confidence
 interval merely overlapped human performance, and only on the items it
-did not defer @woelfle2024. Accuracy bought with deferred
-coverage now appears at two stages and in two technology generations,
+did not defer @woelfle2024. Higher conditional performance bought with deferred
+coverage appears at two stages and in two technology generations,
 which makes it a shape worth naming — though the two designs share no
 corpus, metric, or model family, so this is a recurring pattern rather
 than a replication.

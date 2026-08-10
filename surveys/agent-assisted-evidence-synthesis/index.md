@@ -1,17 +1,18 @@
 # Agent-Assisted Evidence Synthesis: A Survey
 
-An exploratory systematic map of AI-assisted and automated evidence
-synthesis — systematic reviews, maps, and related secondary studies —
-in the LLM era: 776 included works (745 included + 31 deep-read) in a
-1,975-row catalog spanning the original integrity-corrected campaign
-and the human-gated 2026-08-09 update batch, classified under a
-four-dimensional taxonomy, with selected anchors curated below.
+## Summary
 
-**Read:** [manuscript (HTML)](manuscript.html) ·
-[manuscript (PDF)](manuscript.pdf)
+A dated, relevance-capped exploratory systematic map of AI assistance across
+evidence synthesis: 776 include-level works in a 1,975-row catalog covering
+2020–2026, with structured evidence notes for 31 selected works (25 full-text,
+5 abstract-only, 1 secondary-only). It maps workflow stages, contribution and evidence types,
+and settings; synthesizes performance measurement, reporting norms, and multi-model
+designs; and makes no bounded mapping-closure claim, with 76 rows still parked.
+
+**Read:** [HTML](manuscript.html) · [PDF](manuscript.pdf)
 
 **Survey record:**
-[method, searches, catalog, evidence notes](https://github.com/qobilidop/sys0/tree/main/surveys/agent-assisted-evidence-synthesis/record)
+[method, catalog, and evidence](https://github.com/qobilidop/sys0/tree/main/surveys/agent-assisted-evidence-synthesis/record)
 — searched through 2026-08-09.
 
 **Topic context:** [[survey-methodology]]
@@ -69,14 +70,14 @@ evidence notes in the record otherwise).
 |---|---|---|---|
 | [Ensemble of Deep Learning Language Models for Living Systematic Reviews](https://doi.org/10.1186/s13643-023-02247-9) | Five same-family BERT classifiers: configuration reported, no diversity or correlation statistic measured anywhere; unanimity plus a confidence threshold trades coverage for accuracy — ~98.5% F1 on ~50% of records, against one crowdsourced annotation team's labels | Syst Rev · 2023 | [notes](https://github.com/qobilidop/sys0/blob/main/surveys/agent-assisted-evidence-synthesis/record/sources/knafou2023.md) |
 | [Dual-Model LLM Ensemble Reaches Near-Perfect Sensitivity for Screening](https://doi.org/10.1101/2025.11.03.25339455) | Preprint: cross-vendor OR ensemble reached 99.7% sensitivity on author-adjudicated labels (94.0–94.5% on original labels); no family-diversity ablation | medRxiv · 2025 | [[fagerberg2025-dual-model-llm-ensemble-via-web-chat-interfaces-reaches-near-perfect-sensitivity-for-systematic-review-screening]] |
-| [LLM-Based Multiagent Collaboration for Abstract Screening](https://doi.org/10.1093/biomethods/bpag006) | The set's only measured inter-agent diversity — Spearman 0.48–0.56 among three cross-vendor agents, which a debate round raised while losing the ensemble's edge; gains are over the best single agent on a benchmark's original Cochrane inclusion labels, and vendor, scale, and training data vary together, so no factor is isolated | Biol Methods Protoc · 2026 | [notes](https://github.com/qobilidop/sys0/blob/main/surveys/agent-assisted-evidence-synthesis/record/sources/akinseloyin2026.md) |
+| [LLM-Based Multiagent Collaboration for Abstract Screening](https://doi.org/10.1093/biomethods/bpag006) | The only selected evidence record measuring inter-agent diversity — Spearman 0.48–0.56 among three cross-vendor agents, which a debate round raised while losing the ensemble's edge; gains are over the best single agent on a benchmark's original Cochrane inclusion labels, and vendor, scale, and training data vary together, so no factor is isolated | Biol Methods Protoc · 2026 | [notes](https://github.com/qobilidop/sys0/blob/main/surveys/agent-assisted-evidence-synthesis/record/sources/akinseloyin2026.md) |
 | [A PRISMA-Aligned Agentic Framework for Medical Systematic Reviews](https://doi.org/10.64898/2026.07.30.26359375) | Preprint evaluated on an author-built benchmark: decomposition, structured artifacts, human review, and no redundancy | medRxiv · 2026 | [notes](https://github.com/qobilidop/sys0/blob/main/surveys/agent-assisted-evidence-synthesis/record/sources/huang2026.md) |
 
 ### Norms, reporting, and evaluation methodology
 
 | Paper | What | Venue · Year | Notes |
 |---|---|---|---|
-| [Guidance for Using AI for Title and Abstract Screening](https://doi.org/10.1186/s12874-021-01451-2) | Pre-LLM guidance; the AI-as-secondary-reviewer role | BMC Med Res Methodol · 2021 | [notes](https://github.com/qobilidop/sys0/blob/main/surveys/agent-assisted-evidence-synthesis/record/sources/hamel2021.md) |
+| [Guidance for Using AI for Title and Abstract Screening](https://doi.org/10.1186/s12874-021-01451-2) | Pre-LLM guidance that rejects fully autonomous thresholding and separately risk-ranks post-truncation options | BMC Med Res Methodol · 2021 | [notes](https://github.com/qobilidop/sys0/blob/main/surveys/agent-assisted-evidence-synthesis/record/sources/hamel2021.md) |
 | [Responsible Integration of AI in Rapid Reviews](https://doi.org/10.1002/cesm.70063) | Cochrane Rapid Reviews position statement, endorsing RAISE | Cochrane Ev Synth · 2025 | [notes](https://github.com/qobilidop/sys0/blob/main/surveys/agent-assisted-evidence-synthesis/record/sources/gartlehner2025.md) |
 | [Best Practice Methods for Living Evidence Synthesis: An International Modified Delphi](https://doi.org/10.1101/2025.11.07.25339719) | Preprint: a 29-expert, three-round Delphi on living-evidence practice; by the authors' own account consensus was lowest on actionable automation use and highest on general statements, and no voted statement adjudicates AI's reviewer role | medRxiv · 2025 | [notes](https://github.com/qobilidop/sys0/blob/main/surveys/agent-assisted-evidence-synthesis/record/sources/golob2025.md) |
 | [Leveraging AI for Systematic Reviews: The FRAISR Framework](https://doi.org/10.31219/osf.io/ju8dk) | Preprint: per-stage machine-readable reporting framework | OSF · 2024 | [notes](https://github.com/qobilidop/sys0/blob/main/surveys/agent-assisted-evidence-synthesis/record/sources/degen2024.md) |

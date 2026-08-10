@@ -17,10 +17,9 @@ object nouns vary as much: @kitchenham2007 governs the systematic
 literature review and admits mapping studies only by contrast, while
 @petersen2008 argues the systematic map is a genre in its own right;
 @page2021 governs systematic reviews and treats *living* as a mode
-rather than a genre. This survey is itself an updatable systematic
-map in @petersen2008's sense, and it was retitled during its
-2026-08-09 update to name the umbrella rather than the dominant genre
-under it.
+rather than a genre. This survey is an updatable systematic map in
+@petersen2008's sense: _evidence synthesis_ names its subject, while
+_systematic map_ names its study type.
 
 *Stages.* We use six: _search_ (query design and study
 identification), _screening_ (title/abstract and full-text selection),
@@ -37,12 +36,9 @@ development, registration, discrepancy resolution, or publication
 update are stages of their own — not disputes about what the shared
 stages are named.
 
-The vocabulary findings in the rest of this section rest on the
-twenty-five evidence notes read when the survey's terminology
-synthesis was drafted; appraisal-stage notes added afterwards have not
-been re-tested against them. An earlier version of this survey
-asserted that stage vocabulary splits along community lines. Tested term by term against the selected
-notes, that does not survive: both communities use _screening_ and
+The vocabulary comparison draws on the sources cited below and the method
+canon; it is not an audit of every selected note. Those sources do not support
+a community-specific split in stage vocabulary: both communities use _screening_ and
 _selection_ (the distinction is stage-outcome versus operation, not
 medicine versus software engineering), and no extraction-versus-
 collection dispute appears. The one community difference we can put a
@@ -54,7 +50,7 @@ One genuine term split does survive that test, and it sits at
 appraisal.
 The software-engineering canon says quality assessment
 @kitchenham2007 @vandinter2021; the Cochrane line says risk of bias
-@arno2022 @huang2026; and a third sense scores appraisal instruments
+@arno2022 @hirt2021 @rose2025 @huang2026; and a third sense scores appraisal instruments
 on reviews and trials rather than judging bias at all — PRISMA,
 AMSTAR, and PRECIS-2 in @woelfle2024. Our single `appraise` facet
 spans all three, so a row coded `appraise` should not be read as a

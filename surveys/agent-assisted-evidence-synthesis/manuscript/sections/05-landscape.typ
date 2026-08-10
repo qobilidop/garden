@@ -1,4 +1,4 @@
-= RQ1 — Landscape: primary-focus coding of the retained map <sec-rq1>
+= RQ1 — Landscape of the retained map <sec-landscape>
 
 #figure(
   table(
@@ -25,29 +25,17 @@
     evidence labels are not quality assessments.],
 ) <tab-map>
 
-@tab-map summarizes the map after both waves. Screening is the
+@tab-map summarizes the retained map. Screening is the
 primary-focus label for 256 of 776 works, about a third; reporting (23)
 and appraisal (33) remain the smallest categories. The map also contains
-47 guideline-contribution works and 96 end-to-end rows, categories
-absent from van Dinter et al.'s 2006–2020 corpus @vandinter2021. By
+47 guideline-contribution works and 96 end-to-end rows. Van Dinter et al.'s
+differently scoped 2006–2020 review has no directly comparable categories for
+those values @vandinter2021. By
 primary contribution, evaluation/benchmark works are most common (363),
 followed by methods (171), systems/tools (132), positions (63), and
 guidelines (47). These are unvalidated abstract-level labels, so their
 exact differences describe the retained coding rather than population
 prevalence.
-
-The 2026-08-09 update grew the map by about a fifth without changing
-its shape: every stage grew, the pipeline-stage ordering is unchanged,
-and screening's share moved from 33.4% to 33.0%. The only rank change
-is that `meta`, which is not a pipeline stage, broke a tie with
-`extract`. We do not read the per-cell growth
-rates as signal. The update's searches were directed — new genre
-vocabulary, citation chases seeded from twelve designated works, and a
-re-screen of parked rows — so a cell's growth measures where we looked,
-not what the field produced. One shift is worth naming against
-ourselves: rows coded `none` on the evidence facet grew far faster than
-rows recording any comparison, so the enlarged map records
-proportionally *less* comparison evidence than before, not more.
 
 Among the deep reads, MedSR-Copilot @huang2026 is a preprint evaluated
 on its authors' own benchmark. Its four subagents, fine-tuned
@@ -59,7 +47,7 @@ Its tested ablations attribute −14.9 percentage points to removing
 two-stage extraction, −7.6 to removing tournament reranking, and −3.3
 to removing retrieval augmentation (its baselines were author-run);
 human review and redundancy were not ablated, so the study does not
-establish either as the causal source of reliability. Its screening F1
+establish either as the causal source of performance. Its screening F1
 of about 0.44–0.51 also qualifies the meaning of "end-to-end." In Song
 et al.'s 34-tool living-evidence inventory, one tool served the
 publication-update phase; the authors warn that their "living evidence"

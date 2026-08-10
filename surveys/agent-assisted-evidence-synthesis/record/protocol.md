@@ -1,250 +1,140 @@
 # Survey protocol
 
-The rules of this survey, always in their current form; the README
-is the map and the operating procedure. The original campaign
-predates this document — it was reconstructed from the campaign's
-retained rules on 2026-08-09. Material method changes update these
-rules in place and are logged in plain language in `status.md`'s
-Method changes section (append-only), with event-level audit rows in
-`log.tsv`.
+This file records only choices specific to this survey. The current
+`run-survey` skill is canonical for shared search, screening, snowballing,
+logging, evidence, update, and bounded-closure procedure. Local commands and
+file ownership are in `README.md`; current state is in `status.md`; event
+history is in `log.tsv`; current interpretation is in `syntheses/`.
 
 ## Objective and study type
 
-Maintain an exploratory systematic map of AI-assisted and automated
-methods, systems, evaluations, benchmarks, and guidance for
-secondary studies (systematic reviews, maps, and related evidence
-syntheses). The search was motivated by LLMs and agents but its
-model-side vocabulary also admitted generic automation, artificial
-intelligence, machine learning, deep learning, and neural methods;
-the map therefore includes some narrow-ML lineage and is not an
-LLM-only denominator. Facets are single-pass abstract-level coding,
-not risk-of-bias or certainty assessments.
+Maintain an exploratory, LLM-centered systematic map of AI-assisted methods,
+systems, evaluations, benchmarks, and guidance for evidence synthesis. The
+subject includes systematic reviews, systematic maps, scoping reviews, rapid
+reviews, and living evidence synthesis. Adjacent AI, ML, deep-learning, and
+automation work can enter through screening and citation chasing, but the
+standing queries do not support a comprehensive broader-automation denominator.
+The survey performs no formal risk-of-bias appraisal.
 
-- **Window:** 2020-01-01 through the recorded cutoff, English only.
-  Earlier lineage enters through existing reviews.
-- **Genre limits:** relevance-sorted searches capped at 50 results;
-  counts describe the retained catalog, not the complete literature.
+## Research questions
 
-## Search rules
+- **RQ1:** How are retained works distributed across workflow stage,
+  contribution type, evidence type, and setting?
+- **RQ2:** What do the selected evidence notes show about performance
+  measurement and reported results?
+- **RQ3:** What norms and disclosure instruments appear among the selected
+  evidence notes?
+- **RQ4:** Among the selected evidence notes, which designs address reviewer
+  independence and multi-model ensembling?
 
-1. Run one request for each distinct qid in `queries.tsv`, using its
-   last query text and the source template below. Do not replay
-   historical FAILED rows as separate queries.
-2. Fetch the inclusive interval from each query's `last_reconciled`
-   date (the window start, 2020-01-01, for a query never yet
-   reconciled) through a new explicit upper cutoff — the shared
-   update tool stages exactly this. Post-filter every source to
-   `from_date <= publication_date <= new_cutoff`; arXiv requires
-   this locally because its template has no date parameter. The
-   inclusive boundary day is absorbed by identifier/title
-   deduplication.
-3. A request gets at most three attempts, separated by 10 and 30
-   seconds. Append one log row per attempt with the same qid/date. A
-   terminal failure is `FAILED:<HTTP/status reason>` and is
-   disclosed in the wave ledger and manuscript limitations; it is
-   never counted as a successful query.
-4. Retain the 50-result, relevance-sorted cap unless an update
-   chooses and records a different limit. The cap is a coverage
-   limitation, not a claim of saturation.
+RQ4 is exploratory: the standing searches and taxonomy have no independence
+facet, so the survey reports only what appears in the selected evidence notes and
+makes no literature-wide absence claim.
 
-Source templates (the shared search clients in
-`skills/run-survey/scripts/` implement them):
+## Scope and discovery choices
 
-- OpenAlex: `api.openalex.org/works?filter=title_and_abstract.search:<q>,from_publication_date:<start>,to_publication_date:<end>&per-page=50&sort=relevance_score:desc`
-- Semantic Scholar: `api.semanticscholar.org/graph/v1/paper/search?query=<q>&year=<startyear>-<endyear>&limit=50&fields=title,year,venue,abstract,externalIds,url`
-- Crossref: `api.crossref.org/works?query.bibliographic=<q>&filter=from-pub-date:<start>,until-pub-date:<end>&rows=50&select=DOI,title,issued,container-title,abstract`
-- arXiv: `export.arxiv.org/api/query?search_query=<q>&start=0&max_results=50&sortBy=relevance` followed by the exact local date post-filter
+- **Window:** 2020-01-01 through the recorded cutoff, English only. Earlier
+  method foundations and pre-LLM lineage enter through selected reviews and
+  method-canon sources, not the map denominator.
+- **Sources:** OpenAlex, Crossref, Semantic Scholar, and arXiv. Exact standing
+  searches, source-native syntax, limits, and reconciliation dates live only
+  in `queries.tsv`.
+- **Depth:** relevance-sorted query results are capped at 50. This produces a
+  bounded catalog, not a completeness or saturation claim.
+- **Citation filter:** backward and forward chases first require a review-genre
+  title token (`review|screening|synthesis|extraction|meta-analys|survey|systematic|evidence|literature|prisma|appraisal`),
+  then a model/automation token in the reconstructed title and abstract
+  (`large language model|language model|llm|gpt|agent|automat|artificial intelligence|machine learning|deep learning|neural|ai|genai|gai|generative ai|foundation model`).
+  Missing abstracts are parked rather than silently rejected.
+- **Defective bibliographies:** an empty, truncated, or largely unresolved
+  citation-index bibliography is replaced by the primary version's
+  publisher-deposited reference list and marked `primary-complete` in
+  `log.tsv`.
 
-## Key and version rules
+The title-first citation filter is a deliberate recall bound: a relevant
+abstract whose title carries no genre term is removed before its abstract is
+read. The initial campaign's exact model-side vocabulary and candidate-level
+provenance were not retained. Those are permanent historical limitations, not
+properties to reconstruct from memory.
 
-Canonical keys are lowercase `doi:<doi>` or `arxiv:<id>`; use
-`t:<title-slug>` only when neither exists. Normalize as follows:
+## Selection boundaries
 
-1. Strip `https://doi.org/`, `http://dx.doi.org/`, and bare `doi:`
-   from a DOI, percent-decode it, trim whitespace, and lowercase it.
-2. Collapse `https://arxiv.org/abs/<id>`, `arxiv:<id>`, and
-   arXiv-issued DOI forms to `arxiv:<id>`; strip a trailing version
-   suffix (`vN`).
-3. For a `t:` fallback, Unicode-NFKD normalize the full title, drop
-   combining marks, lowercase, keep only ASCII alphanumerics, and
-   truncate to 80 characters.
-4. `legacy:` is reserved for an already-retained malformed historical
-   alias whose identity cannot be represented without colliding with
-   its canonical row; never mint it for a new candidate.
+Include a peer-reviewed work or preprint whose central subject is an
+AI-assisted or automated contribution to one or more evidence-synthesis stages,
+or a method/guidance work needed to answer an RQ.
 
-Examples: `https://doi.org/10.2196/48996` → `doi:10.2196/48996`;
-`https://arxiv.org/abs/2310.17526v2` → `arxiv:2310.17526`.
+This survey declares these exclusion codes:
 
-Deduplicate a new candidate by exact key against the catalog. Then
-compare its full normalized title to included display prefixes.
-Because 529 of the original display titles were truncated at 70
-characters, a prefix match is a candidate match, not proof: resolve
-the stored DOI/arXiv key through its registrar, compare full
-normalized titles and authors, and adjudicate ambiguous pairs.
-Version aliases of exclusions are retained as
-E6-duplicate-or-superseded. When a published version replaces an
-included preprint, replace the included key and add the superseded
-identifier as an excluded catalog row with code
-E6-duplicate-or-superseded. For a candidate matching a retained `t:`
-row, compare its
-normalized full title with both the stored slug and display prefix,
-then adjudicate from the candidate's authors, year, and venue; if
-those metadata do not establish identity, keep the records separate
-or park the candidate.
+- `E1-primary-research-automation` — automation whose central product is
+  primary research rather than evidence synthesis;
+- `E2-generic-nlp-no-synthesis-framing` — generic NLP, RAG, or summarization
+  without evidence-synthesis framing;
+- `E3-opinion-without-guidance` — commentary without actionable method or
+  guidance;
+- `E4-before-window` — map candidate published before 2020;
+- `E5-insufficient-metadata` — scope remains undecidable after identifier,
+  landing-page, and abstract checks;
+- `E6-duplicate-or-superseded` — duplicate or superseded identifier/version;
+  and
+- `E7-retracted-or-withdrawn` — formally retracted or withdrawn.
 
-## Snowball rules
-
-Resolve each included seed to an OpenAlex work. For a DOI use
-`GET /works/https://doi.org/<doi>`. For an arXiv-only seed, search
-its full title, then accept only an exact normalized-title and year
-match; ambiguous seeds are logged and skipped rather than guessed.
-For each resolved OpenAlex ID: backward candidates are the complete
-`referenced_works` list; forward candidates come from
-`filter=cites:<id>` with cursor pagination; deduplicate by the key
-and title rules above before counting a candidate
-(`search_openalex.py snowball` implements this).
-
-Apply the case-insensitive title vocabulary
-`review|screening|synthesis|extraction|meta-analys|survey|systematic|evidence|literature|prisma|appraisal`.
-Then test the reconstructed title plus abstract against
-`large language model|language model|\bllm|gpt|agent|automat|artificial intelligence|machine learning|deep learning|neural|\bai\b|\bgenai\b|\bgai\b|generative ai|foundation model`.
-If the abstract is missing, test the title alone and send a
-vocabulary miss to `parked` rather than silently discarding it.
-
-The title stage is applied to the title only, so a work whose title
-carries no genre term is dropped before its abstract is ever read.
-This is a known recall limitation of the snowball prefilter, not a
-scope judgment: it costs works that describe evidence-synthesis
-assistance in the abstract under a title that names only the
-technique or the application domain. It is retained because reading
-every chase abstract does not scale, and it is disclosed in the
-manuscript's limitations.
-Count title-filter rejects, model-vocabulary rejects, missing-data
-parked rows, merges, screened rows, and includes in the update
-ledger. Run one backward+forward round from new includes and a
-verification pass over everything it screens in.
-
-When a citation index returns a bibliography that is empty,
-truncated, or largely unresolved, do not accept it as the chase.
-Re-chase from the primary version's publisher-deposited reference
-list (`fetch_crossref_references.py`) and mark the log row
-`primary-complete`. Three of twelve backward chases in the
-2026-08-09 batch needed this. Such a reference list keys its rows by
-citing-position (`<doi>_b7`), not by identifier: those values look
-like DOIs and must never be used as keys — take the separate `doi`
-column, and fall back to the `t:` title slug when it is empty.
-
-Candidates reaching screening should carry the fullest metadata
-available: fill empty abstracts from OpenAlex, then Crossref, before
-the screening passes run, and never synthesize or paraphrase an
-abstract that neither registrar supplies. A row whose abstract
-cannot be filled is judged on title, venue, and year, and prefers
-`parked` to `E5-insufficient-metadata` — E5 asserts that landing-page
-and identifier checks were performed and still left the subject
-undecidable.
-
-A candidate whose publication year is verifiable and before the
-window start takes `E4-before-window` mechanically, without a
-screening pass. This is a shortcut on the dual-pass rule, allowed
-only when the year is established from registrar metadata; it is
-recorded per batch in an audit row naming the count.
-
-The initial wave used the same title vocabulary, but its exact
-model-side list was not retained; its 323 uncataloged prefilter
-rejects and other phase quantities are historical aggregates, not
-reproducible candidate-level facts.
-
-## Selection and screening
-
-- **Include:** a peer-reviewed work or preprint whose subject
-  matches the scope above.
-- **Exclude** (survey-declared codes, validator-enforced):
-  - E1-primary-research-automation — primary-research automation only
-  - E2-generic-nlp-no-synthesis-framing — generic NLP/RAG without
-    evidence-synthesis framing
-  - E3-opinion-without-guidance — opinion without actionable guidance
-  - E4-before-window — before the searched window
-  - E5-insufficient-metadata — insufficient accessible metadata to
-    determine subject after identifier, landing-page, and abstract
-    checks
-  - E6-duplicate-or-superseded — duplicate or superseded
-    identifier/version
-  - E7-retracted-or-withdrawn — retracted or withdrawn
-- Undecidable candidates take the `parked` status instead of a code
-  and are re-screened on every update.
-
-Boundary examples: a literature-QA system with no secondary-study
-framing is E2-generic-nlp-no-synthesis-framing; prompt advice for
-generic paper summarization is E2-generic-nlp-no-synthesis-framing;
-an LLM screening titles/abstracts for a systematic review is
-included. A closed paper with an informative abstract can be
-included and deep-read as abstract-only;
-E5-insufficient-metadata is for records lacking enough metadata even
-to decide scope. A method spanning evidence review and primary
-hypothesis generation is E1-primary-research-automation when the
-primary-research product is its central contribution; park the
-candidate when that priority cannot be decided from the available
-abstract.
-
-Each pass receives the full available title, abstract, year, venue,
-and identifier. Pass A uses an eligibility-first framing: identify
-positive evidence that the work contributes to a secondary-study
-stage, otherwise return the best E-code. Pass B uses an
-exclusion-first framing: attempt to prove
-E1-primary-research-automation through E5-insufficient-metadata,
-otherwise include. Both return JSON
-`{"decision":"include|E1-primary-research-automation|E2-generic-nlp-no-synthesis-framing|E3-opinion-without-guidance|E4-before-window|E5-insufficient-metadata|parked","reason":"one sentence","confidence":"high|medium|low"}`.
-Use different model tiers/vendors when available. The adjudicator
-sees the candidate and both outputs, resolves disagreements, and
-emits the same schema. The human gate reviews counts, all
-disagreements, every parked row, and a random sample of agreements;
-record its approval in the update ledger.
+Undecidable candidates take `parked` and are re-screened on update. A generic
+literature-QA or paper-summarization system with no secondary-study framing is
+E2; an LLM screening titles and abstracts against a systematic review's
+eligibility criteria is included. A system spanning evidence review and
+primary hypothesis generation is E1 when the primary-research product is
+central; park it when available metadata cannot establish that priority.
 
 ## Taxonomy and coding
 
-Every included row carries one abstract-level primary-focus value
-per dimension. These are descriptive labels, not quality or
-certainty judgments.
+Every include carries one abstract-level primary-focus value per dimension.
+The values describe the work's stated subject and comparison, not study quality
+or certainty.
 
-- **Stage:** `meta` if the work is about the review process/field
-  rather than performing an operational stage; `end2end` only if it
-  substantively implements at least four of search, screen, extract,
-  appraise, synthesize, report; otherwise use the stage named by the
-  primary objective or main evaluation endpoint. If two stages are
-  co-primary and the abstract cannot break the tie, park pending a
-  deep read.
-- **Contribution:** `evaluation` for a primarily comparative
-  empirical assessment; otherwise `guideline` for prescriptive
-  conduct/reporting, `system` for a released/integrated tool,
-  `method` for a technique or algorithm, and `position` for an
-  argument or agenda. Code the primary contribution, not every
-  component.
-- **Evidence:** `human-agree` when outputs are compared with human
-  or human-derived reference labels; otherwise `benchmark` for a
-  nonhuman benchmark and `none` when neither appears. Precedence is
-  `human-agree > benchmark > none`.
-- **Setting:** `med` for healthcare/biomedical review corpora, `se`
-  for software-engineering secondary studies, and `general` for
-  cross-domain or domain-independent work. Venue alone never
-  determines setting.
+- **Stage:** `search|screen|extract|appraise|synthesize|report|end2end|meta`.
+  `end2end` requires at least four operational stages; `meta` is for work about
+  the process or field. Otherwise use the main objective or evaluation endpoint.
+- **Contribution:** `method|system|evaluation|guideline|position`, with
+  evaluation taking precedence when comparative assessment is the main result.
+- **Evidence:** `human-agree|benchmark|none`, with precedence
+  `human-agree > benchmark > none`. This records a described or planned
+  comparison; a protocol can therefore carry `human-agree` before results
+  exist.
+- **Setting:** `med|se|general`. Venue alone never determines setting.
 
-Allowed tokens: stage
-`search|screen|extract|appraise|synthesize|report|end2end|meta`;
-contribution `method|system|evaluation|guideline|position`; evidence
-`human-agree|benchmark|none`; setting `med|se|general`.
+The facets are single-pass coding from truncated abstracts. Full-text note
+facets are authoritative for the individual work but do not silently rewrite
+the map; disagreements are disclosed as a limitation.
 
-## Notes, syntheses, claims, and evidence
+## Survey-specific record choices
 
-The note contract is the `run-survey` skill's
-`assets/source-note-template.md`. Note-level full-text
-facets are authoritative for that work but do not silently rewrite
-the abstract-coded map; disclose disagreements. Each reading batch
-names the syntheses it affects; understanding changes land in
-`syntheses/` first, never manuscript-first. Any active synthesis
-claim in `claims.md` must be supported by at least one evidence
-record in `evidence.md`; evidence records anchor into note headings.
-The landing-page reading list is curated, not exhaustive: the
-strongest evidence, defining system, or guidance anchor for each
-taxonomy section; deep-read does not imply listed. Every annotation
-carries abstract-only, preprint, adjudication, and author-benchmark
-caveats that qualify its claim.
+- The scrutiny scale is `included`, `deep-read`, `excluded`, and `parked`.
+  `included + deep-read` is the include-level map; only `deep-read` requires a
+  source note. `deep-read` names the higher scrutiny level, not full-text
+  access: read depth is recorded separately in each note.
+- The 31 evidence-note works were chosen purposively and iteratively to cover
+  the RQs, taxonomy contrasts, closest maps, quantitative anchors, disclosure
+  instruments, and multi-model designs. There was no fixed score, random
+  sample, or saturation rule, so frequencies and negative findings must not be
+  inferred from this selected set. Twenty-five notes use full text, five use
+  only the primary abstract, and one preserves secondary-only screening memory
+  and supports no finding.
+- `priority=critical` marks the twelve closest or load-bearing works and
+  activates the shared bidirectional-chase duties; other deep reads are `high`
+  and remaining rows are `medium` unless reclassified.
+- The first campaign's log rows carry aggregate counts without per-row decided
+  keys. Current and future rows use the shared log grammar. Historical display
+  titles truncated at 70 characters are candidate duplicate signals, never
+  proof of identity.
+- Four method-canon citations have canonical notes in `library/` and are named
+  as local citation-closure exemptions in `check.py`. All findings-bearing
+  citations must close through `sources/` and `evidence.md`.
+
+## Publication qualifications
+
+The manuscript may publish a dated exploratory-map snapshot with parked rows
+and incomplete saturation as long as it reports those bounds and makes no
+population-prevalence, adoption-trend, or literature-wide absence inference.
+Map counts derive from `catalog.tsv`; claims about selected studies derive from
+anchored source notes and carry abstract-only, preprint, benchmark, and
+adjudication caveats wherever used.

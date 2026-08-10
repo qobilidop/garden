@@ -234,10 +234,13 @@ surfaces.
   (`high`/`moderate`/`low`) rides the record, graded against the
   source notes' read depth and evidence limits. A survey whose
   manuscript asserts nothing beyond catalog-derived counts may omit
-  it, like `check.py`. The genre rule: token-celled ledgers are TSV
-  (catalog, log, queries); prose-celled ledgers are markdown records
-  (claims, evidence), each opening with a preamble that declares its
-  id scheme, field list, and delimiter grammar.
+  it, like `check.py`. When a cited method source already has a canonical
+  evidence note elsewhere in this repository, the local validator may exempt
+  that citekey from citation closure and the record README names the external
+  home; do not duplicate the note merely to satisfy local shape. The genre
+  rule: token-celled ledgers are TSV (catalog, log, queries); prose-celled
+  ledgers are markdown records (claims, evidence), each opening with a preamble
+  that declares its id scheme, field list, and delimiter grammar.
 - Per-paper definition of done: a work is integrated only when its
   disposition is recorded, any required source note is anchored in
   the primary work, affected syntheses and claims are updated, and

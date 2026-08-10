@@ -35,6 +35,13 @@ Config keys (all paths resolved against ``record_dir``):
 - ``strict_citation_closure``: every (section, citekey) manuscript citation
   pair must be covered by an evidence record (partial registration must
   instead be declared in the record README).
+- ``citation_closure_exempt_citekeys``: optional citekeys whose canonical
+  evidence notes live outside the survey record; these remain bibliography
+  checked but are exempt from local evidence closure.
+- ``secondary_only_evidence_exempt_citekeys``: optional citekeys whose
+  ``secondary-only`` notes may support an evidence record making an explicitly
+  secondhand claim. Without this deliberate exemption, secondary-only notes
+  remain screening memory and cannot enter the evidence ledger.
 - ``rq_manuscript_file``: optional path (relative to survey dir) whose RQ
   bullets must equal the protocol's RQ1..RQn.
 - ``label_pattern``: regex for manuscript section labels
@@ -219,6 +226,7 @@ def run(config):
     sources = record / "sources"
     notes = sorted(path for path in sources.glob("*.md") if path.name != "_template.md")
     note_keys, reads = set(), Counter()
+    note_reads = {}
     note_identifiers = {}
     for note in notes:
         text = note.read_text(encoding="utf-8")
@@ -234,9 +242,10 @@ def run(config):
         if citekey and citekey.group(1).strip() != note.stem:
             errors.append(f"{note.name}: filename/citekey mismatch")
         note_keys.add(note.stem)
-        read = re.search(r"^read:\s*(full-text|abstract-only)$", frontmatter, re.M)
+        read = re.search(r"^read:\s*(full-text|abstract-only|secondary-only)$", frontmatter, re.M)
         if read:
             reads[read.group(1)] += 1
+            note_reads[note.stem] = read.group(1)
         else:
             errors.append(f"{note.name}: invalid or missing read depth")
         for heading in NOTE_SECTIONS:
@@ -311,13 +320,17 @@ def run(config):
         text = path.read_text(encoding="utf-8")
         labels = [(match.start(), match.group(1)) for match in re.finditer(rf"<({label_pattern})>", text)]
         manuscript_labels.update(label for _, label in labels)
+        section_labels = [(position, label) for position, label in labels if label.startswith("sec-")]
         found = [(match.start(), match.group(1)) for match in re.finditer(r"@([A-Za-z][A-Za-z0-9_-]+)", text)]
         found.extend((match.start(), match.group(1)) for match in re.finditer(r"#cite\(<([A-Za-z][A-Za-z0-9_-]+)>", text))
         for position, citekey in found:
             if citekey not in bib_keys:
                 continue
             citations.add(citekey)
-            enclosing = [label for label_position, label in labels if label_position < position]
+            # Figure/table labels are declaration targets, not lexical scopes.
+            # A citation belongs to its top-level section even when a table label
+            # appears earlier in that section.
+            enclosing = [label for label_position, label in section_labels if label_position < position]
             if enclosing:
                 citation_pairs.add((enclosing[-1], citekey))
             elif config.get("strict_citation_sections"):
@@ -395,11 +408,16 @@ def run(config):
             if match.group(2) in anchor_refs.get(match.group(1), set()):
                 errors.append(f"{identifier}: duplicate anchor for {match.group(1)}")
             anchor_refs.setdefault(match.group(1), set()).add(match.group(2))
+        secondary_exemptions = set(config.get("secondary_only_evidence_exempt_citekeys", []))
         for citekey in row_keys:
             note = sources / f"{citekey}.md"
             if not note.is_file():
                 errors.append(f"{identifier}: {citekey} has no source note")
                 continue
+            if note_reads.get(citekey) == "secondary-only" and citekey not in secondary_exemptions:
+                errors.append(
+                    f"{identifier}: secondary-only note {citekey} cannot support an evidence record"
+                )
             if citekey not in anchor_refs:
                 errors.append(f"{identifier}: no anchor for {citekey}")
                 continue
@@ -419,7 +437,12 @@ def run(config):
     for claim in sorted(claim_ids - supported_claims):
         errors.append(f"claim has no evidence record: {claim}")
     if config.get("strict_citation_closure"):
+        exempt_citekeys = set(config.get("citation_closure_exempt_citekeys", []))
+        for citekey in sorted(exempt_citekeys - citations):
+            errors.append(f"citation-closure exemption is not cited: {citekey}")
         for label, citekey in sorted(citation_pairs - covered_pairs):
+            if citekey in exempt_citekeys:
+                continue
             errors.append(f"manuscript citation has no evidence record at {label}: {citekey}")
 
     # --- log ---

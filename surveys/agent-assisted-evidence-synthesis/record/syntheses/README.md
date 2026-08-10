@@ -1,35 +1,34 @@
 # Survey syntheses
 
-These living documents state the current cross-paper understanding by
-theme. They compare definitions and results across works rather than
-concatenate paper summaries, and they may hold more than the manuscript
-prints — scope conditions, limiting results, disagreements — but never
-less support than the manuscript claims. Git preserves superseded
-interpretations.
+This directory owns the survey's current cross-paper interpretation. Its files
+compare definitions and results rather than concatenate paper summaries. They
+do not own individual findings (`../sources/`), method or dated state
+(`../protocol.md` and `../status.md`), claim/evidence bindings, or published
+wording. Git preserves superseded interpretations.
 
-Every reading batch must name the syntheses it affects. A synthesis
-update states the current conclusion, the strongest supporting and
-limiting results, scope conditions, and any consequence for the
-manuscript. Chronological reading notes belong in `../sources/`, not
-here.
+## Map
 
-`current-position.md` is the compact entry point. The thematic files,
-named by thesis:
+- `current-position.md` — compact statement of the current interpretation and
+  stable conclusions.
+- `screening-still-dominates.md` — map distribution and its bounded comparison
+  with the pre-LLM automation baseline.
+- `performance-and-measurement.md` — performance evidence, metric conflict, and
+  the limits of cross-study comparison.
+- `disclosure-elements-and-instruments.md` — recurring disclosure elements,
+  instrument genres, validation state, and sanctioned human/AI roles.
+- `reviewer-independence.md` — what the selected ensemble and deferral studies
+  establish, and the limits of their independence constructs.
+- `terminology.md` — adopted vocabulary, competing genre and stage schemes,
+  and the appraisal-term boundary.
 
-- `screening-still-dominates.md` — the stage distribution: what the
-  LLM-era skew shares with and where it departs from the pre-LLM skew.
-- `reliability-is-mismeasured.md` — screening/appraisal performance
-  evidence and why common metrics misstate it under class imbalance.
-- `norms-converge-instruments-fragment.md` — disclosure content has a
-  shared core; the proposed instruments are plural and unvalidated.
-- `independence-undefined.md` — no selected work defines agent-reviewer
-  independence; what the ensemble and deferral evidence does and does
-  not establish, including the first measured proxy.
-- `terminology.md` — which of the field's own words are contested
-  (genre nouns, stage granularity, "living") and which are not.
-
-Works are cited by citekey prefix (e.g. `fagerberg2025`), resolving to
-the evidence notes in `../sources/`. Numbers stated here were checked
-against those notes; a caveat attached to a number in a note (preprint
-status, abstract-only evidence, adjudication concerns, secondhand
-figures) travels with the number here.
+Works are cited with manuscript citekeys, which normally match note stems in
+`../sources/`. Four shorter manuscript citekeys map to canonical library notes:
+`kitchenham2007` →
+`kitchenham2007-guidelines-for-performing-systematic-literature-reviews-in-software-engineering`,
+`petersen2008` →
+`petersen2008-systematic-mapping-studies-in-software-engineering`,
+`wohlin2014` →
+`wohlin2014-guidelines-for-snowballing-in-systematic-literature-studies-and-a-replication-in-software-engineering`,
+and `page2021` → `page2021-the-prisma-2020-statement`. A number or conclusion
+enters a synthesis only with the scope and caveat carried by its evidence note;
+`../evidence.md` records the claims and manuscript sections that use it.

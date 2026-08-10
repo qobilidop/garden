@@ -15,7 +15,7 @@ LLM screening),
 [[woelfle2024-benchmarking-humanai-collaboration]] (the human-gate
 placement benchmark),
 [[fagerberg2025-dual-model-llm-ensemble-via-web-chat-interfaces-reaches-near-perfect-sensitivity-for-systematic-review-screening]]
-(the family-diversity ensemble evidence).
+(the cross-model ensemble evidence and its causal boundary).
 
 ## The genres trade depth for breadth, not quality for laziness
 
@@ -109,36 +109,30 @@ inter-rater reliability still bounds it.
 ## The agent-era frontier
 
 The canon predates agents, and the first sys0 survey
-([[agent-assisted-evidence-synthesis]]) mapped what has grown in the
-gap: 777 included works on AI-assisted evidence
-synthesis, 2020–2026. Read against this page's theses, the
-campaign's findings rhyme with the canon rather than replacing it —
-the LLM-era stage skew reproduces the pre-LLM one (screening dominant,
-appraisal and reporting thin); evaluation practice still fails
+([[agent-assisted-evidence-synthesis]]) maps part of what has grown in the gap:
+776 include-level works on AI-assisted evidence synthesis from 2020–2026, with
+31 selected evidence notes. Its dated, relevance-capped catalog is not a
+complete field census, but its bounded findings rhyme with the canon rather
+than replacing it. Screening dominates the retained map while appraisal and
+reporting remain thin. Measurement practice still falls short of
 [[kitchenham2007-guidelines-for-performing-systematic-literature-reviews-in-software-engineering]]-grade
-measurement discipline ([[madeyski2025-llm4screenlit]] — Kitchenham
-among its authors — finds only a quarter of 29 evaluations report
-confusion matrices, shows accuracy-ranked model choice silently
-discarding relevant evidence, and prescribes the repair: full
-confusion matrices, Lost Evidence as the headline number,
-cost-weighted ranking with the false-negative weight declared);
-disclosure norms converge on content while instruments fragment,
-extending [[page2021-the-prisma-2020-statement]]'s items 8–9 in four
-competing unvalidated directions; and reviewer-independence — the
-canon's measured-reliability thesis applied to agents — is entirely
-undefined in the literature. The best ensemble evidence,
-[[fagerberg2025-dual-model-llm-ensemble-via-web-chat-interfaces-reaches-near-perfect-sensitivity-for-systematic-review-screening]],
-reaches 99.7% screening sensitivity with a cross-family OR-ensemble
-whose two models err in complementary places — but it runs no
-same-family arm, so "different family" is never isolated from "any
-second screener". A designed next experiment falls out of exactly
-that missing arm: a cross-vendor dual-screening pass (the mirrored
-Codex configuration exists for exactly this), with disagreements
-analyzed by error type — among the first deliberate cross-family
-independence measurements the mapped literature lacks. The survey's
-manuscript carries the detail; its most load-bearing works are now
-library entries (shelved above), the rest evidence-note sources in
-the survey record.
+discipline: [[madeyski2025-llm4screenlit]] finds complete confusion matrices in
+only 7 of 29 selected evaluations and demonstrates that metric choice can
+reverse a model ranking while changing how much relevant evidence is lost.
+The selected guidance converges on disclosure content while four unvalidated
+instruments divide that content between reporting and reproducible storage.
+
+The survey also turns the canon's measured-reliability thesis toward reviewer
+design. No selected deep read defines when two agent reviewers count as
+independent, and the survey did not search that question exhaustively.
+[[fagerberg2025-dual-model-llm-ensemble-via-web-chat-interfaces-reaches-near-perfect-sensitivity-for-systematic-review-screening]]
+reports 99.7% sensitivity for a two-model OR ensemble on author-adjudicated
+labels, but its design does not isolate model family, model identity, duplicate
+runs, or the OR rule. [[woelfle2024-benchmarking-humanai-collaboration]] instead
+shows that agreement-gated human–LLM deferral can outperform its comparison
+arms on two easier appraisal instruments. Together these results motivate a
+measurement question, not a novelty claim: which operational independence
+controls actually cause ensemble or deferral gains?
 
 ## Local instantiation and open questions
 

@@ -1,17 +1,18 @@
-= RQ3 — Norms: shared content, coexisting proposals <sec-rq3>
+= RQ3 — Norms and disclosure instruments <sec-norms>
 
-The guidance sources share a disclosure core: name the tool and
-version, state which stage the AI performed and what the human did,
-and describe verification. The PRISMA-trAIce checklist @holst2025 and
-FRAISR @degen2024 add the exact prompt and configuration. Among the
+The guidance sources repeatedly address tool identity and version, stage or
+task, human role, configuration, and verification, but no one item set is
+common to every instrument. FRAISR @degen2024 records only stage, tool
+name/version, and input parameters; PRISMA-trAIce @holst2025 and HAICO-SLR
+@fernandes2026 add human-role and oversight fields. Among the
 conduct guidance, the Cochrane-family statements @gartlehner2025 and
 HAICO-SLR @fernandes2026 keep a human decision in every stage and add
 human accountability (no AI authorship). The pre-LLM screening
-guidance @hamel2021 is both narrower and more permissive: it governs
-title/abstract screening only, and rather than forbidding automation
-it ranks the options for the unscreened remainder after truncation by
-risk, placing AI-only exclusion highest-risk rather than out of
-bounds. In the
+guidance @hamel2021 is narrower and makes a distinction later guidance
+can blur: it labels fully autonomous score-threshold screening an
+inappropriate use, while separately ranking options for the unscreened
+remainder after a human-chosen truncation point, with AI-only exclusion
+the highest-risk option. In the
 Cochrane-family guidance the sanctioned role for AI is a _secondary_
 quality-assurance reviewer, re-checking single-reviewer exclusions
 and extractions; HAICO-SLR goes further, sanctioning AI first-pass
@@ -34,9 +35,13 @@ pre-registration, and treats one as optional (item numbering
 reconstructed from the paper's prose, since the checklist table was
 not machine-readable). A layer of position
 statements sits beside them: the Cochrane-family statements endorse the
-RAISE guidance @gartlehner2025, while the officially announced PRISMA-AI
-remains unpublished and PRISMA 2020 itself covers automation only at the
-selection items @luo2024. The three proposals'
+RAISE guidance @gartlehner2025. The proposals disagree on PRISMA-AI's history:
+Holst et al. describe it as announced but unpublished, whereas Fernandes et al.
+say it was never developed @holst2025 @fernandes2026. They agree on the point
+that matters here — no usable PRISMA-AI instrument was available. PRISMA 2020
+itself asks for automation details in study selection and data collection
+@page2021; Luo et al. characterize that coverage more narrowly as screening
+only @luo2024. The three proposals'
 evidence notes report no validation or adoption evidence; coexistence
 alone does not establish a standards race. O'Connor et al. relay rare
 disclosure in the education and climate/health domains they discuss
@@ -56,5 +61,5 @@ were not machine-readable. The panel's only automation-relevant
 statement, that software and automation should be validated and
 justified, did reach consensus and is neutral on the role question
 these guidance sources disagree about. The one place this map watches
-norms being formed is also the place where operational commitment did
-not form.
+norms being formed produced an operational commitment only at that
+general validate-and-justify level.

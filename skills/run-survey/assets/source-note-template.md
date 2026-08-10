@@ -15,7 +15,7 @@ work:
   date: <year or date>
   doi: <optional>
   arxiv: <optional>
-read: full-text | abstract-only
+read: full-text | abstract-only | secondary-only
 source: <shadow path when captured; otherwise public URL, acquisition note, or "none">
 facets: <assessed note-level facets; may be partial; omit when the survey keeps facets in the catalog only>
 retrieved: YYYY-MM-DD
@@ -44,6 +44,10 @@ synthesis: <one-line take>
 - `## Evidence limits` bounds what the note's evidence can support
   (version read, abstract-only caveats, benchmark provenance,
   unproved claims) — limits of the evidence, not general critique.
+- `read: secondary-only` is reserved for a surfaced work whose primary text
+  and abstract were unavailable. Preserve it as screening memory, identify
+  every relay or snippet, and exclude it from primary-source findings and
+  negative scans unless the manuscript explicitly makes a secondhand claim.
 - At least one of `work.doi` / `work.arxiv` / `source` must locate
   the version read. `retrieved` may be `-` when the acquisition date
   was not recorded (historical migrations, declared in the README).

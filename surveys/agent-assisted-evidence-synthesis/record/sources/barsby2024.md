@@ -6,7 +6,7 @@ work:
   venue: "BMJ Evidence-Based Medicine"
   date: 2024
   doi: 10.1136/bmjebm-2024-112990
-read: abstract-only
+read: secondary-only
 source: "none — closed access, no OA copy, no abstract text exists (see limits)"
 facets:
   stage: "appraise"

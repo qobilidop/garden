@@ -16,8 +16,8 @@ canon — review guidelines @kitchenham2007, mapping-study procedure
 survey and the method now under automation pressure. Earlier primary
 classifiers are covered mainly through those reviews, but the broad
 automation vocabulary also admitted several 2020–2022 primary ML works
-and a 2022 RobotReviewer RCT. The map is therefore neither LLM-only nor
-a comprehensive search of pre-LLM primary studies.
+and a 2022 RobotReviewer RCT. The map is LLM-centered but includes adjacent
+automation lineage without comprehensively searching that broader field.
 
 Four deep-read secondary sources illustrate narrower views of the field.
 #cite(<luo2024>, form: "prose") survey potential LLM roles stage by

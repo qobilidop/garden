@@ -1,140 +1,95 @@
 = How This Survey Was Made <sec-method>
 
 Agent passes performed search, screening, classification, and deep
-reading under an author-set protocol and human gates. The survey ran
-in two waves — an initial campaign closing 2026-08-08 and an update
-batch on 2026-08-09 — and the map is their reconciled union. The
-title-page note gives the full authorship, assistance, evidence-use,
-and public-record disclosure.
+reading under an author-set protocol and human gates. The title-page note owns
+the authorship, assistance, evidence-use, and public-record disclosure; this
+section records only the procedure and its limits.
 
-== The initial campaign
+== Coverage and selection
 
-Eleven logical queries ran against OpenAlex, Crossref, Semantic
-Scholar, and arXiv (window 2020-01-01 to 2026-08-08, English); ten
-succeeded and one Semantic Scholar query ended in a persistent 429.
-Results were relevance-sorted with a cap of 50 records. Review-side
-vocabulary such as "systematic review" and "evidence synthesis" was
-paired with model-side vocabulary spanning LLMs, agents, automation,
-AI, and ML.
+The map covers English-language work from 2020 through 2026. Searches ran
+against OpenAlex, Crossref, Semantic Scholar, and arXiv, relevance-sorted and
+capped at 50 results per query. The initial eleven-query set had ten successful
+queries; a later seventeen-query set added mapping-study, scoping-review, and
+living-evidence vocabulary and had sixteen successful queries. The standing
+searches center language models. Broader AI, ML, deep-learning, and automation
+work entered through initial screening vocabulary and citation chasing, so the
+retained map is LLM-centered rather than a comprehensive automation
+denominator.
 
-The first 412 candidates received two agent screening passes with
-adjudication. A single backward+forward snowball round @wohlin2014 then
-used a title-vocabulary pre-filter; its 881 retained candidates received
-one screening pass and a verification pass over included decisions. The
-wave was not iterated to saturation. Facets were assigned once from
-truncated abstracts. A post-campaign integrity pass resolved 24
-version/duplicate rows and removed two retracted works, leaving 646
-included works.
+The initial 412 candidates received two screening passes with adjudication.
+One backward and forward citation round @wohlin2014 then used a title-vocabulary
+pre-filter; the 881 retained candidates received one screening pass plus a
+verification pass over includes. The later batch screened 585 candidates with
+an eligibility-first and an exclusion-first pass, adjudication, and a human
+gate. Twelve designated critical works were chased in both directions. Three
+defective backward-index results were replaced by publisher-deposited reference
+lists. The searches and chases were not iterated to saturation.
 
-== The 2026-08-09 update
+== Coding and evidence
 
-The update ran the standing query registry — 17 queries after adding
-six covering mapping-study, scoping-review, and living-evidence
-vocabulary, the genre terms the original review-centric query set
-underweighted. Sixteen succeeded; one Semantic Scholar query failed
-with HTTP 429 on six attempts across two spaced rounds and is counted
-as no query. Each query fetched the inclusive interval since its own
-last reconciliation (the survey window start, for the six new ones).
+Every include received one primary-focus value on each taxonomy dimension from
+a truncated abstract. The coding was single-pass and unvalidated. Thirty-one
+works were selected purposively for evidence notes to cover the research
+questions, taxonomy contrasts, closest prior maps, quantitative anchors,
+disclosure instruments, and multi-model designs. Selection was iterative, with
+no fixed score, random sample, or saturation rule. Twenty-five notes are
+full-text, five abstract-only, and one secondary-only; the secondary-only note
+supports no finding. The catalog's evidence facet records the comparison a work
+claims or plans, not study quality and not confirmation that the comparison was
+completed.
 
-The update also declared a bounded critical set — twelve closest works
-comprising the competing maps, the load-bearing evidence studies, and
-the disclosure instruments — and chased each backward and forward.
-Three backward chases returned bibliographies the citation index could
-not supply (two empty, one with 23 unresolved references); each was
-re-chased from the publisher-deposited reference list of the primary
-version and is marked as such in the record. We do not generalize
-from three cases to a claim about index reliability; the record marks
-which chases needed it.
+The record retains the exact standing queries, current dispositions, source
+notes, syntheses, claim/evidence bindings, and an append-only event log. It does
+not retain unfiltered result sets, departing from Kitchenham and Charters'
+save-for-reanalysis guidance @kitchenham2007. Historical campaign phases survive
+only as reconciled aggregates because candidate-level provenance was pruned;
+later rows carry decided keys. Seventy-six catalog rows remain parked for
+re-screening on a future update.
 
-@tab-funnel gives both waves' funnels side by side, the campaign's as
-retained aggregates and the update's at candidate level.
-
-Screening followed the protocol's dual-pass design: an
-eligibility-first pass and an exclusion-first pass on different model
-tiers, disagreements adjudicated by a stronger model, the human gate
-approving the batch. Of 579 dual-pass candidates, 360 were pass
-agreements and 219 went to adjudication; six further rows from a late
-chase were screened and verified separately, for 585 in all, of which
-132 were included. On the 66 substantive disagreements — one pass
-including where the other excluded — the adjudicator sided with the
-eligibility-first pass 56 times and with the exclusion-first pass 10
-times, choosing an exclusion code in 59 of the 66. The smaller-tier
-exclusion-first pass systematically over-included domain reviews, the
-mirror image of the over-exclusion measured in the initial
-campaign. Facets for the new includes were
-assigned once from abstracts, as before.
-
-Two screening passes had to be discarded and re-run: their outputs
-were keyword heuristics rather than judgments — one written as an
-explicit program, one detectable as 97 decisions sharing seven
-template justifications. They were caught by an output check (distinct
-justifications per decision) before adjudication. The failure was
-silent and plausible in aggregate: it would not have been visible from
-decision counts, and we cannot exclude subtler instances in the passes
-that survived the check.
+@tab-campaign and @tab-funnel separate retained historical aggregates from the
+candidate-level later batch. Their quantities describe this record, not
+retrieval completeness.
 
 #figure(
-  table(
-    columns: (auto, auto, auto),
-    align: (left, right, right),
-    table.header([Phase], [In], [Out]),
-    [*Campaign (through 2026-08-08)*], [], [],
-    [Search (11-query set; 10 succeeded)], [—], [419 unique],
-    [Dedup (arXiv–DOI)], [419], [412],
-    [Dual-pass screen + adjudication], [412], [139 includes],
-    [Snowball round (pre-filtered)], [139 seeds], [1,204 new],
-    [Vocabulary pre-screen], [1,204], [881],
-    [Wave-2 screen + verification], [881], [533 includes],
-    [Campaign close], [1,291 rows], [672 included rows],
-    [Integrity correction], [672 included rows], [646 works],
-    [*Update (2026-08-09)*], [], [],
-    [Search (17-query set; 16 succeeded)], [—], [517 rows],
-    [Critical-set chases (24 + 3 primary)], [12 seeds], [1,191 rows],
-    [Vocabulary pre-screen (chase rows)], [1,191], [595 retained],
-    [Dedup, enrichment, park], [1,112], [585 screened],
-    [Dual-pass screen + adjudication], [585], [132 includes],
-    [Date-rule coding (primary chases)], [41], [39 before-window],
-    [Integrity (aliases, artifacts)], [26 rows], [13 E6, 13 dropped],
-    [*Current ledger*], [1,975 rows], [*776 include-level*],
-    [Facet classification], [776], [the map],
-    [Deep reads], [776], [31 notes],
-  ),
-  caption: [Identification and selection funnel across both waves.
-    Campaign phase quantities are retained historical aggregates:
-    candidate-level provenance was pruned and cannot regenerate them.
-    The campaign's 323 vocabulary rejects were not cataloged; two of
-    881 screened rows merged on entry (412 + 879 = 1,291), and a later
-    publication migration brought the ledger to 1,292 before the
-    update. Update quantities are candidate-level and reproducible
-    from the record's log. Of the 517 search rows and the 595 chase
-    rows surviving the pre-screen, 585 reached screening; the
-    remainder were already cataloged, merged into another row, or
-    parked for lack of any registrar abstract. The update's 132
-    include decisions yield 130 new include-level rows: one work had
-    already entered the map in the campaign and was independently
-    re-included, and one was later reclassified out of scope by a
-    deep read.],
+  text(size: 8.5pt)[
+    #table(
+      columns: (auto, auto, auto),
+      align: (left, right, right),
+      table.header([Campaign phase], [In], [Out]),
+      [Search (11-query set; 10 succeeded)], [—], [419 unique],
+      [Dedup (arXiv–DOI)], [419], [412],
+      [Dual-pass screen + adjudication], [412], [139 includes],
+      [Snowball round (pre-filtered)], [139 seeds], [1,204 new],
+      [Vocabulary pre-screen], [1,204], [881],
+      [Wave-2 screen + verification], [881], [533 includes],
+      [Campaign close], [1,291 rows], [672 included rows],
+      [Integrity correction], [672 included rows], [646 works],
+    )
+  ],
+  caption: [Historical campaign funnel through 2026-08-08. Quantities are
+    reconciled aggregates because candidate-level provenance was pruned.],
+) <tab-campaign>
+
+#figure(
+  text(size: 8.5pt)[
+    #table(
+      columns: (auto, auto, auto),
+      align: (left, right, right),
+      table.header([Update and current ledger], [In], [Out]),
+      [Search (17-query set; 16 succeeded)], [—], [517 rows],
+      [Critical-set chases (24 + 3 primary)], [12 seeds], [1,191 rows],
+      [Vocabulary pre-screen (chase rows)], [1,191], [595 retained],
+      [Dedup, enrichment, park], [1,112], [585 screened],
+      [Dual-pass screen + adjudication], [585], [132 includes],
+      [Date-rule coding (primary chases)], [41], [39 before-window],
+      [Integrity (aliases, artifacts)], [26 rows], [13 E6, 13 dropped],
+      [*Current catalog*], [1,975 rows],
+        [*776 include-level; 1,123 excluded; 76 parked*],
+      [Post-ledger outputs], [776], [facet map; 31 evidence notes],
+    )
+  ],
+  caption: [Candidate-level update through 2026-08-09, recoverable from the
+    event log. Its 132 include decisions produced 130 new include-level rows
+    after one rediscovery and one deep-read reclassification.],
 ) <tab-funnel>
-
-== What the record holds
-
-Update coverage is bounded by the same 50-record relevance cap, and
-this survey retains its logged queries rather than the unfiltered
-result sets — a deliberate departure from the save-everything practice
-of the SLR canon @kitchenham2007, justified by replayability of the
-verbatim queries and disclosed here because it limits reanalysis.
-Thirty-nine rows from the primary-complete chases were coded
-before-window mechanically from verified publication years without a
-screening pass. Seventy-six rows remain parked as undecidable on
-available metadata and are re-screened on every update; 87 of the 585
-screened candidates still carried no registrar abstract after
-enrichment was attempted against two registrars, and were judged on
-title, venue, and year.
-
-Thirty-one works carry evidence notes, selected facet-guided as
-candidate anchors. Citations resting on abstract-only evidence carry an
-"abstract-only" marker. The survey record linked in the title note
-holds the protocol, the append-only search and audit log with
-per-row decided keys, the classified catalog, the syntheses, and the
-per-work evidence notes. It is a minimal public record; process
-history remains in git.
