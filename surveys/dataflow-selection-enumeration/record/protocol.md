@@ -1,19 +1,22 @@
 # Survey protocol
 
+This file records only choices specific to this survey. The current
+`run-survey` skill is canonical for the shared search, screening, snowballing,
+logging, evidence, update, and bounded-closure workflow. Local commands and
+file ownership are in `README.md`; current state is in `status.md`; event
+history is in `log.tsv`; current interpretation is in `syntheses/`.
+
 ## Objective and study type
 
 Maintain a problem-centered scoping survey of exhaustive selection-observation
-enumeration in finite pure dataflow graphs, supported by a reproducible
-systematic search record and evidence map. The survey identifies established
-solution families, translates them into one terminology, and records exactly
-when their observers, guarantees, and representations coincide with the target
-contract. It is neither a statistical systematic literature review nor, while
-unresolved candidates remain, a closed systematic map.
+enumeration in finite pure dataflow graphs. The survey identifies established
+solution routes, translates them into one terminology, and records when their
+observers, guarantees, and representations coincide with the target contract.
+It is not a statistical systematic literature review.
 
-The running formal object is a partial map of selection-site outcomes reached
-from requested roots through all declared operands of ordinary nodes and
-input-selected case edges. A
-monolithic symbolic value or SMT encoding is a baseline, not the target output.
+The formal target is canonical in `syntheses/unified-framework/model.md` and
+summarized in `syntheses/current-position.md`; this protocol uses that target
+as its inclusion boundary rather than restating it.
 
 ## Research questions
 
@@ -27,9 +30,9 @@ monolithic symbolic value or SMT encoding is a baseline, not the target output.
   or quotient of the target observer, and where do they address only an
   adjacent reduction problem?
 
-## Coverage themes
+## Scope and comparison routes
 
-The comparison is organized around six recurring, non-exclusive routes:
+The comparison uses six overlapping routes:
 
 1. guarded symbolic execution;
 2. projected model enumeration;
@@ -38,33 +41,25 @@ The comparison is organized around six recurring, non-exclusive routes:
 5. geometric and parametric enumeration; and
 6. compositional guarded summaries.
 
-The map still crosses symbolic execution, dataflow semantics, functional-logic
-programming, model enumeration, knowledge compilation, geometry, parametric
-programming, concurrency, and state reduction. Those broader communities are
-discovery vocabulary, not separate research questions. Partial-order
-reduction, unfoldings, Petri-net observation, property-guided exploration, and
-state quotienting remain adjacent comparators when they clarify an
-observer-relative boundary without implementing the target record contract.
+Symbolic execution, dataflow semantics, functional-logic programming, model
+enumeration, knowledge compilation, geometry, parametric programming,
+concurrency, and state reduction are discovery communities, not additional
+research questions. Partial-order reduction, unfoldings, Petri-net
+observation, property-guided exploration, and state quotienting are adjacent
+comparators only when they clarify an observer-relative boundary.
 
-Exact recurring searches are versioned in `queries.tsv`. New vocabulary
-discovered during reading is added there in a separate commit rather than
-silently changing an executed search.
+`queries.tsv` is the sole record of exact recurring searches, sources, limits,
+and reconciliation dates. New discovery vocabulary changes that file rather
+than this narrative scope statement.
 
-## Records and authority
+## Selection boundaries
 
-The file map, with each record's purpose and update rule, is the
-README's Files section. Search indexes are discovery aids. Primary
-papers, official proceedings, publisher records, or stable
-author-hosted versions control technical and bibliographic claims.
+Include a work when it makes a technical contribution to a research question
+and exposes enough semantics, guarantees, or algorithmic detail for
+comparison. Foundational reports and theses may serve as primary sources when
+they contain the most complete result.
 
-## Inclusion and exclusion
-
-Include a work when it makes a technical contribution to at least one research
-question and provides enough detail to compare semantics, guarantees, or
-algorithmic behavior. Foundational reports and theses may be primary sources
-when they contain the most complete result.
-
-Use these stable exclusion codes:
+This survey declares these exclusion codes:
 
 - `E1-def-use-testing`: conventional CFG def-use coverage only;
 - `E2-ml-graph-runtime`: ML graph execution or staging only;
@@ -75,172 +70,38 @@ Use these stable exclusion codes:
 - `E7-duplicate-version`: superseded version retained for lineage; and
 - `E8-retracted`: formally retracted or withdrawn.
 
-Codes are this survey's declared vocabulary; `check.py` enforces it.
+`E6-out-of-scope-model` carries the main local judgment:
 
-`E6-out-of-scope-model` carries most of the scope judgment; its
-boundary, illustrated by three E6-coded catalog rows:
+- Abstract program-analysis facts are out of scope even when described as
+  dataflow; concrete-input partitions by selection outcomes are in scope.
+- Process-transition or schedule observers are out of scope as target
+  implementations, though they may be adjacent observer comparators.
+- Vocabulary overlap, such as “enumerating expression trees” over a different
+  program model, is insufficient without overlap in the semantic object.
 
-- A work that computes analysis facts over an abstraction rather than
-  concrete-input observations is E6 even when it says "dataflow" —
-  weighted pushdown dataflow analysis (`doi:10.1145/24039.24041`)
-  enumerates interprocedural facts, not input fibers of selection
-  sites. A work that exactly partitions inputs by the outcomes of
-  selection sites is in scope however it names itself.
-- A work whose observer ranges over process transitions or schedules
-  rather than requested-root evaluations of a deterministic graph is
-  E6 — symbolic bisimulation for value-passing processes
-  (`doi:10.1016/0304-3975(94)00172-f`) quotients transition behavior,
-  while observation-quotient work over deterministic evaluation stays
-  in scope as an adjacent comparator.
-- Vocabulary overlap alone never includes: a work "enumerating
-  expression trees" over a different program model
-  (`doi:10.21203/rs.3.rs-9430237/v1`) is E6 — overlap in words is not
-  overlap in observer or represented object.
+The catalog rationale records the adjudication for each individual boundary
+case; this protocol does not duplicate those examples.
 
-## Keys and conventions
+## Survey-specific record choices
 
-Catalog and log keys use the shared identifier grammar:
+- `check.py` declares the five shared statuses used here: `candidate`,
+  `screened`, `deep-read`, `excluded`, and `parked`. This survey gives them no
+  semantics beyond the `run-survey` definitions.
+- `cluster` is an open, one-value-per-work discovery facet. `priority=critical`
+  marks the closest-work set and activates the shared critical-work duties.
+- In migrated source notes, `retrieved: "-"` means that the acquisition date
+  was not recorded. `notes-date` is the last recorded review date, not an
+  inferred retrieval date.
 
-1. DOIs normalize to `doi:<doi>` — lowercase, registrar prefixes and
-   `https://doi.org/` stripped, percent-encoding decoded.
-2. arXiv works normalize to `arxiv:<id>` — version suffix stripped;
-   an arXiv-DOI (`10.48550/arxiv.*`) collapses to the same key.
-3. A work with neither identifier takes `t:<title-slug>` — NFKD
-   ASCII, lowercased, non-alphanumerics dropped, truncated to 80
-   characters — and carries its locating URL in the catalog's `url`
-   column. `legacy:<citekey>` is reserved for rows whose identifier
-   and title were both unrecoverable at migration time; upgrade a
-   legacy row to its proper key when either surfaces.
-4. A published version of an included preprint replaces its key; the
-   superseded identifier stays as an excluded row under
-   `E7-duplicate-version`.
+## Publication and novelty qualifications
 
-Deduplication goes through this grammar: adjudicate suspected aliases
-from full registrar metadata and authorship, never title similarity
-alone. Author-year citekeys (`<surname><year><slug>`) are minted only
-for works that acquire a source note or a manuscript citation; the
-citekey names the note file, the bibliography entry, and every
-evidence and claims reference, and `manuscript/references.tsv` plus
-note frontmatter identifiers bridge citekeys to catalog keys. (The
-initial campaign keyed the catalog and log by citekey; the 2026-08-09
-audit row records the mechanical migration to this grammar.)
+This survey may publish a dated scoping snapshot while candidates remain, as
+long as `status.md` reports the backlog and the manuscript draws no literature-
+absence or mapping-closure inference from it. A bounded mapping-closure claim
+requires the unmodified closure criteria in the `run-survey` skill.
 
-Cluster values are an open vocabulary, one per row, introduced during
-screening. Query caps are the `limit` column of `queries.tsv` (arXiv
-at most 100); retries back off and space requests per the shared
-update tool.
-
-## Screening, reading, and extraction
-
-Screening assigns a catalog status, priority, cluster, and concise rationale
-from title, abstract, and stable metadata. `candidate` is an unresolved
-discovery status: the available title or metadata looks potentially relevant,
-but the abstract-level inclusion judgment has not been completed. It is a
-backlog, not a promise that every work will be deep-read. `parked` is reserved
-for a row that cannot be adjudicated because usable metadata or text is
-unavailable after recorded attempts; it is re-screened on every update.
-
-Update batches screen with two agent passes on different model tiers and
-prompt framings (one eligibility-first, one exclusion-first), each
-emitting `{"decision", "reason", "confidence"}`; the strongest available
-model adjudicates disagreements, the adjudicated one-line reason lands in
-the catalog's `relevance` column, and a human gates the batch — reviewing
-counts, all disagreements, every parked row, and a sample of agreements —
-before any state advances. (The initial campaign screened in single
-adjudicated passes; this structure governs updates from 2026-08-09.)
-
-A deep read must inspect the primary work's definitions, central algorithms,
-theorem statements and assumptions, complexity discussion, examples, and
-related work. Complete the source-note template with stable URLs and pinpoint
-locations. Any active synthesis claim must be connected to at least one
-evidence item, and any technical manuscript citation must be connected at its
-stable section label. Evidence IDs identify findings from the literature; `Cxx` IDs refer
-only to the synthesis claims in `claims.md`.
-
-Priority controls maintenance obligations. Every `critical` work must be
-deep-read and must have separate usable backward and forward citation chases.
-New critical works receive both chases immediately; existing critical works
-receive a forward refresh as part of any update batch.
-
-Snowball rules: chases run one backward plus one forward round per seed
-through the shared citation clients, each logged with `seed-key:<key>` in
-the notes column. A discovery-only pass that assigns no dispositions is
-marked `discovery-only` and satisfies no obligation. When an index returns
-a truncated, unresolved, or implausibly empty bibliography, chase from the
-primary version's printed reference list and mark the companion row
-`primary-complete` — `check.py` enforces this for every defective backward
-row. A deep read that no longer supports any evidence item, manuscript
-citation, or synthesis may be demoted back to `screened` by an audit row,
-its note retiring to git history.
-
-## Incremental maintenance
-
-Updates are staged on demand — there is no maintenance schedule. The
-registered searches and the update tool make staging one command
-(`update.py fetch --all`). Begin an update immediately when alerts,
-peer feedback, or reading expose a plausible close competitor or a
-new coverage theme, and otherwise whenever fresher coverage is
-wanted; a complete forward-citation refresh of the critical set
-belongs in any substantial update batch.
-
-Update database runs search an inclusive interval from the last fully
-reconciled date through the new batch date. Crossref ranks that bounded set by
-relevance; arXiv returns recent submissions first. The overlapping boundary
-protects against delayed deposits; catalog deduplication absorbs repeats.
-Unbounded searches remain useful for deliberate scope expansion but do not
-constitute an incremental update.
-
-The numbered procedure is the README's To update section. An update
-is incomplete if it only adds bibliography entries or source notes.
-The cross-paper synthesis and every affected manuscript claim must also be
-reconciled.
-
-## Snapshot readiness and reopening
-
-The survey carries an updatable search and evidence map. A dated publication may be released
-as a _bounded search snapshot_ even when unresolved candidates remain, provided
-the backlog and the limits on inference are reported. “Current” then means
-that promoted evidence has been reconciled, not that every discovered work has
-been adjudicated.
-
-A snapshot may claim _bounded mapping closure_ only when:
-
-1. no discovered work remains `candidate` or `parked` and every work has an
-   adjudicated screened, deep-read, or excluded disposition;
-2. every critical work is deep-read and chased in both directions;
-3. every registered search has an adjudicated execution covering the
-   snapshot's coverage date;
-4. two prospective, independently checked no-add batches find neither a new
-   theme nor a plausible close competitor; and
-5. the manuscript, evidence ledger, and syntheses agree on the coverage date.
-
-A later paper, changed result, or new theme reopens the current map. Closure is
-always relative to the named sources, exact queries, result depths, and date.
-The current 2026-08-09 record does not satisfy condition 1, so it makes no
-closure claim.
-
-## Audited search-log schema
-
-`log.tsv` contains: execution date, kind (`search`, `snowball`,
-`audit`, or `exploratory`), event id, source, exact query or seed,
-direction, hit count, screened count, included keys, excluded keys,
-and notes. Result sets are staged in `.scratch/` during screening and
-discarded after reconciliation — the log row is the audit unit.
-Approximate counts, unknown result sets, and aggregate seed descriptions belong
-in scratch notes rather than the audited log.
-
-Executed rows are append-only. If later primary reading changes a
-catalog disposition, append an `audit` reconciliation row rather than
-rewriting the executed row. Snapshot paths in historical rows and
-source notes reference the retired `screening/` tree and resolve
-only in git history. Its notes record `promoted-key:KEY` or
-`superseded-key:KEY`; the current catalog gives the resulting disposition while
-the earlier row preserves the adjudication made at execution time.
-
-## Novelty discipline
-
-For any proposed contribution, restate it in the notation of the closest work
-and test whether its semantic object, theorem, or enumeration method transfers
-under straightforward instrumentation. Absence of a matching paper is only a
-novelty hypothesis until the closest-work audit is complete. Negative results
-belong in `claims.md` and the subsumption-boundary synthesis.
+For the proposed semantic contract and algorithms, correspondence must be
+tested against the closest works in `syntheses/closest-work-audit.md`. The
+absence of an exact published match remains a bounded search finding, not a
+novelty theorem. Survey-authored derivations remain identified as such in the
+claim ledger and manuscript.

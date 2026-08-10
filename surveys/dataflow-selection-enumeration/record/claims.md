@@ -1,21 +1,33 @@
 # Claims and qualification ledger
 
-This file records the survey's current synthesis claims. Every
-current claim is a settled survey synthesis — its **Status:** line
-reads `survey synthesis`, with a qualifier after the semicolon
-recording how novelty resolved (broad novelty defeated, formal
-derivation recorded, implementation claim rejected). A new claim
-enters as `hypothesis` and moves to `supported`, `known-result`, or
-`rejected` under the novelty discipline. No item is novel merely
-because it is listed. Each active claim must have explicit scope, anchored
-evidence, and a stated relationship to the closest established result.
+This file owns the survey's current `Cxx` synthesis propositions and their
+qualifications. It does not store individual source findings (`evidence.md`),
+cross-paper explanatory prose (`syntheses/`), or manuscript wording. Each claim
+states its scope and relationship to the closest established result; the
+evidence ledger supplies its anchored support.
+
+## Record schema
+
+- **Status** — `hypothesis` while a proposition is under examination;
+  `survey synthesis`, optionally followed by a qualifier recording how novelty
+  resolved, once settled; or `rejected` while a defeated hypothesis remains as
+  a temporary guardrail.
+- **Statement** — the proposition maintained by the survey.
+- **Scope** — the domain within which the statement is asserted.
+- **Prior frontier** — the closest established result and the remaining
+  survey-authored interpretation.
+- **Qualification**, **Consequence**, and **Presentation rule** — optional
+  constraints needed to prevent overstatement or invalid transfer.
+
+Fields are prose and contain no delimiter-encoded lists. Identifiers are stable
+`Cxx` labels, so they survive status changes. Listing a claim never establishes
+novelty.
 
 ## Current survey synthesis claims
 
-The `Cxx` identifiers below are stable synthesis-claim IDs. The
-**Supports:** field of `evidence.md` connects primary-source
-evidence to them; evidence rows have their own `Exxx` identifiers so that a
-source's claim cannot be mistaken for this survey's synthesis.
+The identifiers below are stable. `evidence.md` connects `Exxx` literature
+findings to them through **Supports:** so a source finding cannot be mistaken
+for a survey synthesis.
 
 ### C01 — Taxonomy of omission mechanisms
 
@@ -27,10 +39,6 @@ source's claim cannot be mistaken for this survey's synthesis.
   principle rather than direct implementations of the target enumerator.
 - **Scope:** Cross-literature classification of omission mechanisms; a descriptive taxonomy with no algorithmic content of its own.
 - **Prior frontier:** Each omission mechanism is separately established in its own literature (projected enumeration, don’t-care minimization, equal-behavior factorization, decision-path sparsity); the four-way distinction and the adjacency classification are this survey’s organization.
-- **Evidence:** the evidence ledger connects the four omission mechanisms
-  and adjacent observer-relative reductions to their primary-source rows. The
-  taxonomy itself is a cross-literature synthesis, not a theorem attributed to
-  any one source.
 
 ### C02 — Equivalent presentations of selection observation
 
@@ -72,31 +80,17 @@ source's claim cannot be mistaken for this survey's synthesis.
   On full-dimensional interiors, feasible activation patterns and their
   polyhedral regions are exactly the resulting observation image and fibers.
 - **Scope:** All-sites-observed affine specializations — hyperplane-arrangement cells, dense ReLU activation regions on full-dimensional interiors, and parametric partitions.
-- **Prior frontier:** Avis and Fukuda prove output-polynomial reverse-search
-  enumeration of every arrangement cell under an arithmetic/LP-operation cost
-  model (not a coefficient-bit bound), Sleumer improves the fixed-dimension
-  arithmetic bound, Ferrez et al. give a pre-Rada ray-shooting central-arrangement
-  algorithm with \(O(K m\,LP(m,D))\) time (writing \(m\) for the hyperplane count) and input-polynomial working space,
-  and Rada and Černý give a later complete duplicate-free incremental
-  formulation; Deza and Pournin give a self-contained rational-bit analysis of
-  zonotope traversal
-  with output-sized retention but no stronger generic bound, while their White
-  Whale successor exploits structured symmetry; Serra et al. enumerate
-  feasible ReLU patterns;
-  Geyer et al. compose affine event cells into exact PWA guard/residual pairs;
-  Jones and Maciejowski give duplicate-free output-sensitive pLP critical-region
-  enumeration with a reconstructible affine optimizer; Jones and Morari, then
-  Columbano, Fukuda, and Jones, extend full-dimensional enumeration to pLCPs
-  including pLP and convex pQP and give explicit perturbation-safe per-output
-  LP-oracle bounds; Spjøtvold, Tøndel, and Johansen give a unique continuous
-  minimum-norm pQP selection and algorithm-independent polyhedral
-  representation; Geyer et al. 2008
-  minimize behavior-equivalent PWA guards under explicit representation and
-  solver qualifications;
-  Tran's stars and Robinson's explicit PWA conversion emit exact guards with
-  affine images before RPM's adjacency walk; Masden and Berzins recover richer
-  cell complexes; Wang merges activation cells into maximal equal-affine
-  regions; and Drammis et al. analyze parallel layerwise enumeration.
+- **Prior frontier:** Arrangement reverse search and traversal (Avis and
+  Fukuda; Sleumer; Ferrez et al.; Rada and Černý) establish complete,
+  duplicate-free cell enumeration with output-sensitive bounds under
+  arithmetic or LP-oracle cost models. Exact neural-region constructions
+  (Serra et al.; Tran; Robinson; Vincent and Schwager) establish feasible-regime
+  enumeration with polyhedral guards and affine residuals. Parametric PWA,
+  pLP, pQP, and pLCP methods (Geyer et al.; Jones and coauthors) supply
+  compositional guard/residual partitions and stronger specialized bounds.
+  PWA minimization and exact neural trees or diagrams additionally establish
+  extensional coalescing and dynamic test omission. The route syntheses retain
+  the work-level bounds and caveats.
 - **Consequence:** A variable sparse domain is also anticipated by ordinary
   decision-tree paths, and exact neural trees/TADS can prune infeasible or
   forced activation tests while preserving the output. Any remaining

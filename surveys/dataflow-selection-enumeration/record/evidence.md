@@ -1,19 +1,28 @@
 # Evidence ledger
 
-One record per evidence item: a single checkable finding from the
-literature, bound downward to source-note anchors, upward to the
-`Cxx` claims it supports, and across to the manuscript sections that
-cite on its strength. Scope and caveat ride the record. The
-validator enforces the bindings. Keys are comma-separated, anchors
-semicolon-separated.
+This file owns the bindings between literature, survey claims, and manuscript
+use. Each `Exxx` record contains one checkable finding from the literature,
+links downward to source-note anchors, upward to supported `Cxx` claims, and
+across to manuscript sections that cite on its strength. It does not replace
+the full reading notes in `sources/`, the survey propositions in `claims.md`,
+or the interpretation in `syntheses/`. Scope and caveat remain attached to the
+finding, and the validator enforces the bindings.
 
-Fields: **Finding** (what the literature shows), **Works** (citekeys),
-**Anchors** (`sources/<citekey>.md#<heading>`), **Supports** (`Cxx`,
-omitted when none), **Manuscript** (section labels, omitted when
-none), **Scope**, **Caveat**, and **Certainty** (`high`/`moderate`/`low`,
-GRADE-inspired; assigned 2026-08-09 against the source notes' read
-depth and evidence limits).
+## Record schema
 
+- **Finding** — one checkable statement of what the cited literature shows.
+- **Works** — comma-separated citekeys for the works supporting the finding.
+- **Anchors** — semicolon-separated source-note locations, written as
+  `sources/<citekey>.md#<heading>`.
+- **Supports** — comma-separated `Cxx` claim identifiers; omitted when the
+  finding supports no registered claim.
+- **Manuscript** — comma-separated section labels where the finding is used;
+  omitted when it is not cited in the manuscript.
+- **Scope** — the part of each work on which the finding relies.
+- **Caveat** — the limits on what may be inferred from the finding.
+- **Certainty** — `high`, `moderate`, or `low`, based on source-note read depth
+  and evidence limits using a GRADE-inspired scale; reassessed whenever the
+  finding or its evidence changes.
 
 ### E001
 

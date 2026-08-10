@@ -1,21 +1,28 @@
 # Survey syntheses
 
-These living documents state the current cross-paper understanding by theme.
-They should compare definitions and results rather than concatenate paper
-summaries. Git preserves superseded interpretations.
+This directory owns the survey's current cross-paper interpretation. Its files
+compare definitions and results rather than concatenate paper summaries. They
+do not own individual source findings (`../sources/`), the status or method
+(`../status.md` and `../protocol.md`), the formal claim/evidence ledgers, or the
+published prose. Git preserves superseded interpretations.
 
-Every deep-reading batch must identify the syntheses it affects. A synthesis
-update should state the current conclusion, strongest supporting and limiting
-results, scope conditions, and any consequence for `claims.md` or the
-manuscript. Chronological reading notes do not belong here.
+## Map
 
-- `current-position.md` is the compact entry point.
-- `closest-work-audit.md` stress-tests reductions from the approaches that most
-  directly overlap the survey's formal object; its name deliberately avoids
-  implying that subsumption has been proved.
-- `approach-guarantees.md` is the canonical RQ3/RQ4 matrix: it records each
-  representative work's native observer, guarantees, missing record fields,
-  and correspondence status.
-- `terminology.md` records the adopted terms and required distinctions.
-- `unified-framework/` is the manuscript framework's formal workspace — definitions,
-  derivations, counterexamples, and the reduction audit.
+- `current-position.md` — compact statement of the current interpretation and
+  stable conclusions.
+- `approach-guarantees.md` — canonical RQ3/RQ4 matrix of native observers,
+  guarantees, missing record fields, and correspondence status.
+- `closest-work-audit.md` — adversarial correspondence checks for the closest
+  approaches, without presuming a subsumption result.
+- `terminology.md` — adopted vocabulary, provenance, and distinctions that
+  must remain stable across the record and manuscript.
+- Route and boundary syntheses — `symbolic-execution.md`,
+  `output-directed-execution.md`, `projected-model-enumeration.md`,
+  `decision-structures.md`, `demand-meanings.md`,
+  `demand-driven-testing.md`, `local-exhaustive-testing.md`,
+  `geometric-and-neural-regions.md`, `hardware-dataflow.md`,
+  `term-graphs.md`, `observer-equivalence.md`, and
+  `state-and-search-reduction.md`.
+- `unified-framework/` — formal workspace for definitions, derivations,
+  algorithms, complexity, composition, counterexamples, open questions, and
+  reduction audits.

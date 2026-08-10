@@ -1,7 +1,5 @@
 # Closest-work audit and reduction boundaries
 
-Status: current through the 2026-08-04 baseline
-
 This document compares works that plausibly subsume the running formal object
 or establish a particularly important boundary. Inclusion here is intentionally
 more selective than the survey catalog. Catalog entries marked

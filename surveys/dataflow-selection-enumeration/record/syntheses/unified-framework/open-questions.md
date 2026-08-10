@@ -1,4 +1,4 @@
-# Open framework obligations
+# Open research questions
 
 - **F01 — Partiality and recurrence:** Determine which classes of partial
   primitives, cycles, recursion, or recurring component occurrences retain a
@@ -13,10 +13,12 @@
 - **F04 — Summary reuse:** Characterize the interface and workload conditions
   under which demand-parametric component summaries compress repeated analyses
   rather than reproduce an exponential family of contextual fibers.
-- **F05 — Universal-property wording:** Keep the selective interpretation as an
-  organizing derivation unless a non-tautological minimality statement survives
-  the observer-relative reduction audit.
+- **F05 — Universal characterization:** Does selective interpretation admit a
+  non-tautological minimality, free, or full-abstraction theorem beyond the
+  kernel of an instrumented observer? Until one survives the observer-relative
+  reduction audit, retain it only as an organizing derivation.
 
-These are research questions left open by the manuscript, not hypotheses of
-novelty. Close an item only after reconciling the unified framework, claim
-ledger, evidence ledger where prior work is involved, and manuscript text.
+These are subject-level research questions left open by the manuscript, not
+unfinished survey tasks or hypotheses of novelty. Resolve an item only after
+reconciling the unified framework, claim ledger, evidence ledger where prior
+work is involved, and manuscript text.

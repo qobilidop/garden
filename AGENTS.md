@@ -77,7 +77,7 @@
   conventions. A survey groups as `index.md` (landing page, the
   citekey/backlink surface) + `record/` (the minimal resumable state:
   method, searches, catalog, evidence notes) + `manuscript/` (Typst
-  paper: paged + HTML wrappers over shared `content.typ`/`meta.typ`,
+  paper: paged + HTML wrappers over shared `content.typ`/`metadata.typ`,
   standalone by design), compiled into `site/public/` by
   `site/scripts/build-manuscripts.py` (typst pinned in the dev
   image).

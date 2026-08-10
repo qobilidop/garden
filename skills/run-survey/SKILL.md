@@ -41,35 +41,41 @@ genre noun; see `references/terminology.md` for how house terms map
 to the field's): it closes on bounded mapping closure (§7) and
 promises no maintenance cadence — but the
 update infrastructure stays standing, so that when an update is
-wanted, staging it is one command and the record README's procedure
-carries it to reconciliation.
+wanted, staging it is one command and this skill's procedure, plus
+the record README's local integration points, carries it to
+reconciliation.
 
 The record's spine is one ledger and one log, the same grammar at
 every scale. `catalog.tsv` holds the current state: one row per
 surfaced work, ever — `key`, `status`, `code` (exclusion code when
 excluded), then survey-declared columns (facets, cluster, priority,
-display title). The status vocabulary is declared in the README from
-one scrutiny scale — `candidate` (surfaced, unjudged) → `screened`
+display title). The survey's validator declaration pins the selected
+status vocabulary from one scrutiny scale — `candidate` (surfaced, unjudged) → `screened`
 (judged from metadata) → `included`/`deep-read` — with terminal
 `excluded` (coded) and `parked` (undecidable now, re-screened on
 update). A minimal survey declares `{included, excluded, parked}`;
 a discovery-heavy one adds the earlier states rather than switching
 systems. `log.tsv` holds history (§2). Dedup goes through the
 normalized identifier grammar of §2 whatever the key column shows.
-Every record file gets a stated purpose and update rule in the
-README; layers beyond the minimal shape are declared there in a
-Shape note, as intent rather than drift.
+Every record file gets a stated purpose and update rule in the local
+README. The shared workflow remains canonical in this skill: survey
+READMEs and protocols point here instead of copying generic search,
+screening, snowballing, logging, update, and closure rules. They
+record only local commands, choices, overrides, and integration
+surfaces.
 
 ## 2. Search, catalog, screen
 
 - Protocol before search — the canon's core bias control: write and
-  human-gate the protocol (scope, research questions, selection
-  criteria, facet plan, source list) before the first logged search,
-  as `record/protocol.md` (a thin survey may fold it into the record
-  README's contract). The protocol always reads as the current
-  rules: a material method change updates it in place and is logged,
-  dated and append-only, in `status.md`'s Method changes section as
-  it happens — never applied silently. The log is campaign-scoped:
+  human-gate the survey-specific protocol (objective, research
+  questions, scope and selection boundaries, facet choices, source
+  registry, and any override to this skill) before the first logged
+  search, as `record/protocol.md`. Do not restate this skill's shared
+  identifier, screening, snowball, log, update, or closure rules.
+  The protocol always reads as the current local choices: a material
+  method change updates it in place and is logged, dated and
+  append-only, in `status.md`'s Method changes section as it happens
+  — never applied silently. The log is campaign-scoped:
   it dissolves at campaign close (§7), its content by then absorbed
   into the protocol's final state, the log's audit rows, and the
   manuscript's disclosures.
@@ -83,13 +89,14 @@ Shape note, as intent rather than drift.
   arXiv via the shared clients in this skill's `scripts/` —
   `search_<source>.py` for query-driven discovery (snowballing is a
   search method, so citation chases are their `snowball`
-  subcommands), `fetch_*` for identifier-driven retrieval; caps and
-  retry conventions are documented
-  in the protocol — the logged search rows are the query set,
+  subcommands), `fetch_*` for identifier-driven retrieval; caps live
+  in the survey's `queries.tsv`, while retry conventions live here
+  and in the shared tools. The logged search rows are the query set,
   rerun verbatim on update. Search and snowball rows record their
   decided keys per row, not only counts.
-- One key grammar, documented in the protocol: `doi:`/`arxiv:`
-  normalized (arXiv-DOIs collapse, versions stripped, lowercase),
+- One key grammar, defined here unless a local protocol records an
+  override: `doi:`/`arxiv:` normalized (arXiv-DOIs collapse,
+  versions stripped, lowercase),
   `t:<title-slug>` fallback, `legacy:` reserved for rows whose
   identifier and title are both unrecoverable; a published version
   of an included preprint replaces its key, the superseded key
@@ -183,7 +190,7 @@ Shape note, as intent rather than drift.
 - Deep-read the anchor candidates into `record/sources/` notes,
   each named `<citekey>.md`. The note contract is this skill's
   `assets/source-note-template.md`; surveys declare extra fields in
-  their README Shape note rather than forking the template. Note
+  their local protocol rather than forking the template. Note
   facets from full text are authoritative for
   that work but never silently overwrite the abstract-level map —
   disagreements stand, disclosed in the manuscript's limitations.
@@ -208,11 +215,13 @@ Shape note, as intent rather than drift.
   chronological reading notes. Git keeps superseded interpretations.
   (This is the survey-local instance of the library → wiki pattern.)
 - `record/claims.md` — the synthesis claims as a statused ledger:
-  each claim carries a status on the survey's declared scale (the
-  reference lifecycle: `hypothesis` → `supported` / `known-result` /
-  `rejected`, declared in the preamble), explicit scope, and its
-  closest established result; ids are `Cxx`, epistemically neutral
-  so they survive status transitions.
+  each claim carries a status on the survey's declared scale. In the
+  reference lifecycle it is a `hypothesis` while under examination,
+  becomes `survey synthesis; <resolution>` when settled, or remains
+  `rejected` temporarily as a guardrail; the preamble declares the
+  local grammar. Every claim has explicit scope and its closest
+  established result; ids are `Cxx`, epistemically neutral so they
+  survive status transitions.
 - `record/evidence.md` — the binding layer: one record per evidence
   item (`Exxx`) stating one checkable finding from the literature
   (findings support claims; never two senses of "claim"), linked
@@ -249,7 +258,7 @@ Shape note, as intent rather than drift.
 
 ## 5. Manuscript
 
-- Typst, split for drift-freedom: `meta.typ` (exports `title`,
+- Typst, split for drift-freedom: `metadata.typ` (exports `title`,
   `subtitle`, `byline`, `author-note`, `draft` — the
   "Draft YYYY-MM-DD" stamp — `landing`, `record`, `abstract-body`)
   + `content.typ` (body; a long manuscript may split into
@@ -337,8 +346,8 @@ fix introduces before persisting it.
   (`scripts/update.py --record surveys/<slug>/record fetch --all`),
   triggered by a close competitor, a new theme, or simply wanting
   fresher coverage. Fetches stage into
-  scratch and never advance state; the record README's numbered
-  procedure carries a batch from staging through reconciliation —
+  scratch and never advance state; this skill's procedure carries a
+  batch from staging through reconciliation —
   one audited-log row per executed query — to advancing state and a
   clean validator run, and no state advances before the human gate,
   whose approval lands in the README's update ledger (one row per
@@ -346,12 +355,13 @@ fix introduces before persisting it.
   gate cell, column semantics stated beside the table). A plausible
   close competitor or new mechanism is always grounds to update now.
 - Prune `record/` to the minimal resumable state: `README.md` (the
-  operating contract — intro with the self-sufficiency statement,
-  Start here commands, Shape note, Files map, update ledger,
-  bibliography-and-build, numbered update procedure; the method
-  rules themselves — scope, search/key/snowball/selection rules,
-  facet tokens — live in `protocol.md` per §2, and build docs stay
-  in AGENTS.md and this skill, pointed to rather than duplicated),
+  local map and operations entry point — Start here commands, one
+  canonical-purpose line per record surface, the update ledger,
+  local build invocations, and survey-specific reconciliation
+  points; it refers to this skill for the shared procedure),
+  `protocol.md` (only the survey-specific objective, questions,
+  scope/selection boundaries, vocabularies, and overrides — never a
+  copy of the shared method),
   `status.md` (H1 `# Current survey status`, a `**Coverage
   through:**` bullet, mechanical counts copied from the validator,
   the campaign-scoped `## Method changes` log — the append-only
@@ -380,11 +390,12 @@ fix introduces before persisting it.
   recur ships as a tracked script in this skill's `scripts/`. One
   update's dedup, abstract enrichment, vocabulary filter, and
   defective-bibliography handler were written under a gitignored
-  `.scratch/`, so the policy survived in the protocol while the tools
+  `.scratch/`, so the policy survived here while the tools
   vanished and the next updater rebuilds them.
-- Updates follow the record README's own procedure; this skill defers
-  to it. Its last step syncs counts and dates in the README and the
-  landing page.
+- Updates follow this skill's shared procedure. The record README
+  supplies the concrete commands and local reconciliation surfaces;
+  its last local step syncs derived counts and dates in `status.md`
+  and the landing page.
 - Verify builds, propose commits with the attribution trailer, commit
   on the user's word. A long campaign stages harness lessons in
   `scratch/` as they surface; post-campaign /evolve mines them.

@@ -1,6 +1,10 @@
 # Current position
 
-## Survey question
+This file is the compact entry point to the survey's current interpretation.
+It owns the high-level cross-paper conclusions, not the study method, dated
+status, update procedure, evidence records, or route-by-route matrix.
+
+## Target of comparison
 
 The paper is a problem-centered survey of exhaustive enumeration of selection
 observations in finite pure dataflow graphs. For a caller domain and requested
@@ -49,22 +53,6 @@ does not emit exact fiber guards or residuals; and Wang's output is a colored
 class tree rather than a caller-input record. The field-by-field comparison is
 maintained in `approach-guarantees.md`.
 
-## Recurring solution routes
-
-| Route | Relationship to the target |
-|---|---|
-| Guarded symbolic execution | Direct only after requested-root demand, contextual event logging, and proved full-fiber grouping; the closest published output-directed algorithms have an open correspondence |
-| Projected model enumeration | Direct for observation indexing after unobserved-or-outcome instrumentation; residuals require a separate exact step |
-| Decision structures | Direct when compiling the totalized observer rather than only the output function |
-| Demand-guided search | Open correspondence until its demand/trace judgment and record contract are proved equivalent |
-| Geometric and parametric enumeration | Dense strict-sign cells are a restricted direct specialization on boundary-free whole-cell domains; optimizer critical regions generally use a different observer |
-| Compositional guarded summaries | Exact representation under requested-output demand, contextual identity, and explicit interface support |
-
-Partial-order reduction, Petri-net unfoldings, observer-guided state reduction,
-and broad dataflow semantics remain adjacent evidence. They establish that
-omission is observer-relative but do not emit caller-input fibers with typed
-residuals.
-
 ## Stable conclusions
 
 - The selection-observation formulation is not a new generic enumeration
@@ -80,17 +68,3 @@ residuals.
 - Exact composition with flattening does not imply compact summaries or reuse.
 - Stronger complexity results belong to restricted geometric, parametric, or
   precompiled representations and do not transfer automatically.
-
-## Maintenance implication
-
-A new work changes the paper when it provides a more direct reduction, a new
-solution route, a stronger guarantee for the same observer, a broader exact
-program model, or a representation result that changes the comparison. Such a
-finding updates the source note, affected thematic synthesis, claim ledger,
-evidence ledger, and manuscript; adding a catalog row alone does not complete
-the update.
-
-The record is presently a bounded search snapshot, not a closed evidence map.
-Deep-read and screened works support the current synthesis, while the remaining
-`candidate` rows are an unresolved discovery backlog. Absence of a closer paper
-from the reviewed set is not evidence that none exists.
