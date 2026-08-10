@@ -39,7 +39,7 @@ disprove* each. The design insight the paper states plainly: an
 auto-formalized statement is useful training signal *regardless of
 its fidelity* to the original problem — mistranslations are still
 well-formed formal statements. A beautiful inversion of the
-specification-fidelity problem [[jiang2026-solvers-to-research]]
+specification-fidelity problem [[jiang2026-solvers]]
 documents on the evaluation side: infidelity poisons benchmarks but
 feeds curricula. Main RL ran ~80,000 TPU-days, and its yield is
 partly *efficiency*: the final agent reaches ~30% on historical IMO
@@ -93,7 +93,7 @@ being consciously operated here.
   humans' 4.5 hours; a scale "likely beyond most academic groups";
   combinatorics unsolved (P3/P5 — and formal-imo combinatorics at
   20.3% vs ~73–76% for algebra/NT, the same domain gap
-  [[jiang2026-solvers-to-research]]'s tables show field-wide);
+  [[jiang2026-solvers]]'s tables show field-wide);
   and the closing admission that competition math has a fixed concept
   library, while research mathematics requires theory building — the
   exact boundary the solvers-to-researchers survey draws.

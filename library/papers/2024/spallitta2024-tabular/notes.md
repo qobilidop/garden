@@ -1,5 +1,5 @@
 ---
-citekey: spallitta2024-disjoint-enumeration
+citekey: spallitta2024-tabular
 work:
   title: "Disjoint projected enumeration for SAT and SMT without blocking clauses"
   author: Giuseppe Spallitta, Roberto Sebastiani, Armin Biere

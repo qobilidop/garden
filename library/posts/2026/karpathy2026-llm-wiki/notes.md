@@ -122,7 +122,7 @@ no method here to fail, only a shape to instantiate.
   reliable feedback signal degrade. The wiki's implicit feedback is the
   human reading every page in Obsidian; unsupervised batch-ingest
   weakens exactly that check.
-- [[vincent2026-therapist-pattern]] — the ownership split is the
+- [[vincent2026-therapist]] — the ownership split is the
   same: the LLM is the designated writer to a versioned surface, the
   human directs. Karpathy's rule that the human rarely edits the wiki
   directly is that pattern at wiki scale.

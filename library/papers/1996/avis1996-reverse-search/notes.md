@@ -98,7 +98,7 @@ parallel” traversal sometimes are.
   arithmetic/LP-relative result, not a coefficient-bit analysis, and it omits
   all lower-dimensional faces.
 - **Against the library:** [[phan2015-all-smt]]
-  and [[spallitta2024-disjoint-enumeration]]
+  and [[spallitta2024-tabular]]
   organize enumeration through solver search rather than an explicit object
   adjacency graph. Reverse search obtains polynomial working space from a
   unique parent; the solver methods obtain duplicate avoidance from blockers

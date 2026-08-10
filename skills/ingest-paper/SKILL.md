@@ -40,15 +40,16 @@ rclone `store:` remote; `./dev.sh <cmd>` provides the pinned toolchain
 
 ## 2. Citekey
 
-`<lowercase-first-author-surname><year>-<short-label>`. The label is at most
-32 characters and three hyphen-separated tokens. Choose it in this order:
+`<lowercase-first-author-surname><year>-<short-label>`. The complete citekey is
+at most 28 characters; the label is at most three hyphen-separated tokens.
+Choose it in this order:
 
 1. The work's established name or acronym, when one exists: `alphageometry`,
    `alphaproof`, `gpt-f`, `prisma`, `ace`.
 2. A concise canonical URL slug, when it names the work rather than an id,
    date, or generic page type: `harness`, `scaling-laws`.
-3. One to three distinctive title words: `symbolic-execution`,
-   `dual-model-screening`, `slr-guidelines`.
+3. One to three distinctive title words, using only what earns its space:
+   `symbolic`, `screening`, `slr`.
 
 Drop articles and generic framing (`a survey of`, `guidelines for`,
 `towards`, `an approach to`). Strip leading dates from URL slugs
@@ -58,8 +59,9 @@ collides, add or replace one meaningful distinguishing word while staying
 within the limits; never append an arbitrary `a`/`b`.
 
 The citekey is stable after ingestion and determines every path below; no
-lookup tables. The site checks its shape, length, token count, path/frontmatter
-agreement, and uniqueness. Label choice remains a human judgment.
+lookup tables. The site checks its shape, full length, token count,
+path/frontmatter agreement, and uniqueness. Label choice remains a human
+judgment.
 
 ## 3. Capture to tiers
 

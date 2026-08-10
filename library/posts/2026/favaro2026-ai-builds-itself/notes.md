@@ -136,7 +136,7 @@ empirical finding of the internal studies.
   Claude to evaluate Claude; productivity has no external counterfactual;
   and the company is simultaneously evidence source, model vendor, and
   policy advocate.
-- **Against the library:** [[jiang2026-solvers-to-research]] finds the
+- **Against the library:** [[jiang2026-solvers]] finds the
   same execution-versus-discovery boundary in formal mathematics, where
   support work overwhelms genuinely novel solutions. Together they argue
   that abundant verified doing does not by itself demonstrate research

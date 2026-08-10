@@ -10,7 +10,7 @@ Systems that modify themselves from their own experience. Shelf:
 [[favaro2026-ai-builds-itself]] (frontier-lab evidence of R&D
 automation),
 [[osmani2026-loop-engineering]] (the loop layer from the product side),
-[[vincent2026-therapist-pattern]] and [[vincent2026-superpowers-6]]
+[[vincent2026-therapist]] and [[vincent2026-superpowers-6]]
 (field reports), [[karpathy2026-llm-wiki]] (the pattern applied to
 knowledge rather than procedures).
 
@@ -45,7 +45,7 @@ one loop shape:
   model other than the one doing the work.
 - **Receipts.** A claimed lesson counts only as a diff in a versioned,
   inspectable surface through the designated writer
-  ([[vincent2026-therapist-pattern]]); audit records name behavior,
+  ([[vincent2026-therapist]]); audit records name behavior,
   surface, evidence, and validation ([[zhang2026-self-harness]]).
 - **Negative results are logged, not discarded** — rejected proposals,
   provably dead ideas, closed leads ([[vincent2026-superpowers-6]],
@@ -59,7 +59,7 @@ coarsens to model/harness/artifact and adds the artifact as a
 first-class locus (its canonical exemplar, [[novikov2025-alphaevolve]],
 is now in the library: evolution over programs under a fixed scorer,
 with MAP-elites diversity and verification-before-persistence at
-population scale); [[vincent2026-therapist-pattern]] names one the
+population scale); [[vincent2026-therapist]] names one the
 taxonomies miss (identity/persona); [[karpathy2026-llm-wiki]] shows the
 same loop with *knowledge* as the evolving artifact — compile sources
 into a maintained wiki instead of re-retrieving, with the Memex's
@@ -104,7 +104,7 @@ selects moments where the human had room to improve, so they show a rung
 being climbed, not research-taste parity. Under the field map's
 experience-dependent, persistent, self-initiated test, this is accelerated
 delegation inside AI R&D, not yet a self-evolving system.
-[[vincent2026-therapist-pattern]] explores replacing human gates
+[[vincent2026-therapist]] explores replacing human gates
 with structural internal ones (sole-writer roles, time as a gate) — a
 philosophical fork from the survey's human-approval checklist worth
 watching.

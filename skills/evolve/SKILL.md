@@ -114,7 +114,7 @@ Design distilled from the library's self-evolving-agents shelf:
 - `weng2026-harness` — improvement machinery is cheap, benefiting is
   scarce: stay lightweight, log negative results, keep the evaluator
   (the user) outside the loop.
-- `vincent2026-therapist-pattern` — a claimed lesson counts only as
+- `vincent2026-therapist` — a claimed lesson counts only as
   a diff in a versioned surface through the designated writer; "I'll
   remember that" is a red flag.
 - `vincent2026-superpowers-6` — autonomy is earned rung by rung, by

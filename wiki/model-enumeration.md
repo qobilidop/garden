@@ -5,7 +5,7 @@ formula and an observation contract. The shelf, by role:
 [[phan2015-all-smt]] (classic projected
 All-SMT interface), [[avis1996-reverse-search]] (parent-map
 enumeration with output-sensitive specializations), and
-[[spallitta2024-disjoint-enumeration]]
+[[spallitta2024-tabular]]
 (disjoint projected partial models without accumulated blockers).
 
 ## The observation contract determines what “all” means

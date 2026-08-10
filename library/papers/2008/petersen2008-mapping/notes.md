@@ -1,5 +1,5 @@
 ---
-citekey: petersen2008-systematic-mapping
+citekey: petersen2008-mapping
 work:
   title: Systematic Mapping Studies in Software Engineering
   author: Kai Petersen, Robert Feldt, Shahid Mujtaba, Michael Mattsson
@@ -30,7 +30,7 @@ paper defines the process by walking their own product-line
 variability map against it, then argues from a characterization of
 ten existing SE systematic reviews that maps deserve a broader role
 than the "areas lacking good primary studies" niche
-[[kitchenham2007-slr-guidelines]]
+[[kitchenham2007-slr]]
 had assigned them.
 
 ## The process

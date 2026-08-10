@@ -1,5 +1,5 @@
 ---
-citekey: kitchenham2007-slr-guidelines
+citekey: kitchenham2007-slr
 work:
   title: Guidelines for performing Systematic Literature Reviews in Software Engineering
   author: Barbara Kitchenham and Stuart Charters
@@ -102,7 +102,7 @@ scoped for PhD students.
   discipline, transmitted through two decades of SE practice. Its
   own form argues the layer's citability case: a versioned,
   never-journal-published technical report cited five figures deep.
-  [[petersen2008-systematic-mapping]]
+  [[petersen2008-mapping]]
   elaborates the mapping branch §8 sketches;
   [[wohlin2014-snowballing]]
   supplies the search procedure §6.1 lists but does not specify;

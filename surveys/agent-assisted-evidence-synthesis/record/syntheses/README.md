@@ -24,9 +24,9 @@ wording. Git preserves superseded interpretations.
 Works are cited with manuscript citekeys, which normally match note stems in
 `../sources/`. Four shorter manuscript citekeys map to canonical library notes:
 `kitchenham2007` →
-`kitchenham2007-slr-guidelines`,
+`kitchenham2007-slr`,
 `petersen2008` →
-`petersen2008-systematic-mapping`,
+`petersen2008-mapping`,
 `wohlin2014` →
 `wohlin2014-snowballing`,
 and `page2021` → `page2021-prisma`. A number or conclusion

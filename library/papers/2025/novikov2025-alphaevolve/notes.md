@@ -80,7 +80,7 @@ strength).
   were deferred to a follow-up paper), and the white-paper genre — no
   peer review, self-reported infra numbers.
 - **Boundary:** stated by the authors (automated evaluators only) and
-  sharpened by [[jiang2026-solvers-to-research]] —
+  sharpened by [[jiang2026-solvers]] —
   score-function-driven exploration is bound to predefined objectives,
   transfers no structure across problems, and invents no concepts; it
   widens search, not understanding. That critique coexists with this

@@ -2,7 +2,7 @@
 
 AI systems producing mathematics, and the machinery for trusting what
 they produce. The shelf, by role: the field map
-([[jiang2026-solvers-to-research]] — solver regime saturated,
+([[jiang2026-solvers]] — solver regime saturated,
 research agents are the frontier), the founding methods
 ([[polu2020-gpt-f]],
 [[jiang2022-draft-sketch-prove]],
@@ -70,7 +70,7 @@ axioms were used — the discipline the postmortem's layered argument
 prescribes, run in production.
 
 Above the kernel sits a second trust layer the certificates don't
-cover: **statement fidelity**. [[jiang2026-solvers-to-research]]
+cover: **statement fidelity**. [[jiang2026-solvers]]
 documents it as the field's recurring failure — compilation does not
 imply the formal statement captures the intended theorem. The
 standard example: Aristotle's machine-checked late-2025 "solution" to
@@ -100,7 +100,7 @@ adversaries exactly as they reassure reviewers.
 
 ## Solvers, not yet researchers
 
-[[jiang2026-solvers-to-research]] supplies the shelf's base
+[[jiang2026-solvers]] supplies the shelf's base
 rates. Competition benchmarks are exhausted (miniF2F ~30%→99.6% in
 four years — AlphaProof holds that endpoint; IMO at medal level and
 climbing), but the Erdős-problem accounting —
@@ -133,15 +133,15 @@ loop closing on science rather than benchmarks.
 
 The announcement is deliberately thin; the mathematics lives in the
 linked ten-proofs paper — the natural next ingestion, as a papers/
-entry, now with [[jiang2026-solvers-to-research]]'s checklist to apply (rediscovery,
+entry, now with [[jiang2026-solvers]]'s checklist to apply (rediscovery,
 specification fidelity, selection bias). Open questions the current
 works raise but don't settle: *tooling* for statement–formalization
-correspondence ([[jiang2026-solvers-to-research]] names the failure and floats FormalAlign-
+correspondence ([[jiang2026-solvers]] names the failure and floats FormalAlign-
 style checkers, but nothing settles it); whether the released
 reasoning traces support or merely narrate the discovery claims; how
 the five named human follow-up papers to the unit-distance disproof
 treat AI-originated results; and whether the First Proof challenge
-(ten never-published research problems, endorsed by [[jiang2026-solvers-to-research]] as the
+(ten never-published research problems, endorsed by [[jiang2026-solvers]] as the
 clean evaluation) resists the contamination that saturated the
 competition benchmarks. The kernel-side thread continues too:
 verified kernels reaching inductives, and whether comparator-style

@@ -99,7 +99,7 @@ theories or output representations.
   the client as making one solver call without charging the internal sequence
   of satisfiability checks. `VR` values are examples from one model, not
   residual functions valid over an entire projected fiber.
-- **Against the library:** [[spallitta2024-disjoint-enumeration]]
+- **Against the library:** [[spallitta2024-tabular]]
   keeps projection and SMT reasoning but replaces accumulated blockers with
   chronological search and emits disjoint partial models. The later method
   changes both the search architecture and the output object, so shorter

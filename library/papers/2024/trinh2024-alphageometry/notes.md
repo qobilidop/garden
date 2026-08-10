@@ -77,7 +77,7 @@ search.
   mechanism.
 - **Era-bound:** the model and search scale, GPT-4 as the LLM
   baseline, and the result itself — AlphaGeometry2 reached gold-level
-  geometry within a year (per [[jiang2026-solvers-to-research]],
+  geometry within a year (per [[jiang2026-solvers]],
   which defers geometry methods to an appendix precisely because the
   DSL makes them hard to generalize from).
 - **Caveats (stated plainly by the paper):** IMO-AG-30 is

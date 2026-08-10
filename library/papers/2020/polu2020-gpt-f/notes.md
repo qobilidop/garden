@@ -20,7 +20,7 @@ synthesis: "GPT-f set the recipe modern provers still run — tactic generation 
 
 The founding paper of LLM-based theorem proving — a methods/system
 paper from OpenAI (Polu & Sutskever, Sep 2020) that
-[[jiang2026-solvers-to-research]] correctly names as where "the
+[[jiang2026-solvers]] correctly names as where "the
 lineage begins." Its motivating diagnosis still defines the field:
 classical ATP's limiting weakness is *generating original mathematical
 terms* (the creative substitutions unification can't derive), and
@@ -91,7 +91,7 @@ context evolution, observed here in weight space in 2020.
 - **Caveats:** never peer-reviewed, which given its influence is a
   comment on venue lag, not the work.
 - **In this library:** reading it after
-  [[jiang2026-solvers-to-research]] is an exercise in
+  [[jiang2026-solvers]] is an exercise in
   recognition — pretraining data curation, RL from verifier feedback,
   synthetic data, iterative self-improvement: the 2026 taxonomy's
   whole training-strategies axis is present here in miniature. And the

@@ -1,5 +1,5 @@
 ---
-citekey: baldoni2016-symbolic-execution
+citekey: baldoni2016-symbolic
 work:
   title: "A Survey of Symbolic Execution Techniques"
   author: Roberto Baldoni, Emilio Coppa, Daniele Cono D'Elia, Camil Demetrescu, Irene Finocchi

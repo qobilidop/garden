@@ -1,5 +1,5 @@
 ---
-citekey: vincent2026-therapist-pattern
+citekey: vincent2026-therapist
 work:
   title: The Therapist Pattern
   author: Jesse Vincent

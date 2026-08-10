@@ -46,10 +46,10 @@ function libraryFiles() {
     const frontmatter = readFileSync(file, 'utf8').match(/^---\n([\s\S]*?)\n---\n/)?.[1] ?? ''
     const declared = frontmatter.match(/^citekey:\s*(\S+)\s*$/m)?.[1]
     const match = key.match(/^[a-z][a-z-]*\d{4}-([a-z0-9]+(?:-[a-z0-9]+){0,2})$/)
-    if (!match || match[1].length > 32) {
+    if (!match || key.length > 28) {
       throw new Error(
         `Invalid library citekey "${key}": expected <author><year>-<label>, ` +
-          'with a lowercase label of at most 32 characters and three tokens',
+          'at most 28 characters total and three lowercase label tokens',
       )
     }
     if (declared !== key) {

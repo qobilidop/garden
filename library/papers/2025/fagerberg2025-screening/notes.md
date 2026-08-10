@@ -1,5 +1,5 @@
 ---
-citekey: fagerberg2025-dual-model-screening
+citekey: fagerberg2025-screening
 work:
   title: "Dual-Model LLM Ensemble via Web Chat Interfaces Reaches Near-Perfect Sensitivity for Systematic-Review Screening: A Multi-Domain Validation with Equivalence to API Access"
   author: "Petter Fagerberg et al. (7 authors)"

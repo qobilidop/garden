@@ -73,7 +73,7 @@ thinner than its citation count suggests.
   without substance — the items verify presence of disclosures, not
   their honesty.
 - **In this library:** the reporting phase of
-  [[kitchenham2007-slr-guidelines]]
+  [[kitchenham2007-slr]]
   matured into an enforced, versioned artifact — and the map for the
   survey layer's deposition gate: a sys0 survey's frozen record
   should be able to answer PRISMA's items (search strategies in the

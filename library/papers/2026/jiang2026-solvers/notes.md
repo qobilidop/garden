@@ -1,5 +1,5 @@
 ---
-citekey: jiang2026-solvers-to-research
+citekey: jiang2026-solvers
 work:
   title: "From Solvers to Research: Large Language Model-Driven Formal Mathematics at the Research Frontier"
   author: Eric Jiang, Xiao Liang, et al. (19 authors, UCLA + LLNL; incl. Terence Tao)

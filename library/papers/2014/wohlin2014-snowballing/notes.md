@@ -21,7 +21,7 @@ synthesis: "The snowballing canon: citation edges beat search strings because au
 
 The reference procedure for citation-based search in systematic
 literature studies (8 pages, EASE 2014). Where
-[[kitchenham2007-slr-guidelines]]
+[[kitchenham2007-slr]]
 takes database search strings as the first step and lists reference
 lists among "complementary searches" that most studies skip, Wohlin
 inverts the strategy: start from a small included set and traverse

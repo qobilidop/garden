@@ -34,7 +34,7 @@ and prior neural provers couldn't capitalize on it. On miniF2F the
 method nearly doubles the automated prover's success rate — 20.9% →
 39.3% (test) with human drafts, 38.9% with Minerva-540B drafts —
 then-SOTA for Isabelle. Why it's foundational:
-[[jiang2026-solvers-to-research]] invokes it in three separate
+[[jiang2026-solvers]] invokes it in three separate
 sections, and the decomposition lineage (DeepSeek-Prover-V2's
 subgoals, Seed-Prover's lemma style, Hilbert's recursion to 99.2%)
 descends from this structure.

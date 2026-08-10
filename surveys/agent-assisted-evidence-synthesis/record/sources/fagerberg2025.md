@@ -7,7 +7,7 @@ work:
   date: 2025
   doi: 10.1101/2025.11.03.25339455
 read: full-text
-source: "shadow/store/library/papers/2025/fagerberg2025-dual-model-screening/"
+source: "shadow/store/library/papers/2025/fagerberg2025-screening/"
 facets:
   stage: "screen"
   contribution: "evaluation"
