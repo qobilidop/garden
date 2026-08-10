@@ -6,5 +6,5 @@
 __pycache__/
 
 # Ignore temporary files
-/.scratch/
+.scratch/
 tmp/
