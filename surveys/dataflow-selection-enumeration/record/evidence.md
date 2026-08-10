@@ -31,7 +31,7 @@ depth and evidence limits).
 - **Works:** voogd2025compositional,sen2015multise,porncharoenwase2022merging,lu2023grisette
 - **Anchors:** sources/voogd2025compositional.md#evidence-locations;sources/sen2015multise.md#evidence-locations;sources/porncharoenwase2022merging.md#evidence-locations;sources/lu2023grisette.md#evidence-locations
 - **Supports:** C02,C03
-- **Manuscript:** sec-introduction,sec-related
+- **Manuscript:** sec-introduction,sec-routes
 - **Scope:** definitions and correctness theorems
 - **Caveat:** The exact equivalence conditions and merge contracts differ across languages; correspondence with selection fibers is our synthesis.
 - **Certainty:** low
@@ -42,7 +42,7 @@ depth and evidence limits).
 - **Works:** denaro2012allvalues,wang2017dependence
 - **Anchors:** sources/denaro2012allvalues.md#evidence-locations;sources/wang2017dependence.md#evidence-locations
 - **Supports:** C15
-- **Manuscript:** sec-related
+- **Manuscript:** sec-routes
 - **Scope:** algorithms, guarantees, and experiments
 - **Caveat:** Their CFG and dependence observers are not the selection-observation fiber.
 - **Certainty:** moderate
@@ -53,7 +53,7 @@ depth and evidence limits).
 - **Works:** phan2015allsmtr,spallitta2024disjoint,spallitta2025projected
 - **Anchors:** sources/phan2015allsmtr.md#evidence-locations;sources/spallitta2024disjoint.md#evidence-locations;sources/spallitta2025projected.md#evidence-locations
 - **Supports:** C01,C02,C03,C15
-- **Manuscript:** sec-introduction,sec-related,sec-algorithms
+- **Manuscript:** sec-introduction,sec-routes,sec-algorithms
 - **Scope:** algorithm and coverage/nonrepetition results
 - **Caveat:** Phan enumerates important Boolean coordinates; relevant theory-variable values are sampled annotations. A short projected cube can cover several complete observation tuples; equality with local exact fibers requires activity instrumentation and totalized output coordinates.
 - **Certainty:** high
@@ -64,7 +64,7 @@ depth and evidence limits).
 - **Works:** krafczyk2017effective,huang2024exhaustive
 - **Anchors:** sources/krafczyk2017effective.md#evidence-locations;sources/huang2024exhaustive.md#evidence-locations
 - **Supports:** C05,C15
-- **Manuscript:** sec-related
+- **Manuscript:** sec-routes
 - **Scope:** definitions, enumeration algorithms, and exactness results
 - **Caveat:** The graph-specific positive guard is a specialized representation of these generic fibers.
 - **Certainty:** high
@@ -75,7 +75,7 @@ depth and evidence limits).
 - **Works:** bryant1986bdd,bahar1997add
 - **Anchors:** sources/bryant1986bdd.md#evidence-locations;sources/bahar1997add.md#evidence-locations
 - **Supports:** C07,C15
-- **Manuscript:** sec-introduction,sec-related
+- **Manuscript:** sec-introduction,sec-routes
 - **Scope:** representation definitions and complexity
 - **Caveat:** A symbolic residual per observation terminal requires an additional construction.
 - **Certainty:** high
@@ -86,7 +86,7 @@ depth and evidence limits).
 - **Works:** antoy2011pull,brassel2007tighter,brassel2011thesis,jost2023fairscheme
 - **Anchors:** sources/antoy2011pull.md#evidence-locations;sources/brassel2007tighter.md#evidence-locations;sources/brassel2011thesis.md#evidence-locations;sources/jost2023fairscheme.md#evidence-locations
 - **Supports:** C01,C06,C15
-- **Manuscript:** sec-introduction,sec-related
+- **Manuscript:** sec-introduction,sec-routes
 - **Scope:** choice representations and adequacy/value-preservation theorems
 - **Caveat:** Identities and nondeterministic result semantics differ from static contextual graph sites.
 - **Certainty:** moderate
@@ -97,7 +97,7 @@ depth and evidence limits).
 - **Works:** runciman2008smallcheck
 - **Anchors:** sources/runciman2008smallcheck.md#evidence-locations
 - **Supports:** C01,C06,C15
-- **Manuscript:** sec-introduction,sec-related
+- **Manuscript:** sec-introduction,sec-routes
 - **Scope:** algorithm and exhaustiveness argument
 - **Caveat:** It does not emit one canonical exact guard/residual record per selection-observation fiber.
 - **Certainty:** high
@@ -108,7 +108,7 @@ depth and evidence limits).
 - **Works:** pingali1985efficient,avron1994stability
 - **Anchors:** sources/pingali1985efficient.md#evidence-locations;sources/avron1994stability.md#evidence-locations
 - **Supports:** C08,C15
-- **Manuscript:** sec-related
+- **Manuscript:** sec-routes
 - **Scope:** transform correctness, parsimony, and stability characterization
 - **Caveat:** Equality with the survey's strict finite enabled closure requires a specialization proof.
 - **Certainty:** high
@@ -119,7 +119,7 @@ depth and evidence limits).
 - **Works:** mokhov2019selective,godefroid2007compositional,anand2008demand
 - **Anchors:** sources/mokhov2019selective.md#evidence-locations;sources/godefroid2007compositional.md#evidence-locations;sources/anand2008demand.md#evidence-locations
 - **Supports:** C15
-- **Manuscript:** sec-related
+- **Manuscript:** sec-routes
 - **Scope:** universal interpreter and summary algorithms
 - **Caveat:** They do not state the exact requested-root observation-fiber correspondence.
 - **Certainty:** moderate
@@ -141,7 +141,7 @@ depth and evidence limits).
 - **Works:** avis1996reverse,sleumer1998output,ferrez2005fixedrank,rada2018new
 - **Anchors:** sources/avis1996reverse.md#evidence-locations;sources/sleumer1998output.md#evidence-locations;sources/ferrez2005fixedrank.md#evidence-locations;sources/rada2018new.md#evidence-locations
 - **Supports:** C04,C15
-- **Manuscript:** sec-introduction,sec-related,sec-complexity
+- **Manuscript:** sec-introduction,sec-routes,sec-complexity
 - **Scope:** algorithms, spanning arguments, and complexity theorems
 - **Caveat:** Bounds do not transfer to non-strict boundary fibers or arbitrary caller predicates.
 - **Certainty:** high
@@ -163,7 +163,7 @@ depth and evidence limits).
 - **Works:** serra2018bounding,vincent2021reachable
 - **Anchors:** sources/serra2018bounding.md#evidence-locations;sources/vincent2021reachable.md#evidence-locations
 - **Supports:** C04,C15
-- **Manuscript:** sec-related
+- **Manuscript:** sec-routes
 - **Scope:** encodings, traversal, and exactness
 - **Caveat:** Most results concern bounded dense networks and require boundary qualifications.
 - **Certainty:** moderate
@@ -174,7 +174,7 @@ depth and evidence limits).
 - **Works:** nguyen2020ecdt,affinitree2024
 - **Anchors:** sources/nguyen2020ecdt.md#evidence-locations;sources/affinitree2024.md#evidence-locations
 - **Supports:** C01,C04,C07,C09,C15
-- **Manuscript:** sec-related
+- **Manuscript:** sec-routes
 - **Scope:** construction and empirical evaluation for EC-DT; equivalence theorem and LP simplification for Affinitree
 - **Caveat:** Both preserve an extensional network function rather than the contextual selection-event observer; Affinitree's theorem-level guarantee is not attributed to EC-DT.
 - **Certainty:** moderate
@@ -185,7 +185,7 @@ depth and evidence limits).
 - **Works:** geyer2010mode,geyer2008optimal
 - **Anchors:** sources/geyer2010mode.md#evidence-locations;sources/geyer2008optimal.md#evidence-locations
 - **Supports:** C01,C04,C09,C15
-- **Manuscript:** sec-related,sec-complexity,sec-formal-model
+- **Manuscript:** sec-routes,sec-complexity,sec-framework
 - **Scope:** composition, exactness, and complexity results
 - **Caveat:** These methods preserve extensional affine behavior rather than contextual graph events.
 - **Certainty:** high
@@ -196,7 +196,7 @@ depth and evidence limits).
 - **Works:** jones2006parametric
 - **Anchors:** sources/jones2006parametric.md#evidence-locations
 - **Supports:** C04,C10,C15
-- **Manuscript:** sec-introduction,sec-related,sec-complexity
+- **Manuscript:** sec-introduction,sec-routes,sec-complexity
 - **Scope:** algorithm and complexity theorem
 - **Caveat:** The theorem is basis and full-dimensional-region relative and omits a coefficient-bit bound.
 - **Certainty:** high
@@ -207,7 +207,7 @@ depth and evidence limits).
 - **Works:** jones2006lcp,columbano2009sufficient,jones2007lexicographic,spjotvold2007unique,patrinos2010graphical,bemporad2015multiparametric,jones2008projection
 - **Anchors:** sources/jones2006lcp.md#evidence-locations;sources/columbano2009sufficient.md#evidence-locations;sources/jones2007lexicographic.md#evidence-locations;sources/spjotvold2007unique.md#evidence-locations;sources/patrinos2010graphical.md#qualifications-and-complexity;sources/bemporad2015multiparametric.md#evidence-locations;sources/jones2008projection.md#evidence-locations
 - **Supports:** C04,C10,C15
-- **Manuscript:** sec-related,sec-complexity
+- **Manuscript:** sec-routes,sec-complexity
 - **Scope:** theorems and algorithm analyses
 - **Caveat:** Each guarantee has distinct assumptions; perturbed bases can outnumber unperturbed regions and no general DelayP or bit bound is inferred.
 - **Certainty:** high
@@ -273,7 +273,7 @@ depth and evidence limits).
 - **Works:** lagniez2024decisiondnnf
 - **Anchors:** sources/lagniez2024decisiondnnf.md#evidence-locations
 - **Supports:** C01,C07,C15
-- **Manuscript:** sec-related
+- **Manuscript:** sec-routes
 - **Scope:** official primary paper, definitions, propositions, and complexity analysis
 - **Caveat:** This is not designated-variable projection. Compilation may be exponential, and a partial cube can cover several observations unless totalized activity/outcome coordinates are required in every output.
 - **Certainty:** high
@@ -284,7 +284,7 @@ depth and evidence limits).
 - **Works:** xia2024demand
 - **Anchors:** sources/xia2024demand.md#evidence-locations
 - **Supports:** C08,C15
-- **Manuscript:** sec-related
+- **Manuscript:** sec-routes
 - **Scope:** primary preprint, formal definitions, mechanized lemmas, and theorems
 - **Caveat:** The demand result concerns one known total input and partial-value definedness; it does not enumerate internal selection observations or exact caller-input fibers.
 - **Certainty:** high
@@ -295,7 +295,7 @@ depth and evidence limits).
 - **Works:** konig2020common,mitze2021common,kvasnica2012clipping,kvasnica2013separation
 - **Anchors:** sources/konig2020common.md#exact-result;sources/mitze2021common.md#contribution;sources/kvasnica2012clipping.md#contribution;sources/kvasnica2013separation.md#contribution
 - **Supports:** C09,C15
-- **Manuscript:** sec-synthesis,sec-discussion
+- **Manuscript:** sec-synthesis,sec-boundaries
 - **Scope:** exact first-action grouping, certified reuse, and pointwise-equivalent controller factorizations
 - **Caveat:** These are extensional output quotients or factorizations, not sparse contextual selection-event observers; the cross-domain distinction is our synthesis.
 - **Certainty:** low
@@ -317,7 +317,7 @@ depth and evidence limits).
 - **Works:** fisler2002bisimulation
 - **Anchors:** sources/fisler2002bisimulation.md#evidence-locations
 - **Supports:** C13,C15
-- **Manuscript:** sec-synthesis,sec-discussion
+- **Manuscript:** sec-synthesis,sec-boundaries
 - **Scope:** exact quotient construction, analysis, and experiments
 - **Caveat:** This rejects an automatic performance inference; it does not predict the workload of selection-fiber enumeration.
 - **Certainty:** moderate
@@ -328,7 +328,7 @@ depth and evidence limits).
 - **Works:** tran2019star,robinson2020dissecting,masden2022algorithmic,berzins2023polyhedral,drammis2024parallel
 - **Anchors:** sources/tran2019star.md#evidence-locations;sources/robinson2020dissecting.md#evidence-locations;sources/masden2022algorithmic.md#evidence-locations;sources/berzins2023polyhedral.md#evidence-locations;sources/drammis2024parallel.md#evidence-locations
 - **Supports:** C04,C15
-- **Manuscript:** sec-related
+- **Manuscript:** sec-routes
 - **Scope:** primary algorithms, exactness statements, and representation boundaries
 - **Caveat:** These objects need not preserve the graph's contextual selection observer.
 - **Certainty:** moderate

@@ -1,6 +1,6 @@
 #import "../../../style.typ": definition, theorem, proposition, proof
 
-= Selection observations: formal model and semantics <sec-formal-model>
+= Selection observations: formal model and semantics <sec-framework>
 
 This section defines the problem independently of any solver or data
 structure. The framework separates an observer, its inverse-image fibers, an
@@ -113,7 +113,7 @@ unconditionally would expose sites that a caller does not request.
 The word _observed_ is local terminology for this membership judgment. It does
 not claim that the source evaluator is lazy. Classical neededness and demand
 semantics use related backward relevance but impose different semantic
-conditions; @sec-related compares them.
+conditions; @sec-routes compares them.
 
 #definition("selection observation")[
   The selection observation is the dependent finite partial map $T_G(x,R)$—a

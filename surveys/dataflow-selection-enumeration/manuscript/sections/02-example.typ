@@ -63,7 +63,7 @@ worked instance is developed in this survey — an event-aware validation task
 may ask whether every source selection outcome remains represented after graph
 rewriting, lowering, or component substitution (a task that itself requires a
 declared event correspondence, since such transformations can change the
-observer; see @sec-discussion). The two inner outcomes then
+observer; see @sec-boundaries). The two inner outcomes then
 belong to different records despite equal values. A value-only equivalence
 checker deliberately chooses a coarser observer and merges them. The framework
 does not declare one policy universally preferable; it makes the policy an
@@ -105,6 +105,6 @@ existing methods discover these groups and represent their formulas, residual
 output expressions, and sample inputs.
 
 An implementation-oriented reading path is this example, the opening and
-comparison table of @sec-related, the two constructions in @sec-algorithms,
+comparison table of @sec-routes, the two constructions in @sec-algorithms,
 and @sec-conclusion. The intervening definitions and proofs make the contracts
 and transfer conditions precise.

@@ -6,7 +6,7 @@ mapping @petersen2015mapping, separate backward and forward snowballing
 @wohlin2014snowballing, and auditable reporting of secondary studies
 @kitchenham2023segress; no completed reporting checklist is claimed. It
 supports the comparison of solution mechanisms for the problem in
-@sec-formal-model, not a census of every use of symbolic execution, dataflow,
+@sec-framework, not a census of every use of symbolic execution, dataflow,
 or enumeration.
 
 == Comparison and inclusion

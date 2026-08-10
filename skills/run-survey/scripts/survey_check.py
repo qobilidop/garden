@@ -144,6 +144,22 @@ def run(config):
             if local and not (path.parent / local).exists():
                 errors.append(f"{path.relative_to(survey)}: broken local link {target}")
 
+    # --- split manuscript section names and labels ---
+    for path in sorted((manuscript / "sections").glob("*.typ")):
+        filename = re.fullmatch(r"\d{2}-([a-z0-9-]+)\.typ", path.name)
+        if filename is None:
+            errors.append(
+                f"{path.relative_to(survey)}: section filename must be NN-short-stem.typ"
+            )
+            continue
+        heading = re.search(r"(?m)^= (?![=])(.+)$", path.read_text(encoding="utf-8"))
+        label = re.search(r"<sec-([A-Za-z0-9-]+)>\s*$", heading.group(1)) if heading else None
+        if label and label.group(1) != filename.group(1):
+            errors.append(
+                f"{path.relative_to(survey)}: filename stem {filename.group(1)!r} "
+                f"does not match section label 'sec-{label.group(1)}'"
+            )
+
     # --- catalog ---
     columns = config["catalog_columns"]
     statuses = set(config["statuses"])

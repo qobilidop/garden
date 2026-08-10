@@ -1,4 +1,4 @@
-= Solution routes <sec-related>
+= Solution routes <sec-routes>
 
 The target is one exact selection-observation record per nonempty caller-input
 fiber. Prior approaches become comparable only after fixing that contract.

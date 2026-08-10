@@ -262,6 +262,9 @@ Shape note, as intent rather than drift.
   carries the four-part disclosure: human accountability, the named
   system/model and its scope of assistance, "AI output is not
   treated as evidence", and the public-record pointer.
+- Name split section files `NN-short-stem.typ`. When the top-level
+  section has a label, use the identical stem in `<sec-short-stem>`;
+  shorten only when the result remains an unambiguous complete word.
 - Shape: introduction with explicit contributions; background and
   related surveys; terminology and taxonomy; an honest, brief "how
   this survey was made" with the flow table (PRISMA's flow diagram

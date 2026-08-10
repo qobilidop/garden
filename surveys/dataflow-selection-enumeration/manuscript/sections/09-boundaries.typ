@@ -1,4 +1,4 @@
-= Boundaries and open problems <sec-discussion>
+= Boundaries and open problems <sec-boundaries>
 
 == Applicability of selection observations
 

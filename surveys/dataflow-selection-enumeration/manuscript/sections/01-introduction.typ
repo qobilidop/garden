@@ -93,11 +93,11 @@ purpose is to state one problem precisely enough that results from different
 communities can be transferred only when their observers and assumptions
 actually agree.
 
-@sec-example develops the problem through one graph. @sec-formal-model then
+@sec-example develops the problem through one graph. @sec-framework then
 defines its semantics independently of any solver, and @sec-method states the
-survey's evidence boundary. @sec-related presents the six solution routes;
+survey's evidence boundary. @sec-routes presents the six solution routes;
 @sec-synthesis compares their observers, guarantees, and closest established
 results. @sec-algorithms gives the two general enumeration presentations, and
 @sec-complexity separates their costs from stronger specialized frontiers.
-@sec-discussion states the remaining boundaries and open problems, and
+@sec-boundaries states the remaining boundaries and open problems, and
 @sec-conclusion closes with the main conclusions.
