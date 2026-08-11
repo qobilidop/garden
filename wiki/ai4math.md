@@ -10,10 +10,11 @@ research agents are the frontier), the founding methods
 the scale landmarks
 ([[hubert2025-alphaproof]],
 [[novikov2025-alphaevolve]]), the capability claim
-([[openai2026-math-advances]]), and the trust
+([[openai2026-math-advances]]), the open-ended discovery case
+([[anthropic2026-riemann-zeta]]), and the trust
 infrastructure's failure mode
 ([[demoura2026-kernel-soundness]], published the
-same day as the claim).
+same day as the ten-advances claim).
 
 ## How the capability was built
 
@@ -43,11 +44,14 @@ variants) rather than awaited.
 
 ## The trust architecture
 
-The ten-advances announcement exhibits no mathematics; its evidentiary
-weight rests on released Lean certificates — machine-checked proof as
-the move that neutralizes skepticism of corporate research claims,
-modulo checking that formal statements match informal ones. The
-postmortem quantifies the residual risk behind exactly that move: a
+The two corporate capability announcements exhibit little mathematics;
+their evidentiary weight rests on linked papers, human review, and released
+Lean certificates — machine-checked proof as the move that neutralizes
+skepticism of corporate research claims, modulo checking that formal
+statements match informal ones. [[anthropic2026-riemann-zeta]] adds an
+explicit comparator-checked formalization and two internal mathematicians'
+validation, but neither announcement reports an independent statement-fidelity
+audit. The postmortem quantifies the residual risk behind exactly that move: a
 kernel implementation bug (phantom parameters escaping type checking
 in nested inductives) admitted a `sorry`-free proof of `False`,
 reachable through metaprogramming. The layered answer that actually
@@ -115,17 +119,29 @@ evaluator reach it produced provably correct new mathematics (the
 4×4 rank-48 result, Erdős minimum-overlap and kissing-number
 improvements), yet its exploration is bound to predefined scoring
 functions — it widens search without reorganizing concepts, which is
-the survey's precise diagnosis of where discovery stops. This is the frame to apply to any
+the survey's precise diagnosis of where discovery stops.
+[[anthropic2026-riemann-zeta]] sits just across that boundary without
+overturning it: an open-ended attack on the Riemann hypothesis failed, but a
+31-million-output-token search composed prior analytic-number-theory results
+into a stronger adjacent bound. This is more research-shaped than evaluator
+optimization, yet still the insight-then-short-argument regime
+[[jiang2026-solvers]] says works best; the internal search of 54 papers is
+evidence against rediscovery, not an independent literature review. This is
+the frame to apply to any
 capability claim on this shelf: check rediscovery, check
 specification, expect selection bias in what gets reported.
 
 ## The workflow shape
 
-Model-generated arguments → human-assisted manuscripts → Lean
-formalization → released per-solution reasoning traces. Alongside it,
-an explicit attribution ethic (claiming human authorship for an
-AI-generated proof misrepresents both sides) — an early staked
-position in a live dispute. In
+The common spine is model-generated arguments → human-reviewed manuscripts →
+Lean formalization → released reasoning traces. The search regimes differ:
+[[openai2026-math-advances]] presents ten selected endpoints and their
+certificates, while [[anthropic2026-riemann-zeta]] exposes one failed target,
+650 discarded first-pass ideas, and a second pass of roughly 60 specialized
+subagents whose adjacent result survived model attack, human review, and
+formalization. Alongside it, OpenAI stakes an explicit attribution ethic
+(claiming human authorship for an AI-generated proof misrepresents both sides).
+In
 [[liu2026-agent-taxonomy]]'s frame, this is the
 loop closing on science rather than benchmarks.
 
@@ -143,6 +159,9 @@ the five named human follow-up papers to the unit-distance disproof
 treat AI-originated results; and whether the First Proof challenge
 (ten never-published research problems, endorsed by [[jiang2026-solvers]] as the
 clean evaluation) resists the contamination that saturated the
-competition benchmarks. The kernel-side thread continues too:
+competition benchmarks. The Anthropic case adds its own next checks: an
+independent rediscovery search, peer review of the 67.2% argument, and an audit
+that the released Lean theorem matches the informal lower-bound claim. The
+kernel-side thread continues too:
 verified kernels reaching inductives, and whether comparator-style
 daily cross-checking becomes standard practice.
