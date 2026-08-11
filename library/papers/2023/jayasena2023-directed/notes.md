@@ -8,7 +8,7 @@ work:
   doi: 10.1145/3638046
 sources:
   pdf: https://www.cise.ufl.edu/research/cad/Publications/csur23.pdf # author-hosted ACM-formatted manuscript; publisher PDF was OA but bot-gated during capture
-  html: https://dl.acm.org/doi/10.1145/3638046
+  record: https://dl.acm.org/doi/10.1145/3638046
 retrieved: 2026-08-10
 notes-by: Codex GPT-5.6 Sol
 notes-date: 2026-08-10

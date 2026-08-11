@@ -106,6 +106,7 @@ work:
 sources:
   pdf: <immutable download url>  # → store
   html: <page url>               # → shadow snapshot (when a web-native source exists)
+  record: <landing page url>     # bibliographic identity only; no capture tier implied
 retrieved: <today>
 notes-by: <agent name + model, or human name>
 notes-date: <today>
@@ -128,8 +129,12 @@ is stored here.
   argument to one sentence when they have one (the site catalog
   surfaces it); omit it for works merely cataloged.
 - Read the shadow text form (transcript/snapshot), not the PDF — that is
-  what it exists for. For long works, navigate by heading structure and read
-  targeted slices; do not skip the parts a fair assessment needs.
+  what it exists for. For long works, index headings and figure/table captions
+  first, then build a bounded evidence pack from the abstract and framing,
+  method core, main results, limitations, and contributions/conflicts. Keep
+  each read below the tool's truncation threshold and expand only where a claim
+  remains unsupported; a broad dump that truncates and must be reread is not a
+  shortcut. Do not skip the parts a fair assessment needs.
 - The transcript carries figure captions, not figures. Before writing
   synthesis, view the load-bearing figures directly from the stored PDF
   (read the pages their captions name) — the synthesis should reflect
@@ -159,8 +164,26 @@ is stored here.
 
 - `tools/store.sh push` — uploads the blob and regenerates
   `shadow/store.manifest.json` (explicit copy only; nothing deletes).
-- Run `node tools/archive-library.mjs --list` to validate the flat source
-  schema. Verify all tiers exist at the citekey paths, then propose the two
-  commits (sys: notes; shadow: text form + manifest), each ending with the
-  agent's attribution trailer (`Co-Authored-By: <agent + model> <email>`).
-  Commit only on the user's word.
+- Run `node tools/check-ingest.mjs <citekey>` after the push. It reuses the
+  site's canonical source parser and checks the fresh notes, transcript,
+  local blob, and remote-derived manifest entry and byte size without printing
+  the library inventory. `sources.html` always promises a direct, non-empty
+  snapshot; use `sources.record` for an uncaptured publisher/DOI landing page.
+- The transcript is mechanical output and may contain extraction whitespace.
+  Preserve it byte-for-byte. At commit time, stage only the intended shadow
+  paths first. Then, with the command's working directory set to the absolute
+  shadow-repo path, run:
+
+  ```console
+  git diff --cached --check -- . ':(exclude,glob)library/papers/**/transcript.md'
+  ```
+
+  Let `check-ingest` verify the transcript tier. Never print its full diff
+  merely to review whitespace diagnostics.
+- Run `npm --prefix site run build` on the host to close source-schema,
+  wikilink, and rendering checks. Then propose the two commits (sys: notes;
+  shadow: text form + manifest), each ending with the agent's attribution
+  trailer (`Co-Authored-By: <agent + model> <email>`). Commit only on the
+  user's word. When the request is only to commit and push, successful pushes
+  complete it; wait for Pages and verify live routes only when publication or
+  deployment verification is in scope.

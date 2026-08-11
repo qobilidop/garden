@@ -24,11 +24,12 @@ test('parses flat post and paper source schemas', () => {
   )
   assert.deepEqual(
     sourcesFromFrontmatter(
-      'sources:\n  pdf: https://example.com/work.pdf # store\n  html: https://example.com/work',
+      'sources:\n  pdf: https://example.com/work.pdf # store\n  html: https://example.com/work\n  record: https://doi.org/10.1/example',
     ),
     [
       { type: 'pdf', url: 'https://example.com/work.pdf' },
       { type: 'html', url: 'https://example.com/work' },
+      { type: 'record', url: 'https://doi.org/10.1/example' },
     ],
   )
 })

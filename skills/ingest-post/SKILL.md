@@ -53,19 +53,16 @@ concise canonical URL slug second. Posts often take the URL-slug branch
 
 ## 4. Discussions
 
-Sweep where the audience actually is; access paths that work today:
+Start with bounded exact queries and expand only when a lead warrants it:
 
-- HN: Algolia API (open) — search title and site URL;
-  `hn.algolia.com/api/v1/search?query=...&tags=story`.
-- Reddit: `old.reddit.com/search.json?q=url:"<slug>"` through the user's
-  browser session (anonymous clients are blocked). Ignore bot mirrors
-  (r/hackernews, r/hypeurls).
-- X: search through the user's browser session; there is no free
-  anonymous read path. Status IDs encode UTC creation time
-  (`(id >> 22) + 1288834974657` ms). Quote-cards carry no anchor to the
-  quoted status — click the `div[role="link"]` card via JS to reach it.
-- Others as found: Lobsters (`lobste.rs/domains/<domain>.json`), Tildes,
-  Mastodon (public RSS/API).
+- HN: query the exact title first through Algolia, capped at ten hits; query
+  the canonical URL only if needed. This is normally enough to recover the
+  story, points, comment count, and UTC creation date.
+- Reddit/X: follow an exact indexed lead or search through an already-usable
+  browser session. Do not bootstrap a browser solely to prove that no thread
+  exists. Ignore bot mirrors (r/hackernews, r/hypeurls).
+- Others as a concrete lead suggests: Lobsters
+  (`lobste.rs/domains/<domain>.json`), Tildes, Mastodon (public RSS/API).
 
 Curate for quality, not coverage: gauge comment counts first —
 single-digit-comment threads are not interesting regardless of
@@ -117,7 +114,14 @@ sources — assert only what the captured record contains.
 ## 7. Close
 
 - `tools/store.sh push` only when figures went to store.
-- Run `node tools/archive-library.mjs --list` to validate the flat source
-  schema. Verify all tiers at the citekey paths, then propose the commits
-  (sys: notes; shadow: snapshot + manifest when pushed), each ending with
-  the agent's attribution trailer. Commit only on the user's word.
+- Always run `node tools/check-ingest.mjs <citekey>` after capture (and after
+  the store push when figures exist). It reuses the site's canonical source
+  parser and checks the fresh notes, direct non-empty snapshot, and any files
+  under the exact `figures/` tier against their manifest entries and byte sizes
+  without printing the library inventory.
+- Run `npm --prefix site run build` on the host, then propose the commits
+  (sys: notes; shadow: snapshot + manifest when pushed), each ending with the
+  agent's attribution trailer. Commit only on the user's word. When the request
+  is only to commit and push, successful pushes complete it; wait for Pages and
+  verify live routes only when publication or deployment verification is in
+  scope.

@@ -22,8 +22,10 @@ function sourceUrl(value, file, field) {
 
 // One canonical source schema serves the site, ingestion checks, and archive
 // maintenance. Posts have `source: <url>`; papers have a flat `sources:` map
-// such as `pdf: <url>` and `html: <url>`. Wayback coverage is derived external
-// state and therefore never lives in note frontmatter.
+// such as `pdf: <url>`, `html: <url>` for captured web-native content, and
+// `record: <url>` for an uncaptured bibliographic landing page. Wayback
+// coverage is derived external state and therefore never lives in note
+// frontmatter.
 export function sourcesFromFrontmatter(frontmatter, file = '<frontmatter>') {
   if (/^\s*archived:\s*/m.test(frontmatter)) {
     throw new Error(
