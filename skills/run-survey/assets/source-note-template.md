@@ -17,6 +17,7 @@ work:
   arxiv: <optional>
 read: full-text | abstract-only | secondary-only
 source: <shadow path when captured; otherwise public URL, acquisition note, or "none">
+canonical-note: <optional repo-relative path to a general/library note on the same work>
 facets: <assessed note-level facets; may be partial; omit when the survey keeps facets in the catalog only>
 retrieved: YYYY-MM-DD
 notes-by: <writer (phase); preserve prior writers, append material revisers, "; "-separated, chronological; a fan-out fleet is named by tier, e.g. "Claude Sonnet-class (survey deep-read pipeline)">
@@ -51,6 +52,10 @@ synthesis: <one-line take>
 - At least one of `work.doi` / `work.arxiv` / `source` must locate
   the version read. `retrieved` may be `-` when the acquisition date
   was not recorded (historical migrations, declared in the local protocol).
+- `canonical-note` links related understanding without delegating the survey
+  reading to it. The local note still answers this survey's RQs, boundary,
+  taxonomy, claim, and evidence-limit questions; do not copy the general note
+  wholesale.
 - Agent writers in `notes-by` include their model. A historical agent value
   whose exact model cannot be proved may remain model-unspecified only when
   the local protocol declares it as legacy provenance; never guess it.

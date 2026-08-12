@@ -1,44 +1,55 @@
 # Survey record
 
-This directory is the minimal resumable state for *Symbolic Execution of
-Digital Hardware Designs*. `protocol.md` owns scope and method;
-`queries.tsv` owns standing searches; `catalog.tsv` owns dispositions and
-facets; `log.tsv` is append-only event history; `sources/` contains local
-evidence notes; `claims.md` and `evidence.md` bind synthesis to the manuscript;
-`status.md` states only dated current state and future-update work.
+This directory is the survey's maintained, resumable state. Shared survey
+workflow and conventions live in the current `run-survey` skill; this README
+contains only the local record map, commands, update ledger, and
+survey-specific integration points. Historical events, including corrective
+audits, live in `log.tsv`, and superseded content lives in git history.
 
-## Commands
+## Start here
 
-Run from the repository root:
+From the repository root:
 
-```sh
-python3 surveys/symbolic-execution-hardware/record/check.py
-python3 skills/run-survey/scripts/update.py --record surveys/symbolic-execution-hardware/record status
-python3 skills/run-survey/scripts/update.py --record surveys/symbolic-execution-hardware/record fetch --all
-./dev.sh python3 skills/run-survey/scripts/make_references.py --manuscript surveys/symbolic-execution-hardware/manuscript
-./dev.sh python3 site/scripts/build-manuscripts.py
+```console
+./dev.sh python3 skills/run-survey/scripts/update.py --record surveys/symbolic-execution-hardware/record status
+./dev.sh python3 surveys/symbolic-execution-hardware/record/check.py
 ```
 
-Search/update scratch is ignored under
-`surveys/symbolic-execution-hardware/.scratch/`; it is disposable after the
-catalog and log have been reconciled. A future update begins from
-`queries.tsv`, the coverage date in `status.md`, and `update.py status`. Fetch
-stages every active query without advancing state. In scratch, deduplicate the
-batch against `catalog.tsv`, re-screen both new and `parked` records with two
-blinded passes, adjudicate disagreements, draft one key-bearing log row per
-query, and refresh both citation directions for every critical work. Present
-that staged reconciliation at the authority gate declared for the update.
-Only after the gate append the log rows, catalog changes, query dates, status,
-and ledger row together; an
-update that adds catalog rows also appends one audit row whose notes contain
-`catalog-additions:<count>`. Update evidence and synthesis when a decision
-changes, then run the validator, regenerate references, and build both
-manuscript forms.
+The first command reports the standing-query state. The second validates the
+catalog, log, queries, source notes, claim/evidence bindings, bibliography, and
+manuscript citations, then prints the counts copied into `status.md`. The TSVs
+use RFC 4180 quoting; inspect them with a CSV-aware tool rather than bare `awk`
+or `cut`.
 
-`s24` remains inactive after four HTTP 429 responses. The strict replacement
-query `s25` also received HTTP 429 on 2026-08-11 and remains unreconciled. A
-future update should retry `s25`; `s24` may be retried only by deliberately
-reactivating the retired lineage query.
+## Record map
+
+Each entry names the content it alone owns:
+
+- `README.md` — local navigation, commands, update ledger, and integration
+  checklist.
+- `protocol.md` — survey-specific objective, questions, scope, selection
+  boundaries, taxonomy, and record qualifications. Shared method stays in the
+  `run-survey` skill.
+- `status.md` — dated publication and coverage state, derived counts, and work
+  deferred to a future update.
+- `catalog.tsv` — one current disposition per surfaced work, with metadata,
+  exclusion code, taxonomy facets, priority, rationale, and fallback URL.
+- `log.tsv` — append-only search, snowball, audit, and exploratory events,
+  including key-bearing corrections to earlier events.
+- `queries.tsv` — exact standing searches, limits, and `last_reconciled` dates.
+- `sources/` — anchored evidence notes for selected and boundary works.
+- `syntheses/` — current cross-work interpretation, with `README.md` as its
+  thematic map and `current-position.md` as its entry point.
+- `claims.md` — stable `Cxx` synthesis propositions, their scope, and prior
+  frontier.
+- `evidence.md` — stable `Exxx` findings binding source anchors to claims and
+  manuscript sections.
+- `check.py` — this survey's schema, vocabularies, count assertions, and local
+  closure exemptions for the shared validator.
+
+The manuscript bibliography is adjacent state under `../manuscript/`:
+`references.tsv` maps citekeys to identifiers, `references-manual.bib` holds
+manual or corrected entries, and `references.bib` is generated.
 
 ## Update ledger
 
@@ -50,40 +61,70 @@ item-level human screening.
 |---|---:|---:|---:|---:|---:|---|
 | 2026-08-10 | 1,626 | 87 | 11 | 1,501 | 38 | Pre-authorized 2026-08-10: title, scope, autonomous campaign, commit, and push; no item-level review |
 | 2026-08-11 | 1,709 | 31 | 17 | 1,621 | 57 | Pre-authorized scope revision and autonomous completion; no item-level human screening |
-| 2026-08-12 | 1,870 | 31 | 17 | 1,780 | 59 | Same pre-authorization; completed both citation directions for newly promoted critical works |
+| 2026-08-12 | 1,870 | 31 | 17 | 1,780 | 59 | Same pre-authorization; attempted both citation directions for newly promoted critical works |
+| 2026-08-12 | 1,916 | 31 | 17 | 1,826 | 59 | User-authorized adversarial review and refinement, commit, and push; no item-level human screening |
 
-## External evidence homes
+## Linked canonical notes
 
-The following canonical notes already existed in the public repository and
-are intentionally not copied here:
+Survey-specific readings live locally in `sources/`. Where broader notes
+already exist, their repo-relative location is preserved in the local note's
+optional `canonical-note` field:
 
-- `baldoni2016-symbolic` — `library/papers/2016/baldoni2016-symbolic/notes.md`
-- `kolbl2001rtl` — `surveys/dataflow-selection-enumeration/record/sources/kolbl2001rtl.md`
-- `feng2004dynamic` — `surveys/dataflow-selection-enumeration/record/sources/feng2004dynamic.md`
-- `ryan2023sylvia` — `surveys/dataflow-selection-enumeration/record/sources/ryan2023sylvia.md`
-- `yang2026-forbench` — `library/papers/2026/yang2026-forbench/notes.md`
-- `petersen2015mapping` and `wohlin2014snowballing` —
-  `surveys/dataflow-selection-enumeration/record/sources/`
+- `baldoni2016-symbolic` and `yang2026-forbench` link to `library/`.
+- `kolbl2001rtl`, `feng2004dynamic`, `ryan2023sylvia`,
+  `petersen2015mapping`, and `wohlin2014snowballing` link to the
+  dataflow-selection-enumeration survey.
 
-Four excluded works are cited only to make the boundary or adjacent survey
-traditions explicit: `carter1979symbolic`, `kolbl2001rtl`, and
+The local notes answer this survey's RQs and record its boundary, taxonomy, and
+evidence limits; they do not copy the general note. Four excluded works are
+cited only to make the boundary or adjacent survey traditions explicit:
+`carter1979symbolic`, `kolbl2001rtl`, and
 `feng2004dynamic` are symbolic-simulation context; `debnath2022greycone` lacks
 the required source-to-generated-hardware bridge. `yang2026-forbench` is an
 excluded current boundary comparator. The secondary works
 `camurati1988formal` (formal hardware correctness) and
 `jayasena2024directed` (directed hardware test generation) position neighboring
-survey traditions. None contributes to the 31-work denominator.
+survey traditions. None contributes to the 31-work denominator. Every critical
+row now has a local full-text survey note.
 
-These citekeys are explicit citation-closure exemptions in `check.py`.
-Critical catalog rows backed by an external home use `deep-read` without a
-duplicate local note; every other critical row has a local full-text or
-declared abstract-only note.
+## Mapping-depth evidence home
 
-## Resumability and interpretation
+The 14 mapping-depth includes—`bagri2015restrictive`, `lyu2017quebs`,
+`pinto2017factored`, `shen2018trojan`, `lin2018ctsc`,
+`zhang2018recursive`, `ahmed2018trojan`, `lyu2019multitarget`,
+`lin2020selective`, `jayasena2021assertions`, `lyu2021soccar`,
+`lyu2021fuce`, `roy2023slec`, and `zheng2024incremental`—use their canonical
+`catalog.tsv` rows and key-bearing selection events as their evidence home.
+They support only map membership, chronology, and coded facets. Technical
+mechanism, comparison, and performance claims in the manuscript are restricted
+to the 17 deep-read works with local survey notes. The validator keeps these
+two evidence depths distinct.
 
-Counts are always derived from `catalog.tsv`; no prose file is a second data
-home. `included` and `deep-read` together form the include-level map.
-`candidate` and `parked` are unresolved records, not included evidence.
-Technical manuscript claims must be backed by `evidence.md` or an explicitly
-named external evidence home. Abstract-only material supports chronology and
-scope only.
+## Local update operations
+
+Follow the current `run-survey` workflow and the local choices in
+`protocol.md`. The survey's no-cutoff window requires
+`--initial-from-date 1900-01-01` when fetching a query with no prior
+reconciliation date. Retry one such query with:
+
+```console
+./dev.sh python3 skills/run-survey/scripts/update.py --record surveys/symbolic-execution-hardware/record fetch --query-id s25 --initial-from-date 1900-01-01
+```
+
+Stage the whole active registry with:
+
+```console
+./dev.sh python3 skills/run-survey/scripts/update.py --record surveys/symbolic-execution-hardware/record fetch --all --initial-from-date 1900-01-01
+```
+
+Local reconciliation touches affected source notes, thematic syntheses,
+`claims.md`, `evidence.md`, the manuscript, and the landing-page reading list.
+If citations change, regenerate the bibliography and both manuscript formats:
+
+```console
+./dev.sh python3 skills/run-survey/scripts/make_references.py --manuscript surveys/symbolic-execution-hardware/manuscript
+./dev.sh python3 site/scripts/build-manuscripts.py
+```
+
+Finish with `check.py` and copy its derived counts into `status.md` and any
+manuscript surfaces that publish them; do not estimate them independently.

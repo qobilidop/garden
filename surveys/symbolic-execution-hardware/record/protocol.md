@@ -25,21 +25,16 @@ cited as historical context or boundary comparators, but contextual citation
 does not confer inclusion. The map makes no formal risk-of-bias appraisal and
 no claim to cover formal hardware verification generally.
 
-The user approved the title, scope, RTL center, absence of a domain-specific
-historical cutoff, and autonomous execution through manuscript, commit, and
-push on 2026-08-10.
-That approval is the protocol gate; later material method changes are logged in
-`status.md` before they are applied.
-
 ## Research questions
 
 - **RQ1:** Definition and regimes — Which works actually perform classical,
   concolic/dynamic, or selective/hybrid symbolic execution of a digital
   hardware design, and how do those regimes differ operationally?
-- **RQ2:** Executed artifact — Which design representations are executed — RTL,
-  other HDLs, HLS or behavioral models, SystemC/TLM, netlists, or coupled
-  cross-level models — and how are hardware concurrency and clocked state
-  represented?
+- **RQ2:** Design target and operational representation — Which hardware
+  representation is the paper's claim about—RTL, another HDL, HLS,
+  SystemC/TLM, a netlist, or a coupled cross-level model—which program or IR
+  does the executor actually step, and how are concurrency and clocked state
+  bridged between them?
 - **RQ3:** Paths and scaling — What constitutes a path through concurrent,
   clocked hardware; how are path-conditioned alternatives enumerated,
   reconstructed, composed, merged, or selected; and which mechanisms control
@@ -54,10 +49,9 @@ That approval is the protocol gate; later material method changes are logged in
 ## Scope and discovery choices
 
 - **Window:** no domain-specific historical cutoff; APIs are queried from
-  1900, before the digital-hardware literature relevant to this survey, and
-  standing searches close at 2026-08-11 and critical-work citation chases at
-  2026-08-12. Works first surfaced after those respective dates belong to a
-  future update.
+  1900, before the digital-hardware literature relevant to this survey.
+  Current per-query reconciliation dates live in `queries.tsv`; the dated
+  publication checkpoint and known gaps live in `status.md`.
 - **Language:** English-language title and abstract metadata; a non-English
   work can remain `parked` if its scope cannot be established reliably.
 - **Sources:** OpenAlex, Crossref, Semantic Scholar, and arXiv, supplemented by
@@ -78,9 +72,6 @@ That approval is the protocol gate; later material method changes are logged in
   SystemC, HLS source or IR, and generated executable models are admissible.
   A language or synthesis paper enters only when the represented or generated
   hardware passes the same five-part operational test as RTL.
-- **Defective bibliographies:** an empty, truncated, or implausibly incomplete
-  citation-index bibliography is replaced by the primary version's printed or
-  publisher-deposited references and marked `primary-complete` in `log.tsv`.
 
 ## Selection boundaries
 
@@ -92,14 +83,20 @@ operational test:
    claimed-faithful executable representation of one;
 2. at least one hardware input, state element, or environment value is
    represented symbolically;
-3. it constructs path predicates tied to distinguishable control- and
-   time-indexed executions of that design;
+3. it constructs path predicates tied to alternatives distinguished by the
+   executed design representation—control-indexed and, for sequential designs,
+   time-indexed—not merely by an external procedural testbench;
 4. feasibility reasoning over those predicates controls the enumeration,
    selection, reconstruction, composition, merging, or generation of another
    execution; and
 5. this symbolic-execution mechanism is load-bearing in the paper's method and
    evidence, producing a witness, test, coverage result, or qualified
    verification result.
+
+When the executor operates on a translated, generated, lifted, HLS, or other
+derived artifact, the paper must document a semantic relation to the digital
+design adequate to the result it claims. Witness replay can validate one path
+through that bridge but does not establish equivalence of all executions.
 
 Classical symbolic execution, concolic/dynamic symbolic execution, and
 selective/hybrid symbolic execution pass the same five-part test but remain
@@ -160,18 +157,27 @@ rewrite the abstract-level map.
 
 - **Relation:** every include is `core`; contextual lineage and comparator
   works are cited outside the map denominator rather than coded as includes.
-- **Artifact:** `rtl|hdl-other|hls|systemc-tlm|gate-netlist|mixed-level|generic`.
-  `rtl` includes Verilog, SystemVerilog, and generated RTL; `hdl-other` covers
-  executable digital HDLs not more specifically classified; `generic` is used
-  only when the method is hardware-specific but representation-independent.
-- **Execution:** `classical|concolic|selective-hybrid`. `classical` includes
+- **Design target** (the catalog column remains `artifact`):
+  `rtl|hdl-other|hls|systemc-tlm|gate-netlist|mixed-level|generic`. This facet
+  names the representation about which the paper claims, not necessarily the
+  program interpreted by the executor. `rtl` includes Verilog, SystemVerilog,
+  and generated RTL; `hdl-other` covers digital HDLs not more specifically
+  classified; `generic` is used only when the method is hardware-specific but
+  target-independent. Operational representations and semantic bridges are
+  synthesized separately from deep-read evidence.
+- **Primary execution regime:** `classical|concolic|selective-hybrid`. To keep
+  this one-value facet reproducible, `selective-hybrid` is reserved for a
+  non-symbolic search engine that maintains its own evolving frontier or corpus,
+  can make exploration progress between symbolic invocations, and exchanges
+  candidates with the symbolic executor. Concrete simulation or replay that
+  merely supplies and checks the trace in a concolic loop does not meet that
+  criterion. The remaining trace-following or reconstruction systems are
+  `concolic`; the remaining direct symbolic-state systems are `classical`.
+  `classical` includes
   explicit path fragments and state merging when symbolic execution remains
   the sole exploration regime; record those scaling mechanisms in the
-  mechanism synthesis rather than making them peer regimes. `concolic`
-  follows or reconstructs concrete executions while maintaining their
-  symbolic path constraints. `selective-hybrid` applies symbolic or concolic
-  execution only to selected regions/phases or makes it co-equal with fuzzing,
-  concrete simulation, or another exploration engine.
+  mechanism synthesis rather than making them peer regimes. An LLM repair loop
+  that consumes concolic results is not by itself an independent search engine.
 - **Goal:** `functional|test-coverage|security|equivalence|method-general`.
   Use the evaluated or stated primary end goal, not every possible use.
 - **Evidence:** `experiment|case-study|formal-only|none`. `experiment` requires
@@ -185,8 +191,7 @@ rewrite the abstract-level map.
 
 - The scrutiny scale is `candidate`, `screened`, `included`, `deep-read`,
   `excluded`, and `parked`. `included + deep-read` is the include-level map;
-  only `deep-read` requires a full local or explicitly exempt external source
-  note.
+  every `deep-read` requires a local, survey-specific source note.
 - The catalog retains a concise item-specific adjudication rationale. Screening
   decisions must be judgments from the record's title and abstract or primary
   text, never keyword classifiers.
@@ -197,12 +202,19 @@ rewrite the abstract-level map.
   a paper's use of the phrase “symbolic execution” from substituting for a
   mechanism audit.
 - Existing canonical evidence notes in `library/` or another survey may serve
-  as citation-closure exemptions named in the record README and validator;
-  their evidence is not duplicated locally.
+  as linked background through the optional `canonical-note` frontmatter
+  field. This survey still keeps a local source note that answers its own RQs,
+  boundary, taxonomy, and evidence-limit questions; general-note prose is not
+  copied wholesale.
 - The systematic map may publish a dated bounded snapshot without claiming
   bounded mapping closure. Closure, if reached, uses the stronger shared skill
   criteria and is stated relative to the exact sources, queries, depths, and
   date.
+- Historical `notes-by` values from the initial campaign name `Codex` without
+  a recoverable exact model. Preserve them as legacy provenance; material
+  revisions append the revising model under the current shared contract.
+- In migrated notes, `retrieved: "-"` means that acquisition time was not
+  recorded; it must not be inferred from the later review date.
 
 ## Publication qualifications
 

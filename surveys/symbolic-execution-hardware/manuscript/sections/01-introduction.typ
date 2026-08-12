@@ -4,8 +4,8 @@ In the canonical software account, symbolic execution replaces inputs with
 symbols, advances a program state, forks or otherwise distinguishes branch
 outcomes, accumulates a path condition, and asks a solver whether that path is
 feasible @baldoni2016-symbolic. Moving this idea to digital hardware changes
-the object being executed. A branch belongs to one of several concurrent HDL
-processes; state updates at clock or delta-cycle boundaries; a generated C++
+the object being executed. Branches in concurrent HDL processes contribute
+coupled constraints; state updates occur at clock or delta-cycle boundaries; a generated C++
 model may stand between RTL and the executor; reset and an environmental
 testbench determine which symbolic states are reachable. A hardware “path” is
 therefore not merely a list of source-level branch outcomes.
@@ -33,10 +33,11 @@ The survey asks five questions:
 - *RQ1:* Definition and regimes — Which works actually perform classical,
   concolic/dynamic, or selective/hybrid symbolic execution of a digital
   hardware design, and how do those regimes differ operationally?
-- *RQ2:* Executed artifact — Which design representations are executed — RTL,
-  other HDLs, HLS or behavioral models, SystemC/TLM, netlists, or coupled
-  cross-level models — and how are hardware concurrency and clocked state
-  represented?
+- *RQ2:* Design target and operational representation — Which hardware
+  representation is the paper's claim about—RTL, another HDL, HLS,
+  SystemC/TLM, a netlist, or a coupled cross-level model—which program or IR
+  does the executor actually step, and how are concurrency and clocked state
+  bridged between them?
 - *RQ3:* Paths and scaling — What constitutes a path through concurrent,
   clocked hardware; how are path-conditioned alternatives enumerated,
   reconstructed, composed, merged, or selected; and which mechanisms control
@@ -50,14 +51,14 @@ The survey asks five questions:
 
 The contributions are fourfold. First, a five-part operational test separates
 path-conditioned execution from adjacent symbolic methods. Second, a bounded
-systematic map describes the verified corpus by execution regime and artifact.
+systematic map describes the verified corpus by execution regime and design target.
 Third, a critical synthesis connects path meaning, hardware semantics, scaling
 mechanisms, and result contracts. Fourth, a compact reporting tuple makes
 positive witnesses, bounded completion, and inconclusive search outcomes
 comparable without requiring a common implementation architecture.
 
-The principal finding is intentionally modest: symbolic execution of hardware
-is a viable survey topic, but it is a specialized verification niche rather
-than a synonym for formal hardware verification. Its small size is evidence
-about the field, not a reason to enlarge the denominator with neighboring
-methods.
+The principal finding is intentionally modest: the bounded map identifies a
+coherent, specialized slice of hardware verification rather than a synonym for
+formal hardware verification. Its 31-record strict corpus justifies a focused
+survey under this protocol; it is not a population or field-maturity estimate
+and is not a reason to enlarge the denominator with neighboring methods.

@@ -18,6 +18,7 @@
   )
   set par(justify: true, leading: 0.58em)
   set heading(numbering: "1.")
+  show heading: set block(above: 0.9em, below: 0.3em)
   set list(indent: 1.15em, body-indent: 0.55em)
   show link: set text(fill: rgb("245b8a"))
   show raw: set text(font: "DejaVu Sans Mono", size: 9pt)

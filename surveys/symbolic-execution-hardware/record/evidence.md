@@ -49,12 +49,12 @@ Certainty reflects the version and depth actually read.
 
 ### E004
 
-- **Finding:** Selective-hybrid systems use concrete simulation or fuzzing for a prefix/frontier and invoke symbolic path solving only for selected time frames or local suffixes, returning tests to concrete execution.
+- **Finding:** Concolic and selective-hybrid systems can keep a prefix concrete and invoke symbolic path solving for a selected diversion or local suffix; a hybrid classification additionally requires an independently progressing search frontier or corpus.
 - **Works:** qin2014interleaving,jayasena2025fuss
 - **Anchors:** sources/qin2014interleaving.md#evidence;sources/jayasena2025fuss.md#evidence
 - **Supports:** C02,C04,C05,C07
 - **Manuscript:** sec-boundary,sec-lineages,sec-execution-models,sec-scaling,sec-contracts,sec-evidence,sec-synthesis
-- **Scope:** Trace-reconstructed HDL constraints in Qin and Mishra and snapshot-localized RTL symbolic execution in FuSS.
+- **Scope:** Trace-reconstructed concolic HDL constraints in Qin and Mishra and snapshot-localized fuzzing/symbolic RTL execution in FuSS.
 - **Caveat:** Both are budgeted test generators; chosen traces, local targets, state reconstruction, and handoff policies can omit behavior.
 - **Certainty:** high
 
@@ -100,4 +100,37 @@ Certainty reflects the version and depth actually read.
 - **Manuscript:** sec-evidence,sec-synthesis
 - **Scope:** The critical empirical studies deep-read in this campaign.
 - **Caveat:** The evidence supports qualitative comparison of contracts and reporting practice, not an effect-size meta-analysis or tool ranking.
+- **Certainty:** high
+
+### E009
+
+- **Finding:** The general symbolic-execution model distinguishes path-conditioned execution from adjacent hardware symbolic simulation or translation-only execution: Carter supplies historical terminology only; Kölbl and Feng merge or selectively partition design alternatives as guarded values; Forbench forks procedural testbench control; and GreyConE does not establish a hardware-semantic bridge for the compiled SystemC it executes.
+- **Works:** baldoni2016-symbolic,carter1979symbolic,kolbl2001rtl,feng2004dynamic,debnath2022greycone,yang2026-forbench
+- **Anchors:** sources/baldoni2016-symbolic.md#evidence;sources/carter1979symbolic.md#evidence;sources/kolbl2001rtl.md#evidence;sources/feng2004dynamic.md#evidence;sources/debnath2022greycone.md#evidence;sources/yang2026-forbench.md#evidence
+- **Supports:** C01,C04
+- **Manuscript:** sec-introduction,sec-boundary
+- **Scope:** The software baseline, abstract-only Carter context, and four full-text hardware boundary comparators used to define the survey's operational inclusion test.
+- **Caveat:** The distinction classifies native path identity and execution selection, not engineering value; the adjacent methods can still find replayable bugs and may outperform path execution on their own contracts.
+- **Certainty:** high
+
+### E010
+
+- **Finding:** Systematic mapping and snowballing guidance supports explicit research questions, classification, search/selection reporting, and separate backward and forward citation directions around a bounded start set.
+- **Works:** petersen2015mapping,wohlin2014snowballing
+- **Anchors:** sources/petersen2015mapping.md#evidence;sources/wohlin2014snowballing.md#evidence
+- **Supports:** -
+- **Manuscript:** sec-method
+- **Scope:** High-level survey design and citation-discovery structure.
+- **Caveat:** Both works were read at abstract or public-summary depth here; neither makes the present map closed, exhaustive, or reproducible beyond its disclosed record.
+- **Certainty:** low
+
+### E011
+
+- **Finding:** Sylvia reduces repeated RTL path construction by exploring per-block fragments, but compatibility composition can still require an exponential fragment cross-product; satisfying combinations yield replayable witnesses.
+- **Works:** ryan2023sylvia
+- **Anchors:** sources/ryan2023sylvia.md#evidence
+- **Supports:** C04,C05
+- **Manuscript:** sec-lineages,sec-execution-models,sec-scaling
+- **Scope:** The synthesizable-Verilog subset, fragment model, bounds, and experiments reported in the complete FMCAD paper.
+- **Caveat:** The paper's near-linear local-exploration statement is not an end-to-end solver-work bound, and the reported composition/replay relation should not be generalized beyond its supported semantics.
 - **Certainty:** high

@@ -1,9 +1,10 @@
 = Evaluation practice and evidence strength <sec-evidence>
 
-The critical studies show that the methods work, but they do not support a
-single quantitative ranking. Designs, horizons, coverage definitions, setup
-effort, baselines, and completion policies differ too much for a defensible
-meta-analysis.
+The 17 deep-read studies demonstrate functioning implementations and reported
+positive outcomes on their evaluated configurations. They do not establish
+implementation correctness, general effectiveness, or a single quantitative
+ranking. Designs, horizons, coverage definitions, setup effort, baselines, and
+completion policies differ too much for a defensible meta-analysis.
 
 == Range of evidence
 
@@ -16,7 +17,8 @@ SystemC designs with path/test counts, coverage, time, and memory
 test-generation baseline @zhang2016rtltests. These results establish workable
 architectures, not industrial generality.
 
-Directed concolic work provides stronger comparative evidence. Ahmed et al.
+Among the deep reads, directed concolic work provides multi-design comparative
+evidence. Ahmed et al.
 measure iterations, time, and memory against bounded model checking and two
 concolic strategies across benchmark targets, while preserving an explicit
 cycle bound @ahmed2018directed. Scalable concolic testing broadens designs and
@@ -25,7 +27,7 @@ branch coverage on generated RTL benchmarks, but the preprint's “exhaustive”
 language exceeds its timeout, state-explosion, and generated-oracle caveats
 @tan2026autoverifix.
 
-Security systems often have compelling positive outcomes. Coppelia reports
+Several security deep reads have compelling positive outcomes. Coppelia reports
 29 of 31 known vulnerabilities rediscovered and four new processor-design
 vulnerabilities, with generated exploits replayed @zhang2018coppelia. SEIF
 measures accounted, witnessed, rejected, and unaccounted information-flow
@@ -34,15 +36,16 @@ paths over four designs; one full source-signal analysis lasts 3.5 days
 under-constrained initialization and translation limit the word “exhaustive”
 @fowze2022eisec.
 
-Selective execution demonstrates complementarity rather than completeness.
-Qin and Mishra compare trace-reconstructed solving with random testing and a
-prior hybrid on bounded designs @qin2014interleaving. FuSS reports branch and
+Concolic and selective-hybrid execution demonstrate complementarity rather
+than completeness. Qin and Mishra compare trace-reconstructed solving with
+random testing and a prior hybrid on bounded designs @qin2014interleaving. FuSS reports branch and
 toggle coverage trajectories on four RISC-V SoCs @jayasena2025fuss. The HLS
 TCP thesis generates 67 symbolic tests for 47.47 percent source coverage,
 nearly the same final percentage as 2,150 random tests, while also exposing
 specific failures and reducing paths with a clock abstraction @hu2024tcp.
 
-The cross-level SystemC study offers the broadest metric bundle: two
+Among the 17 deep reads, the cross-level SystemC study reports the widest
+combination observed here of evaluation dimensions: two
 implementations, four dual-level peripherals, functionality and interface
 tests, 357 selected mutants, ablations, a prior-tool comparison, and five
 larger modules @rudkowski2026crosslevel. Its negative evidence is important:
@@ -64,7 +67,8 @@ query. Runtime alone does not equalize their outputs.
 Fourth, *human and semantic effort* is largely absent. Testbench construction,
 reset modeling, target annotation, translation repair, abstraction, and
 reference-model debugging can dominate adoption cost. Fifth, stochastic
-systems often omit repeated-run dispersion and seed policy. Finally, artifact
+systems in the reviewed evidence omit repeated-run dispersion and seed policy.
+Finally, artifact
 availability and semantic conformance are rarely strong enough to separate a
 search failure from a modeling failure.
 

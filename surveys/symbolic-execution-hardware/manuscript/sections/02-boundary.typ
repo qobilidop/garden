@@ -7,13 +7,19 @@ We include a work only when all five conditions hold:
 1. it steps, replays, or composes executions of a digital hardware design or a
    claimed-faithful executable representation;
 2. a hardware input, state element, or environmental value is symbolic;
-3. the method constructs path predicates tied to distinguishable control- or
-   time-indexed design executions;
+3. the method constructs path predicates tied to alternatives distinguished by
+   the executed design representation—control-indexed and, for sequential
+   designs, time-indexed—not only by an external procedural testbench;
 4. feasibility over those predicates controls enumeration, selection,
    reconstruction, composition, merging, or generation of another execution;
    and
 5. this mechanism is load-bearing and yields a test, witness, coverage result,
    or qualified verification result.
+
+For a translated, generated, lifted, HLS, or other derived artifact, a
+documented semantic relation to the design must also be adequate to the claimed
+result. Replaying one generated witness checks that path through the bridge; it
+does not establish equivalence of every source and derived execution.
 
 A convenient symbolic state is $(ell, sigma, pi, tau, eta)$: execution
 location or frontier $ell$, symbolic store $sigma$, path predicate $pi$,
@@ -28,8 +34,8 @@ is an execution identity whose feasibility affects what is executed next.
 == Three included regimes
 
 *Classical symbolic execution* advances one or more symbolic design paths and
-uses their predicates directly. It includes forward, backward, and fragment-
-composed execution; those are search or representation choices, not separate
+uses their predicates directly. It includes forward, backward, and execution
+composed from fragments; those are search or representation choices, not separate
 top-level regimes.
 
 *Concolic or dynamic symbolic execution* couples concrete and symbolic views
@@ -42,11 +48,19 @@ path predicate and feasibility query, the next execution would not be
 generated.
 
 *Selective-hybrid symbolic execution* makes the symbolic executor one phase
-or region of a broader search. A concrete trace may be reduced to a selected
-cycle before solving @qin2014interleaving, or fuzzing may provide a state
-snapshot from which a short symbolic suffix is constructed @jayasena2025fuss.
+or region of a broader search. Fuzzing may provide a state snapshot from which
+a short symbolic suffix is constructed @jayasena2025fuss.
 The symbolic phase must still pass all five conditions. Concrete simulation
 plus a genetic algorithm, trace ranking, or coverage feedback alone does not.
+
+The catalog uses one reproducible primary regime rather than conflating every
+concrete/symbolic handoff with hybrid search. *Selective-hybrid* is reserved for
+a non-symbolic search engine that maintains its own evolving frontier or corpus,
+can make exploration progress between symbolic invocations, and exchanges
+candidates with the symbolic executor. Concrete simulation or replay that only
+supplies and checks traces in a solve-and-replay loop remains *concolic*;
+remaining direct symbolic-state systems are *classical*. An LLM repair loop
+that consumes concolic tests is not itself an independent search engine.
 
 == What remains outside
 
@@ -63,18 +77,19 @@ STE, BMC, property checking, equivalence checking, theorem proving, and static
 information-flow analysis are likewise outside when they reason over abstract
 trajectories or transition formulas without a load-bearing path executor. The
 boundary is architectural, not evaluative: a BMC engine may prove a stronger
-bounded property while remaining a different technique. General formal-
-hardware and directed-test surveys cover those broader neighborhoods
+bounded property while remaining a different technique. Surveys of general
+formal hardware verification and directed testing cover those broader neighborhoods
 @camurati1988formal @jayasena2024directed.
 
 Two close negative examples show why full-text adjudication matters. GreyConE
-does concolically execute compiled SystemC, but the paper does not establish
+concolically executes compiled SystemC, but the paper does not establish
 hardware-specific execution semantics or a relation to generated hardware;
-it is excluded at the HLS bridge @debnath2022greycone. Forbench merges symbolic
-design values and forks a procedural testbench, but its principal design
-mechanism is symbolic simulation rather than path-conditioned design
-execution under this definition @yang2026-forbench. Their labels are less
-important than the missing condition.
+it is excluded at the required semantic bridge @debnath2022greycone. Forbench
+steps a symbolic RTL transition model and forks a procedural testbench while
+merging design alternatives into symbolic values. Its feasible alternatives
+are testbench-control paths, not path identities distinguished by the executed
+design representation, so it fails the sharpened third condition
+@yang2026-forbench. Their labels are less important than the missing obligation.
 
 == What “hardware” means
 

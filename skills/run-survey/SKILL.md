@@ -130,7 +130,14 @@ surfaces.
   requires it on any backward row marked defective, and uses it to
   bind chases to their critical work), and any row may list
   undecided rows as `parked-keys:<key>,<key>`. Semicolons separate
-  markers; commas separate keys within one. Result sets are staged in scratch during
+  markers; commas separate keys within one. If a historical event compacted
+  away raw positions, a corrective audit uses
+  `partition-for:<event>; screened-keys:<key>,...`; repeated canonical keys
+  are retained when multiple raw positions collapsed to one work, and
+  `coverage-incomplete` marks an unrecoverable remainder. Large corrective
+  re-screens stay in ordinary batched audit rows, using the normal decision
+  columns plus `decision-partition`; do not introduce another survey ledger
+  merely to hold the same key/status facts. Result sets are staged in scratch during
   screening and discarded after reconciliation — the log row (date,
   verbatim query, counts, decided keys, notes) is the audit unit;
   the bar is traceability, and result sets are re-derivable by
@@ -244,10 +251,14 @@ surfaces.
   (`high`/`moderate`/`low`) rides the record, graded against the
   source notes' read depth and evidence limits. A survey whose
   manuscript asserts nothing beyond catalog-derived counts may omit
-  it, like `check.py`. When a cited method source already has a canonical
-  evidence note elsewhere in this repository, the local validator may exempt
-  that citekey from citation closure and the record README names the external
-  home; do not duplicate the note merely to satisfy local shape. The genre
+  it, like `check.py`. A new or materially revised survey keeps a local,
+  survey-specific note even when a cited work already has a canonical library
+  or survey note elsewhere in the repository: the local note answers this
+  survey's RQs, boundary, taxonomy, claims, and evidence limits, and may link
+  the shared understanding through the optional `canonical-note` frontmatter
+  field. Do not copy the general note wholesale. Legacy surveys may retain an
+  explicit external citation-closure exemption until that survey is next
+  materially revised. The genre
   rule: token-celled ledgers are TSV (catalog, log, queries); prose-celled
   ledgers are markdown records (claims, evidence), each opening with a preamble
   that declares its id scheme, field list, and delimiter grammar.

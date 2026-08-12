@@ -49,10 +49,8 @@ change the concolic classification.
 
 == Selective-hybrid paths
 
-Selective hybrids distribute execution state across components. Qin and
-Mishra's concrete simulator supplies a time-indexed trace, then symbolic
-reconstruction specializes arrays and solves one uncovered branch
-@qin2014interleaving. FuSS holds a concrete program corpus and coverage map,
+Selective hybrids distribute exploration state across independently progressing
+engines. FuSS holds a concrete program corpus and coverage map,
 snapshots the Verilated design state at a selected frontier, and symbolically
 solves only a short suffix @jayasena2025fuss. The path is a composite of
 concrete prefix and symbolic diversion.
@@ -63,12 +61,21 @@ concretized choices determine which behaviors can be missed. A complete
 description therefore names the handoff trigger, the state transferred, and
 whether an earlier concrete choice can later become symbolic.
 
+For a reproducible partition, the additional engine must maintain its own
+evolving frontier or corpus, make progress between symbolic invocations, and
+exchange candidates with the symbolic executor. A simulator that merely
+supplies and replays one trace in a solve-and-replay loop does not qualify;
+those systems, including Qin and Mishra, remain concolic. Classical covers the
+remaining direct symbolic-state systems.
+
 == Concurrency and time
 
 Hardware paths have at least three axes: control choices within a process,
-scheduling or interaction among processes, and repeated state transitions over
-time. Some tools serialize concurrent logic through a simulator; others model
-the scheduler; others operate under synthesis semantics where a cycle is one
-transition. These choices can be observationally equivalent for a supported
-subset and divergent elsewhere. Path count has meaning only after the
-concurrency, clock, reset, and environment models are stated.
+composition or interaction among processes, and repeated state transitions over
+time. Ordinary synchronous RTL processes denote coupled same-cycle behavior,
+not arbitrary scheduler choices. Scheduler paths can be semantically real in a
+SystemC kernel, asynchronous events, multi-clock interactions, or a racy
+testbench; some tools instead serialize concurrency as an implementation choice
+or approximation. These models can agree for a supported subset and diverge
+elsewhere. Path count has meaning only after the concurrency, clock, reset, and
+environment models are stated.

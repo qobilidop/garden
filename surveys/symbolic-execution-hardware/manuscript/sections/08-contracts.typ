@@ -7,8 +7,8 @@ do.
 
 == Replayable positive witnesses
 
-A concrete input sequence replayed on the design is the strongest common
-denominator. SE4RDV solves generated-code paths and measures the tests again in
+A concrete input sequence replayed on the design is a portable
+conclusive positive outcome. SE4RDV solves generated-code paths and measures the tests again in
 RTL simulation @zhang2016rtltests. Directed concolic testing observes the
 target during concrete RTL re-execution @ahmed2018directed. FuSS returns
 symbolically extended programs to the fuzzer and measures them on the
@@ -30,8 +30,8 @@ one-to-one with RTL branches, and excluded or unreachable targets can inflate
 or depress a percentage. A coverage claim therefore needs the instrumented
 artifact, denominator, reachability policy, temporal budget, and replay rate.
 
-Selective-hybrid work commonly uses coverage both as a handoff signal and as
-the outcome. Qin and Mishra divert concrete traces toward uncovered HDL
+Concolic and selective-hybrid work commonly uses coverage as a target or
+handoff signal and as the outcome. Qin and Mishra divert concrete traces toward uncovered HDL
 branches @qin2014interleaving; FuSS invokes symbolic suffix execution at a
 fuzzing plateau @jayasena2025fuss. AutoVeriFix+ uses concolic branch discovery
 to improve differential tests and propose RTL repair or pruning
@@ -40,8 +40,10 @@ into a proof of unreachability or semantic redundancy.
 
 == Bounded completion and negative outcomes
 
-Completed path exploration can establish all modeled executions only within
-its initial-state, time, environment, supported-language, and solver contract.
+Exhaustion by a sound executor can establish all modeled executions only within
+its initial-state, time, environment, supported-language, translation,
+approximation, and solver contract. An empty worklist alone is not a soundness
+argument.
 Timeouts, memory limits, solver limits, heuristic exhaustion, and targets never
 scheduled are incomplete outcomes even when no counterexample appears.
 
@@ -75,8 +77,9 @@ $ (A, S, T, E, X, R, C), $
 
 where $A$ is the executed artifact and translation chain; $S$ the reset or
 initial state; $T$ clock, scheduling, and temporal bound; $E$ the environment
-and harness; $X$ exactness, abstraction, concretization, and supported subset;
-$R$ the returned witness, coverage, or conclusion; and $C$ completion status.
+and harness; $X$ semantic conformance, exactness, abstraction, concretization,
+and supported subset; $R$ the returned witness, coverage, or conclusion; and
+$C$ whether search merely terminated or achieved justified bounded exhaustion.
 For a combinational design, temporal fields may be “not applicable”; they
 should not silently disappear. “Exhaustive,” “safe,” or “verified” is
 interpretable only with the complete tuple.

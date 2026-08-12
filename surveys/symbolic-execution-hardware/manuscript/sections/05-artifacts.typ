@@ -1,9 +1,10 @@
 = Executed artifacts and semantic bridges <sec-artifacts>
 
-The executed artifact determines what a path means and which component must be
-trusted. Language labels alone are insufficient: a C++ program can be the
-operational representation of RTL, while another C++ program is merely source
-intended for synthesis.
+The catalog's design-target facet names what the paper claims about; the
+operational artifact names what the symbolic engine interprets. Both matter.
+Language labels alone are insufficient: a C++ program can be the operational
+representation of RTL, while another C++ program is merely source intended for
+synthesis.
 
 == Direct HDL execution
 
@@ -22,7 +23,7 @@ all change the concrete trace relation.
 
 Translation-based systems reuse software symbolic executors. V2C lowers
 synthesizable Verilog to a word-level C transition program and then selects a
-path-symbolic-execution analyzer distinct from its BMC and abstract-
+path-symbolic-execution analyzer distinct from its BMC and abstract
 interpretation configurations @mukherjee2015software. SE4RDV uses Verilator,
 an arbitrary-bit-width KLEE variant, and a harness whose `eval()` loop defines
 the cycle horizon @zhang2016rtltests. Their trusted chain is

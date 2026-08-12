@@ -38,6 +38,10 @@ Config keys (all paths resolved against ``record_dir``):
 - ``citation_closure_exempt_citekeys``: optional citekeys whose canonical
   evidence notes live outside the survey record; these remain bibliography
   checked but are exempt from local evidence closure.
+- ``citation_closure_exempt_sections``: optional map of citekey -> allowed
+  section labels for mapping/chronology citations that deliberately do not
+  carry technical evidence records. A citation outside the declared sections
+  is not exempt.
 - ``secondary_only_evidence_exempt_citekeys``: optional citekeys whose
   ``secondary-only`` notes may support an evidence record making an explicitly
   secondhand claim. Without this deliberate exemption, secondary-only notes
@@ -46,6 +50,26 @@ Config keys (all paths resolved against ``record_dir``):
   bullets must equal the protocol's RQ1..RQn.
 - ``label_pattern``: regex for manuscript section labels
   (default ``(?:sec|tab)-[A-Za-z0-9-]+``).
+- ``include_level_statuses``: statuses counted as the manuscript corpus.
+- ``validate_screened_partitions``: require every positive-screened search or
+  snowball row to have a complete decision partition, directly or through a
+  ``partition-for`` audit row.
+- ``audit_partition_groups``: optional conventional audit-batch contracts,
+  each with ``prefix``, ``rows``, ``total``, and optional
+  ``subset_of_prefix``, ``equals_event_ids``, ``status_counts``,
+  ``rationale_unique``, ``rationale_forbid_fragments``,
+  ``require_reclassified_markers``, or ``classifier_transition_counts``.
+- ``required_audit_ids``: optional audit identifiers that must exist.
+- ``funnel_audit_ids``: optional report-key -> audit-id map for the baseline
+  discovery funnel. The engine adds every ``catalog-additions:N`` audit and
+  requires the sum to equal the catalog denominator.
+- ``query_checkpoint_fields``: optional map whose values are status field
+  labels (for example broad/strict search dates); active-query reconciliation
+  dates must equal those checkpoints. ``expected_unreconciled_queries`` names
+  deliberate gaps, and ``query_attempt_checkpoint`` selects the checkpoint
+  used to derive query attempt/success counts.
+- ``update_ledger_report_keys``: report keys, including dotted nested keys,
+  that the latest README update-ledger row must reproduce after its date.
 - ``extra_reports``: optional list of callables ``catalog_dict -> dict``
   merged into the printed derived-counts report.
 - ``declared_quantities``: optional list of published-count assertions,
@@ -56,6 +80,9 @@ Config keys (all paths resolved against ``record_dir``):
   count that drifts in prose fails the validator instead of waiting
   for a reviewer. Keep patterns narrow enough to skip historical
   figures a survey states on purpose.
+- ``require_declared_quantity_match``: when true, every named surface must
+  contain at least one configured assertion for that quantity. Legacy configs
+  may omit it while their patterns are tightened.
 """
 
 import csv
@@ -132,6 +159,12 @@ def research_questions(text):
 def seed_key(notes):
     match = re.search(r"(?:^|; )seed-key:(\S+?)(?:;|$)", notes)
     return match.group(1) if match else None
+
+
+def marker_keys(notes, label):
+    """Return comma-separated keys carried by one semicolon-delimited marker."""
+    match = re.search(rf"(?:^|; ){re.escape(label)}:([^;]+)(?:;|$)", notes)
+    return [] if match is None else cell_keys(match.group(1))
 
 
 def run(config):
@@ -274,6 +307,12 @@ def run(config):
         if citekey and citekey.group(1).strip() != note.stem:
             errors.append(f"{note.name}: filename/citekey mismatch")
         note_keys.add(note.stem)
+        canonical_note = re.search(r"^canonical-note:\s*(.+)$", frontmatter, re.M)
+        if canonical_note:
+            relative = canonical_note.group(1).strip().strip('"\'')
+            target = record.parents[2] / relative
+            if Path(relative).is_absolute() or not target.is_file():
+                errors.append(f"{note.name}: canonical-note is not an existing repo-relative file")
         read = re.search(r"^read:\s*(full-text|abstract-only|secondary-only)$", frontmatter, re.M)
         if read:
             reads[read.group(1)] += 1
@@ -470,10 +509,21 @@ def run(config):
         errors.append(f"claim has no evidence record: {claim}")
     if config.get("strict_citation_closure"):
         exempt_citekeys = set(config.get("citation_closure_exempt_citekeys", []))
+        exempt_sections = {
+            citekey: set(labels)
+            for citekey, labels in config.get("citation_closure_exempt_sections", {}).items()
+        }
         for citekey in sorted(exempt_citekeys - citations):
             errors.append(f"citation-closure exemption is not cited: {citekey}")
+        for citekey, labels in sorted(exempt_sections.items()):
+            if citekey not in citations:
+                errors.append(f"section-scoped citation exemption is not cited: {citekey}")
+            for label in sorted(labels - manuscript_labels):
+                errors.append(f"section-scoped citation exemption names unknown label {label}")
         for label, citekey in sorted(citation_pairs - covered_pairs):
             if citekey in exempt_citekeys:
+                continue
+            if label in exempt_sections.get(citekey, set()):
                 continue
             errors.append(f"manuscript citation has no evidence record at {label}: {citekey}")
 
@@ -481,6 +531,11 @@ def run(config):
     log_rows = read_tsv(record / "log.tsv", LOG_HEADER, errors)
     kind_counts = Counter()
     promoted, superseded, reclassified = set(), set(), set()
+    audit_rows = [row for row in log_rows if row["kind"] == "audit"]
+    for identifier, count in Counter(row["id"] for row in audit_rows).items():
+        if count > 1:
+            errors.append(f"duplicate audit id {identifier}")
+    audits = {row["id"]: row for row in audit_rows}
     for row in log_rows:
         promoted.update(re.findall(r"(?:^|; )promoted-key:(\S+?)(?:;|$)", row["notes"]))
         superseded.update(re.findall(r"(?:^|; )superseded-key:(\S+?)(?:;|$)", row["notes"]))
@@ -545,6 +600,190 @@ def run(config):
             else:
                 defective_seeds.add(seed)
 
+    for identifier in config.get("required_audit_ids", []):
+        if identifier not in audits:
+            errors.append(f"required audit row is missing: {identifier}")
+
+    # Conventional audit batches use the ordinary decision columns. This
+    # keeps key-level repair history resumable without introducing a second
+    # survey-specific ledger schema.
+    audit_partition_keys = {}
+    for identifier, row in audits.items():
+        if "decision-partition" not in row["notes"]:
+            continue
+        included_keys = cell_keys(row["included_keys"])
+        excluded_keys = cell_keys(row["excluded_keys"])
+        parked_keys = marker_keys(row["notes"], "parked-keys")
+        keys = included_keys + excluded_keys + parked_keys
+        if not row["screened"].isdigit():
+            errors.append(f"audit partition {identifier} has nonnumeric screened count")
+            continue
+        if len(keys) != int(row["screened"]):
+            errors.append(f"audit partition {identifier} is not key-complete")
+        if len(keys) != len(set(keys)):
+            errors.append(f"audit partition {identifier} repeats a key")
+        for key in keys:
+            if key not in catalog:
+                errors.append(f"audit partition {identifier} names unknown key {key}")
+        for key in included_keys:
+            if key in catalog and catalog[key]["status"] == "excluded":
+                errors.append(f"audit partition {identifier} includes currently excluded key {key}")
+        for key in excluded_keys:
+            if key in catalog and catalog[key]["status"] != "excluded":
+                errors.append(f"audit partition {identifier} excludes non-excluded key {key}")
+        for key in parked_keys:
+            if key in catalog and catalog[key]["status"] != "parked":
+                errors.append(f"audit partition {identifier} parks non-parked key {key}")
+        audit_partition_keys[identifier] = keys
+
+    for group in config.get("audit_partition_groups", []):
+        rows = {
+            identifier: keys for identifier, keys in audit_partition_keys.items()
+            if identifier.startswith(group["prefix"])
+        }
+        if len(rows) != group["rows"]:
+            errors.append(
+                f"audit group {group['prefix']} has {len(rows)} rows, expected {group['rows']}"
+            )
+        flattened = [key for keys in rows.values() for key in keys]
+        if len(flattened) != group["total"] or len(flattened) != len(set(flattened)):
+            errors.append(
+                f"audit group {group['prefix']} does not partition {group['total']} unique keys"
+            )
+        parent = group.get("subset_of_prefix")
+        if parent:
+            parent_keys = {
+                key for identifier, keys in audit_partition_keys.items()
+                if identifier.startswith(parent) for key in keys
+            }
+            if not set(flattened) < parent_keys:
+                errors.append(f"audit group {group['prefix']} is not a strict subset of {parent}")
+        origin_ids = group.get("equals_event_ids", [])
+        if origin_ids:
+            origin_keys = set()
+            for identifier in origin_ids:
+                row = next((item for item in log_rows if item["id"] == identifier), None)
+                if row is None:
+                    errors.append(f"audit group {group['prefix']} names missing origin event {identifier}")
+                    continue
+                origin_keys.update(cell_keys(row["included_keys"]))
+                origin_keys.update(cell_keys(row["excluded_keys"]))
+                origin_keys.update(marker_keys(row["notes"], "parked-keys"))
+                origin_keys.update(marker_keys(row["notes"], "overlap-keys"))
+            if set(flattened) != origin_keys:
+                errors.append(f"audit group {group['prefix']} differs from its originating event keys")
+        expected_statuses = group.get("status_counts")
+        if expected_statuses is not None:
+            actual_statuses = Counter(catalog[key]["status"] for key in flattened if key in catalog)
+            if actual_statuses != Counter(expected_statuses):
+                errors.append(f"audit group {group['prefix']} has stale current status partition")
+        if group.get("rationale_unique"):
+            rationales = [catalog[key].get("relevance", "").strip() for key in flattened if key in catalog]
+            if not all(rationales) or len(rationales) != len(set(rationales)):
+                errors.append(f"audit group {group['prefix']} lacks distinct item rationales")
+            forbidden = group.get("rationale_forbid_fragments", [])
+            if any(fragment in rationale for fragment in forbidden for rationale in rationales):
+                errors.append(f"audit group {group['prefix']} retains a forbidden rationale template")
+        if group.get("require_reclassified_markers"):
+            for identifier, keys in rows.items():
+                markers = [
+                    value.strip() for value in re.findall(
+                        r"reclassified-key:([^;]+)", audits[identifier]["notes"]
+                    )
+                ]
+                if set(markers) != set(keys) or len(markers) != len(keys):
+                    errors.append(f"audit partition {identifier} has stale reclassified-key markers")
+        transition_counts = group.get("classifier_transition_counts")
+        if transition_counts is not None:
+            observed = Counter()
+            for identifier, keys in rows.items():
+                match = re.search(
+                    r"classifier baseline ([^/;]+)/([^/;]+)/([^ ;]+) -> "
+                    r"([^/;]+)/([^/;]+)/([^;]+)(?:;|$)",
+                    audits[identifier]["notes"],
+                )
+                if match is None:
+                    errors.append(f"audit partition {identifier} lacks a classifier transition")
+                    continue
+                old_status, old_code, old_priority, new_status, new_code, new_priority = match.groups()
+                for key in keys:
+                    current = catalog.get(key)
+                    if current and (new_status, new_code, new_priority) != (
+                        current["status"], current["code"], current["priority"]
+                    ):
+                        errors.append(f"audit partition {identifier} has stale final fields for {key}")
+                    observed["status"] += old_status != new_status
+                    observed["code"] += old_code != new_code
+                    observed["priority"] += old_priority != new_priority
+            if observed != Counter(transition_counts):
+                errors.append(f"audit group {group['prefix']} classifier transitions do not reconcile")
+
+    if config.get("validate_screened_partitions"):
+        repairs = {}
+        for identifier, row in audits.items():
+            repaired_id = marker_keys(row["notes"], "partition-for")
+            screened_keys = marker_keys(row["notes"], "screened-keys")
+            if repaired_id:
+                if len(repaired_id) != 1:
+                    errors.append(f"partition audit {identifier} names multiple events")
+                    continue
+                if repaired_id[0] in repairs:
+                    errors.append(f"duplicate partition audit for {repaired_id[0]}")
+                repairs[repaired_id[0]] = (row, screened_keys)
+        log_ids = {row["id"] for row in log_rows}
+        for event_id in sorted(set(repairs) - log_ids):
+            errors.append(f"partition audit names unknown event {event_id}")
+        for row in log_rows:
+            if row["kind"] not in {"search", "snowball"}:
+                continue
+            if not row["screened"].isdigit() or int(row["screened"]) == 0:
+                continue
+            direct = cell_keys(row["included_keys"]) + cell_keys(row["excluded_keys"])
+            direct += marker_keys(row["notes"], "parked-keys")
+            direct += marker_keys(row["notes"], "overlap-keys")
+            screened = int(row["screened"])
+            if len(direct) == screened:
+                for key in direct:
+                    if key not in catalog:
+                        errors.append(f"direct decision partition for {row['id']} names unknown key {key}")
+                continue
+            repair = repairs.get(row["id"])
+            if repair:
+                audit, keys = repair
+                if not audit["hits"].isdigit() or int(audit["hits"]) != screened:
+                    errors.append(f"partition repair for {row['id']} disagrees with historical screened count")
+                if not audit["screened"].isdigit() or len(keys) != int(audit["screened"]):
+                    errors.append(f"partition repair for {row['id']} is not key-complete")
+                if audit["screened"].isdigit() and int(audit["screened"]) != screened and "coverage-incomplete" not in audit["notes"]:
+                    errors.append(f"partition repair for {row['id']} silently changes the screened count")
+                for key in keys:
+                    if key not in catalog:
+                        errors.append(f"partition repair for {row['id']} names unknown key {key}")
+                continue
+            external = marker_keys(row["notes"], "external-decision-home")
+            if external:
+                target = record.parents[2] / external[0]
+                if not target.is_file():
+                    errors.append(f"external decision home does not exist: {external[0]}")
+                continue
+            errors.append(f"positive-screened row {row['id']} has no key-complete decision partition")
+
+    funnel = {}
+    for report_key, identifier in config.get("funnel_audit_ids", {}).items():
+        row = audits.get(identifier)
+        if row is None or not row["hits"].isdigit():
+            errors.append(f"funnel audit is missing or nonnumeric: {identifier}")
+            continue
+        funnel[report_key] = int(row["hits"])
+    if funnel:
+        additions = sum(
+            int(value)
+            for row in audits.values()
+            for value in re.findall(r"(?:^|; )catalog-additions:(\d+)(?:;|$)", row["notes"])
+        )
+        if sum(funnel.values()) + additions != len(catalog):
+            errors.append("baseline funnel plus catalog additions does not equal catalog denominator")
+
     for seed in sorted(defective_seeds):
         if not any("primary-complete" in item["notes"] for item in rows_by_seed.get(seed, [])):
             errors.append(f"defective backward chase for {seed} has no primary bibliography")
@@ -589,12 +828,52 @@ def run(config):
             except ValueError:
                 errors.append(f"queries.tsv:{lineno}: invalid last_reconciled {row['last_reconciled']!r}")
 
+    checkpoints = {}
+    for name, label in config.get("query_checkpoint_fields", {}).items():
+        match = re.search(rf"(?m)^- \*\*{re.escape(label)}:\*\* (\d{{4}}-\d{{2}}-\d{{2}})", status_text)
+        if match is None:
+            errors.append(f"status.md: missing machine-readable query checkpoint {label!r}")
+        else:
+            checkpoints[name] = match.group(1)
+    query_attempts = []
+    if checkpoints:
+        active = [row for row in query_rows if row["active"] == "true"]
+        active_dates = {row["last_reconciled"] for row in active if row["last_reconciled"]}
+        if active_dates != set(checkpoints.values()):
+            errors.append("active query registry disagrees with the declared search checkpoints")
+        unreconciled = {row["query_id"] for row in active if not row["last_reconciled"]}
+        expected_unreconciled = set(config.get("expected_unreconciled_queries", []))
+        if unreconciled != expected_unreconciled:
+            errors.append(
+                f"unreconciled active queries are {sorted(unreconciled)}, "
+                f"expected {sorted(expected_unreconciled)}"
+            )
+        checkpoint_name = config.get("query_attempt_checkpoint")
+        checkpoint_date = checkpoints.get(checkpoint_name)
+        if checkpoint_date:
+            query_attempts = [
+                row for row in log_rows
+                if row["kind"] == "search" and row["date"] == checkpoint_date
+            ]
+            registered = {row["query_id"] for row in query_rows}
+            attempt_ids = [row["id"] for row in query_attempts]
+            if len(attempt_ids) != len(set(attempt_ids)) or not set(attempt_ids) <= registered:
+                errors.append("query checkpoint has duplicate or unregistered search attempts")
+            reconciled_at_checkpoint = {
+                row["query_id"] for row in active if row["last_reconciled"] == checkpoint_date
+            }
+            if not reconciled_at_checkpoint <= set(attempt_ids):
+                errors.append("query checkpoint omits a reconciled active query")
+            if not expected_unreconciled <= set(attempt_ids):
+                errors.append("query checkpoint omits an attempted unreconciled query")
+
     # --- landing page curation ---
     curated = {Path(match).stem for match in re.findall(r"record/sources/([^)]+\.md)", index_text)}
     curated.update(target for target in re.findall(r"\[\[([^\]]+)\]\]", index_text) if target in note_keys)
 
     report = {
         "catalog_rows": len(catalog),
+        "deep_read": status_counts.get("deep-read", 0),
         "status": dict(sorted(status_counts.items())),
         "exclusion_codes": dict(sorted(code_counts.items())),
         "log_rows": dict(sorted(kind_counts.items())),
@@ -606,12 +885,49 @@ def run(config):
         "curated_source_notes": len(curated),
         "bibliography_entries": len(bib_keys),
         "manuscript_citations": len(citations),
+        **funnel,
     }
+    if "include_level_statuses" in config:
+        report["include_level"] = sum(
+            count for status, count in status_counts.items()
+            if status in set(config["include_level_statuses"])
+        )
+    if checkpoints:
+        report["query_attempts"] = len(query_attempts)
+        report["query_successes"] = sum(
+            not row["hits"].startswith("FAILED") for row in query_attempts
+        )
     for field in config.get("facets", {}):
         counter = Counter(row[field] for row in catalog.values() if row["status"] in facet_statuses)
         report[field] = dict(sorted(counter.items()))
     for extra_report in config.get("extra_reports", []):
         report.update(extra_report(catalog))
+
+    ledger_keys = config.get("update_ledger_report_keys", [])
+    if ledger_keys:
+        lines = [
+            line for line in (record / "README.md").read_text(encoding="utf-8").splitlines()
+            if re.match(r"^\| \d{4}-\d{2}-\d{2} \|", line)
+        ]
+        if not lines:
+            errors.append("record README has no update-ledger checkpoint row")
+        else:
+            cells = [cell.strip() for cell in lines[-1].split("|")][1:-1]
+            coverage = re.search(r"(?m)^- \*\*Coverage through:\*\* (\d{4}-\d{2}-\d{2})", status_text)
+            if coverage and cells[0] != coverage.group(1):
+                errors.append("latest update-ledger date differs from status coverage")
+            expected = []
+            for dotted in ledger_keys:
+                value = report
+                for component in dotted.split("."):
+                    value = value[component]
+                expected.append(int(value))
+            try:
+                found = [int(value.replace(",", "")) for value in cells[1:1 + len(expected)]]
+            except ValueError:
+                found = []
+            if found != expected:
+                errors.append("latest update-ledger counts differ from derived record counts")
 
     # --- declared quantities ---
     # A survey names the counts it publishes and the exact phrasings that
@@ -626,14 +942,18 @@ def run(config):
                 errors.append(f"declared-quantity surface is missing: {relative}")
                 continue
             text = path.read_text(encoding="utf-8")
+            surface_matches = 0
             for pattern in declared["patterns"]:
                 for match in re.finditer(pattern, text):
+                    surface_matches += 1
                     found = int(match.group(1).replace(",", ""))
                     if found != expected:
                         errors.append(
                             f"{relative}: {declared['name']} reads {match.group(1)}, "
                             f"derived value is {expected} (matched {pattern!r})"
                         )
+            if surface_matches == 0 and config.get("require_declared_quantity_match"):
+                errors.append(f"{relative}: published quantity {declared['name']!r} has no matching assertion")
 
     print(json.dumps(report, indent=2, sort_keys=True))
     for error in errors:

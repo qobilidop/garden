@@ -1,10 +1,7 @@
 #!/usr/bin/env python3
-"""Validate the hardware-symbolic-execution survey and print derived counts."""
+"""Declare the hardware-symbolic-execution record contract."""
 
-import csv
-import re
 import sys
-from collections import Counter
 from pathlib import Path
 
 RECORD = Path(__file__).resolve().parent
@@ -13,96 +10,12 @@ sys.path.insert(0, str(RECORD.parents[2] / "skills" / "run-survey" / "scripts"))
 from survey_check import run  # noqa: E402
 
 
-def map_report(catalog):
-    included = [row for row in catalog.values() if row["status"] in {"included", "deep-read"}]
-    by_decade = Counter()
-    for row in included:
-        if row["year"].isdigit():
-            by_decade[f"{(int(row['year']) // 10) * 10}s"] += 1
-        else:
-            by_decade["unknown"] += 1
-    with (RECORD / "log.tsv").open(newline="", encoding="utf-8") as handle:
-        log_rows = list(csv.DictReader(handle, delimiter="\t"))
-    audit_rows = [row for row in log_rows if row["kind"] == "audit"]
-    audits = {row["id"]: row for row in audit_rows}
-    funnel_ids = {
-        "base_records": "base-screen-a",
-        "chase_records": "snowball-screening",
-        "carter_records": "carter-screening",
-        "forbench_records": "forbench-screening",
-        "manual_records": "manual-primary-additions",
-    }
-    funnel = {name: int(audits[identifier]["hits"]) for name, identifier in funnel_ids.items()}
-    additions = sum(
-        int(match.group(1))
-        for row in audit_rows
-        for match in re.finditer(r"(?:^|; )catalog-additions:(\d+)(?:;|$)", row["notes"])
-    )
-    if sum(funnel.values()) + additions != len(catalog):
-        raise RuntimeError("baseline funnel plus update additions does not equal the catalog denominator")
-    for row in log_rows:
-        if row["kind"] not in {"search", "snowball"} or not row["screened"].isdigit() or int(row["screened"]) == 0:
-            continue
-        has_decisions = row["included_keys"] not in {"", "-"} or row["excluded_keys"] not in {"", "-"} or "parked-keys:" in row["notes"]
-        has_external_partition = "no-chase-only" in row["notes"] or "external-decision-home:" in row["notes"]
-        if not has_decisions and not has_external_partition:
-            raise RuntimeError(f"positive-screened row {row['id']} has no retained decision partition")
-        external = re.search(r"(?:^|; )external-decision-home:([^;]+)(?:;|$)", row["notes"])
-        if external:
-            target = RECORD.parents[2] / external.group(1)
-            if not target.is_file():
-                raise RuntimeError(f"external decision home does not exist: {external.group(1)}")
-            seed = re.search(r"(?:^|; )seed-key:(\S+?)(?:;|$)", row["notes"])
-            with target.open(newline="", encoding="utf-8") as handle:
-                external_rows = list(csv.DictReader(handle, delimiter="\t"))
-            matches = [item for item in external_rows if seed and f"seed-key:{seed.group(1)}" in item["notes"]]
-            if not any(item["hits"] == row["hits"] and item["screened"] == row["screened"] for item in matches):
-                raise RuntimeError(f"external decision home does not cover {row['id']}")
-    with (RECORD / "queries.tsv").open(newline="", encoding="utf-8") as handle:
-        query_rows = list(csv.DictReader(handle, delimiter="\t"))
-    status_text = (RECORD / "status.md").read_text(encoding="utf-8")
-    coverage_match = re.search(r"\*\*Coverage through:\*\* (\d{4}-\d{2}-\d{2})", status_text)
-    if not coverage_match:
-        raise RuntimeError("status has no machine-readable coverage date")
-    coverage_date = coverage_match.group(1)
-    search_match = re.search(r"\*\*Search through:\*\* (\d{4}-\d{2}-\d{2})", status_text)
-    if not search_match:
-        raise RuntimeError("status has no machine-readable standing-search date")
-    search_date = search_match.group(1)
-    searches = [row for row in log_rows if row["kind"] == "search" and row["date"] == search_date]
-    query_ids = {row["query_id"] for row in query_rows}
-    search_ids = [row["id"] for row in searches]
-    if len(search_ids) != len(set(search_ids)) or not set(search_ids) <= query_ids:
-        raise RuntimeError("current checkpoint has duplicate or unregistered search events")
-    due_ids = {row["query_id"] for row in query_rows if row["last_reconciled"] == search_date}
-    if not due_ids <= set(search_ids):
-        raise RuntimeError("current checkpoint omits a reconciled standing query")
-    ledger_lines = [
-        line for line in (RECORD / "README.md").read_text(encoding="utf-8").splitlines()
-        if re.match(r"^\| \d{4}-\d{2}-\d{2} \|", line)
-    ]
-    if not ledger_lines:
-        raise RuntimeError("README update ledger has no checkpoint row")
-    ledger = [cell.strip() for cell in ledger_lines[-1].split("|")][1:-1]
-    if ledger[0] != coverage_date:
-        raise RuntimeError("latest update-ledger date differs from status coverage")
-    ledger_counts = [int(value.replace(",", "")) for value in ledger[1:6]]
-    current_counts = [
-        len(catalog), len(included), sum(row["status"] == "deep-read" for row in included),
-        sum(row["status"] == "excluded" for row in catalog.values()),
-        sum(row["status"] == "parked" for row in catalog.values()),
-    ]
-    if ledger_counts != current_counts:
-        raise RuntimeError("latest update-ledger counts differ from the catalog")
-    return {
-        "include_level": len(included),
-        "deep_read": sum(row["status"] == "deep-read" for row in included),
-        "include_by_decade": dict(sorted(by_decade.items())),
-        "query_attempts": len(searches),
-        "query_successes": sum(not row["hits"].startswith("FAILED") for row in searches),
-        **funnel,
-    }
+def q(name, value, surfaces, *patterns):
+    return {"name": name, "value": value, "surfaces": surfaces, "patterns": list(patterns)}
 
+
+MANUSCRIPT_AND_STATUS = ["manuscript/sections/03-method.typ", "record/status.md"]
+METHOD = ["manuscript/sections/03-method.typ"]
 
 CONFIG = {
     "record_dir": RECORD,
@@ -112,14 +25,10 @@ CONFIG = {
     ],
     "statuses": {"candidate", "screened", "included", "deep-read", "excluded", "parked"},
     "exclusion_codes": {
-        "E1-software-or-firmware-only",
-        "E2-formal-hardware-without-execution",
-        "E3-symbolic-method-without-path-execution",
-        "E4-analog-physical-or-postsilicon",
-        "E5-hardware-accelerates-software",
-        "E6-out-of-scope-artifact",
-        "E7-secondary-or-insubstantial",
-        "E8-duplicate-or-superseded",
+        "E1-software-or-firmware-only", "E2-formal-hardware-without-execution",
+        "E3-symbolic-method-without-path-execution", "E4-analog-physical-or-postsilicon",
+        "E5-hardware-accelerates-software", "E6-out-of-scope-artifact",
+        "E7-secondary-or-insubstantial", "E8-duplicate-or-superseded",
         "E9-retracted-or-withdrawn",
     },
     "facets": {
@@ -130,158 +39,105 @@ CONFIG = {
         "evidence": {"experiment", "case-study", "formal-only", "none"},
     },
     "facet_statuses": {"included", "deep-read"},
+    "include_level_statuses": {"included", "deep-read"},
     "priorities": {"critical", "high", "medium", "low"},
-    # Two excluded boundary works retain notes because the manuscript uses
-    # their mechanisms to make the negative boundary auditable.
     "noted_statuses": {"included", "deep-read", "excluded"},
-    "note_required_statuses": set(),
+    "note_required_statuses": {"deep-read"},
     "claim_required_fields": ["Status", "Statement", "Scope", "Prior frontier"],
     "strict_citation_sections": True,
     "strict_citation_closure": True,
-    "citation_closure_exempt_citekeys": {
-        "baldoni2016-symbolic", "carter1979symbolic", "kolbl2001rtl",
-        "feng2004dynamic", "debnath2022greycone", "yang2026-forbench",
-        "ryan2023sylvia", "bagri2015restrictive", "lyu2017quebs",
-        "pinto2017factored", "shen2018trojan", "lin2018ctsc",
-        "zhang2018recursive", "ahmed2018trojan", "lyu2019multitarget",
-        "lin2020selective", "jayasena2021assertions", "lyu2021soccar",
-        "lyu2021fuce", "roy2023slec", "zheng2024incremental",
-        "petersen2015mapping", "wohlin2014snowballing",
-        "camurati1988formal", "jayasena2024directed",
+    "citation_closure_exempt_sections": {
+        citekey: {"sec-lineages"} for citekey in {
+            "bagri2015restrictive", "lyu2017quebs", "pinto2017factored",
+            "lin2018ctsc", "ahmed2018trojan", "lyu2019multitarget",
+            "lin2020selective", "jayasena2021assertions", "lyu2021soccar",
+            "lyu2021fuce", "roy2023slec", "zheng2024incremental",
+        }
+    } | {
+        "camurati1988formal": {"sec-boundary"},
+        "jayasena2024directed": {"sec-boundary"},
     },
     "rq_manuscript_file": "manuscript/sections/01-introduction.typ",
     "label_pattern": "(?:sec|tab)-[A-Za-z0-9-]+",
-    "extra_reports": [map_report],
+    "validate_screened_partitions": True,
+    "audit_partition_groups": [
+        {
+            "prefix": "critical-chase-rescreen-batch-", "rows": 3, "total": 161,
+            "equals_event_ids": [
+                "wsa-strict-back", "wsa-strict-forward",
+                "qin-strict-back", "qin-strict-forward",
+                "v2c-strict-back", "v2c-strict-forward",
+                "sesc-strict-back", "sesc-strict-forward",
+                "coppelia-strict-back", "coppelia-strict-forward",
+                "eisec-strict-back", "eisec-strict-forward",
+                "riscv-case-strict-back", "riscv-case-strict-forward",
+                "autoverifix-strict-back", "autoverifix-strict-forward",
+                "hls-tcp-strict-back", "hls-tcp-strict-forward",
+            ],
+            "status_counts": {"excluded": 159, "parked": 2},
+            "rationale_unique": True,
+            "rationale_forbid_fragments": [
+                "analyzes software, firmware, binaries, or the software symbolic-execution engine",
+                "contributes formal semantics, model/property checking, assertions, invariants",
+                "uses concrete simulation, random testing, fuzzing, or heuristic search",
+                "is a survey, foundation, standard, benchmark, tool description, or contextual source",
+                "duplicate, reprint, or superseded version of the already cataloged contribution titled",
+            ],
+        },
+        {
+            "prefix": "critical-rationale-repair-batch-", "rows": 3, "total": 138,
+            "subset_of_prefix": "critical-chase-rescreen-batch-",
+        },
+        {
+            "prefix": "classifier-delta-group-", "rows": 14, "total": 46,
+            "subset_of_prefix": "critical-chase-rescreen-batch-",
+            "require_reclassified_markers": True,
+            "classifier_transition_counts": {"status": 0, "code": 38, "priority": 10},
+        },
+    ],
+    "required_audit_ids": ["classifier-delta-btor2c", "adversarial-log-normalization"],
+    "funnel_audit_ids": {
+        "base_records": "base-screen-a", "chase_records": "snowball-screening",
+        "carter_records": "carter-screening", "forbench_records": "forbench-screening",
+        "manual_records": "manual-primary-additions",
+    },
+    "query_checkpoint_fields": {
+        "broad": "Broad searches through", "strict": "Strict searches through",
+    },
+    "expected_unreconciled_queries": {"s25"},
+    "query_attempt_checkpoint": "strict",
+    "update_ledger_report_keys": [
+        "catalog_rows", "include_level", "deep_read", "status.excluded", "status.parked",
+    ],
+    "require_declared_quantity_match": True,
     "declared_quantities": [
-        {
-            "name": "catalog rows",
-            "value": "catalog_rows",
-            "surfaces": ["manuscript/sections/03-method.typ", "record/status.md"],
-            "patterns": [r"catalog contains ([0-9,]+) records", r"\*\*Catalog records:\*\* ([0-9,]+)"],
-        },
-        {
-            "name": "include-level records",
-            "value": "include_level",
-            "surfaces": ["manuscript/sections/03-method.typ", "record/status.md"],
-            "patterns": [r"([0-9,]+) are include-level records", r"\*\*Include-level records:\*\* ([0-9,]+)"],
-        },
-        {
-            "name": "deep-read records",
-            "value": "deep_read",
-            "surfaces": ["manuscript/sections/03-method.typ", "record/status.md"],
-            "patterns": [r"([0-9,]+)\nwere deep-read", r"\*\*Critical deep reads:\*\* ([0-9,]+)"],
-        },
-        {
-            "name": "mapping-depth records",
-            "value": lambda report: report["status"]["included"],
-            "surfaces": ["manuscript/sections/03-method.typ", "record/status.md"],
-            "patterns": [r"([0-9,]+) were retained at mapping depth", r"\*\*Mapping-depth includes:\*\* ([0-9,]+)"],
-        },
-        {
-            "name": "parked records",
-            "value": lambda report: report["status"]["parked"],
-            "surfaces": ["manuscript/sections/03-method.typ", "record/status.md"],
-            "patterns": [r"([0-9,]+) are parked", r"\*\*Parked:\*\* ([0-9,]+)"],
-        },
-        {
-            "name": "excluded records",
-            "value": lambda report: report["status"]["excluded"],
-            "surfaces": ["manuscript/sections/03-method.typ", "record/status.md"],
-            "patterns": [r"([0-9,]+) are excluded", r"\*\*Excluded:\*\* ([0-9,]+)"],
-        },
-        {
-            "name": "query attempts",
-            "value": "query_attempts",
-            "surfaces": ["manuscript/sections/03-method.typ", "record/status.md"],
-            "patterns": [r"revision attempted ([0-9,]+) boundary-focused queries", r"The strict revision attempted ([0-9,]+) queries"],
-        },
-        {
-            "name": "successful queries",
-            "value": "query_successes",
-            "surfaces": ["manuscript/sections/03-method.typ", "record/status.md"],
-            "patterns": [r"([0-9,]+) returned result sets", r"([0-9,]+) produced result sets"],
-        },
-        {
-            "name": "failed queries",
-            "value": lambda report: report["query_attempts"] - report["query_successes"],
-            "surfaces": ["manuscript/sections/03-method.typ"],
-            "patterns": [r"([0-9,]+) failed with HTTP 429"],
-        },
-        {
-            "name": "base discovery records",
-            "value": "base_records",
-            "surfaces": ["manuscript/sections/03-method.typ", "record/status.md"],
-            "patterns": [r"([0-9,]+) deduplicated database-search records"],
-        },
-        {
-            "name": "chase-only records",
-            "value": "chase_records",
-            "surfaces": ["manuscript/sections/03-method.typ", "record/status.md"],
-            "patterns": [r"([0-9,]+)\nchase-only records", r"([0-9,]+) chase-only records"],
-        },
-        {
-            "name": "Carter-lineage records",
-            "value": "carter_records",
-            "surfaces": ["manuscript/sections/03-method.typ", "record/status.md"],
-            "patterns": [r"([0-9,]+) Carter-lineage records"],
-        },
-        {
-            "name": "Forbench bibliography records",
-            "value": "forbench_records",
-            "surfaces": ["manuscript/sections/03-method.typ", "record/status.md"],
-            "patterns": [r"([0-9,]+) Forbench bibliography\nrecords", r"([0-9,]+) Forbench bibliography\nrecords"],
-        },
-        {
-            "name": "manual primary additions",
-            "value": "manual_records",
-            "surfaces": ["manuscript/sections/03-method.typ", "record/status.md"],
-            "patterns": [r"([0-9,]+) directly inspected primary additions"],
-        },
-        {
-            "name": "RTL works",
-            "value": lambda report: report["artifact"]["rtl"],
-            "surfaces": ["manuscript/sections/03-method.typ"],
-            "patterns": [r"([0-9,]+) execute RTL"],
-        },
-        {
-            "name": "SystemC/TLM works",
-            "value": lambda report: report["artifact"]["systemc-tlm"],
-            "surfaces": ["manuscript/sections/03-method.typ"],
-            "patterns": [r"([0-9,]+) execute SystemC/TLM"],
-        },
-        {
-            "name": "mixed-level works",
-            "value": lambda report: report["artifact"]["mixed-level"],
-            "surfaces": ["manuscript/sections/03-method.typ"],
-            "patterns": [r"([0-9,]+) execute coupled mixed-level models"],
-        },
-        {
-            "name": "remaining artifact works",
-            "value": lambda report: (
-                report["include_level"] - report["artifact"]["rtl"]
-                - report["artifact"]["systemc-tlm"] - report["artifact"]["mixed-level"]
-            ),
-            "surfaces": ["manuscript/sections/03-method.typ"],
-            "patterns": [r"The remaining ([0-9,]+) are one each"],
-        },
-        {
-            "name": "classical works",
-            "value": lambda report: report["execution"]["classical"],
-            "surfaces": ["manuscript/sections/03-method.typ"],
-            "patterns": [r"([0-9,]+) classical"],
-        },
-        {
-            "name": "concolic works",
-            "value": lambda report: report["execution"]["concolic"],
-            "surfaces": ["manuscript/sections/03-method.typ"],
-            "patterns": [r"([0-9,]+) concolic"],
-        },
-        {
-            "name": "selective-hybrid works",
-            "value": lambda report: report["execution"]["selective-hybrid"],
-            "surfaces": ["manuscript/sections/03-method.typ"],
-            "patterns": [r"([0-9,]+) selective-hybrid"],
-        },
+        q("catalog rows", "catalog_rows", MANUSCRIPT_AND_STATUS,
+          r"catalog contains ([0-9,]+) records", r"catalog holds ([0-9,]+) works"),
+        q("include-level records", "include_level", MANUSCRIPT_AND_STATUS,
+          r"([0-9,]+) are include-level publication records", r"for ([0-9,]+) include-level"),
+        q("deep reads", "deep_read", MANUSCRIPT_AND_STATUS,
+          r"([0-9,]+)\nwere deep-read", r"([0-9,]+) deep-read"),
+        q("mapping includes", lambda report: report["status"]["included"], MANUSCRIPT_AND_STATUS,
+          r"([0-9,]+) were retained at mapping depth", r"([0-9,]+) included at mapping depth"),
+        q("parked", lambda report: report["status"]["parked"], MANUSCRIPT_AND_STATUS,
+          r"([0-9,]+) are parked", r"([0-9,]+) parked"),
+        q("excluded", lambda report: report["status"]["excluded"], MANUSCRIPT_AND_STATUS,
+          r"([0-9,]+) are excluded", r"([0-9,]+) excluded"),
+        q("query attempts", "query_attempts", METHOD,
+          r"revision attempted ([0-9,]+) boundary-focused queries"),
+        q("query successes", "query_successes", METHOD,
+          r"([0-9,]+) returned result sets"),
+        q("database records", "base_records", METHOD, r"([0-9,]+) deduplicated database-search records"),
+        q("chase records", "chase_records", METHOD, r"([0-9,]+)\nchase-only records"),
+        q("Carter records", "carter_records", METHOD, r"([0-9,]+) Carter-lineage records"),
+        q("Forbench records", "forbench_records", METHOD, r"([0-9,]+) Forbench bibliography\nrecords"),
+        q("manual records", "manual_records", METHOD, r"([0-9,]+) directly inspected primary additions"),
+        q("classical", lambda report: report["execution"]["classical"], MANUSCRIPT_AND_STATUS, r"([0-9,]+) classical"),
+        q("concolic", lambda report: report["execution"]["concolic"], MANUSCRIPT_AND_STATUS, r"([0-9,]+)\s+concolic"),
+        q("selective", lambda report: report["execution"]["selective-hybrid"], MANUSCRIPT_AND_STATUS, r"([0-9,]+) selective-hybrid"),
+        q("RTL", lambda report: report["artifact"]["rtl"], METHOD, r"([0-9,]+) claim about RTL"),
+        q("SystemC", lambda report: report["artifact"]["systemc-tlm"], METHOD, r"([0-9,]+)\nabout SystemC/TLM"),
+        q("mixed level", lambda report: report["artifact"]["mixed-level"], METHOD, r"([0-9,]+) about coupled mixed-level models"),
     ],
 }
 

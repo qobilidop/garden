@@ -42,8 +42,15 @@ def status(args: argparse.Namespace) -> int:
     queries = records()
     active = [query for query in queries if query["active"] == "true"]
     today = parse_date(args.as_of)
+    never_reconciled = [
+        query["query_id"] for query in active if not query["last_reconciled"]
+    ]
     last_reconciled = min(
-        (parse_date(q["last_reconciled"]) for q in active),
+        (
+            parse_date(q["last_reconciled"])
+            for q in active
+            if q["last_reconciled"]
+        ),
         default=None,
     )
 
@@ -89,9 +96,14 @@ def status(args: argparse.Namespace) -> int:
     audited = [row for row in log_rows if row.get("kind") != "exploratory"]
     print(f"Search record: {len(audited)} audited log rows "
           f"(+{len(log_rows) - len(audited)} exploratory)")
-    print(f"Registered searches: {len(active)} active"
-          + (f", last fully reconciled {last_reconciled.isoformat()}"
-             if last_reconciled else ""))
+    freshness = f"Registered searches: {len(active)} active"
+    if never_reconciled:
+        freshness += ", never reconciled: " + ", ".join(never_reconciled)
+        if last_reconciled:
+            freshness += f"; oldest reconciled date {last_reconciled.isoformat()}"
+    elif last_reconciled:
+        freshness += f", last fully reconciled {last_reconciled.isoformat()}"
+    print(freshness)
     print("Updates are staged on demand: fetch --all or --query-id ID")
     return 0
 

@@ -1,7 +1,7 @@
 = Scaling path-conditioned hardware execution <sec-scaling>
 
-If each of $n$ effective choices is independent, explicit path exploration can
-expose $2^n$ executions. Hardware supplies new choices every cycle and can
+If each of $n$ effective binary choices is independent, explicit path
+exploration can expose $2^n$ executions. Hardware supplies new choices every cycle and can
 combine independently controlled processes, symbolic addresses, environment
 transactions, and state-dependent loops. Practical systems therefore decide
 which paths to construct now, which constraints to reuse, and which prefix or
@@ -33,7 +33,8 @@ part of the global product. Their summaries must retain enough state, time,
 and interface conditions that a stitched path corresponds to a realizable
 execution.
 
-In the simple case of $N$ blocks with $b$ local binary choices, building local
+As a direct illustrative worst-case derivation, consider $N$ blocks with $b$
+independent local binary choices. Building local
 trees can cost on the order of $N dot 2^b$ rather than constructing $2^(N b)$
 whole paths immediately. The compatible fragment tuple space can still reach
 $2^(N b)$. Construction reduction is valuable, but it should not be reported
@@ -53,22 +54,24 @@ a target, reconstructing a faithful state, solving the suffix, and replaying
 the resulting test. A local solver speedup can be outweighed by these phases,
 while an unreachable snapshot can yield a nonreplayable witness.
 
-== Four cost ledgers
+== Four accounting ledgers
 
 #figure(
   table(
     columns: (20%, 38%, 42%),
-    [*Ledger*], [*Growth*], [*Representative controls*],
+    table.header([*Ledger*], [*Growth*], [*Representative controls*]),
     [Executor], [active paths, fragments, cycles], [guidance, backward search, composition],
     [Formula], [predicate size, aliasing, theory], [slicing, caching, incremental solving],
     [Concrete frontier], [traces, seeds, coverage state], [ranking, fuzzing, handoff policies],
     [Semantic bridge], [translation, replay, harness work], [supported subsets, differential validation],
   ),
-  caption: [Scaling mechanisms move cost among four observable ledgers.],
+  caption: [Four ledgers for checking the end-to-end effect of a local scaling mechanism.],
 ) <tab-ledgers>
 
-The synthesis is a conservation principle, not an impossibility theorem.
-Tools scale when they stop distinguishing behaviors irrelevant to the current
-observer, reuse stable summaries, or spend solver effort only at difficult
-boundaries. A credible claim reports all four ledgers, end-to-end time and
-memory, completion status, and the distinctions deliberately omitted.
+This is a cost-accounting lens, not a conservation principle or impossibility
+theorem. Tools can genuinely reduce work by quotienting behavior irrelevant to
+an observer, reusing stable summaries, or spending solver effort only at
+difficult boundaries. A local gain may also shift work to another ledger, so a
+credible claim reports all four, end-to-end time and memory, completion status,
+and the distinctions deliberately omitted. No numerical quantity is asserted
+to be conserved.

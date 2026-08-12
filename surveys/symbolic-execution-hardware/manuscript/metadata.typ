@@ -22,24 +22,27 @@
   symbolic values. This survey adopts a narrower operational boundary: an
   included method executes a digital design or claimed-faithful executable
   representation, carries symbolic hardware values, constructs predicates for
-  distinguishable control- or time-indexed paths, uses feasibility to choose
-  or reconstruct execution, and makes that mechanism load-bearing in its
-  result. Standing searches through 11 August and critical citation chases
-  through 12 August 2026 yield 31 works: 14 classical, 11 concolic, and 6
-  selective-hybrid.
-  RTL accounts for 20; SystemC/TLM, mixed-level, netlist, another HDL, and one
-  hardware-specific HLS study form the remainder. Symbolic simulation, STE,
+  alternatives distinguished by that representation, uses feasibility to
+  choose or reconstruct execution, and makes that mechanism load-bearing in
+  its result. Seventeen broad searches through 10 August, four strict-boundary
+  searches through 11 August, and critical citation chases through 12 August
+  2026 yield 31 full-text-qualified publication records, including preprints,
+  after agent adjudication with no item-level human screening; one strict query
+  failed and the map makes no closure or population claim. Under an explicit
+  reproducible classification rule, 14 are classical, 15 concolic, and 2 selective-hybrid.
+  RTL is the design target for 20; SystemC/TLM, mixed-level, netlist, another
+  HDL, and one hardware-specific HLS study form the remainder. Operational
+  artifacts and their semantic bridges are analyzed separately. Symbolic simulation, STE,
   BMC, and trace-only search are treated as adjacent, not counted. The corpus
-  shows that hardware path execution is defined as much by clocks, scheduling,
-  reset, translation, and environment as by the solver. Target guidance,
+  shows that hardware path execution is defined as much by clocking and process
+  composition, plus scheduling where it is semantically real, reset,
+  translation, and environment as by the solver. Target guidance,
   backward execution, fragment composition, caching, symbolic time
-  abstractions, and fuzzing handoffs move cost among paths, summaries,
-  formulas, and concrete corpora; they do not generally remove the product of
-  inputs, control choices, concurrent processes, and cycles. Most results are
-  replayable tests, counterexamples, exploits, or coverage evidence rather
-  than unbounded proofs, and heterogeneous bounds and harnesses prevent a
-  quantitative ranking. The resulting topic is a coherent but specialized
-  niche. We conclude with a common reporting contract and an agenda for
+  abstractions, and fuzzing handoffs reduce selected work but may shift cost to
+  paths, summaries, formulas, concrete corpora, handoffs, or semantic
+  validation. Across the deep reads, heterogeneous bounds and harnesses
+  prevent a quantitative ranking. The bounded map identifies a coherent,
+  specialized slice of hardware verification. We conclude with a common reporting contract and an agenda for
   semantic validation, benchmarks, completion accounting, and cross-level
   composition.
 ]

@@ -1,47 +1,32 @@
 # Current survey status
 
+This file contains only the survey's dated state and work deferred to a future
+update. The current method lives in `protocol.md`, operating instructions in
+`README.md`, event history in `log.tsv`, and interpretation in `syntheses/`.
+
 - **Coverage through:** 2026-08-12 strict-boundary search and citation-chase snapshot
-- **Search through:** 2026-08-11 standing-query snapshot
-- **Publication state:** publication candidate; manuscript, PDF render, and
-  site integration validated on 2026-08-12
+- **Broad searches through:** 2026-08-10
+- **Strict searches through:** 2026-08-11; four queries reconciled and `s25`
+  failed without advancing
+- **Publication state:** substantive publication review completed; ready for
+  author approval and release
 - **Coverage state:** bounded systematic map under the five-part
   path-conditioned symbolic-execution protocol; no mapping-closure claim
 
-## Current counts
+The catalog holds 1,916 works: 17 deep-read, 14 included at mapping depth,
+1,826 excluded, and 59 parked, for 31 include-level publication records.
+`sources/` holds 25 survey-specific notes: 22 full-text and 3 abstract-only;
+all 17 critical deep reads are locally anchored. The evidence ledger contains
+eleven certainty-graded synthesis records. Under the
+primary-regime rule, the included map contains 14 classical, 15 concolic, and
+2 selective-hybrid works. These are snapshot counts, not targets, a population
+estimate, or a measure of worldwide completeness.
 
-- **Catalog records:** 1,870
-- **Include-level records:** 31
-- **Critical deep reads:** 17
-- **Mapping-depth includes:** 14
-- **Parked:** 59
-- **Excluded:** 1,780
-
-The initial discovery funnel reconciles as 1,262 deduplicated database-search
-records, 273 chase-only records, 41 Carter-lineage records, 48 Forbench
-bibliography records, and 2 directly inspected primary additions. The strict
-revision attempted 5 queries: 4 produced result sets and 1 failed with HTTP
-429. It added 83 records after five aliases were collapsed, for a combined
-catalog denominator of 1,709.
-
-On 2026-08-12, backward and forward chases for nine newly promoted critical
-works added 161 unique catalog records after overlap reconciliation: 159 were
-excluded and 2 were parked for unavailable complete primary text. The current
-denominator is therefore 1,870. These chases did not change the 31-work strict
-include set.
-
-## Method changes
-
-- **2026-08-11 — Strict symbolic-execution boundary.** At the human author's
-  direction, the survey stopped treating symbolic simulation and STE as
-  include-level lineages and adopted a five-part operational test centered on
-  path-conditioned hardware executions. Classical, concolic/dynamic, and
-  selective/hybrid symbolic execution remain distinct core regimes. All 87
-  prior includes, all 38 prior parked records, and 86 strict-query candidates
-  were re-adjudicated; five candidate aliases collapsed into existing records,
-  and positive inclusion required primary full text for all
-  five operational conditions. Two complete thesis versions were added as
-  primary records. The resulting strict corpus contains 14 classical, 11
-  concolic, and 6 selective-hybrid works.
+The standing registry has a mixed checkpoint: 17 broad active queries were
+last reconciled on 10 August, four strict queries on 11 August, and active
+query `s25` remains never reconciled after an HTTP 429 failure. Historical
+funnel arithmetic, classifier corrections, and key-bearing screen partitions
+remain canonical in `log.tsv`, not in this status snapshot.
 
 ## Deferred to the next update
 
@@ -50,6 +35,12 @@ include set.
   needed for boundary work.
 - Re-screen the 59 parked records when complete primary text becomes
   available.
+- Repeat the Sylvia primary-bibliography screen from its 39 numbered
+  references, and resolve the two missing Carter references before claiming
+  either backward chase complete.
+- Seek a functioning forward-citation seed for AutoVeriFix+ and the HLS TCP
+  thesis; their zero-result index events are attempts, not evidence of forward
+  completeness.
 - Rerun active queries and both citation directions for the critical set;
   treat a newly verified mechanism or close comparator as grounds for an
   update.
