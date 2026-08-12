@@ -7,7 +7,10 @@ and taxonomy), [[sen2015-multise]] (incremental path merging through guarded
 value summaries), and [[yang2026-forbench]] (hardware symbolic simulation
 that forks on testbench decisions rather than design branches), with
 [[jayasena2023-directed]] as the adjacent hardware-validation map that places
-symbolic and concolic systems among other directed-test generators.
+symbolic and concolic systems among other directed-test generators, and
+[[kong2026-nextmap]] as the negative boundary case: symbolic retention of
+equivalent hardware implementations without symbolic execution of their
+behaviors.
 
 ## Path explosion moves between representations
 
@@ -96,6 +99,15 @@ false positives, the reverse of a convention common in logic and static
 analysis. Claims should therefore be read through the stated behavior: which
 unsafe executions may be missed, which reported executions may be spurious,
 and what concretization or modeling step created that boundary.
+
+The word *symbolic* is not enough to establish the category.
+[[kong2026-nextmap]] keeps many equivalent RTL implementations in a semantic
+e-graph and uses an ILP solver to extract one technology-constrained design.
+Those alternatives are synthesis candidates intended to denote the same
+behavior, not paths induced by symbolic inputs or testbench decisions. The
+contrast with [[yang2026-forbench]] is structural: both delay commitment by
+sharing alternatives, but only Forbench executes a transition system and
+characterizes behaviors under a harness and cycle bound.
 
 ## What the shelf needs next
 
