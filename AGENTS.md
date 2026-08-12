@@ -100,9 +100,9 @@
   remark, KaTeX, Pagefind, Mermaid). An unresolved `[[target]]` fails
   the build.
 - CI builds in the dev image (`.github/workflows/site.yml`); local
-  builds run on the host per tend-site — `./dev.sh npm` against the
-  host checkout clobbers native binaries in the shared
-  `node_modules`.
+  builds run on the host per tend-site. `dev.sh` rejects direct package-
+  manager commands because container installs would clobber native binaries
+  in the shared `node_modules`.
 
 ## Conventions
 

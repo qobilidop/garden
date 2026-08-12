@@ -47,8 +47,9 @@ site.yml`, then watch the new run and curl the live page.
   2026-08).
 - Never run npm installs or builds through `dev.sh` against the host
   checkout: the mount shares `site/node_modules`, and Linux binaries
-  clobber the macOS ones ("Cannot find native binding"); reinstall on
-  the host if it happens.
+  clobber the macOS ones ("Cannot find native binding"). `dev.sh`
+  rejects direct `npm`, `npx`, `yarn`, and `pnpm` invocations; reinstall
+  on the host if an indirect invocation causes the same failure.
 
 ## Design system
 

@@ -32,11 +32,12 @@ Three surfaces in `surveys/<slug>/`:
   principal synthesis, and important boundaries; `## Links` with
   three bullets in order — Manuscript (HTML), Manuscript (PDF),
   Survey record (GitHub tree URL); then `## Reading list` as the
-  body. The landing page explains the survey, not its bookkeeping:
-  current counts, coverage date, and closure state live in
-  `record/status.md` and in manuscript surfaces that publish them.
-  Include a quantity in the summary only when it is substantive to
-  understanding the result.
+  body. The landing page explains the survey, not its bookkeeping.
+  Search or retrieval dates, corpus denominators, current disposition
+  counts, and closure state live in `record/status.md` and in manuscript
+  surfaces that publish them; do not repeat them in the summary or
+  reading-list introduction. Stable per-work years and quantitative
+  results may appear in row annotations when they help interpret that work.
 - `record/` — the minimal resumable state (§7).
 - `manuscript/` — the Typst paper (§5).
 
@@ -260,9 +261,11 @@ surfaces.
 ## 4. Curate the reading list
 
 - The landing page's body: taxonomy-sectioned tables
-  (Paper | What | Venue · Year | Notes) — linked original titles,
-  one-line annotations distilled from the evidence notes, internal
-  links (library wikilink where ingested, record note otherwise).
+  (Paper | What | Venue · Year | Notes) — linked full canonical titles
+  (never acronym-only or truncated link text; put the acronym in the
+  annotation when useful), one-line annotations distilled from the
+  evidence notes, internal links (library wikilink where ingested,
+  record note otherwise).
 - Curated, not exhaustive: works that anchor a section — strongest
   evidence, defining system, guidance of record. Deep-read does not
   imply listed; sections stay small; a new anchor joins or displaces.

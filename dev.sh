@@ -20,10 +20,25 @@ git config core.hooksPath hooks 2>/dev/null || true
 
 IMG="${DEV_IMAGE:-ghcr.io/qobilidop/sys0/dev:latest}"
 
+DEV_SETUP_ACTION=""
 case "${1:-}" in
   -h|--help) sed -n '2,12p' "$0"; exit 0 ;;
-  --pull)    shift; docker pull "$IMG" ;;
-  --build)   shift; docker build -t "$IMG" .devcontainer ;;
+  --pull)    shift; DEV_SETUP_ACTION="pull" ;;
+  --build)   shift; DEV_SETUP_ACTION="build" ;;
+esac
+
+# The host checkout shares site/node_modules with this container. Running a
+# package manager here replaces host-native dependencies with Linux builds.
+case "${1:-}" in
+  npm|npx|yarn|pnpm)
+    echo "dev.sh: run site package commands on the host, not through dev.sh" >&2
+    exit 2
+    ;;
+esac
+
+case "$DEV_SETUP_ACTION" in
+  pull)  docker pull "$IMG" ;;
+  build) docker build -t "$IMG" .devcontainer ;;
 esac
 
 if ! docker image inspect "$IMG" >/dev/null 2>&1; then
