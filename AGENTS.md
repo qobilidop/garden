@@ -75,9 +75,12 @@
   `pdf: <url>` or `html: <url>`. Local preservation happens at ingestion;
   `tools/archive-library.mjs` checks public Wayback coverage monthly and
   requests missing captures without writing archive links back into notes.
-- Ingestion never waits for or requests a Wayback capture. When an origin is
-  already inaccessible, a verified existing capture may serve as an
-  acquisition fallback; record that provenance in a frontmatter comment.
+- After locally preserving a post, post ingestion requests missing Wayback
+  coverage but never waits for the resulting capture; a future archive-
+  maintenance run verifies accepted submissions. Paper ingestion leaves new
+  archive requests to maintenance. When an origin is already inaccessible, a
+  verified existing capture may serve as an acquisition fallback; record that
+  provenance in a frontmatter comment.
 
 ## Site
 

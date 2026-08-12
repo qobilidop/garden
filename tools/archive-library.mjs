@@ -17,6 +17,7 @@ local preservation; archive coverage is external derived state.
 
 Options:
   --list                 Print the source inventory without network access
+  --citekey KEY          Limit work to one citekey (repeatable)
   --request-missing      Ask Save Page Now to capture URLs with no snapshot
   --max-requests N       Cap submissions per run (default: 10)
   --delay-ms N           Delay between submissions (default: 3000)
@@ -31,6 +32,7 @@ future run rather than polled immediately.
 export function parseArgs(argv) {
   const options = {
     list: false,
+    citekeys: [],
     requestMissing: false,
     maxRequests: 10,
     delayMs: 3_000,
@@ -40,7 +42,14 @@ export function parseArgs(argv) {
     if (argument === '--list') options.list = true
     else if (argument === '--request-missing') options.requestMissing = true
     else if (argument === '--help') options.help = true
-    else if (argument === '--max-requests' || argument === '--delay-ms') {
+    else if (argument === '--citekey') {
+      const value = argv[index + 1]
+      if (!value || value.startsWith('--')) {
+        throw new Error('--citekey requires a value')
+      }
+      options.citekeys.push(value)
+      index += 1
+    } else if (argument === '--max-requests' || argument === '--delay-ms') {
       const value = Number(argv[index + 1])
       if (!Number.isInteger(value) || value < 0) {
         throw new Error(`${argument} requires a non-negative integer`)
@@ -156,6 +165,18 @@ function uniqueSources(sources) {
   return [...byUrl.values()]
 }
 
+export function selectSources(sources, citekeys = []) {
+  if (citekeys.length === 0) return sources
+  const requested = new Set(citekeys)
+  const selected = sources.filter((source) => requested.has(source.citekey))
+  const found = new Set(selected.map((source) => source.citekey))
+  const unknown = [...requested].filter((citekey) => !found.has(citekey))
+  if (unknown.length > 0) {
+    throw new Error(`Unknown citekey: ${unknown.join(', ')}`)
+  }
+  return selected
+}
+
 function writeStepSummary(counts) {
   if (!process.env.GITHUB_STEP_SUMMARY) return
   appendFileSync(
@@ -178,7 +199,7 @@ export async function run(
   options,
   { repoRoot, fetchImpl = fetch, output = console.log, wait = sleep } = {},
 ) {
-  const sources = librarySources(repoRoot)
+  const sources = selectSources(librarySources(repoRoot), options.citekeys)
   if (options.list) {
     for (const source of sources) output(`${source.citekey}\t${source.type}\t${source.url}`)
     return 0

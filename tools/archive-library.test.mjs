@@ -4,6 +4,7 @@ import {
   checkAvailability,
   parseArgs,
   requestCapture,
+  selectSources,
 } from './archive-library.mjs'
 import { sourcesFromFrontmatter } from '../site/src/lib/library-sources.mjs'
 
@@ -132,12 +133,34 @@ test('Save Page Now requests are explicit and bounded by CLI options', async () 
     'https://web.archive.org/save/https://example.com/post%23section',
   )
   assert.deepEqual(
-    parseArgs(['--request-missing', '--max-requests', '4', '--delay-ms', '0']),
+    parseArgs([
+      '--citekey',
+      'example2026-post',
+      '--request-missing',
+      '--max-requests',
+      '4',
+      '--delay-ms',
+      '0',
+    ]),
     {
       list: false,
+      citekeys: ['example2026-post'],
       requestMissing: true,
       maxRequests: 4,
       delayMs: 0,
     },
   )
+})
+
+test('citekey selection is exact, repeatable, and rejects unknown work', () => {
+  const sources = [
+    { citekey: 'one', type: 'source', url: 'https://example.com/one' },
+    { citekey: 'two', type: 'pdf', url: 'https://example.com/two.pdf' },
+    { citekey: 'one', type: 'record', url: 'https://example.com/one-record' },
+  ]
+  assert.deepEqual(selectSources(sources, ['one', 'one']), [
+    sources[0],
+    sources[2],
+  ])
+  assert.throws(() => selectSources(sources, ['missing']), /Unknown citekey: missing/)
 })

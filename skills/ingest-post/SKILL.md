@@ -1,6 +1,6 @@
 ---
 name: ingest-post
-description: Ingest a post (blog post, org announcement, Q&A answer) into the sys library — HTML snapshot to shadow, load-bearing figures to the Drive store, synthesis notes plus a curated discussions list to sys. Use when asked to ingest, add, or capture a post or article (given a URL) into the library. For formally published research papers (arXiv, DOI, venue), use ingest-paper instead.
+description: Ingest or refresh a post (blog post, org announcement, Q&A answer) in the sys library. Use when asked to ingest, add, capture, revisit, update, or check a post or article. For formally published research papers (arXiv, DOI, venue), use ingest-paper instead.
 compatibility: "Requires the sys repo with its private shadow/ checkout and network access; the rclone store: remote only when figures are captured."
 ---
 
@@ -9,8 +9,9 @@ compatibility: "Requires the sys repo with its private shadow/ checkout and netw
 Work from the sys repo root. Requires the private `shadow/` checkout; the
 rclone `store:` remote only when the post has figures. A post is a
 single-author, informally published, web-native work with no
-version-of-record — the snapshot in shadow *is* the record. Multi-author
-threads-as-works are out of scope until one arrives.
+version-of-record. Retrieval is live-first and repeatable; preservation is
+stateful because the snapshot in shadow identifies the exact evidence behind
+the notes. Multi-author threads-as-works are out of scope until one arrives.
 
 ## 1. Resolve the work
 
@@ -33,8 +34,7 @@ concise canonical URL slug second. Posts often take the URL-slug branch
   blocks non-browser clients, capture through the user's browser or use a
   verified existing Wayback original-content record
   (`web.archive.org/web/<ts>id_/<url>`); the frontmatter comment records
-  that acquisition fallback. Per `AGENTS.md` §Library, ingestion never
-  requests or waits for a new archive capture.
+  that acquisition fallback.
 - **Author-versioned source** (a gist or other git-backed page): pin the
   revision — capture the raw file at its commit sha alongside the page
   snapshot and verify the two agree. When the work is the
@@ -50,6 +50,30 @@ concise canonical URL slug second. Posts often take the URL-slug branch
   name re-capture through the user's browser session as the upgrade
   path. Claims about the gated remainder from secondary sources are not
   asserted.
+
+### Revisiting an existing post
+
+Fetch the live origin into a fresh temporary file before consulting the stored
+snapshot. Compare SHA-256 first: identical bytes mean no source change; a
+different hash is only a prompt for a substantive diff because templates,
+timestamps, and tracking parameters can change without changing the work.
+Keep the candidate outside shadow and discard it after an unchanged comparison.
+If the live fetch fails, retain `retrieved` and the current snapshot; a verified
+Wayback capture may be evaluated as a new candidate but is not silently treated
+as the same source version.
+
+- Unchanged work: retain the existing snapshot and make no sys or shadow
+  commit. A health check is not a new evidence version.
+- Material change: reconcile the synthesis against the fresh source, replace
+  the snapshot in the same path, and commit the public notes and shadow update
+  together. Shadow git history retains the prior evidence version.
+- Version-addressed source: a raw artifact pinned to a Git commit or equivalent
+  immutable revision may be the evidence identity; still retain the consulted
+  bytes when deletion would otherwise make the notes unauditable.
+
+`retrieved` means the date the source version supporting the current notes was
+captured. Update it only when the notes are reconciled to a materially changed
+source; never bump it merely because the URL was fetched successfully.
 
 ## 4. Discussions
 
@@ -119,6 +143,16 @@ sources — assert only what the captured record contains.
   parser and checks the fresh notes, direct non-empty snapshot, and any files
   under the exact `figures/` tier against their manifest entries and byte sizes
   without printing the library inventory.
+- Request missing public redundancy with:
+
+  ```console
+  node tools/archive-library.mjs --citekey <citekey> \
+    --request-missing --max-requests 1 --delay-ms 0
+  ```
+
+  This records no archive URL in frontmatter and never polls an accepted
+  submission; report a service failure without blocking the locally preserved
+  ingestion.
 - Run `npm --prefix site run build` on the host, then propose the commits
   (sys: notes; shadow: snapshot + manifest when pushed), each ending with the
   agent's attribution trailer. Commit only on the user's word. When the request
