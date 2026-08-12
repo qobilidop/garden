@@ -9,7 +9,7 @@ work:
   arxiv: 2307.11884
 read: full-text
 source: https://arxiv.org/abs/2307.11884
-facets: "relation: core; artifact: rtl; execution: path; goal: security; evidence: experiment"
+facets: "relation: core; artifact: rtl; execution: classical; goal: security; evidence: experiment"
 retrieved: 2026-08-10
 notes-by: Codex GPT-5.6 Sol (survey deep-read pipeline)
 notes-date: 2026-08-10

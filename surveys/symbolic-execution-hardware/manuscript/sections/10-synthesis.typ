@@ -1,105 +1,83 @@
-= Synthesis and research agenda <sec-synthesis>
+= Interpretation and research agenda <sec-synthesis>
 
-== A four-axis map
+== Why the field is small
 
-The field can be located by four questions asked in order:
+The corpus is under-studied for understandable reasons. Hardware verification
+already has mature simulation, constrained-random testing, BMC, equivalence,
+theorem proving, and symbolic-simulation ecosystems. Classical path execution
+must justify itself against those tools while facing a worse path product:
+branch choices recur across cycles and interact with concurrency and
+environment. An RTL executor also needs difficult language and scheduler
+semantics, while a translated executor inherits a trust and traceability gap.
 
-1. *What artifact is executed?* Source RTL, another HDL, a generated model,
-   HLS source, SystemC/TLM, netlist, or a coupled system.
-2. *Where are alternatives represented?* Whole paths, fragments, guarded
-   expressions, abstract states, or a concrete/symbolic population.
-3. *What controls growth?* Guidance, composition, merging, abstraction,
-   caching, slicing, or a hybrid handoff.
-4. *What is the result contract?* A replayable witness, coverage under a
-   budget, bounded completeness, an abstract proof, or cross-level agreement.
+The technique is most attractive when a concrete witness matters and the
+target is narrow: a hard RTL branch, Trojan trigger, processor exploit,
+information-flow path, assertion, or cross-level mismatch. Directed and
+scalable concolic systems make this niche explicit @ahmed2018directed
+@lyu2021scalable. Coppelia and SEIF show the value of turning an abstract
+security concern into an executable path @zhang2018coppelia @ryan2023seif.
+FuSS shows why symbolic execution is often most useful as selective assistance
+rather than the sole engine @jayasena2025fuss.
 
-The axes are coupled. Translation-based RTL execution makes software path
-search available but adds a semantic bridge @zhang2016rtltests. Direct RTL
-fragments preserve source structure while postponing a concurrent product
-@ryan2023sylvia. Testbench-directed forking merges design paths that the
-testbench does not observe @yang2026-forbench. Cross-level SystemC execution
-strengthens the oracle while enlarging state and environment obligations
-@rudkowski2026crosslevel.
+This is not a dead end. It explains the field's shape: recurring useful
+mechanisms, limited breadth, and few claims of unbounded proof. A survey can
+make that niche legible without inflating it.
 
-== Finding 1: the name is broad but not empty
+== Semantic conformance
 
-"Symbolic execution" can include all surveyed execution models if it is used
-as an umbrella for operational symbolic exploration, not as a synonym for
-path splitting. The common core is a symbolic design state, a feasibility
-relation to concrete executions, and evidence derived from advancing that
-state. Symbolic simulation and STE overlap this core but are broader
-literatures; selective admission keeps the boundary informative.
+Direct executors need executable suites for HDL widths, four-state values,
+nonblocking assignments, memories, clocks, reset, scheduling, and process
+interactions. Translation-based systems need differential replay and declared
+preservation boundaries. The SystemC work especially shows that C++ execution
+without a scheduler model is not enough @lin2016systemc
+@rudkowski2026crosslevel. Conformance failures should be reported separately
+from path-search failures.
 
-The terminology should therefore be two-level. Papers may call the umbrella
-hardware symbolic execution, but should name the concrete mechanism:
-path-oriented symbolic execution, concolic RTL testing, compositional
-fragments, guarded symbolic simulation, STE, or a hybrid. This vocabulary
-describes architectures without litigating historical ownership of the word.
+== Common benchmarks and outcomes
 
-== Finding 2: path explosion is a representation problem
+The field needs versioned RTL, SystemC, HLS, and mixed-level tasks with complete
+harnesses, reachable and unreachable targets, expected witnesses, and several
+temporal horizons. Hard negative cases and timeouts should remain in the suite.
+Outcome schemas should distinguish proved infeasible, boundedly unexplored,
+abstraction-inconclusive, nonreplayable, and not scheduled. SEIF's explicit
+unaccounted class is a useful precedent @ryan2023seif.
 
-The number of active paths is not an invariant measure of difficulty.
-Event accumulation can merge paths into ITEs @kolbl2001rtl; fragment execution
-can shrink local exploration while leaving a composition product
-@ryan2023sylvia; fuzzing can avoid solver calls until coverage stalls
-@jayasena2025fuss. A credible scaling claim reports executor, representation,
-and solver costs together and states which distinctions the method stops
-tracking.
+== Compositional and incremental execution
 
-This reframes research opportunities. The target is not universally "fewer
-paths" but a representation matched to an observer. A branch-coverage tool
-must preserve branch identity. A datapath property may merge equal outcomes.
-An interface check may project internal behaviors to transaction observations.
-Making that observer explicit could turn many ad hoc optimizations into
-comparable semantic choices.
+Fragment, module, and cycle summaries should name state, time, assumptions,
+and observables. Research should separate the cost of constructing reusable
+local paths from checking global compatibility. Cross-level systems add a
+second composition problem: aligning implementation and reference semantics
+@bruns2023processor @rudkowski2026crosslevel. Incremental solvers and cached
+path predicates are promising only when their reuse keys include the hardware
+history that affects feasibility.
 
-== Finding 3: hardware time belongs in every applicable guarantee
+== Better selective handoffs
 
-Clock cycles, scheduling, reset, and initial state distinguish hardware
-execution from ordinary acyclic program examples. SEIF's bounded stalls and
-reset-reachability check change how a negative or positive result is read
-@ryan2023seif. Verilator-based execution makes time a harness loop
-@zhang2016rtltests. SystemC makes the simulator kernel and wait semantics part
-of the model @rudkowski2026crosslevel. A cycle number without reset and
-environment semantics is not a reproducible bound.
-For combinational designs, clock, scheduling, and reset fields can be marked
-not applicable; the obligation is to make that absence explicit rather than
-silently importing a sequential model.
+Selective execution needs principled handoff contracts: why a target is
+chosen, which concrete state is transferred, how reachability from reset is
+preserved, what slice is symbolized, and whether the output replays. FuSS
+provides a concrete snapshot/suffix architecture @jayasena2025fuss; Qin and
+Mishra provide trace-derived constraints @qin2014interleaving. Future work
+should report the cost and failure modes of reconstruction, not only solver
+time after the handoff.
 
-== Research agenda
+== HLS and language breadth
 
-*Semantic validation.* Direct executors need executable conformance suites for
-HDL scheduling, widths, four-state behavior, memories, and clocks.
-Translation-based systems need differential replay and stated preservation
-boundaries. Cross-level systems need explicit observation and timing
-relations. The critical deep reads do not empirically isolate semantic-model
-errors from search errors, leaving this distinction as an open evaluation need.
+One HLS-source thesis cannot support a general HLS conclusion. Its
+hardware-specific datatype, stream, and timing work shows the right inclusion
+logic, while its lack of generated-RTL validation exposes the missing bridge
+@hu2024tcp. VHDL, Chisel, Bluespec, HLS IRs, multi-clock RTL, and broader
+SystemVerilog remain search and research targets. New work should either model
+their hardware semantics directly or validate the relation to the generated
+artifact.
 
-*Common evidence benchmarks.* The field needs versioned RTL, HLS, and SystemC
-tasks with reset/harness artifacts, reachable and unreachable targets,
-temporal depth, expected witnesses, and results under several contracts.
-Benchmarking should retain hard negative cases and timeouts, not only designs
-on which every tool completes.
+== Evidence and effort
 
-*Effort as a metric.* Property authoring, testbench adaptation, target
-selection, abstraction predicates, and model debugging should be measured in
-time and artifact size. Forbench's testbench-centered interface makes this
-question especially visible @yang2026-forbench, but the need applies across
-the field.
-
-*Compositional contracts.* Fragments and cross-level components need summaries
-that name state, time, assumptions, and observables. Research should separate
-locally reusable exploration from the global feasibility product and state
-when projection or abstraction is sound.
-
-*HLS and mixed-language breadth.* SystemC and RTL hybrids show that symbolic
-assistance can cross representation boundaries @debnath2022greycone, but the
-critical set contains no HLS deep read. Chisel, Bluespec, VHDL, HLS IRs, and
-generated accelerator ecosystems therefore remain research and survey-update
-targets, not evidence-backed extensions of the current HLS findings.
-
-*Qualified absence.* Systems should expose outcomes such as proved infeasible,
-boundedly unexplored, abstraction-inconclusive, nonreplayable, and not
-scheduled. SEIF's explicit unaccounted class is a useful precedent
-@ryan2023seif. This would make partial verification composable instead of
-forcing every run into "found" versus "not found."
+Future evaluations should measure harness and model-building effort alongside
+runtime. Repeated stochastic trials, public artifacts, independent replay,
+semantic conformance tests, and full outcome partitions would do more for the
+field than another isolated coverage percentage. AutoVeriFix+ also raises a
+new oracle problem: an LLM-generated reference can guide useful concolic tests
+while remaining an uncertain specification @tan2026autoverifix. Oracle
+provenance belongs in the result contract.

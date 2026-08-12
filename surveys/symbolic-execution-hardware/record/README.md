@@ -27,16 +27,18 @@ stages every active query without advancing state. In scratch, deduplicate the
 batch against `catalog.tsv`, re-screen both new and `parked` records with two
 blinded passes, adjudicate disagreements, draft one key-bearing log row per
 query, and refresh both citation directions for every critical work. Present
-that staged reconciliation at the human gate. Only after approval append the
-log rows, catalog changes, query dates, status, and ledger row together; an
+that staged reconciliation at the authority gate declared for the update.
+Only after the gate append the log rows, catalog changes, query dates, status,
+and ledger row together; an
 update that adds catalog rows also appends one audit row whose notes contain
 `catalog-additions:<count>`. Update evidence and synthesis when a decision
 changes, then run the validator, regenerate references, and build both
 manuscript forms.
 
-`s24` remains inactive after four HTTP 429 responses. A future update may retry
-it only by deliberately reactivating the row; until then the other lineage
-queries and critical-work chases remain the declared coverage.
+`s24` remains inactive after four HTTP 429 responses. The strict replacement
+query `s25` also received HTTP 429 on 2026-08-11 and remains unreconciled. A
+future update should retry `s25`; `s24` may be retried only by deliberately
+reactivating the retired lineage query.
 
 ## Update ledger
 
@@ -47,6 +49,8 @@ item-level human screening.
 | Coverage through | Surfaced | Include-level | Deep-read | Excluded | Parked | Human gate |
 |---|---:|---:|---:|---:|---:|---|
 | 2026-08-10 | 1,626 | 87 | 11 | 1,501 | 38 | Pre-authorized 2026-08-10: title, scope, autonomous campaign, commit, and push; no item-level review |
+| 2026-08-11 | 1,709 | 31 | 17 | 1,621 | 57 | Pre-authorized scope revision and autonomous completion; no item-level human screening |
+| 2026-08-12 | 1,870 | 31 | 17 | 1,780 | 59 | Same pre-authorization; completed both citation directions for newly promoted critical works |
 
 ## External evidence homes
 
@@ -61,11 +65,14 @@ are intentionally not copied here:
 - `petersen2015mapping` and `wohlin2014snowballing` —
   `surveys/dataflow-selection-enumeration/record/sources/`
 
-Two cataloged secondary works are cited only to position adjacent survey
-traditions: `camurati1988formal` (general formal hardware correctness) and
-`jayasena2024directed` (directed hardware test generation). They are E7 records,
-not part of the include-level set or technical evidence base, and are explicit
-citation-closure exemptions in `check.py`.
+Four excluded works are cited only to make the boundary or adjacent survey
+traditions explicit: `carter1979symbolic`, `kolbl2001rtl`, and
+`feng2004dynamic` are symbolic-simulation context; `debnath2022greycone` lacks
+the required source-to-generated-hardware bridge. `yang2026-forbench` is an
+excluded current boundary comparator. The secondary works
+`camurati1988formal` (formal hardware correctness) and
+`jayasena2024directed` (directed hardware test generation) position neighboring
+survey traditions. None contributes to the 31-work denominator.
 
 These citekeys are explicit citation-closure exemptions in `check.py`.
 Critical catalog rows backed by an external home use `deep-read` without a

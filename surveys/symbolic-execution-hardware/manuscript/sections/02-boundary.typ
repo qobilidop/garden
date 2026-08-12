@@ -1,89 +1,89 @@
-= What counts as hardware symbolic execution? <sec-boundary>
+= The operational boundary <sec-boundary>
 
-== A mechanism-based definition
+== Five necessary conditions
 
-For this survey, a method belongs to the core when it operationally advances a
-digital hardware design model over symbolic values, states, traces, or path
-conditions and uses feasibility reasoning to produce verification evidence.
-The evidence may be a concrete test, a counterexample, a coverage result, a
-flow witness, or a bounded proof result. "Operationally advances" is the
-load-bearing phrase. Encoding a transition relation and solving a reachability
-formula is not by itself symbolic execution; neither is calling a simulator
-with one concrete vector. A qualifying method exposes an execution state and a
-rule for advancing or composing it, even when the state represents many
-concrete executions at once.
+We include a work only when all five conditions hold:
 
-This definition deliberately does not require path forking. Kölbl et al., for
-example, split control conditions but merge assignments with ITEs and
-accumulate compatible events @kolbl2001rtl. Forbench retains design
-alternatives in symbolic expressions and forks only when its procedural
-testbench observes a symbolic condition @yang2026-forbench. Both execute a
-design symbolically, but their state-space interfaces differ fundamentally
-from a whole-path tree.
+1. it steps, replays, or composes executions of a digital hardware design or a
+   claimed-faithful executable representation;
+2. a hardware input, state element, or environmental value is symbolic;
+3. the method constructs path predicates tied to distinguishable control- or
+   time-indexed design executions;
+4. feasibility over those predicates controls enumeration, selection,
+   reconstruction, composition, merging, or generation of another execution;
+   and
+5. this mechanism is load-bearing and yields a test, witness, coverage result,
+   or qualified verification result.
 
-Concolic execution is a narrower point in the space. It couples a concrete run
-to symbolic constraints and uses solver models to choose subsequent inputs.
-Hardware concolic systems often exploit fast commercial or open-source RTL
-simulation while reserving symbolic work for selected paths or targets.
-"Selective symbolic execution" is broader still: a system may alternate modes
-by time window, module, signal cone, or search phase. The relevant question is
-not which label the paper prefers, but which behaviors the concrete phase can
-omit and what the symbolic phase can recover.
+A convenient symbolic state is $(ell, sigma, pi, tau, eta)$: execution
+location or frontier $ell$, symbolic store $sigma$, path predicate $pi$,
+hardware time and scheduler state $tau$, and environment $eta$. The tuple is
+descriptive rather than prescriptive. A direct SystemC executor makes
+scheduler choices and waits part of $ell$ and $tau$ @harrath2011wsa; a
+Verilator-to-C flow delegates them to the generated transition step and
+harness @mukherjee2015software @zhang2016rtltests; a SystemC-aware KLEE
+extension implements its own scheduler @lin2016systemc. What cannot disappear
+is an execution identity whose feasibility affects what is executed next.
 
-== Three neighboring regions
+== Three included regimes
 
-*Selected lineage.* Symbolic simulation and STE form broader neighboring
-literatures. We retain only work that defines a mechanism inherited
-by core systems, establishes the vocabulary needed to compare representations,
-or serves as a direct baseline. Carter et al. connect machine-level symbolic
-simulation to program symbolic execution @carter1979symbolic. Kölbl et al.
-show how an event-driven RTL simulator can carry guarded values and replay an
-error trace @kolbl2001rtl. These are not merely terminological curiosities:
-they expose an alternative architecture in which branch products migrate from
-executor states into Boolean expressions and the event queue.
+*Classical symbolic execution* advances one or more symbolic design paths and
+uses their predicates directly. It includes forward, backward, and fragment-
+composed execution; those are search or representation choices, not separate
+top-level regimes.
 
-*Formal verification without execution.* Bounded model checking, property
-checking, equivalence checking, theorem proving, and information-flow analysis
-can use the same SMT encodings and may return the same style of counterexample.
-They enter only when an operational symbolic executor is load-bearing. The
-boundary is architectural, not a judgment of importance. A BMC engine can be a
-better verifier while remaining outside this survey.
+*Concolic or dynamic symbolic execution* couples concrete and symbolic views
+of a path. A concrete RTL trace supplies branch outcomes; the method maintains
+or reconstructs their symbolic predicate, negates or changes a selected
+condition, solves it, and re-executes the resulting input
+@ahmed2018directed. Concolic execution therefore differs from classical
+multi-path exploration but remains symbolic execution: without the symbolic
+path predicate and feasibility query, the next execution would not be
+generated.
 
-*Software in a hardware setting.* Executing firmware, a driver, or a binary
-symbolically against concrete or emulated peripherals remains software
-symbolic execution. Conversely, executing a Verilator-generated C++ model is
-in scope when the generated program is the operational representation of RTL.
-The semantic obligation then shifts: the result depends on the HDL-to-C++
-translation and harness, not only on the software executor.
+*Selective-hybrid symbolic execution* makes the symbolic executor one phase
+or region of a broader search. A concrete trace may be reduced to a selected
+cycle before solving @qin2014interleaving, or fuzzing may provide a state
+snapshot from which a short symbolic suffix is constructed @jayasena2025fuss.
+The symbolic phase must still pass all five conditions. Concrete simulation
+plus a genetic algorithm, trace ranking, or coverage feedback alone does not.
 
-== Relation to adjacent surveys
+== What remains outside
 
-The closest survey traditions answer different questions. Software symbolic
-execution surveys organize execution modes, search, environments, and solver
-techniques, but treat hardware mainly as an application context
-@baldoni2016-symbolic. A longstanding survey of formal hardware correctness
-spans theorem proving, equivalence, symbolic simulation, and model checking
-@camurati1988formal, while a recent directed-test-generation survey organizes
-hardware validation around target selection and test production
-@jayasena2024directed. This paper does not replace either hardware tradition and
-does not claim a census of them. Its narrower contribution is to define the
-operational symbolic-execution boundary, map the representations on both sides
-of path splitting, and compare the verification contracts those systems
-actually license.
+*Symbolic simulation* propagates symbolic values through a circuit and may
+merge alternatives into guarded expressions. Historically, Carter et al.
+described machine symbolic simulation as similar to program symbolic
+execution @carter1979symbolic; later RTL simulators used Boolean guards, ITE
+values, and guarded events @kolbl2001rtl, and dynamic functional-space
+partitioning split symbolic values when BDDs grew @feng2004dynamic. These
+methods are relevant intellectual context. Under the present protocol they
+are outside unless distinguishable path predicates guide further execution.
 
-== What “hardware” names
+STE, BMC, property checking, equivalence checking, theorem proving, and static
+information-flow analysis are likewise outside when they reason over abstract
+trajectories or transition formulas without a load-bearing path executor. The
+boundary is architectural, not evaluative: a BMC engine may prove a stronger
+bounded property while remaining a different technique. General formal-
+hardware and directed-test surveys cover those broader neighborhoods
+@camurati1988formal @jayasena2024directed.
 
-Here *hardware* names a digital design artifact before or around synthesis,
-not necessarily a physical device. The center is synchronous RTL because that
-is where most core work concentrates and where cycle, state update, and HDL
-scheduling become explicit. The broader ring includes behavioral HDLs,
-SystemC/TLM, HLS source or IR, generated C/C++, gate or netlist models, and
-coupled levels. Analog behavior, layout, manufacturing variation, and
-post-silicon execution fall outside unless a qualifying digital design model
-remains the symbolic participant.
+Two close negative examples show why full-text adjudication matters. GreyConE
+does concolically execute compiled SystemC, but the paper does not establish
+hardware-specific execution semantics or a relation to generated hardware;
+it is excluded at the HLS bridge @debnath2022greycone. Forbench merges symbolic
+design values and forks a procedural testbench, but its principal design
+mechanism is symbolic simulation rather than path-conditioned design
+execution under this definition @yang2026-forbench. Their labels are less
+important than the missing condition.
 
-This artifact-centered boundary resolves a recurring naming problem. A C++
-program can be "hardware" for this survey when it is an executable hardware
-model; a RISC-V firmware binary is not, even though its concrete environment is
-a processor. The decision follows the represented object and the claim being
-made, not the implementation language.
+== What “hardware” means
+
+Hardware names the *represented digital design*, not the implementation
+language and not necessarily a fabricated device. RTL is the center. Other
+HDLs, SystemC/TLM, HLS source or IR, generated C/C++, gate netlists, and
+coupled models qualify when hardware-specific semantics are load-bearing or a
+validated relation connects the executed artifact to hardware. Firmware
+symbolically executed against a concrete processor remains software symbolic
+execution. Generic C++ intended for synthesis remains software analysis until
+hardware datatypes, streams, timing, or a source-to-generated-design relation
+enters the method.

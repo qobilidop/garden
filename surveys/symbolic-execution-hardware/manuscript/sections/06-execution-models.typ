@@ -1,83 +1,74 @@
-= Where alternatives live <sec-execution-models>
+= Execution regimes and path meaning <sec-execution-models>
 
-The most informative architectural question is not "does the tool use SMT?"
-but "where does it store mutually possible behaviors?" The solver is common;
-the representation offered to it is not.
+== Classical paths
 
-== Whole paths
+A classical executor advances states such as $(ell, sigma, pi, tau, eta)$.
+At a symbolic guard $g$, successor predicates are $pi and g$ and $pi and not
+g$; infeasible successors are removed. In clocked hardware, $tau$ includes
+cycle or scheduler state, so the same source branch reached on two cycles can
+belong to different paths. In concurrent SystemC, process selection, event
+notification, and wait boundaries can also distinguish executions
+@harrath2011wsa @lin2016systemc.
 
-A classical executor maintains states such as $(ell, sigma, pi, t)$: program
-location, symbolic store, path condition, and hardware time. A symbolic branch
-creates successor states with $pi and c$ and $pi and not c$; infeasible
-successors are pruned. This representation makes witness reconstruction and
-target guidance natural. It also duplicates shared work and exposes the
-product of branches across processes and cycles.
+Generated-code systems expose the paths selected by a compiler or simulator
+rather than the HDL syntax directly @mukherjee2015software
+@zhang2016rtltests. This can be entirely adequate for test generation if
+witnesses replay, but source branch coverage and generated C++ branch coverage
+need not have the same denominator.
 
-Translation-based RTL execution uses whole paths through generated code
-@zhang2016rtltests. Direct concolic testing often records only the current
-concrete path and generates a successor by changing a selected branch
-constraint @ahmed2018directed. Online and offline styles have different memory
-profiles, but both identify alternatives by path predicates.
+Classical does not require forward whole-path enumeration. Coppelia reasons
+backward from an architectural security condition and stitches cycle-level
+predecessors into a replayed program @zhang2018coppelia. Sylvia explores
+sequential RTL blocks independently and asks whether fragment combinations
+form a feasible design execution @ryan2023sylvia. Both retain path identity and
+feasibility; direction and fragmentation are scaling choices within the
+regime.
 
-== Path fragments
+== Concolic paths
 
-Fragments delay the cross-product. Sylvia explores one tree per sequential RTL
-block and composes a tuple of fragments only when checking full-design
-feasibility @ryan2023sylvia. If $N$ blocks each contain $b$ independent binary
-branches, fragment construction can scale like $N 2^b$ instead of
-$2^(b N)$. The feasible tuple space can still be $2^(b N)$; composition and
-solver work therefore remain separate costs. Fragments save construction and
-enable reuse without turning an exponential behavioral product into a linear
-one.
+Concolic execution represents the active path twice: a concrete trace fixes
+the branch sequence and hardware state, while symbolic constraints explain
+which inputs could reproduce or divert it. Directed RTL testing selects a
+branch related to a target, negates its predicate, solves the prefix, and
+re-simulates the returned vector @ahmed2018directed. Scalable variants add
+hardware-aware ranking, caching, and reuse @lyu2021scalable.
 
-Cross-level systems can also use fragments, summaries, or staged models around
-component boundaries @rudkowski2026crosslevel. Their correctness requires a
-composition rule: compatible local path conditions, stores, time indices, and
-interface observations must correspond to a realizable global execution.
+This is narrower than classical multi-path execution but not outside symbolic
+execution. The solver operates on a predicate tied to an executed path, and
+its model causes the next hardware execution. The distinction matters for
+claims: only traces selected by the concrete schedule and diversion policy are
+considered, so exhausting the currently selectable alternatives is not a
+general reachability proof.
 
-== Guarded symbolic values
+AutoVeriFix+ demonstrates that the same mechanism can be nested in a larger
+application. Concrete simulation records cycle-indexed branch and state
+traces; the concolic phase changes an uncovered branch; differential checking
+and an LLM use the new trace for repair @tan2026autoverifix. The generated
+Python oracle and repair loop qualify the correctness claim, but they do not
+change the concolic classification.
 
-Symbolic simulation represents alternatives inside expressions. An assignment
-under condition $g$ can update $v$ to $"ite"(g, v_"new", v_"old")$; an event queue can
-merge compatible executions by disjoining their controls @kolbl2001rtl.
-Functional-space partitioning makes the same choice explicit as a list of
-mutually exclusive guard/data pairs @feng2004dynamic. This can exploit shared
-structure and solver simplification, especially in datapaths.
+== Selective-hybrid paths
 
-Merging changes the observable identity of paths. Two branch histories that
-produce the same simplified value may become indistinguishable unless the tool
-retains provenance separately. That is often desirable for functional
-verification and undesirable for branch-coverage accounting. Expression size,
-BDD order, ITE nesting, and query difficulty replace active-state count as the
-resource bottleneck.
+Selective hybrids distribute execution state across components. Qin and
+Mishra's concrete simulator supplies a time-indexed trace, then symbolic
+reconstruction specializes arrays and solves one uncovered branch
+@qin2014interleaving. FuSS holds a concrete program corpus and coverage map,
+snapshots the Verilated design state at a selected frontier, and symbolically
+solves only a short suffix @jayasena2025fuss. The path is a composite of
+concrete prefix and symbolic diversion.
 
-== Abstract symbolic states
+A hybrid result is the union of its phases, not the strongest property of the
+symbolic phase. Target selection, slicing, state reconstruction, and
+concretized choices determine which behaviors can be missed. A complete
+description therefore names the handoff trigger, the state transferred, and
+whether an earlier concrete choice can later become symbolic.
 
-We retain *abstract symbolic state* as a descriptive map category for selected
-STE and related records, not as a survey-backed soundness theorem. It denotes
-an execution state intentionally coarser than individual concrete valuations;
-the guarantee of any such system depends on its own abstraction relation and
-must be read from that system's semantics.
+== Concurrency and time
 
-Forbench combines word-level symbolic state with explicit testbench forks
-@yang2026-forbench. Its key choice is to keep design branches merged and split
-only when a testbench condition affects procedural control. This architecture
-reminds us that the observer determines the partition: design branch coverage,
-output correctness, and testbench progress need not require the same splits.
-
-== Concrete/symbolic hybrids
-
-Concolic and fuzzing hybrids keep one or a population of concrete traces as the
-cheap frontier, then invoke symbolic reasoning selectively. Directed concolic
-testing targets an uncovered RTL branch @ahmed2018directed. GreyConE hands
-stalled SystemC-model coverage from fuzzing to concolic solving
-@debnath2022greycone;
-FuSS selects a logic cone or target for symbolic assistance
-@jayasena2025fuss. The representation is distributed among concrete corpus,
-coverage map, symbolic slice, and solver query.
-
-A hybrid's guarantee is the union of its phases, not the strongest phase in
-isolation. If target selection or slicing omits a behavior, exact constraint
-solving inside the chosen slice does not recover global completeness. A paper
-should therefore state which transitions cause mode changes and whether
-concretized choices can later be reconsidered.
+Hardware paths have at least three axes: control choices within a process,
+scheduling or interaction among processes, and repeated state transitions over
+time. Some tools serialize concurrent logic through a simulator; others model
+the scheduler; others operate under synthesis semantics where a cycle is one
+transition. These choices can be observationally equivalent for a supported
+subset and divergent elsewhere. Path count has meaning only after the
+concurrency, clock, reset, and environment models are stated.

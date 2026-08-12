@@ -1,35 +1,31 @@
-= Limitations and conclusion <sec-conclusion>
+= Conclusion <sec-conclusion>
 
-This survey has three deliberate limits. It is a bounded systematic map of
-declared databases, queries, depths, and citation chases through 10 August
-2026; terminology and incomplete metadata may still hide work. It centers
-symbolic execution and admits symbolic simulation and STE selectively, so it
-is not a census of formal hardware verification. Finally, full-text evidence
-is concentrated in the critical set. Abstract-level records inform the map
-and chronology but not detailed claims about algorithms or performance.
+Symbolic execution of digital hardware designs is a coherent survey scope when
+the name is tied to an operational test. The design or faithful executable
+representation must run with symbolic hardware values; distinguishable
+control- or time-indexed paths must have predicates; feasibility must affect
+which execution is constructed next; and that mechanism must produce the
+paper's verification evidence. This boundary includes classical, concolic,
+and selective-hybrid execution. It excludes symbolic simulation, STE, BMC,
+trace-only search, and generic synthesizable-source analysis unless they also
+meet the same path conditions.
 
-Within those limits, the literature supports a coherent scope. Symbolic
-execution of digital hardware designs includes more than classical path
-forking and less than every solver-backed hardware analysis. Its common object
-is a digital design model advanced operationally under symbolic values, with a
-stated relation to feasible concrete executions and a verification result.
-RTL is the natural center; other HDLs, HLS, SystemC/TLM, generated models, and
-mixed-level systems belong when the hardware design itself participates
-symbolically.
+The bounded map is neither empty nor enormous. Thirty-one full-text-qualified
+works support a focused account, with RTL at the center and smaller SystemC,
+mixed-level, netlist, other-HDL, and HLS edges. The concentration of the corpus
+is itself informative: path-conditioned execution is a specialized hardware-
+verification niche whose strongest use is often generation of a difficult,
+replayable witness.
 
-The selected history is usefully read through two coexisting lineages.
-Hardware symbolic simulation established guarded multi-input execution;
-software-style symbolic and concolic execution brought path search, mature
-solvers, and test generation. Some modern systems recombine these choices
-through fragments, static guidance, fuzzing handoffs, cross-level composition,
-and testbench-directed forks, without establishing universal inheritance from
-both traditions. These mechanisms move
-difficulty among executor states, symbolic representations, solvers, and
-harnesses. Their value depends on matching that distribution to the observer
-and result contract.
+Hardware changes the technique at its semantic core. Time, scheduling,
+concurrency, reset, translation, and environment determine path identity and
+claim strength. Guidance, backward search, fragments, caching, time
+abstraction, and fuzzing handoffs make useful searches practical by relocating
+work, not by generally eliminating the behavioral product.
 
-The field will become easier to compare when every claim names the executed
-artifact, initial state, time and scheduling model, environment, approximation
-policy, returned evidence, and completion status. That reporting discipline is
-not bookkeeping. It is what turns a powerful run into a result another
-engineer can interpret, replay, and build upon.
+The resulting discipline is simple. State the executed artifact, initial
+state, time model, environment, exactness, returned evidence, and completion.
+Report positive witnesses separately from bounded exhaustion and incomplete
+search. With semantic conformance, shared benchmarks, outcome partitions, and
+effort measurements, this small field can become much easier to evaluate and
+reuse without losing the narrow definition that makes it intelligible.

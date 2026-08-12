@@ -9,7 +9,7 @@ work:
   arxiv: 2509.05504
 read: full-text
 source: https://arxiv.org/abs/2509.05504
-facets: "relation: core; artifact: mixed-level; execution: path; goal: equivalence; evidence: experiment"
+facets: "relation: core; artifact: mixed-level; execution: classical; goal: equivalence; evidence: experiment"
 retrieved: 2026-08-10
 notes-by: Codex GPT-5.6 Sol (survey deep-read pipeline)
 notes-date: 2026-08-10

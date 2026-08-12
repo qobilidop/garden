@@ -7,17 +7,22 @@ oa5	openalex	core	concolic RTL hardware	100	true	2026-08-10	none
 oa6	openalex	artifact	"symbolic execution" processor verification	100	true	2026-08-10	none
 oa7	openalex	goal	"symbolic execution" hardware security	100	true	2026-08-10	none
 oa8	openalex	artifact	"symbolic execution" high-level synthesis HDL	100	true	2026-08-10	none
-oa9	openalex	lineage	"symbolic simulation" RTL hardware	100	true	2026-08-10	selective-lineage discovery
-oa10	openalex	lineage	"symbolic trajectory evaluation" hardware	100	true	2026-08-10	selective-lineage discovery
+oa9	openalex	lineage	"symbolic simulation" RTL hardware	100	false	2026-08-10	retired 2026-08-11 after symbolic simulation moved outside the map denominator
+oa10	openalex	lineage	"symbolic trajectory evaluation" hardware	100	false	2026-08-10	retired 2026-08-11 after STE moved outside the map denominator
+oa11	openalex	core	"path condition" RTL hardware symbolic execution	100	true	2026-08-11	strict-boundary discovery added and initially reconciled 2026-08-11
+oa12	openalex	core	"dynamic symbolic execution" hardware RTL	100	true	2026-08-11	strict-boundary discovery added and initially reconciled 2026-08-11
 cr1	crossref	core	"symbolic execution" hardware design RTL	100	true	2026-08-10	none
 cr2	crossref	core	"symbolic execution" Verilog SystemC	100	true	2026-08-10	none
 cr3	crossref	artifact	concolic hardware RTL processor	100	true	2026-08-10	none
-cr4	crossref	lineage	"symbolic simulation" RTL hardware	100	true	2026-08-10	selective-lineage discovery
+cr4	crossref	lineage	"symbolic simulation" RTL hardware	100	false	2026-08-10	retired 2026-08-11 after symbolic simulation moved outside the map denominator
+cr5	crossref	core	"path condition" RTL hardware symbolic execution	100	true	2026-08-11	strict-boundary discovery added and initially reconciled 2026-08-11
 ax1	arxiv	core	all:"symbolic execution" AND (all:hardware OR all:RTL OR all:Verilog)	100	true	2026-08-10	raw arXiv syntax
 ax2	arxiv	artifact	all:"symbolic execution" AND (all:SystemC OR all:processor OR all:HLS)	100	true	2026-08-10	raw arXiv syntax
 ax3	arxiv	goal	all:"symbolic execution" AND all:"hardware security"	100	true	2026-08-10	raw arXiv syntax
-ax4	arxiv	lineage	all:"symbolic simulation" AND (all:RTL OR all:hardware)	100	true	2026-08-10	raw arXiv syntax; selective-lineage discovery
+ax4	arxiv	lineage	all:"symbolic simulation" AND (all:RTL OR all:hardware)	100	false	2026-08-10	retired 2026-08-11 after symbolic simulation moved outside the map denominator
+ax5	arxiv	core	(all:"path condition" OR all:"path constraints") AND (all:RTL OR all:Verilog OR all:hardware) AND all:symbolic	100	true	2026-08-11	raw arXiv syntax; strict-boundary discovery added and initially reconciled 2026-08-11
 s21	semanticscholar	core	symbolic execution hardware RTL Verilog	100	true	2026-08-10	none
 s22	semanticscholar	artifact	symbolic execution SystemC processor hardware verification	100	true	2026-08-10	none
 s23	semanticscholar	goal	concolic symbolic execution hardware security	100	true	2026-08-10	none
 s24	semanticscholar	lineage	symbolic simulation RTL hardware	100	false		deactivated after repeated HTTP 429 on 2026-08-10; topic also targeted by oa9, oa10, cr4, ax4, and citation chasing
+s25	semanticscholar	core	path condition symbolic execution RTL hardware	100	true		strict-boundary discovery added 2026-08-11

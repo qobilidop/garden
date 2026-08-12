@@ -1,41 +1,46 @@
 = Introduction <sec-introduction>
 
-Symbolic execution is usually introduced with a software program: replace
-concrete inputs by symbols, fork at a conditional, accumulate a path
-condition, and ask a solver for an input that reaches a target. Baldoni et al.
-organize that mature software literature around execution mode, state and
-environment modeling, path-space control, and constraint solving
-@baldoni2016-symbolic. Digital hardware complicates every noun in that
-description. The object may be source RTL, an event-driven HDL process, a
-cycle-accurate C++ translation, a SystemC transaction model, an HLS program,
-or several levels at once. A "path" may mean a procedural branch trace, a
-clocked transition trace, a combination of independently explored RTL
-fragments, or no explicit fork at all because alternatives remain inside an
-ITE expression.
+In the canonical software account, symbolic execution replaces inputs with
+symbols, advances a program state, forks or otherwise distinguishes branch
+outcomes, accumulates a path condition, and asks a solver whether that path is
+feasible @baldoni2016-symbolic. Moving this idea to digital hardware changes
+the object being executed. A branch belongs to one of several concurrent HDL
+processes; state updates at clock or delta-cycle boundaries; a generated C++
+model may stand between RTL and the executor; reset and an environmental
+testbench determine which symbolic states are reachable. A hardware “path” is
+therefore not merely a list of source-level branch outcomes.
 
-The terminology also has a history of its own. Hardware researchers used
-symbolic simulation to reason over multiple machine inputs decades ago; the
-earliest work located by this campaign explicitly described its method as
-similar to symbolic execution of programs and applied it across architectural
-and register-transfer descriptions @carter1979symbolic. Later symbolic RTL
-simulation accumulated event paths while merging values under Boolean control
-conditions @kolbl2001rtl. The recent literature imports software engines and
-concolic search, but it also rediscovers or deliberately combines the older
-hardware lineage. Treating everything as "KLEE for Verilog" therefore hides
-the field's main design choices.
+Terminology obscures this point. Hardware papers also use *symbolic
+simulation* for evaluating a circuit over symbolic values, *symbolic
+trajectory evaluation* (STE) for abstract trajectories, *bounded model
+checking* (BMC) for solving unrolled transition formulas, and *concolic
+testing* for generating a new input from the symbolic predicate of a concrete
+trace. All can use the same SMT solver and return a counterexample. That
+surface overlap does not make them one method.
 
-This survey asks five questions:
+This survey follows path-conditioned execution. Its earliest
+mechanism-verified included work, rather than its earliest use of a label, is a
+2011 SystemC semantics that carries symbolic stores and path conditions,
+checks feasibility, and composes scheduler-aware traces between waits
+@harrath2011wsa. The bounded corpus then develops through direct and translated
+RTL execution, concolic test generation, security-guided backward and forward
+search, HLS-source execution with hardware datatypes, and cross-level
+co-execution. This history is narrower than symbolic hardware reasoning as a
+whole, but it is methodologically coherent.
 
-- *RQ1:* Vocabulary and lineage — How have symbolic execution, concolic
-  execution, symbolic simulation, and STE been distinguished and connected in
-  work on digital hardware designs?
+The survey asks five questions:
+
+- *RQ1:* Definition and regimes — Which works actually perform classical,
+  concolic/dynamic, or selective/hybrid symbolic execution of a digital
+  hardware design, and how do those regimes differ operationally?
 - *RQ2:* Executed artifact — Which design representations are executed — RTL,
   other HDLs, HLS or behavioral models, SystemC/TLM, netlists, or coupled
   cross-level models — and how are hardware concurrency and clocked state
   represented?
-- *RQ3:* Alternatives and scaling — Where do alternative behaviors live —
-  separate paths, path fragments, symbolic expressions, abstract states, or
-  concrete/symbolic hybrids — and which mechanisms control their growth?
+- *RQ3:* Paths and scaling — What constitutes a path through concurrent,
+  clocked hardware; how are path-conditioned alternatives enumerated,
+  reconstructed, composed, merged, or selected; and which mechanisms control
+  their growth?
 - *RQ4:* Verification contract — Which goals are served, what witnesses or
   proofs are produced, and what bounds, approximations, environmental models,
   or harness assumptions qualify the result?
@@ -43,28 +48,16 @@ This survey asks five questions:
   temporal depth, coverage, solver work, defects, reproducibility, and
   comparison baselines?
 
-Our scope is digital design verification, with RTL at the center. We admit
-other HDLs and HLS, SystemC/TLM, gate-level and mixed-level designs whenever a
-hardware design model participates symbolically. We exclude symbolic
-execution of firmware on otherwise concrete hardware, hardware accelerators
-for software symbolic execution, and generic model checking or equivalence
-checking that does not operationally execute a design under symbolic values.
-Symbolic simulation and symbolic trajectory evaluation (STE) enter
-selectively as ancestors and close comparators, not as an attempted survey of
-formal hardware verification as a whole.
+The contributions are fourfold. First, a five-part operational test separates
+path-conditioned execution from adjacent symbolic methods. Second, a bounded
+systematic map describes the verified corpus by execution regime and artifact.
+Third, a critical synthesis connects path meaning, hardware semantics, scaling
+mechanisms, and result contracts. Fourth, a compact reporting tuple makes
+positive witnesses, bounded completion, and inconclusive search outcomes
+comparable without requiring a common implementation architecture.
 
-The survey contributes four things. First, it gives a mechanism-based boundary
-for a name that is broad in practice. Second, it maps the field along four
-coupled axes: artifact, alternative representation, scaling mechanism, and
-verification contract. Third, it distinguishes a result's *search evidence*
-from its *semantic guarantee*: a replayable trace is different from bounded
-coverage, and both are different from an unbounded proof. Fourth, it proposes
-a compact reporting contract that makes evaluations comparable without
-requiring every tool to adopt the same architecture.
-
-The organizing thesis is simple: hardware symbolic execution is defined less
-by whether an implementation literally forks than by whether it maintains a
-symbolic operational relation between design behavior and feasible concrete
-executions. That umbrella is useful only after the paper states where
-alternatives live, how time and concurrency are modeled, and what evidence
-the result actually licenses.
+The principal finding is intentionally modest: symbolic execution of hardware
+is a viable survey topic, but it is a specialized verification niche rather
+than a synonym for formal hardware verification. Its small size is evidence
+about the field, not a reason to enlarge the denominator with neighboring
+methods.

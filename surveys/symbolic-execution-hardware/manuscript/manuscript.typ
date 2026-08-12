@@ -12,7 +12,6 @@
     "hardware verification",
     "register-transfer level",
     "concolic testing",
-    "symbolic simulation",
     "SystemC",
     "high-level synthesis",
   ),

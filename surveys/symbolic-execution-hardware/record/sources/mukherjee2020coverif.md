@@ -8,7 +8,7 @@ work:
   arxiv: 2001.01324
 read: full-text
 source: https://arxiv.org/abs/2001.01324
-facets: "relation: core; artifact: mixed-level; execution: path; goal: functional; evidence: experiment"
+facets: "relation: core; artifact: mixed-level; execution: classical; goal: functional; evidence: experiment"
 retrieved: 2026-08-10
 notes-by: Codex GPT-5.6 Sol (survey deep-read pipeline)
 notes-date: 2026-08-10

@@ -1,7 +1,7 @@
 // Shared metadata for paged and HTML wrappers.
 
 #let title = "Symbolic Execution of Digital Hardware Designs"
-#let subtitle = "A Systematic Map of Artifacts, Execution Models, and Verification Contracts"
+#let subtitle = "A Systematic Map of Path-Conditioned Design Execution"
 #let byline = "Bili Dong"
 #let author-note = [
   The byline names the accountable human author, who directed the scope and
@@ -12,33 +12,34 @@
   evidence; literature claims rest on the cited sources. The linked survey
   record preserves the protocol, catalog, decisions, and evidence trail.
 ]
-#let draft = "Draft 2026-08-10"
+#let draft = "Draft 2026-08-12"
 #let landing = "https://qobilidop.github.io/sys0/surveys/symbolic-execution-hardware/"
 #let record = "https://github.com/qobilidop/sys0/tree/main/surveys/symbolic-execution-hardware/record"
 
 #let abstract-body = [
-  Symbolic execution of hardware is often presented as a transfer of a
-  software-testing technique to RTL. We instead organize the selected
-  literature around two lineages whose mechanisms sometimes coexist: hardware
-  symbolic simulation represents many circuit behaviors inside symbolic
-  values, while path-oriented and concolic systems execute HDL control flow,
-  generated software models, or cross-level models under path conditions;
-  symbolic trajectory evaluation is retained selectively as adjacent lineage.
-  This survey systematically maps work through 10
-  August 2026, with RTL at the center and other HDLs, HLS models, SystemC/TLM,
-  and mixed-level designs included when a digital hardware design is itself a
-  symbolic participant. It organizes the field by the executed artifact, the
-  location of behavioral alternatives, the scaling mechanism, and the
-  verification contract. The central finding is that "symbolic execution" is
-  a useful umbrella only when papers state where alternatives live and what
-  semantic bridge connects the executed representation to the design of
-  interest. Path splitting, expression merging, fragments, abstraction,
-  concrete/symbolic alternation, and testbench-directed forking move work
-  among executor, solver, and harness; none removes the underlying behavioral
-  product in general. Among the critical deep reads, reported outcomes range
-  from replayable tests and counterexamples to bounded coverage and qualified
-  proofs, but evaluations are difficult to compare because cycle bounds, reset
-  assumptions, harness labor, design scale, and timeout policies vary. We conclude with a reporting
-  contract and research agenda for semantic validation, common benchmarks,
-  effort measurement, and compositional cross-level execution.
+  “Symbolic execution” is used broadly in hardware verification, sometimes
+  for path exploration and sometimes for any solver-backed propagation of
+  symbolic values. This survey adopts a narrower operational boundary: an
+  included method executes a digital design or claimed-faithful executable
+  representation, carries symbolic hardware values, constructs predicates for
+  distinguishable control- or time-indexed paths, uses feasibility to choose
+  or reconstruct execution, and makes that mechanism load-bearing in its
+  result. Standing searches through 11 August and critical citation chases
+  through 12 August 2026 yield 31 works: 14 classical, 11 concolic, and 6
+  selective-hybrid.
+  RTL accounts for 20; SystemC/TLM, mixed-level, netlist, another HDL, and one
+  hardware-specific HLS study form the remainder. Symbolic simulation, STE,
+  BMC, and trace-only search are treated as adjacent, not counted. The corpus
+  shows that hardware path execution is defined as much by clocks, scheduling,
+  reset, translation, and environment as by the solver. Target guidance,
+  backward execution, fragment composition, caching, symbolic time
+  abstractions, and fuzzing handoffs move cost among paths, summaries,
+  formulas, and concrete corpora; they do not generally remove the product of
+  inputs, control choices, concurrent processes, and cycles. Most results are
+  replayable tests, counterexamples, exploits, or coverage evidence rather
+  than unbounded proofs, and heterogeneous bounds and harnesses prevent a
+  quantitative ranking. The resulting topic is a coherent but specialized
+  niche. We conclude with a common reporting contract and an agenda for
+  semantic validation, benchmarks, completion accounting, and cross-level
+  composition.
 ]

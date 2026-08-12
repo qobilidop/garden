@@ -9,6 +9,7 @@ arxiv.org/bibtex endpoint. Failures leave the existing output untouched;
 an entry added to references-manual.bib satisfies the same citekey.
 """
 import argparse
+import html
 import os
 import re
 import sys
@@ -52,7 +53,7 @@ def fmt(entry):
     lines = []
     for field in split_fields(body):
         name, _, value = field.partition("=")
-        name, value = name.strip().lower(), value.strip()
+        name, value = name.strip().lower(), html.unescape(value.strip())
         if name == "doi":
             value = value.replace("{https://doi.org/", "{")
         if name == "pages":

@@ -8,7 +8,7 @@ work:
   doi: 10.1145/3760529
 read: full-text
 source: https://www.cise.ufl.edu/research/cad/Publications/tecs25.pdf
-facets: "relation: core; artifact: rtl; execution: hybrid; goal: test-coverage; evidence: experiment"
+facets: "relation: core; artifact: rtl; execution: selective-hybrid; goal: test-coverage; evidence: experiment"
 retrieved: 2026-08-10
 notes-by: Codex GPT-5.6 Sol (survey deep-read pipeline)
 notes-date: 2026-08-10

@@ -1,82 +1,81 @@
-= Evaluation practice <sec-evidence>
+= Evaluation practice and evidence strength <sec-evidence>
 
-The critical deep-read set contains promising systems evidence, but its
-comparisons rarely share a common unit. These studies choose different design
-families, cycle bounds, harnesses,
-coverage metrics, defect sets, and timeout policies. A speedup can measure
-executor construction, solver time, or end-to-end test generation; a path
-count can mean active states, completed traces, fragments, or target-specific
-attempts.
+The critical studies show that the methods work, but they do not support a
+single quantitative ranking. Designs, horizons, coverage definitions, setup
+effort, baselines, and completion policies differ too much for a defensible
+meta-analysis.
 
-== What the critical studies measure
+== Range of evidence
 
-The early SE4RDV case study reports roughly four thousand generated tests,
-wall time, resource percentages, and high statement/branch coverage on one
-OpenCores floating-point unit @zhang2016rtltests. It has no competing baseline
-and cannot establish general scalability. Directed concolic testing evaluates
-target reachability across RTL designs and compares guidance strategies
-@ahmed2018directed. Scalable concolic testing broadens the benchmark set and
-reports coverage, test generation, and runtime improvements, but results still
-depend on branch targets and chosen temporal settings @lyu2021scalable.
+Early translation-based work is feasibility evidence. V2C compares
+path-symbolic execution with BMC and abstract interpretation on selected
+hardware properties @mukherjee2015software. SESC evaluates several small
+SystemC designs with path/test counts, coverage, time, and memory
+@lin2016systemc. SE4RDV reports about 4,010 tests and 98.4 percent statement and
+96.8 percent branch coverage on one OpenCores FPU, without a competing
+test-generation baseline @zhang2016rtltests. These results establish workable
+architectures, not industrial generality.
 
-Sylvia studies five designs and 84 properties, separating local path-fragment
-construction from feasibility of composed paths @ryan2023sylvia. Its fragment
-reduction is real, while the full fragment cross-product remains the relevant
-worst-case solver boundary. SEIF reports sampled-path accounting, bounded
-search strategies, cycle depth, wall time, and two full source-signal security
-case studies on four designs @ryan2023seif. Its three-way accounted,
-unaccounted, and falsified classification makes partial completion visible.
+Directed concolic work provides stronger comparative evidence. Ahmed et al.
+measure iterations, time, and memory against bounded model checking and two
+concolic strategies across benchmark targets, while preserving an explicit
+cycle bound @ahmed2018directed. Scalable concolic testing broadens designs and
+guidance comparisons @lyu2021scalable. AutoVeriFix+ reports near-complete
+branch coverage on generated RTL benchmarks, but the preprint's “exhaustive”
+language exceeds its timeout, state-explosion, and generated-oracle caveats
+@tan2026autoverifix.
 
-The hybrid studies measure the complementarity of fuzzing and concolic search.
-GreyConE reports branch coverage and time across compiled SystemC designs
-@debnath2022greycone. FuSS reports coverage progress, target resolution, and
-bug-related outcomes for selective symbolic assistance on RTL models
-@jayasena2025fuss. Among the critical studies, Rudkowski et al. provide an
-unusually broad cross-level metric set: two implementations, multiple
-peripherals, functionality and interface
-tests, mutation analysis, paths, solver fraction, memory, queries, timeouts,
-and ablations @rudkowski2026crosslevel. This evidence comes from the full arXiv
-pre-publication text aligned with the 2026 journal article; its negative
-scalability results are as informative as its completed cases.
+Security systems often have compelling positive outcomes. Coppelia reports
+29 of 31 known vulnerabilities rediscovered and four new processor-design
+vulnerabilities, with generated exploits replayed @zhang2018coppelia. SEIF
+measures accounted, witnessed, rejected, and unaccounted information-flow
+paths over four designs; one full source-signal analysis lasts 3.5 days
+@ryan2023seif. EISec reports possible netlist-flow witnesses, but its
+under-constrained initialization and translation limit the word “exhaustive”
+@fowze2022eisec.
 
-The 2026 Forbench preprint compares symbolic simulation, STE, model checking or search tools,
-and concrete simulators on datapath and processor designs
-@yang2026-forbench. It also contrasts testbench-level forking with a prior
-path-oriented processor setup. The reported runtime and coverage results
-support an implementation claim; the central usability claim remains
-unmeasured because there is no user study or harness-effort comparison.
+Selective execution demonstrates complementarity rather than completeness.
+Qin and Mishra compare trace-reconstructed solving with random testing and a
+prior hybrid on bounded designs @qin2014interleaving. FuSS reports branch and
+toggle coverage trajectories on four RISC-V SoCs @jayasena2025fuss. The HLS
+TCP thesis generates 67 symbolic tests for 47.47 percent source coverage,
+nearly the same final percentage as 2,150 random tests, while also exposing
+specific failures and reducing paths with a clock abstraction @hu2024tcp.
 
-== Four recurrent comparability failures
+The cross-level SystemC study offers the broadest metric bundle: two
+implementations, four dual-level peripherals, functionality and interface
+tests, 357 selected mutants, ablations, a prior-tool comparison, and five
+larger modules @rudkowski2026crosslevel. Its negative evidence is important:
+many larger cases hit 24-hour, memory, or solver-query limits. Paths at timeout
+measure progress, not verification coverage. The RISC-V co-execution case
+similarly finds real mismatches but includes a run lasting 586,905 seconds
+@bruns2023processor.
 
-First, *scale* is underspecified. Source lines, gates, registers, branches,
-modules, and generated instructions are not interchangeable. At minimum,
-papers should report a structural vector and the unrolled temporal depth.
+== Recurrent comparability failures
 
-Second, *completion* is blurred. Paths reached before a timeout and paths
-proved infeasible belong in different columns. A 24-hour run that explores a
-large frontier is evidence of progress, not exhaustive coverage.
+First, *scale* is not a scalar. Source lines, gates, registers, branches,
+processes, and generated instructions measure different structures; all must
+be paired with temporal depth. Second, *completion* is blurred: feasible,
+infeasible, timed-out, unaccounted, and never-scheduled paths need separate
+columns. Third, *baselines solve different contracts*: simulation samples,
+concolic search pursues branch diversions, and BMC asks a bounded property
+query. Runtime alone does not equalize their outputs.
 
-Third, *harness labor* is absent from the critical studies' reported metrics.
-Testbench conditions, target annotations,
-properties, environment models, abstractions, and manual slices can dominate
-adoption cost. Tool runtime alone does not measure verification effort.
-
-Fourth, *baselines solve different contracts*. Concrete simulation samples one
-trace, BMC may prove a bounded property, concolic execution pursues branches,
-and merged symbolic simulation covers valuations without preserving every
-path. A fair comparison states the shared output goal before comparing time.
+Fourth, *human and semantic effort* is largely absent. Testbench construction,
+reset modeling, target annotation, translation repair, abstraction, and
+reference-model debugging can dominate adoption cost. Fifth, stochastic
+systems often omit repeated-run dispersion and seed policy. Finally, artifact
+availability and semantic conformance are rarely strong enough to separate a
+search failure from a modeling failure.
 
 == Recommended evaluation bundle
 
-A reusable benchmark result should publish design/version and license;
-executed representation and translation commands; reset and environment
-harness; symbolic inputs and cycle depth; target/coverage denominator;
-completed, infeasible, timed-out, and unaccounted outcomes; executor, solver,
-and end-to-end time; peak memory; query count and solver share; witness replay
-rate; and human setup effort. Repeated stochastic runs need dispersion and
-seed policy. Mutation studies need the mutation operators, excluded mutants,
-and relation between a kill and a real defect claim.
-
-These fields would not force architectural uniformity. They would make it
-possible to distinguish faster construction from a weaker contract and to
-compare like evidence across path, merged-state, and hybrid systems.
+A reusable result should publish design/version and license; structural scale;
+executed representation and translation commands; reset, clock, and
+environment harness; symbolic inputs and temporal depth; target denominator;
+feasible, infeasible, timed-out, unaccounted, and unscheduled outcomes;
+executor, solver, and end-to-end time; peak memory and query count; replay
+rate; stochastic seeds and dispersion; and human setup effort. The
+seven-element result tuple from @sec-contracts should accompany these
+metrics. This bundle enables like-for-like comparison without pretending that
+all tools answer the same verification question.

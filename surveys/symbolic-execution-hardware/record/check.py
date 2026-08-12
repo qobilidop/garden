@@ -65,12 +65,16 @@ def map_report(catalog):
     if not coverage_match:
         raise RuntimeError("status has no machine-readable coverage date")
     coverage_date = coverage_match.group(1)
-    searches = [row for row in log_rows if row["kind"] == "search" and row["date"] == coverage_date]
+    search_match = re.search(r"\*\*Search through:\*\* (\d{4}-\d{2}-\d{2})", status_text)
+    if not search_match:
+        raise RuntimeError("status has no machine-readable standing-search date")
+    search_date = search_match.group(1)
+    searches = [row for row in log_rows if row["kind"] == "search" and row["date"] == search_date]
     query_ids = {row["query_id"] for row in query_rows}
     search_ids = [row["id"] for row in searches]
     if len(search_ids) != len(set(search_ids)) or not set(search_ids) <= query_ids:
         raise RuntimeError("current checkpoint has duplicate or unregistered search events")
-    due_ids = {row["query_id"] for row in query_rows if row["last_reconciled"] == coverage_date}
+    due_ids = {row["query_id"] for row in query_rows if row["last_reconciled"] == search_date}
     if not due_ids <= set(search_ids):
         raise RuntimeError("current checkpoint omits a reconciled standing query")
     ledger_lines = [
@@ -110,7 +114,7 @@ CONFIG = {
     "exclusion_codes": {
         "E1-software-or-firmware-only",
         "E2-formal-hardware-without-execution",
-        "E3-symbolic-simulation-outside-lineage",
+        "E3-symbolic-method-without-path-execution",
         "E4-analog-physical-or-postsilicon",
         "E5-hardware-accelerates-software",
         "E6-out-of-scope-artifact",
@@ -119,23 +123,31 @@ CONFIG = {
         "E9-retracted-or-withdrawn",
     },
     "facets": {
-        "relation": {"core", "lineage", "comparator"},
+        "relation": {"core"},
         "artifact": {"rtl", "hdl-other", "hls", "systemc-tlm", "gate-netlist", "mixed-level", "generic"},
-        "execution": {"path", "concolic", "fragment", "symbolic-simulation", "ste", "hybrid"},
+        "execution": {"classical", "concolic", "selective-hybrid"},
         "goal": {"functional", "test-coverage", "security", "equivalence", "method-general"},
         "evidence": {"experiment", "case-study", "formal-only", "none"},
     },
     "facet_statuses": {"included", "deep-read"},
     "priorities": {"critical", "high", "medium", "low"},
-    "noted_statuses": {"included", "deep-read"},
+    # Two excluded boundary works retain notes because the manuscript uses
+    # their mechanisms to make the negative boundary auditable.
+    "noted_statuses": {"included", "deep-read", "excluded"},
     "note_required_statuses": set(),
     "claim_required_fields": ["Status", "Statement", "Scope", "Prior frontier"],
     "strict_citation_sections": True,
     "strict_citation_closure": True,
     "citation_closure_exempt_citekeys": {
-        "baldoni2016-symbolic", "kolbl2001rtl", "feng2004dynamic",
-        "ryan2023sylvia", "yang2026-forbench", "petersen2015mapping",
-        "wohlin2014snowballing", "camurati1988formal", "jayasena2024directed",
+        "baldoni2016-symbolic", "carter1979symbolic", "kolbl2001rtl",
+        "feng2004dynamic", "debnath2022greycone", "yang2026-forbench",
+        "ryan2023sylvia", "bagri2015restrictive", "lyu2017quebs",
+        "pinto2017factored", "shen2018trojan", "lin2018ctsc",
+        "zhang2018recursive", "ahmed2018trojan", "lyu2019multitarget",
+        "lin2020selective", "jayasena2021assertions", "lyu2021soccar",
+        "lyu2021fuce", "roy2023slec", "zheng2024incremental",
+        "petersen2015mapping", "wohlin2014snowballing",
+        "camurati1988formal", "jayasena2024directed",
     },
     "rq_manuscript_file": "manuscript/sections/01-introduction.typ",
     "label_pattern": "(?:sec|tab)-[A-Za-z0-9-]+",
@@ -181,19 +193,19 @@ CONFIG = {
             "name": "query attempts",
             "value": "query_attempts",
             "surfaces": ["manuscript/sections/03-method.typ", "record/status.md"],
-            "patterns": [r"attempted ([0-9,]+)\nstanding queries", r"The ([0-9,]+) registered queries"],
+            "patterns": [r"revision attempted ([0-9,]+) boundary-focused queries", r"The strict revision attempted ([0-9,]+) queries"],
         },
         {
             "name": "successful queries",
             "value": "query_successes",
             "surfaces": ["manuscript/sections/03-method.typ", "record/status.md"],
-            "patterns": [r"([0-9,]+)\nreturned result sets", r"produced ([0-9,]+) result sets"],
+            "patterns": [r"([0-9,]+) returned result sets", r"([0-9,]+) produced result sets"],
         },
         {
             "name": "failed queries",
             "value": lambda report: report["query_attempts"] - report["query_successes"],
             "surfaces": ["manuscript/sections/03-method.typ"],
-            "patterns": [r"and ([0-9,]+) failed"],
+            "patterns": [r"([0-9,]+) failed with HTTP 429"],
         },
         {
             "name": "base discovery records",
@@ -226,52 +238,37 @@ CONFIG = {
             "patterns": [r"([0-9,]+) directly inspected primary additions"],
         },
         {
-            "name": "core works",
-            "value": lambda report: report["relation"]["core"],
-            "surfaces": ["manuscript/sections/03-method.typ"],
-            "patterns": [r"consists of ([0-9,]+) core works"],
-        },
-        {
-            "name": "lineage works",
-            "value": lambda report: report["relation"]["lineage"],
-            "surfaces": ["manuscript/sections/03-method.typ"],
-            "patterns": [r"([0-9,]+) selective\nlineage works"],
-        },
-        {
-            "name": "comparator works",
-            "value": lambda report: report["relation"]["comparator"],
-            "surfaces": ["manuscript/sections/03-method.typ"],
-            "patterns": [r"([0-9,]+) direct comparators"],
-        },
-        {
             "name": "RTL works",
             "value": lambda report: report["artifact"]["rtl"],
             "surfaces": ["manuscript/sections/03-method.typ"],
-            "patterns": [r"([0-9,]+) included records execute\nRTL"],
+            "patterns": [r"([0-9,]+) execute RTL"],
         },
         {
             "name": "SystemC/TLM works",
             "value": lambda report: report["artifact"]["systemc-tlm"],
             "surfaces": ["manuscript/sections/03-method.typ"],
-            "patterns": [r"([0-9,]+) SystemC/TLM"],
+            "patterns": [r"([0-9,]+) execute SystemC/TLM"],
         },
         {
             "name": "mixed-level works",
             "value": lambda report: report["artifact"]["mixed-level"],
             "surfaces": ["manuscript/sections/03-method.typ"],
-            "patterns": [r"([0-9,]+) mixed-level records"],
+            "patterns": [r"([0-9,]+) execute coupled mixed-level models"],
         },
         {
             "name": "remaining artifact works",
-            "value": lambda report: report["include_level"] - report["artifact"]["rtl"] - report["artifact"]["systemc-tlm"] - report["artifact"]["mixed-level"],
+            "value": lambda report: (
+                report["include_level"] - report["artifact"]["rtl"]
+                - report["artifact"]["systemc-tlm"] - report["artifact"]["mixed-level"]
+            ),
             "surfaces": ["manuscript/sections/03-method.typ"],
-            "patterns": [r"remaining ([0-9,]+)\nspan other HDLs"],
+            "patterns": [r"The remaining ([0-9,]+) are one each"],
         },
         {
-            "name": "path works",
-            "value": lambda report: report["execution"]["path"],
+            "name": "classical works",
+            "value": lambda report: report["execution"]["classical"],
             "surfaces": ["manuscript/sections/03-method.typ"],
-            "patterns": [r"([0-9,]+) works are\npath-oriented"],
+            "patterns": [r"([0-9,]+) classical"],
         },
         {
             "name": "concolic works",
@@ -280,16 +277,10 @@ CONFIG = {
             "patterns": [r"([0-9,]+) concolic"],
         },
         {
-            "name": "hybrid works",
-            "value": lambda report: report["execution"]["hybrid"],
+            "name": "selective-hybrid works",
+            "value": lambda report: report["execution"]["selective-hybrid"],
             "surfaces": ["manuscript/sections/03-method.typ"],
-            "patterns": [r"([0-9,]+) hybrid"],
-        },
-        {
-            "name": "symbolic-simulation works",
-            "value": lambda report: report["execution"]["symbolic-simulation"],
-            "surfaces": ["manuscript/sections/03-method.typ"],
-            "patterns": [r"([0-9,]+) symbolic-simulation systems"],
+            "patterns": [r"([0-9,]+) selective-hybrid"],
         },
     ],
 }

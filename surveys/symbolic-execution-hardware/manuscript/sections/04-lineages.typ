@@ -1,74 +1,68 @@
-= Two lineages, then coexistence <sec-lineages>
+= Corpus map and development <sec-lineages>
 
-== Symbolic simulation starts at the machine
+The strict corpus begins with a scheduler-aware SystemC construction, not with
+the older symbolic-simulation papers excluded by the operational test. It then
+grows through several partly independent applications. The chronology below
+is a mechanism map, not a claim that every paper directly descends from its
+predecessor.
 
-Carter, Joyner, and Brand's 1979 paper is the earliest hardware-specific work
-located by this campaign that explicitly relates its method to program
-symbolic execution. It compares formal descriptions of a machine architecture
-and its RTL implementation using symbolic values, aiming at correctness and
-error discovery beyond ordinary test cases @carter1979symbolic. The important
-historical point is not priority over every possible antecedent; it is that
-machine design was already an independent home for symbolic execution ideas.
+== Classical execution
 
-The hardware lineage usually avoids a separate executor state for every design
-branch. Symbolic values encode many concrete valuations; Boolean controls
-propagate through circuit structure. We use STE only as the field's neighboring
-trajectory-evaluation label and do not infer its proof semantics from the
-mapping-depth records. Symbolic RTL simulation later brings guarded values into
-event-driven Verilog. Kölbl et al. carry a Boolean control condition through
-branches, merge assignments with ITE, accumulate compatible scheduled events,
-and retain enough guarded occurrence information to replay an error
-@kolbl2001rtl. Worst-case growth remains exponential, but its location is an
-expression or event representation rather than necessarily a visible path
-tree.
+The earliest verified include builds waiting-state automata from feasible
+SystemC symbolic paths @harrath2011wsa. By 2015–2016, software analyzers were
+being applied through synthesis-semantic Verilog-to-C translation and
+SystemC-aware or Verilator-generated execution @mukherjee2015software
+@lin2016systemc @zhang2016rtltests. These architectures establish a recurring
+choice: implement HDL scheduling in the executor, or trust a translation and
+execute its paths.
 
-Dynamic functional-space partitioning illustrates another point on this
-lineage. It represents a circuit value as mutually exclusive guard/data pairs
-and selectively splits at multiplexers when a monolithic BDD grows too large
-@feng2004dynamic. The technique makes a recurring trade explicit: fewer
-executor states can mean larger symbolic values, while partitioning symbolic
-values can recreate a path-like product under another name.
+Security work broadened both direction and output. Test-pattern construction
+targeted hardware Trojans @shen2018trojan; recursive and backward execution
+generated processor-level exploit witnesses @zhang2018recursive
+@zhang2018coppelia. Later systems explored coupled hardware/software paths,
+gate-level information flows, statically guided RTL flows, processor/ISS
+mismatches, and independently constructed RTL fragments
+@mukherjee2020coverif @fowze2022eisec @ryan2023seif @bruns2023processor
+@ryan2023sylvia. The latest boundary expands to hardware-specific HLS source
+and cross-level SystemC peripherals @hu2024tcp @rudkowski2026crosslevel.
 
-== Path and concolic execution arrive through software tooling
+== Concolic execution
 
-The second lineage applies the classical software architecture more directly.
-Zhang, Feng, and Huang translate Verilog with Verilator, construct a C++
-harness, modify KLEE for arbitrary RTL bit widths, and replay generated tests
-against the original RTL @zhang2016rtltests. Alternatives are paths through the
-generated program, and time is a chosen number of calls to the generated
-`eval()` function. This architecture gains mature solver and search machinery
-but inherits a semantic bridge: the guarantee is relative to Verilator's
-model, the harness, and the cycle bound.
+The concolic line centers concrete traces as the path-selection mechanism.
+QUEBS qualifies events for coverage-oriented diversion, while factored
+execution reduces the constraints solved for each RTL test @lyu2017quebs
+@pinto2017factored. SystemC and directed RTL variants then use branch targets,
+CFG distance, and concrete scheduling traces to select the predicate to alter
+@lin2018ctsc @ahmed2018directed. Multi-target activation extends that search
+unit from one branch to a set, and selective SystemC execution applies it to
+Trojan triggers @lyu2019multitarget @lin2020selective.
 
-Hardware concolic work combines fast concrete simulation with selective
-symbolic constraint solving. Directed concolic testing can start from a
-concrete RTL trace, locate a branch relevant to a target, negate or manipulate
-its accumulated condition, and solve for the next test @ahmed2018directed.
-Scalable variants reuse module-level behavior, cache or rank constraints, and
-guide exploration toward uncovered statements or security-relevant targets
-@lyu2021scalable. This lineage makes concrete tests the normal output; any
-completeness claim is correspondingly a claim about the search schedule,
-bound, and modeled branch semantics.
+Subsequent work scales or repurposes the same loop: scalable RTL concolic
+testing, asynchronous-reset security checking, concolic equivalence coverage,
+and incremental RTL exploration all retain concrete execution plus symbolic
+path feasibility @lyu2021scalable @lyu2021soccar @roy2023slec
+@zheng2024incremental. AutoVeriFix+ embeds the mechanism inside an LLM-driven
+RTL repair workflow: it records cycle-indexed paths, negates an uncovered
+branch predicate, solves a test, and re-simulates it @tan2026autoverifix.
 
-== Mechanisms coexist in the modern field
+== Selective-hybrid execution
 
-Recent systems recombine operations that a simple path-versus-merged-state
-split would keep apart, but this is an organizing interpretation rather than a
-claim that every system inherits both historical lineages. Sylvia executes RTL
-paths but explores sequential blocks independently, then asks SMT whether
-fragment combinations compose into feasible full-design executions
-@ryan2023sylvia. SEIF overlays a static information-flow graph on RTL symbolic
-execution, using graph paths as landmarks and retaining an explicit
-"unaccounted" class for bounded searches @ryan2023seif. FuSS lets fuzzing cover
-cheap behaviors and invokes selective symbolic execution on a cone around
-stubborn targets @jayasena2025fuss. Forbench is the clearest bridge in the
-critical set: it retains merged symbolic design states but adds explicit forks
-when a procedural testbench must branch on a symbolic condition
-@yang2026-forbench.
+The selective-hybrid works make symbolic execution an expensive intervention
+rather than the default engine. Trace reconstruction first appeared as
+interleaving concrete HDL simulation with symbolic constraints
+@qin2014interleaving. Restrictive execution selected one cycle and a relevant
+trace slice @bagri2015restrictive. Security-oriented systems later alternate
+concrete simulation and symbolic activation, target assertions, or combine
+fuzzing with concolic solving @ahmed2018trojan @jayasena2021assertions
+@lyu2021fuce. FuSS localizes symbolic work further: a fuzzing plateau selects a
+nearby RTL-CFG target, a Verilated state snapshot supplies the prefix, and a
+symbolic suffix returns a new program to the corpus @jayasena2025fuss.
 
-The resulting field is best understood as a design space, not a succession in
-which newer path execution replaces older symbolic simulation. Modern tools
-choose where to split, what to merge, which representation to execute, and
-which obligations to discharge symbolically. The two lineages provide useful
-extreme points; selected practical systems occupy positions between them
-without establishing a universal historical convergence.
+== What the map says about field size
+
+The corpus is sustained rather than accidental: it spans direct semantics,
+translation-based reuse, testing, security, equivalence, HLS, and cross-level
+checking. Yet it remains concentrated in a few research groups, artifacts, and
+recurring toolchains. That combination is the right scale for a focused
+survey. Enlarging it with every symbolic simulator or BMC paper would create a
+bigger bibliography but destroy the common operational question.

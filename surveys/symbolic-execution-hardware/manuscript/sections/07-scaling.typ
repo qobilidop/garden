@@ -1,80 +1,74 @@
-= Scaling mechanisms and the conservation of difficulty <sec-scaling>
+= Scaling path-conditioned hardware execution <sec-scaling>
 
-Hardware adds a temporal and concurrent multiplier to familiar path
-explosion. In a bounded synchronous model, choices can arise from symbolic
-inputs, control branches, scheduling, state-dependent loops, memory indices,
-and combinations of concurrent blocks on every cycle. No surveyed technique
-removes this product in general. Each controls which part is constructed,
-shared, approximated, or postponed.
+If each of $n$ effective choices is independent, explicit path exploration can
+expose $2^n$ executions. Hardware supplies new choices every cycle and can
+combine independently controlled processes, symbolic addresses, environment
+transactions, and state-dependent loops. Practical systems therefore decide
+which paths to construct now, which constraints to reuse, and which prefix or
+suffix to leave concrete.
 
-== Guidance and target selection
+== Guidance and one-path reconstruction
 
-Directed concolic testing avoids indiscriminate path enumeration by tracing
-back from a target and solving constraints that are expected to change its
-reachability @ahmed2018directed. Scalable RTL concolic testing ranks or reuses
-branch information and exploits circuit structure @lyu2021scalable. SEIF uses
-static information-flow paths as landmarks, divides them at clock boundaries,
-and permits bounded stalls while it searches for an executable RTL witness
-@ryan2023seif. These methods improve *time to selected evidence*. Unless every
-target and alternative is scheduled under an exhaustive bound, they do not by
-themselves establish absence.
+Directed concolic testing ranks candidate branch diversions by their relation
+to a target rather than enumerating paths uniformly @ahmed2018directed.
+Scalable RTL concolic testing strengthens this with contribution analysis and
+reuse @lyu2021scalable. SEIF uses a static information-flow graph as an
+overapproximate route, segments it at clock boundaries, and performs bounded
+symbolic search for an executable RTL witness @ryan2023seif. These mechanisms
+improve time to selected evidence; unless every target and diversion is
+scheduled to completion, they do not establish absence.
 
-== Composition and reuse
+Reconstructing only an observed path also limits formula size. Qin and Mishra
+specialize dynamic array indices to a trace and reuse unsatisfiable cores
+@qin2014interleaving. The saving comes with an obligation: constraint deletion
+and trace specialization must preserve the branch diversion being claimed.
 
-Block-level fragments prevent repeated exploration of the same local RTL
-behavior @ryan2023sylvia. Cross-level methods can reuse component executions or
-compare modular observations @rudkowski2026crosslevel. Query caching, repeated
-submodule reuse, cone-of-influence reduction, and incremental solving attack
-construction and solver redundancy.
+== Backward search, fragments, and summaries
 
-Reuse requires a stable interface. A summary must say which state, inputs,
-time indices, and assumptions it abstracts. In clocked hardware, two
-syntactically identical modules can have different symbolic contexts because
-their histories or reset states differ. Composition is sound only when those
-contexts are part of the key or are safely generalized.
+Backward execution avoids enumerating every reset-to-target prefix by starting
+from a security condition and constructing predecessor cycles
+@zhang2018coppelia. Fragment-based execution explores blocks or modules
+independently before solver-checked composition @ryan2023sylvia. Both postpone
+part of the global product. Their summaries must retain enough state, time,
+and interface conditions that a stitched path corresponds to a realizable
+execution.
 
-== Merging and abstraction
+In the simple case of $N$ blocks with $b$ local binary choices, building local
+trees can cost on the order of $N dot 2^b$ rather than constructing $2^(N b)$
+whole paths immediately. The compatible fragment tuple space can still reach
+$2^(N b)$. Construction reduction is valuable, but it should not be reported
+as elimination of the composition product.
 
-ITE merging and event accumulation share suffix work but can grow symbolic
-expressions @kolbl2001rtl. Guard/data partitions split only where monolithic
-representations become expensive @feng2004dynamic. Abstract-state methods move
-detail into an abstraction relation; whether their answers are sound or merely
-heuristic depends on semantics that this selective lineage map does not
-establish. Testbench-directed forking merges everything the observer does not
-need to distinguish @yang2026-forbench.
+== Time abstraction and selective suffixes
 
-These mechanisms move complexity between three ledgers:
+HLS TCP execution replaces many concrete idle cycles with a symbolic packet
+gap, reducing repeated clock paths while adding an abstraction obligation
+@hu2024tcp. FuSS uses a concrete fuzzer for long prefixes and asks a solver for
+only a nearby CFG suffix @jayasena2025fuss. Both succeed by preserving the
+distinctions important to their observer while compressing or concretizing
+others.
+
+Hybrid handoffs add their own costs: detecting a plateau, mapping coverage to
+a target, reconstructing a faithful state, solving the suffix, and replaying
+the resulting test. A local solver speedup can be outweighed by these phases,
+while an unreachable snapshot can yield a nonreplayable witness.
+
+== Four cost ledgers
 
 #figure(
   table(
-    columns: (23%, 37%, 40%),
-    [*Ledger*], [*Typical growth*], [*Representative controls*],
-    [Executor], [active paths, fragments, event contexts], [guidance, composition, concrete runs],
-    [Representation], [ITE/BDD DAGs, guarded values, abstract states], [merging, partitioning, abstraction, sweeping],
-    [Solver], [query count, formula size, theory difficulty], [caching, incremental solving, slicing, word-level reasoning],
+    columns: (20%, 38%, 42%),
+    [*Ledger*], [*Growth*], [*Representative controls*],
+    [Executor], [active paths, fragments, cycles], [guidance, backward search, composition],
+    [Formula], [predicate size, aliasing, theory], [slicing, caching, incremental solving],
+    [Concrete frontier], [traces, seeds, coverage state], [ranking, fuzzing, handoff policies],
+    [Semantic bridge], [translation, replay, harness work], [supported subsets, differential validation],
   ),
-  caption: [Path explosion is redistributed among executor, representation, and solver.],
+  caption: [Scaling mechanisms move cost among four observable ledgers.],
 ) <tab-ledgers>
 
-An evaluation that reports only one ledger can therefore be misleading. Fewer
-paths may accompany larger formulas; fewer queries may accompany harder
-queries; faster bug discovery may leave most targets unscheduled. End-to-end
-time, peak memory, completed bounds, and evidence produced are the common
-denominators.
-
-== Hybrid handoffs
-
-GreyConE and FuSS use fuzzing for high-throughput discovery and symbolic
-execution for hard conditions @debnath2022greycone @jayasena2025fuss. This
-division is attractive because most branches may not need a solver. Its
-effectiveness depends on the handoff policy, seed/state reconstruction, and
-the semantic fidelity of any localized model. A symbolic query solved from an
-unreachable or mismatched state can generate a nonreplayable test; a highly
-conservative slice can erase the speed advantage.
-
-The general lesson is a conservation principle, not an impossibility theorem:
-practical systems succeed by aligning representation with the verification
-observer. They avoid distinguishing behaviors that the current goal cannot
-tell apart, reuse local reasoning, and spend solver effort on the remaining
-boundaries. Claims should identify the discarded distinctions and the
-conditions under which they are irrelevant.
+The synthesis is a conservation principle, not an impossibility theorem.
+Tools scale when they stop distinguishing behaviors irrelevant to the current
+observer, reuse stable summaries, or spend solver effort only at difficult
+boundaries. A credible claim reports all four ledgers, end-to-end time and
+memory, completion status, and the distinctions deliberately omitted.

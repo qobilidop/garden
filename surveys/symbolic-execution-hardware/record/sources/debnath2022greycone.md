@@ -9,7 +9,7 @@ work:
   arxiv: 2205.04047
 read: full-text
 source: https://arxiv.org/abs/2205.04047v3
-facets: "relation: core; artifact: systemc-tlm; execution: hybrid; goal: test-coverage; evidence: experiment"
+facets: "boundary exclusion; artifact: HLS-oriented SystemC source; execution: concolic software engine; failed bridge: generated-hardware semantics not established"
 retrieved: 2026-08-10
 notes-by: Codex GPT-5.6 Sol (survey deep-read pipeline)
 notes-date: 2026-08-10

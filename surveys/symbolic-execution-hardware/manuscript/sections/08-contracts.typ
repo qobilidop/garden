@@ -1,78 +1,82 @@
 = Verification goals and result contracts <sec-contracts>
 
-The same execution engine can serve test generation, coverage closure,
-functional checking, security analysis, equivalence, or general methodology.
-The output type and its qualifications matter more than the application label.
+The same path engine can generate tests, close coverage, expose an exploit,
+compare two models, or check an assertion. The application label does not
+determine the strength of the result. Output type, environment, and completion
+do.
 
-== Replayable witnesses
+== Replayable positive witnesses
 
-The most robust common output is a concrete input or input sequence that can be
-replayed on the design. SE4RDV replays generated vectors in RTL simulation and
-measures statement and branch coverage @zhang2016rtltests. Directed and scalable
-concolic systems solve for tests aimed at selected RTL targets
-@ahmed2018directed @lyu2021scalable. SEIF returns design paths and inputs for
-realizable information-flow candidates and separately checks reset
-compatibility for security witnesses @ryan2023seif.
+A concrete input sequence replayed on the design is the strongest common
+denominator. SE4RDV solves generated-code paths and measures the tests again in
+RTL simulation @zhang2016rtltests. Directed concolic testing observes the
+target during concrete RTL re-execution @ahmed2018directed. FuSS returns
+symbolically extended programs to the fuzzer and measures them on the
+Verilated design @jayasena2025fuss. Coppelia goes further by turning a
+processor-design condition into an executable program and replaying exploits
+@zhang2018coppelia.
 
-Replay validates one existential claim: under the replay environment, this
-input produces this behavior. It does not validate all symbolic states, the
-translation used to obtain the test, or absence of another behavior. A useful
-artifact should include clock/reset protocol, initial state, nondeterminism
-policy, and any environmental transactions needed for replay.
+Replay establishes an existential claim: under this reset, clock, environment,
+and implementation, the supplied input exhibits the behavior. It does not
+prove translation equivalence, validate every symbolic intermediate state, or
+show that another behavior is absent. A portable witness must include the
+initialization and transaction protocol, not only the symbolic bytes.
 
-== Coverage claims
+== Coverage and repair evidence
 
-Coverage-directed work reports statements, branches, conditions, targets, or
-mutants reached. Coverage is always relative to an instrumentation and a
-harness. A generated C++ branch may not correspond one-to-one with an RTL
-branch; an optimized or flattened representation can duplicate or erase
-source decisions. A symbolic simulator that merges design branches may cover
-all bounded input valuations while never enumerating branch histories.
+Branch, statement, condition, assertion, information-flow, and toggle coverage
+have different denominators. Generated C++ branches may not correspond
+one-to-one with RTL branches, and excluded or unreachable targets can inflate
+or depress a percentage. A coverage claim therefore needs the instrumented
+artifact, denominator, reachability policy, temporal budget, and replay rate.
 
-GreyConE's SystemC experiments and FuSS's RTL fuzzing experiments use
-coverage as the handoff signal and outcome @debnath2022greycone
-@jayasena2025fuss. Their contribution is best read as more efficient discovery
-under a budget, not as a proof that uncovered behavior is impossible. Coverage
-percentage needs the denominator, the unreachable-target policy, cycle/time
-budget, and whether results were replayed.
+Selective-hybrid work commonly uses coverage both as a handoff signal and as
+the outcome. Qin and Mishra divert concrete traces toward uncovered HDL
+branches @qin2014interleaving; FuSS invokes symbolic suffix execution at a
+fuzzing plateau @jayasena2025fuss. AutoVeriFix+ uses concolic branch discovery
+to improve differential tests and propose RTL repair or pruning
+@tan2026autoverifix. None of these mechanisms turns a residual uncovered branch
+into a proof of unreachability or semantic redundancy.
 
-== Bounded and unbounded conclusions
+== Bounded completion and negative outcomes
 
-A symbolic run can exhaust all modeled valuations up to a temporal bound. That
-is stronger than sampling and weaker than an unbounded invariant proof.
-Forbench's merged-state execution can cover all inputs within its selected
-cycle horizon while its testbench defines which observations cause forks
-@yang2026-forbench. Cross-level SystemC runs can completely explore small
-scenarios yet time out on larger modules @rudkowski2026crosslevel. The correct
-claim names the horizon and completion status.
+Completed path exploration can establish all modeled executions only within
+its initial-state, time, environment, supported-language, and solver contract.
+Timeouts, memory limits, solver limits, heuristic exhaustion, and targets never
+scheduled are incomplete outcomes even when no counterexample appears.
 
-Negative results require particular care. SEIF distinguishes globally
-contradictory graph segments, bounded failure to find a design path, semantic
-non-flow checks, and candidates left unaccounted @ryan2023seif. This explicit
-taxonomy should be standard. "No counterexample found" may mean UNSAT for a
-complete bounded query, search budget exhausted, abstraction inconclusive, or
-target never selected.
+SEIF is unusually explicit: a static candidate can be globally contradictory,
+fail only under a bounded search, be rejected by a semantic-flow check, yield a
+replayable path, or remain unaccounted @ryan2023seif. EISec's under-constrained
+initial netlist state broadens possible information flows but can admit states
+not reachable from reset @fowze2022eisec. Such partitions should replace the
+binary “found/not found” reporting common in testing papers.
 
-== Equivalence and cross-level contracts
+== Equivalence and coupled-model claims
 
-Equivalence-oriented work compares two representations or observations. The
-contract must specify inputs, state correspondence, timing alignment, and
-observable outputs. COVERIF makes paths across a hardware/software interaction
-the object @mukherjee2020coverif. Cross-level SystemC methods compare low-level
-peripheral behavior with a transaction-level reference
-@rudkowski2026crosslevel. These methods can expose interface defects that
-component-local checks miss, but a weak or mismatched reference can also hide
-them.
+Cross-level results need a relation between states, time, and observations.
+COVERIF makes a coupled hardware/software path the execution object
+@mukherjee2020coverif. The RISC-V study compares Verilated RTL with an ISS at
+retirement boundaries @bruns2023processor. Cross-level SystemC checking uses a
+transaction-level peripheral as an oracle for a lower-level implementation
+@rudkowski2026crosslevel. A mismatch is a useful witness; agreement is only as
+strong as the reference model, alignment, assumptions, and completed bounds.
 
-== A minimum reporting tuple
+The same qualification applies at the HLS edge. Hu's generated tests expose
+failures in the hardware-specific HLS source model, but without generated-RTL
+validation they do not establish the behavior of every synthesis result
+@hu2024tcp.
 
-We recommend that every result be readable as the following tuple:
+== Minimum reporting tuple
 
-$ (A, S, T, E, X, R, C) $
+Every reported result should be readable as
 
-where $A$ is the executed artifact and translation chain; $S$ the initial
-state/reset model; $T$ the clock, scheduling, and temporal bound; $E$ the
-environment/harness assumptions; $X$ the exactness, abstraction, and
-concretization policy; $R$ the returned evidence; and $C$ the completion
-status. A claim of "exhaustive" or "verified" is interpretable only when these
-fields are explicit.
+$ (A, S, T, E, X, R, C), $
+
+where $A$ is the executed artifact and translation chain; $S$ the reset or
+initial state; $T$ clock, scheduling, and temporal bound; $E$ the environment
+and harness; $X$ exactness, abstraction, concretization, and supported subset;
+$R$ the returned witness, coverage, or conclusion; and $C$ completion status.
+For a combinational design, temporal fields may be “not applicable”; they
+should not silently disappear. “Exhaustive,” “safe,” or “verified” is
+interpretable only with the complete tuple.

@@ -1,86 +1,70 @@
 = Executed artifacts and semantic bridges <sec-artifacts>
 
-== Direct RTL execution
+The executed artifact determines what a path means and which component must be
+trusted. Language labels alone are insufficient: a C++ program can be the
+operational representation of RTL, while another C++ program is merely source
+intended for synthesis.
 
-Direct RTL executors parse or elaborate Verilog/SystemVerilog and define
-symbolic rules for expressions, assignments, branching, clocks, and state
-updates. Their advantage is a short explanatory path from a reported source
-location to the design. Their burden is semantic completeness. Nonblocking
-assignments, multiple always blocks, event ordering, four-state values,
-memories, asynchronous controls, delays, and testbench constructs are not
-minor front-end details; each can change the concrete trace relation.
+== Direct HDL execution
 
-Sylvia's RTL semantics treats sequential blocks as units that can be explored
-separately before composition @ryan2023sylvia. SEIF uses the same direct style
-while connecting source lines and clock-separated assignments to a static
-information-flow graph @ryan2023seif. Directness does not eliminate modeling
-choices: synthesizable subsets, loop bounds, symbolic initial states, and
-unsupported scheduling constructs still delimit the result.
+Direct executors parse or elaborate an HDL and define steps for expressions,
+assignments, branches, state updates, and scheduling. Harrath et al. make the
+SystemC scheduler, runnable processes, signal updates, notifications, waits,
+and delta cycles part of symbolic transition construction @harrath2011wsa.
+SESC similarly extends KLEE with a SystemC scheduler, signals, FIFOs,
+arbitrary-width integers, and clocks @lin2016systemc. Direct RTL systems make
+source locations and path predicates easy to relate, but inherit a substantial
+conformance obligation: nonblocking assignment, event ordering, memories,
+four-state values, multiple clocks, and unsupported testbench constructs can
+all change the concrete trace relation.
 
-== Generated executable models
+== Generated executable representations
 
-Translation-based systems compile RTL into C or C++ and reuse a software
-symbolic executor. In SE4RDV, Verilator supplies cycle evaluation semantics,
-the harness selects symbolic ports and temporal depth, and KLEE explores the
-generated paths @zhang2016rtltests. The architecture is attractive because it
-inherits industrial-strength compilation and established symbolic-execution
-infrastructure. It also creates a three-part trusted chain:
+Translation-based systems reuse software symbolic executors. V2C lowers
+synthesizable Verilog to a word-level C transition program and then selects a
+path-symbolic-execution analyzer distinct from its BMC and abstract-
+interpretation configurations @mukherjee2015software. SE4RDV uses Verilator,
+an arbitrary-bit-width KLEE variant, and a harness whose `eval()` loop defines
+the cycle horizon @zhang2016rtltests. Their trusted chain is
 
-$ "hardware RTL" arrow "generated model" arrow "symbolic executor". $
+$ "design" arrow "generated program" arrow "symbolic executor". $
 
-The first arrow must preserve the relevant HDL behaviors; the second must model
-generated data widths, memory, external calls, and undefined behavior
-faithfully. Replaying a witness on the source RTL is valuable end-to-end
-validation, but replay establishes one trace, not translation equivalence for
-all explored states.
+Translation removes the need to reimplement all HDL scheduling, but does not
+remove semantics. Widths, undefined behavior, generated control flow, memory,
+clock sequencing, and harness assumptions must preserve the behavior relevant
+to the claim. Replaying a generated test on the source design validates that
+one witness; it is not a proof that all translated paths correspond.
 
-== SystemC and transaction-level models
+== SystemC/TLM and mixed levels
 
-SystemC spans synthesizable descriptions, timed processes, abstract
-peripherals, and transaction-level interfaces. A SystemC executor must model
-both C++ semantics and the simulation kernel's concurrency. Cross-level work
-makes the artifact relation explicit: a peripheral implementation and a
-transaction-level reference execute together, and discrepancies become
-solver-generated input traces.
+SystemC combines C++ with a simulation kernel, process scheduling, events, and
+time. A method that merely compiles a SystemC-looking function is therefore
+not equivalent to a SystemC executor. Cross-level peripheral checking makes
+the issue explicit: one symbolic run may combine a low-level implementation
+with a transaction-level reference, and the solver observes their disagreement
+@rudkowski2026crosslevel. Unsupported asynchronous waits or context-switch
+approximations limit the explored behaviors.
 
-The broad comparison by Rudkowski et al. separates two architectures. A
-standalone method symbolically executes a low-level SystemC model and checks
-its behavior through a harness; a cross-level method coordinates low- and
-high-level models and compares their observations @rudkowski2026crosslevel.
-The study shows both the appeal and cost of this scope: array models, thread
-scheduling, loops, asynchronous waits, simulation bounds, and solver timeouts
-all affect which paths complete. Cross-level execution strengthens the oracle
-but expands the symbolic state.
+Other mixed-level systems couple different semantic objects. COVERIF explores
+hardware/software interaction paths @mukherjee2020coverif. The RISC-V case
+study co-executes Verilated processor RTL and an instruction-set simulator,
+comparing them at retired-instruction boundaries @bruns2023processor. Such
+oracles can expose interface or implementation discrepancies, but agreement is
+only relative to input restrictions, timing alignment, observation points, and
+the reference model.
 
-== HLS and design-level C/C++
+== Netlists and HLS
 
-HLS introduces two distinct objects that papers can conflate. One is a C/C++
-program intended for synthesis; the other is the generated RTL. A symbolic
-execution system may search the source for a security trigger, exercise the
-generated circuit, or relate both. It is in this survey only when the claim is
-about the hardware design or the source-to-hardware relation, not merely a C
-program that happens to be synthesizable.
+EISec translates a sequential gate-level netlist into a C representation for
+KLEE, making state initialization and netlist-to-C fidelity central to its
+information-flow results @fowze2022eisec. Its under-constrained state model can
+surface possible flows that are not reset-reachable; that is useful exploration
+but a weaker deployment claim.
 
-GreyConE exemplifies a SystemC high-level-design hybrid: greybox fuzzing
-explores cheaply, concolic execution solves branch constraints that fuzzing
-fails to cross, and generated tests are evaluated on compiled SystemC models
-@debnath2022greycone. FuSS applies a related selective architecture to
-Verilator-generated RTL models while localizing symbolic execution to
-hard-to-cover logic @jayasena2025fuss. HLS remains inside the map boundary,
-but its small mapping-depth subset has no critical deep read; HLS-specific
-conclusions are therefore provisional.
-
-== Mixed-level systems
-
-Hardware/software co-verification and peripheral checking may execute several
-models at once. COVERIF, for example, uses path-based symbolic execution to
-coordinate a hardware/software setting and to expose interaction behaviors
-that isolated component checks can miss @mukherjee2020coverif. The inclusion
-test is whether hardware state is symbolic and behaviorally coupled, not
-whether the paper contains a processor diagram.
-
-Mixed-level systems make the environment part of the theorem. Bus protocols,
-driver assumptions, transaction abstractions, reset sequences, and scheduling
-policies determine feasibility. Their witnesses can be especially useful
-because they cross an interface, but negative results are meaningful only
-relative to that interface model.
+The single included HLS study is deliberately qualified. Hu extends KLEE for
+Vitis `ap_uint`, `hls::stream`, concurrent stream behavior, and clock-linked
+state in a hardware TCP stack @hu2024tcp. Hardware semantics are therefore
+load-bearing, so the thesis passes the boundary. It does not validate the
+generated RTL, so its tests and bugs establish properties of the HLS source
+model, not automatically the synthesized circuit. Intended synthesis alone
+would not have been enough for inclusion.
