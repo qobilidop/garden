@@ -5,7 +5,9 @@ constraints that describe sets of concrete behaviors. The shelf, by role:
 [[baldoni2016-symbolic]] (field architecture
 and taxonomy), [[sen2015-multise]] (incremental path merging through guarded
 value summaries), and [[yang2026-forbench]] (hardware symbolic simulation
-that forks on testbench decisions rather than design branches), with
+that forks on testbench decisions rather than design branches),
+[[jayasena2025-fuss]] (RTL fuzzing that purchases short symbolic suffixes from
+concrete frontier states), with
 [[jayasena2023-directed]] as the adjacent hardware-validation map that places
 symbolic and concolic systems among other directed-test generators, and
 [[kong2026-nextmap]] as the negative boundary case: symbolic retention of
@@ -30,6 +32,13 @@ makes the dual move for RTL: design branches remain inside symbolic
 expressions, while concrete control forks only when a testbench condition can
 go both ways. MultiSE merges after branching; Forbench avoids many branches
 in the first place.
+
+[[jayasena2025-fuss]] chooses a third placement rather than another symbolic
+representation. Most alternatives remain concrete programs in a fuzzing
+corpus. Symbolic path constraints appear only after coverage plateaus, start
+from a fuzzer-reached simulator snapshot, and span a nearby CFG frontier. This
+does not compress or exhaust the omitted paths; it uses empirical coverage to
+decide when a small symbolic search is worth buying.
 
 Neither representation removes the exponential boundary. MultiSE operations
 can take the product of operand-summary sizes; Forbench expressions can grow
@@ -82,6 +91,15 @@ runtime rather than end-to-end bug yield. Forbench explores all input values
 admitted by a testbench up to a chosen cycle bound, while branching only at
 the decisions that testbench exposes. Each result is exhaustive only relative
 to its harness, theory, approximation policy, and resource bound.
+
+FuSS sharpens the difference between a coverage witness and a proof. Its
+Verilog design and testbench pass through Verilator and VEX; a concrete
+snapshot supplies the symbolic start state, and a generated suffix is replayed
+to measure branch or toggle coverage. Successful replay witnesses activation,
+but uncovered logic does not become unreachable. The reported gains across
+four RISC-V SoCs are evidence for this hybrid schedule, while the claimed
+always-faster result remains conditional on an empirically assumed success-
+probability ordering and omits symbolic-solving cost.
 
 This makes harness design part of the verification claim rather than setup
 boilerplate. A representation can compress the behaviors it is asked to
@@ -156,7 +174,8 @@ whose equivalence to an algorithmic model is the property under test.
 ## What the shelf needs next
 
 The software field survey supplies a durable taxonomy, and the hardware
-directed-testing survey supplies a broad adjacent map, but neither provides a
+directed-testing survey supplies a broad adjacent map. FuSS adds a substantial
+four-SoC experiment for one hybrid point, but the shelf still lacks a
 controlled quantitative comparison. Jayasena and Mishra's final 1–5 plot for
 coverage, scalability, effort, and guarantee is an expert synthesis without a
 reported scoring protocol, not a meta-analysis. The missing bridge is a
