@@ -9,13 +9,12 @@ representation with symbolic hardware values, constructs predicates for
 control- or time-indexed paths, uses feasibility to choose or reconstruct
 execution, and makes that mechanism load-bearing in its result.
 
-The bounded corpus, with standing searches through 11 August and critical
-citation chases through 12 August 2026, contains 31 works: 14 classical, 11
-concolic, and 6 selective-hybrid. Symbolic simulation, STE, BMC, trace-only
-search, and generic synthesizable-source analysis are treated as adjacent but
-not counted. The survey explains hardware path semantics, semantic bridges,
-scaling mechanisms, evidence strength, and the contract needed to interpret a
-test, exploit, coverage result, mismatch, or bounded conclusion.
+The map distinguishes classical, concolic, and selective-hybrid execution.
+Symbolic simulation, STE, BMC, trace-only search, and generic
+synthesizable-source analysis are treated as adjacent rather than silently
+folded into the topic. The survey explains hardware path semantics, semantic
+bridges, scaling mechanisms, evidence strength, and the contract needed to
+interpret a test, exploit, coverage result, mismatch, or bounded conclusion.
 
 ## Links
 
@@ -25,9 +24,8 @@ test, exploit, coverage result, mismatch, or bounded conclusion.
 
 ## Reading list
 
-These 17 works anchor the mechanism and evidence synthesis. The complete
-31-work include-level map and every exclusion decision are in the survey
-record.
+The works below anchor the mechanism and evidence synthesis. The complete map
+and every exclusion decision are in the survey record.
 
 ### Foundations and classical execution
 
