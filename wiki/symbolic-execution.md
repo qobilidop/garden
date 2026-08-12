@@ -10,7 +10,12 @@ that forks on testbench decisions rather than design branches), with
 symbolic and concolic systems among other directed-test generators, and
 [[kong2026-nextmap]] as the negative boundary case: symbolic retention of
 equivalent hardware implementations without symbolic execution of their
-behaviors.
+behaviors. Practitioner accounts mark the larger formal-methods neighborhood:
+[[wayne2019-formal-methods]] (adoption and artifact types),
+[[verbeure2019-under-hood]] (RTL cover traces and assertion automata),
+[[gisselquist2024-verification]] (a complementary verification portfolio), and
+[[shaughnessy2023-cryptol-saw]] (specification-to-IR equivalence across
+software and hardware).
 
 ## Path explosion moves between representations
 
@@ -108,6 +113,45 @@ behavior, not paths induced by symbolic inputs or testbench decisions. The
 contrast with [[yang2026-forbench]] is structural: both delay commitment by
 sharing alternatives, but only Forbench executes a transition system and
 characterizes behaviors under a harness and cycle bound.
+
+## The practitioner boundary is broader than symbolic execution
+
+The adjacent accounts explain why deployed work is often described as
+*formal verification* rather than by one engine mechanism.
+[[wayne2019-formal-methods]] separates code proof from design verification
+and model checking, then locates different adoption barriers in proof cost,
+specification validity, changing requirements, and the weak coupling between a
+design model and executable code. The lesson for taxonomy is economic as well
+as semantic: types, contracts, theorem proving, model checking, symbolic
+execution, and disciplined testing can target related failures without being
+interchangeable methods.
+
+The hardware accounts make that composition concrete.
+[[verbeure2019-under-hood]] uses a `cover` goal as an implicit directed-test
+generator: the solver finds bus stimulus and an unexpected legal ordering,
+exposing a missing assumption. Rich temporal assertions compile into
+nondeterministic automata and then deterministic RTL state, so parallel
+sequence matching can create exponential growth before a solver sees the
+problem. That is symbolically generated behavior at the user interface, but an
+implementation may be more precisely classified as assertion compilation plus
+bounded or inductive checking.
+
+[[gisselquist2024-verification]] shows why the distinction matters in a real
+workflow. Formal contracts, cover, induction, parameter sweeps, mutation
+coverage, signal/code coverage, self-checking simulation, and generated
+interconnects each detect a different blind spot. Component proof scales by
+narrowing scope and therefore leaves integration and driver behavior for other
+harnesses. A survey centered on symbolic execution should record these
+complements because an engine's reported bug yield depends on which failures
+the surrounding portfolio delegates to it.
+
+[[shaughnessy2023-cryptol-saw]] starts at a different abstraction level:
+Cryptol states algorithmic meaning, while SAW lifts LLVM, JVM, machine-code,
+or HDL representations and compares them through common IR and SAT/SMT
+obligations. It may use symbolic reasoning internally, but its survey-relevant
+identity is the specification–implementation bridge. This broadens "hardware"
+beyond executing RTL paths: an HDL artifact can be one compilation target
+whose equivalence to an algorithmic model is the property under test.
 
 ## What the shelf needs next
 
