@@ -169,16 +169,18 @@ is stored here.
   local blob, and remote-derived manifest entry and byte size without printing
   the library inventory. `sources.html` always promises a direct, non-empty
   snapshot; use `sources.record` for an uncaptured publisher/DOI landing page.
-- The transcript is mechanical output and may contain extraction whitespace.
-  Preserve it byte-for-byte. At commit time, stage only the intended shadow
-  paths first. Then, with the command's working directory set to the absolute
-  shadow-repo path, run:
+- Transcripts and raw HTML snapshots are mechanical output and may contain
+  source whitespace. Preserve them byte-for-byte. At commit time, stage only
+  the intended shadow paths first. Then, with the command's working directory
+  set to the absolute shadow-repo path, run:
 
   ```console
-  git diff --cached --check -- . ':(exclude,glob)library/papers/**/transcript.md'
+  git diff --cached --check -- . \
+    ':(exclude,glob)library/papers/**/transcript.md' \
+    ':(exclude,glob)library/papers/**/*-snapshot.html'
   ```
 
-  Let `check-ingest` verify the transcript tier. Never print its full diff
+  Let `check-ingest` verify the mechanical tiers. Never print their full diff
   merely to review whitespace diagnostics.
 - Run `npm --prefix site run build` on the host to close source-schema,
   wikilink, and rendering checks. Then propose the two commits (sys: notes;

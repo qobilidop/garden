@@ -44,7 +44,10 @@ concise canonical URL slug second. Posts often take the URL-slug branch
 - **Figures → store** (only when load-bearing — content diagrams, not
   site chrome or related-post cards):
   `shadow/store/library/posts/<year>/<citekey>/figures/`. View them; the
-  synthesis should reflect what they show.
+  synthesis should reflect what they show. When the image viewer cannot render
+  an SVG directly, make a temporary raster preview with an available renderer,
+  inspect that preview, and store the original SVG. The preview is review
+  material, not a preservation artifact; discard it after selection.
 - **Paywalled source**: the free preview is the record — capture it,
   state the paywall in a frontmatter comment, scope the notes to it, and
   name re-capture through the user's browser session as the upgrade
