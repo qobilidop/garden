@@ -10,6 +10,8 @@ Systems that modify themselves from their own experience. Shelf:
 [[favaro2026-ai-builds-itself]] (frontier-lab evidence of R&D
 automation),
 [[osmani2026-loop-engineering]] (the loop layer from the product side),
+[[willison2025-lethal-trifecta]] (capability composition as a security
+boundary),
 [[vincent2026-therapist]] and [[vincent2026-superpowers-6]]
 (field reports), [[karpathy2026-llm-wiki]] (the pattern applied to
 knowledge rather than procedures).
@@ -43,6 +45,13 @@ one loop shape:
   of coding-agent products finds the maker/checker split built into
   both major tools, down to run-until-done stop conditions graded by a
   model other than the one doing the work.
+- **Authority is partitioned across the whole path.**
+  [[willison2025-lethal-trifecta]] identifies the dangerous composition:
+  private-data access + attacker-controlled content + an externally visible
+  communication channel. A model-level checker does not break that path if it
+  shares the same secrets and output authority. After untrusted content enters
+  a trajectory, consequential reads, writes, and communication need structural
+  separation or an independently authorized gate.
 - **Receipts.** A claimed lesson counts only as a diff in a versioned,
   inspectable surface through the designated writer
   ([[vincent2026-therapist]]); audit records name behavior,
@@ -85,6 +94,12 @@ does the loop close.
 - **The evaluator is code too.** Superpowers' Codex evals showed zero
   improvement because an isolation bug benchmarked the old version —
   an unverified gate passes everything.
+- **Useful tools are also information-flow edges.** File access, retrieval,
+  email, browsers, and network calls improve a harness while potentially
+  completing the lethal trifecta. Threat review therefore follows an
+  attacker-controlled input to sensitive sources and observable sinks; it
+  cannot stop at approving each tool independently
+  ([[willison2025-lethal-trifecta]]).
 
 ## Autonomy is a ladder
 
