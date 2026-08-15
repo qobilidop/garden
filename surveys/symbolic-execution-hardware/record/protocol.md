@@ -201,15 +201,6 @@ rewrite the abstract-level map.
   until the primary text is available. This asymmetric evidence rule prevents
   a paper's use of the phrase “symbolic execution” from substituting for a
   mechanism audit.
-- Existing canonical evidence notes in `library/` or another survey may serve
-  as linked background through the optional `canonical-note` frontmatter
-  field. This survey still keeps a local source note that answers its own RQs,
-  boundary, taxonomy, and evidence-limit questions; general-note prose is not
-  copied wholesale.
-- The systematic map may publish a dated bounded snapshot without claiming
-  bounded mapping closure. Closure, if reached, uses the stronger shared skill
-  criteria and is stated relative to the exact sources, queries, depths, and
-  date.
 - Historical `notes-by` values from the initial campaign name `Codex` without
   a recoverable exact model. Preserve them as legacy provenance; material
   revisions append the revising model under the current shared contract.
@@ -218,10 +209,7 @@ rewrite the abstract-level map.
 
 ## Publication qualifications
 
-Counts derive only from `catalog.tsv`. Technical claims derive from full-text
-evidence notes with pinpoint anchors. Abstract-only records support scope,
-terminology, and chronology only. Claims about exhaustiveness always name the
-cycle bound, initial state, harness, solver theory, and approximation policy
-when those conditions matter. Comparisons between path count and symbolic
-expression size do not treat either as an end-to-end cost measure without
-solver and construction evidence.
+Hardware claims about exhaustiveness name the cycle bound, initial state,
+harness, solver theory, and approximation policy when those conditions matter.
+Comparisons between path count and symbolic expression size do not treat either
+as an end-to-end cost measure without solver and construction evidence.

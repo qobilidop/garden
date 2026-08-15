@@ -7,6 +7,10 @@ build or render misbehaves.
 - A `;` directly after `#cite(...)` is parsed away — use `#[;]`.
 - `fr` table columns collapse inside figures — use explicit widths
   for wrapping columns.
+- Put header rows in `table.header(...)`: the HTML exporter then emits
+  semantic `<th>` cells. For a page-spanning table, keep the table out of a
+  figure or other wrapper that defeats pagination, set `repeat: true`, and
+  visually confirm the repeated header on the first continuation page.
 - `#cite(form: "prose")` under numeric CSL styles expands full
   author lists — hand-write "Author et al. @key" there, and grep for
   that residue when switching styles back.

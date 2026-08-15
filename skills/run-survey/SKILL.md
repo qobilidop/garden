@@ -20,7 +20,12 @@ and log material method changes in plain language in the record's
 durable harness lesson. This method was reshaped from the
 agent-assisted-evidence-synthesis campaign and its review rounds,
 then united with the dataflow-selection-enumeration living-survey
-method; those two records are the reference implementations.
+method; those two records are the reference implementations. Before a
+structural revision, compare the target survey with both references
+file-by-file—inventory, canonical owner for each fact, schema, manuscript
+order, and closeout commands. Preserve the convention or codify and validate
+the deliberate replacement here before migrating the survey; this prevents a
+locally convenient repair from silently becoming a third record shape.
 
 ## 1. Shape
 
@@ -116,30 +121,16 @@ surfaces.
   registrar metadata and authorship, never title similarity alone;
   retain superseded identifiers under the superseded-version code and
   formally retracted works under the retraction code.
-- Log invariants: append-only — a disposition change is a new
-  `audit` row plus a catalog update, never a rewrite; every published
-  number derives from the audited kinds. The audit row names the keys
-  it moves so the engine can reconcile a wave's historical decision
-  with current state: `promoted-key:`/`superseded-key:` for a version
-  replacement, `reclassified-key:` when later evidence (a deep read,
-  a re-screen) overturns what an earlier wave decided. A search or
-  snowball row keeps the decision it recorded at the time; only the
-  audit row carries the correction. Two further `notes` markers are
-  engine- or convention-level and belong in the same grammar: a
-  snowball row names its seed as `seed-key:<catalog-key>` (the engine
-  requires it on any backward row marked defective, and uses it to
-  bind chases to their critical work), and any row may list
-  undecided rows as `parked-keys:<key>,<key>`. Semicolons separate
-  markers; commas separate keys within one. If a historical event compacted
-  away raw positions, a corrective audit uses
-  `partition-for:<event>; screened-keys:<key>,...`; repeated canonical keys
-  are retained when multiple raw positions collapsed to one work, and
-  `coverage-incomplete` marks an unrecoverable remainder. Large corrective
-  re-screens stay in ordinary batched audit rows, using the normal decision
-  columns plus `decision-partition`; do not introduce another survey ledger
-  merely to hold the same key/status facts. Result sets are staged in scratch during
-  screening and discarded after reconciliation — the log row (date,
-  verbatim query, counts, decided keys, notes) is the audit unit;
+- Log invariants: append-only — a disposition change is a new key-bearing
+  `audit` row plus a catalog update, never a rewrite; every published number
+  derives from the audited kinds. Historical decisions remain checkpoint
+  facts, while a later `reclassified-key` owns the new state. Before writing or
+  validating a log row, read `references/log-grammar.md`; it owns every marker,
+  composite event selector, external-delegation rule, and the CSV-aware TSV
+  parsing convention. Large corrective screens remain ordinary batched audit
+  rows, not a second ledger. Result sets are staged in scratch during screening
+  and discarded after reconciliation — the log row (date, verbatim query,
+  counts, decided keys, notes) is the audit unit;
   the bar is traceability, and result sets are re-derivable by
   rerunning the logged query. (This consciously deviates from
   Kitchenham's save-unfiltered-results-for-reanalysis practice —
@@ -152,6 +143,10 @@ surfaces.
   support scope and chronology statements only; theorem, algorithm,
   and guarantee claims require a deep-read note with pinpoint
   anchors.
+- A mapping-depth include may support membership, chronology, and coded facets
+  without a full note; section-scoped citation exemptions enforce that
+  altitude. Mechanism, comparison, and performance prose still requires a
+  local deep-read note and evidence binding.
 - Declare a bounded `critical` set — the closest-work candidates.
   Every critical work is deep-read and gets separate backward and
   forward citation chases immediately; forward neighborhoods are
@@ -177,7 +172,6 @@ surfaces.
   rationale column, not discarded. Exclusion codes are
   survey-declared in the protocol and validator-enforced, slugged to
   be self-documenting (dse's `E6-out-of-scope-model` form is the
-  reference); every vocabulary includes
   superseded-version and formal-retraction codes; undecidable
   candidates take the `parked` status instead of a code, re-screened
   each update; the load-bearing code gets boundary examples. No
@@ -249,14 +243,17 @@ surfaces.
   every technical manuscript citation is registered at its section
   label; an optional GRADE-inspired **Certainty** grade
   (`high`/`moderate`/`low`) rides the record, graded against the
-  source notes' read depth and evidence limits. A survey whose
-  manuscript asserts nothing beyond catalog-derived counts may omit
-  it, like `check.py`. A new or materially revised survey keeps a local,
+  source notes' read depth and evidence limits. A survey whose manuscript
+  asserts nothing beyond catalog-derived counts may omit both ledgers only
+  when its checker declares `claims_evidence_required: false`. A new or materially revised survey keeps a local,
   survey-specific note even when a cited work already has a canonical library
   or survey note elsewhere in the repository: the local note answers this
   survey's RQs, boundary, taxonomy, claims, and evidence limits, and may link
   the shared understanding through the optional `canonical-note` frontmatter
-  field. Do not copy the general note wholesale. Legacy surveys may retain an
+  field. The validator proves that link with a shared DOI/arXiv identity when
+  available, falling back to matching normalized title and author only when
+  registrar ids are absent; citekey equality alone is not identity. Do not copy
+  the general note wholesale. Legacy surveys may retain an
   explicit external citation-closure exemption until that survey is next
   materially revised. The genre
   rule: token-celled ledgers are TSV (catalog, log, queries); prose-celled
@@ -350,6 +347,9 @@ over the whole survey directory and iterate to closure:
 - *Resumability stress-test* — execute the record README as a
   stranger with only the survey directory; every ambiguity is a
   finding.
+- *Convention auditor* — compare every file's role, schema, and manuscript
+  placement with both reference implementations; a divergence needs an
+  explicit local reason or a same-change update to this skill and its checks.
 - *Link checker* — repo URLs mapped to local files, external
   identifiers resolved, bib ↔ citations ↔ notes closed.
 
@@ -369,6 +369,10 @@ verdict; reviewers close against those generated artifacts as well as the
 source. Visually inspect every PDF page affected by the delta and inspect the
 corresponding HTML structure, because valid Typst source can still become a
 list, empty emphasis node, stale citation, or other export-only regression.
+For every table changed by the delta, also confirm that a page-spanning PDF
+repeats its header and that the HTML header cells are semantic `<th>` elements;
+bold cells alone do not satisfy either gate. The concrete Typst patterns live
+in `references/typst.md`.
 A source-only FIXED verdict remains provisional until this rebuild-and-render
 pass succeeds.
 
@@ -422,8 +426,9 @@ pass succeeds.
   deferred work under `## Deferred to the next update` — the
   survey's todo lives here, not in a separate file),
   `catalog.tsv` and `log.tsv` per the §1 grammar, `sources/`,
-  `syntheses/`, `claims.md` with `evidence.md` binding claims and
-  manuscript sections to source anchors, and, when the manuscript
+  `syntheses/`, and normally `claims.md` with `evidence.md` binding claims and
+  manuscript sections to source anchors (both may be absent only under the
+  count-only exception in §3), and, when the manuscript
   publishes quantities derived from the catalog, a thin
   `record/check.py` that declares the survey's vocabularies (columns,
   statuses, codes, facets, strictness flags) and runs the shared

@@ -17,9 +17,7 @@ From the repository root:
 
 The first command reports the standing-query state. The second validates the
 catalog, log, queries, source notes, claim/evidence bindings, bibliography, and
-manuscript citations, then prints the counts copied into `status.md`. The TSVs
-use RFC 4180 quoting; inspect them with a CSV-aware tool rather than bare `awk`
-or `cut`.
+manuscript citations, then prints the counts copied into `status.md`.
 
 ## Record map
 
@@ -62,7 +60,7 @@ item-level human screening.
 | 2026-08-10 | 1,626 | 87 | 11 | 1,501 | 38 | Pre-authorized 2026-08-10: title, scope, autonomous campaign, commit, and push; no item-level review |
 | 2026-08-11 | 1,709 | 31 | 17 | 1,621 | 57 | Pre-authorized scope revision and autonomous completion; no item-level human screening |
 | 2026-08-12 | 1,870 | 31 | 17 | 1,780 | 59 | Same pre-authorization; attempted both citation directions for newly promoted critical works |
-| 2026-08-12 | 1,916 | 31 | 17 | 1,826 | 59 | User-authorized adversarial review and refinement, commit, and push; no item-level human screening |
+| 2026-08-12 | 1,917 | 31 | 17 | 1,827 | 59 | User-authorized adversarial review and refinement, commit, and push; no item-level human screening |
 
 ## Linked canonical notes
 

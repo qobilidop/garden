@@ -19,8 +19,8 @@ relevant publication has been found.
 == Discovery and update
 
 No domain-specific historical cutoff was imposed. APIs were queried from 1900,
-before the relevant digital-hardware literature. Seventeen broad active
-queries were reconciled through 10 August 2026; four added strict-boundary
+before the relevant digital-hardware literature. 17 broad active
+queries were reconciled through 10 August 2026; 4 added strict-boundary
 queries were reconciled on 11 August; a fifth strict Semantic Scholar query
 failed that day and remains unreconciled. Critical-work citation chases were
 run on 12 August, with defective directions disclosed below. OpenAlex,
@@ -39,9 +39,9 @@ records, and 2 directly inspected primary additions, yielding a baseline of
 1,626. After the scope was narrowed, the revision attempted 5 boundary-focused queries:
 4 returned result sets, and 1 failed with HTTP 429. The four successful
 exports and two primary-version additions contributed 83 new catalog records
-after five source aliases were collapsed.
+after source aliases were collapsed.
 
-The stricter classification also promoted nine works into the critical set.
+The stricter classification also promoted a new set of works to critical.
 Both citation directions were attempted for each. Index and primary-paper
 chases added 161 records after overlap reconciliation. An adversarial audit
 found that their initial exclusion partition had been produced by title rules;
@@ -58,23 +58,25 @@ chase-only work changed the strict include set. Forward discovery for
 AutoVeriFix+ and the HLS thesis remains incomplete: the index returned no
 usable forward records, and no zero-result event is treated as evidence of
 coverage. Two older provenance claims were also narrowed. Carter's backward
-event resolves eight of ten claimed records, and the legacy Sylvia event's
-fifty-screen assertion lacks a fifty-key partition; neither is now called
+event resolves only part of its claimed record set, and the legacy Sylvia
+event's screened total lacks a complete key partition; neither is now called
 complete.
 The failed Semantic Scholar query remains registered and unreconciled rather
 than being treated as an empty result.
-Finally, two methodology works cited to document mapping and snowballing were
+Finally, 2 methodology works cited to document mapping and snowballing were
 added as excluded secondary context when their local survey notes were made
-self-contained. The baseline and all four addition batches therefore sum to
-the 1,916-record catalog.
+self-contained. Binding the Sylvia external decision home at key level also
+added 1 previously absent boundary comparator from that delegated bibliography.
+The baseline and all 5 addition batches therefore sum to the 1,917-record
+catalog.
 
 == Selection and coding
 
 The broad baseline was screened in two blinded title/abstract passes with
 item-specific reasons, followed by adjudication of every decision or code
-disagreement. The strict revision then re-adjudicated all 87 previous includes,
-all 38 previous parked records, and 86 strict-query candidates, five of which
-were aliases of existing records. A positive
+disagreement. The strict revision then re-adjudicated every previous include,
+every previous parked record, and every strict-query candidate; aliases were
+reconciled to existing records. A positive
 decision required primary full text supporting every part of the five-part
 operational test. A clear primary abstract could support exclusion; an
 otherwise plausible record without decisive full text was parked. Duplicate
@@ -111,17 +113,17 @@ algorithm and performance claims do not rest on them.
 
 == Bounded map result
 
-The catalog contains 1,916 records. Of these, 31 are include-level publication records: 17
+The catalog contains 1,917 records. Of these, 31 are include-level publication records: 17
 were deep-read and 14 were retained at mapping depth. A further 59 are parked,
-while 1,826 are excluded with a declared reason. The 31 include preprints and
+while 1,827 are excluded with a declared reason. The 31 include preprints and
 were agent-adjudicated without item-level human screening. They are publication
 records, not independent tool implementations, a population estimate, or a
 mapping-closure claim.
 
 Under the classification rule, the execution map contains 14 classical, 15
 concolic, and 2 selective-hybrid works. By design target, 20 claim about RTL, 4
-about SystemC/TLM, and 4 about coupled mixed-level models. The remaining 3 are
-one each for another HDL, an HLS source, and a gate netlist. Operational
+about SystemC/TLM, and 4 about coupled mixed-level models. The remaining
+targets comprise 1 other-HDL work, 1 HLS-source work, and 1 gate-netlist work. Operational
 artifacts such as generated C/C++ and lifted IR are analyzed separately because
 they do not disappear behind the target label.
 

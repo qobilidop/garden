@@ -17,9 +17,7 @@ From the repository root:
 
 The first command reports the registered-query state; the second validates the
 catalog, log, queries, source notes, claim/evidence bindings, bibliography, and
-manuscript citations, then prints the counts copied into `status.md`. The TSVs
-use RFC 4180 quoting, so inspect them with a CSV-aware tool rather than bare
-`awk` or `cut`.
+manuscript citations, then prints the counts copied into `status.md`.
 
 ## Record map
 

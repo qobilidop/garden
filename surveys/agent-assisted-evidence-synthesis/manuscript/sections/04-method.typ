@@ -76,7 +76,10 @@ retrieval completeness.
     #table(
       columns: (auto, auto, auto),
       align: (left, right, right),
-      table.header([Update and current ledger], [In], [Out]),
+      table.header(
+        repeat: true,
+        [Update and current ledger], [In], [Out],
+      ),
       [Search (17-query set; 16 succeeded)], [—], [517 rows],
       [Critical-set chases (24 + 3 primary)], [12 seeds], [1,191 rows],
       [Vocabulary pre-screen (chase rows)], [1,191], [595 retained],

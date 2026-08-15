@@ -24,14 +24,14 @@
   representation, carries symbolic hardware values, constructs predicates for
   alternatives distinguished by that representation, uses feasibility to
   choose or reconstruct execution, and makes that mechanism load-bearing in
-  its result. Seventeen broad searches through 10 August, four strict-boundary
+  its result. 17 broad searches through 10 August, 4 strict-boundary
   searches through 11 August, and critical citation chases through 12 August
   2026 yield 31 full-text-qualified publication records, including preprints,
-  after agent adjudication with no item-level human screening; one strict query
+  after agent adjudication with no item-level human screening; 1 strict query
   failed and the map makes no closure or population claim. Under an explicit
   reproducible classification rule, 14 are classical, 15 concolic, and 2 selective-hybrid.
   RTL is the design target for 20; SystemC/TLM, mixed-level, netlist, another
-  HDL, and one hardware-specific HLS study form the remainder. Operational
+  HDL, and 1 hardware-specific HLS study form the remainder. Operational
   artifacts and their semantic bridges are analyzed separately. Symbolic simulation, STE,
   BMC, and trace-only search are treated as adjacent, not counted. The corpus
   shows that hardware path execution is defined as much by clocking and process

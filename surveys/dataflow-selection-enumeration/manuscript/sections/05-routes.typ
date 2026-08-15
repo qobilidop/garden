@@ -13,7 +13,7 @@ taxonomy.
   block(breakable: false)[
     #text(size: 8.2pt)[
       #table(
-      columns: (1.05fr, 1.15fr, 1.2fr, 1.25fr, 1.4fr),
+      columns: (17%, 19%, 20%, 21%, 23%),
       align: left,
       inset: 3.5pt,
       stroke: (x: none, y: 0.4pt + luma(200)),

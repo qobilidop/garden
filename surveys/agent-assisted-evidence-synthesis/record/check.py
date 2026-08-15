@@ -72,6 +72,7 @@ CONFIG = {
         "kitchenham2007", "petersen2008", "wohlin2014", "page2021",
     },
     "rq_manuscript_file": "manuscript/sections/01-introduction.typ",
+    "required_audit_ids": ["published-preprint-marker-repair"],
     "extra_reports": [stage_cross_table],
     # Patterns match only current-state assertions; the campaign's own
     # historical figures (646 included works, 1,292 rows) are stated on

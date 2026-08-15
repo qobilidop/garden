@@ -26,7 +26,7 @@ outer and inner sites. @tab-motivating lists the three observations.
 #figure(
   block(breakable: false)[
     #table(
-    columns: (1.8fr, 1.1fr, 0.8fr),
+    columns: (49%, 30%, 21%),
     align: (left, left, left),
     inset: 5pt,
     stroke: (x: none, y: 0.45pt + luma(200)),

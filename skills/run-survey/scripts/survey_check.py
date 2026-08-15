@@ -56,13 +56,19 @@ Config keys (all paths resolved against ``record_dir``):
   ``partition-for`` audit row.
 - ``audit_partition_groups``: optional conventional audit-batch contracts,
   each with ``prefix``, ``rows``, ``total``, and optional
-  ``subset_of_prefix``, ``equals_event_ids``, ``status_counts``,
+  ``subset_of_prefix``, ``equals_events``, ``status_counts``,
   ``rationale_unique``, ``rationale_forbid_fragments``,
   ``require_reclassified_markers``, or ``classifier_transition_counts``.
+- ``audit_transition_contracts``: optional one-row transition checks with an
+  audit ``id``, transition ``pattern``, exact ``keys``, ``old`` triple, and
+  ``new`` triple. Triples are status/code/priority at that audit checkpoint.
 - ``required_audit_ids``: optional audit identifiers that must exist.
 - ``funnel_audit_ids``: optional report-key -> audit-id map for the baseline
   discovery funnel. The engine adds every ``catalog-additions:N`` audit and
   requires the sum to equal the catalog denominator.
+- ``claims_evidence_required``: whether ``claims.md`` and ``evidence.md`` are
+  required (default true). Set false only for a survey whose manuscript makes
+  no synthesis claim beyond mechanically derived catalog quantities.
 - ``query_checkpoint_fields``: optional map whose values are status field
   labels (for example broad/strict search dates); active-query reconciliation
   dates must equal those checkpoints. ``expected_unreconciled_queries`` names
@@ -113,6 +119,13 @@ BACKWARD_DEFECT_MARKERS = (
     "unresolved", "index omits", "exposes no references", "wrong-version",
     "primary list is longer", "incomplete bibliography", "truncated bibliography",
 )
+MARKER_LABELS = {
+    "catalog-additions", "external-decision-home", "overlap-keys",
+    "parked-keys", "partition-for", "promoted-key", "reclassified-key",
+    "repairs-marker-grammar", "screened-keys", "seed-key",
+    "superseded-key", "supersedes-partition",
+}
+DISPOSITION_MARKERS = ("promoted-key", "superseded-key", "reclassified-key")
 
 
 def read_tsv(path, expected, errors):
@@ -157,14 +170,96 @@ def research_questions(text):
 
 
 def seed_key(notes):
-    match = re.search(r"(?:^|; )seed-key:(\S+?)(?:;|$)", notes)
-    return match.group(1) if match else None
+    values = marker_values(notes, "seed-key")
+    return values[0] if len(values) == 1 else None
+
+
+def marker_values(notes, label):
+    """Return values from every correctly delimited marker of one label."""
+    return [
+        match.group(1).strip()
+        for match in re.finditer(
+            rf"(?:^|(?<=; )){re.escape(label)}:([^;]+)", notes
+        )
+    ]
 
 
 def marker_keys(notes, label):
-    """Return comma-separated keys carried by one semicolon-delimited marker."""
-    match = re.search(rf"(?:^|; ){re.escape(label)}:([^;]+)(?:;|$)", notes)
-    return [] if match is None else cell_keys(match.group(1))
+    """Return comma-separated keys carried by semicolon-delimited markers."""
+    return [key for value in marker_values(notes, label) for key in cell_keys(value)]
+
+
+def malformed_marker_labels(notes):
+    """Return engine-owned markers that do not begin at a valid boundary."""
+    malformed = []
+    labels = "|".join(re.escape(label) for label in sorted(MARKER_LABELS))
+    for match in re.finditer(rf"(?:{labels}):", notes):
+        if match.start() != 0 and notes[match.start() - 2:match.start()] != "; ":
+            malformed.append(match.group(0)[:-1])
+    return malformed
+
+
+def raw_marker_keys(notes, label):
+    """Recover key tokens from malformed disposition-marker prose."""
+    return [
+        key
+        for value in re.findall(rf"{re.escape(label)}:([^;\s]+)", notes)
+        for key in cell_keys(value)
+    ]
+
+
+def event_key(row):
+    """Return the immutable selector for one log event."""
+    return "|".join(
+        row[field] for field in ("date", "kind", "id", "direction", "query_or_seed")
+    )
+
+
+def resolve_event(rows, selector, errors, context):
+    """Resolve a composite event selector, or one unambiguous legacy id."""
+    if "|" in selector:
+        parts = selector.split("|", 4)
+        if len(parts) not in (4, 5):
+            errors.append(f"{context}: malformed event selector {selector!r}")
+            return None
+        fields = ("date", "kind", "id", "direction", "query_or_seed")[:len(parts)]
+        matches = [
+            row for row in rows
+            if all(row[field] == value for field, value in zip(fields, parts))
+        ]
+    else:
+        matches = [row for row in rows if row["id"] == selector]
+    if len(matches) != 1:
+        errors.append(
+            f"{context}: event selector {selector!r} resolves to {len(matches)} rows"
+        )
+        return None
+    return matches[0]
+
+
+def normalized_registrar_ids(text):
+    """Extract version-insensitive DOI/arXiv identities from note frontmatter."""
+    values = set()
+    for scheme, value in re.findall(
+        r"^  (doi|arxiv):\s*[\"']?([^\s\"']+)", text, re.M
+    ):
+        value = value.lower().rstrip(",")
+        if scheme == "arxiv":
+            value = re.sub(r"v\d+$", "", value)
+        values.add(f"{scheme}:{value}")
+    return values
+
+
+def normalized_work_identity(text):
+    """Return a strict title/author fallback for works lacking registrar ids."""
+    fields = []
+    for field in ("title", "author"):
+        match = re.search(rf"^  {field}:\s*[\"']?(.+?)[\"']?\s*$", text, re.M)
+        if match is None:
+            return None
+        value = unicodedata.normalize("NFKD", match.group(1))
+        fields.append(re.sub(r"[^a-z0-9]+", "", value.encode("ascii", "ignore").decode().lower()))
+    return tuple(fields)
 
 
 def run(config):
@@ -307,12 +402,6 @@ def run(config):
         if citekey and citekey.group(1).strip() != note.stem:
             errors.append(f"{note.name}: filename/citekey mismatch")
         note_keys.add(note.stem)
-        canonical_note = re.search(r"^canonical-note:\s*(.+)$", frontmatter, re.M)
-        if canonical_note:
-            relative = canonical_note.group(1).strip().strip('"\'')
-            target = record.parents[2] / relative
-            if Path(relative).is_absolute() or not target.is_file():
-                errors.append(f"{note.name}: canonical-note is not an existing repo-relative file")
         read = re.search(r"^read:\s*(full-text|abstract-only|secondary-only)$", frontmatter, re.M)
         if read:
             reads[read.group(1)] += 1
@@ -322,10 +411,26 @@ def run(config):
         for heading in NOTE_SECTIONS:
             if not re.search(rf"^{re.escape(heading)}\s*$", text, re.M):
                 errors.append(f"{note.name}: missing {heading}")
-        registrar_ids = {
-            f"{scheme}:{value.lower()}"
-            for scheme, value in re.findall(r"^  (doi|arxiv):\s*[\"']?([^\s\"']+)", frontmatter, re.M)
-        }
+        registrar_ids = normalized_registrar_ids(frontmatter)
+        canonical_note = re.search(r"^canonical-note:\s*(.+)$", frontmatter, re.M)
+        if canonical_note:
+            relative = canonical_note.group(1).strip().strip('"\'')
+            target = record.parents[2] / relative
+            if Path(relative).is_absolute() or not target.is_file():
+                errors.append(f"{note.name}: canonical-note is not an existing repo-relative file")
+            else:
+                target_text = target.read_text(encoding="utf-8")
+                target_frontmatter = (
+                    target_text.split("---", 2)[1] if target_text.startswith("---") else ""
+                )
+                target_ids = normalized_registrar_ids(target_frontmatter)
+                if registrar_ids and target_ids:
+                    if registrar_ids.isdisjoint(target_ids):
+                        errors.append(f"{note.name}: canonical-note identifiers name another work")
+                elif normalized_work_identity(frontmatter) != normalized_work_identity(target_frontmatter):
+                    errors.append(
+                        f"{note.name}: canonical-note lacks matching registrar ids or title/author identity"
+                    )
         if not registrar_ids and reference_identifiers.get(note.stem, "").startswith(("doi:", "arxiv:")):
             registrar_ids = {reference_identifiers[note.stem]}
         if not registrar_ids:
@@ -360,7 +465,11 @@ def run(config):
                 errors.append(f"{row['status']} work {key} has no bibliography entry")
 
     # --- claims ---
-    claims_text = (record / "claims.md").read_text(encoding="utf-8")
+    claims_required = config.get("claims_evidence_required", True)
+    claims_path = record / "claims.md"
+    if claims_required and not claims_path.is_file():
+        errors.append("claims.md is required by this survey contract")
+    claims_text = claims_path.read_text(encoding="utf-8") if claims_path.is_file() else ""
     marker = "## Current survey synthesis claims"
     current = claims_text.split(marker, 1)[-1]
     claim_ids = []
@@ -379,7 +488,7 @@ def run(config):
         if count > 1:
             errors.append(f"claims.md: duplicate claim id {value}")
     claim_ids = set(claim_ids)
-    if not claim_ids:
+    if not claim_ids and claims_required:
         errors.append("claims ledger has no current Cxx synthesis claims")
 
     # --- manuscript labels and citations ---
@@ -427,7 +536,10 @@ def run(config):
             errors.append(f"protocol/manuscript research-question drift: {drift[0]}")
 
     # --- evidence ---
-    evidence_text = (record / "evidence.md").read_text(encoding="utf-8")
+    evidence_path = record / "evidence.md"
+    if claims_required and not evidence_path.is_file():
+        errors.append("evidence.md is required by this survey contract")
+    evidence_text = evidence_path.read_text(encoding="utf-8") if evidence_path.is_file() else ""
     evidence_ids, supported_claims = set(), set()
     covered_pairs, anchor_cache = set(), {}
     certainty_counts = Counter()
@@ -529,33 +641,88 @@ def run(config):
 
     # --- log ---
     log_rows = read_tsv(record / "log.tsv", LOG_HEADER, errors)
-    kind_counts = Counter()
-    promoted, superseded, reclassified = set(), set(), set()
     audit_rows = [row for row in log_rows if row["kind"] == "audit"]
     for identifier, count in Counter(row["id"] for row in audit_rows).items():
         if count > 1:
             errors.append(f"duplicate audit id {identifier}")
     audits = {row["id"]: row for row in audit_rows}
-    for row in log_rows:
-        promoted.update(re.findall(r"(?:^|; )promoted-key:(\S+?)(?:;|$)", row["notes"]))
-        superseded.update(re.findall(r"(?:^|; )superseded-key:(\S+?)(?:;|$)", row["notes"]))
+    audit_positions = {
+        row["id"]: position
+        for position, row in enumerate(log_rows)
+        if row["kind"] == "audit"
+    }
+    grammar_repairs = {
+        target
+        for row in audit_rows
+        for target in marker_keys(row["notes"], "repairs-marker-grammar")
+    }
+    later_reclassified = [set() for _ in log_rows]
+    later_disposition_changes = [set() for _ in log_rows]
+    seen_later_reclassifications = set()
+    seen_later_disposition_changes = set()
+    for position in range(len(log_rows) - 1, -1, -1):
+        later_reclassified[position] = set(seen_later_reclassifications)
+        later_disposition_changes[position] = set(seen_later_disposition_changes)
+        historical_notes = "" if log_rows[position]["id"] in grammar_repairs else log_rows[position]["notes"]
+        row_reclassified = set(marker_keys(historical_notes, "reclassified-key"))
+        seen_later_reclassifications.update(row_reclassified)
+        row_changes = row_reclassified
+        for label in ("promoted-key", "superseded-key"):
+            row_changes.update(marker_keys(historical_notes, label))
+        seen_later_disposition_changes.update(row_changes)
+    kind_counts = Counter()
+    for target in sorted(grammar_repairs):
+        matches = [position for position, row in enumerate(log_rows) if row["id"] == target]
+        repair_positions = [
+            position for position, row in enumerate(log_rows)
+            if target in marker_keys(row["notes"], "repairs-marker-grammar")
+        ]
+        if len(matches) != 1 or len(repair_positions) != 1 or matches[0] >= repair_positions[0]:
+            errors.append(f"marker-grammar repair does not uniquely name an earlier event: {target}")
+            continue
+        target_row = log_rows[matches[0]]
+        repair_row = log_rows[repair_positions[0]]
+        if not malformed_marker_labels(target_row["notes"]):
+            errors.append(f"marker-grammar repair target is not malformed: {target}")
+        historical = {
+            label: raw_marker_keys(target_row["notes"], label)
+            for label in DISPOSITION_MARKERS
+        }
+        replacement = {
+            label: marker_keys(repair_row["notes"], label)
+            for label in DISPOSITION_MARKERS
+        }
+        if not any(historical.values()) or historical != replacement:
+            errors.append(f"marker-grammar repair does not reproduce target dispositions: {target}")
+    for position, row in enumerate(log_rows):
+        malformed = malformed_marker_labels(row["notes"])
+        if malformed and row["id"] not in grammar_repairs:
+            errors.append(
+                f"log id {row['id']}: marker lacks a semicolon boundary: {sorted(set(malformed))}"
+            )
+        # A grammar-repaired historical row is machine-inert by design; its
+        # appended correction owns the markers so a malformed first value
+        # cannot swallow the next marker-shaped token.
+        row_promoted = set() if malformed else set(marker_keys(row["notes"], "promoted-key"))
+        row_superseded = set() if malformed else set(marker_keys(row["notes"], "superseded-key"))
+        row_reclassified = set() if malformed else set(marker_keys(row["notes"], "reclassified-key"))
         # A later audit may correct what an earlier wave decided. The log is
         # append-only, so that row keeps its historical decision and the audit
         # row carries the correction; both cannot describe current state.
-        reclassified.update(re.findall(r"(?:^|; )reclassified-key:(\S+?)(?:;|$)", row["notes"]))
-        if re.search(r"(?:^|; )(?:promoted|superseded|reclassified)-key:", row["notes"]) and row["kind"] != "audit":
+        if row_promoted | row_superseded | row_reclassified and row["kind"] != "audit":
             errors.append(f"log id {row['id']}: disposition reconciliation is not an audit row")
-    for key in sorted(reclassified):
-        if key not in catalog:
-            errors.append(f"reclassified key is not in the catalog: {key}")
-    for key in sorted(promoted & superseded):
-        errors.append(f"log both promotes and supersedes {key}")
-    for key in sorted(promoted):
-        if key not in catalog or catalog[key]["status"] == "excluded":
-            errors.append(f"promoted key lacks a retained catalog disposition: {key}")
-    for key in sorted(superseded):
-        if key not in catalog or catalog[key]["status"] != "excluded":
-            errors.append(f"superseded key lacks an excluded catalog disposition: {key}")
+        if row_promoted & row_superseded:
+            errors.append(f"log id {row['id']}: the same key is both promoted and superseded")
+        later = later_disposition_changes[position]
+        for key in sorted(row_promoted):
+            if key not in catalog or (catalog[key]["status"] == "excluded" and key not in later):
+                errors.append(f"promoted key lacks a retained checkpoint disposition: {key}")
+        for key in sorted(row_superseded):
+            if key not in catalog or (catalog[key]["status"] != "excluded" and key not in later):
+                errors.append(f"superseded key lacks an excluded checkpoint disposition: {key}")
+        for key in sorted(row_reclassified):
+            if key not in catalog:
+                errors.append(f"reclassified key is not in the catalog: {key}")
     rows_by_seed = {}
     defective_seeds = set()
     for lineno, row in enumerate(log_rows, start=2):
@@ -581,15 +748,16 @@ def run(config):
                     errors.append(f"log.tsv:{lineno}: nonnumeric hits/screened")
                 elif row["screened"].isdigit() and int(row["screened"]) > int(row["hits"]):
                     errors.append(f"log.tsv:{lineno}: screened exceeds hits")
+        later = later_disposition_changes[lineno - 2]
         for key in cell_keys(row["included_keys"]):
             if key not in catalog:
                 errors.append(f"log.tsv:{lineno}: includes unknown key {key}")
-            elif catalog[key]["status"] == "excluded" and key not in superseded | reclassified:
+            elif catalog[key]["status"] == "excluded" and key not in later:
                 errors.append(f"log.tsv:{lineno}: includes excluded key {key}")
         for key in cell_keys(row["excluded_keys"]):
             if key not in catalog:
                 errors.append(f"log.tsv:{lineno}: excludes unknown key {key}")
-            elif catalog[key]["status"] != "excluded" and key not in promoted | reclassified:
+            elif catalog[key]["status"] != "excluded" and key not in later:
                 errors.append(f"log.tsv:{lineno}: exclusion {key} is not excluded")
         seed = seed_key(row["notes"])
         if seed is not None:
@@ -608,6 +776,7 @@ def run(config):
     # keeps key-level repair history resumable without introducing a second
     # survey-specific ledger schema.
     audit_partition_keys = {}
+    audit_partition_decisions = {}
     for identifier, row in audits.items():
         if "decision-partition" not in row["notes"]:
             continue
@@ -625,17 +794,33 @@ def run(config):
         for key in keys:
             if key not in catalog:
                 errors.append(f"audit partition {identifier} names unknown key {key}")
+        superseded_later = later_disposition_changes[audit_positions[identifier]]
         for key in included_keys:
-            if key in catalog and catalog[key]["status"] == "excluded":
+            if (
+                key in catalog and catalog[key]["status"] == "excluded"
+                and key not in superseded_later
+            ):
                 errors.append(f"audit partition {identifier} includes currently excluded key {key}")
         for key in excluded_keys:
-            if key in catalog and catalog[key]["status"] != "excluded":
+            if (
+                key in catalog and catalog[key]["status"] != "excluded"
+                and key not in superseded_later
+            ):
                 errors.append(f"audit partition {identifier} excludes non-excluded key {key}")
         for key in parked_keys:
-            if key in catalog and catalog[key]["status"] != "parked":
+            if (
+                key in catalog and catalog[key]["status"] != "parked"
+                and key not in superseded_later
+            ):
                 errors.append(f"audit partition {identifier} parks non-parked key {key}")
         audit_partition_keys[identifier] = keys
+        audit_partition_decisions[identifier] = {
+            "included": included_keys,
+            "excluded": excluded_keys,
+            "parked": parked_keys,
+        }
 
+    audit_group_totals = {}
     for group in config.get("audit_partition_groups", []):
         rows = {
             identifier: keys for identifier, keys in audit_partition_keys.items()
@@ -646,6 +831,7 @@ def run(config):
                 f"audit group {group['prefix']} has {len(rows)} rows, expected {group['rows']}"
             )
         flattened = [key for keys in rows.values() for key in keys]
+        audit_group_totals[group["prefix"]] = len(flattened)
         if len(flattened) != group["total"] or len(flattened) != len(set(flattened)):
             errors.append(
                 f"audit group {group['prefix']} does not partition {group['total']} unique keys"
@@ -658,13 +844,15 @@ def run(config):
             }
             if not set(flattened) < parent_keys:
                 errors.append(f"audit group {group['prefix']} is not a strict subset of {parent}")
-        origin_ids = group.get("equals_event_ids", [])
-        if origin_ids:
+        origin_selectors = group.get("equals_events", group.get("equals_event_ids", []))
+        if origin_selectors:
             origin_keys = set()
-            for identifier in origin_ids:
-                row = next((item for item in log_rows if item["id"] == identifier), None)
+            for selector in origin_selectors:
+                row = resolve_event(
+                    log_rows, selector, errors,
+                    f"audit group {group['prefix']} origin",
+                )
                 if row is None:
-                    errors.append(f"audit group {group['prefix']} names missing origin event {identifier}")
                     continue
                 origin_keys.update(cell_keys(row["included_keys"]))
                 origin_keys.update(cell_keys(row["excluded_keys"]))
@@ -674,9 +862,12 @@ def run(config):
                 errors.append(f"audit group {group['prefix']} differs from its originating event keys")
         expected_statuses = group.get("status_counts")
         if expected_statuses is not None:
-            actual_statuses = Counter(catalog[key]["status"] for key in flattened if key in catalog)
+            actual_statuses = Counter()
+            for identifier in rows:
+                for disposition, keys in audit_partition_decisions[identifier].items():
+                    actual_statuses[disposition] += len(keys)
             if actual_statuses != Counter(expected_statuses):
-                errors.append(f"audit group {group['prefix']} has stale current status partition")
+                errors.append(f"audit group {group['prefix']} has a stale checkpoint disposition partition")
         if group.get("rationale_unique"):
             rationales = [catalog[key].get("relevance", "").strip() for key in flattened if key in catalog]
             if not all(rationales) or len(rationales) != len(set(rationales)):
@@ -708,31 +899,112 @@ def run(config):
                 old_status, old_code, old_priority, new_status, new_code, new_priority = match.groups()
                 for key in keys:
                     current = catalog.get(key)
-                    if current and (new_status, new_code, new_priority) != (
+                    superseded_later = key in later_reclassified[audit_positions[identifier]]
+                    if current and not superseded_later and (new_status, new_code, new_priority) != (
                         current["status"], current["code"], current["priority"]
                     ):
                         errors.append(f"audit partition {identifier} has stale final fields for {key}")
-                    observed["status"] += old_status != new_status
-                    observed["code"] += old_code != new_code
-                    observed["priority"] += old_priority != new_priority
+                    changes = {
+                        "status": old_status != new_status,
+                        "code": old_code != new_code,
+                        "priority": old_priority != new_priority,
+                    }
+                    for field, changed in changes.items():
+                        observed[field] += changed
+                    observed["status_code"] += changes["status"] and changes["code"]
+                    observed["status_priority"] += changes["status"] and changes["priority"]
+                    observed["code_priority"] += changes["code"] and changes["priority"]
+                    observed["all"] += all(changes.values())
             if observed != Counter(transition_counts):
                 errors.append(f"audit group {group['prefix']} classifier transitions do not reconcile")
 
+    for contract in config.get("audit_transition_contracts", []):
+        identifier = contract["id"]
+        row = audits.get(identifier)
+        if row is None:
+            errors.append(f"audit transition contract names missing row {identifier}")
+            continue
+        match = re.search(contract["pattern"], row["notes"])
+        if match is None or len(match.groups()) != 6:
+            errors.append(f"audit transition {identifier} lacks its declared transition")
+            continue
+        old = tuple(match.groups()[:3])
+        new = tuple(match.groups()[3:])
+        if old != tuple(contract["old"]) or new != tuple(contract["new"]):
+            errors.append(f"audit transition {identifier} disagrees with its declared fields")
+        keys = audit_partition_keys.get(identifier, [])
+        if set(keys) != set(contract["keys"]) or len(keys) != len(contract["keys"]):
+            errors.append(f"audit transition {identifier} disagrees with its declared keys")
+        later = later_reclassified[audit_positions[identifier]]
+        for key in keys:
+            current = catalog.get(key)
+            catalog_new = tuple(contract.get("catalog_new", contract["new"]))
+            if current and key not in later and catalog_new != (
+                current["status"], current["code"], current.get("priority", "")
+            ):
+                errors.append(f"audit transition {identifier} has stale checkpoint fields for {key}")
+
     if config.get("validate_screened_partitions"):
+        def external_partition(home, expected_screened, allow_incomplete, context):
+            if "#" not in home:
+                errors.append(f"{context}: external decision home lacks an event selector")
+                return []
+            relative, selector = home.split("#", 1)
+            target = record.parents[2] / relative
+            if not target.is_file():
+                errors.append(f"{context}: external decision home does not exist: {relative}")
+                return []
+            external_rows = read_tsv(target, LOG_HEADER, errors)
+            external_row = resolve_event(external_rows, selector, errors, context)
+            if external_row is None:
+                return []
+            if not external_row["screened"].isdigit():
+                errors.append(f"{context}: delegated event has no numeric screened count")
+                return []
+            if int(external_row["screened"]) != expected_screened:
+                errors.append(f"{context}: delegated event disagrees with the screened denominator")
+            keys = cell_keys(external_row["included_keys"]) + cell_keys(external_row["excluded_keys"])
+            keys += marker_keys(external_row["notes"], "parked-keys")
+            keys += marker_keys(external_row["notes"], "overlap-keys")
+            if len(keys) != int(external_row["screened"]) and not allow_incomplete:
+                errors.append(f"{context}: delegated event is not key-complete")
+            for key in keys:
+                if key not in catalog:
+                    errors.append(f"{context}: delegated event names unknown local key {key}")
+            return keys
+
         repairs = {}
         for identifier, row in audits.items():
-            repaired_id = marker_keys(row["notes"], "partition-for")
+            repaired_selectors = marker_keys(row["notes"], "partition-for")
             screened_keys = marker_keys(row["notes"], "screened-keys")
-            if repaired_id:
-                if len(repaired_id) != 1:
+            if repaired_selectors:
+                if len(repaired_selectors) != 1:
                     errors.append(f"partition audit {identifier} names multiple events")
                     continue
-                if repaired_id[0] in repairs:
-                    errors.append(f"duplicate partition audit for {repaired_id[0]}")
-                repairs[repaired_id[0]] = (row, screened_keys)
-        log_ids = {row["id"] for row in log_rows}
-        for event_id in sorted(set(repairs) - log_ids):
-            errors.append(f"partition audit names unknown event {event_id}")
+                repaired = resolve_event(
+                    log_rows, repaired_selectors[0], errors,
+                    f"partition audit {identifier}",
+                )
+                if repaired is None:
+                    continue
+                repaired_key = event_key(repaired)
+                if repaired_key in repairs:
+                    prior_identifier = repairs[repaired_key][0]["id"]
+                    supersedes = marker_keys(row["notes"], "supersedes-partition")
+                    if supersedes != [prior_identifier]:
+                        errors.append(f"duplicate partition audit for {repaired_key}")
+                        continue
+                external = marker_keys(row["notes"], "external-decision-home")
+                if external:
+                    if len(external) != 1 or not repaired["screened"].isdigit():
+                        errors.append(f"partition audit {identifier} has malformed external delegation")
+                        continue
+                    screened_keys = external_partition(
+                        external[0], int(repaired["screened"]),
+                        "coverage-incomplete" in row["notes"],
+                        f"partition audit {identifier}",
+                    )
+                repairs[repaired_key] = (row, screened_keys)
         for row in log_rows:
             if row["kind"] not in {"search", "snowball"}:
                 continue
@@ -747,7 +1019,7 @@ def run(config):
                     if key not in catalog:
                         errors.append(f"direct decision partition for {row['id']} names unknown key {key}")
                 continue
-            repair = repairs.get(row["id"])
+            repair = repairs.get(event_key(row))
             if repair:
                 audit, keys = repair
                 if not audit["hits"].isdigit() or int(audit["hits"]) != screened:
@@ -762,9 +1034,13 @@ def run(config):
                 continue
             external = marker_keys(row["notes"], "external-decision-home")
             if external:
-                target = record.parents[2] / external[0]
-                if not target.is_file():
-                    errors.append(f"external decision home does not exist: {external[0]}")
+                if len(external) != 1:
+                    errors.append(f"external decision home for {row['id']} is malformed")
+                    continue
+                external_partition(
+                    external[0], screened, "coverage-incomplete" in row["notes"],
+                    f"external decision home for {row['id']}",
+                )
                 continue
             errors.append(f"positive-screened row {row['id']} has no key-complete decision partition")
 
@@ -775,13 +1051,16 @@ def run(config):
             errors.append(f"funnel audit is missing or nonnumeric: {identifier}")
             continue
         funnel[report_key] = int(row["hits"])
-    if funnel:
-        additions = sum(
+    catalog_additions = {
+        identifier: sum(
             int(value)
-            for row in audits.values()
-            for value in re.findall(r"(?:^|; )catalog-additions:(\d+)(?:;|$)", row["notes"])
+            for value in marker_values(row["notes"], "catalog-additions")
         )
-        if sum(funnel.values()) + additions != len(catalog):
+        for identifier, row in audits.items()
+        if "catalog-additions:" in row["notes"]
+    }
+    if funnel:
+        if sum(funnel.values()) + sum(catalog_additions.values()) != len(catalog):
             errors.append("baseline funnel plus catalog additions does not equal catalog denominator")
 
     for seed in sorted(defective_seeds):
@@ -829,6 +1108,9 @@ def run(config):
                 errors.append(f"queries.tsv:{lineno}: invalid last_reconciled {row['last_reconciled']!r}")
 
     checkpoints = {}
+    active = []
+    unreconciled = set()
+    query_checkpoint_counts = {}
     for name, label in config.get("query_checkpoint_fields", {}).items():
         match = re.search(rf"(?m)^- \*\*{re.escape(label)}:\*\* (\d{{4}}-\d{{2}}-\d{{2}})", status_text)
         if match is None:
@@ -866,6 +1148,10 @@ def run(config):
                 errors.append("query checkpoint omits a reconciled active query")
             if not expected_unreconciled <= set(attempt_ids):
                 errors.append("query checkpoint omits an attempted unreconciled query")
+        query_checkpoint_counts = {
+            name: sum(row["last_reconciled"] == checkpoint for row in active)
+            for name, checkpoint in checkpoints.items()
+        }
 
     # --- landing page curation ---
     curated = {Path(match).stem for match in re.findall(r"record/sources/([^)]+\.md)", index_text)}
@@ -885,14 +1171,22 @@ def run(config):
         "curated_source_notes": len(curated),
         "bibliography_entries": len(bib_keys),
         "manuscript_citations": len(citations),
+        "catalog_additions": dict(sorted(catalog_additions.items())),
+        "catalog_addition_batches": len(catalog_additions),
+        "audit_groups": dict(sorted(audit_group_totals.items())),
         **funnel,
     }
+    if funnel:
+        report["baseline_records"] = sum(funnel.values())
     if "include_level_statuses" in config:
         report["include_level"] = sum(
             count for status, count in status_counts.items()
             if status in set(config["include_level_statuses"])
         )
     if checkpoints:
+        report["active_queries"] = len(active)
+        report["unreconciled_queries"] = len(unreconciled)
+        report["query_checkpoint_counts"] = query_checkpoint_counts
         report["query_attempts"] = len(query_attempts)
         report["query_successes"] = sum(
             not row["hits"].startswith("FAILED") for row in query_attempts

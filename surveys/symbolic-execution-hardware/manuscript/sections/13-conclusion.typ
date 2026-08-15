@@ -14,7 +14,7 @@ confined to an external testbench unless they meet the same design-path
 conditions.
 
 The bounded map contains 31 full-text-qualified publication records, including
-preprints and agent-adjudicated records, under a non-closed protocol with one
+preprints and agent-adjudicated records, under a non-closed protocol with 1
 failed query and no item-level human screening. That slice supports a focused
 account, with RTL as the principal design target and smaller SystemC,
 mixed-level, netlist, other-HDL, and HLS edges. It does not estimate the size or
