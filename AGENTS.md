@@ -46,19 +46,14 @@
   writers, both seeking the clean baseline a worktree would have
   given them.
 
-## Scratch
+## Layer contracts
 
-- Notes live at `scratch/YYYY/YYYY-MM-DD/slug.md`. The date directory is the
-  capture date and the H1 is the title — no date or title frontmatter.
-- Authorship is binary — the writer of the prose. A note with no `author:`
-  frontmatter is Bili's; agent-written notes open with an `author:` field
-  naming the model, matching the commit trailer:
-
-  ```markdown
-  ---
-  author: Claude Fable 5
-  ---
-  ```
+- A content layer's conventions live in `<layer>/AGENTS.md`, with a
+  sibling `CLAUDE.md` shim (`@AGENTS.md`). Nested instruction files do
+  not reliably auto-load — Claude Code loads them on reads (not
+  writes), Codex walks only the cwd chain, and subagents inherit
+  nothing — so: **before writing in a layer, read its AGENTS.md.**
+  Layers with contracts so far: `scratch/`.
 
 ## Wiki
 

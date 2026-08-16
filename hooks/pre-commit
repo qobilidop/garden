@@ -1,2 +1,5 @@
 #!/bin/bash
-exec "$(dirname "$0")/check.sh" staged
+set -euo pipefail
+HOOKS="$(cd "$(dirname "$0")" && pwd)"
+"$HOOKS/check.sh" staged
+"$HOOKS/lint.sh"
