@@ -9,8 +9,9 @@ note network as a communication partner), and
 [[karpathy2026-llm-wiki]] (knowledge as a compiled, maintained
 artifact), [[olah2017-research-debt]] (distillation as communal
 infrastructure), and [[matuschak2019-tools-thought]] (making as a route to
-new insight), with [[favaro2026-ai-builds-itself]] as frontier-lab evidence
-that execution cheapens before problem choice and judgment.
+new insight), [[griffiths2024-forest]] (note method separated from publishing
+posture), with [[favaro2026-ai-builds-itself]] as frontier-lab evidence that
+execution cheapens before problem choice and judgment.
 
 ## Craft is scheduled, not trait-based
 
@@ -111,7 +112,12 @@ returns what you filed is not communicating. Karpathy completes the
 lineage — the wiki holds the cross-references and flagged
 contradictions so they survive between sessions; the LLM absorbs the
 maintenance burden Luhmann paid in person and that made everyone
-else's wikis die. Keshav's pass 3 supplies the quality
+else's wikis die. [[griffiths2024-forest]] prevents that lineage from
+collapsing storage method into publishing form. Evergreen *content* and a
+remixable note *format* are different achievements; single- versus
+multi-author and private versus public are independent axes. Forester can
+therefore operate as a Zettelkasten backstage and as a wiki in public without
+either role defining the other. Keshav's pass 3 supplies the quality
 bar for what the external store should contain: understanding good
 enough to reconstruct the work from memory — his virtual
 re-implementation diff is what separates synthesis from summary.
