@@ -72,3 +72,12 @@ machine, not the person. Bili explicitly fine with the disclosure.
   contracts; carries the library definition and link namespace per
   notebook-design.md).
 - Phone-capture thread parked OPEN (its own note).
+- Staged for the next /evolve (Bili chose to defer this session's
+  retrospective — decisions are banked in these notes; only process
+  residue remains): the blind naming-panel methodology as a skill
+  candidate (between-subjects naive-reader panels, staged reveal,
+  reverse generative test, retest; limit: audience-specific failure
+  modes are invisible to generic panels). Used three times this
+  session; promote if a naming question recurs. Below threshold,
+  stage-on-recurrence: stalled-subagent nudge via direct message;
+  blind-predict-then-verify ordering protocol.
