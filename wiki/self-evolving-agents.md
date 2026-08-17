@@ -10,6 +10,8 @@ Systems that modify themselves from their own experience. Shelf:
 [[favaro2026-ai-builds-itself]] (frontier-lab evidence of R&D
 automation),
 [[osmani2026-loop-engineering]] (the loop layer from the product side),
+[[ye2026-cake]] (the environment locus, with the controlled
+experiment),
 [[willison2025-lethal-trifecta]] (capability composition as a security
 boundary),
 [[vincent2026-therapist]] and [[vincent2026-superpowers-6]]
@@ -72,7 +74,18 @@ population scale); [[vincent2026-therapist]] names one the
 taxonomies miss (identity/persona); [[karpathy2026-llm-wiki]] shows the
 same loop with *knowledge* as the evolving artifact — compile sources
 into a maintained wiki instead of re-retrieving, with the Memex's
-unsolved maintenance burden absorbed by the LLM. Liu's three-question
+unsolved maintenance burden absorbed by the LLM. [[ye2026-cake]] adds a
+locus none of the taxonomies had measured: the *environment* between
+agent and hardware. Model and scaffold stay fixed while recurring
+kernel failures evolve a domain compiler — verifier rules, IR
+primitives, cost calibrations — under corpus tests and human merge
+gates, the consensus loop shape intact at a new address. Its matched
+clean-start experiment is the shelf's cleanest evidence that the locus
+pays: same model, same budget, implementation-hidden task, and the
+co-designed IR-plus-harness arm reaches 1.144× a tuned baseline where
+the raw-CUDA arm stalls at 0.928×. The bundle is the treatment —
+representation and feedback are not separated — but that is the point:
+the environment, not the agent, was the variable. Liu's three-question
 test travels furthest: what evolves, what feedback drives it, where
 does the loop close.
 

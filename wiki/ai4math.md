@@ -194,7 +194,11 @@ human role downstream of AI proof production. The genre has a theory:
 outsourced, human effort migrates to the "penumbra" — motivation,
 heuristics, attribution, the narrative the formal core cannot carry —
 which is a description of digestion written months before the
-practice matured, by one of its practitioners.
+practice matured, by one of its practitioners. The frame is already
+exported beyond mathematics: [[ye2026-cake]] cites Tao's
+proof-abundance observation as a design requirement for a GPU-kernel
+compiler — agent-generated artifacts must stay inspectable because
+abundance moves the bottleneck to verification and understanding.
 
 ## What the shelf needs next
 
