@@ -11,8 +11,11 @@ the scale landmarks
 ([[hubert2025-alphaproof]],
 [[novikov2025-alphaevolve]]), the capability claim
 ([[openai2026-math-advances]]), the open-ended discovery case
-([[anthropic2026-riemann-zeta]]), and the trust
-infrastructure's failure mode
+([[anthropic2026-riemann-zeta]]), the resolved-conjecture
+digestion ([[tao2026-sendov]]), the philosophical frame
+([[klowden2026-human-thought]] — the decoupling of form from
+thought, and the vocabulary for what certificates leave out), and
+the trust infrastructure's failure mode
 ([[demoura2026-kernel-soundness]], published the
 same day as the ten-advances claim).
 
@@ -83,7 +86,21 @@ problem remains open), and formalizers with equal headline scores
 yield sharply different downstream prover success. Together the two
 layers bound what "machine-checked" certifies: the kernel can be
 wrong about the proof, and the formalization can be wrong about the
-statement. One elegant inversion: AlphaProof trained on ~80M
+statement. Both layers were named in advance, from philosophy rather
+than incident reports: [[klowden2026-human-thought]] (written over the
+year before either failure surfaced) gives the statement-fidelity gap
+its cleanest thought experiment — a certified "disproof" of Fermat's
+last theorem obtained by letting the naturals start at zero — and adds
+a third layer the certificates cannot even express: a formally correct
+proof can still be "odorless," carrying no causal narrative of where
+the heavy lifting happens, no smell for experts to judge or repair by. [[tao2026-sendov]] shows the audit both layers call for
+actually being run: after an AI tool (unnamed in the post) resolved
+Sendov's conjecture with a roughly 90,000-line Lean certificate, Tao
+re-derived the argument by hand plus AI and produced an independent
+~15,000-line formalization against his own restatement — a second
+proof object written from understanding, which is stronger fidelity
+evidence than any single comparator check, though supplied here by
+the one expert best positioned to give it. One elegant inversion: AlphaProof trained on ~80M
 auto-formalized statements *without* fidelity checking — a
 mistranslated problem is still a well-formed training instance.
 Infidelity poisons evaluation but feeds curricula; the layer only
@@ -126,7 +143,25 @@ overturning it: an open-ended attack on the Riemann hypothesis failed, but a
 into a stronger adjacent bound. This is more research-shaped than evaluator
 optimization, yet still the insight-then-short-argument regime
 [[jiang2026-solvers]] says works best; the internal search of 54 papers is
-evidence against rediscovery, not an independent literature review. This is
+evidence against rediscovery, not an independent literature review.
+And the rediscovery check itself has a growing hazard:
+[[klowden2026-human-thought]] reports first-hand "citogenesis" — AI
+deep-research literature surveys posted to the Erdős problems site
+became the same tools' authoritative source, interfering with later
+searches for genuinely new literature. The evidence base for "is this
+new?" is being polluted by the instruments that ask it.
+[[tao2026-sendov]] then moves the base rate itself: a long-open named
+conjecture resolved outright by an AI tool in the hands of an
+individual outside the field — well past the survey's
+smallest-category precedents — while confirming the regime diagnosis,
+because the digested proof is elementary and identity-driven, an
+insight-then-short-proof argument whose every ingredient Tao traces to
+1948–2025 literature (the combination, not the parts, is new: the
+rediscovery check run by hand at expert level). The same post shows
+the boundary holding on the other side: the surviving generalizations
+(Borcea, Schmeisser, Smale) resisted Tao's own AI attempts, with
+[[novikov2025-alphaevolve]] cited in its counterexample-search
+register as evidence they are at least not false. This is
 the frame to apply to any
 capability claim on this shelf: check rediscovery, check
 specification, expect selection bias in what gets reported.
@@ -145,6 +180,22 @@ In
 [[liu2026-agent-taxonomy]]'s frame, this is the
 loop closing on science rather than benchmarks.
 
+The spine now has a named stage after the certificate:
+[[tao2026-sendov]]'s "digestion" — placing the machine-checked proof
+in the literature, simplifying it to its load-bearing ideas, and
+re-formalizing the streamlined argument at a sixth the original's
+size. Correctness arrives settled; understanding is the remaining
+labor, and it is itself AI-saturated (a ChatGPT session, Gemini
+figures, further agents for the Lean port) with the human supplying
+attribution and judgment. Tao's sibling digestion posts make this a
+genre rather than a one-off — the clearest picture yet of the durable
+human role downstream of AI proof production. The genre has a theory:
+[[klowden2026-human-thought]] predicted that as verified deduction is
+outsourced, human effort migrates to the "penumbra" — motivation,
+heuristics, attribution, the narrative the formal core cannot carry —
+which is a description of digestion written months before the
+practice matured, by one of its practitioners.
+
 ## What the shelf needs next
 
 The announcement is deliberately thin; the mathematics lives in the
@@ -161,7 +212,12 @@ treat AI-originated results; and whether the First Proof challenge
 clean evaluation) resists the contamination that saturated the
 competition benchmarks. The Anthropic case adds its own next checks: an
 independent rediscovery search, peer review of the 67.2% argument, and an audit
-that the released Lean theorem matches the informal lower-bound claim. The
+that the released Lean theorem matches the informal lower-bound claim.
+[[tao2026-sendov]] adds two more: the identity and workings of Mazur's
+unnamed tool (the headline capability claim currently rests on the
+claimant plus the certificate), and whether digestion scales — who
+performs it for results without a world-expert volunteer, and at what
+cost. The
 kernel-side thread continues too:
 verified kernels reaching inductives, and whether comparator-style
 daily cross-checking becomes standard practice.
