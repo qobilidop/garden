@@ -8,7 +8,7 @@ work:
   doi: 10.48550/arXiv.2305.16291
   arxiv: 2305.16291 (v2, 2023-10-19; the TMLR version, not arXiv v2, is the version of record)
 sources:
-  pdf: https://openreview.net/pdf?id=ehfRiF0R3a  # → store; TMLR camera-ready, fetched via an existing Wayback capture because OpenReview gates direct downloads
+  pdf: https://openreview.net/pdf?id=ehfRiF0R3a  # → shadow; TMLR camera-ready, fetched via an existing Wayback capture because OpenReview gates direct downloads
 retrieved: 2026-08-07
 notes-by: Claude Fable 5
 notes-date: 2026-08-08  # figure pass 2026-08-08

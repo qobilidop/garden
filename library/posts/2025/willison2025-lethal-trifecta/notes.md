@@ -4,7 +4,7 @@ work:
   title: "The lethal trifecta for AI agents: private data, untrusted content, and external communication"
   author: Simon Willison
   date: 2025-06-16
-source: https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/  # snapshot → shadow; figure (1 JPEG) → store
+source: https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/  # snapshot + figure (1 JPEG) → shadow
 discussions:
   - https://news.ycombinator.com/item?id=44289295  # 2025-06-16
 retrieved: 2026-08-11

@@ -4,8 +4,7 @@ FROM ubuntu:24.04
 RUN apt-get update \
  && apt-get install -y --no-install-recommends \
       git curl ca-certificates unzip xz-utils python3 python3-venv \
- && rm -rf /var/lib/apt/lists/* \
- && curl -fsSL https://rclone.org/install.sh | bash
+ && rm -rf /var/lib/apt/lists/*
 
 # Leak-guard scanner, pinned; release naming maps amd64 -> x64.
 # Keep in sync with GITLEAKS_VERSION in .github/workflows/gitleaks.yml.

@@ -7,7 +7,7 @@ work:
   date: 2008-06
   doi: 10.14236/ewic/EASE2008.8
 sources:
-  pdf: https://www.scienceopen.com/document_file/5c16e1ce-c17c-4035-b7db-080757194d49/ScienceOpen/001_Petersen.pdf  # → store
+  pdf: https://www.scienceopen.com/document_file/5c16e1ce-c17c-4035-b7db-080757194d49/ScienceOpen/001_Petersen.pdf  # → shadow
     # host blocks non-browser clients; the stored blob came from a verified existing Wayback capture
 retrieved: 2026-08-08
 notes-by: Claude Fable 5

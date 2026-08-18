@@ -7,7 +7,7 @@ work:
   date: 2009-09-25
   doi: 10.1016/j.molcel.2009.09.013
 sources:
-  pdf: https://www.cell.com/molecular-cell/pdf/S1097-2765(09)00641-8.pdf  # → store
+  pdf: https://www.cell.com/molecular-cell/pdf/S1097-2765(09)00641-8.pdf  # → shadow
     # cell.com serves a bot-block page to non-browser clients; the stored
     # blob came from a verified existing Wayback capture
 retrieved: 2026-08-08

@@ -8,7 +8,7 @@ work:
   doi: 10.48550/arXiv.2510.04618
   arxiv: 2510.04618 (v3, 2026-03-29, camera-ready)
 sources:
-  pdf: https://arxiv.org/pdf/2510.04618v3  # → store; pinned to v3 — the bare arXiv pdf URL is a mutable pointer
+  pdf: https://arxiv.org/pdf/2510.04618v3  # → shadow; pinned to v3 — the bare arXiv pdf URL is a mutable pointer
 retrieved: 2026-08-07
 notes-by: Claude Fable 5
 notes-date: 2026-08-07

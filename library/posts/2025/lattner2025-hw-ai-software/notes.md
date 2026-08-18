@@ -4,7 +4,7 @@ work:
   title: "Why do HW companies struggle to build AI software? (Democratizing AI Compute, Part 9)"
   author: Chris Lattner
   date: 2025-04-22
-source: https://www.modular.com/blog/democratizing-ai-compute-part-9-why-do-hw-companies-struggle-to-build-ai-software  # snapshot → shadow; figures (1 PNG) → store
+source: https://www.modular.com/blog/democratizing-ai-compute-part-9-why-do-hw-companies-struggle-to-build-ai-software  # snapshot + figures (1 PNG) → shadow
 retrieved: 2026-08-11
 notes-by: Codex GPT-5.6 Sol
 notes-date: 2026-08-11

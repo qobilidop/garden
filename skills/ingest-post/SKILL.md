@@ -1,13 +1,12 @@
 ---
 name: ingest-post
 description: Ingest or refresh a post (blog post, org announcement, Q&A answer) in the sys library. Use when asked to ingest, add, capture, revisit, update, or check a post or article. For formally published research papers (arXiv, DOI, venue), use ingest-paper instead.
-compatibility: "Requires the sys repo with its private shadow/ checkout and network access; the rclone store: remote only when figures are captured."
+compatibility: "Requires the sys repo with its private shadow/ checkout and network access."
 ---
 
 # Ingest a post
 
-Work from the sys repo root. Requires the private `shadow/` checkout; the
-rclone `store:` remote only when the post has figures. A post is a
+Work from the sys repo root. Requires the private `shadow/` checkout. A post is a
 single-author, informally published, web-native work with no
 version-of-record. Retrieval is live-first and repeatable; preservation is
 stateful because the snapshot in shadow identifies the exact evidence behind
@@ -41,12 +40,12 @@ concise canonical URL slug second. Posts often take the URL-slug branch
   author's own canonicalization of an earlier post (tweet → gist),
   record the original appearance as a second identity — frontmatter
   comment plus first discussions entry, with a text capture to shadow.
-- **Figures → store** (only when load-bearing — content diagrams, not
+- **Figures → shadow** (only when load-bearing — content diagrams, not
   site chrome or related-post cards):
-  `shadow/store/library/posts/<year>/<citekey>/figures/`. View them; the
+  `shadow/library/posts/<year>/<citekey>/figures/`. View them; the
   synthesis should reflect what they show. When the image viewer cannot render
   an SVG directly, make a temporary raster preview with an available renderer,
-  inspect that preview, and store the original SVG. The preview is review
+  inspect that preview, and keep the original SVG. The preview is review
   material, not a preservation artifact; discard it after selection.
 - **Paywalled source**: the free preview is the record — capture it,
   state the paywall in a frontmatter comment, scope the notes to it, and
@@ -111,7 +110,7 @@ work:
   title: <title>
   author: <author or org>
   date: <publication date — ISO to known precision: YYYY[-MM[-DD]]; never invent finer parts>
-source: <page url>  # snapshot → shadow; figures (N PNGs) → store   <- only if figures
+source: <page url>  # snapshot + figures (N PNGs) → shadow   <- only if figures
 discussions:
   - <thread url>  # <YYYY-MM-DD>
 retrieved: <today>
@@ -140,12 +139,10 @@ sources — assert only what the captured record contains.
 
 ## 7. Close
 
-- `tools/store.sh push` only when figures went to store.
-- Always run `node tools/check-ingest.mjs <citekey>` after capture (and after
-  the store push when figures exist). It reuses the site's canonical source
-  parser and checks the fresh notes, direct non-empty snapshot, and any files
-  under the exact `figures/` tier against their manifest entries and byte sizes
-  without printing the library inventory.
+- Always run `node tools/check-ingest.mjs <citekey>` after capture. It reuses
+  the site's canonical source parser and checks the fresh notes, direct
+  non-empty snapshot, and any files under the exact `figures/` tier without
+  printing the library inventory.
 - Request missing public redundancy with:
 
   ```console
@@ -157,7 +154,7 @@ sources — assert only what the captured record contains.
   submission; report a service failure without blocking the locally preserved
   ingestion.
 - Run `npm --prefix site run build` on the host, then propose the commits
-  (sys: notes; shadow: snapshot + manifest when pushed), each ending with the
+  (sys: notes; shadow: snapshot + figures), each ending with the
   agent's attribution trailer. Commit only on the user's word. When the request
   is only to commit and push, successful pushes complete it; wait for Pages and
   verify live routes only when publication or deployment verification is in

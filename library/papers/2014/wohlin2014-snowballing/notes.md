@@ -7,7 +7,7 @@ work:
   date: 2014-05-13
   doi: 10.1145/2601248.2601268
 sources:
-  pdf: http://www.wohlin.eu/ease14.pdf  # → store
+  pdf: http://www.wohlin.eu/ease14.pdf  # → shadow
     # author-hosted version; the ACM version of record is gated
 retrieved: 2026-08-08
 notes-by: Claude Fable 5

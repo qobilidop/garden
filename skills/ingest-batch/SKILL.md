@@ -1,7 +1,7 @@
 ---
 name: ingest-batch
 description: Coordinate ingestion of a selected batch of two or more works into the sys library. Use when asked to ingest a list, series, reading set, or mixed collection while consolidating validation and commit closeout. For one work use ingest-paper or ingest-post; this skill orchestrates those item workflows and does not redefine them.
-compatibility: "Requires the sys repo and the capabilities required by each selected item skill; store access is needed when any paper or post figure is captured."
+compatibility: "Requires the sys repo and the capabilities required by each selected item skill."
 ---
 
 # Ingest a batch
@@ -46,17 +46,15 @@ and shadow destinations until their identity and tier are settled.
 
 After all supported items are ready:
 
-1. Run `tools/store.sh push` once if any paper blobs or post figures were added.
-   It uploads all intended files and regenerates the manifest once.
-2. Run one `node tools/check-ingest.mjs <citekey> [citekey ...]` over the whole
-   batch after the store push.
-3. For posts, run one archive request with a repeated `--citekey <citekey>` for
+1. Run one `node tools/check-ingest.mjs <citekey> [citekey ...]` over the whole
+   batch.
+2. For posts, run one archive request with a repeated `--citekey <citekey>` for
    each post, `--request-missing`, a request cap equal to the number of posts,
    and `--delay-ms 0`. As in `ingest-post`, a service failure is reported but
    does not block locally preserved work.
-4. Run the focused tool tests required by changed infrastructure, then one
+3. Run the focused tool tests required by changed infrastructure, then one
    host `npm --prefix site run build` for the completed batch.
-5. Stage intentional paths and run the staged checks required by each item
+4. Stage intentional paths and run the staged checks required by each item
    skill. Do not replace their mechanical-capture exclusions with a generic
    all-shadow whitespace check.
 

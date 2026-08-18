@@ -7,7 +7,7 @@ work:
   date: 1986-03-07
   transcriber: J. F. Kaiser (Bellcore)
 sources:
-  pdf: https://www.cs.virginia.edu/~robins/YouAndYourResearch.pdf  # → store
+  pdf: https://www.cs.virginia.edu/~robins/YouAndYourResearch.pdf  # → shadow
   html: https://www.cs.virginia.edu/~robins/YouAndYourResearch.html  # → shadow snapshot
 retrieved: 2026-08-07
 notes-by: Claude Fable 5

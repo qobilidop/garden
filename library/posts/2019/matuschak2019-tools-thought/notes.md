@@ -4,7 +4,7 @@ work:
   title: How can we develop transformative tools for thought?
   author: Andy Matuschak and Michael Nielsen
   date: 2019-10
-source: https://numinous.productions/ttft/  # snapshot → shadow; figures (2 PNGs, 1 SVG) → store
+source: https://numinous.productions/ttft/  # snapshot + figures (2 PNGs, 1 SVG) → shadow
 discussions:
   - https://news.ycombinator.com/item?id=21152542  # 2019-10-03
 retrieved: 2026-08-11

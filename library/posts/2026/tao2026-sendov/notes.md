@@ -4,7 +4,7 @@ work:
   title: A digestion of the proof of Sendov’s conjecture
   author: Terence Tao
   date: 2026-08-12
-source: https://terrytao.wordpress.com/2026/08/12/a-digestion-of-the-proof-of-sendovs-conjecture/  # snapshot → shadow; figures (3 PNGs) → store
+source: https://terrytao.wordpress.com/2026/08/12/a-digestion-of-the-proof-of-sendovs-conjecture/  # snapshot + figures (3 PNGs) → shadow
 discussions:
   - https://news.ycombinator.com/item?id=49282231  # 2026-08-13
 retrieved: 2026-08-16

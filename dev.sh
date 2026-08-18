@@ -8,8 +8,7 @@
 #
 # Image comes from GHCR (published by .github/workflows/dev-image.yml); local
 # build is the fallback when the pull fails (offline). Override the image with
-# DEV_IMAGE=... for sha-pinned debugging. The repo mounts at /work; the host
-# rclone config mounts writable so refreshed OAuth tokens persist.
+# DEV_IMAGE=... for sha-pinned debugging. The repo mounts at /work.
 # (On a Linux host this would need user mapping to avoid root-owned files;
 # Docker Desktop on macOS handles ownership transparently.)
 set -euo pipefail
@@ -61,10 +60,8 @@ print(' '.join(f for f in files if os.path.getmtime(f) > img))" 2>/dev/null || t
   [ -n "$newer" ] && echo "dev.sh: note — newer than image: $newer (use --build to test locally, --pull after CI republishes)" >&2
 fi
 
-mkdir -p "$HOME/.config/rclone"
 TTYFLAG=""
 [ -t 0 ] && [ -t 1 ] && TTYFLAG="-it"
 exec docker run --rm $TTYFLAG \
   -v "$PWD":/work -w /work \
-  -v "$HOME/.config/rclone":/root/.config/rclone \
   "$IMG" "${@:-bash}"

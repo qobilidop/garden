@@ -4,7 +4,7 @@ work:
   title: What about Triton and Python eDSLs? (Democratizing AI Compute, Part 7)
   author: Chris Lattner
   date: 2025-03-26
-source: https://www.modular.com/blog/democratizing-ai-compute-part-7-what-about-triton-and-python-edsls  # snapshot → shadow; figures (1 PNG) → store
+source: https://www.modular.com/blog/democratizing-ai-compute-part-7-what-about-triton-and-python-edsls  # snapshot + figures (1 PNG) → shadow
 discussions:
   - https://news.ycombinator.com/item?id=43507119  # 2025-03-28
 retrieved: 2026-08-11

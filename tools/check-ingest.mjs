@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 import {
   existsSync,
-  readFileSync,
   readdirSync,
   statSync,
 } from 'node:fs'
@@ -44,25 +43,6 @@ function snapshotsIn(directory) {
     .map((entry) => join(directory, entry.name))
 }
 
-function manifestAt(shadowRoot) {
-  const path = join(shadowRoot, 'store.manifest.json')
-  const entries = JSON.parse(readFileSync(path, 'utf8'))
-  return new Map(
-    entries.filter((entry) => !entry.IsDir).map((entry) => [entry.Path, entry]),
-  )
-}
-
-function verifyManifestFile({ localPath, storePath, manifest }) {
-  const size = nonEmptyFile(localPath, 'store file')
-  const entry = manifest.get(storePath)
-  if (!entry) throw new Error(`store manifest is missing ${storePath}`)
-  if (entry.Size !== size) {
-    throw new Error(
-      `store manifest size mismatch for ${storePath}: local=${size}, manifest=${entry.Size}`,
-    )
-  }
-}
-
 export function checkIngest(
   citekeys,
   { repoRoot, output = console.log } = {},
@@ -71,7 +51,6 @@ export function checkIngest(
   const root = resolve(repoRoot)
   const shadowRoot = join(root, 'shadow')
   const sources = librarySources(root)
-  let manifest
 
   for (const citekey of [...new Set(citekeys)]) {
     const records = sources.filter((record) => record.citekey === citekey)
@@ -101,14 +80,8 @@ export function checkIngest(
       if (types.has('pdf')) {
         nonEmptyFile(join(paperRoot, 'transcript.md'), 'transcript')
         tiers.push('transcript')
-        const storePath = `library/papers/${year}/${citekey}/${citekey}.pdf`
-        manifest ??= manifestAt(shadowRoot)
-        verifyManifestFile({
-          localPath: join(shadowRoot, 'store', storePath),
-          storePath,
-          manifest,
-        })
-        tiers.push('pdf+manifest')
+        nonEmptyFile(join(paperRoot, `${citekey}.pdf`), 'pdf')
+        tiers.push('pdf')
       }
       const snapshots = snapshotsIn(paperRoot)
       if (types.has('html') && snapshots.length === 0) {
@@ -127,35 +100,10 @@ export function checkIngest(
       for (const snapshot of snapshots) nonEmptyFile(snapshot, 'snapshot')
       tiers.push(`${snapshots.length} snapshot`)
 
-      const postStoreRoot = join(
-        shadowRoot,
-        'store',
-        'library',
-        'posts',
-        year,
-        citekey,
-      )
-      if (existsSync(postStoreRoot)) {
-        const unexpected = readdirSync(postStoreRoot, { withFileTypes: true })
-          .filter((entry) => entry.name !== 'figures')
-          .map((entry) => entry.name)
-        if (unexpected.length > 0) {
-          throw new Error(
-            `unexpected post store tier for ${citekey}: ${unexpected.join(', ')}`,
-          )
-        }
-      }
-      const figureRoot = join(postStoreRoot, 'figures')
-      const figures = filesUnder(figureRoot)
+      const figures = filesUnder(join(postRoot, 'figures'))
+      for (const figure of figures) nonEmptyFile(figure, 'figure')
       if (figures.length > 0) {
-        manifest ??= manifestAt(shadowRoot)
-        for (const figure of figures) {
-          const storePath = relative(join(shadowRoot, 'store'), figure)
-            .split(sep)
-            .join('/')
-          verifyManifestFile({ localPath: figure, storePath, manifest })
-        }
-        tiers.push(`${figures.length} figure+manifest`)
+        tiers.push(`${figures.length} figure`)
       }
     }
     output(`ok\t${citekey}\t${kind.slice(0, -1)}\t${tiers.join(', ')}`)

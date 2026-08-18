@@ -7,7 +7,7 @@ work:
   date: 2021
   doi: 10.1186/s12874-021-01451-2
 read: full-text
-source: "shadow/store/library/papers/2021/hamel2021-aml-screening/ (publisher PDF gated by a bot/JS challenge on both BMC and PMC; retrieved as a Wayback Machine `id_` capture, timestamp 20211220175236, verified byte-identical to a live browser fetch of the same PDF)"
+source: "shadow/library/papers/2021/hamel2021-aml-screening/ (publisher PDF gated by a bot/JS challenge on both BMC and PMC; retrieved as a Wayback Machine `id_` capture, timestamp 20211220175236, verified byte-identical to a live browser fetch of the same PDF)"
 facets:
   stage: "screen"
   contribution: "guideline"

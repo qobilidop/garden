@@ -7,7 +7,7 @@ work:
   date: "2015-08-30"
   doi: 10.1145/2786805.2786830
 sources:
-  pdf: https://people.eecs.berkeley.edu/~ksen/papers/multise.pdf  # author-hosted camera-ready → store; title, authors, and venue match the DOI record
+  pdf: https://people.eecs.berkeley.edu/~ksen/papers/multise.pdf  # author-hosted camera-ready → shadow; title, authors, and venue match the DOI record
 retrieved: 2026-08-09
 notes-by: Codex GPT-5.6 Sol
 notes-date: 2026-08-09

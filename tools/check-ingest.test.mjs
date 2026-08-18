@@ -62,7 +62,7 @@ test('validates paper and post preservation tiers compactly', () => {
     )
     const pdf = join(
       root,
-      'shadow/store/library/papers/2026/li2026-example/li2026-example.pdf',
+      'shadow/library/papers/2026/li2026-example/li2026-example.pdf',
     )
     write(pdf, 'pdf bytes')
     write(
@@ -83,7 +83,7 @@ test('validates paper and post preservation tiers compactly', () => {
     write(
       join(
         root,
-        'shadow/store/library/posts/2026/example2026-post/figures/chart.png',
+        'shadow/library/posts/2026/example2026-post/figures/chart.png',
       ),
       'figure',
     )
@@ -102,22 +102,6 @@ test('validates paper and post preservation tiers compactly', () => {
       ),
       '<html>paper</html>',
     )
-    write(
-      join(root, 'shadow/store.manifest.json'),
-      JSON.stringify([
-        {
-          Path: 'library/papers/2026/li2026-example/li2026-example.pdf',
-          Size: 9,
-          IsDir: false,
-        },
-        {
-          Path: 'library/posts/2026/example2026-post/figures/chart.png',
-          Size: 6,
-          IsDir: false,
-        },
-      ]),
-    )
-
     const output = []
     checkIngest(
       ['example2026-post', 'li2026-example', 'example2026-html'],
@@ -127,8 +111,8 @@ test('validates paper and post preservation tiers compactly', () => {
       },
     )
     assert.deepEqual(output, [
-      'ok\texample2026-post\tpost\tnotes, 1 snapshot, 1 figure+manifest',
-      'ok\tli2026-example\tpaper\tnotes, transcript, pdf+manifest',
+      'ok\texample2026-post\tpost\tnotes, 1 snapshot, 1 figure',
+      'ok\tli2026-example\tpaper\tnotes, transcript, pdf',
       'ok\texample2026-html\tpaper\tnotes, 1 snapshot',
     ])
   })
@@ -219,7 +203,7 @@ test('rejects missing and empty post snapshots', () => {
   })
 })
 
-test('rejects missing figure manifest entries and misplaced store files', () => {
+test('rejects an empty captured figure', () => {
   withFixture((root) => {
     write(
       join(root, 'library/posts/2026/example2026-post/notes.md'),
@@ -239,26 +223,13 @@ test('rejects missing figure manifest entries and misplaced store files', () => 
     write(
       join(
         root,
-        'shadow/store/library/posts/2026/example2026-post/figures/chart.png',
+        'shadow/library/posts/2026/example2026-post/figures/chart.png',
       ),
-      'figure',
-    )
-    write(join(root, 'shadow/store.manifest.json'), '[]')
-    assert.throws(
-      () => checkIngest(['example2026-post'], { repoRoot: root }),
-      /store manifest is missing/,
-    )
-
-    write(
-      join(
-        root,
-        'shadow/store/library/posts/2026/example2026-post/misplaced.png',
-      ),
-      'figure',
+      '',
     )
     assert.throws(
       () => checkIngest(['example2026-post'], { repoRoot: root }),
-      /unexpected post store tier.*misplaced\.png/,
+      /missing or empty figure/,
     )
   })
 })
@@ -280,7 +251,7 @@ test('fails when a PDF transcript is missing', () => {
   })
 })
 
-test('fails for a missing or empty PDF and a missing paper manifest entry', () => {
+test('fails for a missing or empty PDF', () => {
   withFixture((root) => {
     write(
       join(root, 'library/papers/2026/li2026-example/notes.md'),
@@ -296,73 +267,17 @@ test('fails for a missing or empty PDF and a missing paper manifest entry', () =
     )
     const pdf = join(
       root,
-      'shadow/store/library/papers/2026/li2026-example/li2026-example.pdf',
-    )
-    const manifest = join(root, 'shadow/store.manifest.json')
-    write(
-      manifest,
-      JSON.stringify([
-        {
-          Path: 'library/papers/2026/li2026-example/li2026-example.pdf',
-          Size: 9,
-          IsDir: false,
-        },
-      ]),
+      'shadow/library/papers/2026/li2026-example/li2026-example.pdf',
     )
     assert.throws(
       () => checkIngest(['li2026-example'], { repoRoot: root }),
-      /missing or empty store file/,
+      /missing or empty pdf/,
     )
 
     write(pdf, '')
     assert.throws(
       () => checkIngest(['li2026-example'], { repoRoot: root }),
-      /missing or empty store file/,
-    )
-
-    write(pdf, 'pdf bytes')
-    write(manifest, '[]')
-    assert.throws(
-      () => checkIngest(['li2026-example'], { repoRoot: root }),
-      /store manifest is missing/,
-    )
-  })
-})
-
-test('fails when a store manifest size disagrees with the local blob', () => {
-  withFixture((root) => {
-    write(
-      join(root, 'library/papers/2026/li2026-example/notes.md'),
-      note({
-        citekey: 'li2026-example',
-        kind: 'papers',
-        sources: { pdf: 'https://example.com/paper.pdf' },
-      }),
-    )
-    write(
-      join(root, 'shadow/library/papers/2026/li2026-example/transcript.md'),
-      '# Transcript\n',
-    )
-    write(
-      join(
-        root,
-        'shadow/store/library/papers/2026/li2026-example/li2026-example.pdf',
-      ),
-      'pdf bytes',
-    )
-    write(
-      join(root, 'shadow/store.manifest.json'),
-      JSON.stringify([
-        {
-          Path: 'library/papers/2026/li2026-example/li2026-example.pdf',
-          Size: 99,
-          IsDir: false,
-        },
-      ]),
-    )
-    assert.throws(
-      () => checkIngest(['li2026-example'], { repoRoot: root }),
-      /store manifest size mismatch/,
+      /missing or empty pdf/,
     )
   })
 })

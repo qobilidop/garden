@@ -4,7 +4,7 @@ work:
   title: What exactly is “CUDA”? (Democratizing AI Compute, Part 2)
   author: Chris Lattner
   date: 2025-02-05
-source: https://www.modular.com/blog/democratizing-compute-part-2-what-exactly-is-cuda  # snapshot → shadow; figures (1 PNG) → store
+source: https://www.modular.com/blog/democratizing-compute-part-2-what-exactly-is-cuda  # snapshot + figures (1 PNG) → shadow
 discussions:
   - https://news.ycombinator.com/item?id=42955793  # 2025-02-05
 retrieved: 2026-08-11

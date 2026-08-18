@@ -7,7 +7,7 @@ work:
   date: 2021
   doi: 10.1016/j.infsof.2021.106589
 read: full-text
-source: "transcript at shadow/library/papers/2021/vandinter2021-automation/transcript.md (green OA accepted-manuscript copy via Wageningen University repository, Taverne Amendment; PDF in Drive store)"
+source: "transcript at shadow/library/papers/2021/vandinter2021-automation/transcript.md (green OA accepted-manuscript copy via Wageningen University repository, Taverne Amendment; PDF in shadow)"
 facets:
   stage: "meta"
   contribution: "evaluation"

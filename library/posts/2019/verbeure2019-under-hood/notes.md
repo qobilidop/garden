@@ -4,7 +4,7 @@ work:
   title: Under the hood of Formal Verification
   author: Tom Verbeure
   date: 2019-01-04
-source: https://tomverbeure.github.io/rtl/2019/01/04/Under-the-Hood-of-Formal-Verification.html  # snapshot → shadow; figures (2 PNGs, 1 SVG) → store
+source: https://tomverbeure.github.io/rtl/2019/01/04/Under-the-Hood-of-Formal-Verification.html  # snapshot + figures (2 PNGs, 1 SVG) → shadow
 discussions:
   - https://news.ycombinator.com/item?id=18849617  # 2019-01-07; submission has no comments
 retrieved: 2026-08-11

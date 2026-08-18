@@ -7,7 +7,7 @@ work:
   date: 2025-11-12
   doi: 10.1038/s41586-025-09833-y
 sources:
-  pdf: https://www.nature.com/articles/s41586-025-09833-y.pdf  # → store; open-access version of record
+  pdf: https://www.nature.com/articles/s41586-025-09833-y.pdf  # → shadow; open-access version of record
 retrieved: 2026-08-08
 notes-by: Claude Fable 5
 notes-date: 2026-08-08

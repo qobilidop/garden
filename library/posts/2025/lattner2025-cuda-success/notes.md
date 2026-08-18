@@ -4,7 +4,7 @@ work:
   title: How did CUDA succeed? (Democratizing AI Compute, Part 3)
   author: Chris Lattner
   date: 2025-02-12
-source: https://www.modular.com/blog/democratizing-ai-compute-part-3-how-did-cuda-succeed  # snapshot → shadow; figures (3 PNGs) → store
+source: https://www.modular.com/blog/democratizing-ai-compute-part-3-how-did-cuda-succeed  # snapshot + figures (3 PNGs) → shadow
 discussions:
   - https://news.ycombinator.com/item?id=43032153  # 2025-02-13
 retrieved: 2026-08-11

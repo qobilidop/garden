@@ -4,7 +4,7 @@ work:
   title: My Personal Journey in Verification
   author: Dan Gisselquist
   date: 2024-07-06
-source: https://zipcpu.com/formal/2024/07/06/verifjourney.html  # snapshot → shadow; figures (2 SVGs) → store
+source: https://zipcpu.com/formal/2024/07/06/verifjourney.html  # snapshot + figures (2 SVGs) → shadow
 retrieved: 2026-08-11
 notes-by: Codex GPT-5.6 Sol
 notes-date: 2026-08-11

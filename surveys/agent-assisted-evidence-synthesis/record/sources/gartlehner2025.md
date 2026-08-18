@@ -7,7 +7,7 @@ work:
   date: 2025
   doi: 10.1002/cesm.70063
 read: full-text
-source: "shadow/store/library/papers/2025/gartlehner2025-rapid-ai/"
+source: "shadow/library/papers/2025/gartlehner2025-rapid-ai/"
 facets:
   stage: "meta"
   contribution: "guideline"

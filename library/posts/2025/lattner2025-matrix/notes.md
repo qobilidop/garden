@@ -4,7 +4,7 @@ work:
   title: "Modular’s bet to break out of the Matrix (Democratizing AI Compute, Part 10)"
   author: Chris Lattner
   date: 2025-05-08
-source: https://www.modular.com/blog/modulars-bet-to-break-out-of-the-matrix-democratizing-ai-compute-part-10  # snapshot → shadow; figures (1 PNG) → store
+source: https://www.modular.com/blog/modulars-bet-to-break-out-of-the-matrix-democratizing-ai-compute-part-10  # snapshot + figures (1 PNG) → shadow
 discussions:
   - https://news.ycombinator.com/item?id=43998911  # 2025-05-15
 retrieved: 2026-08-11

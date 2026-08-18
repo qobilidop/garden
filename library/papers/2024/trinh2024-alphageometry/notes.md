@@ -7,7 +7,7 @@ work:
   date: 2024-01-17
   doi: 10.1038/s41586-023-06747-5
 sources:
-  pdf: https://www.nature.com/articles/s41586-023-06747-5.pdf  # → store; open-access version of record
+  pdf: https://www.nature.com/articles/s41586-023-06747-5.pdf  # → shadow; open-access version of record
     # Nature stamps each download, so live fetches are never byte-identical;
     # the stored blob came from a verified existing Wayback capture
 retrieved: 2026-08-08

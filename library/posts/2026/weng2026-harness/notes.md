@@ -4,7 +4,7 @@ work:
   title: Harness Engineering for Self-Improvement
   author: Lilian Weng
   date: 2026-07-04
-source: https://lilianweng.github.io/posts/2026-07-04-harness/  # snapshot → shadow; figures (18 PNGs) → store
+source: https://lilianweng.github.io/posts/2026-07-04-harness/  # snapshot + figures (18 PNGs) → shadow
 discussions:
   - https://x.com/lilianweng/status/2074372369213428144  # 2026-07-07
   - https://news.ycombinator.com/item?id=49164896  # 2026-08-04

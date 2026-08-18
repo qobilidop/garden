@@ -4,7 +4,7 @@ work:
   title: What about TVM, XLA, and AI compilers? (Democratizing AI Compute, Part 6)
   author: Chris Lattner
   date: 2025-03-12
-source: https://www.modular.com/blog/democratizing-ai-compute-part-6-what-about-ai-compilers  # snapshot → shadow; figures (1 JPEG, 2 PNGs) → store
+source: https://www.modular.com/blog/democratizing-ai-compute-part-6-what-about-ai-compilers  # snapshot + figures (1 JPEG, 2 PNGs) → shadow
 discussions:
   - https://news.ycombinator.com/item?id=43349501  # 2025-03-13
 retrieved: 2026-08-11

@@ -80,5 +80,5 @@ synthesis: "AI-augmented Grounded Theory SLR framework, human-AI role split"
   listing, the Goethe WIIM chair's Hinz publications page, and the first
   author's personal site — none host a preprint or postprint. No
   pirate-mirror fallback attempted.
-- No transcript in shadow/store; nothing ingested into the library. This
+- No transcript in shadow; nothing ingested into the library. This
   note is scratch-survey-only under `sources/`.

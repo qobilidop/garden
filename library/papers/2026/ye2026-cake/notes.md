@@ -7,7 +7,7 @@ work:
   doi: 10.48550/arXiv.2608.12629
   arxiv: 2608.12629 (v1, preprint — no venue)
 sources:
-  pdf: https://arxiv.org/pdf/2608.12629v1  # → store; pinned to v1
+  pdf: https://arxiv.org/pdf/2608.12629v1  # → shadow; pinned to v1
   record: https://arxiv.org/abs/2608.12629
 retrieved: 2026-08-17
 notes-by: Claude Fable 5

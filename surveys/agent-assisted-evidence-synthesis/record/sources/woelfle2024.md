@@ -7,7 +7,7 @@ work:
   date: 2024
   doi: 10.1016/j.jclinepi.2024.111533
 read: full-text
-source: "shadow/store/library/papers/2024/woelfle2024-appraisal/"
+source: "shadow/library/papers/2024/woelfle2024-appraisal/"
 facets:
   stage: "appraise"
   contribution: "evaluation"

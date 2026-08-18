@@ -7,7 +7,7 @@ work:
   doi: 10.48550/arXiv.2603.26524
   arxiv: 2603.26524 (v1; unabridged version of a solicited chapter for the forthcoming Blackwell Companion to the Philosophy of Mathematics)
 sources:
-  pdf: https://arxiv.org/pdf/2603.26524v1  # → store; pinned to v1
+  pdf: https://arxiv.org/pdf/2603.26524v1  # → shadow; pinned to v1
   html: https://terrytao.wordpress.com/2026/03/29/mathematical-methods-and-human-thought-in-the-age-of-ai/  # author announcement (2026-03-29) → shadow snapshot
   record: https://arxiv.org/abs/2603.26524
 discussions:

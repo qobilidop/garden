@@ -79,5 +79,5 @@ synthesis: "ChatGPT 3.5/4 vs human RoB judgments, pilot letter"
   versions (ChatGPT 3.5 *and* 4 vs. just 3.5), the RoB tool version, and
   the N=15/6-domains figure could not be cross-checked against each
   other and may be incomplete or slightly wrong.
-- No transcript exists in shadow/store — nothing was ingested into the
+- No transcript exists in shadow — nothing was ingested into the
   library; this note is scratch-survey-only under `sources/`.

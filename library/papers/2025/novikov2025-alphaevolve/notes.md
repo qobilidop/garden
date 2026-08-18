@@ -7,7 +7,7 @@ work:
   doi: 10.48550/arXiv.2506.13131
   arxiv: 2506.13131 (v1, sole version; white paper, not peer-reviewed)
 sources:
-  pdf: https://arxiv.org/pdf/2506.13131v1  # → store; pinned to v1
+  pdf: https://arxiv.org/pdf/2506.13131v1  # → shadow; pinned to v1
 retrieved: 2026-08-08
 notes-by: Claude Fable 5
 notes-date: 2026-08-08

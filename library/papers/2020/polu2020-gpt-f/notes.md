@@ -7,7 +7,7 @@ work:
   doi: 10.48550/arXiv.2009.03393
   arxiv: 2009.03393 (v1, sole version; preprint — never venue-published)
 sources:
-  pdf: https://arxiv.org/pdf/2009.03393v1  # → store; pinned to v1
+  pdf: https://arxiv.org/pdf/2009.03393v1  # → shadow; pinned to v1
 retrieved: 2026-08-08
 notes-by: Claude Fable 5
 notes-date: 2026-08-08

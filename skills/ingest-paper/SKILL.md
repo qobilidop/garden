@@ -1,14 +1,14 @@
 ---
 name: ingest-paper
-description: Ingest a research paper into the sys library — canonical PDF to the Drive store, mechanical transcript to shadow, author-labeled synthesis notes to sys. Use when asked to ingest, add, or capture a paper (given a URL, DOI, arXiv id, or title) into the library. For informal web-native writing (blog posts, announcements, Q&A answers), use ingest-post instead.
-compatibility: "Requires the sys repo with its private shadow/ checkout, an rclone store: remote, and network access; ./dev.sh supplies pinned tools (rclone, pymupdf4llm) when the host lacks them."
+description: Ingest a research paper into the sys library — canonical PDF and mechanical transcript to shadow, author-labeled synthesis notes to sys. Use when asked to ingest, add, or capture a paper (given a URL, DOI, arXiv id, or title) into the library. For informal web-native writing (blog posts, announcements, Q&A answers), use ingest-post instead.
+compatibility: "Requires the sys repo with its private shadow/ checkout and network access; ./dev.sh supplies pinned tools (pymupdf4llm) when the host lacks them."
 ---
 
 # Ingest a paper
 
-Work from the sys repo root. Requires the private `shadow/` checkout and an
-rclone `store:` remote; `./dev.sh <cmd>` provides the pinned toolchain
-(rclone, pymupdf4llm) when the host lacks it.
+Work from the sys repo root. Requires the private `shadow/` checkout;
+`./dev.sh <cmd>` provides the pinned toolchain (pymupdf4llm) when the host
+lacks it.
 
 ## 1. Resolve the work
 
@@ -75,8 +75,8 @@ judgment.
 
 ## 3. Capture to tiers
 
-- **Blob → store**:
-  `shadow/store/library/papers/<year>/<citekey>/<citekey>.pdf`
+- **Blob → shadow**:
+  `shadow/library/papers/<year>/<citekey>/<citekey>.pdf`
 - **Text form → shadow** (always — cheap rereads and grep for every future
   session):
   - PDF source: `tools/transcribe.sh library/papers/<year>/<citekey>/<citekey>.pdf`
@@ -104,7 +104,7 @@ work:
   doi: <doi if one exists>          # identifies the work — lives here, not under sources
   arxiv: <id vN + note> (if applicable)
 sources:
-  pdf: <immutable download url>  # → store
+  pdf: <immutable download url>  # → shadow
   html: <page url>               # → shadow snapshot (when a web-native source exists)
   record: <landing page url>     # bibliographic identity only; no capture tier implied
 retrieved: <today>
@@ -162,12 +162,9 @@ is stored here.
 
 ## 6. Close
 
-- `tools/store.sh push` — uploads the blob and regenerates
-  `shadow/store.manifest.json` (explicit copy only; nothing deletes).
-- Run `node tools/check-ingest.mjs <citekey>` after the push. It reuses the
-  site's canonical source parser and checks the fresh notes, transcript,
-  local blob, and remote-derived manifest entry and byte size without printing
-  the library inventory. `sources.html` always promises a direct, non-empty
+- Run `node tools/check-ingest.mjs <citekey>`. It reuses the site's canonical
+  source parser and checks the fresh notes, transcript, and blob without
+  printing the library inventory. `sources.html` always promises a direct, non-empty
   snapshot; use `sources.record` for an uncaptured publisher/DOI landing page.
 - Transcripts and raw HTML snapshots are mechanical output and may contain
   source whitespace. Preserve them byte-for-byte. At commit time, stage only
@@ -184,7 +181,7 @@ is stored here.
   merely to review whitespace diagnostics.
 - Run `npm --prefix site run build` on the host to close source-schema,
   wikilink, and rendering checks. Then propose the two commits (sys: notes;
-  shadow: text form + manifest), each ending with the agent's attribution
+  shadow: blob + text form), each ending with the agent's attribution
   trailer (`Co-Authored-By: <agent + model> <email>`). Commit only on the
   user's word. When the request is only to commit and push, successful pushes
   complete it; wait for Pages and verify live routes only when publication or

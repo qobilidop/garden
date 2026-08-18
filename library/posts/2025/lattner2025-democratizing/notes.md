@@ -4,7 +4,7 @@ work:
   title: "How is Modular Democratizing AI Compute? (Democratizing AI Compute, Part 11)"
   author: Chris Lattner
   date: 2025-06-20
-source: https://www.modular.com/blog/how-is-modular-democratizing-ai-compute  # snapshot → shadow; figures (1 PNG) → store
+source: https://www.modular.com/blog/how-is-modular-democratizing-ai-compute  # snapshot + figures (1 PNG) → shadow
 discussions:
   - https://news.ycombinator.com/item?id=44330907  # 2025-06-20
 retrieved: 2026-08-11
