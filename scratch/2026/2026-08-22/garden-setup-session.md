@@ -86,3 +86,37 @@ notes in this directory are canonical and this note only points.
   fan-out rule asks for, and it held. The cold-read review later
   found one likely misclassification (drewdevault.com), recorded as
   a caveat in the hosting note.
+
+## Evolve outcome (run at session end)
+
+Accepted and applied: (1) AGENTS.md §Conventions — retired-identity
+sweep rule; (2) global rule in both mirrored configs — browser-mediated
+setup handoff (stage to one click, human confirms destructive/
+credential actions, no screenshot with a secret on screen); (3)
+tend-site — no third-party runtime origins; (4) memory hygiene —
+`sys0-website` → `garden-website`, profile/résumé memory trimmed to
+the living fact; (5) evolve skill names the `Process residue for
+/evolve` section and the multi-session read; (7) ingest-post — HN
+Algolia is https-only (from the 08-17 staging).
+
+Held: (6) ingest-paper `discussions:` template field — the 08-17 note
+claimed two papers use it; only klowden2026-human-thought does. Stays
+staged until a second.
+
+Staged (single occurrence): DNS probing hygiene (never `dig` a name
+before its records exist; verify via `@1.1.1.1` / `--resolve`); rename
+runbook gaps (GHCR packages don't follow renames, Pages path); artifact
+visual review = serve the HTML locally; cold-read of notes by a fresh
+agent as QA (found real issues tonight); the research-fan-out →
+first-principles pattern (second occurrence after the 08-21 TLD pass —
+a skill candidate on the third); Bili found a visual explainer useful
+for infra topology.
+
+Dropped: Pages DNS-before-cname ordering and wrangler's delete-A-first
+quirk — Pages is gone; both remain in the hosting note as record.
+
+Hygiene noted, not acted on: the live Claude settings.json carried two
+stale `rclone` permission entries from the retired store tier and an
+auto-mode environment block Claude Code wrote; pulled into the repo
+copy as-is per the config rule. Removing the rclone entries is Bili's
+call.
