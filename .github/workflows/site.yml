@@ -7,6 +7,7 @@ on:
       - "wiki/**"
       - "library/**"
       - "surveys/**"
+      - "brand/**"
       - "site/**"
       - ".github/workflows/site.yml"
   workflow_dispatch:
@@ -39,6 +40,8 @@ jobs:
       # .devcontainer/ races the image republish (dev-image.yml) —
       # if this step fails on a stale image, re-run after it merges.
       - run: python3 site/scripts/build-manuscripts.py
+      # Logo variants, master raster, favicons from brand/ (stdlib only).
+      - run: python3 site/scripts/build-brand.py
       - run: npm ci
         working-directory: site
       - run: npm run build

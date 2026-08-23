@@ -4,6 +4,9 @@
 /site/.astro/
 /site/.wrangler/
 /site/public/surveys/
+/site/public/brand/
+/site/public/favicon.svg
+/site/public/favicon.png
 __pycache__/
 
 # Ignore temporary files

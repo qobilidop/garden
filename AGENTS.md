@@ -92,6 +92,12 @@
   standalone by design), compiled into `site/public/` by
   `site/scripts/build-manuscripts.py` (typst pinned in the dev
   image).
+- `brand/logo.svg` is the canonical mark and `brand/favicon.svg` its
+  16-unit reduction (contract in `brand/README.md`);
+  `site/scripts/build-brand.py` derives the color variants, the 1024
+  master raster, and the favicons into gitignored `site/public/` at
+  build — the site serves them under `/brand/` and never commits a
+  rendered logo.
 - Owned logic lives in `site/src/lib/` (wikilink resolution, backlink
   graph, work metadata); everything else is rented substrate (Astro,
   remark, KaTeX, Pagefind, Mermaid, wrangler). An unresolved `[[target]]` fails

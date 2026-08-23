@@ -12,9 +12,12 @@ fail the build via `lintContent()` in `site/src/lib/sitemap.mjs`,
 called at config load (`astro.config.mjs`). Survey manuscripts are
 compiled separately — `./dev.sh python3 site/scripts/build-manuscripts.py`
 (typst, pinned in the dev image; the HTML target is experimental) into
-gitignored `site/public/surveys/`; CI runs the same script before the
-Astro build, and a push that changes `.devcontainer/` races the image
-republish — the proven recovery, runnable as one background chain:
+gitignored `site/public/surveys/`, and the logo variants and favicons
+by `python3 site/scripts/build-brand.py` (stdlib only, runs on the
+host) from `brand/logo.svg` and `brand/favicon.svg` into gitignored
+`site/public/brand/` and `site/public/favicon.*`; CI runs both scripts
+before the Astro build, and a push that changes `.devcontainer/` races
+the image republish — the proven recovery, runnable as one background chain:
 `gh run watch <dev-image-run> --exit-status && gh workflow run
 site.yml`, then watch the new run and curl the live page.
 

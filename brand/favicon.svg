@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-.5 -.5 16 16">
+  <!-- 16×16 unit grid; each token is one 1-unit-wide stroke: M<col> <row>h<len>|v<len> -->
+  <path fill="none" stroke="currentColor" stroke-linecap="square" d="
+    M5 1h5  M6 1v2  M9 1v2  M5 3h5
+    M4 5h7  M4 5v6  M11 5v6
+    M6 7h3  M6 7v3  M9 7v3  M6 10h3
+    M6 12v1  M9 12v1  M5 14h1  M9 14h1
+  "/>
+</svg>
