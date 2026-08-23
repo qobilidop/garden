@@ -19,8 +19,8 @@
   the working evidence and synthesis trail.
 ]
 #let draft = "Draft 2026-08-09"
-#let landing = "https://qobilidop.github.io/sys0/surveys/agent-assisted-evidence-synthesis/"
-#let record = "https://github.com/qobilidop/sys0/tree/main/surveys/agent-assisted-evidence-synthesis/record"
+#let landing = "https://qobilidop.com/surveys/agent-assisted-evidence-synthesis/"
+#let record = "https://github.com/qobilidop/garden/tree/main/surveys/agent-assisted-evidence-synthesis/record"
 
 #let abstract-body = [
   AI systems now target every stage of evidence synthesis. This exploratory

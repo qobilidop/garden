@@ -74,7 +74,7 @@ registered queries were rerun at caps of the top 100 relevance- or
 recency-ranked results. No candidate-status work supports a claim, and no
 absence claim is drawn from the unresolved rows. The protocol, queries, catalog, log, source notes,
 syntheses, and evidence and claim ledgers are linked from
-#link("https://qobilidop.github.io/sys0/surveys/dataflow-selection-enumeration/")[the survey's landing page].
+#link("https://qobilidop.com/surveys/dataflow-selection-enumeration/")[the survey's landing page].
 
 == Validity threats and AI assistance
 

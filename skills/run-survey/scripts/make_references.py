@@ -65,7 +65,7 @@ def fmt(entry):
 
 
 def fetch(url, accept=None):
-    req = urllib.request.Request(url, headers={"User-Agent": "sys0-bibgen"})
+    req = urllib.request.Request(url, headers={"User-Agent": "garden-bibgen"})
     if accept:
         req.add_header("Accept", accept)
     with urllib.request.urlopen(req, timeout=30) as r:

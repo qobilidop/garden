@@ -1,10 +1,10 @@
-# qobilidop/sys0
+# qobilidop/garden
 
-## What is sys0?
+## What is garden?
 
-- Bili's public digital system, version 0.
+- Bili's public digital system.
 - Built around human-AI collaboration.
-- Web view: https://qobilidop.github.io/sys0/.
+- Web view: https://qobilidop.com/.
 
 ## License
 

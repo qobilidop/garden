@@ -6,7 +6,7 @@ import { librarySources } from '../site/src/lib/library-sources.mjs'
 
 const DEFAULT_TIMEOUT_MS = 30_000
 const CDX_TIMEOUT_MS = 10_000
-const USER_AGENT = 'sys0 archive maintenance (+https://github.com/qobilidop/sys0)'
+const USER_AGENT = 'garden archive maintenance (+https://github.com/qobilidop/garden)'
 
 function usage() {
   return `Usage: node tools/archive-library.mjs [options]

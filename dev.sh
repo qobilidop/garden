@@ -17,7 +17,7 @@ cd "$(dirname "$0")"
 # Opportunistically arm the leak-guard hooks (idempotent; survives fresh clones).
 git config core.hooksPath hooks 2>/dev/null || true
 
-IMG="${DEV_IMAGE:-ghcr.io/qobilidop/sys0/dev:latest}"
+IMG="${DEV_IMAGE:-ghcr.io/qobilidop/garden/dev:latest}"
 
 DEV_SETUP_ACTION=""
 case "${1:-}" in

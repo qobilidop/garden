@@ -13,8 +13,8 @@
   record preserves the protocol, catalog, decisions, and evidence trail.
 ]
 #let draft = "Draft 2026-08-12"
-#let landing = "https://qobilidop.github.io/sys0/surveys/symbolic-execution-hardware/"
-#let record = "https://github.com/qobilidop/sys0/tree/main/surveys/symbolic-execution-hardware/record"
+#let landing = "https://qobilidop.com/surveys/symbolic-execution-hardware/"
+#let record = "https://github.com/qobilidop/garden/tree/main/surveys/symbolic-execution-hardware/record"
 
 #let abstract-body = [
   “Symbolic execution” is used broadly in hardware verification, sometimes

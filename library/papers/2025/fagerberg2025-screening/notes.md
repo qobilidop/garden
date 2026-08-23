@@ -144,7 +144,7 @@ untested.
   this paper says varying the *seed* is nearly worthless (κ 0.78–0.93)
   and varying the *model family* catches systematic blind spots, while
   leaving the middle ground (same family, different tier or prompt
-  framing) unmeasured; it also models the adjudication move sys0 surveys
+  framing) unmeasured; it also models the adjudication move garden surveys
   can reuse: treat agent-reference disagreement as a queue for auditing
   the reference, not just the agent.
 

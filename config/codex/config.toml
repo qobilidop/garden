@@ -1,4 +1,4 @@
-# Durable user preferences managed by sys0. sync.py merges only these keys into
+# Durable user preferences managed by garden. sync.py merges only these keys into
 # the live config and preserves all other Codex- and machine-managed state.
 
 approvals_reviewer = "user"

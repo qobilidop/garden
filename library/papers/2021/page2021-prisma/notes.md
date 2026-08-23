@@ -73,7 +73,7 @@ thinner than its citation count suggests.
 - **In this library:** the reporting phase of
   [[kitchenham2007-slr]]
   matured into an enforced, versioned artifact — and the map for the
-  survey layer's deposition gate: a sys0 survey's frozen record
+  survey layer's deposition gate: a garden survey's frozen record
   should be able to answer PRISMA's items (search strategies in the
   audited logs, 16b in the disposition-coded catalog, items 8–9 as
   agent-pass disclosure, item 27 trivially by construction). The

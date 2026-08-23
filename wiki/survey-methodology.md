@@ -108,7 +108,7 @@ inter-rater reliability still bounds it.
 
 ## The agent-era frontier
 
-The canon predates agents, and the first sys0 survey
+The canon predates agents, and the first garden survey
 ([[agent-assisted-evidence-synthesis]]) maps part of what has grown in the gap:
 776 include-level works on AI-assisted evidence synthesis from 2020–2026, with
 31 selected evidence notes. Its dated, relevance-capped catalog is not a

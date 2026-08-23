@@ -1,6 +1,6 @@
 ---
 name: tend-site
-description: Develop and verify the sys0 website (site/, Astro) — the build/preview/deploy loop, its cache and environment traps, and where the site's contract and lints live. Use when changing site/ code or styles, debugging site builds or deploys, or verifying content renders on the published site.
+description: Develop and verify the garden website (site/, Astro) — the build/preview/deploy loop, its cache and environment traps, and where the site's contract and lints live. Use when changing site/ code or styles, debugging site builds or deploys, or verifying content renders on the published site.
 ---
 
 # Tend the site

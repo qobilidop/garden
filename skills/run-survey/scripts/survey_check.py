@@ -288,7 +288,7 @@ def run(config):
     expected_links = [
         "- [Manuscript (HTML)](manuscript.html)",
         "- [Manuscript (PDF)](manuscript.pdf)",
-        f"- [Survey record](https://github.com/qobilidop/sys0/tree/main/surveys/{survey.name}/record)",
+        f"- [Survey record](https://github.com/qobilidop/garden/tree/main/surveys/{survey.name}/record)",
     ]
     if links_match:
         link_lines = [line.strip() for line in links_match.group(1).splitlines() if line.strip()]

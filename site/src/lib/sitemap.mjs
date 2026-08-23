@@ -176,7 +176,7 @@ export function lintContent(resolve) {
   }
 }
 
-// base: the site base path, e.g. '/sys0'
+// base: the site base path ('' at the domain root, '/sub' under a prefix)
 // Returns Map<name, {href, label, kind}>
 export function buildResolveMap(base) {
   const resolve = new Map()

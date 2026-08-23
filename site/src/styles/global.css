@@ -1,4 +1,4 @@
-/* sys0 — grayscale, typography-first. Prose in serif (Charter/Georgia,
+/* garden — grayscale, typography-first. Prose in serif (Charter/Georgia,
    zero webfonts); apparatus (nav, metadata, backlinks) in system sans.
    Light and dark follow prefers-color-scheme by default; an explicit
    nav-toggle choice sets data-theme on <html> and wins (the dark token

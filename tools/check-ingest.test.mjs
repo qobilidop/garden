@@ -31,7 +31,7 @@ ${sourceBlock}
 }
 
 function fixture() {
-  return mkdtempSync(join(tmpdir(), 'sys0-check-ingest-'))
+  return mkdtempSync(join(tmpdir(), 'garden-check-ingest-'))
 }
 
 function withFixture(run) {

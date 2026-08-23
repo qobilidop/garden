@@ -23,7 +23,13 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    container: ghcr.io/${{ github.repository }}/dev:latest
+    container:
+      image: ghcr.io/${{ github.repository }}/dev:latest
+      # Explicit credentials so the pull works even while the package is
+      # private (a fresh package after a repo rename starts private).
+      credentials:
+        username: ${{ github.actor }}
+        password: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - uses: actions/checkout@v7
         with:

@@ -109,7 +109,7 @@ def marker_path(value: Any, prefix: tuple[str, ...] = ()) -> tuple[str, ...] | N
     if not isinstance(value, dict):
         return None
     for key, child in value.items():
-        if key == "__sys0_marker__":
+        if key == "__garden_marker__":
             return prefix
         found = marker_path(child, prefix + (key,))
         if found is not None:
@@ -122,7 +122,7 @@ def parse_header(line: str) -> tuple[str, ...] | None:
     if not stripped.startswith("[") or stripped.startswith("[["):
         return None
     try:
-        parsed = tomllib.loads(f"{stripped}\n__sys0_marker__ = true\n")
+        parsed = tomllib.loads(f"{stripped}\n__garden_marker__ = true\n")
     except tomllib.TOMLDecodeError:
         return None
     return marker_path(parsed)
@@ -209,7 +209,7 @@ def atomic_write(
     temporary: Path | None = None
     try:
         with tempfile.NamedTemporaryFile(
-            prefix=f".{path.name}.sys0-", dir=path.parent, delete=False
+            prefix=f".{path.name}.garden-", dir=path.parent, delete=False
         ) as stream:
             temporary = Path(stream.name)
             stream.write(data)

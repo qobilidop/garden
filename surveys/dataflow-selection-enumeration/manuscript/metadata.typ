@@ -19,8 +19,8 @@
   title metadata documents the working evidence and synthesis trail.
 ]
 #let draft = "Draft 2026-08-09"
-#let landing = "https://qobilidop.github.io/sys0/surveys/dataflow-selection-enumeration/"
-#let record = "https://github.com/qobilidop/sys0/tree/main/surveys/dataflow-selection-enumeration/record"
+#let landing = "https://qobilidop.com/surveys/dataflow-selection-enumeration/"
+#let record = "https://github.com/qobilidop/garden/tree/main/surveys/dataflow-selection-enumeration/record"
 
 #let abstract-body = [
   Different inputs can make a shared graph consult different selection nodes.

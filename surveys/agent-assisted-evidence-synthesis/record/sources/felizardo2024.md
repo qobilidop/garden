@@ -48,7 +48,7 @@ synthesis: "ChatGPT-4o data-extraction accuracy in one SE mapping study"
 
 Directly relevant to RQ2 (reliability): a named accuracy figure
 (87.83%) for LLM-assisted data extraction against human-produced ground
-truth, in the SE setting — the same stage and domain as sys0's own
+truth, in the SE setting — the same stage and domain as garden's own
 mapping-study practice, giving this note above-average bearing on the
 survey's own methodology even at abstract-only depth. The single-number,
 single-SMS design (no breakdown by field/study, no second model, no

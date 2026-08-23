@@ -1,5 +1,5 @@
 {
-  "name": "sys0",
+  "name": "garden",
   "build": {
     "dockerfile": "Dockerfile"
   }
