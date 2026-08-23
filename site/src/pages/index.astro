@@ -4,6 +4,7 @@ import Mark from '../components/Mark.astro'
 import ProfileLinks from '../components/ProfileLinks.astro'
 import { name, nameCJK } from '../lib/profile'
 
+const base = import.meta.env.BASE_URL.replace(/\/$/, '')
 const tagline = 'Software for a living, research out of curiosity, build in the open.'
 const description = `${name} (${nameCJK}). ${tagline}`
 ---
@@ -23,6 +24,7 @@ const description = `${name} (${nameCJK}). ${tagline}`
   <p class="profile-intro">
     This is my garden — a public knowledge base within a broader digital
     system: a library of ingested works, wiki topics distilled across them,
-    and survey manuscripts.
+    and survey manuscripts. My record lives in the
+    <a href={`${base}/cv/`}>curriculum vitae</a>.
   </p>
 </Base>

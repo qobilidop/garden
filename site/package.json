@@ -19,7 +19,8 @@
     "pagefind": "^1.5.2",
     "rehype-katex": "^7.0.1",
     "remark-math": "^6.0.0",
-    "unist-util-visit": "^5.0.0"
+    "unist-util-visit": "^5.0.0",
+    "yaml": "^2.9.0"
   },
   "devDependencies": {
     "wrangler": "^4.125.0"

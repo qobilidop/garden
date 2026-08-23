@@ -42,6 +42,8 @@ jobs:
       - run: python3 site/scripts/build-manuscripts.py
       # Logo variants, master raster, favicons from brand/ (stdlib only).
       - run: python3 site/scripts/build-brand.py
+      # CV PDF from cv/cv.yaml via cv/cv.typ (typst, pinned in the dev image).
+      - run: python3 site/scripts/build-cv.py
       - run: npm ci
         working-directory: site
       - run: npm run build

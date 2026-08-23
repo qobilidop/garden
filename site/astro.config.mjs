@@ -4,6 +4,9 @@ import remarkMath from 'remark-math'
 import rehypeKatex from 'rehype-katex'
 import remarkWikilinks from './src/lib/wikilinks.mjs'
 import { buildResolveMap, lintContent } from './src/lib/sitemap.mjs'
+// Importing the CV loader validates cv/cv.yaml against its schema at
+// config load — render-time errors don't gate the build, this does.
+import './src/lib/cv.ts'
 
 // Served at the domain root (custom domain on Pages); a '/sub' prefix
 // here must match `base` below.

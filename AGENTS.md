@@ -82,10 +82,11 @@
 - `site/` renders the repo to a static site at qobilidop.com (Astro),
   served by Cloudflare Workers static assets (`site/wrangler.jsonc`);
   the build output is plain files, so the host is replaceable. It
-  reads exactly `wiki/`, `library/`, and `surveys/*/index.md` — the
-  three collections in `site/src/content.config.ts` are the allowlist
-  — and writes nothing back; presentation needs never reshape note
-  conventions. A survey groups as `index.md` (landing page, the
+  reads exactly `wiki/`, `library/`, `surveys/*/index.md`, and
+  `cv/cv.yaml` — the three collections in `site/src/content.config.ts`
+  plus the CV loader (`site/src/lib/cv.ts`, whose zod schema is the
+  machine check on the record's shape) are the allowlist — and writes
+  nothing back; presentation needs never reshape note conventions. A survey groups as `index.md` (landing page, the
   citekey/backlink surface) + `record/` (the minimal resumable state:
   method, searches, catalog, evidence notes) + `manuscript/` (Typst
   paper: paged + HTML wrappers over shared `content.typ`/`metadata.typ`,
