@@ -1,0 +1,28 @@
+---
+// Outbound profile links as brand marks; `labels` adds the name beside
+// each mark (landing page); without it the mark carries its own label
+// (footer). rel="me" ties the profiles back to this site.
+import { profiles } from '../lib/profile'
+
+interface Props {
+  labels?: boolean
+  class?: string
+}
+
+const { labels = false, class: className } = Astro.props
+---
+
+<ul class:list={['profile-links', className]}>
+  {
+    profiles.map((p) => (
+      <li>
+        <a href={p.href} rel="me" aria-label={labels ? undefined : p.label} title={p.label}>
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d={p.path} />
+          </svg>
+          {labels && <span>{p.label}</span>}
+        </a>
+      </li>
+    ))
+  }
+</ul>

@@ -1,18 +1,23 @@
 ---
 import 'katex/dist/katex.min.css'
 import '../styles/global.css'
+import Mark from '../components/Mark.astro'
+import ProfileLinks from '../components/ProfileLinks.astro'
+import { name } from '../lib/profile'
 
 interface Props {
   title?: string
+  // Use the title as-is, without the "· site" suffix (the landing page).
+  bare?: boolean
   description?: string
 }
 
-const { title, description } = Astro.props
+const { title, bare = false, description } = Astro.props
 const base = import.meta.env.BASE_URL.replace(/\/$/, '')
-const siteName = 'Bili Dong'
+const siteName = name
 // One canonical address however the page was reached (aliases 301 here).
 const canonical = new URL(Astro.url.pathname, Astro.site)
-const pageTitle = title ? `${title} · ${siteName}` : siteName
+const pageTitle = title ? (bare ? title : `${title} · ${siteName}`) : siteName
 ---
 
 <!doctype html>
@@ -35,7 +40,7 @@ const pageTitle = title ? `${title} · ${siteName}` : siteName
   <body>
     <header class="site-header">
       <nav>
-        <a href={`${base}/`} class="brand">Bili Dong</a>
+        <a href={`${base}/`} class="brand"><Mark class="brand-mark" />{siteName}</a>
         <span class="nav-sections">
           <a href={`${base}/library/`}>library</a>
           <a href={`${base}/wiki/`}>wiki</a>
@@ -43,7 +48,7 @@ const pageTitle = title ? `${title} · ${siteName}` : siteName
         </span>
         <span class="nav-utilities">
           <a href={`${base}/search/`}>search</a>
-          <a href="https://github.com/qobilidop/garden">github</a>
+          <a href="https://github.com/qobilidop/garden">source</a>
           <button
             id="theme-toggle"
             class="theme-toggle"
@@ -62,11 +67,7 @@ const pageTitle = title ? `${title} · ${siteName}` : siteName
         non-code
         <a href="https://github.com/qobilidop/garden/blob/main/LICENSE-CC-BY">CC BY 4.0</a>
       </p>
-      <p>
-        <a href="https://github.com/qobilidop" rel="me">github</a> ·
-        <a href="https://www.linkedin.com/in/qobilidop/" rel="me">linkedin</a> ·
-        <a href="https://x.com/qobilidop" rel="me">x</a>
-      </p>
+      <ProfileLinks class="footer-links" />
     </footer>
     <script>
       // Theme toggle: flip from the currently effective theme; the

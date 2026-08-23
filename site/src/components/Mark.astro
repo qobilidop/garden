@@ -1,0 +1,15 @@
+---
+// The personal mark, inlined from brand/logo.svg so it takes the
+// surrounding text color (stroke="currentColor"); size it with CSS
+// on the class. Decorative — the adjacent name carries the meaning.
+import svg from '../../../brand/logo.svg?raw'
+
+interface Props {
+  class?: string
+}
+
+const { class: className } = Astro.props
+const html = svg.replace('<svg ', `<svg class="${className ?? ''}" aria-hidden="true" focusable="false" `)
+---
+
+<Fragment set:html={html} />

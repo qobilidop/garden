@@ -120,7 +120,7 @@ export function workOf(entry: CollectionEntry<'library'>): Work {
   return (w ?? {}) as Work
 }
 
-const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+export const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
 
 export function displayDateOf(
   entry: CollectionEntry<'library'>,

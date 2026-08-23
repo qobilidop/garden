@@ -2,11 +2,23 @@
 import { getCollection } from 'astro:content'
 import Base from '../../layouts/Base.astro'
 import { extractTitle } from '../../lib/works'
+import { entryPath, monthLabel, newest, wikiUpdatedAt } from '../../lib/recency'
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '')
-const entries = (await getCollection('wiki'))
-  .map((e) => ({ id: e.id, title: extractTitle(e.body ?? '') ?? e.id }))
-  .sort((a, b) => a.title.localeCompare(b.title))
+// Newest update first; the label is the update month.
+const entries = newest(
+  (await getCollection('wiki')).map((e) => ({
+    id: e.id,
+    title: extractTitle(e.body ?? '') ?? e.id,
+    timestamp: wikiUpdatedAt(entryPath(e.filePath)),
+  })),
+  Infinity,
+)
+// Ledger convention: label a month only on its first (newest) entry.
+const labels = entries.map((e, i) => {
+  const m = monthLabel(e.timestamp)
+  return i > 0 && monthLabel(entries[i - 1].timestamp) === m ? undefined : m
+})
 ---
 
 <Base title="wiki">
@@ -15,11 +27,16 @@ const entries = (await getCollection('wiki'))
     Living topic pages distilling the library across works. A page exists
     only once enough material has accumulated to synthesize.
   </p>
-  <ul>
+  <ul class="work-list">
     {
-      entries.map((e) => (
+      entries.map((e, i) => (
         <li>
           <a href={`${base}/wiki/${e.id}/`}>{e.title}</a>
+          {labels[i] && (
+            <span class="tag">
+              <span class="month">{labels[i]}</span>
+            </span>
+          )}
         </li>
       ))
     }

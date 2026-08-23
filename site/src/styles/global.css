@@ -103,8 +103,19 @@ body {
 }
 
 .site-header a.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
   color: var(--fg);
   font-weight: 600;
+}
+
+/* The mark is 9×22 units; at one line-height tall it is a thin glyph
+   beside the name, stroked in the current text color. */
+.brand-mark {
+  height: 1.3rem;
+  width: auto;
+  display: block;
 }
 
 .theme-toggle {
@@ -484,18 +495,155 @@ img {
   margin: 0.35rem 0;
 }
 
+/* Landing page: the profile — mark, name, intro, outbound profiles */
+
+/* Card: the tall mark stands beside the text like a seal beside a
+   signature — a column, not a banner; centered on the text block
+   (name, tagline, contacts). The intro follows at full measure. */
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+  padding-top: 1rem;
+  margin-bottom: 2.25rem;
+}
+
+.profile-mark {
+  flex: none;
+  display: block;
+  height: 6.5rem;
+  width: auto;
+}
+
+.profile-text {
+  min-width: 0;
+}
+
+/* A wrapping row: the two names sit on one line with a small gap and,
+   when the line is too narrow, break between them (never inside) with
+   no stray indent. */
+.profile-name {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  column-gap: 0.45em;
+  font-size: 1.9em;
+  margin: 0 0 0.3rem;
+}
+
+/* One line of fact under the name — apparatus, so sans and muted. */
+.profile-tagline {
+  margin: 0 0 0.8rem;
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+/* The Chinese name is the same name, not a gloss: bare juxtaposition in
+   one heading (no parentheses, no interpunct — clreq reserves 间隔号 for
+   divisions within one name), same color, regular weight against the
+   bold Latin, a quarter-em beyond the word space (clreq's Han–Latin
+   spacing ceiling). lang="zh-Hans" lets the engine pick Simplified
+   glyph forms; the stack names serif CJK faces to match the serif Latin. */
+.profile-name-cjk {
+  white-space: nowrap; /* CJK breaks between any two characters; keep the name whole */
+  font-family: "Songti SC", "Noto Serif CJK SC", "Source Han Serif SC",
+    "Noto Serif SC", SimSun, var(--serif);
+  font-weight: 400;
+}
+
+.profile-intro {
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .profile {
+    gap: 1.25rem;
+  }
+
+  .profile-mark {
+    height: 5.25rem;
+  }
+
+  .profile-name {
+    font-size: 1.6em;
+  }
+}
+
+/* Outbound profiles: brand marks in the text color, sans labels */
+
+.profile-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: var(--sans);
+}
+
+.profile-links li {
+  margin: 0;
+}
+
+.profile-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45em;
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.profile-links a:hover {
+  color: var(--fg);
+}
+
+.profile-links svg {
+  width: 1.15em;
+  height: 1.15em;
+  fill: currentColor;
+  display: block;
+}
+
+.profile-contacts {
+  gap: 1rem;
+  font-size: 1.15rem;
+}
+
 /* Footer */
 
+/* Footer: one rule, one line — licenses left, profiles right, like the
+   header's sections/utilities split; stacks centered on narrow screens. */
+
 .site-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem 1.5rem;
   margin-top: 4rem;
   padding: 1.25rem 0 2rem;
   border-top: 1px solid var(--rule);
   font-family: var(--sans);
   font-size: 0.8rem;
-  text-align: center;
   color: var(--muted);
 }
 
 .site-footer a {
   color: inherit;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+.footer-links {
+  gap: 1.1rem;
+  font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+  .site-footer {
+    flex-direction: column;
+    text-align: center;
+  }
 }

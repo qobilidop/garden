@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content'
 import Base from '../../layouts/Base.astro'
 import { dateOf, extractTitle, fieldOf, shelfOf, workOf } from '../../lib/works'
+import { entryPath, ingestedAt, newest } from '../../lib/recency'
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '')
 const entries = (await getCollection('library')).map((e) => ({
@@ -11,7 +12,9 @@ const entries = (await getCollection('library')).map((e) => ({
   author: workOf(e).author,
   synthesis: fieldOf(e, 'synthesis'),
   date: dateOf(e),
+  timestamp: ingestedAt(entryPath(e.filePath)),
 }))
+const recent = newest([...entries], 5)
 
 const byYear = new Map<string, typeof entries>()
 for (const e of entries) {
@@ -42,6 +45,16 @@ for (const year of years) {
     Papers and posts ingested into the system, each with synthesis notes.
     Grouped by publication year.
   </p>
+  <section>
+    <h2>Recently ingested</h2>
+    <ul>
+      {recent.map((e) => (
+        <li>
+          <a href={`${base}/library/${e.id}/`}>{e.title}</a>
+        </li>
+      ))}
+    </ul>
+  </section>
   {
     years.map((year) => (
       <section>

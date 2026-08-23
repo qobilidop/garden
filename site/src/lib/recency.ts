@@ -3,6 +3,7 @@
 // so a pre-commit preview still reflects the work in progress.
 import { execFileSync } from 'node:child_process'
 import { isAbsolute, relative, resolve, sep } from 'node:path'
+import { MONTHS } from './works'
 
 const WORKTREE_NOW = new Date().toISOString()
 let root: string | undefined
@@ -95,4 +96,10 @@ export function newest<T extends { id: string; timestamp: string }>(
         b.timestamp.localeCompare(a.timestamp) || a.id.localeCompare(b.id),
     )
     .slice(0, limit)
+}
+
+// "Aug 2026" for an ISO timestamp — the index pages' recency label.
+export function monthLabel(timestamp: string): string {
+  const d = new Date(timestamp)
+  return `${MONTHS[d.getUTCMonth()]} ${d.getUTCFullYear()}`
 }
