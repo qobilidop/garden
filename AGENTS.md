@@ -45,6 +45,14 @@
   migration agents once ran `git stash`/`pop` under five concurrent
   writers, both seeking the clean baseline a worktree would have
   given them.
+- Outward-facing gated actions (push, deploy, publication of personal
+  data) are never delegated: subagents produce and return; the main
+  session ships on directly-received user approval. A hold sent to a
+  running agent says "stop and return your work" — never "await a
+  relayed go-ahead": naming an authority the agent cannot verify on
+  its only channel deadlocks by construction (a CV subagent once held
+  all commits for good on exactly that reasoning, while the harness
+  flagged its relay request as manufactured authorization).
 
 ## Layer contracts
 

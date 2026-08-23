@@ -46,7 +46,10 @@ site.yml`, then watch the new run and curl the live page.
   interactive, and browser-engine-specific behavior as unverified.
 - Deploy: push triggers `.github/workflows/site.yml` (builds in the dev
   image, then `npm run deploy` → Cloudflare Worker `garden` serving
-  qobilidop.com). Watch by exit code (`gh run watch <id>
+  qobilidop.com). `site.yml`'s push `paths` must name every source the
+  site reads (the §Site allowlist) — a source added without its trigger
+  path deploys silently stale (`cv/**` was missed in 2026-08). Watch by
+  exit code (`gh run watch <id>
   --exit-status`), then curl `https://qobilidop.com/…` for the specific
   change. If GitHub Actions is down, publish from the host: `npm run
   build && npm run deploy` in `site/` (one-time `npx wrangler login`).
