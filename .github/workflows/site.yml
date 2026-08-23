@@ -45,6 +45,16 @@ jobs:
         working-directory: site
       - run: npm run build
         working-directory: site
+      # Primary host: Cloudflare Workers static assets (site/wrangler.jsonc).
+      # Token scopes: Account · Workers Scripts · Edit; Zone · Workers Routes ·
+      # Edit (qobilidop.com). Roll it in the Cloudflare dashboard if lost.
+      - run: npm run deploy
+        working-directory: site
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: 6629e6b3d096e09e6f0900d4faf33541
+      # Standby host: GitHub Pages keeps the same build, dormant behind the
+      # custom-domain redirect until DNS is flipped back to it.
       - uses: actions/upload-pages-artifact@v5
         with:
           path: site/dist

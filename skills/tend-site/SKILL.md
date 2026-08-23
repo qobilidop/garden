@@ -39,9 +39,14 @@ site.yml`, then watch the new run and curl the live page.
   typographic smoke test; if no browser is available, report responsive,
   interactive, and browser-engine-specific behavior as unverified.
 - Deploy: push triggers `.github/workflows/site.yml` (builds in the dev
-  image, deploys to Pages). Watch by exit code
-  (`gh run watch <id> --exit-status`), then curl the live page for the
-  specific change. Read the run's final annotations even when it succeeds;
+  image, then `npm run deploy` → Cloudflare Worker `garden` serving
+  qobilidop.com, then the Pages artifact as dormant standby). Watch by
+  exit code (`gh run watch <id> --exit-status`), then curl
+  `https://qobilidop.com/…` for the specific change. If GitHub Actions
+  is down, publish from the host: `npm run build && npm run deploy` in
+  `site/` (one-time `npx wrangler login`). Failover runbook:
+  `scratch/2026/2026-08-22/hosting-decision.md`.
+  Read the run's final annotations even when it succeeds;
   a runtime-deprecation annotation on an action is a maintenance finding,
   not a green-run exemption (Node 20 action drift surfaced this way in
   2026-08).

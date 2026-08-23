@@ -1,0 +1,19 @@
+// Primary hosting: Cloudflare Workers static assets. The Worker holds no
+// code — it serves site/dist as-is. GitHub Pages stays the dormant standby
+// (see scratch/2026/2026-08-22/hosting-decision.md for the runbook).
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "garden",
+  "compatibility_date": "2026-08-22",
+  "assets": {
+    "directory": "./dist",
+    // Serve /foo/ for /foo and vice versa the way Pages does; 404.html for misses.
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  },
+  // No default <name>.<account>.workers.dev hostname: qobilidop.com is the only address.
+  "workers_dev": false,
+  "routes": [
+    { "pattern": "qobilidop.com", "custom_domain": true }
+  ]
+}

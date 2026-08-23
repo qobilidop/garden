@@ -79,10 +79,12 @@
 
 ## Site
 
-- `site/` renders the repo to GitHub Pages (Astro). It reads exactly
-  `wiki/`, `library/`, and `surveys/*/index.md` — the three
-  collections in `site/src/content.config.ts` are the allowlist — and
-  writes nothing back; presentation needs never reshape note
+- `site/` renders the repo to a static site at qobilidop.com (Astro),
+  served by Cloudflare Workers static assets (`site/wrangler.jsonc`)
+  with GitHub Pages as a dormant standby behind the same build. It
+  reads exactly `wiki/`, `library/`, and `surveys/*/index.md` — the
+  three collections in `site/src/content.config.ts` are the allowlist
+  — and writes nothing back; presentation needs never reshape note
   conventions. A survey groups as `index.md` (landing page, the
   citekey/backlink surface) + `record/` (the minimal resumable state:
   method, searches, catalog, evidence notes) + `manuscript/` (Typst
@@ -92,12 +94,13 @@
   image).
 - Owned logic lives in `site/src/lib/` (wikilink resolution, backlink
   graph, work metadata); everything else is rented substrate (Astro,
-  remark, KaTeX, Pagefind, Mermaid). An unresolved `[[target]]` fails
+  remark, KaTeX, Pagefind, Mermaid, wrangler). An unresolved `[[target]]` fails
   the build.
-- CI builds in the dev image (`.github/workflows/site.yml`); local
-  builds run on the host per tend-site. `dev.sh` rejects direct package-
-  manager commands because container installs would clobber native binaries
-  in the shared `node_modules`.
+- CI builds in the dev image (`.github/workflows/site.yml`) and
+  deploys to both hosts; local builds and emergency deploys (`npm run
+  deploy`, OAuth via `wrangler login`) run on the host per tend-site.
+  `dev.sh` rejects direct package-manager commands because container
+  installs would clobber native binaries in the shared `node_modules`.
 
 ## Conventions
 

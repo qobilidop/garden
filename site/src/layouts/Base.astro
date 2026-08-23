@@ -10,6 +10,8 @@ interface Props {
 const { title, description } = Astro.props
 const base = import.meta.env.BASE_URL.replace(/\/$/, '')
 const siteName = 'Bili Dong'
+// One canonical address however the page was reached (aliases 301 here).
+const canonical = new URL(Astro.url.pathname, Astro.site)
 const pageTitle = title ? `${title} · ${siteName}` : siteName
 ---
 
@@ -20,6 +22,7 @@ const pageTitle = title ? `${title} · ${siteName}` : siteName
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{pageTitle}</title>
     {description && <meta name="description" content={description} />}
+    <link rel="canonical" href={canonical} />
     <link rel="icon" href={`${base}/favicon.png`} type="image/png" sizes="128x128" />
     <script is:inline>
       // Pre-paint: apply the stored theme choice before first render so
