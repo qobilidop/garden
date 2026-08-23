@@ -29,3 +29,8 @@
   drops a final line that lacks a trailing newline — iterate lists
   with a tool that reads to EOF, and verify bulk operations by
   recount against the input, never by loop completion.
+- Browser-mediated setup on the user's behalf: fill forms to one click
+  and hand off — the human clicks Create/Delete/Submit on destructive or
+  account-changing actions and handles every credential value; take no
+  screenshot while a secret is on screen; a blocked confirmation is
+  handed over, never worked around.
