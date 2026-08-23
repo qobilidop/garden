@@ -82,8 +82,11 @@ den/nest/hearth-style continuity (the access-tier scheme in the
   GitHub's API, no file in the repo), so `github.io/garden/` stays a
   301 to the apex (to `http://`, which Cloudflare then upgrades — no
   duplicate content) and the standby is always current.
-- `www` → apex via a Cloudflare Redirect Rule (proxied `www` record);
-  Always Use HTTPS on; `<link rel="canonical">` in every page.
+- `www` → apex via a Cloudflare Redirect Rule; the `www` record is a
+  proxied CNAME to the apex (retargeted from `qobilidop.github.io` so
+  nothing in DNS names GitHub), and the rule is the whole mechanism —
+  without it `www` would error rather than fall through. Always Use
+  HTTPS on; `<link rel="canonical">` in every page.
 - Residual, accepted: a Cloudflare-wide outage takes DNS too; only
   secondary DNS elsewhere would help, and no one in the sample does
   that for a personal site.
