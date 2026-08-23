@@ -48,7 +48,7 @@ publications:
     url: https://doi.org/10.1145/3718958.3750484
   - title: "Introducing yt 4.0: Analysis and Visualization of Volumetric Data"
     authors: Matthew Turk et al. (incl. Bili Dong)
-    venue: Tech. rep., Manubot
+    venue: Technical report, Manubot
     # Year per how the literature cites this living document ("Turk et al.
     # 2025, Tech. rep., Manubot"), e.g. in https://arxiv.org/abs/2603.28862
     year: 2025
