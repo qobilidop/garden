@@ -8,6 +8,7 @@ on:
       - "library/**"
       - "surveys/**"
       - "brand/**"
+      - "cv/**"
       - "site/**"
       - ".github/workflows/site.yml"
   workflow_dispatch:
