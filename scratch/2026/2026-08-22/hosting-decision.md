@@ -4,6 +4,17 @@ author: Claude Fable 5
 
 # Hosting: Cloudflare Workers primary, GitHub Pages standby
 
+**Amended later the same night — standby removed.** Bili weighed
+setup simplicity above hedging against Cloudflare's own outages, so
+GitHub Pages was disabled entirely (Pages setting, `github-pages`
+environment, verified domain, and the TXT record removed; `site.yml`
+deploys only to the Worker). `qobilidop.github.io/garden/` no longer
+exists in any form. The "Standby" bullets and runbook step below are
+kept as the record of what was built and why; the live topology is:
+repo → GitHub Actions (or the host) → Worker `garden` → qobilidop.com.
+Restoring Pages is minutes of settings plus re-adding a deploy step;
+the static output is host-agnostic by design.
+
 Written after the cutover note; supersedes its "GitHub Pages" framing.
 Trigger: Bili's sense that GitHub has grown less stable, and a wish to
 hedge. Evidence in three sibling notes (same directory):
@@ -104,6 +115,9 @@ Verified: apex 200 on https, http→https 301, trailing-slash 307,
 404 page, `www` 301 with query preserved, `github.io/garden/…` 301.
 
 ## Runbook
+
+(Failover below was retired with the standby — kept as record. What
+remains live: the "publish when Actions is down" and "token" items.)
 
 Failover to GitHub Pages (Cloudflare hosting broken, DNS up):
 1. Cloudflare → Workers & Pages → `garden` → Settings → Domains &

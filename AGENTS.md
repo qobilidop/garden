@@ -80,8 +80,8 @@
 ## Site
 
 - `site/` renders the repo to a static site at qobilidop.com (Astro),
-  served by Cloudflare Workers static assets (`site/wrangler.jsonc`)
-  with GitHub Pages as a dormant standby behind the same build. It
+  served by Cloudflare Workers static assets (`site/wrangler.jsonc`);
+  the build output is plain files, so the host is replaceable. It
   reads exactly `wiki/`, `library/`, and `surveys/*/index.md` — the
   three collections in `site/src/content.config.ts` are the allowlist
   — and writes nothing back; presentation needs never reshape note
@@ -97,8 +97,9 @@
   remark, KaTeX, Pagefind, Mermaid, wrangler). An unresolved `[[target]]` fails
   the build.
 - CI builds in the dev image (`.github/workflows/site.yml`) and
-  deploys to both hosts; local builds and emergency deploys (`npm run
-  deploy`, OAuth via `wrangler login`) run on the host per tend-site.
+  deploys with `npm run deploy`; local builds and emergency deploys
+  (same command, OAuth via `wrangler login`) run on the host per
+  tend-site.
   `dev.sh` rejects direct package-manager commands because container
   installs would clobber native binaries in the shared `node_modules`.
 
