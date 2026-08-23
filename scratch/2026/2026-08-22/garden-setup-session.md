@@ -20,9 +20,12 @@ notes in this directory are canonical and this note only points.
   don't matter, and the `www` CNAME target never needed the repo).
 - Hosting re-decided the same night after a research pass (49-site
   probe, authors' rationales, option/incident survey): Cloudflare
-  Workers static assets primary, GitHub Pages dormant standby, one
-  address, CI and host both able to publish. Record:
-  `hosting-decision.md` (+ three research notes beside it).
+  Workers static assets, one address, CI and host both able to
+  publish. A GitHub Pages standby was built first and then removed
+  within the hour — Bili chose setup simplicity over hedging
+  Cloudflare's own outages — so the Worker is the sole host and
+  GitHub Pages is fully disabled. Record: `hosting-decision.md`
+  (+ three research notes beside it).
 - Harness updated in the same change: AGENTS.md §Site, tend-site
   deploy loop. An explainer artifact of the deploy path was produced
   for Bili's understanding and retired once it served.
@@ -38,8 +41,9 @@ notes in this directory are canonical and this note only points.
   the Worker removes even that (no default hostname), and the
   canonical link makes the one address explicit.
 - Registrar + DNS + hosting at one vendor is acceptable because DNS
-  already made Cloudflare a serial dependency; GitHub Pages stays as a
-  parallel standby, not a link in the chain.
+  already made Cloudflare a serial dependency; a parallel GitHub
+  Pages standby was judged not worth its explanation debt for a
+  personal site and removed.
 
 ## Process residue for /evolve
 
@@ -67,6 +71,11 @@ notes in this directory are canonical and this note only points.
 - Wrangler refuses to attach a custom domain while A/AAAA records
   exist; delete first, deploy twice. HTTPS comes up instantly on the
   zone's certificate — a hidden benefit over Pages' ACME wait.
+- Two "inert leftovers" were caught only by Bili asking why: the
+  `www` record still targeting `qobilidop.github.io`, and the
+  standby itself. Lesson: after a topology change, sweep every
+  record/setting for names of the retired vendor, not just for
+  function.
 - The explainer artifact (a published HTML page from this session,
   since retired) could not be scrolled by browser automation inside
   its viewer frame; visual review meant serving the same HTML on
