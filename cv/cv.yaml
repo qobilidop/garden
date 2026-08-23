@@ -1,0 +1,127 @@
+# Canonical CV record. HTML page and PDF are generated views; edit only here.
+# Entries are facts with public sources. Reverse-chronological within sections.
+# Sections render only when nonempty.
+
+name: Bili Dong
+as_of: 2026-08-23
+links:
+  site: https://qobilidop.com
+  github: https://github.com/qobilidop
+  linkedin: https://www.linkedin.com/in/qobilidop/
+  scholar: https://scholar.google.com/citations?user=zFukAaUAAAAJ
+
+employment:
+  - role: Software Engineer
+    org: Google
+    start: 2022
+    end: present
+  - role: Software Engineer Intern
+    org: Google
+    year: 2021
+  - role: Software Engineer Intern
+    org: ByteDance
+    year: 2020
+
+education:
+  - degree: MS, Computer Science
+    org: UC San Diego
+    start: 2020
+    end: 2022
+  - degree: PhD candidate, Physics
+    org: UC San Diego
+    start: 2014
+    end: 2020
+  - degree: BS, Physics
+    org: Peking University
+    start: 2010
+    end: 2014
+
+publications:
+  # Papers with 20+ authors use "First-author et al. (incl. Bili Dong)".
+  # The renderer bolds "Bili Dong".
+  - title: "ParserHawk: Hardware-aware parser generator using program synthesis"
+    authors: >-
+      Xiangyu Gao, Jiaqi Gao, Karan Kumar G, Muhammad Haseeb, Ennan Zhai,
+      Bili Dong, Joseph Tassarotti, Srinivas Narayana, Anirudh Sivaraman
+    venue: ACM SIGCOMM
+    year: 2025
+    url: https://doi.org/10.1145/3718958.3750484
+  - title: "Introducing yt 4.0: Analysis and Visualization of Volumetric Data"
+    authors: Matthew Turk et al. (incl. Bili Dong)
+    venue: Tech. rep., Manubot
+    # Year per how the literature cites this living document ("Turk et al.
+    # 2025, Tech. rep., Manubot"), e.g. in https://arxiv.org/abs/2603.28862
+    year: 2025
+    url: https://yt-project.github.io/yt-4.0-paper/
+  - title: >-
+      The AGORA High-resolution Galaxy Simulations Comparison Project. VI.
+      Similarities and Differences in the Circumgalactic Medium
+    authors: Clayton Strawn et al. (incl. Bili Dong)
+    venue: The Astrophysical Journal
+    year: 2024
+    url: https://doi.org/10.3847/1538-4357/ad12cb
+  - title: >-
+      The AGORA High-resolution Galaxy Simulations Comparison Project. V.
+      Satellite Galaxy Populations in a Cosmological Zoom-in Simulation of a
+      Milky Way–Mass Halo
+    authors: Minyong Jung et al. (incl. Bili Dong)
+    venue: The Astrophysical Journal
+    year: 2024
+    url: https://doi.org/10.3847/1538-4357/ad245b
+  - title: >-
+      The AGORA High-resolution Galaxy Simulations Comparison Project. IV.
+      Halo and Galaxy Mass Assembly in a Cosmological Zoom-in Simulation at
+      z ≤ 2
+    authors: Santi Roca-Fàbrega et al. (incl. Bili Dong)
+    venue: The Astrophysical Journal
+    year: 2024
+    url: https://doi.org/10.3847/1538-4357/ad43de
+  - title: "Zenix: Efficient Execution of Bulky Serverless Applications"
+    authors: >-
+      Zhiyuan Guo, Zachary Blanco, Junda Chen, Jinmou Li, Zerui Wei, Bili Dong,
+      Ishaan Pota, Mohammad Shahrad, Harry Xu, Yiying Zhang
+    venue: arXiv
+    year: 2022
+    url: https://doi.org/10.48550/arXiv.2206.13444
+  - title: >-
+      The AGORA High-resolution Galaxy Simulations Comparison Project. III.
+      Cosmological Zoom-in Simulation of a Milky Way–mass Halo
+    authors: Santi Roca-Fàbrega et al. (incl. Bili Dong)
+    venue: The Astrophysical Journal
+    year: 2021
+    url: https://doi.org/10.3847/1538-4357/ac088a
+  - title: >-
+      The Keck Baryonic Structure Survey: using foreground/background galaxy
+      pairs to trace the structure and kinematics of circumgalactic neutral
+      hydrogen at z ∼ 2
+    authors: >-
+      Yuguang Chen, Charles C. Steidel, Cameron B. Hummels, Gwen C. Rudie,
+      Bili Dong, Ryan F. Trainor, Milan Bogosavljević, Dawn K. Erb,
+      Max Pettini, Naveen A. Reddy, Alice E. Shapley, Allison L. Strom,
+      Rachel L. Theios, Claude-André Faucher-Giguère, Philip F. Hopkins,
+      Dušan Kereš
+    venue: Monthly Notices of the Royal Astronomical Society
+    year: 2020
+    url: https://doi.org/10.1093/mnras/staa2808
+
+talks:
+  - title: "P4HIR: Towards Bridging P4C with MLIR"
+    event: P4 Workshop
+    year: 2024
+    url: https://www.youtube.com/watch?v=0qov53z_ExM
+
+service:
+  - role: Program Chair
+    event: P4 Workshop
+    year: 2026
+    url: https://p4.org/2026-workshop/
+  - role: Member, Technical Steering Team
+    org: P4 Language Consortium
+    start: 2026
+    end: present
+    url: https://p4.org/2026-p4-tst-election-results/
+  - role: Google Summer of Code Org Admin & Mentor
+    org: P4 Language Consortium
+    start: 2024
+    end: present
+    url: https://github.com/p4lang/gsoc
