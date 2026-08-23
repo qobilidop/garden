@@ -9,7 +9,7 @@ interface Props {
 
 const { title, description } = Astro.props
 const base = import.meta.env.BASE_URL.replace(/\/$/, '')
-const siteName = 'qobilidop/garden'
+const siteName = 'Bili Dong'
 const pageTitle = title ? `${title} · ${siteName}` : siteName
 ---
 
@@ -31,7 +31,7 @@ const pageTitle = title ? `${title} · ${siteName}` : siteName
   <body>
     <header class="site-header">
       <nav>
-        <a href={`${base}/`} class="brand">qobilidop/garden</a>
+        <a href={`${base}/`} class="brand">Bili Dong</a>
         <span class="nav-sections">
           <a href={`${base}/library/`}>library</a>
           <a href={`${base}/wiki/`}>wiki</a>
@@ -57,6 +57,11 @@ const pageTitle = title ? `${title} · ${siteName}` : siteName
         code <a href="https://github.com/qobilidop/garden/blob/main/LICENSE-MIT">MIT</a> ·
         non-code
         <a href="https://github.com/qobilidop/garden/blob/main/LICENSE-CC-BY">CC BY 4.0</a>
+      </p>
+      <p>
+        <a href="https://github.com/qobilidop" rel="me">github</a> ·
+        <a href="https://www.linkedin.com/in/qobilidop/" rel="me">linkedin</a> ·
+        <a href="https://x.com/qobilidop" rel="me">x</a>
       </p>
     </footer>
     <script>
