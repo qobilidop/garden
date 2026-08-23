@@ -115,6 +115,12 @@
   (Different altitudes — evidence, understanding, presentation — are
   not duplication.) The one data bug a day of survey work surfaced
   was a hand-copied count drifting from its ledger.
+- When a name, vendor, or host is retired, sweep every surface it
+  touched in the same change — repo text, CI, DNS records, dashboard
+  settings, packages — by searching for the *name*, not by testing
+  for function; an inert reference is still debt (the sys0→garden
+  rename left 31 files and a vanished CI image; the hosting move left
+  a `www` record and a whole standby naming the old host).
 
 ## Skills
 

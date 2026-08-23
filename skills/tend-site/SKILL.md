@@ -62,4 +62,6 @@ Grayscale tokens in `src/styles/global.css`; the only hues are the
 `--paper`/`--post` identity dots (CVD-validated against both surfaces).
 Serif prose, sans apparatus, mono citekey handles; 44rem measure.
 Design decisions trace to researched precedent — match that bar when
-changing them.
+changing them. No third-party runtime origins: fonts, scripts,
+analytics, and images all ship from the build (portability, and reach
+— Google Fonts and public CDNs are blocked in mainland China).

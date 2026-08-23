@@ -81,7 +81,8 @@ source; never bump it merely because the URL was fetched successfully.
 
 Start with bounded exact queries and expand only when a lead warrants it:
 
-- HN: query the exact title first through Algolia, capped at ten hits; query
+- HN: query the exact title first through Algolia (https only — plain http
+  returns an empty result), capped at ten hits; query
   the canonical URL only if needed. This is normally enough to recover the
   story, points, comment count, and UTC creation date.
 - Reddit/X: follow an exact indexed lead or search through an already-usable

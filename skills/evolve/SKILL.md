@@ -92,7 +92,10 @@ with errors on both sides).
 
 Write or update the session reflection in `scratch/` (principles that
 emerged, errors worth remembering, open threads — including staged
-lessons awaiting recurrence). Propose commits with the attribution
+lessons awaiting recurrence). Its staging section is titled `Process
+residue for /evolve`; the next /evolve reads those sections across
+recent scratch notes before mining the session. Propose commits with
+the attribution
 trailer; commit only on the user's word. Git is the audit trail and the
 rollback path.
 
