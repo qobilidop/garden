@@ -82,3 +82,17 @@ Bili wants the site easily reachable worldwide. Findings:
    (meta-refresh/JS to `https://qobilidop.com/`), then archive.
 6. tend-site: codify the no-third-party-origins rule at the next
    touch (batched for /evolve, not a point edit).
+
+## Outcome (same session, after the queue above)
+
+Queue items 1, 2, 3 and 5 done the same evening, browser-mediated
+with Bili's explicit go-ahead: DNS imported (DNS-only, BIND upload),
+domain verified on GitHub (TXT challenge), `garden/dev` already
+public, `sys0/dev` deleted, Squarespace auto-renew off (Bili),
+and the profile folded into the site (brand/title "Bili Dong",
+garden as tagline, social links as a plain-text footer line) —
+after which `qobilidop.github.io` was DELETED outright, no redirect
+stub: Bili does not care about old links, and the `www` CNAME
+target works without a user-site repo. Enforce HTTPS waits on
+GitHub's certificate issuance. Remaining: delete the Squarespace
+account after 2027-04-01; tend-site rule (item 6).
