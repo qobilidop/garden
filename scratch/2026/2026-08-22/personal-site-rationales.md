@@ -4,6 +4,15 @@ author: Claude Fable 5
 
 # How thoughtful people host their personal sites — rationales (web survey, 2026-08-22)
 
+Reconciliation: this note reports what authors *wrote*, often years
+ago; `personal-site-probe.md` reports where the sites are *now*, and
+wins where they differ (jvns.ca, xeiaso.net, karpathy.ai — probe
+shows Fastly, not Pages; drewdevault.com — sourcehut pages per his
+build file). Glosses: *Anubis* = a bot-challenge proxy; *Lindy
+effect* = what has lasted tends to last; *zine/hut* = sourcehut's
+static generator and CLI; *NFSN* = NearlyFreeSpeech.NET hosting;
+*IA/WebCite* = Internet Archive and an older link-archiving service.
+
 Method: WebSearch/WebFetch only. "Not found" = not in fetched primary text; [inferred]/[3rd-party] flagged. indieweb.org (403) and xeiaso.net (Anubis) could not be fetched directly.
 
 ## 1. Per author

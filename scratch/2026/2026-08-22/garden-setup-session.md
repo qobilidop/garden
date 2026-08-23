@@ -46,25 +46,34 @@ notes in this directory are canonical and this note only points.
 - Repo rename broke the live site silently on two axes the rename
   record didn't list: Pages kept serving at the new path while the
   build used the old base, and GHCR packages do not follow renames
-  (CI's image vanished). A rename runbook should include "republish
-  images; pull with credentials".
+  (CI's image vanished — GHCR is GitHub's container registry). A
+  rename runbook should include "republish images; pull with
+  credentials".
 - Pages' custom-domain redirect activates before DNS exists → a dark
   window; order is DNS first, then cname.
 - My early `dig`s before the records existed seeded negative caches
-  in the router and mDNSResponder; "site unreachable" was local for
-  ~30 min. Probe new names against `@1.1.1.1` / `--resolve`, never the
-  system resolver, and don't look a name up before it exists.
+  ("no such name", remembered for up to 30 min) in the home router
+  and in macOS's local resolver (mDNSResponder); "site unreachable"
+  was a local artefact. Probe new names against a public resolver
+  (`dig @1.1.1.1`) or pin the IP (`curl --resolve`), never the system
+  resolver, and don't look a name up before it exists.
 - Browser-mediated setup worked as a staged handoff: agent fills
   forms to one click; human clicks Create/Delete and handles every
   credential value (token created by Bili, pasted by Bili; bulk-delete
-  confirm typed by Bili after the auto-mode classifier blocked it).
+  confirm typed by Bili after Claude Code's auto-mode permission
+  classifier blocked it).
   Worth stating in AGENTS.md §Fan-out or a browser rule: stage, never
   confirm destructive or credential actions.
 - Wrangler refuses to attach a custom domain while A/AAAA records
   exist; delete first, deploy twice. HTTPS comes up instantly on the
   zone's certificate — a hidden benefit over Pages' ACME wait.
-- The artifact viewer's iframe ignores automation scroll; visual
-  review of an artifact means serving the same HTML on localhost.
-- Three research agents ran in parallel; the probe agent's partition
-  counts were recomputed (49 = 49 on both splits) before use — the
-  check the fan-out rule asks for, and it held.
+- The explainer artifact (a published HTML page from this session,
+  since retired) could not be scrolled by browser automation inside
+  its viewer frame; visual review meant serving the same HTML on
+  localhost.
+- Three research agents ran in parallel; the probe agent's four
+  partitions (hosting, DNS provider, apex vs platform subdomain,
+  proxy status) were each re-summed to 49 before use — the check the
+  fan-out rule asks for, and it held. The cold-read review later
+  found one likely misclassification (drewdevault.com), recorded as
+  a caveat in the hosting note.

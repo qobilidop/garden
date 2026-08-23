@@ -4,8 +4,26 @@ author: Claude Fable 5
 
 # Domain registered; site cut over to qobilidop.com
 
-Executes items 1–3 of the queue in the 2026-08-21 rename record;
-written after the registration completed.
+Executes the first three items of the execution queue in the rename
+record (`scratch/2026/2026-08-21/garden-rename.md`); written after
+the registration completed.
+
+**Superseded the same night:** hosting moved from GitHub Pages to
+Cloudflare Workers — see `hosting-decision.md`. The DNS and HTTPS
+details below describe the GitHub Pages setup that existed for about
+two hours; the registration, reachability, and sweep sections stand.
+
+Terms, for a reader new to this: the *apex* is the bare domain
+(`qobilidop.com`, no `www`); *A/AAAA records* map a name to IPv4/IPv6
+addresses; a *CNAME* makes one name an alias of another; a *TXT*
+record holds arbitrary text (used here as an ownership proof);
+*DNS-only* vs *proxied* ("grey" vs "orange cloud") is whether
+Cloudflare merely answers the lookup or also sits in front of the
+traffic; GitHub Pages' *custom-domain setting* is what makes Pages
+answer for a hostname (GitHub's API calls the field `cname`; it is
+not a file in this repo); *GHCR* is GitHub's container registry,
+where the dev image lives; an *ICP filing* is China's licence for
+serving a website to its residents.
 
 ## Registration
 
@@ -61,8 +79,10 @@ Bili wants the site easily reachable worldwide. Findings:
   credentials so a private package cannot break the build; Pages
   custom domain set to `qobilidop.com` via the API; dev-image workflow
   dispatched to publish `garden/dev`.
-- Pages redirects `qobilidop.github.io/garden/…` to the custom domain
-  once DNS resolves; `…/sys0/…` links are the accepted loss.
+- Pages answers `qobilidop.github.io/garden/…` with a 301 to the
+  custom domain as soon as the setting is saved — before DNS exists,
+  which left the site briefly unreachable (order is DNS first, then
+  the setting); `…/sys0/…` links are the accepted loss.
 
 ## Queue
 
@@ -85,7 +105,7 @@ Bili wants the site easily reachable worldwide. Findings:
 
 ## Outcome (same session, after the queue above)
 
-Queue items 1, 2, 3 and 5 done the same evening, browser-mediated
+Queue items 1–5 done the same evening, browser-mediated
 with Bili's explicit go-ahead: DNS imported (DNS-only, BIND upload),
 domain verified on GitHub (TXT challenge), `garden/dev` already
 public, `sys0/dev` deleted, Squarespace auto-renew off (Bili),
@@ -93,6 +113,7 @@ and the profile folded into the site (brand/title "Bili Dong",
 garden as tagline, social links as a plain-text footer line) —
 after which `qobilidop.github.io` was DELETED outright, no redirect
 stub: Bili does not care about old links, and the `www` CNAME
-target works without a user-site repo. Enforce HTTPS waits on
-GitHub's certificate issuance. Remaining: delete the Squarespace
-account after 2027-04-01; tend-site rule (item 6).
+target works without a user-site repo. Enforce HTTPS was still
+waiting on GitHub's certificate when hosting moved (pointer at the
+top), which made it moot. Remaining: delete the Squarespace account
+after 2027-04-01; tend-site rule (item 6).

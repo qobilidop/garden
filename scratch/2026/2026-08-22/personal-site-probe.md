@@ -2,7 +2,18 @@
 author: Claude Fable 5
 ---
 
-# Personal site hosting probe (2026-08-23, read-only: dig/curl/RDAP only)
+# Personal site hosting probe (2026-08-23 UTC, read-only: dig/curl/RDAP only)
+
+Reading notes: probed the evening of 2026-08-22 Pacific. *NS* =
+authoritative nameservers (who answers DNS for the name); *RDAP* =
+the registry lookup that says who owns a domain or IP block; *grey-*
+vs *orange-cloud* = Cloudflare DNS-only vs proxied; "GitHub Pages
+platform NS" = a `*.github.io` name with no domain of its own. This
+is the *current* state of each site; where it disagrees with the
+historical rationales note, this file wins for "where is it now" —
+see the caveat in `hosting-decision.md` (drewdevault.com is likely
+sourcehut-hosted rather than self-hosted; Turbify is the former
+Yahoo Small Business hosting).
 
 N = 49 sites probed.
 
