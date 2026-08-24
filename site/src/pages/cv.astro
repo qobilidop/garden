@@ -69,21 +69,14 @@ const linkLabels: Record<string, string> = {
     </section>
 
     <section>
-      <h2>Publications</h2>
+      <h2>Service</h2>
       {
-        cv.publications.map((p) => (
+        cv.service.map((s) => (
           <div class="cv-entry">
-            <span class="cv-dates">{p.year}</span>
+            <span class="cv-dates">{dates(s)}</span>
             <span>
-              <a href={p.url}>{p.title}</a>.
-              <span class="cv-authors">
-                {authorParts(p.authors).map((part, i) => (
-                  // prettier-ignore
-                  <>{i > 0 && <strong>{cv.name}</strong>}{part}</>
-                ))}
-              </span>
-              <span class="cv-venue">{p.venue}.</span>
-              {p.note && <span class="cv-note">{p.note}</span>}
+              <a href={s.url}>{s.role}</a>, {'event' in s ? s.event : s.org}
+              {s.note && <span class="cv-note">{s.note}</span>}
             </span>
           </div>
         ))
@@ -106,14 +99,21 @@ const linkLabels: Record<string, string> = {
     </section>
 
     <section>
-      <h2>Service</h2>
+      <h2>Publications</h2>
       {
-        cv.service.map((s) => (
+        cv.publications.map((p) => (
           <div class="cv-entry">
-            <span class="cv-dates">{dates(s)}</span>
+            <span class="cv-dates">{p.year}</span>
             <span>
-              <a href={s.url}>{s.role}</a>, {'event' in s ? s.event : s.org}
-              {s.note && <span class="cv-note">{s.note}</span>}
+              <a href={p.url}>{p.title}</a>.
+              <span class="cv-authors">
+                {authorParts(p.authors).map((part, i) => (
+                  // prettier-ignore
+                  <>{i > 0 && <strong>{cv.name}</strong>}{part}</>
+                ))}
+              </span>
+              <span class="cv-venue">{p.venue}.</span>
+              {p.note && <span class="cv-note">{p.note}</span>}
             </span>
           </div>
         ))

@@ -68,12 +68,11 @@
   }
 ]
 
-#if cv.publications.len() > 0 [
-  == Publications
-  #for p in cv.publications {
-    entry(str(p.year), with-note(p)[
-      #link(p.url, p.title). \
-      #muted[#authors(p.authors). #p.venue.]
+#if cv.service.len() > 0 [
+  == Service
+  #for s in cv.service {
+    entry(dates(s), with-note(s)[
+      #link(s.url)[#s.role, #if "event" in s { s.event } else { s.org }]
     ])
   }
 ]
@@ -85,11 +84,12 @@
   }
 ]
 
-#if cv.service.len() > 0 [
-  == Service
-  #for s in cv.service {
-    entry(dates(s), with-note(s)[
-      #link(s.url)[#s.role, #if "event" in s { s.event } else { s.org }]
+#if cv.publications.len() > 0 [
+  == Publications
+  #for p in cv.publications {
+    entry(str(p.year), with-note(p)[
+      #link(p.url, p.title). \
+      #muted[#authors(p.authors). #p.venue.]
     ])
   }
 ]

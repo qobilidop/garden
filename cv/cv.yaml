@@ -36,6 +36,28 @@ education:
     start: 2010
     end: 2014
 
+service:
+  - role: Program Chair
+    event: P4 Workshop
+    year: 2026
+    url: https://p4.org/2026-workshop/
+  - role: Member, Technical Steering Team
+    org: P4 Language Consortium
+    start: 2026
+    end: present
+    url: https://p4.org/2026-p4-tst-election-results/
+  - role: Google Summer of Code Org Admin & Mentor
+    org: P4 Language Consortium
+    start: 2024
+    end: present
+    url: https://github.com/p4lang/gsoc
+
+talks:
+  - title: "P4HIR: Towards Bridging P4C with MLIR"
+    event: P4 Workshop
+    year: 2024
+    url: https://www.youtube.com/watch?v=0qov53z_ExM
+
 publications:
   # Papers with 20+ authors use "First-author et al. (incl. Bili Dong)".
   # The renderer bolds "Bili Dong".
@@ -103,25 +125,3 @@ publications:
     venue: Monthly Notices of the Royal Astronomical Society
     year: 2020
     url: https://doi.org/10.1093/mnras/staa2808
-
-talks:
-  - title: "P4HIR: Towards Bridging P4C with MLIR"
-    event: P4 Workshop
-    year: 2024
-    url: https://www.youtube.com/watch?v=0qov53z_ExM
-
-service:
-  - role: Program Chair
-    event: P4 Workshop
-    year: 2026
-    url: https://p4.org/2026-workshop/
-  - role: Member, Technical Steering Team
-    org: P4 Language Consortium
-    start: 2026
-    end: present
-    url: https://p4.org/2026-p4-tst-election-results/
-  - role: Google Summer of Code Org Admin & Mentor
-    org: P4 Language Consortium
-    start: 2024
-    end: present
-    url: https://github.com/p4lang/gsoc
