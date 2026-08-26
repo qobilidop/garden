@@ -13,6 +13,22 @@ central thesis is that P4's architecture requirement is the flaw to fix.
 yet); the candidate backronym: **Proving Protocol-independent Packet
 Parsers** — still P4, every shifted word honest.
 
+The proposal splits into two separably-adoptable, separately-named
+layers: **p4neer** (working name, unswept) is the P4-facing profile
+alone — generic blocks, effects-as-metadata, device models outside
+P4 — adoptable by people who never touch Lean; p4lean is *a*, not
+*the*, semantics layer above it. p4neer earns its name three ways:
+*pioneer* (French *pionnier*, from *pion*, foot soldier) originally
+meant the military engineer who goes ahead of the army to prepare the
+ground before any fortification exists — the engineer who arrives
+before the architecture; the `-eer` agent suffix (engineer,
+mountaineer) gives "one who works P4 directly" — P4 engineering
+without the architect; and the leet reading (4 = A) gives *paneer* —
+cheese served in blocks: P4, served as blocks. Accepted tax, in the
+[[pakelesir-design]] ledger style: spelling-by-ear is poor (hearers
+type "paneer" or "pioneer"). The boring benchmark it must keep
+beating: `p4blocks`.
+
 Method note: claims below are primary-source-cited from single-agent
 research passes plus two direct fetches (µP4 repo, PSA spec), not
 panel-verified.
@@ -179,8 +195,9 @@ one's permission.
 
 ## Open items
 
-- Name sweep for p4lean (registries, GitHub, trademark adjacency to
-  p4.org and Perforce's P4) before anything public-facing.
+- Name sweeps for p4lean and p4neer (registries, GitHub, trademark
+  adjacency to p4.org and Perforce's P4) before anything
+  public-facing.
 - Prior art still unexamined: NetKAT lineage, Lucid, Π4
   (dependently-typed P4), P4Cub, Lyra — each needs a stated delta.
   µP4's paper deserves a full read beyond its README.
