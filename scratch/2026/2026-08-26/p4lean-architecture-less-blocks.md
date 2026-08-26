@@ -201,6 +201,66 @@ Upstream contributions happen as byproducts (p4c fixes discovered
 while building), not as strategy; the design deliberately requires no
 one's permission.
 
+## Project shape (p4neer repo)
+
+One repo. The first-class artifacts are the two contracts; the
+executables are evidence they work:
+
+1. **The profile contract** — the `.p4` include (block declarations +
+   inert wrapper packages) and its prose spec. The repo's front page.
+2. **The block IR schema** — the compiled-block format (protobuf),
+   public and documented. The load-bearing seam of the inversion: an
+   internal format would make this BMv2-with-different-JSON; a public
+   schema is where other backends and device models meet. Shared with
+   the Pakeles IR family (parser part), zero Lean dependency.
+3. **The simulator** — Rust device model + block engine consuming IR.
+   v0 brutally small: one switch model, pcap in/out, tables from a
+   plain config file (P4Runtime deferred).
+4. **The p4c backend** — P4-authored blocks → IR. Most expensive,
+   highest-churn component (p4c internals, upstream rebases).
+5. **Conformance corpus + BMv2 harness** — with formal semantics
+   deliberately outside p4neer, the source-to-source harness (blocks
+   wrapped into v1model on stock BMv2, diffed against the simulator)
+   is the repo's self-contained correctness oracle, and its golden
+   vectors are the public test corpus for any other implementation.
+
+Sequencing exploits IR-as-ABI decoupling: contract + IR schema →
+simulator against hand-authored IR fixtures (no p4c needed) → backend
+(acceptance test already waiting) → harness closes the differential
+loop. Front-loads the cheap novel parts; defers the churny one.
+
+**Execution packaging**, three layers: the *contract* stays the IR
+(device models load IR and choose interpret/JIT/AOT — the eBPF model:
+bytecode crosses the boundary, not machine code); the *embedding
+surface* is the engine as a library behind a small C ABI (every
+language binds it; zero-copy buffers; hosts link the reference
+engine, not arbitrary native plugins); the *distribution target* is
+Wasm, compiled from IR by the toolchain. Blocks are ideal Wasm
+citizens by construction — pure, syscall-free, float-free (fully
+deterministic), with externs-as-FFI mapping 1:1 onto Wasm imports
+supplied by the host — and Wasm is the one target with a formal
+semantics, keeping the trust chain articulable. Known cost:
+linear-memory copies; irrelevant for software device models,
+disqualifying only for line-rate paths, which consume IR by AOT
+compilation anyway. Precedent to verify: Envoy proxy-wasm
+(dataplane plugins in Wasm at scale), Extism, component-model/WIT
+maturity.
+
+**Browser playground** as a named milestone, two routes: (1) early —
+compile the *engine* to Wasm (mature Rust→Wasm path) and interpret IR
+client-side; edit surface is the textual IR, so no frontend toolchain
+in the browser; available as soon as the simulator exists. (2) later —
+blocks themselves compiled to Wasm modules. Because execution is
+bit-identical to CI, the conformance corpus doubles as interactive
+documentation (every golden vector a run-it-yourself example), and
+Compiler-Explorer-style share URLs (IR + packet) become the bug-report
+and teaching medium. Kaitai's ide.kaitai.io is the precedent for how
+much a browser IDE mattered to the one binary-format DSL that reached
+tooling maturity. Pure static assets — no server. Out of scope:
+in-browser eDSL (Pyodide, later at most) and in-browser Lean (proofs
+stay a CI/desktop story; the playground demonstrates behavior, not
+theorems).
+
 ## Open items
 
 - Name sweeps for p4lean and p4neer (registries, GitHub, trademark
@@ -213,6 +273,10 @@ one's permission.
   the Sail counter-spike from [[pakeles-formal-semantics-stack]].
 - Decidable-fragment check: parser feature list (lookahead, bounded
   header stacks) vs Leapfrog/Octopus restrictions.
-- Verify: p4c's out-of-tree extension mechanism, psa_switch
-  completeness, `error`-type portability across p4c targets, and the
-  fixed `PortId_t` width against Tofino/DPDK mappings.
+- Verify: p4c's out-of-tree extension mechanism (and submodule-vs-
+  installed-lib build strategy), psa_switch completeness, `error`-type
+  portability across p4c targets, and the fixed `PortId_t` width
+  against Tofino/DPDK mappings.
+- Verify the Wasm-plugin precedents from memory: Envoy proxy-wasm,
+  Extism, component-model/WIT maturity for typing block signatures at
+  the boundary.
