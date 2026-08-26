@@ -23,11 +23,19 @@ meant the military engineer who goes ahead of the army to prepare the
 ground before any fortification exists — the engineer who arrives
 before the architecture; the `-eer` agent suffix (engineer,
 mountaineer) gives "one who works P4 directly" — P4 engineering
-without the architect; and the leet reading (4 = A) gives *paneer* —
-cheese served in blocks: P4, served as blocks. Accepted tax, in the
-[[pakelesir-design]] ledger style: spelling-by-ear is poor (hearers
-type "paneer" or "pioneer"). The boring benchmark it must keep
-beating: `p4blocks`.
+without the architect; the leet reading (4 = A) gives *paneer* —
+cheese served in blocks: P4, served as blocks; the backronym reads
+N-E-E-R as **No Execution Environment Required** — an architecture
+*is* an execution environment, and a block's meaning and compilation
+require none (execution gets one later, supplied by a device model —
+the eBPF shape: programs defined environment-free, environment
+supplied at load time), with the four-pillar creed variant "No
+architecture, Effects as data, Externs as FFI, Runtime elsewhere";
+and *ne'er* is a real English contraction — P4, ne'er an
+architecture. Five readings, all pointing at the same thesis.
+Accepted tax, in the [[pakelesir-design]] ledger style:
+spelling-by-ear is poor (hearers type "paneer" or "pioneer"). The
+boring benchmark it must keep beating: `p4blocks`.
 
 Method note: claims below are primary-source-cited from single-agent
 research passes plus two direct fetches (µP4 repo, PSA spec), not
