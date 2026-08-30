@@ -556,6 +556,15 @@ img {
   margin: 0;
 }
 
+.profile-intro + .profile-intro {
+  margin-top: 1em;
+}
+
+/* Run-in anchors: match the site's 600 emphasis weight, not browser bold. */
+.profile-intro strong {
+  font-weight: 600;
+}
+
 @media (max-width: 600px) {
   .profile {
     gap: 1.25rem;

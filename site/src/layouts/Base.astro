@@ -10,14 +10,18 @@ interface Props {
   // Use the title as-is, without the "· site" suffix (the landing page).
   bare?: boolean
   description?: string
+  // Keep the page out of the Pagefind index (the 404 page).
+  noindex?: boolean
 }
 
-const { title, bare = false, description } = Astro.props
+const { title, bare = false, description, noindex = false } = Astro.props
 const base = import.meta.env.BASE_URL.replace(/\/$/, '')
 const siteName = name
 // One canonical address however the page was reached (aliases 301 here).
 const canonical = new URL(Astro.url.pathname, Astro.site)
 const pageTitle = title ? (bare ? title : `${title} · ${siteName}`) : siteName
+// Unfurl image: the flat-white 1024 brand master (square → summary card).
+const ogImage = new URL(`${base}/brand/logo-black.png`, Astro.site)
 ---
 
 <!doctype html>
@@ -28,6 +32,13 @@ const pageTitle = title ? (bare ? title : `${title} · ${siteName}`) : siteName
     <title>{pageTitle}</title>
     {description && <meta name="description" content={description} />}
     <link rel="canonical" href={canonical} />
+    <meta property="og:title" content={pageTitle} />
+    {description && <meta property="og:description" content={description} />}
+    <meta property="og:url" content={canonical} />
+    <meta property="og:site_name" content={siteName} />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content={ogImage} />
+    <meta name="twitter:card" content="summary" />
     <link rel="icon" href={`${base}/favicon.svg`} type="image/svg+xml" sizes="any" />
     <link rel="icon" href={`${base}/favicon.png`} type="image/png" sizes="32x32" />
     <script is:inline>
@@ -58,7 +69,8 @@ const pageTitle = title ? (bare ? title : `${title} · ${siteName}`) : siteName
         </span>
       </nav>
     </header>
-    <main data-pagefind-body>
+    {/* Astro stringifies booleans on data-* attributes; undefined omits. */}
+    <main data-pagefind-body={noindex ? undefined : ''}>
       <slot />
     </main>
     <footer class="site-footer">

@@ -5,7 +5,7 @@ import ProfileLinks from '../components/ProfileLinks.astro'
 import { name, nameCJK } from '../lib/profile'
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '')
-const tagline = 'Software for a living, research out of curiosity, build in the open.'
+const tagline = 'Engineering for a living, research out of curiosity, share by default.'
 const description = `${name} (${nameCJK}). ${tagline}`
 ---
 
@@ -20,11 +20,24 @@ const description = `${name} (${nameCJK}). ${tagline}`
       <ProfileLinks class="profile-contacts" />
     </div>
   </section>
-  {/* TODO: self-introduction; the site description stands in meanwhile. */}
+  {/* Run-in anchors mirror the tagline's three clauses, one paragraph each. */}
   <p class="profile-intro">
-    This is my garden — a public knowledge base within a broader digital
-    system: a library of ingested works, wiki topics distilled across them,
-    and survey manuscripts. My record lives in the
+    <strong>Engineering for a living:</strong> I'm a software engineer at
+    Google, where I lead formal methods work for SmartNICs. I also serve on
+    the <a href="https://p4.org/">P4</a> Technical Steering Team.
+  </p>
+  <p class="profile-intro">
+    <strong>Research out of curiosity:</strong> Before software I spent ten
+    years in physics, from a BS at Peking University to a PhD program in
+    computational astrophysics at UC San Diego, which I left to retrain in
+    computer science. The curiosity stayed.
+  </p>
+  <p class="profile-intro">
+    <strong>Share by default:</strong> I share whatever can be shared. My code
+    lands in open source. My notes grow in this digital garden: a
+    <a href={`${base}/library/`}>library</a> of works I've read,
+    <a href={`${base}/wiki/`}>wiki</a> topics distilled across them, and
+    <a href={`${base}/surveys/`}>survey</a> manuscripts. My record lives in the
     <a href={`${base}/cv/`}>curriculum vitae</a>.
   </p>
 </Base>
