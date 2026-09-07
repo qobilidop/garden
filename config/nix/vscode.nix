@@ -47,6 +47,8 @@ in
           github.vscode-github-actions
           # documents
           tomoki1207.pdf
+          # color theme: the same GitHub pair Ghostty names (home.nix)
+          github.github-vscode-theme
         ])
         ++ (with marketExt; [
           ms-vscode.cpp-devtools
@@ -55,6 +57,10 @@ in
 
       userSettings = {
         "terminal.integrated.fontFamily" = "JetBrainsMono Nerd Font";
+        # Follow the system appearance with the GitHub pair, as Ghostty does.
+        "window.autoDetectColorScheme" = true;
+        "workbench.preferredLightColorTheme" = "GitHub Light Default";
+        "workbench.preferredDarkColorTheme" = "GitHub Dark Default";
         "containers.containerClient" = "com.microsoft.visualstudio.containers.docker";
         "containers.orchestratorClient" = "com.microsoft.visualstudio.orchestrators.dockercompose";
 
