@@ -79,8 +79,9 @@ in
       # The Nerd Font the OS layer installs, so Starship's glyphs come from
       # the same face here and in the VS Code terminal.
       font-family = "JetBrainsMono Nerd Font";
-      # Follow the system appearance with a neutral pair.
-      theme = "light:GitHub Light Default,dark:GitHub Dark Default";
+      # Fixed, not following the system; the same theme VS Code sets
+      # (vscode.nix). `ghostty +list-themes` previews the alternatives.
+      theme = "GitHub Dark Default";
       # Option is Alt for the shell (word motions); left only, so the right
       # Option still types special characters.
       macos-option-as-alt = "left";

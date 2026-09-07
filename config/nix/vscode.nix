@@ -57,10 +57,8 @@ in
 
       userSettings = {
         "terminal.integrated.fontFamily" = "JetBrainsMono Nerd Font";
-        # Follow the system appearance with the GitHub pair, as Ghostty does.
-        "window.autoDetectColorScheme" = true;
-        "workbench.preferredLightColorTheme" = "GitHub Light Default";
-        "workbench.preferredDarkColorTheme" = "GitHub Dark Default";
+        # Fixed, not following the system; the same theme Ghostty sets (home.nix).
+        "workbench.colorTheme" = "GitHub Dark Default";
         "containers.containerClient" = "com.microsoft.visualstudio.containers.docker";
         "containers.orchestratorClient" = "com.microsoft.visualstudio.orchestrators.dockercompose";
 
