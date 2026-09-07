@@ -5,7 +5,8 @@ import { monthLabel } from '../../lib/recency'
 
 // Newest first; the label is the month the work started.
 const entries = [...portfolio].sort((a, b) => b.started.localeCompare(a.started))
-// Ledger convention: label a month only on its first (newest) entry.
+// Ledger convention: label a month only on its first (newest) entry;
+// each entry's exact start date links to its first commit.
 const labels = entries.map((e, i) => {
   const m = monthLabel(e.started)
   return i > 0 && monthLabel(entries[i - 1].started) === m ? undefined : m
@@ -30,7 +31,8 @@ const labels = entries.map((e, i) => {
             </span>
           )}
           <span class="synthesis">
-            {e.summary} <a href={e.repository}>Repository</a>.
+            {e.summary} <a href={e.repository}>Repository</a> · started
+            <a href={`${e.repository}/commit/${e.first_commit}`}>{e.started}</a>.
           </span>
         </li>
       ))
