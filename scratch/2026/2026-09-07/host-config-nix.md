@@ -63,11 +63,18 @@ the first switch on the Mac.
 - Flakes evaluate only git-tracked files; new files are staged before
   the first switch.
 
+## Done since
+
+- Four switches on the Mac the same day: the first switch, then the
+  PATH-order fix with `cleanup = "uninstall"` (Homebrew's `shellenv`
+  re-fronted Homebrew on every shell; it is never evaluated under
+  nix-darwin now), then `python3` for the Codex sync tool (Homebrew's
+  Python left with the formulae), then VS Code settings and extensions
+  from `vscode.nix`. Every host tool resolves from the Nix profile,
+  both sync tools report in sync, zero formulae remain.
+
 ## Pending
 
-- First switch on the Mac (needs sudo: Bili runs `bootstrap.sh`), then
-  verify each tool resolves from the Nix profile and both sync tools
-  report in sync; then flip cleanup to `"uninstall"`.
 - Ubuntu: run `bootstrap.sh`, add the apt GUI step once tested,
   possibly an aarch64-linux entry.
 - Per-repository flakes, starting with garden; CI on the Nix installer
