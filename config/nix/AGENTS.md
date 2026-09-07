@@ -41,8 +41,8 @@ Host configuration for every machine: one flake, upstream Nix.
   follow apt regardless.
 - Ghostty: cask on macOS, apt on Ubuntu; `home.nix` owns
   `~/.config/ghostty/config` (`programs.ghostty`, `package = null`, so
-  the module's config validation does not run — check a changed config
-  with `ghostty +validate-config` before switching).
+  the module's config validation does not run; `verify.sh` runs the
+  installed app's `+validate-config` instead).
 - VS Code: the app is a cask (apt on Ubuntu); `vscode.nix` owns
   settings, keybindings, and extensions as store symlinks, so the
   settings UI and the Extensions view cannot save — declare the change

@@ -29,6 +29,14 @@ have="$(gitleaks version)"
 [ "$have" = "$pin" ] || fail "gitleaks $have, CI pins $pin"
 
 python3 -c 'import tomllib' || fail "python3 lacks tomllib (needs 3.11+)"
+
+# Ghostty's config is written by home.nix but not validated by it (the
+# module validates only a Nix-built package); the installed app validates.
+ghostty="/Applications/Ghostty.app/Contents/MacOS/ghostty"
+command -v ghostty >/dev/null 2>&1 && ghostty="$(command -v ghostty)"
+if [ -x "$ghostty" ]; then
+  "$ghostty" +validate-config >/dev/null || fail "ghostty config invalid (ghostty +validate-config)"
+fi
 "$garden/config/claude/sync.sh" diff >/dev/null || fail "config/claude out of sync"
 "$garden/config/codex/sync.sh" diff >/dev/null || fail "config/codex out of sync"
 echo "verify: ok"
