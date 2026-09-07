@@ -130,7 +130,13 @@ const ogImage = new URL(`${base}/brand/logo-black.png`, Astro.site)
         // Bind the diagram theme to the page's grayscale tokens (never
         // filter-invert — it breaks non-line-art).
         const css = getComputedStyle(document.documentElement)
-        const v = (name: string) => css.getPropertyValue(name).trim()
+        // Registered color tokens compute to `color(srgb r g b)`; hand
+        // Mermaid plain rgb() so its color math can parse them.
+        const v = (name: string) => {
+          const raw = css.getPropertyValue(name).trim()
+          const m = raw.match(/^color\(srgb ([\d.]+) ([\d.]+) ([\d.]+)\)$/)
+          return m ? `rgb(${m.slice(1).map((x) => Math.round(Number(x) * 255)).join(', ')})` : raw
+        }
         mermaid.initialize({
           startOnLoad: false,
           theme: 'base',

@@ -1,52 +1,90 @@
 /* garden — grayscale, typography-first. Prose in serif (Charter/Georgia,
    zero webfonts); apparatus (nav, metadata, backlinks) in system sans.
+
+   Color is one scale from two colors, ink and paper: the text is the
+   ink (dimmed to 86% in the dark theme, against glare), and every
+   gray is the text mixed into the paper at a fixed strength — muted
+   63% (4.5:1 on paper in both themes), underline 35%, rule 12%, raised
+   surface 4%. The only hues are the paper/post identity dots,
+   validated for CVD separation and 3:1 contrast on both surfaces.
+   The derived tokens are registered so scripts reading them (Mermaid)
+   get computed colors, not the mix expression.
+
    Light and dark follow prefers-color-scheme by default; an explicit
-   nav-toggle choice sets data-theme on <html> and wins (the dark token
-   block appears twice so both routes work — keep the copies in sync).
+   nav-toggle choice sets data-theme on <html> and wins (the dark block
+   appears twice so both routes work — keep the copies in sync).
+   color-scheme follows, so native controls and scrollbars match.
    Link grammar: internal solid underline, external dotted; no hue. */
 
+@property --bg { syntax: "<color>"; inherits: true; initial-value: #fcfcfc; }
+@property --bg-raised { syntax: "<color>"; inherits: true; initial-value: #f3f3f3; }
+@property --fg { syntax: "<color>"; inherits: true; initial-value: #1a1a1a; }
+@property --fg-strong { syntax: "<color>"; inherits: true; initial-value: #1a1a1a; }
+@property --muted { syntax: "<color>"; inherits: true; initial-value: #6e6e6e; }
+@property --rule { syntax: "<color>"; inherits: true; initial-value: #e1e1e1; }
+@property --underline { syntax: "<color>"; inherits: true; initial-value: #adadad; }
+
 :root {
-  --bg: #fcfcfc;
-  --bg-raised: #f2f2f2;
-  --fg: #1a1a1a;
-  /* Bold and headings. Same as --fg in light; in dark the body text is
-     dimmed against glare, which leaves bold only its weight to stand on
-     (Charter's bold is close to its roman), so strong gets a brighter
-     tone as well. */
-  --fg-strong: #1a1a1a;
-  --muted: #6e6e6e;
-  --rule: #e4e4e4;
-  --underline: #a8a8a8;
-  /* The only two hues on the site: paper/post identity dots, validated
-     for CVD separation and 3:1 contrast on both surfaces. */
-  --paper: #2a78d6;
-  --post: #eb6834;
+  color-scheme: light;
+  --paper: #fcfcfc;
+  --ink: #1a1a1a;
+  --fg: var(--ink);
+  --paper-dot: #2a78d6;
+  --post-dot: #e6632f;
 }
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme='light']) {
-    --bg: #151515;
-    --bg-raised: #1e1e1e;
-    --fg: #d6d6d6;
-    --fg-strong: #f4f4f4;
-    --muted: #8f8f8f;
-    --rule: #2c2c2c;
-    --underline: #5a5a5a;
-    --paper: #3987e5;
-    --post: #d95926;
+    color-scheme: dark;
+    --paper: #151515;
+    --ink: #f4f4f4;
+    --fg: color-mix(in srgb, var(--ink) 86%, var(--paper));
+    --paper-dot: #3987e5;
+    --post-dot: #d95926;
   }
 }
 
 :root[data-theme='dark'] {
-  --bg: #151515;
-  --bg-raised: #1e1e1e;
-  --fg: #d6d6d6;
-  --fg-strong: #f4f4f4;
-  --muted: #8f8f8f;
-  --rule: #2c2c2c;
-  --underline: #5a5a5a;
-  --paper: #3987e5;
-  --post: #d95926;
+  color-scheme: dark;
+  --paper: #151515;
+  --ink: #f4f4f4;
+  --fg: color-mix(in srgb, var(--ink) 86%, var(--paper));
+  --paper-dot: #3987e5;
+  --post-dot: #d95926;
+}
+
+/* The scale, the same in both themes. */
+:root {
+  --bg: var(--paper);
+  --fg-strong: var(--ink);
+  --muted: color-mix(in srgb, var(--fg) 63%, var(--paper));
+  --underline: color-mix(in srgb, var(--fg) 35%, var(--paper));
+  --rule: color-mix(in srgb, var(--fg) 12%, var(--paper));
+  --bg-raised: color-mix(in srgb, var(--fg) 4%, var(--paper));
+}
+
+/* Pagefind's search UI paints from its own variables; map them to the
+   scale so the box follows the theme (color-scheme alone does not
+   reach it). */
+#search {
+  --pagefind-ui-font: var(--sans);
+  --pagefind-ui-text: var(--fg);
+  --pagefind-ui-background: var(--bg);
+  --pagefind-ui-border: var(--rule);
+  --pagefind-ui-tag: var(--bg-raised);
+  --pagefind-ui-primary: var(--fg);
+  --pagefind-ui-border-width: 1px;
+  --pagefind-ui-border-radius: 4px;
+}
+
+/* Selection and focus in the ink, not the browser's blue. */
+::selection {
+  background: color-mix(in srgb, var(--fg) 20%, var(--paper));
+}
+
+:focus-visible {
+  outline: 2px solid var(--fg);
+  outline-offset: 2px;
 }
 
 * {
@@ -542,11 +580,11 @@ img {
 }
 
 .kind[data-kind='paper']::before {
-  background: var(--paper);
+  background: var(--paper-dot);
 }
 
 .kind[data-kind='post']::before {
-  background: var(--post);
+  background: var(--post-dot);
 }
 
 /* Month label: once per month (ledger convention — repeats suppressed),
