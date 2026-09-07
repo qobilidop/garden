@@ -33,6 +33,12 @@ Host configuration for every machine: one flake, upstream Nix.
   apps (VS Code, Chrome, Zoom, Termius, 1Password, Ghostty — official
   apt from 26.04, the community `.deb` before) are a manual apt step,
   untested.
+- Who updates a GUI app is recorded in `darwin.nix`: `selfUpdating`
+  casks run their own updater and brew skips them; `brewUpdated` casks
+  have none and brew upgrades them at a switch after `nix flake
+  update`. An assertion keeps a cask out of both lists. The flake
+  declares which apps exist, not their versions; Ubuntu GUI apps
+  follow apt regardless.
 - Ghostty: cask on macOS, apt on Ubuntu; `home.nix` owns
   `~/.config/ghostty/config` (`programs.ghostty`, `package = null`, so
   the module's config validation does not run — check a changed config

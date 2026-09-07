@@ -7,8 +7,37 @@
   user,
   ...
 }:
+let
+  # Who updates each GUI app is a fact recorded here, not remembered.
+  # These carry their own updater and run it; brew skips them (the cask
+  # declares `auto_updates`).
+  selfUpdating = [
+    "1password"
+    "chatgpt"
+    "claude"
+    "ghostty"
+    "google-chrome"
+    "termius"
+    "visual-studio-code"
+    "zoom"
+  ];
+  # These have no updater of their own; brew upgrades them at a switch
+  # after `nix flake update` moves the pinned cask tap.
+  brewUpdated = [
+    "claude-code@latest"
+    "codex"
+    "displaylink"
+  ];
+in
 {
   nixpkgs.hostPlatform = "aarch64-darwin";
+
+  assertions = [
+    {
+      assertion = lib.intersectLists selfUpdating brewUpdated == [ ];
+      message = "darwin.nix: a cask is listed as both self-updating and brew-updated";
+    }
+  ];
 
   # Upstream Nix: nix-darwin owns the daemon. Determinate Nix would need
   # `nix.enable = false`; Lix would be `nix.package = pkgs.lix`.
@@ -56,24 +85,12 @@
     taps = builtins.attrNames config.nix-homebrew.taps;
     onActivation = {
       autoUpdate = false; # the taps are pinned inputs
-      upgrade = true; # self-updating casks (VS Code, Chrome) are skipped by brew
+      upgrade = true; # the brewUpdated casks; brew skips the self-updating ones
       # Removes every formula: command-line tools come from home.nix.
       cleanup = "uninstall";
     };
     # GUI apps only; every command-line tool comes from home.nix.
-    casks = [
-      "1password"
-      "chatgpt"
-      "claude"
-      "claude-code@latest"
-      "codex"
-      "displaylink"
-      "ghostty"
-      "google-chrome"
-      "termius"
-      "visual-studio-code"
-      "zoom"
-    ];
+    casks = selfUpdating ++ brewUpdated;
   };
 
   # macOS preferences (`defaults write` equivalents) go here when wanted.
