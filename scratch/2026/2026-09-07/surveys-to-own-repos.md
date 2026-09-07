@@ -71,9 +71,11 @@ Staged (single occurrence each):
 - `gh api -X POST repos/<r>/pages -f build_type=workflow` works on an
   empty repository; no first push needed.
 
-Open: each survey repository's skill says to fold lessons back into
-itself, but none carries the evolve skill. Left in garden for now;
-revisit when the next campaign runs in a spoke repository.
+Settled (Bili, same day): survey repositories do not carry the evolve
+skill. They are projects he works on and produces, not harness; a
+campaign's method lessons fold into that repository's own run-survey
+skill directly, and garden's /evolve stays the retrospective for the
+harness.
 
 ## Evolve outcome (run at session end)
 
