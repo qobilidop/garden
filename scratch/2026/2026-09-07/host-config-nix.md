@@ -73,12 +73,27 @@ the first switch on the Mac.
   from `vscode.nix`. Every host tool resolves from the Nix profile,
   both sync tools report in sync, zero formulae remain.
 
+- Layer 2 the same day: the garden root `flake.nix` follows this
+  flake's nixpkgs through a relative path input (one nixpkgs pin, two
+  lock files; Nix neither refreshes nor checks the root copy, so
+  `hooks/lint.sh` and CI compare them and `nix flake update host` is
+  the repair). CI runs in that shell on upstream Nix; the transcript
+  gate passed (two papers byte-identical, one modulo editor-stripped
+  whitespace) and the dev image, `dev.sh`, and `.devcontainer/` are
+  gone. Language package managers come from Nix, language packages
+  from their lockfiles (uv for `tools/`, npm for `site/`).
+- `host-config.yml` runs `bootstrap.sh` and `verify.sh` on a clean
+  Ubuntu runner as this user (Nix install, pinned activation, the Nix
+  zsh registered as login shell) and builds the darwin system on a
+  macOS runner. It found two bootstrap bugs before any real Ubuntu box
+  did: the first-run CLI came unpinned from master, and the Codex sync
+  refused a home Codex had never written.
+
 ## Pending
 
-- Ubuntu: run `bootstrap.sh`, add the apt GUI step once tested,
-  possibly an aarch64-linux entry.
-- Per-repository flakes, starting with garden; CI on the Nix installer
-  action; dev image retirement after the transcript check.
+- Ubuntu: the real box (existing dotfiles, `hm-backup` collisions),
+  the apt GUI step, possibly an aarch64-linux entry. The clean-home
+  path is CI-verified.
 - Sentiment and ecosystem notes from the research (governance strain,
   three implementations, alternatives) live in the session, not here;
   re-research before revisiting the implementation choice.
