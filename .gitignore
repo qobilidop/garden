@@ -15,4 +15,5 @@ tmp/
 /tools/node_modules/
 /tools/.venv/
 /config/nix/result
+/result
 /.direnv/
