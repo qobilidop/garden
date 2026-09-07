@@ -95,17 +95,15 @@
 - `site/` renders the repo to a static site at qobilidop.com (Astro),
   served by Cloudflare Workers static assets (`site/wrangler.jsonc`);
   the build output is plain files, so the host is replaceable. It
-  reads exactly `wiki/`, `library/`, `surveys/*/index.md`, and
-  `cv/cv.yaml` — the three collections in `site/src/content.config.ts`
-  plus the CV loader (`site/src/lib/cv.ts`, whose zod schema is the
-  machine check on the record's shape) are the allowlist — and writes
-  nothing back; presentation needs never reshape note conventions. A survey groups as `index.md` (landing page, the
-  citekey/backlink surface) + `record/` (the minimal resumable state:
-  method, searches, catalog, evidence notes) + `manuscript/` (Typst
-  paper: paged + HTML wrappers over shared `content.typ`/`metadata.typ`,
-  standalone by design), compiled into `site/public/` by
-  `site/scripts/build-manuscripts.py` (typst pinned in the dev
-  image).
+  reads exactly `wiki/`, `library/`, `cv/cv.yaml`, and
+  `portfolio/portfolio.yaml` — the two collections in
+  `site/src/content.config.ts` plus the CV and portfolio loaders
+  (`site/src/lib/cv.ts`, `site/src/lib/portfolio.ts`, whose zod
+  schemas are the machine check on each record's shape) are the
+  allowlist — and writes nothing back; presentation needs never
+  reshape note conventions. Surveys are not a layer here: each lives
+  in its own self-contained repository with its own copy of the
+  survey skill, and `portfolio/portfolio.yaml` lists them.
 - `brand/logo.svg` is the canonical mark and `brand/favicon.svg` its
   16-unit reduction (contract in `brand/README.md`);
   `site/scripts/build-brand.py` derives the color variants, the 1024

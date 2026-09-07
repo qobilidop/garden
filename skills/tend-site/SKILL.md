@@ -6,21 +6,19 @@ description: Develop and verify the garden website (site/, Astro) — the build/
 # Tend the site
 
 The contract is AGENTS.md §Site: `site/` reads exactly `wiki/`,
-`library/`, `surveys/*/index.md`, and `cv/cv.yaml`, read-only; owned
-logic in `site/src/lib/`; unresolved `[[targets]]` and bare citekey
+`library/`, `cv/cv.yaml`, and `portfolio/portfolio.yaml`, read-only;
+owned logic in `site/src/lib/`; unresolved `[[targets]]` and bare citekey
 mentions fail the build via `lintContent()` in `site/src/lib/sitemap.mjs`,
-called at config load (`astro.config.mjs`), and an invalid CV record
-fails it via the zod schema in `site/src/lib/cv.ts`. Survey manuscripts are
-compiled separately — `./dev.sh python3 site/scripts/build-manuscripts.py`
-(typst, pinned in the dev image; the HTML target is experimental) into
-gitignored `site/public/surveys/`, and the logo variants and favicons
+called at config load (`astro.config.mjs`), and an invalid CV or
+portfolio record fails it via the zod schemas in `site/src/lib/cv.ts`
+and `site/src/lib/portfolio.ts`. The logo variants and favicons are built
 by `python3 site/scripts/build-brand.py` (stdlib only, runs on the
 host) from `brand/logo.svg` and `brand/favicon.svg` into gitignored
 `site/public/brand/` and `site/public/favicon.*`, and the CV PDF by
-`python3 site/scripts/build-cv.py` (typst again) from `cv/cv.typ` over
-`cv/cv.yaml` into gitignored `site/public/cv.pdf`; CI runs all three
-scripts before the Astro build, and a push that changes `.devcontainer/` races
-the image republish — the proven recovery, runnable as one background chain:
+`python3 site/scripts/build-cv.py` (typst, pinned in the dev image) from
+`cv/cv.typ` over `cv/cv.yaml` into gitignored `site/public/cv.pdf`; CI
+runs both scripts before the Astro build, and a push that changes
+`.devcontainer/` races the image republish — the proven recovery, runnable as one background chain:
 `gh run watch <dev-image-run> --exit-status && gh workflow run
 site.yml`, then watch the new run and curl the live page.
 
@@ -54,13 +52,9 @@ site.yml`, then watch the new run and curl the live page.
   preview stop`) — a dozen leftovers from past sessions once shared a
   port and served 404s. The CV record (`cv/cv.yaml`) loads at startup:
   restart the dev server after editing it.
-- Survey manuscript presentation: compare representative HTML renders
-  with the corresponding equation- or layout-heavy PDF pages; typography
-  and mathematical structure should stay visually close even though
-  pagination differs. On render trouble, open
-  `skills/run-survey/references/typst.md`. A static renderer is only a
-  typographic smoke test; if no browser is available, report responsive,
-  interactive, and browser-engine-specific behavior as unverified.
+- A static renderer is only a typographic smoke test; if no browser is
+  available, report responsive, interactive, and browser-engine-specific
+  behavior as unverified.
 - Deploy: push triggers `.github/workflows/site.yml` (builds in the dev
   image, then `npm run deploy` → Cloudflare Worker `garden` serving
   qobilidop.com). `site.yml`'s push `paths` must name every source the

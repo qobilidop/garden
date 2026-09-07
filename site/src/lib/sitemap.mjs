@@ -20,25 +20,6 @@ export function citekeys() {
   return [...libraryFiles().keys()]
 }
 
-// Surveys enter the site through their landing page (index.md); the
-// slug is the campaign directory name.
-export function surveySlugs() {
-  return [...surveyFiles().keys()]
-}
-
-function surveyFiles() {
-  const map = new Map()
-  for (const p of globSync('surveys/*/index.md', { cwd: repoRoot })) {
-    map.set(basename(dirname(p)), join(repoRoot, p))
-  }
-  return map
-}
-
-function surveyTitle(slug) {
-  const body = readFileSync(surveyFiles().get(slug), 'utf8')
-  return body.match(/^#\s+(.+)$/m)?.[1]?.trim() ?? slug
-}
-
 function libraryFiles() {
   const map = new Map()
   for (const p of globSync('library/**/notes.md', { cwd: repoRoot })) {
@@ -127,7 +108,7 @@ function wikiTitle(slug) {
 // author-year prefixes, and wiki slugs. The wikilink plugin lints text
 // against this set so unlinked mentions fail the build.
 export function bareNames() {
-  const names = new Set([...wikiSlugs(), ...surveySlugs()])
+  const names = new Set(wikiSlugs())
   for (const key of citekeys()) {
     names.add(key)
     const prefix = key.match(/^([a-z-]+?\d{4})/)?.[1]
@@ -154,7 +135,6 @@ export function lintContent(resolve) {
   const files = [
     ...globSync('wiki/*.md', { cwd: repoRoot }),
     ...globSync('library/**/notes.md', { cwd: repoRoot }),
-    ...globSync('surveys/*/index.md', { cwd: repoRoot }),
   ]
   const violations = []
   for (const rel of files) {
@@ -198,16 +178,6 @@ export function buildResolveMap(base) {
       label,
       kind: 'library',
       tip: workTip(files.get(key)),
-    })
-  }
-  for (const slug of surveySlugs()) {
-    if (resolve.has(slug)) {
-      throw new Error(`Name collision with survey slug: ${slug}`)
-    }
-    resolve.set(slug, {
-      href: `${base}/surveys/${slug}/`,
-      label: surveyTitle(slug),
-      kind: 'survey',
     })
   }
   return resolve

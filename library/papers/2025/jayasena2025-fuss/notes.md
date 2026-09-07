@@ -139,7 +139,9 @@ detection, snapshots, context mapping, or frontier depth.
   decisions, whereas FuSS keeps most alternatives in a concrete corpus and
   invokes path-based execution only at a selected frontier;
   [[baldoni2016-symbolic]] provides the broader software-side architecture;
-  and [[symbolic-execution-hardware]] places FuSS in the RTL hybrid lineage.
+  and the
+  [Symbolic Execution of Digital Hardware Designs](https://github.com/qobilidop/symbolic-execution-hardware)
+  survey places FuSS in the RTL hybrid lineage.
 
 FuSS's lasting contribution is the placement of the symbolic boundary. It
 does not make exhaustive RTL reasoning cheap; it makes symbolic execution a

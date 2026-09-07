@@ -1,11 +1,28 @@
 ---
 import Base from '../../layouts/Base.astro'
+import { portfolio } from '../../lib/portfolio'
 ---
 
-<Base title="portfolio" noindex>
+<Base title="portfolio">
   <h1>Portfolio</h1>
   <p>
-    A curated record of what I build. Until the first entry lands, my code
-    is on <a href="https://github.com/qobilidop">GitHub</a>.
+    A curated record of what I build. Each entry lives in its own
+    repository; the rest of my code is on
+    <a href="https://github.com/qobilidop">GitHub</a>.
   </p>
+  <ul class="work-list">
+    {
+      portfolio.map((e) => (
+        <li>
+          <a href={e.url}>{e.title}</a>
+          <span class="tag">
+            <span class="month">{e.year}</span>
+          </span>
+          <span class="synthesis">
+            {e.summary} <a href={e.repository}>Repository</a>.
+          </span>
+        </li>
+      ))
+    }
+  </ul>
 </Base>

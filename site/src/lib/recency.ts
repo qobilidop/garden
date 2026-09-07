@@ -76,16 +76,6 @@ export function wikiUpdatedAt(path: string): string {
   throw new Error(`no update commit found for ${path}`)
 }
 
-// Survey recency is public-facing: landing page or manuscript changes count;
-// record-only maintenance does not move a survey on the homepage.
-export function surveyUpdatedAt(slug: string): string {
-  const paths = [`surveys/${slug}/index.md`, `surveys/${slug}/manuscript`]
-  if (dirty(paths)) return WORKTREE_NOW
-  const timestamp = committedAt([], paths)
-  if (timestamp) return timestamp
-  throw new Error(`no public update commit found for survey ${slug}`)
-}
-
 export function newest<T extends { id: string; timestamp: string }>(
   items: T[],
   limit = 5,

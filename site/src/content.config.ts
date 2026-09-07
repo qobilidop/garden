@@ -1,9 +1,6 @@
-// The allowlist: the site reads exactly these three collections and
-// nothing else in the repo. Library IDs are citekeys (the parent
-// directory name); survey IDs are the campaign slug — the collection
-// entry is the survey's landing page (index.md); the manuscript
-// renders (HTML/PDF) are compiled separately into site/public/ by
-// scripts/build-manuscripts.py.
+// The allowlist: the site reads exactly these two collections and
+// nothing else in the repo (plus the CV and portfolio records loaded
+// in src/lib/). Library IDs are citekeys (the parent directory name).
 import { defineCollection } from 'astro:content'
 import { glob } from 'astro/loaders'
 
@@ -19,12 +16,4 @@ const library = defineCollection({
   }),
 })
 
-const surveys = defineCollection({
-  loader: glob({
-    base: '../surveys',
-    pattern: '*/index.md',
-    generateId: ({ entry }) => entry.split('/').at(-2)!,
-  }),
-})
-
-export const collections = { wiki, library, surveys }
+export const collections = { wiki, library }

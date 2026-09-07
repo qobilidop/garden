@@ -9,7 +9,7 @@ identifier against the registrar regardless.
   systematic mapping studies in software engineering: An update"
   (IST; doi:10.1016/j.infsof.2015.03.007) — the mapping canon's
   update, long a named queue item on [[survey-methodology]]; feeds
-  that page and the run-survey skill.
+  that page and the survey repositories' method skill.
 - Kitchenham, Madeyski & Budgen 2023, "SEGRESS: Software Engineering
   Guidelines for REporting Secondary Studies" (TSE;
   doi:10.1109/TSE.2022.3174092) — the SE reporting standard the

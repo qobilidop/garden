@@ -148,7 +148,8 @@ industrial interviews or adoption data that would separate those causes.
   completeness.
 - **Against the library:** [[baldoni2016-symbolic]] supplies the software-side
   execution taxonomy; [[yang2026-forbench]] shows one modern hardware
-  symbolic-simulation design in depth; and [[symbolic-execution-hardware]]
+  symbolic-simulation design in depth; and the
+  [Symbolic Execution of Digital Hardware Designs](https://github.com/qobilidop/symbolic-execution-hardware) survey
   narrows the question to operational symbolic execution of digital designs
   with an explicit systematic-map record. This paper is the adjacent field
   map that explains where symbolic and concolic systems sit among other ways

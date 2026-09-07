@@ -19,10 +19,8 @@ RUN A="$TARGETARCH"; [ "$A" = "amd64" ] && A=x64; \
     curl -fsSL "https://nodejs.org/dist/v${NODE_VERSION}/node-v${NODE_VERSION}-linux-${A}.tar.xz" \
     | tar -xJ -C /usr/local --strip-components=1
 
-# Typst for survey manuscripts (surveys/*/manuscript.typ -> PDF + HTML),
-# pinned; the HTML target is experimental (--features html) as of 0.15.
-# No font packages: typst embeds Libertinus Serif and DejaVu Sans Mono,
-# the two families surveys/style.typ uses.
+# Typst for the CV PDF (cv/cv.typ over cv/cv.yaml), pinned. No font
+# packages: typst embeds Libertinus Serif, the family cv/cv.typ uses.
 ENV TYPST_VERSION=0.15.1
 RUN A="$TARGETARCH"; [ "$A" = "amd64" ] && A=x86_64; [ "$A" = "arm64" ] && A=aarch64; \
     curl -fsSL "https://github.com/typst/typst/releases/download/v${TYPST_VERSION}/typst-${A}-unknown-linux-musl.tar.xz" \

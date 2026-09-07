@@ -126,7 +126,8 @@ symbolic inputs, accumulate path conditions, or characterize reachable
 behaviors. Its alternatives are implementations intended to be semantically
 equivalent, not execution paths or input-partitioned states. It is therefore a
 useful boundary case for [[symbolic-execution]] and for the
-[[symbolic-execution-hardware]] survey: symbolic representation and solver use
+[Symbolic Execution of Digital Hardware Designs](https://github.com/qobilidop/symbolic-execution-hardware)
+survey: symbolic representation and solver use
 alone do not make a hardware method symbolic execution.
 
 ## Assessment

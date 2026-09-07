@@ -26,7 +26,7 @@ the evidence behind each rule: `references/prior-arts.md`.
 Lowercase alphanumerics and hyphens, ≤64 chars, no leading/trailing
 or doubled hyphens, must not contain "claude" or "anthropic", and
 **must equal the directory name**. House style: imperative
-verb-object (`run-survey`, `ingest-paper`, `create-skill`) — a
+verb-object (`tend-wiki`, `ingest-paper`, `create-skill`) — a
 declared divergence from the spec's gerund examples. Never vague
 (`helper`, `utils`) or generic (`documents`, `data`).
 

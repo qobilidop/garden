@@ -1,0 +1,15 @@
+# Surveys moved to their own repositories on 2026-09-07; GitHub Pages serves the manuscripts.
+/surveys /portfolio/ 301
+/surveys/ /portfolio/ 301
+/surveys/agent-assisted-evidence-synthesis https://github.com/qobilidop/agent-assisted-evidence-synthesis 301
+/surveys/agent-assisted-evidence-synthesis/ https://github.com/qobilidop/agent-assisted-evidence-synthesis 301
+/surveys/agent-assisted-evidence-synthesis/manuscript.html https://qobilidop.github.io/agent-assisted-evidence-synthesis/ 301
+/surveys/agent-assisted-evidence-synthesis/manuscript.pdf https://qobilidop.github.io/agent-assisted-evidence-synthesis/manuscript.pdf 301
+/surveys/dataflow-selection-enumeration https://github.com/qobilidop/dataflow-selection-enumeration 301
+/surveys/dataflow-selection-enumeration/ https://github.com/qobilidop/dataflow-selection-enumeration 301
+/surveys/dataflow-selection-enumeration/manuscript.html https://qobilidop.github.io/dataflow-selection-enumeration/ 301
+/surveys/dataflow-selection-enumeration/manuscript.pdf https://qobilidop.github.io/dataflow-selection-enumeration/manuscript.pdf 301
+/surveys/symbolic-execution-hardware https://github.com/qobilidop/symbolic-execution-hardware 301
+/surveys/symbolic-execution-hardware/ https://github.com/qobilidop/symbolic-execution-hardware 301
+/surveys/symbolic-execution-hardware/manuscript.html https://qobilidop.github.io/symbolic-execution-hardware/ 301
+/surveys/symbolic-execution-hardware/manuscript.pdf https://qobilidop.github.io/symbolic-execution-hardware/manuscript.pdf 301

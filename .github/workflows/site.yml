@@ -6,7 +6,7 @@ on:
     paths:
       - "wiki/**"
       - "library/**"
-      - "surveys/**"
+      - "portfolio/**"
       - "brand/**"
       - "cv/**"
       - "site/**"
@@ -37,13 +37,12 @@ jobs:
           fetch-depth: 0
       - name: Trust the container workspace for Git-backed recency
         run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
-      # Requires typst from the dev image. A push that changes
-      # .devcontainer/ races the image republish (dev-image.yml) —
-      # if this step fails on a stale image, re-run after it merges.
-      - run: python3 site/scripts/build-manuscripts.py
       # Logo variants, master raster, favicons from brand/ (stdlib only).
       - run: python3 site/scripts/build-brand.py
-      # CV PDF from cv/cv.yaml via cv/cv.typ (typst, pinned in the dev image).
+      # CV PDF from cv/cv.yaml via cv/cv.typ. Requires typst from the dev
+      # image. A push that changes .devcontainer/ races the image republish
+      # (dev-image.yml) — if this step fails on a stale image, re-run after
+      # it merges.
       - run: python3 site/scripts/build-cv.py
       - run: npm ci
         working-directory: site
