@@ -13,4 +13,6 @@ __pycache__/
 .scratch/
 tmp/
 /tools/node_modules/
+/tools/.venv/
 /config/nix/result
+/.direnv/

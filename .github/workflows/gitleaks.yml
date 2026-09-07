@@ -23,7 +23,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           # Same version as the dev image (.devcontainer/Dockerfile) and
-          # the nixpkgs gitleaks in config/nix/home.nix; keep the pins in sync. The action's default
+          # the nixpkgs gitleaks that flake.nix and config/nix/home.nix
+          # share (one lock; `nix flake check` compares it to this pin;
+          # bump both together). The action's default
           # (8.24.3) predates root-level [[allowlists]] (added in 8.25.0)
           # and silently ignores .gitleaks.toml allowlist entries.
           GITLEAKS_VERSION: 8.30.1

@@ -20,7 +20,8 @@ in
   # Command-line tools. Project libraries (boost, antlr, jdk, re2c) live in
   # per-repository flakes, not here. gitleaks is a pin site: nixpkgs' version
   # must match GITLEAKS_VERSION in .github/workflows/gitleaks.yml and the
-  # .devcontainer/Dockerfile download.
+  # .devcontainer/Dockerfile download; the repo flake follows this nixpkgs
+  # and its `nix flake check` enforces the match.
   home.packages =
     with pkgs;
     [

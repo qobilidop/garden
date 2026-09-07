@@ -10,6 +10,9 @@ on:
       - "brand/**"
       - "cv/**"
       - "site/**"
+      - "flake.nix"
+      - "flake.lock"
+      - "config/nix/flake.lock"
       - ".github/workflows/site.yml"
   workflow_dispatch:
 
@@ -20,29 +23,25 @@ concurrency:
   group: site
   cancel-in-progress: true
 
+defaults:
+  run:
+    # Every step runs in the repo flake shell (flake.nix): the same node,
+    # typst, and python a host gets from `nix develop` or direnv.
+    shell: nix develop --command bash -e {0}
+
 jobs:
   build:
     runs-on: ubuntu-latest
-    container:
-      image: ghcr.io/${{ github.repository }}/dev:latest
-      # Explicit credentials so the pull works even while the package is
-      # private (a fresh package after a repo rename starts private).
-      credentials:
-        username: ${{ github.actor }}
-        password: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - uses: actions/checkout@v7
         with:
           # Homepage recency is derived from first-add/last-update commits.
           fetch-depth: 0
-      - name: Trust the container workspace for Git-backed recency
-        run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
+      # Upstream Nix, as on the hosts (config/nix); not Determinate.
+      - uses: cachix/install-nix-action@v31
       # Logo variants, master raster, favicons from brand/ (stdlib only).
       - run: python3 site/scripts/build-brand.py
-      # CV PDF from cv/cv.yaml via cv/cv.typ. Requires typst from the dev
-      # image. A push that changes .devcontainer/ races the image republish
-      # (dev-image.yml) — if this step fails on a stale image, re-run after
-      # it merges.
+      # CV PDF from cv/cv.yaml via cv/cv.typ (typst from the flake shell).
       - run: python3 site/scripts/build-cv.py
       - run: npm ci
         working-directory: site

@@ -15,11 +15,13 @@ concurrency:
 jobs:
   archive:
     runs-on: ubuntu-latest
-    container: ghcr.io/${{ github.repository }}/dev:latest
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v7
+      # Upstream Nix, as on the hosts (config/nix); node from flake.nix.
+      - uses: cachix/install-nix-action@v31
       - name: Check coverage and request missing captures
+        shell: nix develop --command bash -e {0}
         run: >-
           node tools/archive-library.mjs --request-missing
           --max-requests 10 --delay-ms 3000

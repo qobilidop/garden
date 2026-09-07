@@ -1,0 +1,13 @@
+# Pinned Python dependencies for tools/*.sh; run through `uv run --project
+# tools` inside the repo flake shell (uv comes from flake.nix). uv.lock pins
+# the transitive set (pymupdf, pymupdf_layout) that decides transcript bytes.
+[project]
+name = "garden-tools"
+version = "0"
+requires-python = ">=3.10"
+dependencies = ["pymupdf4llm==1.28.2"]
+
+[tool.uv]
+package = false
+# The interpreter comes from Nix (flake.nix), never a uv-managed download.
+python-preference = "only-system"

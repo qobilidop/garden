@@ -22,8 +22,8 @@ check_blobs() {  # stdin: "<size><TAB><path>" per file
     fi
     if [ "$size" -gt "$MAX_BYTES" ]; then
       case "$path" in
-        # Machine-generated, textual, required for reproducible npm ci.
-        *package-lock.json) ;;
+        # Machine-generated, textual lockfiles (npm ci, uv run).
+        *package-lock.json | *uv.lock) ;;
         *) fail "file over $((MAX_BYTES / 1000))KB: $path ($size bytes) — if truly intentional, raise MAX_BYTES here consciously" ;;
       esac
     fi
