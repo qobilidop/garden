@@ -30,6 +30,9 @@ check_blobs() {  # stdin: "<size><TAB><path>" per file
   done
 }
 
+# A missing scanner must not read as a clean scan or as a leak.
+command -v gitleaks >/dev/null 2>&1 || fail "gitleaks not on PATH; nothing was scanned"
+
 case "${1:-}" in
   staged)
     git show :.gitignore 2>/dev/null | grep -qx '/shadow/' \
