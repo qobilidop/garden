@@ -15,6 +15,7 @@ const linkLabels: Record<string, string> = {
   github: 'GitHub',
   linkedin: 'LinkedIn',
   scholar: 'Google Scholar',
+  orcid: 'ORCID',
 }
 ---
 
@@ -175,6 +176,22 @@ const linkLabels: Record<string, string> = {
   @media (max-width: 40rem) {
     .cv-entry {
       grid-template-columns: 1fr;
+    }
+  }
+  /* On the frame the dates hang in the left margin, on the shared hang
+     track (the wiki's month labels use the same one), and the entry
+     text takes the full measure. */
+  @media (min-width: 64rem) {
+    .cv-entry {
+      position: relative;
+      grid-template-columns: 1fr;
+    }
+    .cv-dates {
+      position: absolute;
+      top: 0;
+      left: calc(-1 * (var(--hang-width) + var(--hang-gap)));
+      width: var(--hang-width);
+      text-align: right;
     }
   }
 </style>

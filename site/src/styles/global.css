@@ -61,6 +61,11 @@
   --gutter: 2.5rem;
   --frame: calc(var(--measure) + 2 * (var(--margin-col) + var(--gutter)));
   --unit: 1.8rem;
+  /* Labels hung into the left margin beside their line (wiki month
+     labels, CV dates): a 9rem track ending 0.75rem short of the prose,
+     from 64rem, where the margin column reaches 10rem. */
+  --hang-width: 9rem;
+  --hang-gap: 0.75rem;
   --serif: Charter, Georgia, serif;
   --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
     sans-serif;
@@ -556,8 +561,8 @@ img {
 
 /* On the frame: hang the tag into the left margin column, first line
    aligned with the title (tufte-css's margin hang, mirrored left;
-   stephango and Vercel-changelog precedent). The 9rem track needs the
-   64rem threshold, where the margin column reaches 10rem. Right rag
+   stephango and Vercel-changelog precedent). The track is the shared
+   --hang-width; the CV's dates hang the same way. Right rag
    keeps the type column steady; month labels jut left onto their own
    track, hugging the gutter. Below the breakpoint the tag stays
    inline — same DOM, metadata never hidden. */
@@ -569,8 +574,8 @@ img {
   .work-list .tag {
     position: absolute;
     top: 0;
-    left: -9.75rem;
-    width: 9rem;
+    left: calc(-1 * (var(--hang-width) + var(--hang-gap)));
+    width: var(--hang-width);
     text-align: right;
     line-height: 1.8rem; /* match the title's 18px x 1.6 line box */
   }
