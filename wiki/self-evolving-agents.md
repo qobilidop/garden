@@ -15,8 +15,9 @@ experiment),
 [[willison2025-lethal-trifecta]] (capability composition as a security
 boundary),
 [[vincent2026-therapist]] and [[vincent2026-superpowers-6]]
-(field reports), [[karpathy2026-llm-wiki]] (the pattern applied to
-knowledge rather than procedures).
+(field reports), [[provencher2026-astra-skills]] (the vendor-side
+instruction audit at a model release), [[karpathy2026-llm-wiki]] (the
+pattern applied to knowledge rather than procedures).
 
 ## The consensus architecture
 
@@ -107,6 +108,17 @@ does the loop close.
 - **The evaluator is code too.** Superpowers' Codex evals showed zero
   improvement because an isolation bug benchmarked the old version —
   an unverified gate passes everything.
+- **Harness content decays as models internalize it.**
+  [[weng2026-harness]] predicts harness functions internalize into
+  models while interfaces persist; [[provencher2026-astra-skills]] is
+  the vendor-side instance at one release: read-first and test-after
+  scaffolding became dead weight, while the skill catalog — an
+  interface — remained and now needs descriptions that route rather
+  than describe. Its remedy, a release-day audit by the model itself,
+  is the wholesale rewrite [[zhang2025-ace]] warns against; the
+  evidence-first, itemized-subtraction loop above governs pruning as
+  much as addition, and "the model is smarter now" is evidence about
+  procedure, never about the environment facts a harness also holds.
 - **Useful tools are also information-flow edges.** File access, retrieval,
   email, browsers, and network calls improve a harness while potentially
   completing the lethal trifecta. Threat review therefore follows an
@@ -144,6 +156,10 @@ skill implements evidence mining → itemized proposals → user-as-
 regression-gate → git audit trail, with rejections logged in session
 reflections. The library's shadow/notes tiers are the raw/wiki layers
 of [[karpathy2026-llm-wiki]]'s architecture; this page is its writeback
-layer. Open questions the shelf leaves for future ingestions: how to
+layer. The decay constraint has been exercised once: a 2026-09-07 pass
+against [[provencher2026-astra-skills]] rewrote every skill description
+as a routing key, put the rule under a lint cap, and split one skill
+into a router — and declined to prune rules that record environment
+facts. Open questions the shelf leaves for future ingestions: how to
 measure retention decay in a personal harness; whether identity ever
 becomes a locus here; what evidence would justify climbing a rung.
