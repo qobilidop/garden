@@ -41,8 +41,19 @@ site.yml`, then watch the new run and curl the live page.
   the built output (`npm run build` then `npm run preview`), never on
   the dev server alone.
 - Preview: `npm run preview`; use the URL it prints because the port may
-  vary. Screenshot and show the user before proposing a commit — visual
-  changes get visual review.
+  vary. Screenshot with `scripts/shot.mjs` (headless Chrome over the
+  DevTools protocol: `--scheme` emulates dark or light, `--hover` fires
+  `:hover`, `--frames` samples an animation, `--size` reflows narrow
+  layouts, `--reduced-motion` checks the still state) and show the user
+  before proposing a commit — visual changes get visual review. Plain
+  `chrome --screenshot` clamps the window to ~500px and ignores scheme
+  flags; the Chrome extension screenshots localhost only once that site
+  is granted in its settings.
+- Astro 7's `dev` and `preview` run as detached daemons that outlive
+  the session; stop them when done (`npx astro dev stop`, `npx astro
+  preview stop`) — a dozen leftovers from past sessions once shared a
+  port and served 404s. The CV record (`cv/cv.yaml`) loads at startup:
+  restart the dev server after editing it.
 - Survey manuscript presentation: compare representative HTML renders
   with the corresponding equation- or layout-heavy PDF pages; typography
   and mathematical structure should stay visually close even though
@@ -54,10 +65,13 @@ site.yml`, then watch the new run and curl the live page.
   image, then `npm run deploy` → Cloudflare Worker `garden` serving
   qobilidop.com). `site.yml`'s push `paths` must name every source the
   site reads (the §Site allowlist) — a source added without its trigger
-  path deploys silently stale (`cv/**` was missed in 2026-08). Watch by
-  exit code (`gh run watch <id>
-  --exit-status`), then curl `https://qobilidop.com/…` for the specific
-  change. If GitHub Actions is down, publish from the host: `npm run
+  path deploys silently stale (`cv/**` was missed in 2026-08). Resolve
+  the run by head SHA (`gh run list --json databaseId,headSha`) — `--limit
+  1` can race the dispatch and return the previous run — and watch by
+  exit code (`gh run watch <id> --exit-status`), then curl
+  `https://qobilidop.com/…` for the specific change. Verify a deployed
+  PDF with `pdftotext`, never byte or zlib scans: typst's subset fonts
+  encode text as glyph IDs (false-negatived 2026-08-23 and 2026-09-07). If GitHub Actions is down, publish from the host: `npm run
   build && npm run deploy` in `site/` (one-time `npx wrangler login`).
   Decision record and what-if runbook:
   `scratch/2026/2026-08-22/hosting-decision.md`.

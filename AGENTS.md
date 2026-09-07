@@ -38,6 +38,11 @@
   Recompute anything destined for a persisted artifact, and check that
   a partition sums to its denominator — a published "49 of 66" survived
   two rounds because nobody noticed 54 + 8 ≠ 66.
+- Subagents cannot write report files; ask for the deliverable as
+  returned text and persist it yourself. Their output goes through the
+  same leak review as your own — they hold the user's context, and one
+  embedded the user's email in a fetch User-Agent, which reached a
+  scratch note before review caught it.
 - Writing fan-outs default to worktree isolation (clean per-agent
   baseline, mechanical merge-back); read-only fan-outs share the
   tree. When parallel writers must share a tree, their prompts
