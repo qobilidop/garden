@@ -65,6 +65,19 @@ in
         "terminal.integrated.fontSize" = 13;
         # Fixed, not following the system; the same theme Ghostty sets (home.nix).
         "workbench.colorTheme" = "GitHub Dark Default";
+        # The integrated terminal behaves like Ghostty (deep scrollback, a
+        # blinking block cursor), and the external terminal is Ghostty.
+        "terminal.integrated.scrollback" = 10000;
+        "terminal.integrated.cursorStyle" = "block";
+        "terminal.integrated.cursorBlinking" = true;
+        "terminal.external.osxExec" = "Ghostty.app";
+        # Whitespace hygiene: the defect class that keeps showing up in diffs.
+        "files.trimTrailingWhitespace" = true;
+        "files.insertFinalNewline" = true;
+        # Quiet: no telemetry, no welcome page, no minimap.
+        "telemetry.telemetryLevel" = "off";
+        "workbench.startupEditor" = "none";
+        "editor.minimap.enabled" = false;
         "containers.containerClient" = "com.microsoft.visualstudio.containers.docker";
         "containers.orchestratorClient" = "com.microsoft.visualstudio.orchestrators.dockercompose";
 
