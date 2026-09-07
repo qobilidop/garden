@@ -330,7 +330,15 @@ def push() -> int:
     live_config = home / "config.toml"
     canonical_text, canonical = load_toml(CANONICAL_CONFIG)
     del canonical_text
-    live_text, live = load_toml(live_config)
+    if live_config.exists():
+        live_text, live = load_toml(live_config)
+        config_mode = stat.S_IMODE(live_config.stat().st_mode)
+        expected = signature(live_config)
+    else:
+        # A fresh machine, Codex never run: start the live file from the
+        # managed keys alone; Codex adds its own state around them later.
+        live_text, live = "", {}
+        config_mode, expected = 0o644, None
     values = list(leaves(canonical))
     updated = patch_text(live_text, values)
 
@@ -347,9 +355,8 @@ def push() -> int:
     if before_unmanaged != after_unmanaged:
         raise SyncError("merge changed unmanaged Codex state; refusing to write")
 
-    config_mode = stat.S_IMODE(live_config.stat().st_mode)
     outputs: list[tuple[Path, bytes, int, tuple[int, int, int, int] | None]] = [
-        (live_config, updated.encode(), config_mode, signature(live_config))
+        (live_config, updated.encode(), config_mode, expected)
     ]
     for source, relative, mode in FILE_MAP:
         if not source.is_file():
