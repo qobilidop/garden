@@ -30,8 +30,13 @@ Host configuration for every machine: one flake, upstream Nix.
   binaries install natively, outside Nix. zsh comes from `home.nix`;
   on Ubuntu `bootstrap.sh` registers it as the login shell
   (`/etc/shells`, `chsh`), the one shell step the OS owns. Ubuntu GUI
-  apps (VS Code, Chrome, Zoom, Termius, 1Password) are a manual apt
-  step, untested.
+  apps (VS Code, Chrome, Zoom, Termius, 1Password, Ghostty — official
+  apt from 26.04, the community `.deb` before) are a manual apt step,
+  untested.
+- Ghostty: cask on macOS, apt on Ubuntu; `home.nix` owns
+  `~/.config/ghostty/config` (`programs.ghostty`, `package = null`, so
+  the module's config validation does not run — check a changed config
+  with `ghostty +validate-config` before switching).
 - VS Code: the app is a cask (apt on Ubuntu); `vscode.nix` owns
   settings, keybindings, and extensions as store symlinks, so the
   settings UI and the Extensions view cannot save — declare the change

@@ -67,6 +67,22 @@ in
     ignores = [ "**/.claude/settings.local.json" ];
   };
 
+  # Terminal: the app is a cask (apt on Ubuntu 26.04+); this owns its config,
+  # one key = value file at ~/.config/ghostty/config on both platforms.
+  # Defaults are the design; only what a system default cannot know.
+  programs.ghostty = {
+    enable = true;
+    package = null;
+    systemd.enable = false; # needs a Nix-built package
+    settings = {
+      # Follow the system appearance with a neutral pair.
+      theme = "light:GitHub Light Default,dark:GitHub Dark Default";
+      # Option is Alt for the shell (word motions); left only, so the right
+      # Option still types special characters.
+      macos-option-as-alt = "left";
+    };
+  };
+
   # Per-project flakes activate through direnv (`use flake` in .envrc).
   programs.direnv = {
     enable = true;

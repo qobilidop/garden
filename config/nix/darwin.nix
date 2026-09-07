@@ -63,6 +63,7 @@
       "claude-code@latest"
       "codex"
       "displaylink"
+      "ghostty"
       "google-chrome"
       "termius"
       "visual-studio-code"
