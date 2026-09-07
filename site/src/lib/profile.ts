@@ -53,8 +53,6 @@ export const sections: Section[] = [
     verb: 'learn',
     pages: [
       { label: 'library', path: '/library/' },
-      // Surveys are built and citable but not in the nav: the section
-      // is moving to its own home.
       { label: 'wiki', path: '/wiki/' },
       { label: 'notebook', path: '/notebook/' },
     ],

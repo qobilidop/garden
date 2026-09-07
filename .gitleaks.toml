@@ -11,9 +11,10 @@ description = "library citekey frontmatter is not a credential"
 regexTarget = "line"
 regexes = ['''^\s*citekey: [a-z][a-z0-9-]+$''']
 
-# Survey audit logs (absorbed dataflow-selection-enumeration history and
-# its record/): Semantic Scholar CorpusId hashes and bibliography seed
-# keys are public metadata whose `key:`/`Id:` shapes trip
+# Survey records in git history (the surveys moved to their own
+# repositories on 2026-09-07, but every full-history scan still sees
+# them): Semantic Scholar CorpusId hashes and bibliography seed keys
+# are public metadata whose `key:`/`Id:` shapes trip
 # generic-api-key. Matched on the token shape, not the file, so real
 # credentials in the same files still fire.
 [[allowlists]]
