@@ -52,8 +52,7 @@ in
       # sync; python3 is what config/codex/sync.sh runs (needs tomllib, 3.11+)
       rclone
       python3
-      # agents (Claude Code and Codex install natively, see AGENTS.md)
-      gemini-cli
+      # agents: Claude Code and Codex install natively (see AGENTS.md)
     ]
     ++ lib.optionals pkgs.stdenv.isDarwin [ colima ];
 

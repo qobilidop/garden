@@ -50,7 +50,6 @@ in
           tomoki1207.pdf
         ])
         ++ (with marketExt; [
-          google.gemini-cli-vscode-ide-companion
           ms-vscode.cpp-devtools
           ms-vscode.cpptools-themes
           timhutt.sail-vscode # Sail ISA specification language
