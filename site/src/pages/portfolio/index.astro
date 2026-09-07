@@ -1,6 +1,15 @@
 ---
 import Base from '../../layouts/Base.astro'
 import { portfolio } from '../../lib/portfolio'
+import { monthLabel } from '../../lib/recency'
+
+// Newest first; the label is the month the work started.
+const entries = [...portfolio].sort((a, b) => b.started.localeCompare(a.started))
+// Ledger convention: label a month only on its first (newest) entry.
+const labels = entries.map((e, i) => {
+  const m = monthLabel(e.started)
+  return i > 0 && monthLabel(entries[i - 1].started) === m ? undefined : m
+})
 ---
 
 <Base title="portfolio">
@@ -12,12 +21,14 @@ import { portfolio } from '../../lib/portfolio'
   </p>
   <ul class="work-list">
     {
-      portfolio.map((e) => (
+      entries.map((e, i) => (
         <li>
           <a href={e.url}>{e.title}</a>
-          <span class="tag">
-            <span class="month">{e.year}</span>
-          </span>
+          {labels[i] && (
+            <span class="tag">
+              <span class="month">{labels[i]}</span>
+            </span>
+          )}
           <span class="synthesis">
             {e.summary} <a href={e.repository}>Repository</a>.
           </span>

@@ -1,18 +1,19 @@
 # A curated record of what I build. Each entry lives in its own
-# repository; the site's portfolio page renders this list. Schema in
+# repository; the site's portfolio page renders this list, newest first.
+# `started` is the work's first commit date. Schema in
 # site/src/lib/portfolio.ts.
 - title: "Symbolic Execution of Digital Hardware Designs: A Systematic Map of Path-Conditioned Design Execution"
-  year: 2026
+  started: 2026-08-10
   summary: A systematic map and critical survey of path-conditioned symbolic execution for digital hardware designs, with RTL at the center.
   url: https://qobilidop.github.io/symbolic-execution-hardware/
   repository: https://github.com/qobilidop/symbolic-execution-hardware
 - title: "Exhaustive Enumeration of Selection Observations in Pure Dataflow Graphs: A Survey and Unified Framework"
-  year: 2026
+  started: 2026-08-03
   summary: A problem-centered survey and unified framework for enumerating every selection observation of a finite pure dataflow graph.
   url: https://qobilidop.github.io/dataflow-selection-enumeration/
   repository: https://github.com/qobilidop/dataflow-selection-enumeration
 - title: "Agent-Assisted Evidence Synthesis: A Survey"
-  year: 2026
+  started: 2026-08-09
   summary: An exploratory systematic map of how AI and LLM agents are being used across the evidence-synthesis pipeline.
   url: https://qobilidop.github.io/agent-assisted-evidence-synthesis/
   repository: https://github.com/qobilidop/agent-assisted-evidence-synthesis

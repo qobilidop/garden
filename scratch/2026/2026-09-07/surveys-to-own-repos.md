@@ -21,9 +21,10 @@ archived `dataflow-selection-enumeration` repository is reused.
 - Garden dropped `surveys/`, `skills/run-survey/`, the manuscript
   build, `paper.css`, and the survey collection, pages, backlinks, and
   recency. `portfolio/portfolio.yaml` (zod-checked by
-  `site/src/lib/portfolio.ts`) now feeds the portfolio page;
-  `site/public/_redirects` maps every old survey URL; five `[[slug]]`
-  links in wiki and library became plain URLs.
+  `site/src/lib/portfolio.ts`) now feeds the portfolio page, dated by
+  each work's first commit; old `/surveys/…` URLs are not redirected
+  (Bili's call); five `[[slug]]` links in wiki and library became
+  plain URLs.
 
 ## Findings
 
