@@ -41,7 +41,6 @@ in
           ms-vscode.cpptools
           ms-vscode.cpptools-extension-pack
           ms-vscode.cmake-tools
-          vscjava.vscode-gradle
           # containers and ci
           ms-vscode-remote.remote-containers
           ms-azuretools.vscode-containers
@@ -52,7 +51,6 @@ in
         ++ (with marketExt; [
           ms-vscode.cpp-devtools
           ms-vscode.cpptools-themes
-          timhutt.sail-vscode # Sail ISA specification language
         ]);
 
       userSettings = {

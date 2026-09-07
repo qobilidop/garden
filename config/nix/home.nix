@@ -27,12 +27,8 @@ in
       # version control and repo hygiene
       gh
       git
-      git-filter-repo
       gitleaks
-      pre-commit
       # documents
-      pandoc
-      poppler-utils
       typst
       # build tools
       cmake
@@ -44,13 +40,10 @@ in
       docker
       docker-buildx
       devcontainer
-      # solvers
-      z3
       # nix: language server and formatter, also wired into vscode.nix
       nixd
       nixfmt
-      # sync; python3 is what config/codex/sync.sh runs (needs tomllib, 3.11+)
-      rclone
+      # config/codex/sync.sh and the site scripts (tomllib needs 3.11+)
       python3
       # agents: Claude Code and Codex install natively (see AGENTS.md)
     ]

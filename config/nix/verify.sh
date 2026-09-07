@@ -8,7 +8,7 @@ here="$(cd "$(dirname "$0")" && pwd)"
 garden="$(cd "$here/../.." && pwd)"
 fail() { echo "verify: $*" >&2; exit 1; }
 
-for tool in git gitleaks python3 typst pandoc cmake nixfmt; do
+for tool in git gitleaks python3 typst cmake nixfmt; do
   path="$(command -v "$tool" 2>/dev/null)" || fail "$tool not on PATH"
   case "$(readlink -f "$path")" in
     /nix/store/*) ;;

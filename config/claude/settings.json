@@ -22,9 +22,7 @@
   "skipWorkflowUsageWarning": true,
   "autoMode": {
     "soft_deny": [
-      "$defaults",
-      "Bash(rclone:sync)",
-      "Bash(rclone:delete)"
+      "$defaults"
     ],
     "environment": [
       "### Org-wide",
@@ -49,7 +47,7 @@
       "### User-specific",
       "**Primary use of Claude Code**: software development (personal/hobby project — public digital system built around human-AI collaboration)",
       "**Trusted repo**: qobilidop/garden (this repo, working directory ~/my/garden) and its remote github.com:qobilidop/garden.git — public repo, so only this repo's own work is OK to commit/push there; secrets and sensitive personal/entrusted data are never cleared into it regardless of visibility",
-      "**Org-specific CLIs**: None configured — rclone, gitleaks, npx, brew, typst seen as routine tooling in this project but are general-purpose, not org-specific"
+      "**Org-specific CLIs**: None configured — gitleaks, npx, brew, typst seen as routine tooling in this project but are general-purpose, not org-specific"
     ]
   }
 }
