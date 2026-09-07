@@ -666,70 +666,77 @@ img {
     overflow: visible;
   }
 
+  /* Each limb names its own animation in a full shorthand, sharing the
+     timing through a custom property: a nameless `animation:` shorthand
+     here would be minified to `animation: none` (lightningcss does not
+     see the names set per limb below). */
+  .profile-mark {
+    --dance: 4.8s ease-in-out infinite;
+  }
+
   .profile-mark .dance {
     transform-box: view-box;
-    animation: 4.8s ease-in-out infinite;
     transition: transform 0.35s ease-out;
   }
 
   .profile-mark .dance-all {
     transform-origin: 4px 21px;
-    animation-name: groove-bob;
+    animation: groove-bob var(--dance);
   }
 
   .profile-mark .dance-head {
     transform-origin: 4px 5px;
-    animation-name: groove-head;
+    animation: groove-head var(--dance);
   }
 
   .profile-mark .dance-arm-l {
     transform-origin: 0px 7px;
-    animation-name: groove-arm-l;
+    animation: groove-arm-l var(--dance);
   }
 
   .profile-mark .dance-arm-r {
     transform-origin: 8px 7px;
-    animation-name: groove-arm-r;
+    animation: groove-arm-r var(--dance);
   }
 
   .profile-mark .dance-forearm-l {
     transform-origin: 0px 11px;
-    animation-name: groove-forearm-l;
+    animation: groove-forearm-l var(--dance);
   }
 
   .profile-mark .dance-forearm-r {
     transform-origin: 8px 11px;
-    animation-name: groove-forearm-r;
+    animation: groove-forearm-r var(--dance);
   }
 
   .profile-mark .dance-hand-l {
     transform-origin: 0px 14px;
-    animation-name: groove-hand-l;
+    animation: groove-hand-l var(--dance);
   }
 
   .profile-mark .dance-hand-r {
     transform-origin: 8px 14px;
-    animation-name: groove-hand-r;
+    animation: groove-hand-r var(--dance);
   }
 
   .profile-mark .dance-leg-l {
     transform-origin: 3px 18px;
-    animation-name: groove-leg-l;
+    animation: groove-leg-l var(--dance);
   }
 
   .profile-mark .dance-leg-r {
     transform-origin: 5px 18px;
-    animation-name: groove-leg-r;
+    animation: groove-leg-r var(--dance);
   }
 
   .profile-mark .dance-foot-l {
     transform-origin: 3px 21px;
-    animation-name: groove-foot-l;
+    animation: groove-foot-l var(--dance);
   }
 
   .profile-mark .dance-foot-r {
     transform-origin: 5px 21px;
-    animation-name: groove-foot-r;
+    animation: groove-foot-r var(--dance);
   }
 
   /* The wave: the loop stops, the left arm rises into the margin, and

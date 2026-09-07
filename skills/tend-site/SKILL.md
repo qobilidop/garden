@@ -34,6 +34,12 @@ site.yml`, then watch the new run and curl the live page.
 - Errors thrown inside the markdown pipeline are logged but the build
   exits 0 — a check that must gate CI throws at config load instead.
   Verify enforcement by exit code, never by error text.
+- The dev server serves unminified CSS; production is minified by
+  lightningcss, which optimizes within a rule without seeing the
+  cascade — a nameless `animation:` shorthand becomes `animation:
+  none` even when later rules set the name. Verify CSS behavior on
+  the built output (`npm run build` then `npm run preview`), never on
+  the dev server alone.
 - Preview: `npm run preview`; use the URL it prints because the port may
   vary. Screenshot and show the user before proposing a commit — visual
   changes get visual review.
