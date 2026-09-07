@@ -1,6 +1,0 @@
-{
-  "name": "garden",
-  "build": {
-    "dockerfile": "Dockerfile"
-  }
-}

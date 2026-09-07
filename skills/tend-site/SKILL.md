@@ -15,12 +15,11 @@ and `site/src/lib/portfolio.ts`. The logo variants and favicons are built
 by `python3 site/scripts/build-brand.py` (stdlib only, runs on the
 host) from `brand/logo.svg` and `brand/favicon.svg` into gitignored
 `site/public/brand/` and `site/public/favicon.*`, and the CV PDF by
-`python3 site/scripts/build-cv.py` (typst, pinned in the dev image) from
+`python3 site/scripts/build-cv.py` (typst from the flake shell) from
 `cv/cv.typ` over `cv/cv.yaml` into gitignored `site/public/cv.pdf`; CI
-runs both scripts before the Astro build, and a push that changes
-`.devcontainer/` races the image republish — the proven recovery, runnable as one background chain:
-`gh run watch <dev-image-run> --exit-status && gh workflow run
-site.yml`, then watch the new run and curl the live page.
+runs both scripts before the Astro build, every step inside `nix
+develop` (`flake.nix`, the shell direnv gives the host), so a tool
+version changes in one place: the flake lock.
 
 ## The loop
 
@@ -73,11 +72,10 @@ site.yml`, then watch the new run and curl the live page.
   a runtime-deprecation annotation on an action is a maintenance finding,
   not a green-run exemption (Node 20 action drift surfaced this way in
   2026-08).
-- Never run npm installs or builds through `dev.sh` against the host
-  checkout: the mount shares `site/node_modules`, and Linux binaries
-  clobber the macOS ones ("Cannot find native binding"). `dev.sh`
-  rejects direct `npm`, `npx`, `yarn`, and `pnpm` invocations; reinstall
-  on the host if an indirect invocation causes the same failure.
+- `site/node_modules` holds native binaries for the host that
+  installed them; an install from another platform against the same
+  checkout (a container mount) breaks the build ("Cannot find native
+  binding"). Reinstall on the host if it happens.
 
 ## Design system
 

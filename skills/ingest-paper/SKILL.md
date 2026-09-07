@@ -1,14 +1,14 @@
 ---
 name: ingest-paper
 description: Ingest a research paper into the sys library — canonical PDF and mechanical transcript to shadow, author-labeled synthesis notes to sys. Use when asked to ingest, add, or capture a paper (given a URL, DOI, arXiv id, or title) into the library. For informal web-native writing (blog posts, announcements, Q&A answers), use ingest-post instead.
-compatibility: "Requires the sys repo with its private shadow/ checkout and network access; ./dev.sh supplies pinned tools (pymupdf4llm) when the host lacks them."
+compatibility: "Requires the sys repo with its private shadow/ checkout, network access, and the repo flake shell (uv runs the pinned pymupdf4llm)."
 ---
 
 # Ingest a paper
 
-Work from the sys repo root. Requires the private `shadow/` checkout;
-`./dev.sh <cmd>` provides the pinned toolchain (pymupdf4llm) when the host
-lacks it.
+Work from the sys repo root inside the flake shell (`nix develop` or
+direnv). Requires the private `shadow/` checkout; `tools/transcribe.sh`
+runs the pinned pymupdf4llm through uv (`tools/uv.lock`).
 
 ## 1. Resolve the work
 

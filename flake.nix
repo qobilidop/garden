@@ -37,6 +37,13 @@
             # gitleaks-pin check below enforces it.
             gitleaks
           ];
+          # Arm the leak-guard hooks on every shell entry (idempotent; a no-op
+          # outside a checkout, e.g. the store copy CI evaluates).
+          shellHook = ''
+            if git rev-parse --is-inside-work-tree >/dev/null 2>&1; then
+              git config core.hooksPath hooks || true
+            fi
+          '';
         };
       });
 

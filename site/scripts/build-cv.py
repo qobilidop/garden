@@ -4,8 +4,7 @@
 cv/cv.yaml is the canonical record; cv/cv.typ is the paged view over
 it. Output: site/public/cv.pdf (gitignored, like all derived views).
 
-Requires typst (pinned in .devcontainer/Dockerfile; the host install
-must match that version — run via ./dev.sh if it doesn't).
+Requires typst from the repo flake shell (`nix develop` or direnv).
 """
 import subprocess
 import sys

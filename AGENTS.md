@@ -12,7 +12,7 @@
 
 ## Guards
 
-- A machine check that runs in more than one place (hooks, dev image,
+- A machine check that runs in more than one place (hooks, flake,
   CI) pins a single version, and each pin site cross-references the
   others — divergent scanner versions once made CI and hooks disagree
   on the same config.
@@ -114,12 +114,10 @@
   graph, work metadata); everything else is rented substrate (Astro,
   remark, KaTeX, Pagefind, Mermaid, wrangler). An unresolved `[[target]]` fails
   the build.
-- CI builds in the dev image (`.github/workflows/site.yml`) and
+- CI builds in the flake shell (`.github/workflows/site.yml`) and
   deploys with `npm run deploy`; local builds and emergency deploys
   (same command, OAuth via `wrangler login`) run on the host per
   tend-site.
-  `dev.sh` rejects direct package-manager commands because container
-  installs would clobber native binaries in the shared `node_modules`.
 
 ## Conventions
 
@@ -151,6 +149,16 @@
   relative symlinks in both `.claude/skills/` (read by Claude Code) and
   `.agents/skills/` (the cross-client convention — Codex and other
   agents).
+
+## Dev shell
+
+- `flake.nix` is the project toolchain, entered by `nix develop` or
+  direnv (`.envrc`), the same shell CI runs; it follows the host
+  layer's nixpkgs (`config/nix`), one lock for both. Nix provides
+  tools and language package managers; language packages come from
+  those managers with their own lockfiles (`npm ci` for `site/`,
+  `uv run --project tools` with `tools/uv.lock`) — nixpkgs trails
+  language ecosystems by versions, not days.
 
 ## Mirrored agent configuration
 
