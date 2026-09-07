@@ -90,3 +90,9 @@ memory updated in place; (6) evidence-before-assertion memory
 sharpened; (7) subtraction — two settled open items and the brand
 wording note removed from the garden-website memory. Nothing
 rejected.
+
+Considered and declined afterwards (Bili, same day): per-day
+`README.md` indexes in `scratch/` for human browsing. Descriptive
+slugs and the synthesis note's sibling list already carry the need;
+an unchecked index would drift, and a lint-checked one was more
+machinery than the need justified. Not to be re-proposed.
