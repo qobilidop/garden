@@ -2,6 +2,7 @@
 // profiles. Nav, landing page, and footer all read from here.
 // Icon paths are the brands' own marks on a 24-unit grid (Simple
 // Icons geometry, CC0), inlined so nothing loads from a third party.
+// Email has no brand; its envelope is drawn here on the same grid.
 
 export const name = 'Bili Dong'
 export const nameCJK = '董比立'
@@ -13,6 +14,12 @@ export interface Profile {
 }
 
 export const profiles: Profile[] = [
+  {
+    label: 'Email',
+    href: 'mailto:qobilidop@gmail.com',
+    // An envelope: the body with the flap cut out as a V, then the flap.
+    path: 'M2 6.5v13a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1v-13l-10 6.5zM3 3.5h18a1 1 0 0 1 .8 1.6L12 12 2.2 5.1A1 1 0 0 1 3 3.5z',
+  },
   {
     label: 'GitHub',
     href: 'https://github.com/qobilidop',
