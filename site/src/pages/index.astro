@@ -2,10 +2,9 @@
 import Base from '../layouts/Base.astro'
 import Mark from '../components/Mark.astro'
 import ProfileLinks from '../components/ProfileLinks.astro'
-import { name, nameCJK } from '../lib/profile'
+import { name, nameCJK, tagline } from '../lib/profile'
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '')
-const tagline = 'Engineering for a living, research out of curiosity, share by default.'
 const description = `${name} (${nameCJK}). ${tagline}`
 ---
 
@@ -20,24 +19,38 @@ const description = `${name} (${nameCJK}). ${tagline}`
       <ProfileLinks class="profile-contacts" />
     </div>
   </section>
-  {/* Run-in anchors mirror the tagline's three clauses, one paragraph each. */}
+  {/* The intro answers the questions a visitor brings, not the CV or
+      the nav, which have their own homes: the question as a heading,
+      a short answer. More questions (what is interesting here, what's
+      new) wait for the content to back them. */}
+  <h2>Why this site?</h2>
   <p class="profile-intro">
-    <strong>Engineering for a living:</strong> I'm a software engineer at
-    Google, where I lead formal methods work for SmartNICs. I also serve on
-    the <a href="https://p4.org/">P4</a> Technical Steering Team.
+    This is a personal digital garden, kept in the open, for three reasons:
   </p>
+  <ul class="profile-intro">
+    <li>
+      <strong>To share:</strong> whatever I build or learn that can be
+      public.
+    </li>
+    <li>
+      <strong>To connect:</strong> with people anywhere who care about the
+      same things.
+    </li>
+    <li>
+      <strong>To provide a shared context:</strong> for any agent, mine
+      or yours, through this site and its
+      <a href="https://github.com/qobilidop/garden">repository</a>, so
+      collaboration starts from the same page.
+    </li>
+  </ul>
+  <h2>Who is behind it?</h2>
   <p class="profile-intro">
-    <strong>Research out of curiosity:</strong> Before software I spent ten
-    years in physics, from a BS at Peking University to a PhD program in
-    computational astrophysics at UC San Diego, which I left to retrain in
-    computer science. The curiosity stayed.
-  </p>
-  <p class="profile-intro">
-    <strong>Share by default:</strong> I share whatever can be shared. My code
-    lands in open source. My notes grow in this digital garden: a
-    <a href={`${base}/library/`}>library</a> of works I've read,
-    <a href={`${base}/wiki/`}>wiki</a> topics distilled across them, and
-    <a href={`${base}/surveys/`}>survey</a> manuscripts. My record lives in the
-    <a href={`${base}/cv/`}>curriculum vitae</a>.
+    An engineer by trade and a physicist by training. I work on formal
+    methods for network hardware at Google and serve on the
+    <a href="https://p4.org/">P4</a> Technical Steering Team. Before
+    software I spent ten years in physics, and the questions that took me
+    there have not let go: what is truth, what is reality, what is
+    intelligence, what is consciousness, what makes us human. For the
+    professional record, see the <a href={`${base}/cv/`}>CV</a>.
   </p>
 </Base>
