@@ -30,7 +30,7 @@ Host configuration for every machine: one flake, upstream Nix.
   binaries install natively, outside Nix. zsh comes from `home.nix`;
   on Ubuntu `bootstrap.sh` registers it as the login shell
   (`/etc/shells`, `chsh`), the one shell step the OS owns. Ubuntu GUI
-  apps (VS Code, Chrome, Zoom, Termius, 1Password, Ghostty — official
+  apps (VS Code, Chrome, Zoom, 1Password, Ghostty — official
   apt from 26.04, the community `.deb` before) are a manual apt step,
   untested.
 - Who updates a GUI app is recorded in `darwin.nix`: `selfUpdating`

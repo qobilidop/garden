@@ -17,7 +17,6 @@ let
     "claude"
     "ghostty"
     "google-chrome"
-    "termius"
     "visual-studio-code"
     "zoom"
   ];
