@@ -56,7 +56,13 @@ in
         ]);
 
       userSettings = {
-        "terminal.integrated.fontFamily" = "JetBrainsMono Nerd Font";
+        # One face and size everywhere, the same as Ghostty (home.nix); the
+        # NL cut has no ligatures, and the flag says so explicitly.
+        "editor.fontFamily" = "JetBrainsMonoNL Nerd Font";
+        "editor.fontSize" = 13;
+        "editor.fontLigatures" = false;
+        "terminal.integrated.fontFamily" = "JetBrainsMonoNL Nerd Font";
+        "terminal.integrated.fontSize" = 13;
         # Fixed, not following the system; the same theme Ghostty sets (home.nix).
         "workbench.colorTheme" = "GitHub Dark Default";
         "containers.containerClient" = "com.microsoft.visualstudio.containers.docker";

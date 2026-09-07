@@ -77,8 +77,10 @@ in
     systemd.enable = false; # needs a Nix-built package
     settings = {
       # The Nerd Font the OS layer installs, so Starship's glyphs come from
-      # the same face here and in the VS Code terminal.
-      font-family = "JetBrainsMono Nerd Font";
+      # the same face here and in VS Code (vscode.nix). The NL cut has no
+      # ligatures at the font level: `->` never renders as `→`.
+      font-family = "JetBrainsMonoNL Nerd Font";
+      font-size = 13; # the default, explicit; the same size as VS Code
       # Fixed, not following the system; the same theme VS Code sets
       # (vscode.nix). `ghostty +list-themes` previews the alternatives.
       theme = "GitHub Dark Default";
