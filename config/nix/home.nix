@@ -15,6 +15,8 @@ in
   # Compatibility marker for the first install; never bumped casually.
   home.stateVersion = "26.05";
 
+  imports = [ ./vscode.nix ];
+
   # Command-line tools. Project libraries (boost, antlr, jdk, re2c) live in
   # per-repository flakes, not here. gitleaks is a pin site: nixpkgs' version
   # must match GITLEAKS_VERSION in .github/workflows/gitleaks.yml and the
@@ -44,6 +46,9 @@ in
       devcontainer
       # solvers
       z3
+      # nix: language server and formatter, also wired into vscode.nix
+      nixd
+      nixfmt
       # sync; python3 is what config/codex/sync.sh runs (needs tomllib, 3.11+)
       rclone
       python3
