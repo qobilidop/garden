@@ -27,11 +27,10 @@ jobs:
     steps:
       - uses: actions/checkout@v7
       - name: Create the user the flake declares
-        # zsh from apt, as on a real box: home.nix manages the shell's files,
-        # not the login shell itself (config/nix/AGENTS.md).
+        # bash to start, as a fresh Ubuntu account; bootstrap.sh switches the
+        # login shell to the zsh home.nix installs.
         run: |
-          sudo apt-get install -y -qq zsh >/dev/null
-          sudo useradd --create-home --shell /usr/bin/zsh qobilidop
+          sudo useradd --create-home --shell /bin/bash qobilidop
           echo 'qobilidop ALL=(ALL) NOPASSWD:ALL' | sudo tee /etc/sudoers.d/qobilidop >/dev/null
           sudo mkdir -p /home/qobilidop/my
           sudo cp -r "$GITHUB_WORKSPACE" /home/qobilidop/my/garden
@@ -39,7 +38,8 @@ jobs:
       - name: bootstrap.sh
         run: sudo -iu qobilidop env NIX_INSTALLER_NO_CONFIRM=true /home/qobilidop/my/garden/config/nix/bootstrap.sh
       - name: verify.sh from a fresh login shell
-        run: sudo -iu qobilidop zsh -lc /home/qobilidop/my/garden/config/nix/verify.sh
+        # -i runs the user's login shell, the Nix zsh after bootstrap.
+        run: sudo -iu qobilidop /home/qobilidop/my/garden/config/nix/verify.sh
 
   # The darwin system builds on a clean arm64 Mac. Activation (Homebrew,
   # casks, daemon) is exercised only on the real machine: on a runner it

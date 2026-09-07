@@ -40,6 +40,13 @@ case "$(uname -s)" in
       out="$(nix build $features --no-link --print-out-paths "$here#homeConfigurations.$(id -un).activationPackage")"
       HOME_MANAGER_BACKUP_EXT=hm-backup "$out/activate"
     fi
+    # Login shell: the zsh home.nix installs and configures. The OS keeps
+    # the record (/etc/shells, passwd), the one shell step outside Nix.
+    zsh="$HOME/.nix-profile/bin/zsh"
+    if [ "$(getent passwd "$(id -un)" | cut -d: -f7)" != "$zsh" ]; then
+      grep -qxF "$zsh" /etc/shells || echo "$zsh" | sudo tee -a /etc/shells >/dev/null
+      sudo chsh -s "$zsh" "$(id -un)"
+    fi
     ;;
   *) echo "unsupported OS: $(uname -s)" >&2; exit 1 ;;
 esac

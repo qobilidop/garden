@@ -16,6 +16,14 @@ for tool in git gitleaks python3 typst pandoc cmake nixfmt; do
   esac
 done
 
+if [ "$(uname -s)" = Linux ]; then
+  shell="$(getent passwd "$(id -un)" | cut -d: -f7)"
+  case "$(readlink -f "$shell")" in
+    /nix/store/*zsh*) ;;
+    *) fail "login shell is $shell, not the Nix zsh" ;;
+  esac
+fi
+
 pin="$(sed -n 's/^ *GITLEAKS_VERSION: *//p' "$garden/.github/workflows/gitleaks.yml")"
 have="$(gitleaks version)"
 [ "$have" = "$pin" ] || fail "gitleaks $have, CI pins $pin"
