@@ -66,7 +66,8 @@
   not reliably auto-load — Claude Code loads them on reads (not
   writes), Codex walks only the cwd chain, and subagents inherit
   nothing — so: **before writing in a layer, read its AGENTS.md.**
-  Layers with contracts so far: `scratch/`.
+  Layers with contracts so far: `scratch/`, `config/nix/`,
+  `config/claude/`, `config/codex/`.
 
 ## Wiki
 
@@ -154,7 +155,11 @@
 
 - `flake.nix` is the project toolchain, entered by `nix develop` or
   direnv (`.envrc`), the same shell CI runs; it follows the host
-  layer's nixpkgs (`config/nix`), one lock for both. Nix provides
+  layer's nixpkgs (`config/nix`) through a relative path input, so
+  there are two lock files with one pin — Nix neither refreshes nor
+  checks the root copy, `hooks/lint.sh` and the Host config workflow
+  compare them, and `nix flake update host` at the root is the
+  repair after every host update. Nix provides
   tools and language package managers; language packages come from
   those managers with their own lockfiles (`npm ci` for `site/`,
   `uv run --project tools` with `tools/uv.lock`) — nixpkgs trails
