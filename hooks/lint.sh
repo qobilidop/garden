@@ -17,4 +17,16 @@ while IFS= read -r f; do
 done < <(git ls-files 'scratch/' \
          | grep -E '^scratch/[0-9]{4}/[0-9]{4}-[0-9]{2}-[0-9]{2}/[^/]+\.md$')
 
+# The root flake follows config/nix's nixpkgs, but Nix never checks that the
+# root lock's copy matches the host lock (config/nix/AGENTS.md); a stale copy
+# evaluates silently against the old nixpkgs. Repair: `nix flake update host`.
+python3 - <<'PY' || status=1
+import json, sys
+rev = lambda f: json.load(open(f))["nodes"]["nixpkgs"]["locked"]["rev"]
+root, host = rev("flake.lock"), rev("config/nix/flake.lock")
+if root != host:
+    print(f"lint: flake.lock nixpkgs {root[:7]} != config/nix/flake.lock {host[:7]}; run: nix flake update host", file=sys.stderr)
+    sys.exit(1)
+PY
+
 exit "$status"

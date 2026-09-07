@@ -4,6 +4,10 @@
 #
 #   git clone https://github.com/qobilidop/garden ~/my/garden
 #   ~/my/garden/config/nix/bootstrap.sh
+#   # then, from a fresh login shell:
+#   ~/my/garden/config/nix/verify.sh
+#
+# .github/workflows/host-config.yml runs this on a clean Ubuntu runner.
 set -eu
 here="$(cd "$(dirname "$0")" && pwd)"
 
@@ -19,16 +23,22 @@ case "$(uname -s)" in
     if command -v darwin-rebuild >/dev/null 2>&1; then
       sudo darwin-rebuild switch --flake "$here#mac"
     else
+      # First run: the pinned system carries its own darwin-rebuild, so the
+      # CLI that applies the flake is the one the flake locks.
       # shellcheck disable=SC2086
-      sudo nix run $features nix-darwin/master#darwin-rebuild -- switch --flake "$here#mac"
+      out="$(nix build $features --no-link --print-out-paths "$here#darwinConfigurations.mac.system")"
+      sudo "$out/sw/bin/darwin-rebuild" switch --flake "$here#mac"
     fi
     ;;
   Linux)
     if command -v home-manager >/dev/null 2>&1; then
       home-manager switch -b hm-backup --flake "$here#$(id -un)"
     else
+      # First run: activate the pinned generation directly; it installs the
+      # home-manager CLI (programs.home-manager.enable) for later switches.
       # shellcheck disable=SC2086
-      nix run $features home-manager/master -- switch -b hm-backup --flake "$here#$(id -un)"
+      out="$(nix build $features --no-link --print-out-paths "$here#homeConfigurations.$(id -un).activationPackage")"
+      HOME_MANAGER_BACKUP_EXT=hm-backup "$out/activate"
     fi
     ;;
   *) echo "unsupported OS: $(uname -s)" >&2; exit 1 ;;

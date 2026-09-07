@@ -1,0 +1,65 @@
+name: Host config
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "config/**"
+      - "flake.lock"
+      - ".github/workflows/host-config.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: host-config
+  cancel-in-progress: true
+
+jobs:
+  # A new Ubuntu box: no Nix, the user's own account, garden at ~/my/garden.
+  # bootstrap.sh runs unmodified; verify.sh judges the result from a fresh
+  # login shell. A clean home, so dotfile collisions on a real machine are
+  # not covered (hm-backup handles those).
+  ubuntu-bootstrap:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v7
+      - name: Create the user the flake declares
+        run: |
+          sudo useradd --create-home --shell /usr/bin/zsh qobilidop
+          echo 'qobilidop ALL=(ALL) NOPASSWD:ALL' | sudo tee /etc/sudoers.d/qobilidop >/dev/null
+          sudo mkdir -p /home/qobilidop/my
+          sudo cp -r "$GITHUB_WORKSPACE" /home/qobilidop/my/garden
+          sudo chown -R qobilidop:qobilidop /home/qobilidop/my
+      - name: bootstrap.sh
+        run: sudo -iu qobilidop env NIX_INSTALLER_NO_CONFIRM=true /home/qobilidop/my/garden/config/nix/bootstrap.sh
+      - name: verify.sh from a fresh login shell
+        run: sudo -iu qobilidop zsh -lc /home/qobilidop/my/garden/config/nix/verify.sh
+
+  # The darwin system builds on a clean arm64 Mac. Activation (Homebrew,
+  # casks, daemon) is exercised only on the real machine: on a runner it
+  # would test cask downloads, not this config.
+  macos-build:
+    runs-on: macos-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v7
+      # Upstream Nix, as on the hosts; not Determinate.
+      - uses: cachix/install-nix-action@v31
+      - run: nix build --no-link --print-out-paths ./config/nix#darwinConfigurations.mac.system
+
+  # The root flake follows config/nix's nixpkgs, but Nix neither refreshes
+  # nor checks the root lock when the host lock moves (a stale root lock
+  # evaluates silently against the old nixpkgs). `nix flake update host`
+  # at the root is the repair and must follow every host update; here it
+  # must be a no-op. The gitleaks pin check must still pass.
+  locks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+      - uses: cachix/install-nix-action@v31
+      - run: nix flake update host && git diff --exit-code -- flake.lock
+      - run: nix flake check

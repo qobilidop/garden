@@ -9,13 +9,21 @@ Host configuration for every machine: one flake, upstream Nix.
   brew installed by nix-homebrew) and from apt on Ubuntu (outside this
   flake). Project libraries and toolchains belong to per-repository
   flakes, never here.
-- Apply with `bootstrap.sh` (first run installs Nix) or, afterwards,
-  `sudo darwin-rebuild switch --flake .#mac` / `home-manager switch
-  --flake .#qobilidop`. Update with `nix flake update` then a switch;
-  `flake.lock` is the pin and is committed. Flakes evaluate only
-  git-tracked files: `git add` new files before switching. Lock as the
-  user (`nix flake lock`) before a sudo switch: a switch that has to
-  lock a new input writes `flake.lock` as root.
+- Apply with `bootstrap.sh` (first run installs Nix and activates the
+  pinned generation directly) or, afterwards, `sudo darwin-rebuild
+  switch --flake .#mac` / `home-manager switch --flake .#qobilidop`;
+  then `verify.sh` from a fresh login shell. Update with `nix flake
+  update` here, then `nix flake update host` at the repo root (the
+  root flake follows this nixpkgs, and Nix neither refreshes nor checks
+  that copy on its own — `hooks/lint.sh` and the Host config workflow
+  do), then a switch; both `flake.lock` files are committed. Flakes
+  evaluate only git-tracked files: `git add` new files before
+  switching. Lock as the user (`nix flake lock`) before a sudo switch:
+  a switch that has to lock a new input writes `flake.lock` as root.
+- `.github/workflows/host-config.yml` runs `bootstrap.sh` and
+  `verify.sh` on a clean Ubuntu runner as this user, builds the darwin
+  system on a macOS runner (no activation: that would test cask
+  downloads, not this config), and checks the two locks agree.
 - Claude Code and Codex configs stay on `config/claude` and
   `config/codex` (copies, not store symlinks: both tools rewrite their
   own files). The activation step pushes them on every switch; their
