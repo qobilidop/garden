@@ -54,6 +54,7 @@ in
         ]);
 
       userSettings = {
+        "terminal.integrated.fontFamily" = "JetBrainsMono Nerd Font";
         "containers.containerClient" = "com.microsoft.visualstudio.containers.docker";
         "containers.orchestratorClient" = "com.microsoft.visualstudio.orchestrators.dockercompose";
 
@@ -67,7 +68,7 @@ in
           nixpkgs.expr = "import (builtins.getFlake \"${flake}\").inputs.nixpkgs { }";
           # Option completion for this flake's own modules.
           options =
-            if pkgs.stdenv.isDarwin then
+            if pkgs.stdenv.hostPlatform.isDarwin then
               {
                 nix-darwin.expr = "(builtins.getFlake \"${flake}\").darwinConfigurations.mac.options";
                 home-manager.expr = "(builtins.getFlake \"${flake}\").darwinConfigurations.mac.options.home-manager.users.type.getSubOptions [ ]";

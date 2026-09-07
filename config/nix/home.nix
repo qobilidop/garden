@@ -11,7 +11,8 @@ let
 in
 {
   home.username = user;
-  home.homeDirectory = if pkgs.stdenv.isDarwin then "/Users/${user}" else "/home/${user}";
+  home.homeDirectory =
+    if pkgs.stdenv.hostPlatform.isDarwin then "/Users/${user}" else "/home/${user}";
   # Compatibility marker for the first install; never bumped casually.
   home.stateVersion = "26.05";
 
@@ -47,7 +48,7 @@ in
       python3
       # agents: Claude Code and Codex install natively (see AGENTS.md)
     ]
-    ++ lib.optionals pkgs.stdenv.isDarwin [ colima ];
+    ++ lib.optionals pkgs.stdenv.hostPlatform.isDarwin [ colima ];
 
   programs.home-manager.enable = true;
 
@@ -75,6 +76,9 @@ in
     package = null;
     systemd.enable = false; # needs a Nix-built package
     settings = {
+      # The Nerd Font the OS layer installs, so Starship's glyphs come from
+      # the same face here and in the VS Code terminal.
+      font-family = "JetBrainsMono Nerd Font";
       # Follow the system appearance with a neutral pair.
       theme = "light:GitHub Light Default,dark:GitHub Dark Default";
       # Option is Alt for the shell (word motions); left only, so the right
@@ -82,6 +86,10 @@ in
       macos-option-as-alt = "left";
     };
   };
+
+  # Prompt: Starship's defaults (directory, git, duration, exit status,
+  # language versions inside projects); the module adds the zsh init line.
+  programs.starship.enable = true;
 
   # Per-project flakes activate through direnv (`use flake` in .envrc).
   programs.direnv = {

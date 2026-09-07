@@ -3,6 +3,7 @@
   config,
   inputs,
   lib,
+  pkgs,
   user,
   ...
 }:
@@ -21,6 +22,10 @@
 
   # Installs the shell hooks that put Nix on PATH.
   programs.zsh.enable = true;
+
+  # The terminal font (Ghostty, the VS Code terminal, Starship's glyphs);
+  # linux.nix installs the same package through fontconfig.
+  fonts.packages = [ pkgs.nerd-fonts.jetbrains-mono ];
 
   # Homebrew goes on PATH after the Nix profiles (order 1000) and before
   # the system directories (1200), so a Nix tool always wins over a
