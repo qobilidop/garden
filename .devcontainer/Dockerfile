@@ -7,7 +7,8 @@ RUN apt-get update \
  && rm -rf /var/lib/apt/lists/*
 
 # Leak-guard scanner, pinned; release naming maps amd64 -> x64.
-# Keep in sync with GITLEAKS_VERSION in .github/workflows/gitleaks.yml.
+# Keep in sync with GITLEAKS_VERSION in .github/workflows/gitleaks.yml and
+# the nixpkgs gitleaks in config/nix/home.nix (pinned by flake.lock).
 ARG TARGETARCH
 RUN A="$TARGETARCH"; [ "$A" = "amd64" ] && A=x64; \
     curl -fsSL "https://github.com/gitleaks/gitleaks/releases/download/v8.30.1/gitleaks_8.30.1_linux_${A}.tar.gz" \

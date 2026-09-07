@@ -157,3 +157,5 @@
 - Before editing canonical user configuration under `config/`, read that
   platform's scoped instructions, run its sync tool with `diff`, and reconcile
   any drift.
+- `config/nix/` is the host layer (packages, shell, GUI apps) for every
+  machine; its AGENTS.md carries the apply and update commands.
