@@ -11,8 +11,10 @@ import { librarySources } from '../site/src/lib/library-sources.mjs'
 function usage() {
   return `Usage: node tools/check-ingest.mjs <citekey> [citekey ...]
 
-Validates the local preservation tiers for freshly ingested library works.
-Source-frontmatter parsing is shared with the site and archive tooling.
+Validates the local preservation tiers for freshly ingested library works:
+papers keep <citekey>.pdf + transcript.md (and/or *-snapshot.html), posts keep
+<citekey>.html + transcript.md. Source-frontmatter parsing is shared with the
+site and archive tooling.
 `
 }
 
@@ -94,16 +96,19 @@ export function checkIngest(
         tiers.push(`${snapshots.length} snapshot`)
       }
     } else {
+      // Posts: the rendered capture and its extracted text (capture-post.mjs).
       const postRoot = join(shadowRoot, 'library', 'posts', year, citekey)
-      const snapshots = snapshotsIn(postRoot)
-      if (snapshots.length === 0) throw new Error(`missing snapshot: ${citekey}`)
-      for (const snapshot of snapshots) nonEmptyFile(snapshot, 'snapshot')
-      tiers.push(`${snapshots.length} snapshot`)
-
+      nonEmptyFile(join(postRoot, `${citekey}.html`), 'capture')
+      tiers.push('capture')
+      nonEmptyFile(join(postRoot, 'transcript.md'), 'transcript')
+      tiers.push('transcript')
+      const legacy = snapshotsIn(postRoot)
+      if (legacy.length > 0) {
+        throw new Error(`legacy *-snapshot.html beside the capture: ${citekey}`)
+      }
       const figures = filesUnder(join(postRoot, 'figures'))
-      for (const figure of figures) nonEmptyFile(figure, 'figure')
       if (figures.length > 0) {
-        tiers.push(`${figures.length} figure`)
+        throw new Error(`figures/ is a derived view, not a tier (extract-figure.mjs): ${citekey}`)
       }
     }
     output(`ok\t${citekey}\t${kind.slice(0, -1)}\t${tiers.join(', ')}`)

@@ -12,3 +12,4 @@ __pycache__/
 # Ignore temporary files
 .scratch/
 tmp/
+/tools/node_modules/

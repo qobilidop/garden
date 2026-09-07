@@ -6,17 +6,21 @@ compatibility: "Requires the sys repo with its private shadow/ checkout and netw
 
 # Ingest a post
 
-Work from the sys repo root. Requires the private `shadow/` checkout. A post is a
-single-author, informally published, web-native work with no
+Work from the sys repo root. Requires the private `shadow/` checkout, Chrome,
+and `npm ci --prefix tools` once (pinned capture and extraction tools). A post
+is a single-author, informally published, web-native work with no
 version-of-record. Retrieval is live-first and repeatable; preservation is
-stateful because the snapshot in shadow identifies the exact evidence behind
+stateful because the capture in shadow identifies the exact evidence behind
 the notes. Multi-author threads-as-works are out of scope until one arrives.
 
 ## 1. Resolve the work
 
-Metadata comes from the captured page itself (title tag, meta tags, post
-header): title, author, publication date. Org-authored posts use the org
-as author. Never trust memory for bibliographic facts.
+Metadata comes from the captured page itself: the capture tool prints
+title, author, publication date, and canonical URL as read from the page
+(§3), and `transcript.md` opens with the same fields. Org-authored posts
+use the org as author. Never trust memory for bibliographic facts. When
+the citekey is not yet settled, capture into a scratch directory under a
+provisional name and move the two artifacts once it is.
 
 ## 2. Citekey
 
@@ -27,26 +31,46 @@ concise canonical URL slug second. Posts often take the URL-slug branch
 
 ## 3. Capture to tiers
 
-- **Snapshot → shadow** (always):
-  `shadow/library/posts/<year>/<citekey>/<slug>-snapshot.html`, the page
-  as-found. Run `tools/capture.sh <url> <dest>`. When the origin already
-  blocks non-browser clients, capture through the user's browser or use a
-  verified existing Wayback original-content record
-  (`web.archive.org/web/<ts>id_/<url>`); the frontmatter comment records
-  that acquisition fallback.
+- **Capture + transcript → shadow** (always), in
+  `shadow/library/posts/<year>/<citekey>/`:
+
+  ```console
+  node tools/capture-post.mjs <url> shadow/library/posts/<year>/<citekey> <citekey>
+  ```
+
+  writes `<citekey>.html` — the page as a reader saw it (SingleFile:
+  rendered by Chromium, images, CSS, and fonts inlined, scripts removed;
+  each inlined image gets a mechanical `id="fig-N"`) — and
+  `transcript.md` — the work's text extracted from that capture
+  (defuddle: main content only, frontmatter with title, author, date;
+  image references point at `<citekey>.html#fig-N`). The JSON record
+  it prints carries the metadata for §5, the figure count, and the
+  extraction ratio: `truncated: true` means read the capture before
+  trusting the transcript. The transcript is a mechanical extraction
+  with known quirks — math is the page's MathML re-serialized to
+  LaTeX, and a word inside a code block can be dropped — so quotes,
+  formulas, and numbers are verified against the capture, which is the
+  evidence.
+- **Fallbacks, in order**, when SingleFile cannot get the page (bot
+  wall, login, paywall): the SingleFile extension in the user's own
+  browser session, which yields the same artifact kind (run
+  `capture-post.mjs` afterwards with a `file://` URL to annotate and
+  extract; unverified — check the first time); then a verified existing
+  Wayback original-content record (`web.archive.org/web/<ts>id_/<url>`)
+  as the capture URL. A frontmatter comment records the fallback.
 - **Author-versioned source** (a gist or other git-backed page): pin the
   revision — capture the raw file at its commit sha alongside the page
-  snapshot and verify the two agree. When the work is the
+  capture and verify the two agree. When the work is the
   author's own canonicalization of an earlier post (tweet → gist),
   record the original appearance as a second identity — frontmatter
   comment plus first discussions entry, with a text capture to shadow.
-- **Figures → shadow** (only when load-bearing — content diagrams, not
-  site chrome or related-post cards):
-  `shadow/library/posts/<year>/<citekey>/figures/`. View them; the
-  synthesis should reflect what they show. When the image viewer cannot render
-  an SVG directly, make a temporary raster preview with an available renderer,
-  inspect that preview, and keep the original SVG. The preview is review
-  material, not a preservation artifact; discard it after selection.
+- **Figures** live inside the capture; there is no figures tier.
+  `node tools/extract-figure.mjs <capture>` lists them by section and
+  caption; `... <N> <out>` extracts one to look at (an SVG that the
+  viewer cannot render gets a temporary raster preview). Extracted
+  files are review material, never preserved; the synthesis should
+  reflect what load-bearing figures show, and notes cite a figure as
+  `<citekey>.html#fig-N` or by its caption.
 - **Paywalled source**: the free preview is the record — capture it,
   state the paywall in a frontmatter comment, scope the notes to it, and
   name re-capture through the user's browser session as the upgrade
@@ -55,20 +79,30 @@ concise canonical URL slug second. Posts often take the URL-slug branch
 
 ### Revisiting an existing post
 
-Fetch the live origin into a fresh temporary file before consulting the stored
-snapshot. Compare SHA-256 first: identical bytes mean no source change; a
-different hash is only a prompt for a substantive diff because templates,
-timestamps, and tracking parameters can change without changing the work.
-Keep the candidate outside shadow and discard it after an unchanged comparison.
-If the live fetch fails, retain `retrieved` and the current snapshot; a verified
-Wayback capture may be evaluated as a new candidate but is not silently treated
-as the same source version.
+Capture the live origin into a scratch directory and compare its prose
+with the stored transcript:
 
-- Unchanged work: retain the existing snapshot and make no sys or shadow
-  commit. A health check is not a new evidence version.
-- Material change: reconcile the synthesis against the fresh source, replace
-  the snapshot in the same path, and commit the public notes and shadow update
-  together. Shadow git history retains the prior evidence version.
+```console
+node tools/capture-post.mjs <url> <scratch-dir> <citekey> \
+  --compare shadow/library/posts/<year>/<citekey>/transcript.md
+```
+
+The comparison diffs the work's prose as word tokens — frontmatter, image
+references, link targets, and math excluded, since a rendered page
+re-serializes formulas without the work changing — and saves the word diff
+as `compare.diff` beside the candidate. Read the spans before deciding: an
+unchanged work can still show a span or two of extraction noise. Keep the
+candidate outside shadow and discard it after an unchanged comparison. If
+the live capture fails, retain `retrieved` and the current artifacts; a
+verified Wayback capture may be evaluated as a new candidate but is not
+silently treated as the same source version.
+
+- Unchanged work: retain the existing capture and transcript and make no
+  sys or shadow commit. A health check is not a new evidence version.
+- Material change: reconcile the synthesis against the fresh source,
+  replace both artifacts in the same path, and commit the public notes and
+  shadow update together. Shadow git history retains the prior evidence
+  version.
 - Version-addressed source: a raw artifact pinned to a Git commit or equivalent
   immutable revision may be the evidence identity; still retain the consulted
   bytes when deletion would otherwise make the notes unauditable.
@@ -101,8 +135,8 @@ chronologically, shortest working URL form, each annotated `# YYYY-MM-DD`
 ## 5. Provenance frontmatter
 
 `notes.md` opens with (omit what doesn't apply — no venue field, no DOI;
-comments only for non-obvious facts like the figure tier or an acquisition
-fallback):
+comments only for non-obvious facts such as an acquisition fallback or a
+paywall scope — the standard capture needs none):
 
 ```yaml
 ---
@@ -111,7 +145,7 @@ work:
   title: <title>
   author: <author or org>
   date: <publication date — ISO to known precision: YYYY[-MM[-DD]]; never invent finer parts>
-source: <page url>  # snapshot + figures (N PNGs) → shadow   <- only if figures
+source: <page url>
 discussions:
   - <thread url>  # <YYYY-MM-DD>
 retrieved: <today>
@@ -125,7 +159,8 @@ synthesis: <the notes' one-sentence take, when they have one>
 
 Same bar as ingest-paper §5: the H1 is `work.title` verbatim and
 `synthesis:` carries the notes' one-sentence take when they have one;
-read the shadow snapshot, write transformation not compression, include
+read `transcript.md` and look at the load-bearing figures in the capture,
+write transformation not compression, include
 an honest assessment (durable vs era-bound, unverified claims, author's
 stake), and read the library — cite related entries by citekey and say
 what this work adds against them.
@@ -141,9 +176,9 @@ sources — assert only what the captured record contains.
 ## 7. Close
 
 - Always run `node tools/check-ingest.mjs <citekey>` after capture. It reuses
-  the site's canonical source parser and checks the fresh notes, direct
-  non-empty snapshot, and any files under the exact `figures/` tier without
-  printing the library inventory.
+  the site's canonical source parser and checks the fresh notes, the
+  non-empty capture and transcript, and that no legacy snapshot or
+  `figures/` tier sits beside them, without printing the library inventory.
 - Request missing public redundancy with:
 
   ```console
@@ -155,7 +190,7 @@ sources — assert only what the captured record contains.
   submission; report a service failure without blocking the locally preserved
   ingestion.
 - Run `npm --prefix site run build` on the host, then propose the commits
-  (sys: notes; shadow: snapshot + figures), each ending with the
+  (sys: notes; shadow: capture + transcript), each ending with the
   agent's attribution trailer. Commit only on the user's word. When the request
   is only to commit and push, successful pushes complete it; wait for Pages and
   verify live routes only when publication or deployment verification is in

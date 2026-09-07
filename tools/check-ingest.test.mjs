@@ -76,16 +76,13 @@ test('validates paper and post preservation tiers compactly', () => {
     write(
       join(
         root,
-        'shadow/library/posts/2026/example2026-post/post-snapshot.html',
+        'shadow/library/posts/2026/example2026-post/example2026-post.html',
       ),
       '<html>post</html>',
     )
     write(
-      join(
-        root,
-        'shadow/library/posts/2026/example2026-post/figures/chart.png',
-      ),
-      'figure',
+      join(root, 'shadow/library/posts/2026/example2026-post/transcript.md'),
+      '# Post\n',
     )
     write(
       join(root, 'library/papers/2026/example2026-html/notes.md'),
@@ -111,14 +108,14 @@ test('validates paper and post preservation tiers compactly', () => {
       },
     )
     assert.deepEqual(output, [
-      'ok\texample2026-post\tpost\tnotes, 1 snapshot, 1 figure',
+      'ok\texample2026-post\tpost\tnotes, capture, transcript',
       'ok\tli2026-example\tpaper\tnotes, transcript, pdf',
       'ok\texample2026-html\tpaper\tnotes, 1 snapshot',
     ])
   })
 })
 
-test('validates an ordinary post without figures', () => {
+test('rejects a post with a legacy snapshot or a figures tier', () => {
   withFixture((root) => {
     write(
       join(root, 'library/posts/2026/example2026-post/notes.md'),
@@ -128,22 +125,24 @@ test('validates an ordinary post without figures', () => {
         sources: { source: 'https://example.com/post' },
       }),
     )
-    write(
-      join(
-        root,
-        'shadow/library/posts/2026/example2026-post/post-snapshot.html',
-      ),
-      '<html>post</html>',
+    const postRoot = join(root, 'shadow/library/posts/2026/example2026-post')
+    write(join(postRoot, 'post-snapshot.html'), '<html>post</html>')
+    assert.throws(
+      () => checkIngest(['example2026-post'], { repoRoot: root }),
+      /missing or empty capture/,
     )
-
-    const output = []
-    checkIngest(['example2026-post'], {
-      repoRoot: root,
-      output: (line) => output.push(line),
-    })
-    assert.deepEqual(output, [
-      'ok\texample2026-post\tpost\tnotes, 1 snapshot',
-    ])
+    write(join(postRoot, 'example2026-post.html'), '<html>post</html>')
+    write(join(postRoot, 'transcript.md'), '# Post\n')
+    assert.throws(
+      () => checkIngest(['example2026-post'], { repoRoot: root }),
+      /legacy \*-snapshot\.html/,
+    )
+    rmSync(join(postRoot, 'post-snapshot.html'))
+    write(join(postRoot, 'figures/chart.png'), 'figure')
+    assert.throws(
+      () => checkIngest(['example2026-post'], { repoRoot: root }),
+      /figures\/ is a derived view/,
+    )
   })
 })
 
@@ -175,7 +174,7 @@ test('rejects missing and empty HTML-native paper snapshots', () => {
   })
 })
 
-test('rejects missing and empty post snapshots', () => {
+test('rejects missing and empty post captures and transcripts', () => {
   withFixture((root) => {
     write(
       join(root, 'library/posts/2026/example2026-post/notes.md'),
@@ -187,49 +186,18 @@ test('rejects missing and empty post snapshots', () => {
     )
     assert.throws(
       () => checkIngest(['example2026-post'], { repoRoot: root }),
-      /missing snapshot/,
+      /missing or empty capture/,
     )
-    write(
-      join(
-        root,
-        'shadow/library/posts/2026/example2026-post/post-snapshot.html',
-      ),
-      '',
-    )
+    const postRoot = join(root, 'shadow/library/posts/2026/example2026-post')
+    write(join(postRoot, 'example2026-post.html'), '')
     assert.throws(
       () => checkIngest(['example2026-post'], { repoRoot: root }),
-      /missing or empty snapshot/,
+      /missing or empty capture/,
     )
-  })
-})
-
-test('rejects an empty captured figure', () => {
-  withFixture((root) => {
-    write(
-      join(root, 'library/posts/2026/example2026-post/notes.md'),
-      note({
-        citekey: 'example2026-post',
-        kind: 'posts',
-        sources: { source: 'https://example.com/post' },
-      }),
-    )
-    write(
-      join(
-        root,
-        'shadow/library/posts/2026/example2026-post/post-snapshot.html',
-      ),
-      '<html>post</html>',
-    )
-    write(
-      join(
-        root,
-        'shadow/library/posts/2026/example2026-post/figures/chart.png',
-      ),
-      '',
-    )
+    write(join(postRoot, 'example2026-post.html'), '<html>post</html>')
     assert.throws(
       () => checkIngest(['example2026-post'], { repoRoot: root }),
-      /missing or empty figure/,
+      /missing or empty transcript/,
     )
   })
 })

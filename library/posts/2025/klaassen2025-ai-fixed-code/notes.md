@@ -4,13 +4,14 @@ work:
   title: My AI Had Already Fixed the Code Before I Saw It
   author: Kieran Klaassen
   date: 2025-08-18  # page marks an update on 2026-04-23; capture reflects the updated version
-source: https://every.to/source-code/my-ai-had-already-fixed-the-code-before-i-saw-it  # snapshot → shadow
-  # the source is paywalled past the free preview; the captured record and
-  # these notes are scoped to that preview
+source: https://every.to/source-code/my-ai-had-already-fixed-the-code-before-i-saw-it
+  # paywalled past the free preview at the first capture (2026-08-07); the
+  # 2026-09-07 browser capture holds the full essay, while these notes are
+  # still scoped to the preview pending an extension
 discussions:
   - https://news.ycombinator.com/item?id=44941899  # 2025-08-18
   - https://lethain.com/everyinc-compound-engineering/  # 2026-01-19
-retrieved: 2026-08-07
+retrieved: 2026-09-07
 notes-by: Claude Fable 5
 notes-date: 2026-08-07
 synthesis: "Named the philosophy: each unit of engineering should make the next cheaper, and agents close the feedback loop cheaply enough for the compounding to actually happen."

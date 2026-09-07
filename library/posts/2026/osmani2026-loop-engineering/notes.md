@@ -8,7 +8,7 @@ source: https://addyosmani.com/blog/loop-engineering/
 discussions:
   - https://x.com/addyosmani/status/2064127981161959567  # 2026-06-08
   - https://news.ycombinator.com/item?id=48514387  # 2026-06-13
-retrieved: 2026-08-08
+retrieved: 2026-09-07  # recapture; one sentence's cross-reference changed (now points at the author's "agentic code review" post), notes unaffected
 notes-by: Claude Fable 5
 notes-date: 2026-08-08
 synthesis: "Practitioner naming of the layer above the harness — five now-converged product primitives plus external state turn agent-prompting into a designed system — with the honest concession that the loop amplifies the operator's judgment or its absence."

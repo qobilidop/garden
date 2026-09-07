@@ -4,7 +4,7 @@ work:
   title: LLM Wiki
   author: Andrej Karpathy
   date: 2026-04-04
-source: https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f  # snapshot + pinned-revision raw → shadow; no figures
+source: https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f  # pinned-revision raw → shadow
   # the gist has exactly one revision (ac46de1, 2026-04-04); the raw file at
   # that sha is also in shadow. Original appearance: the 2026-04-02 X post
   # "LLM Knowledge Bases" (first discussions entry) — the gist is the

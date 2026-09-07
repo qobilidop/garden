@@ -4,7 +4,7 @@ work:
   title: A forest of evergreen notes
   author: Richard Griffiths
   date: 2024-06-02
-source: https://writingslowly.com/2024/06/02/a-forest-of.html  # snapshot → shadow; no figures
+source: https://writingslowly.com/2024/06/02/a-forest-of.html
 discussions:
   - https://micro.blog/writingslowly/38721909  # 2024-06-02
 retrieved: 2026-08-15

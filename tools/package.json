@@ -1,0 +1,11 @@
+{
+  "name": "garden-tools",
+  "private": true,
+  "type": "module",
+  "description": "Pinned dependencies for tools/*.mjs; install with `npm ci --prefix tools` on the host.",
+  "dependencies": {
+    "defuddle": "0.19.3",
+    "single-file-cli": "2.10.0",
+    "linkedom": "0.18.13"
+  }
+}

@@ -5,12 +5,14 @@ work:
   author: Anthropic
   date: 2026-08-10
 source: https://www.anthropic.com/research/riemann-zeta
+  # Anthropic updated the post on 2026-08-13 with a revised version of
+  # Claude's paper; notes reconciled against the updated post 2026-09-07
 discussions:
   - https://news.ycombinator.com/item?id=49247070  # 2026-08-10
   - https://www.reddit.com/r/math/comments/1vkt6av/anthropic_asked_an_unreleased_version_of_claude/  # 2026-08-10
-retrieved: 2026-08-11
-notes-by: Codex GPT-5.6 Sol
-notes-date: 2026-08-11
+retrieved: 2026-09-07
+notes-by: "Codex GPT-5.6 Sol; Claude Fable 5.1"
+notes-date: 2026-09-07
 synthesis: "A failed attack on the Riemann hypothesis produced a narrower bound by composing earlier mathematics at massive agentic-search scale, with human review and Lean checking supplying evidence but not an independent statement-fidelity audit."
 ---
 
@@ -27,7 +29,7 @@ the critical line from 41.6% to 67.2%.
 
 ## The mathematical move
 
-The result combines work by Baluyot, Goldston, Suriajaya, and
+The result combines work by Aryan and by Baluyot, Goldston, Suriajaya, and
 Turnage-Butterbaugh, which made Montgomery-style techniques available without
 assuming the Riemann hypothesis, with a quadratic-form argument from Bombieri.
 Anthropic's short technical synopsis says Claude put the relevant functions in
@@ -87,6 +89,11 @@ foregrounded their certificates; Anthropic foregrounds a long, mostly failed
 search whose useful result was adjacent to the prompt. The latter supplies a
 more concrete account of orchestration cost and negative search, but it still
 comes from the organization whose unreleased model is being showcased.
+
+The post's 2026-08-13 update replaced the linked paper with a version Claude
+revised for a clearer proof and more historical context, and names Aryan
+alongside the other cited authors; the stated bound and the review account
+above are unchanged.
 
 ## Assessment
 
