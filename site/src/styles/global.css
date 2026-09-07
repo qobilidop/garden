@@ -104,7 +104,12 @@
      from 64rem, where the margin column reaches 10rem. */
   --hang-width: 9rem;
   --hang-gap: 0.75rem;
-  --serif: Charter, Georgia, serif;
+  /* Each platform's best system serif, no download: Charter on Apple
+     (and as Bitstream Charter on Linux where installed), Sitka Text on
+     Windows 8.1+ (Carter with Larson's legibility research, optical
+     size for body text), Georgia on older Windows; Android has only
+     Noto Serif. Windows rendering unverified from here. */
+  --serif: Charter, "Bitstream Charter", "Sitka Text", Georgia, serif;
   --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
     sans-serif;
   --mono: ui-monospace, "SF Mono", "Cascadia Code", Menlo, Consolas, monospace;
