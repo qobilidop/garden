@@ -22,5 +22,6 @@ Host configuration for every machine: one flake, upstream Nix.
   is `nix.package = pkgs.lix`, Determinate is `nix.enable = false` plus
   its installer. Recorded in
   `scratch/2026/2026-09-07/host-config-nix.md`.
-- Pending: flip `homebrew.onActivation.cleanup` to `"uninstall"` after
-  the Nix-provided tools are verified on the Mac.
+- PATH order is Nix profiles, then Homebrew, then the system, set in
+  `darwin.nix` through `environment.systemPath`; `brew shellenv` is
+  never evaluated, because it re-fronts Homebrew on every shell.

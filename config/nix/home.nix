@@ -53,12 +53,8 @@ in
 
   programs.home-manager.enable = true;
 
-  programs.zsh = {
-    enable = true;
-    profileExtra = lib.optionalString pkgs.stdenv.isDarwin ''
-      eval "$(/opt/homebrew/bin/brew shellenv zsh)"
-    '';
-  };
+  # Homebrew's PATH entry is the OS shell's business (darwin.nix).
+  programs.zsh.enable = true;
   home.sessionPath = [
     "$HOME/.cargo/bin" # rustup proxies
     "$HOME/.local/bin" # native installers (Claude Code)

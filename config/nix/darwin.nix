@@ -2,6 +2,7 @@
 {
   config,
   inputs,
+  lib,
   user,
   ...
 }:
@@ -21,6 +22,15 @@
   # Installs the shell hooks that put Nix on PATH.
   programs.zsh.enable = true;
 
+  # Homebrew goes on PATH after the Nix profiles (order 1000) and before
+  # the system directories (1200), so a Nix tool always wins over a
+  # Homebrew one. `brew shellenv` is never evaluated: it calls path_helper,
+  # which moves Homebrew to the front on every shell.
+  environment.systemPath = lib.mkOrder 1100 [
+    "${config.homebrew.prefix}/bin"
+    "${config.homebrew.prefix}/sbin"
+  ];
+
   nix-homebrew = {
     enable = true;
     inherit user;
@@ -30,6 +40,10 @@
       "homebrew/homebrew-cask" = inputs.homebrew-cask;
     };
     mutableTaps = false; # taps update with `nix flake update`, not `brew update`
+    # Each would `eval "$(brew shellenv)"`; see environment.systemPath.
+    enableBashIntegration = false;
+    enableFishIntegration = false;
+    enableZshIntegration = false;
   };
 
   homebrew = {
@@ -38,9 +52,8 @@
     onActivation = {
       autoUpdate = false; # the taps are pinned inputs
       upgrade = true; # self-updating casks (VS Code, Chrome) are skipped by brew
-      # "none" for the first switch; flip to "uninstall" once the Nix-provided
-      # tools are verified, to remove the formulae Homebrew no longer owns.
-      cleanup = "none";
+      # Removes every formula: command-line tools come from home.nix.
+      cleanup = "uninstall";
     };
     # GUI apps only; every command-line tool comes from home.nix.
     casks = [
