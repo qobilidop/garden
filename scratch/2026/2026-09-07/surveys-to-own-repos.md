@@ -52,3 +52,38 @@ archived `dataflow-selection-enumeration` repository is reused.
 - License: the pre-move repository reserved all rights; garden's
   CC BY 4.0 + MIT carried into all three, since the content has been
   public under them since August.
+
+## Process residue for /evolve
+
+Staged (single occurrence each):
+
+- Absorbed history may round-trip: before force-replacing a reused
+  repository, compare the absorbed side's trees and commit objects
+  with the original (here only GPG signatures differed), then replay
+  and merge instead. Worth a rule if a second absorb/spin-off happens.
+- Spin-off checklist for the next spoke repository: history by
+  `filter-repo --path`/`--path-rename`, guards carried (gitleaks
+  allowlist, hooks armed by `dev.sh`), the same dev Dockerfile for CI
+  and host, relative imports swept at every depth, then build in the
+  container before the first commit. Three repositories used it once.
+- The deeper `.typ` imports were a lapse of the existing
+  sweep-by-name rule (AGENTS.md §Conventions), not a gap in it.
+- `gh api -X POST repos/<r>/pages -f build_type=workflow` works on an
+  empty repository; no first push needed.
+
+Open: each survey repository's skill says to fold lessons back into
+itself, but none carries the evolve skill. Left in garden for now;
+revisit when the next campaign runs in a spoke repository.
+
+## Evolve outcome (run at session end)
+
+Accepted and applied, all four: (1) memory — front-load the steps that
+might need Bili; (2) memory hygiene — the retired survey-layer
+paragraphs in the system memory collapsed to a pointer, the parked
+HW-spec survey's index hook updated (venue: own repo); (3) global
+rule in both mirrored configs — scripted edits by anchored, asserted
+replacement, promoted from the 09-07 landing session's staged item on
+one failure plus this session's ~70 clean replacements; (4) memory —
+Docker Desktop does not share the scratchpad. Nothing rejected. The
+config pull also absorbed Claude Code's own rewrite of
+`settings.json` (model alias, key order).

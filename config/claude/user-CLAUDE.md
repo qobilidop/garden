@@ -26,7 +26,11 @@
   `pipestatus` (zsh) / `PIPESTATUS` (bash); `while read` silently
   drops a final line that lacks a trailing newline — iterate lists
   with a tool that reads to EOF, and verify bulk operations by
-  recount against the input, never by loop completion.
+  recount against the input, never by loop completion. Scripted edits
+  replace an anchored string asserted to occur exactly once, never a
+  computed offset, and a bulk edit stops at the first missing anchor —
+  index splicing orphaned fragments twice; asserted anchors have not
+  mis-edited once across ~70 replacements.
 - Browser-mediated setup on the user's behalf: fill forms to one click
   and hand off — the human clicks Create/Delete/Submit on destructive or
   account-changing actions and handles every credential value; take no
