@@ -1,12 +1,12 @@
 ---
 name: ingest-paper
-description: Ingest a research paper into the sys library — canonical PDF and mechanical transcript to shadow, author-labeled synthesis notes to sys. Use when asked to ingest, add, or capture a paper (given a URL, DOI, arXiv id, or title) into the library. For informal web-native writing (blog posts, announcements, Q&A answers), use ingest-post instead.
-compatibility: "Requires the sys repo with its private shadow/ checkout, network access, and the repo flake shell (uv runs the pinned pymupdf4llm)."
+description: Ingest a research paper into the library. Use when asked to ingest, add, or capture a paper given a URL, DOI, arXiv id, or title. For informal web-native writing (blog posts, announcements, Q&A answers) use ingest-post.
+compatibility: "Requires the garden repo with its private shadow/ checkout, network access, and the repo flake shell (uv runs the pinned pymupdf4llm)."
 ---
 
 # Ingest a paper
 
-Work from the sys repo root inside the flake shell (`nix develop` or
+Work from the garden repo root inside the flake shell (`nix develop` or
 direnv). Requires the private `shadow/` checkout; `tools/transcribe.sh`
 runs the pinned pymupdf4llm through uv (`tools/uv.lock`).
 
@@ -87,7 +87,7 @@ judgment.
     as-found into `shadow/library/papers/<year>/<citekey>/` with a
     descriptive `-snapshot.html` name. Derived conversions may be added, but
     never stored instead of the raw capture.
-- **Synthesis → sys**: `library/papers/<year>/<citekey>/notes.md` (step 5).
+- **Synthesis → garden**: `library/papers/<year>/<citekey>/notes.md` (step 5).
 
 ## 4. Provenance frontmatter
 
@@ -180,7 +180,7 @@ is stored here.
   Let `check-ingest` verify the mechanical tiers. Never print their full diff
   merely to review whitespace diagnostics.
 - Run `npm --prefix site run build` on the host to close source-schema,
-  wikilink, and rendering checks. Then propose the two commits (sys: notes;
+  wikilink, and rendering checks. Then propose the two commits (garden: notes;
   shadow: blob + text form), each ending with the agent's attribution
   trailer (`Co-Authored-By: <agent + model> <email>`). Commit only on the
   user's word. When the request is only to commit and push, successful pushes

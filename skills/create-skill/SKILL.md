@@ -1,6 +1,6 @@
 ---
 name: create-skill
-description: Create or revise a skill — scope its boundary, write the triggering description, shape SKILL.md and its assets/references/scripts to the Agent Skills format, deploy the repo symlinks, and verify it triggers. Use when asked to create, write, restructure, split, or consolidate a skill, whether ad hoc or out of an /evolve retrospective. /evolve decides when a skill should exist; this skill is the how.
+description: Create or revise a skill in this repository. Use when asked to create, write, restructure, split, or consolidate a skill, ad hoc or out of an /evolve retrospective. /evolve decides whether a skill should exist; this skill is the how.
 ---
 
 # Create a skill
@@ -41,15 +41,18 @@ injection).
 - Shape: **what** (intent level) + **when** (explicit trigger
   contexts, including ones where the user doesn't name the domain)
   + **boundary** ("For X use Y instead") against sibling skills.
-- Name the what at intent level only — never summarize the
-  procedure's steps. A description that sketches the workflow
+- Name the what in one clause at intent level — never summarize
+  the procedure's steps. A description that sketches the workflow
   invites the model to wing it from the description instead of
   reading the body (measured failure in the superpowers
-  collection).
+  collection), and the rule drifts unchecked: by 2026-09-07 six of
+  this repo's eight descriptions restated their bodies' section
+  headings.
 - Err pushy on the when: models under-trigger; list concrete
   phrasings and situations. But every description shares one
   silently-capped budget (~15k chars across all skills in Claude
   Code) — trigger breadth earns its length, filler doesn't.
+  `hooks/lint.sh` caps each description at 400 characters.
 
 ## Body discipline
 

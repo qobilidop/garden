@@ -29,4 +29,24 @@ if root != host:
     sys.exit(1)
 PY
 
+# Skill descriptions are index keys sharing one silently-truncated
+# budget (skills/create-skill/SKILL.md §Description); one that restates
+# its body crowds every sibling. Cap each, on the whole tracked tree.
+python3 - <<'PY' || status=1
+import re, subprocess, sys
+CAP = 400
+files = subprocess.run(["git", "ls-files", "skills/*/SKILL.md"],
+                       capture_output=True, text=True, check=True).stdout.split()
+bad = 0
+for f in files:
+    m = re.match(r"---\n(.*?)\n---\n", open(f).read(), re.S)
+    d = re.search(r"^description:[ \t]*(.*)$", m.group(1) if m else "", re.M)
+    if not d or not d.group(1).strip():
+        print(f"lint: skill description missing: {f}", file=sys.stderr); bad = 1; continue
+    n = len(d.group(1).strip())
+    if n > CAP:
+        print(f"lint: skill description {n} > {CAP} chars: {f}", file=sys.stderr); bad = 1
+sys.exit(bad)
+PY
+
 exit "$status"

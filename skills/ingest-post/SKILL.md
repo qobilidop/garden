@@ -1,12 +1,12 @@
 ---
 name: ingest-post
-description: Ingest or refresh a post (blog post, org announcement, Q&A answer) in the sys library. Use when asked to ingest, add, capture, revisit, update, or check a post or article. For formally published research papers (arXiv, DOI, venue), use ingest-paper instead.
-compatibility: "Requires the sys repo with its private shadow/ checkout and network access."
+description: Ingest or refresh a post (blog post, org announcement, Q&A answer) in the library. Use when asked to ingest, add, capture, revisit, update, or check a post or article. For formally published papers (arXiv, DOI, venue) use ingest-paper.
+compatibility: "Requires the garden repo with its private shadow/ checkout and network access."
 ---
 
 # Ingest a post
 
-Work from the sys repo root. Requires the private `shadow/` checkout, Chrome,
+Work from the garden repo root. Requires the private `shadow/` checkout, Chrome,
 and `npm ci --prefix tools` once (pinned capture and extraction tools). A post
 is a single-author, informally published, web-native work with no
 version-of-record. Retrieval is live-first and repeatable; preservation is
@@ -51,19 +51,6 @@ concise canonical URL slug second. Posts often take the URL-slug branch
   LaTeX, and a word inside a code block can be dropped — so quotes,
   formulas, and numbers are verified against the capture, which is the
   evidence.
-- **Fallbacks, in order**, when SingleFile cannot get the page (bot
-  wall, login, paywall): the SingleFile extension in the user's own
-  browser session, which yields the same artifact kind (run
-  `capture-post.mjs` afterwards with a `file://` URL to annotate and
-  extract; unverified — check the first time); then a verified existing
-  Wayback original-content record (`web.archive.org/web/<ts>id_/<url>`)
-  as the capture URL. A frontmatter comment records the fallback.
-- **Author-versioned source** (a gist or other git-backed page): pin the
-  revision — capture the raw file at its commit sha alongside the page
-  capture and verify the two agree. When the work is the
-  author's own canonicalization of an earlier post (tweet → gist),
-  record the original appearance as a second identity — frontmatter
-  comment plus first discussions entry, with a text capture to shadow.
 - **Figures** live inside the capture; there is no figures tier.
   `node tools/extract-figure.mjs <capture>` lists them by section and
   caption; `... <N> <out>` extracts one to look at (an SVG that the
@@ -71,53 +58,12 @@ concise canonical URL slug second. Posts often take the URL-slug branch
   files are review material, never preserved; the synthesis should
   reflect what load-bearing figures show, and notes cite a figure as
   `<citekey>.html#fig-N` or by its caption.
-- **Paywalled source**: the free preview is the record — capture it,
-  state the paywall in a frontmatter comment, scope the notes to it, and
-  name re-capture through the user's browser session as the upgrade
-  path. Claims about the gated remainder from secondary sources are not
-  asserted.
-- **Tool maintenance**: `capture-post.mjs` changes only when a check
-  flags a post — extraction ratio, never-loaded images, prose diff —
-  and only by a generic fix, one commit per fix naming the flagging
-  post, so git is the ledger. A need that would take a site-specific
-  patch takes the browser-capture fallback or a transcript caveat
-  instead. Fixes outpacing ingestions is the signal to swap the
-  extractor; the checks make the swap cheap. (Nine generic fixes came
-  out of the first migration of 32 posts, none from reading files.)
-
-### Revisiting an existing post
-
-Capture the live origin into a scratch directory and compare its prose
-with the stored transcript:
-
-```console
-node tools/capture-post.mjs <url> <scratch-dir> <citekey> \
-  --compare shadow/library/posts/<year>/<citekey>/transcript.md
-```
-
-The comparison diffs the work's prose as word tokens — frontmatter, image
-references, link targets, and math excluded, since a rendered page
-re-serializes formulas without the work changing — and saves the word diff
-as `compare.diff` beside the candidate. Read the spans before deciding: an
-unchanged work can still show a span or two of extraction noise. Keep the
-candidate outside shadow and discard it after an unchanged comparison. If
-the live capture fails, retain `retrieved` and the current artifacts; a
-verified Wayback capture may be evaluated as a new candidate but is not
-silently treated as the same source version.
-
-- Unchanged work: retain the existing capture and transcript and make no
-  sys or shadow commit. A health check is not a new evidence version.
-- Material change: reconcile the synthesis against the fresh source,
-  replace both artifacts in the same path, and commit the public notes and
-  shadow update together. Shadow git history retains the prior evidence
-  version.
-- Version-addressed source: a raw artifact pinned to a Git commit or equivalent
-  immutable revision may be the evidence identity; still retain the consulted
-  bytes when deletion would otherwise make the notes unauditable.
-
-`retrieved` means the date the source version supporting the current notes was
-captured. Update it only when the notes are reconciled to a materially changed
-source; never bump it merely because the URL was fetched successfully.
+- **Off the happy path** — a bot wall, login, or paywall, a git-backed
+  source, or a capture check flagging the tool: open
+  [references/capture-edge-cases.md](references/capture-edge-cases.md).
+- **Revisiting an existing post** (refresh, health check, "has it
+  changed?"): open [references/revisit.md](references/revisit.md) — it
+  decides whether anything is committed at all.
 
 ## 4. Discussions
 
@@ -198,7 +144,7 @@ sources — assert only what the captured record contains.
   submission; report a service failure without blocking the locally preserved
   ingestion.
 - Run `npm --prefix site run build` on the host, then propose the commits
-  (sys: notes; shadow: capture + transcript), each ending with the
+  (garden: notes; shadow: capture + transcript), each ending with the
   agent's attribution trailer. Commit only on the user's word. When the request
   is only to commit and push, successful pushes complete it; wait for Pages and
   verify live routes only when publication or deployment verification is in

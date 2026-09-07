@@ -1,12 +1,12 @@
 ---
 name: ingest-batch
-description: Coordinate ingestion of a selected batch of two or more works into the sys library. Use when asked to ingest a list, series, reading set, or mixed collection while consolidating validation and commit closeout. For one work use ingest-paper or ingest-post; this skill orchestrates those item workflows and does not redefine them.
-compatibility: "Requires the sys repo and the capabilities required by each selected item skill."
+description: Ingest a selected batch of two or more works into the library. Use when asked to ingest a list, series, reading set, or mixed collection. For one work use ingest-paper or ingest-post.
+compatibility: "Requires the garden repo and the capabilities required by each selected item skill."
 ---
 
 # Ingest a batch
 
-Work from the sys repo root. This is a thin orchestration layer over
+Work from the garden repo root. This is a thin orchestration layer over
 `../ingest-paper/SKILL.md` and `../ingest-post/SKILL.md`; their capture,
 judgment, provenance, synthesis, and writeback rules remain canonical.
 

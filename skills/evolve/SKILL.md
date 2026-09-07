@@ -1,6 +1,6 @@
 ---
 name: evolve
-description: Retrospective that mines session experience for durable lessons and proposes itemized, human-gated updates to the harness — skills, agent rules (project AGENTS.md or mirrored global configs), and memory. Use when asked to evolve, reflect on, or distill a session, or to turn accumulated experience into skills, rules, or memory.
+description: Retrospective that turns a session's experience into itemized, human-gated updates to skills, rules, and memory. Use when asked to evolve, reflect on, or distill a session, or to turn accumulated experience into skills, rules, or memory.
 ---
 
 # Evolve the harness

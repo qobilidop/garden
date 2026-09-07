@@ -1,6 +1,6 @@
 ---
 name: tend-host
-description: Change and verify the host configuration layer (config/nix — packages, shell, GUI apps, fonts, VS Code, Ghostty, Starship) — the build/verify/ship loop, the Nix store and Homebrew traps, and how a new tool or app is evaluated before it is declared. Use when adding, removing, or configuring anything on Bili's machines, when a switch or the Host config workflow fails, or when comparing candidate tools, fonts, or themes for the host. For the website use tend-site; for the project dev shell (flake.nix at the root) the loop here still applies but the contract is AGENTS.md §Dev shell.
+description: Change and verify the host configuration layer (config/nix: packages, shell, GUI apps, fonts, VS Code, Ghostty, Starship). Use when adding, removing, or configuring anything on Bili's machines, when a switch or the Host config workflow fails, or when comparing candidate tools, fonts, or themes for the host. For the website use tend-site; the root flake.nix dev shell follows this loop too.
 ---
 
 # Tend the host

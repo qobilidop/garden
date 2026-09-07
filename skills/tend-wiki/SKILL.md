@@ -1,6 +1,6 @@
 ---
 name: tend-wiki
-description: Steward the wiki/ topic layer — decide when accumulated library material earns a new page, weave newly ingested works into the pages they touch, and reshape pages whose titles no longer name their argument. Use for ingestion writebacks, when asked to update or tend the wiki, or when library notes have accumulated enough cross-work material to synthesize a new page.
+description: Steward the wiki/ layer of cross-work topic pages. Use for ingestion writebacks, when asked to update or tend the wiki, or when library notes have accumulated enough cross-work material for a new page.
 ---
 
 # Tend the wiki
