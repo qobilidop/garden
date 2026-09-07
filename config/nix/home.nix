@@ -101,9 +101,13 @@ in
   programs.starship.enable = true;
 
   # Per-project flakes activate through direnv (`use flake` in .envrc).
+  # hide_env_diff drops the per-entry `export +AR +CC ...` line (a Nix
+  # shell exports dozens of variables) and keeps the loading lines, so a
+  # slow or broken flake load still shows.
   programs.direnv = {
     enable = true;
     nix-direnv.enable = true;
+    config.global.hide_env_diff = true;
   };
 
   # Claude Code and Codex rewrite their own config files, so those stay on
