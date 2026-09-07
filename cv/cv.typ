@@ -87,9 +87,12 @@
 #if cv.publications.len() > 0 [
   == Publications
   #for p in cv.publications {
+    // Title, authors, venue on their own lines, as on the web view — a
+    // venue trailing a long author list is lost.
     entry(str(p.year), with-note(p)[
       #link(p.url, p.title). \
-      #muted[#authors(p.authors). #p.venue.]
+      #muted[#authors(p.authors).] \
+      #muted[#p.venue.]
     ])
   }
 ]
