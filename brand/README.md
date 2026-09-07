@@ -19,7 +19,9 @@ because 16 px exists. Every other rendering is derived from them by
 - `stroke="currentColor"`: inline it or use it as a CSS mask and it
   takes the surrounding text color; as a plain `<img>` it renders black.
 - Edit the token list, not a rendering; the build script parses exactly
-  this grammar.
+  this grammar, and so does `site/src/components/DancingMark.astro`,
+  which regroups the strokes into limbs for the landing page's
+  animation.
 
 ## Derived renderings
 

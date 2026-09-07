@@ -1,0 +1,86 @@
+---
+// The personal mark as a figure that can move: the same token list as
+// brand/logo.svg (never a copied rendering — see brand/README.md),
+// parsed at build into limb groups so CSS can swing them. Used on the
+// landing page only; the nav keeps the still Mark.
+import svg from '../../../brand/logo.svg?raw'
+
+interface Props {
+  class?: string
+}
+
+const { class: className } = Astro.props
+const viewBox = svg.match(/viewBox="([^"]+)"/)![1]
+const tokens = [...svg.matchAll(/M(\d+) (\d+)([hv])(\d+)/g)].map((m) => ({
+  col: Number(m[1]),
+  row: Number(m[2]),
+  dir: m[3],
+  len: Number(m[4]),
+  d: m[0],
+}))
+
+// Limb by grid position: rows 0–5 the head (the spine, which starts at
+// the neck, is body); rows 18–21 the legs, the feet on row 21 nested
+// in them (an ankle), split
+// at the spine; the outer verticals the arms, upper arm from row 7 and
+// forearm from the elbow at row 11 (the forearm nests inside the upper
+// arm so it swings with it) and the hand from the wrist at row 14
+// (nested in the forearm); everything else the body.
+const limb = (t: (typeof tokens)[number]) => {
+  if (t.dir === 'v' && t.col === 4 && t.row === 5) return 'body' // the spine
+  if (t.row <= 5) return 'head'
+  if (t.row >= 18) {
+    const side = t.col <= 3 ? 'l' : 'r'
+    return t.row === 21 ? `foot-${side}` : `leg-${side}`
+  }
+  if (t.dir === 'v' && (t.col === 0 || t.col === 8)) {
+    const side = t.col === 0 ? 'l' : 'r'
+    return t.row >= 14 ? `hand-${side}` : t.row >= 11 ? `forearm-${side}` : `arm-${side}`
+  }
+  return 'body'
+}
+const groups = new Map<string, string[]>()
+for (const t of tokens) {
+  const g = limb(t)
+  groups.set(g, [...(groups.get(g) ?? []), t.d])
+}
+const d = (g: string) => groups.get(g)!.join(' ')
+---
+
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox={viewBox}
+  class={className}
+  aria-hidden="true"
+  focusable="false"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="square"
+>
+  <g class="dance dance-all">
+    <g class="dance dance-body"><path d={d('body')} /></g>
+    <g class="dance dance-arm-l">
+      <path d={d('arm-l')} />
+      <g class="dance dance-forearm-l">
+        <path d={d('forearm-l')} />
+        <g class="dance dance-hand-l"><path d={d('hand-l')} /></g>
+      </g>
+    </g>
+    <g class="dance dance-arm-r">
+      <path d={d('arm-r')} />
+      <g class="dance dance-forearm-r">
+        <path d={d('forearm-r')} />
+        <g class="dance dance-hand-r"><path d={d('hand-r')} /></g>
+      </g>
+    </g>
+    <g class="dance dance-leg-l">
+      <path d={d('leg-l')} />
+      <g class="dance dance-foot-l"><path d={d('foot-l')} /></g>
+    </g>
+    <g class="dance dance-leg-r">
+      <path d={d('leg-r')} />
+      <g class="dance dance-foot-r"><path d={d('foot-r')} /></g>
+    </g>
+    <g class="dance dance-head"><path d={d('head')} /></g>
+  </g>
+</svg>

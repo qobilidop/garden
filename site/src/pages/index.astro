@@ -1,6 +1,6 @@
 ---
 import Base from '../layouts/Base.astro'
-import Mark from '../components/Mark.astro'
+import DancingMark from '../components/DancingMark.astro'
 import ProfileLinks from '../components/ProfileLinks.astro'
 import { name, nameCJK, tagline } from '../lib/profile'
 
@@ -10,7 +10,7 @@ const description = `${name} (${nameCJK}). ${tagline}`
 
 <Base title={`${name} ${nameCJK}`} bare description={description}>
   <section class="profile">
-    <Mark class="profile-mark" />
+    <DancingMark class="profile-mark" />
     <div class="profile-text">
       <h1 class="profile-name">
         {name} <span class="profile-name-cjk" lang="zh-Hans">{nameCJK}</span>

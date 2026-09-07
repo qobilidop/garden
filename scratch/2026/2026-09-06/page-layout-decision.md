@@ -143,6 +143,34 @@ page in the preview:
 - Profile icons stay in the profile block as well as the footer
   (Bili's call).
 
+## The seal dances (added the same night)
+
+The landing mark moves: `site/src/components/DancingMark.astro` parses
+the canonical token list of `brand/logo.svg` at build into limb
+groups (head; body with the spine; each arm as upper arm, forearm,
+hand; each leg with its foot), nested so a forearm swings with its
+upper arm and a hand with its forearm, and CSS keyframes rotate the
+groups about their joints in grid units. To give the arms elbows and
+wrists, the two arm strokes in `logo.svg` became three each, split at
+rows 11 and 14 — verified pixel-identical against the previous file
+at 880px (square caps overlap at the seam), and `build-brand.py` still
+parses it. The nav mark stays still (the plain `Mark` component).
+
+Motion: a 4.8s loop of three four-beat phrases — a two-step (an arm
+swings out with the elbow trailing, the opposite foot lifts), hands
+up with a hip sway and waving hands, then a point up and down and a
+spin (a mirror flip, scaleX through zero); on hover the loop stops
+and the figure's right arm (the page's left) rises and waves, forearm
+and hand oscillating about elbow and wrist. `prefers-reduced-motion:
+reduce` disables all of it — verified by three byte-identical frames
+under that setting. Named choreography (the Floss, the Dab, Michael
+Jackson's Thriller claws and 45° lean) was built, worked, and was
+removed at Bili's call to stay clear of choreographic copyright; the
+generic two-step and wave are what ships. Lessons kept: SVG is
+y-down, so a positive angle is clockwise and a limb below its joint
+swings left with +θ, and the sense flips once a limb is raised past
+horizontal; check every sign against a frame capture, not intuition.
+
 ## Verified and not
 
 - Headless Chrome screenshots at 1280, 940 (frame), 700, 500 (single
