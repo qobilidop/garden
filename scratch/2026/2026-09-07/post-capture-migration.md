@@ -84,8 +84,8 @@ Batches: three full captures of 32 posts, about seven minutes each.
   related-post images inlined at full resolution); the post tier is
   258 MB. A `--max-resource-size` cap would trade evidence for space;
   undecided.
-- The Every essay is captured in full; extending its notes past the
-  preview is synthesis work, not migration.
+- The Every essay is captured in full; its notes were extended past
+  the preview the same day (Bili's ask), including the two figures.
 - A gist page extracts at 24% (GitHub chrome); the pinned raw file
   remains the text identity there.
 - Transcript quirks to remember when quoting: defuddle drops the word
