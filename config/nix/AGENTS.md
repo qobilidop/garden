@@ -27,8 +27,10 @@ Host configuration for every machine: one flake, upstream Nix.
 - Claude Code and Codex configs stay on `config/claude` and
   `config/codex` (copies, not store symlinks: both tools rewrite their
   own files). The activation step pushes them on every switch; their
-  binaries install natively, outside Nix. Ubuntu GUI apps (VS Code,
-  Chrome, Zoom, Termius, 1Password) are a manual apt step, untested.
+  binaries install natively, outside Nix. On Ubuntu, zsh as the login
+  shell (`apt install zsh`, `chsh`) and the GUI apps (VS Code, Chrome,
+  Zoom, Termius, 1Password) are a manual apt step; only zsh is
+  exercised by CI.
 - VS Code: the app is a cask (apt on Ubuntu); `vscode.nix` owns
   settings, keybindings, and extensions as store symlinks, so the
   settings UI and the Extensions view cannot save — declare the change
