@@ -9,15 +9,15 @@
   summary: A systematic map and critical survey of path-conditioned symbolic execution for digital hardware designs, with RTL at the center.
   url: https://qobilidop.github.io/symbolic-execution-hardware/
   repository: https://github.com/qobilidop/symbolic-execution-hardware
-- title: "Exhaustive Enumeration of Selection Observations in Pure Dataflow Graphs: A Survey and Unified Framework"
-  started: 2026-08-03
-  first_commit: 153eb043018e43235f2b69a09de4234e80c41f9d
-  summary: A problem-centered survey and unified framework for enumerating every selection observation of a finite pure dataflow graph.
-  url: https://qobilidop.github.io/dataflow-selection-enumeration/
-  repository: https://github.com/qobilidop/dataflow-selection-enumeration
 - title: "Agent-Assisted Evidence Synthesis: A Survey"
   started: 2026-08-09
   first_commit: 8a9638921ac96f46f5102db4fd0c98e577ae431f
   summary: An exploratory systematic map of how AI and LLM agents are being used across the evidence-synthesis pipeline.
   url: https://qobilidop.github.io/agent-assisted-evidence-synthesis/
   repository: https://github.com/qobilidop/agent-assisted-evidence-synthesis
+- title: "Exhaustive Enumeration of Selection Observations in Pure Dataflow Graphs: A Survey and Unified Framework"
+  started: 2026-08-03
+  first_commit: 153eb043018e43235f2b69a09de4234e80c41f9d
+  summary: A problem-centered survey and unified framework for enumerating every selection observation of a finite pure dataflow graph.
+  url: https://qobilidop.github.io/dataflow-selection-enumeration/
+  repository: https://github.com/qobilidop/dataflow-selection-enumeration
