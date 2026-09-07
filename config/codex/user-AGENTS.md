@@ -21,7 +21,9 @@
   - In zsh one-liners, quote bare `=`-prefixed words and any glob that
     may not match — an unmatched glob aborts the whole command (four
     recurrences in one 2026-09-07 session: `echo ===`, `*emini*`,
-    `/nix/store/*-brewfile`, a relative glob after a cwd reset).
+    `/nix/store/*-brewfile`, a relative glob after a cwd reset). On
+    Bili's machines `home.nix` turns `nomatch` off for non-interactive
+    zsh, so the abort is gone there; the rule stands elsewhere.
   - Never issue a `cd` to shorten a path, and never rely on one
     persisting from an earlier call — a shell that looks like it kept
     its directory is the third recurrence of this trap; when a tool

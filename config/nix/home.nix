@@ -54,6 +54,12 @@ in
 
   # Homebrew's PATH entry is the OS shell's business (darwin.nix).
   programs.zsh.enable = true;
+  # Scripts and agent tool calls run zsh non-interactively; there an
+  # unmatched glob aborting the whole command bit four times in one day.
+  # Bash semantics for those shells only; interactive zsh keeps erroring.
+  programs.zsh.envExtra = ''
+    [[ -o interactive ]] || unsetopt nomatch
+  '';
   home.sessionPath = [
     "$HOME/.cargo/bin" # rustup proxies
     "$HOME/.local/bin" # native installers (Claude Code)
