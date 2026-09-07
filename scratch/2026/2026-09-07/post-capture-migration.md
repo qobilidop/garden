@@ -80,10 +80,13 @@ Batches: three full captures of 32 posts, about seven minutes each.
 
 ## Known limits and follow-ups
 
-- Captures of image-heavy Modular pages run 18–33 MB (hero and
-  related-post images inlined at full resolution); the post tier is
-  258 MB. A `--max-resource-size` cap would trade evidence for space;
-  undecided.
+- Captures of image-heavy Modular pages run 18–33 MB; the post tier is
+  258 MB (shadow pack 199 MB). Inspected: the large images are the
+  essays' own 3 MB figures, not chrome, so a `--max-resource-size` cap
+  would drop evidence. Bili's ruling: no cap for now, revisit — the
+  natural trigger is shadow's history growing past a few gigabytes,
+  when the question becomes repository hygiene rather than capture
+  policy.
 - The Every essay is captured in full; its notes were extended past
   the preview the same day (Bili's ask), including the two figures.
 - A gist page extracts at 24% (GitHub chrome); the pinned raw file
