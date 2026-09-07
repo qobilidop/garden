@@ -110,8 +110,10 @@
      size for body text), Georgia on older Windows; Android has only
      Noto Serif. Windows rendering unverified from here. */
   --serif: Charter, "Bitstream Charter", "Sitka Text", Georgia, serif;
-  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
-    sans-serif;
+  /* Apparatus in the platform's own interface face. The site's browser
+     floor (color-mix, registered properties) is later than system-ui,
+     so the vendor aliases and Helvetica/Arial fallbacks earned nothing. */
+  --sans: system-ui, sans-serif;
   --mono: ui-monospace, "SF Mono", "Cascadia Code", Menlo, Consolas, monospace;
 }
 
