@@ -9,6 +9,11 @@
   --bg: #fcfcfc;
   --bg-raised: #f2f2f2;
   --fg: #1a1a1a;
+  /* Bold and headings. Same as --fg in light; in dark the body text is
+     dimmed against glare, which leaves bold only its weight to stand on
+     (Charter's bold is close to its roman), so strong gets a brighter
+     tone as well. */
+  --fg-strong: #1a1a1a;
   --muted: #6e6e6e;
   --rule: #e4e4e4;
   --underline: #a8a8a8;
@@ -23,6 +28,7 @@
     --bg: #151515;
     --bg-raised: #1e1e1e;
     --fg: #d6d6d6;
+    --fg-strong: #f4f4f4;
     --muted: #8f8f8f;
     --rule: #2c2c2c;
     --underline: #5a5a5a;
@@ -35,6 +41,7 @@
   --bg: #151515;
   --bg-raised: #1e1e1e;
   --fg: #d6d6d6;
+  --fg-strong: #f4f4f4;
   --muted: #8f8f8f;
   --rule: #2c2c2c;
   --underline: #5a5a5a;
@@ -47,18 +54,40 @@
 }
 
 :root {
+  /* The frame (rationale on body below): measure, margin columns,
+     gutters, and the vertical unit — one line box, 18px × 1.6. */
+  --measure: 36rem;
+  --margin-col: 16rem;
+  --gutter: 2.5rem;
+  --frame: calc(var(--measure) + 2 * (var(--margin-col) + var(--gutter)));
+  --unit: 1.8rem;
   --serif: Charter, Georgia, serif;
   --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
     sans-serif;
   --mono: ui-monospace, "SF Mono", "Cascadia Code", Menlo, Consolas, monospace;
 }
 
+/* The frame. Measure 36rem = 576px: ~73 characters of 18px Charter
+   (mean advance 0.4385em, measured), 2.5 lowercase alphabets — inside
+   Bringhurst's 45–75, under WCAG 1.4.8's 80, mid Butterick's 2–3
+   alphabets; the comprehension-and-preference band of the reading
+   studies, not the speed band. Two 16rem margin columns = 256px: ~40
+   characters of 0.8rem notes, Bringhurst's floor for a narrow column,
+   and Tufte's sidenote proportion (about half the measure). Gutters
+   2.5rem. Frame 73rem, which a 1280px viewport holds with slack.
+   Three thresholds, each a computed consequence: below 58rem the
+   measure stands alone; from 58rem the margins open (7.25rem — the
+   corner blocks fit beside the measure); from 64rem they hold an
+   outline and the wiki's month labels (10rem tracks); from 76rem they
+   are full width — room for side notes. Header, main,
+   and footer lay out on the same three columns: identity and
+   provenance left, content centre, apparatus right. Margin content
+   hugs the gutter, so the prose's left edge stays the page's one
+   spine and the margins read as marginalia, not a second frame. */
 body {
   margin: 0 auto;
   padding: 0 1.25rem;
-  /* ~700px: 75-80 characters at 18px serif — the top of the guidance
-     band (Bringhurst 45-75, ideal 66; WCAG ceiling 80). */
-  max-width: 44rem;
+  max-width: calc(var(--measure) + 2.5rem);
   background: var(--bg);
   color: var(--fg);
   font-family: var(--serif);
@@ -66,35 +95,40 @@ body {
   line-height: 1.6;
 }
 
-@media (max-width: 600px) {
+/* Only a phone-width viewport pushes the line under Bringhurst's
+   45-character floor (390px: 44 at 18px, 47 at 17px). */
+@media (max-width: 25rem) {
   body {
     font-size: 17px;
   }
 }
 
-/* Header / nav — apparatus, sans */
+@media (min-width: 58rem) {
+  body {
+    max-width: calc(var(--frame) + 2.5rem);
+  }
+}
+
+/* Header / nav — apparatus, sans. Three blocks: the brand (mark two
+   rows tall, name over cv), the sections (the tagline's verbs over
+   their pages, from one list), and the utilities (search, theme
+   toggle). Below the frame breakpoint: two rows, brand and utilities
+   first, then the sections. On the frame they take the three columns — brand in the left margin
+   hugging the gutter, sections on the measure so the verbs start on
+   the prose's left edge, utilities in the right margin. Labels in the
+   text color, pages muted; groups separated by space, no rules. */
 
 .site-header {
-  padding: 1.5rem 0 3rem;
+  padding: var(--unit) 0 calc(2 * var(--unit));
   font-family: var(--sans);
   font-size: 0.85rem;
 }
 
 .site-header nav {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 1.25rem;
-}
-
-.site-header .nav-sections,
-.site-header .nav-utilities {
-  display: flex;
-  align-items: center;
-  gap: 1.25rem;
-}
-
-.site-header .nav-utilities {
-  margin-left: auto;
+  gap: 0.75rem 1.75rem;
 }
 
 .site-header a {
@@ -102,20 +136,65 @@ body {
   text-decoration: none;
 }
 
-.site-header a.brand {
-  display: inline-flex;
+.site-header a:hover {
+  color: var(--fg);
+}
+
+.nav-brand {
+  display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.75rem;
+}
+
+/* The mark is 9×22 units; at two rows tall it is a glyph, not a
+   sliver, in the text color like the name (identity, not apparatus).
+   Its own home link, out of the tab order — the name is the same link. */
+.site-header a.brand-mark-link {
+  display: block;
+  color: var(--fg);
+}
+
+.brand-mark {
+  display: block;
+  height: 3rem;
+  width: auto;
+}
+
+.site-header a.brand {
   color: var(--fg);
   font-weight: 600;
 }
 
-/* The mark is 9×22 units; at one line-height tall it is a thin glyph
-   beside the name, stroked in the current text color. */
-.brand-mark {
-  height: 1.3rem;
-  width: auto;
-  display: block;
+.nav-sections {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.75rem;
+  flex-basis: 100%;
+  order: 2;
+}
+
+.nav-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  white-space: nowrap;
+}
+
+.nav-group-label {
+  color: var(--fg);
+}
+
+.nav-pages {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.nav-utilities {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-left: auto;
+  align-self: flex-start;
 }
 
 .theme-toggle {
@@ -131,23 +210,47 @@ body {
   color: var(--fg);
 }
 
-.site-header a:hover {
-  color: var(--fg);
+@media (min-width: 58rem) {
+  .site-header nav {
+    display: grid;
+    grid-template-columns: 1fr var(--measure) 1fr;
+    column-gap: var(--gutter);
+    align-items: start;
+  }
+
+  /* Explicit cells: the narrow-mode `order` would otherwise steer
+     auto-placement past column 2. */
+  .nav-brand {
+    grid-area: 1 / 1;
+    justify-self: end;
+  }
+
+  .nav-sections {
+    grid-area: 1 / 2;
+    flex-basis: auto;
+  }
+
+  .nav-utilities {
+    grid-area: 1 / 3;
+    margin-left: 0;
+    justify-self: start;
+  }
 }
 
 @media (max-width: 600px) {
-  .site-header nav {
-    gap: 0.5rem 0.75rem;
-    flex-wrap: wrap;
+  .site-header nav,
+  .nav-sections {
+    gap: 0.75rem 1.5rem;
   }
 
-  .site-header .nav-sections,
-  .site-header .nav-utilities {
+  .nav-utilities {
     gap: 0.75rem;
   }
 }
 
 main {
+  max-width: var(--measure);
+  margin: 0 auto;
   min-height: 60vh;
 }
 
@@ -158,6 +261,12 @@ h2,
 h3 {
   line-height: 1.25;
   font-weight: 600;
+  color: var(--fg-strong);
+}
+
+strong,
+b {
+  color: var(--fg-strong);
 }
 
 h1 {
@@ -174,11 +283,30 @@ h3 {
   font-size: 1.05em;
 }
 
-p,
+/* Vertical rhythm on the half unit (0.9rem): a paragraph break is one
+   line box plus 14.4px = 43.2px, 1.5 × the line spacing, WCAG 1.4.8's
+   floor. List items keep the tighter half step. */
+p {
+  margin-top: calc(var(--unit) / 2);
+  margin-bottom: calc(var(--unit) / 2);
+}
+
 li {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
+
+/* Lists: a short indent and muted markers, so the bullet is apparatus
+   beside the text rather than a browser default in front of it. */
+ul,
+ol {
+  padding-left: 1.25rem;
+}
+
+li::marker {
+  color: var(--muted);
+}
+
 
 /* Links: text-colored, gray underline; internal solid, external dotted */
 
@@ -426,11 +554,13 @@ img {
   letter-spacing: 0.06em;
 }
 
-/* Wide viewports: hang the tag into the left gutter, first line aligned
-   with the title (tufte-css's margin hang, mirrored left; stephango and
-   Vercel-changelog precedent). Right rag keeps the type column steady;
-   month labels jut left onto their own track. Below the breakpoint the
-   tag stays inline — same DOM, metadata never hidden. */
+/* On the frame: hang the tag into the left margin column, first line
+   aligned with the title (tufte-css's margin hang, mirrored left;
+   stephango and Vercel-changelog precedent). The 9rem track needs the
+   64rem threshold, where the margin column reaches 10rem. Right rag
+   keeps the type column steady; month labels jut left onto their own
+   track, hugging the gutter. Below the breakpoint the tag stays
+   inline — same DOM, metadata never hidden. */
 @media (min-width: 64rem) {
   .work-list li {
     position: relative;
@@ -499,7 +629,9 @@ img {
 
 /* Card: the tall mark stands beside the text like a seal beside a
    signature — a column, not a banner; centered on the text block
-   (name, tagline, contacts). The intro follows at full measure. */
+   (name, tagline, contacts). It is part of the text, so it stays on
+   the measure rather than hanging in the margin. The intro follows at
+   full measure. */
 .profile {
   display: flex;
   align-items: center;
@@ -607,6 +739,11 @@ img {
   color: var(--fg);
 }
 
+.profile-contacts {
+  gap: 1rem;
+  font-size: 1.15rem;
+}
+
 .profile-links svg {
   width: 1.15em;
   height: 1.15em;
@@ -614,23 +751,21 @@ img {
   display: block;
 }
 
-.profile-contacts {
-  gap: 1rem;
-  font-size: 1.15rem;
-}
 
 /* Footer */
 
-/* Footer: one rule, one line — licenses left, profiles right, like the
-   header's sections/utilities split; stacks centered on narrow screens. */
+/* Footer: one rule across the frame, then the repository link left,
+   the copyright and licenses centered on the measure (they govern the
+   text above), profiles right; on the frame the corners hug the
+   gutters. Stacks centered on narrow screens. */
 
 .site-footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 0.75rem 1.5rem;
-  margin-top: 4rem;
-  padding: 1.25rem 0 2rem;
+  margin-top: calc(2 * var(--unit));
+  padding: 1.35rem 0 var(--unit);
   border-top: 1px solid var(--rule);
   font-family: var(--sans);
   font-size: 0.8rem;
@@ -648,6 +783,33 @@ img {
 .footer-links {
   gap: 1.1rem;
   font-size: 1rem;
+}
+
+@media (min-width: 58rem) {
+  .site-footer {
+    display: grid;
+    grid-template-columns: 1fr var(--measure) 1fr;
+    column-gap: var(--gutter);
+    align-items: start;
+  }
+
+  .footer-source {
+    justify-self: end;
+    text-align: right;
+  }
+
+  /* Centered: below the rule the text has ended, and a single line
+     between two corners reads as its own region rather than as a run
+     continuing from "repository". */
+  .footer-license {
+    grid-column: 2;
+    text-align: center;
+  }
+
+  .footer-links {
+    grid-column: 3;
+    justify-self: start;
+  }
 }
 
 @media (max-width: 600px) {

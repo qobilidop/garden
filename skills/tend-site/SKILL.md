@@ -69,7 +69,10 @@ site.yml`, then watch the new run and curl the live page.
 
 Grayscale tokens in `src/styles/global.css`; the only hues are the
 `--paper`/`--post` identity dots (CVD-validated against both surfaces).
-Serif prose, sans apparatus, mono citekey handles; 44rem measure.
+Serif prose, sans apparatus, mono citekey handles. The frame is
+tokens at the top of `global.css` (36rem measure, 16rem margin
+columns, 2.5rem gutters; frame from 58rem, margin hangs from 64rem) with its rationale in the
+`body` comment; header, main, and footer share its three columns.
 Design decisions trace to researched precedent — match that bar when
 changing them. No third-party runtime origins: fonts, scripts,
 analytics, and images all ship from the build (portability, and reach

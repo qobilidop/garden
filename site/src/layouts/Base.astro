@@ -3,7 +3,7 @@ import 'katex/dist/katex.min.css'
 import '../styles/global.css'
 import Mark from '../components/Mark.astro'
 import ProfileLinks from '../components/ProfileLinks.astro'
-import { name } from '../lib/profile'
+import { name, sections } from '../lib/profile'
 
 interface Props {
   title?: string
@@ -50,16 +50,39 @@ const ogImage = new URL(`${base}/brand/logo-black.png`, Astro.site)
   </head>
   <body>
     <header class="site-header">
+      {/* Three blocks on the frame's three columns (global.css, body
+          comment): brand in the left margin, the tagline's verbs over
+          their pages on the measure (from the same list as the
+          tagline), search and theme toggle in the right margin. The
+          repository link lives in the footer with the licenses. */}
       <nav>
-        <a href={`${base}/`} class="brand"><Mark class="brand-mark" />{siteName}</a>
-        <span class="nav-sections">
-          <a href={`${base}/library/`}>library</a>
-          <a href={`${base}/wiki/`}>wiki</a>
-          <a href={`${base}/surveys/`}>surveys</a>
-        </span>
+        <div class="nav-brand">
+          <a href={`${base}/`} class="brand-mark-link" aria-label="Home" tabindex="-1">
+            <Mark class="brand-mark" />
+          </a>
+          <div class="nav-group">
+            <a href={`${base}/`} class="brand">{siteName}</a>
+            <span class="nav-pages">
+              <a href={`${base}/cv/`}>cv</a>
+            </span>
+          </div>
+        </div>
+        <div class="nav-sections">
+          {
+            sections.map((s) => (
+              <div class="nav-group">
+                <span class="nav-group-label">{s.verb}</span>
+                <span class="nav-pages">
+                  {s.pages.map((p) => (
+                    <a href={`${base}${p.path}`}>{p.label}</a>
+                  ))}
+                </span>
+              </div>
+            ))
+          }
+        </div>
         <span class="nav-utilities">
           <a href={`${base}/search/`}>search</a>
-          <a href="https://github.com/qobilidop/garden">source</a>
           <button
             id="theme-toggle"
             class="theme-toggle"
@@ -74,7 +97,9 @@ const ogImage = new URL(`${base}/brand/logo-black.png`, Astro.site)
       <slot />
     </main>
     <footer class="site-footer">
-      <p>
+      <p class="footer-source"><a href="https://github.com/qobilidop/garden">repository</a></p>
+      <p class="footer-license">
+        © {siteName} ·
         code <a href="https://github.com/qobilidop/garden/blob/main/LICENSE-MIT">MIT</a> ·
         non-code
         <a href="https://github.com/qobilidop/garden/blob/main/LICENSE-CC-BY">CC BY 4.0</a>

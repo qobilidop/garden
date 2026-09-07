@@ -29,3 +29,41 @@ export const profiles: Profile[] = [
     path: 'M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z',
   },
 ]
+
+// The site's structure: three verbs, each with its pages. Left to
+// right follows the flow of work at both levels — build, learn, share;
+// and within a group, upstream to downstream (sources, then what is
+// made from them). The tagline and the nav both derive from this list,
+// so the thesis and its table of contents cannot disagree.
+export interface Section {
+  verb: string
+  pages: { label: string; path: string }[]
+}
+
+export const sections: Section[] = [
+  { verb: 'build', pages: [{ label: 'portfolio', path: '/portfolio/' }] },
+  {
+    verb: 'learn',
+    pages: [
+      { label: 'library', path: '/library/' },
+      // Surveys are built and citable but not in the nav: the section
+      // is moving to its own home.
+      { label: 'wiki', path: '/wiki/' },
+      { label: 'notebook', path: '/notebook/' },
+    ],
+  },
+  {
+    verb: 'share',
+    pages: [
+      { label: 'stream', path: '/stream/' },
+      { label: 'blog', path: '/blog/' },
+    ],
+  },
+]
+
+// "Build, learn, share."
+export const tagline =
+  sections
+    .map((s) => s.verb)
+    .join(', ')
+    .replace(/^./, (c) => c.toUpperCase()) + '.'
