@@ -76,6 +76,14 @@ concise canonical URL slug second. Posts often take the URL-slug branch
   name re-capture through the user's browser session as the upgrade
   path. Claims about the gated remainder from secondary sources are not
   asserted.
+- **Tool maintenance**: `capture-post.mjs` changes only when a check
+  flags a post — extraction ratio, never-loaded images, prose diff —
+  and only by a generic fix, one commit per fix naming the flagging
+  post, so git is the ledger. A need that would take a site-specific
+  patch takes the browser-capture fallback or a transcript caveat
+  instead. Fixes outpacing ingestions is the signal to swap the
+  extractor; the checks make the swap cheap. (Nine generic fixes came
+  out of the first migration of 32 posts, none from reading files.)
 
 ### Revisiting an existing post
 

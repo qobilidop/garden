@@ -128,7 +128,12 @@
   checkable — unwritten conventions drift (H1 shapes, display names,
   and citation forms all did).
 - Every fact has one canonical home; other surfaces point at it,
-  never restate it. Derived views are generated, never committed.
+  never restate it. Derived views are generated, never committed,
+  and a generated artifact ships with a check against an independent
+  derivation of the same content (a transcript's word count against
+  the capture's visible text; a prose diff; a figure byte match) —
+  three such checks caught every extraction defect in the 2026-09-07
+  post migration and reading caught none.
   Two files that must agree become one file that cannot disagree.
   (Different altitudes — evidence, understanding, presentation — are
   not duplication.) The one data bug a day of survey work surfaced

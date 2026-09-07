@@ -32,7 +32,10 @@
   replace an anchored string asserted to occur exactly once, never a
   computed offset, and a bulk edit stops at the first missing anchor —
   index splicing orphaned fragments twice; asserted anchors have not
-  mis-edited once across ~70 replacements.
+  mis-edited once across ~70 replacements. A `cd` inside a call
+  re-bases every later relative path in that call — write those
+  absolute (the fourth recurrence wrote a repo's ignore file and a
+  package install one directory too deep).
 - Browser-mediated setup on the user's behalf: fill forms to one click
   and hand off — the human clicks Create/Delete/Submit on destructive or
   account-changing actions and handles every credential value; take no

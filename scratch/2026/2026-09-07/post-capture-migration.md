@@ -70,6 +70,14 @@ completeness check or the prose diff, none by reading files by hand:
 
 Batches: three full captures of 32 posts, about seven minutes each.
 
+## Rulings (Bili, same day)
+
+- The tooling stays, under the maintenance rule now in ingest-post: fix
+  only what a check flags, generically, one commit per fix; site-specific
+  needs take the fallback; fixes outpacing ingestions means swap.
+- The full Every capture stays as private evidence; the notes remain
+  scoped to the preview until extended.
+
 ## Known limits and follow-ups
 
 - Captures of image-heavy Modular pages run 18–33 MB (hero and
@@ -97,3 +105,15 @@ Staged (single occurrence each):
 - Nine tuning steps on a rented extractor across 32 pages: the cost of
   adopting tooling whose failure modes are unknown is discovered by
   running it over the whole corpus once, not by trials on one page.
+
+## Evolve outcome (run at session end)
+
+Accepted and applied, all five: (1) ingest-post — the tool-maintenance
+rule; (2) global rule in both mirrored configs — a `cd` inside a call
+re-bases later relative paths (fourth recurrence of the cd trap);
+(3) AGENTS.md §Conventions — a generated artifact ships with a check
+against an independent derivation; (4) subtraction — the superseded
+post capture profile marked in the ingestion memory; (5) this note's
+rulings and outcome. Nothing rejected. Staged: the `git rm` directory
+deletion; a tracked re-derivation batch if a second tool change needs
+one.
