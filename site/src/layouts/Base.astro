@@ -3,7 +3,7 @@ import 'katex/dist/katex.min.css'
 import '../styles/global.css'
 import Mark from '../components/Mark.astro'
 import ProfileLinks from '../components/ProfileLinks.astro'
-import { name, sections } from '../lib/profile'
+import { handle, name, sections } from '../lib/profile'
 
 interface Props {
   title?: string
@@ -16,7 +16,7 @@ interface Props {
 
 const { title, bare = false, description, noindex = false } = Astro.props
 const base = import.meta.env.BASE_URL.replace(/\/$/, '')
-const siteName = name
+const siteName = handle
 // One canonical address however the page was reached (aliases 301 here).
 const canonical = new URL(Astro.url.pathname, Astro.site)
 const pageTitle = title ? (bare ? title : `${title} · ${siteName}`) : siteName
@@ -99,7 +99,7 @@ const ogImage = new URL(`${base}/brand/logo-black.png`, Astro.site)
     <footer class="site-footer">
       <p class="footer-source"><a href="https://github.com/qobilidop/garden">repository</a></p>
       <p class="footer-license">
-        © {siteName} ·
+        © {name} ·
         code <a href="https://github.com/qobilidop/garden/blob/main/LICENSE-MIT">MIT</a> ·
         non-code
         <a href="https://github.com/qobilidop/garden/blob/main/LICENSE-CC-BY">CC BY 4.0</a>
