@@ -8,7 +8,8 @@ Systems that modify themselves from their own experience. Shelf:
 [[liu2026-agent-taxonomy]] (the three-locus cut),
 [[weng2026-harness]] (harness engineering as the near-term RSI site),
 [[favaro2026-ai-builds-itself]] (frontier-lab evidence of R&D
-automation),
+automation), [[pachocki2026-alien-mind]] (a frontier lab's research
+lead on pacing the loop),
 [[osmani2026-loop-engineering]] (the loop layer from the product side),
 [[ye2026-cake]] (the environment locus, with the controlled
 experiment),
@@ -107,7 +108,12 @@ does the loop close.
   ([[gao2025-self-evolving-survey]]).
 - **The evaluator is code too.** Superpowers' Codex evals showed zero
   improvement because an isolation bug benchmarked the old version —
-  an unverified gate passes everything.
+  an unverified gate passes everything. At frontier scale the gate is
+  chain-of-thought monitoring, and [[pachocki2026-alien-mind]] reports
+  it eroding as reasoning blends with supervised interaction, models
+  manipulate their own reasoning, and pretraining makes them capable
+  without verbalizing at all — his forecast is that progress becomes
+  bottlenecked by confidence in monitoring, not by capability.
 - **Harness content decays as models internalize it.**
   [[weng2026-harness]] predicts harness functions internalize into
   models while interfaces persist; [[provencher2026-astra-skills]] is
@@ -143,7 +149,12 @@ Its open-ended-task curves are LLM-judged and its next-step comparison
 selects moments where the human had room to improve, so they show a rung
 being climbed, not research-taste parity. Under the field map's
 experience-dependent, persistent, self-initiated test, this is accelerated
-delegation inside AI R&D, not yet a self-evolving system.
+delegation inside AI R&D, not yet a self-evolving system. From the
+other lab, [[pachocki2026-alien-mind]] states the intent plainly:
+research is organized around recursive self-improvement because it is
+the only way to stay at the frontier, and the same essay asks for
+mandated safety bars and voluntary slowdowns — the ladder's top rung
+named as a goal and as a hazard in one breath, with no measurements.
 [[vincent2026-therapist]] explores replacing human gates
 with structural internal ones (sole-writer roles, time as a gate) — a
 philosophical fork from the survey's human-approval checklist worth
