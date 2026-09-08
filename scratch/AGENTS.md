@@ -22,4 +22,7 @@
   link into it — it expires at reseed, and the site does not render
   it. `[[…]]` inside scratch is informal notation, unresolved.
   Pointers out of scratch into durable layers are the distill
-  direction.
+  direction. A durable surface may cite a scratch decision record by
+  plain path as the evidence behind a rule (tend-site's hosting
+  decision, config/nix's Nix implementation choice); that is a
+  citation, not a link, and it dies with the record at reseed.

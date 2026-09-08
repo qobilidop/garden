@@ -156,9 +156,13 @@ is stored here.
   content exists.
 - Writeback: update the `wiki/` topic pages this work touches
   (skills/tend-wiki).
+- Read the library: cite related entries by citekey and wiki pages by
+  slug (one namespace) and say what this work adds against them.
 - Before proposing commits, self-review the notes against the source:
   every attribution (who did what) and number re-checked, and every
-  criticism verified as carefully as a claim.
+  criticism verified as carefully as a claim. Names, titles,
+  affiliations, and dates are quoted from the record, never completed
+  from world knowledge.
 
 ## 6. Close
 

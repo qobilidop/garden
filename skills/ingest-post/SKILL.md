@@ -116,8 +116,9 @@ Same bar as ingest-paper §5: the H1 is `work.title` verbatim and
 read `transcript.md` and look at the load-bearing figures in the capture,
 write transformation not compression, include
 an honest assessment (durable vs era-bound, unverified claims, author's
-stake), and read the library — cite related entries by citekey and say
-what this work adds against them.
+stake), and read the library — cite related entries by citekey and wiki
+pages by slug (one namespace: `[[self-evolving-agents]]`) and say what
+this work adds against them.
 Writeback: update the `wiki/` topic pages this work touches
 (skills/tend-wiki).
 
@@ -125,7 +126,10 @@ Before proposing commits, self-review the notes against the source:
 every attribution (who did what) and number re-checked, and every
 criticism verified as carefully as a claim — an unfair critique is a
 worse error than a missed one. WebFetch summaries are leads, never
-sources — assert only what the captured record contains.
+sources — assert only what the captured record contains. Names, titles,
+affiliations, and dates are quoted from the capture, never completed
+from world knowledge: a bio line stays a bio line, a first name stays a
+first name (four such upgrades reached one day's drafts, 2026-09-07).
 
 ## 7. Close
 

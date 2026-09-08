@@ -124,8 +124,10 @@
 
 - A convention found to exist only by imitation gets codified in its
   governing skill in the same change, and machine-checked where
-  checkable — unwritten conventions drift (H1 shapes, display names,
-  and citation forms all did).
+  checkable in that same change — unwritten conventions drift (H1
+  shapes, display names, and citation forms all did), and a written
+  rule without its check drifts the same way (the skill-description
+  rule sat unchecked for a month while six of eight skills broke it).
 - Every fact has one canonical home; other surfaces point at it,
   never restate it. Derived views are generated, never committed,
   and a generated artifact ships with a check against an independent
@@ -139,10 +141,12 @@
   was a hand-copied count drifting from its ledger.
 - When a name, vendor, or host is retired, sweep every surface it
   touched in the same change — repo text, CI, DNS records, dashboard
-  settings, packages — by searching for the *name*, not by testing
-  for function; an inert reference is still debt (the sys0→garden
-  rename left 31 files and a vanished CI image; the hosting move left
-  a `www` record and a whole standby naming the old host).
+  settings, packages — by searching for the *name* and its aliases
+  and abbreviations, not by testing for function; an inert reference
+  is still debt (the sys0→garden rename left 31 files and a vanished
+  CI image, then ten `sys` references in three skills for two more
+  weeks; the hosting move left a `www` record and a whole standby
+  naming the old host).
 
 ## Skills
 
