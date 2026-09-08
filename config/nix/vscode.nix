@@ -47,6 +47,8 @@ in
           github.vscode-github-actions
           # documents
           tomoki1207.pdf
+          # web: the Astro team's extension (highlighting, language server)
+          astro-build.astro-vscode
           # color theme: the same GitHub pair Ghostty names (home.nix)
           github.github-vscode-theme
         ])
