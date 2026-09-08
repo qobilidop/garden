@@ -20,7 +20,7 @@ const entry = <T extends z.ZodRawShape>(shape: T) =>
     z.object({ ...shape, ...tenure, note: z.string().optional() }).strict(),
   ])
 
-const url = z.string().url()
+const url = z.url()
 const employment = entry({ role: z.string(), org: z.string() })
 const education = entry({ degree: z.string(), org: z.string() })
 const publication = z

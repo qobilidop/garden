@@ -8,7 +8,7 @@ import { resolve } from 'node:path'
 import { parse } from 'yaml'
 import { z } from 'astro/zod'
 
-const url = z.string().url()
+const url = z.url()
 const entry = z
   .object({
     title: z.string(),

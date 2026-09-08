@@ -140,7 +140,7 @@ export function lintContent(resolve) {
   for (const rel of files) {
     let body = readFileSync(join(repoRoot, rel), 'utf8')
     body = body.replace(/^---\n[\s\S]*?\n---\n/, '')
-    const masked = body.replace(/\[\[([^\]]*)\]\]/g, (whole, inner) => {
+    const masked = body.replace(/\[\[([^\]]*)\]\]/g, (_whole, inner) => {
       const target = inner.split('|', 1)[0].split('#', 1)[0].trim()
       if (!resolve.has(target)) {
         violations.push(`${rel}: unresolved wikilink [[${target}]]`)

@@ -1,7 +1,8 @@
 {
   // Exists for the editor: the Astro language server roots itself at the
   // nearest TypeScript project, and without this file it fell back to the
-  // repository root and could not find node_modules/astro. Astro's base
-  // config already includes .astro/types.d.ts and excludes dist.
-  "extends": "astro/tsconfigs/base"
+  // repository root and could not find node_modules/astro. Strict is
+  // enforced by `astro check` in CI; the base config it extends already
+  // includes .astro/types.d.ts and excludes dist.
+  "extends": "astro/tsconfigs/strict"
 }

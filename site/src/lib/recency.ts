@@ -17,9 +17,11 @@ function git(args: string[]): string {
 }
 
 function repoRoot(): string {
-  root ??= execFileSync('git', ['rev-parse', '--show-toplevel'], {
-    encoding: 'utf8',
-  }).trim()
+  if (root === undefined) {
+    root = execFileSync('git', ['rev-parse', '--show-toplevel'], {
+      encoding: 'utf8',
+    }).trim()
+  }
   return root
 }
 

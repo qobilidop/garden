@@ -11,7 +11,9 @@ owned logic in `site/src/lib/`; unresolved `[[targets]]` and bare citekey
 mentions fail the build via `lintContent()` in `site/src/lib/sitemap.mjs`,
 called at config load (`astro.config.mjs`), and an invalid CV or
 portfolio record fails it via the zod schemas in `site/src/lib/cv.ts`
-and `site/src/lib/portfolio.ts`. The logo variants and favicons are built
+and `site/src/lib/portfolio.ts`; `npm run check` (`astro check`, strict
+`tsconfig.json`) type-checks `src/` in CI, since the build alone never
+does. The logo variants and favicons are built
 by `python3 site/scripts/build-brand.py` (stdlib only, runs on the
 host) from `brand/logo.svg` and `brand/favicon.svg` into gitignored
 `site/public/brand/` and `site/public/favicon.*`, and the CV PDF by
