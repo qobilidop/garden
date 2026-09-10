@@ -6,8 +6,8 @@ description: Develop and verify the garden website (site/, Astro). Use when chan
 # Tend the site
 
 The contract is AGENTS.md §Site: `site/` reads exactly `wiki/`,
-`library/`, `cv/cv.yaml`, and `portfolio/portfolio.yaml`, read-only;
-owned logic in `site/src/lib/`; unresolved `[[targets]]` and bare citekey
+`library/`, `notebook/`, `cv/cv.yaml`, and `portfolio/portfolio.yaml`,
+read-only; owned logic in `site/src/lib/`; unresolved `[[targets]]` and bare citekey
 mentions fail the build via `lintContent()` in `site/src/lib/sitemap.mjs`,
 called at config load (`astro.config.mjs`), and an invalid CV or
 portfolio record fails it via the zod schemas in `site/src/lib/cv.ts`

@@ -604,6 +604,14 @@ img {
   letter-spacing: 0.06em;
 }
 
+/* Notebook ID beside its title: the note's handle, mono like a
+   citekey — opaque on purpose, the title carries the meaning. */
+.tag .handle {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
 /* On the frame: hang the tag into the left margin column, first line
    aligned with the title (tufte-css's margin hang, mirrored left;
    stephango and Vercel-changelog precedent). The track is the shared

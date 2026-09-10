@@ -104,8 +104,8 @@
 - `site/` renders the repo to a static site at qobilidop.com (Astro),
   served by Cloudflare Workers static assets (`site/wrangler.jsonc`);
   the build output is plain files, so the host is replaceable. It
-  reads exactly `wiki/`, `library/`, `cv/cv.yaml`, and
-  `portfolio/portfolio.yaml` — the two collections in
+  reads exactly `wiki/`, `library/`, `notebook/`, `cv/cv.yaml`, and
+  `portfolio/portfolio.yaml` — the three collections in
   `site/src/content.config.ts` plus the CV and portfolio loaders
   (`site/src/lib/cv.ts`, `site/src/lib/portfolio.ts`, whose zod
   schemas are the machine check on each record's shape) are the

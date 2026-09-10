@@ -1,6 +1,7 @@
-// The allowlist: the site reads exactly these two collections and
+// The allowlist: the site reads exactly these three collections and
 // nothing else in the repo (plus the CV and portfolio records loaded
-// in src/lib/). Library IDs are citekeys (the parent directory name).
+// in src/lib/). Library IDs are citekeys (the parent directory name);
+// notebook IDs are the note-XXXX file stems.
 import { defineCollection } from 'astro:content'
 import { glob } from 'astro/loaders'
 
@@ -16,4 +17,8 @@ const library = defineCollection({
   }),
 })
 
-export const collections = { wiki, library }
+const notebook = defineCollection({
+  loader: glob({ base: '../notebook', pattern: 'note-*.md' }),
+})
+
+export const collections = { wiki, library, notebook }

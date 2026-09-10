@@ -6,6 +6,7 @@ on:
     paths:
       - "wiki/**"
       - "library/**"
+      - "notebook/**"
       - "portfolio/**"
       - "brand/**"
       - "cv/**"

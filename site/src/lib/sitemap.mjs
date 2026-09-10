@@ -1,5 +1,5 @@
-// The closed link namespace: wiki slugs and library citekeys, scanned from
-// the repo at config load. Used by the wikilink plugin (resolution and
+// The closed link namespace: wiki slugs, library citekeys, and notebook
+// IDs (note-XXXX, notebook/AGENTS.md), scanned from the repo at config load. Used by the wikilink plugin (resolution and
 // display labels) and asserted collision-free — a wiki page shadowing a
 // citekey is a build error.
 import { readdirSync, readFileSync } from 'node:fs'
@@ -13,6 +13,12 @@ const repoRoot = fileURLToPath(new URL('../../..', import.meta.url))
 export function wikiSlugs() {
   return readdirSync(join(repoRoot, 'wiki'))
     .filter((f) => f.endsWith('.md'))
+    .map((f) => basename(f, '.md'))
+}
+
+export function noteIds() {
+  return readdirSync(join(repoRoot, 'notebook'))
+    .filter((f) => /^note-[0-9a-z]{4}\.md$/.test(f))
     .map((f) => basename(f, '.md'))
 }
 
@@ -100,15 +106,22 @@ function citekeyLabels(keys) {
 }
 
 function wikiTitle(slug) {
-  const body = readFileSync(join(repoRoot, 'wiki', `${slug}.md`), 'utf8')
-  return body.match(/^#\s+(.+)$/m)?.[1]?.trim() ?? slug
+  return h1(join(repoRoot, 'wiki', `${slug}.md`)) ?? slug
+}
+
+function noteTitle(id) {
+  return h1(join(repoRoot, 'notebook', `${id}.md`)) ?? id
+}
+
+function h1(file) {
+  return readFileSync(file, 'utf8').match(/^#\s+(.+)$/m)?.[1]?.trim()
 }
 
 // Every name that must never appear bare in prose: citekeys, their
-// author-year prefixes, and wiki slugs. The wikilink plugin lints text
+// author-year prefixes, wiki slugs, and note IDs. The wikilink plugin lints text
 // against this set so unlinked mentions fail the build.
 export function bareNames() {
-  const names = new Set(wikiSlugs())
+  const names = new Set([...wikiSlugs(), ...noteIds()])
   for (const key of citekeys()) {
     names.add(key)
     const prefix = key.match(/^([a-z-]+?\d{4})/)?.[1]
@@ -135,6 +148,7 @@ export function lintContent(resolve) {
   const files = [
     ...globSync('wiki/*.md', { cwd: repoRoot }),
     ...globSync('library/**/notes.md', { cwd: repoRoot }),
+    ...globSync('notebook/note-*.md', { cwd: repoRoot }),
   ]
   const violations = []
   for (const rel of files) {
@@ -178,6 +192,16 @@ export function buildResolveMap(base) {
       label,
       kind: 'library',
       tip: workTip(files.get(key)),
+    })
+  }
+  for (const id of noteIds()) {
+    if (resolve.has(id)) {
+      throw new Error(`Name collision on notebook ID: ${id}`)
+    }
+    resolve.set(id, {
+      href: `${base}/notebook/${id}/`,
+      label: noteTitle(id),
+      kind: 'note',
     })
   }
   return resolve
