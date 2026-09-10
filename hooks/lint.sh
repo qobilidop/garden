@@ -17,6 +17,15 @@ while IFS= read -r f; do
 done < <(git ls-files 'scratch/' \
          | grep -E '^scratch/[0-9]{4}/[0-9]{4}-[0-9]{2}-[0-9]{2}/[^/]+\.md$')
 
+# Notebook notes are note-XXXX.md with four lowercase base-36 characters
+# (notebook/AGENTS.md); anything else in the directory is a misnamed
+# note or a stray file.
+while IFS= read -r f; do
+  echo "lint: notebook file outside note-XXXX.md: $f" >&2; status=1
+done < <(git ls-files 'notebook/' \
+         | grep -v -E '^notebook/(AGENTS|CLAUDE)\.md$' \
+         | grep -v -E '^notebook/note-[0-9a-z]{4}\.md$')
+
 # The root flake follows config/nix's nixpkgs, but Nix never checks that the
 # root lock's copy matches the host lock (config/nix/AGENTS.md); a stale copy
 # evaluates silently against the old nixpkgs. Repair: `nix flake update host`.

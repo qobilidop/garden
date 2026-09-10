@@ -67,7 +67,7 @@
   writes), Codex walks only the cwd chain, and subagents inherit
   nothing — so: **before writing in a layer, read its AGENTS.md.**
   Layers with contracts so far: `scratch/`, `config/nix/`,
-  `config/claude/`, `config/codex/`.
+  `config/claude/`, `config/codex/`, `notebook/`.
 
 ## Wiki
 
@@ -76,6 +76,14 @@
   `[[citekey]]`. Ingestion updates the pages a work touches; a new page
   needs enough accumulated material to synthesize, never a single work.
   No index, no per-page frontmatter: the directory lists, git logs.
+
+## Notebook
+
+- `notebook/note-XXXX.md`: Bili's own notes, each with one clear
+  goal or boundary, in his voice only — agents never write prose
+  there (contract in `notebook/AGENTS.md`). Where the wiki synthesizes the library,
+  the notebook holds what Bili thinks; longer writing grows out of
+  it.
 
 ## Library
 
