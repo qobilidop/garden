@@ -53,10 +53,11 @@ a rule it states (PATH order, update ownership, the two lock files).
    (`~/.config/ghostty/config`, VS Code `settings.json`,
    `brew list --cask`). Ghostty and VS Code read config at startup:
    a new window, a restart.
-8. **Update procedure:** `nix flake update --flake config/nix`, then
-   `nix flake update host` at the repo root (Nix neither refreshes
-   nor checks the root lock's copy; the lint hook and the locks job
-   compare them), build, switch.
+8. **Update procedure:** `config/nix/update.sh` — both locks as the
+   user (Nix neither refreshes nor checks the root lock's copy; the
+   lint hook and the locks job compare them), then the switch. It is
+   Bili's to run, like the switch; to preview, run the two `nix flake
+   update` lines from it and build.
 
 ## Traps by surface
 

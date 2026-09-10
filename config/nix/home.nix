@@ -46,7 +46,8 @@ in
       nixfmt
       # config/codex/sync.sh and the site scripts (tomllib needs 3.11+)
       python3
-      # agents: Claude Code and Codex install natively (see AGENTS.md)
+      # agents: Claude Code and Codex are casks on macOS (darwin.nix) and
+      # native installs on Ubuntu (see AGENTS.md)
     ]
     ++ lib.optionals pkgs.stdenv.hostPlatform.isDarwin [ colima ];
 
@@ -62,7 +63,7 @@ in
   '';
   home.sessionPath = [
     "$HOME/.cargo/bin" # rustup proxies
-    "$HOME/.local/bin" # native installers (Claude Code)
+    "$HOME/.local/bin" # native installers (Claude Code, Codex on Ubuntu)
   ];
 
   programs.git = {

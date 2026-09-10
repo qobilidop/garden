@@ -12,12 +12,12 @@ Host configuration for every machine: one flake, upstream Nix.
 - Apply with `bootstrap.sh` (first run installs Nix and activates the
   pinned generation directly) or, afterwards, `sudo darwin-rebuild
   switch --flake .#mac` / `home-manager switch --flake .#qobilidop`;
-  then `verify.sh` from a fresh login shell. Update with `nix flake
-  update` here, then `nix flake update host` at the repo root (the
-  root flake follows this nixpkgs, and Nix neither refreshes nor checks
-  that copy on its own — `hooks/lint.sh` and the Host config workflow
-  do), then a switch; both `flake.lock` files are committed. Flakes
-  evaluate only git-tracked files: `git add` new files before
+  then `verify.sh` from a fresh login shell. Update with `update.sh`:
+  `nix flake update` here, then `nix flake update host` at the repo
+  root (the root flake follows this nixpkgs, and Nix neither refreshes
+  nor checks that copy on its own — `hooks/lint.sh` and the Host config
+  workflow do), then a switch; both `flake.lock` files are committed.
+  Flakes evaluate only git-tracked files: `git add` new files before
   switching. Lock as the user (`nix flake lock`) before a sudo switch:
   a switch that has to lock a new input writes `flake.lock` as root.
 - `.github/workflows/host-config.yml` runs `bootstrap.sh` and
@@ -27,7 +27,8 @@ Host configuration for every machine: one flake, upstream Nix.
 - Claude Code and Codex configs stay on `config/claude` and
   `config/codex` (copies, not store symlinks: both tools rewrite their
   own files). The activation step pushes them on every switch; their
-  binaries install natively, outside Nix. zsh comes from `home.nix`;
+  binaries are casks on macOS (`darwin.nix`) and native installs on
+  Ubuntu, outside Nix either way. zsh comes from `home.nix`;
   on Ubuntu `bootstrap.sh` registers it as the login shell
   (`/etc/shells`, `chsh`), the one shell step the OS owns. Ubuntu GUI
   apps (VS Code, Chrome, Zoom, 1Password, Ghostty — official
