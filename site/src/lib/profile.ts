@@ -63,10 +63,7 @@ export const sections: Section[] = [
   },
   {
     verb: 'share',
-    pages: [
-      { label: 'stream', path: '/stream/' },
-      { label: 'blog', path: '/blog/' },
-    ],
+    pages: [{ label: 'blog', path: '/blog/' }],
   },
 ]
 
