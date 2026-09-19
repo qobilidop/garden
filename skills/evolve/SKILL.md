@@ -26,6 +26,14 @@ multi-session pass) for:
   never exercised, that failed to prevent their target error, or that
   reality has drifted past (renames, moved paths, superseded facts).
 
+When a multi-session pass finds no reflections, the local session
+transcripts are the evidence: extract the user's own messages in
+order, then read the agent turns around each correction. A subagent's
+summary of a transcript is a lead to verify, never the evidence —
+of three such reports on 2026-09-19, one had read nothing in full,
+one covered the wrong window, and one reported mid-session states
+as outcomes.
+
 Cluster by mechanism, not symptom: two failures earn one lesson only if
 the same missing rule would have prevented both. Every candidate lesson
 must cite the concrete moments that motivate it — no lesson from vibes.

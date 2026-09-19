@@ -1,9 +1,9 @@
 # Global rules
 
-- Project instructions live in `AGENTS.md`. Keep shared project rules there;
-  use platform-specific instruction files only for genuinely platform-specific
-  behavior. When creating instruction files in any repository, follow this
-  pattern.
+- Project instructions live in `AGENTS.md` alone. Never create a `CLAUDE.md`
+  or `CLAUDE.local.md` — either one shadows every `AGENTS.md` for Claude Code;
+  Claude-specific notes go in `.claude/rules/`. When creating instruction
+  files in any repository, follow this pattern.
 - Codex-authored commits end with a
   `Co-Authored-By: Codex <active model> <codex@openai.com>` trailer. Immediately
   before every commit, run `"${CODEX_HOME:-$HOME/.codex}/bin/coauthor"` from the
