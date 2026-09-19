@@ -61,11 +61,13 @@
 
 ## Layer contracts
 
-- A content layer's conventions live in `<layer>/AGENTS.md`, with a
-  sibling `CLAUDE.md` shim (`@AGENTS.md`). Nested instruction files do
-  not reliably auto-load — Claude Code loads them on reads (not
-  writes), Codex walks only the cwd chain, and subagents inherit
-  nothing — so: **before writing in a layer, read its AGENTS.md.**
+- A content layer's conventions live in `<layer>/AGENTS.md`. Nested
+  instruction files do not reliably auto-load — Claude Code loads
+  them on reads (not writes), Codex walks only the cwd chain, and
+  subagents inherit nothing — so: **before writing in a layer, read
+  its AGENTS.md.** No `CLAUDE.md` anywhere in the tree: Claude Code
+  reads `AGENTS.md` only where no `CLAUDE.md` shadows it
+  (`hooks/lint.sh` checks).
   Layers with contracts so far: `scratch/`, `config/nix/`,
   `config/claude/`, `config/codex/`, `notebook/`.
 

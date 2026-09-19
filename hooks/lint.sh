@@ -10,7 +10,7 @@ status=0
 
 # Scratch notes require author: frontmatter (scratch/AGENTS.md) — an
 # optional field would misattribute silently. Only dated note files;
-# scratch/AGENTS.md and the CLAUDE.md shim are not notes.
+# scratch/AGENTS.md is not a note.
 while IFS= read -r f; do
   head -10 "$f" | grep -q '^author: ' \
     || { echo "lint: scratch note missing author: frontmatter: $f" >&2; status=1; }
@@ -23,8 +23,17 @@ done < <(git ls-files 'scratch/' \
 while IFS= read -r f; do
   echo "lint: notebook file outside note-XXXX.md: $f" >&2; status=1
 done < <(git ls-files 'notebook/' \
-         | grep -v -E '^notebook/(AGENTS|CLAUDE)\.md$' \
+         | grep -v -E '^notebook/AGENTS\.md$' \
          | grep -v -E '^notebook/note-[0-9a-z]{4}\.md$')
+
+# Instructions live in AGENTS.md alone (AGENTS.md §Layer contracts): Claude
+# Code reads AGENTS.md only when no CLAUDE.md sits in the working directory
+# or above, so one CLAUDE.md silently shadows the contracts. Untracked
+# files count too — Claude Code reads the disk, not the index.
+while IFS= read -r f; do
+  echo "lint: CLAUDE.md shadows AGENTS.md: $f" >&2; status=1
+done < <(git ls-files --cached --others --exclude-standard \
+         | grep -E '(^|/)CLAUDE(\.local)?\.md$' || true)
 
 # The root flake follows config/nix's nixpkgs, but Nix never checks that the
 # root lock's copy matches the host lock (config/nix/AGENTS.md); a stale copy

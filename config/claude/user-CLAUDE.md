@@ -1,8 +1,10 @@
 # Global rules
 
-- Project instructions live in AGENTS.md. CLAUDE.md is a one-line `@AGENTS.md`
-  import shim, plus genuinely Claude-specific notes only — never a second home
-  for shared rules. When creating instruction files in any repo, follow this
+- Project instructions live in AGENTS.md alone. Claude Code (2.1.277+) reads
+  it only when no CLAUDE.md or CLAUDE.local.md sits in the working directory
+  or above, so create neither — one stray file silently shadows every
+  AGENTS.md. Genuinely Claude-specific notes go in `.claude/rules/`, which
+  loads alongside. When creating instruction files in any repo, follow this
   pattern.
 - Agent commits end with a `Co-Authored-By: <agent + model> <email>` trailer,
   using an email that links to the agent's GitHub account when one exists

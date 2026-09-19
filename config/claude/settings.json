@@ -10,6 +10,13 @@
     "pyright-lsp@claude-plugins-official": true,
     "episodic-memory@superpowers-marketplace": true
   },
+  "pluginConfigs": {
+    "agents-md@builtin": {
+      "options": {
+        "instructionFiles": "claude-md-or-agents-md"
+      }
+    }
+  },
   "extraKnownMarketplaces": {
     "superpowers-marketplace": {
       "source": {
