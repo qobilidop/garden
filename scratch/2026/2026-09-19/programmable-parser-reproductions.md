@@ -39,9 +39,10 @@ built or run by anyone this session.
   reproductions show which workloads and metrics the field actually
   shares. Shared infrastructure emerges from the second repository,
   not before the first.
-- **Open.** How this relates to nanuk, whose first stage is a parser
-  (feeds it, replaces its early stages, or stays separate). Raised,
-  not answered.
+- **Nanuk.** The series feeds nanuk: nanuk gets updated from what the
+  reproductions teach. Settled after the audits.
+- **Focus.** The first two papers only (Gibb 2013, Attig & Brebner
+  2011); the third slot is parked, not being pursued for now.
 
 ## Taxonomy: two axes
 
