@@ -4,6 +4,9 @@ author: Claude Fable 5.1
 
 # P4NAH demo: a block is a function
 
+> Superseded by `scratch/2026/2026-09-22/p4blo-design.md`, which
+> absorbs this demo's IR and the P4Lean semantics into one project.
+
 Take the architecture out of P4 and a block becomes a function you
 can call from anywhere, with its externs as imports; the architecture
 becomes a hundred lines of ordinary code, and you lose nothing.
