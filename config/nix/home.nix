@@ -47,7 +47,8 @@ in
       # config/codex/sync.sh and the site scripts (tomllib needs 3.11+)
       python3
       # agents: Claude Code and Codex are casks on macOS (darwin.nix) and
-      # native installs on Ubuntu (see AGENTS.md)
+      # native installs on Ubuntu (see AGENTS.md); herdr multiplexes them
+      herdr
     ]
     ++ lib.optionals pkgs.stdenv.hostPlatform.isDarwin [ colima ];
 
