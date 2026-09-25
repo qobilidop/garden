@@ -49,6 +49,8 @@ in
       # agents: Claude Code and Codex are casks on macOS (darwin.nix) and
       # native installs on Ubuntu (see AGENTS.md); herdr multiplexes them
       herdr
+      # terminal multiplexer
+      zellij
     ]
     ++ lib.optionals pkgs.stdenv.hostPlatform.isDarwin [ colima ];
 
