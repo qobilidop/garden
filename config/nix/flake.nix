@@ -45,7 +45,32 @@
       # the marketplace overlay behind pkgs.nix-vscode-extensions.
       nixpkgsConfig = {
         config.allowUnfree = true;
-        overlays = [ nix-vscode-extensions.overlays.default ];
+        overlays = [
+          nix-vscode-extensions.overlays.default
+          debugpyLldbTest
+        ];
+      };
+      # Workaround, not configuration. debugpy 1.8.22 added a test asserting
+      # the attach command starts with a bare `lldb`; nixpkgs' own
+      # hardcode-lldb.patch makes it a store path, so the test fails on
+      # macOS, Hydra has no binary, and ms-python.python (vscode.nix) takes
+      # the whole system build down with it. macOS only: Linux keeps the
+      # cached binary. Drop this once nixpkgs skips the test; the warning
+      # fires when debugpy moves.
+      debugpyLldbTest = final: prev: {
+        pythonPackagesExtensions = prev.pythonPackagesExtensions ++ [
+          (
+            pyFinal: pyPrev:
+            prev.lib.optionalAttrs prev.stdenv.hostPlatform.isDarwin {
+              debugpy = pyPrev.debugpy.overridePythonAttrs (old: {
+                disabledTests =
+                  prev.lib.warnIf (old.version != "1.8.22")
+                    "config/nix/flake.nix: debugpy is ${old.version}; check whether the test_lldb_command skip is still needed"
+                    (old.disabledTests or [ ] ++ [ "test_lldb_command" ]);
+              });
+            }
+          )
+        ];
       };
     in
     {

@@ -16,7 +16,10 @@ Host configuration for every machine: one flake, upstream Nix.
   `nix flake update` here, then `nix flake update host` at the repo
   root (the root flake follows this nixpkgs, and Nix neither refreshes
   nor checks that copy on its own — `hooks/lint.sh` and the Host config
-  workflow do), then a switch; both `flake.lock` files are committed.
+  workflow do), then a build as the user with its closure diff, then
+  the switch; both `flake.lock` files are committed. A package broken
+  upstream is overridden in `flake.nix`'s overlays with the reason and
+  a warning that fires when the package moves.
   Flakes evaluate only git-tracked files: `git add` new files before
   switching. Lock as the user (`nix flake lock`) before a sudo switch:
   a switch that has to lock a new input writes `flake.lock` as root.
